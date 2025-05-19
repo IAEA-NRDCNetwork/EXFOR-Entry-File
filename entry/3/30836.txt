@@ -1,0 +1,232 @@
+ENTRY            30836   20160502                             317430836  0    1 
+SUBENT        30836001   20160502                             317430836  1    1 
+BIB                 18         65                                 30836  1    2 
+TITLE      Measurement of activation cross-sections for           30836  1    3 
+           high-energy neutron-induced reactions of Bi and Pb     30836  1    4 
+AUTHOR     (M.Zaman, G.N.Kim, K.Kim, H.Naik, M.Shahid, M.W.Lee)   30836  1    5 
+INSTITUTE  (3KORKNU,3INDTRM,3KORDRM)                              30836  1    6 
+REFERENCE  (J,EPJ/A,51,104,2015)                                  30836  1    7 
+FACILITY   (CYCLO,3KORKRM) MC-50 cyclotron (KIRAMS)               30836  1    8 
+INC-SOURCE (P-BE) The neutron beam was produced from the 9Be(p,n) 30836  1    9 
+            reaction by impinging 25, 35, and 45 MeV proton beams 30836  1   10 
+            on a 2 mm thick Be target.                            30836  1   11 
+SAMPLE     Bi foil (thickness 1 mm, size 1 cm x 1 cm)             30836  1   12 
+            - 25 MeV: weight 0.930 g                              30836  1   13 
+            - 35 MeV: weight 1.175 g                              30836  1   14 
+            - 45 MeV: weight 0.896 g                              30836  1   15 
+           Pb foil (thickness: 0.2 mm, size: 1 cm x 1 cm)         30836  1   16 
+            - 25 MeV: weight 0.264 g                              30836  1   17 
+            - 35 MeV: weight 0.258 g                              30836  1   18 
+            - 45 MeV: weight 0.267 g                              30836  1   19 
+METHOD     (ACTIV) Irradiation for 60 min (25, 35 MeV) and        30836  1   20 
+            30 min (45 MeV)                                       30836  1   21 
+           (GSPEC) Started after the cooling time (30 min)        30836  1   22 
+DETECTOR   (HPGE) Energy resolution of 1.8 keV FWHM at            30836  1   23 
+            1332.5 keV peak of 60Co and detection efficiency of   30836  1   24 
+            20% at 1332.5 keV relative to 7.6 cm in diameter and  30836  1   25 
+            7.6 cm in length NaI(Tl) detector                     30836  1   26 
+MONITOR    Au foil (thickness: 100 micro-meter)                   30836  1   27 
+            - 25 MeV: weight 0.296 g                              30836  1   28 
+            - 35 MeV: weight 0.219 g                              30836  1   29 
+            - 45 MeV: weight 0.244 g                              30836  1   30 
+           The neutron fluxes from the reaction threshold to the  30836  1   31 
+            maximum neutron energies was calculated with the      30836  1   32 
+            MCNPX code.                                           30836  1   33 
+           ((MONIT1)79-AU-197(N,2N)79-AU-196,,SIG)                30836  1   34 
+           ((MONIT2)79-AU-197(N,3N)79-AU-195,,SIG)                30836  1   35 
+           ((MONIT3)79-AU-197(N,4N)79-AU-194,,SIG)                30836  1   36 
+DECAY-MON  (79-AU-196-G,6.18D,DG,355.68,0.870)                    30836  1   37 
+           (79-AU-195-G,186.09D,DG,98.85,0.109)                   30836  1   38 
+           (79-AU-194-G,38.02HR,DG,293.55,0.104)                  30836  1   39 
+MONIT-REF  ((MONIT1),Y.Uwamino+,C,91JUELIC,,726,1991)             30836  1   40 
+           ((MONIT2),B.P.Bayhurst+,J,PR/C,12,451,1975)            30836  1   41 
+           ((MONIT3),Y.Uwamino+,C,91JUELIC,,726,1991)             30836  1   42 
+REL-REF    (R,,R.B.Firestone+,B,FIRESTONE,,2004) WWW Version 2.1, 30836  1   43 
+            Decay data                                            30836  1   44 
+           (R,,E.Browne+,B,BROWNE,,1986) Decay data               30836  1   45 
+           (R,,J.Blachot+,J,APH,6,3,1981) Decay data              30836  1   46 
+CORRECTION There are many background neutrons from outside of the 30836  1   47 
+            region covered by the Gaussian, and their contribution30836  1   48 
+            to the measured gamma yields for both monitor         30836  1   49 
+            reactions and reactions of interest were subtracted   30836  1   50 
+            by calculating the correction factor FACT defined in  30836  1   51 
+            Eq.(2). The Bi,Pb(n,x) excitation functions in the    30836  1   52 
+            EAF-2000 and TENDL-2013 libraries were assumed.       30836  1   53 
+MISC-COL   (MISC) Correction factor to remove contribution of low 30836  1   54 
+            energy background neutrons                            30836  1   55 
+ERR-ANALYS (ERR-T) Total uncertainty                 (11.4-18.1%) 30836  1   56 
+           (ERR-S,1.2,5.) Statistical uncertainty      (1.2-5.0%) 30836  1   57 
+           (ERR-1) irradiation time                       (~0.5%) 30836  1   58 
+           (ERR-2) detection efficiency calibration         (~4%) 30836  1   59 
+           (ERR-3) gamma-ray abundance                      (~2%) 30836  1   60 
+           (ERR-4,7.6,15.2) neutron flux by measurement           30836  1   61 
+                                                      (7.6-15.2%) 30836  1   62 
+           (ERR-5) the contribution from the low-energy tail (5%) 30836  1   63 
+           (ERR-6) neutron flux profile estimated from MCNPX by   30836  1   64 
+                  Honusek et al.                             (5%) 30836  1   65 
+STATUS     (APRVD) Approved by G.N.Kim (2016-05-27)               30836  1   66 
+HISTORY    (20160502C) S.C.Yang                                   30836  1   67 
+ENDBIB              65          0                                 30836  1   68 
+COMMON               6          3                                 30836  1   69 
+EN-NRM1    ERR-1      ERR-2      ERR-3      ERR-5      ERR-6      30836  1   70 
+MEV        PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   30836  1   71 
+15.2       0.5        4.         2.         5.         5.         30836  1   72 
+ENDCOMMON            3          0                                 30836  1   73 
+ENDSUBENT           72          0                                 30836  199999 
+SUBENT        30836002   20160502                             317430836  2    1 
+BIB                  3          3                                 30836  2    2 
+REACTION   (83-BI-209(N,4N)83-BI-206,,SIG,,SPA)                   30836  2    3 
+DECAY-DATA (83-BI-206,6.243D,DG,803.1,0.990)                      30836  2    4 
+STATUS     (TABLE) Table 3 of Eur.Phys.J.A.51,104,2015            30836  2    5 
+ENDBIB               3          0                                 30836  2    6 
+NOCOMMON             0          0                                 30836  2    7 
+DATA                 7          2                                 30836  2    8 
+EN-MEAN    EN-ERR     DATA       ERR-T      MONIT2     MONIT3     30836  2    9 
+MISC                                                              30836  2   10 
+MEV        MEV        MB         MB         B          B          30836  2   11 
+NO-DIM                                                            30836  2   12 
+26.4       2.77       323.34     35.54      1.816                 30836  2   13 
+0.63                                                              30836  2   14 
+37.2       2.20       829.95     131.24                0.7776     30836  2   15 
+0.49                                                              30836  2   16 
+ENDDATA              8          0                                 30836  2   17 
+ENDSUBENT           16          0                                 30836  299999 
+SUBENT        30836003   20160502                             317430836  3    1 
+BIB                  3          3                                 30836  3    2 
+REACTION   (83-BI-209(N,5N)83-BI-205,,SIG,,SPA)                   30836  3    3 
+DECAY-DATA (83-BI-205,15.31D,DG,703.4,0.310)                      30836  3    4 
+STATUS     (TABLE) Table 3 of Eur.Phys.J.A.51,104,2015            30836  3    5 
+ENDBIB               3          0                                 30836  3    6 
+NOCOMMON             0          0                                 30836  3    7 
+DATA                 6          1                                 30836  3    8 
+EN-MEAN    EN-ERR     DATA       ERR-T      MONIT3     MISC       30836  3    9 
+MEV        MEV        MB         MB         B          NO-DIM     30836  3   10 
+37.2       2.20       432.05     68.63      0.7776     0.67       30836  3   11 
+ENDDATA              3          0                                 30836  3   12 
+ENDSUBENT           11          0                                 30836  399999 
+SUBENT        30836004   20160502                             317430836  4    1 
+BIB                  3          3                                 30836  4    2 
+REACTION   (82-PB-0(N,X)82-PB-204-M,,SIG,,SPA)                    30836  4    3 
+DECAY-DATA (82-PB-204-M,67.2MIN,DG,899.2,0.990)                   30836  4    4 
+STATUS     (TABLE) Table 3 of Eur.Phys.J.A.51,104,2015            30836  4    5 
+ENDBIB               3          0                                 30836  4    6 
+NOCOMMON             0          0                                 30836  4    7 
+DATA                 8          3                                 30836  4    8 
+EN-MEAN    EN-ERR     DATA       ERR-T      MONIT1     MONIT2     30836  4    9 
+MONIT3     MISC                                                   30836  4   10 
+MEV        MEV        MB         MB         B          B          30836  4   11 
+B          NO-DIM                                                 30836  4   12 
+15.2       3.65       6.05       0.75       1.82                  30836  4   13 
+           0.22                                                   30836  4   14 
+26.4       2.77       93.15      10.23                 1.816      30836  4   15 
+           0.75                                                   30836  4   16 
+37.2       2.20       130.06     22.72                            30836  4   17 
+0.7776     0.46                                                   30836  4   18 
+ENDDATA             10          0                                 30836  4   19 
+ENDSUBENT           18          0                                 30836  499999 
+SUBENT        30836005   20160502                             317430836  5    1 
+BIB                  3          3                                 30836  5    2 
+REACTION   (82-PB-0(N,X)82-PB-203,CUM,SIG,,SPA)                   30836  5    3 
+DECAY-DATA (82-PB-203-G,51.87HR,DG,279.2,0.810)                   30836  5    4 
+STATUS     (TABLE) Table 3 of Eur.Phys.J.A.51,104,2015            30836  5    5 
+ENDBIB               3          0                                 30836  5    6 
+NOCOMMON             0          0                                 30836  5    7 
+DATA                 8          3                                 30836  5    8 
+EN-MEAN    EN-ERR     DATA       ERR-T      MONIT1     MONIT2     30836  5    9 
+MONIT3     MISC                                                   30836  5   10 
+MEV        MEV        MB         MB         B          B          30836  5   11 
+B          NO-DIM                                                 30836  5   12 
+15.2       3.65       28.94      3.39       1.82                  30836  5   13 
+           0.86                                                   30836  5   14 
+26.4       2.77       47.61      5.53                  1.816      30836  5   15 
+           0.40                                                   30836  5   16 
+37.2       2.20       299.97     51.29                            30836  5   17 
+0.7776     0.56                                                   30836  5   18 
+ENDDATA             10          0                                 30836  5   19 
+ENDSUBENT           18          0                                 30836  599999 
+SUBENT        30836006   20160502                             317430836  6    1 
+BIB                  3          3                                 30836  6    2 
+REACTION   (82-PB-0(N,X)82-PB-202-M,,SIG,,SPA)                    30836  6    3 
+DECAY-DATA (82-PB-202-M,3.53HR,DG,960.7,0.920)                    30836  6    4 
+STATUS     (TABLE) Table 4 of Eur.Phys.J.A.51,104,2015            30836  6    5 
+ENDBIB               3          0                                 30836  6    6 
+NOCOMMON             0          0                                 30836  6    7 
+DATA                 7          2                                 30836  6    8 
+EN-MEAN    EN-ERR     DATA       ERR-T      MONIT2     MONIT3     30836  6    9 
+MISC                                                              30836  6   10 
+MEV        MEV        MB         MB         B          B          30836  6   11 
+NO-DIM                                                            30836  6   12 
+26.4       2.77       5.56       0.69       1.816                 30836  6   13 
+0.76                                                              30836  6   14 
+37.2       2.20       12.38      2.13                  0.7776     30836  6   15 
+0.40                                                              30836  6   16 
+ENDDATA              8          0                                 30836  6   17 
+ENDSUBENT           16          0                                 30836  699999 
+SUBENT        30836007   20160502                             317430836  7    1 
+BIB                  3          3                                 30836  7    2 
+REACTION   (82-PB-0(N,X)82-PB-201,CUM,SIG,,SPA)                   30836  7    3 
+DECAY-DATA (82-PB-201-G,9.33HR,DG,331.2,0.790)                    30836  7    4 
+STATUS     (TABLE) Table 4 of Eur.Phys.J.A.51,104,2015            30836  7    5 
+ENDBIB               3          0                                 30836  7    6 
+NOCOMMON             0          0                                 30836  7    7 
+DATA                 7          2                                 30836  7    8 
+EN-MEAN    EN-ERR     DATA       ERR-T      MONIT2     MONIT3     30836  7    9 
+MISC                                                              30836  7   10 
+MEV        MEV        MB         MB         B          B          30836  7   11 
+NO-DIM                                                            30836  7   12 
+26.4       2.77       1.63       0.21       1.816                 30836  7   13 
+0.56                                                              30836  7   14 
+37.2       2.20       11.89      2.04                  0.7776     30836  7   15 
+0.56                                                              30836  7   16 
+ENDDATA              8          0                                 30836  7   17 
+ENDSUBENT           16          0                                 30836  799999 
+SUBENT        30836008   20160502                             317430836  8    1 
+BIB                  3          3                                 30836  8    2 
+REACTION   (82-PB-0(N,X)82-PB-200,,SIG,,SPA)                      30836  8    3 
+DECAY-DATA (82-PB-200,21.5HR,DG,147.6,0.377)                      30836  8    4 
+STATUS     (TABLE) Table 4 of Eur.Phys.J.A.51,104,2015            30836  8    5 
+ENDBIB               3          0                                 30836  8    6 
+NOCOMMON             0          0                                 30836  8    7 
+DATA                 6          1                                 30836  8    8 
+EN-MEAN    EN-ERR     DATA       ERR-T      MONIT3     MISC       30836  8    9 
+MEV        MEV        MB         MB         B          NO-DIM     30836  8   10 
+37.2       2.20       0.71       0.12       0.7776     0.61       30836  8   11 
+ENDDATA              3          0                                 30836  8   12 
+ENDSUBENT           11          0                                 30836  899999 
+SUBENT        30836009   20160502                             317430836  9    1 
+BIB                  3          3                                 30836  9    2 
+REACTION   (82-PB-0(N,X)80-HG-203,,SIG,,SPA)                      30836  9    3 
+DECAY-DATA (80-HG-203,46.61D,DG,279.2,0.816)                      30836  9    4 
+STATUS     (TABLE) Table 4 of Eur.Phys.J.A.51,104,2015            30836  9    5 
+ENDBIB               3          0                                 30836  9    6 
+NOCOMMON             0          0                                 30836  9    7 
+DATA                 7          2                                 30836  9    8 
+EN-MEAN    EN-ERR     DATA       ERR-T      MONIT2     MONIT3     30836  9    9 
+MISC                                                              30836  9   10 
+MEV        MEV        MB         MB         B          B          30836  9   11 
+NO-DIM                                                            30836  9   12 
+26.4       2.77       3.68       0.56       1.816                 30836  9   13 
+0.70                                                              30836  9   14 
+37.2       2.20       12.92      2.26                  0.7776     30836  9   15 
+0.53                                                              30836  9   16 
+ENDDATA              8          0                                 30836  9   17 
+ENDSUBENT           16          0                                 30836  999999 
+SUBENT        30836010   20160502                             317430836 10    1 
+BIB                  3          3                                 30836 10    2 
+REACTION   (82-PB-0(N,X)81-TL-202,,SIG,,SPA)                      30836 10    3 
+DECAY-DATA (81-TL-202,12.23D,DG,439.6,0.910)                      30836 10    4 
+STATUS     (TABLE) Table 4 of Eur.Phys.J.A.51,104,2015            30836 10    5 
+ENDBIB               3          0                                 30836 10    6 
+NOCOMMON             0          0                                 30836 10    7 
+DATA                 7          2                                 30836 10    8 
+EN-MEAN    EN-ERR     DATA       ERR-T      MONIT2     MONIT3     30836 10    9 
+MISC                                                              30836 10   10 
+MEV        MEV        MB         MB         B          B          30836 10   11 
+NO-DIM                                                            30836 10   12 
+26.4       2.77       2.02       0.47       1.816                 30836 10   13 
+0.71                                                              30836 10   14 
+37.2       2.20       4.98       0.87                  0.7776     30836 10   15 
+0.59                                                              30836 10   16 
+ENDDATA              8          0                                 30836 10   17 
+ENDSUBENT           16          0                                 30836 1099999 
+ENDENTRY            10          0                                 3083699999999 
