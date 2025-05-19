@@ -1,0 +1,154 @@
+ENTRY            23311   20160921                             22562331100000001 
+SUBENT        23311001   20160921                             22562331100100001 
+BIB                 12         43                                 2331100100002 
+TITLE      Harwell pile oscillator measurements on the relative   2331100100003 
+            neutron yields of uranium 233, uranium 235 and        2331100100004 
+            plutonium 239                                         2331100100005 
+AUTHOR     (M.J.Cabell, H.Rose, R.B.Tattersall)                   2331100100006 
+INSTITUTE  (2UK HAR)                                              2331100100007 
+REFERENCE  ((R,AERE-R-4946,1965)=(R,TNCC(UK)-77,1960))            2331100100008 
+           (C,58GENEVA,16,34,1958) Preliminary values tabulated   2331100100009 
+FACILITY   (OSCIP,2UK HAR) installed in reactors Dimple and Gleep 2331100100010 
+INC-SPECT  Dimple: T=20 deg-C and virtually a pure Maxwellian     2331100100011 
+            (epithermal index r<0.001)                            2331100100012 
+           Gleep: T=66+/-5 deg-C and epithermal index             2331100100013 
+            r=0.042+/-0.002 (the latter being measured by Cd      2331100100014 
+            ratio of thin Au foils).                              2331100100015 
+SAMPLE     Solution in D2O in polythene bottles (~2.5 cm diam,    2331100100016 
+            30 cm long, ~150 ml).                                 2331100100017 
+           Impurity contributions were calculated from the        2331100100018 
+            chemical and mass analyses of the solutions.          2331100100019 
+ANALYSIS   <eta(x)/eta(y)>=[1-sig(eff,x)/sig(abs,x))]/            2331100100020 
+                           [1-sig(eff,y)/sig(abs,y))],            2331100100021 
+            where x and y are 233U, 235U or 239Pu, and the        2331100100022 
+            absorption cross sections are taken from BNL-325.     2331100100023 
+            <...> means ratio in the reactor., which is converted 2331100100024 
+            to the 2200 m/s ratio:                                2331100100025 
+           eta(x)/eta(y)=<eta(x)/eta(y)>*                         2331100100026 
+                    [(g(abs,x)+r*s(abs,x))/(g(fis,x)+r*s(fis,x))]/2331100100027 
+                    [(g(abs,y)+r*s(abs,y))/(g(fis,y)+r*s(fis,y))],2331100100028 
+            where g and r are the Westcott's g-factor and         2331100100029 
+            epithermal index, respectively.                       2331100100030 
+ASSUMED    (ASSUM1,92-U-233(N,ABS),,SIG) 233U(nth,abs) = 578+/-4 b2331100100031 
+           (ASSUM2,92-U-235(N,ABS),,SIG) 233U(nth,abs) = 683+/-3 b2331100100032 
+           (ASSUM3,94-PU-239(N,ABS),,SIG)239Pu(nth,abs)=1028+/-8 b2331100100033 
+REL-REF    (R,,D.J.Hughes+,R,BNL-325,1960) 2nd ed. Supplement No.12331100100034 
+            2200 m/s absorption cross sections given              2331100100035 
+           (R,,C.H.Westcott,R,CRRP-787,1958)                      2331100100036 
+            g-factors given                                       2331100100037 
+ERR-ANALYS (DATA-ERR) Standard deviation considering due to       2331100100038 
+            - Pile oscillator measurements (~1%)                  2331100100039 
+            - Chemical determination of fissile material mass     2331100100040 
+            - Boron cross section (0.5%)                          2331100100041 
+            - Absorption cross sections                           2331100100042 
+           See Eq.(I.2.5) for the error propagation to the eta    2331100100043 
+            ratio.                                                2331100100044 
+HISTORY    (20160921C) On                                         2331100100045 
+ENDBIB              43          0                                 2331100100046 
+COMMON               6          3                                 2331100100047 
+ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR 2331100100048 
+B          B          B          B          B          B          2331100100049 
+ 578.       4.         683.       3.         1028.      8.        2331100100050 
+ENDCOMMON            3          0                                 2331100100051 
+ENDSUBENT           50          0                                 2331100199999 
+SUBENT        23311002   20160921                             22562331100200001 
+BIB                  2          4                                 2331100200002 
+REACTION   ((92-U-233(N,ABS),,ETA,,MXW)/                          2331100200003 
+           (92-U-235(N,ABS),,ETA,,MXW))                           2331100200004 
+STATUS     (TABLE) Table X (Dimple) of AERE-R-4946 (1965)         2331100200005 
+           (COREL,23311003) Result from Gleep reactor             2331100200006 
+ENDBIB               4          0                                 2331100200007 
+NOCOMMON             0          0                                 2331100200008 
+DATA                 3          1                                 2331100200009 
+KT-K       DATA       DATA-ERR                                    2331100200010 
+DEG-C      NO-DIM     NO-DIM                                      2331100200011 
+ 20.        1.102      0.020                                      2331100200012 
+ENDDATA              3          0                                 2331100200013 
+ENDSUBENT           12          0                                 2331100299999 
+SUBENT        23311003   20160921                             22562331100300001 
+BIB                  2          4                                 2331100300002 
+REACTION   ((92-U-233(N,ABS),,ETA,,SPA)/                          2331100300003 
+           (92-U-235(N,ABS),,ETA,,SPA))                           2331100300004 
+STATUS     (TABLE) Table X (Gleep) of AERE-R-4946 (1965)          2331100300005 
+           (COREL,23311002) Result from Dimple reactor            2331100300006 
+ENDBIB               4          0                                 2331100300007 
+NOCOMMON             0          0                                 2331100300008 
+DATA                 3          1                                 2331100300009 
+KT-K       DATA       DATA-ERR                                    2331100300010 
+DEG-C      NO-DIM     NO-DIM                                      2331100300011 
+ 66.        1.106      0.018                                      2331100300012 
+ENDDATA              3          0                                 2331100300013 
+ENDSUBENT           12          0                                 2331100399999 
+SUBENT        23311004   20160921                             22562331100400001 
+BIB                  2          4                                 2331100400002 
+REACTION   ((94-PU-239(N,ABS),,ETA,,MXW)/                         2331100400003 
+           (92-U-235(N,ABS),,ETA,,MXW))                           2331100400004 
+STATUS     (TABLE) Table X (Dimple) of AERE-R-4946 (1965)         2331100400005 
+           (COREL,23311005) Result from Gleep reactor             2331100400006 
+ENDBIB               4          0                                 2331100400007 
+NOCOMMON             0          0                                 2331100400008 
+DATA                 3          1                                 2331100400009 
+KT-K       DATA       DATA-ERR                                    2331100400010 
+DEG-C      NO-DIM     NO-DIM                                      2331100400011 
+ 20.        0.977      0.016                                      2331100400012 
+ENDDATA              3          0                                 2331100400013 
+ENDSUBENT           12          0                                 2331100499999 
+SUBENT        23311005   20160921                             22562331100500001 
+BIB                  2          4                                 2331100500002 
+REACTION   ((94-PU-239(N,ABS),,ETA,,SPA)/                         2331100500003 
+           (92-U-235(N,ABS),,ETA,,SPA))                           2331100500004 
+STATUS     (TABLE) Table X (Gleep) of AERE-R-4946 (1965)          2331100500005 
+           (COREL,23311004) Result from Dimple reactor            2331100500006 
+ENDBIB               4          0                                 2331100500007 
+NOCOMMON             0          0                                 2331100500008 
+DATA                 3          1                                 2331100500009 
+KT-K       DATA       DATA-ERR                                    2331100500010 
+DEG-C      NO-DIM     NO-DIM                                      2331100500011 
+ 66.        0.963      0.013                                      2331100500012 
+ENDDATA              3          0                                 2331100500013 
+ENDSUBENT           12          0                                 2331100599999 
+SUBENT        23311006   20160921                             22562331100600001 
+BIB                  4         12                                 2331100600002 
+REACTION   ((92-U-233(N,ABS),,ETA)/                               2331100600003 
+           (92-U-235(N,ABS),,ETA))                                2331100600004 
+ANALYSIS   Average of two 2200 m/s values:                        2331100600005 
+            1.099+/-0.020 (Dimple)                                2331100600006 
+            1.105+/-0.018 (Gleep)                                 2331100600007 
+           converted from their reactor values.                   2331100600008 
+ERR-ANALYS No allowance has been made for errors in the           2331100600009 
+            conversion factor from reactor values to the          2331100600010 
+            2200 m/s values.                                      2331100600011 
+STATUS     (TABLE) Table XI of AERE-R-4946 (1965)                 2331100600012 
+           (DEP,23311002) Reactor value from Dimple               2331100600013 
+           (DEP,23311003) Reactor value from Gleep                2331100600014 
+ENDBIB              12          0                                 2331100600015 
+NOCOMMON             0          0                                 2331100600016 
+DATA                 3          1                                 2331100600017 
+EN         DATA       DATA-ERR                                    2331100600018 
+EV         NO-DIM     NO-DIM                                      2331100600019 
+ 0.0253     1.102      0.014                                      2331100600020 
+ENDDATA              3          0                                 2331100600021 
+ENDSUBENT           20          0                                 2331100699999 
+SUBENT        23311007   20160921                             22562331100700001 
+BIB                  4         12                                 2331100700002 
+REACTION   ((94-PU-239(N,ABS),,ETA)/                              2331100700003 
+           (92-U-235(N,ABS),,ETA))                                2331100700004 
+ANALYSIS   Average of two 2200 m/s values:                        2331100700005 
+            0.999+/-0.016 (Dimple)                                2331100700006 
+            1.013+/-0.014 (Gleep)                                 2331100700007 
+           converted from their reactor values.                   2331100700008 
+ERR-ANALYS No allowance has been made for errors in the           2331100700009 
+            conversion factor from reactor values to the          2331100700010 
+            2200 m/s values.                                      2331100700011 
+STATUS     (TABLE) Table XI of AERE-R-4946 (1965)                 2331100700012 
+           (DEP,23311004) Reactor value from Dimple               2331100700013 
+           (DEP,23311005) Reactor value from Gleep                2331100700014 
+ENDBIB              12          0                                 2331100700015 
+NOCOMMON             0          0                                 2331100700016 
+DATA                 3          1                                 2331100700017 
+EN         DATA       DATA-ERR                                    2331100700018 
+EV         NO-DIM     NO-DIM                                      2331100700019 
+ 0.0253     1.006      0.011                                      2331100700020 
+ENDDATA              3          0                                 2331100700021 
+ENDSUBENT           20          0                                 2331100799999 
+ENDENTRY             7          0                                 2331199999999 
