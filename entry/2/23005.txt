@@ -1,48 +1,138 @@
-ENTRY            23005   20071203                             21892300500000001 
-SUBENT        23005001   20071203                             21892300500100001 
-BIB                 12         18                                 2300500100002 
+ENTRY            23005   20150909                             22422300500000001 
+SUBENT        23005001   20150909                             22422300500100001 
+BIB                  7         13                                 2300500100002 
 TITLE       (n,a) cross-section measurement using a gaseous sample2300500100003 
            and a gridded ionization chamber                       2300500100004 
 AUTHOR     (T.Sanami, M.Baba, K.Saito, N.Hirakawa)                2300500100005 
-INSTITUTE  (2JPNTOH) Quantum Science and Energy Engineering       2300500100006 
-REFERENCE  (J,NIM/A,440,(2),403,200002)                           2300500100007 
-PART-DET   (A)                                                    2300500100008 
-INC-SOURCE Beam intensity is 4 micro-Ampere.                      2300500100009 
-           (D-T) 3H(d,n)4He                                       2300500100010 
-SAMPLE     - Chemical-form of target: CH4                         2300500100011 
-           - Physical-form of target is gas.                      2300500100012 
-FACILITY   (DYNAM,2JPNTOH) 4.5 MV Dynamitron                      2300500100013 
-DETECTOR   (IOCH) Gridded ionization chamber (GIC)                2300500100014 
-           (SCIN) Neutron monitor detector (NE213)                2300500100015 
-ERR-ANALYS (ERR-T) Total uncertainty                              2300500100016 
-           (ERR-1) Uncertainty due to number of sample atoms      2300500100017 
-           (ERR-2) Uncertainty due to absolute normalization      2300500100018 
-STATUS     (TABLE) Taken from Table 1, p407 of reference          2300500100019 
-HISTORY    (20070930C)                                            2300500100020 
-ENDBIB              18          0                                 2300500100021 
-COMMON               2          3                                 2300500100022 
-ERR-1      ERR-2                                                  2300500100023 
-PER-CENT   PER-CENT                                               2300500100024 
- 5.         8.                                                    2300500100025 
-ENDCOMMON            3          0                                 2300500100026 
-ENDSUBENT           25          0                                 2300500199999 
-SUBENT        23005002   20071203                             21892300500200001 
-BIB                  3          5                                 2300500200002 
-REL-REF    (A,12899002,R.C.Haight+,J,NSE,87,41,1984)              2300500200003 
-           72.0+-9.0 mb (direct measurement), 63.9 (inverse       2300500200004 
-           reaction)                                              2300500200005 
-REACTION   (6-C-12(N,A)4-BE-9,PAR,SIG)                            2300500200006 
-EN-SEC     (E-LVL,4-BE-9)                                         2300500200007 
-ENDBIB               5          0                                 2300500200008 
-COMMON               1          3                                 2300500200009 
-E-LVL                                                             2300500200010 
-MEV                                                               2300500200011 
- 0.                                                               2300500200012 
-ENDCOMMON            3          0                                 2300500200013 
-DATA                 3          1                                 2300500200014 
-EN         DATA       ERR-T                                       2300500200015 
-MEV        MB         MB                                          2300500200016 
- 14.1       69.9       7.0                                        2300500200017 
+INSTITUTE  (2JPNTOH)                                              2300500100006 
+REFERENCE  (J,NIM/A,440,403,2000) 12C(n,a0) SIG at 14.1 MeV in tab2300500100007 
+           (S,JAERI-C-98-003,192,1998) All data in figs           2300500100008 
+           (C,99OSAKA,,447,1999) ISRD-10; 16O(n,a1,2,3) SIG in fig2300500100009 
+FACILITY   (DYNAM,2JPNTOH) 4.5 MV Dynamitron                      2300500100010 
+DETECTOR   (IOCH)  Gridded ionization chamber (GIC)               2300500100011 
+           (SCIN)  Neutron monitor detector (NE213)               2300500100012 
+           (TELES) Proton recoil counter for flux determination   2300500100013 
+HISTORY    (20070930C) On                                         2300500100014 
+           (20150909A) On. 002 revised, 003-007 added.            2300500100015 
+ENDBIB              13          0                                 2300500100016 
+NOCOMMON             0          0                                 2300500100017 
+ENDSUBENT           16          0                                 2300500199999 
+SUBENT        23005002   20150909                             22422300500200001 
+BIB                  6          9                                 2300500200002 
+REACTION   (6-C-12(N,A)4-BE-9,PAR,SIG)                            2300500200003 
+INC-SOURCE (D-T)                                                  2300500200004 
+SAMPLE     Kr+CH4 mixture                                         2300500200005 
+ERR-ANALYS (ERR-T)    total uncertainty      (~10%)               2300500200006 
+           (ERR-1)    number of sample atoms   (5%)               2300500200007 
+           (ERR-2)    absolute normalization   (8%)               2300500200008 
+           (ERR-S,,3.) statistics             (<3%)               2300500200009 
+STATUS     (TABLE) Table 1 of Nucl.Instrum.Meth.A440(2000)403     2300500200010 
+HISTORY    (20150909A) On. ERR-ANALYS updated.                    2300500200011 
+ENDBIB               9          0                                 2300500200012 
+NOCOMMON             0          0                                 2300500200013 
+DATA                 6          1                                 2300500200014 
+EN         E-LVL      DATA       ERR-T      ERR-1      ERR-2      2300500200015 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   2300500200016 
+ 14.1       0.         69.9       7.0        5.         8.        2300500200017 
 ENDDATA              3          0                                 2300500200018 
 ENDSUBENT           17          0                                 2300500299999 
-ENDENTRY             2          0                                 2300599999999 
+SUBENT        23005003   20150909                             22422300500300001 
+BIB                  6          6                                 2300500300002 
+REACTION   (6-C-12(N,A)4-BE-9,PAR,SIG)                            2300500300003 
+INC-SOURCE (D-N15)                                                2300500300004 
+SAMPLE     Kr+CH4 mixture                                         2300500300005 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainty     2300500300006 
+STATUS     (CURVE) Fig.2 of JAERI-Conf 98-003, p192 (1998)        2300500300007 
+HISTORY    (20150909C) On                                         2300500300008 
+ENDBIB               6          0                                 2300500300009 
+COMMON               1          3                                 2300500300010 
+E-LVL                                                             2300500300011 
+MEV                                                               2300500300012 
+ 0.                                                               2300500300013 
+ENDCOMMON            3          0                                 2300500300014 
+DATA                 3          2                                 2300500300015 
+EN         DATA       DATA-ERR                                    2300500300016 
+MEV        MB         MB                                          2300500300017 
+ 11.5        6.389E+01  8.066E+00                                 2300500300018 
+ 12.8        1.052E+02  1.023E+01                                 2300500300019 
+ENDDATA              4          0                                 2300500300020 
+ENDSUBENT           19          0                                 2300500399999 
+SUBENT        23005004   20150909                             22422300500400001 
+BIB                  6         10                                 2300500400002 
+REACTION  1(8-O-16(N,A)6-C-13,PAR,SIG) 15N(d,n) data              2300500400003 
+          2(8-O-16(N,A)6-C-13,PAR,SIG) T(d,n) data                2300500400004 
+INC-SOURCE1(D-N15) 12.8 MeV                                       2300500400005 
+          2(D-T)   13.7, 14.1 and 15.0 MeV                        2300500400006 
+SAMPLE     Kr+CO2 mixture                                         2300500400007 
+ERR-ANALYS (ERR-T)   Statistical and systematic uncertainty       2300500400008 
+           (ERR-SYS) Systematicl uncertainty (7%)                 2300500400009 
+STATUS     (TABLE) Data received from Toshiya Sanami              2300500400010 
+HISTORY    (20140318R) On. Data received from Toshiya Sanami.     2300500400011 
+           (20150909C) On                                         2300500400012 
+ENDBIB              10          0                                 2300500400013 
+COMMON               2          3                                 2300500400014 
+E-LVL      ERR-SYS                                                2300500400015 
+MEV        PER-CENT                                               2300500400016 
+ 0.         7.                                                    2300500400017 
+ENDCOMMON            3          0                                 2300500400018 
+DATA                 5          4                                 2300500400019 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2           2300500400020 
+MEV        MB         MB         MB         MB                    2300500400021 
+ 12.8       24.8       2.09                                       2300500400022 
+ 13.7                             22.9       2.60                 2300500400023 
+ 14.1                             20.8       3.46                 2300500400024 
+ 15.0                             13.6       1.14                 2300500400025 
+ENDDATA              6          0                                 2300500400026 
+ENDSUBENT           25          0                                 2300500499999 
+SUBENT        23005005   20150909                             22422300500500001 
+BIB                  6         10                                 2300500500002 
+REACTION  1(8-O-16(N,A)6-C-13,PAR,SIG) 15N(d,n) data              2300500500003 
+          2(8-O-16(N,A)6-C-13,PAR,SIG) T(d,n) data                2300500500004 
+INC-SOURCE1(D-N15) 12.8 MeV                                       2300500500005 
+          2(D-T)   13.7, 14.1 and 15.0 MeV                        2300500500006 
+SAMPLE     Kr+CO2 mixture                                         2300500500007 
+ERR-ANALYS (ERR-T)   Statistical and systematic uncertainty       2300500500008 
+           (ERR-SYS) Systematicl uncertainty (7%)                 2300500500009 
+STATUS     (TABLE) Data received from Toshiya Sanami              2300500500010 
+HISTORY    (20140318R) On. Data received from Toshiya Sanami.     2300500500011 
+           (20150909C) On                                         2300500500012 
+ENDBIB              10          0                                 2300500500013 
+COMMON               4          3                                 2300500500014 
+LVL-NUMB   LVL-NUMB   LVL-NUMB   ERR-SYS                          2300500500015 
+NO-DIM     NO-DIM     NO-DIM     PER-CENT                         2300500500016 
+ 1.         2.         3.         7.                              2300500500017 
+ENDCOMMON            3          0                                 2300500500018 
+DATA                 5          4                                 2300500500019 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2           2300500500020 
+MEV        MB         MB         MB         MB                    2300500500021 
+ 12.8       168.0      11.9                                       2300500500022 
+ 13.7                             157.4      11.59                2300500500023 
+ 14.1                             113.3      15.1                 2300500500024 
+ 15.0                              75.8       4.17                2300500500025 
+ENDDATA              6          0                                 2300500500026 
+ENDSUBENT           25          0                                 2300500599999 
+SUBENT        23005006   20150909                             22422300500600001 
+BIB                  6          8                                 2300500600002 
+REACTION   (8-O-16(N,X)2-HE-4,,SIG)                               2300500600003 
+INC-SOURCE (D-T)                                                  2300500600004 
+SAMPLE     Kr+CO2 mixture                                         2300500600005 
+ERR-ANALYS (ERR-T)   Statistical and systematic uncertainty       2300500600006 
+           (ERR-SYS) Systematicl uncertainty (7%)                 2300500600007 
+STATUS     (TABLE) Data received from Toshiya Sanami              2300500600008 
+HISTORY    (20140318R) On. Data received from Toshiya Sanami.     2300500600009 
+           (20150909C) On                                         2300500600010 
+ENDBIB               8          0                                 2300500600011 
+COMMON               1          3                                 2300500600012 
+ERR-SYS                                                           2300500600013 
+PER-CENT                                                          2300500600014 
+ 7.                                                               2300500600015 
+ENDCOMMON            3          0                                 2300500600016 
+DATA                 3          3                                 2300500600017 
+EN         DATA       ERR-T                                       2300500600018 
+MEV        MB         MB                                          2300500600019 
+ 13.7       305.       30.5                                       2300500600020 
+ 14.1       242.       21.4                                       2300500600021 
+ 15.0       223.       22.3                                       2300500600022 
+ENDDATA              5          0                                 2300500600023 
+ENDSUBENT           22          0                                 2300500699999 
+ENDENTRY             6          0                                 2300599999999 
