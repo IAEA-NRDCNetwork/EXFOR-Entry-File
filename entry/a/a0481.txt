@@ -1,179 +1,419 @@
-ENTRY            A0481   20160214                             A084A0481  0    1 
-SUBENT        A0481001   20160214                             A084A0481  1    1 
-BIB                 12         28                                 A0481  1    2 
-TITLE      Production of stable rare gas isotopes by proton       A0481  1    3 
-           induced spallation between 800 and 2600 MeV.           A0481  1    4 
-AUTHOR     (B.Dittrich,U.Herpers,R.Bodemann,M.Lupke,R.Michel,     A0481  1    5 
-           P.Signer,R.Wieler,H.Hofmann,W.Woelfli)                 A0481  1    6 
-INSTITUTE  (2GERKLN,2GERUH,2SWTZUR)                               A0481  1    7 
-REFERENCE  ((P,INDC(GER)-035,53,1990)=                            A0481  1    8 
-           (P,NEANDC(E)-312,(5),53,1990))                         A0481  1    9 
-REL-REF    (O,O0280001,R.Michel+,J,NIM/B,42,76,1989) - similar    A0481  1   10 
-           exp. setup at 600 MeV measurement                      A0481  1   11 
-FACILITY   (SPECM,1USALAS)                                        A0481  1   12 
-           (LINAC,1USALAS)                                        A0481  1   13 
-           (LINAC,2FR SAC)                                        A0481  1   14 
-FLAG       (1.).800 MeV protons at Los Alamos National Laboratory.A0481  1   15 
-           (2.).1200 and 2600 MeV protons at Saturne National     A0481  1   16 
-           Laboratory.                                            A0481  1   17 
-METHOD     (STTA,CHSEP)                                           A0481  1   18 
-DETECTOR   (GELI)                                                 A0481  1   19 
-ERR-ANALYS (DATA-ERR)  The errors given for the cross sections    A0481  1   20 
-           contain those of the mass spectrometric measurements   A0481  1   21 
-           as well as that of the flux determination.             A0481  1   22 
-           It has, however, to be remembered that no error was    A0481  1   23 
-           assigned to the monitor cross sections.                A0481  1   24 
-STATUS     (TABLE) Tbl.4 from NEANDC(E)-312-U,53,1990             A0481  1   25 
-HISTORY    (19910718C)                                            A0481  1   26 
-           (19970117U) Last checking has been done.               A0481  1   27 
-           (20140225A) SD: REACTION code in Subents 2-5 corrected.A0481  1   28 
-           (20160214U) SD: Ref. INDC(GER)-035 added. BIB update.  A0481  1   29 
-           Pointer to each record of STATUS added in Subents 2-5. A0481  1   30 
-ENDBIB              28          0                                 A0481  1   31 
-NOCOMMON             0          0                                 A0481  1   32 
-ENDSUBENT           31          0                                 A0481  199999 
-SUBENT        A0481002   20160214                             A084A0481  2    1 
-BIB                  5         18                                 A0481  2    2 
-REACTION  1(12-MG-0(P,X)2-HE-3,,SIG)                              A0481  2    3 
-          2(12-MG-0(P,X)2-HE-4,,SIG)                              A0481  2    4 
-          3(12-MG-0(P,X)10-NE-20,CUM,SIG)                         A0481  2    5 
-          4(12-MG-0(P,X)10-NE-21,CUM,SIG)                         A0481  2    6 
-          5(12-MG-0(P,X)10-NE-22,IND,SIG)                         A0481  2    7 
-SAMPLE     The Magnesium foils were dissolved in diluted          A0481  2    8 
-           hydrochloric acid.                                     A0481  2    9 
-CORRECTION5Cross sections for the production of 22Ne are correctedA0481  2   10 
-           for the decay of the 22Na                              A0481  2   11 
-STATUS    1(SPSDD,O0277008) REACTION (1)                          A0481  2   12 
-          2(SPSDD,O0277009) REACTION (2)                          A0481  2   13 
-          3(SPSDD,O0277012) REACTION (3)                          A0481  2   14 
-          4(SPSDD,O0277013) REACTION (4)                          A0481  2   15 
-          5(SPSDD,O0277015) REACTION (5)                          A0481  2   16 
-HISTORY    (20140225A) SD: SF5=IND in REACTION code (5)           A0481  2   17 
-             (corrected for Na-22 decay). STATUS (SPSDD) added.   A0481  2   18 
-           (20160214A) SD: Pointer to each record of STATUS added.A0481  2   19 
-           SF5=CUM added to REACTION (3,4) code. CORRECTION added.A0481  2   20 
-ENDBIB              18          0                                 A0481  2   21 
-NOCOMMON             0          0                                 A0481  2   22 
-DATA                12          3                                 A0481  2   23 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3A0481  2   24 
-DATA-ERR  3DATA      4DATA-ERR  4DATA      5DATA-ERR  5FLAG       A0481  2   25 
-MEV        MB         MB         MB         MB         MB         A0481  2   26 
-MB         MB         MB         MB         MB         NO-DIM     A0481  2   27 
-       800.       44.5        1.9       370.        15.       31.7A0481  2   28 
-        1.9       31.7        1.3       15.4        1.6         1.A0481  2   29 
-      1200.       56.9        2.3       414.        17.       33.7A0481  2   30 
-        2.0       30.7        1.3       15.6        2.0         2.A0481  2   31 
-      2600.       61.9        2.6       389.        16.       25.3A0481  2   32 
-        1.6       24.8        1.1       12.1        1.5         2.A0481  2   33 
-ENDDATA             10          0                                 A0481  2   34 
-ENDSUBENT           33          0                                 A0481  299999 
-SUBENT        A0481003   20160214                             A084A0481  3    1 
-BIB                  5         18                                 A0481  3    2 
-REACTION  1(13-AL-27(P,X)2-HE-3,,SIG)                             A0481  3    3 
-          2(13-AL-27(P,X)2-HE-4,,SIG)                             A0481  3    4 
-          3(13-AL-27(P,X)10-NE-20,CUM,SIG)                        A0481  3    5 
-          4(13-AL-27(P,X)10-NE-21,CUM,SIG)                        A0481  3    6 
-          5(13-AL-27(P,X)10-NE-22,IND,SIG)                        A0481  3    7 
-            Ne-22 could be produced due to Na-22 decay.           A0481  3    8 
-SAMPLE     The Aluminum foils were dissolved in hydrochloric acid.A0481  3    9 
-CORRECTION5Cross sections for the production of 22Ne are correctedA0481  3   10 
-           for the decay of the 22Na                              A0481  3   11 
-STATUS    1(SPSDD,O0277018) REACTION (1)                          A0481  3   12 
-          2(SPSDD,O0277019) REACTION (2)                          A0481  3   13 
-          3(SPSDD,O0277022) REACTION (3)                          A0481  3   14 
-          4(SPSDD,O0277023) REACTION (4)                          A0481  3   15 
-          5(SPSDD,O0277025) REACTION (5)                          A0481  3   16 
-HISTORY    (20140225A) SD:REACTION code (5) corrected (SF5=(CUM)->A0481  3   17 
-           IND - corrected for Na-22 decay). STATUS (SPSDD) added.A0481  3   18 
-           (20160214U) SD: Pointer to each record of STATUS added.A0481  3   19 
-           CORRECTION was added.                                  A0481  3   20 
-ENDBIB              18          0                                 A0481  3   21 
-NOCOMMON             0          0                                 A0481  3   22 
-DATA                12          3                                 A0481  3   23 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3A0481  3   24 
-DATA-ERR  3DATA      4DATA-ERR  4DATA      5DATA-ERR  5FLAG       A0481  3   25 
-MEV        MB         MB         MB         MB         MB         A0481  3   26 
-MB         MB         MB         MB         MB         NO-DIM     A0481  3   27 
-       800.       45.4        4.8       375.        16.       26.4A0481  3   28 
-        1.6       27.3        1.1       15.4        0.8         1.A0481  3   29 
-      1200.       57.0        2.4       428.        18.       25.7A0481  3   30 
-        1.6       26.5        1.1       14.7        0.8         2.A0481  3   31 
-      2600.       62.6        2.7       399.        17.       20.5A0481  3   32 
-        1.3       21.2        0.9       12.1        0.7         2.A0481  3   33 
-ENDDATA             10          0                                 A0481  3   34 
-ENDSUBENT           33          0                                 A0481  399999 
-SUBENT        A0481004   20160214                             A084A0481  4    1 
-BIB                  4         15                                 A0481  4    2 
-REACTION  1(14-SI-0(P,X)2-HE-3,,SIG)                              A0481  4    3 
-          2(14-SI-0(P,X)2-HE-4,,SIG)                              A0481  4    4 
-          3(14-SI-0(P,X)10-NE-20,CUM,SIG)                         A0481  4    5 
-          4(14-SI-0(P,X)10-NE-21,CUM,SIG)                         A0481  4    6 
-          5(14-SI-0(P,X)10-NE-22,IND,SIG)                         A0481  4    7 
-            Ne-22 could be produced due to Na-22 decay.           A0481  4    8 
-SAMPLE     Natural Si have been used.                             A0481  4    9 
-STATUS    1(SPSDD,O0277029) REACTION (1)                          A0481  4   10 
-          2(SPSDD,O0277030) REACTION (2)                          A0481  4   11 
-          3(SPSDD,O0277033) REACTION (3)                          A0481  4   12 
-          4(SPSDD,O0277034) REACTION (4)                          A0481  4   13 
-          5(SPSDD,O0277036) REACTION (5)                          A0481  4   14 
-HISTORY    (20140225A) SD:REACTION code (5) corrected (SF5=(CUM)->A0481  4   15 
-           IND - corrected for Na-22 decay). STATUS (SPSDD) added.A0481  4   16 
-           (20160214U) SD: Pointer to each record of STATUS added.A0481  4   17 
-ENDBIB              15          0                                 A0481  4   18 
-NOCOMMON             0          0                                 A0481  4   19 
-DATA                12          3                                 A0481  4   20 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3A0481  4   21 
-DATA-ERR  3DATA      4DATA-ERR  4DATA      5DATA-ERR  5FLAG       A0481  4   22 
-MEV        MB         MB         MB         MB         MB         A0481  4   23 
-MB         MB         MB         MB         MB         NO-DIM     A0481  4   24 
-       800.       56.8        2.4       403.        17.       27.0A0481  4   25 
-        1.6       24.5        1.0       9.38       1.05         1.A0481  4   26 
-      1200.       74.3        3.0       458.        19.       26.0A0481  4   27 
-        1.6       23.6        1.0       9.07       1.20         2.A0481  4   28 
-      2600.       77.1        3.3       405.        17.       19.6A0481  4   29 
-        1.2       17.8        0.8       6.81       0.88         2.A0481  4   30 
-ENDDATA             10          0                                 A0481  4   31 
-ENDSUBENT           30          0                                 A0481  499999 
-SUBENT        A0481005   20160214                             A084A0481  5    1 
-BIB                  4         20                                 A0481  5    2 
-REACTION  1(28-NI-0(P,X)2-HE-3,,SIG)                              A0481  5    3 
-          2(28-NI-0(P,X)2-HE-4,,SIG)                              A0481  5    4 
-          3(28-NI-0(P,X)10-NE-20,CUM,SIG)                         A0481  5    5 
-          4(28-NI-0(P,X)10-NE-21,CUM,SIG)                         A0481  5    6 
-          5(28-NI-0(P,X)10-NE-22,IND,SIG)                         A0481  5    7 
-            Ne-22 could be produced due to Na-22 decay.           A0481  5    8 
-          6(28-NI-0(P,X)18-AR-36,CUM,SIG)                         A0481  5    9 
-          7(28-NI-0(P,X)18-AR-38,CUM,SIG)                         A0481  5   10 
-SAMPLE     Natural Ni have been used.                             A0481  5   11 
-STATUS    1(SPSDD,O0277145) REACTION (1)                          A0481  5   12 
-          2(SPSDD,O0277146) REACTION (2)                          A0481  5   13 
-          3(SPSDD,O0277149) REACTION (3)                          A0481  5   14 
-          4(SPSDD,O0277150) REACTION (4)                          A0481  5   15 
-          5(SPSDD,O0277152) REACTION (5)                          A0481  5   16 
-          6(SPSDD,O0277157) REACTION (6)                          A0481  5   17 
-          7(SPSDD,O0277158) REACTION (7)                          A0481  5   18 
-HISTORY    (20140225A) SD:REACTION code (5) corrected (SF5=(CUM)->A0481  5   19 
-           IND - corrected for Na-22 decay). STATUS (SPSDD) added.A0481  5   20 
-           (20160214A) SD: Pointer to each record of STATUS added.A0481  5   21 
-           SF5=CUM added to REACTION (3,4) code.                  A0481  5   22 
-ENDBIB              20          0                                 A0481  5   23 
-NOCOMMON             0          0                                 A0481  5   24 
-DATA                16          3                                 A0481  5   25 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3A0481  5   26 
-DATA-ERR  3DATA      4DATA-ERR  4DATA      5DATA-ERR  5DATA      6A0481  5   27 
-DATA-ERR  6DATA      7DATA-ERR  7FLAG                             A0481  5   28 
-MEV        MB         MB         MB         MB         MB         A0481  5   29 
-MB         MB         MB         MB         MB         MB         A0481  5   30 
-MB         MB         MB         NO-DIM                           A0481  5   31 
-       800.       70.1        2.9       546.        23.       1.28A0481  5   32 
-       0.19       1.46       0.07      0.821      0.081       2.14A0481  5   33 
-       0.15       12.8        0.7         1.                      A0481  5   34 
-      1200.       92.7        3.8       662.        27.       2.85A0481  5   35 
-       0.43       3.05       0.16       1.74       0.16       2.66A0481  5   36 
-       0.19       14.9        0.8         2.                      A0481  5   37 
-      2600.       122.         5.       744.        31.       5.17A0481  5   38 
-       0.78       5.53       0.29       3.13       0.29       2.21A0481  5   39 
-       0.16       12.5        0.6         2.                      A0481  5   40 
-ENDDATA             15          0                                 A0481  5   41 
-ENDSUBENT           40          0                                 A0481  599999 
-ENDENTRY             5          0                                 A048199999999 
+ENTRY            A0481   20240916                             A118A0481000    1 
+SUBENT        A0481001   20240916                             A118A0481001    1 
+BIB                 12         29                                 A0481001    2 
+TITLE      Production of stable rare gas isotopes by proton       A0481001    3 
+           induced spallation between 800 and 2600 MeV.           A0481001    4 
+AUTHOR     (B.Dittrich,U.Herpers,R.Bodemann,M.Lupke,R.Michel,     A0481001    5 
+           P.Signer,R.Wieler,H.Hofmann,W.Woelfli)                 A0481001    6 
+INSTITUTE  (2GERKLN,2GERUH,2SWTZUR)                               A0481001    7 
+REFERENCE  ((P,INDC(GER)-035,53,1990)=                            A0481001    8 
+           (P,NEANDC(E)-312,(5),53,1990))                         A0481001    9 
+REL-REF    (O,O0280001,R.Michel+,J,NIM/B,42,76,1989) - similar    A0481001   10 
+           exp. setup at 600 MeV measurement                      A0481001   11 
+FACILITY   (LINAC,1USALAS)                                        A0481001   12 
+           (SYNCH,2FR SAT)                                        A0481001   13 
+FLAG       (1.).800 MeV protons at Los Alamos National Laboratory.A0481001   14 
+           (2.).1200 and 2600 MeV protons at Saturne National     A0481001   15 
+           Laboratory.                                            A0481001   16 
+METHOD     (STTA,CHSEP)                                           A0481001   17 
+DETECTOR   (GELI)                                                 A0481001   18 
+ERR-ANALYS (DATA-ERR) The errors given for the cross sections     A0481001   19 
+           contain those of the mass spectrometric measurements   A0481001   20 
+           as well as that of the flux determination.             A0481001   21 
+           It has, however, to be remembered that no error was    A0481001   22 
+           assigned to the monitor cross sections.                A0481001   23 
+STATUS     (TABLE,,B.Dittrich+,P,INDC(GER)-035,53,1990) Tbl.4     A0481001   24 
+HISTORY    (19910718C)                                            A0481001   25 
+           (19970117U) Last checking has been done.               A0481001   26 
+           (20140225A) SD: REACTION code in Subents 2-5 corrected.A0481001   27 
+           (20160214U) SD: Ref. INDC(GER)-035 added. BIB updated. A0481001   28 
+           Pointer to each record of STATUS added in Subents 2-5. A0481001   29 
+           (20240916A) SD: Corrections in all Subents.            A0481001   30 
+           Subents were split according to EXFOR rules.           A0481001   31 
+ENDBIB              29          0                                 A0481001   32 
+NOCOMMON             0          0                                 A0481001   33 
+ENDSUBENT           32          0                                 A048100199999 
+SUBENT        A0481002   20240916                             A118A0481002    1 
+BIB                  4         10                                 A0481002    2 
+REACTION   (12-MG-0(P,X)2-HE-3,,SIG)                              A0481002    3 
+SAMPLE     The magnesium foils were dissolved in diluted          A0481002    4 
+           hydrochloric acid.                                     A0481002    5 
+STATUS     (SPSDD,O0277008)                                       A0481002    6 
+HISTORY    (20140225A) SD: SF5=IND in REACTION code (5)           A0481002    7 
+             (corrected for Na-22 decay). STATUS (SPSDD) added.   A0481002    8 
+           (20160214A) SD: Pointer to each record of STATUS added.A0481002    9 
+           SF5=CUM added to REACTION (3,4) code. CORRECTION added.A0481002   10 
+           (20240916A) SD:Subent was split in five (see           A0481002   11 
+           Subent 006-009).                                       A0481002   12 
+ENDBIB              10          0                                 A0481002   13 
+NOCOMMON             0          0                                 A0481002   14 
+DATA                 4          3                                 A0481002   15 
+EN         DATA       DATA-ERR   FLAG                             A0481002   16 
+MEV        MB         MB         NO-DIM                           A0481002   17 
+       800.       44.5        1.9         1.                      A0481002   18 
+      1200.       56.9        2.3         2.                      A0481002   19 
+      2600.       61.9        2.6         2.                      A0481002   20 
+ENDDATA              5          0                                 A0481002   21 
+ENDSUBENT           20          0                                 A048100299999 
+SUBENT        A0481003   20240916                             A118A0481003    1 
+BIB                  4          9                                 A0481003    2 
+REACTION   (13-AL-27(P,X)2-HE-3,,SIG)                             A0481003    3 
+SAMPLE     The aluminum foils were dissolved in hydrochloric acid.A0481003    4 
+STATUS     (SPSDD,O0277018)                                       A0481003    5 
+HISTORY    (20140225A) SD:REACTION code (5) corrected (SF5=(CUM)->A0481003    6 
+           IND - corrected for Na-22 decay). STATUS (SPSDD) added.A0481003    7 
+           (20160214U) SD: Pointer to each record of STATUS added.A0481003    8 
+           CORRECTION was added.                                  A0481003    9 
+           (20240916A) SD:Subent was split in five (see           A0481003   10 
+           Subent 010-013).                                       A0481003   11 
+ENDBIB               9          0                                 A0481003   12 
+NOCOMMON             0          0                                 A0481003   13 
+DATA                 4          3                                 A0481003   14 
+EN         DATA       DATA-ERR   FLAG                             A0481003   15 
+MEV        MB         MB         NO-DIM                           A0481003   16 
+       800.       45.4        4.8         1.                      A0481003   17 
+      1200.       57.0        2.4         2.                      A0481003   18 
+      2600.       62.6        2.7         2.                      A0481003   19 
+ENDDATA              5          0                                 A0481003   20 
+ENDSUBENT           19          0                                 A048100399999 
+SUBENT        A0481004   20240916                             A118A0481004    1 
+BIB                  4          8                                 A0481004    2 
+REACTION   (14-SI-0(P,X)2-HE-3,,SIG)                              A0481004    3 
+SAMPLE     Natural Si have been used.                             A0481004    4 
+STATUS     (SPSDD,O0277029)                                       A0481004    5 
+HISTORY    (20140225A) SD:REACTION code (5) corrected (SF5=(CUM)->A0481004    6 
+           IND - corrected for Na-22 decay). STATUS (SPSDD) added.A0481004    7 
+           (20160214U) SD: Pointer to each record of STATUS added.A0481004    8 
+           (20240916A) SD:Subent was split in five (see           A0481004    9 
+           Subent 014-017).                                       A0481004   10 
+ENDBIB               8          0                                 A0481004   11 
+NOCOMMON             0          0                                 A0481004   12 
+DATA                 4          3                                 A0481004   13 
+EN         DATA       DATA-ERR   FLAG                             A0481004   14 
+MEV        MB         MB         NO-DIM                           A0481004   15 
+       800.       56.8        2.4         1.                      A0481004   16 
+      1200.       74.3        3.0         2.                      A0481004   17 
+      2600.       77.1        3.3         2.                      A0481004   18 
+ENDDATA              5          0                                 A0481004   19 
+ENDSUBENT           18          0                                 A048100499999 
+SUBENT        A0481005   20240916                             A118A0481005    1 
+BIB                  4          9                                 A0481005    2 
+REACTION   (28-NI-0(P,X)2-HE-3,,SIG)                              A0481005    3 
+SAMPLE     Natural Ni have been used.                             A0481005    4 
+STATUS     (SPSDD,O0277145)                                       A0481005    5 
+HISTORY    (20140225A) SD:REACTION code (5) corrected (SF5=(CUM)->A0481005    6 
+           IND - corrected for Na-22 decay). STATUS (SPSDD) added.A0481005    7 
+           (20160214A) SD: Pointer to each record of STATUS added.A0481005    8 
+           SF5=CUM added to REACTION (3,4) code.                  A0481005    9 
+           (20240916A) SD:Subent was split in five (see           A0481005   10 
+           Subent 018-023).                                       A0481005   11 
+ENDBIB               9          0                                 A0481005   12 
+NOCOMMON             0          0                                 A0481005   13 
+DATA                 4          3                                 A0481005   14 
+EN         DATA       DATA-ERR   FLAG                             A0481005   15 
+MEV        MB         MB         NO-DIM                           A0481005   16 
+       800.       70.1        2.9         1.                      A0481005   17 
+      1200.       92.7        3.8         2.                      A0481005   18 
+      2600.       122.         5.         2.                      A0481005   19 
+ENDDATA              5          0                                 A0481005   20 
+ENDSUBENT           19          0                                 A048100599999 
+SUBENT        A0481006   20240916                             A118A0481006    1 
+BIB                  4          5                                 A0481006    2 
+REACTION   (12-MG-0(P,X)2-HE-4,,SIG)                              A0481006    3 
+SAMPLE     The magnesium foils were dissolved in diluted          A0481006    4 
+           hydrochloric acid.                                     A0481006    5 
+STATUS     (SPSDD,O0277009) REACTION (2)                          A0481006    6 
+HISTORY    (20240916T) SD: Part of Subent 002.                    A0481006    7 
+ENDBIB               5          0                                 A0481006    8 
+NOCOMMON             0          0                                 A0481006    9 
+DATA                 4          3                                 A0481006   10 
+EN         DATA       DATA-ERR   FLAG                             A0481006   11 
+MEV        MB         MB         NO-DIM                           A0481006   12 
+       800.       370.        15.         1.                      A0481006   13 
+      1200.       414.        17.         2.                      A0481006   14 
+      2600.       389.        16.         2.                      A0481006   15 
+ENDDATA              5          0                                 A0481006   16 
+ENDSUBENT           15          0                                 A048100699999 
+SUBENT        A0481007   20240916                             A118A0481007    1 
+BIB                  4          5                                 A0481007    2 
+REACTION   (12-MG-0(P,X)10-NE-20,CUM,SIG)                         A0481007    3 
+SAMPLE     The magnesium foils were dissolved in diluted          A0481007    4 
+           hydrochloric acid.                                     A0481007    5 
+STATUS     (SPSDD,O0277012)                                       A0481007    6 
+HISTORY    (20240916T) SD: Part of Subent 002.                    A0481007    7 
+ENDBIB               5          0                                 A0481007    8 
+NOCOMMON             0          0                                 A0481007    9 
+DATA                 4          3                                 A0481007   10 
+EN         DATA       DATA-ERR   FLAG                             A0481007   11 
+MEV        MB         MB         NO-DIM                           A0481007   12 
+       800.       31.7        1.9         1.                      A0481007   13 
+      1200.       33.7        2.0         2.                      A0481007   14 
+      2600.       25.3        1.6         2.                      A0481007   15 
+ENDDATA              5          0                                 A0481007   16 
+ENDSUBENT           15          0                                 A048100799999 
+SUBENT        A0481008   20240916                             A118A0481008    1 
+BIB                  4          5                                 A0481008    2 
+REACTION   (12-MG-0(P,X)10-NE-21,CUM,SIG)                         A0481008    3 
+SAMPLE     The magnesium foils were dissolved in diluted          A0481008    4 
+           hydrochloric acid.                                     A0481008    5 
+STATUS     (SPSDD,O0277013) REACTION (4)                          A0481008    6 
+HISTORY    (20240916T) SD: Part of Subent 002.                    A0481008    7 
+ENDBIB               5          0                                 A0481008    8 
+NOCOMMON             0          0                                 A0481008    9 
+DATA                 4          3                                 A0481008   10 
+EN         DATA       DATA-ERR   FLAG                             A0481008   11 
+MEV        MB         MB         NO-DIM                           A0481008   12 
+       800.       31.7        1.3         1.                      A0481008   13 
+      1200.       30.7        1.3         2.                      A0481008   14 
+      2600.       24.8        1.1         2.                      A0481008   15 
+ENDDATA              5          0                                 A0481008   16 
+ENDSUBENT           15          0                                 A048100899999 
+SUBENT        A0481009   20240916                             A118A0481009    1 
+BIB                  5          7                                 A0481009    2 
+REACTION   (12-MG-0(P,X)10-NE-22,,SIG)                            A0481009    3 
+SAMPLE     The magnesium foils were dissolved in diluted          A0481009    4 
+           hydrochloric acid.                                     A0481009    5 
+CORRECTION Cross sections for the production of 22Ne are correctedA0481009    6 
+           for the decay of the 22Na                              A0481009    7 
+STATUS     (SPSDD,O0277015) REACTION (5)                          A0481009    8 
+HISTORY    (20240916T) SD: Part of Subent 002.                    A0481009    9 
+ENDBIB               7          0                                 A0481009   10 
+NOCOMMON             0          0                                 A0481009   11 
+DATA                 4          3                                 A0481009   12 
+EN         DATA       DATA-ERR   FLAG                             A0481009   13 
+MEV        MB         MB         NO-DIM                           A0481009   14 
+       800.       15.4        1.6         1.                      A0481009   15 
+      1200.       15.6        2.0         2.                      A0481009   16 
+      2600.       12.1        1.5         2.                      A0481009   17 
+ENDDATA              5          0                                 A0481009   18 
+ENDSUBENT           17          0                                 A048100999999 
+SUBENT        A0481010   20240916                             A118A0481010    1 
+BIB                  4          4                                 A0481010    2 
+REACTION   (13-AL-27(P,X)2-HE-4,,SIG)                             A0481010    3 
+SAMPLE     The aluminum foils were dissolved in hydrochloric acid.A0481010    4 
+STATUS     (SPSDD,O0277019) REACTION (2)                          A0481010    5 
+HISTORY    (20240916T) SD: Part of Subent 003.                    A0481010    6 
+ENDBIB               4          0                                 A0481010    7 
+NOCOMMON             0          0                                 A0481010    8 
+DATA                 4          3                                 A0481010    9 
+EN         DATA       DATA-ERR   FLAG                             A0481010   10 
+MEV        MB         MB         NO-DIM                           A0481010   11 
+       800.       375.        16.         1.                      A0481010   12 
+      1200.       428.        18.         2.                      A0481010   13 
+      2600.       399.        17.         2.                      A0481010   14 
+ENDDATA              5          0                                 A0481010   15 
+ENDSUBENT           14          0                                 A048101099999 
+SUBENT        A0481011   20240916                             A118A0481011    1 
+BIB                  4          4                                 A0481011    2 
+REACTION   (13-AL-27(P,X)10-NE-20,CUM,SIG)                        A0481011    3 
+SAMPLE     The aluminum foils were dissolved in hydrochloric acid.A0481011    4 
+STATUS     (SPSDD,O0277022) REACTION (3)                          A0481011    5 
+HISTORY    (20240916T) SD: Part of Subent 003.                    A0481011    6 
+ENDBIB               4          0                                 A0481011    7 
+NOCOMMON             0          0                                 A0481011    8 
+DATA                 4          3                                 A0481011    9 
+EN         DATA       DATA-ERR   FLAG                             A0481011   10 
+MEV        MB         MB         NO-DIM                           A0481011   11 
+       800.       26.4        1.6         1.                      A0481011   12 
+      1200.       25.7        1.6         2.                      A0481011   13 
+      2600.       20.5        1.3         2.                      A0481011   14 
+ENDDATA              5          0                                 A0481011   15 
+ENDSUBENT           14          0                                 A048101199999 
+SUBENT        A0481012   20240916                             A118A0481012    1 
+BIB                  4          4                                 A0481012    2 
+REACTION   (13-AL-27(P,X)10-NE-21,CUM,SIG)                        A0481012    3 
+SAMPLE     The aluminum foils were dissolved in hydrochloric acid.A0481012    4 
+STATUS     (SPSDD,O0277023) REACTION (4)                          A0481012    5 
+HISTORY    (20240916T) SD: Part of Subent 003.                    A0481012    6 
+ENDBIB               4          0                                 A0481012    7 
+NOCOMMON             0          0                                 A0481012    8 
+DATA                 4          3                                 A0481012    9 
+EN         DATA       DATA-ERR   FLAG                             A0481012   10 
+MEV        MB         MB         NO-DIM                           A0481012   11 
+       800.       27.3        1.1         1.                      A0481012   12 
+      1200.       26.5        1.1         2.                      A0481012   13 
+      2600.       21.2        0.9         2.                      A0481012   14 
+ENDDATA              5          0                                 A0481012   15 
+ENDSUBENT           14          0                                 A048101299999 
+SUBENT        A0481013   20240916                             A118A0481013    1 
+BIB                  5          7                                 A0481013    2 
+REACTION   (13-AL-27(P,X)10-NE-22,,SIG)                           A0481013    3 
+            Ne-22 could be produced due to Na-22 decay.           A0481013    4 
+SAMPLE     The aluminum foils were dissolved in hydrochloric acid.A0481013    5 
+CORRECTION Cross sections for the production of 22Ne are correctedA0481013    6 
+           for the decay of the 22Na                              A0481013    7 
+STATUS     (SPSDD,O0277025) REACTION (5)                          A0481013    8 
+HISTORY    (20240916T) SD: Part of Subent 003.                    A0481013    9 
+ENDBIB               7          0                                 A0481013   10 
+NOCOMMON             0          0                                 A0481013   11 
+DATA                 4          3                                 A0481013   12 
+EN         DATA       DATA-ERR   FLAG                             A0481013   13 
+MEV        MB         MB         NO-DIM                           A0481013   14 
+       800.       15.4        0.8         1.                      A0481013   15 
+      1200.       14.7        0.8         2.                      A0481013   16 
+      2600.       12.1        0.7         2.                      A0481013   17 
+ENDDATA              5          0                                 A0481013   18 
+ENDSUBENT           17          0                                 A048101399999 
+SUBENT        A0481014   20240916                             A118A0481014    1 
+BIB                  4          4                                 A0481014    2 
+REACTION   (14-SI-0(P,X)2-HE-4,,SIG)                              A0481014    3 
+SAMPLE     Natural Si have been used.                             A0481014    4 
+STATUS     (SPSDD,O0277030) REACTION (2)                          A0481014    5 
+HISTORY    (20240916T) SD: Part of Subent 004.                    A0481014    6 
+ENDBIB               4          0                                 A0481014    7 
+NOCOMMON             0          0                                 A0481014    8 
+DATA                 4          3                                 A0481014    9 
+EN         DATA       DATA-ERR   FLAG                             A0481014   10 
+MEV        MB         MB         NO-DIM                           A0481014   11 
+       800.       403.        17.         1.                      A0481014   12 
+      1200.       458.        19.         2.                      A0481014   13 
+      2600.       405.        17.         2.                      A0481014   14 
+ENDDATA              5          0                                 A0481014   15 
+ENDSUBENT           14          0                                 A048101499999 
+SUBENT        A0481015   20240916                             A118A0481015    1 
+BIB                  4          4                                 A0481015    2 
+REACTION   (14-SI-0(P,X)10-NE-20,CUM,SIG)                         A0481015    3 
+SAMPLE     Natural Si have been used.                             A0481015    4 
+STATUS     (SPSDD,O0277033) REACTION (3)                          A0481015    5 
+HISTORY    (20240916T) SD: Part of Subent 004.                    A0481015    6 
+ENDBIB               4          0                                 A0481015    7 
+NOCOMMON             0          0                                 A0481015    8 
+DATA                 4          3                                 A0481015    9 
+EN         DATA       DATA-ERR   FLAG                             A0481015   10 
+MEV        MB         MB         NO-DIM                           A0481015   11 
+       800.       27.0        1.6         1.                      A0481015   12 
+      1200.       26.0        1.6         2.                      A0481015   13 
+      2600.       19.6        1.2         2.                      A0481015   14 
+ENDDATA              5          0                                 A0481015   15 
+ENDSUBENT           14          0                                 A048101599999 
+SUBENT        A0481016   20240916                             A118A0481016    1 
+BIB                  4          4                                 A0481016    2 
+REACTION   (14-SI-0(P,X)10-NE-21,CUM,SIG)                         A0481016    3 
+SAMPLE     Natural Si have been used.                             A0481016    4 
+STATUS     (SPSDD,O0277034) REACTION (4)                          A0481016    5 
+HISTORY    (20240916T) SD: Part of Subent 004.                    A0481016    6 
+ENDBIB               4          0                                 A0481016    7 
+NOCOMMON             0          0                                 A0481016    8 
+DATA                 4          3                                 A0481016    9 
+EN         DATA       DATA-ERR   FLAG                             A0481016   10 
+MEV        MB         MB         NO-DIM                           A0481016   11 
+       800.       24.5        1.0         1.                      A0481016   12 
+      1200.       23.6        1.0         2.                      A0481016   13 
+      2600.       17.8        0.8         2.                      A0481016   14 
+ENDDATA              5          0                                 A0481016   15 
+ENDSUBENT           14          0                                 A048101699999 
+SUBENT        A0481017   20240916                             A118A0481017    1 
+BIB                  4          5                                 A0481017    2 
+REACTION   (14-SI-0(P,X)10-NE-22,,SIG)                            A0481017    3 
+            Ne-22 could be produced due to Na-22 decay.           A0481017    4 
+SAMPLE     Natural Si have been used.                             A0481017    5 
+STATUS     (SPSDD,O0277036) REACTION (5)                          A0481017    6 
+HISTORY    (20240916T) SD: Part of Subent 004.                    A0481017    7 
+ENDBIB               5          0                                 A0481017    8 
+NOCOMMON             0          0                                 A0481017    9 
+DATA                 4          3                                 A0481017   10 
+EN         DATA       DATA-ERR   FLAG                             A0481017   11 
+MEV        MB         MB         NO-DIM                           A0481017   12 
+       800.       9.38       1.05         1.                      A0481017   13 
+      1200.       9.07       1.20         2.                      A0481017   14 
+      2600.       6.81       0.88         2.                      A0481017   15 
+ENDDATA              5          0                                 A0481017   16 
+ENDSUBENT           15          0                                 A048101799999 
+SUBENT        A0481018   20240916                             A118A0481018    1 
+BIB                  4          4                                 A0481018    2 
+REACTION   (28-NI-0(P,X)2-HE-4,,SIG)                              A0481018    3 
+SAMPLE     Natural Ni have been used.                             A0481018    4 
+STATUS     (SPSDD,O0277146) REACTION (2)                          A0481018    5 
+HISTORY    (20240916T) SD: Part of Subent 005.                    A0481018    6 
+ENDBIB               4          0                                 A0481018    7 
+NOCOMMON             0          0                                 A0481018    8 
+DATA                 4          3                                 A0481018    9 
+EN         DATA       DATA-ERR   FLAG                             A0481018   10 
+MEV        MB         MB         NO-DIM                           A0481018   11 
+       800.       546.        23.         1.                      A0481018   12 
+      1200.       662.        27.         2.                      A0481018   13 
+      2600.       744.        31.         2.                      A0481018   14 
+ENDDATA              5          0                                 A0481018   15 
+ENDSUBENT           14          0                                 A048101899999 
+SUBENT        A0481019   20240916                             A118A0481019    1 
+BIB                  4          4                                 A0481019    2 
+REACTION   (28-NI-0(P,X)10-NE-20,CUM,SIG)                         A0481019    3 
+SAMPLE     Natural Ni have been used.                             A0481019    4 
+STATUS     (SPSDD,O0277149) REACTION (3)                          A0481019    5 
+HISTORY    (20240916T) SD: Part of Subent 005.                    A0481019    6 
+ENDBIB               4          0                                 A0481019    7 
+NOCOMMON             0          0                                 A0481019    8 
+DATA                 4          3                                 A0481019    9 
+EN         DATA       DATA-ERR   FLAG                             A0481019   10 
+MEV        MB         MB         NO-DIM                           A0481019   11 
+       800.       1.28       0.19         1.                      A0481019   12 
+      1200.       2.85       0.43         2.                      A0481019   13 
+      2600.       5.17       0.78         2.                      A0481019   14 
+ENDDATA              5          0                                 A0481019   15 
+ENDSUBENT           14          0                                 A048101999999 
+SUBENT        A0481020   20240916                             A118A0481020    1 
+BIB                  4          4                                 A0481020    2 
+REACTION   (28-NI-0(P,X)10-NE-21,CUM,SIG)                         A0481020    3 
+SAMPLE     Natural Ni have been used.                             A0481020    4 
+STATUS     (SPSDD,O0277150) REACTION (4)                          A0481020    5 
+HISTORY    (20240916T) SD: Part of Subent 005.                    A0481020    6 
+ENDBIB               4          0                                 A0481020    7 
+NOCOMMON             0          0                                 A0481020    8 
+DATA                 4          3                                 A0481020    9 
+EN         DATA       DATA-ERR   FLAG                             A0481020   10 
+MEV        MB         MB         NO-DIM                           A0481020   11 
+       800.       1.46       0.07         1.                      A0481020   12 
+      1200.       3.05       0.16         2.                      A0481020   13 
+      2600.       5.53       0.29         2.                      A0481020   14 
+ENDDATA              5          0                                 A0481020   15 
+ENDSUBENT           14          0                                 A048102099999 
+SUBENT        A0481021   20240916                             A118A0481021    1 
+BIB                  4          5                                 A0481021    2 
+REACTION   (28-NI-0(P,X)10-NE-22,,SIG)                            A0481021    3 
+            Ne-22 could be produced due to Na-22 decay.           A0481021    4 
+SAMPLE     Natural Ni have been used.                             A0481021    5 
+STATUS     (SPSDD,O0277152) REACTION (5)                          A0481021    6 
+HISTORY    (20240916T) SD: Part of Subent 005.                    A0481021    7 
+ENDBIB               5          0                                 A0481021    8 
+NOCOMMON             0          0                                 A0481021    9 
+DATA                 4          3                                 A0481021   10 
+EN         DATA       DATA-ERR   FLAG                             A0481021   11 
+MEV        MB         MB         NO-DIM                           A0481021   12 
+       800.      0.821      0.081         1.                      A0481021   13 
+      1200.       1.74       0.16         2.                      A0481021   14 
+      2600.       3.13       0.29         2.                      A0481021   15 
+ENDDATA              5          0                                 A0481021   16 
+ENDSUBENT           15          0                                 A048102199999 
+SUBENT        A0481022   20240916                             A118A0481022    1 
+BIB                  4          4                                 A0481022    2 
+REACTION   (28-NI-0(P,X)18-AR-36,CUM,SIG)                         A0481022    3 
+SAMPLE     Natural Ni have been used.                             A0481022    4 
+STATUS     (SPSDD,O0277157) REACTION (6)                          A0481022    5 
+HISTORY    (20240916T) SD: Part of Subent 005.                    A0481022    6 
+ENDBIB               4          0                                 A0481022    7 
+NOCOMMON             0          0                                 A0481022    8 
+DATA                 4          3                                 A0481022    9 
+EN         DATA       DATA-ERR   FLAG                             A0481022   10 
+MEV        MB         MB         NO-DIM                           A0481022   11 
+       800.       2.14       0.15         1.                      A0481022   12 
+      1200.       2.66       0.19         2.                      A0481022   13 
+      2600.       2.21       0.16         2.                      A0481022   14 
+ENDDATA              5          0                                 A0481022   15 
+ENDSUBENT           14          0                                 A048102299999 
+SUBENT        A0481023   20240916                             A118A0481023    1 
+BIB                  4          4                                 A0481023    2 
+REACTION   (28-NI-0(P,X)18-AR-38,CUM,SIG)                         A0481023    3 
+SAMPLE     Natural Ni have been used.                             A0481023    4 
+STATUS     (SPSDD,O0277158) REACTION (7)                          A0481023    5 
+HISTORY    (20240916T) SD: Part of Subent 005.                    A0481023    6 
+ENDBIB               4          0                                 A0481023    7 
+NOCOMMON             0          0                                 A0481023    8 
+DATA                 4          3                                 A0481023    9 
+EN         DATA       DATA-ERR   FLAG                             A0481023   10 
+MEV        MB         MB         NO-DIM                           A0481023   11 
+       800.       12.8        0.7         1.                      A0481023   12 
+      1200.       14.9        0.8         2.                      A0481023   13 
+      2600.       12.5        0.6         2.                      A0481023   14 
+ENDDATA              5          0                                 A0481023   15 
+ENDSUBENT           14          0                                 A048102399999 
+ENDENTRY            23          0                                 A048199999999 
