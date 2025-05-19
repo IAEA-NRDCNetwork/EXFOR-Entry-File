@@ -1,6 +1,6 @@
-ENTRY            23260   20141210                             224123260  0    1 
-SUBENT        23260001   20141210                             224123260  1    1 
-BIB                 14        106                                 23260  1    2 
+ENTRY            23260   20151013                             224523260  0    1 
+SUBENT        23260001   20151013                             224523260  1    1 
+BIB                 14        109                                 23260  1    2 
 REFERENCE  (J,JRN,302,655,2014) Data tables.                      23260  1    3 
            #doi:10.1007/s10967-014-3281-0                         23260  1    4 
             Also Suppl.materials:                                 23260  1    5 
@@ -53,8 +53,8 @@ INC-SPECT     Parameters of the neutron spectra:                  23260  1   41
            Y4 - 27, S84 - 50, X26 - 25, thermal Cavity - 23 with  23260  1   52 
            uncertainty about 7%.                                  23260  1   53 
 SAMPLE     The liquid standards were spiked on cylindrical        23260  1   54 
-           cellulose filters of 1.25 mm thickness and 7 mm        23260  1   55 
-           diameter,with typically 100 microl of solution content.23260  1   56 
+           cellulose filters of 1.25 mm thickness and 7 mm  diam.,23260  1   55 
+           with typically 100 microliter of solution content.     23260  1   56 
            The foils were cut in disks of 8mm diameter (average). 23260  1   57 
            Packed inside plastic bags of 0.1 mm thick.            23260  1   58 
            Four samples of each material were prepared and        23260  1   59 
@@ -107,13 +107,16 @@ CORRECTION Epithermal and thermal self-shielding corrections      23260  1  104
            and the MATSSF methods, are given in Table 1 of        23260  1  106 
            J,JRN,302,655,2014.                                    23260  1  107 
 HISTORY    (20141210C) M.M.                                       23260  1  108 
-ENDBIB             106          0                                 23260  1  109 
-COMMON               2          3                                 23260  1  110 
-ASSUM      ASSUM-ERR                                              23260  1  111 
-NO-DIM     PER-CENT                                               23260  1  112 
- 15.7       0.1                                                   23260  1  113 
-ENDCOMMON            3          0                                 23260  1  114 
-ENDSUBENT          113          0                                 23260  199999 
+           (20151013A) SD: SF4 modified, SF5=M+ added in REACTION 23260  1  109 
+           code in Subents 029, 030, 037, 038, 072, 073, 101, 102,23260  1  110 
+           109, 110.                                              23260  1  111 
+ENDBIB             109          0                                 23260  1  112 
+COMMON               2          3                                 23260  1  113 
+ASSUM      ASSUM-ERR                                              23260  1  114 
+NO-DIM     PER-CENT                                               23260  1  115 
+ 15.7       0.1                                                   23260  1  116 
+ENDCOMMON            3          0                                 23260  1  117 
+ENDSUBENT          116          0                                 23260  199999 
 SUBENT        23260002   20141210                             224123260  2    1 
 BIB                  8         38                                 23260  2    2 
 REACTION   ((19-K-41(N,G)19-K-42,,RI)//                           23260  2    3 
@@ -1784,12 +1787,12 @@ NO-DIM     PER-CENT   PER-CENT                                    23260 28   71
  16.7       3.         2.                                         23260 28   72 
 ENDDATA              3          0                                 23260 28   73 
 ENDSUBENT           72          0                                 23260 2899999 
-SUBENT        23260029   20141210                             224123260 29    1 
-BIB                  9         53                                 23260 29    2 
-REACTION  1((50-SN-112(N,G)50-SN-113,,RI)//                       23260 29    3 
-           (50-SN-112(N,G)50-SN-113,,SIG))                        23260 29    4 
-          2((50-SN-112(N,G)50-SN-113,,RI)//                       23260 29    5 
-           (50-SN-112(N,G)50-SN-113,,SIG))                        23260 29    6 
+SUBENT        23260029   20151013                             224523260 29    1 
+BIB                 10         55                                 23260 29    2 
+REACTION  1((50-SN-112(N,G)50-SN-113-G,M+,RI)//                   23260 29    3 
+           (50-SN-112(N,G)50-SN-113-G,M+,SIG))                    23260 29    4 
+          2((50-SN-112(N,G)50-SN-113-G,M+,RI)//                   23260 29    5 
+           (50-SN-112(N,G)50-SN-113-G,M+,SIG))                    23260 29    6 
             Q0 value (ratio of resonance integral to thermal      23260 29    7 
             neutron activation cross-section)                     23260 29    8 
 SAMPLE     Provider                       - IRMM                  23260 29    9 
@@ -1816,10 +1819,10 @@ ANALYSIS   The Q0(or s0) factors were determined by 2 different   23260 29   21
 MISC-COL   (MISC) Effective resonance energy Er defined by        23260 29   30 
            a-vector method.                                       23260 29   31 
 ERR-ANALYS (DATA-ERR) One sigma uncertainty.                      23260 29   32 
-           Uncertainty in the Q0 determination for for the simple 23260 29   33 
+           Uncertainty in the Q0 determination for the simple     23260 29   33 
            case of one determination in one irradiation channel   23260 29   34 
            with one standard, given no type-B uncertainties       23260 29   35 
-           contributions from the FCd = 1 and neutron             23260 29   36 
+           contributions from the factor Cd (F(Cd))=1 and neutron 23260 29   36 
            self-shielding effects is on average                   23260 29   37 
             2.5 % for foils, 2.6 % for compounds;                 23260 29   38 
            include contributions from :                           23260 29   39 
@@ -1838,29 +1841,31 @@ ADD-RES     Measured k0-values with one-sigma uncertainty:        23260 29   49
            391.7                 5.99E-5 (+-1.2%)                 23260 29   52 
 STATUS     (TABLE) Table 5 of J,JRN,302,655,2014;                 23260 29   53 
            Suppl.material 10967-2014-3281-MOESM3-ESM.pdf          23260 29   54 
-          1(DEP,23260031) Q0 measured at different channels.      23260 29   55 
-ENDBIB              53          0                                 23260 29   56 
-COMMON               2          3                                 23260 29   57 
-EN-MIN-NM  EN-MEAN-DN                                             23260 29   58 
-EV         EV                                                     23260 29   59 
-0.5        0.0253                                                 23260 29   60 
-ENDCOMMON            3          0                                 23260 29   61 
-DATA                 6          1                                 23260 29   62 
-DATA      1DATA-ERR  1DATA      2DATA-ERR  2MISC       MISC-ERR   23260 29   63 
-NO-DIM     PER-CENT   NO-DIM     PER-CENT   EV         PER-CENT   23260 29   64 
- 48.3       4.         45.2       4.         49.9       25.       23260 29   65 
-ENDDATA              3          0                                 23260 29   66 
-ENDSUBENT           65          0                                 23260 2999999 
-SUBENT        23260030   20141210                             224123260 30    1 
-BIB                  7         43                                 23260 30    2 
-REACTION  1((50-SN-112(N,G)50-SN-113,,RI)//                       23260 30    3 
-           (50-SN-112(N,G)50-SN-113,,SIG))                        23260 30    4 
-          2((50-SN-112(N,G)50-SN-113,,RI)//                       23260 30    5 
-           (50-SN-112(N,G)50-SN-113,,SIG))                        23260 30    6 
-          3((50-SN-112(N,G)50-SN-113,,RI)//                       23260 30    7 
-           (50-SN-112(N,G)50-SN-113,,SIG))                        23260 30    8 
-          4((50-SN-112(N,G)50-SN-113,,RI)//                       23260 30    9 
-           (50-SN-112(N,G)50-SN-113,,SIG))                        23260 30   10 
+          1(DEP,23260030) Q0 measured at different channels.      23260 29   55 
+HISTORY    (20151013A) SD: SF4=Sn-113->Sn-113g, SF5=M+ (IT=91%) in23260 29   56 
+           REACTION code following N.Otsuka's remark.             23260 29   57 
+ENDBIB              55          0                                 23260 29   58 
+COMMON               2          3                                 23260 29   59 
+EN-MIN-NM  EN-MEAN-DN                                             23260 29   60 
+EV         EV                                                     23260 29   61 
+0.5        0.0253                                                 23260 29   62 
+ENDCOMMON            3          0                                 23260 29   63 
+DATA                 6          1                                 23260 29   64 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2MISC       MISC-ERR   23260 29   65 
+NO-DIM     PER-CENT   NO-DIM     PER-CENT   EV         PER-CENT   23260 29   66 
+ 48.3       4.         45.2       4.         49.9       25.       23260 29   67 
+ENDDATA              3          0                                 23260 29   68 
+ENDSUBENT           67          0                                 23260 2999999 
+SUBENT        23260030   20151013                             224523260 30    1 
+BIB                  8         45                                 23260 30    2 
+REACTION  1((50-SN-112(N,G)50-SN-113-G,M+,RI)//                   23260 30    3 
+           (50-SN-112(N,G)50-SN-113-G,M+,SIG))                    23260 30    4 
+          2((50-SN-112(N,G)50-SN-113-G,M+,RI)//                   23260 30    5 
+           (50-SN-112(N,G)50-SN-113-G,M+,SIG))                    23260 30    6 
+          3((50-SN-112(N,G)50-SN-113-G,M+,RI)//                   23260 30    7 
+           (50-SN-112(N,G)50-SN-113-G,M+,SIG))                    23260 30    8 
+          4((50-SN-112(N,G)50-SN-113-G,M+,RI)//                   23260 30    9 
+           (50-SN-112(N,G)50-SN-113-G,M+,SIG))                    23260 30   10 
             Q0 value (ratio of resonance integral to thermal      23260 30   11 
             neutron activation cross-section)                     23260 30   12 
 SAMPLE     Provider                       - IRMM                  23260 30   13 
@@ -1878,7 +1883,7 @@ METHOD      Measurement at channels:                              23260 30   20
 ANALYSIS   The Q0(or s0) factors were determined by inputting the 23260 30   25 
            recommended Er value from references - 107. eV (+-3%). 23260 30   26 
 ERR-ANALYS (DATA-ERR) One sigma uncertainty.                      23260 30   27 
-           Uncertainty in the Q0 determination for for the simple 23260 30   28 
+           Uncertainty in the Q0 determination for the simple     23260 30   28 
            case of one determination in one irradiation channel   23260 30   29 
            with one standard, given no type-B uncertainties       23260 30   30 
            contributions from the FCd = 1 and neutron             23260 30   31 
@@ -1895,22 +1900,24 @@ ERR-ANALYS (DATA-ERR) One sigma uncertainty.                      23260 30   27
            resonance energy factor for the analyte, taken from    23260 30   42 
            references.                                            23260 30   43 
 STATUS     (TABLE) Suppl.material 10967-2014-3281-MOESM3-ESM.pdf  23260 30   44 
-           (COREL,23260030) Average Q0 .                          23260 30   45 
-ENDBIB              43          0                                 23260 30   46 
-COMMON               2          3                                 23260 30   47 
-EN-MIN-NM  EN-MEAN-DN                                             23260 30   48 
-EV         EV                                                     23260 30   49 
-0.5        0.0253                                                 23260 30   50 
-ENDCOMMON            3          0                                 23260 30   51 
-DATA                 8          1                                 23260 30   52 
-DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3DATA-ERR  323260 30   53 
-DATA      4DATA-ERR  4                                            23260 30   54 
-NO-DIM     PER-CENT   NO-DIM     PER-CENT   NO-DIM     PER-CENT   23260 30   55 
-NO-DIM     PER-CENT                                               23260 30   56 
- 47.6       2.         49.1       1.         55.8       3.        23260 30   57 
- 55.7       3.                                                    23260 30   58 
-ENDDATA              6          0                                 23260 30   59 
-ENDSUBENT           58          0                                 23260 3099999 
+HISTORY    (20151013A) SD: SF4=Sn-113->Sn-113g, SF5=M+ (IT=91%) in23260 30   45 
+           REACTION code following N.Otsuka's remark.  STATUS     23260 30   46 
+           'COREL' deleted.                                       23260 30   47 
+ENDBIB              45          0                                 23260 30   48 
+COMMON               2          3                                 23260 30   49 
+EN-MIN-NM  EN-MEAN-DN                                             23260 30   50 
+EV         EV                                                     23260 30   51 
+0.5        0.0253                                                 23260 30   52 
+ENDCOMMON            3          0                                 23260 30   53 
+DATA                 8          1                                 23260 30   54 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3DATA-ERR  323260 30   55 
+DATA      4DATA-ERR  4                                            23260 30   56 
+NO-DIM     PER-CENT   NO-DIM     PER-CENT   NO-DIM     PER-CENT   23260 30   57 
+NO-DIM     PER-CENT                                               23260 30   58 
+ 47.6       2.         49.1       1.         55.8       3.        23260 30   59 
+ 55.7       3.                                                    23260 30   60 
+ENDDATA              6          0                                 23260 30   61 
+ENDSUBENT           60          0                                 23260 3099999 
 SUBENT        23260031   20141210                             224123260 31    1 
 BIB                  9         50                                 23260 31    2 
 REACTION  1((50-SN-116(N,G)50-SN-117-M,,RI)//                     23260 31    3 
@@ -2291,12 +2298,12 @@ NO-DIM     PER-CENT   NO-DIM     PER-CENT   NO-DIM     PER-CENT   23260 36   50
  34.8       2.         34.9       1.         34.3       1.        23260 36   51 
 ENDDATA              3          0                                 23260 36   52 
 ENDSUBENT           51          0                                 23260 3699999 
-SUBENT        23260037   20141210                             224123260 37    1 
-BIB                  9         65                                 23260 37    2 
-REACTION  1((51-SB-123(N,G)51-SB-124,,RI)//                       23260 37    3 
-           (51-SB-123(N,G)51-SB-124,,SIG))                        23260 37    4 
-          2((51-SB-123(N,G)51-SB-124,,RI)//                       23260 37    5 
-           (51-SB-123(N,G)51-SB-124,,SIG))                        23260 37    6 
+SUBENT        23260037   20151013                             224523260 37    1 
+BIB                 10         67                                 23260 37    2 
+REACTION  1((51-SB-123(N,G)51-SB-124-G,M+,RI)//                   23260 37    3 
+           (51-SB-123(N,G)51-SB-124-G,M+,SIG))                    23260 37    4 
+          2((51-SB-123(N,G)51-SB-124-G,M+,RI)//                   23260 37    5 
+           (51-SB-123(N,G)51-SB-124-G,M+,SIG))                    23260 37    6 
             Q0 value (ratio of resonance integral to thermal      23260 37    7 
             neutron activation cross-section)                     23260 37    8 
 SAMPLE     Provider                       - IRMM                  23260 37    9 
@@ -2324,7 +2331,7 @@ ANALYSIS   The Q0(or s0) factors were determined by 2 different   23260 37   22
 MISC-COL   (MISC) Effective resonance energy Er defined by        23260 37   31 
            a-vector method.                                       23260 37   32 
 ERR-ANALYS (DATA-ERR) One sigma uncertainty.                      23260 37   33 
-           Uncertainty in the Q0 determination for for the simple 23260 37   34 
+           Uncertainty in the Q0 determination for the simple     23260 37   34 
            case of one determination in one irradiation channel   23260 37   35 
            with one standard, given no type-B uncertainties       23260 37   36 
            contributions from the FCd = 1 and neutron             23260 37   37 
@@ -2357,27 +2364,29 @@ ADD-RES     Measured k0-values with one-sigma uncertainty:        23260 37   51
            2090.9                1.58E-3 (+-1.8%)                 23260 37   64 
 STATUS     (TABLE) Table 5 of J,JRN,302,655,2014;                 23260 37   65 
            Suppl.material 10967-2014-3281-MOESM3-ESM.pdf          23260 37   66 
-          1(DEP,23260039) Q0 measured at different channels.      23260 37   67 
-ENDBIB              65          0                                 23260 37   68 
-COMMON               2          3                                 23260 37   69 
-EN-MIN-NM  EN-MEAN-DN                                             23260 37   70 
-EV         EV                                                     23260 37   71 
-0.5        0.0253                                                 23260 37   72 
-ENDCOMMON            3          0                                 23260 37   73 
-DATA                 6          1                                 23260 37   74 
-DATA      1DATA-ERR  1DATA      2DATA-ERR  2MISC       MISC-ERR   23260 37   75 
-NO-DIM     PER-CENT   NO-DIM     PER-CENT   EV         PER-CENT   23260 37   76 
- 30.5       2.         31.0       3.         32.4       5.        23260 37   77 
-ENDDATA              3          0                                 23260 37   78 
-ENDSUBENT           77          0                                 23260 3799999 
-SUBENT        23260038   20141210                             224123260 38    1 
-BIB                  7         43                                 23260 38    2 
-REACTION  1((51-SB-123(N,G)51-SB-124,,RI)//                       23260 38    3 
-           (51-SB-123(N,G)51-SB-124,,SIG))                        23260 38    4 
-          2((51-SB-123(N,G)51-SB-124,,RI)//                       23260 38    5 
-           (51-SB-123(N,G)51-SB-124,,SIG))                        23260 38    6 
-          3((51-SB-123(N,G)51-SB-124,,RI)//                       23260 38    7 
-           (51-SB-123(N,G)51-SB-124,,SIG))                        23260 38    8 
+          1(DEP,23260038) Q0 measured at different channels.      23260 37   67 
+HISTORY    (20151013A) SD: SF4=Sb-124->Sb-124g, SF5=M+ (IT=75%) in23260 37   68 
+           REACTION code following N.Otsuka's remark.             23260 37   69 
+ENDBIB              67          0                                 23260 37   70 
+COMMON               2          3                                 23260 37   71 
+EN-MIN-NM  EN-MEAN-DN                                             23260 37   72 
+EV         EV                                                     23260 37   73 
+0.5        0.0253                                                 23260 37   74 
+ENDCOMMON            3          0                                 23260 37   75 
+DATA                 6          1                                 23260 37   76 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2MISC       MISC-ERR   23260 37   77 
+NO-DIM     PER-CENT   NO-DIM     PER-CENT   EV         PER-CENT   23260 37   78 
+ 30.5       2.         31.0       3.         32.4       5.        23260 37   79 
+ENDDATA              3          0                                 23260 37   80 
+ENDSUBENT           79          0                                 23260 3799999 
+SUBENT        23260038   20151013                             224523260 38    1 
+BIB                  8         45                                 23260 38    2 
+REACTION  1((51-SB-123(N,G)51-SB-124-G,M+,RI)//                   23260 38    3 
+           (51-SB-123(N,G)51-SB-124-G,M+,SIG))                    23260 38    4 
+          2((51-SB-123(N,G)51-SB-124-G,M+,RI)//                   23260 38    5 
+           (51-SB-123(N,G)51-SB-124-G,M+,SIG))                    23260 38    6 
+          3((51-SB-123(N,G)51-SB-124-G,M+,RI)//                   23260 38    7 
+           (51-SB-123(N,G)51-SB-124-G,M+,SIG))                    23260 38    8 
             Q0 value (ratio of resonance integral to thermal      23260 38    9 
             neutron activation cross-section)                     23260 38   10 
 SAMPLE     Provider                       - IRMM                  23260 38   11 
@@ -2396,7 +2405,7 @@ METHOD      Measurement at channels:                              23260 38   20
 ANALYSIS   The Q0(or s0) factors were determined by inputting the 23260 38   24 
            recommended Er value from references - 28.2 eV (+-7%). 23260 38   25 
 ERR-ANALYS (DATA-ERR) One sigma uncertainty.                      23260 38   26 
-           Uncertainty in the Q0 determination for for the simple 23260 38   27 
+           Uncertainty in the Q0 determination for the simple     23260 38   27 
            case of one determination in one irradiation channel   23260 38   28 
            with one standard, given no type-B uncertainties       23260 38   29 
            contributions from the FCd = 1 and neutron             23260 38   30 
@@ -2414,19 +2423,21 @@ ERR-ANALYS (DATA-ERR) One sigma uncertainty.                      23260 38   26
            resonance energy factor for the analyte, taken from    23260 38   42 
            references.                                            23260 38   43 
 STATUS     (TABLE) Suppl.material 10967-2014-3281-MOESM3-ESM.pdf  23260 38   44 
-           (COREL,23260038) Average Q0                            23260 38   45 
-ENDBIB              43          0                                 23260 38   46 
-COMMON               2          3                                 23260 38   47 
-EN-MIN-NM  EN-MEAN-DN                                             23260 38   48 
-EV         EV                                                     23260 38   49 
-0.5        0.0253                                                 23260 38   50 
-ENDCOMMON            3          0                                 23260 38   51 
-DATA                 6          1                                 23260 38   52 
-DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3DATA-ERR  323260 38   53 
-NO-DIM     PER-CENT   NO-DIM     PER-CENT   NO-DIM     PER-CENT   23260 38   54 
- 30.8       2.         30.8       1.         30.2       1.        23260 38   55 
-ENDDATA              3          0                                 23260 38   56 
-ENDSUBENT           55          0                                 23260 3899999 
+HISTORY    (20151013A) SD: SF4=Sb-124->Sb-124g, SF5=M+ (IT=75%) in23260 38   45 
+           REACTION code following N.Otsuka's remark. STATUS      23260 38   46 
+           'COREL' deleted.                                       23260 38   47 
+ENDBIB              45          0                                 23260 38   48 
+COMMON               2          3                                 23260 38   49 
+EN-MIN-NM  EN-MEAN-DN                                             23260 38   50 
+EV         EV                                                     23260 38   51 
+0.5        0.0253                                                 23260 38   52 
+ENDCOMMON            3          0                                 23260 38   53 
+DATA                 6          1                                 23260 38   54 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3DATA-ERR  323260 38   55 
+NO-DIM     PER-CENT   NO-DIM     PER-CENT   NO-DIM     PER-CENT   23260 38   56 
+ 30.8       2.         30.8       1.         30.2       1.        23260 38   57 
+ENDDATA              3          0                                 23260 38   58 
+ENDSUBENT           57          0                                 23260 3899999 
 SUBENT        23260039   20141210                             224123260 39    1 
 BIB                 10         52                                 23260 39    2 
 REACTION  1((56-BA-134(N,G)56-BA-135-M,,RI)//                     23260 39    3 
@@ -4323,9 +4334,9 @@ B          NO-DIM                                                 23260 71   33
 0.661      2.                                                     23260 71   35 
 ENDDATA              4          0                                 23260 71   36 
 ENDSUBENT           35          0                                 23260 7199999 
-SUBENT        23260072   20141210                             224123260 72    1 
-BIB                  4         10                                 23260 72    2 
-REACTION   (38-SR-84(N,G)38-SR-85,,SIG)                           23260 72    3 
+SUBENT        23260072   20151013                             224523260 72    1 
+BIB                  5         12                                 23260 72    2 
+REACTION   (38-SR-84(N,G)38-SR-85-G,M+,SIG)                       23260 72    3 
             (F2*SIGm)+SIGg ; F2=0.866+-0.004 ;                    23260 72    4 
             SIG-0 - the neutron capture cross-section             23260 72    5 
            for neutrons at an average energy of E0=25.3 meV       23260 72    6 
@@ -4335,21 +4346,23 @@ ERR-ANALYS (DATA-ERR) One sigma uncertainty.                      23260 72    9
 STATUS     (TABLE) Table 6 of J,JRN,302,655,2014;                 23260 72   10 
            Suppl.material 10967-2014-3281-MOESM2-ESM.pdf          23260 72   11 
            (DEP,23260073) Directly measured data.                 23260 72   12 
-ENDBIB              10          0                                 23260 72   13 
-COMMON               1          3                                 23260 72   14 
-EN                                                                23260 72   15 
-EV                                                                23260 72   16 
- 0.0253                                                           23260 72   17 
-ENDCOMMON            3          0                                 23260 72   18 
-DATA                 2          1                                 23260 72   19 
-DATA       DATA-ERR                                               23260 72   20 
-B          B                                                      23260 72   21 
-0.700      0.007                                                  23260 72   22 
-ENDDATA              3          0                                 23260 72   23 
-ENDSUBENT           22          0                                 23260 7299999 
-SUBENT        23260073   20141210                             224123260 73    1 
-BIB                  7         21                                 23260 73    2 
-REACTION   (38-SR-84(N,G)38-SR-85,,SIG)                           23260 73    3 
+HISTORY    (20151013A) SD: SF4=Sr-85->Sr-85g, SF5=M+ (IT=87%) in  23260 72   13 
+           REACTION code following N.Otsuka's remark.             23260 72   14 
+ENDBIB              12          0                                 23260 72   15 
+COMMON               1          3                                 23260 72   16 
+EN                                                                23260 72   17 
+EV                                                                23260 72   18 
+ 0.0253                                                           23260 72   19 
+ENDCOMMON            3          0                                 23260 72   20 
+DATA                 2          1                                 23260 72   21 
+DATA       DATA-ERR                                               23260 72   22 
+B          B                                                      23260 72   23 
+0.700      0.007                                                  23260 72   24 
+ENDDATA              3          0                                 23260 72   25 
+ENDSUBENT           24          0                                 23260 7299999 
+SUBENT        23260073   20151013                             224523260 73    1 
+BIB                  8         23                                 23260 73    2 
+REACTION   (38-SR-84(N,G)38-SR-85-G,M+,SIG)                       23260 73    3 
             Effective thermal neutron cross-section.              23260 73    4 
 SAMPLE     - Provider                     - Sigma-Aldrich         23260 73    5 
            Matrix                         - SrCO(3)               23260 73    6 
@@ -4370,18 +4383,20 @@ ERR-ANALYS  Uncertainty is not given.                             23260 73   20
            Uncertainty on exp. SIG value comes from to the obs. SD23260 73   21 
            between all available gamma-lines.                     23260 73   22 
 STATUS     (TABLE) Suppl.material 10967-2014-3281-MOESM2-ESM.pdf  23260 73   23 
-ENDBIB              21          0                                 23260 73   24 
-COMMON               1          3                                 23260 73   25 
-EN-MEAN                                                           23260 73   26 
-EV                                                                23260 73   27 
- 0.0253                                                           23260 73   28 
-ENDCOMMON            3          0                                 23260 73   29 
-DATA                 1          1                                 23260 73   30 
-DATA                                                              23260 73   31 
-B                                                                 23260 73   32 
-0.700                                                             23260 73   33 
-ENDDATA              3          0                                 23260 73   34 
-ENDSUBENT           33          0                                 23260 7399999 
+HISTORY    (20151013A) SD: SF4=Sr-85->Sr-85g, SF5=M+ (IT=87%) in  23260 73   24 
+           REACTION code following N.Otsuka's remark.             23260 73   25 
+ENDBIB              23          0                                 23260 73   26 
+COMMON               1          3                                 23260 73   27 
+EN-MEAN                                                           23260 73   28 
+EV                                                                23260 73   29 
+ 0.0253                                                           23260 73   30 
+ENDCOMMON            3          0                                 23260 73   31 
+DATA                 1          1                                 23260 73   32 
+DATA                                                              23260 73   33 
+B                                                                 23260 73   34 
+0.700                                                             23260 73   35 
+ENDDATA              3          0                                 23260 73   36 
+ENDSUBENT           35          0                                 23260 7399999 
 SUBENT        23260074   20141210                             224123260 74    1 
 BIB                  5         10                                 23260 74    2 
 REACTION   (38-SR-86(N,G)38-SR-87-M,,SIG)                         23260 74    3 
@@ -5301,9 +5316,9 @@ B          NO-DIM                                                 23260100   46
 158.       7.                                                     23260100   53 
 ENDDATA              9          0                                 23260100   54 
 ENDSUBENT           53          0                                 2326010099999 
-SUBENT        23260101   20141210                             224123260101    1 
-BIB                  4          9                                 23260101    2 
-REACTION   (50-SN-112(N,G)50-SN-113,,SIG)                         23260101    3 
+SUBENT        23260101   20151013                             224523260101    1 
+BIB                  5         11                                 23260101    2 
+REACTION   (50-SN-112(N,G)50-SN-113-G,M+,SIG)                     23260101    3 
             SIG-0 - the neutron capture cross-section             23260101    4 
            for neutrons at an average energy of E0=25.3 meV       23260101    5 
            or velocity v0=2200 m/s.                               23260101    6 
@@ -5312,21 +5327,23 @@ ERR-ANALYS (DATA-ERR) One sigma uncertainty.                      23260101    8
 STATUS     (TABLE) Table 6 of J,JRN,302,655,2014;                 23260101    9 
            Suppl.material 10967-2014-3281-MOESM2-ESM.pdf          23260101   10 
            (DEP,23260102) Directly measured data.                 23260101   11 
-ENDBIB               9          0                                 23260101   12 
-COMMON               1          3                                 23260101   13 
-EN                                                                23260101   14 
-EV                                                                23260101   15 
- 0.0253                                                           23260101   16 
-ENDCOMMON            3          0                                 23260101   17 
-DATA                 2          1                                 23260101   18 
-DATA       DATA-ERR                                               23260101   19 
-B          B                                                      23260101   20 
- 0.541     0.001                                                  23260101   21 
-ENDDATA              3          0                                 23260101   22 
-ENDSUBENT           21          0                                 2326010199999 
-SUBENT        23260102   20141210                             224123260102    1 
-BIB                  7         25                                 23260102    2 
-REACTION   (50-SN-112(N,G)50-SN-113,,SIG)                         23260102    3 
+HISTORY    (20151013A) SD: SF4=Sn-113->Sn-113g, SF5=M+ (IT=91%) in23260101   12 
+           REACTION code following N.Otsuka's remark.             23260101   13 
+ENDBIB              11          0                                 23260101   14 
+COMMON               1          3                                 23260101   15 
+EN                                                                23260101   16 
+EV                                                                23260101   17 
+ 0.0253                                                           23260101   18 
+ENDCOMMON            3          0                                 23260101   19 
+DATA                 2          1                                 23260101   20 
+DATA       DATA-ERR                                               23260101   21 
+B          B                                                      23260101   22 
+ 0.541     0.001                                                  23260101   23 
+ENDDATA              3          0                                 23260101   24 
+ENDSUBENT           23          0                                 2326010199999 
+SUBENT        23260102   20151013                             224523260102    1 
+BIB                  8         27                                 23260102    2 
+REACTION   (50-SN-112(N,G)50-SN-113-G,M+,SIG)                     23260102    3 
             Effective thermal neutron cross-section.              23260102    4 
 SAMPLE     Provider                       - IRMM                  23260102    5 
            Average sample thickness h,mm  - 0.1                   23260102    6 
@@ -5351,19 +5368,21 @@ ERR-ANALYS  Not given.                                            23260102   24
            Uncertainty on exp. SIG value comes from to the obs. SD23260102   25 
            between all available gamma-lines.                     23260102   26 
 STATUS     (TABLE) Suppl.material 10967-2014-3281-MOESM2-ESM.pdf  23260102   27 
-ENDBIB              25          0                                 23260102   28 
-COMMON               1          3                                 23260102   29 
-EN-MEAN                                                           23260102   30 
-EV                                                                23260102   31 
- 0.0253                                                           23260102   32 
-ENDCOMMON            3          0                                 23260102   33 
-DATA                 2          2                                 23260102   34 
-DATA       DECAY-FLAG                                             23260102   35 
-B          NO-DIM                                                 23260102   36 
-0.541      1.                                                     23260102   37 
-0.540      2.                                                     23260102   38 
-ENDDATA              4          0                                 23260102   39 
-ENDSUBENT           38          0                                 2326010299999 
+HISTORY    (20151013A) SD: SF4=Sn-113->Sn-113g, SF5=M+ (IT=91%) in23260102   28 
+           REACTION code following N.Otsuka's remark.             23260102   29 
+ENDBIB              27          0                                 23260102   30 
+COMMON               1          3                                 23260102   31 
+EN-MEAN                                                           23260102   32 
+EV                                                                23260102   33 
+ 0.0253                                                           23260102   34 
+ENDCOMMON            3          0                                 23260102   35 
+DATA                 2          2                                 23260102   36 
+DATA       DECAY-FLAG                                             23260102   37 
+B          NO-DIM                                                 23260102   38 
+0.541      1.                                                     23260102   39 
+0.540      2.                                                     23260102   40 
+ENDDATA              4          0                                 23260102   41 
+ENDSUBENT           40          0                                 2326010299999 
 SUBENT        23260103   20141210                             224123260103    1 
 BIB                  5         10                                 23260103    2 
 REACTION   (50-SN-116(N,G)50-SN-117-M,,SIG)                       23260103    3 
@@ -5569,9 +5588,9 @@ B          NO-DIM                                                 23260108   34
 5.7615     2.                                                     23260108   36 
 ENDDATA              4          0                                 23260108   37 
 ENDSUBENT           36          0                                 2326010899999 
-SUBENT        23260109   20141210                             224123260109    1 
-BIB                  4          9                                 23260109    2 
-REACTION   (51-SB-123(N,G)51-SB-124,,SIG)                         23260109    3 
+SUBENT        23260109   20151013                             224523260109    1 
+BIB                  5         11                                 23260109    2 
+REACTION   (51-SB-123(N,G)51-SB-124-G,M+,SIG)                     23260109    3 
             SIG-0 - the neutron capture cross-section             23260109    4 
            for neutrons at an average energy of E0=25.3 meV       23260109    5 
            or velocity v0=2200 m/s.                               23260109    6 
@@ -5580,21 +5599,23 @@ ERR-ANALYS (DATA-ERR) One sigma uncertainty.                      23260109    8
 STATUS     (TABLE) Table 6 of J,JRN,302,655,2014;                 23260109    9 
            Suppl.material 10967-2014-3281-MOESM2-ESM.pdf          23260109   10 
            (DEP,23260110) Directly measured data.                 23260109   11 
-ENDBIB               9          0                                 23260109   12 
-COMMON               1          3                                 23260109   13 
-EN                                                                23260109   14 
-EV                                                                23260109   15 
- 0.0253                                                           23260109   16 
-ENDCOMMON            3          0                                 23260109   17 
-DATA                 2          1                                 23260109   18 
-DATA       DATA-ERR                                               23260109   19 
-B          B                                                      23260109   20 
- 3.89       0.03                                                  23260109   21 
-ENDDATA              3          0                                 23260109   22 
-ENDSUBENT           21          0                                 2326010999999 
-SUBENT        23260110   20141210                             224123260110    1 
-BIB                  7         33                                 23260110    2 
-REACTION   (51-SB-123(N,G)51-SB-124,,SIG)                         23260110    3 
+HISTORY    (20151013A) SD: SF4=Sb-124->Sb-124g, SF5=M+ (IT=75%) in23260109   12 
+           REACTION code following N.Otsuka's remark.             23260109   13 
+ENDBIB              11          0                                 23260109   14 
+COMMON               1          3                                 23260109   15 
+EN                                                                23260109   16 
+EV                                                                23260109   17 
+ 0.0253                                                           23260109   18 
+ENDCOMMON            3          0                                 23260109   19 
+DATA                 2          1                                 23260109   20 
+DATA       DATA-ERR                                               23260109   21 
+B          B                                                      23260109   22 
+ 3.89       0.03                                                  23260109   23 
+ENDDATA              3          0                                 23260109   24 
+ENDSUBENT           23          0                                 2326010999999 
+SUBENT        23260110   20151013                             224523260110    1 
+BIB                  8         35                                 23260110    2 
+REACTION   (51-SB-123(N,G)51-SB-124-G,M+,SIG)                     23260110    3 
             Effective thermal neutron cross-section.              23260110    4 
 SAMPLE     Provider                       - IRMM                  23260110    5 
            Matrix                         - Foil, Al alloy        23260110    6 
@@ -5627,29 +5648,31 @@ ERR-ANALYS  Not given.                                            23260110   32
            Uncertainty on exp. SIG value comes from to the obs. SD23260110   33 
            between all available gamma-lines.                     23260110   34 
 STATUS     (TABLE) Suppl.material 10967-2014-3281-MOESM2-ESM.pdf  23260110   35 
-ENDBIB              33          0                                 23260110   36 
-COMMON               1          3                                 23260110   37 
-EN-MEAN                                                           23260110   38 
-EV                                                                23260110   39 
- 0.0253                                                           23260110   40 
-ENDCOMMON            3          0                                 23260110   41 
-DATA                 2         12                                 23260110   42 
-DATA       DECAY-FLAG                                             23260110   43 
-B          NO-DIM                                                 23260110   44 
-3.90       1.                                                     23260110   45 
-3.88       2.                                                     23260110   46 
-3.90       3.                                                     23260110   47 
-3.87       4.                                                     23260110   48 
-3.89       5.                                                     23260110   49 
-3.93       6.                                                     23260110   50 
-3.88       7.                                                     23260110   51 
-3.84       8.                                                     23260110   52 
-3.89       9.                                                     23260110   53 
-3.90       10.                                                    23260110   54 
-3.94       11.                                                    23260110   55 
-3.91       12.                                                    23260110   56 
-ENDDATA             14          0                                 23260110   57 
-ENDSUBENT           56          0                                 2326011099999 
+HISTORY    (20151013A) SD: SF4=Sb-124->Sb-124g, SF5=M+ (IT=75%) in23260110   36 
+           REACTION code following N.Otsuka's remark.             23260110   37 
+ENDBIB              35          0                                 23260110   38 
+COMMON               1          3                                 23260110   39 
+EN-MEAN                                                           23260110   40 
+EV                                                                23260110   41 
+ 0.0253                                                           23260110   42 
+ENDCOMMON            3          0                                 23260110   43 
+DATA                 2         12                                 23260110   44 
+DATA       DECAY-FLAG                                             23260110   45 
+B          NO-DIM                                                 23260110   46 
+3.90       1.                                                     23260110   47 
+3.88       2.                                                     23260110   48 
+3.90       3.                                                     23260110   49 
+3.87       4.                                                     23260110   50 
+3.89       5.                                                     23260110   51 
+3.93       6.                                                     23260110   52 
+3.88       7.                                                     23260110   53 
+3.84       8.                                                     23260110   54 
+3.89       9.                                                     23260110   55 
+3.90       10.                                                    23260110   56 
+3.94       11.                                                    23260110   57 
+3.91       12.                                                    23260110   58 
+ENDDATA             14          0                                 23260110   59 
+ENDSUBENT           58          0                                 2326011099999 
 SUBENT        23260111   20141210                             224123260111    1 
 BIB                  5         10                                 23260111    2 
 REACTION   (56-BA-134(N,G)56-BA-135-M,,SIG)                       23260111    3 
