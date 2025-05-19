@@ -1,60 +1,98 @@
-ENTRY            23252   20140812                             22402325200000001 
-SUBENT        23252001   20140812                             22402325200100001 
-BIB                 13         35                                 2325200100002 
-TITLE       A measurement of the 14C(n,g)15C cross section at a   2325200100003 
-             stellar temperature of kT=23.3 keV                   2325200100004 
-AUTHOR     (H.Beer, M.Wiescher, F.Kaeppeler, J.Goerres,           2325200100005 
-            P.E.Koehler)                                          2325200100006 
-INSTITUTE  (2GERKFK)                                              2325200100007 
-REFERENCE  (J,AJ,387,258,1992)                                    2325200100008 
-FACILITY   (VDG,2GERKFK) 3.75 MV Van de Graaff                    2325200100009 
-INC-SOURCE (P-LI7)                                                2325200100010 
-SAMPLE     (6-C-14,ENR=0.89) Powder sample (605 +/- 15 mg,        2325200100011 
-            2.97 cm x 1.20 cm x 0.5 cm) packed in a 0.0508 mm     2325200100012 
-            thick electroformed Ni container with a porous CH2    2325200100013 
-            plug glued into the open end.                         2325200100014 
-           Effective irradiated sample area was 2.97 cm x 1.20 cm 2325200100015 
-            = 3.56 cm2.                                           2325200100016 
-DETECTOR   (HPGE) Relative efficiency 35%, energy resolution of   2325200100017 
-            1.72 keV at 1.33 MeV.                                 2325200100018 
-           27Al(p,g) resonance at 992 keV was used to determine   2325200100019 
-            the gamma-ray efficiency from 1.84 to 11 MeV.         2325200100020 
-           Pu238-C13 source with a line at 6.13 MeV was also used 2325200100021 
-           for the efficiency determination.                      2325200100022 
-METHOD     (ACTIV) A fast sample changer was used.                2325200100023 
-            Both irradiation time and counting time are 10 sec.   2325200100024 
-MONIT-REF  (22099001,W.Ratynski+,J,PR/C,37,595,1988)              2325200100025 
-ERR-ANALYS (ERR-T) Quadratic error propagation (25%) from         2325200100026 
-           (ERR-S) 14C(n,g)15C statistics                   (23%) 2325200100027 
-           (ERR-1) Ge-detector efficiency for 15C            (8%) 2325200100028 
-           (ERR-2) Ge-detector efficiency for 198Au        (1.5%) 2325200100029 
-           (ERR-3) 14C sample weight                       (2.5%) 2325200100030 
-           (ERR-4) 15C gamma line intensity                (2.9%) 2325200100031 
-           (ERR-5) 198Au  gamma line intensity           (0.105%) 2325200100032 
-           (ERR-6) Misalignment of Au foils relative to 14C  (2%) 2325200100033 
-           (ERR-7,,1.) Neutron multiple scattering          (<1%) 2325200100034 
-           (MONIT-ERR) 197Au(n,g) standard cross section   (1.5%) 2325200100035 
-STATUS     (TABLE) Table 3 of Astrophys.J.387(1992)258            2325200100036 
-HISTORY    (20140812C) On                                         2325200100037 
-ENDBIB              35          0                                 2325200100038 
-COMMON               6          3                                 2325200100039 
-ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      2325200100040 
-PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   2325200100041 
- 8.         1.5        2.5        2.9        0.105      2.        2325200100042 
-ENDCOMMON            3          0                                 2325200100043 
-ENDSUBENT           42          0                                 2325200199999 
-SUBENT        23252002   20140812                             22402325200200001 
-BIB                  4          4                                 2325200200002 
-REACTION   (6-C-14(N,G)6-C-15,,SIG,,MXW)                          2325200200003 
-DECAY-DATA (6-C-15,2.449SEC,DG,5297.79,0.68)                      2325200200004 
-MONITOR    (79-AU-197(N,G)79-AU-198,,SIG,,MXW)                    2325200200005 
-DECAY-MON  (79-AU-198-G,2.694D,DG,411.8,0.9552)                   2325200200006 
-ENDBIB               4          0                                 2325200200007 
-NOCOMMON             0          0                                 2325200200008 
-DATA                 6          1                                 2325200200009 
-KT         DATA       ERR-T      ERR-S      MONIT      MONIT-ERR  2325200200010 
-KEV        MICRO-B    PER-CENT   PER-CENT   MB         PER-CENT   2325200200011 
- 23.3       1.72       25.        23.        648.       1.5       2325200200012 
-ENDDATA              3          0                                 2325200200013 
-ENDSUBENT           12          0                                 2325200299999 
-ENDENTRY             2          0                                 2325299999999 
+ENTRY            23252   20211122                             230523252  0    1 
+SUBENT        23252001   20211122                             230523252  1    1 
+BIB                 12         35                                 23252  1    2 
+TITLE       A measurement of the 14C(n,gamma)15C cross section    23252  1    3 
+            at a stellar temperature of kT=23.3 keV               23252  1    4 
+AUTHOR     (H.Beer, M.Wiescher, F.Kaeppeler, J.Goerres,           23252  1    5 
+            P.E.Koehler)                                          23252  1    6 
+INSTITUTE  (2GERKFK)                                              23252  1    7 
+REFERENCE  (J,AJ,387,258,1992)                                    23252  1    8 
+           (R,INDC(GER)-0053,2021) Revised values of Karlsruhe    23252  1    9 
+           cross sections.                                        23252  1   10 
+FACILITY   (VDG,2GERKFK) 3.75 MV Van de Graaff                    23252  1   11 
+INC-SOURCE (P-LI7)                                                23252  1   12 
+SAMPLE     (6-C-14,ENR=0.89) Powder sample (605 +/- 15 mg,        23252  1   13 
+            2.97 cm x 1.20 cm x 0.5 cm) packed in a 0.0508 mm     23252  1   14 
+            thick electroformed Ni container with a porous CH2    23252  1   15 
+            plug glued into the open end.                         23252  1   16 
+           Effective irradiated sample area was 2.97 cm x 1.20 cm 23252  1   17 
+            = 3.56 cm2.                                           23252  1   18 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG,,MXW)                    23252  1   19 
+DETECTOR   (HPGE) Relative efficiency 35%, energy resolution of   23252  1   20 
+            1.72 keV at 1.33 MeV.                                 23252  1   21 
+           27Al(p,g) resonance at 992 keV was used to determine   23252  1   22 
+            the gamma-ray efficiency from 1.84 to 11 MeV.         23252  1   23 
+           Pu238-C13 source with a line at 6.13 MeV was also used 23252  1   24 
+           for the efficiency determination.                      23252  1   25 
+METHOD     (ACTIV) A fast sample changer was used.                23252  1   26 
+            Both irradiation time and counting time are 10 sec.   23252  1   27 
+ERR-ANALYS (ERR-T) Quadratic error propagation from               23252  1   28 
+           (ERR-S) 14C(n,gamma)15C statistics               (23%) 23252  1   29 
+           (ERR-1) Ge-detector efficiency for 15C            (8%) 23252  1   30 
+           (ERR-3) 14C sample weight                       (2.5%) 23252  1   31 
+           (ERR-4) 15C gamma line intensity                (2.9%) 23252  1   32 
+           (ERR-7,,1.) Neutron multiple scattering          (<1%) 23252  1   33 
+           (MONIT-ERR) 197Au(n,gamma) standard cross section      23252  1   34 
+HISTORY    (20140812C) On                                         23252  1   35 
+           (20211122A) SD: Corrections in all Subents.            23252  1   36 
+           Subent 003 added.                                      23252  1   37 
+ENDBIB              35          0                                 23252  1   38 
+COMMON               3          3                                 23252  1   39 
+ERR-1      ERR-3      ERR-4                                       23252  1   40 
+PER-CENT   PER-CENT   PER-CENT                                    23252  1   41 
+         8.        2.5        2.9                                 23252  1   42 
+ENDCOMMON            3          0                                 23252  1   43 
+ENDSUBENT           42          0                                 23252  199999 
+SUBENT        23252002   20211122                             230523252  2    1 
+BIB                  7         10                                 23252  2    2 
+REACTION   (6-C-14(N,G)6-C-15,,SIG,,MXW)                          23252  2    3 
+DECAY-DATA (6-C-15,2.449SEC,DG,5297.79,0.68)                      23252  2    4 
+MONIT-REF  (22099001,W.Ratynski+,J,PR/C,37,595,1988)              23252  2    5 
+DECAY-MON  (79-AU-198-G,2.694D,DG,411.8,0.9552)                   23252  2    6 
+ERR-ANALYS (ERR-2) Ge-detector efficiency for 198Au        (1.5%) 23252  2    7 
+           (ERR-5) 198Au gamma line intensity            (0.105%) 23252  2    8 
+           (ERR-6) Misalignment of Au foils relative to 14C  (2%) 23252  2    9 
+STATUS     (TABLE) Table 3 of Astrophys.J.387(1992)258            23252  2   10 
+           (SPSDD,23252003) Renormalized.                         23252  2   11 
+HISTORY    (20211122A) SD: BIB updated. Subent superseded.        23252  2   12 
+ENDBIB              10          0                                 23252  2   13 
+COMMON               3          3                                 23252  2   14 
+ERR-2      ERR-5      ERR-6                                       23252  2   15 
+PER-CENT   PER-CENT   PER-CENT                                    23252  2   16 
+        1.5      0.105         2.                                 23252  2   17 
+ENDCOMMON            3          0                                 23252  2   18 
+DATA                 6          1                                 23252  2   19 
+KT         DATA       ERR-T      ERR-S      MONIT      MONIT-ERR  23252  2   20 
+KEV        MICRO-B    PER-CENT   PER-CENT   MB         PER-CENT   23252  2   21 
+    23.3        1.72       25.        23.        648.       1.5   23252  2   22 
+ENDDATA              3          0                                 23252  2   23 
+ENDSUBENT           22          0                                 23252  299999 
+SUBENT        23252003   20211122                             230523252  3    1 
+BIB                  8         15                                 23252  3    2 
+REACTION  1((6-C-14(N,G)6-C-15,,SIG,,MXW)/                        23252  3    3 
+           (79-AU-197(N,G)79-AU-198,,SIG,,MXW))                   23252  3    4 
+          2(6-C-14(N,G)6-C-15,,SIG,,MXW)                          23252  3    5 
+DECAY-DATA (6-C-15,2.449SEC,DG,5297.79,0.632)                     23252  3    6 
+DECAY-MON  (79-AU-198-G,3881.0MIN,DG,411.80,0.9558)               23252  3    7 
+MONIT-REF  (,R.Reifarth+,J,EPJ/P,133,424,2018)                    23252  3    8 
+ANALYSIS   Cross section value in Subent 23252.002 is             23252  3    9 
+           renormalized                                           23252  3   10 
+            a)for new gold cross section                          23252  3   11 
+            b) by an additional factor 0.68/0.632=1.076, which    23252  3   12 
+             accounts for the gamma-intensity of the 5297.29 keV  23252  3   13 
+             transition in the 15C decay (NDS/ENSDF 2020)         23252  3   14 
+CORRECTION  Correction for revised gold standard: 681/648 =1.051  23252  3   15 
+STATUS     (TABLE) Table on p.352 of INDC(GER)-0053               23252  3   16 
+HISTORY    (20211122C) SD                                         23252  3   17 
+ENDBIB              15          0                                 23252  3   18 
+NOCOMMON             0          0                                 23252  3   19 
+DATA                 8          1                                 23252  3   20 
+KT         DATA      1ERR-T     1DATA      2ERR-T     2ERR-S      23252  3   21 
+MONIT      MONIT-ERR                                              23252  3   22 
+KEV        NO-DIM     NO-DIM     MICRO-B    PER-CENT   PER-CENT   23252  3   23 
+MB         PER-CENT                                               23252  3   24 
+ 23.3         2.65E-06   0.66E-06   1.97       25.        23.     23252  3   25 
+    681.       1.0                                                23252  3   26 
+ENDDATA              6          0                                 23252  3   27 
+ENDSUBENT           26          0                                 23252  399999 
+ENDENTRY             3          0                                 2325299999999 
