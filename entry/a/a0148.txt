@@ -1,6 +1,6 @@
-ENTRY            A0148   20210406                             A098A0148  0    1 
-SUBENT        A0148001   20210406                             A098A0148  1    1 
-BIB                 12         52                                 A0148  1    2 
+ENTRY            A0148   20220304                             A099A0148  0    1 
+SUBENT        A0148001   20220304                             A099A0148  1    1 
+BIB                 12         53                                 A0148  1    2 
 TITLE      Integral excitation functions of alpha-induced         A0148  1    3 
            reactions on titanium, iron and nickel                 A0148  1    4 
 AUTHOR     (R.Michel,G.Brinkmann,R.Stuck)                         A0148  1    5 
@@ -53,13 +53,14 @@ HISTORY    (19950221C) by FC.                                     A0148  1   49
            of data presentation has been revised.                 A0148  1   52 
            (20210406U) SD: ERR-ANALYS updated. DETECTOR moved to  A0148  1   53 
            Subents 002-051.                                       A0148  1   54 
-ENDBIB              52          0                                 A0148  1   55 
-COMMON               2          3                                 A0148  1   56 
-ERR-1      ERR-3                                                  A0148  1   57 
-PER-CENT   PER-CENT                                               A0148  1   58 
-    2.       1.                                                   A0148  1   59 
-ENDCOMMON            3          0                                 A0148  1   60 
-ENDSUBENT           59          0                                 A0148  199999 
+           (20220304A) SD: Correction in Subent 024.              A0148  1   55 
+ENDBIB              53          0                                 A0148  1   56 
+COMMON               2          3                                 A0148  1   57 
+ERR-1      ERR-3                                                  A0148  1   58 
+PER-CENT   PER-CENT                                               A0148  1   59 
+    2.       1.                                                   A0148  1   60 
+ENDCOMMON            3          0                                 A0148  1   61 
+ENDSUBENT           60          0                                 A0148  199999 
 SUBENT        A0148002   20210406                             A098A0148  2    1 
 BIB                  5          9                                 A0148  2    2 
 REACTION   (22-TI-0(A,X)24-CR-51,,SIG)                            A0148  2    3 
@@ -865,9 +866,9 @@ MEV        MEV        MB         MB                               A0148 23   16
       35.15       1.68       7.38       0.74                      A0148 23   35 
 ENDDATA             21          0                                 A0148 23   36 
 ENDSUBENT           35          0                                 A0148 2399999 
-SUBENT        A0148024   20210406                             A098A0148 24    1 
-BIB                  5          9                                 A0148 24    2 
-REACTION   (26-FE-0(A,X)25-MN-52,M+,SIG)                          A0148 24    3 
+SUBENT        A0148024   20220304                             A099A0148 24    1 
+BIB                  5         11                                 A0148 24    2 
+REACTION   (26-FE-0(A,X)25-MN-52-G,M+,SIG)                        A0148 24    3 
 SAMPLE     natural Fe, thickness 25 um                            A0148 24    4 
 DETECTOR   (GELI)  80 cm3 Ge(Li) detector (resolution 2.1 keV at  A0148 24    5 
            1332 keV, efficiency 16.5% relative to a 3" x 3"       A0148 24    6 
@@ -876,33 +877,35 @@ STATUS     (TABLE) Tbl. 2 from Radiochim. Acta,32(1983)173        A0148 24    8
 HISTORY    (20200531A) SD: SF5=IND/M+, SF9=EXP deleted from       A0148 24    9 
            REACTION code. SAMPLE, STATUS added.                   A0148 24   10 
            (20210406U) SD: DATA-ERR -> ERR-T. DETECTOR added.     A0148 24   11 
-ENDBIB               9          0                                 A0148 24   12 
-NOCOMMON             0          0                                 A0148 24   13 
-DATA                 4         20                                 A0148 24   14 
-EN         EN-ERR     DATA       ERR-T                            A0148 24   15 
-MEV        MEV        MB         MB                               A0148 24   16 
-     171.03       0.50       58.9        6.5                      A0148 24   17 
-     161.70       0.68       61.3        6.7                      A0148 24   18 
-     151.87       0.80       65.9        7.2                      A0148 24   19 
-     142.92       0.89       67.6        7.4                      A0148 24   20 
-     133.63       0.97       69.5        6.9                      A0148 24   21 
-     123.75       1.05       67.0        6.7                      A0148 24   22 
-     114.74       1.12       64.5        6.5                      A0148 24   23 
-     105.17       1.19       71.2        7.1                      A0148 24   24 
-      94.86       1.28       84.9        8.5                      A0148 24   25 
-      87.55       0.75      111.0       10.0                      A0148 24   26 
-      83.58       1.37       95.4        9.5                      A0148 24   27 
-      81.52       0.87      110.0       10.0                      A0148 24   28 
-      75.10       0.97       78.2        7.0                      A0148 24   29 
-      68.21       1.07       30.8        3.1                      A0148 24   30 
-      60.75       1.16       11.5        1.0                      A0148 24   31 
-      55.26       1.25       14.3        1.1                      A0148 24   32 
-      49.31       1.35       14.8        1.3                      A0148 24   33 
-      42.67       1.52       8.33       0.75                      A0148 24   34 
-      35.15       1.68      0.396      0.051                      A0148 24   35 
-      26.10       1.99     0.0359     0.0051                      A0148 24   36 
-ENDDATA             22          0                                 A0148 24   37 
-ENDSUBENT           36          0                                 A0148 2499999 
+           (20220304A) SD: SF4=Mn-52 -> Mn-52g in REACTION code.  A0148 24   12 
+            (confirmed by Rolf Michel, 2021-08-17)                A0148 24   13 
+ENDBIB              11          0                                 A0148 24   14 
+NOCOMMON             0          0                                 A0148 24   15 
+DATA                 4         20                                 A0148 24   16 
+EN         EN-ERR     DATA       ERR-T                            A0148 24   17 
+MEV        MEV        MB         MB                               A0148 24   18 
+     171.03       0.50       58.9        6.5                      A0148 24   19 
+     161.70       0.68       61.3        6.7                      A0148 24   20 
+     151.87       0.80       65.9        7.2                      A0148 24   21 
+     142.92       0.89       67.6        7.4                      A0148 24   22 
+     133.63       0.97       69.5        6.9                      A0148 24   23 
+     123.75       1.05       67.0        6.7                      A0148 24   24 
+     114.74       1.12       64.5        6.5                      A0148 24   25 
+     105.17       1.19       71.2        7.1                      A0148 24   26 
+      94.86       1.28       84.9        8.5                      A0148 24   27 
+      87.55       0.75      111.0       10.0                      A0148 24   28 
+      83.58       1.37       95.4        9.5                      A0148 24   29 
+      81.52       0.87      110.0       10.0                      A0148 24   30 
+      75.10       0.97       78.2        7.0                      A0148 24   31 
+      68.21       1.07       30.8        3.1                      A0148 24   32 
+      60.75       1.16       11.5        1.0                      A0148 24   33 
+      55.26       1.25       14.3        1.1                      A0148 24   34 
+      49.31       1.35       14.8        1.3                      A0148 24   35 
+      42.67       1.52       8.33       0.75                      A0148 24   36 
+      35.15       1.68      0.396      0.051                      A0148 24   37 
+      26.10       1.99     0.0359     0.0051                      A0148 24   38 
+ENDDATA             22          0                                 A0148 24   39 
+ENDSUBENT           38          0                                 A0148 2499999 
 SUBENT        A0148025   20210406                             A098A0148 25    1 
 BIB                  5          9                                 A0148 25    2 
 REACTION   (26-FE-0(A,X)24-CR-51,CUM,SIG)                         A0148 25    3 

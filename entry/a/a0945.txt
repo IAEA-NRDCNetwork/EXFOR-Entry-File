@@ -1,6 +1,6 @@
-ENTRY            A0945   20200410                             A094A0945  0    1 
-SUBENT        A0945001   20200410                             A094A0945  1    1 
-BIB                 11         23                                 A0945  1    2 
+ENTRY            A0945   20220323                             A099A0945  0    1 
+SUBENT        A0945001   20220323                             A099A0945  1    1 
+BIB                 11         24                                 A0945  1    2 
 TITLE      Extrapolation of astrophysical S-factors for the       A0945  1    3 
            reaction N-14(p,gamma)O-15 to near-zero energies.      A0945  1    4 
 AUTHOR     (S.V.Artemov, S.B.Igamov, Q.I.Tursunmakhatov,          A0945  1    5 
@@ -22,11 +22,12 @@ DETECTOR   (TELES,SIBAR) Deuterons were detected by three         A0945  1   17
            by Li drift into silicon have a sensitive area of      A0945  1   21 
             3000-5500 mu-m. Total energy resolution was 300 keV.  A0945  1   22 
 ERR-ANALYS (DATA-ERR) No information on the source of uncertainty A0945  1   23 
-HISTORY    (20130208C)SB                                          A0945  1   24 
+HISTORY    (20130208C) SB                                         A0945  1   24 
            (20200410A) SD: Subent 003 split in two.               A0945  1   25 
-ENDBIB              23          0                                 A0945  1   26 
-NOCOMMON             0          0                                 A0945  1   27 
-ENDSUBENT           26          0                                 A0945  199999 
+           (20220323A) SD: Corrections in Subents 004, 005.       A0945  1   26 
+ENDBIB              24          0                                 A0945  1   27 
+NOCOMMON             0          0                                 A0945  1   28 
+ENDSUBENT           27          0                                 A0945  199999 
 SUBENT        A0945002   20130208                             A078A094500200001 
 BIB                  4         10                                 A094500200002 
 REACTION   (7-N-14(HE3,D)8-O-15,PAR,DA)                           A094500200003 
@@ -154,49 +155,50 @@ MEV        MEV        EV         EV         NO-DIM                A0945  3   20
       6.859      0.985      0.006                   1.5           A0945  3   41 
 ENDDATA             23          0                                 A0945  3   42 
 ENDSUBENT           41          0                                 A0945  399999 
-SUBENT        A0945004   20130208                             A078A094500400001 
-BIB                  4          6                                 A094500400002 
-REACTION   (7-N-14(P,G)8-O-15,PAR,SIG,,SFC)                       A094500400003 
-EN-SEC     (E-LVL,8-O-15)                                         A094500400004 
-STATUS     (TABLE).Table 5 of J,PAN,75,291,1996                   A094500400005 
-           (DEP,A0945003)                                         A094500400006 
-FLAG       (1.).The uncertainty in S-expt(E) was not included in  A094500400007 
-           the total error.                                       A094500400008 
-ENDBIB               6          0                                 A094500400009 
-COMMON               1          3                                 A094500400010 
-EN                                                                A094500400011 
-MEV                                                               A094500400012 
-22.3                                                              A094500400013 
-ENDCOMMON            3          0                                 A094500400014 
-DATA                 4          7                                 A094500400015 
-E-LVL      DATA       DATA-ERR   FLAG                             A094500400016 
-KEV        B*KEV      B*KEV      NO-DIM                           A094500400017 
-0.         0.25       0.05                                        A094500400018 
-5183.      0.033      0.025                                       A094500400019 
-5241.      0.066      0.025                                       A094500400020 
-6173.      0.117      0.037                                       A094500400021 
-6793.      1.26       0.17                                        A094500400022 
-6859.      0.042      0.007      1.                               A094500400023 
-7276.      0.019      0.004      1.                               A094500400024 
-ENDDATA              9          0                                 A094500400025 
-ENDSUBENT           24          0                                 A094500499999 
-SUBENT        A0945005   20130208                             A078A094500500001 
-BIB                  2          3                                 A094500500002 
-REACTION   (7-N-14(P,G)8-O-15,,SIG,,SFC)                          A094500500003 
-STATUS     (TABLE).Table 5 of J,PAN,75,291,1996                   A094500500004 
-           (DEP,A0945004)                                         A094500500005 
-ENDBIB               3          0                                 A094500500006 
-COMMON               1          3                                 A094500500007 
-EN                                                                A094500500008 
-MEV                                                               A094500500009 
-22.3                                                              A094500500010 
-ENDCOMMON            3          0                                 A094500500011 
-DATA                 2          1                                 A094500500012 
-DATA       DATA-ERR                                               A094500500013 
-B*KEV      B*KEV                                                  A094500500014 
-1.79       0.31                                                   A094500500015 
-ENDDATA              3          0                                 A094500500016 
-ENDSUBENT           15          0                                 A094500599999 
+SUBENT        A0945004   20220323                             A099A0945  4    1 
+BIB                  4          6                                 A0945  4    2 
+REACTION   (7-N-14(P,G)8-O-15,PAR,SIG,,SFC)                       A0945  4    3 
+STATUS     (TABLE) Table 5 of Phys.Atom.Nucl.,75(2012)291         A0945  4    4 
+           (DEP,A0945003)                                         A0945  4    5 
+FLAG       (1.).The uncertainty in S-expt(E) was not included in  A0945  4    6 
+           the total error.                                       A0945  4    7 
+HISTORY    (20220323A) SD: Value of En corrected (22.3 -> 0. MeV).A0945  4    8 
+ENDBIB               6          0                                 A0945  4    9 
+COMMON               1          3                                 A0945  4   10 
+EN                                                                A0945  4   11 
+MEV                                                               A0945  4   12 
+ 0.                                                               A0945  4   13 
+ENDCOMMON            3          0                                 A0945  4   14 
+DATA                 4          7                                 A0945  4   15 
+E-LVL      DATA       DATA-ERR   FLAG                             A0945  4   16 
+KEV        B*KEV      B*KEV      NO-DIM                           A0945  4   17 
+         0.       0.25       0.05                                 A0945  4   18 
+      5183.      0.033      0.025                                 A0945  4   19 
+      5241.      0.066      0.025                                 A0945  4   20 
+      6173.      0.117      0.037                                 A0945  4   21 
+      6793.       1.26       0.17                                 A0945  4   22 
+      6859.      0.042      0.007         1.                      A0945  4   23 
+      7276.      0.019      0.004         1.                      A0945  4   24 
+ENDDATA              9          0                                 A0945  4   25 
+ENDSUBENT           24          0                                 A0945  499999 
+SUBENT        A0945005   20220323                             A099A0945  5    1 
+BIB                  3          4                                 A0945  5    2 
+REACTION   (7-N-14(P,G)8-O-15,,SIG,,SFC)                          A0945  5    3 
+STATUS     (TABLE) Table 5 of of Phys.Atom.Nucl.,75(2012)291      A0945  5    4 
+           (DEP,A0945004)                                         A0945  5    5 
+HISTORY    (20220323A) SD: Value of En corrected (22.3 -> 0. MeV).A0945  5    6 
+ENDBIB               4          0                                 A0945  5    7 
+COMMON               1          3                                 A0945  5    8 
+EN                                                                A0945  5    9 
+MEV                                                               A0945  5   10 
+  0.                                                              A0945  5   11 
+ENDCOMMON            3          0                                 A0945  5   12 
+DATA                 2          1                                 A0945  5   13 
+DATA       DATA-ERR                                               A0945  5   14 
+B*KEV      B*KEV                                                  A0945  5   15 
+       1.79       0.31                                            A0945  5   16 
+ENDDATA              3          0                                 A0945  5   17 
+ENDSUBENT           16          0                                 A0945  599999 
 SUBENT        A0945006   20200410                             A094A0945  6    1 
 BIB                  4          5                                 A0945  6    2 
 REACTION   (7-N-14(P,EL),,WID)                                    A0945  6    3 
