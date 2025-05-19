@@ -1,6 +1,6 @@
-ENTRY            22781   20200809                             229022781  0    1 
-SUBENT        22781001   20200809                             229022781  1    1 
-BIB                 14         43                                 22781  1    2 
+ENTRY            22781   20230213                             231422781  0    1 
+SUBENT        22781001   20230213                             231422781  1    1 
+BIB                 14         44                                 22781  1    2 
 TITLE      .Neutron capture cross section of 18O and its          22781  1    3 
             astrophysical implications                            22781  1    4 
 AUTHOR     (J.Meissner, H.Schatz, J.Goerres, H.Herndl, M.Wiescher,22781  1    5 
@@ -29,7 +29,7 @@ DETECTOR   (SCIN,GLASD)  6-Li glass detector at zero degree to    22781  1   26
            (HPGE) Gamma detection made by well-shielded high      22781  1   28 
              purity 35% Ge detector with resolution 2 keV at      22781  1   29 
              1.3 MeV gamma energy.                                22781  1   30 
-METHOD     (ACTIV)  Activation                                    22781  1   31 
+METHOD     (ACTIV)                                                22781  1   31 
            (STTA)   Simultaneous irradiation of sample and        22781  1   32 
                     monitor                                       22781  1   33 
 SAMPLE     .Three samples were used consisting of a mixture of    22781  1   34 
@@ -44,9 +44,10 @@ HISTORY    (20080603C)    SM                                      22781  1   41
            another experiment and authors. This was done after    22781  1   43 
            consultation with Dr.F.Kaeppeler.                      22781  1   44 
            (20200809U) SD: Small correction in DECAY-DATA.        22781  1   45 
-ENDBIB              43          0                                 22781  1   46 
-NOCOMMON             0          0                                 22781  1   47 
-ENDSUBENT           46          0                                 22781  199999 
+           (20230213A) SD: Correction in Subent 005.              22781  1   46 
+ENDBIB              44          0                                 22781  1   47 
+NOCOMMON             0          0                                 22781  1   48 
+ENDSUBENT           47          0                                 22781  199999 
 SUBENT        22781002   20080603                             21992278100200001 
 BIB                 10         26                                 2278100200002 
 REACTION   (8-O-18(N,G)8-O-19,,SIG,,MXW)  Averaged over Maxwell   2278100200003 
@@ -134,23 +135,23 @@ KEV        EV         EV         EV         NO-DIM                2278100400014
   746.       1.65         0.3                 1.                  2278100400019 
 ENDDATA              7          0                                 2278100400020 
 ENDSUBENT           19          0                                 2278100499999 
-SUBENT        22781005   20080603                             21992278100500001 
-BIB                  4          5                                 2278100500002 
-REACTION   (8-O-19(N,G),,WID)  Gamma width                        2278100500003 
-EN-SEC     <E-EXC,8-O-19> Excitation energy of neutron supposed   2278100500004 
-                          as EN-RES by compiler                   2278100500005 
-ERR-ANALYS (DATA-ERR)     Not specified                           2278100500006 
-STATUS     (TABLE) Table V of main reference                      2278100500007 
-ENDBIB               5          0                                 2278100500008 
-NOCOMMON             0          0                                 2278100500009 
-DATA                 3          4                                 2278100500010 
-EN-RES     DATA       DATA-ERR                                    2278100500011 
-MEV        EV         EV                                          2278100500012 
-   4.109     1.4  E-02    4. E-03                                 2278100500013 
-   4.328     0.6          0.1                                     2278100500014 
-   4.582     1.9          0.4                                     2278100500015 
-   4.703     0.5          0.1                                     2278100500016 
-ENDDATA              6          0                                 2278100500017 
-ENDSUBENT           16          0                                 2278100599999 
+SUBENT        22781005   20230213                             231422781  5    1 
+BIB                  4          5                                 22781  5    2 
+REACTION   (8-O-19(N,G),,WID)                                     22781  5    3 
+ERR-ANALYS (DATA-ERR)     Not specified                           22781  5    4 
+STATUS     (TABLE) Tables IV (Er), V of Phys.Rev.,C53(1996)459    22781  5    5 
+HISTORY    (20230213A) SD: Ex values were replaced with Er values 22781  5    6 
+            in Table IV. EN-SEC deleted.                          22781  5    7 
+ENDBIB               5          0                                 22781  5    8 
+NOCOMMON             0          0                                 22781  5    9 
+DATA                 3          4                                 22781  5   10 
+EN-RES     DATA       DATA-ERR                                    22781  5   11 
+KEV        EV         EV                                          22781  5   12 
+       152.    1.4E-02     4.E-03                                 22781  5   13 
+       371.        0.6        0.1                                 22781  5   14 
+       625.        1.9        0.4                                 22781  5   15 
+       746.        0.5        0.1                                 22781  5   16 
+ENDDATA              6          0                                 22781  5   17 
+ENDSUBENT           16          0                                 22781  599999 
 NOSUBENT      22781006   20101105                             22252278100600001 
 ENDENTRY             6          0                                 2278199999999 
