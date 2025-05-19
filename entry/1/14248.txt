@@ -1,74 +1,193 @@
-ENTRY            14248   20090826                             13621424800000001 
-SUBENT        14248001   20090826                             13621424800100001 
-BIB                 14         28                                 1424800100002 
-TITLE      Neutron capture cross sections of 184W and 186W        1424800100003 
-AUTHOR     (J.Marganiec,I.Dillmann,C.Domingo Pardo,F.Kappeler)    1424800100004 
-INSTITUTE  (2GERKFK,2GERMUN,2GERGSI,3POLLOU)                      1424800100005 
-REFERENCE  (J,PR/C,80,025804,2009)                                1424800100006 
-FACILITY   (VDG,2GERKFK)Measurementswere carried out at the       1424800100007 
-           Karlsruhe 3.7-MV Van de Graaff accelerator using the   1424800100008 
-           activation technique                                   1424800100009 
-SAMPLE     The W samples have been cut from metal foil of natural 1424800100010 
-           composition and high chemical purity. Three            1424800100011 
-           samples with different diameter and thickness          1424800100012 
-           were used :                                            1424800100013 
-            Sample Diameter(mm) Thickness(mm) Mass(mg)            1424800100014 
-             1       10           0.05       81.41                1424800100015 
-             2        6           0.16       90.23                1424800100016 
-             3        6           0.11       59.02                1424800100017 
-DETECTOR   (HPGE) The gamma activities were counted by means of   1424800100018 
-           two high-purity HPGe detector systems, a single        1424800100019 
-           detector with about 30% relative efficiency and a      1424800100020 
-           setup of two Ge clover detectors each with a           1424800100021 
-           relative efficiency of 130% in very close geometry.    1424800100022 
-METHOD     (ACTIV)                                                1424800100023 
-MONITOR    (79-AU-197(N,G)79-AU-198,,SIG,,MXW)                    1424800100024 
-DECAY-MON  (79-AU-198,2.69517D,DG,411.8,0.9558)                   1424800100025 
-MONIT-REF  (22099002,W.Ratynski+,J,PR/C,37,595,1988)              1424800100026 
-INC-SOURCE (P-LI7)                                                1424800100027 
-ERR-ANALYS (ERR-T) Total uncertainty                              1424800100028 
-           (ERR-1) Uncertainty in detection efficiency            1424800100029 
-HISTORY    (20090826C) Compiled by S.H.                           1424800100030 
-ENDBIB              28          0                                 1424800100031 
-COMMON               5          3                                 1424800100032 
-EN         EN-ERR     MONIT      MONIT-ERR  ERR-1                 1424800100033 
-KEV        KEV        MB         MB         PER-CENT              1424800100034 
-25.0       0.5         586.         8.        2.0                 1424800100035 
-ENDCOMMON            3          0                                 1424800100036 
-ENDSUBENT           35          0                                 1424800199999 
-SUBENT        14248002   20090826                             13621424800200001 
-BIB                  4          7                                 1424800200002 
-REACTION   (74-W-184(N,G)74-W-185,,SIG,,MXW)                      1424800200003 
-DECAY-DATA (74-W-185,75.3D,DG,125.358,0.000192)                   1424800200004 
-STATUS     (TABLE) Data taken from tab. 4 of the reference        1424800200005 
-ERR-ANALYS (ERR-S,0.2,0.7) Statistical uncertainty                1424800200006 
-           (ERR-2) Uncertainty in gamma ray intensity             1424800200007 
-           (ERR-3,1.1,2.5) Uncertainty in gamma ray selfabsorption1424800200008 
-           (ERR-4) Uncertainty in half-life                       1424800200009 
-ENDBIB               7          0                                 1424800200010 
-NOCOMMON             0          0                                 1424800200011 
-DATA                 4          1                                 1424800200012 
-DATA       ERR-T      ERR-2      ERR-4                            1424800200013 
-MB         MB         PER-CENT   PER-CENT                         1424800200014 
-225.0      12.0       3.0        0.4                              1424800200015 
-ENDDATA              3          0                                 1424800200016 
-ENDSUBENT           15          0                                 1424800299999 
-SUBENT        14248003   20090826                             13621424800300001 
-BIB                  4          8                                 1424800300002 
-REACTION   (74-W-186(N,G)74-W-187,,SIG,,MXW)                      1424800300003 
-DECAY-DATA (74-W-187,23.72HR,DG,685.73,0.237,                     1424800300004 
-                             DG,772.89,0.0412)                    1424800300005 
-STATUS     (TABLE) Data taken from tab. 4 of the reference        1424800300006 
-ERR-ANALYS (ERR-S,0.2,0.6) Statistical uncertainty                1424800300007 
-           (ERR-2,3.2,3.3) Uncertainty in gamma ray intensity     1424800300008 
-           (ERR-3,0.4,0.6) Uncertainty in irradiation history     1424800300009 
-           (ERR-4) Uncertainty in half-life                       1424800300010 
-ENDBIB               8          0                                 1424800300011 
-NOCOMMON             0          0                                 1424800300012 
-DATA                 3          1                                 1424800300013 
-DATA       ERR-T      ERR-4                                       1424800300014 
-MB         MB         PER-CENT                                    1424800300015 
-228.0      10.0       0.25                                        1424800300016 
-ENDDATA              3          0                                 1424800300017 
-ENDSUBENT           16          0                                 1424800399999 
-ENDENTRY             3          0                                 1424899999999 
+ENTRY            14248   20220122                             148614248  0    1 
+SUBENT        14248001   20220122                             148614248  1    1 
+BIB                 15         43                                 14248  1    2 
+TITLE      Neutron capture cross sections of 184W and 186W        14248  1    3 
+AUTHOR     (J.Marganiec,I.Dillmann,C.Domingo Pardo,F.Kappeler)    14248  1    4 
+REFERENCE  (J,PR/C,80,025804,2009) Original reference.            14248  1    5 
+           #doi:10.1103/PhysRevC.80.025804                        14248  1    6 
+           (R,INDC(GER)-0053,2021) Revised values of Karlsruhe    14248  1    7 
+           cross sections.                                        14248  1    8 
+INSTITUTE  (2GERKFK,2GERMUN,2GERGSI,3POLLOU)                      14248  1    9 
+FACILITY   (VDG,2GERKFK)Measurements were carried out at the      14248  1   10 
+           Karlsruhe 3.7-MV Van de Graaff accelerator using the   14248  1   11 
+           activation technique                                   14248  1   12 
+SAMPLE     The W samples have been cut from metal foil of natural 14248  1   13 
+           composition and high chemical purity. Three            14248  1   14 
+           samples with different diameter and thickness          14248  1   15 
+           were used :                                            14248  1   16 
+            Sample Diameter(mm) Thickness(mm) Mass(mg)            14248  1   17 
+             1       10           0.05       81.41                14248  1   18 
+             2        6           0.16       90.23                14248  1   19 
+             3        6           0.11       59.02                14248  1   20 
+DETECTOR   (HPGE) The gamma activities were counted by means of   14248  1   21 
+           two high-purity HPGe detector systems, a single        14248  1   22 
+           detector with about 30% relative efficiency and a      14248  1   23 
+           setup of two Ge clover detectors each with a           14248  1   24 
+           relative efficiency of 130% in very close geometry.    14248  1   25 
+METHOD     (ACTIV)                                                14248  1   26 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG,,SPA)                    14248  1   27 
+DECAY-MON  (79-AU-198-G,2.69517D,DG,411.8,0.9558)                 14248  1   28 
+MONIT-REF  (,R.Reifarth+,J,EPJ/P,133,424,2018) Complete           14248  1   29 
+           description of Karlsruhe cross sections deficiencies.  14248  1   30 
+INC-SOURCE (P-LI7)                                                14248  1   31 
+ERR-ANALYS (ERR-T) Total uncertainty                              14248  1   32 
+           (ERR-1) Uncertainty in detection efficiency            14248  1   33 
+           (MONIT-ERR) Uncertainty in monitor cross-section       14248  1   34 
+COMMENT    Compiler's comment: The Karlsruhe group original       14248  1   35 
+           result was based on its own 197Au(n,gamma) cross       14248  1   36 
+           section by Ratynski and Kaeppeler, Phys.Rev. C37, 595  14248  1   37 
+           (1988), EXFOR entry #22099 for neutron beam monitor    14248  1   38 
+           that later was proven as deficient.                    14248  1   39 
+HISTORY    (20090826C) Compiled by S.H.                           14248  1   40 
+           (20210611A) BP: Added doi, COMMENT, updated REFERENCE, 14248  1   41 
+                       replaced MONIT-ERR, original cross sections14248  1   42 
+                       in Sub. 2-3 with the revised values,       14248  1   43 
+                      included Sub. 4-5 suggested by Kaeppeler    14248  1   44 
+                      and Reifarth.                               14248  1   45 
+ENDBIB              43          0                                 14248  1   46 
+COMMON               5          3                                 14248  1   47 
+KT-NRM     KT-ERR     MONIT-ERR  ERR-1      MONIT                 14248  1   48 
+KEV        KEV        MB         PER-CENT   B                     14248  1   49 
+       25.0        0.5         1.        2.0      622.7           14248  1   50 
+ENDCOMMON            3          0                                 14248  1   51 
+ENDSUBENT           50          0                                 14248  199999 
+SUBENT        14248002   20220122                             148614248  2    1 
+BIB                  8         16                                 14248  2    2 
+REACTION   (74-W-184(N,G)74-W-185,,SIG,,SPA)                      14248  2    3 
+DECAY-DATA (74-W-185-G,75.3D,DG,125.358,0.000192)                 14248  2    4 
+METHOD     Revised data: Measured quantity: cross section ratio   14248  2    5 
+           184W/197Au = 0.384+-0.019                              14248  2    6 
+ERR-ANALYS (ERR-S,0.2,0.7) Statistical uncertainty                14248  2    7 
+           (ERR-2) Uncertainty in gamma ray intensity             14248  2    8 
+           (ERR-3,1.1,2.5) Uncertainty in gamma ray selfabsorption14248  2    9 
+           (ERR-4) Uncertainty in half-life                       14248  2   10 
+CORRECTION Correction for revised gold standard 622.7/586 = 1.062614248  2   11 
+COMMENT    Cross section value in subentry 14248.002 is           14248  2   12 
+           renormalized for new gold cross section.               14248  2   13 
+STATUS     (TABLE) Revised cross sections: Text on page 21 of     14248  2   14 
+                   R,INDC(GER)-0053,2021.                         14248  2   15 
+HISTORY    (20210611A) BP: Replaced original Karlsruhe cross      14248  2   16 
+                      sections with the revised values, added     14248  2   17 
+                      CORRECTION and COMMENT information.         14248  2   18 
+ENDBIB              16          0                                 14248  2   19 
+NOCOMMON             0          0                                 14248  2   20 
+DATA                 5          1                                 14248  2   21 
+KT-DUMMY   DATA       ERR-T      ERR-2      ERR-4                 14248  2   22 
+KEV        MB         MB         PER-CENT   PER-CENT              14248  2   23 
+       25.0      239.0       12.1        3.0        0.4           14248  2   24 
+ENDDATA              3          0                                 14248  2   25 
+ENDSUBENT           24          0                                 14248  299999 
+SUBENT        14248003   20220122                             148614248  3    1 
+BIB                  8         23                                 14248  3    2 
+REACTION   (74-W-186(N,G)74-W-187,,SIG,,SPA)                      14248  3    3 
+DECAY-DATA (74-W-187,23.72HR,DG,685.73,0.332,                     14248  3    4 
+                             DG,772.89,0.0502)                    14248  3    5 
+METHOD     Revised data: Measured quantity: cross section ratio   14248  3    6 
+           184W/197Au = 0.384+-0.019                              14248  3    7 
+ERR-ANALYS (ERR-S,0.2,0.6) Statistical uncertainty                14248  3    8 
+           (ERR-2) Uncertainty in gamma ray intensity             14248  3    9 
+           (ERR-3,0.4,0.6) Uncertainty in irradiation history     14248  3   10 
+           (ERR-4) Uncertainty in half-life                       14248  3   11 
+CORRECTION Correction for revised gold standard 622.7/586 = 1.062614248  3   12 
+COMMENT    Cross section value in subentry 14248.003 is           14248  3   13 
+           renormalized                                           14248  3   14 
+           a) for new gold cross section                          14248  3   15 
+           b) by an additional factor 33.2/27.3 = 0.8223, which   14248  3   16 
+           accounts for the revised gamma-intensities for the     14248  3   17 
+           685.72 and 772.89 keV transitions in the 187W-decay    14248  3   18 
+            (NDS/ENSDF 2020)                                      14248  3   19 
+STATUS     (TABLE) Revised cross sections: Text on page 22 of     14248  3   20 
+                   R,INDC(GER)-0053,2021.                         14248  3   21 
+HISTORY    (20210611A) BP: Replaced original Karlsruhe cross      14248  3   22 
+                      sections with the revised values, added     14248  3   23 
+                      CORRECTION and COMMENT information, updated 14248  3   24 
+                      ERR-2.                                      14248  3   25 
+ENDBIB              23          0                                 14248  3   26 
+NOCOMMON             0          0                                 14248  3   27 
+DATA                 5          1                                 14248  3   28 
+KT-DUMMY   DATA       ERR-T      ERR-2      ERR-4                 14248  3   29 
+KEV        MB         MB         PER-CENT   PER-CENT              14248  3   30 
+       25.0      199.0        5.8        1.5       0.25           14248  3   31 
+ENDDATA              3          0                                 14248  3   32 
+ENDSUBENT           31          0                                 14248  399999 
+SUBENT        14248004   20210612                             148614248  4    1 
+BIB                  5         15                                 14248  4    2 
+REACTION   (74-W-184(N,G)74-W-185,,SIG,,MXW,DERIV)                14248  4    3 
+ANALYSIS   MACS are derived from ENDF/B-VII.0 renormalized to     14248  4    4 
+           the measured SACS. The final MACS values were          14248  4    5 
+           obtained from thermalized energy-differential cross    14248  4    6 
+           sections <sigma>kT =(2/sqrt(pi)) *(Integral from zero  14248  4    7 
+           to infinity[sigma(En)NF](En*exp(-En/kT)dE)) /(Integral 14248  4    8 
+           from zero to infinity[En*exp(-En/kT)dEn]) where En is  14248  4    9 
+           the neutron energy and exp(-En/kT) the Boltzmann factor14248  4   10 
+            for a thermal energy kT.                              14248  4   11 
+COMMENT    Cross section value in subentry 14248.004 is           14248  4   12 
+           renormalized   for new gold cross section.             14248  4   13 
+STATUS     (DEP,14248002)                                         14248  4   14 
+           (TABLE) Revised cross sections: Text on page 23 of     14248  4   15 
+                   R,INDC(GER)-0053,2021.                         14248  4   16 
+HISTORY    (20210611C) BP                                         14248  4   17 
+ENDBIB              15          0                                 14248  4   18 
+NOCOMMON             0          0                                 14248  4   19 
+DATA                 3         11                                 14248  4   20 
+KT         DATA       ERR-T                                       14248  4   21 
+KEV        MB         MB                                          14248  4   22 
+        5.0      728.0      233.0                                 14248  4   23 
+       10.0      434.0       98.0                                 14248  4   24 
+       15.0      336.0       50.0                                 14248  4   25 
+       20.0      287.0       27.0                                 14248  4   26 
+       25.0      257.0       14.0                                 14248  4   27 
+       30.0      236.0       16.0                                 14248  4   28 
+       40.0      205.0       20.0                                 14248  4   29 
+       50.0      183.0       26.0                                 14248  4   30 
+       60.0      165.0       29.0                                 14248  4   31 
+       80.0      139.0       33.0                                 14248  4   32 
+      100.0      121.0       36.0                                 14248  4   33 
+ENDDATA             13          0                                 14248  4   34 
+ENDSUBENT           33          0                                 14248  499999 
+SUBENT        14248005   20210612                             148614248  5    1 
+BIB                  6         21                                 14248  5    2 
+REACTION   (74-W-186(N,G)74-W-187,,SIG,,MXW,DERIV)                14248  5    3 
+ANALYSIS   MACS are derived from ENDF/B-VII.0 renormalized to     14248  5    4 
+           the measured SACS. The final MACS values were          14248  5    5 
+           obtained from thermalized energy-differential cross    14248  5    6 
+           sections <sigma>kT =(2/sqrt(pi)) *(Integral from zero  14248  5    7 
+           to infinity[sigma(En)NF](En*exp(-En/kT)dE)) /(Integral 14248  5    8 
+           from zero to infinity[En*exp(-En/kT)dEn]) where En is  14248  5    9 
+           the neutron energy and exp(-En/kT) the Boltzmann factor14248  5   10 
+            for a thermal energy kT.                              14248  5   11 
+ERR-ANALYS (ERR-2) Uncertainty in gamma ray intensity             14248  5   12 
+COMMENT    Cross section value in subentry 14248.005 is           14248  5   13 
+           renormalized                                           14248  5   14 
+           a) for new gold cross section                          14248  5   15 
+           b) by an additional factor 33.2/27.3 = 0.8223, which   14248  5   16 
+           accounts for the revised gamma-intensities for the     14248  5   17 
+           685.72 and 772.89 keV transitions in the 187W-decay    14248  5   18 
+            (NDS/ENSDF 2020).                                     14248  5   19 
+STATUS     (DEP,14248003)                                         14248  5   20 
+           (TABLE) Revised cross sections: Text on page 24 of     14248  5   21 
+                   R,INDC(GER)-0053,2021.                         14248  5   22 
+HISTORY    (20210611C) BP                                         14248  5   23 
+ENDBIB              21          0                                 14248  5   24 
+COMMON               1          3                                 14248  5   25 
+ERR-2                                                             14248  5   26 
+PER-CENT                                                          14248  5   27 
+        2.0                                                       14248  5   28 
+ENDCOMMON            3          0                                 14248  5   29 
+DATA                 3         11                                 14248  5   30 
+KT         DATA       ERR-T                                       14248  5   31 
+EV         MB         MB                                          14248  5   32 
+        5.0      523.0      147.0                                 14248  5   33 
+       10.0      327.0       56.0                                 14248  5   34 
+       15.0      263.0       25.0                                 14248  5   35 
+       20.0      232.0       15.0                                 14248  5   36 
+       25.0      214.0       10.0                                 14248  5   37 
+       30.0      204.0       10.0                                 14248  5   38 
+       40.0      179.0       10.0                                 14248  5   39 
+       50.0      172.0       11.0                                 14248  5   40 
+       60.0      160.0       12.0                                 14248  5   41 
+       80.0      141.0       15.0                                 14248  5   42 
+      100.0      126.0       17.0                                 14248  5   43 
+ENDDATA             13          0                                 14248  5   44 
+ENDSUBENT           43          0                                 14248  599999 
+ENDENTRY             5          0                                 1424899999999 

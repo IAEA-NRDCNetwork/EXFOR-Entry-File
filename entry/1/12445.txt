@@ -1,30 +1,91 @@
-ENTRY            12445   19830809                             00001244500000001 
-SUBENT        12445001   19830809                             00001244500100001 
-BIB                  6          8                                 1244500100002 
-INSTITUTE  (1USAANL)                                              1244500100003 
-REFERENCE  (R,CP-2079,4408)                                       1244500100004 
-AUTHOR     (H.L.ANDERSON,J.BISTLINE,J.DABBS,H.HESKETT,W.STURM,    1244500100005 
-           J.TABIN)                                               1244500100006 
-TITLE      THERMAL NEUTRON ABSORPTION BY 28.                      1244500100007 
-STATUS     (SCSRS)                                                1244500100008 
-HISTORY    (760804T) TRANSLATED FROM SCISRS                       1244500100009 
-           (830809A) CONVERTED TO REACTION FORMALISM              1244500100010 
-ENDBIB               8          0                                 1244500100011 
-NOCOMMON             0          0                                 1244500100012 
-ENDSUBENT           11          0                                 1244500199999 
-SUBENT        12445002   19830809                             00001244500200001 
-BIB                  4          5                                 1244500200002 
-REACTION   (92-U-238(N,G)92-U-239,,SIG,,MXW)                      1244500200003 
-METHOD     (REAC) REACTIVITY COEFFICIENT MEASUREMENT.             1244500200004 
-MONITOR    (5-B-0(N,ABS),,SIG)                                    1244500200005 
-            RELATIVE TO BORON THERMAL ABSORPTION=703B.            1244500200006 
-INC-SPECT  SUB-CD SPECTRUM.                                       1244500200007 
-ENDBIB               5          0                                 1244500200008 
-NOCOMMON             0          0                                 1244500200009 
-DATA                 4          1                                 1244500200010 
-EN-DUMMY   DATA       DATA-ERR   MONIT                            1244500200011 
-MEV        B          PER-CENT   B                                1244500200012 
- 2.53   -08 2.58   +00    3.      703.                            1244500200013 
-ENDDATA              3          0                                 1244500200014 
-ENDSUBENT           13          0                                 1244500299999 
-ENDENTRY             2          0                                 1244599999999 
+ENTRY            12445   20210610                             148612445  0    1 
+SUBENT        12445001   20210610                             148612445  1    1 
+BIB                 12         37                                 12445  1    2 
+TITLE      Thermal Neutron Absorption by 28                       12445  1    3 
+AUTHOR     (H.L.Anderson,J.Bistline,J.Dabbs,H.Heskett,W.Sturm,    12445  1    4 
+           J.Tabin)                                               12445  1    5 
+REFERENCE  (R,CP-2079,1944)                                       12445  1    6 
+INSTITUTE  (1USAANL)                                              12445  1    7 
+FACILITY   (REAC,1USAANL)                                         12445  1    8 
+SAMPLE     2500 grams of depleted U3O8 oxide in which the         12445  1    9 
+           ratio of isotopes 238U/235U was 3800. 92 uranium       12445  1   10 
+           pellets were produced. Each pellet was 2.57 cm in      12445  1   11 
+           diameter, 0.70 cm in height,and weighted 20 grams.     12445  1   12 
+           These were held in little Al dishes, each of which     12445  1   13 
+           weighed slightly less than 2 grams. The 92 pellets     12445  1   14 
+           were arranged inside a graphite brick 10 x 10 x 120    12445  1   15 
+           cm long in a cubic lattice of spacing 5.21 cm, 23      12445  1   16 
+           periods long.                                          12445  1   17 
+DETECTOR   (PROPC) Low geometry thin mica window counter.         12445  1   18 
+METHOD     (REAC,CHSEP) Reactivity coefficient measurement. The   12445  1   19 
+           absorption cross section of 238U was measured by       12445  1   20 
+           comparing the change in reactivity of a pile produced  12445  1   21 
+           by a sample of oxide in which the isotopic ratio was   12445  1   22 
+           3800, with that produced by a standard boron           12445  1   23 
+           absorber. The temperature of the pile neutrons with    12445  1   24 
+           which the measurement was made was found to be 381 K.  12445  1   25 
+           Cd wires were used to determine neutron temperature.   12445  1   26 
+           After the irradiation the pellets were dissolved in    12445  1   27 
+           nitric acid. Five grams of purified material was       12445  1   28 
+           pressed into a pellet and the beta-ray activity of     12445  1   29 
+           the 23.5 minute half life of 239U was measured.        12445  1   30 
+ERR-ANALYS (DATA-ERR) Data reproducibility error.                 12445  1   31 
+STATUS     (TABLE) page 12.                                       12445  1   32 
+DECAY-DATA (92-U-239,23.5MIN,B-)                                  12445  1   33 
+HISTORY    (19760804T) Translated from SCISRS.                    12445  1   34 
+           (19830809A) Converted to reaction formalism.           12445  1   35 
+           (20210610A) BP: Updated to new date formats, lower     12445  1   36 
+           case. corrections according last EXFOR rules and       12445  1   37 
+           Dict. Added FACILITY, DETECTOR, SAMPLE, ERROR-ANALYSIS,12445  1   38 
+            CORRECTION, DECAY-DATA and Sub.3.                     12445  1   39 
+ENDBIB              37          0                                 12445  1   40 
+NOCOMMON             0          0                                 12445  1   41 
+ENDSUBENT           40          0                                 12445  199999 
+SUBENT        12445002   20210610                             148612445  2    1 
+BIB                  4         10                                 12445  2    2 
+REACTION   (92-U-238(N,G)92-U-239,,SIG)                           12445  2    3 
+INC-SPECT  Sub-Cd spectrum.                                       12445  2    4 
+ANALYSIS   From the (thermal+resonance)/resonance ratio of 2.649. 12445  2    5 
+           0.6225 fraction below the Cd limit: 0.6625 x 4.158 =   12445  2    6 
+           2.59 b. From this effect of B and Cd impurities found  12445  2    7 
+           in spectrographic analysis had to be subtracted. This  12445  2    8 
+           amounted to 0.006 b. The final number of 2.58 b may    12445  2    9 
+           have to be reduced slightly if other dangerous         12445  2   10 
+           impurities are found.                                  12445  2   11 
+STATUS     (DEP,12445003)                                         12445  2   12 
+ENDBIB              10          0                                 12445  2   13 
+COMMON               1          3                                 12445  2   14 
+EN                                                                12445  2   15 
+EV                                                                12445  2   16 
+     0.0253                                                       12445  2   17 
+ENDCOMMON            3          0                                 12445  2   18 
+DATA                 2          1                                 12445  2   19 
+DATA       DATA-ERR                                               12445  2   20 
+B          PER-CENT                                               12445  2   21 
+       2.58         3.                                            12445  2   22 
+ENDDATA              3          0                                 12445  2   23 
+ENDSUBENT           22          0                                 12445  299999 
+SUBENT        12445003   20210610                             148612445  3    1 
+BIB                  4          9                                 12445  3    2 
+REACTION   (92-U-238(N,G)92-U-239,,SIG,,MXW) The total            12445  3    3 
+           absorption by 238U after corrections.                  12445  3    4 
+MONITOR    (5-B-0(N,ABS),,SIG) Relative to boron thermal          12445  3    5 
+           absorption of 703 b at 2200 m/sec.                     12445  3    6 
+CORRECTION Correction of 0.143 b due to the effect of 235U in     12445  3    7 
+           the sample was added. In addition, 0.022 b had to be   12445  3    8 
+           added to correct for the effect of fast fission in     12445  3    9 
+           238U.                                                  12445  3   10 
+HISTORY    (20210610C) BP                                         12445  3   11 
+ENDBIB               9          0                                 12445  3   12 
+COMMON               2          3                                 12445  3   13 
+EN-DUMMY   MONIT                                                  12445  3   14 
+EV         B                                                      12445  3   15 
+     0.0253      703.0                                            12445  3   16 
+ENDCOMMON            3          0                                 12445  3   17 
+DATA                 2          1                                 12445  3   18 
+DATA       DATA-ERR                                               12445  3   19 
+B          PER-CENT                                               12445  3   20 
+      4.158         3.                                            12445  3   21 
+ENDDATA              3          0                                 12445  3   22 
+ENDSUBENT           21          0                                 12445  399999 
+ENDENTRY             3          0                                 1244599999999 
