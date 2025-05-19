@@ -1,71 +1,78 @@
-ENTRY            13040   19881102                             00001304000000001 
-SUBENT        13040001   19881102                             00001304000100001 
-BIB                 13         17                                 1304000100002 
-INSTITUTE  (1USAKAP)                                              1304000100003 
-REFERENCE  (J,JIN,28,1787,66)                                     1304000100004 
-AUTHOR     (J.A.MC HUGH)                                          1304000100005 
-TITLE      THE INDEPENDENT YIELDS OF RB-86, CS-132, CS-134, AND   1304000100006 
-           CS-136 IN THE THERMAL NEUTRON FISSION OF U-233         1304000100007 
-FACILITY   (REAC,1USAUCB)                                         1304000100008 
-SAMPLE     URANIUM METAL AND U(3)O(8), ENRICHED TO 93% 235U       1304000100009 
-MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         1304000100010 
-COMMENT    ISOMERIC                                               1304000100011 
-           INDEPENDENT YIELDS ARE HERE SPLIT PER 76MAD2           1304000100012 
-METHOD     (ASEP)                                                 1304000100013 
-CORRECTION CORRECTED FOR DECAY                                    1304000100014 
-ERR-ANALYS1UNCERTAINTIES GIVEN ARE ESTIMATES WHICH INCLUDE ALL    1304000100015 
-            KNOWN EXPERIMENTAL UNCERTAINTIES AND STANDARD         1304000100016 
-            DEVIATION OF THE AVERAGE VALUE.                       1304000100017 
-STATUS     (RIDER) REFERENCE 66MCH1                               1304000100018 
-HISTORY    (890605C) VM                                           1304000100019 
-ENDBIB              17          0                                 1304000100020 
-COMMON               1          3                                 1304000100021 
-EN-DUMMY                                                          1304000100022 
-EV                                                                1304000100023 
-0.0253                                                            1304000100024 
-ENDCOMMON            3          0                                 1304000100025 
-ENDSUBENT           24          0                                 1304000199999 
-SUBENT        13040002   19881102                             00001304000200001 
-BIB                  3          5                                 1304000200002 
-REACTION  1((92-U-235(N,F)37-RB-86,IND,FY,,SPA)/                  1304000200003 
-           (92-U-235(N,F)37-RB-87,IND,FY,,SPA))                   1304000200004 
-          2(92-U-235(N,F)37-RB-86,IND,FY,,SPA)                    1304000200005 
-MONITOR   2(92-U-235(N,F)37-RB-87,IND,FY,,SPA)                    1304000200006 
-DECAY-DATA (37-RB-86-G,18.7D)                                     1304000200007 
-ENDBIB               5          0                                 1304000200008 
-NOCOMMON             0          0                                 1304000200009 
-DATA                 4          1                                 1304000200010 
-DATA      1DATA-ERR  1DATA      2MONIT     2                      1304000200011 
-NO-DIM     NO-DIM     PC/FIS     PC/FIS                           1304000200012 
-  9.58  -06  0.50  -06   2.40 -06 2.50                            1304000200013 
-ENDDATA              3          0                                 1304000200014 
-ENDSUBENT           13          0                                 1304000299999 
-SUBENT        13040003   19881102                             00001304000300001 
-BIB                  3          7                                 1304000300002 
-REACTION  1((92-U-235(N,F)ELEM/MASS,IND,FY,,SPA)/                 1304000300003 
-           (92-U-235(N,F)55-CS-137,IND,FY,,SPA))                  1304000300004 
-          2(92-U-235(N,F)ELEM/MASS,IND,FY,,SPA)                   1304000300005 
-MONITOR   2(92-U-235(N,F)55-CS-137,IND,FY,,SPA)                   1304000300006 
-DECAY-DATA ((1.)55-CS-132,6.48D)                                  1304000300007 
-           ((2.)55-CS-134-G,2.07YR)                               1304000300008 
-           ((3.)55-CS-136,12.9D)                                  1304000300009 
-ENDBIB               7          0                                 1304000300010 
-COMMON               1          3                                 1304000300011 
-MONIT                                                             1304000300012 
-PC/FIS                                                            1304000300013 
- 6.17                                                             1304000300014 
-ENDCOMMON            3          0                                 1304000300015 
-DATA                 8          3                                 1304000300016 
-ELEMENT    MASS       DATA      1DATA-ERR  1DATA-MAX  1DATA      21304000300017 
-DATA-MAX  2DECAY-FLAG                                             1304000300018 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     PC/FIS     1304000300019 
-PC/FIS     NO-DIM                                                 1304000300020 
- 55.       132.                               2.5   -08           1304000300021 
-    1.5 -07 1.                                                    1304000300022 
- 55.       134.         1.45  -06  0.10  -06               8.9 -061304000300023 
-            2.                                                    1304000300024 
- 55.       136.         9.62  -04  0.25  -04               5.94-031304000300025 
-            3.                                                    1304000300026 
-ENDDATA             10          0                                 1304000300027 
-ENDSUBENT           26          0                                 1304000399999 
+ENTRY            13040   20201222                             147713040  0    1 
+SUBENT        13040001   20201222                             147713040  1    1 
+BIB                 10         20                                 13040  1    2 
+TITLE      The independent yields of 86Rb, 132Cs, 134Cs and       13040  1    3 
+           136Cs in the thermal neutron fission of 235U           13040  1    4 
+AUTHOR     (J.A.McHugh)                                           13040  1    5 
+INSTITUTE  (1USAKAP)                                              13040  1    6 
+REFERENCE  (J,JIN,28,1787,1966)                                   13040  1    7 
+           #doi:10.1016/0022-1902(66)80263-4                      13040  1    8 
+           #NSR: 1966MC19                                         13040  1    9 
+FACILITY   (REAC,1USAUCB)                                         13040  1   10 
+SAMPLE     Four samples containing 10 mg of enriched 235U, uranium13040  1   11 
+           metal and U3O8                                         13040  1   12 
+           (92-U-235,ENR=0.93)                                    13040  1   13 
+METHOD     (ASEP)                                                 13040  1   14 
+CORRECTION Corrected for decay                                    13040  1   15 
+ERR-ANALYS (DATA-ERR) Uncertainties given are estimates which     13040  1   16 
+           include all known experimental uncertainties and       13040  1   17 
+           standard deviation of the average value.               13040  1   18 
+HISTORY    (19890605C) VM                                         13040  1   19 
+           (20201222A) OG. Important alteration in sub.2,         13040  1   20 
+           converted to lower case and 4-digit year. #NSR, #doi   13040  1   21 
+           added.  STATUS updated.                                13040  1   22 
+ENDBIB              20          0                                 13040  1   23 
+COMMON               1          3                                 13040  1   24 
+EN-DUMMY                                                          13040  1   25 
+EV                                                                13040  1   26 
+0.0253                                                            13040  1   27 
+ENDCOMMON            3          0                                 13040  1   28 
+ENDSUBENT           27          0                                 13040  199999 
+SUBENT        13040002   20201222                             147713040  2    1 
+BIB                  5          8                                 13040  2    2 
+REACTION  1((92-U-235(N,F)37-RB-86,IND,FY,,SPA)/                  13040  2    3 
+           (92-U-235(N,F)37-RB-87,IND,FY,,SPA))                   13040  2    4 
+          2(92-U-235(N,F)37-RB-86,IND,FY,,SPA)                    13040  2    5 
+MONITOR   2(92-U-235(N,F)37-RB-87,CUM,FY,,SPA)                    13040  2    6 
+DECAY-DATA (37-RB-86-G,18.7D)                                     13040  2    7 
+STATUS     (TABLE) Tab.1 (p.1789) in Inorg.Nucl.Chem.28,1787,1966.13040  2    8 
+HISTORY    (20201222A) OG. Independent fission yield for 86Rb     13040  2    9 
+           corrected.                                             13040  2   10 
+ENDBIB               8          0                                 13040  2   11 
+NOCOMMON             0          0                                 13040  2   12 
+DATA                 4          1                                 13040  2   13 
+DATA      1DATA-ERR  1DATA      2MONIT     2                      13040  2   14 
+NO-DIM     NO-DIM     PC/FIS     PC/FIS                           13040  2   15 
+   9.58E-06   0.50E-06   2.40E-05 2.50                            13040  2   16 
+ENDDATA              3          0                                 13040  2   17 
+ENDSUBENT           16          0                                 13040  299999 
+SUBENT        13040003   20201222                             147713040  3    1 
+BIB                  4          8                                 13040  3    2 
+REACTION  1((92-U-235(N,F)ELEM/MASS,IND,FY,,SPA)/                 13040  3    3 
+           (92-U-235(N,F)55-CS-137,IND,FY,,SPA))                  13040  3    4 
+          2(92-U-235(N,F)ELEM/MASS,IND,FY,,SPA)                   13040  3    5 
+MONITOR   2(92-U-235(N,F)55-CS-137,CUM,FY,,SPA)                   13040  3    6 
+DECAY-DATA ((1.)55-CS-132,6.48D)                                  13040  3    7 
+           ((2.)55-CS-134-G,2.07YR)                               13040  3    8 
+           ((3.)55-CS-136-G,12.9D)                                13040  3    9 
+STATUS     (TABLE) Tab.1 (p.1789) in Inorg.Nucl.Chem.28,1787,1966.13040  3   10 
+ENDBIB               8          0                                 13040  3   11 
+COMMON               1          3                                 13040  3   12 
+MONIT     2                                                       13040  3   13 
+PC/FIS                                                            13040  3   14 
+ 6.17                                                             13040  3   15 
+ENDCOMMON            3          0                                 13040  3   16 
+DATA                 8          3                                 13040  3   17 
+ELEMENT    MASS       DATA      1DATA-ERR  1DATA-MAX  1DATA      213040  3   18 
+DATA-MAX  2DECAY-FLAG                                             13040  3   19 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     PC/FIS     13040  3   20 
+PC/FIS     NO-DIM                                                 13040  3   21 
+ 55.       132.                                 2.5E-08           13040  3   22 
+    1.5E-07 1.                                                    13040  3   23 
+ 55.       134.          1.45E-06   0.10E-06               8.9E-0613040  3   24 
+            2.                                                    13040  3   25 
+ 55.       136.          9.62E-04   0.25E-04              5.94E-0313040  3   26 
+            3.                                                    13040  3   27 
+ENDDATA             10          0                                 13040  3   28 
+ENDSUBENT           27          0                                 13040  399999 
 ENDENTRY             3          0                                 1304099999999 
