@@ -1,0 +1,251 @@
+ENTRY            23577   20200801                             229323577  0    1 
+SUBENT        23577001   20200801                             229323577  1    1 
+BIB                  8         17                                 23577  1    2 
+TITLE       Determination of the 243,246,248Cm thermal neutron    23577  1    3 
+           induced fission cross sections                         23577  1    4 
+AUTHOR     (O.Serot, C.Wagemans, S.Vermote, J.Heyse, T.Soldner,   23577  1    5 
+           P.Geltenbort)                                          23577  1    6 
+REFERENCE  (S,AIP-798,182,2005)                                   23577  1    7 
+INSTITUTE  (2FR ILL) T.Soldner, P.Geltenbort                      23577  1    8 
+           (2FR CAD) O.Serot, J.Heyse                             23577  1    9 
+           (2BLGGHT) C.Wagemans, S.Vermote                        23577  1   10 
+           (2ZZZGEL) J.Heyse                                      23577  1   11 
+FACILITY   (REAC,2FR ILL) High flux reactor of the ILL            23577  1   12 
+INC-SOURCE (REAC) PF1B cold neutron guide of 76 m length.         23577  1   13 
+INC-SPECT   Neutron flux 1.3E+10 n/(sec*cm2).                     23577  1   14 
+           Average neutron wave length 3.9 Angstrom corresponds   23577  1   15 
+           to En=5.38 meV.                                        23577  1   16 
+           Flux was measured by U-235 sample (99.97% U-235,       23577  1   17 
+            16.5 ug mass) of the same dimensions as Cm sample.    23577  1   18 
+HISTORY    (20200801C)  M.M.                                      23577  1   19 
+ENDBIB              17          0                                 23577  1   20 
+NOCOMMON             0          0                                 23577  1   21 
+ENDSUBENT           20          0                                 23577  199999 
+SUBENT        23577002   20200801                             229323577  2    1 
+BIB                  9         31                                 23577  2    2 
+REACTION   (96-CM-243(N,F),,SIG)                                  23577  2    3 
+SAMPLE      Isotopic composition at 2005 ( data of experiment)    23577  2    4 
+           Cm-243 - 97.110%, 4.42E+15 atoms;                      23577  2    5 
+           Cm-244 - 1.473%, 6.70E+13 atoms;                       23577  2    6 
+           Cm-245 - 0.065%, 2.95E+12 atoms;                       23577  2    7 
+           Pu-239 - 1.352%, 5.15E+13 atoms.                       23577  2    8 
+            2 ug Cm-oxide, deposited on 30 um thick Al backing,   23577  2    9 
+           diameter 15 mm.                                        23577  2   10 
+DETECTOR   (SIBAR)  450 mm2 large Si-Au surface-barrier detector  23577  2   11 
+           for fission fragment detection.                        23577  2   12 
+METHOD      Cm-243:                                               23577  2   13 
+            measuring time 3470 sec,                              23577  2   14 
+            fission counting rate 140.6+-1.4 fis/sec (stat.+syst. 23577  2   15 
+            uncertainties),                                       23577  2   16 
+            detection efficiency 1.3313+-0.0003 %                 23577  2   17 
+            U-235 flux measurement:                               23577  2   18 
+            measuring time 300 sec,                               23577  2   19 
+            fission counting rate - 1409.8+-4.7 fis/sec.          23577  2   20 
+            detection efficiency 1.4063+-0.0003 %.                23577  2   21 
+ANALYSIS   Cm-243 fission cross section at 5.38 meV was determined23577  2   22 
+           by formulas (1,2) in AIP-798,182,2005 .                23577  2   23 
+           Contribution of impurity fissions subtracted by        23577  2   24 
+           using the Cm-244 and Pu-239 fission cross sections from23577  2   25 
+           JEFF-3.0 and the Cm-245 fission cross section from     23577  2   26 
+           JENDL-3.3.                                             23577  2   27 
+ASSUMED    (ASSUM1,96-CM-244(N,F),,SIG)                           23577  2   28 
+           (ASSUM2,96-CM-245(N,F),,SIG)                           23577  2   29 
+           (ASSUM4,94-PU-239(N,F),,SIG)                           23577  2   30 
+MONITOR    ((MONIT)92-U-235(N,F),,SIG)                            23577  2   31 
+ERR-ANALYS (DATA-ERR) Includes statistical and systematic errors  23577  2   32 
+STATUS     (TABLE) Text page 185 of AIP-798,182,2005              23577  2   33 
+ENDBIB              31          0                                 23577  2   34 
+COMMON               5          3                                 23577  2   35 
+EN         ASSUM4     ASSUM4-ERR MONIT      MONIT-ERR             23577  2   36 
+EV         B          B          B          B                     23577  2   37 
+  5.38 E-03  1582.     20.        1325.      16.                  23577  2   38 
+ENDCOMMON            3          0                                 23577  2   39 
+DATA                 6          1                                 23577  2   40 
+DATA       DATA-ERR   ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR 23577  2   41 
+B          B          B          B          B          B          23577  2   42 
+ 1240.      28.        2.78       0.57       5267.      211.      23577  2   43 
+ENDDATA              3          0                                 23577  2   44 
+ENDSUBENT           43          0                                 23577  299999 
+SUBENT        23577003   20200801                             229323577  3    1 
+BIB                  5         13                                 23577  3    2 
+REACTION   (96-CM-243(N,F),,SIG,,,DERIV)                          23577  3    3 
+REL-REF    (A,,C.E.Bemis Jr+,J,NSE,63,413,1977)   609.+-26.9 b    23577  3    4 
+           (D,,E.K.Hulet+,J,PR,107,1294,1957)                     23577  3    5 
+             somewhat lower, 690.+-50 b                           23577  3    6 
+           (D,,K.D.Zhuravlev+,J,AE,47,55,1979)                    23577  3    7 
+             somewhat lower, 672.+-60. b                          23577  3    8 
+ANALYSIS    Cm-243 fission cross section at thermal point was     23577  3    9 
+           derived from measured fission cross section at 5.38 meV23577  3   10 
+           assuming 1/v law.                                      23577  3   11 
+ERR-ANALYS (DATA-ERR) Includes uncertainties of directly measured 23577  3   12 
+           cross section at 5.38 meV and of 1/v law assumption.   23577  3   13 
+STATUS     (TABLE) Text page 185 of AIP-798,182,2005              23577  3   14 
+           (DEP,23577002) Cross section at 5.38 meV               23577  3   15 
+ENDBIB              13          0                                 23577  3   16 
+COMMON               1          3                                 23577  3   17 
+EN                                                                23577  3   18 
+EV                                                                23577  3   19 
+  0.0253                                                          23577  3   20 
+ENDCOMMON            3          0                                 23577  3   21 
+DATA                 2          1                                 23577  3   22 
+DATA       DATA-ERR                                               23577  3   23 
+B          B                                                      23577  3   24 
+ 572.       25.                                                   23577  3   25 
+ENDDATA              3          0                                 23577  3   26 
+ENDSUBENT           25          0                                 23577  399999 
+SUBENT        23577004   20200801                             229323577  4    1 
+BIB                  9         36                                 23577  4    2 
+REACTION   (96-CM-246(N,F),,SIG)                                  23577  4    3 
+SAMPLE     Cm-243 - 0.006 %, 6.85E+12 atoms;                      23577  4    4 
+           Cm-244 - 0.060 %, 6.81E+13 atoms;                      23577  4    5 
+           Cm-245 - 0.008 %, 9.46E+12 atoms;                      23577  4    6 
+           Cm-246 - 99.887%, 1.13E+17 atoms;                      23577  4    7 
+           Cm-247 - 0.025 %, 2.83E+13 atoms;                      23577  4    8 
+           Cm-248 - 0.014 %, 1.58E+13 atoms.                      23577  4    9 
+            2 ug Cm-oxide, deposited on 30 um thick Al backing,   23577  4   10 
+           diameter 15 mm, mass 46.4 ug.                          23577  4   11 
+DETECTOR   (SIBAR) 2000 mm2 large surface-barrier detector        23577  4   12 
+           for fission fragment detection.                        23577  4   13 
+           (SIBAR) 50 mm2 large surface barrier detector for      23577  4   14 
+           alphas counting from B-10(n,alpha) reaction.           23577  4   15 
+METHOD      Cm-246:                                               23577  4   16 
+            measuring time 14.86 hr,                              23577  4   17 
+            fission counting rate ( background subtracted)        23577  4   18 
+            9.64+-0.28(stat.+syst.uncertainties) fis/sec,         23577  4   19 
+            U-235 flux measurement:                               23577  4   20 
+            measuring time 300 sec,                               23577  4   21 
+            fission counting rate (dead time corrected) -         23577  4   22 
+            7687.+-230.(stat.+syst.uncertainties) fis/sec.        23577  4   23 
+            B-10 sample was used to determine dead time and       23577  4   24 
+            small neutron flux fluctuations via B-10(n,alpha)Li-7 23577  4   25 
+            reaction.                                             23577  4   26 
+ANALYSIS   Cm-246 fission cross section at 5.38 meV was determined23577  4   27 
+           by formulas (1,2) in AIP-798,182,2005.                 23577  4   28 
+           Contribution of impurity fissions subtracted by        23577  4   29 
+           using the Cm-244,247 and Pu-239 fission cross sections 23577  4   30 
+           from JEFF-3.0 and the Cm-245 fission cross section from23577  4   31 
+           JENDL-3.3.                                             23577  4   32 
+ASSUMED    (ASSUM1,96-CM-244(N,F),,SIG)                           23577  4   33 
+           (ASSUM2,96-CM-245(N,F),,SIG)                           23577  4   34 
+           (ASSUM3,96-CM-247(N,F),,SIG)                           23577  4   35 
+MONITOR    ((MONIT)92-U-235(N,F),,SIG)                            23577  4   36 
+ERR-ANALYS (DATA-ERR) Includes statistical and systematic errors  23577  4   37 
+STATUS     (TABLE) Text page 188 of AIP-798,182,2005              23577  4   38 
+ENDBIB              36          0                                 23577  4   39 
+COMMON               3          3                                 23577  4   40 
+EN         MONIT      MONIT-ERR                                   23577  4   41 
+EV         B          B                                           23577  4   42 
+  5.38 E-03 1325.      16.                                        23577  4   43 
+ENDCOMMON            3          0                                 23577  4   44 
+DATA                 8          1                                 23577  4   45 
+DATA       DATA-ERR   ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR 23577  4   46 
+ASSUM3     ASSUM3-ERR                                             23577  4   47 
+MB         MB         B          B          B          B          23577  4   48 
+B          B                                                      23577  4   49 
+ 25.        47.        2.78       0.57       5267.      211.      23577  4   50 
+ 189.       12.                                                   23577  4   51 
+ENDDATA              6          0                                 23577  4   52 
+ENDSUBENT           51          0                                 23577  499999 
+SUBENT        23577005   20200801                             229323577  5    1 
+BIB                  5         12                                 23577  5    2 
+REACTION   (96-CM-246(N,F),,SIG,,,DERIV)                          23577  5    3 
+REL-REF    (D,,R.W.Benjamin+,J,NSE,47,203,1972)                   23577  5    4 
+             much smaller, 170+-100 mb                            23577  5    5 
+           (D,,K.D.Zhuravlev+,J,AE,39,285,1975)                   23577  5    6 
+             much smaller, 140.+-50. mb                           23577  5    7 
+ANALYSIS    Cm-246 fission cross section at thermal point was     23577  5    8 
+           derived from measured fission cross section at 5.38 meV23577  5    9 
+           assuming 1/v law.                                      23577  5   10 
+ERR-ANALYS (DATA-ERR) Includes uncertainties of directly measured 23577  5   11 
+           cross section at 5.38 meV and of 1/v law assumption.   23577  5   12 
+STATUS     (TABLE) Text page 188 of AIP-798,182,2005              23577  5   13 
+           (DEP,23577004) Cross section at 5.38 meV               23577  5   14 
+ENDBIB              12          0                                 23577  5   15 
+COMMON               1          3                                 23577  5   16 
+EN                                                                23577  5   17 
+EV                                                                23577  5   18 
+  0.0253                                                          23577  5   19 
+ENDCOMMON            3          0                                 23577  5   20 
+DATA                 2          1                                 23577  5   21 
+DATA       DATA-ERR                                               23577  5   22 
+MB         MB                                                     23577  5   23 
+ 12.        25.                                                   23577  5   24 
+ENDDATA              3          0                                 23577  5   25 
+ENDSUBENT           24          0                                 23577  599999 
+SUBENT        23577006   20200801                             229323577  6    1 
+BIB                  9         35                                 23577  6    2 
+REACTION   (96-CM-248(N,F),,SIG)                                  23577  6    3 
+SAMPLE     Cm-244 - 0.817 %, 6.98E+14 atoms;                      23577  6    4 
+           Cm-245 - 0.020 %, 1.73E+13 atoms;                      23577  6    5 
+           Cm-246 - 1.323 %, 1.13E+15 atoms;                      23577  6    6 
+           Cm-247 - 0.232 %, 1.98E+14 atoms;                      23577  6    7 
+           Cm-248 - 97.608%, 8.34E+16 atoms.                      23577  6    8 
+            2 ug Cm-oxide, deposited on 30 um thick Al backing,   23577  6    9 
+           diameter 15 mm, mass 46.4 ug.                          23577  6   10 
+DETECTOR   (SIBAR) 2000 mm2 large surface-barrier detector        23577  6   11 
+           for fission fragment detection.                        23577  6   12 
+           (SIBAR) 50 mm2 large surface barrier detector for      23577  6   13 
+           alphas counting from B-10(n,alpha) reaction.           23577  6   14 
+METHOD      Cm-248:                                               23577  6   15 
+            measuring time 14.48 hr,                              23577  6   16 
+            fission counting rate ( background subtracted)        23577  6   17 
+            27.7+-0.2(stat.+syst.uncertainties) fis/sec,          23577  6   18 
+            U-235 flux measurement:                               23577  6   19 
+            measuring time 120 sec,                               23577  6   20 
+            fission counting rate (dead time corrected) -         23577  6   21 
+            7643.+-235.(stat.+syst.uncertainties) fis/sec.        23577  6   22 
+            B-10 sample was used to determine dead time and       23577  6   23 
+            small neutron flux fluctuations via B-10(n,alpha)Li-7 23577  6   24 
+            reaction.                                             23577  6   25 
+ANALYSIS   Cm-248 fission cross section at 5.38 meV was determined23577  6   26 
+           by formulas (1,2) in AIP-798,182,2005 .                23577  6   27 
+           Contribution of impurity fissions subtracted by        23577  6   28 
+           using the Cm-244,247 and Pu-239 fission cross sections 23577  6   29 
+           from JEFF-3.0 and the Cm-245 fission cross section from23577  6   30 
+           JENDL-3.3.                                             23577  6   31 
+ASSUMED    (ASSUM1,96-CM-244(N,F),,SIG)                           23577  6   32 
+           (ASSUM2,96-CM-245(N,F),,SIG)                           23577  6   33 
+           (ASSUM3,96-CM-247(N,F),,SIG)                           23577  6   34 
+MONITOR    ((MONIT)92-U-235(N,F),,SIG)                            23577  6   35 
+ERR-ANALYS (DATA-ERR) Includes statistical and systematic errors  23577  6   36 
+STATUS     (TABLE) Text page 189 of AIP-798,182,2005              23577  6   37 
+ENDBIB              35          0                                 23577  6   38 
+COMMON               3          3                                 23577  6   39 
+EN         MONIT      MONIT-ERR                                   23577  6   40 
+EV         B          B                                           23577  6   41 
+  5.38 E-03 1325.      16.                                        23577  6   42 
+ENDCOMMON            3          0                                 23577  6   43 
+DATA                 8          1                                 23577  6   44 
+DATA       DATA-ERR   ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR 23577  6   45 
+ASSUM3     ASSUM3-ERR                                             23577  6   46 
+MB         MB         B          B          B          B          23577  6   47 
+B          B                                                      23577  6   48 
+ 685.       84.        2.78       0.57       5267.      211.      23577  6   49 
+ 189.       12.                                                   23577  6   50 
+ENDDATA              6          0                                 23577  6   51 
+ENDSUBENT           50          0                                 23577  699999 
+SUBENT        23577007   20200801                             229323577  7    1 
+BIB                  5         10                                 23577  7    2 
+REACTION   (96-CM-248(N,F),,SIG,,,DERIV)                          23577  7    3 
+REL-REF    (A,,R.W.Benjamin+,J,NSE,47,203,1972) 340.+-70. mb      23577  7    4 
+           (A,,K.D.Zhuravlev+,J,AE,39,285,1975) 390.+-70. mb      23577  7    5 
+ANALYSIS    Cm-248 fission cross section at thermal point was     23577  7    6 
+           derived from measured fission cross section at 5.38 meV23577  7    7 
+           assuming 1/v law.                                      23577  7    8 
+ERR-ANALYS (DATA-ERR) Includes uncertainties of directly measured 23577  7    9 
+           cross section at 5.38 meV and of 1/v law assumption.   23577  7   10 
+STATUS     (TABLE) Text page 189 of AIP-798,182,2005              23577  7   11 
+           (DEP,23577006) Cross section at 5.38 meV               23577  7   12 
+ENDBIB              10          0                                 23577  7   13 
+COMMON               1          3                                 23577  7   14 
+EN                                                                23577  7   15 
+EV                                                                23577  7   16 
+  0.0253                                                          23577  7   17 
+ENDCOMMON            3          0                                 23577  7   18 
+DATA                 2          1                                 23577  7   19 
+DATA       DATA-ERR                                               23577  7   20 
+MB         MB                                                     23577  7   21 
+ 316.       43.                                                   23577  7   22 
+ENDDATA              3          0                                 23577  7   23 
+ENDSUBENT           22          0                                 23577  799999 
+ENDENTRY             7          0                                 2357799999999 
