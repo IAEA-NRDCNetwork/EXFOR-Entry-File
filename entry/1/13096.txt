@@ -1,24 +1,32 @@
-ENTRY            13096   20061127                             13411309600000001 
-SUBENT        13096001   20061127                             13411309600100001 
-BIB                  9         11                                 1309600100002 
-INSTITUTE  (1USAORL,1USAMIS,1USAWAS)                              1309600100003 
-REFERENCE  (J,PR,134,B1027,1964)                                  1309600100004 
-AUTHOR     (D.E.Troutner,A.C.Wahl,R.L.Ferguson)                   1309600100005 
-TITLE      Independent fission yield of Sb127                     1309600100006 
-FACILITY   (REAC,1USAORL)                                         1309600100007 
-SAMPLE     Uranium 93% 235U                                       1309600100008 
-ERR-ANALYS Data uncertainties include standard deviations and     1309600100009 
-            uncertainties in half-lives and time intervals        1309600100010 
-STATUS     (RIDER) Reference 64TRO1                               1309600100011 
-HISTORY    (19890516C) VM                                         1309600100012 
-           (20061127A) DR Reference corrected to follow APS format1309600100013 
-ENDBIB              11          0                                 1309600100014 
-COMMON               1          3                                 1309600100015 
-EN-DUMMY                                                          1309600100016 
-EV                                                                1309600100017 
-0.0253                                                            1309600100018 
-ENDCOMMON            3          0                                 1309600100019 
-ENDSUBENT           18          0                                 1309600199999 
+ENTRY            13096   20160315                             141613096  0    1 
+SUBENT        13096001   20160315                             141613096  1    1 
+BIB                 12         19                                 13096  1    2 
+INSTITUTE  (1USAORL,1USAMIS,1USAWAS)                              13096  1    3 
+REFERENCE  (J,PR,134,B1027,1964)                                  13096  1    4 
+AUTHOR     (D.E.Troutner,A.C.Wahl,R.L.Ferguson)                   13096  1    5 
+TITLE      Independent fission yield of Sb127                     13096  1    6 
+FACILITY   (REAC,1USAORL)                                         13096  1    7 
+SAMPLE     (92-U-235,ENR=0.93) Uranium 93% 235U, 1 ml solution    13096  1    8 
+            of 100 mu-g U in HNO3 in polyetylene capsule          13096  1    9 
+METHOD     (CHSEP)                                                13096  1   10 
+DETECTOR   (PROPC) Flow-type proportional counter                 13096  1   11 
+DECAY-DATA (51-SB-127,93.HR,B-)                                   13096  1   12 
+ERR-ANALYS (DATA-ERR) Data uncertainties include standard         13096  1   13 
+            deviations and uncertainties in half-lives and time   13096  1   14 
+            intervals                                             13096  1   15 
+STATUS     (TABLE) Phys.Rev.134,B1027,1964, p.B1029               13096  1   16 
+HISTORY    (19890516C) VM                                         13096  1   17 
+           (20061127A) DR Reference corrected to follow APS format13096  1   18 
+           (20160312A) OS. Added information to METHOD, DETECTOR, 13096  1   19 
+            SAMPLE, DECAY-DATA, STATUS.                           13096  1   20 
+            Corrected isomer assignment in sub.3.                 13096  1   21 
+ENDBIB              19          0                                 13096  1   22 
+COMMON               1          3                                 13096  1   23 
+EN-DUMMY                                                          13096  1   24 
+EV                                                                13096  1   25 
+0.0253                                                            13096  1   26 
+ENDCOMMON            3          0                                 13096  1   27 
+ENDSUBENT           26          0                                 13096  199999 
 SUBENT        13096002   19890518                             00001309600200001 
 BIB                  1          2                                 1309600200002 
 REACTION   ((92-U-235(N,F)51-SB-127,IND,FY,,MXW)/                 1309600200003 
@@ -31,19 +39,21 @@ NO-DIM     NO-DIM                                                 1309600200009
  0.057      0.010                                                 1309600200010 
 ENDDATA              3          0                                 1309600200011 
 ENDSUBENT           10          0                                 1309600299999 
-SUBENT        13096003   19890518                             00001309600300001 
-BIB                  2          4                                 1309600300002 
-REACTION   ((92-U-235(N,F)ELEM/MASS,CUM,FY,,MXW)/                 1309600300003 
-           (92-U-235(N,F)51-SB-127,CUM,FY,,MXW))                  1309600300004 
-DECAY-DATA ((1.)50-SN-127-G,4.4MIN)                               1309600300005 
-           ((2.)50-SN-127-M,2.15HR)                               1309600300006 
-ENDBIB               4          0                                 1309600300007 
-NOCOMMON             0          0                                 1309600300008 
-DATA                 6          2                                 1309600300009 
-ELEMENT    MASS       ISOMER     DATA       DATA-ERR   DECAY-FLAG 1309600300010 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     1309600300011 
- 50.       127.        0.         0.404      0.024      1.        1309600300012 
- 50.       127.        1.         0.539      0.021      2.        1309600300013 
-ENDDATA              4          0                                 1309600300014 
-ENDSUBENT           13          0                                 1309600399999 
+SUBENT        13096003   20160315                             141613096  3    1 
+BIB                  3          6                                 13096  3    2 
+REACTION   ((92-U-235(N,F)ELEM/MASS,CUM,FY,,MXW)/                 13096  3    3 
+           (92-U-235(N,F)51-SB-127,CUM,FY,,MXW))                  13096  3    4 
+DECAY-DATA ((1.)50-SN-127-M,4.4MIN,B-)                            13096  3    5 
+           ((2.)50-SN-127-G,2.15HR,B-)                            13096  3    6 
+HISTORY    (20160312A) Corrected isomer assignments in DECAY-DATA 13096  3    7 
+            and data table                                        13096  3    8 
+ENDBIB               6          0                                 13096  3    9 
+NOCOMMON             0          0                                 13096  3   10 
+DATA                 6          2                                 13096  3   11 
+ELEMENT    MASS       ISOMER     DATA       DATA-ERR   DECAY-FLAG 13096  3   12 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     13096  3   13 
+ 50.       127.        1.         0.404      0.024      1.        13096  3   14 
+ 50.       127.        0.         0.539      0.021      2.        13096  3   15 
+ENDDATA              4          0                                 13096  3   16 
+ENDSUBENT           15          0                                 13096  399999 
 ENDENTRY             3          0                                 1309699999999 

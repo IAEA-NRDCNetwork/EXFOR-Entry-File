@@ -1,76 +1,661 @@
-ENTRY            12946   20120710                             13841294600000001 
-SUBENT        12946001   20120710                             13841294600100001 
-BIB                 10         17                                 1294600100002 
-INSTITUTE  (1USABNW)                                              1294600100003 
-REFERENCE  (C,85SANTA,1,701,198505)                               1294600100004 
-AUTHOR     (R.A.Warner,P.L.Reeder)                                1294600100005 
-TITLE      Delayed neutron data from TRISTAN                      1294600100006 
-FACILITY   (SPECM) TRISTAN on-line mass separator                 1294600100007 
-METHOD     (COINC) Beta-neutron coincidence counting              1294600100008 
-MONITOR    ((MONIT1)37-RB-97(0,B-),,PN)                           1294600100009 
-           ((MONIT2)37-RB-98(0,B-),,PN)                           1294600100010 
-ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  1294600100011 
-           and neutron counting efficiency errors not included.   1294600100012 
-           Upper limits based on twice the uncertainty when the   1294600100013 
-           error on the value exceeds the value.                  1294600100014 
-STATUS     (APRVD) P.L.Reeder, 1986/2/10.                         1294600100015 
-           (TABLE) Table I of C,85SANTA,1,701,1985                1294600100016 
-HISTORY    (19851031C)                                            1294600100017 
-           (20120710A) SD:Updated to new date formats,lower case. 1294600100018 
-                Corrected according to last EXFOR rules and Dict. 1294600100019 
-ENDBIB              17          0                                 1294600100020 
-NOCOMMON             0          0                                 1294600100021 
-ENDSUBENT           20          0                                 1294600199999 
-SUBENT        12946002   20120710                             13841294600200001 
-BIB                  1          1                                 1294600200002 
-REACTION   (ELEM/MASS(0,B-),,PN)                                  1294600200003 
-ENDBIB               1          0                                 1294600200004 
-COMMON               4          3                                 1294600200005 
-MONIT1     MONIT1-ERR MONIT2     MONIT2-ERR                       1294600200006 
-PC/DECAY   PC/DECAY   PC/DECAY   PC/DECAY                         1294600200007 
- 26.9       1.9        13.4       0.9                             1294600200008 
-ENDCOMMON            3          0                                 1294600200009 
-DATA                 6         38                                 1294600200010 
-ELEMENT    MASS       ISOMER     DATA       ERR-S      DATA-MAX   1294600200011 
-NO-DIM     NO-DIM     NO-DIM     PC/DECAY   PC/DECAY   PC/DECAY   1294600200012 
- 31.        79.                   0.69       0.08                 1294600200013 
- 31.        80.                   0.055      0.004                1294600200014 
- 31.        81.                   10.6       0.4                  1294600200015 
- 31.        82.                   19.8       1.0                  1294600200016 
- 31.        83.                   54.        7.                   1294600200017 
- 37.        97.                   26.1       1.3                  1294600200018 
- 37.        98.                   13.6       0.5                  1294600200019 
- 37.        99.                   20.5       3.2                  1294600200020 
- 37.        100.                  6.         3.                   1294600200021 
- 38.        97.                                         0.05      1294600200022 
- 38.        98.                   0.23       0.02                 1294600200023 
- 38.        99.                   0.095      0.006                1294600200024 
- 38.        100.                  0.73       0.03                 1294600200025 
- 38.        101.                  2.37       0.14                 1294600200026 
- 38.        102.                  4.8        2.1                  1294600200027 
- 39.        97.        1.                               0.08      1294600200028 
- 39.        97.        0.         0.054      0.004                1294600200029 
- 39.        98.        0.         0.24       0.01                 1294600200030 
- 39.        99.                   1.03       0.04                 1294600200031 
- 39.        100.                  0.81       0.04                 1294600200032 
- 39.        101.                  1.94       0.18                 1294600200033 
- 39.        102.                  6.0        1.2                  1294600200034 
- 49.        127.       1.         0.54       0.03                 1294600200035 
- 49.        128.                  0.030      0.003                1294600200036 
- 49.        129.       1.         2.52       0.12                 1294600200037 
- 49.        129.       0.         0.13       0.01                 1294600200038 
- 49.        130.       1.         1.67       0.09                 1294600200039 
- 49.        130.       0.         0.90       0.05                 1294600200040 
- 49.        131.       0.         1.55       0.07                 1294600200041 
- 49.        132.                  6.8        0.5                  1294600200042 
- 55.        147.                  43.        5.                   1294600200043 
- 55.        148.                  8.         3.                   1294600200044 
- 56.        147.                  0.019      0.001                1294600200045 
- 56.        148.                                        0.015     1294600200046 
- 56.        149.                  0.43       0.12                 1294600200047 
- 57.        147.                  0.035      0.006                1294600200048 
- 57.        148.                  0.11       0.01                 1294600200049 
- 57.        149.                  1.17       0.12                 1294600200050 
-ENDDATA             40          0                                 1294600200051 
-ENDSUBENT           50          0                                 1294600299999 
-ENDENTRY             2          0                                 1294699999999 
+ENTRY            12946   20160309                             141612946  0    1 
+SUBENT        12946001   20160309                             141612946  1    1 
+BIB                  9         16                                 12946  1    2 
+INSTITUTE  (1USABNW)                                              12946  1    3 
+REFERENCE  (C,85SANTA,1,701,198505)                               12946  1    4 
+AUTHOR     (R.A.Warner,P.L.Reeder)                                12946  1    5 
+TITLE      Delayed neutron data from TRISTAN                      12946  1    6 
+FACILITY   (SPECM,1USABNL) TRISTAN on-line mass separator at BNL  12946  1    7 
+METHOD     (COINC) Beta-neutron coincidence counting              12946  1    8 
+MONITOR    ((MONIT1)37-RB-97(0,B-)38-RB-97,,PN)                   12946  1    9 
+           ((MONIT2)37-RB-98(0,B-)38-RB-98,,PN)                   12946  1   10 
+STATUS     (APRVD) P.L.Reeder, 1986/2/10.                         12946  1   11 
+           (TABLE) Table I of C,85SANTA,1,701,1985                12946  1   12 
+HISTORY    (19851031C)                                            12946  1   13 
+           (20120710A) SD:Updated to new date formats,lower case. 12946  1   14 
+                Corrected according to last EXFOR rules and Dict. 12946  1   15 
+           (20160308A) OS. Subentry 2 split into subs. 2-39,      12946  1   16 
+            units changed from PC/FIS to NO-DIM, values divided   12946  1   17 
+            by 100, DECAY-DATA added                              12946  1   18 
+ENDBIB              16          0                                 12946  1   19 
+COMMON               4          3                                 12946  1   20 
+MONIT1     MONIT1-ERR MONIT2     MONIT2-ERR                       12946  1   21 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM                           12946  1   22 
+  0.269      0.019      0.134      0.009                          12946  1   23 
+ENDCOMMON            3          0                                 12946  1   24 
+ENDSUBENT           23          0                                 12946  199999 
+SUBENT        12946002   20160309                             141612946  2    1 
+BIB                  4          7                                 12946  2    2 
+REACTION   (31-GA-79(0,B-)32-GE-79,,PN)                           12946  2    3 
+DECAY-DATA (31-GA-79,1.69SEC)  Measured by authors                12946  2    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946  2    5 
+           and neutron counting efficiency errors not included.   12946  2    6 
+           Upper limits based on twice the uncertainty when the   12946  2    7 
+           error on the value exceeds the value.                  12946  2    8 
+HISTORY    (20160308A) Data split into subs. 2-39                 12946  2    9 
+ENDBIB               7          0                                 12946  2   10 
+NOCOMMON             0          0                                 12946  2   11 
+DATA                 3          1                                 12946  2   12 
+DATA       ERR-S      ERR-HL                                      12946  2   13 
+NO-DIM     NO-DIM     SEC                                         12946  2   14 
+ 0.0069       0.0008     0.01                                     12946  2   15 
+ENDDATA              3          0                                 12946  2   16 
+ENDSUBENT           15          0                                 12946  299999 
+SUBENT        12946003   20160309                             141612946  3    1 
+BIB                  4          7                                 12946  3    2 
+REACTION   (31-GA-80(0,B-)32-GE-80,,PN)                           12946  3    3 
+DECAY-DATA (31-GA-80,2.85SEC)  Measured by authors                12946  3    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946  3    5 
+           and neutron counting efficiency errors not included.   12946  3    6 
+           Upper limits based on twice the uncertainty when the   12946  3    7 
+           error on the value exceeds the value.                  12946  3    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946  3    9 
+ENDBIB               7          0                                 12946  3   10 
+NOCOMMON             0          0                                 12946  3   11 
+DATA                 3          1                                 12946  3   12 
+DATA       ERR-S      ERR-HL                                      12946  3   13 
+NO-DIM     NO-DIM     SEC                                         12946  3   14 
+ 0.00055     0.00004     0.01                                     12946  3   15 
+ENDDATA              3          0                                 12946  3   16 
+ENDSUBENT           15          0                                 12946  399999 
+SUBENT        12946004   20160309                             141612946  4    1 
+BIB                  4          7                                 12946  4    2 
+REACTION   (31-GA-81(0,B-)32-GE-81,,PN)                           12946  4    3 
+DECAY-DATA (31-GA-81,1.22SEC)  Measured by authors                12946  4    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946  4    5 
+           and neutron counting efficiency errors not included.   12946  4    6 
+           Upper limits based on twice the uncertainty when the   12946  4    7 
+           error on the value exceeds the value.                  12946  4    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946  4    9 
+ENDBIB               7          0                                 12946  4   10 
+NOCOMMON             0          0                                 12946  4   11 
+DATA                 3          1                                 12946  4   12 
+DATA       ERR-S      ERR-HL                                      12946  4   13 
+NO-DIM     NO-DIM     SEC                                         12946  4   14 
+ 0.106       0.004      0.01                                      12946  4   15 
+ENDDATA              3          0                                 12946  4   16 
+ENDSUBENT           15          0                                 12946  499999 
+SUBENT        12946005   20160309                             141612946  5    1 
+BIB                  4          7                                 12946  5    2 
+REACTION   (31-GA-82(0,B-)32-GE-82,,PN)                           12946  5    3 
+DECAY-DATA (31-GA-82,0.602SEC)  Measured by authors               12946  5    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946  5    5 
+           and neutron counting efficiency errors not included.   12946  5    6 
+           Upper limits based on twice the uncertainty when the   12946  5    7 
+           error on the value exceeds the value.                  12946  5    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946  5    9 
+ENDBIB               7          0                                 12946  5   10 
+NOCOMMON             0          0                                 12946  5   11 
+DATA                 3          1                                 12946  5   12 
+DATA       ERR-S      ERR-HL                                      12946  5   13 
+NO-DIM     NO-DIM     SEC                                         12946  5   14 
+ 0.198       0.01      0.006                                      12946  5   15 
+ENDDATA              3          0                                 12946  5   16 
+ENDSUBENT           15          0                                 12946  599999 
+SUBENT        12946006   20160309                             141612946  6    1 
+BIB                  4          7                                 12946  6    2 
+REACTION   (31-GA-83(0,B-)32-GE-83,,PN)                           12946  6    3 
+DECAY-DATA (31-GA-83,0.31SEC)  Measured by authors                12946  6    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946  6    5 
+           and neutron counting efficiency errors not included.   12946  6    6 
+           Upper limits based on twice the uncertainty when the   12946  6    7 
+           error on the value exceeds the value.                  12946  6    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946  6    9 
+ENDBIB               7          0                                 12946  6   10 
+NOCOMMON             0          0                                 12946  6   11 
+DATA                 3          1                                 12946  6   12 
+DATA       ERR-S      ERR-HL                                      12946  6   13 
+NO-DIM     NO-DIM     SEC                                         12946  6   14 
+ 0.54       0.07        0.01                                      12946  6   15 
+ENDDATA              3          0                                 12946  6   16 
+ENDSUBENT           15          0                                 12946  699999 
+SUBENT        12946007   20160309                             141612946  7    1 
+BIB                  4          7                                 12946  7    2 
+REACTION   (37-RB-97(0,B-)38-SR-97,,PN)                           12946  7    3 
+DECAY-DATA (37-RB-97,0.169SEC)  Measured by authors               12946  7    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946  7    5 
+           and neutron counting efficiency errors not included.   12946  7    6 
+           Upper limits based on twice the uncertainty when the   12946  7    7 
+           error on the value exceeds the value.                  12946  7    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946  7    9 
+ENDBIB               7          0                                 12946  7   10 
+NOCOMMON             0          0                                 12946  7   11 
+DATA                 3          1                                 12946  7   12 
+DATA       ERR-S      ERR-HL                                      12946  7   13 
+NO-DIM     NO-DIM     SEC                                         12946  7   14 
+ 0.261       0.013       0.001                                    12946  7   15 
+ENDDATA              3          0                                 12946  7   16 
+ENDSUBENT           15          0                                 12946  799999 
+SUBENT        12946008   20160309                             141612946  8    1 
+BIB                  4          7                                 12946  8    2 
+REACTION   (37-RB-98(0,B-)38-SR-98,,PN)                           12946  8    3 
+DECAY-DATA (37-RB-98,1.107SEC)  Measured by authors               12946  8    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946  8    5 
+           and neutron counting efficiency errors not included.   12946  8    6 
+           Upper limits based on twice the uncertainty when the   12946  8    7 
+           error on the value exceeds the value.                  12946  8    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946  8    9 
+ENDBIB               7          0                                 12946  8   10 
+NOCOMMON             0          0                                 12946  8   11 
+DATA                 3          1                                 12946  8   12 
+DATA       ERR-S      ERR-HL                                      12946  8   13 
+NO-DIM     NO-DIM     SEC                                         12946  8   14 
+ 0.136       0.005       0.001                                    12946  8   15 
+ENDDATA              3          0                                 12946  8   16 
+ENDSUBENT           15          0                                 12946  899999 
+SUBENT        12946009   20160309                             141612946  9    1 
+BIB                  4          7                                 12946  9    2 
+REACTION   (37-RB-99(0,B-)38-SR-99,,PN)                           12946  9    3 
+DECAY-DATA (37-RB-99,0.057SEC)  Measured by authors               12946  9    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946  9    5 
+           and neutron counting efficiency errors not included.   12946  9    6 
+           Upper limits based on twice the uncertainty when the   12946  9    7 
+           error on the value exceeds the value.                  12946  9    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946  9    9 
+ENDBIB               7          0                                 12946  9   10 
+NOCOMMON             0          0                                 12946  9   11 
+DATA                 3          1                                 12946  9   12 
+DATA       ERR-S      ERR-HL                                      12946  9   13 
+NO-DIM     NO-DIM     SEC                                         12946  9   14 
+ 0.205       0.032       0.001                                    12946  9   15 
+ENDDATA              3          0                                 12946  9   16 
+ENDSUBENT           15          0                                 12946  999999 
+SUBENT        12946010   20160309                             141612946 10    1 
+BIB                  4          7                                 12946 10    2 
+REACTION   (37-RB-100(0,B-)38-SR-100,,PN)                         12946 10    3 
+DECAY-DATA (37-RB-100,0.055SEC)  Measured by authors              12946 10    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 10    5 
+           and neutron counting efficiency errors not included.   12946 10    6 
+           Upper limits based on twice the uncertainty when the   12946 10    7 
+           error on the value exceeds the value.                  12946 10    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 10    9 
+ENDBIB               7          0                                 12946 10   10 
+NOCOMMON             0          0                                 12946 10   11 
+DATA                 3          1                                 12946 10   12 
+DATA       ERR-S      ERR-HL                                      12946 10   13 
+NO-DIM     NO-DIM     SEC                                         12946 10   14 
+ 0.06       0.03       0.018                                      12946 10   15 
+ENDDATA              3          0                                 12946 10   16 
+ENDSUBENT           15          0                                 12946 1099999 
+SUBENT        12946011   20160309                             141612946 11    1 
+BIB                  3          3                                 12946 11    2 
+REACTION   (38-SR-97(0,B-)39-Y-97,,PN)                            12946 11    3 
+DECAY-DATA (38-SR-97,0.429SEC)  Measured by authors               12946 11    4 
+HISTORY    (20160308C) Data moved from sub.2                      12946 11    5 
+ENDBIB               3          0                                 12946 11    6 
+NOCOMMON             0          0                                 12946 11    7 
+DATA                 2          1                                 12946 11    8 
+DATA-MAX   ERR-HL                                                 12946 11    9 
+NO-DIM     SEC                                                    12946 11   10 
+ 0.0005      0.005                                                12946 11   11 
+ENDDATA              3          0                                 12946 11   12 
+ENDSUBENT           11          0                                 12946 1199999 
+SUBENT        12946012   20160309                             141612946 12    1 
+BIB                  4          7                                 12946 12    2 
+REACTION   (38-SR-98(0,B-)39-Y-98,,PN)                            12946 12    3 
+DECAY-DATA (38-SR-98,0.653SEC)  Measured by authors               12946 12    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 12    5 
+           and neutron counting efficiency errors not included.   12946 12    6 
+           Upper limits based on twice the uncertainty when the   12946 12    7 
+           error on the value exceeds the value.                  12946 12    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 12    9 
+ENDBIB               7          0                                 12946 12   10 
+NOCOMMON             0          0                                 12946 12   11 
+DATA                 3          1                                 12946 12   12 
+DATA       ERR-S      ERR-HL                                      12946 12   13 
+NO-DIM     NO-DIM     SEC                                         12946 12   14 
+ 0.0023      0.0002     0.002                                     12946 12   15 
+ENDDATA              3          0                                 12946 12   16 
+ENDSUBENT           15          0                                 12946 1299999 
+SUBENT        12946013   20160309                             141612946 13    1 
+BIB                  4          7                                 12946 13    2 
+REACTION   (38-SR-99(0,B-)39-Y-99,,PN)                            12946 13    3 
+DECAY-DATA (38-SR-99,0.269SEC)  Measured by authors               12946 13    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 13    5 
+           and neutron counting efficiency errors not included.   12946 13    6 
+           Upper limits based on twice the uncertainty when the   12946 13    7 
+           error on the value exceeds the value.                  12946 13    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 13    9 
+ENDBIB               7          0                                 12946 13   10 
+NOCOMMON             0          0                                 12946 13   11 
+DATA                 3          1                                 12946 13   12 
+DATA       ERR-S      ERR-HL                                      12946 13   13 
+NO-DIM     NO-DIM     SEC                                         12946 13   14 
+ 0.00095     0.00006     0.002                                    12946 13   15 
+ENDDATA              3          0                                 12946 13   16 
+ENDSUBENT           15          0                                 12946 1399999 
+SUBENT        12946014   20160309                             141612946 14    1 
+BIB                  4          7                                 12946 14    2 
+REACTION   (38-SR-100(0,B-)39-Y-100,,PN)                          12946 14    3 
+DECAY-DATA (38-SR-100,0.204SEC)  Measured by authors              12946 14    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 14    5 
+           and neutron counting efficiency errors not included.   12946 14    6 
+           Upper limits based on twice the uncertainty when the   12946 14    7 
+           error on the value exceeds the value.                  12946 14    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 14    9 
+ENDBIB               7          0                                 12946 14   10 
+NOCOMMON             0          0                                 12946 14   11 
+DATA                 3          1                                 12946 14   12 
+DATA       ERR-S      ERR-HL                                      12946 14   13 
+NO-DIM     NO-DIM     SEC                                         12946 14   14 
+ 0.0073     0.0003     0.002                                      12946 14   15 
+ENDDATA              3          0                                 12946 14   16 
+ENDSUBENT           15          0                                 12946 1499999 
+SUBENT        12946015   20160309                             141612946 15    1 
+BIB                  4          7                                 12946 15    2 
+REACTION   (38-SR-101(0,B-)39-Y-101,,PN)                          12946 15    3 
+DECAY-DATA (38-SR-101,0.114SEC)  Measured by authors              12946 15    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 15    5 
+           and neutron counting efficiency errors not included.   12946 15    6 
+           Upper limits based on twice the uncertainty when the   12946 15    7 
+           error on the value exceeds the value.                  12946 15    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 15    9 
+ENDBIB               7          0                                 12946 15   10 
+NOCOMMON             0          0                                 12946 15   11 
+DATA                 3          1                                 12946 15   12 
+DATA       ERR-S      ERR-HL                                      12946 15   13 
+NO-DIM     NO-DIM     SEC                                         12946 15   14 
+ 0.0237     0.0014     0.004                                      12946 15   15 
+ENDDATA              3          0                                 12946 15   16 
+ENDSUBENT           15          0                                 12946 1599999 
+SUBENT        12946016   20160309                             141612946 16    1 
+BIB                  4          7                                 12946 16    2 
+REACTION   (38-SR-102(0,B-)39-Y-102,,PN)                          12946 16    3 
+DECAY-DATA (38-SR-102,0.069SEC)  Measured by authors              12946 16    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 16    5 
+           and neutron counting efficiency errors not included.   12946 16    6 
+           Upper limits based on twice the uncertainty when the   12946 16    7 
+           error on the value exceeds the value.                  12946 16    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 16    9 
+ENDBIB               7          0                                 12946 16   10 
+NOCOMMON             0          0                                 12946 16   11 
+DATA                 3          1                                 12946 16   12 
+DATA       ERR-S      ERR-HL                                      12946 16   13 
+NO-DIM     NO-DIM     SEC                                         12946 16   14 
+ 0.048       0.021     0.015                                      12946 16   15 
+ENDDATA              3          0                                 12946 16   16 
+ENDSUBENT           15          0                                 12946 1699999 
+SUBENT        12946017   20160309                             141612946 17    1 
+BIB                  3          3                                 12946 17    2 
+REACTION   (39-Y-97-M1(0,B-)40-ZR-97,,PN)                         12946 17    3 
+DECAY-DATA (39-Y-97-M1,1.18SEC)  Measured by authors              12946 17    4 
+HISTORY    (20160308C) Data moved from sub.2                      12946 17    5 
+ENDBIB               3          0                                 12946 17    6 
+NOCOMMON             0          0                                 12946 17    7 
+DATA                 2          1                                 12946 17    8 
+DATA-MAX   ERR-HL                                                 12946 17    9 
+NO-DIM     SEC                                                    12946 17   10 
+ 0.0008      0.04                                                 12946 17   11 
+ENDDATA              3          0                                 12946 17   12 
+ENDSUBENT           11          0                                 12946 1799999 
+SUBENT        12946018   20160309                             141612946 18    1 
+BIB                  4          7                                 12946 18    2 
+REACTION   (39-Y-97(0,B-)40-ZR-97,,PN)                            12946 18    3 
+DECAY-DATA (39-Y-97-G,3.76SEC)  Measured by authors               12946 18    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 18    5 
+           and neutron counting efficiency errors not included.   12946 18    6 
+           Upper limits based on twice the uncertainty when the   12946 18    7 
+           error on the value exceeds the value.                  12946 18    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 18    9 
+ENDBIB               7          0                                 12946 18   10 
+NOCOMMON             0          0                                 12946 18   11 
+DATA                 3          1                                 12946 18   12 
+DATA       ERR-S      ERR-HL                                      12946 18   13 
+NO-DIM     NO-DIM     SEC                                         12946 18   14 
+ 0.00054     0.00004     0.02                                     12946 18   15 
+ENDDATA              3          0                                 12946 18   16 
+ENDSUBENT           15          0                                 12946 1899999 
+SUBENT        12946019   20160309                             141612946 19    1 
+BIB                  4          7                                 12946 19    2 
+REACTION   (39-Y-98(0,B-)40-ZR-98,,PN)                            12946 19    3 
+DECAY-DATA (39-Y-98-G,0.548SEC)  Measured by authors              12946 19    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 19    5 
+           and neutron counting efficiency errors not included.   12946 19    6 
+           Upper limits based on twice the uncertainty when the   12946 19    7 
+           error on the value exceeds the value.                  12946 19    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 19    9 
+ENDBIB               7          0                                 12946 19   10 
+NOCOMMON             0          0                                 12946 19   11 
+DATA                 3          1                                 12946 19   12 
+DATA       ERR-S      ERR-HL                                      12946 19   13 
+NO-DIM     NO-DIM     SEC                                         12946 19   14 
+ 0.0024     0.0001     0.002                                      12946 19   15 
+ENDDATA              3          0                                 12946 19   16 
+ENDSUBENT           15          0                                 12946 1999999 
+SUBENT        12946020   20160309                             141612946 20    1 
+BIB                  4          7                                 12946 20    2 
+REACTION   (39-Y-99(0,B-)40-ZR-99,,PN)                            12946 20    3 
+DECAY-DATA (39-Y-99,1.470SEC)  Measured by authors                12946 20    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 20    5 
+           and neutron counting efficiency errors not included.   12946 20    6 
+           Upper limits based on twice the uncertainty when the   12946 20    7 
+           error on the value exceeds the value.                  12946 20    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 20    9 
+ENDBIB               7          0                                 12946 20   10 
+NOCOMMON             0          0                                 12946 20   11 
+DATA                 3          1                                 12946 20   12 
+DATA       ERR-S      ERR-HL                                      12946 20   13 
+NO-DIM     NO-DIM     SEC                                         12946 20   14 
+ 0.0103     0.0004     0.007                                      12946 20   15 
+ENDDATA              3          0                                 12946 20   16 
+ENDSUBENT           15          0                                 12946 2099999 
+SUBENT        12946021   20160309                             141612946 21    1 
+BIB                  4          7                                 12946 21    2 
+REACTION   (39-Y-100(0,B-)40-ZR-100,,PN)                          12946 21    3 
+DECAY-DATA (39-Y-100-G,0.728SEC)  Measured by authors             12946 21    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 21    5 
+           and neutron counting efficiency errors not included.   12946 21    6 
+           Upper limits based on twice the uncertainty when the   12946 21    7 
+           error on the value exceeds the value.                  12946 21    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 21    9 
+ENDBIB               7          0                                 12946 21   10 
+NOCOMMON             0          0                                 12946 21   11 
+DATA                 3          1                                 12946 21   12 
+DATA       ERR-S      ERR-HL                                      12946 21   13 
+NO-DIM     NO-DIM     SEC                                         12946 21   14 
+ 0.0081     0.0004     0.004                                      12946 21   15 
+ENDDATA              3          0                                 12946 21   16 
+ENDSUBENT           15          0                                 12946 2199999 
+SUBENT        12946022   20160309                             141612946 22    1 
+BIB                  4          7                                 12946 22    2 
+REACTION   (39-Y-101(0,B-)40-ZR-101,,PN)                          12946 22    3 
+DECAY-DATA (39-Y-101,0.44SEC)  Measured by authors                12946 22    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 22    5 
+           and neutron counting efficiency errors not included.   12946 22    6 
+           Upper limits based on twice the uncertainty when the   12946 22    7 
+           error on the value exceeds the value.                  12946 22    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 22    9 
+ENDBIB               7          0                                 12946 22   10 
+NOCOMMON             0          0                                 12946 22   11 
+DATA                 3          1                                 12946 22   12 
+DATA       ERR-S      ERR-HL                                      12946 22   13 
+NO-DIM     NO-DIM     SEC                                         12946 22   14 
+ 0.0194     0.0018     0.02                                       12946 22   15 
+ENDDATA              3          0                                 12946 22   16 
+ENDSUBENT           15          0                                 12946 2299999 
+SUBENT        12946023   20160309                             141612946 23    1 
+BIB                  4          7                                 12946 23    2 
+REACTION   (39-Y-102(0,B-)40-ZR-102,,PN)                          12946 23    3 
+DECAY-DATA (39-Y-102,0.44SEC)  Measured by authors                12946 23    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 23    5 
+           and neutron counting efficiency errors not included.   12946 23    6 
+           Upper limits based on twice the uncertainty when the   12946 23    7 
+           error on the value exceeds the value.                  12946 23    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 23    9 
+ENDBIB               7          0                                 12946 23   10 
+NOCOMMON             0          0                                 12946 23   11 
+DATA                 3          1                                 12946 23   12 
+DATA       ERR-S      ERR-HL                                      12946 23   13 
+NO-DIM     NO-DIM     SEC                                         12946 23   14 
+ 0.060       0.012     0.06                                       12946 23   15 
+ENDDATA              3          0                                 12946 23   16 
+ENDSUBENT           15          0                                 12946 2399999 
+SUBENT        12946024   20160309                             141612946 24    1 
+BIB                  4          7                                 12946 24    2 
+REACTION   (49-IN-127-M1(0,B-)50-SN-127,,PN)                      12946 24    3 
+DECAY-DATA (49-IN-127-M1,3.70SEC)  Measured by authors            12946 24    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 24    5 
+           and neutron counting efficiency errors not included.   12946 24    6 
+           Upper limits based on twice the uncertainty when the   12946 24    7 
+           error on the value exceeds the value.                  12946 24    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 24    9 
+ENDBIB               7          0                                 12946 24   10 
+NOCOMMON             0          0                                 12946 24   11 
+DATA                 3          1                                 12946 24   12 
+DATA       ERR-S      ERR-HL                                      12946 24   13 
+NO-DIM     NO-DIM     SEC                                         12946 24   14 
+ 0.0054     0.0003     0.04                                       12946 24   15 
+ENDDATA              3          0                                 12946 24   16 
+ENDSUBENT           15          0                                 12946 2499999 
+SUBENT        12946025   20160309                             141612946 25    1 
+BIB                  4          7                                 12946 25    2 
+REACTION   (49-IN-128(0,B-)50-SN-128,,PN)                         12946 25    3 
+DECAY-DATA (49-IN-128-G,0.800SEC)  Measured by authors            12946 25    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 25    5 
+           and neutron counting efficiency errors not included.   12946 25    6 
+           Upper limits based on twice the uncertainty when the   12946 25    7 
+           error on the value exceeds the value.                  12946 25    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 25    9 
+ENDBIB               7          0                                 12946 25   10 
+NOCOMMON             0          0                                 12946 25   11 
+DATA                 3          1                                 12946 25   12 
+DATA       ERR-S      ERR-HL                                      12946 25   13 
+NO-DIM     NO-DIM     SEC                                         12946 25   14 
+ 0.00030     0.00003     0.001                                    12946 25   15 
+ENDDATA              3          0                                 12946 25   16 
+ENDSUBENT           15          0                                 12946 2599999 
+SUBENT        12946026   20160309                             141612946 26    1 
+BIB                  4          7                                 12946 26    2 
+REACTION   (49-IN-129-M1(0,B-)50-SN-129,,PN)                      12946 26    3 
+DECAY-DATA (49-IN-129-M1,1.18SEC)  Measured by authors            12946 26    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 26    5 
+           and neutron counting efficiency errors not included.   12946 26    6 
+           Upper limits based on twice the uncertainty when the   12946 26    7 
+           error on the value exceeds the value.                  12946 26    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 26    9 
+ENDBIB               7          0                                 12946 26   10 
+NOCOMMON             0          0                                 12946 26   11 
+DATA                 3          1                                 12946 26   12 
+DATA       ERR-S      ERR-HL                                      12946 26   13 
+NO-DIM     NO-DIM     SEC                                         12946 26   14 
+ 0.0252     0.0012     0.03                                       12946 26   15 
+ENDDATA              3          0                                 12946 26   16 
+ENDSUBENT           15          0                                 12946 2699999 
+SUBENT        12946027   20160309                             141612946 27    1 
+BIB                  4          7                                 12946 27    2 
+REACTION   (49-IN-129(0,B-)50-SN-129,,PN)                         12946 27    3 
+DECAY-DATA (49-IN-129-G,0.61SEC)  Measured by authors             12946 27    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 27    5 
+           and neutron counting efficiency errors not included.   12946 27    6 
+           Upper limits based on twice the uncertainty when the   12946 27    7 
+           error on the value exceeds the value.                  12946 27    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 27    9 
+ENDBIB               7          0                                 12946 27   10 
+NOCOMMON             0          0                                 12946 27   11 
+DATA                 3          1                                 12946 27   12 
+DATA       ERR-S      ERR-HL                                      12946 27   13 
+NO-DIM     NO-DIM     SEC                                         12946 27   14 
+ 0.0013     0.0001     0.01                                       12946 27   15 
+ENDDATA              3          0                                 12946 27   16 
+ENDSUBENT           15          0                                 12946 2799999 
+SUBENT        12946028   20160309                             141612946 28    1 
+BIB                  4          7                                 12946 28    2 
+REACTION   (49-IN-130-M1(0,B-)50-SN-130,,PN)                      12946 28    3 
+DECAY-DATA (49-IN-130-M1,0.55SEC)  Measured by authors            12946 28    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 28    5 
+           and neutron counting efficiency errors not included.   12946 28    6 
+           Upper limits based on twice the uncertainty when the   12946 28    7 
+           error on the value exceeds the value.                  12946 28    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 28    9 
+ENDBIB               7          0                                 12946 28   10 
+NOCOMMON             0          0                                 12946 28   11 
+DATA                 3          1                                 12946 28   12 
+DATA       ERR-S      ERR-HL                                      12946 28   13 
+NO-DIM     NO-DIM     SEC                                         12946 28   14 
+ 0.0167     0.0009     0.01                                       12946 28   15 
+ENDDATA              3          0                                 12946 28   16 
+ENDSUBENT           15          0                                 12946 2899999 
+SUBENT        12946029   20160309                             141612946 29    1 
+BIB                  4          7                                 12946 29    2 
+REACTION   (49-IN-130(0,B-)50-SN-130,,PN)                         12946 29    3 
+DECAY-DATA (49-IN-130-G,0.32SEC)  Measured by authors             12946 29    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 29    5 
+           and neutron counting efficiency errors not included.   12946 29    6 
+           Upper limits based on twice the uncertainty when the   12946 29    7 
+           error on the value exceeds the value.                  12946 29    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 29    9 
+ENDBIB               7          0                                 12946 29   10 
+NOCOMMON             0          0                                 12946 29   11 
+DATA                 3          1                                 12946 29   12 
+DATA       ERR-S      ERR-HL                                      12946 29   13 
+NO-DIM     NO-DIM     SEC                                         12946 29   14 
+ 0.0090     0.0005     0.02                                       12946 29   15 
+ENDDATA              3          0                                 12946 29   16 
+ENDSUBENT           15          0                                 12946 2999999 
+SUBENT        12946030   20160309                             141612946 30    1 
+BIB                  4          7                                 12946 30    2 
+REACTION   (49-IN-131(0,B-)50-SN-131,,PN)                         12946 30    3 
+DECAY-DATA (49-IN-131-G,0.276SEC)  Measured by authors            12946 30    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 30    5 
+           and neutron counting efficiency errors not included.   12946 30    6 
+           Upper limits based on twice the uncertainty when the   12946 30    7 
+           error on the value exceeds the value.                  12946 30    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 30    9 
+ENDBIB               7          0                                 12946 30   10 
+NOCOMMON             0          0                                 12946 30   11 
+DATA                 3          1                                 12946 30   12 
+DATA       ERR-S      ERR-HL                                      12946 30   13 
+NO-DIM     NO-DIM     SEC                                         12946 30   14 
+ 0.0155     0.0007     0.003                                      12946 30   15 
+ENDDATA              3          0                                 12946 30   16 
+ENDSUBENT           15          0                                 12946 3099999 
+SUBENT        12946031   20160309                             141612946 31    1 
+BIB                  4          7                                 12946 31    2 
+REACTION   (49-IN-132(0,B-)50-SN-132,,PN)                         12946 31    3 
+DECAY-DATA (49-IN-132,0.204SEC)  Measured by authors              12946 31    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 31    5 
+           and neutron counting efficiency errors not included.   12946 31    6 
+           Upper limits based on twice the uncertainty when the   12946 31    7 
+           error on the value exceeds the value.                  12946 31    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 31    9 
+ENDBIB               7          0                                 12946 31   10 
+NOCOMMON             0          0                                 12946 31   11 
+DATA                 3          1                                 12946 31   12 
+DATA       ERR-S      ERR-HL                                      12946 31   13 
+NO-DIM     NO-DIM     SEC                                         12946 31   14 
+ 0.068       0.005       0.006                                    12946 31   15 
+ENDDATA              3          0                                 12946 31   16 
+ENDSUBENT           15          0                                 12946 3199999 
+SUBENT        12946032   20160309                             141612946 32    1 
+BIB                  4          7                                 12946 32    2 
+REACTION   (55-CS-147(0,B-)56-BA-147,,PN)                         12946 32    3 
+DECAY-DATA (55-CS-147,0.230SEC)  Measured by authors              12946 32    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 32    5 
+           and neutron counting efficiency errors not included.   12946 32    6 
+           Upper limits based on twice the uncertainty when the   12946 32    7 
+           error on the value exceeds the value.                  12946 32    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 32    9 
+ENDBIB               7          0                                 12946 32   10 
+NOCOMMON             0          0                                 12946 32   11 
+DATA                 3          1                                 12946 32   12 
+DATA       ERR-S      ERR-HL                                      12946 32   13 
+NO-DIM     NO-DIM     SEC                                         12946 32   14 
+ 0.43         0.05       0.001                                    12946 32   15 
+ENDDATA              3          0                                 12946 32   16 
+ENDSUBENT           15          0                                 12946 3299999 
+SUBENT        12946033   20160309                             141612946 33    1 
+BIB                  4          7                                 12946 33    2 
+REACTION   (55-CS-148(0,B-)56-BA-148,,PN)                         12946 33    3 
+DECAY-DATA (55-CS-147,0.13SEC)  Measured by authors               12946 33    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 33    5 
+           and neutron counting efficiency errors not included.   12946 33    6 
+           Upper limits based on twice the uncertainty when the   12946 33    7 
+           error on the value exceeds the value.                  12946 33    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 33    9 
+ENDBIB               7          0                                 12946 33   10 
+NOCOMMON             0          0                                 12946 33   11 
+DATA                 3          1                                 12946 33   12 
+DATA       ERR-S      ERR-HL                                      12946 33   13 
+NO-DIM     NO-DIM     SEC                                         12946 33   14 
+ 0.08         0.03       0.01                                     12946 33   15 
+ENDDATA              3          0                                 12946 33   16 
+ENDSUBENT           15          0                                 12946 3399999 
+SUBENT        12946034   20160309                             141612946 34    1 
+BIB                  4          7                                 12946 34    2 
+REACTION   (56-BA-147(0,B-)57-LA-147,,PN)                         12946 34    3 
+DECAY-DATA (56-BA-147,0.893SEC)  Measured by authors              12946 34    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 34    5 
+           and neutron counting efficiency errors not included.   12946 34    6 
+           Upper limits based on twice the uncertainty when the   12946 34    7 
+           error on the value exceeds the value.                  12946 34    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 34    9 
+ENDBIB               7          0                                 12946 34   10 
+NOCOMMON             0          0                                 12946 34   11 
+DATA                 3          1                                 12946 34   12 
+DATA       ERR-S      ERR-HL                                      12946 34   13 
+NO-DIM     NO-DIM     SEC                                         12946 34   14 
+ 0.00019     0.00001       0.001                                  12946 34   15 
+ENDDATA              3          0                                 12946 34   16 
+ENDSUBENT           15          0                                 12946 3499999 
+SUBENT        12946035   20160309                             141612946 35    1 
+BIB                  3          3                                 12946 35    2 
+REACTION   (56-BA-148(0,B-)57-LA-148,,PN)                         12946 35    3 
+DECAY-DATA (56-BA-148,0.62SEC)  Measured by authors               12946 35    4 
+HISTORY    (20160308C) Data moved from sub.2                      12946 35    5 
+ENDBIB               3          0                                 12946 35    6 
+NOCOMMON             0          0                                 12946 35    7 
+DATA                 2          1                                 12946 35    8 
+DATA-MAX   ERR-HL                                                 12946 35    9 
+NO-DIM     SEC                                                    12946 35   10 
+ 0.00015     0.005                                                12946 35   11 
+ENDDATA              3          0                                 12946 35   12 
+ENDSUBENT           11          0                                 12946 3599999 
+SUBENT        12946036   20160309                             141612946 36    1 
+BIB                  4          7                                 12946 36    2 
+REACTION   (56-BA-149(0,B-)57-LA-149,,PN)                         12946 36    3 
+DECAY-DATA (56-BA-149,0.346SEC)  Measured by authors              12946 36    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 36    5 
+           and neutron counting efficiency errors not included.   12946 36    6 
+           Upper limits based on twice the uncertainty when the   12946 36    7 
+           error on the value exceeds the value.                  12946 36    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 36    9 
+ENDBIB               7          0                                 12946 36   10 
+NOCOMMON             0          0                                 12946 36   11 
+DATA                 3          1                                 12946 36   12 
+DATA       ERR-S      ERR-HL                                      12946 36   13 
+NO-DIM     NO-DIM     SEC                                         12946 36   14 
+ 0.0043     0.0012      0.006                                     12946 36   15 
+ENDDATA              3          0                                 12946 36   16 
+ENDSUBENT           15          0                                 12946 3699999 
+SUBENT        12946037   20160309                             141612946 37    1 
+BIB                  4          7                                 12946 37    2 
+REACTION   (57-LA-147(0,B-)58-CE-147,,PN)                         12946 37    3 
+DECAY-DATA (57-LA-147,4.015SEC)  Measured by authors              12946 37    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 37    5 
+           and neutron counting efficiency errors not included.   12946 37    6 
+           Upper limits based on twice the uncertainty when the   12946 37    7 
+           error on the value exceeds the value.                  12946 37    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 37    9 
+ENDBIB               7          0                                 12946 37   10 
+NOCOMMON             0          0                                 12946 37   11 
+DATA                 3          1                                 12946 37   12 
+DATA       ERR-S      ERR-HL                                      12946 37   13 
+NO-DIM     NO-DIM     SEC                                         12946 37   14 
+ 0.00035     0.00006     0.008                                    12946 37   15 
+ENDDATA              3          0                                 12946 37   16 
+ENDSUBENT           15          0                                 12946 3799999 
+SUBENT        12946038   20160309                             141612946 38    1 
+BIB                  4          7                                 12946 38    2 
+REACTION   (57-LA-148(0,B-)58-CE-148,,PN)                         12946 38    3 
+DECAY-DATA (57-LA-148,1.40SEC)  Measured by authors               12946 38    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 38    5 
+           and neutron counting efficiency errors not included.   12946 38    6 
+           Upper limits based on twice the uncertainty when the   12946 38    7 
+           error on the value exceeds the value.                  12946 38    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 38    9 
+ENDBIB               7          0                                 12946 38   10 
+NOCOMMON             0          0                                 12946 38   11 
+DATA                 3          1                                 12946 38   12 
+DATA       ERR-S      ERR-HL                                      12946 38   13 
+NO-DIM     NO-DIM     SEC                                         12946 38   14 
+ 0.0011     0.0001     0.02                                       12946 38   15 
+ENDDATA              3          0                                 12946 38   16 
+ENDSUBENT           15          0                                 12946 3899999 
+SUBENT        12946039   20160309                             141612946 39    1 
+BIB                  4          7                                 12946 39    2 
+REACTION   (57-LA-149(0,B-)58-CE-149,,PN)                         12946 39    3 
+DECAY-DATA (57-LA-149,1.04SEC)  Measured by authors               12946 39    4 
+ERR-ANALYS (ERR-S) Statistical uncertainties only. Normalization  12946 39    5 
+           and neutron counting efficiency errors not included.   12946 39    6 
+           Upper limits based on twice the uncertainty when the   12946 39    7 
+           error on the value exceeds the value.                  12946 39    8 
+HISTORY    (20160308C) Data moved from sub.2                      12946 39    9 
+ENDBIB               7          0                                 12946 39   10 
+NOCOMMON             0          0                                 12946 39   11 
+DATA                 3          1                                 12946 39   12 
+DATA       ERR-S      ERR-HL                                      12946 39   13 
+NO-DIM     NO-DIM     SEC                                         12946 39   14 
+ 0.0117     0.0012     0.04                                       12946 39   15 
+ENDDATA              3          0                                 12946 39   16 
+ENDSUBENT           15          0                                 12946 3999999 
+ENDENTRY            39          0                                 1294699999999 
