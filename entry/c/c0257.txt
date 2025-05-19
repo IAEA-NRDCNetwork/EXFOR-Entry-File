@@ -1,57 +1,66 @@
-ENTRY            C0257   19871118                             0000C025700000001 
-SUBENT        C0257001   19871118                             0000C025700100001 
-BIB                 10         10                                 C025700100002 
+ENTRY            C0257   20240505                             C235C025700000001 
+SUBENT        C0257001   20240505                             C235C025700100001 
+BIB                 11         16                                 C025700100002 
 INSTITUTE  (1USALRL)                                              C025700100003 
-REFERENCE  (J,PR,102,1390,56)                                     C025700100004 
-AUTHOR     (H.G.HICKS,P.C.STEVENSON,W.E.NERVIK)                   C025700100005 
-TITLE      REACTION AL-27(P,3PN)NA-24                             C025700100006 
-FACILITY   (LINAC,CYCLO)                                          C025700100007 
-SAMPLE     ALUMINUM AND POLYETHYLENE FOILS                        C025700100008 
-METHOD     (ACTIV,BCINT,STTA)                                     C025700100009 
-DETECTOR   (PROPC)                                                C025700100010 
-ERR-ANALYS ERRORS WEREN'T ANALYSED.                               C025700100011 
-HISTORY    (870524C)                                              C025700100012 
-ENDBIB              10          0                                 C025700100013 
-NOCOMMON             0          0                                 C025700100014 
-ENDSUBENT           13          0                                 C025700199999 
-SUBENT        C0257002   19881005                             0000C025700200001 
-BIB                  5          8                                 C025700200002 
-REACTION  1(13-AL-27(P,N+3P)11-NA-24,,SIG)                        C025700200003 
-          2((13-AL-27(P,N+3P)11-NA-24,,SIG)/                      C025700200004 
-           (6-C-12(P,N+P)6-C-11,,SIG))                            C025700200005 
-MONITOR   1((MONIT)6-C-12(P,N+P)6-C-11,,SIG)                      C025700200006 
-MONIT-REF 1((MONIT),CRANDALL+,J,PR,101,329,56)                    C025700200007 
-FLAG       (1.) EXPERIMENTAL TECHNIQUE: FARADAY CUP               C025700200008 
-           (2.) EXPERIMENTAL TECHNIQUE: CIRCULATING BEAM          C025700200009 
-HISTORY    (881005A) REACTION AND MONITOR CORRECTED.              C025700200010 
-ENDBIB               8          0                                 C025700200011 
-NOCOMMON             0          0                                 C025700200012 
-DATA                 5         23                                 C025700200013 
-EN         DATA      1DATA      2MONIT     1FLAG                  C025700200014 
-MEV        MB         NO-DIM     MB         NO-DIM                C025700200015 
-  50.        1.52      0.0175     86.9       2.                   C025700200016 
-  60.        5.4       0.0668     80.8       2.                   C025700200017 
-  70.        8.2       0.107      76.5       2.                   C025700200018 
-  80.       10.3       0.146      70.4       2.                   C025700200019 
-  80.       10.4       0.148      70.4       2.                   C025700200020 
-  90.       10.7       0.162      66.0       2.                   C025700200021 
- 110.       10.6       0.185      57.2       2.                   C025700200022 
- 125.       10.4       0.201      51.7       2.                   C025700200023 
- 125.       10.0       0.193      51.7       2.                   C025700200024 
- 125.       10.0       0.193      51.7       2.                   C025700200025 
- 135.        9.7       0.198      49.0       2.                   C025700200026 
- 150.        9.3       0.209      44.6       2.                   C025700200027 
- 150.        9.1       0.204      44.6       2.                   C025700200028 
- 175.        8.9       0.230      38.7       2.                   C025700200029 
- 200.        9.0       0.248      36.3       2.                   C025700200030 
- 200.        9.3       0.256      36.3       2.                   C025700200031 
- 225.        9.3       0.258      36.0       2.                   C025700200032 
- 250.        9.9       0.275      36.0       2.                   C025700200033 
- 275.       10.4       0.289      36.0       2.                   C025700200034 
- 300.       11.2       0.311      36.0       2.                   C025700200035 
- 325.       11.3       0.314      36.0       2.                   C025700200036 
- 340.       11.5       0.319      36.0       2.                   C025700200037 
- 350.       11.3       0.311      36.0       1.                   C025700200038 
-ENDDATA             25          0                                 C025700200039 
-ENDSUBENT           38          0                                 C025700299999 
+REFERENCE  (J,PR,102,1390,1956)                                   C025700100004 
+           #doi:10.1103/PhysRev.102.1390                          C025700100005 
+AUTHOR     (H.G.Hicks,P.C.Stevenson,W.E.Nervik)                   C025700100006 
+TITLE      Reaction Al-27(p,3pn)Na-24                             C025700100007 
+FACILITY   (LINAC,1USALRL)                                        C025700100008 
+           (CYCLO,1USABRK)                                        C025700100009 
+SAMPLE     Aluminum and polyethylene foils                        C025700100010 
+METHOD     (ACTIV,BCINT,STTA)                                     C025700100011 
+DETECTOR   (PROPC)                                                C025700100012 
+ERR-ANALYS Errors weren't analysed.                               C025700100013 
+STATUS     (TABLE,,H.G.Hicks+,J,PR,102,1390,1956) Table I         C025700100014 
+HISTORY    (19870524C)                                            C025700100015 
+           (20240227A) OS. REACTIONs modified, STATUS added,      C025700100016 
+           several BIB updates, converted to lower and upper case C025700100017 
+           (20240505A) On. Major alteration in 002.               C025700100018 
+ENDBIB              16          0                                 C025700100019 
+NOCOMMON             0          0                                 C025700100020 
+ENDSUBENT           19          0                                 C025700199999 
+SUBENT        C0257002   20240505                             C235C025700200001 
+BIB                  5         11                                 C025700200002 
+REACTION  1(13-AL-27(P,X)11-NA-24,,SIG)                           C025700200003 
+          2((13-AL-27(P,X)11-NA-24,,SIG)/                         C025700200004 
+           (6-C-12(P,X)6-C-11,,SIG))                              C025700200005 
+MONITOR   1((MONIT)6-C-12(P,X)6-C-11,,SIG)                        C025700200006 
+MONIT-REF 1((MONIT)B0101002,W.E.Crandall+,J,PR,101,329,1956)      C025700200007 
+FLAG       (1.) Experimental technique: Faraday cup               C025700200008 
+           (2.) Experimental technique: circulating beam          C025700200009 
+           (3.) Two data points are repeated in Table I           C025700200010 
+HISTORY    (19881005A) Reaction and monitor corrected.            C025700200011 
+           (20240227A) REACTION and MONITOR: SF3 changed to X     C025700200012 
+           (20240505A) On. FLAG=3 added.                          C025700200013 
+ENDBIB              11          0                                 C025700200014 
+NOCOMMON             0          0                                 C025700200015 
+DATA                 6         23                                 C025700200016 
+EN         DATA      1DATA      2MONIT     1FLAG       FLAG       C025700200017 
+MEV        MB         NO-DIM     MB         NO-DIM     NO-DIM     C025700200018 
+  50.        1.52      0.0175     86.9       2.                   C025700200019 
+  60.        5.4       0.0668     80.8       2.                   C025700200020 
+  70.        8.2       0.107      76.5       2.                   C025700200021 
+  80.       10.3       0.146      70.4       2.                   C025700200022 
+  80.       10.4       0.148      70.4       2.                   C025700200023 
+  90.       10.7       0.162      66.0       2.                   C025700200024 
+ 110.       10.6       0.185      57.2       2.                   C025700200025 
+ 125.       10.4       0.201      51.7       2.                   C025700200026 
+ 125.       10.0       0.193      51.7       2.         3.        C025700200027 
+ 125.       10.0       0.193      51.7       2.         3.        C025700200028 
+ 135.        9.7       0.198      49.0       2.                   C025700200029 
+ 150.        9.3       0.209      44.6       2.                   C025700200030 
+ 150.        9.1       0.204      44.6       2.                   C025700200031 
+ 175.        8.9       0.230      38.7       2.                   C025700200032 
+ 200.        9.0       0.248      36.3       2.                   C025700200033 
+ 200.        9.3       0.256      36.3       2.                   C025700200034 
+ 225.        9.3       0.258      36.0       2.                   C025700200035 
+ 250.        9.9       0.275      36.0       2.                   C025700200036 
+ 275.       10.4       0.289      36.0       2.                   C025700200037 
+ 300.       11.2       0.311      36.0       2.                   C025700200038 
+ 325.       11.3       0.314      36.0       2.                   C025700200039 
+ 340.       11.5       0.319      36.0       2.                   C025700200040 
+ 350.       11.3       0.311      36.0       1.                   C025700200041 
+ENDDATA             25          0                                 C025700200042 
+ENDSUBENT           41          0                                 C025700299999 
 ENDENTRY             2          0                                 C025799999999 

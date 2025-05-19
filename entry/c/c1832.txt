@@ -1,26 +1,29 @@
-ENTRY            C1832   20111206                             C112C183200000001 
-SUBENT        C1832001   20111206                             C112C183200100001 
-BIB                  7         13                                 C183200100002 
+ENTRY            C1832   20240505                             C235C183200000001 
+SUBENT        C1832001   20240505                             C235C183200100001 
+BIB                  7         16                                 C183200100002 
 TITLE      Characteristics of an intense neutron source based on  C183200100003 
            the d+Be Reaction                                      C183200100004 
 AUTHOR     (M.J.Saltmarsh,C.A.Ludemann,C.B.Fulmer,R.C.Styles)     C183200100005 
 INSTITUTE  (1USAORL)                                              C183200100006 
 REFERENCE  (J,NIM,145,81,1977)                                    C183200100007 
-FACILITY   (CYCLO,1USAORL) Experiment performed using deuteron    C183200100008 
-           beam from the Oak Ridge Isochronous Cyclotron (ORIC)   C183200100009 
-SAMPLE     Beryllium cylinder 38 mm in diameter and 38 mm long.   C183200100010 
-           A 12.7 mm diameter hole is bored along the axis of the C183200100011 
-           cylinder to within 6.3 mm of the end, thereby leaving  C183200100012 
-           just enough material to stop the 40MeV deuteron beam   C183200100013 
-HISTORY    (20110530C) Compiled by S.H.                           C183200100014 
-           (20111107U) OS. Minor corr. in sub.8                   C183200100015 
-ENDBIB              13          0                                 C183200100016 
-COMMON               2          3                                 C183200100017 
-EN         THICKNESS                                              C183200100018 
-MEV        G/CM-SQ                                                C183200100019 
-40.0       1.165                                                  C183200100020 
-ENDCOMMON            3          0                                 C183200100021 
-ENDSUBENT           20          0                                 C183200199999 
+           #doi:10.1016/0029-554X(77)90559-6                      C183200100008 
+FACILITY   (CYCLO,1USAORL) Experiment performed using deuteron    C183200100009 
+           beam from the Oak Ridge Isochronous Cyclotron (ORIC)   C183200100010 
+SAMPLE     Beryllium cylinder 38 mm in diameter and 38 mm long.   C183200100011 
+           A 12.7 mm diameter hole is bored along the axis of the C183200100012 
+           cylinder to within 6.3 mm of the end, thereby leaving  C183200100013 
+           just enough material to stop the 40MeV deuteron beam   C183200100014 
+HISTORY    (20110530C) Compiled by S.H.                           C183200100015 
+           (20111107U) OS. Minor corr. in sub.8                   C183200100016 
+           (20240218A) OS. Correction in subs.8,9                 C183200100017 
+           (20240505A) On. Major alteration in 009.               C183200100018 
+ENDBIB              16          0                                 C183200100019 
+COMMON               2          3                                 C183200100020 
+EN         THICKNESS                                              C183200100021 
+MEV        G/CM-SQ                                                C183200100022 
+40.0       1.165                                                  C183200100023 
+ENDCOMMON            3          0                                 C183200100024 
+ENDSUBENT           23          0                                 C183200199999 
 SUBENT        C1832002   20110530                             C108C183200200001 
 BIB                  5          9                                 C183200200002 
 REACTION   (4-BE-9(D,X)0-NN-1,,TTY/PY/DA/DE)                      C183200200003 
@@ -327,69 +330,72 @@ PRD/MUC/SR                                                        C183200700037
    0.08E+10                                                       C183200700059 
 ENDDATA             26          0                                 C183200700060 
 ENDSUBENT           59          0                                 C183200799999 
-SUBENT        C1832008   20111206                             C112C183200800001 
-BIB                  4          9                                 C183200800002 
-REACTION   (4-BE-9(D,X)0-NN-1,PAR,TTY/PY/DA) Average value from   C183200800003 
-            TOF and activation measurements                       C183200800004 
-STATUS     (TABLE) Data taken from tab.3 of the reference         C183200800005 
-           (DEP,C1832006)                                         C183200800006 
-           (DEP,C1832007)                                         C183200800007 
-ERR-ANALYS (ERR-1) Uncertainty at specific angle, determined from C183200800008 
-                   scatter of experimental data                   C183200800009 
-           (ERR-2) Overall uncertainty in normalization           C183200800010 
+SUBENT        C1832008   20240303                             C235C183200800001 
+BIB                  5         10                                 C183200800002 
+REACTION   (4-BE-9(D,X)0-NN-1,PAR,PY/DA,,TT/CH)                   C183200800003 
+ANALYSIS   Average value from TOF and activation measurements     C183200800004 
+ERR-ANALYS (ERR-1) Uncertainty at specific angle, determined from C183200800005 
+                   scatter of experimental data                   C183200800006 
+           (ERR-2) Overall uncertainty in normalization           C183200800007 
+STATUS     (TABLE,,M.J.Saltmarsh+,J,NIM,145,81,1977) Table 3      C183200800008 
+           (DEP,C1832006)                                         C183200800009 
+           (DEP,C1832007)                                         C183200800010 
 HISTORY    (20111107U) OS. Spelling corr.                         C183200800011 
-ENDBIB               9          0                                 C183200800012 
-COMMON               3          3                                 C183200800013 
-ANG        E-MIN      ERR-2                                       C183200800014 
-ADEG       MEV        PER-CENT                                    C183200800015 
-90.0       2.0        7.0                                         C183200800016 
-ENDCOMMON            3          0                                 C183200800017 
-DATA                 3         14                                 C183200800018 
-ANG        DATA       ERR-1                                       C183200800019 
-ADEG       PRD/MUC/SR PRD/MUC/SR                                  C183200800020 
-     0.0     36.00E+10   1.80E+10                                 C183200800021 
-     5.0     30.00E+10   1.50E+10                                 C183200800022 
-     7.0     26.60E+10   1.30E+10                                 C183200800023 
-    10.0     22.20E+10   1.10E+10                                 C183200800024 
-    15.0     15.40E+10   0.80E+10                                 C183200800025 
-    20.0     11.70E+10   0.60E+10                                 C183200800026 
-    30.0      8.10E+10   0.40E+10                                 C183200800027 
-    40.0      5.90E+10   0.30E+10                                 C183200800028 
-    45.0      5.05E+10   0.25E+10                                 C183200800029 
-    50.0      4.30E+10   0.22E+10                                 C183200800030 
-    60.0      3.14E+10   0.16E+10                                 C183200800031 
-    70.0      2.30E+10   0.12E+10                                 C183200800032 
-    80.0      1.67E+10   0.08E+10                                 C183200800033 
-    90.0      1.21E+10   0.06E+10                                 C183200800034 
-ENDDATA             16          0                                 C183200800035 
-ENDSUBENT           34          0                                 C183200899999 
-SUBENT        C1832009   20110601                             C108C183200900001 
-BIB                  5          9                                 C183200900002 
-REACTION   (3-LI-7(D,X)0-NN-1,PAR,TTY/PY/DA) Flight path 0.75 m   C183200900003 
-STATUS     (TABLE) Data taken from tab.5 of the reference         C183200900004 
-DETECTOR   (SCIN)NE213 liquid scintillator 37.3 mm in diameter    C183200900005 
-           by 34.1 mm long viewed by a 56AVP photomultiplier tube.C183200900006 
-METHOD     (TOF)                                                  C183200900007 
-ERR-ANALYS (ERR-1,4.0,6.0) Uncertainty in monitor statistics      C183200900008 
-           (ERR-2) Uncertainty in monitor calibration             C183200900009 
-           (ERR-3) Uncertainty in detector efficiency             C183200900010 
-           (ERR-T) Total uncertainty                              C183200900011 
-ENDBIB               9          0                                 C183200900012 
-COMMON               4          3                                 C183200900013 
-ANG        E-MIN      ERR-2      ERR-3                            C183200900014 
-ADEG       MEV        PER-CENT   PER-CENT                         C183200900015 
-90.0       2.0        3.0        15.0                             C183200900016 
-ENDCOMMON            3          0                                 C183200900017 
-DATA                 3          7                                 C183200900018 
-ANG        DATA       ERR-T                                       C183200900019 
-ADEG       PRT/MUC/SR PRD/MUC/SR                                  C183200900020 
-    0.0      40.90E+10   2.90E+10                                 C183200900021 
-    7.0      38.20E+10   2.00E+10                                 C183200900022 
-   15.0      13.00E+10   0.90E+10                                 C183200900023 
-   30.0       6.99E+10   0.50E+10                                 C183200900024 
-   45.0       4.15E+10   0.30E+10                                 C183200900025 
-   60.0       2.76E+10   0.19E+10                                 C183200900026 
-   90.0       1.59E+10   0.11E+10                                 C183200900027 
-ENDDATA              9          0                                 C183200900028 
-ENDSUBENT           27          0                                 C183200999999 
+           (20240218A) ANG deleted in COMMON, REACTION modified   C183200800012 
+ENDBIB              10          0                                 C183200800013 
+COMMON               2          3                                 C183200800014 
+E-MIN      ERR-2                                                  C183200800015 
+MEV        PER-CENT                                               C183200800016 
+2.0        7.0                                                    C183200800017 
+ENDCOMMON            3          0                                 C183200800018 
+DATA                 3         14                                 C183200800019 
+ANG        DATA       ERR-1                                       C183200800020 
+ADEG       PRD/MUC/SR PRD/MUC/SR                                  C183200800021 
+     0.0     36.00E+10   1.80E+10                                 C183200800022 
+     5.0     30.00E+10   1.50E+10                                 C183200800023 
+     7.0     26.60E+10   1.30E+10                                 C183200800024 
+    10.0     22.20E+10   1.10E+10                                 C183200800025 
+    15.0     15.40E+10   0.80E+10                                 C183200800026 
+    20.0     11.70E+10   0.60E+10                                 C183200800027 
+    30.0      8.10E+10   0.40E+10                                 C183200800028 
+    40.0      5.90E+10   0.30E+10                                 C183200800029 
+    45.0      5.05E+10   0.25E+10                                 C183200800030 
+    50.0      4.30E+10   0.22E+10                                 C183200800031 
+    60.0      3.14E+10   0.16E+10                                 C183200800032 
+    70.0      2.30E+10   0.12E+10                                 C183200800033 
+    80.0      1.67E+10   0.08E+10                                 C183200800034 
+    90.0      1.21E+10   0.06E+10                                 C183200800035 
+ENDDATA             16          0                                 C183200800036 
+ENDSUBENT           35          0                                 C183200899999 
+SUBENT        C1832009   20240505                             C235C183200900001 
+BIB                  6         11                                 C183200900002 
+REACTION   (3-LI-7(D,X)0-NN-1,PAR,PY/DA,,TT/CH)                   C183200900003 
+DETECTOR   (SCIN)NE213 liquid scintillator 37.3 mm in diameter    C183200900004 
+           by 34.1 mm long viewed by a 56AVP photomultiplier tube.C183200900005 
+METHOD     (TOF) Flight path 0.75 m                               C183200900006 
+ERR-ANALYS (ERR-1,4.0,6.0) Uncertainty in monitor statistics      C183200900007 
+           (ERR-2) Uncertainty in monitor calibration             C183200900008 
+           (ERR-3) Uncertainty in detector efficiency             C183200900009 
+           (ERR-T) Total uncertainty                              C183200900010 
+STATUS     (TABLE,,M.J.Saltmarsh+,J,NIM,145,81,1977) Table 5      C183200900011 
+HISTORY    (20240218A) ANG deleted in COMMON, REACTION modified   C183200900012 
+           (20240505A) On. DATA: PRT/MUC/SR -> PRD/MUC/SR         C183200900013 
+ENDBIB              11          0                                 C183200900014 
+COMMON               3          3                                 C183200900015 
+E-MIN      ERR-2      ERR-3                                       C183200900016 
+MEV        PER-CENT   PER-CENT                                    C183200900017 
+2.0        3.0        15.0                                        C183200900018 
+ENDCOMMON            3          0                                 C183200900019 
+DATA                 3          7                                 C183200900020 
+ANG        DATA       ERR-T                                       C183200900021 
+ADEG       PRD/MUC/SR PRD/MUC/SR                                  C183200900022 
+    0.0      40.90E+10   2.90E+10                                 C183200900023 
+    7.0      38.20E+10   2.00E+10                                 C183200900024 
+   15.0      13.00E+10   0.90E+10                                 C183200900025 
+   30.0       6.99E+10   0.50E+10                                 C183200900026 
+   45.0       4.15E+10   0.30E+10                                 C183200900027 
+   60.0       2.76E+10   0.19E+10                                 C183200900028 
+   90.0       1.59E+10   0.11E+10                                 C183200900029 
+ENDDATA              9          0                                 C183200900030 
+ENDSUBENT           29          0                                 C183200999999 
 ENDENTRY             9          0                                 C183299999999 
