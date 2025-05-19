@@ -1,6 +1,6 @@
-ENTRY            A0602   20231230                             A106A0602  0    1 
-SUBENT        A0602001   20231230                             A106A0602  1    1 
-BIB                 12         21                                 A0602  1    2 
+ENTRY            A0602   20240910                             A117A0602  0    1 
+SUBENT        A0602001   20240910                             A117A0602  1    1 
+BIB                 12         22                                 A0602  1    2 
 TITLE      Nuclear reaction cross-sections for 93 MeV 3-He-ions   A0602  1    3 
            on 59-Co                                               A0602  1    4 
 AUTHOR     (S.N.Kondratyev,Yu.N.Lobach,V.D.Sklyarenko)            A0602  1    5 
@@ -22,9 +22,10 @@ HISTORY    (19980706C) By F.C.                                    A0602  1   19
            (19990318A) DATE is corrected                          A0602  1   21 
            (20231230A) SD: Corrections in all Subents.            A0602  1   22 
            ERR-T -> DATA-ERR.                                     A0602  1   23 
-ENDBIB              21          0                                 A0602  1   24 
-NOCOMMON             0          0                                 A0602  1   25 
-ENDSUBENT           24          0                                 A0602  199999 
+           (20240910A) SD: Correction in Subent 005.              A0602  1   24 
+ENDBIB              22          0                                 A0602  1   25 
+NOCOMMON             0          0                                 A0602  1   26 
+ENDSUBENT           25          0                                 A0602  199999 
 SUBENT        A0602002   20231230                             A106A0602  2    1 
 BIB                  3          6                                 A0602  2    2 
 REACTION   (27-CO-59(HE3,X)28-NI-57,CUM,SIG)                      A0602  2    3 
@@ -98,30 +99,32 @@ MEV        MEV        MB         MB                               A0602  4   11
        17.0        2.1       72.0        6.5                      A0602  4   23 
 ENDDATA             14          0                                 A0602  4   24 
 ENDSUBENT           23          0                                 A0602  499999 
-SUBENT        A0602005   20231230                             A106A0602  5    1 
-BIB                  3          3                                 A0602  5    2 
-REACTION   (27-CO-59(HE3,A)27-CO-58-G,M+,SIG)                     A0602  5    3 
+SUBENT        A0602005   20240910                             A117A0602  5    1 
+BIB                  3          5                                 A0602  5    2 
+REACTION   (27-CO-59(HE3,A)27-CO-58,,SIG)                         A0602  5    3 
 DECAY-DATA (27-CO-58-G,70.62D,DG,810.8,0.995)                     A0602  5    4 
 HISTORY    (20231230U) SD: ERR-T -> DATA-ERR.                     A0602  5    5 
-ENDBIB               3          0                                 A0602  5    6 
-NOCOMMON             0          0                                 A0602  5    7 
-DATA                 4         12                                 A0602  5    8 
-EN         EN-ERR     DATA       DATA-ERR                         A0602  5    9 
-MEV        MEV        MB         MB                               A0602  5   10 
-       91.9        0.6       296.        21.                      A0602  5   11 
-       86.4        0.6       267.        19.                      A0602  5   12 
-       80.9        0.6       302.        22.                      A0602  5   13 
-       75.1        0.6       333.        24.                      A0602  5   14 
-       68.8        0.8       363.        26.                      A0602  5   15 
-       62.1        0.8       386.        28.                      A0602  5   16 
-       54.9        0.8       439.        31.                      A0602  5   17 
-       48.3        0.9       496.        36.                      A0602  5   18 
-       40.9        1.0       438.        31.                      A0602  5   19 
-       34.0        1.1       203.        15.                      A0602  5   20 
-       25.6        1.6       32.7        2.6                      A0602  5   21 
-       17.0        2.1       20.9        1.8                      A0602  5   22 
-ENDDATA             14          0                                 A0602  5   23 
-ENDSUBENT           22          0                                 A0602  599999 
+           (20240910A) SD: SF4=Co-58g -> Co-58; SF5=M+ deleted    A0602  5    6 
+           from REACTION code.                                    A0602  5    7 
+ENDBIB               5          0                                 A0602  5    8 
+NOCOMMON             0          0                                 A0602  5    9 
+DATA                 4         12                                 A0602  5   10 
+EN         EN-ERR     DATA       DATA-ERR                         A0602  5   11 
+MEV        MEV        MB         MB                               A0602  5   12 
+       91.9        0.6       296.        21.                      A0602  5   13 
+       86.4        0.6       267.        19.                      A0602  5   14 
+       80.9        0.6       302.        22.                      A0602  5   15 
+       75.1        0.6       333.        24.                      A0602  5   16 
+       68.8        0.8       363.        26.                      A0602  5   17 
+       62.1        0.8       386.        28.                      A0602  5   18 
+       54.9        0.8       439.        31.                      A0602  5   19 
+       48.3        0.9       496.        36.                      A0602  5   20 
+       40.9        1.0       438.        31.                      A0602  5   21 
+       34.0        1.1       203.        15.                      A0602  5   22 
+       25.6        1.6       32.7        2.6                      A0602  5   23 
+       17.0        2.1       20.9        1.8                      A0602  5   24 
+ENDDATA             14          0                                 A0602  5   25 
+ENDSUBENT           24          0                                 A0602  599999 
 SUBENT        A0602006   20231230                             A106A0602  6    1 
 BIB                  4          8                                 A0602  6    2 
 REACTION   (27-CO-59(HE3,X)27-CO-57,,SIG)                         A0602  6    3 
