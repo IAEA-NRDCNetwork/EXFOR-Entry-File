@@ -1,34 +1,35 @@
-ENTRY            13860   20220408                             149913860  0    1 
-SUBENT        13860001   20220408                             149913860  1    1 
-BIB                 12         21                                 13860  1    2 
-TITLE      Fast neutron cross sections and nuclear level density  13860  1    3 
-AUTHOR     (D.J.Hughes,R.C.Garth,J.S.Levin)                       13860  1    4 
-REFERENCE  (J,PR,91,1423,1953) Main reference.                    13860  1    5 
-           #doi:10.1103/PhysRev.91.1423                           13860  1    6 
-           (J,PR,87,(U5),222,1952) Meeting abstract.              13860  1    7 
-           #doi:10.1103/PhysRev.87.179                            13860  1    8 
-REL-REF    (O,11596001,D.J.Hughes+,J,PR,78,632,1950) Part of the  13860  1    9 
-           data listed in Table I of Phys.Rev.91,1423 are         13860  1   10 
-           compiled in entry 11596.                               13860  1   11 
-INSTITUTE  (1USABNL)                                              13860  1   12 
-FACILITY   (REAC,1USABNL)                                         13860  1   13 
-INC-SPECT  235U fission spectrum.                                 13860  1   14 
-METHOD     (ACTIV)                                                13860  1   15 
-DETECTOR   (GEMUC)                                                13860  1   16 
-ERR-ANALYS No information on uncertainties.                       13860  1   17 
-STATUS     (TABLE) Table I, page 427 of Phys.Rev.91,1423.         13860  1   18 
-HISTORY    (20021211C)                                            13860  1   19 
-           (20160315A) OS. Added REL-REF, deleted subentries      13860  1   20 
-            7,26-32,52,54-57,60,61 because of duplication         13860  1   21 
-            with entry 11596.                                     13860  1   22 
-           (20220408A) BP: Added doi, secondary reference.        13860  1   23 
-ENDBIB              21          0                                 13860  1   24 
-COMMON               1          3                                 13860  1   25 
-EN-DUMMY                                                          13860  1   26 
-MEV                                                               13860  1   27 
-         1.                                                       13860  1   28 
-ENDCOMMON            3          0                                 13860  1   29 
-ENDSUBENT           28          0                                 13860  199999 
+ENTRY            13860   20240403                             15111386000000001 
+SUBENT        13860001   20240403                             15111386000100001 
+BIB                 12         22                                 1386000100002 
+TITLE      Fast neutron cross sections and nuclear level density  1386000100003 
+AUTHOR     (D.J.Hughes,R.C.Garth,J.S.Levin)                       1386000100004 
+REFERENCE  (J,PR,91,1423,1953) Main reference.                    1386000100005 
+           #doi:10.1103/PhysRev.91.1423                           1386000100006 
+           (J,PR,87,(U5),222,1952) Meeting abstract.              1386000100007 
+           #doi:10.1103/PhysRev.87.179                            1386000100008 
+REL-REF    (O,11596001,D.J.Hughes+,J,PR,78,632,1950) Part of the  1386000100009 
+           data listed in Table I of Phys.Rev.91,1423 are         1386000100010 
+           compiled in entry 11596.                               1386000100011 
+INSTITUTE  (1USABNL)                                              1386000100012 
+FACILITY   (REAC,1USABNL)                                         1386000100013 
+INC-SPECT  235U fission spectrum.                                 1386000100014 
+METHOD     (ACTIV)                                                1386000100015 
+DETECTOR   (GEMUC)                                                1386000100016 
+ERR-ANALYS No information on uncertainties.                       1386000100017 
+STATUS     (TABLE,,D.J.Hughes+,J,PR,91,1423,1953) Table I         1386000100018 
+HISTORY    (20021211C)                                            1386000100019 
+           (20160315A) OS. Added REL-REF, deleted subentries      1386000100020 
+            7,26-32,52,54-57,60,61 because of duplication         1386000100021 
+            with entry 11596.                                     1386000100022 
+           (20220408A) BP: Added doi, secondary reference.        1386000100023 
+           (20240402A) OS. Isomer coding in sub.45 corrected      1386000100024 
+ENDBIB              22          0                                 1386000100025 
+COMMON               1          3                                 1386000100026 
+EN-DUMMY                                                          1386000100027 
+MEV                                                               1386000100028 
+         1.                                                       1386000100029 
+ENDCOMMON            3          0                                 1386000100030 
+ENDSUBENT           29          0                                 1386000199999 
 SUBENT        13860002   20021211                             00001386000200001 
 BIB                  2          2                                 1386000200002 
 REACTION   (11-NA-23(N,G)11-NA-24,,SIG,,FIS)                      1386000200003 
@@ -458,18 +459,20 @@ MB                                                                1386004400009
  57.                                                              1386004400010 
 ENDDATA              3          0                                 1386004400011 
 ENDSUBENT           10          0                                 1386004499999 
-SUBENT        13860045   20021211                             00001386004500001 
-BIB                  2          2                                 1386004500002 
-REACTION   (49-IN-115(N,G)49-IN-116-M,,SIG,,FIS)                  1386004500003 
-DECAY-DATA (49-IN-116-M,54.MIN)                                   1386004500004 
-ENDBIB               2          0                                 1386004500005 
-NOCOMMON             0          0                                 1386004500006 
-DATA                 1          1                                 1386004500007 
-DATA                                                              1386004500008 
-MB                                                                1386004500009 
-166.                                                              1386004500010 
-ENDDATA              3          0                                 1386004500011 
-ENDSUBENT           10          0                                 1386004599999 
+SUBENT        13860045   20240403                             15111386004500001 
+BIB                  3          4                                 1386004500002 
+REACTION   (49-IN-115(N,G)49-IN-116-M1+M2,,SIG,,FIS)              1386004500003 
+DECAY-DATA (49-IN-116-M1,54.MIN)                                  1386004500004 
+HISTORY    (20240402A) REACTION SF4: M -> M1+M2;                  1386004500005 
+            DECAY-DATA: M -> M1                                   1386004500006 
+ENDBIB               4          0                                 1386004500007 
+NOCOMMON             0          0                                 1386004500008 
+DATA                 1          1                                 1386004500009 
+DATA                                                              1386004500010 
+MB                                                                1386004500011 
+166.                                                              1386004500012 
+ENDDATA              3          0                                 1386004500013 
+ENDSUBENT           12          0                                 1386004599999 
 SUBENT        13860046   20021211                             00001386004600001 
 BIB                  2          2                                 1386004600002 
 REACTION   (50-SN-120(N,G)50-SN-121-G,,SIG,,FIS)                  1386004600003 

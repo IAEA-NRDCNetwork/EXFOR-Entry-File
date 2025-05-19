@@ -1,178 +1,181 @@
-ENTRY            14521   20210513                             148014521  0    1 
-SUBENT        14521001   20210513                             148014521  1    1 
-BIB                 14        165                                 14521  1    2 
-TITLE      The Baghdad atlas: A relational database of inelastic  14521  1    3 
-           neutron-scattering (n,n'gamma) data                    14521  1    4 
-AUTHOR     (A.M.Hurst,L.A.Bernstein,T.Kawano,A.M.Lewis,K.Song)    14521  1    5 
-REFERENCE  (J,NIM/A,995,165095,2021) Journal publication for data 14521  1    6 
-           re-analysis and database.                              14521  1    7 
-           (R,LBNL-1007259,2017) Re-analysis of                   14521  1    8 
-           Baghdad data. This report is relevant to all           14521  1    9 
-           subentries, as it presents a detailed description of   14521  1   10 
-           the methods by which the analysis to extract these     14521  1   11 
-           cross-sections was performed.                          14521  1   12 
-REL-REF    (N,,A.M.Demidov+,B,GAMMAATLAS,,,1978)=                 14521  1   13 
-           (N,,A.M.Demidov+,R,INDC(CCP)-120,1978)                 14521  1   14 
-            Original Gammaatlas                                   14521  1   15 
-INSTITUTE  (3IRQNRI,4RUSKUR)                                      14521  1   16 
-FACILITY   (REAC,3IRQNRI)  Reactor IRT-5000, in Baghdad.          14521  1   17 
-INC-SOURCE (REAC) A flux-average neutron energy of approximately  14521  1   18 
-           1.17 MeV.                                              14521  1   19 
-INC-SPECT  The data was taken in a broad, fast IRT-5000 reactor   14521  1   20 
-           spectrum that was filtered to remove thermal           14521  1   21 
-           contributions. The authors characterized the spectrum  14521  1   22 
-           as being monotonically decreasing with increasing      14521  1   23 
-           neutron energy, and the spectrum can be described      14521  1   24 
-           approximately by a flux distribution phi(En) ~= exp(-  14521  1   25 
-           0.7473 En) for neutron energies above 2 MeV, ranging   14521  1   26 
-           from 0.5 - 10 MeV, with a flux-average neutron energy  14521  1   27 
-           of approximately 1.17 MeV, as shown on page 14, figure 14521  1   28 
-           5 of this work [1978DE41].                             14521  1   29 
-DETECTOR   (GELI) Energy and efficiency calibrations of the 30    14521  1   30 
-           cm**3 Ge(Li) spectrometer were performed using a       14521  1   31 
-           variety of standard radioactive sources (75Se, 182Ta,  14521  1   32 
-           110Ag, 72Ga, 140La, 24Na, and 134Cs) and an additional 14521  1   33 
-           reaction source (14-SI-28(N,G)14-SI-29) for energies   14521  1   34 
-           below and above 3 MeV, respectively, using state-of-   14521  1   35 
-           the-art values for these sources as of 1978.           14521  1   36 
-           Corrections are also made for gamma-ray self absorption14521  1   37 
-           within the samples. This single detector at 90 degrees 14521  1   38 
-           was used for most experiments, with the measurements on14521  1   39 
-           chlorine (subentry 14521014), scandium (14521017),     14521  1   40 
-           bromine (14521031), lutetium (14521089), osmium        14521  1   41 
-            (14521097), iridium (14521098), and tellurium         14521  1   42 
-            (subentries 14521061 -- 14521065) instead using a     14521  1   43 
-           higher-resolution 40 cm**3 Ge(Li) spectrometer,        14521  1   44 
-           calibrated in the same fashion. The 30 cm**3 detector  14521  1   45 
-           resolution is quoted as initially being 3.8 keV at 1.2 14521  1   46 
-           MeV, degrading down to 8 keV over the course of        14521  1   47 
-           measurements due to radiation damage, and the 40 cm**3 14521  1   48 
-           detector resolution is quoted as 2 keV at 1.2 MeV.     14521  1   49 
-           Background spectra for both detectors were measured    14521  1   50 
-           using samples of graphite and beryllium, with the      14521  1   51 
-           energies and intensities of all background lines shown 14521  1   52 
-           on page 25, table 1 of this work [1978DE41]. There is  14521  1   53 
-           no indication in [1978DE41] that any angular           14521  1   54 
-           correlation corrections were applied to the gamma-ray  14521  1   55 
-           intensities.                                           14521  1   56 
-METHOD     (ACTIV,EXTB,GSPEC) Samples were irradiated using a Cd- 14521  1   57 
-           filtered reactor neutron spectrum from an IRT-5000     14521  1   58 
-           reactor based at the Al-Tuwaitha research facility     14521  1   59 
-           outside of Baghdad, Iraq in the 1970s, as described in 14521  1   60 
-           INC-SPECT. Gamma-ray intensities were measured using a 14521  1   61 
-           Ge(Li) detector, as described in DETECTOR, shielded    14521  1   62 
-           with iron (5 cm), paraffin with boron carbide (8 cm),  14521  1   63 
-           lead (10 cm), and 6Li (3 mm). Gamma rays passing to the14521  1   64 
-           detector from the target were filtered from fast       14521  1   65 
-           neutrons with a 6.8 g/cm**2 layer of lithium hydride   14521  1   66 
-            (LiH).                                                14521  1   67 
-MONITOR    (26-FE-56(N,INL)26-FE-56,PAR,SIG,G) All intensities    14521  1   68 
-           were measured relative to the intensity of the         14521  1   69 
-           846.8-keV 1st 2+ --> G.S. 0+ gamma-ray transition in   14521  1   70 
-           56Fe from the Fe-56(n,ng) reaction.                    14521  1   71 
-ANALYSIS   Using the gamma-ray intensity data (normalized to the  14521  1   72 
-           846.8-keV transition in 56Fe, as described in MONITOR),14521  1   73 
-           the partial gamma-ray production cross section is      14521  1   74 
-           extracted for each observed transition in the Atlas.   14521  1   75 
-           This normalization is performed in a two-step fashion, 14521  1   76 
-           where the gamma line with the most reliable intensity  14521  1   77 
-           measurement is selected for each sample. This reference14521  1   78 
-           line (identified in ANALYSIS for the subentry of each  14521  1   79 
-           sample) is in turn normalized to the 846.8-keV line in 14521  1   80 
-           56Fe (described in MONITOR) using data from Table 2,   14521  1   81 
-           p.25-27 in [1978DE41], where the relative intensity of 14521  1   82 
-           the 846.8-keV line in 56Fe is defined to be 100%. All  14521  1   83 
-           other lines belonging to each sample nucleus are in    14521  1   84 
-           turn normalized to their corresponding reference gamma 14521  1   85 
-           line. The magnitude of each reference line is itself   14521  1   86 
-           normalized to the flux-weighted                        14521  1   87 
-            (26-FE-56(N,INL)26-FE-56) cross section for the first 14521  1   88 
-           2+ state in 56Fe, corresponding to 978.965 +/- 13.430  14521  1   89 
-           mb. The flux-weighted cross section was determined by  14521  1   90 
-           convolving the filtered IRT-5000 reactor spectrum (as  14521  1   91 
-           shown on page 14, figure 5 of this work [1978DE41])    14521  1   92 
-           with the ENDF/B-VIII.0 value for the                   14521  1   93 
-            (26-FE-56(N,INL)26-FE-56) cross section to the first  14521  1   94 
-           2+ state. This cross section includes direct feeding of14521  1   95 
-           the first 2+ state in 56Fe (MT=51), as well as feeding 14521  1   96 
-           via the discrete excited states of 56Fe                14521  1   97 
-            (MT=52-56,58,60,63,68,70,72,73,78,82) and a 58%       14521  1   98 
-           feeding contribution from the continuum (MT=91). The   14521  1   99 
-           continuum contribution is an estimate based on the     14521  1  100 
-           observed feeding from discrete states relative to the  14521  1  101 
-           cross-section summation from direct and discrete-level 14521  1  102 
-           feeding contributions. Excitation energies (E-EXC),    14521  1  103 
-           gamma-ray energies (E-GAMMA), and branching ratios (BR)14521  1  104 
-           are taken from, or deduced using information in, ENSDF.14521  1  105 
-           These are summarized in a table below. A small         14521  1  106 
-           correction (98.85(3)% branching ratio) corresponding to14521  1  107 
-           the beta minus decay of 56Mn formed in the             14521  1  108 
-            (26-FE-56(N,P)25-MN-56) reaction (0.91613(28) mb) has 14521  1  109 
-           been accounted for in the determination of the flux-   14521  1  110 
-           weighted cross section. No neutron-gamma angular       14521  1  111 
-           correlation corrections appear to have been performed  14521  1  112 
-           by the authors of [1978DE41].                          14521  1  113 
-           ----------------------------------------------------   14521  1  114 
-           File   E-EXC (keV)   E-GAMMA (keV)      BR             14521  1  115 
-           ----------------------------------------------------   14521  1  116 
-           MT51    846.8          846.8           1.0             14521  1  117 
-           MT52    2085.1         1238.3          1.00(2)         14521  1  118 
-           MT53    2657.6         1810.8          0.970(5)        14521  1  119 
-           MT54    2941.5         2094.9          1.0             14521  1  120 
-           MT55    2960.0         2113.1          0.978(27)       14521  1  121 
-           MT56    3120.1         2273.2          0.954(9)        14521  1  122 
-           MT58    3370.0         2523.1          0.855(12)       14521  1  123 
-           MT60    3445.3         2598.5          0.785(3)        14521  1  124 
-           MT63    3605.7         2759.0          0.583(38)       14521  1  125 
-           MT68    3830.0         2983.0          0.518(66)       14521  1  126 
-           MT70    4048.9         3202.0          0.808(4)        14521  1  127 
-           MT72    4100.4         3253.5          0.622(4)        14521  1  128 
-           MT73    4119.9         3273.1          0.187(1)        14521  1  129 
-           MT78    4394.9         3548.1          0.907(10)       14521  1  130 
-           MT82    4509.6         3662.7          0.314(65)       14521  1  131 
-           MT91      -              -             0.58(29)        14521  1  132 
-           ----------------------------------------------------   14521  1  133 
-ERR-ANALYS (ERR-T) The total uncertainties of the measurements    14521  1  134 
-           were calculated according to Gaussian error            14521  1  135 
-           propagation.                                           14521  1  136 
-           (MONIT-ERR) The total uncertainty in the               14521  1  137 
-            (26-FE-56(N,INL)26-FE-56) cross section to the first  14521  1  138 
-           2+ state in 56Fe (MT=51). Includes Gaussian propagated 14521  1  139 
-           contributions due to branching-ratio uncertainties     14521  1  140 
-           corresponding to the feeding of the 1st 2+ state in    14521  1  141 
-           56Fe from discrete excited states                      14521  1  142 
-            (MT=52-56,58,60,63,68,70,72,73,78,82), and an         14521  1  143 
-           estimated 50% uncertainty in the assumed branching     14521  1  144 
-           ratio for the continuum (MT=91) feeding contribution,  14521  1  145 
-           as described in ANALYSIS. An additional correction is  14521  1  146 
-           made for the population of the 846.8 keV transition    14521  1  147 
-           from the decay of 56Mn produced in the 56Fe(n,p)       14521  1  148 
-           reaction channel.                                      14521  1  149 
-           (ERR-1) Relative gamma-ray transition intensity.       14521  1  150 
-           Uncertainty includes statistical error (with 95%       14521  1  151 
-           probability) folded with uncertainties due to the      14521  1  152 
-           spectrometer efficiency, as described in DETECTOR, and 14521  1  153 
-           a gamma-ray self-absorption term.                      14521  1  154 
-           (ERR-2) Normalization factor for determination of      14521  1  155 
-           absolute partial gamma-ray cross sections. Uncertainty 14521  1  156 
-           includes a statistical error (with 95% probability)    14521  1  157 
-           folded with uncertainties due to efficiency            14521  1  158 
-           determination of spectrometer, as described in         14521  1  159 
-           DETECTOR, and gamma-ray self-absorption.               14521  1  160 
-           (E-ERR) Total uncertainty in gamma-ray energy,         14521  1  161 
-           including statistics errors (with 95% probability),    14521  1  162 
-           errors due to calibration, and non-linearity of the    14521  1  163 
-           spectroscopic tract for Egamma.                        14521  1  164 
-HISTORY    (20190306C) A.S.Voyles, L.A.Bernstein, A.M.Hurst,      14521  1  165 
-           B.Pritychenko                                          14521  1  166 
-           (20210303A) BP: Added NIM/A article on database.       14521  1  167 
-ENDBIB             165          0                                 14521  1  168 
-COMMON               4          3                                 14521  1  169 
-EN-DUMMY   E-NRM      MONIT      MONIT-ERR                        14521  1  170 
-MEV        KEV        MB         MB                               14521  1  171 
-       1.17      846.8    978.955     13.430                      14521  1  172 
-ENDCOMMON            3          0                                 14521  1  173 
-ENDSUBENT          172          0                                 14521  199999 
+ENTRY            14521   20240403                             15111452100000001 
+SUBENT        14521001   20240403                             15111452100100001 
+BIB                 14        168                                 1452100100002 
+TITLE      The Baghdad atlas: A relational database of inelastic  1452100100003 
+           neutron-scattering (n,n'gamma) data                    1452100100004 
+AUTHOR     (A.M.Hurst,L.A.Bernstein,T.Kawano,A.M.Lewis,K.Song)    1452100100005 
+REFERENCE  (J,NIM/A,995,165095,2021) Journal publication for data 1452100100006 
+           re-analysis and database.                              1452100100007 
+           #doi:10.1016/j.nima.2021.165095                        1452100100008 
+           (R,LBNL-1007259,2017) Re-analysis of                   1452100100009 
+           Baghdad data. This report is relevant to all           1452100100010 
+           subentries, as it presents a detailed description of   1452100100011 
+           the methods by which the analysis to extract these     1452100100012 
+           cross-sections was performed.                          1452100100013 
+REL-REF    (N,,A.M.Demidov+,B,GAMMAATLAS,,,1978)=                 1452100100014 
+           (N,,A.M.Demidov+,R,INDC(CCP)-120,1978)                 1452100100015 
+            Original Gammaatlas                                   1452100100016 
+INSTITUTE  (1USAUCX,1USABRK,1USALAS)                              1452100100017 
+           (1USAUSA) Naval Nuclear Laboratory, Schenectady, USA   1452100100018 
+FACILITY   (REAC,3IRQNRI)  Reactor IRT-5000, in Baghdad.          1452100100019 
+INC-SOURCE (REAC) A flux-average neutron energy of approximately  1452100100020 
+           1.17 MeV.                                              1452100100021 
+INC-SPECT  The data was taken in a broad, fast IRT-5000 reactor   1452100100022 
+           spectrum that was filtered to remove thermal           1452100100023 
+           contributions. The authors characterized the spectrum  1452100100024 
+           as being monotonically decreasing with increasing      1452100100025 
+           neutron energy, and the spectrum can be described      1452100100026 
+           approximately by a flux distribution phi(En) ~= exp(-  1452100100027 
+           0.7473 En) for neutron energies above 2 MeV, ranging   1452100100028 
+           from 0.5 - 10 MeV, with a flux-average neutron energy  1452100100029 
+           of approximately 1.17 MeV, as shown on page 14, figure 1452100100030 
+           5 of this work [1978DE41].                             1452100100031 
+DETECTOR   (GELI) Energy and efficiency calibrations of the 30    1452100100032 
+           cm**3 Ge(Li) spectrometer were performed using a       1452100100033 
+           variety of standard radioactive sources (75Se, 182Ta,  1452100100034 
+           110Ag, 72Ga, 140La, 24Na, and 134Cs) and an additional 1452100100035 
+           reaction source (14-SI-28(N,G)14-SI-29) for energies   1452100100036 
+           below and above 3 MeV, respectively, using state-of-   1452100100037 
+           the-art values for these sources as of 1978.           1452100100038 
+           Corrections are also made for gamma-ray self absorption1452100100039 
+           within the samples. This single detector at 90 degrees 1452100100040 
+           was used for most experiments, with the measurements on1452100100041 
+           chlorine (subentry 14521014), scandium (14521017),     1452100100042 
+           bromine (14521031), lutetium (14521089), osmium        1452100100043 
+            (14521097), iridium (14521098), and tellurium         1452100100044 
+            (subentries 14521061 -- 14521065) instead using a     1452100100045 
+           higher-resolution 40 cm**3 Ge(Li) spectrometer,        1452100100046 
+           calibrated in the same fashion. The 30 cm**3 detector  1452100100047 
+           resolution is quoted as initially being 3.8 keV at 1.2 1452100100048 
+           MeV, degrading down to 8 keV over the course of        1452100100049 
+           measurements due to radiation damage, and the 40 cm**3 1452100100050 
+           detector resolution is quoted as 2 keV at 1.2 MeV.     1452100100051 
+           Background spectra for both detectors were measured    1452100100052 
+           using samples of graphite and beryllium, with the      1452100100053 
+           energies and intensities of all background lines shown 1452100100054 
+           on page 25, table 1 of this work [1978DE41]. There is  1452100100055 
+           no indication in [1978DE41] that any angular           1452100100056 
+           correlation corrections were applied to the gamma-ray  1452100100057 
+           intensities.                                           1452100100058 
+METHOD     (ACTIV,EXTB,GSPEC) Samples were irradiated using a Cd- 1452100100059 
+           filtered reactor neutron spectrum from an IRT-5000     1452100100060 
+           reactor based at the Al-Tuwaitha research facility     1452100100061 
+           outside of Baghdad, Iraq in the 1970s, as described in 1452100100062 
+           INC-SPECT. Gamma-ray intensities were measured using a 1452100100063 
+           Ge(Li) detector, as described in DETECTOR, shielded    1452100100064 
+           with iron (5 cm), paraffin with boron carbide (8 cm),  1452100100065 
+           lead (10 cm), and 6Li (3 mm). Gamma rays passing to the1452100100066 
+           detector from the target were filtered from fast       1452100100067 
+           neutrons with a 6.8 g/cm**2 layer of lithium hydride   1452100100068 
+            (LiH).                                                1452100100069 
+MONITOR    (26-FE-56(N,INL)26-FE-56,PAR,SIG,G) All intensities    1452100100070 
+           were measured relative to the intensity of the         1452100100071 
+           846.8-keV 1st 2+ --> G.S. 0+ gamma-ray transition in   1452100100072 
+           56Fe from the Fe-56(n,ng) reaction.                    1452100100073 
+ANALYSIS   Using the gamma-ray intensity data (normalized to the  1452100100074 
+           846.8-keV transition in 56Fe, as described in MONITOR),1452100100075 
+           the partial gamma-ray production cross section is      1452100100076 
+           extracted for each observed transition in the Atlas.   1452100100077 
+           This normalization is performed in a two-step fashion, 1452100100078 
+           where the gamma line with the most reliable intensity  1452100100079 
+           measurement is selected for each sample. This reference1452100100080 
+           line (identified in ANALYSIS for the subentry of each  1452100100081 
+           sample) is in turn normalized to the 846.8-keV line in 1452100100082 
+           56Fe (described in MONITOR) using data from Table 2,   1452100100083 
+           p.25-27 in [1978DE41], where the relative intensity of 1452100100084 
+           the 846.8-keV line in 56Fe is defined to be 100%. All  1452100100085 
+           other lines belonging to each sample nucleus are in    1452100100086 
+           turn normalized to their corresponding reference gamma 1452100100087 
+           line. The magnitude of each reference line is itself   1452100100088 
+           normalized to the flux-weighted                        1452100100089 
+            (26-FE-56(N,INL)26-FE-56) cross section for the first 1452100100090 
+           2+ state in 56Fe, corresponding to 978.965 +/- 13.430  1452100100091 
+           mb. The flux-weighted cross section was determined by  1452100100092 
+           convolving the filtered IRT-5000 reactor spectrum (as  1452100100093 
+           shown on page 14, figure 5 of this work [1978DE41])    1452100100094 
+           with the ENDF/B-VIII.0 value for the                   1452100100095 
+            (26-FE-56(N,INL)26-FE-56) cross section to the first  1452100100096 
+           2+ state. This cross section includes direct feeding of1452100100097 
+           the first 2+ state in 56Fe (MT=51), as well as feeding 1452100100098 
+           via the discrete excited states of 56Fe                1452100100099 
+            (MT=52-56,58,60,63,68,70,72,73,78,82) and a 58%       1452100100100 
+           feeding contribution from the continuum (MT=91). The   1452100100101 
+           continuum contribution is an estimate based on the     1452100100102 
+           observed feeding from discrete states relative to the  1452100100103 
+           cross-section summation from direct and discrete-level 1452100100104 
+           feeding contributions. Excitation energies (E-EXC),    1452100100105 
+           gamma-ray energies (E-GAMMA), and branching ratios (BR)1452100100106 
+           are taken from, or deduced using information in, ENSDF.1452100100107 
+           These are summarized in a table below. A small         1452100100108 
+           correction (98.85(3)% branching ratio) corresponding to1452100100109 
+           the beta minus decay of 56Mn formed in the             1452100100110 
+            (26-FE-56(N,P)25-MN-56) reaction (0.91613(28) mb) has 1452100100111 
+           been accounted for in the determination of the flux-   1452100100112 
+           weighted cross section. No neutron-gamma angular       1452100100113 
+           correlation corrections appear to have been performed  1452100100114 
+           by the authors of [1978DE41].                          1452100100115 
+           ----------------------------------------------------   1452100100116 
+           File   E-EXC (keV)   E-GAMMA (keV)      BR             1452100100117 
+           ----------------------------------------------------   1452100100118 
+           MT51    846.8          846.8           1.0             1452100100119 
+           MT52    2085.1         1238.3          1.00(2)         1452100100120 
+           MT53    2657.6         1810.8          0.970(5)        1452100100121 
+           MT54    2941.5         2094.9          1.0             1452100100122 
+           MT55    2960.0         2113.1          0.978(27)       1452100100123 
+           MT56    3120.1         2273.2          0.954(9)        1452100100124 
+           MT58    3370.0         2523.1          0.855(12)       1452100100125 
+           MT60    3445.3         2598.5          0.785(3)        1452100100126 
+           MT63    3605.7         2759.0          0.583(38)       1452100100127 
+           MT68    3830.0         2983.0          0.518(66)       1452100100128 
+           MT70    4048.9         3202.0          0.808(4)        1452100100129 
+           MT72    4100.4         3253.5          0.622(4)        1452100100130 
+           MT73    4119.9         3273.1          0.187(1)        1452100100131 
+           MT78    4394.9         3548.1          0.907(10)       1452100100132 
+           MT82    4509.6         3662.7          0.314(65)       1452100100133 
+           MT91      -              -             0.58(29)        1452100100134 
+           ----------------------------------------------------   1452100100135 
+ERR-ANALYS (ERR-T) The total uncertainties of the measurements    1452100100136 
+           were calculated according to Gaussian error            1452100100137 
+           propagation.                                           1452100100138 
+           (MONIT-ERR) The total uncertainty in the               1452100100139 
+            (26-FE-56(N,INL)26-FE-56) cross section to the first  1452100100140 
+           2+ state in 56Fe (MT=51). Includes Gaussian propagated 1452100100141 
+           contributions due to branching-ratio uncertainties     1452100100142 
+           corresponding to the feeding of the 1st 2+ state in    1452100100143 
+           56Fe from discrete excited states                      1452100100144 
+            (MT=52-56,58,60,63,68,70,72,73,78,82), and an         1452100100145 
+           estimated 50% uncertainty in the assumed branching     1452100100146 
+           ratio for the continuum (MT=91) feeding contribution,  1452100100147 
+           as described in ANALYSIS. An additional correction is  1452100100148 
+           made for the population of the 846.8 keV transition    1452100100149 
+           from the decay of 56Mn produced in the 56Fe(n,p)       1452100100150 
+           reaction channel.                                      1452100100151 
+           (ERR-1) Relative gamma-ray transition intensity.       1452100100152 
+           Uncertainty includes statistical error (with 95%       1452100100153 
+           probability) folded with uncertainties due to the      1452100100154 
+           spectrometer efficiency, as described in DETECTOR, and 1452100100155 
+           a gamma-ray self-absorption term.                      1452100100156 
+           (ERR-2) Normalization factor for determination of      1452100100157 
+           absolute partial gamma-ray cross sections. Uncertainty 1452100100158 
+           includes a statistical error (with 95% probability)    1452100100159 
+           folded with uncertainties due to efficiency            1452100100160 
+           determination of spectrometer, as described in         1452100100161 
+           DETECTOR, and gamma-ray self-absorption.               1452100100162 
+           (E-ERR) Total uncertainty in gamma-ray energy,         1452100100163 
+           including statistics errors (with 95% probability),    1452100100164 
+           errors due to calibration, and non-linearity of the    1452100100165 
+           spectroscopic tract for Egamma.                        1452100100166 
+HISTORY    (20190306C) A.S.Voyles, L.A.Bernstein, A.M.Hurst,      1452100100167 
+           B.Pritychenko                                          1452100100168 
+           (20210303A) BP: Added NIM/A article on database.       1452100100169 
+           (20240329A) OS. INSTITUTE corrected                    1452100100170 
+ENDBIB             168          0                                 1452100100171 
+COMMON               4          3                                 1452100100172 
+EN-DUMMY   E-NRM      MONIT      MONIT-ERR                        1452100100173 
+MEV        KEV        MB         MB                               1452100100174 
+       1.17      846.8    978.955     13.430                      1452100100175 
+ENDCOMMON            3          0                                 1452100100176 
+ENDSUBENT          175          0                                 1452100199999 
 SUBENT        14521002   20190306                             148014521  2    1 
 BIB                  4         14                                 14521  2    2 
 REACTION   (3-LI-0(N,INL)3-LI-0,PAR,SIG,G,SPA,DEROT) Partial      14521  2    3 
