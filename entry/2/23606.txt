@@ -1,0 +1,124 @@
+ENTRY            23606   20230628                             23182360600000001 
+SUBENT        23606001   20230628                             23182360600100001 
+BIB                 16         64                                 2360600100002 
+TITLE      241Am Neutron Capture Cross Section in the keV region  2360600100003 
+           using Si and Fe-filtered neutron beams                 2360600100004 
+AUTHOR     (G.Rovira,A.Kimura,S.Nakamura,S.Endo,O.Iwamoto,        2360600100005 
+           N.Iwamoto,T.Katabuchi,Y.Kodama,H.Nakano)               2360600100006 
+INSTITUTE  (2JPNJAE,2JPNTIT)                                      2360600100007 
+REFERENCE  (J,NST,60,489,2023)                                    2360600100008 
+           #doi:10.1080/00223131.2022.2116496                     2360600100009 
+REL-REF    (I,,K.Kino+,J,NIM/A,736,66,2014)                       2360600100010 
+           Energy resolution of the pulsed neutron.               2360600100011 
+           (I,,G.Rovira,J,NIM/A,1003,165318,2021)                 2360600100012 
+           Experimental setup and filtered neutron spectrum.      2360600100013 
+FACILITY   (SYNCY,2JPNJAE)ANNRI(BL04) beam line of MLF at J-PARC  2360600100014 
+INC-SOURCE (SPALL) Spallation reaction in a mercury target        2360600100015 
+           irradiated with 3-GeV protons. The proton beam was     2360600100016 
+           supplied at a repetition rate of 25 Hz and in the      2360600100017 
+           "double-bunch mode", in which the pulsed protons       2360600100018 
+           consist of two bunches, each with a width of 100 ns,   2360600100019 
+           at intervals of 600 ns. To improve neutron energy      2360600100020 
+           resolution, Fe or Si neutron filters with thickness    2360600100021 
+           of 20 cm were installed.                               2360600100022 
+INC-SPECT  (EN-RSL) One standard deviation.                       2360600100023 
+METHOD     (FNB,TOF) Neutron TOF experiment with a neutron        2360600100024 
+           filtering system.                                      2360600100025 
+DETECTOR   (NAICR) 330 mm (diam.) and 203 mm in thickness, 90     2360600100026 
+           deg with respect to the neutron beam line.             2360600100027 
+           DAQ: CAEN V1720 Digitizer (12bit, 250MHz)              2360600100028 
+SAMPLE     A pellet of 7.47(10) mg (957 MBq) of Am-241 oxide      2360600100029 
+           enclosed in an Al casing with 46.0 mg of Y2O3 used as  2360600100030 
+           binder was used. The pellet was shaped like a disk     2360600100031 
+           with 10 mm in diameter and 0.5 mm in thickness. The    2360600100032 
+           sample was encapsulated in an Al container with 0.1-   2360600100033 
+           mm-thick walls and an outer diameter of 22.0(1) mm.    2360600100034 
+           A dummy sample, an Al container with the identical     2360600100035 
+           dimensions to the Am-241 sample, including only Y2O3,  2360600100036 
+           was also used for background measurements.             2360600100037 
+           A carbon sample with a diameter of 10 mm and a         2360600100038 
+           thickness of 0.5 mm was used as neutron scatterer      2360600100039 
+           to subtract background.                                2360600100040 
+           A gold sample with a 10 mm diameter, 0.1 mm thickness  2360600100041 
+           was used for normalization.                            2360600100042 
+           A boron sample with a 90.4% B-10 enrichment and a mass 2360600100043 
+           86.1 mg was used to deduce a neutron spectrum.         2360600100044 
+ANALYSIS   The pulse height weighting technique (PHWT) was        2360600100045 
+           applied to derive the neutron capture yield.           2360600100046 
+           Measurements with the carbon sample, "Dummy sample",   2360600100047 
+           and "Blank (no sample) " were used for background      2360600100048 
+           estimation. A measurement with the gold sample was     2360600100049 
+           used for the normalization. The neutron capture cross  2360600100050 
+           section of Am-241 was determined relative to the       2360600100051 
+           capture cross section of Au-197 at each energy point.  2360600100052 
+CORRECTION Dead time correction was applied with the extended     2360600100053 
+           dead-time model. Correction factors for self           2360600100054 
+           shielding and multiple scattering were deduced using   2360600100055 
+           the PHITS. Contributions of discriminated gamma-rays   2360600100056 
+           to the capture yields were estimated from theoretical  2360600100057 
+           calculation using the nuclear reaction model code      2360600100058 
+           CCONE and detector response functions. Correction      2360600100059 
+           factors for fission events were deduced using the      2360600100060 
+           capture and fission cross-sections of Am-241 in        2360600100061 
+           JENDL-5 and the gamma-ray multiplicities for the       2360600100062 
+           capture and fission reactions.                         2360600100063 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         2360600100064 
+MONIT-REF  (,,3,JENDL-5,,2021)                                    2360600100065 
+HISTORY    (20231110C) Compiled by A. Kimura.                     2360600100066 
+ENDBIB              64          0                                 2360600100067 
+NOCOMMON             0          0                                 2360600100068 
+ENDSUBENT           67          0                                 2360600199999 
+SUBENT        23606002   20230628                             23182360600200001 
+BIB                  3         29                                 2360600200002 
+REACTION   (95-AM-241(N,G)95-AM-242,,SIG)                         2360600200003 
+ERR-ANALYS (ERR-T) Total uncertainty.                             2360600200004 
+           (ERR-1) Statistical uncertainty for the Am-241 sample  2360600200005 
+           measurement.                                           2360600200006 
+           (ERR-2) Statistical uncertainty for the Au sample      2360600200007 
+           measurement.                                           2360600200008 
+           (ERR-SYS) Total systematic uncertainty. Including      2360600200009 
+           "MONITOR-ERR" and "ERR-3" to "ERR-9".                  2360600200010 
+           (MONIT-ERR) Systematic uncertainty related to          2360600200011 
+           standard 197Au cross section.                          2360600200012 
+           (ERR-3) Systematic uncertainty related to the dead     2360600200013 
+           time correction.                                       2360600200014 
+           (ERR-4) Systematic uncertainty related to the self-    2360600200015 
+           shielding, multiple scattering, and fission            2360600200016 
+           corrections.                                           2360600200017 
+           (ERR-5) Systematic uncertainty related to the          2360600200018 
+           corrections for gamma-rays below threshold.            2360600200019 
+           (ERR-6) Systematic uncertainty related to the          2360600200020 
+           weighting function for the Am-241 sample measurement.  2360600200021 
+           (ERR-7) Systematic uncertainty related to the          2360600200022 
+           weighting function for the Au sample measurement.      2360600200023 
+           (ERR-8) Systematic uncertainty related to the area     2360600200024 
+           density of the Am-241 sample.                          2360600200025 
+           (ERR-9) Systematic uncertainty related to the area     2360600200026 
+           density of the Au sample.                              2360600200027 
+STATUS     (TABLE,,G.Rovira+,J,NST,60,489,2023) Tables 4,5, and 6 2360600200028 
+           (SUPPL,23746003) Neutron spectrum at 23.5 keV          2360600200029 
+           (SUPPL,23746004) Neutron spectrum at 51.5 keV          2360600200030 
+           (SUPPL,23746005) Neutron spectrum at 127.7 keV         2360600200031 
+ENDBIB              29          0                                 2360600200032 
+COMMON               9          6                                 2360600200033 
+ERR-SYS    MONIT-ERR  ERR-3      ERR-4      ERR-5      ERR-6      2360600200034 
+ERR-7      ERR-8      ERR-9                                       2360600200035 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   2360600200036 
+PER-CENT   PER-CENT   PER-CENT                                    2360600200037 
+        3.2        2.0        0.0        0.3        0.4        1.02360600200038 
+        1.0        1.7        1.0                                 2360600200039 
+ENDCOMMON            6          0                                 2360600200040 
+DATA                 8          3                                 2360600200041 
+EN         -EN-RSL    +EN-RSL    DATA       ERR-T      ERR-1      2360600200042 
+ERR-2      MONIT                                                  2360600200043 
+KEV        KEV        KEV        B          B          PER-CENT   2360600200044 
+PER-CENT   B                                                      2360600200045 
+       23.5        2.1        0.9       2.72       0.29        9.72360600200046 
+        3.3      0.644                                            2360600200047 
+       51.5        8.6        9.7       2.14       0.26       11.22360600200048 
+        3.3      0.428                                            2360600200049 
+      127.7       15.7        8.8       1.32       0.10        6.82360600200050 
+        2.0     0.2875                                            2360600200051 
+ENDDATA             10          0                                 2360600200052 
+ENDSUBENT           51          0                                 2360600299999 
+ENDENTRY             2          0                                 2360699999999 
