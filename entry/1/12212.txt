@@ -1,46 +1,63 @@
-ENTRY            12212   19860811                             00001221200000001 
-SUBENT        12212001   19860811                             00001221200100001 
-BIB                  9         12                                 1221200100002 
-INSTITUTE  (1USAANL)                                              1221200100003 
-REFERENCE  (J,PR,120,1313,60)                                     1221200100004 
-AUTHOR     (R.VANDENBOSH,J.R.HUIZENGA)                            1221200100005 
-TITLE      ISOMERIC CROSS-SECTION RATIOS FOR REACTIONS PRODUCING  1221200100006 
-           THE ISOMERIC PAIR HG197,197M.                          1221200100007 
-SAMPLE     MERCURIC SULFIDE                                       1221200100008 
-METHOD     (ACTIV) ACTIVATION                                     1221200100009 
-DETECTOR   (NAICR) NAI CRYSTAL                                    1221200100010 
-STATUS     (SCSRS)                                                1221200100011 
-HISTORY    (760803T) TRANSLATED FROM SCISRS                       1221200100012 
-           (821012A) CONVERTED TO REACTION FORMALISM              1221200100013 
-           (860811A) REACTION UPDATE.                             1221200100014 
-ENDBIB              12          0                                 1221200100015 
-NOCOMMON             0          0                                 1221200100016 
-ENDSUBENT           15          0                                 1221200199999 
-SUBENT        12212002   19860811                             00001221200200001 
-BIB                  3          3                                 1221200200002 
-REACTION   (80-HG-198(N,2N)80-HG-197-M/G,,SIG/RAT)                1221200200003 
-INC-SOURCE (D-T) T(D,N) SOURCE                                    1221200200004 
-HISTORY    (841018U) BIB UPDATE.                                  1221200200005 
-ENDBIB               3          0                                 1221200200006 
-NOCOMMON             0          0                                 1221200200007 
-DATA                 3          1                                 1221200200008 
-EN         DATA       DATA-ERR                                    1221200200009 
-MEV        NO-DIM     NO-DIM                                      1221200200010 
- 1.41   +01 8.00   -01 1.00   -01                                 1221200200011 
-ENDDATA              3          0                                 1221200200012 
-ENDSUBENT           11          0                                 1221200299999 
-SUBENT        12212003   19860811                             00001221200300001 
-BIB                  3          4                                 1221200300002 
-REACTION   (80-HG-196(N,G)80-HG-197-M/G,,SIG/RAT)                 1221200300003 
-INC-SOURCE (THCOL) THERMAL COLUMN OF CP-5 REACTOR                 1221200300004 
-HISTORY    (841018A) BIB UPDATE. ENERGY ADDED.                    1221200300005 
-           (851107A) DELETED REDUNDANT DATA FIELD.                1221200300006 
-ENDBIB               4          0                                 1221200300007 
-NOCOMMON             0          0                                 1221200300008 
-DATA                 3          1                                 1221200300009 
-EN-DUMMY   DATA       DATA-ERR                                    1221200300010 
-EV         NO-DIM     NO-DIM                                      1221200300011 
- 0.0253     0.044      0.008                                      1221200300012 
-ENDDATA              3          0                                 1221200300013 
-ENDSUBENT           12          0                                 1221200399999 
+ENTRY            12212   20230123                             150612212000    1 
+SUBENT        12212001   20230123                             150612212001    1 
+BIB                 11         21                                 12212001    2 
+TITLE      Isomeric Cross-Section Ratios for Reactions Producing  12212001    3 
+           the Isomeric Pair Hg197,197m                           12212001    4 
+AUTHOR     (R.Vandenbosch,J.R.Huizenga)                           12212001    5 
+REFERENCE  (J,PR,120,1313,1960)                                   12212001    6 
+           #doi:10.1103/PhysRev.120.1313                          12212001    7 
+REL-REF    (O,C1996001,R.Vandenbosch+,J,PR,120,1313,1960)         12212001    8 
+           Deuteron data.                                         12212001    9 
+INSTITUTE  (1USAANL)                                              12212001   10 
+DETECTOR   (NAICR) A 3x3 sodium iodide (Tl activated) crystal     12212001   11 
+           connected with a multichannel pulse-height analyzer.   12212001   12 
+SAMPLE     HgS, mercuric sulfide.                                 12212001   13 
+METHOD     (ACTIV)                                                12212001   14 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12212001   15 
+DECAY-DATA (80-HG-197-G,65.HR,EC)                                 12212001   16 
+           (80-HG-197-M,24.0HR,EC)                                12212001   17 
+HISTORY    (19760803T) Translated from SCISRS.                    12212001   18 
+           (19821012A) Converted to reaction formalism.           12212001   19 
+           (19860811A) Reaction update.                           12212001   20 
+           (20230123A) BP: Updated to new date formats, lower     12212001   21 
+           case. Corrections according last EXFOR rules and       12212001   22 
+           Dict. Added ERR-ANALYS, DECAY-DATA and doi.            12212001   23 
+ENDBIB              21          0                                 12212001   24 
+NOCOMMON             0          0                                 12212001   25 
+ENDSUBENT           24          0                                 1221200199999 
+SUBENT        12212002   20230123                             150612212002    1 
+BIB                  5          7                                 12212002    2 
+REACTION   (80-HG-198(N,2N)80-HG-197-M/G,,SIG/RAT)                12212002    3 
+FACILITY   (CYCLO,1USAANL) The Argonne 60-in. Cyclotron.          12212002    4 
+INC-SOURCE (D-T) T(d,n) source                                    12212002    5 
+STATUS     (TABLE,,R.Vandenbosch+,J,PR,120,1313,1960)             12212002    6 
+            Table V, page 1315 of J,PR,120,1313,1960.             12212002    7 
+HISTORY    (19841018U) BIB update.                                12212002    8 
+           (20230123A) BP: Added STATUS, FACILITY.                12212002    9 
+ENDBIB               7          0                                 12212002   10 
+NOCOMMON             0          0                                 12212002   11 
+DATA                 3          1                                 12212002   12 
+EN         DATA       DATA-ERR                                    12212002   13 
+MEV        NO-DIM     NO-DIM                                      12212002   14 
+   1.41E+01   8.00E-01   1.00E-01                                 12212002   15 
+ENDDATA              3          0                                 12212002   16 
+ENDSUBENT           15          0                                 1221200299999 
+SUBENT        12212003   20230123                             150612212003    1 
+BIB                  5          8                                 12212003    2 
+REACTION   (80-HG-196(N,G)80-HG-197-M/G,,SIG/RAT)                 12212003    3 
+FACILITY   (REAC,1USAANL)                                         12212003    4 
+INC-SOURCE (THCOL) Thermal column of CP-5 reactor.                12212003    5 
+STATUS     (TABLE,,R.Vandenbosch+,J,PR,120,1313,1960)             12212003    6 
+            Table V, page 1315 of J,PR,120,1313,1960.             12212003    7 
+HISTORY    (19841018A) BIB update. Energy added.                  12212003    8 
+           (19851107A) Deleted redundant data field.              12212003    9 
+           (20230123A) BP: Added STATUS, FACILITY.                12212003   10 
+ENDBIB               8          0                                 12212003   11 
+NOCOMMON             0          0                                 12212003   12 
+DATA                 3          1                                 12212003   13 
+EN-DUMMY   DATA       DATA-ERR                                    12212003   14 
+EV         NO-DIM     NO-DIM                                      12212003   15 
+     0.0253      0.044      0.008                                 12212003   16 
+ENDDATA              3          0                                 12212003   17 
+ENDSUBENT           16          0                                 1221200399999 
 ENDENTRY             3          0                                 1221299999999 
