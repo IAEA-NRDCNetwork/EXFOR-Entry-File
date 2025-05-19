@@ -1,29 +1,56 @@
-ENTRY            12394   19820519                             00001239400000001 
-SUBENT        12394001   19820519                             00001239400100001 
-BIB                  6          9                                 1239400100002 
-INSTITUTE  (1USAHAN)                                              1239400100003 
-REFERENCE  (R,HW-47012,50,56)                                     1239400100004 
-           (J,BAP,1,249,5606)                                     1239400100005 
-AUTHOR     (W.J.FRIESEN,B.R.LEONARD JR,E.J.SEPPI)                 1239400100006 
-TITLE      COMPARISON OF THE U235 FISSION CROSS SECTION AND AU197 1239400100007 
-           CAPTURE CROSS SECTION.                                 1239400100008 
-STATUS     (SCSRS)                                                1239400100009 
-HISTORY    (760804T) TRANSLATED FROM SCISRS                       1239400100010 
-           (820519A) CONVERTED TO REACTION FORMALISM              1239400100011 
-ENDBIB               9          0                                 1239400100012 
-NOCOMMON             0          0                                 1239400100013 
-ENDSUBENT           12          0                                 1239400199999 
-SUBENT        12394002   19820519                             00001239400200001 
-BIB                  3          3                                 1239400200002 
-REACTION   (92-U-235(N,F),,SIG)                                   1239400200003 
-FACILITY   (SPECC) CRYSTAL SPECTROMETER                           1239400200004 
-MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         1239400200005 
-ENDBIB               3          0                                 1239400200006 
-NOCOMMON             0          0                                 1239400200007 
-DATA                 5          1                                 1239400200008 
-EN         DATA       DATA-ERR   EN-NRM     MONIT                 1239400200009 
-MEV        B          B          EV         B                     1239400200010 
- 2.53   -08 5.52   +02 6.     +00 0.1        50.9                 1239400200011 
-ENDDATA              3          0                                 1239400200012 
-ENDSUBENT           11          0                                 1239400299999 
+ENTRY            12394   20190806                             145612394  0    1 
+SUBENT        12394001   20190806                             145612394  1    1 
+BIB                  9         32                                 12394  1    2 
+TITLE      Comparison of the U235 fission cross section and Au197 12394  1    3 
+           capture cross section.                                 12394  1    4 
+AUTHOR     (W.J.Friesen,B.R.Leonard Jr,E.J.Seppi)                 12394  1    5 
+REFERENCE  (R,HW-47012,50,1956)                                   12394  1    6 
+           (J,BAP,1,249(C15),1956)                                12394  1    7 
+INSTITUTE  (1USAHAN) Hanford Atomic Products Operation, Richland, 12394  1    8 
+           Washington. The Hanford site                           12394  1    9 
+           https://en.Wikipedia.org/wiki/Hanford Site is currently12394  1   10 
+            operated by Pacific Northwest National Laboratory.    12394  1   11 
+FACILITY   (SPECC,1USAHAN)                                        12394  1   12 
+DETECTOR   (PROPC)                                                12394  1   13 
+METHOD     (BGCT) A gold foil was irradiated in the 0.10 eV       12394  1   14 
+           neutron beam directly behind the 235U foil whose       12394  1   15 
+           fission counting rate was observed. The absolute       12394  1   16 
+           activity of the gold foil was determined by            12394  1   17 
+           comparison beta counting in a proportional counter     12394  1   18 
+           with an identical gold foil which was irradiated in a  12394  1   19 
+           thermal neutron beam and whose absolute activity was   12394  1   20 
+           determined by beta-gamma coincidence counting. The     12394  1   21 
+           235U fission cross section at 0.0253 eV is obtained    12394  1   22 
+           from the previously determined shape of the fission    12394  1   23 
+           cross section and the assumed 197Au capture cross      12394  1   24 
+           section.                                               12394  1   25 
+ERR-ANALYS (ERR-T) Include statistical uncertainty, gold          12394  1   26 
+           cross section uncertainty and the weight of the        12394  1   27 
+           fission foil uncertainty.                              12394  1   28 
+           (ERR-S) Statistical analysis uncertainty.              12394  1   29 
+HISTORY    (19760804T) Translated from SCISRS.                    12394  1   30 
+           (19820519A) Converted to reaction formalism.           12394  1   31 
+           (20190806A) BP: Updated to new date formats,lower      12394  1   32 
+           case. corrections according last EXFOR rules and       12394  1   33 
+           Dict. Added uncertainties and BIB details.             12394  1   34 
+ENDBIB              32          0                                 12394  1   35 
+COMMON               1          3                                 12394  1   36 
+ERR-S                                                             12394  1   37 
+PER-CENT                                                          12394  1   38 
+        0.7                                                       12394  1   39 
+ENDCOMMON            3          0                                 12394  1   40 
+ENDSUBENT           39          0                                 12394  199999 
+SUBENT        12394002   20190806                             145612394  2    1 
+BIB                  3          3                                 12394  2    2 
+REACTION   (92-U-235(N,F),,SIG)                                   12394  2    3 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         12394  2    4 
+STATUS     (TABLE) Authors data.                                  12394  2    5 
+ENDBIB               3          0                                 12394  2    6 
+NOCOMMON             0          0                                 12394  2    7 
+DATA                 5          1                                 12394  2    8 
+EN         DATA       ERR-T      EN-NRM     MONIT                 12394  2    9 
+MEV        B          B          EV         B                     12394  2   10 
+   2.53E-08   5.52E+02         6.        0.1       50.9           12394  2   11 
+ENDDATA              3          0                                 12394  2   12 
+ENDSUBENT           11          0                                 12394  299999 
 ENDENTRY             2          0                                 1239499999999 
