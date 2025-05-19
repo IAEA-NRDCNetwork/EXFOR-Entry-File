@@ -1,0 +1,261 @@
+ENTRY            G0066   20201225                             G046G006600000001 
+SUBENT        G0066001   20201225                             G046G006600100001 
+BIB                  8         14                                 G006600100002 
+TITLE      Photofission of 238U with neutron-capture gamma rays   G006600100003 
+AUTHOR     (S.Kahane, A.Wolf)                                     G006600100004 
+INSTITUTE  (3ISLNEG)                                              G006600100005 
+REFERENCE  (J,PR/C,32,1944,1985)                                  G006600100006 
+           (C,79GRENOB,,315,1979)                                 G006600100007 
+            135Xe yield =0.069+/-0.005                            G006600100008 
+           (C,78BNL,,811,1978)                                    G006600100009 
+            134I fractional yields at Eg=7.8, 8.8 and 9.0 MeV     G006600100010 
+REL-REF    (N,,A.Wolf,C,78BNL,,808,1978)                          G006600100011 
+            Gamma(n)/Gamma(f)=3.0+/-0.3 at Eg=7.9 MeV.            G006600100012 
+FACILITY   (REAC,3ISLNEG) Israel Research Reactor-2 (IRR-2)       G006600100013 
+ADD-RES    Gamma(n)/Gamma(f)=                                     G006600100014 
+            3.0+/-0.3 at 7.8 MeV, 3.4+/-0.3 at 9.0 MeV            G006600100015 
+HISTORY    (20201225C) On                                         G006600100016 
+ENDBIB              14          0                                 G006600100017 
+NOCOMMON             0          0                                 G006600100018 
+ENDSUBENT           17          0                                 G006600199999 
+SUBENT        G0066002   20201225                             G046G006600200001 
+BIB                  7         13                                 G006600200002 
+REACTION   (92-U-238(G,F),,DA,FF,LEG/RS)                          G006600200003 
+INC-SOURCE (MPH=(26-FE-0(N,G)))                                   G006600200004 
+            7.279 MeV+7.632 MeV+7.646 MeV+9.298 MeV               G006600200005 
+SAMPLE     238U film (1.25 cm diam., 394 ug/cm2) evaporated on a  G006600200006 
+            glass backing                                         G006600200007 
+DETECTOR   (SOLST) 400 mm2 area and 60 um depletion layer, 4.8 cm G006600200008 
+            from 238U target                                      G006600200009 
+CORRECTION Corrected for                                          G006600200010 
+            - solid angle attenuation                             G006600200011 
+            - finite dimensions of detector and source            G006600200012 
+           by a Monte-Carlo program                               G006600200013 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty G006600200014 
+STATUS     (TABLE) Text (p.1945) of Phys.Rev.C32(1985)1944        G006600200015 
+ENDBIB              13          0                                 G006600200016 
+NOCOMMON             0          0                                 G006600200017 
+DATA                 4          1                                 G006600200018 
+EN-APRX    NUMBER     DATA       DATA-ERR                         G006600200019 
+MEV        NO-DIM     NO-DIM     NO-DIM                           G006600200020 
+ 7.8        2.        -0.237      0.028                           G006600200021 
+ENDDATA              3          0                                 G006600200022 
+ENDSUBENT           21          0                                 G006600299999 
+SUBENT        G0066003   20201225                             G046G006600300001 
+BIB                  9         11                                 G006600300002 
+REACTION   (92-U-238(G,F)54-XE-135,CUM,FY)                        G006600300003 
+DECAY-DATA (54-XE-135-G,,DG,249.9)                                G006600300004 
+INC-SOURCE (MPH=(26-FE-0(N,G)))                                   G006600300005 
+            7.279 MeV+7.632 MeV+7.646 MeV+9.298 MeV               G006600300006 
+SAMPLE     238U (1.25 cm diam., 0.24 g/cm2) enclosed in a glass   G006600300007 
+METHOD     (ACTIV) Irradiated for 47.9 hr                         G006600300008 
+DETECTOR   (GELI) 40 cm3                                          G006600300009 
+CORRECTION Corrected for gamma attenuation (g=0.845)              G006600300010 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty G006600300011 
+STATUS     (TABLE) Text (p.1945) of Phys.Rev.C32(1985)1944        G006600300012 
+           (DEP,G0066002) Second order Legendre coefficient       G006600300013 
+ENDBIB              11          0                                 G006600300014 
+NOCOMMON             0          0                                 G006600300015 
+DATA                 3          1                                 G006600300016 
+EN-APRX    DATA       DATA-ERR                                    G006600300017 
+MEV        PRD/FIS    PRD/FIS                                     G006600300018 
+ 7.8        0.0690     0.0047                                     G006600300019 
+ENDDATA              3          0                                 G006600300020 
+ENDSUBENT           19          0                                 G006600399999 
+SUBENT        G0066004   20201225                             G046G006600400001 
+BIB                 10         50                                 G006600400002 
+REACTION   (92-U-238(G,F)ELEM/MASS,CUM,FY)                        G006600400003 
+MONITOR    (92-U-238(G,F)54-XE-135,CUM,FY)                        G006600400004 
+DECAY-MON  (54-XE-135-G,32699.SEC,DG,249.9,0.90)                  G006600400005 
+INC-SOURCE (MPH=(26-FE-0(N,G)))                                   G006600400006 
+            7.279 MeV+7.632 MeV+7.646 MeV+9.298 MeV               G006600400007 
+SAMPLE     U3O8 powder encapsulated in a polyethylene             G006600400008 
+            container (~1 mm-thick wall, purified for Th and      G006600400009 
+            other U decay products before irradiation)            G006600400010 
+METHOD     (ACTIV) Irradiated for around 15 to 20 hrs             G006600400011 
+DETECTOR   (GELI) 55 cm3                                          G006600400012 
+DECAY-DATA ((1.)52-TE-132,279720.SEC,DG,228.2,0.822)              G006600400013 
+           ((2.)54-XE-138,850.SEC,DG,258.4,0.315)                 G006600400014 
+           ((3.)58-CE-143,121320.SEC,DG,293.3,0.434)              G006600400015 
+           ((4.)36-KR-85-M,16128.SEC,DG,304.7,0.146)              G006600400016 
+           ((5.)43-TC-101,852.SEC,DG,306.9,0.88)                  G006600400017 
+           ((6.)44-RU-105,15984.SEC,DG,316.4,0.111)               G006600400018 
+           ((7.)58-CE-146,852.SEC,DG,316.8,0.525)                 G006600400019 
+           ((8.)45-RH-105-G,127296.SEC,DG,318.9,0.192)            G006600400020 
+           ((9.)43-TC-104,1080.SEC,DG,357.9,0.89)                 G006600400021 
+           ((10.)36-KR-87,4560.SEC,DG,402.6,0.495)                G006600400022 
+           ((11.)59-PR-146,1440.SEC,DG,453.9,0.48)                G006600400023 
+           ((12.)55-CS-138-G,1932.SEC,DG,462.8,0.307)             G006600400024 
+           ((13.)44-RU-105,15984.SEC,DG,469.4,0.18)               G006600400025 
+           ((14.)53-I-133-G,74880.SEC,DG,529.9,0.873)             G006600400026 
+           ((15.)53-I-135,23976.SEC,DG,546.5,0.083)               G006600400027 
+           ((16.)39-Y-91-M,2982.6SEC,DG,555.6,0.951)              G006600400028 
+           ((17.)52-TE-134,2508.SEC,DG,565.9,0.188)               G006600400029 
+           ((18.)47-AG-112,11304.SEC,DG,617.4,0.42)               G006600400030 
+           ((19.)57-LA-142,5544.SEC,DG,641.3,0.525)               G006600400031 
+           ((20.)52-TE-133-M,3324.SEC,DG,647.7,0.221)             G006600400032 
+           ((21.)38-SR-91,34128.SEC,DG,652.9,0.114)               G006600400033 
+           ((22.)41-NB-97-G,4326.SEC,DG,657.9,0.983)              G006600400034 
+           ((23.)53-I-132-G,8568.SEC,DG,667.8,0.987)              G006600400035 
+           ((24.)44-RU-105,15984.SEC,DG,676.4,0.155)              G006600400036 
+           ((25.)44-RU-105,15984.SEC,DG,724.5,0.48)               G006600400037 
+           ((26.)40-ZR-97,61200.SEC,DG,743.4,0.979)               G006600400038 
+           ((27.)38-SR-91,34128.SEC,DG,749.7,0.244)               G006600400039 
+           ((28.)52-TE-134,2508.SEC,DG,767.6,0.306)               G006600400040 
+           ((29.)52-TE-131-M,108000.SEC,DG,773.7,0.38)            G006600400041 
+           ((30.)51-SB-129-G,15552.SEC,DG,812.8,0.45)             G006600400042 
+           ((31.)53-I-134-G,3156.SEC,DG,847.0,0.954)              G006600400043 
+           ((32.)53-I-134-G,3156.SEC,DG,884.3,0.653)              G006600400044 
+           ((33.)52-TE-133-M,3324.SEC,DG,912.7,0.628)             G006600400045 
+           ((34.)39-Y-92,12744.SEC,DG,934.5,0.138)                G006600400046 
+           ((35.)38-SR-91,34128.SEC,DG,1024.3,0.335)              G006600400047 
+           ((36.)37-RB-89,912.SEC,DG,1031.9,0.58)                 G006600400048 
+           ((37.)53-I-135,23796.SEC,DG,1038.8,0.078)              G006600400049 
+           ((38.)53-I-135,23796.SEC,DG,1131.0,0.228)              G006600400050 
+ERR-ANALYS (DATA-ERR) Quadrature sum of all uncertainties         G006600400051 
+STATUS     (TABLE) Table II in Phys.Rev.C.32(1985)1944            G006600400052 
+ENDBIB              50          0                                 G006600400053 
+COMMON               5          3                                 G006600400054 
+EN-APRX    ELEM-NRM   MASS-NRM   MONIT      MONIT-ERR             G006600400055 
+MEV        NO-DIM     NO-DIM     PC/FIS     PC/FIS                G006600400056 
+ 7.8        54.        135.       6.90       0.47                 G006600400057 
+ENDCOMMON            3          0                                 G006600400058 
+DATA                 6         38                                 G006600400059 
+ELEMENT    MASS       ISOMER     DATA       DATA-ERR   DECAY-FLAG G006600400060 
+NO-DIM     NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM     G006600400061 
+ 36.         85.       1.         0.70       0.26        4.       G006600400062 
+ 36.         87.                  1.82       0.21       10.       G006600400063 
+ 37.         89.                  2.51       0.40       36.       G006600400064 
+ 38.         91.                  3.50       0.46       21.       G006600400065 
+ 38.         91.                  4.04       0.46       27.       G006600400066 
+ 38.         91.                  3.89       0.44       35.       G006600400067 
+ 39.         91.       1.         3.84       0.44       16.       G006600400068 
+ 39.         92.                  4.16       0.21       34.       G006600400069 
+ 40.         97.                  5.89       0.66       26.       G006600400070 
+ 41.         97.                  5.25       0.55       22.       G006600400071 
+ 43.        101.                  6.98       0.82        5.       G006600400072 
+ 43.        104.                  4.13       0.50        9.       G006600400073 
+ 44.        105.                  2.95       0.44        6.       G006600400074 
+ 44.        105.                  3.07       0.39       13.       G006600400075 
+ 44.        105.                  3.03       0.63       24.       G006600400076 
+ 44.        105.                  2.77       0.35       25.       G006600400077 
+ 45.        105.                  2.85       0.38        8.       G006600400078 
+ 47.        112.                  0.18       0.05       18.       G006600400079 
+ 51.        129.       0.         0.54       0.10       30.       G006600400080 
+ 52.        131.       1.         3.12       0.40       29.       G006600400081 
+ 52.        132.                  2.43       0.50        1.       G006600400082 
+ 52.        133.       1.         2.52       0.43       20.       G006600400083 
+ 52.        133.       1.         2.18       0.34       33.       G006600400084 
+ 52.        134.                  6.36       1.02       17.       G006600400085 
+ 52.        134.                  6.13       0.75       28.       G006600400086 
+ 53.        132.                  3.74       0.46       23.       G006600400087 
+ 53.        133.                  6.29       0.65       14.       G006600400088 
+ 53.        134.                  6.31       0.89       31.       G006600400089 
+ 53.        134.                  6.27       0.99       32.       G006600400090 
+ 53.        135.                  5.77       0.58       15.       G006600400091 
+ 53.        135.                  6.31       0.81       37.       G006600400092 
+ 53.        135.                  5.64       0.63       38.       G006600400093 
+ 54.        138.                  5.38       0.90        2.       G006600400094 
+ 55.        138.                  6.10       0.71       12.       G006600400095 
+ 57.        142.                  3.69       0.43       19.       G006600400096 
+ 58.        143.                  5.38       0.62        3.       G006600400097 
+ 58.        146.                  3.24       0.62        7.       G006600400098 
+ 59.        146.                  3.24       0.44       11.       G006600400099 
+ENDDATA             40          0                                 G006600400100 
+ENDSUBENT           99          0                                 G006600499999 
+SUBENT        G0066005   20201225                             G046G006600500001 
+BIB                  5          6                                 G006600500002 
+REACTION   (92-U-238(G,F)MASS,CHN,FY)                             G006600500003 
+ANALYSIS   (CHGDS) Crouch's charge distribution used              G006600500004 
+REL-REF    (R,,E.A.C.Crouch,J,AND,19,417,1977)                    G006600500005 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty G006600500006 
+STATUS     (TABLE) Table III in Phys.Rev.C.32(1985)1944           G006600500007 
+           (DEP,G0066002) cumulative yields                       G006600500008 
+ENDBIB               6          0                                 G006600500009 
+COMMON               1          3                                 G006600500010 
+EN-APRX                                                           G006600500011 
+MEV                                                               G006600500012 
+ 7.8                                                              G006600500013 
+ENDCOMMON            3          0                                 G006600500014 
+DATA                 3         20                                 G006600500015 
+MASS       DATA       DATA-ERR                                    G006600500016 
+NO-DIM     PC/FIS     PC/FIS                                      G006600500017 
+  85.       0.70       0.26                                       G006600500018 
+  87.       1.82       0.21                                       G006600500019 
+  89.       2.51       0.40                                       G006600500020 
+  91.       3.84       0.31                                       G006600500021 
+  92.       4.16       0.21                                       G006600500022 
+  97.       5.55       0.42                                       G006600500023 
+ 101.       6.98       0.82                                       G006600500024 
+ 104.       4.13       0.50                                       G006600500025 
+ 105.       2.91       0.22                                       G006600500026 
+ 112.       0.18       0.05                                       G006600500027 
+ 129.       0.54       0.10                                       G006600500028 
+ 131.       3.12       0.40                                       G006600500029 
+ 132.       3.74       0.46                                       G006600500030 
+ 133.       6.29       0.65                                       G006600500031 
+ 134.       6.25       0.44                                       G006600500032 
+ 135.       6.90       0.47                                       G006600500033 
+ 138.       5.86       0.56                                       G006600500034 
+ 142.       3.69       0.43                                       G006600500035 
+ 143.       5.38       0.62                                       G006600500036 
+ 146.       3.24       0.36                                       G006600500037 
+ENDDATA             22          0                                 G006600500038 
+ENDSUBENT           37          0                                 G006600599999 
+SUBENT        G0066006   20201225                             G046G006600600001 
+BIB                  3          5                                 G006600600002 
+REACTION  1(92-U-238(G,F),SEC,AP,LF)                              G006600600003 
+          2(92-U-238(G,F),SEC,AP,HF)                              G006600600004 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty G006600600005 
+STATUS     (TABLE) Text (p.1949) of Phys.Rev.C.32(1985)1944       G006600600006 
+           (DEP,G0066003) chain yield                             G006600600007 
+ENDBIB               5          0                                 G006600600008 
+NOCOMMON             0          0                                 G006600600009 
+DATA                 5          1                                 G006600600010 
+EN-APRX    DATA      1DATA-ERR  1DATA      2DATA-ERR  2           G006600600011 
+MEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM                G006600600012 
+ 7.8        96.8       0.2        136.6      0.2                  G006600600013 
+ENDDATA              3          0                                 G006600600014 
+ENDSUBENT           13          0                                 G006600699999 
+SUBENT        G0066007   20201225                             G046G006600700001 
+BIB                  4          6                                 G006600700002 
+REACTION   (92-U-238(G,F)ELEM/MASS,CUM,FY,,FRC)                   G006600700003 
+INC-SOURCE (MPH=(26-FE-0(N,G))) Eg=7.8 MeV                        G006600700004 
+           (MPH=(24-CR-0(N,G))) Eg=8.8 MeV                        G006600700005 
+           (MPH=(28-NI-0(N,G))) Eg=9.0 MeV                        G006600700006 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty G006600700007 
+STATUS     (TABLE) Table V in Phys.Rev.C.32(1985)1944             G006600700008 
+ENDBIB               6          0                                 G006600700009 
+NOCOMMON             0          0                                 G006600700010 
+DATA                 5          8                                 G006600700011 
+ELEMENT    MASS       EN-APRX    DATA       DATA-ERR              G006600700012 
+NO-DIM     NO-DIM     MEV        NO-DIM     NO-DIM                G006600700013 
+ 38.         92.       7.8        0.60       0.18                 G006600700014 
+ 38.         92.       8.8        0.73       0.12                 G006600700015 
+ 38.         92.       9.0        0.76       0.08                 G006600700016 
+ 52.        134.       7.8        0.83       0.03                 G006600700017 
+ 52.        134.       8.8        0.80       0.02                 G006600700018 
+ 52.        134.       9.0        0.78       0.04                 G006600700019 
+ 53.        135.       7.8        0.96       0.08                 G006600700020 
+ 53.        135.       9.0        1.00       0.04                 G006600700021 
+ENDDATA             10          0                                 G006600700022 
+ENDSUBENT           21          0                                 G006600799999 
+SUBENT        G0066008   20201225                             G046G006600800001 
+BIB                  4          6                                 G006600800002 
+REACTION   (92-U-238(G,F)53-I-134,IND,FY,,FRC)                    G006600800003 
+INC-SOURCE (MPH=(26-FE-0(N,G))) Eg=7.8 MeV                        G006600800004 
+           (MPH=(24-CR-0(N,G))) Eg=8.8 MeV                        G006600800005 
+           (MPH=(28-NI-0(N,G))) Eg=9.0 MeV                        G006600800006 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty G006600800007 
+STATUS     (TABLE) Table 1 of C,78BNL,p.811 (1978)                G006600800008 
+ENDBIB               6          0                                 G006600800009 
+NOCOMMON             0          0                                 G006600800010 
+DATA                 3          3                                 G006600800011 
+EN-APRX    DATA       DATA-ERR                                    G006600800012 
+MEV        NO-DIM     NO-DIM                                      G006600800013 
+ 7.8        0.19       0.02                                       G006600800014 
+ 8.8        0.23       0.02                                       G006600800015 
+ 9.0        0.22       0.03                                       G006600800016 
+ENDDATA              5          0                                 G006600800017 
+ENDSUBENT           16          0                                 G006600899999 
+ENDENTRY             8          0                                 G006699999999 
