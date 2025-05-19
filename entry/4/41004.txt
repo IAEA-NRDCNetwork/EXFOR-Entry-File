@@ -1,23 +1,23 @@
-ENTRY            41004   20210319                             419541004  0    1 
-SUBENT        41004001   20210319                             419541004  1    1 
-BIB                 12         24                                 41004  1    2 
+ENTRY            41004   20221018                             420941004  0    1 
+SUBENT        41004001   20221018                             420941004  1    1 
+BIB                 12         26                                 41004  1    2 
 TITLE       Thermal neutron capture cross-section for             41004  1    3 
             Eu-152-M isomer ( 9.3 hr )                            41004  1    4 
 AUTHOR     (I.A.Kondurov,E.M.Korotkikh,G.I.Shulyak)               41004  1    5 
-            No Engl.translation in INDC(CCP)-301.                 41004  1    6 
-INSTITUTE  (4RUSLIN)                                              41004  1    7 
-REFERENCE  (C,87KIEV,2,201,1987)                                  41004  1    8 
+REFERENCE  (C,87KIEV,2,201,1987)                                  41004  1    6 
+            No Engl.translation in INDC(CCP)-301.                 41004  1    7 
+INSTITUTE  (4RUSLIN)                                              41004  1    8 
 FACILITY   (REAC,4RUSLIN)  Reactor WWR-M                          41004  1    9 
 MONITOR     Neutron flux was determined with 10% accuracy by      41004  1   10 
            monitors, irradiated together with samples.            41004  1   11 
 INC-SPECT  1.1E+14 n/(cm2*sec) for 2hr irradiation,               41004  1   12 
            0.55E+14 n/(cm3*sec) for 40 hr irradiation,            41004  1   13 
             reduced to 2200 m/sec neutrons.                       41004  1   14 
-METHOD     (ACTIV)  2 hr and 40 hr irradiation times,             41004  1   15 
+METHOD     (BURN)   2 hr and 40 hr irradiation times,             41004  1   15 
                     cooling time 3 days.                          41004  1   16 
 DETECTOR   (SOLST) Silicon-lithium detector Si(Li)                41004  1   17 
-REL-REF    (R,,S.F.Mudhabghab+,B,NEUT.CS 1A,,,1981)               41004  1   18 
-            Capture cross-section for E-151 and Eu-152-g.         41004  1   19 
+REL-REF    (R,,S.F.Mughabghab+,B,NEUT.CS 1A,,,1981)               41004  1   18 
+            Capture cross-section for Eu-151 and Eu-152-g.        41004  1   19 
            (R,,C.M.Lederer+,B,LEDERER-7,,,1978)                   41004  1   20 
             Half-lives for ground and metastable states of Eu-152.41004  1   21 
 ERR-ANALYS (DATA-ERR)  Error is not specified                     41004  1   22 
@@ -25,26 +25,33 @@ HISTORY    (19890919C) Compiled at the centre - CJD               41004  1   23
            (19901017U) ANALYSIS is explained IN SAN 002           41004  1   24 
            (20120319A) Subent 002 was corrected.                  41004  1   25 
            BIB information was added.                             41004  1   26 
-ENDBIB              24          0                                 41004  1   27 
-NOCOMMON             0          0                                 41004  1   28 
-ENDSUBENT           27          0                                 41004  199999 
-SUBENT        41004002   20210319                             419541004  2    1 
-BIB                  6          9                                 41004  2    2 
+           (20221018U) Misprints in REL-REF were corrected.       41004  1   27 
+            Minor correction of free text. ACTIV -> BURN          41004  1   28 
+ENDBIB              26          0                                 41004  1   29 
+NOCOMMON             0          0                                 41004  1   30 
+ENDSUBENT           29          0                                 41004  199999 
+SUBENT        41004002   20221018                             420941004  2    1 
+BIB                  7         14                                 41004  2    2 
 REACTION   (63-EU-152-M1(N,G)63-EU-153,,SIG)  2200 m/s CS         41004  2    3 
-SAMPLE      Initial sample was oxide, weight 5 microgram,         41004  2    4 
+SAMPLE      Initial sample was oxide, Eu-151 weight ~5 microgram, 41004  2    4 
             Eu-151 content 90 %.                                  41004  2    5 
 DECAY-DATA (63-EU-152-M1,9.3HR)                                   41004  2    6 
            (63-EU-152,,DG,121.8)                                  41004  2    7 
 ANALYSIS   (DECAY) Data for stable isotope Eu-153 were obtained   41004  2    8 
             from the equations of radioactive decay               41004  2    9 
-STATUS     (TABLE) Text p.202 of Conf.Proc.87KIEV,v.2,p.201,1987  41004  2   10 
-HISTORY    (20210319A) SF1 was corrected; EU-152-M -> EU-152-M1   41004  2   11 
-ENDBIB               9          0                                 41004  2   12 
-NOCOMMON             0          0                                 41004  2   13 
-DATA                 3          1                                 41004  2   14 
-EN         DATA       DATA-ERR                                    41004  2   15 
-EV         B          B                                           41004  2   16 
-   2.53E-02    1.84E+4     4.0E+3                                 41004  2   17 
-ENDDATA              3          0                                 41004  2   18 
-ENDSUBENT           17          0                                 41004  299999 
+REL-REF    (A,22000001,T.Von Egidy+,J,ZP/A,322,669,1985) Issue 4. 41004  2   10 
+            9600. +25000 - 5500 b                                 41004  2   11 
+           (D,40606004,V.A.Pshenichnyi+,C,82ANTWER,,230,1982)     41004  2   12 
+            68000 +- 14000. b                                     41004  2   13 
+STATUS     (TABLE) Text p.202 of Conf.Proc.87KIEV,v.2,p.201,1987  41004  2   14 
+HISTORY    (20210319A) SF1 was corrected; EU-152-M -> EU-152-M1   41004  2   15 
+           (20221018U) REL-REF was added.                         41004  2   16 
+ENDBIB              14          0                                 41004  2   17 
+NOCOMMON             0          0                                 41004  2   18 
+DATA                 3          1                                 41004  2   19 
+EN         DATA       DATA-ERR                                    41004  2   20 
+EV         B          B                                           41004  2   21 
+   2.53E-02   18400.      4000.                                   41004  2   22 
+ENDDATA              3          0                                 41004  2   23 
+ENDSUBENT           22          0                                 41004  299999 
 ENDENTRY             2          0                                 4100499999999 
