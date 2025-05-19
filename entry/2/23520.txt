@@ -1,0 +1,179 @@
+ENTRY            23520   20190604                             228023520  0    1 
+SUBENT        23520001   20190603                             228023520  1    1 
+BIB                  8         10                                 23520  1    2 
+TITLE       The pile neutron absorption cross sections of bismuth 23520  1    3 
+AUTHOR     (D.J.Littler, E.E.Lockett)                             23520  1    4 
+REFERENCE  (J,PPS/A,66,700,1953)                                  23520  1    5 
+INSTITUTE  (2UK HAR)                                              23520  1    6 
+FACILITY   (REAC,2UK HAR)                                         23520  1    7 
+COMMENT    Of compiler. Incident neutron energy value is not      23520  1    8 
+           given in the article, assumed by compiler as 0.0253 eV 23520  1    9 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 23520  1   10 
+           article.                                               23520  1   11 
+HISTORY    (20190604C)  M.M.                                      23520  1   12 
+ENDBIB              10          0                                 23520  1   13 
+NOCOMMON             0          0                                 23520  1   14 
+ENDSUBENT           13          0                                 23520  199999 
+SUBENT        23520002   20190604                             228023520  2    1 
+BIB                 10         45                                 23520  2    2 
+REACTION   (83-BI-209(N,G)83-BI-210,,SIG,,SPA)                    23520  2    3 
+INC-SPECT   Predominantly thermal spectrum of pile neutrons       23520  2    4 
+METHOD      Pile oscillator method, G.I.E.E.P. oscillator was     23520  2    5 
+           used.                                                  23520  2    6 
+            Impurities, ppm (full chemical analysis) in sample    23520  2    7 
+           after the pile measurements:                           23520  2    8 
+           Gd < 0.01          Dy <0.02      Na 2+-0.3             23520  2    9 
+           B  0.05+-0.005     Pb 15+-2      Ni 1.5+--0.3          23520  2   10 
+           Cd 0.25+-0.025     Zn 8+-1       Sn 1+-0.1             23520  2   11 
+           Li <0.1            Sb 5+-0.25    Fe <5                 23520  2   12 
+           Sm <0.03           Si 5+-0.5     As <1                 23520  2   13 
+           Eu <0.01           Ca 5+-1       Mn <1                 23520  2   14 
+           Ag 10+-1           Cu 4+-0.4     Co <1                 23520  2   15 
+           In <1              Mo 4+-0.2     Cr <0.5               23520  2   16 
+           Cl 20+-4                                               23520  2   17 
+REL-REF    (M,,F.C.W.Colmer+,J,NUC,8,3,1951)                      23520  2   18 
+           (M,,P.Benoist+,J,JPR,12,584,1951)                      23520  2   19 
+           . A.Langsdorf, Atomic Energy Commission Declassified   23520  2   20 
+             Report 3194, 1951                                    23520  2   21 
+           . Littler, Atomics,v.1,P.189,1950                      23520  2   22 
+            Four refs. for method details.                        23520  2   23 
+MONITOR    ((MONIT)5-B-0(N,ABS),,SIG)                             23520  2   24 
+ASSUMED    (ASSUM,7-N-0(N,ABS),,SIG) Used for correction.         23520  2   25 
+COMMENT    Of authors. In the pile neutron spectrum the (n,gamma) 23520  2   26 
+           CS is much greater than                                23520  2   27 
+            (n,p) (energy release 0.147+-0.01MeV),                23520  2   28 
+            (n,alpha) (energy release 9.23+-0.02 MeV),            23520  2   29 
+            (n,2n) (threshold 7.2+0.1MeV) CSs,                    23520  2   30 
+             (n,p) and (n,alpha) CS were estimated at 3MeV energy 23520  2   31 
+            to be of order 3*10**-7 b,                            23520  2   32 
+           so measured absorption CS is almost identical to       23520  2   33 
+            (n,gamma) CS.                                         23520  2   34 
+CORRECTION  For scattering - negligible.                          23520  2   35 
+            For "slowing down" - measured by heavy water- +0.7 mb 23520  2   36 
+            in measured CS.                                       23520  2   37 
+            For allowance of displacement of air by sample at     23520  2   38 
+            moving in the center of pile, nitrogen CS was used,   23520  2   39 
+            correction 2.6 mb.                                    23520  2   40 
+           For impurities contribution - 6.9+2.4-0.8 mb,          23520  2   41 
+           rewritten as 7.7+-1.6 mb.                              23520  2   42 
+ADD-RES     Raw value of CS obtained in measurement with other    23520  2   43 
+           sample(lent by B.B.Kinsey Atomic Energy of Canada,Ltd.)23520  2   44 
+            is 34.3 mb (no corrections applied).                  23520  2   45 
+STATUS     (TABLE) Abstract and text on page 701 of               23520  2   46 
+           Proc.Phys.Soc.A,v.66,p.700,1953                        23520  2   47 
+ENDBIB              45          0                                 23520  2   48 
+COMMON               2          3                                 23520  2   49 
+MONIT      ASSUM                                                  23520  2   50 
+B          B                                                      23520  2   51 
+ 710.       1.76                                                  23520  2   52 
+ENDCOMMON            3          0                                 23520  2   53 
+DATA                 3          1                                 23520  2   54 
+EN-DUMMY   DATA       DATA-ERR                                    23520  2   55 
+EV         MB         MB                                          23520  2   56 
+ 0.0253     30.8       2.2                                        23520  2   57 
+ENDDATA              3          0                                 23520  2   58 
+ENDSUBENT           57          0                                 23520  299999 
+SUBENT        23520003   20190604                             228023520  3    1 
+BIB                 10         22                                 23520  3    2 
+REACTION  1(83-BI-209(N,G)83-BI-210-G,,SIG,,SPA)                  23520  3    3 
+          2((83-BI-209(N,G)83-BI-210-G,,SIG,,SPA)/                23520  3    4 
+           (11-NA-23(N,G)11-NA-24,,SIG,,SPA))                     23520  3    5 
+MONITOR   1(11-NA-23(N,G)11-NA-24,,SIG,,SPA)                      23520  3    6 
+SAMPLE      Three Bi discs (~0.4 mg/cm2) on Al. Irradiated with   23520  3    7 
+           a sample of sodium carbonate.                          23520  3    8 
+INC-SPECT   Predominantly thermal spectrum of pile neutrons       23520  3    9 
+METHOD     (ACTIV) After irradiation in the G.L.E.E.P.,           23520  3   10 
+           Na-24 activity was counted by coincidence method of    23520  3   11 
+           J.L.Putman, Brit.J.Radiol.,v.23,p.46,1950.             23520  3   12 
+           Bi discs were kept several weeks (to allow decay of    23520  3   13 
+           Bi-210 -> Po-210), then counted in alpha-counter.      23520  3   14 
+DETECTOR    Argon-filled 2PI alpha counter                        23520  3   15 
+DECAY-DATA (84-PO-210,140.D,A)                                    23520  3   16 
+           (83-BI-210-G,5.D)                                      23520  3   17 
+RAD-DET    (84-PO-210,A)                                          23520  3   18 
+CORRECTION  Alpha-activity of original sample was negligible.     23520  3   19 
+STATUS     (TABLE) Text on page 703 of                            23520  3   20 
+           Proc.Phys.Soc.A,v.66,p.700,1953                        23520  3   21 
+            This Subent supersedes (as newer publication)         23520  3   22 
+           Subent 21362.007 (previously quoted)                   23520  3   23 
+           (COREL,23520004) Data from beta spectrometry           23520  3   24 
+ENDBIB              22          0                                 23520  3   25 
+COMMON               1          3                                 23520  3   26 
+EN-DUMMY                                                          23520  3   27 
+EV                                                                23520  3   28 
+ 0.0253                                                           23520  3   29 
+ENDCOMMON            3          0                                 23520  3   30 
+DATA                 6          1                                 23520  3   31 
+DATA      1DATA-ERR  1MONIT     1MONIT-ERR 1DATA      2DATA-ERR  223520  3   32 
+MB         MB         B          B          NO-DIM     NO-DIM     23520  3   33 
+ 20.5       1.5        0.50       0.015      0.0410     0.0027    23520  3   34 
+ENDDATA              3          0                                 23520  3   35 
+ENDSUBENT           34          0                                 23520  399999 
+SUBENT        23520004   20190604                             228023520  4    1 
+BIB                  9         12                                 23520  4    2 
+REACTION   (83-BI-209(N,G)83-BI-210-G,,SIG,,SPA)                  23520  4    3 
+MONITOR    (11-NA-23(N,G)11-NA-24,,SIG,,SPA)                      23520  4    4 
+SAMPLE      No information in the article                         23520  4    5 
+METHOD     (ACTIV) Irradiation in the B.E.P.O                     23520  4    6 
+DETECTOR   (D4PI) 4PI counter for beta-disintegration rate        23520  4    7 
+           detection for Na-24 and Bi-210                         23520  4    8 
+DECAY-DATA (83-BI-210-G,5.D,B)                                    23520  4    9 
+CORRECTION  Small correction for Bi sample impurities .           23520  4   10 
+ANALYSIS    Mean value of two measurements at B.E.P.O.            23520  4   11 
+STATUS     (TABLE) Text on page 703 of                            23520  4   12 
+           Proc.Phys.Soc.A,v.66,p.700,1953                        23520  4   13 
+           (COREL,23520003) Data from alpha spectrometry          23520  4   14 
+ENDBIB              12          0                                 23520  4   15 
+COMMON               1          3                                 23520  4   16 
+EN-DUMMY                                                          23520  4   17 
+EV                                                                23520  4   18 
+ 0.0253                                                           23520  4   19 
+ENDCOMMON            3          0                                 23520  4   20 
+DATA                 4          1                                 23520  4   21 
+DATA       DATA-ERR   MONIT      MONIT-ERR                        23520  4   22 
+MB         MB         B          B                                23520  4   23 
+ 20.4       1.6        0.50       0.015                           23520  4   24 
+ENDDATA              3          0                                 23520  4   25 
+ENDSUBENT           24          0                                 23520  499999 
+SUBENT        23520005   20190604                             228023520  5    1 
+BIB                  4          9                                 23520  5    2 
+REACTION   (83-BI-209(N,G)83-BI-210-G,,SIG,,SPA)                  23520  5    3 
+MONITOR    (11-NA-23(N,G)11-NA-24,,SIG,,SPA)                      23520  5    4 
+ANALYSIS    Final value was obtained from two measurements -      23520  5    5 
+           at B.E.P.O. and G.I.E.E.P. , beta and alpha counting,  23520  5    6 
+           respectively.                                          23520  5    7 
+STATUS     (TABLE) Abstract and text on page 703 of               23520  5    8 
+           Proc.Phys.Soc.A,v.66,p.700,1953                        23520  5    9 
+           (DEP,23520003) G.I.E.E.P., alpha counting,             23520  5   10 
+           (DEP,23520004) B.E.P.O., beta counting                 23520  5   11 
+ENDBIB               9          0                                 23520  5   12 
+COMMON               1          3                                 23520  5   13 
+EN-DUMMY                                                          23520  5   14 
+EV                                                                23520  5   15 
+ 0.0253                                                           23520  5   16 
+ENDCOMMON            3          0                                 23520  5   17 
+DATA                 4          1                                 23520  5   18 
+DATA       DATA-ERR   MONIT      MONIT-ERR                        23520  5   19 
+MB         MB         B          B                                23520  5   20 
+ 20.5       1.1        0.50       0.015                           23520  5   21 
+ENDDATA              3          0                                 23520  5   22 
+ENDSUBENT           21          0                                 23520  599999 
+SUBENT        23520006   20190604                             228023520  6    1 
+BIB                  3          8                                 23520  6    2 
+REACTION   (83-BI-209(N,G)83-BI-210-M,,SIG,,SPA)                  23520  6    3 
+            CS of long-lived alpha-emitting Bi-210 state          23520  6    4 
+            production                                            23520  6    5 
+ANALYSIS    Derived as difference of Subent 002 and Subent 003    23520  6    6 
+           data.                                                  23520  6    7 
+STATUS     (TABLE) Abstract of Proc.Phys.Soc.A,v.66,p.700,1953    23520  6    8 
+           (DEP,23520002) BI-209(N,ABS)  CS                       23520  6    9 
+           (DEP,23520005) BI-209(N,G)Bi-210 CS                    23520  6   10 
+ENDBIB               8          0                                 23520  6   11 
+NOCOMMON             0          0                                 23520  6   12 
+DATA                 3          1                                 23520  6   13 
+EN-DUMMY   DATA       DATA-ERR                                    23520  6   14 
+EV         MB         MB                                          23520  6   15 
+ 0.0253      10.3       2.5                                       23520  6   16 
+ENDDATA              3          0                                 23520  6   17 
+ENDSUBENT           16          0                                 23520  699999 
+ENDENTRY             6          0                                 2352099999999 

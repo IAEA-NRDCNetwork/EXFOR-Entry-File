@@ -1,0 +1,71 @@
+ENTRY            23519   20190607                             228023519  0    1 
+SUBENT        23519001   20190607                             228023519  1    1 
+BIB                 10         20                                 23519  1    2 
+TITLE       The Thermal Neutron Capture Cross Section of 84Sr     23519  1    3 
+AUTHOR     (G.E.Harrison, F.D.Seymour)                            23519  1    4 
+REFERENCE  (J,PPS/A,65,958,1952)                                  23519  1    5 
+INSTITUTE  (2UK HAR)                                              23519  1    6 
+FACILITY   (REAC,2UK HAR) Harwell Nuclear Pile                    23519  1    7 
+SAMPLE       Specpure Sr carbonate ~2 mg                          23519  1    8 
+DETECTOR     GM4 counter for beta counting.                       23519  1    9 
+           (NAICR) Thallium-activated sodium iodine crystal for   23519  1   10 
+           gammas counting.                                       23519  1   11 
+METHOD     (ACTIV) Cooling time two days to decay of Sr-85m and   23519  1   12 
+           Sr-87m.                                                23519  1   13 
+           Beta-activity of activated sample was compared with    23519  1   14 
+           beta-activity of P-32 standard source.                 23519  1   15 
+           Gamma-activity of activated sample was compared with   23519  1   16 
+           gamma-activity of I-131 standard source with mixed     23519  1   17 
+           gamma spectrum, predominantly 0.36 MeV and             23519  1   18 
+                           Cs-137 (Egamma 0.663 MeV).             23519  1   19 
+COMMENT    Of compiler. Pile neutron spectrum energy is not given 23519  1   20 
+           in the article, assumed by compiler as EN-DUMMY=0.0253e23519  1   21 
+HISTORY    (20190607C)  M.M.                                      23519  1   22 
+ENDBIB              20          0                                 23519  1   23 
+NOCOMMON             0          0                                 23519  1   24 
+ENDSUBENT           23          0                                 23519  199999 
+SUBENT        23519002   20190607                             228023519  2    1 
+BIB                  8         13                                 23519  2    2 
+REACTION   (38-SR-84(N,G)38-SR-85,,SIG,,SPA)                      23519  2    3 
+           Isotopic capture cross-section.                        23519  2    4 
+SAMPLE     (38-SR-84,NAT=0.0055)                                  23519  2    5 
+MONITOR    ((MONIT)38-SR-88(N,G)38-SR-89,,SIG,,SPA)               23519  2    6 
+DECAY-MON  (38-SR-89,52.5D)   Measured 52.5 days                  23519  2    7 
+MONIT-REF  (,L.Seren+,J,PR,72,888,1947)                           23519  2    8 
+DECAY-DATA (38-SR-85-G,65.D)   Measured 67 days.                  23519  2    9 
+           (38-SR-85-M,70.MIN)                                    23519  2   10 
+           (38-SR-87-M,2.8HR)                                     23519  2   11 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 23519  2   12 
+           article.                                               23519  2   13 
+STATUS     (TABLE) Text on page 959 of                            23519  2   14 
+                   Proc.Phys.Soc.A,v.65,p.958,1952                23519  2   15 
+ENDBIB              13          0                                 23519  2   16 
+NOCOMMON             0          0                                 23519  2   17 
+DATA                 4          1                                 23519  2   18 
+EN-DUMMY   DATA       DATA-ERR   MONIT                            23519  2   19 
+EV         B          PER-CENT   B                                23519  2   20 
+ 0.0253     0.32       20.        0.0050                          23519  2   21 
+ENDDATA              3          0                                 23519  2   22 
+ENDSUBENT           21          0                                 23519  299999 
+SUBENT        23519003   20190607                             228023519  3    1 
+BIB                  6         11                                 23519  3    2 
+REACTION   (38-SR-87(N,G)38-SR-88,,SIG,,SPA,DERIV)                23519  3    3 
+           Isotopic capture cross-section.                        23519  3    4 
+SAMPLE     (38-SR-84,NAT=0.0055)                                  23519  3    5 
+ASSUMED    (ASSUM1,38-SR-0(N,G),,SIG,,SPA) for thermal neutrons   23519  3    6 
+           (ASSUM2,38-SR-86(N,G)38-SR-87-M,,SIG,,SPA)             23519  3    7 
+REL-REF    (R,,F.C.W.Colmer+,J,PPS/A,63,1175,1950)    ASSUM1      23519  3    8 
+           (R,,L.Seren+,J,PR,72,888,1947)             ASSUM2      23519  3    9 
+ANALYSIS    Derived using isotopic abundance of I-184, ASSUM1 and 23519  3   10 
+            ASSUM2 data and measured CS for Sr-84.                23519  3   11 
+STATUS     (TABLE) Text on page 959 of                            23519  3   12 
+                   Proc.Phys.Soc.A,v.65,p.958,1952                23519  3   13 
+ENDBIB              11          0                                 23519  3   14 
+NOCOMMON             0          0                                 23519  3   15 
+DATA                 4          1                                 23519  3   16 
+EN-DUMMY   DATA-APRX  ASSUM1     ASSUM2                           23519  3   17 
+EV         B          B          B                                23519  3   18 
+ 0.0253     17.        1.35       1.3                             23519  3   19 
+ENDDATA              3          0                                 23519  3   20 
+ENDSUBENT           19          0                                 23519  399999 
+ENDENTRY             3          0                                 2351999999999 
