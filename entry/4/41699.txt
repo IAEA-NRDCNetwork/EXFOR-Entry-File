@@ -1,0 +1,106 @@
+ENTRY            41699   20200923                             418941699  0    1 
+SUBENT        41699001   20200923                             418941699  1    1 
+BIB                 11         21                                 41699  1    2 
+TITLE       Probability of ionization of an atomic shell of a     41699  1    3 
+           fissile atom by the fluctuation electromagnetic field  41699  1    4 
+           of the heated nucleus                                  41699  1    5 
+AUTHOR     (L.A.Popeko, G.A.Petrov, E.F.Kochubei)                 41699  1    6 
+REFERENCE  (J,YF,22,468,1975)                                     41699  1    7 
+           (J,SNP,22,241,1975)                                    41699  1    8 
+INSTITUTE  (4RUSLIN)                                              41699  1    9 
+FACILITY   (REAC,4RUSLIN) WWR-M reactor                           41699  1   10 
+INC-SOURCE (REAC)                                                 41699  1   11 
+INC-SPECT   Thermal neutrons                                      41699  1   12 
+SAMPLE     (92-U-235,ENR=0.96) U-235 sample on Ni backing.        41699  1   13 
+DETECTOR   (SIBAR) .for fission fragments                         41699  1   14 
+           (GELI) .for gamma rays in region 50 - 100 keV.         41699  1   15 
+           Energy resolution 1 keV, volume 1.4 cm3, entrance      41699  1   16 
+           window of 0.5 mum Au and 0.25 mm Al.                   41699  1   17 
+           Lead collimator (1mm) to decrease gamma-rays from      41699  1   18 
+           fission fragments. Fluoroplastic as detector           41699  1   19 
+           construction material.                                 41699  1   20 
+METHOD     (COINC) Fission fragments and gamma-rays coincidence.  41699  1   21 
+           Time resolution 10**-10 sec for prompt gamma-rays.     41699  1   22 
+HISTORY    (20200923C)  M.M.                                      41699  1   23 
+ENDBIB              21          0                                 41699  1   24 
+COMMON               1          3                                 41699  1   25 
+EN-DUMMY                                                          41699  1   26 
+EV                                                                41699  1   27 
+ 0.0253                                                           41699  1   28 
+ENDCOMMON            3          0                                 41699  1   29 
+ENDSUBENT           28          0                                 41699  199999 
+SUBENT        41699002   20200923                             418941699  2    1 
+BIB                  3          6                                 41699  2    2 
+REACTION   (92-U-235(N,F)0-G-0,PR/PAR,FY,,SPA)                    41699  2    3 
+EN-SEC     (E,G) K-alpha1 (98.44 keV), K-alpha2 (94.66 keV) rays  41699  2    4 
+STATUS     (TABLE) Abstract and text p.471 of                     41699  2    5 
+                   Yad.Fiz.,v.22,p.241,1975                       41699  2    6 
+           (DEP,41699003) Directly measured data for several      41699  2    7 
+           thickness of sample.                                   41699  2    8 
+ENDBIB               6          0                                 41699  2    9 
+NOCOMMON             0          0                                 41699  2   10 
+DATA                 3          1                                 41699  2   11 
+E          E          DATA-MAX                                    41699  2   12 
+KEV        KEV        PRT/FIS                                     41699  2   13 
+ 98.44      94.66          3.E-04                                 41699  2   14 
+ENDDATA              3          0                                 41699  2   15 
+ENDSUBENT           14          0                                 41699  299999 
+SUBENT        41699003   20200923                             418941699  3    1 
+BIB                  6         12                                 41699  3    2 
+REACTION   (92-U-235(N,F)0-G-0,PR/PAR,FY,,MSC)                    41699  3    3 
+            Dependence of K-alpha1,2 yields from sample thickness.41699  3    4 
+MONITOR     F-19(N,INL) reaction by fast fission neutrons,        41699  3    5 
+           109.40 keV E-gamma peak,                               41699  3    6 
+EN-SEC     (E,G) K-alpha1 (98.44 keV), K-alpha2 (94.66 keV) rays  41699  3    7 
+MISC-COL   (MISC) Uncertainty of sample thickness.                41699  3    8 
+ERR-ANALYS . Quantization errors (1/2 pixel):                     41699  3    9 
+            scale X - 1.01 mug/cm2, scale Y - 0.0020 arb.units.   41699  3   10 
+            Digitization error of thickness - 0.50 mug/cm2.       41699  3   11 
+           (DATA-ERR) Type of uncertainty is not explained in the 41699  3   12 
+           article.                                               41699  3   13 
+STATUS     (CURVE) Fig.3a of Yad.Fiz.,v.22,p.241,1975             41699  3   14 
+ENDBIB              12          0                                 41699  3   15 
+COMMON               3          3                                 41699  3   16 
+E          E          ERR-DIG                                     41699  3   17 
+KEV        KEV        ARB-UNITS                                   41699  3   18 
+ 98.44      94.66      0.0011                                     41699  3   19 
+ENDCOMMON            3          0                                 41699  3   20 
+DATA                 4          4                                 41699  3   21 
+THICKNESS  DATA       DATA-ERR   MISC                             41699  3   22 
+G/CM-SQ    ARB-UNITS  ARB-UNITS  G/CM-SQ                          41699  3   23 
+ 199.87E-06    0.4649     0.1976    9.97E-06                      41699  3   24 
+ 221.63E-06    0.4729     0.0725    9.79E-06                      41699  3   25 
+ 410.90E-06    1.0346     0.3498   46.25E-06                      41699  3   26 
+ 570.92E-06    1.1848     0.2447   14.15E-06                      41699  3   27 
+ENDDATA              6          0                                 41699  3   28 
+ENDSUBENT           27          0                                 41699  399999 
+SUBENT        41699004   20200923                             418941699  4    1 
+BIB                  6         12                                 41699  4    2 
+REACTION   (92-U-235(N,F)0-G-0,PR/PAR,FY,,MSC)                    41699  4    3 
+            Dependence of K-alpha1,2 yields from sample thickness.41699  4    4 
+MONITOR     Pb-208(G,X)0-G-0 by fission K-alpha gamma-rays        41699  4    5 
+            were used for normalization.                          41699  4    6 
+EN-SEC     (E,G) K-alpha1 (98.44 keV), K-alpha2 (94.66 keV) rays  41699  4    7 
+MISC-COL   (MISC) Uncertainty of sample thickness.                41699  4    8 
+ERR-ANALYS . Quantization errors (1/2 pixel):                     41699  4    9 
+            scale X - 1.01 mug/cm2, scale Y - 0.0010 arb.units.   41699  4   10 
+            Digitization error of thickness - 0.99 mug/cm2.       41699  4   11 
+           (DATA-ERR) Type of uncertainty is not explained in the 41699  4   12 
+           article.                                               41699  4   13 
+STATUS     (CURVE) Fig.3b of Yad.Fiz.,v.22,p.241,1975             41699  4   14 
+ENDBIB              12          0                                 41699  4   15 
+COMMON               3          3                                 41699  4   16 
+E          E          ERR-DIG                                     41699  4   17 
+KEV        KEV        ARB-UNITS                                   41699  4   18 
+ 98.44      94.66      0.00073                                    41699  4   19 
+ENDCOMMON            3          0                                 41699  4   20 
+DATA                 4          4                                 41699  4   21 
+THICKNESS  DATA       DATA-ERR   MISC                             41699  4   22 
+G/CM-SQ    ARB-UNITS  ARB-UNITS  G/CM-SQ                          41699  4   23 
+ 200.02E-06   0.0818     0.0301    14.00E-06                      41699  4   24 
+ 221.79E-06   0.1279     0.0260     8.19E-06                      41699  4   25 
+ 408.12E-06   0.2876     0.0917    40.18E-06                      41699  4   26 
+ 568.26E-06   0.4468     0.1056    10.00E-06                      41699  4   27 
+ENDDATA              6          0                                 41699  4   28 
+ENDSUBENT           27          0                                 41699  499999 
+ENDENTRY             4          0                                 4169999999999 
