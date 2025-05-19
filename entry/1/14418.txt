@@ -1,0 +1,95 @@
+ENTRY            14418   20150605                             140714418  0    1 
+SUBENT        14418001   20150605                             140714418  1    1 
+BIB                 13         27                                 14418  1    2 
+TITLE      Ratio of the prompt fission neutron spectrum of 239Pu  14418  1    3 
+            to that of 235U                                       14418  1    4 
+AUTHOR     (M.Sugimoto, A.B.Smith, P.T.Guenther)                  14418  1    5 
+INSTITUTE  (1USAANL)                                              14418  1    6 
+REFERENCE  (J,NSE,97,235,1987)                                    14418  1    7 
+           (R,ANL-NDM-96,1986) Extended version of the NSE article14418  1    8 
+FACILITY   (DYNAM,1USAANL)                                        14418  1    9 
+INC-SOURCE (P-LI7) 7Li(p,n)7Be at 0 deg                           14418  1   10 
+SAMPLE     Solid metal cylinders of identical size (2 cm in diam, 14418  1   11 
+            2 cm long).                                           14418  1   12 
+           Pu sample in 0.1 mm thick welded-steel can, while U    14418  1   13 
+            sample not clad.                                      14418  1   14 
+           Placed 15 cm from the neutron source at the focus of   14418  1   15 
+            10 flight paths.                                      14418  1   16 
+           (94-PU-239,ENR=0.955)                                  14418  1   17 
+           (92-U-235,ENR=0.946)                                   14418  1   18 
+METHOD     (TOF) Flight paths in length from 4.976 to 5.077 m,    14418  1   19 
+            measured to +/-0.5 cm including mean detector         14418  1   20 
+            thickness.                                            14418  1   21 
+DETECTOR   (SCIN) NE213 liquid scintillators (12.7 cm in diam.,   14418  1   22 
+            ~2 cm thick)                                          14418  1   23 
+COMMENT    By author: Multiple-scattering of the fission neutrons 14418  1   24 
+            is small due to the small size of the samples.        14418  1   25 
+ERR-ANALYS (DATA-ERR) Foreground count, background count, and     14418  1   26 
+            sum of net count from 1 to 10 MeV                     14418  1   27 
+STATUS     (APRVD) Masayoshi Sugimoto (2015-06-12)                14418  1   28 
+HISTORY    (20150605C) On                                         14418  1   29 
+ENDBIB              27          0                                 14418  1   30 
+COMMON               2          3                                 14418  1   31 
+EN         EN-RSL                                                 14418  1   32 
+MEV        MEV                                                    14418  1   33 
+ 0.55       0.05                                                  14418  1   34 
+ENDCOMMON            3          0                                 14418  1   35 
+ENDSUBENT           34          0                                 14418  199999 
+SUBENT        14418002   20150605                             140714418  2    1 
+BIB                  3          5                                 14418  2    2 
+REACTION   ((94-PU-239(N,F),PR,NU/DE,,NPD)/                       14418  2    3 
+           (92-U-235(N,F),PR,NU/DE,,NPD))                         14418  2    4 
+FLAG       (1.) These points are not well visible on the article  14418  2    5 
+            figure, and digitization could be less accurate.      14418  2    6 
+STATUS     (CURVE) Fig.1 of ANL/NDM-96, 1986                      14418  2    7 
+ENDBIB               5          0                                 14418  2    8 
+NOCOMMON             0          0                                 14418  2    9 
+DATA                 5         22                                 14418  2   10 
+E-MIN      E-MAX      DATA       DATA-ERR   FLAG                  14418  2   11 
+MEV        MEV        NO-DIM     NO-DIM     NO-DIM                14418  2   12 
+ 1.0         1.1        0.943      0.017                          14418  2   13 
+ 1.1         1.2        0.975      0.015                          14418  2   14 
+ 1.2         1.3        0.956                                     14418  2   15 
+ 1.3         1.4        0.938                                     14418  2   16 
+ 1.4         1.6        0.970                                     14418  2   17 
+ 1.6         1.7        0.946                                     14418  2   18 
+ 1.7         1.9        0.981                                     14418  2   19 
+ 1.9         2.0        0.992      0.012                          14418  2   20 
+ 2.0         2.2        0.990                                     14418  2   21 
+ 2.2         2.4        0.995                1.                   14418  2   22 
+ 2.4         2.6        0.995                1.                   14418  2   23 
+ 2.6         2.8        1.016                                     14418  2   24 
+ 2.8         3.0        1.003      0.011                          14418  2   25 
+ 3.0         3.5        1.025                                     14418  2   26 
+ 3.5         4.0        1.047                                     14418  2   27 
+ 4.0         4.5        1.061      0.013                          14418  2   28 
+ 4.5         5.0        1.073                                     14418  2   29 
+ 5.0         5.5        1.080                                     14418  2   30 
+ 5.5         6.0        1.129                                     14418  2   31 
+ 6.0         7.0        1.134      0.028                          14418  2   32 
+ 7.0         8.0        1.151      0.052                          14418  2   33 
+ 8.0        10.0        1.233      0.135                          14418  2   34 
+ENDDATA             24          0                                 14418  2   35 
+ENDSUBENT           34          0                                 14418  299999 
+SUBENT        14418003   20150605                             140714418  3    1 
+BIB                  3          7                                 14418  3    2 
+REACTION  1(94-PU-239(N,F)0-NN-1,PR/PAR,KE)                       14418  3    3 
+          2(94-PU-239(N,F)0-NN-1,PR/PAR,KE)                       14418  3    4 
+ANALYSIS   235U(n,f) PFNS in ENDF-B/V (Watt form, <En>=2.652 MeV) 14418  3    5 
+            assumed.                                              14418  3    6 
+          1Linear fitting to the spectrum ratio                   14418  3    7 
+          2Quadratic fitting to the spectrum ratio                14418  3    8 
+STATUS     (TABLE) Table 2 of ANL/NDM-96, 1986                    14418  3    9 
+ENDBIB               7          0                                 14418  3   10 
+COMMON               2          3                                 14418  3   11 
+E-MIN      E-MAX                                                  14418  3   12 
+MEV        MEV                                                    14418  3   13 
+ 1.         10.                                                   14418  3   14 
+ENDCOMMON            3          0                                 14418  3   15 
+DATA                 4          1                                 14418  3   16 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2                      14418  3   17 
+MEV        MEV        MEV        MEV                              14418  3   18 
+ 2.727      0.004      2.715      0.004                           14418  3   19 
+ENDDATA              3          0                                 14418  3   20 
+ENDSUBENT           19          0                                 14418  399999 
+ENDENTRY             3          0                                 1441899999999 
