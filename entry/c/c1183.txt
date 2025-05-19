@@ -1,6 +1,6 @@
-ENTRY            C1183   20171004                             C168C1183  0    1 
-SUBENT        C1183001   20171004                             C168C1183  1    1 
-BIB                 10         19                                 C1183  1    2 
+ENTRY            C1183   20211005                             C206C1183  0    1 
+SUBENT        C1183001   20211005                             C206C1183  1    1 
+BIB                 10         22                                 C1183  1    2 
 TITLE      Cyclotron-Produced Carrier-Free Radioisotopes Thick    C1183  1    3 
            Target Yield Data and Carrier-Free Separation          C1183  1    4 
            Procedures                                             C1183  1    5 
@@ -10,19 +10,22 @@ INSTITUTE  (1USAUSA) Nuclear Science and Engineering Corporation, C1183  1    7
 REFERENCE  (J,ARI,5,21,1959)                                      C1183  1    9 
 FACILITY   (CYCLO,1USAPUP)                                        C1183  1   10 
            (CYCLO,1USAORL)                                        C1183  1   11 
-PART-DET   (G,E)                                                  C1183  1   12 
-DETECTOR   (NAICR,PROPC)                                          C1183  1   13 
-METHOD     (ACTIV,CHSEP,TTM) Thick target yields are given for    C1183  1   14 
-           production of radioisotopes from cyclotron             C1183  1   15 
-           irradiations with deuterons of 15 MeV energy and with  C1183  1   16 
-           protons of 8, 15 and 20 MeV energies.                  C1183  1   17 
-STATUS     (TABLE) Table 1, page 24.                              C1183  1   18 
-HISTORY    (20141219C) BP                                         C1183  1   19 
-           (20171003A) TS+On. Major revisions in 002-028.         C1183  1   20 
-            See also CP-D/933.                                    C1183  1   21 
-ENDBIB              19          0                                 C1183  1   22 
-NOCOMMON             0          0                                 C1183  1   23 
-ENDSUBENT           22          0                                 C1183  199999 
+PART-DET   (DG) except for 55Fe, 109Cd, 181W                      C1183  1   12 
+           (B) for 55Fe, 109Cd, 181W                              C1183  1   13 
+DETECTOR   (NAICR) except for 55Fe, 109Cd, 181W                   C1183  1   14 
+           (PROPC) for 55Fe, 109Cd, 181W                          C1183  1   15 
+METHOD     (ACTIV,CHSEP) Thick target yields are given for        C1183  1   16 
+           production of radioisotopes from cyclotron             C1183  1   17 
+           irradiations with deuterons of 15 MeV energy and with  C1183  1   18 
+           protons of 8, 15 and 20 MeV energies.                  C1183  1   19 
+STATUS     (TABLE) Table 1, page 24.                              C1183  1   20 
+HISTORY    (20141219C) BP                                         C1183  1   21 
+           (20171003A) TS+On. Major revisions in 002-028.         C1183  1   22 
+            See also CP-D/933.                                    C1183  1   23 
+           (20210928A) OS. REACTION corrected in subs.7,8,24      C1183  1   24 
+ENDBIB              22          0                                 C1183  1   25 
+NOCOMMON             0          0                                 C1183  1   26 
+ENDSUBENT           25          0                                 C1183  199999 
 SUBENT        C1183002   20171004                             C168C1183  2    1 
 BIB                  3          6                                 C1183  2    2 
 REACTION   (3-LI-0(D,X)4-BE-7,,TTY,,EOB/MSC)                      C1183  2    3 
@@ -108,40 +111,42 @@ MEV        MCI/MUAHR  MCI/MUAHR                                   C1183  6   14
        15.0     0.0014     0.0003                                 C1183  6   15 
 ENDDATA              3          0                                 C1183  6   16 
 ENDSUBENT           15          0                                 C1183  699999 
-SUBENT        C1183007   20171004                             C168C1183  7    1 
-BIB                  4          7                                 C1183  7    2 
-REACTION   (24-CR-54(P,X)25-MN-54,,TTY,,EOB/MSC)                  C1183  7    3 
+SUBENT        C1183007   20211005                             C206C1183  7    1 
+BIB                  4          8                                 C1183  7    2 
+REACTION   (24-CR-54(P,N)25-MN-54,,TTY,,EOB/MSC)                  C1183  7    3 
             EOB activity divided by irradiated charge             C1183  7    4 
             (Irradiation time unspecified)                        C1183  7    5 
 SAMPLE     (24-CR-54,ENR=0.80)                                    C1183  7    6 
 ERR-ANALYS (DATA-ERR) Major source of uncertainty:                C1183  7    7 
             Small number of irradiations made.                    C1183  7    8 
 HISTORY    (20171003A)  TS+On. REACTION(SF8) revised.             C1183  7    9 
-ENDBIB               7          0                                 C1183  7   10 
-NOCOMMON             0          0                                 C1183  7   11 
-DATA                 3          1                                 C1183  7   12 
-EN         DATA       DATA-ERR                                    C1183  7   13 
-MEV        MCI/MUAHR  MCI/MUAHR                                   C1183  7   14 
-       20.0      0.087      0.010                                 C1183  7   15 
-ENDDATA              3          0                                 C1183  7   16 
-ENDSUBENT           15          0                                 C1183  799999 
-SUBENT        C1183008   20171004                             C168C1183  8    1 
-BIB                  4          7                                 C1183  8    2 
-REACTION   (25-MN-55(D,X)26-FE-55,,TTY,,EOB/MSC)                  C1183  8    3 
+           (20210928A) REACTION SF3 changed to N                  C1183  7   10 
+ENDBIB               8          0                                 C1183  7   11 
+NOCOMMON             0          0                                 C1183  7   12 
+DATA                 3          1                                 C1183  7   13 
+EN         DATA       DATA-ERR                                    C1183  7   14 
+MEV        MCI/MUAHR  MCI/MUAHR                                   C1183  7   15 
+       20.0      0.087      0.010                                 C1183  7   16 
+ENDDATA              3          0                                 C1183  7   17 
+ENDSUBENT           16          0                                 C1183  799999 
+SUBENT        C1183008   20211005                             C206C1183  8    1 
+BIB                  4          8                                 C1183  8    2 
+REACTION   (25-MN-55(D,2N)26-FE-55,,TTY,,EOB/MSC)                 C1183  8    3 
             EOB activity divided by irradiated charge             C1183  8    4 
             (Irradiation time unspecified)                        C1183  8    5 
 DECAY-DATA (26-FE-55,3.0YR)                                       C1183  8    6 
 ERR-ANALYS (DATA-ERR) Major source of uncertainty:                C1183  8    7 
             Small number of irradiations made.                    C1183  8    8 
 HISTORY    (20171003A)  TS+On. REACTION(SF8) revised.             C1183  8    9 
-ENDBIB               7          0                                 C1183  8   10 
-NOCOMMON             0          0                                 C1183  8   11 
-DATA                 3          1                                 C1183  8   12 
-EN         DATA       DATA-ERR                                    C1183  8   13 
-MEV        MCI/MUAHR  MCI/MUAHR                                   C1183  8   14 
-       15.0     0.0037     0.0007                                 C1183  8   15 
-ENDDATA              3          0                                 C1183  8   16 
-ENDSUBENT           15          0                                 C1183  899999 
+           (20210928A) REACTION SF3 changed to 2N                 C1183  8   10 
+ENDBIB               8          0                                 C1183  8   11 
+NOCOMMON             0          0                                 C1183  8   12 
+DATA                 3          1                                 C1183  8   13 
+EN         DATA       DATA-ERR                                    C1183  8   14 
+MEV        MCI/MUAHR  MCI/MUAHR                                   C1183  8   15 
+       15.0     0.0037     0.0007                                 C1183  8   16 
+ENDDATA              3          0                                 C1183  8   17 
+ENDSUBENT           16          0                                 C1183  899999 
 SUBENT        C1183009   20171004                             C168C1183  9    1 
 BIB                  3          7                                 C1183  9    2 
 REACTION   (26-FE-0(D,X)27-CO-57,,TTY,,EOB/MSC)                   C1183  9    3 
@@ -403,22 +408,23 @@ MEV        MCI/MUAHR  MCI/MUAHR                                   C1183 23   13
        20.0     0.0005     0.0002                                 C1183 23   14 
 ENDDATA              3          0                                 C1183 23   15 
 ENDSUBENT           14          0                                 C1183 2399999 
-SUBENT        C1183024   20171004                             C168C1183 24    1 
-BIB                  4          6                                 C1183 24    2 
-REACTION   (25-MN-55(P,X)26-FE-55,,TTY,,EOB/MSC)                  C1183 24    3 
+SUBENT        C1183024   20211005                             C206C1183 24    1 
+BIB                  4          7                                 C1183 24    2 
+REACTION   (25-MN-55(P,N)26-FE-55,,TTY,,EOB/MSC)                  C1183 24    3 
             EOB activity divided by irradiated charge             C1183 24    4 
             (Irradiation time unspecified)                        C1183 24    5 
 DECAY-DATA (26-FE-55,3.0YR)                                       C1183 24    6 
 ERR-ANALYS (DATA-ERR) No information on main source of uncertaintyC1183 24    7 
 HISTORY    (20171003A)  TS+On. REACTION(SF8) revised.             C1183 24    8 
-ENDBIB               6          0                                 C1183 24    9 
-NOCOMMON             0          0                                 C1183 24   10 
-DATA                 3          1                                 C1183 24   11 
-EN         DATA       DATA-ERR                                    C1183 24   12 
-MEV        MCI/MUAHR  MCI/MUAHR                                   C1183 24   13 
-       20.0     0.0135     0.0050                                 C1183 24   14 
-ENDDATA              3          0                                 C1183 24   15 
-ENDSUBENT           14          0                                 C1183 2499999 
+           (20210928A) REACTION SF3 changed to N                  C1183 24    9 
+ENDBIB               7          0                                 C1183 24   10 
+NOCOMMON             0          0                                 C1183 24   11 
+DATA                 3          1                                 C1183 24   12 
+EN         DATA       DATA-ERR                                    C1183 24   13 
+MEV        MCI/MUAHR  MCI/MUAHR                                   C1183 24   14 
+       20.0     0.0135     0.0050                                 C1183 24   15 
+ENDDATA              3          0                                 C1183 24   16 
+ENDSUBENT           15          0                                 C1183 2499999 
 SUBENT        C1183025   20171004                             C168C1183 25    1 
 BIB                  3          6                                 C1183 25    2 
 REACTION   (28-NI-0(P,X)27-CO-57,,TTY,,EOB/MSC)                   C1183 25    3 
