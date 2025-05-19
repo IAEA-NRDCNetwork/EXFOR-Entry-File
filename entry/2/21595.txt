@@ -1,11 +1,11 @@
-ENTRY            21595   20200906                             229421595  0    1 
-SUBENT        21595001   20200906                             229421595  1    1 
-BIB                 12         39                                 21595  1    2 
+ENTRY            21595   20230319                             231621595  0    1 
+SUBENT        21595001   20230319                             231621595  1    1 
+BIB                 12         40                                 21595  1    2 
 TITLE       Mass yields in the fission of uranium-235 and         21595  1    3 
             plutonium-239 in the neutron spectrum of a gas-cooled 21595  1    4 
             fast reactor                                          21595  1    5 
 AUTHOR     (M.Rajagopalan,H.S.Pruys,A.Gruetter,H.R.Von Gunten,    21595  1    6 
-            E.A.Hermes,R.Richmond,E.Roessler,A.Scmid,P.Wydler)    21595  1    7 
+            E.A.Hermes,R.Richmond,E.Roessler,A.Schmid,P.Wydler)   21595  1    7 
 REFERENCE  (J,NSE,58,414,1975) - final publ.                      21595  1    8 
            (P,INDC(SEC)-43,83,1974) - prelim.data                 21595  1    9 
            ((P,INDC(SWT)-6,15,1974)=(P,NEANDC(OR)-140,15,1974))   21595  1   10 
@@ -40,117 +40,84 @@ ANALYSIS    Relative yields are converted to absolute yields by   21595  1   33
             interpolated yields.                                  21595  1   39 
 HISTORY    (19800619C)                                            21595  1   40 
            (20200906A) SD: Entry revised.                         21595  1   41 
-ENDBIB              39          0                                 21595  1   42 
-COMMON               2          3                                 21595  1   43 
-EN-MEAN-NM EN-DUM-DN                                              21595  1   44 
-MEV        EV                                                     21595  1   45 
- 0.180        0.0253                                              21595  1   46 
-ENDCOMMON            3          0                                 21595  1   47 
-ENDSUBENT           46          0                                 21595  199999 
-SUBENT        21595002   20200906                             229421595  2    1 
-BIB                 10         39                                 21595  2    2 
-REACTION  1(92-U-235(N,F)ELEM/MASS,CHN,FY,,FST)                   21595  2    3 
-          2(((92-U-235(N,F)ELEM/MASS,CUM,FY,,FST)/                21595  2    4 
-           (92-U-235(N,F)56-BA-140,CUM,FY,,FST))//                21595  2    5 
-           ((92-U-235(N,F)ELEM/MASS,CUM,FY)/                      21595  2    6 
-           (92-U-235(N,F)56-BA-140,CUM,FY)))                      21595  2    7 
-RESULT    2(RVAL)                                                 21595  2    8 
-ANALYSIS   Relative yields were converted to absolute yields by   21595  2    9 
-           normalizing the total fission yields of all nuclides in21595  2   10 
-           the heavy peak to 100%. The measured yields amount to  21595  2   11 
-           ~66% of the total yield in the heavy peak. The yields  21595  2   12 
-           of the missing mass chains were interpolated.          21595  2   13 
-MONITOR    (92-U-235(N,F)ELEM/MASS,CUM,FY)                        21595  2   14 
-          2((92-U-235(N,F)56-BA-140,CUM,FY,,FST)/                 21595  2   15 
-           (92-U-235(N,F)56-BA-140,CUM,FY))                       21595  2   16 
-MONIT-REF  (,M.E.Meek+,R,NEDO-12154-1,1974)                       21595  2   17 
-FLAG       (1.) In Tbl.I result was assigned to Kr and Rb but in  21595  2   18 
-           Tbl.III value compared with Kr from F.L.Lisman+        21595  2   19 
-           (2.) In Tbl.I result was assigned to Sr, Y but in      21595  2   20 
-           Tbl.III value compared with Sr from M.E.Meek+          21595  2   21 
-           (3.) In Tbl.I result was assigned to Zr, Nb but in     21595  2   22 
-           Tbl.III value compared with Zr from F.L.Lisman+        21595  2   23 
-           (4.) In Tbl.I result was assigned to Te, I but in      21595  2   24 
-           Tbl.III value compared with Xe from F.L.Lisman+        21595  2   25 
-           (5.) In Tbl.I result was assigned to Ba, Ce but in     21595  2   26 
-           Tbl.III value compared with estimated Ce from          21595  2   27 
-           F.L.Lisman+ and Ce from J.G.Cuninghame+                21595  2   28 
-REL-REF    (A,13270016,F.L.Lisman+,J,NSE,42,191,1970)             21595  2   29 
-           (A,13270017,F.L.Lisman+,J,NSE,42,191,1970)             21595  2   30 
-           (A,20768002,J.G.Cuninghame+,R,AERE-R-6862,1972)        21595  2   31 
-           (A,12771002,R.P.Larsen+,J,NSE,54,263,1974)             21595  2   32 
-           (A,,M.E.Meek+,R,NEDO-12154-1,1974) - All values        21595  2   33 
-                                compared with data from this ref. 21595  2   34 
-ERR-ANALYS1(DATA-ERR) One standard deviation, including           21595  2   35 
-            uncertainties in analysis of absolute yields and      21595  2   36 
-          2(ERR-S) statistical errors                             21595  2   37 
-STATUS     (TABLE) Table I from Nucl.Sci.Eng.,58(1975)414.        21595  2   38 
-           (DEP,21595003) R-values                                21595  2   39 
-HISTORY    (20200906A) SD: REACTION code modified. REACTION (2)   21595  2   40 
-           added. MONITOR added. STATUS updated.                  21595  2   41 
-ENDBIB              39          0                                 21595  2   42 
-NOCOMMON             0          0                                 21595  2   43 
-DATA                 7         26                                 21595  2   44 
-MASS       ELEMENT    DATA      1DATA-ERR  1DATA      2ERR-S     221595  2   45 
-FLAG                                                              21595  2   46 
-NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM     NO-DIM     21595  2   47 
-NO-DIM                                                            21595  2   48 
-        87.        36.       2.89       0.10      1.140      0.03321595  2   49 
-                                                                  21595  2   50 
-        88.        36.       4.45       0.10      1.234      0.01721595  2   51 
-         1.                                                       21595  2   52 
-        91.        38.       5.64       0.12      0.957      0.01421595  2   53 
-                                                                  21595  2   54 
-        92.        38.       5.77       0.12      0.974      0.01421595  2   55 
-         2.                                                       21595  2   56 
-        93.        39.       6.23       0.13      0.983      0.01521595  2   57 
-                                                                  21595  2   58 
-        94.        39.       6.12       0.27      0.959      0.04021595  2   59 
-                                                                  21595  2   60 
-        95.        40.       6.49       0.19      1.010      0.02521595  2   61 
-                                                                  21595  2   62 
-        97.        40.       6.05       0.13      1.019      0.01421595  2   63 
-         3.                                                       21595  2   64 
-        99.        42.       6.23       0.13      1.021      0.01421595  2   65 
-                                                                  21595  2   66 
-       101.        43.       5.32       0.13      1.059      0.01821595  2   67 
-                                                                  21595  2   68 
-       103.        44.       3.21       0.11      1.028      0.02321595  2   69 
-                                                                  21595  2   70 
-       104.        43.       1.87       0.11      1.032      0.05721595  2   71 
-                                                                  21595  2   72 
-       105.        44.       1.17       0.13      1.188      0.03221595  2   73 
-                                                                  21595  2   74 
-       131.        53.       3.07       0.08      1.088      0.02021595  2   75 
-                                                                  21595  2   76 
-       132.        52.       4.59       0.10      1.093      0.01521595  2   77 
-         4.                                                       21595  2   78 
-       133.        53.       7.10       0.14      1.053      0.01521595  2   79 
-                                                                  21595  2   80 
-       134.        52.       7.81       0.17      1.022      0.01421595  2   81 
-         4.                                                       21595  2   82 
-       135.        53.       6.68       0.17      1.012      0.01421595  2   83 
-                                                                  21595  2   84 
-       139.        56.       6.54       0.15      1.014      0.01421595  2   85 
-                                                                  21595  2   86 
-       141.        56.       5.56       0.18      0.948      0.02621595  2   87 
-         5.                                                       21595  2   88 
-       142.        57.       5.59       0.12      0.946      0.01521595  2   89 
-                                                                  21595  2   90 
-       143.        58.       5.72       0.20      0.962      0.03021595  2   91 
-                                                                  21595  2   92 
-       146.        59.       2.76       0.12      0.926      0.03921595  2   93 
-                                                                  21595  2   94 
-       147.        60.       2.28       0.13      1.004      0.05621595  2   95 
-                                                                  21595  2   96 
-       149.        60.       1.06       0.03      0.970      0.01721595  2   97 
-                                                                  21595  2   98 
-       151.        61.       0.43       0.02      1.020      0.03221595  2   99 
-                                                                  21595  2  100 
-ENDDATA             56          0                                 21595  2  101 
-ENDSUBENT          100          0                                 21595  299999 
-SUBENT        21595003   20200906                             229421595  3    1 
-BIB                  9         17                                 21595  3    2 
+           (20230319A) SD: Correction in Subent 002.              21595  1   42 
+ENDBIB              40          0                                 21595  1   43 
+NOCOMMON             0          0                                 21595  1   44 
+ENDSUBENT           43          0                                 21595  199999 
+SUBENT        21595002   20230319                             231621595  2    1 
+BIB                  9         33                                 21595  2    2 
+REACTION   (92-U-235(N,F)MASS,CHN,FY,,FST)                        21595  2    3 
+ANALYSIS   Relative yields were converted to absolute yields by   21595  2    4 
+           normalizing the total fission yields of all nuclides in21595  2    5 
+           the heavy peak to 100%. The measured yields amount to  21595  2    6 
+           ~66% of the total yield in the heavy peak. The yields  21595  2    7 
+           of the missing mass chains were interpolated.          21595  2    8 
+MONITOR    (92-U-235(N,F)ELEM/MASS,CUM,FY)                        21595  2    9 
+MONIT-REF  (,M.E.Meek+,R,NEDO-12154-1,1974)                       21595  2   10 
+REL-REF    (A,13270016,F.L.Lisman+,J,NSE,42,191,1970)             21595  2   11 
+           (A,13270017,F.L.Lisman+,J,NSE,42,191,1970)             21595  2   12 
+           (A,20768002,J.G.Cuninghame+,R,AERE-R-6862,1972)        21595  2   13 
+           (A,12771002,R.P.Larsen+,J,NSE,54,263,1974)             21595  2   14 
+           (A,,M.E.Meek+,R,NEDO-12154-1,1974) - All values        21595  2   15 
+                                compared with data from this ref. 21595  2   16 
+FLAG       (1.) In Tbl.I result was assigned to Kr and Rb but in  21595  2   17 
+           Tbl.III value compared with Kr from F.L.Lisman+        21595  2   18 
+           (2.) In Tbl.I result was assigned to Sr, Y but in      21595  2   19 
+           Tbl.III value compared with Sr from M.E.Meek+          21595  2   20 
+           (3.) In Tbl.I result was assigned to Zr, Nb but in     21595  2   21 
+           Tbl.III value compared with Zr from F.L.Lisman+        21595  2   22 
+           (4.) In Tbl.I result was assigned to Te, I but in      21595  2   23 
+           Tbl.III value compared with Xe from F.L.Lisman+        21595  2   24 
+           (5.) In Tbl.I result was assigned to Ba, Ce but in     21595  2   25 
+           Tbl.III value compared with estimated Ce from          21595  2   26 
+           F.L.Lisman+ and Ce from J.G.Cuninghame+                21595  2   27 
+ERR-ANALYS (DATA-ERR) One standard deviation, including           21595  2   28 
+            uncertainties in analysis of absolute yields and      21595  2   29 
+STATUS     (TABLE) Table I from Nucl.Sci.Eng.,58(1975)414.        21595  2   30 
+           (DEP,21595004) R-values                                21595  2   31 
+HISTORY    (20200906A) SD: REACTION code modified. REACTION (2)   21595  2   32 
+           added. MONITOR added. STATUS updated.                  21595  2   33 
+           (20230319A) SD: SF4=ELEM/MASS -> MASS in REACTION (1)  21595  2   34 
+           code. Subent 002 was split in two. Subent 004 added.   21595  2   35 
+ENDBIB              33          0                                 21595  2   36 
+COMMON               1          3                                 21595  2   37 
+EN-MEAN                                                           21595  2   38 
+MEV                                                               21595  2   39 
+ 0.180                                                            21595  2   40 
+ENDCOMMON            3          0                                 21595  2   41 
+DATA                 4         26                                 21595  2   42 
+MASS       DATA       DATA-ERR   FLAG                             21595  2   43 
+NO-DIM     PC/FIS     PC/FIS     NO-DIM                           21595  2   44 
+        87.       2.89       0.10                                 21595  2   45 
+        88.       4.45       0.10         1.                      21595  2   46 
+        91.       5.64       0.12                                 21595  2   47 
+        92.       5.77       0.12         2.                      21595  2   48 
+        93.       6.23       0.13                                 21595  2   49 
+        94.       6.12       0.27                                 21595  2   50 
+        95.       6.49       0.19                                 21595  2   51 
+        97.       6.05       0.13         3.                      21595  2   52 
+        99.       6.23       0.13                                 21595  2   53 
+       101.       5.32       0.13                                 21595  2   54 
+       103.       3.21       0.11                                 21595  2   55 
+       104.       1.87       0.11                                 21595  2   56 
+       105.       1.17       0.13                                 21595  2   57 
+       131.       3.07       0.08                                 21595  2   58 
+       132.       4.59       0.10         4.                      21595  2   59 
+       133.       7.10       0.14                                 21595  2   60 
+       134.       7.81       0.17         4.                      21595  2   61 
+       135.       6.68       0.17                                 21595  2   62 
+       139.       6.54       0.15                                 21595  2   63 
+       141.       5.56       0.18         5.                      21595  2   64 
+       142.       5.59       0.12                                 21595  2   65 
+       143.       5.72       0.20                                 21595  2   66 
+       146.       2.76       0.12                                 21595  2   67 
+       147.       2.28       0.13                                 21595  2   68 
+       149.       1.06       0.03                                 21595  2   69 
+       151.       0.43       0.02                                 21595  2   70 
+ENDDATA             28          0                                 21595  2   71 
+ENDSUBENT           70          0                                 21595  299999 
+SUBENT        21595003   20230319                             231621595  3    1 
+BIB                  9         18                                 21595  3    2 
 REACTION   (((94-PU-239(N,F)ELEM/MASS,CUM,FY,,FST)/               21595  3    3 
            (94-PU-239(N,F)56-BA-140,CUM,FY,,FST))//               21595  3    4 
            ((94-PU-239(N,F)ELEM/MASS,CUM,FY)/                     21595  3    5 
@@ -167,32 +134,97 @@ COMMENT     Not enough mass chains could be analysed to perform   21595  3   14
 ERR-ANALYS (ERR-S) statistical errors                             21595  3   16 
 STATUS     (TABLE) Table IV from Nucl.Sci.Eng.,58(1975)414.       21595  3   17 
 HISTORY    (20200906A) SD: REACTION code was modified.            21595  3   18 
-           STATUS updated. Col. ELEMENT  added.                   21595  3   19 
-ENDBIB              17          0                                 21595  3   20 
-NOCOMMON             0          0                                 21595  3   21 
-DATA                 5         20                                 21595  3   22 
-MASS       ELEMENT    DATA       ERR-S      FLAG                  21595  3   23 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                21595  3   24 
-        91.        38.      0.497      0.007         1.           21595  3   25 
-        92.        38.      0.589      0.008         1.           21595  3   26 
-        93.        39.      0.640      0.015                      21595  3   27 
-        95.        40.      1.057      0.036                      21595  3   28 
-        97.        40.      1.068      0.017                      21595  3   29 
-        99.        42.      1.169      0.023         2.           21595  3   30 
-       101.        43.      1.648      0.085                      21595  3   31 
-       103.        44.      2.468      0.053                      21595  3   32 
-       105.        44.      6.798      0.144                      21595  3   33 
-       132.        53.      1.491      0.068                      21595  3   34 
-       133.        53.      1.244      0.021                      21595  3   35 
-       134.        53.      0.970      0.023                      21595  3   36 
-       135.        53.      1.228      0.021                      21595  3   37 
-       139.        56.      1.117      0.080                      21595  3   38 
-       141.        56.      1.139      0.020         3.           21595  3   39 
-       142.        57.      1.000      0.017                      21595  3   40 
-       143.        58.      0.839      0.022                      21595  3   41 
-       147.        60.      0.989      0.021                      21595  3   42 
-       149.        60.      1.415      0.259                      21595  3   43 
-       151.        61.      2.091      0.155                      21595  3   44 
-ENDDATA             22          0                                 21595  3   45 
-ENDSUBENT           44          0                                 21595  399999 
-ENDENTRY             3          0                                 2159599999999 
+           STATUS updated. Col. ELEMENT added.                    21595  3   19 
+           (20230319U) SD: EN-MEAN-NM and EN-DUM-DN added.        21595  3   20 
+ENDBIB              18          0                                 21595  3   21 
+COMMON               2          3                                 21595  3   22 
+EN-MEAN-NM EN-DUM-DN                                              21595  3   23 
+MEV        EV                                                     21595  3   24 
+ 0.180        0.0253                                              21595  3   25 
+ENDCOMMON            3          0                                 21595  3   26 
+DATA                 5         20                                 21595  3   27 
+MASS       ELEMENT    DATA       ERR-S      FLAG                  21595  3   28 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                21595  3   29 
+        91.        38.      0.497      0.007         1.           21595  3   30 
+        92.        38.      0.589      0.008         1.           21595  3   31 
+        93.        39.      0.640      0.015                      21595  3   32 
+        95.        40.      1.057      0.036                      21595  3   33 
+        97.        40.      1.068      0.017                      21595  3   34 
+        99.        42.      1.169      0.023         2.           21595  3   35 
+       101.        43.      1.648      0.085                      21595  3   36 
+       103.        44.      2.468      0.053                      21595  3   37 
+       105.        44.      6.798      0.144                      21595  3   38 
+       132.        53.      1.491      0.068                      21595  3   39 
+       133.        53.      1.244      0.021                      21595  3   40 
+       134.        53.      0.970      0.023                      21595  3   41 
+       135.        53.      1.228      0.021                      21595  3   42 
+       139.        56.      1.117      0.080                      21595  3   43 
+       141.        56.      1.139      0.020         3.           21595  3   44 
+       142.        57.      1.000      0.017                      21595  3   45 
+       143.        58.      0.839      0.022                      21595  3   46 
+       147.        60.      0.989      0.021                      21595  3   47 
+       149.        60.      1.415      0.259                      21595  3   48 
+       151.        61.      2.091      0.155                      21595  3   49 
+ENDDATA             22          0                                 21595  3   50 
+ENDSUBENT           49          0                                 21595  399999 
+SUBENT        21595004   20230319                             231621595  4    1 
+BIB                  9         21                                 21595  4    2 
+REACTION   (((92-U-235(N,F)ELEM/MASS,CUM,FY,,FST)/                21595  4    3 
+           (92-U-235(N,F)56-BA-140,CUM,FY,,FST))//                21595  4    4 
+           ((92-U-235(N,F)ELEM/MASS,CUM,FY)/                      21595  4    5 
+           (92-U-235(N,F)56-BA-140,CUM,FY)))                      21595  4    6 
+RESULT     (RVAL)                                                 21595  4    7 
+ANALYSIS   Relative yields were converted to absolute yields by   21595  4    8 
+           normalizing the total fission yields of all nuclides in21595  4    9 
+           the heavy peak to 100%. The measured yields amount to  21595  4   10 
+           ~66% of the total yield in the heavy peak. The yields  21595  4   11 
+           of the missing mass chains were interpolated.          21595  4   12 
+MONITOR    ((92-U-235(N,F)56-BA-140,CUM,FY,,FST)/                 21595  4   13 
+           (92-U-235(N,F)56-BA-140,CUM,FY))                       21595  4   14 
+MONIT-REF  (,M.E.Meek+,R,NEDO-12154-1,1974)                       21595  4   15 
+FLAG       (1.) In Tbl.I result was assigned to Kr and Rb         21595  4   16 
+           (2.) In Tbl.I result was assigned to Sr, Y             21595  4   17 
+           (3.) In Tbl.I result was assigned to Zr, Nb            21595  4   18 
+           (4.) In Tbl.I result was assigned to Te, I             21595  4   19 
+           (5.) In Tbl.I result was assigned to Ba, Ce            21595  4   20 
+ERR-ANALYS (ERR-S) statistical errors                             21595  4   21 
+STATUS     (TABLE) Table I from Nucl.Sci.Eng.,58(1975)414.        21595  4   22 
+HISTORY    (20230319T) SD: Part of Subent 002.                    21595  4   23 
+ENDBIB              21          0                                 21595  4   24 
+COMMON               2          3                                 21595  4   25 
+EN-MEAN-NM EN-DUM-DN                                              21595  4   26 
+MEV        EV                                                     21595  4   27 
+ 0.180        0.0253                                              21595  4   28 
+ENDCOMMON            3          0                                 21595  4   29 
+DATA                 5         26                                 21595  4   30 
+MASS       ELEMENT    DATA       ERR-S      FLAG                  21595  4   31 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                21595  4   32 
+        87.        36.      1.140      0.033                      21595  4   33 
+        88.        36.      1.234      0.017         1.           21595  4   34 
+        91.        38.      0.957      0.014                      21595  4   35 
+        92.        38.      0.974      0.014         2.           21595  4   36 
+        93.        39.      0.983      0.015                      21595  4   37 
+        94.        39.      0.959      0.040                      21595  4   38 
+        95.        40.      1.010      0.025                      21595  4   39 
+        97.        40.      1.019      0.014         3.           21595  4   40 
+        99.        42.      1.021      0.014                      21595  4   41 
+       101.        43.      1.059      0.018                      21595  4   42 
+       103.        44.      1.028      0.023                      21595  4   43 
+       104.        43.      1.032      0.057                      21595  4   44 
+       105.        44.      1.188      0.032                      21595  4   45 
+       131.        53.      1.088      0.020                      21595  4   46 
+       132.        52.      1.093      0.015         4.           21595  4   47 
+       133.        53.      1.053      0.015                      21595  4   48 
+       134.        52.      1.022      0.014         4.           21595  4   49 
+       135.        53.      1.012      0.014                      21595  4   50 
+       139.        56.      1.014      0.014                      21595  4   51 
+       141.        56.      0.948      0.026         5.           21595  4   52 
+       142.        57.      0.946      0.015                      21595  4   53 
+       143.        58.      0.962      0.030                      21595  4   54 
+       146.        59.      0.926      0.039                      21595  4   55 
+       147.        60.      1.004      0.056                      21595  4   56 
+       149.        60.      0.970      0.017                      21595  4   57 
+       151.        61.      1.020      0.032                      21595  4   58 
+ENDDATA             28          0                                 21595  4   59 
+ENDSUBENT           58          0                                 21595  499999 
+ENDENTRY             4          0                                 2159599999999 
