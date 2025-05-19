@@ -1,28 +1,33 @@
-ENTRY            10370   20021206                             00001037000000001 
-SUBENT        10370001   20021206                             00001037000100001 
-BIB                 10         15                                 1037000100002 
-INSTITUTE  (1USAALB)                                              1037000100003 
-REFERENCE  (J,NP/A,212,147,197309)                                1037000100004 
-AUTHOR     (R.E.Benenson,K.Rimawi,E.H.Sexton,B.Center)            1037000100005 
-TITLE      Small angle elastic scattering of 14.8 MeV neutrons    1037000100006 
-METHOD     (ASSOP,TOF) Associated particle time-of-flight         1037000100007 
-DETECTOR   (SCIN) NE102 plastic scintillator                      1037000100008 
-CORRECTION Correction for background,inscattering,attenuation and 1037000100009 
-            multiple scattering.                                  1037000100010 
-ERR-ANALYS (ERR-S) Statistical uncertainty given.                 1037000100011 
-STATUS     (APRVD) Approved by author                             1037000100012 
-            Tabulated data received from author.                  1037000100013 
-HISTORY    (19740508C)                                            1037000100014 
-           (19830425A) Converted to REACTION formalism            1037000100015 
-           (20021206A) Converted to new date formats, lower case. 1037000100016 
-                       SF4 added to reactions and monitors.       1037000100017 
-ENDBIB              15          0                                 1037000100018 
-COMMON               1          3                                 1037000100019 
-EN                                                                1037000100020 
-MEV                                                               1037000100021 
-14.8                                                              1037000100022 
-ENDCOMMON            3          0                                 1037000100023 
-ENDSUBENT           22          0                                 1037000199999 
+ENTRY            10370   20240314                             150810370000    1 
+SUBENT        10370001   20240314                             150810370001    1 
+BIB                 11         20                                 10370001    2 
+INSTITUTE  (1USAALB)                                              10370001    3 
+REFERENCE  (J,NP/A,212,147,1973)                                  10370001    4 
+           #doi:10.1016/0375-9474(73)90041-9                      10370001    5 
+AUTHOR     (R.E.Benenson,K.Rimawi,E.H.Sexton,B.Center)            10370001    6 
+TITLE      Small angle elastic scattering of 14.8 MeV neutrons    10370001    7 
+METHOD     (ASSOP,TOF) Associated particle time-of-flight         10370001    8 
+INC-SOURCE (D-T)                                                  10370001    9 
+DETECTOR   (SCIN) NE102 plastic scintillator                      10370001   10 
+CORRECTION Correction for background,inscattering,attenuation and 10370001   11 
+            multiple scattering.                                  10370001   12 
+ERR-ANALYS (ERR-S) Statistical uncertainty given.                 10370001   13 
+STATUS     (APRVD) Approved by author                             10370001   14 
+           (TABLE)  Tabulated data received from author.          10370001   15 
+HISTORY    (19740508C)                                            10370001   16 
+           (19830425A) Converted to REACTION formalism            10370001   17 
+           (20021206A) Converted to new date formats, lower case. 10370001   18 
+                       SF4 added to reactions and monitors.       10370001   19 
+           (20230817A) OS. REACTION in sub.5 corrected, INC-SOURCE10370001   20 
+            added                                                 10370001   21 
+           (20240314A) On. Major alterations in 005.              10370001   22 
+ENDBIB              20          0                                 10370001   23 
+COMMON               1          3                                 10370001   24 
+EN                                                                10370001   25 
+MEV                                                               10370001   26 
+14.8                                                              10370001   27 
+ENDCOMMON            3          0                                 10370001   28 
+ENDSUBENT           27          0                                 1037000199999 
 SUBENT        10370002   20021206                             00001037000200001 
 BIB                  2          4                                 1037000200002 
 REACTION   (92-U-0(N,EL)92-U-0,,DA)                               1037000200003 
@@ -96,25 +101,32 @@ ADEG       B/SR       B/SR                                        1037000400009
 10.28        6.56      0.49                                       1037000400020 
 ENDDATA             13          0                                 1037000400021 
 ENDSUBENT           20          0                                 1037000499999 
-SUBENT        10370005   20021206                             00001037000500001 
-BIB                  2          2                                 1037000500002 
-REACTION   (73-TA-181(N,EL)73-TA-181,,DA)                         1037000500003 
-MONITOR    (82-PB-0(N,EL)82-PB-0,,DA)                             1037000500004 
-ENDBIB               2          0                                 1037000500005 
-NOCOMMON             0          0                                 1037000500006 
-DATA                 3          8                                 1037000500007 
-ANG-CM     DATA       ERR-S                                       1037000500008 
-ADEG       B/SR       B/SR                                        1037000500009 
- 1.80       12.80      0.61                                       1037000500010 
- 2.23       12.56      0.64                                       1037000500011 
- 3.35       13.54      0.85                                       1037000500012 
- 4.50       11.81      0.58                                       1037000500013 
- 5.63       11.40      0.75                                       1037000500014 
- 6.76       10.26      0.52                                       1037000500015 
- 9.01        7.92      0.41                                       1037000500016 
-10.35        7.60      0.39                                       1037000500017 
-ENDDATA             10          0                                 1037000500018 
-ENDSUBENT           17          0                                 1037000599999 
+SUBENT        10370005   20240314                             150810370005    1 
+BIB                  3          5                                 10370005    2 
+REACTION   (73-TA-181(N,SCT)73-TA-181,PAR,DA)                     10370005    3 
+MONITOR    (82-PB-0(N,EL)82-PB-0,,DA)                             10370005    4 
+HISTORY    (20230817A) REACTION SF3 changed to SCT,               10370005    5 
+            added REACTION SF5, COMMON                            10370005    6 
+           (20240314A) On. DATA -> DATA-CM.                       10370005    7 
+ENDBIB               5          0                                 10370005    8 
+COMMON               1          3                                 10370005    9 
+E-EXC-MX-A                                                        10370005   10 
+MEV                                                               10370005   11 
+  4.                                                              10370005   12 
+ENDCOMMON            3          0                                 10370005   13 
+DATA                 3          8                                 10370005   14 
+ANG-CM     DATA-CM    ERR-S                                       10370005   15 
+ADEG       B/SR       B/SR                                        10370005   16 
+ 1.80       12.80      0.61                                       10370005   17 
+ 2.23       12.56      0.64                                       10370005   18 
+ 3.35       13.54      0.85                                       10370005   19 
+ 4.50       11.81      0.58                                       10370005   20 
+ 5.63       11.40      0.75                                       10370005   21 
+ 6.76       10.26      0.52                                       10370005   22 
+ 9.01        7.92      0.41                                       10370005   23 
+10.35        7.60      0.39                                       10370005   24 
+ENDDATA             10          0                                 10370005   25 
+ENDSUBENT           24          0                                 1037000599999 
 SUBENT        10370006   20021206                             00001037000600001 
 BIB                  2          2                                 1037000600002 
 REACTION   (50-SN-0(N,EL)50-SN-0,,DA)                             1037000600003 

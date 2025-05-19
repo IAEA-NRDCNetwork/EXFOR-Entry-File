@@ -1,25 +1,29 @@
-ENTRY            11450   20071108                             Y0011145000000001 
-SUBENT        11450001   20071108                             Y0011145000100001 
-BIB                 11         16                                 1145000100002 
-INSTITUTE  (1USAANL)                                              1145000100003 
-REFERENCE  (J,PR,75,1781,194906)                                  1145000100004 
-AUTHOR     (D.J.Hughes,W.D.B.Spatz,N.GOLDSTEIN)                   1145000100005 
-TITLE      Capture Cross Sections for Fast Neutrons               1145000100006 
-FACILITY   (REAC,1USAANL)                                         1145000100007 
-INC-SPECT  Fission neutrons from 235U in thermal beam.            1145000100008 
-METHOD     (ACTIV) Activation                                     1145000100009 
-DETECTOR   (GEMUC)                                                1145000100010 
-MONIT-REF  (11447001,SEREN+,J,PR,72,888,1947)                     1145000100011 
-STATUS     (SCSRS)                                                1145000100012 
-HISTORY    (19760715T) Translated from SCISRS                     1145000100013 
-           (19820813A) Converted to REACTION formalism            1145000100014 
-           (19840712A) Correct energies put in SAN'S.             1145000100015 
-           (20021211A) Converted to new date formats, lower case. 1145000100016 
-                       Data corrected.                            1145000100017 
-           (20071108A) BIB update                                 1145000100018 
-ENDBIB              16          0                                 1145000100019 
-NOCOMMON             0          0                                 1145000100020 
-ENDSUBENT           19          0                                 1145000199999 
+ENTRY            11450   20240314                             150811450000    1 
+SUBENT        11450001   20240314                             150811450001    1 
+BIB                 11         20                                 11450001    2 
+INSTITUTE  (1USAANL)                                              11450001    3 
+REFERENCE  (J,PR,75,1781,1949)                                    11450001    4 
+           #doi:10.1103/PhysRev.75.1781                           11450001    5 
+AUTHOR     (D.J.Hughes,W.D.B.Spatz,N.Goldstein)                   11450001    6 
+TITLE      Capture Cross Sections for Fast Neutrons               11450001    7 
+FACILITY   (REAC,1USAANL)                                         11450001    8 
+INC-SPECT  Fission neutrons from 235U in thermal beam.            11450001    9 
+METHOD     (ACTIV)                                                11450001   10 
+DETECTOR   (GEMUC)                                                11450001   11 
+MONIT-REF  (11447001,L.Seren+,J,PR,72,888,1947)                   11450001   12 
+STATUS     (TABLE,,D.J.Hughes+,J,PR,75,1781,1949)                 11450001   13 
+            Table I, J,PR,75,1781,1949                            11450001   14 
+HISTORY    (19760715T) Translated from SCISRS                     11450001   15 
+           (19820813A) Converted to REACTION formalism            11450001   16 
+           (19840712A) Correct energies put in SAN'S.             11450001   17 
+           (20021211A) Converted to new date formats, lower case. 11450001   18 
+                       Data corrected.                            11450001   19 
+           (20071108A) BIB update                                 11450001   20 
+           (20230818A) OS. STATUS corrected, correction in sub.31 11450001   21 
+           (20240314A) On. Major alteration in 031.               11450001   22 
+ENDBIB              20          0                                 11450001   23 
+NOCOMMON             0          0                                 11450001   24 
+ENDSUBENT           23          0                                 1145000199999 
 SUBENT        11450002   20021212                             00001145000200001 
 BIB                  3          3                                 1145000200002 
 REACTION   (11-NA-23(N,G)11-NA-24,,SIG,,FIS)                      1145000200003 
@@ -376,19 +380,22 @@ MEV        MB         B                                           1145003000010
   1.        63.        57.                                        1145003000011 
 ENDDATA              3          0                                 1145003000012 
 ENDSUBENT           11          0                                 1145003099999 
-SUBENT        11450031   20021212                             00001145003100001 
-BIB                  3          3                                 1145003100002 
-REACTION   (49-IN-115(N,G)49-IN-116-M,,SIG,,FIS)                  1145003100003 
-MONITOR    (49-IN-115(N,G)49-IN-116-M,,SIG,,MXW)                  1145003100004 
-DECAY-DATA (49-IN-116-M,54.MIN)                                   1145003100005 
-ENDBIB               3          0                                 1145003100006 
-NOCOMMON             0          0                                 1145003100007 
-DATA                 3          1                                 1145003100008 
-EN-DUMMY   DATA       MONIT                                       1145003100009 
-MEV        MB         B                                           1145003100010 
-  1.       180.       157.                                        1145003100011 
-ENDDATA              3          0                                 1145003100012 
-ENDSUBENT           11          0                                 1145003199999 
+SUBENT        11450031   20240314                             150811450031    1 
+BIB                  4          6                                 11450031    2 
+REACTION   (49-IN-115(N,G)49-IN-116-M1+M2,,SIG,,FIS)              11450031    3 
+MONITOR    (49-IN-115(N,G)49-IN-116-M1+M2,,SIG,,MXW)              11450031    4 
+DECAY-DATA (49-IN-116-M1,54.MIN)                                  11450031    5 
+HISTORY    (20230818A) Isomer extension in REACTION SF4 and       11450031    6 
+            DECAY-DATA corrected                                  11450031    7 
+           (20240314A) On. -M -> -M1+M2 in MONITOR SF4.           11450031    8 
+ENDBIB               6          0                                 11450031    9 
+NOCOMMON             0          0                                 11450031   10 
+DATA                 3          1                                 11450031   11 
+EN-DUMMY   DATA       MONIT                                       11450031   12 
+MEV        MB         B                                           11450031   13 
+  1.       180.       157.                                        11450031   14 
+ENDDATA              3          0                                 11450031   15 
+ENDSUBENT           14          0                                 1145003199999 
 SUBENT        11450032   20021212                             00001145003200001 
 BIB                  3          3                                 1145003200002 
 REACTION   (51-SB-121(N,G)51-SB-122,,SIG,,FIS)                    1145003200003 
