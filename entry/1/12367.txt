@@ -1,68 +1,160 @@
-ENTRY            12367   19820519                             00001236700000001 
-SUBENT        12367001   19820519                             00001236700100001 
-BIB                  7         10                                 1236700100002 
-INSTITUTE  (1CANCRC)                                              1236700100003 
-REFERENCE  (R,CRC-633,5601)                                       1236700100004 
-AUTHOR     (F.W.CORNISH,M.LOUNSBURY)                              1236700100005 
-TITLE      CROSS SECTIONS OF PU-239 AND PU-240 IN THE THERMAL AND 1236700100006 
-            EPI-CADMIUM REGIONS.                                  1236700100007 
-N-SOURCE   (REAC) NRX REACTOR                                     1236700100008 
-MONITOR    (27-CO-59(N,G)27-CO-60,,SIG)                           1236700100009 
-           (27-CO-59(N,G)27-CO-60,,RI)                            1236700100010 
-HISTORY    (761006C)                                              1236700100011 
-           (820519A) CONVERTED TO REACTION FORMALISM              1236700100012 
-ENDBIB              10          0                                 1236700100013 
-COMMON               2          3                                 1236700100014 
-MONIT1     MONIT2                                                 1236700100015 
-B          B                                                      1236700100016 
- 36.4       49.3                                                  1236700100017 
-ENDCOMMON            3          0                                 1236700100018 
-ENDSUBENT           17          0                                 1236700199999 
-SUBENT        12367002   19820519                             00001236700200001 
-BIB                  1          1                                 1236700200002 
-REACTION   (94-PU-240(N,ABS),,RI)                                 1236700200003 
-ENDBIB               1          0                                 1236700200004 
-NOCOMMON             0          0                                 1236700200005 
-DATA                 3          1                                 1236700200006 
-EN-MIN     DATA       DATA-ERR                                    1236700200007 
-EV         B          B                                           1236700200008 
- 0.5        8700.      800.                                       1236700200009 
-ENDDATA              3          0                                 1236700200010 
-ENDSUBENT            9          0                                 1236700299999 
-SUBENT        12367003   19820519                             00001236700300001 
-BIB                  3          4                                 1236700300002 
-REACTION   (94-PU-240(N,ABS),,SIG,,MXW)                           1236700300003 
-STATUS     (DEP,12367002)                                         1236700300004 
-ANALYSIS   CALCULATED FROM RESONANCE INTEGRAL ASSUMING RESONANCE  1236700300005 
-            CONTRIBUTION TO ABSORPTION CROSS SECTION = 550 B.     1236700300006 
-ENDBIB               4          0                                 1236700300007 
-NOCOMMON             0          0                                 1236700300008 
-DATA                 3          1                                 1236700300009 
-EN-DUMMY   DATA       DATA-ERR                                    1236700300010 
-EV         B          B                                           1236700300011 
- 0.0253     250.       35.                                        1236700300012 
-ENDDATA              3          0                                 1236700300013 
-ENDSUBENT           12          0                                 1236700399999 
-SUBENT        12367004   19820519                             00001236700400001 
-BIB                  1          1                                 1236700400002 
-REACTION   (94-PU-239(N,G)94-PU-240,,RI)                          1236700400003 
-ENDBIB               1          0                                 1236700400004 
-NOCOMMON             0          0                                 1236700400005 
-DATA                 3          1                                 1236700400006 
-EN-MIN     DATA       DATA-ERR                                    1236700400007 
-EV         B          B                                           1236700400008 
- 0.5        221.       11.                                        1236700400009 
-ENDDATA              3          0                                 1236700400010 
-ENDSUBENT            9          0                                 1236700499999 
-SUBENT        12367005   19820519                             00001236700500001 
-BIB                  1          1                                 1236700500002 
-REACTION   (94-PU-239(N,F),,RI)                                   1236700500003 
-ENDBIB               1          0                                 1236700500004 
-NOCOMMON             0          0                                 1236700500005 
-DATA                 3          1                                 1236700500006 
-EN-MIN     DATA       DATA-ERR                                    1236700500007 
-EV         B          B                                           1236700500008 
- 0.5        434.       81.                                        1236700500009 
-ENDDATA              3          0                                 1236700500010 
-ENDSUBENT            9          0                                 1236700599999 
-ENDENTRY             5          0                                 1236799999999 
+ENTRY            12367   20161021                             142412367  0    1 
+SUBENT        12367001   20161021                             142412367  1    1 
+BIB                 12         27                                 12367  1    2 
+TITLE      Cross sections of Pu-239 and Pu-240 in the thermal     12367  1    3 
+           and epi-cadmium regions                                12367  1    4 
+AUTHOR     (F.W.Cornish,M.Lounsbury)                              12367  1    5 
+REFERENCE  ((R,CRC-633,1956)=(R,AECL-510,1957))                   12367  1    6 
+INSTITUTE  (1CANCRC)                                              12367  1    7 
+FACILITY   (REAC,1CANCRC) NRX reactor.                            12367  1    8 
+DETECTOR   (IOCH) Cylindrical high-pressure ionization chamber.   12367  1    9 
+SAMPLE     (94-PU-239,ENR=0.98891) 150 mg of plutonium in 3 ml    12367  1   10 
+           solution.                                              12367  1   11 
+           (94-PU-240,ENR=0.01076)                                12367  1   12 
+           (94-PU-241,ENR=0.00033) Half life of 241Pu is needed   12367  1   13 
+            (having the shortest half-life of the 3 isotopes) to  12367  1   14 
+           calculate the abundances of the isotopes in the sample.12367  1   15 
+METHOD     (ACTIV,CHSEP) After the irradiation, the ratio of      12367  1   16 
+           fission product activities in the samples was          12367  1   17 
+           measured by counting gross gamma-rays from the         12367  1   18 
+           fission products. Each sample of plutonium was         12367  1   19 
+           chemically separated from fission products and         12367  1   20 
+           aluminum wrapping was analyzed.                        12367  1   21 
+DECAY-DATA (94-PU-241,13.0YR)                                     12367  1   22 
+CORRECTION All results were corrected for the decay of Pu-241     12367  1   23 
+           back to the end of irradiation period.                 12367  1   24 
+ERR-ANALYS (DATA-ERR) All quoted errors are standard deviations.  12367  1   25 
+HISTORY    (19761006C)                                            12367  1   26 
+           (19820519A) converted to reaction formalism            12367  1   27 
+           (20161021A) BP: Updated to new date formats,lower case.12367  1   28 
+                      Added 0.100" (0.8 eV) cadmium wrapping data.12367  1   29 
+ENDBIB              27          0                                 12367  1   30 
+NOCOMMON             0          0                                 12367  1   31 
+ENDSUBENT           30          0                                 12367  199999 
+SUBENT        12367002   20161021                             142412367  2    1 
+BIB                  3          3                                 12367  2    2 
+REACTION   (94-PU-240(N,ABS),,RI)                                 12367  2    3 
+MONITOR    (27-CO-59(N,G)27-CO-60,,RI)                            12367  2    4 
+STATUS     (TABLE) Table 6 page 30.                               12367  2    5 
+ENDBIB               3          0                                 12367  2    6 
+COMMON               1          3                                 12367  2    7 
+MONIT                                                             12367  2    8 
+B                                                                 12367  2    9 
+       49.3                                                       12367  2   10 
+ENDCOMMON            3          0                                 12367  2   11 
+DATA                 3          1                                 12367  2   12 
+EN-MIN     DATA       DATA-ERR                                    12367  2   13 
+EV         B          B                                           12367  2   14 
+        0.5      8700.       800.                                 12367  2   15 
+ENDDATA              3          0                                 12367  2   16 
+ENDSUBENT           15          0                                 12367  299999 
+SUBENT        12367003   20161021                             142412367  3    1 
+BIB                  5          7                                 12367  3    2 
+REACTION   (94-PU-240(N,ABS),,SIG,,MXW)                           12367  3    3 
+REL-REF    (R,,P.Fields+,R,CRP-546,112,1954) sigma T0 in NRX ref. 12367  3    4 
+ANALYSIS   Calculated from resonance integral assuming resonance  12367  3    5 
+           contribution to absorption cross section = 550+-20 B.  12367  3    6 
+MONITOR    (27-CO-59(N,G)27-CO-60,,SIG)                           12367  3    7 
+STATUS     (DEP,12367002)                                         12367  3    8 
+           (TABLE) page 24.                                       12367  3    9 
+ENDBIB               7          0                                 12367  3   10 
+COMMON               1          3                                 12367  3   11 
+MONIT                                                             12367  3   12 
+B                                                                 12367  3   13 
+       36.4                                                       12367  3   14 
+ENDCOMMON            3          0                                 12367  3   15 
+DATA                 3          1                                 12367  3   16 
+EN-DUMMY   DATA       DATA-ERR                                    12367  3   17 
+EV         B          B                                           12367  3   18 
+     0.0253       250.        35.                                 12367  3   19 
+ENDDATA              3          0                                 12367  3   20 
+ENDSUBENT           19          0                                 12367  399999 
+SUBENT        12367004   20161021                             142412367  4    1 
+BIB                  3          3                                 12367  4    2 
+REACTION   (94-PU-239(N,G)94-PU-240,,RI)                          12367  4    3 
+MONITOR    (27-CO-59(N,G)27-CO-60,,RI)                            12367  4    4 
+STATUS     (TABLE) Table 6 page 30.                               12367  4    5 
+ENDBIB               3          0                                 12367  4    6 
+COMMON               1          3                                 12367  4    7 
+MONIT                                                             12367  4    8 
+B                                                                 12367  4    9 
+       49.3                                                       12367  4   10 
+ENDCOMMON            3          0                                 12367  4   11 
+DATA                 3          1                                 12367  4   12 
+EN-MIN     DATA       DATA-ERR                                    12367  4   13 
+EV         B          B                                           12367  4   14 
+        0.5       221.        11.                                 12367  4   15 
+ENDDATA              3          0                                 12367  4   16 
+ENDSUBENT           15          0                                 12367  499999 
+SUBENT        12367005   20161021                             142412367  5    1 
+BIB                  3          3                                 12367  5    2 
+REACTION   (94-PU-239(N,F),,RI)                                   12367  5    3 
+MONITOR    (27-CO-59(N,G)27-CO-60,,RI)                            12367  5    4 
+STATUS     (TABLE) Table 6 page 30.                               12367  5    5 
+ENDBIB               3          0                                 12367  5    6 
+COMMON               1          3                                 12367  5    7 
+MONIT                                                             12367  5    8 
+B                                                                 12367  5    9 
+       49.3                                                       12367  5   10 
+ENDCOMMON            3          0                                 12367  5   11 
+DATA                 3          1                                 12367  5   12 
+EN-MIN     DATA       DATA-ERR                                    12367  5   13 
+EV         B          B                                           12367  5   14 
+        0.5       434.        18.                                 12367  5   15 
+ENDDATA              3          0                                 12367  5   16 
+ENDSUBENT           15          0                                 12367  599999 
+SUBENT        12367006   20161021                             142412367  6    1 
+BIB                  4          4                                 12367  6    2 
+REACTION   (94-PU-239(N,ABS),,RI)                                 12367  6    3 
+MONITOR    (27-CO-59(N,G)27-CO-60,,RI)                            12367  6    4 
+STATUS     (TABLE) Table 6 page 30.                               12367  6    5 
+HISTORY    (20161021C)  BP                                        12367  6    6 
+ENDBIB               4          0                                 12367  6    7 
+COMMON               1          3                                 12367  6    8 
+MONIT                                                             12367  6    9 
+B                                                                 12367  6   10 
+       49.3                                                       12367  6   11 
+ENDCOMMON            3          0                                 12367  6   12 
+DATA                 3          1                                 12367  6   13 
+EN-MIN     DATA       DATA-ERR                                    12367  6   14 
+EV         B          B                                           12367  6   15 
+        0.5       656.        26.                                 12367  6   16 
+ENDDATA              3          0                                 12367  6   17 
+ENDSUBENT           16          0                                 12367  699999 
+SUBENT        12367007   20161021                             142412367  7    1 
+BIB                  4          4                                 12367  7    2 
+REACTION   (94-PU-239(N,ABS),,RI)                                 12367  7    3 
+MONITOR    (27-CO-59(N,G)27-CO-60,,RI)                            12367  7    4 
+STATUS     (TABLE) Table 6 page 30.                               12367  7    5 
+HISTORY    (20161021C)  BP                                        12367  7    6 
+ENDBIB               4          0                                 12367  7    7 
+COMMON               2          3                                 12367  7    8 
+EN-NRM-MIN MONIT                                                  12367  7    9 
+EV         B                                                      12367  7   10 
+        0.5       49.3                                            12367  7   11 
+ENDCOMMON            3          0                                 12367  7   12 
+DATA                 3          1                                 12367  7   13 
+EN-MIN     DATA       DATA-ERR                                    12367  7   14 
+EV         B          B                                           12367  7   15 
+        0.8       414.        17.                                 12367  7   16 
+ENDDATA              3          0                                 12367  7   17 
+ENDSUBENT           16          0                                 12367  799999 
+SUBENT        12367008   20161021                             142412367  8    1 
+BIB                  4          4                                 12367  8    2 
+REACTION   (94-PU-239(N,G)94-PU-240,,RI)                          12367  8    3 
+MONITOR    (27-CO-59(N,G)27-CO-60,,RI)                            12367  8    4 
+STATUS     (TABLE) Table 6 page 30.                               12367  8    5 
+HISTORY    (20161021C)  BP                                        12367  8    6 
+ENDBIB               4          0                                 12367  8    7 
+COMMON               2          3                                 12367  8    8 
+EN-NRM-MIN MONIT                                                  12367  8    9 
+EV         B                                                      12367  8   10 
+        0.5       49.3                                            12367  8   11 
+ENDCOMMON            3          0                                 12367  8   12 
+DATA                 3          1                                 12367  8   13 
+EN-MIN     DATA       DATA-ERR                                    12367  8   14 
+EV         B          B                                           12367  8   15 
+        0.8       133.        10.                                 12367  8   16 
+ENDDATA              3          0                                 12367  8   17 
+ENDSUBENT           16          0                                 12367  899999 
+ENDENTRY             8          0                                 1236799999999 
