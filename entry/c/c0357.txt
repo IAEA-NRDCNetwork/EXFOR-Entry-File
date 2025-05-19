@@ -1,71 +1,147 @@
-ENTRY            C0357   19871109                             0000C035700000001 
-SUBENT        C0357001   19871109                             0000C035700100001 
-BIB                 11         13                                 C035700100002 
-INSTITUTE  (1CANMCG)                                              C035700100003 
-REFERENCE  (J,CJP,39,1172,61)                                     C035700100004 
-AUTHOR     (T.M.KAVANAGH,R.E.BELL)                                C035700100005 
-TITLE      CROSS SECTIONS OF (P,PXN) REACTIONS IN AU-197          C035700100006 
-FACILITY   (SYNCY)                                                C035700100007 
-SAMPLE     A GOLD TARGET FOIL, 1/4 IN WIDE AND EITHER 20 OR 40    C035700100008 
-           MG/CM2 THICK, WAS MOUNTED TOGETHER WITH A GRAPHITE     C035700100009 
-           BEAM MONITORING FOIL.                                  C035700100010 
-METHOD     (ACTIV)                                                C035700100011 
-MONITOR    (6-C-12(P,P+N)6-C-11,,SIG)                             C035700100012 
-DETECTOR   (NAICR)                                                C035700100013 
-STATUS     DATA TAKEN FROM CJP,39,1172,1961--TABLE I.             C035700100014 
-HISTORY    (870824C)                                              C035700100015 
-ENDBIB              13          0                                 C035700100016 
-NOCOMMON             0          0                                 C035700100017 
-ENDSUBENT           16          0                                 C035700199999 
-SUBENT        C0357002   19871109                             0000C035700200001 
-BIB                  4         13                                 C035700200002 
-REACTION  1(79-AU-197(P,P+N)79-AU-196,,SIG)                       C035700200003 
-          2(79-AU-197(P,P+2N)79-AU-195,,SIG)                      C035700200004 
-          3(79-AU-197(P,P+3N)79-AU-194,,SIG)                      C035700200005 
-DECAY-DATA1(79-AU-196,6.1D,DG,331.,,DG,354.,,DG,426.)             C035700200006 
-          2(79-AU-195,188.D,DG,99.,,DG,130.)                      C035700200007 
-          3(79-AU-194,39.HR,XR,,,DG,291.,,DG,327.)                C035700200008 
-CORRECTION CROSS SECTIONS OF (P,PN) REACTION WERE CALCULATED FROM C035700200009 
-           COUNTING RATES AFTER THE DECAY OF AU-196-M, AND NO     C035700200010 
-           CORRECTION WAS MADE FOR REACTIONS THAT PROCEED VIA THE C035700200011 
-           ISOMERIC STATE; THE ERROR INTRODUCED WAS NEGLIGIBLY    C035700200012 
-           SMALL.                                                 C035700200013 
-ERR-ANALYS THE STANDARD ERRORS WARE ABOUT 13% FOR (P,PN) REACTION,C035700200014 
-           13% FOR (P,P2N), AND 16% FOR (P,P3N).                  C035700200015 
-ENDBIB              13          0                                 C035700200016 
-NOCOMMON             0          0                                 C035700200017 
-DATA                 4         29                                 C035700200018 
-EN         DATA      1DATA      2DATA      3                      C035700200019 
-MEV        MB         MB         MB                               C035700200020 
- 18.0        23.6                                                 C035700200021 
- 22.3        83.3                                                 C035700200022 
- 23.2                    8.1                                      C035700200023 
- 27.5       141.                                                  C035700200024 
- 28.3       152.        26.8                                      C035700200025 
- 32.4       169.                    6.                            C035700200026 
- 33.2       178.        69.                                       C035700200027 
- 37.3       168.                   18.                            C035700200028 
- 37.9       182.       116.        27.                            C035700200029 
- 37.9       185.       115.        24.                            C035700200030 
- 42.2       170.                   80.                            C035700200031 
- 42.8       174.       125.        68.                            C035700200032 
- 42.8       177.       138.                                       C035700200033 
- 47.2       175.                  112.                            C035700200034 
- 47.4       194.       149.       126.                            C035700200035 
- 51.9       164.                  125.                            C035700200036 
- 52.5       186.       144.       146.                            C035700200037 
- 56.8       174.                  144.                            C035700200038 
- 57.4       179.       142.       144.                            C035700200039 
- 61.7       165.                  150.                            C035700200040 
- 62.5       168.       136.       159.                            C035700200041 
- 67.1       153.       115.       149.                            C035700200042 
- 67.1       165.       130.       141.                            C035700200043 
- 72.0       153.       138.       133.                            C035700200044 
- 72.0                  122.                                       C035700200045 
- 76.9       157.       135.       138.                            C035700200046 
- 76.9                  122.                                       C035700200047 
- 81.8       146.       114.       136.                            C035700200048 
- 86.0       155.       120.       137.                            C035700200049 
-ENDDATA             31          0                                 C035700200050 
-ENDSUBENT           49          0                                 C035700299999 
-ENDENTRY             2          0                                 C035799999999 
+ENTRY            C0357   20240405                             C232C0357000    1 
+SUBENT        C0357001   20240405                             C232C0357001    1 
+BIB                 11         18                                 C0357001    2 
+TITLE      Cross sections of (p,pxn) reactions in Au-197          C0357001    3 
+AUTHOR     (T.M.Kavanagh,R.E.Bell)                                C0357001    4 
+REFERENCE  (J,CJP,39,1172,1961)                                   C0357001    5 
+           #doi:10.1139/p61-132                                   C0357001    6 
+INSTITUTE  (1CANMCG)                                              C0357001    7 
+FACILITY   (SYNCY,1CANMCG)                                        C0357001    8 
+SAMPLE     A gold target foil, 1/4 in wide and either 20 or 40    C0357001    9 
+           mg/cm2 thick, was mounted together with a graphite     C0357001   10 
+           beam monitoring foil.                                  C0357001   11 
+METHOD     (ACTIV)                                                C0357001   12 
+MONITOR    (6-C-12(P,X)6-C-11,,SIG)                               C0357001   13 
+DETECTOR   (NAICR)                                                C0357001   14 
+STATUS     (TABLE,,T.M.Kavanagh+,J,CJP,39,1172,1961) Table I      C0357001   15 
+HISTORY    (19870824C)                                            C0357001   16 
+           (20230616A) BP: Updated to new date formats, lower     C0357001   17 
+           case. Corrections according last EXFOR rules and       C0357001   18 
+           Dict. Typo fix in subentry 2 per WP2023-21, added doi. C0357001   19 
+           (20240405A) On. Major alteration in 002. 003-004 added.C0357001   20 
+ENDBIB              18          0                                 C0357001   21 
+NOCOMMON             0          0                                 C0357001   22 
+ENDSUBENT           21          0                                 C035700199999 
+SUBENT        C0357002   20240405                             C232C0357002    1 
+BIB                  5         10                                 C0357002    2 
+REACTION   (79-AU-197(P,X)79-AU-196,,SIG)                         C0357002    3 
+DECAY-DATA (79-AU-196-G,6.1D,DG,331.,,DG,354.,,DG,426.)           C0357002    4 
+CORRECTION Cross sections of (p,pn) reaction were calculated from C0357002    5 
+           counting rates after the decay of Au-196-m, and no     C0357002    6 
+           correction was made for reactions that proceed via the C0357002    7 
+           isomeric state; the error introduced was negligibly    C0357002    8 
+           small.                                                 C0357002    9 
+ERR-ANALYS (DATA-ERR) Standard error (~13%)                       C0357002   10 
+HISTORY    (20230616A) BP: Changed SF3=X.                         C0357002   11 
+           (20240405A) On. 002 split to 002 to 004.               C0357002   12 
+ENDBIB              10          0                                 C0357002   13 
+COMMON               1          3                                 C0357002   14 
+DATA-ERR                                                          C0357002   15 
+PER-CENT                                                          C0357002   16 
+ 13.                                                              C0357002   17 
+ENDCOMMON            3          0                                 C0357002   18 
+DATA                 2         26                                 C0357002   19 
+EN         DATA                                                   C0357002   20 
+MEV        MB                                                     C0357002   21 
+       18.0       23.6                                            C0357002   22 
+       22.3       83.3                                            C0357002   23 
+       27.5       141.                                            C0357002   24 
+       28.3       152.                                            C0357002   25 
+       32.4       169.                                            C0357002   26 
+       33.2       178.                                            C0357002   27 
+       37.3       168.                                            C0357002   28 
+       37.9       182.                                            C0357002   29 
+       37.9       185.                                            C0357002   30 
+       42.2       170.                                            C0357002   31 
+       42.8       174.                                            C0357002   32 
+       42.8       177.                                            C0357002   33 
+       47.2       175.                                            C0357002   34 
+       47.4       194.                                            C0357002   35 
+       51.9       164.                                            C0357002   36 
+       52.5       186.                                            C0357002   37 
+       56.8       174.                                            C0357002   38 
+       57.4       179.                                            C0357002   39 
+       61.7       165.                                            C0357002   40 
+       62.5       168.                                            C0357002   41 
+       67.1       153.                                            C0357002   42 
+       67.1       165.                                            C0357002   43 
+       72.0       153.                                            C0357002   44 
+       76.9       157.                                            C0357002   45 
+       81.8       146.                                            C0357002   46 
+       86.0       155.                                            C0357002   47 
+ENDDATA             28          0                                 C0357002   48 
+ENDSUBENT           47          0                                 C035700299999 
+SUBENT        C0357003   20240405                             C232C0357003    1 
+BIB                  4          4                                 C0357003    2 
+REACTION   (79-AU-197(P,X)79-AU-195,,SIG)                         C0357003    3 
+DECAY-DATA (79-AU-195-G,188.D,DG,99.,,DG,130.)                    C0357003    4 
+ERR-ANALYS (DATA-ERR) Standard error (~13%)                       C0357003    5 
+HISTORY    (20240405T) On. Moved from 002.2.                      C0357003    6 
+ENDBIB               4          0                                 C0357003    7 
+COMMON               1          3                                 C0357003    8 
+DATA-ERR                                                          C0357003    9 
+PER-CENT                                                          C0357003   10 
+ 13.                                                              C0357003   11 
+ENDCOMMON            3          0                                 C0357003   12 
+DATA                 2         19                                 C0357003   13 
+EN         DATA                                                   C0357003   14 
+MEV        MB                                                     C0357003   15 
+       23.2        8.1                                            C0357003   16 
+       28.3       26.8                                            C0357003   17 
+       33.2        69.                                            C0357003   18 
+       37.9       116.                                            C0357003   19 
+       37.9       115.                                            C0357003   20 
+       42.8       125.                                            C0357003   21 
+       42.8       138.                                            C0357003   22 
+       47.4       149.                                            C0357003   23 
+       52.5       144.                                            C0357003   24 
+       57.4       142.                                            C0357003   25 
+       62.5       136.                                            C0357003   26 
+       67.1       115.                                            C0357003   27 
+       67.1       130.                                            C0357003   28 
+       72.0       138.                                            C0357003   29 
+       72.0       122.                                            C0357003   30 
+       76.9       135.                                            C0357003   31 
+       76.9       122.                                            C0357003   32 
+       81.8       114.                                            C0357003   33 
+       86.0       120.                                            C0357003   34 
+ENDDATA             21          0                                 C0357003   35 
+ENDSUBENT           34          0                                 C035700399999 
+SUBENT        C0357004   20240405                             C232C0357004    1 
+BIB                  4          4                                 C0357004    2 
+REACTION   (79-AU-197(P,X)79-AU-194,,SIG)                         C0357004    3 
+DECAY-DATA (79-AU-194-G,39.HR,XR,,,DG,291.,,DG,327.)              C0357004    4 
+ERR-ANALYS (DATA-ERR) Standard error (~16%)                       C0357004    5 
+HISTORY    (20240405T) On. Moved from 002.3.                      C0357004    6 
+ENDBIB               4          0                                 C0357004    7 
+COMMON               1          3                                 C0357004    8 
+DATA-ERR                                                          C0357004    9 
+PER-CENT                                                          C0357004   10 
+ 16.                                                              C0357004   11 
+ENDCOMMON            3          0                                 C0357004   12 
+DATA                 2         20                                 C0357004   13 
+EN         DATA                                                   C0357004   14 
+MEV        MB                                                     C0357004   15 
+       32.4         6.                                            C0357004   16 
+       37.3        18.                                            C0357004   17 
+       37.9        27.                                            C0357004   18 
+       37.9        24.                                            C0357004   19 
+       42.2        80.                                            C0357004   20 
+       42.8        68.                                            C0357004   21 
+       47.2       112.                                            C0357004   22 
+       47.4       126.                                            C0357004   23 
+       51.9       125.                                            C0357004   24 
+       52.5       146.                                            C0357004   25 
+       56.8       144.                                            C0357004   26 
+       57.4       144.                                            C0357004   27 
+       61.7       150.                                            C0357004   28 
+       62.5       159.                                            C0357004   29 
+       67.1       149.                                            C0357004   30 
+       67.1       141.                                            C0357004   31 
+       72.0       133.                                            C0357004   32 
+       76.9       138.                                            C0357004   33 
+       81.8       136.                                            C0357004   34 
+       86.0       137.                                            C0357004   35 
+ENDDATA             22          0                                 C0357004   36 
+ENDSUBENT           35          0                                 C035700499999 
+ENDENTRY             4          0                                 C035799999999 

@@ -1,29 +1,32 @@
-ENTRY            C2000   20130416                             C131C200000000001 
-SUBENT        C2000001   20130416                             C131C200000100001 
-BIB                 11         20                                 C200000100002 
-TITLE      Reactions of Cesium with Protons at 60, 80, 100, 150,  C200000100003 
-           and 240 MeV                                            C200000100004 
-AUTHOR     (R.W.Fink,E.O.Wiig)                                    C200000100005 
-INSTITUTE  (1USAROC)                                              C200000100006 
-REFERENCE  (J,PR,96,185,1954)                                     C200000100007 
-FACILITY   (CYCLO,1USAROC) Experiment performed at the Rochester  C200000100008 
-           130-inch cyclotron.                                    C200000100009 
-SAMPLE     Spectroscopically-pure cesium chloride with weight of  C200000100010 
-           200 mg wrapped in a single sheet of aluminum foil 3.8  C200000100011 
-           cm long, 0.3 cm wide, and 0.2 cm thick, covered by Al  C200000100012 
-           monitor foils 0.001-inch thick.                        C200000100013 
-DETECTOR   (PROPC) Beta activity was measured using extremely-    C200000100014 
-           stable methane flow beta-proportional counter          C200000100015 
-METHOD     (ACTIV,CHSEP,BSPEC) Activation method with chemical    C200000100016 
-           separation of radionucleides in irradiated sample was  C200000100017 
-           used.                                                  C200000100018 
-MONITOR    (13-AL-27(P,X)11-NA-24,,SIG)                           C200000100019 
-           authors assume reaction 27Al(p,3pn)24Na                C200000100020 
-DECAY-MON  (11-NA-24,15.00HR)                                     C200000100021 
-HISTORY    (20130416C) Compiled by S.H.                           C200000100022 
-ENDBIB              20          0                                 C200000100023 
-NOCOMMON             0          0                                 C200000100024 
-ENDSUBENT           23          0                                 C200000199999 
+ENTRY            C2000   20230518                             C232C2000000    1 
+SUBENT        C2000001   20230518                             C232C2000001    1 
+BIB                 11         23                                 C2000001    2 
+TITLE      Reactions of cesium with protons at 60, 80, 100, 150,  C2000001    3 
+           and 240 MeV                                            C2000001    4 
+AUTHOR     (R.W.Fink,E.O.Wiig)                                    C2000001    5 
+REFERENCE  (J,PR,96,185,1954)                                     C2000001    6 
+           #doi:10.1103/PhysRev.96.185                            C2000001    7 
+INSTITUTE  (1USAROC)                                              C2000001    8 
+FACILITY   (CYCLO,1USAROC) Experiment performed at the Rochester  C2000001    9 
+           130-inch cyclotron.                                    C2000001   10 
+SAMPLE     Spectroscopically-pure cesium chloride with weight of  C2000001   11 
+           200 Mg wrapped in a single sheet of aluminum foil 3.8  C2000001   12 
+           cm long, 0.3 cm wide, and 0.2 cm thick, covered by Al  C2000001   13 
+           monitor foils 0.001-inch thick.                        C2000001   14 
+DETECTOR   (PROPC) Beta activity was measured using extremely-    C2000001   15 
+           stable methane flow beta-proportional counter          C2000001   16 
+METHOD     (ACTIV,CHSEP,BSPEC) Activation method with chemical    C2000001   17 
+           separation of radionuclides in irradiated sample was   C2000001   18 
+           used.                                                  C2000001   19 
+MONITOR    (13-AL-27(P,X)11-NA-24,,SIG)                           C2000001   20 
+           authors assume reaction 27Al(p,3pn)24Na                C2000001   21 
+DECAY-MON  (11-NA-24,15.00HR)                                     C2000001   22 
+HISTORY    (20130416C) Compiled by S.H.                           C2000001   23 
+           (20230518A) BP: Typo fix in subentry 4,13 per          C2000001   24 
+           WP2023-21 and feedback list, added doi.                C2000001   25 
+ENDBIB              23          0                                 C2000001   26 
+NOCOMMON             0          0                                 C2000001   27 
+ENDSUBENT           26          0                                 C200000199999 
 SUBENT        C2000002   20130416                             C131C200000200001 
 BIB                  3          3                                 C200000200002 
 REACTION   (55-CS-133(P,6N)56-BA-128,,SIG)                        C200000200003 
@@ -57,23 +60,24 @@ MEV        MB                                                     C200000300010
   240.0         3.6                                               C200000300015 
 ENDDATA              7          0                                 C200000300016 
 ENDSUBENT           15          0                                 C200000399999 
-SUBENT        C2000004   20130416                             C131C200000400001 
-BIB                  3          3                                 C200000400002 
-REACTION   (55-CS-133(P,3N)56-BA-131,,SIG)                        C200000400003 
-STATUS     (TABLE) Data taken from tab. 1 of the reference        C200000400004 
-DECAY-DATA (56-BA-131,12.5D)                                      C200000400005 
-ENDBIB               3          0                                 C200000400006 
-NOCOMMON             0          0                                 C200000400007 
-DATA                 2          5                                 C200000400008 
-EN         DATA                                                   C200000400009 
-MEV        MB                                                     C200000400010 
-   60.0       20.0                                                C200000400011 
-   80.0       48.0                                                C200000400012 
-  100.0       13.0                                                C200000400013 
-  150.0        3.0                                                C200000400014 
-  240.0        5.3                                                C200000400015 
-ENDDATA              7          0                                 C200000400016 
-ENDSUBENT           15          0                                 C200000499999 
+SUBENT        C2000004   20230518                             C232C2000004    1 
+BIB                  4          4                                 C2000004    2 
+REACTION   (55-CS-133(P,3N)56-BA-131,,SIG)                        C2000004    3 
+STATUS     (TABLE,,R.W.Fink+,J,PR,96,185,1954) Table 1            C2000004    4 
+DECAY-DATA (56-BA-131-G,12.5D)                                    C2000004    5 
+HISTORY    (20230518A) BP: Typo fix 48.0 -> 4.8 mb.               C2000004    6 
+ENDBIB               4          0                                 C2000004    7 
+NOCOMMON             0          0                                 C2000004    8 
+DATA                 2          5                                 C2000004    9 
+EN         DATA                                                   C2000004   10 
+MEV        MB                                                     C2000004   11 
+       60.0       20.0                                            C2000004   12 
+       80.0        4.8                                            C2000004   13 
+      100.0       13.0                                            C2000004   14 
+      150.0        3.0                                            C2000004   15 
+      240.0        5.3                                            C2000004   16 
+ENDDATA              7          0                                 C2000004   17 
+ENDSUBENT           16          0                                 C200000499999 
 SUBENT        C2000005   20130416                             C131C200000500001 
 BIB                  3          3                                 C200000500002 
 REACTION   (55-CS-133(P,N)56-BA-133-M,,SIG)                       C200000500003 
@@ -199,23 +203,25 @@ MEV        MB                                                     C200001200010
   240.0      8.4                                                  C200001200013 
 ENDDATA              5          0                                 C200001200014 
 ENDSUBENT           13          0                                 C200001299999 
-SUBENT        C2000013   20130416                             C131C200001300001 
-BIB                  3          3                                 C200001300002 
-REACTION   (55-CS-133(P,X)53-I-126,,SIG)                          C200001300003 
-STATUS     (TABLE) Data taken from tab. 1 of the reference        C200001300004 
-DECAY-DATA (53-I-126,12.5D)                                       C200001300005 
-ENDBIB               3          0                                 C200001300006 
-NOCOMMON             0          0                                 C200001300007 
-DATA                 2          5                                 C200001300008 
-EN         DATA                                                   C200001300009 
-MEV        MB                                                     C200001300010 
-   60.0      0.1                                                  C200001300011 
-   80.0      0.9                                                  C200001300012 
-  100.0      2.4                                                  C200001300013 
-  150.0      2.5                                                  C200001300014 
-  240.0      5.0                                                  C200001300015 
-ENDDATA              7          0                                 C200001300016 
-ENDSUBENT           15          0                                 C200001399999 
+SUBENT        C2000013   20230815                             C232C2000013    1 
+BIB                  4          5                                 C2000013    2 
+REACTION   (55-CS-133(P,X)53-I-126,,SIG)                          C2000013    3 
+STATUS     (TABLE,,R.W.Fink+,J,PR,96,185,1954) Table 1            C2000013    4 
+DECAY-DATA (53-I-126,12.5D)                                       C2000013    5 
+HISTORY    (20230518A) BP: Typo fix, 0.1 mb -> 0.05 mb at 60      C2000013    6 
+           MeV, 0.9 mb -> 0.94 mb at 80 MeV.                      C2000013    7 
+ENDBIB               5          0                                 C2000013    8 
+NOCOMMON             0          0                                 C2000013    9 
+DATA                 2          5                                 C2000013   10 
+EN         DATA                                                   C2000013   11 
+MEV        MB                                                     C2000013   12 
+       60.0       0.05                                            C2000013   13 
+       80.0       0.94                                            C2000013   14 
+      100.0        2.4                                            C2000013   15 
+      150.0        2.5                                            C2000013   16 
+      240.0        5.0                                            C2000013   17 
+ENDDATA              7          0                                 C2000013   18 
+ENDSUBENT           17          0                                 C200001399999 
 SUBENT        C2000014   20130416                             C131C200001400001 
 BIB                  3          3                                 C200001400002 
 REACTION   (55-CS-133(P,X)53-I-128,,SIG)                          C200001400003 
