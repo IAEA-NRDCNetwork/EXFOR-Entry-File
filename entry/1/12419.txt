@@ -1,43 +1,62 @@
-ENTRY            12419   19820519                             00001241900000001 
-SUBENT        12419001   19820519                             00001241900100001 
-BIB                  6          8                                 1241900100002 
-INSTITUTE  (1USAANL)                                              1241900100003 
-REFERENCE  (J,PR,126,197,62)                                      1241900100004 
-AUTHOR     (J.W.MEADOWS,J.F.WHALEN)                               1241900100005 
-TITLE      ENERGY DEPENDENCE OF PROMPT NU BAR FOR NEUTRON-INDUCED 1241900100006 
-           FISSION OF U235.                                       1241900100007 
-STATUS     (SCSRS)                                                1241900100008 
-HISTORY    (760804T) TRANSLATED FROM SCISRS                       1241900100009 
-           (820519A) CONVERTED TO REACTION FORMALISM              1241900100010 
-ENDBIB               8          0                                 1241900100011 
-NOCOMMON             0          0                                 1241900100012 
-ENDSUBENT           11          0                                 1241900199999 
-SUBENT        12419002   19820519                             00001241900200001 
-BIB                  3          7                                 1241900200002 
-REACTION  1((92-U-235(N,F),PR,NU)/                                1241900200003 
-           (98-CF-252(0,F),PR,NU))                                1241900200004 
-          2(92-U-235(N,F),PR,NU)                                  1241900200005 
-MONITOR   2(98-CF-252(0,F),,NU)                                   1241900200006 
-          2(92-U-235(N,F),PR,NU)                                  1241900200007 
-ERR-ANALYS (DATA-ERR1) RELATIVE ERROR                             1241900200008 
-           (DATA-ERR2) TOTAL ERROR                                1241900200009 
-ENDBIB               7          0                                 1241900200010 
-COMMON               2          3                                 1241900200011 
-MONIT1    2MONIT2    2                                            1241900200012 
-NO-DIM     NO-DIM                                                 1241900200013 
- 3.754      2.414                                                 1241900200014 
-ENDCOMMON            3          0                                 1241900200015 
-DATA                 5          6                                 1241900200016 
-EN         DATA      1DATA      2DATA-ERR1 2DATA-ERR2 2           1241900200017 
-MEV        NO-DIM     NO-DIM     PER-CENT   PER-CENT              1241900200018 
- 0.03       0.6449     2.421      1.04       1.61                 1241900200019 
- 0.20       0.6491     2.436      0.66       1.40                 1241900200020 
- 0.62       0.6580     2.470      0.78       1.46                 1241900200021 
- 1.11       0.6713     2.520      0.72       1.42                 1241900200022 
- 1.58       0.6870     2.580      0.76       1.45                 1241900200023 
- 1.76       0.6860     2.575      0.80       1.47                 1241900200024 
-ENDDATA              8          0                                 1241900200025 
-ENDSUBENT           24          0                                 1241900299999 
+ENTRY            12419   20180521                             144112419  0    1 
+SUBENT        12419001   20180521                             144112419  1    1 
+BIB                  8         27                                 12419  1    2 
+TITLE      Energy Dependence of Prompt nu bar for                 12419  1    3 
+           Neutron-Induced Fission of U235                        12419  1    4 
+AUTHOR     (J.W.Meadows,J.F.Whalen)                               12419  1    5 
+REFERENCE  (J,PR,126,197,1962)                                    12419  1    6 
+           #doi:10.1103/PhysRev.126.197                           12419  1    7 
+INSTITUTE  (1USAANL)                                              12419  1    8 
+FACILITY   (VDG,1USAANL) electrostatic accelerator.               12419  1    9 
+INC-SOURCE (P-LI7) Beam of neutrons from a Li7(p,n)Be7 source.    12419  1   10 
+METHOD     (FISCT,COINC) The method used involved the             12419  1   11 
+           measurement of coincidences between a fission counter  12419  1   12 
+           and a neutron detector. In order to avoid the          12419  1   13 
+           possibility of a change in the accidental rate or in   12419  1   14 
+           the efficiency of the neutron detector, measurements   12419  1   15 
+           of U235, Cf252 and the accidentals were made           12419  1   16 
+           simultaneously. Two fission pulse ionization chambers  12419  1   17 
+           were placed in a common container. In each of the      12419  1   18 
+           chambers the fissionable material was spread over      12419  1   19 
+           nine foils having a diameter of 6.5 cm. The U235       12419  1   20 
+           chamber contained ~80 mg of material while the Cf252   12419  1   21 
+           chamber contained enough material to give ~300         12419  1   22 
+           fissions per minute. The two chambers were separated   12419  1   23 
+           by a bare foil and 2 cm of the counter gas.            12419  1   24 
+HISTORY    (19760804T) Translated from SCISRS.                    12419  1   25 
+           (19820519A) Converted to reaction formalism            12419  1   26 
+           (20180521A) BP: Updated to new date formats, lower     12419  1   27 
+           case, doi, experiment description, separated 252Cf     12419  1   28 
+           into a separate measurement. Sub.5 added.              12419  1   29 
+ENDBIB              27          0                                 12419  1   30 
+NOCOMMON             0          0                                 12419  1   31 
+ENDSUBENT           30          0                                 12419  199999 
+SUBENT        12419002   20180521                             144112419  2    1 
+BIB                  4         11                                 12419  2    2 
+REACTION  1((92-U-235(N,F),PR,NU)/                                12419  2    3 
+           (98-CF-252(0,F),PR,NU))                                12419  2    4 
+          2(92-U-235(N,F),PR,NU)                                  12419  2    5 
+ERR-ANALYS2(ERR-1) Relative error, no details on sources.         12419  2    6 
+           (ERR-T) Total error, no details on sources.            12419  2    7 
+CORRECTION A series of six corrections for the U235/Cf252 ratio:  12419  2    8 
+           second neutron group, thermal neutron induced fission, 12419  2    9 
+           analyzer dead time, asymmetry of the neutron detector, 12419  2   10 
+           energy dependence of the neutron detector, fission     12419  2   11 
+           fragment angular distributions.                        12419  2   12 
+STATUS     (TABLE) Table I, page 199.                             12419  2   13 
+ENDBIB              11          0                                 12419  2   14 
+NOCOMMON             0          0                                 12419  2   15 
+DATA                 5          6                                 12419  2   16 
+EN         DATA      1DATA      2ERR-1     2ERR-T     2           12419  2   17 
+MEV        NO-DIM     PRT/FIS    PER-CENT   PER-CENT              12419  2   18 
+       0.03     0.6449      2.421       1.04       1.61           12419  2   19 
+       0.20     0.6491      2.436       0.66       1.40           12419  2   20 
+       0.62     0.6580      2.470       0.78       1.46           12419  2   21 
+       1.11     0.6713      2.520       0.72       1.42           12419  2   22 
+       1.58     0.6870      2.580       0.76       1.45           12419  2   23 
+       1.76     0.6860      2.575       0.80       1.47           12419  2   24 
+ENDDATA              8          0                                 12419  2   25 
+ENDSUBENT           24          0                                 12419  299999 
 SUBENT        12419003   19820519                             00001241900300001 
 BIB                  3          3                                 1241900300002 
 REACTION   (92-U-235(N,F),PR,NU)                                  1241900300003 
@@ -60,4 +79,18 @@ ENDBIB               7          0                                 1241900400010
 NOCOMMON             0          0                                 1241900400011 
 NODATA               0          0                                 1241900400012 
 ENDSUBENT           11          0                                 1241900499999 
-ENDENTRY             4          0                                 1241999999999 
+SUBENT        12419005   20180521                             144112419  5    1 
+BIB                  4          4                                 12419  5    2 
+REACTION   (98-CF-252(0,F),PR,NU)                                 12419  5    3 
+ERR-ANALYS (DATA-ERR) No details on sources.                      12419  5    4 
+STATUS     (TABLE) Table I, page 199.                             12419  5    5 
+HISTORY    (20180521C) BP                                         12419  5    6 
+ENDBIB               4          0                                 12419  5    7 
+NOCOMMON             0          0                                 12419  5    8 
+DATA                 2          1                                 12419  5    9 
+DATA       DATA-ERR                                               12419  5   10 
+PRT/FIS    PER-CENT                                               12419  5   11 
+      3.754       1.27                                            12419  5   12 
+ENDDATA              3          0                                 12419  5   13 
+ENDSUBENT           12          0                                 12419  599999 
+ENDENTRY             5          0                                 1241999999999 
