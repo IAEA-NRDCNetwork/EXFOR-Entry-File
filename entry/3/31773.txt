@@ -1,0 +1,101 @@
+ENTRY            31773   20170602                             317931773  0    1 
+SUBENT        31773001   20170602                             317931773  1    1 
+BIB                 15         31                                 31773  1    2 
+TITLE      Neutron capture cross section measurements and         31773  1    3 
+           theoretical calculation for the 186W(n,gamma)187W      31773  1    4 
+           reaction                                               31773  1    5 
+AUTHOR     (M.Al-Abyad,G.Y.Mohamed)                               31773  1    6 
+INSTITUTE  (3EGYCAI)                                              31773  1    7 
+REFERENCE  (J,RCA,105,347,2017)                                   31773  1    8 
+           #doi:10.1515/react-2016-2635                           31773  1    9 
+FACILITY   (REAC,3EGYCAI)                                         31773  1   10 
+FLAG       (1.) Data obtained using Am-Be source.                 31773  1   11 
+           (2.) Data obtained using the research reactor.         31773  1   12 
+INC-SOURCE (AM-BE) Am-Be source 5 Ci 241Am activity surrounded    31773  1   13 
+           by a cylinder of paraffin wax for moderation of fast   31773  1   14 
+           neutrons.                                              31773  1   15 
+           (REAC)                                                 31773  1   16 
+INC-SPECT  Am-Be source neutron flux shape alpha value=0.06       31773  1   17 
+           Reactor neutron flux shape alpha value = -0.05         31773  1   18 
+SAMPLE     (74-W-186,NAT=0.2842) Natural tungsten metallic foils, 31773  1   19 
+           10 mm2 in area by 0.2 mm in thickness.                 31773  1   20 
+METHOD     (CADMB)                                                31773  1   21 
+           (GSPEC)                                                31773  1   22 
+DETECTOR   (HPGE)                                                 31773  1   23 
+CORRECTION Corrections were applied for:                          31773  1   24 
+           -Cadmium correction factor                             31773  1   25 
+           -Thermal neutron self-shielding factor                 31773  1   26 
+           -Westcott correction factor                            31773  1   27 
+            197Au(n,gamma)198Au = 1.006                           31773  1   28 
+            186W(n,gamma)187W = 1.002                             31773  1   29 
+           -Cadmium transmission factor for epithermal neutrons.  31773  1   30 
+DECAY-DATA (74-W-187,23.72HR,DG,479.5,0.218,DG,685.8,0.273)       31773  1   31 
+DECAY-MON  (79-AU-198-G,2.69D,DG,411.8,0.9558)                    31773  1   32 
+HISTORY    (20170602C) VS.                                        31773  1   33 
+ENDBIB              31          0                                 31773  1   34 
+NOCOMMON             0          0                                 31773  1   35 
+ENDSUBENT           34          0                                 31773  199999 
+SUBENT        31773002   20170602                             317931773  2    1 
+BIB                  4         12                                 31773  2    2 
+REACTION   (74-W-186(N,G)74-W-187,,SIG)                           31773  2    3 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         31773  2    4 
+ERR-ANALYS (ERR-T) The total uncertainties were estimated from    31773  2    5 
+           the following partial uncertainties:                   31773  2    6 
+           (ERR-1,1.,3.) absolute abundance of the used gamma-    31773  2    7 
+           lines (1-3%)                                           31773  2    8 
+           (ERR-2,1.,4.) determination of the peak areas          31773  2    9 
+           including statistical errors (1-4%)                    31773  2   10 
+           (ERR-3) sample mass 2%                                 31773  2   11 
+           (ERR-4,1.,3.) detector efficiency                      31773  2   12 
+           (MONIT-ERR)                                            31773  2   13 
+STATUS     (TABLE) Table 3 of Radiochim.Acta105(2017)347.         31773  2   14 
+ENDBIB              12          0                                 31773  2   15 
+COMMON               4          3                                 31773  2   16 
+EN         ERR-3      MONIT      MONIT-ERR                        31773  2   17 
+EV         PER-CENT   B          B                                31773  2   18 
+     0.0253         2.      98.65       0.09                      31773  2   19 
+ENDCOMMON            3          0                                 31773  2   20 
+DATA                 3          2                                 31773  2   21 
+DATA       ERR-T      FLAG                                        31773  2   22 
+B          B          NO-DIM                                      31773  2   23 
+  38.75      1.0      1.                                          31773  2   24 
+  39.1       2.6      2.                                          31773  2   25 
+ENDDATA              4          0                                 31773  2   26 
+ENDSUBENT           25          0                                 31773  299999 
+SUBENT        31773003   20170602                             317931773  3    1 
+BIB                  5         17                                 31773  3    2 
+REACTION   (74-W-186(N,G)74-W-187,,RI)                            31773  3    3 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         31773  3    4 
+ASSUMED    (ASSUM1,79-AU-197(N,G)79-AU-198,,SIG)                  31773  3    5 
+           (ASSUM2,74-W-186(N,G)74-W-187,,SIG)                    31773  3    6 
+                 Thermal cross sections                           31773  3    7 
+ERR-ANALYS (ERR-T) The total uncertainties were estimated from    31773  3    8 
+           the following partial uncertainties:                   31773  3    9 
+           (ERR-1,1.,3.) absolute abundance of the used gamma-    31773  3   10 
+           lines (1-3%)                                           31773  3   11 
+           (ERR-2,5.,14.) determination of the peak areas         31773  3   12 
+           including statistical errors (1-4%)                    31773  3   13 
+           (ERR-3) sample mass 2%                                 31773  3   14 
+           (ERR-4,1.,3.) detector efficiency                      31773  3   15 
+           (ERR-5,2.3,3.5) cadmium correction factor (2.3-3.5%)   31773  3   16 
+           (ERR-6,1.5,2.5) cadmium ratio (1.5,2.5%)               31773  3   17 
+           (MONIT-ERR)                                            31773  3   18 
+STATUS     (TABLE) Table 4 of Radiochim.Acta105(2017)347.         31773  3   19 
+ENDBIB              17          0                                 31773  3   20 
+COMMON               4          3                                 31773  3   21 
+EN-MIN     ERR-3      MONIT      MONIT-ERR                        31773  3   22 
+EV         PER-CENT   B          B                                31773  3   23 
+0.55          2.         1550.      28.                           31773  3   24 
+ENDCOMMON            3          0                                 31773  3   25 
+DATA                 7          2                                 31773  3   26 
+DATA       ERR-T      ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR 31773  3   27 
+FLAG                                                              31773  3   28 
+B          B          B          B          B          B          31773  3   29 
+NO-DIM                                                            31773  3   30 
+  439.6       36.           98.65       0.09  38.75      1.0      31773  3   31 
+1.                                                                31773  3   32 
+  418.5       74.           98.65       0.09  39.1       2.6      31773  3   33 
+2.                                                                31773  3   34 
+ENDDATA              8          0                                 31773  3   35 
+ENDSUBENT           34          0                                 31773  399999 
+ENDENTRY             3          0                                 3177399999999 
