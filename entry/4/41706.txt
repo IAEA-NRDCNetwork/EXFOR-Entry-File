@@ -1,0 +1,143 @@
+ENTRY            41706   20201026                             419041706  0    1 
+SUBENT        41706001   20201026                             419041706  1    1 
+BIB                 12         22                                 41706  1    2 
+TITLE        Rare-earth isotope yields in the fission of Pu239 by 41706  1    3 
+           pile neutrons                                          41706  1    4 
+AUTHOR     (L.M.Krizhansky,Ya.Maly,A.N.Murin,B.K.Preobrazhensky)  41706  1    5 
+REFERENCE  (J,SJA,2,334,1957) Engl.translation of AE,2,276,1957   41706  1    6 
+           (J,JNE,6,260,1958) Engl.translation of AE,2,276,1957   41706  1    7 
+           (J,AE,2,276,1957)                                      41706  1    8 
+INSTITUTE  (4RUSITE)                                              41706  1    9 
+FACILITY   (REAC,4RUSITE)                                         41706  1   10 
+INC-SOURCE (REAC)                                                 41706  1   11 
+INC-SPECT   Pile neutrons. Total flux 2.7E+20 neutron/cm2 .       41706  1   12 
+            Energy is not mentioned in the article,               41706  1   13 
+            supposed by compiler as 0.001 eV- 15 MeV.             41706  1   14 
+SAMPLE      57.4 g mass                                           41706  1   15 
+DETECTOR    No information                                        41706  1   16 
+METHOD     (MASSP,RELFY) Direct mass-spectrographic analysis of   41706  1   17 
+           the precipitate of a plutonium nitrate solution and    41706  1   18 
+           its fission products, by changing (from element to     41706  1   19 
+           element) the temperature of the source filaments       41706  1   20 
+           gradually.                                             41706  1   21 
+REL-REF    (N,13429001,D.M.Wiles+,J,CJC,34,227,1956)              41706  1   22 
+           Data (at incident thermal spectrum) used for comparison41706  1   23 
+HISTORY    (20201026C)  M.M.                                      41706  1   24 
+ENDBIB              22          0                                 41706  1   25 
+COMMON               2          3                                 41706  1   26 
+EN-MIN     EN-MAX                                                 41706  1   27 
+EV         MEV                                                    41706  1   28 
+ 0.001      15.                                                   41706  1   29 
+ENDCOMMON            3          0                                 41706  1   30 
+ENDSUBENT           29          0                                 41706  199999 
+SUBENT        41706002   20201026                             419041706  2    1 
+BIB                  5          8                                 41706  2    2 
+REACTION   ((94-PU-239(N,F)ELEM/MASS,CUM,FY,,SPA)/                41706  2    3 
+           (94-PU-239(N,F)58-CE-142,CUM,FY,,SPA))                 41706  2    4 
+FLAG       (1.) Corrected for decay of Ce-144, burnup of Pu-239   41706  2    5 
+           was taken into account.                                41706  2    6 
+DECAY-DATA (58-CE-144,282.D)                                      41706  2    7 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 41706  2    8 
+           article.                                               41706  2    9 
+STATUS     (TABLE) Table 1 of Soviet Atomic Energy,v.2,p.334,1957 41706  2   10 
+ENDBIB               8          0                                 41706  2   11 
+COMMON               1          3                                 41706  2   12 
+ELEMENT                                                           41706  2   13 
+NO-DIM                                                            41706  2   14 
+ 58.                                                              41706  2   15 
+ENDCOMMON            3          0                                 41706  2   16 
+DATA                 4          2                                 41706  2   17 
+MASS       DATA       DATA-ERR   FLAG                             41706  2   18 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM                           41706  2   19 
+ 140.       0.85       0.01                                       41706  2   20 
+ 144.       0.79       0.04       1.                              41706  2   21 
+ENDDATA              4          0                                 41706  2   22 
+ENDSUBENT           21          0                                 41706  299999 
+SUBENT        41706003   20201026                             419041706  3    1 
+BIB                  7         12                                 41706  3    2 
+REACTION   ((94-PU-239(N,F)ELEM/MASS,CUM,FY,,SPA)/                41706  3    3 
+           (94-PU-239(N,F)60-ND-143,CUM,FY,,SPA))                 41706  3    4 
+CORRECTION  For reaction Nd-143(n,g)Nd-144 taking CS value 334 b. 41706  3    5 
+ASSUMED    (ASSUM,60-ND-143(N,G)60-ND-144,,SIG)                   41706  3    6 
+FLAG       (1.) Corrected for decay of Ce-144, burnup of Pu-239   41706  3    7 
+           was taken into account.                                41706  3    8 
+           (2.) Correction for contamination due to natural Sm148 41706  3    9 
+            was done, without correction this ratio 0.370+-0.005. 41706  3   10 
+DECAY-DATA (58-CE-144,282.D)                                      41706  3   11 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 41706  3   12 
+           article.                                               41706  3   13 
+STATUS     (TABLE) Table 1 of Soviet Atomic Energy,v.2,p.334,1957 41706  3   14 
+ENDBIB              12          0                                 41706  3   15 
+COMMON               2          3                                 41706  3   16 
+ELEMENT    ASSUM                                                  41706  3   17 
+NO-DIM     B                                                      41706  3   18 
+ 60.        334.                                                  41706  3   19 
+ENDCOMMON            3          0                                 41706  3   20 
+DATA                 4          5                                 41706  3   21 
+MASS       DATA       DATA-ERR   FLAG                             41706  3   22 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM                           41706  3   23 
+ 144.       0.840      0.006      1.                              41706  3   24 
+ 145.       0.666      0.002                                      41706  3   25 
+ 146.       0.557      0.002                                      41706  3   26 
+ 148.       0.362      0.005      2.                              41706  3   27 
+ 150.       0.220      0.002                                      41706  3   28 
+ENDDATA              7          0                                 41706  3   29 
+ENDSUBENT           28          0                                 41706  399999 
+SUBENT        41706004   20201026                             419041706  4    1 
+BIB                  6         14                                 41706  4    2 
+REACTION  1((94-PU-239(N,F)ELEM/MASS,CUM,FY,,SPA)/                41706  4    3 
+           (94-PU-239(N,F)62-SM-149,CUM,FY,,SPA))                 41706  4    4 
+           After correction                                       41706  4    5 
+          2((94-PU-239(N,F)ELEM/MASS,CUM,FY,,SPA/RAW)/            41706  4    6 
+           (94-PU-239(N,F)62-SM-149,CUM,FY,,SPA))                 41706  4    7 
+           Before correction                                      41706  4    8 
+FLAG       (1.) Corrected for decay of Pm-147, burnup of Pu-239   41706  4    9 
+           during irradiation was taken into account.             41706  4   10 
+           (2.) Mass 148 due to contamination by natural Sm.      41706  4   11 
+DECAY-DATA (61-PM-147,2.52YR)                                     41706  4   12 
+CORRECTION1 For contamination by natural samarium                 41706  4   13 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 41706  4   14 
+           article.                                               41706  4   15 
+STATUS     (TABLE) Table 2 of Soviet Atomic Energy,v.2,p.334,1957 41706  4   16 
+ENDBIB              14          0                                 41706  4   17 
+COMMON               1          3                                 41706  4   18 
+ELEMENT                                                           41706  4   19 
+NO-DIM                                                            41706  4   20 
+ 58.                                                              41706  4   21 
+ENDCOMMON            3          0                                 41706  4   22 
+DATA                 6          5                                 41706  4   23 
+MASS       DATA      1DATA-ERR  1DATA      2DATA-ERR  2FLAG       41706  4   24 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     41706  4   25 
+ 147.       1.52       0.04       1.54       0.04       1.        41706  4   26 
+ 148.                             0.034      0.001      2.        41706  4   27 
+ 151.       0.632      0.01       0.602      0.02                 41706  4   28 
+ 152.       0.414      0.01       0.465      0.02                 41706  4   29 
+ 154.       0.160      0.003      0.220      0.003                41706  4   30 
+ENDDATA              7          0                                 41706  4   31 
+ENDSUBENT           30          0                                 41706  499999 
+SUBENT        41706005   20201026                             419041706  5    1 
+BIB                  7         10                                 41706  5    2 
+REACTION   ((94-PU-239(N,F)ELEM/MASS,CUM,FY,,SPA)/                41706  5    3 
+           (94-PU-239(N,F)55-CS-137,CUM,FY,,SPA))                 41706  5    4 
+FLAG       (1.) Corrected for the reaction Xe-135(N,G)Xe-136, CS  41706  5    5 
+           value 3.5E+6 barn                                      41706  5    6 
+ASSUMED    (ASSUM,54-XE-135(N,G)54-XE-136,,SIG)                   41706  5    7 
+DECAY-DATA (55-CS-137,26.6YR)                                     41706  5    8 
+CORRECTION  For decay of Cs-137.                                  41706  5    9 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 41706  5   10 
+           article.                                               41706  5   11 
+STATUS     (TABLE) Table 3 of Soviet Atomic Energy,v.2,p.334,1957 41706  5   12 
+ENDBIB              10          0                                 41706  5   13 
+COMMON               2          3                                 41706  5   14 
+ELEMENT    ASSUM                                                  41706  5   15 
+NO-DIM     B                                                      41706  5   16 
+ 58.            3.5E+6                                            41706  5   17 
+ENDCOMMON            3          0                                 41706  5   18 
+DATA                 4          2                                 41706  5   19 
+MASS       DATA       DATA-ERR   FLAG                             41706  5   20 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM                           41706  5   21 
+ 135.       1.06       0.10       1.                              41706  5   22 
+ 133.       0.446      0.002                                      41706  5   23 
+ENDDATA              4          0                                 41706  5   24 
+ENDSUBENT           23          0                                 41706  599999 
+ENDENTRY             5          0                                 4170699999999 

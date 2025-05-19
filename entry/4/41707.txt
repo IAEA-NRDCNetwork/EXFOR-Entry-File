@@ -1,0 +1,82 @@
+ENTRY            41707   20201026                             419041707  0    1 
+SUBENT        41707001   20201026                             419041707  1    1 
+BIB                 13         24                                 41707  1    2 
+TITLE       The yields of 90Sr and 88Sr in the fission of Pu239 by41707  1    3 
+           pile neutrons                                          41707  1    4 
+AUTHOR     (L.M.Krizhansky,A.N.Murin)                             41707  1    5 
+REFERENCE  (J,JNE/A,10,163,1959) Engl.translation of AE,4,77,1958 41707  1    6 
+           (J,SJA,4,95,1958) Engl.translation of AE,4,77,1958     41707  1    7 
+           (J,AE,4,77,1958)                                       41707  1    8 
+INSTITUTE  (4RUSITE)                                              41707  1    9 
+FACILITY   (REAC,4RUSITE)                                         41707  1   10 
+REL-REF    (N,41706001,L.M.Krizhansky+,J,AE,2,276,1957)           41707  1   11 
+            Mentioned in JNE/A,10,163,1959 as "conditions of      41707  1   12 
+           irradiation and method of yield determination".        41707  1   13 
+INC-SOURCE (REAC)                                                 41707  1   14 
+INC-SPECT   Total flux of slow neutrons 2.7E+20 neutron/cm2 .     41707  1   15 
+            "Pile neutrons" are mentioned in the title.           41707  1   16 
+            Energy is not mentioned in the article,               41707  1   17 
+            supposed by compiler as 0.001 eV- 15 MeV.             41707  1   18 
+SAMPLE      57.4 g mass                                           41707  1   19 
+DETECTOR    No information                                        41707  1   20 
+METHOD     (MASSP) Direct mass-spectrographic analysis            41707  1   21 
+           without chemical separation                            41707  1   22 
+           directly on the mixture of irradiated Pu-239 and its   41707  1   23 
+           fission products.                                      41707  1   24 
+CORRECTION For natural strontium impurity in Pu-239 sample.       41707  1   25 
+HISTORY    (20201026C)  M.M.                                      41707  1   26 
+ENDBIB              24          0                                 41707  1   27 
+COMMON               2          3                                 41707  1   28 
+EN-MIN     EN-MAX                                                 41707  1   29 
+EV         MEV                                                    41707  1   30 
+ 0.001      15.                                                   41707  1   31 
+ENDCOMMON            3          0                                 41707  1   32 
+ENDSUBENT           31          0                                 41707  199999 
+SUBENT        41707002   20201026                             419041707  2    1 
+BIB                  5          9                                 41707  2    2 
+REACTION   ((94-PU-239(N,F)ELEM/MASS,CUM,FY,,SPA)/                41707  2    3 
+           (94-PU-239(N,F)38-SR-90,CUM,FY,,SPA))                  41707  2    4 
+DECAY-DATA (38-SR-90,19.9YR)                                      41707  2    5 
+FLAG       (1.) Mass spectrometer ratio                           41707  2    6 
+           (2.) Relative yield with correction for natural Sr     41707  2    7 
+           admixture.                                             41707  2    8 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 41707  2    9 
+           article.                                               41707  2   10 
+STATUS     (TABLE) Table 1 of Soviet Atomic Energy,v.4,p.95,1958  41707  2   11 
+ENDBIB               9          0                                 41707  2   12 
+COMMON               1          3                                 41707  2   13 
+ELEMENT                                                           41707  2   14 
+NO-DIM                                                            41707  2   15 
+ 38.                                                              41707  2   16 
+ENDCOMMON            3          0                                 41707  2   17 
+DATA                 4          3                                 41707  2   18 
+MASS       DATA       DATA-ERR   FLAG                             41707  2   19 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM                           41707  2   20 
+ 88.        0.687      0.003      1.                              41707  2   21 
+ 88.        0.595                 2.                              41707  2   22 
+ 86.        0.0094     0.0004     1.                              41707  2   23 
+ENDDATA              5          0                                 41707  2   24 
+ENDSUBENT           23          0                                 41707  299999 
+SUBENT        41707003   20201026                             419041707  3    1 
+BIB                  7          7                                 41707  3    2 
+REACTION   (94-PU-239(N,F)ELEM/MASS,CUM,FY,,SPA)                  41707  3    3 
+DECAY-DATA (38-SR-90,19.9YR)                                      41707  3    4 
+MONITOR    (94-PU-239(N,F)60-ND-143,CUM,FY)                       41707  3    5 
+MONIT-REF  (13429001,D.M.Wiles+,J,CJC,34,227,1956)                41707  3    6 
+CORRECTION For Nd-143(N,G)Nd-144 reaction, CS 334. barn.          41707  3    7 
+ASSUMED    (ASSUM,60-ND-143(N,G)60-ND-144,,SIG)                   41707  3    8 
+STATUS     (TABLE) Table 1 of Soviet Atomic Energy,v.4,p.95,1958  41707  3    9 
+ENDBIB               7          0                                 41707  3   10 
+COMMON               3          3                                 41707  3   11 
+ELEMENT    MONIT      ASSUM                                       41707  3   12 
+NO-DIM     PC/FIS     B                                           41707  3   13 
+ 38.        5.98       334.                                       41707  3   14 
+ENDCOMMON            3          0                                 41707  3   15 
+DATA                 2          2                                 41707  3   16 
+MASS       DATA                                                   41707  3   17 
+NO-DIM     PC/FIS                                                 41707  3   18 
+ 90.        2.28                                                  41707  3   19 
+ 88.        1.35                                                  41707  3   20 
+ENDDATA              4          0                                 41707  3   21 
+ENDSUBENT           20          0                                 41707  399999 
+ENDENTRY             3          0                                 4170799999999 
