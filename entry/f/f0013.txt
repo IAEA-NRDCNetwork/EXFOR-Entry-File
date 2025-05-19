@@ -1,6 +1,6 @@
-ENTRY            F0013   20210531                             F084F0013  0    1 
-SUBENT        F0013001   20210531                             F084F0013  1    1 
-BIB                  9         16                                 F0013  1    2 
+ENTRY            F0013   20220421                             F089F0013  0    1 
+SUBENT        F0013001   20220421                             F089F0013  1    1 
+BIB                  9         17                                 F0013  1    2 
 TITLE      Reaction Li-7(d,alpha1)He-5 cross-section between      F0013  1    3 
            250 keV and 750 keV. Reaction chamber specially        F0013  1    4 
            studied to measure small energy incident beam currents.F0013  1    5 
@@ -17,15 +17,16 @@ HISTORY    (19820302C)                                            F0013  1   13
            (20200120A) SD: Corrections in all Subents according toF0013  1   16 
            new EXFOR rules. BIB updated.                          F0013  1   17 
            (20210531A) SD: Correction in Subent 004.              F0013  1   18 
-ENDBIB              16          0                                 F0013  1   19 
-COMMON               1          3                                 F0013  1   20 
-ERR-S                                                             F0013  1   21 
-PER-CENT                                                          F0013  1   22 
-  1.5                                                             F0013  1   23 
-ENDCOMMON            3          0                                 F0013  1   24 
-ENDSUBENT           23          0                                 F0013  199999 
-SUBENT        F0013002   20200120                             F074F0013  2    1 
-BIB                  6          8                                 F0013  2    2 
+           (20220421A) SD: Corrections in Subents 002, 004, 005.  F0013  1   19 
+ENDBIB              17          0                                 F0013  1   20 
+COMMON               1          3                                 F0013  1   21 
+ERR-S                                                             F0013  1   22 
+PER-CENT                                                          F0013  1   23 
+  1.5                                                             F0013  1   24 
+ENDCOMMON            3          0                                 F0013  1   25 
+ENDSUBENT           24          0                                 F0013  199999 
+SUBENT        F0013002   20220421                             F089F0013  2    1 
+BIB                  6         10                                 F0013  2    2 
 REACTION   (3-LI-7(D,A)2-HE-5,PAR,DA)                             F0013  2    3 
 MONITOR    (3-LI-7(P,A)2-HE-4,,DA)                                F0013  2    4 
 MONIT-REF  (,G.M.Lerner+,J,NIM,69,115,1969)                       F0013  2    5 
@@ -34,33 +35,35 @@ STATUS     (CURVE) Fig. 3 from Bull.Soc.Royal.Scien.,46(1977)375  F0013  2    7
 HISTORY    (20200120A) SD: SF9=EXP deleted from REACTION code.    F0013  2    8 
            EN-ERR -> EN-ERR-DIG; DATA-ERR->ERR-DIG. EN-SEC,       F0013  2    9 
            ERR-ANALYS deleted.                                    F0013  2   10 
-ENDBIB               8          0                                 F0013  2   11 
-COMMON               7          6                                 F0013  2   12 
-EN-ERR-DIG ANG        E-LVL      EN-NRM     ANG-NRM    MONIT      F0013  2   13 
-ERR-DIG                                                           F0013  2   14 
-MEV        ADEG       MEV        MEV        ADEG       MB/SR      F0013  2   15 
-MB/SR                                                             F0013  2   16 
-      0.004       140.        2.6       1.36       90.0       0.42F0013  2   17 
-       0.04                                                       F0013  2   18 
-ENDCOMMON            6          0                                 F0013  2   19 
-DATA                 2         13                                 F0013  2   20 
-EN         DATA                                                   F0013  2   21 
-MEV        MB/SR                                                  F0013  2   22 
-      0.268       0.56                                            F0013  2   23 
-      0.288       0.76                                            F0013  2   24 
-      0.334       1.07                                            F0013  2   25 
-      0.441       2.16                                            F0013  2   26 
-      0.555       3.84                                            F0013  2   27 
-      0.603       5.13                                            F0013  2   28 
-      0.654       7.61                                            F0013  2   29 
-      0.674       7.93                                            F0013  2   30 
-      0.708       8.31                                            F0013  2   31 
-      0.727       7.92                                            F0013  2   32 
-      0.760       8.24                                            F0013  2   33 
-      0.803       7.18                                            F0013  2   34 
-      1.317       4.07                                            F0013  2   35 
-ENDDATA             15          0                                 F0013  2   36 
-ENDSUBENT           35          0                                 F0013  299999 
+           (20220421A) SD: E-LVL -> LVL-NUMB (not given in the    F0013  2   11 
+           article).                                              F0013  2   12 
+ENDBIB              10          0                                 F0013  2   13 
+COMMON               7          6                                 F0013  2   14 
+EN-ERR-DIG ANG        LVL-NUMB   EN-NRM     ANG-NRM    MONIT      F0013  2   15 
+ERR-DIG                                                           F0013  2   16 
+MEV        ADEG       NO-DIM     MEV        ADEG       MB/SR      F0013  2   17 
+MB/SR                                                             F0013  2   18 
+      0.004       140.        1.        1.36       90.0       0.42F0013  2   19 
+       0.04                                                       F0013  2   20 
+ENDCOMMON            6          0                                 F0013  2   21 
+DATA                 2         13                                 F0013  2   22 
+EN         DATA                                                   F0013  2   23 
+MEV        MB/SR                                                  F0013  2   24 
+      0.268       0.56                                            F0013  2   25 
+      0.288       0.76                                            F0013  2   26 
+      0.334       1.07                                            F0013  2   27 
+      0.441       2.16                                            F0013  2   28 
+      0.555       3.84                                            F0013  2   29 
+      0.603       5.13                                            F0013  2   30 
+      0.654       7.61                                            F0013  2   31 
+      0.674       7.93                                            F0013  2   32 
+      0.708       8.31                                            F0013  2   33 
+      0.727       7.92                                            F0013  2   34 
+      0.760       8.24                                            F0013  2   35 
+      0.803       7.18                                            F0013  2   36 
+      1.317       4.07                                            F0013  2   37 
+ENDDATA             15          0                                 F0013  2   38 
+ENDSUBENT           37          0                                 F0013  299999 
 SUBENT        F0013003   20200120                             F074F0013  3    1 
 BIB                  4          7                                 F0013  3    2 
 REACTION   (3-LI-7(D,A)2-HE-5,,DA)                                F0013  3    3 
@@ -144,90 +147,94 @@ MEV        NO-DIM     MB/SR      MB/SR                            F0013  3   18
       0.680     -0.984      8.391      0.044                      F0013  3   81 
 ENDDATA             65          0                                 F0013  3   82 
 ENDSUBENT           81          0                                 F0013  399999 
-SUBENT        F0013004   20210531                             F084F0013  4    1 
-BIB                  3          6                                 F0013  4    2 
+SUBENT        F0013004   20220421                             F089F0013  4    1 
+BIB                  3          8                                 F0013  4    2 
 REACTION   (3-LI-7(D,A)2-HE-5,PAR,DA,,LEG/RS)                     F0013  4    3 
 STATUS     (TABLE) Tabulated data are given on the fig.4 of       F0013  4    4 
                    Bull.Soc.Royal.Scien.,46(1977)375              F0013  4    5 
 HISTORY    (20200120A) SD: SF9=EXP deleted from REACTION code.    F0013  4    6 
            EN-SEC deleted. STATUS updated.                        F0013  4    7 
            (20210531A) SD: SF8=LEG/RSD -> LEG/RS in REACTION code.F0013  4    8 
-ENDBIB               6          0                                 F0013  4    9 
-COMMON               2          3                                 F0013  4   10 
-NUMBER-CM  E-LVL                                                  F0013  4   11 
-NO-DIM     MEV                                                    F0013  4   12 
-  1.         2.6                                                  F0013  4   13 
-ENDCOMMON            3          0                                 F0013  4   14 
-DATA                 2          8                                 F0013  4   15 
-EN         DATA-CM                                                F0013  4   16 
-MEV        NO-DIM                                                 F0013  4   17 
-     0.220     -0.215                                             F0013  4   18 
-     0.275     -0.171                                             F0013  4   19 
-     0.330     -0.200                                             F0013  4   20 
-     0.430     -0.211                                             F0013  4   21 
-     0.545     -0.197                                             F0013  4   22 
-     0.595     -0.163                                             F0013  4   23 
-     0.630     -0.125                                             F0013  4   24 
-     0.680     -0.146                                             F0013  4   25 
-ENDDATA             10          0                                 F0013  4   26 
-ENDSUBENT           25          0                                 F0013  499999 
-SUBENT        F0013005   20200120                             F074F0013  5    1 
-BIB                  3          5                                 F0013  5    2 
+           (20220421A) SD: E-LVL -> LVL-NUMB (not given in the    F0013  4    9 
+           article).                                              F0013  4   10 
+ENDBIB               8          0                                 F0013  4   11 
+COMMON               2          3                                 F0013  4   12 
+NUMBER     LVL-NUMB                                               F0013  4   13 
+NO-DIM     NO-DIM                                                 F0013  4   14 
+  1.              1.                                              F0013  4   15 
+ENDCOMMON            3          0                                 F0013  4   16 
+DATA                 2          8                                 F0013  4   17 
+EN         DATA-CM                                                F0013  4   18 
+MEV        NO-DIM                                                 F0013  4   19 
+     0.220     -0.215                                             F0013  4   20 
+     0.275     -0.171                                             F0013  4   21 
+     0.330     -0.200                                             F0013  4   22 
+     0.430     -0.211                                             F0013  4   23 
+     0.545     -0.197                                             F0013  4   24 
+     0.595     -0.163                                             F0013  4   25 
+     0.630     -0.125                                             F0013  4   26 
+     0.680     -0.146                                             F0013  4   27 
+ENDDATA             10          0                                 F0013  4   28 
+ENDSUBENT           27          0                                 F0013  499999 
+SUBENT        F0013005   20220421                             F089F0013  5    1 
+BIB                  3          7                                 F0013  5    2 
 REACTION   (3-LI-7(D,A)2-HE-5,PAR,SIG)                            F0013  5    3 
 STATUS     (CURVE) Fig. 6 from Bull.Soc.Royal.Scien.,46(1977)375  F0013  5    4 
 HISTORY    (20200120A) SD: SF9=EXP deleted from REACTION code.    F0013  5    5 
            EN-ERR -> EN-ERR-DIG; DATA-ERR->ERR-DIG. EN-SEC,       F0013  5    6 
            ERR-ANALYS deleted.                                    F0013  5    7 
-ENDBIB               5          0                                 F0013  5    8 
-COMMON               3          3                                 F0013  5    9 
-EN-ERR-DIG E-LVL      ERR-DIG                                     F0013  5   10 
-MEV        MEV        MB                                          F0013  5   11 
- 0.002       2.6        0.3                                       F0013  5   12 
-ENDCOMMON            3          0                                 F0013  5   13 
-DATA                 2         41                                 F0013  5   14 
-EN         DATA                                                   F0013  5   15 
-MEV        MB                                                     F0013  5   16 
-      0.279        7.8                                            F0013  5   17 
-      0.296        8.7                                            F0013  5   18 
-      0.332       12.9                                            F0013  5   19 
-      0.442       25.6                                            F0013  5   20 
-      0.546       48.0                                            F0013  5   21 
-      0.602       66.2                                            F0013  5   22 
-      0.660      104.9                                            F0013  5   23 
-      0.674       91.0                                            F0013  5   24 
-      0.684      111.5                                            F0013  5   25 
-      0.691       82.9                                            F0013  5   26 
-      0.713      104.3                                            F0013  5   27 
-      0.714      116.5                                            F0013  5   28 
-      0.733      114.2                                            F0013  5   29 
-      0.738      110.1                                            F0013  5   30 
-      0.758      114.2                                            F0013  5   31 
-      0.758      111.8                                            F0013  5   32 
-      0.779      104.5                                            F0013  5   33 
-      0.803      110.3                                            F0013  5   34 
-      0.804      102.1                                            F0013  5   35 
-      0.824      107.9                                            F0013  5   36 
-      0.841       97.3                                            F0013  5   37 
-      0.858       89.2                                            F0013  5   38 
-      0.878       93.4                                            F0013  5   39 
-      0.899       86.9                                            F0013  5   40 
-      0.924       88.6                                            F0013  5   41 
-      0.941       81.3                                            F0013  5   42 
-      0.961       81.4                                            F0013  5   43 
-      0.982       79.0                                            F0013  5   44 
-      0.995       73.3                                            F0013  5   45 
-      1.020       69.3                                            F0013  5   46 
-      1.039       84.9                                            F0013  5   47 
-      1.063       91.6                                            F0013  5   48 
-      1.080       90.0                                            F0013  5   49 
-      1.108       88.5                                            F0013  5   50 
-      1.130       78.7                                            F0013  5   51 
-      1.155       71.4                                            F0013  5   52 
-      1.164       58.4                                            F0013  5   53 
-      1.185       59.3                                            F0013  5   54 
-      1.222       58.6                                            F0013  5   55 
-      1.271       57.1                                            F0013  5   56 
-      1.316       57.3                                            F0013  5   57 
-ENDDATA             43          0                                 F0013  5   58 
-ENDSUBENT           57          0                                 F0013  599999 
+           (20220421A) SD: E-LVL -> LVL-NUMB (not given in the    F0013  5    8 
+           article).                                              F0013  5    9 
+ENDBIB               7          0                                 F0013  5   10 
+COMMON               3          3                                 F0013  5   11 
+EN-ERR-DIG LVL-NUMB   ERR-DIG                                     F0013  5   12 
+MEV        NO-DIM     MB                                          F0013  5   13 
+ 0.002         1.        0.3                                      F0013  5   14 
+ENDCOMMON            3          0                                 F0013  5   15 
+DATA                 2         41                                 F0013  5   16 
+EN         DATA                                                   F0013  5   17 
+MEV        MB                                                     F0013  5   18 
+      0.279        7.8                                            F0013  5   19 
+      0.296        8.7                                            F0013  5   20 
+      0.332       12.9                                            F0013  5   21 
+      0.442       25.6                                            F0013  5   22 
+      0.546       48.0                                            F0013  5   23 
+      0.602       66.2                                            F0013  5   24 
+      0.660      104.9                                            F0013  5   25 
+      0.674       91.0                                            F0013  5   26 
+      0.684      111.5                                            F0013  5   27 
+      0.691       82.9                                            F0013  5   28 
+      0.713      104.3                                            F0013  5   29 
+      0.714      116.5                                            F0013  5   30 
+      0.733      114.2                                            F0013  5   31 
+      0.738      110.1                                            F0013  5   32 
+      0.758      114.2                                            F0013  5   33 
+      0.758      111.8                                            F0013  5   34 
+      0.779      104.5                                            F0013  5   35 
+      0.803      110.3                                            F0013  5   36 
+      0.804      102.1                                            F0013  5   37 
+      0.824      107.9                                            F0013  5   38 
+      0.841       97.3                                            F0013  5   39 
+      0.858       89.2                                            F0013  5   40 
+      0.878       93.4                                            F0013  5   41 
+      0.899       86.9                                            F0013  5   42 
+      0.924       88.6                                            F0013  5   43 
+      0.941       81.3                                            F0013  5   44 
+      0.961       81.4                                            F0013  5   45 
+      0.982       79.0                                            F0013  5   46 
+      0.995       73.3                                            F0013  5   47 
+      1.020       69.3                                            F0013  5   48 
+      1.039       84.9                                            F0013  5   49 
+      1.063       91.6                                            F0013  5   50 
+      1.080       90.0                                            F0013  5   51 
+      1.108       88.5                                            F0013  5   52 
+      1.130       78.7                                            F0013  5   53 
+      1.155       71.4                                            F0013  5   54 
+      1.164       58.4                                            F0013  5   55 
+      1.185       59.3                                            F0013  5   56 
+      1.222       58.6                                            F0013  5   57 
+      1.271       57.1                                            F0013  5   58 
+      1.316       57.3                                            F0013  5   59 
+ENDDATA             43          0                                 F0013  5   60 
+ENDSUBENT           59          0                                 F0013  599999 
 ENDENTRY             5          0                                 F001399999999 
