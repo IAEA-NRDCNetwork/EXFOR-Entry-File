@@ -1,71 +1,191 @@
-ENTRY            O0621   20000424                             0000O062100000001 
-SUBENT        O0621001   20000424                             0000O062100100001 
-BIB                 17         39                                 O062100100002 
-TITLE      Charge Distribution in the Fission of 232-Th.          O062100100003 
-AUTHOR     (S.H.FREID,J.L.ANDERSON,G.R.CHOPPIN)                   O062100100004 
-INSTITUTE  (1USAFSU)                                              O062100100005 
-REFERENCE  (J,JIN,30,3155,1968)                                   O062100100006 
-REL-REF    (R,,C.WILLIAMSON+,R,CEA-2189,1962). Range-Energy TablesO062100100007 
-           (R,,H.A.TEWES+,J,PR,88,860,1952) These Data are Used toO062100100008 
-           Construct Mass Distribution Curve For Proton Beam.     O062100100009 
-           (R,,M.V.RAMANIAH+,J,JIN,24,1185,1962) These Data are   O062100100010 
-           Used                                                   O062100100011 
-           To Construct Mass Distribution Curve For Deutron Beam. O062100100012 
-FACILITY   (VDGT,1USAFSU)                                         O062100100013 
-SAMPLE     Circular Targets, 1.84 Cm Diameter, were Cut from 1.5  O062100100014 
-           Mm Thick Natural Thorium Foil. To Prevent the Loss of  O062100100015 
-           Fission Products Recoiling from the Front and Back     O062100100016 
-           Surfaces, the Targets were Mounted Between Two Pure    O062100100017 
-           Aluminium Catcher Foils of 1 mm Thickness.             O062100100018 
-METHOD     (EXTB,SITA,BCINT,REC,RCHEM,GSPEC,BSPEC)                O062100100019 
-           Beam Energy Degradation Through the Target Assembly    O062100100020 
-           Was Calculated from Range-Energy Tables - See Rel-Ref. O062100100021 
-DETECTOR  1(PROPC) Windowless 2Pi-Flow Proportional Counter.      O062100100022 
-          2(NAICR) Na-I Crystal.                                  O062100100023 
-PART-DET  1(B-)                                                   O062100100024 
-          2(DG)                                                   O062100100025 
-ANALYSIS   (AREA) The Total Fission Cross Sections were           O062100100026 
-           Determined from the Integrated Area Under the Mass     O062100100027 
-           Yield Curves.                                          O062100100028 
-           (DECAY).                                               O062100100029 
-ERR-ANALYS Not Given.                                             O062100100030 
-COMMENT    - By Authors - Mean Energy of the Incident Particles inO062100100031 
-           The Target is Listed in the Data Section.              O062100100032 
-ADD-RES    (A-DIS) Fission Product Formation Cross Sections.      O062100100033 
-           (Z-DIS) Charge Distribution For Fission Products.      O062100100034 
-MISC-COL   (MISC1) Entering Energy of Beam.                       O062100100035 
-           (MISC2) Emerging Energy of Beam.                       O062100100036 
-HISTORY    (19980216C) By Khlopin'S Institute - Ap.               O062100100037 
-           (19980407A) Deutron Data are Included.                 O062100100038 
-           (20000420U) Last checking has been done.               O062100100039 
-           (20000424A) DATE is corrected                          O062100100040 
-STATUS     (TABLE) Data from Tabl.1 and Ref. Text.                O062100100041 
-ENDBIB              39          0                                 O062100100042 
-NOCOMMON             0          0                                 O062100100043 
-ENDSUBENT           42          0                                 O062100199999 
-SUBENT        O0621002   20000424                             0000O062100200001 
-BIB                  2          3                                 O062100200002 
-REACTION   (90-TH-232(P,F),,SIG,,,EXP)                            O062100200003 
-REL-REF    (D,P0028002,G.R.CHOPPIN+,J,PR,131,2149,1963) This      O062100200004 
-           Experiment Used Solid State Detectors.                 O062100200005 
-ENDBIB               3          0                                 O062100200006 
-NOCOMMON             0          0                                 O062100200007 
-DATA                 4          2                                 O062100200008 
-EN-MEAN    DATA       MISC1      MISC2                            O062100200009 
-MEV        MB         MEV        MEV                              O062100200010 
-        9.5        21.        10.       9.11                      O062100200011 
-       11.3        75.        12.      10.54                      O062100200012 
-ENDDATA              4          0                                 O062100200013 
-ENDSUBENT           12          0                                 O062100299999 
-SUBENT        O0621003   20000424                             0000O062100300001 
-BIB                  1          1                                 O062100300002 
-REACTION   (90-TH-232(D,F),,SIG,,,EXP)                            O062100300003 
-ENDBIB               1          0                                 O062100300004 
-NOCOMMON             0          0                                 O062100300005 
-DATA                 4          1                                 O062100300006 
-EN-MEAN    DATA       MISC1      MISC2                            O062100300007 
-MEV        MB         MEV        MEV                              O062100300008 
-       11.5        66.        12.      10.94                      O062100300009 
-ENDDATA              3          0                                 O062100300010 
-ENDSUBENT            9          0                                 O062100399999 
-ENDENTRY             3          0                                 O062199999999 
+ENTRY            O0621   20151210                             O056O0621  0    1 
+SUBENT        O0621001   20151210                             O056O0621  1    1 
+BIB                 15         31                                 O0621  1    2 
+TITLE      Charge distribution in the fission of 232-Th           O0621  1    3 
+AUTHOR     (S.H.Freid,J.L.Anderson,G.R.Choppin)                   O0621  1    4 
+INSTITUTE  (1USAFSU)                                              O0621  1    5 
+REFERENCE  (J,JIN,30,3155,1968)                                   O0621  1    6 
+REL-REF    (R,,C.F.Williamson+,R,CEA-2189,1962). Range-Energy TblsO0621  1    7 
+FACILITY   (VDGT,1USAFSU)                                         O0621  1    8 
+SAMPLE     Circular targets, 1.84 cm diam., were cut from 1.5 mm  O0621  1    9 
+           thick natural thorium foil. To prevent the loss of     O0621  1   10 
+           fission products recoiling from the front and back     O0621  1   11 
+           surfaces, the targets were mounted between two pure    O0621  1   12 
+           aluminum catcher foils of 1 mm thickness.              O0621  1   13 
+METHOD     (EXTB,SITA,BCINT,REC,CHSEP,GSPEC,BSPEC)                O0621  1   14 
+           Beam energy degradation through the target assembly    O0621  1   15 
+           was calculated from range-energy tables - see REL-REF. O0621  1   16 
+DETECTOR  1(PROPC) Windowless 2Pi-flow proportional counter.      O0621  1   17 
+          2(NAICR) Na-I crystal.                                  O0621  1   18 
+PART-DET  1(B-)                                                   O0621  1   19 
+          2(DG)                                                   O0621  1   20 
+ANALYSIS   (DECAY).                                               O0621  1   21 
+COMMENT    - By Authors - Mean energy of the incident particles inO0621  1   22 
+           the target is listed in the data section.              O0621  1   23 
+ADD-RES    (A-DIS) Fission product formation cross sections.      O0621  1   24 
+           (Z-DIS) Charge distribution for fission products.      O0621  1   25 
+STATUS     (TABLE) Data from Tabl.1 and ref. text.                O0621  1   26 
+HISTORY    (19980216C) By Khlopin'S Institute - AP.               O0621  1   27 
+           (19980407A) Deuteron data are included.                O0621  1   28 
+           (20000420U) Last checking has been done.               O0621  1   29 
+           (20000424A) DATE is corrected                          O0621  1   30 
+           (20151210A) SD: Subents 004,005 added. Cosmetic        O0621  1   31 
+           corrections in all Subents. Two refs from REL-REF movedO0621  1   32 
+           to Subents 004,005.                                    O0621  1   33 
+ENDBIB              31          0                                 O0621  1   34 
+NOCOMMON             0          0                                 O0621  1   35 
+ENDSUBENT           34          0                                 O0621  199999 
+SUBENT        O0621002   20151210                             O056O0621  2    1 
+BIB                  5         24                                 O0621  2    2 
+REACTION   (90-TH-232(P,F),,SIG)                                  O0621  2    3 
+REL-REF    (D,P0028002,G.R.Choppin+,J,PR,131,2149,1963) This      O0621  2    4 
+           experiment used solid state detectors.                 O0621  2    5 
+           (R,O0661002,H.A.Tewes+,J,PR,88,860,1952) Data are used O0621  2    6 
+           to construct mass distribution curve for proton beam.  O0621  2    7 
+ANALYSIS   (AREA) The total fission cross sections were           O0621  2    8 
+           determined from the integrated area under the mass     O0621  2    9 
+           yield curves.                                          O0621  2   10 
+           In order to determine the fractional chain yield for   O0621  2   11 
+           each nuclide, the cumulative yield for each of their   O0621  2   12 
+           respective mass chains must be known. For this goal:   O0621  2   13 
+             * mass yield curves at 9.3 MeV from Tewes and James  O0621  2   14 
+            (see REL-REF) normalized to present data at mass      O0621  2   15 
+            number 83, measured as 83Br;                          O0621  2   16 
+             * mass yield curve at 11.5 MeV was compiled by       O0621  2   17 
+           plotting the data for each mass chain given by Tewes   O0621  2   18 
+           and James (see REL-REF) for 6.3,9.3,13.3, and 17.8 MeV O0621  2   19 
+           proton energies and interpolating at 11.3 MeV.         O0621  2   20 
+            EN-MAX -  Entering energy of beam.                    O0621  2   21 
+            EN-MIN - Emerging energy of beam.                     O0621  2   22 
+STATUS     (TABLE) From the text on p.3157 of JIN,30,3155,1968    O0621  2   23 
+           (DEP,O0661004)                                         O0621  2   24 
+HISTORY    (20151210A) SD: ANYLYSIS, STATUS, REL-REF were added.  O0621  2   25 
+           MISC1 -> EN-MAX; MISC2 -> EN-MIN                       O0621  2   26 
+ENDBIB              24          0                                 O0621  2   27 
+NOCOMMON             0          0                                 O0621  2   28 
+DATA                 4          2                                 O0621  2   29 
+EN-MEAN    DATA       EN-MAX     EN-MIN                           O0621  2   30 
+MEV        MB         MEV        MEV                              O0621  2   31 
+        9.5        21.        10.       9.11                      O0621  2   32 
+       11.3        75.        12.      10.54                      O0621  2   33 
+ENDDATA              4          0                                 O0621  2   34 
+ENDSUBENT           33          0                                 O0621  299999 
+SUBENT        O0621003   20151210                             O056O0621  3    1 
+BIB                  5         23                                 O0621  3    2 
+REACTION   (90-TH-232(D,F),,SIG)                                  O0621  3    3 
+REL-REF    (D,P0028006,G.R.Choppin+,J,PR,131,2149,1963) This      O0621  3    4 
+           experiment used solid state detectors.                 O0621  3    5 
+           (R,C2199001,M.V.Ramaniah+,J,JIN,24,1185,1962) Data are O0621  3    6 
+           used to construct mass distrib. curve for proton beam. O0621  3    7 
+ANALYSIS   (AREA) The total fission cross sections were           O0621  3    8 
+           determined from the integrated area under the mass     O0621  3    9 
+           yield curves.                                          O0621  3   10 
+           In order to determine the fractional chain yield for   O0621  3   11 
+           each nuclide, the cumulative yield for each of their   O0621  3   12 
+           respective mass chains must be known. For this goal:   O0621  3   13 
+             the mass yield curve for 11.5 MeV deuteron fission   O0621  3   14 
+           was estimated from the data given by Ramaniah and Wahl O0621  3   15 
+            (see REL-REF) for the 9.5 MeV deuteron fission of     O0621  3   16 
+           252Th. The agreement with these curves was checked by  O0621  3   17 
+           measuring the cumulative yields of masses 83,          O0621  3   18 
+           84, 93, 99, 111, 113, 131, and 138.                    O0621  3   19 
+            EN-MAX -  Entering energy of beam.                    O0621  3   20 
+            EN-MIN - Emerging energy of beam.                     O0621  3   21 
+STATUS     (TABLE) From the text on p.3157 of JIN,30,3155,1968    O0621  3   22 
+           (DEP,O0661005)                                         O0621  3   23 
+HISTORY    (20151210A) SD: ANYLYSIS, STATUS, REL-REF were added.  O0621  3   24 
+           MISC1 -> EN-MAX; MISC2 -> EN-MIN                       O0621  3   25 
+ENDBIB              23          0                                 O0621  3   26 
+NOCOMMON             0          0                                 O0621  3   27 
+DATA                 4          1                                 O0621  3   28 
+EN-MEAN    DATA       EN-MAX     EN-MIN                           O0621  3   29 
+MEV        MB         MEV        MEV                              O0621  3   30 
+       11.5        66.        12.      10.94                      O0621  3   31 
+ENDDATA              3          0                                 O0621  3   32 
+ENDSUBENT           31          0                                 O0621  399999 
+SUBENT        O0621004   20151210                             O056O0621  4    1 
+BIB                  3          5                                 O0621  4    2 
+REACTION   (90-TH-232(P,F)ELEM/MASS,,SIG)                         O0621  4    3 
+ERR-ANALYS (DATA-ERR) The error limits represent the differences  O0621  4    4 
+           in replicate determinations. Where no deviations are   O0621  4    5 
+           listed, only one determination was performed.          O0621  4    6 
+HISTORY    (20151210C) SD                                         O0621  4    7 
+ENDBIB               5          0                                 O0621  4    8 
+NOCOMMON             0          0                                 O0621  4    9 
+DATA                 6         35                                 O0621  4   10 
+EN-MEAN    ELEMENT    MASS       ISOMER     DATA       DATA-ERR   O0621  4   11 
+MEV        NO-DIM     NO-DIM     NO-DIM     MB         MB         O0621  4   12 
+        9.5        35.        82.               0.00257     0.0005O0621  4   13 
+        9.5        35.        83.                 0.331      0.045O0621  4   14 
+        9.5        37.        86.               0.00139           O0621  4   15 
+        9.5        39.        90.                0.0211      0.004O0621  4   16 
+        9.5        39.        91.                 0.139      0.003O0621  4   17 
+        9.5        39.        93.                 0.965      0.114O0621  4   18 
+        9.5        41.        95.                 0.140      0.028O0621  4   19 
+        9.5        41.        96.                 0.221      0.044O0621  4   20 
+        9.5        41.        97.                 0.643      0.006O0621  4   21 
+        9.5        42.        99.                 0.485      0.100O0621  4   22 
+        9.5        47.       111.                 0.166      0.023O0621  4   23 
+        9.5        47.       112.                 0.156      0.003O0621  4   24 
+        9.5        47.       113.                 0.130      0.026O0621  4   25 
+        9.5        53.       131.                 0.458      0.014O0621  4   26 
+        9.5        55.       134.               0.00245    0.00027O0621  4   27 
+        9.5        55.       136.                0.0359     0.0072O0621  4   28 
+        9.5        55.       138.                 0.844      0.169O0621  4   29 
+       11.3        35.        82.               0.00532     0.0011O0621  4   30 
+       11.3        35.        83.                  1.21       0.24O0621  4   31 
+       11.3        35.        84.                  1.39       0.28O0621  4   32 
+       11.3        37.        86.                0.0781           O0621  4   33 
+       11.3        39.        90.                0.0716           O0621  4   34 
+       11.3        39.        91.                 0.275      0.055O0621  4   35 
+       11.3        39.        93.                  3.59       0.72O0621  4   36 
+       11.3        41.        95.                 0.417      0.083O0621  4   37 
+       11.3        41.        96.                0.0627     0.0031O0621  4   38 
+       11.3        41.        97.                 0.186      0.022O0621  4   39 
+       11.3        42.        99.                  1.99       0.35O0621  4   40 
+       11.3        47.       111.                 0.275      0.055O0621  4   41 
+       11.3        47.       112.                 0.104      0.021O0621  4   42 
+       11.3        47.       113.                 0.836      0.167O0621  4   43 
+       11.3        53.       131.                  4.58      0.916O0621  4   44 
+       11.3        55.       134.         1.     0.0115    0.00015O0621  4   45 
+       11.3        55.       136.                 0.171     0.0085O0621  4   46 
+       11.3        55.       138.                  4.47       0.89O0621  4   47 
+ENDDATA             37          0                                 O0621  4   48 
+ENDSUBENT           47          0                                 O0621  499999 
+SUBENT        O0621005   20151210                             O056O0621  5    1 
+BIB                  3          5                                 O0621  5    2 
+REACTION   (90-TH-232(D,F)ELEM/MASS,,SIG)                         O0621  5    3 
+ERR-ANALYS (DATA-ERR) The error limits represent the differences  O0621  5    4 
+           in replicate determinations. Where no deviations are   O0621  5    5 
+           listed, only one determination was performed.          O0621  5    6 
+HISTORY    (20151210C) SD                                         O0621  5    7 
+ENDBIB               5          0                                 O0621  5    8 
+COMMON               1          3                                 O0621  5    9 
+EN-MEAN                                                           O0621  5   10 
+MEV                                                               O0621  5   11 
+  11.5                                                            O0621  5   12 
+ENDCOMMON            3          0                                 O0621  5   13 
+DATA                 5         18                                 O0621  5   14 
+ELEMENT    MASS       ISOMER     DATA       DATA-ERR              O0621  5   15 
+NO-DIM     NO-DIM     NO-DIM     MB         MB                    O0621  5   16 
+        35.        82.               0.00075                      O0621  5   17 
+        35.        83.                  1.06                      O0621  5   18 
+        35.        84.                  1.46                      O0621  5   19 
+        37.        86.               0.00317                      O0621  5   20 
+        39.        90.                0.0201                      O0621  5   21 
+        39.        91.                 0.308      0.033           O0621  5   22 
+        39.        93.                  5.70       1.14           O0621  5   23 
+        41.        95.                 0.188                      O0621  5   24 
+        41.        96.               0.00492                      O0621  5   25 
+        41.        97.                  0.10                      O0621  5   26 
+        42.        99.                   2.2       0.44           O0621  5   27 
+        47.       111.                 0.759                      O0621  5   28 
+        47.       112.                 0.112                      O0621  5   29 
+        47.       113.                 0.658                      O0621  5   30 
+        53.       131.                  3.57                      O0621  5   31 
+        55.       134.         1.    0.00195                      O0621  5   32 
+        55.       136.                0.0382                      O0621  5   33 
+        55.       138.                  3.58                      O0621  5   34 
+ENDDATA             20          0                                 O0621  5   35 
+ENDSUBENT           34          0                                 O0621  599999 
+ENDENTRY             5          0                                 O062199999999 
