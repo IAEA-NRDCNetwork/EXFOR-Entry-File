@@ -1,32 +1,31 @@
-ENTRY            S0008   20080311                             Y006S000800000001 
-SUBENT        S0008001   20080311                             Y006S000800100001 
-BIB                 11         23                                 S000800100002 
-TITLE      Neutron spectrum of Li7(d,n) reaction induced by 2.06  S000800100003 
-           MeV deuterons                                          S000800100004 
-AUTHOR     (Sun Hancheng, Wang Zhengming, Wang DAhai,             S000800100005 
-           Chang Huan Qiao, Cheng Baoling, Dai Nengxiong,         S000800100006 
-           CUi Yunfong)                                           S000800100007 
+ENTRY            S0008   20200220                             S027S000800000001 
+SUBENT        S0008001   20200220                             S027S000800100001 
+BIB                 11         22                                 S000800100002 
+TITLE      Neutron spectrum of 7Li(d,n) reaction induced by       S000800100003 
+            2.06 MeV deuterons                                    S000800100004 
+AUTHOR     (Sun Hancheng, Wang Zhengming, Wang Dahai,             S000800100005 
+            Chang Huan Qiao, Cheng Baoling, Dai Nengxiong,        S000800100006 
+            Cui Yunfong)                                          S000800100007 
 INSTITUTE  (3CPRAEP)                                              S000800100008 
-EXP-YEAR   (1967)                                                 S000800100009 
-FACILITY   (VDG,3CPRAEP)2.5MeV                                    S000800100010 
-REFERENCE  (J,CST,15,185,198102)                                  S000800100011 
-DETECTOR   (SCIN)stilbene crystal was used to measure neutron     S000800100012 
-           above 0.5MeV                                           S000800100013 
-           (BF3)bf3 with cadmium packing places in the centre of  S000800100014 
-           spherical shell of paraffin to measure neutrons below  S000800100015 
-           0.5MeV                                                 S000800100016 
-METHOD     (PHD) and artificial threshold method                  S000800100017 
-HISTORY    (19850302C)                                            S000800100018 
-           (19871104U)                                            S000800100019 
-           (20080228A) NDS(SD):BIB section updated: upper to lowerS000800100020 
-           cases, 4-digits year, deleted EXP - from reaction code.S000800100021 
-STATUS     (TABLE) Data received from authors in list form        S000800100022 
-CORRECTION Backgrounds corrected include those of Li6(d,n) and    S000800100023 
-           C12(d,n),of (d,n) induced by C,O contaminant on target S000800100024 
-           of measurement hall                                    S000800100025 
-ENDBIB              23          0                                 S000800100026 
-NOCOMMON             0          0                                 S000800100027 
-ENDSUBENT           26          0                                 S000800199999 
+REFERENCE  (J,CST,15,185,1981)                                    S000800100009 
+EXP-YEAR   (1967)                                                 S000800100010 
+FACILITY   (VDG,3CPRAEP) 2.5MeV                                   S000800100011 
+DETECTOR   (SCIN) Stilbene crystal for neutron above 0.5 MeV      S000800100012 
+           (BF3) BF3 with Cd packing in the centre of spherical   S000800100013 
+            shell of paraffin for neutrons below 0.5 MeV          S000800100014 
+METHOD     (PHD) and artificial threshold method                  S000800100015 
+CORRECTION Corrected for background neutrons due to Li6(d,n) and  S000800100016 
+            C12(d,n) as well as C,O(d,n) contaminant on target    S000800100017 
+            of measurement hall                                   S000800100018 
+STATUS     (TABLE) Data received from authors in list form        S000800100019 
+HISTORY    (19850302C)                                            S000800100020 
+           (19871104U)                                            S000800100021 
+           (20080228A) NDS(SD):BIB section updated. EXP in        S000800100022 
+            REACTION code removed.                                S000800100023 
+           (20200220A) On. Major revision in 008.                 S000800100024 
+ENDBIB              22          0                                 S000800100025 
+NOCOMMON             0          0                                 S000800100026 
+ENDSUBENT           25          0                                 S000800199999 
 SUBENT        S0008002   20080311                             Y006S000800200001 
 BIB                  3          6                                 S000800200002 
 REACTION   (3-LI-7(D,X)0-NN-1,,DE,,REL) the spectrum averaged by  S000800200003 
@@ -201,17 +200,18 @@ MEV        NO-DIM                                                 S000800700021
 2.06       0.1831                                                 S000800700022 
 ENDDATA              3          0                                 S000800700023 
 ENDSUBENT           22          0                                 S000800799999 
-SUBENT        S0008008   20080311                             Y006S000800800001 
-BIB                  3          3                                 S000800800002 
-REACTION   (3-LI-7(D,N)4-BE-8,,AKE,N)                             S000800800003 
-STATUS     (DEP,S0008002)                                         S000800800004 
-ERR-ANALYS No information given.                                  S000800800005 
-ENDBIB               3          0                                 S000800800006 
-NOCOMMON             0          0                                 S000800800007 
-DATA                 3          1                                 S000800800008 
-EN         DATA       DATA-ERR                                    S000800800009 
-MEV        MEV        MEV                                         S000800800010 
-2.06       5.94       0.48                                        S000800800011 
-ENDDATA              3          0                                 S000800800012 
-ENDSUBENT           11          0                                 S000800899999 
+SUBENT        S0008008   20200220                             S027S000800800001 
+BIB                  4          4                                 S000800800002 
+REACTION   (3-LI-7(D,X)0-NN-1,,KE)                                S000800800003 
+ERR-ANALYS (DATA-ERR) No information given                        S000800800004 
+STATUS     (DEP,S0008002)                                         S000800800005 
+HISTORY    (20200220A) On. REACTION: AKE -> KE                    S000800800006 
+ENDBIB               4          0                                 S000800800007 
+NOCOMMON             0          0                                 S000800800008 
+DATA                 3          1                                 S000800800009 
+EN         DATA       DATA-ERR                                    S000800800010 
+MEV        MEV        MEV                                         S000800800011 
+ 2.06       5.94       0.48                                       S000800800012 
+ENDDATA              3          0                                 S000800800013 
+ENDSUBENT           12          0                                 S000800899999 
 ENDENTRY             8          0                                 S000899999999 
