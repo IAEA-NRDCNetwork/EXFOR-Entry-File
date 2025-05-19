@@ -1,40 +1,57 @@
-ENTRY            20035   19830901                             00002003500000001 
-SUBENT        20035001   19830901                             00002003500100001 
-BIB                 14         19                                 2003500100002 
-INSTITUTE  (2AUSSGA)                                              2003500100003 
-REFERENCE  (J,ARI,19,593,6801)                                    2003500100004 
-AUTHOR     (Z.T.BAK,P.RIEHS)                                      2003500100005 
-TITLE      -THE REACTOR NEUTRON CROSS-SECTION OF 21-SC-46.-       2003500100006 
-FACILITY   (REAC )    ASTRA REACTOR SEIBERSDORF                   2003500100007 
-INC-SOURCE (REAC)     REACTOR                                     2003500100008 
-INC-SPECT  .NEUTRON-FLUX = 3.8E+13 NEUTRONS/CM-SQ/SEC.            2003500100009 
-           .IRRADIATED 19 DAYS IN CORE POSITION                   2003500100010 
-METHOD     (ACTIV)    ACTIVATION                                  2003500100011 
-DETECTOR   (GELI)     GERMANIUM-LITHIUM DETECTOR                  2003500100012 
-MONITOR    (27-CO-59(N,G)27-CO-60,,SIG)                           2003500100013 
-               SIGMA = 3.72+-0.6 BARN                             2003500100014 
-STATUS                DATA FROM PUBLICATION.                      2003500100015 
-HISTORY    (701116C)                                              2003500100016 
-           (710908E)                                              2003500100017 
-CORRECTION .EPITHERMAL FLUX IS SUBTRACTED BY MEANS OF CADMIUM     2003500100018 
-            SHIELDED SAMPLES                                      2003500100019 
-ERR-ANALYS .STATISTICAL ERROR 2 SIGMA = 0.5 BARN                  2003500100020 
-           .ADDED SYSTEMATIC ERRORS +- 1.2 B                      2003500100021 
-ENDBIB              19          0                                 2003500100022 
-NOCOMMON             0          0                                 2003500100023 
-ENDSUBENT           22          0                                 2003500199999 
-SUBENT        20035002   19830901                             00002003500200001 
-BIB                  3          4                                 2003500200002 
-REACTION   (21-SC-46(N,G)21-SC-47,,SIG,,SPA)                      2003500200003 
-PART-DET   (G    )    160KEV GAMMA, RELATIVE INTENSITY 68+-2 PERC.2003500200004 
-HISTORY    (701116C)                                              2003500200005 
-           (710908E)                                              2003500200006 
-ENDBIB               4          0                                 2003500200007 
-NOCOMMON             0          0                                 2003500200008 
-DATA                 3          1                                 2003500200009 
-EN-DUMMY   DATA       DATA-ERR                                    2003500200010 
-MEV        B          B                                           2003500200011 
- 2.5300E-08 7.5000E+00 1.7000E+00                                 2003500200012 
-ENDDATA              3          0                                 2003500200013 
-ENDSUBENT           12          0                                 2003500299999 
+ENTRY            20035   20190117                             227420035  0    1 
+SUBENT        20035001   20190117                             227420035  1    1 
+BIB                 18         29                                 20035  1    2 
+TITLE       The reactor neutron capture cross section of Sc-46    20035  1    3 
+            and a determination of the beta branching ratio       20035  1    4 
+            of Sc-47 decay                                        20035  1    5 
+INSTITUTE  (2AUSSGA)                                              20035  1    6 
+REFERENCE  (J,ARI,19,593,1968)                                    20035  1    7 
+AUTHOR     (Z.-T.Bak,P.Riehs)                                     20035  1    8 
+FACILITY   (REAC,2AUSSGA)    ASTRA reactor Seibersdorf            20035  1    9 
+SAMPLE      Samples of metallic scandium and cobalt with and      20035  1   10 
+            without cadmium shielding were irradiated in core     20035  1   11 
+            positions at the ASTRA reactor                        20035  1   12 
+INC-SOURCE (REAC)     Reactor                                     20035  1   13 
+INC-SPECT   Neutron-flux = 3.8E+13 neutrons/cm2/sec.              20035  1   14 
+            Irradiated 19 days in core position                   20035  1   15 
+METHOD     (ACTIV)    Activation                                  20035  1   16 
+DETECTOR   (GELI)     Germanium-lithium detector                  20035  1   17 
+MONITOR    (27-CO-59(N,G)27-CO-60,,SIG)                           20035  1   18 
+               sigma = 3.72+-0.6 barn                             20035  1   19 
+MONIT-REF  (,M.Goldberg+,R,BNL-325,1966)                          20035  1   20 
+CORRECTION  Epithermal flux is subtracted by means of cadmium     20035  1   21 
+            shielded samples                                      20035  1   22 
+MISC-COL   (MISC) Statistical error 2 sigma = 0.5 barn            20035  1   23 
+ERR-ANALYS (ERR-S) Statistical error 1 sigma = 0.25 barn derived  20035  1   24 
+                   from MISC                                      20035  1   25 
+           (ERR-SYS) systematic errors +- 1.2 b                   20035  1   26 
+ADD-RES    (DECAY) 47Sc Igamma (160keV)=68.1+/-2.1%               20035  1   27 
+STATUS     (TABLE)   Data from Appl.Rad.Isot.19(1968)593          20035  1   28 
+HISTORY    (19701116C)                                            20035  1   29 
+           (20190117U) SD:Updated to new date formats,lower case. 20035  1   30 
+           MONIT, MONIT-REF were added. BIB updated. MISC added.  20035  1   31 
+ENDBIB              29          0                                 20035  1   32 
+COMMON               5          3                                 20035  1   33 
+MONIT      MONIT-ERR  ERR-SYS    ERR-S      MISC                  20035  1   34 
+B          B          B          B          B                     20035  1   35 
+   3.72      0.6         1.2        0.25      0.5                 20035  1   36 
+ENDCOMMON            3          0                                 20035  1   37 
+ENDSUBENT           36          0                                 20035  199999 
+SUBENT        20035002   20190117                             227420035  2    1 
+BIB                  4          7                                 20035  2    2 
+REACTION   (21-SC-46(N,G)21-SC-47,,SIG,,SPA)                      20035  2    3 
+DECAY-DATA (21-SC-47,83.3D,DG,160.,0.681)  160keV gamma, relative 20035  2    4 
+                                         intensity 68.1+-2.1%     20035  2    5 
+ERR-ANALYS Uncertainty given for the value =1.7 b is equal sum of 20035  2    6 
+           systematic error + 2 sigma of statist.error that cannot20035  2    7 
+           be coded.                                              20035  2    8 
+HISTORY    (20190117A) SD: DATA-ERR deleted. PART-DET->DECAY-DATA.20035  2    9 
+ENDBIB               7          0                                 20035  2   10 
+NOCOMMON             0          0                                 20035  2   11 
+DATA                 2          1                                 20035  2   12 
+EN-DUMMY   DATA                                                   20035  2   13 
+MEV        B                                                      20035  2   14 
+ 2.5300E-08   7.5                                                 20035  2   15 
+ENDDATA              3          0                                 20035  2   16 
+ENDSUBENT           15          0                                 20035  299999 
 ENDENTRY             2          0                                 2003599999999 
