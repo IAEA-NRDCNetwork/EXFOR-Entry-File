@@ -1,0 +1,365 @@
+ENTRY            33161   20210903                             32053316100000001 
+SUBENT        33161001   20210903                             32053316100100001 
+BIB                 14         30                                 3316100100002 
+TITLE      Fast-neutron induced reaction cross section            3316100100003 
+            measurement of tin with dual monitor foils and        3316100100004 
+            covariance analysis                                   3316100100005 
+AUTHOR     (R.Pachuau, N.Otuka, C.V.Midhun, A.Gandhi, A.Mazumdar, 3316100100006 
+            H.Krishnamoorthy, A.Reza, V.Vatsa, S.V.Suryanarayana, 3316100100007 
+            B.K.Nayak, L.S.Danu, T.Patel, S.Bishnoi, I.Pasha,     3316100100008 
+            A.Kumar, V.Nanal)                                     3316100100009 
+INSTITUTE  (3INDTAT,3INDBHU,3ZZZIAE,3INDCCT,3INDTRM,3INDBGL)      3316100100010 
+           (3INDIND) Homi Bhabha National Institute, Mumbai       3316100100011 
+REFERENCE  (J,EPJ/A,57,268,2021)                                  3316100100012 
+FACILITY   (CCW,3INDTRM) 300 kV Purnima Neutron Generator         3316100100013 
+INC-SOURCE (D-T) Deuteron beam (185 keV, ~60 uA) on Ti-T target   3316100100014 
+SAMPLE     - Natural Sn foil (2.5x2.5 cm, 176.9+/-1.0 mg,         3316100100015 
+             99.99999% pure) wrapped by super-pure Al foil        3316100100016 
+             (0.025 mm thick, 29.9+/-1.0 mg)                      3316100100017 
+           - Au foil (2.5x2.5 cm, 126.4+/-1.0 mg) wrapped by      3316100100018 
+             super-pure Al foil (0.025 mm thick, 34.2+/-1.0 mg)   3316100100019 
+METHOD     (ACTIV) Irradiated for 2 hours                         3316100100020 
+INC-SPECT  (EN-RSL-FW) FWHM=0.4 MeV estimated by GEANT4           3316100100021 
+DETECTOR   (HPGE) 185-cc HPGe (30% relative efficiency and        3316100100022 
+            1.8 keV energy resolution for 1.33 MeV gammas)        3316100100023 
+CORRECTION Corrected for gamma self-attenuation                   3316100100024 
+ERR-ANALYS (ERR-T) Total uncertainty propagated from:             3316100100025 
+           (ERR-1) number of atoms                   (0.57%)      3316100100026 
+           (ERR-3) gamma intensity                                3316100100027 
+           (ERR-5) timing factor                                  3316100100028 
+           (ERR-7) number of gammas                               3316100100029 
+STATUS     (TABLE) Table 5 of Eur.Phys.J.A57(2021)268             3316100100030 
+           (APRVD) Proof-read by Rebecca Pachuau (2021-09-08)     3316100100031 
+HISTORY    (20210903C) On+VD                                      3316100100032 
+ENDBIB              30          0                                 3316100100033 
+COMMON               3          3                                 3316100100034 
+EN         EN-RSL-FW  ERR-1                                       3316100100035 
+MEV        MEV        PER-CENT                                    3316100100036 
+ 14.5       0.4        0.57                                       3316100100037 
+ENDCOMMON            3          0                                 3316100100038 
+ENDSUBENT           37          0                                 3316100199999 
+SUBENT        33161002   20210830                             32053316100200001 
+BIB                  6         14                                 3316100200002 
+REACTION  1(50-SN-0(N,X)50-SN-111,,SIG)                           3316100200003 
+          2(50-SN-0(N,X)50-SN-111,,SIG)                           3316100200004 
+DECAY-DATA (50-SN-111,35.3MIN,DG,1152.98,0.027)                   3316100200005 
+MONITOR   1(13-AL-27(N,A)11-NA-24,,SIG)                           3316100200006 
+          2(79-AU-197(N,2N)79-AU-196,,SIG)                        3316100200007 
+DECAY-MON 1(11-NA-24,14.997HR,DG,1368.63,0.999936)                3316100200008 
+          2(79-AU-196-G,6.1669D,DG,355.73,0.87)                   3316100200009 
+ERR-ANALYS (ERR-2) number of atoms for monitor  (3.34 or 0.79%)   3316100200010 
+           (ERR-4) gamma intensity for  monitor (0.00 or 3.45%)   3316100200011 
+           (ERR-6) timing factor for monitor    (0.06 or 0.01%)   3316100200012 
+           (ERR-8) number of gammas for monitor (1.27 or 0.41%)   3316100200013 
+           (ERR-9) efficiency ratio                               3316100200014 
+           (MONIT-ERR) monitor cross section (0.31 or 0.82%)      3316100200015 
+ADD-RES    Off-diagonal weighted mean = 8.86+/-2.17 mb            3316100200016 
+ENDBIB              14          0                                 3316100200017 
+COMMON              15          9                                 3316100200018 
+ERR-2     1ERR-2     2ERR-3      ERR-4     1ERR-4     2ERR-5      3316100200019 
+ERR-6     1ERR-6     2ERR-7      ERR-8     1ERR-8     2ERR-9     13316100200020 
+ERR-9     2MONIT-ERR 1MONIT-ERR 2                                 3316100200021 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100200022 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100200023 
+PER-CENT   PER-CENT   PER-CENT                                    3316100200024 
+ 3.34       0.79       14.81      0.00       3.45       0.11      3316100200025 
+ 0.06       0.01       19.25      1.27       0.41       1.13      3316100200026 
+ 2.29       0.31       0.82                                       3316100200027 
+ENDCOMMON            9          0                                 3316100200028 
+DATA                 6          1                                 3316100200029 
+DATA      1ERR-T     1MONIT     1DATA      2ERR-T     2MONIT     23316100200030 
+MB         MB         B          MB         MB         B          3316100200031 
+ 8.91       2.19       0.1154     8.83       2.18       2.1568    3316100200032 
+ENDDATA              3          0                                 3316100200033 
+ENDSUBENT           32          0                                 3316100299999 
+SUBENT        33161003   20210830                             32053316100300001 
+BIB                  6         14                                 3316100300002 
+REACTION  1(50-SN-0(N,X)50-SN-117-M,,SIG)                         3316100300003 
+          2(50-SN-0(N,X)50-SN-117-M,,SIG)                         3316100300004 
+DECAY-DATA (50-SN-117-M,14.00D,DG,158.56,0.864)                   3316100300005 
+MONITOR   1(13-AL-27(N,A)11-NA-24,,SIG)                           3316100300006 
+          2(79-AU-197(N,2N)79-AU-196,,SIG)                        3316100300007 
+DECAY-MON 1(11-NA-24,14.997HR,DG,1368.63,0.999936)                3316100300008 
+          2(79-AU-196-G,6.1669D,DG,355.73,0.87)                   3316100300009 
+ERR-ANALYS (ERR-2) number of atoms for monitor  (3.34 or 0.79%)   3316100300010 
+           (ERR-4) gamma intensity for  monitor (0.00 or 3.45%)   3316100300011 
+           (ERR-6) timing factor for monitor    (0.06 or 0.01%)   3316100300012 
+           (ERR-8) number of gammas for monitor (1.27 or 0.41%)   3316100300013 
+           (ERR-9) efficiency ratio                               3316100300014 
+           (MONIT-ERR) monitor cross section (0.31 or 0.82%)      3316100300015 
+ADD-RES    Off-diagonal weighted mean = 263.25+/-9.70 mb          3316100300016 
+ENDBIB              14          0                                 3316100300017 
+COMMON              15          9                                 3316100300018 
+ERR-2     1ERR-2     2ERR-3      ERR-4     1ERR-4     2ERR-5      3316100300019 
+ERR-6     1ERR-6     2ERR-7      ERR-8     1ERR-8     2ERR-9     13316100300020 
+ERR-9     2MONIT-ERR 1MONIT-ERR 2                                 3316100300021 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100300022 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100300023 
+PER-CENT   PER-CENT   PER-CENT                                    3316100300024 
+ 3.34       0.79       0.46       0.00       3.45       0.36      3316100300025 
+ 0.06       0.01       1.93       1.27       0.41       2.69      3316100300026 
+ 1.80       0.31       0.82                                       3316100300027 
+ENDCOMMON            9          0                                 3316100300028 
+DATA                 6          1                                 3316100300029 
+DATA      1ERR-T     1MONIT     1DATA      2ERR-T     2MONIT     23316100300030 
+MB         MB         B          MB         MB         B          3316100300031 
+ 264.47     13.10      0.1154     262.26     12.02      2.1568    3316100300032 
+ENDDATA              3          0                                 3316100300033 
+ENDSUBENT           32          0                                 3316100399999 
+SUBENT        33161004   20210830                             32053316100400001 
+BIB                  6         14                                 3316100400002 
+REACTION  1(50-SN-0(N,X)50-SN-123-M,,SIG)                         3316100400003 
+          2(50-SN-0(N,X)50-SN-123-M,,SIG)                         3316100400004 
+DECAY-DATA (50-SN-123-M,40.06MIN,DG,160.32,0.857)                 3316100400005 
+MONITOR   1(13-AL-27(N,A)11-NA-24,,SIG)                           3316100400006 
+          2(79-AU-197(N,2N)79-AU-196,,SIG)                        3316100400007 
+DECAY-MON 1(11-NA-24,14.997HR,DG,1368.63,0.999936)                3316100400008 
+          2(79-AU-196-G,6.1669D,DG,355.73,0.87)                   3316100400009 
+ERR-ANALYS (ERR-2) number of atoms for monitor  (3.34 or 0.79%)   3316100400010 
+           (ERR-4) gamma intensity for  monitor (0.00 or 3.45%)   3316100400011 
+           (ERR-6) timing factor for monitor    (0.06 or 0.01%)   3316100400012 
+           (ERR-8) number of gammas for monitor (1.27 or 0.41%)   3316100400013 
+           (ERR-9) efficiency ratio                               3316100400014 
+           (MONIT-ERR) monitor cross section (0.31 or 0.82%)      3316100400015 
+ADD-RES    Off-diagonal weighted mean = 44.25+/-1.40 mb           3316100400016 
+ENDBIB              14          0                                 3316100400017 
+COMMON              15          9                                 3316100400018 
+ERR-2     1ERR-2     2ERR-3      ERR-4     1ERR-4     2ERR-5      3316100400019 
+ERR-6     1ERR-6     2ERR-7      ERR-8     1ERR-8     2ERR-9     13316100400020 
+ERR-9     2MONIT-ERR 1MONIT-ERR 2                                 3316100400021 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100400022 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100400023 
+PER-CENT   PER-CENT   PER-CENT                                    3316100400024 
+ 3.34       0.79       0.47       0.00       3.45       0.09      3316100400025 
+ 0.06       0.01       0.58       1.27       0.41       2.69      3316100400026 
+ 1.78       0.31       0.82                                       3316100400027 
+ENDCOMMON            9          0                                 3316100400028 
+DATA                 6          1                                 3316100400029 
+DATA      1ERR-T     1MONIT     1DATA      2ERR-T     2MONIT     23316100400030 
+MB         MB         B          MB         MB         B          3316100400031 
+ 44.46      2.04       0.1154     44.09      1.84       2.1568    3316100400032 
+ENDDATA              3          0                                 3316100400033 
+ENDSUBENT           32          0                                 3316100499999 
+SUBENT        33161005   20210830                             32053316100500001 
+BIB                  6         14                                 3316100500002 
+REACTION  1(50-SN-0(N,X)49-IN-111,CUM,SIG)                        3316100500003 
+          2(50-SN-0(N,X)49-IN-111,CUM,SIG)                        3316100500004 
+DECAY-DATA (49-IN-111-G,2.8047D,DG,245.35,0.941)                  3316100500005 
+MONITOR   1(13-AL-27(N,A)11-NA-24,,SIG)                           3316100500006 
+          2(79-AU-197(N,2N)79-AU-196,,SIG)                        3316100500007 
+DECAY-MON 1(11-NA-24,14.997HR,DG,1368.63,0.999936)                3316100500008 
+          2(79-AU-196-G,6.1669D,DG,355.73,0.87)                   3316100500009 
+ERR-ANALYS (ERR-2) number of atoms for monitor  (3.34 or 0.79%)   3316100500010 
+           (ERR-4) gamma intensity for  monitor (0.00 or 3.45%)   3316100500011 
+           (ERR-6) timing factor for monitor    (0.06 or 0.01%)   3316100500012 
+           (ERR-8) number of gammas for monitor (1.27 or 0.41%)   3316100500013 
+           (ERR-9) efficiency ratio                               3316100500014 
+           (MONIT-ERR) monitor cross section (0.31 or 0.82%)      3316100500015 
+ADD-RES    Off-diagonal weighted mean = 11.69+/-0.53 mb           3316100500016 
+ENDBIB              14          0                                 3316100500017 
+COMMON              15          9                                 3316100500018 
+ERR-2     1ERR-2     2ERR-3      ERR-4     1ERR-4     2ERR-5      3316100500019 
+ERR-6     1ERR-6     2ERR-7      ERR-8     1ERR-8     2ERR-9     13316100500020 
+ERR-9     2MONIT-ERR 1MONIT-ERR 2                                 3316100500021 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100500022 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100500023 
+PER-CENT   PER-CENT   PER-CENT                                    3316100500024 
+ 3.34       0.79       1.06       0.00       3.45       0.01      3316100500025 
+ 0.06       0.01       3.27       1.27       0.41       2.84      3316100500026 
+ 0.92       0.31       0.82                                       3316100500027 
+ENDCOMMON            9          0                                 3316100500028 
+DATA                 6          1                                 3316100500029 
+DATA      1ERR-T     1MONIT     1DATA      2ERR-T     2MONIT     23316100500030 
+MB         MB         B          MB         MB         B          3316100500031 
+ 11.75      0.68       0.1154     11.65      0.60       2.1568    3316100500032 
+ENDDATA              3          0                                 3316100500033 
+ENDSUBENT           32          0                                 3316100599999 
+SUBENT        33161006   20210830                             32053316100600001 
+BIB                  6         14                                 3316100600002 
+REACTION  1(50-SN-0(N,X)49-IN-116-M1+M2,,SIG)                     3316100600003 
+          2(50-SN-0(N,X)49-IN-116-M1+M2,,SIG)                     3316100600004 
+DECAY-DATA (49-IN-116-M1,54.29MIN,DG,1293.56,0.848)               3316100600005 
+MONITOR   1(13-AL-27(N,A)11-NA-24,,SIG)                           3316100600006 
+          2(79-AU-197(N,2N)79-AU-196,,SIG)                        3316100600007 
+DECAY-MON 1(11-NA-24,14.997HR,DG,1368.63,0.999936)                3316100600008 
+          2(79-AU-196-G,6.1669D,DG,355.73,0.87)                   3316100600009 
+ERR-ANALYS (ERR-2) number of atoms for monitor  (3.34 or 0.79%)   3316100600010 
+           (ERR-4) gamma intensity for  monitor (0.00 or 3.45%)   3316100600011 
+           (ERR-6) timing factor for monitor    (0.06 or 0.01%)   3316100600012 
+           (ERR-8) number of gammas for monitor (1.27 or 0.41%)   3316100600013 
+           (ERR-9) efficiency ratio                               3316100600014 
+           (MONIT-ERR) monitor cross section (0.31 or 0.82%)      3316100600015 
+ADD-RES    Off-diagonal weighted mean = 1.66+/-0.12 mb            3316100600016 
+ENDBIB              14          0                                 3316100600017 
+COMMON              15          9                                 3316100600018 
+ERR-2     1ERR-2     2ERR-3      ERR-4     1ERR-4     2ERR-5      3316100600019 
+ERR-6     1ERR-6     2ERR-7      ERR-8     1ERR-8     2ERR-9     13316100600020 
+ERR-9     2MONIT-ERR 1MONIT-ERR 2                                 3316100600021 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100600022 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100600023 
+PER-CENT   PER-CENT   PER-CENT                                    3316100600024 
+ 3.34       0.79       1.42       0.00       3.45       0.02      3316100600025 
+ 0.06       0.01       6.76       1.27       0.41       0.36      3316100600026 
+ 2.89       0.31       0.82                                       3316100600027 
+ENDCOMMON            9          0                                 3316100600028 
+DATA                 6          1                                 3316100600029 
+DATA      1ERR-T     1MONIT     1DATA      2ERR-T     2MONIT     23316100600030 
+MB         MB         B          MB         MB         B          3316100600031 
+ 1.67       0.13       0.1154     1.65       0.14       2.1568    3316100600032 
+ENDDATA              3          0                                 3316100600033 
+ENDSUBENT           32          0                                 3316100699999 
+SUBENT        33161007   20210830                             32053316100700001 
+BIB                  6         14                                 3316100700002 
+REACTION  1(50-SN-0(N,X)49-IN-117-M,,SIG)                         3316100700003 
+          2(50-SN-0(N,X)49-IN-117-M,,SIG)                         3316100700004 
+DECAY-DATA (49-IN-117-M,116.2MIN,DG,315.30,0.191)                 3316100700005 
+MONITOR   1(13-AL-27(N,A)11-NA-24,,SIG)                           3316100700006 
+          2(79-AU-197(N,2N)79-AU-196,,SIG)                        3316100700007 
+DECAY-MON 1(11-NA-24,14.997HR,DG,1368.63,0.999936)                3316100700008 
+          2(79-AU-196-G,6.1669D,DG,355.73,0.87)                   3316100700009 
+ERR-ANALYS (ERR-2) number of atoms for monitor  (3.34 or 0.79%)   3316100700010 
+           (ERR-4) gamma intensity for  monitor (0.00 or 3.45%)   3316100700011 
+           (ERR-6) timing factor for monitor    (0.06 or 0.01%)   3316100700012 
+           (ERR-8) number of gammas for monitor (1.27 or 0.41%)   3316100700013 
+           (ERR-9) efficiency ratio                               3316100700014 
+           (MONIT-ERR) monitor cross section (0.31 or 0.82%)      3316100700015 
+ADD-RES    Off-diagonal weighted mean = 0.29+/-0.06 mb            3316100700016 
+ENDBIB              14          0                                 3316100700017 
+COMMON              15          9                                 3316100700018 
+ERR-2     1ERR-2     2ERR-3      ERR-4     1ERR-4     2ERR-5      3316100700019 
+ERR-6     1ERR-6     2ERR-7      ERR-8     1ERR-8     2ERR-9     13316100700020 
+ERR-9     2MONIT-ERR 1MONIT-ERR 2                                 3316100700021 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100700022 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100700023 
+PER-CENT   PER-CENT   PER-CENT                                    3316100700024 
+ 3.34       0.79       4.19       0.00       3.45       0.12      3316100700025 
+ 0.06       0.01       19.25      1.27       0.41       3.06      3316100700026 
+ 0.31       0.31       0.82                                       3316100700027 
+ENDCOMMON            9          0                                 3316100700028 
+DATA                 6          1                                 3316100700029 
+DATA      1ERR-T     1MONIT     1DATA      2ERR-T     2MONIT     23316100700030 
+MB         MB         B          MB         MB         B          3316100700031 
+ 0.29       0.06       0.1154     0.29       0.06       2.1568    3316100700032 
+ENDDATA              3          0                                 3316100700033 
+ENDSUBENT           32          0                                 3316100799999 
+SUBENT        33161008   20210830                             32053316100800001 
+BIB                  6         14                                 3316100800002 
+REACTION  1(50-SN-0(N,X)49-IN-117-G,M+,SIG)                       3316100800003 
+          2(50-SN-0(N,X)49-IN-117-G,M+,SIG)                       3316100800004 
+DECAY-DATA (49-IN-117-G,43.2MIN,DG,552.9,1.00)                    3316100800005 
+MONITOR   1(13-AL-27(N,A)11-NA-24,,SIG)                           3316100800006 
+          2(79-AU-197(N,2N)79-AU-196,,SIG)                        3316100800007 
+DECAY-MON 1(11-NA-24,14.997HR,DG,1368.63,0.999936)                3316100800008 
+          2(79-AU-196-G,6.1669D,DG,355.73,0.87)                   3316100800009 
+ERR-ANALYS (ERR-2) number of atoms for monitor  (3.34 or 0.79%)   3316100800010 
+           (ERR-4) gamma intensity for  monitor (0.00 or 3.45%)   3316100800011 
+           (ERR-6) timing factor for monitor    (0.06 or 0.01%)   3316100800012 
+           (ERR-8) number of gammas for monitor (1.27 or 0.41%)   3316100800013 
+           (ERR-9) efficiency ratio                               3316100800014 
+           (MONIT-ERR) monitor cross section (0.31 or 0.82%)      3316100800015 
+ADD-RES    Off-diagonal weighted mean = 0.90+/-0.11 mb            3316100800016 
+ENDBIB              14          0                                 3316100800017 
+COMMON              15          9                                 3316100800018 
+ERR-2     1ERR-2     2ERR-3      ERR-4     1ERR-4     2ERR-5      3316100800019 
+ERR-6     1ERR-6     2ERR-7      ERR-8     1ERR-8     2ERR-9     13316100800020 
+ERR-9     2MONIT-ERR 1MONIT-ERR 2                                 3316100800021 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100800022 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100800023 
+PER-CENT   PER-CENT   PER-CENT                                    3316100800024 
+ 3.34       0.79       10.00      0.00       3.45       0.20      3316100800025 
+ 0.06       0.01       5.81       1.27       0.41       3.60      3316100800026 
+ 1.02       0.31       0.82                                       3316100800027 
+ENDCOMMON            9          0                                 3316100800028 
+DATA                 6          1                                 3316100800029 
+DATA      1ERR-T     1MONIT     1DATA      2ERR-T     2MONIT     23316100800030 
+MB         MB         B          MB         MB         B          3316100800031 
+ 0.91       0.12       0.1154     0.90       0.11       2.1568    3316100800032 
+ENDDATA              3          0                                 3316100800033 
+ENDSUBENT           32          0                                 3316100899999 
+SUBENT        33161009   20210830                             32053316100900001 
+BIB                  6         14                                 3316100900002 
+REACTION  1(50-SN-0(N,X)49-IN-118-M1+M2,,SIG)                     3316100900003 
+          2(50-SN-0(N,X)49-IN-118-M1+M2,,SIG)                     3316100900004 
+DECAY-DATA (49-IN-118-M1,4.45MIN,DG,1229.64,0.96)                 3316100900005 
+MONITOR   1(13-AL-27(N,A)11-NA-24,,SIG)                           3316100900006 
+          2(79-AU-197(N,2N)79-AU-196,,SIG)                        3316100900007 
+DECAY-MON 1(11-NA-24,14.997HR,DG,1368.63,0.999936)                3316100900008 
+          2(79-AU-196-G,6.1669D,DG,355.73,0.87)                   3316100900009 
+ERR-ANALYS (ERR-2) number of atoms for monitor  (3.34 or 0.79%)   3316100900010 
+           (ERR-4) gamma intensity for  monitor (0.00 or 3.45%)   3316100900011 
+           (ERR-6) timing factor for monitor    (0.06 or 0.01%)   3316100900012 
+           (ERR-8) number of gammas for monitor (1.27 or 0.41%)   3316100900013 
+           (ERR-9) efficiency ratio                               3316100900014 
+           (MONIT-ERR) monitor cross section (0.31 or 0.82%)      3316100900015 
+ADD-RES    Off-diagonal weighted mean = 2.24+/-0.43 mb            3316100900016 
+ENDBIB              14          0                                 3316100900017 
+COMMON              15          9                                 3316100900018 
+ERR-2     1ERR-2     2ERR-3      ERR-4     1ERR-4     2ERR-5      3316100900019 
+ERR-6     1ERR-6     2ERR-7      ERR-8     1ERR-8     2ERR-9     13316100900020 
+ERR-9     2MONIT-ERR 1MONIT-ERR 2                                 3316100900021 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100900022 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3316100900023 
+PER-CENT   PER-CENT   PER-CENT                                    3316100900024 
+ 3.34       0.79       4.17       0.00       3.45       2.74      3316100900025 
+ 0.06       0.01       18.26      1.27       0.41       0.70      3316100900026 
+ 2.62       0.31       0.82                                       3316100900027 
+ENDCOMMON            9          0                                 3316100900028 
+DATA                 6          1                                 3316100900029 
+DATA      1ERR-T     1MONIT     1DATA      2ERR-T     2MONIT     23316100900030 
+MB         MB         B          MB         MB         B          3316100900031 
+ 2.25       0.43       0.1154     2.23       0.43       2.1568    3316100900032 
+ENDDATA              3          0                                 3316100900033 
+ENDSUBENT           32          0                                 3316100999999 
+SUBENT        33161010   20210830                             32053316101000001 
+BIB                  3          3                                 3316101000002 
+REACTION   (50-SN-112(N,2N)50-SN-111,,SIG)                        3316101000003 
+SAMPLE     (50-SN-112,NAT=0.0097)                                 3316101000004 
+STATUS     (DEP,33160002) Elemental cross section                 3316101000005 
+ENDBIB               3          0                                 3316101000006 
+NOCOMMON             0          0                                 3316101000007 
+DATA                 5          1                                 3316101000008 
+DATA       ERR-T      ERR-3      ERR-5      ERR-7                 3316101000009 
+MB         MB         PER-CENT   PER-CENT   PER-CENT              3316101000010 
+ 913.91     223.49     14.81      0.11       19.25                3316101000011 
+ENDDATA              3          0                                 3316101000012 
+ENDSUBENT           11          0                                 3316101099999 
+SUBENT        33161011   20210830                             32053316101100001 
+BIB                  3          3                                 3316101100002 
+REACTION   (50-SN-124(N,2N)50-SN-123-M,,SIG)                      3316101100003 
+SAMPLE     (50-SN-124,NAT=0.0579)                                 3316101100004 
+STATUS     (DEP,33160004) Elemental cross section                 3316101100005 
+ENDBIB               3          0                                 3316101100006 
+NOCOMMON             0          0                                 3316101100007 
+DATA                 5          1                                 3316101100008 
+DATA       ERR-T      ERR-3      ERR-5      ERR-7                 3316101100009 
+MB         MB         PER-CENT   PER-CENT   PER-CENT              3316101100010 
+ 763.37     24.17      0.47       0.09       0.58                 3316101100011 
+ENDDATA              3          0                                 3316101100012 
+ENDSUBENT           11          0                                 3316101199999 
+SUBENT        33161012   20210830                             32053316101200001 
+BIB                  3          3                                 3316101200002 
+REACTION   (50-SN-112(N,X)49-IN-111,CUM,SIG)                      3316101200003 
+SAMPLE     (50-SN-112,NAT=0.0097)                                 3316101200004 
+STATUS     (DEP,33160005) Elemental cross section                 3316101200005 
+ENDBIB               3          0                                 3316101200006 
+NOCOMMON             0          0                                 3316101200007 
+DATA                 5          1                                 3316101200008 
+DATA       ERR-T      ERR-3      ERR-5      ERR-7                 3316101200009 
+MB         MB         PER-CENT   PER-CENT   PER-CENT              3316101200010 
+ 1205.25    54.28      1.06       0.01       3.27                 3316101200011 
+ENDDATA              3          0                                 3316101200012 
+ENDSUBENT           11          0                                 3316101299999 
+SUBENT        33161013   20210830                             32053316101300001 
+BIB                  3          3                                 3316101300002 
+REACTION   (50-SN-118(N,P)49-IN-118-M1+M2,,SIG)                   3316101300003 
+SAMPLE     (50-SN-118,NAT=0.2422)                                 3316101300004 
+STATUS     (DEP,33160009) Elemental cross section                 3316101300005 
+ENDBIB               3          0                                 3316101300006 
+NOCOMMON             0          0                                 3316101300007 
+DATA                 5          1                                 3316101300008 
+DATA       ERR-T      ERR-3      ERR-5      ERR-7                 3316101300009 
+MB         MB         PER-CENT   PER-CENT   PER-CENT              3316101300010 
+ 9.16       1.75       4.17       2.74       18.26                3316101300011 
+ENDDATA              3          0                                 3316101300012 
+ENDSUBENT           11          0                                 3316101399999 
+ENDENTRY            13          0                                 3316199999999 
