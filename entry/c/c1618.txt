@@ -1,0 +1,84 @@
+ENTRY            C1618   20160630                             C160C1618  0    1 
+SUBENT        C1618001   20160630                             C160C1618  1    1 
+BIB                  9         10                                 C1618  1    2 
+TITLE      Radiative Capture of Protons in C13                    C1618  1    3 
+AUTHOR     (R.E.Hester,W.A.S.Lamb)                                C1618  1    4 
+REFERENCE  (J,PR,121,584,1961)                                    C1618  1    5 
+           #doi:10.1103/PhysRev.121.584                           C1618  1    6 
+INSTITUTE  (1USALRL)                                              C1618  1    7 
+FACILITY   (ACCEL,1USALRL) The high-current ion injector.         C1618  1    8 
+PART-DET   (G)                                                    C1618  1    9 
+SAMPLE     High-density graphite targets.                         C1618  1   10 
+DETECTOR   (NAICR) 4-in. x 4-in. NaI(Tl) crystal.                 C1618  1   11 
+HISTORY    (20160630C) BP                                         C1618  1   12 
+ENDBIB              10          0                                 C1618  1   13 
+COMMON               1          3                                 C1618  1   14 
+E                                                                 C1618  1   15 
+MEV                                                               C1618  1   16 
+       7.65                                                       C1618  1   17 
+ENDCOMMON            3          0                                 C1618  1   18 
+ENDSUBENT           17          0                                 C1618  199999 
+SUBENT        C1618002   20160630                             C160C1618  2    1 
+BIB                  5          9                                 C1618  2    2 
+REACTION   (6-C-13(P,G)7-N-14,PAR,SIG,,,DERIV)                    C1618  2    3 
+ANALYSIS   (TTUNF) Calculated from thick target yields.           C1618  2    4 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties      C1618  2    5 
+           (ERR-1) Beam current.                                  C1618  2    6 
+           (ERR-2) Detector efficiency.                           C1618  2    7 
+           (ERR-3,,10.) Yield calculation error.                  C1618  2    8 
+COMMENT    The plotted in Fig. 5 cross sections are somewhat      C1618  2    9 
+           lower than listed in the article abstract.             C1618  2   10 
+STATUS     (CURVE) Fig. 5, page 586.                              C1618  2   11 
+ENDBIB               9          0                                 C1618  2   12 
+COMMON               2          3                                 C1618  2   13 
+ERR-1      ERR-2                                                  C1618  2   14 
+PER-CENT   PER-CENT                                               C1618  2   15 
+        5.0        0.3                                            C1618  2   16 
+ENDCOMMON            3          0                                 C1618  2   17 
+DATA                 4          9                                 C1618  2   18 
+EN         EN-ERR     DATA       DATA-ERR                         C1618  2   19 
+KEV        KEV        B          B                                C1618  2   20 
+    100.000      1.144  6.522E-10  1.460E-10                      C1618  2   21 
+    105.000      1.146  9.212E-10  1.983E-10                      C1618  2   22 
+    110.000      1.146  1.622E-09  2.242E-10                      C1618  2   23 
+    115.000      1.144  1.996E-09  3.039E-10                      C1618  2   24 
+    120.000      1.491  2.789E-09  3.854E-10                      C1618  2   25 
+    125.000      1.374  3.490E-09  4.153E-10                      C1618  2   26 
+    130.000      1.489  4.849E-09  3.603E-10                      C1618  2   27 
+    135.000      1.605  7.039E-09  8.376E-10                      C1618  2   28 
+    140.000      1.719  8.429E-09  1.084E-09                      C1618  2   29 
+ENDDATA             11          0                                 C1618  2   30 
+ENDSUBENT           29          0                                 C1618  299999 
+SUBENT        C1618003   20160630                             C160C1618  3    1 
+BIB                  4          5                                 C1618  3    2 
+REACTION   (6-C-13(P,G)7-N-14,PAR,SIG)                            C1618  3    3 
+ANALYSIS   These values were further processed by authors.        C1618  3    4 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     C1618  3    5 
+STATUS     (DEP,C1618002)                                         C1618  3    6 
+           (TABLE) page 584.                                      C1618  3    7 
+ENDBIB               5          0                                 C1618  3    8 
+NOCOMMON             0          0                                 C1618  3    9 
+DATA                 3          2                                 C1618  3   10 
+EN         DATA       DATA-ERR                                    C1618  3   11 
+KEV        B          B                                           C1618  3   12 
+      100.0    7.7E-10    1.8E-10                                 C1618  3   13 
+      140.0    9.8E-19   1.2E-019                                 C1618  3   14 
+ENDDATA              4          0                                 C1618  3   15 
+ENDSUBENT           14          0                                 C1618  399999 
+SUBENT        C1618004   20160630                             C160C1618  4    1 
+BIB                  4          6                                 C1618  4    2 
+REACTION   (6-C-13(P,G)7-N-14,PAR,SIG,,SFC)                       C1618  4    3 
+ANALYSIS   Form factor was calculated from experimental cross     C1618  4    4 
+           sections.                                              C1618  4    5 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     C1618  4    6 
+STATUS     (DEP,C1618002)                                         C1618  4    7 
+           (TABLE) page 586.                                      C1618  4    8 
+ENDBIB               6          0                                 C1618  4    9 
+NOCOMMON             0          0                                 C1618  4   10 
+DATA                 4          1                                 C1618  4   11 
+EN-MIN     EN-MAX     DATA       DATA-ERR                         C1618  4   12 
+KEV        KEV        B*KEV      B*KEV                            C1618  4   13 
+      100.0      140.0       10.6        1.5                      C1618  4   14 
+ENDDATA              3          0                                 C1618  4   15 
+ENDSUBENT           14          0                                 C1618  499999 
+ENDENTRY             4          0                                 C161899999999 

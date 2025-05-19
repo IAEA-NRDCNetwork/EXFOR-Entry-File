@@ -1,0 +1,121 @@
+ENTRY            C1610   20160629                             C160C1610  0    1 
+SUBENT        C1610001   20160629                             C160C1610  1    1 
+BIB                 12         29                                 C1610  1    2 
+TITLE      He3+He4 -> Be7 astrophysical S factor                  C1610  1    3 
+AUTHOR     (T.A.D.Brown,C.Bordeanu,K.A.Snover,D.W.Storm,          C1610  1    4 
+           D.Melconian,A.L.Sallaska,S.K.L.Sjue,S.Triambak)        C1610  1    5 
+REFERENCE  (J,PR/C,76,055801,2007)                                C1610  1    6 
+           #doi:10.1103/PhysRevC.76.055801                        C1610  1    7 
+INSTITUTE  (1USAWAU)                                              C1610  1    8 
+FACILITY   (VDGT,1USAWAU) Model FN Tandem Van de Graaff           C1610  1    9 
+           accelerator.                                           C1610  1   10 
+PART-DET   (G,DG)                                                 C1610  1   11 
+DETECTOR   (GE) N-type Ge detector with 100% relative efficiency  C1610  1   12 
+           located at 90 degrees with its cryostat front face 5   C1610  1   13 
+           cm from the center of the cell.                        C1610  1   14 
+SAMPLE     (2-HE-3,ENR=0.99999) The nickel entrance foils were 1- C1610  1   15 
+           microm in nominal thickness, glued onto the nickel     C1610  1   16 
+           foil holders. Fresh foils were used for most           C1610  1   17 
+           bombarding energies. Foil thicknesses were measured    C1610  1   18 
+           to +-1% using the 3.2-MeV alpha particles from 148Gd.  C1610  1   19 
+ANALYSIS   Cross sections were converted to S factors using the   C1610  1   20 
+           relation S(Ecm)=sigma(Ecm)*Ecm*exp((Eg/Ecm)**0.5),     C1610  1   21 
+           where Eg**0.5=164.13 keV**0.5.                         C1610  1   22 
+ERR-ANALYS (ERR-T) The tabulated uncertainties in the S factors   C1610  1   23 
+           and their ratios include statistics, the +-1%          C1610  1   24 
+           variable systematic uncertainties, and the             C1610  1   25 
+           contribution of the uncertainty in the mean reaction   C1610  1   26 
+           energy Ecm-the latter is important only at the lowest  C1610  1   27 
+           bombarding energy.                                     C1610  1   28 
+           (ERR-1) variable systematic uncertainty.               C1610  1   29 
+DECAY-DATA (4-BE-7,53.22D,DG,478.,0.1044)                         C1610  1   30 
+HISTORY    (20160629C) BP                                         C1610  1   31 
+ENDBIB              29          0                                 C1610  1   32 
+COMMON               1          3                                 C1610  1   33 
+ERR-1                                                             C1610  1   34 
+PER-CENT                                                          C1610  1   35 
+        1.0                                                       C1610  1   36 
+ENDCOMMON            3          0                                 C1610  1   37 
+ENDSUBENT           36          0                                 C1610  199999 
+SUBENT        C1610002   20160629                             C160C1610  2    1 
+BIB                  3          7                                 C1610  2    2 
+REACTION   (2-HE-3(A,G)4-BE-7,,SIG,,SFC)                          C1610  2    3 
+METHOD     (GSPEC,ACTIV) Offline activity measurement. We         C1610  2    4 
+           counted the 7Be activity with the stopper mounted as   C1610  2    5 
+           described above and the Ta liner cut up and mounted    C1610  2    6 
+           directly behind the stopper.                           C1610  2    7 
+STATUS     (TABLE) Table III, page 055801-6.                      C1610  2    8 
+           (COREL,C1610003) Data from prompt gamma measurement    C1610  2    9 
+ENDBIB               7          0                                 C1610  2   10 
+NOCOMMON             0          0                                 C1610  2   11 
+DATA                 4          8                                 C1610  2   12 
+EN-CM      EN-ERR     DATA       ERR-T                            C1610  2   13 
+MEV        MEV        B*KEV      B*KEV                            C1610  2   14 
+     0.3274     0.0013      0.495      0.015                      C1610  2   15 
+     0.4260     0.0004      0.458      0.010                      C1610  2   16 
+     0.5180     0.0005      0.440      0.010                      C1610  2   17 
+     0.5815     0.0008      0.400      0.011                      C1610  2   18 
+     0.7024     0.0006      0.375      0.010                      C1610  2   19 
+     0.7968     0.0003      0.363      0.007                      C1610  2   20 
+     1.2337     0.0003      0.330      0.006                      C1610  2   21 
+     1.2347     0.0003      0.324      0.006                      C1610  2   22 
+ENDDATA             10          0                                 C1610  2   23 
+ENDSUBENT           22          0                                 C1610  299999 
+SUBENT        C1610003   20160629                             C160C1610  3    1 
+BIB                  3         10                                 C1610  3    2 
+REACTION   (2-HE-3(A,G)4-BE-7,,SIG,,SFC)                          C1610  3    3 
+METHOD     (GSPEC) Online, prompt gamma measurement. The gamma0   C1610  3    4 
+           yield was obtained by summing the counts in a          C1610  3    5 
+           background-subtracted window around the full-energy    C1610  3    6 
+           peak, and the 429-keV yield in a 7Be compound nucleus  C1610  3    7 
+           was determined by fitting the peak shape with the      C1610  3    8 
+           same function used for fitting the source lines and    C1610  3    9 
+           the 478-keV line in 7Li.                               C1610  3   10 
+STATUS     (TABLE) Table III, page 055801-6.                      C1610  3   11 
+           (COREL,C1610002) Data from activation measurement      C1610  3   12 
+ENDBIB              10          0                                 C1610  3   13 
+NOCOMMON             0          0                                 C1610  3   14 
+DATA                 4          8                                 C1610  3   15 
+EN-CM      EN-ERR     DATA       ERR-T                            C1610  3   16 
+MEV        MEV        B*KEV      B*KEV                            C1610  3   17 
+     0.3274     0.0013      0.492      0.014                      C1610  3   18 
+     0.4260     0.0004      0.438      0.006                      C1610  3   19 
+     0.5180     0.0005      0.421      0.007                      C1610  3   20 
+     0.5815     0.0008      0.398      0.008                      C1610  3   21 
+     0.7024     0.0006      0.382      0.006                      C1610  3   22 
+     0.7968     0.0003      0.371      0.004                      C1610  3   23 
+     1.2337     0.0003      0.327      0.004                      C1610  3   24 
+     1.2347     0.0003      0.340      0.004                      C1610  3   25 
+ENDDATA             10          0                                 C1610  3   26 
+ENDSUBENT           25          0                                 C1610  399999 
+SUBENT        C1610004   20160630                             C160C1610  4    1 
+BIB                  3          5                                 C1610  4    2 
+REACTION   (2-HE-3(A,G)4-BE-7,,SIG,,SFC,DERIV)                    C1610  4    3 
+ANALYSIS   Extrapolation to zero-energy by Kajino's function      C1610  4    4 
+STATUS     (DEP,C1610002)                                         C1610  4    5 
+           (TABLE) page 055801-8.                                 C1610  4    6 
+           (COREL,C1610005) Data from prompt gamma measurement    C1610  4    7 
+ENDBIB               5          0                                 C1610  4    8 
+NOCOMMON             0          0                                 C1610  4    9 
+DATA                 3          1                                 C1610  4   10 
+EN-CM      DATA       ERR-T                                       C1610  4   11 
+MEV        B*KEV      B*KEV                                       C1610  4   12 
+   0.         0.595      0.018                                    C1610  4   13 
+ENDDATA              3          0                                 C1610  4   14 
+ENDSUBENT           13          0                                 C1610  499999 
+SUBENT        C1610005   20160630                             C160C1610  5    1 
+BIB                  3          5                                 C1610  5    2 
+REACTION   (2-HE-3(A,X)4-BE-7,,SIG,,SFC,DERIV)                    C1610  5    3 
+ANALYSIS   Extrapolation to zero-energy by Kajino's function      C1610  5    4 
+STATUS     (DEP,C1610003)                                         C1610  5    5 
+           (TABLE) page 055801-8.                                 C1610  5    6 
+           (COREL,C1610004) Data from activation measurement      C1610  5    7 
+ENDBIB               5          0                                 C1610  5    8 
+NOCOMMON             0          0                                 C1610  5    9 
+DATA                 3          1                                 C1610  5   10 
+EN-CM      DATA       ERR-T                                       C1610  5   11 
+MEV        B*KEV      B*KEV                                       C1610  5   12 
+   0.        0.596      0.021                                     C1610  5   13 
+ENDDATA              3          0                                 C1610  5   14 
+ENDSUBENT           13          0                                 C1610  599999 
+ENDENTRY             5          0                                 C161099999999 

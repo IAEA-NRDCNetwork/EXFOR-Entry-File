@@ -1,86 +1,467 @@
-ENTRY            C0134   19980826                             0000C013400000001 
-SUBENT        C0134001   19980826                             0000C013400100001 
-BIB                 11         22                                 C013400100002 
-INSTITUTE  (1USAINU,1USAKNT,1USAMSU)                              C013400100003 
-REFERENCE  (J,PR/C,31,1147,198504)                                C013400100004 
-           (J,PR/C,31,1161,198504)                                C013400100005 
-AUTHOR     (B.D.ANDERSON,T.CHITTRAKARN,A.R.BALDWIN,C.LEBO,        C013400100006 
-           R.MADEY,R.J.MCCARTHY,J.W.WATSON,B.A.BROWN,C.C.FOSTER)  C013400100007 
-TITLE      Particle-hole strength excited in the 48Ca(p,n)48Sc    C013400100008 
-            reaction at 134 and 160 MeV: pi f(7/2), nu f-1(7/2)   C013400100009 
-            band                                                  C013400100010 
-FACILITY   (CYCLO,1USAINU) Beam swinger facility at IUCF.         C013400100011 
-SAMPLE     Calcium target enriched to 97.3% 48, thickness 28.5    C013400100012 
-            mg/cm2. Oxygen contamination of target about 5% by    C013400100013 
-            weight.                                               C013400100014 
-METHOD     Neutron energies measured by Time-of-flight.           C013400100015 
-           Cross sections calculated from fit to time-of-flight   C013400100016 
-            spectrum.                                             C013400100017 
-DETECTOR   Large-volume neutron detectors.                        C013400100018 
-CORRECTION Corrected for                                          C013400100019 
-           . background,                                          C013400100020 
-           . neutron attenuation in target chamber wall and air,  C013400100021 
-           . system dead time.                                    C013400100022 
-STATUS     No reply from B. Anderson to author proof.             C013400100023 
-HISTORY    (19980826C)                                            C013400100024 
-ENDBIB              22          0                                 C013400100025 
-NOCOMMON             0          0                                 C013400100026 
-ENDSUBENT           25          0                                 C013400199999 
-SUBENT        C0134002   19980826                             0000C013400200001 
-BIB                  3          6                                 C013400200002 
-REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C013400200003 
-ERR-ANALYS (ERR-1) Systematic uncertainty                         C013400200004 
-           (ERR-S) Statistical uncertainty                        C013400200005 
-STATUS     Data received by email from B. Anderson, 14 March 1997.C013400200006 
-           Data for excitations at 0.13, 0.622, 1.10, 1.14, 2.52, C013400200007 
-            16.8 MeV not received.                                C013400200008 
-ENDBIB               6          0                                 C013400200009 
-COMMON               3          3                                 C013400200010 
-EN         E-EXC      ERR-1                                       C013400200011 
-MEV        MEV        PER-CENT                                    C013400200012 
-134.        6.67        12.                                       C013400200013 
-ENDCOMMON            3          0                                 C013400200014 
-DATA                 3          4                                 C013400200015 
-ANG-CM     DATA-CM    ERR-S                                       C013400200016 
-ADEG       MB/SR      MB/SR                                       C013400200017 
-  0.20      6.80       0.1021                                     C013400200018 
-  6.10      3.27       0.06872                                    C013400200019 
- 12.29      0.6715     0.05439                                    C013400200020 
- 18.72      0.2198     0.03781                                    C013400200021 
-ENDDATA              6          0                                 C013400200022 
-ENDSUBENT           21          0                                 C013400299999 
-SUBENT        C0134003   19980826                             0000C013400300001 
-BIB                  3          4                                 C013400300002 
-REACTION   (20-CA-48(P,N)21-SC-48,PAR,POL/DA,,ANA)                C013400300003 
-ERR-ANALYS (ERR-1) Systematic uncertainty                         C013400300004 
-           (ERR-S) Statistical uncertainty                        C013400300005 
-STATUS     Data received by email from B. Anderson, 14 March 1997.C013400300006 
-ENDBIB               4          0                                 C013400300007 
-COMMON               3          3                                 C013400300008 
-EN         E-EXC      ERR-1                                       C013400300009 
-MEV        MEV        PER-CENT                                    C013400300010 
-134.        6.67        12.                                       C013400300011 
-ENDCOMMON            3          0                                 C013400300012 
-DATA                 3          4                                 C013400300013 
-ANG-CM     DATA       ERR-S                                       C013400300014 
-ADEG       NO-DIM     NO-DIM                                      C013400300015 
-  0.2000      0.01386    0.01255                                  C013400300016 
-  6.140      -0.4358     0.01546                                  C013400300017 
- 12.29       -0.7628     0.04481                                  C013400300018 
- 18.71        0.9250     0.04467                                  C013400300019 
-ENDDATA              6          0                                 C013400300020 
-ENDSUBENT           19          0                                 C013400399999 
-SUBENT        C0134004   19980826                             0000C013400400001 
-BIB                  2          3                                 C013400400002 
-REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C013400400003 
-STATUS     (UNOBT) Data requested from B. Anderson, 16            C013400400004 
-            April 1997.                                           C013400400005 
-ENDBIB               3          0                                 C013400400006 
-COMMON               1          3                                 C013400400007 
-EN                                                                C013400400008 
-MEV                                                               C013400400009 
-160.                                                              C013400400010 
-ENDCOMMON            3          0                                 C013400400011 
-NODATA               0          0                                 C013400400012 
-ENDSUBENT           11          0                                 C013400499999 
-ENDENTRY             4          0                                 C013499999999 
+ENTRY            C0134   20160503                             C160C0134  0    1 
+SUBENT        C0134001   20160503                             C160C0134  1    1 
+BIB                 14         44                                 C0134  1    2 
+TITLE      Particle-hole strength excited in the 48Ca(p,n)48Sc    C0134  1    3 
+           reaction at 134 and 160 MeV: pi f(7/2), nu f-1(7/2)    C0134  1    4 
+           band                                                   C0134  1    5 
+AUTHOR     (B.D.Anderson,T.Chittrakarn,A.R.Baldwin,C.Lebo,        C0134  1    6 
+           R.Madey,R.J.McCarthy,J.W.Watson,B.A.Brown,C.C.Foster)  C0134  1    7 
+REFERENCE  (J,PR/C,31,1147,198504)                                C0134  1    8 
+           #doi:10.1103/PhysRevC.31.1147                          C0134  1    9 
+           (J,PR/C,31,1161,198504)                                C0134  1   10 
+           #doi:10.1103/PhysRevC.31.1161                          C0134  1   11 
+REL-REF    (D,,B.D.Anderson+,J,PRL,45,699,1980) The copper plate  C0134  1   12 
+           was only used in 160 MeV and neglected in PRL paper.   C0134  1   13 
+INSTITUTE  (1USAINU,1USAKNT,1USAMSU)                              C0134  1   14 
+FACILITY   (CYCLO,1USAINU) Beam swinger facility at IUCF.         C0134  1   15 
+SAMPLE     (20-CA-48,ENR=0.973) Calcium target enriched to 97.3%  C0134  1   16 
+           48, thickness 28.5 mg/cm2. Oxygen contamination of     C0134  1   17 
+           target about 5% by weight.                             C0134  1   18 
+           (20-CA-40,ENR=0.026)                                   C0134  1   19 
+METHOD     (TOF) Neutron energies measured by time-of-flight.     C0134  1   20 
+           Cross sections calculated from fit to time-of-flight   C0134  1   21 
+           spectrum.                                              C0134  1   22 
+DETECTOR   (SCIN) Large-volume neutron detectors.                 C0134  1   23 
+CORRECTION Corrected for                                          C0134  1   24 
+           . background,                                          C0134  1   25 
+           . neutron attenuation in target chamber wall and air,  C0134  1   26 
+           . system dead time.                                    C0134  1   27 
+STATUS     No reply from B. Anderson to author proof.             C0134  1   28 
+ERR-ANALYS (ERR-SYS) Systematic uncertainty.                      C0134  1   29 
+           (ERR-1) neutron detector efficiency.                   C0134  1   30 
+           (ERR-2) proton beam integration.                       C0134  1   31 
+           (ERR-3) neutron attenuation.                           C0134  1   32 
+           (ERR-4) target thickness.                              C0134  1   33 
+           (ERR-5) system dead time correction.                   C0134  1   34 
+COMMENT    Please note that 160 MeV cross sections presented      C0134  1   35 
+           here differ by about 40% from the J,PRL,45,699,1980.   C0134  1   36 
+           This difference occurs because of an inadvertent       C0134  1   37 
+           omission (in the earlier results) of the correction    C0134  1   38 
+           for neutron attenuation in a 2.2 cm thick copper       C0134  1   39 
+           plate which was used in 160 MeV run to ensure that     C0134  1   40 
+           charged particles from the target could not be         C0134  1   41 
+           detected by neutron counters.                          C0134  1   42 
+HISTORY    (19980826C)                                            C0134  1   43 
+           (20160503A) BP: Added doi, updated uncertainties,      C0134  1   44 
+           added corrections and digitized the data. Added        C0134  1   45 
+           subentries 5-18.                                       C0134  1   46 
+ENDBIB              44          0                                 C0134  1   47 
+COMMON               6          3                                 C0134  1   48 
+ERR-SYS    ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      C0134  1   49 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   C0134  1   50 
+        12.       10.0        5.0        5.0        2.0        1.0C0134  1   51 
+ENDCOMMON            3          0                                 C0134  1   52 
+ENDSUBENT           51          0                                 C0134  199999 
+SUBENT        C0134002   20160503                             C160C0134  2    1 
+BIB                  3          4                                 C0134  2    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134  2    3 
+ERR-ANALYS (ERR-S) statistical uncertainty.                       C0134  2    4 
+STATUS     (TABLE) Data received by email from B. Anderson,       C0134  2    5 
+           14 March 1997.                                         C0134  2    6 
+ENDBIB               4          0                                 C0134  2    7 
+COMMON               2          3                                 C0134  2    8 
+EN         E-EXC                                                  C0134  2    9 
+MEV        MEV                                                    C0134  2   10 
+       134.       6.67                                            C0134  2   11 
+ENDCOMMON            3          0                                 C0134  2   12 
+DATA                 3          4                                 C0134  2   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134  2   14 
+ADEG       MB/SR      MB/SR                                       C0134  2   15 
+       0.20       6.80     0.1021                                 C0134  2   16 
+       6.10       3.27    0.06872                                 C0134  2   17 
+      12.29     0.6715    0.05439                                 C0134  2   18 
+      18.72     0.2198    0.03781                                 C0134  2   19 
+ENDDATA              6          0                                 C0134  2   20 
+ENDSUBENT           19          0                                 C0134  299999 
+SUBENT        C0134003   20160503                             C160C0134  3    1 
+BIB                  3          4                                 C0134  3    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,POL/DA,,ANA)                C0134  3    3 
+ERR-ANALYS (ERR-S) statistical uncertainty                        C0134  3    4 
+STATUS     (TABLE) Data received by email from B. Anderson,       C0134  3    5 
+           14 March 1997.                                         C0134  3    6 
+ENDBIB               4          0                                 C0134  3    7 
+COMMON               2          3                                 C0134  3    8 
+EN         E-EXC                                                  C0134  3    9 
+MEV        MEV                                                    C0134  3   10 
+       134.       6.67                                            C0134  3   11 
+ENDCOMMON            3          0                                 C0134  3   12 
+DATA                 3          4                                 C0134  3   13 
+ANG-CM     DATA       ERR-S                                       C0134  3   14 
+ADEG       NO-DIM     NO-DIM                                      C0134  3   15 
+     0.2000    0.01386    0.01255                                 C0134  3   16 
+      6.140    -0.4358    0.01546                                 C0134  3   17 
+      12.29    -0.7628    0.04481                                 C0134  3   18 
+      18.71     0.9250    0.04467                                 C0134  3   19 
+ENDDATA              6          0                                 C0134  3   20 
+ENDSUBENT           19          0                                 C0134  399999 
+SUBENT        C0134004   20160503                             C160C0134  4    1 
+BIB                  4          4                                 C0134  4    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134  4    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134  4    4 
+STATUS     (CURVE) Fig. 5 of J,PR/C,31,1147,198504.               C0134  4    5 
+HISTORY    (20160503A) BP: Digitized data.                        C0134  4    6 
+ENDBIB               4          0                                 C0134  4    7 
+COMMON               2          3                                 C0134  4    8 
+EN         E-EXC                                                  C0134  4    9 
+MEV        MEV                                                    C0134  4   10 
+       160.       6.67                                            C0134  4   11 
+ENDCOMMON            3          0                                 C0134  4   12 
+DATA                 3          7                                 C0134  4   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134  4   14 
+ADEG       MB/SR      MB/SR                                       C0134  4   15 
+      0.000  5.000E+00                                            C0134  4   16 
+      3.313  3.582E+00                                            C0134  4   17 
+      6.640  1.794E+00                                            C0134  4   18 
+      9.636  8.063E-01                                            C0134  4   19 
+     12.035  3.940E-01                                            C0134  4   20 
+     15.755  3.034E-01  4.363E-02                                 C0134  4   21 
+     18.626  7.238E-02  3.110E-02                                 C0134  4   22 
+ENDDATA              9          0                                 C0134  4   23 
+ENDSUBENT           22          0                                 C0134  499999 
+SUBENT        C0134005   20160504                             C160C0134  5    1 
+BIB                  4          4                                 C0134  5    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134  5    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134  5    4 
+STATUS     (CURVE) Fig. 6 of J,PR/C,31,1147,198504.               C0134  5    5 
+HISTORY    (20160503C) BP                                         C0134  5    6 
+ENDBIB               4          0                                 C0134  5    7 
+COMMON               2          3                                 C0134  5    8 
+EN         E-EXC                                                  C0134  5    9 
+MEV        MEV                                                    C0134  5   10 
+      134.0       1.10                                            C0134  5   11 
+ENDCOMMON            3          0                                 C0134  5   12 
+DATA                 3         12                                 C0134  5   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134  5   14 
+ADEG       MB/SR      MB/SR                                       C0134  5   15 
+      0.000  2.302E-01  3.833E-02                                 C0134  5   16 
+      6.249  2.800E-01  1.649E-02                                 C0134  5   17 
+     12.326  2.514E-01                                            C0134  5   18 
+     18.735  1.728E-01                                            C0134  5   19 
+     24.482  1.931E-01  1.786E-02                                 C0134  5   20 
+     30.675  4.524E-01                                            C0134  5   21 
+     36.735  5.848E-01                                            C0134  5   22 
+     43.300  4.325E-01                                            C0134  5   23 
+     45.882  2.537E-01                                            C0134  5   24 
+     52.151  1.126E-01                                            C0134  5   25 
+     58.304  1.964E-02  2.033E-03                                 C0134  5   26 
+     64.601  4.812E-03  6.010E-04                                 C0134  5   27 
+ENDDATA             14          0                                 C0134  5   28 
+ENDSUBENT           27          0                                 C0134  599999 
+SUBENT        C0134006   20160504                             C160C0134  6    1 
+BIB                  4          4                                 C0134  6    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134  6    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134  6    4 
+STATUS     (CURVE) Fig. 6 of J,PR/C,31,1147,198504.               C0134  6    5 
+HISTORY    (20160503C) BP                                         C0134  6    6 
+ENDBIB               4          0                                 C0134  6    7 
+COMMON               2          3                                 C0134  6    8 
+EN         E-EXC                                                  C0134  6    9 
+MEV        MEV                                                    C0134  6   10 
+      160.0       1.10                                            C0134  6   11 
+ENDCOMMON            3          0                                 C0134  6   12 
+DATA                 3         15                                 C0134  6   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134  6   14 
+ADEG       MB/SR      MB/SR                                       C0134  6   15 
+      0.000  9.485E-02                                            C0134  6   16 
+      3.342  1.211E-01  1.391E-02                                 C0134  6   17 
+      6.684  2.071E-01  2.155E-02                                 C0134  6   18 
+      9.708  1.746E-01  1.430E-02                                 C0134  6   19 
+     12.095  1.725E-01  1.021E-02                                 C0134  6   20 
+     15.756  1.072E-01  2.321E-02                                 C0134  6   21 
+     18.621  5.152E-02  1.401E-02                                 C0134  6   22 
+     24.350  2.097E-01  2.857E-02                                 C0134  6   23 
+     27.692  4.153E-01                                            C0134  6   24 
+     31.034  5.366E-01                                            C0134  6   25 
+     34.217  5.845E-01                                            C0134  6   26 
+     36.605  5.111E-01                                            C0134  6   27 
+     40.106  3.416E-01                                            C0134  6   28 
+     43.130  2.256E-01                                            C0134  6   29 
+     49.018  7.802E-02  1.225E-02                                 C0134  6   30 
+ENDDATA             17          0                                 C0134  6   31 
+ENDSUBENT           30          0                                 C0134  699999 
+SUBENT        C0134007   20160504                             C160C0134  7    1 
+BIB                  4          4                                 C0134  7    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134  7    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134  7    4 
+STATUS     (CURVE) Fig. 7 of J,PR/C,31,1147,198504.               C0134  7    5 
+HISTORY    (20160503C) BP                                         C0134  7    6 
+ENDBIB               4          0                                 C0134  7    7 
+COMMON               2          3                                 C0134  7    8 
+EN         E-EXC                                                  C0134  7    9 
+MEV        MEV                                                    C0134  7   10 
+      134.0       2.52                                            C0134  7   11 
+ENDCOMMON            3          0                                 C0134  7   12 
+DATA                 3          5                                 C0134  7   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134  7   14 
+ADEG       MB/SR      MB/SR                                       C0134  7   15 
+      0.000  6.776E+00                                            C0134  7   16 
+      6.147  3.537E+00                                            C0134  7   17 
+     12.184  7.326E-01                                            C0134  7   18 
+     18.619  2.787E-01                                            C0134  7   19 
+     24.460  4.418E-02  1.768E-02                                 C0134  7   20 
+ENDDATA              7          0                                 C0134  7   21 
+ENDSUBENT           20          0                                 C0134  799999 
+SUBENT        C0134008   20160504                             C160C0134  8    1 
+BIB                  4          4                                 C0134  8    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134  8    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134  8    4 
+STATUS     (CURVE) Fig. 7 of J,PR/C,31,1147,198504.               C0134  8    5 
+HISTORY    (20160503C) BP                                         C0134  8    6 
+ENDBIB               4          0                                 C0134  8    7 
+COMMON               2          3                                 C0134  8    8 
+EN         E-EXC                                                  C0134  8    9 
+MEV        MEV                                                    C0134  8   10 
+      160.0       2.52                                            C0134  8   11 
+ENDCOMMON            3          0                                 C0134  8   12 
+DATA                 3          8                                 C0134  8   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134  8   14 
+ADEG       MB/SR      MB/SR                                       C0134  8   15 
+      0.000  7.024E+00                                            C0134  8   16 
+      3.219  5.107E+00                                            C0134  8   17 
+      6.562  2.199E+00                                            C0134  8   18 
+      9.624  7.792E-01                                            C0134  8   19 
+     11.961  3.008E-01  2.122E-02                                 C0134  8   20 
+     15.686  2.213E-01  2.541E-02                                 C0134  8   21 
+     18.590  1.533E-01  9.331E-02                                 C0134  8   22 
+     24.525  1.546E-02  1.429E-02                                 C0134  8   23 
+ENDDATA             10          0                                 C0134  8   24 
+ENDSUBENT           23          0                                 C0134  899999 
+SUBENT        C0134009   20160504                             C160C0134  9    1 
+BIB                  4          4                                 C0134  9    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134  9    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134  9    4 
+STATUS     (CURVE) Fig. 8 of J,PR/C,31,1147,198504.               C0134  9    5 
+HISTORY    (20160503C) BP                                         C0134  9    6 
+ENDBIB               4          0                                 C0134  9    7 
+COMMON               2          3                                 C0134  9    8 
+EN         E-LVL                                                  C0134  9    9 
+MEV        MEV                                                    C0134  9   10 
+      134.0       0.13                                            C0134  9   11 
+ENDCOMMON            3          0                                 C0134  9   12 
+DATA                 3          9                                 C0134  9   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134  9   14 
+ADEG       MB/SR      MB/SR                                       C0134  9   15 
+     12.261  6.040E-02  1.266E-02                                 C0134  9   16 
+     18.700  1.138E-01                                            C0134  9   17 
+     24.303  3.929E-01  4.573E-02                                 C0134  9   18 
+     30.617  3.351E-01                                            C0134  9   19 
+     36.633  1.699E-01                                            C0134  9   20 
+     43.002  4.525E-02  3.758E-03                                 C0134  9   21 
+     45.627  2.025E-02  1.216E-03                                 C0134  9   22 
+     51.954  1.332E-02  1.405E-03                                 C0134  9   23 
+     58.139  5.821E-03  1.497E-03                                 C0134  9   24 
+ENDDATA             11          0                                 C0134  9   25 
+ENDSUBENT           24          0                                 C0134  999999 
+SUBENT        C0134010   20160504                             C160C0134 10    1 
+BIB                  4          4                                 C0134 10    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134 10    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134 10    4 
+STATUS     (CURVE) Fig. 9 of J,PR/C,31,1147,198504.               C0134 10    5 
+HISTORY    (20160503C) BP                                         C0134 10    6 
+ENDBIB               4          0                                 C0134 10    7 
+COMMON               2          3                                 C0134 10    8 
+EN         E-EXC                                                  C0134 10    9 
+MEV        MEV                                                    C0134 10   10 
+      134.0      0.622                                            C0134 10   11 
+ENDCOMMON            3          0                                 C0134 10   12 
+DATA                 3          6                                 C0134 10   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134 10   14 
+ADEG       MB/SR      MB/SR                                       C0134 10   15 
+      0.000  4.238E-01                                            C0134 10   16 
+      6.124  2.744E-01                                            C0134 10   17 
+     12.290  5.734E-01                                            C0134 10   18 
+     18.680  5.562E-01                                            C0134 10   19 
+     24.557  2.403E-01  2.501E-02                                 C0134 10   20 
+     30.550  6.593E-02  1.229E-02                                 C0134 10   21 
+ENDDATA              8          0                                 C0134 10   22 
+ENDSUBENT           21          0                                 C0134 1099999 
+SUBENT        C0134011   20160504                             C160C0134 11    1 
+BIB                  4          4                                 C0134 11    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134 11    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134 11    4 
+STATUS     (CURVE) Fig. 10 of J,PR/C,31,1147,198504.              C0134 11    5 
+HISTORY    (20160503C) BP                                         C0134 11    6 
+ENDBIB               4          0                                 C0134 11    7 
+COMMON               2          3                                 C0134 11    8 
+EN         E-EXC                                                  C0134 11    9 
+MEV        MEV                                                    C0134 11   10 
+      134.0       1.14                                            C0134 11   11 
+ENDCOMMON            3          0                                 C0134 11   12 
+DATA                 3         12                                 C0134 11   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134 11   14 
+ADEG       MB/SR      MB/SR                                       C0134 11   15 
+      0.000  2.310E-01  3.601E-02                                 C0134 11   16 
+      6.391  2.820E-01  1.900E-02                                 C0134 11   17 
+     12.391  2.502E-01                                            C0134 11   18 
+     18.652  1.747E-01                                            C0134 11   19 
+     24.522  1.950E-01  1.850E-02                                 C0134 11   20 
+     30.783  4.550E-01                                            C0134 11   21 
+     36.783  5.780E-01                                            C0134 11   22 
+     43.174  4.329E-01                                            C0134 11   23 
+     45.913  2.527E-01                                            C0134 11   24 
+     52.174  1.127E-01                                            C0134 11   25 
+     58.043  1.950E-02  2.198E-03                                 C0134 11   26 
+     64.565  4.688E-03  6.106E-04                                 C0134 11   27 
+ENDDATA             14          0                                 C0134 11   28 
+ENDSUBENT           27          0                                 C0134 1199999 
+SUBENT        C0134012   20160504                             C160C0134 12    1 
+BIB                  4          4                                 C0134 12    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134 12    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134 12    4 
+STATUS     (CURVE) Fig. 3 of J,PR/C,31,1161,198504.               C0134 12    5 
+HISTORY    (20160503C) BP                                         C0134 12    6 
+ENDBIB               4          0                                 C0134 12    7 
+COMMON               2          3                                 C0134 12    8 
+EN         E-EXC                                                  C0134 12    9 
+MEV        MEV                                                    C0134 12   10 
+      134.0       16.8                                            C0134 12   11 
+ENDCOMMON            3          0                                 C0134 12   12 
+DATA                 3          3                                 C0134 12   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134 12   14 
+ADEG       MB/SR      MB/SR                                       C0134 12   15 
+      0.000  1.746E+00                                            C0134 12   16 
+      6.119  8.234E-01  6.835E-02                                 C0134 12   17 
+     12.291  1.633E-01  8.064E-02                                 C0134 12   18 
+ENDDATA              5          0                                 C0134 12   19 
+ENDSUBENT           18          0                                 C0134 1299999 
+SUBENT        C0134013   20160504                             C160C0134 13    1 
+BIB                  4          4                                 C0134 13    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134 13    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134 13    4 
+STATUS     (CURVE) Fig. 3 of J,PR/C,31,1161,198504.               C0134 13    5 
+HISTORY    (20160503C) BP                                         C0134 13    6 
+ENDBIB               4          0                                 C0134 13    7 
+COMMON               2          3                                 C0134 13    8 
+EN         E-EXC                                                  C0134 13    9 
+MEV        MEV                                                    C0134 13   10 
+      160.0       16.8                                            C0134 13   11 
+ENDCOMMON            3          0                                 C0134 13   12 
+DATA                 3          4                                 C0134 13   13 
+ANG-CM     DATA-CM    ERR-S                                       C0134 13   14 
+ADEG       MB/SR      MB/SR                                       C0134 13   15 
+      0.000  2.045E+00                                            C0134 13   16 
+      3.283  1.322E+00                                            C0134 13   17 
+      6.608  5.269E-01  7.286E-02                                 C0134 13   18 
+      9.701  1.833E-01  7.968E-02                                 C0134 13   19 
+ENDDATA              6          0                                 C0134 13   20 
+ENDSUBENT           19          0                                 C0134 1399999 
+SUBENT        C0134014   20160504                             C160C0134 14    1 
+BIB                  5          5                                 C0134 14    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134 14    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134 14    4 
+STATUS     (CURVE) Fig. 4 of J,PR/C,31,1161,198504.               C0134 14    5 
+COMMENT    Peak strength.                                         C0134 14    6 
+HISTORY    (20160503C) BP                                         C0134 14    7 
+ENDBIB               5          0                                 C0134 14    8 
+COMMON               3          3                                 C0134 14    9 
+EN         E-EXC-MIN  E-EXC-MAX                                   C0134 14   10 
+MEV        MEV        MEV                                         C0134 14   11 
+      134.0        4.5       14.5                                 C0134 14   12 
+ENDCOMMON            3          0                                 C0134 14   13 
+DATA                 3          3                                 C0134 14   14 
+ANG-CM     DATA-CM    ERR-S                                       C0134 14   15 
+ADEG       MB/SR      MB/SR                                       C0134 14   16 
+      0.000  3.922E+01  2.515E+00                                 C0134 14   17 
+      6.143  1.577E+01  1.492E+00                                 C0134 14   18 
+     12.240  3.522E+00  6.002E-01                                 C0134 14   19 
+ENDDATA              5          0                                 C0134 14   20 
+ENDSUBENT           19          0                                 C0134 1499999 
+SUBENT        C0134015   20160504                             C160C0134 15    1 
+BIB                  5          5                                 C0134 15    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134 15    3 
+ERR-ANALYS (ERR-S) Statistical error                              C0134 15    4 
+STATUS     (CURVE) Fig. 4 of J,PR/C,31,1161,198504.               C0134 15    5 
+COMMENT    Peak strength.                                         C0134 15    6 
+HISTORY    (20160503C) BP                                         C0134 15    7 
+ENDBIB               5          0                                 C0134 15    8 
+COMMON               3          3                                 C0134 15    9 
+EN         E-EXC-MIN  E-EXC-MAX                                   C0134 15   10 
+MEV        MEV        MEV                                         C0134 15   11 
+      160.0        4.5       14.5                                 C0134 15   12 
+ENDCOMMON            3          0                                 C0134 15   13 
+DATA                 3          5                                 C0134 15   14 
+ANG-CM     DATA-CM    ERR-S                                       C0134 15   15 
+ADEG       MB/SR      MB/SR                                       C0134 15   16 
+      0.000  3.857E+01  2.795E+00                                 C0134 15   17 
+      3.305  2.623E+01  2.304E+00                                 C0134 15   18 
+      6.658  8.765E+00  1.533E+00                                 C0134 15   19 
+      9.736  2.377E+00  3.320E-01                                 C0134 15   20 
+     12.094  1.357E+00  2.373E-01                                 C0134 15   21 
+ENDDATA              7          0                                 C0134 15   22 
+ENDSUBENT           21          0                                 C0134 1599999 
+SUBENT        C0134016   20160504                             C160C0134 16    1 
+BIB                  5          6                                 C0134 16    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134 16    3 
+ERR-ANALYS Statistical error is smaller than the symbols in the   C0134 16    4 
+           figure.                                                C0134 16    5 
+STATUS     (CURVE) Fig. 6 of J,PR/C,31,1161,198504.               C0134 16    6 
+COMMENT    Residual strength.                                     C0134 16    7 
+HISTORY    (20160503C) BP                                         C0134 16    8 
+ENDBIB               6          0                                 C0134 16    9 
+COMMON               3          3                                 C0134 16   10 
+EN         E-EXC-MIN  E-EXC-MAX                                   C0134 16   11 
+MEV        MEV        MEV                                         C0134 16   12 
+      134.0       14.5       30.0                                 C0134 16   13 
+ENDCOMMON            3          0                                 C0134 16   14 
+DATA                 2          6                                 C0134 16   15 
+ANG-CM     DATA-CM                                                C0134 16   16 
+ADEG       MB/SR                                                  C0134 16   17 
+      0.000  1.751E+01                                            C0134 16   18 
+      5.966  2.659E+01                                            C0134 16   19 
+     12.073  1.431E+01                                            C0134 16   20 
+     18.358  2.732E+00                                            C0134 16   21 
+     24.345  1.195E+00                                            C0134 16   22 
+     30.584  1.415E+00                                            C0134 16   23 
+ENDDATA              8          0                                 C0134 16   24 
+ENDSUBENT           23          0                                 C0134 1699999 
+SUBENT        C0134017   20160504                             C160C0134 17    1 
+BIB                  5          6                                 C0134 17    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134 17    3 
+ERR-ANALYS Statistical error is smaller than the symbols in the   C0134 17    4 
+           figure.                                                C0134 17    5 
+STATUS     (CURVE) Fig. 7 of J,PR/C,31,1161,198504.               C0134 17    6 
+COMMENT    Background strength.                                   C0134 17    7 
+HISTORY    (20160503C) BP                                         C0134 17    8 
+ENDBIB               6          0                                 C0134 17    9 
+COMMON               3          3                                 C0134 17   10 
+EN         E-EXC-MIN  E-EXC-MAX                                   C0134 17   11 
+MEV        MEV        MEV                                         C0134 17   12 
+      134.0        4.5       14.5                                 C0134 17   13 
+ENDCOMMON            3          0                                 C0134 17   14 
+DATA                 2          6                                 C0134 17   15 
+ANG-CM     DATA-CM                                                C0134 17   16 
+ADEG       MB/SR                                                  C0134 17   17 
+      0.000  1.672E+01                                            C0134 17   18 
+      6.248  1.483E+01                                            C0134 17   19 
+     12.159  1.123E+01                                            C0134 17   20 
+     18.490  9.120E+00                                            C0134 17   21 
+     24.395  8.680E+00                                            C0134 17   22 
+     30.547  6.571E+00                                            C0134 17   23 
+ENDDATA              8          0                                 C0134 17   24 
+ENDSUBENT           23          0                                 C0134 1799999 
+SUBENT        C0134018   20160504                             C160C0134 18    1 
+BIB                  5          6                                 C0134 18    2 
+REACTION   (20-CA-48(P,N)21-SC-48,PAR,DA)                         C0134 18    3 
+ERR-ANALYS Statistical error is smaller than the symbols in the   C0134 18    4 
+           figure.                                                C0134 18    5 
+STATUS     (CURVE) Fig. 8 of J,PR/C,31,1161,198504.               C0134 18    6 
+COMMENT    Full continuum.                                        C0134 18    7 
+HISTORY    (20160503C) BP                                         C0134 18    8 
+ENDBIB               6          0                                 C0134 18    9 
+COMMON               3          3                                 C0134 18   10 
+EN         E-EXC-MIN  E-EXC-MAX                                   C0134 18   11 
+MEV        MEV        MEV                                         C0134 18   12 
+      134.0       14.5       36.5                                 C0134 18   13 
+ENDCOMMON            3          0                                 C0134 18   14 
+DATA                 2          6                                 C0134 18   15 
+ANG-CM     DATA-CM                                                C0134 18   16 
+ADEG       MB/SR                                                  C0134 18   17 
+      0.000  5.554E+01                                            C0134 18   18 
+      6.113  6.609E+01                                            C0134 18   19 
+     12.396  5.741E+01                                            C0134 18   20 
+     18.792  3.215E+01                                            C0134 18   21 
+     24.679  2.571E+01                                            C0134 18   22 
+     30.736  1.786E+01                                            C0134 18   23 
+ENDDATA              8          0                                 C0134 18   24 
+ENDSUBENT           23          0                                 C0134 1899999 
+ENDENTRY            18          0                                 C013499999999 
