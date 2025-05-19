@@ -1,60 +1,59 @@
-ENTRY            30704   20130602                             31603070400000001 
-SUBENT        30704001   20130602                             31603070400100001 
-BIB                 14         47                                 3070400100002 
-TITLE       Prompt neutron spectra for energy range 30 keV - 4 MeV3070400100003 
-             from fission of U-233, U-235 and Pu-239 induced by   3070400100004 
-             thermal neutrons                                     3070400100005 
+ENTRY            30704   20171228                             31813070400000001 
+SUBENT        30704001   20171228                             31813070400100001 
+BIB                 14         46                                 3070400100002 
+TITLE      Energy spectrum measurements of neutrons for energies  3070400100003 
+            30 keV - 4 MeV from thermal fission of main fuel      3070400100004 
+            elements                                              3070400100005 
 AUTHOR     (A.Lajtai, J.Kecskemeti, J.Safar, P.P.Dyachenko,       3070400100006 
             V.M.Piksaikin)                                        3070400100007 
 INSTITUTE  (3HUNKFI,4RUSFEI)                                      3070400100008 
 REFERENCE  (C,85SANTA,1,613,1985)                                 3070400100009 
            (S,IAEA-335,312,1985) Graph only                       3070400100010 
-           (J,YK,1983,(2/51),22,1983) in Russian. Graph only.     3070400100011 
-           (R,INDC(CCP)-222L,11,1983) Engl.transl.of J,YK.        3070400100012 
+           (J,YK,,(2/51),22,1983) in Russian. Graph only.         3070400100011 
+           (R,INDC(CCP)-222,11,1983) Eng.trans. of YK,,(2/51),22  3070400100012 
 FACILITY   (REAC,3HUNKFI)                                         3070400100013 
-INC-SPECT   Neutron tangential beam from VVRM reactor was filtered3070400100014 
-             at fast-neutrons and gamma-rays using a special colli3070400100015 
-             mator with quartz and bismuth polycrystal filters.   3070400100016 
-METHOD     (TOF) flight path =30.5 cm,                            3070400100017 
-                 channel width=0.487 nsec,                        3070400100018 
+INC-SPECT  Neutron tangential beam from VVRM reactor was filtered 3070400100014 
+            at fast-neutrons and gamma-rays using a special       3070400100015 
+            collimator with quartz and bismuth polycrystal        3070400100016 
+            filters.                                              3070400100017 
+METHOD     (TOF) flight path =30.5 cm, channel width=0.487 nsec,  3070400100018 
                  time resolution (FWHM of gamma-ray peak)=2.5 nsec3070400100019 
-DETECTOR   (SCIN) NE912 for fission neutron detector, and NE913 fo3070400100020 
-            gamma-ray detector.                                   3070400100021 
-           Both are lithium glass detectors,45 mm in diameter and 3070400100022 
-            9.5 mm thick.                                         3070400100023 
+DETECTOR   (GLASD) Li glass detector (45 mm diam., 9.5 mm thick). 3070400100020 
+            NE912 for fission neutrons, NE913 for gammas.         3070400100021 
+           (FISCH) 1 atm Ar gas                                   3070400100022 
+MONITOR    (98-CF-252(0,F),PR,NU/DE)                              3070400100023 
            Effective neutron detector efficiency was determined   3070400100024 
             by measuring the Cf-252 fission neutron spectrum      3070400100025 
             assuming a Maxwellian distribution with T=1.42 MeV.   3070400100026 
-           (FISCH) for fission fragments detection(1 atm Ar gas)  3070400100027 
-MONITOR    (98-CF-252(0,F),PR,NU/DE)                              3070400100028 
-CORRECTION  For neutron and gamma-ray detectors measurements were 3070400100029 
-             carried out without add with a 12 cm long Cu shadow  3070400100030 
-             cone, in order to determine the background due to    3070400100031 
-             the scattering by the detector environment.          3070400100032 
-            The relative contribution of the random coincidence   3070400100033 
-             background - 130% at 30 keV, 40% at 60 keV, 20%      3070400100034 
-             between 1 MeV and 2 MeV.                             3070400100035 
-ASSUMED    (ASSUM1,98-CF-252(0,F),PR,NU)                          3070400100036 
-ERR-ANALYS (DATA-ERR) Uncertainty includes:                       3070400100037 
-            - Statistic                                           3070400100038 
-            - Extrapolation of efficiency curve above 1.2 MeV     3070400100039 
-STATUS     (TABLE) Private communication  Lajtai                  3070400100040 
-           (APRVD) Approved by Lajtai 2/12/86                     3070400100041 
-HISTORY    (19850227R) From A. Lajtai                             3070400100042 
-           (19850823C) DG.                                        3070400100043 
-           (19861208U) DG. New ref. added, author proof received. 3070400100044 
-           (20090725A) SD: Updated to new date formats,lower case.3070400100045 
-                       OS. ASSUMED and some free text added       3070400100046 
-           (20100330U) On. BIB updated                            3070400100047 
-           (20120427A) On. EN-MEAN=0.253 eV -> EN-DUMMY=0.0253 eV 3070400100048 
-           (20130602U) On. METHOD(TOF): 3 parameters added        3070400100049 
-ENDBIB              47          0                                 3070400100050 
-COMMON               2          3                                 3070400100051 
-EN-DUMMY   ASSUM1                                                 3070400100052 
-EV         PRT/FIS                                                3070400100053 
- 0.0253     3.757                                                 3070400100054 
-ENDCOMMON            3          0                                 3070400100055 
-ENDSUBENT           54          0                                 3070400199999 
+CORRECTION  For neutron and gamma-ray detectors measurements were 3070400100027 
+             carried out without add with a 12 cm long Cu shadow  3070400100028 
+             cone, in order to determine the background due to    3070400100029 
+             the scattering by the detector environment.          3070400100030 
+            The relative contribution of the random coincidence   3070400100031 
+             background - 130% at 30 keV, 40% at 60 keV, 20%      3070400100032 
+             between 1 MeV and 2 MeV.                             3070400100033 
+ASSUMED    (ASSUM1,98-CF-252(0,F),PR,NU)                          3070400100034 
+ERR-ANALYS (DATA-ERR) Uncertainty includes:                       3070400100035 
+            - Statistic                                           3070400100036 
+            - Extrapolation of efficiency curve above 1.2 MeV     3070400100037 
+STATUS     (TABLE) Private communication  Lajtai                  3070400100038 
+           (APRVD) Approved by Lajtai 2/12/86                     3070400100039 
+HISTORY    (19850227R) From A. Lajtai                             3070400100040 
+           (19850823C) DG.                                        3070400100041 
+           (19861208U) DG. New ref. added, author proof received. 3070400100042 
+           (20090725A) SD: Updated to new date formats,lower case.3070400100043 
+                       OS. ASSUMED and some free text added       3070400100044 
+           (20100330U) On. BIB updated                            3070400100045 
+           (20120427A) On. EN-MEAN=0.253 eV -> EN-DUMMY=0.0253 eV 3070400100046 
+           (20130602U) On. METHOD(TOF): 3 parameters added        3070400100047 
+           (20171228U) On. BIB corrected.                         3070400100048 
+ENDBIB              46          0                                 3070400100049 
+COMMON               2          3                                 3070400100050 
+EN-DUMMY   ASSUM1                                                 3070400100051 
+EV         PRT/FIS                                                3070400100052 
+ 0.0253     3.757                                                 3070400100053 
+ENDCOMMON            3          0                                 3070400100054 
+ENDSUBENT           53          0                                 3070400199999 
 SUBENT        30704002   20120502                             31553070400200001 
 BIB                  4          5                                 3070400200002 
 REACTION   (92-U-233(N,F),PR,NU/DE,,MXW/REL)                      3070400200003 
