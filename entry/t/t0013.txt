@@ -1,82 +1,233 @@
-ENTRY            T0013   19990419                             0000T001300000001 
-SUBENT        T0013001   19990419                             0000T001300100001 
-BIB                  7          8                                 T001300100002 
-INSTITUTE  (1USAPEN)                                              T001300100003 
-REFERENCE  (J,NP/A,250,285,1975)                                  T001300100004 
-AUTHOR     (D.W.Kneff,F.M.Mann,Z.E.Switkowski)                    T001300100005 
-TITLE      The 100Mo(p,n)100Tc reaction cross section and its use T001300100006 
-            as a normalization for shuttle-system measurements.   T001300100007 
-FACILITY   (VDGT)                                                 T001300100008 
-METHOD     (ACTIV)                                                T001300100009 
-HISTORY    (19990414C) SD/VM                                      T001300100010 
-ENDBIB               8          0                                 T001300100011 
-NOCOMMON             0          0                                 T001300100012 
-ENDSUBENT           11          0                                 T001300199999 
-SUBENT        T0013002   20030624                             0000T001300200001 
-BIB                  8         26                                 T001300200002 
-REACTION  1(42-MO-100(P,N)43-TC-100,,PY,,TT)                      T001300200003 
-          2(42-MO-100(P,N)43-TC-100,,SIG)                         T001300200004 
-SAMPLE     Thick target of natural Mo.                            T001300200005 
-DETECTOR   The gamma-ray counting done by three different         T001300200006 
-            procedures, as dictated by the increasing neutron     T001300200007 
-            flux with incident proton energy:                     T001300200008 
-           (GELI) For proton energies from 2.0 to 3.8 MeV, 540    T001300200009 
-            and 591 keV g-rays were detected with a 50 cm3 Ge(Li).T001300200010 
-            For proton energies from 6.5 to 12.0 MeV, 50 cm3 and  T001300200011 
-            73 cm3 Ge(Li) detectors were used (at diff.times).    T001300200012 
-           (NAICR) For proton energies from 3.0 to 7.2 MeV,       T001300200013 
-            a 5.1cm x 5.1cm NaI(Tl) was positioned at 90 degr.    T001300200014 
-           The relative NaI(Tl) data were normalized to the       T001300200015 
-            Ge(Li) data.                                          T001300200016 
-ANALYSIS  2Cross section is determined by numerically             T001300200017 
-            differentiating thick-target yield.                   T001300200018 
-DECAY-DATA (43-TC-100,15.8SEC,DG,591.,0.057,DG,540.)              T001300200019 
-            Assumed beta- branching ratio to 1.1304-MeV 100Mo     T001300200020 
-             state = 5.7%.                                        T001300200021 
-ERR-ANALYS (DATA-ERR) Absolute uncertainty in yield curve,        T001300200022 
-            reflecting uncertainties in:                          T001300200023 
-            . absolute detector calibration,                      T001300200024 
-            . half-life,                                          T001300200025 
-            . beta- branching ratio (10%).                        T001300200026 
-STATUS     (UNOBT) Data given in Fig. 3-4 of reference.           T001300200027 
-HISTORY    (20030624A) REACTION, STATUS updated.                  T001300200028 
-ENDBIB              26          0                                 T001300200029 
-COMMON               1          3                                 T001300200030 
-DATA-ERR                                                          T001300200031 
-PER-CENT                                                          T001300200032 
-  13.                                                             T001300200033 
-ENDCOMMON            3          0                                 T001300200034 
-NODATA               0          0                                 T001300200035 
-ENDSUBENT           34          0                                 T001300299999 
-SUBENT        T0013003   19990419                             0000T001300300001 
-BIB                  7         11                                 T001300300002 
-REACTION   (11-NA-23(P,N)12-MG-23,,SIG)                           T001300300003 
-SAMPLE     NaCl target evaporated onto a natural Mo pellet.       T001300300004 
-             Sample thickness 210 mu-g/cm2.                       T001300300005 
-DETECTOR   (GELI) 50 cm3 Ge(Li) detector.                         T001300300006 
-DECAY-DATA (12-MG-23,11.57SEC,AR,511.)                            T001300300007 
-MONITOR    (42-MO-100(P,N)43-TC-100,,SIG)                         T001300300008 
-ERR-ANALYS (DATA-ERR) Absolute uncertainty due to uncertainties   T001300300009 
-           in:                                                    T001300300010 
-           . 100Tc absolute gamma yields (8%),                    T001300300011 
-           . target thickness (15%).                              T001300300012 
-STATUS     (NACRE) From NACRE data file, scanned from Fig. 7.     T001300300013 
-ENDBIB              11          0                                 T001300300014 
-COMMON               1          3                                 T001300300015 
-DATA-ERR                                                          T001300300016 
-PER-CENT                                                          T001300300017 
-  17.                                                             T001300300018 
-ENDCOMMON            3          0                                 T001300300019 
-DATA                 3          7                                 T001300300020 
-EN-CM      DATA       DATA-ERR                                    T001300300021 
-MEV        B          B                                           T001300300022 
-  5.17        3.28E-02   5.57E-03                                 T001300300023 
-  5.71        8.07E-02   1.37E-02                                 T001300300024 
-  6.19        1.29E-01   2.20E-02                                 T001300300025 
-  6.72        1.15E-01   1.96E-02                                 T001300300026 
-  7.25        1.20E-01   2.05E-02                                 T001300300027 
-  7.68        1.06E-01   1.80E-02                                 T001300300028 
-  8.24        1.24E-01   2.11E-02                                 T001300300029 
-ENDDATA              9          0                                 T001300300030 
-ENDSUBENT           29          0                                 T001300399999 
-ENDENTRY             3          0                                 T001399999999 
+ENTRY            T0013   20220418                             C217T0013  0    1 
+SUBENT        T0013001   20220418                             C217T0013  1    1 
+BIB                  7         13                                 T0013  1    2 
+TITLE      The 100Mo(p,n)100Tc reaction cross section and its     T0013  1    3 
+           use as a normalization for shuttle-system measurements T0013  1    4 
+AUTHOR     (D.W.Kneff,F.M.Mann,Z.E.Switkowski)                    T0013  1    5 
+REFERENCE  (J,NP/A,250,285,1975)                                  T0013  1    6 
+           #doi:10.1016/0375-9474(75)90259-6                      T0013  1    7 
+INSTITUTE  (1USACAL)                                              T0013  1    8 
+FACILITY   (VDGT,1USACAL) ONR-CIT tandem accelerator.             T0013  1    9 
+METHOD     (ACTIV)                                                T0013  1   10 
+HISTORY    (19990414C) SD/VM                                      T0013  1   11 
+           (20220418A) BP: Changed INSTITUTE, added doi and S-    T0013  1   12 
+           factor. Digitized data (unobtainable data) per an      T0013  1   13 
+           NRDC decision for data sets that were published        T0013  1   14 
+           before 2000 (C32 of WP2022-01) for subentries 4-5.     T0013  1   15 
+ENDBIB              13          0                                 T0013  1   16 
+NOCOMMON             0          0                                 T0013  1   17 
+ENDSUBENT           16          0                                 T0013  199999 
+SUBENT        T0013002   20220418                             C217T0013  2    1 
+BIB                  7         24                                 T0013  2    2 
+REACTION   (42-MO-100(P,N)43-TC-100,,PY,,TT)                      T0013  2    3 
+SAMPLE     Thick target of natural Mo.                            T0013  2    4 
+DETECTOR   The gamma-ray counting done by three different         T0013  2    5 
+           procedures, as dictated by the increasing neutron      T0013  2    6 
+           flux with incident proton energy:                      T0013  2    7 
+           (GELI) for proton energies from 2.0 to 3.8 MeV, 540    T0013  2    8 
+           and 591 keV g-rays were detected with a 50 cm3 Ge(Li). T0013  2    9 
+           For proton energies from 6.5 to 12.0 MeV, 50 cm3       T0013  2   10 
+           and 73 cm3 Ge(Li) detectors were used (at diff.times). T0013  2   11 
+           (NAICR) For proton energies from 3.0 to 7.2 MeV, a     T0013  2   12 
+           5.1cm x 5.1cm NaI(Tl) was positioned at 90 degr. The   T0013  2   13 
+           relative NaI(Tl) data were normalized to the Ge(Li)    T0013  2   14 
+           data.                                                  T0013  2   15 
+DECAY-DATA (43-TC-100,15.8SEC,DG,591.,0.057,DG,540.) Assumed      T0013  2   16 
+           beta-branching ratio to 1.1304-MeV 100Ru state = 5.7%. T0013  2   17 
+ERR-ANALYS (ERR-T) Absolute uncertainty in yield curve,           T0013  2   18 
+           reflecting uncertainties in: absolute detector         T0013  2   19 
+           calibration, half-life, beta-branching ratio (10%).    T0013  2   20 
+           (ERR-1) beta-branching ratio.                          T0013  2   21 
+STATUS     (CURVE) Fig. 3, page 208.                              T0013  2   22 
+HISTORY    (20030624A) Reaction, STATUS updated.                  T0013  2   23 
+           (20220418A) BP: slitted yields and cross section       T0013  2   24 
+           into two subentries, digitized data, updated           T0013  2   25 
+           ERR-ANALYS.                                            T0013  2   26 
+ENDBIB              24          0                                 T0013  2   27 
+COMMON               1          3                                 T0013  2   28 
+ERR-1                                                             T0013  2   29 
+PER-CENT                                                          T0013  2   30 
+       10.0                                                       T0013  2   31 
+ENDCOMMON            3          0                                 T0013  2   32 
+DATA                 3         41                                 T0013  2   33 
+EN         DATA       ERR-T                                       T0013  2   34 
+MEV        PRD/INC    PRD/INC                                     T0013  2   35 
+      2.012  1.124E-11                                            T0013  2   36 
+      2.138  2.057E-11  3.413E-12                                 T0013  2   37 
+      2.232  3.767E-11  6.251E-12                                 T0013  2   38 
+      2.326  8.267E-11                                            T0013  2   39 
+      2.421  1.262E-10                                            T0013  2   40 
+      2.546  2.311E-10  3.835E-11                                 T0013  2   41 
+      2.609  5.229E-10                                            T0013  2   42 
+      2.735  7.293E-10                                            T0013  2   43 
+      2.829  1.183E-09                                            T0013  2   44 
+      2.923  1.753E-09                                            T0013  2   45 
+      3.049  2.372E-09                                            T0013  2   46 
+      3.112  3.410E-09                                            T0013  2   47 
+      3.301  6.058E-09                                            T0013  2   48 
+      3.426  1.076E-08                                            T0013  2   49 
+      3.521  1.456E-08                                            T0013  2   50 
+      3.646  2.224E-08                                            T0013  2   51 
+      3.835  3.501E-08                                            T0013  2   52 
+      4.055  6.811E-08                                            T0013  2   53 
+      4.212  1.072E-07                                            T0013  2   54 
+      4.463  1.638E-07                                            T0013  2   55 
+      4.652  2.823E-07                                            T0013  2   56 
+      4.841  4.184E-07                                            T0013  2   57 
+      5.061  6.015E-07                                            T0013  2   58 
+      5.249  8.391E-07                                            T0013  2   59 
+      5.438  1.171E-06  1.942E-07                                 T0013  2   60 
+      5.658  1.491E-06                                            T0013  2   61 
+      5.878  2.348E-06                                            T0013  2   62 
+      6.035  2.991E-06  5.705E-07                                 T0013  2   63 
+      6.255  4.569E-06                                            T0013  2   64 
+      6.601  7.195E-06                                            T0013  2   65 
+      7.009  1.067E-05                                            T0013  2   66 
+      7.260  1.279E-05                                            T0013  2   67 
+      7.575  1.582E-05                                            T0013  2   68 
+      8.046  2.275E-05                                            T0013  2   69 
+      8.486  3.273E-05                                            T0013  2   70 
+      9.020  3.587E-05                                            T0013  2   71 
+      9.492  4.858E-05                                            T0013  2   72 
+     10.058  5.488E-05                                            T0013  2   73 
+     10.592  6.788E-05                                            T0013  2   74 
+     11.032  7.439E-05  8.460E-06                                 T0013  2   75 
+     12.037  1.138E-04  1.887E-05                                 T0013  2   76 
+ENDDATA             43          0                                 T0013  2   77 
+ENDSUBENT           76          0                                 T0013  299999 
+SUBENT        T0013003   20220418                             C217T0013  3    1 
+BIB                  8         12                                 T0013  3    2 
+REACTION   (11-NA-23(P,N)12-MG-23,,SIG)                           T0013  3    3 
+SAMPLE     NaCl target evaporated onto a natural Mo pellet.       T0013  3    4 
+           Sample thickness 210 mu-g/cm2.                         T0013  3    5 
+DETECTOR   (GELI) 50 cm3 Ge(Li) detector.                         T0013  3    6 
+DECAY-DATA (12-MG-23,11.57SEC,AR,511.)                            T0013  3    7 
+MONITOR    (42-MO-100(P,N)43-TC-100,,SIG)                         T0013  3    8 
+ERR-ANALYS (ERR-T) Absolute uncertainty due to uncertainties  in: T0013  3    9 
+           (ERR-1) 100Tc absolute gamma yields (8%),              T0013  3   10 
+           (ERR-2) target thickness (15%).                        T0013  3   11 
+STATUS     (CURVE) Fig. 7, page 293.                              T0013  3   12 
+HISTORY    (20220418A) BP: Removed NACRE data, digitized plotted  T0013  3   13 
+                       data, updated ERR-ANALYS and DATA units.   T0013  3   14 
+ENDBIB              12          0                                 T0013  3   15 
+COMMON               2          3                                 T0013  3   16 
+ERR-1      ERR-2                                                  T0013  3   17 
+PER-CENT   PER-CENT                                               T0013  3   18 
+        8.0       15.0                                            T0013  3   19 
+ENDCOMMON            3          0                                 T0013  3   20 
+DATA                 3          7                                 T0013  3   21 
+EN-CM      DATA       ERR-T                                       T0013  3   22 
+MEV        MB         MB                                          T0013  3   23 
+      5.226  3.487E+01  5.078E+00                                 T0013  3   24 
+      5.713  8.446E+01  8.713E+00                                 T0013  3   25 
+      6.214  1.340E+02  1.382E+01                                 T0013  3   26 
+      6.730  1.248E+02  1.422E+01                                 T0013  3   27 
+      7.246  1.250E+02  1.557E+01                                 T0013  3   28 
+      7.735  1.164E+02  1.451E+01                                 T0013  3   29 
+      8.237  1.316E+02  2.049E+01                                 T0013  3   30 
+ENDDATA              9          0                                 T0013  3   31 
+ENDSUBENT           30          0                                 T0013  399999 
+SUBENT        T0013004   20220418                             C217T0013  4    1 
+BIB                  5          7                                 T0013  4    2 
+REACTION   (42-MO-100(P,N)43-TC-100,,SIG)                         T0013  4    3 
+ANALYSIS   Cross section is determined by numerically             T0013  4    4 
+           differentiating thick-target yield.                    T0013  4    5 
+ERR-ANALYS (DATA-ERR) Absolute uncertainty.                       T0013  4    6 
+STATUS     (DEP,T0013002)                                         T0013  4    7 
+           (CURVE) Fig. 4, page 290.                              T0013  4    8 
+HISTORY    (20220418C) BP                                         T0013  4    9 
+ENDBIB               7          0                                 T0013  4   10 
+NOCOMMON             0          0                                 T0013  4   11 
+DATA                 3         32                                 T0013  4   12 
+EN-CM      DATA       DATA-ERR                                    T0013  4   13 
+MEV        MB         MB                                          T0013  4   14 
+      1.944  7.219E-03  2.242E-03                                 T0013  4   15 
+      2.141  1.988E-02  8.196E-03                                 T0013  4   16 
+      2.254  4.918E-02  1.533E-02                                 T0013  4   17 
+      2.424  1.094E-01  2.555E-02                                 T0013  4   18 
+      2.593  2.075E-01  1.257E-01                                 T0013  4   19 
+      2.819  5.138E-01  1.403E-01                                 T0013  4   20 
+      3.102  1.114E+00  1.894E-01                                 T0013  4   21 
+      3.412  4.007E+00  9.364E-01                                 T0013  4   22 
+      3.638  5.379E+00  9.126E-01                                 T0013  4   23 
+      3.808  1.165E+01  2.481E+00                                 T0013  4   24 
+      4.006  1.406E+01  3.560E+00                                 T0013  4   25 
+      4.260  2.045E+01  4.772E+00                                 T0013  4   26 
+      4.514  3.779E+01  8.831E+00                                 T0013  4   27 
+      4.684  4.681E+01  1.369E+01                                 T0013  4   28 
+      4.881  5.957E+01  1.740E+01                                 T0013  4   29 
+      5.051  7.783E+01  2.831E+01                                 T0013  4   30 
+      5.220  9.389E+01  2.921E+01                                 T0013  4   31 
+      5.475  1.227E+02  5.068E+01                                 T0013  4   32 
+      5.644  2.455E+02  6.225E+01                                 T0013  4   33 
+      5.898  1.607E+02  8.650E+01                                 T0013  4   34 
+      6.068  4.084E+02  9.551E+01                                 T0013  4   35 
+      6.322  4.202E+02  8.924E+01                                 T0013  4   36 
+      6.802  5.651E+02  9.635E+01                                 T0013  4   37 
+      7.028  4.698E+02  3.162E+02                                 T0013  4   38 
+      7.282  5.098E+02  1.939E+02                                 T0013  4   39 
+      7.706  6.673E+02  9.862E+01                                 T0013  4   40 
+      8.186  8.739E+02  1.290E+02                                 T0013  4   41 
+      8.695  4.163E+02  6.144E+01                                 T0013  4   42 
+      9.175  7.305E+02  1.398E+02                                 T0013  4   43 
+      9.684  8.156E+02  2.226E+02                                 T0013  4   44 
+     10.192  1.097E+03  2.335E+02                                 T0013  4   45 
+     11.181  1.197E+03  3.499E+02                                 T0013  4   46 
+ENDDATA             34          0                                 T0013  4   47 
+ENDSUBENT           46          0                                 T0013  499999 
+SUBENT        T0013005   20220418                             C217T0013  5    1 
+BIB                  4          7                                 T0013  5    2 
+REACTION   (42-MO-100(P,N)43-TC-100,,SIG,,SFC)                    T0013  5    3 
+ANALYSIS   S-factor is calculated as S(E)=sigma(E)*E*exp(2pi*     T0013  5    4 
+           eta), where sigma(E) is cross section, E energy and    T0013  5    5 
+           exp(-2pi*eta) Coulomb penetrability factor.            T0013  5    6 
+STATUS     (DEP,T0013004)                                         T0013  5    7 
+           (CURVE) Fig. 5, page 291.                              T0013  5    8 
+HISTORY    (20220418C) BP                                         T0013  5    9 
+ENDBIB               7          0                                 T0013  5   10 
+NOCOMMON             0          0                                 T0013  5   11 
+DATA                 2         39                                 T0013  5   12 
+EN-CM      DATA                                                   T0013  5   13 
+MEV        MB*MEV                                                 T0013  5   14 
+      2.000  7.330E+10                                            T0013  5   15 
+      2.110  8.262E+10                                            T0013  5   16 
+      2.219  1.049E+11                                            T0013  5   17 
+      2.313  7.177E+10                                            T0013  5   18 
+      2.407  8.921E+10                                            T0013  5   19 
+      2.501  1.363E+11                                            T0013  5   20 
+      2.595  6.169E+10                                            T0013  5   21 
+      2.704  9.737E+10                                            T0013  5   22 
+      2.782  7.107E+10                                            T0013  5   23 
+      2.908  4.861E+10                                            T0013  5   24 
+      3.017  5.912E+10                                            T0013  5   25 
+      3.158  4.269E+10                                            T0013  5   26 
+      3.299  1.007E+11                                            T0013  5   27 
+      3.393  6.740E+10                                            T0013  5   28 
+      3.471  6.248E+10                                            T0013  5   29 
+      3.628  4.662E+10                                            T0013  5   30 
+      3.831  6.895E+10                                            T0013  5   31 
+      4.034  4.980E+10                                            T0013  5   32 
+      4.222  4.518E+10                                            T0013  5   33 
+      4.426  5.378E+10                                            T0013  5   34 
+      4.645  4.473E+10                                            T0013  5   35 
+      4.833  4.332E+10                                            T0013  5   36 
+      5.020  3.763E+10                                            T0013  5   37 
+      5.224  3.644E+10                                            T0013  5   38 
+      5.443  3.235E+10                                            T0013  5   39 
+      5.631  3.727E+10                                            T0013  5   40 
+      5.834  2.550E+10                                            T0013  5   41 
+      6.006  4.947E+10                                            T0013  5   42 
+      6.304  3.348E+10                                            T0013  5   43 
+      6.695  2.974E+10                                            T0013  5   44 
+      6.992  1.886E+10                                            T0013  5   45 
+      7.243  1.656E+10                                            T0013  5   46 
+      7.618  1.455E+10                                            T0013  5   47 
+      8.150  1.279E+10                                            T0013  5   48 
+      8.635  4.228E+09                                            T0013  5   49 
+      9.121  5.433E+09                                            T0013  5   50 
+      9.606  4.146E+09                                            T0013  5   51 
+     10.122  4.478E+09                                            T0013  5   52 
+     11.108  3.136E+09                                            T0013  5   53 
+ENDDATA             41          0                                 T0013  5   54 
+ENDSUBENT           53          0                                 T0013  599999 
+ENDENTRY             5          0                                 T001399999999 

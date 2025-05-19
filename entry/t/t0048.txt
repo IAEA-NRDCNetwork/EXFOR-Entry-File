@@ -1,56 +1,176 @@
-ENTRY            T0048   20000412                             0000T004800000001 
-SUBENT        T0048001   20000412                             0000T004800100001 
-BIB                  8          9                                 T004800100002 
-INSTITUTE  (1USASTF,1USAANL)                                      T004800100003 
-REFERENCE  (J,PR/C,25,1179,198203)                                T004800100004 
-AUTHOR     (S.S.HANNA,W.FELDMAN,M.SUFFERT,D.KURATH)               T004800100005 
-TITLE      High-lying o+ and 3- levels in 12C                     T004800100006 
-FACILITY   (VDGT,1USASTF)                                         T004800100007 
-SAMPLE     Isotopically enriched 11B films evaporated onto Ta or  T004800100008 
-            Au backings.                                          T004800100009 
-DETECTOR   (NAICR)                                                T004800100010 
-HISTORY    (20000412C) VM                                         T004800100011 
-ENDBIB               9          0                                 T004800100012 
-NOCOMMON             0          0                                 T004800100013 
-ENDSUBENT           12          0                                 T004800199999 
-SUBENT        T0048002   20000412                             0000T004800200001 
-BIB                  3          5                                 T004800200002 
-REACTION   (5-B-11(P,G)6-C-12,PAR,DA,,LEG/RSL)                    T004800200003 
-ERR-ANALYS (DATA-ERR) No information on source of uncertainties.  T004800200004 
-STATUS     Taken from Table I in reference.  Relative angular     T004800200005 
-            distributions given in Fig.4 of reference for 5.06-   T004800200006 
-            MeV gamma and in Fig.6 for 8.72- and 18.36-MeV gammas.T004800200007 
-ENDBIB               5          0                                 T004800200008 
-COMMON               1          3                                 T004800200009 
-E-EXC                                                             T004800200010 
-MEV                                                               T004800200011 
- 18.36                                                            T004800200012 
-ENDCOMMON            3          0                                 T004800200013 
-DATA                 4          8                                 T004800200014 
-EN         NUMBER     DATA       DATA-ERR                         T004800200015 
-MEV        NO-DIM     NO-DIM     NO-DIM                           T004800200016 
- 2.45       1.        -0.46       0.04                            T004800200017 
- 2.45       2.         0.08       0.03                            T004800200018 
- 2.63       2.         0.34       0.03                            T004800200019 
- 2.63       4.        -0.08       0.03                            T004800200020 
- 2.64       2.         0.17       0.03                            T004800200021 
- 2.64       4.        -0.03       0.03                            T004800200022 
- 2.96       1.         0.60       0.04                            T004800200023 
- 2.96       2.         0.28       0.03                            T004800200024 
-ENDDATA             10          0                                 T004800200025 
-ENDSUBENT           24          0                                 T004800299999 
-SUBENT        T0048003   20000412                             0000T004800300001 
-BIB                  3          4                                 T004800300002 
-REACTION   (5-B-11(P,G)6-C-12,PAR,DA)                             T004800300003 
-MONITOR    (5-B-11(P,G)6-C-12,PAR,DA)                             T004800300004 
-STATUS     (UNOBT) Excitation functions given in Fig. 3 of        T004800300005 
-            reference.                                            T004800300006 
-ENDBIB               4          0                                 T004800300007 
-COMMON               3          3                                 T004800300008 
-ANG        E          E-NRM                                       T004800300009 
-ADEG       MEV        MEV                                         T004800300010 
- 90.         8.72       4.43                                      T004800300011 
-ENDCOMMON            3          0                                 T004800300012 
-NODATA               0          0                                 T004800300013 
-ENDSUBENT           12          0                                 T004800399999 
-ENDENTRY             3          0                                 T004899999999 
+ENTRY            T0048   20220418                             C217T0048  0    1 
+SUBENT        T0048001   20220418                             C217T0048  1    1 
+BIB                  7         13                                 T0048  1    2 
+TITLE      High-lying 0+ and 3- levels in 12C                     T0048  1    3 
+AUTHOR     (S.S.Hanna,W.Feldman,M.Suffert,D.Kurath)               T0048  1    4 
+REFERENCE  (J,PR/C,25,1179,1982)                                  T0048  1    5 
+           #doi:10.1103/PhysRevC.25.1179                          T0048  1    6 
+INSTITUTE  (1USASTF,1USAANL)                                      T0048  1    7 
+FACILITY   (VDGT,1USASTF)                                         T0048  1    8 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties.  T0048  1    9 
+HISTORY    (20000412C) VM                                         T0048  1   10 
+           (20220418A) BP: Added doi, corrected title spelling,   T0048  1   11 
+           updated SAMPLE, digitized data (unobtainable data)     T0048  1   12 
+           per an NRDC decision for data sets that were           T0048  1   13 
+           published before 2000 (C32 of WP2022-01) for           T0048  1   14 
+           subentris 4-5.                                         T0048  1   15 
+ENDBIB              13          0                                 T0048  1   16 
+NOCOMMON             0          0                                 T0048  1   17 
+ENDSUBENT           16          0                                 T0048  199999 
+SUBENT        T0048002   20220418                             C217T0048  2    1 
+BIB                  3          7                                 T0048  2    2 
+REACTION   (5-B-11(P,G)6-C-12,PAR,DA,,LEG/RSL)                    T0048  2    3 
+STATUS     (DEP,T0048004)                                         T0048  2    4 
+           (DEP,T0048005)                                         T0048  2    5 
+           (TABLE) Table I, page 1182. Relative (counts) angular  T0048  2    6 
+           distributions given in Fig.4 of reference for 5.06-    T0048  2    7 
+           MeV gamma and in Fig. 6 for 8.72- and 18.36-MeV gammas.T0048  2    8 
+HISTORY    (20220418A) BP: Updated STATUS.                        T0048  2    9 
+ENDBIB               7          0                                 T0048  2   10 
+COMMON               1          3                                 T0048  2   11 
+E-EXC                                                             T0048  2   12 
+MEV                                                               T0048  2   13 
+      18.36                                                       T0048  2   14 
+ENDCOMMON            3          0                                 T0048  2   15 
+DATA                 4          8                                 T0048  2   16 
+EN         NUMBER     DATA       DATA-ERR                         T0048  2   17 
+MEV        NO-DIM     NO-DIM     NO-DIM                           T0048  2   18 
+       2.45         1.      -0.46       0.04                      T0048  2   19 
+       2.45         2.       0.08       0.03                      T0048  2   20 
+       2.63         2.       0.34       0.03                      T0048  2   21 
+       2.63         4.      -0.08       0.03                      T0048  2   22 
+       2.64         2.       0.17       0.03                      T0048  2   23 
+       2.64         4.      -0.03       0.03                      T0048  2   24 
+       2.96         1.       0.60       0.04                      T0048  2   25 
+       2.96         2.       0.28       0.03                      T0048  2   26 
+ENDDATA             10          0                                 T0048  2   27 
+ENDSUBENT           26          0                                 T0048  299999 
+SUBENT        T0048003   20220418                             C217T0048  3    1 
+BIB                  8         16                                 T0048  3    2 
+REACTION   (5-B-11(P,G)6-C-12,PAR,DA)                             T0048  3    3 
+SAMPLE     150 microg/cm2. Isotopically enriched 11B films        T0048  3    4 
+           evaporated onto Ta or Au backings.                     T0048  3    5 
+DETECTOR   (NAICR) The Stanford 24x24 cm NaI spectrometer.        T0048  3    6 
+METHOD     Angular distributions were obtained by measurements    T0048  3    7 
+           at 5-7 angles and at several energies over each        T0048  3    8 
+           resonance. A collimation angle of 10.5 was used for    T0048  3    9 
+           these measurements. Approximately 45 cm of paraffin    T0048  3   10 
+           was placed between target and detector to reduce the   T0048  3   11 
+           neutron background at the higher bombarding energies.  T0048  3   12 
+MONITOR    (5-B-11(P,G)6-C-12,PAR,DA)                             T0048  3   13 
+MONIT-REF  ((MONIT)F0332002,R.E.Segel+,J,PR,139,B818,1965)        T0048  3   14 
+STATUS     (CURVE) Fig. 3, page 1181.                             T0048  3   15 
+           (COREL,T0048004) Data with 300 ug/cm2 thick sample     T0048  3   16 
+           (COREL,T0048005) Data with 750 ug/cm2 thick sample     T0048  3   17 
+HISTORY    (20220418A) BP: Digitized data, added MONIT-REF.       T0048  3   18 
+ENDBIB              16          0                                 T0048  3   19 
+COMMON               3          3                                 T0048  3   20 
+ANG        E-EXC      E-NRM                                       T0048  3   21 
+ADEG       MEV        MEV                                         T0048  3   22 
+        90.      17.77       4.43                                 T0048  3   23 
+ENDCOMMON            3          0                                 T0048  3   24 
+DATA                 3         10                                 T0048  3   25 
+EN         DATA       DATA-ERR                                    T0048  3   26 
+MEV        NB/SR      NB/SR                                       T0048  3   27 
+      1.886    106.031     12.130                                 T0048  3   28 
+      1.912    131.306     12.130                                 T0048  3   29 
+      1.940    186.445     15.839                                 T0048  3   30 
+      1.963    370.339     17.723                                 T0048  3   31 
+      1.983    443.184     19.601                                 T0048  3   32 
+      2.014    518.863     25.199                                 T0048  3   33 
+      2.042    431.240     24.266                                 T0048  3   34 
+      2.065    227.896     28.016                                 T0048  3   35 
+      2.090    111.335     11.191                                 T0048  3   36 
+      2.112    108.606     11.203                                 T0048  3   37 
+ENDDATA             12          0                                 T0048  3   38 
+ENDSUBENT           37          0                                 T0048  399999 
+SUBENT        T0048004   20220419                             C217T0048  4    1 
+BIB                  8         16                                 T0048  4    2 
+REACTION   (5-B-11(P,G)6-C-12,PAR,DA)                             T0048  4    3 
+SAMPLE     300 microg/cm2. Isotopically enriched 11B films        T0048  4    4 
+           evaporated onto Ta or Au backings.                     T0048  4    5 
+DETECTOR   (NAICR) The Stanford 24x24 cm NaI spectrometer.        T0048  4    6 
+METHOD     Angular distributions were obtained by measurements    T0048  4    7 
+           at 5-7 angles and at several energies over each        T0048  4    8 
+           resonance. A collimation angle of 10.5 was used for    T0048  4    9 
+           these measurements. Approximately 45 cm of paraffin    T0048  4   10 
+           was placed between target and detector to reduce the   T0048  4   11 
+           neutron background at the higher bombarding energies.  T0048  4   12 
+MONITOR    (5-B-11(P,G)6-C-12,PAR,DA)                             T0048  4   13 
+MONIT-REF  ((MONIT)F0332002,R.E.Segel+,J,PR,139,B818,1965)        T0048  4   14 
+STATUS     (CURVE) Fig. 3, page 1181.                             T0048  4   15 
+           (COREL,T0048003) Data with 150 ug/cm2 thick sample     T0048  4   16 
+           (COREL,T0048005) Data with 750 ug/cm2 thick sample     T0048  4   17 
+HISTORY    (20220418C) BP                                         T0048  4   18 
+ENDBIB              16          0                                 T0048  4   19 
+COMMON               2          3                                 T0048  4   20 
+ANG        E-NRM                                                  T0048  4   21 
+ADEG       MEV                                                    T0048  4   22 
+        90.       4.43                                            T0048  4   23 
+ENDCOMMON            3          0                                 T0048  4   24 
+DATA                 4         23                                 T0048  4   25 
+E-EXC      EN         DATA       DATA-ERR                         T0048  4   26 
+MEV        MEV        NB/SR      NB/SR                            T0048  4   27 
+      17.77      2.119     99.298      9.348                      T0048  4   28 
+      17.77      2.219     60.422     13.081                      T0048  4   29 
+      17.77      2.273     34.463      9.331                      T0048  4   30 
+      17.77      2.323     44.884      8.398                      T0048  4   31 
+      17.77      2.373     53.439     11.197                      T0048  4   32 
+      17.77      2.423     44.264     11.191                      T0048  4   33 
+      18.36      1.813     24.620     10.264                      T0048  4   34 
+      18.36      1.913     57.592     10.276                      T0048  4   35 
+      18.36      2.011     39.238     12.130                      T0048  4   36 
+      18.36      2.116     38.635      9.337                      T0048  4   37 
+      18.36      2.223     51.102     10.270                      T0048  4   38 
+      18.36      2.273     60.590     14.008                      T0048  4   39 
+      18.36      2.323     75.676     13.063                      T0048  4   40 
+      18.36      2.374     86.103      9.354                      T0048  4   41 
+      18.36      2.424    127.315     11.203                      T0048  4   42 
+      18.36      2.476    164.801     13.996                      T0048  4   43 
+      18.36      2.522    209.735     12.130                      T0048  4   44 
+      18.36      2.573    247.221     11.180                      T0048  4   45 
+      18.36      2.632    269.801     11.214                      T0048  4   46 
+      18.36      2.679    238.221     13.985                      T0048  4   47 
+      18.36      2.732    232.791     11.197                      T0048  4   48 
+      18.36      2.779    198.411     13.052                      T0048  4   49 
+      18.36      2.829    175.241      8.409                      T0048  4   50 
+ENDDATA             25          0                                 T0048  4   51 
+ENDSUBENT           50          0                                 T0048  499999 
+SUBENT        T0048005   20220419                             C217T0048  5    1 
+BIB                  8         16                                 T0048  5    2 
+REACTION   (5-B-11(P,G)6-C-12,PAR,DA)                             T0048  5    3 
+SAMPLE     750 microg/cm2. Isotopically enriched 11B films        T0048  5    4 
+           evaporated onto Ta or Au backings.                     T0048  5    5 
+DETECTOR   (NAICR) The Stanford 24x24 cm NaI spectrometer.        T0048  5    6 
+METHOD     Angular distributions were obtained by measurements    T0048  5    7 
+           at 5-7 angles and at several energies over each        T0048  5    8 
+           resonance. A collimation angle of 10.5 was used for    T0048  5    9 
+           these measurements. Approximately 45 cm of paraffin    T0048  5   10 
+           was placed between target and detector to reduce the   T0048  5   11 
+           neutron background at the higher bombarding energies.  T0048  5   12 
+MONITOR    (5-B-11(P,G)6-C-12,PAR,DA)                             T0048  5   13 
+MONIT-REF  ((MONIT)F0332002,R.E.Segel+,J,PR,139,B818,1965)        T0048  5   14 
+STATUS     (CURVE) Fig. 3, page 1181.                             T0048  5   15 
+           (COREL,T0048003) Data with 150 ug/cm2 thick sample     T0048  5   16 
+           (COREL,T0048004) Data with 300 ug/cm2 thick sample     T0048  5   17 
+HISTORY    (20220418C) BP                                         T0048  5   18 
+ENDBIB              16          0                                 T0048  5   19 
+COMMON               3          3                                 T0048  5   20 
+ANG        E-EXC      E-NRM                                       T0048  5   21 
+ADEG       MEV        MEV                                         T0048  5   22 
+        90.      18.36       4.43                                 T0048  5   23 
+ENDCOMMON            3          0                                 T0048  5   24 
+DATA                 3          8                                 T0048  5   25 
+EN         DATA       DATA-ERR                                    T0048  5   26 
+MEV        NB/SR      NB/SR                                       T0048  5   27 
+      2.500    195.669     14.929                                 T0048  5   28 
+      2.612    267.871     12.124                                 T0048  5   29 
+      2.656    268.943     16.784                                 T0048  5   30 
+      2.710    255.115     13.069                                 T0048  5   31 
+      2.799    200.342     13.046                                 T0048  5   32 
+      2.860    191.202     14.941                                 T0048  5   33 
+      2.914    152.181     11.203                                 T0048  5   34 
+      3.016    121.708     13.063                                 T0048  5   35 
+ENDDATA             10          0                                 T0048  5   36 
+ENDSUBENT           35          0                                 T0048  599999 
+ENDENTRY             5          0                                 T004899999999 
