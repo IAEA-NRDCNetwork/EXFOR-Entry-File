@@ -1,45 +1,59 @@
-ENTRY            F0443   19990410                             0000F044300000001 
-SUBENT        F0443001   19990410                             0000F044300100001 
-BIB                  9         12                                 F044300100002 
-TITLE      Cross section of the 12C(p,g)13N at low energies       F044300100003 
-AUTHOR     (C.L.BAILEY,W.R.SRATTON)                               F044300100004 
-INSTITUTE  (1USAMIN)                                              F044300100005 
-REFERENCE  (J,PR,77,194,1950)                                     F044300100006 
-SAMPLE     A thick target of pure, natural isotopic carbon        F044300100007 
-            (graphite), 0.5 mm thick, was fastened to a hollow    F044300100008 
-           copper cylinder, by electroplating the back side of theF044300100009 
-           carbon with copper and soldering to the cylinder.      F044300100010 
-FACILITY   200-keV accelerator                                    F044300100011 
-METHOD     (ACTIV)                                                F044300100012 
-ERR-ANALYS (ERR-T) Total error                                    F044300100013 
-HISTORY    (19990202C)                                            F044300100014 
-ENDBIB              12          0                                 F044300100015 
-NOCOMMON             0          0                                 F044300100016 
-ENDSUBENT           15          0                                 F044300199999 
-SUBENT        F0443002   19990410                             0000F044300200001 
-BIB                  4          5                                 F044300200002 
-REACTION   (6-C-12(P,G)7-N-13,,SIG,,,EXP)                         F044300200003 
-FLAG       (1.) First set of measirements                         F044300200004 
-           (2.) Second set of measirements                        F044300200005 
-COMMENT    Two independant sets of measurements                   F044300200006 
-STATUS     (TABLE) Tbl. 1                                         F044300200007 
-ENDBIB               5          0                                 F044300200008 
-NOCOMMON             0          0                                 F044300200009 
-DATA                 4         12                                 F044300200010 
-EN         DATA       ERR-T      FLAG                             F044300200011 
-MEV        B          B          NO-DIM                           F044300200012 
-     0.128  0.1000E-08 0.2000E-09     1.                          F044300200013 
-     0.133  0.1700E-08 0.2000E-09     2.                          F044300200014 
-     0.141  0.1800E-08 0.2000E-09     1.                          F044300200015 
-     0.147  0.2500E-08 0.2000E-09     2.                          F044300200016 
-     0.155  0.3800E-08 0.3000E-09     1.                          F044300200017 
-     0.161  0.5000E-08 0.3000E-09     2.                          F044300200018 
-     0.168  0.7200E-08 0.5000E-09     1.                          F044300200019 
-     0.175  0.9600E-08 0.6000E-09     2.                          F044300200020 
-     0.181  0.1600E-07 0.1000E-08     1.                          F044300200021 
-     0.189  0.1420E-07 0.9000E-09     2.                          F044300200022 
-     0.194  0.2300E-07 0.2000E-08     1.                          F044300200023 
-     0.202  0.2000E-07 0.1000E-08     2.                          F044300200024 
-ENDDATA             14          0                                 F044300200025 
-ENDSUBENT           24          0                                 F044300299999 
+ENTRY            F0443   20220606                             F092F0443  0    1 
+SUBENT        F0443001   20220606                             F092F0443  1    1 
+BIB                 10         20                                 F0443  1    2 
+TITLE      Cross section of the 12C(p,gamma)13N reaction at low   F0443  1    3 
+           energies                                               F0443  1    4 
+AUTHOR     (C.L.Bailey,W.R.Sratton)                               F0443  1    5 
+INSTITUTE  (1USAMIN)                                              F0443  1    6 
+REFERENCE  (J,PR,77,194,1950)                                     F0443  1    7 
+FACILITY   (ACCEL,1USAMIN) 200-keV accelerator                    F0443  1    8 
+SAMPLE      A thick target of pure, natural isotopic carbon       F0443  1    9 
+            (graphite), 0.5 mm thick, was fastened to a hollow    F0443  1   10 
+           copper cylinder, by electroplating the back side of theF0443  1   11 
+           carbon with copper and soldering to the cylinder.      F0443  1   12 
+DETECTOR   (GEMUC)                                                F0443  1   13 
+METHOD     (ACTIV)                                                F0443  1   14 
+ERR-ANALYS (ERR-1) The statistical fluctuations, plus the over-   F0443  1   15 
+           all efficiency of the Beta-ray counter and the         F0443  1   16 
+           uncertainty involved in subtracting thick target       F0443  1   17 
+           yields, etc.                                           F0443  1   18 
+           (ERR-2) Error in the stopping cross section of carbon  F0443  1   19 
+           for protons                                            F0443  1   20 
+HISTORY    (19990202C)                                            F0443  1   21 
+           (20220606A) SD: Corrections in all Subents.            F0443  1   22 
+ENDBIB              20          0                                 F0443  1   23 
+COMMON               1          3                                 F0443  1   24 
+ERR-2                                                             F0443  1   25 
+PER-CENT                                                          F0443  1   26 
+    10.                                                           F0443  1   27 
+ENDCOMMON            3          0                                 F0443  1   28 
+ENDSUBENT           27          0                                 F0443  199999 
+SUBENT        F0443002   20220606                             F092F0443  2    1 
+BIB                  5          7                                 F0443  2    2 
+REACTION   (6-C-12(P,G)7-N-13,,SIG)                               F0443  2    3 
+FLAG       (1.) First set of measurements                         F0443  2    4 
+           (2.) Second set of measurements                        F0443  2    5 
+COMMENT    Two independent sets of measurements                   F0443  2    6 
+STATUS     (TABLE) Tbl. 1 from Phys.Rev.,77(1950)194              F0443  2    7 
+HISTORY    (20220606A) SD: SF9=EXP deleted from REACTION code.    F0443  2    8 
+           ERR-T -> ERR-1.                                        F0443  2    9 
+ENDBIB               7          0                                 F0443  2   10 
+NOCOMMON             0          0                                 F0443  2   11 
+DATA                 4         12                                 F0443  2   12 
+EN         DATA       ERR-1      FLAG                             F0443  2   13 
+MEV        B          B          NO-DIM                           F0443  2   14 
+     0.128    0.10E-08    0.2E-09     1.                          F0443  2   15 
+     0.133    0.17E-08    0.2E-09     2.                          F0443  2   16 
+     0.141    0.18E-08    0.2E-09     1.                          F0443  2   17 
+     0.147    0.25E-08    0.2E-09     2.                          F0443  2   18 
+     0.155    0.38E-08    0.3E-09     1.                          F0443  2   19 
+     0.161    0.50E-08    0.3E-09     2.                          F0443  2   20 
+     0.168    0.72E-08    0.5E-09     1.                          F0443  2   21 
+     0.175    0.96E-08    0.6E-09     2.                          F0443  2   22 
+     0.181    0.16E-07    0.1E-08     1.                          F0443  2   23 
+     0.189   0.142E-07    0.9E-09     2.                          F0443  2   24 
+     0.194    0.23E-07    0.2E-08     1.                          F0443  2   25 
+     0.202    0.20E-07    0.1E-08     2.                          F0443  2   26 
+ENDDATA             14          0                                 F0443  2   27 
+ENDSUBENT           26          0                                 F0443  299999 
 ENDENTRY             2          0                                 F044399999999 
