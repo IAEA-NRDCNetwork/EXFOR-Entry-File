@@ -1,0 +1,89 @@
+ENTRY            G4096   20220110                             G048G409600000001 
+SUBENT        G4096001   20220110                             G048G409600100001 
+BIB                 12         35                                 G409600100002 
+TITLE      Product yields for the photofission of 239Pu with      G409600100003 
+           bremstrahlung at 17.5 mev boundary energy              G409600100004 
+AUTHOR     (O.O.Parlag,V.T.Maslyuk,E.V.Oleynikov,                 G409600100005 
+           I.V.Pylypchynets,A.I.Lengyel)                          G409600100006 
+INSTITUTE  (4UKRIEP)                                              G409600100007 
+REFERENCE  (J,VAT/I,,(6/136),8,2021)                              G409600100008 
+           #doi:10.46813/2021-136-008                             G409600100009 
+FACILITY   (MICRT,4UKRIEP) M-30 microtron                         G409600100010 
+DETECTOR   (HPGE,GELI) HPGe (Ortec) and Ge(Li), the volumes of    G409600100011 
+           which were 150 and 100 cm3 with an energy resolution ofG409600100012 
+           2.45 and 3.5 keV for the line 60Co (1.332.5 keV).      G409600100013 
+           The absolute registration efficiency of the detectors  G409600100014 
+           was calibrated with a standard set of gamma-ray sourcesG409600100015 
+           22Na, 57Co, 60Co, 109Cd, 133Ba, 137Cs, 151Eu, 241Am.   G409600100016 
+           The dead time of the spectrometer did not exceed 5-8%  G409600100017 
+           during all measurements.                               G409600100018 
+METHOD     (GSPEC)                                                G409600100019 
+INC-SOURCE (BRST)                                                 G409600100020 
+ERR-ANALYS (ERR-T) The total error of relative cumulative yields  G409600100021 
+           was estimated considering statistical errors of peak   G409600100022 
+           intensity of gamma product lines, analysis of time     G409600100023 
+           dependencies, spread of values averaged over           G409600100024 
+           individual measurements, and errors of interpolated    G409600100025 
+           efficiency values and nuclear physical constants       G409600100026 
+             (energy and intensity of gamma lines, half-lives of  G409600100027 
+              products).                                          G409600100028 
+           (ERR-S,,5.) The statistical error of measurements of   G409600100029 
+           the peak intensity of gamma product lines did not      G409600100030 
+           exceed 5%.                                             G409600100031 
+ADD-RES    (COMP) Experimental data are compared with theoretical G409600100032 
+           predictions calculated with TALYS 1.95 and GEF 2021/1.1G409600100033 
+           codes.                                                 G409600100034 
+STATUS     (APRVD) Approved by O.Parlag                           G409600100035 
+HISTORY    (20220110C) UkrNDC                                     G409600100036 
+           (20220110R) Data received from O.Parlag                G409600100037 
+ENDBIB              35          0                                 G409600100038 
+NOCOMMON             0          0                                 G409600100039 
+ENDSUBENT           38          0                                 G409600199999 
+SUBENT        G4096002   20220110                             G048G409600200001 
+BIB                  6         22                                 G409600200002 
+REACTION   (94-PU-239(G,F)ELEM/MASS,CUM,FY,,BRA)                  G409600200003 
+SAMPLE     The active layer of plutonium (disc diameter - 11 mm)  G409600200004 
+           was applied to a stainless steel substrate disc with a G409600200005 
+           diameter of 24 mm and a thickness of 1 mm.             G409600200006 
+           (94-PU-239,ENR=0.99)                                   G409600200007 
+           (94-PU-238,ENR=0.01)                                   G409600200008 
+STATUS     (TABLE) Correspond to Fig.5 (p.11) in                  G409600200009 
+                   Vopr.At.Nauk.Tekhn.I.,issue 6(136),8,2021      G409600200010 
+DECAY-DATA ((1.)36-KR-85-M,,DG,151.2)                             G409600200011 
+           ((2.)38-SR-92,,DG,1383.9)                              G409600200012 
+           ((3.)39-Y-91-M,,DG,555.6)                              G409600200013 
+           ((4.)42-MO-99,,DG,739.5)                               G409600200014 
+           ((5.)44-RU-105,,DG,724.3)                              G409600200015 
+           ((6.)53-I-133,,DG,529.9)                               G409600200016 
+           ((7.)53-I-134,,DG,847.0,,DG,884.1)                     G409600200017 
+           ((8.)53-I-135,,DG,1260.4)                              G409600200018 
+           ((9.)55-CS-138,,DG,1435.8)                             G409600200019 
+           ((10.)56-BA-139,,DG,165.9)                             G409600200020 
+           ((11.)57-LA-142,,DG,641.3)                             G409600200021 
+           ((12.)58-CE-143,,DG,293.3)                             G409600200022 
+MONITOR    (94-PU-239(G,F)40-ZR-97,CUM,FY,,BRA)                   G409600200023 
+MONIT-REF  (M0076002,M.Ya.Kondrat'ko+,J,AE,50,34,1981)            G409600200024 
+ENDBIB              22          0                                 G409600200025 
+COMMON               2          3                                 G409600200026 
+EN-MAX     MONIT                                                  G409600200027 
+MEV        PC/FIS                                                 G409600200028 
+17.5       4.63                                                   G409600200029 
+ENDCOMMON            3          0                                 G409600200030 
+DATA                 6         12                                 G409600200031 
+ELEMENT    MASS       ISOMER     DATA       ERR-T      DECAY-FLAG G409600200032 
+NO-DIM     NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM     G409600200033 
+       35.        85.     1.           1.04      0.104   1.       G409600200034 
+       38.        92.                  2.70      0.27    2.       G409600200035 
+       39.        91.     1.           2.63      0.263   3.       G409600200036 
+       42.        99.                  5.19      0.519   4.       G409600200037 
+       44.       105.                  4.13      0.413   5.       G409600200038 
+       53.       133.                  5.12      0.512   6.       G409600200039 
+       53.       134.                  4.57      0.457   7.       G409600200040 
+       53.       135.                  6.19      0.619   8.       G409600200041 
+       55.       138.                  6.67      0.667   9.       G409600200042 
+       56.       139.                  5.2       0.52   10.       G409600200043 
+       57.       142.                  3.36      0.336  11.       G409600200044 
+       58.       143.                  2.8       0.28   12.       G409600200045 
+ENDDATA             14          0                                 G409600200046 
+ENDSUBENT           45          0                                 G409600299999 
+ENDENTRY             2          0                                 G409699999999 
