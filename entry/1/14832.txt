@@ -1,0 +1,93 @@
+ENTRY            14832   20240809                             15141483200000001 
+SUBENT        14832001   20240809                             15141483200100001 
+BIB                 10         40                                 1483200100002 
+TITLE      Determining the 9Be(n,gamma)10Be integral cross        1483200100003 
+           section at fission neutron energies                    1483200100004 
+AUTHOR     (J.J.Goodell,J.A.Church,C.C.Keith,N.K.Harward,         1483200100005 
+           B.Pierson, S.Tumey,C.Dorais, B.B.Bandong)              1483200100006 
+REFERENCE  (J,PR/C,109,014625,2024)                               1483200100007 
+           #doi:10.1103/PhysRevC.109.014625                       1483200100008 
+INSTITUTE  (1USALRL,1USALAS,1USABNW)                              1483200100009 
+METHOD     (AMS,CHSEP) Foil activation experiments were           1483200100010 
+           performed using the Flattop critical assembly at the   1483200100011 
+           National Criticality Experiments Research Center as    1483200100012 
+           the neutron source, investigating activations by       1483200100013 
+           neutron spectra created with both the HEU and Pu       1483200100014 
+           cores. The 10Be/9Be ratio was measured through         1483200100015 
+           accelerator mass spectrometry and the experiment was   1483200100016 
+           simulated using MCNP to determine the total neutron    1483200100017 
+           fluence. Activation products in irradiated foils were  1483200100018 
+           measured through gamma spectrometry, except for the    1483200100019 
+           Be foils which were assayed via AMS. Irradiated foils  1483200100020 
+           were separated and dissolved individually, including   1483200100021 
+           Al wraps when present, in Aqua Regia, nitric acid, or  1483200100022 
+           hydrochloric acid, as required.                        1483200100023 
+ANALYSIS   The experiments were simulated using the Monte Carlo   1483200100024 
+           N-Particle radiation transport code and combined with  1483200100025 
+           experimental results to determine the total neutron    1483200100026 
+           fluence, while the STAYSL-PNNL suite and FISPACT-II    1483200100027 
+           code were used to validate the model and assess the    1483200100028 
+           systematic uncertainty.                                1483200100029 
+ERR-ANALYS (ERR-T) Combined statistical and systematic errors.    1483200100030 
+           (ERR-S,2.,5.) AMS measurements, 198Au gamma counting,  1483200100031 
+           MCNP tally output.                                     1483200100032 
+           (ERR-1) Gamma detector calibration.                    1483200100033 
+           (ERR-2) AMS 10Be/9Be standard.                         1483200100034 
+           (ERR-3) Foil masses.                                   1483200100035 
+           (ERR-4) Time keeping.                                  1483200100036 
+           (ERR-5) 198Au nuclear data.                            1483200100037 
+           (ERR-6) Model implementation.                          1483200100038 
+CORRECTION The measured values were corrected for Be and Al       1483200100039 
+           material blanks as well as reagent blanks.             1483200100040 
+STATUS     (APRVD) Approved by J.J.Goodell on August 22, 2024.    1483200100041 
+HISTORY    (20240809C) BP                                         1483200100042 
+ENDBIB              40          0                                 1483200100043 
+COMMON               6          3                                 1483200100044 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      1483200100045 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   1483200100046 
+        3.0        1.1        2.0        1.0        1.0       12.01483200100047 
+ENDCOMMON            3          0                                 1483200100048 
+ENDSUBENT           47          0                                 1483200199999 
+SUBENT        14832002   20240809                             15141483200200001 
+BIB                  4         10                                 1483200200002 
+REACTION   (4-BE-9(N,G)4-BE-10,,SIG,,FST)                         1483200200003 
+FACILITY   (CRASS,1USALAS) The Flattop critical assembly (FT-HEU) 1483200200004 
+           at the National Criticality Experiments Research       1483200200005 
+           Center (NCERC) of the Nevada National Security Site.   1483200200006 
+SAMPLE     Foil masses 20.7, 20.0, 20.8, and 20.2 mg, located far 1483200200007 
+            (1.26+-0.09 MeV), center (1.32+-0.09 MeV), boundary   1483200200008 
+            (0.98+-0.08 MeV), and reflector (0.59+-0.05 MeV).     1483200200009 
+STATUS     (TABLE,,J.J.Goodell+,J,PR/C,109,014625,2024)           1483200200010 
+           Table VII, page 014625-10 of J,PR/C,109,014625,2024.   1483200200011 
+           (COREL,14832003) Data from FT-Pu assembly.             1483200200012 
+ENDBIB              10          0                                 1483200200013 
+NOCOMMON             0          0                                 1483200200014 
+DATA                 3          4                                 1483200200015 
+EN-DUMMY   DATA       ERR-T                                       1483200200016 
+MEV        MICRO-B    MICRO-B                                     1483200200017 
+       0.59       26.5        2.2                                 1483200200018 
+       0.98        24.         3.                                 1483200200019 
+       1.26       21.7        1.3                                 1483200200020 
+       1.32       21.8        1.4                                 1483200200021 
+ENDDATA              6          0                                 1483200200022 
+ENDSUBENT           21          0                                 1483200299999 
+SUBENT        14832003   20240809                             15141483200300001 
+BIB                  4          9                                 1483200300002 
+REACTION   (4-BE-9(N,G)4-BE-10,,SIG,,FST)                         1483200300003 
+FACILITY   (CRASS,1USALAS) The Flattop critical assembly (FT-Pu)  1483200300004 
+           at the National Criticality Experiments Research       1483200300005 
+           Center (NCERC) of the Nevada National Security Site.   1483200300006 
+SAMPLE     Foil mass 20.0+-0.3 mg located at the center           1483200300007 
+            (1.46+0.11 MeV).                                      1483200300008 
+STATUS     (TABLE,,J.J.Goodell+,J,PR/C,109,014625,2024)           1483200300009 
+           Table VII, page 014625-10 of J,PR/C,109,014625,2024.   1483200300010 
+           (COREL,14832002) Data from FT-HEU assembly             1483200300011 
+ENDBIB               9          0                                 1483200300012 
+NOCOMMON             0          0                                 1483200300013 
+DATA                 3          1                                 1483200300014 
+EN-DUMMY   DATA       ERR-T                                       1483200300015 
+MEV        MICRO-B    MICRO-B                                     1483200300016 
+       1.46       18.6        1.1                                 1483200300017 
+ENDDATA              3          0                                 1483200300018 
+ENDSUBENT           17          0                                 1483200399999 
+ENDENTRY             3          0                                 1483299999999 
