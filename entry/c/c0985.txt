@@ -1,19 +1,22 @@
-ENTRY            C0985   20040722                             0000C098500000001 
-SUBENT        C0985001   20040722                             0000C098500100001 
-BIB                  7          8                                 C098500100002 
+ENTRY            C0985   20241014                             C241C098500000001 
+SUBENT        C0985001   20241014                             C241C098500100001 
+BIB                  7         11                                 C098500100002 
 INSTITUTE  (1USAMSU)                                              C098500100003 
-REFERENCE  (J,PR/C,8,483,197308)                                  C098500100004 
-AUTHOR     (H.Laumer,S.M.Austin,L.M.Panggabean,C.N.Davids)        C098500100005 
-TITLE      Production of Light E;ements Lithium, Beryllium, and   C098500100006 
-            Boron by Proton-Induced Spallation                    C098500100007 
-FACILITY   (CYCLO,1USAMSU) Sector-focused cyclotron.              C098500100008 
-METHOD     (BCINT)                                                C098500100009 
-HISTORY    (20040721C) VM                                         C098500100010 
-ENDBIB               8          0                                 C098500100011 
-NOCOMMON             0          0                                 C098500100012 
-ENDSUBENT           11          0                                 C098500199999 
-SUBENT        C0985002   20040722                             0000C098500200001 
-BIB                  8         19                                 C098500200002 
+REFERENCE  (J,PR/C,8,483,1973)                                    C098500100004 
+           #doi:10.1103/PhysRevC.8.483                            C098500100005 
+AUTHOR     (H.Laumer,S.M.Austin,L.M.Panggabean,C.N.Davids)        C098500100006 
+TITLE      Production of Light E;ements Lithium, Beryllium, and   C098500100007 
+            Boron by Proton-Induced Spallation                    C098500100008 
+FACILITY   (CYCLO,1USAMSU) Sector-focused cyclotron.              C098500100009 
+METHOD     (BCINT)                                                C098500100010 
+HISTORY    (20040721C) VM                                         C098500100011 
+           (20241010A) OS. DECAY-DATA in Sub.3 corrected,         C098500100012 
+            BIB updates                                           C098500100013 
+ENDBIB              11          0                                 C098500100014 
+NOCOMMON             0          0                                 C098500100015 
+ENDSUBENT           14          0                                 C098500199999 
+SUBENT        C0985002   20241014                             C241C098500200001 
+BIB                  8         20                                 C098500200002 
 REACTION   (7-N-14(P,X)MASS,,SIG)                                 C098500200003 
 SAMPLE     Nitrogen gas target in cell with Kapton entrance windowC098500200004 
             and Formvar exit window.  Gas pressure at 25 Torr;    C098500200005 
@@ -21,7 +24,7 @@ SAMPLE     Nitrogen gas target in cell with Kapton entrance windowC098500200004
             to 130 microg/cm2 at 15 degrees.                      C098500200007 
 METHOD     (TOF)                                                  C098500200008 
 DETECTOR   (SIBAR)                                                C098500200009 
-ANALYSIS   (INTAD). Extrapolated for forward and backward angles. C098500200010 
+ANALYSIS   (INTAD)  Extrapolated for forward and backward angles. C098500200010 
 CORRECTION Corrected for background and energies below cutoff.    C098500200011 
 ERR-ANALYS (DATA-ERR) Total uncertainties given include           C098500200012 
            uncertainties due to:                                  C098500200013 
@@ -31,66 +34,67 @@ ERR-ANALYS (DATA-ERR) Total uncertainties given include           C098500200012
            . detector solid angle,                                C098500200017 
            . beam current integration,                            C098500200018 
            . gas density.                                         C098500200019 
-STATUS     Data taken from Table II and IV of reference.          C098500200020 
-           Angular distribution data given in Fig. 3 of reference.C098500200021 
-ENDBIB              19          0                                 C098500200022 
-NOCOMMON             0          0                                 C098500200023 
-DATA                 4         42                                 C098500200024 
-MASS       EN         DATA       DATA-ERR                         C098500200025 
-NO-DIM     MEV        MB         MB                               C098500200026 
-  6.        21.7        3.1        0.7                            C098500200027 
-  6.        25.8       16.3        3.7                            C098500200028 
-  6.        28.6       22.0        2.2                            C098500200029 
-  6.        31.9       23.1        1.9                            C098500200030 
-  6.        35.1       29.4        3.9                            C098500200031 
-  6.        37.9       28.8        4.3                            C098500200032 
-  6.        40.0       21.9        3.8                            C098500200033 
-  6.        41.9       17.7        2.5                            C098500200034 
-  7.        17.0       36.6       14.1                            C098500200035 
-  7.        21.7       41.2        7.2                            C098500200036 
-  7.        25.8       25.7        4.2                            C098500200037 
-  7.        28.6       17.5        1.8                            C098500200038 
-  7.        31.9       14.4        1.8                            C098500200039 
-  7.        35.1       14.1        2.4                            C098500200040 
-  7.        37.9       16.9        4.3                            C098500200041 
-  7.        40.0       11.8        2.2                            C098500200042 
-  7.        41.9        9.3        1.5                            C098500200043 
-  9.        25.8        2.1        0.7                            C098500200044 
-  9.        28.6        6.6        1.6                            C098500200045 
-  9.        31.9        6.7        0.9                            C098500200046 
-  9.        35.1       11.2        2.2                            C098500200047 
-  9.        37.9        9.5        2.1                            C098500200048 
-  9.        40.0        9.4        2.2                            C098500200049 
-  9.        41.9        6.8        1.5                            C098500200050 
- 10.        17.0       26.4       11.2                            C098500200051 
- 10.        21.7       61.1       13.6                            C098500200052 
- 10.        25.8       60.5       12.2                            C098500200053 
- 10.        28.6       57.2        8.2                            C098500200054 
- 10.        31.9       45.9        5.2                            C098500200055 
- 10.        35.1       49.3        8.5                            C098500200056 
- 10.        37.9       41.4        7.4                            C098500200057 
- 10.        40.0       31.5        5.9                            C098500200058 
- 10.        41.9       27.4        3.5                            C098500200059 
- 11.        17.0       67.9       16.4                            C098500200060 
- 11.        21.7       39.5       10.1                            C098500200061 
- 11.        25.8       22.8        5.6                            C098500200062 
- 11.        28.6       19.5        4.6                            C098500200063 
- 11.        31.9       22.3        5.6                            C098500200064 
- 11.        35.1       22.9        6.3                            C098500200065 
- 11.        37.9       23.8        6.0                            C098500200066 
- 11.        40.0       22.9        5.5                            C098500200067 
- 11.        41.9       20.8        3.5                            C098500200068 
-ENDDATA             44          0                                 C098500200069 
-ENDSUBENT           68          0                                 C098500299999 
-SUBENT        C0985003   20040722                             0000C098500300001 
-BIB                  9         22                                 C098500300002 
+STATUS     (TABLE,,H.Laumer+,J,PR/C,8,483,1973)                   C098500200020 
+            Data taken from Table II and IV of reference.         C098500200021 
+           Angular distribution data given in Fig. 3 of reference.C098500200022 
+ENDBIB              20          0                                 C098500200023 
+NOCOMMON             0          0                                 C098500200024 
+DATA                 4         42                                 C098500200025 
+MASS       EN         DATA       DATA-ERR                         C098500200026 
+NO-DIM     MEV        MB         MB                               C098500200027 
+  6.        21.7        3.1        0.7                            C098500200028 
+  6.        25.8       16.3        3.7                            C098500200029 
+  6.        28.6       22.0        2.2                            C098500200030 
+  6.        31.9       23.1        1.9                            C098500200031 
+  6.        35.1       29.4        3.9                            C098500200032 
+  6.        37.9       28.8        4.3                            C098500200033 
+  6.        40.0       21.9        3.8                            C098500200034 
+  6.        41.9       17.7        2.5                            C098500200035 
+  7.        17.0       36.6       14.1                            C098500200036 
+  7.        21.7       41.2        7.2                            C098500200037 
+  7.        25.8       25.7        4.2                            C098500200038 
+  7.        28.6       17.5        1.8                            C098500200039 
+  7.        31.9       14.4        1.8                            C098500200040 
+  7.        35.1       14.1        2.4                            C098500200041 
+  7.        37.9       16.9        4.3                            C098500200042 
+  7.        40.0       11.8        2.2                            C098500200043 
+  7.        41.9        9.3        1.5                            C098500200044 
+  9.        25.8        2.1        0.7                            C098500200045 
+  9.        28.6        6.6        1.6                            C098500200046 
+  9.        31.9        6.7        0.9                            C098500200047 
+  9.        35.1       11.2        2.2                            C098500200048 
+  9.        37.9        9.5        2.1                            C098500200049 
+  9.        40.0        9.4        2.2                            C098500200050 
+  9.        41.9        6.8        1.5                            C098500200051 
+ 10.        17.0       26.4       11.2                            C098500200052 
+ 10.        21.7       61.1       13.6                            C098500200053 
+ 10.        25.8       60.5       12.2                            C098500200054 
+ 10.        28.6       57.2        8.2                            C098500200055 
+ 10.        31.9       45.9        5.2                            C098500200056 
+ 10.        35.1       49.3        8.5                            C098500200057 
+ 10.        37.9       41.4        7.4                            C098500200058 
+ 10.        40.0       31.5        5.9                            C098500200059 
+ 10.        41.9       27.4        3.5                            C098500200060 
+ 11.        17.0       67.9       16.4                            C098500200061 
+ 11.        21.7       39.5       10.1                            C098500200062 
+ 11.        25.8       22.8        5.6                            C098500200063 
+ 11.        28.6       19.5        4.6                            C098500200064 
+ 11.        31.9       22.3        5.6                            C098500200065 
+ 11.        35.1       22.9        6.3                            C098500200066 
+ 11.        37.9       23.8        6.0                            C098500200067 
+ 11.        40.0       22.9        5.5                            C098500200068 
+ 11.        41.9       20.8        3.5                            C098500200069 
+ENDDATA             44          0                                 C098500200070 
+ENDSUBENT           69          0                                 C098500299999 
+SUBENT        C0985003   20241014                             C241C098500300001 
+BIB                 10         24                                 C098500300002 
 REACTION   (7-N-14(P,X)4-BE-7,,SIG)                               C098500300003 
 SAMPLE     Nitrogen gas target in small gas cell with Kapton      C098500300004 
             entrance and exit windows.                            C098500300005 
 METHOD     (ACTIV) Targets irradiated for 80 minutes.             C098500300006 
 DETECTOR   (GELI). Counting started 24 hours after irradiation    C098500300007 
             and counted for two 4 hour periods 47 days apart.     C098500300008 
-DECAY-DATA (4-BE-7,53.3D,DG,0.478,0.103)                          C098500300009 
+DECAY-DATA (4-BE-7,53.3D,DG,478.0,0.103)                          C098500300009 
 MONITOR    Detector efficiency determined using standard 22Na     C098500300010 
             source.                                               C098500300011 
 CORRECTION Corrected for dead time and gamma attenuation in       C098500300012 
@@ -105,17 +109,19 @@ ERR-ANALYS (DATA-ERR) Total uncertainties given include           C098500300014
            . decay rates (3.0%),                                  C098500300021 
            . gamma attenuation correction (1.0%),                 C098500300022 
            . 7Be->7Li (0.478 MeV) branching ratio (1.6%).         C098500300023 
-STATUS     Data taken from Table IV of reference.                 C098500300024 
-ENDBIB              22          0                                 C098500300025 
-NOCOMMON             0          0                                 C098500300026 
-DATA                 3          1                                 C098500300027 
-EN         DATA       DATA-ERR                                    C098500300028 
-MEV        MB         MB                                          C098500300029 
- 21.7       49.7        3.8                                       C098500300030 
-ENDDATA              3          0                                 C098500300031 
-ENDSUBENT           30          0                                 C098500399999 
-SUBENT        C0985004   20040722                             0000C098500400001 
-BIB                  8         19                                 C098500400002 
+STATUS     (TABLE,,H.Laumer+,J,PR/C,8,483,1973)                   C098500300024 
+            Data taken from Table IV of reference.                C098500300025 
+HISTORY    (20241010A) DECAY-DATA corrected                       C098500300026 
+ENDBIB              24          0                                 C098500300027 
+NOCOMMON             0          0                                 C098500300028 
+DATA                 3          1                                 C098500300029 
+EN         DATA       DATA-ERR                                    C098500300030 
+MEV        MB         MB                                          C098500300031 
+ 21.7       49.7        3.8                                       C098500300032 
+ENDDATA              3          0                                 C098500300033 
+ENDSUBENT           32          0                                 C098500399999 
+SUBENT        C0985004   20241014                             C241C098500400001 
+BIB                  8         20                                 C098500400002 
 REACTION   (7-N-14(P,X)6-C-11,,SIG)                               C098500400003 
 SAMPLE     Nitrogen gas target in small gas cell with Kapton      C098500400004 
             entrance and exit windows.                            C098500400005 
@@ -134,13 +140,14 @@ ERR-ANALYS (DATA-ERR) Total uncertainties given include           C098500400012
            . integrated charge (3.0%),                            C098500400018 
            . decay rates (9.4%),                                  C098500400019 
            . gamma attenuation correction (3.0%).                 C098500400020 
-STATUS     Data taken from Table IV of reference.                 C098500400021 
-ENDBIB              19          0                                 C098500400022 
-NOCOMMON             0          0                                 C098500400023 
-DATA                 3          1                                 C098500400024 
-EN         DATA       DATA-ERR                                    C098500400025 
-MEV        MB         MB                                          C098500400026 
- 21.7       35.4        4.3                                       C098500400027 
-ENDDATA              3          0                                 C098500400028 
-ENDSUBENT           27          0                                 C098500499999 
+STATUS     (TABLE,,H.Laumer+,J,PR/C,8,483,1973)                   C098500400021 
+            Data taken from Table IV of reference.                C098500400022 
+ENDBIB              20          0                                 C098500400023 
+NOCOMMON             0          0                                 C098500400024 
+DATA                 3          1                                 C098500400025 
+EN         DATA       DATA-ERR                                    C098500400026 
+MEV        MB         MB                                          C098500400027 
+ 21.7       35.4        4.3                                       C098500400028 
+ENDDATA              3          0                                 C098500400029 
+ENDSUBENT           28          0                                 C098500499999 
 ENDENTRY             4          0                                 C098599999999 
