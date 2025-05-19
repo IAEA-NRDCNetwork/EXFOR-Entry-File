@@ -1,30 +1,78 @@
-ENTRY            12448   19830809                             00001244800000001 
-SUBENT        12448001   19830809                             00001244800100001 
-BIB                  6          7                                 1244800100002 
-INSTITUTE  (1USALAS)                                              1244800100003 
-REFERENCE  (J,JNE,4,38,5701)                                      1244800100004 
-AUTHOR     (R.B.LEACHMAN,H.W.SCHMIDT)                             1244800100005 
-TITLE      THE CROSS-SECTION FOR U238 FISSION BY FISSION NEUTRONS.1244800100006 
-STATUS     (SCSRS)                                                1244800100007 
-HISTORY    (760804T) TRANSLATED FROM SCISRS                       1244800100008 
-           (830809A) CONVERTED TO REACTION FORMALISM              1244800100009 
-ENDBIB               7          0                                 1244800100010 
-NOCOMMON             0          0                                 1244800100011 
-ENDSUBENT           10          0                                 1244800199999 
-SUBENT        12448002   19830809                             00001244800200001 
-BIB                  3          6                                 1244800200002 
-REACTION  1((92-U-238(N,F),,SIG,,FIS)/                            1244800200003 
-           (92-U-235(N,F),,NU))                                   1244800200004 
-          2(92-U-238(N,F),,SIG,,FIS)                              1244800200005 
-DETECTOR   (FISCH)    IONIZATION CHAMBER                          1244800200006 
-MONITOR    (92-U-235(N,F),,NU)                                    1244800200007 
-            BASED ON NU=2.46                                      1244800200008 
-ENDBIB               6          0                                 1244800200009 
-NOCOMMON             0          0                                 1244800200010 
-DATA                 6          1                                 1244800200011 
-EN-DUMMY   DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT     21244800200012 
-MEV        NO-DIM     NO-DIM     B          B          NO-DIM     1244800200013 
- 1.     +00 0.756      0.008      3.07   -01 5.     -03 2.46      1244800200014 
-ENDDATA              3          0                                 1244800200015 
-ENDSUBENT           14          0                                 1244800299999 
+ENTRY            12448   20220210                             149812448  0    1 
+SUBENT        12448001   20220210                             149812448  1    1 
+BIB                 13         52                                 12448  1    2 
+TITLE      The cross-section for U238 fission by fission neutrons 12448  1    3 
+AUTHOR     (R.B.Leachman,H.W.Schmitt)                             12448  1    4 
+REFERENCE  (J,JNE,4,38,1957) Main reference.                      12448  1    5 
+           (R,LA-1624,1953) Preliminary results and details.      12448  1    6 
+INSTITUTE  (1USALAS)                                              12448  1    7 
+FACILITY   (REAC,1USALAS) Los Alamos homogeneous reactor.         12448  1    8 
+INC-SPECT  A thermal-neutron flux of 3*10**7 neutrons/cm2/sec.    12448  1    9 
+DETECTOR   (IOCH) Double ionization chamber.                      12448  1   10 
+SAMPLE     The U238 in the form of U323808 of 110,000:1 isotopic  12448  1   11 
+           abundance was on a thin aluminum hemisphere which was  12448  1   12 
+           concentric with another thin but larger aluminum       12448  1   13 
+           hemisphere. The two aluminum hemispheres constitute    12448  1   14 
+           an ionization chamber which detects the U238 fission   12448  1   15 
+           fragments.                                             12448  1   16 
+METHOD     By means of measurements with a double ionization      12448  1   17 
+           chamber, the average fission cross section of U238     12448  1   18 
+           for neutrons from the fission of U235 was determined   12448  1   19 
+           in terms of nu, the average number of neutrons per     12448  1   20 
+           fission of U235. The number of fissions of U238 was    12448  1   21 
+           measured in one of the ionization chambers while the   12448  1   22 
+           number of fissions from the fission neutron source of  12448  1   23 
+           U235 was measured in the other chamber.                12448  1   24 
+ERR-ANALYS (DATA-ERR) The standard deviations of the mean of the  12448  1   25 
+           measurements and does not include uncertainties in     12448  1   26 
+           neutron scattering calculations, in the calculations   12448  1   27 
+           of unobserved U238 fissions, or in the method of       12448  1   28 
+           background measurements. The largest uncertainty in    12448  1   29 
+           these measurements is 235U mass and number of 235U     12448  1   30 
+           fission neutrons.                                      12448  1   31 
+CORRECTION Several corrections of several percent or less for     12448  1   32 
+           neutron absorption and neutron scattering must be      12448  1   33 
+           applied. Corrections are necessary for absorption and  12448  1   34 
+           scattering of thermal neutrons in the platinum and     12448  1   35 
+           Dural between the U deposit and the U235 disc.         12448  1   36 
+           Corrections are necessary because fission neutrons     12448  1   37 
+           were, in addition, scattered to the U238 by the        12448  1   38 
+           reactor face, the outside case of the chamber, and     12448  1   39 
+           the various hemispheres within the case. In addition,  12448  1   40 
+           the absorption of the fission neutrons by the cadmium  12448  1   41 
+           and the inner aluminum hemisphere was taken into       12448  1   42 
+           account. The largest of these corrections is 2 to 3%   12448  1   43 
+           for the scattering of neutrons from the hemisphere     12448  1   44 
+           containing U238; that is, a greater effective          12448  1   45 
+           thickness of U238 is "seen" by the deflected fission   12448  1   46 
+           neutrons than is "seen" by the unscattered neutrons.   12448  1   47 
+DECAY-DATA (92-U-238,4.59E9YR,A) Measured by authors.             12448  1   48 
+HISTORY    (19760804T) Translated from SCISRS.                    12448  1   49 
+           (19830809A) Converted to reaction formalism            12448  1   50 
+           (20220210A) BP: Updated to new date formats, lower     12448  1   51 
+           case. corrections according last EXFOR rules and       12448  1   52 
+           Dict. Added LA report, facility, incoming spectrum,    12448  1   53 
+           status, sample, method, corrections, error-analysis.   12448  1   54 
+ENDBIB              52          0                                 12448  1   55 
+NOCOMMON             0          0                                 12448  1   56 
+ENDSUBENT           55          0                                 12448  199999 
+SUBENT        12448002   20220210                             149812448  2    1 
+BIB                  5          9                                 12448  2    2 
+REACTION  1((92-U-238(N,F),,SIG,,FIS)*                            12448  2    3 
+           (92-U-235(N,F),,NU,,FIS))                              12448  2    4 
+          2(92-U-238(N,F),,SIG,,FIS)                              12448  2    5 
+ASSUMED    (ASSUM,92-U-235(N,F),,NU)                              12448  2    6 
+REL-REF    (R,,D.J.Hughes+,R,BNL-325,1955) U-235 nubar values.    12448  2    7 
+STATUS     (TABLE) page 43 of the main reference.                 12448  2    8 
+HISTORY    (20220210A) BP: Corrected fission neutron energies     12448  2    9 
+           from 1 to 2 MeV, added monitor reference. Corrected    12448  2   10 
+           first reaction from ratio to product and updated data. 12448  2   11 
+ENDBIB               9          0                                 12448  2   12 
+NOCOMMON             0          0                                 12448  2   13 
+DATA                 6          1                                 12448  2   14 
+EN-DUMMY   DATA      1DATA-ERR  1DATA      2DATA-ERR  2ASSUM      12448  2   15 
+MEV        B          B          B          B          NO-DIM     12448  2   16 
+         2.      0.756      0.008       1.86     5.E-03       2.4612448  2   17 
+ENDDATA              3          0                                 12448  2   18 
+ENDSUBENT           17          0                                 12448  299999 
 ENDENTRY             2          0                                 1244899999999 
