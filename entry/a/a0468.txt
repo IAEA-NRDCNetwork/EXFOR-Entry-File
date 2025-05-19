@@ -1,85 +1,97 @@
-ENTRY            A0468   20140225                             A081A046800000001 
-SUBENT        A0468001   20140225                             A081A046800100001 
-BIB                 13         24                                 A046800100002 
-TITLE      A method for the production of iron-52 with a very     A046800100003 
-           low iron-55 contamination.                             A046800100004 
-AUTHOR     (J.Zweit,S.Downey,H.Sharma)                            A046800100005 
-REFERENCE  (J,ARI,39,1197,1988)                                   A046800100006 
-INSTITUTE  (2UK BIR)                                              A046800100007 
-           (2UK MAN)                                              A046800100008 
-FACILITY   (CYCLO,2UK BIR)                                        A046800100009 
-DETECTOR   (GELI)                                                 A046800100010 
-           (HPGE)                                                 A046800100011 
-ANALYSIS   (AREA)                                                 A046800100012 
-METHOD     (ACTIV,EXTB,CHSEP)                                     A046800100013 
-SAMPLE     The chemical form of the ORNL material was Cr(2)O(3)   A046800100014 
-           with an enrichment of 96.8% whereas the Russian        A046800100015 
-           material was elemental chromium with an                A046800100016 
-           enrichment of 96.4%.                                   A046800100017 
-CORRECTION The data are corrected for decay occuring between the  A046800100018 
-           end of bombardment (EOB) and the time of counting.     A046800100019 
-ERR-ANALYS (DATA-ERR).The uncertainty is reported by authors.     A046800100020 
-STATUS     (TABLE)  Table 2 of Appl.Radiat.Isot.39(1988)1197      A046800100021 
-HISTORY    (19900618C)                                            A046800100022 
-           (19901226U)                                            A046800100023 
-           (20140225A) SD: Updated to new date formats,lower case.A046800100024 
-            Corrections according last EXFOR rules and Dict.      A046800100025 
-            SF9=EXP deleted from Subent 002. Subent 3 was added.  A046800100026 
-ENDBIB              24          0                                 A046800100027 
-NOCOMMON             0          0                                 A046800100028 
-ENDSUBENT           27          0                                 A046800199999 
-SUBENT        A0468002   20140225                             A081A046800200001 
-BIB                  4         23                                 A046800200002 
-REACTION  1(24-CR-50(A,2N)26-FE-52-G,,TTY,,PHY)                   A046800200003 
-          2(24-CR-50(A,X)26-FE-55,,TTY,,PHY)                      A046800200004 
-          3(24-CR-50(A,X)25-MN-52,,TTY,,PHY)                      A046800200005 
-          4(24-CR-50(A,X)25-MN-54,,TTY,,PHY)                      A046800200006 
-          6(24-CR-50(A,X)24-CR-49,,TTY,,PHY)                      A046800200007 
-          7(24-CR-50(A,X)24-CR-51,,TTY,,PHY)                      A046800200008 
-          8(24-CR-50(A,X)23-V-48,,TTY,,PHY)                       A046800200009 
-RAD-DET   1(26-FE-52-G,DG)                                        A046800200010 
-          2(26-FE-55,DG)                                          A046800200011 
-          3(25-MN-52-G,DG)                                        A046800200012 
-          4(25-MN-54,DG)                                          A046800200013 
-          6(24-CR-49,DG)                                          A046800200014 
-          7(24-CR-51,DG)                                          A046800200015 
-          8(23-V-48,DG)                                           A046800200016 
-DECAY-DATA1(26-FE-52-G,8.2HR,DG,169.)                             A046800200017 
-          2(26-FE-55,2.6YR,DG,5.9)                                A046800200018 
-          3(25-MN-52-G,5.7D,DG,744.)                              A046800200019 
-          4(25-MN-54,312.D,DG,835.)                               A046800200020 
-          6(24-CR-49,42.MIN,DG,153.)                              A046800200021 
-          7(24-CR-51,28.D,DG,320.)                                A046800200022 
-          8(23-V-48,16.D,DG,984.)                                 A046800200023 
-HISTORY    (20140225A) SD: REACTION code with pointer 5 moved     A046800200024 
-            to Subent 3. SF4=Fe-53 -> Fe-55 in REACTION (2).      A046800200025 
-ENDBIB              23          0                                 A046800200026 
-NOCOMMON             0          0                                 A046800200027 
-DATA                16          1                                 A046800200028 
-EN-MIN     EN-MAX     DATA      1DATA-ERR  1DATA      2DATA-ERR  2A046800200029 
-DATA      3DATA-ERR  3DATA      4DATA-ERR  4DATA      6DATA-ERR  6A046800200030 
-DATA      7DATA-ERR  7DATA      8DATA-ERR  8                      A046800200031 
-MEV        MEV        MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR A046800200032 
-MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR A046800200033 
-MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR                       A046800200034 
-        20.        38.       163.        13.      0.013      0.002A046800200035 
-       408.        38.      0.315      0.041     13924.      1398.A046800200036 
-       28.3        2.4       0.91       0.28                      A046800200037 
-ENDDATA              9          0                                 A046800200038 
-ENDSUBENT           37          0                                 A046800299999 
-SUBENT        A0468003   20140225                             A081A046800300001 
-BIB                  4          5                                 A046800300002 
-REACTION   (24-CR-50(A,X)25-MN-56,,TTY,,PHY)                      A046800300003 
-RAD-DET    (25-MN-56,DG)                                          A046800300004 
-DECAY-DATA (25-MN-54,312.D,DG,835.)                               A046800300005 
-HISTORY    (20140225T) SD: REACTION code with pointer 5 moved     A046800300006 
-            FROM sUBENT 2 to Subent 3.                            A046800300007 
-ENDBIB               5          0                                 A046800300008 
-NOCOMMON             0          0                                 A046800300009 
-DATA                 4          1                                 A046800300010 
-EN-MIN     EN-MAX     DATA       DATA-ERR                         A046800300011 
-MEV        MEV        MUCI/MUAHR MUCI/MUAHR                       A046800300012 
-        20.        38.        3.1        0.9                      A046800300013 
-ENDDATA              3          0                                 A046800300014 
-ENDSUBENT           13          0                                 A046800399999 
+ENTRY            A0468   20180527                             A090A0468  0    1 
+SUBENT        A0468001   20180527                             A090A0468  1    1 
+BIB                 12         24                                 A0468  1    2 
+TITLE      A method for the production of iron-52 with a very     A0468  1    3 
+           low iron-55 contamination                              A0468  1    4 
+AUTHOR     (J.Zweit,S.Downey,H.Sharma)                            A0468  1    5 
+REFERENCE  (J,ARI,39,1197,1988)                                   A0468  1    6 
+INSTITUTE  (2UK BIR)                                              A0468  1    7 
+           (2UK MAN)                                              A0468  1    8 
+FACILITY   (CYCLO,2UK BIR)                                        A0468  1    9 
+DETECTOR   (GELI)                                                 A0468  1   10 
+           (HPGE)                                                 A0468  1   11 
+METHOD     (ACTIV,EXTB,CHSEP)                                     A0468  1   12 
+SAMPLE     The chemical form of the ORNL material was Cr(2)O(3)   A0468  1   13 
+           with an enrichment of 96.8% whereas the Russian        A0468  1   14 
+           material was elemental chromium with an                A0468  1   15 
+           enrichment of 96.4%.                                   A0468  1   16 
+CORRECTION The data are corrected for decay occurring between the A0468  1   17 
+           end of bombardment (EOB) and the time of counting.     A0468  1   18 
+ERR-ANALYS (DATA-ERR) No information about source of uncertaintiesA0468  1   19 
+STATUS     (TABLE)  Table 2 of Appl.Radiat.Isot.39(1988)1197      A0468  1   20 
+HISTORY    (19900618C)                                            A0468  1   21 
+           (19901226U)                                            A0468  1   22 
+           (20140225A) SD: Updated to new date format, lower case.A0468  1   23 
+            SF9=EXP deleted from Subent 002. Subent 3 was added.  A0468  1   24 
+           (20180527A) SD: REACTION code was updated according to A0468  1   25 
+           MEMO CP-D/933rev. in Subents 002-03.                   A0468  1   26 
+ENDBIB              24          0                                 A0468  1   27 
+NOCOMMON             0          0                                 A0468  1   28 
+ENDSUBENT           27          0                                 A0468  199999 
+SUBENT        A0468002   20180527                             A090A0468  2    1 
+BIB                  3         32                                 A0468  2    2 
+REACTION  1(24-CR-OXI(A,X)26-FE-52-G,,TTY,,EOB/MSC)               A0468  2    3 
+            EOB yield for 50Cr2O3 without irradiation time        A0468  2    4 
+            specification                                         A0468  2    5 
+          2(24-CR-OXI(A,X)26-FE-55,,TTY,,EOB/MSC)                 A0468  2    6 
+            EOB yield for 50Cr2O3 without irradiation time        A0468  2    7 
+            specification                                         A0468  2    8 
+          3(24-CR-OXI(A,X)25-MN-52,,TTY,,EOB/MSC)                 A0468  2    9 
+            EOB yield for 50Cr2O3 without irradiation time        A0468  2   10 
+            specification                                         A0468  2   11 
+          4(24-CR-OXI(A,X)25-MN-54,,TTY,,EOB/MSC)                 A0468  2   12 
+            EOB yield for 50Cr2O3 without irradiation time        A0468  2   13 
+            specification                                         A0468  2   14 
+          6(24-CR-OXI(A,X)24-CR-49,,TTY,,EOB/MSC)                 A0468  2   15 
+            EOB yield for 50Cr2O3 without irradiation time        A0468  2   16 
+            specification                                         A0468  2   17 
+          7(24-CR-OXI(A,X)24-CR-51,,TTY,,EOB/MSC)                 A0468  2   18 
+            EOB yield for 50Cr2O3 without irradiation time        A0468  2   19 
+            specification                                         A0468  2   20 
+          8(24-CR-OXI(A,X)23-V-48,,TTY,,EOB/MSC)                  A0468  2   21 
+            EOB yield for 50Cr2O3 without irradiation time        A0468  2   22 
+            specification                                         A0468  2   23 
+DECAY-DATA1(26-FE-52-G,8.2HR,DG,169.)                             A0468  2   24 
+          2(26-FE-55,2.6YR,DG,5.9)                                A0468  2   25 
+          3(25-MN-52-G,5.7D,DG,744.)                              A0468  2   26 
+          4(25-MN-54,312.D,DG,835.)                               A0468  2   27 
+          6(24-CR-49,42.MIN,DG,153.)                              A0468  2   28 
+          7(24-CR-51,28.D,DG,320.)                                A0468  2   29 
+          8(23-V-48,16.D,DG,984.)                                 A0468  2   30 
+HISTORY    (20140225A) SD: REACTION code with pointer 5 moved     A0468  2   31 
+            to Subent 003. SF4=Fe-53 -> Fe-55 in REACTION (2).    A0468  2   32 
+           (20180527A) SD: SF1=Cr-50 -> Cr-OXI; SF8=PHY -> EOB/MSCA0468  2   33 
+            in REACTION code; SF3=2N -> X in REACTION code (1).   A0468  2   34 
+ENDBIB              32          0                                 A0468  2   35 
+NOCOMMON             0          0                                 A0468  2   36 
+DATA                16          1                                 A0468  2   37 
+EN-MIN     EN-MAX     DATA      1DATA-ERR  1DATA      2DATA-ERR  2A0468  2   38 
+DATA      3DATA-ERR  3DATA      4DATA-ERR  4DATA      6DATA-ERR  6A0468  2   39 
+DATA      7DATA-ERR  7DATA      8DATA-ERR  8                      A0468  2   40 
+MEV        MEV        MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR A0468  2   41 
+MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR A0468  2   42 
+MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR MUCI/MUAHR                       A0468  2   43 
+        20.        38.       163.        13.      0.013      0.002A0468  2   44 
+       408.        38.      0.315      0.041     13924.      1398.A0468  2   45 
+       28.3        2.4       0.91       0.28                      A0468  2   46 
+ENDDATA              9          0                                 A0468  2   47 
+ENDSUBENT           46          0                                 A0468  299999 
+SUBENT        A0468003   20180527                             A090A0468  3    1 
+BIB                  3          8                                 A0468  3    2 
+REACTION   (24-CR-OXI(A,X)25-MN-56,,TTY,,EOB/MSC)                 A0468  3    3 
+            EOB yield for 50Cr2O3 without irradiation time        A0468  3    4 
+            specification                                         A0468  3    5 
+DECAY-DATA (25-MN-56,2.6HR,DG,1811.)                              A0468  3    6 
+HISTORY    (20140225T) SD: REACTION code with pointer 5 moved     A0468  3    7 
+            from Subent 2 to Subent 3.                            A0468  3    8 
+           (20180527A) SD: SF1=Cr-50 -> Cr-OXI; SF8=PHY -> EOB/MSCA0468  3    9 
+            in REACTION code. DECAY-DATA corrected.               A0468  3   10 
+ENDBIB               8          0                                 A0468  3   11 
+NOCOMMON             0          0                                 A0468  3   12 
+DATA                 4          1                                 A0468  3   13 
+EN-MIN     EN-MAX     DATA       DATA-ERR                         A0468  3   14 
+MEV        MEV        MUCI/MUAHR MUCI/MUAHR                       A0468  3   15 
+        20.        38.        3.1        0.9                      A0468  3   16 
+ENDDATA              3          0                                 A0468  3   17 
+ENDSUBENT           16          0                                 A0468  399999 
 ENDENTRY             3          0                                 A046899999999 
