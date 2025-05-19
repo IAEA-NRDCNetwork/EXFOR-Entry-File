@@ -1,0 +1,91 @@
+ENTRY            31855   20220908                             32083185500000001 
+SUBENT        31855001   20220908                             32083185500100001 
+BIB                 12         30                                 3185500100002 
+TITLE      Spectrum averaged cross section measurements of        3185500100003 
+           lutetium using standard 252Cf neutron source           3185500100004 
+AUTHOR     (M.Schulc, M.Kostal, T.Czakoj, E.Novak, J.Simon,       3185500100005 
+           N.Hynkova, R.Capote)                                   3185500100006 
+INSTITUTE  (3CZRUJV,3ZZZIAE)                                      3185500100007 
+REFERENCE  (J,ARI,188,110378,2022)                                3185500100008 
+INC-SOURCE (CF252) average total emission of 1.93E+08 n/sec.      3185500100009 
+SAMPLE     The thin nickel foils (2.5 cm X 2.5 cm X 0.001 cm) were3185500100010 
+           attached in front of and behind the lutetium foil as a 3185500100011 
+           neutron flux monitor.                                  3185500100012 
+           The lutetium activation foil of size 2.5 cm X 2.5 cm of3185500100013 
+           thickness of 0.1 cm was attached to the surface of the 3185500100014 
+           irradiation tube to achieve maximal neutron flux.      3185500100015 
+DETECTOR   (HPGE)                                                 3185500100016 
+METHOD     (ACTIV) tirr = 98.91 d, tcool = 10 min, tmeas = 3.84 d.3185500100017 
+CORRECTION Corrected for                                          3185500100018 
+            - spectral shift effect                               3185500100019 
+            - flux loss                                           3185500100020 
+            - self-shielding                                      3185500100021 
+            by using MCNP6.2                                      3185500100022 
+ERR-ANALYS (ERR-T) Total experimental uncertainty                 3185500100023 
+            (received from M.Schulc, 2022-09-09)                  3185500100024 
+           (ERR-S) statistical uncertainty of the net peak area   3185500100025 
+           (ERR-1) total number of emitted neutrons 1.2%          3185500100026 
+           (ERR-2) Sample position                  1.6%          3185500100027 
+           (ERR-3) 250Cf neutron emission           1.2%          3185500100028 
+           (ERR-4) detector efficiency              1.9%          3185500100029 
+STATUS     (APRVD) Proof-read by Martin Schulc (2022-09-12)       3185500100030 
+           (TABLE) Table 4 of Appl.Rad.Isot.188(2022)110378       3185500100031 
+HISTORY    (20220908C) VT                                         3185500100032 
+ENDBIB              30          0                                 3185500100033 
+COMMON               4          3                                 3185500100034 
+ERR-1      ERR-2      ERR-3      ERR-4                            3185500100035 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         3185500100036 
+        1.2        1.6        1.2        1.9                      3185500100037 
+ENDCOMMON            3          0                                 3185500100038 
+ENDSUBENT           37          0                                 3185500199999 
+SUBENT        31855002   20220908                             32083185500200001 
+BIB                  3          4                                 3185500200002 
+REACTION   (71-LU-175(N,2N)71-LU-174,,SIG,,FIS)                   3185500200003 
+ANALYSIS   Sum of 175Lu(n,2n)174gLu and 175Lu(n,2n)174mLu SACS    3185500200004 
+DECAY-DATA (71-LU-174-G,3.31YR,DG,1241.847,0.0514)                3185500200005 
+           (71-LU-174-M,142.D,DG,67.058,0.0725)                   3185500200006 
+ENDBIB               4          0                                 3185500200007 
+NOCOMMON             0          0                                 3185500200008 
+DATA                 4          1                                 3185500200009 
+KT-DUMMY   DATA       ERR-T      ERR-S                            3185500200010 
+MEV        MB         PER-CENT   PER-CENT                         3185500200011 
+       1.42       7.02        3.7        2.2                      3185500200012 
+ENDDATA              3          0                                 3185500200013 
+ENDSUBENT           12          0                                 3185500299999 
+SUBENT        31855003   20220908                             32083185500300001 
+BIB                  2          2                                 3185500300002 
+REACTION   (71-LU-175(N,3N)71-LU-173,,SIG,,FIS)                   3185500300003 
+DECAY-DATA (71-LU-173,1.37YR,DG,272.105,0.212)                    3185500300004 
+ENDBIB               2          0                                 3185500300005 
+NOCOMMON             0          0                                 3185500300006 
+DATA                 4          1                                 3185500300007 
+KT-DUMMY   DATA       ERR-T      ERR-S                            3185500300008 
+MEV        MB         PER-CENT   PER-CENT                         3185500300009 
+       1.42      0.131        6.1        5.3                      3185500300010 
+ENDDATA              3          0                                 3185500300011 
+ENDSUBENT           10          0                                 3185500399999 
+SUBENT        31855004   20220908                             32083185500400001 
+BIB                  2          2                                 3185500400002 
+REACTION   (71-LU-175(N,P)70-YB-175,,SIG,,FIS)                    3185500400003 
+DECAY-DATA (70-YB-175,4.185D,DG,396.329,0.132)                    3185500400004 
+ENDBIB               2          0                                 3185500400005 
+NOCOMMON             0          0                                 3185500400006 
+DATA                 4          1                                 3185500400007 
+KT-DUMMY   DATA       ERR-T      ERR-S                            3185500400008 
+MEV        MB         PER-CENT   PER-CENT                         3185500400009 
+       1.42   6.81E-02        3.4        1.5                      3185500400010 
+ENDDATA              3          0                                 3185500400011 
+ENDSUBENT           10          0                                 3185500499999 
+SUBENT        31855005   20220908                             32083185500500001 
+BIB                  2          2                                 3185500500002 
+REACTION   (71-LU-176(N,INL)71-LU-176-M,,SIG,,FIS)                3185500500003 
+DECAY-DATA (71-LU-176-M,3.664HR,DG,88.361,0.089)                  3185500500004 
+ENDBIB               2          0                                 3185500500005 
+NOCOMMON             0          0                                 3185500500006 
+DATA                 4          1                                 3185500500007 
+KT-DUMMY   DATA       ERR-T      ERR-S                            3185500500008 
+MEV        MB         PER-CENT   PER-CENT                         3185500500009 
+       1.42   7.10E+03        3.1        0.4                      3185500500010 
+ENDDATA              3          0                                 3185500500011 
+ENDSUBENT           10          0                                 3185500599999 
+ENDENTRY             5          0                                 3185599999999 

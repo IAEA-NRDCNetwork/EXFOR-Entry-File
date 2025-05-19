@@ -1,16 +1,16 @@
-ENTRY            32523   20110214                             31493252300000001 
-SUBENT        32523001   20110214                             31493252300100001 
-BIB                 12         24                                 3252300100002 
+ENTRY            32523   20220825                             32083252300000001 
+SUBENT        32523001   20220825                             32083252300100001 
+BIB                 12         25                                 3252300100002 
 TITLE      Measurement of small-angle elastic scattering of       3252300100003 
             fast neutrons on Zr and Nb nuclei                     3252300100004 
-INSTITUTE  (3CPRSIU)                                              3252300100005 
-REFERENCE  (W,WAN DAIRONG,199101)                                 3252300100006 
-AUTHOR     (Wan Dairong,Dai Yunsheng,Liang Xuecai,Cao Jianhua)    3252300100007 
+AUTHOR     (Wan Dairong, Dai Yunsheng, Liang Xuecai, Cao Jianhua) 3252300100005 
+INSTITUTE  (3CPRSIU)                                              3252300100006 
+REFERENCE  (W,WAN DAIRONG,1991)                                   3252300100007 
 FACILITY   (CCW,3CPRSIU) 400KV Cockcroft-Walton accelerator       3252300100008 
 INC-SOURCE (D-T)                                                  3252300100009 
-METHOD     (TOF) Associated particle time of flight               3252300100010 
-DETECTOR   (SCIN) ST-1701 liquid scintillation position-sensitive 3252300100011 
-            detector                                              3252300100012 
+DETECTOR   (SCIN) ST-1701 liquid scintillation position-sensitive 3252300100010 
+            detector                                              3252300100011 
+METHOD     (TOF) Associated particle time of flight               3252300100012 
 CORRECTION Data corrected for                                     3252300100013 
                 effects of finite geometry                        3252300100014 
                 neutron flux attenuation                          3252300100015 
@@ -20,18 +20,19 @@ ERR-ANALYS (ERR-T) The total error is 6.5-7.5% including:         3252300100017
            (ERR-1) the error of various corrections (~3%)         3252300100019 
 STATUS     (TABLE) Data from the author                           3252300100020 
            (APRVD) Proof-copy was approved by authors             3252300100021 
-HISTORY    (19910612C)Compiled by author, corrected and checked   3252300100022 
+HISTORY    (19910612C) Compiled by author, corrected and checked  3252300100022 
             by Liang Qichang and Yu Hongwei                       3252300100023 
-           (20100328A) SD:Updated to new date formats,lower case. 3252300100024 
+           (20100328A) SD: Updated to new date formats,lower case.3252300100024 
                       Cosmetic changes and corrections            3252300100025 
            (20110214U) On. DETECTOR: PS -> SCIN                   3252300100026 
-ENDBIB              24          0                                 3252300100027 
-COMMON               2          3                                 3252300100028 
-EN         ERR-1                                                  3252300100029 
-MEV        PER-CENT                                               3252300100030 
- 14.7       3.                                                    3252300100031 
-ENDCOMMON            3          0                                 3252300100032 
-ENDSUBENT           31          0                                 3252300199999 
+           (20220825A) VT. Revision in 003.                       3252300100027 
+ENDBIB              25          0                                 3252300100028 
+COMMON               2          3                                 3252300100029 
+EN         ERR-1                                                  3252300100030 
+MEV        PER-CENT                                               3252300100031 
+ 14.7       3.                                                    3252300100032 
+ENDCOMMON            3          0                                 3252300100033 
+ENDSUBENT           32          0                                 3252300199999 
 SUBENT        32523002   20100328                             31473252300200001 
 BIB                  1          1                                 3252300200002 
 REACTION   (40-ZR-0(N,EL)40-ZR-0,,DA)                             3252300200003 
@@ -49,20 +50,25 @@ ADEG       MB/SR      MB/SR                                       3252300200008
       14.0      2850.       180.                                  3252300200015 
 ENDDATA              9          0                                 3252300200016 
 ENDSUBENT           15          0                                 3252300299999 
-SUBENT        32523003   20100328                             31473252300300001 
-BIB                  1          1                                 3252300300002 
-REACTION   (41-NB-93(N,EL)41-NB-93,,DA)                           3252300300003 
-ENDBIB               1          0                                 3252300300004 
-NOCOMMON             0          0                                 3252300300005 
-DATA                 3          6                                 3252300300006 
-ANG        DATA       ERR-T                                       3252300300007 
-ADEG       MB/SR      MB/SR                                       3252300300008 
-        3.6     6210.       410.                                  3252300300009 
-        6.7     5450.       350.                                  3252300300010 
-        8.5     5260.       340.                                  3252300300011 
-       10.3     5040.       310.                                  3252300300012 
-       12.0     4620.       290.                                  3252300300013 
-       14.0     3570.       230.                                  3252300300014 
-ENDDATA              8          0                                 3252300300015 
-ENDSUBENT           14          0                                 3252300399999 
+SUBENT        32523003   20220825                             32083252300300001 
+BIB                  4          6                                 3252300300002 
+REACTION   (41-NB-93(N,EL)41-NB-93,EXL,DA)                        3252300300003 
+CRITIQUE   Comment by S.Simakov: possible inclusion of inelastic  3252300300004 
+           scattering below Ex ~> 0.1 MeV.                        3252300300005 
+REL-REF    (C,,S.Simakov+,S,INDC(NDS)-0857,91,2022)               3252300300006 
+HISTORY    (20220825A) VT. REACTION: SF5->EXL, CRITIQUE, REL-REF  3252300300007 
+           information added.                                     3252300300008 
+ENDBIB               6          0                                 3252300300009 
+NOCOMMON             0          0                                 3252300300010 
+DATA                 3          6                                 3252300300011 
+ANG        DATA       ERR-T                                       3252300300012 
+ADEG       MB/SR      MB/SR                                       3252300300013 
+        3.6     6210.       410.                                  3252300300014 
+        6.7     5450.       350.                                  3252300300015 
+        8.5     5260.       340.                                  3252300300016 
+       10.3     5040.       310.                                  3252300300017 
+       12.0     4620.       290.                                  3252300300018 
+       14.0     3570.       230.                                  3252300300019 
+ENDDATA              8          0                                 3252300300020 
+ENDSUBENT           19          0                                 3252300399999 
 ENDENTRY             3          0                                 3252399999999 
