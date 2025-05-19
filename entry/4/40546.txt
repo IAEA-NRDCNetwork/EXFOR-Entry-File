@@ -1,6 +1,6 @@
-ENTRY            40546   20180325                             417840546  0    1 
-SUBENT        40546001   20180325                             417840546  1    1 
-BIB                 11         25                                 40546  1    2 
+ENTRY            40546   20191213                             418540546  0    1 
+SUBENT        40546001   20191213                             418540546  1    1 
+BIB                  9         23                                 40546  1    2 
 INSTITUTE  (4RUSRI)                                               40546  1    3 
 REFERENCE  (J,AE,46,416,1979)  Issue 6                            40546  1    4 
            (J,SJA,46,475,1979) Engl.transl.of J,AE,46,416,1979    40546  1    5 
@@ -10,71 +10,107 @@ AUTHOR     (B.M.Aleksandrov,Yu.A.Nemilov,Yu.A.Selitskii,          40546  1    6
 TITLE      Absolute measurements of the cross-section for the     40546  1    9 
            fission of 241Am by 2.5-MeV neutrons                   40546  1   10 
 FACILITY   (LINAC,4RUSRI)        Low-voltage accelerator          40546  1   11 
-INC-SOURCE (D-D)  70-80 keV deuterons                             40546  1   12 
-DETECTOR   (SOLST)  Surface-barrier semiconductor detector        40546  1   13 
-           (SOLST)  Mica detector                                 40546  1   14 
-MONITOR      Absolute measurements                                40546  1   15 
-STATUS     (NCHKD)                                                40546  1   16 
-CORRECTION   Those were made    on  spontaneous fission = 1.9 % , 40546  1   17 
-             on detector un-sensitivity to small-angle fragments  40546  1   18 
-             = 4  % ,  on  He-3 = 1.5 % , on target non-spherical 40546  1   19 
-             shape = 1.5 % , on fission by scattered neutrons     40546  1   20 
-             = 3 % , on Pu-239 impurity = 0.5 % , on geometry     40546  1   21 
-             =0.5 % .                                             40546  1   22 
-HISTORY    (19800405C)                                            40546  1   23 
-           (20180325U) M.M. Upper -> lower case correction.       40546  1   24 
-           Dates were corrected for 4-digits year.                40546  1   25 
-           Ref. SJA,46,475,1979 was added.                        40546  1   26 
-           STATUS, BIB information was added                      40546  1   27 
-ENDBIB              25          0                                 40546  1   28 
-COMMON               1          3                                 40546  1   29 
-EN                                                                40546  1   30 
-MEV                                                               40546  1   31 
- 2.5                                                              40546  1   32 
-ENDCOMMON            3          0                                 40546  1   33 
-ENDSUBENT           32          0                                 40546  199999 
-SUBENT        40546002   20180325                             417840546  2    1 
-BIB                  5          7                                 40546  2    2 
+INC-SOURCE (D-D) D(d,n)He-3, 70-80 keV deuteron beam              40546  1   12 
+DETECTOR   (SOLST)  Surface-barrier Si semiconductor detector     40546  1   13 
+                    for accompanying hellion detection            40546  1   14 
+           (SOLST)  Mica detector for fission fragments detection.40546  1   15 
+             96 % efficiency.                                     40546  1   16 
+METHOD     (ASSOP)                                                40546  1   17 
+HISTORY    (19800405C)                                            40546  1   18 
+           (20180325U) M.M. Upper -> lower case correction.       40546  1   19 
+           Dates were corrected for 4-digits year.                40546  1   20 
+           Ref. SJA,46,475,1979 was added.                        40546  1   21 
+           STATUS, BIB information was added                      40546  1   22 
+           (20191213A) Code NCHKD was deleted.                    40546  1   23 
+            Subent 002 was corrected.                             40546  1   24 
+            BIB information was updated .                         40546  1   25 
+ENDBIB              23          0                                 40546  1   26 
+COMMON               1          3                                 40546  1   27 
+EN                                                                40546  1   28 
+MEV                                                               40546  1   29 
+ 2.5                                                              40546  1   30 
+ENDCOMMON            3          0                                 40546  1   31 
+ENDSUBENT           30          0                                 40546  199999 
+SUBENT        40546002   20191213                             418540546  2    1 
+BIB                  9         32                                 40546  2    2 
 REACTION   (95-AM-241(N,F),,SIG)                                  40546  2    3 
 DECAY-DATA (95-AM-241,432.7YR) 432.7+-0.6 yr.                     40546  2    4 
 SAMPLE      Thin film, Pu-239 content  0.5 % , mass = 2754+-25    40546  2    5 
-           microgram, thickness  300 microgram/cm2                40546  2    6 
-ERR-ANALYS (ERR-S) Statistical error                              40546  2    7 
-           (ERR-T) Total error                                    40546  2    8 
-STATUS     (TABLE) Text, page 475 of SJA,46,475,1979              40546  2    9 
-ENDBIB               7          0                                 40546  2   10 
-NOCOMMON             0          0                                 40546  2   11 
-DATA                 3          1                                 40546  2   12 
-DATA       ERR-T      ERR-S                                       40546  2   13 
-B          B          PER-CENT                                    40546  2   14 
- 1.98       0.07       2.2                                        40546  2   15 
-ENDDATA              3          0                                 40546  2   16 
-ENDSUBENT           15          0                                 40546  299999 
-SUBENT        40546003   20180325                             417840546  3    1 
-BIB                  3          3                                 40546  3    2 
+           microgram, thickness < 300 microgram/cm2               40546  2    6 
+MONITOR     U-238 and U-238 were monitors.                        40546  2    7 
+CORRECTION - spontaneous fission of target - 1.9+-0.2 % ,         40546  2    8 
+           - on mica detector insensitivity to small-angle        40546  2    9 
+             fragments - 4+-1  % ,                                40546  2   10 
+           - He-3 separation from complete spectrum = 1.5+-1.0 % ,40546  2   11 
+           - target non-spherical shape = 1.5+-0.2 % ,            40546  2   12 
+           - fission by scattered neutrons - 3+-1 % ,             40546  2   13 
+           - Pu-239 impurity - 0.5+-0.1 % ,                       40546  2   14 
+           - geometry and neutrons angular distribution -         40546  2   15 
+             0.3+-0.1 % .                                         40546  2   16 
+REL-REF    (A,40636008,M.L.Kazarinova+,J,AE,8,139,1960)           40546  2   17 
+             1.95+-0.2 b                                          40546  2   18 
+           (A,12572010,C.Bowman+,J,PR,166,1219,1968)              40546  2   19 
+             1.96+-0.2 b                                          40546  2   20 
+           (A,40012010,E.F.Fomushkin+,J,YF,10,917,1969)           40546  2   21 
+             2.05+-0.07 b                                         40546  2   22 
+           (A,40010002,D.L.Shpak+,R,YFI-8,4,1969)                 40546  2   23 
+             1.9+-0.1 b                                           40546  2   24 
+ERR-ANALYS (ERR-S) Statistical error                              40546  2   25 
+           (ERR-1) Error in determining of distance from neutron  40546  2   26 
+           source to sample.                                      40546  2   27 
+           (ERR-T) Total error                                    40546  2   28 
+STATUS     (TABLE) Text, p.475 of J.Sov.At.Energy,v.46,p.475,1979 40546  2   29 
+           (DEP,40546003) U-235 CS                                40546  2   30 
+           (DEP,40546003) U-238 CS                                40546  2   31 
+HISTORY    (20191213A) CORRECTION lines were moved from Subent 00140546  2   32 
+           and corrected.                                         40546  2   33 
+           ERR-1, REL-REFs were added.                            40546  2   34 
+ENDBIB              32          0                                 40546  2   35 
+COMMON               1          3                                 40546  2   36 
+ERR-HL                                                            40546  2   37 
+YR                                                                40546  2   38 
+ 0.6                                                              40546  2   39 
+ENDCOMMON            3          0                                 40546  2   40 
+DATA                 4          1                                 40546  2   41 
+DATA       ERR-T      ERR-S      ERR-1                            40546  2   42 
+B          B          PER-CENT   PER-CENT                         40546  2   43 
+ 1.98       0.07       2.2        1.7                             40546  2   44 
+ENDDATA              3          0                                 40546  2   45 
+ENDSUBENT           44          0                                 40546  299999 
+SUBENT        40546003   20191213                             418540546  3    1 
+BIB                  6          8                                 40546  3    2 
 REACTION   (92-U-235(N,F),,SIG)                                   40546  3    3 
-ERR-ANALYS (DATA-ERR) Total error                                 40546  3    4 
-STATUS     (TABLE) Text, page 475 of SJA,46,475,1979              40546  3    5 
-ENDBIB               3          0                                 40546  3    6 
-NOCOMMON             0          0                                 40546  3    7 
-DATA                 2          1                                 40546  3    8 
-DATA       DATA-ERR                                               40546  3    9 
-B          B                                                      40546  3   10 
- 1.27       0.05                                                  40546  3   11 
-ENDDATA              3          0                                 40546  3   12 
-ENDSUBENT           11          0                                 40546  399999 
-SUBENT        40546004   20180325                             417840546  4    1 
-BIB                  4          4                                 40546  4    2 
+SAMPLE      Natural U and U-235 20 mm in diameter placed in       40546  3    4 
+           briquette with Am targets                              40546  3    5 
+REL-REF    (A,40258002,I.M.Kuks+,C,73KIEV,4,18,1973)              40546  3    6 
+            And YFI-17,33,1974                                    40546  3    7 
+ERR-ANALYS (DATA-ERR) Total error                                 40546  3    8 
+STATUS     (TABLE) Text, p.475 of J.Sov.At.Energy,v.46,p.475,1979 40546  3    9 
+HISTORY    (20191213U) Sample information was updated             40546  3   10 
+ENDBIB               8          0                                 40546  3   11 
+NOCOMMON             0          0                                 40546  3   12 
+DATA                 2          1                                 40546  3   13 
+DATA       DATA-ERR                                               40546  3   14 
+B          B                                                      40546  3   15 
+ 1.27       0.05                                                  40546  3   16 
+ENDDATA              3          0                                 40546  3   17 
+ENDSUBENT           16          0                                 40546  399999 
+SUBENT        40546004   20191213                             418540546  4    1 
+BIB                  7          8                                 40546  4    2 
 REACTION   (92-U-238(N,F),,SIG)                                   40546  4    3 
-COMMENT      In reference  erroneously  given U-239               40546  4    4 
-ERR-ANALYS (DATA-ERR) Total error                                 40546  4    5 
-STATUS     (TABLE) Text, page 475 of SJA,46,475,1979              40546  4    6 
-ENDBIB               4          0                                 40546  4    7 
-NOCOMMON             0          0                                 40546  4    8 
-DATA                 2          1                                 40546  4    9 
-DATA       DATA-ERR                                               40546  4   10 
-B          B                                                      40546  4   11 
- 0.52       0.02                                                  40546  4   12 
-ENDDATA              3          0                                 40546  4   13 
-ENDSUBENT           12          0                                 40546  499999 
+SAMPLE      Natural U and U-235 20 mm in diameter placed in       40546  4    4 
+           briquette with Am targets                              40546  4    5 
+COMMENT      In reference  erroneously  given U-239               40546  4    6 
+REL-REF    (A,40081002,I.M.Kuks+,J,SJA,30,64,1971)                40546  4    7 
+ERR-ANALYS (DATA-ERR) Total error                                 40546  4    8 
+STATUS     (TABLE) Text, p.475 of J.Sov.At.Energy,v.46,p.475,1979 40546  4    9 
+HISTORY    (20191213U) Sample information was updated             40546  4   10 
+ENDBIB               8          0                                 40546  4   11 
+NOCOMMON             0          0                                 40546  4   12 
+DATA                 2          1                                 40546  4   13 
+DATA       DATA-ERR                                               40546  4   14 
+B          B                                                      40546  4   15 
+ 0.52       0.02                                                  40546  4   16 
+ENDDATA              3          0                                 40546  4   17 
+ENDSUBENT           16          0                                 40546  499999 
 ENDENTRY             4          0                                 4054699999999 
