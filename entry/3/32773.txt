@@ -1,0 +1,134 @@
+ENTRY            32773   20191217                             31963277300000001 
+SUBENT        32773001   20191217                             31963277300100001 
+BIB                 14         42                                 3277300100002 
+TITLE      Measurement of cross-sections for 14 MeV neutron       3277300100003 
+           interaction with 175Lu                                 3277300100004 
+AUTHOR     (Zhengwei Zhang, Qian Zhang, Shihong Chen,             3277300100005 
+           Bingjun Chen, Qiang Wang, Caifeng Lai, Kaihong Fang)   3277300100006 
+INSTITUTE  (3CPRLNZ,3CPRNPC)                                      3277300100007 
+REFERENCE  (J,ARI,132,61,2018)                                    3277300100008 
+           #doi:10.1016/j.apradiso.2017.11.017                    3277300100009 
+FACILITY   (NGEN,3CPRNPC) K-400 Intense Neutron Generator         3277300100010 
+INC-SOURCE (D-T) Neutron flux rate about 2E11 n/s                 3277300100011 
+SAMPLE     (71-LU-175,NAT=0.97401) Three samples Lu2O3 (powder    3277300100012 
+           of > 99.99% purity) were pressed into circular disks   3277300100013 
+           with a diameter of 1.27 cm, the thickness of samples   3277300100014 
+           was around 2 mm. Each sample was sandwiched between    3277300100015 
+           two monitor aluminum (99.99% purity and about 3 um     3277300100016 
+           thickness) foils.                                      3277300100017 
+DETECTOR   (HPGE) High efficiency HPGe detector with a relative   3277300100018 
+           efficiency of about 68% and an energy resolution of    3277300100019 
+           1.7 keV (FWHM) at 1.33 MeV. The detection efficiency   3277300100020 
+           was calibrated by the standard sources 60Co, 109Cd,    3277300100021 
+           137Cs, 152Eu, 226Ra, and 241Am.                        3277300100022 
+METHOD     (ACTIV) Irradiating time was about 240 min. The        3277300100023 
+           samples were placed at 0, 45 and 90 deg angles         3277300100024 
+           relative to the deuterium beam direction and centered  3277300100025 
+           about the T-Ti target at distance of 4.0 cm.           3277300100026 
+           (GSPEC) Off-line gamma-ray spectrometry                3277300100027 
+MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           3277300100028 
+            M.B.Chadwick+,ENDF/B-VIII.b5,2011                     3277300100029 
+CORRECTION Corrected for                                          3277300100030 
+            - neutron flux fluctuation  (K),                      3277300100031 
+            - geometry                 (Fg),                      3277300100032 
+            - coincidence sum effect   (Fc),                      3277300100033 
+            - gamma self-absorption    (Fs).                      3277300100034 
+ERR-ANALYS (ERR-T) The uncertainties mainly came from the         3277300100035 
+           detection efficiency and statistical uncertainty of    3277300100036 
+           counts of the full-energy gamma-ray peaks, and also    3277300100037 
+           including the other parts: correction factor F,        3277300100038 
+           neutron flux fluctuation factor K, decay constant,     3277300100039 
+           mass and corresponding geometric conditions.           3277300100040 
+           (ERR-1) Detection efficiency was about 2.0%            3277300100041 
+STATUS     (TABLE) Data were obtained from TABLE 3 of Applied     3277300100042 
+           Radiation and Isotopes,132,61,2018.                    3277300100043 
+HISTORY    (20191217C) Compiled by X4group (CNDC)                 3277300100044 
+ENDBIB              42          0                                 3277300100045 
+COMMON               1          3                                 3277300100046 
+ERR-1                                                             3277300100047 
+PER-CENT                                                          3277300100048 
+         2.                                                       3277300100049 
+ENDCOMMON            3          0                                 3277300100050 
+ENDSUBENT           49          0                                 3277300199999 
+SUBENT        32773002   20191217                             31963277300200001 
+BIB                  3         17                                 3277300200002 
+REACTION  1(71-LU-175(N,2N)71-LU-174-M,,SIG)                      3277300200003 
+          2(71-LU-175(N,2N)71-LU-174-G,,SIG)                      3277300200004 
+          3(71-LU-175(N,2N)71-LU-174,,SIG)                        3277300200005 
+DECAY-DATA1(71-LU-174-M,142.D,DG,992.0,0.00546)                   3277300200006 
+          2(71-LU-174-G,3.31YR,DG,1241.8,0.0546)                  3277300200007 
+CORRECTION Correction factors for the 175Lu(n,2n)174mLu at        3277300200008 
+           992.0 keV:                                             3277300200009 
+           En(MeV)  Fg         Fc         Fs         K            3277300200010 
+           14.1     1.0424     1.0000     1.0499     1.0008       3277300200011 
+           14.5     1.0401     1.0000     1.0486     1.0008       3277300200012 
+           14.7     1.0417     1.0000     1.0514     1.0008       3277300200013 
+           Correction factors for the 175Lu(n,2n)174gLu at        3277300200014 
+           1241.8 keV:                                            3277300200015 
+           En(MeV)  Fg         Fc         Fs         K            3277300200016 
+           14.1     1.0424     1.0002     1.0427     1.0001       3277300200017 
+           14.5     1.0401     1.0002     1.0416     1.0001       3277300200018 
+           14.7     1.0417     1.0002     1.0440     1.0001       3277300200019 
+ENDBIB              17          0                                 3277300200020 
+NOCOMMON             0          0                                 3277300200021 
+DATA                 9          3                                 3277300200022 
+EN         EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     23277300200023 
+DATA      3ERR-T     3MONIT                                       3277300200024 
+MEV        MEV        MB         MB         MB         MB         3277300200025 
+MB         MB         MB                                          3277300200026 
+       14.1        0.3       570.        39.      1433.        90.3277300200027 
+      2004.        65.      121.2                                 3277300200028 
+       14.5        0.3       581.        44.      1491.        98.3277300200029 
+      2073.        71.      116.0                                 3277300200030 
+       14.7        0.3       566.        42.      1411.        94.3277300200031 
+      1977.        68.      113.4                                 3277300200032 
+ENDDATA             10          0                                 3277300200033 
+ENDSUBENT           32          0                                 3277300299999 
+SUBENT        32773003   20191217                             31963277300300001 
+BIB                  3          8                                 3277300300002 
+REACTION   (71-LU-175(N,P)70-YB-175,,SIG)                         3277300300003 
+DECAY-DATA (70-YB-175,4.085D,DG,396.3,0.132)                      3277300300004 
+CORRECTION Correction factors for the 175Lu(n,p)175Yb at          3277300300005 
+           396.3 keV:                                             3277300300006 
+           En(MeV)  Fg         Fc         Fs         K            3277300300007 
+           14.1     1.0424     0.9950     1.1297     1.0002       3277300300008 
+           14.5     1.0401     0.9950     1.1263     1.0002       3277300300009 
+           14.7     1.0417     0.9950     1.1337     1.0002       3277300300010 
+ENDBIB               8          0                                 3277300300011 
+NOCOMMON             0          0                                 3277300300012 
+DATA                 5          3                                 3277300300013 
+EN         EN-ERR     DATA       ERR-T      MONIT                 3277300300014 
+MEV        MEV        MB         MB         MB                    3277300300015 
+       14.1        0.3        3.3        0.2      121.2           3277300300016 
+       14.5        0.3        4.1        0.3      116.0           3277300300017 
+       14.7        0.3        3.8        0.3      113.4           3277300300018 
+ENDDATA              5          0                                 3277300300019 
+ENDSUBENT           18          0                                 3277300399999 
+SUBENT        32773004   20191217                             31963277300400001 
+BIB                  3         15                                 3277300400002 
+REACTION   (71-LU-175(N,A)69-TM-172,,SIG)                         3277300400003 
+DECAY-DATA (69-TM-172,63.6HR,DG,1529.6,0.051,                     3277300400004 
+                             DG,1608.3,0.041)                     3277300400005 
+CORRECTION Correction factors for the 175Lu(n,a)172Tm at          3277300400006 
+           1529.6 keV:                                            3277300400007 
+           En(MeV)  Fg         Fc         Fs         K            3277300400008 
+           14.1     1.0424     1.0003     1.0382     1.0004       3277300400009 
+           14.5     1.0401     1.0003     1.0371     1.0004       3277300400010 
+           14.7     1.0417     1.0003     1.0393     1.0004       3277300400011 
+           Correction factors for the 175Lu(n,a)172Tm at          3277300400012 
+           1608.3 keV:                                            3277300400013 
+           En(MeV)  Fg         Fc         Fs         K            3277300400014 
+           14.1     1.0424     0.9956     1.0373     1.0004       3277300400015 
+           14.5     1.0401     0.9956     1.0363     1.0004       3277300400016 
+           14.7     1.0417     0.9956     1.0385     1.0004       3277300400017 
+ENDBIB              15          0                                 3277300400018 
+NOCOMMON             0          0                                 3277300400019 
+DATA                 5          3                                 3277300400020 
+EN         EN-ERR     DATA       ERR-T      MONIT                 3277300400021 
+MEV        MEV        MB         MB         MB                    3277300400022 
+       14.1        0.3        1.3        0.1      121.2           3277300400023 
+       14.5        0.3        1.4        0.1      116.0           3277300400024 
+       14.7        0.3        1.5        0.2      113.4           3277300400025 
+ENDDATA              5          0                                 3277300400026 
+ENDSUBENT           25          0                                 3277300499999 
+ENDENTRY             4          0                                 3277399999999 

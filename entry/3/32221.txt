@@ -1,8 +1,8 @@
-ENTRY            32221   20180411                             31843222100000001 
-SUBENT        32221001   20180411                             31843222100100001 
-BIB                 15         52                                 3222100100002 
+ENTRY            32221   20200527                             31963222100000001 
+SUBENT        32221001   20200527                             31963222100100001 
+BIB                 14         74                                 3222100100002 
 INSTITUTE  (4UKRIJD,1USALRL)                                      3222100100003 
-REFERENCE  (J,YFE,8,(4/22),61,2007)These data were presented at   3222100100004 
+REFERENCE  (J,YFE,8,61,2007) These data were presented at         3222100100004 
            the 47th Annual Meeting, July 16-20, 2006, ID#285      3222100100005 
 AUTHOR     (O.O.Gritzay, M.L.Gnidak, V.V.Kolotyi, O.I.Korol,      3222100100006 
            V.F.Razbudey, V.M.Venedyktov,J.Richardson, K.Sale)     3222100100007 
@@ -11,63 +11,257 @@ TITLE      Investigation of the scattering cross sections of      3222100100008
 FACILITY   (REAC,4UKRIJD) Reactor WWR-M                           3222100100010 
 INC-SOURCE (REAC) Neutron filters installed in horizontal channel 3222100100011 
            of the reactor.                                        3222100100012 
-INC-SPECT  1)Filter 2 keV. Filter components: Sc, 60Ni, 54Fe, Al, 3222100100013 
-           S, Co, 10B.                                            3222100100014 
-           2)Filter 3.5 keV. Filter components: 60Ni, 54Fe, 10B,  3222100100015 
-           Al, S.                                                 3222100100016 
-           3)Filter 24 keV. Filter components: Fe, Al, S, 10B.    3222100100017 
-           4)Filter 133 keV. Filter components: 58Cr, 58,60Ni, Al,3222100100018 
-           Si, 10B.                                               3222100100019 
-METHOD     (FNB)                                                  3222100100020 
-DETECTOR   (PROPC)The detector consisting of 3He counters         3222100100021 
-            (58 units), was located just above the carbon samples.3222100100022 
-           The 3He counters (CHM-37, 7 atm, diameter=18 mm, L=50  3222100100023 
-           cm) are placed in five layers (12 or 11 in each layer).3222100100024 
-           The detector was covered by cadmium sheet with         3222100100025 
-           thickness 0.5 mm; it was protected then by borated     3222100100026 
-           polyethylene bricks.                                   3222100100027 
-SAMPLE     From two to four carbon samples were used for          3222100100028 
-           measurements at each energy. The samples are a set of  3222100100029 
-           carbon disks (from one to four units), each with a     3222100100030 
-           thickness of 1mm and a diameter of 30.4 mm(C 99.997 %).3222100100031 
-           These carbon disks were made by GoodFellow Cambridge   3222100100032 
-           Limited Company (England).                             3222100100033 
-           1)Filter 2 keV. Four samples thick: 0.008877+-1.2E-05, 3222100100034 
-           0.017753+-2.4E-05, 0.02663+-3.6E-05,                   3222100100035 
-           0.035507+-4.8E-05 atom/b.                              3222100100036 
-           2)Filter 3.5 keV. Two samples thick: 0.008877+-1.2E-05,3222100100037 
-           and 0.02663+-3.6E-05 atom/b.                           3222100100038 
-           3)Filter 24 keV. Two samples thick: 0.017753+-2.4E-05, 3222100100039 
-           and 0.02663+-3.6E-05 atom/b.                           3222100100040 
-           4)Filters 133 keV. Three samples thick: 0.008877+-     3222100100041 
-           1.2E-05, 0.017753+-2.4E-05, 0.02663+-3.6E-05 atom/b.   3222100100042 
-MONITOR    (82-PB-208(N,EL)82-PB-208,,SIG,,AV)                    3222100100043 
-CORRECTION The normalization factor, which is a function of       3222100100044 
-           detector efficiency, thickness of the carbon samples,  3222100100045 
-           thickness of the 208Pb sample, geometry, etc., for each3222100100046 
-            sample and for each filter energy has been obtained   3222100100047 
-           through Monte Carlo calculations by means of the MCNP4C3222100100048 
-           code.                                                  3222100100049 
-ERR-ANALYS (ERR-T)Total error includes: statistical error of      3222100100050 
-           measurements;errors of dimension and weight of samples.3222100100051 
-STATUS     (TABLE,APRVD) Approved by O.Gritzay                    3222100100052 
-HISTORY    (20070611) UKRNDC                                      3222100100053 
-           (20180411U)OG: Ref.code was corrected.                 3222100100054 
-ENDBIB              52          0                                 3222100100055 
-NOCOMMON             0          0                                 3222100100056 
-ENDSUBENT           55          0                                 3222100199999 
-SUBENT        32221002   20080711                             31303222100200001 
-BIB                  1          1                                 3222100200002 
-REACTION   (6-C-0(N,EL)6-C-0,,SIG,,AV)                            3222100200003 
-ENDBIB               1          0                                 3222100200004 
-NOCOMMON             0          0                                 3222100200005 
-DATA                 5          4                                 3222100200006 
-EN         EN-MIN     EN-MAX     DATA       ERR-T                 3222100200007 
-KEV        KEV        KEV        B          B                     3222100200008 
-2.         1.051      2.710      4.7063     0.0102                3222100200009 
-3.5        0.438      4.409      4.7756     0.1005                3222100200010 
-24.        19.3       25.8       4.6748     0.015                 3222100200011 
-133.       132.206    135.325    4.2392     0.0234                3222100200012 
-ENDDATA              6          0                                 3222100200013 
-ENDSUBENT           12          0                                 3222100299999 
-ENDENTRY             2          0                                 3222199999999 
+INC-SPECT  1) Filter 2 keV.  Average energy of filtered neutron   3222100100013 
+            (1.91 (+0.69,-0.86))keV (95% response function),      3222100100014 
+           the filter components (g/cm2):   Sc-110.59, Ni60-80.2, 3222100100015 
+           Fe54-39.37, S-55.7, Co-26.7, 10B(85%)-0.2.             3222100100016 
+           Purity of the filter - 99.6 %. Other additions to the  3222100100017 
+           main neutron line were about: a line with the energy   3222100100018 
+           26.7keV - 0.1%, 42.8keV - 0.15%, 49.0keV - 0.02%,      3222100100019 
+           64.6keV  - 0.13%.                                      3222100100020 
+           2) Filter 3.5 keV.  Average energy of filtered neutron 3222100100021 
+            (3.471 (+1.076,-1.69))keV (95% response function),    3222100100022 
+           the filter components (g/cm2): Cd-0.865, 10B-3.15,     3222100100023 
+                    60Ni-146.2, 54Fe-170.7, Al-1.349, S-36.7.     3222100100024 
+           Purity of beam about 96.8%, other additions to         3222100100025 
+           the main line were: 43 keV - 0.4%, 65 keV - 1.2%,      3222100100026 
+           86 keV - 0.2%.                                         3222100100027 
+           3) Filter 24 keV.  Average energy of filtered neutron  3222100100028 
+            (23.85 (+1.26,-2.51))keV (95% response function),     3222100100029 
+           the filter components (g/cm2):   S-16.35, Fe-236.1,    3222100100030 
+                                        Al-99.86, 10B(85%)-0.95.  3222100100031 
+           Purity of the filter - 98.7 %. Other additions to the  3222100100032 
+           main neutron line were about: a line with the energy   3222100100033 
+           274keV - 0.4%, 350keV - 0.2%, 610keV - 0.1%.           3222100100034 
+           4) Filter 134 keV. Average energy of filtered neutron  3222100100035 
+            (133.894 (+1.536,-2.424)keV (95% response function),  3222100100036 
+           the filter components (g/cm2):  58Ni-194.01, 60Ni-3.12,3222100100037 
+            10B-0.2, Si-93.08, Cr52-95.94).                       3222100100038 
+           Purity of beam about 99.35%, other additions to        3222100100039 
+           the main spectra were: 121 keV-0.004%.                 3222100100040 
+METHOD     (FNB)                                                  3222100100041 
+DETECTOR   (PROPC) The detector consisting of 3He counters        3222100100042 
+            (58 units), was located just above the carbon samples.3222100100043 
+           The 3He counters (CHM-37, 7 atm, diameter=18 mm, L=50  3222100100044 
+           cm) are placed in five layers (12 or 11 in each layer).3222100100045 
+           The detector was covered by cadmium sheet with         3222100100046 
+           thickness 0.5 mm; it was protected then by borated     3222100100047 
+           polyethylene bricks.                                   3222100100048 
+SAMPLE     From two to four carbon samples were used for          3222100100049 
+           measurements at each energy. The samples are a set of  3222100100050 
+           carbon disks (from one to four units), each with a     3222100100051 
+           thickness of 1mm and a diameter of 30.4 mm(C 99.997 %).3222100100052 
+           These carbon disks were made by GoodFellow Cambridge   3222100100053 
+           Limited Company (England).                             3222100100054 
+           1) Filter 2 keV. Four samples thick: 0.008877+-1.2E-05,3222100100055 
+           0.017753+-2.4E-05, 0.02663+-3.6E-05,                   3222100100056 
+           0.035507+-4.8E-05 atom/b.                              3222100100057 
+           2) Filter 3.5 keV. Two samples thick: 0.008877+-1.2E-053222100100058 
+           and 0.02663+-3.6E-05 atom/b.                           3222100100059 
+           3) Filter 24 keV. Two samples thick: 0.017753+-2.4E-05,3222100100060 
+           and 0.02663+-3.6E-05 atom/b.                           3222100100061 
+           4) Filters 133 keV. Three samples thick: 0.008877+-    3222100100062 
+           1.2E-05, 0.017753+-2.4E-05, 0.02663+-3.6E-05 atom/b.   3222100100063 
+MONITOR    (82-PB-208(N,EL)82-PB-208,,SIG,,AV)                    3222100100064 
+CORRECTION The normalization factor, which is a function of       3222100100065 
+           detector efficiency, thickness of the carbon samples,  3222100100066 
+           thickness of the 208Pb sample, geometry, etc., for each3222100100067 
+            sample and for each filter energy has been obtained   3222100100068 
+           through Monte Carlo calculations by means of the MCNP4C3222100100069 
+           code.                                                  3222100100070 
+STATUS     (TABLE,APRVD) Approved by O.Gritzay                    3222100100071 
+HISTORY    (20070611C) UKRNDC                                     3222100100072 
+           (20180411U)OG: Ref.code was corrected.                 3222100100073 
+           (20200527A) OG. Sub003 added. Information in           3222100100074 
+           INC-SPECT  added. Replacement of AV by SPA. STATUS in  3222100100075 
+           Sub002 added. EN-MIN, EN-MAX updated.                  3222100100076 
+ENDBIB              74          0                                 3222100100077 
+NOCOMMON             0          0                                 3222100100078 
+ENDSUBENT           77          0                                 3222100199999 
+SUBENT        32221002   20200527                             31963222100200001 
+BIB                  4         10                                 3222100200002 
+REACTION   (6-C-0(N,EL)6-C-0,,SIG,,SPA)                           3222100200003 
+ERR-ANALYS (DATA-ERR) Total error includes: statistical error of  3222100200004 
+           measurements;errors of dimension and weight of samples.3222100200005 
+STATUS     (TABLE) Tab.2 in in Yad.Fiz. ta Energ.,8,61,2007       3222100200006 
+           (SUPPL,32245003) Neutron spectrum after filter 2 keV   3222100200007 
+           (SUPPL,32216004) Neutron spectrum after filter 3.5 keV 3222100200008 
+           (SUPPL,32221003) Neutron spectrum after filter 24 keV  3222100200009 
+           (SUPPL,32216006) Neutron spectrum after filter 133 keV 3222100200010 
+HISTORY    (20200527A) OG. Replacement of AV by SPA. STATUS added.3222100200011 
+           EN-MIN, EN-MAX updated.                                3222100200012 
+ENDBIB              10          0                                 3222100200013 
+NOCOMMON             0          0                                 3222100200014 
+DATA                 4          4                                 3222100200015 
+EN-MIN     EN-MAX     DATA       DATA-ERR                         3222100200016 
+KEV        KEV        B          B                                3222100200017 
+0.438      4.409      4.7756     0.1005                           3222100200018 
+1.056      2.604      4.7063     0.0102                           3222100200019 
+21.341     25.112     4.6748     0.015                            3222100200020 
+131.470    135.431    4.2392     0.0234                           3222100200021 
+ENDDATA              6          0                                 3222100200022 
+ENDSUBENT           21          0                                 3222100299999 
+SUBENT        32221003   20200527                             31963222100300001 
+BIB                  2        157                                 3222100300002 
+SUPPL-INF  (INCSP) Neutron spectrum after the 24 keV filter,      3222100300003 
+           recalculated by the code Filter-7, normalized to 1.    3222100300004 
+           Col. 1: Incident neutron energy (eV)                   3222100300005 
+           Col. 2: Neutron flux (rel. units)                      3222100300006 
+             ---------------------------                          3222100300007 
+           .124330E+05 .134294E-06                                3222100300008 
+           .124483E+05 .113441E-06                                3222100300009 
+           .124725E+05 .159248E-06                                3222100300010 
+           .126952E+05 .180345E-06                                3222100300011 
+           .127209E+05 .133549E-06                                3222100300012 
+           .127263E+05 .466168E-07                                3222100300013 
+           .127289E+05 .387131E-07                                3222100300014 
+           .127314E+05 .104542E-06                                3222100300015 
+           .127445E+05 .191513E-06                                3222100300016 
+           .129432E+05 .341511E-06                                3222100300017 
+           .138570E+05 .560461E-06                                3222100300018 
+           .139156E+05 .436569E-06                                3222100300019 
+           .139240E+05 .106063E-06                                3222100300020 
+           .139262E+05 .546746E-07                                3222100300021 
+           .139284E+05 .414543E-07                                3222100300022 
+           .139300E+05 .527634E-07                                3222100300023 
+           .139316E+05 .115570E-06                                3222100300024 
+           .139395E+05 .491028E-06                                3222100300025 
+           .142054E+05 .820527E-06                                3222100300026 
+           .143949E+05 .878194E-06                                3222100300027 
+           .144462E+05 .603323E-06                                3222100300028 
+           .144521E+05 .135558E-06                                3222100300029 
+           .144541E+05 .434419E-07                                3222100300030 
+           .144580E+05 .114854E-07                                3222100300031 
+           .144595E+05 .102251E-07                                3222100300032 
+           .144605E+05 .152953E-07                                3222100300033 
+           .144620E+05 .323317E-07                                3222100300034 
+           .144627E+05 .811526E-07                                3222100300035 
+           .144650E+05 .169857E-06                                3222100300036 
+           .144740E+05 .793086E-06                                3222100300037 
+           .153383E+05 .228670E-05                                3222100300038 
+           .153451E+05 .296762E-05                                3222100300039 
+           .160000E+05 .358469E-05                                3222100300040 
+           .167096E+05 .717795E-05                                3222100300041 
+           .167904E+05 .961333E-05                                3222100300042 
+           .177336E+05 .131236E-04                                3222100300043 
+           .177477E+05 .947307E-05                                3222100300044 
+           .177487E+05 .493061E-05                                3222100300045 
+           .177494E+05 .654928E-06                                3222100300046 
+           .177496E+05 .132825E-06                                3222100300047 
+           .177497E+05 .853800E-08                                3222100300048 
+           .177499E+05 .477086E-09                                3222100300049 
+           .177500E+05 .830304E-08                                3222100300050 
+           .177501E+05 .107037E-06                                3222100300051 
+           .177503E+05 .529881E-06                                3222100300052 
+           .177509E+05 .817484E-05                                3222100300053 
+           .177551E+05 .131531E-04                                3222100300054 
+           .181874E+05 .190944E-04                                3222100300055 
+           .182359E+05 .135235E-04                                3222100300056 
+           .182471E+05 .377624E-06                                3222100300057 
+           .182493E+05 .906981E-07                                3222100300058 
+           .182500E+05 .172804E-06                                3222100300059 
+           .182519E+05 .668782E-06                                3222100300060 
+           .182543E+05 .608078E-05                                3222100300061 
+           .182638E+05 .178414E-04                                3222100300062 
+           .187400E+05 .454497E-04                                3222100300063 
+           .192845E+05 .538989E-04                                3222100300064 
+           .192991E+05 .422998E-04                                3222100300065 
+           .192995E+05 .384172E-04                                3222100300066 
+           .193039E+05 .547608E-04                                3222100300067 
+           .193275E+05 .564031E-04                                3222100300068 
+           .193546E+05 .952464E-04                                3222100300069 
+           .201527E+05 .125551E-03                                3222100300070 
+           .201670E+05 .108109E-03                                3222100300071 
+           .201687E+05 .598332E-04                                3222100300072 
+           .201692E+05 .279601E-04                                3222100300073 
+           .201696E+05 .131141E-04                                3222100300074 
+           .201700E+05 .245326E-04                                3222100300075 
+           .201715E+05 .109768E-03                                3222100300076 
+           .203083E+05 .211530E-03                                3222100300077 
+           .205643E+05 .249767E-03                                3222100300078 
+           .209978E+05 .501801E-03                                3222100300079 
+           .212219E+05 .579571E-03                                3222100300080 
+           .212650E+05 .413555E-03                                3222100300081 
+           .212736E+05 .165654E-03                                3222100300082 
+           .212784E+05 .126608E-03                                3222100300083 
+           .212912E+05 .513553E-03                                3222100300084 
+           .227379E+05 .377739E-02                                3222100300085 
+           .227815E+05 .262399E-02                                3222100300086 
+           .227849E+05 .183670E-02                                3222100300087 
+           .227865E+05 .527502E-03                                3222100300088 
+           .227875E+05 .156138E-03                                3222100300089 
+           .227880E+05 .321122E-04                                3222100300090 
+           .227885E+05 .238522E-05                                3222100300091 
+           .227887E+05 .175873E-06                                3222100300092 
+           .227890E+05 .252735E-08                                3222100300093 
+           .227892E+05 .103782E-11                                3222100300094 
+           .227894E+05 .115470E-14                                3222100300095 
+           .227895E+05 .159743E-18                                3222100300096 
+           .227896E+05 .659845E-23                                3222100300097 
+           .227897E+05 .182217E-28                                3222100300098 
+           .227898E+05 .657772E-35                                3222100300099 
+           .227899E+05 .357611E-40                                3222100300100 
+           .227900E+05 .513844E-35                                3222100300101 
+           .227901E+05 .135281E-28                                3222100300102 
+           .227902E+05 .483438E-23                                3222100300103 
+           .227903E+05 .117785E-18                                3222100300104 
+           .227904E+05 .178535E-14                                3222100300105 
+           .227905E+05 .801878E-12                                3222100300106 
+           .227906E+05 .203664E-08                                3222100300107 
+           .227907E+05 .146586E-06                                3222100300108 
+           .227910E+05 .203567E-05                                3222100300109 
+           .227912E+05 .284015E-04                                3222100300110 
+           .227925E+05 .602523E-03                                3222100300111 
+           .227927E+05 .114562E-02                                3222100300112 
+           .227965E+05 .318901E-02                                3222100300113 
+           .231762E+05 .626705E-02                                3222100300114 
+           .242062E+05 .111217E-01                                3222100300115 
+           .242857E+05 .853427E-02                                3222100300116 
+           .242943E+05 .976328E-03                                3222100300117 
+           .242960E+05 .321618E-03                                3222100300118 
+           .242968E+05 .164964E-03                                3222100300119 
+           .242978E+05 .579703E-04                                3222100300120 
+           .243004E+05 .176954E-04                                3222100300121 
+           .243018E+05 .765628E-05                                3222100300122 
+           .243043E+05 .323786E-05                                3222100300123 
+           .243056E+05 .287414E-05                                3222100300124 
+           .243079E+05 .460940E-05                                3222100300125 
+           .243099E+05 .133011E-04                                3222100300126 
+           .243106E+05 .252222E-04                                3222100300127 
+           .243115E+05 .695046E-04                                3222100300128 
+           .243145E+05 .313005E-03                                3222100300129 
+           .243168E+05 .918577E-03                                3222100300130 
+           .243216E+05 .487229E-02                                3222100300131 
+           .243324E+05 .102392E-01                                3222100300132 
+           .243763E+05 .109126E-01                                3222100300133 
+           .248493E+05 .650464E-02                                3222100300134 
+           .248498E+05 .278231E-02                                3222100300135 
+           .248500E+05 .276847E-02                                3222100300136 
+           .248502E+05 .413783E-02                                3222100300137 
+           .248502E+05 .476064E-02                                3222100300138 
+           .248518E+05 .762128E-02                                3222100300139 
+           .252025E+05 .199574E-02                                3222100300140 
+           .254375E+05 .834351E-03                                3222100300141 
+           .254467E+05 .534157E-03                                3222100300142 
+           .256725E+05 .100680E-03                                3222100300143 
+           .257894E+05 .373089E-04                                3222100300144 
+           .257898E+05 .281605E-04                                3222100300145 
+           .257898E+05 .243890E-04                                3222100300146 
+           .257899E+05 .222498E-04                                3222100300147 
+           .257902E+05 .306768E-04                                3222100300148 
+           .257902E+05 .335026E-04                                3222100300149 
+           .257911E+05 .422202E-04                                3222100300150 
+           .257942E+05 .326715E-04                                3222100300151 
+           .258350E+05 .147905E-04                                3222100300152 
+           .258800E+05 .480324E-05                                3222100300153 
+           .259700E+05 .120078E-05                                3222100300154 
+           .260400E+05 .576540E-06                                3222100300155 
+           .260402E+05 .422880E-06                                3222100300156 
+           .260600E+05 .215814E-06                                3222100300157 
+           .261168E+05 .577343E-07                                3222100300158 
+HISTORY    (20200527A) OG.                                        3222100300159 
+ENDBIB             157          0                                 3222100300160 
+NOCOMMON             0          0                                 3222100300161 
+NODATA               0          0                                 3222100300162 
+ENDSUBENT          161          0                                 3222100399999 
+ENDENTRY             3          0                                 3222199999999 
