@@ -1,0 +1,245 @@
+ENTRY            31817   20200121                             31953181700000001 
+SUBENT        31817001   20200121                             31953181700100001 
+BIB                 16         29                                 3181700100002 
+TITLE      Measurement of 63,65Cu(n,g)64,66Cu and 59Co(n,g)60Co   3181700100003 
+            Maxwellian-averaged neutron-capture cross sections    3181700100004 
+AUTHOR     (L.Weissman, M.Tessler, A.Barak, H.Dafna, A.Grin,      3181700100005 
+            B.Kaizer, D.Kijel, A.Kreisel, M.Paul, A.Perry,        3181700100006 
+            I.Silverman, N.Tamim, T.Zchut)                        3181700100007 
+INSTITUTE  (3ISLSOR,3ISLHEB)                                      3181700100008 
+REFERENCE  (J,PR/C,100,065804,2019)                               3181700100009 
+FACILITY   (LINAC,3ISLSOR)                                        3181700100010 
+INC-SOURCE (P-LI7) Proton beam (1905+/-5 keV with spread of       3181700100011 
+            15 keV (1 sigma) on liquid Li (1.5 mm thick)          3181700100012 
+            circulating in a closed loop                          3181700100013 
+INC-SPECT  Close to Maxwell-Boltzmann distribution at kT~28 keV   3181700100014 
+            with reduction of the high energy component above     3181700100015 
+            ~80 keV.                                              3181700100016 
+SAMPLE     Au1-Cu-Au2-Co-Au3                                      3181700100017 
+            Au1: 99.9%  pure, 25 mm diam.,  22.51(2) mg/cm2       3181700100018 
+            Cu:  99.9+% pure, 25 mm diam.,  11.84(2) mg/cm2       3181700100019 
+            Au2: 99.9%  pure, 25 mm diam.,  24.24(2) mg/cm2       3181700100020 
+            Co : 99.5%  pure, 22 mm diam., 241.31(3) mg/cm2       3181700100021 
+            Au3: 99.9%  pure, 22 mm diam.,  25.02(3) mg/cm2       3181700100022 
+DETECTOR   (HPGE) 25% relative efficiency                         3181700100023 
+METHOD     (ACTIV) Irradiated for ~6.5 h at around 0.7mA          3181700100024 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG,,SPA)                    3181700100025 
+DECAY-MON  (79-AU-198-G,2.6941D,DG,411.8,0.9562)                  3181700100026 
+MONIT-REF  (,D.A.Brown+,J,NDS,148,1,2018) ENDF/B-VIII.0           3181700100027 
+CORRECTION Corrected for variation of the beam current            3181700100028 
+STATUS     (TABLE) Table IV of Phys.Rev.C100(2019)065804          3181700100029 
+           (APRVD) Confirmed by Leo Weissman (2020-01-22)         3181700100030 
+HISTORY    (20200121C) On                                         3181700100031 
+ENDBIB              29          0                                 3181700100032 
+NOCOMMON             0          0                                 3181700100033 
+ENDSUBENT           32          0                                 3181700199999 
+SUBENT        31817002   20200121                             31953181700200001 
+BIB                  5         17                                 3181700200002 
+REACTION  1((29-CU-63(N,G)29-CU-64,,SIG,,SPA)/                    3181700200003 
+           (79-AU-197(N,G)79-AU-198,,SIG,,SPA))                   3181700200004 
+          2(29-CU-63(N,G)29-CU-64,,SIG,,SPA)                      3181700200005 
+DECAY-DATA (29-CU-64,12.7004HR,DG,1345.8,0.004748)                3181700200006 
+CORRECTION 64Cu from 65Cu(g,n)64Cu due to high-energy gamma rays  3181700200007 
+            (14.6, 17.6 MeV) emitted by the 7Li(p,g)8Be was       3181700200008 
+            confirmed as negligible.                              3181700200009 
+ERR-ANALYS (ERR-T)     Total uncertainty           (2.6%)         3181700200010 
+           (ERR-1)     Counting statistics, 198Au  (0.3%)         3181700200011 
+           (ERR-2)     Foil weighting, Au          (0.1%)         3181700200012 
+           (ERR-3)     HPGe efficiency ratio       (1.0%)         3181700200013 
+           (ERR-4)     Counting statistics, 64Cu   (1.1%)         3181700200014 
+           (ERR-5)     Foil weighting, Cu          (0.1%)         3181700200015 
+           (ERR-6)     Decay loss estimation       (0.2%)         3181700200016 
+           (ERR-7)     gamma-ray intensity         (0.7%)         3181700200017 
+          2(MONIT-ERR) Au cross section evaluation   (2%)         3181700200018 
+STATUS     (SUPPL,31807008) LiLiT neutron spectrum                3181700200019 
+ENDBIB              17          0                                 3181700200020 
+COMMON               8          6                                 3181700200021 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      3181700200022 
+ERR-7      MONIT-ERR 2                                            3181700200023 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3181700200024 
+PER-CENT   PER-CENT                                               3181700200025 
+ 0.3        0.1        1.0        1.1        0.1        0.2       3181700200026 
+ 0.7        2.                                                    3181700200027 
+ENDCOMMON            6          0                                 3181700200028 
+DATA                 5          1                                 3181700200029 
+KT         DATA      1ERR-T     1DATA      2ERR-T     2           3181700200030 
+MEV        NO-DIM     NO-DIM     MB         MB                    3181700200031 
+ 28.        0.121      0.003      72.8       1.9                  3181700200032 
+ENDDATA              3          0                                 3181700200033 
+ENDSUBENT           32          0                                 3181700299999 
+SUBENT        31817003   20200121                             31953181700300001 
+BIB                  4         14                                 3181700300002 
+REACTION  1((29-CU-65(N,G)29-CU-66,,SIG,,SPA)/                    3181700300003 
+           (79-AU-197(N,G)79-AU-198,,SIG,,SPA))                   3181700300004 
+          2(29-CU-65(N,G)29-CU-66,,SIG,,SPA)                      3181700300005 
+DECAY-DATA (29-CU-66,5.120MIN,DG,1039.2,0.0923)                   3181700300006 
+ERR-ANALYS (ERR-T)     Total uncertainty           (5.5%)         3181700300007 
+           (ERR-1)     Counting statistics, 198Au  (0.3%)         3181700300008 
+           (ERR-2)     Foil weighting, Au          (0.1%)         3181700300009 
+           (ERR-3)     HPGe efficiency ratio       (1.0%)         3181700300010 
+           (ERR-4)     Counting statistics, 65Cu   (4.3%)         3181700300011 
+           (ERR-5)     Foil weighting, Cu          (0.1%)         3181700300012 
+           (ERR-6)     Decay loss estimation       (2.3%)         3181700300013 
+           (ERR-7)     gamma-ray intensity         (1.0%)         3181700300014 
+          2(MONIT-ERR) Au cross section evaluation   (2%)         3181700300015 
+STATUS     (SUPPL,31807008) LiLiT neutron spectrum                3181700300016 
+ENDBIB              14          0                                 3181700300017 
+COMMON               8          6                                 3181700300018 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      3181700300019 
+ERR-7      MONIT-ERR 2                                            3181700300020 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3181700300021 
+PER-CENT   PER-CENT                                               3181700300022 
+ 0.3        0.1        1.0        4.3        0.1        2.3       3181700300023 
+ 1.0        2.                                                    3181700300024 
+ENDCOMMON            6          0                                 3181700300025 
+DATA                 5          1                                 3181700300026 
+KT         DATA      1ERR-T     1DATA      2ERR-T     2           3181700300027 
+MEV        NO-DIM     NO-DIM     MB         MB                    3181700300028 
+ 28.            4.6E-2    0.3E-02 28.0       1.5                  3181700300029 
+ENDDATA              3          0                                 3181700300030 
+ENDSUBENT           29          0                                 3181700399999 
+SUBENT        31817004   20200121                             31953181700400001 
+BIB                  4         15                                 3181700400002 
+REACTION  1((27-CO-59(N,G)27-CO-60,,SIG,,SPA)/                    3181700400003 
+           (79-AU-197(N,G)79-AU-198,,SIG,,SPA))                   3181700400004 
+          2(27-CO-59(N,G)27-CO-60,,SIG,,SPA)                      3181700400005 
+DECAY-DATA (27-CO-60-G,1925.28D,DG,1173.2,0.9985,                 3181700400006 
+                                DG,1332.5,0.999836)               3181700400007 
+ERR-ANALYS (ERR-T)      Total uncertainty           (2.3%)        3181700400008 
+           (ERR-1)      Counting statistics, 198Au  (0.3%)        3181700400009 
+           (ERR-2)      Foil weighting, Au          (0.1%)        3181700400010 
+           (ERR-3)      HPGe efficiency ratio       (1.0%)        3181700400011 
+           (ERR-4)      Counting statistics, 59Co   (0.3%)        3181700400012 
+           (ERR-5)      Foil weighting, Cu          (0.1%)        3181700400013 
+           (ERR-6,,0.1) Decay loss estimation      (<0.1%)        3181700400014 
+           (ERR-7,,0.1) gamma-ray intensity        (<0.1%)        3181700400015 
+          2(MONIT-ERR)  Au cross section evaluation   (2%)        3181700400016 
+STATUS     (SUPPL,31807008) LiLiT neutron spectrum                3181700400017 
+ENDBIB              15          0                                 3181700400018 
+COMMON               6          3                                 3181700400019 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      MONIT-ERR 23181700400020 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3181700400021 
+ 0.3        0.1        1.0        0.3        0.1        2.        3181700400022 
+ENDCOMMON            3          0                                 3181700400023 
+DATA                 5          1                                 3181700400024 
+KT         DATA      1ERR-T     1DATA      2ERR-T     2           3181700400025 
+MEV        NO-DIM     NO-DIM     MB         MB                    3181700400026 
+ 28.          6.36E-02   0.04E-02 37.9       0.9                  3181700400027 
+ENDDATA              3          0                                 3181700400028 
+ENDSUBENT           27          0                                 3181700499999 
+SUBENT        31817005   20200121                             31953181700500001 
+BIB                  4         10                                 3181700500002 
+REACTION   (29-CU-63(N,G)29-CU-64,,SIG,,MXW)                      3181700500003 
+ANALYSIS   kT=30 keV MACS of TENDL-2017 renormalized by the       3181700500004 
+            ratio of the measured cross section to the evaluated  3181700500005 
+            cross section folded by the LiLiT spectrum (0.86),    3181700500006 
+            and multiplied by 2/sqrt(pi).                         3181700500007 
+           The LiLIT neutron spectrum was estimated by the        3181700500008 
+            SimLiT-GEANT4 code.                                   3181700500009 
+ERR-ANALYS (ERR-8) Experimental uncertainty                       3181700500010 
+           (ERR-9) Library used for MACS calculation              3181700500011 
+STATUS     (DEP,31817002) LiLiT spectrum averaged cross section   3181700500012 
+ENDBIB              10          0                                 3181700500013 
+NOCOMMON             0          0                                 3181700500014 
+DATA                 4          1                                 3181700500015 
+KT         DATA       ERR-8      ERR-9                            3181700500016 
+MEV        MB         MB         MB                               3181700500017 
+ 30.        70.4       1.8        2.4                             3181700500018 
+ENDDATA              3          0                                 3181700500019 
+ENDSUBENT           18          0                                 3181700599999 
+SUBENT        31817006   20200121                             31953181700600001 
+BIB                  4         10                                 3181700600002 
+REACTION   (29-CU-65(N,G)29-CU-66,,SIG,,MXW)                      3181700600003 
+ANALYSIS   kT=30 keV MACS of TENDL-2017 renormalized by the       3181700600004 
+            ratio of the measured cross section to the evaluated  3181700600005 
+            cross section folded by the LiLiT spectrum (0.85),    3181700600006 
+            and multiplied by 2/sqrt(pi).                         3181700600007 
+           The LiLIT neutron spectrum was estimated by the        3181700600008 
+            SimLiT-GEANT4 code.                                   3181700600009 
+ERR-ANALYS (ERR-8) Experimental uncertainty                       3181700600010 
+           (ERR-9) Library used for MACS calculation              3181700600011 
+STATUS     (DEP,31817003) LiLiT spectrum averaged cross section   3181700600012 
+ENDBIB              10          0                                 3181700600013 
+NOCOMMON             0          0                                 3181700600014 
+DATA                 4          1                                 3181700600015 
+KT         DATA       ERR-8      ERR-9                            3181700600016 
+MEV        MB         MB         MB                               3181700600017 
+ 30.        26.8       1.5        1.0                             3181700600018 
+ENDDATA              3          0                                 3181700600019 
+ENDSUBENT           18          0                                 3181700699999 
+SUBENT        31817007   20200121                             31953181700700001 
+BIB                  4         10                                 3181700700002 
+REACTION   (27-CO-59(N,G)27-CO-60,,SIG,,MXW)                      3181700700003 
+ANALYSIS   kT=30 keV MACS of TENDL-2017 renormalized by the       3181700700004 
+            ratio of the measured cross section to the evaluated  3181700700005 
+            cross section folded by the LiLiT spectrum (0.89),    3181700700006 
+            and multiplied by 2/sqrt(pi).                         3181700700007 
+           The LiLIT neutron spectrum was estimated by the        3181700700008 
+            SimLiT-GEANT4 code.                                   3181700700009 
+ERR-ANALYS (ERR-8) Experimental uncertainty                       3181700700010 
+           (ERR-9) Library used for MACS calculation              3181700700011 
+STATUS     (DEP,31817004) LiLiT spectrum averaged cross section   3181700700012 
+ENDBIB              10          0                                 3181700700013 
+NOCOMMON             0          0                                 3181700700014 
+DATA                 4          1                                 3181700700015 
+KT         DATA       ERR-8      ERR-9                            3181700700016 
+MEV        MB         MB         MB                               3181700700017 
+ 30.        38.1       0.9        0.9                             3181700700018 
+ENDDATA              3          0                                 3181700700019 
+ENDSUBENT           18          0                                 3181700799999 
+SUBENT        31817008   20200121                             31953181700800001 
+BIB                  3         49                                 3181700800002 
+SUPPL-INF  (INCSP) Incident neutron spectrum calculated by        3181700800003 
+            SimLiT-GEANT4.                                        3181700800004 
+           --------------------------------------------           3181700800005 
+            neutron energy (keV) dn/dE (n/mA/sec/5keV)            3181700800006 
+           --------------------------------------------           3181700800007 
+                   0                2.88586E+08                   3181700800008 
+                   5                6.61155E+08                   3181700800009 
+                  10                9.47571E+08                   3181700800010 
+                  15                1.14648E+09                   3181700800011 
+                  20                1.3577E+09                    3181700800012 
+                  25                1.32261E+09                   3181700800013 
+                  30                1.42366E+09                   3181700800014 
+                  35                1.30543E+09                   3181700800015 
+                  40                1.28176E+09                   3181700800016 
+                  45                1.20122E+09                   3181700800017 
+                  50                1.07335E+09                   3181700800018 
+                  55                9.79745E+08                   3181700800019 
+                  60                8.66404E+08                   3181700800020 
+                  65                7.60445E+08                   3181700800021 
+                  70                6.51975E+08                   3181700800022 
+                  75                5.60669E+08                   3181700800023 
+                  80                4.52512E+08                   3181700800024 
+                  85                3.5472E+08                    3181700800025 
+                  90                2.8245E+08                    3181700800026 
+                  95                2.18485E+08                   3181700800027 
+                 100                1.64935E+08                   3181700800028 
+                 105                1.21478E+08                   3181700800029 
+                 110                8.57438E+07                   3181700800030 
+                 115                5.78312E+07                   3181700800031 
+                 120                3.67294E+07                   3181700800032 
+                 125                2.36443E+07                   3181700800033 
+                 130                1.37489E+07                   3181700800034 
+                 135                7.9392E+06                    3181700800035 
+                 140                4.10235E+06                   3181700800036 
+                 145                2.01891E+06                   3181700800037 
+                 150                1.05463E+06                   3181700800038 
+                 155                466470                        3181700800039 
+                 160                189907                        3181700800040 
+                 165                94031.4                       3181700800041 
+                 170                31343.8                       3181700800042 
+                 175                9218.77                       3181700800043 
+                 180                1843.75                       3181700800044 
+                 185                0                             3181700800045 
+                 190                0                             3181700800046 
+                 195                0                             3181700800047 
+                 200                0                             3181700800048 
+           --------------------------------------------           3181700800049 
+STATUS     (TABLE) Data received from Leo Weissman                3181700800050 
+HISTORY    (20200122R) On. Received from Leo Weissman             3181700800051 
+ENDBIB              49          0                                 3181700800052 
+NOCOMMON             0          0                                 3181700800053 
+NODATA               0          0                                 3181700800054 
+ENDSUBENT           53          0                                 3181700899999 
+ENDENTRY             8          0                                 3181799999999 
