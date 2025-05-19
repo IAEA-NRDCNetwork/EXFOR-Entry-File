@@ -1,77 +1,92 @@
-ENTRY            13213   19881102                             00001321300000001 
-SUBENT        13213001   19881102                             00001321300100001 
-BIB                 10         12                                 1321300100002 
-INSTITUTE  (1USANRD)                                              1321300100003 
-REFERENCE  (J,JIN,27,273,65)                                      1321300100004 
-AUTHOR     (L.R.BUNNEY,E.M.SCADDEN)                               1321300100005 
-TITLE      HEAVY MASS YIELD IN THE SLOW NEUTRON FISSION OF U-233  1321300100006 
-           AND U-235                                              1321300100007 
-FACILITY   (REAC,1USAMTR)                                         1321300100008 
-METHOD     (RCHEM)                                                1321300100009 
-DETECTOR   (NAICR)                                                1321300100010 
-ERR-ANALYS ESTIMATED ACCURACY OF DATA 10% FROM PRECISION OF       1321300100011 
-            MEASUREMENTS AND AGREEMENT WITH LITERATURE VALUES     1321300100012 
-STATUS     (RIDER) REFERENCE 65BUN1                               1321300100013 
-HISTORY    (890522C) VM                                           1321300100014 
-ENDBIB              12          0                                 1321300100015 
-COMMON               2          3                                 1321300100016 
-EN-DUMMY   DATA-ERR                                               1321300100017 
-EV         PER-CENT                                               1321300100018 
-0.0253      10.                                                   1321300100019 
-ENDCOMMON            3          0                                 1321300100020 
-ENDSUBENT           19          0                                 1321300199999 
-SUBENT        13213002   19881102                             00001321300200001 
-BIB                  3          9                                 1321300200002 
-REACTION   (92-U-233(N,F)MASS,CHN,FY,,SPA)                        1321300200003 
-SAMPLE     233U METAL FOIL. ISOTOPIC COMPOSITION: 99.76% 233U,    1321300200004 
-            0.022% 234U, 0.007% 235U, 0.21% 238U.                 1321300200005 
-MONITOR    ((MONIT1)92-U-233(N,F)42-MO-99,CUM,FY,,SPA)            1321300200006 
-           ((MONIT2)92-U-235(N,F)42-MO-99,CUM,FY,,SPA)            1321300200007 
-           ((MONIT3)92-U-235(N,F)MASS,CHN,FY,,SPA)                1321300200008 
-           TAKEN FROM KATCOFF, NUC.18,201 (1960), EXCEPT          1321300200009 
-            MASS-157 YIELD TAKEN FROM THIS REFERENCE              1321300200010 
-           RELATIVE TO 235U, NORMALIZED TO 99MO YIELD FROM 235U   1321300200011 
-ENDBIB               9          0                                 1321300200012 
-COMMON               2          3                                 1321300200013 
-MONIT1     MONIT2                                                 1321300200014 
-PC/FIS     PC/FIS                                                 1321300200015 
- 4.80       6.06                                                  1321300200016 
-ENDCOMMON            3          0                                 1321300200017 
-DATA                 3         12                                 1321300200018 
-MASS       DATA       MONIT3                                      1321300200019 
-NO-DIM     PC/FIS     PC/FIS                                      1321300200020 
- 91.        6.94        5.84                                      1321300200021 
-141.        7.58        6.4                                       1321300200022 
-143.        5.92        6.03                                      1321300200023 
-144.        4.74        5.62                                      1321300200024 
-147.        1.89        2.36                                      1321300200025 
-149.        0.815       1.13                                      1321300200026 
-151.        0.337       0.44                                      1321300200027 
-153.        0.108       0.169                                     1321300200028 
-156.        0.0121      0.014                                     1321300200029 
-157.        0.00635     0.0061                                    1321300200030 
-159.        0.000905    0.00103                                   1321300200031 
-161.        0.000117    0.000082                                  1321300200032 
-ENDDATA             14          0                                 1321300200033 
-ENDSUBENT           32          0                                 1321300299999 
-SUBENT        13213003   19881102                             00001321300300001 
-BIB                  2          2                                 1321300300002 
-REACTION   (92-U-235(N,F)MASS,CHN,FY,,MXW)                        1321300300003 
-MONITOR    (92-U-235(N,F)42-MO-99,CUM,FY,,MXW)                    1321300300004 
-ENDBIB               2          0                                 1321300300005 
-NOCOMMON             0          0                                 1321300300006 
-DATA                 2          9                                 1321300300007 
-MASS       DATA                                                   1321300300008 
-NO-DIM     PC/FIS                                                 1321300300009 
- 91.        6.11                                                  1321300300010 
-143.        5.88                                                  1321300300011 
-147.        2.21                                                  1321300300012 
-149.        1.04                                                  1321300300013 
-153.        0.159                                                 1321300300014 
-156.        0.0137                                                1321300300015 
-157.        0.00614                                               1321300300016 
-159.        0.000993                                              1321300300017 
-161.           8.76E-5                                            1321300300018 
-ENDDATA             11          0                                 1321300300019 
-ENDSUBENT           18          0                                 1321300399999 
+ENTRY            13213   20201210                             147813213  0    1 
+SUBENT        13213001   20201210                             147813213  1    1 
+BIB                  9         17                                 13213  1    2 
+TITLE      Heavy mass yields in the slow neutron fission of 233U  13213  1    3 
+           and 235U                                               13213  1    4 
+AUTHOR     (L.R.Bunney,E.M.Scadden)                               13213  1    5 
+INSTITUTE  (1USANRD)                                              13213  1    6 
+REFERENCE  (J,JIN,27,273,1965)                                    13213  1    7 
+           #doi:10.1016/0022-1902(65)80338-4                      13213  1    8 
+           #NSR: 1965BU15                                         13213  1    9 
+FACILITY   (REAC,1USAMTR)                                         13213  1   10 
+METHOD     (CHSEP)                                                13213  1   11 
+DETECTOR   (PROPC,NAICR)                                          13213  1   12 
+ERR-ANALYS (DATA-ERR) Estimated accuracy of data 10% from         13213  1   13 
+           precision of measurements and agreement with literature13213  1   14 
+           values                                                 13213  1   15 
+HISTORY    (19890522C) VM                                         13213  1   16 
+           (20201210U) OG. Converted to lower case and 4-digit    13213  1   17 
+           year. #NSR and #doi added. STATUS, METHOD, ERR-ANALYS  13213  1   18 
+           updated.                                               13213  1   19 
+ENDBIB              17          0                                 13213  1   20 
+COMMON               2          3                                 13213  1   21 
+EN-DUMMY   DATA-ERR                                               13213  1   22 
+EV         PER-CENT                                               13213  1   23 
+0.0253      10.                                                   13213  1   24 
+ENDCOMMON            3          0                                 13213  1   25 
+ENDSUBENT           24          0                                 13213  199999 
+SUBENT        13213002   20201210                             147813213  2    1 
+BIB                  8         16                                 13213  2    2 
+REACTION   (92-U-233(N,F)MASS,CHN,FY,,SPA)                        13213  2    3 
+SAMPLE     233U metal foil.                                       13213  2    4 
+           (92-U-233,ENR=0.9976)                                  13213  2    5 
+           (92-U-234,ENR=0.00022)                                 13213  2    6 
+           (92-U-235,ENR=0.00007)                                 13213  2    7 
+           (92-U-238,ENR=0.0021)                                  13213  2    8 
+MONITOR    ((MONIT1)92-U-233(N,F)42-MO-99,CUM,FY,,SPA)            13213  2    9 
+           ((MONIT2)92-U-235(N,F)42-MO-99,CUM,FY,,SPA)            13213  2   10 
+           ((MONIT3)92-U-235(N,F)MASS,CHN,FY,,SPA)                13213  2   11 
+MONIT-REF  ((MONIT3),S.Katcoff,J,NUC,18,201,1960)                 13213  2   12 
+ANALYSIS   Result is average of several runs                      13213  2   13 
+FLAG       (1.) Value for MONIT3 taken from MONIT-REF             13213  2   14 
+           (2.) Value for MONIT3 taken from this reference        13213  2   15 
+           relative to 235U, normalized to 99Mo yield from 235U.  13213  2   16 
+STATUS     (TABLE) Tab.3 (p.277) in J.Inorg.Nucl.Chem.27,273,1965.13213  2   17 
+HISTORY    (20201210U) OG. STATUS updated. MONIT-REF, FLAG added. 13213  2   18 
+ENDBIB              16          0                                 13213  2   19 
+COMMON               2          3                                 13213  2   20 
+MONIT1     MONIT2                                                 13213  2   21 
+PC/FIS     PC/FIS                                                 13213  2   22 
+ 4.80       6.06                                                  13213  2   23 
+ENDCOMMON            3          0                                 13213  2   24 
+DATA                 4         12                                 13213  2   25 
+MASS       DATA       MONIT3     FLAG                             13213  2   26 
+NO-DIM     PC/FIS     PC/FIS     NO-DIM                           13213  2   27 
+ 91.        6.94        5.84         1.                           13213  2   28 
+141.        7.58        6.4          1.                           13213  2   29 
+143.        5.92        6.03         1.                           13213  2   30 
+144.        4.74        5.62         1.                           13213  2   31 
+147.        1.89        2.36         1.                           13213  2   32 
+149.        0.815       1.13         1.                           13213  2   33 
+151.        0.337       0.44         1.                           13213  2   34 
+153.        0.108       0.169        1.                           13213  2   35 
+156.        0.0121      0.014        1.                           13213  2   36 
+157.        0.00635     0.0061       2.                           13213  2   37 
+159.        0.000905    0.00103      1.                           13213  2   38 
+161.        0.000117    0.000082     1.                           13213  2   39 
+ENDDATA             14          0                                 13213  2   40 
+ENDSUBENT           39          0                                 13213  299999 
+SUBENT        13213003   20201210                             147813213  3    1 
+BIB                  5          5                                 13213  3    2 
+REACTION   (92-U-235(N,F)MASS,CHN,FY,,MXW)                        13213  3    3 
+MONITOR    (92-U-235(N,F)42-MO-99,CUM,FY,,MXW)                    13213  3    4 
+ANALYSIS   Result is average of several runs                      13213  3    5 
+STATUS     (TABLE) Tab.2 (p.276) in J.Inorg.Nucl.Chem.27,273,1965 13213  3    6 
+HISTORY    (20201210U) OG. STATUS added.                          13213  3    7 
+ENDBIB               5          0                                 13213  3    8 
+NOCOMMON             0          0                                 13213  3    9 
+DATA                 2          9                                 13213  3   10 
+MASS       DATA                                                   13213  3   11 
+NO-DIM     PC/FIS                                                 13213  3   12 
+ 91.        6.11                                                  13213  3   13 
+143.        5.88                                                  13213  3   14 
+147.        2.21                                                  13213  3   15 
+149.        1.04                                                  13213  3   16 
+153.        0.159                                                 13213  3   17 
+156.        0.0137                                                13213  3   18 
+157.        0.00614                                               13213  3   19 
+159.        0.000993                                              13213  3   20 
+161.           8.76E-5                                            13213  3   21 
+ENDDATA             11          0                                 13213  3   22 
+ENDSUBENT           21          0                                 13213  399999 
 ENDENTRY             3          0                                 1321399999999 
