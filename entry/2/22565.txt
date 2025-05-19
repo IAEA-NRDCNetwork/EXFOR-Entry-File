@@ -1,74 +1,41 @@
-ENTRY            22565   20071201                             21902256500000001 
-SUBENT        22565001   20071201                             21902256500100001 
-BIB                 12         44                                 2256500100002 
-TITLE      .The U-238 (n,f) cross section and its ratio to the    2256500100003 
-            27-Al(n,alpha)24-Na and 56-Fe(n,p)56-Mn cross section 2256500100004 
-            in 14 MeV region                                      2256500100005 
-AUTHOR     (G.Winkler, V.E.Levis, T.B.Ryves, M.Wagner)            2256500100006 
-INSTITUTE  (2AUSIRK)  Winkler,  Wagner                            2256500100007 
-           (2UK NPL)  Lewis, Ryves                                2256500100008 
-REFERENCE  (C,91JUELIC,,514,199105)  Main reference, data given   2256500100009 
-           (J,ANE,15,363,1988)  Experimental details              2256500100010 
-FACILITY   (ACCEL,2UK NPL)  The NPL SAMES accelerator             2256500100011 
-METHOD     (ASSOP,ACTIV,PSD)                                      2256500100012 
-MONITOR   A(13-AL-27(N,A)11-NA-24,,SIG)                           2256500100013 
-          B(26-FE-56(N,P)25-MN-56,,SIG)                           2256500100014 
-DECAY-MON A(11-NA-24,14.960HR,DG)                                 2256500100015 
-          B(25-MN-56,2.5785HR,DG)                                 2256500100016 
-DETECTOR   (FISCH)                                                2256500100017 
-ERR-ANALYS (ERR-T) Total error composed of the sum of its         2256500100018 
-                   constituents                                   2256500100019 
-           (ERR-S) Stat. error of the attenuation for Fe56 monitor2256500100020 
-                   measurement                                    2256500100021 
-           (ERR-1) Stat. error of the attenuation for Al27 monitor2256500100022 
-                   measurement                                    2256500100023 
-           (ERR-2) Error of the each monitor cross section        2256500100024 
-           (ERR-3) Error of the each monitor energy determination 2256500100025 
-           (ERR-4) Error of the BETA-ray counting efficiency for  2256500100026 
-                   each monitor                                   2256500100027 
-           (ERR-5) Error of the distance between U-238 sample and 2256500100028 
-                   monitor foil                                   2256500100029 
-           (ERR-6) Max error of the attenuation for each monitor  2256500100030 
-           (ERR-7)  Half-life error for 11-NA-24                  2256500100031 
-           (ERR-8)  Half-life error for 25-Mn-56. Half-life errors2256500100032 
-            were taken from IAEA Technical Report, Series No.227, 2256500100033 
-            1983. And from Table de Radionucleides, Laboratoire de2256500100034 
-            Metrologie des Rayonnements Ionisants, CEA Saclay,    2256500100035 
-            1982 et 1987 (In French)                              2256500100036 
-           (ERR-9)  Error of the extrapolation of the pulse-height2256500100037 
-                    spectrum from the discrimination level to zero2256500100038 
-                    pulse height                                  2256500100039 
-           (ERR-10) Error due to the correction for the self-     2256500100040 
-                    absorption of the fission fragments           2256500100041 
-           (ERR-11) Error due to low-energy neutrons fission      2256500100042 
-           (ERR-12) Error due to the sample mass                  2256500100043 
-COMMENT    .Errors ERR-7, ERR-8, ERR-12 in per-cent determined    2256500100044 
-            BY compiler                                           2256500100045 
-HISTORY    (20071201C)  SM                                        2256500100046 
-ENDBIB              44          0                                 2256500100047 
-COMMON              15          9                                 2256500100048 
-ERR-S      ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      2256500100049 
-ERR-6      ERR-7      ERR-7      ERR-8      ERR-8      ERR-9      2256500100050 
-ERR-10     ERR-11     ERR-12                                      2256500100051 
-PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   2256500100052 
-PER-CENT   HR         PER-CENT   HR         PER-CENT   PER-CENT   2256500100053 
-PER-CENT   PER-CENT   PER-CENT                                    2256500100054 
-   0.5        0.2        0.5        0.2         0.3       0.1     2256500100055 
-      0.1        0.006     0.04        0.006      0.23       0.25 2256500100056 
-       0.1         0.2       0.25                                 2256500100057 
-ENDCOMMON            9          0                                 2256500100058 
-ENDSUBENT           57          0                                 2256500199999 
-SUBENT        22565002   20071201                             21902256500200001 
-BIB                  3          3                                 2256500200002 
+ENTRY            22565   20190722                             22812256500000001 
+SUBENT        22565001   20190722                             22812256500100001 
+BIB                  9         15                                 2256500100002 
+TITLE      The 238U(n,f) cross section and its ratio to the       2256500100003 
+            27Al(n,a)24Na and 56Fe(n,p)56Mn cross section in      2256500100004 
+            14 MeV region                                         2256500100005 
+AUTHOR     (G.Winkler, V.E.Lewis, T.B.Ryves, M.Wagner)            2256500100006 
+INSTITUTE  (2AUSIRK,2UK NPL)                                      2256500100007 
+REFERENCE  (C,91JUELIC,,514,1991)                                 2256500100008 
+FACILITY   (ACCEL,2UK NPL) NPL SAMES accelerator                  2256500100009 
+INC-SOURCE (D-T) 150 keV deuteron (~25 uA)                        2256500100010 
+METHOD     (ASSOP,ACTIV)                                          2256500100011 
+DETECTOR   (FISCH) U deposit on 0.2 mm Al                         2256500100012 
+           (SIBAR) Associated alpha particle detection            2256500100013 
+           (PROPC) beta-ray counting at NPL                       2256500100014 
+           (NAICR) gamma-ray counting at IRK                      2256500100015 
+HISTORY    (20071201C) SM                                         2256500100016 
+           (20190722A) On. Partial uncertainties deleted.         2256500100017 
+ENDBIB              15          0                                 2256500100018 
+NOCOMMON             0          0                                 2256500100019 
+ENDSUBENT           18          0                                 2256500199999 
+SUBENT        22565002   20190722                             22812256500200001 
+BIB                  6          9                                 2256500200002 
 REACTION   (92-U-238(N,F),,SIG)                                   2256500200003 
-SAMPLE     .Metallic layer 156.6 +- 0.4 microgram (=0.25% - SM)   2256500200004 
-STATUS     .From text of main reference, p.516                    2256500200005 
-ENDBIB               3          0                                 2256500200006 
-NOCOMMON             0          0                                 2256500200007 
-DATA                 4          1                                 2256500200008 
-EN         DATA       ERR-T      ERR-T                            2256500200009 
-MEV        B          B          PER-CENT                         2256500200010 
-   14.5        1.196     0.013       1.1                          2256500200011 
-ENDDATA              3          0                                 2256500200012 
-ENDSUBENT           11          0                                 2256500299999 
+SAMPLE     (92-U-238,ENR=0.9998) Metallic layer 156.6+/-0.4 ug    2256500200004 
+ANALYSIS   Flux was determined by three method:                   2256500200005 
+            - Associated alpha particle detection                 2256500200006 
+            - Iron foil activation                                2256500200007 
+            - Aluminium foil activation                           2256500200008 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty 2256500200009 
+STATUS     (TABLE) Text (p.516) of C,91JUELIC,,514,1991.          2256500200010 
+HISTORY    (20190722A) On. ERR-T -> DATA-ERR                      2256500200011 
+ENDBIB               9          0                                 2256500200012 
+NOCOMMON             0          0                                 2256500200013 
+DATA                 3          1                                 2256500200014 
+EN         DATA       DATA-ERR                                    2256500200015 
+MEV        B          PER-CENT                                    2256500200016 
+ 14.5       1.196      1.1                                        2256500200017 
+ENDDATA              3          0                                 2256500200018 
+ENDSUBENT           17          0                                 2256500299999 
 ENDENTRY             2          0                                 2256599999999 

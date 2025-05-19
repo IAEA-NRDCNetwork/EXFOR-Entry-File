@@ -1,88 +1,90 @@
-ENTRY            21811   20180829                             227021811  0    1 
-SUBENT        21811001   20180829                             227021811  1    1 
-BIB                 10         25                                 21811  1    2 
-INSTITUTE  (2ZZZGEL)                                              21811  1    3 
-REFERENCE  (C,82ANTWER,,69,1982)                                  21811  1    4 
-AUTHOR     (C.Wagemans,A.J.Deruytter)                             21811  1    5 
-TITLE       The Pu-241(n,f) cross section and its normalization   21811  1    6 
-FACILITY   (LINAC,2ZZZGEL) 100 MeV Electron Linac at Geel.        21811  1    7 
-INC-SOURCE (PHOTO) Natural uranium target.                        21811  1    8 
-SAMPLE     .Pu-241 and B-10 samples mounted back to back.         21811  1    9 
-             A 550 micro-g/cm**2 plutonium acetate layer          21811  1   10 
-              was electrosprayed onto an aluminum disc.           21811  1   11 
-              Isotopic composition in atom per cent-              21811  1   12 
-                Pu-241   91.02     Pu-238    0.03                 21811  1   13 
-                Pu-239    1.17     Pu-240    4.48                 21811  1   14 
-                Pu-242    3.30                                    21811  1   15 
-             a 184 micro-g/cm**2 elemental boron-10 layer         21811  1   16 
-              of isotopic enrichment 93 per cent was              21811  1   17 
-              prepared by evaporating boron in a vacuum.          21811  1   18 
-METHOD     (TOF) Measurements made at a flight path of 9.3 m      21811  1   19 
-                   with and without a Cd overlap filter, and at   21811  1   20 
-                   30.45 m with a B-10 overlap filter.            21811  1   21 
-DETECTOR   (SIBAR) Two collinear gold-silicon surface barrier     21811  1   22 
-                   detectors.                                     21811  1   23 
-HISTORY    (19830114C) A.P.T.                                     21811  1   24 
-           (20180829A) SD:Updated to new date formats,lower case. 21811  1   25 
-           MONITOR corrected in Subent 002. Ref. INDC(EUR)-15     21811  1   26 
-           deleted (not relevant).                                21811  1   27 
-ENDBIB              25          0                                 21811  1   28 
-NOCOMMON             0          0                                 21811  1   29 
-ENDSUBENT           28          0                                 21811  199999 
-SUBENT        21811002   20180829                             227021811  2    1 
-BIB                  8         28                                 21811  2    2 
-REACTION   (94-PU-241(N,F),,SIG,,AV)                              21811  2    3 
-MONITOR    (94-PU-241(N,F),,SIG) Value at 2200 m/s.               21811  2    4 
-           (5-B-10(N,A)3-LI-7,,SIG) Neutron flux monitor.         21811  2    5 
-            Cross section assumed to have a 1/V shape.            21811  2    6 
-MONIT-REF  (,H.Lemmel,C,75WASH,,286,1975)                         21811  2    7 
-COMMENT    .The main reference contains a detailed                21811  2    8 
-            comparison of the data with the                       21811  2    9 
-            measurements of other workers.                        21811  2   10 
-CORRECTION .Background determination performed using Cd           21811  2   11 
-            Rh Au Co and Mn neutron filters, together             21811  2   12 
-            with a permanent Al neutron filter.                   21811  2   13 
-ERR-ANALYS (DATA-ERR) The total error consists mainly of the      21811  2   14 
-                   following five components -                    21811  2   15 
-             1) error on the normalization to the 2200 m/s        21811  2   16 
-                value of the Pu-241 cross section.                21811  2   17 
-             2) Background determination for both Pu-241(n,f)     21811  2   18 
-                and B-10(n,alpha) reactions.                      21811  2   19 
-             3) Error on the correction for sample impurities.    21811  2   20 
-             4) The uncertainty in the shape of the               21811  2   21 
-                B-10(n,alpha) cross section. This is more         21811  2   22 
-                more important above 1 keV, since at lower        21811  2   23 
-                energies the shape has an almost perfect          21811  2   24 
-                1/V behavior.                                     21811  2   25 
-             5) Statistical error.                                21811  2   26 
-STATUS     (TABLE) Table 1 from 82ANTWER,,69,1982.                21811  2   27 
-HISTORY    (19830117C) A.P.T.                                     21811  2   28 
-           (20180829A) SD: SF4=Li-7 added to MONITOR reaction.    21811  2   29 
-            ERR-T -> DATA-ERR.                                    21811  2   30 
-ENDBIB              28          0                                 21811  2   31 
-COMMON               2          3                                 21811  2   32 
-MONIT1     MONIT1-ERR                                             21811  2   33 
-B          B                                                      21811  2   34 
- 1015.       7.0                                                  21811  2   35 
-ENDCOMMON            3          0                                 21811  2   36 
-DATA                 4         15                                 21811  2   37 
-EN-MIN     EN-MAX     DATA       DATA-ERR                         21811  2   38 
-EV         EV         B          PER-CENT                         21811  2   39 
-       0.02        0.1      751.3         2.                      21811  2   40 
-        0.1        0.5      681.6         2.                      21811  2   41 
-        0.5         1.       42.4         2.                      21811  2   42 
-         1.        10.      189.7         2.                      21811  2   43 
-        10.        20.      151.7         2.                      21811  2   44 
-        20.        30.       85.5         2.                      21811  2   45 
-        30.        40.       49.6         3.                      21811  2   46 
-        40.        50.       45.5         3.                      21811  2   47 
-        50.       100.       39.6         3.                      21811  2   48 
-       100.       500.       23.6         3.                      21811  2   49 
-       500.      1000.       12.1         3.                      21811  2   50 
-      1000.      5000.       7.21         4.                      21811  2   51 
-      5000.     10000.        4.2         4.                      21811  2   52 
-     10000.     20000.       3.09         4.                      21811  2   53 
-     20000.     30000.       2.76         4.                      21811  2   54 
-ENDDATA             17          0                                 21811  2   55 
-ENDSUBENT           54          0                                 21811  299999 
+ENTRY            21811   20190722                             22812181100000001 
+SUBENT        21811001   20190722                             22812181100100001 
+BIB                 10         25                                 2181100100002 
+TITLE      The 241Pu(n,f) cross-section and its normalization     2181100100003 
+AUTHOR     (C.Wagemans, A.J.Deruytter)                            2181100100004 
+INSTITUTE  (2ZZZGEL)                                              2181100100005 
+REFERENCE  (C,82ANTWER,,69,1982)                                  2181100100006 
+FACILITY   (LINAC,2ZZZGEL) GELINA                                 2181100100007 
+INC-SOURCE (PHOTO) 100 MeV electrons on natural uranium target    2181100100008 
+SAMPLE     241Pu and 10B samples mounted back to back.            2181100100009 
+           (94-PU-241,ENR=0.9102)                                 2181100100010 
+            A Plutonium acetate layer (550 ug/cm2) electrosprayed 2181100100011 
+             onto an Al disc. Isotopic compositions are           2181100100012 
+            241Pu 91.02%, 238Pu 0.03%, 239Pu 1.17%,               2181100100013 
+            240Pu  4.48%, 242pu 3.30%                             2181100100014 
+           (5-B-10,ENR=0.93)                                      2181100100015 
+            Elemental 10B layer (184 ug/cm2 thick) prepared by    2181100100016 
+             evaporating boron in a vacuum.                       2181100100017 
+METHOD     (TOF) Three measurements were performed:               2181100100018 
+            Flight path of 9.3 m without Cd overlap filter,       2181100100019 
+            Flight path of 9.3 m with Cd overlap filter,          2181100100020 
+            Flight path of 30.45 m with 10B overlap filter.       2181100100021 
+DETECTOR   (SIBAR) Two collinear Si-Au surface barrier detectors  2181100100022 
+HISTORY    (19830114C) A.P.T.                                     2181100100023 
+           (20180829A) SD:Updated to new date formats,lower case. 2181100100024 
+            MONITOR corrected in Subent 002. Ref. INDC(EUR)-15    2181100100025 
+            deleted (not relevant).                               2181100100026 
+           (20190722A) On. Major revisions in 002.                2181100100027 
+ENDBIB              25          0                                 2181100100028 
+NOCOMMON             0          0                                 2181100100029 
+ENDSUBENT           28          0                                 2181100199999 
+SUBENT        21811002   20190722                             22812181100200001 
+BIB                  8         30                                 2181100200002 
+REACTION   (94-PU-241(N,F),,SIG,,AV)                              2181100200003 
+MONITOR    ((MONIT)94-PU-241(N,F),,INT)                           2181100200004 
+           Cross section intgral (0.02 eV - 0.10 eV)=60.11 b*eV,  2181100200005 
+            which is corresponding to sigma0=1015 b.              2181100200006 
+           (5-B-10(N,A)3-LI-7,,SIG)                               2181100200007 
+MONIT-REF  ((MONIT)20807001,C.Wagemans+,J,NSE,60,44,1976)         2181100200008 
+CORRECTION Correced for                                           2181100200009 
+            - background determined with Rh Au Co and Mn neutron  2181100200010 
+              filters together with a permanent Al neutron filter 2181100200011 
+              (0.8% at thermal fission, 5% at 25 keV fission,     2181100200012 
+               0.4% at thermal 10B(n,a), 1.5% at 25 keV 10B(n,a)) 2181100200013 
+            - deviation of 10B(n,a)7Li cross section from 1/v by  2181100200014 
+              using Sowerby's analytical expression               2181100200015 
+            - fission of 239Pu imprity                            2181100200016 
+REL-REF    (R,,M.Sowerby+,C,70HELSINKI,1,161,1970)                2181100200017 
+            10B(n,a) cross sectio analytical expression           2181100200018 
+           (R,21704001,C.Wagemans+,J,ANE,7,495,1980)              2181100200019 
+            239Pu(n,f) fission cross section for correction       2181100200020 
+ERR-ANALYS (DATA-ERR) Overall accuracy from                       2181100200021 
+            - thermal constant (1015+/-7 b),                      2181100200022 
+            - 241Pu(n,f) and 10B(n,a) background,                 2181100200023 
+            - sample impurity,                                    2181100200024 
+            - deviation of 10B(n,a) cross section from 1/v,       2181100200025 
+              which is important above 1 keV,                     2181100200026 
+            - statistical error.                                  2181100200027 
+STATUS     (TABLE) Table 1 of Nucl.Data for Sci. & Technol., p69  2181100200028 
+HISTORY    (19830117C) A.P.T.                                     2181100200029 
+           (20180829A) SD: SF4=Li-7 added to MONITOR reaction.    2181100200030 
+            ERR-T -> DATA-ERR.                                    2181100200031 
+           (20190722A) On. MONITOR corrected.                     2181100200032 
+ENDBIB              30          0                                 2181100200033 
+COMMON               3          3                                 2181100200034 
+EN-NRM-MIN EN-NRM-MAX MONIT                                       2181100200035 
+EV         EV         B*EV                                        2181100200036 
+ 0.02       0.10       60.11                                      2181100200037 
+ENDCOMMON            3          0                                 2181100200038 
+DATA                 4         15                                 2181100200039 
+EN-MIN     EN-MAX     DATA       DATA-ERR                         2181100200040 
+EV         EV         B          PER-CENT                         2181100200041 
+     0.02       0.1    751.3      2.                              2181100200042 
+     0.1        0.5    681.6      2.                              2181100200043 
+     0.5        1.      42.4      2.                              2181100200044 
+     1.        10.     189.7      2.                              2181100200045 
+    10.        20.     151.7      2.                              2181100200046 
+    20.        30.      85.5      2.                              2181100200047 
+    30.        40.      49.6      3.                              2181100200048 
+    40.        50.      45.5      3.                              2181100200049 
+    50.       100.      39.6      3.                              2181100200050 
+   100.       500.      23.6      3.                              2181100200051 
+   500.      1000.      12.1      3.                              2181100200052 
+  1000.      5000.       7.21     4.                              2181100200053 
+  5000.     10000.       4.2      4.                              2181100200054 
+ 10000.     20000.       3.09     4.                              2181100200055 
+ 20000.     30000.       2.76     4.                              2181100200056 
+ENDDATA             17          0                                 2181100200057 
+ENDSUBENT           56          0                                 2181100299999 
 ENDENTRY             2          0                                 2181199999999 
