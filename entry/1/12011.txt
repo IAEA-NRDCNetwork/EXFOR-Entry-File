@@ -1,86 +1,445 @@
-ENTRY            12011   20061107                             13421201100000001 
-SUBENT        12011001   20061107                             13421201100100001 
-BIB                  9         14                                 1201100100002 
-INSTITUTE  (1CANCRC)                                              1201100100003 
-REFERENCE  (C,58GENEVA,16,54(203),1958)                           1201100100004 
-AUTHOR     (T.A.Eastwood,A.P.Baerg,C.B.Bigham,F.Brown,M.J.Cabell, 1201100100005 
-           W.E.Grummitt,J.C.Roy,L.P.Roy,R.P.Schuman)              1201100100006 
-TITLE      Radiochemical methods applied to the determination of  1201100100007 
-           cross sections of reactor interest.                    1201100100008 
-FACILITY   (REAC) NRX reactor.                                    1201100100009 
-MONITOR    ((MONIT1)27-CO-59(N,G)27-CO-60,,SIG)                   1201100100010 
-DECAY-MON  (27-CO-60-G,5.28YR)                                    1201100100011 
-STATUS     (SCSRS)                                                1201100100012 
-HISTORY    (19760802T) Translated from SCISRS                     1201100100013 
-           (19830802A) Converted to reaction formalism            1201100100014 
-           (19860812A) BIB update, MONITOR added.                 1201100100015 
-           (20061107A) DR Format updated                          1201100100016 
-ENDBIB              14          0                                 1201100100017 
-COMMON               1          3                                 1201100100018 
-MONIT1                                                            1201100100019 
-B                                                                 1201100100020 
- 36.5                                                             1201100100021 
-ENDCOMMON            3          0                                 1201100100022 
-ENDSUBENT           21          0                                 1201100199999 
-SUBENT        12011002   20061107                             13421201100200001 
-BIB                  5          5                                 1201100200002 
-REACTION   (56-BA-140(N,G)56-BA-141,,SIG,,SPA)                    1201100200003 
-METHOD     (ACTIV)    Activation                                  1201100200004 
-INC-SPECT   Reactor spectrum                                      1201100200005 
-STATUS     Data taken from private communication, Eastwood,7/59.  1201100200006 
-HISTORY    (19911122A) Data updated                               1201100200007 
-ENDBIB               5          0                                 1201100200008 
-NOCOMMON             0          0                                 1201100200009 
-DATA                 2          1                                 1201100200010 
-EN-DUMMY   DATA-MAX                                               1201100200011 
-MEV        B                                                      1201100200012 
-   2.53E-08 20.                                                   1201100200013 
-ENDDATA              3          0                                 1201100200014 
-ENDSUBENT           13          0                                 1201100299999 
-SUBENT        12011003   20061107                             13421201100300001 
-BIB                  2          2                                 1201100300002 
-REACTION   (93-NP-239(N,F),,SIG)                                  1201100300003 
-HISTORY    (19911122A) Isotope corrected                          1201100300004 
-ENDBIB               2          0                                 1201100300005 
-NOCOMMON             0          0                                 1201100300006 
-DATA                 2          1                                 1201100300007 
-EN         DATA-MAX                                               1201100300008 
-MEV        B                                                      1201100300009 
-   2.53E-08 1.0                                                   1201100300010 
-ENDDATA              3          0                                 1201100300011 
-ENDSUBENT           10          0                                 1201100399999 
-SUBENT        12011004   19860812                             00001201100400001 
-BIB                  2          2                                 1201100400002 
-REACTION   (94-PU-238(N,F),,SIG)                                  1201100400003 
-MONITOR    ((MONIT2)92-U-235(N,F),,SIG)                           1201100400004 
-ENDBIB               2          0                                 1201100400005 
-NOCOMMON             0          0                                 1201100400006 
-DATA                 5          1                                 1201100400007 
-EN         DATA       DATA-ERR   MONIT2     MONIT2-ERR            1201100400008 
-EV         B          B          B          B                     1201100400009 
- 0.0253     17.1       0.4        575.       6.                   1201100400010 
-ENDDATA              3          0                                 1201100400011 
-ENDSUBENT           10          0                                 1201100499999 
-SUBENT        12011005   19830802                             00001201100500001 
-BIB                  1          1                                 1201100500002 
-REACTION   (94-PU-242(N,F),,SIG)                                  1201100500003 
-ENDBIB               1          0                                 1201100500004 
-NOCOMMON             0          0                                 1201100500005 
-DATA                 3          1                                 1201100500006 
-EN         DATA       DATA-ERR                                    1201100500007 
-EV         B          B                                           1201100500008 
- 0.0253     0.         0.2                                        1201100500009 
-ENDDATA              3          0                                 1201100500010 
-ENDSUBENT            9          0                                 1201100599999 
-SUBENT        12011006   20061107                             13421201100600001 
-BIB                  1          1                                 1201100600002 
-REACTION   (94-PU-240(N,F),,SIG)                                  1201100600003 
-ENDBIB               1          0                                 1201100600004 
-NOCOMMON             0          0                                 1201100600005 
-DATA                 3          1                                 1201100600006 
-EN         DATA       DATA-ERR                                    1201100600007 
-MEV        B          B                                           1201100600008 
-   2.53E-08    3.0E-02    4.5E-02                                 1201100600009 
-ENDDATA              3          0                                 1201100600010 
-ENDSUBENT            9          0                                 1201100699999 
-ENDENTRY             6          0                                 1201199999999 
+ENTRY            12011   20220519                             150312011  0    1 
+SUBENT        12011001   20220519                             150312011  1    1 
+BIB                  8         18                                 12011  1    2 
+TITLE      Radiochemical methods applied to the determination of  12011  1    3 
+           cross sections of reactor interest                     12011  1    4 
+AUTHOR     (T.A.Eastwood,A.P.Baerg,C.B.Bigham,F.Brown,M.J.Cabell, 12011  1    5 
+           W.E.Grummitt,J.C.Roy,L.P.Roy,R.P.Schuman)              12011  1    6 
+REFERENCE  (C,58GENEVA,16,54(203),1958)                           12011  1    7 
+           (B,PR.NUC.EN.,3,(1),55,1959) Complementary reference.  12011  1    8 
+INSTITUTE  (1CANCRC)                                              12011  1    9 
+FACILITY   (REAC,1CANCRC)                                         12011  1   10 
+           (REAC,1USAINL) NRX and  MTR reactors.                  12011  1   11 
+MONITOR    ((MONIT1)27-CO-59(N,G)27-CO-60,,SIG)                   12011  1   12 
+DECAY-MON  (27-CO-60-G,5.28YR)                                    12011  1   13 
+HISTORY    (19760802T) Translated from SCISRS.                    12011  1   14 
+           (19830802A) Converted to reaction formalism            12011  1   15 
+           (19860812A) BIB update, monitor added.                 12011  1   16 
+           (20061107A) DR format updated.                         12011  1   17 
+           (20220519A) BP: Added complementary reference,         12011  1   18 
+           resonance integrals, activation measurements, method   12011  1   19 
+           and sample information. Subs. 7-24 added.              12011  1   20 
+ENDBIB              18          0                                 12011  1   21 
+COMMON               1          3                                 12011  1   22 
+MONIT1                                                            12011  1   23 
+B                                                                 12011  1   24 
+       36.5                                                       12011  1   25 
+ENDCOMMON            3          0                                 12011  1   26 
+ENDSUBENT           25          0                                 12011  199999 
+SUBENT        12011002   20220519                             150312011  2    1 
+BIB                  6         10                                 12011  2    2 
+REACTION   (56-BA-140(N,G)56-BA-141,,SIG,,SPA)                    12011  2    3 
+METHOD     (ACTIV)                                                12011  2    4 
+INC-SPECT   Reactor spectrum                                      12011  2    5 
+STATUS     (TABLE) Data taken from private communication,         12011  2    6 
+           Eastwood,7/59. Also mentioned on Table 11 of           12011  2    7 
+           complementary reference.                               12011  2    8 
+DECAY-DATA (56-BA-140,12.8D)                                      12011  2    9 
+           (58-CE-141,32.0D)                                      12011  2   10 
+HISTORY    (19911122A) Data updated.                              12011  2   11 
+           (20220519A) BP: Added decay data.                      12011  2   12 
+ENDBIB              10          0                                 12011  2   13 
+NOCOMMON             0          0                                 12011  2   14 
+DATA                 2          1                                 12011  2   15 
+EN-DUMMY   DATA-MAX                                               12011  2   16 
+MEV        B                                                      12011  2   17 
+   2.53E-08        20.                                            12011  2   18 
+ENDDATA              3          0                                 12011  2   19 
+ENDSUBENT           18          0                                 12011  299999 
+SUBENT        12011003   20220519                             150312011  3    1 
+BIB                  4          4                                 12011  3    2 
+REACTION   (93-NP-239(N,F),,SIG)                                  12011  3    3 
+METHOD     (CHSEP) Precipitation and ion-exchange methods.        12011  3    4 
+STATUS     (TABLE) Table 13, page 70 of complementary reference.  12011  3    5 
+HISTORY    (19911122A) Isotope corrected                          12011  3    6 
+ENDBIB               4          0                                 12011  3    7 
+NOCOMMON             0          0                                 12011  3    8 
+DATA                 2          1                                 12011  3    9 
+EN         DATA-MAX                                               12011  3   10 
+MEV        B                                                      12011  3   11 
+   2.53E-08        1.0                                            12011  3   12 
+ENDDATA              3          0                                 12011  3   13 
+ENDSUBENT           12          0                                 12011  399999 
+SUBENT        12011004   20220519                             150312011  4    1 
+BIB                  5          8                                 12011  4    2 
+REACTION   (94-PU-238(N,F),,SIG)                                  12011  4    3 
+METHOD     (CHSEP) Precipitation and ion-exchange methods. From   12011  4    4 
+           alpha-decay of 242Cm produced by the short radiation   12011  4    5 
+           of 241Am which, in turn, was obtained from a           12011  4    6 
+           beta-decay of 241Pu in neutron-irradiated plutonium.   12011  4    7 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011  4    8 
+MONITOR    ((MONIT2)92-U-235(N,F),,SIG)                           12011  4    9 
+STATUS     (TABLE) Table 13, page 70 of complementary reference.  12011  4   10 
+ENDBIB               8          0                                 12011  4   11 
+NOCOMMON             0          0                                 12011  4   12 
+DATA                 5          1                                 12011  4   13 
+EN         DATA       DATA-ERR   MONIT2     MONIT2-ERR            12011  4   14 
+EV         B          B          B          B                     12011  4   15 
+     0.0253       17.1        0.4       575.         6.           12011  4   16 
+ENDDATA              3          0                                 12011  4   17 
+ENDSUBENT           16          0                                 12011  499999 
+SUBENT        12011005   20220519                             150312011  5    1 
+BIB                  5         11                                 12011  5    2 
+REACTION   (94-PU-242(N,F),,SIG)                                  12011  5    3 
+SAMPLE     (94-PU-242,ENR=0.9890)                                 12011  5    4 
+           (94-PU-238,ENR=0.00076)                                12011  5    5 
+           (94-PU-240,ENR=0.00673)                                12011  5    6 
+           (94-PU-241,ENR=0.00217)                                12011  5    7 
+           (94-PU-244,ENR=0.00076)                                12011  5    8 
+METHOD     (CHSEP) Precipitation and ion-exchange methods. By     12011  5    9 
+           the long neutron irradiation of plutonium (n*v*t =     12011  5   10 
+           2*10**22 n/cm2).                                       12011  5   11 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011  5   12 
+STATUS     (TABLE) Table 13, page 70 of complementary reference.  12011  5   13 
+ENDBIB              11          0                                 12011  5   14 
+NOCOMMON             0          0                                 12011  5   15 
+DATA                 3          1                                 12011  5   16 
+EN         DATA       DATA-ERR                                    12011  5   17 
+EV         B          B                                           12011  5   18 
+     0.0253        0.0        0.2                                 12011  5   19 
+ENDDATA              3          0                                 12011  5   20 
+ENDSUBENT           19          0                                 12011  599999 
+SUBENT        12011006   20220519                             150312011  6    1 
+BIB                  5         11                                 12011  6    2 
+REACTION   (94-PU-240(N,F),,SIG)                                  12011  6    3 
+SAMPLE     (94-PU-240,ENR=0.9815)                                 12011  6    4 
+           (94-PU-238,ENR=0.018)                                  12011  6    5 
+           (94-PU-239,ENR=0.000352)                               12011  6    6 
+           (94-PU-241,ENR=0.00025)                                12011  6    7 
+           (94-PU-242,ENR=0.00012)                                12011  6    8 
+METHOD     (CHSEP) Precipitation and ion-exchange methods. From   12011  6    9 
+           alpha-decay of 242Cm produced by the long neutron      12011  6   10 
+           irradiation of plutonium (n*v*t=2*10**22 n/cm2).       12011  6   11 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011  6   12 
+STATUS     (TABLE) Table 13, page 70 of complementary reference.  12011  6   13 
+ENDBIB              11          0                                 12011  6   14 
+NOCOMMON             0          0                                 12011  6   15 
+DATA                 3          1                                 12011  6   16 
+EN         DATA       DATA-ERR                                    12011  6   17 
+MEV        B          B                                           12011  6   18 
+   2.53E-08    3.0E-02    4.5E-02                                 12011  6   19 
+ENDDATA              3          0                                 12011  6   20 
+ENDSUBENT           19          0                                 12011  699999 
+SUBENT        12011007   20220530                             150312011  7    1 
+BIB                  4          4                                 12011  7    2 
+REACTION   (94-PU-238(N,F),,RI)                                   12011  7    3 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011  7    4 
+STATUS     (TABLE) Table 13, page 70 of complementary reference.  12011  7    5 
+HISTORY    (20220519C) BP                                         12011  7    6 
+ENDBIB               4          0                                 12011  7    7 
+NOCOMMON             0          0                                 12011  7    8 
+DATA                 3          1                                 12011  7    9 
+EN-MIN     DATA       DATA-ERR                                    12011  7   10 
+EV         B          B                                           12011  7   11 
+        0.6       25.0        5.0                                 12011  7   12 
+ENDDATA              3          0                                 12011  7   13 
+ENDSUBENT           12          0                                 12011  799999 
+SUBENT        12011008   20220530                             150312011  8    1 
+BIB                  5          9                                 12011  8    2 
+REACTION   (94-PU-240(N,F),,RI)                                   12011  8    3 
+SAMPLE     (94-PU-240,ENR=0.9815)                                 12011  8    4 
+           (94-PU-238,ENR=0.018)                                  12011  8    5 
+           (94-PU-239,ENR=0.000352)                               12011  8    6 
+           (94-PU-241,ENR=0.00025)                                12011  8    7 
+           (94-PU-242,ENR=0.00012)                                12011  8    8 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011  8    9 
+STATUS     (TABLE) Table 13, page 70 of complementary reference.  12011  8   10 
+HISTORY    (20220519C) BP                                         12011  8   11 
+ENDBIB               9          0                                 12011  8   12 
+NOCOMMON             0          0                                 12011  8   13 
+DATA                 3          1                                 12011  8   14 
+EN-MIN     DATA       DATA-ERR                                    12011  8   15 
+EV         B          B                                           12011  8   16 
+        0.6        3.0        4.0                                 12011  8   17 
+ENDDATA              3          0                                 12011  8   18 
+ENDSUBENT           17          0                                 12011  899999 
+SUBENT        12011009   20220530                             150312011  9    1 
+BIB                  7         11                                 12011  9    2 
+REACTION   (37-RB-88(N,G)37-RB-89,,SIG,,SPA)                      12011  9    3 
+METHOD     (ACTIV)                                                12011  9    4 
+ERR-ANALYS (DATA-ERR) Errors, not including the 25% uncertainty   12011  9    5 
+           in capture cross section of 87Rb, amounted in 30% for  12011  9    6 
+           the 88Rb value.                                        12011  9    7 
+DECAY-DATA (37-RB-89,14.9MIN,B-)                                  12011  9    8 
+           (37-RB-88,17.8MIN,B-)                                  12011  9    9 
+CORRECTION Corrected for alternative routes of 89Sr production    12011  9   10 
+           via 88Rb beta decay.                                   12011  9   11 
+STATUS     (TABLE) page 59 of complementary reference.            12011  9   12 
+HISTORY    (20220519C) BP                                         12011  9   13 
+ENDBIB              11          0                                 12011  9   14 
+NOCOMMON             0          0                                 12011  9   15 
+DATA                 3          1                                 12011  9   16 
+EN-DUMMY   DATA       DATA-ERR                                    12011  9   17 
+EV         B          B                                           12011  9   18 
+     0.0253        1.0        0.3                                 12011  9   19 
+ENDDATA              3          0                                 12011  9   20 
+ENDSUBENT           19          0                                 12011  999999 
+SUBENT        12011010   20220530                             150312011 10    1 
+BIB                  7          8                                 12011 10    2 
+REACTION   (38-SR-88(N,G)38-SR-89,,SIG,,SPA)                      12011 10    3 
+SAMPLE     Two weighed samples of SrCO3 were irradiated.          12011 10    4 
+METHOD     (ACTIV)                                                12011 10    5 
+ERR-ANALYS (DATA-ERR) Errors, mainly in counting and flux         12011 10    6 
+           measurements, amounted to 7%.                          12011 10    7 
+DECAY-DATA (38-SR-89,51.0D,B-)                                    12011 10    8 
+STATUS     (TABLE) page 59 of complementary reference.            12011 10    9 
+HISTORY    (20220519C) BP                                         12011 10   10 
+ENDBIB               8          0                                 12011 10   11 
+NOCOMMON             0          0                                 12011 10   12 
+DATA                 3          1                                 12011 10   13 
+EN-DUMMY   DATA       DATA-ERR                                    12011 10   14 
+EV         MB         PER-CENT                                    12011 10   15 
+     0.0253        5.8        7.0                                 12011 10   16 
+ENDDATA              3          0                                 12011 10   17 
+ENDSUBENT           16          0                                 12011 1099999 
+SUBENT        12011011   20220530                             150312011 11    1 
+BIB                  7          9                                 12011 11    2 
+REACTION   (38-SR-89(N,G)38-SR-90,,SIG,,SPA)                      12011 11    3 
+SAMPLE     Three weighed samples of SrCO3 were irradiated.        12011 11    4 
+METHOD     (ACTIV)                                                12011 11    5 
+ERR-ANALYS (DATA-ERR) Errors, including the 7% in 88Sr cross      12011 11    6 
+           section amount to the 10% of that for 89Sr.            12011 11    7 
+DECAY-DATA (38-SR-89,51.0D,B-)                                    12011 11    8 
+           (38-SR-90,28.0YR,B-)                                   12011 11    9 
+STATUS     (TABLE) page 60 of complementary reference.            12011 11   10 
+HISTORY    (20220519C) BP                                         12011 11   11 
+ENDBIB               9          0                                 12011 11   12 
+NOCOMMON             0          0                                 12011 11   13 
+DATA                 3          1                                 12011 11   14 
+EN-DUMMY   DATA       DATA-ERR                                    12011 11   15 
+EV         B          B                                           12011 11   16 
+     0.0253       0.42       0.04                                 12011 11   17 
+ENDDATA              3          0                                 12011 11   18 
+ENDSUBENT           17          0                                 12011 1199999 
+SUBENT        12011012   20220530                             150312011 12    1 
+BIB                  4          4                                 12011 12    2 
+REACTION   (39-Y-91(N,G)39-Y-92,,SIG,,SPA)                        12011 12    3 
+METHOD     (ACTIV)                                                12011 12    4 
+STATUS     (TABLE) page 61 of complementary reference.            12011 12    5 
+HISTORY    (20220519C) BP                                         12011 12    6 
+ENDBIB               4          0                                 12011 12    7 
+NOCOMMON             0          0                                 12011 12    8 
+DATA                 2          1                                 12011 12    9 
+EN-DUMMY   DATA-MAX                                               12011 12   10 
+EV         B                                                      12011 12   11 
+     0.0253       10.0                                            12011 12   12 
+ENDDATA              3          0                                 12011 12   13 
+ENDSUBENT           12          0                                 12011 1299999 
+SUBENT        12011013   20220530                             150312011 13    1 
+BIB                  8          9                                 12011 13    2 
+REACTION   (53-I-129(N,G)53-I-130-G,M+,SIG,,SPA)                  12011 13    3 
+SAMPLE     (53-I-129,ENR=0.513) From NaI supplied by the Oak      12011 13    4 
+           Ridge National Laboratory.                             12011 13    5 
+DETECTOR   (PROPC) End-window or 4pi, methane-flow counter.       12011 13    6 
+METHOD     (ACTIV)                                                12011 13    7 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011 13    8 
+DECAY-DATA (53-I-130-G,12.5HR,B-) Measured by authors.            12011 13    9 
+STATUS     (TABLE) page 62 of complementary reference.            12011 13   10 
+HISTORY    (20220519C) BP                                         12011 13   11 
+ENDBIB               9          0                                 12011 13   12 
+NOCOMMON             0          0                                 12011 13   13 
+DATA                 3          1                                 12011 13   14 
+EN-DUMMY   DATA       DATA-ERR                                    12011 13   15 
+EV         B          B                                           12011 13   16 
+     0.0253       27.0        2.0                                 12011 13   17 
+ENDDATA              3          0                                 12011 13   18 
+ENDSUBENT           17          0                                 12011 1399999 
+SUBENT        12011014   20220530                             150312011 14    1 
+BIB                  8          9                                 12011 14    2 
+REACTION   (53-I-129(N,G)53-I-130-G,M+,RI)                        12011 14    3 
+SAMPLE     (53-I-129,ENR=0.513) From NaI supplied by the Oak      12011 14    4 
+           Ridge National Laboratory.                             12011 14    5 
+DETECTOR   (PROPC) End-window or 4pi, methane-flow counter.       12011 14    6 
+METHOD     (ACTIV)                                                12011 14    7 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011 14    8 
+DECAY-DATA (53-I-130-G,12.5HR,B-) Measured by authors.            12011 14    9 
+STATUS     (TABLE) page 62 of complementary reference.            12011 14   10 
+HISTORY    (20220519C) BP                                         12011 14   11 
+ENDBIB               9          0                                 12011 14   12 
+NOCOMMON             0          0                                 12011 14   13 
+DATA                 3          1                                 12011 14   14 
+EN-MIN     DATA       DATA-ERR                                    12011 14   15 
+EV         B          B                                           12011 14   16 
+        0.6       36.0        4.0                                 12011 14   17 
+ENDDATA              3          0                                 12011 14   18 
+ENDSUBENT           17          0                                 12011 1499999 
+SUBENT        12011015   20220530                             150312011 15    1 
+BIB                  6          8                                 12011 15    2 
+REACTION   (53-I-130(N,G)53-I-131,,SIG,,SPA)                      12011 15    3 
+METHOD     (ACTIV)                                                12011 15    4 
+ERR-ANALYS (DATA-ERR) Errors, including the uncertainty of 129I,  12011 15    5 
+           amount to about 17%.                                   12011 15    6 
+DECAY-DATA (53-I-130-G,12.5HR)                                    12011 15    7 
+           (53-I-131,8.05D,B-)                                    12011 15    8 
+STATUS     (TABLE) page 63 of complementary reference.            12011 15    9 
+HISTORY    (20220519C) BP                                         12011 15   10 
+ENDBIB               8          0                                 12011 15   11 
+NOCOMMON             0          0                                 12011 15   12 
+DATA                 3          1                                 12011 15   13 
+EN-DUMMY   DATA       DATA-ERR                                    12011 15   14 
+EV         B          B                                           12011 15   15 
+     0.0253       18.0        3.0                                 12011 15   16 
+ENDDATA              3          0                                 12011 15   17 
+ENDSUBENT           16          0                                 12011 1599999 
+SUBENT        12011016   20220530                             150312011 16    1 
+BIB                  7          7                                 12011 16    2 
+REACTION   (55-CS-133(N,G)55-CS-134,,SIG,,SPA)                    12011 16    3 
+SAMPLE     Weighed amounts of irradiated CsCl and Cs2CO3.         12011 16    4 
+METHOD     (ACTIV,CHSEP) 4pi beta-counting techniques.            12011 16    5 
+ERR-ANALYS (DATA-ERR) Errors amounted to about 4%.                12011 16    6 
+DECAY-DATA (55-CS-134-G,2.19YR,B-)                                12011 16    7 
+STATUS     (TABLE) page 63 of complementary reference.            12011 16    8 
+HISTORY    (20220519C) BP                                         12011 16    9 
+ENDBIB               7          0                                 12011 16   10 
+NOCOMMON             0          0                                 12011 16   11 
+DATA                 3          1                                 12011 16   12 
+EN-DUMMY   DATA       DATA-ERR                                    12011 16   13 
+EV         B          B                                           12011 16   14 
+     0.0253       29.8        1.2                                 12011 16   15 
+ENDDATA              3          0                                 12011 16   16 
+ENDSUBENT           15          0                                 12011 1699999 
+SUBENT        12011017   20220530                             150312011 17    1 
+BIB                  8         10                                 12011 17    2 
+REACTION   (55-CS-134(N,G)55-CS-135,,SIG,,SPA)                    12011 17    3 
+SAMPLE     Weighed amounts of irradiated CsCl and Cs2CO3.         12011 17    4 
+METHOD     (ACTIV,CHSEP) 4pi beta-counting techniques.            12011 17    5 
+ERR-ANALYS (DATA-ERR) Errors including experimental errors plus   12011 17    6 
+           uncertainty if Cs-134 half-life                        12011 17    7 
+DECAY-DATA (55-CS-134-G,2.19YR,B-)                                12011 17    8 
+STATUS     (TABLE) Table 6, page 64 of complementary reference.   12011 17    9 
+FLAG       (1.) MTR, Idaho, USA reactor.                          12011 17   10 
+           (2.) NRX reactor, Canada.                              12011 17   11 
+HISTORY    (20220519C) BP                                         12011 17   12 
+ENDBIB              10          0                                 12011 17   13 
+NOCOMMON             0          0                                 12011 17   14 
+DATA                 4          2                                 12011 17   15 
+EN-DUMMY   DATA       DATA-ERR   FLAG                             12011 17   16 
+EV         B          B          NO-DIM                           12011 17   17 
+     0.0253      134.0        7.0         1.                      12011 17   18 
+     0.0253      142.0       14.0         2.                      12011 17   19 
+ENDDATA              4          0                                 12011 17   20 
+ENDSUBENT           19          0                                 12011 1799999 
+SUBENT        12011018   20220530                             150312011 18    1 
+BIB                  7          7                                 12011 18    2 
+REACTION   (55-CS-135(N,G)55-CS-136,,SIG,,SPA)                    12011 18    3 
+SAMPLE     Weighed amounts of irradiated CsCl and Cs2CO3.         12011 18    4 
+METHOD     (ACTIV,CHSEP) 4pi beta-counting techniques.            12011 18    5 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011 18    6 
+DECAY-DATA (55-CS-136-G,13.0D,B-)                                 12011 18    7 
+STATUS     (TABLE) Table 7, page 65 of complementary reference.   12011 18    8 
+HISTORY    (20220519C) BP                                         12011 18    9 
+ENDBIB               7          0                                 12011 18   10 
+NOCOMMON             0          0                                 12011 18   11 
+DATA                 3          1                                 12011 18   12 
+EN-DUMMY   DATA       DATA-ERR                                    12011 18   13 
+EV         B          B                                           12011 18   14 
+     0.0253        8.7        0.5                                 12011 18   15 
+ENDDATA              3          0                                 12011 18   16 
+ENDSUBENT           15          0                                 12011 1899999 
+SUBENT        12011019   20220530                             150312011 19    1 
+BIB                  7          7                                 12011 19    2 
+REACTION   (55-CS-135(N,G)55-CS-136,,RI)                          12011 19    3 
+SAMPLE     Weighed amounts of irradiated CsCl and Cs2CO3.         12011 19    4 
+METHOD     (ACTIV,CHSEP) 4pi beta-counting techniques.            12011 19    5 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011 19    6 
+DECAY-DATA (55-CS-136-G,13.0D,B-)                                 12011 19    7 
+STATUS     (TABLE) Table 7, page 65 of complementary reference.   12011 19    8 
+HISTORY    (20220519C) BP                                         12011 19    9 
+ENDBIB               7          0                                 12011 19   10 
+NOCOMMON             0          0                                 12011 19   11 
+DATA                 3          1                                 12011 19   12 
+EN-MIN     DATA       DATA-ERR                                    12011 19   13 
+EV         B          B                                           12011 19   14 
+        0.6       62.0        2.0                                 12011 19   15 
+ENDDATA              3          0                                 12011 19   16 
+ENDSUBENT           15          0                                 12011 1999999 
+SUBENT        12011020   20220530                             150312011 20    1 
+BIB                  6          7                                 12011 20    2 
+REACTION   (59-PR-143(N,G)59-PR-144,,SIG,,SPA)                    12011 20    3 
+METHOD     (ACTIV)                                                12011 20    4 
+ERR-ANALYS (DATA-ERR) The efficiencies of the counters are the    12011 20    5 
+           major uncertainties estimated to be 11%.               12011 20    6 
+DECAY-DATA (59-PR-143,13.6D,B-)                                   12011 20    7 
+STATUS     (TABLE) page 67 of complementary reference.            12011 20    8 
+HISTORY    (20220519C) BP                                         12011 20    9 
+ENDBIB               7          0                                 12011 20   10 
+NOCOMMON             0          0                                 12011 20   11 
+DATA                 3          1                                 12011 20   12 
+EN-DUMMY   DATA       DATA-ERR                                    12011 20   13 
+EV         B          B                                           12011 20   14 
+     0.0253      124.0       14.0                                 12011 20   15 
+ENDDATA              3          0                                 12011 20   16 
+ENDSUBENT           15          0                                 12011 2099999 
+SUBENT        12011021   20220530                             150312011 21    1 
+BIB                  7          8                                 12011 21    2 
+REACTION   (91-PA-233(N,G)91-PA-234,,SIG,,SPA)                    12011 21    3 
+DETECTOR   (SCIN) An anthracene-crystal detector.                 12011 21    4 
+METHOD     (ACTIV)                                                12011 21    5 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011 21    6 
+DECAY-DATA (91-PA-234-M,1.18MIN) UX2 isomeric state.              12011 21    7 
+           (91-PA-234-G,6.66HR) UZ isomeric state.                12011 21    8 
+STATUS     (TABLE) page 67 of complementary reference.            12011 21    9 
+HISTORY    (20220519C) BP                                         12011 21   10 
+ENDBIB               8          0                                 12011 21   11 
+NOCOMMON             0          0                                 12011 21   12 
+DATA                 3          1                                 12011 21   13 
+EN-DUMMY   DATA       DATA-ERR                                    12011 21   14 
+EV         B          B                                           12011 21   15 
+     0.0253       20.0        4.0                                 12011 21   16 
+ENDDATA              3          0                                 12011 21   17 
+ENDSUBENT           16          0                                 12011 2199999 
+SUBENT        12011022   20220530                             150312011 22    1 
+BIB                  7          8                                 12011 22    2 
+REACTION   (91-PA-233(N,G)91-PA-234,,RI)                          12011 22    3 
+DETECTOR   (SCIN) An anthracene-crystal detector.                 12011 22    4 
+METHOD     (ACTIV)                                                12011 22    5 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011 22    6 
+DECAY-DATA (91-PA-234-M,1.18MIN) UX2 isomeric state.              12011 22    7 
+           (91-PA-234-G,6.66HR) UZ isomeric state.                12011 22    8 
+STATUS     (TABLE) page 67 of complementary reference.            12011 22    9 
+HISTORY    (20220519C) BP                                         12011 22   10 
+ENDBIB               8          0                                 12011 22   11 
+NOCOMMON             0          0                                 12011 22   12 
+DATA                 3          1                                 12011 22   13 
+EN-MIN     DATA       DATA-ERR                                    12011 22   14 
+EV         B          B                                           12011 22   15 
+        0.6      470.0       90.0                                 12011 22   16 
+ENDDATA              3          0                                 12011 22   17 
+ENDSUBENT           16          0                                 12011 2299999 
+SUBENT        12011023   20220530                             150312011 23    1 
+BIB                  7          8                                 12011 23    2 
+REACTION   (92-U-236(N,G)92-U-237,,SIG,,SPA)                      12011 23    3 
+SAMPLE     (92-U-236,ENR=0.9477) Supplied by the Oak Ridge        12011 23    4 
+           National Laboratory.                                   12011 23    5 
+METHOD     (ACTIV,COINC) 4pi beta and gamma coincidence counting. 12011 23    6 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011 23    7 
+DECAY-DATA (92-U-237,162.04HR,B)                                  12011 23    8 
+STATUS     (TABLE) page 68 of complementary reference.            12011 23    9 
+HISTORY    (20220519C) BP                                         12011 23   10 
+ENDBIB               8          0                                 12011 23   11 
+NOCOMMON             0          0                                 12011 23   12 
+DATA                 3          1                                 12011 23   13 
+EN-DUMMY   DATA       DATA-ERR                                    12011 23   14 
+EV         B          B                                           12011 23   15 
+     0.0253        5.5        0.3                                 12011 23   16 
+ENDDATA              3          0                                 12011 23   17 
+ENDSUBENT           16          0                                 12011 2399999 
+SUBENT        12011024   20220530                             150312011 24    1 
+BIB                  7          8                                 12011 24    2 
+REACTION   (92-U-236(N,G)92-U-237,,RI)                            12011 24    3 
+SAMPLE     (92-U-236,ENR=0.9477) Supplied by the Oak Ridge        12011 24    4 
+           National Laboratory.                                   12011 24    5 
+METHOD     (ACTIV,COINC) 4pi beta and gamma coincidence counting. 12011 24    6 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12011 24    7 
+DECAY-DATA (92-U-237,162.04HR,B)                                  12011 24    8 
+STATUS     (TABLE) page 68 of complementary reference.            12011 24    9 
+HISTORY    (20220519C) BP                                         12011 24   10 
+ENDBIB               8          0                                 12011 24   11 
+NOCOMMON             0          0                                 12011 24   12 
+DATA                 3          1                                 12011 24   13 
+EN-MIN     DATA       DATA-ERR                                    12011 24   14 
+EV         B          B                                           12011 24   15 
+        0.6      257.0       22.0                                 12011 24   16 
+ENDDATA              3          0                                 12011 24   17 
+ENDSUBENT           16          0                                 12011 2499999 
+ENDENTRY            24          0                                 1201199999999 

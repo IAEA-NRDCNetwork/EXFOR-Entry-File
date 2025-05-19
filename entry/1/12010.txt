@@ -1,82 +1,161 @@
-ENTRY            12010   20061107                             13421201000000001 
-SUBENT        12010001   20061107                             13421201000100001 
-BIB                  8         12                                 1201000100002 
-INSTITUTE  (1CANMCM)                                              1201000100003 
-REFERENCE  (C,58GENEVA,15,459(201),1958)                          1201000100004 
-AUTHOR     (D.Bidinosti,H.Fickel,R.Tomlinson)                     1201000100005 
-TITLE      Mass spectrometric studies of pile poisons and their   1201000100006 
-           yields in the fission of uranium-233, uranium-235, and 1201000100007 
-           plutonium-239.                                         1201000100008 
-FACILITY   (SPECM)                                                1201000100009 
-MONITOR    (27-CO-59(N,G)27-CO-60,,SIG)                           1201000100010 
-STATUS     (SCSRS)                                                1201000100011 
-HISTORY    (19760802T) Translated from SCISRS                     1201000100012 
-           (19830802A) Converted to reaction formalism            1201000100013 
-           (20061107A) DR Format updated                          1201000100014 
-ENDBIB              12          0                                 1201000100015 
-COMMON               1          3                                 1201000100016 
-MONIT                                                             1201000100017 
-B                                                                 1201000100018 
- 36.5                                                             1201000100019 
-ENDCOMMON            3          0                                 1201000100020 
-ENDSUBENT           19          0                                 1201000199999 
-SUBENT        12010002   20061107                             13421201000200001 
-BIB                  1          1                                 1201000200002 
-REACTION   (55-CS-133(N,ABS),,RI)                                 1201000200003 
-ENDBIB               1          0                                 1201000200004 
-NOCOMMON             0          0                                 1201000200005 
-DATA                 2          1                                 1201000200006 
-EN-MIN     DATA                                                   1201000200007 
-MEV        B                                                      1201000200008 
-     5.E-07   3.20E+02                                            1201000200009 
-ENDDATA              3          0                                 1201000200010 
-ENDSUBENT            9          0                                 1201000299999 
-SUBENT        12010003   20061107                             13421201000300001 
-BIB                  2          2                                 1201000300002 
-REACTION   (55-CS-133(N,G)55-CS-134,,SIG,,SPA)                    1201000300003 
-INC-SPECT  Reactor spectrum                                       1201000300004 
-ENDBIB               2          0                                 1201000300005 
-NOCOMMON             0          0                                 1201000300006 
-DATA                 2          1                                 1201000300007 
-EN-DUMMY   DATA                                                   1201000300008 
-EV         B                                                      1201000300009 
- 0.0253     39.9                                                  1201000300010 
-ENDDATA              3          0                                 1201000300011 
-ENDSUBENT           10          0                                 1201000399999 
-SUBENT        12010004   20061107                             13421201000400001 
-BIB                  2          2                                 1201000400002 
-REACTION   (61-PM-147(N,G)61-PM-148,,SIG,,SPA)                    1201000400003 
-INC-SPECT   Reactor spectrum                                      1201000400004 
-ENDBIB               2          0                                 1201000400005 
-NOCOMMON             0          0                                 1201000400006 
-DATA                 3          1                                 1201000400007 
-EN-DUMMY   DATA       DATA-ERR                                    1201000400008 
-MEV        B          B                                           1201000400009 
-   2.53E-08   2.00E+02    5.0E+01                                 1201000400010 
-ENDDATA              3          0                                 1201000400011 
-ENDSUBENT           10          0                                 1201000499999 
-SUBENT        12010005   20061107                             13421201000500001 
-BIB                  2          2                                 1201000500002 
-REACTION   (62-SM-149(N,ABS),,SIG,,MXW)                           1201000500003 
-INC-SPECT   Thermal spectrum                                      1201000500004 
-ENDBIB               2          0                                 1201000500005 
-NOCOMMON             0          0                                 1201000500006 
-DATA                 2          1                                 1201000500007 
-EN-DUMMY   DATA                                                   1201000500008 
-MEV        B                                                      1201000500009 
-   2.53E-08 4.2400E+04                                            1201000500010 
-ENDDATA              3          0                                 1201000500011 
-ENDSUBENT           10          0                                 1201000599999 
-SUBENT        12010006   20061107                             13421201000600001 
-BIB                  2          2                                 1201000600002 
-REACTION   (62-SM-151(N,ABS),,SIG,,SPA)                           1201000600003 
-INC-SPECT  Reactor spectrum                                       1201000600004 
-ENDBIB               2          0                                 1201000600005 
-NOCOMMON             0          0                                 1201000600006 
-DATA                 3          1                                 1201000600007 
-EN-DUMMY   DATA       DATA-ERR                                    1201000600008 
-EV         B          B                                           1201000600009 
- 0.0253       12.8E+03    0.4E+03                                 1201000600010 
-ENDDATA              3          0                                 1201000600011 
-ENDSUBENT           10          0                                 1201000699999 
-ENDENTRY             6          0                                 1201099999999 
+ENTRY            12010   20220519                             150312010  0    1 
+SUBENT        12010001   20220519                             150312010  1    1 
+BIB                 11         33                                 12010  1    2 
+TITLE      Mass spectrometric studies of pile poisons and their   12010  1    3 
+           yields in the fission of uranium-233, uranium-235, and 12010  1    4 
+           plutonium-239                                          12010  1    5 
+AUTHOR     (D.Bidinosti,H.Fickel,R.Tomlinson)                     12010  1    6 
+REFERENCE  (B,PR.NUC.EN.,3,(1),261,1959) Final publication.       12010  1    7 
+           (C,58GENEVA,15,459(201),1958) Initial results.         12010  1    8 
+INSTITUTE  (1CANMCM)                                              12010  1    9 
+FACILITY   (REAC,1CANCRC) NRX, Chalk River reactor.               12010  1   10 
+DETECTOR   (D4PI,IOCH) Well-type ionization chamber.              12010  1   11 
+METHOD     (ASEP,COINC) Sample of metal and oxide 238U and 15%    12010  1   12 
+           233U were irradiated at various fluxes and             12010  1   13 
+           irradiation times in Chalk River reactor. Associated   12010  1   14 
+           with samples were one or more 0.127 mm cobalt wires    12010  1   15 
+           weighing 1.148 mg. The cobalt standard was calibrated  12010  1   16 
+           by coincidence and 4pi counting techniques. The        12010  1   17 
+           thermal fluxes were calculated from the observed       12010  1   18 
+           activity after corrections assuming a value of 36.5    12010  1   19 
+           barns for 2,200 m/sec cross section of 59Co. The mass  12010  1   20 
+           spectrometry was carried out using a Nier-type         12010  1   21 
+           spectrometer of 25 cm radius with an all metal tube.   12010  1   22 
+MONITOR    (27-CO-59(N,G)27-CO-60,,SIG)                           12010  1   23 
+DECAY-MON  (27-CO-60-G,5.28YR)                                    12010  1   24 
+CORRECTION Corrections for decay of cobalt standard were less     12010  1   25 
+           than 10%, the self-shielding of cobalt wire was        12010  1   26 
+           estimated at 2.3%, contribution of activation by       12010  1   27 
+           epithermal neutrons was a compensating factor from     12010  1   28 
+           about 1% to to about 2.8%.                             12010  1   29 
+HISTORY    (19760802T) Translated from SCISRS.                    12010  1   30 
+           (19830802A) Converted to reaction formalism.           12010  1   31 
+           (20061107A) DR format updated.                         12010  1   32 
+           (20220519A) BP: Updated entry, FACILITY, STATUS.       12010  1   33 
+           Added second reference, METHOD, ERR-ANALYS,            12010  1   34 
+           DECAY-MON, CORRECTION,  subentries 7-8.                12010  1   35 
+ENDBIB              33          0                                 12010  1   36 
+COMMON               1          3                                 12010  1   37 
+MONIT                                                             12010  1   38 
+B                                                                 12010  1   39 
+       36.5                                                       12010  1   40 
+ENDCOMMON            3          0                                 12010  1   41 
+ENDSUBENT           40          0                                 12010  199999 
+SUBENT        12010002   20220519                             150312010  2    1 
+BIB                  2          2                                 12010  2    2 
+REACTION   (55-CS-133(N,ABS),,RI)                                 12010  2    3 
+STATUS     (TABLE) page 265 of final reference.                   12010  2    4 
+ENDBIB               2          0                                 12010  2    5 
+NOCOMMON             0          0                                 12010  2    6 
+DATA                 2          1                                 12010  2    7 
+EN-MIN     DATA                                                   12010  2    8 
+MEV        B                                                      12010  2    9 
+     5.E-07   3.20E+02                                            12010  2   10 
+ENDDATA              3          0                                 12010  2   11 
+ENDSUBENT           10          0                                 12010  299999 
+SUBENT        12010003   20220519                             150312010  3    1 
+BIB                  3          3                                 12010  3    2 
+REACTION   (55-CS-133(N,G)55-CS-134,,SIG,,SPA)                    12010  3    3 
+INC-SPECT  Reactor spectrum                                       12010  3    4 
+STATUS     (TABLE) Table 1, page 264 of final reference.          12010  3    5 
+ENDBIB               3          0                                 12010  3    6 
+NOCOMMON             0          0                                 12010  3    7 
+DATA                 2          1                                 12010  3    8 
+EN-DUMMY   DATA                                                   12010  3    9 
+EV         B                                                      12010  3   10 
+     0.0253       39.9                                            12010  3   11 
+ENDDATA              3          0                                 12010  3   12 
+ENDSUBENT           11          0                                 12010  399999 
+SUBENT        12010004   20220519                             150312010  4    1 
+BIB                  4          4                                 12010  4    2 
+REACTION   (61-PM-147(N,G)61-PM-148,,SIG,,SPA)                    12010  4    3 
+INC-SPECT   Reactor spectrum                                      12010  4    4 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12010  4    5 
+STATUS     (TABLE) Table 2, page 265 of final reference.          12010  4    6 
+ENDBIB               4          0                                 12010  4    7 
+NOCOMMON             0          0                                 12010  4    8 
+DATA                 3          1                                 12010  4    9 
+EN-DUMMY   DATA       DATA-ERR                                    12010  4   10 
+MEV        B          B                                           12010  4   11 
+   2.53E-08   2.00E+02    5.0E+01                                 12010  4   12 
+ENDDATA              3          0                                 12010  4   13 
+ENDSUBENT           12          0                                 12010  499999 
+SUBENT        12010005   20220519                             150312010  5    1 
+BIB                  4          4                                 12010  5    2 
+REACTION   (62-SM-149(N,ABS),,SIG,,MXW)                           12010  5    3 
+INC-SPECT  Thermal spectrum.                                      12010  5    4 
+ANALYSIS   Average value of 42,600 and 42,200 barns.              12010  5    5 
+STATUS     (TABLE) page 266 of final reference.                   12010  5    6 
+ENDBIB               4          0                                 12010  5    7 
+NOCOMMON             0          0                                 12010  5    8 
+DATA                 2          1                                 12010  5    9 
+EN-DUMMY   DATA                                                   12010  5   10 
+MEV        B                                                      12010  5   11 
+   2.53E-08 4.2400E+04                                            12010  5   12 
+ENDDATA              3          0                                 12010  5   13 
+ENDSUBENT           12          0                                 12010  599999 
+SUBENT        12010006   20220519                             150312010  6    1 
+BIB                  4          4                                 12010  6    2 
+REACTION   (62-SM-151(N,ABS),,SIG,,SPA)                           12010  6    3 
+INC-SPECT  Reactor spectrum                                       12010  6    4 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12010  6    5 
+STATUS     (TABLE) Table 4, page 267 of final reference.          12010  6    6 
+ENDBIB               4          0                                 12010  6    7 
+NOCOMMON             0          0                                 12010  6    8 
+DATA                 3          1                                 12010  6    9 
+EN-DUMMY   DATA       DATA-ERR                                    12010  6   10 
+EV         B          B                                           12010  6   11 
+     0.0253   12.8E+03    0.4E+03                                 12010  6   12 
+ENDDATA              3          0                                 12010  6   13 
+ENDSUBENT           12          0                                 12010  699999 
+SUBENT        12010007   20220520                             150312010  7    1 
+BIB                  6          6                                 12010  7    2 
+REACTION   (92-U-233(N,F)ELEM/MASS,CUM,FY,,SPA)                   12010  7    3 
+INC-SPECT  Reactor spectrum                                       12010  7    4 
+METHOD     Isotope-dilution method.                               12010  7    5 
+ERR-ANALYS (DATA-ERR) Absolute accuracy.                          12010  7    6 
+STATUS     (TABLE) Table 5, page 267 of final reference.          12010  7    7 
+HISTORY    (20220519C) BP                                         12010  7    8 
+ENDBIB               6          0                                 12010  7    9 
+COMMON               2          3                                 12010  7   10 
+EN-DUMMY   DATA-ERR                                               12010  7   11 
+EV         PER-CENT                                               12010  7   12 
+     0.0253        3.0                                            12010  7   13 
+ENDCOMMON            3          0                                 12010  7   14 
+DATA                 3          6                                 12010  7   15 
+ELEMENT    MASS       DATA                                        12010  7   16 
+NO-DIM     NO-DIM     PC/FIS                                      12010  7   17 
+       54.0      135.0        5.6                                 12010  7   18 
+       55.0      133.0        6.0                                 12010  7   19 
+       60.0      143.0       6.45                                 12010  7   20 
+       61.0      147.0        2.1                                 12010  7   21 
+       62.0      149.0        0.8                                 12010  7   22 
+       62.0      151.0        0.3                                 12010  7   23 
+ENDDATA              8          0                                 12010  7   24 
+ENDSUBENT           23          0                                 12010  799999 
+SUBENT        12010008   20220520                             150312010  8    1 
+BIB                  6          6                                 12010  8    2 
+REACTION   (94-PU-239(N,F)ELEM/MASS,CUM,FY,,SPA)                  12010  8    3 
+INC-SPECT  Reactor spectrum                                       12010  8    4 
+METHOD     Isotope-dilution method.                               12010  8    5 
+ERR-ANALYS (DATA-ERR) Absolute accuracy.                          12010  8    6 
+STATUS     (TABLE) Table 5, page 267 of final reference.          12010  8    7 
+HISTORY    (20220519C) BP                                         12010  8    8 
+ENDBIB               6          0                                 12010  8    9 
+COMMON               2          3                                 12010  8   10 
+EN-DUMMY   DATA-ERR                                               12010  8   11 
+EV         PER-CENT                                               12010  8   12 
+     0.0253        3.0                                            12010  8   13 
+ENDCOMMON            3          0                                 12010  8   14 
+DATA                 3          6                                 12010  8   15 
+ELEMENT    MASS       DATA                                        12010  8   16 
+NO-DIM     NO-DIM     PC/FIS                                      12010  8   17 
+       54.0      135.0       6.92                                 12010  8   18 
+       55.0      133.0       7.27                                 12010  8   19 
+       60.0      143.0       4.49                                 12010  8   20 
+       61.0      147.0       2.07                                 12010  8   21 
+       62.0      149.0       1.32                                 12010  8   22 
+       62.0      151.0       0.79                                 12010  8   23 
+ENDDATA              8          0                                 12010  8   24 
+ENDSUBENT           23          0                                 12010  899999 
+ENDENTRY             8          0                                 1201099999999 

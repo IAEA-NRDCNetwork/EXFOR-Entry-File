@@ -1,62 +1,117 @@
-ENTRY            13426   19891220                             00001342600000001 
-SUBENT        13426001   19891220                             00001342600100001 
-BIB                  9         13                                 1342600100002 
-INSTITUTE  (1USABNL)                                              1342600100003 
-REFERENCE  (R,BNL-1652,53)                                        1342600100004 
-AUTHOR     (S.KATCOFF,W.RUBINSON)                                 1342600100005 
-TITLE      YIELD OF KR85 AND XE133 IN THE THERMAL NEUTRON FISSION 1342600100006 
-            OF U235 AND YIELD OF KR85 IN THE THERMAL NEUTRON      1342600100007 
-            FISSION OF PU239                                      1342600100008 
-METHOD     (RCHEM)                                                1342600100009 
-DETECTOR   (IOCH) FOR FISSION COUNTING                            1342600100010 
-DECAY-DATA (36-KR-85,10.8YR)                                      1342600100011 
-STATUS     (RIDER)                                                1342600100012 
-           133XE YIELD IN 235U FISSION PUBLISHED IN PHYS.REV. 91, 1342600100013 
-            1458 (1953)                                           1342600100014 
-HISTORY    (900111C) VM                                           1342600100015 
-ENDBIB              13          0                                 1342600100016 
-COMMON               1          3                                 1342600100017 
-EN-DUMMY                                                          1342600100018 
-EV                                                                1342600100019 
-0.0253                                                            1342600100020 
-ENDCOMMON            3          0                                 1342600100021 
-ENDSUBENT           20          0                                 1342600199999 
-SUBENT        13426002   19891220                             00001342600200001 
-BIB                  3          4                                 1342600200002 
-REACTION   (92-U-235(N,F)36-KR-85,CUM,FY,,SPA)                    1342600200003 
-SAMPLE     ENRICHED TO 93.72% 235U                                1342600200004 
-ERR-ANALYS (DATA-ERR) ACCURACY ESTIMATED DERIVED FROM ACCURACIES  1342600200005 
-            OF 3% IN YIELD/HALF-LIFE VALUE AND 4% IN HALF-LIFE    1342600200006 
-ENDBIB               4          0                                 1342600200007 
-NOCOMMON             0          0                                 1342600200008 
-DATA                 2          1                                 1342600200009 
-DATA       DATA-ERR                                               1342600200010 
-PC/FIS     PER-CENT                                               1342600200011 
- 0.273      5.                                                    1342600200012 
-ENDDATA              3          0                                 1342600200013 
-ENDSUBENT           12          0                                 1342600299999 
-SUBENT        13426003   19891220                             00001342600300001 
-BIB                  2          2                                 1342600300002 
-REACTION   (94-PU-239(N,F)36-KR-85,CUM,FY,,SPA)                   1342600300003 
-ERR-ANALYS (DATA-ERR) STANDARD DEVIATION                          1342600300004 
-ENDBIB               2          0                                 1342600300005 
-NOCOMMON             0          0                                 1342600300006 
-DATA                 2          1                                 1342600300007 
-DATA       DATA-ERR                                               1342600300008 
-PC/FIS     PER-CENT                                               1342600300009 
- 0.0994      4.4                                                  1342600300010 
-ENDDATA              3          0                                 1342600300011 
-ENDSUBENT           10          0                                 1342600399999 
-SUBENT        13426004   19891220                             00001342600400001 
-BIB                  1          2                                 1342600400002 
-REACTION   ((92-U-235(N,F)54-XE-133,CUM,FY,,SPA)/                 1342600400003 
-           (92-U-235(N,F)36-KR-85,CUM,FY,,SPA))                   1342600400004 
-ENDBIB               2          0                                 1342600400005 
-NOCOMMON             0          0                                 1342600400006 
-DATA                 1          1                                 1342600400007 
-DATA                                                              1342600400008 
-NO-DIM                                                            1342600400009 
- 24.0                                                             1342600400010 
-ENDDATA              3          0                                 1342600400011 
-ENDSUBENT           10          0                                 1342600499999 
+ENTRY            13426   20220317                             150313426  0    1 
+SUBENT        13426001   20220317                             150313426  1    1 
+BIB                 11         40                                 13426  1    2 
+TITLE      Yield of Kr85 and Xe133 in the thermal neutron         13426  1    3 
+           fission of U235 and yield of Kr85 in the thermal       13426  1    4 
+           neutron fission of Pu239                               13426  1    5 
+AUTHOR     (S.Katcoff,W.Rubinson)                                 13426  1    6 
+REFERENCE  (R,BNL-1652,1953) Original publication.                13426  1    7 
+           (J,JIN,27,1447,1965) Journal publication.              13426  1    8 
+           #doi:10.1016/0022-1902(65)80001-x                      13426  1    9 
+REL-REF    (O,13371001,S.Katcoff+,J,PR,91,1458,1953) Independent  13426  1   10 
+           and cumulative yields ratios from the same experiment. 13426  1   11 
+           (I,13371001,S.Katcoff+,J,PR,91,1458,1953)              13426  1   12 
+           the double-chamber fission counting apparatus.         13426  1   13 
+INSTITUTE  (1USABNL)                                              13426  1   14 
+FACILITY   (REAC,1USABNL) Brookhaven pile.                        13426  1   15 
+INC-SPECT  2x10**11 n/cm**2/sec, the flux was constant to +- 2%   13426  1   16 
+           after reaching its full value.                         13426  1   17 
+DETECTOR   (PROPC,FISCH) Two gas proportional counters with       13426  1   18 
+           silver cathodes, 2 cm dia. and 30 cm long. The         13426  1   19 
+           krypton pressure was about 300 mm and methane was      13426  1   20 
+           added to bring the total pressure to 1 atm.            13426  1   21 
+SAMPLE     The fission foils, which consist of 0.01 microg of     13426  1   22 
+           235U or 239Pu deposited on a Pt disk 0.002 inch thick  13426  1   23 
+           and 1 inch in diameter.                                13426  1   24 
+METHOD     (CHSEP,FISCT) Absolute radiochemical methods, fission  13426  1   25 
+           yields to half life (Y/T). Foils were mounted on       13426  1   26 
+           platinum in each of the two chambers of fission        13426  1   27 
+           counting apparatus. The entire assembly was then       13426  1   28 
+           irradiated in the brookhaven graphite reactor for      13426  1   29 
+           6-12 hr, and the fission counting rates of the foils   13426  1   30 
+           were recorded continuously. After irradiation the      13426  1   31 
+           85Kr was radiochemically separated from the slug,      13426  1   32 
+           purified, and its activity measured by internal gas    13426  1   33 
+           phase proportional counting. From these values of the  13426  1   34 
+           85Kr activity and the measured number of fissions the  13426  1   35 
+           fission yield was calculated.                          13426  1   36 
+HISTORY    (19900111C) VM                                         13426  1   37 
+           (20220317A) BP: Updated to new date formats, lower     13426  1   38 
+           case. Corrections according last EXFOR rules and       13426  1   39 
+           Dict. Replaced RIDER's data with the original          13426  1   40 
+           publication, updated METHOD, added FACILITY, INC-SPECT,13426  1   41 
+            REL-REF.                                              13426  1   42 
+ENDBIB              40          0                                 13426  1   43 
+COMMON               1          3                                 13426  1   44 
+EN-DUMMY                                                          13426  1   45 
+EV                                                                13426  1   46 
+     0.0253                                                       13426  1   47 
+ENDCOMMON            3          0                                 13426  1   48 
+ENDSUBENT           47          0                                 13426  199999 
+SUBENT        13426002   20220317                             150313426  2    1 
+BIB                  6         14                                 13426  2    2 
+REACTION   (92-U-235(N,F)36-KR-85-G,CUM,FY,,SPA)                  13426  2    3 
+SAMPLE     (92-U-235,ENR=0.9372)                                  13426  2    4 
+ERR-ANALYS (DATA-ERR) The standard deviation is 1.59% of Y/T. As  13426  2    5 
+           concern for possible systematic errors. We feel that   13426  2    6 
+           is unlikely that measured Y/T values differ from true  13426  2    7 
+           more than 3%. Which we adopt as our accuracy estimate. 13426  2    8 
+           (ERR-1) 1% per slug fissions.                          13426  2    9 
+           (ERR-2) 2% for 85Kr activity.                          13426  2   10 
+DECAY-DATA ((1.)36-KR-85-G,10.27YR)  10.27+-0.18 years            13426  2   11 
+           ((2.)36-KR-85-G,10.8YR)                                13426  2   12 
+STATUS     (TABLE) page 49 of R,BNL-1652,1953.                    13426  2   13 
+           (SPSDD,13215002)                                       13426  2   14 
+HISTORY    (20220317A) BP: Replaced RIDER's data with the         13426  2   15 
+           original published data. Added STATUS (SPSDD)          13426  2   16 
+ENDBIB              14          0                                 13426  2   17 
+COMMON               2          3                                 13426  2   18 
+ERR-1      ERR-2                                                  13426  2   19 
+PER-CENT   PER-CENT                                               13426  2   20 
+        1.0        2.0                                            13426  2   21 
+ENDCOMMON            3          0                                 13426  2   22 
+DATA                 3          2                                 13426  2   23 
+DATA       DATA-ERR   DECAY-FLAG                                  13426  2   24 
+PC/FIS     PER-CENT   NO-DIM                                      13426  2   25 
+      0.260       2.36         1.                                 13426  2   26 
+      0.273        1.9         2.                                 13426  2   27 
+ENDDATA              4          0                                 13426  2   28 
+ENDSUBENT           27          0                                 13426  299999 
+SUBENT        13426003   20220317                             150313426  3    1 
+BIB                  5          9                                 13426  3    2 
+REACTION   (94-PU-239(N,F)36-KR-85-G,CUM,FY,,SPA)                 13426  3    3 
+ERR-ANALYS (DATA-ERR) Standard deviation per determination of Y/T 13426  3    4 
+           is 4.3%.                                               13426  3    5 
+DECAY-DATA ((1.)36-KR-85-G,10.27YR) 10.27+-0.18 years             13426  3    6 
+           ((2.)36-KR-85-G,10.8YR)                                13426  3    7 
+STATUS     (TABLE) page 49 of R,BNL-1652,1953.                    13426  3    8 
+           (SPSDD,13215003)                                       13426  3    9 
+HISTORY    (20220317A) BP: Replaced RIDER's data with the         13426  3   10 
+           original published data. Added STATUS (SPSDD)          13426  3   11 
+ENDBIB               9          0                                 13426  3   12 
+NOCOMMON             0          0                                 13426  3   13 
+DATA                 3          2                                 13426  3   14 
+DATA       DATA-ERR   DECAY-FLAG                                  13426  3   15 
+PC/FIS     PER-CENT   NO-DIM                                      13426  3   16 
+      0.094        4.8         1.                                 13426  3   17 
+     0.0994        4.4         2.                                 13426  3   18 
+ENDDATA              4          0                                 13426  3   19 
+ENDSUBENT           18          0                                 13426  399999 
+SUBENT        13426004   20220317                             150313426  4    1 
+BIB                  4          7                                 13426  4    2 
+REACTION   ((92-U-235(N,F)54-XE-133,CUM,FY,,SPA)/                 13426  4    3 
+           (92-U-235(N,F)36-KR-85-G,CUM,FY,,SPA))                 13426  4    4 
+DECAY-DATA (54-XE-133-G,5.27D)                                    13426  4    5 
+           (36-KR-85-G,10.8YR)                                    13426  4    6 
+STATUS     (TABLE) Table XIII, page 54 of R,BNL-1652,1953.        13426  4    7 
+HISTORY    (20220317A) BP: Updated subentry to reflect the        13426  4    8 
+           original publication.                                  13426  4    9 
+ENDBIB               7          0                                 13426  4   10 
+NOCOMMON             0          0                                 13426  4   11 
+DATA                 1          1                                 13426  4   12 
+DATA                                                              13426  4   13 
+NO-DIM                                                            13426  4   14 
+       24.0                                                       13426  4   15 
+ENDDATA              3          0                                 13426  4   16 
+ENDSUBENT           15          0                                 13426  499999 
 ENDENTRY             4          0                                 1342699999999 
