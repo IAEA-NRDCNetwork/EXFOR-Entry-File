@@ -1,6 +1,6 @@
-ENTRY            D4334   20160505                             D104D4334  0    1 
-SUBENT        D4334001   20160505                             D104D4334  1    1 
-BIB                 14         51                                 D4334  1    2 
+ENTRY            D4334   20210929                             D132D4334  0    1 
+SUBENT        D4334001   20210929                             D132D4334  1    1 
+BIB                 13         52                                 D4334  1    2 
 TITLE      Excitation functions for (d,x) reactions on 133Cs up   D4334  1    3 
            to Ed=40 MeV                                           D4334  1    4 
 AUTHOR     (F.Tarkanyi,F.Ditroi,S.Takacs,A.Hermanne,M.Baba,       D4334  1    5 
@@ -8,7 +8,7 @@ AUTHOR     (F.Tarkanyi,F.Ditroi,S.Takacs,A.Hermanne,M.Baba,       D4334  1    5
 INSTITUTE  (3HUNDEB,2BLGVUB,2JPNTOH,4RUSFEI)                      D4334  1    7 
 REFERENCE  (J,ARI,110,109,2016)                                   D4334  1    8 
            #doi:10.1016/j.apradiso.2016.01.007                    D4334  1    9 
-FACILITY   (CYCLO,2JPNTOH)                                        D4334  1   10 
+FACILITY   (ISOCY,2JPNTOH)                                        D4334  1   10 
 SAMPLE     Pellets (120mg/cm2) of CsCl targets were made by       D4334  1   11 
            pressing. A 100 microns thick Al backing and           D4334  1   12 
            10 microns thick Al protecting covers were applied.    D4334  1   13 
@@ -20,7 +20,7 @@ METHOD     (ACTIV,EDEG,EXTB,GSPEC,STTA)                           D4334  1   14
            holder equipped with a suppressor of secondary         D4334  1   19 
            electrons.                                             D4334  1   20 
            The activities of the produced radionuclides were      D4334  1   21 
-           measured nondestructively, without physical separation D4334  1   22 
+           measured non-destructively, without physical separationD4334  1   22 
            of target and covering foils and without chemical      D4334  1   23 
            separation.                                            D4334  1   24 
            The source-detector distance was kept large enough to  D4334  1   25 
@@ -34,91 +34,95 @@ MONITOR    (13-AL-27(P,X)11-NA-22,,SIG)                           D4334  1   32
            (13-AL-27(P,X)11-NA-24,,SIG)                           D4334  1   33 
 MONIT-REF  (,K.Gul+,R,IAEA-TECDOC-1211,2001) Chapter 4            D4334  1   34 
 DETECTOR   (HPGE)                                                 D4334  1   35 
-DECAY-DATA Decay data were taken from NuDat2.6 database.          D4334  1   36 
-ERR-ANALYS (EN-ERR) The monitoring method allows estimating the   D4334  1   37 
-           uncertainty on the primary beam energy (+-0.2 MeV)     D4334  1   38 
-           which is continuously rising in each foil through the  D4334  1   39 
-           stack.                                                 D4334  1   40 
-           (ERR-T)                                                D4334  1   41 
-           Typical total uncertainty is between 12-15%.           D4334  1   42 
-           (ERR-1)number of bombarding particles(7%)              D4334  1   43 
-           (ERR-2)surface density of target atoms(5%)             D4334  1   44 
-           (ERR-3)detector efficiency (5%)                        D4334  1   45 
-           (ERR-4,1.0,3.0)nuclear decay and branching data(1-3%)  D4334  1   46 
-           (ERR-S,0.1,10.0)statistical and peak fitting (0.1-10%) D4334  1   47 
-ADD-RES    (THEO) The experimental results were compared to the   D4334  1   48 
-           result calculated by the ALICE-D, EMPIRE-D and TENDL   D4334  1   49 
-           theoretical model codes.                               D4334  1   50 
-           (TTY-C) Integral yields were calculated from the       D4334  1   51 
-           fitted experimental cross sections.                    D4334  1   52 
-HISTORY    (20160504C) TS                                         D4334  1   53 
-ENDBIB              51          0                                 D4334  1   54 
-COMMON               3          3                                 D4334  1   55 
-ERR-1      ERR-2      ERR-3                                       D4334  1   56 
-PER-CENT   PER-CENT   PER-CENT                                    D4334  1   57 
-7.         5.         5.                                          D4334  1   58 
-ENDCOMMON            3          0                                 D4334  1   59 
-ENDSUBENT           58          0                                 D4334  199999 
-SUBENT        D4334002   20160505                             D104D4334  2    1 
-BIB                  3          3                                 D4334  2    2 
-REACTION   (55-CS-133(D,X)56-BA-133-M,,SIG)                       D4334  2    3 
+ERR-ANALYS (EN-ERR) The monitoring method allows estimating the   D4334  1   36 
+           uncertainty on the primary beam energy (+-0.2 MeV)     D4334  1   37 
+           which is continuously rising in each foil through the  D4334  1   38 
+           stack.                                                 D4334  1   39 
+           (ERR-T)                                                D4334  1   40 
+           Typical total uncertainty is between 12-15%.           D4334  1   41 
+           (ERR-1)number of bombarding particles(7%)              D4334  1   42 
+           (ERR-2)surface density of target atoms(5%)             D4334  1   43 
+           (ERR-3)detector efficiency (5%)                        D4334  1   44 
+           (ERR-4,1.0,3.0)nuclear decay and branching data(1-3%)  D4334  1   45 
+           (ERR-S,0.1,10.0)statistical and peak fitting (0.1-10%) D4334  1   46 
+ADD-RES    (THEO) The experimental results were compared to the   D4334  1   47 
+           result calculated by the ALICE-D, EMPIRE-D and TENDL   D4334  1   48 
+           theoretical model codes.                               D4334  1   49 
+           (TTY-C) Integral yields were calculated from the       D4334  1   50 
+           fitted experimental cross sections.                    D4334  1   51 
+HISTORY    (20160504C) TS                                         D4334  1   52 
+           (20210927A) VS. SF3 corrected in 002-004.              D4334  1   53 
+                           DECAY-DATA in 001 deleted.             D4334  1   54 
+ENDBIB              52          0                                 D4334  1   55 
+COMMON               3          3                                 D4334  1   56 
+ERR-1      ERR-2      ERR-3                                       D4334  1   57 
+PER-CENT   PER-CENT   PER-CENT                                    D4334  1   58 
+7.         5.         5.                                          D4334  1   59 
+ENDCOMMON            3          0                                 D4334  1   60 
+ENDSUBENT           59          0                                 D4334  199999 
+SUBENT        D4334002   20210929                             D132D4334  2    1 
+BIB                  4          4                                 D4334  2    2 
+REACTION   (55-CS-133(D,2N)56-BA-133-M,,SIG)                      D4334  2    3 
 DECAY-DATA (56-BA-133-M,38.93HR,DG,275.925,0.1769)                D4334  2    4 
 STATUS     (TABLE) Data are taken from Table2 of the article.     D4334  2    5 
-ENDBIB               3          0                                 D4334  2    6 
-NOCOMMON             0          0                                 D4334  2    7 
-DATA                 4         10                                 D4334  2    8 
-EN         EN-ERR     DATA       ERR-T                            D4334  2    9 
-MEV        MEV        MB         MB                               D4334  2   10 
-       0.6      1.2        0.1       0.01                         D4334  2   11 
-       8.0      1.0       97.6       9.3                          D4334  2   12 
-      14.5      0.9      404.5      38.4                          D4334  2   13 
-      19.3      0.8      262.8      24.9                          D4334  2   14 
-      23.3      0.7      140.2      13.3                          D4334  2   15 
-      26.9      0.6       89.8       8.5                          D4334  2   16 
-      30.2      0.5       70.3       6.7                          D4334  2   17 
-      33.3      0.4       65.3       6.2                          D4334  2   18 
-      36.2      0.4       65.9       6.3                          D4334  2   19 
-      38.9      0.3       50.9       4.9                          D4334  2   20 
-ENDDATA             12          0                                 D4334  2   21 
-ENDSUBENT           20          0                                 D4334  299999 
-SUBENT        D4334003   20160505                             D104D4334  3    1 
-BIB                  3          4                                 D4334  3    2 
-REACTION   (55-CS-133(D,X)56-BA-133-G,M+,SIG)                     D4334  3    3 
+HISTORY    (20210927A) VS. SF3 X -> 2N c.f. Memo CP-D/1017.       D4334  2    6 
+ENDBIB               4          0                                 D4334  2    7 
+NOCOMMON             0          0                                 D4334  2    8 
+DATA                 4         10                                 D4334  2    9 
+EN         EN-ERR     DATA       ERR-T                            D4334  2   10 
+MEV        MEV        MB         MB                               D4334  2   11 
+       0.6      1.2        0.1       0.01                         D4334  2   12 
+       8.0      1.0       97.6       9.3                          D4334  2   13 
+      14.5      0.9      404.5      38.4                          D4334  2   14 
+      19.3      0.8      262.8      24.9                          D4334  2   15 
+      23.3      0.7      140.2      13.3                          D4334  2   16 
+      26.9      0.6       89.8       8.5                          D4334  2   17 
+      30.2      0.5       70.3       6.7                          D4334  2   18 
+      33.3      0.4       65.3       6.2                          D4334  2   19 
+      36.2      0.4       65.9       6.3                          D4334  2   20 
+      38.9      0.3       50.9       4.9                          D4334  2   21 
+ENDDATA             12          0                                 D4334  2   22 
+ENDSUBENT           21          0                                 D4334  299999 
+SUBENT        D4334003   20210929                             D132D4334  3    1 
+BIB                  4          5                                 D4334  3    2 
+REACTION   (55-CS-133(D,2N)56-BA-133-G,M+,SIG)                    D4334  3    3 
 DECAY-DATA (56-BA-133-G,10.551YR,DG,276.4,0.0716,DG,302.8,0.1834, D4334  3    4 
                                  DG,356.0,0.6205,DG,383.8,0.0894) D4334  3    5 
 STATUS     (TABLE) Data are taken from Table2 of the article.     D4334  3    6 
-ENDBIB               4          0                                 D4334  3    7 
-NOCOMMON             0          0                                 D4334  3    8 
-DATA                 4          6                                 D4334  3    9 
-EN         EN-ERR     DATA       ERR-T                            D4334  3   10 
-MEV        MEV        MB         MB                               D4334  3   11 
-       8.0      1.0      192.4      19.9                          D4334  3   12 
-      14.5      0.9      586.8      57.4                          D4334  3   13 
-      19.3      0.8      345.2      35.1                          D4334  3   14 
-      23.3      0.7      173.8      22.4                          D4334  3   15 
-      26.9      0.6      156.6      28.8                          D4334  3   16 
-      30.2      0.5       52.2      11.9                          D4334  3   17 
-ENDDATA              8          0                                 D4334  3   18 
-ENDSUBENT           17          0                                 D4334  399999 
-SUBENT        D4334004   20160505                             D104D4334  4    1 
-BIB                  3          4                                 D4334  4    2 
-REACTION   (55-CS-133(D,X)56-BA-131-G,M+,SIG)                     D4334  4    3 
+HISTORY    (20210927A) VS. SF3 X -> 2N c.f. Memo CP-D/1017.       D4334  3    7 
+ENDBIB               5          0                                 D4334  3    8 
+NOCOMMON             0          0                                 D4334  3    9 
+DATA                 4          6                                 D4334  3   10 
+EN         EN-ERR     DATA       ERR-T                            D4334  3   11 
+MEV        MEV        MB         MB                               D4334  3   12 
+       8.0      1.0      192.4      19.9                          D4334  3   13 
+      14.5      0.9      586.8      57.4                          D4334  3   14 
+      19.3      0.8      345.2      35.1                          D4334  3   15 
+      23.3      0.7      173.8      22.4                          D4334  3   16 
+      26.9      0.6      156.6      28.8                          D4334  3   17 
+      30.2      0.5       52.2      11.9                          D4334  3   18 
+ENDDATA              8          0                                 D4334  3   19 
+ENDSUBENT           18          0                                 D4334  399999 
+SUBENT        D4334004   20210929                             D132D4334  4    1 
+BIB                  4          5                                 D4334  4    2 
+REACTION   (55-CS-133(D,4N)56-BA-131-G,M+,SIG)                    D4334  4    3 
 DECAY-DATA (56-BA-131-G,11.5D,DG,123.8,0.298,DG,216.1,0.204,      D4334  4    4 
                               DG,373.3,0.144,DG,496.3,0.48)       D4334  4    5 
 STATUS     (TABLE) Data are taken from Table2 of the article.     D4334  4    6 
-ENDBIB               4          0                                 D4334  4    7 
-NOCOMMON             0          0                                 D4334  4    8 
-DATA                 4          6                                 D4334  4    9 
-EN         EN-ERR     DATA       ERR-T                            D4334  4   10 
-MEV        MEV        MB         MB                               D4334  4   11 
-      23.3      0.7        8.1       0.9                          D4334  4   12 
-      26.9      0.6      146.5      15.9                          D4334  4   13 
-      30.2      0.5      392.8      42.5                          D4334  4   14 
-      33.3      0.4      617.3      66.8                          D4334  4   15 
-      36.2      0.4      821.1      88.8                          D4334  4   16 
-      38.9      0.3      666.1      72.1                          D4334  4   17 
-ENDDATA              8          0                                 D4334  4   18 
-ENDSUBENT           17          0                                 D4334  499999 
+HISTORY    (20210927A) VS. SF3 X -> 4N c.f. Memo CP-D/1017.       D4334  4    7 
+ENDBIB               5          0                                 D4334  4    8 
+NOCOMMON             0          0                                 D4334  4    9 
+DATA                 4          6                                 D4334  4   10 
+EN         EN-ERR     DATA       ERR-T                            D4334  4   11 
+MEV        MEV        MB         MB                               D4334  4   12 
+      23.3      0.7        8.1       0.9                          D4334  4   13 
+      26.9      0.6      146.5      15.9                          D4334  4   14 
+      30.2      0.5      392.8      42.5                          D4334  4   15 
+      33.3      0.4      617.3      66.8                          D4334  4   16 
+      36.2      0.4      821.1      88.8                          D4334  4   17 
+      38.9      0.3      666.1      72.1                          D4334  4   18 
+ENDDATA              8          0                                 D4334  4   19 
+ENDSUBENT           18          0                                 D4334  499999 
 SUBENT        D4334005   20160505                             D104D4334  5    1 
 BIB                  3          3                                 D4334  5    2 
 REACTION   (55-CS-133(D,X)55-CS-132,,SIG)                         D4334  5    3 
