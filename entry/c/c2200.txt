@@ -1,0 +1,653 @@
+ENTRY            C2200   20160104                             C157C2200  0    1 
+SUBENT        C2200001   20160104                             C157C2200  1    1 
+BIB                 13         45                                 C2200  1    2 
+TITLE      Nuclear excitation functions from 40 to 200 MeV        C2200  1    3 
+           proton irradiation of terbium                          C2200  1    4 
+AUTHOR     (J.W.Engle,S.G.Mashnik,L.A.Parker,K.R.Jackman,         C2200  1    5 
+           L.J.Bitteker,J.L.Ullmann,M.S.Gulley,C.Pillai,K.D.John, C2200  1    6 
+           E.R.Birnbaum,F.M.Nortier)                              C2200  1    7 
+INSTITUTE  (1USALAS)                                              C2200  1    8 
+REFERENCE  (J,NIM/B,366,206,2016)                                 C2200  1    9 
+FACILITY   (LINAC,1USALAS) Thin terbium targets were irradiated   C2200  1   10 
+           in the production target station of the Isotope        C2200  1   11 
+           Production Facility at LANSCE and in the Target 2      C2200  1   12 
+           Blue Room of the Weapons Neutron Research Facility.    C2200  1   13 
+SAMPLE     Thin discs of natural terbium with purity of 99.9%     C2200  1   14 
+           and nominal thickness 90 mg/cm2 in a stack with        C2200  1   15 
+           aluminum plates and thin Al foils with purity of       C2200  1   16 
+           99.999% and thickness of 20-50 mg/cm. Aluminum plates  C2200  1   17 
+           were used to degrade the energy of the incident beam   C2200  1   18 
+           to allow well-spaced measurements down to              C2200  1   19 
+           approximately one half the beam's incident energy      C2200  1   20 
+           Thin aluminum foils were used for monitor purposes.    C2200  1   21 
+DETECTOR   (HPGE) p-type aluminum windowed ORTEC GEM detector     C2200  1   22 
+           with a relative efficiency of about 10% and            C2200  1   23 
+           resolution of 1.99 keV at 1333 keV.                    C2200  1   24 
+ANALYSIS   Beam energy at each foil in the stack was calculated   C2200  1   25 
+           using three different methods - MCNP6 simulations, the C2200  1   26 
+           SRIM/TRIM nuclear code, and an in-house developed tool.C2200  1   27 
+           The activity at the end of bombardment of each isotope C2200  1   28 
+           of interest was determined by fitting its decay curve. C2200  1   29 
+           Uncertainties in fitted parameters were computed from  C2200  1   30 
+           covariance matrices as the standard deviation in       C2200  1   31 
+           the activity extrapolated to the end of irradiation.   C2200  1   32 
+METHOD     (GSPEC,EDEG,ACTIV)                                     C2200  1   33 
+MONITOR    (13-AL-27(P,X)11-NA-22,,SIG)                           C2200  1   34 
+MONIT-REF  (A0497002,G.F.Steyn+,J,ARI,41,315,1990)                C2200  1   35 
+ERR-ANALYS (ERR-T) Total uncertainty obtained according to the    C2200  1   36 
+           error propagation variance formula with estimated      C2200  1   37 
+           contributing uncertainties from                        C2200  1   38 
+           (ERR-1) combined uncertainties from detector           C2200  1   39 
+                   calibration and geometry reproducibility       C2200  1   40 
+           (ERR-2) syst. uncertainty in target foil dimensions    C2200  1   41 
+           (ERR-3,6.0,8.0) syst. uncertainty in proton flux       C2200  1   42 
+           Multiple photopeaks were used when possible and        C2200  1   43 
+           additional uncertainty as the standard deviation of    C2200  1   44 
+           these complimentary measurements was combined with     C2200  1   45 
+           the uncertainties described above                      C2200  1   46 
+HISTORY    (20160104C) Compiled by S.H.                           C2200  1   47 
+ENDBIB              45          0                                 C2200  1   48 
+COMMON               2          3                                 C2200  1   49 
+ERR-1      ERR-2                                                  C2200  1   50 
+PER-CENT   PER-CENT                                               C2200  1   51 
+5.9        0.1                                                    C2200  1   52 
+ENDCOMMON            3          0                                 C2200  1   53 
+ENDSUBENT           52          0                                 C2200  199999 
+SUBENT        C2200002   20160104                             C157C2200  2    1 
+BIB                  3          6                                 C2200  2    2 
+REACTION   (65-TB-159(P,X)65-TB-151-G,CUM,SIG)                    C2200  2    3 
+DECAY-DATA (65-TB-151-G,17.609HR,DG,616.56,0.104,                 C2200  2    4 
+                               DG,251.86,0.263,                   C2200  2    5 
+                               DG,287.36,0.283,                   C2200  2    6 
+                               DG,931.23,0.077)                   C2200  2    7 
+STATUS     (TABLE) Data taken from tab.3 of the reference         C2200  2    8 
+ENDBIB               6          0                                 C2200  2    9 
+NOCOMMON             0          0                                 C2200  2   10 
+DATA                 4          8                                 C2200  2   11 
+EN         EN-RSL     DATA       ERR-T                            C2200  2   12 
+MEV        MEV        MB         MB                               C2200  2   13 
+       78.0        0.7        1.3        0.1                      C2200  2   14 
+       87.2        0.4       25.6        1.8                      C2200  2   15 
+       97.0        2.9       76.3        5.7                      C2200  2   16 
+      121.3        2.3       99.6        8.3                      C2200  2   17 
+      142.5        2.0       87.8        6.7                      C2200  2   18 
+      161.7        1.5       76.8        5.6                      C2200  2   19 
+      179.5        1.1       69.1        5.1                      C2200  2   20 
+      196.2        0.4       59.7        4.2                      C2200  2   21 
+ENDDATA             10          0                                 C2200  2   22 
+ENDSUBENT           21          0                                 C2200  299999 
+SUBENT        C2200003   20160104                             C157C2200  3    1 
+BIB                  3          6                                 C2200  3    2 
+REACTION   (65-TB-159(P,X)65-TB-152,CUM,SIG)                      C2200  3    3 
+DECAY-DATA (65-TB-152-G,17.5HR,DG,344.28,0.65,                    C2200  3    4 
+                             DG,271.08,0.086,                     C2200  3    5 
+                             DG,586.29,0.094,                     C2200  3    6 
+                             DG,1299.11,0.0215)                   C2200  3    7 
+STATUS     (TABLE) Data taken from tab.3 of the reference         C2200  3    8 
+ENDBIB               6          0                                 C2200  3    9 
+NOCOMMON             0          0                                 C2200  3   10 
+DATA                 4          9                                 C2200  3   11 
+EN         EN-RSL     DATA       ERR-T                            C2200  3   12 
+MEV        MEV        MB         MB                               C2200  3   13 
+       68.3        1.5        4.2        0.3                      C2200  3   14 
+       78.0        0.7       83.3        6.7                      C2200  3   15 
+       87.2        0.4      184.1       12.9                      C2200  3   16 
+       97.0        2.9      244.0       18.1                      C2200  3   17 
+      121.3        2.3      147.9       12.3                      C2200  3   18 
+      142.5        2.0      116.3        8.9                      C2200  3   19 
+      161.7        1.5       89.1        6.5                      C2200  3   20 
+      179.5        1.1       79.8        5.9                      C2200  3   21 
+      196.2        0.4       62.9        4.5                      C2200  3   22 
+ENDDATA             11          0                                 C2200  3   23 
+ENDSUBENT           22          0                                 C2200  399999 
+SUBENT        C2200004   20160104                             C157C2200  4    1 
+BIB                  3          6                                 C2200  4    2 
+REACTION   (65-TB-159(P,X)65-TB-153,CUM,SIG)                      C2200  4    3 
+DECAY-DATA (65-TB-153,2.34D,DG,249.55,0.0233,                     C2200  4    4 
+                            DG,212.0,0.31,                        C2200  4    5 
+                            DG,170.42,0.063,                      C2200  4    6 
+                            DG,141.91,0.0107)                     C2200  4    7 
+STATUS     (TABLE) Data taken from tab.3 of the reference         C2200  4    8 
+ENDBIB               6          0                                 C2200  4    9 
+NOCOMMON             0          0                                 C2200  4   10 
+DATA                 4         10                                 C2200  4   11 
+EN         EN-RSL     DATA       ERR-T                            C2200  4   12 
+MEV        MEV        MB         MB                               C2200  4   13 
+       59.6        1.1       19.8        1.8                      C2200  4   14 
+       68.3        1.5      205.8       16.5                      C2200  4   15 
+       78.0        0.7      293.3       23.5                      C2200  4   16 
+       87.2        0.4      232.8       16.3                      C2200  4   17 
+       97.0        2.9      208.1       15.5                      C2200  4   18 
+      121.3        2.3      159.2       13.2                      C2200  4   19 
+      142.5        2.0      135.1       10.4                      C2200  4   20 
+      161.7        1.5      114.6        8.4                      C2200  4   21 
+      179.5        1.1      106.6        7.9                      C2200  4   22 
+      196.2        0.4      111.0        7.9                      C2200  4   23 
+ENDDATA             12          0                                 C2200  4   24 
+ENDSUBENT           23          0                                 C2200  499999 
+SUBENT        C2200005   20160104                             C157C2200  5    1 
+BIB                  4          9                                 C2200  5    2 
+REACTION   (65-TB-159(P,X)65-TB-153,IND,SIG)                      C2200  5    3 
+ANALYSIS   Independent cross section was determined by subtractionC2200  5    4 
+           of precursor contribution from cumulative cross sectionC2200  5    5 
+DECAY-DATA (65-TB-153,2.34D,DG,249.55,0.0233,                     C2200  5    6 
+                            DG,212.0,0.31,                        C2200  5    7 
+                            DG,170.42,0.063,                      C2200  5    8 
+                            DG,141.91,0.0107)                     C2200  5    9 
+STATUS     (TABLE) Data taken from tab.3 of the reference         C2200  5   10 
+           (DEP,C2200004) cumulative cross section given          C2200  5   11 
+ENDBIB               9          0                                 C2200  5   12 
+NOCOMMON             0          0                                 C2200  5   13 
+DATA                 4          3                                 C2200  5   14 
+EN         EN-RSL     DATA       ERR-T                            C2200  5   15 
+MEV        MEV        MB         MB                               C2200  5   16 
+       68.3        1.5       95.7        7.7                      C2200  5   17 
+       78.0        0.7      165.6       13.3                      C2200  5   18 
+       87.2        0.4      147.8       10.4                      C2200  5   19 
+ENDDATA              5          0                                 C2200  5   20 
+ENDSUBENT           19          0                                 C2200  599999 
+SUBENT        C2200006   20160104                             C157C2200  6    1 
+BIB                  3          6                                 C2200  6    2 
+REACTION   (65-TB-159(P,X)65-TB-154-G,CUM,SIG)                    C2200  6    3 
+DECAY-DATA (65-TB-154-G,21.5HR,DG,1996.61,0.075,                  C2200  6    4 
+                               DG,1291.33,0.069,                  C2200  6    5 
+                               DG,1274.44,0.105,                  C2200  6    6 
+                               DG,1123.09,0.057)                  C2200  6    7 
+STATUS     (TABLE) Data taken from tab.3 of the reference         C2200  6    8 
+ENDBIB               6          0                                 C2200  6    9 
+NOCOMMON             0          0                                 C2200  6   10 
+DATA                 4         10                                 C2200  6   11 
+EN         EN-RSL     DATA       ERR-T                            C2200  6   12 
+MEV        MEV        MB         MB                               C2200  6   13 
+       59.6        1.1       14.8        1.1                      C2200  6   14 
+       68.3        1.5       30.2        2.2                      C2200  6   15 
+       78.0        0.7       34.2        2.5                      C2200  6   16 
+       87.2        0.4       32.8        2.3                      C2200  6   17 
+       97.0        2.9       40.8        3.0                      C2200  6   18 
+      121.3        2.3       35.8        3.0                      C2200  6   19 
+      142.5        2.0       36.7        2.8                      C2200  6   20 
+      161.7        1.5       32.4        2.4                      C2200  6   21 
+      179.5        1.1       33.0        2.5                      C2200  6   22 
+      196.2        0.4       32.7        2.3                      C2200  6   23 
+ENDDATA             12          0                                 C2200  6   24 
+ENDSUBENT           23          0                                 C2200  699999 
+SUBENT        C2200007   20160104                             C157C2200  7    1 
+BIB                  3          3                                 C2200  7    2 
+REACTION   (65-TB-159(P,X)65-TB-154-M2,CUM,SIG)                   C2200  7    3 
+DECAY-DATA (65-TB-154-M2,23.0HR,DG,346.64,0.69)                   C2200  7    4 
+STATUS     (TABLE) Data taken from tab.3 of the reference         C2200  7    5 
+ENDBIB               3          0                                 C2200  7    6 
+NOCOMMON             0          0                                 C2200  7    7 
+DATA                 4          7                                 C2200  7    8 
+EN         EN-RSL     DATA       ERR-T                            C2200  7    9 
+MEV        MEV        MB         MB                               C2200  7   10 
+       59.6        1.1        3.2        0.3                      C2200  7   11 
+       68.3        1.5        7.3        0.6                      C2200  7   12 
+       78.0        0.7       10.2        0.8                      C2200  7   13 
+       87.2        0.4       10.3        0.7                      C2200  7   14 
+       97.0        2.9       12.6        0.9                      C2200  7   15 
+      121.3        2.3        9.2        0.8                      C2200  7   16 
+      142.5        2.0       12.2        0.9                      C2200  7   17 
+ENDDATA              9          0                                 C2200  7   18 
+ENDSUBENT           17          0                                 C2200  799999 
+SUBENT        C2200008   20160104                             C157C2200  8    1 
+BIB                  3          6                                 C2200  8    2 
+REACTION   (65-TB-159(P,X)65-TB-155,CUM,SIG)                      C2200  8    3 
+DECAY-DATA (65-TB-155,5.32D,DG,180.08,0.075,                      C2200  8    4 
+                            DG,105.32,0.251,                      C2200  8    5 
+                            DG,262.27,0.053,                      C2200  8    6 
+                            DG,367.36,0.231)                      C2200  8    7 
+STATUS     (TABLE) Data taken from tab.3 of the reference         C2200  8    8 
+ENDBIB               6          0                                 C2200  8    9 
+NOCOMMON             0          0                                 C2200  8   10 
+DATA                 4         12                                 C2200  8   11 
+EN         EN-RSL     DATA       ERR-T                            C2200  8   12 
+MEV        MEV        MB         MB                               C2200  8   13 
+       38.5        2.9       53.1        4.8                      C2200  8   14 
+       49.9        1.3      633.6       57.0                      C2200  8   15 
+       59.6        1.1      397.0       35.8                      C2200  8   16 
+       68.3        1.5      255.5       20.5                      C2200  8   17 
+       78.0        0.7      201.1       16.1                      C2200  8   18 
+       87.2        0.4      188.4       13.2                      C2200  8   19 
+       97.0        2.9      182.5       13.6                      C2200  8   20 
+      121.3        2.3      146.1       12.2                      C2200  8   21 
+      142.5        2.0      128.6        9.9                      C2200  8   22 
+      161.7        1.5      111.6        8.2                      C2200  8   23 
+      179.5        1.1      101.2        7.5                      C2200  8   24 
+      196.2        0.4       85.9        6.1                      C2200  8   25 
+ENDDATA             14          0                                 C2200  8   26 
+ENDSUBENT           25          0                                 C2200  899999 
+SUBENT        C2200009   20160104                             C157C2200  9    1 
+BIB                  4          9                                 C2200  9    2 
+REACTION   (65-TB-159(P,X)65-TB-155,IND,SIG)                      C2200  9    3 
+ANALYSIS   Independent cross section was determined by subtractionC2200  9    4 
+           of precursor contribution from cumulative cross sectionC2200  9    5 
+DECAY-DATA (65-TB-155,5.32D,DG,180.08,0.075,                      C2200  9    6 
+                            DG,105.32,0.251,                      C2200  9    7 
+                            DG,262.27,0.053,                      C2200  9    8 
+                            DG,367.36,0.231)                      C2200  9    9 
+STATUS     (TABLE) Data taken from tab.3 of the reference         C2200  9   10 
+           (DEP,C2200008) cumulative cross section given          C2200  9   11 
+ENDBIB               9          0                                 C2200  9   12 
+NOCOMMON             0          0                                 C2200  9   13 
+DATA                 4         12                                 C2200  9   14 
+EN         EN-RSL     DATA       ERR-T                            C2200  9   15 
+MEV        MEV        MB         MB                               C2200  9   16 
+       38.5        2.9       18.0        1.6                      C2200  9   17 
+       49.9        1.3      216.3       19.5                      C2200  9   18 
+       59.6        1.1      211.7       19.1                      C2200  9   19 
+       68.3        1.5      168.9       13.6                      C2200  9   20 
+       78.0        0.7      146.4       11.7                      C2200  9   21 
+       87.2        0.4      136.9       10.7                      C2200  9   22 
+       97.0        2.9      126.3        9.4                      C2200  9   23 
+      121.3        2.3      105.2        8.7                      C2200  9   24 
+      142.5        2.0      100.5        7.7                      C2200  9   25 
+      161.7        1.5       94.7        7.0                      C2200  9   26 
+      179.5        1.1       76.8        5.7                      C2200  9   27 
+      196.2        0.4       68.9        4.9                      C2200  9   28 
+ENDDATA             14          0                                 C2200  9   29 
+ENDSUBENT           28          0                                 C2200  999999 
+SUBENT        C2200010   20160104                             C157C2200 10    1 
+BIB                  3          4                                 C2200 10    2 
+REACTION   (65-TB-159(P,X)65-TB-156-G,M+,SIG)                     C2200 10    3 
+DECAY-DATA (65-TB-156-G,5.35D,DG,780.08,0.0233,                   C2200 10    4 
+                            DG,1065.1,0.108)                      C2200 10    5 
+STATUS     (TABLE) Data taken from tab.3 of the reference         C2200 10    6 
+ENDBIB               4          0                                 C2200 10    7 
+NOCOMMON             0          0                                 C2200 10    8 
+DATA                 4         12                                 C2200 10    9 
+EN         EN-RSL     DATA       ERR-T                            C2200 10   10 
+MEV        MEV        MB         MB                               C2200 10   11 
+       38.5        2.9       42.9        3.9                      C2200 10   12 
+       49.9        1.3      113.5       10.2                      C2200 10   13 
+       59.6        1.1      137.0       12.3                      C2200 10   14 
+       68.3        1.5      126.2       10.1                      C2200 10   15 
+       78.0        0.7      111.5        8.9                      C2200 10   16 
+       87.2        0.4      116.6        8.2                      C2200 10   17 
+       97.0        2.9      115.1        8.6                      C2200 10   18 
+      121.3        2.3      102.7        8.5                      C2200 10   19 
+      142.5        2.0       94.1        7.2                      C2200 10   20 
+      161.7        1.5       83.9        6.2                      C2200 10   21 
+      179.5        1.1       77.7        5.8                      C2200 10   22 
+      196.2        0.4       65.8        4.7                      C2200 10   23 
+ENDDATA             14          0                                 C2200 10   24 
+ENDSUBENT           23          0                                 C2200 1099999 
+SUBENT        C2200011   20160104                             C157C2200 11    1 
+BIB                  3          4                                 C2200 11    2 
+REACTION   (65-TB-159(P,X)65-TB-158-G,M+,SIG)                     C2200 11    3 
+DECAY-DATA (65-TB-158-G,180.0YR,DG,944.19,0.439,                  C2200 11    4 
+                                DG,181.94,0.099)                  C2200 11    5 
+STATUS     (TABLE) Data taken from tab.3 of the reference         C2200 11    6 
+ENDBIB               4          0                                 C2200 11    7 
+NOCOMMON             0          0                                 C2200 11    8 
+DATA                 4          5                                 C2200 11    9 
+EN         EN-RSL     DATA       ERR-T                            C2200 11   10 
+MEV        MEV        MB         MB                               C2200 11   11 
+       38.5        2.9      163.7       14.9                      C2200 11   12 
+       49.9        1.3      149.5       13.6                      C2200 11   13 
+       59.6        1.1      147.1       13.4                      C2200 11   14 
+       68.3        1.5      134.1       10.9                      C2200 11   15 
+       78.0        0.7      119.7        9.7                      C2200 11   16 
+ENDDATA              7          0                                 C2200 11   17 
+ENDSUBENT           16          0                                 C2200 1199999 
+SUBENT        C2200012   20160104                             C157C2200 12    1 
+BIB                  3          4                                 C2200 12    2 
+REACTION   (65-TB-159(P,X)66-DY-153,CUM,SIG)                      C2200 12    3 
+DECAY-DATA (66-DY-153,6.4HR,DG,99.66,0.1051,                      C2200 12    4 
+                            DG,659.84,0.011)                      C2200 12    5 
+STATUS     (TABLE) Data taken from tab.2 of the reference         C2200 12    6 
+ENDBIB               4          0                                 C2200 12    7 
+NOCOMMON             0          0                                 C2200 12    8 
+DATA                 4          3                                 C2200 12    9 
+EN         EN-RSL     DATA       ERR-T                            C2200 12   10 
+MEV        MEV        MB         MB                               C2200 12   11 
+       68.3        1.5       98.5        7.9                      C2200 12   12 
+       78.0        0.7      118.5        9.5                      C2200 12   13 
+       87.2        0.4       77.3        5.4                      C2200 12   14 
+ENDDATA              5          0                                 C2200 12   15 
+ENDSUBENT           14          0                                 C2200 1299999 
+SUBENT        C2200013   20160104                             C157C2200 13    1 
+BIB                  3          6                                 C2200 13    2 
+REACTION   (65-TB-159(P,X)66-DY-155,CUM,SIG)                      C2200 13    3 
+DECAY-DATA (66-DY-155,9.9HR,DG,184.56,0.0337,                     C2200 13    4 
+                            DG,226.92,0.684,                      C2200 13    5 
+                            DG,271.06,0.0121,                     C2200 13    6 
+                            DG,498.62,0.0175)                     C2200 13    7 
+STATUS     (TABLE) Data taken from tab.2 of the reference         C2200 13    8 
+ENDBIB               6          0                                 C2200 13    9 
+NOCOMMON             0          0                                 C2200 13   10 
+DATA                 4         12                                 C2200 13   11 
+EN         EN-RSL     DATA       ERR-T                            C2200 13   12 
+MEV        MEV        MB         MB                               C2200 13   13 
+       38.5        2.9       37.7        2.8                      C2200 13   14 
+       49.9        1.3      408.6       34.0                      C2200 13   15 
+       59.6        1.1      213.8       16.4                      C2200 13   16 
+       68.3        1.5      117.3        8.6                      C2200 13   17 
+       78.0        0.7       71.4        5.3                      C2200 13   18 
+       87.2        0.4       55.1        3.9                      C2200 13   19 
+       97.0        2.9       54.4        4.0                      C2200 13   20 
+      121.3        2.3       39.0        3.2                      C2200 13   21 
+      142.5        2.0       27.3        2.1                      C2200 13   22 
+      161.7        1.5       24.5        1.8                      C2200 13   23 
+      179.5        1.1       23.0        1.7                      C2200 13   24 
+      196.2        0.4       16.2        1.2                      C2200 13   25 
+ENDDATA             14          0                                 C2200 13   26 
+ENDSUBENT           25          0                                 C2200 1399999 
+SUBENT        C2200014   20160104                             C157C2200 14    1 
+BIB                  3          3                                 C2200 14    2 
+REACTION   (65-TB-159(P,X)66-DY-157,CUM,SIG)                      C2200 14    3 
+DECAY-DATA (66-DY-157,8.14HR,DG,326.34,0.93)                      C2200 14    4 
+STATUS     (TABLE) Data taken from tab.2 of the reference         C2200 14    5 
+ENDBIB               3          0                                 C2200 14    6 
+NOCOMMON             0          0                                 C2200 14    7 
+DATA                 4          9                                 C2200 14    8 
+EN         EN-RSL     DATA       ERR-T                            C2200 14    9 
+MEV        MEV        MB         MB                               C2200 14   10 
+       38.5        2.9      164.8       24.8                      C2200 14   11 
+       49.9        1.3       65.8       15.9                      C2200 14   12 
+       59.6        1.1       52.3       14.7                      C2200 14   13 
+       68.3        1.5       45.9       13.7                      C2200 14   14 
+       78.0        0.7       37.4       13.0                      C2200 14   15 
+       87.2        0.4       33.0       12.3                      C2200 14   16 
+       97.0        2.9       34.1       12.5                      C2200 14   17 
+      121.3        2.3       31.2       12.6                      C2200 14   18 
+      142.5        2.0       23.3       11.8                      C2200 14   19 
+ENDDATA             11          0                                 C2200 14   20 
+ENDSUBENT           19          0                                 C2200 1499999 
+SUBENT        C2200015   20160104                             C157C2200 15    1 
+BIB                  3          3                                 C2200 15    2 
+REACTION   (65-TB-159(P,N)66-DY-159,,SIG)                         C2200 15    3 
+DECAY-DATA (66-DY-159,144.4D,DG,58.0,0.0227)                      C2200 15    4 
+STATUS     (TABLE) Data taken from tab.2 of the reference         C2200 15    5 
+ENDBIB               3          0                                 C2200 15    6 
+NOCOMMON             0          0                                 C2200 15    7 
+DATA                 4          5                                 C2200 15    8 
+EN         EN-RSL     DATA       ERR-T                            C2200 15    9 
+MEV        MEV        MB         MB                               C2200 15   10 
+       38.5        2.9        9.7        1.9                      C2200 15   11 
+       49.9        1.3        6.8        1.6                      C2200 15   12 
+       59.6        1.1        5.8        1.5                      C2200 15   13 
+       68.3        1.5        5.7        1.5                      C2200 15   14 
+       78.0        0.7        4.6        1.4                      C2200 15   15 
+ENDDATA              7          0                                 C2200 15   16 
+ENDSUBENT           15          0                                 C2200 1599999 
+SUBENT        C2200016   20160104                             C157C2200 16    1 
+BIB                  3          4                                 C2200 16    2 
+REACTION   (65-TB-159(P,X)64-GD-146,CUM,SIG)                      C2200 16    3 
+DECAY-DATA (64-GD-146,48.27D,DG,115.0,0.44,                       C2200 16    4 
+                             DG,154.57,0.4512)                    C2200 16    5 
+STATUS     (TABLE) Data taken from tab.4 of the reference         C2200 16    6 
+ENDBIB               4          0                                 C2200 16    7 
+NOCOMMON             0          0                                 C2200 16    8 
+DATA                 4          5                                 C2200 16    9 
+EN         EN-RSL     DATA       ERR-T                            C2200 16   10 
+MEV        MEV        MB         MB                               C2200 16   11 
+      121.3        2.3       21.6        1.8                      C2200 16   12 
+      142.5        2.0       25.7        2.0                      C2200 16   13 
+      161.7        1.5       26.6        2.0                      C2200 16   14 
+      179.5        1.1       31.0        2.3                      C2200 16   15 
+      196.2        0.4       41.5        3.0                      C2200 16   16 
+ENDDATA              7          0                                 C2200 16   17 
+ENDSUBENT           16          0                                 C2200 1699999 
+SUBENT        C2200017   20160104                             C157C2200 17    1 
+BIB                  3          6                                 C2200 17    2 
+REACTION   (65-TB-159(P,X)64-GD-147,CUM,SIG)                      C2200 17    3 
+DECAY-DATA (64-GD-147,38.06HR,DG,229.32,0.58,                     C2200 17    4 
+                              DG,396.0,0.314,                     C2200 17    5 
+                              DG,370.0,0.157,                     C2200 17    6 
+                              DG,929.01,0.184)                    C2200 17    7 
+STATUS     (TABLE) Data taken from tab.4 of the reference         C2200 17    8 
+ENDBIB               6          0                                 C2200 17    9 
+NOCOMMON             0          0                                 C2200 17   10 
+DATA                 4          7                                 C2200 17   11 
+EN         EN-RSL     DATA       ERR-T                            C2200 17   12 
+MEV        MEV        MB         MB                               C2200 17   13 
+       87.2        0.4        1.4        0.1                      C2200 17   14 
+       97.0        2.9        3.7        0.3                      C2200 17   15 
+      121.3        2.3       19.2        1.6                      C2200 17   16 
+      142.5        2.0       22.6        1.7                      C2200 17   17 
+      161.7        1.5       37.2        2.7                      C2200 17   18 
+      179.5        1.1       47.2        3.5                      C2200 17   19 
+      196.2        0.4       52.4        3.7                      C2200 17   20 
+ENDDATA              9          0                                 C2200 17   21 
+ENDSUBENT           20          0                                 C2200 1799999 
+SUBENT        C2200018   20160104                             C157C2200 18    1 
+BIB                  3          6                                 C2200 18    2 
+REACTION   (65-TB-159(P,X)64-GD-149,CUM,SIG)                      C2200 18    3 
+DECAY-DATA (64-GD-149,9.28D,DG,149.74,0.48,                       C2200 18    4 
+                            DG,298.63,0.286,                      C2200 18    5 
+                            DG,346.65,0.239,                      C2200 18    6 
+                            DG,788.88,0.073)                      C2200 18    7 
+STATUS     (TABLE) Data taken from tab.4 of the reference         C2200 18    8 
+ENDBIB               6          0                                 C2200 18    9 
+NOCOMMON             0          0                                 C2200 18   10 
+DATA                 4          8                                 C2200 18   11 
+EN         EN-RSL     DATA       ERR-T                            C2200 18   12 
+MEV        MEV        MB         MB                               C2200 18   13 
+       78.0        0.7        5.6        0.4                      C2200 18   14 
+       87.2        0.4       21.8        1.5                      C2200 18   15 
+       97.0        2.9       25.4        1.9                      C2200 18   16 
+      121.3        2.3       47.6        4.0                      C2200 18   17 
+      142.5        2.0       84.0        6.5                      C2200 18   18 
+      161.7        1.5       85.4        6.3                      C2200 18   19 
+      179.5        1.1       87.1        6.5                      C2200 18   20 
+      196.2        0.4       83.6        5.9                      C2200 18   21 
+ENDDATA             10          0                                 C2200 18   22 
+ENDSUBENT           21          0                                 C2200 1899999 
+SUBENT        C2200019   20160104                             C157C2200 19    1 
+BIB                  3          4                                 C2200 19    2 
+REACTION   (65-TB-159(P,X)64-GD-151,CUM,SIG)                      C2200 19    3 
+DECAY-DATA (64-GD-151,123.9D,DG,243.29,0.056,                     C2200 19    4 
+                             DG,307.5,0.0104)                     C2200 19    5 
+STATUS     (TABLE) Data taken from tab.4 of the reference         C2200 19    6 
+ENDBIB               4          0                                 C2200 19    7 
+NOCOMMON             0          0                                 C2200 19    8 
+DATA                 4          9                                 C2200 19    9 
+EN         EN-RSL     DATA       ERR-T                            C2200 19   10 
+MEV        MEV        MB         MB                               C2200 19   11 
+       59.6        1.1       10.9        1.0                      C2200 19   12 
+       78.0        0.7       15.7        3.9                      C2200 19   13 
+       87.2        0.4       41.1        4.2                      C2200 19   14 
+       97.0        2.9       77.1        5.7                      C2200 19   15 
+      121.3        2.3      126.8       10.5                      C2200 19   16 
+      142.5        2.0      118.4        9.1                      C2200 19   17 
+      161.7        1.5      109.2        8.0                      C2200 19   18 
+      179.5        1.1      102.8        7.6                      C2200 19   19 
+      196.2        0.4       95.7        6.8                      C2200 19   20 
+ENDDATA             11          0                                 C2200 19   21 
+ENDSUBENT           20          0                                 C2200 1999999 
+SUBENT        C2200020   20160104                             C157C2200 20    1 
+BIB                  4          7                                 C2200 20    2 
+REACTION   (65-TB-159(P,X)64-GD-151,IND,SIG)                      C2200 20    3 
+ANALYSIS   Independent cross section was determined by subtractionC2200 20    4 
+           of precursor contribution from cumulative cross sectionC2200 20    5 
+DECAY-DATA (64-GD-151,123.9D,DG,243.29,0.056,                     C2200 20    6 
+                             DG,307.5,0.0104)                     C2200 20    7 
+STATUS     (TABLE) Data taken from tab.4 of the reference         C2200 20    8 
+           (DEP,C2200019) cumulative cross section given          C2200 20    9 
+ENDBIB               7          0                                 C2200 20   10 
+NOCOMMON             0          0                                 C2200 20   11 
+DATA                 4          8                                 C2200 20   12 
+EN         EN-RSL     DATA       ERR-T                            C2200 20   13 
+MEV        MEV        MB         MB                               C2200 20   14 
+       78.0        0.7       14.5        3.9                      C2200 20   15 
+       87.2        0.4       16.0        1.2                      C2200 20   16 
+       97.0        2.9       18.7        1.4                      C2200 20   17 
+      121.3        2.3       28.6        2.4                      C2200 20   18 
+      142.5        2.0       31.8        2.4                      C2200 20   19 
+      161.7        1.5       33.3        2.4                      C2200 20   20 
+      179.5        1.1       34.6        2.6                      C2200 20   21 
+      196.2        0.4       36.8        2.6                      C2200 20   22 
+ENDDATA             10          0                                 C2200 20   23 
+ENDSUBENT           22          0                                 C2200 2099999 
+SUBENT        C2200021   20160104                             C157C2200 21    1 
+BIB                  3          4                                 C2200 21    2 
+REACTION   (65-TB-159(P,X)64-GD-153,CUM,SIG)                      C2200 21    3 
+DECAY-DATA (64-GD-153,240.4D,DG,97.43,0.29,                       C2200 21    4 
+                             DG,103.18,0.211)                     C2200 21    5 
+STATUS     (TABLE) Data taken from tab.4 of the reference         C2200 21    6 
+ENDBIB               4          0                                 C2200 21    7 
+NOCOMMON             0          0                                 C2200 21    8 
+DATA                 4         11                                 C2200 21    9 
+EN         EN-RSL     DATA       ERR-T                            C2200 21   10 
+MEV        MEV        MB         MB                               C2200 21   11 
+       38.5        2.9        5.9        0.5                      C2200 21   12 
+       49.9        1.3       13.7        1.2                      C2200 21   13 
+       59.6        1.1       26.8        2.4                      C2200 21   14 
+       68.3        1.5      190.5       15.4                      C2200 21   15 
+       78.0        0.7      276.5       22.3                      C2200 21   16 
+       87.2        0.4      229.9       16.3                      C2200 21   17 
+       97.0        2.9      213.6       15.9                      C2200 21   18 
+      121.3        2.3      174.3       14.5                      C2200 21   19 
+      142.5        2.0      159.3       12.2                      C2200 21   20 
+      161.7        1.5      140.7       10.3                      C2200 21   21 
+      179.5        1.1      131.4        9.8                      C2200 21   22 
+ENDDATA             13          0                                 C2200 21   23 
+ENDSUBENT           22          0                                 C2200 2199999 
+SUBENT        C2200022   20160104                             C157C2200 22    1 
+BIB                  4          7                                 C2200 22    2 
+REACTION   (65-TB-159(P,X)64-GD-153,IND,SIG)                      C2200 22    3 
+ANALYSIS   Independent cross section was determined by subtractionC2200 22    4 
+           of precursor contribution from cumulative cross sectionC2200 22    5 
+DECAY-DATA (64-GD-153,240.4D,DG,97.43,0.29,                       C2200 22    6 
+                             DG,103.18,0.211)                     C2200 22    7 
+STATUS     (TABLE) Data taken from tab.4 of the reference         C2200 22    8 
+           (DEP,C2200021) cumulative cross section given          C2200 22    9 
+ENDBIB               7          0                                 C2200 22   10 
+NOCOMMON             0          0                                 C2200 22   11 
+DATA                 4          4                                 C2200 22   12 
+EN         EN-RSL     DATA       ERR-T                            C2200 22   13 
+MEV        MEV        MB         MB                               C2200 22   14 
+      121.3        2.3       14.6        1.2                      C2200 22   15 
+      142.5        2.0       22.8        1.7                      C2200 22   16 
+      161.7        1.5       25.6        1.9                      C2200 22   17 
+      179.5        1.1       24.5        1.8                      C2200 22   18 
+ENDDATA              6          0                                 C2200 22   19 
+ENDSUBENT           18          0                                 C2200 2299999 
+SUBENT        C2200023   20160104                             C157C2200 23    1 
+BIB                  3          6                                 C2200 23    2 
+REACTION   (65-TB-159(P,X)63-EU-145,CUM,SIG)                      C2200 23    3 
+DECAY-DATA (63-EU-145,5.93D,DG,893.73,0.66,                       C2200 23    4 
+                            DG,1658.53,0.149,                     C2200 23    5 
+                            DG,1997.0,0.072,                      C2200 23    6 
+                            DG,653.61,0.15)                       C2200 23    7 
+STATUS     (TABLE) Data taken from tab.5 of the reference         C2200 23    8 
+ENDBIB               6          0                                 C2200 23    9 
+NOCOMMON             0          0                                 C2200 23   10 
+DATA                 4          5                                 C2200 23   11 
+EN         EN-RSL     DATA       ERR-T                            C2200 23   12 
+MEV        MEV        MB         MB                               C2200 23   13 
+      121.3        2.3        2.5        0.2                      C2200 23   14 
+      142.5        2.0       12.9        1.0                      C2200 23   15 
+      161.7        1.5       20.0        1.5                      C2200 23   16 
+      179.5        1.1       24.8        1.8                      C2200 23   17 
+      196.2        0.4       25.2        1.8                      C2200 23   18 
+ENDDATA              7          0                                 C2200 23   19 
+ENDSUBENT           18          0                                 C2200 2399999 
+SUBENT        C2200024   20160104                             C157C2200 24    1 
+BIB                  3          6                                 C2200 24    2 
+REACTION   (65-TB-159(P,X)63-EU-146,IND,SIG)                      C2200 24    3 
+DECAY-DATA (63-EU-146,4.61D,DG,1297.03,0.0539,                    C2200 24    4 
+                            DG,633.0,0.809,                       C2200 24    5 
+                            DG,747.16,0.99,                       C2200 24    6 
+                            DG,1533.71,0.0608)                    C2200 24    7 
+STATUS     (TABLE) Data taken from tab.5 of the reference         C2200 24    8 
+ENDBIB               6          0                                 C2200 24    9 
+NOCOMMON             0          0                                 C2200 24   10 
+DATA                 4          5                                 C2200 24   11 
+EN         EN-RSL     DATA       ERR-T                            C2200 24   12 
+MEV        MEV        MB         MB                               C2200 24   13 
+      121.3        2.3        4.7        0.4                      C2200 24   14 
+      142.5        2.0       12.8        1.0                      C2200 24   15 
+      161.7        1.5       15.5        1.1                      C2200 24   16 
+      179.5        1.1       18.0        1.3                      C2200 24   17 
+      196.2        0.4       20.1        1.4                      C2200 24   18 
+ENDDATA              7          0                                 C2200 24   19 
+ENDSUBENT           18          0                                 C2200 2499999 
+SUBENT        C2200025   20160104                             C157C2200 25    1 
+BIB                  3          6                                 C2200 25    2 
+REACTION   (65-TB-159(P,X)63-EU-147,CUM,SIG)                      C2200 25    3 
+DECAY-DATA (63-EU-147,24.1D,DG,121.22,0.212,                      C2200 25    4 
+                            DG,197.3,0.244,                       C2200 25    5 
+                            DG,677.52,0.09,                       C2200 25    6 
+                            DG,601.45,0.542)                      C2200 25    7 
+STATUS     (TABLE) Data taken from tab.5 of the reference         C2200 25    8 
+ENDBIB               6          0                                 C2200 25    9 
+NOCOMMON             0          0                                 C2200 25   10 
+DATA                 4          6                                 C2200 25   11 
+EN         EN-RSL     DATA       ERR-T                            C2200 25   12 
+MEV        MEV        MB         MB                               C2200 25   13 
+       97.0        2.9        5.6        0.4                      C2200 25   14 
+      121.3        2.3       31.6        2.6                      C2200 25   15 
+      142.5        2.0       37.0        2.8                      C2200 25   16 
+      161.7        1.5       56.4        4.1                      C2200 25   17 
+      179.5        1.1       69.0        5.1                      C2200 25   18 
+      196.2        0.4       74.3        5.3                      C2200 25   19 
+ENDDATA              8          0                                 C2200 25   20 
+ENDSUBENT           19          0                                 C2200 2599999 
+SUBENT        C2200026   20160104                             C157C2200 26    1 
+BIB                  3          6                                 C2200 26    2 
+REACTION   (65-TB-159(P,X)63-EU-148,CUM,SIG)                      C2200 26    3 
+DECAY-DATA (63-EU-148,54.5D,DG,414.00,0.204,                      C2200 26    4 
+                            DG,550.28,0.99,                       C2200 26    5 
+                            DG,553.20,0.179,                      C2200 26    6 
+                            DG,629.99,0.719)                      C2200 26    7 
+STATUS     (TABLE) Data taken from tab.5 of the reference         C2200 26    8 
+ENDBIB               6          0                                 C2200 26    9 
+NOCOMMON             0          0                                 C2200 26   10 
+DATA                 4          6                                 C2200 26   11 
+EN         EN-RSL     DATA       ERR-T                            C2200 26   12 
+MEV        MEV        MB         MB                               C2200 26   13 
+       97.0        2.9        2.3        0.2                      C2200 26   14 
+      121.3        2.3       10.0        0.8                      C2200 26   15 
+      142.5        2.0       11.5        0.9                      C2200 26   16 
+      161.7        1.5       12.8        0.9                      C2200 26   17 
+      179.5        1.1       14.5        1.1                      C2200 26   18 
+      196.2        0.4       15.9        1.1                      C2200 26   19 
+ENDDATA              8          0                                 C2200 26   20 
+ENDSUBENT           19          0                                 C2200 2699999 
+SUBENT        C2200027   20160104                             C157C2200 27    1 
+BIB                  3          4                                 C2200 27    2 
+REACTION   (65-TB-159(P,X)63-EU-149,CUM,SIG)                      C2200 27    3 
+DECAY-DATA (63-EU-149,93.1D,DG,327.53,0.0403,                     C2200 27    4 
+                            DG,277.09,0.0356)                     C2200 27    5 
+STATUS     (TABLE) Data taken from tab.5 of the reference         C2200 27    6 
+ENDBIB               4          0                                 C2200 27    7 
+NOCOMMON             0          0                                 C2200 27    8 
+DATA                 4          9                                 C2200 27    9 
+EN         EN-RSL     DATA       ERR-T                            C2200 27   10 
+MEV        MEV        MB         MB                               C2200 27   11 
+       68.3        1.5        0.1        0.0                      C2200 27   12 
+       78.0        0.7        7.3        0.6                      C2200 27   13 
+       87.2        0.4       27.6        1.9                      C2200 27   14 
+       97.0        2.9       27.6        2.1                      C2200 27   15 
+      121.3        2.3       60.4        5.0                      C2200 27   16 
+      142.5        2.0      102.7        7.9                      C2200 27   17 
+      161.7        1.5       98.8        7.3                      C2200 27   18 
+      179.5        1.1      109.6        8.1                      C2200 27   19 
+      196.2        0.4      109.1        7.8                      C2200 27   20 
+ENDDATA             11          0                                 C2200 27   21 
+ENDSUBENT           20          0                                 C2200 2799999 
+SUBENT        C2200028   20160104                             C157C2200 28    1 
+BIB                  4          7                                 C2200 28    2 
+REACTION   (65-TB-159(P,X)63-EU-149,IND,SIG)                      C2200 28    3 
+ANALYSIS   Independent cross section was determined by subtractionC2200 28    4 
+           of precursor contribution from cumulative cross sectionC2200 28    5 
+DECAY-DATA (63-EU-149,93.1D,DG,327.53,0.0403,                     C2200 28    6 
+                            DG,277.09,0.0356)                     C2200 28    7 
+STATUS     (TABLE) Data taken from tab.5 of the reference         C2200 28    8 
+           (DEP,C2200027) cumulative cross section given          C2200 28    9 
+ENDBIB               7          0                                 C2200 28   10 
+NOCOMMON             0          0                                 C2200 28   11 
+DATA                 4          6                                 C2200 28   12 
+EN         EN-RSL     DATA       ERR-T                            C2200 28   13 
+MEV        MEV        MB         MB                               C2200 28   14 
+       97.0        2.9        3.8        0.3                      C2200 28   15 
+      121.3        2.3        7.6        0.6                      C2200 28   16 
+      142.5        2.0       11.2        0.9                      C2200 28   17 
+      161.7        1.5       10.5        0.8                      C2200 28   18 
+      179.5        1.1       13.3        1.0                      C2200 28   19 
+      196.2        0.4       17.0        1.2                      C2200 28   20 
+ENDDATA              8          0                                 C2200 28   21 
+ENDSUBENT           20          0                                 C2200 2899999 
+ENDENTRY            28          0                                 C220099999999 
