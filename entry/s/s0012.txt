@@ -1,6 +1,6 @@
-ENTRY            S0012   20220927                             S032S001200000001 
-SUBENT        S0012001   20220927                             S032S001200100001 
-BIB                 12         36                                 S001200100002 
+ENTRY            S0012   20250225                             S034S001200000001 
+SUBENT        S0012001   20250225                             S034S001200100001 
+BIB                 12         38                                 S001200100002 
 TITLE      Excitation functions for 197Au(d,p)198Au,              S001200100003 
            191Au(d,2n)197mHg, 197Au(d,2n)197Hg and                S001200100004 
            197Au(d,p2n)196Au                                      S001200100005 
@@ -15,7 +15,7 @@ SAMPLE     Stacked target were composed of 13 Au foils (purity    S001200100011
 FACILITY   (CYCLO,3CPRSIU) 1.2 M cyclotron                        S001200100014 
 METHOD     (STTA,ACTIV) The samples were cooled for 66 h          S001200100015 
            after 120 min irradiation.                             S001200100016 
-INC-SOURCE 13.4 MeV deuteron beam, the average intensity of beam  S001200100017 
+INC-SOURCE 13.3 MeV deuteron beam, the average intensity of beam  S001200100017 
            current on the target was about 200 nA.                S001200100018 
 DETECTOR   (HPGE,GELI) Two rounds of stacked target irradiation   S001200100019 
            have been carried out using ORTEC GEM-30195            S001200100020 
@@ -32,18 +32,20 @@ ERR-ANALYS (ERR-T) Include the following uncertainties:           S001200100028
            (ERR-1) The charge quantities by beam integrator       S001200100031 
 HISTORY    (19850502)                                             S001200100032 
            (19860107A) DG.-Corrected by nds.-                     S001200100033 
-           (20080228A) NDS(SD):BIB section updated: upper to lowerS001200100034 
-           cases, 4-digits year, deleted EXP - from reaction code.S001200100035 
-           (20220927A) Jimin Wang: main reference added,          S001200100036 
-                       major revisions in 001,                    S001200100037 
-                       new SUBENT 006-009 added.                  S001200100038 
-ENDBIB              36          0                                 S001200100039 
-COMMON               1          3                                 S001200100040 
-ERR-1                                                             S001200100041 
-PER-CENT                                                          S001200100042 
-         5.                                                       S001200100043 
-ENDCOMMON            3          0                                 S001200100044 
-ENDSUBENT           43          0                                 S001200199999 
+           (20080228A) NDS(SD) :BIB section updated: upper to     S001200100034 
+           lower cases, 4-digits year, deleted EXP - from         S001200100035 
+           reaction code.                                         S001200100036 
+           (20220927A) Jimin Wang: main reference added, major    S001200100037 
+           revisions in 001, new SUBENT 006-009 added.            S001200100038 
+           (20250226U) Jimin Wang: 13.4 --> 13.3 under INC-SOURCE,S001200100039 
+           revisions in 004 and 008.                              S001200100040 
+ENDBIB              38          0                                 S001200100041 
+COMMON               1          3                                 S001200100042 
+ERR-1                                                             S001200100043 
+PER-CENT                                                          S001200100044 
+         5.                                                       S001200100045 
+ENDCOMMON            3          0                                 S001200100046 
+ENDSUBENT           45          0                                 S001200199999 
 SUBENT        S0012002   20220927                             S032S001200200001 
 BIB                  4          6                                 S001200200002 
 REACTION   (79-AU-197(D,P)79-AU-198,,SIG)                         S001200200003 
@@ -97,32 +99,36 @@ MEV        MB         MB                                          S001200300013
  8.3         2.8       0.3                                        S001200300023 
 ENDDATA             12          0                                 S001200300024 
 ENDSUBENT           23          0                                 S001200399999 
-SUBENT        S0012004   20220927                             S032S001200400001 
-BIB                  3          6                                 S001200400002 
+SUBENT        S0012004   20250225                             S034S001200400001 
+BIB                  4         10                                 S001200400002 
 REACTION   (79-AU-197(D,2N)80-HG-197,,SIG)                        S001200400003 
 DECAY-DATA (80-HG-197-G,2.67D,DG,77.6,0.306)                      S001200400004 
            (80-HG-197-M,23.8HR,DG,133.9,0.341)                    S001200400005 
-STATUS     (TABLE) Table 2 of Inst.of Nucl.Sci.and                S001200400006 
-                   Technol.,Sichuan U. Reports,001,1985.          S001200400007 
-           (PRELM) Preliminary results                            S001200400008 
-ENDBIB               6          0                                 S001200400009 
-NOCOMMON             0          0                                 S001200400010 
-DATA                 3         11                                 S001200400011 
-EN         DATA       ERR-T                                       S001200400012 
-MEV        MB         MB                                          S001200400013 
-13.1       660.0      55.2                                        S001200400014 
-12.5       514.4      41.0                                        S001200400015 
-11.8       419.3      41.1                                        S001200400016 
-11.2       360.6      30.2                                        S001200400017 
-10.6       291.0      23.4                                        S001200400018 
-10.2       192.4      15.6                                        S001200400019 
- 9.7       116.9       9.4                                        S001200400020 
- 9.2        70.6       5.7                                        S001200400021 
- 8.8        34.3       2.9                                        S001200400022 
- 8.3        13.1       1.2                                        S001200400023 
- 7.7         5.2       0.5                                        S001200400024 
-ENDDATA             13          0                                 S001200400025 
-ENDSUBENT           24          0                                 S001200499999 
+STATUS     (TABLE,,X.Long+,R,NST-001,1985) Table 2                S001200400006 
+           (PRELM) Preliminary results                            S001200400007 
+           (SPSDD,S0012007) Final metastable state production     S001200400008 
+           cross section.                                         S001200400009 
+           (SPSDD,S0012008) Final ground state production cross   S001200400010 
+           section.                                               S001200400011 
+HISTORY    (20250225A) Jimin Wang: Superseded.                    S001200400012 
+ENDBIB              10          0                                 S001200400013 
+NOCOMMON             0          0                                 S001200400014 
+DATA                 3         11                                 S001200400015 
+EN         DATA       ERR-T                                       S001200400016 
+MEV        MB         MB                                          S001200400017 
+13.1       660.0      55.2                                        S001200400018 
+12.5       514.4      41.0                                        S001200400019 
+11.8       419.3      41.1                                        S001200400020 
+11.2       360.6      30.2                                        S001200400021 
+10.6       291.0      23.4                                        S001200400022 
+10.2       192.4      15.6                                        S001200400023 
+ 9.7       116.9       9.4                                        S001200400024 
+ 9.2        70.6       5.7                                        S001200400025 
+ 8.8        34.3       2.9                                        S001200400026 
+ 8.3        13.1       1.2                                        S001200400027 
+ 7.7         5.2       0.5                                        S001200400028 
+ENDDATA             13          0                                 S001200400029 
+ENDSUBENT           28          0                                 S001200499999 
 SUBENT        S0012005   20220927                             S032S001200500001 
 BIB                  4          6                                 S001200500002 
 REACTION   (79-AU-197(D,X)79-AU-196,,SIG)                         S001200500003 
@@ -192,30 +198,31 @@ MEV        MB         MB                                          S001200700011
  8.3         2.8       0.3                                        S001200700021 
 ENDDATA             12          0                                 S001200700022 
 ENDSUBENT           21          0                                 S001200799999 
-SUBENT        S0012008   20220927                             S032S001200800001 
-BIB                  4          4                                 S001200800002 
+SUBENT        S0012008   20250225                             S034S001200800001 
+BIB                  4          5                                 S001200800002 
 REACTION   (79-AU-197(D,2N)80-HG-197-G,,SIG)                      S001200800003 
-DECAY-DATA (80-HG-197-G,2.67D,DG,77.3,0.181)                      S001200800004 
-STATUS     (TABLE) Table 2 of Chin.J.Nucl.Phys.,9,(1),48,1987     S001200800005 
+DECAY-DATA (80-HG-197-G,2.67D,DG,77.6,0.306)                      S001200800004 
+STATUS     (TABLE,,Long Xianguan+,J,CNP,9,48,1987) Table 2        S001200800005 
 HISTORY    (20220927C) Jimin Wang (CNDC)                          S001200800006 
-ENDBIB               4          0                                 S001200800007 
-NOCOMMON             0          0                                 S001200800008 
-DATA                 3         11                                 S001200800009 
-EN         DATA       ERR-T                                       S001200800010 
-MEV        MB         MB                                          S001200800011 
-13.1       416.       35.                                         S001200800012 
-12.5       320.       26.                                         S001200800013 
-11.8       334.       28.                                         S001200800014 
-11.2       252.       21.                                         S001200800015 
-10.6       204.       16.                                         S001200800016 
-10.2       137.       11.                                         S001200800017 
- 9.7        85.        7.                                         S001200800018 
- 9.2        53.        4.                                         S001200800019 
- 8.8        27.        2.                                         S001200800020 
- 8.3        10.        1.                                         S001200800021 
- 7.7         5.2       0.5                                        S001200800022 
-ENDDATA             13          0                                 S001200800023 
-ENDSUBENT           22          0                                 S001200899999 
+           (20250225A) Jimin Wang: DECAY-DATA corrected.          S001200800007 
+ENDBIB               5          0                                 S001200800008 
+NOCOMMON             0          0                                 S001200800009 
+DATA                 3         11                                 S001200800010 
+EN         DATA       ERR-T                                       S001200800011 
+MEV        MB         MB                                          S001200800012 
+13.1       416.       35.                                         S001200800013 
+12.5       320.       26.                                         S001200800014 
+11.8       334.       28.                                         S001200800015 
+11.2       252.       21.                                         S001200800016 
+10.6       204.       16.                                         S001200800017 
+10.2       137.       11.                                         S001200800018 
+ 9.7        85.        7.                                         S001200800019 
+ 9.2        53.        4.                                         S001200800020 
+ 8.8        27.        2.                                         S001200800021 
+ 8.3        10.        1.                                         S001200800022 
+ 7.7         5.2       0.5                                        S001200800023 
+ENDDATA             13          0                                 S001200800024 
+ENDSUBENT           23          0                                 S001200899999 
 SUBENT        S0012009   20220927                             S032S001200900001 
 BIB                  5          5                                 S001200900002 
 REACTION   (79-AU-197(D,X)79-AU-196,,SIG)                         S001200900003 
