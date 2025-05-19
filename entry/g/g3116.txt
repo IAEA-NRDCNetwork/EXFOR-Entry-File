@@ -1,0 +1,109 @@
+ENTRY            G3116   20150603                             G033G3116  0    1 
+SUBENT        G3116001   20150603                             G033G3116  1    1 
+BIB                 16         39                                 G3116  1    2 
+TITLE      Measurement of photo-neutron cross-sections of 89Y     G3116  1    3 
+            with bremsstrahlung energies of 45 and 55 MeV         G3116  1    4 
+AUTHOR     (M.Zaman, G.N.Kim, H.Naik, K.Kim, S.G.Shin, M.Tatari,  G3116  1    5 
+            M.H.Cho)                                              G3116  1    6 
+INSTITUTE  (3KORKNU,3INDTRM,3KORPUE)                              G3116  1    7 
+REFERENCE  (J,JRN,299,1739,2014)                                  G3116  1    8 
+FACILITY   (LINAC,3KORPUE) Pohang Accelerator Laboratory (PAL)    G3116  1    9 
+INC-SOURCE (BRST) Pulsed electron beam on thin tungsten target    G3116  1   10 
+            (size 10 cm x 10 cm, thickness 0.1 mm)                G3116  1   11 
+SAMPLE     Y foil (purity > 99.9%, thickness: 0.127 mm,           G3116  1   12 
+            size: 8 mm x 8 mm, weight: 39.7 mg)                   G3116  1   13 
+METHOD     (ACTIV) Irradiated for 20-30 min with the end-point    G3116  1   14 
+            bremsstrahlung energies of 45 and 55 MeV              G3116  1   15 
+            (beam current of 30-60 mA, repetition rate of 15 Hz,  G3116  1   16 
+             pulse width of 1.6 micro-sec)                        G3116  1   17 
+           (GSPEC) Started after the cooling time (2-5 min)       G3116  1   18 
+DETECTOR   (HPGE) Energy resolution of 1.8 keV FWHM at            G3116  1   19 
+            1332.5 keV peak of 60Co and detection efficiency of   G3116  1   20 
+            20% at 1332.5 keV relative to a NaI(Tl) detector      G3116  1   21 
+MONITOR    (13-AL-27(G,X)11-NA-24,,SIG,,BRA)                      G3116  1   22 
+            - Al foil (thickness: 0.025 mm, purity > 99.99%,      G3116  1   23 
+               weight: 46.8 mg)                                   G3116  1   24 
+            The ratio of the photon flux above the monitor        G3116  1   25 
+            threshold and the flux above the reaction threshold   G3116  1   26 
+            was calculated by MCNP 2.6.0.                         G3116  1   27 
+DECAY-MON  (11-NA-24,14.95HR,DG,1368.633,1.00)                    G3116  1   28 
+MONIT-REF  (,V.Di Napoli+,J,NCL,1,835,1971)                       G3116  1   29 
+REL-REF    (R,,J.Blachot+,J,APH,6,3,1981) Decay data              G3116  1   30 
+           (R,,E.Browne+,B,BROWNE,,1986) Decay data               G3116  1   31 
+           (R,,R.B.Firestone+,B,FIRESTONE,,1999) WWW Version 2.1, G3116  1   32 
+            Decay data                                            G3116  1   33 
+ERR-ANALYS (ERR-T) Total uncertainty                      (8-15%) G3116  1   34 
+           (ERR-S,5.,10.) Statistical uncertainty         (5-10%) G3116  1   35 
+           (ERR-1) irradiation time                       (~0.5%) G3116  1   36 
+           (ERR-2) detection efficiency calibration         (~4%) G3116  1   37 
+           (ERR-3,5.,10.) photon flux                     (5-10%) G3116  1   38 
+           (ERR-4) half-life and gamma-ray abundance        (~1%) G3116  1   39 
+STATUS     (APRVD) Approved by G.N.Kim (2015-06-05)               G3116  1   40 
+HISTORY    (20150603C) S.C.Yang                                   G3116  1   41 
+ENDBIB              39          0                                 G3116  1   42 
+COMMON               3          3                                 G3116  1   43 
+ERR-1      ERR-2      ERR-4                                       G3116  1   44 
+PER-CENT   PER-CENT   PER-CENT                                    G3116  1   45 
+0.5        4.         1.                                          G3116  1   46 
+ENDCOMMON            3          0                                 G3116  1   47 
+ENDSUBENT           46          0                                 G3116  199999 
+SUBENT        G3116002   20150603                             G033G3116  2    1 
+BIB                  3          3                                 G3116  2    2 
+REACTION   (39-Y-89(G,N)39-Y-88,,SIG,,BRA)                        G3116  2    3 
+DECAY-DATA (39-Y-88,106.65D,DG,898.042,0.937)                     G3116  2    4 
+STATUS     (TABLE) Table 2 of J.Radioanal.Nucl.Chem.299,1739,2014 G3116  2    5 
+ENDBIB               3          0                                 G3116  2    6 
+NOCOMMON             0          0                                 G3116  2    7 
+DATA                 5          2                                 G3116  2    8 
+EN-MAX     DATA       ERR-T      MONIT      MONIT-ERR             G3116  2    9 
+MEV        MB         MB         MB         MB                    G3116  2   10 
+45.        52.89      7.23       0.045      0.004                 G3116  2   11 
+55.        36.534     5.24       0.092      0.008                 G3116  2   12 
+ENDDATA              4          0                                 G3116  2   13 
+ENDSUBENT           12          0                                 G3116  299999 
+SUBENT        G3116003   20150603                             G033G3116  3    1 
+BIB                  3          4                                 G3116  3    2 
+REACTION   (39-Y-89(G,2N)39-Y-87,,SIG,,BRA) M+G                   G3116  3    3 
+DECAY-DATA (39-Y-87-G,79.8HR,DG,484.80,0.897)                     G3116  3    4 
+           (39-Y-87-M,13.37HR,DG,380.79,0.780)                    G3116  3    5 
+STATUS     (TABLE) Table 2 of J.Radioanal.Nucl.Chem.299,1739,2014 G3116  3    6 
+ENDBIB               4          0                                 G3116  3    7 
+NOCOMMON             0          0                                 G3116  3    8 
+DATA                 5          2                                 G3116  3    9 
+EN-MAX     DATA       ERR-T      MONIT      MONIT-ERR             G3116  3   10 
+MEV        MB         MB         MB         MB                    G3116  3   11 
+45.        6.00       0.81       0.045      0.004                 G3116  3   12 
+55.        5.42       0.77       0.092      0.008                 G3116  3   13 
+ENDDATA              4          0                                 G3116  3   14 
+ENDSUBENT           13          0                                 G3116  399999 
+SUBENT        G3116004   20150603                             G033G3116  4    1 
+BIB                  3          4                                 G3116  4    2 
+REACTION   (39-Y-89(G,3N)39-Y-86,,SIG,,BRA) M+G                   G3116  4    3 
+DECAY-DATA (39-Y-86-G,14.74HR,DG,1076.64,0.830)                   G3116  4    4 
+           (39-Y-86-M,48.0MIN,DG,208.10,0.940)                    G3116  4    5 
+STATUS     (TABLE) Table 3 of J.Radioanal.Nucl.Chem.299,1739,2014 G3116  4    6 
+ENDBIB               4          0                                 G3116  4    7 
+NOCOMMON             0          0                                 G3116  4    8 
+DATA                 5          2                                 G3116  4    9 
+EN-MAX     DATA       ERR-T      MONIT      MONIT-ERR             G3116  4   10 
+MEV        MB         MB         MB         MB                    G3116  4   11 
+45.        1.48       0.21       0.045      0.004                 G3116  4   12 
+55.        1.99       0.30       0.092      0.008                 G3116  4   13 
+ENDDATA              4          0                                 G3116  4   14 
+ENDSUBENT           13          0                                 G3116  499999 
+SUBENT        G3116005   20150603                             G033G3116  5    1 
+BIB                  3          5                                 G3116  5    2 
+REACTION   (39-Y-89(G,4N)39-Y-85,,SIG,,BRA) M+G                   G3116  5    3 
+DECAY-DATA (39-Y-85-G,2.68HR,DG,231.67,0.840,                     G3116  5    4 
+                             DG,504.45,0.600)                     G3116  5    5 
+           (39-Y-85-M,4.86HR,DG,231.67,0.228)                     G3116  5    6 
+STATUS     (TABLE) Table 3 of J.Radioanal.Nucl.Chem.299,1739,2014 G3116  5    7 
+ENDBIB               5          0                                 G3116  5    8 
+NOCOMMON             0          0                                 G3116  5    9 
+DATA                 5          1                                 G3116  5   10 
+EN-MAX     DATA       ERR-T      MONIT      MONIT-ERR             G3116  5   11 
+MEV        MB         MB         MB         MB                    G3116  5   12 
+55.        0.93       0.160      0.092      0.008                 G3116  5   13 
+ENDDATA              3          0                                 G3116  5   14 
+ENDSUBENT           13          0                                 G3116  599999 
+ENDENTRY             5          0                                 G311699999999 
