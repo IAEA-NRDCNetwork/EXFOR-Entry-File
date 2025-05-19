@@ -1,0 +1,111 @@
+ENTRY            31788   20190107                             31883178800000001 
+SUBENT        31788001   20190107                             31883178800100001 
+BIB                 16         35                                 3178800100002 
+TITLE      Non-destructive interrogation of uranium using PGAA    3178800100003 
+AUTHOR     (G.L.Molnar, Z.Revay, T.Belgya)                        3178800100004 
+INSTITUTE  (3HUNII)                                               3178800100005 
+REFERENCE  (J,NIM/B,213,389,2004)                                 3178800100006 
+           #0.1016/S0168-583X(03)01656-2                          3178800100007 
+REL-REF    (C,,T.Belgya,C,96BUDA,,826,1996) Thermal neutron       3178800100008 
+           (M,,Z.Revay+,J,NIM/B,213,385,2004) Cold neutron        3178800100009 
+           (N,,G.L.Molnar+,J,NIM/A,489,140,2002) Hypermet PC      3178800100010 
+FACILITY   (REAC,3HUNKFI) Budapest Research Reactor               3178800100011 
+INC-SOURCE (REAC) PGAA facility at the Budapest Research          3178800100012 
+           Reactor.                                               3178800100013 
+INC-SPECT  Thermal nuetron beam with thermal equivalent           3178800100014 
+           neutron flux of 2 x 10**6 cm**(-2)s**(-1).             3178800100015 
+           The cold neutron beam with thermal equivalent          3178800100016 
+           neutron flux of 5 x 10**7 cm**(-2)s**(-1).             3178800100017 
+           Comments from Dr.Z.Revay on 2019-01-10:                3178800100018 
+            "The cross section was measured in guided beams (cold 3178800100019 
+            and thermal) which is never Maxwellian, always        3178800100020 
+            broader towards the cold energies. We can call        3178800100021 
+            spectrum averaged, but not Maxwellian."               3178800100022 
+SAMPLE     Natural uranyl acetate, UO2(CH3COO)2 2H2O              3178800100023 
+DETECTOR   (HPGE) Compton-suppressed HPGe detector                3178800100024 
+METHOD     (ACTIV)                                                3178800100025 
+           (GSPEC)                                                3178800100026 
+MONITOR    (1-H-1(N,G)1-H-2,PAR,SIG)                              3178800100027 
+           The partial gamma ray production cross-sections for    3178800100028 
+           the major gamma lines have been determined relative    3178800100029 
+           to the 2223 keV gamma line of hydrogen.                3178800100030 
+ANALYSIS   Uranium spectra were evaluated using the Hypermet PC   3178800100031 
+           program.                                               3178800100032 
+ERR-ANALYS (DATA-ERR) No information available.                   3178800100033 
+STATUS     (TABLE) Data taken from Table 2 in                     3178800100034 
+                   Nucl.Inst.Meth.Phys.Res.B213,389(2004)         3178800100035 
+           (APRVD) By Dr.Z.Revay on 2019-01-10                    3178800100036 
+HISTORY    (20190107C) NDS So                                     3178800100037 
+ENDBIB              35          0                                 3178800100038 
+COMMON               2          3                                 3178800100039 
+EN-DUMMY   E-NRM                                                  3178800100040 
+EV         KEV                                                    3178800100041 
+0.0253     2223.                                                  3178800100042 
+ENDCOMMON            3          0                                 3178800100043 
+ENDSUBENT           42          0                                 3178800199999 
+SUBENT        31788002   20190107                             31883178800200001 
+BIB                  2          6                                 3178800200002 
+REACTION   (92-U-238(N,G)92-U-239,PAR,SIG,,SPA)                   3178800200003 
+CORRECTION The 4060 keV prompt gamma line overlaps with a decay   3178800200004 
+           line of the short-lived 90Rb. The interference was     3178800200005 
+           corrected using the peak at 4135 keV of 90Rb using     3178800200006 
+           following equation                                     3178800200007 
+             Inet(4060) = Itot(4060) - I(4135) x 0.035  eq.(1)    3178800200008 
+ENDBIB               6          0                                 3178800200009 
+NOCOMMON             0          0                                 3178800200010 
+DATA                 3          1                                 3178800200011 
+E          DATA       DATA-ERR                                    3178800200012 
+KEV        B          B                                           3178800200013 
+4060.      0.191      0.002                                       3178800200014 
+ENDDATA              3          0                                 3178800200015 
+ENDSUBENT           14          0                                 3178800299999 
+SUBENT        31788003   20190107                             31883178800300001 
+BIB                  2          2                                 3178800300002 
+REACTION   (92-U-238(N,G)92-U-239,PAR,SIG,DG,SPA)                 3178800300003 
+DECAY-DATA (93-NP-239,2.36D,DG,278.) Beta delayed gamma           3178800300004 
+ENDBIB               2          0                                 3178800300005 
+NOCOMMON             0          0                                 3178800300006 
+DATA                 3          1                                 3178800300007 
+E          DATA       DATA-ERR                                    3178800300008 
+KEV        B          B                                           3178800300009 
+278.       0.382      0.006                                       3178800300010 
+ENDDATA              3          0                                 3178800300011 
+ENDSUBENT           10          0                                 3178800399999 
+SUBENT        31788004   20190107                             31883178800400001 
+BIB                  1          1                                 3178800400002 
+REACTION   (92-U-235(N,G)92-U-236,PAR,SIG,,SPA)                   3178800400003 
+ENDBIB               1          0                                 3178800400004 
+NOCOMMON             0          0                                 3178800400005 
+DATA                 3          1                                 3178800400006 
+E          DATA       DATA-ERR                                    3178800400007 
+KEV        B          B                                           3178800400008 
+6395.      0.0038     0.0002                                      3178800400009 
+ENDDATA              3          0                                 3178800400010 
+ENDSUBENT            9          0                                 3178800499999 
+SUBENT        31788005   20190107                             31883178800500001 
+BIB                  2          3                                 3178800500002 
+REACTION   (92-U-238(N,F)52-TE-134,PAR,SIG,G,SPA)                 3178800500003 
+FLAG       (1.) Chopped beam PGAA (activation + decay phase)      3178800500004 
+           (2.) Chopped beam PGAA (activation phase)              3178800500005 
+ENDBIB               3          0                                 3178800500006 
+NOCOMMON             0          0                                 3178800500007 
+DATA                 4          2                                 3178800500008 
+E          DATA       DATA-ERR   FLAG                             3178800500009 
+KEV        B          B          NO-DIM                           3178800500010 
+297.       0.22       0.02       1.                               3178800500011 
+1279.      0.20       0.01       2.                               3178800500012 
+ENDDATA              4          0                                 3178800500013 
+ENDSUBENT           12          0                                 3178800599999 
+SUBENT        31788006   20190107                             31883178800600001 
+BIB                  2          2                                 3178800600002 
+REACTION   (92-U-238(N,F)56-BA-140,PAR,SIG,DG,SPA)                3178800600003 
+DECAY-DATA (56-BA-140,12.75D,DG,537.) Beta delayed gamma          3178800600004 
+ENDBIB               2          0                                 3178800600005 
+NOCOMMON             0          0                                 3178800600006 
+DATA                 3          1                                 3178800600007 
+E          DATA       DATA-ERR                                    3178800600008 
+KEV        B          B                                           3178800600009 
+537.       0.066      0.003                                       3178800600010 
+ENDDATA              3          0                                 3178800600011 
+ENDSUBENT           10          0                                 3178800699999 
+ENDENTRY             6          0                                 3178899999999 
