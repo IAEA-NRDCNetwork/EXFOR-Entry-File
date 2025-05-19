@@ -1,6 +1,6 @@
-ENTRY            40359   20200218                             418640359  0    1 
-SUBENT        40359001   20200218                             418640359  1    1 
-BIB                 14         41                                 40359  1    2 
+ENTRY            40359   20200515                             418740359  0    1 
+SUBENT        40359001   20200515                             418740359  1    1 
+BIB                 14         42                                 40359  1    2 
 INSTITUTE  (4RUSFEI)                                              40359  1    3 
 REFERENCE  ((R,YK-23,10,1976)=                                    40359  1    4 
            (R,INDC(CCP)-106,10,1976))                             40359  1    5 
@@ -30,7 +30,7 @@ ERR-ANALYS (DATA-ERR) Mean-square error for 3 measurement         40359  1   26
            (ERR-1,,2.) Error due to elastic and inelastic peaks   40359  1   29 
            separation.                                            40359  1   30 
            (ERR-2,3.,5.) Error of data used in analysis           40359  1   31 
-COMMENT    .Of authros: " Contribution of reaction C-12(N,n'+3A)  40359  1   32 
+COMMENT    .Of authors: " Contribution of reaction C-12(N,n'+3A)  40359  1   32 
             (Q=-7.34 MeV) can be estimated in analysis of spectra 40359  1   33 
            and angular distributions of scattered neutrons in     40359  1   34 
            this energy range."                                    40359  1   35 
@@ -42,13 +42,14 @@ HISTORY    (19771209C) Compiled at the centre                     40359  1   40
            (20200318U) Ref. INDC(CCP)-106,10,1976 was added.      40359  1   41 
            Upper -> lower case correction.                        40359  1   42 
            BIB information was updated.                           40359  1   43 
-ENDBIB              41          0                                 40359  1   44 
-COMMON               1          3                                 40359  1   45 
-EN                                                                40359  1   46 
-MEV                                                               40359  1   47 
- 14.4                                                             40359  1   48 
-ENDCOMMON            3          0                                 40359  1   49 
-ENDSUBENT           48          0                                 40359  199999 
+           (20200515U) Minor correction in Subent 003             40359  1   44 
+ENDBIB              42          0                                 40359  1   45 
+COMMON               1          3                                 40359  1   46 
+EN                                                                40359  1   47 
+MEV                                                               40359  1   48 
+ 14.4                                                             40359  1   49 
+ENDCOMMON            3          0                                 40359  1   50 
+ENDSUBENT           49          0                                 40359  199999 
 SUBENT        40359002   20200218                             418640359  2    1 
 BIB                  4          9                                 40359  2    2 
 REACTION   (6-C-12(N,INL)6-C-12,PAR,DA)                           40359  2    3 
@@ -76,28 +77,32 @@ ADEG       MB/SR      MB/SR                                       40359  2   20
  150.       15.35      1.0                                        40359  2   25 
 ENDDATA              7          0                                 40359  2   26 
 ENDSUBENT           25          0                                 40359  299999 
-SUBENT        40359003   20200218                             418640359  3    1 
-BIB                  5         14                                 40359  3    2 
-REACTION   (6-C-12(N,INL)6-C-12,PAR,SIG)                          40359  3    3 
-ANALYSIS   (INTAD)                                                40359  3    4 
-COMMENT    Of authors.                                            40359  3    5 
-            Measured angular distribution was fitted by Legendre  40359  3    6 
-           polinomials in the form:                               40359  3    7 
-           SIG(COS(angle))=                                       40359  3    8 
-           (1/(4*PI))*(a0+a1*P1(COS(angle))+a2*P2(COS(angle))).   40359  3    9 
-           Coefficient a0 is emission total cross-section, what is40359  3   10 
-           cross-section of all reactions with excited level      40359  3   11 
-           energy > 9.63 MeV.                                     40359  3   12 
-STATUS     (TABLE) Text page 12 of INDC(CCP)-106,10,1976          40359  3   13 
-           (DEP,40359002) Measured angular distribution.          40359  3   14 
-HISTORY    (20200218) Subent was added according to a comment of  40359  3   15 
-           S.Simakov(KIT) and N.Otsuka (NDS,IAEA).                40359  3   16 
-ENDBIB              14          0                                 40359  3   17 
-NOCOMMON             0          0                                 40359  3   18 
-DATA                 2          1                                 40359  3   19 
-E-LVL-MIN  DATA                                                   40359  3   20 
-MEV        MB                                                     40359  3   21 
- 9.63       231.                                                  40359  3   22 
-ENDDATA              3          0                                 40359  3   23 
-ENDSUBENT           22          0                                 40359  399999 
+SUBENT        40359003   20200515                             418740359  3    1 
+BIB                  5         18                                 40359  3    2 
+REACTION   (6-C-12(N,INL)6-C-12,PAR,SIG,,MSC)                     40359  3    3 
+            Contribution of any reaction emitting a neutron slower40359  3    4 
+            than (n,n3) neutron is included .                     40359  3    5 
+ANALYSIS   (INTAD)                                                40359  3    6 
+COMMENT    Of authors.                                            40359  3    7 
+            Measured angular distribution was fitted by Legendre  40359  3    8 
+           polynomials in the form:                               40359  3    9 
+           SIG(COS(angle))=                                       40359  3   10 
+           (1/(4*PI))*(a0+a1*P1(COS(angle))+a2*P2(COS(angle))).   40359  3   11 
+           Coefficient a0 is emission total cross-section, what is40359  3   12 
+           cross-section of all reactions with excited level      40359  3   13 
+           energy > 9.63 MeV.                                     40359  3   14 
+STATUS     (TABLE) Text page 12 of INDC(CCP)-106,10,1976          40359  3   15 
+           (DEP,40359002) Measured angular distribution.          40359  3   16 
+HISTORY    (20200218C) Subent was added according to a comment of 40359  3   17 
+           S.Simakov(KIT) and N.Otsuka (NDS,IAEA).                40359  3   18 
+           (20200515A) MSC was added in SF8 according to a comment40359  3   19 
+            of N.Otsuka (NDS,IAEA)                                40359  3   20 
+ENDBIB              18          0                                 40359  3   21 
+NOCOMMON             0          0                                 40359  3   22 
+DATA                 2          1                                 40359  3   23 
+E-LVL-MIN  DATA                                                   40359  3   24 
+MEV        MB                                                     40359  3   25 
+ 9.63       231.                                                  40359  3   26 
+ENDDATA              3          0                                 40359  3   27 
+ENDSUBENT           26          0                                 40359  399999 
 ENDENTRY             3          0                                 4035999999999 

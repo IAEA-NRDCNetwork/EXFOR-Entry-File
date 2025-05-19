@@ -1,6 +1,6 @@
-ENTRY            40807   20191102                             418440807  0    1 
-SUBENT        40807001   20191102                             418440807  1    1 
-BIB                  8         20                                 40807  1    2 
+ENTRY            40807   20200515                             418740807  0    1 
+SUBENT        40807001   20200515                             418740807  1    1 
+BIB                  8         21                                 40807  1    2 
 INSTITUTE  (4RUSLEB)                                              40807  1    3 
 REFERENCE  (J,ZET,40,1610,1961) Issue 6.                          40807  1    4 
            (J,JET,13,1132,1961)                                   40807  1    5 
@@ -21,9 +21,10 @@ HISTORY    (19840904T) Converted from ENTRY 80272                 40807  1   15
            Units and data were corrected as given in the article. 40807  1   20 
            Subents 004 - 006 were added.                          40807  1   21 
             Subent 007 was added from 41228.002                   40807  1   22 
-ENDBIB              20          0                                 40807  1   23 
-NOCOMMON             0          0                                 40807  1   24 
-ENDSUBENT           23          0                                 40807  199999 
+           (20200515U) Subents 004-006 were corrected             40807  1   23 
+ENDBIB              21          0                                 40807  1   24 
+NOCOMMON             0          0                                 40807  1   25 
+ENDSUBENT           24          0                                 40807  199999 
 SUBENT        40807002   20191102                             418440807  2    1 
 BIB                  4          9                                 40807  2    2 
 REACTION  1(17-CL-35(N,0),,EN)                                    40807  2    3 
@@ -74,19 +75,19 @@ MILLI-EV   MILLI-EV   NO-DIM                                      40807  3   22
  35.        15.        1.                                         40807  3   26 
 ENDDATA              8          0                                 40807  3   27 
 ENDSUBENT           26          0                                 40807  399999 
-SUBENT        40807004   20191102                             418440807  4    1 
+SUBENT        40807004   20200515                             418740807  4    1 
 BIB                  5         11                                 40807  4    2 
-REACTION  1(17-CL-35(N,0),,EN)                                    40807  4    3 
-          2(17-CL-35(N,G),,WID,,S0)                               40807  4    4 
-          3(17-CL-35(N,P),,WID,,S0)                               40807  4    5 
-          4(17-CL-35(N,P),,WID)                                   40807  4    6 
-          5(17-CL-35(N,0),,L)                                     40807  4    7 
-ASSUMED    (ASSUM,17-CL-35(N,G),,WID)                             40807  4    8 
-ERR-ANALYS (DATA-ERR) Type on uncertainty is not explained in the 40807  4    9 
-           article                                                40807  4   10 
-COMMENT    Of authors. There is a bump in CS near 1 keV,          40807  4   11 
-           which may be due to resonance 1.1+-0.2 keV .           40807  4   12 
-STATUS     (TABLE) Table 1 of JET,13,1132,1961                    40807  4   13 
+REACTION  1(17-CL-35(N,G),,WID,,S0)                               40807  4    3 
+          2(17-CL-35(N,P),,WID,,S0)                               40807  4    4 
+          3(17-CL-35(N,P),,WID)                                   40807  4    5 
+          4(17-CL-35(N,0),,L)                                     40807  4    6 
+ASSUMED    (ASSUM,17-CL-35(N,G),,WID)                             40807  4    7 
+COMMENT    Of authors. There is a bump in CS near 1 keV,          40807  4    8 
+           which may be due to resonance 1.1+-0.2 keV .           40807  4    9 
+STATUS     (TABLE) Table 1 of Sov.Phys.JETP,v.13,p.1132,1961      40807  4   10 
+HISTORY    (20191102C) Subent was added                           40807  4   11 
+           (20200515A) Resonance energy is coded as               40807  4   12 
+            EN-RES                                                40807  4   13 
 ENDBIB              11          0                                 40807  4   14 
 COMMON               1          3                                 40807  4   15 
 ASSUM                                                             40807  4   16 
@@ -94,41 +95,45 @@ EV                                                                40807  4   17
  0.5                                                              40807  4   18 
 ENDCOMMON            3          0                                 40807  4   19 
 DATA                 6          1                                 40807  4   20 
-DATA      1DATA-ERR  1DATA-APRX 2DATA-APRX 3DATA-APRX 4DATA      540807  4   21 
+EN-RES     EN-RES-ERR DATA-APRX 1DATA-APRX 2DATA-APRX 3DATA      440807  4   21 
 EV         EV         B*EV       B*EV       MILLI-EV   NO-DIM     40807  4   22 
  1100.      200.       8.         0.8        50.         1.       40807  4   23 
 ENDDATA              3          0                                 40807  4   24 
 ENDSUBENT           23          0                                 40807  499999 
-SUBENT        40807005   20191102                             418440807  5    1 
-BIB                  3          6                                 40807  5    2 
-REACTION  1(17-CL-35(N,0),,EN)                                    40807  5    3 
-          3(17-CL-35(N,P),,WID,,S0)                               40807  5    4 
-          4(17-CL-35(N,P),,WID)                                   40807  5    5 
-          5(17-CL-35(N,0),,L)                                     40807  5    6 
-COMMENT    Of authors. Unresolved resonances of 15 and 17 keV.    40807  5    7 
-STATUS     (TABLE) Table 1 of JET,13,1132,1961                    40807  5    8 
-ENDBIB               6          0                                 40807  5    9 
-NOCOMMON             0          0                                 40807  5   10 
-DATA                 5          1                                 40807  5   11 
-DATA-MIN  1DATA-MAX  1DATA-APRX 3DATA-APRX 4DATA      5           40807  5   12 
-KEV        KEV        B*EV       MILLI-EV   NO-DIM                40807  5   13 
- 15.        17.        10.        100.       0.                   40807  5   14 
-ENDDATA              3          0                                 40807  5   15 
-ENDSUBENT           14          0                                 40807  599999 
-SUBENT        40807006   20191102                             418440807  6    1 
-BIB                  3          4                                 40807  6    2 
+SUBENT        40807005   20200515                             418740807  5    1 
+BIB                  4          8                                 40807  5    2 
+REACTION  2(17-CL-35(N,P),,WID,,S0)                               40807  5    3 
+          3(17-CL-35(N,P),,WID)                                   40807  5    4 
+          4(17-CL-35(N,0),,L)                                     40807  5    5 
+COMMENT    Of authors. Unresolved resonances of 15 and 17 keV.    40807  5    6 
+STATUS     (TABLE) Table 1 of Sov.Phys.JETP,v.13,p.1132,1961      40807  5    7 
+HISTORY    (20191102C) Subent was added                           40807  5    8 
+           (20200515A) Resonance energies are coded as            40807  5    9 
+            EN-RES-MIN/MAX                                        40807  5   10 
+ENDBIB               8          0                                 40807  5   11 
+NOCOMMON             0          0                                 40807  5   12 
+DATA                 5          1                                 40807  5   13 
+EN-RES-MIN EN-RES-MAX DATA-APRX 2DATA-APRX 3DATA      4           40807  5   14 
+KEV        KEV        B*EV       MILLI-EV   NO-DIM                40807  5   15 
+ 15.        17.        10.        100.       0.                   40807  5   16 
+ENDDATA              3          0                                 40807  5   17 
+ENDSUBENT           16          0                                 40807  599999 
+SUBENT        40807006   20200515                             418740807  6    1 
+BIB                  4          6                                 40807  6    2 
 REACTION   (17-CL-35(N,P)16-S-35,,RI,,LIM)                        40807  6    3 
 ERR-ANALYS (DATA-ERR) Type on uncertainty is not explained in the 40807  6    4 
            article                                                40807  6    5 
-STATUS     (TABLE) Text, page 1134 of JET,13,1132,1961            40807  6    6 
-ENDBIB               4          0                                 40807  6    7 
-NOCOMMON             0          0                                 40807  6    8 
-DATA                 4          1                                 40807  6    9 
-EN-MIN     EN-MAX     DATA       DATA-ERR                         40807  6   10 
-EV         KEV        B          B                                40807  6   11 
- 0.5        20.        0.074      0.025                           40807  6   12 
-ENDDATA              3          0                                 40807  6   13 
-ENDSUBENT           12          0                                 40807  699999 
+STATUS     (TABLE) Text, page 1134 of                             40807  6    6 
+           Sov.Phys.JETP,v.13,p.1132,1961                         40807  6    7 
+HISTORY    (20191102C) Subent was added                           40807  6    8 
+ENDBIB               6          0                                 40807  6    9 
+NOCOMMON             0          0                                 40807  6   10 
+DATA                 4          1                                 40807  6   11 
+EN-MIN     EN-MAX     DATA       DATA-ERR                         40807  6   12 
+EV         KEV        B          B                                40807  6   13 
+ 0.5        20.        0.074      0.025                           40807  6   14 
+ENDDATA              3          0                                 40807  6   15 
+ENDSUBENT           14          0                                 40807  699999 
 SUBENT        40807007   20191102                             418440807  7    1 
 BIB                  6         14                                 40807  7    2 
 REACTION   (17-CL-35(N,P)16-S-35,,SIG)                            40807  7    3 
