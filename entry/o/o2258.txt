@@ -1,6 +1,6 @@
-ENTRY            O2258   20170408                             O061O2258  0    1 
-SUBENT        O2258001   20170408                             O061O2258  1    1 
-BIB                 12         34                                 O2258  1    2 
+ENTRY            O2258   20170826                             O063O2258  0    1 
+SUBENT        O2258001   20170826                             O063O2258  1    1 
+BIB                 13         41                                 O2258  1    2 
 TITLE      Cross section measurements of deuteron induced nuclear O2258  1    3 
            reactions on natural tungsten up to 34 MeV.            O2258  1    4 
 AUTHOR     (C.Duchemin, A.Guertin, F.Haddad, N.Michel, V.Metivier)O2258  1    5 
@@ -27,21 +27,28 @@ METHOD     (STTA,BCINT,EXTB)                                      O2258  1   23
             (for more than 48h).                                  O2258  1   26 
 MONITOR    (22-TI-0(D,X)23-V-48,,SIG)                             O2258  1   27 
 DECAY-MON  (23-V-48,,DG,944.13,,DG,983.525,,DG,1312.106)          O2258  1   28 
-ERR-ANALYS (ERR-1,5.,40.) Error in the measured activity in W     O2258  1   29 
-           target.                                                O2258  1   30 
-           (ERR-2,,2.) Error in the measured activity for V-48    O2258  1   31 
-           (ERR-3) Error in the foil thickness                    O2258  1   32 
-           (MONIT-ERR) Error in monitor reaction                  O2258  1   33 
-HISTORY    (20150323C) SB                                         O2258  1   34 
-           (20170406U) SD: Comment from author added to Subent 006O2258  1   35 
-           Free text corrected in ERR-ANNALYS in Subents 001-008. O2258  1   36 
-ENDBIB              34          0                                 O2258  1   37 
-COMMON               2          3                                 O2258  1   38 
-ERR-3      MONIT-ERR                                              O2258  1   39 
-PER-CENT   PER-CENT                                               O2258  1   40 
-  1.         12.                                                  O2258  1   41 
-ENDCOMMON            3          0                                 O2258  1   42 
-ENDSUBENT           41          0                                 O2258  199999 
+COMMENT    Charlotte Duchemin (2017-05-16): All gamma lines in    O2258  1   29 
+           Table 3 of the article have been used for the          O2258  1   30 
+           quantification except for the case of 181Re for which  O2258  1   31 
+           the 365 keV gamma line has been used for quantificationO2258  1   32 
+           and the two others for consistency check.              O2258  1   33 
+ERR-ANALYS (ERR-1,5.,40.) Error in the measured activity in W     O2258  1   34 
+           target.                                                O2258  1   35 
+           (ERR-2,,2.) Error in the measured activity for V-48    O2258  1   36 
+           (ERR-3) Error in the foil thickness                    O2258  1   37 
+           (MONIT-ERR) Error in monitor reaction                  O2258  1   38 
+HISTORY    (20150323C) SB                                         O2258  1   39 
+           (20170406U) SD: Comment from author added to Subent 006O2258  1   40 
+           Free text corrected in ERR-ANNALYS in Subents 001-008. O2258  1   41 
+           (20170826U) SD: COMMENT from the author was added.     O2258  1   42 
+           Correction of DECAY-DATA in Subent 007.                O2258  1   43 
+ENDBIB              41          0                                 O2258  1   44 
+COMMON               2          3                                 O2258  1   45 
+ERR-3      MONIT-ERR                                              O2258  1   46 
+PER-CENT   PER-CENT                                               O2258  1   47 
+  1.         12.                                                  O2258  1   48 
+ENDCOMMON            3          0                                 O2258  1   49 
+ENDSUBENT           48          0                                 O2258  199999 
 SUBENT        O2258002   20170408                             O061O2258  2    1 
 BIB                  5         11                                 O2258  2    2 
 REACTION   (74-W-0(D,X)75-RE-186-G,,SIG)                          O2258  2    3 
@@ -241,43 +248,44 @@ MEV        MEV        MB         MB                               O2258  6   21
 33.36      0.30       170.04     19.84                            O2258  6   40 
 ENDDATA             21          0                                 O2258  6   41 
 ENDSUBENT           40          0                                 O2258  699999 
-SUBENT        O2258007   20170408                             O061O2258  7    1 
-BIB                  5         10                                 O2258  7    2 
+SUBENT        O2258007   20170826                             O063O2258  7    1 
+BIB                  6         11                                 O2258  7    2 
 REACTION   (74-W-0(D,X)75-RE-181,,SIG)                            O2258  7    3 
-DECAY-DATA (75-RE-181,19.9HR,DG,365.570,0.56,DG,639.30,0.064,     O2258  7    4 
-                             DG,953.420,0.036)                    O2258  7    5 
-ERR-ANALYS (ERR-T) total uncertainty                              O2258  7    6 
-           (EN-ERR) Energy uncertainty calculated using the SRIM  O2258  7    7 
-           software(see REL-REF) increases up to +-0.7 MeV due to O2258  7    8 
-           the energy straggling.                                 O2258  7    9 
-REL-REF    (M,,J.F.Ziegler+,J,NIM/B,268,1818,2010) - SRIM - the   O2258  7   10 
-             stopping and range of ions in matter.                O2258  7   11 
-STATUS     (TABLE).Table 5 of J,ARI,97,52,2015                    O2258  7   12 
-ENDBIB              10          0                                 O2258  7   13 
-NOCOMMON             0          0                                 O2258  7   14 
-DATA                 4         18                                 O2258  7   15 
-EN         EN-ERR     DATA       ERR-T                            O2258  7   16 
-MEV        MEV        MB         MB                               O2258  7   17 
-8.85       0.66       0.09       0.04                             O2258  7   18 
-9.74       0.57       0.10       0.04                             O2258  7   19 
-10.42      0.56       0.13       0.07                             O2258  7   20 
-12.87      0.44       0.17       0.07                             O2258  7   21 
-14.67      0.38       4.15       1.08                             O2258  7   22 
-15.52      0.33       26.66      7.94                             O2258  7   23 
-16.96      0.31       45.60      13.58                            O2258  7   24 
-18.43      0.64       200.33     50.16                            O2258  7   25 
-19.85      0.58       252.12     63.40                            O2258  7   26 
-20.93      0.63       259.40     62.80                            O2258  7   27 
-22.37      0.55       328.2      87.77                            O2258  7   28 
-23.11      0.59       304.32     74.72                            O2258  7   29 
-24.39      0.46       341.61     92.70                            O2258  7   30 
-26.35      0.41       350.30     94.91                            O2258  7   31 
-27.91      0.49       276.96     93.77                            O2258  7   32 
-30.06      0.29       268.76     73.30                            O2258  7   33 
-32.13      0.35       220.30     69.32                            O2258  7   34 
-33.36      0.30       256.14     72.95                            O2258  7   35 
-ENDDATA             20          0                                 O2258  7   36 
-ENDSUBENT           35          0                                 O2258  799999 
+DECAY-DATA (75-RE-181,19.9HR,DG,365.570,0.56)                     O2258  7    4 
+ERR-ANALYS (ERR-T) total uncertainty                              O2258  7    5 
+           (EN-ERR) Energy uncertainty calculated using the SRIM  O2258  7    6 
+           software(see REL-REF) increases up to +-0.7 MeV due to O2258  7    7 
+           the energy straggling.                                 O2258  7    8 
+REL-REF    (M,,J.F.Ziegler+,J,NIM/B,268,1818,2010) - SRIM - the   O2258  7    9 
+             stopping and range of ions in matter.                O2258  7   10 
+STATUS     (TABLE).Table 5 of J,ARI,97,52,2015                    O2258  7   11 
+HISTORY    (20170826U) SD: gamma lines 639. and 953. keV were     O2258  7   12 
+           deleted  from DECAY-DATA.                              O2258  7   13 
+ENDBIB              11          0                                 O2258  7   14 
+NOCOMMON             0          0                                 O2258  7   15 
+DATA                 4         18                                 O2258  7   16 
+EN         EN-ERR     DATA       ERR-T                            O2258  7   17 
+MEV        MEV        MB         MB                               O2258  7   18 
+8.85       0.66       0.09       0.04                             O2258  7   19 
+9.74       0.57       0.10       0.04                             O2258  7   20 
+10.42      0.56       0.13       0.07                             O2258  7   21 
+12.87      0.44       0.17       0.07                             O2258  7   22 
+14.67      0.38       4.15       1.08                             O2258  7   23 
+15.52      0.33       26.66      7.94                             O2258  7   24 
+16.96      0.31       45.60      13.58                            O2258  7   25 
+18.43      0.64       200.33     50.16                            O2258  7   26 
+19.85      0.58       252.12     63.40                            O2258  7   27 
+20.93      0.63       259.40     62.80                            O2258  7   28 
+22.37      0.55       328.2      87.77                            O2258  7   29 
+23.11      0.59       304.32     74.72                            O2258  7   30 
+24.39      0.46       341.61     92.70                            O2258  7   31 
+26.35      0.41       350.30     94.91                            O2258  7   32 
+27.91      0.49       276.96     93.77                            O2258  7   33 
+30.06      0.29       268.76     73.30                            O2258  7   34 
+32.13      0.35       220.30     69.32                            O2258  7   35 
+33.36      0.30       256.14     72.95                            O2258  7   36 
+ENDDATA             20          0                                 O2258  7   37 
+ENDSUBENT           36          0                                 O2258  799999 
 SUBENT        O2258008   20170408                             O061O2258  8    1 
 BIB                  5         11                                 O2258  8    2 
 REACTION   (74-W-0(D,X)74-W-187,,SIG)                             O2258  8    3 
