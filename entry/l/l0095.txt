@@ -1,6 +1,6 @@
-ENTRY            L0095   20050715                             L008L009500000001 
-SUBENT        L0095001   20050715                             L008L009500100001 
-BIB                  9         13                                 L009500100002 
+ENTRY            L0095   20240329                             L052L009500000001 
+SUBENT        L0095001   20240329                             L052L009500100001 
+BIB                  9         14                                 L009500100002 
 INSTITUTE  (2GERBON)                                              L009500100003 
 REFERENCE  (J,NP/A,197,163,1972)                                  L009500100004 
 AUTHOR     (P.David,J.Debrus,U.Kim,G.Kumbartzki,H.Mommsen,W.Soyez,L009500100005 
@@ -14,9 +14,10 @@ DETECTOR   (TRD) mica foils (muscovite KAl3Si3010(OH)2)           L009500100011
 SAMPLE     Ten uranium foils of 12 x 18 mm 2 each 150 microm thickL009500100013 
             were sandwiched in eleven mica foils each 25 gm thick.L009500100014 
 HISTORY    (20050715C) DR                                         L009500100015 
-ENDBIB              13          0                                 L009500100016 
-NOCOMMON             0          0                                 L009500100017 
-ENDSUBENT           16          0                                 L009500199999 
+           (20240317A) OS. Major correction in sub.3              L009500100016 
+ENDBIB              14          0                                 L009500100017 
+NOCOMMON             0          0                                 L009500100018 
+ENDSUBENT           17          0                                 L009500199999 
 SUBENT        L0095002   20050715                             L008L009500200001 
 BIB                  3          4                                 L009500200002 
 REACTION   (92-U-238(G,F)MASS,CHN,FY,,REL/BRA)                    L009500200003 
@@ -59,24 +60,30 @@ MEV        NO-DIM     ARB-UNITS  ARB-UNITS                        L009500200011
 2000.         1.42E+02   1.82E+00   1.12E-01                      L009500200040 
 ENDDATA             31          0                                 L009500200041 
 ENDSUBENT           40          0                                 L009500299999 
-SUBENT        L0095003   20050715                             L008L009500300001 
-BIB                  3          5                                 L009500300002 
-REACTION   ((92-U-238(G,F)MASS,CHN,FY,,BRA)/                      L009500300003 
-           (92-U-238(G,F)47-AG-112,CHN,FY,,BRA))                  L009500300004 
+SUBENT        L0095003   20240329                             L052L009500300001 
+BIB                  4          7                                 L009500300002 
+REACTION   ((92-U-238(G,F)MASS,CHN,FY,,BRA)//                     L009500300003 
+           (92-U-238(G,F)MASS,CHN,FY,,BRA))                       L009500300004 
            Ratio Peak to valley                                   L009500300005 
 ERR-ANALYS (DATA-ERR) No information                              L009500300006 
-STATUS     Data taken from Table 5                                L009500300007 
-ENDBIB               5          0                                 L009500300008 
-NOCOMMON             0          0                                 L009500300009 
-DATA                 4          6                                 L009500300010 
-EN-MAX     MASS       DATA       DATA-ERR                         L009500300011 
-MEV        NO-DIM     ARB-UNITS  ARB-UNITS                        L009500300012 
-0.8        97.        2.98       0.26                             L009500300013 
-1.2        97.        2.74       0.09                             L009500300014 
-1.5        97.        2.50       0.25                             L009500300015 
-1.8        97.        2.44       0.18                             L009500300016 
-2.0        97.        2.37       0.15                             L009500300017 
-2.2        97.        2.14       0.12                             L009500300018 
-ENDDATA              8          0                                 L009500300019 
-ENDSUBENT           18          0                                 L009500399999 
+STATUS     (TABLE,,P.David+,J,NP/A,197,163,1972) Table 2          L009500300007 
+HISTORY    (20240317A) REACTION corrected, MASS replaced by       L009500300008 
+            MASS-NM, MASS-DN, STATUS corrected                    L009500300009 
+ENDBIB               7          0                                 L009500300010 
+COMMON               2          3                                 L009500300011 
+MASS-NM    MASS-DN                                                L009500300012 
+NO-DIM     NO-DIM                                                 L009500300013 
+  97.        112.                                                 L009500300014 
+ENDCOMMON            3          0                                 L009500300015 
+DATA                 3          6                                 L009500300016 
+EN-MAX     DATA       DATA-ERR                                    L009500300017 
+MEV        ARB-UNITS  ARB-UNITS                                   L009500300018 
+0.8        2.98       0.26                                        L009500300019 
+1.2        2.74       0.09                                        L009500300020 
+1.5        2.50       0.25                                        L009500300021 
+1.8        2.44       0.18                                        L009500300022 
+2.0        2.37       0.15                                        L009500300023 
+2.2        2.14       0.12                                        L009500300024 
+ENDDATA              8          0                                 L009500300025 
+ENDSUBENT           24          0                                 L009500399999 
 ENDENTRY             3          0                                 L009599999999 
