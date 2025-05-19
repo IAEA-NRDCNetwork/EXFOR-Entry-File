@@ -1,6 +1,6 @@
-ENTRY            22464   20160820                             225222464  0    1 
-SUBENT        22464001   20160820                             225222464  1    1 
-BIB                 14         59                                 22464  1    2 
+ENTRY            22464   20180830                             227022464  0    1 
+SUBENT        22464001   20180830                             227022464  1    1 
+BIB                 14         60                                 22464  1    2 
 TITLE       Multiplicity and energy of neutrons from              22464  1    3 
             235U(n-thermal,f) fission fragments                   22464  1    4 
 AUTHOR     (K.Nishio, Y.Nakagome, H.Yamamoto, I.Kimura, I.Kanno)  22464  1    5 
@@ -60,13 +60,14 @@ HISTORY    (20000305C)  + +  Compiled by S.M.                     22464  1   48
             004 - 009 according to MEMO CP-D/856. Title changed   22464  1   59 
             following first ref. MONITOR added to Subents 2,4-9.  22464  1   60 
            (20160820U) SD: STATUS was changed in Subent 003.      22464  1   61 
-ENDBIB              59          0                                 22464  1   62 
-COMMON               1          3                                 22464  1   63 
-EN-MEAN                                                           22464  1   64 
-EV                                                                22464  1   65 
-   2.53E-02                                                       22464  1   66 
-ENDCOMMON            3          0                                 22464  1   67 
-ENDSUBENT           66          0                                 22464  199999 
+           (20180830A) SD: REACTION codes corrected in Subent 012.22464  1   62 
+ENDBIB              60          0                                 22464  1   63 
+COMMON               1          3                                 22464  1   64 
+EN-MEAN                                                           22464  1   65 
+EV                                                                22464  1   66 
+   2.53E-02                                                       22464  1   67 
+ENDCOMMON            3          0                                 22464  1   68 
+ENDSUBENT           67          0                                 22464  199999 
 SUBENT        22464002   20150925                             224522464  2    1 
 BIB                  5         11                                 22464  2    2 
 REACTION   (92-U-235(N,F)MASS,PR,NU/DE,,MXW/REL)  Neutron         22464  2    3 
@@ -1288,26 +1289,25 @@ MEV        MEV        MEV        MEV                              2246401100013
        69.8         1.      101.3         1.                      2246401100014 
 ENDDATA              3          0                                 2246401100015 
 ENDSUBENT           14          0                                 2246401199999 
-SUBENT        22464012   20010625                             00002246401200001 
-BIB                  3         10                                 2246401200002 
-REACTION  1(92-U-235(N,F),PR,KE/CRL,N/LF,MXW) Average Neutron     2246401200003 
-             Energy for Light Fragment Group                      2246401200004 
-          2(92-U-235(N,F),PR,KE/CRL,N/HF,MXW) Average Neutron     2246401200005 
-             Energy for Heavy Fragment Group                      2246401200006 
-ANALYSIS  1.For Neutrons Emitted by Light Fission Fragments       2246401200007 
-            Group                                                 2246401200008 
-          2.For Neutrons Emitted by Heavy Fission Fragments       2246401200009 
-            Group                                                 2246401200010 
-STATUS     .From the Text of Main Reference                       2246401200011 
-           (DEP,22464007)                                         2246401200012 
-ENDBIB              10          0                                 2246401200013 
-NOCOMMON             0          0                                 2246401200014 
-DATA                 2          1                                 2246401200015 
-DATA      1DATA      2                                            2246401200016 
-MEV        MEV                                                    2246401200017 
-       1.33       1.43                                            2246401200018 
-ENDDATA              3          0                                 2246401200019 
-ENDSUBENT           18          0                                 2246401299999 
+SUBENT        22464012   20180830                             227022464 12    1 
+BIB                  3          9                                 22464 12    2 
+REACTION  1(92-U-235(N,F)0-NN-1,PR,KE,,MXW/MSC) Average Neutron   22464 12    3 
+             Energy for Light Fragment Group                      22464 12    4 
+          2(92-U-235(N,F)0-NN-1,PR,KE,,MXW/MSC) Average Neutron   22464 12    5 
+             Energy for Heavy Fragment Group                      22464 12    6 
+STATUS     (TABLE) From the Text of Nucl.Phys.A632(1998)540       22464 12    7 
+           (DEP,22464007)                                         22464 12    8 
+HISTORY    (20180830A) SD: SF4=NN-1 added; SF6=KE/CRL -> KE;      22464 12    9 
+           SF7=N/LF deleted; SF8=MXW -> MXW/MSC in REACTION codes.22464 12   10 
+           ANALYSIS deleted (Similar text under REACTION).        22464 12   11 
+ENDBIB               9          0                                 22464 12   12 
+NOCOMMON             0          0                                 22464 12   13 
+DATA                 2          1                                 22464 12   14 
+DATA      1DATA      2                                            22464 12   15 
+MEV        MEV                                                    22464 12   16 
+       1.33       1.43                                            22464 12   17 
+ENDDATA              3          0                                 22464 12   18 
+ENDSUBENT           17          0                                 22464 1299999 
 SUBENT        22464013   20010625                             00002246401300001 
 BIB                  2          3                                 2246401300002 
 REACTION   (92-U-235(N,F),PRE,AKE,FF,MXW)                         2246401300003 

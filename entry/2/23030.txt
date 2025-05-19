@@ -1,8 +1,8 @@
-ENTRY            23030   20170825                             226523030  0    1 
-SUBENT        23030001   20170825                             226523030  1    1 
-BIB                 19        193                                 23030  1    2 
+ENTRY            23030   20180317                             227023030  0    1 
+SUBENT        23030001   20180317                             227023030  1    1 
+BIB                 18        193                                 23030  1    2 
 TITLE       95 MeV neutron scattering on hydrogen, deuterium,     23030  1    3 
-            carbon, and oxygen.                                   23030  1    4 
+            carbon, and oxygen                                    23030  1    4 
 AUTHOR     (P.Mermod, J.Blomgren, C.Johansson, A.Oehrn,           23030  1    5 
            M.Oesterlund,S.Pomp, B.Bergenwall, J.Klug, L.Nilsson,  23030  1    6 
            N.Olsson, U.Tippawan, P.Nadel-Turonski, O.Jonsson,     23030  1    7 
@@ -21,11 +21,11 @@ INSTITUTE  (2SWDUPP)P.Mermod, J.Blomgren, C.Johansson,A.Oehrn,    23030  1   10
            (2PRTLIS) R.Crespo. Instituto Superior Technico,Lisboa,23030  1   20 
                               Portugal.                           23030  1   21 
            (2SPNSEU) A.Moro                                       23030  1   22 
-REFERENCE  (J,PR/C,74,054002,2006) Main reference.                23030  1   23 
+REFERENCE  (J,PR/C,74,054002,2006)                                23030  1   23 
            (T,Oehrn,2008) SCANDAL setup and exp.procedure         23030  1   24 
                             details.                              23030  1   25 
-           (C,2007NICE,2,1039,2007)                               23030  1   26 
-REL-REF    (N,,S.Dangtip+,J,NIM/A,452,484,2000) MEDLEY setup      23030  1   27 
+           (C,2007NICE,2,1039,2007)  presentation on the Conf.    23030  1   26 
+REL-REF    (I,,S.Dangtip+,J,NIM/A,452,484,2000) MEDLEY setup      23030  1   27 
                                                 details.          23030  1   28 
            (A,,C.Johansson+,J,PR/C,71,024002,2005) Data used in   23030  1   29 
                                         normalization procedure.  23030  1   30 
@@ -147,8 +147,8 @@ ANALYSIS  2 Spectra for collective states in C-12(n,inl) and      23030  1  138
             Contribution from excited state Gaussians have been   23030  1  146 
             subtracted, number of elastic events was obtained by  23030  1  147 
             integrating the peaks in these spectra.               23030  1  148 
-MONITOR   1(1-H-1(N,EL)1-H-1,,DA) for (n,p) and nd scattering from23030  1  149 
-            MEDLEY and SCANDAL proton/deuteron mode.              23030  1  150 
+MONITOR   1(1-H-1(N,EL)1-H-1,,DA) for (n,p) and (n,d) scattering  23030  1  149 
+            from MEDLEY and SCANDAL proton/deuteron mode.         23030  1  150 
           2(6-C-12(N,EL)6-C-12,,SIG) for normalization in         23030  1  151 
              measurement at SCANDAL neutron mode.                 23030  1  152 
             Normalization to 286+-7 mb value.                     23030  1  153 
@@ -158,241 +158,296 @@ MONIT-REF 1(22668002,J.Rahm+,J,PR/C,63,044001,2001)  - Absolute   23030  1  154
             at 96 MeV of Rahm+, which in turn were re-normalized  23030  1  157 
             by 0.7% using data of Johansson+ (see REL-REF).       23030  1  158 
           2(22847002,J.Klug+,J,PR/C,68,064605,2003)               23030  1  159 
-STATUS     (COREL,22914001) (n,p) and (n,d) data for MEDLEY setup.23030  1  160 
-           (COREL,22920001) (n,p) and (n,d) data for SCANDAL setup23030  1  161 
-             Used in data deducing for O and C.                   23030  1  162 
-CORRECTION2 Correction for neutron multiple scattering and        23030  1  163 
-            attenuation inside targets before oxygen background   23030  1  164 
-            subtraction. Attenuation correction coefficients were 23030  1  165 
-            calculated from carbon and oxygen reaction cross      23030  1  166 
-            sections and (n,p) and (n,d) total cross-sections     23030  1  167 
-            using MC simulation. Attenuation in carbon - 17.3%,   23030  1  168 
-            in oxygen- 10.5%,in hydrogen- 1.2%, in deuterium-2.0%.23030  1  169 
-            Total attenuation effect 17.3% for C target,          23030  1  170 
-            11.5% for H2-O target, 12.3% for D2-O target.         23030  1  171 
-            Corrections for multiple scattering were typically 2%,23030  1  172 
-            with at most a 4% loss of events at smallest angle and23030  1  173 
-            50% gain at largest angle.MC and MCNPX codes were     23030  1  174 
-            used.                                                 23030  1  175 
-            Correction for CsI efficiency.                        23030  1  176 
-            Correction for inclusion of low-energy neutrons.      23030  1  177 
-            Correction for angular dependence of conversion       23030  1  178 
-            efficiency, typically 6% relative effect between small23030  1  179 
-            and large angles, with negligible systematic error.   23030  1  180 
-ERR-ANALYS (ERR-T) Total uncertainty.                             23030  1  181 
-            ANG-ERR -Uncertainty in neutron c.m. angle.           23030  1  182 
-           (ERR-1) Uncertainty in absolute normalization -4%.     23030  1  183 
-           (ERR-2) Uncertainty in correction for multiple         23030  1  184 
-            scattering was estimated to be 10% of correction      23030  1  185 
-            itself.                                               23030  1  186 
-           (ERR-3) Systematic uncertainty due to Gaussian fits    23030  1  187 
-            was evaluated to vary from 2% at small angles to 70%  23030  1  188 
-            at large angles. Max. in COMMON.                      23030  1  189 
-ADD-RES    (THEO) Exp. data are compared with predictions of      23030  1  190 
-                  different models.                               23030  1  191 
-            Kerma coefficients for carbon and oxygen (Table V).   23030  1  192 
-HISTORY    (20080630C) M.M.                                       23030  1  193 
-           (20170825U) SD: Ref. 2007NICE,132(#435) deleted (full  23030  1  194 
-           article published in 2007NICE,2,1039,2007.             23030  1  195 
+CORRECTION2 Correction for neutron multiple scattering and        23030  1  160 
+            attenuation inside targets before oxygen background   23030  1  161 
+            subtraction. Attenuation correction coefficients were 23030  1  162 
+            calculated from carbon and oxygen reaction cross      23030  1  163 
+            sections and (n,p) and (n,d) total cross-sections     23030  1  164 
+            using MC simulation. Attenuation in carbon - 17.3%,   23030  1  165 
+            in oxygen- 10.5%,in hydrogen- 1.2%, in deuterium-2.0%.23030  1  166 
+            Total attenuation effect 17.3% for C target,          23030  1  167 
+            11.5% for H2-O target, 12.3% for D2-O target.         23030  1  168 
+            Corrections for multiple scattering were typically 2%,23030  1  169 
+            with at most a 4% loss of events at smallest angle and23030  1  170 
+            50% gain at largest angle.MC and MCNPX codes were     23030  1  171 
+            used.                                                 23030  1  172 
+            Correction for CsI efficiency.                        23030  1  173 
+            Correction for inclusion of low-energy neutrons.      23030  1  174 
+            Correction for angular dependence of conversion       23030  1  175 
+            efficiency, typically 6% relative effect between small23030  1  176 
+            and large angles, with negligible systematic error.   23030  1  177 
+ERR-ANALYS (ERR-T) Total uncertainty.                             23030  1  178 
+           (ERR-1) Uncertainty in absolute normalization -4%.     23030  1  179 
+           (ERR-2) Uncertainty in correction for multiple         23030  1  180 
+            scattering was estimated to be 10% of correction      23030  1  181 
+            itself.                                               23030  1  182 
+           (ERR-3,2.,70.) Systematic uncertainty due to Gaussian  23030  1  183 
+             fits was evaluated to vary from 2% at small angles   23030  1  184 
+            to 70%  at large angles.                              23030  1  185 
+ADD-RES    (THEO) Exp. data are compared with predictions of      23030  1  186 
+                  different models.                               23030  1  187 
+HISTORY    (20080630C) M.M.                                       23030  1  188 
+           (20170825U) SD: Ref. 2007NICE,132(#435) deleted (full  23030  1  189 
+           article published in 2007NICE,2,1039,2007.             23030  1  190 
+           (20180317A) SD: Subents 008-009 added. Subents 006, 00723030  1  191 
+           corrected. ERR-ANALYS update. ANG-ERR moved to         23030  1  192 
+           Subents 002-007. Subents 004, 007 deleted. Data were   23030  1  193 
+           moved to Subents 003 and 006, correspondingly.         23030  1  194 
+           STATUS 'COREL' deleted (no alternative results).       23030  1  195 
 ENDBIB             193          0                                 23030  1  196 
-COMMON               9          6                                 23030  1  197 
+COMMON               7          6                                 23030  1  197 
 EN         EN-ERR     EN-RSL-FW  MONIT     2MONIT-ERR 2ERR-1      23030  1  198 
-ERR-2      ANG-ERR    ERR-3                                       23030  1  199 
+ERR-2                                                             23030  1  199 
 MEV        MEV        MEV        MB         MB         PER-CENT   23030  1  200 
-PER-CENT   ADEG       PER-CENT                                    23030  1  201 
-94.8       0.5          2.7        286.      7.         4.        23030  1  202 
-10.        0.5         70.                                        23030  1  203 
+PER-CENT                                                          23030  1  201 
+       94.8        0.5        2.7       286.         7.         4.23030  1  202 
+        10.                                                       23030  1  203 
 ENDCOMMON            6          0                                 23030  1  204 
 ENDSUBENT          203          0                                 23030  199999 
-SUBENT        23030002   20080630                             22002303000200001 
-BIB                  2          2                                 2303000200002 
-REACTION   (6-C-12(N,EL)6-C-12,,DA)                               2303000200003 
-STATUS     (TABLE) Table I of main reference.                     2303000200004 
-ENDBIB               2          0                                 2303000200005 
-NOCOMMON             0          0                                 2303000200006 
-DATA                 3         18                                 2303000200007 
-ANG-CM     DATA-CM    ERR-T                                       2303000200008 
-ADEG       MB/SR      MB/SR                                       2303000200009 
-10.8        761.       31.                                        2303000200010 
-14.5        538.       23.                                        2303000200011 
-18.8        227.       12.                                        2303000200012 
-23.1        125.        7.                                        2303000200013 
-27.7         52.        4.                                        2303000200014 
-32.2         16.6       1.8                                       2303000200015 
-37.4          5.4       1.0                                       2303000200016 
-42.3          2.9       0.6                                       2303000200017 
-46.1          2.3       0.5                                       2303000200018 
-50.6          1.01      0.25                                      2303000200019 
-55.0          0.98      0.25                                      2303000200020 
-59.5          0.83      0.21                                      2303000200021 
-64.6          0.46      0.22                                      2303000200022 
-69.0          0.22      0.13                                      2303000200023 
-74.1          0.11      0.08                                      2303000200024 
-78.3          0.09      0.09                                      2303000200025 
-82.1          0.09      0.09                                      2303000200026 
-85.3          0.04      0.04                                      2303000200027 
-ENDDATA             20          0                                 2303000200028 
-ENDSUBENT           27          0                                 2303000299999 
-SUBENT        23030003   20080630                             22002303000300001 
-BIB                  3          5                                 2303000300002 
-REACTION   (6-C-12(N,INL)6-C-12,PAR,DA)                           2303000300003 
-             Inelastic scattering to first excited state.         2303000300004 
-EN-SEC     (E-LVL,6-C-12) Energy of "first" 2+ excited state,     2303000300005 
-            corresponding to Gaussian at 4.4 MeV.                 2303000300006 
-STATUS     (TABLE) Table I of main reference.                     2303000300007 
-ENDBIB               5          0                                 2303000300008 
-COMMON               1          3                                 2303000300009 
-E-LVL                                                             2303000300010 
-MEV                                                               2303000300011 
- 4.4                                                              2303000300012 
-ENDCOMMON            3          0                                 2303000300013 
-DATA                 3         13                                 2303000300014 
-ANG-CM     DATA-CM    ERR-T                                       2303000300015 
-ADEG       MB/SR      MB/SR                                       2303000300016 
-32.2        4.0         1.8                                       2303000300017 
-37.4        3.6         0.9                                       2303000300018 
-42.3        3.0         0.8                                       2303000300019 
-46.1        1.8         0.6                                       2303000300020 
-50.6        0.92        0.26                                      2303000300021 
-55.0        0.66        0.22                                      2303000300022 
-59.5        0.48        0.16                                      2303000300023 
-64.6        0.28        0.14                                      2303000300024 
-69.0        0.22        0.11                                      2303000300025 
-74.1        0.11        0.05                                      2303000300026 
-78.3        0.05        0.03                                      2303000300027 
-82.1        0.06        0.04                                      2303000300028 
-85.3        0.04        0.03                                      2303000300029 
-ENDDATA             15          0                                 2303000300030 
-ENDSUBENT           29          0                                 2303000399999 
-SUBENT        23030004   20080630                             22002303000400001 
-BIB                  3          5                                 2303000400002 
-REACTION   (6-C-12(N,INL)6-C-12,PAR,DA)                           2303000400003 
-             Inelastic scattering to second excited state.        2303000400004 
-EN-SEC     (E-LVL,6-C-12) Energy of "second" 3- excited state,    2303000400005 
-                 corresponding to Gaussian at 9.6 MeV.            2303000400006 
-STATUS     (TABLE) Table I of main reference.                     2303000400007 
-ENDBIB               5          0                                 2303000400008 
-COMMON               1          3                                 2303000400009 
-E-LVL                                                             2303000400010 
-MEV                                                               2303000400011 
- 9.6                                                              2303000400012 
-ENDCOMMON            3          0                                 2303000400013 
-DATA                 3         13                                 2303000400014 
-ANG-CM     DATA-CM    ERR-T                                       2303000400015 
-ADEG       MB/SR      MB/SR                                       2303000400016 
-32.2       4.5          1.9                                       2303000400017 
-37.4       5.0          1.2                                       2303000400018 
-42.3       2.6          0.5                                       2303000400019 
-46.1       3.1          0.7                                       2303000400020 
-50.6       1.46         0.38                                      2303000400021 
-55.0       1.96         0.51                                      2303000400022 
-59.5       1.72         0.49                                      2303000400023 
-64.6       1.36         0.54                                      2303000400024 
-69.0       0.35         0.17                                      2303000400025 
-74.1       0.18         0.10                                      2303000400026 
-78.3       0.08         0.05                                      2303000400027 
-82.1       0.02         0.02                                      2303000400028 
-85.3       0.04         0.04                                      2303000400029 
-ENDDATA             15          0                                 2303000400030 
-ENDSUBENT           29          0                                 2303000499999 
-SUBENT        23030005   20080630                             22002303000500001 
-BIB                  3          6                                 2303000500002 
-REACTION   (8-O-16(N,EL)8-O-16,,DA)                               2303000500003 
-ANALYSIS    O-16(n,el) distribution was extracted from H2-O and   2303000500004 
-            D2-O measurement spectra. spectra obtained previously 2303000500005 
-            for np and nd scattering were subtracted from H2-O and2303000500006 
-            D2-O spectra to obtain oxygen spectra.                2303000500007 
-STATUS     (TABLE) Table II of main reference.                    2303000500008 
-ENDBIB               6          0                                 2303000500009 
-NOCOMMON             0          0                                 2303000500010 
-DATA                 3         18                                 2303000500011 
-ANG-CM     DATA-CM    ERR-T                                       2303000500012 
-ADEG       MB/SR      MB/SR                                       2303000500013 
-10.6        1087.      44.                                        2303000500014 
-14.2         708.      30.                                        2303000500015 
-18.4         256.      14.                                        2303000500016 
-22.7         131.       8.                                        2303000500017 
-27.1          39.       3.                                        2303000500018 
-31.6          11.9      1.2                                       2303000500019 
-36.5           8.0      1.5                                       2303000500020 
-41.3           5.8      1.1                                       2303000500021 
-45.2           3.4      0.7                                       2303000500022 
-49.8           1.29     0.27                                      2303000500023 
-54.0           1.13     0.26                                      2303000500024 
-58.2           0.95     0.22                                      2303000500025 
-63.5           0.51     0.20                                      2303000500026 
-67.8           0.37     0.17                                      2303000500027 
-73.0           0.13     0.07                                      2303000500028 
-77.2           0.03     0.03                                      2303000500029 
-80.8           0.02     0.02                                      2303000500030 
-84.0           0.02     0.01                                      2303000500031 
-ENDDATA             20          0                                 2303000500032 
-ENDSUBENT           31          0                                 2303000599999 
-SUBENT        23030006   20080630                             22002303000600001 
-BIB                  3          9                                 2303000600002 
-REACTION   (8-O-16(N,INL)8-O-16,PAR,DA)                           2303000600003 
-             Inelastic scattering to sum of 3- and 2+ excited     2303000600004 
-             states.                                              2303000600005 
-EN-SEC     (E-LVL-MEAN,8-O-16) Energy of "first" excited state,   2303000600006 
-            corresponding to Gaussian at 6.5 MeV, refers to 3-    2303000600007 
-            state at 6.1 MeV and 2+ state at 6.9 MeV together,    2303000600008 
-            and probably also the relatively weak 1- state at     2303000600009 
-            7.1 MeV.                                              2303000600010 
-STATUS     (TABLE) Table II of main reference.                    2303000600011 
-ENDBIB               9          0                                 2303000600012 
-COMMON               1          3                                 2303000600013 
-E-LVL-MEAN                                                        2303000600014 
-MEV                                                               2303000600015 
- 6.5                                                              2303000600016 
-ENDCOMMON            3          0                                 2303000600017 
-DATA                 3         12                                 2303000600018 
-ANG-CM     DATA-CM    ERR-T                                       2303000600019 
-ADEG       MB/SR      MB/SR                                       2303000600020 
-31.6        5.3         2.4                                       2303000600021 
-36.5        5.9         1.5                                       2303000600022 
-41.3        2.8         0.8                                       2303000600023 
-45.2        3.0         0.9                                       2303000600024 
-49.8        1.63        0.46                                      2303000600025 
-54.0        1.52        0.49                                      2303000600026 
-58.2        1.11        0.35                                      2303000600027 
-63.5        0.60        0.27                                      2303000600028 
-67.8        0.54        0.22                                      2303000600029 
-73.0        0.28        0.04                                      2303000600030 
-77.2        0.10        0.02                                      2303000600031 
-80.8        0.06        0.02                                      2303000600032 
-ENDDATA             14          0                                 2303000600033 
-ENDSUBENT           32          0                                 2303000699999 
-SUBENT        23030007   20080630                             22002303000700001 
-BIB                  3          8                                 2303000700002 
-REACTION   (8-O-16(N,INL)8-O-16,PAR,DA)                           2303000700003 
-             Inelastic scattering to sum of 2+ and 4+ excited     2303000700004 
-             states.                                              2303000700005 
-EN-SEC     (E-LVL-MEAN,8-O-16) Energy of "second" excited state,  2303000700006 
-            corresponding to Gaussian at 6.5 MeV, refers to 2+    2303000700007 
-            state at 9.8 MeV and 4+ state at 10.4 MeV together,   2303000700008 
-            where 4+ state is expected to dominate.               2303000700009 
-STATUS     (TABLE) Table II of main reference.                    2303000700010 
-ENDBIB               8          0                                 2303000700011 
-COMMON               1          3                                 2303000700012 
-E-LVL-MEAN                                                        2303000700013 
-MEV                                                               2303000700014 
-10.4                                                              2303000700015 
-ENDCOMMON            3          0                                 2303000700016 
-DATA                 3         12                                 2303000700017 
-ANG-CM     DATA-CM    ERR-T                                       2303000700018 
-ADEG       MB/SR      MB/SR                                       2303000700019 
-31.6        2.7         1.1                                       2303000700020 
-36.5        2.5         0.7                                       2303000700021 
-41.3        2.4         0.5                                       2303000700022 
-45.2        2.0         0.4                                       2303000700023 
-49.8        1.76        0.44                                      2303000700024 
-54.0        1.43        0.37                                      2303000700025 
-58.2        0.88        0.25                                      2303000700026 
-63.5        0.80        0.33                                      2303000700027 
-67.8        0.29        0.13                                      2303000700028 
-73.0        0.14        0.07                                      2303000700029 
-77.2        0.13        0.07                                      2303000700030 
-80.8        0.08        0.02                                      2303000700031 
-ENDDATA             14          0                                 2303000700032 
-ENDSUBENT           31          0                                 2303000799999 
-ENDENTRY             7          0                                 2303099999999 
+SUBENT        23030002   20180317                             227023030  2    1 
+BIB                  4          4                                 23030  2    2 
+REACTION   (6-C-12(N,EL)6-C-12,,DA)                               23030  2    3 
+ERR-ANALYS (ANG-ERR) Uncertainty in neutron c.m. angle.           23030  2    4 
+STATUS     (TABLE) Table I from Phys.Rev.C74(2006)054002          23030  2    5 
+HISTORY    (20180317U) SD: ANG-ERR added.                         23030  2    6 
+ENDBIB               4          0                                 23030  2    7 
+COMMON               1          3                                 23030  2    8 
+ANG-ERR                                                           23030  2    9 
+ADEG                                                              23030  2   10 
+  0.5                                                             23030  2   11 
+ENDCOMMON            3          0                                 23030  2   12 
+DATA                 3         18                                 23030  2   13 
+ANG-CM     DATA-CM    ERR-T                                       23030  2   14 
+ADEG       MB/SR      MB/SR                                       23030  2   15 
+10.8        761.       31.                                        23030  2   16 
+14.5        538.       23.                                        23030  2   17 
+18.8        227.       12.                                        23030  2   18 
+23.1        125.        7.                                        23030  2   19 
+27.7         52.        4.                                        23030  2   20 
+32.2         16.6       1.8                                       23030  2   21 
+37.4          5.4       1.0                                       23030  2   22 
+42.3          2.9       0.6                                       23030  2   23 
+46.1          2.3       0.5                                       23030  2   24 
+50.6          1.01      0.25                                      23030  2   25 
+55.0          0.98      0.25                                      23030  2   26 
+59.5          0.83      0.21                                      23030  2   27 
+64.6          0.46      0.22                                      23030  2   28 
+69.0          0.22      0.13                                      23030  2   29 
+74.1          0.11      0.08                                      23030  2   30 
+78.3          0.09      0.09                                      23030  2   31 
+82.1          0.09      0.09                                      23030  2   32 
+85.3          0.04      0.04                                      23030  2   33 
+ENDDATA             20          0                                 23030  2   34 
+ENDSUBENT           33          0                                 23030  299999 
+SUBENT        23030003   20180317                             227023030  3    1 
+BIB                  5         12                                 23030  3    2 
+REACTION   (6-C-12(N,INL)6-C-12,PAR,DA)                           23030  3    3 
+             Inelastic scattering to first excited state.         23030  3    4 
+LEVEL-PROP (6-C-12,E-LVL=4.4,SPIN=2.,PARITY=1.)                   23030  3    5 
+            Energy of "first" 2+ excited state,                   23030  3    6 
+            corresponding to Gaussian at 4.4 MeV.                 23030  3    7 
+           (6-C-12,E-LVL=9.6,SPIN=3.,PARITY=-1.)                  23030  3    8 
+             Energy of "second" 3- excited state,                 23030  3    9 
+                 corresponding to Gaussian at 9.6 MeV.            23030  3   10 
+ERR-ANALYS (ANG-ERR) Uncertainty in neutron c.m. angle.           23030  3   11 
+STATUS     (TABLE) Table I of from Phys.Rev.C74(2006)054002       23030  3   12 
+HISTORY    (20180317A) SD: ANG-ERR added. EN-SEC -> LEVEL-PROP.   23030  3   13 
+           Data from Subent 004 were added.                       23030  3   14 
+ENDBIB              12          0                                 23030  3   15 
+COMMON               1          3                                 23030  3   16 
+ANG-ERR                                                           23030  3   17 
+ADEG                                                              23030  3   18 
+  0.5                                                             23030  3   19 
+ENDCOMMON            3          0                                 23030  3   20 
+DATA                 4         26                                 23030  3   21 
+E-LVL      ANG-CM     DATA-CM    ERR-T                            23030  3   22 
+MEV        ADEG       MB/SR      MB/SR                            23030  3   23 
+        4.4       32.2        4.0        1.8                      23030  3   24 
+        4.4       37.4        3.6        0.9                      23030  3   25 
+        4.4       42.3        3.0        0.8                      23030  3   26 
+        4.4       46.1        1.8        0.6                      23030  3   27 
+        4.4       50.6       0.92       0.26                      23030  3   28 
+        4.4       55.0       0.66       0.22                      23030  3   29 
+        4.4       59.5       0.48       0.16                      23030  3   30 
+        4.4       64.6       0.28       0.14                      23030  3   31 
+        4.4       69.0       0.22       0.11                      23030  3   32 
+        4.4       74.1       0.11       0.05                      23030  3   33 
+        4.4       78.3       0.05       0.03                      23030  3   34 
+        4.4       82.1       0.06       0.04                      23030  3   35 
+        4.4       85.3       0.04       0.03                      23030  3   36 
+        9.6       32.2        4.5        1.9                      23030  3   37 
+        9.6       37.4        5.0        1.2                      23030  3   38 
+        9.6       42.3        2.6        0.5                      23030  3   39 
+        9.6       46.1        3.1        0.7                      23030  3   40 
+        9.6       50.6       1.46       0.38                      23030  3   41 
+        9.6       55.0       1.96       0.51                      23030  3   42 
+        9.6       59.5       1.72       0.49                      23030  3   43 
+        9.6       64.6       1.36       0.54                      23030  3   44 
+        9.6       69.0       0.35       0.17                      23030  3   45 
+        9.6       74.1       0.18       0.10                      23030  3   46 
+        9.6       78.3       0.08       0.05                      23030  3   47 
+        9.6       82.1       0.02       0.02                      23030  3   48 
+        9.6       85.3       0.04       0.04                      23030  3   49 
+ENDDATA             28          0                                 23030  3   50 
+ENDSUBENT           49          0                                 23030  399999 
+NOSUBENT      23030004   20180317                             227023030  4    1 
+SUBENT        23030005   20180317                             227023030  5    1 
+BIB                  5          8                                 23030  5    2 
+REACTION   (8-O-16(N,EL)8-O-16,,DA)                               23030  5    3 
+ANALYSIS    O-16(n,el) distribution was extracted from H2-O and   23030  5    4 
+            D2-O measurement spectra. spectra obtained previously 23030  5    5 
+            for np and nd scattering were subtracted from H2-O and23030  5    6 
+            D2-O spectra to obtain oxygen spectra.                23030  5    7 
+ERR-ANALYS (ANG-ERR) Uncertainty in neutron c.m. angle.           23030  5    8 
+STATUS     (TABLE) Table II from Phys.Rev.C74(2006)054002         23030  5    9 
+HISTORY    (20180317U) SD: ANG-ERR added.                         23030  5   10 
+ENDBIB               8          0                                 23030  5   11 
+COMMON               1          3                                 23030  5   12 
+ANG-ERR                                                           23030  5   13 
+ADEG                                                              23030  5   14 
+  0.5                                                             23030  5   15 
+ENDCOMMON            3          0                                 23030  5   16 
+DATA                 3         18                                 23030  5   17 
+ANG-CM     DATA-CM    ERR-T                                       23030  5   18 
+ADEG       MB/SR      MB/SR                                       23030  5   19 
+10.6        1087.      44.                                        23030  5   20 
+14.2         708.      30.                                        23030  5   21 
+18.4         256.      14.                                        23030  5   22 
+22.7         131.       8.                                        23030  5   23 
+27.1          39.       3.                                        23030  5   24 
+31.6          11.9      1.2                                       23030  5   25 
+36.5           8.0      1.5                                       23030  5   26 
+41.3           5.8      1.1                                       23030  5   27 
+45.2           3.4      0.7                                       23030  5   28 
+49.8           1.29     0.27                                      23030  5   29 
+54.0           1.13     0.26                                      23030  5   30 
+58.2           0.95     0.22                                      23030  5   31 
+63.5           0.51     0.20                                      23030  5   32 
+67.8           0.37     0.17                                      23030  5   33 
+73.0           0.13     0.07                                      23030  5   34 
+77.2           0.03     0.03                                      23030  5   35 
+80.8           0.02     0.02                                      23030  5   36 
+84.0           0.02     0.01                                      23030  5   37 
+ENDDATA             20          0                                 23030  5   38 
+ENDSUBENT           37          0                                 23030  599999 
+SUBENT        23030006   20180317                             227023030  6    1 
+BIB                  6         20                                 23030  6    2 
+REACTION   (8-O-16(N,INL)8-O-16,PAR,DA)                           23030  6    3 
+             Inelastic scattering to sum of 3- and 2+ excited     23030  6    4 
+             states.                                              23030  6    5 
+LEVEL-PROP (8-O-16,E-LVL=6.1,SPIN=3.,PARITY=-1.)                  23030  6    6 
+           (8-O-16,E-LVL=6.9,SPIN=2.,PARITY=+1.)                  23030  6    7 
+           (8-O-16,E-LVL=9.8,SPIN=2.,PARITY=1.)                   23030  6    8 
+           (8-O-16,E-LVL=10.4,SPIN=4.,PARITY=1.)                  23030  6    9 
+ANALYSIS    Energy of "first" excited state, corresponding to     23030  6   10 
+            Gaussian at 6.5 MeV, refers to 3- state at 6.1 MeV    23030  6   11 
+            and 2+ state  at 6.9 MeV together, and probably also  23030  6   12 
+            the relatively weak 1- state at 7.1 MeV.              23030  6   13 
+            Energy of "second" excited state, corresponding to    23030  6   14 
+            Gaussian at 10.4 MeV, refers to 2+ state at 9.8 MeV   23030  6   15 
+            and 4+ state at 10.4 MeV together, where 4+ state     23030  6   16 
+            is expected to dominate.                              23030  6   17 
+ERR-ANALYS (ANG-ERR) Uncertainty in neutron c.m. angle.           23030  6   18 
+STATUS     (TABLE) Table II from Phys.Rev.C74(2006)054002         23030  6   19 
+HISTORY    (20180317A) SD: E-LVL-MEAN -> E-LVL. ANG-ERR added.    23030  6   20 
+           EN-SEC -> LEVEL-PROP. Info moved to ANALYSIS.          23030  6   21 
+           Data from Subent 007 were added.                       23030  6   22 
+ENDBIB              20          0                                 23030  6   23 
+COMMON               1          3                                 23030  6   24 
+ANG-ERR                                                           23030  6   25 
+ADEG                                                              23030  6   26 
+  0.5                                                             23030  6   27 
+ENDCOMMON            3          0                                 23030  6   28 
+DATA                 5         24                                 23030  6   29 
+E-LVL      E-LVL      ANG-CM     DATA-CM    ERR-T                 23030  6   30 
+MEV        MEV        ADEG       MB/SR      MB/SR                 23030  6   31 
+        6.1        6.9       31.6        5.3        2.4           23030  6   32 
+        6.1        6.9       36.5        5.9        1.5           23030  6   33 
+        6.1        6.9       41.3        2.8        0.8           23030  6   34 
+        6.1        6.9       45.2        3.0        0.9           23030  6   35 
+        6.1        6.9       49.8       1.63       0.46           23030  6   36 
+        6.1        6.9       54.0       1.52       0.49           23030  6   37 
+        6.1        6.9       58.2       1.11       0.35           23030  6   38 
+        6.1        6.9       63.5       0.60       0.27           23030  6   39 
+        6.1        6.9       67.8       0.54       0.22           23030  6   40 
+        6.1        6.9       73.0       0.28       0.04           23030  6   41 
+        6.1        6.9       77.2       0.10       0.02           23030  6   42 
+        6.1        6.9       80.8       0.06       0.02           23030  6   43 
+        9.8       10.4       31.6        2.7        1.1           23030  6   44 
+        9.8       10.4       36.5        2.5        0.7           23030  6   45 
+        9.8       10.4       41.3        2.4        0.5           23030  6   46 
+        9.8       10.4       45.2        2.0        0.4           23030  6   47 
+        9.8       10.4       49.8       1.76       0.44           23030  6   48 
+        9.8       10.4       54.0       1.43       0.37           23030  6   49 
+        9.8       10.4       58.2       0.88       0.25           23030  6   50 
+        9.8       10.4       63.5       0.80       0.33           23030  6   51 
+        9.8       10.4       67.8       0.29       0.13           23030  6   52 
+        9.8       10.4       73.0       0.14       0.07           23030  6   53 
+        9.8       10.4       77.2       0.13       0.07           23030  6   54 
+        9.8       10.4       80.8       0.08       0.02           23030  6   55 
+ENDDATA             26          0                                 23030  6   56 
+ENDSUBENT           55          0                                 23030  699999 
+NOSUBENT      23030007   20180317                             227023030  7    1 
+SUBENT        23030008   20180317                             227023030  8    1 
+BIB                  3          3                                 23030  8    2 
+REACTION   (6-C-12(N,EL)6-C-12,,KER)                              23030  8    3 
+STATUS     (TABLE) Table V from Phys.Rev.C74(2006)054002          23030  8    4 
+HISTORY    (20180317C) SD                                         23030  8    5 
+ENDBIB               3          0                                 23030  8    6 
+NOCOMMON             0          0                                 23030  8    7 
+DATA                 2          1                                 23030  8    8 
+DATA       ERR-T                                                  23030  8    9 
+FGY*M2     FGY*M2                                                 23030  8   10 
+   0.120        0.007                                             23030  8   11 
+ENDDATA              3          0                                 23030  8   12 
+ENDSUBENT           11          0                                 23030  899999 
+SUBENT        23030009   20180317                             227023030  9    1 
+BIB                  4          5                                 23030  9    2 
+REACTION   (6-C-12(N,EL)6-C-12,PAR,KER)                           23030  9    3 
+LEVEL-PROP (6-C-12,E-LVL=4.4,SPIN=2.,PARITY=1.)                   23030  9    4 
+           (6-C-12,E-LVL=9.6,SPIN=3.,PARITY=-1.)                  23030  9    5 
+STATUS     (TABLE) Table V from Phys.Rev.C74(2006)054002          23030  9    6 
+HISTORY    (20180317C) SD                                         23030  9    7 
+ENDBIB               5          0                                 23030  9    8 
+NOCOMMON             0          0                                 23030  9    9 
+DATA                 3          2                                 23030  9   10 
+E-LVL      DATA       ERR-T                                       23030  9   11 
+MEV        FGY*M2     FGY*M2                                      23030  9   12 
+       4.4   0.018      0.005                                     23030  9   13 
+       9.6   0.029      0.009                                     23030  9   14 
+ENDDATA              4          0                                 23030  9   15 
+ENDSUBENT           14          0                                 23030  999999 
+SUBENT        23030010   20180317                             227023030 10    1 
+BIB                  3          3                                 23030 10    2 
+REACTION   (8-O-16(N,EL)8-O-16,,KER)                              23030 10    3 
+STATUS     (TABLE) Table V from Phys.Rev.C74(2006)054002          23030 10    4 
+HISTORY    (20180317C) SD                                         23030 10    5 
+ENDBIB               3          0                                 23030 10    6 
+NOCOMMON             0          0                                 23030 10    7 
+DATA                 2          1                                 23030 10    8 
+DATA       ERR-T                                                  23030 10    9 
+FGY*M2     FGY*M2                                                 23030 10   10 
+   0.073       0.004                                              23030 10   11 
+ENDDATA              3          0                                 23030 10   12 
+ENDSUBENT           11          0                                 23030 1099999 
+SUBENT        23030011   20180317                             227023030 11    1 
+BIB                  4          9                                 23030 11    2 
+REACTION   (8-O-16(N,INL)8-O-16,PAR,KER)                          23030 11    3 
+             Inelastic scattering to sum of 2+ and 4+ excited     23030 11    4 
+             states.                                              23030 11    5 
+LEVEL-PROP (8-O-16,E-LVL=6.1,SPIN=3.,PARITY=-1.)                  23030 11    6 
+           (8-O-16,E-LVL=6.9,SPIN=2.,PARITY=+1.)                  23030 11    7 
+           (8-O-16,E-LVL=9.8,SPIN=2.,PARITY=1.)                   23030 11    8 
+           (8-O-16,E-LVL=10.4,SPIN=4.,PARITY=1.)                  23030 11    9 
+STATUS     (TABLE) Table V from Phys.Rev.C74(2006)054002          23030 11   10 
+HISTORY    (20180317C) SD                                         23030 11   11 
+ENDBIB               9          0                                 23030 11   12 
+NOCOMMON             0          0                                 23030 11   13 
+DATA                 4          2                                 23030 11   14 
+E-LVL      E-LVL      DATA       ERR-T                            23030 11   15 
+MEV        MEV        FGY*M2     FGY*M2                           23030 11   16 
+ 6.1          6.9       0.017         0.005                       23030 11   17 
+ 9.8         10.4       0.011         0.003                       23030 11   18 
+ENDDATA              4          0                                 23030 11   19 
+ENDSUBENT           18          0                                 23030 1199999 
+ENDENTRY            11          0                                 2303099999999 
