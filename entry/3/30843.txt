@@ -1,0 +1,115 @@
+ENTRY            30843   20180418                             31863084300000001 
+SUBENT        30843001   20180418                             31863084300100001 
+BIB                 11         27                                 3084300100002 
+TITLE      Thermal neutron cross-section and resonance integral   3084300100003 
+           of the 152Sm(n,g)153Sm reaction induced by pulsed      3084300100004 
+           neutrons                                               3084300100005 
+AUTHOR     (V.D.Nguyen, D.K.Pham, T.T.Kim, T.H.Nguyen, G.N.Kim,   3084300100006 
+            K.Kim, S.G.Shin, Y.U.Kye, M.H.Cho)                    3084300100007 
+INSTITUTE  (3VN IPH,3KORKNU,3KORPUE)                              3084300100008 
+REFERENCE  (J,RPC,139,109,2017)                                   3084300100009 
+FACILITY   (LINAC,3KORPUE) Pohang Neutron Facility                3084300100010 
+INC-SOURCE (PHOTO) Ta(g,n) photonuclear reaction                  3084300100011 
+SAMPLE     (62-SM-152,NAT=0.2675)                                 3084300100012 
+           Natural samarium foil                                  3084300100013 
+            - Purity: 99.99%                                      3084300100014 
+            - Size: 12 x 12 mm                                    3084300100015 
+            - Thickness: 0.1 mm                                   3084300100016 
+           Natural Au foil for the reference reaction             3084300100017 
+            - Size: 12 x 12 mm                                    3084300100018 
+            - Thickness: 0.1 mm                                   3084300100019 
+            - Purity: 99.95%                                      3084300100020 
+           Natural In for the neutron flux monitoring             3084300100021 
+           The Sm and Au foils were irradiated with and without   3084300100022 
+            a Cd cover of 0.5 mm thickness.                       3084300100023 
+METHOD     (ACTIV,GSPEC) Irradiated for 140 minute                3084300100024 
+DETECTOR   (HPGE) Relative efficiency of 20% and energy           3084300100025 
+            resolution of 1.8 keV FWHM at 1332.5 keV peak of 60Co 3084300100026 
+STATUS     (TABLE) Text (p111) in Radiat. Phys.Chem.139,109,2017  3084300100027 
+           (APRVD) Approved by G.N.Kim (2018-05-16)               3084300100028 
+HISTORY    (20180418C) S.C.Yang                                   3084300100029 
+ENDBIB              27          0                                 3084300100030 
+NOCOMMON             0          0                                 3084300100031 
+ENDSUBENT           30          0                                 3084300199999 
+SUBENT        30843002   20180418                             31863084300200001 
+BIB                  6         18                                 3084300200002 
+REACTION   (62-SM-152(N,G)62-SM-153,,SIG)                         3084300200003 
+DECAY-DATA (62-SM-153,46.284HR,DG,103.18,0.2925)                  3084300200004 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         3084300200005 
+DECAY-MON  (79-AU-198-G,2.6941D,DG,411.80,0.9562)                 3084300200006 
+MONIT-REF  (,S.F.Mughabghab,R,INDC(NDS)-440,2003)                 3084300200007 
+ERR-ANALYS (ERR-T) Total uncertainty: 3.7%                        3084300200008 
+           (ERR-1) Geometry, Sm                            (0.3%) 3084300200009 
+           (ERR-2) Detection efficiency, Sm                (2.5%) 3084300200010 
+           (ERR-3) Mass (foil weight), Sm                  (0.1%) 3084300200011 
+           (ERR-4) Half-life, Sm                           (0.1%) 3084300200012 
+           (ERR-5) Thermal neutron self-shielding, Sm      (0.5%) 3084300200013 
+           (ERR-6,,,U) Counting statistics, Sm             (0.8%) 3084300200014 
+           (ERR-7) Geometry, Au                            (0.3%) 3084300200015 
+           (ERR-8) Detection efficiency, Au                (2.4%) 3084300200016 
+           (ERR-9) Mass (foil weight), Au                  (0.1%) 3084300200017 
+           (ERR-10) Thermal neutron self-shielding, Au     (0.5%) 3084300200018 
+           (ERR-11,,,U) Counting statistics, Au            (0.5%) 3084300200019 
+           (MONIT-ERR) Reference thermal cross section, Au (0.1%) 3084300200020 
+ENDBIB              18          0                                 3084300200021 
+COMMON              11          6                                 3084300200022 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      3084300200023 
+ERR-7      ERR-8      ERR-9      ERR-10     ERR-11                3084300200024 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3084300200025 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3084300200026 
+0.3        2.5        0.1        0.1        0.5        0.8        3084300200027 
+0.3        2.4        0.1        0.5        0.5                   3084300200028 
+ENDCOMMON            6          0                                 3084300200029 
+DATA                 5          1                                 3084300200030 
+EN         DATA       ERR-T      MONIT      MONIT-ERR             3084300200031 
+EV         B          B          B          B                     3084300200032 
+0.0253     212.       8.         98.65      0.09                  3084300200033 
+ENDDATA              3          0                                 3084300200034 
+ENDSUBENT           33          0                                 3084300299999 
+SUBENT        30843003   20180418                             31863084300300001 
+BIB                  8         26                                 3084300300002 
+REACTION   (62-SM-152(N,G)62-SM-153,,RI)                          3084300300003 
+DECAY-DATA (62-SM-153,46.284HR,DG,103.18,0.2925)                  3084300300004 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         3084300300005 
+ANALYSIS   The alpha-shape factor was experimentally determined   3084300300006 
+           by using the dual monitor method using the measured Cd 3084300300007 
+           ratios of the 197Au(n,g)198Au and the 186W(n,g)187W    3084300300008 
+           reactions. It was derived from the Eq. (4) of          3084300300009 
+           Radiat. Phys.Chem.139,109,2017.                        3084300300010 
+ASSUMED    (ASSUM1,79-AU-197(N,G)79-AU-198,,SIG)                  3084300300011 
+           (ASSUM2,79-AU-197(N,G)79-AU-198,,RI)                   3084300300012 
+           (ASSUM3,62-SM-152(N,G)62-SM-153,,SIG)                  3084300300013 
+DECAY-MON  (79-AU-198-G,2.6941D,DG,411.80,0.9562)                 3084300300014 
+REL-REF    (R,,S.F.Mughabghab,R,INDC(NDS)-440,2003)               3084300300015 
+           Au thermal cross section and resonance integral given  3084300300016 
+ERR-ANALYS (ERR-T) Total uncertainty: 6.5%                        3084300300017 
+           (ERR-1) Epithermal neutron self-shielding, Sm   (1.2%) 3084300300018 
+           (ERR-2) Thermal neutron self-shielding, Sm      (0.5%) 3084300300019 
+           (ERR-3,,,U) Cadmium ratio, Sm                   (1.3%) 3084300300020 
+           (ERR-4) Alpha-shape factor, Sm                  (3.5%) 3084300300021 
+           (ERR-5) Epithermal neutron self-shielding,Au    (1.8%) 3084300300022 
+           (ERR-6) Thermal neutron self-shielding, Au      (0.5%) 3084300300023 
+           (ERR-7,,,U) Cadmium ratio, Au                   (1.5%) 3084300300024 
+           (ERR-8)  Alpha-shape factor, Au                 (3.5%) 3084300300025 
+           (ASSUM1-ERR) Reference thremal cross-section, Au(0.1%) 3084300300026 
+           (ASSUM2-ERR) Reference resonance integral, Au   (1.8%) 3084300300027 
+           (ASSUM3-ERR) Reference thermal cross-section, Sm(2.3%) 3084300300028 
+ENDBIB              26          0                                 3084300300029 
+COMMON              11          6                                 3084300300030 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      3084300300031 
+ERR-7      ERR-8      ASSUM1-ERR ASSUM2-ERR ASSUM3-ERR            3084300300032 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3084300300033 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3084300300034 
+1.2        0.5        1.3        3.5        1.8        0.5        3084300300035 
+1.5        3.5        0.1        1.8        2.3                   3084300300036 
+ENDCOMMON            6          0                                 3084300300037 
+DATA                 9          1                                 3084300300038 
+EN-MIN     DATA       ERR-T      ASSUM1     ASSUM1-ERR ASSUM2     3084300300039 
+ASSUM2-ERR ASSUM3     ASSUM3-ERR                                  3084300300040 
+EV         KB         KB         B          B          B          3084300300041 
+B          B          B                                           3084300300042 
+0.55       3.02       0.19       98.65      0.09       1550.      3084300300043 
+28.        212.       8.                                          3084300300044 
+ENDDATA              6          0                                 3084300300045 
+ENDSUBENT           44          0                                 3084300399999 
+ENDENTRY             3          0                                 3084399999999 
