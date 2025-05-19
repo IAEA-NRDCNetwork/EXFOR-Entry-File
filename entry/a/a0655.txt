@@ -1,6 +1,6 @@
-ENTRY            A0655   20160310                             A084A0655  0    1 
-SUBENT        A0655001   20160310                             A084A0655  1    1 
-BIB                 13         31                                 A0655  1    2 
+ENTRY            A0655   20210320                             A097A0655  0    1 
+SUBENT        A0655001   20210320                             A097A0655  1    1 
+BIB                 13         29                                 A0655  1    2 
 TITLE      Excitation functions of (p,n) reactions on 99-Ru,      A0655  1    3 
            100-Ru, 101-Ru and 102-Ru.  101-m-Rh production.       A0655  1    4 
 AUTHOR     (E.A.Skakun,A.I.Stojanov,V.G.Batij)                    A0655  1    5 
@@ -14,27 +14,25 @@ MONITOR    (29-CU-65(P,N)30-ZN-65,,SIG,,,EVAL) The Monitor was    A0655  1   12
            used at the long time irradiations.                    A0655  1   13 
 MONIT-REF  (B0057003,R.Colle+,J,PR/C,9,1819,1974)                 A0655  1   14 
 FACILITY   (LINAC,4UKRKFT)                                        A0655  1   15 
-METHOD     (STTA)                                                 A0655  1   16 
-           (BCINT) See Monitor also.                              A0655  1   17 
-           (ACTIV)                                                A0655  1   18 
-           (GSPEC)                                                A0655  1   19 
-DETECTOR   Standard high resolution gamma-ray spectrometry withoutA0655  1   20 
-           chemical separation                                    A0655  1   21 
-ERR-ANALYS (DATA-ERR,,15.) The overall uncertainties were obtainedA0655  1   22 
-           from the sums of the individual errors and estimated toA0655  1   23 
-           be less than 15%.                                      A0655  1   24 
-ADD-RES    (COMP) Spherical Optical Model                         A0655  1   25 
-           (TTY-C) For 101-m-Rh Production.                       A0655  1   26 
-HISTORY    (20000213C) CAJAD                                      A0655  1   27 
-           (20000504U) Last checking has been done.               A0655  1   28 
-           (20000717A) DATE is corrected                          A0655  1   29 
-           (20160310A) SD: DECAY-DATA corrected in Subents 006,   A0655  1   30 
-           007,010. ERR-DIG -> ERR-DIG; EN-ERR -> EN-ERR-DIG in   A0655  1   31 
-           Subents 002-011. BIB update. ERR-T ->DATA-ERR in       A0655  1   32 
-           ERR-ANALYS. STATUS moved to Subents 002-011.           A0655  1   33 
-ENDBIB              31          0                                 A0655  1   34 
-NOCOMMON             0          0                                 A0655  1   35 
-ENDSUBENT           34          0                                 A0655  199999 
+METHOD     (STTA,BCINT,ACTIV,GSPEC)                               A0655  1   16 
+DETECTOR   (SPEC) Standard high resolution gamma-ray              A0655  1   17 
+           spectrometry without chemical separation               A0655  1   18 
+ERR-ANALYS (DATA-ERR,,15.) The overall uncertainties were obtainedA0655  1   19 
+           from the sums of the individual errors and estimated toA0655  1   20 
+           be less than 15%.                                      A0655  1   21 
+ADD-RES    (COMP) Spherical Optical Model                         A0655  1   22 
+           (TTY-C) For 101-m-Rh Production.                       A0655  1   23 
+HISTORY    (20000213C) CAJAD                                      A0655  1   24 
+           (20000504U) Last checking has been done.               A0655  1   25 
+           (20000717A) DATE is corrected                          A0655  1   26 
+           (20160310A) SD: DECAY-DATA corrected in Subents 006,   A0655  1   27 
+           007,010. DATA-ERR -> ERR-DIG; EN-ERR -> EN-ERR-DIG in  A0655  1   28 
+           Subents 002-011. BIB update. ERR-T ->DATA-ERR in       A0655  1   29 
+           ERR-ANALYS. STATUS moved to Subents 002-011.           A0655  1   30 
+           (20210320A) SD: Corrections in Subent 007.             A0655  1   31 
+ENDBIB              29          0                                 A0655  1   32 
+NOCOMMON             0          0                                 A0655  1   33 
+ENDSUBENT           32          0                                 A0655  199999 
 SUBENT        A0655002   20160310                             A084A0655  2    1 
 BIB                  4          8                                 A0655  2    2 
 REACTION   (44-RU-99(P,N)45-RH-99,,SIG)                           A0655  2    3 
@@ -162,33 +160,38 @@ MEV        B                                                      A0655  6   20
        9.04      0.526                                            A0655  6   28 
 ENDDATA             10          0                                 A0655  6   29 
 ENDSUBENT           28          0                                 A0655  699999 
-SUBENT        A0655007   20160310                             A084A0655  7    1 
-BIB                  5          6                                 A0655  7    2 
-REACTION   (44-RU-102(P,N)45-RH-102-G,,SIG)                       A0655  7    3 
+SUBENT        A0655007   20210320                             A097A0655  7    1 
+BIB                  5         11                                 A0655  7    2 
+REACTION   (44-RU-102(P,N)45-RH-102-M,,SIG)                       A0655  7    3 
 DECAY-DATA (45-RH-102-G,206.D,DG,475.,0.46)                       A0655  7    4 
-SAMPLE     (44-RU-102,ENR=0.990) Enriched Ru-102 (99.0%)          A0655  7    5 
-STATUS     (CURVE) Fig.3a from 97TRIEST,2,1649,1997               A0655  7    6 
-HISTORY    (20160310A) SD: Rh-102m -> Rh-102g in DECAY-DATA and   A0655  7    7 
-           REACTION code according to decay param. (MEMO CP/D-888)A0655  7    8 
-ENDBIB               6          0                                 A0655  7    9 
-COMMON               2          3                                 A0655  7   10 
-EN-ERR-DIG ERR-DIG                                                A0655  7   11 
-MEV        PER-CENT                                               A0655  7   12 
-     5.E-02         4.                                            A0655  7   13 
-ENDCOMMON            3          0                                 A0655  7   14 
-DATA                 2          8                                 A0655  7   15 
-EN         DATA                                                   A0655  7   16 
-MEV        B                                                      A0655  7   17 
-       5.45   2.01E-03                                            A0655  7   18 
-       6.05   6.17E-03                                            A0655  7   19 
-       6.52   1.46E-02                                            A0655  7   20 
-       6.96    2.2E-02                                            A0655  7   21 
-        7.5   4.17E-02                                            A0655  7   22 
-       8.03   4.23E-02                                            A0655  7   23 
-       8.53    7.8E-02                                            A0655  7   24 
-       8.99    9.1E-02                                            A0655  7   25 
-ENDDATA             10          0                                 A0655  7   26 
-ENDSUBENT           25          0                                 A0655  799999 
+           (45-RH-102-M,2.9YR,DG,475.,0.93,                       A0655  7    5 
+                              DG,631.,0.36,                       A0655  7    6 
+                              DG,697.,0.457)                      A0655  7    7 
+SAMPLE     (44-RU-102,ENR=0.990) Enriched Ru-102 (99.0%)          A0655  7    8 
+STATUS     (CURVE) Fig.3a from 97TRIEST,2,1649,1997               A0655  7    9 
+HISTORY    (20160310A) SD: Rh-102m -> Rh-102g in DECAY-DATA and   A0655  7   10 
+           REACTION code according to decay param. (MEMO CP/D-888)A0655  7   11 
+           (20210320A) SD: Rh-102g -> Rh-102m in REACTION code.   A0655  7   12 
+           Rh-102m was added to DECAY-DATA.                       A0655  7   13 
+ENDBIB              11          0                                 A0655  7   14 
+COMMON               2          3                                 A0655  7   15 
+EN-ERR-DIG ERR-DIG                                                A0655  7   16 
+MEV        PER-CENT                                               A0655  7   17 
+     0.05           4.                                            A0655  7   18 
+ENDCOMMON            3          0                                 A0655  7   19 
+DATA                 2          8                                 A0655  7   20 
+EN         DATA                                                   A0655  7   21 
+MEV        B                                                      A0655  7   22 
+       5.45   2.01E-03                                            A0655  7   23 
+       6.05   6.17E-03                                            A0655  7   24 
+       6.52   1.46E-02                                            A0655  7   25 
+       6.96   2.20E-02                                            A0655  7   26 
+       7.50   4.17E-02                                            A0655  7   27 
+       8.03   4.23E-02                                            A0655  7   28 
+       8.53   7.80E-02                                            A0655  7   29 
+       8.99   9.10E-02                                            A0655  7   30 
+ENDDATA             10          0                                 A0655  7   31 
+ENDSUBENT           30          0                                 A0655  799999 
 SUBENT        A0655008   20160310                             A084A0655  8    1 
 BIB                  5         10                                 A0655  8    2 
 REACTION   (44-RU-99(P,N)45-RH-99-M/T,,SIG/RAT)                   A0655  8    3 
