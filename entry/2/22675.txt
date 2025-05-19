@@ -1,6 +1,6 @@
-ENTRY            22675   20151215                             224622675  0    1 
-SUBENT        22675001   20151215                             224622675  1    1 
-BIB                 14         34                                 22675  1    2 
+ENTRY            22675   20230403                             231722675  0    1 
+SUBENT        22675001   20230403                             231722675  1    1 
+BIB                 13         33                                 22675  1    2 
 TITLE       Non-destructive and radiochemical determination       22675  1    3 
            of the neutron-induced production cross-section of     22675  1    4 
            I-129 from Te and other neutron-induced cross-sections 22675  1    5 
@@ -21,27 +21,26 @@ SAMPLE     High purity tellurium powder.                          22675  1   18
            tellurium as flux monitors                             22675  1   20 
 MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           22675  1   21 
 DETECTOR   (HPGE) Germanium spectrometer, 35% relative efficiency 22675  1   22 
-PART-DET   (G)                                                    22675  1   23 
-CORRECTION   Corrections were made for fluence determination,     22675  1   24 
-            for (n,gamma) reaction caused by neutrons thermalized 22675  1   25 
-            in the concrete shield                                22675  1   26 
-ERR-ANALYS (ERR-T)   Total Error                                  22675  1   27 
-           (ERR-1)   Error of the flux density measurements       22675  1   28 
-            * Errors of corrections are taken into account        22675  1   29 
-HISTORY    (20020721C)  + +  Compiled by S.M.                     22675  1   30 
-           (20020721U) Last checking has been done.               22675  1   31 
-           (20131202A) SD: Data in Subent 8 corrected. Author's   22675  1   32 
-           name corrected (Synai -> Synal)                        22675  1   33 
-           (20151215A) SD: DECAY-DATA corrected in Subents 003,   22675  1   34 
-           009, 013.  ERR-ANALYS update. Cosmetic corrections     22675  1   35 
-           in all Subents.                                        22675  1   36 
-ENDBIB              34          0                                 22675  1   37 
-COMMON               3          3                                 22675  1   38 
-EN         ERR-1      MONIT                                       22675  1   39 
-MEV        PER-CENT   MB                                          22675  1   40 
-       14.7        8.6      112.8                                 22675  1   41 
-ENDCOMMON            3          0                                 22675  1   42 
-ENDSUBENT           41          0                                 22675  199999 
+CORRECTION   Corrections were made for fluence determination,     22675  1   23 
+            for (n,gamma) reaction caused by neutrons thermalized 22675  1   24 
+            in the concrete shield                                22675  1   25 
+ERR-ANALYS (ERR-T)   Total Error                                  22675  1   26 
+           (ERR-1)   Error of the flux density measurements       22675  1   27 
+HISTORY    (20020721C)  + +  Compiled by S.M.                     22675  1   28 
+           (20020721U) Last checking has been done.               22675  1   29 
+           (20131202A) SD: Data in Subent 8 corrected. Author's   22675  1   30 
+           name corrected (Synai -> Synal)                        22675  1   31 
+           (20151215A) SD: DECAY-DATA corrected in Subents 003,   22675  1   32 
+           009, 013.  ERR-ANALYS update. Cosmetic corrections     22675  1   33 
+           in all Subents.                                        22675  1   34 
+           (20230403A) SD: Correction in several Subents.         22675  1   35 
+ENDBIB              33          0                                 22675  1   36 
+COMMON               3          3                                 22675  1   37 
+EN         ERR-1      MONIT                                       22675  1   38 
+MEV        PER-CENT   MB                                          22675  1   39 
+       14.7        8.6      112.8                                 22675  1   40 
+ENDCOMMON            3          0                                 22675  1   41 
+ENDSUBENT           40          0                                 22675  199999 
 SUBENT        22675002   20151215                             224622675  2    1 
 BIB                  5          7                                 22675  2    2 
 REACTION   (52-TE-120(N,2N)52-TE-119-M,,SIG)                      22675  2    3 
@@ -91,24 +90,26 @@ MB         MB                                                     22675  4   12
        646.        62.                                            22675  4   13 
 ENDDATA              3          0                                 22675  4   14 
 ENDSUBENT           13          0                                 22675  499999 
-SUBENT        22675005   20151215                             224622675  5    1 
-BIB                  7          8                                 22675  5    2 
-REACTION   (52-TE-122(N,2N)52-TE-121-G,IND,SIG)                   22675  5    3 
+SUBENT        22675005   20230403                             231722675  5    1 
+BIB                  7         10                                 22675  5    2 
+REACTION   (52-TE-122(N,2N)52-TE-121-G,,SIG)                      22675  5    3 
 DECAY-DATA (52-TE-121-G,16.8D,DG,573.1,0.803)                     22675  5    4 
 COMMENT     Specified as independent cross-section by the authors 22675  5    5 
-CORRECTION  Metastable state contribution subtracted              22675  5    6 
-STATUS     (TABLE) Data from Table 1 of RCA,88,439,2000           22675  5    7 
-ERR-ANALYS (ERR-2,1.3,4.4) Error of the gamma-spectroscopic       22675  5    8 
-                     measurements                                 22675  5    9 
-HISTORY    (20151215U) SD: CORRECTION added.                      22675  5   10 
-ENDBIB               8          0                                 22675  5   11 
-NOCOMMON             0          0                                 22675  5   12 
-DATA                 2          1                                 22675  5   13 
-DATA       ERR-T                                                  22675  5   14 
-MB         MB                                                     22675  5   15 
-       558.        56.                                            22675  5   16 
-ENDDATA              3          0                                 22675  5   17 
-ENDSUBENT           16          0                                 22675  599999 
+CORRECTION  Metastable state contribution subtracted. Correction  22675  5    6 
+            amounted to 11.3% for 121gTe was included in ERR-T.   22675  5    7 
+STATUS     (TABLE,,C.Schnabel+,J,RCA,88,439,2000) Table 1         22675  5    8 
+ERR-ANALYS (ERR-2,1.3,4.4) Error of the gamma-spectroscopic       22675  5    9 
+                     measurements                                 22675  5   10 
+HISTORY    (20151215U) SD: CORRECTION added.                      22675  5   11 
+           (20230403A) SD: SF5=IND deleted from REACTION code.    22675  5   12 
+ENDBIB              10          0                                 22675  5   13 
+NOCOMMON             0          0                                 22675  5   14 
+DATA                 2          1                                 22675  5   15 
+DATA       ERR-T                                                  22675  5   16 
+MB         MB                                                     22675  5   17 
+       558.        56.                                            22675  5   18 
+ENDDATA              3          0                                 22675  5   19 
+ENDSUBENT           18          0                                 22675  599999 
 SUBENT        22675006   20151215                             224622675  6    1 
 BIB                  4          6                                 22675  6    2 
 REACTION   (52-TE-122(N,P)51-SB-122,,SIG)                         22675  6    3 
@@ -212,25 +213,27 @@ MB         MB                                                     22675 11   12
       1101.       102.                                            22675 11   13 
 ENDDATA              3          0                                 22675 11   14 
 ENDSUBENT           13          0                                 22675 1199999 
-SUBENT        22675012   20151215                             224622675 12    1 
-BIB                  7          9                                 22675 12    2 
-REACTION   (52-TE-130(N,2N)52-TE-129-G,IND,SIG)                   22675 12    3 
+SUBENT        22675012   20230403                             231722675 12    1 
+BIB                  7         11                                 22675 12    2 
+REACTION   (52-TE-130(N,2N)52-TE-129-G,,SIG)                      22675 12    3 
 DECAY-DATA (52-TE-129-G,69.6MIN,DG,459.6,0.0707,                  22675 12    4 
                                DG,487.4,0.0142)                   22675 12    5 
 COMMENT     Specified As independent cross-section by the authors 22675 12    6 
-CORRECTION  Metastable state contribution subtracted              22675 12    7 
-STATUS     (TABLE) Data from Table 1 of RCA,88,439,2000           22675 12    8 
-ERR-ANALYS (ERR-2,1.3,4.4) Error of the gamma-spectroscopic       22675 12    9 
-                     measurements                                 22675 12   10 
-HISTORY    (20151215U) SD: CORRECTION added.                      22675 12   11 
-ENDBIB               9          0                                 22675 12   12 
-NOCOMMON             0          0                                 22675 12   13 
-DATA                 2          1                                 22675 12   14 
-DATA       ERR-T                                                  22675 12   15 
-MB         MB                                                     22675 12   16 
-       667.        59.                                            22675 12   17 
-ENDDATA              3          0                                 22675 12   18 
-ENDSUBENT           17          0                                 22675 1299999 
+CORRECTION  Metastable state contribution subtracted. Correction  22675 12    7 
+            amounted to 0.87% for 129gTe was included in ERR-T.   22675 12    8 
+STATUS     (TABLE,,C.Schnabel+,J,RCA,88,439,2000) Table 1         22675 12    9 
+ERR-ANALYS (ERR-2,1.3,4.4) Error of the gamma-spectroscopic       22675 12   10 
+                     measurements                                 22675 12   11 
+HISTORY    (20151215U) SD: CORRECTION added.                      22675 12   12 
+           (20230403A) SD: SF5=IND deleted from REACTION code.    22675 12   13 
+ENDBIB              11          0                                 22675 12   14 
+NOCOMMON             0          0                                 22675 12   15 
+DATA                 2          1                                 22675 12   16 
+DATA       ERR-T                                                  22675 12   17 
+MB         MB                                                     22675 12   18 
+       667.        59.                                            22675 12   19 
+ENDDATA              3          0                                 22675 12   20 
+ENDSUBENT           19          0                                 22675 1299999 
 SUBENT        22675013   20151215                             224622675 13    1 
 BIB                  5          7                                 22675 13    2 
 REACTION   (52-TE-130(N,P)51-SB-130-G,,SIG)                       22675 13    3 
