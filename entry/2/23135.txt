@@ -1,124 +1,244 @@
-ENTRY            23135   20110721                             22282313500000001 
-SUBENT        23135001   20110721                             22282313500100001 
-BIB                 15         88                                 2313500100002 
-TITLE      Delayed neutron measurements for Th-232 neutron-induced2313500100003 
-           fission.                                               2313500100004 
-AUTHOR     (X.Ledoux, D.Dore, M.Mosconi, R.Nolte, S.Roettger)     2313500100005 
-INSTITUTE  (2GERPTB) PTB,38116, Braunschweig.                     2313500100006 
-            - M.Mosconi, R.Nolte, S.Roettger                      2313500100007 
-           (2FR BRC) CEA/DAM/DIF, Arpajon.                        2313500100008 
-            - X.Ledoux.                                           2313500100009 
-           (2FR SAC) IRFU/SPhN, CEA/Saclay, 91191 Gif-sur-Yvette. 2313500100010 
-            - D.Dore.                                             2313500100011 
-REFERENCE  (J,EPJ/CS,8,07010,2010)                                2313500100012 
-           #doi:10.1051/epjconf/20100807010                       2313500100013 
-REL-REF    (I,,H.J.Brede+,J,NIM,169,349,1980)                     2313500100014 
-            Details of facility.                                  2313500100015 
-           (I,,R.Nolte+,J,RPD,110,97,2004)                        2313500100016 
-            Details of facility.                                  2313500100017 
-           (R,13700002,G.R.Keepin+,J,PR,107,1044,1957)            2313500100018 
-            Data of G.Keepin+ used in analysis:                   2313500100019 
-FACILITY   (VDG,2GERPTB) Low-Scatter Hall at PTB Ion Accelerator  2313500100020 
-           (CYCLO,2GERPTB) Facility.                              2313500100021 
-             Van De Graaff accelerator and the cyclotron CV28     2313500100022 
-           depending on the energy of the neutrons.               2313500100023 
-INC-SOURCE (P-T,D-D,D-T) H-3(p,n)He-3, H-2(d,n)He-3, H-3(d,n)He-4.2313500100024 
-INC-SPECT  Mono-energy neutrons, excluding 10 MeV neutrons - not  2313500100025 
-           purely mono-kinetic neutrons (correction was done to   2313500100026 
-           take into account low energy continuous component at   2313500100027 
-           10 MeV EN).                                            2313500100028 
-METHOD     (EXTB) 5 min continuous irradiation period to reach the2313500100029 
-           equilibrium, followed by a large number of cycles      2313500100030 
-           composed of irradiation sequences with Tirr=7 s and    2313500100031 
-           counting sequences with Tcounting = 1 s.               2313500100032 
-DETECTOR   (HE3SP) 12 gas detectors filled with He-3 are inserted 2313500100033 
-           in hollow cylinder (inner diameter 12 cm, outer        2313500100034 
-           diameter = 32 cm, length 37 cm) of polyethylene.       2313500100035 
-           Delayed neutrons detection efficiency is about 22%.    2313500100036 
-           The detection efficiency to neutrons (between 100 keV  2313500100037 
-           and 1MeV) emitted in Th sample is simulated with the   2313500100038 
-           MCNPX transport code. Since the He-2 pressure in the   2313500100039 
-           tubes being not well known, the results of simulations 2313500100040 
-           had to be normalized to the efficiency for Cf-252      2313500100041 
-           neutron spectrum measured using two calibrated Cf-252  2313500100042 
-           sources at different positions.                        2313500100043 
-             Two detectors were used to determine neutron fluence:2313500100044 
-           (TELES) proton recoil telescope (PRT) placed at 0 deg. 2313500100045 
-           with respect to the ion beam line;                     2313500100046 
-           (LONGC) fixed long counter placed around 6m from the   2313500100047 
-           neutron source at 98 degrees with respect to the ion   2313500100048 
-           beam line.                                             2313500100049 
-SAMPLE     Cylindrical thorium sample (2.55 cm diameter, 3.64 cm  2313500100050 
-           length, mass 182.23 g ) was placed inside the neutron  2313500100051 
-           detector at zero degree with respect to the ion beam   2313500100052 
-           direction at distance of 75 mm from production target. 2313500100053 
-MONITOR    (1-H-1(N,EL)1-H-1,,SIG) For neutron fluence.           2313500100054 
-CORRECTION  For scattered neutrons, effect was measured during    2313500100055 
-           runs with and without DN detector in place, correction 2313500100056 
-           factor approximately 7%.                               2313500100057 
-           For background.                                        2313500100058 
-           Corrections due to the fissions in the "up" and "down" 2313500100059 
-           zones depend on the energy but are in any case (except 2313500100060 
-           at 10 MeV) smaller than 7%.                            2313500100061 
-           At 10 MeV incident neutron energy - correction due to  2313500100062 
-           the break-up component and the target thickness -      2313500100063 
-           around 10%.                                            2313500100064 
-ANALYSIS   Number of delayed neutrons at t = 0 (beam-off switching2313500100065 
-           time) is determined by fitting the decay time spectrum 2313500100066 
-           with the function defined in Eq.(1) of J,EPJ/CS,8,070102313500100067 
-           and the parameters from REL-REF of G.R.Keepen+:        2313500100068 
-             ((90-TH-232(N,F),DL/GRP,NU,,FIS)/                    2313500100069 
-             (90-TH-232(N,F),DL,NU,,FIS))                         2313500100070 
-            Group     Ti, sec               ai, %                 2313500100071 
-            1         56.03+-0.95           3.4+-0.2              2313500100072 
-            2         20.75+-0.66           15.0+-0.5             2313500100073 
-            3         5.74+-0.24            15.5+-2.1             2313500100074 
-            4         2.16+-0.08            44.6+-1.5             2313500100075 
-            5         0.571+-0.042          17.2+-1.3             2313500100076 
-            6         0.211+-0.019          4.3+-0.6              2313500100077 
-           Ti - precursors half-life,                             2313500100078 
-           ai - relative yield.                                   2313500100079 
-           Only the contributions of the groups 4, 5, 6 were      2313500100080 
-           considered to fit the curve since their contribution is2313500100081 
-           predominant.                                           2313500100082 
-           Number of fissions in the sample was obtained from the 2313500100083 
-           fluence measurement combined with MCNPX transport code 2313500100084 
-           calculations using a detailed model of the set-up      2313500100085 
-           containing the thorium sample, the DN detector and the 2313500100086 
-           neutron source. Neutron source angular and energy      2313500100087 
-           distributions were calculated with DROSG code          2313500100088 
-           DROSG-2000,IAEA, http://www-nds.iaea.org/drosg2000.html2313500100089 
-HISTORY    (20110721C)  M.M.                                      2313500100090 
-ENDBIB              88          0                                 2313500100091 
-NOCOMMON             0          0                                 2313500100092 
-ENDSUBENT           91          0                                 2313500199999 
-SUBENT        23135002   20110721                             22282313500200001 
-BIB                  4         19                                 2313500200002 
-REACTION   (90-TH-232(N,F),DL,NU)                                 2313500200003 
-REL-REF    (A,13700020,G.R.Keepin+,J,PR,107,1044,195708)          2313500200004 
-           (A,12288001,C.F.Masterns+,J,NSE,36,202,1969)           2313500200005 
-           (A,22571002,M.Herrmann+,C,67VIENNA,,147,196703)        2313500200006 
-           (A,23038002,V.Macary+,T,MACARY,2008)                   2313500200007 
-           Data are in quite good agreement with published data   2313500200008 
-           between 2 MeV and 3 MeV and are a little bit lower at  2313500200009 
-           16 MeV. Predictions of the ENDF and the JENDL library  2313500200010 
-           are in good agreement with data of this experiment.    2313500200011 
-ERR-ANALYS (ERR-1) Uncertainty of flux measurement                2313500200012 
-           (ERR-2) Uncertainty of detection efficiency.           2313500200013 
-           (ERR-T) Total error.                                   2313500200014 
-STATUS     (PRELM) Preliminary results.                           2313500200015 
-            Data are on Fig.3 of J,EPJ/CS,8,07010,2010            2313500200016 
-           (UNOBT) Request for the data was sent 22-07-2011 to    2313500200017 
-           Xavier Ledoux - xavier.ledoux@cea.fr and               2313500200018 
-           Diane Dore - diane.dore@cea.fr.                        2313500200019 
-           Reply from Xavier Ledoux: "Final data will be published2313500200020 
-           soon, I will send you them at that time".              2313500200021 
-ENDBIB              19          0                                 2313500200022 
-COMMON               2          3                                 2313500200023 
-ERR-1      ERR-2                                                  2313500200024 
-PER-CENT   PER-CENT                                               2313500200025 
- 2.          5.                                                   2313500200026 
-ENDCOMMON            3          0                                 2313500200027 
-NODATA               0          0                                 2313500200028 
-ENDSUBENT           27          0                                 2313500299999 
+ENTRY            23135   20141209                             224123135  0    1 
+SUBENT        23135001   20141209                             224123135  1    1 
+BIB                 17        142                                 23135  1    2 
+TITLE      Delayed neutron measurements of Th-232 neutron-induced 23135  1    3 
+           fission.                                               23135  1    4 
+AUTHOR     (X.Ledoux,D.Dore,M.Mosconi,R.Nolte,S.Roettger,S.Varet) 23135  1    5 
+INSTITUTE  (2GERPTB) PTB,38116, Braunschweig.                     23135  1    6 
+            - M.Mosconi, R.Nolte, S.Roettger, S.Varet .           23135  1    7 
+           (2FR BRC) CEA/DAM/DIF, Arpajon.                        23135  1    8 
+            - X.Ledoux.                                           23135  1    9 
+           (2FR SAC) IRFU/SPhN, CEA/Saclay, 91191 Gif-sur-Yvette. 23135  1   10 
+            - D.Dore.                                             23135  1   11 
+REFERENCE  (J,ANE,76,514,2015) Data table.                        23135  1   12 
+           #doi:10.1016/j.anucene.2014.10.012                     23135  1   13 
+           (J,EPJ/CS,8,07010,2010) Figure only. Preliminary.      23135  1   14 
+           #doi:10.1051/epjconf/20100807010                       23135  1   15 
+REL-REF    (I,,H.J.Brede+,J,NIM,169,349,1980)                     23135  1   16 
+            Details of facility.                                  23135  1   17 
+           (I,,R.Nolte+,J,RPD,110,97,2004)                        23135  1   18 
+            Details of facility.                                  23135  1   19 
+           (R,13700002,G.R.Keepin+,J,PR,107,1044,1957)            23135  1   20 
+            Data of G.Keepin+ used in analysis.                   23135  1   21 
+           (N,,M.Ionescu-Bujor+,J,NSE,147,189,2004)               23135  1   22 
+            Error propagation method.                             23135  1   23 
+FACILITY   (VDG,2GERPTB) Low-Scatter Hall at PTB Ion Accelerator  23135  1   24 
+           (CYCLO,2GERPTB) Facility.                              23135  1   25 
+           3.75MV Van De Graaff accelerator and the cyclotron CV2823135  1   26 
+           depending on the energy of the neutrons.               23135  1   27 
+INC-SOURCE (P-T,D-D,D-T) H-3(p,n)He-3, H-2(d,n)He-3, H-3(d,n)He-4.23135  1   28 
+           The solid-state tritium targets of Ti layer deposited  23135  1   29 
+           on a Ag backing - T/Ti ratio about 1.3.                23135  1   30 
+           The deuterium gas target of length 30 mm, equipped with23135  1   31 
+           Mo entrance foil of 5 micron thickness; deuterium gas  23135  1   32 
+           pressure 1-2 bar .                                     23135  1   33 
+           Neutron production parameters :                        23135  1   34 
+           En  Reaction  Eproj Target Thickness Pressure Fluence  23135  1   35 
+           MeV           MeV          mg/cm2    Bar      1/s/cm**223135  1   36 
+            VdG accelerator:                                      23135  1   37 
+           2  3H(p,n)3He 2.862 Solid  2000               1.02E+6  23135  1   38 
+           16 3H(d,n)4He 0.731 Solid  1000               5.60E+5  23135  1   39 
+           6  2H(d,n)3He 3.211 Gas              1.       9.09E+5  23135  1   40 
+            CV28 accelerator:                                     23135  1   41 
+           3  3H(p,n)3He 3.841 Solid  2000               1.17E+6  23135  1   42 
+           4  3H(p,n)3He 4.828 Solid  2000               3.88E+5  23135  1   43 
+           7  2H(d,n)3He 4.158 Gas              1.5      4.12E+5  23135  1   44 
+           10 2H(d,n)3He 7.135 Gas              2.       7.89E+5  23135  1   45 
+           The fluence rate at the sample position .              23135  1   46 
+INC-SPECT  Mono-energy neutrons, excluding 10 MeV neutrons - not  23135  1   47 
+           purely mono-kinetic neutrons (correction was done to   23135  1   48 
+           take into account low energy continuous component at   23135  1   49 
+           10 MeV EN).                                            23135  1   50 
+METHOD     (EXTB) 5 min continuous irradiation period to reach the23135  1   51 
+           equilibrium, followed by a large number of cycles      23135  1   52 
+           composed of irradiation sequences with Tirr=7 s and    23135  1   53 
+           counting sequences with Tcounting = 1 s.               23135  1   54 
+DETECTOR   (HE3SP) 12 gas detectors filled with He-3 (pressure    23135  1   55 
+           4bar)are inserted in hollow cylinder (inner diameter   23135  1   56 
+           12 cm, outer diameter = 32 cm, length 37 cm) of        23135  1   57 
+           polyethylene. Moderator was covered by 1mm thick Cd.   23135  1   58 
+           The detection efficiency to neutrons (between 100 keV  23135  1   59 
+           and 1MeV) emitted in Th sample is simulated with the   23135  1   60 
+           MCNPX transport code. Since the He-3 pressure in the   23135  1   61 
+           tubes being not well known, the results of simulations 23135  1   62 
+           had to be normalized to the efficiency for Cf-252      23135  1   63 
+           neutron spectrum measured using two calibrated Cf-252  23135  1   64 
+           sources (1.521+-0.025)*10**5 1/s and                   23135  1   65 
+            (3.821+-0.080)*10**3 1/s at different positions.      23135  1   66 
+           The global detection efficiency of DN is defined to be 23135  1   67 
+           0.092 +- 0.003 ; 2 MeV measurement was performed with a23135  1   68 
+           higher electronic threshold resulting to a lower       23135  1   69 
+           efficiency 0.0501 +- 0.0011 .                          23135  1   70 
+             Two detectors were used to determine neutron fluence:23135  1   71 
+           (TELES) proton recoil telescope (PRT) placed at 0 deg. 23135  1   72 
+           with respect to the ion beam line;                     23135  1   73 
+           (LONGC) fixed long counter placed around 6m from the   23135  1   74 
+           neutron source at 98 degrees with respect to the ion   23135  1   75 
+           beam line.                                             23135  1   76 
+SAMPLE     Cylindrical thorium sample (2.55 cm diameter, 3.64 cm  23135  1   77 
+           length, mass 182.2+-0.5 g ) was placed inside the      23135  1   78 
+           neutron detector at zero degree with respect to the ion23135  1   79 
+           beam direction at distance of 75 mm from production    23135  1   80 
+           target.                                                23135  1   81 
+MONITOR    (1-H-1(N,EL)1-H-1,,SIG) For neutron fluence.           23135  1   82 
+MONIT-REF  (,,3,ENDF/B-V,,1983) from:                             23135  1   83 
+           (,C.A.Uttley,R,IAEA-TECDOC-227,3,1983)                 23135  1   84 
+CORRECTION  For scattered neutrons, effect was measured during    23135  1   85 
+           runs with and without DN detector in place, correction 23135  1   86 
+           factor approximately 7%.                               23135  1   87 
+           For background.                                        23135  1   88 
+           Three energy domains have been defined corresponding to23135  1   89 
+           fissions induced by neutrons coming directly from the  23135  1   90 
+           source (mono),neutrons with lower energy (down) and    23135  1   91 
+           neutrons with higher energy (up). The relative         23135  1   92 
+           contributions to the total number of fissions of the   23135  1   93 
+           three energy domains (Table 3 of J,ANE,76,514,2014):   23135  1   94 
+           E(MeV) Mono (%) Down (%) Up (%)                        23135  1   95 
+            2.    98.71     0.79     0.50                         23135  1   96 
+            3.    94.56     5.10     0.34                         23135  1   97 
+            4.    92.15     7.63     0.22                         23135  1   98 
+            6.    94.67     5.19     0.14                         23135  1   99 
+            7.    97.33     2.60     0.07                         23135  1  100 
+            10.   89.80    10.19     0.01                         23135  1  101 
+            16.   93.64     6.36     0.00                         23135  1  102 
+           Corrections due to the fissions in the "up" and "down" 23135  1  103 
+           zones depend on the energy but are in any case (except 23135  1  104 
+           at 10 MeV) smaller than 8%.                            23135  1  105 
+           At 10 MeV incident neutron energy - correction due to  23135  1  106 
+           the break-up component and the target thickness -      23135  1  107 
+           around 10%.                                            23135  1  108 
+           Correction for finite duration of irradiation (cycle:  23135  1  109 
+           6.9sec beam on - 1.1s beam of; number of cycles >100)  23135  1  110 
+           - 94% ..                                               23135  1  111 
+ANALYSIS   Number of delayed neutrons at t = 0 (beam-off switching23135  1  112 
+           time) is determined by fitting the decay time spectrum 23135  1  113 
+           with the function defined in Eq.(1) of ANE,76,514,2015 23135  1  114 
+           and the parameters from REL-REF of G.R.Keepen+:        23135  1  115 
+             ((90-TH-232(N,F),DL/GRP,NU,,FIS)/                    23135  1  116 
+             (90-TH-232(N,F),DL,NU,,FIS))                         23135  1  117 
+            Group     Ti, sec               ai, %                 23135  1  118 
+            1         56.03+-0.95           3.4+-0.2              23135  1  119 
+            2         20.75+-0.66           15.0+-0.5             23135  1  120 
+            3         5.74+-0.24            15.5+-2.1             23135  1  121 
+            4         2.16+-0.08            44.6+-1.5             23135  1  122 
+            5         0.571+-0.042          17.2+-1.3             23135  1  123 
+            6         0.211+-0.019          4.3+-0.6              23135  1  124 
+           Ti - precursors half-life,                             23135  1  125 
+           ai - relative yield.                                   23135  1  126 
+           Only the contributions of the groups 4, 5, 6 were      23135  1  127 
+           considered to fit the curve since their contribution is23135  1  128 
+           predominant. The contribution of the groups 1- is      23135  1  129 
+           considered as constant .                               23135  1  130 
+           Number of fissions in the sample was obtained from the 23135  1  131 
+           fluence measurement combined with MCNPX transport code 23135  1  132 
+           calculations using a detailed model of the set-up      23135  1  133 
+           containing the thorium sample, the DN detector and the 23135  1  134 
+           neutron source. Neutron source angular and energy      23135  1  135 
+           distributions were calculated with DROSG code          23135  1  136 
+           DROSG-2000,IAEA, http://www-nds.iaea.org/drosg2000.html23135  1  137 
+COMMENT    This work was supported by the EURATOM 6 Framework     23135  1  138 
+           Programme 'European Facilities for Nuclear Data        23135  1  139 
+           Measurements' (EFNUDAT).                               23135  1  140 
+HISTORY    (20110721C)  M.M.                                      23135  1  141 
+           (20141208A) M.M. Ref. J,ANE,76,514,2015 was added.     23135  1  142 
+            BIB information was updated.                          23135  1  143 
+            Data were added in Subent 002.                        23135  1  144 
+ENDBIB             142          0                                 23135  1  145 
+NOCOMMON             0          0                                 23135  1  146 
+ENDSUBENT          145          0                                 23135  199999 
+SUBENT        23135002   20141209                             224123135  2    1 
+BIB                  6         71                                 23135  2    2 
+REACTION   (90-TH-232(N,F),DL,NU)                                 23135  2    3 
+REL-REF    (A,13700020,G.R.Keepin+,J,PR,107,1044,195708)          23135  2    4 
+           (A,12288001,C.F.Masters+,J,NSE,36,202,1969)            23135  2    5 
+           (A,22571002,M.Herrmann+,C,67VIENNA,,147,196703)        23135  2    6 
+           (A,23038002,V.Macary+,T,MACARY,2008)                   23135  2    7 
+           Data are in quite good agreement with published data   23135  2    8 
+           between 2 MeV and 3 MeV and are a little bit higher at 23135  2    9 
+           16 MeV.                                                23135  2   10 
+           ENDF and the JENDL library underestimate this data at  23135  2   11 
+           low energy but are in good agreement for energy greater23135  2   12 
+           than 6 MeV.                                            23135  2   13 
+ERR-ANALYS (ERR-T) Total uncertainty was defined by correlation   23135  2   14 
+           factors and sensitivity factors using the error        23135  2   15 
+           propagation method of Ionescu-Bujor and Cacuci,2004,   23135  2   16 
+            see REL-REF of Subent 001.                            23135  2   17 
+           The relative uncertainties of the 10 parameters (%):   23135  2   18 
+           Fdet  EPS  m    Fdir     K  NUd  NUu  N-mono N-u  N-d  23135  2   19 
+           2.    3.3  0.5  2.2-4.0  1. 10.  10.  3.     10.  10.  23135  2   20 
+           (ERR-1) Fdet - DN detection rate - 2.%,                23135  2   21 
+           (ERR-2) EPS  - detection efficiency - 3.3%,            23135  2   22 
+           (ERR-3) m    - mass of Th sample - 0.5%,               23135  2   23 
+           (ERR-4,2.2,4.0) Fdir - fluence rate measured at 0 deg  23135  2   24 
+                           - 2.2-4.0,                             23135  2   25 
+           (ERR-5) K - ratio of total c-s of neutron production   23135  2   26 
+           reaction DROSG-2000 to differential cross-section at   23135  2   27 
+           0 deg of neutron production reaction - 1.%,            23135  2   28 
+           (ERR-6) NUd, -10.%,                                    23135  2   29 
+           (ERR-7) NUu - 10.%                                     23135  2   30 
+           -absolute DNs yield averaged over the energy regions   23135  2   31 
+           'up' ( index u ) and 'down' (index d), respectively;   23135  2   32 
+           (ERR-8)  N-mono, - 3.%,                                23135  2   33 
+           (ERR-9)  N-u,    - 10.%,                               23135  2   34 
+           (ERR-10) N-d     - 10.%                                23135  2   35 
+             - calculated fission energy distributions per neutron23135  2   36 
+           source in the energy regions 'mono', 'up' (index u) and23135  2   37 
+           'down' (index d), respectively.                        23135  2   38 
+           Sensitivity factors Si,k (i=1-8 measurement number,    23135  2   39 
+           k=1-10 parameter number):                              23135  2   40 
+           En,MeV Fdet   EPS     m       Fdir    NUd     NUu      23135  2   41 
+            1.996 1.0105 -1.0105 -1.0105 -1.0105 -0.0037 -0.0068  23135  2   42 
+            2.974 1.0503 -1.0503 -1.0503 -1.0503 -0.0025 -0.0478  23135  2   43 
+            3.999 1.0767 -1.0767 -1.0767 -1.0767 -0.0015 -0.0751  23135  2   44 
+            3.999 1.0745 -1.0745 -1.0745 -1.0745 -0.0015 -0.0730  23135  2   45 
+            5.997 1.0704 -1.0704 -1.0704 -1.0704 -0.0012 -0.0692  23135  2   46 
+            6.967 1.0397 -1.0397 -1.0397 -1.0397 -0.0007 -0.0389  23135  2   47 
+           10.024 1.1852 -1.1852 -1.1852 -1.1852 -0.0001 -0.1850  23135  2   48 
+           15.936 1.1054 -1.1054 -1.1054 -1.1054  0.0000 -0.1054  23135  2   49 
+           En,MeV N-mono  N-u     N-d     K                       23135  2   50 
+            1.996 -1.0000 -0.0037 -0.0068 -1.0105                 23135  2   51 
+            2.974 -1.0000 -0.0025 -0.0478 -1.0503                 23135  2   52 
+            3.999 -1.0000 -0.0015 -0.0751 -1.0767                 23135  2   53 
+            3.999 -1.0000 -0.0015 -0.0730 -1.0745                 23135  2   54 
+            5.997 -1.0000 -0.0012 -0.0692 -1.0704                 23135  2   55 
+            6.967 -1.0000 -0.0007 -0.0389 -1.0397                 23135  2   56 
+           10.024 -1.0000 -0.0001 -0.1850 -1.1852                 23135  2   57 
+           15.936 -1.0000  0.0000 -0.1054 -1.1054                 23135  2   58 
+MISC-COL   (MISC)    Absolute total uncertainty.                  23135  2   59 
+COVARIANCE Correlation coefficients matrix:                       23135  2   60 
+            (XY,8,EN,MEV)                                         23135  2   61 
+           1.996 2.974 3.999 3.999 5.997 6.967 10.024 15.936      23135  2   62 
+            (Z,36,COR,NO-DIM)                                     23135  2   63 
+            1.00 0.21 0.22 0.22 0.22 0.22 0.18 0.21               23135  2   64 
+                 1.00 0.30 0.30 0.30 0.31 0.25 0.29               23135  2   65 
+                      1.00 0.61 0.31 0.32 0.26 0.30               23135  2   66 
+                           1.00 0.31 0.32 0.26 0.30               23135  2   67 
+                                1.00 0.32 0.25 0.29               23135  2   68 
+                                     1.00 0.26 0.30               23135  2   69 
+                                          1.00 0.24               23135  2   70 
+                                               1.00               23135  2   71 
+STATUS     (TABLE) Table 4 of J,ANE,76,514,2015 .                 23135  2   72 
+            Prelim.data are on Fig.3 of J,EPJ/CS,8,07010,2010     23135  2   73 
+ENDBIB              71          0                                 23135  2   74 
+COMMON               9          6                                 23135  2   75 
+ERR-1      ERR-2      ERR-3      ERR-5      ERR-6      ERR-7      23135  2   76 
+ERR-8      ERR-9      ERR-10                                      23135  2   77 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   23135  2   78 
+PER-CENT   PER-CENT   PER-CENT                                    23135  2   79 
+ 2.         3.3        0.5        1.         10.        10.       23135  2   80 
+ 3.         10.        10.                                        23135  2   81 
+ENDCOMMON            6          0                                 23135  2   82 
+DATA                 5          8                                 23135  2   83 
+EN         EN-ERR     DATA       ERR-T      MISC                  23135  2   84 
+MEV        PER-CENT   PC/FIS     PER-CENT   PC/FIS                23135  2   85 
+  1.996     7.5        5.92       5.9        0.35                 23135  2   86 
+  2.974     4.1        5.65       6.3        0.35                 23135  2   87 
+  3.999     2.6        5.49       6.2        0.34                 23135  2   88 
+  3.999                5.64       6.2        0.35                 23135  2   89 
+  5.997     2.2        3.59       6.3        0.23                 23135  2   90 
+  6.967     2.1        3.10       5.9        0.18                 23135  2   91 
+ 10.024     1.2        2.92       8.5        0.25                 23135  2   92 
+ 15.936     3.6        2.58       6.8        0.17                 23135  2   93 
+ENDDATA             10          0                                 23135  2   94 
+ENDSUBENT           93          0                                 23135  299999 
 ENDENTRY             2          0                                 2313599999999 
