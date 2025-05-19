@@ -1,11 +1,11 @@
-ENTRY            E1967   20200117                             E125E196700000001 
-SUBENT        E1967001   20200117                             E125E196700100001 
-BIB                 11         20                                 E196700100002 
+ENTRY            E1967   20240504                             E144E196700000001 
+SUBENT        E1967001   20240504                             E144E196700100001 
+BIB                 12         24                                 E196700100002 
 TITLE      Excitation functions for the production of 81Rb-81mKr  E196700100003 
            via the 79Br(alpha, 2n)81Rb and the 81Br(3He, 3n)81Rb  E196700100004 
            reactions                                              E196700100005 
 AUTHOR     (Y.Homma, K.Kurata)                                    E196700100006 
-INSTITUTE  (2JPNKYO) Laboratory for Radiopharmaceutical Chemistry E196700100007 
+INSTITUTE  (2JPNKYO)                                              E196700100007 
 REFERENCE  (J,ARI,30,345,1979)                                    E196700100008 
 INC-SOURCE Beam intensity is 1 uA.                                E196700100009 
 SAMPLE     - Chemical-form of target is KBr.                      E196700100010 
@@ -16,27 +16,27 @@ METHOD     (ACTIV) Irradiated for 30-60 min                       E196700100013
            (GSPEC) Started after 1 hour after irradiation         E196700100015 
 FACILITY   (CYCLO,2JPNIPC) ICPR cyclotron                         E196700100016 
 DETECTOR   (GE-IN) To measure target                              E196700100017 
-COMMENT    No description of cumulative production and isomeric   E196700100018 
-           transition in references                               E196700100019 
-HISTORY    (20060418C) Tk + On                                    E196700100020 
-           (20191210A) Tada. 010-013: REACTION corrected,         E196700100021 
-                       ANALYSIS: INTEF added. REFERENCE modified. E196700100022 
-ENDBIB              20          0                                 E196700100023 
-COMMON               1          3                                 E196700100024 
-EN-ERR                                                            E196700100025 
-PER-CENT                                                          E196700100026 
- 2.                                                               E196700100027 
-ENDCOMMON            3          0                                 E196700100028 
+ERR-ANALYS The uncertainty of the incident beam energy is +-2%.   E196700100018 
+COMMENT    No description of cumulative production and isomeric   E196700100019 
+           transition in references                               E196700100020 
+HISTORY    (20060418C) Tk + On                                    E196700100021 
+           (20191210A) Tada. 010-013: REACTION corrected,         E196700100022 
+                       ANALYSIS: INTEF added. REFERENCE modified. E196700100023 
+           (20240320A) MA: moved COMMON/EN-ERR -> ERR-ANALYS in   E196700100024 
+                       001; modified REACTION in 005-006, 009,    E196700100025 
+                       013, typos in 002, 007.                    E196700100026 
+ENDBIB              24          0                                 E196700100027 
+NOCOMMON             0          0                                 E196700100028 
 ENDSUBENT           27          0                                 E196700199999 
-SUBENT        E1967002   20061228                             E041E196700200001 
+SUBENT        E1967002   20240504                             E144E196700200001 
 BIB                  5          7                                 E196700200002 
 REACTION   (35-BR-79(A,2N)37-RB-81-G,M+,SIG)                      E196700200003 
 DECAY-DATA (37-RB-81-G,,DG,190.4,0.645)                           E196700200004 
            Symbol (81mRb) in decay data in reference is probably  E196700200005 
-           missprint and probably should be read as 81Rb (g.s.).  E196700200006 
+           misprint and probably should be read as 81Rb (g.s.).   E196700200006 
 ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E196700200007 
 COMMENT    81Br(a,4n)81Rb reaction threshold is 34 MeV.           E196700200008 
-STATUS     (CURVE) Data scanned from Fig.1, p346 in reference     E196700200009 
+STATUS     (CURVE,,Y.Homma+,J,ARI,30,345,1979) Fig. 1             E196700200009 
 ENDBIB               7          0                                 E196700200010 
 NOCOMMON             0          0                                 E196700200011 
 DATA                 4          7                                 E196700200012 
@@ -51,11 +51,11 @@ MEV        MEV        MB         MB                               E196700200014
   3.769E+01             3.023E+02                                 E196700200021 
 ENDDATA              9          0                                 E196700200022 
 ENDSUBENT           21          0                                 E196700299999 
-SUBENT        E1967003   20061228                             E041E196700300001 
+SUBENT        E1967003   20240504                             E144E196700300001 
 BIB                  3          3                                 E196700300002 
 REACTION   (35-BR-0(A,X)37-RB-82-M,,SIG)                          E196700300003 
 DECAY-DATA (37-RB-82-M,,DG,776.8,0.83)                            E196700300004 
-STATUS     (CURVE) Data scanned from Fig.1, p346 in reference     E196700300005 
+STATUS     (CURVE,,Y.Homma+,J,ARI,30,345,1979) Fig. 1             E196700300005 
 ENDBIB               3          0                                 E196700300006 
 NOCOMMON             0          0                                 E196700300007 
 DATA                 3          7                                 E196700300008 
@@ -70,12 +70,12 @@ MEV        MEV        MB                                          E196700300010
   3.768E+01             3.664E+02                                 E196700300017 
 ENDDATA              9          0                                 E196700300018 
 ENDSUBENT           17          0                                 E196700399999 
-SUBENT        E1967004   20061228                             E041E196700400001 
+SUBENT        E1967004   20240504                             E144E196700400001 
 BIB                  4          4                                 E196700400002 
 REACTION   (35-BR-81(A,2N)37-RB-83,,SIG)                          E196700400003 
 DECAY-DATA (37-RB-83,,DG,552.5,0.165)                             E196700400004 
 ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E196700400005 
-STATUS     (CURVE) Data scanned from Fig.1, p346 in reference     E196700400006 
+STATUS     (CURVE,,Y.Homma+,J,ARI,30,345,1979) Fig. 1             E196700400006 
 ENDBIB               4          0                                 E196700400007 
 NOCOMMON             0          0                                 E196700400008 
 DATA                 4          7                                 E196700400009 
@@ -90,52 +90,54 @@ MEV        MEV        MB         MB                               E196700400011
   3.759E+01             1.733E+02  1.270E+01                      E196700400018 
 ENDDATA              9          0                                 E196700400019 
 ENDSUBENT           18          0                                 E196700499999 
-SUBENT        E1967005   20061228                             E041E196700500001 
-BIB                  4          4                                 E196700500002 
-REACTION   (35-BR-81(A,N)37-RB-84-G,M+,SIG)                       E196700500003 
+SUBENT        E1967005   20240504                             E144E196700500001 
+BIB                  5          5                                 E196700500002 
+REACTION   (35-BR-81(A,N)37-RB-84,,SIG)                           E196700500003 
 DECAY-DATA (37-RB-84-G,,DG,881.5,0.734)                           E196700500004 
 ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E196700500005 
-STATUS     (CURVE) Data scanned from Fig.1, p346 in reference     E196700500006 
-ENDBIB               4          0                                 E196700500007 
-NOCOMMON             0          0                                 E196700500008 
-DATA                 4          7                                 E196700500009 
-EN         EN-ERR     DATA       DATA-ERR                         E196700500010 
-MEV        MEV        MB         MB                               E196700500011 
-  1.298E+01  1.258E+00  9.633E+01                                 E196700500012 
-  1.774E+01             1.223E+02                                 E196700500013 
-  2.268E+01             1.857E+01  2.824E+00                      E196700500014 
-  2.714E+01             1.149E+01  1.749E+00                      E196700500015 
-  3.076E+01             5.088E+00  8.931E-01                      E196700500016 
-  3.433E+01             5.655E+00  8.595E-01                      E196700500017 
-  3.748E+01             2.606E+00  4.886E-01                      E196700500018 
-ENDDATA              9          0                                 E196700500019 
-ENDSUBENT           18          0                                 E196700599999 
-SUBENT        E1967006   20061228                             E041E196700600001 
-BIB                  5          5                                 E196700600002 
-REACTION   (35-BR-79(A,X)35-BR-77-G,M+,SIG)                       E196700600003 
+STATUS     (CURVE,,Y.Homma+,J,ARI,30,345,1979) Fig. 1             E196700500006 
+HISTORY    (20240504A) MA: SF4-SF5: -G,M+ deleted.                E196700500007 
+ENDBIB               5          0                                 E196700500008 
+NOCOMMON             0          0                                 E196700500009 
+DATA                 4          7                                 E196700500010 
+EN         EN-ERR     DATA       DATA-ERR                         E196700500011 
+MEV        MEV        MB         MB                               E196700500012 
+  1.298E+01  1.258E+00  9.633E+01                                 E196700500013 
+  1.774E+01             1.223E+02                                 E196700500014 
+  2.268E+01             1.857E+01  2.824E+00                      E196700500015 
+  2.714E+01             1.149E+01  1.749E+00                      E196700500016 
+  3.076E+01             5.088E+00  8.931E-01                      E196700500017 
+  3.433E+01             5.655E+00  8.595E-01                      E196700500018 
+  3.748E+01             2.606E+00  4.886E-01                      E196700500019 
+ENDDATA              9          0                                 E196700500020 
+ENDSUBENT           19          0                                 E196700599999 
+SUBENT        E1967006   20240504                             E144E196700600001 
+BIB                  6          6                                 E196700600002 
+REACTION   (35-BR-79(A,X)35-BR-77,,SIG)                           E196700600003 
 DECAY-DATA (35-BR-77-G,,DG,238.9,0.26)                            E196700600004 
 ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E196700600005 
 COMMENT    81Br(a,a+4n)77Br reaction threshold is 39 MeV.         E196700600006 
-STATUS     (CURVE) Data scanned from Fig.1, p346 in reference     E196700600007 
-ENDBIB               5          0                                 E196700600008 
-NOCOMMON             0          0                                 E196700600009 
-DATA                 3          4                                 E196700600010 
-EN         DATA       DATA-ERR                                    E196700600011 
-MEV        MB         MB                                          E196700600012 
-  2.707E+01  1.056E+00  2.903E-01                                 E196700600013 
-  3.079E+01  3.163E+00  5.934E-01                                 E196700600014 
-  3.431E+01  7.506E+00  1.142E+00                                 E196700600015 
-  3.752E+01  1.530E+01  2.327E+00                                 E196700600016 
-ENDDATA              6          0                                 E196700600017 
-ENDSUBENT           16          0                                 E196700699999 
-SUBENT        E1967007   20061228                             E041E196700700001 
+STATUS     (CURVE,,Y.Homma+,J,ARI,30,345,1979) Fig. 1             E196700600007 
+HISTORY    (20240504A) MA: SF4-SF5: -G,M+ deleted.                E196700600008 
+ENDBIB               6          0                                 E196700600009 
+NOCOMMON             0          0                                 E196700600010 
+DATA                 3          4                                 E196700600011 
+EN         DATA       DATA-ERR                                    E196700600012 
+MEV        MB         MB                                          E196700600013 
+  2.707E+01  1.056E+00  2.903E-01                                 E196700600014 
+  3.079E+01  3.163E+00  5.934E-01                                 E196700600015 
+  3.431E+01  7.506E+00  1.142E+00                                 E196700600016 
+  3.752E+01  1.530E+01  2.327E+00                                 E196700600017 
+ENDDATA              6          0                                 E196700600018 
+ENDSUBENT           17          0                                 E196700699999 
+SUBENT        E1967007   20240504                             E144E196700700001 
 BIB                  4          6                                 E196700700002 
 REACTION   (35-BR-0(HE3,X)37-RB-81-G,M+,SIG)                      E196700700003 
 DECAY-DATA (37-RB-81-G,,DG,190.4,0.645)                           E196700700004 
            Symbol (81mRb) in decay data in reference is probably  E196700700005 
-           missprint and probably should be read as 81Rb (g.s.).  E196700700006 
+           misprint and probably should be read as 81Rb (g.s.).   E196700700006 
 ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E196700700007 
-STATUS     (CURVE) Data scanned from Fig.2, p346 in reference     E196700700008 
+STATUS     (CURVE,,Y.Homma+,J,ARI,30,345,1979) Fig. 2             E196700700008 
 ENDBIB               6          0                                 E196700700009 
 NOCOMMON             0          0                                 E196700700010 
 DATA                 4          8                                 E196700700011 
@@ -151,12 +153,12 @@ MEV        MEV        MB         MB                               E196700700013
   3.772E+01             5.845E+01                                 E196700700021 
 ENDDATA             10          0                                 E196700700022 
 ENDSUBENT           21          0                                 E196700799999 
-SUBENT        E1967008   20061228                             E041E196700800001 
+SUBENT        E1967008   20240504                             E144E196700800001 
 BIB                  4          4                                 E196700800002 
 REACTION   (35-BR-81(HE3,2N)37-RB-82-M,,SIG)                      E196700800003 
 DECAY-DATA (37-RB-82-M,,DG,776.8,0.83)                            E196700800004 
 ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E196700800005 
-STATUS     (CURVE) Data scanned from Fig.2, p346 in reference     E196700800006 
+STATUS     (CURVE,,Y.Homma+,J,ARI,30,345,1979) Fig. 2             E196700800006 
 ENDBIB               4          0                                 E196700800007 
 NOCOMMON             0          0                                 E196700800008 
 DATA                 4          8                                 E196700800009 
@@ -172,33 +174,34 @@ MEV        MEV        MB         MB                               E196700800011
   3.743E+01             4.020E+00  9.716E-01                      E196700800019 
 ENDDATA             10          0                                 E196700800020 
 ENDSUBENT           19          0                                 E196700899999 
-SUBENT        E1967009   20061228                             E041E196700900001 
-BIB                  4          4                                 E196700900002 
-REACTION   (35-BR-0(HE3,X)36-KR-79-G,CUM,SIG)                     E196700900003 
+SUBENT        E1967009   20240504                             E144E196700900001 
+BIB                  5          5                                 E196700900002 
+REACTION   (35-BR-0(HE3,X)36-KR-79,CUM,SIG)                       E196700900003 
 DECAY-DATA (36-KR-79-G,,DG,398.,0.10)                             E196700900004 
 ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E196700900005 
-STATUS     (CURVE) Data scanned from Fig.2, p346 in reference     E196700900006 
-ENDBIB               4          0                                 E196700900007 
-NOCOMMON             0          0                                 E196700900008 
-DATA                 4          8                                 E196700900009 
-EN         EN-ERR     DATA       DATA-ERR                         E196700900010 
-MEV        MEV        MB         MB                               E196700900011 
-  1.180E+01  1.409E+00  2.563E+00  7.537E-01                      E196700900012 
-  1.735E+01             1.256E+01  1.363E+00                      E196700900013 
-  2.204E+01             5.381E+01  5.232E+00                      E196700900014 
-  2.578E+01             1.763E+02                                 E196700900015 
-  2.894E+01             9.503E+01  7.110E+00                      E196700900016 
-  3.237E+01             5.177E+01  3.873E+00                      E196700900017 
-  3.512E+01             9.324E+01  6.976E+00                      E196700900018 
-  3.766E+01             2.085E+02                                 E196700900019 
-ENDDATA             10          0                                 E196700900020 
-ENDSUBENT           19          0                                 E196700999999 
-SUBENT        E1967010   20200117                             E125E196701000001 
+STATUS     (CURVE,,Y.Homma+,J,ARI,30,345,1979) Fig. 2             E196700900006 
+HISTORY    (20240320A) MA: SF4: 36-KR-79-G -> 36-KR-79.           E196700900007 
+ENDBIB               5          0                                 E196700900008 
+NOCOMMON             0          0                                 E196700900009 
+DATA                 4          8                                 E196700900010 
+EN         EN-ERR     DATA       DATA-ERR                         E196700900011 
+MEV        MEV        MB         MB                               E196700900012 
+  1.180E+01  1.409E+00  2.563E+00  7.537E-01                      E196700900013 
+  1.735E+01             1.256E+01  1.363E+00                      E196700900014 
+  2.204E+01             5.381E+01  5.232E+00                      E196700900015 
+  2.578E+01             1.763E+02                                 E196700900016 
+  2.894E+01             9.503E+01  7.110E+00                      E196700900017 
+  3.237E+01             5.177E+01  3.873E+00                      E196700900018 
+  3.512E+01             9.324E+01  6.976E+00                      E196700900019 
+  3.766E+01             2.085E+02                                 E196700900020 
+ENDDATA             10          0                                 E196700900021 
+ENDSUBENT           20          0                                 E196700999999 
+SUBENT        E1967010   20240504                             E144E196701000001 
 BIB                  4          6                                 E196701000002 
 REACTION   (35-BR-79(A,2N)37-RB-81,,TTY,,EOB/MSC,DERIV)           E196701000003 
            Irradiation time unspecified                           E196701000004 
 ANALYSIS   (INTEF)                                                E196701000005 
-STATUS     (TABLE) Taken from text, p347 in reference             E196701000006 
+STATUS     (TABLE,,Y.Homma+,J,ARI,30,345,1979) Text               E196701000006 
 HISTORY    (20191210A) REACTION: -G,M+ removed, SF8: DT ->        E196701000007 
                        EOB/MSC. ANALYSYS: INTEF added.            E196701000008 
 ENDBIB               6          0                                 E196701000009 
@@ -209,12 +212,12 @@ MEV        MCI/MUAHR                                              E196701000013
         40.         2.                                            E196701000014 
 ENDDATA              3          0                                 E196701000015 
 ENDSUBENT           14          0                                 E196701099999 
-SUBENT        E1967011   20200117                             E125E196701100001 
+SUBENT        E1967011   20240504                             E144E196701100001 
 BIB                  4          6                                 E196701100002 
 REACTION   (35-BR-0(HE3,X)37-RB-81,,TTY,,EOB/MSC,DERIV)           E196701100003 
            Irradiation time unspecified                           E196701100004 
 ANALYSIS   (INTEF)                                                E196701100005 
-STATUS     (TABLE) Taken from text, p347 in reference             E196701100006 
+STATUS     (TABLE,,Y.Homma+,J,ARI,30,345,1979) Text               E196701100006 
 HISTORY    (20191210A) REACTION: -G,M+ removed, SF8: DT ->        E196701100007 
                        EOB/MSC. ANALYSYS: INTEF added.            E196701100008 
 ENDBIB               6          0                                 E196701100009 
@@ -226,12 +229,12 @@ MEV        MCI/MUAHR                                              E196701100013
         40.        2.7                                            E196701100015 
 ENDDATA              4          0                                 E196701100016 
 ENDSUBENT           15          0                                 E196701199999 
-SUBENT        E1967012   20200117                             E125E196701200001 
+SUBENT        E1967012   20240504                             E144E196701200001 
 BIB                  4          5                                 E196701200002 
 REACTION   (35-BR-81(HE3,2N)37-RB-82-M,,TTY,,EOB/MSC,DERIV)       E196701200003 
            Irradiation time unspecified                           E196701200004 
 ANALYSIS   (INTEF)                                                E196701200005 
-STATUS     (TABLE) Taken from text, p347 in reference             E196701200006 
+STATUS     (TABLE,,Y.Homma+,J,ARI,30,345,1979) Text               E196701200006 
 HISTORY    (20191210A) SF8: DT -> EOB/MSC. ANALYSYS: INTEF added. E196701200007 
 ENDBIB               5          0                                 E196701200008 
 NOCOMMON             0          0                                 E196701200009 
@@ -241,19 +244,20 @@ MEV        MCI/MUAHR                                              E196701200012
         30.       0.35                                            E196701200013 
 ENDDATA              3          0                                 E196701200014 
 ENDSUBENT           13          0                                 E196701299999 
-SUBENT        E1967013   20200117                             E125E196701300001 
-BIB                  4          5                                 E196701300002 
-REACTION   (35-BR-0(HE3,X)36-KR-79-G,CUM,TTY,,EOB/MSC,DERIV)      E196701300003 
+SUBENT        E1967013   20240504                             E144E196701300001 
+BIB                  4          6                                 E196701300002 
+REACTION   (35-BR-0(HE3,X)36-KR-79,CUM,TTY,,EOB/MSC,DERIV)        E196701300003 
            Irradiation time unspecified                           E196701300004 
 ANALYSIS   (INTEF)                                                E196701300005 
-STATUS     (TABLE) Taken from text, p347 in reference             E196701300006 
+STATUS     (TABLE,,Y.Homma+,J,ARI,30,345,1979) Text               E196701300006 
 HISTORY    (20191210A) SF8: DT -> EOB/MSC. ANALYSYS: INTEF added. E196701300007 
-ENDBIB               5          0                                 E196701300008 
-NOCOMMON             0          0                                 E196701300009 
-DATA                 2          1                                 E196701300010 
-EN         DATA                                                   E196701300011 
-MEV        MCI/MUAHR                                              E196701300012 
-        30.       0.09                                            E196701300013 
-ENDDATA              3          0                                 E196701300014 
-ENDSUBENT           13          0                                 E196701399999 
+           (20240504A) MA: SF4: -G deleted.                       E196701300008 
+ENDBIB               6          0                                 E196701300009 
+NOCOMMON             0          0                                 E196701300010 
+DATA                 2          1                                 E196701300011 
+EN         DATA                                                   E196701300012 
+MEV        MCI/MUAHR                                              E196701300013 
+        30.       0.09                                            E196701300014 
+ENDDATA              3          0                                 E196701300015 
+ENDSUBENT           14          0                                 E196701399999 
 ENDENTRY            13          0                                 E196799999999 
