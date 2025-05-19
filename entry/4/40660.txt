@@ -1,173 +1,185 @@
-ENTRY            40660   20160601                             417640660  0    1 
-SUBENT        40660001   20160601                             417640660  1    1 
-BIB                 11         32                                 40660  1    2 
-INSTITUTE  (4RUSFEI)                                              40660  1    3 
-REFERENCE  (J,AE,53,(2),83,1982)  Data Table is given             40660  1    4 
-           (J,SJA,53,536,1982) Eng.trans.of AE,53,83,1982         40660  1    5 
-           (R,INDC(CCP)-178,1982) same data                       40660  1    6 
-           (J,YK,,(1/50),4,1983) same data, several isotopes      40660  1    7 
-           (R,INDC(CCP)-229,46,1984) Transl. of YK,,(1/50),4,1983 40660  1    8 
-AUTHOR     (V.V.Malinovsky,V.G.Vorobeva,B.D.Kuzminov,             40660  1    9 
-           V.M.Piksaikin,N.N.Semenova)                            40660  1   10 
-TITLE       Average number (v(bar)(p)) of prompt neutrons  in the 40660  1   11 
-            fission of U-236 nuclei by the neutrons in the        40660  1   12 
-            energy range 0.8 - 6. MeV                             40660  1   13 
-INC-SOURCE (P-T) Energy resolution 30 keV                         40660  1   14 
-           (D-D) Energy resolution 80 keV                         40660  1   15 
-           (P-LI7) Energy resolution 30 keV                       40660  1   16 
-SAMPLE      U-236 Enrichment is more than 99%                     40660  1   17 
-DETECTOR   (PROPC)  He-3 filled counters                          40660  1   18 
-MONITOR    (98-CF-252(0,F),PR,NU)                                 40660  1   19 
-REL-REF    (M,,V.G.Vorobeva+,J,YK,,(3/38),44,1980)                40660  1   20 
-             Details of corrections method.                       40660  1   21 
-STATUS     (APRVD)   1983-12 B.D.Kuz'minov .                      40660  1   22 
-HISTORY    (19831226C)                                            40660  1   23 
-           (20090923A) M.M. STATUS was added.                     40660  1   24 
-            Dates were corrected for 4-digits year.               40660  1   25 
-             NO-DIM -> PRT/FIS . MISC1, MISC2,MISC3 were added.   40660  1   26 
-           (20160601U) SD: Refs SJA,53,536; INDC(CCP)-178;        40660  1   27 
-           YK,1983,(1/50),4; INDC(CCP)-229,46 were added. Title   40660  1   28 
-           and list of authors update following SJA,53,536,1982.  40660  1   29 
-           (20170710U) M.M. Previous correction of SD was         40660  1   30 
-           checked at CJD.                                        40660  1   31 
-           J,YK,1983,(1/50),4,1983 -> J,YK,,(1/50),4,1983         40660  1   32 
-           J,YK,1980,(3/38),44,1980 ->                            40660  1   33 
-                                J,YK,,(3/38),44,1980  - REL-REF   40660  1   34 
-ENDBIB              32          0                                 40660  1   35 
-COMMON               1          3                                 40660  1   36 
-MONIT                                                             40660  1   37 
-PRT/FIS                                                           40660  1   38 
- 3.733                                                            40660  1   39 
-ENDCOMMON            3          0                                 40660  1   40 
-ENDSUBENT           39          0                                 40660  199999 
-SUBENT        40660002   20090923                             41474066000200001 
-BIB                  6         41                                 4066000200002 
-REACTION   (92-U-236(N,F),PR,NU)                                  4066000200003 
-CORRECTION  For differences of energy fission neutron spectra of  4066000200004 
-            U-236 and Cf-252 - MISC1,                             4066000200005 
-            For registration efficiency dependence from sample    4066000200006 
-            positioning - 0.048 +- 0.002.                         4066000200007 
-            For differences of diameters of U-236 and Cf-252      4066000200008 
-            layers - -0.003+-0.002 .                              4066000200009 
-            For false counting of coincidence of two pulses from  4066000200010 
-            fission neutrons at dead time - MISC2.                4066000200011 
-            For false counting of coincidence of two pulses from  4066000200012 
-            fission neutron and background at dead time - MISC3.  4066000200013 
-            For dependence of registered fission neutrons number  4066000200014 
-            from fission fragment registration efficiency -       4066000200015 
-             0.015 +- 0.003 .                                     4066000200016 
-            For dependence from fission fragments kinetic energy -4066000200017 
-            0.003 +- 0.001 .                                      4066000200018 
-            For differences of fission fragments angular          4066000200019 
-            distributions of U-236 and Cf-252 - 0.000 +- 0.001.   4066000200020 
-            For background neutrons from D(d,n) reaction for      4066000200021 
-            energy 5.05 MeV - 0.002+-0.003,                       4066000200022 
-                   5.60 MeV - 0.008+-0.003,                       4066000200023 
-                   5.90 MeV - 0.011+-0.003 .                      4066000200024 
-MISC-COL   (MISC1) Correction for differences of energy fission   4066000200025 
-                neutron spectra of U-236 and Cf-252 .             4066000200026 
-           (MISC2) Correction for false counting of coincidence of4066000200027 
-            two pulses from fission neutrons at dead time.        4066000200028 
-           (MISC3) Correction for false counting of coincidence of4066000200029 
-            two pulses from fission neutron and background at dead4066000200030 
-            time.                                                 4066000200031 
-COVARIANCE  Diagonal element of covariation matrix, defined       4066000200032 
-            without taking into account of statistical error:     4066000200033 
-            for EN=5.05, 5.60 is 0.29E-4,                         4066000200034 
-            for EN=5.90 is 0.28E-4,                               4066000200035 
-            for others energies - 0.20E-4 .                       4066000200036 
-                 From Table 1 of YK,1(50),5,1983.                 4066000200037 
-ADD-RES    (THEO) Energy dependence of Nu-prompt could be         4066000200038 
-            approximated as:                                      4066000200039 
-            (2.346+-0.012)+(0.1072+-0.0071)*En at En=< 2.35 MeV,  4066000200040 
-            (2.236+-0.024)+(0.1539+-0.0068)*En at                 4066000200041 
-           (COMP)                       2.35MeV=<En=<5.9 MeV.     4066000200042 
-STATUS     (TABLE) Table of AE,53,(2),83,1982 .                   4066000200043 
-ENDBIB              41          0                                 4066000200044 
-COMMON               2          3                                 4066000200045 
-MISC2-ERR  MISC3-ERR                                              4066000200046 
-NO-DIM     NO-DIM                                                 4066000200047 
- 0.001      0.002                                                 4066000200048 
-ENDCOMMON            3          0                                 4066000200049 
-DATA                 8         37                                 4066000200050 
-EN         DATA       ERR-S      ERR-T      MISC1      MISC1-ERR  4066000200051 
-MISC2      MISC3                                                  4066000200052 
-MEV        PRT/FIS    PRT/FIS    PRT/FIS    NO-DIM     NO-DIM     4066000200053 
-NO-DIM     NO-DIM                                                 4066000200054 
- 8.0000E-01 2.451      2.9000E-02 3.4000E-02  -0.019    0.005     4066000200055 
-  0.002      -0.019                                               4066000200056 
- 8.5000E-01 2.446      2.7000E-02 3.3000E-02  -0.019    0.005     4066000200057 
-  0.003      -0.019                                               4066000200058 
- 9.0000E-01 2.434      2.2000E-02 3.4000E-02  -0.019    0.005     4066000200059 
-  0.003      -0.019                                               4066000200060 
- 9.5000E-01 2.430      2.3000E-02 3.5000E-02  -0.019    0.005     4066000200061 
-  0.004      -0.019                                               4066000200062 
- 1.0000E+00 2.465      3.3000E-02 3.8000E-02  -0.019    0.005     4066000200063 
-  0.004      -0.019                                               4066000200064 
- 1.1000E+00 2.472      2.2000E-02 2.9000E-02  -0.019    0.005     4066000200065 
-  0.002      -0.019                                               4066000200066 
- 1.2000E+00 2.501      1.7000E-02 2.5000E-02  -0.018    0.005     4066000200067 
-  0.005      -0.017                                               4066000200068 
- 1.3000E+00 2.469      3.0000E-02 3.5000E-02  -0.018    0.005     4066000200069 
-  0.002      -0.017                                               4066000200070 
- 1.3500E+00 2.476      3.1000E-02 3.6000E-02  -0.018    0.005     4066000200071 
-  0.001      -0.017                                               4066000200072 
- 1.4000E+00 2.480      1.5000E-02 2.4000E-02  -0.018    0.005     4066000200073 
-  0.002      -0.017                                               4066000200074 
- 1.5000E+00 2.514      2.0000E-02 3.0000E-02  -0.018    0.005     4066000200075 
-  0.002      -0.017                                               4066000200076 
- 1.6000E+00 2.515      1.7000E-02 2.5000E-02  -0.018    0.005     4066000200077 
-  0.002      -0.017                                               4066000200078 
- 1.7000E+00 2.518      2.3000E-02 3.0000E-02  -0.018    0.005     4066000200079 
-  0.003      -0.017                                               4066000200080 
- 1.8000E+00 2.556      2.6000E-02 3.2000E-02  -0.018    0.005     4066000200081 
-  0.001      -0.017                                               4066000200082 
- 1.9000E+00 2.549      1.2000E-02 2.1000E-02  -0.017    0.004     4066000200083 
-  0.003      -0.017                                               4066000200084 
- 2.0000E+00 2.545      3.5000E-02 3.9000E-02  -0.017    0.004     4066000200085 
-  0.003      -0.017                                               4066000200086 
- 2.1000E+00 2.575      3.3000E-02 3.7000E-02  -0.016    0.004     4066000200087 
-  0.001      -0.017                                               4066000200088 
- 2.2000E+00 2.558      2.4000E-02 3.0000E-02  -0.016    0.004     4066000200089 
-  0.002      -0.017                                               4066000200090 
- 2.2500E+00 2.611      1.6000E-02 2.4000E-02  -0.015    0.004     4066000200091 
-  0.004      -0.017                                               4066000200092 
- 2.3000E+00 2.604      1.5000E-02 2.3000E-02  -0.015    0.004     4066000200093 
-  0.002      -0.017                                               4066000200094 
- 2.4000E+00 2.588      1.5000E-02 2.3000E-02  -0.015    0.004     4066000200095 
-  0.005      -0.017                                               4066000200096 
- 2.5000E+00 2.626      2.9000E-02 3.4000E-02  -0.015    0.004     4066000200097 
-  0.005      -0.017                                               4066000200098 
- 2.6000E+00 2.684      2.8000E-02 3.4000E-02  -0.014    0.004     4066000200099 
-  0.001      -0.016                                               4066000200100 
- 2.7000E+00 2.667      2.3000E-02 2.9000E-02  -0.014    0.004     4066000200101 
-  0.009      -0.016                                               4066000200102 
- 2.8000E+00 2.669      3.2000E-02 3.7000E-02  -0.014    0.004     4066000200103 
-  0.003      -0.016                                               4066000200104 
- 2.9000E+00 2.678      2.4000E-02 3.0000E-02  -0.014    0.004     4066000200105 
-  0.004      -0.016                                               4066000200106 
- 3.0000E+00 2.690      1.3000E-02 2.3000E-02  -0.014    0.004     4066000200107 
-  0.003      -0.016                                               4066000200108 
- 3.1000E+00 2.704      2.3000E-02 3.0000E-02  -0.014    0.004     4066000200109 
-  0.002      -0.016                                               4066000200110 
- 3.2000E+00 2.727      1.6000E-02 2.5000E-02  -0.014    0.004     4066000200111 
-  0.004      -0.016                                               4066000200112 
- 3.3000E+00 2.732      2.1000E-02 2.9000E-02  -0.014    0.004     4066000200113 
-  0.002      -0.016                                               4066000200114 
- 3.4000E+00 2.780      2.2000E-02 2.9000E-02  -0.012    0.003     4066000200115 
-  0.004      -0.015                                               4066000200116 
- 3.5000E+00 2.772      1.5000E-02 2.3000E-02  -0.012    0.003     4066000200117 
-  0.003      -0.015                                               4066000200118 
- 3.6000E+00 2.775      2.2000E-02 2.9000E-02  -0.012    0.003     4066000200119 
-  0.005      -0.015                                               4066000200120 
- 3.7000E+00 2.819      1.9000E-01 2.6000E-02  -0.012    0.003     4066000200121 
-  0.005      -0.015                                               4066000200122 
- 5.0500E+00 3.007      1.6000E-01 3.0000E-02  -0.009    0.003     4066000200123 
-  0.005      -0.013                                               4066000200124 
- 5.6000E+00 3.167      2.6000E-01 3.4000E-02  -0.007    0.002     4066000200125 
-  0.002      -0.010                                               4066000200126 
- 5.9000E+00 3.154      4.2000E-01 4.6000E-02  -0.007    0.002     4066000200127 
-  0.002      -0.010                                               4066000200128 
-ENDDATA             78          0                                 4066000200129 
-ENDSUBENT          128          0                                 4066000299999 
+ENTRY            40660   20240828                             421840660000    1 
+SUBENT        40660001   20240828                             421840660001    1 
+BIB                 11         37                                 40660001    2 
+TITLE       Average number (v(bar)(p)) of prompt neutrons in the  40660001    3 
+            fission of 236U nuclei by neutrons in the energy range40660001    4 
+            0.8 - 6 MeV                                           40660001    5 
+AUTHOR     (V.V.Malinovski,V.G.Vorob'eva,B.D.Kuz'minov,           40660001    6 
+           V.M.Piksaikin,N.N.Semenova)                            40660001    7 
+REFERENCE  (J,SJA,53,536,1982) Engl.translstion of AE,53,83,1982  40660001    8 
+           (J,AE,53,(2),83,1982)  Data Table is given             40660001    9 
+           (R,INDC(CCP)-178,1982) same data                       40660001   10 
+           (J,YK,,(1/50),4,1983) same data, several isotopes      40660001   11 
+           (R,INDC(CCP)-229,46,1984) Transl. of YK,,(1/50),4,1983 40660001   12 
+INSTITUTE  (4RUSFEI)                                              40660001   13 
+INC-SOURCE (P-T) Energy resolution 30 keV                         40660001   14 
+           (D-D) Energy resolution 80 keV                         40660001   15 
+           (P-LI7) Energy resolution 30 keV                       40660001   16 
+SAMPLE      U-236 enrichment is more than 99%                     40660001   17 
+DETECTOR   (PROPC) 16 He-3 filled counters in polyethylene block- 40660001   18 
+           to detect fission neutrons.                            40660001   19 
+           (IOCH) 6 U chambers and one Cf chamber with detection  40660001   20 
+           efficiency of FF of U-236 and Cf-252 - 80 and 96 %,    40660001   21 
+           respectively. .                                        40660001   22 
+MONITOR    (98-CF-252(0,F),PR,NU)                                 40660001   23 
+REL-REF    (M,,V.G.Vorobeva+,J,YK,,(3/38),44,1980)                40660001   24 
+             Details of corrections method.                       40660001   25 
+STATUS     (APRVD)   1983-12 B.D.Kuz'minov .                      40660001   26 
+HISTORY    (19831226C)                                            40660001   27 
+           (20090923A) M.M. STATUS was added.                     40660001   28 
+            Dates were corrected for 4-digits year.               40660001   29 
+             NO-DIM -> PRT/FIS . MISC1, MISC2,MISC3 were added.   40660001   30 
+           (20160601U) SD: Refs SJA,53,536; INDC(CCP)-178;        40660001   31 
+           YK,1983,(1/50),4; INDC(CCP)-229,46 were added. Title   40660001   32 
+           and list of authors update following SJA,53,536,1982.  40660001   33 
+           (20170710U) M.M. Previous correction of SD was         40660001   34 
+           checked at CJD.                                        40660001   35 
+           J,YK,1983,(1/50),4,1983 -> J,YK,,(1/50),4,1983         40660001   36 
+           J,YK,1980,(3/38),44,1980 ->                            40660001   37 
+                                J,YK,,(3/38),44,1980  - REL-REF   40660001   38 
+           (20240828A) Subent 002 was corrected.                  40660001   39 
+ENDBIB              37          0                                 40660001   40 
+COMMON               1          3                                 40660001   41 
+MONIT                                                             40660001   42 
+PRT/FIS                                                           40660001   43 
+ 3.733                                                            40660001   44 
+ENDCOMMON            3          0                                 40660001   45 
+ENDSUBENT           44          0                                 4066000199999 
+SUBENT        40660002   20240828                             421840660002    1 
+BIB                  8         48                                 40660002    2 
+REACTION   (92-U-236(N,F),PR,NU)                                  40660002    3 
+CORRECTION  For differences of energy fission neutron spectra of  40660002    4 
+            U-236 and Cf-252 - MISC1,                             40660002    5 
+            For registration efficiency dependence from sample    40660002    6 
+            positioning - 0.048 +- 0.002.                         40660002    7 
+            For differences of diameters of U-236 and Cf-252      40660002    8 
+            layers - -0.003+-0.002 .                              40660002    9 
+            For false counting of coincidence of two pulses from  40660002   10 
+            fission neutrons at dead time - MISC2.                40660002   11 
+            For false counting of coincidence of two pulses from  40660002   12 
+            fission neutron and background at dead time - MISC3.  40660002   13 
+            For dependence of registered fission neutrons number  40660002   14 
+            from fission fragment registration efficiency -       40660002   15 
+             0.015 +- 0.003 .                                     40660002   16 
+            For dependence from fission fragments kinetic energy -40660002   17 
+            0.003 +- 0.001 .                                      40660002   18 
+            For differences of fission fragments angular          40660002   19 
+            distributions of U-236 and Cf-252 - 0.000 +- 0.001.   40660002   20 
+            For background neutrons from D(d,n) reaction for      40660002   21 
+            energy 5.05 MeV - 0.002+-0.003,                       40660002   22 
+                   5.60 MeV - 0.008+-0.003,                       40660002   23 
+                   5.90 MeV - 0.011+-0.003 .                      40660002   24 
+MISC-COL   (MISC1) Correction for differences of energy fission   40660002   25 
+                neutron spectra of U-236 and Cf-252 .             40660002   26 
+           (MISC2) Correction for false counting of coincidence of40660002   27 
+            two pulses from fission neutrons at dead time.        40660002   28 
+           (MISC3) Correction for false counting of coincidence of40660002   29 
+            two pulses from fission neutron and background at dead40660002   30 
+            time.                                                 40660002   31 
+COVARIANCE  Diagonal element of covarince matrix, defined         40660002   32 
+            without taking into account of statistical error:     40660002   33 
+            for EN=5.05, 5.60 is 0.29E-4,                         40660002   34 
+            for EN=5.90 is 0.28E-4,                               40660002   35 
+            for others energies - 0.20E-4 .                       40660002   36 
+                 From Table 1 of YK,1(50),5,1983.                 40660002   37 
+ADD-RES    (THEO) Energy dependence of Nu-prompt could be         40660002   38 
+            approximated as:                                      40660002   39 
+            (2.346+-0.012)+(0.1072+-0.0071)*En at En=< 2.35 MeV,  40660002   40 
+            (2.236+-0.024)+(0.1539+-0.0068)*En at                 40660002   41 
+           (COMP)                       2.35MeV=<En=<5.9 MeV.     40660002   42 
+ERR-ANALYS (ERR-S) Statistical uncertainty                        40660002   43 
+           (ERR-T) Total uncertainty                              40660002   44 
+STATUS     (TABLE,,V.V.Malinovsky+,J,SJA,53,536,1982)             40660002   45 
+HISTORY    (20240828A) ERR-S was corrected at last 4 points       40660002   46 
+           according to a comment of W.N.Fritsch (misprint at     40660002   47 
+           initial compilation).                                  40660002   48 
+            EN,DATA,ERR-S,ERR-T format was corrected:             40660002   49 
+            floating point -> fixed point.                        40660002   50 
+ENDBIB              48          0                                 40660002   51 
+COMMON               2          3                                 40660002   52 
+MISC2-ERR  MISC3-ERR                                              40660002   53 
+NO-DIM     NO-DIM                                                 40660002   54 
+ 0.001      0.002                                                 40660002   55 
+ENDCOMMON            3          0                                 40660002   56 
+DATA                 8         37                                 40660002   57 
+EN         DATA       ERR-S      ERR-T      MISC1      MISC1-ERR  40660002   58 
+MISC2      MISC3                                                  40660002   59 
+MEV        PRT/FIS    PRT/FIS    PRT/FIS    NO-DIM     NO-DIM     40660002   60 
+NO-DIM     NO-DIM                                                 40660002   61 
+0.80        2.451      0.029       0.034      -0.019    0.005     40660002   62 
+  0.002      -0.019                                               40660002   63 
+0.85        2.446      0.027       0.033      -0.019    0.005     40660002   64 
+  0.003      -0.019                                               40660002   65 
+0.90        2.434      0.022       0.034      -0.019    0.005     40660002   66 
+  0.003      -0.019                                               40660002   67 
+0.95        2.430      0.023       0.035      -0.019    0.005     40660002   68 
+  0.004      -0.019                                               40660002   69 
+1.00        2.465      0.033       0.038      -0.019    0.005     40660002   70 
+  0.004      -0.019                                               40660002   71 
+1.10        2.472      0.022       0.029      -0.019    0.005     40660002   72 
+  0.002      -0.019                                               40660002   73 
+1.20        2.501      0.017       0.025      -0.018    0.005     40660002   74 
+  0.005      -0.017                                               40660002   75 
+1.30        2.469      0.030       0.035      -0.018    0.005     40660002   76 
+  0.002      -0.017                                               40660002   77 
+1.35        2.476      0.031       0.036      -0.018    0.005     40660002   78 
+  0.001      -0.017                                               40660002   79 
+1.40        2.480      0.015       0.024      -0.018    0.005     40660002   80 
+  0.002      -0.017                                               40660002   81 
+1.50        2.514      0.020       0.030      -0.018    0.005     40660002   82 
+  0.002      -0.017                                               40660002   83 
+1.60        2.515      0.017       0.025      -0.018    0.005     40660002   84 
+  0.002      -0.017                                               40660002   85 
+1.70        2.518      0.023       0.030      -0.018    0.005     40660002   86 
+  0.003      -0.017                                               40660002   87 
+1.80        2.556      0.026       0.032      -0.018    0.005     40660002   88 
+  0.001      -0.017                                               40660002   89 
+1.90        2.549      0.012       0.021      -0.017    0.004     40660002   90 
+  0.003      -0.017                                               40660002   91 
+2.00        2.545      0.035       0.039      -0.017    0.004     40660002   92 
+  0.003      -0.017                                               40660002   93 
+2.10        2.575      0.033       0.037      -0.016    0.004     40660002   94 
+  0.001      -0.017                                               40660002   95 
+2.20        2.558      0.024       0.030      -0.016    0.004     40660002   96 
+  0.002      -0.017                                               40660002   97 
+2.25        2.611      0.016       0.024      -0.015    0.004     40660002   98 
+  0.004      -0.017                                               40660002   99 
+2.30        2.604      0.015       0.023      -0.015    0.004     40660002  100 
+  0.002      -0.017                                               40660002  101 
+2.40        2.588      0.015       0.023      -0.015    0.004     40660002  102 
+  0.005      -0.017                                               40660002  103 
+2.50        2.626      0.029       0.034      -0.015    0.004     40660002  104 
+  0.005      -0.017                                               40660002  105 
+2.60        2.684      0.028       0.034      -0.014    0.004     40660002  106 
+  0.001      -0.016                                               40660002  107 
+2.70        2.667      0.023       0.029      -0.014    0.004     40660002  108 
+  0.009      -0.016                                               40660002  109 
+2.80        2.669      0.032       0.037      -0.014    0.004     40660002  110 
+  0.003      -0.016                                               40660002  111 
+2.90        2.678      0.024       0.030      -0.014    0.004     40660002  112 
+  0.004      -0.016                                               40660002  113 
+3.00        2.690      0.013       0.023      -0.014    0.004     40660002  114 
+  0.003      -0.016                                               40660002  115 
+3.10        2.704      0.023       0.030      -0.014    0.004     40660002  116 
+  0.002      -0.016                                               40660002  117 
+3.20        2.727      0.016       0.025      -0.014    0.004     40660002  118 
+  0.004      -0.016                                               40660002  119 
+3.30        2.732      0.021       0.029      -0.014    0.004     40660002  120 
+  0.002      -0.016                                               40660002  121 
+3.40        2.780      0.022       0.029      -0.012    0.003     40660002  122 
+  0.004      -0.015                                               40660002  123 
+3.50        2.772      0.015       0.023      -0.012    0.003     40660002  124 
+  0.003      -0.015                                               40660002  125 
+3.60        2.775      0.022       0.029      -0.012    0.003     40660002  126 
+  0.005      -0.015                                               40660002  127 
+3.70        2.819      0.019       0.026      -0.012    0.003     40660002  128 
+  0.005      -0.015                                               40660002  129 
+5.05        3.007      0.016       0.030      -0.009    0.003     40660002  130 
+  0.005      -0.013                                               40660002  131 
+5.60        3.167      0.026       0.034      -0.007    0.002     40660002  132 
+  0.002      -0.010                                               40660002  133 
+5.90        3.154      0.042       0.046      -0.007    0.002     40660002  134 
+  0.002      -0.010                                               40660002  135 
+ENDDATA             78          0                                 40660002  136 
+ENDSUBENT          135          0                                 4066000299999 
 ENDENTRY             2          0                                 4066099999999 
