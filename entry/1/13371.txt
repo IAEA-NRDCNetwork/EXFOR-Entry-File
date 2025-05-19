@@ -1,48 +1,114 @@
-ENTRY            13371   19891220                             00001337100000001 
-SUBENT        13371001   19891220                             00001337100100001 
-BIB                  8          8                                 1337100100002 
-INSTITUTE  (1USABNL)                                              1337100100003 
-REFERENCE  (J,PR,91,1458,5309)                                    1337100100004 
-AUTHOR     (S.KATCOFF,W.RUBINSON)                                 1337100100005 
-TITLE      YIELD OF XE133 IN THE THERMAL NEUTRON FISSION OF U-235 1337100100006 
-FACILITY   (REAC)                                                 1337100100007 
-METHOD     (RCHEM)                                                1337100100008 
-STATUS     (RIDER) 53KAT1                                         1337100100009 
-HISTORY    (891211C) VM                                           1337100100010 
-ENDBIB               8          0                                 1337100100011 
-COMMON               1          3                                 1337100100012 
-EN-DUMMY                                                          1337100100013 
-EV                                                                1337100100014 
-0.0253                                                            1337100100015 
-ENDCOMMON            3          0                                 1337100100016 
-ENDSUBENT           15          0                                 1337100199999 
-SUBENT        13371002   19891220                             00001337100200001 
-BIB                  3          5                                 1337100200002 
-REACTION   ((92-U-235(N,F)ELEM/MASS,IND,FY,,MXW)/                 1337100200003 
-           (92-U-235(N,F)MASS,CHN,FY))                            1337100200004 
-RESULT     (FRIND)                                                1337100200005 
-DECAY-DATA ((1.)54-XE-133,5.27D)                                  1337100200006 
-           ((2.)54-XE-135,9.15HR)                                 1337100200007 
-ENDBIB               5          0                                 1337100200008 
-NOCOMMON             0          0                                 1337100200009 
-DATA                 6          2                                 1337100200010 
-MASS       ELEMENT    DATA       DATA-ERR   DATA-MAX   DECAY-FLAG 1337100200011 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     1337100200012 
-133.        54.                              0.001      1.        1337100200013 
-135.        54.         0.035      0.010                2.        1337100200014 
-ENDDATA              4          0                                 1337100200015 
-ENDSUBENT           14          0                                 1337100299999 
-SUBENT        13371003   19891220                             00001337100300001 
-BIB                  3          3                                 1337100300002 
-REACTION   (92-U-235(N,F)54-XE-133,CUM,FY,,MXW)                   1337100300003 
-DETECTOR   (PROPC)                                                1337100300004 
-DECAY-DATA (54-XE-133,5.27D)                                      1337100300005 
-ENDBIB               3          0                                 1337100300006 
-NOCOMMON             0          0                                 1337100300007 
-DATA                 2          1                                 1337100300008 
-DATA       DATA-ERR                                               1337100300009 
-PC/FIS     PC/FIS                                                 1337100300010 
-  6.62       0.15                                                 1337100300011 
-ENDDATA              3          0                                 1337100300012 
-ENDSUBENT           11          0                                 1337100399999 
+ENTRY            13371   20180312                             143913371  0    1 
+SUBENT        13371001   20180312                             143913371  1    1 
+BIB                 11         39                                 13371  1    2 
+TITLE      Yield of Xe133 in the Thermal Neutron Fission of U235  13371  1    3 
+AUTHOR     (S.Katcoff,W.Rubinson)                                 13371  1    4 
+REFERENCE  (J,PR,91,1458,1953)                                    13371  1    5 
+           #doi:10.1103/PhysRev.91.1458                           13371  1    6 
+INSTITUTE  (1USABNL)                                              13371  1    7 
+FACILITY   (REAC,1USABNL) Brookhaven pile.                        13371  1    8 
+INC-SPECT  A constant (+-2%) flux of ~2x10**11 neutrons/cm2/sec.  13371  1    9 
+SAMPLE     (92-U-235,ENR=0.9372) Five fission foils, each         13371  1   10 
+           containing 7.855x10**-3 microg of 93.72 percent U235,  13371  1   11 
+           were prepared by the standard method. Two additional   13371  1   12 
+           foils were prepared by slight variations of this       13371  1   13 
+           method: one, without final ignition, to test whether   13371  1   14 
+           ignition affects the escape of fission recoils; and the13371  1   15 
+            other, by stippling the foil solution and rinse in    13371  1   16 
+           small droplets over the surface of the Pt before       13371  1   17 
+           evaporation and ignition, to test whether possible     13371  1   18 
+           clumping of the U was great enough to cause loss of    13371  1   19 
+           fission recoils.                                       13371  1   20 
+DETECTOR   (PROPC,FISCH) The gas counters were of glass, 2 cm in  13371  1   21 
+           diameter and 30 cm long, with chemically deposited     13371  1   22 
+           silver cathodes whose volumes had been measured to     13371  1   23 
+           within 0.2 percent.                                    13371  1   24 
+METHOD     (CHSEP,INTB) Two slug solutions were prepared          13371  1   25 
+           independently of each other by diluting aliquots of    13371  1   26 
+           the U235 stock solution. The slug was bombarded in     13371  1   27 
+           the space between the two fission foils for an hour.   13371  1   28 
+           The total of the recorded fissions of each foil was    13371  1   29 
+           then corrected for background and counting-rate loss,  13371  1   30 
+           divided by 60 to give the foil fission rate as         13371  1   31 
+           fissions per min, and multiplied by the ratio of       13371  1   32 
+           slug weight to foil weight to give the slug fission    13371  1   33 
+           rate.                                                  13371  1   34 
+COMMENT    Surprisingly, modern T1/2 values for 133Xe and 135Xe   13371  1   35 
+           are 5.2475 d and 9.14 h, respectively. Almost no       13371  1   36 
+           changes in the last 65 years.                          13371  1   37 
+HISTORY    (19891211C) VM                                         13371  1   38 
+           (20180312A) BP: Updated to new date formats,lower case.13371  1   39 
+                corrections according last EXFOR rules and Dict., 13371  1   40 
+                added doi and minor updates.                      13371  1   41 
+ENDBIB              39          0                                 13371  1   42 
+COMMON               1          3                                 13371  1   43 
+EN-DUMMY                                                          13371  1   44 
+EV                                                                13371  1   45 
+     0.0253                                                       13371  1   46 
+ENDCOMMON            3          0                                 13371  1   47 
+ENDSUBENT           46          0                                 13371  199999 
+SUBENT        13371002   20180312                             143913371  2    1 
+BIB                  6         19                                 13371  2    2 
+REACTION   ((92-U-235(N,F)ELEM/MASS,IND,FY,,MXW)/                 13371  2    3 
+           (92-U-235(N,F)MASS,CHN,FY))                            13371  2    4 
+METHOD     (RELFY) In our experimental procedure two identical    13371  2    5 
+           uranium samples(~40 microg U235 in each) were sealed   13371  2    6 
+           into the usual quartz cells and then irradiated side   13371  2    7 
+           by side in one of the pile pneumatic tubes for 0.033   13371  2    8 
+           hr. The slugs were dissolved and swept with Xe         13371  2    9 
+           carrier and 2 l of helium as rapidly as possible. The  13371  2   10 
+           Xe of extract a collected at the bottom of the         13371  2   11 
+           charcoal column was probably contaminated with some    13371  2   12 
+           short-lived Kr isotopes. Therefore the first 10-15     13371  2   13 
+           percent of the Xe desorbed from the column was         13371  2   14 
+           discarded. The remainder was collected and put into    13371  2   15 
+           counters in the usual manner.                          13371  2   16 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     13371  2   17 
+RESULT     (FRIND)                                                13371  2   18 
+DECAY-DATA ((1.)54-XE-133-G,5.27D)                                13371  2   19 
+           ((2.)54-XE-135-G,9.15HR)                               13371  2   20 
+STATUS     (TABLE) Abstract and page 1467.                        13371  2   21 
+ENDBIB              19          0                                 13371  2   22 
+NOCOMMON             0          0                                 13371  2   23 
+DATA                 6          2                                 13371  2   24 
+MASS       ELEMENT    DATA       DATA-ERR   DATA-MAX   DECAY-FLAG 13371  2   25 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     13371  2   26 
+       133.        54.                            0.001         1.13371  2   27 
+       135.        54.      0.035      0.010                    2.13371  2   28 
+ENDDATA              4          0                                 13371  2   29 
+ENDSUBENT           28          0                                 13371  299999 
+SUBENT        13371003   20180312                             143913371  3    1 
+BIB                  6         20                                 13371  3    2 
+REACTION   (92-U-235(N,F)54-XE-133,CUM,FY,,MXW)                   13371  3    3 
+METHOD     (BSPEC) The Xe from each run was measured into two     13371  3    4 
+           counters, designated a and b, each of which was        13371  3    5 
+           counted ten times, over a period of two weeks,         13371  3    6 
+           starting about 10 days after irradiation, on each of   13371  3    7 
+           two electronic circuits, designated 1 and 2. Eight     13371  3    8 
+           different counters were used for the five runs.        13371  3    9 
+ANALYSIS   The basic Xe activity datum that enters the fission    13371  3   10 
+           yield calculation in a given run is the mean of the    13371  3   11 
+           corrected a and b averages of that run. This gives     13371  3   12 
+           the disintegration rate of the total Xe in the given   13371  3   13 
+           slug 253 hr after the end of a 1-hr bombardment. Of    13371  3   14 
+           this total activity, about 98.8 percent was 5.27-day   13371  3   15 
+           Xe133, one percent was 2.3-day Xe133m, and the         13371  3   16 
+           remaining 0.2 percent was 12.0-day Xe131m.             13371  3   17 
+ERR-ANALYS (DATA-ERR) Probable error.                             13371  3   18 
+           (ERR-1) 1% Slug fission rate.                          13371  3   19 
+           (ERR-2) 2% Xe disintegration rates.                    13371  3   20 
+DECAY-DATA (54-XE-133-G,5.27D)                                    13371  3   21 
+STATUS     (TABLE) Abstract and page 1466.                        13371  3   22 
+ENDBIB              20          0                                 13371  3   23 
+COMMON               2          3                                 13371  3   24 
+ERR-1      ERR-2                                                  13371  3   25 
+PER-CENT   PER-CENT                                               13371  3   26 
+        1.0        2.0                                            13371  3   27 
+ENDCOMMON            3          0                                 13371  3   28 
+DATA                 2          1                                 13371  3   29 
+DATA       DATA-ERR                                               13371  3   30 
+PC/FIS     PC/FIS                                                 13371  3   31 
+       6.62       0.15                                            13371  3   32 
+ENDDATA              3          0                                 13371  3   33 
+ENDSUBENT           32          0                                 13371  399999 
 ENDENTRY             3          0                                 1337199999999 
