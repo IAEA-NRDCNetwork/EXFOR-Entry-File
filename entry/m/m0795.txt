@@ -1,6 +1,6 @@
-ENTRY            M0795   20151226                             M081M0795  0    1 
-SUBENT        M0795001   20151226                             M081M0795  1    1 
-BIB                 14         31                                 M0795  1    2 
+ENTRY            M0795   20220210                             M118M0795  0    1 
+SUBENT        M0795001   20220210                             M118M0795  1    1 
+BIB                 13         35                                 M0795  1    2 
 TITLE      Photodisintegration of heavy nuclei in the energy      M0795  1    3 
             region above the Giant Dipole Resonance.              M0795  1    4 
 AUTHOR     (A.N.Ermakov,B.S.Ishkhanov,I.M.Kapitonov,              M0795  1    5 
@@ -16,7 +16,7 @@ FACILITY   (MICRT,4RUSMOS) 70 MeV racetrack  microtron   RTM-70,  M0795  1   13
             Moscow State University.                              M0795  1   15 
 INC-SOURCE (BRST)                                                 M0795  1   16 
 SAMPLE     Natural Bi target (100% of 209Bi).                     M0795  1   17 
-           Natural Tl  (29.5%  of  203Ti  and 70.5%  of 205Tl) in M0795  1   18 
+            Natural Tl (29.5%  of  203Ti  and 70.5%  of 205Tl) in M0795  1   18 
             Tl-2(SO-4).                                           M0795  1   19 
 METHOD     (ACTIV) Induced beta- delayed gamma-activity measured. M0795  1   20 
 DETECTOR   (HPGE) Hyperpure Germanium detector,  efficiency 30%   M0795  1   21 
@@ -24,169 +24,137 @@ DETECTOR   (HPGE) Hyperpure Germanium detector,  efficiency 30%   M0795  1   21
             for Eg = 1332 keV.                                    M0795  1   23 
 ANALYSIS   (DECAY) Gamma-quanta  energy  spectrum  lines          M0795  1   24 
             data and decay curves data for reaction separation.   M0795  1   25 
-ERR-ANALYS (DATA-ERR) Root-mean-square errors.                    M0795  1   26 
-STATUS     (APRVD) by I.V.Makarenko.                              M0795  1   27 
-HISTORY    (20101027C) Data were compiled at Russia MSU SINP CDFE M0795  1   28 
-            by V.Varlamov.                                        M0795  1   29 
-           (20111117C) Corrected by V.Varlamov: TITLE, SUBENT 003 M0795  1   30 
-            deleted because of duplication of 002.                M0795  1   31 
-           (20151226A) Corrected by SD and VV: REL-REF, ANALYSIS, M0795  1   32 
-            DECAY-DATA in SUBENT 004.                             M0795  1   33 
-ENDBIB              31          0                                 M0795  1   34 
-COMMON               1          3                                 M0795  1   35 
-EN-MAX                                                            M0795  1   36 
-MEV                                                               M0795  1   37 
-  67.7                                                            M0795  1   38 
-ENDCOMMON            3          0                                 M0795  1   39 
-ENDSUBENT           38          0                                 M0795  199999 
-SUBENT        M0795002   20101027                             M055M079500200001 
-BIB                  3         11                                 M079500200002 
-REACTION   ((81-TL-203(G,X)ELEM/MASS,,SIG,,BRA)/                  M079500200003 
-           (81-TL-203(G,N)81-TL-202,,SIG,,BRA))                   M079500200004 
-            Reaction  identified   via  gamma-decay  lines   and  M079500200005 
-            curves.                                               M079500200006 
-DECAY-DATA (81-TL-202,12.23D)                                     M079500200007 
-           (81-TL-201,3.04D)                                      M079500200008 
-           (81-TL-200,26.1HR)                                     M079500200009 
-           (81-TL-199,7.42HR)                                     M079500200010 
-           (81-TL-198,5.3HR)                                      M079500200011 
-           (81-TL-197,2.84HR)                                     M079500200012 
-STATUS     (TABLE) Data from Table 5.                             M079500200013 
-ENDBIB              11          0                                 M079500200014 
-NOCOMMON             0          0                                 M079500200015 
-DATA                 4          7                                 M079500200016 
-ELEMENT    MASS       DATA       DATA-ERR                         M079500200017 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM                           M079500200018 
-   81.        202.       1.          .03                          M079500200019 
-   81.        201.        .18        .06                          M079500200020 
-   81.        200.        .029       .003                         M079500200021 
-   81.        199.        .011       .002                         M079500200022 
-   81.        198.        .004       .001                         M079500200023 
-   81.        197.        .0012      .0005                        M079500200024 
-   80.        203.        .0035      .0012                        M079500200025 
-ENDDATA              9          0                                 M079500200026 
-ENDSUBENT           25          0                                 M079500299999 
-SUBENT        M0795003   20111117                             M061M079500300001 
-BIB                  3          6                                 M079500300002 
-REACTION   ((81-TL-205(G,X)80-HG-203,,SIG,,BRA)/                  M079500300003 
-           (81-TL-203(G,N)81-TL-202,,SIG,,BRA))                   M079500300004 
-           Reaction  identified   via  gamma-decay  lines   and   M079500300005 
-            curves.                                               M079500300006 
-DECAY-DATA (80-HG-203,46.59D)                                     M079500300007 
-STATUS     (TABLE) Data from Table 5.                             M079500300008 
-ENDBIB               6          0                                 M079500300009 
-NOCOMMON             0          0                                 M079500300010 
-NODATA               0          0                                 M079500300011 
-ENDSUBENT           10          0                                 M079500399999 
-SUBENT        M0795004   20151226                             M081M0795  4    1 
-BIB                  5         14                                 M0795  4    2 
+STATUS     (APRVD) by I.V.Makarenko.                              M0795  1   26 
+HISTORY    (20101027C) Data were compiled at Russia MSU SINP CDFE M0795  1   27 
+            by V.Varlamov.                                        M0795  1   28 
+           (20111117C) Corrected by V.Varlamov: TITLE, SUBENT 003 M0795  1   29 
+            deleted because of duplication of 002.                M0795  1   30 
+           (20151226A) Corrected by SD and VV: REL-REF, ANALYSIS, M0795  1   31 
+            DECAY-DATA in SUBENT 004.                             M0795  1   32 
+           (20220210A) Corrected by V.Varlamov: ERR-ANALYS moved  M0795  1   33 
+            into SUBENTs 002, 004 - 007, ANALYSIS and BRA -> BRS  M0795  1   34 
+            in REACTION of SUBENTS 007, SUBENTs 005 - 006 deleted M0795  1   35 
+            because no data for EXFOR, new DATA in SUBENT 002,    M0795  1   36 
+            REACTION, STATUS.                                     M0795  1   37 
+ENDBIB              35          0                                 M0795  1   38 
+COMMON               1          3                                 M0795  1   39 
+EN-MAX                                                            M0795  1   40 
+MEV                                                               M0795  1   41 
+  67.7                                                            M0795  1   42 
+ENDCOMMON            3          0                                 M0795  1   43 
+ENDSUBENT           42          0                                 M0795  199999 
+SUBENT        M0795002   20220210                             M118M0795  2    1 
+BIB                  5         16                                 M0795  2    2 
+REACTION   ((81-TL-0(G,X)ELEM/MASS,,SIG,,BRS)/                    M0795  2    3 
+           (81-TL-0(G,X)81-TL-202,,SIG,,BRS))                     M0795  2    4 
+            Reaction  identified   via  gamma-decay  lines   and  M0795  2    5 
+            curves.                                               M0795  2    6 
+ERR-ANALYS (DATA-ERR) Root-mean-square errors.                    M0795  2    7 
+DECAY-DATA (81-TL-202,12.23D)                                     M0795  2    8 
+           (81-TL-201,3.04D)                                      M0795  2    9 
+           (81-TL-200,26.1HR)                                     M0795  2   10 
+           (81-TL-199,7.42HR)                                     M0795  2   11 
+           (81-TL-198-G,5.3HR)                                    M0795  2   12 
+           (81-TL-198-M,1.87HR)                                   M0795  2   13 
+           (81-TL-197-G,2.84HR)                                   M0795  2   14 
+STATUS     (TABLE) Data presented in Table 5 of                   M0795  2   15 
+            Phys.At.Nucl.73(2010)737.                             M0795  2   16 
+HISTORY    (20220201A) Corrected by V.Varlamov: REACTION,         M0795  2   17 
+            DECAY-DATA (81-TL-197-G), STATUS, DATA substituted.   M0795  2   18 
+ENDBIB              16          0                                 M0795  2   19 
+NOCOMMON             0          0                                 M0795  2   20 
+DATA                 5          7                                 M0795  2   21 
+ELEMENT    ISOMER     MASS       DATA       DATA-ERR              M0795  2   22 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                M0795  2   23 
+   81.                   202.       1.00        .03               M0795  2   24 
+   81.                   201.        .18        .06               M0795  2   25 
+   81.                   200.        .029       .003              M0795  2   26 
+   81.                   199.        .011       .002              M0795  2   27 
+   81.        1.         198.        .004       .001              M0795  2   28 
+   81.                   197.        .0012      .0005             M0795  2   29 
+   80.                   203.        .0035      .0012             M0795  2   30 
+ENDDATA              9          0                                 M0795  2   31 
+ENDSUBENT           30          0                                 M0795  299999 
+SUBENT        M0795003   20220210                             M118M0795  3    1 
+BIB                  4          8                                 M0795  3    2 
+REACTION   ((81-TL-0(G,X)80-HG-203,,SIG,,BRA)/                    M0795  3    3 
+           (81-TL-0(G,X)81-TL-202,,SIG,,BRA))                     M0795  3    4 
+           Reaction  identified   via  gamma-decay  lines   and   M0795  3    5 
+            curves.                                               M0795  3    6 
+DECAY-DATA (80-HG-203,46.59D)                                     M0795  3    7 
+STATUS     (TABLE) Data presented in Table 5 of                   M0795  3    8 
+            Phys.At.Nucl.73(2010)737.                             M0795  3    9 
+HISTORY    (20220201A) Corrected by V.Varlamov: REACTION, STATUS. M0795  3   10 
+ENDBIB               8          0                                 M0795  3   11 
+NOCOMMON             0          0                                 M0795  3   12 
+NODATA               0          0                                 M0795  3   13 
+ENDSUBENT           12          0                                 M0795  399999 
+SUBENT        M0795004   20220210                             M118M0795  4    1 
+BIB                  6         17                                 M0795  4    2 
 REACTION   ((83-BI-209(G,X)ELEM/MASS,,SIG,,BRA)/                  M0795  4    3 
            (83-BI-209(G,2N)83-BI-207,,SIG,,BRA))                  M0795  4    4 
-DECAY-DATA (83-BI-207,32.9YR)                                     M0795  4    5 
-           (83-BI-206,6.243D)                                     M0795  4    6 
-           (83-BI-205,15.34D)                                     M0795  4    7 
-           (83-BI-204,11.22HR)                                    M0795  4    8 
-           (83-BI-203-G,11.76HR)                                  M0795  4    9 
-           (83-BI-202,1.71HR)                                     M0795  4   10 
-STATUS     (TABLE) Data from Table 6 of YF,73,767,2010            M0795  4   11 
-CRITIQUE   From compiler: All final nuclei in Tbl.6 atomic        M0795  4   12 
-            numbers must be decreased by 1: 207Bi, 206Bi, 205Bi,  M0795  4   13 
-            204Bi, 203Bi and 202Bi.                               M0795  4   14 
-HISTORY    (20151226A) Corrected by SD and VV: DECAY-DATA (Tl-202 M0795  4   15 
-            -> Bi-202, 83-BI-203-G).                              M0795  4   16 
-ENDBIB              14          0                                 M0795  4   17 
-NOCOMMON             0          0                                 M0795  4   18 
-DATA                 4          6                                 M0795  4   19 
-ELEMENT    MASS       DATA       DATA-ERR                         M0795  4   20 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM                           M0795  4   21 
-   83.        207.       1.          .05                          M0795  4   22 
-   83.        206.        .15        .03                          M0795  4   23 
-   83.        205.        .09        .02                          M0795  4   24 
-   83.        204.        .017       .003                         M0795  4   25 
-   83.        203.        .007       .002                         M0795  4   26 
-   83.        202.        .00012     .00006                       M0795  4   27 
-ENDDATA              8          0                                 M0795  4   28 
-ENDSUBENT           27          0                                 M0795  499999 
-SUBENT        M0795005   20080424                             M055M079500500001 
-BIB                  4         12                                 M079500500002 
-REACTION   (81-TL-203(G,N)ELEM/MASS,,INT,,BRA,DERIV)              M079500500003 
-COMMENT    Absolute values  of  integrated  cross  sections  were M079500500004 
-            obtained from relative yields using normalization  to M079500500005 
-            the evaluated (g,n), (g,2n) and (g,3n) reaction cross M079500500006 
-            sections and  multiparticle  photonuclear   reactions M079500500007 
-            cross sections   calculated   in   modern   model  of M079500500008 
-            photonuclear reactions.                               M079500500009 
-REL-REF    (R,,V.V.VARLAMOV+,J,YK,2003,(1-2),48,2003)             M079500500010 
-           Evaluated data.                                        M079500500011 
-           (R,,B.S.ISHKHANOV+,J,FCY,38,460,2007)                  M079500500012 
-           Calculated data.                                       M079500500013 
-STATUS     (TABLE) Data from Table 7.                             M079500500014 
-ENDBIB              12          0                                 M079500500015 
-NOCOMMON             0          0                                 M079500500016 
-DATA                 4          6                                 M079500500017 
-ELEMENT    MASS       DATA       DATA-ERR                         M079500500018 
-NO-DIM     NO-DIM     MB*MEV     MB*MEV                           M079500500019 
-   81.        202.      2280.        70.                          M079500500020 
-   81.        201.       790.       260.                          M079500500021 
-   81.        200.       225.        25.                          M079500500022 
-   81.        199.       200.        35.                          M079500500023 
-   81.        198.       112.        30.                          M079500500024 
-   81.        197.        56.        23.                          M079500500025 
-ENDDATA              8          0                                 M079500500026 
-ENDSUBENT           25          0                                 M079500599999 
-SUBENT        M0795006   20080424                             M055M079500600001 
-BIB                  4         12                                 M079500600002 
-REACTION   (81-TL-205(G,N)ELEM/MASS,,INT,,BRA,DERIV)              M079500600003 
-COMMENT    Absolute values  of  integrated  cross  sections  were M079500600004 
-            obtained from relative yields using normalization  to M079500600005 
-            the evaluated (g,n), (g,2n) and (g,3n) reaction cross M079500600006 
-            sections and  multiparticle  photonuclear   reactions M079500600007 
-            cross sections   calculated   in   modern   model  of M079500600008 
-            photonuclear reactions.                               M079500600009 
-REL-REF    (R,,V.V.VARLAMOV+,J,YK,2003,(1-2),48,2003)             M079500600010 
-           Evaluated data.                                        M079500600011 
-           (R,,B.S.ISHKHANOV+,J,FCY,38,460,2007)                  M079500600012 
-           Calculated data.                                       M079500600013 
-STATUS     (TABLE) Data from Table 7.                             M079500600014 
-ENDBIB              12          0                                 M079500600015 
-NOCOMMON             0          0                                 M079500600016 
-DATA                 4          7                                 M079500600017 
-ELEMENT    MASS       DATA       DATA-ERR                         M079500600018 
-NO-DIM     NO-DIM     MB*MEV     MB*MEV                           M079500600019 
-   81.        204.      2240.        70.                          M079500600020 
-   81.        203.       920.       150.                          M079500600021 
-   81.        202.       240.        20.                          M079500600022 
-   81.        201.       206.        50.                          M079500600023 
-   81.        200.       126.        30.                          M079500600024 
-   81.        199.        71.        20.                          M079500600025 
-   80.        203.        29.         7.                          M079500600026 
-ENDDATA              9          0                                 M079500600027 
-ENDSUBENT           26          0                                 M079500699999 
-SUBENT        M0795007   20080424                             M055M079500700001 
-BIB                  4         12                                 M079500700002 
-REACTION   (83-BI-209(G,N)ELEM/MASS,,INT,,BRA)                    M079500700003 
-COMMENT    Absolute values  of  integrated  cross  sections  were M079500700004 
-            obtained from relative yields using normalization  to M079500700005 
-            the evaluated (g,n), (g,2n) and (g,3n) reaction cross M079500700006 
-            sections and  multiparticle  photonuclear   reactions M079500700007 
-            cross sections   calculated   in   modern   model  of M079500700008 
-            photonuclear reactions.                               M079500700009 
-REL-REF    (R,,V.V.VARLAMOV+,J,YK,2003,(1-2),48,2003)             M079500700010 
-           Evaluated data.                                        M079500700011 
-           (R,,B.S.ISHKHANOV+,J,FCY,38,460,2007)                  M079500700012 
-           Calculated data.                                       M079500700013 
-STATUS     (TABLE) Data from Table 7.                             M079500700014 
-ENDBIB              12          0                                 M079500700015 
-NOCOMMON             0          0                                 M079500700016 
-DATA                 4          6                                 M079500700017 
-ELEMENT    MASS       DATA       DATA-ERR                         M079500700018 
-NO-DIM     NO-DIM     MB*MEV     MB*MEV                           M079500700019 
-   83.        208.      2630.        60.                          M079500700020 
-   83.        207.       940.        50.                          M079500700021 
-   83.        206.       330.        65.                          M079500700022 
-   83.        205.       290.        80.                          M079500700023 
-   83.        204.       128.        20.                          M079500700024 
-   83.        203.       106.        30.                          M079500700025 
-ENDDATA              8          0                                 M079500700026 
-ENDSUBENT           25          0                                 M079500799999 
+ERR-ANALYS (DATA-ERR) Root-mean-square errors.                    M0795  4    5 
+DECAY-DATA (83-BI-207,32.9YR)                                     M0795  4    6 
+           (83-BI-206,6.243D)                                     M0795  4    7 
+           (83-BI-205,15.34D)                                     M0795  4    8 
+           (83-BI-204,11.22HR)                                    M0795  4    9 
+           (83-BI-203-G,11.76HR)                                  M0795  4   10 
+           (83-BI-202,1.71HR)                                     M0795  4   11 
+STATUS     (TABLE) Data presented in Table 6 of                   M0795  4   12 
+            Phys.At.Nucl.73(2010)737.                             M0795  4   13 
+CRITIQUE   From compiler: All final nuclei in Tbl.6 atomic        M0795  4   14 
+            numbers must be decreased by 1: 207Bi, 206Bi, 205Bi,  M0795  4   15 
+            204Bi, 203Bi and 202Bi.                               M0795  4   16 
+HISTORY    (20151226A) Corrected by SD and VV: DECAY-DATA (Tl-202 M0795  4   17 
+            -> Bi-202, 83-BI-203-G).                              M0795  4   18 
+           (20220201U) Corrected by V.Varlamov: STATUS.           M0795  4   19 
+ENDBIB              17          0                                 M0795  4   20 
+NOCOMMON             0          0                                 M0795  4   21 
+DATA                 4          6                                 M0795  4   22 
+ELEMENT    MASS       DATA       DATA-ERR                         M0795  4   23 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM                           M0795  4   24 
+   83.        207.       1.00        .05                          M0795  4   25 
+   83.        206.        .15        .03                          M0795  4   26 
+   83.        205.        .09        .02                          M0795  4   27 
+   83.        204.        .017       .003                         M0795  4   28 
+   83.        203.        .007       .002                         M0795  4   29 
+   83.        202.        .00012     .00006                       M0795  4   30 
+ENDDATA              8          0                                 M0795  4   31 
+ENDSUBENT           30          0                                 M0795  499999 
+NOSUBENT      M0795005   20220210                             M118M0795  5    1 
+NOSUBENT      M0795006   20220210                             M118M0795  6    1 
+SUBENT        M0795007   20220210                             M118M0795  7    1 
+BIB                  7         19                                 M0795  7    2 
+REACTION   (83-BI-209(G,N)ELEM/MASS,,INT,,BRS)                    M0795  7    3 
+ANALYSIS   Integrated cross section derives from the yield        M0795  7    4 
+            assuming that the bremsstrahlung spectrum is a        M0795  7    5 
+            iconstant of the incident energy.                     M0795  7    6 
+ERR-ANALYS (DATA-ERR) Root-mean-square errors.                    M0795  7    7 
+COMMENT    Absolute values  of  integrated  cross  sections  were M0795  7    8 
+            obtained from relative yields using normalization  to M0795  7    9 
+            the evaluated (g,n), (g,2n) and (g,3n) reaction cross M0795  7   10 
+            sections and  multiparticle  photonuclear   reactions M0795  7   11 
+            cross sections   calculated   in   modern   model  of M0795  7   12 
+            photonuclear reactions.                               M0795  7   13 
+REL-REF    (R,,V.V.Varlamov+,J,YK,2003,(1-2),48,2003)             M0795  7   14 
+            Evaluated data.                                       M0795  7   15 
+           (R,,B.S.Ishkhanov+,J,FCY,38,460,2007)                  M0795  7   16 
+            Calculated data.                                      M0795  7   17 
+STATUS     (TABLE) Data presented in Table 7 of                   M0795  7   18 
+            Phys.At.Nucl.73(2010)737.                             M0795  7   19 
+HISTORY    (20220201A) Corrected by V.Varlamov: ANALYSIS,         M0795  7   20 
+            INT,,BRA -> INT,,BRS, STATUS.                         M0795  7   21 
+ENDBIB              19          0                                 M0795  7   22 
+NOCOMMON             0          0                                 M0795  7   23 
+DATA                 4          6                                 M0795  7   24 
+ELEMENT    MASS       DATA       DATA-ERR                         M0795  7   25 
+NO-DIM     NO-DIM     MB*MEV     MB*MEV                           M0795  7   26 
+   83.        208.      2630.        60.                          M0795  7   27 
+   83.        207.       940.        50.                          M0795  7   28 
+   83.        206.       330.        65.                          M0795  7   29 
+   83.        205.       290.        80.                          M0795  7   30 
+   83.        204.       128.        20.                          M0795  7   31 
+   83.        203.       106.        30.                          M0795  7   32 
+ENDDATA              8          0                                 M0795  7   33 
+ENDSUBENT           32          0                                 M0795  799999 
 ENDENTRY             7          0                                 M079599999999 
