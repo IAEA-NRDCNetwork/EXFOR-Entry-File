@@ -1,57 +1,136 @@
-ENTRY            32514   20090822                             31393251400000001 
-SUBENT        32514001   20090822                             31393251400100001 
-BIB                 15         41                                 3251400100002 
-INSTITUTE  (3CPRLNZ)                                              3251400100003 
-REFERENCE  (J,PHE,19,(9),781,1995)                                3251400100004 
-AUTHOR     (Kong Xiangzhong,Wang Yongchang,Yang Jingkang,         3251400100005 
-           Yuan Junqian)                                          3251400100006 
-TITLE      The cross section measurements for the Ba(n,x)Cs-134,  3251400100007 
-           Ba-134(n,2n)Ba-133, Ce-140(n,2n)Ce-139,                3251400100008 
-           Ce-142(n,2n)Ce-141 and Na-23(n,2n)Na-22 reactions      3251400100009 
-FACILITY   (CCW) Zf-300-2 intense neutron generator of LNZ        3251400100010 
-INC-SOURCE (D-T) T-Ti target with thickness = 0.9mg/cm**2         3251400100011 
-           average deuteron energy = 125keV                       3251400100012 
-           beam current intensity = 20mA                          3251400100013 
-           neutron yield = (1-3)e12 n/sec                         3251400100014 
-SAMPLE     Ba sample: barium carbonate, purity 99.8%; Ce: cerium  3251400100015 
-           oxalic acid, 99.5%; Na: sodium chloride, 99.8%;        3251400100016 
-           Fe: metal piece, 99.9%. disc of samples with 20mm      3251400100017 
-           diameter was placed at center of beam stop on the T-Ti 3251400100018 
-           target with distances between 5~28 cm.                 3251400100019 
-METHOD     (ACTIV)   (N,d*)=(n,d)+(n,pn)+(n,np) reactions         3251400100020 
-DETECTOR   (GELI) Ch8403 coaxial high purity Ge(Li) det.          3251400100021 
-           Relative efficiency was 20%                            3251400100022 
-           energy resolution was 3keV(1.33MeV)                    3251400100023 
-MONITOR    (41-NB-93(N,2N)41-NB-92-M,,SIG)                        3251400100024 
-DECAY-MON  (41-NB-92-M,10.15D,DG,934.53,0.99)                     3251400100025 
-CORRECTION Corrected for gamma-ray self-absorption, cascade gamma 3251400100026 
-           coincidence, neutron flux fluctuation,geometric factor 3251400100027 
-ERR-ANALYS The principal sources of uncertainty were:             3251400100028 
-                (uncertainty given in %)                          3251400100029 
-           (MONIT-ERR,1.5,3.) monitor cross sections   (1.5-3)    3251400100030 
-           (ERR-1) detector efficiency   (0.7)                    3251400100031 
-           (ERR-S,0.5,1.1) counting statistics   (0.5-1.1)        3251400100032 
-           (ERR-2) gamma-ray self-absorption   ( 1 )              3251400100033 
-           (ERR-3) cascade gamma coincidence   ( 1 )              3251400100034 
-           (ERR-4) sample weighted    (0.15)                      3251400100035 
-           (ERR-6) neutron energy   (0.4)                         3251400100036 
-STATUS     (TABLE) Data taken from Chinese J. High Energy Phys.   3251400100037 
-                     and Nucl. Phys., 17, 290(1993)               3251400100038 
-HISTORY    (19990717C) Zhuang at CNDC                             3251400100039 
-           (20010405D) entry deleted, see 31485. Os               3251400100040 
-           (20090730A) SD:Updated to new date formats,lower case. 3251400100041 
-           (20090821A) SD: second word "reactions" was removed    3251400100042 
-                           from title.                            3251400100043 
-ENDBIB              41          0                                 3251400100044 
-COMMON               5          3                                 3251400100045 
-ERR-1      ERR-2      ERR-3      ERR-4      ERR-5                 3251400100046 
-PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3251400100047 
-  0.7         1.         1.         0.15      0.4                 3251400100048 
-ENDCOMMON            3          0                                 3251400100049 
-ENDSUBENT           48          0                                 3251400199999 
-NOSUBENT      32514002   19990717                             00003251400200001 
-NOSUBENT      32514003   19990717                             00003251400300001 
-NOSUBENT      32514004   19990717                             00003251400400001 
-NOSUBENT      32514005   19990717                             00003251400500001 
-NOSUBENT      32514006   19990717                             00003251400600001 
+ENTRY            32514   20150524                             317032514  0    1 
+SUBENT        32514001   20150524                             317032514  1    1 
+BIB                 15         44                                 32514  1    2 
+TITLE      The cross section measurements for the Ba(n,x)134Cs,   32514  1    3 
+            134Ba(n,2n)133Ba,140Ce(n,2n)139Ce,142Ce(n,2n)141Ce    32514  1    4 
+            and 23Na(n,2n)22Na reactions                          32514  1    5 
+AUTHOR     (Kong Xiangzhong, Wang Yongchang, Yang Jingkang,       32514  1    6 
+            Yuan Junqian)                                         32514  1    7 
+INSTITUTE  (3CPRLNZ)                                              32514  1    8 
+REFERENCE  (J,PHE,19,781,1995)                                    32514  1    9 
+           ((R,INDC(CPR)-036,5,1995)=(J,CNDP,14,5,1995))          32514  1   10 
+            Similar data given for all reactions                  32514  1   11 
+           (J,RCA,76,11,1997) Ce(n,2n) data at highest En given   32514  1   12 
+FACILITY   (NGEN,3CPRLNZ) ZF-300-2 intense neutron generator      32514  1   13 
+INC-SOURCE (D-T) T-Ti target (~0.9 mg/cm2 thick) with 125 keV     32514  1   14 
+            deuteron beam (20 mA).                                32514  1   15 
+SAMPLE     Disc samples (20 mm in diam.) placed at center of beam 32514  1   16 
+            stop on the T-Ti target with distances between 5 to   32514  1   17 
+            28 cm.                                                32514  1   18 
+           (26-FE-54,NAT=0.058) Iron metallic foil (purity of     32514  1   19 
+            99.9%) for neutron flux determination                 32514  1   20 
+DETECTOR   (HPGE) CH8403 co-axial high-purity Ge detector         32514  1   21 
+            (relative efficiency of 20%, energy resolution of     32514  1   22 
+             3 keV at 1.33 MeV)                                   32514  1   23 
+METHOD     (ACTIV) Irradiated for 108.9 hr                        32514  1   24 
+MONITOR    (26-FE-54(N,P)25-MN-54,,SIG)                           32514  1   25 
+DECAY-MON  (25-MN-54,312.20D,DG,834.826,0.99975)                  32514  1   26 
+ERR-ANALYS (ERR-T) The principal sources of uncertainty were:     32514  1   27 
+           (ERR-S,0.5,1.1)    Counting statistics       (0.5-1.1%)32514  1   28 
+           (MONIT-ERR,1.5,3.) Monitor cross sections      (1.5-3%)32514  1   29 
+           (ERR-1)            Detector efficiency           (0.7%)32514  1   30 
+           (ERR-2)            Gamma-ray self-absorption       (1%)32514  1   31 
+           (ERR-3)            Cascade gamma coincidence       (1%)32514  1   32 
+           (ERR-4)            Sample weight                (0.15%)32514  1   33 
+           (ERR-5)            Neutron energy                (0.4%)32514  1   34 
+CORRECTION Corrected for                                          32514  1   35 
+            - gamma-ray self-absorption,                          32514  1   36 
+            - cascade gamma coincidence,                          32514  1   37 
+            - neutron flux fluctuation,                           32514  1   38 
+            - geometric factor.                                   32514  1   39 
+STATUS     (TABLE) Table 2 of High Ene.Phys.Nucl.Phys.17(1993)290 32514  1   40 
+HISTORY    (19990717C) Zhuang at CNDC                             32514  1   41 
+           (20010405D) entry deleted, see 31485. Os               32514  1   42 
+           (20090730A) SD:Updated to new date formats,lower case. 32514  1   43 
+           (20090821A) SD:second word "reactions" was removed     32514  1   44 
+                          from title.                             32514  1   45 
+           (20150524S) On. Restored.                              32514  1   46 
+ENDBIB              44          0                                 32514  1   47 
+COMMON               5          3                                 32514  1   48 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5                 32514  1   49 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              32514  1   50 
+ 0.7        1.         1.         0.15       0.4                  32514  1   51 
+ENDCOMMON            3          0                                 32514  1   52 
+ENDSUBENT           51          0                                 32514  199999 
+SUBENT        32514002   20150524                             317032514  2    1 
+BIB                  3          3                                 32514  2    2 
+REACTION   (56-BA-0(N,X)55-CS-134,,SIG)                           32514  2    3 
+SAMPLE     Barium carbonate (pressed powder, purity of 99.8%)     32514  2    4 
+DECAY-DATA (55-CS-134-G,2.062YR,DG,795.867,0.854)                 32514  2    5 
+ENDBIB               3          0                                 32514  2    6 
+NOCOMMON             0          0                                 32514  2    7 
+DATA                 4          3                                 32514  2    8 
+EN         EN-ERR     DATA       ERR-T                            32514  2    9 
+MEV        MEV        MB         MB                               32514  2   10 
+ 13.50      0.07       0.625      0.031                           32514  2   11 
+ 14.18      0.07       0.711      0.036                           32514  2   12 
+ 14.80      0.11       0.782      0.039                           32514  2   13 
+ENDDATA              5          0                                 32514  2   14 
+ENDSUBENT           13          0                                 32514  299999 
+SUBENT        32514003   20150524                             317032514  3    1 
+BIB                  3          4                                 32514  3    2 
+REACTION   (56-BA-134(N,2N)56-BA-133,,SIG)                        32514  3    3 
+SAMPLE     (56-BA-134,NAT=0.02417) Barium carbonate (pressed      32514  3    4 
+            powder, purity of 99.8%)                              32514  3    5 
+DECAY-DATA (56-BA-133-G,10.54YR,DG,355.999,0.622)                 32514  3    6 
+ENDBIB               4          0                                 32514  3    7 
+NOCOMMON             0          0                                 32514  3    8 
+DATA                 4          3                                 32514  3    9 
+EN         EN-ERR     DATA       ERR-T                            32514  3   10 
+MEV        MEV        MB         MB                               32514  3   11 
+ 13.50      0.07       1682.      84.                             32514  3   12 
+ 14.18      0.07       1764.      88.                             32514  3   13 
+ 14.80      0.11       1785.      89.                             32514  3   14 
+ENDDATA              5          0                                 32514  3   15 
+ENDSUBENT           14          0                                 32514  399999 
+SUBENT        32514004   20150524                             317032514  4    1 
+BIB                  4          5                                 32514  4    2 
+REACTION   (58-CE-140(N,2N)58-CE-139,,SIG)                        32514  4    3 
+SAMPLE     (58-CE-140,NAT=0.8848) Cerium oxalic acid (pressed     32514  4    4 
+            powder, purity of 99.5%);                             32514  4    5 
+DECAY-DATA (58-CE-139-G,137.66D,DG,165.853,0.799)                 32514  4    6 
+FLAG       (1.) En=14.7+/-0.2 MeV in the Radiochim.Acta article   32514  4    7 
+ENDBIB               5          0                                 32514  4    8 
+NOCOMMON             0          0                                 32514  4    9 
+DATA                 5          3                                 32514  4   10 
+EN         EN-ERR     DATA       ERR-T      FLAG                  32514  4   11 
+MEV        MEV        MB         MB         NO-DIM                32514  4   12 
+ 13.50      0.07       1722.        96.                           32514  4   13 
+ 14.18      0.07       1799.       100.                           32514  4   14 
+ 14.80      0.11       1830.       110.      1.                   32514  4   15 
+ENDDATA              5          0                                 32514  4   16 
+ENDSUBENT           15          0                                 32514  499999 
+SUBENT        32514005   20150524                             317032514  5    1 
+BIB                  4          5                                 32514  5    2 
+REACTION   (58-CE-142(N,2N)58-CE-141,,SIG)                        32514  5    3 
+SAMPLE     (58-CE-142,NAT=0.1108) Cerium oxalic acid (pressed     32514  5    4 
+            powder, purity of 99.5%);                             32514  5    5 
+DECAY-DATA (58-CE-141,32.5D,DG,145.44,0.484)                      32514  5    6 
+FLAG       (1.) En=14.7+/-0.2 MeV in the Radiochim.Acta article   32514  5    7 
+ENDBIB               5          0                                 32514  5    8 
+NOCOMMON             0          0                                 32514  5    9 
+DATA                 5          3                                 32514  5   10 
+EN         EN-ERR     DATA       ERR-T      FLAG                  32514  5   11 
+MEV        MEV        MB         MB         NO-DIM                32514  5   12 
+ 13.50      0.07       2050.      100.                            32514  5   13 
+ 14.18      0.07       2080.      100.                            32514  5   14 
+ 14.80      0.11       2043.      100.       1.                   32514  5   15 
+ENDDATA              5          0                                 32514  5   16 
+ENDSUBENT           15          0                                 32514  599999 
+SUBENT        32514006   20150524                             317032514  6    1 
+BIB                  4          4                                 32514  6    2 
+REACTION   (11-NA-23(N,2N)11-NA-22,,SIG)                          32514  6    3 
+SAMPLE     Sodium chloride (pressed powder, purity of 99.8%)      32514  6    4 
+DECAY-DATA (11-NA-22,2.602YR,DG,1274.53,0.99937)                  32514  6    5 
+FLAG       (1.) Uncertainty is 10.1 mb in the CNDP article        32514  6    6 
+ENDBIB               4          0                                 32514  6    7 
+NOCOMMON             0          0                                 32514  6    8 
+DATA                 5          3                                 32514  6    9 
+EN         EN-ERR     DATA       ERR-T      FLAG                  32514  6   10 
+MEV        MEV        MB         MB         NO-DIM                32514  6   11 
+ 13.50      0.07        5.60      0.20                            32514  6   12 
+ 14.18      0.07       19.9       0.7                             32514  6   13 
+ 14.80      0.11       38.2       1.1        1.                   32514  6   14 
+ENDDATA              5          0                                 32514  6   15 
+ENDSUBENT           14          0                                 32514  699999 
 ENDENTRY             6          0                                 3251499999999 
