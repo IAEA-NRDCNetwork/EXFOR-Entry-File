@@ -1,6 +1,6 @@
-ENTRY            22662   20151008                             224522662  0    1 
-SUBENT        22662001   20151008                             224522662  1    1 
-BIB                 17         90                                 22662  1    2 
+ENTRY            22662   20190101                             227322662  0    1 
+SUBENT        22662001   20190101                             227322662  1    1 
+BIB                 17         87                                 22662  1    2 
 TITLE       Measurement of activation cross-sections for (n,2n)   22662  1    3 
             reactions producing short-lived nuclei in the energy  22662  1    4 
             range between 13.4 and 14.9 MeV                       22662  1    5 
@@ -55,49 +55,46 @@ CORRECTION  Corrections were made for time fluctuation of neutron 22662  1   53
             flux, for contribution of low-energy neutrons below   22662  1   54 
             10 MeV, for thickness of samples, for self-absorption 22662  1   55 
             and sum-peak effect of gamma-rays.                    22662  1   56 
-STATUS     (TABLE) Data from Table 4 of the ANE,28,1175. Reaction 22662  1   57 
-           and decay data parameters from Tbl. 3 of ANE,28,1175.  22662  1   58 
-ERR-ANALYS (ERR-T) Total error equal to quadratic sum of          22662  1   59 
-                   experimental (delta-E) and nuclear data        22662  1   60 
-                   (delta-R) errors                               22662  1   61 
-           (ERR-S,1.,10.) Range of counting statistics error      22662  1   62 
-           (ERR-1) Total experimental error (=delta-E)            22662  1   63 
-           (ERR-2) Total nuclear data error (=delta-R)            22662  1   64 
-           (ERR-3,,0.1) Max Low-Energy neutrons error             22662  1   65 
-           (ERR-4,,0.4) Max neutron fluence Rate fluctuation error22662  1   66 
-           (ERR-5,1.5,5.) Detector efficiency calibration error:  22662  1   67 
-               5% at gamma energy < 80 keV                        22662  1   68 
-               3% for gamma energy between 80-300 keV             22662  1   69 
-               1.5% at gamma energy > 300 keV                     22662  1   70 
-           (ERR-8) Efficiency conversion error between close and  22662  1   71 
-                   standard positions                             22662  1   72 
-           (ERR-9,,0.5)  Max true coincidence summing error       22662  1   73 
-           (ERR-10,,0.1) Max random coincidence summing error     22662  1   74 
-           (ERR-11,,0.1) Max sample mass (including inpurity)error22662  1   75 
-           (ERR-12,0.2,6.) Range of gamma-ray self-absorpt. error 22662  1   76 
-           (ERR-13,,0.5) Max gamma-ray peak evaluation error      22662  1   77 
-           (MONIT1-ERR) Al-27(N,A)Na-24 Sigma error               22662  1   78 
-           (ERR-14,0.01,19.) Range of absolute gamma-ray          22662  1   79 
-                             intensity error                      22662  1   80 
-           (ERR-15,0.,2.7) Range of half-life error               22662  1   81 
-           Delta-E is Quadratic Sum of Errors ERR-S Through ERR-1222662  1   82 
-           Delta-R is Quadratic Sum of MONIT1, ERR-13, ERR-14     22662  1   83 
-                   (MONIT2-ERR is not included!)                  22662  1   84 
-HISTORY    (20020312C)  + +  Compiled by S.M.          + +        22662  1   85 
-           (20051216U) Subents 002,003,004,008,010 were corrected.22662  1   86 
-           (20100713A) Data corrected in subentry 014 and         22662  1   87 
-                       use of new uncertainty range formalism     22662  1   88 
-           (20151008A) SD: Value corrected following K.Kawade's   22662  1   89 
-           remark in Subent 2. ERR-5 - ERR-7 deleted - parts of   22662  1   90 
-           one source of error. MONIT2-ERR deleted, MONITOR       22662  1   91 
-           cr.sect. values not used. Second ref. moved to REL-REF.22662  1   92 
-ENDBIB              90          0                                 22662  1   93 
-COMMON               3          3                                 22662  1   94 
-EN-ERR     ERR-8      MONIT1-ERR                                  22662  1   95 
-KEV        PER-CENT   PER-CENT                                    22662  1   96 
-        50.         1.         3.                                 22662  1   97 
-ENDCOMMON            3          0                                 22662  1   98 
-ENDSUBENT           97          0                                 22662  199999 
+ERR-ANALYS (ERR-T)  The square root of the sum of squared         22662  1   57 
+            of the experimental error (ERR-1) and                 22662  1   58 
+            error in nuclear data (ERR-2)                         22662  1   59 
+           (ERR-1) Experimental error includes:                   22662  1   60 
+            - low-energy neutron contribution error         <1.%  22662  1   61 
+            - neutron flux fluctuation                     <0.4%  22662  1   62 
+            - detector efficiency:      Eg <80 keV            5%  22662  1   63 
+                                        Eg 80-300 keV         3%  22662  1   64 
+                                        Eg >300 keV         1.5%  22662  1   65 
+            - error in efficiency conversion ratio between        22662  1   66 
+                   close and standard positions              1.%  22662  1   67 
+            - error in  true coincidence sum               <0.5%  22662  1   68 
+            - error in  random coincidence sum             <0.1%  22662  1   69 
+            - error in sample weight                       <0.1%  22662  1   70 
+            - error in  self-absorption of gammas         0.2-6%  22662  1   71 
+            - counting statistics                          1-10%  22662  1   72 
+            - error in gamma-peak evaluation               <0.5%  22662  1   73 
+           (ERR-2) Nuclear data error includes:                   22662  1   74 
+            - error in ENDF/B-V 27Al(n,a)24Na cross section  3.0% 22662  1   75 
+            - error in absolute gamma intensity          0.01-19% 22662  1   76 
+            - error in half-life                           0-2.7% 22662  1   77 
+           (EN-ERR) Energy error                                  22662  1   78 
+STATUS     (TABLE) Data from Table 4, Reaction and decay data     22662  1   79 
+           parameters from Tbl. 3 of Ann.Nucl.Energ.28(2001)1175. 22662  1   80 
+HISTORY    (20020312C)  + +  Compiled by S.M.          + +        22662  1   81 
+           (20051216U) Subents 002,003,004,008,010 were corrected.22662  1   82 
+           (20100713A) Data corrected in subentry 014 and         22662  1   83 
+                       use of new uncertainty range formalism     22662  1   84 
+           (20151008A) SD: Value corrected following K.Kawade's   22662  1   85 
+           remark in Subent 2. ERR-5 - ERR-7 deleted - parts of   22662  1   86 
+           one source of error. MONIT2-ERR deleted, MONITOR       22662  1   87 
+           cr.sect. values not used. Second ref. moved to REL-REF.22662  1   88 
+           (20190101A) SD: ERR-ANALYS updated.                    22662  1   89 
+ENDBIB              87          0                                 22662  1   90 
+COMMON               1          3                                 22662  1   91 
+EN-ERR                                                            22662  1   92 
+KEV                                                               22662  1   93 
+        50.                                                       22662  1   94 
+ENDCOMMON            3          0                                 22662  1   95 
+ENDSUBENT           94          0                                 22662  199999 
 SUBENT        22662002   20151008                             224522662  2    1 
 BIB                  4          9                                 22662  2    2 
 REACTION   (7-N-14(N,2N)7-N-13,,SIG)                              22662  2    3 
