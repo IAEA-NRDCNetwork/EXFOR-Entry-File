@@ -1,15 +1,15 @@
-ENTRY            10865   20180411                             144010865  0    1 
-SUBENT        10865001   20180411                             144010865  1    1 
-BIB                 12         30                                 10865  1    2 
+ENTRY            10865   20201028                             147410865  0    1 
+SUBENT        10865001   20201028                             147410865  1    1 
+BIB                 12         33                                 10865  1    2 
 TITLE      Absolute thermal fission yields for U-235              10865  1    3 
 AUTHOR     (W.J.Maeck,W.A.Emel,F.A.Duce,R.L.Tromp,J.W.Meteer)     10865  1    4 
 REFERENCE  (R,ICP-1142,1978)                                      10865  1    5 
 INSTITUTE  (1USAINL)                                              10865  1    6 
-FACILITY   (REAC,1USAINL)  Engineering Test Reactor (ETR).        10865  1    7 
+FACILITY   (REAC,1USAINL)  Engineering test reactor (ETR).        10865  1    7 
 INC-SPECT  Thermal reactor spectrum.                              10865  1    8 
-SAMPLE     (932-U-235,ENR=0.99735) U-235 in form of U(3)O(8):     10865  1    9 
-           mean abundance U-235 is 99.735-percent. Samples        10865  1   10 
-           enclosed in high purity aluminum.                      10865  1   11 
+SAMPLE     (92-U-235,ENR=0.99735) U-235 in form of U(3)O(8):      10865  1    9 
+           mean abundance U-235 is 99.735%. Samples               10865  1   10 
+           enclosed in high-purity aluminum.                      10865  1   11 
 METHOD     (ASEP) Amounts of non-gaseous fission products         10865  1   12 
            determined using isotope dilution mass spectrometry.   10865  1   13 
 MONITOR    Number of fissions determined by summation method for  10865  1   14 
@@ -19,79 +19,100 @@ ERR-ANALYS (DATA-ERR) Standard deviation obtained by              10865  1   17
            approximating functions used to calculate yields,      10865  1   18 
            approximating linear terms of Taylor expansion, and    10865  1   19 
            applying standard methods for calculating errors       10865  1   20 
-           for a linear sum of random variables. Uncertainty in   10865  1   21 
-           net sample content approx 0.2% relative. Uncertainty   10865  1   22 
-           in absolute fission yields caused by relative error    10865  1   23 
-           of 0.5% in determination of the number of fissions.    10865  1   24 
-STATUS     (APRVD) Approved by W.J.Maeck, 1980/2/28.              10865  1   25 
-HISTORY    (19791116C)                                            10865  1   26 
-           (19800820U) BIB correction.                            10865  1   27 
-           (19801029U) BIB correction.                            10865  1   28 
-           (19840917A) BIB correction.                            10865  1   29 
-           (19891212A) BIB corrections.                           10865  1   30 
-           (20180411A) BP: Updated to new date formats,lower case.10865  1   31 
-                  corrections according last EXFOR rules and Dict.10865  1   32 
-ENDBIB              30          0                                 10865  1   33 
-COMMON               1          3                                 10865  1   34 
-EN-DUMMY                                                          10865  1   35 
-EV                                                                10865  1   36 
- 0.0253                                                           10865  1   37 
-ENDCOMMON            3          0                                 10865  1   38 
-ENDSUBENT           37          0                                 10865  199999 
-SUBENT        10865002   20180411                             144010865  2    1 
-BIB                  4          6                                 10865  2    2 
+           for a linear sum of random variables. Relative         10865  1   21 
+           uncertainty in net sample content approx. 0.2%.        10865  1   22 
+           Uncertainty in absolute fission yields caused by       10865  1   23 
+           relative error of 0.5% in determination of the number  10865  1   24 
+           of fissions.                                           10865  1   25 
+STATUS     (APRVD) Approved by W.J.Maeck, 1980/2/28.              10865  1   26 
+HISTORY    (19791116C)                                            10865  1   27 
+           (19800820U) BIB correction.                            10865  1   28 
+           (19801029U) BIB correction.                            10865  1   29 
+           (19840917A) BIB correction.                            10865  1   30 
+           (19891212A) BIB corrections.                           10865  1   31 
+           (20180411A) BP: updated to new date formats,lower      10865  1   32 
+           case. corrections according last EXFOR rules and dict. 10865  1   33 
+           (20201028A) BP: Corrected 135,136 mass yields in       10865  1   34 
+                      Sub.2. Added subentry 3.                    10865  1   35 
+ENDBIB              33          0                                 10865  1   36 
+COMMON               1          3                                 10865  1   37 
+EN-DUMMY                                                          10865  1   38 
+EV                                                                10865  1   39 
+     0.0253                                                       10865  1   40 
+ENDCOMMON            3          0                                 10865  1   41 
+ENDSUBENT           40          0                                 10865  199999 
+SUBENT        10865002   20201028                             147410865  2    1 
+BIB                  4         10                                 10865  2    2 
 REACTION   (92-U-235(N,F)MASS,CHN,FY,,SPA)                        10865  2    3 
 ANALYSIS   Data averaged over three similarly prepared samples.   10865  2    4 
-STATUS     (TABLE) Table XII of ICP-1142                          10865  2    5 
+STATUS     (TABLE) Table XII of ICP-1142.                         10865  2    5 
 HISTORY    (19801029A) Reaction, data corrections.                10865  2    6 
-           (20180411A) BP: Changed METHOD to ANALYSIS, STATUS     10865  2    7 
+           (20180411A) BP: Changed method to analysis, status     10865  2    7 
             added.                                                10865  2    8 
-ENDBIB               6          0                                 10865  2    9 
-NOCOMMON             0          0                                 10865  2   10 
-DATA                 3         41                                 10865  2   11 
-MASS       DATA       DATA-ERR                                    10865  2   12 
-NO-DIM     PC/FIS     PC/FIS                                      10865  2   13 
-        83.      0.543      0.004                                 10865  2   14 
-        84.      1.016      0.007                                 10865  2   15 
-        85.      1.333      0.007                                 10865  2   16 
-        86.      1.979      0.014                                 10865  2   17 
-        87.      2.586      0.014                                 10865  2   18 
-        88.      3.547      0.019                                 10865  2   19 
-        90.      5.714      0.032                                 10865  2   20 
-        91.      5.764      0.168                                 10865  2   21 
-        92.      5.828      0.138                                 10865  2   22 
-        93.      6.207      0.160                                 10865  2   23 
-        94.      6.221      0.148                                 10865  2   24 
-        95.      6.535      0.055                                 10865  2   25 
-        96.      6.030      0.146                                 10865  2   26 
-        97.      5.937      0.043                                 10865  2   27 
-        98.      5.827      0.043                                 10865  2   28 
-       100.      6.249      0.051                                 10865  2   29 
-       101.      5.244      0.051                                 10865  2   30 
-       102.      4.362      0.042                                 10865  2   31 
-       104.      1.902      0.019                                 10865  2   32 
-       106.      0.460      0.033                                 10865  2   33 
-       131.      2.914      0.018                                 10865  2   34 
-       132.      4.344      0.024                                 10865  2   35 
-       133.      6.685      0.036                                 10865  2   36 
-       134.      7.918      0.037                                 10865  2   37 
-       135.     12.847      0.065                                 10865  2   38 
-       136.     12.847      0.065                                 10865  2   39 
-       137.      6.234      0.037                                 10865  2   40 
-       138.      6.756      0.039                                 10865  2   41 
-       140.      6.102      0.056                                 10865  2   42 
-       142.      5.783      0.053                                 10865  2   43 
-       143.      6.006      0.034                                 10865  2   44 
-       144.      5.540      0.031                                 10865  2   45 
-       145.      3.960      0.021                                 10865  2   46 
-       146.      3.009      0.018                                 10865  2   47 
-       147.      2.223      0.022                                 10865  2   48 
-       148.      1.677      0.012                                 10865  2   49 
-       149.      1.032      0.010                                 10865  2   50 
-       150.      0.658      0.007                                 10865  2   51 
-       151.      0.399      0.017                                 10865  2   52 
-       152.      0.251      0.008                                 10865  2   53 
-       154.      0.076      0.003                                 10865  2   54 
-ENDDATA             43          0                                 10865  2   55 
-ENDSUBENT           54          0                                 10865  299999 
-ENDENTRY             2          0                                 1086599999999 
+           (20201028A) BP: Removed mass 135,136 yields that were  10865  2    9 
+                      not separated and published as a sum;       10865  2   10 
+                      compiled in subentry 10898002 as individual 10865  2   11 
+                      yields.                                     10865  2   12 
+ENDBIB              10          0                                 10865  2   13 
+NOCOMMON             0          0                                 10865  2   14 
+DATA                 3         39                                 10865  2   15 
+MASS       DATA       DATA-ERR                                    10865  2   16 
+NO-DIM     PC/FIS     PC/FIS                                      10865  2   17 
+        83.      0.543      0.004                                 10865  2   18 
+        84.      1.016      0.007                                 10865  2   19 
+        85.      1.333      0.007                                 10865  2   20 
+        86.      1.979      0.014                                 10865  2   21 
+        87.      2.586      0.014                                 10865  2   22 
+        88.      3.547      0.019                                 10865  2   23 
+        90.      5.714      0.032                                 10865  2   24 
+        91.      5.764      0.168                                 10865  2   25 
+        92.      5.828      0.138                                 10865  2   26 
+        93.      6.207      0.160                                 10865  2   27 
+        94.      6.221      0.148                                 10865  2   28 
+        95.      6.535      0.055                                 10865  2   29 
+        96.      6.030      0.146                                 10865  2   30 
+        97.      5.937      0.043                                 10865  2   31 
+        98.      5.827      0.043                                 10865  2   32 
+       100.      6.249      0.051                                 10865  2   33 
+       101.      5.244      0.051                                 10865  2   34 
+       102.      4.362      0.042                                 10865  2   35 
+       104.      1.902      0.019                                 10865  2   36 
+       106.      0.460      0.033                                 10865  2   37 
+       131.      2.914      0.018                                 10865  2   38 
+       132.      4.344      0.024                                 10865  2   39 
+       133.      6.685      0.036                                 10865  2   40 
+       134.      7.918      0.037                                 10865  2   41 
+       137.      6.234      0.037                                 10865  2   42 
+       138.      6.756      0.039                                 10865  2   43 
+       140.      6.102      0.056                                 10865  2   44 
+       142.      5.783      0.053                                 10865  2   45 
+       143.      6.006      0.034                                 10865  2   46 
+       144.      5.540      0.031                                 10865  2   47 
+       145.      3.960      0.021                                 10865  2   48 
+       146.      3.009      0.018                                 10865  2   49 
+       147.      2.223      0.022                                 10865  2   50 
+       148.      1.677      0.012                                 10865  2   51 
+       149.      1.032      0.010                                 10865  2   52 
+       150.      0.658      0.007                                 10865  2   53 
+       151.      0.399      0.017                                 10865  2   54 
+       152.      0.251      0.008                                 10865  2   55 
+       154.      0.076      0.003                                 10865  2   56 
+ENDDATA             41          0                                 10865  2   57 
+ENDSUBENT           56          0                                 10865  299999 
+SUBENT        10865003   20201028                             147410865  3    1 
+BIB                  5          6                                 10865  3    2 
+REACTION   (92-U-235(N,F)MASS,CHN,FY,,SPA)                        10865  3    3 
+ANALYSIS   Data averaged over three similarly prepared samples.   10865  3    4 
+STATUS     (TABLE) Table XII of ICP-1142.                         10865  3    5 
+COMMENT    Compiler's comment: In the experiment masses 135 and   10865  3    6 
+           136 yields were not separated and published as a sum.  10865  3    7 
+HISTORY    (20201028A) BP                                         10865  3    8 
+ENDBIB               6          0                                 10865  3    9 
+NOCOMMON             0          0                                 10865  3   10 
+DATA                 4          1                                 10865  3   11 
+MASS-MIN   MASS-MAX   DATA       DATA-ERR                         10865  3   12 
+NO-DIM     NO-DIM     PC/FIS     PC/FIS                           10865  3   13 
+      135.0      136.0     12.847      0.065                      10865  3   14 
+ENDDATA              3          0                                 10865  3   15 
+ENDSUBENT           14          0                                 10865  399999 
+ENDENTRY             3          0                                 1086599999999 
