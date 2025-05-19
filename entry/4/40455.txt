@@ -1,63 +1,88 @@
-ENTRY            40455   19850329                             00004045500000001 
-SUBENT        40455001   19850329                             00004045500100001 
-BIB                 11         18                                 4045500100002 
-INSTITUTE  (4CCPCCP)                                              4045500100003 
-REFERENCE  (J,AE,9,(6),488,6012)                                  4045500100004 
-           (J,SJA,9,1028,61)                                      4045500100005 
-AUTHOR     (V.P.PERELYGIN,K.D.TOLSTOV)                            4045500100006 
-TITLE      THE LI6(N,ALPHA)HE3 REACTION CROSS SECTION FOR 2.15    4045500100007 
-           MEV.                                                   4045500100008 
-INC-SOURCE (D-D)   DEUTRON ENERGY IS 500KEV                       4045500100009 
-SAMPLE      LI-6 THICKNESS IS (2.75+-0.1)E-4 GRAM/CM2             4045500100010 
-DETECTOR   (TRD) NUCLEAR EMULSION FOR ALPHA COUNTING              4045500100011 
-           (PROPC) FOR NEUTRON FLUX MONITORING                    4045500100012 
-MONITOR     ABSOLUTE MEASUREMENTS                                 4045500100013 
-STATUS     (SCSRS)                                                4045500100014 
-HISTORY    (831017T) CONVERTED FROM ENTRY 80044                   4045500100015 
-ERR-ANALYS (ERR-1) ERROR DUE TO THE NUMBER OF SAMPLE NUCLEI       4045500100016 
-           (ERR-2) ERROR DUE TO THE NEUTRON FLUX UNCERTAINTY      4045500100017 
-           (ERR-3) GEOMETRICAL ERROR                              4045500100018 
-           (ERR-4) SYSTEMATIC ERROR                               4045500100019 
-           (ERR-S) STATISTICAL ERROR.                             4045500100020 
-ENDBIB              18          0                                 4045500100021 
-COMMON               6          3                                 4045500100022 
-EN-RSL     ERR-1      ERR-2      ERR-3      ERR-4      ERR-S      4045500100023 
-MEV        PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   4045500100024 
- 1.0000E-01 6.0000E+00 3.0000E+00 1.0000E+01 6.0000E+00 6.0000E+004045500100025 
-ENDCOMMON            3          0                                 4045500100026 
-ENDSUBENT           25          0                                 4045500199999 
-SUBENT        40455002   19850329                             00004045500200001 
-BIB                  1          1                                 4045500200002 
-REACTION   (3-LI-6(N,T)2-HE-4,,SIG)                               4045500200003 
-ENDBIB               1          0                                 4045500200004 
-NOCOMMON             0          0                                 4045500200005 
-DATA                 3          1                                 4045500200006 
-EN         DATA       ERR-T                                       4045500200007 
-MEV        B          B                                           4045500200008 
- 2.1500E+00 2.1500E-01 3.0000E-02                                 4045500200009 
-ENDDATA              3          0                                 4045500200010 
-ENDSUBENT            9          0                                 4045500299999 
-SUBENT        40455003   19850329                             00004045500300001 
-BIB                  1          1                                 4045500300002 
-REACTION   (3-LI-6(N,T)2-HE-4,,DA)                                4045500300003 
-ENDBIB               1          0                                 4045500300004 
-COMMON               1          3                                 4045500300005 
-EN                                                                4045500300006 
-MEV                                                               4045500300007 
- 2.1500E+00                                                       4045500300008 
-ENDCOMMON            3          0                                 4045500300009 
-DATA                 4          9                                 4045500300010 
-COS-CM     ANG-RSL    DATA       ERR-T                            4045500300011 
-NO-DIM     ADEG       MB/SR      MB/SR                            4045500300012 
- 9.2400E-01 7.5000E+00 2.2800E+01 4.5000E+00                      4045500300013 
- 7.9300E-01 7.5000E+00 1.8200E+01 3.2000E+00                      4045500300014 
- 6.0900E-01 7.5000E+00 2.0400E+01 3.0000E+00                      4045500300015 
- 3.8300E-01 7.5000E+00 1.9300E+01 2.8000E+00                      4045500300016 
- 1.3100E-01 7.5000E+00 1.9500E+01 2.3000E+00                      4045500300017 
--1.3100E-01 7.5000E+00 1.5200E+01 2.4000E+00                      4045500300018 
--3.8300E-01 7.5000E+00 1.6000E+01 3.2000E+00                      4045500300019 
--6.0900E-01 7.5000E+00 1.6800E+01 2.8000E+00                      4045500300020 
--7.9300E-01 7.5000E+00 1.7500E+01 3.4000E+00                      4045500300021 
-ENDDATA             11          0                                 4045500300022 
-ENDSUBENT           21          0                                 4045500399999 
+ENTRY            40455   20220722                             420840455  0    1 
+SUBENT        40455001   20220722                             420840455  1    1 
+BIB                 13         30                                 40455  1    2 
+TITLE      The Li6(n,alpha)H3 reaction cross section for 2.15     40455  1    3 
+           MeV neutrons                                           40455  1    4 
+AUTHOR     (V.P.Perelygin,K.V.Tolstov)                            40455  1    5 
+REFERENCE  (J,SJA,9,1028,1961) Engl.translation of:               40455  1    6 
+           (J,AE,9,488,1960)  Issue 6.                            40455  1    7 
+INSTITUTE  (4ZZZDUB)                                              40455  1    8 
+INC-SOURCE (D-D)   Deuteron energy is 500 keV.                    40455  1    9 
+           Heavy ice target of 2.5 cm diameter.                   40455  1   10 
+FACILITY    No information in the article.                        40455  1   11 
+SAMPLE      Li-6 thickness is ~(2.75+-0.1)E-4 gram/cm2            40455  1   12 
+           (3-LI-6,ENR=0.92)                                      40455  1   13 
+DETECTOR   (TRD) Nuclear emulsion Ilford-E-1 for alpha counting   40455  1   14 
+           (PROPC) For neutron flux monitoring                    40455  1   15 
+MONITOR     Absolute measurements.                                40455  1   16 
+METHOD     Counting of tracks in emulsion - 311 of Li6(n,a)He in  40455  1   17 
+           area 1.05 cm2.                                         40455  1   18 
+           Reaction was not observed in angles 0 - 15 deg and     40455  1   19 
+           150 - 180 deg.                                         40455  1   20 
+           (ASSOP) For neutron flux monitoring.                   40455  1   21 
+CORRECTION  For tracks leaving emulsion.                          40455  1   22 
+ERR-ANALYS (ERR-T) Root-mean-square of:                           40455  1   23 
+           (ERR-1) Error due to the number of sample nuclei       40455  1   24 
+           (ERR-2) Error due to the neutron flux uncertainty      40455  1   25 
+           (ERR-3) Geometrical corrections error                  40455  1   26 
+           (ERR-4) Systematic error - spread of values obtained in40455  1   27 
+           different series of experiments.                       40455  1   28 
+           (ERR-S) Statistical error.                             40455  1   29 
+HISTORY    (19831017T) Converted from ENTRY 80044                 40455  1   30 
+           (20220722A) Update for current rules and dictionaries. 40455  1   31 
+            4CCPCCP -> 4RUSDUB according to CINDA information.    40455  1   32 
+ENDBIB              30          0                                 40455  1   33 
+COMMON               5          3                                 40455  1   34 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-S                 40455  1   35 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              40455  1   36 
+ 4.         3.         10.        6.         6.                   40455  1   37 
+ENDCOMMON            3          0                                 40455  1   38 
+ENDSUBENT           37          0                                 40455  199999 
+SUBENT        40455002   20220722                             420840455  2    1 
+BIB                  3          5                                 40455  2    2 
+REACTION   (3-LI-6(N,T)2-HE-4,,SIG)                               40455  2    3 
+REL-REF    (A,11094001,F.L.Ribe,J,PR,103,741,1956)                40455  2    4 
+           (A,40774002,A.V.Elpidinskii,J,SJA/S,,(5),56,1957)      40455  2    5 
+           (D,11076004,J.B.Weddell+,J,PR,95,117,1954)             40455  2    6 
+STATUS     (TABLE) Text page 1028 of J,SJA,9,1028,1961            40455  2    7 
+ENDBIB               5          0                                 40455  2    8 
+NOCOMMON             0          0                                 40455  2    9 
+DATA                 4          1                                 40455  2   10 
+EN         EN-RSL     DATA       ERR-T                            40455  2   11 
+MEV        MEV        MB         MB                               40455  2   12 
+ 2.15       0.1         215.      30.                             40455  2   13 
+ENDDATA              3          0                                 40455  2   14 
+ENDSUBENT           13          0                                 40455  299999 
+SUBENT        40455003   20220722                             420840455  3    1 
+BIB                  5         10                                 40455  3    2 
+REACTION   (3-LI-6(N,T)2-HE-4,,DA)                                40455  3    3 
+FLAG       (1.) On fig. of J,SJA,9,1028,1961 this DATA value is   40455  3    4 
+            ~14.5 mb/sr.                                          40455  3    5 
+COMMENT    Of compiler M.M.                                       40455  3    6 
+           On fig. of J,SJA,9,1028,1961 these data are presented  40455  3    7 
+           histogram dependence from angle in angle range         40455  3    8 
+           from 15 to 150 degrees with step 15 degrees.           40455  3    9 
+STATUS     (SCSRS) Source of data is not clear - from authors or  40455  3   10 
+           digitized from figure of the article J,SJA,9,1028,1961 40455  3   11 
+HISTORY    (20220722A) DATA -> DATA-CM. FLAG, COMMENT were added. 40455  3   12 
+ENDBIB              10          0                                 40455  3   13 
+COMMON               3          3                                 40455  3   14 
+EN         EN-RSL     ANG-RSL                                     40455  3   15 
+MEV        MEV        ADEG                                        40455  3   16 
+ 2.15       0.1        7.5                                        40455  3   17 
+ENDCOMMON            3          0                                 40455  3   18 
+DATA                 4          9                                 40455  3   19 
+COS-CM     DATA-CM    ERR-T      FLAG                             40455  3   20 
+NO-DIM     MB/SR      MB/SR      NO-DIM                           40455  3   21 
+ 9.2400E-01  22.8      4.5                                        40455  3   22 
+ 7.9300E-01  18.2      3.2                                        40455  3   23 
+ 6.0900E-01  20.4      3.0                                        40455  3   24 
+ 3.8300E-01  19.3      2.8                                        40455  3   25 
+ 1.3100E-01  19.5      2.3        1.                              40455  3   26 
+-1.3100E-01  15.2      2.4                                        40455  3   27 
+-3.8300E-01  16.0      3.2                                        40455  3   28 
+-6.0900E-01  16.8      2.8                                        40455  3   29 
+-7.9300E-01  17.5      3.4                                        40455  3   30 
+ENDDATA             11          0                                 40455  3   31 
+ENDSUBENT           30          0                                 40455  399999 
 ENDENTRY             3          0                                 4045599999999 
