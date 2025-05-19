@@ -1,75 +1,231 @@
-ENTRY            11513   19821124                             00001151300000001 
-SUBENT        11513001   19821124                             00001151300100001 
-BIB                  8         10                                 1151300100002 
-INSTITUTE  (1USAKTY)                                              1151300100003 
-REFERENCE  (J,NP/A,115,476,68)                                    1151300100004 
-AUTHOR     (K.C.CHUNG,D.E.VELKLEY,J.D.BRANDENBERGER,              1151300100005 
-           M.T.MC ELLISTREM)                                      1151300100006 
-TITLE      AL-27 (N,N'GAMMA) REACTIONS AND THE 3002 KEV LEVEL.    1151300100007 
-N-SOURCE   (P-T) T(P,N) SOURCE                                    1151300100008 
-DETECTOR   (GELI) GE(LI) DETECTOR                                 1151300100009 
-STATUS     (SCSRS)                                                1151300100010 
-HISTORY    (760715T) TRANSLATED FROM SCISRS                       1151300100011 
-           (821124A) CONVERTED TO REACTION FORMALISM              1151300100012 
-ENDBIB              10          0                                 1151300100013 
-NOCOMMON             0          0                                 1151300100014 
-ENDSUBENT           13          0                                 1151300199999 
-SUBENT        11513002   19821124                             00001151300200001 
-BIB                  3          3                                 1151300200002 
-REACTION   (13-AL-27(N,X)0-G-0,PAR,SIG)                           1151300200003 
-ANALYSIS   INTEGRATED DIFFERENTIAL CROSS-SECTION.                 1151300200004 
-MONITOR    (26-FE-56(N,INL)26-FE-56,,SIG,G)                       1151300200005 
-ENDBIB               3          0                                 1151300200006 
-COMMON               1          3                                 1151300200007 
-EN                                                                1151300200008 
-MEV                                                               1151300200009 
- 3.5    +00                                                       1151300200010 
-ENDCOMMON            3          0                                 1151300200011 
-DATA                 2          5                                 1151300200012 
-E          DATA                                                   1151300200013 
-MEV        B                                                      1151300200014 
- 1.013  +00 2.00   -01                                            1151300200015 
- 1.717  +00 8.7    -02                                            1151300200016 
- 2.213  +00 2.13   -01                                            1151300200017 
- 2.980  +00 1.6    -02                                            1151300200018 
- 3.002  +00 6.2    -02                                            1151300200019 
-ENDDATA              7          0                                 1151300200020 
-ENDSUBENT           19          0                                 1151300299999 
-SUBENT        11513003   19821124                             00001151300300001 
-BIB                  4          4                                 1151300300002 
-REACTION   (13-AL-27(N,INL)13-AL-27,PAR,SIG)                      1151300300003 
-ANALYSIS   CALCULATED FROM GAMMA EMISSION C/S AND BRANCHING RATIOS1151300300004 
-MONITOR    (26-FE-56(N,INL)26-FE-56,,SIG,G)                       1151300300005 
-STATUS     (DEP,11513002)                                         1151300300006 
-ENDBIB               4          0                                 1151300300007 
-COMMON               1          3                                 1151300300008 
-EN                                                                1151300300009 
-MEV                                                               1151300300010 
- 3.5    +00                                                       1151300300011 
-ENDCOMMON            3          0                                 1151300300012 
-DATA                 2          6                                 1151300300013 
-E-LVL      DATA                                                   1151300300014 
-MEV        B                                                      1151300300015 
- 1.013  +00 1.20   -01                                            1151300300016 
- 1.717  +00 8.7    -02                                            1151300300017 
- 2.213  +00 2.07   -01                                            1151300300018 
- 2.730  +00 8.7    -02                                            1151300300019 
- 2.980  +00 1.6    -02                                            1151300300020 
- 3.002  +00 6.2    -02                                            1151300300021 
-ENDDATA              8          0                                 1151300300022 
-ENDSUBENT           21          0                                 1151300399999 
-SUBENT        11513004   19821124                             00001151300400001 
-BIB                  3          4                                 1151300400002 
-REACTION   (13-AL-27(N,X)0-G-0,,DA)                               1151300400003 
-STATUS     (UNOBT) DATA UNAVAILABLE AT NNCSC.                     1151300400004 
-COMMENT    PRONOUNCED ANISOTROPIES OBSERVED FOR 2213 AND 3002 KEV 1151300400005 
-            GAMMAS.                                               1151300400006 
-ENDBIB               4          0                                 1151300400007 
-COMMON               1          3                                 1151300400008 
-EN                                                                1151300400009 
-MEV                                                               1151300400010 
- 3.5                                                              1151300400011 
-ENDCOMMON            3          0                                 1151300400012 
-NODATA               0          0                                 1151300400013 
-ENDSUBENT           12          0                                 1151300499999 
-ENDENTRY             4          0                                 1151399999999 
+ENTRY            11513   20160212                             141511513  0    1 
+SUBENT        11513001   20160212                             141511513  1    1 
+BIB                 10         17                                 11513  1    2 
+TITLE      27Al(n, n'gamma) reactions and the 3002 keV level      11513  1    3 
+AUTHOR     (K.C.Chung,D.E.Velkley,J.D.Brandenberger,              11513  1    4 
+           M.T.McEllistrem)                                       11513  1    5 
+REFERENCE  (J,NP/A,115,476,1968)                                  11513  1    6 
+           #doi:10.1016/0375-9474(68)90021-3                      11513  1    7 
+INSTITUTE  (1USAKTY)                                              11513  1    8 
+FACILITY   (ACCEL,1USAKTY)                                        11513  1    9 
+INC-SOURCE (P-T) T(p,n) source. T gas cell at 1 atm               11513  1   10 
+SAMPLE     A cylindrical Al sample 4.7 cm long by 3.08 cm diam.   11513  1   11 
+DETECTOR   (GELI) Ge(Li) detector                                 11513  1   12 
+METHOD     (TOF) Pulsed-beam time-of-flight techniques were used  11513  1   13 
+           to reduce the gamma-ray backgrounds.                   11513  1   14 
+HISTORY    (19760715T) Translated from SCISRS.                    11513  1   15 
+           (19821124A) Converted to reaction formalism.           11513  1   16 
+           (20160212A) BP: Updated to new date formats,lower      11513  1   17 
+           case. corrections according last EXFOR rules and       11513  1   18 
+           Dict. Digitized Fig.2, added doi.                      11513  1   19 
+ENDBIB              17          0                                 11513  1   20 
+COMMON               1          3                                 11513  1   21 
+EN                                                                11513  1   22 
+MEV                                                               11513  1   23 
+        3.5                                                       11513  1   24 
+ENDCOMMON            3          0                                 11513  1   25 
+ENDSUBENT           24          0                                 11513  199999 
+SUBENT        11513002   20160212                             141511513  2    1 
+BIB                  5         12                                 11513  2    2 
+REACTION   (13-AL-27(N,INL)13-AL-27,PAR,SIG,G)                    11513  2    3 
+ANALYSIS   (INTAD) Integrated differential cross-section.         11513  2    4 
+MONITOR    (26-FE-56(N,INL)26-FE-56,,SIG,G)  taken from           11513  2    5 
+           M.T.McEllistrem, in: Nuclear research with low energy  11513  2    6 
+           accelerators, ed.by J.B.Marion and D.M.van Patter,     11513  2    7 
+           Academic Press,N.Y.,1967, p.167                        11513  2    8 
+ERR-ANALYS (ERR-1) The present measurements have relative         11513  2    9 
+           uncertainties of +-4%.                                 11513  2   10 
+           (ERR-2) An additional +-8% uncertainty is associated   11513  2   11 
+           with the normalization of the yields to the 56Fe(n,    11513  2   12 
+           n'gamma) cross sections.                               11513  2   13 
+STATUS     (TABLE) Table 1, page 479.                             11513  2   14 
+ENDBIB              12          0                                 11513  2   15 
+COMMON               2          3                                 11513  2   16 
+ERR-1      ERR-2                                                  11513  2   17 
+PER-CENT   PER-CENT                                               11513  2   18 
+        4.0        8.0                                            11513  2   19 
+ENDCOMMON            3          0                                 11513  2   20 
+DATA                 2          5                                 11513  2   21 
+E          DATA                                                   11513  2   22 
+MEV        B                                                      11513  2   23 
+      1.013   2.00E-01                                            11513  2   24 
+      1.717    8.7E-02                                            11513  2   25 
+      2.213   2.13E-01                                            11513  2   26 
+      2.980    1.6E-02                                            11513  2   27 
+      3.002    6.2E-02                                            11513  2   28 
+ENDDATA              7          0                                 11513  2   29 
+ENDSUBENT           28          0                                 11513  299999 
+SUBENT        11513003   20160212                             141511513  3    1 
+BIB                  4          5                                 11513  3    2 
+REACTION   (13-AL-27(N,INL)13-AL-27,PAR,SIG)                      11513  3    3 
+ANALYSIS   Calculated from gamma emission C/S and branching ratios11513  3    4 
+MONITOR    (26-FE-56(N,INL)26-FE-56,,SIG,G)                       11513  3    5 
+STATUS     (TABLE) Table 1, page 479.                             11513  3    6 
+           (DEP,11513002)                                         11513  3    7 
+ENDBIB               5          0                                 11513  3    8 
+NOCOMMON             0          0                                 11513  3    9 
+DATA                 2          5                                 11513  3   10 
+E-LVL      DATA                                                   11513  3   11 
+MEV        B                                                      11513  3   12 
+      1.013   1.20E-01                                            11513  3   13 
+      2.213   2.07E-01                                            11513  3   14 
+      2.730    8.7E-02                                            11513  3   15 
+      2.980    1.6E-02                                            11513  3   16 
+      3.002    6.2E-02                                            11513  3   17 
+ENDDATA              7          0                                 11513  3   18 
+ENDSUBENT           17          0                                 11513  399999 
+SUBENT        11513004   20160212                             141511513  4    1 
+BIB                  3          6                                 11513  4    2 
+REACTION   (13-AL-27(N,INL)13-AL-27,PAR,DA,G,REL)                 11513  4    3 
+ERR-ANALYS (DATA-ERR) No complete details on included sources of  11513  4    4 
+            uncertainties given                                   11513  4    5 
+           (ERR-1) The present measurements have relative         11513  4    6 
+           uncertainties of +-4%.                                 11513  4    7 
+STATUS     (CURVE) Fig. 2, page 478.                              11513  4    8 
+ENDBIB               6          0                                 11513  4    9 
+COMMON               3          3                                 11513  4   10 
+E          E-ERR      ERR-1                                       11513  4   11 
+KEV        KEV        PER-CENT                                    11513  4   12 
+     3002.0   1.         4.0                                      11513  4   13 
+ENDCOMMON            3          0                                 11513  4   14 
+DATA                 3         11                                 11513  4   15 
+COS        DATA       DATA-ERR                                    11513  4   16 
+NO-DIM     ARB-UNITS  ARB-UNITS                                   11513  4   17 
+     -0.811      1.110      0.039                                 11513  4   18 
+     -0.714      1.048      0.039                                 11513  4   19 
+     -0.571      0.979      0.039                                 11513  4   20 
+     -0.434      0.985      0.039                                 11513  4   21 
+     -0.252      0.881      0.039                                 11513  4   22 
+     -0.005      0.857      0.045                                 11513  4   23 
+      0.261      0.896      0.039                                 11513  4   24 
+      0.410      0.973      0.036                                 11513  4   25 
+      0.566      1.051      0.039                                 11513  4   26 
+      0.696      1.068      0.039                                 11513  4   27 
+      0.813      1.077      0.042                                 11513  4   28 
+ENDDATA             13          0                                 11513  4   29 
+ENDSUBENT           28          0                                 11513  499999 
+SUBENT        11513005   20160216                             141511513  5    1 
+BIB                  4          7                                 11513  5    2 
+REACTION   (13-AL-27(N,INL)13-AL-27,PAR,DA,G,REL)                 11513  5    3 
+ERR-ANALYS (DATA-ERR) No complete details on included sources of  11513  5    4 
+            uncertainties given                                   11513  5    5 
+           (ERR-1) The present measurements have relative         11513  5    6 
+           uncertainties of +-4%.                                 11513  5    7 
+STATUS     (CURVE) Fig. 2, page 478.                              11513  5    8 
+HISTORY    (20160212C) BP                                         11513  5    9 
+ENDBIB               7          0                                 11513  5   10 
+COMMON               3          3                                 11513  5   11 
+E          E-ERR      ERR-1                                       11513  5   12 
+KEV        KEV        PER-CENT                                    11513  5   13 
+     2980.0  1.          4.0                                      11513  5   14 
+ENDCOMMON            3          0                                 11513  5   15 
+DATA                 3         11                                 11513  5   16 
+COS        DATA       DATA-ERR                                    11513  5   17 
+NO-DIM     ARB-UNITS  ARB-UNITS                                   11513  5   18 
+     -0.807      1.011      0.116                                 11513  5   19 
+     -0.701      1.032      0.116                                 11513  5   20 
+     -0.571      1.011      0.116                                 11513  5   21 
+     -0.429      0.968      0.127                                 11513  5   22 
+     -0.257      0.799      0.116                                 11513  5   23 
+     -0.009      1.127      0.116                                 11513  5   24 
+      0.252      1.169      0.116                                 11513  5   25 
+      0.424      0.968      0.116                                 11513  5   26 
+      0.566      0.979      0.095                                 11513  5   27 
+      0.719      0.810      0.116                                 11513  5   28 
+      0.814      0.958      0.116                                 11513  5   29 
+ENDDATA             13          0                                 11513  5   30 
+ENDSUBENT           29          0                                 11513  599999 
+SUBENT        11513006   20160216                             141511513  6    1 
+BIB                  4          7                                 11513  6    2 
+REACTION   (13-AL-27(N,INL)13-AL-27,PAR,DA,G,REL)                 11513  6    3 
+ERR-ANALYS (DATA-ERR) No complete details on included sources of  11513  6    4 
+            uncertainties given                                   11513  6    5 
+           (ERR-1) The present measurements have relative         11513  6    6 
+           uncertainties of +-4%.                                 11513  6    7 
+STATUS     (CURVE) Fig. 2, page 478.                              11513  6    8 
+HISTORY    (20160212C) BP                                         11513  6    9 
+ENDBIB               7          0                                 11513  6   10 
+COMMON               3          3                                 11513  6   11 
+E          E-ERR      ERR-1                                       11513  6   12 
+KEV        KEV        PER-CENT                                    11513  6   13 
+     2213.0   1.         4.0                                      11513  6   14 
+ENDCOMMON            3          0                                 11513  6   15 
+DATA                 3         11                                 11513  6   16 
+COS        DATA       DATA-ERR                                    11513  6   17 
+NO-DIM     ARB-UNITS  ARB-UNITS                                   11513  6   18 
+     -0.807      1.045      0.023                                 11513  6   19 
+     -0.712      0.985      0.023                                 11513  6   20 
+     -0.576      1.002      0.027                                 11513  6   21 
+     -0.428      0.987      0.025                                 11513  6   22 
+     -0.267      0.934      0.025                                 11513  6   23 
+     -0.007      0.934      0.025                                 11513  6   24 
+      0.247      0.953      0.027                                 11513  6   25 
+      0.418      1.008      0.027                                 11513  6   26 
+      0.561      0.996      0.025                                 11513  6   27 
+      0.690      1.040      0.028                                 11513  6   28 
+      0.808      1.120      0.030                                 11513  6   29 
+ENDDATA             13          0                                 11513  6   30 
+ENDSUBENT           29          0                                 11513  699999 
+SUBENT        11513007   20160216                             141511513  7    1 
+BIB                  4          7                                 11513  7    2 
+REACTION   (13-AL-27(N,INL)13-AL-27,PAR,DA,G,REL)                 11513  7    3 
+ERR-ANALYS (DATA-ERR) No complete details on included sources of  11513  7    4 
+            uncertainties given                                   11513  7    5 
+           (ERR-1) The present measurements have relative         11513  7    6 
+           uncertainties of +-4%.                                 11513  7    7 
+STATUS     (CURVE) Fig. 2, page 478.                              11513  7    8 
+HISTORY    (20160212C) BP                                         11513  7    9 
+ENDBIB               7          0                                 11513  7   10 
+COMMON               3          3                                 11513  7   11 
+E          E-ERR      ERR-1                                       11513  7   12 
+KEV        KEV        PER-CENT                                    11513  7   13 
+     1717.0   1.        4.0                                       11513  7   14 
+ENDCOMMON            3          0                                 11513  7   15 
+DATA                 3         11                                 11513  7   16 
+COS        DATA       DATA-ERR                                    11513  7   17 
+NO-DIM     ARB-UNITS  ARB-UNITS                                   11513  7   18 
+     -0.805      0.903      0.048                                 11513  7   19 
+     -0.710      0.925      0.048                                 11513  7   20 
+     -0.580      0.948      0.044                                 11513  7   21 
+     -0.426      1.043      0.044                                 11513  7   22 
+     -0.260      1.005      0.048                                 11513  7   23 
+     -0.012      1.030      0.041                                 11513  7   24 
+      0.237      1.040      0.048                                 11513  7   25 
+      0.420      1.024      0.048                                 11513  7   26 
+      0.562      1.052      0.041                                 11513  7   27 
+      0.692      1.011      0.044                                 11513  7   28 
+      0.811      1.036      0.048                                 11513  7   29 
+ENDDATA             13          0                                 11513  7   30 
+ENDSUBENT           29          0                                 11513  799999 
+SUBENT        11513008   20160216                             141511513  8    1 
+BIB                  4          7                                 11513  8    2 
+REACTION   (13-AL-27(N,INL)13-AL-27,PAR,DA,G,REL)                 11513  8    3 
+ERR-ANALYS (DATA-ERR) No complete details on included sources of  11513  8    4 
+            uncertainties given                                   11513  8    5 
+           (ERR-1) The present measurements have relative         11513  8    6 
+           uncertainties of +-4%.                                 11513  8    7 
+STATUS     (CURVE) Fig. 2, page 478.                              11513  8    8 
+HISTORY    (20160212C) BP                                         11513  8    9 
+ENDBIB               7          0                                 11513  8   10 
+COMMON               3          3                                 11513  8   11 
+E          E-ERR      ERR-1                                       11513  8   12 
+KEV        KEV        PER-CENT                                    11513  8   13 
+     1013.0   1.          4.0                                     11513  8   14 
+ENDCOMMON            3          0                                 11513  8   15 
+DATA                 3         11                                 11513  8   16 
+COS        DATA       DATA-ERR                                    11513  8   17 
+NO-DIM     ARB-UNITS  ARB-UNITS                                   11513  8   18 
+     -0.798      1.008      0.024                                 11513  8   19 
+     -0.709      1.001      0.024                                 11513  8   20 
+     -0.573      1.011      0.022                                 11513  8   21 
+     -0.418      1.065      0.024                                 11513  8   22 
+     -0.258      0.974      0.022                                 11513  8   23 
+     -0.003      0.994      0.025                                 11513  8   24 
+      0.258      1.023      0.024                                 11513  8   25 
+      0.424      1.006      0.022                                 11513  8   26 
+      0.567      1.009      0.022                                 11513  8   27 
+      0.697      0.992      0.022                                 11513  8   28 
+      0.822      0.944      0.020                                 11513  8   29 
+ENDDATA             13          0                                 11513  8   30 
+ENDSUBENT           29          0                                 11513  899999 
+ENDENTRY             8          0                                 1151399999999 
