@@ -1,21 +1,21 @@
-ENTRY            21936   20150818                             224321936  0    1 
-SUBENT        21936001   20150818                             224321936  1    1 
-BIB                 18        117                                 21936  1    2 
+ENTRY            21936   20151213                             224621936  0    1 
+SUBENT        21936001   20151213                             224621936  1    1 
+BIB                 18        123                                 21936  1    2 
 INSTITUTE  (2GERKIG)  Experimental Site                           21936  1    3 
 REFERENCE  (R,GKSS-85-E-11,1985)                                  21936  1    4 
-           (P,NEANDC(E)-252,(5),28,198406)                        21936  1    5 
+           (P,NEANDC(E)-252/U,(5),28,198406)                      21936  1    5 
 AUTHOR     (B.M.Bahal, R.Pepelnik)                                21936  1    6 
 TITLE       Cross section measurements of Cr,Mn,Fe,Co,Ni for an   21936  1    7 
             accurate determination of these elements in natural   21936  1    8 
             and synthetic samples using a 14 MeV neutron generator21936  1    9 
-FACILITY   (NGEN,2GERKIG) Neutron generator 'KORONA'              21936  1   10 
+FACILITY   (ACCEL,2GERKIG) Neutron generator 'KORONA'             21936  1   10 
             Neutron tube with cylindrical acceleration structure. 21936  1   11 
             Integrated fast pneumatic rabbit system.              21936  1   12 
 REL-REF    (I,,H.-U.Fanger+,J,JRC,61,147,1981)                    21936  1   13 
            (I,,K.A.Schmidt+,J,AKE,27,159,1981)                    21936  1   14 
            (I,,J.L.Barreira-Filho+,R,GKSS-81-E-53,1981)           21936  1   15 
              References for facility details.                     21936  1   16 
-           (A,,C.M.Lederer+,B,LEDERER-7,,1978) Reference for      21936  1   17 
+           (R,,C.M.Lederer+,B,LEDERER-7,,1978) Reference for      21936  1   17 
              gamma-intensities and their errors estimates.        21936  1   18 
 INC-SOURCE (D-T)    Intensity=3.x 10**12 n/sec.                   21936  1   19 
                       Flux=3.10 x 10*10 n/cm**2/sec               21936  1   20 
@@ -23,9 +23,9 @@ INC-SOURCE (D-T)    Intensity=3.x 10**12 n/sec.                   21936  1   19
                      cross sections by about 100 %.               21936  1   22 
 INC-SPECT   Neutron spectrum has median at 14.7 MeV, FWHM 600 keV.21936  1   23 
             Amount of thermal neutrons was determined by several  21936  1   24 
-            (n,gamma)-reaction to be less 0.005 of total neutron  21936  1   25 
-            flux. Variation of flux was determined to be          21936  1   26 
-            within +- 5%.                                         21936  1   27 
+            (n,gamma)-reaction to be less 5.x 10**(-3) of total   21936  1   25 
+            neutron flux.                                         21936  1   26 
+            Variation of flux was determined to be within +- 5%.  21936  1   27 
 SAMPLE      Natural samples were placed into polyethylene         21936  1   28 
             containers 7mm * 10mm diameter.                       21936  1   29 
                   Purity Sample Al2O3 Irrad. Delay Measur. Cycles 21936  1   30 
@@ -50,7 +50,7 @@ SAMPLE      Natural samples were placed into polyethylene         21936  1   28
            200.     1270.    35000.   20.      1500.              21936  1   49 
            Three synthetic mixture samples were used for mixture  21936  1   50 
            analysis.                                              21936  1   51 
-METHOD     (ACTIV) Cyclic activation for short-lived radioisotopes21936  1   52 
+METHOD     (ACTIV) Cyclic activation-for short-lived radioisotopes21936  1   52 
             ,for long-lived -single irradiation.                  21936  1   53 
             Activated sample,carried by a rugged polyamide rabbit 21936  1   54 
             are pneumatically transferred within 140ms to a 16 m  21936  1   55 
@@ -73,12 +73,12 @@ ANALYSIS   (SHAPE) Spectrum shape and peak-to-background ratios   21936  1   71
             are characteristic for single element analysis.       21936  1   72 
            (AREA) Peak areas and the background are estimated by  21936  1   73 
            fitting the gamma-ray peak to asymmetric Gaussian curve21936  1   74 
-STATUS     (TABLE) Main reference text and Table 3 of GKSS-85-E-1121936  1   75 
+STATUS     (TABLE) From the text and Table 3 of GKSS-85-E-11      21936  1   75 
 CORRECTION -Detector efficiency                                   21936  1   76 
            -Neutron flux+flux variation                           21936  1   77 
            -Peak area                                             21936  1   78 
-           -G-Intensities. Lederer Table of Isot. 7th Ed N.Y.1978 21936  1   79 
-           -Detector source distance=56.5mm,although coincidence  21936  1   80 
+           -Gamma-intensities.Lederer Table of Isot.7th ed NY.197821936  1   79 
+           -Detector source distance=56.5mm, although coincidence 21936  1   80 
            summing corrections are often small                    21936  1   81 
            -Absorption correction for                             21936  1   82 
             Cr-50(n,2n)Cr-49     E-gamma=91 and 152 keV           21936  1   83 
@@ -92,42 +92,48 @@ ERR-ANALYS (ERR-T)     Relative error was defined as the root from21936  1   90
             sum of squares of relative errors for neutron flux,   21936  1   91 
             gamma-ray intensity, photo-peak efficiency, mass of   21936  1   92 
             sample, peak area.                                    21936  1   93 
-           (ERR-1,1.2,3.5) Error in neutron flux,using Al(n,alpha)21936  1   94 
-            reaction - 1.2%, for long-lived isotopes - 1.3%,      21936  1   95 
-            is raised to 2.4% for non-homogeneous mixing.         21936  1   96 
-            When on internal monitor is used for flux calibration 21936  1   97 
-            flux error < 3.5%.                                    21936  1   98 
-           (ERR-2,,0.2) Error in purity estimation, for purity=99%21936  1   99 
-               has been assumed to be less 0.2%.                  21936  1  100 
-           (ERR-3) Error of peak area estimation - about 0.5%     21936  1  101 
-           (ERR-4,0.5,3.) Error of detector efficiency:           21936  1  102 
-                    in range 150-3000 keV relative er.- less 0.5%,21936  1  103 
-                                     absolute err. - 2.4%,        21936  1  104 
-                    in range 60-120 keV absolute err. - 3.% .     21936  1  105 
-           (ERR-5) Error in mass measurement is usually small(e.g 21936  1  106 
-            for 10 mg mass - 0.1%).                               21936  1  107 
-             -ERR-MAX on cross section if interfering element 5%  21936  1  108 
-HISTORY    (19850121C) BL                                         21936  1  109 
-           (19860710U)HH REF updated                              21936  1  110 
-           (20080430A) M.M. BIB and COMMON information was added. 21936  1  111 
-            Dates were corrected for 4-digits year. Free text was 21936  1  112 
-            corrected to be "human-readable". References were     21936  1  113 
-            checked for data values. DATA-ERR was changed into    21936  1  114 
-            ERR-T. Reaction was corrected in Subents 002,005,007, 21936  1  115 
-             011, 025.                                            21936  1  116 
-           (20121108A) SD: REACTION code in Subents 2,5,7,11,25   21936  1  117 
-                           was changed.                           21936  1  118 
-           (20150818A) SD:STATUS "Superseded" added to Subents 2-421936  1  119 
-ENDBIB             117          0                                 21936  1  120 
-COMMON               8          6                                 21936  1  121 
-EN         EN-ERR     MONIT1     MONIT1-ERR MONIT2     MONIT2-ERR 21936  1  122 
-ERR-3      ERR-5                                                  21936  1  123 
-MEV        MEV        MB         PER-CENT   MB         PER-CENT   21936  1  124 
-PER-CENT   PER-CENT                                               21936  1  125 
-       14.7        0.3      113.0         2.       68.3        1.021936  1  126 
-        0.5        0.1                                            21936  1  127 
-ENDCOMMON            6          0                                 21936  1  128 
-ENDSUBENT          127          0                                 21936  199999 
+           (ERR-1) Error in mass measurement is usually small(e.g 21936  1   94 
+            for 10 mg mass - 0.1%).                               21936  1   95 
+           (ERR-2) Error in purity estimation, for purity=99% has 21936  1   96 
+                been assumed to be less 0.2%.                     21936  1   97 
+           (ERR-3) Error of peak area estimation - about 0.5%     21936  1   98 
+           (ERR-4,0.5,3.) Error of detector efficiency:           21936  1   99 
+                    in range 150-3000 keV relative er.- less 0.5%,21936  1  100 
+                                     absolute err. - 2.4%,        21936  1  101 
+                    in range 60-120 keV absolute err. - 3.% .     21936  1  102 
+           (ERR-5,1.2,3.5) Error in flux using Al(n,alpha)        21936  1  103 
+                   reaction - 1.2%,                               21936  1  104 
+                   for long-lived isotopes - 1.3%,                21936  1  105 
+                   is raised to 2.4 % for non-homogeneous mixing. 21936  1  106 
+                       When no internal monitor is used for flux  21936  1  107 
+                       calibration  flux-err=3.5 % maximally.     21936  1  108 
+                       -Interfering element,                      21936  1  109 
+                       see each element in particular             21936  1  110 
+             -ERR-MAX on cross section if interfering element 5%  21936  1  111 
+HISTORY    (19850121C) BL                                         21936  1  112 
+           (19850423E)                                            21936  1  113 
+           (19860710U)HH REF updated                              21936  1  114 
+           (19860722E)                                            21936  1  115 
+           (20080430A) M.M. BIB and COMMON information was added. 21936  1  116 
+            Dates were corrected for 4-digits year. Free text was 21936  1  117 
+            corrected to be "human-readable". References were     21936  1  118 
+            checked for data values. DATA-ERR was changed into    21936  1  119 
+            ERR-T. Reaction were corrected in Subents 002,005,007,21936  1  120 
+             011, 025.                                            21936  1  121 
+           (20121108A) SD: REACTION code in Subents 2,5,7,11,25   21936  1  122 
+                           was changed.                           21936  1  123 
+           (20151213A) SD: ERR- ANALYS update. DECAY-DATA         21936  1  124 
+            corrected in Subent 014.                              21936  1  125 
+ENDBIB             123          0                                 21936  1  126 
+COMMON               9          6                                 21936  1  127 
+EN         EN-ERR     MONIT1     MONIT1-ERR MONIT2     MONIT2-ERR 21936  1  128 
+ERR-1      ERR-2      ERR-3                                       21936  1  129 
+MEV        MEV        MB         PER-CENT   MB         PER-CENT   21936  1  130 
+PER-CENT   PER-CENT   PER-CENT                                    21936  1  131 
+ 1.4700E+01        0.3 1.1300E+02 2.0000E+00 6.8300E+01 1.0000E+0021936  1  132 
+        0.1        0.2        0.5                                 21936  1  133 
+ENDCOMMON            6          0                                 21936  1  134 
+ENDSUBENT          133          0                                 21936  199999 
 SUBENT        21936002   20150818                             224321936  2    1 
 BIB                  6         13                                 21936  2    2 
 REACTION   ((24-CR-52(N,P)23-V-52,,SIG)+                          21936  2    3 
@@ -346,23 +352,22 @@ MB         MB                                                     2193601300012
  7.9000E+00 7.0000E-01                                            2193601300013 
 ENDDATA              3          0                                 2193601300014 
 ENDSUBENT           13          0                                 2193601399999 
-SUBENT        21936014   20121108                             22342193601400001 
-BIB                  4          7                                 2193601400002 
-REACTION   (26-FE-58(N,P)25-MN-58-M,,SIG)                         2193601400003 
-DECAY-DATA (25-MN-58-G,65.SEC,DG,811.,0.822)                      2193601400004 
-STATUS     (TABLE) GKSS-85-E-11, Table 3.                         2193601400005 
-                   NEANDC(E)-252/U,(5),28,Table 1.                2193601400006 
-HISTORY    (19850121C)                                            2193601400007 
-           (19850423E)                                            2193601400008 
-           (20121108A) SD: "-M" was added to SF4                  2193601400009 
-ENDBIB               7          0                                 2193601400010 
-NOCOMMON             0          0                                 2193601400011 
-DATA                 2          1                                 2193601400012 
-DATA       ERR-T                                                  2193601400013 
-MB         MB                                                     2193601400014 
- 1.3600E+01 7.0000E-01                                            2193601400015 
-ENDDATA              3          0                                 2193601400016 
-ENDSUBENT           15          0                                 2193601499999 
+SUBENT        21936014   20151213                             224621936 14    1 
+BIB                  4          6                                 21936 14    2 
+REACTION   (26-FE-58(N,P)25-MN-58-M,,SIG)                         21936 14    3 
+DECAY-DATA (25-MN-58-M,65.SEC,DG,811.,0.822)                      21936 14    4 
+STATUS     (TABLE) GKSS-85-E-11, Table 3.                         21936 14    5 
+                   NEANDC(E)-252/U,(5),28,Table 1.                21936 14    6 
+HISTORY    (20121108A) SD: "-M" was added to SF4 in REACTION code.21936 14    7 
+           (20151213A) SD: Mn-58g -> Mn-58m in DECAY-DATA.        21936 14    8 
+ENDBIB               6          0                                 21936 14    9 
+NOCOMMON             0          0                                 21936 14   10 
+DATA                 2          1                                 21936 14   11 
+DATA       ERR-T                                                  21936 14   12 
+MB         MB                                                     21936 14   13 
+ 1.3600E+01 7.0000E-01                                            21936 14   14 
+ENDDATA              3          0                                 21936 14   15 
+ENDSUBENT           14          0                                 21936 1499999 
 SUBENT        21936015   20080430                             21982193601500001 
 BIB                  4          5                                 2193601500002 
 REACTION   (26-FE-54(N,P)25-MN-54,,SIG)                           2193601500003 
