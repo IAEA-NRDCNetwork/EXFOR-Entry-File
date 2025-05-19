@@ -1,6 +1,6 @@
-ENTRY            10214   20210731                             148510214  0    1 
-SUBENT        10214001   20210731                             148510214  1    1 
-BIB                 13         48                                 10214  1    2 
+ENTRY            10214   20220822                             150010214  0    1 
+SUBENT        10214001   20220822                             150010214  1    1 
+BIB                 13         49                                 10214  1    2 
 INSTITUTE  (1USABRL)                                              10214  1    3 
 REFERENCE  (R,BRL-R-1491,1970)                                    10214  1    4 
 AUTHOR     (J.K.Temperley,D.E.Barnes)                             10214  1    5 
@@ -49,13 +49,14 @@ HISTORY    (19730226C)                                            10214  1   42
            (20131023A) OS. REACTION in sub.21 corrected           10214  1   48 
            (20210610A) OS. Corrected REACTIONs in subentries      10214  1   49 
              7,9,23,30.                                           10214  1   50 
-ENDBIB              48          0                                 10214  1   51 
-COMMON               4          3                                 10214  1   52 
-EN         EN-RSL-HW  MONIT      MONIT-ERR                        10214  1   53 
-MEV        MEV        MB         MB                               10214  1   54 
- 14.1       0.5        106.       7.                              10214  1   55 
-ENDCOMMON            3          0                                 10214  1   56 
-ENDSUBENT           55          0                                 10214  199999 
+           (20220801A) OS. REACTION corrected in subs. 26, 28     10214  1   51 
+ENDBIB              49          0                                 10214  1   52 
+COMMON               4          3                                 10214  1   53 
+EN         EN-RSL-HW  MONIT      MONIT-ERR                        10214  1   54 
+MEV        MEV        MB         MB                               10214  1   55 
+ 14.1       0.5        106.       7.                              10214  1   56 
+ENDCOMMON            3          0                                 10214  1   57 
+ENDSUBENT           56          0                                 10214  199999 
 SUBENT        10214002   20010305                             00001021400200001 
 BIB                  3          5                                 1021400200002 
 REACTION   (49-IN-115(N,G)49-IN-116-M1,,SIG)                      1021400200003 
@@ -384,24 +385,25 @@ MB         MB                                                     1021402500012
 76.0       17.0                                                   1021402500013 
 ENDDATA              3          0                                 1021402500014 
 ENDSUBENT           13          0                                 1021402599999 
-SUBENT        10214026   20010305                             00001021402600001 
-BIB                  4          8                                 1021402600002 
-REACTION   ((44-RU-102(N,D)43-TC-101,,SIG)+                       1021402600003 
-           (44-RU-102(N,N+P)43-TC-101,,SIG)+                      1021402600004 
-           (44-RU-101(N,P)43-TC-101,,SIG)+                        1021402600005 
-           (44-RU-104(N,A)42-MO-101,,SIG))                        1021402600006 
-SAMPLE     Assumed isotopic ratios 101Ru/102Ru = 0.54, and        1021402600007 
-                                   104Ru/102Ru = 0.59.            1021402600008 
-DECAY-DATA (43-TC-101,14.0MIN,DG,307.,.896)                       1021402600009 
-HISTORY    (19860610A) REACTION CORRECTED.                        1021402600010 
-ENDBIB               8          0                                 1021402600011 
-NOCOMMON             0          0                                 1021402600012 
-DATA                 2          1                                 1021402600013 
-DATA       DATA-ERR                                               1021402600014 
-MB         MB                                                     1021402600015 
-16.0       2.0                                                    1021402600016 
-ENDDATA              3          0                                 1021402600017 
-ENDSUBENT           16          0                                 1021402699999 
+SUBENT        10214026   20220822                             150010214 26    1 
+BIB                  4          9                                 10214 26    2 
+REACTION   ((44-RU-102(N,X)43-TC-101,,SIG)+                       10214 26    3 
+           (44-RU-101(N,P)43-TC-101,,SIG,,RAB)+                   10214 26    4 
+           (44-RU-104(N,A)42-MO-101,,SIG,,RAB))                   10214 26    5 
+SAMPLE     Assumed isotopic ratios 101Ru/102Ru = 0.54, and        10214 26    6 
+                                   104Ru/102Ru = 0.59.            10214 26    7 
+DECAY-DATA (43-TC-101,14.0MIN,DG,307.,.896)                       10214 26    8 
+HISTORY    (19860610A) REACTION corrected.                        10214 26    9 
+           (20220801A) REACTION corrected: for Ru102, replaced    10214 26   10 
+            sum by (N,X), for Ru101 and Ru104: added SF8=RAB      10214 26   11 
+ENDBIB               9          0                                 10214 26   12 
+NOCOMMON             0          0                                 10214 26   13 
+DATA                 2          1                                 10214 26   14 
+DATA       DATA-ERR                                               10214 26   15 
+MB         MB                                                     10214 26   16 
+16.0       2.0                                                    10214 26   17 
+ENDDATA              3          0                                 10214 26   18 
+ENDSUBENT           17          0                                 10214 2699999 
 SUBENT        10214027   20010305                             00001021402700001 
 BIB                  3          7                                 1021402700002 
 REACTION   (46-PD-102(N,X)45-RH-101-M,,SIG)                       1021402700003 
@@ -419,24 +421,25 @@ MB         MB                                                     1021402700014
 580.0      160.0                                                  1021402700015 
 ENDDATA              3          0                                 1021402700016 
 ENDSUBENT           15          0                                 1021402799999 
-SUBENT        10214028   20010305                             00001021402800001 
-BIB                  4          8                                 1021402800002 
-REACTION   ((46-PD-106(N,D)45-RH-105,,SIG)+                       1021402800003 
-           (46-PD-106(N,N+P)45-RH-105,,SIG)+                      1021402800004 
-           (46-PD-105(N,P)45-RH-105,,SIG)+                        1021402800005 
-           (46-PD-108(N,A)44-RU-105,,SIG))                        1021402800006 
-SAMPLE     Isotopic ratios 105Pd/106Pd = 0.81 and                 1021402800007 
-                           108Pd/106Pd = 1.11.                    1021402800008 
-DECAY-DATA (45-RH-105-G,35.4HR,DG,319.3,.191)                     1021402800009 
-HISTORY    (19860610A) REACTION corrected.                        1021402800010 
-ENDBIB               8          0                                 1021402800011 
-NOCOMMON             0          0                                 1021402800012 
-DATA                 2          1                                 1021402800013 
-DATA       DATA-ERR                                               1021402800014 
-MB         MB                                                     1021402800015 
-28.0       3.0                                                    1021402800016 
-ENDDATA              3          0                                 1021402800017 
-ENDSUBENT           16          0                                 1021402899999 
+SUBENT        10214028   20220822                             150010214 28    1 
+BIB                  4          9                                 10214 28    2 
+REACTION   ((46-PD-106(N,X)45-RH-105,,SIG)+                       10214 28    3 
+           (46-PD-105(N,P)45-RH-105,,SIG,,RAB)+                   10214 28    4 
+           (46-PD-108(N,A)44-RU-105,,SIG,,RAB))                   10214 28    5 
+SAMPLE     Isotopic ratios 105Pd/106Pd = 0.81 and                 10214 28    6 
+                           108Pd/106Pd = 1.11.                    10214 28    7 
+DECAY-DATA (45-RH-105-G,35.4HR,DG,319.3,.191)                     10214 28    8 
+HISTORY    (19860610A) REACTION corrected.                        10214 28    9 
+           (20220801A) REACTION corrected: for Ru106, replaced    10214 28   10 
+            sum by (N,X), for Ru105 and Ru108: added SF8=RAB      10214 28   11 
+ENDBIB               9          0                                 10214 28   12 
+NOCOMMON             0          0                                 10214 28   13 
+DATA                 2          1                                 10214 28   14 
+DATA       DATA-ERR                                               10214 28   15 
+MB         MB                                                     10214 28   16 
+28.0       3.0                                                    10214 28   17 
+ENDDATA              3          0                                 10214 28   18 
+ENDSUBENT           17          0                                 10214 2899999 
 SUBENT        10214029   20010305                             00001021402900001 
 BIB                  3          6                                 1021402900002 
 REACTION   (50-SN-112(N,X)49-IN-111,,SIG)                         1021402900003 

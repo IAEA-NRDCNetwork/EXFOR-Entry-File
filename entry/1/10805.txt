@@ -1,24 +1,25 @@
-ENTRY            10805   20101001                             13691080500000001 
-SUBENT        10805001   20101001                             13691080500100001 
-BIB                  7         15                                 1080500100002 
-INSTITUTE  (1USALRL)                                              1080500100003 
-REFERENCE  (J,PR/C,29,2188,198406)                                1080500100004 
-           (C,78HARWELL,,887,197809)                              1080500100005 
-           (R,UCRL-80999,197809)                                  1080500100006 
-AUTHOR     (J.C.Browne,R.M.White,R.E.Howe,R.J.Dougan,R.J.Dupzyk,  1080500100007 
-           J.H.Landrum)                                           1080500100008 
-TITLE      Fission cross sections for 242Am(m).                   1080500100009 
-METHOD     (TOF) Time of flight.                                  1080500100010 
-STATUS     (APRVD) R.M.White, 1984/4/24.                          1080500100011 
-HISTORY    (19800514C)                                            1080500100012 
-           (19840315A) BIB and DATA updated.                      1080500100013 
-           (19840622A) Reference update.                          1080500100014 
-           (20101001A) VM:Updated to new date formats,lower case. 1080500100015 
-                       Update to 10805.002,006,007,010.           1080500100016 
-                       Subentry 005,008 deleted; no data.         1080500100017 
-ENDBIB              15          0                                 1080500100018 
-NOCOMMON             0          0                                 1080500100019 
-ENDSUBENT           18          0                                 1080500199999 
+ENTRY            10805   20220822                             150010805  0    1 
+SUBENT        10805001   20220822                             150010805  1    1 
+BIB                  7         16                                 10805  1    2 
+INSTITUTE  (1USALRL)                                              10805  1    3 
+REFERENCE  (J,PR/C,29,2188,1984)                                  10805  1    4 
+           (C,78HARWELL,,887,1978)                                10805  1    5 
+           (R,UCRL-80999,197809)                                  10805  1    6 
+AUTHOR     (J.C.Browne,R.M.White,R.E.Howe,J.H.Landrum,R.J.Dougan, 10805  1    7 
+           R.J.Dupzyk)                                            10805  1    8 
+TITLE      242Am(m) fission cross section                         10805  1    9 
+METHOD     (TOF)                                                  10805  1   10 
+STATUS     (APRVD) R.M.White, 1984/4/24.                          10805  1   11 
+HISTORY    (19800514C)                                            10805  1   12 
+           (19840315A) BIB and DATA updated.                      10805  1   13 
+           (19840622A) Reference update.                          10805  1   14 
+           (20101001A) VM:Updated to new date formats,lower case. 10805  1   15 
+                       Update to 10805.002,006,007,010.           10805  1   16 
+                       Subentry 005,008 deleted; no data.         10805  1   17 
+           (20220807A) OS. Correction in sub.4                    10805  1   18 
+ENDBIB              16          0                                 10805  1   19 
+NOCOMMON             0          0                                 10805  1   20 
+ENDSUBENT           19          0                                 10805  199999 
 SUBENT        10805002   20101001                             13691080500200001 
 BIB                  8         17                                 1080500200002 
 REACTION   (95-AM-242-M(N,F),,SIG)                                1080500200003 
@@ -1357,22 +1358,29 @@ EV         B          PER-CENT                                    1080500300031
  1.8271E+072.35440E+00  2.60                                      1080500301309 
 ENDDATA           1280          0                                 1080500301310 
 ENDSUBENT         1309          0                                 1080500399999 
-SUBENT        10805004   20101001                             13691080500400001 
-BIB                  3          6                                 1080500400002 
-REACTION  1(95-AM-242-M(N,F),,D)                                  1080500400003 
-          2(95-AM-242-M(N,F),,STF)                                1080500400004 
-ANALYSIS   (SLA) Sum of single level Breit-Wigner resonances with 1080500400005 
-            allowances for doppler and resolution broadening.     1080500400006 
-ERR-ANALYS1No information on uncertainties.                       1080500400007 
-          2(ERR-S) Statistical uncertainty is quoted.             1080500400008 
-ENDBIB               6          0                                 1080500400009 
-NOCOMMON             0          0                                 1080500400010 
-DATA                 5          1                                 1080500400011 
-EN-RES-MIN EN-RES-MAX DATA      1DATA      2ERR-S     2           1080500400012 
-EV         EV         EV         NO-DIM     NO-DIM                1080500400013 
- 1.0000E-02 2.0000E+01 4.0000E-01 1.0700E-04 0.22  E-04           1080500400014 
-ENDDATA              3          0                                 1080500400015 
-ENDSUBENT           14          0                                 1080500499999 
+SUBENT        10805004   20220822                             150010805  4    1 
+BIB                  5          9                                 10805  4    2 
+REACTION  1(95-AM-242-M(N,0),,D)                                  10805  4    3 
+          2(95-AM-242-M(N,EL),,STF)                               10805  4    4 
+ANALYSIS   (SLA) Sum of single level Breit-Wigner resonances with 10805  4    5 
+            allowances for doppler and resolution broadening.     10805  4    6 
+ERR-ANALYS1No information on uncertainties.                       10805  4    7 
+          2(ERR-S) Statistical uncertainty is quoted.             10805  4    8 
+STATUS     (TABLE) p.2195, J,PR/C,29,2188,1984                    10805  4    9 
+HISTORY    (20220807A) Corrected REACTION SF3, added COMMON,      10805  4   10 
+            STATUS, changed DATA  1  to DATA-MAX 1                10805  4   11 
+ENDBIB               9          0                                 10805  4   12 
+COMMON               1          3                                 10805  4   13 
+MOMENTUM L                                                        10805  4   14 
+NO-DIM                                                            10805  4   15 
+  0.                                                              10805  4   16 
+ENDCOMMON            3          0                                 10805  4   17 
+DATA                 5          1                                 10805  4   18 
+EN-RES-MIN EN-RES-MAX DATA-MAX  1DATA      2ERR-S     2           10805  4   19 
+EV         EV         EV         NO-DIM     NO-DIM                10805  4   20 
+ 1.0000E-02 2.0000E+01 4.0000E-01 1.0700E-04 0.22  E-04           10805  4   21 
+ENDDATA              3          0                                 10805  4   22 
+ENDSUBENT           21          0                                 10805  499999 
 NOSUBENT      10805005   20101001                             13691080500500001 
 SUBENT        10805006   20101001                             13691080500600001 
 BIB                 10         29                                 1080500600002 
