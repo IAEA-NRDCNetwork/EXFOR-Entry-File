@@ -1,6 +1,6 @@
-ENTRY            O2224   20151115                             O055O2224  0    1 
-SUBENT        O2224001   20151115                             O055O2224  1    1 
-BIB                 14         41                                 O2224  1    2 
+ENTRY            O2224   20170407                             O061O2224  0    1 
+SUBENT        O2224001   20170407                             O061O2224  1    1 
+BIB                 13         48                                 O2224  1    2 
 TITLE      Excitation functions and yields for cyclotron          O2224  1    3 
            production of radiorhenium via deuteron irradiation-   O2224  1    4 
            W-nat(d,xn)181,182(A+B),183,184(m+g),Re-186-g nuclear  O2224  1    5 
@@ -9,7 +9,7 @@ TITLE      Excitation functions and yields for cyclotron          O2224  1    3
 AUTHOR     (S.Manenti, E.Persico, K.Abbas, M.L.Bonardi, L.Gini,   O2224  1    8 
            F.Groppi, U.Holzwarth, F.Simonelli)                    O2224  1    9 
 REFERENCE  (J,RCA,102,669,2014)                                   O2224  1   10 
-REL-REF    (O,O1849002,M.L.Bonardi,J,ARI,68,1595,2010) Data for   O2224  1   11 
+REL-REF    (O,O1849002,M.L.Bonardi+,J,ARI,68,1595,2010) Data for  O2224  1   11 
            TTY Re-186-g at E(d)=17,15,11 MeV                      O2224  1   12 
            (O,D0623005,M.L.Bonardi,J,ARI,68,1595,2010) Data for   O2224  1   13 
            TTY Re-186-g at E(d)=13 MeV                            O2224  1   14 
@@ -25,428 +25,475 @@ SAMPLE     Thick natural W-metal foils except one target, which   O2224  1   17
             (approx. 12.5 mum) thick W-nat foils.                 O2224  1   24 
 MONITOR    (22-TI-0(P,X)23-V-48,,SIG)                             O2224  1   25 
 MONIT-REF  (,K.Gul+,R,IAEA-TECDOC-1211,1,2001)                    O2224  1   26 
-DETECTOR   (HPGE)                                                 O2224  1   27 
-METHOD     (ACTIV)                                                O2224  1   28 
-           (STTA)                                                 O2224  1   29 
-           (BCINT)                                                O2224  1   30 
-ERR-ANALYS (ERR-1,,2.).Error in the target thickness and          O2224  1   31 
-           uniformity                                             O2224  1   32 
-           (ERR-2,,2.).Error in integrated beam charge.           O2224  1   33 
-           (ERR-3,1.5,2.).Error in the calibration source         O2224  1   34 
-           uncertainty                                            O2224  1   35 
-           (ERR-4,,1.).Fitting of the detector efficiency curves  O2224  1   36 
-             with a typical overall relative type A error of 4.5%.O2224  1   37 
-           (DATA-ERR).No information on source of uncertainties   O2224  1   38 
-           (EN-ERR).The error is reported by authors.             O2224  1   39 
-STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O2224  1   40 
-HISTORY    (20140717C) SB                                         O2224  1   41 
-           (20151115A).Correction in Decay-data sub.003 according O2224  1   42 
-           N.Otsuka remarks                                       O2224  1   43 
-ENDBIB              41          0                                 O2224  1   44 
-NOCOMMON             0          0                                 O2224  1   45 
-ENDSUBENT           44          0                                 O2224  199999 
-SUBENT        O2224002   20140717                             O053O222400200001 
-BIB                  3          3                                 O222400200002 
-REACTION   (74-W-0(D,X)75-RE-181,,SIG)                            O222400200003 
-DECAY-DATA (75-RE-181,19.9HR,DG,953.42,0.0355)                    O222400200004 
-STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O222400200005 
-ENDBIB               3          0                                 O222400200006 
-NOCOMMON             0          0                                 O222400200007 
-DATA                 4          6                                 O222400200008 
-EN         EN-ERR     DATA       DATA-ERR                         O222400200009 
-MEV        MEV        MB         MB                               O222400200010 
-17.43      0.43       201.       12.                              O222400200011 
-16.39      0.24       119.       9.                               O222400200012 
-15.32      0.47       54.1       6.6                              O222400200013 
-14.58      0.27       12.0       0.6                              O222400200014 
-14.19      0.29       7.57       0.42                             O222400200015 
-13.87      0.32       1.72       0.13                             O222400200016 
-ENDDATA              8          0                                 O222400200017 
-ENDSUBENT           16          0                                 O222400299999 
-SUBENT        O2224003   20151115                             O055O2224  3    1 
-BIB                  5          6                                 O2224  3    2 
+DETECTOR   (HPGE) HGGe with 15% relative efficiency, FWHM =       O2224  1   27 
+           2.2 keV at 1.33 MeV).                                  O2224  1   28 
+METHOD     (ACTIV)                                                O2224  1   29 
+           (STTA)                                                 O2224  1   30 
+           (BCINT)                                                O2224  1   31 
+ERR-ANALYS (ERR-T) The overall uncertainty.                       O2224  1   32 
+            Main sources of uncertainties:                        O2224  1   33 
+           (ERR-1,,2.).Error in the target thickness and          O2224  1   34 
+           uniformity                                             O2224  1   35 
+           (ERR-2,,2.).Error in integrated beam charge.           O2224  1   36 
+           (ERR-3,1.5,2.).Error in the calibration source         O2224  1   37 
+           uncertainty                                            O2224  1   38 
+           (ERR-4,,1.).Fitting of the detector efficiency curves  O2224  1   39 
+             with a typical overall relative type A error of 4.5%.O2224  1   40 
+           (EN-ERR) Uncertainty on the mean energy in each foil   O2224  1   41 
+           includes the energy uncertainty of the extracted beam, O2224  1   42 
+           the uncertainties in the mean mass thicknesses and the O2224  1   43 
+           beam energy straggling through the targets.            O2224  1   44 
+HISTORY    (20140717C) SB                                         O2224  1   45 
+           (20151115A).Correction in Decay-data sub.003 according O2224  1   46 
+           N.Otsuka remarks                                       O2224  1   47 
+           (20170406A) SD: Comment was added to Subent 007. Small O2224  1   48 
+           revision of ERR-ANALYS. DATA-ERR -> ERR-T in Subents   O2224  1   49 
+           002-019.EN-ERR values were corrected in Subents 002-009O2224  1   50 
+ENDBIB              48          0                                 O2224  1   51 
+NOCOMMON             0          0                                 O2224  1   52 
+ENDSUBENT           51          0                                 O2224  199999 
+SUBENT        O2224002   20170407                             O061O2224  2    1 
+BIB                  4          5                                 O2224  2    2 
+REACTION   (74-W-0(D,X)75-RE-181,,SIG)                            O2224  2    3 
+DECAY-DATA (75-RE-181,19.9HR,DG,953.42,0.0355)                    O2224  2    4 
+STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O2224  2    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T. En-ERR values were O2224  2    6 
+           corrected according to the Tbl.3 of  J,RCA,102,669,2014O2224  2    7 
+ENDBIB               5          0                                 O2224  2    8 
+NOCOMMON             0          0                                 O2224  2    9 
+DATA                 4          6                                 O2224  2   10 
+EN         EN-ERR     DATA       ERR-T                            O2224  2   11 
+MEV        MEV        MB         MB                               O2224  2   12 
+17.43      0.30       201.       12.                              O2224  2   13 
+16.39      0.36       119.       9.                               O2224  2   14 
+15.32      0.42       54.1       6.6                              O2224  2   15 
+14.58      0.23       12.0       0.6                              O2224  2   16 
+14.19      0.46       7.57       0.42                             O2224  2   17 
+13.87      0.25       1.72       0.13                             O2224  2   18 
+ENDDATA              8          0                                 O2224  2   19 
+ENDSUBENT           18          0                                 O2224  299999 
+SUBENT        O2224003   20170407                             O061O2224  3    1 
+BIB                  5          8                                 O2224  3    2 
 REACTION   (74-W-0(D,X)75-RE-182-M,,SIG)                          O2224  3    3 
 DECAY-DATA (75-RE-182-M,14.2HR,DG,470.32,0.02)                    O2224  3    4 
 COMMENT    *By Simone Manenti*.T1/2=14.2 +-0.6 hr was adopted in  O2224  3    5 
            the cross section derivation.(2015-07-07)              O2224  3    6 
-HISTORY    (20151115A).Correction in Decay-data                   O2224  3    7 
-STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O2224  3    8 
-ENDBIB               6          0                                 O2224  3    9 
-NOCOMMON             0          0                                 O2224  3   10 
-DATA                 4         16                                 O2224  3   11 
-EN         EN-ERR     DATA       DATA-ERR                         O2224  3   12 
-MEV        MEV        MB         MB                               O2224  3   13 
-17.43      0.43       205.       12.                              O2224  3   14 
-16.39      0.24       213.       12.                              O2224  3   15 
-15.32      0.47       217.       12.                              O2224  3   16 
-14.58      0.27       190.       9.                               O2224  3   17 
-14.19      0.29       192.       11.                              O2224  3   18 
-13.87      0.32       174.       9.                               O2224  3   19 
-13.14      0.29       165.       8.                               O2224  3   20 
-12.54      0.34       142.       7.                               O2224  3   21 
-12.38      0.30       143.       8.                               O2224  3   22 
-11.76      0.31       119.       6.                               O2224  3   23 
-10.94      0.28       78.4       4.0                              O2224  3   24 
-10.49      0.23       63.5       2.8                              O2224  3   25 
-10.08      0.31       51.2       2.7                              O2224  3   26 
-9.60       0.26       32.0       1.5                              O2224  3   27 
-8.67       0.29       16.2       0.8                              O2224  3   28 
-7.66       0.32       3.2        0.2                              O2224  3   29 
-ENDDATA             18          0                                 O2224  3   30 
-ENDSUBENT           29          0                                 O2224  399999 
-SUBENT        O2224004   20140717                             O053O222400400001 
-BIB                  3          3                                 O222400400002 
-REACTION   (74-W-0(D,X)75-RE-182-G,,SIG)                          O222400400003 
-DECAY-DATA (75-RE-182-G,64.0HR,DG,1427.37,0.0979)                 O222400400004 
-STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O222400400005 
-ENDBIB               3          0                                 O222400400006 
-NOCOMMON             0          0                                 O222400400007 
-DATA                 4         15                                 O222400400008 
-EN         EN-ERR     DATA       DATA-ERR                         O222400400009 
-MEV        MEV        MB         MB                               O222400400010 
-17.43      0.43       113.       3.                               O222400400011 
-16.39      0.24       105.       5.                               O222400400012 
-15.32      0.47       98.2       4.1                              O222400400013 
-14.58      0.27       77.5       3.5                              O222400400014 
-14.19      0.29       72.5       3.1                              O222400400015 
-13.87      0.32       67.0       3.0                              O222400400016 
-13.14      0.29       56.0       2.6                              O222400400017 
-12.54      0.34       41.9       1.9                              O222400400018 
-12.38      0.30       41.5       1.9                              O222400400019 
-11.76      0.31       30.8       1.4                              O222400400020 
-10.94      0.28       16.7       0.8                              O222400400021 
-10.49      0.23       12.3       0.1                              O222400400022 
-10.08      0.31       8.67       0.50                             O222400400023 
-9.60       0.26       5.16       0.03                             O222400400024 
-8.67       0.29       1.90       0.01                             O222400400025 
-ENDDATA             17          0                                 O222400400026 
-ENDSUBENT           25          0                                 O222400499999 
-SUBENT        O2224005   20140717                             O053O222400500001 
-BIB                  3          3                                 O222400500002 
-REACTION   (74-W-0(D,X)75-RE-183,,SIG)                            O222400500003 
-DECAY-DATA (75-RE-183,70.0D,DG,162.3913,0.233,DG,291.7298,0.03)   O222400500004 
-STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O222400500005 
-ENDBIB               3          0                                 O222400500006 
-NOCOMMON             0          0                                 O222400500007 
-DATA                 4         17                                 O222400500008 
-EN         EN-ERR     DATA       DATA-ERR                         O222400500009 
-MEV        MEV        MB         MB                               O222400500010 
-17.43      0.43       399.       17.                              O222400500011 
-16.39      0.24       346.       15.                              O222400500012 
-15.32      0.47       305.       13.                              O222400500013 
-14.58      0.27       259.       11.                              O222400500014 
-14.19      0.29       240.       11.                              O222400500015 
-13.87      0.32       220.       9.                               O222400500016 
-13.14      0.29       172.       7.                               O222400500017 
-12.54      0.34       129.       5.                               O222400500018 
-12.38      0.30       132.       6.                               O222400500019 
-11.76      0.31       108.       5.                               O222400500020 
-10.94      0.28       69.9       3.                               O222400500021 
-10.49      0.23       52.4       2.4                              O222400500022 
-10.08      0.31       47.2       2.0                              O222400500023 
-9.60       0.26       29.9       1.4                              O222400500024 
-8.67       0.29       18.9       0.9                              O222400500025 
-7.66       0.32       6.33       0.35                             O222400500026 
-6.57       0.34       1.18       0.08                             O222400500027 
-ENDDATA             19          0                                 O222400500028 
-ENDSUBENT           27          0                                 O222400599999 
-SUBENT        O2224006   20140717                             O053O222400600001 
-BIB                  3          3                                 O222400600002 
-REACTION   (74-W-0(D,X)75-RE-184-M,,SIG)                          O222400600003 
-DECAY-DATA (75-RE-184-M,169.D,DG,216.584,0.0942,DG,920.93,0.0813) O222400600004 
-STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O222400600005 
-ENDBIB               3          0                                 O222400600006 
-NOCOMMON             0          0                                 O222400600007 
-DATA                 4         13                                 O222400600008 
-EN         EN-ERR     DATA       DATA-ERR                         O222400600009 
-MEV        MEV        MB         MB                               O222400600010 
-17.43      0.43       19.0       1.0                              O222400600011 
-16.39      0.24       23.0       1.3                              O222400600012 
-15.32      0.47       27.4       1.4                              O222400600013 
-14.58      0.27       30.0       0.41                             O222400600014 
-14.19      0.29       27.1       1.5                              O222400600015 
-13.87      0.32       30.1       1.6                              O222400600016 
-13.14      0.29       28.1       1.6                              O222400600017 
-12.54      0.34       18.7       0.9                              O222400600018 
-12.38      0.30       21.1       1.2                              O222400600019 
-11.76      0.31       13.4       0.7                              O222400600020 
-10.94      0.28       6.92       0.40                             O222400600021 
-10.49      0.23       4.72       0.40                             O222400600022 
-10.08      0.31       3.16       0.23                             O222400600023 
-ENDDATA             15          0                                 O222400600024 
-ENDSUBENT           23          0                                 O222400699999 
-SUBENT        O2224007   20140717                             O053O222400700001 
-BIB                  3          3                                 O222400700002 
-REACTION   (74-W-0(D,X)75-RE-184-G,,SIG)                          O222400700003 
-DECAY-DATA (75-RE-184-G,38.D,DG,792.07,0.3746,DG,903.28,0.3788)   O222400700004 
-STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O222400700005 
-ENDBIB               3          0                                 O222400700006 
-NOCOMMON             0          0                                 O222400700007 
-DATA                 4         17                                 O222400700008 
-EN         EN-ERR     DATA       DATA-ERR                         O222400700009 
-MEV        MEV        MB         MB                               O222400700010 
-17.43      0.43       104.       4.                               O222400700011 
-16.39      0.24       122.       5.                               O222400700012 
-15.32      0.47       159.       7.                               O222400700013 
-14.58      0.27       167.       7.                               O222400700014 
-14.19      0.29       188.       8.                               O222400700015 
-13.87      0.32       193.       8.                               O222400700016 
-13.14      0.29       224.       9.                               O222400700017 
-12.54      0.34       199.       8.                               O222400700018 
-12.38      0.30       213.       9.                               O222400700019 
-11.76      0.31       187.       8.                               O222400700020 
-10.94      0.281      121.       5.                               O222400700021 
-10.49      0.23       99.9       4.2                              O222400700022 
-10.08      0.31       77.2       3.3                              O222400700023 
-9.60       0.26       53.1       2.2                              O222400700024 
-8.67       0.29       28.8       1.2                              O222400700025 
-7.66       0.32       7.71       0.35                             O222400700026 
-6.57       0.34       0.94       0.06                             O222400700027 
-ENDDATA             19          0                                 O222400700028 
-ENDSUBENT           27          0                                 O222400799999 
-SUBENT        O2224008   20140717                             O053O222400800001 
-BIB                  3          3                                 O222400800002 
-REACTION   (74-W-0(D,X)75-RE-186-G,,SIG)                          O222400800003 
-DECAY-DATA (75-RE-186-G,90.64HR,DG,122.58,0.0056,DG,137.15,0.0822)O222400800004 
-STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O222400800005 
-ENDBIB               3          0                                 O222400800006 
-NOCOMMON             0          0                                 O222400800007 
-DATA                 4         17                                 O222400800008 
-EN         EN-ERR     DATA       DATA-ERR                         O222400800009 
-MEV        MEV        MB         MB                               O222400800010 
-17.43      0.43       54.7       2.3                              O222400800011 
-16.39      0.24       63.4       2.7                              O222400800012 
-15.32      0.47       81.1       3.4                              O222400800013 
-14.58      0.27       94.3       4.9                              O222400800014 
-14.19      0.29       101.       4.                               O222400800015 
-13.87      0.32       112.       6.                               O222400800016 
-13.14      0.29       143.       7.                               O222400800017 
-12.54      0.34       141.       6.                               O222400800018 
-12.38      0.30       159.       8.                               O222400800019 
-11.76      0.31       156.       7.                               O222400800020 
-10.94      0.28       113.       5.                               O222400800021 
-10.49      0.23       94.8       4.3                              O222400800022 
-10.08      0.31       74.7       3.1                              O222400800023 
-9.60       0.26       51.3       2.5                              O222400800024 
-8.67       0.29       28.7       1.5                              O222400800025 
-7.66       0.32       8.23       0.50                             O222400800026 
-6.57       0.34       0.095      0.005                            O222400800027 
-ENDDATA             19          0                                 O222400800028 
-ENDSUBENT           27          0                                 O222400899999 
-SUBENT        O2224009   20140717                             O053O222400900001 
-BIB                  3          3                                 O222400900002 
-REACTION   (74-W-0(D,X)74-W-187,,SIG)                             O222400900003 
-DECAY-DATA (74-W-187,23.72HR,DG,479.531,0.2184,DG,685.774,0.273)  O222400900004 
-STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O222400900005 
-ENDBIB               3          0                                 O222400900006 
-NOCOMMON             0          0                                 O222400900007 
-DATA                 4         17                                 O222400900008 
-EN         EN-ERR     DATA       DATA-ERR                         O222400900009 
-MEV        MEV        MB         MB                               O222400900010 
-17.43      0.43       59.8       2.7                              O222400900011 
-16.39      0.24       63.1       2.9                              O222400900012 
-15.32      0.47       71.6       3.3                              O222400900013 
-14.58      0.27       67.7       3.0                              O222400900014 
-14.19      0.29       72.2       3.2                              O222400900015 
-13.87      0.32       73.0       3.3                              O222400900016 
-13.14      0.29       82.4       3.7                              O222400900017 
-12.54      0.34       76.3       3.3                              O222400900018 
-12.38      0.30       84.3       3.7                              O222400900019 
-11.76      0.31       80.9       3.5                              O222400900020 
-10.94      0.28       66.1       2.9                              O222400900021 
-10.49      0.23       62.2       2.7                              O222400900022 
-10.08      0.31       57.4       2.4                              O222400900023 
-9.60       0.26       43.9       1.9                              O222400900024 
-8.67       0.29       33.8       1.4                              O222400900025 
-7.66       0.32       14.9       0.6                              O222400900026 
-6.57       0.34       3.97       0.17                             O222400900027 
-ENDDATA             19          0                                 O222400900028 
-ENDSUBENT           27          0                                 O222400999999 
-SUBENT        O2224010   20140717                             O053O222401000001 
-BIB                  3          3                                 O222401000002 
-REACTION   (74-W-0(D,X)75-RE-181,,TTY,,PHY)                       O222401000003 
-DECAY-DATA (75-RE-181,19.9HR,DG,953.42,0.0355)                    O222401000004 
-STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O222401000005 
-ENDBIB               3          0                                 O222401000006 
-COMMON               1          3                                 O222401000007 
-EN-ERR                                                            O222401000008 
-MEV                                                               O222401000009 
-0.2                                                               O222401000010 
-ENDCOMMON            3          0                                 O222401000011 
-DATA                 3          2                                 O222401000012 
-EN         DATA       DATA-ERR                                    O222401000013 
-MEV        MBQ/COUL   MBQ/COUL                                    O222401000014 
-17.0       1334.      56.                                         O222401000015 
-15.0       56.        5.                                          O222401000016 
-ENDDATA              4          0                                 O222401000017 
-ENDSUBENT           16          0                                 O222401099999 
-SUBENT        O2224011   20140717                             O053O222401100001 
-BIB                  3          3                                 O222401100002 
-REACTION   (74-W-0(D,X)75-RE-182-M,,TTY,,PHY)                     O222401100003 
-DECAY-DATA (75-RE-182-M,13.74HR,DG,470.32,0.02)                   O222401100004 
-STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O222401100005 
-ENDBIB               3          0                                 O222401100006 
-COMMON               1          3                                 O222401100007 
-EN-ERR                                                            O222401100008 
-MEV                                                               O222401100009 
-0.2                                                               O222401100010 
-ENDCOMMON            3          0                                 O222401100011 
-DATA                 3          3                                 O222401100012 
-EN         DATA       DATA-ERR                                    O222401100013 
-MEV        MBQ/COUL   MBQ/COUL                                    O222401100014 
-17.0       17384.     808.                                        O222401100015 
-15.0       10794.     536.                                        O222401100016 
-11.0       1410.      103.                                        O222401100017 
-ENDDATA              5          0                                 O222401100018 
-ENDSUBENT           17          0                                 O222401199999 
-SUBENT        O2224012   20140717                             O053O222401200001 
-BIB                  3          3                                 O222401200002 
-REACTION   (74-W-0(D,X)75-RE-182-G,,TTY,,PHY)                     O222401200003 
-DECAY-DATA (75-RE-182-G,64.0HR,DG,1427.37,0.0979)                 O222401200004 
-STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O222401200005 
-ENDBIB               3          0                                 O222401200006 
-COMMON               1          3                                 O222401200007 
-EN-ERR                                                            O222401200008 
-MEV                                                               O222401200009 
-0.2                                                               O222401200010 
-ENDCOMMON            3          0                                 O222401200011 
-DATA                 3          3                                 O222401200012 
-EN         DATA       DATA-ERR                                    O222401200013 
-MEV        MBQ/COUL   MBQ/COUL                                    O222401200014 
-17.0       1200.      52.                                         O222401200015 
-15.0       575.       26.                                         O222401200016 
-11.0       46.5       3.0                                         O222401200017 
-ENDDATA              5          0                                 O222401200018 
-ENDSUBENT           17          0                                 O222401299999 
-SUBENT        O2224013   20140717                             O053O222401300001 
-BIB                  3          3                                 O222401300002 
-REACTION   (74-W-0(D,X)75-RE-183,,TTY,,PHY)                       O222401300003 
-DECAY-DATA (75-RE-183,70.0D,DG,162.3913,0.233,DG,291.7298,0.03)   O222401300004 
-STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O222401300005 
-ENDBIB               3          0                                 O222401300006 
-COMMON               1          3                                 O222401300007 
-EN-ERR                                                            O222401300008 
-MEV                                                               O222401300009 
-0.2                                                               O222401300010 
-ENDCOMMON            3          0                                 O222401300011 
-DATA                 3          3                                 O222401300012 
-EN         DATA       DATA-ERR                                    O222401300013 
-MEV        MBQ/COUL   MBQ/COUL                                    O222401300014 
-17.0       123.       5.                                          O222401300015 
-15.0       65.8       2.8                                         O222401300016 
-11.0       9.09       0.44                                        O222401300017 
-ENDDATA              5          0                                 O222401300018 
-ENDSUBENT           17          0                                 O222401399999 
-SUBENT        O2224014   20140717                             O053O222401400001 
-BIB                  3          3                                 O222401400002 
-REACTION   (74-W-0(D,X)75-RE-184-G,,TTY,,PHY)                     O222401400003 
-DECAY-DATA (75-RE-184-G,38.D,DG,792.07,0.3746,DG,903.28,0.3788)   O222401400004 
-STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O222401400005 
-ENDBIB               3          0                                 O222401400006 
-COMMON               1          3                                 O222401400007 
-EN-ERR                                                            O222401400008 
-MEV                                                               O222401400009 
-0.2                                                               O222401400010 
-ENDCOMMON            3          0                                 O222401400011 
-DATA                 3          3                                 O222401400012 
-EN         DATA       DATA-ERR                                    O222401400013 
-MEV        MBQ/COUL   MBQ/COUL                                    O222401400014 
-17.0       207.       9.                                          O222401400015 
-15.0       162.       7.                                          O222401400016 
-11.0       29.5       1.3                                         O222401400017 
-ENDDATA              5          0                                 O222401400018 
-ENDSUBENT           17          0                                 O222401499999 
-SUBENT        O2224015   20140717                             O053O222401500001 
-BIB                  3          3                                 O222401500002 
-REACTION   (74-W-0(D,X)75-RE-184-M,,TTY,,PHY)                     O222401500003 
-DECAY-DATA (75-RE-184-M,169.D,DG,216.584,0.0942,DG,920.93,0.0813) O222401500004 
-STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O222401500005 
-ENDBIB               3          0                                 O222401500006 
-COMMON               1          3                                 O222401500007 
-EN-ERR                                                            O222401500008 
-MEV                                                               O222401500009 
-0.2                                                               O222401500010 
-ENDCOMMON            3          0                                 O222401500011 
-DATA                 3          3                                 O222401500012 
-EN         DATA       DATA-ERR                                    O222401500013 
-MEV        MBQ/COUL   MBQ/COUL                                    O222401500014 
-17.0       6.77       0.28                                        O222401500015 
-15.0       3.84       0.21                                        O222401500016 
-11.0       0.28       0.03                                        O222401500017 
-ENDDATA              5          0                                 O222401500018 
-ENDSUBENT           17          0                                 O222401599999 
-SUBENT        O2224016   20140717                             O053O222401600001 
-BIB                  3          3                                 O222401600002 
-REACTION   (74-W-0(D,X)75-RE-186-G,,TTY,,PHY)                     O222401600003 
-DECAY-DATA (75-RE-186-G,90.64HR,DG,122.58,0.0056,DG,137.15,0.0822)O222401600004 
-STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O222401600005 
-ENDBIB               3          0                                 O222401600006 
-COMMON               1          3                                 O222401600007 
-EN-ERR                                                            O222401600008 
-MEV                                                               O222401600009 
-0.2                                                               O222401600010 
-ENDCOMMON            3          0                                 O222401600011 
-DATA                 3          3                                 O222401600012 
-EN         DATA       DATA-ERR                                    O222401600013 
-MEV        MBQ/COUL   MBQ/COUL                                    O222401600014 
-17.0       1532.      76.                                         O222401600015 
-15.0       1188.      58.                                         O222401600016 
-11.0       293.       15.                                         O222401600017 
-ENDDATA              5          0                                 O222401600018 
-ENDSUBENT           17          0                                 O222401699999 
-SUBENT        O2224017   20140717                             O053O222401700001 
-BIB                  4          5                                 O222401700002 
-REACTION   (74-W-186(D,X)75-RE-186-G,,TTY,,PHY/A)                 O222401700003 
-DECAY-DATA (75-RE-186-G,90.64HR,DG,122.58,0.0056,DG,137.15,0.0822)O222401700004 
-STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O222401700005 
-COMMENT    *By Simone Maneti,20140917*.Value in table 4 at        O222401700006 
-           13.4 MeV must be 748+/-25 MBq/C                        O222401700007 
-ENDBIB               5          0                                 O222401700008 
-COMMON               1          3                                 O222401700009 
-EN-ERR                                                            O222401700010 
-MEV                                                               O222401700011 
-0.2                                                               O222401700012 
-ENDCOMMON            3          0                                 O222401700013 
-DATA                 3          1                                 O222401700014 
-EN         DATA       DATA-ERR                                    O222401700015 
-MEV        MBQ/COUL   MBQ/COUL                                    O222401700016 
-13.4       748.       25.                                         O222401700017 
-ENDDATA              3          0                                 O222401700018 
-ENDSUBENT           17          0                                 O222401799999 
-SUBENT        O2224018   20140717                             O053O222401800001 
-BIB                  3          3                                 O222401800002 
-REACTION   (74-W-0(D,X)74-W-187,,TTY,,PHY)                        O222401800003 
-DECAY-DATA (74-W-187,23.72HR,DG,479.531,0.2184,DG,685.774,0.273)  O222401800004 
-STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O222401800005 
-ENDBIB               3          0                                 O222401800006 
-COMMON               1          3                                 O222401800007 
-EN-ERR                                                            O222401800008 
-MEV                                                               O222401800009 
-0.2                                                               O222401800010 
-ENDCOMMON            3          0                                 O222401800011 
-DATA                 3          3                                 O222401800012 
-EN         DATA       DATA-ERR                                    O222401800013 
-MEV        MBQ/COUL   MBQ/COUL                                    O222401800014 
-17.0       3979.      165.                                        O222401800015 
-15.0       3082.      133.                                        O222401800016 
-11.0       970.       41.                                         O222401800017 
-ENDDATA              5          0                                 O222401800018 
-ENDSUBENT           17          0                                 O222401899999 
-SUBENT        O2224019   20140717                             O053O222401900001 
-BIB                  3          3                                 O222401900002 
-REACTION   (74-W-186(D,X)74-W-187,,TTY,,PHY/A)                    O222401900003 
-DECAY-DATA (74-W-187,23.72HR,DG,479.531,0.2184,DG,685.774,0.273)  O222401900004 
-STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O222401900005 
-ENDBIB               3          0                                 O222401900006 
-COMMON               1          3                                 O222401900007 
-EN-ERR                                                            O222401900008 
-MEV                                                               O222401900009 
-0.2                                                               O222401900010 
-ENDCOMMON            3          0                                 O222401900011 
-DATA                 3          1                                 O222401900012 
-EN         DATA       DATA-ERR                                    O222401900013 
-MEV        MBQ/COUL   MBQ/COUL                                    O222401900014 
-13.4       1487.      61.                                         O222401900015 
-ENDDATA              3          0                                 O222401900016 
-ENDSUBENT           15          0                                 O222401999999 
+STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O2224  3    7 
+HISTORY    (20151115A).Correction in Decay-data                   O2224  3    8 
+           (20170406A) SD:  DATA-ERR -> ERR-T. En-ERR values were O2224  3    9 
+           corrected according to the Tbl.3 of  J,RCA,102,669,2014O2224  3   10 
+ENDBIB               8          0                                 O2224  3   11 
+NOCOMMON             0          0                                 O2224  3   12 
+DATA                 4         16                                 O2224  3   13 
+EN         EN-ERR     DATA       ERR-T                            O2224  3   14 
+MEV        MEV        MB         MB                               O2224  3   15 
+17.43      0.30       205.       12.                              O2224  3   16 
+16.39      0.36       213.       12.                              O2224  3   17 
+15.32      0.42       217.       12.                              O2224  3   18 
+14.58      0.23       190.       9.                               O2224  3   19 
+14.19      0.46       192.       11.                              O2224  3   20 
+13.87      0.25       174.       9.                               O2224  3   21 
+13.14      0.28       165.       8.                               O2224  3   22 
+12.54      0.23       142.       7.                               O2224  3   23 
+12.38      0.30       143.       8.                               O2224  3   24 
+11.76      0.26       119.       6.                               O2224  3   25 
+10.94      0.28       78.4       4.0                              O2224  3   26 
+10.49      0.23       63.5       2.8                              O2224  3   27 
+10.08      0.31       51.2       2.7                              O2224  3   28 
+9.60       0.26       32.0       1.5                              O2224  3   29 
+8.67       0.29       16.2       0.8                              O2224  3   30 
+7.66       0.32       3.2        0.2                              O2224  3   31 
+ENDDATA             18          0                                 O2224  3   32 
+ENDSUBENT           31          0                                 O2224  399999 
+SUBENT        O2224004   20170407                             O061O2224  4    1 
+BIB                  4          5                                 O2224  4    2 
+REACTION   (74-W-0(D,X)75-RE-182-G,,SIG)                          O2224  4    3 
+DECAY-DATA (75-RE-182-G,64.0HR,DG,1427.37,0.0979)                 O2224  4    4 
+STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O2224  4    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T. En-ERR values were O2224  4    6 
+           corrected according to the Tbl.3 of  J,RCA,102,669,2014O2224  4    7 
+ENDBIB               5          0                                 O2224  4    8 
+NOCOMMON             0          0                                 O2224  4    9 
+DATA                 4         15                                 O2224  4   10 
+EN         EN-ERR     DATA       ERR-T                            O2224  4   11 
+MEV        MEV        MB         MB                               O2224  4   12 
+17.43      0.30       113.       3.                               O2224  4   13 
+16.39      0.36       105.       5.                               O2224  4   14 
+15.32      0.42       98.2       4.1                              O2224  4   15 
+14.58      0.23       77.5       3.5                              O2224  4   16 
+14.19      0.46       72.5       3.1                              O2224  4   17 
+13.87      0.25       67.0       3.0                              O2224  4   18 
+13.14      0.28       56.0       2.6                              O2224  4   19 
+12.54      0.23       41.9       1.9                              O2224  4   20 
+12.38      0.30       41.5       1.9                              O2224  4   21 
+11.76      0.26       30.8       1.4                              O2224  4   22 
+10.94      0.28       16.7       0.8                              O2224  4   23 
+10.49      0.23       12.3       0.1                              O2224  4   24 
+10.08      0.31       8.67       0.50                             O2224  4   25 
+9.60       0.26       5.16       0.03                             O2224  4   26 
+8.67       0.29       1.90       0.01                             O2224  4   27 
+ENDDATA             17          0                                 O2224  4   28 
+ENDSUBENT           27          0                                 O2224  499999 
+SUBENT        O2224005   20170407                             O061O2224  5    1 
+BIB                  4          5                                 O2224  5    2 
+REACTION   (74-W-0(D,X)75-RE-183,,SIG)                            O2224  5    3 
+DECAY-DATA (75-RE-183,70.0D,DG,162.3913,0.233,DG,291.7298,0.03)   O2224  5    4 
+STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O2224  5    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T. En-ERR values were O2224  5    6 
+           corrected according to the Tbl.3 of  J,RCA,102,669,2014O2224  5    7 
+ENDBIB               5          0                                 O2224  5    8 
+NOCOMMON             0          0                                 O2224  5    9 
+DATA                 4         17                                 O2224  5   10 
+EN         EN-ERR     DATA       ERR-T                            O2224  5   11 
+MEV        MEV        MB         MB                               O2224  5   12 
+17.43      0.30       399.       17.                              O2224  5   13 
+16.39      0.36       346.       15.                              O2224  5   14 
+15.32      0.42       305.       13.                              O2224  5   15 
+14.58      0.23       259.       11.                              O2224  5   16 
+14.19      0.46       240.       11.                              O2224  5   17 
+13.87      0.25       220.       9.                               O2224  5   18 
+13.14      0.28       172.       7.                               O2224  5   19 
+12.54      0.23       129.       5.                               O2224  5   20 
+12.38      0.30       132.       6.                               O2224  5   21 
+11.76      0.26       108.       5.                               O2224  5   22 
+10.94      0.28       69.9       3.                               O2224  5   23 
+10.49      0.23       52.4       2.4                              O2224  5   24 
+10.08      0.31       47.2       2.0                              O2224  5   25 
+9.60       0.26       29.9       1.4                              O2224  5   26 
+8.67       0.29       18.9       0.9                              O2224  5   27 
+7.66       0.32       6.33       0.35                             O2224  5   28 
+6.57       0.34       1.18       0.08                             O2224  5   29 
+ENDDATA             19          0                                 O2224  5   30 
+ENDSUBENT           29          0                                 O2224  599999 
+SUBENT        O2224006   20170407                             O061O2224  6    1 
+BIB                  4          5                                 O2224  6    2 
+REACTION   (74-W-0(D,X)75-RE-184-M,,SIG)                          O2224  6    3 
+DECAY-DATA (75-RE-184-M,169.D,DG,216.584,0.0942,DG,920.93,0.0813) O2224  6    4 
+STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O2224  6    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T. En-ERR values were O2224  6    6 
+           corrected according to the Tbl.3 of  J,RCA,102,669,2014O2224  6    7 
+ENDBIB               5          0                                 O2224  6    8 
+NOCOMMON             0          0                                 O2224  6    9 
+DATA                 4         13                                 O2224  6   10 
+EN         EN-ERR     DATA       ERR-T                            O2224  6   11 
+MEV        MEV        MB         MB                               O2224  6   12 
+17.43      0.30       19.0       1.0                              O2224  6   13 
+16.39      0.36       23.0       1.3                              O2224  6   14 
+15.32      0.42       27.4       1.4                              O2224  6   15 
+14.58      0.23       30.0       0.41                             O2224  6   16 
+14.19      0.46       27.1       1.5                              O2224  6   17 
+13.87      0.25       30.1       1.6                              O2224  6   18 
+13.14      0.28       28.1       1.6                              O2224  6   19 
+12.54      0.23       18.7       0.9                              O2224  6   20 
+12.38      0.30       21.1       1.2                              O2224  6   21 
+11.76      0.26       13.4       0.7                              O2224  6   22 
+10.94      0.28       6.92       0.40                             O2224  6   23 
+10.49      0.23       4.72       0.40                             O2224  6   24 
+10.08      0.31       3.16       0.23                             O2224  6   25 
+ENDDATA             15          0                                 O2224  6   26 
+ENDSUBENT           25          0                                 O2224  699999 
+SUBENT        O2224007   20170407                             O061O2224  7    1 
+BIB                  5         11                                 O2224  7    2 
+REACTION   (74-W-0(D,X)75-RE-184-G,,SIG)                          O2224  7    3 
+DECAY-DATA (75-RE-184-G,38.D,DG,792.07,0.3746,DG,903.28,0.3788)   O2224  7    4 
+COMMENT    By S.Manenti (2016-12-22): 184mRe contribution not     O2224  7    5 
+           subtracted. Only the measurements of the first few daysO2224  7    6 
+           after the end of bombardment were used to determine    O2224  7    7 
+           the cross-section of Re-184g: in this case the         O2224  7    8 
+           contribution of the Re-184m is quite negligible.       O2224  7    9 
+STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O2224  7   10 
+HISTORY    (20170406A) SD: Comment from author was added.         O2224  7   11 
+            DATA-ERR -> ERR-T. En-ERR values were corrected       O2224  7   12 
+           according to the Tbl.3 of  J,RCA,102,669,2014          O2224  7   13 
+ENDBIB              11          0                                 O2224  7   14 
+NOCOMMON             0          0                                 O2224  7   15 
+DATA                 4         17                                 O2224  7   16 
+EN         EN-ERR     DATA       ERR-T                            O2224  7   17 
+MEV        MEV        MB         MB                               O2224  7   18 
+17.43      0.30       104.       4.                               O2224  7   19 
+16.39      0.36       122.       5.                               O2224  7   20 
+15.32      0.42       159.       7.                               O2224  7   21 
+14.58      0.23       167.       7.                               O2224  7   22 
+14.19      0.46       188.       8.                               O2224  7   23 
+13.87      0.25       193.       8.                               O2224  7   24 
+13.14      0.28       224.       9.                               O2224  7   25 
+12.54      0.23       199.       8.                               O2224  7   26 
+12.38      0.30       213.       9.                               O2224  7   27 
+11.76      0.26       187.       8.                               O2224  7   28 
+10.94      0.28       121.       5.                               O2224  7   29 
+10.49      0.23       99.9       4.2                              O2224  7   30 
+10.08      0.31       77.2       3.3                              O2224  7   31 
+9.60       0.26       53.1       2.2                              O2224  7   32 
+8.67       0.29       28.8       1.2                              O2224  7   33 
+7.66       0.32       7.71       0.35                             O2224  7   34 
+6.57       0.34       0.94       0.06                             O2224  7   35 
+ENDDATA             19          0                                 O2224  7   36 
+ENDSUBENT           35          0                                 O2224  799999 
+SUBENT        O2224008   20170407                             O061O2224  8    1 
+BIB                  4          5                                 O2224  8    2 
+REACTION   (74-W-0(D,X)75-RE-186-G,,SIG)                          O2224  8    3 
+DECAY-DATA (75-RE-186-G,90.64HR,DG,122.58,0.0056,DG,137.15,0.0822)O2224  8    4 
+STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O2224  8    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T. En-ERR values were O2224  8    6 
+           corrected according to the Tbl.3 of  J,RCA,102,669,2014O2224  8    7 
+ENDBIB               5          0                                 O2224  8    8 
+NOCOMMON             0          0                                 O2224  8    9 
+DATA                 4         17                                 O2224  8   10 
+EN         EN-ERR     DATA       ERR-T                            O2224  8   11 
+MEV        MEV        MB         MB                               O2224  8   12 
+17.43      0.30       54.7       2.3                              O2224  8   13 
+16.39      0.36       63.4       2.7                              O2224  8   14 
+15.32      0.42       81.1       3.4                              O2224  8   15 
+14.58      0.23       94.3       4.9                              O2224  8   16 
+14.19      0.46       101.       4.                               O2224  8   17 
+13.87      0.25       112.       6.                               O2224  8   18 
+13.14      0.28       143.       7.                               O2224  8   19 
+12.54      0.23       141.       6.                               O2224  8   20 
+12.38      0.30       159.       8.                               O2224  8   21 
+11.76      0.26       156.       7.                               O2224  8   22 
+10.94      0.28       113.       5.                               O2224  8   23 
+10.49      0.23       94.8       4.3                              O2224  8   24 
+10.08      0.31       74.7       3.1                              O2224  8   25 
+9.60       0.26       51.3       2.5                              O2224  8   26 
+8.67       0.29       28.7       1.5                              O2224  8   27 
+7.66       0.32       8.23       0.50                             O2224  8   28 
+6.57       0.34       0.095      0.005                            O2224  8   29 
+ENDDATA             19          0                                 O2224  8   30 
+ENDSUBENT           29          0                                 O2224  899999 
+SUBENT        O2224009   20170407                             O061O2224  9    1 
+BIB                  4          5                                 O2224  9    2 
+REACTION   (74-W-0(D,X)74-W-187,,SIG)                             O2224  9    3 
+DECAY-DATA (74-W-187,23.72HR,DG,479.531,0.2184,DG,685.774,0.273)  O2224  9    4 
+STATUS     (TABLE).Table 3  of J,RCA,102,669,2014                 O2224  9    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T. En-ERR values were O2224  9    6 
+           corrected according to the Tbl.3 of  J,RCA,102,669,2014O2224  9    7 
+ENDBIB               5          0                                 O2224  9    8 
+NOCOMMON             0          0                                 O2224  9    9 
+DATA                 4         17                                 O2224  9   10 
+EN         EN-ERR     DATA       ERR-T                            O2224  9   11 
+MEV        MEV        MB         MB                               O2224  9   12 
+17.43      0.30       59.8       2.7                              O2224  9   13 
+16.39      0.36       63.1       2.9                              O2224  9   14 
+15.32      0.42       71.6       3.3                              O2224  9   15 
+14.58      0.23       67.7       3.0                              O2224  9   16 
+14.19      0.46       72.2       3.2                              O2224  9   17 
+13.87      0.25       73.0       3.3                              O2224  9   18 
+13.14      0.28       82.4       3.7                              O2224  9   19 
+12.54      0.23       76.3       3.3                              O2224  9   20 
+12.38      0.30       84.3       3.7                              O2224  9   21 
+11.76      0.26       80.9       3.5                              O2224  9   22 
+10.94      0.28       66.1       2.9                              O2224  9   23 
+10.49      0.23       62.2       2.7                              O2224  9   24 
+10.08      0.31       57.4       2.4                              O2224  9   25 
+9.60       0.26       43.9       1.9                              O2224  9   26 
+8.67       0.29       33.8       1.4                              O2224  9   27 
+7.66       0.32       14.9       0.6                              O2224  9   28 
+6.57       0.34       3.97       0.17                             O2224  9   29 
+ENDDATA             19          0                                 O2224  9   30 
+ENDSUBENT           29          0                                 O2224  999999 
+SUBENT        O2224010   20170407                             O061O2224 10    1 
+BIB                  4          4                                 O2224 10    2 
+REACTION   (74-W-0(D,X)75-RE-181,,TTY,,PHY)                       O2224 10    3 
+DECAY-DATA (75-RE-181,19.9HR,DG,953.42,0.0355)                    O2224 10    4 
+STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O2224 10    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T.                    O2224 10    6 
+ENDBIB               4          0                                 O2224 10    7 
+COMMON               1          3                                 O2224 10    8 
+EN-ERR                                                            O2224 10    9 
+MEV                                                               O2224 10   10 
+0.2                                                               O2224 10   11 
+ENDCOMMON            3          0                                 O2224 10   12 
+DATA                 3          2                                 O2224 10   13 
+EN         DATA       ERR-T                                       O2224 10   14 
+MEV        MBQ/COUL   MBQ/COUL                                    O2224 10   15 
+17.0       1334.      56.                                         O2224 10   16 
+15.0       56.        5.                                          O2224 10   17 
+ENDDATA              4          0                                 O2224 10   18 
+ENDSUBENT           17          0                                 O2224 1099999 
+SUBENT        O2224011   20170407                             O061O2224 11    1 
+BIB                  4          4                                 O2224 11    2 
+REACTION   (74-W-0(D,X)75-RE-182-M,,TTY,,PHY)                     O2224 11    3 
+DECAY-DATA (75-RE-182-M,13.74HR,DG,470.32,0.02)                   O2224 11    4 
+STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O2224 11    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T.                    O2224 11    6 
+ENDBIB               4          0                                 O2224 11    7 
+COMMON               1          3                                 O2224 11    8 
+EN-ERR                                                            O2224 11    9 
+MEV                                                               O2224 11   10 
+0.2                                                               O2224 11   11 
+ENDCOMMON            3          0                                 O2224 11   12 
+DATA                 3          3                                 O2224 11   13 
+EN         DATA       ERR-T                                       O2224 11   14 
+MEV        MBQ/COUL   MBQ/COUL                                    O2224 11   15 
+17.0       17384.     808.                                        O2224 11   16 
+15.0       10794.     536.                                        O2224 11   17 
+11.0       1410.      103.                                        O2224 11   18 
+ENDDATA              5          0                                 O2224 11   19 
+ENDSUBENT           18          0                                 O2224 1199999 
+SUBENT        O2224012   20170407                             O061O2224 12    1 
+BIB                  4          4                                 O2224 12    2 
+REACTION   (74-W-0(D,X)75-RE-182-G,,TTY,,PHY)                     O2224 12    3 
+DECAY-DATA (75-RE-182-G,64.0HR,DG,1427.37,0.0979)                 O2224 12    4 
+STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O2224 12    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T.                    O2224 12    6 
+ENDBIB               4          0                                 O2224 12    7 
+COMMON               1          3                                 O2224 12    8 
+EN-ERR                                                            O2224 12    9 
+MEV                                                               O2224 12   10 
+0.2                                                               O2224 12   11 
+ENDCOMMON            3          0                                 O2224 12   12 
+DATA                 3          3                                 O2224 12   13 
+EN         DATA       ERR-T                                       O2224 12   14 
+MEV        MBQ/COUL   MBQ/COUL                                    O2224 12   15 
+17.0       1200.      52.                                         O2224 12   16 
+15.0       575.       26.                                         O2224 12   17 
+11.0       46.5       3.0                                         O2224 12   18 
+ENDDATA              5          0                                 O2224 12   19 
+ENDSUBENT           18          0                                 O2224 1299999 
+SUBENT        O2224013   20170407                             O061O2224 13    1 
+BIB                  4          4                                 O2224 13    2 
+REACTION   (74-W-0(D,X)75-RE-183,,TTY,,PHY)                       O2224 13    3 
+DECAY-DATA (75-RE-183,70.0D,DG,162.3913,0.233,DG,291.7298,0.03)   O2224 13    4 
+STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O2224 13    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T.                    O2224 13    6 
+ENDBIB               4          0                                 O2224 13    7 
+COMMON               1          3                                 O2224 13    8 
+EN-ERR                                                            O2224 13    9 
+MEV                                                               O2224 13   10 
+0.2                                                               O2224 13   11 
+ENDCOMMON            3          0                                 O2224 13   12 
+DATA                 3          3                                 O2224 13   13 
+EN         DATA       ERR-T                                       O2224 13   14 
+MEV        MBQ/COUL   MBQ/COUL                                    O2224 13   15 
+17.0       123.       5.                                          O2224 13   16 
+15.0       65.8       2.8                                         O2224 13   17 
+11.0       9.09       0.44                                        O2224 13   18 
+ENDDATA              5          0                                 O2224 13   19 
+ENDSUBENT           18          0                                 O2224 1399999 
+SUBENT        O2224014   20170407                             O061O2224 14    1 
+BIB                  4          4                                 O2224 14    2 
+REACTION   (74-W-0(D,X)75-RE-184-G,,TTY,,PHY)                     O2224 14    3 
+DECAY-DATA (75-RE-184-G,38.D,DG,792.07,0.3746,DG,903.28,0.3788)   O2224 14    4 
+STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O2224 14    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T.                    O2224 14    6 
+ENDBIB               4          0                                 O2224 14    7 
+COMMON               1          3                                 O2224 14    8 
+EN-ERR                                                            O2224 14    9 
+MEV                                                               O2224 14   10 
+0.2                                                               O2224 14   11 
+ENDCOMMON            3          0                                 O2224 14   12 
+DATA                 3          3                                 O2224 14   13 
+EN         DATA       ERR-T                                       O2224 14   14 
+MEV        MBQ/COUL   MBQ/COUL                                    O2224 14   15 
+17.0       207.       9.                                          O2224 14   16 
+15.0       162.       7.                                          O2224 14   17 
+11.0       29.5       1.3                                         O2224 14   18 
+ENDDATA              5          0                                 O2224 14   19 
+ENDSUBENT           18          0                                 O2224 1499999 
+SUBENT        O2224015   20170407                             O061O2224 15    1 
+BIB                  4          4                                 O2224 15    2 
+REACTION   (74-W-0(D,X)75-RE-184-M,,TTY,,PHY)                     O2224 15    3 
+DECAY-DATA (75-RE-184-M,169.D,DG,216.584,0.0942,DG,920.93,0.0813) O2224 15    4 
+STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O2224 15    5 
+HISTORY    (20170406A) SD:  DATA-ERR -> ERR-T.                    O2224 15    6 
+ENDBIB               4          0                                 O2224 15    7 
+COMMON               1          3                                 O2224 15    8 
+EN-ERR                                                            O2224 15    9 
+MEV                                                               O2224 15   10 
+0.2                                                               O2224 15   11 
+ENDCOMMON            3          0                                 O2224 15   12 
+DATA                 3          3                                 O2224 15   13 
+EN         DATA       ERR-T                                       O2224 15   14 
+MEV        MBQ/COUL   MBQ/COUL                                    O2224 15   15 
+17.0       6.77       0.28                                        O2224 15   16 
+15.0       3.84       0.21                                        O2224 15   17 
+11.0       0.28       0.03                                        O2224 15   18 
+ENDDATA              5          0                                 O2224 15   19 
+ENDSUBENT           18          0                                 O2224 1599999 
+SUBENT        O2224016   20170407                             O061O2224 16    1 
+BIB                  5          6                                 O2224 16    2 
+REACTION   (74-W-0(D,X)75-RE-186-G,,TTY,,PHY)                     O2224 16    3 
+DECAY-DATA (75-RE-186-G,90.64HR,DG,122.58,0.0056,DG,137.15,0.0822)O2224 16    4 
+CORRECTION Data have been corrected for the auto-absorption effectO2224 16    5 
+           caused by tungsten.                                    O2224 16    6 
+STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O2224 16    7 
+HISTORY    (20170406A) SD: DATA-ERR -> ERR-T. CORRECTION was addedO2224 16    8 
+ENDBIB               6          0                                 O2224 16    9 
+COMMON               1          3                                 O2224 16   10 
+EN-ERR                                                            O2224 16   11 
+MEV                                                               O2224 16   12 
+0.2                                                               O2224 16   13 
+ENDCOMMON            3          0                                 O2224 16   14 
+DATA                 3          3                                 O2224 16   15 
+EN         DATA       ERR-T                                       O2224 16   16 
+MEV        MBQ/COUL   MBQ/COUL                                    O2224 16   17 
+17.0       1532.      76.                                         O2224 16   18 
+15.0       1188.      58.                                         O2224 16   19 
+11.0       293.       15.                                         O2224 16   20 
+ENDDATA              5          0                                 O2224 16   21 
+ENDSUBENT           20          0                                 O2224 1699999 
+SUBENT        O2224017   20170407                             O061O2224 17    1 
+BIB                  6          8                                 O2224 17    2 
+REACTION   (74-W-186(D,X)75-RE-186-G,,TTY,,PHY/A)                 O2224 17    3 
+DECAY-DATA (75-RE-186-G,90.64HR,DG,122.58,0.0056,DG,137.15,0.0822)O2224 17    4 
+CORRECTION Data have been corrected for the auto-absorption effectO2224 17    5 
+           caused by tungsten.                                    O2224 17    6 
+COMMENT    *By Simone Maneti,20140917*. Value in table 4 at       O2224 17    7 
+           13.4 MeV must be 748+/-25 MBq/C                        O2224 17    8 
+STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O2224 17    9 
+HISTORY    (20170406A) SD: DATA-ERR -> ERR-T. CORRECTION was addedO2224 17   10 
+ENDBIB               8          0                                 O2224 17   11 
+COMMON               1          3                                 O2224 17   12 
+EN-ERR                                                            O2224 17   13 
+MEV                                                               O2224 17   14 
+0.2                                                               O2224 17   15 
+ENDCOMMON            3          0                                 O2224 17   16 
+DATA                 3          1                                 O2224 17   17 
+EN         DATA       ERR-T                                       O2224 17   18 
+MEV        MBQ/COUL   MBQ/COUL                                    O2224 17   19 
+13.4       748.       25.                                         O2224 17   20 
+ENDDATA              3          0                                 O2224 17   21 
+ENDSUBENT           20          0                                 O2224 1799999 
+SUBENT        O2224018   20170407                             O061O2224 18    1 
+BIB                  5          6                                 O2224 18    2 
+REACTION   (74-W-0(D,X)74-W-187,,TTY,,PHY)                        O2224 18    3 
+DECAY-DATA (74-W-187,23.72HR,DG,479.531,0.2184,DG,685.774,0.273)  O2224 18    4 
+CORRECTION Data have been corrected for the auto-absorption effectO2224 18    5 
+           caused by tungsten.                                    O2224 18    6 
+STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O2224 18    7 
+HISTORY    (20170406A) SD: DATA-ERR -> ERR-T. CORRECTION was addedO2224 18    8 
+ENDBIB               6          0                                 O2224 18    9 
+COMMON               1          3                                 O2224 18   10 
+EN-ERR                                                            O2224 18   11 
+MEV                                                               O2224 18   12 
+0.2                                                               O2224 18   13 
+ENDCOMMON            3          0                                 O2224 18   14 
+DATA                 3          3                                 O2224 18   15 
+EN         DATA       ERR-T                                       O2224 18   16 
+MEV        MBQ/COUL   MBQ/COUL                                    O2224 18   17 
+17.0       3979.      165.                                        O2224 18   18 
+15.0       3082.      133.                                        O2224 18   19 
+11.0       970.       41.                                         O2224 18   20 
+ENDDATA              5          0                                 O2224 18   21 
+ENDSUBENT           20          0                                 O2224 1899999 
+SUBENT        O2224019   20170407                             O061O2224 19    1 
+BIB                  5          6                                 O2224 19    2 
+REACTION   (74-W-186(D,X)74-W-187,,TTY,,PHY/A)                    O2224 19    3 
+DECAY-DATA (74-W-187,23.72HR,DG,479.531,0.2184,DG,685.774,0.273)  O2224 19    4 
+CORRECTION Data have been corrected for the auto-absorption effectO2224 19    5 
+           caused by tungsten.                                    O2224 19    6 
+STATUS     (TABLE).Table 4  of J,RCA,102,669,2014                 O2224 19    7 
+HISTORY    (20170406A) SD: DATA-ERR -> ERR-T. CORRECTION was addedO2224 19    8 
+ENDBIB               6          0                                 O2224 19    9 
+COMMON               1          3                                 O2224 19   10 
+EN-ERR                                                            O2224 19   11 
+MEV                                                               O2224 19   12 
+0.2                                                               O2224 19   13 
+ENDCOMMON            3          0                                 O2224 19   14 
+DATA                 3          1                                 O2224 19   15 
+EN         DATA       ERR-T                                       O2224 19   16 
+MEV        MBQ/COUL   MBQ/COUL                                    O2224 19   17 
+13.4       1487.      61.                                         O2224 19   18 
+ENDDATA              3          0                                 O2224 19   19 
+ENDSUBENT           18          0                                 O2224 1999999 
 ENDENTRY            19          0                                 O222499999999 
