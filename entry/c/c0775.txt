@@ -1,109 +1,234 @@
-ENTRY            C0775   20180718                             C178C0775  0    1 
-SUBENT        C0775001   20180718                             C178C0775  1    1 
-BIB                 10         19                                 C0775  1    2 
-TITLE      Use of the (p,n) Reaction to Measure Proton Atomic     C0775  1    3 
-           Stopping Powers in Ag, Cd, In, and Sn                  C0775  1    4 
-AUTHOR     (C.H.Johnson,R.L.Kernell)                              C0775  1    5 
-REFERENCE  (J,PR,169,974,1968)                                    C0775  1    6 
-           #doi:10.1103/PhysRev.169.974                           C0775  1    7 
-REL-REF    (N,,C.H.Johnson+,J,PR/C,20,2052,1979) Review article.  C0775  1    8 
-           #doi:10.1103/PhysRevC.20.2052                          C0775  1    9 
-INSTITUTE  (1USAORL)                                              C0775  1   10 
-FACILITY   (VDG,1USAORL)                                          C0775  1   11 
-METHOD     (BCINT)                                                C0775  1   12 
-DETECTOR   (BF3) 4pi graphite-sphere with eight BF3 counters      C0775  1   13 
-            embedded near its surface.                            C0775  1   14 
-CORRECTION Corrected for:                                         C0775  1   15 
-           . deadtime,                                            C0775  1   16 
-           . background,                                          C0775  1   17 
-           . neutron capture in target,                           C0775  1   18 
-           . target nonuniformities.                              C0775  1   19 
-HISTORY    (20010122C) VM                                         C0775  1   20 
-           (20180718U) BP: added doi, review article.             C0775  1   21 
-ENDBIB              19          0                                 C0775  1   22 
-NOCOMMON             0          0                                 C0775  1   23 
-ENDSUBENT           22          0                                 C0775  199999 
-SUBENT        C0775002   20010130                             0000C077500200001 
-BIB                  3          4                                 C077500200002 
-REACTION   (47-AG-0(P,N),,SIG)                                    C077500200003 
-SAMPLE     Natural silver sample with areal density 3.93 mg/cm2.  C077500200004 
-STATUS     (UNOBT) Data given in Fig. 4a of Phys.Rev.C, 20, 2052  C077500200005 
-            (1979) as Exp. 4.                                     C077500200006 
-ENDBIB               4          0                                 C077500200007 
-NOCOMMON             0          0                                 C077500200008 
-NODATA               0          0                                 C077500200009 
-ENDSUBENT            8          0                                 C077500299999 
-SUBENT        C0775003   20010130                             0000C077500300001 
-BIB                  3          4                                 C077500300002 
-REACTION   (48-CD-0(P,N),,SIG)                                    C077500300003 
-SAMPLE     Natural cadmium sample with areal density 2.59 mg/cm2. C077500300004 
-STATUS     (UNOBT) Data given in Fig. 7a of Phys.Rev.C, 20, 2052  C077500300005 
-            (1979) as Exp. 4.                                     C077500300006 
-ENDBIB               4          0                                 C077500300007 
-NOCOMMON             0          0                                 C077500300008 
-NODATA               0          0                                 C077500300009 
-ENDSUBENT            8          0                                 C077500399999 
-SUBENT        C0775004   20010130                             0000C077500400001 
-BIB                  4          5                                 C077500400002 
-REACTION   (49-IN-0(P,N),,SIG)                                    C077500400003 
-SAMPLE     Natural indium sample with areal density 3.91 mg/cm2.  C077500400004 
-ERR-ANALYS Systematic uncertainty given as 1.0% in Phys.Rev.C, 20,C077500400005 
-            2052 (1979).                                          C077500400006 
-STATUS     Data taken from Table II of Phys.Rev.C, 2, 639 (1970). C077500400007 
-ENDBIB               5          0                                 C077500400008 
-NOCOMMON             0          0                                 C077500400009 
-DATA                 2         20                                 C077500400010 
-EN         DATA                                                   C077500400011 
-KEV        MB                                                     C077500400012 
-2581.        0.0119                                               C077500400013 
-2803.        0.035                                                C077500400014 
-2941.        0.066                                                C077500400015 
-3034.        0.100                                                C077500400016 
-3273.        0.248                                                C077500400017 
-3520.        0.578                                                C077500400018 
-3776.        1.24                                                 C077500400019 
-3907.        1.78                                                 C077500400020 
-4039.        2.53                                                 C077500400021 
-4174.        3.48                                                 C077500400022 
-4311.        4.82                                                 C077500400023 
-4450.        6.61                                                 C077500400024 
-4590.        8.79                                                 C077500400025 
-4733.       11.68                                                 C077500400026 
-4878.       15.42                                                 C077500400027 
-5025.       19.8                                                  C077500400028 
-5174.       25.4                                                  C077500400029 
-5325.       31.9                                                  C077500400030 
-5478.       39.5                                                  C077500400031 
-5633.       48.8                                                  C077500400032 
-ENDDATA             22          0                                 C077500400033 
+ENTRY            C0775   20220629                             C223C0775000    1 
+SUBENT        C0775001   20220629                             C223C0775001    1 
+BIB                  9         26                                 C0775001    2 
+TITLE      Use of the (p,n) reaction to measure proton atomic     C0775001    3 
+           stopping powers in Ag, Cd, in, and Sn                  C0775001    4 
+AUTHOR     (C.H.Johnson,R.L.Kernell)                              C0775001    5 
+REFERENCE  (J,PR,169,974,1968)                                    C0775001    6 
+           #doi:10.1103/PhysRev.169.974                           C0775001    7 
+           (J,PR/C,2,639,1970) Tabulated data.                    C0775001    8 
+           #doi:10.1103/PhysRevC.2.639                            C0775001    9 
+           (J,PR/C,20,2052,1979) Review article.                  C0775001   10 
+           #doi:10.1103/PhysRevc.20.2052                          C0775001   11 
+INSTITUTE  (1USAORL)                                              C0775001   12 
+FACILITY   (VDG,1USAORL)                                          C0775001   13 
+METHOD     (BCINT)                                                C0775001   14 
+DETECTOR   (BF3) 4pi graphite-sphere with eight BF3 counters      C0775001   15 
+            embedded near its surface.                            C0775001   16 
+CORRECTION Corrected for:                                         C0775001   17 
+           . deadtime,                                            C0775001   18 
+           . background,                                          C0775001   19 
+           . neutron capture in target,                           C0775001   20 
+           . target nonuniformities.                              C0775001   21 
+HISTORY    (20010122C) VM                                         C0775001   22 
+           (20180718U) BP: added doi, review article.             C0775001   23 
+           (20220629A) BP: Updated entry, added tabulated data    C0775001   24 
+           reference, digitized data (unobtainable data) per an   C0775001   25 
+           NRDC decision for data sets that were published        C0775001   26 
+           before 2000 (C32 of WP2022-01) for subentries 2-3,     C0775001   27 
+           added smooth cross section curves.                     C0775001   28 
+ENDBIB              26          0                                 C0775001   29 
+NOCOMMON             0          0                                 C0775001   30 
+ENDSUBENT           29          0                                 C077500199999 
+SUBENT        C0775002   20220629                             C223C0775002    1 
+BIB                  5         17                                 C0775002    2 
+REACTION   (47-AG-0(P,N),,SIG,,REL) Ratios to a smooth curve.     C0775002    3 
+SAMPLE     Natural silver sample with areal density 3.93 mg/cm2.  C0775002    4 
+ERR-ANALYS (DATA-ERR) The error bars on the points in the         C0775002    5 
+           figures represent random errors not including          C0775002    6 
+           additions in quadrature of the proton, neutron, and    C0775002    7 
+           target systematic uncertainties. They are              C0775002    8 
+           combinations in quadrature of the uncertainties from   C0775002    9 
+           counting statistics, deadtime corrections, random      C0775002   10 
+           energy fluctuations, and background subtractions.      C0775002   11 
+           (ERR-1) We estimated the background uncertainties to   C0775002   12 
+           be 10% of the amount subtracted for the target backing.C0775002   13 
+STATUS     (DEP,C0775006)                                         C0775002   14 
+           (CURVE) Fig. 4a, page 2058 of J,PR/C,20,2052,1979      C0775002   15 
+           as exp. 4.                                             C0775002   16 
+HISTORY    (20220629A) BP: Digitized data, corrected reaction     C0775002   17 
+           string, added explanation and ERR-ANALYS, updated      C0775002   18 
+           STATUS.                                                C0775002   19 
+ENDBIB              17          0                                 C0775002   20 
+COMMON               1          3                                 C0775002   21 
+ERR-1                                                             C0775002   22 
+PER-CENT                                                          C0775002   23 
+       10.0                                                       C0775002   24 
+ENDCOMMON            3          0                                 C0775002   25 
+DATA                 3         15                                 C0775002   26 
+EN         DATA       DATA-ERR                                    C0775002   27 
+MEV        ARB-UNITS  ARB-UNITS                                   C0775002   28 
+      2.787      1.004      0.012                                 C0775002   29 
+      2.926      0.994      0.011                                 C0775002   30 
+      3.108      0.995      0.011                                 C0775002   31 
+      3.259      0.988      0.011                                 C0775002   32 
+      3.543      1.005      0.010                                 C0775002   33 
+      3.760      1.013      0.011                                 C0775002   34 
+      4.021      1.005                                            C0775002   35 
+      4.299      1.004      0.007                                 C0775002   36 
+      4.583      1.002                                            C0775002   37 
+      4.867      1.005      0.010                                 C0775002   38 
+      5.164      1.002                                            C0775002   39 
+      5.321      1.017                                            C0775002   40 
+      5.472      1.007                                            C0775002   41 
+      5.617      0.996                                            C0775002   42 
+      5.775      0.998                                            C0775002   43 
+ENDDATA             17          0                                 C0775002   44 
+ENDSUBENT           43          0                                 C077500299999 
+SUBENT        C0775003   20220629                             C223C0775003    1 
+BIB                  5         17                                 C0775003    2 
+REACTION   (48-CD-0(P,N),,SIG,,REL) Ratios to a smooth curve.     C0775003    3 
+SAMPLE     Natural cadmium sample with areal density 2.59 mg/cm2. C0775003    4 
+ERR-ANALYS (DATA-ERR) The error bars on the points in the         C0775003    5 
+           figures represent random errors not including          C0775003    6 
+           additions in quadrature of the proton, neutron, and    C0775003    7 
+           target systematic uncertainties. They are              C0775003    8 
+           combinations in quadrature of the uncertainties from   C0775003    9 
+           counting statistics, deadtime corrections, random      C0775003   10 
+           energy fluctuations, and background subtractions.      C0775003   11 
+           (ERR-1) We estimated the background uncertainties to   C0775003   12 
+           be 10% of the amount subtracted for the target backing.C0775003   13 
+STATUS     (DEP,C0775007)                                         C0775003   14 
+           (CURVE) Fig. 7a, page 2060 of J,PR/C,20,2052,1979      C0775003   15 
+           as exp. 4.                                             C0775003   16 
+HISTORY    (20220629A) BP: Digitized data, corrected reaction     C0775003   17 
+           string, added explanation and ERR-ANALYS, updated      C0775003   18 
+           STATUS.                                                C0775003   19 
+ENDBIB              17          0                                 C0775003   20 
+COMMON               1          3                                 C0775003   21 
+ERR-1                                                             C0775003   22 
+PER-CENT                                                          C0775003   23 
+       10.0                                                       C0775003   24 
+ENDCOMMON            3          0                                 C0775003   25 
+DATA                 3         12                                 C0775003   26 
+EN         DATA       DATA-ERR                                    C0775003   27 
+MEV        ARB-UNITS  ARB-UNITS                                   C0775003   28 
+      2.607      0.475      0.018                                 C0775003   29 
+      2.965      0.517                                            C0775003   30 
+      3.296      0.539                                            C0775003   31 
+      3.542      0.650                                            C0775003   32 
+      3.793      0.692                                            C0775003   33 
+      4.056      0.723                                            C0775003   34 
+      4.330      0.741                                            C0775003   35 
+      4.627      0.733                                            C0775003   36 
+      4.896      0.776                                            C0775003   37 
+      5.175      0.799                                            C0775003   38 
+      5.489      0.819                                            C0775003   39 
+      5.802      0.827                                            C0775003   40 
+ENDDATA             14          0                                 C0775003   41 
+ENDSUBENT           40          0                                 C077500399999 
+SUBENT        C0775004   20220629                             C223C0775004    1 
+BIB                  4          5                                 C0775004    2 
+REACTION   (49-IN-0(P,N),,SIG)                                    C0775004    3 
+SAMPLE     Natural indium sample with areal density 3.91 mg/cm2.  C0775004    4 
+ERR-ANALYS Systematic uncertainty given as 1.0% in                C0775004    5 
+           J,PR/C,20,2052,1979.                                   C0775004    6 
+STATUS     (TABLE) Table II, page 643 of J,PR/C,2,639,1970.       C0775004    7 
+ENDBIB               5          0                                 C0775004    8 
+NOCOMMON             0          0                                 C0775004    9 
+DATA                 2         20                                 C0775004   10 
+EN         DATA                                                   C0775004   11 
+KEV        MB                                                     C0775004   12 
+      2581.     0.0119                                            C0775004   13 
+      2803.      0.035                                            C0775004   14 
+      2941.      0.066                                            C0775004   15 
+      3034.      0.100                                            C0775004   16 
+      3273.      0.248                                            C0775004   17 
+      3520.      0.578                                            C0775004   18 
+      3776.       1.24                                            C0775004   19 
+      3907.       1.78                                            C0775004   20 
+      4039.       2.53                                            C0775004   21 
+      4174.       3.48                                            C0775004   22 
+      4311.       4.82                                            C0775004   23 
+      4450.       6.61                                            C0775004   24 
+      4590.       8.79                                            C0775004   25 
+      4733.      11.68                                            C0775004   26 
+      4878.      15.42                                            C0775004   27 
+      5025.       19.8                                            C0775004   28 
+      5174.       25.4                                            C0775004   29 
+      5325.       31.9                                            C0775004   30 
+      5478.       39.5                                            C0775004   31 
+      5633.       48.8                                            C0775004   32 
+ENDDATA             22          0                                 C0775004   33 
 ENDSUBENT           32          0                                 C077500499999 
-SUBENT        C0775005   20010130                             0000C077500500001 
-BIB                  4          4                                 C077500500002 
-REACTION   (50-SN-0(P,N),,SIG)                                    C077500500003 
-SAMPLE     Natural tin sample with areal density 3.97 mg/cm2.     C077500500004 
-ERR-ANALYS No information on uncertainties.                       C077500500005 
-STATUS     Data taken from Table II of Phys.Rev.C, 2, 639 (1970). C077500500006 
-ENDBIB               4          0                                 C077500500007 
-NOCOMMON             0          0                                 C077500500008 
-DATA                 2         16                                 C077500500009 
-EN         DATA                                                   C077500500010 
-KEV        MB                                                     C077500500011 
-2581.        0.0022                                               C077500500012 
-2803.        0.0072                                               C077500500013 
-2941.        0.0141                                               C077500500014 
-3106.        0.0279                                               C077500500015 
-3273.        0.0547                                               C077500500016 
-3520.        0.180                                                C077500500017 
-3776.        0.589                                                C077500500018 
-4039.        1.29                                                 C077500500019 
-4311.        2.66                                                 C077500500020 
-4590.        5.79                                                 C077500500021 
-4878.       11.07                                                 C077500500022 
-5174.       19.1                                                  C077500500023 
-5325.       24.0                                                  C077500500024 
-5478.       30.5                                                  C077500500025 
-5633.       38.8                                                  C077500500026 
-5791.       49.6                                                  C077500500027 
-ENDDATA             18          0                                 C077500500028 
+SUBENT        C0775005   20220629                             C223C0775005    1 
+BIB                  4          4                                 C0775005    2 
+REACTION   (50-SN-0(P,N),,SIG)                                    C0775005    3 
+SAMPLE     Natural tin sample with areal density 3.97 mg/cm2.     C0775005    4 
+ERR-ANALYS No information on uncertainties.                       C0775005    5 
+STATUS     (TABLE) Table II, page 643 of J,PR/C,2,639,1970.       C0775005    6 
+ENDBIB               4          0                                 C0775005    7 
+NOCOMMON             0          0                                 C0775005    8 
+DATA                 2         16                                 C0775005    9 
+EN         DATA                                                   C0775005   10 
+KEV        MB                                                     C0775005   11 
+      2581.     0.0022                                            C0775005   12 
+      2803.     0.0072                                            C0775005   13 
+      2941.     0.0141                                            C0775005   14 
+      3106.     0.0279                                            C0775005   15 
+      3273.     0.0547                                            C0775005   16 
+      3520.      0.180                                            C0775005   17 
+      3776.      0.589                                            C0775005   18 
+      4039.       1.29                                            C0775005   19 
+      4311.       2.66                                            C0775005   20 
+      4590.       5.79                                            C0775005   21 
+      4878.      11.07                                            C0775005   22 
+      5174.       19.1                                            C0775005   23 
+      5325.       24.0                                            C0775005   24 
+      5478.       30.5                                            C0775005   25 
+      5633.       38.8                                            C0775005   26 
+      5791.       49.6                                            C0775005   27 
+ENDDATA             18          0                                 C0775005   28 
 ENDSUBENT           27          0                                 C077500599999 
-ENDENTRY             5          0                                 C077599999999 
+SUBENT        C0775006   20220715                             C223C0775006    1 
+BIB                  5          7                                 C0775006    2 
+REACTION   (47-AG-0(P,N),,SIG) Smooth cross sections.             C0775006    3 
+SAMPLE     Natural samples, areal densities 2.36 and 3.92 mg/cm2  C0775006    4 
+ANALYSIS   Interpolation between adjacent energies is done using  C0775006    5 
+           exp(-B/E) with B determined by the ratio of cross      C0775006    6 
+           sections at the adjacent energies.                     C0775006    7 
+STATUS     (TABLE) Table III, page 2056 of J,PR/C,20,2052,1979.   C0775006    8 
+HISTORY    (20220629C) BP                                         C0775006    9 
+ENDBIB               7          0                                 C0775006   10 
+NOCOMMON             0          0                                 C0775006   11 
+DATA                 2          9                                 C0775006   12 
+EN         DATA                                                   C0775006   13 
+MEV        MB                                                     C0775006   14 
+       2.75     0.0333                                            C0775006   15 
+       3.00      0.162                                            C0775006   16 
+       3.25      0.415                                            C0775006   17 
+       3.50      0.950                                            C0775006   18 
+       4.00       3.63                                            C0775006   19 
+       4.50      10.43                                            C0775006   20 
+       5.00       24.9                                            C0775006   21 
+       5.50       49.3                                            C0775006   22 
+       6.00       85.9                                            C0775006   23 
+ENDDATA             11          0                                 C0775006   24 
+ENDSUBENT           23          0                                 C077500699999 
+SUBENT        C0775007   20220715                             C223C0775007    1 
+BIB                  5          7                                 C0775007    2 
+REACTION   (48-CD-116(P,N)49-IN-116,,SIG) Smooth cross sections.  C0775007    3 
+SAMPLE     (48-CD-116,ENR=0.938) Areal density 1.92 mg/cm2        C0775007    4 
+ANALYSIS   Interpolation between adjacent energies is done using  C0775007    5 
+           exp(-B/E) with B determined by the ratio of cross      C0775007    6 
+           sections at the adjacent energies.                     C0775007    7 
+STATUS     (TABLE) Table III, page 2056 of J,PR/C,20,2052,1979.   C0775007    8 
+HISTORY    (20220629C) BP                                         C0775007    9 
+ENDBIB               7          0                                 C0775007   10 
+NOCOMMON             0          0                                 C0775007   11 
+DATA                 2         10                                 C0775007   12 
+EN         DATA                                                   C0775007   13 
+MEV        MB                                                     C0775007   14 
+        2.5     0.0132                                            C0775007   15 
+       2.75     0.0466                                            C0775007   16 
+       3.00      0.138                                            C0775007   17 
+       3.25      0.357                                            C0775007   18 
+       3.50      0.826                                            C0775007   19 
+       4.00       3.39                                            C0775007   20 
+       4.50      10.54                                            C0775007   21 
+       5.00       26.4                                            C0775007   22 
+       5.50       54.8                                            C0775007   23 
+       6.00       96.9                                            C0775007   24 
+ENDDATA             12          0                                 C0775007   25 
+ENDSUBENT           24          0                                 C077500799999 
+ENDENTRY             7          0                                 C077599999999 
