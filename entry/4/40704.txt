@@ -1,26 +1,65 @@
-ENTRY            40704   19850513                             00004070400000001 
-SUBENT        40704001   19850513                             00004070400100001 
-BIB                 10         17                                 4070400100002 
-INSTITUTE  (4CCPFEI)                                              4070400100003 
-REFERENCE  (J,AE,58,(2),131,8502)                                 4070400100004 
-           (P,FEI-1406,83)  EXPERIMENTAL DETAILS                  4070400100005 
-AUTHOR     (A.A.LYCHAGIN,G.V.KOTEL'NIKOVA,B.V.DEVKIN,             4070400100006 
-           V.A.VINOGRADOV,A.N.MIRONOV,O.A.SAL'NIKOV)              4070400100007 
-TITLE       DIFFERENTIAL INELASTIC NEUTRON CROSS-SECTION OW       4070400100008 
-            NIOBIUM NUCLEI AT THE NEUTRON ENERGY 14 MEV           4070400100009 
-FACILITY   (VDG)  CASCADE GENERATOR KG-0.3                        4070400100010 
-METHOD     (TOF) FLIGHT BASE 2.4 M AND 7.M, RESOLUTION 1.3 AND    4070400100011 
-                 0.65 NSEC/M                                      4070400100012 
-DETECTOR   (STANK)                                                4070400100013 
-           (LONGC)  FOR NEUTRON FLUX MONITORING                   4070400100014 
-MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           4070400100015 
-           (1-H-1(N,EL)1-H-1,,SIG)                                4070400100016 
-           (6-C-12(N,INL)6-C-12,PAR,SIG)                          4070400100017 
-STATUS     (APRVD)  KOTEL'NIKOVA,8410                             4070400100018 
-HISTORY    (850513C)                                              4070400100019 
-ENDBIB              17          0                                 4070400100020 
-NOCOMMON             0          0                                 4070400100021 
-ENDSUBENT           20          0                                 4070400199999 
+ENTRY            40704   20180322                             417840704  0    1 
+SUBENT        40704001   20180322                             417840704  1    1 
+BIB                 14         52                                 40704  1    2 
+INSTITUTE  (4RUSFEI)                                              40704  1    3 
+REFERENCE  (J,AE,58,131,1985) Issue 2                             40704  1    4 
+           (J,SJA,58,152,1985) Engl.transl.of J,AE,58,131,1985    40704  1    5 
+           (P,FEI-1406,1983)  Experimental details                40704  1    6 
+AUTHOR     (A.A.Lychagin,G.V.Kotel'nikova,B.V.Devkin,             40704  1    7 
+           V.A.Vinogradov,A.N.Mironov,O.A.Sal'nikov)              40704  1    8 
+TITLE       Differential cross-section for inelastic scattering of40704  1    9 
+           14-MeV neutrons by niobium                             40704  1   10 
+FACILITY   (VDG,4RUSFEI)  Cascade generator KG-0.3                40704  1   11 
+INC-SOURCE (D-T)                                                  40704  1   12 
+METHOD     (TOF) Flight base 2.4 m and 7.m, resolution 1.3 and    40704  1   13 
+                 0.65 nsec/m                                      40704  1   14 
+SAMPLE     Hollow cylinders of 45 mm long, 45mm outside diameter, 40704  1   15 
+           outside diameter 35mm for 2.4m base, 15mm for 7m base. 40704  1   16 
+DETECTOR   (STANK) NE-218 liquid scintillator with HR-2041        40704  1   17 
+           photomultiplier. For scattered neutron detection.      40704  1   18 
+           Efficiency was determined by Cf-252 SF neutron spectra 40704  1   19 
+           of T=1.42 keV.                                         40704  1   20 
+           (LONGC)  For neutron flux monitoring                   40704  1   21 
+MONITOR    (13-AL-27(N,A)11-NA-24,,SIG) For absolute flux via     40704  1   22 
+           activation of Al foils.                                40704  1   23 
+           (1-H-1(N,EL)1-H-1,,SIG)                                40704  1   24 
+           (6-C-12(N,INL)6-C-12,PAR,SIG)                          40704  1   25 
+             Via polyethylene of 1cm diameter, 5cm high.          40704  1   26 
+           Each of 3 normalizations had accuracy ~5%,all 3 results40704  1   27 
+           differ < 3% from each other.                           40704  1   28 
+CORRECTION  For multiple scattering calculated by Monte Carlo     40704  1   29 
+           method.                                                40704  1   30 
+ERR-ANALYS (ERR-T) Total error - root of squared errors .         40704  1   31 
+            Statistical error:                                    40704  1   32 
+            for 7.m base - 1.1% for 1MeV, 4.2 % for 12 MeV;       40704  1   33 
+            for 2.4 base - 0.6% for 1MeV, 11.1 % for 12 MeV       40704  1   34 
+            scattered neutrons.                                   40704  1   35 
+            Sources of systematical uncertainty -                 40704  1   36 
+           (ERR-1) channel bin - 0.5%                             40704  1   37 
+           (ERR-2,,0.5) Flight base                               40704  1   38 
+           (ERR-3) detection efficiency 4.%                       40704  1   39 
+           (ERR-4) monitoring - 1%                                40704  1   40 
+           (ERR-5) correction for neutron beam attenuation and    40704  1   41 
+           multiple scattering 4%                                 40704  1   42 
+           (ERR-6,,0.3) LAB -> CM calculation                     40704  1   43 
+           (ERR-7) differential non-linearity, average for energy 40704  1   44 
+           range -0.5%                                            40704  1   45 
+           (ERR-8) distance target-sample determination 3.7%      40704  1   46 
+STATUS     (APRVD)  Kotel'nikova,1984-10                          40704  1   47 
+           (TABLE) From author.                                   40704  1   48 
+            Data are on Fig.1 of SJA,58,152,1985                  40704  1   49 
+HISTORY    (19850513C)                                            40704  1   50 
+           (20180322A) M.M. Upper -> lower case correction.       40704  1   51 
+            Dates were corrected for 4-digits year.               40704  1   52 
+            Ref. SJA,58,152,1985 was added.                       40704  1   53 
+            ERR-ANALYS ( from FEI-1406) was added.                40704  1   54 
+ENDBIB              52          0                                 40704  1   55 
+COMMON               6          3                                 40704  1   56 
+ERR-1      ERR-3      ERR-4      ERR-5      ERR-7      ERR-8      40704  1   57 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   40704  1   58 
+ 0.5        4.         1.         4.         0.5        3.7       40704  1   59 
+ENDCOMMON            3          0                                 40704  1   60 
+ENDSUBENT           59          0                                 40704  199999 
 SUBENT        40704002   19860417                             00004070400200001 
 BIB                  1          1                                 4070400200002 
 REACTION   (41-NB-93(N,INL)41-NB-93,,DA/DE)                       4070400200003 

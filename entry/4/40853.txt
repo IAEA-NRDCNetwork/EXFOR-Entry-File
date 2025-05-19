@@ -1,58 +1,74 @@
-ENTRY            40853   19850429                             00004085300000001 
-SUBENT        40853001   19850429                             00004085300100001 
-BIB                  9         16                                 4085300100002 
-INSTITUTE  (4CCPRI)                                               4085300100003 
-           (4CCPSUL)                                              4085300100004 
-REFERENCE  (J,AE,56,(4),212,8404)                                 4085300100005 
-AUTHOR     (E.A.GROMOVA,S.S.KOVALENKO,JU.A.NEMILOV,JU.A.SELICKIJ, 4085300100006 
-           A.B.STEPANOV,A.M.FRIDKIN,V.B.FUNSHTEIN,V.A.JAKOVLEV,   4085300100007 
-           G.V.VAL'SKIJ,G.A.PETROV)                               4085300100008 
-TITLE        FISSION CROSS-SECTION FOR SHORT-LIVING ISOMER        4085300100009 
-             NP-236 BY THERMAL NEUTRONS                           4085300100010 
-FACILITY   (REAC,4CCPRI)                                          4085300100011 
-           (CYCLO,4CCPSUL)                                        4085300100012 
-SAMPLE       NP-236 NUCLEI WERE OBTAINED IN THE REACTION U-236(D, 4085300100013 
-             2N)NP-236 ON THE CYCLOTRON AND SEPARATED BY RADIOCHE-4085300100014 
-             MICAL METHOD, NP-236 MASS IS 0.016 NANOGRAM          4085300100015 
-DETECTOR   (TRD) MICA TRACK DETECTOR                              4085300100016 
-HISTORY    (850429C)                                              4085300100017 
-ERR-ANALYS (ERR-1) ERROR DUE TO THE NP-236 NUMBER UNCERTAINTY     4085300100018 
-ENDBIB              16          0                                 4085300100019 
-COMMON               2          3                                 4085300100020 
-ERR-1      ERR-S                                                  4085300100021 
-PER-CENT   PER-CENT                                               4085300100022 
- 4.0000E+00 3.0000E+00                                            4085300100023 
-ENDCOMMON            3          0                                 4085300100024 
-ENDSUBENT           23          0                                 4085300199999 
-SUBENT        40853002   19860206                             00004085300200001 
-BIB                  4          5                                 4085300200002 
-REACTION   (93-NP-236-M(N,F),,SIG,,MXW)                           4085300200003 
-INC-SPECT   THERMAL REACTOR SPECTRUM WHITH CADMIUM RATIO 10       4085300200004 
-DECAY-DATA (93-NP-236-M,22.5HR,B-,,0.48)                          4085300200005 
-MONITOR    (92-U-235(N,F),,SIG)                                   4085300200006 
-           (94-PU-236(N,F),,SIG)                                  4085300200007 
-ENDBIB               5          0                                 4085300200008 
-NOCOMMON             0          0                                 4085300200009 
-DATA                 8          1                                 4085300200010 
-EN-DUMMY   DATA       ERR-T      MONIT1     MONIT1-ERR MONIT2     4085300200011 
-MONIT2-ERR EN-NRM                                                 4085300200012 
-EV         B          B          B          B          B          4085300200013 
-B          EV                                                     4085300200014 
- 2.5000E-02 2.7400E+03 1.4000E+02 5.8350E+02 1.3000E+00 1.6500E+024085300200015 
- 2.0000E+01 2.5000E-02                                            4085300200016 
-ENDDATA              6          0                                 4085300200017 
-ENDSUBENT           16          0                                 4085300299999 
-SUBENT        40853003   19850429                             00004085300300001 
-BIB                  2          3                                 4085300300002 
-REACTION   (93-NP-236-M(N,F),,RI)                                 4085300300003 
-MONITOR    (92-U-235(N,F),,RI)                                    4085300300004 
-           (94-PU-236(N,F),,RI)                                   4085300300005 
-ENDBIB               3          0                                 4085300300006 
-NOCOMMON             0          0                                 4085300300007 
-DATA                 6          1                                 4085300300008 
-EN-MIN     DATA       ERR-T      MONIT1     MONIT1-ERR MONIT2     4085300300009 
-EV         B          B          B          B          B          4085300300010 
- 6.0000E-01 7.0000E+02 4.0000E+02 2.7500E+02 5.0000E+00 9.6000E+024085300300011 
-ENDDATA              3          0                                 4085300300012 
-ENDSUBENT           11          0                                 4085300399999 
+ENTRY            40853   20180303                             417840853  0    1 
+SUBENT        40853001   20180303                             417840853  1    1 
+BIB                  8         21                                 40853  1    2 
+INSTITUTE  (4RUSRI)                                               40853  1    3 
+           (4RUSSUL)                                              40853  1    4 
+REFERENCE  (J,AE,56,212,1984) Issue 4                             40853  1    5 
+           (J,SJA,56,230,1984) Engl.transl.of J,AE,56,212,1984    40853  1    6 
+AUTHOR     (E.A.Gromova,S.S.Kovalenko,Yu.A.Nemilov,Yu.A.Selitskii,40853  1    7 
+           A.B.Stepanov,A.M.Fridkin,V.B.Funshtein,V.A.Yakovlev,   40853  1    8 
+           G.V.Val'skiI,G.A.Petrov)                               40853  1    9 
+TITLE       Thermal-neutron fission cross section of the          40853  1   10 
+            short-lived isomer of 236Np                           40853  1   11 
+FACILITY   (REAC,4RUSRI)                                          40853  1   12 
+           (CYCLO,4RUSSUL) Deuteron energy 12.6 MeV.              40853  1   13 
+SAMPLE       Np-236 nuclei were obtained in the reaction          40853  1   14 
+            U-236(d,2n)Np-236 on the cyclotron and separated by   40853  1   15 
+           radiochemical method. Np-236 mass is 0.016 nanogram at 40853  1   16 
+           the beginning of measurement at the reactor.           40853  1   17 
+DETECTOR   (TRD) Mica track detectors. Efficiency 96+-1 %.        40853  1   18 
+HISTORY    (19850429C)                                            40853  1   19 
+           (20180303A) M.M. Upper -> lower case correction.       40853  1   20 
+           Dates were corrected for 4-digits year.                40853  1   21 
+           Ref. SJA,56,230,1984 was added.                        40853  1   22 
+           ERR-ANALYS was corrected. BIB information was added.   40853  1   23 
+ENDBIB              21          0                                 40853  1   24 
+NOCOMMON             0          0                                 40853  1   25 
+ENDSUBENT           24          0                                 40853  199999 
+SUBENT        40853002   20180303                             417840853  2    1 
+BIB                  6         13                                 40853  2    2 
+REACTION   (93-NP-236-M(N,F),,SIG,,MXW)                           40853  2    3 
+INC-SPECT   Thermal reactor spectrum with  cadmium ratio 10.0+-0.340853  2    4 
+           for U-235 and Cd thickness 2mm.                        40853  2    5 
+DECAY-DATA (93-NP-236-M,22.5HR,B-,,0.48)                          40853  2    6 
+            22.5+-0.4 HR , 0.48+-0.01                             40853  2    7 
+MONITOR    ((MONIT1)92-U-235(N,F),,SIG)                           40853  2    8 
+           ((MONIT2)94-PU-236(N,F),,SIG)                          40853  2    9 
+            See formula (2) for CS calculation by monitors.       40853  2   10 
+ERR-ANALYS (ERR-T) Mean-square error , main contributions from:   40853  2   11 
+           (ERR-1) Error due to the Np-236 number uncertainty     40853  2   12 
+           (ERR-2)     Random component of parameter F error( see 40853  2   13 
+           formula (2) in SJA,56,230,1984 )                       40853  2   14 
+STATUS     (TABLE) Text, page 232 of SJA,56,230,1984              40853  2   15 
+ENDBIB              13          0                                 40853  2   16 
+COMMON               2          3                                 40853  2   17 
+ERR-1      ERR-2                                                  40853  2   18 
+PER-CENT   PER-CENT                                               40853  2   19 
+ 3.         4.                                                    40853  2   20 
+ENDCOMMON            3          0                                 40853  2   21 
+DATA                 8          1                                 40853  2   22 
+EN-DUMMY   DATA       ERR-T      MONIT1     MONIT1-ERR MONIT2     40853  2   23 
+MONIT2-ERR EN-NRM                                                 40853  2   24 
+EV         B          B          B          B          B          40853  2   25 
+B          EV                                                     40853  2   26 
+ 2.5000E-02 2740.      140.       583.5      1.3        165.      40853  2   27 
+ 20.        2.5000E-02                                            40853  2   28 
+ENDDATA              6          0                                 40853  2   29 
+ENDSUBENT           28          0                                 40853  299999 
+SUBENT        40853003   20180303                             417840853  3    1 
+BIB                  4          6                                 40853  3    2 
+REACTION   (93-NP-236-M(N,F),,RI)                                 40853  3    3 
+MONITOR    ((MONIT1)92-U-235(N,F),,RI)                            40853  3    4 
+           ((MONIT2)94-PU-236(N,F),,RI)                           40853  3    5 
+            See formulas (3,4) for RI calculation by monitors.    40853  3    6 
+ERR-ANALYS (DATA-ERR) Total error                                 40853  3    7 
+STATUS     (TABLE) Text, page 232 of SJA,56,230,1984              40853  3    8 
+ENDBIB               6          0                                 40853  3    9 
+NOCOMMON             0          0                                 40853  3   10 
+DATA                 6          1                                 40853  3   11 
+EN-MIN     DATA       DATA-ERR   MONIT1     MONIT1-ERR MONIT2     40853  3   12 
+EV         B          B          B          B          B          40853  3   13 
+ 0.6        700.       400.       275.       5.         960.      40853  3   14 
+ENDDATA              3          0                                 40853  3   15 
+ENDSUBENT           14          0                                 40853  399999 
 ENDENTRY             3          0                                 4085399999999 
