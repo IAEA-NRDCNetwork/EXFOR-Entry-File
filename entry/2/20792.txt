@@ -1,8 +1,8 @@
-ENTRY            20792   20211220                             230620792  0    1 
-SUBENT        20792001   20211220                             230620792  1    1 
-BIB                 11         19                                 20792  1    2 
-TITLE       Fission spectrum averaged cross sections for the      20792  1    3 
-            Th-232(n,F) reaction                                  20792  1    4 
+ENTRY            20792   20230202                             231320792  0    1 
+SUBENT        20792001   20230202                             231320792  1    1 
+BIB                 11         20                                 20792  1    2 
+TITLE       Fission spectrum averaged cross section for the       20792  1    3 
+            Th-232(n,f) reaction                                  20792  1    4 
 AUTHOR     (K.Kobayashi)                                          20792  1    5 
 INSTITUTE  (2JPNKTO) Kyoto university research reactor institute. 20792  1    6 
 REFERENCE  (J,ANE,4,177,1977) Final publication.                  20792  1    7 
@@ -12,7 +12,7 @@ INC-SPECT   Fast neutron spectrum has been confirmed to           20792  1   10
             be equivalent to that of 235U fission neutrons.       20792  1   11 
 MONITOR    (28-NI-58(N,P)27-CO-58,,SIG,,FIS)                      20792  1   12 
 ERR-ANALYS (ERR-T) Total error                                    20792  1   13 
-           (ERR-1,,3.) Uncertainty in flux normalisation          20792  1   14 
+           (ERR-1,,3.) Uncertainty in flux normalization          20792  1   14 
            (ERR-3,,3.5) other systematic errors                   20792  1   15 
 STATUS     (TABLE) Table 1 from Annals of Nucl.Energy,4(1977)177  20792  1   16 
 HISTORY    (19781204C) PDJ.                                       20792  1   17 
@@ -20,13 +20,14 @@ HISTORY    (19781204C) PDJ.                                       20792  1   17
            (20211220A) SD:Updated to new date formats,lower case. 20792  1   19 
            MONITOR reaction updated (-G+M from SF4 and /SUM from  20792  1   20 
            SF6 deleted).                                          20792  1   21 
-ENDBIB              19          0                                 20792  1   22 
-COMMON               1          3                                 20792  1   23 
-MONIT                                                             20792  1   24 
-MB                                                                20792  1   25 
- 1.0200E+02                                                       20792  1   26 
-ENDCOMMON            3          0                                 20792  1   27 
-ENDSUBENT           26          0                                 20792  199999 
+           (20230202U) SD: Corrections in Subent 003.             20792  1   22 
+ENDBIB              20          0                                 20792  1   23 
+COMMON               1          3                                 20792  1   24 
+MONIT                                                             20792  1   25 
+MB                                                                20792  1   26 
+       102.                                                       20792  1   27 
+ENDCOMMON            3          0                                 20792  1   28 
+ENDSUBENT           27          0                                 20792  199999 
 SUBENT        20792002   20211220                             230620792  2    1 
 BIB                  9         21                                 20792  2    2 
 REACTION   (90-TH-232(N,F),,SIG,,FIS)                             20792  2    3 
@@ -58,8 +59,8 @@ MEV        MB         MB         PER-CENT                         20792  2   28
      1.5         77.4       3.7      1.5                          20792  2   29 
 ENDDATA              3          0                                 20792  2   30 
 ENDSUBENT           29          0                                 20792  299999 
-SUBENT        20792003   20211220                             230620792  3    1 
-BIB                  8         18                                 20792  3    2 
+SUBENT        20792003   20230202                             231320792  3    1 
+BIB                 10         21                                 20792  3    2 
 REACTION   (90-TH-232(N,F),,SIG,,FIS)                             20792  3    3 
 SAMPLE      Commercial thorium foils. Impurities checked by       20792  3    4 
             thermal neutrons contributed about 1.5% to            20792  3    5 
@@ -70,20 +71,23 @@ DETECTOR   (PLATE) Fission plate irradiated simultaneously        20792  3    8
            (GELI) induced activity detected with GeLi detector.   20792  3   10 
             30cc calibrated with standard sources.                20792  3   11 
             Activities of 140-La and 140-Ba were measured.        20792  3   12 
-ANALYSIS    Average cross section from activity and known         20792  3   13 
-            140-La and 140-Ba fission yields and decay            20792  3   14 
-            parameters.                                           20792  3   15 
-DECAY-DATA (57-LA-140,,DG)                                        20792  3   16 
-           (56-BA-140,,DG)                                        20792  3   17 
-ERR-ANALYS (ERR-S) Statistical error                              20792  3   18 
-HISTORY    (19801112A) G.C. Data headings changed.                20792  3   19 
-           (20211220U) SD: BIB updated.                           20792  3   20 
-ENDBIB              18          0                                 20792  3   21 
-NOCOMMON             0          0                                 20792  3   22 
-DATA                 4          1                                 20792  3   23 
-EN-DUMMY   DATA       ERR-T      ERR-S                            20792  3   24 
-MEV        MB         MB         PER-CENT                         20792  3   25 
-     1.5        78.1      3.9        2.                           20792  3   26 
-ENDDATA              3          0                                 20792  3   27 
-ENDSUBENT           26          0                                 20792  399999 
+ASSUMED    (ASSUM,90-TH-232(N,F)56-BA-140,CUM,FY)                 20792  3   13 
+REL-REF    (R,,M.E.Meek+,R,NEDO-12154,46,1972)                    20792  3   14 
+ANALYSIS    Average cross section from activity and known         20792  3   15 
+            140-La and 140-Ba fission yields and decay            20792  3   16 
+            parameters.                                           20792  3   17 
+DECAY-DATA (57-LA-140,,DG)                                        20792  3   18 
+           (56-BA-140,,DG)                                        20792  3   19 
+ERR-ANALYS (ERR-S) Statistical error                              20792  3   20 
+HISTORY    (19801112A) G.C. Data headings changed.                20792  3   21 
+           (20211220U) SD: BIB updated.                           20792  3   22 
+           (20230202U) SD: ASSUMED and REL-REF added.             20792  3   23 
+ENDBIB              21          0                                 20792  3   24 
+NOCOMMON             0          0                                 20792  3   25 
+DATA                 5          1                                 20792  3   26 
+EN-DUMMY   DATA       ERR-T      ERR-S      ASSUM                 20792  3   27 
+MEV        MB         MB         PER-CENT   PC/FIS                20792  3   28 
+     1.5        78.1      3.9        2.            7.91           20792  3   29 
+ENDDATA              3          0                                 20792  3   30 
+ENDSUBENT           29          0                                 20792  399999 
 ENDENTRY             3          0                                 2079299999999 
