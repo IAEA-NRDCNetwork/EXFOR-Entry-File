@@ -1,48 +1,77 @@
-ENTRY            40406   19850329                             00004040600000001 
-SUBENT        40406001   19850329                             00004040600100001 
-BIB                 10         12                                 4040600100002 
-INSTITUTE  (4CCPKUR)                                              4040600100003 
-REFERENCE  (P,YFI-22,10,7611) DATA GIVEN                          4040600100004 
-AUTHOR     (B.M.GOKHBERG,S.M.DUBROVINA,V.A.SHIGIN)                4040600100005 
-TITLE      FAST NEUTRON FISSION CROSS-SECTION OF PU-244           4040600100006 
-FACILITY   (VDG) VAN DE GRAAFF                                    4040600100007 
-DETECTOR   (SOLST) GLASS DETECTOR                                 4040600100008 
-MONITOR    (94-PU-239(N,F),,SIG)                                  4040600100009 
-            NORMALIZED TO SIGMA FISSION = 1.77 8                  4040600100010 
-           AT EN = 1.03 MEV                                       4040600100011 
-PART-DET   (FF) FISSION FRAGMENTS                                 4040600100012 
-HISTORY    (770110C)                                              4040600100013 
-ERR-ANALYS NO INFORMATION                                         4040600100014 
-ENDBIB              12          0                                 4040600100015 
-COMMON               2          3                                 4040600100016 
-MONIT      EN-NRM                                                 4040600100017 
-B          MEV                                                    4040600100018 
- 1.7700E+00 1.0300E+00                                            4040600100019 
-ENDCOMMON            3          0                                 4040600100020 
-ENDSUBENT           19          0                                 4040600199999 
-SUBENT        40406002   19850329                             00004040600200001 
-BIB                  1          1                                 4040600200002 
-REACTION   (94-PU-244(N,F),,SIG)                                  4040600200003 
-ENDBIB               1          0                                 4040600200004 
-NOCOMMON             0          0                                 4040600200005 
-DATA                 3         15                                 4040600200006 
-EN         DATA       DATA-ERR                                    4040600200007 
-MEV        MB         MB                                          4040600200008 
- 2.8000E-01 1.9000E+01 1.5000E+00                                 4040600200009 
- 4.2500E-01 5.6000E+01 3.0000E+00                                 4040600200010 
- 5.1500E-01 1.1200E+02 5.0000E+00                                 4040600200011 
- 6.2000E-01 2.3200E+02 1.0000E+01                                 4040600200012 
- 7.2500E-01 4.5900E+02 2.0000E+01                                 4040600200013 
- 8.3000E-01 7.2900E+02 2.0000E+01                                 4040600200014 
- 9.3000E-01 1.0150E+03 3.0000E+01                                 4040600200015 
- 1.0300E+00 1.1660E+03 3.0000E+01                                 4040600200016 
- 1.2300E+00 1.1170E+03 3.0000E+01                                 4040600200017 
- 1.3300E+00 1.1660E+03 3.0000E+01                                 4040600200018 
- 1.4300E+00 1.1390E+03 3.0000E+01                                 4040600200019 
- 1.5300E+00 1.0960E+03 3.0000E+01                                 4040600200020 
- 1.6300E+00 1.1070E+03 3.0000E+01                                 4040600200021 
- 1.7300E+00 1.0630E+03 3.0000E+01                                 4040600200022 
- 1.8250E+00 1.0690E+03 3.0000E+01                                 4040600200023 
-ENDDATA             17          0                                 4040600200024 
-ENDSUBENT           23          0                                 4040600299999 
+ENTRY            40406   20220217                             420440406  0    1 
+SUBENT        40406001   20220217                             420440406  1    1 
+BIB                 13         36                                 40406  1    2 
+TITLE      Cross section for fission of 244Pu by fast neutron     40406  1    3 
+AUTHOR     (B.M.Gokhberg,S.M.Dubrovina,V.A.Shigin)                40406  1    4 
+REFERENCE  (J,YF,25,21,1977)                                      40406  1    5 
+           (J,SNP,25,11,1977)                                     40406  1    6 
+            Engl.translation of YF,25,21,1977.                    40406  1    7 
+           (P,YFI-22,10,1976) Data given                          40406  1    8 
+           (R,INDC(CCP)-100,8,1977)                               40406  1    9 
+            Engl.translation of YFI-22,10,1976.                   40406  1   10 
+INSTITUTE  (4RUSKUR)                                              40406  1   11 
+FACILITY   (VDG,4RUSKUR)                                          40406  1   12 
+INC-SOURCE (P-T)                                                  40406  1   13 
+SAMPLE     Pu-244 layer of 5 mm diameter, placed at 8 mm distance 40406  1   14 
+           from neutron source at 0 deg. angle relative to ion    40406  1   15 
+           beam direction. Pu-244 layer weight was determined by  40406  1   16 
+           alpha activity to be 2.29 microgram. The largest       40406  1   17 
+           admixture - 0.7 % of Pu-242.                           40406  1   18 
+DETECTOR   (GLASD) Glass of 20 mm diameter.                       40406  1   19 
+           For fission fragments detection.                       40406  1   20 
+           (LONGC) For neutron flux.                              40406  1   21 
+MONITOR    (94-PU-239(N,F),,SIG)                                  40406  1   22 
+MONIT-REF  (,,J,REA,10,529,1972) Issue 4.                         40406  1   23 
+CORRECTION Background of scattered neutrons in incident beam - 5%.40406  1   24 
+           Background of scattered neutrons at fission fragments  40406  1   25 
+           registration < 0.1 %.                                  40406  1   26 
+           Background of spontaneous fission - 0.2% at energy     40406  1   27 
+           above the threshold, and up to 15% at 280 keV neutron  40406  1   28 
+           energy.                                                40406  1   29 
+ERR-ANALYS (DATA-ERR) Uncertainty of relative shape of            40406  1   30 
+           cross-section.                                         40406  1   31 
+           (ERR-1) Normalization error is ~ 5.% , not included in 40406  1   32 
+           DATA-ERR.                                              40406  1   33 
+HISTORY    (19770110C)                                            40406  1   34 
+           (20220217A) Update for current rules and dictionaries. 40406  1   35 
+           Refs. YF,25,21,1977; SNP,25,11,1977; INDC(CCP)-100     40406  1   36 
+           were added.                                            40406  1   37 
+           ERR-1, EN-RSL were added.                              40406  1   38 
+ENDBIB              36          0                                 40406  1   39 
+COMMON               4          3                                 40406  1   40 
+MONIT      EN-NRM     ERR-1      EN-RSL                           40406  1   41 
+B          MEV        PER-CENT   KEV                              40406  1   42 
+ 1.77       1.03       5.         40.                             40406  1   43 
+ENDCOMMON            3          0                                 40406  1   44 
+ENDSUBENT           43          0                                 40406  199999 
+SUBENT        40406002   20220217                             420440406  2    1 
+BIB                  3          6                                 40406  2    2 
+REACTION   (94-PU-244(N,F),,SIG)                                  40406  2    3 
+DECAY-DATA (94-PU-244,6.8E+10YR,SF) (6.8+-0.8)*10**10 yr measured 40406  2    4 
+           spontaneous fission half-life.                         40406  2    5 
+STATUS     (TABLE) Table of INDC(CCP)-100,8,1977 -                40406  2    6 
+            Engl.translation of YFI-22,p.10,1976                  40406  2    7 
+           Table on page 23 of Yad.Fiz.,v.25,p.21,1977            40406  2    8 
+ENDBIB               6          0                                 40406  2    9 
+NOCOMMON             0          0                                 40406  2   10 
+DATA                 3         15                                 40406  2   11 
+EN         DATA       DATA-ERR                                    40406  2   12 
+KEV        MB         MB                                          40406  2   13 
+ 280.        19.       1.5                                        40406  2   14 
+ 425.        56.       3.                                         40406  2   15 
+ 515.       112.       5.                                         40406  2   16 
+ 620.       232.      10.                                         40406  2   17 
+ 725.       459.      20.                                         40406  2   18 
+ 830.       729.      20.                                         40406  2   19 
+ 930.      1015.      30.                                         40406  2   20 
+1030.      1166.      30.                                         40406  2   21 
+1230.      1117.      30.                                         40406  2   22 
+1330.      1166.      30.                                         40406  2   23 
+1430.      1139.      30.                                         40406  2   24 
+1530.      1096.      30.                                         40406  2   25 
+1630.      1107.      30.                                         40406  2   26 
+1730.      1063.      30.                                         40406  2   27 
+1825.      1069.      30.                                         40406  2   28 
+ENDDATA             17          0                                 40406  2   29 
+ENDSUBENT           28          0                                 40406  299999 
 ENDENTRY             2          0                                 4040699999999 

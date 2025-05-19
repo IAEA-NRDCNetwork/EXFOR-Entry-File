@@ -1,37 +1,66 @@
-ENTRY            40378   19850329                             00004037800000001 
-SUBENT        40378001   19850329                             00004037800100001 
-BIB                 13         16                                 4037800100002 
-INSTITUTE  (4CCPKUR)                                              4037800100003 
-REFERENCE  (P,YFI-21,7,7601) DATA GIVEN                           4037800100004 
-AUTHOR     (E.F.FOMUSHKIN,E.K.GUTNIKOVA,G.F.NOVOSELOV,V.I.PANIN)  4037800100005 
-TITLE      CF-252 FISSION CROSS-SECTION MEASUREMENT               4037800100006 
-           BY FAST-REACTOR NEUTRONS                               4037800100007 
-INC-SOURCE (REAC) FAST REACTOR                                    4037800100008 
-METHOD     METHOD OF DIRECT REGISTRATION OF FISSION FRAGMENTS     4037800100009 
-           WAS USED                                               4037800100010 
-DETECTOR   GLASS DETECTOR FOR FISSION FRAGMENTS                   4037800100011 
-ANALYSIS   NO INFORMATION                                         4037800100012 
-MONITOR    (93-NP-237(N,F),,SIG)                                  4037800100013 
-            NO NUMERICAL VALUE                                    4037800100014 
-PART-DET   (FF) FISSION FRAGMENTS                                 4037800100015 
-HISTORY    (770211C)                                              4037800100016 
-CORRECTION NO INFORMATION                                         4037800100017 
-ERR-ANALYS NO INFORMATION                                         4037800100018 
-ENDBIB              16          0                                 4037800100019 
-NOCOMMON             0          0                                 4037800100020 
-ENDSUBENT           19          0                                 4037800199999 
-SUBENT        40378002   19850329                             00004037800200001 
-BIB                  2          4                                 4037800200002 
-REACTION   (98-CF-252(N,F),,SIG,,SPA)                             4037800200003 
-            CF-252 FISSION CROSS-SECTION                          4037800200004 
-           FOR FISSION BY FAST-REACTOR NEUTRONS                   4037800200005 
-INC-SPECT  NEUTRON SPECTRUM OF FAST REACTOR                       4037800200006 
-ENDBIB               4          0                                 4037800200007 
-NOCOMMON             0          0                                 4037800200008 
-DATA                 3          1                                 4037800200009 
-EN-DUMMY   DATA       DATA-ERR                                    4037800200010 
-MEV        B          B                                           4037800200011 
- 1.0000E+00 1.5800E+00 1.4000E-01                                 4037800200012 
-ENDDATA              3          0                                 4037800200013 
-ENDSUBENT           12          0                                 4037800299999 
+ENTRY            40378   20220216                             420440378  0    1 
+SUBENT        40378001   20220216                             420440378  1    1 
+BIB                 17         34                                 40378  1    2 
+TITLE      Measurement of effective cross section for the fission 40378  1    3 
+           of 252Cf by fast reactor neutrons                      40378  1    4 
+AUTHOR     (Eh.F.Fomushkin,E.K.Gutnikova,G.F.Novoselov,V.I.Panin) 40378  1    5 
+REFERENCE  (J,SJA,40,202,1976) Engl.translation of AE,40,176,1976.40378  1    6 
+           #doi:10.1007/BF01118713                                40378  1    7 
+           (J,AE,40,176,1976) Issue 2.                            40378  1    8 
+           (P,YFI-21,7,1976) Data given                           40378  1    9 
+           (R,INDC(CCP)-111,5,1978)                               40378  1   10 
+            English translation of YFI-21,p.7,1976                40378  1   11 
+INSTITUTE  (4RUSKUR)                                              40378  1   12 
+FACILITY   (REAC,4RUSKUR) Fast pulsed reactor                     40378  1   13 
+INC-SOURCE (REAC)                                                 40378  1   14 
+SAMPLE      Cf-252 - 79.8%, Cf-251 - 3.8%, Cf-250 - 10.9%,        40378  1   15 
+            Cf-249 - 5.5%.                                        40378  1   16 
+METHOD     (FISCT) Method of direct registration of fission       40378  1   17 
+           fragments was used.                                    40378  1   18 
+           A Np-237 layer was irradiated simultaneously with      40378  1   19 
+           Cf-252 layer.                                          40378  1   20 
+DETECTOR   (GLASD) Glass detector for fission fragments           40378  1   21 
+MONITOR    (93-NP-237(N,F),,SIG)                                  40378  1   22 
+            No numerical value in the articles.                   40378  1   23 
+MONIT-REF  (,W.G.Davey,J,NSE,32,35,1968)                          40378  1   24 
+ANALYSIS   It was assumed that the fission cross sections of      40378  1   25 
+           Cf-249 and Cf-251 are 2.01+-0.13 b,                    40378  1   26 
+           cross sections of Cf-250 and Cf-252 are equal.         40378  1   27 
+ASSUMED    (ASSUM,98-CF-249(N,F),,SIG,,FST)                       40378  1   28 
+REL-REF    (R,40031006,E.F.Fomushkin+,J,YF,14,73,1971)            40378  1   29 
+            Cross sections for Cf-249 and Cf-251.                 40378  1   30 
+CORRECTION  Spontaneous fission background was estimated to be    40378  1   31 
+           ~10.%.                                                 40378  1   32 
+ERR-ANALYS  Relative error in isotopic content determination < 3.%40378  1   33 
+HISTORY    (19770211C)                                            40378  1   34 
+           (20220215A) Update for current rules and dictionaries. 40378  1   35 
+           Refs. INDC(CCP), AE,40,176, SJA,40,202 were added.     40378  1   36 
+ENDBIB              34          0                                 40378  1   37 
+COMMON               2          3                                 40378  1   38 
+ASSUM      ASSUM-ERR                                              40378  1   39 
+B          B                                                      40378  1   40 
+ 2.01       0.13                                                  40378  1   41 
+ENDCOMMON            3          0                                 40378  1   42 
+ENDSUBENT           41          0                                 40378  199999 
+SUBENT        40378002   20220216                             420440378  2    1 
+BIB                  5         11                                 40378  2    2 
+REACTION   (98-CF-252(N,F),,SIG,,SPA)                             40378  2    3 
+INC-SPECT   Reactor neutron spectrum was close to the fission     40378  2    4 
+           spectrum, somewhat softened as a result of inelastic   40378  2    5 
+           scattering.                                            40378  2    6 
+REL-REF    (A,10323002,M.S.Moore+,J,PR/C,4,273,1971)              40378  2    7 
+            After averaging for fast neutron spectrum.            40378  2    8 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 40378  2    9 
+                      article.                                    40378  2   10 
+STATUS     (TABLE) Text page 203 of Sov.At.Energy,v.40,p.202,1976.40378  2   11 
+            Text page 5 of INDC(CCP)-111,5,1978 -                 40378  2   12 
+            English translation of YFI-21,p.7,1976.               40378  2   13 
+ENDBIB              11          0                                 40378  2   14 
+NOCOMMON             0          0                                 40378  2   15 
+DATA                 3          1                                 40378  2   16 
+EN-DUMMY   DATA       DATA-ERR                                    40378  2   17 
+MEV        B          B                                           40378  2   18 
+ 1.         1.58       0.14                                       40378  2   19 
+ENDDATA              3          0                                 40378  2   20 
+ENDSUBENT           19          0                                 40378  299999 
 ENDENTRY             2          0                                 4037899999999 
