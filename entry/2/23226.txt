@@ -1,6 +1,6 @@
-ENTRY            23226   20140218                             22382322600000001 
-SUBENT        23226001   20140218                             22382322600100001 
-BIB                 14         36                                 2322600100002 
+ENTRY            23226   20190301                             22772322600000001 
+SUBENT        23226001   20190301                             22772322600100001 
+BIB                  9         20                                 2322600100002 
 TITLE      Spectrum-integrated helium generation cross sections   2322600100003 
             for 6Li and 10B in the Sigma-Sigma and fission cavity 2322600100004 
             standard neutron fields                               2322600100005 
@@ -8,60 +8,138 @@ AUTHOR     (B.M.Oliver, H.Farrar IV, E.P.Lippincott, A.Fabry)     2322600100006
 INSTITUTE  (1USAAI,1USAHED,2BLGMOL)                               2322600100007 
 REFERENCE  (C,82GAITHERS,2,889,1982)                              2322600100008 
 FACILITY   (REAC,2BLGMOL) BR1 reactor                             2322600100009 
-INC-SPECT  235U fission spectrum                                  2322600100010 
-SAMPLE     The following samples were in an Al cylindrical box    2322600100011 
-            (8 mm OD, 46 mm long):                                2322600100012 
-            - Encapsulated enriched (93.0%) boron-10              2322600100013 
-            - Bare natural (19.8%) boron crystal                  2322600100014 
-            - Encapsulated enriched (99.1%) 6LiF                  2322600100015 
-            - Bare enriched (99.1%) 6LiF crystals                 2322600100016 
-           Three such Al boxes were at three locations (+30 cm,   2322600100017 
-            0 cm, -30 cm) of 1 m Cd tube (10 mm OD, 8 mm ID).     2322600100018 
-           The central 6.8-cm section of the Cd tube was wrapped  2322600100019 
-            by 0.1-mm-thick enriched (93%) 235U foil.             2322600100020 
-METHOD     (HE-AC)                                                2322600100021 
-MONITOR    (28-NI-58(N,P)27-CO-58,,SIG,,FIS)                      2322600100022 
-MONIT-REF  (,A.Fabry+,S,IAEA-208,233,1978)                        2322600100023 
-CORRECTION - Neutron perturbations due to neutron self-shielding  2322600100024 
-              and flux depression, neutron flux gradients over    2322600100025 
-              the irradiation assemblies, and assembly scattering 2322600100026 
-           - Subtraction of the small epithermal helium;          2322600100027 
-              contribution by placement of samples 30 cm above    2322600100028 
-              and below the central region of Cd tube not wrapped 2322600100029 
-              by U235;                                            2322600100030 
-           - Subtraction of 19F helium production for 6LiF sample 2322600100031 
-             (23 mb).                                             2322600100032 
-ERR-ANALYS (DATA-ERR) random plus systematic (1 sigma)            2322600100033 
-ADD-RES    Spectrum-averaged cross section from the Sigma-Sigma   2322600100034 
-           facility:                                              2322600100035 
-            1695 +/- 71 mb for 10B(n,alpha),                      2322600100036 
-             931 +/- 35 mb for 6Li(n,alpha).                      2322600100037 
-HISTORY    (20140218C) On                                         2322600100038 
-ENDBIB              36          0                                 2322600100039 
-NOCOMMON             0          0                                 2322600100040 
-ENDSUBENT           39          0                                 2322600199999 
-SUBENT        23226002   20140218                             22382322600200001 
-BIB                  2          2                                 2322600200002 
+METHOD     (HE-AC)                                                2322600100010 
+CORRECTION - Neutron perturbations due to neutron self-shielding  2322600100011 
+              and flux depression, neutron flux gradients over    2322600100012 
+              the irradiation assemblies, and assembly scattering 2322600100013 
+           - Subtraction of the small epithermal helium;          2322600100014 
+              contribution by placement of samples 30 cm above    2322600100015 
+              and below the central region of Cd tube not wrapped 2322600100016 
+              by U235 (for fission cavity measurements);          2322600100017 
+           - Subtraction of 19F helium production for 6LiF sample 2322600100018 
+             (23 mb for fission cavity, 5 mb for Sigma-Sigma).    2322600100019 
+ERR-ANALYS (DATA-ERR) random plus systematic (1 sigma)            2322600100020 
+HISTORY    (20140218C) On                                         2322600100021 
+           (20190301A) On. 004 and 005 added.                     2322600100022 
+ENDBIB              20          0                                 2322600100023 
+NOCOMMON             0          0                                 2322600100024 
+ENDSUBENT           23          0                                 2322600199999 
+SUBENT        23226002   20190301                             22772322600200001 
+BIB                  7         16                                 2322600200002 
 REACTION   (5-B-10(N,X)2-HE-4,,SIG,,FIS)                          2322600200003 
-STATUS     (TABLE) Table 3 of Proc. 4th ASTM-EURATOM Symp. p889   2322600200004 
-ENDBIB               2          0                                 2322600200005 
-NOCOMMON             0          0                                 2322600200006 
-DATA                 4          1                                 2322600200007 
-KT-DUMMY   DATA       DATA-ERR   MONIT                            2322600200008 
-MEV        MB         MB         MB                               2322600200009 
- 1.32       541.       24.        108.5                           2322600200010 
-ENDDATA              3          0                                 2322600200011 
-ENDSUBENT           10          0                                 2322600299999 
-SUBENT        23226003   20140218                             22382322600300001 
-BIB                  2          2                                 2322600300002 
+MONITOR    (28-NI-58(N,P)27-CO-58,,SIG,,FIS)                      2322600200004 
+MONIT-REF  (,A.Fabry+,S,IAEA-208,233,1978)                        2322600200005 
+INC-SPECT  235U fission spectrum                                  2322600200006 
+SAMPLE     The following samples were in an Al cylindrical box    2322600200007 
+            (8 mm OD, 46 mm long):                                2322600200008 
+            - Encapsulated enriched (93.0%) boron-10              2322600200009 
+            - Bare natural (19.8%) boron crystal                  2322600200010 
+            - Encapsulated enriched (99.1%) 6LiF                  2322600200011 
+            - Bare enriched (99.1%) 6LiF crystals                 2322600200012 
+           Three such Al boxes were at three locations (+30 cm,   2322600200013 
+            0 cm, -30 cm) of 1 m Cd tube (10 mm OD, 8 mm ID).     2322600200014 
+           The central 6.8-cm section of the Cd tube was wrapped  2322600200015 
+            by 0.1-mm-thick enriched (93%) 235U foil.             2322600200016 
+STATUS     (TABLE) Table 3 of Proc. 4th ASTM-EURATOM Symp. p889   2322600200017 
+HISTORY    (20190301U) On. SAMPLE and INC-SPECT moved from 001    2322600200018 
+ENDBIB              16          0                                 2322600200019 
+NOCOMMON             0          0                                 2322600200020 
+DATA                 4          1                                 2322600200021 
+KT-DUMMY   DATA       DATA-ERR   MONIT                            2322600200022 
+MEV        MB         MB         MB                               2322600200023 
+ 1.32       541.       24.        108.5                           2322600200024 
+ENDDATA              3          0                                 2322600200025 
+ENDSUBENT           24          0                                 2322600299999 
+SUBENT        23226003   20190301                             22772322600300001 
+BIB                  7         16                                 2322600300002 
 REACTION   (3-LI-6(N,T)2-HE-4,,SIG,,FIS)                          2322600300003 
-STATUS     (TABLE) Table 3 of Proc. 4th ASTM-EURATOM Symp. p889   2322600300004 
-ENDBIB               2          0                                 2322600300005 
-NOCOMMON             0          0                                 2322600300006 
-DATA                 4          1                                 2322600300007 
-KT-DUMMY   DATA       DATA-ERR   MONIT                            2322600300008 
-MEV        MB         MB         MB                               2322600300009 
- 1.32       456.       20.        108.5                           2322600300010 
-ENDDATA              3          0                                 2322600300011 
-ENDSUBENT           10          0                                 2322600399999 
-ENDENTRY             3          0                                 2322699999999 
+MONITOR    (28-NI-58(N,P)27-CO-58,,SIG,,FIS)                      2322600300004 
+MONIT-REF  (,A.Fabry+,S,IAEA-208,233,1978)                        2322600300005 
+INC-SPECT  235U fission spectrum                                  2322600300006 
+SAMPLE     The following samples were in an Al cylindrical box    2322600300007 
+            (8 mm OD, 46 mm long):                                2322600300008 
+            - Encapsulated enriched (93.0%) boron-10              2322600300009 
+            - Bare natural (19.8%) boron crystal                  2322600300010 
+            - Encapsulated enriched (99.1%) 6LiF                  2322600300011 
+            - Bare enriched (99.1%) 6LiF crystals                 2322600300012 
+           Three such Al boxes were at three locations (+30 cm,   2322600300013 
+            0 cm, -30 cm) of 1 m Cd tube (10 mm OD, 8 mm ID).     2322600300014 
+           The central 6.8-cm section of the Cd tube was wrapped  2322600300015 
+            by 0.1-mm-thick enriched (93%) 235U foil.             2322600300016 
+STATUS     (TABLE) Table 3 of Proc. 4th ASTM-EURATOM Symp. p889   2322600300017 
+HISTORY    (20190301U) On. SAMPLE and INC-SPECT moved from 001    2322600300018 
+ENDBIB              16          0                                 2322600300019 
+NOCOMMON             0          0                                 2322600300020 
+DATA                 4          1                                 2322600300021 
+KT-DUMMY   DATA       DATA-ERR   MONIT                            2322600300022 
+MEV        MB         MB         MB                               2322600300023 
+ 1.32       456.       20.        108.5                           2322600300024 
+ENDDATA              3          0                                 2322600300025 
+ENDSUBENT           24          0                                 2322600399999 
+SUBENT        23226004   20190301                             22772322600400001 
+BIB                  9         23                                 2322600400002 
+REACTION   (5-B-10(N,X)2-HE-4,,SIG,,SPA)                          2322600400003 
+MONITOR    (28-NI-58(N,P)27-CO-58,,SIG,,SPA)                      2322600400004 
+MONIT-REF  (,A.Fabry+,S,IAEA-208,233,1978)                        2322600400005 
+INC-SPECT  Sigma-Sigma neutron reference spectrum                 2322600400006 
+REL-REF    (N,,J.Grundl+,S,IAEA-208,(1),53,1978) Table II-B       2322600400007 
+            Average energy = 0.76 MeV                             2322600400008 
+            Median energy  =  400 keV                             2322600400009 
+            E(P=0.95)      =   20 keV                             2322600400010 
+            E(P=0.05)      =  2.9 MeV                             2322600400011 
+           where                                                  2322600400012 
+            Fraction of spectrum below E(P=0.95) or above         2322600400013 
+             E(P=0.05) is 5%.                                     2322600400014 
+COMMENT    By compiler (2019-03-01):                              2322600400015 
+            A neutron spectrum of the Sigma-Sigma facility is     2322600400016 
+            available in the IRDF-2002 (standard spectra).        2322600400017 
+SAMPLE     The following samples were irradiated together:        2322600400018 
+            - Encapsulated enriched (93%) boron-10                2322600400019 
+            - Bare enriched (93%) boron-10 crystal                2322600400020 
+            - Bare natural boron crystal                          2322600400021 
+            - Encapsulated enriched (99.1%) 6LiF                  2322600400022 
+            - Bare enriched (99.1%) 6LiF crystals                 2322600400023 
+STATUS     (TABLE) Table 3 of Proc. 4th ASTM-EURATOM Symp. p889   2322600400024 
+HISTORY    (20190301C) On                                         2322600400025 
+ENDBIB              23          0                                 2322600400026 
+NOCOMMON             0          0                                 2322600400027 
+DATA                 4          1                                 2322600400028 
+EN-DUMMY   DATA       DATA-ERR   MONIT                            2322600400029 
+MEV        MB         MB         MB                               2322600400030 
+ 0.76       1695.      71.        26.5                            2322600400031 
+ENDDATA              3          0                                 2322600400032 
+ENDSUBENT           31          0                                 2322600499999 
+SUBENT        23226005   20190301                             22772322600500001 
+BIB                  9         23                                 2322600500002 
+REACTION   (3-LI-6(N,T)2-HE-4,,SIG,,SPA)                          2322600500003 
+MONITOR    (28-NI-58(N,P)27-CO-58,,SIG,,SPA)                      2322600500004 
+MONIT-REF  (,A.Fabry+,S,IAEA-208,233,1978)                        2322600500005 
+INC-SPECT  Sigma-Sigma neutron reference spectrum                 2322600500006 
+REL-REF    (N,,J.Grundl+,S,IAEA-208,(1),53,1978) Table II-B       2322600500007 
+            Average energy = 0.76 MeV                             2322600500008 
+            Median energy  =  400 keV                             2322600500009 
+            E(P=0.95)      =   20 keV                             2322600500010 
+            E(P=0.05)      =  2.9 MeV                             2322600500011 
+           where                                                  2322600500012 
+            Fraction of spectrum below E(P=0.95) or above         2322600500013 
+             E(P=0.05) is 5%.                                     2322600500014 
+COMMENT    By compiler (2019-03-01):                              2322600500015 
+            A neutron spectrum of the Sigma-Sigma facility is     2322600500016 
+            available in the IRDF-2002 (standard spectra).        2322600500017 
+SAMPLE     The following samples were irradiated together:        2322600500018 
+            - Encapsulated enriched (93%) boron-10                2322600500019 
+            - Bare enriched (93%) boron-10 crystal                2322600500020 
+            - Bare natural boron crystal                          2322600500021 
+            - Encapsulated enriched (99.1%) 6LiF                  2322600500022 
+            - Bare enriched (99.1%) 6LiF crystals                 2322600500023 
+STATUS     (TABLE) Table 3 of Proc. 4th ASTM-EURATOM Symp. p889   2322600500024 
+HISTORY    (20190301C) On                                         2322600500025 
+ENDBIB              23          0                                 2322600500026 
+NOCOMMON             0          0                                 2322600500027 
+DATA                 4          1                                 2322600500028 
+EN-DUMMY   DATA       DATA-ERR   MONIT                            2322600500029 
+MEV        MB         MB         MB                               2322600500030 
+ 0.76       931.       35.        26.5                            2322600500031 
+ENDDATA              3          0                                 2322600500032 
+ENDSUBENT           31          0                                 2322600599999 
+ENDENTRY             5          0                                 2322699999999 
