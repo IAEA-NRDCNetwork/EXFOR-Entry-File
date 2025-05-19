@@ -1,6 +1,6 @@
-ENTRY            23026   20151216                             224623026  0    1 
-SUBENT        23026001   20151216                             224623026  1    1 
-BIB                 10         47                                 23026  1    2 
+ENTRY            23026   20201214                             229623026  0    1 
+SUBENT        23026001   20201214                             229623026  1    1 
+BIB                  9         49                                 23026  1    2 
 TITLE       Ternary alpha and triton emission in the spontaneous  23026  1    3 
             fission of 244Cm, 246Cm and 248Cm and in the neutron  23026  1    4 
             induced fission of 243Cm, 245Cm and 247Cm             23026  1    5 
@@ -38,7 +38,7 @@ ASSUMED    (ASSUM1,96-CM-243(N,F),,SIG)    For thermal neutrons   23026  1   29
            (ASSUM5,96-CM-247(N,F),,SIG)    For thermal neutrons   23026  1   37 
              Cm-247 - hl(alpha)=1.56 x 10**7 yr                   23026  1   38 
             Cm-248 - hl(alpha)=3.70x10**5 yr,hl(sf)=4.05x10**06yr 23026  1   39 
-MISC-COL   (MISC)  96-CM-248(N,F),,SIG     For thermal neutrons   23026  1   40 
+           (ASSUM,96-CM-248(N,F),,SIG)     For thermal neutrons   23026  1   40 
 ERR-ANALYS  Errors, if present, specified in DATA SUBENTS         23026  1   41 
 HISTORY    (20080707C)  Compiled S.M.                             23026  1   42 
            (20091021A)  Subents from 23026-025 to 23026-030       23026  1   43 
@@ -48,13 +48,15 @@ HISTORY    (20080707C)  Compiled S.M.                             23026  1   42
                         SAN 013 - 018, S.M.                       23026  1   47 
            (20151216A) SD: All DECAY-DATA lines were deleted. Not 23026  1   48 
            relevant to the data measured.                         23026  1   49 
-ENDBIB              47          0                                 23026  1   50 
-COMMON               6          3                                 23026  1   51 
-ASSUM1     ASSUM2     ASSUM3     ASSUM4     ASSUM5     MISC       23026  1   52 
-B          B          B          B          B          B          23026  1   53 
-   613.51    1.038      2.14 E+03  0.144      111.29      0.087   23026  1   54 
-ENDCOMMON            3          0                                 23026  1   55 
-ENDSUBENT           54          0                                 23026  199999 
+           (20201214A) SD: Corrections in Subents 022-024.        23026  1   50 
+           MISC-COL -> ASSUMED; MISC -> ASSUM.                    23026  1   51 
+ENDBIB              49          0                                 23026  1   52 
+COMMON               6          3                                 23026  1   53 
+ASSUM1     ASSUM2     ASSUM3     ASSUM4     ASSUM5     ASSUM      23026  1   54 
+B          B          B          B          B          B          23026  1   55 
+   613.51    1.038      2.14 E+03  0.144      111.29      0.087   23026  1   56 
+ENDCOMMON            3          0                                 23026  1   57 
+ENDSUBENT           56          0                                 23026  199999 
 SUBENT        23026002   20080707                             22012302600200001 
 BIB                  6         21                                 2302600200002 
 REACTION  1(96-CM-244(0,F)2-HE-4,TER,FY/DE,,REL) Number of counts 2302600200003 
@@ -1591,56 +1593,59 @@ NO-DIM     NO-DIM                                                 2302602100023
    0.0994     0.0121                                              2302602100024 
 ENDDATA              3          0                                 2302602100025 
 ENDSUBENT           24          0                                 2302602199999 
-SUBENT        23026022   20091021                             22182302602200001 
-BIB                  4          8                                 2302602200002 
-REACTION   ((96-CM-244(0,F)1-H-3,TER,FY,,SPA)/                    2302602200003 
-           (96-CM-244(0,F)2-HE-4,TER,FY,,SPA))                    2302602200004 
-STATUS     (TABLE)  From Table 4 of NP/A, v.806, p.1              2302602200005 
-           (DEP,23026002)                                         2302602200006 
-           (DEP,23026003)                                         2302602200007 
-           (DEP,23026004)                                         2302602200008 
-ERR-ANALYS (DATA-ERR) Combination of statistical and systematic   2302602200009 
-HISTORY    (20091012A)  REACTION recompiled, S.M.                 2302602200010 
-ENDBIB               8          0                                 2302602200011 
-NOCOMMON             0          0                                 2302602200012 
-DATA                 2          1                                 2302602200013 
-DATA       DATA-ERR                                               2302602200014 
-NO-DIM     NO-DIM                                                 2302602200015 
-   0.0628     0.0075                                              2302602200016 
-ENDDATA              3          0                                 2302602200017 
-ENDSUBENT           16          0                                 2302602299999 
-SUBENT        23026023   20091021                             22182302602300001 
-BIB                  5          6                                 2302602300002 
-REACTION   ((96-CM-246(0,F)1-H-3,TER,FY,,SPA)/                    2302602300003 
-           (96-CM-246(0,F)2-HE-4,TER,FY,,SPA))                    2302602300004 
-SAMPLE     .No information                                        2302602300005 
-STATUS     (TABLE)  From Table 4 of NP/A, v.806, p.1              2302602300006 
-ERR-ANALYS (DATA-ERR) Combination of statistical and systematic   2302602300007 
-HISTORY    (20091012A)  REACTION recompiled, S.M.                 2302602300008 
-ENDBIB               6          0                                 2302602300009 
-NOCOMMON             0          0                                 2302602300010 
-DATA                 2          1                                 2302602300011 
-DATA       DATA-ERR                                               2302602300012 
-NO-DIM     NO-DIM                                                 2302602300013 
-   0.0691     0.0102                                              2302602300014 
-ENDDATA              3          0                                 2302602300015 
-ENDSUBENT           14          0                                 2302602399999 
-SUBENT        23026024   20091021                             22182302602400001 
-BIB                  5          6                                 2302602400002 
-REACTION   ((96-CM-248(0,F)1-H-3,TER,FY,,SPA)/                    2302602400003 
-           (96-CM-248(0,F)2-HE-4,TER,FY,,SPA))                    2302602400004 
-SAMPLE     .No information                                        2302602400005 
-STATUS     (TABLE)  From Table 4 of NP/A, v.806, p.1              2302602400006 
-ERR-ANALYS (DATA-ERR) Combination of statistical and systematic   2302602400007 
-HISTORY    (20091012A)  REACTION recompiled, S.M.                 2302602400008 
-ENDBIB               6          0                                 2302602400009 
-NOCOMMON             0          0                                 2302602400010 
-DATA                 2          1                                 2302602400011 
-DATA       DATA-ERR                                               2302602400012 
-NO-DIM     NO-DIM                                                 2302602400013 
-   0.0778     0.0097                                              2302602400014 
-ENDDATA              3          0                                 2302602400015 
-ENDSUBENT           14          0                                 2302602499999 
+SUBENT        23026022   20201214                             229623026 22    1 
+BIB                  4          9                                 23026 22    2 
+REACTION   ((96-CM-244(0,F)1-H-3,TER,FY)/                         23026 22    3 
+           (96-CM-244(0,F)2-HE-4,TER,FY))                         23026 22    4 
+STATUS     (TABLE)  Table 4 from Nucl.Phys.,A806(2008)1           23026 22    5 
+           (DEP,23026002)                                         23026 22    6 
+           (DEP,23026003)                                         23026 22    7 
+           (DEP,23026004)                                         23026 22    8 
+ERR-ANALYS (DATA-ERR) Combination of statistical and systematic   23026 22    9 
+HISTORY    (20091012A)  REACTION recompiled, S.M.                 23026 22   10 
+           (20201214A) SD: SF8=SPA deleted from REACTION code.    23026 22   11 
+ENDBIB               9          0                                 23026 22   12 
+NOCOMMON             0          0                                 23026 22   13 
+DATA                 2          1                                 23026 22   14 
+DATA       DATA-ERR                                               23026 22   15 
+NO-DIM     NO-DIM                                                 23026 22   16 
+   0.0628     0.0075                                              23026 22   17 
+ENDDATA              3          0                                 23026 22   18 
+ENDSUBENT           17          0                                 23026 2299999 
+SUBENT        23026023   20201214                             229623026 23    1 
+BIB                  5          7                                 23026 23    2 
+REACTION   ((96-CM-246(0,F)1-H-3,TER,FY)/                         23026 23    3 
+           (96-CM-246(0,F)2-HE-4,TER,FY))                         23026 23    4 
+SAMPLE      No information                                        23026 23    5 
+STATUS     (TABLE)  Table 4 from Nucl.Phys.,A806(2008)1           23026 23    6 
+ERR-ANALYS (DATA-ERR) Combination of statistical and systematic   23026 23    7 
+HISTORY    (20091012A)  REACTION recompiled, S.M.                 23026 23    8 
+           (20201214A) SD: SF8=SPA deleted from REACTION code.    23026 23    9 
+ENDBIB               7          0                                 23026 23   10 
+NOCOMMON             0          0                                 23026 23   11 
+DATA                 2          1                                 23026 23   12 
+DATA       DATA-ERR                                               23026 23   13 
+NO-DIM     NO-DIM                                                 23026 23   14 
+   0.0691     0.0102                                              23026 23   15 
+ENDDATA              3          0                                 23026 23   16 
+ENDSUBENT           15          0                                 23026 2399999 
+SUBENT        23026024   20201214                             229623026 24    1 
+BIB                  5          7                                 23026 24    2 
+REACTION   ((96-CM-248(0,F)1-H-3,TER,FY)/                         23026 24    3 
+           (96-CM-248(0,F)2-HE-4,TER,FY))                         23026 24    4 
+SAMPLE      No information                                        23026 24    5 
+STATUS     (TABLE)  Table 4 from Nucl.Phys.,A806(2008)1           23026 24    6 
+ERR-ANALYS (DATA-ERR) Combination of statistical and systematic   23026 24    7 
+HISTORY    (20091012A)  REACTION recompiled, S.M.                 23026 24    8 
+           (20201214A) SD: SF8=SPA deleted from REACTION code.    23026 24    9 
+ENDBIB               7          0                                 23026 24   10 
+NOCOMMON             0          0                                 23026 24   11 
+DATA                 2          1                                 23026 24   12 
+DATA       DATA-ERR                                               23026 24   13 
+NO-DIM     NO-DIM                                                 23026 24   14 
+   0.0778     0.0097                                              23026 24   15 
+ENDDATA              3          0                                 23026 24   16 
+ENDSUBENT           15          0                                 23026 2499999 
 SUBENT        23026025   20091021                             22182302602500001 
 BIB                  9         15                                 2302602500002 
 REACTION   (96-CM-243(N,F)2-HE-4,TER,FY,,SPA)  Absolute emission  2302602500003 

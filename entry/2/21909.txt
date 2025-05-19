@@ -1,80 +1,489 @@
-ENTRY            21909   20090401                             22112190900000001 
-SUBENT        21909001   20090401                             22112190900100001 
-BIB                 14         47                                 2190900100002 
-INSTITUTE  (2JPNKYU)                                              2190900100003 
-REFERENCE  (J,NST,16,779,197911)                                  2190900100004 
-AUTHOR     (H.Yamamoto,Y.Mori,Y.Wakuta,A.Katase,M.Sonoda)         2190900100005 
-TITLE      -Neutron emission, mass distribution and energetics in 2190900100006 
-            14.5 MeV-neutron induced fission of uranium-238-      2190900100007 
-FACILITY   .Not given.                                            2190900100008 
-INC-SOURCE (D-T)                                                  2190900100009 
-SAMPLE     .The uranium target was made in a circular form with   2190900100010 
-            a diameter of 3 cm by electro-spraying a solution of  2190900100011 
-            uranylacetate onto an about 90 microg/cm-sq thick     2190900100012 
-            nickel backing. The uranium thickness was determined  2190900100013 
-            to be about 250 microg/cm-sq by alpha-particle        2190900100014 
-            counting.                                             2190900100015 
-METHOD     .The U-target was placed between two detectors with the2190900100016 
-            center of the detectors, the U-target and the N-source2190900100017 
-            placed in a straight line at an angle of 60 adeg with 2190900100018 
-            respect to the deutron beam. Neutrons bombarded the   2190900100019 
-            target through the near detector. The distance between2190900100020 
-            the neutron source and and the target was 1.8 cm.     2190900100021 
-            Energies of both fragments and the flight time of one 2190900100022 
-            fragment were measured event by event. About 10000    2190900100023 
-            events in total were obtained.                        2190900100024 
-DETECTOR   (SIBAR) One of the fragment detectors was a silicon    2190900100025 
-            surface-barrier detector placed at a distance of 0.3  2190900100026 
-            cm from the target. The complementary fragment was    2190900100027 
-            detected by a large area detector located at the end  2190900100028 
-            of a 101.8 cm evacuated flight tube. This detector was2190900100029 
-            composed of nine identical silicon surface-barrier    2190900100030 
-            detectors arrayed in a mosaic structure and had a     2190900100031 
-            sensitive area of 82 cm-sq.                           2190900100032 
-ANALYSIS   .Data was analysed in a way similar to that described  2190900100033 
-            in yamamoto et Al.,Nim,134,119(1976). Modifications   2190900100034 
-            in the procedure are listed in 'corrections'.         2190900100035 
-PART-DET   (FF)    Fission fragments.                             2190900100036 
-CORRECTION .For                                                   2190900100037 
-            - the effect of the center-of-mass recoil of the      2190900100038 
-              fissioning nucleus due to the impinging neutron     2190900100039 
-              momentum.                                           2190900100040 
-            - The effect of energy loss for fragments in the      2190900100041 
-              target.                                             2190900100042 
-           .The nu-bar data was corrected to include second-      2190900100043 
-            chance fission.                                       2190900100044 
-STATUS     .Data taken from main reference.                       2190900100045 
-HISTORY    (19840507C) A.L.                                       2190900100046 
-           (19840710E)                                            2190900100047 
-           (20090401A) Date is corrected' BIB information updated.2190900100048 
-                       Upper case to low case converted           2190900100049 
-ENDBIB              47          0                                 2190900100050 
-NOCOMMON             0          0                                 2190900100051 
-ENDSUBENT           50          0                                 2190900199999 
-SUBENT        21909002   20090401                             22112190900200001 
-BIB                  3          4                                 2190900200002 
-REACTION   (92-U-238(N,F),PRE,AKE,LF+HF)                          2190900200003 
-ERR-ANALYS (DATA-ERR) No details given.                           2190900200004 
-HISTORY    (20090401U)  ERR-ANALYS keyword moved from SAN 001.    2190900200005 
-                        FF changed to LF+HF                       2190900200006 
-ENDBIB               4          0                                 2190900200007 
-NOCOMMON             0          0                                 2190900200008 
-DATA                 5          1                                 2190900200009 
-EN         -EN-RSL    +EN-RSL    DATA       DATA-ERR              2190900200010 
-MEV        MEV        MEV        MEV        MEV                   2190900200011 
-   1.45E+01     5.E-01     4.E-01  1.694E+02         2.           2190900200012 
-ENDDATA              3          0                                 2190900200013 
-ENDSUBENT           12          0                                 2190900299999 
-SUBENT        21909003   20090701                             22112190900300001 
-BIB                  2          2                                 2190900300002 
-REACTION   (92-U-238(N,F),PR,NU)                                  2190900300003 
-HISTORY    (20090701A)   SF5 = PR added. STATUS keywd deleted     2190900300004 
-ENDBIB               2          0                                 2190900300005 
-NOCOMMON             0          0                                 2190900300006 
-DATA                 4          1                                 2190900300007 
-EN         -EN-RSL    +EN-RSL    DATA                             2190900300008 
-MEV        MEV        MEV        PRT/FIS                          2190900300009 
-   1.45E+01     5.E-01     4.E-01       4.64                      2190900300010 
-ENDDATA              3          0                                 2190900300011 
-ENDSUBENT           10          0                                 2190900399999 
-ENDENTRY             3          0                                 2190999999999 
+ENTRY            21909   20201223                             229621909  0    1 
+SUBENT        21909001   20201223                             229621909  1    1 
+BIB                 15         54                                 21909  1    2 
+TITLE       Neutron emission, mass distribution and energetics in 21909  1    3 
+            14.5 MeV-neutron induced fission of uranium-238       21909  1    4 
+AUTHOR     (H.Yamamoto,Y.Mori,Y.Wakuta,A.Katase,M.Sonoda)         21909  1    5 
+REFERENCE  (J,NST,16,779,1979)                                    21909  1    6 
+           (J,NST,13,678,1976) - first publ., prim.results        21909  1    7 
+REL-REF    (M,,H.Yamamoto+,J,NIM,134,119,1976) - The experimental 21909  1    8 
+                 arrangement and method                           21909  1    9 
+INSTITUTE  (2JPNKYU)                                              21909  1   10 
+FACILITY   (CCW,2JPNKYU)                                          21909  1   11 
+INC-SOURCE (D-T)                                                  21909  1   12 
+INC-SPECT   The energy of neutron was spread at the target from   21909  1   13 
+            14.0 to 14.9 MeV due to a rather large solid angle    21909  1   14 
+            subtended by it at the neutron source. The mean       21909  1   15 
+            effective neutron energy was estimated to be 14.5 MeV 21909  1   16 
+SAMPLE      The uranium target was made in a circular form with   21909  1   17 
+            a diameter of 3 cm by electro-spraying a solution of  21909  1   18 
+            uranylacetate onto an about 90 ug/cm2 thick nickel    21909  1   19 
+            backing. The uranium thickness was determined to be   21909  1   20 
+            about 250 ug/cm2 by alpha-particle counting.          21909  1   21 
+METHOD      The U-target was placed between two detectors with the21909  1   22 
+            center of the detectors, the U-target and the N-source21909  1   23 
+            placed in a straight line at an angle of 60 degr. with21909  1   24 
+            respect to the deuteron beam. Neutrons bombarded the  21909  1   25 
+            target through the near detector. The distance between21909  1   26 
+            the neutron source and the target was 1.8 cm.         21909  1   27 
+            Energies of both fragments and the flight time of one 21909  1   28 
+            fragment were measured event by event. About 10000    21909  1   29 
+            events in total were obtained.                        21909  1   30 
+DETECTOR   (SIBAR) One of the fragment detectors was a silicon    21909  1   31 
+            surface-barrier detector placed at a distance of      21909  1   32 
+            0.3 cm from the target. The complementary fragment was21909  1   33 
+            detected by a large area detector located at the end  21909  1   34 
+            of a 101.8 cm evacuated flight tube. This detector was21909  1   35 
+            composed of nine identical silicon surface-barrier    21909  1   36 
+            detectors arrayed in a mosaic structure and had a     21909  1   37 
+            sensitive area of 82 cm2.                             21909  1   38 
+ANALYSIS   The pre-neutron-emission mass was derived from the     21909  1   39 
+           post-neutron-emission masses and energies of both      21909  1   40 
+           fragments based on momentum conservation and isotropic 21909  1   41 
+           neutron emission assumption.                           21909  1   42 
+PART-DET   (FF)    Fission fragments.                             21909  1   43 
+CORRECTION  For                                                   21909  1   44 
+            - the effect of the center-of-mass recoil of the      21909  1   45 
+              fissioning nucleus due to the impinging neutron     21909  1   46 
+              momentum.                                           21909  1   47 
+            - The effect of energy loss for fragments in the      21909  1   48 
+              target.                                             21909  1   49 
+            The nu-bar data was corrected to include second-      21909  1   50 
+            chance fission.                                       21909  1   51 
+HISTORY    (19840507C) A.L.                                       21909  1   52 
+           (20090401A) Date is corrected' BIB information updated.21909  1   53 
+                       Upper case to low case converted           21909  1   54 
+           (20201223A) SD: BIB updated. Subents 004-008 added.    21909  1   55 
+            Corrections in all Subents.                           21909  1   56 
+ENDBIB              54          0                                 21909  1   57 
+NOCOMMON             0          0                                 21909  1   58 
+ENDSUBENT           57          0                                 21909  199999 
+SUBENT        21909002   20201223                             229621909  2    1 
+BIB                  4          7                                 21909  2    2 
+REACTION   (92-U-238(N,F),PRE,AKE,LF+HF)                          21909  2    3 
+STATUS     (TABLE) Text on p.782 of                               21909  2    4 
+                                  J.Nucl.Sci.Technol.,16(1979)779 21909  2    5 
+ERR-ANALYS (DATA-ERR) No details given.                           21909  2    6 
+HISTORY    (20090401U)  ERR-ANALYS keyword moved from SAN 001.    21909  2    7 
+                        FF changed to LF+HF                       21909  2    8 
+           (20201223U) SD: STATUS updated.                        21909  2    9 
+ENDBIB               7          0                                 21909  2   10 
+NOCOMMON             0          0                                 21909  2   11 
+DATA                 5          1                                 21909  2   12 
+EN         -EN-RSL    +EN-RSL    DATA       DATA-ERR              21909  2   13 
+MEV        MEV        MEV        MEV        MEV                   21909  2   14 
+   14.5       0.5       0.4         169.4         2.              21909  2   15 
+ENDDATA              3          0                                 21909  2   16 
+ENDSUBENT           15          0                                 21909  299999 
+SUBENT        21909003   20201223                             229621909  3    1 
+BIB                  5         12                                 21909  3    2 
+REACTION   (92-U-238(N,F),PR,NU,,,DERIV)                          21909  3    3 
+ANALYSIS   Mean of nu(m*) weighted by the primary fission yield   21909  3    4 
+           Y(m*) plus the multiplicity of the neutrons evaporated 21909  3    5 
+           from the compound reported by Howerton (0.76).         21909  3    6 
+REL-REF    (R,,R.J.Howerton,J,NSE,46,42,1971) Multiplicity of the 21909  3    7 
+           neutrons evaporated from the compound given            21909  3    8 
+STATUS     (TABLE) Text on p.784 of                               21909  3    9 
+                                  J.Nucl.Sci.Technol.,16(1979)779 21909  3   10 
+HISTORY    (20090701A)   SF5 = PR added. STATUS keywd deleted     21909  3   11 
+           (20201223A) SD: SF9=DERIV added to REACTION code (not  21909  3   12 
+           from neutron detection). STATUS updated. ANALYSIS and  21909  3   13 
+           REL-REF added.                                         21909  3   14 
+ENDBIB              12          0                                 21909  3   15 
+NOCOMMON             0          0                                 21909  3   16 
+DATA                 4          1                                 21909  3   17 
+EN         -EN-RSL    +EN-RSL    DATA                             21909  3   18 
+MEV        MEV        MEV        PRT/FIS                          21909  3   19 
+   14.5       0.5       0.4           4.64                        21909  3   20 
+ENDDATA              3          0                                 21909  3   21 
+ENDSUBENT           20          0                                 21909  399999 
+SUBENT        21909004   20201223                             229621909  4    1 
+BIB                  6          9                                 21909  4    2 
+REACTION   (92-U-238(N,F)MASS,PRE,FY)                             21909  4    3 
+ANALYSIS    Derived from the secondary yield by using Schmitt's   21909  4    4 
+            method.                                               21909  4    5 
+REL-REF    (M,,H.W.Schmitt+,J,PR,137,B837,1965) Method for        21909  4    6 
+           derivation of the primary fragment distribution        21909  4    7 
+ERR-ANALYS (DATA-ERR)  Errors not specified                       21909  4    8 
+STATUS     (CURVE) Fig. 1 from J.Nucl.Sci.Technol.,16(1979)779    21909  4    9 
+           (DEP,21909005) Seconday fragment distribution          21909  4   10 
+HISTORY    (20201223C) SD                                         21909  4   11 
+ENDBIB               9          0                                 21909  4   12 
+COMMON               5          3                                 21909  4   13 
+EN         -EN-RSL    +EN-RSL    MASS-ERR-D ERR-DIG               21909  4   14 
+MEV        MEV        MEV        NO-DIM     PER-CENT              21909  4   15 
+    14.5        0.5      0.4        0.05     0.3                  21909  4   16 
+ENDCOMMON            3          0                                 21909  4   17 
+DATA                 3         79                                 21909  4   18 
+MASS       DATA       DATA-ERR                                    21909  4   19 
+NO-DIM     PC/FIS     PC/FIS                                      21909  4   20 
+        80.      0.117                                            21909  4   21 
+        81.      0.224                                            21909  4   22 
+        82.      0.293      0.077                                 21909  4   23 
+        83.      0.377                                            21909  4   24 
+        84.      0.540                                            21909  4   25 
+        85.      0.499                                            21909  4   26 
+        86.      0.941                                            21909  4   27 
+        87.      1.262                                            21909  4   28 
+        88.      1.671                                            21909  4   29 
+        89.      2.027                                            21909  4   30 
+        90.      2.132      0.194                                 21909  4   31 
+        91.      2.686                                            21909  4   32 
+        92.      3.259                                            21909  4   33 
+        93.      3.647                                            21909  4   34 
+        94.      4.006                                            21909  4   35 
+        95.      4.239                                            21909  4   36 
+        96.      4.541                                            21909  4   37 
+        97.      5.309                                            21909  4   38 
+        98.      4.929      0.326                                 21909  4   39 
+        99.      5.281                                            21909  4   40 
+       100.      5.765                                            21909  4   41 
+       101.      5.254                                            21909  4   42 
+       102.      5.002                                            21909  4   43 
+       103.      4.530                                            21909  4   44 
+       104.      4.675                                            21909  4   45 
+       105.      4.535                                            21909  4   46 
+       106.      3.884                                            21909  4   47 
+       107.      3.346                                            21909  4   48 
+       108.      2.423                                            21909  4   49 
+       109.      2.485                                            21909  4   50 
+       110.      2.115      0.193                                 21909  4   51 
+       111.      1.800                                            21909  4   52 
+       112.      1.217                                            21909  4   53 
+       113.      1.256                                            21909  4   54 
+       114.      0.915                                            21909  4   55 
+       115.      0.679                                            21909  4   56 
+       116.      0.663                                            21909  4   57 
+       117.      0.940                                            21909  4   58 
+       118.      0.958                                            21909  4   59 
+       119.      1.072                                            21909  4   60 
+       120.      0.959                                            21909  4   61 
+       121.      0.698                                            21909  4   62 
+       122.      0.767      0.135                                 21909  4   63 
+       123.      0.772                                            21909  4   64 
+       124.      0.782                                            21909  4   65 
+       125.      0.979                                            21909  4   66 
+       126.      0.887                                            21909  4   67 
+       127.      1.442                                            21909  4   68 
+       128.      1.933      0.194                                 21909  4   69 
+       129.      1.983                                            21909  4   70 
+       130.      2.421                                            21909  4   71 
+       131.      2.993                                            21909  4   72 
+       132.      3.455                                            21909  4   73 
+       133.      4.114                                            21909  4   74 
+       134.      4.221                                            21909  4   75 
+       135.      4.523                                            21909  4   76 
+       136.      4.610                                            21909  4   77 
+       137.      5.224                                            21909  4   78 
+       137.      5.631                                            21909  4   79 
+       139.      5.394                                            21909  4   80 
+       140.      4.886      0.352                                 21909  4   81 
+       141.      4.798                                            21909  4   82 
+       142.      4.952                                            21909  4   83 
+       143.      4.598                                            21909  4   84 
+       144.      4.806                                            21909  4   85 
+       145.      4.325                                            21909  4   86 
+       146.      4.221                                            21909  4   87 
+       147.      3.439                                            21909  4   88 
+       148.      2.569                                            21909  4   89 
+       149.      2.080                                            21909  4   90 
+       150.      1.919      0.175                                 21909  4   91 
+       151.      1.153                                            21909  4   92 
+       152.      0.835                                            21909  4   93 
+       153.      1.038                                            21909  4   94 
+       154.      0.582                                            21909  4   95 
+       155.      0.544                                            21909  4   96 
+       156.      0.366      0.083                                 21909  4   97 
+       157.      0.283                                            21909  4   98 
+       158.      0.130                                            21909  4   99 
+ENDDATA             81          0                                 21909  4  100 
+ENDSUBENT           99          0                                 21909  499999 
+SUBENT        21909005   20201223                             229621909  5    1 
+BIB                  4          4                                 21909  5    2 
+REACTION   (92-U-238(N,F)MASS,SEC,FY)                             21909  5    3 
+ERR-ANALYS (DATA-ERR)  Errors not specified                       21909  5    4 
+STATUS     (CURVE) Fig. 2 from J.Nucl.Sci.Technol.,16(1979)779    21909  5    5 
+HISTORY    (20201223C) SD                                         21909  5    6 
+ENDBIB               4          0                                 21909  5    7 
+COMMON               5          3                                 21909  5    8 
+EN         -EN-RSL    +EN-RSL    MASS-ERR-D ERR-DIG               21909  5    9 
+MEV        MEV        MEV        NO-DIM     PER-CENT              21909  5   10 
+    14.5        0.5      0.4        0.05       0.04               21909  5   11 
+ENDCOMMON            3          0                                 21909  5   12 
+DATA                 3         77                                 21909  5   13 
+MASS       DATA       DATA-ERR                                    21909  5   14 
+NO-DIM     PRT/FIS    PRT/FIS                                     21909  5   15 
+        81.      0.254                                            21909  5   16 
+        82.      0.479      0.096                                 21909  5   17 
+        83.      0.758                                            21909  5   18 
+        84.      1.080                                            21909  5   19 
+        85.      1.186                                            21909  5   20 
+        86.      1.558                                            21909  5   21 
+        87.      2.047      0.186                                 21909  5   22 
+        88.      2.220                                            21909  5   23 
+        89.      2.642                                            21909  5   24 
+        90.      3.067                                            21909  5   25 
+        91.      3.452                                            21909  5   26 
+        92.      3.837                                            21909  5   27 
+        93.      4.059                                            21909  5   28 
+        94.      4.215                                            21909  5   29 
+        95.      4.686                                            21909  5   30 
+        96.      4.488                                            21909  5   31 
+        97.      4.748                                            21909  5   32 
+        98.      5.411      0.388                                 21909  5   33 
+        99.      4.842                                            21909  5   34 
+       100.      5.517                                            21909  5   35 
+       101.      4.498                                            21909  5   36 
+       102.      4.729                                            21909  5   37 
+       103.      4.790                                            21909  5   38 
+       104.      3.979                                            21909  5   39 
+       105.      3.367                                            21909  5   40 
+       106.      3.108                                            21909  5   41 
+       107.      2.534      0.196                                 21909  5   42 
+       108.      2.119                                            21909  5   43 
+       109.      1.555                                            21909  5   44 
+       110.      1.079                                            21909  5   45 
+       111.      1.156                                            21909  5   46 
+       112.      1.028                                            21909  5   47 
+       113.      0.908                                            21909  5   48 
+       114.      0.818                                            21909  5   49 
+       115.      1.068                                            21909  5   50 
+       116.      0.932                                            21909  5   51 
+       117.      0.829                                            21909  5   52 
+       118.      0.824      0.120                                 21909  5   53 
+       119.      0.905                                            21909  5   54 
+       120.      0.988                                            21909  5   55 
+       121.      0.694                                            21909  5   56 
+       122.      1.126                                            21909  5   57 
+       123.      0.912                                            21909  5   58 
+       124.      1.106                                            21909  5   59 
+       125.      1.375                                            21909  5   60 
+       126.      1.269                                            21909  5   61 
+       127.      1.667                                            21909  5   62 
+       128.      1.984                                            21909  5   63 
+       129.      2.391      0.212                                 21909  5   64 
+       130.      2.935                                            21909  5   65 
+       131.      3.344                                            21909  5   66 
+       132.      4.208                                            21909  5   67 
+       133.      4.133                                            21909  5   68 
+       134.      5.364                                            21909  5   69 
+       135.      6.463                                            21909  5   70 
+       136.      5.607                                            21909  5   71 
+       137.      4.629                                            21909  5   72 
+       138.      4.866                                            21909  5   73 
+       139.      5.116      0.293                                 21909  5   74 
+       140.      3.848                                            21909  5   75 
+       141.      4.468                                            21909  5   76 
+       142.      4.280                                            21909  5   77 
+       143.      3.490                                            21909  5   78 
+       144.      3.406                                            21909  5   79 
+       145.      3.365                                            21909  5   80 
+       146.      2.595                                            21909  5   81 
+       147.      1.940      0.216                                 21909  5   82 
+       148.      1.736                                            21909  5   83 
+       149.      1.322                                            21909  5   84 
+       150.      1.026                                            21909  5   85 
+       151.      0.806                                            21909  5   86 
+       152.      0.726                                            21909  5   87 
+       153.      0.645                                            21909  5   88 
+       154.      0.454      0.079                                 21909  5   89 
+       155.      0.294                                            21909  5   90 
+       156.      0.319                                            21909  5   91 
+       157.      0.181                                            21909  5   92 
+ENDDATA             79          0                                 21909  5   93 
+ENDSUBENT           92          0                                 21909  599999 
+SUBENT        21909006   20201223                             229621909  6    1 
+BIB                  4          4                                 21909  6    2 
+REACTION   (92-U-238(N,F)MASS,PRE,KE,LF+HF)                       21909  6    3 
+ERR-ANALYS (DATA-ERR)  Errors not specified                       21909  6    4 
+STATUS     (CURVE) Fig. 3 from J.Nucl.Sci.Technol.,16(1979)779    21909  6    5 
+HISTORY    (20201223C) SD                                         21909  6    6 
+ENDBIB               4          0                                 21909  6    7 
+COMMON               5          3                                 21909  6    8 
+EN         -EN-RSL    +EN-RSL    MASS-ERR-D ERR-DIG               21909  6    9 
+MEV        MEV        MEV        NO-DIM     MEV                   21909  6   10 
+    14.5        0.5      0.4        0.07       0.04               21909  6   11 
+ENDCOMMON            3          0                                 21909  6   12 
+DATA                 3         34                                 21909  6   13 
+MASS       DATA       DATA-ERR                                    21909  6   14 
+NO-DIM     MEV        MEV                                         21909  6   15 
+        87.     161.10                                            21909  6   16 
+        89.     161.62       1.47                                 21909  6   17 
+        91.     165.54                                            21909  6   18 
+        93.     165.39                                            21909  6   19 
+        95.     167.54                                            21909  6   20 
+        97.     170.80                                            21909  6   21 
+        99.     171.26       1.27                                 21909  6   22 
+       101.     175.13                                            21909  6   23 
+       103.     174.27                                            21909  6   24 
+       105.     176.77       1.52                                 21909  6   25 
+       107.     177.59                                            21909  6   26 
+       109.     172.46                                            21909  6   27 
+       111.     172.12       1.98                                 21909  6   28 
+       113.     166.58                                            21909  6   29 
+       115.     165.77                                            21909  6   30 
+       117.     164.10                                            21909  6   31 
+       119.     162.74       3.51                                 21909  6   32 
+       121.     163.86                                            21909  6   33 
+       123.     165.90                                            21909  6   34 
+       125.     162.66                                            21909  6   35 
+       127.     168.05       2.03                                 21909  6   36 
+       129.     169.38                                            21909  6   37 
+       131.     176.61                                            21909  6   38 
+       133.     177.07       1.52                                 21909  6   39 
+       135.     176.57                                            21909  6   40 
+       137.     174.39                                            21909  6   41 
+       139.     172.26       1.22                                 21909  6   42 
+       141.     170.14                                            21909  6   43 
+       143.     168.47                                            21909  6   44 
+       145.     168.62                                            21909  6   45 
+       147.     166.80                                            21909  6   46 
+       149.     162.69                                            21909  6   47 
+       151.     160.61                                            21909  6   48 
+       153.     158.74                                            21909  6   49 
+ENDDATA             36          0                                 21909  6   50 
+ENDSUBENT           49          0                                 21909  699999 
+SUBENT        21909007   20201223                             229621909  7    1 
+BIB                  4          4                                 21909  7    2 
+REACTION   (92-U-238(N,F)MASS,PRE/PR/FRG,NU)                      21909  7    3 
+ERR-ANALYS (DATA-ERR)  Errors not specified                       21909  7    4 
+STATUS     (CURVE) Fig. 5 from J.Nucl.Sci.Technol.,16(1979)779    21909  7    5 
+HISTORY    (20201223C) SD                                         21909  7    6 
+ENDBIB               4          0                                 21909  7    7 
+COMMON               5          3                                 21909  7    8 
+EN         -EN-RSL    +EN-RSL    MASS-ERR-D ERR-DIG               21909  7    9 
+MEV        MEV        MEV        NO-DIM     PRT/FIS               21909  7   10 
+    14.5        0.5      0.4        0.06       0.004              21909  7   11 
+ENDCOMMON            3          0                                 21909  7   12 
+DATA                 3         73                                 21909  7   13 
+MASS       DATA       DATA-ERR                                    21909  7   14 
+NO-DIM     PRT/FIS    PRT/FIS                                     21909  7   15 
+        84.      0.378                                            21909  7   16 
+        84.      0.737                                            21909  7   17 
+        85.      1.075                                            21909  7   18 
+        86.      0.759                                            21909  7   19 
+        87.      1.005                                            21909  7   20 
+        88.      0.668                                            21909  7   21 
+        89.      1.107      0.247                                 21909  7   22 
+        90.      1.021                                            21909  7   23 
+        91.      1.423                                            21909  7   24 
+        92.      0.957                                            21909  7   25 
+        93.      1.450                                            21909  7   26 
+        94.      1.659                                            21909  7   27 
+        95.      1.584                                            21909  7   28 
+        96.      1.820                                            21909  7   29 
+        97.      1.654                                            21909  7   30 
+        98.      1.793                                            21909  7   31 
+        99.      1.675                                            21909  7   32 
+       100.      1.755      0.177                                 21909  7   33 
+       101.      2.071                                            21909  7   34 
+       102.      2.120                                            21909  7   35 
+       103.      1.954                                            21909  7   36 
+       104.      1.728                                            21909  7   37 
+       105.      2.023                                            21909  7   38 
+       106.      2.302                                            21909  7   39 
+       107.      2.527                                            21909  7   40 
+       108.      2.489                                            21909  7   41 
+       109.      3.009                                            21909  7   42 
+       110.      2.570      0.289                                 21909  7   43 
+       111.      3.063                                            21909  7   44 
+       112.      3.636                                            21909  7   45 
+       113.      2.961                                            21909  7   46 
+       114.      2.843                                            21909  7   47 
+       115.      3.213                                            21909  7   48 
+       116.      3.245                                            21909  7   49 
+       117.      2.092                                            21909  7   50 
+       118.      2.172                                            21909  7   51 
+       119.      1.631                                            21909  7   52 
+       120.      2.548      0.456                                 21909  7   53 
+       121.      2.526                                            21909  7   54 
+       122.      2.848                                            21909  7   55 
+       123.      2.354                                            21909  7   56 
+       124.      1.963                                            21909  7   57 
+       125.      1.765                                            21909  7   58 
+       126.      1.513                                            21909  7   59 
+       127.      1.716                                            21909  7   60 
+       128.      1.448                                            21909  7   61 
+       129.      1.368      0.252                                 21909  7   62 
+       130.      1.169                                            21909  7   63 
+       131.      1.228                                            21909  7   64 
+       132.      1.507                                            21909  7   65 
+       133.      1.351                                            21909  7   66 
+       134.      1.657                                            21909  7   67 
+       135.      1.796                                            21909  7   68 
+       136.      1.518                                            21909  7   69 
+       137.      1.759                                            21909  7   70 
+       138.      1.919                                            21909  7   71 
+       139.      1.716                                            21909  7   72 
+       140.      2.021      0.188                                 21909  7   73 
+       141.      2.273                                            21909  7   74 
+       142.      2.123                                            21909  7   75 
+       143.      2.219                                            21909  7   76 
+       144.      2.471                                            21909  7   77 
+       145.      2.611                                            21909  7   78 
+       146.      2.863      0.236                                 21909  7   79 
+       147.      2.455                                            21909  7   80 
+       148.      2.793                                            21909  7   81 
+       149.      2.873                                            21909  7   82 
+       150.      3.157                                            21909  7   83 
+       151.      3.302                                            21909  7   84 
+       152.      3.586                                            21909  7   85 
+       153.      3.929                                            21909  7   86 
+       154.      3.554                                            21909  7   87 
+       155.      3.597                                            21909  7   88 
+ENDDATA             75          0                                 21909  7   89 
+ENDSUBENT           88          0                                 21909  799999 
+SUBENT        21909008   20201223                             229621909  8    1 
+BIB                  4          5                                 21909  8    2 
+REACTION   (92-U-238(N,F)MASS,PRE/PR,NU)                          21909  8    3 
+ERR-ANALYS (DATA-ERR)  Errors not specified                       21909  8    4 
+STATUS     (CURVE) Fig. 5 from J.Nucl.Sci.Technol.,16(1979)779    21909  8    5 
+           (DEP,21909004)                                         21909  8    6 
+HISTORY    (20201223C) SD                                         21909  8    7 
+ENDBIB               5          0                                 21909  8    8 
+COMMON               5          3                                 21909  8    9 
+EN         -EN-RSL    +EN-RSL    MASS-ERR-D ERR-DIG               21909  8   10 
+MEV        MEV        MEV        NO-DIM     PRT/FIS               21909  8   11 
+    14.5        0.5      0.4        0.06       0.004              21909  8   12 
+ENDCOMMON            3          0                                 21909  8   13 
+DATA                 3         35                                 21909  8   14 
+MASS       DATA       DATA-ERR                                    21909  8   15 
+NO-DIM     PRT/FIS    PRT/FIS                                     21909  8   16 
+       121.      4.595                                            21909  8   17 
+       122.      6.054                                            21909  8   18 
+       123.      5.539      0.558                                 21909  8   19 
+       124.      4.799                                            21909  8   20 
+       125.      4.708                                            21909  8   21 
+       126.      5.158                                            21909  8   22 
+       127.      4.515                                            21909  8   23 
+       128.      4.000                                            21909  8   24 
+       129.      4.391      0.348                                 21909  8   25 
+       130.      3.662                                            21909  8   26 
+       131.      3.759                                            21909  8   27 
+       132.      3.818                                            21909  8   28 
+       133.      3.367                                            21909  8   29 
+       134.      3.399                                            21909  8   30 
+       135.      3.737                                            21909  8   31 
+       136.      3.662                                            21909  8   32 
+       137.      3.817                                            21909  8   33 
+       138.      3.678                                            21909  8   34 
+       139.      3.367                                            21909  8   35 
+       140.      3.817      0.252                                 21909  8   36 
+       141.      3.914                                            21909  8   37 
+       142.      3.962                                            21909  8   38 
+       143.      3.812                                            21909  8   39 
+       144.      4.139                                            21909  8   40 
+       145.      4.064                                            21909  8   41 
+       146.      3.812                                            21909  8   42 
+       147.      3.876                                            21909  8   43 
+       148.      3.908      0.332                                 21909  8   44 
+       149.      3.961                                            21909  8   45 
+       150.      3.811                                            21909  8   46 
+       151.      4.321                                            21909  8   47 
+       152.      4.337                                            21909  8   48 
+       153.      5.012                                            21909  8   49 
+       154.      4.277                                            21909  8   50 
+       155.      3.966                                            21909  8   51 
+ENDDATA             37          0                                 21909  8   52 
+ENDSUBENT           51          0                                 21909  899999 
+ENDENTRY             8          0                                 2190999999999 
