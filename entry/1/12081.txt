@@ -1,48 +1,62 @@
-ENTRY            12081   19841018                             00001208100000001 
-SUBENT        12081001   19841018                             00001208100100001 
-BIB                  8         11                                 1208100100002 
-INSTITUTE  (1USAWES)                                              1208100100003 
-REFERENCE  (J,BAP,3,336(R3),5808)                                 1208100100004 
-AUTHOR     (G.R.HOPKINS)                                          1208100100005 
-TITLE      THERMAL NEUTRON CAPTURE CROSS SECTIONS OF ER166 AND    1208100100006 
-           ER167.                                                 1208100100007 
-MONITOR    (68-ER-0(N,G),,SIG)                                    1208100100008 
-ASSUMED    (ASSUM1,68-ER-168(N,G)68-ER-169,,SIG)                  1208100100009 
-           (ASSUM2,68-ER-170(N,G)68-ER-171,,SIG)                  1208100100010 
-STATUS     (SCSRS)                                                1208100100011 
-HISTORY    (760803T) TRANSLATED FROM SCISRS                       1208100100012 
-           (841018U) COMMON HEADING CORRECTED.                    1208100100013 
-ENDBIB              11          0                                 1208100100014 
-COMMON               3          3                                 1208100100015 
-MONIT      ASSUM1     ASSUM2                                      1208100100016 
-B          B          B                                           1208100100017 
- 166.       2.         9.                                         1208100100018 
-ENDCOMMON            3          0                                 1208100100019 
-ENDSUBENT           18          0                                 1208100199999 
-SUBENT        12081002   19780210                             00001208100200001 
-BIB                  3          3                                 1208100200002 
-REACTION   (68-ER-166(N,G)68-ER-167,,SIG,,SPA)                    1208100200003 
-METHOD     (REAC) REACTIVITY COEFFICIENT MEASUREMENT              1208100200004 
-INC-SPECT   REACTOR SPECTRUM                                      1208100200005 
-ENDBIB               3          0                                 1208100200006 
-NOCOMMON             0          0                                 1208100200007 
-DATA                 3          1                                 1208100200008 
-EN-DUMMY   DATA       DATA-ERR                                    1208100200009 
-MEV        B          B                                           1208100200010 
- 2.53   -08 4.5    +01 9.     +00                                 1208100200011 
-ENDDATA              3          0                                 1208100200012 
-ENDSUBENT           11          0                                 1208100299999 
-SUBENT        12081003   19780210                             00001208100300001 
-BIB                  3          3                                 1208100300002 
-REACTION   (68-ER-167(N,G)68-ER-168,,SIG,,SPA)                    1208100300003 
-METHOD     (REAC) REACTIVITY COEFFICIENT MEASUREMENT              1208100300004 
-INC-SPECT   REACTOR SPECTRUM                                      1208100300005 
-ENDBIB               3          0                                 1208100300006 
-NOCOMMON             0          0                                 1208100300007 
-DATA                 3          1                                 1208100300008 
-EN-DUMMY   DATA       DATA-ERR                                    1208100300009 
-MEV        B          B                                           1208100300010 
- 2.53   -08 6.20   +02 1.25   +02                                 1208100300011 
-ENDDATA              3          0                                 1208100300012 
-ENDSUBENT           11          0                                 1208100399999 
+ENTRY            12081   20190829                             145912081  0    1 
+SUBENT        12081001   20190829                             145912081  1    1 
+BIB                 12         27                                 12081  1    2 
+TITLE      Thermal neutron capture cross sections of Er166 and    12081  1    3 
+           Er167                                                  12081  1    4 
+AUTHOR     (G.R.Hopkins)                                          12081  1    5 
+REFERENCE  (J,BAP,3,336(R3),1958)                                 12081  1    6 
+INSTITUTE  (1USAWES)                                              12081  1    7 
+FACILITY   (REAC,1USAWES)                                         12081  1    8 
+INC-SPECT   Reactor spectrum.                                     12081  1    9 
+SAMPLE     Enriched samples. Sample #1: Er162,164<0.1%,           12081  1   10 
+           Er166=72.9%, Er167=17.7%, Er168=8.5%, Er170=0.8%.      12081  1   11 
+           Sample #2: Er162,164<0.1%, Er166=14.0%, Er167=58.8%,   12081  1   12 
+           Er168=25.3%, Er170=1.93%.                              12081  1   13 
+METHOD     (REAC) Reactivity coefficient measurement. Enriched    12081  1   14 
+           samples were compared with natural erbium to obtain    12081  1   15 
+           capture areas.                                         12081  1   16 
+ERR-ANALYS (ERR-T) 20% accuracy: includes 10% natural erbium      12081  1   17 
+           cross section uncertainty and assumes that the         12081  1   18 
+           resonances are distributed among isotopes in the       12081  1   19 
+           ratio of their thermal cross sections.                 12081  1   20 
+           (ERR-1) Natural erbium cross section uncertainty.      12081  1   21 
+MONITOR    (68-ER-0(N,G),,SIG)                                    12081  1   22 
+ASSUMED    (ASSUM1,68-ER-168(N,G)68-ER-169,,SIG)                  12081  1   23 
+           (ASSUM2,68-ER-170(N,G)68-ER-171,,SIG)                  12081  1   24 
+HISTORY    (19760803T) Translated from SCISRS.                    12081  1   25 
+           (19841018U) Common heading corrected.                  12081  1   26 
+           (20190829A) BP: Updated to new date formats, lower     12081  1   27 
+           case. Corrections according last EXFOR rules and       12081  1   28 
+           Dict. Errors and sample updates.                       12081  1   29 
+ENDBIB              27          0                                 12081  1   30 
+COMMON               4          3                                 12081  1   31 
+MONIT      ASSUM1     ASSUM2     ERR-1                            12081  1   32 
+B          B          B          PER-CENT                         12081  1   33 
+       166.         2.         9.       10.0                      12081  1   34 
+ENDCOMMON            3          0                                 12081  1   35 
+ENDSUBENT           34          0                                 12081  199999 
+SUBENT        12081002   20190829                             145912081  2    1 
+BIB                  2          2                                 12081  2    2 
+REACTION   (68-ER-166(N,G)68-ER-167,,SIG,,SPA)                    12081  2    3 
+STATUS     (TABLE) page 337 of Bull.Am.Phys.Soc.3,336,1958.       12081  2    4 
+ENDBIB               2          0                                 12081  2    5 
+NOCOMMON             0          0                                 12081  2    6 
+DATA                 3          1                                 12081  2    7 
+EN-DUMMY   DATA       ERR-T                                       12081  2    8 
+MEV        B          B                                           12081  2    9 
+   2.53E-08    4.5E+01         9.                                 12081  2   10 
+ENDDATA              3          0                                 12081  2   11 
+ENDSUBENT           10          0                                 12081  299999 
+SUBENT        12081003   20190829                             145912081  3    1 
+BIB                  2          2                                 12081  3    2 
+REACTION   (68-ER-167(N,G)68-ER-168,,SIG,,SPA)                    12081  3    3 
+STATUS     (TABLE) page 337 of Bull.Am.Phys.Soc.3,336,1958.       12081  3    4 
+ENDBIB               2          0                                 12081  3    5 
+NOCOMMON             0          0                                 12081  3    6 
+DATA                 3          1                                 12081  3    7 
+EN-DUMMY   DATA       ERR-T                                       12081  3    8 
+MEV        B          B                                           12081  3    9 
+   2.53E-08   6.20E+02   1.25E+02                                 12081  3   10 
+ENDDATA              3          0                                 12081  3   11 
+ENDSUBENT           10          0                                 12081  399999 
 ENDENTRY             3          0                                 1208199999999 
