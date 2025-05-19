@@ -1,0 +1,100 @@
+ENTRY            23767   20210228                             229823767  0    1 
+SUBENT        23767001   20210228                             229823767  1    1 
+BIB                 11         35                                 23767  1    2 
+TITLE      Measurement of the delayed-neutron multiplicity and    23767  1    3 
+           time constants in the thermal neutron induced          23767  1    4 
+           fission of 235U at ILL                                 23767  1    5 
+AUTHOR     (D.Foligno,P.Leconte,O.Serot,B.Geslot,G.De Izarra,     23767  1    6 
+           A.Chebboubi,A.Sardet,M.Diakaki,P.Tamagno,A.Billebaud,  23767  1    7 
+           F-R.Lecolley,T.Soldner,U.Koester,P.Mutti,A.Pepino,     23767  1    8 
+           O.Meplan,G.Kessedjian,J.-L.Lecouey,L.Mathieu,          23767  1    9 
+           N.Marie-Nourry)                                        23767  1   10 
+INSTITUTE  (2FR CAD,2FR GRE,2FR GRA,2FR CAE,2FR ILL)              23767  1   11 
+REFERENCE  (J,EPJ/CS,239,18006,2020)                              23767  1   12 
+           #doi:10.1051/epjconf/202023918006                      23767  1   13 
+FACILITY   (REAC,2FR GRE)                                         23767  1   14 
+SAMPLE     The target is a miniaturized fission chamber. The      23767  1   15 
+           fissile material, 210 ug of 235U has been              23767  1   16 
+           electroplated on a titanium support of 8 mm in         23767  1   17 
+           diameter.                                              23767  1   18 
+DETECTOR   (LONGC) The LOENIE long counter is made of two blocks  23767  1   19 
+           of polyethylene with a central hole to host the        23767  1   20 
+           target and 16 smaller holes to host the 3He            23767  1   21 
+           proportional counters. LOENIE has been designed to     23767  1   22 
+           have a flat efficiency as a function of the neutron    23767  1   23 
+           energy in the energy range 100keV - 1MeV.              23767  1   24 
+ANALYSIS   Average delayed-neutron yield as a function of time    23767  1   25 
+           after irradiation.                                     23767  1   26 
+           Irradiation time = 50 s                                23767  1   27 
+           Average delayed-neutron yields measurement time = 200s 23767  1   28 
+           A veto time interval was added after the end of the    23767  1   29 
+           irradiation.                                           23767  1   30 
+           The fit of the first 500 ms of decay curve was         23767  1   31 
+           performed with the CONRAD code.                        23767  1   32 
+ERR-ANALYS (ERR-T) The total uncertainty due to the following     23767  1   33 
+           partial uncertainties:                                 23767  1   34 
+           (ERR-1) the detector efficiency - 1%                   23767  1   35 
+STATUS     (TABLE) Table 1 EPJ Web of Conferences 239(2020)18006  23767  1   36 
+HISTORY    (20210228C) VS                                         23767  1   37 
+ENDBIB              35          0                                 23767  1   38 
+COMMON               1          3                                 23767  1   39 
+EN                                                                23767  1   40 
+EV                                                                23767  1   41 
+     0.0253                                                       23767  1   42 
+ENDCOMMON            3          0                                 23767  1   43 
+ENDSUBENT           42          0                                 23767  199999 
+SUBENT        23767002   20210228                             229823767  2    1 
+BIB                  2          4                                 23767  2    2 
+REACTION   (92-U-235(N,F),DL,NU)                                  23767  2    3 
+ERR-ANALYS (ERR-2) the abundance and the decay constant of the    23767  2    4 
+           delayed-neutron group i - 0.9%                         23767  2    5 
+           (ERR-S) counting statistics - 0.4%                     23767  2    6 
+ENDBIB               4          0                                 23767  2    7 
+COMMON               3          3                                 23767  2    8 
+ERR-1      ERR-2      ERR-S                                       23767  2    9 
+PER-CENT   PER-CENT   PER-CENT                                    23767  2   10 
+         1.        0.9        0.4                                 23767  2   11 
+ENDCOMMON            3          0                                 23767  2   12 
+DATA                 2          1                                 23767  2   13 
+DATA       ERR-T                                                  23767  2   14 
+PRT/FIS    PER-CENT                                               23767  2   15 
+  1.631E-02        1.4                                            23767  2   16 
+ENDDATA              3          0                                 23767  2   17 
+ENDSUBENT           16          0                                 23767  299999 
+SUBENT        23767003   20210301                             229823767  3    1 
+BIB                  3         15                                 23767  3    2 
+REACTION   ((92-U-235(N,F),DL/GRP,NU)/(92-U-235(N,F),DL,NU))      23767  3    3 
+ADD-RES    (DECAY) Mean half-life of delayed neutron precursor:   23767  3    4 
+             without correlations T1/2 (s) = 8.93(5.72%)          23767  3    5 
+             with correlations T1/2 (s) = 8.93(0.98%)             23767  3    6 
+COVARIANCE  (XY,8,GRP-NUM,NO-DIM)                                 23767  3    7 
+             1. 2. 3. 4. 5. 6. 7. 8.                              23767  3    8 
+            (Z,36,COR:ERR-T,PER-CENT)                             23767  3    9 
+             100                                                  23767  3   10 
+             -72.8 100                                            23767  3   11 
+             83.3 -85.2 100                                       23767  3   12 
+             -46.6 71.6 -78.3 100                                 23767  3   13 
+             46.2 -37.3 65.6 -81.4 100                            23767  3   14 
+             -34.1 24.8 -48 65.2 -91.9 100                        23767  3   15 
+             34.3 -5.2 37.8 -37.5 75.3 -88.9 100                  23767  3   16 
+             -37.9 -8.2 -34 18.4 -62.2 70.2 -93.2 100             23767  3   17 
+ENDBIB              15          0                                 23767  3   18 
+COMMON               1          3                                 23767  3   19 
+ERR-1                                                             23767  3   20 
+PER-CENT                                                          23767  3   21 
+         1.                                                       23767  3   22 
+ENDCOMMON            3          0                                 23767  3   23 
+DATA                 3          8                                 23767  3   24 
+GRP-NUM    DATA       ERR-T                                       23767  3   25 
+NO-DIM     NO-DIM     PER-CENT                                    23767  3   26 
+         1.   3.64E-02        2.7                                 23767  3   27 
+         2.   1.31E-01        3.3                                 23767  3   28 
+         3.   1.15E-01        4.9                                 23767  3   29 
+         4.   1.66E-01        4.8                                 23767  3   30 
+         5.   3.55E-01        5.2                                 23767  3   31 
+         6.   6.92E-02       40.8                                 23767  3   32 
+         7.   8.15E-02       49.3                                 23767  3   33 
+         8.   4.58E-02       66.3                                 23767  3   34 
+ENDDATA             10          0                                 23767  3   35 
+ENDSUBENT           34          0                                 23767  399999 
+ENDENTRY             3          0                                 2376799999999 
