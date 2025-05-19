@@ -1,77 +1,106 @@
-ENTRY            13313   19890907                             00001331300000001 
-SUBENT        13313001   19890907                             00001331300100001 
-BIB                 11         12                                 1331300100002 
-INSTITUTE  (1USAARK)                                              1331300100003 
-REFERENCE  (J,JIN,35,1443,7305)                                   1331300100004 
-AUTHOR     (S.A.RAO,P.K.KURODA)                                   1331300100005 
-TITLE      CHARGE DISTRIBUTION IN NEUTRON-INDUCED FISSION OF      1331300100006 
-            THORIUM                                               1331300100007 
-FACILITY   (CCW)                                                  1331300100008 
-SAMPLE     TH(NO3)4.4H2O                                          1331300100009 
-METHOD     (RCHEM)                                                1331300100010 
-DETECTOR   (GELI)                                                 1331300100011 
-ERR-ANALYS NO INFORMATION                                         1331300100012 
-STATUS     (RIDER) REFERENCE 73RAO1                               1331300100013 
-HISTORY    (890626C) VM                                           1331300100014 
-ENDBIB              12          0                                 1331300100015 
-COMMON               1          3                                 1331300100016 
-EN                                                                1331300100017 
-MEV                                                               1331300100018 
- 14.8                                                             1331300100019 
-ENDCOMMON            3          0                                 1331300100020 
-ENDSUBENT           19          0                                 1331300199999 
-SUBENT        13313002   19890907                             00001331300200001 
-BIB                  3          7                                 1331300200002 
-REACTION   (90-TH-232(N,F)ELEM/MASS,IND,FY)                       1331300200003 
-MONITOR    (90-TH-232(N,F)42-MO-99,IND,FY)                        1331300200004 
-DECAY-DATA ((1.)49-IN-117-M,1.94HR)                               1331300200005 
-           ((1.)49-IN-117-G,45.MIN)                               1331300200006 
-           ((2.)53-I-130-M,9.2MIN)                                1331300200007 
-           ((2.)53-I-130-G,12.5HR)                                1331300200008 
-           ((3.)53-I-132,2.29HR)                                  1331300200009 
-ENDBIB               7          0                                 1331300200010 
-NOCOMMON             0          0                                 1331300200011 
-DATA                 6          3                                 1331300200012 
-ELEMENT    MASS       ISOMER     DATA       DATA-ERR   DECAY-FLAG 1331300200013 
-NO-DIM     NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM     1331300200014 
- 49.       117.                   0.016      0.004      1.        1331300200015 
- 53.       130.                   0.022      0.005      2.        1331300200016 
- 53.       132.         0.        0.11       0.02       3.        1331300200017 
-ENDDATA              5          0                                 1331300200018 
-ENDSUBENT           17          0                                 1331300299999 
-SUBENT        13313003   19890907                             00001331300300001 
-BIB                  3          5                                 1331300300002 
-REACTION   (90-TH-232(N,F)ELEM/MASS,IND,FY)                       1331300300003 
-MONITOR    (90-TH-232(N,F)53-I-135,IND,FY)                        1331300300004 
-DECAY-DATA ((1.)53-I-133,20.8HR)                                  1331300300005 
-           ((2.)53-I-134-M,3.8MIN)                                1331300300006 
-           ((2.)53-I-134-G,53.MIN)                                1331300300007 
-ENDBIB               5          0                                 1331300300008 
-NOCOMMON             0          0                                 1331300300009 
-DATA                 5          2                                 1331300300010 
-ELEMENT    MASS       DATA       DATA-ERR   DECAY-FLAG            1331300300011 
-NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM                1331300300012 
- 53.       133.        0.44       0.10       1.                   1331300300013 
- 53.       134.        0.64       0.15       2.                   1331300300014 
-ENDDATA              4          0                                 1331300300015 
-ENDSUBENT           14          0                                 1331300399999 
-SUBENT        13313004   19890907                             00001331300400001 
-BIB                  3          5                                 1331300400002 
-REACTION   ((90-TH-232(N,F)ELEM/MASS,IND,FY)/                     1331300400003 
-           (90-TH-232(N,F)MASS,CHN,FY))                           1331300400004 
-RESULT     (FRIND)                                                1331300400005 
-STATUS     (DEP,13313002)                                         1331300400006 
-           (DEP,13313003)                                         1331300400007 
-ENDBIB               5          0                                 1331300400008 
-NOCOMMON             0          0                                 1331300400009 
-DATA                 5          5                                 1331300400010 
-ELEMENT    MASS       ISOMER     DATA       DATA-ERR              1331300400011 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                1331300400012 
- 49.       117.                       1.4E-2     0.4E-2           1331300400013 
- 53.       130.                       1.5E-2     0.4E-2           1331300400014 
- 53.       132.         0.            3.6E-2     0.7E-2           1331300400015 
- 53.       133.                       1.2E-1     0.3E-1           1331300400016 
- 53.       134.                       9.5E-2     2.5E-2           1331300400017 
-ENDDATA              7          0                                 1331300400018 
-ENDSUBENT           17          0                                 1331300499999 
-ENDENTRY             4          0                                 1331399999999 
+ENTRY            13313   20210409                             148213313  0    1 
+SUBENT        13313001   20210409                             148213313  1    1 
+BIB                  9         18                                 13313  1    2 
+TITLE      Charge distribution in neutron-induced fission of      13313  1    3 
+           thorium                                                13313  1    4 
+AUTHOR     (S.A.Rao,P.K.Kuroda)                                   13313  1    5 
+INSTITUTE  (1USAARK)                                              13313  1    6 
+REFERENCE  (J,JIN,35,1443,1973)                                   13313  1    7 
+           #doi:10.1016/0022-1902(73)80230-1                      13313  1    8 
+           #NSR: 1973RA08                                         13313  1    9 
+FACILITY   (CCW,1USAARK) 400-kV Cockcroft-Walton positive ion     13313  1   10 
+           accelerator                                            13313  1   11 
+SAMPLE     The thorium samples were in chemical form Th(NO3)      13313  1   12 
+           4.4H20. About 5-10g samples were enclosed in glass     13313  1   13 
+           ampoules and wrapped in cadmium foils.                 13313  1   14 
+METHOD     (CHSEP)                                                13313  1   15 
+DETECTOR   (GELI)                                                 13313  1   16 
+HISTORY    (19890626C) VM                                         13313  1   17 
+           (20210409A) OG. Converted to lower case and 4-digit    13313  1   18 
+           year. #NSR and #doi added. STATUS, METHOD, ERR-ANALYS, 13313  1   19 
+           REACTION in sub004 and SAMPLE updated. Sub005 added.   13313  1   20 
+ENDBIB              18          0                                 13313  1   21 
+COMMON               1          3                                 13313  1   22 
+EN                                                                13313  1   23 
+MEV                                                               13313  1   24 
+ 14.8                                                             13313  1   25 
+ENDCOMMON            3          0                                 13313  1   26 
+ENDSUBENT           25          0                                 13313  199999 
+SUBENT        13313002   20210409                             148213313  2    1 
+BIB                  5          9                                 13313  2    2 
+REACTION   (90-TH-232(N,F)ELEM/MASS,IND,FY)                       13313  2    3 
+MONITOR    (90-TH-232(N,F)42-MO-99,IND,FY)                        13313  2    4 
+DECAY-DATA ((1.)49-IN-117-M,1.94HR)                               13313  2    5 
+           ((1.)49-IN-117-G,45.MIN)                               13313  2    6 
+           ((2.)53-I-130-M,9.2MIN)                                13313  2    7 
+           ((2.)53-I-130-G,12.5HR)                                13313  2    8 
+           ((3.)53-I-132-G,2.29HR)                                13313  2    9 
+ERR-ANALYS (DATA-ERR) No information on sources of uncertainties  13313  2   10 
+STATUS     (TABLE) Tab.1 (p.1445) in Inorg.Nucl.Chem.35,1443,1973 13313  2   11 
+ENDBIB               9          0                                 13313  2   12 
+NOCOMMON             0          0                                 13313  2   13 
+DATA                 5          3                                 13313  2   14 
+ELEMENT    MASS       DATA       DATA-ERR   DECAY-FLAG            13313  2   15 
+NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM                13313  2   16 
+ 49.       117.        0.016      0.004      1.                   13313  2   17 
+ 53.       130.        0.022      0.005      2.                   13313  2   18 
+ 53.       132.        0.11       0.02       3.                   13313  2   19 
+ENDDATA              5          0                                 13313  2   20 
+ENDSUBENT           19          0                                 13313  299999 
+SUBENT        13313003   20210409                             148213313  3    1 
+BIB                  5          7                                 13313  3    2 
+REACTION   (90-TH-232(N,F)ELEM/MASS,IND,FY)                       13313  3    3 
+MONITOR    (90-TH-232(N,F)53-I-135,IND,FY)                        13313  3    4 
+DECAY-DATA ((1.)53-I-133-G,20.8HR)                                13313  3    5 
+           ((2.)53-I-134-M,3.8MIN)                                13313  3    6 
+           ((2.)53-I-134-G,53.MIN)                                13313  3    7 
+ERR-ANALYS (DATA-ERR) No information on sources of uncertainties  13313  3    8 
+STATUS     (TABLE) Tab.1 (p.1445) in Inorg.Nucl.Chem.35,1443,1973 13313  3    9 
+ENDBIB               7          0                                 13313  3   10 
+NOCOMMON             0          0                                 13313  3   11 
+DATA                 5          2                                 13313  3   12 
+ELEMENT    MASS       DATA       DATA-ERR   DECAY-FLAG            13313  3   13 
+NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM                13313  3   14 
+ 53.       133.        0.44       0.10       1.                   13313  3   15 
+ 53.       134.        0.64       0.15       2.                   13313  3   16 
+ENDDATA              4          0                                 13313  3   17 
+ENDSUBENT           16          0                                 13313  399999 
+SUBENT        13313004   20210409                             148213313  4    1 
+BIB                  3          5                                 13313  4    2 
+REACTION   (90-TH-232(N,F)ELEM/MASS,IND,FY,,FRC)                  13313  4    3 
+ERR-ANALYS (DATA-ERR) No information on sources of uncertainties  13313  4    4 
+STATUS     (DEP,13313002)                                         13313  4    5 
+           (DEP,13313003)                                         13313  4    6 
+           (TABLE) Tab.1 (p.1445) in Inorg.Nucl.Chem.35,1443,1973 13313  4    7 
+ENDBIB               5          0                                 13313  4    8 
+NOCOMMON             0          0                                 13313  4    9 
+DATA                 5          5                                 13313  4   10 
+ELEMENT    MASS       ISOMER     DATA       DATA-ERR              13313  4   11 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                13313  4   12 
+ 49.       117.                       1.4E-2     0.4E-2           13313  4   13 
+ 53.       130.                       1.5E-2     0.4E-2           13313  4   14 
+ 53.       132.         0.            3.6E-2     0.7E-2           13313  4   15 
+ 53.       133.                       1.2E-1     0.3E-1           13313  4   16 
+ 53.       134.                       9.5E-2     2.5E-2           13313  4   17 
+ENDDATA              7          0                                 13313  4   18 
+ENDSUBENT           17          0                                 13313  499999 
+SUBENT        13313005   20210409                             148213313  5    1 
+BIB                  4          5                                 13313  5    2 
+REACTION   (90-TH-232(N,F)MASS,SEC,ZP)                            13313  5    3 
+ERR-ANALYS No information on uncertainties                        13313  5    4 
+STATUS     (TABLE) Tab.2 (p.1445) in Inorg.Nucl.Chem.35,1443,1973 13313  5    5 
+           (DEP,13313004) Fractional independent yield            13313  5    6 
+HISTORY    (20210409C) OG.                                        13313  5    7 
+ENDBIB               5          0                                 13313  5    8 
+NOCOMMON             0          0                                 13313  5    9 
+DATA                 2          5                                 13313  5   10 
+MASS       DATA                                                   13313  5   11 
+NO-DIM     NO-DIM                                                 13313  5   12 
+117.       46.24                                                  13313  5   13 
+130.       50.28                                                  13313  5   14 
+132.       50.68                                                  13313  5   15 
+133.       51.38                                                  13313  5   16 
+134.       51.23                                                  13313  5   17 
+ENDDATA              7          0                                 13313  5   18 
+ENDSUBENT           17          0                                 13313  599999 
+ENDENTRY             5          0                                 1331399999999 
