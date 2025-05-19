@@ -1,6 +1,6 @@
-ENTRY            30494   20150723                             317230494  0    1 
-SUBENT        30494001   20150723                             317230494  1    1 
-BIB                 12         26                                 30494  1    2 
+ENTRY            30494   20160210                             317330494  0    1 
+SUBENT        30494001   20160210                             317330494  1    1 
+BIB                 12         31                                 30494  1    2 
 TITLE      TFSD response to fragments from light charged particle 30494  1    3 
             accompanied fission of 236U                           30494  1    4 
 AUTHOR     (N.N.Ajitanand, K.N.Iyengar, S.R.S.Murthy)             30494  1    5 
@@ -9,10 +9,10 @@ REFERENCE  (C,77PUNE,2,241,1977)                                  30494  1    7
 SAMPLE     235U (250 ug/cm2 thick) electrodeposited on Al foil    30494  1    8 
             (6 mg/cm2)                                            30494  1    9 
 FACILITY   (REAC,3INDTRM) CIRUS reactor                           30494  1   10 
-INC-SOURCE Collimated thermal beam                                30494  1   11 
+INC-SOURCE Collimated thermal beam, 5*10**7 n/cm2/sec.            30494  1   11 
 METHOD     Binary and ternary fission measured simultaneously,    30494  1   12 
             processed in different parts of multichannel analyzer.30494  1   13 
-DETECTOR   (SI) for long range charged particles                  30494  1   14 
+DETECTOR   (SIBAR) for long range charged particles               30494  1   14 
            (SCIN) Thin film scintillation detector (TFSD) for     30494  1   15 
             fission fragments                                     30494  1   16 
 ANALYSIS   Most probable masses, element numbers and energies of  30494  1   17 
@@ -20,37 +20,44 @@ ANALYSIS   Most probable masses, element numbers and energies of  30494  1   17
             calibration of the light pulses which the ternary     30494  1   19 
             fission fragments produced in the scintillation       30494  1   20 
             detector.                                             30494  1   21 
-STATUS     (TABLE) Table 1 of C,77PUNE,2,241,1977                 30494  1   22 
-           (PRELM) Final results awaiting experimental            30494  1   23 
-            determination of detector response functions.         30494  1   24 
-           (APRVD) Ajitanand (1979-07-05)                         30494  1   25 
-HISTORY    (19790618C) TL.                                        30494  1   26 
-           (20150723S) On. Restored from TRANS.3034               30494  1   27 
-           (20150723A) On. N-SOURCE -> INC-SOURCE; 002 updated    30494  1   28 
-ENDBIB              26          0                                 30494  1   29 
-NOCOMMON             0          0                                 30494  1   30 
-ENDSUBENT           29          0                                 30494  199999 
-SUBENT        30494002   20150723                             317230494  2    1 
-BIB                  3          6                                 30494  2    2 
-REACTION  1(92-U-235(N,F),TER,AP,LF,MXW)                          30494  2    3 
+            Energy of the binary fragments:                       30494  1   22 
+             LF: 100.42 MeV, HF: 69.91 MeV                        30494  1   23 
+            Energy of the light charged partivle accompanied      30494  1   24 
+            fission fragments: LF: 92.32 MeV, HF: 64.77 MeV       30494  1   25 
+STATUS     (TABLE) Table 1 of C,77PUNE,2,241,1977                 30494  1   26 
+           (PRELM) Final results awaiting experimental            30494  1   27 
+            determination of detector response functions.         30494  1   28 
+           (APRVD) Ajitanand (1979-07-05)                         30494  1   29 
+HISTORY    (19790618C) TL.                                        30494  1   30 
+           (20150723S) On. Restored from TRANS.3034               30494  1   31 
+           (20150723A) On. N-SOURCE -> INC-SOURCE; 002 updated    30494  1   32 
+           (20151028U) VS. BIB updated. REACTION corrected in 002.30494  1   33 
+ENDBIB              31          0                                 30494  1   34 
+NOCOMMON             0          0                                 30494  1   35 
+ENDSUBENT           34          0                                 30494  199999 
+SUBENT        30494002   20160210                             317330494  2    1 
+BIB                  3          8                                 30494  2    2 
+REACTION  1(92-U-235(N,F),PRE/TER,AP,LF,MXW)                      30494  2    3 
           2(92-U-235(N,F),TER,ZP,LF,MXW)                          30494  2    4 
-          3(92-U-235(N,F),TER,AP,HF,MXW)                          30494  2    5 
+          3(92-U-235(N,F),PRE/TER,AP,HF,MXW)                      30494  2    5 
           4(92-U-235(N,F),TER,ZP,HF,MXW)                          30494  2    6 
-ERR-ANALYS (DATA-ERR) Uncertainty given, analysis not described   30494  2    7 
-HISTORY    (20150723A) On. MONITOR and FLAG deleted.              30494  2    8 
-ENDBIB               6          0                                 30494  2    9 
-COMMON               1          3                                 30494  2   10 
-EN-DUMMY                                                          30494  2   11 
-EV                                                                30494  2   12 
- 0.0253                                                           30494  2   13 
-ENDCOMMON            3          0                                 30494  2   14 
-DATA                 8          1                                 30494  2   15 
-DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3DATA-ERR  330494  2   16 
-DATA      4DATA-ERR  4                                            30494  2   17 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     30494  2   18 
-NO-DIM     NO-DIM                                                 30494  2   19 
- 92.5       1.0        35.0       0.8        139.5      1.0       30494  2   20 
- 55.0       0.8                                                   30494  2   21 
-ENDDATA              6          0                                 30494  2   22 
-ENDSUBENT           21          0                                 30494  299999 
+ERR-ANALYS (DATA-ERR) The errors indicated are for a 5% unc.      30494  2    7 
+             peak channel assignment in the TFSD distribution.    30494  2    8 
+HISTORY    (20150723A) On. MONITOR and FLAG deleted.              30494  2    9 
+           (20151028U) VS. REACTION corrected.                    30494  2   10 
+ENDBIB               8          0                                 30494  2   11 
+COMMON               1          3                                 30494  2   12 
+EN-DUMMY                                                          30494  2   13 
+EV                                                                30494  2   14 
+ 0.0253                                                           30494  2   15 
+ENDCOMMON            3          0                                 30494  2   16 
+DATA                 8          1                                 30494  2   17 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3DATA-ERR  330494  2   18 
+DATA      4DATA-ERR  4                                            30494  2   19 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     30494  2   20 
+NO-DIM     NO-DIM                                                 30494  2   21 
+ 92.5       1.0        35.0       0.8        139.5      1.0       30494  2   22 
+ 55.0       0.8                                                   30494  2   23 
+ENDDATA              6          0                                 30494  2   24 
+ENDSUBENT           23          0                                 30494  299999 
 ENDENTRY             2          0                                 3049499999999 

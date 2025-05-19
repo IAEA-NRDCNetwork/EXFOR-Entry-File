@@ -1,75 +1,149 @@
-ENTRY            31723   20150407                             316931723  0    1 
-SUBENT        31723001   20150407                             316931723  1    1 
-BIB                 12         26                                 31723  1    2 
-TITLE      Measurement of neutrons in different Pb/U setups       31723  1    3 
-           irradiated by relativistic protons and deuterons by    31723  1    4 
-           means of activation samples                            31723  1    5 
-AUTHOR     (V.Wagner,O.Svoboda,J.Vrzalova,M.Suchopar,B.Geier,     31723  1    6 
-           A.Kugler,M.Honusek)                                    31723  1    7 
-INSTITUTE  (3CZRUJF,3CZRCTI)                                      31723  1    8 
-REFERENCE  (J,JP/CS,366,012047,2012)                              31723  1    9 
-           #doi:10.1088/1742-6596/366/1/012047                    31723  1   10 
-           (J,PPRC,59,114,2014)                                   31723  1   11 
-           #doi:10.1016/j.phpro.2014.10.018                       31723  1   12 
-            Preliminary data on graphs.                           31723  1   13 
-FACILITY   (CYCLO,3CZRUJF)                                        31723  1   14 
-REL-REF    (I,,P.Bem+,C,2007NICE,2,555,2007) Experimental facility31723  1   15 
-INC-SOURCE (P-LI7) Incident proton energy 38 MeV.                 31723  1   16 
-INC-SPECT  Quasi-monoenergetic                                    31723  1   17 
-METHOD     (ACTIV,GSPEC)                                          31723  1   18 
-ERR-ANALYS (ERR-T) Total uncertainty includes:                    31723  1   19 
-           (ERR-1) detector efficiency 3%.                        31723  1   20 
-           (ERR-2) neutron. spect. determination 10%              31723  1   21 
-           (ERR-3) proton beam integral determination 5%          31723  1   22 
-           (ERR-4) geometry, other spectroscopy corrections 1.5%  31723  1   23 
-             Statistical uncertainties.                           31723  1   24 
-STATUS     (TABLE) Data received from Dr. Wagner 2013-04-22.      31723  1   25 
-           (APRVD) Approved by Dr. Wagner 2013-06-19              31723  1   26 
-HISTORY    (20130328C) VS.                                        31723  1   27 
-           (20150313U) VS. Ref. PPRC,59,114,2014 added            31723  1   28 
-ENDBIB              26          0                                 31723  1   29 
-COMMON               5          3                                 31723  1   30 
-EN         ERR-1      ERR-2      ERR-3      ERR-4                 31723  1   31 
-MEV        PER-CENT   PER-CENT   PER-CENT   PER-CENT              31723  1   32 
-32.5        3.          10.         5.        1.5                 31723  1   33 
-ENDCOMMON            3          0                                 31723  1   34 
-ENDSUBENT           33          0                                 31723  199999 
-SUBENT        31723002   20130429                             31603172300200001 
-BIB                  2          2                                 3172300200002 
-REACTION   (39-Y-89(N,3N)39-Y-87-M,,SIG)                          3172300200003 
-DECAY-DATA (39-Y-87-M,13.38HR,G,380.79,0.78)                      3172300200004 
-ENDBIB               2          0                                 3172300200005 
-NOCOMMON             0          0                                 3172300200006 
-DATA                 2          1                                 3172300200007 
-DATA       ERR-T                                                  3172300200008 
-MB         MB                                                     3172300200009 
- 560.        60.                                                  3172300200010 
-ENDDATA              3          0                                 3172300200011 
-ENDSUBENT           10          0                                 3172300299999 
-SUBENT        31723003   20130429                             31603172300300001 
-BIB                  2          2                                 3172300300002 
-REACTION   (39-Y-89(N,3N)39-Y-87-G,,SIG)                          3172300300003 
-DECAY-DATA (39-Y-87-G,79.8HR,DG,388.531,0.82,DG,484.805,0.898)    3172300300004 
-ENDBIB               2          0                                 3172300300005 
-NOCOMMON             0          0                                 3172300300006 
-DATA                 2          1                                 3172300300007 
-DATA       ERR-T                                                  3172300300008 
-MB         MB                                                     3172300300009 
- 213.        23.                                                  3172300300010 
-ENDDATA              3          0                                 3172300300011 
-ENDSUBENT           10          0                                 3172300399999 
-SUBENT        31723004   20130429                             31603172300400001 
-BIB                  2          4                                 3172300400002 
-REACTION   (39-Y-89(N,3N)39-Y-87,,SIG)                            3172300400003 
-STATUS     (DEP,31723002)                                         3172300400004 
-           (DEP,31723003) Total cross section determined as a sum 3172300400005 
-           of ground and isomeric states cross-sections.          3172300400006 
-ENDBIB               4          0                                 3172300400007 
-NOCOMMON             0          0                                 3172300400008 
-DATA                 2          1                                 3172300400009 
-DATA       ERR-T                                                  3172300400010 
-MB         MB                                                     3172300400011 
- 770.         80.                                                 3172300400012 
-ENDDATA              3          0                                 3172300400013 
-ENDSUBENT           12          0                                 3172300499999 
-ENDENTRY             4          0                                 3172399999999 
+ENTRY            31723   20150817                             317331723  0    1 
+SUBENT        31723001   20150817                             317331723  1    1 
+BIB                 10         29                                 31723  1    2 
+TITLE      Cross-section studies of important neutron and         31723  1    3 
+           relativistic deuteron reactions                        31723  1    4 
+AUTHOR     (V.Wagner,M.Suchopar,J.Vrzalova,P.Chudoba,T.Herman,    31723  1    5 
+           O.Svoboda,B.Geier,A.Krasa,M.Majerle,A.Kugler,J.Adam,   31723  1    6 
+           A.Baldin,W.Furman,M.Kadykov,J.Khushvaktov,             31723  1    7 
+           A.Solnyshkin,V.Tsoupko-Sitnikov,S.Tyutyunikov,         31723  1    8 
+           L.Zavorka,N.Vladimirova,M.Bielewicz,S.Kilim,M.Szuta,   31723  1    9 
+           E.Strugalska-Gola)                                     31723  1   10 
+INSTITUTE  (3CZRUJF,3CZRCTI)                                      31723  1   11 
+REFERENCE  (J,JP/CS,533,012052,2014)                              31723  1   12 
+           #doi:10.1088/1742-6596/533/1/012052                    31723  1   13 
+           (J,JP/CS,366,012047,2012)                              31723  1   14 
+           #doi:10.1088/1742-6596/366/1/012047                    31723  1   15 
+           (J,PPRC,59,114,2014)                                   31723  1   16 
+           #doi:10.1016/j.phpro.2014.10.018                       31723  1   17 
+            Preliminary data on graphs.                           31723  1   18 
+FACILITY   (CYCLO,3CZRUJF)                                        31723  1   19 
+REL-REF    (I,,P.Bem+,C,2007NICE,2,555,2007) Experimental facility31723  1   20 
+INC-SOURCE (P-LI7) Incident proton energy 38 MeV.                 31723  1   21 
+INC-SPECT  Quasi-monoenergetic                                    31723  1   22 
+METHOD     (ACTIV,GSPEC)                                          31723  1   23 
+HISTORY    (20130328C) VS.                                        31723  1   24 
+           (20130422R) Data for Ref. JP/CS,366,012047,2012 for    31723  1   25 
+             Subents. 002-004 received from Dr. Wagner            31723  1   26 
+           (20150313U) VS. Ref. PPRC,59,114,2014 added            31723  1   27 
+           (20150721R) Data for Ref. JP/CS,533,012052,2014 for    31723  1   28 
+             Subents. 005-006 received from Dr. Wagner            31723  1   29 
+           (20150817A) VS. Ref. JP/CS,533,012052,2014 added       31723  1   30 
+                Entry revised. Subents 005 and 006 added.         31723  1   31 
+ENDBIB              29          0                                 31723  1   32 
+NOCOMMON             0          0 3                               31723  1   33 
+ENDSUBENT           32          0                                 31723  199999 
+SUBENT        31723002   20150817                             317331723  2    1 
+BIB                  6         12                                 31723  2    2 
+REACTION   (39-Y-89(N,3N)39-Y-87-M,,SIG)                          31723  2    3 
+DECAY-DATA (39-Y-87-M,13.38HR,G,380.79,0.78)                      31723  2    4 
+ANALYSIS   (DECAY)                                                31723  2    5 
+ERR-ANALYS (ERR-T) Total uncertainty includes:                    31723  2    6 
+           (ERR-1) detector efficiency 3%.                        31723  2    7 
+           (ERR-2) neutron. spect. determination 10%              31723  2    8 
+           (ERR-3) proton beam integral determination 5%          31723  2    9 
+           (ERR-4) geometry, other spectroscopy corrections 1.5%  31723  2   10 
+             Statistical uncertainties.                           31723  2   11 
+STATUS     (TABLE) Data received from Dr. Wagner 2013-04-22.      31723  2   12 
+               presented on Fig. 4 of JP/CS,366,012047,2012       31723  2   13 
+HISTORY    (20150817A) VS. Err. analysis, COMMON moved from 001   31723  2   14 
+ENDBIB              12          0                                 31723  2   15 
+COMMON               4          3                                 31723  2   16 
+ERR-1      ERR-2      ERR-3      ERR-4                            31723  2   17 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         31723  2   18 
+ 3.          10.         5.        1.5                            31723  2   19 
+ENDCOMMON            3          0                                 31723  2   20 
+DATA                 3          1                                 31723  2   21 
+EN         DATA       ERR-T                                       31723  2   22 
+MEV        MB         MB                                          31723  2   23 
+32.5        560.        60.                                       31723  2   24 
+ENDDATA              3          0                                 31723  2   25 
+ENDSUBENT           24          0                                 31723  299999 
+SUBENT        31723003   20150817                             317331723  3    1 
+BIB                  6         12                                 31723  3    2 
+REACTION   (39-Y-89(N,3N)39-Y-87-G,,SIG)                          31723  3    3 
+DECAY-DATA (39-Y-87-G,79.8HR,DG,388.531,0.82,DG,484.805,0.898)    31723  3    4 
+ANALYSIS   (DECAY)                                                31723  3    5 
+ERR-ANALYS (ERR-T) Total uncertainty includes:                    31723  3    6 
+           (ERR-1) detector efficiency 3%.                        31723  3    7 
+           (ERR-2) neutron. spect. determination 10%              31723  3    8 
+           (ERR-3) proton beam integral determination 5%          31723  3    9 
+           (ERR-4) geometry, other spectroscopy corrections 1.5%  31723  3   10 
+             Statistical uncertainties.                           31723  3   11 
+STATUS     (TABLE) Data received from Dr. Wagner 2013-04-22.      31723  3   12 
+               presented on Fig. 4 of JP/CS,366,012047,2012       31723  3   13 
+HISTORY    (20150817A) VS. Err. analysis, COMMON moved from 001   31723  3   14 
+ENDBIB              12          0                                 31723  3   15 
+COMMON               4          3                                 31723  3   16 
+ERR-1      ERR-2      ERR-3      ERR-4                            31723  3   17 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         31723  3   18 
+ 3.          10.         5.        1.5                            31723  3   19 
+ENDCOMMON            3          0                                 31723  3   20 
+DATA                 3          1                                 31723  3   21 
+EN         DATA       ERR-T                                       31723  3   22 
+MEV        MB         MB                                          31723  3   23 
+32.5        213.        23.                                       31723  3   24 
+ENDDATA              3          0                                 31723  3   25 
+ENDSUBENT           24          0                                 31723  399999 
+SUBENT        31723004   20150817                             317331723  4    1 
+BIB                  2          7                                 31723  4    2 
+REACTION   (39-Y-89(N,3N)39-Y-87,,SIG)                            31723  4    3 
+STATUS     (DEP,31723002)                                         31723  4    4 
+           (DEP,31723003) Total cross section determined as a sum 31723  4    5 
+           of ground and isomeric states cross-sections.          31723  4    6 
+           (SPSDD,31723006) New data received.                    31723  4    7 
+           (TABLE) Data received from Dr. Wagner 2013-04-22.      31723  4    8 
+            Plotted on Fig.4 of J.Phys.Conf.Ser.366(2012)012047   31723  4    9 
+ENDBIB               7          0                                 31723  4   10 
+NOCOMMON             0          0                                 31723  4   11 
+DATA                 3          1                                 31723  4   12 
+EN         DATA       ERR-T                                       31723  4   13 
+MEV        MB         MB                                          31723  4   14 
+32.5        770.         80.                                      31723  4   15 
+ENDDATA              3          0                                 31723  4   16 
+ENDSUBENT           15          0                                 31723  499999 
+SUBENT        31723005   20150817                             317331723  5    1 
+BIB                  5          8                                 31723  5    2 
+REACTION  1(39-Y-89(N,2N)39-Y-88,,SIG)                            31723  5    3 
+          2(39-Y-89(N,2N)39-Y-88,,SIG)                            31723  5    4 
+SAMPLE    1 Squire foil 25x25x0.64 mm                             31723  5    5 
+          2 Circular pill with diameter 10 mm and thickness 1.5 mm31723  5    6 
+ERR-ANALYS (DATA-ERR) No inf. on sources of uncertainties.        31723  5    7 
+STATUS     (TABLE) Data received from Dr. Wagner 2015-07-21.      31723  5    8 
+               presented on Fig. 5 of JP/CS,533,012052,2014       31723  5    9 
+HISTORY    (20150817C) VS.                                        31723  5   10 
+ENDBIB               8          0                                 31723  5   11 
+NOCOMMON             0          0                                 31723  5   12 
+DATA                 6          5                                 31723  5   13 
+EN         EN-ERR     DATA      1DATA-ERR  1DATA      2DATA-ERR  231723  5   14 
+MEV        MEV        B          B          B          B          31723  5   15 
+17.4          0.5       1.42        0.14       1.20       0.12    31723  5   16 
+24.5          0.7       0.98        0.10       0.93       0.10    31723  5   17 
+28.7          0.6       0.49        0.05       0.47       0.05    31723  5   18 
+32.5          0.6       0.31        0.11                          31723  5   19 
+33.5          0.5       0.34        0.03       0.32       0.04    31723  5   20 
+ENDDATA              7          0                                 31723  5   21 
+ENDSUBENT           20          0                                 31723  599999 
+SUBENT        31723006   20150817                             317331723  6    1 
+BIB                  6          9                                 31723  6    2 
+REACTION  1(39-Y-89(N,3N)39-Y-87,,SIG)                            31723  6    3 
+          2(39-Y-89(N,3N)39-Y-87,,SIG)                            31723  6    4 
+SAMPLE    1 Squire foil 25x25x0.64 mm                             31723  6    5 
+          2 Circular pill with diameter 10 mm and thickness 1.5 mm31723  6    6 
+ANALYSIS   (DECAY)                                                31723  6    7 
+ERR-ANALYS (DATA-ERR) No inf. on sources of uncertainties.        31723  6    8 
+STATUS     (TABLE) Data received from Dr. Wagner 2015-07-21.      31723  6    9 
+               presented on Fig. 5 of JP/CS,533,012052,2014       31723  6   10 
+HISTORY    (20150817C) VS.                                        31723  6   11 
+ENDBIB               9          0                                 31723  6   12 
+NOCOMMON             0          0                                 31723  6   13 
+DATA                 6          4                                 31723  6   14 
+EN         EN-ERR     DATA      1DATA-ERR  1DATA      2DATA-ERR  231723  6   15 
+MEV        MEV        B          B          B          B          31723  6   16 
+24.5          0.7       0.161       0.015       0.152     0.017   31723  6   17 
+28.7          0.6       0.50        0.05        0.49      0.05    31723  6   18 
+32.5          0.6       0.61        0.03                          31723  6   19 
+33.5          0.5       0.64        0.07       0.60       0.07    31723  6   20 
+ENDDATA              6          0                                 31723  6   21 
+ENDSUBENT           20          0                                 31723  699999 
+ENDENTRY             6          0                                 3172399999999 
