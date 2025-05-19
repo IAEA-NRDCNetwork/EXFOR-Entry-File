@@ -1,81 +1,76 @@
-ENTRY            B0070   20011220                             0000B007000000001 
-SUBENT        B0070001   20011220                             0000B007000100001 
-BIB                  9         24                                 B007000100002 
-TITLE      The (P,N) Reaction Cross Section of Copper For         B007000100003 
-           9.3 MeV Protons                                        B007000100004 
-AUTHOR     (K.F.CHACKETT, G.A.CHACKETT, L.ISMAIL)                 B007000100005 
-INSTITUTE  (2UK BIR).Department of Physics                        B007000100006 
+ENTRY            B0070   20220316                             B033B007000000001 
+SUBENT        B0070001   20220316                             B033B007000100001 
+BIB                 11         17                                 B007000100002 
+TITLE      The (p,n) reaction cross section of copper for         B007000100003 
+            9.3 MeV protons                                       B007000100004 
+AUTHOR     (K.F.Chackett, G.A.Chackett, L.Ismail)                 B007000100005 
+INSTITUTE  (2UK BIR)                                              B007000100006 
 REFERENCE  (J,PPS,80,738,1962)                                    B007000100007 
 FACILITY   (CYCLO,2UK BIR)                                        B007000100008 
-SAMPLE     Foils of Natural Copper, Thickness 25.4 Mu             B007000100009 
-           Corresponding to an Energy Loss of 0.6 MeV at a        B007000100010 
-           Projectile Energy of 9.6 MeV.                          B007000100011 
-ADD-RES    (TRCS)                                                 B007000100012 
-           A Total Reaction Cross Section of 910+-25 Mb For       B007000100013 
-           Natural Copper was Calculated with the (P,Q) Cross     B007000100014 
-           Sections of 365 and 155 Mb For Cu-63 and Cu-65,        B007000100015 
-           Respectively As Quoted by Meyer and Hintz, Phys.Rev.   B007000100016 
-           Letters 5,207,1960. Because these Values Apply at a    B007000100017 
-           Proton Energy of 9.85 Instead of 9.3 MeV, the Authors  B007000100018 
-           Estimated a Value of 900+-25 Mb.                       B007000100019 
-ERR-ANALYS (EN-ERR) The Error of the Mean Energy is Mainly Due to B007000100020 
-           The Target Thickness, While the Uncertainty of the     B007000100021 
-           Proton Energy is About 0.1 MeV                         B007000100022 
-HISTORY    (19770506C)Lapf                                        B007000100023 
-           (19961209A) Reaction Lines and Err-Analys are          B007000100024 
-            Corrected.                                            B007000100025 
-           (20011110U) Last checking has been done.               B007000100026 
-ENDBIB              24          0                                 B007000100027 
-NOCOMMON             0          0                                 B007000100028 
-ENDSUBENT           27          0                                 B007000199999 
-SUBENT        B0070002   20011220                             0000B007000200001 
-BIB                  6         12                                 B007000200002 
-REACTION   (29-CU-63(P,N)30-ZN-63,,SIG,,,EXP)                     B007000200003 
-RAD-DET    (30-ZN-63,AR)                                          B007000200004 
-DECAY-DATA (30-ZN-63,38.4MIN,B+,,0.93)                            B007000200005 
-DETECTOR   (NAICR).Calibrated with Na-22 Standards                B007000200006 
+SAMPLE     Natural Cu foil (25.4 um, 0.6 MeV thick for            B007000100009 
+            9.6 MeV projectile)                                   B007000100010 
+METHOD     (ACTIV)                                                B007000100011 
+ADD-RES    (TRCS) 900+/-25 mb after addition of charged particle  B007000100012 
+            emission cross section                                B007000100013 
+ERR-ANALYS (EN-ERR) Mainly due to target thickness.               B007000100014 
+            The uncertainty of the proton Energy is ~0.1 MeV.     B007000100015 
+STATUS     (TABLE) Text (p.740) of Proc.Phys.Soc.80(1962)738      B007000100016 
+HISTORY    (19770506C) Lapf                                       B007000100017 
+           (19961209A) Reaction Lines and Err-Analys Corrected.   B007000100018 
+           (20220316A) On. Major revisions in 002 and 003.        B007000100019 
+ENDBIB              17          0                                 B007000100020 
+NOCOMMON             0          0                                 B007000100021 
+ENDSUBENT           20          0                                 B007000199999 
+SUBENT        B0070002   20220316                             B033B007000200001 
+BIB                  7         12                                 B007000200002 
+REACTION   (29-CU-63(P,N)30-ZN-63,,SIG)                           B007000200003 
+DECAY-DATA (30-ZN-63,38.4MIN,B+,,0.93)                            B007000200004 
+RAD-DET    (30-ZN-63,AR)                                          B007000200005 
+DETECTOR   (NAICR) Calibrated with 22Na standards                 B007000200006 
            (IOCH)                                                 B007000200007 
 METHOD     (EXTB,BCINT,SITA)                                      B007000200008 
-           (ACTIV)                                                B007000200009 
-ERR-ANALYS (ERR-T) .Standard Deviation Taking Into Account        B007000200010 
-           The Reproducibility of Several Measurements of Two     B007000200011 
-           Bombardments, the Uncertainties in the Absolute        B007000200012 
-           Measurements of the Na-22 Standards (2%), and the      B007000200013 
-           Calibration of the Beam Integrator (1%).               B007000200014 
+ERR-ANALYS (ERR-T) Standard deviation taking into account         B007000200009 
+                   - the reproducibility of several measurements  B007000200010 
+                     of two bombardments,                         B007000200011 
+           (ERR-1) - beam integrator calibration             (1%) B007000200012 
+           (ERR-2) - absolute measurements of 22Na standards (2%) B007000200013 
+HISTORY    (20220316A) On. ERR-1 and ERR-2 added.                 B007000200014 
 ENDBIB              12          0                                 B007000200015 
 NOCOMMON             0          0                                 B007000200016 
-DATA                 4          1                                 B007000200017 
-EN         EN-ERR     DATA       ERR-T                            B007000200018 
-MEV        MEV        MB         MB                               B007000200019 
-        9.3        0.3       480.        20.                      B007000200020 
+DATA                 6          1                                 B007000200017 
+EN         EN-ERR     DATA       ERR-T      ERR-1      ERR-2      B007000200018 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   B007000200019 
+ 9.3        0.3        480.       20.        1.         2.        B007000200020 
 ENDDATA              3          0                                 B007000200021 
 ENDSUBENT           20          0                                 B007000299999 
-SUBENT        B0070003   20011220                             0000B007000300001 
-BIB                  7         18                                 B007000300002 
-REACTION   (29-CU-65(P,N)30-ZN-65,,SIG,,,EXP)                     B007000300003 
-RAD-DET    (30-ZN-65,DG)                                          B007000300004 
-           (30-ZN-65,XR)                                          B007000300005 
-DECAY-DATA (30-ZN-65,,EC,,0.983,DG,1140.,0.513)                   B007000300006 
-DETECTOR   (COIN,NAICR,PROPC)                                     B007000300007 
-           (NAICR)                                                B007000300008 
-           (PROPC)                                                B007000300009 
-METHOD     (EXTB,BCINT,SITA,CHSEP)                                B007000300010 
-           (ACTIV)                                                B007000300011 
-ERR-ANALYS (ERR-T). Standard Deviation Taking Into Account        B007000300012 
-           The Reproducibility of Several Measurements of Three   B007000300013 
-           Bombardments, and the Uncertainty in the Calibration   B007000300014 
-           Of the Beam Integrator (1%).                           B007000300015 
-           Systematic Errors Due to an Improper Setting of the    B007000300016 
-           Coincidence Setup were Excluded by Variation of the    B007000300017 
-           Relevant Parameters (GEOMETRY, TIME DELAY BETWEEN THE  B007000300018 
-           TWO DETECTOR CIRCUITS,ETC.).                           B007000300019 
-CORRECTION Corrections For Random Coincidences have Been Applied. B007000300020 
-ENDBIB              18          0                                 B007000300021 
-NOCOMMON             0          0                                 B007000300022 
-DATA                 4          1                                 B007000300023 
-EN         EN-ERR     DATA       ERR-T                            B007000300024 
-MEV        MEV        MB         MB                               B007000300025 
-        9.3        0.3       895.        35.                      B007000300026 
-ENDDATA              3          0                                 B007000300027 
-ENDSUBENT           26          0                                 B007000399999 
+SUBENT        B0070003   20220316                             B033B007000300001 
+BIB                  9         20                                 B007000300002 
+REACTION   (29-CU-65(P,N)30-ZN-65,,SIG)                           B007000300003 
+ANALYSIS   Systematic errors due to improper setting of the       B007000300004 
+            coincidence setup were excluded by variation of the   B007000300005 
+            relevant parameters (geometry, time delay between the B007000300006 
+            two detector circuits,etc.                            B007000300007 
+DECAY-DATA (30-ZN-65,,EC,,0.983,                                  B007000300008 
+                      DG,1140.,,                                  B007000300009 
+                      XR,8.)                                      B007000300010 
+RAD-DET    (30-ZN-65,DG)                                          B007000300011 
+           (30-ZN-65,XR)                                          B007000300012 
+DETECTOR   (COIN,NAICR,PROPC)                                     B007000300013 
+           (NAICR)                                                B007000300014 
+           (PROPC)                                                B007000300015 
+METHOD     (EXTB,BCINT,SITA,CHSEP)                                B007000300016 
+ERR-ANALYS (ERR-T) Standard deviation taking into account         B007000300017 
+                   - the reproducibility of several measurements  B007000300018 
+                     of three bombardments,                       B007000300019 
+           (ERR-1) - beam integrator calibration (1%)             B007000300020 
+CORRECTION Corrected for random coincidences                      B007000300021 
+HISTORY    (20220316A) On. ERR-1 added. DECAY-DATA corrected.     B007000300022 
+ENDBIB              20          0                                 B007000300023 
+NOCOMMON             0          0                                 B007000300024 
+DATA                 5          1                                 B007000300025 
+EN         EN-ERR     DATA       ERR-T      ERR-1                 B007000300026 
+MEV        MEV        MB         MB         PER-CENT              B007000300027 
+ 9.3        0.3        895.       35.        1.                   B007000300028 
+ENDDATA              3          0                                 B007000300029 
+ENDSUBENT           28          0                                 B007000399999 
 ENDENTRY             3          0                                 B007099999999 

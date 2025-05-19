@@ -1,166 +1,148 @@
-ENTRY            B0064   20011220                             0000B006400000001 
-SUBENT        B0064001   20011220                             0000B006400100001 
-BIB                 10         21                                 B006400100002 
-TITLE      Total Reaction Cross Sections in the Mass Range        B006400100003 
-           45 to 65                                               B006400100004 
-AUTHOR     (G.F.DELL, W.D.PLOUGHE, H.J.HAUSMAN)                   B006400100005 
+ENTRY            B0064   20220316                             B033B006400000001 
+SUBENT        B0064001   20220316                             B033B006400100001 
+BIB                 10         16                                 B006400100002 
+TITLE      Total reaction cross sections in the mass range 45 to  B006400100003 
+            65                                                    B006400100004 
+AUTHOR     (G.F.Dell, W.D.Ploughe, H.J.Hausman)                   B006400100005 
 INSTITUTE  (1USAOSU)                                              B006400100006 
 REFERENCE  (J,NP,64,513,1965)                                     B006400100007 
 FACILITY   (CYCLO,1USAOSU)                                        B006400100008 
-METHOD     (ACTIV)                                                B006400100009 
-           (EDEG) No Reference For the Energy Degradation is      B006400100010 
-           Given.                                                 B006400100011 
-           (BCINT)                                                B006400100012 
-ANALYSIS   (DECAY) The Gamma Activity of the Peaks was Followed AsB006400100013 
-           A Function of Time and a Least Squares Fit was Used  toB006400100014 
-           Determine the Initial Activity of the Sample.          B006400100015 
-ADD-RES    (TRCS)                                                 B006400100016 
-           Additional (P,Q)-Cross Sections Consisting of Non-     B006400100017 
-           Elastic (P,P)+(P,A) Cross Sections were Measured at    B006400100018 
-           6.75 MeV and Total Reaction Cross Sections Calculated. B006400100019 
-ERR-ANALYS (DATA-ERR). Any Information is Absent.                 B006400100020 
-HISTORY    (19771111C)Pfkw                                        B006400100021 
-           (19971116A) Reaction Lines are Corrected. Lower Case.  B006400100022 
-           (20011109U) Last checking has been done.               B006400100023 
-ENDBIB              21          0                                 B006400100024 
-NOCOMMON             0          0                                 B006400100025 
-ENDSUBENT           24          0                                 B006400199999 
-SUBENT        B0064002   20011220                             0000B006400200001 
-BIB                  9         16                                 B006400200002 
-REACTION   (21-SC-45(P,N)22-TI-45,,SIG,,,EXP)                     B006400200003 
-SAMPLE     Scandium Evaporated on 2.5 Mu Au-Foils,                B006400200004 
-           One Stack with 10 Foils.                               B006400200005 
-METHOD     (STTA)                                                 B006400200006 
-DETECTOR   (NAICR).Well Crystal                                   B006400200007 
+METHOD     (ACTIV,EDEG,BCINT)                                     B006400100009 
+ANALYSIS   (DECAY) Least squares fit to determine the initial     B006400100010 
+            activity                                              B006400100011 
+ADD-RES    (TRCS) Non-elastic cross sections by integrating       B006400100012 
+            charged particle spectra at 70, 90 and 120 deg        B006400100013 
+            at 6.75 MeV                                           B006400100014 
+ERR-ANALYS (DATA-ERR) No information                              B006400100015 
+HISTORY    (19771111C) Pfkw                                       B006400100016 
+           (19971116A) Reaction lines are corrected. Lower case.  B006400100017 
+           (20220316U) On. Minor revisions in 002-006.            B006400100018 
+ENDBIB              16          0                                 B006400100019 
+NOCOMMON             0          0                                 B006400100020 
+ENDSUBENT           19          0                                 B006400199999 
+SUBENT        B0064002   20220316                             B033B006400200001 
+BIB                  9         11                                 B006400200002 
+REACTION   (21-SC-45(P,N)22-TI-45,,SIG)                           B006400200003 
+SAMPLE     Sc evaporated on Au foils (2.5 um).                    B006400200004 
+METHOD     (STTA) One stack with 10 foils                         B006400200005 
+DETECTOR   (NAICR) Well crystal                                   B006400200006 
+DECAY-DATA (22-TI-45,3.09HR,B+,,0.85)                             B006400200007 
 RAD-DET    (22-TI-45,AR)                                          B006400200008 
-DECAY-DATA (22-TI-45,3.09HR,B+,,0.85)                             B006400200009 
-STATUS     (CPX)                                                  B006400200010 
-ERR-ANALYS (EN-ERR) The Energy Error Given Includes Contributions B006400200011 
-           Due to Energy Uncertainty As Well As the Energy Spread B006400200012 
-           Of the Beam.                                           B006400200013 
-COMMENT    There is a Difference Between the Numerical Value For  B006400200014 
-           The Cross Section at 6.75 MeV (176+-8 MB) Given in     B006400200015 
-           Table 1 of the Publication and the Value Obtained by   B006400200016 
-           Cpx from Fig. 1 with a Data Point Reader and Given     B006400200017 
-           In the Data Section Below (COMMENT BY THE COMPILER).   B006400200018 
-ENDBIB              16          0                                 B006400200019 
-NOCOMMON             0          0                                 B006400200020 
-DATA                 4         11                                 B006400200021 
-EN         EN-ERR     DATA       DATA-ERR                         B006400200022 
-MEV        MEV        MB         MB                               B006400200023 
-       3.28                  11.1                                 B006400200024 
-       3.72       0.19        48.        3.3                      B006400200025 
-       4.13                  65.3                                 B006400200026 
-       4.51                  97.1                                 B006400200027 
-       4.86                  108.                                 B006400200028 
-       5.21       0.11       122.         8.                      B006400200029 
-       5.55                  132.                                 B006400200030 
-       5.86                  148.                                 B006400200031 
-       6.18                  135.                                 B006400200032 
-       6.47                  156.                                 B006400200033 
-       6.77       0.06       188.        10.                      B006400200034 
-ENDDATA             13          0                                 B006400200035 
-ENDSUBENT           34          0                                 B006400299999 
-SUBENT        B0064003   20011220                             0000B006400300001 
-BIB                  9         16                                 B006400300002 
-REACTION   (23-V-51(P,N)24-CR-51,,SIG,,,EXP)                      B006400300003 
-SAMPLE     Natural Vanadium Evaporated on 2.5 Mu Au-Foils,        B006400300004 
-           One Stack with 10 Foils.                               B006400300005 
-METHOD     (STTA)                                                 B006400300006 
-DETECTOR   (NAICR).Well Crystal                                   B006400300007 
-RAD-DET    (24-CR-51,DG)                                          B006400300008 
-DECAY-DATA (24-CR-51,27.75D,DG,320.,0.09)                         B006400300009 
-STATUS     (CPX)                                                  B006400300010 
-COMMENT    There is a Difference Between the Numerical Value For  B006400300011 
-           The Cross Section at 6.75 MeV (482+-35 MB) Given in    B006400300012 
-           Table 1 of the Publication and the Value Obtained by   B006400300013 
-           Cpx from Fig. 2 with a Data Point Reader and Given     B006400300014 
-           In the Data Section Below (COMMENT BY THE COMPILER).   B006400300015 
-ERR-ANALYS (EN-ERR) The Energy Error Given Includes Contributions B006400300016 
-           Due to Energy Uncertainty As Well As the Energy Spread B006400300017 
-           Of the Beam.                                           B006400300018 
-ENDBIB              16          0                                 B006400300019 
-NOCOMMON             0          0                                 B006400300020 
-DATA                 4         10                                 B006400300021 
-EN         EN-ERR     DATA       DATA-ERR                         B006400300022 
-MEV        MEV        MB         MB                               B006400300023 
-       3.74                  128.                                 B006400300024 
-        4.1       0.22       115.         9.                      B006400300025 
-       4.45                  207.                                 B006400300026 
-       4.82                  240.                                 B006400300027 
-       5.17                  366.                                 B006400300028 
-       5.49       0.11       396.        32.                      B006400300029 
-        5.8                  371.                                 B006400300030 
-       6.12                  463.                                 B006400300031 
-       6.42                  507.                                 B006400300032 
-        6.7       0.11       533.        39.                      B006400300033 
-ENDDATA             12          0                                 B006400300034 
-ENDSUBENT           33          0                                 B006400399999 
-SUBENT        B0064004   20011220                             0000B006400400001 
-BIB                  9         17                                 B006400400002 
-REACTION   (25-MN-55(P,N)26-FE-55,,SIG,,,EXP)                     B006400400003 
-SAMPLE     Manganese Evaporated on 2.5 Mu Au-Foils,               B006400400004 
-           One Stack with 9 Foils.                                B006400400005 
-METHOD     (STTA)                                                 B006400400006 
-DETECTOR   (PROPC)                                                B006400400007 
-RAD-DET    (26-FE-55,XR)                                          B006400400008 
-DECAY-DATA (26-FE-55,2.94YR,EC,,1.0)                              B006400400009 
-STATUS     (CPX)                                                  B006400400010 
-COMMENT    There is a Difference Between the Numerical Value For  B006400400011 
-           The Cross Section at 6.75 MeV (440+-40 MB) Given in    B006400400012 
-           Table 1 of the Publication and the Value Obtained by   B006400400013 
-           Cpx from Fig. 3 with a Data Point Reader and Given     B006400400014 
-           In the Data Section Below (COMMENT BY THE COMPILER     B006400400015 
-           OF KACHAPAG).                                          B006400400016 
-ERR-ANALYS (EN-ERR) The Energy Error Given Includes Contributions B006400400017 
-           Due to Energy Uncertainty As Well As the Energy Spread B006400400018 
-           Of the Beam.                                           B006400400019 
-ENDBIB              17          0                                 B006400400020 
-NOCOMMON             0          0                                 B006400400021 
-DATA                 4          9                                 B006400400022 
-EN         EN-ERR     DATA       DATA-ERR                         B006400400023 
-MEV        MEV        MB         MB                               B006400400024 
-       3.49        0.2       15.2        0.7                      B006400400025 
-       3.98       0.19       75.3        6.9                      B006400400026 
-       4.48       0.15       72.8         6.                      B006400400027 
-        4.9        0.1       200.        14.                      B006400400028 
-       5.29       0.09       235.        20.                      B006400400029 
-        5.6       0.08       302.        28.                      B006400400030 
-       6.01       0.07       353.        34.                      B006400400031 
-       6.41       0.06       429.        38.                      B006400400032 
-       6.68       0.06       459.        36.                      B006400400033 
-ENDDATA             11          0                                 B006400400034 
-ENDSUBENT           33          0                                 B006400499999 
-SUBENT        B0064005   20011220                             0000B006400500001 
-BIB                  6          6                                 B006400500002 
-REACTION   (29-CU-63(P,N)30-ZN-63,,SIG,,,EXP)                     B006400500003 
-SAMPLE     Copper Foil of Natural Abundance, Thickness 2.5 Mu     B006400500004 
+FLAG       (1.) 176+/-8 mb at 6.75 MeV in Table 1 of              B006400200009 
+            Nucl.Phys.64(1965)513                                 B006400200010 
+ERR-ANALYS (EN-ERR) Contributions due to energy uncertainty as    B006400200011 
+            well as the energy spread of the beam                 B006400200012 
+STATUS     (CPX) Read from Fig.1 of Nucl.Phys.64(1965)513         B006400200013 
+ENDBIB              11          0                                 B006400200014 
+NOCOMMON             0          0                                 B006400200015 
+DATA                 5         11                                 B006400200016 
+EN         EN-ERR     DATA       DATA-ERR   FLAG                  B006400200017 
+MEV        MEV        MB         MB         NO-DIM                B006400200018 
+ 3.28                   11.1                                      B006400200019 
+ 3.72       0.19        48.        3.3                            B006400200020 
+ 4.13                   65.3                                      B006400200021 
+ 4.51                   97.1                                      B006400200022 
+ 4.86                  108.                                       B006400200023 
+ 5.21       0.11       122.        8.                             B006400200024 
+ 5.55                  132.                                       B006400200025 
+ 5.86                  148.                                       B006400200026 
+ 6.18                  135.                                       B006400200027 
+ 6.47                  156.                                       B006400200028 
+ 6.77       0.06       188.       10.        1.                   B006400200029 
+ENDDATA             13          0                                 B006400200030 
+ENDSUBENT           29          0                                 B006400299999 
+SUBENT        B0064003   20220316                             B033B006400300001 
+BIB                  9         11                                 B006400300002 
+REACTION   (23-V-51(P,N)24-CR-51,,SIG)                            B006400300003 
+SAMPLE     Natural V evaporated on Au foils (2.5 um)              B006400300004 
+METHOD     (STTA) One stack with 10 foils                         B006400300005 
+DETECTOR   (NAICR) Well crystal                                   B006400300006 
+DECAY-DATA (24-CR-51,27.75D,DG,320.,0.09)                         B006400300007 
+FLAG       (1.) 482+/-35 mb at 6.75 MeV in Table 1 of             B006400300008 
+            Nucl.Phys.64(1965)513                                 B006400300009 
+ERR-ANALYS (EN-ERR) Contributions due to energy uncertainty as    B006400300010 
+            well as the energy spread of the beam                 B006400300011 
+STATUS     (CPX) Read from Fig.2 of Nucl.Phys.64(1965)513         B006400300012 
+HISTORY    (20220316U) On. RAD-DET deleted.                       B006400300013 
+ENDBIB              11          0                                 B006400300014 
+NOCOMMON             0          0                                 B006400300015 
+DATA                 5         10                                 B006400300016 
+EN         EN-ERR     DATA       DATA-ERR   FLAG                  B006400300017 
+MEV        MEV        MB         MB         NO-DIM                B006400300018 
+ 3.74                  128.                                       B006400300019 
+ 4.1        0.22       115.        9.                             B006400300020 
+ 4.45                  207.                                       B006400300021 
+ 4.82                  240.                                       B006400300022 
+ 5.17                  366.                                       B006400300023 
+ 5.49       0.11       396.       32.                             B006400300024 
+ 5.8                   371.                                       B006400300025 
+ 6.12                  463.                                       B006400300026 
+ 6.42                  507.                                       B006400300027 
+ 6.7        0.11       533.       39.        1.                   B006400300028 
+ENDDATA             12          0                                 B006400300029 
+ENDSUBENT           28          0                                 B006400399999 
+SUBENT        B0064004   20220316                             B033B006400400001 
+BIB                  9         11                                 B006400400002 
+REACTION   (25-MN-55(P,N)26-FE-55,,SIG)                           B006400400003 
+SAMPLE     Mn evaporated on Au foils (2.5 um)                     B006400400004 
+METHOD     (STTA) One stack with 9 foils                          B006400400005 
+DETECTOR   (PROPC)                                                B006400400006 
+DECAY-DATA (26-FE-55,2.94YR,XR)                                   B006400400007 
+FLAG       (1.) 440+/-40 mb at 6.75 MeV in Table 1 of             B006400400008 
+            Nucl.Phys.64(1965)513                                 B006400400009 
+ERR-ANALYS (EN-ERR) Contributions due to energy uncertainty as    B006400400010 
+            well as the energy spread of the beam                 B006400400011 
+STATUS     (CPX) Read from Fig.3 of Nucl.Phys.64(1965)513         B006400400012 
+HISTORY    (20220316U) On. DECAY-DATA revised. RAD-DET deleted.   B006400400013 
+ENDBIB              11          0                                 B006400400014 
+NOCOMMON             0          0                                 B006400400015 
+DATA                 5          9                                 B006400400016 
+EN         EN-ERR     DATA       DATA-ERR   FLAG                  B006400400017 
+MEV        MEV        MB         MB         NO-DIM                B006400400018 
+ 3.49       0.2         15.2       0.7                            B006400400019 
+ 3.98       0.19        75.3       6.9                            B006400400020 
+ 4.48       0.15        72.8       6.                             B006400400021 
+ 4.9        0.1        200.       14.                             B006400400022 
+ 5.29       0.09       235.       20.                             B006400400023 
+ 5.6        0.08       302.       28.                             B006400400024 
+ 6.01       0.07       353.       34.                             B006400400025 
+ 6.41       0.06       429.       38.                             B006400400026 
+ 6.68       0.06       459.       36.        1.                   B006400400027 
+ENDDATA             11          0                                 B006400400028 
+ENDSUBENT           27          0                                 B006400499999 
+SUBENT        B0064005   20220316                             B033B006400500001 
+BIB                  8          8                                 B006400500002 
+REACTION   (29-CU-63(P,N)30-ZN-63,,SIG)                           B006400500003 
+SAMPLE     Natural Cu foil (2.5 um)                               B006400500004 
 METHOD     (SITA)                                                 B006400500005 
-DETECTOR   (NAICR).Well Crystal                                   B006400500006 
-RAD-DET    (30-ZN-63,AR)                                          B006400500007 
-DECAY-DATA (30-ZN-63,38.MIN,B+,,0.90)                             B006400500008 
-ENDBIB               6          0                                 B006400500009 
-NOCOMMON             0          0                                 B006400500010 
-DATA                 3          1                                 B006400500011 
-EN         DATA       DATA-ERR                                    B006400500012 
-MEV        MB         MB                                          B006400500013 
-       6.75       239.        13.                                 B006400500014 
-ENDDATA              3          0                                 B006400500015 
-ENDSUBENT           14          0                                 B006400599999 
-SUBENT        B0064006   20011220                             0000B006400600001 
-BIB                  6          6                                 B006400600002 
-REACTION   (29-CU-65(P,N)30-ZN-65,,SIG,,,EXP)                     B006400600003 
-SAMPLE     Copper Foil Enriched in Cu-65, Thickness 2.5 Mu        B006400600004 
+DETECTOR   (NAICR) Well crystal                                   B006400500006 
+DECAY-DATA (30-ZN-63,38.MIN,B+,,0.90)                             B006400500007 
+RAD-DET    (30-ZN-63,AR)                                          B006400500008 
+STATUS     (TABLE) Table 1 of Nucl.Phys.64(1965)513               B006400500009 
+HISTORY    (20220316U) On. STATUS added.                          B006400500010 
+ENDBIB               8          0                                 B006400500011 
+NOCOMMON             0          0                                 B006400500012 
+DATA                 3          1                                 B006400500013 
+EN         DATA       DATA-ERR                                    B006400500014 
+MEV        MB         MB                                          B006400500015 
+ 6.75       239.       13.                                        B006400500016 
+ENDDATA              3          0                                 B006400500017 
+ENDSUBENT           16          0                                 B006400599999 
+SUBENT        B0064006   20220316                             B033B006400600001 
+BIB                  7          7                                 B006400600002 
+REACTION   (29-CU-65(P,N)30-ZN-65,,SIG)                           B006400600003 
+SAMPLE     Enriched 65Cu foil (2.5 um)                            B006400600004 
 METHOD     (SITA)                                                 B006400600005 
-DETECTOR   (NAICR).Well Crystal                                   B006400600006 
-RAD-DET    (30-ZN-65,DG)                                          B006400600007 
-DECAY-DATA (30-ZN-65,248.5D,DG,1114.,0.49)                        B006400600008 
-ENDBIB               6          0                                 B006400600009 
-NOCOMMON             0          0                                 B006400600010 
-DATA                 3          1                                 B006400600011 
-EN         DATA       DATA-ERR                                    B006400600012 
-MEV        MB         MB                                          B006400600013 
-       6.75       499.        25.                                 B006400600014 
-ENDDATA              3          0                                 B006400600015 
-ENDSUBENT           14          0                                 B006400699999 
+DETECTOR   (NAICR) Well crystal                                   B006400600006 
+DECAY-DATA (30-ZN-65,248.5D,DG,1114.,0.49)                        B006400600007 
+STATUS     (TABLE) Table 1 of Nucl.Phys.64(1965)513               B006400600008 
+HISTORY    (20220316U) On. RAD-DET deleted. STATUS added.         B006400600009 
+ENDBIB               7          0                                 B006400600010 
+NOCOMMON             0          0                                 B006400600011 
+DATA                 3          1                                 B006400600012 
+EN         DATA       DATA-ERR                                    B006400600013 
+MEV        MB         MB                                          B006400600014 
+ 6.75       499.       25.                                        B006400600015 
+ENDDATA              3          0                                 B006400600016 
+ENDSUBENT           15          0                                 B006400699999 
 ENDENTRY             6          0                                 B006499999999 
