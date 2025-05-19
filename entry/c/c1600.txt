@@ -1,20 +1,22 @@
-ENTRY            C1600   20080313                             C085C160000000001 
-SUBENT        C1600001   20080313                             C085C160000100001 
-BIB                  8         11                                 C160000100002 
-TITLE      Simultaneous production of high specific activity      C160000100003 
-           64Cu and 61Co with 11.4MeV protons on enriched 64Ni    C160000100004 
-           nuclei                                                 C160000100005 
-AUTHOR     (M.A.Avila-Rodriguez,J.A.Nyeb,R.J.Nickles)             C160000100006 
-INSTITUTE  (1USAWIS,1USAEMY)                                      C160000100007 
-REFERENCE  (J,ARI,65,1115,2007)                                   C160000100008 
-FACILITY   (CYCLO,1USAWIS) Low energy proton only cyclotron       C160000100009 
-METHOD     (ACTIV,CHSEP)                                          C160000100010 
-MONITOR    (29-CU-63(P,N)30-ZN-63,,SIG)                           C160000100011 
-           (29-CU-65(P,N)30-ZN-65,,SIG)                           C160000100012 
-HISTORY    (20080313C) compiled by S.H.                           C160000100013 
-ENDBIB              11          0                                 C160000100014 
-NOCOMMON             0          0                                 C160000100015 
-ENDSUBENT           14          0                                 C160000199999 
+ENTRY            C1600   20171004                             C168C1600  0    1 
+SUBENT        C1600001   20171004                             C168C1600  1    1 
+BIB                  8         13                                 C1600  1    2 
+TITLE      Simultaneous production of high specific activity      C1600  1    3 
+           64Cu and 61Co with 11.4MeV protons on enriched 64Ni    C1600  1    4 
+           nuclei                                                 C1600  1    5 
+AUTHOR     (M.A.Avila-Rodriguez,J.A.Nye,R.J.Nickles)              C1600  1    6 
+INSTITUTE  (1USAWIS,1USAEMY)                                      C1600  1    7 
+REFERENCE  (J,ARI,65,1115,2007)                                   C1600  1    8 
+FACILITY   (CYCLO,1USAWIS) Low energy proton only cyclotron       C1600  1    9 
+METHOD     (ACTIV,CHSEP)                                          C1600  1   10 
+MONITOR    (29-CU-63(P,N)30-ZN-63,,SIG)                           C1600  1   11 
+           (29-CU-65(P,N)30-ZN-65,,SIG)                           C1600  1   12 
+HISTORY    (20080313C) Compiled by S.H.                           C1600  1   13 
+           (20171003A) TS+On. Major revisions in 003-004.         C1600  1   14 
+            See also CP-D/933.                                    C1600  1   15 
+ENDBIB              13          0                                 C1600  1   16 
+NOCOMMON             0          0                                 C1600  1   17 
+ENDSUBENT           16          0                                 C1600  199999 
 SUBENT        C1600002   20080313                             C085C160000200001 
 BIB                  4          5                                 C160000200002 
 REACTION   (28-NI-64(P,N)29-CU-64,,SIG)                           C160000200003 
@@ -52,44 +54,47 @@ MEV        MEV        MB         MB                               C160000200012
   11.3        0.1        661.0     62.0                           C160000200035 
 ENDDATA             25          0                                 C160000200036 
 ENDSUBENT           35          0                                 C160000299999 
-SUBENT        C1600003   20080313                             C085C160000300001 
-BIB                  3          5                                 C160000300002 
-REACTION   (28-NI-64(P,N)29-CU-64,,TTY,,,DERIV)                   C160000300003 
-STATUS     (DEP,C1600002)                                         C160000300004 
-            Data given on page 1117 of the reference              C160000300005 
-SAMPLE     natNi sample, three stacks of 7 foils 12.5mum thick    C160000300006 
-           separated by Al foils for energy degradation           C160000300007 
-ENDBIB               5          0                                 C160000300008 
-NOCOMMON             0          0                                 C160000300009 
-DATA                 2          1                                 C160000300010 
-EN         DATA                                                   C160000300011 
-MEV        MCI/MUA                                                C160000300012 
-11.4       181.0                                                  C160000300013 
-ENDDATA              3          0                                 C160000300014 
-ENDSUBENT           13          0                                 C160000399999 
-SUBENT        C1600004   20080313                             C085C160000400001 
-BIB                  3          9                                 C160000400002 
-REACTION   (28-NI-64(P,N)29-CU-64,,TTY)                           C160000400003 
-SAMPLE     enriched 64Ni sample                                   C160000400004 
-           58Ni  - 2.5%                                           C160000400005 
-           60Ni  - 1.65%                                          C160000400006 
-           61Ni  - 0.14%                                          C160000400007 
-           62Ni  - 0.51%                                          C160000400008 
-           64Ni  - 94%                                            C160000400009 
-           electrodeposited on Au backing                         C160000400010 
-STATUS     (TABLE) data taken from table 1. of the reference      C160000400011 
-ENDBIB               9          0                                 C160000400012 
-COMMON               1          3                                 C160000400013 
-EN                                                                C160000400014 
-MEV                                                               C160000400015 
-11.4                                                              C160000400016 
-ENDCOMMON            3          0                                 C160000400017 
-DATA                 2          3                                 C160000400018 
-THICKNESS  DATA                                                   C160000400019 
-G/CM-SQ    MCI/MUA                                                C160000400020 
- 66.4       64.0                                                  C160000400021 
-116.2      101.0                                                  C160000400022 
-226.3      159.0                                                  C160000400023 
-ENDDATA              5          0                                 C160000400024 
-ENDSUBENT           23          0                                 C160000499999 
+SUBENT        C1600003   20171004                             C168C1600  3    1 
+BIB                  5          7                                 C1600  3    2 
+REACTION   (28-NI-64(P,N)29-CU-64,,TTY,,SAT,DERIV)                C1600  3    3 
+ANALYSIS   Determined from the measured excitation function       C1600  3    4 
+SAMPLE     natNi sample, three stacks of 7 foils 12.5 um thick    C1600  3    5 
+           separated by Al foils for energy degradation           C1600  3    6 
+STATUS     (DEP,C1600002)                                         C1600  3    7 
+           (TABLE) Data given on page 1117 of the reference       C1600  3    8 
+HISTORY    (20171003A) TS+On. REACTION(SF8) revised.              C1600  3    9 
+ENDBIB               7          0                                 C1600  3   10 
+NOCOMMON             0          0                                 C1600  3   11 
+DATA                 2          1                                 C1600  3   12 
+EN         DATA                                                   C1600  3   13 
+MEV        MCI/MUA                                                C1600  3   14 
+11.4       181.0                                                  C1600  3   15 
+ENDDATA              3          0                                 C1600  3   16 
+ENDSUBENT           15          0                                 C1600  399999 
+SUBENT        C1600004   20171004                             C168C1600  4    1 
+BIB                  4         10                                 C1600  4    2 
+REACTION   (28-NI-64(P,N)29-CU-64,,TTY,,SAT)                      C1600  4    3 
+SAMPLE     Enriched 64Ni sample, electrodeposited on Au backing   C1600  4    4 
+           (28-NI-58,ENR=0.025)  58Ni  - 2.5%                     C1600  4    5 
+           (28-NI-60,ENR=0.0165) 60Ni  - 1.65%                    C1600  4    6 
+           (28-NI-61,ENR=0.0014) 61Ni  - 0.14%                    C1600  4    7 
+           (28-NI-60,ENR=0.0051) 62Ni  - 0.51%                    C1600  4    8 
+           (28-NI-64,ENR=0.94)   64Ni  - 94%                      C1600  4    9 
+STATUS     (TABLE) Data taken from table 1. of the reference      C1600  4   10 
+HISTORY    (20171003A) TS+On. REACTION(SF8) revised. Data revised.C1600  4   11 
+            SAMPLE revised (OS).                                  C1600  4   12 
+ENDBIB              10          0                                 C1600  4   13 
+COMMON               1          3                                 C1600  4   14 
+EN                                                                C1600  4   15 
+MEV                                                               C1600  4   16 
+11.4                                                              C1600  4   17 
+ENDCOMMON            3          0                                 C1600  4   18 
+DATA                 2          3                                 C1600  4   19 
+THICKNESS  DATA                                                   C1600  4   20 
+G/CM-SQ    MCI/MUA                                                C1600  4   21 
+ 0.664       64.                                                  C1600  4   22 
+ 1.162      101.                                                  C1600  4   23 
+ 2.263      159.                                                  C1600  4   24 
+ENDDATA              5          0                                 C1600  4   25 
+ENDSUBENT           24          0                                 C1600  499999 
 ENDENTRY             4          0                                 C160099999999 
