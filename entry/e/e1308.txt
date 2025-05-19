@@ -1,46 +1,49 @@
-ENTRY            E1308   20070909                             E047E130800000001 
-SUBENT        E1308001   20070909                             E047E130800100001 
-BIB                 12         16                                 E130800100002 
+ENTRY            E1308   20240505                             E145E130800000001 
+SUBENT        E1308001   20240505                             E145E130800100001 
+BIB                 12         19                                 E130800100002 
 TITLE      Breakup of 3He by alpha particles at 119.2 MeV         E130800100003 
 AUTHOR     (T.Sekioka)                                            E130800100004 
 INSTITUTE  (2JPNHIT)                                              E130800100005 
-REFERENCE  (J,NP/A,510,(3),417,199004)                            E130800100006 
+REFERENCE  (J,NP/A,510,417,1990)                                  E130800100006 
 INC-SOURCE Beam intensity is 100 nA.                              E130800100007 
-SAMPLE     - Target enrichment is 99.98%.                         E130800100008 
-           - Chemical-form of target is element.                  E130800100009 
-           - Physical-form of target is gas.                      E130800100010 
+SAMPLE     - Chemical-form of target is element.                  E130800100008 
+           - Physical-form of target is gas.                      E130800100009 
+           (2-HE-3,ENR=0.9998)                                    E130800100010 
 METHOD     (EDE)                                                  E130800100011 
 FACILITY   (ISOCY,2JPNOSA) AVF cyclotron at Research Center for   E130800100012 
                            Nuclear Physics                        E130800100013 
 DETECTOR   (TELES,SIBAR,NAICR) To detect charged particles        E130800100014 
 ERR-ANALYS (ERR-S) Statistical uncertainty                        E130800100015 
 ADD-RES    (COMP) 1. PWIA (Plane wave impulse approximation)      E130800100016 
-                  2. Multiple scattering analysis                 E130800100017 
+           (COMP) Multiple scattering analysis                    E130800100017 
 HISTORY    (20061019T) On. Converted from NRDF D1308              E130800100018 
-ENDBIB              16          0                                 E130800100019 
-COMMON               1          3                                 E130800100020 
-EN                                                                E130800100021 
-MEV                                                               E130800100022 
- 119.2                                                            E130800100023 
-ENDCOMMON            3          0                                 E130800100024 
-ENDSUBENT           23          0                                 E130800199999 
-SUBENT        E1308002   20070909                             E047E130800200001 
-BIB                  6         10                                 E130800200002 
-REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A)                  E130800200003 
-PART-DET   (A,P)                                                  E130800200004 
-EN-SEC     - ANG1 is polar angle between beam and alpha in        E130800200005 
-             laboratory system                                    E130800200006 
-           - ANG2 is polar angle between beam and proton in       E130800200007 
-             laboratory system                                    E130800200008 
-           (E,A)                                                  E130800200009 
-METHOD     (COINC) Detect alpha and proton in coincidence.        E130800200010 
-STATUS     (CURVE) Scanned from Fig.3, p421 in reference          E130800200011 
-HISTORY    (20061215A) Mh. Re-digitized                           E130800200012 
+           (20240505A) MA: modified REACTION in 002-005, STATUS   E130800100019 
+                       and Heading in 002-011; added ANG-SEC in   E130800100020 
+                       002-011.                                   E130800100021 
+ENDBIB              19          0                                 E130800100022 
+COMMON               1          3                                 E130800100023 
+EN                                                                E130800100024 
+MEV                                                               E130800100025 
+ 119.2                                                            E130800100026 
+ENDCOMMON            3          0                                 E130800100027 
+ENDSUBENT           26          0                                 E130800199999 
+SUBENT        E1308002   20240505                             E145E130800200001 
+BIB                  7         10                                 E130800200002 
+REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A)                  E130800200003 
+PART-DET   (P,A)                                                  E130800200004 
+ANG-SEC    (ANG1,P)                                               E130800200005 
+           (ANG2,A)                                               E130800200006 
+EN-SEC     (E,A)                                                  E130800200007 
+METHOD     (COINC) Detect proton and alpha in coincidence.        E130800200008 
+STATUS     (CURVE,,T.Sekioka,J,NP/A,510,417,1990) Fig. 3          E130800200009 
+HISTORY    (20061215A) Mh. Re-digitized                           E130800200010 
+           (20240505A) MA: SF7: A/P/A -> P/A/A; Heading: ANG1 <-> E130800200011 
+                       ANG2.                                      E130800200012 
 ENDBIB              10          0                                 E130800200013 
 COMMON               2          3                                 E130800200014 
 ANG1       ANG2                                                   E130800200015 
 ADEG       ADEG                                                   E130800200016 
- 12.5       -30.6                                                 E130800200017 
+ -30.6      12.5                                                  E130800200017 
 ENDCOMMON            3          0                                 E130800200018 
 DATA                 3         43                                 E130800200019 
 E          DATA       ERR-S                                       E130800200020 
@@ -90,23 +93,23 @@ MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800200021
   1.006E+02  1.266E+00  2.205E-01                                 E130800200064 
 ENDDATA             45          0                                 E130800200065 
 ENDSUBENT           64          0                                 E130800299999 
-SUBENT        E1308003   20070909                             E047E130800300001 
-BIB                  6         10                                 E130800300002 
-REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A)                  E130800300003 
-PART-DET   (A,P)                                                  E130800300004 
-EN-SEC     - ANG1 is polar angle between beam and alpha in        E130800300005 
-             laboratory system                                    E130800300006 
-           - ANG2 is polar angle between beam and proton in       E130800300007 
-             laboratory system                                    E130800300008 
-           (E,A)                                                  E130800300009 
-METHOD     (COINC) Detect alpha and proton in coincidence.        E130800300010 
-STATUS     (CURVE) Scanned from Fig.3, p421 in reference          E130800300011 
-HISTORY    (20061215A) Mh. Re-digitized                           E130800300012 
+SUBENT        E1308003   20240505                             E145E130800300001 
+BIB                  7         10                                 E130800300002 
+REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A)                  E130800300003 
+PART-DET   (P,A)                                                  E130800300004 
+ANG-SEC    (ANG1,P)                                               E130800300005 
+           (ANG2,A)                                               E130800300006 
+EN-SEC     (E,A)                                                  E130800300007 
+METHOD     (COINC) Detect proton and alpha in coincidence.        E130800300008 
+STATUS     (CURVE,,T.Sekioka,J,NP/A,510,417,1990) Fig. 3          E130800300009 
+HISTORY    (20061215A) Mh. Re-digitized                           E130800300010 
+           (20240505A) MA: SF7: A/P/A -> P/A/A; Heading: ANG1 <-> E130800300011 
+                       ANG2.                                      E130800300012 
 ENDBIB              10          0                                 E130800300013 
 COMMON               2          3                                 E130800300014 
 ANG1       ANG2                                                   E130800300015 
 ADEG       ADEG                                                   E130800300016 
- 12.5       -38.1                                                 E130800300017 
+ -38.1      12.5                                                  E130800300017 
 ENDCOMMON            3          0                                 E130800300018 
 DATA                 3         42                                 E130800300019 
 E          DATA       ERR-S                                       E130800300020 
@@ -155,23 +158,23 @@ MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800300021
   1.001E+02  8.157E-01  2.523E-01                                 E130800300063 
 ENDDATA             44          0                                 E130800300064 
 ENDSUBENT           63          0                                 E130800399999 
-SUBENT        E1308004   20070909                             E047E130800400001 
-BIB                  6         10                                 E130800400002 
-REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A)                  E130800400003 
-PART-DET   (A,P)                                                  E130800400004 
-EN-SEC     - ANG1 is polar angle between beam and alpha in        E130800400005 
-             laboratory system                                    E130800400006 
-           - ANG2 is polar angle between beam and proton in       E130800400007 
-             laboratory system                                    E130800400008 
-           (E,A)                                                  E130800400009 
-METHOD     (COINC) Detect alpha and proton in coincidence.        E130800400010 
-STATUS     (CURVE) Scanned from Fig.3, p421 in reference          E130800400011 
-HISTORY    (20061215A) Mh. Re-digitized                           E130800400012 
+SUBENT        E1308004   20240505                             E145E130800400001 
+BIB                  7         10                                 E130800400002 
+REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A)                  E130800400003 
+PART-DET   (P,A)                                                  E130800400004 
+ANG-SEC    (ANG1,P)                                               E130800400005 
+           (ANG2,A)                                               E130800400006 
+EN-SEC     (E,A)                                                  E130800400007 
+METHOD     (COINC) Detect proton and alpha in coincidence.        E130800400008 
+STATUS     (CURVE,,T.Sekioka,J,NP/A,510,417,1990) Fig. 3          E130800400009 
+HISTORY    (20061215A) Mh. Re-digitized                           E130800400010 
+           (20240505A) MA: SF7: A/P/A -> P/A/A; Heading: ANG1 <-> E130800400011 
+                       ANG2.                                      E130800400012 
 ENDBIB              10          0                                 E130800400013 
 COMMON               2          3                                 E130800400014 
 ANG1       ANG2                                                   E130800400015 
 ADEG       ADEG                                                   E130800400016 
- 12.5       -45.6                                                 E130800400017 
+ -45.6      12.5                                                  E130800400017 
 ENDCOMMON            3          0                                 E130800400018 
 DATA                 3         43                                 E130800400019 
 E          DATA       ERR-S                                       E130800400020 
@@ -221,23 +224,23 @@ MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800400021
   1.000E+02  6.457E-01  2.605E-01                                 E130800400064 
 ENDDATA             45          0                                 E130800400065 
 ENDSUBENT           64          0                                 E130800499999 
-SUBENT        E1308005   20070909                             E047E130800500001 
-BIB                  6         10                                 E130800500002 
-REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,A/P/A)                  E130800500003 
-PART-DET   (A,P)                                                  E130800500004 
-EN-SEC     - ANG1 is polar angle between beam and alpha in        E130800500005 
-             laboratory system                                    E130800500006 
-           - ANG2 is polar angle between beam and proton in       E130800500007 
-             laboratory system                                    E130800500008 
-           (E,A)                                                  E130800500009 
-METHOD     (COINC) Detect alpha and proton in coincidence.        E130800500010 
-STATUS     (CURVE) Scanned from Fig.3, p421 in reference          E130800500011 
-HISTORY    (20061215A) Mh. Re-digitized                           E130800500012 
+SUBENT        E1308005   20240505                             E145E130800500001 
+BIB                  7         10                                 E130800500002 
+REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,P/A/A)                  E130800500003 
+PART-DET   (P,A)                                                  E130800500004 
+ANG-SEC    (ANG1,P)                                               E130800500005 
+           (ANG2,A)                                               E130800500006 
+EN-SEC     (E,A)                                                  E130800500007 
+METHOD     (COINC) Detect proton and alpha in coincidence.        E130800500008 
+STATUS     (CURVE,,T.Sekioka,J,NP/A,510,417,1990) Fig. 3          E130800500009 
+HISTORY    (20061215A) Mh. Re-digitized                           E130800500010 
+           (20240505A) MA: SF7: A/P/A -> P/A/A; Heading: ANG1 <-> E130800500011 
+                       ANG2.                                      E130800500012 
 ENDBIB              10          0                                 E130800500013 
 COMMON               2          3                                 E130800500014 
 ANG1       ANG2                                                   E130800500015 
 ADEG       ADEG                                                   E130800500016 
- 12.5       -60.6                                                 E130800500017 
+ -60.6      12.5                                                  E130800500017 
 ENDCOMMON            3          0                                 E130800500018 
 DATA                 3         44                                 E130800500019 
 E          DATA       ERR-S                                       E130800500020 
@@ -288,353 +291,347 @@ MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800500021
   1.023E+02  1.046E+00  2.508E-01                                 E130800500065 
 ENDDATA             46          0                                 E130800500066 
 ENDSUBENT           65          0                                 E130800599999 
-SUBENT        E1308006   20070909                             E047E130800600001 
-BIB                  6         10                                 E130800600002 
+SUBENT        E1308006   20240505                             E145E130800600001 
+BIB                  7          9                                 E130800600002 
 REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,D/A/A)                  E130800600003 
-PART-DET   (A,D)                                                  E130800600004 
-EN-SEC     - ANG1 is polar angle between beam and alpha in        E130800600005 
-             laboratory system                                    E130800600006 
-           - ANG2 is polar angle between beam and deuteron in     E130800600007 
-             laboratory system                                    E130800600008 
-           (E,A)                                                  E130800600009 
-METHOD     (COINC) Detect alpha and deuteron in coincidence.      E130800600010 
-STATUS     (CURVE) Scanned from Fig.4, p422 in reference          E130800600011 
-HISTORY    (20061215A) Mh. Re-digitized                           E130800600012 
-ENDBIB              10          0                                 E130800600013 
-COMMON               2          3                                 E130800600014 
-ANG1       ANG2                                                   E130800600015 
-ADEG       ADEG                                                   E130800600016 
- 12.5       -30.6                                                 E130800600017 
-ENDCOMMON            3          0                                 E130800600018 
-DATA                 3         40                                 E130800600019 
-E          DATA       ERR-S                                       E130800600020 
-MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800600021 
-  2.331E+01  1.577E-02                                            E130800600022 
-  2.487E+01  9.820E-02                                            E130800600023 
-  2.676E+01  1.178E-01                                            E130800600024 
-  2.850E+01  3.388E-01  1.573E-01                                 E130800600025 
-  3.039E+01  1.445E-01  1.259E-01                                 E130800600026 
-  3.183E+01  2.709E-01  1.573E-01                                 E130800600027 
-  3.365E+01  1.835E-01                                            E130800600028 
-  3.579E+01  1.529E-01                                            E130800600029 
-  3.743E+01  2.144E-02                                            E130800600030 
-  3.880E+01  1.227E-01                                            E130800600031 
-  4.106E+01  5.436E-02                                            E130800600032 
-  4.226E+01  4.225E-02                                            E130800600033 
-  4.363E+01  1.120E-01  1.133E-01                                 E130800600034 
-  4.552E+01  1.065E-01  1.385E-01                                 E130800600035 
-  4.752E+01  1.828E-01  1.321E-01                                 E130800600036 
-  4.891E+01 -5.416E-03                                            E130800600037 
-  5.097E+01  2.031E-01  1.258E-01                                 E130800600038 
-  5.248E+01  1.093E-01                                            E130800600039 
-  5.455E+01  2.108E-01  1.699E-01                                 E130800600040 
-  5.649E+01  3.311E-01  1.510E-01                                 E130800600041 
-  5.812E+01  2.437E-01  1.636E-01                                 E130800600042 
-  6.000E+01  4.206E-01  1.700E-01                                 E130800600043 
-  6.187E+01  7.360E-01  1.322E-01                                 E130800600044 
-  6.388E+01  5.921E-01  1.573E-01                                 E130800600045 
-  6.582E+01  7.816E-01  1.887E-01                                 E130800600046 
-  6.776E+01  9.775E-01  2.078E-01                                 E130800600047 
-  6.921E+01  7.515E-01  1.699E-01                                 E130800600048 
-  7.108E+01  1.092E+00  1.950E-01                                 E130800600049 
-  7.304E+01  7.593E-01  1.637E-01                                 E130800600050 
-  7.491E+01  1.081E+00  2.139E-01                                 E130800600051 
-  7.698E+01  8.931E-01  1.763E-01                                 E130800600052 
-  7.899E+01  8.184E-01  1.825E-01                                 E130800600053 
-  8.094E+01  8.129E-01  1.573E-01                                 E130800600054 
-  8.276E+01  8.450E-01  1.951E-01                                 E130800600055 
-  8.464E+01  8.773E-01  1.699E-01                                 E130800600056 
-  8.678E+01  7.523E-01  1.699E-01                                 E130800600057 
-  8.823E+01  4.005E-01  2.139E-01                                 E130800600058 
-  9.017E+01  6.844E-01  1.889E-01                                 E130800600059 
-  9.231E+01  3.707E-01  1.636E-01                                 E130800600060 
-  9.402E+01  1.763E-01  1.320E-01                                 E130800600061 
-ENDDATA             42          0                                 E130800600062 
-ENDSUBENT           61          0                                 E130800699999 
-SUBENT        E1308007   20070909                             E047E130800700001 
-BIB                  6         10                                 E130800700002 
+PART-DET   (D,A)                                                  E130800600004 
+ANG-SEC    (ANG1,D)                                               E130800600005 
+           (ANG2,A)                                               E130800600006 
+EN-SEC     (E,A)                                                  E130800600007 
+METHOD     (COINC) Detect deuteron and alpha in coincidence.      E130800600008 
+STATUS     (CURVE,,T.Sekioka,J,NP/A,510,417,1990) Fig. 4          E130800600009 
+HISTORY    (20061215A) Mh. Re-digitized                           E130800600010 
+           (20240505A) MA: Heading: ANG1 <-> ANG2.                E130800600011 
+ENDBIB               9          0                                 E130800600012 
+COMMON               2          3                                 E130800600013 
+ANG1       ANG2                                                   E130800600014 
+ADEG       ADEG                                                   E130800600015 
+ -30.6      12.5                                                  E130800600016 
+ENDCOMMON            3          0                                 E130800600017 
+DATA                 3         40                                 E130800600018 
+E          DATA       ERR-S                                       E130800600019 
+MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800600020 
+  2.331E+01  1.577E-02                                            E130800600021 
+  2.487E+01  9.820E-02                                            E130800600022 
+  2.676E+01  1.178E-01                                            E130800600023 
+  2.850E+01  3.388E-01  1.573E-01                                 E130800600024 
+  3.039E+01  1.445E-01  1.259E-01                                 E130800600025 
+  3.183E+01  2.709E-01  1.573E-01                                 E130800600026 
+  3.365E+01  1.835E-01                                            E130800600027 
+  3.579E+01  1.529E-01                                            E130800600028 
+  3.743E+01  2.144E-02                                            E130800600029 
+  3.880E+01  1.227E-01                                            E130800600030 
+  4.106E+01  5.436E-02                                            E130800600031 
+  4.226E+01  4.225E-02                                            E130800600032 
+  4.363E+01  1.120E-01  1.133E-01                                 E130800600033 
+  4.552E+01  1.065E-01  1.385E-01                                 E130800600034 
+  4.752E+01  1.828E-01  1.321E-01                                 E130800600035 
+  4.891E+01 -5.416E-03                                            E130800600036 
+  5.097E+01  2.031E-01  1.258E-01                                 E130800600037 
+  5.248E+01  1.093E-01                                            E130800600038 
+  5.455E+01  2.108E-01  1.699E-01                                 E130800600039 
+  5.649E+01  3.311E-01  1.510E-01                                 E130800600040 
+  5.812E+01  2.437E-01  1.636E-01                                 E130800600041 
+  6.000E+01  4.206E-01  1.700E-01                                 E130800600042 
+  6.187E+01  7.360E-01  1.322E-01                                 E130800600043 
+  6.388E+01  5.921E-01  1.573E-01                                 E130800600044 
+  6.582E+01  7.816E-01  1.887E-01                                 E130800600045 
+  6.776E+01  9.775E-01  2.078E-01                                 E130800600046 
+  6.921E+01  7.515E-01  1.699E-01                                 E130800600047 
+  7.108E+01  1.092E+00  1.950E-01                                 E130800600048 
+  7.304E+01  7.593E-01  1.637E-01                                 E130800600049 
+  7.491E+01  1.081E+00  2.139E-01                                 E130800600050 
+  7.698E+01  8.931E-01  1.763E-01                                 E130800600051 
+  7.899E+01  8.184E-01  1.825E-01                                 E130800600052 
+  8.094E+01  8.129E-01  1.573E-01                                 E130800600053 
+  8.276E+01  8.450E-01  1.951E-01                                 E130800600054 
+  8.464E+01  8.773E-01  1.699E-01                                 E130800600055 
+  8.678E+01  7.523E-01  1.699E-01                                 E130800600056 
+  8.823E+01  4.005E-01  2.139E-01                                 E130800600057 
+  9.017E+01  6.844E-01  1.889E-01                                 E130800600058 
+  9.231E+01  3.707E-01  1.636E-01                                 E130800600059 
+  9.402E+01  1.763E-01  1.320E-01                                 E130800600060 
+ENDDATA             42          0                                 E130800600061 
+ENDSUBENT           60          0                                 E130800699999 
+SUBENT        E1308007   20240505                             E145E130800700001 
+BIB                  7          9                                 E130800700002 
 REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,D/A/A)                  E130800700003 
-PART-DET   (A,D)                                                  E130800700004 
-EN-SEC     - ANG1 is polar angle between beam and alpha in        E130800700005 
-             laboratory system                                    E130800700006 
-           - ANG2 is polar angle between beam and deuteron in     E130800700007 
-             laboratory system                                    E130800700008 
-           (E,A)                                                  E130800700009 
-METHOD     (COINC) Detect alpha and deuteron in coincidence.      E130800700010 
-STATUS     (CURVE) Scanned from Fig.4, p422 in reference          E130800700011 
-HISTORY    (20061215A) Mh. Re-digitized                           E130800700012 
-ENDBIB              10          0                                 E130800700013 
-COMMON               2          3                                 E130800700014 
-ANG1       ANG2                                                   E130800700015 
-ADEG       ADEG                                                   E130800700016 
- 12.5       -38.1                                                 E130800700017 
-ENDCOMMON            3          0                                 E130800700018 
-DATA                 3         40                                 E130800700019 
-E          DATA       ERR-S                                       E130800700020 
-MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800700021 
-  2.370E+01  7.860E-02                                            E130800700022 
-  2.531E+01  3.479E-02                                            E130800700023 
-  2.697E+01  1.873E-02                                            E130800700024 
-  2.863E+01  2.484E-02                                            E130800700025 
-  3.046E+01  9.753E-02                                            E130800700026 
-  3.218E+01  4.822E-02                                            E130800700027 
-  3.378E+01  5.431E-02                                            E130800700028 
-  3.528E+01  2.156E-02                                            E130800700029 
-  3.694E+01  1.496E-01  1.387E-01                                 E130800700030 
-  3.865E+01  2.389E-01  1.885E-01                                 E130800700031 
-  4.059E+01  3.006E-01                                            E130800700032 
-  4.213E+01  4.452E-01                                            E130800700033 
-  4.397E+01  1.687E-01                                            E130800700034 
-  4.580E+01  1.748E-01                                            E130800700035 
-  4.774E+01  1.034E-01                                            E130800700036 
-  4.934E+01  2.924E-01  1.386E-01                                 E130800700037 
-  5.106E+01  2.819E-01  1.608E-01                                 E130800700038 
-  5.278E+01  8.295E-02                                            E130800700039 
-  5.461E+01  1.335E-01  1.387E-01                                 E130800700040 
-  5.676E+01  3.670E-01  1.773E-01                                 E130800700041 
-  5.843E+01  1.847E-01  1.443E-01                                 E130800700042 
-  5.992E+01  2.073E-01  1.553E-01                                 E130800700043 
-  6.196E+01  3.744E-01  1.773E-01                                 E130800700044 
-  6.401E+01  5.081E-01  1.775E-01                                 E130800700045 
-  6.566E+01  8.912E-01  2.051E-01                                 E130800700046 
-  6.760E+01  8.752E-01  1.830E-01                                 E130800700047 
-  6.924E+01  1.280E+00  2.218E-01                                 E130800700048 
-  7.118E+01  1.425E+00  2.384E-01                                 E130800700049 
-  7.327E+01  1.875E+00  2.661E-01                                 E130800700050 
-  7.467E+01  1.371E+00  2.550E-01                                 E130800700051 
-  7.701E+01  2.392E+00  2.883E-01                                 E130800700052 
-  7.891E+01  2.088E+00  3.105E-01                                 E130800700053 
-  8.112E+01  2.155E+00  3.049E-01                                 E130800700054 
-  8.299E+01  2.677E+00  3.104E-01                                 E130800700055 
-  8.475E+01  2.893E+00  3.326E-01                                 E130800700056 
-  8.696E+01  3.055E+00  3.493E-01                                 E130800700057 
-  8.864E+01  2.551E+00  3.104E-01                                 E130800700058 
-  9.063E+01  2.685E+00  3.603E-01                                 E130800700059 
-  9.247E+01  2.325E+00  2.882E-01                                 E130800700060 
-  9.449E+01  1.505E+00  2.328E-01                                 E130800700061 
-ENDDATA             42          0                                 E130800700062 
-ENDSUBENT           61          0                                 E130800799999 
-SUBENT        E1308008   20070909                             E047E130800800001 
-BIB                  6         10                                 E130800800002 
+PART-DET   (D,A)                                                  E130800700004 
+ANG-SEC    (ANG1,D)                                               E130800700005 
+           (ANG2,A)                                               E130800700006 
+EN-SEC     (E,A)                                                  E130800700007 
+METHOD     (COINC) Detect deuteron and alpha in coincidence.      E130800700008 
+STATUS     (CURVE,,T.Sekioka,J,NP/A,510,417,1990) Fig. 4          E130800700009 
+HISTORY    (20061215A) Mh. Re-digitized                           E130800700010 
+           (20240505A) MA: Heading: ANG1 <-> ANG2.                E130800700011 
+ENDBIB               9          0                                 E130800700012 
+COMMON               2          3                                 E130800700013 
+ANG1       ANG2                                                   E130800700014 
+ADEG       ADEG                                                   E130800700015 
+ -38.1      12.5                                                  E130800700016 
+ENDCOMMON            3          0                                 E130800700017 
+DATA                 3         40                                 E130800700018 
+E          DATA       ERR-S                                       E130800700019 
+MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800700020 
+  2.370E+01  7.860E-02                                            E130800700021 
+  2.531E+01  3.479E-02                                            E130800700022 
+  2.697E+01  1.873E-02                                            E130800700023 
+  2.863E+01  2.484E-02                                            E130800700024 
+  3.046E+01  9.753E-02                                            E130800700025 
+  3.218E+01  4.822E-02                                            E130800700026 
+  3.378E+01  5.431E-02                                            E130800700027 
+  3.528E+01  2.156E-02                                            E130800700028 
+  3.694E+01  1.496E-01  1.387E-01                                 E130800700029 
+  3.865E+01  2.389E-01  1.885E-01                                 E130800700030 
+  4.059E+01  3.006E-01                                            E130800700031 
+  4.213E+01  4.452E-01                                            E130800700032 
+  4.397E+01  1.687E-01                                            E130800700033 
+  4.580E+01  1.748E-01                                            E130800700034 
+  4.774E+01  1.034E-01                                            E130800700035 
+  4.934E+01  2.924E-01  1.386E-01                                 E130800700036 
+  5.106E+01  2.819E-01  1.608E-01                                 E130800700037 
+  5.278E+01  8.295E-02                                            E130800700038 
+  5.461E+01  1.335E-01  1.387E-01                                 E130800700039 
+  5.676E+01  3.670E-01  1.773E-01                                 E130800700040 
+  5.843E+01  1.847E-01  1.443E-01                                 E130800700041 
+  5.992E+01  2.073E-01  1.553E-01                                 E130800700042 
+  6.196E+01  3.744E-01  1.773E-01                                 E130800700043 
+  6.401E+01  5.081E-01  1.775E-01                                 E130800700044 
+  6.566E+01  8.912E-01  2.051E-01                                 E130800700045 
+  6.760E+01  8.752E-01  1.830E-01                                 E130800700046 
+  6.924E+01  1.280E+00  2.218E-01                                 E130800700047 
+  7.118E+01  1.425E+00  2.384E-01                                 E130800700048 
+  7.327E+01  1.875E+00  2.661E-01                                 E130800700049 
+  7.467E+01  1.371E+00  2.550E-01                                 E130800700050 
+  7.701E+01  2.392E+00  2.883E-01                                 E130800700051 
+  7.891E+01  2.088E+00  3.105E-01                                 E130800700052 
+  8.112E+01  2.155E+00  3.049E-01                                 E130800700053 
+  8.299E+01  2.677E+00  3.104E-01                                 E130800700054 
+  8.475E+01  2.893E+00  3.326E-01                                 E130800700055 
+  8.696E+01  3.055E+00  3.493E-01                                 E130800700056 
+  8.864E+01  2.551E+00  3.104E-01                                 E130800700057 
+  9.063E+01  2.685E+00  3.603E-01                                 E130800700058 
+  9.247E+01  2.325E+00  2.882E-01                                 E130800700059 
+  9.449E+01  1.505E+00  2.328E-01                                 E130800700060 
+ENDDATA             42          0                                 E130800700061 
+ENDSUBENT           60          0                                 E130800799999 
+SUBENT        E1308008   20240505                             E145E130800800001 
+BIB                  7          9                                 E130800800002 
 REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,D/A/A)                  E130800800003 
-PART-DET   (A,D)                                                  E130800800004 
-EN-SEC     - ANG1 is polar angle between beam and alpha in        E130800800005 
-             laboratory system                                    E130800800006 
-           - ANG2 is polar angle between beam and deuteron in     E130800800007 
-             laboratory system                                    E130800800008 
-           (E,A)                                                  E130800800009 
-METHOD     (COINC) Detect alpha and deuteron in coincidence.      E130800800010 
-STATUS     (CURVE) Scanned from Fig.4, p422 in reference          E130800800011 
-HISTORY    (20061215A) Mh. Re-digitized                           E130800800012 
-ENDBIB              10          0                                 E130800800013 
-COMMON               2          3                                 E130800800014 
-ANG1       ANG2                                                   E130800800015 
-ADEG       ADEG                                                   E130800800016 
- 12.5       -45.6                                                 E130800800017 
-ENDCOMMON            3          0                                 E130800800018 
-DATA                 3         37                                 E130800800019 
-E          DATA       ERR-S                                       E130800800020 
-MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800800021 
-  2.857E+01  7.886E-02                                            E130800800022 
-  3.046E+01  1.573E-01                                            E130800800023 
-  3.209E+01  6.407E-02                                            E130800800024 
-  3.378E+01  4.900E-02                                            E130800800025 
-  3.536E+01  5.947E-02                                            E130800800026 
-  3.706E+01 -1.122E-02                                            E130800800027 
-  3.875E+01  5.684E-02                                            E130800800028 
-  4.045E+01  2.320E-02                                            E130800800029 
-  4.214E+01 -1.043E-02                                            E130800800030 
-  4.393E+01 -5.640E-03                                            E130800800031 
-  4.569E+01  7.486E-02                                            E130800800032 
-  4.738E+01  1.429E-01                                            E130800800033 
-  4.891E+01 -4.329E-02                                            E130800800034 
-  5.077E+01  1.095E-01                                            E130800800035 
-  5.280E+01 -9.353E-02                                            E130800800036 
-  5.470E+01  3.691E-02                                            E130800800037 
-  5.638E+01  2.314E-01  1.533E-01                                 E130800800038 
-  5.771E+01  4.248E-02                                            E130800800039 
-  5.996E+01  1.144E-01  1.329E-01                                 E130800800040 
-  6.159E+01  1.453E-01  1.533E-01                                 E130800800041 
-  6.363E+01  2.172E-01  1.482E-01                                 E130800800042 
-  6.542E+01  1.817E-01  1.533E-01                                 E130800800043 
-  6.725E+01  1.717E-01  1.431E-01                                 E130800800044 
-  6.903E+01  6.064E-01  1.533E-01                                 E130800800045 
-  7.107E+01  6.987E-01  1.789E-01                                 E130800800046 
-  7.296E+01  7.756E-01  1.891E-01                                 E130800800047 
-  7.474E+01  1.154E+00  2.197E-01                                 E130800800048 
-  7.655E+01  1.798E+00  2.363E-01                                 E130800800049 
-  7.861E+01  1.563E+00  2.453E-01                                 E130800800050 
-  8.070E+01  1.922E+00  2.760E-01                                 E130800800051 
-  8.247E+01  2.653E+00  2.504E-01                                 E130800800052 
-  8.441E+01  3.057E+00  3.117E-01                                 E130800800053 
-  8.634E+01  3.619E+00  3.322E-01                                 E130800800054 
-  8.832E+01  4.319E+00  3.730E-01                                 E130800800055 
-  9.010E+01  4.340E+00  3.884E-01                                 E130800800056 
-  9.204E+01  4.279E+00  3.322E-01                                 E130800800057 
-  9.394E+01  3.712E+00  3.373E-01                                 E130800800058 
-ENDDATA             39          0                                 E130800800059 
-ENDSUBENT           58          0                                 E130800899999 
-SUBENT        E1308009   20070909                             E047E130800900001 
-BIB                  6         10                                 E130800900002 
+PART-DET   (D,A)                                                  E130800800004 
+ANG-SEC    (ANG1,D)                                               E130800800005 
+           (ANG2,A)                                               E130800800006 
+EN-SEC     (E,A)                                                  E130800800007 
+METHOD     (COINC) Detect deuteron and alpha in coincidence.      E130800800008 
+STATUS     (CURVE,,T.Sekioka,J,NP/A,510,417,1990) Fig. 4          E130800800009 
+HISTORY    (20061215A) Mh. Re-digitized                           E130800800010 
+           (20240505A) MA: Heading: ANG1 <-> ANG2.                E130800800011 
+ENDBIB               9          0                                 E130800800012 
+COMMON               2          3                                 E130800800013 
+ANG1       ANG2                                                   E130800800014 
+ADEG       ADEG                                                   E130800800015 
+ -45.6      12.5                                                  E130800800016 
+ENDCOMMON            3          0                                 E130800800017 
+DATA                 3         37                                 E130800800018 
+E          DATA       ERR-S                                       E130800800019 
+MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800800020 
+  2.857E+01  7.886E-02                                            E130800800021 
+  3.046E+01  1.573E-01                                            E130800800022 
+  3.209E+01  6.407E-02                                            E130800800023 
+  3.378E+01  4.900E-02                                            E130800800024 
+  3.536E+01  5.947E-02                                            E130800800025 
+  3.706E+01 -1.122E-02                                            E130800800026 
+  3.875E+01  5.684E-02                                            E130800800027 
+  4.045E+01  2.320E-02                                            E130800800028 
+  4.214E+01 -1.043E-02                                            E130800800029 
+  4.393E+01 -5.640E-03                                            E130800800030 
+  4.569E+01  7.486E-02                                            E130800800031 
+  4.738E+01  1.429E-01                                            E130800800032 
+  4.891E+01 -4.329E-02                                            E130800800033 
+  5.077E+01  1.095E-01                                            E130800800034 
+  5.280E+01 -9.353E-02                                            E130800800035 
+  5.470E+01  3.691E-02                                            E130800800036 
+  5.638E+01  2.314E-01  1.533E-01                                 E130800800037 
+  5.771E+01  4.248E-02                                            E130800800038 
+  5.996E+01  1.144E-01  1.329E-01                                 E130800800039 
+  6.159E+01  1.453E-01  1.533E-01                                 E130800800040 
+  6.363E+01  2.172E-01  1.482E-01                                 E130800800041 
+  6.542E+01  1.817E-01  1.533E-01                                 E130800800042 
+  6.725E+01  1.717E-01  1.431E-01                                 E130800800043 
+  6.903E+01  6.064E-01  1.533E-01                                 E130800800044 
+  7.107E+01  6.987E-01  1.789E-01                                 E130800800045 
+  7.296E+01  7.756E-01  1.891E-01                                 E130800800046 
+  7.474E+01  1.154E+00  2.197E-01                                 E130800800047 
+  7.655E+01  1.798E+00  2.363E-01                                 E130800800048 
+  7.861E+01  1.563E+00  2.453E-01                                 E130800800049 
+  8.070E+01  1.922E+00  2.760E-01                                 E130800800050 
+  8.247E+01  2.653E+00  2.504E-01                                 E130800800051 
+  8.441E+01  3.057E+00  3.117E-01                                 E130800800052 
+  8.634E+01  3.619E+00  3.322E-01                                 E130800800053 
+  8.832E+01  4.319E+00  3.730E-01                                 E130800800054 
+  9.010E+01  4.340E+00  3.884E-01                                 E130800800055 
+  9.204E+01  4.279E+00  3.322E-01                                 E130800800056 
+  9.394E+01  3.712E+00  3.373E-01                                 E130800800057 
+ENDDATA             39          0                                 E130800800058 
+ENDSUBENT           57          0                                 E130800899999 
+SUBENT        E1308009   20240505                             E145E130800900001 
+BIB                  7          9                                 E130800900002 
 REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,D/A/A)                  E130800900003 
-PART-DET   (A,D)                                                  E130800900004 
-EN-SEC     - ANG1 is polar angle between beam and alpha in        E130800900005 
-             laboratory system                                    E130800900006 
-           - ANG2 is polar angle between beam and deuteron in     E130800900007 
-             laboratory system                                    E130800900008 
-           (E,A)                                                  E130800900009 
-METHOD     (COINC) Detect alpha and deuteron in coincidence.      E130800900010 
-STATUS     (CURVE) Scanned from Fig.4, p422 in reference          E130800900011 
-HISTORY    (20061215A) Mh. Re-digitized                           E130800900012 
-ENDBIB              10          0                                 E130800900013 
-COMMON               2          3                                 E130800900014 
-ANG1       ANG2                                                   E130800900015 
-ADEG       ADEG                                                   E130800900016 
- 12.5       -60.6                                                 E130800900017 
-ENDCOMMON            3          0                                 E130800900018 
-DATA                 3         36                                 E130800900019 
-E          DATA       ERR-S                                       E130800900020 
-MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800900021 
-  3.230E+01  2.640E-02                                            E130800900022 
-  3.408E+01  3.281E-02                                            E130800900023 
-  3.569E+01  5.125E-02                                            E130800900024 
-  3.736E+01  8.780E-02                                            E130800900025 
-  3.902E+01  1.907E-01  1.327E-01                                 E130800900026 
-  4.099E+01  7.047E-02                                            E130800900027 
-  4.241E+01  8.887E-02                                            E130800900028 
-  4.408E+01  4.096E-02                                            E130800900029 
-  4.557E+01  8.350E-02                                            E130800900030 
-  4.748E+01 -2.417E-02                                            E130800900031 
-  4.931E+01  2.351E-01  1.569E-01                                 E130800900032 
-  5.093E+01  4.240E-02                                            E130800900033 
-  5.289E+01  1.997E-01  1.207E-01                                 E130800900034 
-  5.467E+01  1.216E-01  1.206E-01                                 E130800900035 
-  5.658E+01  1.281E-01  1.207E-01                                 E130800900036 
-  5.830E+01  2.672E-01  1.207E-01                                 E130800900037 
-  5.990E+01  4.063E-01  1.871E-01                                 E130800900038 
-  6.193E+01  1.895E-01                                            E130800900039 
-  6.383E+01  4.675E-01  1.810E-01                                 E130800900040 
-  6.579E+01  5.161E-01  1.569E-01                                 E130800900041 
-  6.746E+01  3.234E-01  1.388E-01                                 E130800900042 
-  6.907E+01  3.298E-01  1.328E-01                                 E130800900043 
-  7.127E+01  6.078E-01  1.629E-01                                 E130800900044 
-  7.293E+01  5.056E-01  1.629E-01                                 E130800900045 
-  7.490E+01  5.181E-01  1.569E-01                                 E130800900046 
-  7.674E+01  5.969E-01  1.870E-01                                 E130800900047 
-  7.876E+01  8.507E-01  1.750E-01                                 E130800900048 
-  8.078E+01  1.080E+00  2.414E-01                                 E130800900049 
-  8.263E+01  7.912E-01  2.111E-01                                 E130800900050 
-  8.452E+01  1.196E+00  2.474E-01                                 E130800900051 
-  8.637E+01  1.257E+00  2.051E-01                                 E130800900052 
-  8.827E+01  1.583E+00  2.414E-01                                 E130800900053 
-  8.998E+01  1.993E+00  2.775E-01                                 E130800900054 
-  9.216E+01  3.032E+00  3.259E-01                                 E130800900055 
-  9.376E+01  3.762E+00  3.861E-01                                 E130800900056 
-  9.584E+01  3.455E+00  3.500E-01                                 E130800900057 
-ENDDATA             38          0                                 E130800900058 
-ENDSUBENT           57          0                                 E130800999999 
-SUBENT        E1308010   20070909                             E047E130801000001 
-BIB                  6         10                                 E130801000002 
+PART-DET   (D,A)                                                  E130800900004 
+ANG-SEC    (ANG1,D)                                               E130800900005 
+           (ANG2,A)                                               E130800900006 
+EN-SEC     (E,A)                                                  E130800900007 
+METHOD     (COINC) Detect deuteron and alpha in coincidence.      E130800900008 
+STATUS     (CURVE,,T.Sekioka,J,NP/A,510,417,1990) Fig. 4          E130800900009 
+HISTORY    (20061215A) Mh. Re-digitized                           E130800900010 
+           (20240505A) MA: Heading: ANG1 <-> ANG2.                E130800900011 
+ENDBIB               9          0                                 E130800900012 
+COMMON               2          3                                 E130800900013 
+ANG1       ANG2                                                   E130800900014 
+ADEG       ADEG                                                   E130800900015 
+ -60.6      12.5                                                  E130800900016 
+ENDCOMMON            3          0                                 E130800900017 
+DATA                 3         36                                 E130800900018 
+E          DATA       ERR-S                                       E130800900019 
+MEV        MB/SR2/MEV MB/SR2/MEV                                  E130800900020 
+  3.230E+01  2.640E-02                                            E130800900021 
+  3.408E+01  3.281E-02                                            E130800900022 
+  3.569E+01  5.125E-02                                            E130800900023 
+  3.736E+01  8.780E-02                                            E130800900024 
+  3.902E+01  1.907E-01  1.327E-01                                 E130800900025 
+  4.099E+01  7.047E-02                                            E130800900026 
+  4.241E+01  8.887E-02                                            E130800900027 
+  4.408E+01  4.096E-02                                            E130800900028 
+  4.557E+01  8.350E-02                                            E130800900029 
+  4.748E+01 -2.417E-02                                            E130800900030 
+  4.931E+01  2.351E-01  1.569E-01                                 E130800900031 
+  5.093E+01  4.240E-02                                            E130800900032 
+  5.289E+01  1.997E-01  1.207E-01                                 E130800900033 
+  5.467E+01  1.216E-01  1.206E-01                                 E130800900034 
+  5.658E+01  1.281E-01  1.207E-01                                 E130800900035 
+  5.830E+01  2.672E-01  1.207E-01                                 E130800900036 
+  5.990E+01  4.063E-01  1.871E-01                                 E130800900037 
+  6.193E+01  1.895E-01                                            E130800900038 
+  6.383E+01  4.675E-01  1.810E-01                                 E130800900039 
+  6.579E+01  5.161E-01  1.569E-01                                 E130800900040 
+  6.746E+01  3.234E-01  1.388E-01                                 E130800900041 
+  6.907E+01  3.298E-01  1.328E-01                                 E130800900042 
+  7.127E+01  6.078E-01  1.629E-01                                 E130800900043 
+  7.293E+01  5.056E-01  1.629E-01                                 E130800900044 
+  7.490E+01  5.181E-01  1.569E-01                                 E130800900045 
+  7.674E+01  5.969E-01  1.870E-01                                 E130800900046 
+  7.876E+01  8.507E-01  1.750E-01                                 E130800900047 
+  8.078E+01  1.080E+00  2.414E-01                                 E130800900048 
+  8.263E+01  7.912E-01  2.111E-01                                 E130800900049 
+  8.452E+01  1.196E+00  2.474E-01                                 E130800900050 
+  8.637E+01  1.257E+00  2.051E-01                                 E130800900051 
+  8.827E+01  1.583E+00  2.414E-01                                 E130800900052 
+  8.998E+01  1.993E+00  2.775E-01                                 E130800900053 
+  9.216E+01  3.032E+00  3.259E-01                                 E130800900054 
+  9.376E+01  3.762E+00  3.861E-01                                 E130800900055 
+  9.584E+01  3.455E+00  3.500E-01                                 E130800900056 
+ENDDATA             38          0                                 E130800900057 
+ENDSUBENT           56          0                                 E130800999999 
+SUBENT        E1308010   20240505                             E145E130801000001 
+BIB                  7          9                                 E130801000002 
 REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,D/A/A)                  E130801000003 
-PART-DET   (A,D)                                                  E130801000004 
-EN-SEC     - ANG1 is polar angle between beam and alpha in        E130801000005 
-             laboratory system                                    E130801000006 
-           - ANG2 is polar angle between beam and deuteron in     E130801000007 
-             laboratory system                                    E130801000008 
-           (E,A)                                                  E130801000009 
-METHOD     (COINC) Detect alpha and deuteron in coincidence.      E130801000010 
-STATUS     (CURVE) Scanned from Fig.5, p423 in reference          E130801000011 
-HISTORY    (20061215A) Mh. Re-digitized                           E130801000012 
-ENDBIB              10          0                                 E130801000013 
-COMMON               2          3                                 E130801000014 
-ANG1       ANG2                                                   E130801000015 
-ADEG       ADEG                                                   E130801000016 
- 16.        -53.1                                                 E130801000017 
-ENDCOMMON            3          0                                 E130801000018 
-DATA                 3         30                                 E130801000019 
-E          DATA       ERR-S                                       E130801000020 
-MEV        MB/SR2/MEV MB/SR2/MEV                                  E130801000021 
-  4.255E+01  1.969E-01                                            E130801000022 
-  4.401E+01  8.537E-02                                            E130801000023 
-  4.583E+01  1.374E-01                                            E130801000024 
-  4.765E+01  8.421E-02                                            E130801000025 
-  4.965E+01  2.939E-01  1.286E-01                                 E130801000026 
-  5.099E+01  8.899E-02                                            E130801000027 
-  5.269E+01  5.924E-02                                            E130801000028 
-  5.463E+01  1.872E-01                                            E130801000029 
-  5.650E+01  1.223E-01                                            E130801000030 
-  5.820E+01  2.328E-01  1.403E-01                                 E130801000031 
-  6.007E+01  5.689E-02                                            E130801000032 
-  6.189E+01  1.849E-01                                            E130801000033 
-  6.371E+01  1.667E-01                                            E130801000034 
-  6.564E+01  1.720E-01                                            E130801000035 
-  6.765E+01  4.986E-01  1.753E-01                                 E130801000036 
-  6.934E+01  2.643E-01  1.286E-01                                 E130801000037 
-  7.127E+01  3.280E-01  1.636E-01                                 E130801000038 
-  7.310E+01  6.254E-01  1.869E-01                                 E130801000039 
-  7.492E+01  6.599E-01  1.987E-01                                 E130801000040 
-  7.663E+01  1.191E+00  2.629E-01                                 E130801000041 
-  7.892E+01  1.366E+00  2.805E-01                                 E130801000042 
-  8.083E+01  2.323E+00  3.330E-01                                 E130801000043 
-  8.274E+01  3.316E+00  3.330E-01                                 E130801000044 
-  8.460E+01  4.595E+00  4.382E-01                                 E130801000045 
-  8.668E+01  5.751E+00  5.083E-01                                 E130801000046 
-  8.855E+01  7.223E+00  5.025E-01                                 E130801000047 
-  9.062E+01  7.754E+00  6.134E-01                                 E130801000048 
-  9.267E+01  7.818E+00  5.668E-01                                 E130801000049 
-  9.439E+01  4.931E+00  4.966E-01                                 E130801000050 
-  9.615E+01  3.037E+00  3.330E-01                                 E130801000051 
-ENDDATA             32          0                                 E130801000052 
-ENDSUBENT           51          0                                 E130801099999 
-SUBENT        E1308011   20070909                             E047E130801100001 
-BIB                  6         10                                 E130801100002 
+PART-DET   (D,A)                                                  E130801000004 
+ANG-SEC    (ANG1,D)                                               E130801000005 
+           (ANG2,A)                                               E130801000006 
+EN-SEC     (E,A)                                                  E130801000007 
+METHOD     (COINC) Detect deuteron and alpha in coincidence.      E130801000008 
+STATUS     (CURVE,,T.Sekioka,J,NP/A,510,417,1990) Fig. 5          E130801000009 
+HISTORY    (20061215A) Mh. Re-digitized                           E130801000010 
+           (20240505A) MA: Heading: ANG1 <-> ANG2.                E130801000011 
+ENDBIB               9          0                                 E130801000012 
+COMMON               2          3                                 E130801000013 
+ANG1       ANG2                                                   E130801000014 
+ADEG       ADEG                                                   E130801000015 
+ -53.1      16.                                                   E130801000016 
+ENDCOMMON            3          0                                 E130801000017 
+DATA                 3         30                                 E130801000018 
+E          DATA       ERR-S                                       E130801000019 
+MEV        MB/SR2/MEV MB/SR2/MEV                                  E130801000020 
+  4.255E+01  1.969E-01                                            E130801000021 
+  4.401E+01  8.537E-02                                            E130801000022 
+  4.583E+01  1.374E-01                                            E130801000023 
+  4.765E+01  8.421E-02                                            E130801000024 
+  4.965E+01  2.939E-01  1.286E-01                                 E130801000025 
+  5.099E+01  8.899E-02                                            E130801000026 
+  5.269E+01  5.924E-02                                            E130801000027 
+  5.463E+01  1.872E-01                                            E130801000028 
+  5.650E+01  1.223E-01                                            E130801000029 
+  5.820E+01  2.328E-01  1.403E-01                                 E130801000030 
+  6.007E+01  5.689E-02                                            E130801000031 
+  6.189E+01  1.849E-01                                            E130801000032 
+  6.371E+01  1.667E-01                                            E130801000033 
+  6.564E+01  1.720E-01                                            E130801000034 
+  6.765E+01  4.986E-01  1.753E-01                                 E130801000035 
+  6.934E+01  2.643E-01  1.286E-01                                 E130801000036 
+  7.127E+01  3.280E-01  1.636E-01                                 E130801000037 
+  7.310E+01  6.254E-01  1.869E-01                                 E130801000038 
+  7.492E+01  6.599E-01  1.987E-01                                 E130801000039 
+  7.663E+01  1.191E+00  2.629E-01                                 E130801000040 
+  7.892E+01  1.366E+00  2.805E-01                                 E130801000041 
+  8.083E+01  2.323E+00  3.330E-01                                 E130801000042 
+  8.274E+01  3.316E+00  3.330E-01                                 E130801000043 
+  8.460E+01  4.595E+00  4.382E-01                                 E130801000044 
+  8.668E+01  5.751E+00  5.083E-01                                 E130801000045 
+  8.855E+01  7.223E+00  5.025E-01                                 E130801000046 
+  9.062E+01  7.754E+00  6.134E-01                                 E130801000047 
+  9.267E+01  7.818E+00  5.668E-01                                 E130801000048 
+  9.439E+01  4.931E+00  4.966E-01                                 E130801000049 
+  9.615E+01  3.037E+00  3.330E-01                                 E130801000050 
+ENDDATA             32          0                                 E130801000051 
+ENDSUBENT           50          0                                 E130801099999 
+SUBENT        E1308011   20240505                             E145E130801100001 
+BIB                  7          9                                 E130801100002 
 REACTION   (2-HE-3(A,P+D)2-HE-4,,DA/DA/DE,D/A/A)                  E130801100003 
-PART-DET   (A,D)                                                  E130801100004 
-EN-SEC     - ANG1 is polar angle between beam and alpha in        E130801100005 
-             laboratory system                                    E130801100006 
-           - ANG2 is polar angle between beam and deuteron in     E130801100007 
-             laboratory system                                    E130801100008 
-           (E,A)                                                  E130801100009 
-METHOD     (COINC) Detect alpha and deuteron in coincidence.      E130801100010 
-STATUS     (CURVE) Scanned from Fig.5, p423 in reference          E130801100011 
-HISTORY    (20061215A) Mh. Re-digitized                           E130801100012 
-ENDBIB              10          0                                 E130801100013 
-COMMON               2          3                                 E130801100014 
-ANG1       ANG2                                                   E130801100015 
-ADEG       ADEG                                                   E130801100016 
- 16.        -60.6                                                 E130801100017 
-ENDCOMMON            3          0                                 E130801100018 
-DATA                 3         28                                 E130801100019 
-E          DATA       ERR-S                                       E130801100020 
-MEV        MB/SR2/MEV MB/SR2/MEV                                  E130801100021 
-  4.560E+01  1.005E-01                                            E130801100022 
-  4.734E+01  6.763E-02                                            E130801100023 
-  4.924E+01  1.154E-01                                            E130801100024 
-  5.077E+01  1.095E-01                                            E130801100025 
-  5.256E+01  9.816E-02                                            E130801100026 
-  5.442E+01  2.158E-01                                            E130801100027 
-  5.654E+01  1.613E-01                                            E130801100028 
-  5.828E+01  2.790E-01                                            E130801100029 
-  5.992E+01  4.935E-01                                            E130801100030 
-  6.187E+01  1.327E-01                                            E130801100031 
-  6.362E+01  3.364E-01  1.075E-01                                 E130801100032 
-  6.558E+01  4.056E-01  1.076E-01                                 E130801100033 
-  6.765E+01  5.232E-01  1.290E-01                                 E130801100034 
-  6.939E+01  4.258E-01                                            E130801100035 
-  7.091E+01  5.275E-01  1.344E-01                                 E130801100036 
-  7.271E+01  5.860E-01                                            E130801100037 
-  7.477E+01  3.220E-01  1.236E-01                                 E130801100038 
-  7.658E+01  6.116E-01  1.504E-01                                 E130801100039 
-  7.853E+01  5.142E-01  1.505E-01                                 E130801100040 
-  8.043E+01  3.685E-01  1.290E-01                                 E130801100041 
-  8.246E+01  8.300E-01  1.504E-01                                 E130801100042 
-  8.464E+01  8.400E-01  1.504E-01                                 E130801100043 
-  8.657E+01  1.549E+00  2.204E-01                                 E130801100044 
-  8.839E+01  2.311E+00  2.258E-01                                 E130801100045 
-  9.064E+01  2.934E+00  2.742E-01                                 E130801100046 
-  9.258E+01  3.869E+00  3.171E-01                                 E130801100047 
-  9.443E+01  4.002E+00  2.848E-01                                 E130801100048 
-  9.640E+01  4.351E+00  3.171E-01                                 E130801100049 
-ENDDATA             30          0                                 E130801100050 
-ENDSUBENT           49          0                                 E130801199999 
+PART-DET   (D,A)                                                  E130801100004 
+ANG-SEC    (ANG1,D)                                               E130801100005 
+           (ANG2,A)                                               E130801100006 
+EN-SEC     (E,A)                                                  E130801100007 
+METHOD     (COINC) Detect deuteron and alpha in coincidence.      E130801100008 
+STATUS     (CURVE,,T.Sekioka,J,NP/A,510,417,1990) Fig. 5          E130801100009 
+HISTORY    (20061215A) Mh. Re-digitized                           E130801100010 
+           (20240505A) MA: Heading: ANG1 <-> ANG2.                E130801100011 
+ENDBIB               9          0                                 E130801100012 
+COMMON               2          3                                 E130801100013 
+ANG1       ANG2                                                   E130801100014 
+ADEG       ADEG                                                   E130801100015 
+ -60.6      16.                                                   E130801100016 
+ENDCOMMON            3          0                                 E130801100017 
+DATA                 3         28                                 E130801100018 
+E          DATA       ERR-S                                       E130801100019 
+MEV        MB/SR2/MEV MB/SR2/MEV                                  E130801100020 
+  4.560E+01  1.005E-01                                            E130801100021 
+  4.734E+01  6.763E-02                                            E130801100022 
+  4.924E+01  1.154E-01                                            E130801100023 
+  5.077E+01  1.095E-01                                            E130801100024 
+  5.256E+01  9.816E-02                                            E130801100025 
+  5.442E+01  2.158E-01                                            E130801100026 
+  5.654E+01  1.613E-01                                            E130801100027 
+  5.828E+01  2.790E-01                                            E130801100028 
+  5.992E+01  4.935E-01                                            E130801100029 
+  6.187E+01  1.327E-01                                            E130801100030 
+  6.362E+01  3.364E-01  1.075E-01                                 E130801100031 
+  6.558E+01  4.056E-01  1.076E-01                                 E130801100032 
+  6.765E+01  5.232E-01  1.290E-01                                 E130801100033 
+  6.939E+01  4.258E-01                                            E130801100034 
+  7.091E+01  5.275E-01  1.344E-01                                 E130801100035 
+  7.271E+01  5.860E-01                                            E130801100036 
+  7.477E+01  3.220E-01  1.236E-01                                 E130801100037 
+  7.658E+01  6.116E-01  1.504E-01                                 E130801100038 
+  7.853E+01  5.142E-01  1.505E-01                                 E130801100039 
+  8.043E+01  3.685E-01  1.290E-01                                 E130801100040 
+  8.246E+01  8.300E-01  1.504E-01                                 E130801100041 
+  8.464E+01  8.400E-01  1.504E-01                                 E130801100042 
+  8.657E+01  1.549E+00  2.204E-01                                 E130801100043 
+  8.839E+01  2.311E+00  2.258E-01                                 E130801100044 
+  9.064E+01  2.934E+00  2.742E-01                                 E130801100045 
+  9.258E+01  3.869E+00  3.171E-01                                 E130801100046 
+  9.443E+01  4.002E+00  2.848E-01                                 E130801100047 
+  9.640E+01  4.351E+00  3.171E-01                                 E130801100048 
+ENDDATA             30          0                                 E130801100049 
+ENDSUBENT           48          0                                 E130801199999 
 ENDENTRY            11          0                                 E130899999999 
