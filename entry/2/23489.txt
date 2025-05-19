@@ -1,13 +1,13 @@
-ENTRY            23489   20190503                             228023489  0    1 
-SUBENT        23489001   20190503                             228023489  1    1 
-BIB                  8         24                                 23489  1    2 
+ENTRY            23489   20201017                             229423489  0    1 
+SUBENT        23489001   20201017                             229423489  1    1 
+BIB                  8         25                                 23489  1    2 
 TITLE       On the variation in scattering and absorption cross   23489  1    3 
            section with resonance neutron energy. I.              23489  1    4 
 AUTHOR     (B.Kimura)                                             23489  1    5 
 REFERENCE  (J,JMJ,24,569,1942)                                    23489  1    6 
 INSTITUTE  (2JPNIPC)                                              23489  1    7 
 INC-SOURCE (RA-BE) In paraffin block                              23489  1    8 
-METHOD     . Back scattering method                               23489  1    9 
+METHOD       Back scattering method                               23489  1    9 
            (FNB)                                                  23489  1   10 
             Source Energy,eV Filters             length    Cd     23489  1   11 
             C       0.026    0.0616 g/cm3 In       54 ft    +     23489  1   12 
@@ -25,9 +25,10 @@ COMMENT    Of compiler. Data of measurement by I2 source were not 23489  1   23
            included in data Subents, because an incident energy is23489  1   24 
            not given in the article.                              23489  1   25 
 HISTORY    (20190503C)  M.M.                                      23489  1   26 
-ENDBIB              24          0                                 23489  1   27 
-NOCOMMON             0          0                                 23489  1   28 
-ENDSUBENT           27          0                                 23489  199999 
+           (20201017A) SD: Corrections in several Subents.        23489  1   27 
+ENDBIB              25          0                                 23489  1   28 
+NOCOMMON             0          0                                 23489  1   29 
+ENDSUBENT           28          0                                 23489  199999 
 SUBENT        23489002   20190503                             228023489  2    1 
 BIB                  5          7                                 23489  2    2 
 REACTION   (6-C-0(N,TOT),,TRN)                                    23489  2    3 
@@ -50,9 +51,9 @@ EV         G/CM-SQ    NO-DIM     NO-DIM                           23489  2   14
  27.        2.97       0.61       0.018                           23489  2   20 
 ENDDATA              8          0                                 23489  2   21 
 ENDSUBENT           20          0                                 23489  299999 
-SUBENT        23489003   20190503                             228023489  3    1 
-BIB                  6          8                                 23489  3    2 
-REACTION   (6-C-0(N,SCT)6-C-0,,SIG)                               23489  3    3 
+SUBENT        23489003   20201017                             229423489  3    1 
+BIB                  7          9                                 23489  3    2 
+REACTION   (6-C-0(N,EL)6-C-0,,SIG)                                23489  3    3 
 SAMPLE      0.50, 0.90, 1.49 g/cm2                                23489  3    4 
 DETECTOR   (GEMUC) 17 mm diameter, 60 mm length.                  23489  3    5 
 ANALYSIS     Absorption CS was negligible.                        23489  3    6 
@@ -60,51 +61,53 @@ ERR-ANALYS  Error is not given in the article                     23489  3    7
 STATUS     (TABLE) Table III of                                   23489  3    8 
                    Proc.Phys.-Math.Soc.Jpn.,24,569,1942           23489  3    9 
            (DEP,23489002) transmissions                           23489  3   10 
-ENDBIB               8          0                                 23489  3   11 
-NOCOMMON             0          0                                 23489  3   12 
-DATA                 2          7                                 23489  3   13 
-EN         DATA                                                   23489  3   14 
-EV         B                                                      23489  3   15 
- 0.026      4.8                                                   23489  3   16 
- 0.82       4.8                                                   23489  3   17 
- 0.84       4.8                                                   23489  3   18 
- 3.3        4.8                                                   23489  3   19 
-15.         4.8                                                   23489  3   20 
-25.         4.8                                                   23489  3   21 
-27.         4.8                                                   23489  3   22 
-ENDDATA              9          0                                 23489  3   23 
-ENDSUBENT           22          0                                 23489  399999 
-SUBENT        23489004   20190503                             228023489  4    1 
-BIB                  6         10                                 23489  4    2 
+HISTORY    (20201017A) SD: SF3=SCT -> EL in REACTION code.        23489  3   11 
+ENDBIB               9          0                                 23489  3   12 
+NOCOMMON             0          0                                 23489  3   13 
+DATA                 2          7                                 23489  3   14 
+EN         DATA                                                   23489  3   15 
+EV         B                                                      23489  3   16 
+ 0.026      4.8                                                   23489  3   17 
+ 0.82       4.8                                                   23489  3   18 
+ 0.84       4.8                                                   23489  3   19 
+ 3.3        4.8                                                   23489  3   20 
+15.         4.8                                                   23489  3   21 
+25.         4.8                                                   23489  3   22 
+27.         4.8                                                   23489  3   23 
+ENDDATA              9          0                                 23489  3   24 
+ENDSUBENT           23          0                                 23489  399999 
+SUBENT        23489004   20201017                             229423489  4    1 
+BIB                  7         11                                 23489  4    2 
 REACTION   (26-FE-0(N,SCT)26-FE-0,,SIG)                           23489  4    3 
 SAMPLE      0.725, 1.66, 3.5 g/cm2                                23489  4    4 
 DETECTOR   (GEMUC) 17 mm diameter, 60 mm length.                  23489  4    5 
-MONITOR    (6-C-0(N,SCT)6-C-0,,SIG)  Supposed constant at energy  23489  4    6 
+MONITOR    (6-C-0(N,EL)6-C-0,,SIG)  Supposed constant at energy   23489  4    6 
            region of measurements.                                23489  4    7 
             Measured at additional experiment - see Subent 003.   23489  4    8 
 ERR-ANALYS  Error is not given in the article                     23489  4    9 
 STATUS     (TABLE) Table III of                                   23489  4   10 
                    Proc.Phys.-Math.Soc.Jpn.,24,569,1942           23489  4   11 
            (DEP,23489003) Carbon CS                               23489  4   12 
-ENDBIB              10          0                                 23489  4   13 
-COMMON               1          3                                 23489  4   14 
-MONIT                                                             23489  4   15 
-B                                                                 23489  4   16 
- 4.8                                                              23489  4   17 
-ENDCOMMON            3          0                                 23489  4   18 
-DATA                 2          3                                 23489  4   19 
-EN         DATA                                                   23489  4   20 
-EV         B                                                      23489  4   21 
-  0.026     9.6                                                   23489  4   22 
-  3.3       9.3                                                   23489  4   23 
- 27.       10.3                                                   23489  4   24 
-ENDDATA              5          0                                 23489  4   25 
-ENDSUBENT           24          0                                 23489  499999 
-SUBENT        23489005   20190503                             228023489  5    1 
-BIB                  6         10                                 23489  5    2 
+HISTORY    (20201017A) SD: SF3=SCT -> EL in MONITOR code.         23489  4   13 
+ENDBIB              11          0                                 23489  4   14 
+COMMON               1          3                                 23489  4   15 
+MONIT                                                             23489  4   16 
+B                                                                 23489  4   17 
+ 4.8                                                              23489  4   18 
+ENDCOMMON            3          0                                 23489  4   19 
+DATA                 2          3                                 23489  4   20 
+EN         DATA                                                   23489  4   21 
+EV         B                                                      23489  4   22 
+  0.026     9.6                                                   23489  4   23 
+  3.3       9.3                                                   23489  4   24 
+ 27.       10.3                                                   23489  4   25 
+ENDDATA              5          0                                 23489  4   26 
+ENDSUBENT           25          0                                 23489  499999 
+SUBENT        23489005   20201017                             229423489  5    1 
+BIB                  7         11                                 23489  5    2 
 REACTION   (28-NI-0(N,SCT)28-NI-0,,SIG)                           23489  5    3 
 SAMPLE      1.45, 2.5 g/cm2                                       23489  5    4 
-MONITOR    (6-C-0(N,SCT)6-C-0,,SIG)  Supposed constant at energy  23489  5    5 
+MONITOR    (6-C-0(N,EL)6-C-0,,SIG)  Supposed constant at energy   23489  5    5 
            region of measurements.                                23489  5    6 
             Measured at additional experiment - see Subent 003.   23489  5    7 
 DETECTOR   (GEMUC) 17 mm diameter, 60 mm length.                  23489  5    8 
@@ -112,26 +115,27 @@ ERR-ANALYS  Error is not given in the article                     23489  5    9
 STATUS     (TABLE) Table III of                                   23489  5   10 
                    Proc.Phys.-Math.Soc.Jpn.,24,569,1942           23489  5   11 
            (DEP,23489003) Carbon CS                               23489  5   12 
-ENDBIB              10          0                                 23489  5   13 
-COMMON               1          3                                 23489  5   14 
-MONIT                                                             23489  5   15 
-B                                                                 23489  5   16 
- 4.8                                                              23489  5   17 
-ENDCOMMON            3          0                                 23489  5   18 
-DATA                 2          4                                 23489  5   19 
-EN         DATA                                                   23489  5   20 
-EV         B                                                      23489  5   21 
-  0.026     16.6                                                  23489  5   22 
-  0.82      16.6                                                  23489  5   23 
-  3.3       16.6                                                  23489  5   24 
- 27.        14.7                                                  23489  5   25 
-ENDDATA              6          0                                 23489  5   26 
-ENDSUBENT           25          0                                 23489  599999 
-SUBENT        23489006   20190503                             228023489  6    1 
-BIB                  6         10                                 23489  6    2 
+HISTORY    (20201017A) SD: SF3=SCT -> EL in MONITOR code.         23489  5   13 
+ENDBIB              11          0                                 23489  5   14 
+COMMON               1          3                                 23489  5   15 
+MONIT                                                             23489  5   16 
+B                                                                 23489  5   17 
+ 4.8                                                              23489  5   18 
+ENDCOMMON            3          0                                 23489  5   19 
+DATA                 2          4                                 23489  5   20 
+EN         DATA                                                   23489  5   21 
+EV         B                                                      23489  5   22 
+  0.026     16.6                                                  23489  5   23 
+  0.82      16.6                                                  23489  5   24 
+  3.3       16.6                                                  23489  5   25 
+ 27.        14.7                                                  23489  5   26 
+ENDDATA              6          0                                 23489  5   27 
+ENDSUBENT           26          0                                 23489  599999 
+SUBENT        23489006   20201017                             229423489  6    1 
+BIB                  7         11                                 23489  6    2 
 REACTION   (13-AL-27(N,SCT)13-AL-27,,SIG)                         23489  6    3 
 SAMPLE      1.38, 2.77, 4.15 g/cm2                                23489  6    4 
-MONITOR    (6-C-0(N,SCT)6-C-0,,SIG)  Supposed constant at energy  23489  6    5 
+MONITOR    (6-C-0(N,EL)6-C-0,,SIG)  Supposed constant at energy   23489  6    5 
            region of measurements.                                23489  6    6 
             Measured at additional experiment - see Subent 003.   23489  6    7 
 DETECTOR   (GEMUC) 17 mm diameter, 60 mm length.                  23489  6    8 
@@ -139,24 +143,25 @@ ERR-ANALYS  Error is not given in the article                     23489  6    9
 STATUS     (TABLE) Table III of                                   23489  6   10 
                    Proc.Phys.-Math.Soc.Jpn.,24,569,1942           23489  6   11 
            (DEP,23489003) Carbon CS                               23489  6   12 
-ENDBIB              10          0                                 23489  6   13 
-COMMON               1          3                                 23489  6   14 
-MONIT                                                             23489  6   15 
-B                                                                 23489  6   16 
- 4.8                                                              23489  6   17 
-ENDCOMMON            3          0                                 23489  6   18 
-DATA                 2          2                                 23489  6   19 
-EN         DATA                                                   23489  6   20 
-EV         B                                                      23489  6   21 
-  0.026     1.7                                                   23489  6   22 
- 27.        1.7                                                   23489  6   23 
-ENDDATA              4          0                                 23489  6   24 
-ENDSUBENT           23          0                                 23489  699999 
-SUBENT        23489007   20190503                             228023489  7    1 
-BIB                  6         10                                 23489  7    2 
+HISTORY    (20201017A) SD: SF3=SCT -> EL in MONITOR code.         23489  6   13 
+ENDBIB              11          0                                 23489  6   14 
+COMMON               1          3                                 23489  6   15 
+MONIT                                                             23489  6   16 
+B                                                                 23489  6   17 
+ 4.8                                                              23489  6   18 
+ENDCOMMON            3          0                                 23489  6   19 
+DATA                 2          2                                 23489  6   20 
+EN         DATA                                                   23489  6   21 
+EV         B                                                      23489  6   22 
+  0.026     1.7                                                   23489  6   23 
+ 27.        1.7                                                   23489  6   24 
+ENDDATA              4          0                                 23489  6   25 
+ENDSUBENT           24          0                                 23489  699999 
+SUBENT        23489007   20201017                             229423489  7    1 
+BIB                  7         11                                 23489  7    2 
 REACTION   (82-PB-0(N,SCT)82-PB-0,,SIG)                           23489  7    3 
 SAMPLE       1.9, 3.5, 5.4, 7.0, 8.9, 10.5, 14.0 g/cm2            23489  7    4 
-MONITOR    (6-C-0(N,SCT)6-C-0,,SIG)  Supposed constant at energy  23489  7    5 
+MONITOR    (6-C-0(N,EL)6-C-0,,SIG)  Supposed constant at energy   23489  7    5 
            region of measurements.                                23489  7    6 
             Measured at additional experiment - see Subent 003.   23489  7    7 
 DETECTOR   (GEMUC) 17 mm diameter, 60 mm length.                  23489  7    8 
@@ -164,26 +169,27 @@ ERR-ANALYS  Error is not given in the article                     23489  7    9
 STATUS     (TABLE) Table III of                                   23489  7   10 
                    Proc.Phys.-Math.Soc.Jpn.,24,569,1942           23489  7   11 
            (DEP,23489003) Carbon CS                               23489  7   12 
-ENDBIB              10          0                                 23489  7   13 
-COMMON               1          3                                 23489  7   14 
-MONIT                                                             23489  7   15 
-B                                                                 23489  7   16 
- 4.8                                                              23489  7   17 
-ENDCOMMON            3          0                                 23489  7   18 
-DATA                 2          4                                 23489  7   19 
-EN         DATA                                                   23489  7   20 
-EV         B                                                      23489  7   21 
-  0.026     11.2                                                  23489  7   22 
-  0.82      10.3                                                  23489  7   23 
-  3.3       10.2                                                  23489  7   24 
- 27.         9.8                                                  23489  7   25 
-ENDDATA              6          0                                 23489  7   26 
-ENDSUBENT           25          0                                 23489  799999 
-SUBENT        23489008   20190503                             228023489  8    1 
-BIB                  6         10                                 23489  8    2 
+HISTORY    (20201017A) SD: SF3=SCT -> EL in MONITOR code.         23489  7   13 
+ENDBIB              11          0                                 23489  7   14 
+COMMON               1          3                                 23489  7   15 
+MONIT                                                             23489  7   16 
+B                                                                 23489  7   17 
+ 4.8                                                              23489  7   18 
+ENDCOMMON            3          0                                 23489  7   19 
+DATA                 2          4                                 23489  7   20 
+EN         DATA                                                   23489  7   21 
+EV         B                                                      23489  7   22 
+  0.026     11.2                                                  23489  7   23 
+  0.82      10.3                                                  23489  7   24 
+  3.3       10.2                                                  23489  7   25 
+ 27.         9.8                                                  23489  7   26 
+ENDDATA              6          0                                 23489  7   27 
+ENDSUBENT           26          0                                 23489  799999 
+SUBENT        23489008   20201017                             229423489  8    1 
+BIB                  7         11                                 23489  8    2 
 REACTION   (30-ZN-0(N,SCT)30-ZN-0,,SIG)                           23489  8    3 
 SAMPLE      1.06, 2.12, 3.18, 4.24, 6.36 g/cm2                    23489  8    4 
-MONITOR    (6-C-0(N,SCT)6-C-0,,SIG)  Supposed constant at energy  23489  8    5 
+MONITOR    (6-C-0(N,EL)6-C-0,,SIG)  Supposed constant at energy   23489  8    5 
            region of measurements.                                23489  8    6 
             Measured at additional experiment - see Subent 003.   23489  8    7 
 DETECTOR   (GEMUC) 17 mm diameter, 60 mm length.                  23489  8    8 
@@ -191,30 +197,31 @@ ERR-ANALYS  Error is not given in the article                     23489  8    9
 STATUS     (TABLE) Table III of                                   23489  8   10 
                    Proc.Phys.-Math.Soc.Jpn.,24,569,1942           23489  8   11 
            (DEP,23489003) Carbon CS                               23489  8   12 
-ENDBIB              10          0                                 23489  8   13 
-COMMON               1          3                                 23489  8   14 
-MONIT                                                             23489  8   15 
-B                                                                 23489  8   16 
- 4.8                                                              23489  8   17 
-ENDCOMMON            3          0                                 23489  8   18 
-DATA                 2          6                                 23489  8   19 
-EN         DATA                                                   23489  8   20 
-EV         B                                                      23489  8   21 
-  0.026     5.3                                                   23489  8   22 
-  0.84      5.7                                                   23489  8   23 
-  3.3       5.4                                                   23489  8   24 
- 15.        4.6                                                   23489  8   25 
- 25.        5.3                                                   23489  8   26 
- 27.        8.1                                                   23489  8   27 
-ENDDATA              8          0                                 23489  8   28 
-ENDSUBENT           27          0                                 23489  899999 
-SUBENT        23489009   20190503                             228023489  9    1 
-BIB                  6         12                                 23489  9    2 
+HISTORY    (20201017A) SD: SF3=SCT -> EL in MONITOR code.         23489  8   13 
+ENDBIB              11          0                                 23489  8   14 
+COMMON               1          3                                 23489  8   15 
+MONIT                                                             23489  8   16 
+B                                                                 23489  8   17 
+ 4.8                                                              23489  8   18 
+ENDCOMMON            3          0                                 23489  8   19 
+DATA                 2          6                                 23489  8   20 
+EN         DATA                                                   23489  8   21 
+EV         B                                                      23489  8   22 
+  0.026     5.3                                                   23489  8   23 
+  0.84      5.7                                                   23489  8   24 
+  3.3       5.4                                                   23489  8   25 
+ 15.        4.6                                                   23489  8   26 
+ 25.        5.3                                                   23489  8   27 
+ 27.        8.1                                                   23489  8   28 
+ENDDATA              8          0                                 23489  8   29 
+ENDSUBENT           28          0                                 23489  899999 
+SUBENT        23489009   20201017                             229423489  9    1 
+BIB                  7         13                                 23489  9    2 
 REACTION   (80-HG-0(N,SCT)80-HG-0,,SIG)                           23489  9    3 
 SAMPLE      0.19, 0.32, 0.45, 0.68, 0.85, 1.24, 1.70, 2.13 g/cm2  23489  9    4 
            for measurement at 0.026 eV;                           23489  9    5 
            1.24, 2.13, 4.62, 7.65 for other measurements.         23489  9    6 
-MONITOR    (6-C-0(N,SCT)6-C-0,,SIG)  Supposed constant at energy  23489  9    7 
+MONITOR    (6-C-0(N,EL)6-C-0,,SIG)  Supposed constant at energy   23489  9    7 
            region of measurements.                                23489  9    8 
             Measured at additional experiment - see Subent 003.   23489  9    9 
 DETECTOR   (GEMUC) 17 mm diameter, 60 mm length.                  23489  9   10 
@@ -222,29 +229,30 @@ ERR-ANALYS  Error is not given in the article                     23489  9   11
 STATUS     (TABLE) Table III of                                   23489  9   12 
                    Proc.Phys.-Math.Soc.Jpn.,24,569,1942           23489  9   13 
            (DEP,23489003) Carbon CS                               23489  9   14 
-ENDBIB              12          0                                 23489  9   15 
-COMMON               1          3                                 23489  9   16 
-MONIT                                                             23489  9   17 
-B                                                                 23489  9   18 
- 4.8                                                              23489  9   19 
-ENDCOMMON            3          0                                 23489  9   20 
-DATA                 3          6                                 23489  9   21 
-EN         DATA       DATA-APRX                                   23489  9   22 
-EV         B          B                                           23489  9   23 
-  0.026                30.                                        23489  9   24 
-  0.82      18.0                                                  23489  9   25 
-  0.84      14.4                                                  23489  9   26 
-  3.3       14.6                                                  23489  9   27 
- 15.        14.3                                                  23489  9   28 
- 27.        11.2                                                  23489  9   29 
-ENDDATA              8          0                                 23489  9   30 
-ENDSUBENT           29          0                                 23489  999999 
-SUBENT        23489010   20190503                             228023489 10    1 
-BIB                  6         11                                 23489 10    2 
+HISTORY    (20201017A) SD: SF3=SCT -> EL in MONITOR code.         23489  9   15 
+ENDBIB              13          0                                 23489  9   16 
+COMMON               1          3                                 23489  9   17 
+MONIT                                                             23489  9   18 
+B                                                                 23489  9   19 
+ 4.8                                                              23489  9   20 
+ENDCOMMON            3          0                                 23489  9   21 
+DATA                 3          6                                 23489  9   22 
+EN         DATA       DATA-APRX                                   23489  9   23 
+EV         B          B                                           23489  9   24 
+  0.026                30.                                        23489  9   25 
+  0.82      18.0                                                  23489  9   26 
+  0.84      14.4                                                  23489  9   27 
+  3.3       14.6                                                  23489  9   28 
+ 15.        14.3                                                  23489  9   29 
+ 27.        11.2                                                  23489  9   30 
+ENDDATA              8          0                                 23489  9   31 
+ENDSUBENT           30          0                                 23489  999999 
+SUBENT        23489010   20201017                             229423489 10    1 
+BIB                  7         12                                 23489 10    2 
 REACTION   (17-CL-0(N,SCT)17-CL-0,,SIG)                           23489 10    3 
 SAMPLE      CCl(4) samples of 0.25, 0.40, 0.85, 1.48, 2.33, 8.4   23489 10    4 
            in g/cm2 ClC(1/4)                                      23489 10    5 
-MONITOR    (6-C-0(N,SCT)6-C-0,,SIG)  Supposed constant at energy  23489 10    6 
+MONITOR    (6-C-0(N,EL)6-C-0,,SIG)  Supposed constant at energy   23489 10    6 
            region of measurements.                                23489 10    7 
             Measured at additional experiment - see Subent 003.   23489 10    8 
 DETECTOR   (GEMUC) 17 mm diameter, 60 mm length.                  23489 10    9 
@@ -252,27 +260,28 @@ ERR-ANALYS  Error is not given in the article                     23489 10   10
 STATUS     (TABLE) Table III of                                   23489 10   11 
                    Proc.Phys.-Math.Soc.Jpn.,24,569,1942           23489 10   12 
            (DEP,23489003) Carbon CS                               23489 10   13 
-ENDBIB              11          0                                 23489 10   14 
-COMMON               1          3                                 23489 10   15 
-MONIT                                                             23489 10   16 
-B                                                                 23489 10   17 
- 4.8                                                              23489 10   18 
-ENDCOMMON            3          0                                 23489 10   19 
-DATA                 2          4                                 23489 10   20 
-EN         DATA                                                   23489 10   21 
-EV         B                                                      23489 10   22 
-  0.026     12.4                                                  23489 10   23 
-  0.82      13.8                                                  23489 10   24 
-  3.3       12.2                                                  23489 10   25 
- 27.         7.4                                                  23489 10   26 
-ENDDATA              6          0                                 23489 10   27 
-ENDSUBENT           26          0                                 23489 1099999 
-SUBENT        23489011   20190503                             228023489 11    1 
-BIB                  6         11                                 23489 11    2 
+HISTORY    (20201017A) SD: SF3=SCT -> EL in MONITOR code.         23489 10   14 
+ENDBIB              12          0                                 23489 10   15 
+COMMON               1          3                                 23489 10   16 
+MONIT                                                             23489 10   17 
+B                                                                 23489 10   18 
+ 4.8                                                              23489 10   19 
+ENDCOMMON            3          0                                 23489 10   20 
+DATA                 2          4                                 23489 10   21 
+EN         DATA                                                   23489 10   22 
+EV         B                                                      23489 10   23 
+  0.026     12.4                                                  23489 10   24 
+  0.82      13.8                                                  23489 10   25 
+  3.3       12.2                                                  23489 10   26 
+ 27.         7.4                                                  23489 10   27 
+ENDDATA              6          0                                 23489 10   28 
+ENDSUBENT           27          0                                 23489 1099999 
+SUBENT        23489011   20201017                             229423489 11    1 
+BIB                  7         12                                 23489 11    2 
 REACTION   (27-CO-59(N,SCT)27-CO-59,,SIG)                         23489 11    3 
-SAMPLE     98.7 % Co + 0.92 % Fe + 0.4 % Ni .                     23489 11    4 
+SAMPLE     98.7 % Co + 0.92 % Fe + 0.4 % Ni.                      23489 11    4 
            0.2, 0.35, 0.61, 0.81, 1.02, 1.25, 1.63 g/cm2          23489 11    5 
-MONITOR    (6-C-0(N,SCT)6-C-0,,SIG)  Supposed constant at energy  23489 11    6 
+MONITOR    (6-C-0(N,EL)6-C-0,,SIG)  Supposed constant at energy   23489 11    6 
            region of measurements.                                23489 11    7 
             Measured at additional experiment - see Subent 003.   23489 11    8 
 DETECTOR   (GEMUC) 17 mm diameter, 60 mm length.                  23489 11    9 
@@ -280,30 +289,31 @@ ERR-ANALYS  Error is not given in the article                     23489 11   10
 STATUS     (TABLE) Table III of                                   23489 11   11 
                    Proc.Phys.-Math.Soc.Jpn.,24,569,1942           23489 11   12 
            (DEP,23489003) Carbon CS                               23489 11   13 
-ENDBIB              11          0                                 23489 11   14 
-COMMON               1          3                                 23489 11   15 
-MONIT                                                             23489 11   16 
-B                                                                 23489 11   17 
- 4.8                                                              23489 11   18 
-ENDCOMMON            3          0                                 23489 11   19 
-DATA                 2          7                                 23489 11   20 
-EN         DATA                                                   23489 11   21 
-EV         B                                                      23489 11   22 
-  0.026     8.6                                                   23489 11   23 
-  0.82     24.5                                                   23489 11   24 
-  0.84     17.9                                                   23489 11   25 
-  3.3      10.8                                                   23489 11   26 
- 15.       15.6                                                   23489 11   27 
- 25.       22.2                                                   23489 11   28 
- 27.       22.1                                                   23489 11   29 
-ENDDATA              9          0                                 23489 11   30 
-ENDSUBENT           29          0                                 23489 1199999 
-SUBENT        23489012   20190503                             228023489 12    1 
-BIB                  6         11                                 23489 12    2 
+HISTORY    (20201017A) SD: SF3=SCT -> EL in MONITOR code.         23489 11   14 
+ENDBIB              12          0                                 23489 11   15 
+COMMON               1          3                                 23489 11   16 
+MONIT                                                             23489 11   17 
+B                                                                 23489 11   18 
+ 4.8                                                              23489 11   19 
+ENDCOMMON            3          0                                 23489 11   20 
+DATA                 2          7                                 23489 11   21 
+EN         DATA                                                   23489 11   22 
+EV         B                                                      23489 11   23 
+  0.026     8.6                                                   23489 11   24 
+  0.82     24.5                                                   23489 11   25 
+  0.84     17.9                                                   23489 11   26 
+  3.3      10.8                                                   23489 11   27 
+ 15.       15.6                                                   23489 11   28 
+ 25.       22.2                                                   23489 11   29 
+ 27.       22.1                                                   23489 11   30 
+ENDDATA              9          0                                 23489 11   31 
+ENDSUBENT           30          0                                 23489 1199999 
+SUBENT        23489012   20201017                             229423489 12    1 
+BIB                  7         12                                 23489 12    2 
 REACTION   (25-MN-55(N,SCT)25-MN-55,,SIG)                         23489 12    3 
-SAMPLE     88.6 % Mn + 6. % C + 1. % Al + 2.1 % Fe + 1.% Si .     23489 12    4 
+SAMPLE     88.6 % Mn + 6. % C + 1. % Al + 2.1 % Fe + 1.% Si.      23489 12    4 
            0.35, 0.61, 1.56, 2.7, 4.65 c/cm2                      23489 12    5 
-MONITOR    (6-C-0(N,SCT)6-C-0,,SIG)  Supposed constant at energy  23489 12    6 
+MONITOR    (6-C-0(N,EL)6-C-0,,SIG)  Supposed constant at energy   23489 12    6 
            region of measurements.                                23489 12    7 
             Measured at additional experiment - see Subent 003.   23489 12    8 
 DETECTOR   (GEMUC) 17 mm diameter, 60 mm length.                  23489 12    9 
@@ -311,20 +321,21 @@ ERR-ANALYS  Error is not given in the article                     23489 12   10
 STATUS     (TABLE) Table III of                                   23489 12   11 
                    Proc.Phys.-Math.Soc.Jpn.,24,569,1942           23489 12   12 
            (DEP,23489003) Carbon CS                               23489 12   13 
-ENDBIB              11          0                                 23489 12   14 
-COMMON               1          3                                 23489 12   15 
-MONIT                                                             23489 12   16 
-B                                                                 23489 12   17 
- 4.8                                                              23489 12   18 
-ENDCOMMON            3          0                                 23489 12   19 
-DATA                 2          5                                 23489 12   20 
-EN         DATA                                                   23489 12   21 
-EV         B                                                      23489 12   22 
-  0.026      2.9                                                  23489 12   23 
-  0.84       5.4                                                  23489 12   24 
-  3.3        6.2                                                  23489 12   25 
- 15.        28.                                                   23489 12   26 
- 27.        21.                                                   23489 12   27 
-ENDDATA              7          0                                 23489 12   28 
-ENDSUBENT           27          0                                 23489 1299999 
+HISTORY    (20201017A) SD: SF3=SCT -> EL in MONITOR code.         23489 12   14 
+ENDBIB              12          0                                 23489 12   15 
+COMMON               1          3                                 23489 12   16 
+MONIT                                                             23489 12   17 
+B                                                                 23489 12   18 
+ 4.8                                                              23489 12   19 
+ENDCOMMON            3          0                                 23489 12   20 
+DATA                 2          5                                 23489 12   21 
+EN         DATA                                                   23489 12   22 
+EV         B                                                      23489 12   23 
+  0.026      2.9                                                  23489 12   24 
+  0.84       5.4                                                  23489 12   25 
+  3.3        6.2                                                  23489 12   26 
+ 15.        28.                                                   23489 12   27 
+ 27.        21.                                                   23489 12   28 
+ENDDATA              7          0                                 23489 12   29 
+ENDSUBENT           28          0                                 23489 1299999 
 ENDENTRY            12          0                                 2348999999999 
