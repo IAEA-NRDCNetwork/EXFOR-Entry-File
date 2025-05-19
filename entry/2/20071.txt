@@ -1,14 +1,14 @@
-ENTRY            20071   20190925                             228320071  0    1 
-SUBENT        20071001   20190925                             228320071  1    1 
-BIB                 10         19                                 20071  1    2 
+ENTRY            20071   20211218                             230620071  0    1 
+SUBENT        20071001   20211218                             230620071  1    1 
+BIB                 10         20                                 20071  1    2 
 TITLE       Isomeric cross-section ratios for the reactions       20071  1    3 
             Os-192(n,2n)Os-191 and Pt-198(n,2n)Pt-197 at 14 MeV   20071  1    4 
 REFERENCE  (J,NP/A,158,77,1970)                                   20071  1    5 
 AUTHOR     (P.Winiwarter)                                         20071  1    6 
 INSTITUTE  (2AUSIRK)                                              20071  1    7 
 FACILITY   (CCW,2AUSIRK) Cockcroft-Walton accelerator, 200 keV    20071  1    8 
-INC-SOURCE (D-T)  Deuteron-tritium                                20071  1    9 
-METHOD     (ACTIV) Activation                                     20071  1   10 
+INC-SOURCE (D-T)                                                  20071  1    9 
+METHOD     (ACTIV)                                                20071  1   10 
             Sample placed at 0 degrees of deuteron beam, distance 20071  1   11 
             sample target 3 mm                                    20071  1   12 
 ERR-ANALYS (DATA-ERR) 3 Times statistical error plus quadratic    20071  1   13 
@@ -20,15 +20,16 @@ STATUS     (TABLE)  Tbl. 2 from Nucl.Phys.,A158(1970)77           20071  1   17
 HISTORY    (19701101C)                                            20071  1   19 
            (20190925A) SD:Updated to new date formats,lower case. 20071  1   20 
            BIB updated. DETECTOR moved to Subents 002-009.        20071  1   21 
-ENDBIB              19          0                                 20071  1   22 
-COMMON               2          3                                 20071  1   23 
-EN         EN-RSL                                                 20071  1   24 
-MEV        MEV                                                    20071  1   25 
- 14.7        0.15                                                 20071  1   26 
-ENDCOMMON            3          0                                 20071  1   27 
-ENDSUBENT           26          0                                 20071  199999 
-SUBENT        20071002   20190925                             228320071  2    1 
-BIB                  9         17                                 20071  2    2 
+           (20211218A) SD: Corrections in Subents 002-004,006-008.20071  1   22 
+ENDBIB              20          0                                 20071  1   23 
+COMMON               2          3                                 20071  1   24 
+EN         EN-RSL                                                 20071  1   25 
+MEV        MEV                                                    20071  1   26 
+ 14.7        0.15                                                 20071  1   27 
+ENDCOMMON            3          0                                 20071  1   28 
+ENDSUBENT           27          0                                 20071  199999 
+SUBENT        20071002   20211218                             230620071  2    1 
+BIB                  9         19                                 20071  2    2 
 REACTION   (76-OS-192(N,2N)76-OS-191,,SIG)                        20071  2    3 
 SAMPLE      Power of 76-Os, natural isotopic composition,99.997%. 20071  2    4 
             Purity, packed in a plastic foil of 13 mm diameter.   20071  2    5 
@@ -37,7 +38,7 @@ DECAY-DATA (76-OS-191-G,14.4D,DG) +-1.1d                          20071  2    6
 ANALYSIS    Gamma ray intensity of 129 keV transition in Ir-191   20071  2    8 
             by comparison with photopeak efficiency curve         20071  2    9 
 MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           20071  2   10 
-DETECTOR   (NAICR)    7.6*7.6 cm Na-I scintillation counter in    20071  2   11 
+DETECTOR   (NAICR) 7.6*7.6 cm Na-I scintillation counter in       20071  2   11 
             calibrated geometry                                   20071  2   12 
 CORRECTION  Dead time, background, efficiency of Na-I detector,   20071  2   13 
             selfabsorption, neutron flux, internal conversion     20071  2   14 
@@ -46,16 +47,18 @@ STATUS     (DEP,20071005) cr.sect.ratio                           20071  2   16
 HISTORY    (19701101C)                                            20071  2   17 
            (20190925U) SD: STATUS, DECAY-DATA added.              20071  2   18 
            PART-DET deleted.                                      20071  2   19 
-ENDBIB              17          0                                 20071  2   20 
-NOCOMMON             0          0                                 20071  2   21 
-DATA                 4          1                                 20071  2   22 
-DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  2   23 
-B          B          B          B                                20071  2   24 
- 2.121       0.235       1.115     0.002                          20071  2   25 
-ENDDATA              3          0                                 20071  2   26 
-ENDSUBENT           25          0                                 20071  299999 
-SUBENT        20071003   20190925                             228320071  3    1 
-BIB                  9         16                                 20071  3    2 
+           (20211218A) SD: Data units and values corrected in     20071  2   20 
+           MONIT/ERR cols (1.115+-0.002 b -> 111.5+-2. mb)        20071  2   21 
+ENDBIB              19          0                                 20071  2   22 
+NOCOMMON             0          0                                 20071  2   23 
+DATA                 4          1                                 20071  2   24 
+DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  2   25 
+B          B          MB         MB                               20071  2   26 
+ 2.121       0.235       111.5         2.                         20071  2   27 
+ENDDATA              3          0                                 20071  2   28 
+ENDSUBENT           27          0                                 20071  299999 
+SUBENT        20071003   20211218                             230620071  3    1 
+BIB                  9         18                                 20071  3    2 
 REACTION   (76-OS-192(N,2N)76-OS-191-G,,SIG)                      20071  3    3 
 DECAY-DATA (76-OS-191-G,14.4D,DG) +-1.1d                          20071  3    4 
 SAMPLE      Power of 76-Os, natural isotopic composition,99.997%. 20071  3    5 
@@ -72,16 +75,18 @@ STATUS     (DEP,20071005) cr.sect.ratio                           20071  3   15
 HISTORY    (19701101C)                                            20071  3   16 
            (20190925U) SD: STATUS, DECAY-DATA added.              20071  3   17 
            PART-DET deleted. HL(-ERR) values deleted.             20071  3   18 
-ENDBIB              16          0                                 20071  3   19 
-NOCOMMON             0          0                                 20071  3   20 
-DATA                 4          1                                 20071  3   21 
-DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  3   22 
-B          B          B          B                                20071  3   23 
-      1.290      0.205   1.115     0.002                          20071  3   24 
-ENDDATA              3          0                                 20071  3   25 
-ENDSUBENT           24          0                                 20071  399999 
-SUBENT        20071004   20190925                             228320071  4    1 
-BIB                  9         17                                 20071  4    2 
+           (20211218A) SD: Data units and values corrected in     20071  3   19 
+           MONIT/ERR cols (1.115+-0.002 b -> 111.5+-2. mb)        20071  3   20 
+ENDBIB              18          0                                 20071  3   21 
+NOCOMMON             0          0                                 20071  3   22 
+DATA                 4          1                                 20071  3   23 
+DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  3   24 
+B          B          MB         MB                               20071  3   25 
+      1.290      0.205   111.5        2.                          20071  3   26 
+ENDDATA              3          0                                 20071  3   27 
+ENDSUBENT           26          0                                 20071  399999 
+SUBENT        20071004   20211218                             230620071  4    1 
+BIB                  9         19                                 20071  4    2 
 REACTION   (76-OS-192(N,2N)76-OS-191-M,,SIG)                      20071  4    3 
 DECAY-DATA (76-OS-191-M,13.03HR,DG) +-0.21hr                      20071  4    4 
 SAMPLE      Power of 76-Os, natural isotopic composition,99.997%. 20071  4    5 
@@ -97,16 +102,18 @@ CORRECTION  Dead time, background, efficiency of Na-I detector,   20071  4   14
             selfabsorption, neutron flux, internal conversion     20071  4   15 
             (alpha K = 2.17), relative gamma intensity = 100%     20071  4   16 
 HISTORY    (19701101C)                                            20071  4   17 
-           (20190925U) SD: STATUS, DECAY-DATA added.              20071  4   18 
+           (20190925U) SD: DECAY-DATA added.                      20071  4   18 
            PART-DET deleted. HL(-ERR) values deleted.             20071  4   19 
-ENDBIB              17          0                                 20071  4   20 
-NOCOMMON             0          0                                 20071  4   21 
-DATA                 4          1                                 20071  4   22 
-DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  4   23 
-B          B          B          B                                20071  4   24 
-      0.831      0.116      1.115      0.002                      20071  4   25 
-ENDDATA              3          0                                 20071  4   26 
-ENDSUBENT           25          0                                 20071  499999 
+           (20211218A) SD: Data units and values corrected in     20071  4   20 
+           MONIT/ERR cols (1.115+-0.002 b -> 111.5+-2. mb)        20071  4   21 
+ENDBIB              19          0                                 20071  4   22 
+NOCOMMON             0          0                                 20071  4   23 
+DATA                 4          1                                 20071  4   24 
+DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  4   25 
+B          B          MB         MB                               20071  4   26 
+      0.831      0.116      111.5       2.                        20071  4   27 
+ENDDATA              3          0                                 20071  4   28 
+ENDSUBENT           27          0                                 20071  499999 
 SUBENT        20071005   20190925                             228320071  5    1 
 BIB                  7         19                                 20071  5    2 
 REACTION   ((76-OS-192(N,2N)76-OS-191-M,,SIG)/                    20071  5    3 
@@ -136,8 +143,8 @@ NO-DIM     NO-DIM                                                 20071  5   26
       0.392      0.018                                            20071  5   27 
 ENDDATA              3          0                                 20071  5   28 
 ENDSUBENT           27          0                                 20071  599999 
-SUBENT        20071006   20190925                             228320071  6    1 
-BIB                 10         24                                 20071  6    2 
+SUBENT        20071006   20211218                             230620071  6    1 
+BIB                 10         26                                 20071  6    2 
 REACTION   (78-PT-198(N,2N)78-PT-197,,SIG)                        20071  6    3 
 DECAY-DATA (78-PT-197-G,18.HR,DG)                                 20071  6    4 
            (78-PT-197-M,96.MIN,DG) +- 4.min                       20071  6    5 
@@ -162,16 +169,18 @@ STATUS     (DEP,20071008) cr. sect. sigma(metastable)             20071  6   23
 HISTORY    (19701101C)                                            20071  6   24 
            (20190925U) SD: STATUS, DECAY-DATA added.              20071  6   25 
            PART-DET deleted.                                      20071  6   26 
-ENDBIB              24          0                                 20071  6   27 
-NOCOMMON             0          0                                 20071  6   28 
-DATA                 4          1                                 20071  6   29 
-DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  6   30 
-B          B          B          B                                20071  6   31 
-      1.976      0.405      1.115      0.002                      20071  6   32 
-ENDDATA              3          0                                 20071  6   33 
-ENDSUBENT           32          0                                 20071  699999 
-SUBENT        20071007   20190925                             228320071  7    1 
-BIB                 10         23                                 20071  7    2 
+           (20211218A) SD: Data units and values corrected in     20071  6   27 
+           MONIT/ERR cols (1.115+-0.002 b -> 111.5+-2. mb)        20071  6   28 
+ENDBIB              26          0                                 20071  6   29 
+NOCOMMON             0          0                                 20071  6   30 
+DATA                 4          1                                 20071  6   31 
+DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  6   32 
+B          B          MB         MB                               20071  6   33 
+      1.976      0.405      111.5        2.                       20071  6   34 
+ENDDATA              3          0                                 20071  6   35 
+ENDSUBENT           34          0                                 20071  699999 
+SUBENT        20071007   20211218                             230620071  7    1 
+BIB                 10         25                                 20071  7    2 
 REACTION   (78-PT-198(N,2N)78-PT-197-G,,SIG)                      20071  7    3 
 DECAY-DATA (78-PT-197-G,18.HR,DG,192.,0.1)                        20071  7    4 
 SAMPLE      Metallic 78-Pt, natural isotopic composition, 99.99%. 20071  7    5 
@@ -195,16 +204,18 @@ STATUS     (DEP,20071008) cr. sect. sigma(metastable)             20071  7   22
 HISTORY    (19701101C)                                            20071  7   23 
            (20190925U) SD: STATUS, DECAY-DATA added.              20071  7   24 
            PART-DET deleted. HL(-ERR) values deleted.             20071  7   25 
-ENDBIB              23          0                                 20071  7   26 
-NOCOMMON             0          0                                 20071  7   27 
-DATA                 4          1                                 20071  7   28 
-DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  7   29 
-B          B          B          B                                20071  7   30 
-      1.082      0.392   1.115     0.002                          20071  7   31 
-ENDDATA              3          0                                 20071  7   32 
-ENDSUBENT           31          0                                 20071  799999 
-SUBENT        20071008   20190925                             228320071  8    1 
-BIB                  9         22                                 20071  8    2 
+           (20211218A) SD: Data units and values corrected in     20071  7   26 
+           MONIT/ERR cols (1.115+-0.002 b -> 111.5+-2. mb)        20071  7   27 
+ENDBIB              25          0                                 20071  7   28 
+NOCOMMON             0          0                                 20071  7   29 
+DATA                 4          1                                 20071  7   30 
+DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  7   31 
+B          B          MB         MB                               20071  7   32 
+      1.082      0.392   111.5        2.                          20071  7   33 
+ENDDATA              3          0                                 20071  7   34 
+ENDSUBENT           33          0                                 20071  799999 
+SUBENT        20071008   20211218                             230620071  8    1 
+BIB                  9         24                                 20071  8    2 
 REACTION   (78-PT-198(N,2N)78-PT-197-M,,SIG)                      20071  8    3 
 DECAY-DATA (78-PT-197-M,96.MIN,DG,346.,0.966)                     20071  8    4 
 SAMPLE      Metallic 78-Pt, natural isotopic composition, 99.99%. 20071  8    5 
@@ -225,16 +236,18 @@ CORRECTION  Dead time, background, efficiency of the detector,    20071  8   17
             relative gamma intensity (10%)                        20071  8   20 
             Influence of competing reactions on area of photopeak.20071  8   21 
 HISTORY    (19701101C)                                            20071  8   22 
-           (20190925U) SD: STATUS, DECAY-DATA added.              20071  8   23 
+           (20190925U) SD: DECAY-DATA added.                      20071  8   23 
            PART-DET deleted. HL(-ERR) values deleted.             20071  8   24 
-ENDBIB              22          0                                 20071  8   25 
-NOCOMMON             0          0                                 20071  8   26 
-DATA                 4          1                                 20071  8   27 
-DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  8   28 
-B          B          B          B                                20071  8   29 
-      0.894      0.101   1.115     0.002                          20071  8   30 
-ENDDATA              3          0                                 20071  8   31 
-ENDSUBENT           30          0                                 20071  899999 
+           (20211218A) SD: Data units and values corrected in     20071  8   25 
+           MONIT/ERR cols (1.115+-0.002 b -> 111.5+-2. mb)        20071  8   26 
+ENDBIB              24          0                                 20071  8   27 
+NOCOMMON             0          0                                 20071  8   28 
+DATA                 4          1                                 20071  8   29 
+DATA       DATA-ERR   MONIT      MONIT-ERR                        20071  8   30 
+B          B          MB         MB                               20071  8   31 
+      0.894      0.101   111.5        2.                          20071  8   32 
+ENDDATA              3          0                                 20071  8   33 
+ENDSUBENT           32          0                                 20071  899999 
 SUBENT        20071009   20190925                             228320071  9    1 
 BIB                  3          6                                 20071  9    2 
 REACTION   ((78-PT-198(N,2N)78-PT-197-M,,SIG)/                    20071  9    3 
