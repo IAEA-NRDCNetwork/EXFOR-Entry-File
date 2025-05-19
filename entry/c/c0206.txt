@@ -1,45 +1,52 @@
-ENTRY            C0206   19960422                             0000C020600000001 
-SUBENT        C0206001   19960422                             0000C020600100001 
-BIB                 12         21                                 C020600100002 
-INSTITUTE  (2UK LVP)                                              C020600100003 
-REFERENCE  (J,NP,18,628,60)                                       C020600100004 
-AUTHOR     (VASTUPAL PARIKH)                                      C020600100005 
-TITLE      Absolute cross-sections of C12(p,pn)C11                C020600100006 
-            from 288 to 383 MeV                                   C020600100007 
-FACILITY   (SYNCY)                                                C020600100008 
-INC-SOURCE The incident beam energy spread was about +- 3 MeV.    C020600100009 
-SAMPLE     Graphite thickness about 0.17-0.54 g/cm2.              C020600100010 
-           C13 impurity 1.1 %.                                    C020600100011 
-METHOD     (ACTIV,BCINT)                                          C020600100012 
-DETECTOR   (GEMUC)                                                C020600100013 
-CORRECTION Corrections of beam intensity variation,finite         C020600100014 
-           source size and absorption of proton in target         C020600100015 
-           were made. Correction due to C13 impurity was not made.C020600100016 
-ERR-ANALYS (DATA-ERR) Compounded error due to uncertainty in      C020600100017 
-            - efficiency calibration       (2.7%)                 C020600100018 
-            - monitoring proton flux       (1.3%)                 C020600100019 
-            - counting statistics for 11C.                        C020600100020 
-           (ERR-S) Statistical error in counting 11C.             C020600100021 
-HISTORY    (870317C)                                              C020600100022 
-           (960422A) Converted to lower case.                     C020600100023 
-ENDBIB              21          0                                 C020600100024 
-NOCOMMON             0          0                                 C020600100025 
-ENDSUBENT           24          0                                 C020600199999 
-SUBENT        C0206002   19960422                             0000C020600200001 
-BIB                  3          3                                 C020600200002 
-REACTION   (6-C-12(P,N+P)6-C-11,,SIG)                             C020600200003 
-DECAY-DATA (6-C-11,20.5MIN,AR,511.,1.00)                          C020600200004 
-HISTORY    (890111A) REACTION corrected.                          C020600200005 
-ENDBIB               3          0                                 C020600200006 
-NOCOMMON             0          0                                 C020600200007 
-DATA                 5          5                                 C020600200008 
-EN         EN-RSL     DATA       DATA-ERR   ERR-S                 C020600200009 
-MEV        MEV        MB         MB         PER-CENT              C020600200010 
- 288.       3.         33.7       1.2        2.2                  C020600200011 
- 313.       3.         34.8       1.1        1.3                  C020600200012 
- 339.       3.         34.9       1.0        1.4                  C020600200013 
- 362.       3.         32.4       1.0                             C020600200014 
- 383.       3.         31.6       1.0        1.1                  C020600200015 
-ENDDATA              7          0                                 C020600200016 
-ENDSUBENT           15          0                                 C020600299999 
+ENTRY            C0206   20210828                             C203C0206  0    1 
+SUBENT        C0206001   20210828                             C203C0206  1    1 
+BIB                 12         22                                 C0206  1    2 
+INSTITUTE  (2UK LVP)                                              C0206  1    3 
+REFERENCE  (J,NP,18,628,1960)                                     C0206  1    4 
+AUTHOR     (Vastupal Parikh)                                      C0206  1    5 
+TITLE      Absolute cross-sections of C12(p,pn)C11 from 288 to    C0206  1    6 
+           383 MeV                                                C0206  1    7 
+FACILITY   (SYNCY,2UK LVP)                                        C0206  1    8 
+INC-SOURCE The incident beam energy spread was about +- 3 MeV.    C0206  1    9 
+SAMPLE     Graphite thickness about 0.17-0.54 g/cm2.              C0206  1   10 
+           C13 impurity 1.1 %.                                    C0206  1   11 
+METHOD     (ACTIV,BCINT)                                          C0206  1   12 
+DETECTOR   (GEMUC)                                                C0206  1   13 
+CORRECTION Corrections of beam intensity variation,finite         C0206  1   14 
+           source size and absorption of proton in target         C0206  1   15 
+           were made. Correction due to C13 impurity was not made.C0206  1   16 
+ERR-ANALYS (ERR-T) Compounded error due to the following:         C0206  1   17 
+           (ERR-1) uncertainty in efficiency calibration (2.7%)   C0206  1   18 
+           (ERR-2) uncertainty in monitoring proton flux (1.3%)   C0206  1   19 
+           (ERR-S) Statistical error in counting 11C.             C0206  1   20 
+HISTORY    (19870317C)                                            C0206  1   21 
+           (19960422A) Converted to lower case.                   C0206  1   22 
+           (20210725A) OS. REACTION corrected, ERR-ANALYS updated,C0206  1   23 
+            STATUS added                                          C0206  1   24 
+ENDBIB              22          0                                 C0206  1   25 
+COMMON               2          3                                 C0206  1   26 
+ERR-1      ERR-2                                                  C0206  1   27 
+PER-CENT   PER-CENT                                               C0206  1   28 
+  2.7         1.3                                                 C0206  1   29 
+ENDCOMMON            3          0                                 C0206  1   30 
+ENDSUBENT           29          0                                 C0206  199999 
+SUBENT        C0206002   20210828                             C203C0206  2    1 
+BIB                  4          5                                 C0206  2    2 
+REACTION   (6-C-12(P,X)6-C-11,,SIG)                               C0206  2    3 
+DECAY-DATA (6-C-11,20.5MIN,AR,511.)                               C0206  2    4 
+STATUS     (TABLE) Table 2, Nucl.Phys.18,628,1960                 C0206  2    5 
+HISTORY    (19890111A) REACTION corrected.                        C0206  2    6 
+           (20210725A) REACTION SF3 changed to X                  C0206  2    7 
+ENDBIB               5          0                                 C0206  2    8 
+NOCOMMON             0          0                                 C0206  2    9 
+DATA                 5          5                                 C0206  2   10 
+EN         EN-RSL     DATA       ERR-T      ERR-S                 C0206  2   11 
+MEV        MEV        MB         MB         PER-CENT              C0206  2   12 
+ 288.       3.         33.7       1.2        2.2                  C0206  2   13 
+ 313.       3.         34.8       1.1        1.3                  C0206  2   14 
+ 339.       3.         34.9       1.0        1.4                  C0206  2   15 
+ 362.       3.         32.4       1.0                             C0206  2   16 
+ 383.       3.         31.6       1.0        1.1                  C0206  2   17 
+ENDDATA              7          0                                 C0206  2   18 
+ENDSUBENT           17          0                                 C0206  299999 
 ENDENTRY             2          0                                 C020699999999 

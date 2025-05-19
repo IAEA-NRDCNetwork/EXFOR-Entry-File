@@ -1,6 +1,6 @@
-ENTRY            C2498   20200310                             C192C2498  0    1 
-SUBENT        C2498001   20200310                             C192C2498  1    1 
-BIB                 10         28                                 C2498  1    2 
+ENTRY            C2498   20210828                             C203C2498  0    1 
+SUBENT        C2498001   20210828                             C203C2498  1    1 
+BIB                 10         29                                 C2498  1    2 
 TITLE      Mass and kinetic energy distributions in near-barrier  C2498  1    3 
            fission of 182W                                        C2498  1    4 
 AUTHOR     (B.D.Wilkins,B.B.Back,J.E.Gindler,B.G.Glagola,         C2498  1    5 
@@ -29,13 +29,14 @@ METHOD     (COINC) Double energy technique.                       C2498  1   18
            to heavy-element fission.                              C2498  1   28 
 ERR-ANALYS (ERR-S) Error bars include only statistics.            C2498  1   29 
 HISTORY    (20200310C) BP                                         C2498  1   30 
-ENDBIB              28          0                                 C2498  1   31 
-COMMON               1          3                                 C2498  1   32 
-EN                                                                C2498  1   33 
-MEV                                                               C2498  1   34 
-       49.2                                                       C2498  1   35 
-ENDCOMMON            3          0                                 C2498  1   36 
-ENDSUBENT           35          0                                 C2498  199999 
+           (20210723A) OS. Data table corrected in sub.3          C2498  1   31 
+ENDBIB              29          0                                 C2498  1   32 
+COMMON               1          3                                 C2498  1   33 
+EN                                                                C2498  1   34 
+MEV                                                               C2498  1   35 
+       49.2                                                       C2498  1   36 
+ENDCOMMON            3          0                                 C2498  1   37 
+ENDSUBENT           36          0                                 C2498  199999 
 SUBENT        C2498002   20200310                             C192C2498  2    1 
 BIB                  3          3                                 C2498  2    2 
 REACTION   (72-HF-178(A,F)MASS,PRE,FY,,REL)                       C2498  2    3 
@@ -73,29 +74,30 @@ NO-DIM     ARB-UNITS  ARB-UNITS                                   C2498  2   10
     115.0    2.952E+00  1.798E+00                                 C2498  2   35 
 ENDDATA             27          0                                 C2498  2   36 
 ENDSUBENT           35          0                                 C2498  299999 
-SUBENT        C2498003   20200310                             C192C2498  3    1 
-BIB                  3          4                                 C2498  3    2 
+SUBENT        C2498003   20210828                             C203C2498  3    1 
+BIB                  4          5                                 C2498  3    2 
 REACTION   (72-HF-178(A,F)MASS,PRE,AKE,LF+HF)                     C2498  3    3 
 MISC-COL   (MISC) Standard deviation in Ekin as a function of     C2498  3    4 
            heavy fragment mass, A, for fission of 182W.           C2498  3    5 
 STATUS     (CURVE) Fig. 3, page 1230.                             C2498  3    6 
-ENDBIB               4          0                                 C2498  3    7 
-NOCOMMON             0          0                                 C2498  3    8 
-DATA                 6         12                                 C2498  3    9 
-MASS       DATA       ERR-S      MASS       MISC       MISC-ERR   C2498  3   10 
-NO-DIM     MEV        MEV        NO-DIM     MEV        MEV        C2498  3   11 
-     91.0      126.599      0.700     91.060      9.288      0.560C2498  3   12 
-     93.0      126.261      0.609     93.020      8.832      0.379C2498  3   13 
-     95.0      126.471      0.640     94.991      9.300      0.394C2498  3   14 
-     97.0      127.199      0.579     97.075      9.571      0.439C2498  3   15 
-     99.0      127.104      0.640     98.978      9.221      0.333C2498  3   16 
-    101.0      126.096      0.731    100.949      9.689      0.652C2498  3   17 
-    103.0      127.342      0.853    103.033     10.006      0.636C2498  3   18 
-    105.0      126.029      0.944    105.001     10.217      0.788C2498  3   19 
-    107.0      127.427      1.066    107.005      8.473      0.667C2498  3   20 
-    109.0      123.526      1.219                                 C2498  3   21 
-    111.0      124.010      2.041    110.022      9.501      0.985C2498  3   22 
-    113.0      123.489      2.376    113.022      8.983      1.621C2498  3   23 
-ENDDATA             14          0                                 C2498  3   24 
-ENDSUBENT           23          0                                 C2498  399999 
+HISTORY    (20210723A) Redundant MASS column deleted              C2498  3    7 
+ENDBIB               5          0                                 C2498  3    8 
+NOCOMMON             0          0                                 C2498  3    9 
+DATA                 5         12                                 C2498  3   10 
+MASS       DATA       ERR-S      MISC       MISC-ERR              C2498  3   11 
+NO-DIM     MEV        MEV        MEV        MEV                   C2498  3   12 
+     91.       126.599      0.700      9.288      0.560           C2498  3   13 
+     93.       126.261      0.609      8.832      0.379           C2498  3   14 
+     95.       126.471      0.640      9.300      0.394           C2498  3   15 
+     97.       127.199      0.579      9.571      0.439           C2498  3   16 
+     99.       127.104      0.640      9.221      0.333           C2498  3   17 
+    101.       126.096      0.731      9.689      0.652           C2498  3   18 
+    103.       127.342      0.853     10.006      0.636           C2498  3   19 
+    105.       126.029      0.944     10.217      0.788           C2498  3   20 
+    107.       127.427      1.066      8.473      0.667           C2498  3   21 
+    109.       123.526      1.219                                 C2498  3   22 
+    111.       124.010      2.041      9.501      0.985           C2498  3   23 
+    113.       123.489      2.376      8.983      1.621           C2498  3   24 
+ENDDATA             14          0                                 C2498  3   25 
+ENDSUBENT           24          0                                 C2498  399999 
 ENDENTRY             3          0                                 C249899999999 

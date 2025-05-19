@@ -1,64 +1,79 @@
-ENTRY            C0216   19960422                             0000C021600000001 
-SUBENT        C0216001   19960422                             0000C021600100001 
-BIB                 11         17                                 C021600100002 
-INSTITUTE  (1USABNL)                                              C021600100003 
-REFERENCE  (J,PR,111,1386,58)                                     C021600100004 
-AUTHOR     (J.B.CUMMING,G.FRIEDLANDER,C.E.SWARTZ)                 C021600100005 
-TITLE      C-12(P,PN)C-11 CROSS SECTION AT 2 AND 3 BEV            C021600100006 
-FACILITY   (SYNCY)                                                C021600100007 
-SAMPLE     Cylindrical polystyrene-based plastic scintillators,   C021600100008 
-           1 inch thick and from 1 to 1.84 inches in diameter.    C021600100009 
-METHOD     (ACTIV)                                                C021600100010 
-DETECTOR   (SCIN,TELES) Proton flux was measured with a counter   C021600100011 
-           telescope.                                             C021600100012 
-CORRECTION Corrections for formation of C11 by secondary          C021600100013 
-           particles, for scattering and absorption effects and   C021600100014 
-           for deadtime losses were made.                         C021600100015 
-ERR-ANALYS Standard deviation 1.0% and systematic error 5% were   C021600100016 
-           estimated.                                             C021600100017 
-HISTORY    (870408C)                                              C021600100018 
-           (960422A) Converted to lower case.                     C021600100019 
-ENDBIB              17          0                                 C021600100020 
-NOCOMMON             0          0                                 C021600100021 
-ENDSUBENT           20          0                                 C021600199999 
-SUBENT        C0216002   19960422                             0000C021600200001 
-BIB                  5          7                                 C021600200002 
-REACTION   (6-C-12(P,N+P)6-C-11,,SIG)                             C021600200003 
-DECAY-DATA (6-C-11,20.4MIN,B+,970.,1.0)                           C021600200004 
-FLAG       (1.) Scintillator diameter in 1.0 in..                 C021600200005 
-           (2.) Scintillator diameter in 1.84 in..                C021600200006 
-           (3.) Scintillator diameter in 1.5 in.,                 C021600200007 
-CORRECTION Corrected from thick target cross sections.            C021600200008 
-HISTORY    (960422A) REACTION corrected.                          C021600200009 
-ENDBIB               7          0                                 C021600200010 
-NOCOMMON             0          0                                 C021600200011 
-DATA                 4          6                                 C021600200012 
-EN         DATA       DATA-ERR   FLAG                             C021600200013 
-GEV        MB         MB         NO-DIM                           C021600200014 
- 2.0        27.6       1.9       1.                               C021600200015 
- 2.0        25.9       0.5       2.                               C021600200016 
- 2.6        26.0       1.6       1.                               C021600200017 
- 3.0        25.8       1.1       1.                               C021600200018 
- 3.0        26.1       1.3       2.                               C021600200019 
- 3.0        27.2       0.7       3.                               C021600200020 
-ENDDATA              8          0                                 C021600200021 
-ENDSUBENT           20          0                                 C021600299999 
-SUBENT        C0216003   19890111                             0000C021600300001 
-BIB                  5          7                                 C021600300002 
-REACTION   (13-AL-27(P,N+3P)11-NA-24,,SIG)                        C021600300003 
-ANALYSIS   From previously measured values of 12C(p,pn)11C/       C021600300004 
-            27Al(p,3pn)24Na of Wolfgang+, Phys.Rev.,96,190 (1954).C021600300005 
-MONITOR    (6-C-12(P,N+P)6-C-11,UND,SIG)                          C021600300006 
-STATUS     (DEP,C0216002)                                         C021600300007 
-           (DEP,C0214002)                                         C021600300008 
-HISTORY    (960422A) REACTION, MONITOR corrected.                 C021600300009 
-ENDBIB               7          0                                 C021600300010 
-NOCOMMON             0          0                                 C021600300011 
-DATA                 5          2                                 C021600300012 
-EN         DATA       DATA-ERR   MONIT      MONIT-ERR             C021600300013 
-GEV        MB         MB         MB         MB                    C021600300014 
- 2.0        10.4       0.6        26.0       0.9                  C021600300015 
- 3.0        10.0       0.6        26.6       1.0                  C021600300016 
-ENDDATA              4          0                                 C021600300017 
-ENDSUBENT           16          0                                 C021600399999 
+ENTRY            C0216   20210828                             C203C0216  0    1 
+SUBENT        C0216001   20210828                             C203C0216  1    1 
+BIB                 10         17                                 C0216  1    2 
+INSTITUTE  (1USABNL)                                              C0216  1    3 
+REFERENCE  (J,PR,111,1386,1958)                                   C0216  1    4 
+AUTHOR     (J.B.Cumming,G.Friedlander,C.E.Swartz)                 C0216  1    5 
+TITLE      C-12(p,pn)C-11 Cross Section at 2 and 3 BeV            C0216  1    6 
+FACILITY   (SYNCY,1USABNL)                                        C0216  1    7 
+SAMPLE     Cylindrical polystyrene-based plastic scintillators,   C0216  1    8 
+           1 inch thick and from 1 to 1.84 inches in diameter.    C0216  1    9 
+METHOD     (ACTIV)                                                C0216  1   10 
+DETECTOR   (SCIN,TELES) Proton flux was measured with a counter   C0216  1   11 
+           telescope.                                             C0216  1   12 
+CORRECTION Corrections for formation of C11 by secondary          C0216  1   13 
+           particles, for scattering and absorption effects and   C0216  1   14 
+           for deadtime losses were made.                         C0216  1   15 
+HISTORY    (19870408C)                                            C0216  1   16 
+           (19960422A) Converted to lower case.                   C0216  1   17 
+           (20210715A) OS. REACTIONs corrected, ERR-ANALYS and    C0216  1   18 
+            STATUS updated                                        C0216  1   19 
+ENDBIB              17          0                                 C0216  1   20 
+NOCOMMON             0          0                                 C0216  1   21 
+ENDSUBENT           20          0                                 C0216  199999 
+SUBENT        C0216002   20210828                             C203C0216  2    1 
+BIB                  7         13                                 C0216  2    2 
+REACTION   (6-C-12(P,X)6-C-11,,SIG)                               C0216  2    3 
+DECAY-DATA (6-C-11,20.4MIN,B+,970.,1.0)                           C0216  2    4 
+FLAG       (1.) Scintillator diameter in 1.0 in..                 C0216  2    5 
+           (2.) Scintillator diameter in 1.84 in..                C0216  2    6 
+           (3.) Scintillator diameter in 1.5 in.,                 C0216  2    7 
+CORRECTION Corrected from thick target cross sections.            C0216  2    8 
+ERR-ANALYS (DATA-ERR) Root-mean square combination of error of    C0216  2    9 
+           thick target cross section and of ratio thick/thin     C0216  2   10 
+           target cross section                                   C0216  2   11 
+           (ERR-SYS) Systematic error 5%                          C0216  2   12 
+STATUS     (TABLE) Table II, Phys.Rev.111,1386,1958               C0216  2   13 
+HISTORY    (19960422A) REACTION corrected.                        C0216  2   14 
+           (20210715A) REACTION SF3 changed to X                  C0216  2   15 
+ENDBIB              13          0                                 C0216  2   16 
+COMMON               1          3                                 C0216  2   17 
+ERR-SYS                                                           C0216  2   18 
+PER-CENT                                                          C0216  2   19 
+  5.                                                              C0216  2   20 
+ENDCOMMON            3          0                                 C0216  2   21 
+DATA                 4          6                                 C0216  2   22 
+EN         DATA       DATA-ERR   FLAG                             C0216  2   23 
+GEV        MB         MB         NO-DIM                           C0216  2   24 
+ 2.0        27.6       1.9       1.                               C0216  2   25 
+ 2.0        25.9       0.5       2.                               C0216  2   26 
+ 2.6        26.0       1.6       1.                               C0216  2   27 
+ 3.0        25.8       1.1       1.                               C0216  2   28 
+ 3.0        26.1       1.3       2.                               C0216  2   29 
+ 3.0        27.2       0.7       3.                               C0216  2   30 
+ENDDATA              8          0                                 C0216  2   31 
+ENDSUBENT           30          0                                 C0216  299999 
+SUBENT        C0216003   20210828                             C203C0216  3    1 
+BIB                  7         12                                 C0216  3    2 
+REACTION   (13-AL-27(P,X)11-NA-24,,SIG)                           C0216  3    3 
+ANALYSIS   From previously measured values of 12C(p,pn)11C/       C0216  3    4 
+            27Al(p,3pn)24Na of Wolfgang+, Phys.Rev.,96,190 (1954).C0216  3    5 
+REL-REF    (R,C0214002,R.L.Wolfgang+,J,PR,96,190,1954)            C0216  3    6 
+MONITOR    (6-C-12(P,X)6-C-11,,SIG)                               C0216  3    7 
+ERR-ANALYS (DATA-ERR) Source of uncertainty not given             C0216  3    8 
+STATUS     (DEP,C0216002)                                         C0216  3    9 
+           (DEP,C0214002)                                         C0216  3   10 
+           (TABLE) Text p.1394, Phys.Rev.111,1386,1958            C0216  3   11 
+HISTORY    (19960422A) REACTION, MONITOR corrected.               C0216  3   12 
+           (20210715A) REACTION and MONITOR SF3 changed to X,     C0216  3   13 
+            STATUS updated, REL-REF added                         C0216  3   14 
+ENDBIB              12          0                                 C0216  3   15 
+NOCOMMON             0          0                                 C0216  3   16 
+DATA                 5          2                                 C0216  3   17 
+EN         DATA       DATA-ERR   MONIT      MONIT-ERR             C0216  3   18 
+GEV        MB         MB         MB         MB                    C0216  3   19 
+ 2.0        10.4       0.6        26.0       0.9                  C0216  3   20 
+ 3.0        10.0       0.6        26.6       1.0                  C0216  3   21 
+ENDDATA              4          0                                 C0216  3   22 
+ENDSUBENT           21          0                                 C0216  399999 
 ENDENTRY             3          0                                 C021699999999 
