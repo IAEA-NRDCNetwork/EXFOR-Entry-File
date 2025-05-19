@@ -1,6 +1,6 @@
-ENTRY            D4397   20190329                             D120D439700000001 
-SUBENT        D4397001   20190329                             D120D439700100001 
-BIB                 13         43                                 D439700100002 
+ENTRY            D4397   20250331                             D147D439700000001 
+SUBENT        D4397001   20250331                             D147D439700100001 
+BIB                 13         45                                 D439700100002 
 TITLE      Activation cross sections of deuteron induced reactionsD439700100003 
            on natHf in the 12-50 MeV energy range                 D439700100004 
 AUTHOR     (F.Tarkanyi,A.Hermanne,F.Ditroi,S.Takacs,A.V.Ignatyuk) D439700100005 
@@ -15,7 +15,7 @@ DETECTOR   (HPGE)                                                 D439700100013
 FACILITY   (CYCLO,2BLGLVN)                                        D439700100014 
 METHOD     (STTA,ACTIV,EXTB,GSPEC)                                D439700100015 
            One stack consisted of thin foils of                   D439700100016 
-           Hf, Al, Pt, and CuMnNi aloy                            D439700100017 
+           Hf, Al, Pt, and CuMnNi alloy                           D439700100017 
            targets repeated 25 times was bombarded for 3600 s     D439700100018 
            with a 50 MeV deuteron beam of 100 nA.                 D439700100019 
 MONITOR    (13-AL-27(D,X)11-NA-24,,SIG)                           D439700100020 
@@ -44,13 +44,15 @@ ADD-RES    (THEO) The experimental data were compared to the      D439700100038
            (COMP) The measured experimental data were compared to D439700100043 
            those found in the literature.                         D439700100044 
 HISTORY    (20190329C) ts                                         D439700100045 
-ENDBIB              43          0                                 D439700100046 
-COMMON               4          3                                 D439700100047 
-ERR-1      ERR-2      ERR-3      ERR-4                            D439700100048 
-PER-CENT   PER-CENT   PER-CENT   PER-CENT                         D439700100049 
-         5.         7.         5.         5.                      D439700100050 
-ENDCOMMON            3          0                                 D439700100051 
-ENDSUBENT           50          0                                 D439700199999 
+           (20250331A) ts. ERR-T value at 22.4 MeV was corrected  D439700100046 
+           in subentry 014.  ERR-T:    0.0 -> 0.02                D439700100047 
+ENDBIB              45          0                                 D439700100048 
+COMMON               4          3                                 D439700100049 
+ERR-1      ERR-2      ERR-3      ERR-4                            D439700100050 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         D439700100051 
+         5.         7.         5.         5.                      D439700100052 
+ENDCOMMON            3          0                                 D439700100053 
+ENDSUBENT           52          0                                 D439700199999 
 SUBENT        D4397002   20190329                             D120D439700200001 
 BIB                  3          6                                 D439700200002 
 REACTION   (72-HF-0(D,X)73-TA-178-G,,SIG)                         D439700200003 
@@ -441,8 +443,8 @@ MEV        MEV        MB         MB                               D439701300012
       16.5      1.5        7.3       0.9                          D439701300030 
 ENDDATA             20          0                                 D439701300031 
 ENDSUBENT           30          0                                 D439701399999 
-SUBENT        D4397014   20190329                             D120D439701400001 
-BIB                  3          9                                 D439701400002 
+SUBENT        D4397014   20250331                             D147D439701400001 
+BIB                  4         11                                 D439701400002 
 REACTION   (72-HF-0(P,X)71-LU-172,CUM,SIG)                        D439701400003 
             Including possible production from decay of 172mLu    D439701400004 
             and 172Hf.                                            D439701400005 
@@ -451,26 +453,28 @@ DECAY-DATA (71-LU-172-G,6.7D,DG,181.525,0.206,                    D439701400006
                              DG,900.724,0.298,                    D439701400008 
                              DG,912.079,0.153,                    D439701400009 
                              DG,1093.63,0.63)                     D439701400010 
-STATUS     (TABLE)Data were taken from Table 4. of the main ref.  D439701400011 
-ENDBIB               9          0                                 D439701400012 
-NOCOMMON             0          0                                 D439701400013 
-DATA                 4         12                                 D439701400014 
-EN         EN-ERR     DATA       ERR-T                            D439701400015 
-MEV        MEV        MB         MB                               D439701400016 
-      49.2      0.3      5.9      0.7                             D439701400017 
-      47.1      0.3      5.5      0.7                             D439701400018 
-      45.0      0.4      5.7      0.7                             D439701400019 
-      42.8      0.4      5.2      0.6                             D439701400020 
-      40.5      0.4      3.4      0.4                             D439701400021 
-      38.1      0.5      1.9      0.2                             D439701400022 
-      33.2      0.6      1.3      0.2                             D439701400023 
-      31.8      0.6      0.9      0.1                             D439701400024 
-      30.4      0.7      0.9      0.1                             D439701400025 
-      28.9      0.8      0.4      0.1                             D439701400026 
-      27.4      0.9      0.4      0.1                             D439701400027 
-      22.4      1.1      0.1      0.0                             D439701400028 
-ENDDATA             14          0                                 D439701400029 
-ENDSUBENT           28          0                                 D439701499999 
+STATUS     (TABLE,,F.Tarkanyi+,J,NIM/B,441,93,2019) Table 4       D439701400011 
+HISTORY    (20250331A) ts. ERR-T value at 22.4 MeV was corrected. D439701400012 
+                               0.0 -> 0.02                        D439701400013 
+ENDBIB              11          0                                 D439701400014 
+NOCOMMON             0          0                                 D439701400015 
+DATA                 4         12                                 D439701400016 
+EN         EN-ERR     DATA       ERR-T                            D439701400017 
+MEV        MEV        MB         MB                               D439701400018 
+      49.2      0.3      5.9      0.7                             D439701400019 
+      47.1      0.3      5.5      0.7                             D439701400020 
+      45.0      0.4      5.7      0.7                             D439701400021 
+      42.8      0.4      5.2      0.6                             D439701400022 
+      40.5      0.4      3.4      0.4                             D439701400023 
+      38.1      0.5      1.9      0.2                             D439701400024 
+      33.2      0.6      1.3      0.2                             D439701400025 
+      31.8      0.6      0.9      0.1                             D439701400026 
+      30.4      0.7      0.9      0.1                             D439701400027 
+      28.9      0.8      0.4      0.1                             D439701400028 
+      27.4      0.9      0.4      0.1                             D439701400029 
+      22.4      1.1      0.1      0.02                            D439701400030 
+ENDDATA             14          0                                 D439701400031 
+ENDSUBENT           30          0                                 D439701499999 
 SUBENT        D4397015   20190329                             D120D439701500001 
 BIB                  3          8                                 D439701500002 
 REACTION   (72-HF-0(P,X)71-LU-171,CUM,SIG)                        D439701500003 
