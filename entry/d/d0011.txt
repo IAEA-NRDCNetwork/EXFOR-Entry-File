@@ -1,79 +1,155 @@
-ENTRY            D0011   20060724                             D048D001100000001 
-SUBENT        D0011001   20060724                             D048D001100100001 
-BIB                 11         19                                 D001100100002 
-TITLE      Absolute cross sections of the T(d,n)He-4 reaction for D001100100003 
-           7.0 to 21.0 MeV deuterons.                             D001100100004 
-AUTHOR     (J.E.Simmons,J.J.Malanify)                             D001100100005 
+ENTRY            D0011   20200511                             D127D001100000001 
+SUBENT        D0011001   20200511                             D127D001100100001 
+BIB                 13         22                                 D001100100002 
+TITLE      Absolute cross sections of the T(d,n)4He reaction for  D001100100003 
+            7.0 to 21.0-MeV deuterons                             D001100100004 
+AUTHOR     (J.E.Simmons, J.J.Malanify)                            D001100100005 
 INSTITUTE  (1USALAS)                                              D001100100006 
-REFERENCE  (J,BAP,13,(AG4),564,1968) abstract only.               D001100100007 
-SAMPLE     Tritium gas at a pressure of 3.8 atm in a thin-walled  D001100100008 
-           cell.                                                  D001100100009 
-MONITOR    (1-H-1(N,EL)1-H-1,,DA)                                 D001100100010 
-           reference is not given.                                D001100100011 
-FACILITY   (VDGT,1USALAS)                                         D001100100012 
-METHOD     (ASSOP)                                                D001100100013 
-           monoenergetic neutrons from the T(d,n)He-4 reaction    D001100100014 
-           were detected by a proton recoil spectrometer.         D001100100015 
-DETECTOR   (TELES,SOLST,NAICR)                                    D001100100016 
-           SSD as the dE/dx passing counter.                      D001100100017 
-           NaI(Tl) scintillator as stopping counter.              D001100100018 
-PART-DET   (N)                                                    D001100100019 
-HISTORY    (19790216C) KO.                                        D001100100020 
-           (20060724A) SD. BIB upgrated.                          D001100100021 
-ENDBIB              19          0                                 D001100100022 
-NOCOMMON             0          0                                 D001100100023 
-ENDSUBENT           22          0                                 D001100199999 
-SUBENT        D0011002   20060724                             D048D001100200001 
-BIB                  4         10                                 D001100200002 
+REFERENCE  (J,BAP,13,564(AG4),1968) abstract only                 D001100100007 
+SAMPLE     Tritium gas (3.8 atm) in a thin-walled cell            D001100100008 
+MONITOR    (1-H-1(N,EL)1-H-1,,DA)                                 D001100100009 
+FACILITY   (VDGT,1USALAS)                                         D001100100010 
+DETECTOR   (TELES,SOLST,NAICR)                                    D001100100011 
+            SSD dE/dx counter + NaI(Tl) stopping counter          D001100100012 
+PART-DET   (N)                                                    D001100100013 
+CRITIQUE   By Manfred Drosg (2020-05-11):                         D001100100014 
+            These data are based on Gammel's estimate of the np   D001100100015 
+           cross section, making them low. Besides the forward    D001100100016 
+           angles probably suffer from too high a background due  D001100100017 
+           to suspected water-spray cooling distorting the        D001100100018 
+           angular distributions.                                 D001100100019 
+ERR-ANALYS (ERR-1) Absolute uncertainty in cross section (8%)     D001100100020 
+STATUS     (TABLE) Data received from Manfred Drosg.              D001100100021 
+HISTORY    (19790216C) KO.                                        D001100100022 
+           (20060724A) SD. BIB upgraded.                          D001100100023 
+           (20200511A) On. Major revisions in 002-003.            D001100100024 
+ENDBIB              22          0                                 D001100100025 
+COMMON               1          3                                 D001100100026 
+ERR-1                                                             D001100100027 
+PER-CENT                                                          D001100100028 
+ 8.                                                               D001100100029 
+ENDCOMMON            3          0                                 D001100100030 
+ENDSUBENT           29          0                                 D001100199999 
+SUBENT        D0011002   20200511                             D127D001100200001 
+BIB                  5          6                                 D001100200002 
 REACTION   (1-H-3(D,N)2-HE-4,,DA)                                 D001100200003 
-ERR-ANALYS absolute uncertainties in the cross-section results areD001100200004 
-           +-8 percent.                                           D001100200005 
-COMMENT    .absolute 0deg.differential cross-section at deuteron  D001100200006 
-           energies of 7.0, 11.4, 15.0 and 19.0 MeV.              D001100200007 
-           .relative angular distributions at these energies.     D001100200008 
-           .the relative 0 deg.cross-section in 1.0MeV step5 from D001100200009 
-           7.0 to 21.0 MeV.                                       D001100200010 
-STATUS     (UNOBT) no data given in the reference. (no request    D001100200011 
-           sent to the author)                                    D001100200012 
-ENDBIB              10          0                                 D001100200013 
-NOCOMMON             0          0                                 D001100200014 
-NODATA               0          0                                 D001100200015 
-ENDSUBENT           14          0                                 D001100299999 
-SUBENT        D0011003   20060724                             D048D001100300001 
-BIB                  7         11                                 D001100300002 
+MISC-COL   (MISC) Angle in the laboratory system                  D001100200004 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty D001100200005 
+STATUS     (DEP,D0011003) Absolute measurement at 0 deg.          D001100200006 
+HISTORY    (20200511R) On. Data received from Manfred Drosg.      D001100200007 
+           (20200511A) On. Data inserted.                         D001100200008 
+ENDBIB               6          0                                 D001100200009 
+NOCOMMON             0          0                                 D001100200010 
+DATA                 5         69                                 D001100200011 
+EN         ANG-CM     DATA-CM    DATA-ERR   MISC                  D001100200012 
+MEV        ADEG       MB/SR      MB/SR      ADEG                  D001100200013 
+  7.          2.37     17.94                   2.0                D001100200014 
+  7.          6.03     17.74                   5.1                D001100200015 
+  7.         12.17     15.77                  10.3                D001100200016 
+  7.         18.18     12.83                  15.4                D001100200017 
+  7.         24.29     10.18                  20.6                D001100200018 
+  7.         30.25      8.03                  25.7                D001100200019 
+  7.         36.29      6.42                  30.9                D001100200020 
+  7.         42.17      5.60                  36.0                D001100200021 
+  7.         48.00      5.57                  41.1                D001100200022 
+  7.         59.61      5.96                  51.4                D001100200023 
+  7.         70.95      5.94                  61.7                D001100200024 
+  7.         81.99      5.02                  72.0                D001100200025 
+  7.         92.71      4.14                  82.3                D001100200026 
+  7.        103.09      3.33                  92.6                D001100200027 
+  7.        113.13      3.63                 102.9                D001100200028 
+  7.        122.74      4.33                 113.1                D001100200029 
+  7.        132.14      5.04                 123.4                D001100200030 
+  7.        141.26      6.11                 133.7                D001100200031 
+  7.        150.14      6.56                 144.0                D001100200032 
+  7.        158.82      6.93                 154.3                D001100200033 
+  7.        163.07      6.78                 159.4                D001100200034 
+ 11.4         2.44     15.6                    2.0                D001100200035 
+ 11.4         6.23     14.55                   5.1                D001100200036 
+ 11.4        12.57     12.4                   10.3                D001100200037 
+ 11.4        18.77      8.78                  15.4                D001100200038 
+ 11.4        25.06      5.41                  20.6                D001100200039 
+ 11.4        31.20      3.57                  25.7                D001100200040 
+ 11.4        37.42      2.65                  30.9                D001100200041 
+ 11.4        49.45      3.46                  41.1                D001100200042 
+ 11.4        61.33      5.07                  51.4                D001100200043 
+ 11.4        72.90      4.91                  61.7                D001100200044 
+ 11.4        84.10      3.74                  72.0                D001100200045 
+ 11.4        94.90      2.17                  82.3                D001100200046 
+ 11.4       105.29      1.81                  92.6                D001100200047 
+ 11.4       115.27      2.34                 102.9                D001100200048 
+ 11.4       124.76      3.12                 113.1                D001100200049 
+ 11.4       142.83      4.83                 133.7                D001100200050 
+ 11.4       159.76      6.79                 154.3                D001100200051 
+ 15.          2.49     15.65                   2.0                D001100200052 
+ 15.          6.34     14.88                   5.1                D001100200053 
+ 15.         12.80     11.66                  10.3                D001100200054 
+ 15.         19.11      7.86                  15.4                D001100200055 
+ 15.         25.52      4.60                  20.6                D001100200056 
+ 15.         31.76      2.39                  25.7                D001100200057 
+ 15.         38.08      1.86                  30.9                D001100200058 
+ 15.         44.23      2.63                  36.0                D001100200059 
+ 15.         50.30      3.52                  41.1                D001100200060 
+ 15.         62.35      5.20                  51.4                D001100200061 
+ 15.         74.05      4.29                  61.7                D001100200062 
+ 15.         85.34      2.81                  72.0                D001100200063 
+ 15.        106.60      1.51                  92.6                D001100200064 
+ 15.        125.95      2.85                 113.1                D001100200065 
+ 15.        143.75      2.71                 133.7                D001100200066 
+ 19.          2.53     15.67     1.16          2.0                D001100200067 
+ 19.          6.44     15.13     1.12          5.1                D001100200068 
+ 19.         13.       10.87     0.805        10.3                D001100200069 
+ 19.         19.41      7.09     0.525        15.4                D001100200070 
+ 19.         25.92      3.62     0.268        20.6                D001100200071 
+ 19.         32.25      1.81     0.134        25.7                D001100200072 
+ 19.         38.67      1.59     0.118        30.9                D001100200073 
+ 19.         44.89      2.33     0.172        36.0                D001100200074 
+ 19.         51.05      3.52     0.261        41.1                D001100200075 
+ 19.         63.24      4.68     0.347        51.4                D001100200076 
+ 19.         75.05      3.74     0.277        61.7                D001100200077 
+ 19.         86.43      1.84     0.136        72.0                D001100200078 
+ 19.         97.33      0.98     0.122        82.3                D001100200079 
+ 19.        107.73      1.43     0.106        92.6                D001100200080 
+ 19.        117.64      2.65     0.196       102.9                D001100200081 
+ 19.        135.97      2.93     0.217       123.4                D001100200082 
+ENDDATA             71          0                                 D001100200083 
+ENDSUBENT           82          0                                 D001100299999 
+SUBENT        D0011003   20200511                             D127D001100300001 
+BIB                  4          9                                 D001100300002 
 REACTION   (1-H-3(D,N)2-HE-4,,DA)                                 D001100300003 
-            0 deg.cross-section                                   D001100300004 
-REL-REF    (R,D0004001,M.DROSG,J,NSE,67,190,197808) renorm.data.  D001100300005 
-MONITOR    (1-H-1(N,EL)1-H-1,,DA,,,EVAL) for renormalization.     D001100300006 
-MONIT-REF  (,J.C.HOPKINS+,J,ND/A,9,137,1971)                      D001100300007 
-           (,J.C.HOPKINS,W,HOPKINS,1975) to M.Drosg.              D001100300008 
-ANALYSIS   the original results were corrected for (n,p)cross-    D001100300009 
-           sections and adjusted in scale.                        D001100300010 
-ERR-ANALYS (DATA-ERR1) scale error.                               D001100300011 
-STATUS     Data renormalized by M.Drosg, table X of Nucl.Sci.Eng. D001100300012 
-           67(1978)190.                                           D001100300013 
-ENDBIB              11          0                                 D001100300014 
-COMMON               2          3                                 D001100300015 
-ANG        DATA-ERR1                                              D001100300016 
-ADEG       PER-CENT                                               D001100300017 
-0.         1.5                                                    D001100300018 
-ENDCOMMON            3          0                                 D001100300019 
-DATA                 2         13                                 D001100300020 
-EN         DATA                                                   D001100300021 
-MEV        MB/SR                                                  D001100300022 
- 7.00      27.2                                                   D001100300023 
- 8.00      25.4                                                   D001100300024 
- 9.00      25.8                                                   D001100300025 
-10.00      25.1                                                   D001100300026 
-11.00      25.2                                                   D001100300027 
-11.40      25.0                                                   D001100300028 
-12.00      26.8                                                   D001100300029 
-13.00      25.7                                                   D001100300030 
-14.00      25.4                                                   D001100300031 
-15.00      25.8                                                   D001100300032 
-16.00      26.2                                                   D001100300033 
-17.00      26.9                                                   D001100300034 
-19.00      26.4                                                   D001100300035 
-ENDDATA             15          0                                 D001100300036 
-ENDSUBENT           35          0                                 D001100399999 
+REL-REF    (N,D0004001,M.Drosg,J,NSE,67,190,1978)                 D001100300004 
+            Data renormalized with Hopkins's n-p scattering cross D001100300005 
+            sections and adjusted in scale are in Table X of this D001100300006 
+            article.                                              D001100300007 
+FLAG       (1.) Absolute measurement                              D001100300008 
+           (2.) Relative measurement                              D001100300009 
+HISTORY    (20200511R) On. Data received from Manfred Drosg.      D001100300010 
+           (20200511A) On. Original data replaced renormalized oneD001100300011 
+ENDBIB               9          0                                 D001100300012 
+COMMON               1          3                                 D001100300013 
+ANG-CM                                                            D001100300014 
+ADEG                                                              D001100300015 
+ 0.                                                               D001100300016 
+ENDCOMMON            3          0                                 D001100300017 
+DATA                 3         16                                 D001100300018 
+EN         DATA-CM    FLAG                                        D001100300019 
+MEV        MB/SR      NO-DIM                                      D001100300020 
+  7.0       17.9       1.                                         D001100300021 
+  8.0       16.3       2.                                         D001100300022 
+  9.0       16.2       2.                                         D001100300023 
+ 10.        15.6       2.                                         D001100300024 
+ 11.        15.55      2.                                         D001100300025 
+ 11.4       15.4       1.                                         D001100300026 
+ 12.        16.7       2.                                         D001100300027 
+ 13.        15.7       2.                                         D001100300028 
+ 14.        15.4       2.                                         D001100300029 
+ 15.        15.3       1.                                         D001100300030 
+ 16.        15.5       2.                                         D001100300031 
+ 17.        16.0       2.                                         D001100300032 
+ 18.        15.7       2.                                         D001100300033 
+ 19.        15.5       1.                                         D001100300034 
+ 20.        15.7       2.                                         D001100300035 
+ 21.        15.5       2.                                         D001100300036 
+ENDDATA             18          0                                 D001100300037 
+ENDSUBENT           36          0                                 D001100399999 
 ENDENTRY             3          0                                 D001199999999 
