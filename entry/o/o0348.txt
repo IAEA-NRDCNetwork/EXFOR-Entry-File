@@ -1,5 +1,5 @@
-ENTRY            O0348   20151202                             O056O0348  0    1 
-SUBENT        O0348001   20151202                             O056O0348  1    1 
+ENTRY            O0348   20190306                             O068O0348  0    1 
+SUBENT        O0348001   20190306                             O068O0348  1    1 
 BIB                 15         54                                 O0348  1    2 
 TITLE      Precision determination of charge dispersion and       O0348  1    3 
            distribution in the proton-induced fission of U-238    O0348  1    4 
@@ -43,18 +43,18 @@ METHOD     (STTA). For products with half-life longer 10 min.     O0348  1   35
            (JET).  For the measurement of products of the half-   O0348  1   42 
            life shorter than 30 min down to seconds.              O0348  1   43 
 ANALYSIS   (DECAY) For short-lived isotopes.                      O0348  1   44 
-ERR-ANALYS (DATA-ERR) No information on source of uncertainties   O0348  1   45 
-           due to statistical errors in counting the gamma-ray    O0348  1   46 
-           emission and expected errors in the photoemission      O0348  1   47 
-           probability.                                           O0348  1   48 
-STATUS     (TABLE) Tbl. 1 from ZP/A,356,55,1996                   O0348  1   49 
-HISTORY    (19970603C)                                            O0348  1   50 
-           (19970620A) Correction some data.                      O0348  1   51 
-           (19970620U) Last checking has been done.               O0348  1   52 
-           (20151202A) SD: Cosmetic changes in all Subents (four  O0348  1   53 
-           digits year; SF9=EXP deleted from all REACTION codes,  O0348  1   54 
-           etc). DECAY-DATA corrected in Subents 047, 096.        O0348  1   55 
-           ERR-T -> DATA-ERR in Subents 002 - 118. E-EXC deleted. O0348  1   56 
+ERR-ANALYS (DATA-ERR) Due to statistical errors in counting the   O0348  1   45 
+           gamma-ray emission and expected errors in the          O0348  1   46 
+           photoemission probability.                             O0348  1   47 
+STATUS     (TABLE) Tbl. 1 from Zeitsch.Phys. A356(1996)55         O0348  1   48 
+HISTORY    (19970603C)                                            O0348  1   49 
+           (19970620A) Correction some data.                      O0348  1   50 
+           (19970620U) Last checking has been done.               O0348  1   51 
+           (20151202A) SD: Cosmetic changes in all Subents (four  O0348  1   52 
+           digits year; SF9=EXP deleted from all REACTION codes,  O0348  1   53 
+           etc). DECAY-DATA corrected in Subents 047, 096.        O0348  1   54 
+           ERR-T -> DATA-ERR in Subents 002 - 118. E-EXC deleted. O0348  1   55 
+           (20190306U) SD: Comment to Subent 118 added.           O0348  1   56 
 ENDBIB              54          0                                 O0348  1   57 
 NOCOMMON             0          0                                 O0348  1   58 
 ENDSUBENT           57          0                                 O0348  199999 
@@ -1668,17 +1668,20 @@ MEV        MB         MB                                          O0348117   10
         8.6      0.054      0.012                                 O0348117   11 
 ENDDATA              3          0                                 O0348117   12 
 ENDSUBENT           11          0                                 O034811799999 
-SUBENT        O0348118   20151202                             O056O0348118    1 
-BIB                  3          3                                 O0348118    2 
-REACTION   (92-U-238(P,N)93-NP-238,IND,SIG)                       O0348118    3 
-RAD-DET    (93-NP-238,DG)                                         O0348118    4 
-DECAY-DATA (93-NP-238,2.12D)                                      O0348118    5 
-ENDBIB               3          0                                 O0348118    6 
-NOCOMMON             0          0                                 O0348118    7 
-DATA                 3          1                                 O0348118    8 
-EN         DATA       DATA-ERR                                    O0348118    9 
-MEV        MB         MB                                          O0348118   10 
-        8.6       1.28       0.06                                 O0348118   11 
-ENDDATA              3          0                                 O0348118   12 
-ENDSUBENT           11          0                                 O034811899999 
+SUBENT        O0348118   20190306                             O068O0348118    1 
+BIB                  4          6                                 O0348118    2 
+REACTION   (92-U-238(P,N)93-NP-238,,SIG)                          O0348118    3 
+DECAY-DATA (93-NP-238,2.12D,DG)                                   O0348118    4 
+COMMENT    A.Yokoyama (2019-02-13): Printed as cumulative but it  O0348118    5 
+            is independent.                                       O0348118    6 
+HISTORY    (20190306U) SD: Comment from Dr.A.Yokoyama added.      O0348118    7 
+           RAD-DET deleted. SF5=IND deleted from REACTION code.   O0348118    8 
+ENDBIB               6          0                                 O0348118    9 
+NOCOMMON             0          0                                 O0348118   10 
+DATA                 3          1                                 O0348118   11 
+EN         DATA       DATA-ERR                                    O0348118   12 
+MEV        MB         MB                                          O0348118   13 
+        8.6       1.28       0.06                                 O0348118   14 
+ENDDATA              3          0                                 O0348118   15 
+ENDSUBENT           14          0                                 O034811899999 
 ENDENTRY           118          0                                 O034899999999 
