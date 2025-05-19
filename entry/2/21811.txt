@@ -1,9 +1,9 @@
-ENTRY            21811   20190722                             22812181100000001 
-SUBENT        21811001   20190722                             22812181100100001 
-BIB                 10         25                                 2181100100002 
+ENTRY            21811   20210317                             23022181100000001 
+SUBENT        21811001   20210317                             23022181100100001 
+BIB                 10         26                                 2181100100002 
 TITLE      The 241Pu(n,f) cross-section and its normalization     2181100100003 
 AUTHOR     (C.Wagemans, A.J.Deruytter)                            2181100100004 
-INSTITUTE  (2ZZZGEL)                                              2181100100005 
+INSTITUTE  (2BLGMOL,2ZZZGEL)                                      2181100100005 
 REFERENCE  (C,82ANTWER,,69,1982)                                  2181100100006 
 FACILITY   (LINAC,2ZZZGEL) GELINA                                 2181100100007 
 INC-SOURCE (PHOTO) 100 MeV electrons on natural uranium target    2181100100008 
@@ -26,65 +26,71 @@ HISTORY    (19830114C) A.P.T.                                     2181100100023
             MONITOR corrected in Subent 002. Ref. INDC(EUR)-15    2181100100025 
             deleted (not relevant).                               2181100100026 
            (20190722A) On. Major revisions in 002.                2181100100027 
-ENDBIB              25          0                                 2181100100028 
-NOCOMMON             0          0                                 2181100100029 
-ENDSUBENT           28          0                                 2181100199999 
-SUBENT        21811002   20190722                             22812181100200001 
-BIB                  8         30                                 2181100200002 
+           (20210317A) On. Major revisions in 002.                2181100100028 
+ENDBIB              26          0                                 2181100100029 
+NOCOMMON             0          0                                 2181100100030 
+ENDSUBENT           29          0                                 2181100199999 
+SUBENT        21811002   20210317                             23022181100200001 
+BIB                  9         35                                 2181100200002 
 REACTION   (94-PU-241(N,F),,SIG,,AV)                              2181100200003 
-MONITOR    ((MONIT)94-PU-241(N,F),,INT)                           2181100200004 
-           Cross section intgral (0.02 eV - 0.10 eV)=60.11 b*eV,  2181100200005 
-            which is corresponding to sigma0=1015 b.              2181100200006 
-           (5-B-10(N,A)3-LI-7,,SIG)                               2181100200007 
-MONIT-REF  ((MONIT)20807001,C.Wagemans+,J,NSE,60,44,1976)         2181100200008 
-CORRECTION Correced for                                           2181100200009 
-            - background determined with Rh Au Co and Mn neutron  2181100200010 
-              filters together with a permanent Al neutron filter 2181100200011 
-              (0.8% at thermal fission, 5% at 25 keV fission,     2181100200012 
-               0.4% at thermal 10B(n,a), 1.5% at 25 keV 10B(n,a)) 2181100200013 
-            - deviation of 10B(n,a)7Li cross section from 1/v by  2181100200014 
-              using Sowerby's analytical expression               2181100200015 
-            - fission of 239Pu imprity                            2181100200016 
-REL-REF    (R,,M.Sowerby+,C,70HELSINKI,1,161,1970)                2181100200017 
-            10B(n,a) cross sectio analytical expression           2181100200018 
-           (R,21704001,C.Wagemans+,J,ANE,7,495,1980)              2181100200019 
-            239Pu(n,f) fission cross section for correction       2181100200020 
-ERR-ANALYS (DATA-ERR) Overall accuracy from                       2181100200021 
-            - thermal constant (1015+/-7 b),                      2181100200022 
-            - 241Pu(n,f) and 10B(n,a) background,                 2181100200023 
-            - sample impurity,                                    2181100200024 
-            - deviation of 10B(n,a) cross section from 1/v,       2181100200025 
-              which is important above 1 keV,                     2181100200026 
-            - statistical error.                                  2181100200027 
-STATUS     (TABLE) Table 1 of Nucl.Data for Sci. & Technol., p69  2181100200028 
-HISTORY    (19830117C) A.P.T.                                     2181100200029 
-           (20180829A) SD: SF4=Li-7 added to MONITOR reaction.    2181100200030 
-            ERR-T -> DATA-ERR.                                    2181100200031 
-           (20190722A) On. MONITOR corrected.                     2181100200032 
-ENDBIB              30          0                                 2181100200033 
-COMMON               3          3                                 2181100200034 
-EN-NRM-MIN EN-NRM-MAX MONIT                                       2181100200035 
-EV         EV         B*EV                                        2181100200036 
- 0.02       0.10       60.11                                      2181100200037 
-ENDCOMMON            3          0                                 2181100200038 
-DATA                 4         15                                 2181100200039 
-EN-MIN     EN-MAX     DATA       DATA-ERR                         2181100200040 
-EV         EV         B          PER-CENT                         2181100200041 
-     0.02       0.1    751.3      2.                              2181100200042 
-     0.1        0.5    681.6      2.                              2181100200043 
-     0.5        1.      42.4      2.                              2181100200044 
-     1.        10.     189.7      2.                              2181100200045 
-    10.        20.     151.7      2.                              2181100200046 
-    20.        30.      85.5      2.                              2181100200047 
-    30.        40.      49.6      3.                              2181100200048 
-    40.        50.      45.5      3.                              2181100200049 
-    50.       100.      39.6      3.                              2181100200050 
-   100.       500.      23.6      3.                              2181100200051 
-   500.      1000.      12.1      3.                              2181100200052 
-  1000.      5000.       7.21     4.                              2181100200053 
-  5000.     10000.       4.2      4.                              2181100200054 
- 10000.     20000.       3.09     4.                              2181100200055 
- 20000.     30000.       2.76     4.                              2181100200056 
-ENDDATA             17          0                                 2181100200057 
-ENDSUBENT           56          0                                 2181100299999 
+MONITOR    ((MONIT)94-PU-241(N,F),,SIG)                           2181100200004 
+           (5-B-10(N,A)3-LI-7,,SIG)                               2181100200005 
+MONIT-REF  ((MONIT)20807001,C.Wagemans+,J,NSE,60,44,1976)         2181100200006 
+CORRECTION Corrected for                                          2181100200007 
+            - background determined with Rh Au Co and Mn neutron  2181100200008 
+              filters together with a permanent Al neutron filter 2181100200009 
+              (0.8% at thermal fission, 5% at 25 keV fission,     2181100200010 
+               0.4% at thermal 10B(n,a), 1.5% at 25 keV 10B(n,a)) 2181100200011 
+            - deviation of 10B(n,a)7Li cross section from 1/v by  2181100200012 
+              using Sowerby's analytical expression               2181100200013 
+            - fission of 239Pu impurity                           2181100200014 
+REL-REF    (R,,M.Sowerby+,C,70HELSINKI,1,161,1970)                2181100200015 
+            10B(n,a) cross section analytical expression          2181100200016 
+           (R,21704001,C.Wagemans+,J,ANE,7,495,1980)              2181100200017 
+            239Pu(n,f) fission cross section for correction       2181100200018 
+ERR-ANALYS (ERR-T) Overall accuracy from                          2181100200019 
+            - 241Pu(n,f) and 10B(n,a) background,                 2181100200020 
+            - sample impurity,                                    2181100200021 
+            - deviation of 10B(n,a) cross section from 1/v,       2181100200022 
+              which is important above 1 keV,                     2181100200023 
+            - statistical error.                                  2181100200024 
+           (MONIT-ERR) thermal constant (1015+/-7 b),             2181100200025 
+COMMENT    Cyriel Wagemans (2021-03-15):                          2181100200026 
+            The actual normalization was done to the cross        2181100200027 
+           section integral (0.02 eV - 0.10 eV)=60.11 b*eV        2181100200028 
+           since in this way small fluctuations of the cross      2181100200029 
+           section in the neighbourhood of 0.0253 eV are          2181100200030 
+           neutralized.                                           2181100200031 
+STATUS     (TABLE) Table 1 of Nucl.Data for Sci. & Technol., p69  2181100200032 
+HISTORY    (19830117C) A.P.T.                                     2181100200033 
+           (20180829A) SD: SF4=Li-7 added to MONITOR reaction.    2181100200034 
+            ERR-T -> DATA-ERR.                                    2181100200035 
+           (20190722A) On. MONITOR corrected.                     2181100200036 
+           (20210317A) On. DATA-ERR -> ERR-T. MONITOR corrected.  2181100200037 
+ENDBIB              35          0                                 2181100200038 
+COMMON               4          3                                 2181100200039 
+EN-NRM-MIN EN-NRM-MAX MONIT      MONIT-ERR                        2181100200040 
+EV         EV         B          B                                2181100200041 
+ 0.02       0.10       1015.      7.                              2181100200042 
+ENDCOMMON            3          0                                 2181100200043 
+DATA                 4         15                                 2181100200044 
+EN-MIN     EN-MAX     DATA       ERR-T                            2181100200045 
+EV         EV         B          PER-CENT                         2181100200046 
+     0.02       0.1    751.3      2.                              2181100200047 
+     0.1        0.5    681.6      2.                              2181100200048 
+     0.5        1.      42.4      2.                              2181100200049 
+     1.        10.     189.7      2.                              2181100200050 
+    10.        20.     151.7      2.                              2181100200051 
+    20.        30.      85.5      2.                              2181100200052 
+    30.        40.      49.6      3.                              2181100200053 
+    40.        50.      45.5      3.                              2181100200054 
+    50.       100.      39.6      3.                              2181100200055 
+   100.       500.      23.6      3.                              2181100200056 
+   500.      1000.      12.1      3.                              2181100200057 
+  1000.      5000.       7.21     4.                              2181100200058 
+  5000.     10000.       4.2      4.                              2181100200059 
+ 10000.     20000.       3.09     4.                              2181100200060 
+ 20000.     30000.       2.76     4.                              2181100200061 
+ENDDATA             17          0                                 2181100200062 
+ENDSUBENT           61          0                                 2181100299999 
 ENDENTRY             2          0                                 2181199999999 
