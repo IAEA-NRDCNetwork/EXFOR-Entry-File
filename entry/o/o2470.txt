@@ -1,0 +1,97 @@
+ENTRY            O2470   20200823                             O080O2470  0    1 
+SUBENT        O2470001   20200823                             O080O2470  1    1 
+BIB                 12         30                                 O2470  1    2 
+TITLE      Measurement of the 43Sc production cross-section with  O2470  1    3 
+           a deuteron beam                                        O2470  1    4 
+AUTHOR     (T.S.Carzaniga,N.P.Van Der Meulen,R.Hasler,C.Kottler,  O2470  1    5 
+           P.Peier,A.Turler,E.Vermeulen,C.Vockenhuber,S.Braccini) O2470  1    6 
+INSTITUTE  (2SWTUBE,2SWTPSI,2SWTETH)                              O2470  1    7 
+           (2SWTSWT) Federal Institute of Metrology METAS,        O2470  1    8 
+           Bern-Wabern, Switzerland                               O2470  1    9 
+REFERENCE  (J,ARI,145,205,2019)                                   O2470  1   10 
+           #doi:10.1016/j.apradiso.2018.12.031                    O2470  1   11 
+FACILITY   (VDGT,2SWTETH)                                         O2470  1   12 
+SAMPLE     (20-CA-42,ENR=0.8080) +- 0.008 42CaCO3 powder          O2470  1   13 
+           Target isotope composition:                            O2470  1   14 
+            40Ca - 17.79%, 43CA - 0.39%, 44Ca - 0.97,             O2470  1   15 
+           46Ca less than 0.01%, 48Ca less that 0.05              O2470  1   16 
+           The mass of the target ranges from 0.15 to 0.5 mg and  O2470  1   17 
+           the thickness of the targets is in the order of 15 um. O2470  1   18 
+INC-SPECT  The accelerated deuterium beam had an energy spread    O2470  1   19 
+           of 1 keV. The value of the beam energy was known with  O2470  1   20 
+           an uncertainty of 1%. The entry, exit and mean energy  O2470  1   21 
+           of the deuteron beam in the target was computed via    O2470  1   22 
+           SRIM simulations and used to evaluate the beam energy  O2470  1   23 
+           and its uncertainty.                                   O2470  1   24 
+METHOD     (ACTIV,GSPEC)                                          O2470  1   25 
+            Irradiation time - 5 min.                             O2470  1   26 
+            Gamma spectrum measurement time of few hours.         O2470  1   27 
+           (STTA,BCINT)                                           O2470  1   28 
+MONITOR    (28-NI-0(D,X)29-CU-61,,SIG)                            O2470  1   29 
+MONIT-REF  (,A.Hermanne+,J,NDS,148,338,2018)                      O2470  1   30 
+DECAY-MON  (29-CU-61,3.339HR,DG,282.956,0.122)                    O2470  1   31 
+HISTORY    (20200823C) VS                                         O2470  1   32 
+ENDBIB              30          0                                 O2470  1   33 
+NOCOMMON             0          0                                 O2470  1   34 
+ENDSUBENT           33          0                                 O2470  199999 
+SUBENT        O2470002   20200823                             O080O2470  2    1 
+BIB                  4          7                                 O2470  2    2 
+REACTION   (28-NI-0(D,X)29-CU-61,,SIG)                            O2470  2    3 
+DECAY-DATA (29-CU-61,3.339HR,DG,282.956,0.122)                    O2470  2    4 
+ERR-ANALYS (ERR-T) Total uncertainty is dominated by the          O2470  2    5 
+           uncertainty on the mass of the Nickel foil.            O2470  2    6 
+           (ERR-1) Uncertainty on the mass of the Nickel foil -   O2470  2    7 
+           20%.                                                   O2470  2    8 
+STATUS     (TABLE) Table A1 of Appl.Radiat.Isot.145(2019)205      O2470  2    9 
+ENDBIB               7          0                                 O2470  2   10 
+COMMON               1          3                                 O2470  2   11 
+ERR-1                                                             O2470  2   12 
+PER-CENT                                                          O2470  2   13 
+        20.                                                       O2470  2   14 
+ENDCOMMON            3          0                                 O2470  2   15 
+DATA                 4          9                                 O2470  2   16 
+EN         EN-ERR     DATA       ERR-T                            O2470  2   17 
+MEV        MEV        MB         MB                               O2470  2   18 
+        7.5       0.17        86.        17.                      O2470  2   19 
+        7.0       0.18        88.        18.                      O2470  2   20 
+        6.5       0.19        70.        14.                      O2470  2   21 
+        6.0       0.20        69.        14.                      O2470  2   22 
+        5.5       0.22        48.        10.                      O2470  2   23 
+        5.0       0.24        55.        11.                      O2470  2   24 
+        4.5       0.26        38.         8.                      O2470  2   25 
+        4.0       0.28        20.         4.                      O2470  2   26 
+        3.5       0.32         7.         2.                      O2470  2   27 
+ENDDATA             11          0                                 O2470  2   28 
+ENDSUBENT           27          0                                 O2470  299999 
+SUBENT        O2470003   20200823                             O080O2470  3    1 
+BIB                  4          9                                 O2470  3    2 
+REACTION   (20-CA-42(D,N)21-SC-43,,SIG)                           O2470  3    3 
+DECAY-DATA (21-SC-43,3.891HR,DG,372.9,0.172)                      O2470  3    4 
+ERR-ANALYS (ERR-T) Total uncertainty determined from:             O2470  3    5 
+           (ERR-1,,7.) sample mass                                O2470  3    6 
+           (ERR-2) flatness of the beam            - 5%           O2470  3    7 
+           (ERR-3) detector efficiency calibration - 5%           O2470  3    8 
+           (ERR-S,,4.) the biggest uncertainty on the neat peak   O2470  3    9 
+           area                                                   O2470  3   10 
+STATUS     (TABLE) Table A2 of Appl.Radiat.Isot.145(2019)205      O2470  3   11 
+ENDBIB               9          0                                 O2470  3   12 
+COMMON               2          3                                 O2470  3   13 
+ERR-2      ERR-3                                                  O2470  3   14 
+PER-CENT   PER-CENT                                               O2470  3   15 
+         5.         5.                                            O2470  3   16 
+ENDCOMMON            3          0                                 O2470  3   17 
+DATA                 4          9                                 O2470  3   18 
+EN         EN-ERR     DATA       ERR-T                            O2470  3   19 
+MEV        MEV        MB         MB                               O2470  3   20 
+        7.1        0.2       178.        23.                      O2470  3   21 
+        6.6        0.2       207.        27.                      O2470  3   22 
+        6.1        0.2       176.        20.                      O2470  3   23 
+        5.5        0.2       189.        24.                      O2470  3   24 
+        5.0        0.2       159.        20.                      O2470  3   25 
+        4.5        0.2       180.        24.                      O2470  3   26 
+        3.9        0.3       123.        16.                      O2470  3   27 
+        3.4        0.3        62.         7.                      O2470  3   28 
+        2.8        0.3        34.         5.                      O2470  3   29 
+ENDDATA             11          0                                 O2470  3   30 
+ENDSUBENT           29          0                                 O2470  399999 
+ENDENTRY             3          0                                 O247099999999 
