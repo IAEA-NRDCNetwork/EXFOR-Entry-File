@@ -1,5 +1,5 @@
-ENTRY            R0039   20190118                             R029R003900000001 
-SUBENT        R0039001   20190118                             R029R003900100001 
+ENTRY            R0039   20241119                             R031R003900000001 
+SUBENT        R0039001   20241119                             R031R003900100001 
 BIB                  8         15                                 R003900100002 
 TITLE      Alpha excitation functions of silver and copper        R003900100003 
 AUTHOR     (K.G.Porges)                                           R003900100004 
@@ -10,12 +10,12 @@ METHOD     (STTA,EXTB,BCINT,ACTIV)                                R003900100008
 SAMPLE     Ag and Cu foils (6 to 10 mg/cm2 thick at above 15 MeV, R003900100009 
             3 mg/cm2 thick below 15 MeV)                          R003900100010 
 HISTORY    (19920601C) RIKEN Nuclear Data Group                   R003900100011 
-           (20061122A) On. Changed to lower case and 4-digit year.R003900100012 
-                           EXP in SF9 deleted.                    R003900100013 
-           (20190110A) Tada. 008,009: REACTION, DECAY-DATA and    R003900100014 
-                       RAD-DET are corrected as per CP-D/888.     R003900100015 
-                       All SUBENT: STATUS added.                  R003900100016 
-           (20190118A) On. Major revisions in 007,011,013         R003900100017 
+           (20061122A) On. EXP in SF9 deleted.                    R003900100012 
+           (20190110A) Tada. 008,009: REACTION, DECAY-DATA and    R003900100013 
+            RAD-DET are corrected as per CP-D/888. All SUBENT:    R003900100014 
+            STATUS added.                                         R003900100015 
+           (20190118A) On. Major revisions in 007,011,013.        R003900100016 
+           (20241119A) On. Major revisions in 007-009.            R003900100017 
 ENDBIB              15          0                                 R003900100018 
 NOCOMMON             0          0                                 R003900100019 
 ENDSUBENT           18          0                                 R003900199999 
@@ -171,107 +171,104 @@ MEV        MB                                                     R003900600015
  37.0       167.6                                                 R003900600023 
 ENDDATA             10          0                                 R003900600024 
 ENDSUBENT           23          0                                 R003900699999 
-SUBENT        R0039007   20190118                             R029R003900700001 
-BIB                  7         21                                 R003900700002 
+SUBENT        R0039007   20241119                             R031R003900700001 
+BIB                  7         16                                 R003900700002 
 REACTION   (29-CU-0(A,X)29-CU-64,,SIG)                            R003900700003 
-DECAY-DATA (29-CU-64,13.HR)                                       R003900700004 
-           (31-GA-66,9.8HR,B+,4140.)                              R003900700005 
-RAD-DET    (31-GA-66,B+)                                          R003900700006 
-DETECTOR   (GEMUC) A 1.7g Al absorber transmitting only beta+     R003900700007 
-            from 66Ga used to discriminate between beta-rays from R003900700008 
-            66Ga and 64Cu. The difference between the bare counts R003900700009 
-            and absorber counts corrected for partial absorption  R003900700010 
-            of 66Ga activity was ascribed to 64Cu.                R003900700011 
-CORRECTION Electron/positron ratio of the irradiated foils was    R003900700012 
-            measured by a trochoidal spectrometer.                R003900700013 
-           Cross sections were calculated from a graphical        R003900700014 
-            analysis of these data for each foil, decay schemes   R003900700015 
-            of 66Ga and 64Cu, isotopic composition of copper,     R003900700016 
-            foil weight, bombardment current and the geometrical  R003900700017 
-            factor as well as usual corrections for source        R003900700018 
-            self-absorption and back scattering, Geiger tube      R003900700019 
-            dead-time, and decayduring bombardment.               R003900700020 
-STATUS     (CURVE) Fig.1 of Phys.Rev.101(1956)225.                R003900700021 
-HISTORY    (20061212A) On. SF8 corrected.                         R003900700022 
-           (20190118A) On. REACTION corrected.                    R003900700023 
-ENDBIB              21          0                                 R003900700024 
-NOCOMMON             0          0                                 R003900700025 
-DATA                 2          6                                 R003900700026 
-EN         DATA                                                   R003900700027 
-MEV        MB                                                     R003900700028 
- 31.0        6.67                                                 R003900700029 
- 32.8       14.37                                                 R003900700030 
- 33.7       17.47                                                 R003900700031 
- 35.1       23.1                                                  R003900700032 
- 36.1       28.0                                                  R003900700033 
- 37.0       40.7                                                  R003900700034 
-ENDDATA              8          0                                 R003900700035 
-ENDSUBENT           34          0                                 R003900799999 
-SUBENT        R0039008   20190118                             R029R003900800001 
-BIB                  6          9                                 R003900800002 
-REACTION   (47-AG-107(A,N)49-IN-110-M,,SIG)                       R003900800003 
-DECAY-DATA (49-IN-110-M,66.MIN,ICE,661.)                          R003900800004 
-DETECTOR   (MAGSP) beta-ray spectrometer                          R003900800005 
-METHOD     (BSPEC)                                                R003900800006 
-STATUS     (CURVE) Fig.2(a) of Phys.Rev.101(1956)225.             R003900800007 
+DECAY-DATA (29-CU-64,13.HR,B+)                                    R003900700004 
+DETECTOR   (GEMUC) Geiger tube                                    R003900700005 
+METHOD     The positrons from 64Cu (13 hr) is discriminated from  R003900700006 
+            those from 66Ga (9.8 hr) by using a 1.7g Al absorber, R003900700007 
+            which transmit only positrons from 66Ga.              R003900700008 
+CORRECTION Corrected for                                          R003900700009 
+            - source self-absorption                              R003900700010 
+            - back scattering                                     R003900700011 
+            - Geiger tube dead-time                               R003900700012 
+            - decay during bombardment                            R003900700013 
+            - long-lived background chiefly due to 67Ga           R003900700014 
+STATUS     (CURVE,,K.G.Porges,J,PR,101,225,1956) Fig.1            R003900700015 
+HISTORY    (20061212A) On. REACTION(SF8) corrected.               R003900700016 
+           (20190118A) On. REACTION corrected.                    R003900700017 
+           (20241119A) On. 66Ga DECAY-DATA and RAD-DET deleted.   R003900700018 
+ENDBIB              16          0                                 R003900700019 
+NOCOMMON             0          0                                 R003900700020 
+DATA                 2          6                                 R003900700021 
+EN         DATA                                                   R003900700022 
+MEV        MB                                                     R003900700023 
+ 31.0        6.67                                                 R003900700024 
+ 32.8       14.37                                                 R003900700025 
+ 33.7       17.47                                                 R003900700026 
+ 35.1       23.1                                                  R003900700027 
+ 36.1       28.0                                                  R003900700028 
+ 37.0       40.7                                                  R003900700029 
+ENDDATA              8          0                                 R003900700030 
+ENDSUBENT           29          0                                 R003900799999 
+SUBENT        R0039008   20241119                             R031R003900800001 
+BIB                  5         10                                 R003900800002 
+REACTION   ((47-AG-107(A,N)49-IN-110-M,,SIG)+                     R003900800003 
+           (47-AG-109(A,3N)49-IN-110-M,,SIG,,RAB))                R003900800004 
+DECAY-DATA (49-IN-110-M,66.MIN,ICE,661.)                          R003900800005 
+DETECTOR   (MAGSP) beta-ray spectrometer                          R003900800006 
+STATUS     (CURVE,,K.G.Porges,J,PR,101,225,1956) Fig.2(a)         R003900800007 
 HISTORY    (20190110A) Tada. REACTION, DECAY-DATA and RAD-DET:    R003900800008 
-                       G -> M. DECAY-DATA: 69.MIN -> 66.MIN       R003900800009 
-                       (compilation mistake).                     R003900800010 
+            G -> M. DECAY-DATA: 69.MIN -> 66.MIN (compilation     R003900800009 
+            mistake).                                             R003900800010 
            (20190118U) On. RAD-DET deleted.                       R003900800011 
-ENDBIB               9          0                                 R003900800012 
-NOCOMMON             0          0                                 R003900800013 
-DATA                 2         19                                 R003900800014 
-EN         DATA                                                   R003900800015 
-MEV        B                                                      R003900800016 
- 13.2       0.05                                                  R003900800017 
- 15.4       0.18                                                  R003900800018 
- 17.2       0.29                                                  R003900800019 
- 18.8       0.25                                                  R003900800020 
- 19.9       0.20                                                  R003900800021 
- 20.9       0.14                                                  R003900800022 
- 22.3       0.08                                                  R003900800023 
- 23.4       0.05                                                  R003900800024 
- 25.1       0.04                                                  R003900800025 
- 26.8       0.03                                                  R003900800026 
- 28.4       0.04                                                  R003900800027 
- 29.5       0.06                                                  R003900800028 
- 30.8       0.08                                                  R003900800029 
- 31.7       0.12                                                  R003900800030 
- 33.1       0.14                                                  R003900800031 
- 33.8       0.17                                                  R003900800032 
- 34.9       0.18                                                  R003900800033 
- 36.0       0.19                                                  R003900800034 
- 36.8       0.21                                                  R003900800035 
-ENDDATA             21          0                                 R003900800036 
-ENDSUBENT           35          0                                 R003900899999 
-SUBENT        R0039009   20190118                             R029R003900900001 
-BIB                  6          8                                 R003900900002 
-REACTION   (47-AG-107(A,N)49-IN-110-G,,SIG)                       R003900900003 
-DECAY-DATA (49-IN-110-G,4.9HR,ICE,661.)                           R003900900004 
-DETECTOR   (MAGSP) beta-ray spectrometer                          R003900900005 
-METHOD     (BSPEC)                                                R003900900006 
-STATUS     (CURVE) Fig.2(a) of Phys.Rev.101(1956)225.             R003900900007 
+           (20241119A) On. REACTION second term added.            R003900800012 
+ENDBIB              10          0                                 R003900800013 
+NOCOMMON             0          0                                 R003900800014 
+DATA                 2         19                                 R003900800015 
+EN         DATA                                                   R003900800016 
+MEV        B                                                      R003900800017 
+ 13.2       0.05                                                  R003900800018 
+ 15.4       0.18                                                  R003900800019 
+ 17.2       0.29                                                  R003900800020 
+ 18.8       0.25                                                  R003900800021 
+ 19.9       0.20                                                  R003900800022 
+ 20.9       0.14                                                  R003900800023 
+ 22.3       0.08                                                  R003900800024 
+ 23.4       0.05                                                  R003900800025 
+ 25.1       0.04                                                  R003900800026 
+ 26.8       0.03                                                  R003900800027 
+ 28.4       0.04                                                  R003900800028 
+ 29.5       0.06                                                  R003900800029 
+ 30.8       0.08                                                  R003900800030 
+ 31.7       0.12                                                  R003900800031 
+ 33.1       0.14                                                  R003900800032 
+ 33.8       0.17                                                  R003900800033 
+ 34.9       0.18                                                  R003900800034 
+ 36.0       0.19                                                  R003900800035 
+ 36.8       0.21                                                  R003900800036 
+ENDDATA             21          0                                 R003900800037 
+ENDSUBENT           36          0                                 R003900899999 
+SUBENT        R0039009   20241119                             R031R003900900001 
+BIB                  5          9                                 R003900900002 
+REACTION   ((47-AG-107(A,N)49-IN-110-G,,SIG)+                     R003900900003 
+           (47-AG-109(A,3N)49-IN-110-G,,SIG,,RAB))                R003900900004 
+DECAY-DATA (49-IN-110-G,4.9HR,ICE,661.)                           R003900900005 
+DETECTOR   (MAGSP) beta-ray spectrometer                          R003900900006 
+STATUS     (CURVE,,K.G.Porges,J,PR,101,225,1956) Fig.2(a)         R003900900007 
 HISTORY    (20190110A) Tada. REACTION, DECAY-DATA and RAD-DET:    R003900900008 
-                       M -> G.                                    R003900900009 
+            M -> G.                                               R003900900009 
            (20190118U) On. RAD-DET deleted.                       R003900900010 
-ENDBIB               8          0                                 R003900900011 
-NOCOMMON             0          0                                 R003900900012 
-DATA                 2         11                                 R003900900013 
-EN         DATA                                                   R003900900014 
-MEV        B                                                      R003900900015 
- 18.6       0.34                                                  R003900900016 
- 20.6       0.25                                                  R003900900017 
- 22.9       0.15                                                  R003900900018 
- 24.7       0.11                                                  R003900900019 
- 26.8       0.17                                                  R003900900020 
- 29.4       0.30                                                  R003900900021 
- 30.6       0.35                                                  R003900900022 
- 31.4       0.42                                                  R003900900023 
- 31.6       0.46                                                  R003900900024 
- 33.6       0.58                                                  R003900900025 
- 35.4       0.69                                                  R003900900026 
-ENDDATA             13          0                                 R003900900027 
-ENDSUBENT           26          0                                 R003900999999 
+           (20241119A) On. REACTION second term added.            R003900900011 
+ENDBIB               9          0                                 R003900900012 
+NOCOMMON             0          0                                 R003900900013 
+DATA                 2         11                                 R003900900014 
+EN         DATA                                                   R003900900015 
+MEV        B                                                      R003900900016 
+ 18.6       0.34                                                  R003900900017 
+ 20.6       0.25                                                  R003900900018 
+ 22.9       0.15                                                  R003900900019 
+ 24.7       0.11                                                  R003900900020 
+ 26.8       0.17                                                  R003900900021 
+ 29.4       0.30                                                  R003900900022 
+ 30.6       0.35                                                  R003900900023 
+ 31.4       0.42                                                  R003900900024 
+ 31.6       0.46                                                  R003900900025 
+ 33.6       0.58                                                  R003900900026 
+ 35.4       0.69                                                  R003900900027 
+ENDDATA             13          0                                 R003900900028 
+ENDSUBENT           27          0                                 R003900999999 
 SUBENT        R0039010   20190118                             R029R003901000001 
 BIB                  6          6                                 R003901000002 
 REACTION   (47-AG-109(A,2N)49-IN-111,,SIG)                        R003901000003 
