@@ -1,17 +1,17 @@
-ENTRY            E1968   20061228                             E041E196800000001 
-SUBENT        E1968001   20061228                             E041E196800100001 
-BIB                 13         33                                 E196800100002 
-TITLE      Excitation functions of Ge(p,xnyp) reactions and       E196800100003 
+ENTRY            E1968   20200121                             E125E196800000001 
+SUBENT        E1968001   20200121                             E125E196800100001 
+BIB                 13         35                                 E196800100002 
+TITLE      Excitation function of Ge(p,xnyp) reactions and        E196800100003 
            production of 68Ge                                     E196800100004 
 AUTHOR     (T.Horiguchi, H.Kumahora, H.Inoue, Y.Yoshizawa)        E196800100005 
-INSTITUTE  (2JPNHIR) Facalty of Science                           E196800100006 
-REFERENCE  (J,ARI,34,(11),1531,198311)                            E196800100007 
-INC-SOURCE Beam intensity is 1 micro-Ampere.                      E196800100008 
+INSTITUTE  (2JPNHIR) Faculty of Science                           E196800100006 
+REFERENCE  (J,ARI,34,1531,1983)                                   E196800100007 
+INC-SOURCE Beam intensity is 1 uA.                                E196800100008 
 INC-SPECT  [EN-RSL] Maximum value                                 E196800100009 
 SAMPLE     - Target is natural.                                   E196800100010 
            - Chemical-form of target is element.                  E196800100011 
            - Physical-form of target is solid.                    E196800100012 
-           - Target-thickness is 107 mg/cm**2.                    E196800100013 
+           - Target-thickness is 107 mg/cm2.                      E196800100013 
 METHOD     (ACTIV) Irradiated for 1-2 hour                        E196800100014 
            (STTA)                                                 E196800100015 
            (GSPEC) Measured 40 hour after the end of irradiation  E196800100016 
@@ -22,7 +22,7 @@ METHOD     (ACTIV) Irradiated for 1-2 hour                        E196800100014
 FACILITY   (ISOCY,2JPNOSA) AVF cyclotron at Research Center for   E196800100021 
                            Nuclear Physics                        E196800100022 
 DETECTOR   (GELI) To measure gamma rays from product nuclei       E196800100023 
-ERR-ANALYS (ERR-T) Maximum overaluncertainty (11-16%)             E196800100024 
+ERR-ANALYS (ERR-T) Maximum overall uncertainty (11-16%)           E196800100024 
            (ERR-1) Uncertainty in target thickness                E196800100025 
            (ERR-2) Uncertainty in proton beam current (relatively E196800100026 
                    2% and absolutely 10%)                         E196800100027 
@@ -34,16 +34,18 @@ ERR-ANALYS (ERR-T) Maximum overaluncertainty (11-16%)             E196800100024
 COMMENT    No description of cumulative production and isomeric   E196800100033 
            transition in references                               E196800100034 
 HISTORY    (20060628C) Tk + On                                    E196800100035 
-ENDBIB              33          0                                 E196800100036 
-COMMON               7          6                                 E196800100037 
-EN-RSL     ERR-T      ERR-1      ERR-2      ERR-3      ERR-4      E196800100038 
-ERR-S                                                             E196800100039 
-PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   E196800100040 
-PER-CENT                                                          E196800100041 
- 0.5        16.        2.         10.        3.         11.       E196800100042 
- 3.                                                               E196800100043 
-ENDCOMMON            6          0                                 E196800100044 
-ENDSUBENT           43          0                                 E196800199999 
+           (20191209A) Tada. ANALYSIS: INTEF added. 011: REACTION E196800100036 
+                       corrected, TIME-IRRD added, COMMENT added. E196800100037 
+ENDBIB              35          0                                 E196800100038 
+COMMON               7          6                                 E196800100039 
+EN-RSL     ERR-T      ERR-1      ERR-2      ERR-3      ERR-4      E196800100040 
+ERR-S                                                             E196800100041 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   E196800100042 
+PER-CENT                                                          E196800100043 
+ 0.5        16.        2.         10.        3.         11.       E196800100044 
+ 3.                                                               E196800100045 
+ENDCOMMON            6          0                                 E196800100046 
+ENDSUBENT           45          0                                 E196800199999 
 SUBENT        E1968002   20061228                             E041E196800200001 
 BIB                  4          6                                 E196800200002 
 REL-REF    (D,A0190003,D.Basile+,J,ARI,32,403,1981)               E196800200003 
@@ -342,16 +344,25 @@ MEV        MB                                                     E196801000010
   6.413E+01  2.931E+01                                            E196801000030 
 ENDDATA             22          0                                 E196801000031 
 ENDSUBENT           30          0                                 E196801099999 
-SUBENT        E1968011   20061228                             E041E196801100001 
-BIB                  2          2                                 E196801100002 
-REACTION   (32-GE-0(P,X)32-GE-68,CUM,TTY,,DT,DERIV)               E196801100003 
-STATUS     (TABLE) Data taken from Table 3, p1534 in reference    E196801100004 
-ENDBIB               2          0                                 E196801100005 
-NOCOMMON             0          0                                 E196801100006 
-DATA                 2          1                                 E196801100007 
-EN         DATA                                                   E196801100008 
-MEV        MUCI/MUAHR                                             E196801100009 
- 64.        48.                                                   E196801100010 
-ENDDATA              3          0                                 E196801100011 
-ENDSUBENT           10          0                                 E196801199999 
+SUBENT        E1968011   20200121                             E125E196801100001 
+BIB                  5          7                                 E196801100002 
+REACTION   (32-GE-0(P,X)32-GE-68,CUM,TTY,,EOB,DERIV)              E196801100003 
+ANALYSIS   (INTEF)                                                E196801100004 
+COMMENT    Takayoshi Horiguchi (2018-06-15): 1-hr EOB yield is    E196801100005 
+           given                                                  E196801100006 
+STATUS     (TABLE) Taken from Table 3, p1534 in reference         E196801100007 
+HISTORY    (20191209A) SF8: DT -> EOB. TIME-IRRD: Added.          E196801100008 
+                       ANALYSYS: INTEF added, COMMENT: Added.     E196801100009 
+ENDBIB               7          0                                 E196801100010 
+COMMON               1          3                                 E196801100011 
+TIME-IRRD                                                         E196801100012 
+HR                                                                E196801100013 
+ 1.                                                               E196801100014 
+ENDCOMMON            3          0                                 E196801100015 
+DATA                 2          1                                 E196801100016 
+EN         DATA                                                   E196801100017 
+MEV        MUCI/MUA                                               E196801100018 
+        64.        48.                                            E196801100019 
+ENDDATA              3          0                                 E196801100020 
+ENDSUBENT           19          0                                 E196801199999 
 ENDENTRY            11          0                                 E196899999999 

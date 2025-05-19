@@ -1,22 +1,25 @@
-ENTRY            E2073   20080612                             E053E207300000001 
-SUBENT        E2073001   20080612                             E053E207300100001 
-BIB                 11         13                                 E207300100002 
+ENTRY            E2073   20200117                             E125E207300000001 
+SUBENT        E2073001   20200117                             E125E207300100001 
+BIB                 11         16                                 E207300100002 
 TITLE      Production of 61Cu by alpha- and 3He bombardments on   E207300100003 
            cobalt target                                          E207300100004 
 AUTHOR     (Y.Homma, Y.Murakami)                                  E207300100005 
 INSTITUTE  (2JPNTMU)                                              E207300100006 
-REFERENCE  (J,CL,5,(5),397,197605)                                E207300100007 
+REFERENCE  (J,CL,5,397,1976)                                      E207300100007 
 DECAY-DATA (29-CU-61,,DG,284.,0.12)                               E207300100008 
-INC-SOURCE Beam intensity is 0.5 to 1.5 micro-Ampere.             E207300100009 
+INC-SOURCE Beam intensity is 0.5 to 1.5 uA.                       E207300100009 
 SAMPLE     - Chemical-form of target is element.                  E207300100010 
            - Physical-form of target is solid.                    E207300100011 
 METHOD     (ACTIV) Irradiated for 30 to 90 min                    E207300100012 
 FACILITY   (CYCLO,2JPNIPC)                                        E207300100013 
 DETECTOR   (GELI) To determine photo peaks of gamma spectrum      E207300100014 
 HISTORY    (20070511C) On + Yt                                    E207300100015 
-ENDBIB              13          0                                 E207300100016 
-NOCOMMON             0          0                                 E207300100017 
-ENDSUBENT           16          0                                 E207300199999 
+           (20191210A) Tada. ANALYSIS: INTEF added. 003,005:      E207300100016 
+                       REACTION corrected, Used fixed decimal     E207300100017 
+                       point. REFERENCE modified.                 E207300100018 
+ENDBIB              16          0                                 E207300100019 
+NOCOMMON             0          0                                 E207300100020 
+ENDSUBENT           19          0                                 E207300199999 
 SUBENT        E2073002   20080131                             E050E207300200001 
 BIB                  2          3                                 E207300200002 
 REACTION   (27-CO-59(A,2N)29-CU-61,,SIG)                          E207300200003 
@@ -49,38 +52,41 @@ MEV        MB                                                     E207300200010
   3.749E+01  1.363E+02                                            E207300200030 
 ENDDATA             22          0                                 E207300200031 
 ENDSUBENT           30          0                                 E207300299999 
-SUBENT        E2073003   20080131                             E050E207300300001 
-BIB                  3          4                                 E207300300002 
-REACTION   (27-CO-59(A,2N)29-CU-61,,TTY,,DT,DERIV)                E207300300003 
-SAMPLE     Target-thickness is 183 mg/cm**2.                      E207300300004 
-STATUS     (CURVE) Scanned from Fig.1, p399 in reference          E207300300005 
-           (COREL,E1961003) Moved from E1961.003                  E207300300006 
-ENDBIB               4          0                                 E207300300007 
-NOCOMMON             0          0                                 E207300300008 
-DATA                 2         19                                 E207300300009 
-EN         DATA                                                   E207300300010 
-MEV        MCI/MUAHR                                              E207300300011 
-  1.558E+01  1.453E-01                                            E207300300012 
-  1.719E+01  4.133E-01                                            E207300300013 
-  1.900E+01  7.439E-01                                            E207300300014 
-  2.014E+01  9.943E-01                                            E207300300015 
-  2.074E+01  1.110E+00                                            E207300300016 
-  2.256E+01  1.674E+00                                            E207300300017 
-  2.343E+01  1.934E+00                                            E207300300018 
-  2.431E+01  2.283E+00                                            E207300300019 
-  2.560E+01  2.829E+00                                            E207300300020 
-  2.701E+01  3.241E+00                                            E207300300021 
-  2.842E+01  3.581E+00                                            E207300300022 
-  2.977E+01  4.046E+00                                            E207300300023 
-  3.125E+01  4.413E+00                                            E207300300024 
-  3.367E+01  5.183E+00                                            E207300300025 
-  3.468E+01  5.478E+00                                            E207300300026 
-  3.535E+01  5.603E+00                                            E207300300027 
-  3.575E+01  5.728E+00                                            E207300300028 
-  3.683E+01  6.095E+00                                            E207300300029 
-  3.710E+01  6.032E+00                                            E207300300030 
-ENDDATA             21          0                                 E207300300031 
-ENDSUBENT           30          0                                 E207300399999 
+SUBENT        E2073003   20200117                             E125E207300300001 
+BIB                  5          7                                 E207300300002 
+REACTION   (27-CO-59(A,2N)29-CU-61,,TTY,,EOB/MSC,DERIV)           E207300300003 
+           Irradiation time unspecified                           E207300300004 
+SAMPLE     Target-thickness is 183 mg/cm2.                        E207300300005 
+ANALYSIS   (INTEF)                                                E207300300006 
+STATUS     (CURVE) Scanned from Fig.1, p399 in reference          E207300300007 
+HISTORY    (20191210A) SF8: DT -> EOB/MISC. ANALSYS: INTEF added. E207300300008 
+                       Used fixed decimal point.                  E207300300009 
+ENDBIB               7          0                                 E207300300010 
+NOCOMMON             0          0                                 E207300300011 
+DATA                 2         19                                 E207300300012 
+EN         DATA                                                   E207300300013 
+MEV        MCI/MUAHR                                              E207300300014 
+      15.58       0.15                                            E207300300015 
+      17.19       0.41                                            E207300300016 
+      19.00       0.74                                            E207300300017 
+      20.14       0.99                                            E207300300018 
+      20.74       1.11                                            E207300300019 
+      22.56       1.67                                            E207300300020 
+      23.43       1.93                                            E207300300021 
+      24.31       2.28                                            E207300300022 
+      25.60       2.83                                            E207300300023 
+      27.01       3.24                                            E207300300024 
+      28.42       3.58                                            E207300300025 
+      29.77       4.05                                            E207300300026 
+      31.25       4.41                                            E207300300027 
+      33.67       5.18                                            E207300300028 
+      34.68       5.48                                            E207300300029 
+      35.35       5.60                                            E207300300030 
+      35.75       5.73                                            E207300300031 
+      36.83       6.10                                            E207300300032 
+      37.10       6.03                                            E207300300033 
+ENDDATA             21          0                                 E207300300034 
+ENDSUBENT           33          0                                 E207300399999 
 SUBENT        E2073004   20080612                             E053E207300400001 
 BIB                  6         10                                 E207300400002 
 REL-REF    (C,E1929003,F.Szelecsenyi+,J,NIM/B,222,364,2004)       E207300400003 
@@ -118,31 +124,34 @@ MEV        MB         MB                                          E207300400017
   4.046E+01  3.049E+00  1.294E-01                                 E207300400035 
 ENDDATA             20          0                                 E207300400036 
 ENDSUBENT           35          0                                 E207300499999 
-SUBENT        E2073005   20080131                             E050E207300500001 
-BIB                  3          4                                 E207300500002 
-REACTION   (27-CO-59(HE3,N)29-CU-61,,TTY,,DT,DERIV)               E207300500003 
-ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E207300500004 
-STATUS     (CURVE) Scanned from Fig.2, p399 in reference          E207300500005 
-           (COREL,E1961009) Moved from E1961.009                  E207300500006 
-ENDBIB               4          0                                 E207300500007 
-NOCOMMON             0          0                                 E207300500008 
-DATA                 3         14                                 E207300500009 
-EN         DATA       DATA-ERR                                    E207300500010 
-MEV        MUCI/MUAHR MUCI/MUAHR                                  E207300500011 
-  1.901E+01  4.624E+00  1.639E+00                                 E207300500012 
-  2.116E+01  8.972E+00  2.077E+00                                 E207300500013 
-  2.304E+01  1.427E+01  2.077E+00                                 E207300500014 
-  2.533E+01  2.307E+01  1.870E+00                                 E207300500015 
-  2.597E+01  2.514E+01  1.873E+00                                 E207300500016 
-  2.785E+01  3.374E+01  1.662E+00                                 E207300500017 
-  2.850E+01  3.650E+01  1.873E+00                                 E207300500018 
-  3.026E+01  4.531E+01  2.107E+00                                 E207300500019 
-  3.284E+01  5.859E+01  2.087E+00                                 E207300500020 
-  3.495E+01  7.204E+01  2.087E+00                                 E207300500021 
-  3.676E+01  8.599E+01  1.873E+00                                 E207300500022 
-  3.735E+01  8.690E+01  2.107E+00                                 E207300500023 
-  3.913E+01  1.009E+02  2.342E+00                                 E207300500024 
-  4.078E+01  1.113E+02  2.342E+00                                 E207300500025 
-ENDDATA             16          0                                 E207300500026 
-ENDSUBENT           25          0                                 E207300599999 
+SUBENT        E2073005   20200117                             E125E207300500001 
+BIB                  5          7                                 E207300500002 
+REACTION   (27-CO-59(HE3,N)29-CU-61,,TTY,,EOB/MSC,DERIV)          E207300500003 
+           Irradiation time unspecified                           E207300500004 
+ANALYSIS   (INTEF)                                                E207300500005 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E207300500006 
+STATUS     (CURVE) Scanned from Fig.2, p399 in reference          E207300500007 
+HISTORY    (20191210A) SF8: DT -> EOB/MSC. ANALYSYS: INTEF added. E207300500008 
+                       Used fixed decimal point.                  E207300500009 
+ENDBIB               7          0                                 E207300500010 
+NOCOMMON             0          0                                 E207300500011 
+DATA                 3         14                                 E207300500012 
+EN         DATA       DATA-ERR                                    E207300500013 
+MEV        MUCI/MUAHR MUCI/MUAHR                                  E207300500014 
+      19.01       4.62       1.64                                 E207300500015 
+      21.16       8.97       2.08                                 E207300500016 
+      23.04      14.27       2.08                                 E207300500017 
+      25.33      23.07       1.87                                 E207300500018 
+      25.97      25.14       1.87                                 E207300500019 
+      27.85      33.74       1.66                                 E207300500020 
+      28.50      36.50       1.87                                 E207300500021 
+      30.26      45.31       2.11                                 E207300500022 
+      32.84      58.59       2.09                                 E207300500023 
+      34.95      72.04       2.09                                 E207300500024 
+      36.76      85.99       1.87                                 E207300500025 
+      37.35      86.90       2.11                                 E207300500026 
+      39.13     100.90       2.34                                 E207300500027 
+      40.78     111.30       2.34                                 E207300500028 
+ENDDATA             16          0                                 E207300500029 
+ENDSUBENT           28          0                                 E207300599999 
 ENDENTRY             5          0                                 E207399999999 

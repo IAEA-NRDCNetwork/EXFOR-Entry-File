@@ -1,12 +1,12 @@
-ENTRY            E2138   20100331                             E061E213800000001 
-SUBENT        E2138001   20100331                             E061E213800100001 
-BIB                 11         34                                 E213800100002 
+ENTRY            E2138   20200121                             E125E213800000001 
+SUBENT        E2138001   20200121                             E125E213800100001 
+BIB                 11         37                                 E213800100002 
 TITLE      Production of no-carrier-added 64Cu and applications   E213800100003 
            to molecular imaging by PET and PETIS as a biomedical  E213800100004 
            tracer                                                 E213800100005 
 AUTHOR     (S.Watanabe, Y.Iida, N.Suzui, T.Katabuchi, S.Ishii,    E213800100006 
-           N.Kawachi, H.Hanaoka, S.Watanabe, S.Matsuhashi,        E213800100007 
-           K.Endo, N.S.Ishioka)                                   E213800100008 
+            N.Kawachi, H.Hanaoka, S.Watanabe, S.Matsuhashi,       E213800100007 
+            K.Endo, N.S.Ishioka)                                  E213800100008 
 INSTITUTE  (2JPNJAE) Plant Positron Imaging Group, Quantum Beam   E213800100009 
                      Science Directorate                          E213800100010 
            (2JPNJPN) Department of Bioimaging Information         E213800100011 
@@ -18,38 +18,47 @@ INSTITUTE  (2JPNJAE) Plant Positron Imaging Group, Quantum Beam   E213800100009
                      Nuclear Medicine, Gumma University Graduate  E213800100017 
                      School of Medicine                           E213800100018 
            (2JPNTIT) Research Laboratory for Nuclear Reactors     E213800100019 
-REFERENCE  (J,JRN,280,(1),199,200907)                             E213800100020 
-INC-SOURCE Beam intensity is 5 micro-Ampere.                      E213800100021 
-SAMPLE     - Chemical-form of target: NiO                         E213800100022 
-           - Physical-form of target is solid.                    E213800100023 
-           - Target-thickness: See flag                           E213800100024 
-           - Backing is aluminium.                                E213800100025 
-           - Backing-thickness: thickness 10UM, dimension 1CM*1CM E213800100026 
-           (28-NI-64,ENR=0.994) 64Ni                              E213800100027 
-METHOD     (ACTIV)                                                E213800100028 
-           (CHSEP) Anion-exchange method                          E213800100029 
-FACILITY   (ISOCY,2JPNJAE) AVF cyclotron of Takasaki Ion          E213800100030 
-                           Accelerators for Advanced Radiation    E213800100031 
-                           Applications(TIARA)                    E213800100032 
-DETECTOR   (HPGE) crystal diameter of 58 MM and length of 67.3 MM E213800100033 
-STATUS     (TABLE) Table 1 of Journal of Radioanalytical and      E213800100034 
-                   Nuclear Chemistry Vol280,p199-205,2009         E213800100035 
-HISTORY    (20090902C) Ayano Makinaga                             E213800100036 
-ENDBIB              34          0                                 E213800100037 
-NOCOMMON             0          0                                 E213800100038 
-ENDSUBENT           37          0                                 E213800199999 
-SUBENT        E2138002   20100331                             E061E213800200001 
-BIB                  2          3                                 E213800200002 
-REACTION   (28-NI-64(P,N)29-CU-64,,TTY,,DT)                       E213800200003 
-FLAG       (1.) target thickness 191 mg/cm2 (150 mg)              E213800200004 
-           (2.) target thickness 573 mg/cm2 (450 mg)              E213800200005 
-ENDBIB               3          0                                 E213800200006 
-NOCOMMON             0          0                                 E213800200007 
-DATA                 5          2                                 E213800200008 
-EN         DATA-MIN   DATA-MAX   DATA       FLAG                  E213800200009 
-MEV        MBQ/MUAHR  MBQ/MUAHR  MBQ/MUAHR  NO-DIM                E213800200010 
- 11.        66.0       81.6                  1.                   E213800200011 
- 20.                              186.       2.                   E213800200012 
-ENDDATA              4          0                                 E213800200013 
-ENDSUBENT           12          0                                 E213800299999 
+REFERENCE  (J,JRN,280,199,2009)                                   E213800100020 
+INC-SOURCE Beam intensity is 5 uA.                                E213800100021 
+SAMPLE     - Target enrichment: 99.4% to 64Ni                     E213800100022 
+           - Chemical-form of target: NiO                         E213800100023 
+           - Physical-form of target is solid.                    E213800100024 
+           - Target-thickness: See flag                           E213800100025 
+           - Backing is aluminium.                                E213800100026 
+           - Backing-thickness: thickness 10 um, dimension 1 cm*1 E213800100027 
+             cm                                                   E213800100028 
+METHOD     (ACTIV)                                                E213800100029 
+           (CHSEP) Anion-exchange method                          E213800100030 
+FACILITY   (ISOCY,2JPNJAE) AVF cyclotron of Takasaki Ion          E213800100031 
+                           Accelerators for Advanced Radiation    E213800100032 
+                           Applications(TIARA)                    E213800100033 
+DETECTOR   (HPGE) crystal diameter of 58 MM and length of 67.3 MM E213800100034 
+STATUS     (TABLE) Table 1 of Journal of Radioanalytical and      E213800100035 
+                   Nuclear Chemistry Vol280,p199-205,2009         E213800100036 
+HISTORY    (20090902C) Ayano Makinaga                             E213800100037 
+           (20191209A) Tada. REFERENCE modified. REACTION         E213800100038 
+                       corrected. TIME-IRRD added.                E213800100039 
+ENDBIB              37          0                                 E213800100040 
+COMMON               1          3                                 E213800100041 
+TIME-IRRD                                                         E213800100042 
+HR                                                                E213800100043 
+ 1.                                                               E213800100044 
+ENDCOMMON            3          0                                 E213800100045 
+ENDSUBENT           44          0                                 E213800199999 
+SUBENT        E2138002   20200121                             E125E213800200001 
+BIB                  3          5                                 E213800200002 
+REACTION   (28-NI-OXI(P,X)29-CU-64,,TTY,,EOB/FCT)                 E213800200003 
+           Yield for enriched 64NiO                               E213800200004 
+FLAG       (1.) target thickness 191 mg/cm2 (150 mg)              E213800200005 
+           (2.) target thickness 573 mg/cm2 (450 mg)              E213800200006 
+HISTORY    (20191209A) SF8: DT -> EOB/FCT. SF1: corrected to OXI  E213800200007 
+ENDBIB               5          0                                 E213800200008 
+NOCOMMON             0          0                                 E213800200009 
+DATA                 5          2                                 E213800200010 
+EN         DATA-MIN   DATA-MAX   DATA       FLAG                  E213800200011 
+MEV        MBQ/MUAHR  MBQ/MUAHR  MBQ/MUAHR  NO-DIM                E213800200012 
+        11.       66.0       81.6                    1.           E213800200013 
+        20.                             186.         2.           E213800200014 
+ENDDATA              4          0                                 E213800200015 
+ENDSUBENT           14          0                                 E213800299999 
 ENDENTRY             2          0                                 E213899999999 
