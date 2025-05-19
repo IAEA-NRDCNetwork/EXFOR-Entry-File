@@ -1,0 +1,72 @@
+ENTRY            14733   20220118                             149614733  0    1 
+SUBENT        14733001   20220118                             149614733  1    1 
+BIB                  9         17                                 14733  1    2 
+TITLE      The ratio of the fission cross sections of 49 and 25   14733  1    3 
+           for thermal neutrons and the ration [1+alpha(49)]/     14733  1    4 
+           [1+alpha(25)]                                          14733  1    5 
+AUTHOR     (J.W.Dewire,R.R.Wilson,W.D.Woodward)                   14733  1    6 
+REFERENCE  (R,LA-103,1944)                                        14733  1    7 
+REL-REF    (R,14734001,E.E.Anderson+,S,LA-91,1944) 239Pu          14733  1    8 
+           absorption cross section.                              14733  1    9 
+INSTITUTE  (1USALAS)                                              14733  1   10 
+FACILITY   (CYCLO,1USALAS)                                        14733  1   11 
+INC-SOURCE (D-BE) A thermalized neutron flux of about 2*10**5     14733  1   12 
+           neutrons/cm2/sec at the center of the 11'*7'*6'8"      14733  1   13 
+           graphite block at the cyclotron.                       14733  1   14 
+DETECTOR   (IOCH) The comparison chamber consisted of two         14733  1   15 
+           parallel plate ionization chambers having a common     14733  1   16 
+           high voltage electrode, on which the samples were      14733  1   17 
+           placed.                                                14733  1   18 
+HISTORY    (20220118C) BP                                         14733  1   19 
+ENDBIB              17          0                                 14733  1   20 
+COMMON               1          3                                 14733  1   21 
+EN-DUMMY                                                          14733  1   22 
+EV                                                                14733  1   23 
+     0.0253                                                       14733  1   24 
+ENDCOMMON            3          0                                 14733  1   25 
+ENDSUBENT           24          0                                 14733  199999 
+SUBENT        14733002   20220118                             149614733  2    1 
+BIB                  5         14                                 14733  2    2 
+REACTION   ((94-PU-239(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA)) 14733  2    3 
+SAMPLE     Six foils of 235U and four foils of 239Pu were used    14733  2    4 
+           in the experiment. All the foils were deposited on 1   14733  2    5 
+           or 2 mil Pt. All the weights are based on a half life  14733  2    6 
+           for 239Pu of 24,400 years.                             14733  2    7 
+ERR-ANALYS (DATA-ERR) In order to find any systematic errors in   14733  2    8 
+           counting, a 239Pu foil and a 235U foil were compared   14733  2    9 
+           under conditions obtained by separately interchanging  14733  2   10 
+           scalars, amplifiers, and foils, and by moving the      14733  2   11 
+           chamber within the block. No significant change in     14733  2   12 
+           the counting ratio were detected. No further details   14733  2   13 
+           on how the given uncertainty was determined.           14733  2   14 
+DECAY-DATA (94-PU-239,24400.YR)                                   14733  2   15 
+STATUS     (TABLE) page 5.                                        14733  2   16 
+ENDBIB              14          0                                 14733  2   17 
+NOCOMMON             0          0                                 14733  2   18 
+DATA                 2          1                                 14733  2   19 
+DATA       DATA-ERR                                               14733  2   20 
+NO-DIM     NO-DIM                                                 14733  2   21 
+       1.40       0.02                                            14733  2   22 
+ENDDATA              3          0                                 14733  2   23 
+ENDSUBENT           22          0                                 14733  299999 
+SUBENT        14733003   20220118                             149614733  3    1 
+BIB                  4         10                                 14733  3    2 
+REACTION   (((94-PU-239(N,ABS),,SIG,,SPA)/                        14733  3    3 
+           (92-U-235(N,ABS),,SIG,,SPA))/                          14733  3    4 
+           ((94-PU-239(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA)))14733  3    5 
+ANALYSIS   The following relation was used: [1+alpha(239Pu)]/     14733  3    6 
+           [1+alpha(235U)] = ((sigma abs(239Pu)/sigma abs(235U))/ 14733  3    7 
+            (sigmaf(235U)/sigmaf(239Pu))).                        14733  3    8 
+ASSUMED    (ASSUM1,94-PU-239(N,ABS),,SIG)                         14733  3    9 
+           (ASSUM2,92-U-235(N,ABS),,SIG)                          14733  3   10 
+STATUS     (DEP,14733002)                                         14733  3   11 
+           (TABLE) page 7.                                        14733  3   12 
+ENDBIB              10          0                                 14733  3   13 
+NOCOMMON             0          0                                 14733  3   14 
+DATA                 3          1                                 14733  3   15 
+DATA       ASSUM1     ASSUM2                                      14733  3   16 
+NO-DIM     B          B                                           14733  3   17 
+       1.29     1056.0      640.0                                 14733  3   18 
+ENDDATA              3          0                                 14733  3   19 
+ENDSUBENT           18          0                                 14733  399999 
+ENDENTRY             3          0                                 1473399999999 
