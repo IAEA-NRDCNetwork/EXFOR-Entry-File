@@ -1,6 +1,6 @@
-ENTRY            40203   20150109                             416740203  0    1 
-SUBENT        40203001   20150109                             416740203  1    1 
-BIB                 10         38                                 40203  1    2 
+ENTRY            40203   20150506                             416940203  0    1 
+SUBENT        40203001   20150506                             416940203  1    1 
+BIB                 10         39                                 40203  1    2 
 INSTITUTE  (4ZZZDUB)                                              40203  1    3 
 REFERENCE  (J,SNP,18,371,1974) Eng.transl.of YF,18,(4),724,1973   40203  1    4 
            (J,YF,18,(4),724,1973) Data from article               40203  1    5 
@@ -39,9 +39,10 @@ HISTORY    (19740310C) Compiled at the centre                     40203  1   29
            MONITOR.                                               40203  1   38 
            Subent 002 was essentially corrected.                  40203  1   39 
            Subent 004 was added.                                  40203  1   40 
-ENDBIB              38          0                                 40203  1   41 
-NOCOMMON             0          0                                 40203  1   42 
-ENDSUBENT           41          0                                 40203  199999 
+           (20150506A) Subent 4 was corrected.                    40203  1   41 
+ENDBIB              39          0                                 40203  1   42 
+NOCOMMON             0          0                                 40203  1   43 
+ENDSUBENT           42          0                                 40203  199999 
 SUBENT        40203002   20150109                             416740203  2    1 
 BIB                  6         17                                 40203  2    2 
 REACTION   ((96-CM-246(0,F),PR,NU)/(96-CM-244(0,F),PR,NU))        40203  2    3 
@@ -99,47 +100,85 @@ PRT/FIS    PRT/FIS                                                40203  3   27
  2.98       0.03                                                  40203  3   28 
 ENDDATA              3          0                                 40203  3   29 
 ENDSUBENT           28          0                                 40203  399999 
-SUBENT        40203004   20150109                             416740203  4    1 
-BIB                  9         22                                 40203  4    2 
-REACTION  1(96-CM-244(0,F),PR/NUM,NU)                             40203  4    3 
-          2(96-CM-246(0,F),PR/NUM,NU)                             40203  4    4 
-SAMPLE     Cm-244 sample with ~0.2 micrograms weight with         40203  4    5 
-           fissionable impurities contents up to 0.1%.            40203  4    6 
-           Cm-246 sample of ~0.8 micrograms weight,               40203  4    7 
-           98.6% of Cm-246                                        40203  4    8 
-MONITOR    (96-CM-244(0,F),PR,NU) The fission neutrons detection  40203  4    9 
-           efficiency was determined from known value             40203  4   10 
-           NU=2.69+-0.01 prt/fis for Cm-244 from:                 40203  4   11 
-MONIT-REF  (,F.Manero+,R,INDC(NDS)-34/G,1971)                     40203  4   12 
-            2.681+-0.011 - Tables 5,6 ( no pages numbers in hard  40203  4   13 
-           copy).                                                 40203  4   14 
-           (40140002,L.I.Prokhorova+,J,AE,33,(3),767,1972)        40203  4   15 
-            2.70+-0.14 prt/fis.                                   40203  4   16 
-ANALYSIS    Method of statistical smoothing was used.             40203  4   17 
-MISC-COL   (MISC1) Nu-dispersion for Cm-244                       40203  4   18 
-           (MISC2) Nu-dispersion for Cm-246                       40203  4   19 
-             Sigma**2=<nu**2>-<nu>**2, in units (prt/fis)**2.     40203  4   20 
-ERR-ANALYS (DATA-ERR)  Quoted error consists of statistical error 40203  4   21 
-           and systematical errors.                               40203  4   22 
-STATUS     (TABLE) Table 1 of J,SNP,18,371,1974                   40203  4   23 
-HISTORY    (20150109C) M.M.                                       40203  4   24 
-ENDBIB              22          0                                 40203  4   25 
-COMMON               4          3                                 40203  4   26 
-MISC1      MISC1-ERR  MISC2      MISC2-ERR                        40203  4   27 
-SEE TEXT   SEE TEXT   SEE TEXT   SEE TEXT                         40203  4   28 
- 1.28      0.02       1.31       0.02                             40203  4   29 
-ENDCOMMON            3          0                                 40203  4   30 
-DATA                 5          8                                 40203  4   31 
-PART-OUT   DATA      1DATA-ERR  1DATA      2DATA-ERR  2           40203  4   32 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                40203  4   33 
-0.         0.29       0.004      0.016      0.005                 40203  4   34 
-1.         0.098      0.012      0.060      0.014                 40203  4   35 
-2.         0.314      0.017      0.264      0.020                 40203  4   36 
-3.         0.330      0.017      0.341      0.020                 40203  4   37 
-4.         0.175      0.015      0.219      0.020                 40203  4   38 
-5.         0.052      0.014      0.094      0.020                 40203  4   39 
-6.         0.002      0.013      0.006      0.010                 40203  4   40 
-7.         0.000      0.007      0.000      0.012                 40203  4   41 
-ENDDATA             10          0                                 40203  4   42 
-ENDSUBENT           41          0                                 40203  499999 
-ENDENTRY             4          0                                 4020399999999 
+SUBENT        40203004   20150506                             416940203  4    1 
+BIB                  9         19                                 40203  4    2 
+REACTION   (96-CM-244(0,F),PR/NUM,NU)                             40203  4    3 
+SAMPLE     Cm-244 sample with ~0.2 micrograms weight with         40203  4    4 
+           fissionable impurities contents up to 0.1%.            40203  4    5 
+MONITOR    (96-CM-244(0,F),PR,NU) The fission neutrons detection  40203  4    6 
+           efficiency was determined from known value             40203  4    7 
+           NU=2.69+-0.01 prt/fis for Cm-244 from:                 40203  4    8 
+MONIT-REF  (,F.Manero+,R,INDC(NDS)-34/G,1971)                     40203  4    9 
+            2.681+-0.011 - Tables 5,6 ( no pages numbers in hard  40203  4   10 
+           copy).                                                 40203  4   11 
+           (40140002,L.I.Prokhorova+,J,AE,33,(3),767,1972)        40203  4   12 
+            2.70+-0.14 prt/fis.                                   40203  4   13 
+ANALYSIS    Method of statistical smoothing was used.             40203  4   14 
+MISC-COL   (MISC) Nu-dispersion for Cm-244                        40203  4   15 
+             Sigma**2=<nu**2>-<nu>**2, in units (prt/fis)**2.     40203  4   16 
+ERR-ANALYS (DATA-ERR)  Quoted error consists of statistical error 40203  4   17 
+           and systematical errors.                               40203  4   18 
+STATUS     (TABLE) Table 1 of J,SNP,18,371,1974                   40203  4   19 
+HISTORY    (20150109C) M.M.                                       40203  4   20 
+           (20150506A) Data for Cm-246 were moved in Subent 005.  40203  4   21 
+ENDBIB              19          0                                 40203  4   22 
+COMMON               2          3                                 40203  4   23 
+MISC       MISC-ERR                                               40203  4   24 
+SEE TEXT   SEE TEXT                                               40203  4   25 
+ 1.28      0.02                                                   40203  4   26 
+ENDCOMMON            3          0                                 40203  4   27 
+DATA                 3          8                                 40203  4   28 
+PART-OUT   DATA       DATA-ERR                                    40203  4   29 
+NO-DIM     NO-DIM     NO-DIM                                      40203  4   30 
+0.         0.29       0.004                                       40203  4   31 
+1.         0.098      0.012                                       40203  4   32 
+2.         0.314      0.017                                       40203  4   33 
+3.         0.330      0.017                                       40203  4   34 
+4.         0.175      0.015                                       40203  4   35 
+5.         0.052      0.014                                       40203  4   36 
+6.         0.002      0.013                                       40203  4   37 
+7.         0.000      0.007                                       40203  4   38 
+ENDDATA             10          0                                 40203  4   39 
+ENDSUBENT           38          0                                 40203  499999 
+SUBENT        40203005   20150506                             416940203  5    1 
+BIB                  9         20                                 40203  5    2 
+REACTION   (96-CM-246(0,F),PR/NUM,NU)                             40203  5    3 
+SAMPLE     Cm-244 sample with ~0.2 micrograms weight with         40203  5    4 
+           fissionable impurities contents up to 0.1%.            40203  5    5 
+           Cm-246 sample of ~0.8 micrograms weight,               40203  5    6 
+           98.6% of Cm-246                                        40203  5    7 
+MONITOR    (96-CM-244(0,F),PR,NU) The fission neutrons detection  40203  5    8 
+           efficiency was determined from known value             40203  5    9 
+           NU=2.69+-0.01 prt/fis for Cm-244 from:                 40203  5   10 
+MONIT-REF  (,F.Manero+,R,INDC(NDS)-34/G,1971)                     40203  5   11 
+            2.681+-0.011 - Tables 5,6 ( no pages numbers in hard  40203  5   12 
+           copy).                                                 40203  5   13 
+           (40140002,L.I.Prokhorova+,J,AE,33,(3),767,1972)        40203  5   14 
+            2.70+-0.14 prt/fis.                                   40203  5   15 
+ANALYSIS    Method of statistical smoothing was used.             40203  5   16 
+MISC-COL   (MISC) Nu-dispersion for Cm-246                        40203  5   17 
+             Sigma**2=<nu**2>-<nu>**2, in units (prt/fis)**2.     40203  5   18 
+ERR-ANALYS (DATA-ERR)  Quoted error consists of statistical error 40203  5   19 
+           and systematical errors.                               40203  5   20 
+STATUS     (TABLE) Table 1 of J,SNP,18,371,1974                   40203  5   21 
+HISTORY    (20150506C) Data for Cm-246 were moved from Subent 004.40203  5   22 
+ENDBIB              20          0                                 40203  5   23 
+COMMON               2          3                                 40203  5   24 
+MISC       MISC-ERR                                               40203  5   25 
+SEE TEXT   SEE TEXT                                               40203  5   26 
+1.31       0.02                                                   40203  5   27 
+ENDCOMMON            3          0                                 40203  5   28 
+DATA                 3          8                                 40203  5   29 
+PART-OUT   DATA       DATA-ERR                                    40203  5   30 
+NO-DIM     NO-DIM     NO-DIM                                      40203  5   31 
+0.         0.016      0.005                                       40203  5   32 
+1.         0.060      0.014                                       40203  5   33 
+2.         0.264      0.020                                       40203  5   34 
+3.         0.341      0.020                                       40203  5   35 
+4.         0.219      0.020                                       40203  5   36 
+5.         0.094      0.020                                       40203  5   37 
+6.         0.006      0.010                                       40203  5   38 
+7.         0.000      0.012                                       40203  5   39 
+ENDDATA             10          0                                 40203  5   40 
+ENDSUBENT           39          0                                 40203  599999 
+ENDENTRY             5          0                                 4020399999999 
