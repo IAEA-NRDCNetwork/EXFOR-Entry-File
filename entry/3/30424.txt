@@ -1,47 +1,51 @@
-ENTRY            30424   20090310                             31353042400000001 
-SUBENT        30424001   20090310                             31353042400100001 
-BIB                 15         38                                 3042400100002 
-TITLE      Neutron capture cross section of Fe-57.                3042400100003 
-AUTHOR     (B.J.Allen,A.R.de L.Musgrove,R.Taylor,R.L.Macklin)     3042400100004 
-INSTITUTE  (3AULAUA)                                              3042400100005 
-           (1USAORL) Location of exp., last author's address.     3042400100006 
-REFERENCE  (C,77GEEL,,476,197712)                                 3042400100007 
-           (W,ALLEN,19771024) Preprint. Compilation was performed.3042400100008 
-           (J,NSE,82,(2),230,1982) Correction factor (=1.0360) for3042400100009 
-            neutron capture cross-section is given                3042400100010 
-SAMPLE     Enriched metallic sample, enriched to 93.6% Fe-57      3042400100011 
-           thickness 0.00183 atom/b and 2.6*5.2 cm2.              3042400100012 
-FACILITY   (LINAC,1USAORL)                                        3042400100013 
-           ORNL electron linac,(ORELA)                            3042400100014 
-INC-SOURCE (PHOTO)                                                3042400100015 
-METHOD     (TOF) Time of flight, path = 40 m.                     3042400100016 
-           Energy resolution of 0.2%.                             3042400100017 
-DETECTOR   (SCIN) Two non-hydrogenous liquid scintillators.  See  3042400100018 
-           detail in Macklin and Allen,Nucl.Instr.Meth.91(1971)5653042400100019 
-           . 0.5 mm thick Li-6 glass scintillator as neutron flux 3042400100020 
-           monitor.                                               3042400100021 
-PART-DET   (G) Gammas.                                            3042400100022 
-MONITOR    (3-LI-6(N,T)2-HE-4,,SIG)                               3042400100023 
-           See detail in Macklin et al.,Phys.Rev.C11(1975)1270.   3042400100024 
-ANALYSIS   (AREA) Area analysis using a modified version of the   3042400100025 
-           ORNL/RPI Monte Carlo code by J.G.Sullivan et al.,Report3042400100026 
-           RPI-328-155(1969).                                     3042400100027 
-           .When the neutron-width is greater than 0.2*(energy    3042400100028 
-           resolution-width), a shape fit was also performed.     3042400100029 
-CORRECTION Self-shielding and multiple-scattering corrections were3042400100030 
-           considered in Monte Carlo code.                        3042400100031 
-           Prompt background correction was made for resonance    3042400100032 
-           scattered neutrons.                                    3042400100033 
-STATUS     (APRVD) Approved with amendments by Allen, 78/04/07.   3042400100034 
-HISTORY    (19771115C) KO.                                        3042400100035 
-           (19780421A) KO.-'Aprvd' added. Correction of subentries3042400100036 
-            .002 and .003.-                                       3042400100037 
-           (19821108U) DG.-Insertion of corregendum in reference. 3042400100038 
-           (19930202U) HW.-Sequence institute codes altered.-     3042400100039 
-           (20090310A) SD:Updated to new date formats,lower case. 3042400100040 
-ENDBIB              38          0                                 3042400100041 
-NOCOMMON             0          0                                 3042400100042 
-ENDSUBENT           41          0                                 3042400199999 
+ENTRY            30424   20171122                             31803042400000001 
+SUBENT        30424001   20171122                             31803042400100001 
+BIB                 17         42                                 3042400100002 
+TITLE      Neutron capture cross section of 57Fe                  3042400100003 
+AUTHOR     (B.J.Allen, A.R.de L.Musgrove, R.Taylor, R.L.Macklin)  3042400100004 
+INSTITUTE  (3AULAUA,1USAORL)                                      3042400100005 
+           (3AULAUL) James Cook Univ., Townsville                 3042400100006 
+REFERENCE  (C,77GEEL,,476,1977)                                   3042400100007 
+           (W,ALLEN,19771024)  Preprint used for compilation      3042400100008 
+           (J,NSE,82,230,1982) Correction factor given            3042400100009 
+FACILITY   (LINAC,1USAORL) ORELA                                  3042400100010 
+INC-SOURCE (PHOTO)                                                3042400100011 
+METHOD     (TOF) 40 m flight path, energy resolution of 0.2%      3042400100012 
+SAMPLE     (26-FE-57,ENR=0.936)                                   3042400100013 
+            Metallic sample (enriched to 93.6% Fe-57,             3042400100014 
+            0.00183 atoms/b, 2.6 cm x 5.2 cm)                     3042400100015 
+DETECTOR   (SCIN) Two non-hydrogenous liquid scintillators.       3042400100016 
+           (GLASD) 0.5 mm thick Li-6 glass scintillator as        3042400100017 
+            neutron flux monitor                                  3042400100018 
+REL-REF    (I,,R.L.Macklin+,J,NIM,91,565,1971)                    3042400100019 
+            Details about the liquid scintillator                 3042400100020 
+           (N,,J.G.Sullivan+,R,RPI-328-155,1969)                  3042400100021 
+            Details of ORNL/RPI Monte Carlo code                  3042400100022 
+PART-DET   (G)                                                    3042400100023 
+MONITOR    (3-LI-6(N,T)2-HE-4,,SIG)                               3042400100024 
+MONIT-REF  (10432001,R.L.Macklin+,J,PR/C,11,1270,1975)            3042400100025 
+            Parametrization of 6Li(n,a) cross section             3042400100026 
+ANALYSIS   (AREA) Area analysis using a modified version of the   3042400100027 
+            ORNL/RPI Monte Carlo code.                            3042400100028 
+           (SHAPE) Shape fit when the neutron-width is greater    3042400100029 
+            than 0.2*(energy resolution-width)                    3042400100030 
+CORRECTION Corrected for                                          3042400100031 
+            - self-shielding and multiple-scattering corrections  3042400100032 
+              (in Monte Carlo code)                               3042400100033 
+            - prompt background correction (for resonance         3042400100034 
+              scattered neutrons)                                 3042400100035 
+STATUS     (APRVD) Approved with amendments by Allen, 78/04/07.   3042400100036 
+HISTORY    (19771115C) KO.                                        3042400100037 
+           (19780421A) KO.- APRVD added. Correction of subentries 3042400100038 
+            .002 and .003.-                                       3042400100039 
+           (19821108U) DG.-Insertion of corregendum in reference. 3042400100040 
+           (19930202U) HW.-Sequence institute codes altered.-     3042400100041 
+           (20090310A) SD:Updated to new date formats,lower case. 3042400100042 
+           (20171006A) VS. Subent 005 REACTION correctiom.        3042400100043 
+           (20171122U) On. BIB updated.                           3042400100044 
+ENDBIB              42          0                                 3042400100045 
+NOCOMMON             0          0                                 3042400100046 
+ENDSUBENT           45          0                                 3042400199999 
 SUBENT        30424002   20090310                             31353042400200001 
 BIB                  7         26                                 3042400200002 
 REACTION  1(26-FE-57(N,0),,EN)                                    3042400200003 
@@ -479,23 +483,24 @@ KEV        KEV        MB         MB                               3042400400013
  1.5000E+02 2.0000E+02 3.5000E+00 3.0000E-01                      3042400400030 
 ENDDATA             19          0                                 3042400400031 
 ENDSUBENT           30          0                                 3042400499999 
-SUBENT        30424005   20090310                             31353042400500001 
-BIB                  5          7                                 3042400500002 
-REACTION   (26-FE-57(N,G)26-FE-58,,SIG,,SPA)                      3042400500003 
-INC-SPECT  Maxwellian average for stellar temperature,            3042400500004 
-            ''kT'' = 30 keV.                                      3042400500005 
-STATUS     (TABLE) Data from Table 3 of preprint sent by          3042400500006 
-                                               Allen, 77/10/24.   3042400500007 
-ERR-ANALYS (DATA-ERR) No further information.                     3042400500008 
-HISTORY    (20090428U) OS. EN-DUMMY=45 keV replaced by KT=30 keV  3042400500009 
-ENDBIB               7          0                                 3042400500010 
-NOCOMMON             0          0                                 3042400500011 
-DATA                 3          1                                 3042400500012 
-KT         DATA       DATA-ERR                                    3042400500013 
-KEV        MB         MB                                          3042400500014 
- 3.0000E+01 3.4700E+01 2.3000E+00                                 3042400500015 
-ENDDATA              3          0                                 3042400500016 
-ENDSUBENT           15          0                                 3042400599999 
+SUBENT        30424005   20171122                             31803042400500001 
+BIB                  4          8                                 3042400500002 
+REACTION   (26-FE-57(N,G)26-FE-58,,SIG,,MXW)                      3042400500003 
+ERR-ANALYS (DATA-ERR) No further information.                     3042400500004 
+STATUS     (TABLE) Table 3 of Proc. of Specialist's Meeting on    3042400500005 
+            Neutron Data of Structural Materials for Fast         3042400500006 
+            Reactors, CBNM, Geel, 5-8 Dec 1977                    3042400500007 
+HISTORY    (20090428U) OS. EN-DUMMY=45 keV replaced by KT=30 keV  3042400500008 
+           (20171006A) VS. SPA -> MXW                             3042400500009 
+           (20171122U) On. BIB updated.                           3042400500010 
+ENDBIB               8          0                                 3042400500011 
+NOCOMMON             0          0                                 3042400500012 
+DATA                 3          1                                 3042400500013 
+KT         DATA       DATA-ERR                                    3042400500014 
+KEV        MB         MB                                          3042400500015 
+ 30.        34.7       2.3                                        3042400500016 
+ENDDATA              3          0                                 3042400500017 
+ENDSUBENT           16          0                                 3042400599999 
 SUBENT        30424006   20090310                             31353042400600001 
 BIB                  3          4                                 3042400600002 
 REACTION   (26-FE-57(N,G)26-FE-58,,RI)                            3042400600003 
