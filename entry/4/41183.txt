@@ -1,85 +1,89 @@
-ENTRY            41183   20130219                             41604118300000001 
-SUBENT        41183001   20130219                             41604118300100001 
-BIB                 14         34                                 4118300100002 
-TITLE       Neutron radiation cross-sections by the Th-232        4118300100003 
-            and Au-197 nuclei in the energy range 0.37 - 1 MeV    4118300100004 
-AUTHOR     (A.N.Davletshin,E.V.Teplov,A.O.Tipunkov,               4118300100005 
-           S.V.Tikhonov,V.A.Tolstikov)                            4118300100006 
-INSTITUTE  (4RUSFEI)                                              4118300100007 
-REFERENCE  (J,YK,1993,(1),13,199303)                              4118300100008 
-           (R,INDC(CCP)-389,1,1995) Engl. transl. of J,YK,1993    4118300100009 
-REL-REF    (M,40968001,A.N.Davletshin+,J,AE,65,(5),343,1988)      4118300100010 
-            Experimental details of method.                       4118300100011 
-           (M,40968001,A.N.Davletshin+,J,SJA,65,(5),913,1988)     4118300100012 
-                      Engl.translation of J,AE,65.                4118300100013 
-METHOD     (ACTIV)                                                4118300100014 
-FACILITY   (VDG,4RUSFEI)  KG-2.5 FEI accelerator                  4118300100015 
-INC-SPECT   Energy resolution represents spectrum dispersion      4118300100016 
-            of the neutrons impinging detectors                   4118300100017 
-INC-SOURCE (P-T)  ScT2 targets of 0.64-0.90 mg/cm**2 thickness.   4118300100018 
-           Air cooled.                                            4118300100019 
-DETECTOR   (GELI)                                                 4118300100020 
-CORRECTION   Corrections were calculated by the Monte-Carlo       4118300100021 
-             method. Corrections on neutron background at the     4118300100022 
-             detector position lays in the interval 1.6-2.4       4118300100023 
-             percent, in the gold sample - up to 0.9 percents,    4118300100024 
-             in the thorium sample - 0.0 percent.                 4118300100025 
-STATUS      Data are taken from the reference                     4118300100026 
-ERR-ANALYS (ERR-T) Error consists of the sum of experimental and  4118300100027 
-                   calculation errors                             4118300100028 
-           (ERR-1,0.3,0.5) Statistical error of calculated by     4118300100029 
-           Monte-Carlo code values.                               4118300100030 
-HISTORY    (19960401C)  + + Compiled at the centre - CJD + +      4118300100031 
-           (20110721A) Upper -> lower case correction.            4118300100032 
-           Dates were corrected for 4-digits year.                4118300100033 
-           Reference of Engl.translations was added.              4118300100034 
-           BIB information was added.                             4118300100035 
-           (20130219U) Ref. INDC(CCP)-389,1,1995 was added.       4118300100036 
-ENDBIB              34          0                                 4118300100037 
-NOCOMMON             0          0                                 4118300100038 
-ENDSUBENT           37          0                                 4118300199999 
-SUBENT        41183002   20110721                             41534118300200001 
-BIB                  5          7                                 4118300200002 
-REACTION   (79-AU-197(N,G)79-AU-198,,SIG)                         4118300200003 
-MONITOR    (92-U-235(N,F),,SIG)                                   4118300200004 
-DECAY-DATA (79-AU-198,,DG,411.8)                                  4118300200005 
-SAMPLE      Metallic disk, diameter 2 cm, weight near 1 gram      4118300200006 
-STATUS     (TABLE) Table 1 of J,YK,1993,(1),13,1993               4118300200007 
-           (COREL,41190002) In 41190 - different INC-SOURCE:      4118300200008 
-            TiT, water cooled.                                    4118300200009 
-ENDBIB               7          0                                 4118300200010 
-NOCOMMON             0          0                                 4118300200011 
-DATA                 4          5                                 4118300200012 
-EN         EN-RSL     DATA       ERR-T                            4118300200013 
-KEV        KEV        MB         PER-CENT                         4118300200014 
-  370.       32.        170.       3.                             4118300200015 
-  439.       38.        151.       3.                             4118300200016 
-  592.       31.        113.       3.                             4118300200017 
-  800.       32.         87.5      1.6                            4118300200018 
- 1000.       31.         80.5      3.                             4118300200019 
-ENDDATA              7          0                                 4118300200020 
-ENDSUBENT           19          0                                 4118300299999 
-SUBENT        41183003   20110721                             41534118300300001 
-BIB                  5          9                                 4118300300002 
-REACTION  1(90-TH-232(N,G)90-TH-233,,SIG)                         4118300300003 
-          2(90-TH-232(N,G)90-TH-233,,SIG)                         4118300300004 
-MONITOR   1(79-AU-197(N,G)79-AU-198,,SIG)                         4118300300005 
-          2(92-U-235(N,F),,SIG)                                   4118300300006 
-SAMPLE      Thorium oxide in the cylindrical stainless-steel      4118300300007 
-            containers, diameter 2 cm, weight near 1 gram         4118300300008 
-DECAY-DATA (92-U-233,,DG,311.9) After double Beta- decay of Th-2324118300300009 
-           (79-AU-198,,DG,411.8)                                  4118300300010 
-STATUS     (TABLE) Table 2 of J,YK,1993,(1),13,1993               4118300300011 
-ENDBIB               9          0                                 4118300300012 
-NOCOMMON             0          0                                 4118300300013 
-DATA                 6          5                                 4118300300014 
-EN         EN-RSL     DATA      1ERR-T     1DATA      2ERR-T      4118300300015 
-KEV        KEV        MB         PER-CENT   MB         PER-CENT   4118300300016 
-  370.       32.         137.       5.         135.        5.     4118300300017 
-  439.       38.         129.       2.5        130.        3.5    4118300300018 
-  592.       31.         134.       3.5        136.        4.5    4118300300019 
-  800.       32.         140.       3.5        137.        4.5    4118300300020 
- 1000.       31.         113.       4.5        112.        3.     4118300300021 
-ENDDATA              7          0                                 4118300300022 
-ENDSUBENT           21          0                                 4118300399999 
+ENTRY            41183   20191107                             418441183  0    1 
+SUBENT        41183001   20191107                             418441183  1    1 
+BIB                 13         36                                 41183  1    2 
+TITLE       Neutron radiation cross-sections for the 232Th        41183  1    3 
+            and 197Au nuclei in the 0.37 - 1 MeV range            41183  1    4 
+AUTHOR     (A.N.Davletshin, E.V.Teplov, A.O.Tipunkov,             41183  1    5 
+           S.V.Tikhonov, V.A.Tolstikov)                           41183  1    6 
+INSTITUTE  (4RUSFEI)                                              41183  1    7 
+REFERENCE  ((J,YK,,(1),13,1993)=                                  41183  1    8 
+           (R,INDC(CCP)-317,13,1993))                             41183  1    9 
+           (R,INDC(CCP)-389,1,1995) Engl. transl. of J,YK,1993    41183  1   10 
+REL-REF    (M,40968001,A.N.Davletshin+,J,AE,65,343,1988) Issue 5. 41183  1   11 
+            Details of experimental method.                       41183  1   12 
+           (M,40968001,A.N.Davletshin+,J,SJA,65,913,1988)         41183  1   13 
+                      Engl.translation of J,AE,65.                41183  1   14 
+METHOD     (ACTIV)                                                41183  1   15 
+FACILITY   (VDG,4RUSFEI)  KG-2.5 FEI accelerator                  41183  1   16 
+INC-SPECT   Energy resolution represents spectrum dispersion      41183  1   17 
+            of the neutrons impinging detectors                   41183  1   18 
+INC-SOURCE (P-T)  ScT2 targets of 0.64-0.90 mg/cm**2 thickness.   41183  1   19 
+           Air cooled.                                            41183  1   20 
+DETECTOR   (GELI)                                                 41183  1   21 
+CORRECTION   Corrections were calculated by the Monte-Carlo       41183  1   22 
+             method. Corrections on neutron background at the     41183  1   23 
+             detector position lays in the interval 1.6-2.4 % ,   41183  1   24 
+             in the gold sample - up to 0.9 % ,                   41183  1   25 
+             in the thorium sample - 0.0 % .                      41183  1   26 
+ERR-ANALYS (ERR-T) Error consists of the sum of experimental and  41183  1   27 
+                   calculation errors                             41183  1   28 
+           (ERR-1,0.3,0.5) Statistical error of calculated by     41183  1   29 
+           Monte-Carlo code values.                               41183  1   30 
+HISTORY    (19960401C)  + + Compiled at the centre - CJD + +      41183  1   31 
+           (20110721A) Upper -> lower case correction.            41183  1   32 
+           Dates were corrected for 4-digits year.                41183  1   33 
+           Reference of Engl.translations was added.              41183  1   34 
+           BIB information was added.                             41183  1   35 
+           (20130219U) Ref. INDC(CCP)-389,1,1995 was added.       41183  1   36 
+           (20191107U) Minor correction in ref. YK                41183  1   37 
+            Ref. INDC-CCP-317 was added.                          41183  1   38 
+ENDBIB              36          0                                 41183  1   39 
+NOCOMMON             0          0                                 41183  1   40 
+ENDSUBENT           39          0                                 41183  199999 
+SUBENT        41183002   20191107                             418441183  2    1 
+BIB                  5          8                                 41183  2    2 
+REACTION   (79-AU-197(N,G)79-AU-198,,SIG)                         41183  2    3 
+MONITOR    (92-U-235(N,F),,SIG)                                   41183  2    4 
+            Evaluated data from standards library.                41183  2    5 
+DECAY-DATA (79-AU-198,,DG,411.8)                                  41183  2    6 
+SAMPLE      Metallic disk, diameter 2 cm, weight near 1 gram      41183  2    7 
+STATUS     (TABLE) Table 1 of J,YK,,(1),13,1993                   41183  2    8 
+           (COREL,41190002) In 41190 - different INC-SOURCE:      41183  2    9 
+            TiT, water cooled.                                    41183  2   10 
+ENDBIB               8          0                                 41183  2   11 
+NOCOMMON             0          0                                 41183  2   12 
+DATA                 4          5                                 41183  2   13 
+EN         EN-RSL-HW  DATA       ERR-T                            41183  2   14 
+KEV        KEV        MB         PER-CENT                         41183  2   15 
+  370.       32.        170.       3.                             41183  2   16 
+  439.       38.        151.       3.                             41183  2   17 
+  592.       31.        113.       3.                             41183  2   18 
+  800.       32.         87.5      1.6                            41183  2   19 
+ 1000.       31.         80.5      3.                             41183  2   20 
+ENDDATA              7          0                                 41183  2   21 
+ENDSUBENT           20          0                                 41183  299999 
+SUBENT        41183003   20191107                             418441183  3    1 
+BIB                  5         10                                 41183  3    2 
+REACTION  1(90-TH-232(N,G)90-TH-233,,SIG)                         41183  3    3 
+          2(90-TH-232(N,G)90-TH-233,,SIG)                         41183  3    4 
+MONITOR   1(79-AU-197(N,G)79-AU-198,,SIG)                         41183  3    5 
+          2(92-U-235(N,F),,SIG)                                   41183  3    6 
+            Evaluated data from standards library.                41183  3    7 
+SAMPLE      Thorium oxide in the cylindrical stainless-steel      41183  3    8 
+            containers, diameter 2 cm, weight near 1 gram         41183  3    9 
+DECAY-DATA (92-U-233,,DG,311.9) After double beta- decay of Th-23241183  3   10 
+           (79-AU-198,,DG,411.8)                                  41183  3   11 
+STATUS     (TABLE) Table 2 of J,YK,,(1),13,1993                   41183  3   12 
+ENDBIB              10          0                                 41183  3   13 
+NOCOMMON             0          0                                 41183  3   14 
+DATA                 6          5                                 41183  3   15 
+EN         EN-RSL-HW  DATA      1ERR-T     1DATA      2ERR-T      41183  3   16 
+KEV        KEV        MB         PER-CENT   MB         PER-CENT   41183  3   17 
+  370.       32.         137.       5.         135.        5.     41183  3   18 
+  439.       38.         129.       2.5        130.        3.5    41183  3   19 
+  592.       31.         134.       3.5        136.        4.5    41183  3   20 
+  800.       32.         140.       3.5        137.        4.5    41183  3   21 
+ 1000.       31.         113.       4.5        112.        3.     41183  3   22 
+ENDDATA              7          0                                 41183  3   23 
+ENDSUBENT           22          0                                 41183  399999 
 ENDENTRY             3          0                                 4118399999999 

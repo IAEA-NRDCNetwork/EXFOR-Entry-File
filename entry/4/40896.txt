@@ -1,71 +1,79 @@
-ENTRY            40896   20010319                             00004089600000001 
-SUBENT        40896001   20010319                             00004089600100001 
-BIB                 14         26                                 4089600100002 
-INSTITUTE  (4RUSRI)                                               4089600100003 
-REFERENCE  (J,YK,1985,(1),76,198503)  DATA ARE GIVEN              4089600100004 
-AUTHOR     (YU.N.TROFIMOV)                                        4089600100005 
-TITLE       SR-87(N,INL)SR-87-M REACTION CROSS-SECTION AT NEUTRON 4089600100006 
-            ENERGIES FROM THRESHOLD TO 2.2 MEV                    4089600100007 
-FACILITY   (VDG)  ELECTROSTATIC ACCELERATOR                       4089600100008 
-INC-SOURCE (P-T)                                                  4089600100009 
-INC-SPECT   EN-RSL. ENERGY SPREAD DUE TO THE PROTON ENERGY LOSSES 4089600100010 
-                    IN TITANUT-TRITIUM TARGETS AND SAMPLE'S SOLID 4089600100011 
-                    ANGLE RELATIVE TO THE NEUTRON SOURCE          4089600100012 
-METHOD     (ACTIV)                                                4089600100013 
-DETECTOR   (GELI) FOR SAMPLE AND IN-115 ACTIVATION MEASUREMENTS   4089600100014 
-           (SOLST) STILBENE CRYSTAL AND IN-115 ACTIVATION         4089600100015 
-                   DETECTORS FOR NEUTRON FLUX MONITORING          4089600100016 
-MONITOR    ((MONIT1)49-IN-115(N,INL)49-IN-115-M,,SIG)             4089600100017 
-           ((MONIT2)49-IN-115(N,G)49-IN-116-M,,SIG)               4089600100018 
-DECAY-MON  (49-IN-115-M,4.486HR,DG,336.25,0.459)                  4089600100019 
-           (49-IN-116-M,54.15MIN,DG,416.98,0.33)                  4089600100020 
-CORRECTION  THOSE ON NEUTRON FLUX NONSTATIONARITY, GEOMETRY       4089600100021 
-            DIFFERENCES, (P,N)-REACTION NEUTRONS, GAMMA SELF-     4089600100022 
-            ABSORPTION IN THE SAMPLE,COUNTING LOSSES IN THE       4089600100023 
-            ANALYSER WERE MADE AND PROUVED TO BE NEGLIGIBLE       4089600100024 
-ERR-ANALYS (ERR-T)  TOTAL ERROR ARISING MOSTLY FROM THE REFE-     4089600100025 
-                    RENCE CROSS-SECTIONS ERROR                    4089600100026 
-HISTORY    (19860703C)  COMPILED AT CJD                           4089600100027 
-           (20010319A) DATE is corrected                          4089600100028 
-ENDBIB              26          0                                 4089600100029 
-COMMON               3          3                                 4089600100030 
-ERR-S      MONIT1-ERR MONIT2-ERR                                  4089600100031 
-PER-CENT   PER-CENT   PER-CENT                                    4089600100032 
-  2.         10.        10.                                       4089600100033 
-ENDCOMMON            3          0                                 4089600100034 
-ENDSUBENT           33          0                                 4089600199999 
-SUBENT        40896002   20010319                             00004089600200001 
-BIB                  3          6                                 4089600200002 
-REACTION   (38-SR-87(N,INL)38-SR-87-M,,SIG)                       4089600200003 
-SAMPLE      STRONTIUM-CARBONATE TABLETTES 6 MM IN DIAMETER PLACED 4089600200004 
-            BETWEEN POLYETHILENE FILMS. SR-87 CONTENT IS 91+-0.4  4089600200005 
-            PERCENT, SR-86 CONTENT IS 0.92 PERCENT, SR-88 CONTENT 4089600200006 
-            IS 7.56 PERCENT                                       4089600200007 
-DECAY-DATA (38-SR-87-M,2.805HR,DG,388.3,0.841)                    4089600200008 
-ENDBIB               6          0                                 4089600200009 
-NOCOMMON             0          0                                 4089600200010 
-DATA                 6         19                                 4089600200011 
-EN         EN-RSL     DATA       ERR-T      MONIT1     MONIT2     4089600200012 
-MEV        MEV        MB         MB         MB         MB         4089600200013 
- 0.4        0.14        0.                              180.      4089600200014 
- 0.5        0.13        2.         0.5      3.75        183.      4089600200015 
- 0.6        0.13        5.         0.5      9.          188.      4089600200016 
- 0.7        0.13       10.         1.       14.         190.      4089600200017 
- 0.8        0.13       12.         1.       23.         200.      4089600200018 
- 0.9        0.12       13.         2.       40.         195.      4089600200019 
- 1.0        0.12       30.         3.       59.         188.      4089600200020 
- 1.1        0.12       42.         4.       90.         183.      4089600200021 
- 1.2        0.11       54.         4.       101.        178.      4089600200022 
- 1.3        0.11       62.         5.       116.        172.      4089600200023 
- 1.4        0.10       70.         6.       136.        166.      4089600200024 
- 1.5        0.10      124.         9.       167.        160.      4089600200025 
- 1.6        0.09      141.        12.       189.        153.      4089600200026 
- 1.7        0.09      168.        14.       210.        145.      4089600200027 
- 1.8        0.09      182.        15.       232.        137.      4089600200028 
- 1.9        0.09      189.        15.       246.        129.      4089600200029 
- 2.0        0.08      188.        15.       260.        121.      4089600200030 
- 2.1        0.08      190.        15.       270.        115.      4089600200031 
- 2.2        0.08      184.        15.       280.        108.      4089600200032 
-ENDDATA             21          0                                 4089600200033 
-ENDSUBENT           32          0                                 4089600299999 
+ENTRY            40896   20191103                             418440896  0    1 
+SUBENT        40896001   20191103                             418440896  1    1 
+BIB                 14         38                                 40896  1    2 
+INSTITUTE  (4RUSRI)                                               40896  1    3 
+REFERENCE  ((J,YK,,(1),76,1985)=                                  40896  1    4 
+           (R,INDC(CCP)-244,76,1985))                             40896  1    5 
+              Data are given                                      40896  1    6 
+            No Engl.translation of YK in R,INDC-CCP-275,1987      40896  1    7 
+AUTHOR     (Yu.N.Trofimov)                                        40896  1    8 
+TITLE       Cross-section for Sr-87(n,inl)Sr-87-m reaction at     40896  1    9 
+           neutron energies from threshold to 2.2 MeV             40896  1   10 
+FACILITY   (VDG,4RUSRI)  Electrostatic accelerator                40896  1   11 
+INC-SOURCE (P-T)                                                  40896  1   12 
+INC-SPECT   EN-RSL. Energy spread due to the proton energy losses 40896  1   13 
+                    in titanium-tritium targets and sample's solid40896  1   14 
+                    angle relative to the neutron source          40896  1   15 
+METHOD     (ACTIV)                                                40896  1   16 
+DETECTOR   (GELI) For sample and In-115 activation measurements   40896  1   17 
+           (SOLST) Stilbene crystal and In-115 activation         40896  1   18 
+                   detectors for neutron flux monitoring          40896  1   19 
+MONITOR    ((MONIT1)49-IN-115(N,INL)49-IN-115-M,,SIG)             40896  1   20 
+           ((MONIT2)49-IN-115(N,G)49-IN-116-M1+M2,,SIG)           40896  1   21 
+DECAY-MON  (49-IN-115-M,4.486HR,DG,336.25,0.459) 45.9+-0.3 %      40896  1   22 
+           (49-IN-116-M1,54.15MIN,DG,416.98,0.33) 33.+-2. %       40896  1   23 
+CORRECTION  Those on neutron flux non-stability, geometry         40896  1   24 
+            differences, (p,n)-reaction neutrons, gamma self-     40896  1   25 
+            absorption in the sample,counting losses in the       40896  1   26 
+            analyzer were made and approved to be negligible      40896  1   27 
+ERR-ANALYS (ERR-T)  Total error arising mostly from the           40896  1   28 
+                    reference cross-sections error                40896  1   29 
+           (ERR-1,8.,10.) Uncertainty of cross-sections for       40896  1   30 
+            monitors reactions.                                   40896  1   31 
+           (ERR-S,0.5,2.) Statistical error                       40896  1   32 
+HISTORY    (19860703C)  Compiled at CJD                           40896  1   33 
+           (20010319A) Date is corrected                          40896  1   34 
+           (20191103U) Ref. YK was corrected.                     40896  1   35 
+           Upper -> lower case correction.                        40896  1   36 
+           TITLE was corrected as given in Engl.abstract of       40896  1   37 
+           INDC-CCP-244 .                                         40896  1   38 
+           ERR-ANALYS was corrected according now-day rules.      40896  1   39 
+           BIB information was added.                             40896  1   40 
+ENDBIB              38          0                                 40896  1   41 
+NOCOMMON             0          0                                 40896  1   42 
+ENDSUBENT           41          0                                 40896  199999 
+SUBENT        40896002   20191103                             418440896  2    1 
+BIB                  4          6                                 40896  2    2 
+REACTION   (38-SR-87(N,INL)38-SR-87-M,,SIG)                       40896  2    3 
+SAMPLE     Strontium-carbonate tablets 6 mm in diameter placed    40896  2    4 
+           between polyethylene films. Sr-87 content is 91+-0.4%, 40896  2    5 
+           Sr-86 content is 0.92 % , Sr-88 content is 7.56 %      40896  2    6 
+DECAY-DATA (38-SR-87-M,2.805HR,DG,388.3,0.841) 84.1+-0.2 %        40896  2    7 
+STATUS     (TABLE) Table 2 of INDC-CCP-244,p.76,1985              40896  2    8 
+ENDBIB               6          0                                 40896  2    9 
+NOCOMMON             0          0                                 40896  2   10 
+DATA                 6         19                                 40896  2   11 
+EN         EN-RSL-HW  DATA       ERR-T      MONIT1     MONIT2     40896  2   12 
+MEV        MEV        MB         MB         MB         MB         40896  2   13 
+ 0.4        0.14        0.                              180.      40896  2   14 
+ 0.5        0.13        2.         0.5      3.75        183.      40896  2   15 
+ 0.6        0.13        5.         0.5      9.          188.      40896  2   16 
+ 0.7        0.13       10.         1.       14.         190.      40896  2   17 
+ 0.8        0.13       12.         1.       23.         200.      40896  2   18 
+ 0.9        0.12       13.         2.       40.         195.      40896  2   19 
+ 1.0        0.12       30.         3.       59.         188.      40896  2   20 
+ 1.1        0.12       42.         4.       90.         183.      40896  2   21 
+ 1.2        0.11       54.         4.       101.        178.      40896  2   22 
+ 1.3        0.11       62.         5.       116.        172.      40896  2   23 
+ 1.4        0.10       70.         6.       136.        166.      40896  2   24 
+ 1.5        0.10      124.         9.       167.        160.      40896  2   25 
+ 1.6        0.09      141.        12.       189.        153.      40896  2   26 
+ 1.7        0.09      168.        14.       210.        145.      40896  2   27 
+ 1.8        0.09      182.        15.       232.        137.      40896  2   28 
+ 1.9        0.09      189.        15.       246.        129.      40896  2   29 
+ 2.0        0.08      188.        15.       260.        121.      40896  2   30 
+ 2.1        0.08      190.        15.       270.        115.      40896  2   31 
+ 2.2        0.08      184.        15.       280.        108.      40896  2   32 
+ENDDATA             21          0                                 40896  2   33 
+ENDSUBENT           32          0                                 40896  299999 
 ENDENTRY             2          0                                 4089699999999 

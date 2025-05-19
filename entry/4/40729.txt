@@ -1,1105 +1,1158 @@
-ENTRY            40729   20080812                             41444072900000001 
-SUBENT        40729001   20080812                             41444072900100001 
-BIB                 10         44                                 4072900100002 
-INSTITUTE  (4UKRIJI)                                              4072900100003 
-REFERENCE  (J,YK,1980,(1),32,198003)                              4072900100004 
-AUTHOR     (V.P.Vertebnyy, N.L.Gnidak, A.V.Grebnev, A.L.Kirilyuk, 4072900100005 
-           G.M.Novoselov, E.A.Pavlenko, N.A.Trofimova)            4072900100006 
-TITLE       The determination of optical scattering lengths and   4072900100007 
-            S0-strength functions for Eu-151,153,Ho-165,Er-170,   4072900100008 
-            168,167,166,Au-197,U-238 isotopes .                   4072900100009 
-INC-SOURCE (REAC) Reactor VVR-M, scandium filter.                 4072900100010 
-            Boron carbide of 0.16 g/cm**2 shielding.              4072900100011 
-            Manganese filter - metallic Mn of 11.16 g/cm**2 in    4072900100012 
-            aluminum container of 2.46 mm wall thickness.         4072900100013 
-METHOD     (TRN)     Transmission method.                         4072900100014 
-           Two variants:"direct"geometry and "scattering"geometry.4072900100015 
-DETECTOR   (HE3SP) Assembly of proportional counters filled with  4072900100016 
-            He-3 of 7.E+15Pa pressure.                            4072900100017 
-ASSUMED    (ASSUM1,8-O-16(N,TOT),,SIG,,,DERIV)Oxygen cross section4072900100018 
-            used in correction for oxygen presence. Derived using 4072900100019 
-            oxygen cross-section at 24 keV from 1-st REL-REF ,    4072900100020 
-            coherent scattering amplitude, evaluated data of      4072900100021 
-            second REL-REF.                                       4072900100022 
-REL-REF    (A,,R.L.Block+,J,NST,12,1,1975)                        4072900100023 
-           (A,,M.N.Nikolaev+,C,77KIEV,4,86,1977)                  4072900100024 
-HISTORY    (19840605C) Compiled at the CJD                        4072900100025 
-           (19870218A) Corrections in the REACTION coding in SAN  4072900100026 
-                017-025, 026 were made,   pointers deleted from   4072900100027 
-                SAN 1, data in sAN 4-12 rearranged into new ones. 4072900100028 
-           (19870707U) MONITOR keyword into assumed  changed .    4072900100029 
-           (19880812U) ASSUM1 and ASSUM2 in SAN 17-25 into ASSUM3 4072900100030 
-                     and ASSUM4 changed.                          4072900100031 
-           (19920618U) Assumed in SAN 001 into MONITOR converted. 4072900100032 
-                     Independent variables in SAN 013-016 rear-   4072900100033 
-                     ranged to delete pointers .                  4072900100034 
-                     ASSUM3 and ASSUM4 in SAN 17-25 into ASSUM1   4072900100035 
-                     and ASSUM2 changed .                         4072900100036 
-                     Energy moved from SAN 001 to proper SUBENTs. 4072900100037 
-                     In SAN 017 - 025 energy range given .        4072900100038 
-           (20010319U)  Date corrected .                          4072900100039 
-           (20080812A) M.M. BIB information was added.            4072900100040 
-            Free text was corrected to be "human-readable".       4072900100041 
-            Subent 032 data were corrected.                       4072900100042 
-            Subents 042, 043 were added.                          4072900100043 
-            MONIT1 and MONIT2 was moved from Subent 001 into      4072900100044 
-             proper Subents (elastic cross sections) under codes  4072900100045 
-             ASSUM2 and ASSUM3.                                   4072900100046 
-ENDBIB              44          0                                 4072900100047 
-COMMON               1          3                                 4072900100048 
-ASSUM1                                                            4072900100049 
-B                                                                 4072900100050 
-3.736                                                             4072900100051 
-ENDCOMMON            3          0                                 4072900100052 
-ENDSUBENT           51          0                                 4072900199999 
-SUBENT        40729002   20080812                             41444072900200001 
-BIB                  6         12                                 4072900200002 
-REACTION   (6-C-12(N,TOT),,SIG)                                   4072900200003 
-SAMPLE      Reactor graphite, diameter 40.mm .                    4072900200004 
-            Thickness (cm): 0.489, 1.18, 1.78, 2.498, 4.96, 7.00, 4072900200005 
-            9.498 .                                               4072900200006 
-ERR-ANALYS (ERR-T)  Total error includes statistical error, error 4072900200007 
-            due to counting fluctuations, error due to definition 4072900200008 
-            of nuclei density in sample.                          4072900200009 
-ANALYSIS    Cross-section value was defined as average of several 4072900200010 
-            measurements for different sample thicknesses and for 4072900200011 
-            three variants of geometry (table 2 of reference).    4072900200012 
-STATUS      Text of reference, p.35 .                             4072900200013 
-HISTORY    (19920618U) Energy value moved from SAN 001 .          4072900200014 
-ENDBIB              12          0                                 4072900200015 
-NOCOMMON             0          0                                 4072900200016 
-DATA                 4          1                                 4072900200017 
-EN         EN-RSL-HW  DATA       ERR-T                            4072900200018 
-KEV        KEV        B          B                                4072900200019 
-   2.          .3         4.73       .02                          4072900200020 
-ENDDATA              3          0                                 4072900200021 
-ENDSUBENT           20          0                                 4072900299999 
-SUBENT        40729003   20080812                             41444072900300001 
-BIB                  6         10                                 4072900300002 
-REACTION   (82-PB-0(N,TOT),,SIG)                                  4072900300003 
-SAMPLE      Pure Pb (99.9%), diameter 30mm .                      4072900300004 
-            Thickness (cm): 0.1, 0.32, 0.6, 0.8, 0.92, 1.72 .     4072900300005 
-ANALYSIS    Cross-section value was defined as average of several 4072900300006 
-            measurements for different sample thicknesses and for 4072900300007 
-            scattering geometry II (table 3 of reference).        4072900300008 
-ERR-ANALYS (ERR-1) Error due to correction for fast neutron       4072900300009 
-            attenuation by manganese filter.                      4072900300010 
-STATUS      Text of reference, p.36 .                             4072900300011 
-HISTORY    (19920618U) Energy value moved from SAN 001            4072900300012 
-ENDBIB              10          0                                 4072900300013 
-NOCOMMON             0          0                                 4072900300014 
-DATA                 5          1                                 4072900300015 
-EN         EN-RSL-HW  DATA       ERR-T      ERR-1                 4072900300016 
-KEV        KEV        B          B          B                     4072900300017 
-  2.         0.3         11.41      .07      0.02                 4072900300018 
-ENDDATA              3          0                                 4072900300019 
-ENDSUBENT           18          0                                 4072900399999 
-SUBENT        40729004   20080812                             41444072900400001 
-BIB                  4          7                                 4072900400002 
-REACTION   (63-EU-151(N,TOT),,SIG)                                4072900400003 
-SAMPLE     Eu2-O3 powder, enrichment 97.5% of Eu-151, Eu-153 -2.5%4072900400004 
-           Thickness (cm): 0.3, 0.5, 5., 10., 15., 20. - in direct4072900400005 
-            geometry; 0.2, 0.5, 5.0, 1.0, 15., 20. -scattering    4072900400006 
-            geometry I. Diameter 10mm.                            4072900400007 
-STATUS     (TABLE) Table 14 of reference.                         4072900400008 
-HISTORY    (19920618U) Energy value moved from SAN 001            4072900400009 
-ENDBIB               7          0                                 4072900400010 
-NOCOMMON             0          0                                 4072900400011 
-DATA                 4          1                                 4072900400012 
-EN         EN-RSL-HW  DATA       ERR-T                            4072900400013 
-KEV        KEV        B          B                                4072900400014 
-   2.          .3        44.95       1.0                          4072900400015 
-ENDDATA              3          0                                 4072900400016 
-ENDSUBENT           15          0                                 4072900499999 
-SUBENT        40729005   20080812                             41444072900500001 
-BIB                  5         10                                 4072900500002 
-REACTION   (63-EU-153(N,TOT),,SIG)                                4072900500003 
-SAMPLE     Eu2-O3 powder, enrichment 99.1% Of Eu-153, Eu-151 -0.9%4072900500004 
-           Thickness (cm): 0.3, 0.5, 0.8, 1.5, 3.0, 5.0, 8.0,10.0,4072900500005 
-            15.0, 20.0, 25.0, 29.5 for direct geometry.           4072900500006 
-            Diameter 10mm.                                        4072900500007 
-ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 4072900500008 
-           (ERR-2) Error due to nuclei density definition in      4072900500009 
-            sample - 1% (thin) - 0.5 % (thick).                   4072900500010 
-STATUS     (TABLE) Table 14 of reference.                         4072900500011 
-HISTORY    (19920618U) Energy value moved from SAN 001            4072900500012 
-ENDBIB              10          0                                 4072900500013 
-COMMON               2          3                                 4072900500014 
-ERR-1      ERR-2                                                  4072900500015 
-B          PER-CENT                                               4072900500016 
- 0.05        1.                                                   4072900500017 
-ENDCOMMON            3          0                                 4072900500018 
-DATA                 4          1                                 4072900500019 
-EN         EN-RSL-HW  DATA       ERR-T                            4072900500020 
-KEV        KEV        B          B                                4072900500021 
-   2.          .3        26.2        1.0                          4072900500022 
-ENDDATA              3          0                                 4072900500023 
-ENDSUBENT           22          0                                 4072900599999 
-SUBENT        40729006   20080812                             41444072900600001 
-BIB                  5          9                                 4072900600002 
-REACTION   (67-HO-165(N,TOT),,SIG)                                4072900600003 
-SAMPLE      Ho2-O3 powder, enrichment 99.9% of Ho-165. Diameter   4072900600004 
-            16 mm. Thickness (cm) : 0.2, 0.4, 1.0, 2.8, 5.0, 10.0,4072900600005 
-            12.0, 17.0, 24.0, 29.0  in direct geometry.           4072900600006 
-ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 4072900600007 
-           (ERR-2) Error due to nuclei density definition in      4072900600008 
-            sample - 1% (thin) - 0.5 % (thick).                   4072900600009 
-STATUS     (TABLE) Table 14 of reference.                         4072900600010 
-HISTORY    (19920618U) Energy value moved from SAN 001            4072900600011 
-ENDBIB               9          0                                 4072900600012 
-COMMON               2          3                                 4072900600013 
-ERR-1      ERR-2                                                  4072900600014 
-B          PER-CENT                                               4072900600015 
- 0.05        1.                                                   4072900600016 
-ENDCOMMON            3          0                                 4072900600017 
-DATA                 4          1                                 4072900600018 
-EN         EN-RSL-HW  DATA       ERR-T                            4072900600019 
-KEV        KEV        B          B                                4072900600020 
-   2.         0.3        24.0       0.8                           4072900600021 
-ENDDATA              3          0                                 4072900600022 
-ENDSUBENT           21          0                                 4072900699999 
-SUBENT        40729007   20080812                             41444072900700001 
-BIB                  5          8                                 4072900700002 
-REACTION   (79-AU-197(N,TOT),,SIG)                                4072900700003 
-SAMPLE      Enrichment 99.99% .Diameter 10 mm.                    4072900700004 
-            Thickness (cm) : 0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.8, 4072900700005 
-            1.0, 1.4, 1.8, 2.2, 2.7, 3.2 in scattering geometry I.4072900700006 
-ERR-ANALYS (ERR-2) Error due to nuclei density definition in      4072900700007 
-            sample - 0.5 % .                                      4072900700008 
-STATUS     (TABLE) Table 14 of reference.                         4072900700009 
-HISTORY    (19920618U) Energy value moved from SAN 001            4072900700010 
-ENDBIB               8          0                                 4072900700011 
-COMMON               1          3                                 4072900700012 
-ERR-2                                                             4072900700013 
-PER-CENT                                                          4072900700014 
- 0.5                                                              4072900700015 
-ENDCOMMON            3          0                                 4072900700016 
-DATA                 4          1                                 4072900700017 
-EN         EN-RSL-HW  DATA       ERR-T                            4072900700018 
-KEV        KEV        B          B                                4072900700019 
-   2.          .3        29.0        .4                           4072900700020 
-ENDDATA              3          0                                 4072900700021 
-ENDSUBENT           20          0                                 4072900799999 
-SUBENT        40729008   20080812                             41444072900800001 
-BIB                  5         12                                 4072900800002 
-REACTION   (68-ER-166(N,TOT),,SIG)                                4072900800003 
-SAMPLE       Er2-O3 powder. Isotopes content:                     4072900800004 
-             Er-162 < 0.08%, Er-164 < 0.08%,  Er-166 - 95.9%,     4072900800005 
-             Er-167 - 3.2%,  Er-168 - 0.178%, Er-170 - 0.12% .    4072900800006 
-            Chemical admixtures  <0.3%. Diameter 10 mm.           4072900800007 
-            Thickness (cm): 0.3, 0.5, 1.5, 3.0, 5.0, 10.0, 15.8   4072900800008 
-            in direct geometry.                                   4072900800009 
-ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 4072900800010 
-           (ERR-2) Error due to nuclei density definition in      4072900800011 
-            sample - 1% (thin) - 0.5 % (thick).                   4072900800012 
-STATUS     (TABLE) Table 14 of reference.                         4072900800013 
-HISTORY    (19920618U) Energy value moved from SAN 001            4072900800014 
-ENDBIB              12          0                                 4072900800015 
-COMMON               2          3                                 4072900800016 
-ERR-1      ERR-2                                                  4072900800017 
-B          PER-CENT                                               4072900800018 
- 0.05        1.                                                   4072900800019 
-ENDCOMMON            3          0                                 4072900800020 
-DATA                 4          1                                 4072900800021 
-EN         EN-RSL-HW  DATA       ERR-T                            4072900800022 
-KEV        KEV        B          B                                4072900800023 
-   2.          .3        22.8        .7                           4072900800024 
-ENDDATA              3          0                                 4072900800025 
-ENDSUBENT           24          0                                 4072900899999 
-SUBENT        40729009   20080812                             41444072900900001 
-BIB                  5         12                                 4072900900002 
-REACTION   (68-ER-167(N,TOT),,SIG)                                4072900900003 
-SAMPLE        Er2-O3 powder. Isotopes content:                    4072900900004 
-              Er-162 < 0.2 %, Er-164 < 0.2 %,  Er-166 - 1.35%,    4072900900005 
-              Er-167 - 94.2%, Er-168 - 4.238%, Er-170 - 0.22% .   4072900900006 
-             Chemical admixtures  <0.2%. Diameter 10 mm.          4072900900007 
-             Thickness (cm) : 0.3, 0.5, 0.8, 1.5, 3.0, 5.0, 8.0,  4072900900008 
-            10.0,15.0, 20.0 in direct geometry.                   4072900900009 
-ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 4072900900010 
-           (ERR-2) Error due to nuclei density definition in      4072900900011 
-            sample - 1% (thin) - 0.5 % (thick).                   4072900900012 
-STATUS     (TABLE) Table 14 of reference.                         4072900900013 
-HISTORY    (19920618U) Energy value moved from SAN 001            4072900900014 
-ENDBIB              12          0                                 4072900900015 
-COMMON               2          3                                 4072900900016 
-ERR-1      ERR-2                                                  4072900900017 
-B          PER-CENT                                               4072900900018 
- 0.05        1.                                                   4072900900019 
-ENDCOMMON            3          0                                 4072900900020 
-DATA                 4          1                                 4072900900021 
-EN         EN-RSL-HW  DATA       ERR-T                            4072900900022 
-KEV        KEV        B          B                                4072900900023 
-   2.          .3        25.4        .95                          4072900900024 
-ENDDATA              3          0                                 4072900900025 
-ENDSUBENT           24          0                                 4072900999999 
-SUBENT        40729010   20080812                             41444072901000001 
-BIB                  5         12                                 4072901000002 
-REACTION   (68-ER-168(N,TOT),,SIG)                                4072901000003 
-SAMPLE       Er2-O3 powder. Isotopes content:                     4072901000004 
-             Er-162 < 0.1 %, Er-164 < 0.1 %,  Er-166 - 0.46%,     4072901000005 
-             Er-167 - 0.71%, Er-168 - 97.7 %, Er-170 - 1.03% .    4072901000006 
-            Chemical admixtures  <0.6%. Diameter 10 mm.           4072901000007 
-             Thickness (cm) : 0.3, 0.5, 1.5, 3.0, 5.0, 8.0,       4072901000008 
-            10.3,15.3, 20.3, 25.3 in direct geometry.             4072901000009 
-ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 4072901000010 
-           (ERR-2) Error due to nuclei density definition in      4072901000011 
-            sample - 1% (thin) - 0.5 % (thick).                   4072901000012 
-STATUS     (TABLE) Table 14 of reference.                         4072901000013 
-HISTORY    (19920618U) Energy value moved from SAN 001            4072901000014 
-ENDBIB              12          0                                 4072901000015 
-COMMON               2          3                                 4072901000016 
-ERR-1      ERR-2                                                  4072901000017 
-B          PER-CENT                                               4072901000018 
- 0.05        1.                                                   4072901000019 
-ENDCOMMON            3          0                                 4072901000020 
-DATA                 4          1                                 4072901000021 
-EN         EN-RSL-HW  DATA       ERR-T                            4072901000022 
-KEV        KEV        B          B                                4072901000023 
-   2.          .3        21.34       .7                           4072901000024 
-ENDDATA              3          0                                 4072901000025 
-ENDSUBENT           24          0                                 4072901099999 
-SUBENT        40729011   20080812                             41444072901100001 
-BIB                  5         12                                 4072901100002 
-REACTION   (68-ER-170(N,TOT),,SIG)                                4072901100003 
-SAMPLE       Er2-O3 powder. Isotopes content:                     4072901100004 
-             Er-162 < 0.1 %, Er-164 < 0.1 %,  Er-166 - 0.74%,     4072901100005 
-             Er-167 - 0.55%, Er-168 - 1.01%,  Er-170 - 97.7% .    4072901100006 
-            Chemical admixtures  <0.5%. Diameter 10 mm.           4072901100007 
-             Thickness (cm) : 0.3, 0.5, 0.8, 1.5, 3.0, 5.0,       4072901100008 
-            10.0,15.0, 21.1, 25.3 in direct geometry.             4072901100009 
-ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 4072901100010 
-           (ERR-2) Error due to nuclei density definition in      4072901100011 
-            sample - 1% (thin) - 0.5 % (thick).                   4072901100012 
-STATUS     (TABLE) Table 14 of reference.                         4072901100013 
-HISTORY    (19920618U) Energy value moved from SAN 001            4072901100014 
-ENDBIB              12          0                                 4072901100015 
-COMMON               2          3                                 4072901100016 
-ERR-1      ERR-2                                                  4072901100017 
-B          PER-CENT                                               4072901100018 
- 0.05        1.                                                   4072901100019 
-ENDCOMMON            3          0                                 4072901100020 
-DATA                 4          1                                 4072901100021 
-EN         EN-RSL-HW  DATA       ERR-T                            4072901100022 
-KEV        KEV        B          B                                4072901100023 
-   2.          .3        20.95       .53                          4072901100024 
-ENDDATA              3          0                                 4072901100025 
-ENDSUBENT           24          0                                 4072901199999 
-SUBENT        40729012   20080812                             41444072901200001 
-BIB                  5          8                                 4072901200002 
-REACTION   (92-U-238(N,TOT),,SIG)                                 4072901200003 
-SAMPLE      Natural uranium foil.Diameter 10mm.                   4072901200004 
-            Thickness (cm) : 0.1, 0.05, 0.08, 0.13, 0.19, 0.25,   4072901200005 
-            0.30, 0.35 0.39 in scattering geometry II.            4072901200006 
-ERR-ANALYS (ERR-2) Error due to nuclei density definition in      4072901200007 
-            sample - 0.5 % .                                      4072901200008 
-STATUS     (TABLE) Table 14 of reference.                         4072901200009 
-HISTORY    (19920618U) Energy value moved from SAN 001            4072901200010 
-ENDBIB               8          0                                 4072901200011 
-COMMON               1          3                                 4072901200012 
-ERR-2                                                             4072901200013 
-PER-CENT                                                          4072901200014 
-  0.5                                                             4072901200015 
-ENDCOMMON            3          0                                 4072901200016 
-DATA                 4          1                                 4072901200017 
-EN         EN-RSL-HW  DATA       ERR-T                            4072901200018 
-KEV        KEV        B          B                                4072901200019 
-   2.          .3        24.8        .65                          4072901200020 
-ENDDATA              3          0                                 4072901200021 
-ENDSUBENT           20          0                                 4072901299999 
-SUBENT        40729013   20080812                             41444072901300001 
-BIB                  9         21                                 4072901300002 
-REACTION   (68-ER-166(N,EL)68-ER-166,,SIG)                        4072901300003 
-SAMPLE      Er2O3 oxide powder. Enriched to 95.9% in Er-166.      4072901300004 
-            14.38E-04 nucl/b. Diameter 30.00 mm, thickness 2.5 mm.4072901300005 
-MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           4072901300006 
-MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,1980,(1),32,198003)      4072901300007 
-ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    4072901300008 
-           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  4072901300009 
-           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,4072901300010 
-            used in analysis particularly to define background.   4072901300011 
-CORRECTION  For multiple scattering <0.3%,                        4072901300012 
-            for counting loses,                                   4072901300013 
-            for background.                                       4072901300014 
-ERR-ANALYS (ERR-T) Total error includes:                          4072901300015 
-           (ERR-S) Statistical uncertainty, including uncertainty 4072901300016 
-            due to apparature and reactor fluctuations;           4072901300017 
-            monitor uncertainty, uncertainty of density of nuclei 4072901300018 
-            in samples, uncertainty due to background, multiple   4072901300019 
-            scattering, neutron registration efficiency.          4072901300020 
-STATUS     (TABLE) Table 7 of reference.                          4072901300021 
-HISTORY    (19920618U) Independent variables rearranged .         4072901300022 
-           (20080812A) M.M. ERR-S was added.                      4072901300023 
-ENDBIB              21          0                                 4072901300024 
-COMMON               7          6                                 4072901300025 
-EN         EN-RSL-HW  ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR 4072901300026 
-MONIT                                                             4072901300027 
-KEV        KEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     4072901300028 
-B                                                                 4072901300029 
-  2.         0.3         2.412      .016       2.482      .005    4072901300030 
-11.41                                                             4072901300031 
-ENDCOMMON            6          0                                 4072901300032 
-DATA                 4          5                                 4072901300033 
-THICKNESS  DATA       ERR-T      ERR-S                            4072901300034 
-ATOMS/B    B          B          B                                4072901300035 
-  0.         17.2         .3      0.1                             4072901300036 
-  0.0057     13.6         .2      0.1                             4072901300037 
-  0.04925     8.0         .2      0.1                             4072901300038 
-  0.1024      6.4         .2      0.1                             4072901300039 
-  0.1489      6.1         .2      0.15                            4072901300040 
-ENDDATA              7          0                                 4072901300041 
-ENDSUBENT           40          0                                 4072901399999 
-SUBENT        40729014   20080812                             41444072901400001 
-BIB                  9         23                                 4072901400002 
-REACTION   (68-ER-167(N,EL)68-ER-167,,SIG)                        4072901400003 
-SAMPLE      Er2O3 oxide powder. Enriched to 94.2% in Er-167.      4072901400004 
-            5.275E-04 nucl/b. Diameter 30.00 mm, thickness 1.0 mm.4072901400005 
-MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           4072901400006 
-MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,1980,(1),32,198003)      4072901400007 
-ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    4072901400008 
-           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  4072901400009 
-           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,4072901400010 
-            used in analysis particularly to define background.   4072901400011 
-CORRECTION  For multiple scattering <0.3%,                        4072901400012 
-            for counting loses,                                   4072901400013 
-            for background.                                       4072901400014 
-ERR-ANALYS (ERR-T) Total error includes:                          4072901400015 
-                  - monitor uncertainty;                          4072901400016 
-                  - uncertainty of density of nuclei in samples;  4072901400017 
-                  - uncertainty due to background;                4072901400018 
-                  - multiple scattering;                          4072901400019 
-                  - neutron registration efficiency;              4072901400020 
-           (ERR-S)- Statistical uncertainty, including uncertainty4072901400021 
-                    due to apparature and reactor fluctuations    4072901400022 
-STATUS     (TABLE) Table 7 of reference.                          4072901400023 
-HISTORY    (19920618U) Independent variables rearranged           4072901400024 
-           (20080812A) M.M. ERR-S was added.                      4072901400025 
-ENDBIB              23          0                                 4072901400026 
-COMMON               7          6                                 4072901400027 
-EN         EN-RSL-HW  ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR 4072901400028 
-MONIT                                                             4072901400029 
-KEV        KEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     4072901400030 
-B                                                                 4072901400031 
-  2.         0.3         2.412      .016       2.482      .005    4072901400032 
-11.41                                                             4072901400033 
-ENDCOMMON            6          0                                 4072901400034 
-DATA                 4          5                                 4072901400035 
-THICKNESS  DATA       ERR-T      ERR-S                            4072901400036 
-ATOMS/B    B          B          B                                4072901400037 
-  0.          18.       .3        0.05                            4072901400038 
-  .045968     11.5      .2        0.08                            4072901400039 
-  .09285       9.2      .2        0.10                            4072901400040 
-  .1378        9.       .2        0.12                            4072901400041 
-  .1830        9.       .2        0.14                            4072901400042 
-ENDDATA              7          0                                 4072901400043 
-ENDSUBENT           42          0                                 4072901499999 
-SUBENT        40729015   20080812                             41444072901500001 
-BIB                  9         23                                 4072901500002 
-REACTION   (68-ER-168(N,EL)68-ER-168,,SIG)                        4072901500003 
-SAMPLE      Er2O3 oxide powder. Enriched to 97.7% in Er-167.      4072901500004 
-            36.995E-04 nucl/b. Diameter 30.00 mm, thickness 6.0mm.4072901500005 
-MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           4072901500006 
-MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,1980,(1),32,198003)      4072901500007 
-ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    4072901500008 
-           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  4072901500009 
-           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,4072901500010 
-            used in analysis particularly to define background.   4072901500011 
-CORRECTION  For multiple scattering <0.3%,                        4072901500012 
-            for counting loses,                                   4072901500013 
-            for background.                                       4072901500014 
-ERR-ANALYS (ERR-T) Total error includes:                          4072901500015 
-                  - monitor uncertainty;                          4072901500016 
-                  - uncertainty of density of nuclei in samples;  4072901500017 
-                  - uncertainty due to background;                4072901500018 
-                  - multiple scattering;                          4072901500019 
-                  - neutron registration efficiency;              4072901500020 
-           (ERR-S)- Statistical uncertainty, including uncertainty4072901500021 
-                    due to apparature and reactor fluctuations    4072901500022 
-STATUS     (TABLE) Table 7 of reference.                          4072901500023 
-HISTORY    (19920618U) Independent variables rearranged .         4072901500024 
-           (20080812A) M.M. ERR-S was added.                      4072901500025 
-ENDBIB              23          0                                 4072901500026 
-COMMON               7          6                                 4072901500027 
-EN         EN-RSL-HW  ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR 4072901500028 
-MONIT                                                             4072901500029 
-KEV        KEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     4072901500030 
-B                                                                 4072901500031 
-  2.         0.3         2.412      .016       2.482      .005    4072901500032 
-11.41                                                             4072901500033 
-ENDCOMMON            6          0                                 4072901500034 
-DATA                 4          6                                 4072901500035 
-THICKNESS  DATA       ERR-T      ERR-S                            4072901500036 
-ATOMS/B    B          B          B                                4072901500037 
- 0.          16.        .3        0.05                            4072901500038 
-  .031668     8.2       .2        0.07                            4072901500039 
-  .055488     6.8       .2        0.08                            4072901500040 
-  .1087986    6.2       .2        0.09                            4072901500041 
-  .2169508    5.9       .2        0.10                            4072901500042 
-  .2724338    5.8       .2        0.12                            4072901500043 
-ENDDATA              8          0                                 4072901500044 
-ENDSUBENT           43          0                                 4072901599999 
-SUBENT        40729016   20080812                             41444072901600001 
-BIB                  9         23                                 4072901600002 
-REACTION   (68-ER-170(N,EL)68-ER-170,,SIG)                        4072901600003 
-SAMPLE      Er2O3 oxide powder. Enriched to 97.7% in Er-170.      4072901600004 
-            39.05E-04 nucl/b. Diameter 30.00 mm, thickness 6.0 mm.4072901600005 
-MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           4072901600006 
-MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,1980,(1),32,198003)      4072901600007 
-ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    4072901600008 
-           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  4072901600009 
-           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,4072901600010 
-            used in analysis particularly to define background.   4072901600011 
-CORRECTION  For multiple scattering <0.3%,                        4072901600012 
-            for counting loses,                                   4072901600013 
-            for background.                                       4072901600014 
-ERR-ANALYS (ERR-T) Total error includes:                          4072901600015 
-                  - monitor uncertainty;                          4072901600016 
-                  - uncertainty of density of nuclei in samples;  4072901600017 
-                  - uncertainty due to background;                4072901600018 
-                  - multiple scattering;                          4072901600019 
-                  - neutron registration efficiency;              4072901600020 
-           (ERR-S)- Statistical uncertainty, including uncertainty4072901600021 
-                    due to apparature and reactor fluctuations    4072901600022 
-STATUS     (TABLE) Table 7 of reference.                          4072901600023 
-HISTORY    (19920618U) Independent variables rearranged .         4072901600024 
-           (20080812A) M.M. ERR-S was added.                      4072901600025 
-ENDBIB              23          0                                 4072901600026 
-COMMON               7          6                                 4072901600027 
-EN         EN-RSL-HW  ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR 4072901600028 
-MONIT                                                             4072901600029 
-KEV        KEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     4072901600030 
-B                                                                 4072901600031 
-  2.         0.3         2.412      .016       2.482      .005    4072901600032 
-11.41                                                             4072901600033 
-ENDCOMMON            6          0                                 4072901600034 
-DATA                 4          6                                 4072901600035 
-THICKNESS  DATA       ERR-T      ERR-S                            4072901600036 
-ATOMS/B    B          B          B                                4072901600037 
-  0.         16.5        .3       0.1                             4072901600038 
- .0305747     9.8        .2       0.1                             4072901600039 
- .0505249     9.2        .2       0.1                             4072901600040 
- .1009903     8.4        .2       0.1                             4072901600041 
- .149022      7.8        .2       0.1                             4072901600042 
- .190         7.4        .3       0.20                            4072901600043 
-ENDDATA              8          0                                 4072901600044 
-ENDSUBENT           43          0                                 4072901699999 
-SUBENT        40729017   20080812                             41444072901700001 
-BIB                  6          9                                 4072901700002 
-REACTION   (63-EU-151(N,EL),,STF,,AV) Local strength function     4072901700003 
-STATUS     (TABLE) Tables 10, 11 of reference.                    4072901700004 
-ASSUMED    (ASSUM2,63-EU-151(N,G),,WID,,AV)                       4072901700005 
-           (ASSUM3,63-EU-151(N,0),,D)                             4072901700006 
-ANALYSIS    Monte-Carlo method of analysis.                       4072901700007 
-ERR-ANALYS (ERR-T) Total error.                                   4072901700008 
-           (ERR-1) Error due to last squares method.              4072901700009 
-           (ERR-2) Error due to resonance parameters fluctuations.4072901700010 
-HISTORY    (20080812A) AV added in SF8 in REACTION .              4072901700011 
-ENDBIB               9          0                                 4072901700012 
-COMMON               3          3                                 4072901700013 
-EN-MIN     EN-MAX     MOMENTUM L                                  4072901700014 
-KEV        KEV        NO-DIM                                      4072901700015 
-  1.4        2.6         0.                                       4072901700016 
-ENDCOMMON            3          0                                 4072901700017 
-DATA                 6          1                                 4072901700018 
-DATA       ERR-T      ASSUM2     ASSUM3     ERR-1      ERR-2      4072901700019 
-NO-DIM     NO-DIM     EV         EV         NO-DIM     NO-DIM     4072901700020 
-    4.10E-4    0.15E-4    .09      .56         0.11E-04   0.18E-044072901700021 
-ENDDATA              3          0                                 4072901700022 
-ENDSUBENT           21          0                                 4072901799999 
-SUBENT        40729018   20080812                             41444072901800001 
-BIB                  6          9                                 4072901800002 
-REACTION   (63-EU-153(N,EL),,STF,,AV)  Local strength function    4072901800003 
-ASSUMED    (ASSUM2,63-EU-153(N,G),,WID,,AV)                       4072901800004 
-           (ASSUM3,63-EU-153(N,0),,D)                             4072901800005 
-ANALYSIS    Monte-Carlo method of analysis.                       4072901800006 
-ERR-ANALYS (ERR-T) Total error.                                   4072901800007 
-           (ERR-1) Error due to last squares method.              4072901800008 
-           (ERR-2) Error due to resonance parameters fluctuations.4072901800009 
-STATUS     (TABLE) Tables 10, 11 of reference.                    4072901800010 
-HISTORY    (20080812A) AV added in SF8 in REACTION .              4072901800011 
-ENDBIB               9          0                                 4072901800012 
-COMMON               4          3                                 4072901800013 
-EN-MIN     EN-MAX     ERR-1      ERR-2                            4072901800014 
-KEV        KEV        NO-DIM     NO-DIM                           4072901800015 
-  1.4        2.6         0.10E-04   0.11E-04                      4072901800016 
-ENDCOMMON            3          0                                 4072901800017 
-DATA                 5          1                                 4072901800018 
-DATA       ERR-T      ASSUM2     ASSUM3     MOMENTUM L            4072901800019 
-NO-DIM     NO-DIM     EV         EV         NO-DIM                4072901800020 
-    1.95E-4    0.13E-4  .100       .99        0.                  4072901800021 
-ENDDATA              3          0                                 4072901800022 
-ENDSUBENT           21          0                                 4072901899999 
-SUBENT        40729019   20080812                             41444072901900001 
-BIB                  6          9                                 4072901900002 
-REACTION   (67-HO-165(N,EL),,STF,,AV)  Local strength function    4072901900003 
-STATUS     (TABLE) Tables 10, 11 of reference.                    4072901900004 
-ASSUMED    (ASSUM2,67-HO-165(N,G),,WID,,AV)                       4072901900005 
-           (ASSUM3,67-HO-165(N,0),,D)                             4072901900006 
-ANALYSIS   (AREA) Monte-Carlo method of analysis and areas method.4072901900007 
-ERR-ANALYS (ERR-T) Total error.                                   4072901900008 
-           (ERR-1) Error due to last squares method. Maximal.     4072901900009 
-           (ERR-2) Error due to resonance parameters fluctuations.4072901900010 
-HISTORY    (20080812A) AV added in SF8 in REACTION .              4072901900011 
-ENDBIB               9          0                                 4072901900012 
-COMMON               4          3                                 4072901900013 
-EN-MIN     EN-MAX     ERR-1      ERR-2                            4072901900014 
-KEV        KEV        NO-DIM     NO-DIM                           4072901900015 
-  1.4        2.6         0.10E-04   0.26E-04                      4072901900016 
-ENDCOMMON            3          0                                 4072901900017 
-DATA                 5          1                                 4072901900018 
-DATA       ERR-T      ASSUM2     ASSUM3     MOMENTUM L            4072901900019 
-NO-DIM     NO-DIM     EV         EV         NO-DIM                4072901900020 
-    1.75E-4    0.25E-4  .073      5.4         0.                  4072901900021 
-ENDDATA              3          0                                 4072901900022 
-ENDSUBENT           21          0                                 4072901999999 
-SUBENT        40729020   20080812                             41444072902000001 
-BIB                  6          9                                 4072902000002 
-REACTION   (68-ER-166(N,EL),,STF,,AV)  Local strength function    4072902000003 
-ANALYSIS   (AREA) Areas method.                                   4072902000004 
-ASSUMED    (ASSUM2,68-ER-166(N,G),,WID,,AV)                       4072902000005 
-           (ASSUM3,68-ER-166(N,0),,D)                             4072902000006 
-ERR-ANALYS (ERR-T) Total error.                                   4072902000007 
-           (ERR-1) Error due to last squares method.              4072902000008 
-           (ERR-2) Error due to resonance parameters fluctuations.4072902000009 
-STATUS     (TABLE) Tables 10, 12 of reference.                    4072902000010 
-HISTORY    (20080812A) AV added in SF8 in REACTION .              4072902000011 
-ENDBIB               9          0                                 4072902000012 
-COMMON               4          3                                 4072902000013 
-EN-MIN     EN-MAX     ERR-1      ERR-2                            4072902000014 
-KEV        KEV        NO-DIM     NO-DIM                           4072902000015 
-  1.4        2.6        0.070E-04   0.56E-04                      4072902000016 
-ENDCOMMON            3          0                                 4072902000017 
-DATA                 5          1                                 4072902000018 
-DATA       ERR-T      ASSUM2     ASSUM3     MOMENTUM L            4072902000019 
-NO-DIM     NO-DIM     EV         EV         NO-DIM                4072902000020 
-    1.60E-4     .50E-4  .087      38.4        0.                  4072902000021 
-ENDDATA              3          0                                 4072902000022 
-ENDSUBENT           21          0                                 4072902099999 
-SUBENT        40729021   20080812                             41444072902100001 
-BIB                  6          9                                 4072902100002 
-REACTION   (68-ER-167(N,EL),,STF,,AV)  Local strength function    4072902100003 
-ANALYSIS   (AREA) Areas Method.                                   4072902100004 
-ASSUMED    (ASSUM2,68-ER-167(N,G),,WID,,AV)                       4072902100005 
-           (ASSUM3,68-ER-167(N,0),,D)                             4072902100006 
-ERR-ANALYS (ERR-T) Total error.                                   4072902100007 
-           (ERR-1) Error due to last squares method.              4072902100008 
-           (ERR-2) Error due to resonance parameters fluctuations.4072902100009 
-STATUS     (TABLE) Tables 10, 12 of reference.                    4072902100010 
-HISTORY    (20080812A) AV added in SF8 in REACTION .              4072902100011 
-ENDBIB               9          0                                 4072902100012 
-COMMON               4          3                                 4072902100013 
-EN-MIN     EN-MAX     ERR-1      ERR-2                            4072902100014 
-KEV        KEV        NO-DIM     NO-DIM                           4072902100015 
-  1.4        2.6         0.10E-04   0.20E-04                      4072902100016 
-ENDCOMMON            3          0                                 4072902100017 
-DATA                 5          1                                 4072902100018 
-DATA       ERR-T      ASSUM2     ASSUM3     MOMENTUM L            4072902100019 
-NO-DIM     NO-DIM     EV         EV         NO-DIM                4072902100020 
-    1.90E-4     .22E-4  .088      4.1         0.                  4072902100021 
-ENDDATA              3          0                                 4072902100022 
-ENDSUBENT           21          0                                 4072902199999 
-SUBENT        40729022   20080812                             41444072902200001 
-BIB                  6         11                                 4072902200002 
-REACTION   (68-ER-168(N,EL),,STF,,AV)  Local strength function    4072902200003 
-ANALYSIS   (AREA)                                                 4072902200004 
-ASSUMED    (ASSUM2,68-ER-168(N,G),,WID,,AV)                       4072902200005 
-           (ASSUM3,68-ER-168(N,0),,D)                             4072902200006 
-ERR-ANALYS (+ERR-T)  Positive asymmetric total error.             4072902200007 
-           (-ERR-T)  Negative asymmetric total error.             4072902200008 
-           (ERR-1) Error due to last squares method.              4072902200009 
-           (+ERR-5) Error due to resonance parameters fluctuations4072902200010 
-           (-ERR-5) , positive and negative.                      4072902200011 
-STATUS     (TABLE) Tables 10, 12 of reference.                    4072902200012 
-HISTORY    (20080812A) AV added in SF8 in REACTION .              4072902200013 
-ENDBIB              11          0                                 4072902200014 
-COMMON               5          3                                 4072902200015 
-EN-MIN     EN-MAX     ERR-1      +ERR-5     -ERR-5                4072902200016 
-KEV        KEV        NO-DIM     NO-DIM     NO-DIM                4072902200017 
-  1.4        2.6         0.08E-04   1.35E-04   0.55E-04           4072902200018 
-ENDCOMMON            3          0                                 4072902200019 
-DATA                 6          1                                 4072902200020 
-DATA       +ERR-T     -ERR-T     ASSUM2     ASSUM3     MOMENTUM L 4072902200021 
-NO-DIM     NO-DIM     NO-DIM     EV         EV         NO-DIM     4072902200022 
-    1.50E-4    1.36E-4     .56E-4   .100      95.3        0.      4072902200023 
-ENDDATA              3          0                                 4072902200024 
-ENDSUBENT           23          0                                 4072902299999 
-SUBENT        40729023   20080812                             41444072902300001 
-BIB                  6         11                                 4072902300002 
-REACTION   (68-ER-170(N,EL),,STF,,AV)  Local strength function    4072902300003 
-ANALYSIS   (AREA)  Areas Method.                                  4072902300004 
-ASSUMED    (ASSUM2,68-ER-170(N,G),,WID,,AV)                       4072902300005 
-           (ASSUM3,68-ER-170(N,0),,D)                             4072902300006 
-ERR-ANALYS (+ERR-T)  Positive asymmetric total error.             4072902300007 
-           (-ERR-T)  Negative asymmetric total error.             4072902300008 
-           (ERR-1) Error due to last squares method.              4072902300009 
-           (+ERR-5) Error due to resonance parameters fluctuations4072902300010 
-           (-ERR-5) , positive and negative.                      4072902300011 
-STATUS     (TABLE) Tables 12 of reference.                        4072902300012 
-HISTORY    (20080812A) AV added in SF8 in REACTION .              4072902300013 
-ENDBIB              11          0                                 4072902300014 
-COMMON               5          3                                 4072902300015 
-EN-MIN     EN-MAX     ERR-1      +ERR-5     -ERR-5                4072902300016 
-KEV        KEV        NO-DIM     NO-DIM     NO-DIM                4072902300017 
-  1.4        2.6         0.06E-04    1.6E-04    0.6E-04           4072902300018 
-ENDCOMMON            3          0                                 4072902300019 
-DATA                 6          1                                 4072902300020 
-DATA       +ERR-T     -ERR-T     ASSUM2     ASSUM3     MOMENTUM L 4072902300021 
-NO-DIM     NO-DIM     NO-DIM     EV         EV         NO-DIM     4072902300022 
-    1.40E-4    1.60E-4     .60E-4  .87       135.       0.        4072902300023 
-ENDDATA              3          0                                 4072902300024 
-ENDSUBENT           23          0                                 4072902399999 
-SUBENT        40729024   20080812                             41444072902400001 
-BIB                  6         10                                 4072902400002 
-REACTION   (79-AU-197(N,EL),,STF,,AV)  Local strength function    4072902400003 
-ANALYSIS   (AREA)  Area method and Monte-Carlo one give the same  4072902400004 
-                    results.                                      4072902400005 
-ASSUMED    (ASSUM2,79-AU-197(N,G),,WID,,AV)                       4072902400006 
-           (ASSUM3,79-AU-197(N,0),,D)                             4072902400007 
-ERR-ANALYS (ERR-T) Total error.                                   4072902400008 
-           (ERR-1) Error due to last squares method.              4072902400009 
-           (ERR-2) Error due to resonance parameters fluctuations.4072902400010 
-STATUS     (TABLE) Tables 10, 11 of reference.                    4072902400011 
-HISTORY    (20080812A) AV added in SF8 in REACTION .              4072902400012 
-ENDBIB              10          0                                 4072902400013 
-COMMON               4          3                                 4072902400014 
-EN-MIN     EN-MAX     ERR-1      ERR-2                            4072902400015 
-KEV        KEV        NO-DIM     NO-DIM                           4072902400016 
-  1.4        2.6         0.04E-04   0.45E-04                      4072902400017 
-ENDCOMMON            3          0                                 4072902400018 
-DATA                 5          1                                 4072902400019 
-DATA       ERR-T      ASSUM2     ASSUM3     MOMENTUM L            4072902400020 
-NO-DIM     NO-DIM     EV         EV         NO-DIM                4072902400021 
-    1.90E-4     .46E-4 .126       19.5       0.                   4072902400022 
-ENDDATA              3          0                                 4072902400023 
-ENDSUBENT           22          0                                 4072902499999 
-SUBENT        40729025   20080812                             41444072902500001 
-BIB                  6          9                                 4072902500002 
-REACTION   (92-U-238(N,EL),,STF,,AV)   Local strength function    4072902500003 
-ANALYSIS   (AREA) Areas Method .                                  4072902500004 
-ASSUMED    (ASSUM2,92-U-238(N,G),,WID,,AV)                        4072902500005 
-           (ASSUM3,92-U-238(N,0),,D)                              4072902500006 
-ERR-ANALYS (ERR-1) Error due to last squares method.              4072902500007 
-           (ERR-2) Error due to resonance parameters fluctuations.4072902500008 
-STATUS     (TABLE) Table 10 of reference.                         4072902500009 
-HISTORY    (20080812A) M.M. ERR-T was changed into ERR-2 .        4072902500010 
-                       AV added in SF8 in REACTION .              4072902500011 
-ENDBIB               9          0                                 4072902500012 
-COMMON               2          3                                 4072902500013 
-EN-MIN     EN-MAX                                                 4072902500014 
-KEV        KEV                                                    4072902500015 
-  1.4        2.6                                                  4072902500016 
-ENDCOMMON            3          0                                 4072902500017 
-DATA                 6          1                                 4072902500018 
-DATA       ERR-1      ERR-2      ASSUM2     ASSUM3     MOMENTUM L 4072902500019 
-NO-DIM     NO-DIM     NO-DIM     EV         EV         NO-DIM     4072902500020 
-    1.40E-4   0.06E-04     .37E-4  .025      25.         0.       4072902500021 
-ENDDATA              3          0                                 4072902500022 
-ENDSUBENT           21          0                                 4072902599999 
-SUBENT        40729026   20080812                             41444072902600001 
-BIB                  2          2                                 4072902600002 
-REACTION   (63-EU-0(N,ABS),,SIG)                                  4072902600003 
-STATUS     (TABLE) Table 15 of reference.                         4072902600004 
-ENDBIB               2          0                                 4072902600005 
-NOCOMMON             0          0                                 4072902600006 
-DATA                 4          1                                 4072902600007 
-EN         EN-RSL     DATA       ERR-T                            4072902600008 
-KEV        KEV        B          B                                4072902600009 
-  2.0        0.3        19.9       1.1                            4072902600010 
-ENDDATA              3          0                                 4072902600011 
-ENDSUBENT           10          0                                 4072902699999 
-SUBENT        40729027   20080812                             41444072902700001 
-BIB                  8         19                                 4072902700002 
-REACTION   (63-EU-151(N,EL)63-EU-151,,SIG)                        4072902700003 
-SAMPLE      Eu2-O3, 97.5 % of Eu-151. Diameter 30.00mm, thickness 4072902700004 
-            1.0mm and 6.0 mm.                                     4072902700005 
-MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           4072902700006 
-MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,1980,(1),32,198003)      4072902700007 
-ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    4072902700008 
-           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  4072902700009 
-           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,4072902700010 
-            used in analysis particularly to define background.   4072902700011 
-CORRECTION  For multiple scattering <2.%(thin), <7.(thick),       4072902700012 
-            for counting loses,                                   4072902700013 
-            for background.                                       4072902700014 
-ERR-ANALYS (ERR-T) Total error includes:                          4072902700015 
-                   statistical uncertainty, including uncertainty 4072902700016 
-            due to apparature and reactor fluctuations;           4072902700017 
-            monitor uncertainty, uncertainty of density of nuclei 4072902700018 
-            in samples, uncertainty due to background, multiple   4072902700019 
-            scattering, neutron registration efficiency.          4072902700020 
-STATUS     (TABLE) Table 14 of reference.                         4072902700021 
-ENDBIB              19          0                                 4072902700022 
-COMMON               5          3                                 4072902700023 
-ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR MONIT                 4072902700024 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     B                     4072902700025 
- 2.412      .016       2.482      .005       11.41                4072902700026 
-ENDCOMMON            3          0                                 4072902700027 
-DATA                 4          1                                 4072902700028 
-EN         EN-RSL     DATA       ERR-T                            4072902700029 
-KEV        KEV        B          B                                4072902700030 
-  2.0        0.3       18.42        .4                            4072902700031 
-ENDDATA              3          0                                 4072902700032 
-ENDSUBENT           31          0                                 4072902799999 
-SUBENT        40729028   20080812                             41444072902800001 
-BIB                  6         10                                 4072902800002 
-REACTION   (63-EU-151(N,EL)63-EU-151,POT,RAD)                     4072902800003 
-SAMPLE      Eu2-O3, 97.5 % of Eu-151                              4072902800004 
-ANALYSIS    Monte-Carlo method.                                   4072902800005 
-CORRECTION  For contribution of p-wave -0.12,                     4072902800006 
-            for interference between levels 0.06 .                4072902800007 
-ERR-ANALYS (ERR-T) Total error.                                   4072902800008 
-           (ERR-1) Uncertainty of exp.data fitting.               4072902800009 
-           (ERR-3) Uncertainty due to resonance parameters        4072902800010 
-                   fluctuations.                                  4072902800011 
-STATUS     (TABLE) Table 11 of reference.                         4072902800012 
-ENDBIB              10          0                                 4072902800013 
-NOCOMMON             0          0                                 4072902800014 
-DATA                 6          1                                 4072902800015 
-EN         EN-RSL     DATA       ERR-T      ERR-1      ERR-3      4072902800016 
-KEV        KEV        FERMI      FERMI      FERMI      FERMI      4072902800017 
-  2.0        0.3       7.7         .11       0.08       0.05      4072902800018 
-ENDDATA              3          0                                 4072902800019 
-ENDSUBENT           18          0                                 4072902899999 
-SUBENT        40729029   20080812                             41444072902900001 
-BIB                  3          5                                 4072902900002 
-REACTION   (63-EU-151(N,G)63-EU-152,,SIG)                         4072902900003 
-SAMPLE      Eu2-O3, 97.5% Eu-151                                  4072902900004 
-STATUS     (TABLE) Table 14 of reference.                         4072902900005 
-           (DEP,40729004)                                         4072902900006 
-           (DEP,40729027)                                         4072902900007 
-ENDBIB               5          0                                 4072902900008 
-NOCOMMON             0          0                                 4072902900009 
-DATA                 4          1                                 4072902900010 
-EN         EN-RSL     DATA       ERR-T                            4072902900011 
-KEV        KEV        B          B                                4072902900012 
-  2.0        0.3       26.5        1.1                            4072902900013 
-ENDDATA              3          0                                 4072902900014 
-ENDSUBENT           13          0                                 4072902999999 
-SUBENT        40729031   20080812                             41444072903100001 
-BIB                  6         10                                 4072903100002 
-REACTION   (63-EU-153(N,EL)63-EU-153,POT,RAD)                     4072903100003 
-SAMPLE      Eu2-O3, 99.1% Eu-153.                                 4072903100004 
-ANALYSIS    Monte-Carlo method.                                   4072903100005 
-CORRECTION  For contribution of p-wave -0.05,                     4072903100006 
-            for interference between levels 0.06 .                4072903100007 
-ERR-ANALYS (ERR-T) Total error.                                   4072903100008 
-           (ERR-1) Uncertainty of exp.data fitting.               4072903100009 
-           (ERR-3) Uncertainty due to resonance parameters        4072903100010 
-                   fluctuations.                                  4072903100011 
-STATUS     (TABLE) Tables 10, 11 of reference.                    4072903100012 
-ENDBIB              10          0                                 4072903100013 
-NOCOMMON             0          0                                 4072903100014 
-DATA                 6          1                                 4072903100015 
-EN         EN-RSL     DATA       ERR-T      ERR-1      ERR-3      4072903100016 
-KEV        KEV        FERMI      FERMI      FERMI      FERMI      4072903100017 
-  2.0        0.3         8.16      .10        0.09       0.07     4072903100018 
-ENDDATA              3          0                                 4072903100019 
-ENDSUBENT           18          0                                 4072903199999 
-SUBENT        40729032   20080812                             41444072903200001 
-BIB                  5         11                                 4072903200002 
-REACTION   (63-EU-153(N,G)63-EU-154,,SIG)                         4072903200003 
-SAMPLE      Eu2-O3, 99.1 % Eu-153.                                4072903200004 
-STATUS     (TABLE) Tables 14 , 15 of reference.                   4072903200005 
-           (DEP,40729005)                                         4072903200006 
-           (DEP,40729041)                                         4072903200007 
-COMMENT     Of compiler. This cross-section was defined by total  4072903200008 
-            and elastic cross sections, but balance is absent:    4072903200009 
-             tot < sum( el + ng ).                                4072903200010 
-HISTORY    (20080812A) M.M. Data were corrected in according to   4072903200011 
-            values of Table 14 : 4.1 +-0.9 -> 13.9 +-1.1 .        4072903200012 
-            COMMENT was added.                                    4072903200013 
-ENDBIB              11          0                                 4072903200014 
-NOCOMMON             0          0                                 4072903200015 
-DATA                 4          1                                 4072903200016 
-EN         EN-RSL     DATA       ERR-T                            4072903200017 
-KEV        KEV        B          B                                4072903200018 
-  2.0        0.3        13.9       1.1                            4072903200019 
-ENDDATA              3          0                                 4072903200020 
-ENDSUBENT           19          0                                 4072903299999 
-SUBENT        40729033   20080812                             41444072903300001 
-BIB                  8         19                                 4072903300002 
-REACTION   (79-AU-197(N,EL)79-AU-197,,SIG)                        4072903300003 
-SAMPLE       99.99 %  Au-197. Diameter 28.2mm, thickness 0.1 mm,  4072903300004 
-             0.5 mm .                                             4072903300005 
-MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           4072903300006 
-MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,1980,(1),32,198003)      4072903300007 
-ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    4072903300008 
-           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  4072903300009 
-           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,4072903300010 
-            used in analysis particularly to define background.   4072903300011 
-CORRECTION  For multiple scattering <0.5%,                        4072903300012 
-            for counting loses,                                   4072903300013 
-            for background.                                       4072903300014 
-ERR-ANALYS (ERR-T) Total error includes:                          4072903300015 
-            statistical uncertainty, including uncertainty        4072903300016 
-            due to apparature and reactor fluctuations;           4072903300017 
-            monitor uncertainty, uncertainty of density of nuclei 4072903300018 
-            in samples, uncertainty due to background, multiple   4072903300019 
-            scattering, neutron registration efficiency.          4072903300020 
-STATUS     (TABLE) Table 14 of reference.                         4072903300021 
-ENDBIB              19          0                                 4072903300022 
-COMMON               5          3                                 4072903300023 
-ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR MONIT                 4072903300024 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     B                     4072903300025 
- 2.412      .016       2.482      .005       11.41                4072903300026 
-ENDCOMMON            3          0                                 4072903300027 
-DATA                 4          1                                 4072903300028 
-EN         EN-RSL     DATA       ERR-T                            4072903300029 
-KEV        KEV        B          B                                4072903300030 
-  2.0        0.3        26.5       .3                             4072903300031 
-ENDDATA              3          0                                 4072903300032 
-ENDSUBENT           31          0                                 4072903399999 
-SUBENT        40729034   20080812                             41444072903400001 
-BIB                  6         12                                 4072903400002 
-REACTION   (79-AU-197(N,EL)79-AU-197,POT,RAD)                     4072903400003 
-SAMPLE       99.99 % Au-197 .                                     4072903400004 
-ANALYSIS    Monte-Carlo method and areas method given the same    4072903400005 
-             result.                                              4072903400006 
-CORRECTION  For contribution of p-wave -0.07,                     4072903400007 
-            for interference between levels 0.05 .                4072903400008 
-ERR-ANALYS (ERR-T) Total error.                                   4072903400009 
-           (ERR-1) Uncertainty of exp.data fitting.               4072903400010 
-           (ERR-2) Uncertainty due to background correction,      4072903400011 
-           (ERR-3) Uncertainty due to resonance parameters        4072903400012 
-                   fluctuations.                                  4072903400013 
-STATUS     (TABLE) Tables 10, 11 of reference.                    4072903400014 
-ENDBIB              12          0                                 4072903400015 
-NOCOMMON             0          0                                 4072903400016 
-DATA                 7          1                                 4072903400017 
-EN         EN-RSL     DATA       ERR-T      ERR-1      ERR-2      4072903400018 
-ERR-3                                                             4072903400019 
-KEV        KEV        FERMI      FERMI      FERMI      FERMI      4072903400020 
-FERMI                                                             4072903400021 
-  2.0        0.3          9.6        .25     0.10       0.03      4072903400022 
-    0.23                                                          4072903400023 
-ENDDATA              6          0                                 4072903400024 
-ENDSUBENT           23          0                                 4072903499999 
-SUBENT        40729035   20080812                             41444072903500001 
-BIB                  3          7                                 4072903500002 
-REACTION   (79-AU-197(N,G)79-AU-198,,SIG,,,DERIV)                 4072903500003 
-SAMPLE      99.99 PC  Au-197                                      4072903500004 
-STATUS     (TABLE) Table 14 of reference.                         4072903500005 
-           (DEP,40729007)                                         4072903500006 
-           (DEP,40729033)                                         4072903500007 
-             Derived as difference of total and elastic           4072903500008 
-             cross-sections.                                      4072903500009 
-ENDBIB               7          0                                 4072903500010 
-NOCOMMON             0          0                                 4072903500011 
-DATA                 4          1                                 4072903500012 
-EN         EN-RSL     DATA       ERR-T                            4072903500013 
-KEV        KEV        B          B                                4072903500014 
-  2.0        0.3        2.5        .5                             4072903500015 
-ENDDATA              3          0                                 4072903500016 
-ENDSUBENT           15          0                                 4072903599999 
-SUBENT        40729036   20080812                             41444072903600001 
-BIB                  6         12                                 4072903600002 
-REACTION   (68-ER-166(N,EL)68-ER-166,POT,RAD)                     4072903600003 
-SAMPLE      Er2-O3, 95.9 %  Er-166                                4072903600004 
-ANALYSIS   (AREA) Areas method .                                  4072903600005 
-CORRECTION  For contribution of p-wave -0.05,                     4072903600006 
-            for interference between levels 0.08 .                4072903600007 
-ERR-ANALYS (ERR-T) Total error.                                   4072903600008 
-           (ERR-1) Uncertainty of exp.data fitting.               4072903600009 
-           (ERR-2) Uncertainty due to background correction,      4072903600010 
-           (ERR-3) Uncertainty due to resonance parameters        4072903600011 
-                   fluctuations.                                  4072903600012 
-STATUS     (TABLE) Tables 10, 12 of reference.                    4072903600013 
-           (DEP,40729013)                                         4072903600014 
-ENDBIB              12          0                                 4072903600015 
-NOCOMMON             0          0                                 4072903600016 
-DATA                 7          1                                 4072903600017 
-EN         EN-RSL     DATA       ERR-T      ERR-1      ERR-2      4072903600018 
-ERR-3                                                             4072903600019 
-KEV        KEV        FERMI      FERMI      FERMI      FERMI      4072903600020 
-FERMI                                                             4072903600021 
-  2.0        0.3          8.1        .35     0.2        0.03      4072903600022 
- 0.28                                                             4072903600023 
-ENDDATA              6          0                                 4072903600024 
-ENDSUBENT           23          0                                 4072903699999 
-SUBENT        40729037   20080812                             41444072903700001 
-BIB                  6         12                                 4072903700002 
-REACTION   (68-ER-167(N,EL)68-ER-167,POT,RAD)                     4072903700003 
-SAMPLE      Er2O3, 94.2 %  Er-167                                 4072903700004 
-ANALYSIS   (AREA) Areas method .                                  4072903700005 
-CORRECTION  For contribution of p-wave -0.05,                     4072903700006 
-            for interference between levels 0.06 .                4072903700007 
-ERR-ANALYS (ERR-T) Total error.                                   4072903700008 
-           (ERR-1) Uncertainty of exp.data fitting.               4072903700009 
-           (ERR-2) Uncertainty due to background correction,      4072903700010 
-           (ERR-3) Uncertainty due to resonance parameters        4072903700011 
-                   fluctuations.                                  4072903700012 
-STATUS     (TABLE) Tables 10, 12 of reference.                    4072903700013 
-           (DEP,40729014)                                         4072903700014 
-ENDBIB              12          0                                 4072903700015 
-NOCOMMON             0          0                                 4072903700016 
-DATA                 7          1                                 4072903700017 
-EN         EN-RSL     DATA       ERR-T      ERR-1      ERR-2      4072903700018 
-ERR-3                                                             4072903700019 
-KEV        KEV        FERMI      FERMI      FERMI      FERMI      4072903700020 
-FERMI                                                             4072903700021 
-  2.0        0.3          8.0        .24     0.15       0.15      4072903700022 
- 0.11                                                             4072903700023 
-ENDDATA              6          0                                 4072903700024 
-ENDSUBENT           23          0                                 4072903799999 
-SUBENT        40729038   20080812                             41444072903800001 
-BIB                  6         12                                 4072903800002 
-REACTION   (68-ER-168(N,EL)68-ER-168,POT,RAD)                     4072903800003 
-SAMPLE      Er2-O3, 97.7 % Er-168 .                               4072903800004 
-ANALYSIS   (AREA) Areas method .                                  4072903800005 
-CORRECTION  For contribution of p-wave -0.05,                     4072903800006 
-            for interference between levels 0.09 .                4072903800007 
-ERR-ANALYS (ERR-T) Total error.                                   4072903800008 
-           (ERR-1) Uncertainty of exp.data fitting.               4072903800009 
-           (ERR-2) Uncertainty due to background correction,      4072903800010 
-           (ERR-3) Uncertainty due to resonance parameters        4072903800011 
-                   fluctuations.                                  4072903800012 
-STATUS     (TABLE) Tables 10, 12 of reference.                    4072903800013 
-           (DEP,40729015)                                         4072903800014 
-ENDBIB              12          0                                 4072903800015 
-NOCOMMON             0          0                                 4072903800016 
-DATA                 7          1                                 4072903800017 
-EN         EN-RSL     DATA       ERR-T      ERR-1      ERR-2      4072903800018 
-ERR-3                                                             4072903800019 
-KEV        KEV        FERMI      FERMI      FERMI      FERMI      4072903800020 
-FERMI                                                             4072903800021 
-  2.0        0.3         7.85        .43     0.07       0.05      4072903800022 
- 0.42                                                             4072903800023 
-ENDDATA              6          0                                 4072903800024 
-ENDSUBENT           23          0                                 4072903899999 
-SUBENT        40729039   20080812                             41444072903900001 
-BIB                  6         12                                 4072903900002 
-REACTION   (68-ER-170(N,EL)68-ER-170,POT,RAD)                     4072903900003 
-SAMPLE      Er2-O3, 97.7 % Er-170 .                               4072903900004 
-ANALYSIS   (AREA) Areas method .                                  4072903900005 
-CORRECTION  For contribution of p-wave -0.07,                     4072903900006 
-            for interference between levels 0.06 .                4072903900007 
-ERR-ANALYS (ERR-T) Total error.                                   4072903900008 
-           (ERR-1) Uncertainty of exp.data fitting.               4072903900009 
-           (ERR-2) Uncertainty due to background correction,      4072903900010 
-           (ERR-3) Uncertainty due to resonance parameters        4072903900011 
-                   fluctuations.                                  4072903900012 
-STATUS     (TABLE) Table 12 of reference.                         4072903900013 
-           (DEP,40729016)                                         4072903900014 
-ENDBIB              12          0                                 4072903900015 
-NOCOMMON             0          0                                 4072903900016 
-DATA                 7          1                                 4072903900017 
-EN         EN-RSL     DATA       ERR-T      ERR-1      ERR-2      4072903900018 
-ERR-3                                                             4072903900019 
-KEV        KEV        FERMI      FERMI      FERMI      FERMI      4072903900020 
-FERMI                                                             4072903900021 
-  2.0        0.3          8.3        .45     0.08       0.03      4072903900022 
- 0.44                                                             4072903900023 
-ENDDATA              6          0                                 4072903900024 
-ENDSUBENT           23          0                                 4072903999999 
-SUBENT        40729040   20080812                             41444072904000001 
-BIB                  6         11                                 4072904000002 
-REACTION   (92-U-238(N,EL)92-U-238,POT,RAD)                       4072904000003 
-SAMPLE      Natural uranium .                                     4072904000004 
-ANALYSIS   (AREA) Areas method .                                  4072904000005 
-CORRECTION  For contribution of p-wave -0.40,                     4072904000006 
-            for interference between levels 0.05 .                4072904000007 
-ERR-ANALYS (ERR-T) Total error.                                   4072904000008 
-           (ERR-1) Uncertainty of exp.data fitting.               4072904000009 
-           (ERR-2) Uncertainty due to background correction,      4072904000010 
-           (ERR-3) Uncertainty due to resonance parameters        4072904000011 
-                   fluctuations.                                  4072904000012 
-STATUS     (TABLE) Tables 10, 13 of reference.                    4072904000013 
-ENDBIB              11          0                                 4072904000014 
-NOCOMMON             0          0                                 4072904000015 
-DATA                 7          1                                 4072904000016 
-EN         EN-RSL     DATA       ERR-T      ERR-1      ERR-2      4072904000017 
-ERR-3                                                             4072904000018 
-KEV        KEV        FERMI      FERMI      FERMI      FERMI      4072904000019 
-FERMI                                                             4072904000020 
-  2.0        0.3         9.77        .13     0.10       0.06      4072904000021 
- 0.20                                                             4072904000022 
-ENDDATA              6          0                                 4072904000023 
-ENDSUBENT           22          0                                 4072904099999 
-SUBENT        40729041   20080812                             41444072904100001 
-BIB                  8         19                                 4072904100002 
-REACTION   (63-EU-153(N,EL)63-EU-153,,SIG)                        4072904100003 
-SAMPLE      Eu2-O3, 99.1 %  Eu-153 . Diameter 30.00mm, thickness  4072904100004 
-             1.0mm and 1.7 mm.                                    4072904100005 
-MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           4072904100006 
-MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,1980,(1),32,198003)      4072904100007 
-ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    4072904100008 
-           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  4072904100009 
-           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,4072904100010 
-            used in analysis particularly to define background.   4072904100011 
-CORRECTION  For multiple scattering <0.3%,                        4072904100012 
-            for counting loses,                                   4072904100013 
-            for background.                                       4072904100014 
-ERR-ANALYS (ERR-T) Total error includes:                          4072904100015 
-                   statistical uncertainty, including uncertainty 4072904100016 
-            due to apparature and reactor fluctuations;           4072904100017 
-            monitor uncertainty, uncertainty of density of nuclei 4072904100018 
-            in samples, uncertainty due to background, multiple   4072904100019 
-            scattering, neutron registration efficiency.          4072904100020 
-STATUS     (TABLE) Table 14 of reference.                         4072904100021 
-ENDBIB              19          0                                 4072904100022 
-COMMON               5          3                                 4072904100023 
-ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR MONIT                 4072904100024 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     B                     4072904100025 
- 2.412      .016       2.482      .005       11.41                4072904100026 
-ENDCOMMON            3          0                                 4072904100027 
-DATA                 4          1                                 4072904100028 
-EN         EN-RSL     DATA       ERR-T                            4072904100029 
-KEV        KEV        B          B                                4072904100030 
-  2.0        0.3        13.6       .5                             4072904100031 
-ENDDATA              3          0                                 4072904100032 
-ENDSUBENT           31          0                                 4072904199999 
-SUBENT        40729042   20080812                             41444072904200001 
-BIB                  9         21                                 4072904200002 
-REACTION   (67-HO-165(N,EL)67-HO-165,,SIG)                        4072904200003 
-SAMPLE      Ho2O3 oxide powder, 99.9 % of Ho-165.                 4072904200004 
-            13.12E-04 nucl/b, 31.58E-04 nucl/b. Diameter 30.00 mm,4072904200005 
-            thickness 4.0, 10.0 mm .                              4072904200006 
-MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           4072904200007 
-MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,1980,(1),32,198003)      4072904200008 
-ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    4072904200009 
-           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  4072904200010 
-           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,4072904200011 
-            used in analysis particularly to define background.   4072904200012 
-ERR-ANALYS (ERR-T) Total error includes:                          4072904200013 
-                   statistical uncertainty, including uncertainty 4072904200014 
-            due to apparature and reactor fluctuations;           4072904200015 
-            monitor uncertainty, uncertainty of density of nuclei 4072904200016 
-            in samples, uncertainty due to background, multiple   4072904200017 
-            scattering, neutron registration efficiency.          4072904200018 
-CORRECTION  For multiple scattering < 0.5% .                      4072904200019 
-            for counting loses,                                   4072904200020 
-            for background.                                       4072904200021 
-STATUS     (TABLE) Table 14 of reference.                         4072904200022 
-HISTORY    (20080812C) M.M.                                       4072904200023 
-ENDBIB              21          0                                 4072904200024 
-COMMON               5          3                                 4072904200025 
-ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR MONIT                 4072904200026 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     B                     4072904200027 
- 2.412      .016       2.482      .005       11.41                4072904200028 
-ENDCOMMON            3          0                                 4072904200029 
-DATA                 4          1                                 4072904200030 
-EN         EN-RSL     DATA       ERR-T                            4072904200031 
-KEV        KEV        B          B                                4072904200032 
-  2.0        0.3       19.9       0.4                             4072904200033 
-ENDDATA              3          0                                 4072904200034 
-ENDSUBENT           33          0                                 4072904299999 
-SUBENT        40729043   20080812                             41444072904300001 
-BIB                  4         10                                 4072904300002 
-REACTION   (67-HO-165(N,G)67-HO-166,,SIG,,,DERIV)                 4072904300003 
-SAMPLE      Ho2O3 oxide powder, 99.9 % of Ho-165.                 4072904300004 
-            13.12E-04 nucl/b, 31.58E-04 nucl/b.                   4072904300005 
-            Diameter 30.00 mm, thickness 4.0, 10.0 mm .           4072904300006 
-STATUS     (TABLE) Table 14 of reference.                         4072904300007 
-           (DEP,40729006)                                         4072904300008 
-           (DEP,40729042)                                         4072904300009 
-            Derived as difference between total and scattering    4072904300010 
-            cross-sections.                                       4072904300011 
-HISTORY    (20080812C) M.M.                                       4072904300012 
-ENDBIB              10          0                                 4072904300013 
-NOCOMMON             0          0                                 4072904300014 
-DATA                 4          1                                 4072904300015 
-EN         EN-RSL     DATA       ERR-T                            4072904300016 
-KEV        KEV        B          B                                4072904300017 
-  2.0        0.3        4.1        .9                             4072904300018 
-ENDDATA              3          0                                 4072904300019 
-ENDSUBENT           18          0                                 4072904399999 
+ENTRY            40729   20191031                             418440729  0    1 
+SUBENT        40729001   20191031                             418440729  1    1 
+BIB                 11         53                                 40729  1    2 
+INSTITUTE  (4UKRIJD)                                              40729  1    3 
+REFERENCE  ((J,YK,,(1/36),32,1980)=                               40729  1    4 
+           (R,INDC(CCP)-155,32,1980))                             40729  1    5 
+           (R,INDC(CCP)-0158,2,1981) Abstract in English          40729  1    6 
+AUTHOR     (V.P.Vertebnij, N.L.Gnidak, A.V.Grebnev, A.L.Kirilyuk, 40729  1    7 
+           G.M.Novosselov, E.A.Pavlenko, N.A.Trofimova)           40729  1    8 
+             Novosselov = Novoselov                               40729  1    9 
+TITLE       The determination of optical scattering lengths and   40729  1   10 
+            S0-strength functions for Eu-151,153,Ho-165,Er-170,   40729  1   11 
+            168,167,166,Au-197,U-238 isotopes .                   40729  1   12 
+INC-SOURCE (REAC) Reactor WWR-M, scandium filter.                 40729  1   13 
+            Boron carbide of 0.16 g/cm**2 shielding.              40729  1   14 
+            Manganese filter - metallic Mn of 11.16 g/cm**2 in    40729  1   15 
+            aluminum container of 2.46 mm wall thickness.         40729  1   16 
+METHOD     (TRN)     Transmission method.                         40729  1   17 
+           Two variants:"direct"geometry and "scattering"geometry.40729  1   18 
+DETECTOR   (HE3SP) Assembly of proportional counters filled with  40729  1   19 
+            He-3 of 7.E+15Pa pressure.                            40729  1   20 
+ASSUMED    (ASSUM1,8-O-16(N,TOT),,SIG,,,DERIV)Oxygen cross section40729  1   21 
+            used in correction for oxygen presence. Derived using 40729  1   22 
+            oxygen cross-section at 24 keV from 1-st REL-REF ,    40729  1   23 
+            coherent scattering amplitude, evaluated data of      40729  1   24 
+            second REL-REF.                                       40729  1   25 
+REL-REF    (A,,R.C.Block+,J,NST,12,1,1975)                        40729  1   26 
+           (A,,M.N.Nikolaev+,C,77KIEV,4,86,1977)                  40729  1   27 
+HISTORY    (19840605C) Compiled at the CJD                        40729  1   28 
+           (19870218A) Corrections in the REACTION coding in SAN  40729  1   29 
+                017-025, 026 were made,   pointers deleted from   40729  1   30 
+                SAN 1, data in sAN 4-12 rearranged into new ones. 40729  1   31 
+           (19870707U) MONITOR keyword into assumed  changed .    40729  1   32 
+           (19880812U) ASSUM1 and ASSUM2 in SAN 17-25 into ASSUM3 40729  1   33 
+                     and ASSUM4 changed.                          40729  1   34 
+           (19920618U) Assumed in SAN 001 into MONITOR converted. 40729  1   35 
+                     Independent variables in SAN 013-016 rear-   40729  1   36 
+                     ranged to delete pointers .                  40729  1   37 
+                     ASSUM3 and ASSUM4 in SAN 17-25 into ASSUM1   40729  1   38 
+                     and ASSUM2 changed .                         40729  1   39 
+                     Energy moved from SAN 001 to proper SUBENTs. 40729  1   40 
+                     In SAN 017 - 025 energy range given .        40729  1   41 
+           (20010319U)  Date corrected .                          40729  1   42 
+           (20080812A) M.M. BIB information was added.            40729  1   43 
+            Free text was corrected to be "human-readable".       40729  1   44 
+            Subent 032 data were corrected.                       40729  1   45 
+            Subents 042, 043 were added.                          40729  1   46 
+            MONIT1 and MONIT2 was moved from Subent 001 into      40729  1   47 
+             proper Subents (elastic cross sections) under codes  40729  1   48 
+             ASSUM2 and ASSUM3.                                   40729  1   49 
+           (20191031U) Authors list corrected as given in English 40729  1   50 
+           abstract. Ref.YK was corrected.                        40729  1   51 
+           Refs.INDC-CCP- reports were added.                     40729  1   52 
+COMMENT    Of compiler M.M.  2019-10-31 .                         40729  1   53 
+           Subent .030 is absent - mistake in numeration at       40729  1   54 
+           initial compilation as checked in archives.            40729  1   55 
+ENDBIB              53          0                                 40729  1   56 
+COMMON               1          3                                 40729  1   57 
+ASSUM1                                                            40729  1   58 
+B                                                                 40729  1   59 
+3.736                                                             40729  1   60 
+ENDCOMMON            3          0                                 40729  1   61 
+ENDSUBENT           60          0                                 40729  199999 
+SUBENT        40729002   20191031                             418440729  2    1 
+BIB                  6         12                                 40729  2    2 
+REACTION   (6-C-12(N,TOT),,SIG)                                   40729  2    3 
+SAMPLE      Reactor graphite, diameter 40.mm .                    40729  2    4 
+            Thickness (cm): 0.489, 1.18, 1.78, 2.498, 4.96, 7.00, 40729  2    5 
+            9.498 .                                               40729  2    6 
+ERR-ANALYS (DATA-ERR) Total error includes statistical error,error40729  2    7 
+            due to counting fluctuations, error due to definition 40729  2    8 
+            of nuclei density in sample.                          40729  2    9 
+ANALYSIS    Cross-section value was defined as average of several 40729  2   10 
+            measurements for different sample thicknesses and for 40729  2   11 
+            three variants of geometry (table 2 of reference).    40729  2   12 
+STATUS     (TABLE) Text, p.35 of INDC-CCP-155,32,1980             40729  2   13 
+HISTORY    (19920618U) Energy value moved from SAN 001 .          40729  2   14 
+ENDBIB              12          0                                 40729  2   15 
+NOCOMMON             0          0                                 40729  2   16 
+DATA                 4          1                                 40729  2   17 
+EN         EN-RSL-HW  DATA       DATA-ERR                         40729  2   18 
+KEV        KEV        B          B                                40729  2   19 
+   2.          .3         4.73       .02                          40729  2   20 
+ENDDATA              3          0                                 40729  2   21 
+ENDSUBENT           20          0                                 40729  299999 
+SUBENT        40729003   20191031                             418440729  3    1 
+BIB                  6         11                                 40729  3    2 
+REACTION   (82-PB-0(N,TOT),,SIG)                                  40729  3    3 
+SAMPLE      Pure Pb (99.9%), diameter 30mm .                      40729  3    4 
+            Thickness (cm): 0.1, 0.32, 0.6, 0.8, 0.92, 1.72 .     40729  3    5 
+ANALYSIS    Cross-section value was defined as average of several 40729  3    6 
+            measurements for different sample thicknesses and for 40729  3    7 
+            scattering geometry II (table 3 of reference).        40729  3    8 
+ERR-ANALYS (ERR-1) Error due to correction for fast neutron       40729  3    9 
+            attenuation by manganese filter.                      40729  3   10 
+           (ERR-T) Total error                                    40729  3   11 
+STATUS     (TABLE) Text, p.36 of INDC-CCP-155,32,1980             40729  3   12 
+HISTORY    (19920618U) Energy value moved from SAN 001            40729  3   13 
+ENDBIB              11          0                                 40729  3   14 
+NOCOMMON             0          0                                 40729  3   15 
+DATA                 5          1                                 40729  3   16 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-1                 40729  3   17 
+KEV        KEV        B          B          B                     40729  3   18 
+  2.         0.3         11.41      .07      0.02                 40729  3   19 
+ENDDATA              3          0                                 40729  3   20 
+ENDSUBENT           19          0                                 40729  399999 
+SUBENT        40729004   20191031                             418440729  4    1 
+BIB                  5          9                                 40729  4    2 
+REACTION   (63-EU-151(N,TOT),,SIG)                                40729  4    3 
+SAMPLE     Eu2-O3 powder, enrichment 97.5% of Eu-151, Eu-153 -2.5%40729  4    4 
+           Thickness (cm): 0.3, 0.5, 5., 10., 15., 20. - in direct40729  4    5 
+            geometry; 0.2, 0.5, 5.0, 1.0, 15., 20. -scattering    40729  4    6 
+            geometry I. Diameter 10mm.                            40729  4    7 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 40729  4    8 
+           article.                                               40729  4    9 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729  4   10 
+HISTORY    (19920618U) Energy value moved from SAN 001            40729  4   11 
+ENDBIB               9          0                                 40729  4   12 
+NOCOMMON             0          0                                 40729  4   13 
+DATA                 4          1                                 40729  4   14 
+EN         EN-RSL-HW  DATA       DATA-ERR                         40729  4   15 
+KEV        KEV        B          B                                40729  4   16 
+   2.          .3        44.95       1.0                          40729  4   17 
+ENDDATA              3          0                                 40729  4   18 
+ENDSUBENT           17          0                                 40729  499999 
+SUBENT        40729005   20191031                             418440729  5    1 
+BIB                  5         11                                 40729  5    2 
+REACTION   (63-EU-153(N,TOT),,SIG)                                40729  5    3 
+SAMPLE     Eu2-O3 powder, enrichment 99.1% Of Eu-153, Eu-151 -0.9%40729  5    4 
+           Thickness (cm): 0.3, 0.5, 0.8, 1.5, 3.0, 5.0, 8.0,10.0,40729  5    5 
+            15.0, 20.0, 25.0, 29.5 for direct geometry.           40729  5    6 
+            Diameter 10mm.                                        40729  5    7 
+ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 40729  5    8 
+           (ERR-2) Error due to nuclei density definition in      40729  5    9 
+            sample - 1% (thin) - 0.5 % (thick).                   40729  5   10 
+           (ERR-T) Total error                                    40729  5   11 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729  5   12 
+HISTORY    (19920618U) Energy value moved from SAN 001            40729  5   13 
+ENDBIB              11          0                                 40729  5   14 
+COMMON               2          3                                 40729  5   15 
+ERR-1      ERR-2                                                  40729  5   16 
+B          PER-CENT                                               40729  5   17 
+ 0.05        1.                                                   40729  5   18 
+ENDCOMMON            3          0                                 40729  5   19 
+DATA                 4          1                                 40729  5   20 
+EN         EN-RSL-HW  DATA       ERR-T                            40729  5   21 
+KEV        KEV        B          B                                40729  5   22 
+   2.          .3        26.2        1.0                          40729  5   23 
+ENDDATA              3          0                                 40729  5   24 
+ENDSUBENT           23          0                                 40729  599999 
+SUBENT        40729006   20191031                             418440729  6    1 
+BIB                  5         10                                 40729  6    2 
+REACTION   (67-HO-165(N,TOT),,SIG)                                40729  6    3 
+SAMPLE      Ho2-O3 powder, enrichment 99.9% of Ho-165. Diameter   40729  6    4 
+            16 mm. Thickness (cm) : 0.2, 0.4, 1.0, 2.8, 5.0, 10.0,40729  6    5 
+            12.0, 17.0, 24.0, 29.0  in direct geometry.           40729  6    6 
+ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 40729  6    7 
+           (ERR-2) Error due to nuclei density definition in      40729  6    8 
+            sample - 1% (thin) - 0.5 % (thick).                   40729  6    9 
+           (ERR-T) Total error                                    40729  6   10 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729  6   11 
+HISTORY    (19920618U) Energy value moved from SAN 001            40729  6   12 
+ENDBIB              10          0                                 40729  6   13 
+COMMON               2          3                                 40729  6   14 
+ERR-1      ERR-2                                                  40729  6   15 
+B          PER-CENT                                               40729  6   16 
+ 0.05        1.                                                   40729  6   17 
+ENDCOMMON            3          0                                 40729  6   18 
+DATA                 4          1                                 40729  6   19 
+EN         EN-RSL-HW  DATA       ERR-T                            40729  6   20 
+KEV        KEV        B          B                                40729  6   21 
+   2.         0.3        24.0       0.8                           40729  6   22 
+ENDDATA              3          0                                 40729  6   23 
+ENDSUBENT           22          0                                 40729  699999 
+SUBENT        40729007   20191031                             418440729  7    1 
+BIB                  5          9                                 40729  7    2 
+REACTION   (79-AU-197(N,TOT),,SIG)                                40729  7    3 
+SAMPLE      Enrichment 99.99% .Diameter 10 mm.                    40729  7    4 
+            Thickness (cm) : 0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.8, 40729  7    5 
+            1.0, 1.4, 1.8, 2.2, 2.7, 3.2 in scattering geometry I.40729  7    6 
+ERR-ANALYS (ERR-2) Error due to nuclei density definition in      40729  7    7 
+            sample - 0.5 % .                                      40729  7    8 
+           (ERR-T) Total error                                    40729  7    9 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729  7   10 
+HISTORY    (19920618U) Energy value moved from SAN 001            40729  7   11 
+ENDBIB               9          0                                 40729  7   12 
+COMMON               1          3                                 40729  7   13 
+ERR-2                                                             40729  7   14 
+PER-CENT                                                          40729  7   15 
+ 0.5                                                              40729  7   16 
+ENDCOMMON            3          0                                 40729  7   17 
+DATA                 4          1                                 40729  7   18 
+EN         EN-RSL-HW  DATA       ERR-T                            40729  7   19 
+KEV        KEV        B          B                                40729  7   20 
+   2.          .3        29.0        .4                           40729  7   21 
+ENDDATA              3          0                                 40729  7   22 
+ENDSUBENT           21          0                                 40729  799999 
+SUBENT        40729008   20191031                             418440729  8    1 
+BIB                  5         13                                 40729  8    2 
+REACTION   (68-ER-166(N,TOT),,SIG)                                40729  8    3 
+SAMPLE       Er2-O3 powder. Isotopes content:                     40729  8    4 
+             Er-162 < 0.08%, Er-164 < 0.08%,  Er-166 - 95.9%,     40729  8    5 
+             Er-167 - 3.2%,  Er-168 - 0.178%, Er-170 - 0.12% .    40729  8    6 
+            Chemical admixtures  <0.3%. Diameter 10 mm.           40729  8    7 
+            Thickness (cm): 0.3, 0.5, 1.5, 3.0, 5.0, 10.0, 15.8   40729  8    8 
+            in direct geometry.                                   40729  8    9 
+ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 40729  8   10 
+           (ERR-2) Error due to nuclei density definition in      40729  8   11 
+            sample - 1% (thin) - 0.5 % (thick).                   40729  8   12 
+           (ERR-T) Total error                                    40729  8   13 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729  8   14 
+HISTORY    (19920618U) Energy value moved from SAN 001            40729  8   15 
+ENDBIB              13          0                                 40729  8   16 
+COMMON               2          3                                 40729  8   17 
+ERR-1      ERR-2                                                  40729  8   18 
+B          PER-CENT                                               40729  8   19 
+ 0.05        1.                                                   40729  8   20 
+ENDCOMMON            3          0                                 40729  8   21 
+DATA                 4          1                                 40729  8   22 
+EN         EN-RSL-HW  DATA       ERR-T                            40729  8   23 
+KEV        KEV        B          B                                40729  8   24 
+   2.          .3        22.8        .7                           40729  8   25 
+ENDDATA              3          0                                 40729  8   26 
+ENDSUBENT           25          0                                 40729  899999 
+SUBENT        40729009   20191031                             418440729  9    1 
+BIB                  5         13                                 40729  9    2 
+REACTION   (68-ER-167(N,TOT),,SIG)                                40729  9    3 
+SAMPLE        Er2-O3 powder. Isotopes content:                    40729  9    4 
+              Er-162 < 0.2 %, Er-164 < 0.2 %,  Er-166 - 1.35%,    40729  9    5 
+              Er-167 - 94.2%, Er-168 - 4.238%, Er-170 - 0.22% .   40729  9    6 
+             Chemical admixtures  <0.2%. Diameter 10 mm.          40729  9    7 
+             Thickness (cm) : 0.3, 0.5, 0.8, 1.5, 3.0, 5.0, 8.0,  40729  9    8 
+            10.0,15.0, 20.0 in direct geometry.                   40729  9    9 
+ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 40729  9   10 
+           (ERR-2) Error due to nuclei density definition in      40729  9   11 
+            sample - 1% (thin) - 0.5 % (thick).                   40729  9   12 
+           (ERR-T) Total error                                    40729  9   13 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729  9   14 
+HISTORY    (19920618U) Energy value moved from SAN 001            40729  9   15 
+ENDBIB              13          0                                 40729  9   16 
+COMMON               2          3                                 40729  9   17 
+ERR-1      ERR-2                                                  40729  9   18 
+B          PER-CENT                                               40729  9   19 
+ 0.05        1.                                                   40729  9   20 
+ENDCOMMON            3          0                                 40729  9   21 
+DATA                 4          1                                 40729  9   22 
+EN         EN-RSL-HW  DATA       ERR-T                            40729  9   23 
+KEV        KEV        B          B                                40729  9   24 
+   2.          .3        25.4        .95                          40729  9   25 
+ENDDATA              3          0                                 40729  9   26 
+ENDSUBENT           25          0                                 40729  999999 
+SUBENT        40729010   20191031                             418440729 10    1 
+BIB                  5         13                                 40729 10    2 
+REACTION   (68-ER-168(N,TOT),,SIG)                                40729 10    3 
+SAMPLE       Er2-O3 powder. Isotopes content:                     40729 10    4 
+             Er-162 < 0.1 %, Er-164 < 0.1 %,  Er-166 - 0.46%,     40729 10    5 
+             Er-167 - 0.71%, Er-168 - 97.7 %, Er-170 - 1.03% .    40729 10    6 
+            Chemical admixtures  <0.6%. Diameter 10 mm.           40729 10    7 
+             Thickness (cm) : 0.3, 0.5, 1.5, 3.0, 5.0, 8.0,       40729 10    8 
+            10.3,15.3, 20.3, 25.3 in direct geometry.             40729 10    9 
+ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 40729 10   10 
+           (ERR-2) Error due to nuclei density definition in      40729 10   11 
+            sample - 1% (thin) - 0.5 % (thick).                   40729 10   12 
+           (ERR-T) Total error                                    40729 10   13 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729 10   14 
+HISTORY    (19920618U) Energy value moved from SAN 001            40729 10   15 
+ENDBIB              13          0                                 40729 10   16 
+COMMON               2          3                                 40729 10   17 
+ERR-1      ERR-2                                                  40729 10   18 
+B          PER-CENT                                               40729 10   19 
+ 0.05        1.                                                   40729 10   20 
+ENDCOMMON            3          0                                 40729 10   21 
+DATA                 4          1                                 40729 10   22 
+EN         EN-RSL-HW  DATA       ERR-T                            40729 10   23 
+KEV        KEV        B          B                                40729 10   24 
+   2.          .3        21.34       .7                           40729 10   25 
+ENDDATA              3          0                                 40729 10   26 
+ENDSUBENT           25          0                                 40729 1099999 
+SUBENT        40729011   20191031                             418440729 11    1 
+BIB                  5         13                                 40729 11    2 
+REACTION   (68-ER-170(N,TOT),,SIG)                                40729 11    3 
+SAMPLE       Er2-O3 powder. Isotopes content:                     40729 11    4 
+             Er-162 < 0.1 %, Er-164 < 0.1 %,  Er-166 - 0.74%,     40729 11    5 
+             Er-167 - 0.55%, Er-168 - 1.01%,  Er-170 - 97.7% .    40729 11    6 
+            Chemical admixtures  <0.5%. Diameter 10 mm.           40729 11    7 
+             Thickness (cm) : 0.3, 0.5, 0.8, 1.5, 3.0, 5.0,       40729 11    8 
+            10.0,15.0, 21.1, 25.3 in direct geometry.             40729 11    9 
+ERR-ANALYS (ERR-1) Error due to oxygen cross section uncertainty. 40729 11   10 
+           (ERR-2) Error due to nuclei density definition in      40729 11   11 
+            sample - 1% (thin) - 0.5 % (thick).                   40729 11   12 
+           (ERR-T) Total error                                    40729 11   13 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729 11   14 
+HISTORY    (19920618U) Energy value moved from SAN 001            40729 11   15 
+ENDBIB              13          0                                 40729 11   16 
+COMMON               2          3                                 40729 11   17 
+ERR-1      ERR-2                                                  40729 11   18 
+B          PER-CENT                                               40729 11   19 
+ 0.05        1.                                                   40729 11   20 
+ENDCOMMON            3          0                                 40729 11   21 
+DATA                 4          1                                 40729 11   22 
+EN         EN-RSL-HW  DATA       ERR-T                            40729 11   23 
+KEV        KEV        B          B                                40729 11   24 
+   2.          .3        20.95       .53                          40729 11   25 
+ENDDATA              3          0                                 40729 11   26 
+ENDSUBENT           25          0                                 40729 1199999 
+SUBENT        40729012   20191031                             418440729 12    1 
+BIB                  5          9                                 40729 12    2 
+REACTION   (92-U-238(N,TOT),,SIG)                                 40729 12    3 
+SAMPLE      Natural uranium foil.Diameter 10mm.                   40729 12    4 
+            Thickness (cm) : 0.1, 0.05, 0.08, 0.13, 0.19, 0.25,   40729 12    5 
+            0.30, 0.35 0.39 in scattering geometry II.            40729 12    6 
+ERR-ANALYS (ERR-2) Error due to nuclei density definition in      40729 12    7 
+            sample - 0.5 % .                                      40729 12    8 
+           (ERR-T) Total error                                    40729 12    9 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729 12   10 
+HISTORY    (19920618U) Energy value moved from SAN 001            40729 12   11 
+ENDBIB               9          0                                 40729 12   12 
+COMMON               1          3                                 40729 12   13 
+ERR-2                                                             40729 12   14 
+PER-CENT                                                          40729 12   15 
+  0.5                                                             40729 12   16 
+ENDCOMMON            3          0                                 40729 12   17 
+DATA                 4          1                                 40729 12   18 
+EN         EN-RSL-HW  DATA       ERR-T                            40729 12   19 
+KEV        KEV        B          B                                40729 12   20 
+   2.          .3        24.8        .65                          40729 12   21 
+ENDDATA              3          0                                 40729 12   22 
+ENDSUBENT           21          0                                 40729 1299999 
+SUBENT        40729013   20191031                             418440729 13    1 
+BIB                 10         30                                 40729 13    2 
+REACTION   (68-ER-166(N,EL)68-ER-166,,SIG)                        40729 13    3 
+SAMPLE      Er2O3 oxide powder. Enriched to 95.9% in Er-166.      40729 13    4 
+            14.38E-04 nucl/b. Diameter 30.00 mm, thickness 2.5 mm.40729 13    5 
+MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           40729 13    6 
+MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,,(1/36),32,1980) =       40729 13    7 
+           (40729003,V.P.Vertebnyy+,R,INDC(CCP)-155,32,1980)      40729 13    8 
+ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    40729 13    9 
+           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  40729 13   10 
+           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,40729 13   11 
+            used in analysis particularly to define background.   40729 13   12 
+CORRECTION  For multiple scattering <0.3%,                        40729 13   13 
+            for counting loses,                                   40729 13   14 
+            for background.                                       40729 13   15 
+ERR-ANALYS (ERR-T) Total error includes:                          40729 13   16 
+           (ERR-S) Statistical uncertainty, including uncertainty 40729 13   17 
+            due to apparatus  and reactor fluctuations;           40729 13   18 
+            monitor uncertainty, uncertainty of density of nuclei 40729 13   19 
+            in samples, uncertainty due to background, multiple   40729 13   20 
+            scattering, neutron registration efficiency.          40729 13   21 
+ADD-RES       THICKNESS  DATA       ERR-T      ERR-S              40729 13   22 
+              ATOMS/B    B          B          B                  40729 13   23 
+                0.0057     13.6         .2      0.1               40729 13   24 
+                0.04925     8.0         .2      0.1               40729 13   25 
+                0.1024      6.4         .2      0.1               40729 13   26 
+                0.1489      6.1         .2      0.15              40729 13   27 
+STATUS     (TABLE) Table 7 of INDC-CCP-155,32,1980                40729 13   28 
+HISTORY    (19920618U) Independent variables rearranged .         40729 13   29 
+           (20080812A) M.M. ERR-S was added.                      40729 13   30 
+           (20191031A) Data for thickness > 0. were moved in      40729 13   31 
+           ADD-RES.                                               40729 13   32 
+ENDBIB              30          0                                 40729 13   33 
+COMMON               7          6                                 40729 13   34 
+EN         EN-RSL-HW  ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR 40729 13   35 
+MONIT                                                             40729 13   36 
+KEV        KEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     40729 13   37 
+B                                                                 40729 13   38 
+  2.         0.3         2.412      .016       2.482      .005    40729 13   39 
+11.41                                                             40729 13   40 
+ENDCOMMON            6          0                                 40729 13   41 
+DATA                 3          1                                 40729 13   42 
+DATA       ERR-T      ERR-S                                       40729 13   43 
+B          B          B                                           40729 13   44 
+  17.2         .3      0.1                                        40729 13   45 
+ENDDATA              3          0                                 40729 13   46 
+ENDSUBENT           45          0                                 40729 1399999 
+SUBENT        40729014   20191031                             418440729 14    1 
+BIB                 10         32                                 40729 14    2 
+REACTION   (68-ER-167(N,EL)68-ER-167,,SIG)                        40729 14    3 
+SAMPLE      Er2O3 oxide powder. Enriched to 94.2% in Er-167.      40729 14    4 
+            5.275E-04 nucl/b. Diameter 30.00 mm, thickness 1.0 mm.40729 14    5 
+MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           40729 14    6 
+MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,,(1/36),32,1980)         40729 14    7 
+           (40729003,V.P.Vertebnyy+,R,INDC(CCP)-155,32,1980)      40729 14    8 
+ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    40729 14    9 
+           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  40729 14   10 
+           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,40729 14   11 
+            used in analysis particularly to define background.   40729 14   12 
+CORRECTION  For multiple scattering <0.3%,                        40729 14   13 
+            for counting loses,                                   40729 14   14 
+            for background.                                       40729 14   15 
+ERR-ANALYS (ERR-T) Total error includes:                          40729 14   16 
+                  - monitor uncertainty;                          40729 14   17 
+                  - uncertainty of density of nuclei in samples;  40729 14   18 
+                  - uncertainty due to background;                40729 14   19 
+                  - multiple scattering;                          40729 14   20 
+                  - neutron registration efficiency;              40729 14   21 
+           (ERR-S)- Statistical uncertainty, including uncertainty40729 14   22 
+                    due to apparatus  and reactor fluctuations    40729 14   23 
+ADD-RES      THICKNESS  DATA       ERR-T      ERR-S               40729 14   24 
+             ATOMS/B    B          B          B                   40729 14   25 
+              .045968     11.5      .2        0.08                40729 14   26 
+              .09285       9.2      .2        0.10                40729 14   27 
+              .1378        9.       .2        0.12                40729 14   28 
+              .1830        9.       .2        0.14                40729 14   29 
+STATUS     (TABLE) Table 7 of INDC-CCP-155,32,1980                40729 14   30 
+HISTORY    (19920618U) Independent variables rearranged           40729 14   31 
+           (20080812A) M.M. ERR-S was added.                      40729 14   32 
+           (20191031A) Data for thickness > 0. were moved in      40729 14   33 
+           ADD-RES.                                               40729 14   34 
+ENDBIB              32          0                                 40729 14   35 
+COMMON               7          6                                 40729 14   36 
+EN         EN-RSL-HW  ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR 40729 14   37 
+MONIT                                                             40729 14   38 
+KEV        KEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     40729 14   39 
+B                                                                 40729 14   40 
+  2.         0.3         2.412      .016       2.482      .005    40729 14   41 
+11.41                                                             40729 14   42 
+ENDCOMMON            6          0                                 40729 14   43 
+DATA                 3          1                                 40729 14   44 
+DATA       ERR-T      ERR-S                                       40729 14   45 
+B          B          B                                           40729 14   46 
+   18.       .3        0.05                                       40729 14   47 
+ENDDATA              3          0                                 40729 14   48 
+ENDSUBENT           47          0                                 40729 1499999 
+SUBENT        40729015   20191031                             418440729 15    1 
+BIB                 10         33                                 40729 15    2 
+REACTION   (68-ER-168(N,EL)68-ER-168,,SIG)                        40729 15    3 
+SAMPLE      Er2O3 oxide powder. Enriched to 97.7% in Er-167.      40729 15    4 
+            36.995E-04 nucl/b. Diameter 30.00 mm, thickness 6.0mm.40729 15    5 
+MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           40729 15    6 
+MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,,(1/36),32,1980) =       40729 15    7 
+           (40729003,V.P.Vertebnyy+,R,INDC(CCP)-155,32,1980)      40729 15    8 
+ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    40729 15    9 
+           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  40729 15   10 
+           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,40729 15   11 
+            used in analysis particularly to define background.   40729 15   12 
+CORRECTION  For multiple scattering <0.3%,                        40729 15   13 
+            for counting loses,                                   40729 15   14 
+            for background.                                       40729 15   15 
+ERR-ANALYS (ERR-T) Total error includes:                          40729 15   16 
+                  - monitor uncertainty;                          40729 15   17 
+                  - uncertainty of density of nuclei in samples;  40729 15   18 
+                  - uncertainty due to background;                40729 15   19 
+                  - multiple scattering;                          40729 15   20 
+                  - neutron registration efficiency;              40729 15   21 
+           (ERR-S)- Statistical uncertainty, including uncertainty40729 15   22 
+                    due to apparatus  and reactor fluctuations    40729 15   23 
+ADD-RES      THICKNESS  DATA       ERR-T      ERR-S               40729 15   24 
+             ATOMS/B    B          B          B                   40729 15   25 
+               .031668     8.2       .2        0.07               40729 15   26 
+               .055488     6.8       .2        0.08               40729 15   27 
+               .1087986    6.2       .2        0.09               40729 15   28 
+               .2169508    5.9       .2        0.10               40729 15   29 
+               .2724338    5.8       .2        0.12               40729 15   30 
+STATUS     (TABLE) Table 7 of INDC-CCP-155,32,1980                40729 15   31 
+HISTORY    (19920618U) Independent variables rearranged .         40729 15   32 
+           (20080812A) M.M. ERR-S was added.                      40729 15   33 
+           (20191031A) Data for thickness > 0. were moved in      40729 15   34 
+           ADD-RES.                                               40729 15   35 
+ENDBIB              33          0                                 40729 15   36 
+COMMON               7          6                                 40729 15   37 
+EN         EN-RSL-HW  ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR 40729 15   38 
+MONIT                                                             40729 15   39 
+KEV        KEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     40729 15   40 
+B                                                                 40729 15   41 
+  2.         0.3         2.412      .016       2.482      .005    40729 15   42 
+11.41                                                             40729 15   43 
+ENDCOMMON            6          0                                 40729 15   44 
+DATA                 3          1                                 40729 15   45 
+DATA       ERR-T      ERR-S                                       40729 15   46 
+B          B          B                                           40729 15   47 
+  16.        .3        0.05                                       40729 15   48 
+ENDDATA              3          0                                 40729 15   49 
+ENDSUBENT           48          0                                 40729 1599999 
+SUBENT        40729016   20191031                             418440729 16    1 
+BIB                 10         33                                 40729 16    2 
+REACTION   (68-ER-170(N,EL)68-ER-170,,SIG)                        40729 16    3 
+SAMPLE      Er2O3 oxide powder. Enriched to 97.7% in Er-170.      40729 16    4 
+            39.05E-04 nucl/b. Diameter 30.00 mm, thickness 6.0 mm.40729 16    5 
+MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           40729 16    6 
+MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,,(1/36),32,1980) =       40729 16    7 
+           (40729003,V.P.Vertebnyy+,R,INDC(CCP)-155,32,1980)      40729 16    8 
+ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    40729 16    9 
+           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  40729 16   10 
+           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,40729 16   11 
+            used in analysis particularly to define background.   40729 16   12 
+CORRECTION  For multiple scattering <0.3%,                        40729 16   13 
+            for counting loses,                                   40729 16   14 
+            for background.                                       40729 16   15 
+ERR-ANALYS (ERR-T) Total error includes:                          40729 16   16 
+                  - monitor uncertainty;                          40729 16   17 
+                  - uncertainty of density of nuclei in samples;  40729 16   18 
+                  - uncertainty due to background;                40729 16   19 
+                  - multiple scattering;                          40729 16   20 
+                  - neutron registration efficiency;              40729 16   21 
+           (ERR-S)- Statistical uncertainty, including uncertainty40729 16   22 
+                    due to apparatus  and reactor fluctuations    40729 16   23 
+ADD-RES      THICKNESS  DATA       ERR-T      ERR-S               40729 16   24 
+             ATOMS/B    B          B          B                   40729 16   25 
+              .0305747     9.8        .2       0.1                40729 16   26 
+              .0505249     9.2        .2       0.1                40729 16   27 
+              .1009903     8.4        .2       0.1                40729 16   28 
+              .149022      7.8        .2       0.1                40729 16   29 
+              .190         7.4        .3       0.20               40729 16   30 
+STATUS     (TABLE) Table 7 of INDC-CCP-155,32,1980                40729 16   31 
+HISTORY    (19920618U) Independent variables rearranged .         40729 16   32 
+           (20080812A) M.M. ERR-S was added.                      40729 16   33 
+           (20191031A) Data for thickness > 0. were moved in      40729 16   34 
+           ADD-RES.                                               40729 16   35 
+ENDBIB              33          0                                 40729 16   36 
+COMMON               7          6                                 40729 16   37 
+EN         EN-RSL-HW  ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR 40729 16   38 
+MONIT                                                             40729 16   39 
+KEV        KEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     40729 16   40 
+B                                                                 40729 16   41 
+  2.         0.3         2.412      .016       2.482      .005    40729 16   42 
+11.41                                                             40729 16   43 
+ENDCOMMON            6          0                                 40729 16   44 
+DATA                 3          1                                 40729 16   45 
+DATA       ERR-T      ERR-S                                       40729 16   46 
+B          B          B                                           40729 16   47 
+  16.5        .3       0.1                                        40729 16   48 
+ENDDATA              3          0                                 40729 16   49 
+ENDSUBENT           48          0                                 40729 1699999 
+SUBENT        40729017   20191031                             418440729 17    1 
+BIB                  6          9                                 40729 17    2 
+REACTION   (63-EU-151(N,EL),,STF,,AV)                             40729 17    3 
+STATUS     (TABLE) Tables 10, 11 of INDC-CCP-155,32,1980          40729 17    4 
+ASSUMED    (ASSUM2,63-EU-151(N,G),,WID,,AV)                       40729 17    5 
+           (ASSUM3,63-EU-151(N,0),,D)                             40729 17    6 
+ANALYSIS    Monte-Carlo method of analysis.                       40729 17    7 
+ERR-ANALYS (ERR-T) Total error.                                   40729 17    8 
+           (ERR-1) Error due to last squares method.              40729 17    9 
+           (ERR-2) Error due to resonance parameters fluctuations.40729 17   10 
+HISTORY    (20080812A) AV added in SF8 in REACTION .              40729 17   11 
+ENDBIB               9          0                                 40729 17   12 
+COMMON               3          3                                 40729 17   13 
+EN-MIN     EN-MAX     MOMENTUM L                                  40729 17   14 
+KEV        KEV        NO-DIM                                      40729 17   15 
+  1.4        2.6         0.                                       40729 17   16 
+ENDCOMMON            3          0                                 40729 17   17 
+DATA                 6          1                                 40729 17   18 
+DATA       ERR-T      ASSUM2     ASSUM3     ERR-1      ERR-2      40729 17   19 
+NO-DIM     NO-DIM     EV         EV         NO-DIM     NO-DIM     40729 17   20 
+    4.10E-4    0.15E-4    .09      .56         0.11E-04   0.18E-0440729 17   21 
+ENDDATA              3          0                                 40729 17   22 
+ENDSUBENT           21          0                                 40729 1799999 
+SUBENT        40729018   20191031                             418440729 18    1 
+BIB                  6          9                                 40729 18    2 
+REACTION   (63-EU-153(N,EL),,STF,,AV)                             40729 18    3 
+ASSUMED    (ASSUM2,63-EU-153(N,G),,WID,,AV)                       40729 18    4 
+           (ASSUM3,63-EU-153(N,0),,D)                             40729 18    5 
+ANALYSIS    Monte-Carlo method of analysis.                       40729 18    6 
+ERR-ANALYS (ERR-T) Total error.                                   40729 18    7 
+           (ERR-1) Error due to last squares method.              40729 18    8 
+           (ERR-2) Error due to resonance parameters fluctuations.40729 18    9 
+STATUS     (TABLE) Tables 10, 11 of INDC-CCP-155,32,1980          40729 18   10 
+HISTORY    (20080812A) AV added in SF8 in REACTION .              40729 18   11 
+ENDBIB               9          0                                 40729 18   12 
+COMMON               4          3                                 40729 18   13 
+EN-MIN     EN-MAX     ERR-1      ERR-2                            40729 18   14 
+KEV        KEV        NO-DIM     NO-DIM                           40729 18   15 
+  1.4        2.6         0.10E-04   0.11E-04                      40729 18   16 
+ENDCOMMON            3          0                                 40729 18   17 
+DATA                 5          1                                 40729 18   18 
+DATA       ERR-T      ASSUM2     ASSUM3     MOMENTUM L            40729 18   19 
+NO-DIM     NO-DIM     EV         EV         NO-DIM                40729 18   20 
+    1.95E-4    0.13E-4  .100       .99        0.                  40729 18   21 
+ENDDATA              3          0                                 40729 18   22 
+ENDSUBENT           21          0                                 40729 1899999 
+SUBENT        40729019   20191031                             418440729 19    1 
+BIB                  6          9                                 40729 19    2 
+REACTION   (67-HO-165(N,EL),,STF,,AV)                             40729 19    3 
+STATUS     (TABLE) Tables 10, 11 of INDC-CCP-155,32,1980          40729 19    4 
+ASSUMED    (ASSUM2,67-HO-165(N,G),,WID,,AV)                       40729 19    5 
+           (ASSUM3,67-HO-165(N,0),,D)                             40729 19    6 
+ANALYSIS   (AREA) Monte-Carlo method of analysis and areas method.40729 19    7 
+ERR-ANALYS (ERR-T) Total error.                                   40729 19    8 
+           (ERR-1) Error due to last squares method. Maximal.     40729 19    9 
+           (ERR-2) Error due to resonance parameters fluctuations.40729 19   10 
+HISTORY    (20080812A) AV added in SF8 in REACTION .              40729 19   11 
+ENDBIB               9          0                                 40729 19   12 
+COMMON               4          3                                 40729 19   13 
+EN-MIN     EN-MAX     ERR-1      ERR-2                            40729 19   14 
+KEV        KEV        NO-DIM     NO-DIM                           40729 19   15 
+  1.4        2.6         0.10E-04   0.26E-04                      40729 19   16 
+ENDCOMMON            3          0                                 40729 19   17 
+DATA                 5          1                                 40729 19   18 
+DATA       ERR-T      ASSUM2     ASSUM3     MOMENTUM L            40729 19   19 
+NO-DIM     NO-DIM     EV         EV         NO-DIM                40729 19   20 
+    1.75E-4    0.25E-4  .073      5.4         0.                  40729 19   21 
+ENDDATA              3          0                                 40729 19   22 
+ENDSUBENT           21          0                                 40729 1999999 
+SUBENT        40729020   20191031                             418440729 20    1 
+BIB                  6          9                                 40729 20    2 
+REACTION   (68-ER-166(N,EL),,STF,,AV)                             40729 20    3 
+ANALYSIS   (AREA) Areas method.                                   40729 20    4 
+ASSUMED    (ASSUM2,68-ER-166(N,G),,WID,,AV)                       40729 20    5 
+           (ASSUM3,68-ER-166(N,0),,D)                             40729 20    6 
+ERR-ANALYS (ERR-T) Total error.                                   40729 20    7 
+           (ERR-1) Error due to last squares method.              40729 20    8 
+           (ERR-2) Error due to resonance parameters fluctuations.40729 20    9 
+STATUS     (TABLE) Tables 10, 12 of INDC-CCP-155,32,1980          40729 20   10 
+HISTORY    (20080812A) AV added in SF8 in REACTION .              40729 20   11 
+ENDBIB               9          0                                 40729 20   12 
+COMMON               4          3                                 40729 20   13 
+EN-MIN     EN-MAX     ERR-1      ERR-2                            40729 20   14 
+KEV        KEV        NO-DIM     NO-DIM                           40729 20   15 
+  1.4        2.6        0.070E-04   0.56E-04                      40729 20   16 
+ENDCOMMON            3          0                                 40729 20   17 
+DATA                 5          1                                 40729 20   18 
+DATA       ERR-T      ASSUM2     ASSUM3     MOMENTUM L            40729 20   19 
+NO-DIM     NO-DIM     EV         EV         NO-DIM                40729 20   20 
+    1.60E-4     .50E-4  .087      38.4        0.                  40729 20   21 
+ENDDATA              3          0                                 40729 20   22 
+ENDSUBENT           21          0                                 40729 2099999 
+SUBENT        40729021   20191031                             418440729 21    1 
+BIB                  6          9                                 40729 21    2 
+REACTION   (68-ER-167(N,EL),,STF,,AV)                             40729 21    3 
+ANALYSIS   (AREA) Areas Method.                                   40729 21    4 
+ASSUMED    (ASSUM2,68-ER-167(N,G),,WID,,AV)                       40729 21    5 
+           (ASSUM3,68-ER-167(N,0),,D)                             40729 21    6 
+ERR-ANALYS (ERR-T) Total error.                                   40729 21    7 
+           (ERR-1) Error due to last squares method.              40729 21    8 
+           (ERR-2) Error due to resonance parameters fluctuations.40729 21    9 
+STATUS     (TABLE) Tables 10, 12 of INDC-CCP-155,32,1980          40729 21   10 
+HISTORY    (20080812A) AV added in SF8 in REACTION .              40729 21   11 
+ENDBIB               9          0                                 40729 21   12 
+COMMON               4          3                                 40729 21   13 
+EN-MIN     EN-MAX     ERR-1      ERR-2                            40729 21   14 
+KEV        KEV        NO-DIM     NO-DIM                           40729 21   15 
+  1.4        2.6         0.10E-04   0.20E-04                      40729 21   16 
+ENDCOMMON            3          0                                 40729 21   17 
+DATA                 5          1                                 40729 21   18 
+DATA       ERR-T      ASSUM2     ASSUM3     MOMENTUM L            40729 21   19 
+NO-DIM     NO-DIM     EV         EV         NO-DIM                40729 21   20 
+    1.90E-4     .22E-4  .088      4.1         0.                  40729 21   21 
+ENDDATA              3          0                                 40729 21   22 
+ENDSUBENT           21          0                                 40729 2199999 
+SUBENT        40729022   20191031                             418440729 22    1 
+BIB                  6          9                                 40729 22    2 
+REACTION   (68-ER-168(N,EL),,STF,,AV)                             40729 22    3 
+ANALYSIS   (AREA)                                                 40729 22    4 
+ASSUMED    (ASSUM2,68-ER-168(N,G),,WID,,AV)                       40729 22    5 
+           (ASSUM3,68-ER-168(N,0),,D)                             40729 22    6 
+ERR-ANALYS (ERR-T)  Total error.                                  40729 22    7 
+           (ERR-1) Error due to last squares method.              40729 22    8 
+           (ERR-5) Error due to resonance parameters fluctuations 40729 22    9 
+STATUS     (TABLE) Tables 10, 12 of INDC-CCP-155,32,1980          40729 22   10 
+HISTORY    (20080812A) AV added in SF8 in REACTION .              40729 22   11 
+ENDBIB               9          0                                 40729 22   12 
+COMMON               5          3                                 40729 22   13 
+EN-MIN     EN-MAX     ERR-1      +ERR-5     -ERR-5                40729 22   14 
+KEV        KEV        NO-DIM     NO-DIM     NO-DIM                40729 22   15 
+  1.4        2.6         0.08E-04   1.35E-04   0.55E-04           40729 22   16 
+ENDCOMMON            3          0                                 40729 22   17 
+DATA                 6          1                                 40729 22   18 
+DATA       +ERR-T     -ERR-T     ASSUM2     ASSUM3     MOMENTUM L 40729 22   19 
+NO-DIM     NO-DIM     NO-DIM     EV         EV         NO-DIM     40729 22   20 
+    1.50E-4    1.36E-4     .56E-4   .100      95.3        0.      40729 22   21 
+ENDDATA              3          0                                 40729 22   22 
+ENDSUBENT           21          0                                 40729 2299999 
+SUBENT        40729023   20191031                             418440729 23    1 
+BIB                  6          9                                 40729 23    2 
+REACTION   (68-ER-170(N,EL),,STF,,AV)                             40729 23    3 
+ANALYSIS   (AREA)  Areas Method.                                  40729 23    4 
+ASSUMED    (ASSUM2,68-ER-170(N,G),,WID,,AV)                       40729 23    5 
+           (ASSUM3,68-ER-170(N,0),,D)                             40729 23    6 
+ERR-ANALYS (ERR-T)  Total error.                                  40729 23    7 
+           (ERR-1) Error due to last squares method.              40729 23    8 
+           (ERR-5) Error due to resonance parameters fluctuations 40729 23    9 
+STATUS     (TABLE) Tables 12 of INDC-CCP-155,32,1980              40729 23   10 
+HISTORY    (20080812A) AV added in SF8 in REACTION .              40729 23   11 
+ENDBIB               9          0                                 40729 23   12 
+COMMON               5          3                                 40729 23   13 
+EN-MIN     EN-MAX     ERR-1      +ERR-5     -ERR-5                40729 23   14 
+KEV        KEV        NO-DIM     NO-DIM     NO-DIM                40729 23   15 
+  1.4        2.6         0.06E-04    1.6E-04    0.6E-04           40729 23   16 
+ENDCOMMON            3          0                                 40729 23   17 
+DATA                 6          1                                 40729 23   18 
+DATA       +ERR-T     -ERR-T     ASSUM2     ASSUM3     MOMENTUM L 40729 23   19 
+NO-DIM     NO-DIM     NO-DIM     EV         EV         NO-DIM     40729 23   20 
+    1.40E-4    1.60E-4     .60E-4  .87       135.       0.        40729 23   21 
+ENDDATA              3          0                                 40729 23   22 
+ENDSUBENT           21          0                                 40729 2399999 
+SUBENT        40729024   20191031                             418440729 24    1 
+BIB                  6         10                                 40729 24    2 
+REACTION   (79-AU-197(N,EL),,STF,,AV)                             40729 24    3 
+ANALYSIS   (AREA)  Area method and Monte-Carlo one give the same  40729 24    4 
+                    results.                                      40729 24    5 
+ASSUMED    (ASSUM2,79-AU-197(N,G),,WID,,AV)                       40729 24    6 
+           (ASSUM3,79-AU-197(N,0),,D)                             40729 24    7 
+ERR-ANALYS (ERR-T) Total error.                                   40729 24    8 
+           (ERR-1) Error due to last squares method.              40729 24    9 
+           (ERR-2) Error due to resonance parameters fluctuations.40729 24   10 
+STATUS     (TABLE) Tables 10, 11 of INDC-CCP-155,32,1980          40729 24   11 
+HISTORY    (20080812A) AV added in SF8 in REACTION .              40729 24   12 
+ENDBIB              10          0                                 40729 24   13 
+COMMON               4          3                                 40729 24   14 
+EN-MIN     EN-MAX     ERR-1      ERR-2                            40729 24   15 
+KEV        KEV        NO-DIM     NO-DIM                           40729 24   16 
+  1.4        2.6         0.04E-04   0.45E-04                      40729 24   17 
+ENDCOMMON            3          0                                 40729 24   18 
+DATA                 5          1                                 40729 24   19 
+DATA       ERR-T      ASSUM2     ASSUM3     MOMENTUM L            40729 24   20 
+NO-DIM     NO-DIM     EV         EV         NO-DIM                40729 24   21 
+    1.90E-4     .46E-4 .126       19.5       0.                   40729 24   22 
+ENDDATA              3          0                                 40729 24   23 
+ENDSUBENT           22          0                                 40729 2499999 
+SUBENT        40729025   20191031                             418440729 25    1 
+BIB                  6          9                                 40729 25    2 
+REACTION   (92-U-238(N,EL),,STF,,AV)                              40729 25    3 
+ANALYSIS   (AREA) Areas Method .                                  40729 25    4 
+ASSUMED    (ASSUM2,92-U-238(N,G),,WID,,AV)                        40729 25    5 
+           (ASSUM3,92-U-238(N,0),,D)                              40729 25    6 
+ERR-ANALYS (ERR-1) Error due to last squares method.              40729 25    7 
+           (ERR-2) Error due to resonance parameters fluctuations.40729 25    8 
+STATUS     (TABLE) Table 10 of INDC-CCP-155,32,1980               40729 25    9 
+HISTORY    (20080812A) M.M. ERR-T was changed into ERR-2 .        40729 25   10 
+                       AV added in SF8 in REACTION .              40729 25   11 
+ENDBIB               9          0                                 40729 25   12 
+COMMON               2          3                                 40729 25   13 
+EN-MIN     EN-MAX                                                 40729 25   14 
+KEV        KEV                                                    40729 25   15 
+  1.4        2.6                                                  40729 25   16 
+ENDCOMMON            3          0                                 40729 25   17 
+DATA                 6          1                                 40729 25   18 
+DATA       ERR-1      ERR-2      ASSUM2     ASSUM3     MOMENTUM L 40729 25   19 
+NO-DIM     NO-DIM     NO-DIM     EV         EV         NO-DIM     40729 25   20 
+    1.40E-4   0.06E-04     .37E-4  .025      25.         0.       40729 25   21 
+ENDDATA              3          0                                 40729 25   22 
+ENDSUBENT           21          0                                 40729 2599999 
+SUBENT        40729026   20191031                             418440729 26    1 
+BIB                  3          3                                 40729 26    2 
+REACTION   (63-EU-0(N,ABS),,SIG)                                  40729 26    3 
+ERR-ANALYS (DATA-ERR) Total error                                 40729 26    4 
+STATUS     (TABLE) Table 15 of INDC-CCP-155,32,1980               40729 26    5 
+ENDBIB               3          0                                 40729 26    6 
+NOCOMMON             0          0                                 40729 26    7 
+DATA                 4          1                                 40729 26    8 
+EN         EN-RSL     DATA       DATA-ERR                         40729 26    9 
+KEV        KEV        B          B                                40729 26   10 
+  2.0        0.3        19.9       1.1                            40729 26   11 
+ENDDATA              3          0                                 40729 26   12 
+ENDSUBENT           11          0                                 40729 2699999 
+SUBENT        40729027   20191031                             418440729 27    1 
+BIB                  8         20                                 40729 27    2 
+REACTION   (63-EU-151(N,EL)63-EU-151,,SIG)                        40729 27    3 
+SAMPLE      Eu2-O3, 97.5 % of Eu-151. Diameter 30.00mm, thickness 40729 27    4 
+            1.0mm and 6.0 mm.                                     40729 27    5 
+MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           40729 27    6 
+MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,,(1/36),32,1980) =       40729 27    7 
+           (40729003,V.P.Vertebnyy+,R,INDC(CCP)-155,32,1980)      40729 27    8 
+ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    40729 27    9 
+           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  40729 27   10 
+           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,40729 27   11 
+            used in analysis particularly to define background.   40729 27   12 
+CORRECTION  For multiple scattering <2.%(thin), <7.(thick),       40729 27   13 
+            for counting loses,                                   40729 27   14 
+            for background.                                       40729 27   15 
+ERR-ANALYS (DATA-ERR) Total error includes:                       40729 27   16 
+                   statistical uncertainty, including uncertainty 40729 27   17 
+            due to apparatus  and reactor fluctuations;           40729 27   18 
+            monitor uncertainty, uncertainty of density of nuclei 40729 27   19 
+            in samples, uncertainty due to background, multiple   40729 27   20 
+            scattering, neutron registration efficiency.          40729 27   21 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729 27   22 
+ENDBIB              20          0                                 40729 27   23 
+COMMON               5          3                                 40729 27   24 
+ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR MONIT                 40729 27   25 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     B                     40729 27   26 
+ 2.412      .016       2.482      .005       11.41                40729 27   27 
+ENDCOMMON            3          0                                 40729 27   28 
+DATA                 4          1                                 40729 27   29 
+EN         EN-RSL-HW  DATA       DATA-ERR                         40729 27   30 
+KEV        KEV        B          B                                40729 27   31 
+  2.0        0.3       18.42        .4                            40729 27   32 
+ENDDATA              3          0                                 40729 27   33 
+ENDSUBENT           32          0                                 40729 2799999 
+SUBENT        40729028   20191031                             418440729 28    1 
+BIB                  7         11                                 40729 28    2 
+REACTION   (63-EU-151(N,EL)63-EU-151,,RAD)                        40729 28    3 
+SAMPLE      Eu2-O3, 97.5 % of Eu-151                              40729 28    4 
+ANALYSIS    Monte-Carlo method.                                   40729 28    5 
+CORRECTION  For contribution of p-wave -0.12,                     40729 28    6 
+            for interference between levels 0.06 .                40729 28    7 
+ERR-ANALYS (ERR-T) Total error.                                   40729 28    8 
+           (ERR-1) Uncertainty of exp.data fitting.               40729 28    9 
+           (ERR-3) Uncertainty due to resonance parameters        40729 28   10 
+                   fluctuations.                                  40729 28   11 
+STATUS     (TABLE) Table 11 of INDC-CCP-155,32,1980               40729 28   12 
+HISTORY    (20191031A) Code POT was deleted from reaction         40729 28   13 
+ENDBIB              11          0                                 40729 28   14 
+NOCOMMON             0          0                                 40729 28   15 
+DATA                 6          1                                 40729 28   16 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-1      ERR-3      40729 28   17 
+KEV        KEV        FERMI      FERMI      FERMI      FERMI      40729 28   18 
+  2.0        0.3       7.7         .11       0.08       0.05      40729 28   19 
+ENDDATA              3          0                                 40729 28   20 
+ENDSUBENT           19          0                                 40729 2899999 
+SUBENT        40729029   20191031                             418440729 29    1 
+BIB                  4          6                                 40729 29    2 
+REACTION   (63-EU-151(N,G)63-EU-152,,SIG)                         40729 29    3 
+SAMPLE      Eu2-O3, 97.5% Eu-151                                  40729 29    4 
+ERR-ANALYS (DATA-ERR) Total error                                 40729 29    5 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729 29    6 
+           (DEP,40729004)                                         40729 29    7 
+           (DEP,40729027)                                         40729 29    8 
+ENDBIB               6          0                                 40729 29    9 
+NOCOMMON             0          0                                 40729 29   10 
+DATA                 4          1                                 40729 29   11 
+EN         EN-RSL-HW  DATA       DATA-ERR                         40729 29   12 
+KEV        KEV        B          B                                40729 29   13 
+  2.0        0.3       26.5        1.1                            40729 29   14 
+ENDDATA              3          0                                 40729 29   15 
+ENDSUBENT           14          0                                 40729 2999999 
+SUBENT        40729031   20191031                             418440729 31    1 
+BIB                  7         11                                 40729 31    2 
+REACTION   (63-EU-153(N,EL)63-EU-153,,RAD)                        40729 31    3 
+SAMPLE      Eu2-O3, 99.1% Eu-153.                                 40729 31    4 
+ANALYSIS    Monte-Carlo method.                                   40729 31    5 
+CORRECTION  For contribution of p-wave -0.05,                     40729 31    6 
+            for interference between levels 0.06 .                40729 31    7 
+ERR-ANALYS (ERR-T) Total error.                                   40729 31    8 
+           (ERR-1) Uncertainty of exp.data fitting.               40729 31    9 
+           (ERR-3) Uncertainty due to resonance parameters        40729 31   10 
+                   fluctuations.                                  40729 31   11 
+STATUS     (TABLE) Tables 10, 11 of INDC-CCP-155,32,1980          40729 31   12 
+HISTORY    (20191031A) Code POT was deleted from reaction         40729 31   13 
+ENDBIB              11          0                                 40729 31   14 
+NOCOMMON             0          0                                 40729 31   15 
+DATA                 6          1                                 40729 31   16 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-1      ERR-3      40729 31   17 
+KEV        KEV        FERMI      FERMI      FERMI      FERMI      40729 31   18 
+  2.0        0.3         8.16      .10        0.09       0.07     40729 31   19 
+ENDDATA              3          0                                 40729 31   20 
+ENDSUBENT           19          0                                 40729 3199999 
+SUBENT        40729032   20191031                             418440729 32    1 
+BIB                  6         12                                 40729 32    2 
+REACTION   (63-EU-153(N,G)63-EU-154,,SIG)                         40729 32    3 
+SAMPLE      Eu2-O3, 99.1 % Eu-153.                                40729 32    4 
+ERR-ANALYS (DATA-ERR) Total error                                 40729 32    5 
+STATUS     (TABLE) Tables 14 , 15 of INDC-CCP-155,32,1980         40729 32    6 
+           (DEP,40729005)                                         40729 32    7 
+           (DEP,40729041)                                         40729 32    8 
+COMMENT     Of compiler. This cross-section was defined by total  40729 32    9 
+            and elastic cross sections, but balance is absent:    40729 32   10 
+             tot < sum( el + ng ).                                40729 32   11 
+HISTORY    (20080812A) M.M. Data were corrected in according to   40729 32   12 
+            values of Table 14 : 4.1 +-0.9 -> 13.9 +-1.1 .        40729 32   13 
+            COMMENT was added.                                    40729 32   14 
+ENDBIB              12          0                                 40729 32   15 
+NOCOMMON             0          0                                 40729 32   16 
+DATA                 4          1                                 40729 32   17 
+EN         EN-RSL-HW  DATA       DATA-ERR                         40729 32   18 
+KEV        KEV        B          B                                40729 32   19 
+  2.0        0.3        13.9       1.1                            40729 32   20 
+ENDDATA              3          0                                 40729 32   21 
+ENDSUBENT           20          0                                 40729 3299999 
+SUBENT        40729033   20191031                             418440729 33    1 
+BIB                  8         20                                 40729 33    2 
+REACTION   (79-AU-197(N,EL)79-AU-197,,SIG)                        40729 33    3 
+SAMPLE       99.99 %  Au-197. Diameter 28.2mm, thickness 0.1 mm,  40729 33    4 
+             0.5 mm .                                             40729 33    5 
+MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           40729 33    6 
+MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,,(1/36),32,1980) =       40729 33    7 
+           (40729003,V.P.Vertebnyy+,R,INDC(CCP)-155,32,1980)      40729 33    8 
+ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    40729 33    9 
+           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  40729 33   10 
+           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,40729 33   11 
+            used in analysis particularly to define background.   40729 33   12 
+CORRECTION  For multiple scattering <0.5%,                        40729 33   13 
+            for counting loses,                                   40729 33   14 
+            for background.                                       40729 33   15 
+ERR-ANALYS (DATA-ERR) Total error includes:                       40729 33   16 
+            statistical uncertainty, including uncertainty        40729 33   17 
+            due to apparatus  and reactor fluctuations;           40729 33   18 
+            monitor uncertainty, uncertainty of density of nuclei 40729 33   19 
+            in samples, uncertainty due to background, multiple   40729 33   20 
+            scattering, neutron registration efficiency.          40729 33   21 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729 33   22 
+ENDBIB              20          0                                 40729 33   23 
+COMMON               5          3                                 40729 33   24 
+ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR MONIT                 40729 33   25 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     B                     40729 33   26 
+ 2.412      .016       2.482      .005       11.41                40729 33   27 
+ENDCOMMON            3          0                                 40729 33   28 
+DATA                 4          1                                 40729 33   29 
+EN         EN-RSL-HW  DATA       DATA-ERR                         40729 33   30 
+KEV        KEV        B          B                                40729 33   31 
+  2.0        0.3        26.5       .3                             40729 33   32 
+ENDDATA              3          0                                 40729 33   33 
+ENDSUBENT           32          0                                 40729 3399999 
+SUBENT        40729034   20191031                             418440729 34    1 
+BIB                  7         13                                 40729 34    2 
+REACTION   (79-AU-197(N,EL)79-AU-197,,RAD)                        40729 34    3 
+SAMPLE       99.99 % Au-197 .                                     40729 34    4 
+ANALYSIS    Monte-Carlo method and areas method given the same    40729 34    5 
+             result.                                              40729 34    6 
+CORRECTION  For contribution of p-wave -0.07,                     40729 34    7 
+            for interference between levels 0.05 .                40729 34    8 
+ERR-ANALYS (ERR-T) Total error.                                   40729 34    9 
+           (ERR-1) Uncertainty of exp.data fitting.               40729 34   10 
+           (ERR-2) Uncertainty due to background correction,      40729 34   11 
+           (ERR-3) Uncertainty due to resonance parameters        40729 34   12 
+                   fluctuations.                                  40729 34   13 
+STATUS     (TABLE) Tables 10, 11 of INDC-CCP-155,32,1980          40729 34   14 
+HISTORY    (20191031A) Code POT was deleted from reaction         40729 34   15 
+ENDBIB              13          0                                 40729 34   16 
+NOCOMMON             0          0                                 40729 34   17 
+DATA                 7          1                                 40729 34   18 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-1      ERR-2      40729 34   19 
+ERR-3                                                             40729 34   20 
+KEV        KEV        FERMI      FERMI      FERMI      FERMI      40729 34   21 
+FERMI                                                             40729 34   22 
+  2.0        0.3          9.6        .25     0.10       0.03      40729 34   23 
+    0.23                                                          40729 34   24 
+ENDDATA              6          0                                 40729 34   25 
+ENDSUBENT           24          0                                 40729 3499999 
+SUBENT        40729035   20191031                             418440729 35    1 
+BIB                  5          8                                 40729 35    2 
+REACTION   (79-AU-197(N,G)79-AU-198,,SIG,,,DERIV)                 40729 35    3 
+SAMPLE      99.99 PC  Au-197                                      40729 35    4 
+ANALYSIS     Derived as difference of total and elastic           40729 35    5 
+             cross-sections.                                      40729 35    6 
+ERR-ANALYS (DATA-ERR) Total error                                 40729 35    7 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729 35    8 
+           (DEP,40729007) Total C-S                               40729 35    9 
+           (DEP,40729033) Elastic C-S                             40729 35   10 
+ENDBIB               8          0                                 40729 35   11 
+NOCOMMON             0          0                                 40729 35   12 
+DATA                 4          1                                 40729 35   13 
+EN         EN-RSL     DATA       DATA-ERR                         40729 35   14 
+KEV        KEV        B          B                                40729 35   15 
+  2.0        0.3        2.5        .5                             40729 35   16 
+ENDDATA              3          0                                 40729 35   17 
+ENDSUBENT           16          0                                 40729 3599999 
+SUBENT        40729036   20191031                             418440729 36    1 
+BIB                  7         13                                 40729 36    2 
+REACTION   (68-ER-166(N,EL)68-ER-166,,RAD)                        40729 36    3 
+SAMPLE      Er2-O3, 95.9 %  Er-166                                40729 36    4 
+ANALYSIS   (AREA) Areas method .                                  40729 36    5 
+CORRECTION  For contribution of p-wave -0.05,                     40729 36    6 
+            for interference between levels 0.08 .                40729 36    7 
+ERR-ANALYS (ERR-T) Total error.                                   40729 36    8 
+           (ERR-1) Uncertainty of exp.data fitting.               40729 36    9 
+           (ERR-2) Uncertainty due to background correction,      40729 36   10 
+           (ERR-3) Uncertainty due to resonance parameters        40729 36   11 
+                   fluctuations.                                  40729 36   12 
+STATUS     (TABLE) Tables 10, 12 of INDC-CCP-155,32,1980          40729 36   13 
+           (DEP,40729013)                                         40729 36   14 
+HISTORY    (20191031A) Code POT was deleted from reaction         40729 36   15 
+ENDBIB              13          0                                 40729 36   16 
+NOCOMMON             0          0                                 40729 36   17 
+DATA                 7          1                                 40729 36   18 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-1      ERR-2      40729 36   19 
+ERR-3                                                             40729 36   20 
+KEV        KEV        FERMI      FERMI      FERMI      FERMI      40729 36   21 
+FERMI                                                             40729 36   22 
+  2.0        0.3          8.1        .35     0.2        0.03      40729 36   23 
+ 0.28                                                             40729 36   24 
+ENDDATA              6          0                                 40729 36   25 
+ENDSUBENT           24          0                                 40729 3699999 
+SUBENT        40729037   20191031                             418440729 37    1 
+BIB                  7         13                                 40729 37    2 
+REACTION   (68-ER-167(N,EL)68-ER-167,,RAD)                        40729 37    3 
+SAMPLE      Er2O3, 94.2 %  Er-167                                 40729 37    4 
+ANALYSIS   (AREA) Areas method .                                  40729 37    5 
+CORRECTION  For contribution of p-wave -0.05,                     40729 37    6 
+            for interference between levels 0.06 .                40729 37    7 
+ERR-ANALYS (ERR-T) Total error.                                   40729 37    8 
+           (ERR-1) Uncertainty of exp.data fitting.               40729 37    9 
+           (ERR-2) Uncertainty due to background correction,      40729 37   10 
+           (ERR-3) Uncertainty due to resonance parameters        40729 37   11 
+                   fluctuations.                                  40729 37   12 
+STATUS     (TABLE) Tables 10, 12 of INDC-CCP-155,32,1980          40729 37   13 
+           (DEP,40729014)                                         40729 37   14 
+HISTORY    (20191031A) Code POT was deleted from reaction         40729 37   15 
+ENDBIB              13          0                                 40729 37   16 
+NOCOMMON             0          0                                 40729 37   17 
+DATA                 7          1                                 40729 37   18 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-1      ERR-2      40729 37   19 
+ERR-3                                                             40729 37   20 
+KEV        KEV        FERMI      FERMI      FERMI      FERMI      40729 37   21 
+FERMI                                                             40729 37   22 
+  2.0        0.3          8.0        .24     0.15       0.15      40729 37   23 
+ 0.11                                                             40729 37   24 
+ENDDATA              6          0                                 40729 37   25 
+ENDSUBENT           24          0                                 40729 3799999 
+SUBENT        40729038   20191031                             418440729 38    1 
+BIB                  7         13                                 40729 38    2 
+REACTION   (68-ER-168(N,EL)68-ER-168,,RAD)                        40729 38    3 
+SAMPLE      Er2-O3, 97.7 % Er-168 .                               40729 38    4 
+ANALYSIS   (AREA) Areas method .                                  40729 38    5 
+CORRECTION  For contribution of p-wave -0.05,                     40729 38    6 
+            for interference between levels 0.09 .                40729 38    7 
+ERR-ANALYS (ERR-T) Total error.                                   40729 38    8 
+           (ERR-1) Uncertainty of exp.data fitting.               40729 38    9 
+           (ERR-2) Uncertainty due to background correction,      40729 38   10 
+           (ERR-3) Uncertainty due to resonance parameters        40729 38   11 
+                   fluctuations.                                  40729 38   12 
+STATUS     (TABLE) Tables 10, 12 of INDC-CCP-155,32,1980          40729 38   13 
+           (DEP,40729015)                                         40729 38   14 
+HISTORY    (20191031A) Code POT was deleted from reaction         40729 38   15 
+ENDBIB              13          0                                 40729 38   16 
+NOCOMMON             0          0                                 40729 38   17 
+DATA                 7          1                                 40729 38   18 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-1      ERR-2      40729 38   19 
+ERR-3                                                             40729 38   20 
+KEV        KEV        FERMI      FERMI      FERMI      FERMI      40729 38   21 
+FERMI                                                             40729 38   22 
+  2.0        0.3         7.85        .43     0.07       0.05      40729 38   23 
+ 0.42                                                             40729 38   24 
+ENDDATA              6          0                                 40729 38   25 
+ENDSUBENT           24          0                                 40729 3899999 
+SUBENT        40729039   20191031                             418440729 39    1 
+BIB                  7         13                                 40729 39    2 
+REACTION   (68-ER-170(N,EL)68-ER-170,,RAD)                        40729 39    3 
+SAMPLE      Er2-O3, 97.7 % Er-170 .                               40729 39    4 
+ANALYSIS   (AREA) Areas method .                                  40729 39    5 
+CORRECTION  For contribution of p-wave -0.07,                     40729 39    6 
+            for interference between levels 0.06 .                40729 39    7 
+ERR-ANALYS (ERR-T) Total error.                                   40729 39    8 
+           (ERR-1) Uncertainty of exp.data fitting.               40729 39    9 
+           (ERR-2) Uncertainty due to background correction,      40729 39   10 
+           (ERR-3) Uncertainty due to resonance parameters        40729 39   11 
+                   fluctuations.                                  40729 39   12 
+STATUS     (TABLE) Table 12 of INDC-CCP-155,32,1980               40729 39   13 
+           (DEP,40729016)                                         40729 39   14 
+HISTORY    (20191031A) Code POT was deleted from reaction         40729 39   15 
+ENDBIB              13          0                                 40729 39   16 
+NOCOMMON             0          0                                 40729 39   17 
+DATA                 7          1                                 40729 39   18 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-1      ERR-2      40729 39   19 
+ERR-3                                                             40729 39   20 
+KEV        KEV        FERMI      FERMI      FERMI      FERMI      40729 39   21 
+FERMI                                                             40729 39   22 
+  2.0        0.3          8.3        .45     0.08       0.03      40729 39   23 
+ 0.44                                                             40729 39   24 
+ENDDATA              6          0                                 40729 39   25 
+ENDSUBENT           24          0                                 40729 3999999 
+SUBENT        40729040   20191031                             418440729 40    1 
+BIB                  7         12                                 40729 40    2 
+REACTION   (92-U-238(N,EL)92-U-238,,RAD)                          40729 40    3 
+SAMPLE      Natural uranium .                                     40729 40    4 
+ANALYSIS   (AREA) Areas method .                                  40729 40    5 
+CORRECTION  For contribution of p-wave -0.40,                     40729 40    6 
+            for interference between levels 0.05 .                40729 40    7 
+ERR-ANALYS (ERR-T) Total error.                                   40729 40    8 
+           (ERR-1) Uncertainty of exp.data fitting.               40729 40    9 
+           (ERR-2) Uncertainty due to background correction,      40729 40   10 
+           (ERR-3) Uncertainty due to resonance parameters        40729 40   11 
+                   fluctuations.                                  40729 40   12 
+STATUS     (TABLE) Tables 10, 13 of INDC-CCP-155,32,1980          40729 40   13 
+HISTORY    (20191031A) Code POT was deleted from reaction         40729 40   14 
+ENDBIB              12          0                                 40729 40   15 
+NOCOMMON             0          0                                 40729 40   16 
+DATA                 7          1                                 40729 40   17 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-1      ERR-2      40729 40   18 
+ERR-3                                                             40729 40   19 
+KEV        KEV        FERMI      FERMI      FERMI      FERMI      40729 40   20 
+FERMI                                                             40729 40   21 
+  2.0        0.3         9.77        .13     0.10       0.06      40729 40   22 
+ 0.20                                                             40729 40   23 
+ENDDATA              6          0                                 40729 40   24 
+ENDSUBENT           23          0                                 40729 4099999 
+SUBENT        40729041   20191031                             418440729 41    1 
+BIB                  8         20                                 40729 41    2 
+REACTION   (63-EU-153(N,EL)63-EU-153,,SIG)                        40729 41    3 
+SAMPLE      Eu2-O3, 99.1 %  Eu-153 . Diameter 30.00mm, thickness  40729 41    4 
+             1.0mm and 1.7 mm.                                    40729 41    5 
+MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           40729 41    6 
+MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,,(1/36),32,1980)         40729 41    7 
+           (40729003,V.P.Vertebnyy+,R,INDC(CCP)-155,32,1980)      40729 41    8 
+ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    40729 41    9 
+           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  40729 41   10 
+           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,40729 41   11 
+            used in analysis particularly to define background.   40729 41   12 
+CORRECTION  For multiple scattering <0.3%,                        40729 41   13 
+            for counting loses,                                   40729 41   14 
+            for background.                                       40729 41   15 
+ERR-ANALYS (DATA-ERR) Total error includes:                       40729 41   16 
+                   statistical uncertainty, including uncertainty 40729 41   17 
+            due to apparatus  and reactor fluctuations;           40729 41   18 
+            monitor uncertainty, uncertainty of density of nuclei 40729 41   19 
+            in samples, uncertainty due to background, multiple   40729 41   20 
+            scattering, neutron registration efficiency.          40729 41   21 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729 41   22 
+ENDBIB              20          0                                 40729 41   23 
+COMMON               5          3                                 40729 41   24 
+ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR MONIT                 40729 41   25 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     B                     40729 41   26 
+ 2.412      .016       2.482      .005       11.41                40729 41   27 
+ENDCOMMON            3          0                                 40729 41   28 
+DATA                 4          1                                 40729 41   29 
+EN         EN-RSL-HW  DATA       DATA-ERR                         40729 41   30 
+KEV        KEV        B          B                                40729 41   31 
+  2.0        0.3        13.6       .5                             40729 41   32 
+ENDDATA              3          0                                 40729 41   33 
+ENDSUBENT           32          0                                 40729 4199999 
+SUBENT        40729042   20191031                             418440729 42    1 
+BIB                  9         22                                 40729 42    2 
+REACTION   (67-HO-165(N,EL)67-HO-165,,SIG)                        40729 42    3 
+SAMPLE      Ho2O3 oxide powder, 99.9 % of Ho-165.                 40729 42    4 
+            13.12E-04 nucl/b, 31.58E-04 nucl/b. Diameter 30.00 mm,40729 42    5 
+            thickness 4.0, 10.0 mm .                              40729 42    6 
+MONITOR    ((MONIT)82-PB-0(N,TOT),,SIG)                           40729 42    7 
+MONIT-REF  (40729003,V.P.Vertebnyy+,J,YK,,(1/36),32,1980) =       40729 42    8 
+           (40729003,V.P.Vertebnyy+,R,INDC(CCP)-155,32,1980)      40729 42    9 
+ASSUMED    (ASSUM2,(82-PB-0(N,TOT),,SIG)/(6-C-12(N,TOT),,SIG))    40729 42   10 
+           (ASSUM3,(82-PB-0(N,SCT)82-PB-0,,SIG)/                  40729 42   11 
+           (6-C-12(N,SCT)6-C-12,,SIG)) Defined in this experiment,40729 42   12 
+            used in analysis particularly to define background.   40729 42   13 
+ERR-ANALYS (DATA-ERR) Total error includes:                       40729 42   14 
+                   statistical uncertainty, including uncertainty 40729 42   15 
+            due to apparatus  and reactor fluctuations;           40729 42   16 
+            monitor uncertainty, uncertainty of density of nuclei 40729 42   17 
+            in samples, uncertainty due to background, multiple   40729 42   18 
+            scattering, neutron registration efficiency.          40729 42   19 
+CORRECTION  For multiple scattering < 0.5% .                      40729 42   20 
+            for counting loses,                                   40729 42   21 
+            for background.                                       40729 42   22 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729 42   23 
+HISTORY    (20080812C) M.M.                                       40729 42   24 
+ENDBIB              22          0                                 40729 42   25 
+COMMON               5          3                                 40729 42   26 
+ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR MONIT                 40729 42   27 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     B                     40729 42   28 
+ 2.412      .016       2.482      .005       11.41                40729 42   29 
+ENDCOMMON            3          0                                 40729 42   30 
+DATA                 4          1                                 40729 42   31 
+EN         EN-RSL-HW  DATA       DATA-ERR                         40729 42   32 
+KEV        KEV        B          B                                40729 42   33 
+  2.0        0.3       19.9       0.4                             40729 42   34 
+ENDDATA              3          0                                 40729 42   35 
+ENDSUBENT           34          0                                 40729 4299999 
+SUBENT        40729043   20191031                             418440729 43    1 
+BIB                  6         11                                 40729 43    2 
+REACTION   (67-HO-165(N,G)67-HO-166,,SIG,,,DERIV)                 40729 43    3 
+SAMPLE      Ho2O3 oxide powder, 99.9 % of Ho-165.                 40729 43    4 
+            13.12E-04 nucl/b, 31.58E-04 nucl/b.                   40729 43    5 
+            Diameter 30.00 mm, thickness 4.0, 10.0 mm .           40729 43    6 
+ANALYSIS    Derived as difference between total and scattering    40729 43    7 
+            cross-sections.                                       40729 43    8 
+ERR-ANALYS (DATA-ERR) Total error                                 40729 43    9 
+STATUS     (TABLE) Table 14 of INDC-CCP-155,32,1980               40729 43   10 
+           (DEP,40729006) Total C-S                               40729 43   11 
+           (DEP,40729042) Elastic C-S                             40729 43   12 
+HISTORY    (20080812C) M.M.                                       40729 43   13 
+ENDBIB              11          0                                 40729 43   14 
+NOCOMMON             0          0                                 40729 43   15 
+DATA                 4          1                                 40729 43   16 
+EN         EN-RSL-HW  DATA       DATA-ERR                         40729 43   17 
+KEV        KEV        B          B                                40729 43   18 
+  2.0        0.3        4.1        .9                             40729 43   19 
+ENDDATA              3          0                                 40729 43   20 
+ENDSUBENT           19          0                                 40729 4399999 
 ENDENTRY            42          0                                 4072999999999 
