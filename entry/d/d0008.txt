@@ -1,245 +1,246 @@
-ENTRY            D0008   20110203                             D076D000800000001 
-SUBENT        D0008001   20110203                             D076D000800100001 
-BIB                  9         24                                 D000800100002 
-TITLE      Angular distributions and absolute cross sections for  D000800100003 
-            the T(p,n)3He and the T(d,n)4He neutron source        D000800100004 
-            reaction                                              D000800100005 
-AUTHOR     (D.K.McDaniels, M.Drosg, J.C.Hopkins, J.D.Seagrave)    D000800100006 
-INSTITUTE  (1USALAS,2AUSPVI)                                      D000800100007 
-REFERENCE  (J,PR/C,6,1593,1972) T(p,n)3He data                    D000800100008 
-           (J,PR/C,7,882,1973)  T(d,n)4He data                    D000800100009 
-           (J,NSE,67,190,1978)  Renormalized T(d,n)4He data       D000800100010 
-FACILITY   (VDGT,1USALAS) Bunched proton and deuteron beam        D000800100011 
-SAMPLE     The target(sample) cell was filled with tritium at the D000800100012 
-            pressures 800 torr(for energies of incident particle  D000800100013 
-            of 5 to 8 MeV) and 1300 torr (for higher energies).   D000800100014 
-METHOD     (TOF) Pulse separation time was varied from 400 nsec   D000800100015 
-            to 12.8 micro-sec, with a pulse time resolution of    D000800100016 
-            1.5 nsec full width at half maximum.                  D000800100017 
-ERR-ANALYS Combination of the statistical uncertainty with the    D000800100018 
-            uncertainty of the background subtraction             D000800100019 
-HISTORY    (19790216C) KO                                         D000800100020 
-           (19970428U) HW. Corrections in REACTION and STATUS in  D000800100021 
-            subents 002 - 004                                     D000800100022 
-           (19980721U) HW. MONITOR and MONIT-REF moved to prop    D000800100023 
-            subentries                                            D000800100024 
-           (20060724A) SD. BIB upgraded                           D000800100025 
-           (20110203A) On. REFERENCE moved from data subentries   D000800100026 
-ENDBIB              24          0                                 D000800100027 
-NOCOMMON             0          0                                 D000800100028 
-ENDSUBENT           27          0                                 D000800199999 
-SUBENT        D0008002   20110203                             D076D000800200001 
-BIB                 11         37                                 D000800200002 
-REACTION  1(1-H-3(P,N)2-HE-3,,DA)                                 D000800200003 
-          2(1-H-3(P,N)2-HE-3,,DA)                                 D000800200004 
-DETECTOR  1(SCIN) Liquid scintillator NE213, about 12 cm diam by  D000800200005 
-            6cm long                                              D000800200006 
-          2(TELES)                                                D000800200007 
-METHOD    1(TOF)                                                  D000800200008 
-ANALYSIS   Original data improved using better efficiency curve   D000800200009 
-            and renormalised by M.Drosg                           D000800200010 
-          2 The original results were adjusted with scale         D000800200011 
-            adjustment of 1.075 instead of 1.10.                  D000800200012 
-MONITOR    (1-H-3(P,N)2-HE-3,,DA) for p-t                         D000800200013 
-          1(1-H-1(N,EL)1-H-1,,DA)                                 D000800200014 
-            Efficiency curve for 11 pulse-height biases           D000800200015 
-          2(1-H-1(N,EL)1-H-1,,DA,,,EVAL)                          D000800200016 
-MONIT-REF  (D0009001,N.Jarmie+,J,PR/C,16,15,1977)                 D000800200017 
-          1(,M.Drosg,J,NIM,105,573,1972)                          D000800200018 
-          2(,J.C.Hopkins+,J,ND/A,9,137,1971)                      D000800200019 
-           (,J.C.Hopkins,W,HOPKINS,1975) to Drosg                 D000800200020 
-            These more reliable cross-section predictions for     D000800200021 
-            H-1(n,n)H-1 replace the older reference cross-section D000800200022 
-            by J.L.Gammel's estimate in fast neutron physics,vol.ID000800200023 
-            p.2185,Marion-Fowler,eds.,Intersci.Pub.Inc.,N.Y.(1963)D000800200024 
-FLAG       (1.) Data  below E(p)=7 MeV are probably high, Drosg's D000800200025 
-            recent result "On the 3H(p,n)3He differential cross-  D000800200026 
-            sections below 5 MeV" (priv.comm. from Drosg,79/02/22,D000800200027 
-            see EXFOR D0013) gives disagreement at 4 MeV of about D000800200028 
-            17%t.                                                 D000800200029 
-REL-REF    (R,D0002001,M.Drosg,J,NSE,67,190,197808)               D000800200030 
-ERR-ANALYS (DATA-ERR1) Scale error 1.5 percent                    D000800200031 
-           (DATA-ERR2) Differential error                         D000800200032 
-STATUS     (TABLE) Table II of Nucl.Sci.Eng.67(1978)190           D000800200033 
-          2(SPSDD) By Manfred Drosg (2011-02-01):                 D000800200034 
-            No straightforward way to subtract the background     D000800200035 
-            which cannot be masked by normalization               D000800200036 
-HISTORY    (19970428U) HW. N deleted from SF7, STATUS corrected   D000800200037 
-           (19980721U) HW. MONITOR and MONIT-REF added            D000800200038 
-           (20110203A) On. Pointer 2 data set superseded          D000800200039 
-ENDBIB              37          0                                 D000800200040 
-COMMON               2          3                                 D000800200041 
-ANG        DATA-ERR1                                              D000800200042 
-ADEG       PER-CENT                                               D000800200043 
- 0.         1.5                                                   D000800200044 
-ENDCOMMON            3          0                                 D000800200045 
-DATA                 6         13                                 D000800200046 
-EN         DATA      1DATA-ERR2 1DATA      2DATA-ERR2 2FLAG       D000800200047 
-MEV        MB/SR      PER-CENT   MB/SR      PER-CENT   NO-DIM     D000800200048 
-  4.00      95.5       2.5                              1.        D000800200049 
-  5.00      68.9       2.3                              1.        D000800200050 
-  6.00      47.0       2.2                              1.        D000800200051 
-  7.00      34.8       1.9                                        D000800200052 
-  8.00      28.0       1.7                                        D000800200053 
-  9.00      26.7       1.7                                        D000800200054 
- 10.00      27.1       1.7        27.2       2.                   D000800200055 
- 11.00      29.5       1.7        30.2       2.                   D000800200056 
- 12.00      33.0       1.8        32.4       2.                   D000800200057 
- 13.00      35.6       2.0        36.8       2.                   D000800200058 
- 14.00      39.6       2.3        39.0       2.                   D000800200059 
- 15.00      42.3       2.3        41.5       2.                   D000800200060 
- 15.50      42.2       2.3                                        D000800200061 
-ENDDATA             15          0                                 D000800200062 
-ENDSUBENT           61          0                                 D000800299999 
-SUBENT        D0008003   20110203                             D076D000800300001 
-BIB                  9         21                                 D000800300002 
-REACTION   (1-H-3(D,N)2-HE-4,,DA)                                 D000800300003 
-            0 deg. cross-section.                                 D000800300004 
-DETECTOR   (TELES)                                                D000800300005 
-ANALYSIS   The original results were adjusted with scale          D000800300006 
-            adjustment of 1.069 instead of 1.10.                  D000800300007 
-           Result with counter-telescope only was renormalized.   D000800300008 
-MONITOR   1(1-H-3(D,N)2-HE-4,,DA)                                 D000800300009 
-          2(1-H-1(N,EL)1-H-1,,DA,,,EVAL) renormalization.         D000800300010 
-MONIT-REF 1(D0009001,N.Jarmie+,J,PR/C,16,15,1977)                 D000800300011 
-          2(,J.C.Hopkins+,J,ND/A,9,137,1971) renormalization.     D000800300012 
-           (,J.C.Hopkins+,W,HOPKINS,1975) to Drosg. for renorm.   D000800300013 
-REL-REF    (R,D0004001,M.Drosg,J,NSE,67,190,197808) Renorm.data   D000800300014 
-ERR-ANALYS (DATA-ERR1) Scale error                                D000800300015 
-           (DATA-ERR2) Differential error                         D000800300016 
-STATUS     (TABLE) Table X of Nucl.Sci.Eng.67(1978)190            D000800300017 
-           (SPSDD) By Manfred Drosg (2011-02-01):                 D000800300018 
-            No straightforward way to subtract the background     D000800300019 
-            which cannot be masked by normalization               D000800300020 
-HISTORY    (19970428U) HW. N deleted from SF7, STATUS corrected   D000800300021 
-           (19980721U) HW. MONITOR and MONIT-REF add              D000800300022 
-           (20110203A) On. STATUS added                           D000800300023 
-ENDBIB              21          0                                 D000800300024 
-COMMON               2          3                                 D000800300025 
-ANG        DATA-ERR1                                              D000800300026 
-ADEG       PER-CENT                                               D000800300027 
- 0.         1.5                                                   D000800300028 
-ENDCOMMON            3          0                                 D000800300029 
-DATA                 3          5                                 D000800300030 
-EN         DATA       DATA-ERR2                                   D000800300031 
-MEV        MB/SR      PER-CENT                                    D000800300032 
-  6.00      25.9       2.                                         D000800300033 
-  8.00      26.7       2.                                         D000800300034 
-  9.00      25.9       2.                                         D000800300035 
- 10.00      25.4       2.                                         D000800300036 
- 11.00      24.8       2.                                         D000800300037 
-ENDDATA              7          0                                 D000800300038 
-ENDSUBENT           37          0                                 D000800399999 
-SUBENT        D0008004   20110203                             D076D000800400001 
-BIB                  8         15                                 D000800400002 
-REACTION   (1-H-3(D,N)2-HE-4,,DA)                                 D000800400003 
-ANALYSIS   Data shown in Table II of Phys.Rev.C7(1973)882         D000800400004 
-            were revised and scale adjusted.                      D000800400005 
-           Data revised according to best efficiency curve.       D000800400006 
-MONITOR   1(1-H-1(N,EL)1-H-1,,DA)                                 D000800400007 
-            for efficiency curve                                  D000800400008 
-          2(1-H-3(D,N)2-HE-4,,DA)                                 D000800400009 
-MONIT-REF 2(D0009001,N.Jarmie+,J,PR/C,16,15,1977)                 D000800400010 
-REL-REF    (R,D0004001,M.Drosg,J,NSE,67,190,197808) renorm.data   D000800400011 
-ERR-ANALYS (DATA-ERR1) Scale error +-1.5%                         D000800400012 
-           (DATA-ERR2) Differential error                         D000800400013 
-STATUS     (TABLE) Table XIV of Nucl.Sci.Eng.67(1978)190          D000800400014 
-HISTORY    (19970428U) HW. N deleted from SF7, STATUS corrected   D000800400015 
-           (19980721U) HW. MONITOR and MONIT-REF added            D000800400016 
-           (20110203A) On. STATUS added                           D000800400017 
-ENDBIB              15          0                                 D000800400018 
-COMMON               1          3                                 D000800400019 
-DATA-ERR1                                                         D000800400020 
-PER-CENT                                                          D000800400021 
- 1.5                                                              D000800400022 
-ENDCOMMON            3          0                                 D000800400023 
-DATA                 4         84                                 D000800400024 
-EN         ANG        DATA       DATA-ERR2                        D000800400025 
-MEV        ADEG       MB/SR      PER-CENT                         D000800400026 
-  5.0        0.        24.98      2.                              D000800400027 
-  5.0       10.        22.42      2.                              D000800400028 
-  5.0       20.        17.51      2.                              D000800400029 
-  5.0       30.        12.95      2.                              D000800400030 
-  5.0       40.        10.03      2.                              D000800400031 
-  5.0       50.         8.28      2.                              D000800400032 
-  5.0       60.         6.88      2.                              D000800400033 
-  5.0       70.         5.53      2.                              D000800400034 
-  5.0       80.         4.40      2.                              D000800400035 
-  5.0       90.         3.84      2.                              D000800400036 
-  5.0      100.         4.05      2.                              D000800400037 
-  5.0      110.         4.51      2.                              D000800400038 
-  6.0        0.        26.84      2.                              D000800400039 
-  6.0       10.        23.40      2.                              D000800400040 
-  6.0       20.        17.05      2.                              D000800400041 
-  6.0       30.        11.28      2.                              D000800400042 
-  6.0       40.         8.94      2.                              D000800400043 
-  6.0       50.         7.90      2.                              D000800400044 
-  6.0       60.         6.90      2.                              D000800400045 
-  6.0       70.         5.82      2.                              D000800400046 
-  6.0       80.         4.32      2.                              D000800400047 
-  6.0       90.         3.57      2.                              D000800400048 
-  6.0      100.         3.64      2.                              D000800400049 
-  6.0      110.         4.04      2.                              D000800400050 
- 11.0        0.        25.02      2.                              D000800400051 
- 11.0       10.        19.13      2.                              D000800400052 
- 11.0       20.         8.71      2.                              D000800400053 
- 11.0       30.         3.86      2.                              D000800400054 
- 11.0       40.         4.64      2.                              D000800400055 
- 11.0       50.         6.51      2.                              D000800400056 
- 11.0       60.         6.05      2.                              D000800400057 
- 11.0       70.         4.03      2.                              D000800400058 
- 11.0       80.         2.34      2.                              D000800400059 
- 11.0       90.         1.72      2.                              D000800400060 
- 11.0      100.         1.90      2.                              D000800400061 
- 11.0      110.         2.45      2.                              D000800400062 
- 12.0        0.        25.08      2.                              D000800400063 
- 12.0       10.        18.78      2.                              D000800400064 
- 12.0       20.         7.91      2.                              D000800400065 
- 12.0       30.         3.32      2.                              D000800400066 
- 12.0       40.         4.75      2.                              D000800400067 
- 12.0       50.         6.37      2.                              D000800400068 
- 12.0       60.         5.83      2.                              D000800400069 
- 12.0       70.         3.67      2.                              D000800400070 
- 12.0       80.         2.02      2.                              D000800400071 
- 12.0       90.         1.53      2.                              D000800400072 
- 12.0      100.         1.80      2.                              D000800400073 
- 12.0      110.         2.21      2.                              D000800400074 
- 13.0        0.        25.06      2.                              D000800400075 
- 13.0       10.        18.14      2.                              D000800400076 
- 13.0       20.         7.15      2.                              D000800400077 
- 13.0       30.         2.91      2.                              D000800400078 
- 13.0       40.         4.62      2.                              D000800400079 
- 13.0       50.         6.34      2.                              D000800400080 
- 13.0       60.         5.54      2.                              D000800400081 
- 13.0       70.         3.46      2.                              D000800400082 
- 13.0       80.         1.63      5.                              D000800400083 
- 13.0       90.         1.35      5.                              D000800400084 
- 13.0      100.         1.68      5.                              D000800400085 
- 13.0      110.         2.06      5.                              D000800400086 
- 14.0        0.        25.08      2.                              D000800400087 
- 14.0       10.        18.04      2.                              D000800400088 
- 14.0       20.         6.68      2.                              D000800400089 
- 14.0       30.         2.75      2.                              D000800400090 
- 14.0       40.         4.58      2.                              D000800400091 
- 14.0       50.         6.42      2.                              D000800400092 
- 14.0       60.         5.39      2.                              D000800400093 
- 14.0       70.         3.00      5.                              D000800400094 
- 14.0       80.         1.43      5.                              D000800400095 
- 14.0       90.         1.22      5.                              D000800400096 
- 14.0      100.         1.65      5.                              D000800400097 
- 14.0      110.         1.99      5.                              D000800400098 
- 15.0        0.        25.36      2.                              D000800400099 
- 15.0       10.        18.06      2.                              D000800400100 
- 15.0       20.         6.43      2.                              D000800400101 
- 15.0       30.         2.58      2.                              D000800400102 
- 15.0       40.         4.75      2.                              D000800400103 
- 15.0       50.         6.66      2.                              D000800400104 
- 15.0       60.         5.03      2.                              D000800400105 
- 15.0       70.         2.85      2.                              D000800400106 
- 15.0       80.         1.28      2.                              D000800400107 
- 15.0       90.         1.23      2.                              D000800400108 
- 15.0      100.         1.73      2.                              D000800400109 
- 15.0      110.         1.98      2.                              D000800400110 
-ENDDATA             86          0                                 D000800400111 
-ENDSUBENT          110          0                                 D000800499999 
+ENTRY            D0008   20150710                             D101D0008  0    1 
+SUBENT        D0008001   20150710                             D101D0008  1    1 
+BIB                  9         25                                 D0008  1    2 
+TITLE      Angular distributions and absolute cross sections for  D0008  1    3 
+            the T(p,n)3He and the T(d,n)4He neutron source        D0008  1    4 
+            reaction                                              D0008  1    5 
+AUTHOR     (D.K.McDaniels, M.Drosg, J.C.Hopkins, J.D.Seagrave)    D0008  1    6 
+INSTITUTE  (1USALAS,2AUSVIE)                                      D0008  1    7 
+REFERENCE  (J,PR/C,6,1593,1972) T(p,n)3He data                    D0008  1    8 
+           (J,PR/C,7,882,1973)  T(d,n)4He data                    D0008  1    9 
+           (J,NSE,67,190,1978)  Revised data given                D0008  1   10 
+FACILITY   (VDGT,1USALAS) Bunched proton and deuteron beam        D0008  1   11 
+SAMPLE     The target(sample) cell was filled with tritium at the D0008  1   12 
+            pressures 800 torr(for energies of incident particle  D0008  1   13 
+            of 5 to 8 MeV) and 1300 torr (for higher energies).   D0008  1   14 
+METHOD     (TOF) Pulse separation time was varied from 400 nsec   D0008  1   15 
+            to 12.8 micro-sec, with a pulse time resolution of    D0008  1   16 
+            1.5 nsec full width at half maximum.                  D0008  1   17 
+ERR-ANALYS Combination of the statistical uncertainty with the    D0008  1   18 
+            uncertainty of the background subtraction             D0008  1   19 
+HISTORY    (19790216C) KO                                         D0008  1   20 
+           (19970428U) HW. Corrections in REACTION and STATUS in  D0008  1   21 
+            subents 002 - 004                                     D0008  1   22 
+           (19980721U) HW. MONITOR and MONIT-REF moved to prop    D0008  1   23 
+            subentries                                            D0008  1   24 
+           (20060724A) SD. BIB upgraded                           D0008  1   25 
+           (20110203U) On. REFERENCE moved from data subentries   D0008  1   26 
+           (20150710U) On. REFERENCE(NSE): free text revised      D0008  1   27 
+ENDBIB              25          0                                 D0008  1   28 
+NOCOMMON             0          0                                 D0008  1   29 
+ENDSUBENT           28          0                                 D0008  199999 
+SUBENT        D0008002   20150710                             D101D0008  2    1 
+BIB                 10         37                                 D0008  2    2 
+REACTION  1(1-H-3(P,N)2-HE-3,,DA)                                 D0008  2    3 
+          2(1-H-3(P,N)2-HE-3,,DA)                                 D0008  2    4 
+DETECTOR  1(SCIN) Liquid scintillator NE213, about 12 cm diam by  D0008  2    5 
+            6cm long                                              D0008  2    6 
+          2(TELES)                                                D0008  2    7 
+METHOD    1(TOF)                                                  D0008  2    8 
+ANALYSIS   Original data improved using better efficiency curve   D0008  2    9 
+            and renormalised by M.Drosg                           D0008  2   10 
+          2 The original results were adjusted with scale         D0008  2   11 
+            adjustment of 1.075 instead of 1.10.                  D0008  2   12 
+MONITOR    (1-H-3(P,N)2-HE-3,,DA) for p-t                         D0008  2   13 
+          1(1-H-1(N,EL)1-H-1,,DA)                                 D0008  2   14 
+            Efficiency curve for 11 pulse-height biases           D0008  2   15 
+          2(1-H-1(N,EL)1-H-1,,DA,,,EVAL)                          D0008  2   16 
+MONIT-REF  (D0009001,N.Jarmie+,J,PR/C,16,15,1977)                 D0008  2   17 
+          1(,M.Drosg,J,NIM,105,573,1972)                          D0008  2   18 
+          2(,J.C.Hopkins+,J,ND/A,9,137,1971)                      D0008  2   19 
+           (,J.C.Hopkins,W,HOPKINS,1975) to Drosg                 D0008  2   20 
+            These more reliable cross-section predictions for     D0008  2   21 
+            H-1(n,n)H-1 replace the older reference cross-section D0008  2   22 
+            by J.L.Gammel's estimate in fast neutron physics,vol.ID0008  2   23 
+            p.2185,Marion-Fowler,eds.,Intersci.Pub.Inc.,N.Y.(1963)D0008  2   24 
+FLAG       (1.) Data  below E(p)=7 MeV are probably high, Drosg's D0008  2   25 
+            recent result "On the 3H(p,n)3He differential cross-  D0008  2   26 
+            sections below 5 MeV" (priv.comm. from Drosg,79/02/22,D0008  2   27 
+            see EXFOR D0013) gives disagreement at 4 MeV of about D0008  2   28 
+            17%t.                                                 D0008  2   29 
+ERR-ANALYS (ERR-1,,,C) Scale error 1.5 percent                    D0008  2   30 
+           (ERR-2)     Differential error                         D0008  2   31 
+STATUS     (TABLE) Table II of Nucl.Sci.Eng.67(1978)190           D0008  2   32 
+          2(SPSDD) By Manfred Drosg (2011-02-01):                 D0008  2   33 
+            No straightforward way to subtract the background     D0008  2   34 
+            which cannot be masked by normalization               D0008  2   35 
+HISTORY    (19970428U) HW. N deleted from SF7, STATUS corrected   D0008  2   36 
+           (19980721U) HW. MONITOR and MONIT-REF added            D0008  2   37 
+           (20110203A) On. Pointer 2 data set superseded          D0008  2   38 
+           (20150710U) On. REL-REF deleted (coded in REFERENCE)   D0008  2   39 
+ENDBIB              37          0                                 D0008  2   40 
+COMMON               2          3                                 D0008  2   41 
+ANG        ERR-1                                                  D0008  2   42 
+ADEG       PER-CENT                                               D0008  2   43 
+ 0.         1.5                                                   D0008  2   44 
+ENDCOMMON            3          0                                 D0008  2   45 
+DATA                 6         13                                 D0008  2   46 
+EN         DATA      1ERR-2     1DATA      2ERR-2     2FLAG       D0008  2   47 
+MEV        MB/SR      PER-CENT   MB/SR      PER-CENT   NO-DIM     D0008  2   48 
+  4.00      95.5       2.5                              1.        D0008  2   49 
+  5.00      68.9       2.3                              1.        D0008  2   50 
+  6.00      47.0       2.2                              1.        D0008  2   51 
+  7.00      34.8       1.9                                        D0008  2   52 
+  8.00      28.0       1.7                                        D0008  2   53 
+  9.00      26.7       1.7                                        D0008  2   54 
+ 10.00      27.1       1.7        27.2       2.                   D0008  2   55 
+ 11.00      29.5       1.7        30.2       2.                   D0008  2   56 
+ 12.00      33.0       1.8        32.4       2.                   D0008  2   57 
+ 13.00      35.6       2.0        36.8       2.                   D0008  2   58 
+ 14.00      39.6       2.3        39.0       2.                   D0008  2   59 
+ 15.00      42.3       2.3        41.5       2.                   D0008  2   60 
+ 15.50      42.2       2.3                                        D0008  2   61 
+ENDDATA             15          0                                 D0008  2   62 
+ENDSUBENT           61          0                                 D0008  299999 
+SUBENT        D0008003   20150710                             D101D0008  3    1 
+BIB                  8         21                                 D0008  3    2 
+REACTION   (1-H-3(D,N)2-HE-4,,DA)                                 D0008  3    3 
+            0 deg. cross-section.                                 D0008  3    4 
+DETECTOR   (TELES)                                                D0008  3    5 
+ANALYSIS   The original results were adjusted with scale          D0008  3    6 
+            adjustment of 1.069 instead of 1.10.                  D0008  3    7 
+           Result with counter-telescope only was renormalized.   D0008  3    8 
+MONITOR   1(1-H-3(D,N)2-HE-4,,DA)                                 D0008  3    9 
+          2(1-H-1(N,EL)1-H-1,,DA,,,EVAL) renormalization.         D0008  3   10 
+MONIT-REF 1(D0009001,N.Jarmie+,J,PR/C,16,15,1977)                 D0008  3   11 
+          2(,J.C.Hopkins+,J,ND/A,9,137,1971) renormalization.     D0008  3   12 
+           (,J.C.Hopkins+,W,HOPKINS,1975) to Drosg. for renorm.   D0008  3   13 
+ERR-ANALYS (ERR-1,,,C) Scale error                                D0008  3   14 
+           (ERR-2)     Differential error                         D0008  3   15 
+STATUS     (TABLE) Table X of Nucl.Sci.Eng.67(1978)190            D0008  3   16 
+           (SPSDD) By Manfred Drosg (2011-02-01):                 D0008  3   17 
+            No straightforward way to subtract the background     D0008  3   18 
+            which cannot be masked by normalization               D0008  3   19 
+HISTORY    (19970428U) HW. N deleted from SF7, STATUS corrected   D0008  3   20 
+           (19980721U) HW. MONITOR and MONIT-REF add              D0008  3   21 
+           (20110203U) On. STATUS added                           D0008  3   22 
+           (20150710U) On. REL-REF deleted (coded in REFERENCE)   D0008  3   23 
+ENDBIB              21          0                                 D0008  3   24 
+COMMON               2          3                                 D0008  3   25 
+ANG        ERR-1                                                  D0008  3   26 
+ADEG       PER-CENT                                               D0008  3   27 
+ 0.         1.5                                                   D0008  3   28 
+ENDCOMMON            3          0                                 D0008  3   29 
+DATA                 3          5                                 D0008  3   30 
+EN         DATA       ERR-2                                       D0008  3   31 
+MEV        MB/SR      PER-CENT                                    D0008  3   32 
+  6.00      25.9       2.                                         D0008  3   33 
+  8.00      26.7       2.                                         D0008  3   34 
+  9.00      25.9       2.                                         D0008  3   35 
+ 10.00      25.4       2.                                         D0008  3   36 
+ 11.00      24.8       2.                                         D0008  3   37 
+ENDDATA              7          0                                 D0008  3   38 
+ENDSUBENT           37          0                                 D0008  399999 
+SUBENT        D0008004   20150710                             D101D0008  4    1 
+BIB                  7         15                                 D0008  4    2 
+REACTION   (1-H-3(D,N)2-HE-4,,DA)                                 D0008  4    3 
+ANALYSIS   Data shown in Table II of Phys.Rev.C7(1973)882         D0008  4    4 
+            were revised and scale adjusted.                      D0008  4    5 
+           Data revised according to best efficiency curve.       D0008  4    6 
+MONITOR   1(1-H-1(N,EL)1-H-1,,DA)                                 D0008  4    7 
+            for efficiency curve                                  D0008  4    8 
+          2(1-H-3(D,N)2-HE-4,,DA)                                 D0008  4    9 
+MONIT-REF 2(D0009001,N.Jarmie+,J,PR/C,16,15,1977)                 D0008  4   10 
+ERR-ANALYS (ERR-1,,,C) Scale error +-1.5%                         D0008  4   11 
+           (ERR-2)     Differential error                         D0008  4   12 
+STATUS     (TABLE) Table XIV of Nucl.Sci.Eng.67(1978)190          D0008  4   13 
+HISTORY    (19970428U) HW. N deleted from SF7, STATUS corrected   D0008  4   14 
+           (19980721U) HW. MONITOR and MONIT-REF added            D0008  4   15 
+           (20110203U) On. STATUS added                           D0008  4   16 
+           (20150710U) On. REL-REF deleted (coded in REFERENCE)   D0008  4   17 
+ENDBIB              15          0                                 D0008  4   18 
+COMMON               1          3                                 D0008  4   19 
+ERR-1                                                             D0008  4   20 
+PER-CENT                                                          D0008  4   21 
+ 1.5                                                              D0008  4   22 
+ENDCOMMON            3          0                                 D0008  4   23 
+DATA                 4         84                                 D0008  4   24 
+EN         ANG        DATA       ERR-2                            D0008  4   25 
+MEV        ADEG       MB/SR      PER-CENT                         D0008  4   26 
+  5.0        0.        24.98      2.                              D0008  4   27 
+  5.0       10.        22.42      2.                              D0008  4   28 
+  5.0       20.        17.51      2.                              D0008  4   29 
+  5.0       30.        12.95      2.                              D0008  4   30 
+  5.0       40.        10.03      2.                              D0008  4   31 
+  5.0       50.         8.28      2.                              D0008  4   32 
+  5.0       60.         6.88      2.                              D0008  4   33 
+  5.0       70.         5.53      2.                              D0008  4   34 
+  5.0       80.         4.40      2.                              D0008  4   35 
+  5.0       90.         3.84      2.                              D0008  4   36 
+  5.0      100.         4.05      2.                              D0008  4   37 
+  5.0      110.         4.51      2.                              D0008  4   38 
+  6.0        0.        26.84      2.                              D0008  4   39 
+  6.0       10.        23.40      2.                              D0008  4   40 
+  6.0       20.        17.05      2.                              D0008  4   41 
+  6.0       30.        11.28      2.                              D0008  4   42 
+  6.0       40.         8.94      2.                              D0008  4   43 
+  6.0       50.         7.90      2.                              D0008  4   44 
+  6.0       60.         6.90      2.                              D0008  4   45 
+  6.0       70.         5.82      2.                              D0008  4   46 
+  6.0       80.         4.32      2.                              D0008  4   47 
+  6.0       90.         3.57      2.                              D0008  4   48 
+  6.0      100.         3.64      2.                              D0008  4   49 
+  6.0      110.         4.04      2.                              D0008  4   50 
+ 11.0        0.        25.02      2.                              D0008  4   51 
+ 11.0       10.        19.13      2.                              D0008  4   52 
+ 11.0       20.         8.71      2.                              D0008  4   53 
+ 11.0       30.         3.86      2.                              D0008  4   54 
+ 11.0       40.         4.64      2.                              D0008  4   55 
+ 11.0       50.         6.51      2.                              D0008  4   56 
+ 11.0       60.         6.05      2.                              D0008  4   57 
+ 11.0       70.         4.03      2.                              D0008  4   58 
+ 11.0       80.         2.34      2.                              D0008  4   59 
+ 11.0       90.         1.72      2.                              D0008  4   60 
+ 11.0      100.         1.90      2.                              D0008  4   61 
+ 11.0      110.         2.45      2.                              D0008  4   62 
+ 12.0        0.        25.08      2.                              D0008  4   63 
+ 12.0       10.        18.78      2.                              D0008  4   64 
+ 12.0       20.         7.91      2.                              D0008  4   65 
+ 12.0       30.         3.32      2.                              D0008  4   66 
+ 12.0       40.         4.75      2.                              D0008  4   67 
+ 12.0       50.         6.37      2.                              D0008  4   68 
+ 12.0       60.         5.83      2.                              D0008  4   69 
+ 12.0       70.         3.67      2.                              D0008  4   70 
+ 12.0       80.         2.02      2.                              D0008  4   71 
+ 12.0       90.         1.53      2.                              D0008  4   72 
+ 12.0      100.         1.80      2.                              D0008  4   73 
+ 12.0      110.         2.21      2.                              D0008  4   74 
+ 13.0        0.        25.06      2.                              D0008  4   75 
+ 13.0       10.        18.14      2.                              D0008  4   76 
+ 13.0       20.         7.15      2.                              D0008  4   77 
+ 13.0       30.         2.91      2.                              D0008  4   78 
+ 13.0       40.         4.62      2.                              D0008  4   79 
+ 13.0       50.         6.34      2.                              D0008  4   80 
+ 13.0       60.         5.54      2.                              D0008  4   81 
+ 13.0       70.         3.46      2.                              D0008  4   82 
+ 13.0       80.         1.63      5.                              D0008  4   83 
+ 13.0       90.         1.35      5.                              D0008  4   84 
+ 13.0      100.         1.68      5.                              D0008  4   85 
+ 13.0      110.         2.06      5.                              D0008  4   86 
+ 14.0        0.        25.08      2.                              D0008  4   87 
+ 14.0       10.        18.04      2.                              D0008  4   88 
+ 14.0       20.         6.68      2.                              D0008  4   89 
+ 14.0       30.         2.75      2.                              D0008  4   90 
+ 14.0       40.         4.58      2.                              D0008  4   91 
+ 14.0       50.         6.42      2.                              D0008  4   92 
+ 14.0       60.         5.39      2.                              D0008  4   93 
+ 14.0       70.         3.00      5.                              D0008  4   94 
+ 14.0       80.         1.43      5.                              D0008  4   95 
+ 14.0       90.         1.22      5.                              D0008  4   96 
+ 14.0      100.         1.65      5.                              D0008  4   97 
+ 14.0      110.         1.99      5.                              D0008  4   98 
+ 15.0        0.        25.36      2.                              D0008  4   99 
+ 15.0       10.        18.06      2.                              D0008  4  100 
+ 15.0       20.         6.43      2.                              D0008  4  101 
+ 15.0       30.         2.58      2.                              D0008  4  102 
+ 15.0       40.         4.75      2.                              D0008  4  103 
+ 15.0       50.         6.66      2.                              D0008  4  104 
+ 15.0       60.         5.03      2.                              D0008  4  105 
+ 15.0       70.         2.85      2.                              D0008  4  106 
+ 15.0       80.         1.28      2.                              D0008  4  107 
+ 15.0       90.         1.23      2.                              D0008  4  108 
+ 15.0      100.         1.73      2.                              D0008  4  109 
+ 15.0      110.         1.98      2.                              D0008  4  110 
+ENDDATA             86          0                                 D0008  4  111 
+ENDSUBENT          110          0                                 D0008  499999 
 ENDENTRY             4          0                                 D000899999999 
