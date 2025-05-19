@@ -1,59 +1,77 @@
-ENTRY            O0344   19971009                             0000O034400000001 
-SUBENT        O0344001   19971009                             0000O034400100001 
-BIB                 10         15                                 O034400100002 
-TITLE      Production of Effective Cross Section from             O034400100003 
-           O-16(P,3P)C-14 Reaction by High Energy Protons.        O034400100004 
-AUTHOR     (M.A.TAMES,G.DELIBRIAS)                                O034400100005 
-INSTITUTE  (2FR PAR)                                              O034400100006 
-REFERENCE  (J,CR,253,1202,61)                                     O034400100007 
-HISTORY    (970505C)                                              O034400100008 
-           (971009U) Last checking has been done.                 O034400100009 
-SAMPLE     Natural Water was Used As Target.                      O034400100010 
-FACILITY   (SYNCY,2FR PAR)                                        O034400100011 
-           (SYNCH,2FR SAC)                                        O034400100012 
-           (CYCLO,2FR PAR)                                        O034400100013 
-MONITOR    ((MONIT)13-AL-27(P,N+3P)11-NA-24,CUM/UND,SIG,,,EVAL)   O034400100014 
-METHOD     (CHSEP)                                                O034400100015 
-           (ACTIV)                                                O034400100016 
-STATUS     (TABLE)                                                O034400100017 
-ENDBIB              15          0                                 O034400100018 
-NOCOMMON             0          0                                 O034400100019 
-ENDSUBENT           18          0                                 O034400199999 
-SUBENT        O0344002   19971009                             0000O034400200001 
-BIB                  4          5                                 O034400200002 
-REACTION   (8-O-16(P,3P)6-C-14,IND,SIG,,,EXP)                     O034400200003 
-ERR-ANALYS (ERR-T).The Uncertainty is Reported by Authors.        O034400200004 
-FLAG       (1.) Average Value For this Energy.                    O034400200005 
-CORRECTION  Corrections For Secondary Neutrons Influence on       O034400200006 
-            Monitor Cross Section at 2.7 GeV.                     O034400200007 
-ENDBIB               5          0                                 O034400200008 
-NOCOMMON             0          0                                 O034400200009 
-DATA                 6          8                                 O034400200010 
-EN         DATA       ERR-T      MONIT      THICKNESS  FLAG       O034400200011 
-GEV        MB         PER-CENT   MB         CM         NO-DIM     O034400200012 
-        2.7        2.5                  10.5         4.           O034400200013 
-        2.7        1.9                  10.5         4.           O034400200014 
-        2.7        2.6                  10.5         2.           O034400200015 
-        2.7        2.2        25.       10.5                    1.O034400200016 
-       0.15        1.8                   9.3         2.           O034400200017 
-       0.15        1.5                   9.3         2.           O034400200018 
-       0.15        2.1                   9.3         2.           O034400200019 
-       0.15        1.8        25.        9.3                    1.O034400200020 
-ENDDATA             10          0                                 O034400200021 
-ENDSUBENT           20          0                                 O034400299999 
-SUBENT        O0344003   19971009                             0000O034400300001 
-BIB                  2          2                                 O034400300002 
-REACTION   (8-O-16(P,3P)6-C-14,IND,SIG,,,EXP)                     O034400300003 
-ERR-ANALYS (ERR-T).The Uncertainty is Reported by Authors.        O034400300004 
-ENDBIB               2          0                                 O034400300005 
-NOCOMMON             0          0                                 O034400300006 
-DATA                 6          4                                 O034400300007 
-EN-MIN     EN-MAX     DATA       ERR-T      MONIT      THICKNESS  O034400300008 
-MEV        MEV        MB         PER-CENT   MB         CM         O034400300009 
-        90.       110.        2.8        25.       10.7         2.O034400300010 
-        64.        82.        2.6        25.       10.5         2.O034400300011 
-        44.        60.        2.2        25.        6.8         2.O034400300012 
-        35.        47.         1.        25.        3.9         1.O034400300013 
-ENDDATA              6          0                                 O034400300014 
-ENDSUBENT           13          0                                 O034400399999 
+ENTRY            O0344   20220105                             O086O0344  0    1 
+SUBENT        O0344001   20220105                             O086O0344  1    1 
+BIB                 13         24                                 O0344  1    2 
+TITLE      Production of Effective Cross Section from             O0344  1    3 
+           O-16(p,3p)C-14 reaction by high energy protons         O0344  1    4 
+AUTHOR     (M.A.Tames,G.Delibrias)                                O0344  1    5 
+INSTITUTE  (2FR PAR)                                              O0344  1    6 
+REFERENCE  (J,CR,253,1202,1961)                                   O0344  1    7 
+FACILITY   (SYNCY,2FR PAR) External beam, at the Orsay            O0344  1    8 
+                           synchrocyclotron at 150 MeV            O0344  1    9 
+           (SYNCH,2FR SAT) Internal beam at the synchrotron       O0344  1   10 
+                           SATURNE at 2.7 GeV                     O0344  1   11 
+SAMPLE     1. At 150.MeV the water target was contained in a      O0344  1   12 
+           cylindrical container, made of pyrex, 35 cm in diameterO0344  1   13 
+            and 20 mm thick.                                      O0344  1   14 
+           2. At 1.2 GeV distilled water was contained in an      O0344  1   15 
+           aluminum container, 35 cm in diameter                  O0344  1   16 
+            and 40 mm thick.                                      O0344  1   17 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,CUM,SIG)                 O0344  1   18 
+MONIT-REF  (C1812001,E.L.Fireman+,J,PR,97,780,1955)               O0344  1   19 
+METHOD     (ACTIV)                                                O0344  1   20 
+DETECTOR   (NAICR)                                                O0344  1   21 
+STATUS     (TABLE) Table on p.1203 of Compt.Rendus,253(1961)1202  O0344  1   22 
+ERR-ANALYS (DATA-ERR) No information about spurce of uncertainty  O0344  1   23 
+HISTORY    (19970505C)                                            O0344  1   24 
+           (19971009U) Last checking has been done.               O0344  1   25 
+           (20220105A) SD: Corrections in all Subents.            O0344  1   26 
+ENDBIB              24          0                                 O0344  1   27 
+COMMON               1          3                                 O0344  1   28 
+DATA-ERR                                                          O0344  1   29 
+PER-CENT                                                          O0344  1   30 
+25.                                                               O0344  1   31 
+ENDCOMMON            3          0                                 O0344  1   32 
+ENDSUBENT           31          0                                 O0344  199999 
+SUBENT        O0344002   20220105                             O086O0344  2    1 
+BIB                  3          7                                 O0344  2    2 
+REACTION  1(8-O-16(P,3P)6-C-14,,SIG)                              O0344  2    3 
+          2(8-O-16(P,3P)6-C-14,,SIG,,AV)                          O0344  2    4 
+CORRECTION  Corrections for secondary neutrons influence on       O0344  2    5 
+            monitor cross section at 2.7 GeV.                     O0344  2    6 
+HISTORY    (20220105A) SD: SF5=IND and SF9=EXP deleted from       O0344  2    7 
+           REACTION code. Second REACTION code added. FLAG deletedO0344  2    8 
+           ERR-T -> DATA-ERR. THICKNESS deleted.                  O0344  2    9 
+ENDBIB               7          0                                 O0344  2   10 
+NOCOMMON             0          0                                 O0344  2   11 
+DATA                 5          8                                 O0344  2   12 
+EN         DATA      1DATA      2DATA-ERR  2MONIT                 O0344  2   13 
+GEV        MB         MB         PER-CENT   MB                    O0344  2   14 
+        2.7        2.5                             10.5           O0344  2   15 
+        2.7        1.9                             10.5           O0344  2   16 
+        2.7        2.6                             10.5           O0344  2   17 
+        2.7                   2.2        25.       10.5           O0344  2   18 
+      0.150        1.8                              9.3           O0344  2   19 
+      0.150        1.5                              9.3           O0344  2   20 
+      0.150        2.1                              9.3           O0344  2   21 
+      0.150                   1.8        25.        9.3           O0344  2   22 
+ENDDATA             10          0                                 O0344  2   23 
+ENDSUBENT           22          0                                 O0344  299999 
+SUBENT        O0344003   20220105                             O086O0344  3    1 
+BIB                  3          5                                 O0344  3    2 
+REACTION   (8-O-16(P,3P)6-C-14,,SIG)                              O0344  3    3 
+MISC-COL   (MISC) Energy of MONITOR reaction.                     O0344  3    4 
+HISTORY    (20220105A) SD: SF5=IND and SF9=EXP deleted from       O0344  3    5 
+           REACTION code. ERR-T -> DATA-ERR. MISC added.          O0344  3    6 
+           THICKNESS deleted.                                     O0344  3    7 
+ENDBIB               5          0                                 O0344  3    8 
+NOCOMMON             0          0                                 O0344  3    9 
+DATA                 5          4                                 O0344  3   10 
+EN-MIN     EN-MAX     DATA       MONIT      MISC                  O0344  3   11 
+MEV        MEV        MB         MB         MEV                   O0344  3   12 
+        90.       110.        2.8       10.7      115.            O0344  3   13 
+        64.        82.        2.6       10.5       85.            O0344  3   14 
+        44.        60.        2.2        6.8       65.            O0344  3   15 
+        35.        47.         1.        3.9       55.            O0344  3   16 
+ENDDATA              6          0                                 O0344  3   17 
+ENDSUBENT           16          0                                 O0344  399999 
 ENDENTRY             3          0                                 O034499999999 
