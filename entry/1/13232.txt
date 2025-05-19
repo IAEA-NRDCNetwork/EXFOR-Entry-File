@@ -1,37 +1,49 @@
-ENTRY            13232   19881102                             00001323200000001 
-SUBENT        13232001   19881102                             00001323200100001 
-BIB                 11         13                                 1323200100002 
-INSTITUTE  (1USANRD)                                              1323200100003 
-REFERENCE  (J,PR,173,1159,6809)                                   1323200100004 
-AUTHOR     (A.A.DELUCCHI,A.E.GREENDALE,P.O.STROM)                 1323200100005 
-TITLE      CUMULATIVE FISSION YIELD AND HALF-LIFE OF 134SB        1323200100006 
-FACILITY   (REAC,1USASTF)                                         1323200100007 
-SAMPLE     URANIUM ENRICHED TO 93.17% 235U                        1323200100008 
-METHOD     (RCHEM)                                                1323200100009 
-MONITOR    ((MONIT1)92-U-235(N,F)42-MO-99,CUM,FY,,SPA)            1323200100010 
-            TAKEN FROM FARRAR, NUCL.PHYS.34,367(1962)             1323200100011 
-           (79-AU-197(N,G)79-AU-198,,SIG) FLUX MONITOR            1323200100012 
-ERR-ANALYS NO INFORMATION                                         1323200100013 
-STATUS     (RIDER) REFERENCE 68DEL1                               1323200100014 
-HISTORY    (890606C) VM                                           1323200100015 
-ENDBIB              13          0                                 1323200100016 
-COMMON               1          3                                 1323200100017 
-EN-DUMMY                                                          1323200100018 
-EV                                                                1323200100019 
-0.0253                                                            1323200100020 
-ENDCOMMON            3          0                                 1323200100021 
-ENDSUBENT           20          0                                 1323200199999 
-SUBENT        13232002   19881102                             00001323200200001 
-BIB                  2          3                                 1323200200002 
-REACTION   (92-U-235(N,F)51-SB-134-M,CUM,FY,,SPA)                 1323200200003 
-DECAY-DATA (51-SB-134-M,11.1SEC)                                  1323200200004 
-           *** TENTATIVELY ASSIGNED AS METASTABLE STATE BY NNDC   1323200200005 
-ENDBIB               3          0                                 1323200200006 
-NOCOMMON             0          0                                 1323200200007 
-DATA                 3          1                                 1323200200008 
-DATA       DATA-ERR   MONIT1                                      1323200200009 
-PC/FIS     PC/FIS     PC/FIS                                      1323200200010 
- 0.32       0.04       6.25                                       1323200200011 
-ENDDATA              3          0                                 1323200200012 
-ENDSUBENT           11          0                                 1323200299999 
+ENTRY            13232   20210105                             147913232  0    1 
+SUBENT        13232001   20210105                             147913232  1    1 
+BIB                 11         22                                 13232  1    2 
+TITLE      Cumulative fission yield and half-life of 134Sb        13232  1    3 
+AUTHOR     (A.A.Delucchi,A.E.Greendale,P.O.Strom)                 13232  1    4 
+INSTITUTE  (1USANRD)                                              13232  1    5 
+REFERENCE  (J,PR,173,1159,1968)                                   13232  1    6 
+           #doi:10.1103/PhysRev.173.1159                          13232  1    7 
+           #NSR: 1968DE18                                         13232  1    8 
+FACILITY   (REAC,1USASTF) The neutron flux in the area of         13232  1    9 
+           bombardment was approximately 10*10 n/(cm2 s) and the  13232  1   10 
+           cadmium ratio for gold was determined to be 12+-2.     13232  1   11 
+SAMPLE     (92-U-235,ENR=0.9317)                                  13232  1   12 
+METHOD     (CHSEP)                                                13232  1   13 
+MONITOR    ((MONIT1)92-U-235(N,F)42-MO-99,CUM,FY,,SPA)            13232  1   14 
+           (79-AU-197(N,G)79-AU-198,,SIG) Flux monitor            13232  1   15 
+COMMENT    Compiler's comment: Information about monitor reference13232  1   16 
+            (H.Farrar et al., Nucl.Phys.34,367,1962) presented in 13232  1   17 
+           the article, is incorrect. There is no information on  13232  1   18 
+           fission yeild of Mo-99 in Farrar's article.            13232  1   19 
+ERR-ANALYS (DATA-ERR) No information on sources of uncertainties. 13232  1   20 
+HISTORY    (19890606C) VM                                         13232  1   21 
+           (20210105U) OG. Converted to lower case and 4-digit    13232  1   22 
+           year. #NSR, #doi added.  FACILITY updated. ADD-RES in  13232  1   23 
+           Sub002 and COMMENT added.                              13232  1   24 
+ENDBIB              22          0                                 13232  1   25 
+COMMON               1          3                                 13232  1   26 
+EN-DUMMY                                                          13232  1   27 
+EV                                                                13232  1   28 
+0.0253                                                            13232  1   29 
+ENDCOMMON            3          0                                 13232  1   30 
+ENDSUBENT           29          0                                 13232  199999 
+SUBENT        13232002   20210105                             147913232  2    1 
+BIB                  5          6                                 13232  2    2 
+REACTION   (92-U-235(N,F)51-SB-134-M,CUM,FY,,SPA)                 13232  2    3 
+DECAY-DATA (51-SB-134-M,11.1SEC)                                  13232  2    4 
+ADD-RES    (DECAY) The Sb134m half-life is determened in this work13232  2    5 
+           and is equal 11.1+-0.8 sec.                            13232  2    6 
+STATUS     (TABLE) Tab.I (p.173) in Phys.Rev.173,1159,1968.       13232  2    7 
+HISTORY    (20210105U) OG. ADD-RES and STATUS added.              13232  2    8 
+ENDBIB               6          0                                 13232  2    9 
+NOCOMMON             0          0                                 13232  2   10 
+DATA                 3          1                                 13232  2   11 
+DATA       DATA-ERR   MONIT1                                      13232  2   12 
+PC/FIS     PC/FIS     PC/FIS                                      13232  2   13 
+ 0.32       0.04       6.25                                       13232  2   14 
+ENDDATA              3          0                                 13232  2   15 
+ENDSUBENT           14          0                                 13232  299999 
 ENDENTRY             2          0                                 1323299999999 
