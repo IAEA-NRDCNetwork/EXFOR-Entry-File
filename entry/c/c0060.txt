@@ -1,84 +1,93 @@
-ENTRY            C0060   20040310                             0000C006000000001 
-SUBENT        C0060001   20040310                             0000C006000100001 
-BIB                 14         31                                 C006000100002 
-INSTITUTE  (1USACHI)                                              C006000100003 
-REFERENCE  (J,PR,103,413,1956)                                    C006000100004 
-AUTHOR     (A.H.Rosenfeld,R.A.Swanson,S.D.Warshaw)                C006000100005 
-TITLE      Cross Section for C12(p,pn)C11                         C006000100006 
-FACILITY   (SYNCH,1USACHI)                                        C006000100007 
-SAMPLE     Thin polyethylene foils, 4 mg/cm2.                     C006000100008 
-METHOD     (BCINT) Thin ionization chamber with calibration by    C006000100009 
-            means of an Ilford G5 nuclear track plate.            C006000100010 
-DETECTOR   (PROPC) 4pi proportional counter continuously flushed  C006000100011 
-            with methane at atmospheric pressure.  The counter    C006000100012 
-            was standardized with P32 or Na24 sources.            C006000100013 
-DECAY-DATA (6-C-11,20.5MIN,B+,982.,1.)                            C006000100014 
-CORRECTION A guard foil was placed in contact with the foil to be C006000100015 
-             counted.  The guard served as a source of recoil     C006000100016 
-             carbon-11 nuclei, compensating for recoils lost      C006000100017 
-             through the back of the counted foil.                C006000100018 
-           The self-absorption in the foil was investigated and   C006000100019 
-             the correction was found to be less than 1% up to    C006000100020 
-             4mg/cm2, then increasing by about 0.8% per mg/cm2.   C006000100021 
-ERR-ANALYS (EN-ERR) Estimated from impact parameter of the escape C006000100022 
-            orbit and from the range in copper.                   C006000100023 
-REL-REF    (D,B0101002,CRANDALL+,J,PR,101,329,1956) Marked        C006000100024 
-            difference in self-absorption curves at small         C006000100025 
-            thicknesses.                                          C006000100026 
-           (D,,BURCHAM+,J,PPS/A,68,1001,1952) Burcham appears to  C006000100027 
-            overestimate the data.  This may be due to a large    C006000100028 
-            neutron flux around the Birmingham synchrocyclotron.  C006000100029 
-STATUS     Data taken from table in reference.                    C006000100030 
-HISTORY    (19800214C)TWB                                         C006000100031 
-           (19840319A) REFERENCE date corrected.                  C006000100032 
-           (20040310A) Converted to new date formats.             C006000100033 
-ENDBIB              31          0                                 C006000100034 
-COMMON               2          3                                 C006000100035 
-EN         EN-ERR                                                 C006000100036 
-MEV        MEV                                                    C006000100037 
- 461.       3.                                                    C006000100038 
-ENDCOMMON            3          0                                 C006000100039 
-ENDSUBENT           38          0                                 C006000199999 
-SUBENT        C0060002   20040310                             0000C006000200001 
-BIB                  4         14                                 C006000200002 
-REACTION   (6-C-0(P,X)6-C-11,,SIG)                                C006000200003 
-ERR-ANALYS (DATA-ERR) Estimated uncertainty due to counting       C006000200004 
-            statistics combined with an assigned 1% error to      C006000200005 
-            electrometer reading, foil weight, and beam           C006000200006 
-            fluctuation correction.                               C006000200007 
-FLAG       (1.) 9.8 mg weight foil.  3.16x10**9 protons.          C006000200008 
-           (2.) 9.9 mg weight foil.  5.53x10**9 protons.          C006000200009 
-           (3.) 9.7 mg weight foil.  4.81x10**9 protons.          C006000200010 
-           (4.) 9.7 mg weight foil.  3.76x10**9 protons.          C006000200011 
-           (5.) 9.0 mg weight foil. 11.12x10**9 protons.          C006000200012 
-           (6.) 9.2 mg weight foil.  5.21x10**9 protons.          C006000200013 
-HISTORY    (19840319A) REL-REF date corrected.                    C006000200014 
-           (19960304A) Average value moved to subentry 3, energy  C006000200015 
-             and some BIB information moved to subentry 1.        C006000200016 
-ENDBIB              14          0                                 C006000200017 
-NOCOMMON             0          0                                 C006000200018 
-DATA                 3          6                                 C006000200019 
-DATA       DATA-ERR   FLAG                                        C006000200020 
-MB         PER-CENT   NO-DIM                                      C006000200021 
- 30.9       2.8        1.                                         C006000200022 
- 30.2       2.4        2.                                         C006000200023 
- 30.4       2.2        3.                                         C006000200024 
- 31.7       2.2        4.                                         C006000200025 
- 31.2       2.0        5.                                         C006000200026 
- 31.9       2.1        6.                                         C006000200027 
-ENDDATA              8          0                                 C006000200028 
-ENDSUBENT           27          0                                 C006000299999 
-SUBENT        C0060003   19960304                             0000C006000300001 
-BIB                  3          3                                 C006000300002 
-REACTION   (6-C-0(P,X)6-C-11,,SIG)                                C006000300003 
-ANALYSIS   Mean of data for 6 samples.                            C006000300004 
-STATUS     (DEP,C0060002)                                         C006000300005 
-ENDBIB               3          0                                 C006000300006 
-NOCOMMON             0          0                                 C006000300007 
-DATA                 1          1                                 C006000300008 
-DATA                                                              C006000300009 
-MB                                                                C006000300010 
-31.05                                                             C006000300011 
-ENDDATA              3          0                                 C006000300012 
-ENDSUBENT           11          0                                 C006000399999 
+ENTRY            C0060   20181206                             C183C0060  0    1 
+SUBENT        C0060001   20181206                             C183C0060  1    1 
+BIB                 14         36                                 C0060  1    2 
+TITLE      Cross section for C12(p,pn)C11                         C0060  1    3 
+AUTHOR     (A.H.Rosenfeld,R.A.Swanson,S.D.Warshaw)                C0060  1    4 
+REFERENCE  (J,PR,103,413,1956)                                    C0060  1    5 
+           #doi:10.1103/PhysRev.103.413                           C0060  1    6 
+INSTITUTE  (1USACHI)                                              C0060  1    7 
+FACILITY   (SYNCY,1USACHI) The University of Chicago              C0060  1    8 
+           synchrocyclotron.                                      C0060  1    9 
+SAMPLE     Thin polyethylene foils, 4 mg/cm2.                     C0060  1   10 
+METHOD     (BCINT,ACTIV) Thin ionization chamber with             C0060  1   11 
+           calibration by means of an Ilford G5 nuclear track     C0060  1   12 
+           plate.                                                 C0060  1   13 
+DETECTOR   (PROPC) 4pi proportional counter continuously flushed  C0060  1   14 
+           with methane at atmospheric pressure. The counter was  C0060  1   15 
+           standardized with P32 or Na24 sources.                 C0060  1   16 
+DECAY-DATA (6-C-11,20.5MIN,B+,982.,1.)                            C0060  1   17 
+CORRECTION A guard foil was placed in contact with the foil to    C0060  1   18 
+           be counted. The guard served as a source of recoil     C0060  1   19 
+           carbon-11 nuclei, compensating for recoils lost        C0060  1   20 
+           through the back of the counted foil. The              C0060  1   21 
+           self-absorption in the foil was investigated and the   C0060  1   22 
+           correction was found to be less than 1% up to 4mg/cm2, C0060  1   23 
+           then increasing by about 0.8% per mg/cm2.              C0060  1   24 
+ERR-ANALYS (EN-ERR) Estimated from impact parameter of the        C0060  1   25 
+           escape orbit and from the range in copper.             C0060  1   26 
+REL-REF    (D,B0101002,W.E.Crandall+,J,PR,101,329,1956) Marked    C0060  1   27 
+           difference in self-absorption curves at small          C0060  1   28 
+           thicknesses.                                           C0060  1   29 
+           (D,,W.E.Burcham+,J,PPS/A,68,1001,1955) Burcham appears C0060  1   30 
+           to overestimate the data.  This may Be due to a large  C0060  1   31 
+           neutron flux around the Birmingham synchrocyclotron.   C0060  1   32 
+STATUS     Data taken from table in reference.                    C0060  1   33 
+HISTORY    (19800214C) TWB                                        C0060  1   34 
+           (19840319A) reference date corrected.                  C0060  1   35 
+           (20040310A) Converted to new date formats.             C0060  1   36 
+           (20181206A) BP: Updated facility, added doi and        C0060  1   37 
+                      other information.                          C0060  1   38 
+ENDBIB              36          0                                 C0060  1   39 
+COMMON               2          3                                 C0060  1   40 
+EN         EN-ERR                                                 C0060  1   41 
+MEV        MEV                                                    C0060  1   42 
+       461.         3.                                            C0060  1   43 
+ENDCOMMON            3          0                                 C0060  1   44 
+ENDSUBENT           43          0                                 C0060  199999 
+SUBENT        C0060002   20181206                             C183C0060  2    1 
+BIB                  5         16                                 C0060  2    2 
+REACTION   (6-C-0(P,X)6-C-11,,SIG)                                C0060  2    3 
+ERR-ANALYS (DATA-ERR) Estimated uncertainty due to counting       C0060  2    4 
+           statistics combined with an assigned 1% error to       C0060  2    5 
+           electrometer reading, foil weight, and beam            C0060  2    6 
+           fluctuation correction.                                C0060  2    7 
+FLAG       (1.) 9.8 Mg weight foil.  3.16x10**9 protons.          C0060  2    8 
+           (2.) 9.9 Mg weight foil.  5.53x10**9 protons.          C0060  2    9 
+           (3.) 9.7 Mg weight foil.  4.81x10**9 protons.          C0060  2   10 
+           (4.) 9.7 Mg weight foil.  3.76x10**9 protons.          C0060  2   11 
+           (5.) 9.0 Mg weight foil. 11.12x10**9 protons.          C0060  2   12 
+           (6.) 9.2 Mg weight foil.  5.21x10**9 protons.          C0060  2   13 
+STATUS     (TABLE) Table II, page 417.                            C0060  2   14 
+HISTORY    (19840319A) REL-REF date corrected.                    C0060  2   15 
+           (19960304A) Average value moved to subentry 3, energy  C0060  2   16 
+           and some BIB information moved to subentry 1.          C0060  2   17 
+           (20181206A) BP: Updated status.                        C0060  2   18 
+ENDBIB              16          0                                 C0060  2   19 
+NOCOMMON             0          0                                 C0060  2   20 
+DATA                 3          6                                 C0060  2   21 
+DATA       DATA-ERR   FLAG                                        C0060  2   22 
+MB         PER-CENT   NO-DIM                                      C0060  2   23 
+       30.9        2.8         1.                                 C0060  2   24 
+       30.2        2.4         2.                                 C0060  2   25 
+       30.4        2.2         3.                                 C0060  2   26 
+       31.7        2.2         4.                                 C0060  2   27 
+       31.2        2.0         5.                                 C0060  2   28 
+       31.9        2.1         6.                                 C0060  2   29 
+ENDDATA              8          0                                 C0060  2   30 
+ENDSUBENT           29          0                                 C0060  299999 
+SUBENT        C0060003   20181206                             C183C0060  3    1 
+BIB                  4          5                                 C0060  3    2 
+REACTION   (6-C-0(P,X)6-C-11,,SIG,,,DERIV) Mean value.            C0060  3    3 
+ANALYSIS   Mean of data for 6 samples.                            C0060  3    4 
+STATUS     (DEP,C0060002)                                         C0060  3    5 
+           (TABLE) Table II, page 417.                            C0060  3    6 
+HISTORY    (20181206A) BP: Updated status, reaction string.       C0060  3    7 
+ENDBIB               5          0                                 C0060  3    8 
+NOCOMMON             0          0                                 C0060  3    9 
+DATA                 1          1                                 C0060  3   10 
+DATA                                                              C0060  3   11 
+MB                                                                C0060  3   12 
+      31.05                                                       C0060  3   13 
+ENDDATA              3          0                                 C0060  3   14 
+ENDSUBENT           13          0                                 C0060  399999 
 ENDENTRY             3          0                                 C006099999999 

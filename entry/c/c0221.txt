@@ -1,44 +1,79 @@
-ENTRY            C0221   19880915                             0000C022100000001 
-SUBENT        C0221001   19880915                             0000C022100100001 
-BIB                 12         18                                 C022100100002 
-INSTITUTE  (1USALRL)                                              C022100100003 
-REFERENCE  (J,PR,117,1361,60)                                     C022100100004 
-AUTHOR     (N.HORWITZ,J.J.MURRAY)                                 C022100100005 
-TITLE      C-12(P,PN)C-11 CROSS SECTION FROM 3 TO 6 BEV           C022100100006 
-FACILITY   (SYNCY)                                                C022100100007 
-SAMPLE     TARGETS CONSISTING OF THREE PLASTIC SCINTILLATORS      C022100100008 
-           MOUNTIED BEHIND A NUCLEAR EMULSION.                    C022100100009 
-METHOD     (ACTIV)                                                C022100100010 
-DETECTOR   (SCIN,TRD) PROTON FLUX WAS MEASURED BY COUNTING        C022100100011 
-           TRACKS IN EMULSIONS.                                   C022100100012 
-CORRECTION CORRECTIONS WERE MADE FOR THE FOLLOWING: TRANSITION-   C022100100013 
-           EFFECT, FLUCTUATIONS IN PROTON-BOMBARDMENT INTENSITY,  C022100100014 
-           NONUNIFORMITY OF PROTON SPATIAL DISTRIBUTION, PLASTIC  C022100100015 
-           SCINTILLATOR FRACTION.                                 C022100100016 
-ERR-ANALYS ESTIMATED TATOL UNCERTAINTIES INCLUDE BOTH STATISTICAL C022100100017 
-           AND SYSTEMATIC UNCERTAINTY OF +-5%.                    C022100100018 
-STATUS     DATA TAKEN FROM PR,117,1361,1960--TABLE I.             C022100100019 
-HISTORY    (870417C)                                              C022100100020 
-ENDBIB              18          0                                 C022100100021 
-NOCOMMON             0          0                                 C022100100022 
-ENDSUBENT           21          0                                 C022100199999 
-SUBENT        C0221002   19880915                             0000C022100200001 
-BIB                  3          5                                 C022100200002 
-REACTION   (6-C-12(P,N+P)6-C-11,,SIG)                             C022100200003 
-DECAY-DATA (6-C-11,29.36MIN,B+)                                   C022100200004 
-FLAG       (1.) MEAN OF THREE MEASUREMENTS.                       C022100200005 
-           (2.) SECOND EXPOSURE WITH CENTER SCINTILATOR AND       C022100200006 
-            EMULSION CENTER PORTION COUNTIED.                     C022100200007 
-ENDBIB               5          0                                 C022100200008 
-NOCOMMON             0          0                                 C022100200009 
-DATA                 4          5                                 C022100200010 
-EN         DATA       DATA-ERR   FLAG                             C022100200011 
-GEV        MB         MB         NO-DIM                           C022100200012 
- 3.0        29.8       1.6       1.                               C022100200013 
- 4.5        27.7       1.7       1.                               C022100200014 
- 4.5        27.2       2.1       2.                               C022100200015 
- 6.0        29.8       1.6       1.                               C022100200016 
- 6.0        32.3       1.6       2.                               C022100200017 
-ENDDATA              7          0                                 C022100200018 
-ENDSUBENT           17          0                                 C022100299999 
-ENDENTRY             2          0                                 C022199999999 
+ENTRY            C0221   20181204                             C183C0221  0    1 
+SUBENT        C0221001   20181204                             C183C0221  1    1 
+BIB                 11         25                                 C0221  1    2 
+TITLE      C-12(p,pn)C-11 cross section from 3 to 6 BeV           C0221  1    3 
+AUTHOR     (N.Horwitz,J.J.Murray,W.E.Crandall)                    C0221  1    4 
+REFERENCE  (J,PR,117,1361,1960)                                   C0221  1    5 
+           #doi:10.1103/PhysRev.117.1361                          C0221  1    6 
+           (J,BAP,1,(2),225,1956) Preliminary results at 4.1 BeV. C0221  1    7 
+INSTITUTE  (1USABRK)                                              C0221  1    8 
+FACILITY   (SYNCH,1USABRK) Bevatron.                              C0221  1    9 
+SAMPLE     Targets consisting of three plastic scintillators      C0221  1   10 
+           mounted behind a nuclear emulsion.                     C0221  1   11 
+METHOD     (ACTIV) A plastic scintillator was sandwiched between  C0221  1   12 
+           two photographic emulsions and exposed to the          C0221  1   13 
+           internal proton beam. The number of C11 nuclei was     C0221  1   14 
+           measured by counting beta activity in the              C0221  1   15 
+           scintillator, and the number of incident protons was   C0221  1   16 
+           determined by counting tracks in the emulsion.         C0221  1   17 
+DETECTOR   (SCIN,TRD) Proton flux was measured by counting        C0221  1   18 
+           tracks in emulsions.                                   C0221  1   19 
+DECAY-DATA (6-C-11,29.36MIN,B+)                                   C0221  1   20 
+ERR-ANALYS (ERR-SYS) The uncertainty due to systematic errors is  C0221  1   21 
+           estimated.                                             C0221  1   22 
+HISTORY    (19870417C)                                            C0221  1   23 
+           (20181204A) BP: Corrected institute, facility,         C0221  1   24 
+           reaction and uncertainties, added doi, updated to new  C0221  1   25 
+           date formats, lower case. Corrections according last   C0221  1   26 
+           EXFOR rules and Dict. Added preliminary 4.1 BeV data.  C0221  1   27 
+ENDBIB              25          0                                 C0221  1   28 
+COMMON               1          3                                 C0221  1   29 
+ERR-SYS                                                           C0221  1   30 
+PER-CENT                                                          C0221  1   31 
+        5.0                                                       C0221  1   32 
+ENDCOMMON            3          0                                 C0221  1   33 
+ENDSUBENT           32          0                                 C0221  199999 
+SUBENT        C0221002   20181204                             C183C0221  2    1 
+BIB                  6         14                                 C0221  2    2 
+REACTION   (6-C-12(P,X)6-C-11,,SIG)                               C0221  2    3 
+ERR-ANALYS (ERR-T) Estimated total uncertainty in weighted mean   C0221  2    4 
+           value. The systematic uncertainty has been             C0221  2    5 
+           vectorially added to the statistical uncertainty in    C0221  2    6 
+           the mean value to give the total uncertainty.          C0221  2    7 
+CORRECTION Corrections were made for the following: transition-   C0221  2    8 
+           effect, fluctuations in proton-bombardment intensity,  C0221  2    9 
+           nonuniformity of proton spatial distribution, plastic  C0221  2   10 
+           scintillator fraction.                                 C0221  2   11 
+FLAG       (1.) Mean of three measurements.                       C0221  2   12 
+           (2.) Second exposure with center scintillator and      C0221  2   13 
+            emulsion center portion counted.                      C0221  2   14 
+STATUS     (TABLE) Data taken from Phys.Rev.117,1361,1960--Table IC0221  2   15 
+HISTORY    (20181204A) BP: Corrected reaction.                    C0221  2   16 
+ENDBIB              14          0                                 C0221  2   17 
+NOCOMMON             0          0                                 C0221  2   18 
+DATA                 4          5                                 C0221  2   19 
+EN         DATA       ERR-T      FLAG                             C0221  2   20 
+GEV        MB         MB         NO-DIM                           C0221  2   21 
+        3.0       29.8        1.6         1.                      C0221  2   22 
+        4.5       27.7        1.7         1.                      C0221  2   23 
+        4.5       27.2        2.1         2.                      C0221  2   24 
+        6.0       29.8        1.6         1.                      C0221  2   25 
+        6.0       32.3        1.6         2.                      C0221  2   26 
+ENDDATA              7          0                                 C0221  2   27 
+ENDSUBENT           26          0                                 C0221  299999 
+SUBENT        C0221003   20190109                             C183C0221  3    1 
+BIB                  4          5                                 C0221  3    2 
+REACTION   (6-C-12(P,X)6-C-11,,SIG)                               C0221  3    3 
+ERR-ANALYS (ERR-S) Statistical uncertainties. It is felt that     C0221  3    4 
+           systematic errors are probably less that +-4 mb.       C0221  3    5 
+STATUS     (TABLE) page 225 of Bull.Am.Phys.Soc.1,(2),225,1956.   C0221  3    6 
+HISTORY    (20181204A) BP                                         C0221  3    7 
+ENDBIB               5          0                                 C0221  3    8 
+NOCOMMON             0          0                                 C0221  3    9 
+DATA                 3          1                                 C0221  3   10 
+EN         DATA       ERR-S                                       C0221  3   11 
+GEV        MB         MB                                          C0221  3   12 
+        4.1       30.5        1.0                                 C0221  3   13 
+ENDDATA              3          0                                 C0221  3   14 
+ENDSUBENT           13          0                                 C0221  399999 
+ENDENTRY             3          0                                 C022199999999 
