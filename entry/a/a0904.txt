@@ -1,6 +1,6 @@
-ENTRY            A0904   20220323                             A099A0904  0    1 
-SUBENT        A0904001   20220323                             A099A0904  1    1 
-BIB                 14         71                                 A0904  1    2 
+ENTRY            A0904   20220811                             A102A0904  0    1 
+SUBENT        A0904001   20220811                             A102A0904  1    1 
+BIB                 14         72                                 A0904  1    2 
 TITLE      Measurement and simulation of the cross sections       A0904  1    3 
            for nuclide production in W-nat and Ta-181 targets     A0904  1    4 
            irradiated with 0.04- to 2.6-GeV protons               A0904  1    5 
@@ -11,8 +11,8 @@ AUTHOR     (Yu.E.Titarenko, V.F.Batyaev, A.Yu.Titarenko,          A0904  1    6
            N.Matsuda, H.Kumawat, G.Mank, W.Gudowski)              A0904  1   10 
 INSTITUTE  (4RUSITE,4RUSFEI,1USALAS,2FR SAC,2BLGLIE,3ISLSOR,      A0904  1   11 
            2JPNJAE,3INDTRM,3ZZZIAE,2SWDKTH)                       A0904  1   12 
-REFERENCE  (J,YF,74,574,2011)                                     A0904  1   13 
-           (J,PAN,74,551,2011) English translation                A0904  1   14 
+REFERENCE  (J,PAN,74,551,2011) English translation                A0904  1   13 
+           (J,YF,74,574,2011)                                     A0904  1   14 
 REL-REF    (R,,Yu.E.Titarenko+,R,INDC(CCP)-453,461,2011) decay-   A0904  1   15 
            data for Ta-181 and page of 506-533 for W-0 targets    A0904  1   16 
            (I,A0906001,Yu.E.Titarenko+,J,PAN,74,537,2011) -       A0904  1   17 
@@ -72,9 +72,10 @@ HISTORY    (20111206C) SB                                         A0904  1   66
            (20160302A) SD: DECAY-DATA corrected in Subents 128,   A0904  1   71 
            152,179,288,315,331,356,358. BIB update.               A0904  1   72 
            (20220323A) SD: Corrections in several Subents.        A0904  1   73 
-ENDBIB              71          0                                 A0904  1   74 
-NOCOMMON             0          0                                 A0904  1   75 
-ENDSUBENT           74          0                                 A0904  199999 
+           (20220811A) SD: Corrections in Subents 047, 237.       A0904  1   74 
+ENDBIB              72          0                                 A0904  1   75 
+NOCOMMON             0          0                                 A0904  1   76 
+ENDSUBENT           75          0                                 A0904  199999 
 SUBENT        A0904002   20111209                             A075A090400200001 
 BIB                  3          3                                 A090400200002 
 REACTION   (74-W-0(P,X)74-W-181,CUM,SIG)                          A090400200003 
@@ -1026,24 +1027,25 @@ MEV        MEV        MB         MB                               A090404600010
 2605.      8.         22.1       3.0                              A090404600015 
 ENDDATA              7          0                                 A090404600016 
 ENDSUBENT           15          0                                 A090404699999 
-SUBENT        A0904047   20111209                             A075A090404700001 
-BIB                  3          3                                 A090404700002 
-REACTION   (74-W-0(P,X)67-HO-160-M,CUM,SIG)                       A090404700003 
-STATUS     (TABLE).Table 2 of J,PAN,74,551,2011                   A090404700004 
-DECAY-DATA (67-HO-160-M,5.02HR)                                   A090404700005 
-ENDBIB               3          0                                 A090404700006 
-NOCOMMON             0          0                                 A090404700007 
-DATA                 4          6                                 A090404700008 
-EN         EN-ERR     DATA       DATA-ERR                         A090404700009 
-MEV        MEV        MB         MB                               A090404700010 
-400.       2.         21.9       2.5                              A090404700011 
-600.       2.         49.4       5.3                              A090404700012 
-799.       2.         49.9       5.7                              A090404700013 
-1199.      3.         48.7       5.7                              A090404700014 
-1599.      4.         36.3       4.1                              A090404700015 
-2605.      8.         27.7       3.1                              A090404700016 
-ENDDATA              8          0                                 A090404700017 
-ENDSUBENT           16          0                                 A090404799999 
+SUBENT        A0904047   20220811                             A102A0904 47    1 
+BIB                  4          4                                 A0904 47    2 
+REACTION   (74-W-0(P,X)67-HO-160-M1,CUM,SIG)                      A0904 47    3 
+DECAY-DATA (67-HO-160-M1,5.02HR)                                  A0904 47    4 
+STATUS     (TABLE) Table 2 of Phys.Atom.Nucl.,74(2011)551         A0904 47    5 
+HISTORY    (20220811A) SD: SF4=Ho-160m->Ho-160m1 in REACTION code.A0904 47    6 
+ENDBIB               4          0                                 A0904 47    7 
+NOCOMMON             0          0                                 A0904 47    8 
+DATA                 4          6                                 A0904 47    9 
+EN         EN-ERR     DATA       DATA-ERR                         A0904 47   10 
+MEV        MEV        MB         MB                               A0904 47   11 
+400.       2.         21.9       2.5                              A0904 47   12 
+600.       2.         49.4       5.3                              A0904 47   13 
+799.       2.         49.9       5.7                              A0904 47   14 
+1199.      3.         48.7       5.7                              A0904 47   15 
+1599.      4.         36.3       4.1                              A0904 47   16 
+2605.      8.         27.7       3.1                              A0904 47   17 
+ENDDATA              8          0                                 A0904 47   18 
+ENDSUBENT           17          0                                 A0904 4799999 
 SUBENT        A0904048   20111209                             A075A090404800001 
 BIB                  3          3                                 A090404800002 
 REACTION   (74-W-0(P,X)67-HO-156,CUM,SIG)                         A090404800003 
@@ -4460,24 +4462,25 @@ MEV        MEV        MB         MB                               A090423600010
 2605.      8.         16.5       1.8                              A090423600016 
 ENDDATA              8          0                                 A090423600017 
 ENDSUBENT           16          0                                 A090423699999 
-SUBENT        A0904237   20111209                             A075A090423700001 
-BIB                  3          3                                 A090423700002 
-REACTION   (73-TA-0(P,X)67-HO-160-M,CUM,SIG)                      A090423700003 
-STATUS     (TABLE).Table 3 of J,PAN,74,551,2011                   A090423700004 
-DECAY-DATA (67-HO-160-M,5.02HR)                                   A090423700005 
-ENDBIB               3          0                                 A090423700006 
-NOCOMMON             0          0                                 A090423700007 
-DATA                 4          6                                 A090423700008 
-EN         EN-ERR     DATA       DATA-ERR                         A090423700009 
-MEV        MEV        MB         MB                               A090423700010 
-248.       1.         5.53       0.85                             A090423700011 
-399.       2.         42.9       5.0                              A090423700012 
-599.       2.         71.8       9.9                              A090423700013 
-1199.      3.         46.7       5.1                              A090423700014 
-1598.      4.         37.3       4.4                              A090423700015 
-2605.      8.         24.5       2.8                              A090423700016 
-ENDDATA              8          0                                 A090423700017 
-ENDSUBENT           16          0                                 A090423799999 
+SUBENT        A0904237   20220811                             A102A0904237    1 
+BIB                  4          4                                 A0904237    2 
+REACTION   (73-TA-0(P,X)67-HO-160-M1,CUM,SIG)                     A0904237    3 
+DECAY-DATA (67-HO-160-M1,5.02HR)                                  A0904237    4 
+STATUS     (TABLE) Table 3 of Phys.Atom.Nucl.,74(2011)551         A0904237    5 
+HISTORY    (20220811A) SD: SF4=Ho-160m->Ho-160m1 in REACTION code.A0904237    6 
+ENDBIB               4          0                                 A0904237    7 
+NOCOMMON             0          0                                 A0904237    8 
+DATA                 4          6                                 A0904237    9 
+EN         EN-ERR     DATA       DATA-ERR                         A0904237   10 
+MEV        MEV        MB         MB                               A0904237   11 
+248.       1.         5.53       0.85                             A0904237   12 
+399.       2.         42.9       5.0                              A0904237   13 
+599.       2.         71.8       9.9                              A0904237   14 
+1199.      3.         46.7       5.1                              A0904237   15 
+1598.      4.         37.3       4.4                              A0904237   16 
+2605.      8.         24.5       2.8                              A0904237   17 
+ENDDATA              8          0                                 A0904237   18 
+ENDSUBENT           17          0                                 A090423799999 
 SUBENT        A0904238   20111209                             A075A090423800001 
 BIB                  3          3                                 A090423800002 
 REACTION   (73-TA-0(P,X)67-HO-156,CUM,SIG)                        A090423800003 
