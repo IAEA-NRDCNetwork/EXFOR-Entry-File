@@ -1,6 +1,6 @@
-ENTRY            23453   20220218                             23112345300000001 
-SUBENT        23453001   20220218                             23112345300100001 
-BIB                 12         69                                 2345300100002 
+ENTRY            23453   20220901                             23122345300000001 
+SUBENT        23453001   20220901                             23122345300100001 
+BIB                 12         70                                 2345300100002 
 TITLE      Measurement of the 235U(n,f) cross section relative    2345300100003 
             to the 6Li(n,t) and 10B(n,a) standards from thermal   2345300100004 
             to 170 keV neutron energy range at nTOF               2345300100005 
@@ -42,7 +42,7 @@ INSTITUTE  (2ITYLNS,2ITYBAU,2ITYBOL,2ITYUBO,2ZZZCER,3POLLOU,      2345300100035
             2UK HFS,3INDTRM,3AULCBR)                              2345300100041 
            (2ITYITY) Consiglio Nazionale delle Ricerche, Bari     2345300100042 
 REFERENCE  (J,EPJ/A,55,120,2019)                                  2345300100043 
-           (J,EPJ/A,58,???,2022) arXiv:2202.05603                 2345300100044 
+           (J,EPJ/A,58,147,2022)                                  2345300100044 
             High resolution data from thermal to 10 keV           2345300100045 
 REL-REF    (I,,C.Guerrero+,J,EPJ/A,49,27,2013)                    2345300100046 
             Description of facility, neutron production, moderator2345300100047 
@@ -70,13 +70,14 @@ STATUS     (TABLE) Data received from Paolo Finocchiaro           2345300100067
 HISTORY    (20180225C) On+ED                                      2345300100069 
            (20201203A) On. Major rev. in 002-003. 004-012 added.  2345300100070 
            (20220218A) On. High resolution data added in 013-014. 2345300100071 
-ENDBIB              69          0                                 2345300100072 
-COMMON               2          3                                 2345300100073 
-EN-NRM-MIN EN-NRM-MAX                                             2345300100074 
-EV         EV                                                     2345300100075 
- 7.8        11.                                                   2345300100076 
-ENDCOMMON            3          0                                 2345300100077 
-ENDSUBENT           76          0                                 2345300199999 
+           (20220901A) On. 015-017 added.                         2345300100072 
+ENDBIB              70          0                                 2345300100073 
+COMMON               2          3                                 2345300100074 
+EN-NRM-MIN EN-NRM-MAX                                             2345300100075 
+EV         EV                                                     2345300100076 
+ 7.8        11.                                                   2345300100077 
+ENDCOMMON            3          0                                 2345300100078 
+ENDSUBENT           77          0                                 2345300199999 
 SUBENT        23453002   20201203                             22952345300200001 
 BIB                  8         23                                 2345300200002 
 REACTION  1((92-U-235(N,F),,SIG)/(3-LI-6(N,T)2-HE-4,,SIG))        2345300200003 
@@ -14396,4 +14397,56 @@ EV         EV         B          B                                2345301400023
 1.75792E+051.77828E+05   1.61722   0.227988                       2345301404667 
 ENDDATA           4646          0                                 2345301404668 
 ENDSUBENT         4667          0                                 2345301499999 
-ENDENTRY            14          0                                 2345399999999 
+SUBENT        23453015   20220901                             23122345301500001 
+BIB                  4          4                                 2345301500002 
+REACTION   (92-U-235(N,F),,INT)                                   2345301500003 
+ERR-ANALYS (ERR-S) Statistical uncertainty only                   2345301500004 
+STATUS     (TABLE) Table I of Eur.Phys.J.A58(2022)147             2345301500005 
+HISTORY    (20220901C) On                                         2345301500006 
+ENDBIB               4          0                                 2345301500007 
+NOCOMMON             0          0                                 2345301500008 
+DATA                 4          1                                 2345301500009 
+EN-MIN     EN-MAX     DATA       ERR-S                            2345301500010 
+EV         EV         B*EV       B*EV                             2345301500011 
+ 7.8        11.0       247.5      1.1                             2345301500012 
+ENDDATA              3          0                                 2345301500013 
+ENDSUBENT           12          0                                 2345301599999 
+SUBENT        23453016   20220901                             23122345301600001 
+BIB                  4          4                                 2345301600002 
+REACTION   (92-U-235(N,F),,SIG,,AV)                               2345301600003 
+ERR-ANALYS (ERR-S) Statistical uncertainty only                   2345301600004 
+STATUS     (TABLE) Table 1 of Eur.Phys.J.A58(2022)147             2345301600005 
+HISTORY    (20220901C) On                                         2345301600006 
+ENDBIB               4          0                                 2345301600007 
+NOCOMMON             0          0                                 2345301600008 
+DATA                 4         10                                 2345301600009 
+EN-MIN     EN-MAX     DATA       ERR-S                            2345301600010 
+EV         EV         B          B                                2345301600011 
+  100.       200.      21.07      0.10                            2345301600012 
+  200.       300.      20.99      0.14                            2345301600013 
+  300.       400.      13.04      0.13                            2345301600014 
+  400.       500.      13.66      0.14                            2345301600015 
+  500.       600.      15.16      0.17                            2345301600016 
+  600.       700.      11.55      0.15                            2345301600017 
+  700.       800.      11.19      0.16                            2345301600018 
+  800.       900.       8.01      0.14                            2345301600019 
+  900.      1000.       7.42      0.14                            2345301600020 
+ 1000.      2000.       7.36      0.06                            2345301600021 
+ENDDATA             12          0                                 2345301600022 
+ENDSUBENT           21          0                                 2345301699999 
+SUBENT        23453017   20220901                             23122345301700001 
+BIB                  5          5                                 2345301700002 
+REACTION   (92-U-235(N,F),,SIG,,,DERIV)                           2345301700003 
+ANALYSIS   Interpolation to thermal energy                        2345301700004 
+ERR-ANALYS (ERR-S) Statistical uncertainty only                   2345301700005 
+STATUS     (TABLE) Table 2 of Eur.Phys.J.A58(2022)147             2345301700006 
+HISTORY    (20220901C) On                                         2345301700007 
+ENDBIB               5          0                                 2345301700008 
+NOCOMMON             0          0                                 2345301700009 
+DATA                 3          1                                 2345301700010 
+EN         DATA       ERR-S                                       2345301700011 
+MILLI-EV   B          B                                           2345301700012 
+ 25.3       586.2      3.3                                        2345301700013 
+ENDDATA              3          0                                 2345301700014 
+ENDSUBENT           13          0                                 2345301799999 
+ENDENTRY            17          0                                 2345399999999 

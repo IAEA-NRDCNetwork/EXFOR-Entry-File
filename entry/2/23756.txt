@@ -1,5 +1,5 @@
-ENTRY            23756   20211125                             23112375600000001 
-SUBENT        23756001   20211125                             23112375600100001 
+ENTRY            23756   20221007                             23122375600000001 
+SUBENT        23756001   20221007                             23122375600100001 
 BIB                 12         79                                 2375600100002 
 TITLE      Measurement of the 232Th(n,f) cross section with       2375600100003 
             quasi-monoenergetic neutron beams in the energy range 2375600100004 
@@ -71,15 +71,15 @@ ERR-ANALYS Partial uncertainties received from V.Michalopoulou:   2375600100054
            -----------------------------------------------------  2375600100070 
                            Neg.=Negligible                        2375600100071 
            -----------------------------------------------------  2375600100072 
-           (ERR-S)      Statistical uncertainty                   2375600100073 
-           (ERR-1,,2.)  Parasitic neutrons           (<2%)        2375600100074 
-           (ERR-2,,1.)  Amplitude cut                (<1%)        2375600100075 
-           (ERR-3,,0.1) Dead time                  (<0.1%)        2375600100076 
-           (ERR-4)      Neutron fluence ratio        (<1%)        2375600100077 
-           (ERR-5)      Sample mass                   (3%)        2375600100078 
-STATUS     (TABLE) Table 4 of Eur.Phys.J.A57(2021)277             2375600100079 
-           (APRVD)Proof-read by Veatriki Michalopoulou(2021-12-08)2375600100080 
-HISTORY    (20211125C) On                                         2375600100081 
+           (ERR-1,,2.)  Parasitic neutrons           (<2%)        2375600100073 
+           (ERR-2,,1.)  Amplitude cut                (<1%)        2375600100074 
+           (ERR-3,,0.1) Dead time                  (<0.1%)        2375600100075 
+           (ERR-4)      Neutron fluence ratio        (<1%)        2375600100076 
+           (ERR-5)      Sample mass                   (3%)        2375600100077 
+STATUS     (TABLE) Table 4 of Eur.Phys.J.A57(2021)277             2375600100078 
+           (APRVD)Proof-read by Veatriki Michalopoulou(2021-12-08)2375600100079 
+HISTORY    (20211125C) On                                         2375600100080 
+           (20221007A) On. Major revisions in 002 and 003.        2375600100081 
 ENDBIB              79          0                                 2375600100082 
 COMMON               1          3                                 2375600100083 
 ERR-5                                                             2375600100084 
@@ -87,66 +87,80 @@ PER-CENT                                                          2375600100085
  3.                                                               2375600100086 
 ENDCOMMON            3          0                                 2375600100087 
 ENDSUBENT           86          0                                 2375600199999 
-SUBENT        23756002   20211125                             23112375600200001 
-BIB                  5         11                                 2375600200002 
+SUBENT        23756002   20221007                             23122375600200001 
+BIB                  7         19                                 2375600200002 
 REACTION  1((90-TH-232(N,F),,SIG)/(92-U-235(N,F),,SIG))           2375600200003 
           2((90-TH-232(N,F),,SIG)/(92-U-238(N,F),,SIG))           2375600200004 
           3(90-TH-232(N,F),,SIG)                                  2375600200005 
 MONITOR   3((MONIT1)92-U-235(N,F),,SIG)                           2375600200006 
            ((MONIT2)92-U-238(N,F),,SIG)                           2375600200007 
-ANALYSIS  3Average of cross sections normalized with 235U(n,f)    2375600200008 
-            and 238U(n,f) with the difference between them being  2375600200009 
-            less than 1% at both energies.                        2375600200010 
-ERR-ANALYS3(MONIT1-ERR) Uncertainty in 235U(n,f) cross section    2375600200011 
-           (MONIT2-ERR) Uncertainty in 238U(n,f) cross section    2375600200012 
-STATUS     (COREL,23756003) Cross sections at 3.0 MeV and above   2375600200013 
-ENDBIB              11          0                                 2375600200014 
-NOCOMMON             0          0                                 2375600200015 
-DATA                11          2                                 2375600200016 
-EN         EN-RSL-HW  DATA      1DATA      2DATA      3ERR-S     32375600200017 
-ERR-4      MONIT1    3MONIT1-ERR3MONIT2    3MONIT2-ERR3           2375600200018 
-MEV        MEV        NO-DIM     NO-DIM     B          PER-CENT   2375600200019 
-PER-CENT   B          PER-CENT   PER-CENT   PER-CENT              2375600200020 
-  2.0       0.1        0.0908     0.218      0.117      4.3       2375600200021 
- 0.         1.289      1.3        0.538      1.3                  2375600200022 
-  2.5       0.1        0.0887     0.205      0.112      2.7       2375600200023 
- 0.         1.261      1.3        0.545      1.3                  2375600200024 
-ENDDATA              8          0                                 2375600200025 
-ENDSUBENT           24          0                                 2375600299999 
-SUBENT        23756003   20211125                             23112375600300001 
-BIB                  4          5                                 2375600300002 
+METHOD     Irradiation of two different 232Th samples with 235U   2375600200008 
+            and 238U samples                                      2375600200009 
+ANALYSIS  3Average of cross sections normalized with 235U(n,f)    2375600200010 
+            and 238U(n,f) with the difference between them being  2375600200011 
+            less than 1% at both energies.                        2375600200012 
+ERR-ANALYS1(ERR-6,,,U) 232Th(n,f) counting statistics             2375600200013 
+           (ERR-7,,,U) 235U(n,f) counting statistics              2375600200014 
+          2(ERR-6,,,U) 232Th(n,f) counting statistics             2375600200015 
+           (ERR-7,,,U) 238U(n,f) counting statistics              2375600200016 
+          3(ERR-S)      Statistical uncertainty                   2375600200017 
+           (MONIT1-ERR) 235U(n,f) cross section                   2375600200018 
+           (MONIT2-ERR) 238U(n,f) cross section                   2375600200019 
+STATUS     (COREL,23756003) Cross sections at 3.0 MeV and above   2375600200020 
+HISTORY    (20221007A) On. ERR-6/7 values received from V.M. added2375600200021 
+ENDBIB              19          0                                 2375600200022 
+NOCOMMON             0          0                                 2375600200023 
+DATA                15          2                                 2375600200024 
+EN         EN-RSL-HW  DATA      1ERR-6     1ERR-7     1DATA      22375600200025 
+ERR-6     2ERR-7     2DATA      3ERR-S     3ERR-4      MONIT1    32375600200026 
+MONIT1-ERR3MONIT2    3MONIT2-ERR3                                 2375600200027 
+MEV        MEV        NO-DIM     PER-CENT   PER-CENT   NO-DIM     2375600200028 
+PER-CENT   PER-CENT   B          PER-CENT   PER-CENT   B          2375600200029 
+PER-CENT   PER-CENT   PER-CENT                                    2375600200030 
+ 2.0        0.1        0.0908     3.4        1.1        0.218     2375600200031 
+ 3.2        1.2        0.117      4.3        0.         1.289     2375600200032 
+ 1.3        0.538      1.3                                        2375600200033 
+ 2.5        0.1        0.0887     3.0        1.0        0.205     2375600200034 
+ 2.9        1.1        0.112      2.7        0.         1.261     2375600200035 
+ 1.3        0.545      1.3                                        2375600200036 
+ENDDATA             12          0                                 2375600200037 
+ENDSUBENT           36          0                                 2375600299999 
+SUBENT        23756003   20221007                             23122375600300001 
+BIB                  5          7                                 2375600300002 
 REACTION  1((90-TH-232(N,F),,SIG)/(92-U-238(N,F),,SIG))           2375600300003 
           2(90-TH-232(N,F),,SIG)                                  2375600300004 
 MONITOR   2(92-U-238(N,F),,SIG)                                   2375600300005 
-ERR-ANALYS2(MONIT-ERR) Uncertainty in 238U(n,f) cross section     2375600300006 
-STATUS     (COREL,23756002) Cross sections at 2.0 and 2.5 MeV     2375600300007 
-ENDBIB               5          0                                 2375600300008 
-NOCOMMON             0          0                                 2375600300009 
-DATA                 8         10                                 2375600300010 
-EN         EN-RSL-HW  DATA      1DATA      2ERR-S      ERR-4     22375600300011 
-MONIT     2MONIT-ERR 2                                            2375600300012 
-MEV        MEV        NO-DIM     B          PER-CENT   PER-CENT   2375600300013 
-B          PER-CENT                                               2375600300014 
-  3.0       0.1        0.256      0.135      3.0        0.        2375600300015 
- 0.526      1.3                                                   2375600300016 
-  3.5       0.1        0.252      0.137      2.9        0.        2375600300017 
- 0.545      1.3                                                   2375600300018 
-  4.0       0.1        0.254      0.142      2.8        0.        2375600300019 
- 0.557      1.3                                                   2375600300020 
-  4.3       0.1        0.244      0.137      2.9        0.        2375600300021 
- 0.561      1.4                                                   2375600300022 
-  4.7       0.1        0.262      0.147      2.7        0.        2375600300023 
+ERR-ANALYS (ERR-S)     Statistical uncertainty                    2375600300006 
+          2(MONIT-ERR) 238U(n,f) cross section                    2375600300007 
+STATUS     (COREL,23756002) Cross sections at 2.0 and 2.5 MeV     2375600300008 
+HISTORY    (20221007A) On. ERR-ANALYS(ERR-S) moved from 001.      2375600300009 
+ENDBIB               7          0                                 2375600300010 
+NOCOMMON             0          0                                 2375600300011 
+DATA                 8         10                                 2375600300012 
+EN         EN-RSL-HW  DATA      1DATA      2ERR-S      ERR-4      2375600300013 
+MONIT     2MONIT-ERR 2                                            2375600300014 
+MEV        MEV        NO-DIM     B          PER-CENT   PER-CENT   2375600300015 
+B          PER-CENT                                               2375600300016 
+  3.0       0.1        0.256      0.135      3.0        0.        2375600300017 
+ 0.526      1.3                                                   2375600300018 
+  3.5       0.1        0.252      0.137      2.9        0.        2375600300019 
+ 0.545      1.3                                                   2375600300020 
+  4.0       0.1        0.254      0.142      2.8        0.        2375600300021 
+ 0.557      1.3                                                   2375600300022 
+  4.3       0.1        0.244      0.137      2.9        0.        2375600300023 
  0.561      1.4                                                   2375600300024 
-  5.3       0.1        0.245      0.135      3.0        0.        2375600300025 
- 0.550      1.4                                                   2375600300026 
-  9.9       0.1        0.301      0.304      1.6        1.        2375600300027 
- 1.011      1.5                                                   2375600300028 
- 14.8       0.5        0.313      0.383      6.0        0.        2375600300029 
- 1.221      1.4                                                   2375600300030 
- 16.5       0.5        0.346      0.456      3.9        0.        2375600300031 
- 1.318      1.5                                                   2375600300032 
- 17.8       0.3        0.378      0.50       8.0        0.        2375600300033 
- 1.320      1.5                                                   2375600300034 
-ENDDATA             24          0                                 2375600300035 
-ENDSUBENT           34          0                                 2375600399999 
+  4.7       0.1        0.262      0.147      2.7        0.        2375600300025 
+ 0.561      1.4                                                   2375600300026 
+  5.3       0.1        0.245      0.135      3.0        0.        2375600300027 
+ 0.550      1.4                                                   2375600300028 
+  9.9       0.1        0.301      0.304      1.6        1.        2375600300029 
+ 1.011      1.5                                                   2375600300030 
+ 14.8       0.5        0.313      0.383      6.0        0.        2375600300031 
+ 1.221      1.4                                                   2375600300032 
+ 16.5       0.5        0.346      0.456      3.9        0.        2375600300033 
+ 1.318      1.5                                                   2375600300034 
+ 17.8       0.3        0.378      0.50       8.0        0.        2375600300035 
+ 1.320      1.5                                                   2375600300036 
+ENDDATA             24          0                                 2375600300037 
+ENDSUBENT           36          0                                 2375600399999 
 ENDENTRY             3          0                                 2375699999999 

@@ -1,95 +1,95 @@
-ENTRY            20272   20181012                             227320272  0    1 
-SUBENT        20272001   20181012                             227320272  1    1 
-BIB                 13         26                                 20272  1    2 
-TITLE       Measurement of the average cross-section for the      20272  1    3 
-            Th-232(n,f) reaction for the fission-type reactor     20272  1    4 
-            spectrum                                              20272  1    5 
-REFERENCE  (R,KURRI-AR-3,84,1970)                                 20272  1    6 
-AUTHOR     (K.Kobayashi, I.Kimura)                                20272  1    7 
-INSTITUTE  (2JPNKTO)                                              20272  1    8 
-PART-DET   (DG)    Gammas                                         20272  1    9 
-FACILITY   (REAC,2JPNKTO)    KUR-reactor (fast),   fission type   20272  1   10 
-            spectrum. Fast neutron flux about 10.**12 n/cm2/sec   20272  1   11 
-            for 30 min.                                           20272  1   12 
-INC-SOURCE (REAC)                                                 20272  1   13 
-INC-SPECT  .Fission spectrum approximated by fast spectrum        20272  1   14 
-            above 1.5 MeV                                         20272  1   15 
-METHOD     (ACTIV)    Reactivity measurement.                     20272  1   16 
-DETECTOR   (GELI)    Planar-type Ge(Li) of 2 cm3.                 20272  1   17 
-SAMPLE      1/2 inch in diam., 0.004 inch thick.                  20272  1   18 
-            Chemical purity 99.95%                                20272  1   19 
-ERR-ANALYS (ERR-1) Uncertainty in neutron flux                    20272  1   20 
-HISTORY    (19711010C)                                            20272  1   21 
-           (19800722A) MONITOR added.                             20272  1   22 
-           (19840106U) A.P.T. Japan code changed to jpn           20272  1   23 
-           (19900823A) S.W. n-source replaced, flag added to      20272  1   24 
-                     Subent 003.                                  20272  1   25 
-           (20181012U) SD:Updated to new date formats,lower case. 20272  1   26 
-           Ref. KURRI-AR-3 treated as the primary reference.      20272  1   27 
-           ERR-ANALYS updated. MONITOR moved to Subent 002.       20272  1   28 
-ENDBIB              26          0                                 20272  1   29 
-COMMON               2          3                                 20272  1   30 
-EN-DUMMY   ERR-1                                                  20272  1   31 
-MEV        PER-CENT                                               20272  1   32 
-   1.5        2.                                                  20272  1   33 
-ENDCOMMON            3          0                                 20272  1   34 
-ENDSUBENT           33          0                                 20272  199999 
-SUBENT        20272002   20181012                             227320272  2    1 
-BIB                  5         12                                 20272  2    2 
-REACTION   (90-TH-232(N,F),,SIG,,FIS)                             20272  2    3 
-MONITOR    (28-NI-58(N,P)27-CO-58,,SIG)                           20272  2    4 
-           (12-MG-24(N,P)11-NA-24,,SIG)                           20272  2    5 
-           (13-AL-27(N,A)11-NA-24,,SIG)                           20272  2    6 
-STATUS     (TABLE) Table 3 from KURRI-AR-3,84,1970                20272  2    7 
-           (DEP,20272003)                                         20272  2    8 
-ERR-ANALYS (ERR-SYS) Systematic error                             20272  2    9 
-           (ERR-T) Total error includes:                          20272  2   10 
-             * Statistical error in counting activities of        20272  2   11 
-               five fission products + ERR-1 + ERR-SYS.           20272  2   12 
-HISTORY    (19800722A) MONITORs added.                            20272  2   13 
-           (20181012U) SD: STATUS, MONITORs moved to Subent 001.  20272  2   14 
-ENDBIB              12          0                                 20272  2   15 
-NOCOMMON             0          0                                 20272  2   16 
-DATA                 3          1                                 20272  2   17 
-DATA       ERR-SYS    ERR-T                                       20272  2   18 
-MB         PER-CENT   MB                                          20272  2   19 
- 67.           2.        6.                                       20272  2   20 
-ENDDATA              3          0                                 20272  2   21 
-ENDSUBENT           20          0                                 20272  299999 
-SUBENT        20272003   20181012                             227320272  3    1 
-BIB                  8         19                                 20272  3    2 
-REACTION   (90-TH-232(N,F)ELEM/MASS,CUM,FY,,FIS)                  20272  3    3 
-MONITOR    (90-TH-232(N,F)56-BA-140,CUM,FY,,FIS)                  20272  3    4 
-MONIT-REF  (22791001,M.Bresesti+,J,JIN,29,1189,1967) - value from 20272  3    5 
-             the abstract (value preferred by M.Bresesti+).       20272  3    6 
-DECAY-DATA (38-SR-91,9.67HR)                                      20272  3    7 
-           (40-ZR-95,65.5D)                                       20272  3    8 
-           (54-XE-135-G,9.14HR)                                   20272  3    9 
-           (55-CS-132,6.59D)                                      20272  3   10 
-FLAG       (1.) Mass 132 yield is here assumed to be for the chain20272  3   11 
-            yield because Cs is shielded and has an independent   20272  3   12 
-            and cumulative yield of < 9.0E-12 %. see Rider        20272  3   13 
-            references (70KOB1) in NEDO-12154-3C ENDF-322.        20272  3   14 
-ERR-ANALYS (ERR-T) Total error                                    20272  3   15 
-STATUS     (TABLE) Table 2 from KURRI-AR-3,84,1970; values of     20272  3   16 
-            decay data were taken from fig.6.                     20272  3   17 
-HISTORY    (19800722A) MONITOR added.                             20272  3   18 
-           (19900823A) S.W. Flag added.                           20272  3   19 
-           (20181012U) SD: STATUS updated. MONIT-REF, ERR-ANALYS  20272  3   20 
-           added. DATA-ERR -> ERR-T. DECAY-DATA added.            20272  3   21 
-ENDBIB              19          0                                 20272  3   22 
-COMMON               1          3                                 20272  3   23 
-MONIT                                                             20272  3   24 
-PC/FIS                                                            20272  3   25 
- 7.64                                                             20272  3   26 
-ENDCOMMON            3          0                                 20272  3   27 
-DATA                 5          4                                 20272  3   28 
-ELEMENT    MASS       DATA       ERR-T      FLAG                  20272  3   29 
-NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM                20272  3   30 
-        38.        91.        6.6        1.0                      20272  3   31 
-        40.        95.        5.0        0.5                      20272  3   32 
-        54.       135.        3.9        0.9                      20272  3   33 
-        55.       132.        2.5        0.3         1.           20272  3   34 
-ENDDATA              6          0                                 20272  3   35 
-ENDSUBENT           34          0                                 20272  399999 
+ENTRY            20272   20221206                             23122027200000001 
+SUBENT        20272001   20221206                             23122027200100001 
+BIB                 12         24                                 2027200100002 
+TITLE      Measurement of average cross section for the           2027200100003 
+            232Th(n,f) reaction for the fission-type reactor      2027200100004 
+            spectrum                                              2027200100005 
+REFERENCE  (R,KURRI-AR-3,84,1970)                                 2027200100006 
+AUTHOR     (K.Kobayashi, I.Kimura)                                2027200100007 
+INSTITUTE  (2JPNKTO)                                              2027200100008 
+FACILITY   (REAC,2JPNKTO) KUR                                     2027200100009 
+INC-SOURCE (REAC) Core of KUR                                     2027200100010 
+INC-SPECT  Same as the fission spectrum within experimental error 2027200100011 
+           (confirmed by multiple foil activation, 6Li sandwich   2027200100012 
+            counter and nuclear emulsion plates)                  2027200100013 
+SAMPLE     99.95% pure, 1/2 inch diam., 0.004 inch thick          2027200100014 
+DETECTOR   (GELI)  Planar-type Ge(Li) of 2 cm3.                   2027200100015 
+PART-DET   (DG)                                                   2027200100016 
+METHOD     (ACTIV)                                                2027200100017 
+HISTORY    (19711010C)                                            2027200100018 
+           (19800722A) MONITOR added.                             2027200100019 
+           (19840106U) A.P.T. Japan code changed to JPN           2027200100020 
+           (19900823A) S.W. N-SOURCE replaced, flag added to      2027200100021 
+            Subent 003.                                           2027200100022 
+           (20181012U) SD:Updated to new date formats,lower case. 2027200100023 
+            Ref. KURRI-AR-3 treated as the primary reference.     2027200100024 
+            ERR-ANALYS updated. MONITOR moved to Subent 002.      2027200100025 
+           (20221206A) On. Recompiled.                            2027200100026 
+ENDBIB              24          0                                 2027200100027 
+NOCOMMON             0          0                                 2027200100028 
+ENDSUBENT           27          0                                 2027200199999 
+SUBENT        20272002   20221206                             23122027200200001 
+BIB                  6         17                                 2027200200002 
+REACTION   (90-TH-232(N,F),,SIG,,FIS)                             2027200200003 
+MONITOR    (28-NI-58(N,P)27-CO-58,,SIG)                           2027200200004 
+           (12-MG-24(N,P)11-NA-24,,SIG)                           2027200200005 
+           (13-AL-27(N,A)11-NA-24,,SIG)                           2027200200006 
+ASSUMED    (ASSUM,90-TH-232(N,F)56-BA-140,CUM,FY,,FIS)            2027200200007 
+ERR-ANALYS (ERR-T) Including counting statistics of five fission  2027200200008 
+            products and                                          2027200200009 
+           (ERR-1) Uncertainty in neutron flux                    2027200200010 
+           (ERR-2) Systematic errors                              2027200200011 
+STATUS     (TABLE) Table 3 of KURRI-AR-3,84,1970                  2027200200012 
+           (DEP,20272003) Fission product yields                  2027200200013 
+           (SPSDD,20693014) New measurement relative to 140Ba FPY 2027200200014 
+           (SPSDD,20792002) New measurement with online detection 2027200200015 
+           (SPSDD,20792003) New measurement relative to 140Ba FPY 2027200200016 
+HISTORY    (19800722A) MONITORs added.                            2027200200017 
+           (20181012U) SD: STATUS, MONITORs moved to Subent 001.  2027200200018 
+           (20221206A) On. ERR-SYS -> ERR-2. ERR-1 added.         2027200200019 
+ENDBIB              17          0                                 2027200200020 
+NOCOMMON             0          0                                 2027200200021 
+DATA                 6          1                                 2027200200022 
+KT-DUMMY   DATA       ERR-T      ERR-1      ERR-2      ASSUM      2027200200023 
+MEV        MB         MB         PER-CENT   PER-CENT   PC/FIS     2027200200024 
+ 1.32       67.        6.         2.         2.         7.64      2027200200025 
+ENDDATA              3          0                                 2027200200026 
+ENDSUBENT           25          0                                 2027200299999 
+SUBENT        20272003   20221206                             23122027200300001 
+BIB                  9         20                                 2027200300002 
+REACTION   (90-TH-232(N,F)ELEM/MASS,CUM,FY,,FIS)                  2027200300003 
+MONITOR    (90-TH-232(N,F)56-BA-140,CUM,FY,,FIS)                  2027200300004 
+MONIT-REF  (22791001,M.Bresesti+,J,JIN,29,1189,1967)              2027200300005 
+DECAY-DATA (38-SR-91,9.67HR)                                      2027200300006 
+           (40-ZR-95,65.5D)                                       2027200300007 
+           (54-XE-135-G,9.14HR)                                   2027200300008 
+           (55-CS-132,6.59D)                                      2027200300009 
+FLAG       (1.) Comment by T.R.England and  B.F.Rider (1994):     2027200300010 
+            Mass 132 yield is here assumed to be for the chain    2027200300011 
+            yield because Cs is shielded and has an independent   2027200300012 
+            and cumulative yield of less than (9E-12)%.           2027200300013 
+REL-REF    (C,,T.R.England+,R,LA-UR-94-3106,1994)                 2027200300014 
+            Comment on 70KOB1                                     2027200300015 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty 2027200300016 
+STATUS     (TABLE) Table 2 of KURRI-AR-3,84,1970                  2027200300017 
+HISTORY    (19800722A) MONITOR added.                             2027200300018 
+           (19900823A) S.W. Flag added.                           2027200300019 
+           (20181012A) SD: STATUS updated. MONIT-REF, ERR-ANALYS  2027200300020 
+            added. DATA-ERR -> ERR-T. DECAY-DATA added.           2027200300021 
+           (20221206A) On. ERR-T -> DATA-ERR.                     2027200300022 
+ENDBIB              20          0                                 2027200300023 
+COMMON               2          3                                 2027200300024 
+KT-DUMMY   MONIT                                                  2027200300025 
+MEV        PC/FIS                                                 2027200300026 
+ 1.32       7.64                                                  2027200300027 
+ENDCOMMON            3          0          0                      2027200300028 
+DATA                 5          4                                 2027200300029 
+ELEMENT    MASS       DATA       DATA-ERR   FLAG                  2027200300030 
+NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM                2027200300031 
+ 38.         91.       6.6        1.0                             2027200300032 
+ 40.         95.       5.0        0.5                             2027200300033 
+ 54.        135.       3.9        0.9                             2027200300034 
+ 55.        132.       2.5        0.3        1.                   2027200300035 
+ENDDATA              6          0                                 2027200300036 
+ENDSUBENT           35          0                                 2027200399999 
 ENDENTRY             3          0                                 2027299999999 
