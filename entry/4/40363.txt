@@ -1,86 +1,174 @@
-ENTRY            40363   20010311                             00004036300000001 
-SUBENT        40363001   20010311                             00004036300100001 
-BIB                 10         13                                 4036300100002 
-INSTITUTE  (4RUSITE)                                              4036300100003 
-REFERENCE  (J,AE,3,(7),11,195707)                                 4036300100004 
-AUTHOR     (V.K.GORSHKOV,R.N.IVANOV,G.M.KUKAVADZE,                4036300100005 
-           I.A.REFORMATSKIY)                                      4036300100006 
-TITLE       U-235 FISSION-PRODUCT YIELD IN THE RARE-EARTH REGION  4036300100007 
-INC-SOURCE (REAC)                                                 4036300100008 
-SAMPLE      URANIUM ENRICHED BY U-235                             4036300100009 
-METHOD     (ASEP)INTEGRAL MASS-SPECTROMETER METHOD                4036300100010 
-MONITOR    (92-U-235(N,F)60-ND-146,CHN,FY)                        4036300100011 
-ERR-ANALYS   ERROR IS NOT SPECIFIED                               4036300100012 
-HISTORY    (19820706C)                                            4036300100013 
-           (19910128U) INSTITUTE CODE 'CCP' CHANGED TO 'ITE'      4036300100014 
-           (20010311A) DATE is corrected                          4036300100015 
-ENDBIB              13          0                                 4036300100016 
-COMMON               1          3                                 4036300100017 
-MONIT                                                             4036300100018 
-PER-CENT                                                          4036300100019 
-  3.2                                                             4036300100020 
-ENDCOMMON            3          0                                 4036300100021 
-ENDSUBENT           20          0                                 4036300199999 
-SUBENT        40363002   20010311                             00004036300200001 
-BIB                  2          2                                 4036300200002 
-REACTION   (92-U-235(N,F)ELEM/MASS,CHN,FY)                        4036300200003 
-INC-SPECT  THERMAL NEUTRONS                                       4036300200004 
-ENDBIB               2          0                                 4036300200005 
-COMMON               1          3                                 4036300200006 
-EN                                                                4036300200007 
-EV                                                                4036300200008 
-  0.025                                                           4036300200009 
-ENDCOMMON            3          0                                 4036300200010 
-DATA                 4         11                                 4036300200011 
-ELEMENT    MASS       DATA       DATA-ERR                         4036300200012 
-NO-DIM     NO-DIM     PC/FIS     PC/FIS                           4036300200013 
-  57.        139.        8.2       .8                             4036300200014 
-  58.        140.        6.3       .3                             4036300200015 
-  58.        142.        5.8       .2                             4036300200016 
-  59.        141.        5.6       .3                             4036300200017 
-  60.        143.        5.8       .2                             4036300200018 
-  60.        144.        5.6       .3                             4036300200019 
-  60.        145.        4.0       .1                             4036300200020 
-  60.        148.        1.7       .1                             4036300200021 
-  60.        150.        0.7       .1                             4036300200022 
-  61.        147.        2.9       .4                             4036300200023 
-  61.        149.        1.5       .3                             4036300200024 
-ENDDATA             13          0                                 4036300200025 
-ENDSUBENT           24          0                                 4036300299999 
-SUBENT        40363003   20010311                             00004036300300001 
-BIB                  2          2                                 4036300300002 
-REACTION   (61-PM-147(N,ABS),,SIG)                                4036300300003 
-STATUS     (NDD)            RUNID= E00204                         4036300300004 
-ENDBIB               2          0                                 4036300300005 
-NOCOMMON             0          0                                 4036300300006 
-DATA                 3          1                                 4036300300007 
-EN         DATA       DATA-ERR                                    4036300300008 
-EV         B          B                                           4036300300009 
- 0.025      9.0000E+01 2.0000E+01                                 4036300300010 
-ENDDATA              3          0                                 4036300300011 
-ENDSUBENT           10          0                                 4036300399999 
-SUBENT        40363004   20010311                             00004036300400001 
-BIB                  2          2                                 4036300400002 
-REACTION   (62-SM-147(N,ABS),,SIG)                                4036300400003 
-STATUS     (NDD)            RUNID= E00205                         4036300400004 
-ENDBIB               2          0                                 4036300400005 
-NOCOMMON             0          0                                 4036300400006 
-DATA                 3          1                                 4036300400007 
-EN         DATA       DATA-ERR                                    4036300400008 
-EV         B          B                                           4036300400009 
-0.025       1.0000E+03 5.0000E+01                                 4036300400010 
-ENDDATA              3          0                                 4036300400011 
-ENDSUBENT           10          0                                 4036300499999 
-SUBENT        40363005   20010311                             00004036300500001 
-BIB                  2          2                                 4036300500002 
-REACTION   (62-SM-149(N,ABS),,SIG)                                4036300500003 
-STATUS     (NDD)            RUNID= E00206                         4036300500004 
-ENDBIB               2          0                                 4036300500005 
-NOCOMMON             0          0                                 4036300500006 
-DATA                 2          1                                 4036300500007 
-EN         DATA                                                   4036300500008 
-EV         B                                                      4036300500009 
- 0.025      5.8000E+04                                            4036300500010 
-ENDDATA              3          0                                 4036300500011 
-ENDSUBENT           10          0                                 4036300599999 
-ENDENTRY             5          0                                 4036399999999 
+ENTRY            40363   20170116                             417540363  0    1 
+SUBENT        40363001   20170116                             417540363  1    1 
+BIB                 11         23                                 40363  1    2 
+INSTITUTE  (4RUSITE)                                              40363  1    3 
+REFERENCE  (J,SJA,3,729,1957) Eng.transl.of AE,3,11,1957          40363  1    4 
+           (J,AE,3,(7),11,195707)                                 40363  1    5 
+AUTHOR     (V.K.Gorshkov,R.N.Ivanov,G.M.Kukavadze,                40363  1    6 
+           I.A.Reformatsky)                                       40363  1    7 
+TITLE       The yield of U-235 fission products in the rare-earth 40363  1    8 
+            region                                                40363  1    9 
+FACILITY   (REAC,4RUSITE)                                         40363  1   10 
+INC-SOURCE (REAC)                                                 40363  1   11 
+SAMPLE      Uranium enriched by U-235                             40363  1   12 
+METHOD     (ASEP) Integral mass-spectrometer method               40363  1   13 
+           (CHSEP) After 20-month cooling                         40363  1   14 
+MONITOR    (92-U-235(N,F)60-ND-146,CUM,FY)                        40363  1   15 
+DETECTOR   Mass spectrograph                                      40363  1   16 
+HISTORY    (19820706C)                                            40363  1   17 
+           (19910128U) Institute code 'CCP' changed to 'ITE'      40363  1   18 
+           (20010311A) Date is corrected                          40363  1   19 
+           (20150210U) SD: Updated to new date formats,lower case.40363  1   20 
+             Ref. on Engl.transl. of AE added. DATA-ERR moved to  40363  1   21 
+             Subents 2-4. BIB updated.                            40363  1   22 
+           (20170116A) M.M. Article was checked.                  40363  1   23 
+            EN -> EN-DUMMY . Subents 006-008 were added.          40363  1   24 
+            CHN -> CUM in MONITOR.                                40363  1   25 
+ENDBIB              23          0                                 40363  1   26 
+COMMON               1          3                                 40363  1   27 
+MONIT                                                             40363  1   28 
+PC/FIS                                                            40363  1   29 
+  3.2                                                             40363  1   30 
+ENDCOMMON            3          0                                 40363  1   31 
+ENDSUBENT           30          0                                 40363  199999 
+SUBENT        40363002   20170116                             417540363  2    1 
+BIB                  6          6                                 40363  2    2 
+REACTION   (92-U-235(N,F)ELEM/MASS,CUM,FY)                        40363  2    3 
+INC-SPECT  Thermal neutrons                                       40363  2    4 
+MONITOR    (92-U-235(N,F)60-ND-146,CUM,FY)                        40363  2    5 
+ERR-ANALYS (DATA-ERR)  Error is not specified                     40363  2    6 
+STATUS     (TABLE) Tbl. 1 from AE,3,(7),11,1957                   40363  2    7 
+HISTORY    (20170116A)  CHN -> CUM in REACTION                    40363  2    8 
+ENDBIB               6          0                                 40363  2    9 
+COMMON               1          3                                 40363  2   10 
+EN-DUMMY                                                          40363  2   11 
+EV                                                                40363  2   12 
+  0.025                                                           40363  2   13 
+ENDCOMMON            3          0                                 40363  2   14 
+DATA                 4         11                                 40363  2   15 
+ELEMENT    MASS       DATA       DATA-ERR                         40363  2   16 
+NO-DIM     NO-DIM     PC/FIS     PC/FIS                           40363  2   17 
+  57.        139.        8.2       .8                             40363  2   18 
+  58.        140.        6.3       .3                             40363  2   19 
+  58.        142.        5.8       .2                             40363  2   20 
+  59.        141.        5.6       .3                             40363  2   21 
+  60.        143.        5.8       .2                             40363  2   22 
+  60.        144.        5.6       .3                             40363  2   23 
+  60.        145.        4.0       .1                             40363  2   24 
+  60.        148.        1.7       .1                             40363  2   25 
+  60.        150.        0.7       .1                             40363  2   26 
+  61.        147.        2.9       .4                             40363  2   27 
+  61.        149.        1.5       .3                             40363  2   28 
+ENDDATA             13          0                                 40363  2   29 
+ENDSUBENT           28          0                                 40363  299999 
+SUBENT        40363003   20170116                             417540363  3    1 
+BIB                  4          4                                 40363  3    2 
+REACTION   (61-PM-147(N,ABS),,SIG)                                40363  3    3 
+DECAY-DATA (61-PM-147,2.6YR)                                      40363  3    4 
+ERR-ANALYS (DATA-ERR)  Error is not specified                     40363  3    5 
+STATUS     (TABLE) Data from the text of AE,3,(7),11,1957         40363  3    6 
+ENDBIB               4          0                                 40363  3    7 
+NOCOMMON             0          0                                 40363  3    8 
+DATA                 3          1                                 40363  3    9 
+EN-DUMMY   DATA       DATA-ERR                                    40363  3   10 
+EV         B          B                                           40363  3   11 
+ 0.025      90.        20.                                        40363  3   12 
+ENDDATA              3          0                                 40363  3   13 
+ENDSUBENT           12          0                                 40363  399999 
+SUBENT        40363004   20170116                             417540363  4    1 
+BIB                  3          3                                 40363  4    2 
+REACTION   (62-SM-147(N,ABS),,SIG)                                40363  4    3 
+ERR-ANALYS (DATA-ERR)  Error is not specified                     40363  4    4 
+STATUS     (TABLE) Data from the text of AE,3,(7),11,1957         40363  4    5 
+ENDBIB               3          0                                 40363  4    6 
+NOCOMMON             0          0                                 40363  4    7 
+DATA                 3          1                                 40363  4    8 
+EN-DUMMY   DATA       DATA-ERR                                    40363  4    9 
+EV         B          B                                           40363  4   10 
+0.025       1000.      50.                                        40363  4   11 
+ENDDATA              3          0                                 40363  4   12 
+ENDSUBENT           11          0                                 40363  499999 
+SUBENT        40363005   20170116                             417540363  5    1 
+BIB                  3          3                                 40363  5    2 
+REACTION   (62-SM-149(N,ABS),,SIG)                                40363  5    3 
+STATUS     (TABLE) Data from the text of AE,3,(7),11,1957         40363  5    4 
+HISTORY    (20170116A) M.M. DATA -> DATA-MIN                      40363  5    5 
+ENDBIB               3          0                                 40363  5    6 
+NOCOMMON             0          0                                 40363  5    7 
+DATA                 2          1                                 40363  5    8 
+EN-DUMMY   DATA-MIN                                               40363  5    9 
+EV         B                                                      40363  5   10 
+ 0.025      5800.                                                 40363  5   11 
+ENDDATA              3          0                                 40363  5   12 
+ENDSUBENT           11          0                                 40363  599999 
+SUBENT        40363006   20170116                             417540363  6    1 
+BIB                  5          8                                 40363  6    2 
+REACTION  1(92-U-235(N,F)ELEM/MASS,CUM,FY,,REL)                   40363  6    3 
+          2(92-U-235(N,F)ELEM/MASS,CUM,FY,,REL)                   40363  6    4 
+            Sum of yields was normalized to 100% .                40363  6    5 
+METHOD    1  Measurement with the mass spectrograph               40363  6    6 
+          2  Measurement with the mass spectrometer MS-1          40363  6    7 
+INC-SPECT  Thermal neutrons                                       40363  6    8 
+ERR-ANALYS (DATA-ERR)  Error is not specified                     40363  6    9 
+STATUS     (TABLE) Tbl. 2 from AE,3,(7),11,1957                   40363  6   10 
+ENDBIB               8          0                                 40363  6   11 
+COMMON               2          3                                 40363  6   12 
+EN-DUMMY   ELEMENT                                                40363  6   13 
+EV         NO-DIM                                                 40363  6   14 
+  0.025     60.                                                   40363  6   15 
+ENDCOMMON            3          0                                 40363  6   16 
+DATA                 5          6                                 40363  6   17 
+MASS       DATA      1DATA-ERR  1DATA      2DATA-ERR  2           40363  6   18 
+NO-DIM     ARB-UNITS  ARB-UNITS  ARB-UNITS  ARB-UNITS             40363  6   19 
+  143.        24.8 E-2    0.5 E-2   25.0 E-2    0.1 E-2           40363  6   20 
+  144.        28.6 E-2    0.5 E-2   28.5 E-2    0.2 E-2           40363  6   21 
+  145.        18.8 E-2    0.3 E-2   18.8 E-2    0.1 E-2           40363  6   22 
+  146.        15.5 E-2    0.3 E-2   15.3 E-2    0.1 E-2           40363  6   23 
+  148.         8.2 E-2    0.3 E-2   8.3  E-2    0.1 E-2           40363  6   24 
+  150.         4.1 E-2    0.2 E-2   4.6  E-2    0.1 E-2           40363  6   25 
+ENDDATA              8          0                                 40363  6   26 
+ENDSUBENT           25          0                                 40363  699999 
+SUBENT        40363007   20170116                             417540363  7    1 
+BIB                  5          6                                 40363  7    2 
+REACTION   (92-U-235(N,F)ELEM/MASS,CUM,FY,,REL)                   40363  7    3 
+            Sum of ields was normalized to 100% .                 40363  7    4 
+METHOD       Measurement with the mass spectrograph               40363  7    5 
+INC-SPECT  Thermal neutrons                                       40363  7    6 
+ERR-ANALYS (DATA-ERR)  Error is not specified                     40363  7    7 
+STATUS     (TABLE) Tbl. 3 from AE,3,(7),11,1957                   40363  7    8 
+ENDBIB               6          0                                 40363  7    9 
+COMMON               2          3                                 40363  7   10 
+EN-DUMMY   ELEMENT                                                40363  7   11 
+EV         NO-DIM                                                 40363  7   12 
+  0.025     62.                                                   40363  7   13 
+ENDCOMMON            3          0                                 40363  7   14 
+DATA                 3          4                                 40363  7   15 
+MASS       DATA       DATA-ERR                                    40363  7   16 
+NO-DIM     ARB-UNITS  ARB-UNITS                                   40363  7   17 
+  147.         40. E-2     3. E-2                                 40363  7   18 
+  148.         15. E-2     2. E-2                                 40363  7   19 
+  150.         38. E-2     3. E-2                                 40363  7   20 
+  152.          7. E-2     2. E-2                                 40363  7   21 
+ENDDATA              6          0                                 40363  7   22 
+ENDSUBENT           21          0                                 40363  799999 
+SUBENT        40363008   20170116                             417540363  8    1 
+BIB                  5          6                                 40363  8    2 
+REACTION   ((92-U-235(N,F)58-CE-140,CUM,FY)/                      40363  8    3 
+           (92-U-235(N,F)58-CE-142,CUM,FY))                       40363  8    4 
+METHOD       Measurement with the mass spectrograph               40363  8    5 
+INC-SPECT  Thermal neutrons                                       40363  8    6 
+ERR-ANALYS (DATA-ERR)  Error is not specified                     40363  8    7 
+STATUS     (TABLE) Text,page 732 of SJA,3,729,1957                40363  8    8 
+ENDBIB               6          0                                 40363  8    9 
+COMMON               1          3                                 40363  8   10 
+EN-DUMMY                                                          40363  8   11 
+EV                                                                40363  8   12 
+  0.025                                                           40363  8   13 
+ENDCOMMON            3          0                                 40363  8   14 
+DATA                 2          1                                 40363  8   15 
+DATA       DATA-ERR                                               40363  8   16 
+NO-DIM     NO-DIM                                                 40363  8   17 
+ 1.082      0.029                                                 40363  8   18 
+ENDDATA              3          0                                 40363  8   19 
+ENDSUBENT           18          0                                 40363  899999 
+ENDENTRY             8          0                                 4036399999999 

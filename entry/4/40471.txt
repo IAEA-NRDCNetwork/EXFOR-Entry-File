@@ -1,31 +1,43 @@
-ENTRY            40471   19850329                             00004047100000001 
-SUBENT        40471001   19850329                             00004047100100001 
-BIB                 10         13                                 4047100100002 
-INSTITUTE  (4CCPCCP)                                              4047100100003 
-REFERENCE  (J,AE,44,(2),171,7802)                                 4047100100004 
-AUTHOR     (V.I.MELENT'JEV,V.V.OVECHKIN)                          4047100100005 
-TITLE       ON AL-27(N,P)MG-27 REACTION CROSS-SECTION FOR         4047100100006 
-            14.9 MEV NEUTRONS                                     4047100100007 
-INC-SOURCE  NEUTRON GENERATOR  NG-150I                            4047100100008 
-METHOD     (ACTIV)                                                4047100100009 
-DETECTOR   (NAICR)  NA-I(TL) FOR GAMMA                            4047100100010 
-           (SOLST)  SI(LI) DETECTOR FOR NEUTRON MONITORING        4047100100011 
-MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           4047100100012 
-PART-DET   (G)                                                    4047100100013 
-           (N)                                                    4047100100014 
-HISTORY    (781215C)                                              4047100100015 
-ENDBIB              13          0                                 4047100100016 
-NOCOMMON             0          0                                 4047100100017 
-ENDSUBENT           16          0                                 4047100199999 
-SUBENT        40471002   19850329                             00004047100200001 
-BIB                  1          1                                 4047100200002 
-REACTION   (13-AL-27(N,P)12-MG-27,,SIG)                           4047100200003 
-ENDBIB               1          0                                 4047100200004 
-NOCOMMON             0          0                                 4047100200005 
-DATA                 5          1                                 4047100200006 
-EN         DATA       DATA-ERR   MONIT      MONIT-ERR             4047100200007 
-MEV        MB         MB         MB         MB                    4047100200008 
- 1.4900E+01 7.1000E+01 5.0000E+00 1.1100E+02 4.0000E+00           4047100200009 
-ENDDATA              3          0                                 4047100200010 
-ENDSUBENT            9          0                                 4047100299999 
+ENTRY            40471   20170313                             417540471  0    1 
+SUBENT        40471001   20170313                             417540471  1    1 
+BIB                 13         21                                 40471  1    2 
+INSTITUTE  (4RUSEPA)                                              40471  1    3 
+REFERENCE  (J,SJA,44,183,1978) Eng.trans.of AE,44,171,1978        40471  1    4 
+           (J,AE,44,(2),171,197802)                               40471  1    5 
+AUTHOR     (V.I.Melent'ev,V.V.Ovechkin)                           40471  1    6 
+TITLE      The Al-27(n,p)Mg-27 cross-section for 14.9 MeV neutrons40471  1    7 
+FACILITY   (NGEN,4RUSEPA)                                         40471  1    8 
+INC-SOURCE  Neutron generator  NG-150I                            40471  1    9 
+DETECTOR   (NAICR)  Na-I(Tl) for gamma                            40471  1   10 
+           (SILI)  Si(Li) detector for neutron flux monitoring    40471  1   11 
+MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           40471  1   12 
+DECAY-MON  (11-NA-24,,DG,1370.,,DG,2740.,,DG,4110.)               40471  1   13 
+MONIT-REF  (,M.Bormann,R,IAEA-156,1974)                           40471  1   14 
+METHOD     (ACTIV)                                                40471  1   15 
+PART-DET   (G)                                                    40471  1   16 
+           (N)                                                    40471  1   17 
+HISTORY    (19781215C)                                            40471  1   18 
+           (20150218U) SD: Updated to new date formats,lower case.40471  1   19 
+             Ref. on Engl.transl. of AE added.                    40471  1   20 
+           (20170313A) M.M. Article was checked, BIB information  40471  1   21 
+            was updated in DETECTOR, STATUS.                      40471  1   22 
+            MONIT-REF, DECAY-MON, DECAY-DATA were added.          40471  1   23 
+ENDBIB              21          0                                 40471  1   24 
+NOCOMMON             0          0                                 40471  1   25 
+ENDSUBENT           24          0                                 40471  199999 
+SUBENT        40471002   20170313                             417540471  2    1 
+BIB                  4          5                                 40471  2    2 
+REACTION   (13-AL-27(N,P)12-MG-27,,SIG)                           40471  2    3 
+DECAY-DATA (12-MG-27,,DG,844.,,DG,1014.)                          40471  2    4 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 40471  2    5 
+            article.                                              40471  2    6 
+STATUS     (TABLE) Text, page 183 of SJA,44,183,1978              40471  2    7 
+ENDBIB               5          0                                 40471  2    8 
+NOCOMMON             0          0                                 40471  2    9 
+DATA                 5          1                                 40471  2   10 
+EN         DATA       DATA-ERR   MONIT      MONIT-ERR             40471  2   11 
+MEV        MB         MB         MB         MB                    40471  2   12 
+ 14.9       71.        5.         111.       4.                   40471  2   13 
+ENDDATA              3          0                                 40471  2   14 
+ENDSUBENT           13          0                                 40471  299999 
 ENDENTRY             2          0                                 4047199999999 

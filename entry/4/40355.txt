@@ -1,72 +1,299 @@
-ENTRY            40355   19850329                             00004035500000001 
-SUBENT        40355001   19850329                             00004035500100001 
-BIB                  8         15                                 4035500100002 
-INSTITUTE  (4CCPKUR)                                              4035500100003 
-REFERENCE  (J,AE,2,(1),10,5701)                                   4035500100004 
-           (J,JNE,5,217,57)                                       4035500100005 
-AUTHOR     (G.A.DOROFEEV,YU.P.DOBRYNIN)                           4035500100006 
-TITLE       EFFECTIVE CROSS-SECTIONS OF U233, PU239, PU240        4035500100007 
-            IN THE NEUTRON ENERGY RANGE 30KEV - 5MEV              4035500100008 
-INC-SOURCE (PHOTO)  SB-BE SOURCE FOR NEUTRONS OF ABOUT 30 KEV     4035500100009 
-                    NA-D2O SOURCE FOR NEUTRONS OF ABOUT 250 KEV   4035500100010 
-                    NA-BE SOURCE FOR NEUTRONS OF ABOUT 900 KEV    4035500100011 
-           (A-BE)   MOCK FISSION SOURCE FOR NEUTRONS OF ABOUT 2MEV4035500100012 
-                    PO-BE SOURCE FOR NEUTRONS OF ABOUT 5 MEV      4035500100013 
-MONITOR     ABSOLUTE MEASUREMENTS                                 4035500100014 
-HISTORY    (820616C)                                              4035500100015 
-           (830915A) EDDED SUBENTRIES FROM THE ENTRY 80005        4035500100016 
-ERR-ANALYS (DATA-ERR) NOT SPECIFIED                               4035500100017 
-ENDBIB              15          0                                 4035500100018 
-NOCOMMON             0          0                                 4035500100019 
-ENDSUBENT           18          0                                 4035500199999 
-SUBENT        40355002   19850329                             00004035500200001 
-BIB                  3          3                                 4035500200002 
-REACTION   (94-PU-240(N,F),,SIG)                                  4035500200003 
-DETECTOR   (IOCH)                                                 4035500200004 
-STATUS     (NDD)  RUNID=E00122                                    4035500200005 
-ENDBIB               3          0                                 4035500200006 
-NOCOMMON             0          0                                 4035500200007 
-DATA                 3          2                                 4035500200008 
-EN         DATA       DATA-ERR                                    4035500200009 
-MEV        B          B                                           4035500200010 
- 8.9999E-01 1.2999E+00 1.4999E-01                                 4035500200011 
- 5.0000E+00 1.3999E+00 1.4999E-01                                 4035500200012 
-ENDDATA              4          0                                 4035500200013 
-ENDSUBENT           12          0                                 4035500299999 
-SUBENT        40355003   19850329                             00004035500300001 
-BIB                  4          4                                 4035500300002 
-REACTION   (92-U-233(N,F),,SIG)                                   4035500300003 
-DETECTOR   (FISCH) IONIZATION CHAMBER.                            4035500300004 
-STATUS     (SCSRS)                                                4035500300005 
-HISTORY    (830915T)CONVERTED FROM SUBENT 80005003                4035500300006 
-ENDBIB               4          0                                 4035500300007 
-NOCOMMON             0          0                                 4035500300008 
-DATA                 3          5                                 4035500300009 
-EN         DATA       DATA-ERR                                    4035500300010 
-MEV        B          B                                           4035500300011 
- 3.0000E-02 3.0600E+00 1.6000E-01                                 4035500300012 
- 2.5000E-01 2.1100E+00 1.3000E-01                                 4035500300013 
- 9.0000E-01 1.8300E+00 1.1000E-01                                 4035500300014 
- 2.0000E+00 1.8600E+00 1.1000E-01                                 4035500300015 
- 5.0000E+00 1.9600E+00 1.2000E-01                                 4035500300016 
-ENDDATA              7          0                                 4035500300017 
-ENDSUBENT           16          0                                 4035500399999 
-SUBENT        40355004   19850329                             00004035500400001 
-BIB                  4          4                                 4035500400002 
-REACTION   (94-PU-239(N,F),,SIG)                                  4035500400003 
-DETECTOR   (FISCH) IONIZATION CHAMBER.                            4035500400004 
-STATUS     (SCSRS)                                                4035500400005 
-HISTORY    (830915T) CONVERTED FROM SUBENT 80005005               4035500400006 
-ENDBIB               4          0                                 4035500400007 
-NOCOMMON             0          0                                 4035500400008 
-DATA                 3          5                                 4035500400009 
-EN         DATA       DATA-ERR                                    4035500400010 
-MEV        B          B                                           4035500400011 
- 3.0000E-02 1.7900E+00 1.1000E-01                                 4035500400012 
- 2.5000E-01 1.5800E+00 1.0000E-01                                 4035500400013 
- 9.0000E-01 1.7900E+00 1.2000E-01                                 4035500400014 
- 2.0000E+00 1.8600E+00 1.3000E-01                                 4035500400015 
- 5.0000E+00 2.1000E+00 1.3000E-01                                 4035500400016 
-ENDDATA              7          0                                 4035500400017 
-ENDSUBENT           16          0                                 4035500499999 
-ENDENTRY             4          0                                 4035599999999 
+ENTRY            40355   20161227                             417540355  0    1 
+SUBENT        40355001   20161227                             417540355  1    1 
+BIB                 10         38                                 40355  1    2 
+INSTITUTE  (4RUSKUR)                                              40355  1    3 
+REFERENCE  (J,SJA,2,9,1957) Eng.transl.of AE,2,10,1957            40355  1    4 
+           (J,AE,2,(1),10,195701)                                 40355  1    5 
+           (J,JNE,5,217,1957)                                     40355  1    6 
+AUTHOR     (G.A.Dorofeev,Yu.P.Dobrynin)                           40355  1    7 
+TITLE       Effective cross-sections for fission of U-233, U-235, 40355  1    8 
+           Pu-239 and Pu-240 by neutrons with energies from 30 keV40355  1    9 
+           to 5 MeV .                                             40355  1   10 
+INC-SOURCE         Mock fission source for neutrons of about 2MeV,40355  1   11 
+             ( Po, B(4)C,CaF(4), CA(BF(4))2 )                     40355  1   12 
+              neutron angular distribution - isotropic.           40355  1   13 
+           (PHOTO) Sb-Be source for neutrons of about 30 keV,     40355  1   14 
+              contamination due to neutrons of ~400 keV is ~ 10%, 40355  1   15 
+              neutron angular distribution - isotropic.           40355  1   16 
+                   Na-D2O source for neutrons of about 250 keV,   40355  1   17 
+              neutron angular distribution - 1+5*SIN(angle)**2.   40355  1   18 
+                   Na-Be source for neutrons of about 900 keV,    40355  1   19 
+              neutron angular distribution - 1+0.8*SIN(angle)**2. 40355  1   20 
+           (PO-BE) Po-Be source for neutrons of about 5 MeV,      40355  1   21 
+              neutron angular distribution - isotropic.           40355  1   22 
+DETECTOR   (IOCH) Spherical ionization chamber.                   40355  1   23 
+            Filled with 90% Ar and 10% CO(2) at pressure 20mm Hg. 40355  1   24 
+            Al sphere diameter 37mm, 0.5 mm thick.                40355  1   25 
+PART-DET   (FF)                                                   40355  1   26 
+CORRECTION  For contamination of U-238 and Pu-240.                40355  1   27 
+            For presence of 400 keV neutrons in Sb+Be source <4%. 40355  1   28 
+            For anisotropy (< 3.%) and finite size of the sources.40355  1   29 
+            For effect of scattered neutrons <1%.                 40355  1   30 
+ERR-ANALYS (DATA-ERR) Not explained in the article                40355  1   31 
+HISTORY    (19820616C)                                            40355  1   32 
+           (19830915A) Added Subentries from the entry 80005      40355  1   33 
+           (20150210A) SD: Updated to new date formats,lower case.40355  1   34 
+            Ref. on Engl.transl. of AE added. Subent 5 added.     40355  1   35 
+            SAMPLE was added 2-4.                                 40355  1   36 
+           (20161227U) M.M. Article was checked, BIB information  40355  1   37 
+           was updated in TITLE,DETECTOR,CORRECTION,INC-SOURCE.   40355  1   38 
+           Primarily measured data were added in Subents 006-008. 40355  1   39 
+           A-BE -> PO-BE in INC-SOURCE .                          40355  1   40 
+ENDBIB              38          0                                 40355  1   41 
+NOCOMMON             0          0                                 40355  1   42 
+ENDSUBENT           41          0                                 40355  199999 
+SUBENT        40355002   20161227                             417540355  2    1 
+BIB                  4          5                                 40355  2    2 
+REACTION   (94-PU-240(N,F),,SIG,,SPA)                             40355  2    3 
+SAMPLE     The effective weight of Pu ~ was determined            40355  2    4 
+            (2.0 + 0.2 mg) from spontaneous fission.              40355  2    5 
+STATUS     (TABLE) Tbl.6 from SJA,2,9,1957                        40355  2    6 
+HISTORY    (20161227A) EN -> EN-MEAN . SPA was added.             40355  2    7 
+ENDBIB               5          0                                 40355  2    8 
+NOCOMMON             0          0                                 40355  2    9 
+DATA                 3          2                                 40355  2   10 
+EN-MEAN    DATA       DATA-ERR                                    40355  2   11 
+MEV        B          B                                           40355  2   12 
+       0.90       1.30       0.15                                 40355  2   13 
+       5.00       1.40       0.15                                 40355  2   14 
+ENDDATA              4          0                                 40355  2   15 
+ENDSUBENT           14          0                                 40355  299999 
+SUBENT        40355003   20161227                             417540355  3    1 
+BIB                  8         20                                 40355  3    2 
+REACTION   (92-U-233(N,F),,SIG,,SPA)                              40355  3    3 
+SAMPLE     The fission chamber with U-233 contained about 20 mg.  40355  3    4 
+           The material was applied electrolytically on aluminum  40355  3    5 
+           sphere 37 mm in diam. and 0.5 mm thick.                40355  3    6 
+REL-REF    (R,40350002,P.E.Spivak+,J,AE,1,(3),21,1956)            40355  3    7 
+             Data of ETA used in analysis.                        40355  3    8 
+           (R,40350001,P.E.Spivak+,J,SJA,1,(3),303,1956)          40355  3    9 
+            Engl.translation                                      40355  3   10 
+ASSUMED    (ASSUM1,92-U-233(N,NON),,ETA)                          40355  3   11 
+           (ASSUM2,92-U-233(N,F),,NU)                             40355  3   12 
+FLAG       (1.) CS at 30 keV was measured by 223.6 g alloy,       40355  3   13 
+           U-233 weight 220.13g, 0.0131E+24nucl./cm**2 ,          40355  3   14 
+           using the ASSUMED data .                               40355  3   15 
+ERR-ANALYS (ERR-S) Stat. error 1%                                 40355  3   16 
+           (ERR-1) Uncertainty of mean neutron number at          40355  3   17 
+            non-elastic event 2.5%                                40355  3   18 
+STATUS     (TABLE) Tbl. 5 from SJA,2,9,1957                       40355  3   19 
+           (DEP,40355006) Relative data .                         40355  3   20 
+HISTORY    (19830915T)Converted from subent 80005003              40355  3   21 
+           (20161227A) EN -> EN-MEAN . SPA was added.             40355  3   22 
+ENDBIB              20          0                                 40355  3   23 
+COMMON               7          6                                 40355  3   24 
+EN-NRM     ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR ERR-S      40355  3   25 
+ERR-1                                                             40355  3   26 
+KEV        PRT/REAC   PRT/REAC   PRT/FIS    PRT/FIS    PER-CENT   40355  3   27 
+PER-CENT                                                          40355  3   28 
+ 30.        2.25       0.07       2.60       0.07       1.        40355  3   29 
+ 2.5                                                              40355  3   30 
+ENDCOMMON            6          0                                 40355  3   31 
+DATA                 4          5                                 40355  3   32 
+EN-MEAN    DATA       DATA-ERR   FLAG                             40355  3   33 
+MEV        B          B          NO-DIM                           40355  3   34 
+       0.03       3.06       0.16  1.                             40355  3   35 
+       0.25       2.11       0.13                                 40355  3   36 
+       0.90       1.83       0.11                                 40355  3   37 
+       2.00       1.86       0.11                                 40355  3   38 
+       5.00       1.96       0.12                                 40355  3   39 
+ENDDATA              7          0                                 40355  3   40 
+ENDSUBENT           39          0                                 40355  399999 
+SUBENT        40355004   20161227                             417540355  4    1 
+BIB                  8         21                                 40355  4    2 
+REACTION   (94-PU-239(N,F),,SIG,,SPA)                             40355  4    3 
+SAMPLE     The fission chamber with Pu-239 contained about 1.5 mg 40355  4    4 
+           The material was applied electrolytically on aluminum  40355  4    5 
+           sphere 37 mm in diam. and 0.5 mm thick.                40355  4    6 
+            2% contamination of Pu-240.                           40355  4    7 
+REL-REF    (R,40350004,P.E.Spivak+,J,AE,1,(3),21,1956)            40355  4    8 
+             Data of ETA used in analysis.                        40355  4    9 
+           (R,40350004,P.E.Spivak+,J,SJA,1,(3),303,1956)          40355  4   10 
+            Engl.translation                                      40355  4   11 
+ASSUMED    (ASSUM1,92-U-233(N,NON),,ETA)                          40355  4   12 
+           (ASSUM2,92-U-233(N,F),,NU)                             40355  4   13 
+FLAG       (1.) CS at 30 keV was measured by 190.45 g alloy,      40355  4   14 
+           Pu-239 weight 183.3 g, 0.0107E+24nucl./cm**2 ,         40355  4   15 
+           using the ASSUMED data .                               40355  4   16 
+ERR-ANALYS (ERR-S) Stat. error 1%                                 40355  4   17 
+           (ERR-1) Uncertainty of mean neutron number at          40355  4   18 
+           non-elastic event 2.5%                                 40355  4   19 
+STATUS     (TABLE) Tbl. 5 from SJA,2,9,1957                       40355  4   20 
+           (DEP,40355008) Relative data .                         40355  4   21 
+HISTORY    (19830915T) Converted from subent 80005005             40355  4   22 
+           (20161227A) EN -> EN-MEAN . SPA was added.             40355  4   23 
+ENDBIB              21          0                                 40355  4   24 
+COMMON               7          6                                 40355  4   25 
+EN-NRM     ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR ERR-S      40355  4   26 
+ERR-1                                                             40355  4   27 
+KEV        PRT/REAC   PRT/REAC   PRT/FIS    PRT/FIS    PER-CENT   40355  4   28 
+PER-CENT                                                          40355  4   29 
+ 30.        2.01       0.05       2.9        0.07       1.        40355  4   30 
+ 2.5                                                              40355  4   31 
+ENDCOMMON            6          0                                 40355  4   32 
+DATA                 4          5                                 40355  4   33 
+EN         DATA       DATA-ERR   FLAG                             40355  4   34 
+MEV        B          B          NO-DIM                           40355  4   35 
+       0.03       1.79       0.11     1.                          40355  4   36 
+       0.25       1.58       0.10                                 40355  4   37 
+       0.90       1.79       0.12                                 40355  4   38 
+       2.00       1.86       0.13                                 40355  4   39 
+       5.00       2.10       0.13                                 40355  4   40 
+ENDDATA              7          0                                 40355  4   41 
+ENDSUBENT           40          0                                 40355  499999 
+SUBENT        40355005   20161227                             417540355  5    1 
+BIB                  8         21                                 40355  5    2 
+REACTION   (92-U-235(N,F),,SIG,,SPA)                              40355  5    3 
+SAMPLE     The fission chamber with U-235 contained about 20 mg.  40355  5    4 
+           The material was applied electrolytically on aluminum  40355  5    5 
+           sphere 37 mm in diam. and 0.5 mm thick.                40355  5    6 
+            10% contamination of U-238.                           40355  5    7 
+REL-REF    (R,40350003,P.E.Spivak+,J,AE,1,(3),21,1956)            40355  5    8 
+             Data of ETA used in analysis.                        40355  5    9 
+           (R,40350003,P.E.Spivak+,J,SJA,1,(3),303,1956)          40355  5   10 
+            Engl.translation                                      40355  5   11 
+ASSUMED    (ASSUM1,92-U-233(N,NON),,ETA)                          40355  5   12 
+           (ASSUM2,92-U-233(N,F),,NU)                             40355  5   13 
+FLAG       (1.) CS at 30 keV was measured by 224.9 g alloy,       40355  5   14 
+           U-235 weight 202.41g, 0.0122E+24nucl./cm**2 ,          40355  5   15 
+           using the ASSUMED data .                               40355  5   16 
+ERR-ANALYS (ERR-S) Stat. error 1%                                 40355  5   17 
+           (ERR-1) Uncertainty of mean neutron number at          40355  5   18 
+           non-elastic event 2.5%                                 40355  5   19 
+STATUS     (TABLE) Tbl. 5 from SJA,2,9,1957                       40355  5   20 
+           (DEP,40355007) Relative data .                         40355  5   21 
+HISTORY    (20150210C) SD                                         40355  5   22 
+           (20161227A) EN -> EN-MEAN . SPA was added.             40355  5   23 
+ENDBIB              21          0                                 40355  5   24 
+COMMON               7          6                                 40355  5   25 
+EN-NRM     ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR ERR-S      40355  5   26 
+ERR-1                                                             40355  5   27 
+KEV        PRT/REAC   PRT/REAC   PRT/FIS    PRT/FIS    PER-CENT   40355  5   28 
+PER-CENT                                                          40355  5   29 
+ 30.        1.86       0.04       2.5        0.06       1.        40355  5   30 
+ 2.5                                                              40355  5   31 
+ENDCOMMON            6          0                                 40355  5   32 
+DATA                 4          5                                 40355  5   33 
+EN-MEAN    DATA       DATA-ERR   FLAG                             40355  5   34 
+MEV        B          B          NO-DIM                           40355  5   35 
+       0.03       2.21       0.12    1.                           40355  5   36 
+       0.25       1.28       0.08                                 40355  5   37 
+       0.90       1.24       0.08                                 40355  5   38 
+       2.00       1.22       0.08                                 40355  5   39 
+       5.00       1.37       0.13                                 40355  5   40 
+ENDDATA              7          0                                 40355  5   41 
+ENDSUBENT           40          0                                 40355  599999 
+SUBENT        40355006   20161227                             417540355  6    1 
+BIB                  6         13                                 40355  6    2 
+REACTION  1((92-U-233(N,F),,SIG,,SPA/RAW)//                       40355  6    3 
+           (92-U-233(N,F),,SIG,,SPA/RAW))                         40355  6    4 
+          2((92-U-233(N,F),,SIG,,SPA)//(92-U-233(N,F),,SIG,,SPA)) 40355  6    5 
+SAMPLE     The fission chamber with U-233 contained about 20 mg.  40355  6    6 
+           The material was applied electrolytically on aluminum  40355  6    7 
+           sphere 37 mm in diam. and 0.5 mm thick.                40355  6    8 
+CORRECTION2 See MISC-COL for corrections made.                    40355  6    9 
+MISC-COL   (MISC2) Correction for the presence of 400 keV neutrons40355  6   10 
+           in Sb+Be source.                                       40355  6   11 
+           (MISC3) Correction for anisotropy and the finite size  40355  6   12 
+           of the sources.                                        40355  6   13 
+STATUS     (TABLE) Table 2 of SJA,2,9,1957                        40355  6   14 
+HISTORY    (20161227C) M.M. Subent was added.                     40355  6   15 
+ENDBIB              13          0                                 40355  6   16 
+COMMON               1          3                                 40355  6   17 
+EN-DN                                                             40355  6   18 
+KEV                                                               40355  6   19 
+ 30.                                                              40355  6   20 
+ENDCOMMON            3          0                                 40355  6   21 
+DATA                 7          4                                 40355  6   22 
+EN-NM      DATA      1DATA-ERR  1DATA      2DATA-ERR  2MISC2      40355  6   23 
+MISC3                                                             40355  6   24 
+MEV        NO-DIM     PER-CENT   NO-DIM     NO-DIM     PER-CENT   40355  6   25 
+PER-CENT                                                          40355  6   26 
+       0.25   0.73     2.         0.69       0.02       -3.       40355  6   27 
+ -3.                                                              40355  6   28 
+       0.90   0.62     2.         0.60       0.02       -3.       40355  6   29 
+ -1.                                                              40355  6   30 
+       2.     0.63     2.         0.61       0.02       -3.       40355  6   31 
+                                                                  40355  6   32 
+       5.     0.67     1.5        0.64       0.02       -3.       40355  6   33 
+                                                                  40355  6   34 
+ENDDATA             12          0                                 40355  6   35 
+ENDSUBENT           34          0                                 40355  699999 
+SUBENT        40355007   20161227                             417540355  7    1 
+BIB                  6         15                                 40355  7    2 
+REACTION  1((92-U-235(N,F),,SIG,,SPA/RAW)//                       40355  7    3 
+           (92-U-235(N,F),,SIG,,SPA/RAW))                         40355  7    4 
+          2((92-U-235(N,F),,SIG,,SPA)//(92-U-235(N,F),,SIG,,SPA)) 40355  7    5 
+SAMPLE     The fission chamber with U-235 contained about 20 mg.  40355  7    6 
+           The material was applied electrolytically on aluminum  40355  7    7 
+           sphere 37 mm in diam. and 0.5 mm thick.                40355  7    8 
+            10% contamination of U-238.                           40355  7    9 
+CORRECTION2 See MISC-COL for corrections made.                    40355  7   10 
+MISC-COL   (MISC1) Correction for contamination by U238 and Pu240 40355  7   11 
+           (MISC2) Correction for the presence of 400 keV neutrons40355  7   12 
+           in Sb+Be source.                                       40355  7   13 
+           (MISC3) Correction for anisotropy and the finite size  40355  7   14 
+           of the sources.                                        40355  7   15 
+STATUS     (TABLE) Table 2 of SJA,2,9,1957                        40355  7   16 
+HISTORY    (20161227C) M.M. Subent was added.                     40355  7   17 
+ENDBIB              15          0                                 40355  7   18 
+COMMON               1          3                                 40355  7   19 
+EN-DN                                                             40355  7   20 
+KEV                                                               40355  7   21 
+ 30.                                                              40355  7   22 
+ENDCOMMON            3          0                                 40355  7   23 
+DATA                 8          4                                 40355  7   24 
+EN-NM      DATA      1DATA-ERR  1DATA      2DATA-ERR  2MISC1      40355  7   25 
+MISC2      MISC3                                                  40355  7   26 
+MEV        NO-DIM     PER-CENT   NO-DIM     NO-DIM     PER-CENT   40355  7   27 
+PER-CENT   PER-CENT                                               40355  7   28 
+       0.25   0.62     1.5        0.58       0.01                 40355  7   29 
+ -4.        -3.                                                   40355  7   30 
+       0.90   0.59     1.5        0.56       0.01                 40355  7   31 
+ -4.        -1.                                                   40355  7   32 
+       2.     0.59     3.         0.55       0.02       -2.5      40355  7   33 
+ -4.                                                              40355  7   34 
+       5.     0.68     2.         0.62       0.02       -4.       40355  7   35 
+ -4.                                                              40355  7   36 
+ENDDATA             12          0                                 40355  7   37 
+ENDSUBENT           36          0                                 40355  799999 
+SUBENT        40355008   20161227                             417540355  8    1 
+BIB                  6         16                                 40355  8    2 
+REACTION  1((94-PU-239(N,F),,SIG,,SPA/RAW)//                      40355  8    3 
+           (94-PU-239(N,F),,SIG,,SPA/RAW)))                       40355  8    4 
+          2((94-PU-239(N,F),,SIG,,SPA)//                          40355  8    5 
+           (94-PU-239(N,F),,SIG,,SPA))                            40355  8    6 
+SAMPLE     The fission chamber with Pu-239 contained about 1.5 mg 40355  8    7 
+           The material was applied electrolytically on aluminum  40355  8    8 
+           sphere 37 mm in diam. and 0.5 mm thick.                40355  8    9 
+            2% contamination of Pu-240.                           40355  8   10 
+CORRECTION2 See MISC-COL for corrections made.                    40355  8   11 
+MISC-COL   (MISC1) Correction for contamination by U238 and Pu240 40355  8   12 
+           (MISC2) Correction for the presence of 400 keV neutrons40355  8   13 
+           in Sb+Be source.                                       40355  8   14 
+           (MISC3) Correction for anisotropy and the finite size  40355  8   15 
+           of the sources.                                        40355  8   16 
+STATUS     (TABLE) Table 2 of SJA,2,9,1957                        40355  8   17 
+HISTORY    (20161227C) M.M. Subent was added.                     40355  8   18 
+ENDBIB              16          0                                 40355  8   19 
+COMMON               1          3                                 40355  8   20 
+EN-DN                                                             40355  8   21 
+KEV                                                               40355  8   22 
+ 30.                                                              40355  8   23 
+ENDCOMMON            3          0                                 40355  8   24 
+DATA                 8          4                                 40355  8   25 
+EN-NM      DATA      1DATA-ERR  1DATA      2DATA-ERR  2MISC1      40355  8   26 
+MISC2      MISC3                                                  40355  8   27 
+MEV        NO-DIM     PER-CENT   NO-DIM     NO-DIM     PER-CENT   40355  8   28 
+PER-CENT   PER-CENT                                               40355  8   29 
+       0.25   0.92     1.5        0.88       0.02                 40355  8   30 
+ -1.        -3.                                                   40355  8   31 
+       0.90   1.03     2.         1.00       0.03       -1.3      40355  8   32 
+ -1.        -1.                                                   40355  8   33 
+       2.     1.06     3.         1.04       0.04       -1.3      40355  8   34 
+ -1.                                                              40355  8   35 
+       5.     1.21     1.5        1.17       0.03       -1.3      40355  8   36 
+ -1.                                                              40355  8   37 
+ENDDATA             12          0                                 40355  8   38 
+ENDSUBENT           37          0                                 40355  899999 
+ENDENTRY             8          0                                 4035599999999 
