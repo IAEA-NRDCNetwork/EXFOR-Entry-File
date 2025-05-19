@@ -1,0 +1,79 @@
+ENTRY            32731   20191011                             319232731  0    1 
+SUBENT        32731001   20191011                             319232731  1    1 
+BIB                 13         41                                 32731  1    2 
+TITLE      Experimental measurements with Monte Carlo correction  32731  1    3 
+           and theoretical calculations of neutron inelastic      32731  1    4 
+           scattering cross section of 115In                      32731  1    5 
+AUTHOR     (Chao Wang,Jun Xiao,Xiaobing Luo)                      32731  1    6 
+INSTITUTE  (3CPRSIU,3CPRNPC)                                      32731  1    7 
+REFERENCE  (J,RPC,127,177,2016)                                   32731  1    8 
+FACILITY   (VDGT,3CPRSIU) 2.5 MeV electrostatic accelerator       32731  1    9 
+INC-SOURCE (D-D) The deuteron beam current of 300 mA and beam     32731  1   10 
+           energy of 2.0 MeV. The solid Tritium-Ti target had a   32731  1   11 
+           thickness of approximately 1.20 mg/cm2.                32731  1   12 
+SAMPLE     (49-IN-115,NAT=0.957) The 115In samples were pure      32731  1   13 
+           indium with a purity of higher than 99.99%. Disks of   32731  1   14 
+           pure indium, 0.5 mm in thickness and 10 mm in          32731  1   15 
+           diameter, were sandwiched between two Au foils of 0.3  32731  1   16 
+           mm in thickness. These foils were wrapped with 0.3 mm  32731  1   17 
+           in thickness cadmium box and put into 90 deg angle     32731  1   18 
+           relative to the deuteron beam direction. Samples at    32731  1   19 
+           the high energy neutron emitting direction between 0   32731  1   20 
+           deg and 60 deg, were not sandwiched between the Au     32731  1   21 
+           foils.                                                 32731  1   22 
+DETECTOR   (HPGE) Well-calibrated coaxial high-purity germanium   32731  1   23 
+           detector (GEM30P4-76, ORTEC, USA), with an entrance    32731  1   24 
+           window thickness of 1.5 mm, a sensitive volume of 75   32731  1   25 
+           cm3 and a sensitive diameter of 60 mm. The detector    32731  1   26 
+           has 20% relative efficiency and an energy resolution   32731  1   27 
+           of 1.85 keV FWHM at 1.33 MeV.                          32731  1   28 
+METHOD     (ACTIV) 8-h of irradiation.                            32731  1   29 
+CORRECTION Corrections were made for the multiple scattering (S)  32731  1   30 
+           and the flux attenuation (F). The total correction     32731  1   31 
+           factor was calculated by F = S x D. For 2.95 MeV,      32731  1   32 
+           3.94 MeV and 5.24 MeV, S were 1.013, 0.977 and 1.016,  32731  1   33 
+           D were 0.960, 0.970 and 0.966, F were 0.973, 0.948     32731  1   34 
+           and 0.981.                                             32731  1   35 
+ERR-ANALYS (ERR-T) total typical uncertainty 2.5%                 32731  1   36 
+           (ERR-S) Statistics of full energy peak 1.0%            32731  1   37 
+           (ERR-1) Detecting efficiency 1.5%                      32731  1   38 
+           (ERR-2) Standard cross section of Au 1.5%              32731  1   39 
+           (ERR-3,,1.0) Decay scheme less than 1.0%               32731  1   40 
+           (ERR-4,,1.0) Background neutron less than 1.0%         32731  1   41 
+STATUS     (TABLE) Table 4 of Radiat.Phys.Chem.,127,177,2016      32731  1   42 
+HISTORY    (20191011C) Compiled by Liu Lile (CNDC)                32731  1   43 
+ENDBIB              41          0                                 32731  1   44 
+COMMON               3          3                                 32731  1   45 
+ERR-S      ERR-1      ERR-2                                       32731  1   46 
+PER-CENT   PER-CENT   PER-CENT                                    32731  1   47 
+        1.0        1.5        1.5                                 32731  1   48 
+ENDCOMMON            3          0                                 32731  1   49 
+ENDSUBENT           48          0                                 32731  199999 
+SUBENT        32731002   20190101                             319232731  2    1 
+BIB                  6         11                                 32731  2    2 
+REACTION   (49-IN-115(N,INL)49-IN-115-M,,SIG)                     32731  2    3 
+DECAY-DATA (49-IN-115-M,,DG,336.4)                                32731  2    4 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         32731  2    5 
+DECAY-MON  (79-AU-198,,DG,411.8)                                  32731  2    6 
+METHOD     Neutron flux at 2.95 MeV was determined by using the   32731  2    7 
+            198Au activity, while the neutron flux at 3.94        32731  2    8 
+            and 5.24 MeV were determined by the 2.95 MeV 198Au    32731  2    9 
+            activity and the (d,n) angular differential cross     32731  2   10 
+            section ratio.                                        32731  2   11 
+MISC-COL   (MISC1) D(d,n)3He neutron outgoing angle               32731  2   12 
+           (MISC2) D(d,n)3He angular differential cross section   32731  2   13 
+ENDBIB              11          0                                 32731  2   14 
+COMMON               1          3                                 32731  2   15 
+EN-NRM                                                            32731  2   16 
+MEV                                                               32731  2   17 
+       2.95                                                       32731  2   18 
+ENDCOMMON            3          0                                 32731  2   19 
+DATA                 5          3                                 32731  2   20 
+EN         DATA       ERR-T      MISC1      MISC2                 32731  2   21 
+MEV        MB         MB         ADEG       MB/SR                 32731  2   22 
+       2.95      339.3        8.5        90.       5.15           32731  2   23 
+       3.94      313.2        7.8        60.       6.84           32731  2   24 
+       5.24      327.9        8.2         0.       43.3           32731  2   25 
+ENDDATA              5          0                                 32731  2   26 
+ENDSUBENT           25          0                                 32731  299999 
+ENDENTRY             2          0                                 3273199999999 
