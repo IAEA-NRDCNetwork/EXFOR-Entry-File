@@ -1,6 +1,6 @@
-ENTRY            A0326   20180604                             A090A0326  0    1 
-SUBENT        A0326001   20180604                             A090A0326  1    1 
-BIB                 15         53                                 A0326  1    2 
+ENTRY            A0326   20240819                             A116A0326  0    1 
+SUBENT        A0326001   20240819                             A116A0326  1    1 
+BIB                 15         55                                 A0326  1    2 
 TITLE      Cyclotron production of Xe-123 and high purity I-123:  A0326  1    3 
            a comparison of tellurium targets                      A0326  1    4 
 AUTHOR     (M.Guillaume,R.M.Lambrecht,A.P.Wolf)                   A0326  1    5 
@@ -30,7 +30,7 @@ ASSUMED    (ASSUM1,52-TE-123(HE3,3N)54-XE-123,,SIG)               A0326  1   27
 MONITOR    (29-CU-65(HE3,X)30-ZN-65,,SIG)                         A0326  1   29 
            (29-CU-63(A,X)30-ZN-65,,SIG)                           A0326  1   30 
 DECAY-MON  (30-ZN-65,,DG,1115.,0.49)                              A0326  1   31 
-COMMENT    /By authors/.the cross sections for 20-45 MeV He3 and  A0326  1   32 
+COMMENT    /By authors/ The cross sections for 20-45 MeV He3 and  A0326  1   32 
            alpha and the corresponding reactions-                 A0326  1   33 
            Cu-65(He3,2n+p)30-Zn-65 and Cu-63(alpha,n+p)30-Zn-65.  A0326  1   34 
            have been accurately measured.                         A0326  1   35 
@@ -45,7 +45,7 @@ COMMENT    /By authors/.the cross sections for 20-45 MeV He3 and  A0326  1   32
            reactions were 6.44 mci/muAhr and 7.16 mCi/muAhr       A0326  1   44 
            respectively, as compared to large 5 mCi/muAhr for     A0326  1   45 
            the Te-122(a,3n)Xe-123 reaction.                       A0326  1   46 
-REL-REF    (N,,R.M.Lambrecht+,J,RR,52,32,1972) Dynamic target.    A0326  1   47 
+REL-REF    (I,,R.M.Lambrecht+,J,RR,52,32,1972) Dynamic target.    A0326  1   47 
            (R,,R.L.Auble,J,NDS,7,363,1972)                        A0326  1   48 
 ADD-RES     Static and dynamic target were compared.              A0326  1   49 
 HISTORY    (19861212C)                                            A0326  1   50 
@@ -54,103 +54,169 @@ HISTORY    (19861212C)                                            A0326  1   50
            REACTION code was updated according to MEMO CP-D/933revA0326  1   53 
            in Subents 002-004. BIB was updated. DATA-ERR1 -> ERR-1A0326  1   54 
            DATA-ERR2 -> ERR-S. ERR-ANALYS was updated.            A0326  1   55 
-ENDBIB              53          0                                 A0326  1   56 
-COMMON               4          3                                 A0326  1   57 
-ASSUM1     ASSUM2     ERR-2      ERR-T                            A0326  1   58 
-MB         MB         PER-CENT   PER-CENT                         A0326  1   59 
-  178.       162.        2.         12.                           A0326  1   60 
-ENDCOMMON            3          0                                 A0326  1   61 
-ENDSUBENT           60          0                                 A0326  199999 
-SUBENT        A0326002   20180604                             A090A0326  2    1 
-BIB                  5         13                                 A0326  2    2 
-REACTION  1(52-TE-122(A,3N)54-XE-123,,TTY,,EOB/MSC)               A0326  2    3 
+           (20240819A) SD: Corrections in all Subents. Subents    A0326  1   56 
+           were split according to EXFOR rules.                   A0326  1   57 
+ENDBIB              55          0                                 A0326  1   58 
+COMMON               4          3                                 A0326  1   59 
+ASSUM1     ASSUM2     ERR-2      ERR-T                            A0326  1   60 
+MB         MB         PER-CENT   PER-CENT                         A0326  1   61 
+  178.       162.        2.         12.                           A0326  1   62 
+ENDCOMMON            3          0                                 A0326  1   63 
+ENDSUBENT           62          0                                 A0326  199999 
+SUBENT        A0326002   20240819                             A116A0326  2    1 
+BIB                  5         11                                 A0326  2    2 
+REACTION   (52-TE-122(A,3N)54-XE-123,,TTY,,EOB/MSC)               A0326  2    3 
             EOB yield without irradiation time specification      A0326  2    4 
-          3(52-TE-122(A,X)53-I-123,IND,TTY,,EOB/MSC)              A0326  2    5 
-            EOB yield without irradiation time specification      A0326  2    6 
-DECAY-DATA1(54-XE-123,2.1HR,DG,148.,0.486)                        A0326  2    7 
-          3(53-I-123,,DG,159.,0.83)                               A0326  2    8 
-SAMPLE     (52-TE-122,ENR=0.962) Static target isotopically       A0326  2    9 
-           enriched Te-122(96.2%),0.101 g/cm**2 thickness was usedA0326  2   10 
-STATUS     (TABLE) Tbl. 1 from ARI,26,703,1975                    A0326  2   11 
-HISTORY    (20180605A) SD: REACTION codes (2,4) were deleted (no  A0326  2   12 
-           EXFOR codes for such type of reactions). SF9=EXP       A0326  2   13 
-           deleted from all REACTION codes. SF8=EOB/MSC  added to A0326  2   14 
-           REACTION codes (1,3); SF3=2N+P->X in REACTION code (3).A0326  2   15 
-ENDBIB              13          0                                 A0326  2   16 
-COMMON               1          3                                 A0326  2   17 
-EN-ERR                                                            A0326  2   18 
-MEV                                                               A0326  2   19 
-    0.5                                                           A0326  2   20 
-ENDCOMMON            3          0                                 A0326  2   21 
-DATA                 3          1                                 A0326  2   22 
-EN         DATA      1DATA      3                                 A0326  2   23 
-MEV        MUCI/MUAHR MUCI/MUAHR                                  A0326  2   24 
-       43.2      4996.       690.                                 A0326  2   25 
-ENDDATA              3          0                                 A0326  2   26 
-ENDSUBENT           25          0                                 A0326  299999 
-SUBENT        A0326003   20180604                             A090A0326  3    1 
-BIB                  5         13                                 A0326  3    2 
-REACTION  1(52-TE-123(HE3,3N)54-XE-123,,TTY,,EOB/MSC)             A0326  3    3 
+DECAY-DATA (54-XE-123,2.1HR,DG,148.,0.486)                        A0326  2    5 
+SAMPLE     (52-TE-122,ENR=0.962) Static target isotopically       A0326  2    6 
+           enriched Te-122(96.2%),0.101 g/cm**2 thickness was usedA0326  2    7 
+STATUS     (TABLE,,M.Guillaume+,J,ARI,26,703,1975) Tbl. 1         A0326  2    8 
+HISTORY    (20180605A) SD: REACTION codes (2,4) were deleted (no  A0326  2    9 
+           EXFOR codes for such type of reactions). SF9=EXP       A0326  2   10 
+           deleted from all REACTION codes. SF8=EOB/MSC added to  A0326  2   11 
+           REACTION codes (1,3); SF3=2N+P->X in REACTION code (3).A0326  2   12 
+           (20240819A) SD: Subent was split (see Subent 005).     A0326  2   13 
+ENDBIB              11          0                                 A0326  2   14 
+NOCOMMON             0          0                                 A0326  2   15 
+DATA                 3          1                                 A0326  2   16 
+EN         EN-ERR     DATA                                        A0326  2   17 
+MEV        MEV        MUCI/MUAHR                                  A0326  2   18 
+    0.5          43.2      4996.                                  A0326  2   19 
+ENDDATA              3          0                                 A0326  2   20 
+ENDSUBENT           19          0                                 A0326  299999 
+SUBENT        A0326003   20240819                             A116A0326  3    1 
+BIB                  5         12                                 A0326  3    2 
+REACTION   (52-TE-123(HE3,X)53-I-123,,TTY,,EOB/MSC)               A0326  3    3 
             EOB yield without irradiation time specification      A0326  3    4 
-          3(52-TE-123(HE3,X)53-I-123,IND,TTY,,EOB/MSC)            A0326  3    5 
-            EOB yield without irradiation time specification      A0326  3    6 
-DECAY-DATA1(54-XE-123,2.1HR,DG,148.,0.486)                        A0326  3    7 
-          3(53-I-123,,DG,159.,0.83)                               A0326  3    8 
-SAMPLE     (52-TE-123,ENR=0.8745) Static target, isotopically     A0326  3    9 
-           enriched Te-123(87.45%),0.04 g/cm**2 thickness was usedA0326  3   10 
-STATUS     (TABLE) Tbl. 2 from ARI,26,703,1975                    A0326  3   11 
-HISTORY    (20180605A) SD: REACTION codes (2,4) were deleted (no  A0326  3   12 
-           EXFOR codes for such type of reactions). SF9=EXP       A0326  3   13 
-           deleted from all REACTION codes. SF8=EOB/MSC  added to A0326  3   14 
-           REACTION codes (1,3); SF3=2N+P->X in REACTION code (3).A0326  3   15 
-ENDBIB              13          0                                 A0326  3   16 
-COMMON               1          3                                 A0326  3   17 
-EN-ERR                                                            A0326  3   18 
-MEV                                                               A0326  3   19 
-    0.4                                                           A0326  3   20 
-ENDCOMMON            3          0                                 A0326  3   21 
-DATA                 3          5                                 A0326  3   22 
-EN         DATA      1DATA      3                                 A0326  3   23 
-MEV        MUCI/MUAHR MUCI/MUAHR                                  A0326  3   24 
-       24.3      1108.       133.                                 A0326  3   25 
-       27.9      1787.       247.                                 A0326  3   26 
-       32.0      1719.       334.                                 A0326  3   27 
-       35.2       777.       263.                                 A0326  3   28 
-       38.8       557.       203.                                 A0326  3   29 
-ENDDATA              7          0                                 A0326  3   30 
-ENDSUBENT           29          0                                 A0326  399999 
-SUBENT        A0326004   20180604                             A090A0326  4    1 
-BIB                  5         14                                 A0326  4    2 
-REACTION  1(52-TE-124(HE3,4N)54-XE-123,,TTY,,EOB/MSC)             A0326  4    3 
+DECAY-DATA (53-I-123,,DG,159.,0.83)                               A0326  3    5 
+SAMPLE     (52-TE-123,ENR=0.8745) Static target, isotopically     A0326  3    6 
+           enriched Te-123(87.45%),0.04 g/cm**2 thickness was usedA0326  3    7 
+STATUS     (TABLE,,M.Guillaume+,J,ARI,26,703,1975) Tbl. 2         A0326  3    8 
+HISTORY    (20180605A) SD: REACTION codes (2,4) were deleted (no  A0326  3    9 
+           EXFOR codes for such type of reactions). SF9=EXP       A0326  3   10 
+           deleted from all REACTION codes. SF8=EOB/MSC added to  A0326  3   11 
+           REACTION codes (1,3); SF3=2N+P->X in REACTION code (3).A0326  3   12 
+           (20240819A) SD: SF5=IND deleted from REACTION code.    A0326  3   13 
+           Subent was split (see Subent 006).                     A0326  3   14 
+ENDBIB              12          0                                 A0326  3   15 
+COMMON               1          3                                 A0326  3   16 
+EN-ERR                                                            A0326  3   17 
+MEV                                                               A0326  3   18 
+    0.4                                                           A0326  3   19 
+ENDCOMMON            3          0                                 A0326  3   20 
+DATA                 2          5                                 A0326  3   21 
+EN         DATA                                                   A0326  3   22 
+MEV        MUCI/MUAHR                                             A0326  3   23 
+       24.3      1108.                                            A0326  3   24 
+       27.9      1787.                                            A0326  3   25 
+       32.0      1719.                                            A0326  3   26 
+       35.2       777.                                            A0326  3   27 
+       38.8       557.                                            A0326  3   28 
+ENDDATA              7          0                                 A0326  3   29 
+ENDSUBENT           28          0                                 A0326  399999 
+SUBENT        A0326004   20240819                             A116A0326  4    1 
+BIB                  5         12                                 A0326  4    2 
+REACTION   (52-TE-124(HE3,4N)54-XE-123,,TTY,,EOB/MSC)             A0326  4    3 
             EOB yield without irradiation time specification      A0326  4    4 
-          3(52-TE-124(HE3,X)53-I-123,IND,TTY,,EOB/MSC)            A0326  4    5 
-            EOB yield without irradiation time specification      A0326  4    6 
-DECAY-DATA1(54-XE-123,2.1HR,DG,148.,0.486)                        A0326  4    7 
-          3(53-I-123,,DG,159.,0.83)                               A0326  4    8 
-SAMPLE     (52-TE-124,ENR=0.962) Static target isotopically       A0326  4    9 
-           enriched Te-124(96.2%),0.037 g/cm**2 thickness was usedA0326  4   10 
-STATUS     (TABLE) Tbl. 3 from ARI,26,703,1975                    A0326  4   11 
-HISTORY    (20180605A) SD: REACTION codes (2,4) were deleted (no  A0326  4   12 
-           EXFOR codes for such type of reactions). SF9=EXP       A0326  4   13 
-           deleted from all REACTION codes. SF8=EOB/MSC  added to A0326  4   14 
-           REACTION codes (1,3); SF3=3N+P -> X, SF5=IND added     A0326  4   15 
-           in REACTION code (3).                                  A0326  4   16 
-ENDBIB              14          0                                 A0326  4   17 
-COMMON               1          3                                 A0326  4   18 
-EN-ERR                                                            A0326  4   19 
-MEV                                                               A0326  4   20 
-    0.4                                                           A0326  4   21 
-ENDCOMMON            3          0                                 A0326  4   22 
-DATA                 3          7                                 A0326  4   23 
-EN         DATA      1DATA      3                                 A0326  4   24 
-MEV        MUCI/MUAHR MUCI/MUAHR                                  A0326  4   25 
-       31.5       226.        23.                                 A0326  4   26 
-       38.2       776.        35.                                 A0326  4   27 
-       40.8       625.        59.                                 A0326  4   28 
-       43.2      1123.        74.                                 A0326  4   29 
-       46.6      1674.       127.                                 A0326  4   30 
-       49.0      1161.       130.                                 A0326  4   31 
-       52.2       792.       117.                                 A0326  4   32 
-ENDDATA              9          0                                 A0326  4   33 
-ENDSUBENT           32          0                                 A0326  499999 
-ENDENTRY             4          0                                 A032699999999 
+DECAY-DATA (54-XE-123,2.1HR,DG,148.,0.486)                        A0326  4    5 
+SAMPLE     (52-TE-124,ENR=0.962) Static target isotopically       A0326  4    6 
+           enriched Te-124(96.2%),0.037 g/cm**2 thickness was usedA0326  4    7 
+STATUS     (TABLE,,M.Guillaume+,J,ARI,26,703,1975) Tbl. 3         A0326  4    8 
+HISTORY    (20180605A) SD: REACTION codes (2,4) were deleted (no  A0326  4    9 
+           EXFOR codes for such type of reactions). SF9=EXP       A0326  4   10 
+           deleted from all REACTION codes. SF8=EOB/MSC added to  A0326  4   11 
+           REACTION codes (1,3); SF3=3N+P -> X, SF5=IND added     A0326  4   12 
+           in REACTION code (3).                                  A0326  4   13 
+           (20240819A) SD: Subent was split (see Subent 007).     A0326  4   14 
+ENDBIB              12          0                                 A0326  4   15 
+COMMON               1          3                                 A0326  4   16 
+EN-ERR                                                            A0326  4   17 
+MEV                                                               A0326  4   18 
+    0.4                                                           A0326  4   19 
+ENDCOMMON            3          0                                 A0326  4   20 
+DATA                 2          7                                 A0326  4   21 
+EN         DATA                                                   A0326  4   22 
+MEV        MUCI/MUAHR                                             A0326  4   23 
+       31.5       226.                                            A0326  4   24 
+       38.2       776.                                            A0326  4   25 
+       40.8       625.                                            A0326  4   26 
+       43.2      1123.                                            A0326  4   27 
+       46.6      1674.                                            A0326  4   28 
+       49.0      1161.                                            A0326  4   29 
+       52.2       792.                                            A0326  4   30 
+ENDDATA              9          0                                 A0326  4   31 
+ENDSUBENT           30          0                                 A0326  499999 
+SUBENT        A0326005   20240819                             A116A0326  5    1 
+BIB                  5          7                                 A0326  5    2 
+REACTION   (52-TE-122(A,X)53-I-123,,TTY,,EOB/MSC)                 A0326  5    3 
+            EOB yield without irradiation time specification      A0326  5    4 
+DECAY-DATA (53-I-123,,DG,159.,0.83)                               A0326  5    5 
+SAMPLE     (52-TE-122,ENR=0.962) Static target isotopically       A0326  5    6 
+           enriched Te-122(96.2%),0.101 g/cm**2 thickness was usedA0326  5    7 
+STATUS     (TABLE,,M.Guillaume+,J,ARI,26,703,1975) Tbl. 1         A0326  5    8 
+HISTORY    (20180819T) SD: Part of Subent 002.                    A0326  5    9 
+ENDBIB               7          0                                 A0326  5   10 
+COMMON               1          3                                 A0326  5   11 
+EN-ERR                                                            A0326  5   12 
+MEV                                                               A0326  5   13 
+    0.5                                                           A0326  5   14 
+ENDCOMMON            3          0                                 A0326  5   15 
+DATA                 2          1                                 A0326  5   16 
+EN         DATA                                                   A0326  5   17 
+MEV        MUCI/MUAHR                                             A0326  5   18 
+       43.2       690.                                            A0326  5   19 
+ENDDATA              3          0                                 A0326  5   20 
+ENDSUBENT           19          0                                 A0326  599999 
+SUBENT        A0326006   20240819                             A116A0326  6    1 
+BIB                  5          7                                 A0326  6    2 
+REACTION   (52-TE-123(HE3,X)53-I-123,,TTY,,EOB/MSC)               A0326  6    3 
+            EOB yield without irradiation time specification      A0326  6    4 
+DECAY-DATA (53-I-123,,DG,159.,0.83)                               A0326  6    5 
+SAMPLE     (52-TE-123,ENR=0.8745) Static target, isotopically     A0326  6    6 
+           enriched Te-123(87.45%),0.04 g/cm**2 thickness was usedA0326  6    7 
+STATUS     (TABLE,,M.Guillaume+,J,ARI,26,703,1975) Tbl. 2         A0326  6    8 
+HISTORY    (20180819T) SD: Part of Subent 003.                    A0326  6    9 
+ENDBIB               7          0                                 A0326  6   10 
+COMMON               1          3                                 A0326  6   11 
+EN-ERR                                                            A0326  6   12 
+MEV                                                               A0326  6   13 
+    0.4                                                           A0326  6   14 
+ENDCOMMON            3          0                                 A0326  6   15 
+DATA                 2          5                                 A0326  6   16 
+EN         DATA                                                   A0326  6   17 
+MEV        MUCI/MUAHR                                             A0326  6   18 
+       24.3       133.                                            A0326  6   19 
+       27.9       247.                                            A0326  6   20 
+       32.0       334.                                            A0326  6   21 
+       35.2       263.                                            A0326  6   22 
+       38.8       203.                                            A0326  6   23 
+ENDDATA              7          0                                 A0326  6   24 
+ENDSUBENT           23          0                                 A0326  699999 
+SUBENT        A0326007   20240819                             A116A0326  7    1 
+BIB                  5          7                                 A0326  7    2 
+REACTION   (52-TE-124(HE3,X)53-I-123,,TTY,,EOB/MSC)               A0326  7    3 
+            EOB yield without irradiation time specification      A0326  7    4 
+DECAY-DATA (53-I-123,,DG,159.,0.83)                               A0326  7    5 
+SAMPLE     (52-TE-124,ENR=0.962) Static target isotopically       A0326  7    6 
+           enriched Te-124(96.2%),0.037 g/cm**2 thickness was usedA0326  7    7 
+STATUS     (TABLE,,M.Guillaume+,J,ARI,26,703,1975) Tbl. 3         A0326  7    8 
+HISTORY    (20180819T) SD: Part of Subent 004.                    A0326  7    9 
+ENDBIB               7          0                                 A0326  7   10 
+COMMON               1          3                                 A0326  7   11 
+EN-ERR                                                            A0326  7   12 
+MEV                                                               A0326  7   13 
+    0.4                                                           A0326  7   14 
+ENDCOMMON            3          0                                 A0326  7   15 
+DATA                 2          7                                 A0326  7   16 
+EN         DATA                                                   A0326  7   17 
+MEV        MUCI/MUAHR                                             A0326  7   18 
+       31.5        23.                                            A0326  7   19 
+       38.2        35.                                            A0326  7   20 
+       40.8        59.                                            A0326  7   21 
+       43.2        74.                                            A0326  7   22 
+       46.6       127.                                            A0326  7   23 
+       49.0       130.                                            A0326  7   24 
+       52.2       117.                                            A0326  7   25 
+ENDDATA              9          0                                 A0326  7   26 
+ENDSUBENT           25          0                                 A0326  799999 
+ENDENTRY             7          0                                 A032699999999 
