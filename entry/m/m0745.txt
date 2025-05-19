@@ -1,6 +1,6 @@
-ENTRY            M0745   20210519                             M112M0745  0    1 
-SUBENT        M0745001   20210519                             M112M0745  1    1 
-BIB                 12         22                                 M0745  1    2 
+ENTRY            M0745   20220114                             M117M0745  0    1 
+SUBENT        M0745001   20220114                             M117M0745  1    1 
+BIB                 12         24                                 M0745  1    2 
 TITLE      Photoneutron cross sections  for  112Sn,  118Sn,  and  M0745  1    3 
             120Sn.                                                M0745  1    4 
 AUTHOR     (Yu.I.Sorokin,B.A.Yur'ev)                              M0745  1    5 
@@ -12,7 +12,7 @@ FACILITY   (BETAT,4RUSMOS) Moscow State University betatron.      M0745  1   10
 INC-SOURCE (BRST)                                                 M0745  1   11 
 METHOD     (EXTB,SITA)                                            M0745  1   12 
 DETECTOR   (BF3) CHMO-5A counters with water moderator.           M0745  1   13 
-ANALYSIS   (UNFLD,PLA)  0.2  MeV step analysis Penfold-Leiss      M0745  1   14 
+ANALYSIS   (UNFLD,PLA) 0.2  MeV step analysis Penfold-Leiss       M0745  1   14 
             method. Special smoothing was applied.                M0745  1   15 
 REL-REF    (M,,V.N.Orlin,J,IZV,37,1107,1973) Cross section data   M0745  1   16 
             smoothing procedure.                                  M0745  1   17 
@@ -20,12 +20,14 @@ STATUS     (APRVD) by Yu.I.Sorokin.  Data from the Figs.  1 -  3  M0745  1   18
             have  been  compiled  at the Russia MSU SINP CDFE by  M0745  1   19 
             V.Varlamov.                                           M0745  1   20 
 HISTORY    (20080709C)                                            M0745  1   21 
-           (20081204C) DATA for SUBENTS 003 and 006 substited.    M0745  1   22 
+           (20081204C) DATA for SUBENTS 003 and 006 substituted.  M0745  1   22 
            (20210519A) Corrected by SD and VV: Corrections in     M0745  1   23 
             all SUBENTs, SAMPLE moved to SUBENTs.                 M0745  1   24 
-ENDBIB              22          0                                 M0745  1   25 
-NOCOMMON             0          0                                 M0745  1   26 
-ENDSUBENT           25          0                                 M0745  199999 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0745  1   25 
+            INT,,BRS in REACTION of SUBENTs 008-013.              M0745  1   26 
+ENDBIB              24          0                                 M0745  1   27 
+NOCOMMON             0          0                                 M0745  1   28 
+ENDSUBENT           27          0                                 M0745  199999 
 SUBENT        M0745002   20210519                             M112M0745  2    1 
 BIB                  5          7                                 M0745  2    2 
 REACTION   (50-SN-112(G,X)0-NN-1,,SIG,,BRS)                       M0745  2    3 
@@ -1181,75 +1183,81 @@ MEV        MB         MB                                          M0745  7   17
    27.1      54.48                                                M0745  7  200 
 ENDDATA            185          0                                 M0745  7  201 
 ENDSUBENT          200          0                                 M0745  799999 
-SUBENT        M0745008   20210519                             M112M0745  8    1 
-BIB                  4          7                                 M0745  8    2 
-REACTION   (50-SN-112(G,X)0-NN-1,,INT,,BRA)                       M0745  8    3 
+SUBENT        M0745008   20220114                             M117M0745  8    1 
+BIB                  4          9                                 M0745  8    2 
+REACTION   (50-SN-112(G,X)0-NN-1,,INT,,BRS)                       M0745  8    3 
             Sum: (gamma,n) + (gamma,np) + 2(gamma,2n)             M0745  8    4 
 ERR-ANALYS (DATA-ERR) Root-mean-square errors.                    M0745  8    5 
 STATUS     (TABLE) Data from Table II of Yad.Fiz.,20(1974)233.    M0745  8    6 
            (DEP,M0745002) Reaction cross section.                 M0745  8    7 
 HISTORY    (20210519A) Corrected by SD and VV: STATUS added.      M0745  8    8 
             ERR-ANALYS updated.                                   M0745  8    9 
-ENDBIB               7          0                                 M0745  8   10 
-COMMON               1          3                                 M0745  8   11 
-DATA-ERR                                                          M0745  8   12 
-PER-CENT                                                          M0745  8   13 
-  20.                                                             M0745  8   14 
-ENDCOMMON            3          0                                 M0745  8   15 
-DATA                 2          2                                 M0745  8   16 
-EN-MAX     DATA                                                   M0745  8   17 
-MEV        MB*MEV                                                 M0745  8   18 
-  20.        1500.                                                M0745  8   19 
-  27.        2230.                                                M0745  8   20 
-ENDDATA              4          0                                 M0745  8   21 
-ENDSUBENT           20          0                                 M0745  899999 
-SUBENT        M0745009   20210519                             M112M0745  9    1 
-BIB                  4          7                                 M0745  9    2 
-REACTION   (50-SN-118(G,X)0-NN-1,,INT,,BRA)                       M0745  9    3 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0745  8   10 
+            INT,,BRS.                                             M0745  8   11 
+ENDBIB               9          0                                 M0745  8   12 
+COMMON               1          3                                 M0745  8   13 
+DATA-ERR                                                          M0745  8   14 
+PER-CENT                                                          M0745  8   15 
+  20.                                                             M0745  8   16 
+ENDCOMMON            3          0                                 M0745  8   17 
+DATA                 2          2                                 M0745  8   18 
+EN-MAX     DATA                                                   M0745  8   19 
+MEV        MB*MEV                                                 M0745  8   20 
+  20.        1500.                                                M0745  8   21 
+  27.        2230.                                                M0745  8   22 
+ENDDATA              4          0                                 M0745  8   23 
+ENDSUBENT           22          0                                 M0745  899999 
+SUBENT        M0745009   20220114                             M117M0745  9    1 
+BIB                  4          9                                 M0745  9    2 
+REACTION   (50-SN-118(G,X)0-NN-1,,INT,,BRS)                       M0745  9    3 
             Sum: (gamma,n) + (gamma,np) + 2(gamma,2n)             M0745  9    4 
 ERR-ANALYS (DATA-ERR) Root-mean-square errors.                    M0745  9    5 
 STATUS     (TABLE) Data from Table II of Yad.Fiz.,20(1974)233.    M0745  9    6 
            (DEP,M0745003) Reaction cross section.                 M0745  9    7 
 HISTORY    (20210519A) Corrected by SD and VV: STATUS added.      M0745  9    8 
             ERR-ANALYS updated.                                   M0745  9    9 
-ENDBIB               7          0                                 M0745  9   10 
-COMMON               1          3                                 M0745  9   11 
-DATA-ERR                                                          M0745  9   12 
-PER-CENT                                                          M0745  9   13 
-  20.                                                             M0745  9   14 
-ENDCOMMON            3          0                                 M0745  9   15 
-DATA                 2          2                                 M0745  9   16 
-EN-MAX     DATA                                                   M0745  9   17 
-MEV        MB*MEV                                                 M0745  9   18 
-  20.        1740.                                                M0745  9   19 
-  27.        2460.                                                M0745  9   20 
-ENDDATA              4          0                                 M0745  9   21 
-ENDSUBENT           20          0                                 M0745  999999 
-SUBENT        M0745010   20210519                             M112M0745 10    1 
-BIB                  4          7                                 M0745 10    2 
-REACTION   (50-SN-120(G,X)0-NN-1,,INT,,BRA)                       M0745 10    3 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0745  9   10 
+            INT,,BRS.                                             M0745  9   11 
+ENDBIB               9          0                                 M0745  9   12 
+COMMON               1          3                                 M0745  9   13 
+DATA-ERR                                                          M0745  9   14 
+PER-CENT                                                          M0745  9   15 
+  20.                                                             M0745  9   16 
+ENDCOMMON            3          0                                 M0745  9   17 
+DATA                 2          2                                 M0745  9   18 
+EN-MAX     DATA                                                   M0745  9   19 
+MEV        MB*MEV                                                 M0745  9   20 
+  20.        1740.                                                M0745  9   21 
+  27.        2460.                                                M0745  9   22 
+ENDDATA              4          0                                 M0745  9   23 
+ENDSUBENT           22          0                                 M0745  999999 
+SUBENT        M0745010   20220114                             M117M0745 10    1 
+BIB                  4          9                                 M0745 10    2 
+REACTION   (50-SN-120(G,X)0-NN-1,,INT,,BRS)                       M0745 10    3 
             Sum: (gamma,n) + (gamma,np) + 2(gamma,2n)             M0745 10    4 
 ERR-ANALYS (DATA-ERR) Root-mean-square errors.                    M0745 10    5 
 STATUS     (TABLE) Data from Table II of Yad.Fiz.,20(1974)233.    M0745 10    6 
            (DEP,M0745004) Reaction cross section.                 M0745 10    7 
 HISTORY    (20210519A) Corrected by SD and VV: STATUS added.      M0745 10    8 
             ERR-ANALYS updated.                                   M0745 10    9 
-ENDBIB               7          0                                 M0745 10   10 
-COMMON               1          3                                 M0745 10   11 
-DATA-ERR                                                          M0745 10   12 
-PER-CENT                                                          M0745 10   13 
-  20.                                                             M0745 10   14 
-ENDCOMMON            3          0                                 M0745 10   15 
-DATA                 2          2                                 M0745 10   16 
-EN-MAX     DATA                                                   M0745 10   17 
-MEV        MB*MEV                                                 M0745 10   18 
-  20.        1960.                                                M0745 10   19 
-  27.        2690.                                                M0745 10   20 
-ENDDATA              4          0                                 M0745 10   21 
-ENDSUBENT           20          0                                 M0745 1099999 
-SUBENT        M0745011   20210519                             M112M0745 11    1 
-BIB                  5          9                                 M0745 11    2 
-REACTION   (50-SN-112(G,X)0-NN-1,UNW,INT,,BRA)                    M0745 11    3 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0745 10   10 
+            INT,,BRS.                                             M0745 10   11 
+ENDBIB               9          0                                 M0745 10   12 
+COMMON               1          3                                 M0745 10   13 
+DATA-ERR                                                          M0745 10   14 
+PER-CENT                                                          M0745 10   15 
+  20.                                                             M0745 10   16 
+ENDCOMMON            3          0                                 M0745 10   17 
+DATA                 2          2                                 M0745 10   18 
+EN-MAX     DATA                                                   M0745 10   19 
+MEV        MB*MEV                                                 M0745 10   20 
+  20.        1960.                                                M0745 10   21 
+  27.        2690.                                                M0745 10   22 
+ENDDATA              4          0                                 M0745 10   23 
+ENDSUBENT           22          0                                 M0745 1099999 
+SUBENT        M0745011   20220114                             M117M0745 11    1 
+BIB                  5         11                                 M0745 11    2 
+REACTION   (50-SN-112(G,X)0-NN-1,UNW,INT,,BRS)                    M0745 11    3 
             Sum: (gamma,n) + (gamma,np) + (gamma,2n)              M0745 11    4 
 COMMENT    Neutron multiplicity  correction  using   statistical  M0745 11    5 
             theory.                                               M0745 11    6 
@@ -1258,18 +1266,20 @@ STATUS     (TABLE) Data from Table II of Yad.Fiz.,20(1974)233.    M0745 11    8
            (DEP,M0745005) Reaction cross section.                 M0745 11    9 
 HISTORY    (20210519U) Corrected by SD and VV: REACTION (free     M0745 11   10 
             text), STATUS added.                                  M0745 11   11 
-ENDBIB               9          0                                 M0745 11   12 
-NOCOMMON             0          0                                 M0745 11   13 
-DATA                 2          2                                 M0745 11   14 
-EN-MAX     DATA                                                   M0745 11   15 
-MEV        MB*MEV                                                 M0745 11   16 
-  20.        1490.                                                M0745 11   17 
-  27.        1900.                                                M0745 11   18 
-ENDDATA              4          0                                 M0745 11   19 
-ENDSUBENT           18          0                                 M0745 1199999 
-SUBENT        M0745012   20210519                             M112M0745 12    1 
-BIB                  5          9                                 M0745 12    2 
-REACTION   (50-SN-118(G,X)0-NN-1,UNW,INT,,BRA)                    M0745 12    3 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0745 11   12 
+            INT,,BRS.                                             M0745 11   13 
+ENDBIB              11          0                                 M0745 11   14 
+NOCOMMON             0          0                                 M0745 11   15 
+DATA                 2          2                                 M0745 11   16 
+EN-MAX     DATA                                                   M0745 11   17 
+MEV        MB*MEV                                                 M0745 11   18 
+  20.        1490.                                                M0745 11   19 
+  27.        1900.                                                M0745 11   20 
+ENDDATA              4          0                                 M0745 11   21 
+ENDSUBENT           20          0                                 M0745 1199999 
+SUBENT        M0745012   20220114                             M117M0745 12    1 
+BIB                  5         11                                 M0745 12    2 
+REACTION   (50-SN-118(G,X)0-NN-1,UNW,INT,,BRS)                    M0745 12    3 
             Sum: (gamma,n) + (gamma,np) + (gamma,2n)              M0745 12    4 
 COMMENT    Neutron multiplicity  correction  using   statistical  M0745 12    5 
             theory.                                               M0745 12    6 
@@ -1278,18 +1288,20 @@ STATUS     (TABLE) Data from Table II of Yad.Fiz.,20(1974)233.    M0745 12    8
            (DEP,M0745006) Reaction cross section.                 M0745 12    9 
 HISTORY    (20210519U) Corrected by SD and VV: REACTION (free     M0745 12   10 
             text), STATUS added.                                  M0745 12   11 
-ENDBIB               9          0                                 M0745 12   12 
-NOCOMMON             0          0                                 M0745 12   13 
-DATA                 2          2                                 M0745 12   14 
-EN-MAX     DATA                                                   M0745 12   15 
-MEV        MB*MEV                                                 M0745 12   16 
-  20.        1530.                                                M0745 12   17 
-  27.        1920.                                                M0745 12   18 
-ENDDATA              4          0                                 M0745 12   19 
-ENDSUBENT           18          0                                 M0745 1299999 
-SUBENT        M0745013   20210519                             M112M0745 13    1 
-BIB                  5          9                                 M0745 13    2 
-REACTION   (50-SN-120(G,X)0-NN-1,UNW,INT,,BRA)                    M0745 13    3 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0745 12   12 
+            INT,,BRS.                                             M0745 12   13 
+ENDBIB              11          0                                 M0745 12   14 
+NOCOMMON             0          0                                 M0745 12   15 
+DATA                 2          2                                 M0745 12   16 
+EN-MAX     DATA                                                   M0745 12   17 
+MEV        MB*MEV                                                 M0745 12   18 
+  20.        1530.                                                M0745 12   19 
+  27.        1920.                                                M0745 12   20 
+ENDDATA              4          0                                 M0745 12   21 
+ENDSUBENT           20          0                                 M0745 1299999 
+SUBENT        M0745013   20220114                             M117M0745 13    1 
+BIB                  5         11                                 M0745 13    2 
+REACTION   (50-SN-120(G,X)0-NN-1,UNW,INT,,BRS)                    M0745 13    3 
             Sum: (gamma,n) + (gamma,np) + (gamma,2n)              M0745 13    4 
 COMMENT    Neutron multiplicity  correction  using   statistical  M0745 13    5 
             theory.                                               M0745 13    6 
@@ -1298,13 +1310,15 @@ STATUS     (TABLE) Data from Table II of Yad.Fiz.,20(1974)233.    M0745 13    8
            (DEP,M0745007) Reaction cross section.                 M0745 13    9 
 HISTORY    (20210519U) Corrected by SD and VV: REACTION (free     M0745 13   10 
             text), STATUS added.                                  M0745 13   11 
-ENDBIB               9          0                                 M0745 13   12 
-NOCOMMON             0          0                                 M0745 13   13 
-DATA                 2          2                                 M0745 13   14 
-EN-MAX     DATA                                                   M0745 13   15 
-MEV        MB*MEV                                                 M0745 13   16 
-  20.        1690.                                                M0745 13   17 
-  27.        2070.                                                M0745 13   18 
-ENDDATA              4          0                                 M0745 13   19 
-ENDSUBENT           18          0                                 M0745 1399999 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0745 13   12 
+            INT,,BRS.                                             M0745 13   13 
+ENDBIB              11          0                                 M0745 13   14 
+NOCOMMON             0          0                                 M0745 13   15 
+DATA                 2          2                                 M0745 13   16 
+EN-MAX     DATA                                                   M0745 13   17 
+MEV        MB*MEV                                                 M0745 13   18 
+  20.        1690.                                                M0745 13   19 
+  27.        2070.                                                M0745 13   20 
+ENDDATA              4          0                                 M0745 13   21 
+ENDSUBENT           20          0                                 M0745 1399999 
 ENDENTRY            13          0                                 M074599999999 

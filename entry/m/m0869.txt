@@ -1,6 +1,6 @@
-ENTRY            M0869   20210629                             M113M0869  0    1 
-SUBENT        M0869001   20210629                             M113M0869  1    1 
-BIB                 13         31                                 M0869  1    2 
+ENTRY            M0869   20220114                             M117M0869  0    1 
+SUBENT        M0869001   20220114                             M117M0869  1    1 
+BIB                 13         33                                 M0869  1    2 
 TITLE      Some photodisintegration  reactions  in  the  titanium M0869  1    3 
             isotopes.                                             M0869  1    4 
 AUTHOR     (T.R.Sherwood,W.E.Turchinetz)                          M0869  1    5 
@@ -32,9 +32,11 @@ HISTORY    (20140312C) Data compiled at the Russia MSI SINP CDFE  M0869  1   26
             all SUBENTs.                                          M0869  1   31 
            (20210629A) Corrected by SD and VV: Correction in      M0869  1   32 
             SUBENT 002.                                           M0869  1   33 
-ENDBIB              31          0                                 M0869  1   34 
-NOCOMMON             0          0                                 M0869  1   35 
-ENDSUBENT           34          0                                 M0869  199999 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0869  1   34 
+            INT,,BRS in REFERENCE of SUBENTs 008 - 011.           M0869  1   35 
+ENDBIB              33          0                                 M0869  1   36 
+NOCOMMON             0          0                                 M0869  1   37 
+ENDSUBENT           36          0                                 M0869  199999 
 SUBENT        M0869002   20210629                             M113M0869  2    1 
 BIB                  6         16                                 M0869  2    2 
 REACTION   ((22-TI-46(G,N)22-TI-45,,SIG,,BRS)+                    M0869  2    3 
@@ -402,10 +404,10 @@ MEV        MB                                                     M0869  7   22
    30.6        1.7                                                M0869  7   59 
 ENDDATA             39          0                                 M0869  7   60 
 ENDSUBENT           59          0                                 M0869  799999 
-SUBENT        M0869008   20210417                             M112M0869  8    1 
-BIB                  5         16                                 M0869  8    2 
-REACTION   ((22-TI-46(G,N)22-TI-45,,INT,,BRA)+                    M0869  8    3 
-           (22-TI-47(G,2N)22-TI-45,,INT,,RAB/BRA))                M0869  8    4 
+SUBENT        M0869008   20220114                             M117M0869  8    1 
+BIB                  5         18                                 M0869  8    2 
+REACTION   ((22-TI-46(G,N)22-TI-45,,INT,,BRS)+                    M0869  8    3 
+           (22-TI-47(G,2N)22-TI-45,,INT,,RAB/BRS))                M0869  8    4 
             Sum of reactions 46Ti(g,n) + 1.09 47Ti(g,2n).         M0869  8    5 
 SAMPLE     (22-TI-46,NAT=0.0799)                                  M0869  8    6 
            A sample of titanium with natural isotopic abundance   M0869  8    7 
@@ -420,21 +422,23 @@ ERR-ANALYS (DATA-ERR) Errors  quoted  arise  in  part  from  the  M0869  8   12
 STATUS     (CURVE) Data from Table 3 of Nucl.Phys.,29(1962)292.   M0869  8   16 
            (DEP,M0869002) Reaction cross section.                 M0869  8   17 
 HISTORY    (20210417U) Corrected by SD and VV: STATUS updated.    M0869  8   18 
-ENDBIB              16          0                                 M0869  8   19 
-COMMON               1          3                                 M0869  8   20 
-EN-MAX                                                            M0869  8   21 
-MEV                                                               M0869  8   22 
-  31.                                                             M0869  8   23 
-ENDCOMMON            3          0                                 M0869  8   24 
-DATA                 2          1                                 M0869  8   25 
-DATA       DATA-ERR                                               M0869  8   26 
-MB*MEV     MB*MEV                                                 M0869  8   27 
-  260.        34.                                                 M0869  8   28 
-ENDDATA              3          0                                 M0869  8   29 
-ENDSUBENT           28          0                                 M0869  899999 
-SUBENT        M0869009   20210417                             M112M0869  9    1 
-BIB                  5         12                                 M0869  9    2 
-REACTION   (22-TI-46(G,X)21-SC-44-G,,INT,,BRA)                    M0869  9    3 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0869  8   19 
+            INT,,BRS.                                             M0869  8   20 
+ENDBIB              18          0                                 M0869  8   21 
+COMMON               1          3                                 M0869  8   22 
+EN-MAX                                                            M0869  8   23 
+MEV                                                               M0869  8   24 
+  31.                                                             M0869  8   25 
+ENDCOMMON            3          0                                 M0869  8   26 
+DATA                 2          1                                 M0869  8   27 
+DATA       DATA-ERR                                               M0869  8   28 
+MB*MEV     MB*MEV                                                 M0869  8   29 
+  260.        34.                                                 M0869  8   30 
+ENDDATA              3          0                                 M0869  8   31 
+ENDSUBENT           30          0                                 M0869  899999 
+SUBENT        M0869009   20220114                             M117M0869  9    1 
+BIB                  5         14                                 M0869  9    2 
+REACTION   (22-TI-46(G,X)21-SC-44-G,,INT,,BRS)                    M0869  9    3 
             Reaction 46Ti(g,np)44Sc.                              M0869  9    4 
 SAMPLE     (22-TI-46,NAT=0.0799)                                  M0869  9    5 
            A sample of titanium with natural isotopic abundance   M0869  9    6 
@@ -446,22 +450,24 @@ ERR-ANALYS (DATA-ERR) Errors  quoted  arise  in  part  from  the  M0869  9    8
 STATUS     (CURVE) Data from Table 3 of Nucl.Phys.,29(1962)292.   M0869  9   12 
            (DEP,M0869003) Reaction cross section.                 M0869  9   13 
 HISTORY    (20210417U) Corrected by SD and VV: STATUS updated.    M0869  9   14 
-ENDBIB              12          0                                 M0869  9   15 
-COMMON               1          3                                 M0869  9   16 
-EN-MAX                                                            M0869  9   17 
-MEV                                                               M0869  9   18 
-  31.                                                             M0869  9   19 
-ENDCOMMON            3          0                                 M0869  9   20 
-DATA                 2          1                                 M0869  9   21 
-DATA       DATA-ERR                                               M0869  9   22 
-MB*MEV     MB*MEV                                                 M0869  9   23 
-    4.4         .7                                                M0869  9   24 
-ENDDATA              3          0                                 M0869  9   25 
-ENDSUBENT           24          0                                 M0869  999999 
-SUBENT        M0869010   20210417                             M112M0869 10    1 
-BIB                  5         16                                 M0869 10    2 
-REACTION   ((22-TI-47(G,P)21-SC-46,,INT,,BRA)+                    M0869 10    3 
-           (22-TI-48(G,X)21-SC-46,,INT,,RAB/BRA))                 M0869 10    4 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0869  9   15 
+            INT,,BRS.                                             M0869  9   16 
+ENDBIB              14          0                                 M0869  9   17 
+COMMON               1          3                                 M0869  9   18 
+EN-MAX                                                            M0869  9   19 
+MEV                                                               M0869  9   20 
+  31.                                                             M0869  9   21 
+ENDCOMMON            3          0                                 M0869  9   22 
+DATA                 2          1                                 M0869  9   23 
+DATA       DATA-ERR                                               M0869  9   24 
+MB*MEV     MB*MEV                                                 M0869  9   25 
+    4.4         .7                                                M0869  9   26 
+ENDDATA              3          0                                 M0869  9   27 
+ENDSUBENT           26          0                                 M0869  999999 
+SUBENT        M0869010   20220114                             M117M0869 10    1 
+BIB                  5         18                                 M0869 10    2 
+REACTION   ((22-TI-47(G,P)21-SC-46,,INT,,BRS)+                    M0869 10    3 
+           (22-TI-48(G,X)21-SC-46,,INT,,RAB/BRS))                 M0869 10    4 
             Sum of reactions 47Ti(g,p) + 10.01 48Ti(g,np).        M0869 10    5 
 SAMPLE     (22-TI-47,NAT=0.0732)                                  M0869 10    6 
            A sample of titanium with natural isotopic abundance   M0869 10    7 
@@ -476,22 +482,24 @@ ERR-ANALYS (DATA-ERR) Errors  quoted  arise  in  part  from  the  M0869 10   12
 STATUS     (CURVE) Data from Table 3 of Nucl.Phys.,29(1962)292.   M0869 10   16 
            (DEP,M0869004) Reaction cross section.                 M0869 10   17 
 HISTORY    (20210417U) Corrected by SD and VV: STATUS updated.    M0869 10   18 
-ENDBIB              16          0                                 M0869 10   19 
-COMMON               1          3                                 M0869 10   20 
-EN-MAX                                                            M0869 10   21 
-MEV                                                               M0869 10   22 
-  31.                                                             M0869 10   23 
-ENDCOMMON            3          0                                 M0869 10   24 
-DATA                 2          1                                 M0869 10   25 
-DATA       DATA-ERR                                               M0869 10   26 
-MB*MEV     MB*MEV                                                 M0869 10   27 
-  246.        38.                                                 M0869 10   28 
-ENDDATA              3          0                                 M0869 10   29 
-ENDSUBENT           28          0                                 M0869 1099999 
-SUBENT        M0869011   20210417                             M112M0869 11    1 
-BIB                  5         17                                 M0869 11    2 
-REACTION   ((22-TI-48(G,P)21-SC-47,,INT,,BRA)+                    M0869 11    3 
-           (22-TI-49(G,X)21-SC-47,,INT,,RAB/BRA))                 M0869 11    4 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0869 10   19 
+            INT,,BRS.                                             M0869 10   20 
+ENDBIB              18          0                                 M0869 10   21 
+COMMON               1          3                                 M0869 10   22 
+EN-MAX                                                            M0869 10   23 
+MEV                                                               M0869 10   24 
+  31.                                                             M0869 10   25 
+ENDCOMMON            3          0                                 M0869 10   26 
+DATA                 2          1                                 M0869 10   27 
+DATA       DATA-ERR                                               M0869 10   28 
+MB*MEV     MB*MEV                                                 M0869 10   29 
+  246.        38.                                                 M0869 10   30 
+ENDDATA              3          0                                 M0869 10   31 
+ENDSUBENT           30          0                                 M0869 1099999 
+SUBENT        M0869011   20220114                             M117M0869 11    1 
+BIB                  5         19                                 M0869 11    2 
+REACTION   ((22-TI-48(G,P)21-SC-47,,INT,,BRS)+                    M0869 11    3 
+           (22-TI-49(G,X)21-SC-47,,INT,,RAB/BRS))                 M0869 11    4 
             Sum of reactions 48Ti(g,p) + 0.07 49Ti(g,np).         M0869 11    5 
 SAMPLE     (22-TI-48,NAT=0.7399)                                  M0869 11    6 
            A sample of titanium with natural isotopic abundance   M0869 11    7 
@@ -507,18 +515,20 @@ STATUS     (CURVE) Data from Table 3 of Nucl.Phys.,29(1962)292.   M0869 11   16
            (DEP,M0869005) Reaction cross section.                 M0869 11   17 
 HISTORY    (20210417A) Corrected by SD and VV: Isotope in SAMPLE  M0869 11   18 
             corrected, STATUS updated.                            M0869 11   19 
-ENDBIB              17          0                                 M0869 11   20 
-COMMON               1          3                                 M0869 11   21 
-EN-MAX                                                            M0869 11   22 
-MEV                                                               M0869 11   23 
-  31.                                                             M0869 11   24 
-ENDCOMMON            3          0                                 M0869 11   25 
-DATA                 2          1                                 M0869 11   26 
-DATA       DATA-ERR                                               M0869 11   27 
-MB*MEV     MB*MEV                                                 M0869 11   28 
-  217.        32.                                                 M0869 11   29 
-ENDDATA              3          0                                 M0869 11   30 
-ENDSUBENT           29          0                                 M0869 1199999 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0869 11   20 
+            INT,,BRS.                                             M0869 11   21 
+ENDBIB              19          0                                 M0869 11   22 
+COMMON               1          3                                 M0869 11   23 
+EN-MAX                                                            M0869 11   24 
+MEV                                                               M0869 11   25 
+  31.                                                             M0869 11   26 
+ENDCOMMON            3          0                                 M0869 11   27 
+DATA                 2          1                                 M0869 11   28 
+DATA       DATA-ERR                                               M0869 11   29 
+MB*MEV     MB*MEV                                                 M0869 11   30 
+  217.        32.                                                 M0869 11   31 
+ENDDATA              3          0                                 M0869 11   32 
+ENDSUBENT           31          0                                 M0869 1199999 
 SUBENT        M0869012   20190518                             M100M0869 12    1 
 BIB                  6         17                                 M0869 12    2 
 REACTION   ((22-TI-49(G,P)21-SC-48,,INT,,BRA)+                    M0869 12    3 

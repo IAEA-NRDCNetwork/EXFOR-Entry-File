@@ -1,8 +1,8 @@
-ENTRY            M0602   20160202                             M081M0602  0    1 
-SUBENT        M0602001   20160202                             M081M0602  1    1 
-BIB                 13         27                                 M0602  1    2 
+ENTRY            M0602   20220114                             M117M0602  0    1 
+SUBENT        M0602001   20220114                             M117M0602  1    1 
+BIB                 13         30                                 M0602  1    2 
 TITLE      The (gamma,p) cross section in 208Pb.                  M0602  1    3 
-AUTHOR     (H.Dahmen,F.Dreyer,J.Staube,H.H.Thies)                 M0602  1    4 
+AUTHOR     (H.Dahmen,F.Dreyer,J.Staude,H.H.Thies)                 M0602  1    4 
 INSTITUTE  (2GERHEI)                                              M0602  1    5 
 REFERENCE  (J,NP/A,164,140,1971)                                  M0602  1    6 
 FACILITY   (BETAT,2GERHEI) Heidelberg 33 MeV betatron.            M0602  1    7 
@@ -28,84 +28,91 @@ HISTORY    (20000324C) Data were compiled at the Russia MAU SINP  M0602  1   26
             CDFE by V.Varlamov.                                   M0602  1   27 
            (20160202A) Corrected by V.Varlamov: METHOD,           M0602  1   28 
             ERR-ANALYS, REACTION, Lowercase.                      M0602  1   29 
-ENDBIB              27          0                                 M0602  1   30 
-NOCOMMON             0          0                                 M0602  1   31 
-ENDSUBENT           30          0                                 M0602  199999 
-SUBENT        M0602002   20160202                             M081M0602  2    1 
-BIB                  5          9                                 M0602  2    2 
+           (20220114A) Corrected by V.Varlamov: N+P -> X in       M0602  1   30 
+            REACTION of SUBENT 002, INT,,BRA -> INT,,BRS in       M0602  1   31 
+            REACTION of SUBENT 003, STATUS,                       M0602  1   32 
+ENDBIB              30          0                                 M0602  1   33 
+NOCOMMON             0          0                                 M0602  1   34 
+ENDSUBENT           33          0                                 M0602  199999 
+SUBENT        M0602002   20220114                             M117M0602  2    1 
+BIB                  5         10                                 M0602  2    2 
 REACTION   ((82-PB-208(G,P)81-TL-207,,SIG,,BRS)+                  M0602  2    3 
-           (82-PB-208(G,N+P)81-TL-206,,SIG,,BRS))                 M0602  2    4 
+           (82-PB-208(G,X)81-TL-206,,SIG,,BRS))                   M0602  2    4 
 DECAY-DATA (81-TL-207-G,4.79MIN,B-)                               M0602  2    5 
            (81-TL-206-G,4.30MIN,B-)                               M0602  2    6 
 COMMENT    The 206Tl activity could not be separated from 207Tl   M0602  2    7 
             activity at energies above 25 MeV.                    M0602  2    8 
-STATUS     (CURVE) Data from Fig. 2.                              M0602  2    9 
+STATUS     (CURVE) Data from Fig. 2 of Nucl.Phys.,164(1971)140.   M0602  2    9 
 HISTORY    (20160202A) Corrected by V.Varlamov: REACTION,         M0602  2   10 
             DECAY-DATA, COMMENT.                                  M0602  2   11 
-ENDBIB               9          0                                 M0602  2   12 
-NOCOMMON             0          0                                 M0602  2   13 
-DATA                 3         41                                 M0602  2   14 
-EN         DATA       DATA-ERR                                    M0602  2   15 
-MEV        MB         MB                                          M0602  2   16 
-    12.52       0.06       0.05                                   M0602  2   17 
-    12.99       0.08       0.05                                   M0602  2   18 
-    13.56      -0.04       0.06                                   M0602  2   19 
-    13.86      -0.08       0.09                                   M0602  2   20 
-    14.33       0.29       0.12                                   M0602  2   21 
-    14.56       0.11       0.12                                   M0602  2   22 
-    14.85      -0.18       0.13                                   M0602  2   23 
-    15.08       0.00       0.12                                   M0602  2   24 
-    15.44      -0.14       0.13                                   M0602  2   25 
-    15.75      -0.15       0.12                                   M0602  2   26 
-    16.04       0.36       0.12                                   M0602  2   27 
-    16.39       0.17       0.12                                   M0602  2   28 
-    16.72      -0.03       0.12                                   M0602  2   29 
-    17.06       0.30       0.12                                   M0602  2   30 
-    17.45       0.16       0.11                                   M0602  2   31 
-    17.76       0.13       0.13                                   M0602  2   32 
-    18.10       0.46       0.13                                   M0602  2   33 
-    18.51       0.39       0.15                                   M0602  2   34 
-    18.92       0.50       0.16                                   M0602  2   35 
-    19.34       0.75       0.15                                   M0602  2   36 
-    19.77       0.93       0.15                                   M0602  2   37 
-    20.18       0.96       0.16                                   M0602  2   38 
-    20.61       0.94       0.16                                   M0602  2   39 
-    21.13       1.14       0.16                                   M0602  2   40 
-    21.60       1.12       0.15                                   M0602  2   41 
-    22.17       1.50       0.15                                   M0602  2   42 
-    22.67       1.96       0.13                                   M0602  2   43 
-    23.18       1.83       0.16                                   M0602  2   44 
-    23.75       1.43       0.18                                   M0602  2   45 
-    24.33       1.80       0.14                                   M0602  2   46 
-    24.95       3.06       0.16                                   M0602  2   47 
-    25.60       3.21       0.18                                   M0602  2   48 
-    26.21       1.94       0.17                                   M0602  2   49 
-    26.87       1.46       0.17                                   M0602  2   50 
-    27.63       2.00       0.17                                   M0602  2   51 
-    28.31       1.84       0.17                                   M0602  2   52 
-    29.04       1.89       0.16                                   M0602  2   53 
-    29.80       2.40       0.16                                   M0602  2   54 
-    30.64       1.94       0.15                                   M0602  2   55 
-    31.47       1.78       0.16                                   M0602  2   56 
-    32.31       2.25       0.17                                   M0602  2   57 
-ENDDATA             43          0                                 M0602  2   58 
-ENDSUBENT           57          0                                 M0602  299999 
-SUBENT        M0602003   20160202                             M081M0602  3    1 
-BIB                  4          8                                 M0602  3    2 
-REACTION   ((82-PB-208(G,P)81-TL-207,,INT,,BRA)+                  M0602  3    3 
-           (82-PB-208(G,X)81-TL-206,,INT,,BRA))                   M0602  3    4 
+           (20220114A) Corrected by V.Varlamov: REACTION, STATUS. M0602  2   12 
+ENDBIB              10          0                                 M0602  2   13 
+NOCOMMON             0          0                                 M0602  2   14 
+DATA                 3         41                                 M0602  2   15 
+EN         DATA       DATA-ERR                                    M0602  2   16 
+MEV        MB         MB                                          M0602  2   17 
+    12.52       0.06       0.05                                   M0602  2   18 
+    12.99       0.08       0.05                                   M0602  2   19 
+    13.56      -0.04       0.06                                   M0602  2   20 
+    13.86      -0.08       0.09                                   M0602  2   21 
+    14.33       0.29       0.12                                   M0602  2   22 
+    14.56       0.11       0.12                                   M0602  2   23 
+    14.85      -0.18       0.13                                   M0602  2   24 
+    15.08       0.00       0.12                                   M0602  2   25 
+    15.44      -0.14       0.13                                   M0602  2   26 
+    15.75      -0.15       0.12                                   M0602  2   27 
+    16.04       0.36       0.12                                   M0602  2   28 
+    16.39       0.17       0.12                                   M0602  2   29 
+    16.72      -0.03       0.12                                   M0602  2   30 
+    17.06       0.30       0.12                                   M0602  2   31 
+    17.45       0.16       0.11                                   M0602  2   32 
+    17.76       0.13       0.13                                   M0602  2   33 
+    18.10       0.46       0.13                                   M0602  2   34 
+    18.51       0.39       0.15                                   M0602  2   35 
+    18.92       0.50       0.16                                   M0602  2   36 
+    19.34       0.75       0.15                                   M0602  2   37 
+    19.77       0.93       0.15                                   M0602  2   38 
+    20.18       0.96       0.16                                   M0602  2   39 
+    20.61       0.94       0.16                                   M0602  2   40 
+    21.13       1.14       0.16                                   M0602  2   41 
+    21.60       1.12       0.15                                   M0602  2   42 
+    22.17       1.50       0.15                                   M0602  2   43 
+    22.67       1.96       0.13                                   M0602  2   44 
+    23.18       1.83       0.16                                   M0602  2   45 
+    23.75       1.43       0.18                                   M0602  2   46 
+    24.33       1.80       0.14                                   M0602  2   47 
+    24.95       3.06       0.16                                   M0602  2   48 
+    25.60       3.21       0.18                                   M0602  2   49 
+    26.21       1.94       0.17                                   M0602  2   50 
+    26.87       1.46       0.17                                   M0602  2   51 
+    27.63       2.00       0.17                                   M0602  2   52 
+    28.31       1.84       0.17                                   M0602  2   53 
+    29.04       1.89       0.16                                   M0602  2   54 
+    29.80       2.40       0.16                                   M0602  2   55 
+    30.64       1.94       0.15                                   M0602  2   56 
+    31.47       1.78       0.16                                   M0602  2   57 
+    32.31       2.25       0.17                                   M0602  2   58 
+ENDDATA             43          0                                 M0602  2   59 
+ENDSUBENT           58          0                                 M0602  299999 
+SUBENT        M0602003   20220114                             M117M0602  3    1 
+BIB                  4         11                                 M0602  3    2 
+REACTION   ((82-PB-208(G,P)81-TL-207,,INT,,BRS)+                  M0602  3    3 
+           (82-PB-208(G,X)81-TL-206,,INT,,BRS))                   M0602  3    4 
 DECAY-DATA (81-TL-207-G,4.79MIN,B-)                               M0602  3    5 
            (81-TL-206-G,4.30MIN,B-)                               M0602  3    6 
 STATUS     (DEP,M0602003) Reaction cross section.                 M0602  3    7 
-           (TABLE) Data from the text of Abstract.                M0602  3    8 
-HISTORY    (20160202A) Corrected by V.Varlamov: REACTION,         M0602  3    9 
-            STATUS. SF3=N+P -> X in REACTION code.                M0602  3   10 
-ENDBIB               8          0                                 M0602  3   11 
-NOCOMMON             0          0                                 M0602  3   12 
-DATA                 4          1                                 M0602  3   13 
-EN-MIN     EN-MAX     DATA       DATA-ERR                         M0602  3   14 
-MEV        MEV        MB*MEV     MB*MEV                           M0602  3   15 
-    14.        33.        26.8        .4                          M0602  3   16 
-ENDDATA              3          0                                 M0602  3   17 
-ENDSUBENT           16          0                                 M0602  399999 
+           (TABLE) Data from the text of Abstract of              M0602  3    8 
+            Nucl.Phys.,164(1971)140.                              M0602  3    9 
+HISTORY    (20160202A) Corrected by V.Varlamov: REACTION,         M0602  3   10 
+            STATUS. SF3=N+P -> X in REACTION code.                M0602  3   11 
+           (20220114A) Corrected by V.Varlamov: INT,,BRA ->       M0602  3   12 
+            INT,,BRS, STATUS.                                     M0602  3   13 
+ENDBIB              11          0                                 M0602  3   14 
+NOCOMMON             0          0                                 M0602  3   15 
+DATA                 4          1                                 M0602  3   16 
+EN-MIN     EN-MAX     DATA       DATA-ERR                         M0602  3   17 
+MEV        MEV        MB*MEV     MB*MEV                           M0602  3   18 
+    14.        33.        26.8        .4                          M0602  3   19 
+ENDDATA              3          0                                 M0602  3   20 
+ENDSUBENT           19          0                                 M0602  399999 
 ENDENTRY             3          0                                 M060299999999 
