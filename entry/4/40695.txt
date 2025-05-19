@@ -1,46 +1,94 @@
-ENTRY            40695   19840320                             00004069500000001 
-SUBENT        40695001   19840320                             00004069500100001 
-BIB                  7          9                                 4069500100002 
-INSTITUTE  (4CCPCCP)                                              4069500100003 
-REFERENCE  (J,AE,20,60,66)                                        4069500100004 
-           (J,SJA,20,75,66)                                       4069500100005 
-AUTHOR     (L.N.YUROVA,A.V.BUSHUEV)                               4069500100006 
-TITLE      USE OF GAMMA SPECTROMETRY TO MEASURE THE RATIO BETWEEN 4069500100007 
-           THE CAPTURE AND FISSION CROSS SECTIONS OF U238.        4069500100008 
-FACILITY   (REAC) REACTOR BR-1                                    4069500100009 
-STATUS     (SCSRS)                                                4069500100010 
-HISTORY    (840213T) CONVERTED FROM ENTRY 80091                   4069500100011 
-ENDBIB               9          0                                 4069500100012 
-NOCOMMON             0          0                                 4069500100013 
-ENDSUBENT           12          0                                 4069500199999 
-SUBENT        40695002   19840320                             00004069500200001 
-BIB                  6          6                                 4069500200002 
-REACTION   (92-U-238(N,ABS),,ALF,,MXW)                            4069500200003 
-INC-SPECT   THERMAL SPECTRUM                                      4069500200004 
-DETECTOR   (SCIN)     GAS SCINTILLATION COUNTER                   4069500200005 
-DECAY-DATA (92-U-239,,DG,74.,0.435)                               4069500200006 
-MONITOR    (92-U-238(N,F)57-LA-140,CUM,FY)                        4069500200007 
-DECAY-MON  (57-LA-140,,DG,1600.,0.94)                             4069500200008 
-ENDBIB               6          0                                 4069500200009 
-NOCOMMON             0          0                                 4069500200010 
-DATA                 5          1                                 4069500200011 
-EN-DUMMY   DATA       DATA-ERR   MONIT      MONIT-ERR             4069500200012 
-MEV        NO-DIM     NO-DIM     PC/FIS     PER-CENT              4069500200013 
- 2.5300E-08 4.4000E-01 4.0000E-02 5.8000E+00 4.0000E-01           4069500200014 
-ENDDATA              3          0                                 4069500200015 
-ENDSUBENT           14          0                                 4069500299999 
-SUBENT        40695003   19840320                             00004069500300001 
-BIB                  4          4                                 4069500300002 
-REACTION   (92-U-238(N,ABS),,ALF,,MXW)                            4069500300003 
-INC-SPECT   THERMAL SPECTRUM                                      4069500300004 
-DETECTOR   (SCIN)     GAS SCINTILLATION COUNTER                   4069500300005 
-MONITOR    (92-U-235(N,F),,SIG)                                   4069500300006 
-ENDBIB               4          0                                 4069500300007 
-NOCOMMON             0          0                                 4069500300008 
-DATA                 3          1                                 4069500300009 
-EN-DUMMY   DATA       DATA-ERR                                    4069500300010 
-MEV        NO-DIM     NO-DIM                                      4069500300011 
- 2.5300E-08 4.2000E-01 3.0000E-02                                 4069500300012 
-ENDDATA              3          0                                 4069500300013 
-ENDSUBENT           12          0                                 4069500399999 
+ENTRY            40695   20231016                             421540695  0    1 
+SUBENT        40695001   20231016                             421540695  1    1 
+BIB                  8         20                                 40695  1    2 
+TITLE      Use of gamma spectrometry to measure the ratio between 40695  1    3 
+           the capture and fission cross sections of U238         40695  1    4 
+AUTHOR     (L.N.Yurova,A.V.Bushuev)                               40695  1    5 
+REFERENCE  (J,SJA,20,75,1966) Engl.translation of AE,20,60,1966   40695  1    6 
+           (J,AE,20,60,1966) Issue 1.                             40695  1    7 
+INSTITUTE  (4RUSMIF,4RUSFEI)                                      40695  1    8 
+FACILITY   (REAC,4RUSFEI) Reactor BR-1                            40695  1    9 
+CORRECTION  For backgrounds.                                      40695  1   10 
+            For spectrometer detection efficiency.                40695  1   11 
+            For gamma-ray absorption in samples.                  40695  1   12 
+ERR-ANALYS (ERR-S) Statistical uncertainty - 0.5 % .              40695  1   13 
+           (DATA-ERR) Type of uncertainty is not explained in the 40695  1   14 
+           article.                                               40695  1   15 
+HISTORY    (19840213T) Converted from ENTRY 80091                 40695  1   16 
+           (20231016A) BIB information was updated.               40695  1   17 
+            Upper -> lower case correction.                       40695  1   18 
+            Dates were corrected for 4-digits year.               40695  1   19 
+            4CCPCCP -> 4RUSMIF.                                   40695  1   20 
+            EN-DUMMY : 0.0253 eV -> 1.MeV (fast neutrons of BR-1),40695  1   21 
+            MXW -> FST.                                           40695  1   22 
+ENDBIB              20          0                                 40695  1   23 
+COMMON               1          3                                 40695  1   24 
+ERR-S                                                             40695  1   25 
+PER-CENT                                                          40695  1   26 
+ 0.5                                                              40695  1   27 
+ENDCOMMON            3          0                                 40695  1   28 
+ENDSUBENT           27          0                                 40695  199999 
+SUBENT        40695002   20231016                             421540695  2    1 
+BIB                 10         15                                 40695  2    2 
+REACTION   (92-U-238(N,ABS),,ALF,,FST)                            40695  2    3 
+INC-SPECT   Fast neutrons of BR-1 reactor.                        40695  2    4 
+SAMPLE      4.7 mg/mm2 thickness.                                 40695  2    5 
+DETECTOR   (SCIN) Scintillation spectrometer with NaI(Tl) crystal 40695  2    6 
+           and 100-channel pulse amplitude analyzer.              40695  2    7 
+           Cs-137,Au-198,Hg-203, Ce-144+Pr-144, Na-22 sources were40695  2    8 
+           used for calibration - photo-efficiency versus         40695  2    9 
+           gamma-energy.                                          40695  2   10 
+DECAY-DATA (92-U-239,,DG,74.,0.435) 43.5 +- 3.0 %                 40695  2   11 
+           (93-NP-239,,DG,106.,0.504) 50.4 +- 2.5 %               40695  2   12 
+MONITOR    (92-U-238(N,F)57-LA-140,CUM,FY)                        40695  2   13 
+DECAY-MON  (57-LA-140,,DG,1600.,0.94)                             40695  2   14 
+ANALYSIS    See formula (1) in the article                        40695  2   15 
+STATUS     (TABLE,,L.N.Yurova+,J,SJA,20,75,1966) Table of page 76 40695  2   16 
+HISTORY    (20231016A) MONIT-ERR: PER-CENT -> PC/FIS              40695  2   17 
+ENDBIB              15          0                                 40695  2   18 
+NOCOMMON             0          0                                 40695  2   19 
+DATA                 5          1                                 40695  2   20 
+EN-DUMMY   DATA       DATA-ERR   MONIT      MONIT-ERR             40695  2   21 
+MEV        NO-DIM     NO-DIM     PC/FIS     PC/FIS                40695  2   22 
+ 1.0        0.44       0.04       5.8        0.4                  40695  2   23 
+ENDDATA              3          0                                 40695  2   24 
+ENDSUBENT           23          0                                 40695  299999 
+SUBENT        40695003   20231016                             421540695  3    1 
+BIB                  8         24                                 40695  3    2 
+REACTION   (92-U-238(N,ABS),,ALF,,FST)                            40695  3    3 
+INC-SPECT   Fast neutron flux of BR-1 reactor.                    40695  3    4 
+            Thermal spectrum - for normalization.                 40695  3    5 
+SAMPLE      Natural. U-235 content 0.726 %.                       40695  3    6 
+DETECTOR   (SCIN) Scintillation spectrometer with NaI(Tl) crystal 40695  3    7 
+           and 100-channel pulse amplitude analyzer.              40695  3    8 
+           Cs-137,Au-198,Hg-203, Ce-144+Pr-144, Na-22 sources were40695  3    9 
+           used for calibration - photo-efficiency versus         40695  3   10 
+           gamma-energy.                                          40695  3   11 
+MONITOR    (92-U-235(N,F),,SIG,,MXW) Averaged over Maxwellian     40695  3   12 
+           velocity spectrum of thermal neutrons.                 40695  3   13 
+           (92-U-238(N,G)92-U-239,,SIG,,MXW) Averaged over        40695  3   14 
+           Maxwellian velocity spectrum of thermal neutrons.      40695  3   15 
+           (92-U-238(N,F)57-LA-140,CUM,FY,,MXW)                   40695  3   16 
+           For thermal neutrons.                                  40695  3   17 
+           (92-U-235(N,F)57-LA-140,CUM,FY,,MXW)                   40695  3   18 
+           For thermal neutrons.                                  40695  3   19 
+           . Monitor values are not given in the article.         40695  3   20 
+DECAY-MON  (57-LA-140,,DG,1600.,0.94)                             40695  3   21 
+ANALYSIS    See formula (2) in the article.                       40695  3   22 
+            La-140 yields for fission of U-235 and U-238 by       40695  3   23 
+           neutrons with energies up to 10 MeV are practically    40695  3   24 
+           constant.                                              40695  3   25 
+STATUS     (TABLE,,L.N.Yurova+,J,SJA,20,75,1966) Table of page 76 40695  3   26 
+ENDBIB              24          0                                 40695  3   27 
+COMMON               1          3                                 40695  3   28 
+EN-NRM                                                            40695  3   29 
+EV                                                                40695  3   30 
+ 0.0253                                                           40695  3   31 
+ENDCOMMON            3          0                                 40695  3   32 
+DATA                 3          1                                 40695  3   33 
+EN-DUMMY   DATA       DATA-ERR                                    40695  3   34 
+MEV        NO-DIM     NO-DIM                                      40695  3   35 
+ 1.0        0.42       0.03                                       40695  3   36 
+ENDDATA              3          0                                 40695  3   37 
+ENDSUBENT           36          0                                 40695  399999 
 ENDENTRY             3          0                                 4069599999999 

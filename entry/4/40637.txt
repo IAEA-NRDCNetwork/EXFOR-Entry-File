@@ -1,39 +1,67 @@
-ENTRY            40637   19850329                             00004063700000001 
-SUBENT        40637001   19850329                             00004063700100001 
-BIB                 12         17                                 4063700100002 
-INSTITUTE  (4CCPCCP)                                              4063700100003 
-REFERENCE  (J,AE,8,360,60)                                        4063700100004 
-           (J,SJA,8,310,61)                                       4063700100005 
-AUTHOR     (YU.A.ZYSIN,A.A.KOVRIZHNYKH,A.A.LBOV,L.I.SEL'CHENKOV)  4063700100006 
-TITLE      CROSS SECTION FOR THE REACTION TH232(N,2N)TH231 AT 14.74063700100007 
-           MEV NEUTRON ENERGY.                                    4063700100008 
-FACILITY   (LINAC) LOW-VOLTAGE LINEAR ACCELERATOR                 4063700100009 
-INC-SOURCE (D-T) T(D,N) SOURCE.                                   4063700100010 
-SAMPLE      MIXTURE OF THE THORIUM OXIDE-DIOXIDE (0.2 GRAM) AND   4063700100011 
-            URANIUM OXIDE-DIOXIDE (0.6 GRAM)                      4063700100012 
-METHOD     (ACTIV) ACTIVATION, COUNTED TH-231 DECAY BETAS         4063700100013 
-DETECTOR   (D4PI)                                                 4063700100014 
-MONITOR    (92-U-238(N,F),,SIG)                                   4063700100015 
-           (92-U-238(N,F)42-MO-99,CUM,FY)                         4063700100016 
-           (92-U-238(N,F)56-BA-140,CUM,FY)                        4063700100017 
-PART-DET   (B-)                                                   4063700100018 
-HISTORY    (831011C)  COMPILED AT THE CENTRE                      4063700100019 
-ENDBIB              17          0                                 4063700100020 
-COMMON               4          3                                 4063700100021 
-EN-NRM     MONIT      MONIT      MONIT                            4063700100022 
-MEV        B          PC/FIS     PC/FIS                           4063700100023 
- 1.4700E+01 1.1000E+00 6.3000E-02 4.7000E-02                      4063700100024 
-ENDCOMMON            3          0                                 4063700100025 
-ENDSUBENT           24          0                                 4063700199999 
-SUBENT        40637002   19850329                             00004063700200001 
-BIB                  1          1                                 4063700200002 
-REACTION   (90-TH-232(N,2N)90-TH-231,,SIG)                        4063700200003 
-ENDBIB               1          0                                 4063700200004 
-NOCOMMON             0          0                                 4063700200005 
-DATA                 3          1                                 4063700200006 
-EN         DATA       DATA-ERR                                    4063700200007 
-MEV        B          B                                           4063700200008 
- 1.4700E+01 6.5000E-01 1.5000E-01                                 4063700200009 
-ENDDATA              3          0                                 4063700200010 
-ENDSUBENT            9          0                                 4063700299999 
+ENTRY            40637   20231006                             421540637  0    1 
+SUBENT        40637001   20231006                             421540637  1    1 
+BIB                 14         27                                 40637  1    2 
+TITLE      Cross section for the reaction Th232(n,2n)Th231        40637  1    3 
+           at 14.7 MeV neutron energy                             40637  1    4 
+AUTHOR     (Yu.A.Zysin,A.A.Kovrizhnykh,A.A.Lbov,L.I.Sel'chenkov)  40637  1    5 
+REFERENCE  (J,SJA,8,310,1961) Engl.translation of AE,8,360,1960   40637  1    6 
+           (J,AE,8,360,1960) Issue 4.                             40637  1    7 
+INSTITUTE  (4RUSKUR)                                              40637  1    8 
+EXP-YEAR   (1956) 1956 - 1957 years.                              40637  1    9 
+FACILITY   (LINAC,4RUSKUR) Low-voltage linear accelerator.        40637  1   10 
+INC-SOURCE (D-T) Deuteron energy ~ 150 keV.                       40637  1   11 
+SAMPLE      Mixture of the thorium nitrate Th(NO(3))(4)*4H(2)O    40637  1   12 
+            (0.2 g) and uranium oxide U(3)O(8) (0.6 g).           40637  1   13 
+            Placed at ~ 7 mm distance from tritium target center. 40637  1   14 
+METHOD     (ACTIV) Six irradiations, time of irradiation 3-11 hr. 40637  1   15 
+           (CHSEP) For required isotopes.                         40637  1   16 
+DETECTOR   (D4PI)                                                 40637  1   17 
+ASSUMED    (ASSUM1,92-U-238(N,F),,SIG)                            40637  1   18 
+           (ASSUM2,92-U-238(N,F)42-MO-99,CUM,FY)                  40637  1   19 
+           (ASSUM3,92-U-238(N,F)56-BA-140,CUM,FY)                 40637  1   20 
+PART-DET   (B-)                                                   40637  1   21 
+CORRECTION  For disintegration during the irradiation time,       40637  1   22 
+           and for Tc99m and La140.                               40637  1   23 
+           For increasing activity of the natural decay products  40637  1   24 
+           of Th232.                                              40637  1   25 
+HISTORY    (19831011C)  Compiled at the centre                    40637  1   26 
+           (20231006A) EN-NRM=14.7 MeV was deleted ( the same as  40637  1   27 
+           incident neutron energy EN).                           40637  1   28 
+           MONITOR -> ASSUMED . 4RUSRUS -> 4RUKUR                 40637  1   29 
+ENDBIB              27          0                                 40637  1   30 
+COMMON               3          3                                 40637  1   31 
+ASSUM1     ASSUM2     ASSUM3                                      40637  1   32 
+B          PC/FIS     PC/FIS                                      40637  1   33 
+ 1.1        6.3        4.7                                        40637  1   34 
+ENDCOMMON            3          0                                 40637  1   35 
+ENDSUBENT           34          0                                 40637  199999 
+SUBENT        40637002   20231006                             421540637  2    1 
+BIB                  4         19                                 40637  2    2 
+REACTION   (90-TH-232(N,2N)90-TH-231,,SIG)                        40637  2    3 
+ANALYSIS   Formula for n,2n cross section calculation is given    40637  2    4 
+           on page 310 of SJA,8,310,1961:                         40637  2    5 
+            SIGn,2n=((Nth*HLth)/(Nmo*HLmo))*                      40637  2    6 
+            (SIGufis*Ymou*(232Pu/238Pth)+SIGthfis*Ymoth)),        40637  2    7 
+            where                                                 40637  2    8 
+           SIGufis, SIGthfis - fission cross-section for U238 and 40637  2    9 
+           Th232 at 14 MeV;                                       40637  2   10 
+           HLth, HLmo - half-life of Th231 and Mo99 (or Ba140);   40637  2   11 
+           Nth, Nmo - number of Th231, Mo99 (or Ba140)            40637  2   12 
+           disintegrations per time unit at the end irradiation   40637  2   13 
+           and referred to the total amounts of Th232 and U-238;  40637  2   14 
+           Ymou, YYmoth - Mo ( or Ba) yield at fission of U238 and40637  2   15 
+           Th232  at 14 MeV;                                      40637  2   16 
+           Pth, Pu - weights of Th232 and U238.                   40637  2   17 
+ERR-ANALYS (DATA-ERR) Includes statistical uncertainty and        40637  2   18 
+           uncertainties of fission cross sections and fragment   40637  2   19 
+           yields.                                                40637  2   20 
+STATUS     (TABLE,,Yu.A.Zysin+,J,SJA,8,310,1961) Text page 310.   40637  2   21 
+ENDBIB              19          0                                 40637  2   22 
+NOCOMMON             0          0                                 40637  2   23 
+DATA                 3          1                                 40637  2   24 
+EN         DATA       DATA-ERR                                    40637  2   25 
+MEV        B          B                                           40637  2   26 
+ 14.7       0.65       0.15                                       40637  2   27 
+ENDDATA              3          0                                 40637  2   28 
+ENDSUBENT           27          0                                 40637  299999 
 ENDENTRY             2          0                                 4063799999999 

@@ -1,67 +1,137 @@
-ENTRY            40696   20010319                             00004069600000001 
-SUBENT        40696001   20010319                             00004069600100001 
-BIB                 10         16                                 4069600100002 
-INSTITUTE  (4UKRIJI)                                              4069600100003 
-REFERENCE  (J,AE,23,(1),67,196707)                                4069600100004 
-           (J,SJA,23,742,1967)                                    4069600100005 
-           (R,INDC-187,,1967)  TABULATED DATA                     4069600100006 
-AUTHOR     (G.G.ZAIKIN,I.A.KORZH,N.T.SKLJAR,I.A.TOTSKIJ)          4069600100007 
-TITLE      CROSS SECTIONS FOR THE RADIATIVE CAPTURE OF FAST       4069600100008 
-           NEUTRONS BY TI50 AND V51.                              4069600100009 
-FACILITY   (VDG)                                                  4069600100010 
-INC-SOURCE (P-LI7)                                                4069600100011 
-           (P-T)                                                  4069600100012 
-METHOD     (ACTIV) ACTIVATION                                     4069600100013 
-DETECTOR   (PROPC) END-WINDOW PROPORTIONAL COUNTERS               4069600100014 
-STATUS     (SCSRS)                                                4069600100015 
-HISTORY    (19840213T) CONVERTED FROM ENTRY 80097                 4069600100016 
-           (19870602U) INSTITUTE CODE CORRECTED - IJI TO IFU      4069600100017 
-           (20010319A) DATE is corrected                          4069600100018 
-ENDBIB              16          0                                 4069600100019 
-NOCOMMON             0          0                                 4069600100020 
-ENDSUBENT           19          0                                 4069600199999 
-SUBENT        40696002   20010319                             00004069600200001 
-BIB                  2          2                                 4069600200002 
-REACTION   (22-TI-50(N,G)22-TI-51,,SIG)                           4069600200003 
-MONITOR    (92-U-235(N,F),,SIG)                                   4069600200004 
-ENDBIB               2          0                                 4069600200005 
-NOCOMMON             0          0                                 4069600200006 
-DATA                 4          8                                 4069600200007 
-EN         EN-RSL     DATA       DATA-ERR                         4069600200008 
-MEV        MEV        B          B                                4069600200009 
- 1.8000E-01 7.3000E-02 8.9000E-04 9.0000E-05                      4069600200010 
- 2.8500E-01 6.5000E-02 6.3000E-04 7.0000E-05                      4069600200011 
- 5.1000E-01 6.0000E-02 7.0000E-04 7.0000E-05                      4069600200012 
- 1.2200E+00 8.5000E-02 6.5000E-04 5.0000E-05                      4069600200013 
- 1.4250E+00 8.5000E-02 7.8000E-04 7.0000E-05                      4069600200014 
- 1.6250E+00 8.5000E-02 4.8000E-04 6.0000E-05                      4069600200015 
- 1.8300E+00 9.0000E-02 5.1000E-04 6.0000E-05                      4069600200016 
- 2.0300E+00 9.0000E-02 3.7000E-04 4.0000E-05                      4069600200017 
-ENDDATA             10          0                                 4069600200018 
-ENDSUBENT           17          0                                 4069600299999 
-SUBENT        40696003   20010319                             00004069600300001 
-BIB                  2          3                                 4069600300002 
-REACTION   (23-V-51(N,G)23-V-52,,SIG)                             4069600300003 
-MONITOR    (92-U-235(N,F),,SIG)TAKEN FROM WHITE,J.NUCL.           4069600300004 
-            EN.19,325(1965) AND BNL-325(1965).                    4069600300005 
-ENDBIB               3          0                                 4069600300006 
-NOCOMMON             0          0                                 4069600300007 
-DATA                 4         13                                 4069600300008 
-EN         EN-RSL     DATA       DATA-ERR                         4069600300009 
-MEV        MEV        B          B                                4069600300010 
- 1.8700E-01 6.7000E-02 7.1100E-03 4.5000E-04                      4069600300011 
- 2.9300E-01 5.7000E-02 4.9200E-03 3.1000E-04                      4069600300012 
- 4.0900E-01 5.3000E-02 3.1800E-03 2.0000E-04                      4069600300013 
- 5.2000E-01 5.0000E-02 2.1100E-03 1.3000E-04                      4069600300014 
- 8.0600E-01 8.6000E-02 1.6500E-03 1.2000E-04                      4069600300015 
- 1.0160E+00 8.4000E-02 1.5600E-03 1.0000E-04                      4069600300016 
- 1.2200E+00 8.5000E-02 1.3900E-03 8.0000E-05                      4069600300017 
- 1.4250E+00 8.5000E-02 1.3500E-03 9.0000E-05                      4069600300018 
- 1.6260E+00 8.6000E-02 1.3300E-03 9.0000E-05                      4069600300019 
- 1.8300E+00 9.0000E-02 1.0700E-03 9.0000E-05                      4069600300020 
- 2.0300E+00 9.0000E-02 9.8000E-04 6.0000E-05                      4069600300021 
- 2.2200E+00 9.0000E-02 1.0500E-03 6.0000E-05                      4069600300022 
- 2.6100E+00 1.1000E-01 1.1000E-03 7.0000E-05                      4069600300023 
-ENDDATA             15          0                                 4069600300024 
-ENDSUBENT           23          0                                 4069600399999 
+ENTRY            40696   20231016                             421540696  0    1 
+SUBENT        40696001   20231016                             421540696  1    1 
+BIB                 14         64                                 40696  1    2 
+TITLE      Cross sections for the radiative capture of fast       40696  1    3 
+           neutrons by Ti50 and V51                               40696  1    4 
+AUTHOR     (G.G.Zaikin,I.A.Korzh,N.T.Sklyar,I.A.Totskij)          40696  1    5 
+REFERENCE  (J,SJA,23,742,1967) Engl.translation of AE,23,67,1967  40696  1    6 
+           (J,AE,23,67,1967) Issue 1.                             40696  1    7 
+           ((R,YFI-4,34(2),1967)=                                 40696  1    8 
+           (R,INDC-187,34(2),1967)) Tabulated data. In Russian.   40696  1    9 
+            INDC(CCP)*017 = INDC-187A at NDS web-site.            40696  1   10 
+INSTITUTE  (4UKRIJD)                                              40696  1   11 
+FACILITY   (VDG)                                                  40696  1   12 
+INC-SOURCE (P-LI7) For En < 500 keV.                              40696  1   13 
+           (P-T)   For En > 800 keV                               40696  1   14 
+            Thermal neutrons were obtained by a plexiglass block  40696  1   15 
+            of 17 cm thickness between accelerator target and     40696  1   16 
+            sample.                                               40696  1   17 
+METHOD     (ACTIV)                                                40696  1   18 
+SAMPLE      Natural.                                              40696  1   19 
+            Impurities for titanium < 3.% ,                       40696  1   20 
+                       for vanadium < 1.%.                        40696  1   21 
+DETECTOR   (PROPC) End-window proportional counters MST-17 -      40696  1   22 
+            for induced activity of samples.                      40696  1   23 
+           (FISCH) U-235 fission chamber with a layer of high     40696  1   24 
+           enriched U-235 ( 0.5 mg/cm2 thickness) -               40696  1   25 
+           for neutron flux measurement.                          40696  1   26 
+           Filled with Ar at atmospheric pressure.                40696  1   27 
+MONITOR    (92-U-235(N,F),,SIG) For fast and thermal neutrons.    40696  1   28 
+            Taken from White,J.Nucl.En.19,325(1965) and           40696  1   29 
+            BNL-325(1965).                                        40696  1   30 
+            U-235 fission cross section used:                     40696  1   31 
+            En,keV  Cross-section,b    En,keV  Cross-section,b    40696  1   32 
+             180.   1.45               1420.   1620.              40696  1   33 
+             290.   1.32               1620.   1.27               40696  1   34 
+             410.   1.26               1830.   1.27               40696  1   35 
+             510.   1.22               2030.   1.30               40696  1   36 
+             810.   1.17               2220.   1.30               40696  1   37 
+            1020.   1.26               2610.   1.30               40696  1   38 
+            1220.   1.27                                          40696  1   39 
+           . The error in U-235 fission cross-section was +- 5.%. 40696  1   40 
+           . Values of the activation C-S of Ti-50 and V-51 and   40696  1   41 
+           U-235 thermal fission C-S were taken from a book of    40696  1   42 
+           I.V.Gordeev, D.A.Kardashev, A.V.Malyshev, Nuclear-     40696  1   43 
+           Physics Constants, in Russian, Gosatomizdat, Moscow,   40696  1   44 
+           1963.                                                  40696  1   45 
+CORRECTION For contribution of moderated neutrons < 1.%.          40696  1   46 
+           For admixture of U-238 in U-235 sample at En=2.0 MeV   40696  1   47 
+           amounted to 2.%.                                       40696  1   48 
+ERR-ANALYS (ERR-1) Error in U235 fission cross-section            40696  1   49 
+           (DATA-ERR) Type of uncertainty is not explained in the 40696  1   50 
+            article.                                              40696  1   51 
+COMMENT     Of compiler M.M.                                      40696  1   52 
+            In Tables 1, 2 of R,YFI-4,34(2),1967                  40696  1   53 
+           data units are given as "mub".                         40696  1   54 
+            On Figs. 1,2 data units are "mb".                     40696  1   55 
+            Comparing with other data on Figs.1,2                 40696  1   56 
+           it was concluded that DATA units are milli-barn.       40696  1   57 
+HISTORY    (19840213T) Converted from ENTRY 80097                 40696  1   58 
+           (19870602U) INSTITUTE code corrected - IJI to IFU      40696  1   59 
+           (20010319A) Date is corrected                          40696  1   60 
+           (20231016A) Monitor values were added.                 40696  1   61 
+            Refs. R,YFI-4,34(2),1967, R,INDC(CCP)*017,34(2),1967  40696  1   62 
+            were added.                                           40696  1   63 
+            BIB information was updated.                          40696  1   64 
+            Upper -> lower case correction.                       40696  1   65 
+            STATUS: SCSRS -> TABLE .                              40696  1   66 
+ENDBIB              64          0                                 40696  1   67 
+COMMON               1          3                                 40696  1   68 
+ERR-1                                                             40696  1   69 
+PER-CENT                                                          40696  1   70 
+ 5.                                                               40696  1   71 
+ENDCOMMON            3          0                                 40696  1   72 
+ENDSUBENT           71          0                                 40696  199999 
+SUBENT        40696002   20231016                             421540696  2    1 
+BIB                  4         10                                 40696  2    2 
+REACTION   (22-TI-50(N,G)22-TI-51,,SIG)                           40696  2    3 
+REL-REF    (N,13860010,D.J.Hughes+,J,PR,91,1423,1953)             40696  2    4 
+           (N,11399007,R.L.Macklin+,J,PR,107,504,1957)            40696  2    5 
+           (N,40336102,M.V.Pasechnik+,C,58GENEVA,15,18,1958)      40696  2    6 
+           (N,,Yu.Ya.Stavisskiy+,R,ICD-1,73,1964)                 40696  2    7 
+            Compilation - Table 2 on page 73.                     40696  2    8 
+           . Four data sets used for comparison on Fig.2 of       40696  2    9 
+            J,SJA,23,742,1967                                     40696  2   10 
+ERR-ANALYS (ERR-S,6.,10.)                                         40696  2   11 
+STATUS     (TABLE,,G.G.Zaikin+,R,YFI-4,34(2),1967)  Table 1       40696  2   12 
+ENDBIB              10          0                                 40696  2   13 
+NOCOMMON             0          0                                 40696  2   14 
+DATA                 4          8                                 40696  2   15 
+EN         EN-RSL     DATA       DATA-ERR                         40696  2   16 
+KEV        KEV        MB         MB                               40696  2   17 
+  180.      73.        0.89       0.09                            40696  2   18 
+  285.      65.        0.63       0.07                            40696  2   19 
+  510.      60.        0.70       0.07                            40696  2   20 
+ 1220.      85.        0.65       0.05                            40696  2   21 
+ 1425.      85.        0.78       0.07                            40696  2   22 
+ 1625.      85.        0.48       0.06                            40696  2   23 
+ 1830.      90.        0.51       0.06                            40696  2   24 
+ 2030.      90.        0.37       0.04                            40696  2   25 
+ENDDATA             10          0                                 40696  2   26 
+ENDSUBENT           25          0                                 40696  299999 
+SUBENT        40696003   20231016                             421540696  3    1 
+BIB                  4         13                                 40696  3    2 
+REACTION   (23-V-51(N,G)23-V-52,,SIG)                             40696  3    3 
+REL-REF    (N,11675002,A.E.Johnsrud+,J,PR,116,927,1959)           40696  3    4 
+           (N,40452010,Yu.Ya.Stavisskii+,J,AE,9,401,1960)         40696  3    5 
+           (N,11407003,W.S.Lyon+,J,PR,114,1619,1959)              40696  3    6 
+           (N,40244070,A.I.Leipunskiy+,C,58GENEVA,15,50,1958)     40696  3    7 
+           (N,13860011,D.J.Hughes+,J,PR,91,1423,1953)             40696  3    8 
+           (N,11399008,R.L.Macklin+,J,PR,107,504,1957)            40696  3    9 
+           (N,40421010,V.N.Kononov+,J,AE,5,564,1958)              40696  3   10 
+           (N,11010003,V.Hummel+,J,PR,82,67,1951)                 40696  3   11 
+           . Eight data sets used for comparison on Fig.1 of      40696  3   12 
+            J,SJA,23,742,1967                                     40696  3   13 
+ERR-ANALYS (ERR-S,2.,3.)                                          40696  3   14 
+STATUS     (TABLE,,G.G.Zaikin+,R,YFI-4,34(2),1967)  Table 2       40696  3   15 
+ENDBIB              13          0                                 40696  3   16 
+NOCOMMON             0          0                                 40696  3   17 
+DATA                 4         13                                 40696  3   18 
+EN         EN-RSL     DATA       DATA-ERR                         40696  3   19 
+KEV        KEV        MB         MB                               40696  3   20 
+  187.      67.        7.11       0.45                            40696  3   21 
+  293.      57.        4.92       0.31                            40696  3   22 
+  409.      53.        3.18       0.20                            40696  3   23 
+  520.      50.        2.11       0.13                            40696  3   24 
+  806.      86.        1.65       0.12                            40696  3   25 
+ 1016.      84.        1.56       0.10                            40696  3   26 
+ 1220.      85.        1.39       0.08                            40696  3   27 
+ 1425.      85.        1.35       0.09                            40696  3   28 
+ 1626.      86.        1.33       0.09                            40696  3   29 
+ 1830.      90.        1.07       0.09                            40696  3   30 
+ 2030.      90.        0.98       0.06                            40696  3   31 
+ 2220.      90.        1.05       0.06                            40696  3   32 
+ 2610.     110.        1.10       0.07                            40696  3   33 
+ENDDATA             15          0                                 40696  3   34 
+ENDSUBENT           33          0                                 40696  399999 
 ENDENTRY             3          0                                 4069699999999 
