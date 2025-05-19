@@ -1,10 +1,10 @@
-ENTRY            E1905   20051025                             E033E190500000001 
-SUBENT        E1905001   20051025                             E033E190500100001 
-BIB                 13         56                                 E190500100002 
+ENTRY            E1905   20150429                             E095E190500000001 
+SUBENT        E1905001   20150429                             E095E190500100001 
+BIB                 13         63                                 E190500100002 
 TITLE      Partition of total excitation energy between fragment  E190500100003 
            pairs in asymmetric and symmetric fission modes        E190500100004 
 AUTHOR     (I.Nishinaka, Y.Nagame, H.Ikezoe, M.Tanikawa, Y.L.Zhao,E190500100005 
-           K.Sueki, H.Nakahara)                                   E190500100006 
+            K.Sueki, H.Nakahara)                                  E190500100006 
 INSTITUTE  (2JPNJAE)                                              E190500100007 
            (2JPNTOK) School of Science                            E190500100008 
            (3CPRIHP)                                              E190500100009 
@@ -15,9 +15,9 @@ PART-DET   (FF)                                                   E190500100013
 INC-SOURCE Beam intensity is about 300 particle-nA.               E190500100014 
 SAMPLE     - Chemical-form of target: Thorium fluoride            E190500100015 
            - Physical-form of target is solid.                    E190500100016 
-           - Target-thickness is 0.110 mg/cm**2.                  E190500100017 
+           - Target-thickness is 0.110 mg/cm2.                    E190500100017 
            - Backing is carbon.                                   E190500100018 
-           - Backing-thickness is 0.020 mg/cm**2.                 E190500100019 
+           - Backing-thickness is 0.020 mg/cm2.                   E190500100019 
 METHOD     (TOF) To measure velocities of fission fragments,      E190500100020 
                  Length and time resolution are 56.5 (43.4) cm    E190500100021 
                  and 650 (970) ps for ToF1 (ToF2).                E190500100022 
@@ -37,9 +37,9 @@ DETECTOR   Calibration: Flight time and energy were calibrated by E190500100024
                   complementary fragments at -128 deg             E190500100036 
 CORRECTION A new correction procedure was proposed and applied to E190500100037 
            observed fission data affected by instrumental         E190500100038 
-           fluctuations in measurments of flight time and kinetic E190500100039 
-           energies of secondary fragments. See Sect. IIIB of the E190500100040 
-           reference for the procedure of correction.             E190500100041 
+           fluctuations in measurements of flight time and        E190500100039 
+           kinetic energies of secondary fragments. See Sect.     E190500100040 
+           IIIB of the reference for the procedure of correction. E190500100041 
 ADD-RES    E1905.050:90-TH-232(P,F)                               E190500100042 
                      Average excitation energy of a fragment for  E190500100043 
                      the asymmetric fission mode                  E190500100044 
@@ -57,13 +57,20 @@ ADD-RES    E1905.050:90-TH-232(P,F)                               E190500100042
                      pairs for the symmetric fission mode         E190500100056 
                      See NRDF D1905 DATA,52 for detail.           E190500100057 
 HISTORY    (20040917C) Kc + On                                    E190500100058 
-ENDBIB              56          0                                 E190500100059 
-COMMON               1          3                                 E190500100060 
-EN                                                                E190500100061 
-MEV                                                               E190500100062 
- 12.0                                                             E190500100063 
-ENDCOMMON            3          0                                 E190500100064 
-ENDSUBENT           63          0                                 E190500199999 
+           (20150128A) MA: REACTION modified in 6, 8, 10, 12, 14, E190500100059 
+                       16, 18, 20, 22, 24, 26, 28, 30, 32, 34,    E190500100060 
+                       36, 38, 40, 42, 44, 46, 48                 E190500100061 
+           (20150429A) MA: Spelling corrected in 1. EN-SEC        E190500100062 
+                       deleted and HEADING corrected in 6, 8, 10, E190500100063 
+                       12, 14, 16, 18, 20, 22, 24, 26, 28, 30,    E190500100064 
+                       32, 34, 36, 38, 40, 42, 44, 46, 48         E190500100065 
+ENDBIB              63          0                                 E190500100066 
+COMMON               1          3                                 E190500100067 
+EN                                                                E190500100068 
+MEV                                                               E190500100069 
+ 12.                                                              E190500100070 
+ENDCOMMON            3          0                                 E190500100071 
+ENDSUBENT           70          0                                 E190500199999 
 SUBENT        E1905002   20051025                             E033E190500200001 
 BIB                  3          6                                 E190500200002 
 REACTION   (90-TH-232(P,F)MASS,PRE,FY,,REL)                       E190500200003 
@@ -264,64 +271,67 @@ NO-DIM     PRT/FIS                                                E190500500014
  116.5      4.1238                                                E190500500031 
 ENDDATA             19          0                                 E190500500032 
 ENDSUBENT           31          0                                 E190500599999 
-SUBENT        E1905006   20051025                             E033E190500600001 
-BIB                  3         11                                 E190500600002 
-REACTION  1(90-TH-232(P,F),PR,NU/DE,FF,RAW)                       E190500600003 
+SUBENT        E1905006   20150429                             E095E190500600001 
+BIB                  3         14                                 E190500600002 
+REACTION  1(90-TH-232(P,F),PR,NU/TKE,,RAW)                        E190500600003 
            Total neutron multiplicity before correction for       E190500600004 
            instrumental fluctuation (See Sect. IIIB of the        E190500600005 
            reference)                                             E190500600006 
-          2(90-TH-232(P,F),PR,NU/DE,FF)                           E190500600007 
+          2(90-TH-232(P,F),PR,NU/TKE)                             E190500600007 
            Total neutron multiplicity after correction for        E190500600008 
            instrumental fluctuation (See Sect. IIIB of the        E190500600009 
            reference)                                             E190500600010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190500600011 
-STATUS     (TABLE) Data (Fig. 3, p014609-4 in reference) received E190500600012 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190500600013 
-ENDBIB              11          0                                 E190500600014 
-NOCOMMON             0          0                                 E190500600015 
-DATA                 3         38                                 E190500600016 
-E          DATA      1DATA      2                                 E190500600017 
-MEV        PRT/FIS    PRT/FIS                                     E190500600018 
- 132.5                 6.85                                       E190500600019 
- 134.5                 6.75                                       E190500600020 
- 136.5                 6.32                                       E190500600021 
- 138.5      4.6131     6.14                                       E190500600022 
- 140.5      4.391      5.97                                       E190500600023 
- 142.5      4.4196     5.89                                       E190500600024 
- 144.5      4.2394     5.61                                       E190500600025 
- 146.5      4.2397     5.43                                       E190500600026 
- 148.5      4.2586     5.2                                        E190500600027 
- 150.5      4.3414     5.0                                        E190500600028 
- 152.5      3.9035     4.79                                       E190500600029 
- 154.5      3.6498     4.54                                       E190500600030 
- 156.5      3.8621     4.35                                       E190500600031 
- 158.5      3.5847     4.17                                       E190500600032 
- 160.5      3.5878     3.96                                       E190500600033 
- 162.5      3.322      3.78                                       E190500600034 
- 164.5      3.2066     3.57                                       E190500600035 
- 166.5      3.1083     3.42                                       E190500600036 
- 168.5      3.0417     3.23                                       E190500600037 
- 170.5      2.8478     3.05                                       E190500600038 
- 172.5      2.8507     2.87                                       E190500600039 
- 174.5      2.7472     2.67                                       E190500600040 
- 176.5      2.7102     2.48                                       E190500600041 
- 178.5      2.6551     2.3                                        E190500600042 
- 180.5      2.5315     2.1                                        E190500600043 
- 182.5      2.476      1.91                                       E190500600044 
- 184.5      2.5964     1.72                                       E190500600045 
- 186.5      2.3326     1.52                                       E190500600046 
- 188.5      2.3527     1.31                                       E190500600047 
- 190.5      2.4568     1.1                                        E190500600048 
- 192.5      2.4515     0.9                                        E190500600049 
- 194.5      2.3954     0.66                                       E190500600050 
- 196.5      2.3352     0.42                                       E190500600051 
- 198.5      2.1326     0.22                                       E190500600052 
- 200.5                 0.07                                       E190500600053 
- 202.5                 0.0                                        E190500600054 
- 204.5                 0.0                                        E190500600055 
- 206.5                 0.0                                        E190500600056 
-ENDDATA             40          0                                 E190500600057 
-ENDSUBENT           56          0                                 E190500699999 
+STATUS     (TABLE) Data (Fig. 3, p014609-4 in reference) received E190500600011 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190500600012 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190500600013 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190500600014 
+                       PR,NU/TKE                                  E190500600015 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190500600016 
+ENDBIB              14          0                                 E190500600017 
+NOCOMMON             0          0                                 E190500600018 
+DATA                 3         38                                 E190500600019 
+TKE        DATA      1DATA      2                                 E190500600020 
+MEV        PRT/FIS    PRT/FIS                                     E190500600021 
+      132.5                  6.85                                 E190500600022 
+      134.5                  6.75                                 E190500600023 
+      136.5                  6.32                                 E190500600024 
+      138.5     4.6131       6.14                                 E190500600025 
+      140.5      4.391       5.97                                 E190500600026 
+      142.5     4.4196       5.89                                 E190500600027 
+      144.5     4.2394       5.61                                 E190500600028 
+      146.5     4.2397       5.43                                 E190500600029 
+      148.5     4.2586        5.2                                 E190500600030 
+      150.5     4.3414        5.0                                 E190500600031 
+      152.5     3.9035       4.79                                 E190500600032 
+      154.5     3.6498       4.54                                 E190500600033 
+      156.5     3.8621       4.35                                 E190500600034 
+      158.5     3.5847       4.17                                 E190500600035 
+      160.5     3.5878       3.96                                 E190500600036 
+      162.5      3.322       3.78                                 E190500600037 
+      164.5     3.2066       3.57                                 E190500600038 
+      166.5     3.1083       3.42                                 E190500600039 
+      168.5     3.0417       3.23                                 E190500600040 
+      170.5     2.8478       3.05                                 E190500600041 
+      172.5     2.8507       2.87                                 E190500600042 
+      174.5     2.7472       2.67                                 E190500600043 
+      176.5     2.7102       2.48                                 E190500600044 
+      178.5     2.6551        2.3                                 E190500600045 
+      180.5     2.5315        2.1                                 E190500600046 
+      182.5      2.476       1.91                                 E190500600047 
+      184.5     2.5964       1.72                                 E190500600048 
+      186.5     2.3326       1.52                                 E190500600049 
+      188.5     2.3527       1.31                                 E190500600050 
+      190.5     2.4568        1.1                                 E190500600051 
+      192.5     2.4515        0.9                                 E190500600052 
+      194.5     2.3954       0.66                                 E190500600053 
+      196.5     2.3352       0.42                                 E190500600054 
+      198.5     2.1326       0.22                                 E190500600055 
+      200.5                  0.07                                 E190500600056 
+      202.5                   0.0                                 E190500600057 
+      204.5                   0.0                                 E190500600058 
+      206.5                   0.0                                 E190500600059 
+ENDDATA             40          0                                 E190500600060 
+ENDSUBENT           59          0                                 E190500699999 
 SUBENT        E1905007   20051025                             E033E190500700001 
 BIB                  3          5                                 E190500700002 
 REACTION   (90-TH-232(P,F),PRE,DE,FF,REL)                         E190500700003 
@@ -428,52 +438,55 @@ MEV        ARB-UNITS                                              E190500700012
  208.0      0.9886                                                E190500700104 
 ENDDATA             94          0                                 E190500700105 
 ENDSUBENT          104          0                                 E190500799999 
-SUBENT        E1905008   20051025                             E033E190500800001 
-BIB                  4         13                                 E190500800002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190500800003 
+SUBENT        E1905008   20150429                             E095E190500800001 
+BIB                  4         16                                 E190500800002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190500800003 
            Total neutron multiplicity before correction for       E190500800004 
            instrumental fluctuation (See Sect. IIIB of the        E190500800005 
            reference)                                             E190500800006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190500800007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190500800007 
            Total neutron multiplicity after correction for        E190500800008 
            instrumental fluctuation (See Sect. IIIB of the        E190500800009 
            reference)                                             E190500800010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190500800011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190500800012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190500800013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190500800014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190500800015 
-ENDBIB              13          0                                 E190500800016 
-COMMON               2          3                                 E190500800017 
-MASS-MIN   MASS-MAX                                               E190500800018 
-NO-DIM     NO-DIM                                                 E190500800019 
- 88.0       89.0                                                  E190500800020 
-ENDCOMMON            3          0                                 E190500800021 
-DATA                 3         20                                 E190500800022 
-E          DATA      1DATA      2                                 E190500800023 
-MEV        PRT/FIS    PRT/FIS                                     E190500800024 
- 144.5      0.31                                                  E190500800025 
- 146.5      1.12                                                  E190500800026 
- 148.5      0.37       0.93                                       E190500800027 
- 150.5      0.55       0.88                                       E190500800028 
- 152.5      0.71       0.82                                       E190500800029 
- 154.5      0.43       0.76                                       E190500800030 
- 156.5      0.42       0.7                                        E190500800031 
- 158.5      0.47       0.65                                       E190500800032 
- 160.5      0.36       0.59                                       E190500800033 
- 162.5      0.43       0.52                                       E190500800034 
- 164.5      0.41       0.47                                       E190500800035 
- 166.5      0.27       0.4                                        E190500800036 
- 168.5      0.4        0.34                                       E190500800037 
- 170.5      0.13       0.28                                       E190500800038 
- 172.5      0.3        0.22                                       E190500800039 
- 174.5      0.11       0.15                                       E190500800040 
- 176.5      0.17       0.08                                       E190500800041 
- 178.5      0.02       0.04                                       E190500800042 
- 180.5      0.02       0.0                                        E190500800043 
- 182.5                 0.0                                        E190500800044 
-ENDDATA             22          0                                 E190500800045 
-ENDSUBENT           44          0                                 E190500899999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190500800011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190500800012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190500800013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190500800014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190500800015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190500800016 
+                       PR,NU/TKE                                  E190500800017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190500800018 
+ENDBIB              16          0                                 E190500800019 
+COMMON               2          3                                 E190500800020 
+MASS-MIN   MASS-MAX                                               E190500800021 
+NO-DIM     NO-DIM                                                 E190500800022 
+ 88.        89.                                                   E190500800023 
+ENDCOMMON            3          0                                 E190500800024 
+DATA                 3         20                                 E190500800025 
+TKE        DATA      1DATA      2                                 E190500800026 
+MEV        PRT/FIS    PRT/FIS                                     E190500800027 
+      144.5       0.31                                            E190500800028 
+      146.5       1.12                                            E190500800029 
+      148.5       0.37       0.93                                 E190500800030 
+      150.5       0.55       0.88                                 E190500800031 
+      152.5       0.71       0.82                                 E190500800032 
+      154.5       0.43       0.76                                 E190500800033 
+      156.5       0.42        0.7                                 E190500800034 
+      158.5       0.47       0.65                                 E190500800035 
+      160.5       0.36       0.59                                 E190500800036 
+      162.5       0.43       0.52                                 E190500800037 
+      164.5       0.41       0.47                                 E190500800038 
+      166.5       0.27        0.4                                 E190500800039 
+      168.5        0.4       0.34                                 E190500800040 
+      170.5       0.13       0.28                                 E190500800041 
+      172.5        0.3       0.22                                 E190500800042 
+      174.5       0.11       0.15                                 E190500800043 
+      176.5       0.17       0.08                                 E190500800044 
+      178.5       0.02       0.04                                 E190500800045 
+      180.5       0.02         0.                                 E190500800046 
+      182.5                    0.                                 E190500800047 
+ENDDATA             22          0                                 E190500800048 
+ENDSUBENT           47          0                                 E190500899999 
 SUBENT        E1905009   20051025                             E033E190500900001 
 BIB                  4          7                                 E190500900002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190500900003 
@@ -520,53 +533,56 @@ MEV        ARB-UNITS                                              E190500900018
  186.5      6.8                                                   E190500900044 
 ENDDATA             28          0                                 E190500900045 
 ENDSUBENT           44          0                                 E190500999999 
-SUBENT        E1905010   20051025                             E033E190501000001 
-BIB                  4         13                                 E190501000002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190501000003 
+SUBENT        E1905010   20150429                             E095E190501000001 
+BIB                  4         16                                 E190501000002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190501000003 
            Total neutron multiplicity before correction for       E190501000004 
            instrumental fluctuation (See Sect. IIIB of the        E190501000005 
            reference)                                             E190501000006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190501000007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190501000007 
            Total neutron multiplicity after correction for        E190501000008 
            instrumental fluctuation (See Sect. IIIB of the        E190501000009 
            reference)                                             E190501000010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190501000011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190501000012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190501000013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190501000014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190501000015 
-ENDBIB              13          0                                 E190501000016 
-COMMON               2          3                                 E190501000017 
-MASS-MIN   MASS-MAX                                               E190501000018 
-NO-DIM     NO-DIM                                                 E190501000019 
- 92.0       93.0                                                  E190501000020 
-ENDCOMMON            3          0                                 E190501000021 
-DATA                 3         21                                 E190501000022 
-E          DATA      1DATA      2                                 E190501000023 
-MEV        PRT/FIS    PRT/FIS                                     E190501000024 
- 146.5      0.81                                                  E190501000025 
- 148.5      1.18                                                  E190501000026 
- 150.5      0.98       1.57                                       E190501000027 
- 152.5      0.67       1.51                                       E190501000028 
- 154.5      1.32       1.43                                       E190501000029 
- 156.5      1.04       1.36                                       E190501000030 
- 158.5      0.93       1.28                                       E190501000031 
- 160.5      1.13       1.2                                        E190501000032 
- 162.5      1.02       1.12                                       E190501000033 
- 164.5      0.91       1.04                                       E190501000034 
- 166.5      0.75       0.96                                       E190501000035 
- 168.5      0.82       0.88                                       E190501000036 
- 170.5      0.67       0.8                                        E190501000037 
- 172.5      0.61       0.71                                       E190501000038 
- 174.5      0.58       0.63                                       E190501000039 
- 176.5      0.61       0.54                                       E190501000040 
- 178.5      0.62       0.46                                       E190501000041 
- 180.5      0.57       0.37                                       E190501000042 
- 182.5      0.26       0.28                                       E190501000043 
- 184.5      0.33       0.18                                       E190501000044 
- 186.5      0.76       0.09                                       E190501000045 
-ENDDATA             23          0                                 E190501000046 
-ENDSUBENT           45          0                                 E190501099999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190501000011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190501000012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190501000013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190501000014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190501000015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190501000016 
+                       PR,NU/TKE                                  E190501000017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190501000018 
+ENDBIB              16          0                                 E190501000019 
+COMMON               2          3                                 E190501000020 
+MASS-MIN   MASS-MAX                                               E190501000021 
+NO-DIM     NO-DIM                                                 E190501000022 
+ 92.        93.                                                   E190501000023 
+ENDCOMMON            3          0                                 E190501000024 
+DATA                 3         21                                 E190501000025 
+TKE        DATA      1DATA      2                                 E190501000026 
+MEV        PRT/FIS    PRT/FIS                                     E190501000027 
+      146.5       0.81                                            E190501000028 
+      148.5       1.18                                            E190501000029 
+      150.5       0.98       1.57                                 E190501000030 
+      152.5       0.67       1.51                                 E190501000031 
+      154.5       1.32       1.43                                 E190501000032 
+      156.5       1.04       1.36                                 E190501000033 
+      158.5       0.93       1.28                                 E190501000034 
+      160.5       1.13        1.2                                 E190501000035 
+      162.5       1.02       1.12                                 E190501000036 
+      164.5       0.91       1.04                                 E190501000037 
+      166.5       0.75       0.96                                 E190501000038 
+      168.5       0.82       0.88                                 E190501000039 
+      170.5       0.67        0.8                                 E190501000040 
+      172.5       0.61       0.71                                 E190501000041 
+      174.5       0.58       0.63                                 E190501000042 
+      176.5       0.61       0.54                                 E190501000043 
+      178.5       0.62       0.46                                 E190501000044 
+      180.5       0.57       0.37                                 E190501000045 
+      182.5       0.26       0.28                                 E190501000046 
+      184.5       0.33       0.18                                 E190501000047 
+      186.5       0.76       0.09                                 E190501000048 
+ENDDATA             23          0                                 E190501000049 
+ENDSUBENT           48          0                                 E190501099999 
 SUBENT        E1905011   20051025                             E033E190501100001 
 BIB                  4          7                                 E190501100002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190501100003 
@@ -615,55 +631,58 @@ MEV        ARB-UNITS                                              E190501100018
  190.5      2.2                                                   E190501100046 
 ENDDATA             30          0                                 E190501100047 
 ENDSUBENT           46          0                                 E190501199999 
-SUBENT        E1905012   20051025                             E033E190501200001 
-BIB                  4         13                                 E190501200002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190501200003 
+SUBENT        E1905012   20150429                             E095E190501200001 
+BIB                  4         16                                 E190501200002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190501200003 
            Total neutron multiplicity before correction for       E190501200004 
            instrumental fluctuation (See Sect. IIIB of the        E190501200005 
            reference)                                             E190501200006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190501200007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190501200007 
            Total neutron multiplicity after correction for        E190501200008 
            instrumental fluctuation (See Sect. IIIB of the        E190501200009 
            reference)                                             E190501200010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190501200011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190501200012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190501200013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190501200014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190501200015 
-ENDBIB              13          0                                 E190501200016 
-COMMON               2          3                                 E190501200017 
-MASS-MIN   MASS-MAX                                               E190501200018 
-NO-DIM     NO-DIM                                                 E190501200019 
- 96.0       97.0                                                  E190501200020 
-ENDCOMMON            3          0                                 E190501200021 
-DATA                 3         23                                 E190501200022 
-E          DATA      1DATA      2                                 E190501200023 
-MEV        PRT/FIS    PRT/FIS                                     E190501200024 
- 148.5      0.73                                                  E190501200025 
- 150.5      1.27                                                  E190501200026 
- 152.5      1.0                                                   E190501200027 
- 154.5      0.96       1.95                                       E190501200028 
- 156.5      1.62       1.87                                       E190501200029 
- 158.5      1.64       1.79                                       E190501200030 
- 160.5      1.6        1.7                                        E190501200031 
- 162.5      1.11       1.61                                       E190501200032 
- 164.5      1.28       1.52                                       E190501200033 
- 166.5      1.27       1.43                                       E190501200034 
- 168.5      1.17       1.34                                       E190501200035 
- 170.5      1.1        1.25                                       E190501200036 
- 172.5      1.07       1.16                                       E190501200037 
- 174.5      0.82       1.06                                       E190501200038 
- 176.5      0.99       0.97                                       E190501200039 
- 178.5      0.79       0.87                                       E190501200040 
- 180.5      0.67       0.77                                       E190501200041 
- 182.5      0.53       0.67                                       E190501200042 
- 184.5      0.51       0.57                                       E190501200043 
- 186.5      0.67       0.47                                       E190501200044 
- 188.5      0.33       0.36                                       E190501200045 
- 190.5      0.57       0.25                                       E190501200046 
- 192.5      0.04       0.15                                       E190501200047 
-ENDDATA             25          0                                 E190501200048 
-ENDSUBENT           47          0                                 E190501299999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190501200011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190501200012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190501200013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190501200014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190501200015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190501200016 
+                       PR,NU/TKE                                  E190501200017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190501200018 
+ENDBIB              16          0                                 E190501200019 
+COMMON               2          3                                 E190501200020 
+MASS-MIN   MASS-MAX                                               E190501200021 
+NO-DIM     NO-DIM                                                 E190501200022 
+ 96.        97.                                                   E190501200023 
+ENDCOMMON            3          0                                 E190501200024 
+DATA                 3         23                                 E190501200025 
+TKE        DATA      1DATA      2                                 E190501200026 
+MEV        PRT/FIS    PRT/FIS                                     E190501200027 
+      148.5       0.73                                            E190501200028 
+      150.5       1.27                                            E190501200029 
+      152.5         1.                                            E190501200030 
+      154.5       0.96       1.95                                 E190501200031 
+      156.5       1.62       1.87                                 E190501200032 
+      158.5       1.64       1.79                                 E190501200033 
+      160.5        1.6        1.7                                 E190501200034 
+      162.5       1.11       1.61                                 E190501200035 
+      164.5       1.28       1.52                                 E190501200036 
+      166.5       1.27       1.43                                 E190501200037 
+      168.5       1.17       1.34                                 E190501200038 
+      170.5        1.1       1.25                                 E190501200039 
+      172.5       1.07       1.16                                 E190501200040 
+      174.5       0.82       1.06                                 E190501200041 
+      176.5       0.99       0.97                                 E190501200042 
+      178.5       0.79       0.87                                 E190501200043 
+      180.5       0.67       0.77                                 E190501200044 
+      182.5       0.53       0.67                                 E190501200045 
+      184.5       0.51       0.57                                 E190501200046 
+      186.5       0.67       0.47                                 E190501200047 
+      188.5       0.33       0.36                                 E190501200048 
+      190.5       0.57       0.25                                 E190501200049 
+      192.5       0.04       0.15                                 E190501200050 
+ENDDATA             25          0                                 E190501200051 
+ENDSUBENT           50          0                                 E190501299999 
 SUBENT        E1905013   20051025                             E033E190501300001 
 BIB                  4          7                                 E190501300002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190501300003 
@@ -718,57 +737,60 @@ MEV        ARB-UNITS                                              E190501300018
  200.5      1.1                                                   E190501300052 
 ENDDATA             36          0                                 E190501300053 
 ENDSUBENT           52          0                                 E190501399999 
-SUBENT        E1905014   20051025                             E033E190501400001 
-BIB                  4         13                                 E190501400002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190501400003 
+SUBENT        E1905014   20150429                             E095E190501400001 
+BIB                  4         16                                 E190501400002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190501400003 
            Total neutron multiplicity before correction for       E190501400004 
            instrumental fluctuation (See Sect. IIIB of the        E190501400005 
            reference)                                             E190501400006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190501400007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190501400007 
            Total neutron multiplicity after correction for        E190501400008 
            instrumental fluctuation (See Sect. IIIB of the        E190501400009 
            reference)                                             E190501400010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190501400011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190501400012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190501400013 
-STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190501400014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190501400015 
-ENDBIB              13          0                                 E190501400016 
-COMMON               2          3                                 E190501400017 
-MASS-MIN   MASS-MAX                                               E190501400018 
-NO-DIM     NO-DIM                                                 E190501400019 
- 98.0       99.0                                                  E190501400020 
-ENDCOMMON            3          0                                 E190501400021 
-DATA                 3         25                                 E190501400022 
-E          DATA      1DATA      2                                 E190501400023 
-MEV        PRT/FIS    PRT/FIS                                     E190501400024 
- 148.5      1.28                                                  E190501400025 
- 150.5      1.56       1.04                                       E190501400026 
- 152.5      0.93       1.08                                       E190501400027 
- 154.5      1.8        1.21                                       E190501400028 
- 156.5      0.95       1.31                                       E190501400029 
- 158.5      1.32       1.44                                       E190501400030 
- 160.5      1.52       1.5                                        E190501400031 
- 162.5      1.29       1.57                                       E190501400032 
- 164.5      1.45       1.59                                       E190501400033 
- 166.5      1.25       1.56                                       E190501400034 
- 168.5      1.18       1.52                                       E190501400035 
- 170.5      1.33       1.45                                       E190501400036 
- 172.5      1.2        1.38                                       E190501400037 
- 174.5      1.04       1.29                                       E190501400038 
- 176.5      0.98       1.19                                       E190501400039 
- 178.5      1.01       1.1                                        E190501400040 
- 180.5      1.05       1.0                                        E190501400041 
- 182.5      0.82       0.89                                       E190501400042 
- 184.5      1.06       0.79                                       E190501400043 
- 186.5      0.72       0.68                                       E190501400044 
- 188.5      0.8        0.58                                       E190501400045 
- 190.5      0.86       0.47                                       E190501400046 
- 192.5      0.92       0.35                                       E190501400047 
- 194.5      1.1        0.23                                       E190501400048 
- 196.5      0.71                                                  E190501400049 
-ENDDATA             27          0                                 E190501400050 
-ENDSUBENT           49          0                                 E190501499999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190501400011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190501400012 
+STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190501400013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190501400014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190501400015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190501400016 
+                       PR,NU/TKE                                  E190501400017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190501400018 
+ENDBIB              16          0                                 E190501400019 
+COMMON               2          3                                 E190501400020 
+MASS-MIN   MASS-MAX                                               E190501400021 
+NO-DIM     NO-DIM                                                 E190501400022 
+ 98.        99.                                                   E190501400023 
+ENDCOMMON            3          0                                 E190501400024 
+DATA                 3         25                                 E190501400025 
+TKE        DATA      1DATA      2                                 E190501400026 
+MEV        PRT/FIS    PRT/FIS                                     E190501400027 
+      148.5       1.28                                            E190501400028 
+      150.5       1.56       1.04                                 E190501400029 
+      152.5       0.93       1.08                                 E190501400030 
+      154.5        1.8       1.21                                 E190501400031 
+      156.5       0.95       1.31                                 E190501400032 
+      158.5       1.32       1.44                                 E190501400033 
+      160.5       1.52        1.5                                 E190501400034 
+      162.5       1.29       1.57                                 E190501400035 
+      164.5       1.45       1.59                                 E190501400036 
+      166.5       1.25       1.56                                 E190501400037 
+      168.5       1.18       1.52                                 E190501400038 
+      170.5       1.33       1.45                                 E190501400039 
+      172.5        1.2       1.38                                 E190501400040 
+      174.5       1.04       1.29                                 E190501400041 
+      176.5       0.98       1.19                                 E190501400042 
+      178.5       1.01        1.1                                 E190501400043 
+      180.5       1.05         1.                                 E190501400044 
+      182.5       0.82       0.89                                 E190501400045 
+      184.5       1.06       0.79                                 E190501400046 
+      186.5       0.72       0.68                                 E190501400047 
+      188.5        0.8       0.58                                 E190501400048 
+      190.5       0.86       0.47                                 E190501400049 
+      192.5       0.92       0.35                                 E190501400050 
+      194.5        1.1       0.23                                 E190501400051 
+      196.5       0.71                                            E190501400052 
+ENDDATA             27          0                                 E190501400053 
+ENDSUBENT           52          0                                 E190501499999 
 SUBENT        E1905015   20051025                             E033E190501500001 
 BIB                  4          7                                 E190501500002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190501500003 
@@ -823,58 +845,61 @@ MEV        ARB-UNITS                                              E190501500018
  202.5      3.1                                                   E190501500052 
 ENDDATA             36          0                                 E190501500053 
 ENDSUBENT           52          0                                 E190501599999 
-SUBENT        E1905016   20051025                             E033E190501600001 
-BIB                  4         13                                 E190501600002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190501600003 
+SUBENT        E1905016   20150429                             E095E190501600001 
+BIB                  4         16                                 E190501600002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190501600003 
            Total neutron multiplicity before correction for       E190501600004 
            instrumental fluctuation (See Sect. IIIB of the        E190501600005 
            reference)                                             E190501600006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190501600007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190501600007 
            Total neutron multiplicity after correction for        E190501600008 
            instrumental fluctuation (See Sect. IIIB of the        E190501600009 
            reference)                                             E190501600010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190501600011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190501600012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190501600013 
-STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190501600014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190501600015 
-ENDBIB              13          0                                 E190501600016 
-COMMON               2          3                                 E190501600017 
-MASS-MIN   MASS-MAX                                               E190501600018 
-NO-DIM     NO-DIM                                                 E190501600019 
- 100.0      101.0                                                 E190501600020 
-ENDCOMMON            3          0                                 E190501600021 
-DATA                 3         26                                 E190501600022 
-E          DATA      1DATA      2                                 E190501600023 
-MEV        PRT/FIS    PRT/FIS                                     E190501600024 
- 148.5      1.0        1.07                                       E190501600025 
- 150.5      0.41       1.08                                       E190501600026 
- 152.5      1.08       1.07                                       E190501600027 
- 154.5      1.3        1.09                                       E190501600028 
- 156.5      1.36       1.17                                       E190501600029 
- 158.5      1.96       1.33                                       E190501600030 
- 160.5      1.26       1.43                                       E190501600031 
- 162.5      1.16       1.57                                       E190501600032 
- 164.5      1.21       1.68                                       E190501600033 
- 166.5      1.45       1.73                                       E190501600034 
- 168.5      1.21       1.75                                       E190501600035 
- 170.5      1.39       1.72                                       E190501600036 
- 172.5      1.23       1.67                                       E190501600037 
- 174.5      1.36       1.58                                       E190501600038 
- 176.5      1.35       1.51                                       E190501600039 
- 178.5      1.22       1.41                                       E190501600040 
- 180.5      1.22       1.31                                       E190501600041 
- 182.5      1.22       1.19                                       E190501600042 
- 184.5      1.26       1.08                                       E190501600043 
- 186.5      0.63       0.97                                       E190501600044 
- 188.5      0.98       0.85                                       E190501600045 
- 190.5      0.86       0.73                                       E190501600046 
- 192.5      1.12       0.61                                       E190501600047 
- 194.5      0.82       0.48                                       E190501600048 
- 196.5      1.02                                                  E190501600049 
- 198.5      0.7                                                   E190501600050 
-ENDDATA             28          0                                 E190501600051 
-ENDSUBENT           50          0                                 E190501699999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190501600011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190501600012 
+STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190501600013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190501600014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190501600015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190501600016 
+                       PR,NU/TKE                                  E190501600017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190501600018 
+ENDBIB              16          0                                 E190501600019 
+COMMON               2          3                                 E190501600020 
+MASS-MIN   MASS-MAX                                               E190501600021 
+NO-DIM     NO-DIM                                                 E190501600022 
+ 100.       101.                                                  E190501600023 
+ENDCOMMON            3          0                                 E190501600024 
+DATA                 3         26                                 E190501600025 
+TKE        DATA      1DATA      2                                 E190501600026 
+MEV        PRT/FIS    PRT/FIS                                     E190501600027 
+      148.5         1.       1.07                                 E190501600028 
+      150.5       0.41       1.08                                 E190501600029 
+      152.5       1.08       1.07                                 E190501600030 
+      154.5        1.3       1.09                                 E190501600031 
+      156.5       1.36       1.17                                 E190501600032 
+      158.5       1.96       1.33                                 E190501600033 
+      160.5       1.26       1.43                                 E190501600034 
+      162.5       1.16       1.57                                 E190501600035 
+      164.5       1.21       1.68                                 E190501600036 
+      166.5       1.45       1.73                                 E190501600037 
+      168.5       1.21       1.75                                 E190501600038 
+      170.5       1.39       1.72                                 E190501600039 
+      172.5       1.23       1.67                                 E190501600040 
+      174.5       1.36       1.58                                 E190501600041 
+      176.5       1.35       1.51                                 E190501600042 
+      178.5       1.22       1.41                                 E190501600043 
+      180.5       1.22       1.31                                 E190501600044 
+      182.5       1.22       1.19                                 E190501600045 
+      184.5       1.26       1.08                                 E190501600046 
+      186.5       0.63       0.97                                 E190501600047 
+      188.5       0.98       0.85                                 E190501600048 
+      190.5       0.86       0.73                                 E190501600049 
+      192.5       1.12       0.61                                 E190501600050 
+      194.5       0.82       0.48                                 E190501600051 
+      196.5       1.02                                            E190501600052 
+      198.5        0.7                                            E190501600053 
+ENDDATA             28          0                                 E190501600054 
+ENDSUBENT           53          0                                 E190501699999 
 SUBENT        E1905017   20051025                             E033E190501700001 
 BIB                  4          7                                 E190501700002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190501700003 
@@ -930,59 +955,62 @@ MEV        ARB-UNITS                                              E190501700018
  202.5      4.2                                                   E190501700053 
 ENDDATA             37          0                                 E190501700054 
 ENDSUBENT           53          0                                 E190501799999 
-SUBENT        E1905018   20051025                             E033E190501800001 
-BIB                  4         13                                 E190501800002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190501800003 
+SUBENT        E1905018   20150429                             E095E190501800001 
+BIB                  4         16                                 E190501800002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190501800003 
            Total neutron multiplicity before correction for       E190501800004 
            instrumental fluctuation (See Sect. IIIB of the        E190501800005 
            reference)                                             E190501800006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190501800007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190501800007 
            Total neutron multiplicity after correction for        E190501800008 
            instrumental fluctuation (See Sect. IIIB of the        E190501800009 
            reference)                                             E190501800010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190501800011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190501800012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190501800013 
-STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190501800014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190501800015 
-ENDBIB              13          0                                 E190501800016 
-COMMON               2          3                                 E190501800017 
-MASS-MIN   MASS-MAX                                               E190501800018 
-NO-DIM     NO-DIM                                                 E190501800019 
- 102.0      103.0                                                 E190501800020 
-ENDCOMMON            3          0                                 E190501800021 
-DATA                 3         27                                 E190501800022 
-E          DATA      1DATA      2                                 E190501800023 
-MEV        PRT/FIS    PRT/FIS                                     E190501800024 
- 146.5      0.06                                                  E190501800025 
- 148.5      1.33       1.19                                       E190501800026 
- 150.5      0.22       1.15                                       E190501800027 
- 152.5      0.46       1.09                                       E190501800028 
- 154.5      0.87       1.09                                       E190501800029 
- 156.5      0.96       1.14                                       E190501800030 
- 158.5      1.1        1.2                                        E190501800031 
- 160.5      1.34       1.23                                       E190501800032 
- 162.5      1.15       1.38                                       E190501800033 
- 164.5      1.26       1.5                                        E190501800034 
- 166.5      1.52       1.6                                        E190501800035 
- 168.5      0.96       1.68                                       E190501800036 
- 170.5      1.59       1.74                                       E190501800037 
- 172.5      1.58       1.73                                       E190501800038 
- 174.5      1.63       1.68                                       E190501800039 
- 176.5      1.63       1.59                                       E190501800040 
- 178.5      1.33       1.51                                       E190501800041 
- 180.5      1.41       1.4                                        E190501800042 
- 182.5      1.48       1.31                                       E190501800043 
- 184.5      1.55       1.18                                       E190501800044 
- 186.5      1.35       1.06                                       E190501800045 
- 188.5      1.03       0.94                                       E190501800046 
- 190.5      1.41       0.8                                        E190501800047 
- 192.5      1.24       0.67                                       E190501800048 
- 194.5      1.14       0.54                                       E190501800049 
- 196.5      0.8        0.4                                        E190501800050 
- 198.5      0.94                                                  E190501800051 
-ENDDATA             29          0                                 E190501800052 
-ENDSUBENT           51          0                                 E190501899999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190501800011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190501800012 
+STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190501800013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190501800014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190501800015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190501800016 
+                       PR,NU/TKE                                  E190501800017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190501800018 
+ENDBIB              16          0                                 E190501800019 
+COMMON               2          3                                 E190501800020 
+MASS-MIN   MASS-MAX                                               E190501800021 
+NO-DIM     NO-DIM                                                 E190501800022 
+ 102.       103.                                                  E190501800023 
+ENDCOMMON            3          0                                 E190501800024 
+DATA                 3         27                                 E190501800025 
+TKE        DATA      1DATA      2                                 E190501800026 
+MEV        PRT/FIS    PRT/FIS                                     E190501800027 
+      146.5       0.06                                            E190501800028 
+      148.5       1.33       1.19                                 E190501800029 
+      150.5       0.22       1.15                                 E190501800030 
+      152.5       0.46       1.09                                 E190501800031 
+      154.5       0.87       1.09                                 E190501800032 
+      156.5       0.96       1.14                                 E190501800033 
+      158.5        1.1        1.2                                 E190501800034 
+      160.5       1.34       1.23                                 E190501800035 
+      162.5       1.15       1.38                                 E190501800036 
+      164.5       1.26        1.5                                 E190501800037 
+      166.5       1.52        1.6                                 E190501800038 
+      168.5       0.96       1.68                                 E190501800039 
+      170.5       1.59       1.74                                 E190501800040 
+      172.5       1.58       1.73                                 E190501800041 
+      174.5       1.63       1.68                                 E190501800042 
+      176.5       1.63       1.59                                 E190501800043 
+      178.5       1.33       1.51                                 E190501800044 
+      180.5       1.41        1.4                                 E190501800045 
+      182.5       1.48       1.31                                 E190501800046 
+      184.5       1.55       1.18                                 E190501800047 
+      186.5       1.35       1.06                                 E190501800048 
+      188.5       1.03       0.94                                 E190501800049 
+      190.5       1.41        0.8                                 E190501800050 
+      192.5       1.24       0.67                                 E190501800051 
+      194.5       1.14       0.54                                 E190501800052 
+      196.5        0.8        0.4                                 E190501800053 
+      198.5       0.94                                            E190501800054 
+ENDDATA             29          0                                 E190501800055 
+ENDSUBENT           54          0                                 E190501899999 
 SUBENT        E1905019   20051025                             E033E190501900001 
 BIB                  4          7                                 E190501900002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190501900003 
@@ -1039,56 +1067,59 @@ MEV        ARB-UNITS                                              E190501900018
  204.5      4.1                                                   E190501900054 
 ENDDATA             38          0                                 E190501900055 
 ENDSUBENT           54          0                                 E190501999999 
-SUBENT        E1905020   20051025                             E033E190502000001 
-BIB                  4         13                                 E190502000002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190502000003 
+SUBENT        E1905020   20150429                             E095E190502000001 
+BIB                  4         16                                 E190502000002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190502000003 
            Total neutron multiplicity before correction for       E190502000004 
            instrumental fluctuation (See Sect. IIIB of the        E190502000005 
            reference)                                             E190502000006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190502000007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190502000007 
            Total neutron multiplicity after correction for        E190502000008 
            instrumental fluctuation (See Sect. IIIB of the        E190502000009 
            reference)                                             E190502000010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190502000011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190502000012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190502000013 
-STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190502000014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190502000015 
-ENDBIB              13          0                                 E190502000016 
-COMMON               2          3                                 E190502000017 
-MASS-MIN   MASS-MAX                                               E190502000018 
-NO-DIM     NO-DIM                                                 E190502000019 
- 104.0      105.0                                                 E190502000020 
-ENDCOMMON            3          0                                 E190502000021 
-DATA                 3         24                                 E190502000022 
-E          DATA      1DATA      2                                 E190502000023 
-MEV        PRT/FIS    PRT/FIS                                     E190502000024 
- 148.5      0.75       1.35                                       E190502000025 
- 150.5      0.55       1.3                                        E190502000026 
- 152.5      0.62       1.25                                       E190502000027 
- 154.5      0.89       1.2                                        E190502000028 
- 156.5      0.88       1.18                                       E190502000029 
- 158.5      1.21       1.14                                       E190502000030 
- 160.5      0.93       1.15                                       E190502000031 
- 162.5      1.42       1.19                                       E190502000032 
- 164.5      1.06       1.24                                       E190502000033 
- 166.5      1.08       1.44                                       E190502000034 
- 168.5      1.34       1.5                                        E190502000035 
- 170.5      1.68       1.57                                       E190502000036 
- 172.5      1.66       1.65                                       E190502000037 
- 174.5      1.6        1.63                                       E190502000038 
- 176.5      1.32       1.64                                       E190502000039 
- 178.5      1.4        1.55                                       E190502000040 
- 180.5      1.71       1.46                                       E190502000041 
- 182.5      1.49       1.35                                       E190502000042 
- 184.5      1.67       1.23                                       E190502000043 
- 186.5      1.37       1.11                                       E190502000044 
- 188.5      1.44       0.97                                       E190502000045 
- 190.5      1.73       0.84                                       E190502000046 
- 192.5      1.2        0.7                                        E190502000047 
- 194.5      1.3        0.56                                       E190502000048 
-ENDDATA             26          0                                 E190502000049 
-ENDSUBENT           48          0                                 E190502099999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190502000011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190502000012 
+STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190502000013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190502000014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190502000015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190502000016 
+                       PR,NU/TKE                                  E190502000017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190502000018 
+ENDBIB              16          0                                 E190502000019 
+COMMON               2          3                                 E190502000020 
+MASS-MIN   MASS-MAX                                               E190502000021 
+NO-DIM     NO-DIM                                                 E190502000022 
+ 104.       105.                                                  E190502000023 
+ENDCOMMON            3          0                                 E190502000024 
+DATA                 3         24                                 E190502000025 
+TKE        DATA      1DATA      2                                 E190502000026 
+MEV        PRT/FIS    PRT/FIS                                     E190502000027 
+      148.5       0.75       1.35                                 E190502000028 
+      150.5       0.55        1.3                                 E190502000029 
+      152.5       0.62       1.25                                 E190502000030 
+      154.5       0.89        1.2                                 E190502000031 
+      156.5       0.88       1.18                                 E190502000032 
+      158.5       1.21       1.14                                 E190502000033 
+      160.5       0.93       1.15                                 E190502000034 
+      162.5       1.42       1.19                                 E190502000035 
+      164.5       1.06       1.24                                 E190502000036 
+      166.5       1.08       1.44                                 E190502000037 
+      168.5       1.34        1.5                                 E190502000038 
+      170.5       1.68       1.57                                 E190502000039 
+      172.5       1.66       1.65                                 E190502000040 
+      174.5        1.6       1.63                                 E190502000041 
+      176.5       1.32       1.64                                 E190502000042 
+      178.5        1.4       1.55                                 E190502000043 
+      180.5       1.71       1.46                                 E190502000044 
+      182.5       1.49       1.35                                 E190502000045 
+      184.5       1.67       1.23                                 E190502000046 
+      186.5       1.37       1.11                                 E190502000047 
+      188.5       1.44       0.97                                 E190502000048 
+      190.5       1.73       0.84                                 E190502000049 
+      192.5        1.2        0.7                                 E190502000050 
+      194.5        1.3       0.56                                 E190502000051 
+ENDDATA             26          0                                 E190502000052 
+ENDSUBENT           51          0                                 E190502099999 
 SUBENT        E1905021   20051025                             E033E190502100001 
 BIB                  4          7                                 E190502100002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190502100003 
@@ -1146,54 +1177,57 @@ MEV        ARB-UNITS                                              E190502100018
  206.5      1.0                                                   E190502100055 
 ENDDATA             39          0                                 E190502100056 
 ENDSUBENT           55          0                                 E190502199999 
-SUBENT        E1905022   20051025                             E033E190502200001 
-BIB                  4         13                                 E190502200002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190502200003 
+SUBENT        E1905022   20150429                             E095E190502200001 
+BIB                  4         16                                 E190502200002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190502200003 
            Total neutron multiplicity before correction for       E190502200004 
            instrumental fluctuation (See Sect. IIIB of the        E190502200005 
            reference)                                             E190502200006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190502200007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190502200007 
            Total neutron multiplicity after correction for        E190502200008 
            instrumental fluctuation (See Sect. IIIB of the        E190502200009 
            reference)                                             E190502200010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190502200011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190502200012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190502200013 
-STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190502200014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190502200015 
-ENDBIB              13          0                                 E190502200016 
-COMMON               2          3                                 E190502200017 
-MASS-MIN   MASS-MAX                                               E190502200018 
-NO-DIM     NO-DIM                                                 E190502200019 
- 106.0      107.0                                                 E190502200020 
-ENDCOMMON            3          0                                 E190502200021 
-DATA                 3         22                                 E190502200022 
-E          DATA      1DATA      2                                 E190502200023 
-MEV        PRT/FIS    PRT/FIS                                     E190502200024 
- 146.5      1.12                                                  E190502200025 
- 148.5      0.84       1.54                                       E190502200026 
- 150.5      1.65       1.48                                       E190502200027 
- 152.5      1.4        1.43                                       E190502200028 
- 154.5      1.32       1.36                                       E190502200029 
- 156.5      1.2        1.31                                       E190502200030 
- 158.5      0.9        1.25                                       E190502200031 
- 160.5      1.05       1.2                                        E190502200032 
- 162.5      1.16       1.17                                       E190502200033 
- 164.5      1.77       1.18                                       E190502200034 
- 166.5      1.48       1.19                                       E190502200035 
- 168.5      1.52       1.24                                       E190502200036 
- 170.5      1.5        1.34                                       E190502200037 
- 172.5      1.31       1.4                                        E190502200038 
- 174.5      1.32       1.48                                       E190502200039 
- 176.5      1.68       1.48                                       E190502200040 
- 178.5      1.66       1.49                                       E190502200041 
- 180.5      1.45       1.41                                       E190502200042 
- 182.5      1.62       1.32                                       E190502200043 
- 184.5      1.23       1.24                                       E190502200044 
- 186.5      2.04       1.11                                       E190502200045 
- 188.5      1.63                                                  E190502200046 
-ENDDATA             24          0                                 E190502200047 
-ENDSUBENT           46          0                                 E190502299999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190502200011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190502200012 
+STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190502200013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190502200014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190502200015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190502200016 
+                       PR,NU/TKE                                  E190502200017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190502200018 
+ENDBIB              16          0                                 E190502200019 
+COMMON               2          3                                 E190502200020 
+MASS-MIN   MASS-MAX                                               E190502200021 
+NO-DIM     NO-DIM                                                 E190502200022 
+ 106.       107.                                                  E190502200023 
+ENDCOMMON            3          0                                 E190502200024 
+DATA                 3         22                                 E190502200025 
+TKE        DATA      1DATA      2                                 E190502200026 
+MEV        PRT/FIS    PRT/FIS                                     E190502200027 
+      146.5       1.12                                            E190502200028 
+      148.5       0.84       1.54                                 E190502200029 
+      150.5       1.65       1.48                                 E190502200030 
+      152.5        1.4       1.43                                 E190502200031 
+      154.5       1.32       1.36                                 E190502200032 
+      156.5        1.2       1.31                                 E190502200033 
+      158.5        0.9       1.25                                 E190502200034 
+      160.5       1.05        1.2                                 E190502200035 
+      162.5       1.16       1.17                                 E190502200036 
+      164.5       1.77       1.18                                 E190502200037 
+      166.5       1.48       1.19                                 E190502200038 
+      168.5       1.52       1.24                                 E190502200039 
+      170.5        1.5       1.34                                 E190502200040 
+      172.5       1.31        1.4                                 E190502200041 
+      174.5       1.32       1.48                                 E190502200042 
+      176.5       1.68       1.48                                 E190502200043 
+      178.5       1.66       1.49                                 E190502200044 
+      180.5       1.45       1.41                                 E190502200045 
+      182.5       1.62       1.32                                 E190502200046 
+      184.5       1.23       1.24                                 E190502200047 
+      186.5       2.04       1.11                                 E190502200048 
+      188.5       1.63                                            E190502200049 
+ENDDATA             24          0                                 E190502200050 
+ENDSUBENT           49          0                                 E190502299999 
 SUBENT        E1905023   20051025                             E033E190502300001 
 BIB                  4          7                                 E190502300002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190502300003 
@@ -1248,52 +1282,55 @@ MEV        ARB-UNITS                                              E190502300018
  200.5      4.0                                                   E190502300052 
 ENDDATA             36          0                                 E190502300053 
 ENDSUBENT           52          0                                 E190502399999 
-SUBENT        E1905024   20051025                             E033E190502400001 
-BIB                  4         13                                 E190502400002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190502400003 
+SUBENT        E1905024   20150429                             E095E190502400001 
+BIB                  4         16                                 E190502400002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190502400003 
            Total neutron multiplicity before correction for       E190502400004 
            instrumental fluctuation (See Sect. IIIB of the        E190502400005 
            reference)                                             E190502400006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190502400007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190502400007 
            Total neutron multiplicity after correction for        E190502400008 
            instrumental fluctuation (See Sect. IIIB of the        E190502400009 
            reference)                                             E190502400010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190502400011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190502400012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190502400013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190502400014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190502400015 
-ENDBIB              13          0                                 E190502400016 
-COMMON               2          3                                 E190502400017 
-MASS-MIN   MASS-MAX                                               E190502400018 
-NO-DIM     NO-DIM                                                 E190502400019 
- 108.0      109.0                                                 E190502400020 
-ENDCOMMON            3          0                                 E190502400021 
-DATA                 3         20                                 E190502400022 
-E          DATA      1DATA      2                                 E190502400023 
-MEV        PRT/FIS    PRT/FIS                                     E190502400024 
- 144.5      1.14                                                  E190502400025 
- 146.5      1.07       1.87                                       E190502400026 
- 148.5      0.95       1.8                                        E190502400027 
- 150.5      0.86       1.73                                       E190502400028 
- 152.5      1.41       1.66                                       E190502400029 
- 154.5      0.94       1.59                                       E190502400030 
- 156.5      1.3        1.51                                       E190502400031 
- 158.5      1.28       1.44                                       E190502400032 
- 160.5      1.24       1.37                                       E190502400033 
- 162.5      1.58       1.33                                       E190502400034 
- 164.5      1.22       1.26                                       E190502400035 
- 166.5      1.2        1.21                                       E190502400036 
- 168.5      1.45       1.2                                        E190502400037 
- 170.5      1.57       1.18                                       E190502400038 
- 172.5      1.57       1.23                                       E190502400039 
- 174.5      1.49       1.24                                       E190502400040 
- 176.5      1.65       1.27                                       E190502400041 
- 178.5      1.57       1.33                                       E190502400042 
- 180.5      1.52                                                  E190502400043 
- 182.5      1.99                                                  E190502400044 
-ENDDATA             22          0                                 E190502400045 
-ENDSUBENT           44          0                                 E190502499999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190502400011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190502400012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190502400013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190502400014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190502400015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190502400016 
+                       PR,NU/TKE                                  E190502400017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190502400018 
+ENDBIB              16          0                                 E190502400019 
+COMMON               2          3                                 E190502400020 
+MASS-MIN   MASS-MAX                                               E190502400021 
+NO-DIM     NO-DIM                                                 E190502400022 
+ 108.       109.                                                  E190502400023 
+ENDCOMMON            3          0                                 E190502400024 
+DATA                 3         20                                 E190502400025 
+TKE        DATA      1DATA      2                                 E190502400026 
+MEV        PRT/FIS    PRT/FIS                                     E190502400027 
+      144.5       1.14                                            E190502400028 
+      146.5       1.07       1.87                                 E190502400029 
+      148.5       0.95        1.8                                 E190502400030 
+      150.5       0.86       1.73                                 E190502400031 
+      152.5       1.41       1.66                                 E190502400032 
+      154.5       0.94       1.59                                 E190502400033 
+      156.5        1.3       1.51                                 E190502400034 
+      158.5       1.28       1.44                                 E190502400035 
+      160.5       1.24       1.37                                 E190502400036 
+      162.5       1.58       1.33                                 E190502400037 
+      164.5       1.22       1.26                                 E190502400038 
+      166.5        1.2       1.21                                 E190502400039 
+      168.5       1.45        1.2                                 E190502400040 
+      170.5       1.57       1.18                                 E190502400041 
+      172.5       1.57       1.23                                 E190502400042 
+      174.5       1.49       1.24                                 E190502400043 
+      176.5       1.65       1.27                                 E190502400044 
+      178.5       1.57       1.33                                 E190502400045 
+      180.5       1.52                                            E190502400046 
+      182.5       1.99                                            E190502400047 
+ENDDATA             22          0                                 E190502400048 
+ENDSUBENT           47          0                                 E190502499999 
 SUBENT        E1905025   20051025                             E033E190502500001 
 BIB                  4          7                                 E190502500002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190502500003 
@@ -1345,48 +1382,51 @@ MEV        ARB-UNITS                                              E190502500018
  198.5      1.0                                                   E190502500049 
 ENDDATA             33          0                                 E190502500050 
 ENDSUBENT           49          0                                 E190502599999 
-SUBENT        E1905026   20051025                             E033E190502600001 
-BIB                  4         13                                 E190502600002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190502600003 
+SUBENT        E1905026   20150429                             E095E190502600001 
+BIB                  4         16                                 E190502600002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190502600003 
            Total neutron multiplicity before correction for       E190502600004 
            instrumental fluctuation (See Sect. IIIB of the        E190502600005 
            reference)                                             E190502600006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190502600007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190502600007 
            Total neutron multiplicity after correction for        E190502600008 
            instrumental fluctuation (See Sect. IIIB of the        E190502600009 
            reference)                                             E190502600010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190502600011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190502600012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190502600013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190502600014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190502600015 
-ENDBIB              13          0                                 E190502600016 
-COMMON               2          3                                 E190502600017 
-MASS-MIN   MASS-MAX                                               E190502600018 
-NO-DIM     NO-DIM                                                 E190502600019 
- 112.0      113.0                                                 E190502600020 
-ENDCOMMON            3          0                                 E190502600021 
-DATA                 3         16                                 E190502600022 
-E          DATA      1DATA      2                                 E190502600023 
-MEV        PRT/FIS    PRT/FIS                                     E190502600024 
- 146.5      2.23       2.3                                        E190502600025 
- 148.5      1.9        2.22                                       E190502600026 
- 150.5      1.84       2.13                                       E190502600027 
- 152.5      1.55       2.05                                       E190502600028 
- 154.5      1.33       1.96                                       E190502600029 
- 156.5      1.51       1.87                                       E190502600030 
- 158.5      1.72       1.78                                       E190502600031 
- 160.5      1.96       1.69                                       E190502600032 
- 162.5      1.98       1.6                                        E190502600033 
- 164.5      1.59       1.51                                       E190502600034 
- 166.5      1.96       1.42                                       E190502600035 
- 168.5      1.82       1.34                                       E190502600036 
- 170.5      1.8        1.25                                       E190502600037 
- 172.5      1.38       1.17                                       E190502600038 
- 174.5      1.85       1.08                                       E190502600039 
- 176.5      1.91       1.02                                       E190502600040 
-ENDDATA             18          0                                 E190502600041 
-ENDSUBENT           40          0                                 E190502699999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190502600011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190502600012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190502600013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190502600014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190502600015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190502600016 
+                       PR,NU/TKE                                  E190502600017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190502600018 
+ENDBIB              16          0                                 E190502600019 
+COMMON               2          3                                 E190502600020 
+MASS-MIN   MASS-MAX                                               E190502600021 
+NO-DIM     NO-DIM                                                 E190502600022 
+ 112.       113.                                                  E190502600023 
+ENDCOMMON            3          0                                 E190502600024 
+DATA                 3         16                                 E190502600025 
+TKE        DATA      1DATA      2                                 E190502600026 
+MEV        PRT/FIS    PRT/FIS                                     E190502600027 
+      146.5       2.23        2.3                                 E190502600028 
+      148.5        1.9       2.22                                 E190502600029 
+      150.5       1.84       2.13                                 E190502600030 
+      152.5       1.55       2.05                                 E190502600031 
+      154.5       1.33       1.96                                 E190502600032 
+      156.5       1.51       1.87                                 E190502600033 
+      158.5       1.72       1.78                                 E190502600034 
+      160.5       1.96       1.69                                 E190502600035 
+      162.5       1.98        1.6                                 E190502600036 
+      164.5       1.59       1.51                                 E190502600037 
+      166.5       1.96       1.42                                 E190502600038 
+      168.5       1.82       1.34                                 E190502600039 
+      170.5        1.8       1.25                                 E190502600040 
+      172.5       1.38       1.17                                 E190502600041 
+      174.5       1.85       1.08                                 E190502600042 
+      176.5       1.91       1.02                                 E190502600043 
+ENDDATA             18          0                                 E190502600044 
+ENDSUBENT           43          0                                 E190502699999 
 SUBENT        E1905027   20051025                             E033E190502700001 
 BIB                  4          7                                 E190502700002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190502700003 
@@ -1433,48 +1473,51 @@ MEV        ARB-UNITS                                              E190502700018
  188.5      2.0                                                   E190502700044 
 ENDDATA             28          0                                 E190502700045 
 ENDSUBENT           44          0                                 E190502799999 
-SUBENT        E1905028   20051025                             E033E190502800001 
-BIB                  4         13                                 E190502800002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190502800003 
+SUBENT        E1905028   20150429                             E095E190502800001 
+BIB                  4         16                                 E190502800002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190502800003 
            Total neutron multiplicity before correction for       E190502800004 
            instrumental fluctuation (See Sect. IIIB of the        E190502800005 
            reference)                                             E190502800006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190502800007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190502800007 
            Total neutron multiplicity after correction for        E190502800008 
            instrumental fluctuation (See Sect. IIIB of the        E190502800009 
            reference)                                             E190502800010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190502800011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190502800012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190502800013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190502800014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190502800015 
-ENDBIB              13          0                                 E190502800016 
-COMMON               2          3                                 E190502800017 
-MASS-MIN   MASS-MAX                                               E190502800018 
-NO-DIM     NO-DIM                                                 E190502800019 
- 116.0      117.0                                                 E190502800020 
-ENDCOMMON            3          0                                 E190502800021 
-DATA                 3         16                                 E190502800022 
-E          DATA      1DATA      2                                 E190502800023 
-MEV        PRT/FIS    PRT/FIS                                     E190502800024 
- 146.5      2.24       2.72                                       E190502800025 
- 148.5      2.18       2.62                                       E190502800026 
- 150.5      2.6        2.53                                       E190502800027 
- 152.5      2.42       2.43                                       E190502800028 
- 154.5      2.34       2.33                                       E190502800029 
- 156.5      2.32       2.23                                       E190502800030 
- 158.5      2.09       2.13                                       E190502800031 
- 160.5      2.33       2.02                                       E190502800032 
- 162.5      2.02       1.92                                       E190502800033 
- 164.5      1.93       1.82                                       E190502800034 
- 166.5      1.69       1.71                                       E190502800035 
- 168.5      1.69       1.6                                        E190502800036 
- 170.5      1.92       1.5                                        E190502800037 
- 172.5      1.73       1.39                                       E190502800038 
- 174.5      1.52       1.27                                       E190502800039 
- 176.5      1.84                                                  E190502800040 
-ENDDATA             18          0                                 E190502800041 
-ENDSUBENT           40          0                                 E190502899999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190502800011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190502800012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190502800013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190502800014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190502800015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190502800016 
+                       PR,NU/TKE                                  E190502800017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190502800018 
+ENDBIB              16          0                                 E190502800019 
+COMMON               2          3                                 E190502800020 
+MASS-MIN   MASS-MAX                                               E190502800021 
+NO-DIM     NO-DIM                                                 E190502800022 
+ 116.       117.                                                  E190502800023 
+ENDCOMMON            3          0                                 E190502800024 
+DATA                 3         16                                 E190502800025 
+TKE        DATA      1DATA      2                                 E190502800026 
+MEV        PRT/FIS    PRT/FIS                                     E190502800027 
+      146.5       2.24       2.72                                 E190502800028 
+      148.5       2.18       2.62                                 E190502800029 
+      150.5        2.6       2.53                                 E190502800030 
+      152.5       2.42       2.43                                 E190502800031 
+      154.5       2.34       2.33                                 E190502800032 
+      156.5       2.32       2.23                                 E190502800033 
+      158.5       2.09       2.13                                 E190502800034 
+      160.5       2.33       2.02                                 E190502800035 
+      162.5       2.02       1.92                                 E190502800036 
+      164.5       1.93       1.82                                 E190502800037 
+      166.5       1.69       1.71                                 E190502800038 
+      168.5       1.69        1.6                                 E190502800039 
+      170.5       1.92        1.5                                 E190502800040 
+      172.5       1.73       1.39                                 E190502800041 
+      174.5       1.52       1.27                                 E190502800042 
+      176.5       1.84                                            E190502800043 
+ENDDATA             18          0                                 E190502800044 
+ENDSUBENT           43          0                                 E190502899999 
 SUBENT        E1905029   20051025                             E033E190502900001 
 BIB                  4          7                                 E190502900002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190502900003 
@@ -1521,49 +1564,52 @@ MEV        ARB-UNITS                                              E190502900018
  186.5      3.0                                                   E190502900044 
 ENDDATA             28          0                                 E190502900045 
 ENDSUBENT           44          0                                 E190502999999 
-SUBENT        E1905030   20051025                             E033E190503000001 
-BIB                  4         13                                 E190503000002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190503000003 
+SUBENT        E1905030   20150429                             E095E190503000001 
+BIB                  4         16                                 E190503000002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190503000003 
            Total neutron multiplicity before correction for       E190503000004 
            instrumental fluctuation (See Sect. IIIB of the        E190503000005 
            reference)                                             E190503000006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190503000007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190503000007 
            Total neutron multiplicity after correction for        E190503000008 
            instrumental fluctuation (See Sect. IIIB of the        E190503000009 
            reference)                                             E190503000010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190503000011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190503000012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190503000013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190503000014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190503000015 
-ENDBIB              13          0                                 E190503000016 
-COMMON               2          3                                 E190503000017 
-MASS-MIN   MASS-MAX                                               E190503000018 
-NO-DIM     NO-DIM                                                 E190503000019 
- 120.0      121.0                                                 E190503000020 
-ENDCOMMON            3          0                                 E190503000021 
-DATA                 3         17                                 E190503000022 
-E          DATA      1DATA      2                                 E190503000023 
-MEV        PRT/FIS    PRT/FIS                                     E190503000024 
- 146.5      2.89       3.2                                        E190503000025 
- 148.5      2.54       3.09                                       E190503000026 
- 150.5      2.88       2.98                                       E190503000027 
- 152.5      2.89       2.87                                       E190503000028 
- 154.5      2.29       2.75                                       E190503000029 
- 156.5      2.66       2.64                                       E190503000030 
- 158.5      2.37       2.52                                       E190503000031 
- 160.5      2.24       2.41                                       E190503000032 
- 162.5      2.52       2.29                                       E190503000033 
- 164.5      2.3        2.17                                       E190503000034 
- 166.5      1.88       2.05                                       E190503000035 
- 168.5      1.6        1.92                                       E190503000036 
- 170.5      2.13       1.8                                        E190503000037 
- 172.5      1.72       1.67                                       E190503000038 
- 174.5      1.92       1.5                                        E190503000039 
- 176.5      1.48                                                  E190503000040 
- 178.5      1.64                                                  E190503000041 
-ENDDATA             19          0                                 E190503000042 
-ENDSUBENT           41          0                                 E190503099999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190503000011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190503000012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190503000013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190503000014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190503000015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190503000016 
+                       PR,NU/TKE                                  E190503000017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190503000018 
+ENDBIB              16          0                                 E190503000019 
+COMMON               2          3                                 E190503000020 
+MASS-MIN   MASS-MAX                                               E190503000021 
+NO-DIM     NO-DIM                                                 E190503000022 
+ 120.       121.                                                  E190503000023 
+ENDCOMMON            3          0                                 E190503000024 
+DATA                 3         17                                 E190503000025 
+TKE        DATA      1DATA      2                                 E190503000026 
+MEV        PRT/FIS    PRT/FIS                                     E190503000027 
+      146.5       2.89        3.2                                 E190503000028 
+      148.5       2.54       3.09                                 E190503000029 
+      150.5       2.88       2.98                                 E190503000030 
+      152.5       2.89       2.87                                 E190503000031 
+      154.5       2.29       2.75                                 E190503000032 
+      156.5       2.66       2.64                                 E190503000033 
+      158.5       2.37       2.52                                 E190503000034 
+      160.5       2.24       2.41                                 E190503000035 
+      162.5       2.52       2.29                                 E190503000036 
+      164.5        2.3       2.17                                 E190503000037 
+      166.5       1.88       2.05                                 E190503000038 
+      168.5        1.6       1.92                                 E190503000039 
+      170.5       2.13        1.8                                 E190503000040 
+      172.5       1.72       1.67                                 E190503000041 
+      174.5       1.92        1.5                                 E190503000042 
+      176.5       1.48                                            E190503000043 
+      178.5       1.64                                            E190503000044 
+ENDDATA             19          0                                 E190503000045 
+ENDSUBENT           44          0                                 E190503099999 
 SUBENT        E1905031   20051025                             E033E190503100001 
 BIB                  4          7                                 E190503100002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190503100003 
@@ -1611,51 +1657,54 @@ MEV        ARB-UNITS                                              E190503100018
  186.5      2.0                                                   E190503100045 
 ENDDATA             29          0                                 E190503100046 
 ENDSUBENT           45          0                                 E190503199999 
-SUBENT        E1905032   20051025                             E033E190503200001 
-BIB                  4         13                                 E190503200002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190503200003 
+SUBENT        E1905032   20150429                             E095E190503200001 
+BIB                  4         16                                 E190503200002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190503200003 
            Total neutron multiplicity before correction for       E190503200004 
            instrumental fluctuation (See Sect. IIIB of the        E190503200005 
            reference)                                             E190503200006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190503200007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190503200007 
            Total neutron multiplicity after correction for        E190503200008 
            instrumental fluctuation (See Sect. IIIB of the        E190503200009 
            reference)                                             E190503200010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190503200011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190503200012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190503200013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190503200014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190503200015 
-ENDBIB              13          0                                 E190503200016 
-COMMON               2          3                                 E190503200017 
-MASS-MIN   MASS-MAX                                               E190503200018 
-NO-DIM     NO-DIM                                                 E190503200019 
- 124.0      125.0                                                 E190503200020 
-ENDCOMMON            3          0                                 E190503200021 
-DATA                 3         19                                 E190503200022 
-E          DATA      1DATA      2                                 E190503200023 
-MEV        PRT/FIS    PRT/FIS                                     E190503200024 
- 146.5      3.27       3.63                                       E190503200025 
- 148.5      3.98       3.51                                       E190503200026 
- 150.5      3.01       3.39                                       E190503200027 
- 152.5      3.0        3.27                                       E190503200028 
- 154.5      2.51       3.14                                       E190503200029 
- 156.5      3.03       3.02                                       E190503200030 
- 158.5      2.29       2.89                                       E190503200031 
- 160.5      3.17       2.77                                       E190503200032 
- 162.5      2.3        2.63                                       E190503200033 
- 164.5      2.08       2.47                                       E190503200034 
- 166.5      2.26       2.3                                        E190503200035 
- 168.5      2.3        2.16                                       E190503200036 
- 170.5      1.86       1.89                                       E190503200037 
- 172.5      1.99       1.72                                       E190503200038 
- 174.5      1.85       1.41                                       E190503200039 
- 176.5      1.87       1.14                                       E190503200040 
- 178.5      1.39       0.94                                       E190503200041 
- 180.5      1.35                                                  E190503200042 
- 182.5      1.01                                                  E190503200043 
-ENDDATA             21          0                                 E190503200044 
-ENDSUBENT           43          0                                 E190503299999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190503200011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190503200012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190503200013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190503200014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190503200015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190503200016 
+                       PR,NU/TKE                                  E190503200017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190503200018 
+ENDBIB              16          0                                 E190503200019 
+COMMON               2          3                                 E190503200020 
+MASS-MIN   MASS-MAX                                               E190503200021 
+NO-DIM     NO-DIM                                                 E190503200022 
+ 124.       125.                                                  E190503200023 
+ENDCOMMON            3          0                                 E190503200024 
+DATA                 3         19                                 E190503200025 
+TKE        DATA      1DATA      2                                 E190503200026 
+MEV        PRT/FIS    PRT/FIS                                     E190503200027 
+      146.5       3.27       3.63                                 E190503200028 
+      148.5       3.98       3.51                                 E190503200029 
+      150.5       3.01       3.39                                 E190503200030 
+      152.5         3.       3.27                                 E190503200031 
+      154.5       2.51       3.14                                 E190503200032 
+      156.5       3.03       3.02                                 E190503200033 
+      158.5       2.29       2.89                                 E190503200034 
+      160.5       3.17       2.77                                 E190503200035 
+      162.5        2.3       2.63                                 E190503200036 
+      164.5       2.08       2.47                                 E190503200037 
+      166.5       2.26        2.3                                 E190503200038 
+      168.5        2.3       2.16                                 E190503200039 
+      170.5       1.86       1.89                                 E190503200040 
+      172.5       1.99       1.72                                 E190503200041 
+      174.5       1.85       1.41                                 E190503200042 
+      176.5       1.87       1.14                                 E190503200043 
+      178.5       1.39       0.94                                 E190503200044 
+      180.5       1.35                                            E190503200045 
+      182.5       1.01                                            E190503200046 
+ENDDATA             21          0                                 E190503200047 
+ENDSUBENT           46          0                                 E190503299999 
 SUBENT        E1905033   20051025                             E033E190503300001 
 BIB                  4          7                                 E190503300002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190503300003 
@@ -1703,54 +1752,57 @@ MEV        ARB-UNITS                                              E190503300018
  190.5      10.9                                                  E190503300045 
 ENDDATA             29          0                                 E190503300046 
 ENDSUBENT           45          0                                 E190503399999 
-SUBENT        E1905034   20051025                             E033E190503400001 
-BIB                  4         13                                 E190503400002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190503400003 
+SUBENT        E1905034   20150429                             E095E190503400001 
+BIB                  4         16                                 E190503400002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190503400003 
            Total neutron multiplicity before correction for       E190503400004 
            instrumental fluctuation (See Sect. IIIB of the        E190503400005 
            reference)                                             E190503400006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190503400007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190503400007 
            Total neutron multiplicity after correction for        E190503400008 
            instrumental fluctuation (See Sect. IIIB of the        E190503400009 
            reference)                                             E190503400010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190503400011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190503400012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190503400013 
-STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190503400014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190503400015 
-ENDBIB              13          0                                 E190503400016 
-COMMON               2          3                                 E190503400017 
-MASS-MIN   MASS-MAX                                               E190503400018 
-NO-DIM     NO-DIM                                                 E190503400019 
- 126.0      127.0                                                 E190503400020 
-ENDCOMMON            3          0                                 E190503400021 
-DATA                 3         22                                 E190503400022 
-E          DATA      1DATA      2                                 E190503400023 
-MEV        PRT/FIS    PRT/FIS                                     E190503400024 
- 146.5      4.01       3.91                                       E190503400025 
- 148.5      3.39       3.78                                       E190503400026 
- 150.5      3.16       3.66                                       E190503400027 
- 152.5      3.13       3.53                                       E190503400028 
- 154.5      3.05       3.4                                        E190503400029 
- 156.5      2.85       3.27                                       E190503400030 
- 158.5      3.18       3.12                                       E190503400031 
- 160.5      2.48       2.98                                       E190503400032 
- 162.5      2.88       2.82                                       E190503400033 
- 164.5      2.37       2.62                                       E190503400034 
- 166.5      2.08       2.33                                       E190503400035 
- 168.5      1.93       2.15                                       E190503400036 
- 170.5      2.0        1.88                                       E190503400037 
- 172.5      1.79       1.58                                       E190503400038 
- 174.5      1.48       1.34                                       E190503400039 
- 176.5      1.48       1.08                                       E190503400040 
- 178.5      1.21       0.87                                       E190503400041 
- 180.5      1.61       0.71                                       E190503400042 
- 182.5      0.59       0.57                                       E190503400043 
- 184.5      1.38       0.46                                       E190503400044 
- 186.5      1.47                                                  E190503400045 
- 188.5      1.04                                                  E190503400046 
-ENDDATA             24          0                                 E190503400047 
-ENDSUBENT           46          0                                 E190503499999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190503400011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190503400012 
+STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190503400013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190503400014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190503400015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190503400016 
+                       PR,NU/TKE                                  E190503400017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190503400018 
+ENDBIB              16          0                                 E190503400019 
+COMMON               2          3                                 E190503400020 
+MASS-MIN   MASS-MAX                                               E190503400021 
+NO-DIM     NO-DIM                                                 E190503400022 
+ 126.       127.                                                  E190503400023 
+ENDCOMMON            3          0                                 E190503400024 
+DATA                 3         22                                 E190503400025 
+TKE        DATA      1DATA      2                                 E190503400026 
+MEV        PRT/FIS    PRT/FIS                                     E190503400027 
+      146.5       4.01       3.91                                 E190503400028 
+      148.5       3.39       3.78                                 E190503400029 
+      150.5       3.16       3.66                                 E190503400030 
+      152.5       3.13       3.53                                 E190503400031 
+      154.5       3.05        3.4                                 E190503400032 
+      156.5       2.85       3.27                                 E190503400033 
+      158.5       3.18       3.12                                 E190503400034 
+      160.5       2.48       2.98                                 E190503400035 
+      162.5       2.88       2.82                                 E190503400036 
+      164.5       2.37       2.62                                 E190503400037 
+      166.5       2.08       2.33                                 E190503400038 
+      168.5       1.93       2.15                                 E190503400039 
+      170.5         2.       1.88                                 E190503400040 
+      172.5       1.79       1.58                                 E190503400041 
+      174.5       1.48       1.34                                 E190503400042 
+      176.5       1.48       1.08                                 E190503400043 
+      178.5       1.21       0.87                                 E190503400044 
+      180.5       1.61       0.71                                 E190503400045 
+      182.5       0.59       0.57                                 E190503400046 
+      184.5       1.38       0.46                                 E190503400047 
+      186.5       1.47                                            E190503400048 
+      188.5       1.04                                            E190503400049 
+ENDDATA             24          0                                 E190503400050 
+ENDSUBENT           49          0                                 E190503499999 
 SUBENT        E1905035   20051025                             E033E190503500001 
 BIB                  4          7                                 E190503500002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190503500003 
@@ -1804,57 +1856,60 @@ MEV        ARB-UNITS                                              E190503500018
  198.5      2.0                                                   E190503500051 
 ENDDATA             35          0                                 E190503500052 
 ENDSUBENT           51          0                                 E190503599999 
-SUBENT        E1905036   20051025                             E033E190503600001 
-BIB                  4         13                                 E190503600002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190503600003 
+SUBENT        E1905036   20150429                             E095E190503600001 
+BIB                  4         16                                 E190503600002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190503600003 
            Total neutron multiplicity before correction for       E190503600004 
            instrumental fluctuation (See Sect. IIIB of the        E190503600005 
            reference)                                             E190503600006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190503600007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190503600007 
            Total neutron multiplicity after correction for        E190503600008 
            instrumental fluctuation (See Sect. IIIB of the        E190503600009 
            reference)                                             E190503600010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190503600011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190503600012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190503600013 
-STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190503600014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190503600015 
-ENDBIB              13          0                                 E190503600016 
-COMMON               2          3                                 E190503600017 
-MASS-MIN   MASS-MAX                                               E190503600018 
-NO-DIM     NO-DIM                                                 E190503600019 
- 128.0      129.0                                                 E190503600020 
-ENDCOMMON            3          0                                 E190503600021 
-DATA                 3         25                                 E190503600022 
-E          DATA      1DATA      2                                 E190503600023 
-MEV        PRT/FIS    PRT/FIS                                     E190503600024 
- 146.5      4.65                                                  E190503600025 
- 148.5      3.66       4.02                                       E190503600026 
- 150.5      3.39       3.9                                        E190503600027 
- 152.5      2.74       3.75                                       E190503600028 
- 154.5      2.64       3.59                                       E190503600029 
- 156.5      2.9        3.44                                       E190503600030 
- 158.5      2.98       3.33                                       E190503600031 
- 160.5      2.83       3.11                                       E190503600032 
- 162.5      2.62       2.86                                       E190503600033 
- 164.5      2.24       2.61                                       E190503600034 
- 166.5      2.6        2.32                                       E190503600035 
- 168.5      1.75       2.04                                       E190503600036 
- 170.5      1.87       1.71                                       E190503600037 
- 172.5      1.83       1.44                                       E190503600038 
- 174.5      1.77       1.26                                       E190503600039 
- 176.5      1.23       1.08                                       E190503600040 
- 178.5      1.23       0.94                                       E190503600041 
- 180.5      1.0        0.79                                       E190503600042 
- 182.5      1.2        0.68                                       E190503600043 
- 184.5      1.03       0.58                                       E190503600044 
- 186.5      0.58       0.49                                       E190503600045 
- 188.5      0.64       0.39                                       E190503600046 
- 190.5      1.02       0.29                                       E190503600047 
- 192.5      1.12       0.19                                       E190503600048 
- 194.5                 0.1                                        E190503600049 
-ENDDATA             27          0                                 E190503600050 
-ENDSUBENT           49          0                                 E190503699999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190503600011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190503600012 
+STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190503600013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190503600014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190503600015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190503600016 
+                       PR,NU/TKE                                  E190503600017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190503600018 
+ENDBIB              16          0                                 E190503600019 
+COMMON               2          3                                 E190503600020 
+MASS-MIN   MASS-MAX                                               E190503600021 
+NO-DIM     NO-DIM                                                 E190503600022 
+ 128.       129.                                                  E190503600023 
+ENDCOMMON            3          0                                 E190503600024 
+DATA                 3         25                                 E190503600025 
+TKE        DATA      1DATA      2                                 E190503600026 
+MEV        PRT/FIS    PRT/FIS                                     E190503600027 
+      146.5       4.65                                            E190503600028 
+      148.5       3.66       4.02                                 E190503600029 
+      150.5       3.39        3.9                                 E190503600030 
+      152.5       2.74       3.75                                 E190503600031 
+      154.5       2.64       3.59                                 E190503600032 
+      156.5        2.9       3.44                                 E190503600033 
+      158.5       2.98       3.33                                 E190503600034 
+      160.5       2.83       3.11                                 E190503600035 
+      162.5       2.62       2.86                                 E190503600036 
+      164.5       2.24       2.61                                 E190503600037 
+      166.5        2.6       2.32                                 E190503600038 
+      168.5       1.75       2.04                                 E190503600039 
+      170.5       1.87       1.71                                 E190503600040 
+      172.5       1.83       1.44                                 E190503600041 
+      174.5       1.77       1.26                                 E190503600042 
+      176.5       1.23       1.08                                 E190503600043 
+      178.5       1.23       0.94                                 E190503600044 
+      180.5         1.       0.79                                 E190503600045 
+      182.5        1.2       0.68                                 E190503600046 
+      184.5       1.03       0.58                                 E190503600047 
+      186.5       0.58       0.49                                 E190503600048 
+      188.5       0.64       0.39                                 E190503600049 
+      190.5       1.02       0.29                                 E190503600050 
+      192.5       1.12       0.19                                 E190503600051 
+      194.5                   0.1                                 E190503600052 
+ENDDATA             27          0                                 E190503600053 
+ENDSUBENT           52          0                                 E190503699999 
 SUBENT        E1905037   20051025                             E033E190503700001 
 BIB                  4          7                                 E190503700002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190503700003 
@@ -1910,57 +1965,60 @@ MEV        ARB-UNITS                                              E190503700018
  202.5      2.0                                                   E190503700053 
 ENDDATA             37          0                                 E190503700054 
 ENDSUBENT           53          0                                 E190503799999 
-SUBENT        E1905038   20051025                             E033E190503800001 
-BIB                  4         13                                 E190503800002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190503800003 
+SUBENT        E1905038   20150429                             E095E190503800001 
+BIB                  4         16                                 E190503800002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190503800003 
            Total neutron multiplicity before correction for       E190503800004 
            instrumental fluctuation (See Sect. IIIB of the        E190503800005 
            reference)                                             E190503800006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190503800007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190503800007 
            Total neutron multiplicity after correction for        E190503800008 
            instrumental fluctuation (See Sect. IIIB of the        E190503800009 
            reference)                                             E190503800010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190503800011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190503800012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190503800013 
-STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190503800014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190503800015 
-ENDBIB              13          0                                 E190503800016 
-COMMON               2          3                                 E190503800017 
-MASS-MIN   MASS-MAX                                               E190503800018 
-NO-DIM     NO-DIM                                                 E190503800019 
- 130.0      131.0                                                 E190503800020 
-ENDCOMMON            3          0                                 E190503800021 
-DATA                 3         25                                 E190503800022 
-E          DATA      1DATA      2                                 E190503800023 
-MEV        PRT/FIS    PRT/FIS                                     E190503800024 
- 148.5      3.98       4.2                                        E190503800025 
- 150.5      4.04       4.07                                       E190503800026 
- 152.5      3.0        3.92                                       E190503800027 
- 154.5      2.86       3.75                                       E190503800028 
- 156.5      2.76       3.58                                       E190503800029 
- 158.5      2.7        3.34                                       E190503800030 
- 160.5      2.65       3.09                                       E190503800031 
- 162.5      2.4        2.74                                       E190503800032 
- 164.5      2.41       2.46                                       E190503800033 
- 166.5      2.01       2.13                                       E190503800034 
- 168.5      1.76       1.89                                       E190503800035 
- 170.5      1.72       1.69                                       E190503800036 
- 172.5      1.53       1.47                                       E190503800037 
- 174.5      1.38       1.31                                       E190503800038 
- 176.5      1.14       1.18                                       E190503800039 
- 178.5      1.32       1.06                                       E190503800040 
- 180.5      1.24       0.96                                       E190503800041 
- 182.5      0.78       0.84                                       E190503800042 
- 184.5      0.93       0.74                                       E190503800043 
- 186.5      0.68       0.64                                       E190503800044 
- 188.5      1.2        0.53                                       E190503800045 
- 190.5      0.88       0.43                                       E190503800046 
- 192.5      0.91       0.33                                       E190503800047 
- 194.5      0.69       0.22                                       E190503800048 
- 196.5                 0.11                                       E190503800049 
-ENDDATA             27          0                                 E190503800050 
-ENDSUBENT           49          0                                 E190503899999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190503800011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190503800012 
+STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190503800013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190503800014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190503800015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190503800016 
+                       PR,NU/TKE                                  E190503800017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190503800018 
+ENDBIB              16          0                                 E190503800019 
+COMMON               2          3                                 E190503800020 
+MASS-MIN   MASS-MAX                                               E190503800021 
+NO-DIM     NO-DIM                                                 E190503800022 
+ 130.       131.                                                  E190503800023 
+ENDCOMMON            3          0                                 E190503800024 
+DATA                 3         25                                 E190503800025 
+TKE        DATA      1DATA      2                                 E190503800026 
+MEV        PRT/FIS    PRT/FIS                                     E190503800027 
+      148.5       3.98        4.2                                 E190503800028 
+      150.5       4.04       4.07                                 E190503800029 
+      152.5         3.       3.92                                 E190503800030 
+      154.5       2.86       3.75                                 E190503800031 
+      156.5       2.76       3.58                                 E190503800032 
+      158.5        2.7       3.34                                 E190503800033 
+      160.5       2.65       3.09                                 E190503800034 
+      162.5        2.4       2.74                                 E190503800035 
+      164.5       2.41       2.46                                 E190503800036 
+      166.5       2.01       2.13                                 E190503800037 
+      168.5       1.76       1.89                                 E190503800038 
+      170.5       1.72       1.69                                 E190503800039 
+      172.5       1.53       1.47                                 E190503800040 
+      174.5       1.38       1.31                                 E190503800041 
+      176.5       1.14       1.18                                 E190503800042 
+      178.5       1.32       1.06                                 E190503800043 
+      180.5       1.24       0.96                                 E190503800044 
+      182.5       0.78       0.84                                 E190503800045 
+      184.5       0.93       0.74                                 E190503800046 
+      186.5       0.68       0.64                                 E190503800047 
+      188.5        1.2       0.53                                 E190503800048 
+      190.5       0.88       0.43                                 E190503800049 
+      192.5       0.91       0.33                                 E190503800050 
+      194.5       0.69       0.22                                 E190503800051 
+      196.5                  0.11                                 E190503800052 
+ENDDATA             27          0                                 E190503800053 
+ENDSUBENT           52          0                                 E190503899999 
 SUBENT        E1905039   20051025                             E033E190503900001 
 BIB                  4          7                                 E190503900002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190503900003 
@@ -2018,58 +2076,61 @@ MEV        ARB-UNITS                                              E190503900018
  204.5      2.0                                                   E190503900055 
 ENDDATA             39          0                                 E190503900056 
 ENDSUBENT           55          0                                 E190503999999 
-SUBENT        E1905040   20051025                             E033E190504000001 
-BIB                  4         13                                 E190504000002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190504000003 
+SUBENT        E1905040   20150429                             E095E190504000001 
+BIB                  4         16                                 E190504000002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190504000003 
            Total neutron multiplicity before correction for       E190504000004 
            instrumental fluctuation (See Sect. IIIB of the        E190504000005 
            reference)                                             E190504000006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190504000007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190504000007 
            Total neutron multiplicity after correction for        E190504000008 
            instrumental fluctuation (See Sect. IIIB of the        E190504000009 
            reference)                                             E190504000010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190504000011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190504000012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190504000013 
-STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190504000014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190504000015 
-ENDBIB              13          0                                 E190504000016 
-COMMON               2          3                                 E190504000017 
-MASS-MIN   MASS-MAX                                               E190504000018 
-NO-DIM     NO-DIM                                                 E190504000019 
- 132.0      133.0                                                 E190504000020 
-ENDCOMMON            3          0                                 E190504000021 
-DATA                 3         26                                 E190504000022 
-E          DATA      1DATA      2                                 E190504000023 
-MEV        PRT/FIS    PRT/FIS                                     E190504000024 
- 148.5                 4.35                                       E190504000025 
- 150.5      3.93       4.15                                       E190504000026 
- 152.5      3.5        4.01                                       E190504000027 
- 154.5      2.84       3.81                                       E190504000028 
- 156.5      2.67       3.57                                       E190504000029 
- 158.5      2.65       3.28                                       E190504000030 
- 160.5      2.27       2.96                                       E190504000031 
- 162.5      2.08       2.67                                       E190504000032 
- 164.5      2.1        2.4                                        E190504000033 
- 166.5      1.7        2.15                                       E190504000034 
- 168.5      1.6        1.93                                       E190504000035 
- 170.5      1.62       1.78                                       E190504000036 
- 172.5      1.48       1.63                                       E190504000037 
- 174.5      1.14       1.51                                       E190504000038 
- 176.5      0.98       1.38                                       E190504000039 
- 178.5      0.87       1.27                                       E190504000040 
- 180.5      1.19       1.15                                       E190504000041 
- 182.5      0.89       1.04                                       E190504000042 
- 184.5      1.29       0.92                                       E190504000043 
- 186.5      1.2        0.81                                       E190504000044 
- 188.5      1.08       0.7                                        E190504000045 
- 190.5      0.65       0.59                                       E190504000046 
- 192.5      1.16       0.47                                       E190504000047 
- 194.5      1.21       0.36                                       E190504000048 
- 196.5      1.69       0.23                                       E190504000049 
- 198.5      1.25                                                  E190504000050 
-ENDDATA             28          0                                 E190504000051 
-ENDSUBENT           50          0                                 E190504099999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190504000011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190504000012 
+STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190504000013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190504000014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190504000015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190504000016 
+                       PR,NU/TKE                                  E190504000017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190504000018 
+ENDBIB              16          0                                 E190504000019 
+COMMON               2          3                                 E190504000020 
+MASS-MIN   MASS-MAX                                               E190504000021 
+NO-DIM     NO-DIM                                                 E190504000022 
+ 132.       133.                                                  E190504000023 
+ENDCOMMON            3          0                                 E190504000024 
+DATA                 3         26                                 E190504000025 
+TKE        DATA      1DATA      2                                 E190504000026 
+MEV        PRT/FIS    PRT/FIS                                     E190504000027 
+      148.5                  4.35                                 E190504000028 
+      150.5       3.93       4.15                                 E190504000029 
+      152.5        3.5       4.01                                 E190504000030 
+      154.5       2.84       3.81                                 E190504000031 
+      156.5       2.67       3.57                                 E190504000032 
+      158.5       2.65       3.28                                 E190504000033 
+      160.5       2.27       2.96                                 E190504000034 
+      162.5       2.08       2.67                                 E190504000035 
+      164.5        2.1        2.4                                 E190504000036 
+      166.5        1.7       2.15                                 E190504000037 
+      168.5        1.6       1.93                                 E190504000038 
+      170.5       1.62       1.78                                 E190504000039 
+      172.5       1.48       1.63                                 E190504000040 
+      174.5       1.14       1.51                                 E190504000041 
+      176.5       0.98       1.38                                 E190504000042 
+      178.5       0.87       1.27                                 E190504000043 
+      180.5       1.19       1.15                                 E190504000044 
+      182.5       0.89       1.04                                 E190504000045 
+      184.5       1.29       0.92                                 E190504000046 
+      186.5        1.2       0.81                                 E190504000047 
+      188.5       1.08        0.7                                 E190504000048 
+      190.5       0.65       0.59                                 E190504000049 
+      192.5       1.16       0.47                                 E190504000050 
+      194.5       1.21       0.36                                 E190504000051 
+      196.5       1.69       0.23                                 E190504000052 
+      198.5       1.25                                            E190504000053 
+ENDDATA             28          0                                 E190504000054 
+ENDSUBENT           53          0                                 E190504099999 
 SUBENT        E1905041   20051025                             E033E190504100001 
 BIB                  4          7                                 E190504100002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190504100003 
@@ -2125,58 +2186,61 @@ MEV        ARB-UNITS                                              E190504100018
  204.5      5.9                                                   E190504100053 
 ENDDATA             37          0                                 E190504100054 
 ENDSUBENT           53          0                                 E190504199999 
-SUBENT        E1905042   20051025                             E033E190504200001 
-BIB                  4         13                                 E190504200002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190504200003 
+SUBENT        E1905042   20150429                             E095E190504200001 
+BIB                  4         16                                 E190504200002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190504200003 
            Total neutron multiplicity before correction for       E190504200004 
            instrumental fluctuation (See Sect. IIIB of the        E190504200005 
            reference)                                             E190504200006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190504200007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190504200007 
            Total neutron multiplicity after correction for        E190504200008 
            instrumental fluctuation (See Sect. IIIB of the        E190504200009 
            reference)                                             E190504200010 
-EN-SEC     (E,FF) Total kinetic energy of primary fragments       E190504200011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190504200012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190504200013 
-STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190504200014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190504200015 
-ENDBIB              13          0                                 E190504200016 
-COMMON               2          3                                 E190504200017 
-MASS-MIN   MASS-MAX                                               E190504200018 
-NO-DIM     NO-DIM                                                 E190504200019 
- 134.0      135.0                                                 E190504200020 
-ENDCOMMON            3          0                                 E190504200021 
-DATA                 3         26                                 E190504200022 
-E          DATA      1DATA      2                                 E190504200023 
-MEV        PRT/FIS    PRT/FIS                                     E190504200024 
- 148.5                 4.49                                       E190504200025 
- 150.5      4.3        4.35                                       E190504200026 
- 152.5      2.79       4.06                                       E190504200027 
- 154.5      2.9        3.83                                       E190504200028 
- 156.5      2.94       3.5                                        E190504200029 
- 158.5      2.69       3.2                                        E190504200030 
- 160.5      2.14       2.93                                       E190504200031 
- 162.5      2.22       2.68                                       E190504200032 
- 164.5      2.11       2.47                                       E190504200033 
- 166.5      1.94       2.29                                       E190504200034 
- 168.5      1.75       2.11                                       E190504200035 
- 170.5      1.72       1.96                                       E190504200036 
- 172.5      1.36       1.83                                       E190504200037 
- 174.5      1.58       1.7                                        E190504200038 
- 176.5      1.44       1.56                                       E190504200039 
- 178.5      1.45       1.43                                       E190504200040 
- 180.5      1.33       1.3                                        E190504200041 
- 182.5      1.59       1.17                                       E190504200042 
- 184.5      1.38       1.04                                       E190504200043 
- 186.5      1.34       0.91                                       E190504200044 
- 188.5      1.44       0.77                                       E190504200045 
- 190.5      1.73       0.63                                       E190504200046 
- 192.5      1.66       0.49                                       E190504200047 
- 194.5      1.72       0.35                                       E190504200048 
- 196.5      0.89                                                  E190504200049 
- 198.5      1.4                                                   E190504200050 
-ENDDATA             28          0                                 E190504200051 
-ENDSUBENT           50          0                                 E190504299999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190504200011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190504200012 
+STATUS     (TABLE) Data (Fig. 5, p014609-5 in reference) received E190504200013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190504200014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190504200015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190504200016 
+                       PR,NU/TKE                                  E190504200017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190504200018 
+ENDBIB              16          0                                 E190504200019 
+COMMON               2          3                                 E190504200020 
+MASS-MIN   MASS-MAX                                               E190504200021 
+NO-DIM     NO-DIM                                                 E190504200022 
+ 134.       135.                                                  E190504200023 
+ENDCOMMON            3          0                                 E190504200024 
+DATA                 3         26                                 E190504200025 
+TKE        DATA      1DATA      2                                 E190504200026 
+MEV        PRT/FIS    PRT/FIS                                     E190504200027 
+      148.5                  4.49                                 E190504200028 
+      150.5        4.3       4.35                                 E190504200029 
+      152.5       2.79       4.06                                 E190504200030 
+      154.5        2.9       3.83                                 E190504200031 
+      156.5       2.94        3.5                                 E190504200032 
+      158.5       2.69        3.2                                 E190504200033 
+      160.5       2.14       2.93                                 E190504200034 
+      162.5       2.22       2.68                                 E190504200035 
+      164.5       2.11       2.47                                 E190504200036 
+      166.5       1.94       2.29                                 E190504200037 
+      168.5       1.75       2.11                                 E190504200038 
+      170.5       1.72       1.96                                 E190504200039 
+      172.5       1.36       1.83                                 E190504200040 
+      174.5       1.58        1.7                                 E190504200041 
+      176.5       1.44       1.56                                 E190504200042 
+      178.5       1.45       1.43                                 E190504200043 
+      180.5       1.33        1.3                                 E190504200044 
+      182.5       1.59       1.17                                 E190504200045 
+      184.5       1.38       1.04                                 E190504200046 
+      186.5       1.34       0.91                                 E190504200047 
+      188.5       1.44       0.77                                 E190504200048 
+      190.5       1.73       0.63                                 E190504200049 
+      192.5       1.66       0.49                                 E190504200050 
+      194.5       1.72       0.35                                 E190504200051 
+      196.5       0.89                                            E190504200052 
+      198.5        1.4                                            E190504200053 
+ENDDATA             28          0                                 E190504200054 
+ENDSUBENT           53          0                                 E190504299999 
 SUBENT        E1905043   20051025                             E033E190504300001 
 BIB                  4          7                                 E190504300002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190504300003 
@@ -2231,57 +2295,60 @@ MEV        ARB-UNITS                                              E190504300018
  202.5      5.9                                                   E190504300052 
 ENDDATA             36          0                                 E190504300053 
 ENDSUBENT           52          0                                 E190504399999 
-SUBENT        E1905044   20051025                             E033E190504400001 
-BIB                  4         13                                 E190504400002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190504400003 
+SUBENT        E1905044   20150429                             E095E190504400001 
+BIB                  4         16                                 E190504400002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190504400003 
            Total neutron multiplicity before correction for       E190504400004 
            instrumental fluctuation (See Sect. IIIB of the        E190504400005 
            reference)                                             E190504400006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190504400007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190504400007 
            Total neutron multiplicity after correction for        E190504400008 
            instrumental fluctuation (See Sect. IIIB of the        E190504400009 
            reference)                                             E190504400010 
-EN-SEC     (E,FF)                                                 E190504400011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190504400012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190504400013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190504400014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190504400015 
-ENDBIB              13          0                                 E190504400016 
-COMMON               2          3                                 E190504400017 
-MASS-MIN   MASS-MAX                                               E190504400018 
-NO-DIM     NO-DIM                                                 E190504400019 
- 136.0      137.0                                                 E190504400020 
-ENDCOMMON            3          0                                 E190504400021 
-DATA                 3         25                                 E190504400022 
-E          DATA      1DATA      2                                 E190504400023 
-MEV        PRT/FIS    PRT/FIS                                     E190504400024 
- 146.5      3.32                                                  E190504400025 
- 148.5      2.71       4.5                                        E190504400026 
- 150.5      2.87       4.3                                        E190504400027 
- 152.5      3.13       4.01                                       E190504400028 
- 154.5      2.3        3.76                                       E190504400029 
- 156.5      2.48       3.46                                       E190504400030 
- 158.5      2.34       3.21                                       E190504400031 
- 160.5      2.42       2.98                                       E190504400032 
- 162.5      2.17       2.77                                       E190504400033 
- 164.5      1.91       2.6                                        E190504400034 
- 166.5      1.89       2.45                                       E190504400035 
- 168.5      1.91       2.3                                        E190504400036 
- 170.5      1.9        2.15                                       E190504400037 
- 172.5      1.76       2.0                                        E190504400038 
- 174.5      1.91       1.86                                       E190504400039 
- 176.5      1.81       1.72                                       E190504400040 
- 178.5      1.8        1.57                                       E190504400041 
- 180.5      1.68       1.42                                       E190504400042 
- 182.5      1.67       1.28                                       E190504400043 
- 184.5      1.92       1.13                                       E190504400044 
- 186.5      1.87       0.97                                       E190504400045 
- 188.5      1.96       0.82                                       E190504400046 
- 190.5      1.76       0.66                                       E190504400047 
- 192.5      1.92       0.51                                       E190504400048 
- 194.5      1.93                                                  E190504400049 
-ENDDATA             27          0                                 E190504400050 
-ENDSUBENT           49          0                                 E190504499999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190504400011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190504400012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190504400013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190504400014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190504400015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190504400016 
+                       PR,NU/TKE                                  E190504400017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190504400018 
+ENDBIB              16          0                                 E190504400019 
+COMMON               2          3                                 E190504400020 
+MASS-MIN   MASS-MAX                                               E190504400021 
+NO-DIM     NO-DIM                                                 E190504400022 
+ 136.       137.                                                  E190504400023 
+ENDCOMMON            3          0                                 E190504400024 
+DATA                 3         25                                 E190504400025 
+TKE        DATA      1DATA      2                                 E190504400026 
+MEV        PRT/FIS    PRT/FIS                                     E190504400027 
+      146.5       3.32                                            E190504400028 
+      148.5       2.71        4.5                                 E190504400029 
+      150.5       2.87        4.3                                 E190504400030 
+      152.5       3.13       4.01                                 E190504400031 
+      154.5        2.3       3.76                                 E190504400032 
+      156.5       2.48       3.46                                 E190504400033 
+      158.5       2.34       3.21                                 E190504400034 
+      160.5       2.42       2.98                                 E190504400035 
+      162.5       2.17       2.77                                 E190504400036 
+      164.5       1.91        2.6                                 E190504400037 
+      166.5       1.89       2.45                                 E190504400038 
+      168.5       1.91        2.3                                 E190504400039 
+      170.5        1.9       2.15                                 E190504400040 
+      172.5       1.76         2.                                 E190504400041 
+      174.5       1.91       1.86                                 E190504400042 
+      176.5       1.81       1.72                                 E190504400043 
+      178.5        1.8       1.57                                 E190504400044 
+      180.5       1.68       1.42                                 E190504400045 
+      182.5       1.67       1.28                                 E190504400046 
+      184.5       1.92       1.13                                 E190504400047 
+      186.5       1.87       0.97                                 E190504400048 
+      188.5       1.96       0.82                                 E190504400049 
+      190.5       1.76       0.66                                 E190504400050 
+      192.5       1.92       0.51                                 E190504400051 
+      194.5       1.93                                            E190504400052 
+ENDDATA             27          0                                 E190504400053 
+ENDSUBENT           52          0                                 E190504499999 
 SUBENT        E1905045   20051025                             E033E190504500001 
 BIB                  4          7                                 E190504500002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190504500003 
@@ -2337,54 +2404,57 @@ MEV        ARB-UNITS                                              E190504500018
  202.5      2.0                                                   E190504500053 
 ENDDATA             37          0                                 E190504500054 
 ENDSUBENT           53          0                                 E190504599999 
-SUBENT        E1905046   20051025                             E033E190504600001 
-BIB                  4         13                                 E190504600002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190504600003 
+SUBENT        E1905046   20150429                             E095E190504600001 
+BIB                  4         16                                 E190504600002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190504600003 
            Total neutron multiplicity before correction for       E190504600004 
            instrumental fluctuation (See Sect. IIIB of the        E190504600005 
            reference)                                             E190504600006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190504600007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190504600007 
            Total neutron multiplicity after correction for        E190504600008 
            instrumental fluctuation (See Sect. IIIB of the        E190504600009 
            reference)                                             E190504600010 
-EN-SEC     (E,FF)                                                 E190504600011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190504600012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190504600013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190504600014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190504600015 
-ENDBIB              13          0                                 E190504600016 
-COMMON               2          3                                 E190504600017 
-MASS-MIN   MASS-MAX                                               E190504600018 
-NO-DIM     NO-DIM                                                 E190504600019 
- 140.0      141.0                                                 E190504600020 
-ENDCOMMON            3          0                                 E190504600021 
-DATA                 3         22                                 E190504600022 
-E          DATA      1DATA      2                                 E190504600023 
-MEV        PRT/FIS    PRT/FIS                                     E190504600024 
- 148.5      2.72       4.21                                       E190504600025 
- 150.5      3.67       4.0                                        E190504600026 
- 152.5      2.69       3.79                                       E190504600027 
- 154.5      2.54       3.62                                       E190504600028 
- 156.5      2.88       3.44                                       E190504600029 
- 158.5      2.56       3.26                                       E190504600030 
- 160.5      2.57       3.09                                       E190504600031 
- 162.5      2.32       2.92                                       E190504600032 
- 164.5      2.5        2.76                                       E190504600033 
- 166.5      2.26       2.6                                        E190504600034 
- 168.5      2.4        2.43                                       E190504600035 
- 170.5      1.95       2.27                                       E190504600036 
- 172.5      2.29       2.1                                        E190504600037 
- 174.5      2.15       1.93                                       E190504600038 
- 176.5      2.26       1.76                                       E190504600039 
- 178.5      2.38       1.58                                       E190504600040 
- 180.5      2.16       1.41                                       E190504600041 
- 182.5      2.45       1.23                                       E190504600042 
- 184.5      1.98       1.04                                       E190504600043 
- 186.5      2.48       0.86                                       E190504600044 
- 188.5      2.32       0.64                                       E190504600045 
- 190.5      1.19                                                  E190504600046 
-ENDDATA             24          0                                 E190504600047 
-ENDSUBENT           46          0                                 E190504699999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190504600011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190504600012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190504600013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190504600014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190504600015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190504600016 
+                       PR,NU/TKE                                  E190504600017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190504600018 
+ENDBIB              16          0                                 E190504600019 
+COMMON               2          3                                 E190504600020 
+MASS-MIN   MASS-MAX                                               E190504600021 
+NO-DIM     NO-DIM                                                 E190504600022 
+ 140.       141.                                                  E190504600023 
+ENDCOMMON            3          0                                 E190504600024 
+DATA                 3         22                                 E190504600025 
+TKE        DATA      1DATA      2                                 E190504600026 
+MEV        PRT/FIS    PRT/FIS                                     E190504600027 
+      148.5       2.72       4.21                                 E190504600028 
+      150.5       3.67         4.                                 E190504600029 
+      152.5       2.69       3.79                                 E190504600030 
+      154.5       2.54       3.62                                 E190504600031 
+      156.5       2.88       3.44                                 E190504600032 
+      158.5       2.56       3.26                                 E190504600033 
+      160.5       2.57       3.09                                 E190504600034 
+      162.5       2.32       2.92                                 E190504600035 
+      164.5        2.5       2.76                                 E190504600036 
+      166.5       2.26        2.6                                 E190504600037 
+      168.5        2.4       2.43                                 E190504600038 
+      170.5       1.95       2.27                                 E190504600039 
+      172.5       2.29        2.1                                 E190504600040 
+      174.5       2.15       1.93                                 E190504600041 
+      176.5       2.26       1.76                                 E190504600042 
+      178.5       2.38       1.58                                 E190504600043 
+      180.5       2.16       1.41                                 E190504600044 
+      182.5       2.45       1.23                                 E190504600045 
+      184.5       1.98       1.04                                 E190504600046 
+      186.5       2.48       0.86                                 E190504600047 
+      188.5       2.32       0.64                                 E190504600048 
+      190.5       1.19                                            E190504600049 
+ENDDATA             24          0                                 E190504600050 
+ENDSUBENT           49          0                                 E190504699999 
 SUBENT        E1905047   20051025                             E033E190504700001 
 BIB                  4          7                                 E190504700002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190504700003 
@@ -2434,52 +2504,55 @@ MEV        ARB-UNITS                                              E190504700018
  192.5      4.9                                                   E190504700047 
 ENDDATA             31          0                                 E190504700048 
 ENDSUBENT           47          0                                 E190504799999 
-SUBENT        E1905048   20051025                             E033E190504800001 
-BIB                  4         13                                 E190504800002 
-REACTION  1(90-TH-232(P,F)MASS,PR,NU/DE,FF,RAW)                   E190504800003 
+SUBENT        E1905048   20150429                             E095E190504800001 
+BIB                  4         16                                 E190504800002 
+REACTION  1(90-TH-232(P,F)MASS,PR,NU/TKE,,RAW)                    E190504800003 
            Total neutron multiplicity before correction for       E190504800004 
            instrumental fluctuation (See Sect. IIIB of the        E190504800005 
            reference)                                             E190504800006 
-          2(90-TH-232(P,F)MASS,PR,NU/DE,FF)                       E190504800007 
+          2(90-TH-232(P,F)MASS,PR,NU/TKE)                         E190504800007 
            Total neutron multiplicity after correction for        E190504800008 
            instrumental fluctuation (See Sect. IIIB of the        E190504800009 
            reference)                                             E190504800010 
-EN-SEC     (E,FF)                                                 E190504800011 
-COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190504800012 
-           MASS-MAX: Upper limit of primary fragment mass numbers E190504800013 
-STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190504800014 
-                   by e-mail from I.Nishinaka (2004.09.02)        E190504800015 
-ENDBIB              13          0                                 E190504800016 
-COMMON               2          3                                 E190504800017 
-MASS-MIN   MASS-MAX                                               E190504800018 
-NO-DIM     NO-DIM                                                 E190504800019 
- 144.0      145.0                                                 E190504800020 
-ENDCOMMON            3          0                                 E190504800021 
-DATA                 3         20                                 E190504800022 
-E          DATA      1DATA      2                                 E190504800023 
-MEV        PRT/FIS    PRT/FIS                                     E190504800024 
- 146.5      2.59                                                  E190504800025 
- 148.5      3.26       4.02                                       E190504800026 
- 150.5      3.52       3.84                                       E190504800027 
- 152.5      3.04       3.69                                       E190504800028 
- 154.5      3.02       3.52                                       E190504800029 
- 156.5      2.63       3.35                                       E190504800030 
- 158.5      2.81       3.18                                       E190504800031 
- 160.5      2.72       3.01                                       E190504800032 
- 162.5      2.71       2.84                                       E190504800033 
- 164.5      2.51       2.66                                       E190504800034 
- 166.5      2.76       2.48                                       E190504800035 
- 168.5      2.4        2.3                                        E190504800036 
- 170.5      2.07       2.12                                       E190504800037 
- 172.5      2.31       1.93                                       E190504800038 
- 174.5      2.27       1.74                                       E190504800039 
- 176.5      2.61       1.54                                       E190504800040 
- 178.5      2.66       1.34                                       E190504800041 
- 180.5      2.17       1.14                                       E190504800042 
- 182.5      1.77       0.93                                       E190504800043 
- 184.5      2.3                                                   E190504800044 
-ENDDATA             22          0                                 E190504800045 
-ENDSUBENT           44          0                                 E190504899999 
+COMMENT    MASS-MIN: Lower limit of primary fragment mass numbers E190504800011 
+           MASS-MAX: Upper limit of primary fragment mass numbers E190504800012 
+STATUS     (TABLE) Data (Fig. 4, p014609-4 in reference) received E190504800013 
+                   by e-mail from I.Nishinaka (2004.09.02)        E190504800014 
+HISTORY    (20150128A) MA: SF5-8: PR,NU/DE,FF,RAW ->              E190504800015 
+                       PR,NU/TKE,,RAW and PR,NU/DE,FF ->          E190504800016 
+                       PR,NU/TKE                                  E190504800017 
+           (20150429A) MA: EN-SEC: deleted. HEADING: E -> TKE     E190504800018 
+ENDBIB              16          0                                 E190504800019 
+COMMON               2          3                                 E190504800020 
+MASS-MIN   MASS-MAX                                               E190504800021 
+NO-DIM     NO-DIM                                                 E190504800022 
+ 144.       145.                                                  E190504800023 
+ENDCOMMON            3          0                                 E190504800024 
+DATA                 3         20                                 E190504800025 
+TKE        DATA      1DATA      2                                 E190504800026 
+MEV        PRT/FIS    PRT/FIS                                     E190504800027 
+      146.5       2.59                                            E190504800028 
+      148.5       3.26       4.02                                 E190504800029 
+      150.5       3.52       3.84                                 E190504800030 
+      152.5       3.04       3.69                                 E190504800031 
+      154.5       3.02       3.52                                 E190504800032 
+      156.5       2.63       3.35                                 E190504800033 
+      158.5       2.81       3.18                                 E190504800034 
+      160.5       2.72       3.01                                 E190504800035 
+      162.5       2.71       2.84                                 E190504800036 
+      164.5       2.51       2.66                                 E190504800037 
+      166.5       2.76       2.48                                 E190504800038 
+      168.5        2.4        2.3                                 E190504800039 
+      170.5       2.07       2.12                                 E190504800040 
+      172.5       2.31       1.93                                 E190504800041 
+      174.5       2.27       1.74                                 E190504800042 
+      176.5       2.61       1.54                                 E190504800043 
+      178.5       2.66       1.34                                 E190504800044 
+      180.5       2.17       1.14                                 E190504800045 
+      182.5       1.77       0.93                                 E190504800046 
+      184.5        2.3                                            E190504800047 
+ENDDATA             22          0                                 E190504800048 
+ENDSUBENT           47          0                                 E190504899999 
 SUBENT        E1905049   20051025                             E033E190504900001 
 BIB                  4          7                                 E190504900002 
 REACTION   (90-TH-232(P,F)MASS,PRE,DE,FF,REL)                     E190504900003 

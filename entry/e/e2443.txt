@@ -1,6 +1,6 @@
-ENTRY            E2443   20131128                             E084E244300000001 
-SUBENT        E2443001   20131128                             E084E244300100001 
-BIB                  8         17                                 E244300100002 
+ENTRY            E2443   20150128                             E095E244300000001 
+SUBENT        E2443001   20150128                             E095E244300100001 
+BIB                  9         23                                 E244300100002 
 TITLE      Elastic transfer reactions of 25 MeV/u 6He on 9Be      E244300100003 
            target                                                 E244300100004 
 AUTHOR     (D.Y.Pang, Y.L.Ye, D.X.Jiang, T.Zheng, Z.H.Li, X.Q.Li, E244300100005 
@@ -11,37 +11,47 @@ INSTITUTE  (3CPRBJG) School of Physics and MOE Key Laboratory of  E244300100009
                      Heavy Ion Physics                            E244300100010 
            (2JPNIPC)                                              E244300100011 
 REFERENCE  (J,PHE,30,22,2006)                                     E244300100012 
-PART-DET   (4-BE-9)                                               E244300100013 
+PART-DET   (4-BE-9,2-HE-6)                                        E244300100013 
 SAMPLE     - Chemical-form of target is element.                  E244300100014 
            - Physical-form of target is solid.                    E244300100015 
            - Target-thickness: 100 um                             E244300100016 
 FACILITY   (CYCLO,2JPNIPC)                                        E244300100017 
            (PRJFS,2JPNIPC)                                        E244300100018 
-HISTORY    (20131030C) Nf                                         E244300100019 
-ENDBIB              17          0                                 E244300100020 
-COMMON               1          3                                 E244300100021 
-EN                                                                E244300100022 
-MEV                                                               E244300100023 
- 150.                                                             E244300100024 
-ENDCOMMON            3          0                                 E244300100025 
-ENDSUBENT           24          0                                 E244300199999 
-SUBENT        E2443002   20131128                             E084E244300200001 
-BIB                  3          4                                 E244300200002 
-REACTION   (4-BE-9(2-HE-6,EL)4-BE-9,,DA,RSD)                      E244300200003 
+CORRECTION Data are not corrected for reactions other than        E244300100019 
+           elastic scattering at backward angle (i.e., derived by E244300100020 
+           9Be detection), D.Y.Pang 2014-09-14                    E244300100021 
+HISTORY    (20131030C) Nf                                         E244300100022 
+           (20140914R) Received by e-mail from D.Y. Pang          E244300100023 
+           (20150128A) MA: CORRECTION added, PART-DET, REACTION   E244300100024 
+                       and STATUS modified                        E244300100025 
+ENDBIB              23          0                                 E244300100026 
+COMMON               1          3                                 E244300100027 
+EN                                                                E244300100028 
+MEV                                                               E244300100029 
+ 150.                                                             E244300100030 
+ENDCOMMON            3          0                                 E244300100031 
+ENDSUBENT           30          0                                 E244300199999 
+SUBENT        E2443002   20150128                             E095E244300200001 
+BIB                  5          7                                 E244300200002 
+REACTION   (4-BE-9(2-HE-6,EL)4-BE-9,,DA)                          E244300200003 
 EN-SEC     ANG-CM is polar angle (c.m.) between beam and 9Be      E244300200004 
-STATUS     (CURVE) Fig.3 of High Energy Physics and Nuclear       E244300200005 
-                   Physics 30 (2006) 22                           E244300200006 
-ENDBIB               4          0                                 E244300200007 
-NOCOMMON             0          0                                 E244300200008 
-DATA                 3          6                                 E244300200009 
-ANG-CM     ANG-ERR    DATA-CM                                     E244300200010 
-ADEG       ADEG       MB/SR                                       E244300200011 
-  1.201E+02  4.240E+00  1.469E-01                                 E244300200012 
-  1.312E+02  3.084E+00  2.882E-02                                 E244300200013 
-  1.393E+02  2.891E+00  1.318E-01                                 E244300200014 
-  1.486E+02  3.276E+00  1.825E-01                                 E244300200015 
-  1.555E+02  3.084E+00  7.091E-01                                 E244300200016 
-  1.636E+02  3.854E+00  5.405E-01                                 E244300200017 
-ENDDATA              8          0                                 E244300200018 
-ENDSUBENT           17          0                                 E244300299999 
+ERR-ANALYS (ERR-S) Statistical uncertainty                        E244300200005 
+STATUS     (TABLE) Plotted in Fig.3 of High Energy Physics and    E244300200006 
+                   Nuclear Physics 30 (2006) 22                   E244300200007 
+HISTORY    (20150128A) MA: SF5-8: DA,RSD -> DA and numerical data E244300200008 
+                       replaced                                   E244300200009 
+ENDBIB               7          0                                 E244300200010 
+NOCOMMON             0          0                                 E244300200011 
+DATA                 4          7                                 E244300200012 
+ANG-CM     ANG-ERR    DATA-CM    ERR-S                            E244300200013 
+ADEG       ADEG       MB/SR      MB/SR                            E244300200014 
+      119.4        4.2      0.097      0.011                      E244300200015 
+      130.5        3.1      0.029      0.006                      E244300200016 
+      139.0        2.8      0.125      0.017                      E244300200017 
+      147.4        3.8      0.187      0.019                      E244300200018 
+      147.6        3.6      0.182      0.016                      E244300200019 
+      154.7        4.3      0.680      0.041                      E244300200020 
+      163.1        3.9      0.526      0.032                      E244300200021 
+ENDDATA              9          0                                 E244300200022 
+ENDSUBENT           21          0                                 E244300299999 
 ENDENTRY             2          0                                 E244399999999 
