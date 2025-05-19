@@ -1,37 +1,62 @@
-ENTRY            22600   20010202                             00002260000000001 
-SUBENT        22600001   20010202                             00002260000100001 
-BIB                 10         16                                 2260000100002 
-INSTITUTE  (2ZZZCER)                                              2260000100003 
-REFERENCE  (J,PL/B,61,234,197603)                                 2260000100004 
-AUTHOR     (G.ANDERSON,M.ASGHAR,A.EMSALLEM,E.HAGBERG,B.JONSON)    2260000100005 
-TITLE      Observation of Proton Emission Following Thermal       2260000100006 
-            Neutron Capture in 34.5-D Rb-84.                      2260000100007 
-INC-SOURCE (REAC) High-Flux Reactor of Institute Laue-Langevin    2260000100008 
-            At Grenoble                                           2260000100009 
-INC-SPECT  Thermal Reactor Spectrum                               2260000100010 
-SAMPLE     10**14 Rb-84 Atoms Deposited in a 10-Micrometer Foil   2260000100011 
-            Of Ultra-Pure Al by Proton Current on Molten Y-La     2260000100012 
-            Alloy                                                 2260000100013 
-DETECTOR   (SOLST) Silicon Surface Barrier Detector               2260000100014 
-ERR-ANALYS (ERR-T) Statistics Plus 2-Percent Error in Flux        2260000100015 
-HISTORY    (19780412C)  NNDC                                      2260000100016 
-           (19991217T)  Converted by S.M.                         2260000100017 
-           (20010202U) Last checking has been done.               2260000100018 
-ENDBIB              16          0                                 2260000100019 
-NOCOMMON             0          0                                 2260000100020 
-ENDSUBENT           19          0                                 2260000199999 
-SUBENT        22600002   20010202                             00002260000200001 
-BIB                  3          4                                 2260000200002 
-REACTION   (37-RB-84(N,P)36-KR-84,,SIG,,MXW)                      2260000200003 
-MONITOR    (3-LI-6(N,T)2-HE-4,,SIG,,MXW)                          2260000200004 
-HISTORY    (19991217T)  Converted from Subent 67028002            2260000200005 
-           (20010202U) Last checking has been done.               2260000200006 
-ENDBIB               4          0                                 2260000200007 
-NOCOMMON             0          0                                 2260000200008 
-DATA                 5          1                                 2260000200009 
-EN-DUMMY   DATA       ERR-T      MONIT      MONIT-ERR             2260000200010 
-EV         B          B          B          B                     2260000200011 
-   2.53E-02    1.2E+01         2.   9.41E+02         4.           2260000200012 
-ENDDATA              3          0                                 2260000200013 
-ENDSUBENT           12          0                                 2260000299999 
+ENTRY            22600   20160820                             225222600  0    1 
+SUBENT        22600001   20160820                             225222600  1    1 
+BIB                 12         29                                 22600  1    2 
+INSTITUTE  (2ZZZCER,2FR ILL,2FR LYO,2SWDCTH)                      22600  1    3 
+REFERENCE  (J,PL/B,61,234,197603)                                 22600  1    4 
+AUTHOR     (G.Andersson,M.Asghar,A.Emsallem,E.Hagberg,B.Jonson)   22600  1    5 
+TITLE      Observation of proton emission following thermal       22600  1    6 
+            neutron capture in 34.5-d Rb-84.                      22600  1    7 
+FACILITY   (REAC,2FR ILL) High-Flux reactor of Institute          22600  1    8 
+            Laue-Langevin at Grenoble                             22600  1    9 
+REL-REF    (I,,H.L.Ravn+,J,NIM,123,131,1975) - description of     22600  1   10 
+                   the ISOLDE isotope separator facility          22600  1   11 
+           (I,,H.Beger+,C,75ZUERI,49,1975) - description of       22600  1   12 
+                                        CERN synchro-cyclotron    22600  1   13 
+            The ISOLDE isotope separator facility, attached       22600  1   14 
+           on-line with the reconstructed CERN synchro-cyclotron  22600  1   15 
+            was used in target preparation (see SAMPLE).          22600  1   16 
+INC-SPECT  Thermal reactor spectrum. Thermal                      22600  1   17 
+           neutron flux of 10**9 n/cm2/s                          22600  1   18 
+SAMPLE     During a 20 hr run of the ISOLDE facility (see REL-REF)22600  1   19 
+           by (700nA proton current on target of molten Y-La      22600  1   20 
+           alloy, 63 gr Y/cm2), nearly 10**14 atoms of 84Rb were  22600  1   21 
+           deposited within an area of 0.5 cm2 in a 10 mu-m foil  22600  1   22 
+           of ultra-pure Al.                                      22600  1   23 
+DETECTOR   (SIBAR) 220 mu-m silicon surface barrier detector      22600  1   24 
+STATUS     (TABLE) Abstract of Phys.Lett.B61(1976)234             22600  1   25 
+ERR-ANALYS (ERR-T) Total error includes                           22600  1   26 
+           (ERR-1) Error in neutron flux                          22600  1   27 
+HISTORY    (19780412C)  NNDC                                      22600  1   28 
+           (19991217T)  Converted by S.M.                         22600  1   29 
+           (20010202U) Last checking has been done.               22600  1   30 
+           (20160820U) SD: Author's name corrected. BIB update.   22600  1   31 
+ENDBIB              29          0                                 22600  1   32 
+COMMON               1          3                                 22600  1   33 
+ERR-1                                                             22600  1   34 
+PER-CENT                                                          22600  1   35 
+  2.                                                              22600  1   36 
+ENDCOMMON            3          0                                 22600  1   37 
+ENDSUBENT           36          0                                 22600  199999 
+SUBENT        22600002   20160820                             225222600  2    1 
+BIB                  5          9                                 22600  2    2 
+REACTION   (37-RB-84(N,P)36-KR-84,,SIG,,MXW)                      22600  2    3 
+DECAY-DATA (37-RB-84-G,34.5D)                                     22600  2    4 
+MONITOR    (3-LI-6(N,T)2-HE-4,,SIG,,MXW)                          22600  2    5 
+            An accurately weighted amount of Li (13.4 +- 1.0/mu-g 22600  2    6 
+           LiF) and the count rate of 2.73 MeV tritons from the   22600  2    7 
+           6Li(n-th,alpha)3H reaction recorded as 18959 + 200/min.22600  2    8 
+MONIT-REF  (,S.F.Mughabghab+,R,BNL-325,2,1976)                    22600  2    9 
+MISC-COL   (MISC) the average number of target atoms during       22600  2   10 
+           the 84Rb run - used in cr.sect. determination          22600  2   11 
+ENDBIB               9          0                                 22600  2   12 
+NOCOMMON             0          0                                 22600  2   13 
+DATA                 7          1                                 22600  2   14 
+EN-DUMMY   DATA       ERR-T      MONIT      MONIT-ERR  MISC       22600  2   15 
+MISC-ERR                                                          22600  2   16 
+EV         B          B          B          B          NO-DIM     22600  2   17 
+NO-DIM                                                            22600  2   18 
+   0.0253        12.          2.   941.            4.      6.8E+1322600  2   19 
+    0.7E+13                                                       22600  2   20 
+ENDDATA              6          0                                 22600  2   21 
+ENDSUBENT           20          0                                 22600  299999 
 ENDENTRY             2          0                                 2260099999999 
