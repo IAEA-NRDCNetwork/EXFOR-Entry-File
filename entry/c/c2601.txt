@@ -1,0 +1,145 @@
+ENTRY            C2601   20210318                             C202C2601  0    1 
+SUBENT        C2601001   20210318                             C202C2601  1    1 
+BIB                 12         33                                 C2601  1    2 
+TITLE      Nuclide production cross sections from irradiation of  C2601  1    3 
+           thorium by 438 MeV protons and a comparison to FLUKA   C2601  1    4 
+           and GEANT4 simulations                                 C2601  1    5 
+AUTHOR     (A.K.H.Robertson,P.Kunz,C.Hoehr,P.Schaffer)            C2601  1    6 
+INSTITUTE  (1CANUBC,1CANTMF,1CANSFU)                              C2601  1    7 
+           (1CANCAN) University of Victoria, Victoria,            C2601  1    8 
+                     British Columbia                             C2601  1    9 
+REFERENCE  (J,PR/C,102,044613,2020)                               C2601  1   10 
+FACILITY   (CYCLO,1CANTMF)                                        C2601  1   11 
+SAMPLE     Thorium metal foil with purity of 0.9995, thickness    C2601  1   12 
+           of a (0.25+-0.01) mm and diameter of (60.0+-0.1) mm    C2601  1   13 
+           was hermetically sealed within a (127+-6) mu-m thick   C2601  1   14 
+           Inconel 600 capsule. Inconel was used as a monitor     C2601  1   15 
+           foil. The thorium foil was dissolved after irradiation C2601  1   16 
+           in 10 M HNO3 + 12.5 mM HF, evaporated to a dry thorium C2601  1   17 
+           nitrate salt and solved in a final (86.0+-0.2) mL      C2601  1   18 
+           volume of 1 M HNO3. Aliquots of this solution were     C2601  1   19 
+           analyzed by gamma-ray spectroscopy.                    C2601  1   20 
+DETECTOR   (HPGE) A N-type coaxial HPGe detector was used         C2601  1   21 
+METHOD     (ACTIV) Spectra were acquired multiple times over      C2601  1   22 
+           a period of 7 to 269 d after the end of irradiation    C2601  1   23 
+MONITOR   1(28-NI-0(P,X)27-CO-56,,SIG)                            C2601  1   24 
+          2(28-NI-0(P,X)27-CO-57,,SIG)                            C2601  1   25 
+          3(28-NI-0(P,X)27-CO-60,,SIG)                            C2601  1   26 
+DECAY-MON 1(27-CO-56,77.2D)                                       C2601  1   27 
+          2(27-CO-57,271.8D)                                      C2601  1   28 
+          3(27-CO-60-G,1924.0D)                                   C2601  1   29 
+ERR-ANALYS (ERR-S,4.,10.) Statistical uncertainty                 C2601  1   30 
+           (ERR-1) Systematic uncertainty in detection efficiency C2601  1   31 
+           (ERR-2) Systematic uncertainty in proton flux          C2601  1   32 
+           (ERR-3) Systematic uncertainty in Th foil thicknesss   C2601  1   33 
+           (ERR-T) Total uncertainty                              C2601  1   34 
+HISTORY    (20210318C) Compiled by S.H.                           C2601  1   35 
+ENDBIB              33          0                                 C2601  1   36 
+COMMON              10          6                                 C2601  1   37 
+EN         MONIT     1MONIT-ERR 1MONIT     2MONIT-ERR 2MONIT     3C2601  1   38 
+MONIT-ERR 3ERR-1      ERR-2      ERR-3                            C2601  1   39 
+MEV        MB         MB         MB         MB         MB         C2601  1   40 
+MB         PER-CENT   PER-CENT   PER-CENT                         C2601  1   41 
+    438.       37.15      2.51       66.70      5.69       1.97   C2601  1   42 
+    0.30        2.4       6.2         4.0                         C2601  1   43 
+ENDCOMMON            6          0                                 C2601  1   44 
+ENDSUBENT           43          0                                 C2601  199999 
+SUBENT        C2601002   20210318                             C202C2601  2    1 
+BIB                  3         26                                 C2601  2    2 
+REACTION   (90-TH-232(P,X)ELEM/MASS,CUM,SIG)                      C2601  2    3 
+DECAY-DATA ((1.)37-RB-83,86.2D)                                   C2601  2    4 
+           ((2.)40-ZR-95,64.0D)                                   C2601  2    5 
+           ((3.)42-MO-99,2.7D)                                    C2601  2    6 
+           ((4.)44-RU-103,39.2D)                                  C2601  2    7 
+           ((5.)44-RU-106,371.8D)                                 C2601  2    8 
+           ((7.)47-AG-111-G,7.5D)                                 C2601  2    9 
+           ((8.)48-CD-115-G,2.2D)                                 C2601  2   10 
+           ((9.)49-IN-111-G,2.8D)                                 C2601  2   11 
+           ((11.)50-SN-125-G,9.6D)                                C2601  2   12 
+           ((16.)51-SB-127,3.9D)                                  C2601  2   13 
+           ((17.)52-TE-121-G,19.2D)                               C2601  2   14 
+           ((19.)52-TE-132,3.2D)                                  C2601  2   15 
+           ((22.)56-BA-131-G,11.5D)                               C2601  2   16 
+           ((23.)58-CE-139-G,137.6D)                              C2601  2   17 
+           ((24.)58-CE-141,32.5D)                                 C2601  2   18 
+           ((25.)58-CE-144,284.9D)                                C2601  2   19 
+           ((26.)83-BI-205,15.3D)                                 C2601  2   20 
+           ((27.)83-BI-207,11515.8D)                              C2601  2   21 
+           ((28.)84-PO-206,8.8D)                                  C2601  2   22 
+           ((29.)88-RA-223,11.4D)                                 C2601  2   23 
+           ((30.)88-RA-224,3.6D)                                  C2601  2   24 
+           ((32.)88-RA-228,2098.8D)                               C2601  2   25 
+           ((33.)89-AC-225,9.9D)                                  C2601  2   26 
+           ((37.)90-TH-228,697.7D)                                C2601  2   27 
+STATUS     (TABLE) Data taken from tab.3 of the reference PR/C    C2601  2   28 
+ENDBIB              26          0                                 C2601  2   29 
+NOCOMMON             0          0                                 C2601  2   30 
+DATA                 6         24                                 C2601  2   31 
+ELEMENT    MASS       ISOMER     DATA       ERR-T      DECAY-FLAG C2601  2   32 
+NO-DIM     NO-DIM     NO-DIM     MB         MB         NO-DIM     C2601  2   33 
+      37.        83.                  1.1        0.13         1.  C2601  2   34 
+      40.        95.                 27.97       2.43         2.  C2601  2   35 
+      42.        99.                 36.55       3.19         3.  C2601  2   36 
+      44.       103.                 54.1        4.72         4.  C2601  2   37 
+      44.       106.                 36.34       3.35         5.  C2601  2   38 
+      47.       111.                 62.2        7.92         7.  C2601  2   39 
+      48.       115.       0.        23.86       2.11         8.  C2601  2   40 
+      49.       111.                  0.71       0.07         9.  C2601  2   41 
+      50.       125.       0.         2.95       0.39        11.  C2601  2   42 
+      51.       127.                  5.59       0.5         16.  C2601  2   43 
+      52.       121.       0.         1.67       0.24        17.  C2601  2   44 
+      52.       132.                  3.53       0.3         19.  C2601  2   45 
+      56.       131.                  1.44       0.14        22.  C2601  2   46 
+      58.       139.                  2.74       0.38        23.  C2601  2   47 
+      58.       141.                  8.36       0.81        24.  C2601  2   48 
+      58.       144.                  4.35       0.4         25.  C2601  2   49 
+      83.       205.                  6.17       0.54        26.  C2601  2   50 
+      83.       207.                 21.59       1.92        27.  C2601  2   51 
+      84.       206.                 13.7        1.19        28.  C2601  2   52 
+      88.       223.                  5.31       0.39        29.  C2601  2   53 
+      88.       224.                 15.9        1.4         30.  C2601  2   54 
+      88.       228.                  1.64       0.19        32.  C2601  2   55 
+      89.       225.                 13.3        1.21        33.  C2601  2   56 
+      90.       228.                 38.18       3.4         37.  C2601  2   57 
+ENDDATA             26          0                                 C2601  2   58 
+ENDSUBENT           57          0                                 C2601  299999 
+SUBENT        C2601003   20210318                             C202C2601  3    1 
+BIB                  3         16                                 C2601  3    2 
+REACTION   (90-TH-232(P,X)ELEM/MASS,,SIG)                         C2601  3    3 
+STATUS     (TABLE) Data taken from tab.3 of the reference PR/C    C2601  3    4 
+DECAY-DATA ((6.)47-AG-110-M,249.8D)                               C2601  3    5 
+           ((10.)49-IN-114-M,49.5D)                               C2601  3    6 
+           ((12.)51-SB-120-M,5.8D)                                C2601  3    7 
+           ((13.)51-SB-122-G,2.7D)                                C2601  3    8 
+           ((14.)51-SB-124-G,60.2D)                               C2601  3    9 
+           ((15.)51-SB-126-G,12.4D)                               C2601  3   10 
+           ((18.)52-TE-121-M,164.2D)                              C2601  3   11 
+           ((20.)55-CS-134-G,753.8D)                              C2601  3   12 
+           ((21.)55-CS-136-G,13.0D)                               C2601  3   13 
+           ((31.)88-RA-225,14.9D)                                 C2601  3   14 
+           ((34.)89-AC-226,1.2D)                                  C2601  3   15 
+           ((35.)89-AC-227,7946.8D)                               C2601  3   16 
+           ((36.)90-TH-227,18.7D)                                 C2601  3   17 
+           ((38.)91-PA-230,17.4D)                                 C2601  3   18 
+ENDBIB              16          0                                 C2601  3   19 
+NOCOMMON             0          0                                 C2601  3   20 
+DATA                 6         14                                 C2601  3   21 
+ELEMENT    MASS       ISOMER     DATA       ERR-T      DECAY-FLAG C2601  3   22 
+NO-DIM     NO-DIM     NO-DIM     MB         MB         NO-DIM     C2601  3   23 
+      47.       110.         1.       7.06       0.63         6.  C2601  3   24 
+      49.       114.         1.       4.92       0.76        10.  C2601  3   25 
+      51.       120.         1.       6.87       0.82        12.  C2601  3   26 
+      51.       122.                  8.23       0.73        13.  C2601  3   27 
+      51.       124.                 10.72       1.45        14.  C2601  3   28 
+      51.       126.                   6.2       0.55        15.  C2601  3   29 
+      52.       121.         1.       2.42       0.21        18.  C2601  3   30 
+      55.       134.                  3.97       0.43        20.  C2601  3   31 
+      55.       136.                  3.16       0.28        21.  C2601  3   32 
+      88.       225.                   4.2        0.4        31.  C2601  3   33 
+      89.       226.                 16.44       1.81        34.  C2601  3   34 
+      89.       227.                 17.65       1.68        35.  C2601  3   35 
+      90.       227.                 15.55       1.65        36.  C2601  3   36 
+      91.       230.                  1.86       0.23        38.  C2601  3   37 
+ENDDATA             16          0                                 C2601  3   38 
+ENDSUBENT           37          0                                 C2601  399999 
+ENDENTRY             3          0                                 C260199999999 
