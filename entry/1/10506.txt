@@ -1,79 +1,99 @@
-ENTRY            10506   20040427                             00001050600000001 
-SUBENT        10506001   20040427                             00001050600100001 
-BIB                 13         37                                 1050600100002 
-INSTITUTE  (1USAANL)                                              1050600100003 
-REFERENCE  (J,NSE,58,255,197510)                                  1050600100004 
-           (R,ANL-NDM-83,198310) Revised data.                    1050600100005 
-           (J,NSE,49,310,197211) Description of experiment        1050600100006 
-AUTHOR     (J.W.Meadows)                                          1050600100007 
-TITLE      The Ratio of the Uranium-238 to Uranium-235 Fission    1050600100008 
-            Cross Sections from 5.3 to 10.3 MeV.                  1050600100009 
-FACILITY   (VDG) Van-de-Graaff                                    1050600100010 
-INC-SOURCE (D-D) Deuterons on deuterium                           1050600100011 
-SAMPLE     Samples deposited on stainless steel or molybdenum by  1050600100012 
-            electroplating or vacuum evaporation                  1050600100013 
-METHOD     (TOF) Time-of-flight                                   1050600100014 
-           Sample mass ratios for normalization measured by       1050600100015 
-            comparing thermal fission rates of 235U samples and   1050600100016 
-            238U samples containing 10% 235U. SAmple mass also    1050600100017 
-            measured by calorimetric analysis.                    1050600100018 
-DETECTOR   (FISCH) Double ionization chamber                      1050600100019 
-CORRECTION Data corrected for inelastic scattering from target and1050600100020 
-            ion chamber structure and for neutrons produced from  1050600100021 
-            deuterium in the energy range of 1 to 3 MeV.          1050600100022 
-ERR-ANALYS1(ERR-S) Statistical uncertainty.                       1050600100023 
-           (ERR-T) Total uncertainty includes statistical error   1050600100024 
-            plus errors due to:                                   1050600100025 
-            . calorimetric analysis (0.50%),                      1050600100026 
-            . alpha-counting system (0.60%),                      1050600100027 
-            . thickness correction (0.18%),                       1050600100028 
-            . extrapolation (0.10%),                              1050600100029 
-            . dead-time correction (0.25%),                       1050600100030 
-            . scattering correction (0.60%),                      1050600100031 
-            . secondary source reactions (20% of correction),     1050600100032 
-            . error in neutron energy (~20% of energy resolution).1050600100033 
-STATUS      Data taken from ANL-NDM-83.                           1050600100034 
-           (APRVD) J.W.Meadows, 1984/3/2.                         1050600100035 
-HISTORY    (19750508C)                                            1050600100036 
-           (19830823A) Converted to REACTION formalism            1050600100037 
-           (19831230A) Revised as per ANL-NDM-83.                 1050600100038 
-           (20040427A) Updated to new date formats, lower case.   1050600100039 
-ENDBIB              37          0                                 1050600100040 
-NOCOMMON             0          0                                 1050600100041 
-ENDSUBENT           40          0                                 1050600199999 
-SUBENT        10506002   20040427                             00001050600200001 
-BIB                  2          4                                 1050600200002 
-REACTION  1((92-U-238(N,F),,SIG)/(92-U-235(N,F),,SIG))            1050600200003 
-          2(92-U-238(N,F),,SIG)                                   1050600200004 
-MONITOR   2(92-U-235(N,F),,SIG) From ENDF/B-V.                    1050600200005 
-            Ratios normalized at 2.50, 2.89, 3.26 MeV.            1050600200006 
-ENDBIB               4          0                                 1050600200007 
-NOCOMMON             0          0                                 1050600200008 
-DATA                 6         22                                 1050600200009 
-EN         EN-RSL-FW  DATA      1ERR-S     1ERR-T     1DATA      21050600200010 
-MEV        MEV        NO-DIM     PER-CENT   PER-CENT   B          1050600200011 
- 5.334      0.070      0.5264     1.05       1.39       0.551     1050600200012 
- 5.439      0.216      0.5242     0.82       1.32       0.548     1050600200013 
- 5.622      0.204      0.5380     0.73       1.31       0.565     1050600200014 
- 5.826      0.191      0.5652     0.73       1.35       0.605     1050600200015 
- 6.168      0.178      0.5735     0.74       1.42       0.683     1050600200016 
- 6.430      0.165      0.620      0.72       1.27       0.821     1050600200017 
- 6.692      0.154      0.617      0.74       1.23       0.896     1050600200018 
- 6.949      0.144      0.618      0.67       1.19       0.949     1050600200019 
- 7.204      0.137      0.606      0.75       1.25       0.989     1050600200020 
- 7.457      0.132      0.606      0.68       1.21       1.035     1050600200021 
- 7.709      0.128      0.584      0.75       1.25       1.025     1050600200022 
- 7.960      0.126      0.576      0.74       1.24       1.025     1050600200023 
- 8.208      0.124      0.570      0.80       1.27       1.017     1050600200024 
- 8.455      0.122      0.571      0.67       1.21       1.018     1050600200025 
- 8.690      0.120      0.567      0.78       1.33       1.008     1050600200026 
- 8.946      0.11       0.580      0.75       1.42       1.028     1050600200027 
- 9.191      0.120      0.578      0.71       1.51       1.022     1050600200028 
- 9.433      0.121      0.589      0.74       1.68       1.038     1050600200029 
- 9.675      0.121      0.583      0.76       1.81       1.025     1050600200030 
- 9.818      0.122      0.591      0.76       1.87       1.037     1050600200031 
-10.160      0.124      0.570      0.77       1.86       0.995     1050600200032 
-10.400      0.126      0.554      0.76       1.73       0.964     1050600200033 
-ENDDATA             24          0                                 1050600200034 
-ENDSUBENT           33          0                                 1050600299999 
+ENTRY            10506   20190722                             145410506  0    1 
+SUBENT        10506001   20190722                             145410506  1    1 
+BIB                 14         36                                 10506  1    2 
+TITLE      The ratio of the uranium-238 to uranium-235 fission    10506  1    3 
+            cross sections from 5.3 to 10.3 MeV                   10506  1    4 
+AUTHOR     (J.W.Meadows)                                          10506  1    5 
+INSTITUTE  (1USAANL)                                              10506  1    6 
+REFERENCE  (J,NSE,58,255,1975)                                    10506  1    7 
+           (R,ANL-NDM-83,1983) Revised data in table              10506  1    8 
+REL-REF    (M,10237003,J.W.Meadows,J,NSE,49,310,1972)             10506  1    9 
+            Description of experiment                             10506  1   10 
+FACILITY   (DYNAM,1USAANL) Argonne 8 MeV Tandem Dynamitron        10506  1   11 
+INC-SOURCE (D-D) Deuterium gas in a 2-cm-long cell filled to      10506  1   12 
+            2 atm.                                                10506  1   13 
+SAMPLE     Samples deposited on 0.25-mm thick polished stainless  10506  1   14 
+            steel or 0.13-mm thick Mo backings by electroplating  10506  1   15 
+            or by vacuum evaporation.                             10506  1   16 
+           Below 2 MeV, deposit diameter 2.5 cm, approximate      10506  1   17 
+            thicknesses either 150 or 500 ug/cm2.                 10506  1   18 
+           Above 3 MeV, deposit diameter 5 cm, thickness          10506  1   19 
+            approximately 500 ug/cm2.                             10506  1   20 
+DETECTOR   (FISCH) Low-mass double ionization chamber using       10506  1   21 
+            methane as the counting gas.                          10506  1   22 
+METHOD     (TOF) Time-of-flight used to reduce and measure        10506  1   23 
+            time-independent background.                          10506  1   24 
+           Sample mass ratios for normalization measured by       10506  1   25 
+            comparing thermal thermal fission rate of 235U        10506  1   26 
+            samples and 238U samples containing 10% 235U.         10506  1   27 
+           Sample masses also measured by calorimetric analysis.  10506  1   28 
+ANALYSIS   Ratios normalized at 2.500, 2.890, 3.256 MeV.          10506  1   29 
+CORRECTION Data corrected for inelastic scattering from target and10506  1   30 
+            ion chamber structure and for neutrons produced from  10506  1   31 
+            deuterium in the energy range of 1 to 3 MeV.          10506  1   32 
+STATUS     (APRVD) J.W.Meadows, 1984/3/2.                         10506  1   33 
+HISTORY    (19750508C)                                            10506  1   34 
+           (19830823A) Converted to REACTION formalism            10506  1   35 
+           (19831230A) Revised as per ANL-NDM-83.                 10506  1   36 
+           (20040427U) Updated to new date formats, lower case.   10506  1   37 
+           (20190722A) On. Major revision in 002.                 10506  1   38 
+ENDBIB              36          0                                 10506  1   39 
+NOCOMMON             0          0                                 10506  1   40 
+ENDSUBENT           39          0                                 10506  199999 
+SUBENT        10506002   20190722                             145410506  2    1 
+BIB                  6         21                                 10506  2    2 
+REACTION  1((92-U-238(N,F),,SIG)/(92-U-235(N,F),,SIG))            10506  2    3 
+          2(92-U-238(N,F),,SIG)                                   10506  2    4 
+MONITOR   2(92-U-235(N,F),,SIG)                                   10506  2    5 
+MONIT-REF 2(,,3,ENDF/B-V,,1978)                                   10506  2    6 
+ERR-ANALYS1(ERR-T) Total error                                    10506  2    7 
+            - secondary source reactions (20% of correction)      10506  2    8 
+            - propagation from neutron energy error (~20% of the  10506  2    9 
+              energy resolution)                                  10506  2   10 
+           (ERR-1,,,F) Normalization of shape ratio:              10506  2   11 
+            - calorimetric analysis               (0.50%)         10506  2   12 
+            - alpha counting excluding statistics (0.60%)         10506  2   13 
+            - thickness correction                (0.18%)         10506  2   14 
+            - extrapolation                       (0.10%)         10506  2   15 
+            - dead time correction                (0.25%)         10506  2   16 
+            - scattering correction               (0.60%)         10506  2   17 
+            - statistical - alpha counting etc.   (0.42%)         10506  2   18 
+           (ERR-2,,,U) Uncorrelated error, which principle due to 10506  2   19 
+            the counting statistics, but a part is based on the   10506  2   20 
+            consistency of repeated measurements.                 10506  2   21 
+STATUS     (TABLE) Table XIII of ANL-NDM-83                       10506  2   22 
+HISTORY    (20190722A) On. ERR-S -> ERR-2. ERR-1 added.           10506  2   23 
+ENDBIB              21          0                                 10506  2   24 
+COMMON               1          3                                 10506  2   25 
+ERR-1                                                             10506  2   26 
+PER-CENT                                                          10506  2   27 
+ 1.12                                                             10506  2   28 
+ENDCOMMON            3          0                                 10506  2   29 
+DATA                 6         22                                 10506  2   30 
+EN         EN-RSL-FW  DATA      1ERR-2     1ERR-T     1DATA      210506  2   31 
+MEV        MEV        NO-DIM     PER-CENT   PER-CENT   B          10506  2   32 
+  5.334     0.070      0.5264     1.05       1.39       0.551     10506  2   33 
+  5.439     0.216      0.5242     0.82       1.32       0.548     10506  2   34 
+  5.622     0.204      0.5380     0.73       1.31       0.565     10506  2   35 
+  5.826     0.191      0.5652     0.73       1.35       0.605     10506  2   36 
+  6.168     0.178      0.5735     0.74       1.42       0.683     10506  2   37 
+  6.430     0.165      0.620      0.72       1.27       0.821     10506  2   38 
+  6.692     0.154      0.617      0.74       1.23       0.896     10506  2   39 
+  6.949     0.144      0.618      0.67       1.19       0.949     10506  2   40 
+  7.204     0.137      0.606      0.75       1.25       0.989     10506  2   41 
+  7.457     0.132      0.606      0.68       1.21       1.035     10506  2   42 
+  7.709     0.128      0.584      0.75       1.25       1.025     10506  2   43 
+  7.960     0.126      0.576      0.74       1.24       1.025     10506  2   44 
+  8.208     0.124      0.570      0.80       1.27       1.017     10506  2   45 
+  8.455     0.122      0.571      0.67       1.21       1.018     10506  2   46 
+  8.690     0.120      0.567      0.78       1.33       1.008     10506  2   47 
+  8.946     0.11       0.580      0.75       1.42       1.028     10506  2   48 
+  9.191     0.120      0.578      0.71       1.51       1.022     10506  2   49 
+  9.433     0.121      0.589      0.74       1.68       1.038     10506  2   50 
+  9.675     0.121      0.583      0.76       1.81       1.025     10506  2   51 
+  9.818     0.122      0.591      0.76       1.87       1.037     10506  2   52 
+ 10.160     0.124      0.570      0.77       1.86       0.995     10506  2   53 
+ 10.400     0.126      0.554      0.76       1.73       0.964     10506  2   54 
+ENDDATA             24          0                                 10506  2   55 
+ENDSUBENT           54          0                                 10506  299999 
 ENDENTRY             2          0                                 1050699999999 
