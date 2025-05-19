@@ -1,60 +1,64 @@
-ENTRY            21397   19800303                             00002139700000001 
-SUBENT        21397001   19800303                             00002139700100001 
-BIB                 14         21                                 2139700100002 
-INSTITUTE  (2FR SAC)                                              2139700100003 
-REFERENCE  (J,CR,241,392,55)                                      2139700100004 
-AUTHOR     (P.HUBERT,R.JOLY,G.VENDRYES)                           2139700100005 
-TITLE      -MEASUREMENT OF THE U-236 CAPTURE CROSS SECTION        2139700100006 
-            IN A PILE NEUTRON SPECTRUM -.                         2139700100007 
-FACILITY   (REAC ) THERMAL REACTOR.                               2139700100008 
-INC-SOURCE (REAC ) REACTOR NEUTRONS.                              2139700100009 
-SAMPLE     .U-236 FROM A LONG IRRADIATION OF ENRICHED U-235.      2139700100010 
-METHOD     (ACTIV) ACTIVATION.                                    2139700100011 
-MONITOR    (27-CO-59(N,G)27-CO-60-G,,SIG) 2200 M/SEC VALUE.       2139700100012 
-            MEASURED BY ACTIVATION.                               2139700100013 
-ASSUMED    (ASSUM,92-U-235(N,G)92-U-236-G,,SIG) FOR               2139700100014 
-            CALCULATION OF INITIAL INVENTARY OF U-236.            2139700100015 
-            VALUE OF 107+-5 B AT 2200 M/SEC.                      2139700100016 
-STATUS     .VALUES FROM TEXT, PAGE 393.                           2139700100017 
-HISTORY    (800225C)                                              2139700100018 
-           (800303E)                                              2139700100019 
-CORRECTION .CORRECTED FOR U-237 PRODUCTION FROM U-238 VIA         2139700100020 
-            THE (N,2N) REACTION.                                  2139700100021 
-ERR-ANALYS .ONE STANDARD DEVIATION, PRINCIPALLY FROM STATISTICAL  2139700100022 
-            UNCERTAINTIES IN U-237 AND CO-60 ACTIVITIES.          2139700100023 
-ENDBIB              21          0                                 2139700100024 
-COMMON               2          3                                 2139700100025 
-ASSUM      ASSUM-ERR                                              2139700100026 
-B          B                                                      2139700100027 
- 1.0700E+02 5.0000E+00                                            2139700100028 
-ENDCOMMON            3          0                                 2139700100029 
-ENDSUBENT           28          0                                 2139700199999 
-SUBENT        21397002   19801105                             00002139700200001 
-BIB                  4          5                                 2139700200002 
-REACTION   ((92-U-238(N,2N)92-U-237,,SIG,,MXW)/                   2139700200003 
-           (92-U-236(N,G)92-U-237,,SIG,,MXW))                     2139700200004 
-INC-SPECT  MAXWELLIAN PILE SPECTRUM.                              2139700200005 
-DECAY-DATA (92-U-237,6.75D,B-)                                    2139700200006 
-STATUS     .TEXT, PAGE 393.                                       2139700200007 
-ENDBIB               5          0                                 2139700200008 
-NOCOMMON             0          0                                 2139700200009 
-DATA                 3          1                                 2139700200010 
-EN-DUMMY   RATIO      RATIO-ERR                                   2139700200011 
-EV         NO-DIM     NO-DIM                                      2139700200012 
- 2.5300E-02 3.1000E-04 8.0000E-05                                 2139700200013 
-ENDDATA              3          0                                 2139700200014 
-ENDSUBENT           13          0                                 2139700299999 
-SUBENT        21397003   19800303                             00002139700300001 
-BIB                  3          3                                 2139700300002 
-REACTION   (92-U-236(N,G)92-U-237,,SIG) 2200 M/SEC VALUE.         2139700300003 
-DECAY-DATA (92-U-237,6.75D,B-)                                    2139700300004 
-STATUS     .TEXT PAGE 393.                                        2139700300005 
-ENDBIB               3          0                                 2139700300006 
-NOCOMMON             0          0                                 2139700300007 
-DATA                 5          1                                 2139700300008 
-EN         MONIT      MONIT-ERR  DATA       DATA-ERR              2139700300009 
-EV         B          B          B          B                     2139700300010 
- 2.5300E-02 3.4800E+01 2.0000E+00 2.4000E+01 7.0000E+00           2139700300011 
-ENDDATA              3          0                                 2139700300012 
-ENDSUBENT           11          0                                 2139700399999 
+ENTRY            21397   20191116                             228321397  0    1 
+SUBENT        21397001   20191116                             228321397  1    1 
+BIB                 13         23                                 21397  1    2 
+TITLE       Measurement of the U-236 capture cross section        21397  1    3 
+            in a pile neutron spectrum                            21397  1    4 
+AUTHOR     (J.-M.Auglair,P.Hubert,R.Joly,G.Vendryes,J.Charon)     21397  1    5 
+REFERENCE  (J,CR,241,392,1955)                                    21397  1    6 
+           (J,JPR,17,564,1956) - first author: J.Charon.          21397  1    7 
+           The radiative capture cross-section of 236U was        21397  1    8 
+           re-examined                                            21397  1    9 
+INSTITUTE  (2FR SAC)                                              21397  1   10 
+FACILITY   (REAC,2FR SAC) Thermal reactor.                        21397  1   11 
+INC-SOURCE (REAC) Reactor neutrons.                               21397  1   12 
+SAMPLE      U-236 from a long irradiation of enriched U-235.      21397  1   13 
+METHOD     (ACTIV) Activation.                                    21397  1   14 
+MONITOR    (27-CO-59(N,G)27-CO-60-G,,SIG) 2200 m/sec value.       21397  1   15 
+            Measured by activation.                               21397  1   16 
+ASSUMED    (ASSUM,92-U-235(N,G)92-U-236-G,,SIG) For               21397  1   17 
+            calculation of initial inventory of U-236.            21397  1   18 
+CORRECTION .Corrected for U-237 production from U-238 via         21397  1   19 
+            the (n,2n) reaction.                                  21397  1   20 
+ERR-ANALYS (DATA-ERR) One standard deviation, principally from    21397  1   21 
+           statistical uncertainties in U-237 and Co-60 activities21397  1   22 
+HISTORY    (19800225C)                                            21397  1   23 
+           (20191116U) SD:Updated to new date formats,lower case. 21397  1   24 
+           Author's list corrected. Ref. JPR,17,564,1956 added.   21397  1   25 
+ENDBIB              23          0                                 21397  1   26 
+COMMON               2          3                                 21397  1   27 
+ASSUM      ASSUM-ERR                                              21397  1   28 
+B          B                                                      21397  1   29 
+ 107.         5.                                                  21397  1   30 
+ENDCOMMON            3          0                                 21397  1   31 
+ENDSUBENT           30          0                                 21397  199999 
+SUBENT        21397002   20191116                             228321397  2    1 
+BIB                  5          6                                 21397  2    2 
+REACTION   ((92-U-238(N,2N)92-U-237,,SIG,,MXW)/                   21397  2    3 
+           (92-U-236(N,G)92-U-237,,SIG,,MXW))                     21397  2    4 
+INC-SPECT  Maxwellian pile spectrum.                              21397  2    5 
+DECAY-DATA (92-U-237,6.75D,B-)                                    21397  2    6 
+STATUS     (TABLE) Text on p. 393 of Compt.Rendus,241(1955)392    21397  2    7 
+HISTORY    (20191116U) SD: RATIO/ERR -> DATA/ERR. STATUS updated. 21397  2    8 
+ENDBIB               6          0                                 21397  2    9 
+NOCOMMON             0          0                                 21397  2   10 
+DATA                 3          1                                 21397  2   11 
+EN-DUMMY   DATA       DATA-ERR                                    21397  2   12 
+EV         NO-DIM     NO-DIM                                      21397  2   13 
+ 2.5300E-02 3.1000E-04 8.0000E-05                                 21397  2   14 
+ENDDATA              3          0                                 21397  2   15 
+ENDSUBENT           14          0                                 21397  299999 
+SUBENT        21397003   20191116                             228321397  3    1 
+BIB                  4          4                                 21397  3    2 
+REACTION   (92-U-236(N,G)92-U-237,,SIG) 2200 m/sec value.         21397  3    3 
+DECAY-DATA (92-U-237,6.75D,B-)                                    21397  3    4 
+STATUS     (TABLE) Text on p. 393 of Compt.Rendus,241(1955)392    21397  3    5 
+HISTORY    (20191116U) SD: STATUS updated.                        21397  3    6 
+ENDBIB               4          0                                 21397  3    7 
+NOCOMMON             0          0                                 21397  3    8 
+DATA                 5          1                                 21397  3    9 
+EN         MONIT      MONIT-ERR  DATA       DATA-ERR              21397  3   10 
+EV         B          B          B          B                     21397  3   11 
+  2.530E-02     34.8       2.0        24.         7.              21397  3   12 
+ENDDATA              3          0                                 21397  3   13 
+ENDSUBENT           12          0                                 21397  399999 
 ENDENTRY             3          0                                 2139799999999 
