@@ -1,6 +1,6 @@
-ENTRY            D0971   20200121                             D125D097100000001 
-SUBENT        D0971001   20200121                             D125D097100100001 
-BIB                 15         36                                 D097100100002 
+ENTRY            D0971   20211015                             D135D097100000001 
+SUBENT        D0971001   20211015                             D135D097100100001 
+BIB                 15         37                                 D097100100002 
 TITLE      Reexamination of proton-induced reactions on  natMo at D097100100003 
             19-26 MeV and study of target yield of resultant      D097100100004 
             radionuclides                                         D097100100005 
@@ -37,13 +37,14 @@ ERR-ANALYS (ERR-T)     Total uncertainty                          D097100100027
 STATUS     (TABLE) Table II of Acta Phys.Pol.B50(2019)1583        D097100100036 
            (APRVD) Approved by Arshiya Anees Ahmed (2020-01-21)   D097100100037 
 HISTORY    (20200121C) On                                         D097100100038 
-ENDBIB              36          0                                 D097100100039 
-COMMON               1          3                                 D097100100040 
-ERR-5                                                             D097100100041 
-PER-CENT                                                          D097100100042 
- 5.                                                               D097100100043 
-ENDCOMMON            3          0                                 D097100100044 
-ENDSUBENT           43          0                                 D097100199999 
+           (20211015A) On. Major revisions in 006 and 007.        D097100100039 
+ENDBIB              37          0                                 D097100100040 
+COMMON               1          3                                 D097100100041 
+ERR-5                                                             D097100100042 
+PER-CENT                                                          D097100100043 
+ 5.                                                               D097100100044 
+ENDCOMMON            3          0                                 D097100100045 
+ENDSUBENT           44          0                                 D097100199999 
 SUBENT        D0971002   20200107                             D125D097100200001 
 BIB                  2          3                                 D097100200002 
 REACTION   (42-MO-0(P,X)43-TC-94-G,,SIG)                          D097100200003 
@@ -95,32 +96,59 @@ MEV        MEV        MB         MB                               D097100500011
  19.        26.        120.       10.                             D097100500012 
 ENDDATA              3          0                                 D097100500013 
 ENDSUBENT           12          0                                 D097100599999 
-SUBENT        D0971006   20200107                             D125D097100600001 
-BIB                  4          4                                 D097100600002 
-REACTION   (42-MO-0(P,X)43-TC-99-M,,SIG)                          D097100600003 
-DECAY-DATA (43-TC-99-M,6.01HR,DG,140.511,0.89)                    D097100600004 
-ANALYSIS   99Mo decay contribution to the gamma line subtracted   D097100600005 
-STATUS     (DEP,D0971007) 99Mo production cross section           D097100600006 
-ENDBIB               4          0                                 D097100600007 
-NOCOMMON             0          0                                 D097100600008 
-DATA                 4          1                                 D097100600009 
-EN-MIN     EN-MAX     DATA       ERR-T                            D097100600010 
-MEV        MEV        MB         MB                               D097100600011 
- 19.        26.        110.       10.                             D097100600012 
-ENDDATA              3          0                                 D097100600013 
-ENDSUBENT           12          0                                 D097100699999 
-SUBENT        D0971007   20200107                             D125D097100700001 
-BIB                  3          4                                 D097100700002 
-REACTION   (42-MO-0(P,X)42-MO-99,,SIG)                            D097100700003 
-DECAY-DATA (42-MO-99,65.94HR,DG,140.511,0.8943)                   D097100700004 
-ANALYSIS   Assumed that 99mTc contribution to the gamma line      D097100700005 
-            is negligible after 77 hours cooling                  D097100700006 
-ENDBIB               4          0                                 D097100700007 
-NOCOMMON             0          0                                 D097100700008 
-DATA                 4          1                                 D097100700009 
-EN-MIN     EN-MAX     DATA       ERR-T                            D097100700010 
-MEV        MEV        MB         MB                               D097100700011 
- 19.        26.        110.       10.                             D097100700012 
-ENDDATA              3          0                                 D097100700013 
-ENDSUBENT           12          0                                 D097100799999 
+SUBENT        D0971006   20211015                             D135D097100600001 
+BIB                  8         22                                 D097100600002 
+REACTION   (42-MO-100(P,2N)43-TC-99-M,,SIG,,FCT)                  D097100600003 
+            100Mo(p,2n)99mTc cross section multiplied by 0.974    D097100600004 
+SAMPLE     (42-MO-100,NAT=0.0974)                                 D097100600005 
+           Arshiya Anees Ahmed (2021-10-15):                      D097100600006 
+            Table 3 of Rad.Phys.Chem.190(2022)109774 gives        D097100600007 
+            Mo(p,x)99mTc cross sections divided by 0.0974         D097100600008 
+            (natural isotopic abundance of 100Mo) and then        D097100600009 
+            multiplied by 0.974.                                  D097100600010 
+DECAY-DATA (43-TC-99-M,6.01HR,DG,140.511,0.89)                    D097100600011 
+ANALYSIS   Contribution of 140 keV gamma originated from          D097100600012 
+            99Mo decay via 99mTc is subtracted.                   D097100600013 
+REL-REF    (M,,S.M.Qaim+,J,ARI,85,101,2014)                       D097100600014 
+            Modified activation formula                           D097100600015 
+COMMENT    By compiler (2021-10-15):                              D097100600016 
+            Most probably the contribution of 140 keV gammas      D097100600017 
+           originated from decay of 99Mo without going through    D097100600018 
+           99mTc is not subtracted, namely the reported cross     D097100600019 
+           section overestimates the actual 99mTc production      D097100600020 
+           independent cross section.                             D097100600021 
+STATUS     (DEP,D0971007) 99Mo production cross section           D097100600022 
+           (APRVD) Approved by Arshiya Anees Ahmed (2021-10-15)   D097100600023 
+HISTORY    (20211015A) On. REACTION corrected.                    D097100600024 
+ENDBIB              22          0                                 D097100600025 
+NOCOMMON             0          0                                 D097100600026 
+DATA                 4          1                                 D097100600027 
+EN-MIN     EN-MAX     DATA       ERR-T                            D097100600028 
+MEV        MEV        MB         MB                               D097100600029 
+ 19.        26.        110.       10.                             D097100600030 
+ENDDATA              3          0                                 D097100600031 
+ENDSUBENT           30          0                                 D097100699999 
+SUBENT        D0971007   20211015                             D135D097100700001 
+BIB                  6         13                                 D097100700002 
+REACTION   (42-MO-100(P,X)42-MO-99,,SIG,,FCT)                     D097100700003 
+            100Mo(p,x)99Mo cross section multiplied by 0.974      D097100700004 
+SAMPLE     (42-MO-100,NAT=0.0974)                                 D097100700005 
+           Arshiya Anees Ahmed (2021-10-15):                      D097100700006 
+            Table 3 of Rad.Phys.Chem.190(2022)109774 gives        D097100700007 
+            Mo(p,x)99mTc cross sections divided by 0.0974         D097100700008 
+            (natural isotopic abundance of 100Mo) and then        D097100700009 
+            multiplied by 0.974.                                  D097100700010 
+DECAY-DATA (42-MO-99,65.94HR,DG,140.511,0.8943)                   D097100700011 
+ANALYSIS   Assumed that 99mTc contribution to the gamma line      D097100700012 
+            is negligible after 77 hours cooling                  D097100700013 
+STATUS     (APRVD) Approved by Arshiya Anees Ahmed (2021-10-15)   D097100700014 
+HISTORY    (20211015A) On. REACTION corrected.                    D097100700015 
+ENDBIB              13          0                                 D097100700016 
+NOCOMMON             0          0                                 D097100700017 
+DATA                 4          1                                 D097100700018 
+EN-MIN     EN-MAX     DATA       ERR-T                            D097100700019 
+MEV        MEV        MB         MB                               D097100700020 
+ 19.        26.        110.       10.                             D097100700021 
+ENDDATA              3          0                                 D097100700022 
+ENDSUBENT           21          0                                 D097100799999 
 ENDENTRY             7          0                                 D097199999999 
