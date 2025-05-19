@@ -1,0 +1,101 @@
+ENTRY            C1130   20171114                             C172C1130  0    1 
+SUBENT        C1130001   20171114                             C172C1130  1    1 
+BIB                  8         14                                 C1130  1    2 
+TITLE      Spallation yields of krypton and xenon from            C1130  1    3 
+           irradiation of strontium and barium with 730 MeV       C1130  1    4 
+           protons                                                C1130  1    5 
+AUTHOR     (H.Funk,F.Podosek,M.W.Rowe)                            C1130  1    6 
+REFERENCE  (J,EPL,3,193,1967)                                     C1130  1    7 
+           #doi:10.1016/0012-821X(67)90035-0                      C1130  1    8 
+INSTITUTE  (1USAUCX)                                              C1130  1    9 
+FACILITY   (CYCLO,1USABRK) 184 inch cyclotron, Lawrence           C1130  1   10 
+           Radiation Laboratory.                                  C1130  1   11 
+METHOD     (EXTB,MASSP) Mass spectrometry of the krypton and      C1130  1   12 
+           xenon isotopes resulting from spallation of strontium  C1130  1   13 
+           and barium by 730 MeV protons.                         C1130  1   14 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     C1130  1   15 
+HISTORY    (20171114C) BP                                         C1130  1   16 
+ENDBIB              14          0                                 C1130  1   17 
+COMMON               1          3                                 C1130  1   18 
+EN                                                                C1130  1   19 
+MEV                                                               C1130  1   20 
+      730.0                                                       C1130  1   21 
+ENDCOMMON            3          0                                 C1130  1   22 
+ENDSUBENT           21          0                                 C1130  199999 
+SUBENT        C1130002   20171114                             C172C1130  2    1 
+BIB                  3          3                                 C1130  2    2 
+REACTION   (38-SR-0(P,X)36-KR-80,,SIG)                            C1130  2    3 
+SAMPLE     Three samples of SrCl2.                                C1130  2    4 
+STATUS     (TABLE) Table 2, page 195.                             C1130  2    5 
+ENDBIB               3          0                                 C1130  2    6 
+NOCOMMON             0          0                                 C1130  2    7 
+DATA                 2          1                                 C1130  2    8 
+DATA       DATA-ERR                                               C1130  2    9 
+MB         MB                                                     C1130  2   10 
+        30.         6.                                            C1130  2   11 
+ENDDATA              3          0                                 C1130  2   12 
+ENDSUBENT           11          0                                 C1130  299999 
+SUBENT        C1130003   20171114                             C172C1130  3    1 
+BIB                  3          3                                 C1130  3    2 
+REACTION   (56-BA-0(P,X)54-XE-126,,SIG)                           C1130  3    3 
+SAMPLE     BaCl2.                                                 C1130  3    4 
+STATUS     (TABLE) Table 4, page 196.                             C1130  3    5 
+ENDBIB               3          0                                 C1130  3    6 
+NOCOMMON             0          0                                 C1130  3    7 
+DATA                 2          1                                 C1130  3    8 
+DATA       DATA-ERR                                               C1130  3    9 
+MB         MB                                                     C1130  3   10 
+        43.        10.                                            C1130  3   11 
+ENDDATA              3          0                                 C1130  3   12 
+ENDSUBENT           11          0                                 C1130  399999 
+SUBENT        C1130004   20171129                             C172C1130  4    1 
+BIB                  5         13                                 C1130  4    2 
+REACTION   ((38-SR-0(P,X)ELEM/MASS,,SIG)/                         C1130  4    3 
+           (38-SR-0(P,X)36-KR-80,,SIG))                           C1130  4    4 
+SAMPLE     Three samples of SrCl2.                                C1130  4    5 
+FLAG       (1.) Correction of the mass 83 chain, which is         C1130  4    6 
+           necessary because of incomplete decay to 83Kr.         C1130  4    7 
+DECAY-DATA (39-Y-82,9.MIN)                                        C1130  4    8 
+           (38-SR-82,25.D)                                        C1130  4    9 
+           (39-Y-83,7.4MIN)                                       C1130  4   10 
+           (38-SR-83,33.HR)                                       C1130  4   11 
+           (37-RB-83,83.D)                                        C1130  4   12 
+           (39-Y-84,42.MIN)                                       C1130  4   13 
+           (37-RB-84,33.D)                                        C1130  4   14 
+STATUS     (TABLE) Table 2, page 195.                             C1130  4   15 
+ENDBIB              13          0                                 C1130  4   16 
+NOCOMMON             0          0                                 C1130  4   17 
+DATA                 5          6                                 C1130  4   18 
+ELEMENT    MASS       DATA       DATA-ERR   FLAG                  C1130  4   19 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                C1130  4   20 
+        36.        78.       0.42       0.02                      C1130  4   21 
+        36.        81.        1.0       0.03                      C1130  4   22 
+        36.        82.       1.14       0.04                      C1130  4   23 
+        36.        83.       1.11       0.10         1.           C1130  4   24 
+        36.        84.       0.68       0.02                      C1130  4   25 
+        36.        85.      0.046      0.002                      C1130  4   26 
+ENDDATA              8          0                                 C1130  4   27 
+ENDSUBENT           26          0                                 C1130  499999 
+SUBENT        C1130005   20171129                             C172C1130  5    1 
+BIB                  4          5                                 C1130  5    2 
+REACTION   ((56-BA-0(P,X)ELEM/MASS,,PY)/                          C1130  5    3 
+           (56-BA-0(P,X)54-XE-126,,PY))                           C1130  5    4 
+SAMPLE     BaCl2.                                                 C1130  5    5 
+FLAG       (1.) Corrected for decay of 127Xe.                     C1130  5    6 
+STATUS     (TABLE) Table 4, page 196.                             C1130  5    7 
+ENDBIB               5          0                                 C1130  5    8 
+NOCOMMON             0          0                                 C1130  5    9 
+DATA                 5          8                                 C1130  5   10 
+ELEMENT    MASS       DATA       DATA-ERR   FLAG                  C1130  5   11 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                C1130  5   12 
+        54.       124.       0.72       0.02                      C1130  5   13 
+        54.       127.       1.01       0.02         1.           C1130  5   14 
+        54.       128.       1.14       0.03                      C1130  5   15 
+        54.       129.       1.12       0.02                      C1130  5   16 
+        54.       130.       0.72       0.02                      C1130  5   17 
+        54.       131.       1.31       0.03                      C1130  5   18 
+        54.       132.       0.55       0.03                      C1130  5   19 
+        54.       134.      0.049      0.003                      C1130  5   20 
+ENDDATA             10          0                                 C1130  5   21 
+ENDSUBENT           20          0                                 C1130  599999 
+ENDENTRY             5          0                                 C113099999999 
