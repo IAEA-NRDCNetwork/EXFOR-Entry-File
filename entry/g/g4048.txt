@@ -1,6 +1,6 @@
-ENTRY            G4048   20160402                             G035G4048  0    1 
-SUBENT        G4048001   20160402                             G035G4048  1    1 
-BIB                 13         32                                 G4048  1    2 
+ENTRY            G4048   20170324                             G038G4048  0    1 
+SUBENT        G4048001   20170324                             G038G4048  1    1 
+BIB                 13         34                                 G4048  1    2 
 TITLE      Experimental results on cross sections for 7Be         G4048  1    3 
             photoproduction on 12C, 14N, and 16O nuclei in the    G4048  1    4 
             energy range of 40-90 MeV                             G4048  1    5 
@@ -12,7 +12,7 @@ REFERENCE  (J,PAN,77,805,2014)                                    G4048  1   10
            (J,IZV,77,851,2014) Original of J,PAN,77,805,2014      G4048  1   11 
            (J,VAT/I,6/88,192,2013)                                G4048  1   12 
 FACILITY   (LINAC,4UKRKFT) Electron linear accelerator LUE-40     G4048  1   13 
-INC-SOURCE (BRST)                                                 G4048  1   14 
+INC-SOURCE (BRST) E0=40 to 90 MeV with a step of 10 MeV           G4048  1   14 
 SAMPLE     Corundum (Al2O3), high-purity graphite (C), a highly   G4048  1   15 
             compressed aluminum nitride powder (AlN), and Mo.     G4048  1   16 
 DETECTOR   (GE) The spectrometer complex "CANBERRA InSpector-2000"G4048  1   17 
@@ -27,60 +27,68 @@ ANALYSIS   The simulated bremsstrahlung spectrum was convolved    G4048  1   21
             check test target were obtained.                      G4048  1   26 
            The difference between the measured 99 Mo activity     G4048  1   27 
             value and the simulated result does not exceed 5-8%.  G4048  1   28 
-REL-REF    (R,,H.Naik+,J,JRN,295,807,2013)                        G4048  1   29 
-            Experimental 100Mo(g,n)99Mo cross section given       G4048  1   30 
-ERR-ANALYS (DATA-ERR) No information on the source of uncertainty G4048  1   31 
-HISTORY    (20140605C) UkrNDC                                     G4048  1   32 
-           (20150709A) OG:J,PAN,77,(7),805,2014 and #doi added    G4048  1   33 
-           (20160402A) On. Major revision in 004.                 G4048  1   34 
-ENDBIB              32          0                                 G4048  1   35 
-NOCOMMON             0          0                                 G4048  1   36 
-ENDSUBENT           35          0                                 G4048  199999 
-SUBENT        G4048002   20140606                             G030G404800200001 
-BIB                  2          2                                 G404800200002 
-REACTION   (6-C-12(G,X)4-BE-7,,SIG,,BRA)                          G404800200003 
-STATUS     (CURVE) Fig.8 was digitized by GSYS-2.4.6              G404800200004 
-ENDBIB               2          0                                 G404800200005 
-NOCOMMON             0          0                                 G404800200006 
-DATA                 4          6                                 G404800200007 
-EN-MAX     EN-ERR     DATA       DATA-ERR                         G404800200008 
-MEV        MEV        MB         MB                               G404800200009 
-      33.57       4.89    24.4989     2.8785                      G404800200010 
-      45.01       4.98    12.0256     1.9829                      G404800200011 
-      54.96       4.89     9.9787     1.9829                      G404800200012 
-      65.01       5.07     7.9957     3.0064                      G404800200013 
-      74.97       4.89    10.0426     3.0704                      G404800200014 
-      85.02       4.98    11.0021     2.1109                      G404800200015 
-ENDDATA              8          0                                 G404800200016 
-ENDSUBENT           15          0                                 G404800299999 
-SUBENT        G4048003   20140606                             G030G404800300001 
-BIB                  2          2                                 G404800300002 
-REACTION   (7-N-14(G,X)4-BE-7,,SIG,,BRA)                          G404800300003 
-STATUS     (CURVE) Fig.9 was digitized by GSYS-2.4.6              G404800300004 
-ENDBIB               2          0                                 G404800300005 
-NOCOMMON             0          0                                 G404800300006 
-DATA                 4          5                                 G404800300007 
-EN-MAX     EN-ERR     DATA       DATA-ERR                         G404800300008 
-MEV        MEV        MB         MB                               G404800300009 
-      44.97       4.91     0.0320     0.0052                      G404800300010 
-      55.02       5.06     0.0461     0.0050                      G404800300011 
-      64.99       4.99     0.0480     0.0050                      G404800300012 
-      74.97       4.99     0.0529     0.0050                      G404800300013 
-      85.01       4.91     0.0519     0.0050                      G404800300014 
-ENDDATA              7          0                                 G404800300015 
-ENDSUBENT           14          0                                 G404800399999 
-SUBENT        G4048004   20160402                             G035G4048  4    1 
-BIB                  3          3                                 G4048  4    2 
-REACTION   (8-O-16(G,X)4-BE-7,,SIG,,BRA)                          G4048  4    3 
-STATUS     (CURVE) Fig.10 was digitized by GSYS-2.4.6             G4048  4    4 
+           (DIFFR) Photon-difference method applied               G4048  1   29 
+REL-REF    (R,,H.Naik+,J,JRN,295,807,2013)                        G4048  1   30 
+            Experimental 100Mo(g,n)99Mo cross section given       G4048  1   31 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty G4048  1   32 
+HISTORY    (20140605C) UkrNDC                                     G4048  1   33 
+           (20150709A) OG:J,PAN,77,(7),805,2014 and #doi added    G4048  1   34 
+           (20160402A) On. Major revision in 004.                 G4048  1   35 
+           (20170324A) On. Major revision in 002-004.             G4048  1   36 
+ENDBIB              34          0                                 G4048  1   37 
+NOCOMMON             0          0                                 G4048  1   38 
+ENDSUBENT           37          0                                 G4048  199999 
+SUBENT        G4048002   20170324                             G038G4048  2    1 
+BIB                  3          4                                 G4048  2    2 
+REACTION   (6-C-12(G,X)4-BE-7,,SIG,,BRS)                          G4048  2    3 
+STATUS     (TABLE) Plotted in Fig.8 of Phys.Atom.Nucl.77(2014)805 G4048  2    4 
+HISTORY    (20160523R) On. Data received from V. Malyshevsky.     G4048  2    5 
+           (20170324A) On. Author's data replaced digitized data. G4048  2    6 
+ENDBIB               4          0                                 G4048  2    7 
+NOCOMMON             0          0                                 G4048  2    8 
+DATA                 3          6                                 G4048  2    9 
+EN         DATA       DATA-ERR                                    G4048  2   10 
+MEV        MB         MB                                          G4048  2   11 
+ 35.        0.240      0.025                                      G4048  2   12 
+ 45.        0.120      0.025                                      G4048  2   13 
+ 55.        0.100      0.025                                      G4048  2   14 
+ 65.        0.052      0.025                                      G4048  2   15 
+ 75.        0.100      0.025                                      G4048  2   16 
+ 85.        0.110      0.025                                      G4048  2   17 
+ENDDATA              8          0                                 G4048  2   18 
+ENDSUBENT           17          0                                 G4048  299999 
+SUBENT        G4048003   20170324                             G038G4048  3    1 
+BIB                  3          4                                 G4048  3    2 
+REACTION   (7-N-14(G,X)4-BE-7,,SIG,,BRS)                          G4048  3    3 
+STATUS     (TABLE) Plotted in Fig.9 of Phys.Atom.Nucl.77(2014)805 G4048  3    4 
+HISTORY    (20160523R) On. Data received from V. Malyshevsky.     G4048  3    5 
+           (20170324A) On. Author's data replaced digitized data. G4048  3    6 
+ENDBIB               4          0                                 G4048  3    7 
+NOCOMMON             0          0                                 G4048  3    8 
+DATA                 3          5                                 G4048  3    9 
+EN         DATA       DATA-ERR                                    G4048  3   10 
+MEV        MB         MB                                          G4048  3   11 
+ 45.        0.032      0.005                                      G4048  3   12 
+ 55.        0.046      0.005                                      G4048  3   13 
+ 65.        0.048      0.005                                      G4048  3   14 
+ 75.        0.053      0.005                                      G4048  3   15 
+ 85.        0.052      0.005                                      G4048  3   16 
+ENDDATA              7          0                                 G4048  3   17 
+ENDSUBENT           16          0                                 G4048  399999 
+SUBENT        G4048004   20170324                             G038G4048  4    1 
+BIB                  3          5                                 G4048  4    2 
+REACTION   (8-O-16(G,X)4-BE-7,,SIG,,BRS)                          G4048  4    3 
+STATUS     (TABLE) Plotted in Fig.10 of Phys.Atom.Nucl.77(2014)805G4048  4    4 
 HISTORY    (20160402A) On. REACTION(SF1): 6-C-12 -> 8-O-16        G4048  4    5 
-ENDBIB               3          0                                 G4048  4    6 
-NOCOMMON             0          0                                 G4048  4    7 
-DATA                 4          2                                 G4048  4    8 
-EN-MAX     EN-ERR     DATA       DATA-ERR                         G4048  4    9 
-MEV        MEV        MB         MB                               G4048  4   10 
- 43.93      4.02       0.0140     0.0021                          G4048  4   11 
- 54.96      4.02       0.0270     0.0030                          G4048  4   12 
-ENDDATA              4          0                                 G4048  4   13 
-ENDSUBENT           12          0                                 G4048  499999 
+           (20160523R) On. Data received from V. Malyshevsky.     G4048  4    6 
+           (20170324A) On. Author's data replaced digitized data. G4048  4    7 
+ENDBIB               5          0                                 G4048  4    8 
+NOCOMMON             0          0                                 G4048  4    9 
+DATA                 3          2                                 G4048  4   10 
+EN         DATA       DATA-ERR                                    G4048  4   11 
+MEV        MB         MB                                          G4048  4   12 
+ 45.        0.014      0.002                                      G4048  4   13 
+ 55.        0.027      0.002                                      G4048  4   14 
+ENDDATA              4          0                                 G4048  4   15 
+ENDSUBENT           14          0                                 G4048  499999 
 ENDENTRY             4          0                                 G404899999999 
