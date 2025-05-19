@@ -1,0 +1,117 @@
+ENTRY            30846   20201117                             31983084600000001 
+SUBENT        30846001   20201117                             31983084600100001 
+BIB                 19         46                                 3084600100002 
+TITLE      Measurement of activation cross sections for           3084600100003 
+           quasi-monoenergetic neutron induced reactions of 89Y   3084600100004 
+AUTHOR     (M.Zaman, G.N.Kim, K.Kim, H.Naik, M.W.Lee, M.Shahid)   3084600100005 
+INSTITUTE  (3KORKNU,3INDTRM,3KORDRM)                              3084600100006 
+REFERENCE  (J,EPJ/A,53,182,2017)                                  3084600100007 
+FACILITY   (CYCLO,3KORKRM) MC-50 cyclotron (KIRAMS)               3084600100008 
+INC-SOURCE (P-BE) The neutron beam was produced from the 9Be(p,n) 3084600100009 
+            reaction by impinging 25, 30, 35, 40 and 45 MeV       3084600100010 
+           proton beams on a 2 mm thick Be target.                3084600100011 
+INC-SPECT  The neutron spectrum was characterized by MCNPX 2.6.0. 3084600100012 
+SAMPLE     Y foil (thickness 127 um)                              3084600100013 
+METHOD     (ACTIV,GSPEC)                                          3084600100014 
+DETECTOR   (HPGE)                                                 3084600100015 
+MONITOR    Au foil (thickness: 100 um)                            3084600100016 
+           The neutron fluxes from the reaction threshold to the  3084600100017 
+            maximum neutron energies was calculated with the      3084600100018 
+            MCNPX code.                                           3084600100019 
+           ((MONIT1)79-AU-197(N,2N)79-AU-196,,SIG)                3084600100020 
+           ((MONIT2)79-AU-197(N,3N)79-AU-195,,SIG)                3084600100021 
+           ((MONIT3)79-AU-197(N,4N)79-AU-194,,SIG)                3084600100022 
+DECAY-MON  ((MONIT1)79-AU-196-G,6.18D,DG,355.68,0.870)            3084600100023 
+           ((MONIT2)79-AU-195-G,186.09D,DG,98.85,0.109)           3084600100024 
+           ((MONIT3)79-AU-194-G,38.02HR,DG,293.55,0.104)          3084600100025 
+MONIT-REF  (,B.P.Bayhurst+,J,PR/C,12,451,1975)                    3084600100026 
+           (,Y.Uwamino+,C,91JUELIC,,726,1991)                     3084600100027 
+REL-REF    (R,,R.B.Firestone+,B,FIRESTONE,,,2004) WWW Version     3084600100028 
+            2.0, Decay data                                       3084600100029 
+CORRECTION The correction factor FACT defined in Eq.(4) was       3084600100030 
+            calculated with the cross sections of the monitor     3084600100031 
+            reactions, which were taken from the TENDL-2015       3084600100032 
+            library.                                              3084600100033 
+MISC-COL   (MISC) Correction factor to remove contribution of low 3084600100034 
+            energy background neutrons                            3084600100035 
+ERR-ANALYS (DATA-ERR) Uncertainty due to replicated measurements  3084600100036 
+                                                    (10.2-17.36%) 3084600100037 
+           (ERR-S,1.,5.) Statistical uncertainty       (1.0-5.0%) 3084600100038 
+           (ERR-1) irradiation time                       (~0.5%) 3084600100039 
+           (ERR-2) detection efficiency calibration         (~4%) 3084600100040 
+           (ERR-3,7.6,15.2) neutron flux              (7.6-15.2%) 3084600100041 
+           (ERR-4) half-life and gamma-ray abundance        (~2%) 3084600100042 
+           (ERR-5) the contribution from the low-energy tail      3084600100043 
+            subtraction of MCNPX proposed by Honusek et al.  (5%) 3084600100044 
+           (ERR-6) transformation of the number of gamma-ray      3084600100045 
+            to activity                                      (5%) 3084600100046 
+STATUS     (APRVD) Approved by G.N.Kim (2020-11-19)               3084600100047 
+HISTORY    (20201117C) S.C.Yang                                   3084600100048 
+ENDBIB              46          0                                 3084600100049 
+COMMON               5          3                                 3084600100050 
+ERR-1      ERR-2      ERR-4      ERR-5      ERR-6                 3084600100051 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3084600100052 
+0.5        4.         2.         5.         5.                    3084600100053 
+ENDCOMMON            3          0                                 3084600100054 
+ENDSUBENT           53          0                                 3084600199999 
+SUBENT        30846002   20201117                             31983084600200001 
+BIB                  3          3                                 3084600200002 
+REACTION   (39-Y-89(N,2N)39-Y-88,,SIG,,SPA)                       3084600200003 
+DECAY-DATA (39-Y-88,106.65D,DG,898.04,0.937)                      3084600200004 
+STATUS     (TABLE) Table 2 of Eur. Phys. A 53, 182, 2017          3084600200005 
+ENDBIB               3          0                                 3084600200006 
+NOCOMMON             0          0                                 3084600200007 
+DATA                 8          5                                 3084600200008 
+EN         EN-RSL-HW  DATA       DATA-ERR   MONIT1     MONIT2     3084600200009 
+MONIT3     MISC                                                   3084600200010 
+MEV        MEV        MB         MB         B          B          3084600200011 
+B          NO-DIM                                                 3084600200012 
+15.20      3.65       1034.63    127.30     1.82                  3084600200013 
+           0.85                                                   3084600200014 
+20.71      3.18       1280.94    135.0                 1.40       3084600200015 
+           0.74                                                   3084600200016 
+26.40      2.77       673.5      72.90                 1.82       3084600200017 
+           0.39                                                   3084600200018 
+31.88      2.77       356.78     57.4                             3084600200019 
+0.77       0.23                                                   3084600200020 
+37.20      2.20       307.0      49.97                            3084600200021 
+0.80       0.19                                                   3084600200022 
+ENDDATA             14          0                                 3084600200023 
+ENDSUBENT           22          0                                 3084600299999 
+SUBENT        30846003   20201117                             31983084600300001 
+BIB                  3          4                                 3084600300002 
+REACTION   (39-Y-89(N,3N)39-Y-87,,SIG,,SPA)                       3084600300003 
+DECAY-DATA (39-Y-87-G,79.8HR,DG,484.80,0.897)                     3084600300004 
+           (39-Y-87-M,13.37HR,DG,380.79,0.780)                    3084600300005 
+STATUS     (TABLE) Table 2 of Eur. Phys. A 53, 182, 2017          3084600300006 
+ENDBIB               4          0                                 3084600300007 
+NOCOMMON             0          0                                 3084600300008 
+DATA                 7          4                                 3084600300009 
+EN         EN-RSL-HW  DATA       DATA-ERR   MONIT2     MONIT3     3084600300010 
+MISC                                                              3084600300011 
+MEV        MEV        MB         MB         B          B          3084600300012 
+NO-DIM                                                            3084600300013 
+20.71      3.18       42.814     4.35       1.40                  3084600300014 
+0.46                                                              3084600300015 
+26.40      2.77       511.15     51.92      1.82                  3084600300016 
+0.80                                                              3084600300017 
+31.88      2.77       748.52     118.0                 0.77       3084600300018 
+0.64                                                              3084600300019 
+37.20      2.20       467.1      77.9                  0.80       3084600300020 
+0.45                                                              3084600300021 
+ENDDATA             12          0                                 3084600300022 
+ENDSUBENT           21          0                                 3084600399999 
+SUBENT        30846004   20201117                             31983084600400001 
+BIB                  3          3                                 3084600400002 
+REACTION   (39-Y-89(N,4N)39-Y-86,,SIG,,SPA)                       3084600400003 
+DECAY-DATA (39-Y-86-G,14.74HR,DG,1076.6,0.830)                    3084600400004 
+STATUS     (TABLE) Table 2 of Eur. Phys. A 53, 182, 2017          3084600400005 
+ENDBIB               3          0                                 3084600400006 
+NOCOMMON             0          0                                 3084600400007 
+DATA                 6          1                                 3084600400008 
+EN         EN-RSL-HW  DATA       DATA-ERR   MONIT3     MISC       3084600400009 
+MEV        MEV        MB         MB         B          NO-DIM     3084600400010 
+37.20      2.20       59.5       10.33      0.80       0.70       3084600400011 
+ENDDATA              3          0                                 3084600400012 
+ENDSUBENT           11          0                                 3084600499999 
+ENDENTRY             4          0                                 3084699999999 

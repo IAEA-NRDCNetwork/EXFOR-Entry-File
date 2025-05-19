@@ -1,0 +1,87 @@
+ENTRY            31831   20201016                             31983183100000001 
+SUBENT        31831001   20201016                             31983183100100001 
+BIB                 12         26                                 3183100100002 
+TITLE      Total neutron cross-section extracted from             3183100100003 
+            transmission experiments with liquid oxygen using     3183100100004 
+            neutron energies from 18 to 27 MeV                    3183100100005 
+AUTHOR     (M.Ansorge, P.Bem, D.Hladik, M.Majerle, J.Mrazek,      3183100100006 
+            J.Novak, E.Simeckova, M.Stefanik)                     3183100100007 
+INSTITUTE  (3CZRUJF)                                              3183100100008 
+REFERENCE  (J,EPJ/CS,239,20008,2020)                              3183100100009 
+FACILITY   (ISOCY,3CZRUJF) U-120M cyclotron                       3183100100010 
+INC-SOURCE (P-LI7) proton (20 to 35 MeV) on Li foil (2 mm thick)  3183100100011 
+            backed with thick graphite beam stopper               3183100100012 
+INC-SPECT  En=18.8(3) MeV: FWHM=1.97(7) MeV                       3183100100013 
+           En=22.0(2) MeV: FWHM=1.89(4) MeV                       3183100100014 
+           En=25.0(2) MeV: FWHM=1.73(5) MeV                       3183100100015 
+           En=27.0(2) MeV: FWHM=1.3(0.1) MeV                      3183100100016 
+SAMPLE     Liquid natural oxygen (99.95% pure) placed into a      3183100100017 
+            polystyrene box (inner dimension 210 mm x 160 mm) at  3183100100018 
+            room temperature. Each orientation gives thickness    3183100100019 
+            of                                                    3183100100020 
+            - 20.80+/-0.12 cm, (8.94+/-0.05)E-01 atoms/barn,      3183100100021 
+            - 15.88+/-0.12 cm, (6.82+/-0.05)E-01 atoms/barn.      3183100100022 
+DETECTOR   (SCIN) Organic liquid scintillator NE-213 (cylindrical,3183100100023 
+            2x2 inches)                                           3183100100024 
+METHOD     (TOF) Flight path of 9 to 9.5 m                        3183100100025 
+STATUS     (TABLE) Table 1 of EPJ Web.Conf.239(2020)20008         3183100100026 
+           (APRVD) Proof-read by Martin Ansorge (2020-10-21)      3183100100027 
+HISTORY    (20201016C) On                                         3183100100028 
+ENDBIB              26          0                                 3183100100029 
+NOCOMMON             0          0                                 3183100100030 
+ENDSUBENT           29          0                                 3183100199999 
+SUBENT        31831002   20201016                             31983183100200001 
+BIB                  3         11                                 3183100200002 
+REACTION   (8-O-0(N,TOT),,TRN,,RAW)                               3183100200003 
+CORRECTION Uncorrected for                                        3183100200004 
+            - dead time                                           3183100200005 
+            - pile-up                                             3183100200006 
+            - air displacement                                    3183100200007 
+            - neutron scattered by polystyrene box and neutron    3183100200008 
+              scattered at the sample region and still reaching   3183100200009 
+              the detector                                        3183100200010 
+ERR-ANALYS (DATA-ERR) Uncertainty due to                          3183100200011 
+            - time resolution (main source),                      3183100200012 
+            - counting statistics.                                3183100200013 
+ENDBIB              11          0                                 3183100200014 
+NOCOMMON             0          0                                 3183100200015 
+DATA                 6          7                                 3183100200016 
+EN         EN-ERR     EN-RSL-FW  THICKNESS  DATA       DATA-ERR   3183100200017 
+MEV        MEV        MEV        ATOMS/B    NO-DIM     NO-DIM     3183100200018 
+ 18.8       0.3        1.97         8.94E-01 0.2345     0.0130    3183100200019 
+ 18.8       0.3        1.97         6.82E-01 0.3266     0.0139    3183100200020 
+ 22.0       0.2        1.89         8.94E-01 0.2227     0.0053    3183100200021 
+ 25.0       0.2        1.73         8.94E-01 0.2359     0.0064    3183100200022 
+ 25.0       0.2        1.73         6.82E-01 0.3276     0.0094    3183100200023 
+ 27.0       0.2        1.3          8.94E-01 0.2399     0.0054    3183100200024 
+ 27.0       0.2        1.3          6.82E-01 0.3296     0.0077    3183100200025 
+ENDDATA              9          0                                 3183100200026 
+ENDSUBENT           25          0                                 3183100299999 
+SUBENT        31831003   20201016                             31983183100300001 
+BIB                  4         14                                 3183100300002 
+REACTION   (8-O-0(N,TOT),,SIG)                                    3183100300003 
+CORRECTION Corrected for                                          3183100300004 
+            - dead time                                           3183100300005 
+            - pile up                                             3183100300006 
+            - air displacement                                    3183100300007 
+            - neutron scattered by polystyrene box and neutron    3183100300008 
+              scattered at the sample region and still reaching   3183100300009 
+              the detector                                        3183100300010 
+              (by MCNPX and ENDF/B-VII.1)                         3183100300011 
+ERR-ANALYS (DATA-ERR) Uncertainty due to                          3183100300012 
+            - time resolution (main source),                      3183100300013 
+            - counting statistics,                                3183100300014 
+            - correction (20% of the correction value).           3183100300015 
+STATUS     (DEP,31831002) Transmission                            3183100300016 
+ENDBIB              14          0                                 3183100300017 
+NOCOMMON             0          0                                 3183100300018 
+DATA                 5          4                                 3183100300019 
+EN         EN-ERR     EN-RSL-FW  DATA       DATA-ERR              3183100300020 
+MEV        MEV        MEV        B          B                     3183100300021 
+ 18.8       0.3        1.97       1.622      0.044                3183100300022 
+ 22.0       0.2        1.89       1.668      0.028                3183100300023 
+ 25.0       0.2        1.73       1.620      0.027                3183100300024 
+ 27.0       0.2        1.3        1.600      0.022                3183100300025 
+ENDDATA              6          0                                 3183100300026 
+ENDSUBENT           25          0                                 3183100399999 
+ENDENTRY             3          0                                 3183199999999 
