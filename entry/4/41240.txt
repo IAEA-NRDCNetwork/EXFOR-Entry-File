@@ -1,6 +1,6 @@
-ENTRY            41240   20150701                             416941240  0    1 
-SUBENT        41240001   20150701                             416941240  1    1 
-BIB                 13        125                                 41240  1    2 
+ENTRY            41240   20150920                             417041240  0    1 
+SUBENT        41240001   20150920                             417041240  1    1 
+BIB                 13        126                                 41240  1    2 
 TITLE      .Systematic Measurement of Activation Cross Sections   41240  1    3 
             At Neutron Energies from 13.4 to 14.9 MeV             41240  1    4 
 AUTHOR     (A.A.Filatenkov,S.V.Chuvaev,V.N.Aksenov,V.A.Yakovlev,  41240  1    5 
@@ -125,10 +125,11 @@ HISTORY    (19970528C)  + + Compiled at the centre - CJD + +      41240  1  100
            (20150701A) Subents 068, 134 were corrected.           41240  1  124 
            "COREL,41298001" was deleted according to comment of   41240  1  125 
            N.Otsuka (NDS,IAEA).                                   41240  1  126 
-ERR-ANALYS (ERR-T) Errors are total, error structure is not given 41240  1  127 
-ENDBIB             125          0                                 41240  1  128 
-NOCOMMON             0          0                                 41240  1  129 
-ENDSUBENT          128          0                                 41240  199999 
+           (20150920A) Subent 073 was corrected.                  41240  1  127 
+ERR-ANALYS (ERR-T) Errors are total, error structure is not given 41240  1  128 
+ENDBIB             126          0                                 41240  1  129 
+NOCOMMON             0          0                                 41240  1  130 
+ENDSUBENT          129          0                                 41240  199999 
 NOSUBENT      41240002   20130320                             41604124000200001 
 SUBENT        41240003   20130320                             41604124000300001 
 BIB                  7         20                                 4124000300002 
@@ -2358,41 +2359,52 @@ MEV        MB         MB                                          4124007200025
  1.4860E+01 12.        3.                                         4124007200027 
 ENDDATA              4          0                                 4124007200028 
 ENDSUBENT           27          0                                 4124007299999 
-SUBENT        41240073   20130320                             41604124007300001 
-BIB                  7          8                                 4124007300002 
-REACTION   (13-AL-27(N,2N)13-AL-26,,SIG)                          4124007300003 
-DECAY-DATA (13-AL-26,7.48E+5YR,DG,1808.6,0.9973)                  4124007300004 
-SAMPLE     Metallic aluminium, weight 90 mg, purity 100%          4124007300005 
-MONITOR    (41-NB-93(N,2N)41-NB-92-M,,SIG)                        4124007300006 
-                  Main monitor.                                   4124007300007 
-MONIT-REF  (41240003,A.Filatenkov+,R,INDC(CCP)-402,199701)        4124007300008 
-HISTORY    (19990709C)   + + Compiled at the center               4124007300009 
-STATUS     (TABLE) Table 3 of Attachment  2 in RI-252.            4124007300010 
-ENDBIB               8          0                                 4124007300011 
-COMMON               2          3                                 4124007300012 
-ERR-HL     ERR-IDD                                                4124007300013 
-YR         NO-DIM                                                 4124007300014 
-    0.03E+5   0.0008                                              4124007300015 
-ENDCOMMON            3          0                                 4124007300016 
-DATA                 3         14                                 4124007300017 
-EN         DATA       ERR-T                                       4124007300018 
-MEV        MB         MB                                          4124007300019 
-13.60        0.81       0.08                                      4124007300020 
-13.70        0.89       0.05                                      4124007300021 
-13.76        1.98       0.08                                      4124007300022 
-13.79        2.05       0.20                                      4124007300023 
-13.87        4.03       0.22                                      4124007300024 
-13.99        5.31       0.20                                      4124007300025 
-14.10        7.23       0.18                                      4124007300026 
-14.19        9.82       0.33                                      4124007300027 
-14.23        9.89       0.34                                      4124007300028 
-14.36        16.0       0.4                                       4124007300029 
-14.42        17.4       0.6                                       4124007300030 
-14.50        19.5       0.5                                       4124007300031 
-14.64        23.3       0.8                                       4124007300032 
-14.80        30.0       0.8                                       4124007300033 
-ENDDATA             16          0                                 4124007300034 
-ENDSUBENT           33          0                                 4124007399999 
+SUBENT        41240073   20150920                             417041240 73    1 
+BIB                  9         19                                 41240 73    2 
+REACTION   (13-AL-27(N,2N)13-AL-26-G,,SIG)                        41240 73    3 
+DECAY-DATA (13-AL-26-G,7.48E+5YR)                                 41240 73    4 
+SAMPLE     Metallic aluminum , weight 90 mg, purity 100%          41240 73    5 
+MONITOR    (41-NB-93(N,2N)41-NB-92-M,,SIG)                        41240 73    6 
+                  Main monitor.                                   41240 73    7 
+MONIT-REF  (41240003,A.Filatenkov+,R,INDC(CCP)-402,199701)        41240 73    8 
+METHOD     (AMS) at VERA facility, University of Vienna.          41240 73    9 
+COMMENT    Of author A.Filatenkov.                                41240 73   10 
+           - The 1809 keV line was left in Table 2 of RI-252      41240 73   11 
+           formally. We tried to use this line to determine the   41240 73   12 
+           Al-26 activity, but in this way we could not reach     41240 73   13 
+           the accuracy compared with the AMS facility.           41240 73   14 
+STATUS     (TABLE) Table 3 of Attachment  2 in RI-252.            41240 73   15 
+           (SPSDD,22864003) See comment.                          41240 73   16 
+           (APRVD) Approved by A.Filatenkov.                      41240 73   17 
+HISTORY    (19990709C)   + + Compiled at the center               41240 73   18 
+           (20150920A) Subent is superseded according to comments 41240 73   19 
+           from A.Filatenkov, 22.09.2015.                         41240 73   20 
+           DG line was deleted from DECAY-DATA.                   41240 73   21 
+ENDBIB              19          0                                 41240 73   22 
+COMMON               1          3                                 41240 73   23 
+ERR-HL                                                            41240 73   24 
+YR                                                                41240 73   25 
+    0.03E+5                                                       41240 73   26 
+ENDCOMMON            3          0                                 41240 73   27 
+DATA                 3         14                                 41240 73   28 
+EN         DATA       ERR-T                                       41240 73   29 
+MEV        MB         MB                                          41240 73   30 
+13.60        0.81       0.08                                      41240 73   31 
+13.70        0.89       0.05                                      41240 73   32 
+13.76        1.98       0.08                                      41240 73   33 
+13.79        2.05       0.20                                      41240 73   34 
+13.87        4.03       0.22                                      41240 73   35 
+13.99        5.31       0.20                                      41240 73   36 
+14.10        7.23       0.18                                      41240 73   37 
+14.19        9.82       0.33                                      41240 73   38 
+14.23        9.89       0.34                                      41240 73   39 
+14.36        16.0       0.4                                       41240 73   40 
+14.42        17.4       0.6                                       41240 73   41 
+14.50        19.5       0.5                                       41240 73   42 
+14.64        23.3       0.8                                       41240 73   43 
+14.80        30.0       0.8                                       41240 73   44 
+ENDDATA             16          0                                 41240 73   45 
+ENDSUBENT           44          0                                 41240 7399999 
 SUBENT        41240074   20130320                             41604124007400001 
 BIB                  7          8                                 4124007400002 
 REACTION   (14-SI-28(N,P)13-AL-28,,SIG)                           4124007400003 
