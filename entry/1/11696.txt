@@ -1,28 +1,29 @@
-ENTRY            11696   20160809                             142111696  0    1 
-SUBENT        11696001   20160809                             142111696  1    1 
-BIB                  8         15                                 11696  1    2 
+ENTRY            11696   20210731                             148511696  0    1 
+SUBENT        11696001   20210731                             148511696  1    1 
+BIB                  8         16                                 11696  1    2 
 TITLE      Activation cross sections of Fe and Ni isotopes for    11696  1    3 
             14.5 MeV neutrons                                     11696  1    4 
 AUTHOR     (W.G.Cross, R.L.Clarke, K.Morin, G.Slinn, N.M.Ahmed,   11696  1    5 
             K.Beg)                                                11696  1    6 
 INSTITUTE  (1CANCRC)                                              11696  1    7 
-REFERENCE  (P,EANDC(CAN)-16,1,196301)                             11696  1    8 
+REFERENCE  (P,EANDC(CAN)-16,1,1963)                               11696  1    8 
            (P,PR-P-53,7,1962) Excitation functions                11696  1    9 
-           (J,BAP,7,335(TA14),196204) Data superseded             11696  1   10 
-METHOD     (ACTIV) Activation                                     11696  1   11 
+           (J,BAP,7,335(TA14),1962) Data superseded               11696  1   10 
+METHOD     (ACTIV)                                                11696  1   11 
 MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           11696  1   12 
 STATUS     (SCSRS)                                                11696  1   13 
 HISTORY    (19760730T) Translated from SCISRS                     11696  1   14 
            (19831011A) Converted to reaction formalism            11696  1   15 
            (20120225U) On. Upper to lower cases, 4 digits year    11696  1   16 
            (20160807U) OS. Corr.in DECAY-DATA in sub.12           11696  1   17 
-ENDBIB              15          0                                 11696  1   18 
-COMMON               2          3                                 11696  1   19 
-EN-NRM     MONIT                                                  11696  1   20 
-MEV        MB                                                     11696  1   21 
- 14.5       115.                                                  11696  1   22 
-ENDCOMMON            3          0                                 11696  1   23 
-ENDSUBENT           22          0                                 11696  199999 
+           (20210622A) OS. REACTION modified in sub. 19           11696  1   18 
+ENDBIB              16          0                                 11696  1   19 
+COMMON               2          3                                 11696  1   20 
+EN-NRM     MONIT                                                  11696  1   21 
+MEV        MB                                                     11696  1   22 
+ 14.5       115.                                                  11696  1   23 
+ENDCOMMON            3          0                                 11696  1   24 
+ENDSUBENT           23          0                                 11696  199999 
 SUBENT        11696002   19831011                             00001169600200001 
 BIB                  1          1                                 1169600200002 
 REACTION   (26-FE-54(N,2N)26-FE-53,,SIG)                          1169600200003 
@@ -253,17 +254,19 @@ MEV        B          B                                           1169601800008
  1.45   +01 3.9    -02 6.     -03                                 1169601800009 
 ENDDATA              3          0                                 1169601800010 
 ENDSUBENT            9          0                                 1169601899999 
-SUBENT        11696019   19831011                             00001169601900001 
-BIB                  1          1                                 1169601900002 
-REACTION   (28-NI-62(N,N+P)27-CO-61,,SIG)                         1169601900003 
-ENDBIB               1          0                                 1169601900004 
-NOCOMMON             0          0                                 1169601900005 
-DATA                 3          1                                 1169601900006 
-EN         DATA       DATA-ERR                                    1169601900007 
-MEV        B          B                                           1169601900008 
- 1.45   +01 4.4    -03 1.0    -03                                 1169601900009 
-ENDDATA              3          0                                 1169601900010 
-ENDSUBENT            9          0                                 1169601999999 
+SUBENT        11696019   20210731                             148511696 19    1 
+BIB                  3          3                                 11696 19    2 
+REACTION   (28-NI-62(N,X)27-CO-61,,SIG)                           11696 19    3 
+ERR-ANALYS (DATA-ERR) No information on sources of uncertainties  11696 19    4 
+HISTORY    (20210622A) REACTION SF3 changed to X                  11696 19    5 
+ENDBIB               3          0                                 11696 19    6 
+NOCOMMON             0          0                                 11696 19    7 
+DATA                 3          1                                 11696 19    8 
+EN         DATA       DATA-ERR                                    11696 19    9 
+MEV        B          B                                           11696 19   10 
+ 1.45   +01 4.4    -03 1.0    -03                                 11696 19   11 
+ENDDATA              3          0                                 11696 19   12 
+ENDSUBENT           11          0                                 11696 1999999 
 SUBENT        11696020   19831011                             00001169602000001 
 BIB                  2          2                                 1169602000002 
 REACTION   (28-NI-62(N,P)27-CO-62-M,,SIG)                         1169602000003 

@@ -1,32 +1,33 @@
-ENTRY            11590   20160809                             142111590  0    1 
-SUBENT        11590001   20160809                             142111590  1    1 
-BIB                 10         19                                 11590  1    2 
+ENTRY            11590   20210731                             148511590  0    1 
+SUBENT        11590001   20210731                             148511590  1    1 
+BIB                 10         20                                 11590  1    2 
 INSTITUTE  (1USAARK)                                              11590  1    3 
-REFERENCE  (J,PR,131,2649,196309)                                 11590  1    4 
+REFERENCE  (J,PR,131,2649,1963)                                   11590  1    4 
 AUTHOR     (E.T.Bramlitt,R.W.Fink)                                11590  1    5 
 TITLE      Rare nuclear reactions induced by 14.7-MeV neutrons.   11590  1    6 
 FACILITY   (CCW,1USAARK)                                          11590  1    7 
-INC-SOURCE (D-T) T(d,n) source                                    11590  1    8 
+INC-SOURCE (D-T)                                                  11590  1    8 
 METHOD     (ACTIV)                                                11590  1    9 
 DETECTOR   (PROPC). Betas                                         11590  1   10 
            (SCIN) Plastic scintillator. Betas.                    11590  1   11 
            (NAICR). Gammas.                                       11590  1   12 
 STATUS     (TABLE) Tables II-VI of Phys.Rev.131,2649,1963         11590  1   13 
 HISTORY    (19760718T) Translated  from SCISRS                    11590  1   14 
-           (19830815A) Cocverted to REACTION formalism            11590  1   15 
+           (19830815A) Converted to REACTION formalism            11590  1   15 
            (19840731A) BIB corrections.                           11590  1   16 
            (19860714A) Energy moved to subentry 1.                11590  1   17 
            (19870120A) BIB corrections.                           11590  1   18 
            (20160807A) OS. DECAY-DATA in subs.25,30 corrected.    11590  1   19 
              Converted to lower case. Added ERR-ANALYS in relevant11590  1   20 
              subentries. Updated FACILITY, STATUS.                11590  1   21 
-ENDBIB              19          0                                 11590  1   22 
-COMMON               2          3                                 11590  1   23 
-EN         EN-RSL                                                 11590  1   24 
-MEV        MEV                                                    11590  1   25 
- 14.7       0.2                                                   11590  1   26 
-ENDCOMMON            3          0                                 11590  1   27 
-ENDSUBENT           26          0                                 11590  199999 
+           (20210715A) OS. REACTION coding modified in sub.59     11590  1   22 
+ENDBIB              20          0                                 11590  1   23 
+COMMON               2          3                                 11590  1   24 
+EN         EN-RSL-HW                                              11590  1   25 
+MEV        MEV                                                    11590  1   26 
+ 14.7       0.2                                                   11590  1   27 
+ENDCOMMON            3          0                                 11590  1   28 
+ENDSUBENT           27          0                                 11590  199999 
 SUBENT        11590002   19870120                             00001159000200001 
 BIB                  3          3                                 1159000200002 
 REACTION   (14-SI-29(N,2P)12-MG-28,,SIG)                          1159000200003 
@@ -826,21 +827,21 @@ B          MB                                                     1159005800010
  6.0    -05 5.9                                                   1159005800011 
 ENDDATA              3          0                                 1159005800012 
 ENDSUBENT           11          0                                 1159005899999 
-SUBENT        11590059   19860714                             00001159005900001 
-BIB                  4          5                                 1159005900002 
-REACTION   ((42-MO-92(N,N+P)41-NB-91-M,,SIG)+                     1159005900003 
-           (42-MO-92(N,D)41-NB-91-M,,SIG))                        1159005900004 
-DECAY-DATA (41-NB-91-M,62.D)                                      1159005900005 
-MONITOR    (42-MO-92(N,P)41-NB-92,,SIG)                           1159005900006 
-HISTORY    (840731A) LINES RESEQUENCED.                           1159005900007 
-ENDBIB               5          0                                 1159005900008 
-NOCOMMON             0          0                                 1159005900009 
-DATA                 2          1                                 1159005900010 
-DATA-MAX   MONIT                                                  1159005900011 
-B          MB                                                     1159005900012 
- 5.0    -02 60.                                                   1159005900013 
-ENDDATA              3          0                                 1159005900014 
-ENDSUBENT           13          0                                 1159005999999 
+SUBENT        11590059   20210731                             148511590 59    1 
+BIB                  4          5                                 11590 59    2 
+REACTION   (42-MO-92(N,X)41-NB-91-M,,SIG)                         11590 59    3 
+DECAY-DATA (41-NB-91-M,62.D)                                      11590 59    4 
+MONITOR    (42-MO-92(N,P)41-NB-92,,SIG)                           11590 59    5 
+HISTORY    (19840731A) Lines resequenced.                         11590 59    6 
+           (20210715A) REACTION SF3 changed to X                  11590 59    7 
+ENDBIB               5          0                                 11590 59    8 
+NOCOMMON             0          0                                 11590 59    9 
+DATA                 2          1                                 11590 59   10 
+DATA-MAX   MONIT                                                  11590 59   11 
+B          MB                                                     11590 59   12 
+ 5.0    -02 60.                                                   11590 59   13 
+ENDDATA              3          0                                 11590 59   14 
+ENDSUBENT           13          0                                 11590 5999999 
 SUBENT        11590060   20160809                             142111590 60    1 
 BIB                  6          7                                 11590 60    2 
 REACTION   (42-MO-92(N,P)41-NB-92-M,,SIG)                         11590 60    3 

@@ -1,57 +1,70 @@
-ENTRY            11554   19830412                             00001155400000001 
-SUBENT        11554001   19830412                             00001155400100001 
-BIB                  8         10                                 1155400100002 
-INSTITUTE  (1USAPPO)                                              1155400100003 
-REFERENCE  (J,NP,62,172,6502)                                     1155400100004 
-AUTHOR     (P.R.GRAY,A.R.ZANDER,T.G.EBREY)                        1155400100005 
-TITLE      ACTIVATION CROSS SECTIONS FOR REACTIONS OF ARGON WITH  1155400100006 
-           14.7 MEV NEUTRONS.                                     1155400100007 
-METHOD     (ACTIV).                                               1155400100008 
-MONITOR    (29-CU-63(N,2N)29-CU-62,,SIG)                          1155400100009 
-STATUS     (SCSRS)                                                1155400100010 
-HISTORY    (760715T) TRANSLATED FROM SCISRS                       1155400100011 
-           (830412A) CONVERTED TO REACTION FORMALISM              1155400100012 
-ENDBIB              10          0                                 1155400100013 
-COMMON               1          3                                 1155400100014 
-MONIT                                                             1155400100015 
-MB                                                                1155400100016 
- 507.                                                             1155400100017 
-ENDCOMMON            3          0                                 1155400100018 
-ENDSUBENT           17          0                                 1155400199999 
-SUBENT        11554002   19830412                             00001155400200001 
-BIB                  2          2                                 1155400200002 
-REACTION   (18-AR-40(N,A)16-S-37,,SIG)                            1155400200003 
-DECAY-DATA (16-S-37,5.1MIN,DG,3100.,0.90)                         1155400200004 
-ENDBIB               2          0                                 1155400200005 
-NOCOMMON             0          0                                 1155400200006 
-DATA                 4          1                                 1155400200007 
-EN         EN-ERR     DATA       DATA-ERR                         1155400200008 
-MEV        MEV        B          B                                1155400200009 
- 1.47   +01 5.     -01 2.4    -02 2.     -03                      1155400200010 
-ENDDATA              3          0                                 1155400200011 
-ENDSUBENT           10          0                                 1155400299999 
-SUBENT        11554003   19830412                             00001155400300001 
-BIB                  2          2                                 1155400300002 
-REACTION   (18-AR-40(N,D)17-CL-39,,SIG)                           1155400300003 
-DECAY-DATA (17-CL-39,56.MIN,DG,1520.,0.42)                        1155400300004 
-ENDBIB               2          0                                 1155400300005 
-NOCOMMON             0          0                                 1155400300006 
-DATA                 4          1                                 1155400300007 
-EN         EN-ERR     DATA       DATA-ERR                         1155400300008 
-MEV        MEV        B          B                                1155400300009 
- 1.47   +01 5.     -01 2.9    -03 5.     -04                      1155400300010 
-ENDDATA              3          0                                 1155400300011 
-ENDSUBENT           10          0                                 1155400399999 
-SUBENT        11554004   19830412                             00001155400400001 
-BIB                  2          2                                 1155400400002 
-REACTION   (18-AR-40(N,P)17-CL-40,,SIG)                           1155400400003 
-DECAY-DATA (17-CL-40,1.4MIN,DG,1460.,0.85)                        1155400400004 
-ENDBIB               2          0                                 1155400400005 
-NOCOMMON             0          0                                 1155400400006 
-DATA                 4          1                                 1155400400007 
-EN         EN-ERR     DATA       DATA-ERR                         1155400400008 
-MEV        MEV        B          B                                1155400400009 
- 1.47   +01 5.     -01 2.5    -02 2.     -03                      1155400400010 
-ENDDATA              3          0                                 1155400400011 
-ENDSUBENT           10          0                                 1155400499999 
+ENTRY            11554   20210731                             148511554  0    1 
+SUBENT        11554001   20210731                             148511554  1    1 
+BIB                 12         19                                 11554  1    2 
+INSTITUTE  (1USAPPO)                                              11554  1    3 
+REFERENCE  (J,NP,62,172,1965)                                     11554  1    4 
+AUTHOR     (P.R.Gray,A.R.Zander,T.G.Ebrey)                        11554  1    5 
+TITLE      Activation cross sections for reactions of argon with  11554  1    6 
+           14.7 MeV neutrons.                                     11554  1    7 
+FACILITY   (CCW,1USAPPO)                                          11554  1    8 
+INC-SOURCE (D-T)                                                  11554  1    9 
+SAMPLE     Liquefied Ar, 99.995% purity                           11554  1   10 
+METHOD     (ACTIV)                                                11554  1   11 
+DETECTOR   (NAICR)                                                11554  1   12 
+MONITOR    ((MONIT1)29-CU-63(N,2N)29-CU-62,,SIG)                  11554  1   13 
+           ((MONIT2)13-AL-27(N,P)12-MG-27,,SIG)                   11554  1   14 
+ERR-ANALYS (DATA-ERR) No information on sources of uncertainties  11554  1   15 
+HISTORY    (19760715T) Translated from SCISRS                     11554  1   16 
+           (19830412A) Converted to reaction formalism            11554  1   17 
+           (20210625A) OS. REACTION coding modified in sub.3,     11554  1   18 
+            added FACILITY, INC-SOURCE, SAMPLE, DETECTOR,         11554  1   19 
+            ERR-ANALYS, updated STATUS, added MONIT2, converted   11554  1   20 
+            to lower case                                         11554  1   21 
+ENDBIB              19          0                                 11554  1   22 
+COMMON               2          3                                 11554  1   23 
+MONIT1     MONIT2                                                 11554  1   24 
+MB         MB                                                     11554  1   25 
+ 507.        82.                                                  11554  1   26 
+ENDCOMMON            3          0                                 11554  1   27 
+ENDSUBENT           26          0                                 11554  199999 
+SUBENT        11554002   20210731                             148511554  2    1 
+BIB                  3          3                                 11554  2    2 
+REACTION   (18-AR-40(N,A)16-S-37,,SIG)                            11554  2    3 
+DECAY-DATA (16-S-37,5.1MIN,DG,3100.,0.90)                         11554  2    4 
+STATUS     (TABLE) Text on p.175, Nucl.Phys.62,172,1965           11554  2    5 
+ENDBIB               3          0                                 11554  2    6 
+NOCOMMON             0          0                                 11554  2    7 
+DATA                 4          1                                 11554  2    8 
+EN         EN-ERR     DATA       DATA-ERR                         11554  2    9 
+MEV        MEV        B          B                                11554  2   10 
+ 1.47   +01 5.     -01 2.4    -02 2.     -03                      11554  2   11 
+ENDDATA              3          0                                 11554  2   12 
+ENDSUBENT           11          0                                 11554  299999 
+SUBENT        11554003   20210731                             148511554  3    1 
+BIB                  4          4                                 11554  3    2 
+REACTION   (18-AR-40(N,X)17-CL-39,,SIG)                           11554  3    3 
+DECAY-DATA (17-CL-39,56.MIN,DG,1520.,0.42)                        11554  3    4 
+STATUS     (TABLE) Text on p.176, Nucl.Phys.62,172,1965           11554  3    5 
+HISTORY    (20210625A) REACTION SF3 changed to X                  11554  3    6 
+ENDBIB               4          0                                 11554  3    7 
+NOCOMMON             0          0                                 11554  3    8 
+DATA                 4          1                                 11554  3    9 
+EN         EN-ERR     DATA       DATA-ERR                         11554  3   10 
+MEV        MEV        B          B                                11554  3   11 
+ 1.47   +01 5.     -01 2.9    -03 5.     -04                      11554  3   12 
+ENDDATA              3          0                                 11554  3   13 
+ENDSUBENT           12          0                                 11554  399999 
+SUBENT        11554004   20210731                             148511554  4    1 
+BIB                  3          3                                 11554  4    2 
+REACTION   (18-AR-40(N,P)17-CL-40,,SIG)                           11554  4    3 
+DECAY-DATA (17-CL-40,1.4MIN,DG,1460.,0.85)                        11554  4    4 
+STATUS     (TABLE) Text on p.175, Nucl.Phys.62,172,1965           11554  4    5 
+ENDBIB               3          0                                 11554  4    6 
+NOCOMMON             0          0                                 11554  4    7 
+DATA                 4          1                                 11554  4    8 
+EN         EN-ERR     DATA       DATA-ERR                         11554  4    9 
+MEV        MEV        B          B                                11554  4   10 
+ 1.47   +01 5.     -01 2.5    -02 2.     -03                      11554  4   11 
+ENDDATA              3          0                                 11554  4   12 
+ENDSUBENT           11          0                                 11554  499999 
 ENDENTRY             4          0                                 1155499999999 
