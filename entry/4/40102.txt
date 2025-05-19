@@ -1,73 +1,136 @@
-ENTRY            40102   20030528                             00004010200000001 
-SUBENT        40102001   20030528                             00004010200100001 
-BIB                  7         16                                 4010200100002 
-TITLE      CF-249 FISSION CROSS-SECTION BY THERMAL AND FAST       4010200100003 
-           NEUTRONS                                               4010200100004 
-AUTHOR     (B.I.FURSOV,KH.D.ANDROSENKO,V.I.IVANOV,V.G.NESTEROV,   4010200100005 
-           G.N.SMIRENKIN,L.V.CHISTJAKOV,V.H.SHUBKO)               4010200100006 
-INSTITUTE  (4RUSFEI)                                              4010200100007 
-REFERENCE  (R,YFI-12,3,197106)       main reference, data given   4010200100008 
-           (J,AE,32,(2),178,197202)  EXPERIMENTAL DETAILS         4010200100009 
-ERR-ANALYS (DATA-ERR) CF-249 FISSION CROSS-SECTION ERROR DOES     4010200100010 
-           NOT INCLUDE UNCERTAINTY OF PU-239 FISSION CROSS SECTION4010200100011 
-SAMPLE     CF-249 TARGET WITH 4.0 MM DIAMETER AND ABOUT 3.0 MKG   4010200100012 
-           WEIGHT(CALIFORNIUM ON PLATINUM BACKING) WITH CF-252    4010200100013 
-           CONTENT UP TO 2.0E-6 PERCENT                           4010200100014 
-HISTORY    (19731204C)       COMPILED AT THE CENTRE               4010200100015 
-           (19890331U)                                            4010200100016 
-           (20030528U)       CORRECTED AT THE CENTER              4010200100017 
-           (20030528A) DATE is corrected                          4010200100018 
-ENDBIB              16          0                                 4010200100019 
-NOCOMMON             0          0                                 4010200100020 
-ENDSUBENT           19          0                                 4010200199999 
-SUBENT        40102002   19890331                             00004010200200001 
-BIB                  4          9                                 4010200200002 
-REACTION  1((98-CF-249(N,F),,SIG,,MXW)/                           4010200200003 
-           (94-PU-239(N,F),,SIG,,MXW))                            4010200200004 
-          2(98-CF-249(N,F),,SIG,,MXW)                             4010200200005 
-MONITOR   2(94-PU-239(N,F),,SIG,,MXW)     FOR MAXWELLIAN SPECTRUM 4010200200006 
-               AT 20 CELSIUS DEGREES TEMPERATURE.                 4010200200007 
-           SEE NEUTRON CROSS SECTIONS,VOL.3,BNL-325,              4010200200008 
-           SUPPLEMENT,NO.2 (1965).                                4010200200009 
-DETECTOR   (IOCH)  IONIZATION CHAMBER                             4010200200010 
-INC-SOURCE (THCOL)    THERMAL COLUMN                              4010200200011 
-ENDBIB               9          0                                 4010200200012 
-COMMON               1          3                                 4010200200013 
-MONIT     2                                                       4010200200014 
-B                                                                 4010200200015 
-790.0                                                             4010200200016 
-ENDCOMMON            3          0                                 4010200200017 
-DATA                 5          1                                 4010200200018 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2           4010200200019 
-EV         NO-DIM     NO-DIM     B          B                     4010200200020 
-0.025      2.049      0.054      1619.0     43.0                  4010200200021 
-ENDDATA              3          0                                 4010200200022 
-ENDSUBENT           21          0                                 4010200299999 
-SUBENT        40102003   19890331                             00004010200300001 
-BIB                  5         10                                 4010200300002 
-REACTION  1((98-CF-249(N,F),,SIG)/                                4010200300003 
-           (94-PU-239(N,F),,SIG))                                 4010200300004 
-          2(98-CF-249(N,F),,SIG)                                  4010200300005 
-MONITOR   2(94-PU-239(N,F),,SIG) DATA FROM THIRD CONF. NEUTRON    4010200300006 
-           CROSS SECTIONS AND TECHNOLOGY (MARCH,15-17,1971).      4010200300007 
-           UNIVERSITY OF TENNESSEE,KNOXVILLE,USA.T.BYER,V.KONSHIN 4010200300008 
-DETECTOR   (GLASD)    GLASS DETECTOR                              4010200300009 
-FACILITY   (VDG)      VAN DE GRAAFF                               4010200300010 
-STATUS     (SPSDD,40201002)                                       4010200300011 
-           (SPSDD,40201003)                                       4010200300012 
-ENDBIB              10          0                                 4010200300013 
-NOCOMMON             0          0                                 4010200300014 
-NODATA               0          0                                 4010200300015 
-ENDSUBENT           14          0                                 4010200399999 
-SUBENT        40102004   19890331                             00004010200400001 
-BIB                  5          5                                 4010200400002 
-REACTION   (98-CF-249(N,F),,DA,FF,COS/RSD)                        4010200400003 
-DETECTOR   (GLASD)    GLASS DETECTOR                              4010200400004 
-FACILITY   (VDG)      VAN DE GRAAFF                               4010200400005 
-ANALYSIS   COSINE EXPANSION IN THE FORM SIGMA=1+A2*COS(TETA)**2   4010200400006 
-STATUS     (SPSDD,40201004)                                       4010200400007 
-ENDBIB               5          0                                 4010200400008 
-NOCOMMON             0          0                                 4010200400009 
-NODATA               0          0                                 4010200400010 
-ENDSUBENT            9          0                                 4010200499999 
+ENTRY            40102   20210729                             419940102  0    1 
+SUBENT        40102001   20210729                             419940102  1    1 
+BIB                  8         26                                 40102  1    2 
+TITLE      Fission cross section of 249Cf for fast and thermal    40102  1    3 
+           neutrons                                               40102  1    4 
+AUTHOR     (B.I.Fursov,Kh.D.Androsenko,V.I.Ivanov,V.G.Nesterov,   40102  1    5 
+           G.N.Smirenkin,L.V.Chistyakov,V.H.Shubko)               40102  1    6 
+INSTITUTE  (4RUSFEI)                                              40102  1    7 
+REFERENCE  (J,AE,32,178(2),1972) Issue 2. 2nd article on page 178.40102  1    8 
+           (J,SJA,32,205,1972) Engl.transl. of AE,32,178(2),1972  40102  1    9 
+           #doi:10.1007/BF01125116                                40102  1   10 
+           (R,YFI-12,3,1971)       Main reference, data given     40102  1   11 
+           (R,INDC(CCP)-30,1,1972)                                40102  1   12 
+            Engl.translation of YFI-12,p.3,1971                   40102  1   13 
+DECAY-DATA (94-PU-239,2.438E+4YR) (2.438+-0.005)*10**4 yr         40102  1   14 
+           (98-CF-249,352.YR) 352+-6 yr.                          40102  1   15 
+ERR-ANALYS (DATA-ERR) Cf-249 fission cross-section error does     40102  1   16 
+           not include uncertainty of Pu-239 fission cross section40102  1   17 
+SAMPLE     Cf-249 target with 4.0 mm diameter and about 3.0 mcg   40102  1   18 
+           weight(californium on platinum backing) with Cf-252    40102  1   19 
+           content up to 2.0E-6 % .                               40102  1   20 
+           Pu-239 of isotopic purity 99.8 %.                      40102  1   21 
+HISTORY    (19731204C)       Compiled at the centre               40102  1   22 
+           (19860707U)                                            40102  1   23 
+           (19890331U) Subents 003-004 were superseded            40102  1   24 
+           (20030528U)       Corrected at the center              40102  1   25 
+           (20030528A) Date is corrected                          40102  1   26 
+           (20210729A) Update for current rules and dictionaries. 40102  1   27 
+            Refs. ofr Engl.translations were added.               40102  1   28 
+ENDBIB              26          0                                 40102  1   29 
+NOCOMMON             0          0                                 40102  1   30 
+ENDSUBENT           29          0                                 40102  199999 
+SUBENT        40102002   20210729                             419940102  2    1 
+BIB                  8         16                                 40102  2    2 
+REACTION  1((98-CF-249(N,F),,SIG,,MXW)/                           40102  2    3 
+           (94-PU-239(N,F),,SIG,,MXW))                            40102  2    4 
+          2(98-CF-249(N,F),,SIG,,MXW)                             40102  2    5 
+MONITOR   2(94-PU-239(N,F),,SIG,,MXW)     For Maxwellian spectrum 40102  2    6 
+               at 20 Celsius degrees temperature.                 40102  2    7 
+           See Neutron Cross Sections,vol.3,BNL-325,              40102  2    8 
+           Supplement, No.2 (1965).                               40102  2    9 
+MONIT-REF  (,,R,BNL-325,(3),1965)                                 40102  2   10 
+DETECTOR   (IOCH)  Ionization chamber                             40102  2   11 
+FACILITY   (REAC,4RUSFEI) BR-5 reactor.                           40102  2   12 
+INC-SOURCE (THCOL)    Thermal column of BR-5 reactor              40102  2   13 
+STATUS     (TABLE) Table of At.Energy,v.32,p.178(2),1972          40102  2   14 
+           In INDC(CCP)-30,1,1972 :                               40102  2   15 
+           DATA 1 = 2.150+-0.050, DATA 2 = 1700+-40 b.            40102  2   16 
+HISTORY    (20210729A)  EN=0.0253 eV -> KT=20 deg-C according to  40102  2   17 
+            a comment of N.Otsuka (NDS, IAEA)                     40102  2   18 
+ENDBIB              16          0                                 40102  2   19 
+COMMON               1          3                                 40102  2   20 
+MONIT     2                                                       40102  2   21 
+B                                                                 40102  2   22 
+790.                                                              40102  2   23 
+ENDCOMMON            3          0                                 40102  2   24 
+DATA                 5          1                                 40102  2   25 
+KT         DATA      1DATA-ERR  1DATA      2DATA-ERR  2           40102  2   26 
+DEG-C      NO-DIM     NO-DIM     B          B                     40102  2   27 
+ 20.       2.049      0.054      1619.0     43.0                  40102  2   28 
+ENDDATA              3          0                                 40102  2   29 
+ENDSUBENT           28          0                                 40102  299999 
+SUBENT        40102003   20210729                             419940102  3    1 
+BIB                  6         13                                 40102  3    2 
+REACTION  1((98-CF-249(N,F),,SIG)/                                40102  3    3 
+           (94-PU-239(N,F),,SIG))                                 40102  3    4 
+          2(98-CF-249(N,F),,SIG)                                  40102  3    5 
+MONITOR   2(94-PU-239(N,F),,SIG) Data from Third Conf. Neutron    40102  3    6 
+           Cross Sections and Technology (March,15-17,1971).      40102  3    7 
+           University of Tennessee,Knoxville,Usa.T.Byer,V.Konshin 40102  3    8 
+DETECTOR   (GLASD)                                                40102  3    9 
+FACILITY   (VDG)                                                  40102  3   10 
+STATUS     (TABLE) Table of At.Energy,v.32,p.178(2),1972          40102  3   11 
+           (SPSDD,40201002) Newer publication                     40102  3   12 
+           (SPSDD,40201003) Newer publication                     40102  3   13 
+           Measurement with the same sample in wider energy range.40102  3   14 
+HISTORY    (20210729A) Data were re-stored.                       40102  3   15 
+ENDBIB              13          0                                 40102  3   16 
+NOCOMMON             0          0                                 40102  3   17 
+DATA                 7          7                                 40102  3   18 
+EN         EN-ERR     DATA      1DATA-ERR  1DATA      2DATA-ERR  240102  3   19 
+MONIT                                                             40102  3   20 
+MEV        MEV        NO-DIM     NO-DIM     B          B          40102  3   21 
+B                                                                 40102  3   22 
+0.500      0.090      0.997      0.030      1.58       0.05       40102  3   23 
+1.59                                                              40102  3   24 
+0.750      0.080      0.876      0.027      1.44       0.05       40102  3   25 
+1.64                                                              40102  3   26 
+0.850      0.075      0.810      0.025      1.36       0.06       40102  3   27 
+1.68                                                              40102  3   28 
+1.450      0.070      0.866      0.030      1.67       0.06       40102  3   29 
+1.93                                                              40102  3   30 
+4.000      0.100      1.072      0.042      1.95       0.08       40102  3   31 
+1.82                                                              40102  3   32 
+4.500      0.100      1.120      0.039      1.99       0.07       40102  3   33 
+1.78                                                              40102  3   34 
+5.020      0.100      1.135      0.034      2.00       0.06       40102  3   35 
+1.76                                                              40102  3   36 
+ENDDATA             18          0                                 40102  3   37 
+ENDSUBENT           36          0                                 40102  399999 
+SUBENT        40102004   20210729                             419940102  4    1 
+BIB                  7         15                                 40102  4    2 
+REACTION   (98-CF-249(N,F),,DA,FF,RSD)                            40102  4    3 
+            SIG(0 deg)/SIG(90 deg)                                40102  4    4 
+DETECTOR   (GLASD)                                                40102  4    5 
+FACILITY   (VDG)                                                  40102  4    6 
+ANALYSIS   Cosine expansion in the form SIGMA=1+A2*COS(TETA)**2   40102  4    7 
+COMMENT    Of compiler.                                           40102  4    8 
+           Data in Table in column "SIG(0deg)/SIG(90deg)" are     40102  4    9 
+           really values of SIG(0deg)/SIG(90deg)-1., see also     40102  4   10 
+           lower figure in the article.                           40102  4   11 
+STATUS     (TABLE) Table of At.Energy,v.32,p.178(2),1972          40102  4   12 
+           (SPSDD,40201004) Newer publication.                    40102  4   13 
+           Measurement with the same sample in wider energy range.40102  4   14 
+HISTORY    (20210729A) COS was removed from REACTION.             40102  4   15 
+            COMMENT was added.                                    40102  4   16 
+            Data were re-stored and corrected, COMMENT was added. 40102  4   17 
+ENDBIB              15          0                                 40102  4   18 
+COMMON               1          3                                 40102  4   19 
+ANG                                                               40102  4   20 
+ADEG                                                              40102  4   21 
+ 0.                                                               40102  4   22 
+ENDCOMMON            3          0                                 40102  4   23 
+DATA                 4          7                                 40102  4   24 
+EN         EN-ERR     DATA       DATA-ERR                         40102  4   25 
+MEV        MEV        NO-DIM     NO-DIM                           40102  4   26 
+    0.500      0.090      1.102      0.050                        40102  4   27 
+    0.750      0.080      1.030      0.080                        40102  4   28 
+    0.850      0.075      1.133      0.060                        40102  4   29 
+    1.450      0.070      1.137      0.060                        40102  4   30 
+    4.000      0.100      1.134      0.080                        40102  4   31 
+    4.500      0.100      1.209      0.060                        40102  4   32 
+    5.020      0.100      1.158      0.050                        40102  4   33 
+ENDDATA              9          0                                 40102  4   34 
+ENDSUBENT           33          0                                 40102  499999 
 ENDENTRY             4          0                                 4010299999999 
