@@ -1,6 +1,6 @@
-ENTRY            41614   20160512                             417441614  0    1 
-SUBENT        41614001   20160512                             417441614  1    1 
-BIB                 14         70                                 41614  1    2 
+ENTRY            41614   20210317                             419541614  0    1 
+SUBENT        41614001   20210317                             419541614  1    1 
+BIB                 14         71                                 41614  1    2 
 TITLE      Neutron activation cross sections measured at KRI      41614  1    3 
            in neutron energy region 13.4 - 14.9 MeV               41614  1    4 
 AUTHOR     (A.A.Filatenkov)                                       41614  1    5 
@@ -35,7 +35,7 @@ DETECTOR   (SCIN) Variations of the neutron flux during           41614  1   26
            24.7%                                                  41614  1   34 
             were used for measurement of gamma radiation of       41614  1   35 
            activated samples.                                     41614  1   36 
-METHOD     (ACTIV) Activation .                                   41614  1   37 
+METHOD     (ACTIV)                                                41614  1   37 
            Contribution of scattered neutrons was minimized by the41614  1   38 
            use of thin-wall constructions of the target chamber   41614  1   39 
            and sample holders.                                    41614  1   40 
@@ -71,9 +71,10 @@ ERR-ANALYS (ERR-T) Total uncertainty.                             41614  1   51
 HISTORY    (20160512C) M.M.                                       41614  1   70 
            (20160110A) N.O. Monitors values were moved from       41614  1   71 
             Subent 001 to data Subents.                           41614  1   72 
-ENDBIB              70          0                                 41614  1   73 
-NOCOMMON             0          0                                 41614  1   74 
-ENDSUBENT           73          0                                 41614  199999 
+           (20210317A) Subent 004 was corrected.                  41614  1   73 
+ENDBIB              71          0                                 41614  1   74 
+NOCOMMON             0          0                                 41614  1   75 
+ENDSUBENT           74          0                                 41614  199999 
 SUBENT        41614002   20160512                             417441614  2    1 
 BIB                  7          9                                 41614  2    2 
 REACTION   (11-NA-23(N,2N)11-NA-22,,SIG)                          41614  2    3 
@@ -132,11 +133,11 @@ MEV        MB         PER-CENT   PER-CENT   MB         PER-CENT   41614  3   21
 14.85       51.3       4.13       4.02       110.35     0.437     41614  3   27 
 ENDDATA              8          0                                 41614  3   28 
 ENDSUBENT           27          0                                 41614  399999 
-SUBENT        41614004   20160512                             417441614  4    1 
-BIB                  8         17                                 41614  4    2 
+SUBENT        41614004   20210317                             419541614  4    1 
+BIB                  9         18                                 41614  4    2 
 REACTION   (13-AL-27(N,P)12-MG-27,,SIG)                           41614  4    3 
 DECAY-DATA (12-MG-27,9.458MIN,DG,843.8,0.7180,                    41614  4    4 
-                              DG,1014.5,28.20)                    41614  4    5 
+                              DG,1014.5,0.2820)                   41614  4    5 
             843.8 - 71.80+-0.02 % ; 1014.5 - 28.20+-0.2 % .       41614  4    6 
 COMMENT     Of author.                                            41614  4    7 
              All gamma lines were used to derive CS. The data     41614  4    8 
@@ -151,25 +152,26 @@ DECAY-MON  (11-NA-24,14.997HR,DG,1368.6,0.999936,                 41614  4   15
            14.997+-0.012 hr, (99.9936+-0.0015)%, (99.855+-0.005)% 41614  4   17 
 STATUS     (TABLE) Table on page 34 in R,INDC(CCP)-0460,2016      41614  4   18 
                             This Subent supersedes 41240.005 data.41614  4   19 
-ENDBIB              17          0                                 41614  4   20 
-COMMON               1          3                                 41614  4   21 
-ERR-HL                                                            41614  4   22 
-MIN                                                               41614  4   23 
- 0.012                                                            41614  4   24 
-ENDCOMMON            3          0                                 41614  4   25 
-DATA                 6          8                                 41614  4   26 
-EN         DATA       ERR-T      ERR-1      MONIT      MONIT-ERR  41614  4   27 
-MEV        MB         PER-CENT   PER-CENT   MB         PER-CENT   41614  4   28 
- 13.47      79.7       2.03       0.830      125.46     0.795     41614  4   29 
- 13.66      74.6       2.00       0.576      124.98     0.525     41614  4   30 
- 13.88      76.6       1.97       0.545      123.43     0.491     41614  4   31 
- 14.04      71.8       2.09       0.514      121.71     0.462     41614  4   32 
- 14.26      71.0       1.94       0.472      118.88     0.410     41614  4   33 
- 14.44      72.0       1.90       0.443      116.35     0.375     41614  4   34 
- 14.63      67.1       2.07       0.451      113.59     0.385     41614  4   35 
- 14.81      64.0       1.94       0.490      110.94     0.437     41614  4   36 
-ENDDATA             10          0                                 41614  4   37 
-ENDSUBENT           36          0                                 41614  499999 
+HISTORY    (20210317A) Decay data were corrected 28.20 -> 0.2820  41614  4   20 
+ENDBIB              18          0                                 41614  4   21 
+COMMON               1          3                                 41614  4   22 
+ERR-HL                                                            41614  4   23 
+MIN                                                               41614  4   24 
+ 0.012                                                            41614  4   25 
+ENDCOMMON            3          0                                 41614  4   26 
+DATA                 6          8                                 41614  4   27 
+EN         DATA       ERR-T      ERR-1      MONIT      MONIT-ERR  41614  4   28 
+MEV        MB         PER-CENT   PER-CENT   MB         PER-CENT   41614  4   29 
+ 13.47      79.7       2.03       0.830      125.46     0.795     41614  4   30 
+ 13.66      74.6       2.00       0.576      124.98     0.525     41614  4   31 
+ 13.88      76.6       1.97       0.545      123.43     0.491     41614  4   32 
+ 14.04      71.8       2.09       0.514      121.71     0.462     41614  4   33 
+ 14.26      71.0       1.94       0.472      118.88     0.410     41614  4   34 
+ 14.44      72.0       1.90       0.443      116.35     0.375     41614  4   35 
+ 14.63      67.1       2.07       0.451      113.59     0.385     41614  4   36 
+ 14.81      64.0       1.94       0.490      110.94     0.437     41614  4   37 
+ENDDATA             10          0                                 41614  4   38 
+ENDSUBENT           37          0                                 41614  499999 
 SUBENT        41614005   20160512                             417441614  5    1 
 BIB                  8         13                                 41614  5    2 
 REACTION   (13-AL-27(N,2N)13-AL-26-G,,SIG)                        41614  5    3 

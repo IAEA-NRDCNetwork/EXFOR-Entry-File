@@ -1,6 +1,6 @@
-ENTRY            41615   20190121                             418141615  0    1 
-SUBENT        41615001   20190121                             418141615  1    1 
-BIB                 11         39                                 41615  1    2 
+ENTRY            41615   20210608                             419541615  0    1 
+SUBENT        41615001   20210608                             419541615  1    1 
+BIB                 11         40                                 41615  1    2 
 TITLE      Angular Distribution of 4.43-MeV gamma-Rays Produced   41615  1    3 
            in Inelastic Scattering of 14.1-MeV Neutrons by 12C    41615  1    4 
            Nuclei                                                 41615  1    5 
@@ -16,7 +16,7 @@ INSTITUTE  (4ZZZDUB) V.M.Bystritsky,D.N.Grozdanov,A.O.Zontikov,   41615  1    9
 REFERENCE  (J,PPN/L,13,504,2016) Issue 4 .                        41615  1   15 
            #doi:10.1134/S154747711604004X                         41615  1   16 
            Engl.translation of:                                   41615  1   17 
-           (J,FCY/L,13,(4),793,2016)                              41615  1   18 
+           (J,FCY/L,13,793,2016) Issue 4.                         41615  1   18 
 FACILITY   (NGEN,4ZZZDUB) Portable ING-27 neutron generator       41615  1   19 
             designed and fabricated at VNIIA, Moscow.             41615  1   20 
 INC-SOURCE (D-T)                                                  41615  1   21 
@@ -40,9 +40,10 @@ ANALYSIS    Exp.gamma distributions were fitted as:               41615  1   31
 HISTORY    (20161020C) M.M.                                       41615  1   39 
            (20190121A) Subent 004 was added.                      41615  1   40 
             Data were added in Subents 002, 003 .                 41615  1   41 
-ENDBIB              39          0                                 41615  1   42 
-NOCOMMON             0          0                                 41615  1   43 
-ENDSUBENT           42          0                                 41615  199999 
+           (20210608A) Subent 002 was corrected.                  41615  1   42 
+ENDBIB              40          0                                 41615  1   43 
+NOCOMMON             0          0                                 41615  1   44 
+ENDSUBENT           43          0                                 41615  199999 
 SUBENT        41615002   20190121                             418141615  2    1 
 BIB                  8         20                                 41615  2    2 
 REACTION   (6-C-12(N,INL)6-C-12,PAR,DA,G,COS/RSD)                 41615  2    3 
@@ -114,41 +115,43 @@ NO-DIM     NO-DIM     NO-DIM                                      41615  3   23
   -0.966    1.602      0.049                                      41615  3   34 
 ENDDATA             13          0                                 41615  3   35 
 ENDSUBENT           34          0                                 41615  399999 
-SUBENT        41615004   20190121                             418141615  4    1 
-BIB                  8         22                                 41615  4    2 
-REACTION   (6-C-12(N,INL)6-C-12,PAR,DA,G,LEG/RSD)                 41615  4    3 
+SUBENT        41615004   20210608                             419541615  4    1 
+BIB                  7         24                                 41615  4    2 
+REACTION   (6-C-12(N,INL)6-C-12,PAR,DA,G,LEG/RS)                  41615  4    3 
 REL-REF    (O,41660001,D.N.Grozdanov+,J,PAN,81,588,2018)          41615  4    4 
            #doi:10.1134/S106377881805006X                         41615  4    5 
            Engl.translation of:                                   41615  4    6 
            (O,41660001,D.N.Grozdanov+,J,YF,81,548,2018) Issue 5.  41615  4    7 
            #doi:10.1134/S0044002718050069                         41615  4    8 
-EN-SEC     (E,G)                                                  41615  4    9 
-ANALYSIS   .Anisotropy ( Number(Theta)/Number(90deg) ) was fitted 41615  4   10 
-           W(THETA)=1+a2*P2(cos(Theta))+ a4*P4(cos(THETA))        41615  4   11 
-           .Legendre coefficients were obtained using formula 14.241615  4   12 
-             of ENDF-6 Formats Manual                             41615  4   13 
-             https://www.bnl.gov/isd/documents/70393.pdf          41615  4   14 
-            2. - 6.495E-02, 4. - -4.722E-02 (received form author)41615  4   15 
-CORRECTION2 For self-absorption in sample,                        41615  4   16 
-            for angular resolution of exp.setup .                 41615  4   17 
-ERR-ANALYS (ERR-S) Statistical uncertainty                        41615  4   18 
-STATUS     (DEP,41615003) Angular anisotropy.                     41615  4   19 
-           (TABLE) Table 1 of REL-REF .                           41615  4   20 
-                   From author                                    41615  4   21 
-HISTORY    (20190121C)                                            41615  4   22 
-           (20190128R) Data 2 (received from author A.O.Zontikov) 41615  4   23 
-           were added in free text                                41615  4   24 
-ENDBIB              22          0                                 41615  4   25 
-COMMON               2          3                                 41615  4   26 
-EN         E                                                      41615  4   27 
-MEV        MEV                                                    41615  4   28 
- 14.1       4.43                                                  41615  4   29 
-ENDCOMMON            3          0                                 41615  4   30 
-DATA                 3          2                                 41615  4   31 
-NUMBER     DATA       ERR-S                                       41615  4   32 
-NO-DIM     NO-DIM     NO-DIM                                      41615  4   33 
- 2.          0.34      0.03                                       41615  4   34 
- 4.         -0.33      0.03                                       41615  4   35 
-ENDDATA              4          0                                 41615  4   36 
-ENDSUBENT           35          0                                 41615  499999 
+ADD-RES    .Legendre coefficients were obtained using formula 14.241615  4    9 
+             of ENDF-6 Formats Manual                             41615  4   10 
+             https://www.bnl.gov/isd/documents/70393.pdf          41615  4   11 
+            2. - 6.495E-02, 4. - -4.722E-02 (received form author)41615  4   12 
+CORRECTION2 For self-absorption in sample,                        41615  4   13 
+            for angular resolution of exp.setup .                 41615  4   14 
+ERR-ANALYS (ERR-S) Statistical uncertainty                        41615  4   15 
+STATUS     (DEP,41615003) Angular anisotropy.                     41615  4   16 
+           (TABLE) Table 1 of REL-REF .                           41615  4   17 
+                   From author                                    41615  4   18 
+HISTORY    (20190121C)                                            41615  4   19 
+           (20190128R) Data 2 (received from author A.O.Zontikov) 41615  4   20 
+           were added in free text                                41615  4   21 
+           (20210608A) SF8:LEG/RSD -> RSD.                        41615  4   22 
+            "EN-SEC (G)" was deleted.                             41615  4   23 
+           Formula used to derive Legendre coefficients           41615  4   24 
+            W(THETA)=1+a2*P2(cos(Theta))+ a4*P4(cos(THETA))       41615  4   25 
+           was deleted according to comment of N.Otsuka (NDS,IAEA)41615  4   26 
+ENDBIB              24          0                                 41615  4   27 
+COMMON               2          3                                 41615  4   28 
+EN         E                                                      41615  4   29 
+MEV        MEV                                                    41615  4   30 
+ 14.1       4.43                                                  41615  4   31 
+ENDCOMMON            3          0                                 41615  4   32 
+DATA                 3          2                                 41615  4   33 
+NUMBER     DATA       ERR-S                                       41615  4   34 
+NO-DIM     NO-DIM     NO-DIM                                      41615  4   35 
+ 2.          0.34      0.03                                       41615  4   36 
+ 4.         -0.33      0.03                                       41615  4   37 
+ENDDATA              4          0                                 41615  4   38 
+ENDSUBENT           37          0                                 41615  499999 
 ENDENTRY             4          0                                 4161599999999 
