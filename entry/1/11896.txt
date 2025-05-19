@@ -1,18 +1,29 @@
-ENTRY            11896   19830919                             00001189600000001 
-SUBENT        11896001   19830919                             00001189600100001 
-BIB                  7          9                                 1189600100002 
-INSTITUTE  (1USALAS) LOS ALAMOS AND U.UTAH.                       1189600100003 
-REFERENCE  ((R,TID-11929,60)=(T,REED,6002))                       1189600100004 
-AUTHOR     (C.H.REED)                                             1189600100005 
-TITLE      ABSOLUTE (N,2N), (N,P GAMMA), AND (N, ALPHA GAMMA)     1189600100006 
-            CROSS SECTIONS FOR 14.1-MEV NEUTRONS ON ZIRCONIUM.    1189600100007 
-METHOD     (ACTIV) ACTIVATION                                     1189600100008 
-STATUS     (SCSRS)                                                1189600100009 
-HISTORY    (760731T) TRANSLATED FROM SCISRS                       1189600100010 
-           (830919A) CONVERTED TO REACTION FORMALISM              1189600100011 
-ENDBIB               9          0                                 1189600100012 
-NOCOMMON             0          0                                 1189600100013 
-ENDSUBENT           12          0                                 1189600199999 
+ENTRY            11896   20210920                             148711896  0    1 
+SUBENT        11896001   20210920                             148711896  1    1 
+BIB                 11         20                                 11896  1    2 
+INSTITUTE  (1USALAS) Los ALAMOS and U.Utah.                       11896  1    3 
+REFERENCE  ((R,TID-11929,1960)=(T,REED,1960))                     11896  1    4 
+AUTHOR     (C.H.Reed)                                             11896  1    5 
+TITLE      Absolute (n,2n), (n,p gamma), and (n,alpha gamma)      11896  1    6 
+           cross sections for 14.1-MeV neutrons on zirconium and  11896  1    7 
+           the calibration of a crystal scintillation spectrometer11896  1    8 
+FACILITY   (CCW,1USALAS)                                          11896  1    9 
+INC-SOURCE (D-T)                                                  11896  1   10 
+METHOD     (ACTIV)                                                11896  1   11 
+DETECTOR   (NAICR)                                                11896  1   12 
+ERR-ANALYS (DATA-ERR) Main sources of error are uncertainty in    11896  1   13 
+            neutron flux and statistical error. The tabulated     11896  1   14 
+            errors are the estimated upper-limit standard         11896  1   15 
+            deviations                                            11896  1   16 
+STATUS     (TABLE) Table III, p.148, report TID-11929             11896  1   17 
+HISTORY    (19760731T) Translated from SCISRS                     11896  1   18 
+           (19830919A) Converted to reaction formalism            11896  1   19 
+           (20210817A) OS. Added FACILITY, DETECTOR, INC-SOURCE,  11896  1   20 
+            ERR-ANALYS, updated STATUS, corrected REACTION in     11896  1   21 
+            sub.15, converted to lower case                       11896  1   22 
+ENDBIB              20          0                                 11896  1   23 
+NOCOMMON             0          0                                 11896  1   24 
+ENDSUBENT           23          0                                 11896  199999 
 SUBENT        11896002   19830919                             00001189600200001 
 BIB                  2          2                                 1189600200002 
 REACTION   (40-ZR-90(N,2N)40-ZR-89-M,,SIG)                        1189600200003 
@@ -101,19 +112,19 @@ MEV        B          B                                           1189600800010
  1.41   +01 1.42   -02 1.4    -03                                 1189600800011 
 ENDDATA              3          0                                 1189600800012 
 ENDSUBENT           11          0                                 1189600899999 
-SUBENT        11896009   19830919                             00001189600900001 
-BIB                  2          3                                 1189600900002 
-REACTION   (40-ZR-91(N,P)39-Y-91,,SIG)                            1189600900003 
-STATUS     (DEP,11896007) SUM OF GROUND AND METASTABLE STATES     1189600900004 
-           (DEP,11896008)                                         1189600900005 
-ENDBIB               3          0                                 1189600900006 
-NOCOMMON             0          0                                 1189600900007 
-DATA                 3          1                                 1189600900008 
-EN         DATA       DATA-ERR                                    1189600900009 
-MEV        B          B                                           1189600900010 
- 1.41   +01 3.17   -02 1.4    -03                                 1189600900011 
-ENDDATA              3          0                                 1189600900012 
-ENDSUBENT           11          0                                 1189600999999 
+SUBENT        11896009   20210920                             148711896  9    1 
+BIB                  2          3                                 11896  9    2 
+REACTION   (40-ZR-91(N,P)39-Y-91,,SIG)                            11896  9    3 
+STATUS     (DEP,11896007) Sum of ground and metastable states     11896  9    4 
+           (DEP,11896008)                                         11896  9    5 
+ENDBIB               3          0                                 11896  9    6 
+NOCOMMON             0          0                                 11896  9    7 
+DATA                 3          1                                 11896  9    8 
+EN         DATA       DATA-ERR                                    11896  9    9 
+MEV        B          B                                           11896  9   10 
+ 1.41   +01 3.17   -02 1.4    -03                                 11896  9   11 
+ENDDATA              3          0                                 11896  9   12 
+ENDSUBENT           11          0                                 11896  999999 
 SUBENT        11896010   19830919                             00001189601000001 
 BIB                  3          3                                 1189601000002 
 REACTION   (40-ZR-92(N,A)38-SR-89,,SIG)                           1189601000003 
@@ -179,17 +190,17 @@ MEV        B          B                                           1189601400010
  1.41   +01 4.8    -03 7.     -04                                 1189601400011 
 ENDDATA              3          0                                 1189601400012 
 ENDSUBENT           11          0                                 1189601499999 
-SUBENT        11896015   19830919                             00001189601500001 
-BIB                  2          3                                 1189601500002 
-REACTION   ((40-ZR-94(N,D)39-Y-93,,SIG)+                          1189601500003 
-           (40-ZR-94(N,N+P)39-Y-93,,SIG))                         1189601500004 
-MONITOR    (40-ZR-90(N,2N)40-ZR-89,,SIG)                          1189601500005 
-ENDBIB               3          0                                 1189601500006 
-NOCOMMON             0          0                                 1189601500007 
-DATA                 3          1                                 1189601500008 
-EN         DATA-MAX   DATA-ERR                                    1189601500009 
-MEV        B          B                                           1189601500010 
- 1.41   +01 8.     -04 1.     -04                                 1189601500011 
-ENDDATA              3          0                                 1189601500012 
-ENDSUBENT           11          0                                 1189601599999 
+SUBENT        11896015   20210920                             148711896 15    1 
+BIB                  3          3                                 11896 15    2 
+REACTION   (40-ZR-94(N,X)39-Y-93,,SIG)                            11896 15    3 
+MONITOR    (40-ZR-90(N,2N)40-ZR-89,,SIG)                          11896 15    4 
+HISTORY    (20210817A) REACTION SF3 changed to X                  11896 15    5 
+ENDBIB               3          0                                 11896 15    6 
+NOCOMMON             0          0                                 11896 15    7 
+DATA                 3          1                                 11896 15    8 
+EN         DATA-MAX   DATA-ERR                                    11896 15    9 
+MEV        B          B                                           11896 15   10 
+ 1.41   +01 8.     -04 1.     -04                                 11896 15   11 
+ENDDATA              3          0                                 11896 15   12 
+ENDSUBENT           11          0                                 11896 1599999 
 ENDENTRY            15          0                                 1189699999999 
