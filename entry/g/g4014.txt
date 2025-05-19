@@ -1,37 +1,56 @@
-ENTRY            G4014   20160402                             G035G4014  0    1 
-SUBENT        G4014001   20160402                             G035G4014  1    1 
-BIB                 12         17                                 G4014  1    2 
-TITLE      Production of 178m2Hf on a 1.2-GeV electron acceleratorG4014  1    3 
-AUTHOR     (I.G.Goncharov, A.M.Dovbnya,Yu.M.Ranyuk,               G4014  1    4 
-            O.S.Shevchenko)                                       G4014  1    5 
-INSTITUTE  (4UKRKFT)                                              G4014  1    6 
-REFERENCE  (J,UFZ,52,823,2007)                                    G4014  1    7 
-           (J,UJP,52,823,2007) Eng. trans. of J,UFZ,52,823,2007   G4014  1    8 
-FACILITY   (LINAC,4UKRKFT) 1.2-GeV electron accelerator           G4014  1    9 
-INC-SOURCE (BRST)                                                 G4014  1   10 
-SAMPLE     A Ta plate of 0.3 mm in thickness at the output of the G4014  1   11 
-            accelerator on the electron beam way.                 G4014  1   12 
-METHOD     (ACTIV)                                                G4014  1   13 
-DETECTOR   (GELI) working volume 40 cm3, energy resolution 2.5 keVG4014  1   14 
-ERR-ANALYS The error of determination of the number of generated  G4014  1   15 
-            178m2Hf nuclei amounts to 3-5%.                       G4014  1   16 
-STATUS     (TABLE) Table (p825) of Ukr.J.Phys.52(2007)823         G4014  1   17 
-HISTORY    (20071114C) UkrNDC                                     G4014  1   18 
-           (20160402U) On. REFERENCE: J,UJP,52,823,2007 added.    G4014  1   19 
-ENDBIB              17          0                                 G4014  1   20 
-NOCOMMON             0          0                                 G4014  1   21 
-ENDSUBENT           20          0                                 G4014  199999 
-SUBENT        G4014002   20071114                             G017G401400200001 
+ENTRY            G4014   20180212                             G040G401400000001 
+SUBENT        G4014001   20180212                             G040G401400100001 
+BIB                 14         24                                 G401400100002 
+TITLE      Production of 178m2Hf on a 1.2-GeV electron acceleratorG401400100003 
+AUTHOR     (I.G.Goncharov, A.M.Dovbnya, Yu.M.Ranyuk,              G401400100004 
+            O.S.Shevchenko)                                       G401400100005 
+INSTITUTE  (4UKRKFT)                                              G401400100006 
+REFERENCE  (J,UJP,52,823,2007)                                    G401400100007 
+           (J,UFZ,52,823,2007) Ukrainian orig.of J,UJP,52,823,2007G401400100008 
+FACILITY   (LINAC,4UKRKFT) 1.2-GeV electron accelerator           G401400100009 
+INC-SOURCE (BRST)                                                 G401400100010 
+SAMPLE     A Ta plate of 0.3 mm in thickness at the output of the G401400100011 
+            accelerator on the electron beam way.                 G401400100012 
+METHOD     (ACTIV)                                                G401400100013 
+DETECTOR   (GELI) working volume 40 cm3, energy resolution 2.5 keVG401400100014 
+ANALYSIS   <sigma>=sigmaq/[ln(E0)-ln(Eth)], where                 G401400100015 
+            Eth:    effective threshold energy   (50 MeV)         G401400100016 
+            E0:     maximum energy             (1050 MeV)         G401400100017 
+            <sigma>:average cross section between Eth and E0 (BRS)G401400100018 
+            sigmaq: cross section per equivalent quantum (BRA)    G401400100019 
+DECAY-DATA (72-HF-178-M2,31.0YR)                                  G401400100020 
+ERR-ANALYS The error of determination of the number of generated  G401400100021 
+            178m2Hf nuclei amounts to 3-5%.                       G401400100022 
+STATUS     (TABLE) Table (p825) of Ukr.J.Phys.52(2007)823         G401400100023 
+HISTORY    (20071114C) UkrNDC                                     G401400100024 
+           (20160402U) On. REFERENCE: J,UJP,52,823,2007 added.    G401400100025 
+           (20180212A) On. Major revision in 002. 003 addded.     G401400100026 
+ENDBIB              24          0                                 G401400100027 
+NOCOMMON             0          0                                 G401400100028 
+ENDSUBENT           27          0                                 G401400199999 
+SUBENT        G4014002   20180212                             G040G401400200001 
 BIB                  3          3                                 G401400200002 
-REACTION   (73-TA-181(G,2N+P)72-HF-178-M2,,INT,,BRA,EXP)          G401400200003 
-DECAY-DATA (72-HF-178-M,31.0YR)                                   G401400200004 
-COMMENT    The threshold of (G,P2N) reaction is 50 MeV            G401400200005 
+REACTION   (73-TA-181(G,X)72-HF-178-M2,,INT)                      G401400200003 
+STATUS     (SPSDD,G4015005)                                       G401400200004 
+HISTORY    (20180212A) On. Superseded.                            G401400200005 
 ENDBIB               3          0                                 G401400200006 
 NOCOMMON             0          0                                 G401400200007 
 DATA                 3          1                                 G401400200008 
 EN-MIN     EN-MAX     DATA                                        G401400200009 
 MEV        GEV        B*MEV                                       G401400200010 
-50.        1.050      0.033                                       G401400200011 
+ 50.        1.050      0.033                                      G401400200011 
 ENDDATA              3          0                                 G401400200012 
 ENDSUBENT           11          0                                 G401400299999 
-ENDENTRY             2          0                                 G401499999999 
+SUBENT        G4014003   20180212                             G040G401400300001 
+BIB                  2          2                                 G401400300002 
+REACTION   (73-TA-181(G,X)72-HF-178-M2,,SIG,,BRS)                 G401400300003 
+HISTORY    (20180212C) On                                         G401400300004 
+ENDBIB               2          0                                 G401400300005 
+NOCOMMON             0          0                                 G401400300006 
+DATA                 3          1                                 G401400300007 
+EN-MIN     EN-MAX     DATA                                        G401400300008 
+MEV        GEV        MB                                          G401400300009 
+ 50.        1.050         3.0E-02                                 G401400300010 
+ENDDATA              3          0                                 G401400300011 
+ENDSUBENT           10          0                                 G401400399999 
+ENDENTRY             3          0                                 G401499999999 
