@@ -1,62 +1,79 @@
-ENTRY            13061   19890518                             00001306100000001 
-SUBENT        13061001   19890518                             00001306100100001 
-BIB                 11         12                                 1306100100002 
-INSTITUTE  (1USAARK)                                              1306100100003 
-REFERENCE  (J,PR,126,627,6204)                                    1306100100004 
-AUTHOR     (K.M.BROOM)                                            1306100100005 
-TITLE      14.7 MEV NEUTRON-INDUCED FISSION OF U-238              1306100100006 
-FACILITY   (CCW)                                                  1306100100007 
-INC-SOURCE (D-T)                                                  1306100100008 
-SAMPLE     URANIUM OXIDE 84.75% URANIUM                           1306100100009 
-           ISOTOPIC COMPOSITION 99.989% 238U, 0.011% 235U         1306100100010 
-METHOD     (RCHEM)                                                1306100100011 
-ERR-ANALYS DATA UNCERTAINTIES GIVEN ARE MOST PROBABLE ERRORS      1306100100012 
-STATUS     (RIDER) REFERENCE 62BRO1                               1306100100013 
-HISTORY    (890511C) VM                                           1306100100014 
-ENDBIB              12          0                                 1306100100015 
-COMMON               2          3                                 1306100100016 
-EN         EN-RSL                                                 1306100100017 
-MEV        MEV                                                    1306100100018 
- 14.7       0.4                                                   1306100100019 
-ENDCOMMON            3          0                                 1306100100020 
-ENDSUBENT           19          0                                 1306100199999 
-SUBENT        13061002   19890518                             00001306100200001 
-BIB                  2          3                                 1306100200002 
-REACTION   (92-U-238(N,F)56-BA-140,CUM,FY)                        1306100200003 
-MONITOR    ((MONIT1)13-AL-27(N,A)11-NA-24,,SIG)                   1306100200004 
-           ((MONIT2)92-U-238(N,F),,SIG)                           1306100200005 
-ENDBIB               3          0                                 1306100200006 
-NOCOMMON             0          0                                 1306100200007 
-DATA                 5          1                                 1306100200008 
-DATA       DATA-ERR   MONIT1     MONIT2     MONIT2-ERR            1306100200009 
-PC/FIS     PC/FIS     MB         B          B                     1306100200010 
- 4.3        0.4        115.       1.13       0.05                 1306100200011 
-ENDDATA              3          0                                 1306100200012 
-ENDSUBENT           11          0                                 1306100299999 
-SUBENT        13061003   19890518                             00001306100300001 
-BIB                  2          2                                 1306100300002 
-REACTION   (92-U-238(N,F)ELEM/MASS,CUM,FY)                        1306100300003 
-MONITOR    (92-U-238(N,F)56-BA-140,CUM,FY)                        1306100300004 
-ENDBIB               2          0                                 1306100300005 
-COMMON               2          3                                 1306100300006 
-MONIT      MONIT-ERR                                              1306100300007 
-PC/FIS     PC/FIS                                                 1306100300008 
- 4.3        0.4                                                   1306100300009 
-ENDCOMMON            3          0                                 1306100300010 
-DATA                 4         11                                 1306100300011 
-ELEMENT    MASS       DATA       DATA-ERR                         1306100300012 
-NO-DIM     NO-DIM     PC/FIS     PC/FIS                           1306100300013 
- 38.        89.        2.0        0.2                             1306100300014 
- 38.        90.        3.4        0.3                             1306100300015 
- 38.        91.        2.6        0.3                             1306100300016 
- 47.       111.        0.6        0.1                             1306100300017 
- 47.       113.        0.6        0.1                             1306100300018 
- 53.       131.        2.7        0.2                             1306100300019 
- 53.       132.        4.5        0.4                             1306100300020 
- 53.       133.        2.6        0.3                             1306100300021 
- 53.       134.        4.7        0.5                             1306100300022 
- 53.       135.        5.0        0.5                             1306100300023 
- 56.       139.        4.4        0.5                             1306100300024 
-ENDDATA             13          0                                 1306100300025 
-ENDSUBENT           24          0                                 1306100399999 
+ENTRY            13061   20200903                             147313061  0    1 
+SUBENT        13061001   20200903                             147313061  1    1 
+BIB                 11         18                                 13061  1    2 
+TITLE      14.7 MeV neutron-induced fission of U-238              13061  1    3 
+AUTHOR     (K.M.Broom)                                            13061  1    4 
+INSTITUTE  (1USAARK)                                              13061  1    5 
+REFERENCE  (J,PR,126,627,1962)                                    13061  1    6 
+FACILITY   (CCW,1USAARK)                                          13061  1    7 
+INC-SOURCE (D-T)                                                  13061  1    8 
+DETECTOR   (PROPC) A 2pi end-window methane-flow proportional     13061  1    9 
+           counter.                                               13061  1   10 
+SAMPLE     The uranium oxide contained 84.75% uranium             13061  1   11 
+           (92-U-238,ENR=0.99989)                                 13061  1   12 
+           (92-U-235,ENR=0.00011)                                 13061  1   13 
+METHOD     (CHSEP)                                                13061  1   14 
+ERR-ANALYS (DATA-ERR) Most probable errors propagated in the      13061  1   15 
+            usual way                                             13061  1   16 
+HISTORY    (19890511C) VM                                         13061  1   17 
+           (20200903A) OG. Converted to lower case and 4-digit    13061  1   18 
+           year. STATUS, METHOD updated. MONIT1-ERR in Sub002,    13061  1   19 
+           MONIT-REF added.                                       13061  1   20 
+ENDBIB              18          0                                 13061  1   21 
+COMMON               2          3                                 13061  1   22 
+EN         EN-RSL-HW                                              13061  1   23 
+MEV        MEV                                                    13061  1   24 
+ 14.7       0.4                                                   13061  1   25 
+ENDCOMMON            3          0                                 13061  1   26 
+ENDSUBENT           25          0                                 13061  199999 
+SUBENT        13061002   20200903                             147313061  2    1 
+BIB                  7          8                                 13061  2    2 
+REACTION   (92-U-238(N,F)56-BA-140,CUM,FY)                        13061  2    3 
+MONITOR    ((MONIT)13-AL-27(N,A)11-NA-24,,SIG)                    13061  2    4 
+MONIT-REF  ((MONIT)11484002,A.Poularikas+,J,PR,115,989,1959)      13061  2    5 
+ASSUMED    (ASSUM,92-U-238(N,F),,SIG)                             13061  2    6 
+REL-REF    (R,40424002,N.N.Flerov+,J,JNE/A,11,173,1960)           13061  2    7 
+             U-238 cross section (ASSUMED)                        13061  2    8 
+STATUS     (TABLE) Text on p.629 in Phys.Rev.,126,627,1962        13061  2    9 
+HISTORY    (20200903A) OG. STATUS, MONIT-REF, MONIT1-ERR added.   13061  2   10 
+ENDBIB               8          0                                 13061  2   11 
+NOCOMMON             0          0                                 13061  2   12 
+DATA                 5          1                                 13061  2   13 
+DATA       DATA-ERR   MONIT      ASSUM      ASSUM-ERR             13061  2   14 
+PC/FIS     PC/FIS     MB         B          B                     13061  2   15 
+ 4.3        0.4        115.       1.13       0.05                 13061  2   16 
+ENDDATA              3          0                                 13061  2   17 
+ENDSUBENT           16          0                                 13061  299999 
+SUBENT        13061003   20200903                             147313061  3    1 
+BIB                  6          7                                 13061  3    2 
+REACTION   (92-U-238(N,F)ELEM/MASS,CUM,FY)                        13061  3    3 
+MONITOR    (92-U-238(N,F)56-BA-140,CUM,FY)                        13061  3    4 
+MONIT-REF  (13061002,K.M.Broom,J,PR,126,627,1962)                 13061  3    5 
+DECAY-DATA (38-SR-89,50.4D)                                       13061  3    6 
+           (38-SR-91,9.7HR)                                       13061  3    7 
+STATUS     (TABLE) Tab. I (p.629) in Phys.Rev.,126,627,1962       13061  3    8 
+HISTORY    (20200903U) OG. STATUS, MONIT-REF added.               13061  3    9 
+ENDBIB               7          0                                 13061  3   10 
+COMMON               2          3                                 13061  3   11 
+MONIT      MONIT-ERR                                              13061  3   12 
+PC/FIS     PC/FIS                                                 13061  3   13 
+ 4.3        0.4                                                   13061  3   14 
+ENDCOMMON            3          0                                 13061  3   15 
+DATA                 4         12                                 13061  3   16 
+ELEMENT    MASS       DATA       DATA-ERR                         13061  3   17 
+NO-DIM     NO-DIM     PC/FIS     PC/FIS                           13061  3   18 
+ 38.        89.        2.0        0.2                             13061  3   19 
+ 38.        90.        3.4        0.3                             13061  3   20 
+ 38.        91.        2.6        0.3                             13061  3   21 
+ 47.       111.        0.6        0.1                             13061  3   22 
+ 47.       113.        0.6        0.1                             13061  3   23 
+ 53.       131.        2.7        0.2                             13061  3   24 
+ 53.       132.        4.5        0.4                             13061  3   25 
+ 53.       133.        2.6        0.3                             13061  3   26 
+ 53.       134.        4.7        0.5                             13061  3   27 
+ 53.       135.        5.0        0.5                             13061  3   28 
+ 56.       139.        4.4        0.5                             13061  3   29 
+ 56.       140.        4.3        0.4                             13061  3   30 
+ENDDATA             14          0                                 13061  3   31 
+ENDSUBENT           30          0                                 13061  399999 
 ENDENTRY             3          0                                 1306199999999 
