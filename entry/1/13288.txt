@@ -1,49 +1,96 @@
-ENTRY            13288   19890829                             00001328800000001 
-SUBENT        13288001   19890829                             00001328800100001 
-BIB                 10         12                                 1328800100002 
-INSTITUTE  (1USAORL,1USAMIS)                                      1328800100003 
-REFERENCE  (J,RCA,16,66,71)                                       1328800100004 
-AUTHOR     (M.F.ROCHE,D.E.TROUTNER,R.L.FERGUSON)                  1328800100005 
-TITLE      THE INDEPENDENT YIELD OF 112AG FROM THERMAL NEUTRON    1328800100006 
-            INDUCED FISSION OF 233U AND 235U                      1328800100007 
-FACILITY   (REAC,1USAORL) ORRR                                    1328800100008 
-METHOD     (RCHEM)                                                1328800100009 
-DETECTOR   (SCIN) ANTHRACENE CRYSTAL BETA DETECTOR                1328800100010 
-ERR-ANALYS DATA UNCERTAINTIES GIVEN ARE STANDARD DEVIATIONS       1328800100011 
-            RESULTING FROM COMPUTER RESOLUTION OF DECAY CURVES    1328800100012 
-STATUS     (RIDER) REFERENCE 71ROC1                               1328800100013 
-HISTORY    (890828C) VM                                           1328800100014 
-ENDBIB              12          0                                 1328800100015 
-COMMON               1          3                                 1328800100016 
-EN-DUMMY                                                          1328800100017 
-EV                                                                1328800100018 
-0.0253                                                            1328800100019 
-ENDCOMMON            3          0                                 1328800100020 
-ENDSUBENT           19          0                                 1328800199999 
-SUBENT        13288002   19890829                             00001328800200001 
-BIB                  2          3                                 1328800200002 
-REACTION   ((92-U-233(N,F)47-AG-112,IND,FY,,SPA)/                 1328800200003 
-           (92-U-233(N,F)47-AG-112,CUM,FY,,SPA))                  1328800200004 
-SAMPLE     ENRICHED TO 99.85% 233U                                1328800200005 
-ENDBIB               3          0                                 1328800200006 
-NOCOMMON             0          0                                 1328800200007 
-DATA                 2          1                                 1328800200008 
-DATA       DATA-ERR                                               1328800200009 
-NO-DIM     NO-DIM                                                 1328800200010 
-     30.E-5      5.E-5                                            1328800200011 
-ENDDATA              3          0                                 1328800200012 
-ENDSUBENT           11          0                                 1328800299999 
-SUBENT        13288003   19890829                             00001328800300001 
-BIB                  2          3                                 1328800300002 
-REACTION   ((92-U-235(N,F)47-AG-112,IND,FY,,SPA)/                 1328800300003 
-           (92-U-235(N,F)47-AG-112,CUM,FY,,SPA))                  1328800300004 
-SAMPLE     ENRICHED TO 93% 235U                                   1328800300005 
-ENDBIB               3          0                                 1328800300006 
-NOCOMMON             0          0                                 1328800300007 
-DATA                 1          1                                 1328800300008 
-DATA-MAX                                                          1328800300009 
-NO-DIM                                                            1328800300010 
-      1.E-4                                                       1328800300011 
-ENDDATA              3          0                                 1328800300012 
-ENDSUBENT           11          0                                 1328800399999 
-ENDENTRY             3          0                                 1328899999999 
+ENTRY            13288   20190527                             145213288  0    1 
+SUBENT        13288001   20190527                             145213288  1    1 
+BIB                  9         20                                 13288  1    2 
+TITLE      The independent yield of 112Ag from thermal neutron    13288  1    3 
+            induced fission of 233U and 235U                      13288  1    4 
+AUTHOR     (M.F.Roche,D.E.Troutner,R.L.Ferguson)                  13288  1    5 
+INSTITUTE  (1USAORL,1USAMIS)                                      13288  1    6 
+REFERENCE  (J,RCA,16,66,1971)                                     13288  1    7 
+           #NSR: 1971RO34                                         13288  1    8 
+           (T,ROCHE,1968) Dissertation presented to the Faculty of13288  1    9 
+           the Graduate School, Univ. of Missouri                 13288  1   10 
+           #NSR: 1968ROZZ                                         13288  1   11 
+FACILITY   (REAC,1USAORL) ORRR                                    13288  1   12 
+INC-SOURCE (REAC) Thermal-neutron flux of about 5.e13 n/cm2/sec in13288  1   13 
+           a pneumatic tube facility at the Oak Ridge Research    13288  1   14 
+           Reactor                                                13288  1   15 
+METHOD     (CHSEP)                                                13288  1   16 
+DETECTOR   (SCIN) Anthracene crystal beta detector                13288  1   17 
+HISTORY    (19890828C) VM                                         13288  1   18 
+           (20190527A) OG. 2nd reference added. Converted to lower13288  1   19 
+           case and 4-digit year. STATUS updated. #NSR added.     13288  1   20 
+           Changed SPA->MXW in Sub002-003.                        13288  1   21 
+           Sub004-005 added.                                      13288  1   22 
+ENDBIB              20          0                                 13288  1   23 
+COMMON               1          3                                 13288  1   24 
+EN-DUMMY                                                          13288  1   25 
+EV                                                                13288  1   26 
+0.0253                                                            13288  1   27 
+ENDCOMMON            3          0                                 13288  1   28 
+ENDSUBENT           27          0                                 13288  199999 
+SUBENT        13288002   20190527                             145213288  2    1 
+BIB                  6          8                                 13288  2    2 
+REACTION   (92-U-233(N,F)47-AG-112,IND,FY,,FRC/MXW)               13288  2    3 
+COMMENT    The fractional independent yield of 112Ag              13288  2    4 
+           presented in Thesis,Roche,1968 was                     13288  2    5 
+           2.7E-4+-0.43E-4 (Tabl.IV)                              13288  2    6 
+SAMPLE     (92-U-233,ENR=0.9985)                                  13288  2    7 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties.  13288  2    8 
+HISTORY    (20190527A) OG. DATA-ERR, STATUS updated, SPA->MXW     13288  2    9 
+STATUS     (TABLE) From text in Radiochim.Acta 16,66,1971, p.70.  13288  2   10 
+ENDBIB               8          0                                 13288  2   11 
+NOCOMMON             0          0                                 13288  2   12 
+DATA                 3          1                                 13288  2   13 
+DATA       +DATA-ERR  -DATA-ERR                                   13288  2   14 
+NO-DIM     NO-DIM     NO-DIM                                      13288  2   15 
+      3.E-4     0.5E-4     1.5E-4                                 13288  2   16 
+ENDDATA              3          0                                 13288  2   17 
+ENDSUBENT           16          0                                 13288  299999 
+SUBENT        13288003   20190527                             145213288  3    1 
+BIB                  5          7                                 13288  3    2 
+REACTION   (92-U-235(N,F)47-AG-112,IND,FY,,FRC/MXW)               13288  3    3 
+COMMENT    The fractional independent yield of 112Ag              13288  3    4 
+           presented in Thesis,Roche,1968 was                     13288  3    5 
+           0.6E-4+-0.3E-4 (Tabl.IV)                               13288  3    6 
+SAMPLE     (92-U-233,ENR=0.93)                                    13288  3    7 
+HISTORY    (20190527U) OG. STATUS updated, SPA->MXW               13288  3    8 
+STATUS     (TABLE) From text in Radiochim.Acta 16,66,1971,p.69.   13288  3    9 
+ENDBIB               7          0                                 13288  3   10 
+NOCOMMON             0          0                                 13288  3   11 
+DATA                 1          1                                 13288  3   12 
+DATA-MAX                                                          13288  3   13 
+NO-DIM                                                            13288  3   14 
+      1.E-4                                                       13288  3   15 
+ENDDATA              3          0                                 13288  3   16 
+ENDSUBENT           15          0                                 13288  399999 
+SUBENT        13288004   20190527                             145213288  4    1 
+BIB                  5          5                                 13288  4    2 
+REACTION   (92-U-233(N,F)46-PD-115,CUM,FY,,FRC/MXW)               13288  4    3 
+SAMPLE     (92-U-233,ENR=0.9985)                                  13288  4    4 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties.  13288  4    5 
+STATUS     (TABLE) From Table IV in Thesis,Roche,1968.            13288  4    6 
+HISTORY    (20190527C) OG.                                        13288  4    7 
+ENDBIB               5          0                                 13288  4    8 
+NOCOMMON             0          0                                 13288  4    9 
+DATA                 2          1                                 13288  4   10 
+DATA       DATA-ERR                                               13288  4   11 
+NO-DIM     NO-DIM                                                 13288  4   12 
+0.67       0.02                                                   13288  4   13 
+ENDDATA              3          0                                 13288  4   14 
+ENDSUBENT           13          0                                 13288  499999 
+SUBENT        13288005   20190527                             145213288  5    1 
+BIB                  5          5                                 13288  5    2 
+REACTION   (92-U-235(N,F)46-PD-115,CUM,FY,,FRC/MXW)               13288  5    3 
+SAMPLE     (92-U-233,ENR=0.93)                                    13288  5    4 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties.  13288  5    5 
+STATUS     (TABLE) From Table IV in Thesis,Roche,1968.            13288  5    6 
+HISTORY    (20190527C) OG.                                        13288  5    7 
+ENDBIB               5          0                                 13288  5    8 
+NOCOMMON             0          0                                 13288  5    9 
+DATA                 2          1                                 13288  5   10 
+DATA       DATA-ERR                                               13288  5   11 
+NO-DIM     NO-DIM                                                 13288  5   12 
+0.89       0.01                                                   13288  5   13 
+ENDDATA              3          0                                 13288  5   14 
+ENDSUBENT           13          0                                 13288  599999 
+ENDENTRY             5          0                                 1328899999999 
