@@ -1,443 +1,594 @@
-ENTRY            D4060   20211202                             D133D406000000001 
-SUBENT        D4060001   20211202                             D133D406000100001 
-BIB                 12         44                                 D406000100002 
-INSTITUTE  (1CANMCG)                                              D406000100003 
-REFERENCE  (J,ZP/A,301,289,1981)                                  D406000100004 
-AUTHOR     (E.Gadioli, E.Gadioli-Erba, J.J.Hogan, K.I.Burns)      D406000100005 
-TITLE      Emission of alpha particles in the interaction of      D406000100006 
-           10-85 MeV protons with Ti-48,50                        D406000100007 
+ENTRY            D4060   20250129                             D145D406000000001 
+SUBENT        D4060001   20250129                             D145D406000100001 
+BIB                 11         37                                 D406000100002 
+TITLE      Emission of alpha particles in the interaction of      D406000100003 
+            10-85 MeV protons with 48,50Ti                        D406000100004 
+AUTHOR     (E.Gadioli, E.Gadioli Erba, J.J.Hogan, K.I.Burns)      D406000100005 
+INSTITUTE  (2ITYMIL,1CANMCG)                                      D406000100006 
+REFERENCE  (J,ZP/A,301,289,1981)                                  D406000100007 
 FACILITY   (SYNCY,1CANMCG)                                        D406000100008 
-SAMPLE     enriched material were used for preparing targets in   D406000100009 
-           the form of TiO2 oxide.                                D406000100010 
-           two different enrichement were used                    D406000100011 
-            isotope        material-1           material-2        D406000100012 
-             Ti-50          69.3%                                 D406000100013 
-             Ti-49           2.0%                                 D406000100014 
-             Ti-48          23.0%               99.1%             D406000100015 
-             Ti-47           2.4%                                 D406000100016 
-             Ti-46           3.1%                                 D406000100017 
-           the targets were a homogeneous mixture of the tio2     D406000100018 
-           and spectroscopically pure CuO. The ratio was 4:1 in   D406000100019 
-           the case of material-1 and 2:1 in the case of          D406000100020 
-           material-2. The copper served as monitor of the        D406000100021 
-           intensity of the proton beam.                          D406000100022 
-METHOD     (ACTIV,CHSEP,GSPEC)                                    D406000100023 
-           targets were placed in an aluminum tube with 25 micron D406000100024 
-           thick wall and irradiated for 5-10 minutes in a        D406000100025 
-           circulating beam of 5*10E12 protons/sec. Chemical      D406000100026 
-           separation was used before measuring the activity.     D406000100027 
-           the chemical yields were:                              D406000100028 
-               Sc 70%, Cl 50%, Cu 80%, K 50%, V 90%,              D406000100029 
-DETECTOR   (GELI)                                                 D406000100030 
-MONIT-REF  (,D.A.Newton+,J,JIN,35,361,1973)                       D406000100031 
-ERR-ANALYS (DATA-ERR) the errors reported reflect the uncertainty D406000100032 
-           in the counting statistics and chemical yield          D406000100033 
-           determination, but do not include systematic errors    D406000100034 
-           introduced by uncertainties in the gamma ray           D406000100035 
-           abundances, half lives or monitor cross sections.      D406000100036 
-STATUS     (TABLE) data were taken from table 3 and 5, and the    D406000100037 
-           monitor data from table 1 of Z.Phys.A. Atoms and nucl. D406000100038 
-           vol. 301, pp. 289-300, 1981.                           D406000100039 
-HISTORY    (19961125C)                                            D406000100040 
-           (19961129U)                                            D406000100041 
-           (19970716U) HW. -Free text following reaction code Al- D406000100042 
-           altered in subents 002 - 007.                          D406000100043 
-           (19980720U) HW.- Reaction sf8 modified in san 002-007.-D406000100044 
-           (20060730A) BIB section upgrated                       D406000100045 
-           (20211202A) VS. SF3=X in 003.1, 004.1-2 and 008.1.     D406000100046 
-ENDBIB              44          0                                 D406000100047 
-NOCOMMON             0          0                                 D406000100048 
-ENDSUBENT           47          0                                 D406000199999 
-SUBENT        D4060002   20211203                             D133D406000200001 
-BIB                  4          9                                 D406000200002 
-REACTION  1(22-TI-48(P,N)23-V-48,,SIG)                            D406000200003 
-          2(22-TI-48(P,2N)23-V-47,,SIG)                           D406000200004 
+SAMPLE     Enriched 50TiO2 and 48TiO2 in Al tube                  D406000100009 
+            (25 um thick wall):                                   D406000100010 
+           Isotope   material-1   material-2                      D406000100011 
+            50Ti          69.3%                                   D406000100012 
+            49Ti           2.0%                                   D406000100013 
+            48Ti          23.0%        99.1%                      D406000100014 
+            47Ti           2.4%                                   D406000100015 
+            46Ti           3.1%                                   D406000100016 
+DETECTOR   (GELI)                                                 D406000100017 
+METHOD     (ACTIV) Irradiated for 5-10 minutes in a circulating   D406000100018 
+            beam of 5E+12 protons/sec.                            D406000100019 
+           (MOMIX) Homogeneous mixture of the TiO2 and            D406000100020 
+            spectroscopically pure CuO                            D406000100021 
+           (CHSEP) Chemical separation before measuring the       D406000100022 
+            activity with the chemical yields of 70% (Sc),        D406000100023 
+            50% (Cl), 80% (Cu), 50% (K) and 90% (V).              D406000100024 
+MONIT-REF  (B0023001,D.A.Newton+,J,JIN,35,361,1973)               D406000100025 
+ERR-ANALYS (DATA-ERR) the errors reported reflect the uncertainty D406000100026 
+            in the counting statistics and chemical yield         D406000100027 
+            determination, but do not include systematic errors   D406000100028 
+            introduced by uncertainties in the gamma ray          D406000100029 
+            abundances, half lives or monitor cross sections.     D406000100030 
+HISTORY    (19961125C)                                            D406000100031 
+           (19961129U)                                            D406000100032 
+           (19970716U) HW. Free text following reaction code      D406000100033 
+            altered in subents 002 - 007.                         D406000100034 
+           (19980720U) HW. REACTION SF8 modified in san 002-007.- D406000100035 
+           (20060730A) BIB section upgraded                       D406000100036 
+           (20211202A) VS. SF3=X in 003.1, 004.1-2 and 008.1.     D406000100037 
+           (20250129A) On. Multiple reaction formalism cancelled  D406000100038 
+            by adding 013-021.                                    D406000100039 
+ENDBIB              37          0                                 D406000100040 
+NOCOMMON             0          0                                 D406000100041 
+ENDSUBENT           40          0                                 D406000199999 
+SUBENT        D4060002   20250129                             D145D406000200001 
+BIB                  5          9                                 D406000200002 
+REACTION   (22-TI-48(P,N)23-V-48,,SIG)                            D406000200003 
+DECAY-DATA (23-V-48,15.97D,DG,983.5,1.0)                          D406000200004 
 MONITOR    ((MONIT1)29-CU-63(P,N)30-ZN-63,,SIG)                   D406000200005 
            ((MONIT2)29-CU-65(P,X)29-CU-64,,SIG)                   D406000200006 
-DECAY-DATA1(23-V-48,15.97D,DG,983.5,1.0)                          D406000200007 
-          2(23-V-47,31.2MIN,DG,511.,2.)                           D406000200008 
-HISTORY    (19970716U) hw. -Free text following reaction code Al- D406000200009 
-           altered.                                               D406000200010 
-           (19980720U) hw.- Reaction sf8 modified.-               D406000200011 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406000200007 
+HISTORY    (19970716U) HW. Free text following reaction code      D406000200008 
+            altered.                                              D406000200009 
+           (19980720U) HW. REACTION SF8 modified.                 D406000200010 
+           (20250129A) On. 48Ti(p,2n)47V dataset moved to 013.    D406000200011 
 ENDBIB               9          0                                 D406000200012 
 NOCOMMON             0          0                                 D406000200013 
-DATA                 7         14                                 D406000200014 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT1     D406000200015 
-MONIT2                                                            D406000200016 
-MEV        MB         MB         MB         MB         MB         D406000200017 
-MB                                                                D406000200018 
-        7.0      333.0        13.                             249.D406000200019 
-                                                                  D406000200020 
-        10.       577.        25.                             415.D406000200021 
-                                                                  D406000200022 
-        15.       425.        20.                             330.D406000200023 
-                                                                  D406000200024 
-        20.       110.        6.0       114.        6.0       63.7D406000200025 
-                                                                  D406000200026 
-        25.       36.4        4.0       131.       14.0           D406000200027 
-       430.                                                       D406000200028 
-        30.       29.2        3.6       118.       14.0           D406000200029 
-       410.                                                       D406000200030 
-        35.       22.5        3.0       56.1        7.0           D406000200031 
-       250.                                                       D406000200032 
-        40.       15.4        1.9       40.3        5.0           D406000200033 
-       245.                                                       D406000200034 
-        45.       16.1        2.0       38.0        4.8           D406000200035 
-       195.                                                       D406000200036 
-        50.       15.9        2.0       31.5        4.3           D406000200037 
-       190.                                                       D406000200038 
-        55.       13.2        1.8       20.0        2.5           D406000200039 
-       165.                                                       D406000200040 
-        60.       11.5        1.5       20.4        2.6           D406000200041 
-       165.                                                       D406000200042 
-        70.        9.5        1.1                                 D406000200043 
-       154.                                                       D406000200044 
-        85.        7.0        0.9        9.2        1.2           D406000200045 
-       145.                                                       D406000200046 
-ENDDATA             32          0                                 D406000200047 
-ENDSUBENT           46          0                                 D406000299999 
-SUBENT        D4060003   20211202                             D133D406000300001 
-BIB                  4         10                                 D406000300002 
-REACTION  1(22-TI-48(P,2P)21-SC-47,,SIG)                          D406000300003 
-          2(22-TI-48(P,X)21-SC-46,,SIG)                           D406000300004 
+DATA                 5         14                                 D406000200014 
+EN         DATA       DATA-ERR   MONIT1     MONIT2                D406000200015 
+MEV        MB         MB         MB         MB                    D406000200016 
+  7.        333.       13.        249.                            D406000200017 
+ 10.        577.       25.        415.                            D406000200018 
+ 15.        425.       20.        330.                            D406000200019 
+ 20.        110.        6.         63.7                           D406000200020 
+ 25.         36.4       4.0                  430.                 D406000200021 
+ 30.         29.2       3.6                  410.                 D406000200022 
+ 35.         22.5       3.0                  250.                 D406000200023 
+ 40.         15.4       1.9                  245.                 D406000200024 
+ 45.         16.1       2.0                  195.                 D406000200025 
+ 50.         15.9       2.0                  190.                 D406000200026 
+ 55.         13.2       1.8                  165.                 D406000200027 
+ 60.         11.5       1.5                  165.                 D406000200028 
+ 70.          9.5       1.1                  154.                 D406000200029 
+ 85.          7.0       0.9                  145.                 D406000200030 
+ENDDATA             16          0                                 D406000200031 
+ENDSUBENT           30          0                                 D406000299999 
+SUBENT        D4060003   20250129                             D145D406000300001 
+BIB                  5         10                                 D406000300002 
+REACTION   (22-TI-48(P,2P)21-SC-47,,SIG)                          D406000300003 
+DECAY-DATA (21-SC-47,3.41D,DG,159.4,0.73)                         D406000300004 
 MONITOR    ((MONIT1)29-CU-63(P,N)30-ZN-63,,SIG)                   D406000300005 
            ((MONIT2)29-CU-65(P,X)29-CU-64,,SIG)                   D406000300006 
-DECAY-DATA1(21-SC-47,3.41D,DG,159.4,0.73)                         D406000300007 
-          2(21-SC-46-G,83.8D,DG,889.,1.0)                         D406000300008 
-HISTORY    (19970716U) HW. -Free text following reaction code Al- D406000300009 
-           altered.                                               D406000300010 
-           (19980720U) HW.- Reaction sf8 modified.-               D406000300011 
-           (20211202A) VS. SF3=X in 003.2.                        D406000300012 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406000300007 
+HISTORY    (19970716U) HW. Free text following reaction code      D406000300008 
+            altered.                                              D406000300009 
+           (19980720U) HW. REACTION SF8 modified.                 D406000300010 
+           (20211202A) VS. SF3=X in 003.2.                        D406000300011 
+           (20250129A) On. 48Ti(p,x)46Sc dataset moved to 014.    D406000300012 
 ENDBIB              10          0                                 D406000300013 
 NOCOMMON             0          0                                 D406000300014 
-DATA                 7         14                                 D406000300015 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT1     D406000300016 
-MONIT2                                                            D406000300017 
-MEV        MB         MB         MB         MB         MB         D406000300018 
-MB                                                                D406000300019 
-        20.        3.5        0.2                             63.7D406000300020 
-                                                                  D406000300021 
-        25.       18.5        1.4                                 D406000300022 
-       430.                                                       D406000300023 
-        30.       34.6        2.5        5.1        0.4           D406000300024 
-       410.                                                       D406000300025 
-        35.       28.8        2.0       28.3        1.9           D406000300026 
-       250.                                                       D406000300027 
-        40.       27.8        1.8       60.2        3.8           D406000300028 
-       245.                                                       D406000300029 
-        45.       24.7        1.6       77.3        3.9           D406000300030 
-       195.                                                       D406000300031 
-        50.       24.0        1.5       74.7        4.0           D406000300032 
-       190.                                                       D406000300033 
-        55.       18.7        1.2       53.0        3.1           D406000300034 
-       165.                                                       D406000300035 
-        60.       19.9        1.2       51.2        2.7           D406000300036 
-       165.                                                       D406000300037 
-        65.       18.1        1.4       43.6        2.8           D406000300038 
-       157.                                                       D406000300039 
-        70.       19.1        1.2       43.7        2.7           D406000300040 
-       154.                                                       D406000300041 
-        75.       23.9        1.5       52.6        3.4           D406000300042 
-       154.                                                       D406000300043 
-        80.       22.4        1.5       47.3        3.0           D406000300044 
-       150.                                                       D406000300045 
-        85.       23.7        1.5       47.3                      D406000300046 
-       145.                                                       D406000300047 
-ENDDATA             32          0                                 D406000300048 
-ENDSUBENT           47          0                                 D406000399999 
-SUBENT        D4060004   20211202                             D133D406000400001 
-BIB                  4         10                                 D406000400002 
-REACTION  1(22-TI-48(P,X)21-SC-44-G,(M),SIG)                      D406000400003 
-          2(22-TI-48(P,X)21-SC-43,,SIG)                           D406000400004 
-MONITOR    ((MONIT1)29-CU-63(P,N)30-ZN-63,,SIG)                   D406000400005 
-           ((MONIT2)29-CU-65(P,X)29-CU-64,,SIG)                   D406000400006 
-DECAY-DATA1(21-SC-44-G,3.92HR,DG,1157.0,0.99)                     D406000400007 
-          2(21-SC-43,3.89HR,DG,372.,.22)                          D406000400008 
-HISTORY    (19970716U) HW. -Free text following reaction code Al- D406000400009 
-           tered.                                                 D406000400010 
-           (19980720U) HW.- Reaction sf8 modified.-               D406000400011 
-           (20211202A) VS. SF3=X in 004.1 and 004.2.              D406000400012 
-ENDBIB              10          0                                 D406000400013 
-NOCOMMON             0          0                                 D406000400014 
-DATA                 7         14                                 D406000400015 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT1     D406000400016 
-MONIT2                                                            D406000400017 
-MEV        MB         MB         MB         MB         MB         D406000400018 
-MB                                                                D406000400019 
-        20.        0.9        0.1                             63.7D406000400020 
-                                                                  D406000400021 
-        25.       33.8        2.2                                 D406000400022 
-       430.                                                       D406000400023 
-        30.       67.1        4.5                                 D406000400024 
-       410.                                                       D406000400025 
-        35.       48.5        2.9        3.3        0.2           D406000400026 
-       250.                                                       D406000400027 
-        40.       31.5        2.1       11.6        0.6           D406000400028 
-       245.                                                       D406000400029 
-        45.       16.7        1.0       16.5        1.1           D406000400030 
-       195.                                                       D406000400031 
-        50.       13.4        0.8       15.8        0.9           D406000400032 
-       190.                                                       D406000400033 
-        55.       11.7        0.7        9.5        0.6           D406000400034 
-       165.                                                       D406000400035 
-        60.       17.9        1.1        6.7        0.4           D406000400036 
-       165.                                                       D406000400037 
-        65.       25.8        1.8        5.5        0.4           D406000400038 
-       157.                                                       D406000400039 
-        70.       38.7        2.5        5.5        0.3           D406000400040 
-       154.                                                       D406000400041 
-        75.       54.8        3.5        7.4        0.5           D406000400042 
-       154.                                                       D406000400043 
-        80.       50.5        3.5        7.6        0.6           D406000400044 
-       150.                                                       D406000400045 
-        85.       52.8        3.2       10.3        0.6           D406000400046 
-       145.                                                       D406000400047 
-ENDDATA             32          0                                 D406000400048 
-ENDSUBENT           47          0                                 D406000499999 
-SUBENT        D4060005   20211203                             D133D406000500001 
-BIB                  4          8                                 D406000500002 
-REACTION  1(22-TI-48(P,X)19-K-43,,SIG)                            D406000500003 
-          2(22-TI-48(P,X)19-K-42,,SIG)                            D406000500004 
-MONITOR    ((MONIT)29-CU-65(P,X)29-CU-64,,SIG)                    D406000500005 
-DECAY-DATA1(19-K-43,22.42HR,DG,617.0,0.782)                       D406000500006 
-          2(19-K-42,12.4HR,DG,1524.7,0.18)                        D406000500007 
-HISTORY    (19970716U) HW. -Free text following reaction code Al- D406000500008 
-           tered.                                                 D406000500009 
-           (19980720U) HW.- Reaction sf8 modified.-               D406000500010 
+DATA                 5         14                                 D406000300015 
+EN         DATA       DATA-ERR   MONIT1     MONIT2                D406000300016 
+MEV        MB         MB         MB         MB                    D406000300017 
+ 20.         3.5       0.2        63.7                            D406000300018 
+ 25.        18.5       1.4                   430.                 D406000300019 
+ 30.        34.6       2.5                   410.                 D406000300020 
+ 35.        28.8       2.0                   250.                 D406000300021 
+ 40.        27.8       1.8                   245.                 D406000300022 
+ 45.        24.7       1.6                   195.                 D406000300023 
+ 50.        24.0       1.5                   190.                 D406000300024 
+ 55.        18.7       1.2                   165.                 D406000300025 
+ 60.        19.9       1.2                   165.                 D406000300026 
+ 65.        18.1       1.4                   157.                 D406000300027 
+ 70.        19.1       1.2                   154.                 D406000300028 
+ 75.        23.9       1.5                   154.                 D406000300029 
+ 80.        22.4       1.5                   150.                 D406000300030 
+ 85.        23.7       1.5                   145.                 D406000300031 
+ENDDATA             16          0                                 D406000300032 
+ENDSUBENT           31          0                                 D406000399999 
+SUBENT        D4060004   20250129                             D145D406000400001 
+BIB                  6         16                                 D406000400002 
+REACTION   (22-TI-48(P,X)21-SC-44,,SIG)                           D406000400003 
+DECAY-DATA (21-SC-44-M,2.44D,DG,270.9,0.986)                      D406000400004 
+           (21-SC-44-G,3.92HR,DG,1157.0,0.99)                     D406000400005 
+MONITOR    ((MONIT1)29-CU-63(P,N)30-ZN-63,,SIG)                   D406000400006 
+           ((MONIT2)29-CU-65(P,X)29-CU-64,,SIG)                   D406000400007 
+COMMENT    By compiler (2025-01-29):                              D406000400008 
+            The compiler assumes the author reports the sum of    D406000400009 
+           the ground state and metastable state production       D406000400010 
+           cross sections since the 44mSc decay data are reported D406000400011 
+           without its production cross section in the article.   D406000400012 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406000400013 
+HISTORY    (19970716U) HW. Free text following reaction code      D406000400014 
+            altered.                                              D406000400015 
+           (19980720U) HW. REACTION SF8 modified.                 D406000400016 
+           (20211202A) VS. SF3=X in 004.1 and 004.2.              D406000400017 
+           (20250129A) On. 48Ti(p,x)43Sc dataset moved to 015.    D406000400018 
+ENDBIB              16          0                                 D406000400019 
+NOCOMMON             0          0                                 D406000400020 
+DATA                 5         14                                 D406000400021 
+EN         DATA       DATA-ERR   MONIT1     MONIT2                D406000400022 
+MEV        MB         MB         MB         MB                    D406000400023 
+ 20.         0.9       0.1        63.7                            D406000400024 
+ 25.        33.8       2.2                   430.                 D406000400025 
+ 30.        67.1       4.5                   410.                 D406000400026 
+ 35.        48.5       2.9                   250.                 D406000400027 
+ 40.        31.5       2.1                   245.                 D406000400028 
+ 45.        16.7       1.0                   195.                 D406000400029 
+ 50.        13.4       0.8                   190.                 D406000400030 
+ 55.        11.7       0.7                   165.                 D406000400031 
+ 60.        17.9       1.1                   165.                 D406000400032 
+ 65.        25.8       1.8                   157.                 D406000400033 
+ 70.        38.7       2.5                   154.                 D406000400034 
+ 75.        54.8       3.5                   154.                 D406000400035 
+ 80.        50.5       3.5                   150.                 D406000400036 
+ 85.        52.8       3.2                   145.                 D406000400037 
+ENDDATA             16          0                                 D406000400038 
+ENDSUBENT           37          0                                 D406000499999 
+SUBENT        D4060005   20250129                             D145D406000500001 
+BIB                  5          8                                 D406000500002 
+REACTION   (22-TI-48(P,X)19-K-43,,SIG)                            D406000500003 
+DECAY-DATA (19-K-43,22.42HR,DG,617.0,0.782)                       D406000500004 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406000500005 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406000500006 
+HISTORY    (19970716U) HW. Free text following reaction code      D406000500007 
+            altered.                                              D406000500008 
+           (19980720U) HW. REACTION SF8 modified.                 D406000500009 
+           (20250129A) On. 48Ti(p,x)42K dataset moved to 016.     D406000500010 
 ENDBIB               8          0                                 D406000500011 
 NOCOMMON             0          0                                 D406000500012 
-DATA                 6         10                                 D406000500013 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT      D406000500014 
-MEV        MB         MB         MB         MB         MB         D406000500015 
-        40.       0.15       0.01      0.015      0.010       245.D406000500016 
-        45.       0.68       0.03       0.09       0.01       195.D406000500017 
-        50.       1.33       0.06       0.50       0.03       190.D406000500018 
-        55.       1.61       0.08       1.84       0.09       165.D406000500019 
-        60.       1.61       0.08       4.57       0.21       165.D406000500020 
-        65.       1.31       0.08       5.76       0.35       157.D406000500021 
-        70.       1.20       0.06       6.63       0.36       154.D406000500022 
-        75.       1.37       0.06       7.69       0.41       154.D406000500023 
-        80.       1.31       0.07       6.62       0.35       150.D406000500024 
-        85.       1.42       0.08       6.99       0.31       145.D406000500025 
+DATA                 4         10                                 D406000500013 
+EN         DATA       DATA-ERR   MONIT                            D406000500014 
+MEV        MB         MB         MB                               D406000500015 
+ 40.        0.15       0.01       245.                            D406000500016 
+ 45.        0.68       0.03       195.                            D406000500017 
+ 50.        1.33       0.06       190.                            D406000500018 
+ 55.        1.61       0.08       165.                            D406000500019 
+ 60.        1.61       0.08       165.                            D406000500020 
+ 65.        1.31       0.08       157.                            D406000500021 
+ 70.        1.20       0.06       154.                            D406000500022 
+ 75.        1.37       0.06       154.                            D406000500023 
+ 80.        1.31       0.07       150.                            D406000500024 
+ 85.        1.42       0.08       145.                            D406000500025 
 ENDDATA             12          0                                 D406000500026 
 ENDSUBENT           25          0                                 D406000599999 
-SUBENT        D4060006   20211203                             D133D406000600001 
-BIB                  4          9                                 D406000600002 
-REACTION  1(22-TI-48(P,X)17-CL-39,,SIG)                           D406000600003 
-          2(22-TI-48(P,X)17-CL-38,,SIG)                           D406000600004 
-MONITOR    ((MONIT)29-CU-65(P,X)29-CU-64,,SIG)                    D406000600005 
-DECAY-DATA1(17-CL-39,56.2MIN,DG,250.3) 0.866% Relative abundance, D406000600006 
-            the 1267. Kev line is 100%.                           D406000600007 
-          2(17-CL-38-G,37.18MIN,DG,1642.4,0.40)                   D406000600008 
-HISTORY    (19970716U) HW. -Free text following reaction code Al- D406000600009 
-           altered.                                               D406000600010 
-           (19980720U) HW.- Reaction sf8 modified.-               D406000600011 
+SUBENT        D4060006   20250129                             D145D406000600001 
+BIB                  5          9                                 D406000600002 
+REACTION   (22-TI-48(P,X)17-CL-39,,SIG)                           D406000600003 
+DECAY-DATA (17-CL-39,56.2MIN,DG,250.3) 0.866% relative abundance, D406000600004 
+            the 1267 keV line is 100%.                            D406000600005 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406000600006 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406000600007 
+HISTORY    (19970716U) HW. Free text following reaction code      D406000600008 
+            altered.                                              D406000600009 
+           (19980720U) HW. REACTION SF8 modified.                 D406000600010 
+           (20250129A) On. 48Ti(p,x)38Cl dataset moved to 017.    D406000600011 
 ENDBIB               9          0                                 D406000600012 
 NOCOMMON             0          0                                 D406000600013 
-DATA                 6          5                                 D406000600014 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT      D406000600015 
-MEV        MB         MB         MB         MB         MB         D406000600016 
-        65.      0.016      0.002      0.017      0.003       157.D406000600017 
-        70.      0.038      0.003      0.082      0.008       154.D406000600018 
-        75.      0.050      0.004      0.202      0.015       154.D406000600019 
-        80.      0.048      0.004      0.307      0.025       150.D406000600020 
-        85.      0.043      0.003      0.380      0.030       145.D406000600021 
+DATA                 4          5                                 D406000600014 
+EN         DATA       DATA-ERR   MONIT                            D406000600015 
+MEV        MB         MB         MB                               D406000600016 
+ 65.        0.016      0.002      157.                            D406000600017 
+ 70.        0.038      0.003      154.                            D406000600018 
+ 75.        0.050      0.004      154.                            D406000600019 
+ 80.        0.048      0.004      150.                            D406000600020 
+ 85.        0.043      0.003      145.                            D406000600021 
 ENDDATA              7          0                                 D406000600022 
 ENDSUBENT           21          0                                 D406000699999 
-SUBENT        D4060007   20211203                             D133D406000700001 
-BIB                  4          6                                 D406000700002 
+SUBENT        D4060007   20250129                             D145D406000700001 
+BIB                  5          7                                 D406000700002 
 REACTION   (22-TI-48(P,X)17-CL-34-M,,SIG)                         D406000700003 
-MONITOR    ((MONIT)29-CU-65(P,X)29-CU-64,,SIG)                    D406000700004 
-DECAY-DATA (17-CL-34-M,32.2MIN,DG,145.7,0.215)                    D406000700005 
-HISTORY    (19970716U) hw. -Free text following reaction code Al- D406000700006 
-           altered.                                               D406000700007 
-           (19980720U) hw.- Reaction sf8 modified.-               D406000700008 
-ENDBIB               6          0                                 D406000700009 
-NOCOMMON             0          0                                 D406000700010 
-DATA                 4          5                                 D406000700011 
-EN         DATA       DATA-ERR   MONIT                            D406000700012 
-MEV        MB         MB         MB                               D406000700013 
-        65.      0.013      0.002       157.                      D406000700014 
-        70.      0.013      0.001       154.                      D406000700015 
-        75.      0.015      0.002       154.                      D406000700016 
-        80.      0.022      0.002       150.                      D406000700017 
-        85.      0.046      0.004       145.                      D406000700018 
-ENDDATA              7          0                                 D406000700019 
-ENDSUBENT           18          0                                 D406000799999 
-SUBENT        D4060008   20211203                             D133D406000800001 
-BIB                  5         10                                 D406000800002 
-REACTION  1(22-TI-50(P,X)21-SC-48,,SIG,,,DERIV)                   D406000800003 
-          2(22-TI-50(P,X)21-SC-47,,SIG,,,DERIV)                   D406000800004 
-DECAY-DATA1(21-SC-48,,DG) decay data are not given by the authors D406000800005 
-          2(21-SC-47,3.41D,DG,159.4,0.73)                         D406000800006 
-MONITOR    ((MONIT1)29-CU-63(P,N)30-ZN-63,,SIG)                   D406000800007 
-           ((MONIT2)29-CU-65(P,X)29-CU-64,,SIG)                   D406000800008 
-ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406000800009 
-           contribution determined experimentally and             D406000800010 
-           theoretically, respectively.                           D406000800011 
-HISTORY    (20211202A) VS. SF3=X in 008.1.                        D406000800012 
-ENDBIB              10          0                                 D406000800013 
-NOCOMMON             0          0                                 D406000800014 
-DATA                 7         15                                 D406000800015 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT1     D406000800016 
-MONIT2                                                            D406000800017 
-MEV        MB         MB         MB         MB         MB         D406000800018 
-MB                                                                D406000800019 
-        15.                              5.2        0.4       330.D406000800020 
-                                                                  D406000800021 
-        20.                             18.6        1.6       63.7D406000800022 
-                                                                  D406000800023 
-        25.                             23.9        2.6           D406000800024 
-       430.                                                       D406000800025 
-        30.                              8.8        1.8           D406000800026 
-       410.                                                       D406000800027 
-        35.        3.0        0.3        3.5        1.3           D406000800028 
-       250.                                                       D406000800029 
-        40.        9.5        0.6        4.4        1.3           D406000800030 
-       245.                                                       D406000800031 
-        45.       14.7        0.9       10.0        1.5           D406000800032 
-       195.                                                       D406000800033 
-        50.       17.3        1.3       21.2        2.8           D406000800034 
-       190.                                                       D406000800035 
-        55.       18.5        1.1       37.1        2.6           D406000800036 
-       165.                                                       D406000800037 
-        60.       19.1        1.3       45.1        4.3           D406000800038 
-       165.                                                       D406000800039 
-        65.       18.6        1.3       48.1        4.6           D406000800040 
-       157.                                                       D406000800041 
-        70.       17.8        1.1       44.4        4.3           D406000800042 
-       154.                                                       D406000800043 
-        75.       20.3        1.1       48.2        4.2           D406000800044 
-       154.                                                       D406000800045 
-        80.       17.8        1.0       41.1        3.6           D406000800046 
-       150.                                                       D406000800047 
-        85.       16.8        1.3       36.4        3.9           D406000800048 
-       145.                                                       D406000800049 
-ENDDATA             34          0                                 D406000800050 
-ENDSUBENT           49          0                                 D406000899999 
-SUBENT        D4060009   20211203                             D133D406000900001 
-BIB                  4          9                                 D406000900002 
-REACTION  1(22-TI-50(P,X)21-SC-46,,SIG,,,DERIV)                   D406000900003 
-          2(22-TI-50(P,X)21-SC-44-G,(M),SIG,,,DERIV)              D406000900004 
-DECAY-DATA1(21-SC-46-G,83.8D,DG,889.,1.0)                         D406000900005 
-          2(21-SC-44-G,3.92HR,DG,1157.,0.99)                      D406000900006 
-MONITOR    ((MONIT1)29-CU-63(P,N)30-ZN-63,,SIG)                   D406000900007 
-           ((MONIT2)29-CU-65(P,X)29-CU-64,,SIG)                   D406000900008 
-ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406000900009 
-           contribution determined experimentally and             D406000900010 
-           theoretically, respectively.                           D406000900011 
+DECAY-DATA (17-CL-34-M,32.2MIN,DG,145.7,0.215)                    D406000700004 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406000700005 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406000700006 
+HISTORY    (19970716U) HW. Free text following reaction code      D406000700007 
+            altered.                                              D406000700008 
+           (19980720U) HW. REACTION SF8 modified.                 D406000700009 
+ENDBIB               7          0                                 D406000700010 
+NOCOMMON             0          0                                 D406000700011 
+DATA                 4          5                                 D406000700012 
+EN         DATA       DATA-ERR   MONIT                            D406000700013 
+MEV        MB         MB         MB                               D406000700014 
+ 65.        0.013      0.002      157.                            D406000700015 
+ 70.        0.013      0.001      154.                            D406000700016 
+ 75.        0.015      0.002      154.                            D406000700017 
+ 80.        0.022      0.002      150.                            D406000700018 
+ 85.        0.046      0.004      145.                            D406000700019 
+ENDDATA              7          0                                 D406000700020 
+ENDSUBENT           19          0                                 D406000799999 
+SUBENT        D4060008   20250129                             D145D406000800001 
+BIB                  6          9                                 D406000800002 
+REACTION   (22-TI-50(P,X)21-SC-48,,SIG,,,DERIV)                   D406000800003 
+RAD-DET    (21-SC-48,DG) decay data not given by the authors      D406000800004 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406000800005 
+ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406000800006 
+            contribution determined experimentally and            D406000800007 
+            theoretically, respectively.                          D406000800008 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 5        D406000800009 
+HISTORY    (20211202A) VS. SF3=X in 008.1.                        D406000800010 
+           (20250129A) On. 50Ti(p,x)47Sc dataset moved to 018.    D406000800011 
+ENDBIB               9          0                                 D406000800012 
+NOCOMMON             0          0                                 D406000800013 
+DATA                 4         11                                 D406000800014 
+EN         DATA       DATA-ERR   MONIT                            D406000800015 
+MEV        MB         MB         MB                               D406000800016 
+ 35.         3.0       0.3        250.                            D406000800017 
+ 40.         9.5       0.6        245.                            D406000800018 
+ 45.        14.7       0.9        195.                            D406000800019 
+ 50.        17.3       1.3        190.                            D406000800020 
+ 55.        18.5       1.1        165.                            D406000800021 
+ 60.        19.1       1.3        165.                            D406000800022 
+ 65.        18.6       1.3        157.                            D406000800023 
+ 70.        17.8       1.1        154.                            D406000800024 
+ 75.        20.3       1.1        154.                            D406000800025 
+ 80.        17.8       1.0        150.                            D406000800026 
+ 85.        16.8       1.3        145.                            D406000800027 
+ENDDATA             13          0                                 D406000800028 
+ENDSUBENT           27          0                                 D406000899999 
+SUBENT        D4060009   20250129                             D145D406000900001 
+BIB                  6          9                                 D406000900002 
+REACTION   (22-TI-50(P,X)21-SC-46,,SIG,,,DERIV)                   D406000900003 
+DECAY-DATA (21-SC-46-G,83.8D,DG,889.,1.0)                         D406000900004 
+MONITOR    ((MONIT1)29-CU-63(P,N)30-ZN-63,,SIG)                   D406000900005 
+           ((MONIT2)29-CU-65(P,X)29-CU-64,,SIG)                   D406000900006 
+ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406000900007 
+            contribution determined experimentally and            D406000900008 
+            theoretically, respectively.                          D406000900009 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 5        D406000900010 
+HISTORY    (20250129A) On. 50Ti(p,x)44gSc dataset moved to 019.   D406000900011 
 ENDBIB               9          0                                 D406000900012 
 NOCOMMON             0          0                                 D406000900013 
-DATA                 7         14                                 D406000900014 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT1     D406000900015 
-MONIT2                                                            D406000900016 
-MEV        MB         MB         MB         MB         MB         D406000900017 
-MB                                                                D406000900018 
-        20.        2.9        0.4                             63.7D406000900019 
-                                                                  D406000900020 
-        25.       34.7        2.8                                 D406000900021 
-       430.                                                       D406000900022 
-        30.       57.5        4.2                                 D406000900023 
-       410.                                                       D406000900024 
-        35.       34.7        3.2                                 D406000900025 
-       250.                                                       D406000900026 
-        40.       21.2        3.1       0.28        3.9           D406000900027 
-       245.                                                       D406000900028 
-        45.       14.0        3.9        4.2        3.8           D406000900029 
-       195.                                                       D406000900030 
-        50.       10.8        3.9        9.3        4.0           D406000900031 
-       190.                                                       D406000900032 
-        55.       16.0        3.7       19.9        3.6           D406000900033 
-       165.                                                       D406000900034 
-        60.       19.9        3.7       25.2        3.6           D406000900035 
-       165.                                                       D406000900036 
-        65.       30.7        4.5       22.9        4.2           D406000900037 
-       157.                                                       D406000900038 
-        70.       34.4        4.6       17.7        4.1           D406000900039 
-       154.                                                       D406000900040 
-        75.       41.9        4.6       14.3        3.9           D406000900041 
-       154.                                                       D406000900042 
-        80.       38.0        4.2       10.1        3.7           D406000900043 
-       150.                                                       D406000900044 
-        85.       32.5        4.4        5.7        3.8           D406000900045 
-       145.                                                       D406000900046 
-ENDDATA             32          0                                 D406000900047 
-ENDSUBENT           46          0                                 D406000999999 
-SUBENT        D4060010   20211203                             D133D406001000001 
-BIB                  4          8                                 D406001000002 
-REACTION  1(22-TI-50(P,X)21-SC-43,,SIG,,,DERIV)                   D406001000003 
-          2(22-TI-50(P,X)19-K-43,,SIG,,,DERIV)                    D406001000004 
-DECAY-DATA1(21-SC-43,3.89HR,DG,372.,.22)                          D406001000005 
-          2(19-K-43,22.42HR,DG,617.,0.782)                        D406001000006 
-MONITOR    ((MONIT)29-CU-65(P,X)29-CU-64,,SIG)                    D406001000007 
-ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406001000008 
-           contribution determined experimentally and             D406001000009 
-           theoretically, respectively.                           D406001000010 
+DATA                 5         14                                 D406000900014 
+EN         DATA       DATA-ERR   MONIT1     MONIT2                D406000900015 
+MEV        MB         MB         MB         MB                    D406000900016 
+ 20.         2.9       0.4        63.7                            D406000900017 
+ 25.        34.7       2.8                   430.                 D406000900018 
+ 30.        57.5       4.2                   410.                 D406000900019 
+ 35.        34.7       3.2                   250.                 D406000900020 
+ 40.        21.2       3.1                   245.                 D406000900021 
+ 45.        14.0       3.9                   195.                 D406000900022 
+ 50.        10.8       3.9                   190.                 D406000900023 
+ 55.        16.0       3.7                   165.                 D406000900024 
+ 60.        19.9       3.7                   165.                 D406000900025 
+ 65.        30.7       4.5                   157.                 D406000900026 
+ 70.        34.4       4.6                   154.                 D406000900027 
+ 75.        41.9       4.6                   154.                 D406000900028 
+ 80.        38.0       4.2                   150.                 D406000900029 
+ 85.        32.5       4.4                   145.                 D406000900030 
+ENDDATA             16          0                                 D406000900031 
+ENDSUBENT           30          0                                 D406000999999 
+SUBENT        D4060010   20250129                             D145D406001000001 
+BIB                  6          8                                 D406001000002 
+REACTION   (22-TI-50(P,X)21-SC-43,,SIG,,,DERIV)                   D406001000003 
+DECAY-DATA (21-SC-43,3.89HR,DG,372.,.22)                          D406001000004 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406001000005 
+ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406001000006 
+            contribution determined experimentally and            D406001000007 
+            theoretically, respectively.                          D406001000008 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 5        D406001000009 
+HISTORY    (20250129A) On. 50Ti(p,x)43K dataset moved to 020.     D406001000010 
 ENDBIB               8          0                                 D406001000011 
 NOCOMMON             0          0                                 D406001000012 
-DATA                 6         12                                 D406001000013 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT      D406001000014 
-MEV        MB         MB         MB         MB         MB         D406001000015 
-        30.                             0.11       0.01       410.D406001000016 
-        35.                             0.40       0.02       250.D406001000017 
-        40.                             0.88       0.07       245.D406001000018 
-        45.                             0.58       0.06       195.D406001000019 
-        50.                             0.37       0.07       190.D406001000020 
-        55.                             0.09       0.06       165.D406001000021 
-        60.        0.4        2.4       0.33       0.10       165.D406001000022 
-        65.        0.9        2.4       0.76       0.10       157.D406001000023 
-        70.        1.7        2.3       1.36       0.14       154.D406001000024 
-        75.        2.8        2.3       2.50       0.22       154.D406001000025 
-        80.        2.3        2.2       3.37       0.27       150.D406001000026 
-        85.        1.2        2.2       3.58       0.29       154.D406001000027 
-ENDDATA             14          0                                 D406001000028 
-ENDSUBENT           27          0                                 D406001099999 
-SUBENT        D4060011   20211203                             D133D406001100001 
-BIB                  4          9                                 D406001100002 
-REACTION  1(22-TI-50(P,X)19-K-42,,SIG,,,DERIV)                    D406001100003 
-          2(22-TI-50(P,X)17-CL-39,,SIG,,,DERIV)                   D406001100004 
-DECAY-DATA1(19-K-42,12.4HR,DG,1524.7,0.18)                        D406001100005 
-          2(17-CL-39,56.2MIN,DG,250.3) 0.866% Relative abundance, D406001100006 
-           the 1267. Kev gamma line is 100%.                      D406001100007 
-MONITOR    ((MONIT)29-CU-65(P,X)29-CU-64,,SIG)                    D406001100008 
-ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406001100009 
-           contribution determined experimentally and             D406001100010 
-           theoretically, respectively.                           D406001100011 
+DATA                 4          6                                 D406001000013 
+EN         DATA       DATA-ERR   MONIT                            D406001000014 
+MEV        MB         MB         MB                               D406001000015 
+ 60.        0.4        2.4        165.                            D406001000016 
+ 65.        0.9        2.4        157.                            D406001000017 
+ 70.        1.7        2.3        154.                            D406001000018 
+ 75.        2.8        2.3        154.                            D406001000019 
+ 80.        2.3        2.2        150.                            D406001000020 
+ 85.        1.2        2.2        154.                            D406001000021 
+ENDDATA              8          0                                 D406001000022 
+ENDSUBENT           21          0                                 D406001099999 
+SUBENT        D4060011   20250129                             D145D406001100001 
+BIB                  6          9                                 D406001100002 
+REACTION   (22-TI-50(P,X)19-K-42,,SIG,,,DERIV)                    D406001100003 
+DECAY-DATA (19-K-42,12.4HR,DG,1524.7,0.18)                        D406001100004 
+           the 1267. Kev gamma line is 100%.                      D406001100005 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406001100006 
+ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406001100007 
+            contribution determined experimentally and            D406001100008 
+            theoretically, respectively.                          D406001100009 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 5        D406001100010 
+HISTORY    (20250129A) On. 50Ti(p,x)39Cl dataset moved to 021.    D406001100011 
 ENDBIB               9          0                                 D406001100012 
 NOCOMMON             0          0                                 D406001100013 
-DATA                 6         10                                 D406001100014 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT      D406001100015 
-MEV        MB         MB         MICRO-B    MICRO-B    MB         D406001100016 
-        40.        0.3        0.1                             245.D406001100017 
-        45.        1.2        0.1                             195.D406001100018 
-        50.        2.3        0.3        3.2        0.3       190.D406001100019 
-        55.        1.7        0.2        5.9       0.09       165.D406001100020 
-        60.        2.1        0.3       12.0       0.21       165.D406001100021 
-        65.        1.8        0.3       16.0       0.35       157.D406001100022 
-        70.        1.0        0.3        4.0       0.36       154.D406001100023 
-        75.        1.3       0.22       13.0       0.41       154.D406001100024 
-        80.        2.3        0.4       16.0       0.35       150.D406001100025 
-        85.        3.5        0.5       26.0       0.31       145.D406001100026 
+DATA                 4         10                                 D406001100014 
+EN         DATA       DATA-ERR   MONIT                            D406001100015 
+MEV        MB         MB         MB                               D406001100016 
+ 40.        0.3        0.1        245.                            D406001100017 
+ 45.        1.2        0.1        195.                            D406001100018 
+ 50.        2.3        0.3        190.                            D406001100019 
+ 55.        1.7        0.2        165.                            D406001100020 
+ 60.        2.1        0.3        165.                            D406001100021 
+ 65.        1.8        0.3        157.                            D406001100022 
+ 70.        1.0        0.3        154.                            D406001100023 
+ 75.        1.3        0.22       154.                            D406001100024 
+ 80.        2.3        0.4        150.                            D406001100025 
+ 85.        3.5        0.5        145.                            D406001100026 
 ENDDATA             12          0                                 D406001100027 
 ENDSUBENT           26          0                                 D406001199999 
-SUBENT        D4060012   20211203                             D133D406001200001 
-BIB                  4          6                                 D406001200002 
+SUBENT        D4060012   20250129                             D145D406001200001 
+BIB                  5          7                                 D406001200002 
 REACTION   (22-TI-50(P,X)17-CL-38,,SIG,,,DERIV)                   D406001200003 
 DECAY-DATA (17-CL-38-G,37.18MIN,DG,1642.4,0.40)                   D406001200004 
-MONITOR    ((MONIT)29-CU-65(P,X)29-CU-64,,SIG)                    D406001200005 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406001200005 
 ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406001200006 
-           contribution determined experimentally and             D406001200007 
-           theoretically, respectively.                           D406001200008 
-ENDBIB               6          0                                 D406001200009 
-NOCOMMON             0          0                                 D406001200010 
-DATA                 4          5                                 D406001200011 
-EN         DATA       DATA-ERR   MONIT                            D406001200012 
-MEV        MICRO-B    MICRO-B    MB                               D406001200013 
-        65.        54.        13.       157.                      D406001200014 
-        70.        27.        21.       154.                      D406001200015 
-        75.        83.        20.       154.                      D406001200016 
-        80.        62.        21.       150.                      D406001200017 
-        85.        51.        21.       145.                      D406001200018 
-ENDDATA              7          0                                 D406001200019 
-ENDSUBENT           18          0                                 D406001299999 
-ENDENTRY            12          0                                 D406099999999 
+            contribution determined experimentally and            D406001200007 
+            theoretically, respectively.                          D406001200008 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 5        D406001200009 
+ENDBIB               7          0                                 D406001200010 
+NOCOMMON             0          0                                 D406001200011 
+DATA                 4          5                                 D406001200012 
+EN         DATA       DATA-ERR   MONIT                            D406001200013 
+MEV        MICRO-B    MICRO-B    MB                               D406001200014 
+ 65.        54.        13.        157.                            D406001200015 
+ 70.        27.        21.        154.                            D406001200016 
+ 75.        83.        20.        154.                            D406001200017 
+ 80.        62.        21.        150.                            D406001200018 
+ 85.        51.        21.        145.                            D406001200019 
+ENDDATA              7          0                                 D406001200020 
+ENDSUBENT           19          0                                 D406001299999 
+SUBENT        D4060013   20250129                             D145D406001300001 
+BIB                  5          6                                 D406001300002 
+REACTION   (22-TI-48(P,2N)23-V-47,,SIG)                           D406001300003 
+DECAY-DATA (23-V-47,31.2MIN,DG,511.,2.)                           D406001300004 
+MONITOR    ((MONIT1)29-CU-63(P,N)30-ZN-63,,SIG)                   D406001300005 
+           ((MONIT2)29-CU-65(P,X)29-CU-64,,SIG)                   D406001300006 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406001300007 
+HISTORY    (20250129T) On. Moved from 002.                        D406001300008 
+ENDBIB               6          0                                 D406001300009 
+NOCOMMON             0          0                                 D406001300010 
+DATA                 5         10                                 D406001300011 
+EN         DATA       DATA-ERR   MONIT1     MONIT2                D406001300012 
+MEV        MB         MB         MB         MB                    D406001300013 
+ 20.        114.        6.0       63.7                            D406001300014 
+ 25.        131.       14.0                  430.                 D406001300015 
+ 30.        118.       14.0                  410.                 D406001300016 
+ 35.         56.1       7.0                  250.                 D406001300017 
+ 40.         40.3       5.0                  245.                 D406001300018 
+ 45.         38.0       4.8                  195.                 D406001300019 
+ 50.         31.5       4.3                  190.                 D406001300020 
+ 55.         20.0       2.5                  165.                 D406001300021 
+ 60.         20.4       2.6                  165.                 D406001300022 
+ 85.          9.2       1.2                  145.                 D406001300023 
+ENDDATA             12          0                                 D406001300024 
+ENDSUBENT           23          0                                 D406001399999 
+SUBENT        D4060014   20250129                             D145D406001400001 
+BIB                  5          5                                 D406001400002 
+REACTION   (22-TI-48(P,X)21-SC-46,,SIG)                           D406001400003 
+DECAY-DATA (21-SC-46-G,83.8D,DG,889.,1.0)                         D406001400004 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406001400005 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406001400006 
+HISTORY    (20250129T) On. Moved from 003.                        D406001400007 
+ENDBIB               5          0                                 D406001400008 
+NOCOMMON             0          0                                 D406001400009 
+DATA                 4         12                                 D406001400010 
+EN         DATA       DATA-ERR   MONIT                            D406001400011 
+MEV        MB         MB         MB                               D406001400012 
+ 30.         5.1       0.4        410.                            D406001400013 
+ 35.        28.3       1.9        250.                            D406001400014 
+ 40.        60.2       3.8        245.                            D406001400015 
+ 45.        77.3       3.9        195.                            D406001400016 
+ 50.        74.7       4.0        190.                            D406001400017 
+ 55.        53.0       3.1        165.                            D406001400018 
+ 60.        51.2       2.7        165.                            D406001400019 
+ 65.        43.6       2.8        157.                            D406001400020 
+ 70.        43.7       2.7        154.                            D406001400021 
+ 75.        52.6       3.4        154.                            D406001400022 
+ 80.        47.3       3.0        150.                            D406001400023 
+ 85.        47.3                  145.                            D406001400024 
+ENDDATA             14          0                                 D406001400025 
+ENDSUBENT           24          0                                 D406001499999 
+SUBENT        D4060015   20250129                             D145D406001500001 
+BIB                  5          5                                 D406001500002 
+REACTION   (22-TI-48(P,X)21-SC-43,,SIG)                           D406001500003 
+DECAY-DATA (21-SC-43,3.89HR,DG,372.,.22)                          D406001500004 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406001500005 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406001500006 
+HISTORY    (20250129T) On. Moved from 004.                        D406001500007 
+ENDBIB               5          0                                 D406001500008 
+NOCOMMON             0          0                                 D406001500009 
+DATA                 4         11                                 D406001500010 
+EN         DATA       DATA-ERR   MONIT                            D406001500011 
+MEV        MB         MB         MB                               D406001500012 
+ 35.         3.3       0.2        250.                            D406001500013 
+ 40.        11.6       0.6        245.                            D406001500014 
+ 45.        16.5       1.1        195.                            D406001500015 
+ 50.        15.8       0.9        190.                            D406001500016 
+ 55.         9.5       0.6        165.                            D406001500017 
+ 60.         6.7       0.4        165.                            D406001500018 
+ 65.         5.5       0.4        157.                            D406001500019 
+ 70.         5.5       0.3        154.                            D406001500020 
+ 75.         7.4       0.5        154.                            D406001500021 
+ 80.         7.6       0.6        150.                            D406001500022 
+ 85.        10.3       0.6        145.                            D406001500023 
+ENDDATA             13          0                                 D406001500024 
+ENDSUBENT           23          0                                 D406001599999 
+SUBENT        D4060016   20250129                             D145D406001600001 
+BIB                  5          5                                 D406001600002 
+REACTION   (22-TI-48(P,X)19-K-42,,SIG)                            D406001600003 
+DECAY-DATA (19-K-42,12.4HR,DG,1524.7,0.18)                        D406001600004 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406001600005 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406001600006 
+HISTORY    (20250129T) On. Moved from 005.                        D406001600007 
+ENDBIB               5          0                                 D406001600008 
+NOCOMMON             0          0                                 D406001600009 
+DATA                 4         10                                 D406001600010 
+EN         DATA       DATA-ERR   MONIT                            D406001600011 
+MEV        MB         MB         MB                               D406001600012 
+ 40.        0.015      0.010      245.                            D406001600013 
+ 45.        0.09       0.01       195.                            D406001600014 
+ 50.        0.50       0.03       190.                            D406001600015 
+ 55.        1.84       0.09       165.                            D406001600016 
+ 60.        4.57       0.21       165.                            D406001600017 
+ 65.        5.76       0.35       157.                            D406001600018 
+ 70.        6.63       0.36       154.                            D406001600019 
+ 75.        7.69       0.41       154.                            D406001600020 
+ 80.        6.62       0.35       150.                            D406001600021 
+ 85.        6.99       0.31       145.                            D406001600022 
+ENDDATA             12          0                                 D406001600023 
+ENDSUBENT           22          0                                 D406001699999 
+SUBENT        D4060017   20250129                             D145D406001700001 
+BIB                  5          6                                 D406001700002 
+REACTION   (22-TI-48(P,X)17-CL-38,,SIG)                           D406001700003 
+DECAY-DATA (17-CL-38-G,37.18MIN,DG,1642.4,0.40)                   D406001700004 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406001700005 
+            the 1267. Kev line is 100%.                           D406001700006 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 3        D406001700007 
+HISTORY    (20250129T) On. Moved from 006.                        D406001700008 
+ENDBIB               6          0                                 D406001700009 
+NOCOMMON             0          0                                 D406001700010 
+DATA                 4          5                                 D406001700011 
+EN         DATA       DATA-ERR   MONIT                            D406001700012 
+MEV        MB         MB         MB                               D406001700013 
+ 65.        0.017      0.003      157.                            D406001700014 
+ 70.        0.082      0.008      154.                            D406001700015 
+ 75.        0.202      0.015      154.                            D406001700016 
+ 80.        0.307      0.025      150.                            D406001700017 
+ 85.        0.380      0.030      145.                            D406001700018 
+ENDDATA              7          0                                 D406001700019 
+ENDSUBENT           18          0                                 D406001799999 
+SUBENT        D4060018   20250129                             D145D406001800001 
+BIB                  6          9                                 D406001800002 
+REACTION   (22-TI-50(P,X)21-SC-47,,SIG,,,DERIV)                   D406001800003 
+DECAY-DATA (21-SC-47,3.41D,DG,159.4,0.73)                         D406001800004 
+MONITOR    ((MONIT1)29-CU-63(P,N)30-ZN-63,,SIG)                   D406001800005 
+           ((MONIT2)29-CU-65(P,X)29-CU-64,,SIG)                   D406001800006 
+ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406001800007 
+            contribution determined experimentally and            D406001800008 
+            theoretically, respectively.                          D406001800009 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 4        D406001800010 
+HISTORY    (20250129T) On. Moved from 008.                        D406001800011 
+ENDBIB               9          0                                 D406001800012 
+NOCOMMON             0          0                                 D406001800013 
+DATA                 5         15                                 D406001800014 
+EN         DATA       DATA-ERR   MONIT1     MONIT2                D406001800015 
+MEV        MB         MB         MB         MB                    D406001800016 
+ 15.         5.2       0.4        330.                            D406001800017 
+ 20.        18.6       1.6         63.7                           D406001800018 
+ 25.        23.9       2.6                  430.                  D406001800019 
+ 30.         8.8       1.8                  410.                  D406001800020 
+ 35.         3.5       1.3                  250.                  D406001800021 
+ 40.         4.4       1.3                  245.                  D406001800022 
+ 45.        10.0       1.5                  195.                  D406001800023 
+ 50.        21.2       2.8                  190.                  D406001800024 
+ 55.        37.1       2.6                  165.                  D406001800025 
+ 60.        45.1       4.3                  165.                  D406001800026 
+ 65.        48.1       4.6                  157.                  D406001800027 
+ 70.        44.4       4.3                  154.                  D406001800028 
+ 75.        48.2       4.2                  154.                  D406001800029 
+ 80.        41.1       3.6                  150.                  D406001800030 
+ 85.        36.4       3.9                  145.                  D406001800031 
+ENDDATA             17          0                                 D406001800032 
+ENDSUBENT           31          0                                 D406001899999 
+SUBENT        D4060019   20250129                             D145D406001900001 
+BIB                  7         14                                 D406001900002 
+REACTION   (22-TI-50(P,X)21-SC-44,,SIG,,,DERIV)                   D406001900003 
+DECAY-DATA (21-SC-44-M,2.44D,DG,270.9,0.986)                      D406001900004 
+           (21-SC-44-G,3.92HR,DG,1157.0,0.99)                     D406001900005 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406001900006 
+ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406001900007 
+            contribution determined experimentally and            D406001900008 
+            theoretically, respectively.                          D406001900009 
+COMMENT    By compiler (2025-01-29):                              D406001900010 
+            The compiler assumes the author reports the sum of    D406001900011 
+           the ground state and metastable state production       D406001900012 
+           cross sections since the 44mSc decay data are reported D406001900013 
+           without its production cross section in the article.   D406001900014 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 5        D406001900015 
+HISTORY    (20250129T) On. Moved from 009.                        D406001900016 
+ENDBIB              14          0                                 D406001900017 
+NOCOMMON             0          0                                 D406001900018 
+DATA                 4         10                                 D406001900019 
+EN         DATA       DATA-ERR   MONIT                            D406001900020 
+MEV        MB         MB         MB                               D406001900021 
+ 40.         0.28      3.9        245.                            D406001900022 
+ 45.         4.2       3.8        195.                            D406001900023 
+ 50.         9.3       4.0        190.                            D406001900024 
+ 55.        19.9       3.6        165.                            D406001900025 
+ 60.        25.2       3.6        165.                            D406001900026 
+ 65.        22.9       4.2        157.                            D406001900027 
+ 70.        17.7       4.1        154.                            D406001900028 
+ 75.        14.3       3.9        154.                            D406001900029 
+ 80.        10.1       3.7        150.                            D406001900030 
+ 85.         5.7       3.8        145.                            D406001900031 
+ENDDATA             12          0                                 D406001900032 
+ENDSUBENT           31          0                                 D406001999999 
+SUBENT        D4060020   20250129                             D145D406002000001 
+BIB                  6          8                                 D406002000002 
+REACTION   (22-TI-50(P,X)19-K-43,,SIG,,,DERIV)                    D406002000003 
+DECAY-DATA (19-K-43,22.42HR,DG,617.,0.782)                        D406002000004 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406002000005 
+ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406002000006 
+            contribution determined experimentally and            D406002000007 
+            theoretically, respectively.                          D406002000008 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 5        D406002000009 
+HISTORY    (20250129T) On. Moved from 010.                        D406002000010 
+ENDBIB               8          0                                 D406002000011 
+NOCOMMON             0          0                                 D406002000012 
+DATA                 4         12                                 D406002000013 
+EN         DATA       DATA-ERR   MONIT                            D406002000014 
+MEV        MB         MB         MB                               D406002000015 
+ 30.        0.11       0.01       410.                            D406002000016 
+ 35.        0.40       0.02       250.                            D406002000017 
+ 40.        0.88       0.07       245.                            D406002000018 
+ 45.        0.58       0.06       195.                            D406002000019 
+ 50.        0.37       0.07       190.                            D406002000020 
+ 55.        0.09       0.06       165.                            D406002000021 
+ 60.        0.33       0.10       165.                            D406002000022 
+ 65.        0.76       0.10       157.                            D406002000023 
+ 70.        1.36       0.14       154.                            D406002000024 
+ 75.        2.50       0.22       154.                            D406002000025 
+ 80.        3.37       0.27       150.                            D406002000026 
+ 85.        3.58       0.29       154.                            D406002000027 
+ENDDATA             14          0                                 D406002000028 
+ENDSUBENT           27          0                                 D406002099999 
+SUBENT        D4060021   20250129                             D145D406002100001 
+BIB                  6         10                                 D406002100002 
+REACTION   (22-TI-50(P,X)17-CL-39,,SIG,,,DERIV)                   D406002100003 
+DECAY-DATA (17-CL-39,56.2MIN,DG,250.3)                            D406002100004 
+           Abundance of 0.866% relative to the 1267 keV gamma     D406002100005 
+            line of 100% assumed.                                 D406002100006 
+MONITOR    (29-CU-65(P,X)29-CU-64,,SIG)                           D406002100007 
+ANALYSIS   Subtraction of 48Ti and 49,47,46Ti target nuclide      D406002100008 
+            contribution determined experimentally and            D406002100009 
+            theoretically, respectively.                          D406002100010 
+STATUS     (TABLE,,E.Gadioli+,J,ZP/A,301,289,1981) Table 5        D406002100011 
+HISTORY    (20250129T) On. Moved from 011.                        D406002100012 
+ENDBIB              10          0                                 D406002100013 
+NOCOMMON             0          0                                 D406002100014 
+DATA                 4          8                                 D406002100015 
+EN         DATA       DATA-ERR   MONIT                            D406002100016 
+MEV        MICRO-B    MICRO-B    MB                               D406002100017 
+ 50.         3.2       0.3        190.                            D406002100018 
+ 55.         5.9       0.09       165.                            D406002100019 
+ 60.        12.0       0.21       165.                            D406002100020 
+ 65.        16.0       0.35       157.                            D406002100021 
+ 70.         4.0       0.36       154.                            D406002100022 
+ 75.        13.0       0.41       154.                            D406002100023 
+ 80.        16.0       0.35       150.                            D406002100024 
+ 85.        26.0       0.31       145.                            D406002100025 
+ENDDATA             10          0                                 D406002100026 
+ENDSUBENT           25          0                                 D406002199999 
+ENDENTRY            21          0                                 D406099999999 
