@@ -1,22 +1,28 @@
-ENTRY            A0278   20220418                             A100A0278  0    1 
-SUBENT        A0278001   20220418                             A100A0278  1    1 
-BIB                 10         13                                 A0278  1    2 
+ENTRY            A0278   20231223                             A105A0278  0    1 
+SUBENT        A0278001   20231223                             A105A0278  1    1 
+BIB                 11         19                                 A0278  1    2 
 TITLE      Excitation of isomers in radiation capture reaction    A0278  1    3 
            of protons with energies up to 9 MeV by 106-, 108-Cd   A0278  1    4 
 AUTHOR     (E.A.Skakun,V.G.Batij)                                 A0278  1    5 
 INSTITUTE  (4UKRKFT)                                              A0278  1    6 
 REFERENCE  (C,91MINSK,,273,1991)                                  A0278  1    7 
-FACILITY   (LINAC,4UKRKFT)                                        A0278  1    8 
-METHOD     (ACTIV)                                                A0278  1    9 
-DETECTOR   (GELI) 3 keV resolution (Eg=1332 keV)                  A0278  1   10 
-STATUS     (TABLE) Tbl. on p.273 of 91MINSK,,247,1991             A0278  1   11 
-ERR-ANALYS (DATA-ERR) No information about source of uncertainty  A0278  1   12 
-HISTORY    (20020307C)                                            A0278  1   13 
-           (20020314U) Last checking has been done.               A0278  1   14 
-           (20220418A) SD: Corrections in all Subents.            A0278  1   15 
-ENDBIB              13          0                                 A0278  1   16 
-NOCOMMON             0          0                                 A0278  1   17 
-ENDSUBENT           16          0                                 A0278  199999 
+REL-REF    (N,,E.A.Skakun+,J,ZP/A,344,13,1992) - Level density    A0278  1    8 
+           parameters calculated using isomeric ratios of         A0278  1    9 
+           77,80-Se, 87-Sr, 89-Y, 94,95-Mo, 99,100,101,102,104-Ru,A0278  1   10 
+           104,110-Pd, 106,108,111-Cd, 116,118,120,122-Sn         A0278  1   11 
+           presented on figs.                                     A0278  1   12 
+FACILITY   (LINAC,4UKRKFT)                                        A0278  1   13 
+METHOD     (ACTIV)                                                A0278  1   14 
+DETECTOR   (GELI) 3 keV resolution (Eg=1332 keV)                  A0278  1   15 
+STATUS     (TABLE,,E.A.Skakun+,C,91MINSK,,273,1991) Tbl. on p.273 A0278  1   16 
+ERR-ANALYS (DATA-ERR) No information about source of uncertainty  A0278  1   17 
+HISTORY    (20020307C)                                            A0278  1   18 
+           (20020314U) Last checking has been done.               A0278  1   19 
+           (20220418A) SD: Corrections in all Subents.            A0278  1   20 
+           (20231223A) SD: Correction im Subents 003, 005.        A0278  1   21 
+ENDBIB              19          0                                 A0278  1   22 
+NOCOMMON             0          0                                 A0278  1   23 
+ENDSUBENT           22          0                                 A0278  199999 
 SUBENT        A0278002   20220418                             A100A0278  2    1 
 BIB                  2          3                                 A0278  2    2 
 REACTION   (48-CD-106(P,G)49-IN-107,,SIG)                         A0278  2    3 
@@ -35,22 +41,25 @@ MEV        MB         MB                                          A0278  2   10
         9.0        4.4        0.8                                 A0278  2   16 
 ENDDATA              8          0                                 A0278  2   17 
 ENDSUBENT           16          0                                 A0278  299999 
-SUBENT        A0278003   20220418                             A100A0278  3    1 
-BIB                  3          3                                 A0278  3    2 
-REACTION   (48-CD-106(P,G)49-IN-107-M/T,,SIG/RAT)                 A0278  3    3 
-COMMENT    -By authors: Spin of isomer state is 1/2-              A0278  3    4 
-HISTORY    (20220418A) SD: SF9=EXP deleted from REACTION code.    A0278  3    5 
-ENDBIB               3          0                                 A0278  3    6 
-NOCOMMON             0          0                                 A0278  3    7 
-DATA                 3          4                                 A0278  3    8 
-EN         DATA       DATA-ERR                                    A0278  3    9 
-MEV        NO-DIM     NO-DIM                                      A0278  3   10 
-        6.0       0.73       0.16                                 A0278  3   11 
-        7.0       0.73       0.16                                 A0278  3   12 
-        8.0       0.74       0.16                                 A0278  3   13 
-        9.0       0.81       0.13                                 A0278  3   14 
-ENDDATA              6          0                                 A0278  3   15 
-ENDSUBENT           14          0                                 A0278  399999 
+SUBENT        A0278003   20231223                             A105A0278  3    1 
+BIB                  3          6                                 A0278  3    2 
+REACTION   (48-CD-106(P,G)49-IN-107-G/T,,SIG/RAT)                 A0278  3    3 
+COMMENT     Approximately the same data presented on fig.5 of     A0278  3    4 
+            Z.Phys.A344,p.13 (see REL-REF).                       A0278  3    5 
+HISTORY    (20220418A) SD: SF9=EXP deleted from REACTION code.    A0278  3    6 
+           (20231223A) SD: SF4=In-107m/t -> In-107g/t in          A0278  3    7 
+           REACTION code. COMMENT deleted (not applicable).       A0278  3    8 
+ENDBIB               6          0                                 A0278  3    9 
+NOCOMMON             0          0                                 A0278  3   10 
+DATA                 3          4                                 A0278  3   11 
+EN         DATA       DATA-ERR                                    A0278  3   12 
+MEV        NO-DIM     NO-DIM                                      A0278  3   13 
+        6.0       0.73       0.16                                 A0278  3   14 
+        7.0       0.73       0.16                                 A0278  3   15 
+        8.0       0.74       0.16                                 A0278  3   16 
+        9.0       0.81       0.13                                 A0278  3   17 
+ENDDATA              6          0                                 A0278  3   18 
+ENDSUBENT           17          0                                 A0278  399999 
 SUBENT        A0278004   20220418                             A100A0278  4    1 
 BIB                  2          3                                 A0278  4    2 
 REACTION   (48-CD-108(P,G)49-IN-109,,SIG)                         A0278  4    3 
@@ -69,22 +78,25 @@ MEV        MB         MB                                          A0278  4   10
         9.0       16.2        0.6                                 A0278  4   16 
 ENDDATA              8          0                                 A0278  4   17 
 ENDSUBENT           16          0                                 A0278  499999 
-SUBENT        A0278005   20220418                             A100A0278  5    1 
-BIB                  3          3                                 A0278  5    2 
-REACTION   (48-CD-108(P,G)49-IN-109-M/T,,SIG/RAT)                 A0278  5    3 
-COMMENT    -By Authors: Spin of isomer state is 1/2-              A0278  5    4 
-HISTORY    (20220418A) SD: SF9=EXP deleted from REACTION code.    A0278  5    5 
-ENDBIB               3          0                                 A0278  5    6 
-NOCOMMON             0          0                                 A0278  5    7 
-DATA                 3          6                                 A0278  5    8 
-EN         DATA       DATA-ERR                                    A0278  5    9 
-MEV        NO-DIM     NO-DIM                                      A0278  5   10 
-        4.0       0.70       0.07                                 A0278  5   11 
-        5.0       0.72       0.05                                 A0278  5   12 
-        6.0       0.74       0.05                                 A0278  5   13 
-        7.0       0.79       0.05                                 A0278  5   14 
-        8.0       0.77       0.05                                 A0278  5   15 
-        9.0       0.81       0.07                                 A0278  5   16 
-ENDDATA              8          0                                 A0278  5   17 
-ENDSUBENT           16          0                                 A0278  599999 
+SUBENT        A0278005   20231223                             A105A0278  5    1 
+BIB                  3          6                                 A0278  5    2 
+REACTION   (48-CD-108(P,G)49-IN-109-G/T,,SIG/RAT)                 A0278  5    3 
+COMMENT     Approximately the same data presented on fig.5 of     A0278  5    4 
+            Z.Phys.A344,p.13 (see REL-REF).                       A0278  5    5 
+HISTORY    (20220418A) SD: SF9=EXP deleted from REACTION code.    A0278  5    6 
+           (20231223A) SD: SF4=In-109m/t -> In-109g/t in          A0278  5    7 
+           REACTION code. COMMENT deleted (not applicable).       A0278  5    8 
+ENDBIB               6          0                                 A0278  5    9 
+NOCOMMON             0          0                                 A0278  5   10 
+DATA                 3          6                                 A0278  5   11 
+EN         DATA       DATA-ERR                                    A0278  5   12 
+MEV        NO-DIM     NO-DIM                                      A0278  5   13 
+        4.0       0.70       0.07                                 A0278  5   14 
+        5.0       0.72       0.05                                 A0278  5   15 
+        6.0       0.74       0.05                                 A0278  5   16 
+        7.0       0.79       0.05                                 A0278  5   17 
+        8.0       0.77       0.05                                 A0278  5   18 
+        9.0       0.81       0.07                                 A0278  5   19 
+ENDDATA              8          0                                 A0278  5   20 
+ENDSUBENT           19          0                                 A0278  599999 
 ENDENTRY             5          0                                 A027899999999 
