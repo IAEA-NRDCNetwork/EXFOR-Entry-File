@@ -1,73 +1,113 @@
-ENTRY            12327   19860603                             00001232700000001 
-SUBENT        12327001   19860603                             00001232700100001 
-BIB                  9         12                                 1232700100002 
-INSTITUTE  (1USAKAP)                                              1232700100003 
-REFERENCE  (J,NSE,3,758,58)                                       1232700100004 
-AUTHOR     (E.GAERTTNER,M.JONES,D.MCMILLAN,J.SAMPSON,T.SNYDER)    1232700100005 
-TITLE      SUBCADMIUM IN-PILE ETAS AND ABSORPTION CROSS SECTIONS  1232700100006 
-           OF U233, PU239 AND PU241.                              1232700100007 
-INC-SOURCE (REAC) U235-GRAPHITE REACTOR, TTR.                     1232700100008 
-INC-SPECT  SUBCADMIUM REACTOR SPECTRUM.                           1232700100009 
-METHOD     (REAC)                                                 1232700100010 
-STATUS     (SCSRS)                                                1232700100011 
-HISTORY    (760804T) TRANSLATED FROM SCISRS                       1232700100012 
-           (841005A) CONVERTED TO REACTION FORMALISM              1232700100013 
-           (860603A) BIB UPDATE.                                  1232700100014 
-ENDBIB              12          0                                 1232700100015 
-NOCOMMON             0          0                                 1232700100016 
-ENDSUBENT           15          0                                 1232700199999 
-SUBENT        12327002   19860603                             00001232700200001 
-BIB                  1          3                                 1232700200002 
-REACTION  1((92-U-233(N,ABS),,ETA,,MXW)/                          1232700200003 
-           (92-U-235(N,ABS),,ETA,,MXW))                           1232700200004 
-          2(92-U-233(N,ABS),,ETA,,MXW)                            1232700200005 
-ENDBIB               3          0                                 1232700200006 
-NOCOMMON             0          0                                 1232700200007 
-DATA                 5          1                                 1232700200008 
-EN-DUMMY   DATA      1DATA-ERR  1DATA      2DATA-ERR  2           1232700200009 
-MEV        NO-DIM     PER-CENT   NO-DIM     NO-DIM                1232700200010 
- 2.53   -08 1.078  +00    1.2     2.231      0.034                1232700200011 
-ENDDATA              3          0                                 1232700200012 
-ENDSUBENT           11          0                                 1232700299999 
-SUBENT        12327003   19860603                             00001232700300001 
-BIB                  4          5                                 1232700300002 
-REACTION   (94-PU-239(N,ABS),,ETA)                                1232700300003 
-STATUS     (DEP,12327004) FROM MEASURED RATIO TO U-235 IN THERMAL 1232700300004 
-                          SPECTRUM                                1232700300005 
-MONITOR    (92-U-235(N,ABS),,ETA)                                 1232700300006 
-HISTORY    (860603A) DATA UNITS CORRECTED.                        1232700300007 
-ENDBIB               5          0                                 1232700300008 
-NOCOMMON             0          0                                 1232700300009 
-DATA                 5          1                                 1232700300010 
-EN         DATA       DATA-ERR   MONIT      MONIT-ERR             1232700300011 
-MEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM                1232700300012 
- 2.53   -08 2.025  +00 2.4    -02 2.07       0.02                 1232700300013 
-ENDDATA              3          0                                 1232700300014 
-ENDSUBENT           13          0                                 1232700399999 
-SUBENT        12327004   19860603                             00001232700400001 
-BIB                  1          3                                 1232700400002 
-REACTION  1((94-PU-239(N,ABS),,ETA,,MXW)/                         1232700400003 
-           (92-U-235(N,ABS),,ETA,,MXW))                           1232700400004 
-          2(94-PU-239(N,ABS),,ETA,,MXW)                           1232700400005 
-ENDBIB               3          0                                 1232700400006 
-NOCOMMON             0          0                                 1232700400007 
-DATA                 5          1                                 1232700400008 
-EN-DUMMY   DATA      1DATA-ERR  1DATA      2DATA-ERR  2           1232700400009 
-MEV        NO-DIM     PER-CENT   NO-DIM     NO-DIM                1232700400010 
- 2.53   -08 9.31   -01     .70    1.927      0.024                1232700400011 
-ENDDATA              3          0                                 1232700400012 
-ENDSUBENT           11          0                                 1232700499999 
-SUBENT        12327005   19860603                             00001232700500001 
-BIB                  1          3                                 1232700500002 
-REACTION  1((94-PU-241(N,ABS),,ETA,,MXW)/                         1232700500003 
-           (92-U-235(N,ABS),,ETA,,MXW))                           1232700500004 
-          2(94-PU-241(N,ABS),,ETA,,MXW)                           1232700500005 
-ENDBIB               3          0                                 1232700500006 
-NOCOMMON             0          0                                 1232700500007 
-DATA                 5          1                                 1232700500008 
-EN-DUMMY   DATA      1DATA-ERR  1DATA      2DATA-ERR  2           1232700500009 
-MEV        NO-DIM     PER-CENT   NO-DIM     NO-DIM                1232700500010 
- 2.53   -08 1.069  +00    2.9     2.213      0.070                1232700500011 
-ENDDATA              3          0                                 1232700500012 
-ENDSUBENT           11          0                                 1232700599999 
+ENTRY            12327   20230707                             150712327000    1 
+SUBENT        12327001   20230707                             150712327001    1 
+BIB                 10         21                                 12327001    2 
+INSTITUTE  (1USAKAP)                                              12327001    3 
+REFERENCE  (J,NSE,3,758,1958)                                     12327001    4 
+           #doi:10.13182/NSE58-A25509                             12327001    5 
+AUTHOR     (E.Gaerttner,M.Jones,D.McMillan,J.Sampson,T.Snyder)    12327001    6 
+TITLE      Subcadmium in-pile etas and absorption cross sections  12327001    7 
+           of U233, Pu239 and Pu241                               12327001    8 
+FACILITY   (REAC,1USAKAP) U235-graphite reactor, TTR.             12327001    9 
+INC-SPECT  Subcadmium reactor spectrum.                           12327001   10 
+METHOD     (REAC)                                                 12327001   11 
+SAMPLE     Samples of U and Pu were deposited on ceramic disks,   12327001   12 
+           1.96 inches in diam. and 0.035 inches thick.           12327001   13 
+ERR-ANALYS (DATA-ERR) Indicated errors do not include:            12327001   14 
+           - Suppression of the 0.3 eV resonance in the Pu        12327001   15 
+           isotopes due to the flux dip effect, and               12327001   16 
+           - variation of self-shielding in the fission material  12327001   17 
+HISTORY    (19760804T) Translated from SCISRS                     12327001   18 
+           (19841005A) Converted to reaction formalism            12327001   19 
+           (19860603A) BIB update.                                12327001   20 
+           (20230705A) OS. Data units and STATUS corrected,       12327001   21 
+            added SAMPLE, ERR-ANALYS, converted to lower and upper12327001   22 
+            case                                                  12327001   23 
+ENDBIB              21          0                                 12327001   24 
+NOCOMMON             0          0                                 12327001   25 
+ENDSUBENT           24          0                                 1232700199999 
+SUBENT        12327002   20230707                             150712327002    1 
+BIB                  4         11                                 12327002    2 
+REACTION  1((92-U-233(N,ABS),,ETA,,MXW)/                          12327002    3 
+           (92-U-235(N,ABS),,ETA,,MXW))                           12327002    4 
+          2(92-U-233(N,ABS),,ETA,,MXW)                            12327002    5 
+SAMPLE     Composition in no.of atoms/cm2 (x 10**19):             12327002    6 
+           U233 sample:  U-233   4.37                             12327002    7 
+                         U-234   0.030                            12327002    8 
+                         U-238   0.017                            12327002    9 
+                         U-235   0.004                            12327002   10 
+           U-235 sample: U-235   3.68                             12327002   11 
+STATUS     (TABLE,,E.Gaerttner+,J,NSE,3,758,1958) Table IV        12327002   12 
+HISTORY    (20230705A) ETA units changed to PRT/REAC              12327002   13 
+ENDBIB              11          0                                 12327002   14 
+NOCOMMON             0          0                                 12327002   15 
+DATA                 5          1                                 12327002   16 
+EN-DUMMY   DATA      1DATA-ERR  1DATA      2DATA-ERR  2           12327002   17 
+MEV        NO-DIM     PER-CENT   PRT/REAC   PRT/REAC              12327002   18 
+ 2.53   -08 1.078  +00    1.2     2.231      0.034                12327002   19 
+ENDDATA              3          0                                 12327002   20 
+ENDSUBENT           19          0                                 1232700299999 
+SUBENT        12327003   20230707                             150712327003    1 
+BIB                  5         13                                 12327003    2 
+REACTION   (94-PU-239(N,ABS),,ETA)                                12327003    3 
+SAMPLE     Composition in no.of atoms/cm2 (x 10**19):             12327003    4 
+           Pu239 sample:  Pu-239   2.104                          12327003    5 
+                          Pu-240   0.117                          12327003    6 
+                          Pu-241   0.0085                         12327003    7 
+                          Pu-242   0.0023                         12327003    8 
+           U-235 sample:  U-235    3.68                           12327003    9 
+STATUS     (DEP,12327004) From measured ratio to U-235 in thermal 12327003   10 
+                          spectrum                                12327003   11 
+           (TABLE,,E.Gaerttner+,J,NSE,3,758,1958) Text on p.768   12327003   12 
+MONITOR    (92-U-235(N,ABS),,ETA)                                 12327003   13 
+HISTORY    (19860603A) Data units corrected.                      12327003   14 
+           (20230705A) ETA units changed to PRT/REAC              12327003   15 
+ENDBIB              13          0                                 12327003   16 
+NOCOMMON             0          0                                 12327003   17 
+DATA                 5          1                                 12327003   18 
+EN         DATA       DATA-ERR   MONIT      MONIT-ERR             12327003   19 
+MEV        PRT/REAC   PRT/REAC   PRT/REAC   PRT/REAC              12327003   20 
+ 2.53   -08 2.025  +00 2.4    -02 2.07       0.02                 12327003   21 
+ENDDATA              3          0                                 12327003   22 
+ENDSUBENT           21          0                                 1232700399999 
+SUBENT        12327004   20230707                             150712327004    1 
+BIB                  4         11                                 12327004    2 
+REACTION  1((94-PU-239(N,ABS),,ETA,,MXW)/                         12327004    3 
+           (92-U-235(N,ABS),,ETA,,MXW))                           12327004    4 
+          2(94-PU-239(N,ABS),,ETA,,MXW)                           12327004    5 
+SAMPLE     Composition in no.of atoms/cm2 (x 10**19):             12327004    6 
+           Pu239 sample:  Pu-239   2.104                          12327004    7 
+                          Pu-240   0.117                          12327004    8 
+                          Pu-241   0.0085                         12327004    9 
+                          Pu-242   0.0023                         12327004   10 
+           U-235 sample:  U-235    3.68                           12327004   11 
+STATUS     (TABLE,,E.Gaerttner+,J,NSE,3,758,1958) Table IV        12327004   12 
+HISTORY    (20230705A) ETA units changed to PRT/REAC              12327004   13 
+ENDBIB              11          0                                 12327004   14 
+NOCOMMON             0          0                                 12327004   15 
+DATA                 5          1                                 12327004   16 
+EN-DUMMY   DATA      1DATA-ERR  1DATA      2DATA-ERR  2           12327004   17 
+MEV        NO-DIM     PER-CENT   PRT/REAC   PRT/REAC              12327004   18 
+ 2.53   -08 9.31   -01     .70    1.927      0.024                12327004   19 
+ENDDATA              3          0                                 12327004   20 
+ENDSUBENT           19          0                                 1232700499999 
+SUBENT        12327005   20230707                             150712327005    1 
+BIB                  4         10                                 12327005    2 
+REACTION  1((94-PU-241(N,ABS),,ETA,,MXW)/                         12327005    3 
+           (92-U-235(N,ABS),,ETA,,MXW))                           12327005    4 
+          2(94-PU-241(N,ABS),,ETA,,MXW)                           12327005    5 
+SAMPLE     Composition in no.of atoms/cm2 (x 10**19):             12327005    6 
+           Pu239 sample:  Pu-241   0.8807                         12327005    7 
+                          Pu-239   0.4207                         12327005    8 
+                          Pu-240   0.02808                        12327005    9 
+           U-235 sample:  U-235    3.68                           12327005   10 
+STATUS     (TABLE,,E.Gaerttner+,J,NSE,3,758,1958) Table IV        12327005   11 
+HISTORY    (20230705A) ETA units changed to PRT/REAC              12327005   12 
+ENDBIB              10          0                                 12327005   13 
+NOCOMMON             0          0                                 12327005   14 
+DATA                 5          1                                 12327005   15 
+EN-DUMMY   DATA      1DATA-ERR  1DATA      2DATA-ERR  2           12327005   16 
+MEV        NO-DIM     PER-CENT   PRT/REAC   PRT/REAC              12327005   17 
+ 2.53   -08 1.069  +00    2.9     2.213      0.070                12327005   18 
+ENDDATA              3          0                                 12327005   19 
+ENDSUBENT           18          0                                 1232700599999 
 ENDENTRY             5          0                                 1232799999999 
