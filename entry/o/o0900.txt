@@ -1,6 +1,6 @@
-ENTRY            O0900   20200113                             O073O0900  0    1 
-SUBENT        O0900001   20200113                             O073O0900  1    1 
-BIB                 12         62                                 O0900  1    2 
+ENTRY            O0900   20220112                             O087O0900  0    1 
+SUBENT        O0900001   20220112                             O087O0900  1    1 
+BIB                 12         63                                 O0900  1    2 
 TITLE      Experimental and computer simulation study of the      O0900  1    3 
            radionuclides produced in thin 209-Bi targets by       O0900  1    4 
            130 MeV and 1.5 GeV proton - induced reactions         O0900  1    5 
@@ -63,9 +63,10 @@ HISTORY    (20010828C)                                            O0900  1   48
            data were presented in 019 (049), 023 (043), 031 (043) O0900  1   62 
            and 042 (052)). MONITOR moved to Subents 003-107.      O0900  1   63 
            (20200113A) SD: Correction in Subent 057.              O0900  1   64 
-ENDBIB              62          0                                 O0900  1   65 
-NOCOMMON             0          0                                 O0900  1   66 
-ENDSUBENT           65          0                                 O0900  199999 
+           (20220112A) SD: Corrections in Subents 032, 035.       O0900  1   65 
+ENDBIB              63          0                                 O0900  1   66 
+NOCOMMON             0          0                                 O0900  1   67 
+ENDSUBENT           66          0                                 O0900  199999 
 SUBENT        O0900002   20160826                             O058O0900  2    1 
 BIB                  4          6                                 O0900  2    2 
 REACTION  S(13-AL-27(P,X)11-NA-24,CUM,SIG)                        O0900  2    3 
@@ -743,9 +744,9 @@ MB                                                                O0900 31   22
     0.9                                                           O0900 31   26 
 ENDDATA              8          0                                 O0900 31   27 
 ENDSUBENT           26          0                                 O0900 3199999 
-SUBENT        O0900032   20160826                             O058O0900 32    1 
-BIB                  8         12                                 O0900 32    2 
-REACTION   (83-BI-209(P,X)79-AU-196,M+,SIG)  Shielded             O0900 32    3 
+SUBENT        O0900032   20220112                             O087O0900 32    1 
+BIB                  8         13                                 O0900 32    2 
+REACTION   (83-BI-209(P,X)79-AU-196,,SIG)  Shielded               O0900 32    3 
 DECAY-DATA (79-AU-196-G,6.183D)                                   O0900 32    4 
 MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,CUM,SIG)                 O0900 32    5 
 MONIT-REF  (O0900002,Yu.E.Titarenko+,J,NIM/A,414,73,1998) For     O0900 32    6 
@@ -754,17 +755,18 @@ ERR-ANALYS (DATA-ERR) The uncertainty in nuclear data on gamma    O0900 32    8
            yields and on monitor reaction cross sections provide  O0900 32    9 
            the major contribution to the total error.             O0900 32   10 
 COMMENT    - By compiler - isomer transition = 100%               O0900 32   11 
-STATUS     (TABLE) Table 5 from NIM/A,414,73,1998                 O0900 32   12 
+STATUS     (TABLE) Table 5 from Nucl.Instr.Meth.,A414(1998)73     O0900 32   12 
 HISTORY    (20160826U) SD: STATUS added. SF5=IND deleted from     O0900 32   13 
            REACTION code.                                         O0900 32   14 
-ENDBIB              12          0                                 O0900 32   15 
-NOCOMMON             0          0                                 O0900 32   16 
-DATA                 5          1                                 O0900 32   17 
-EN         DATA       DATA-ERR   MONIT      MONIT-ERR             O0900 32   18 
-MEV        MB         MB         MB         MB                    O0900 32   19 
-      1500.       0.80       0.13     11.9      0.9               O0900 32   20 
-ENDDATA              3          0                                 O0900 32   21 
-ENDSUBENT           20          0                                 O0900 3299999 
+           (20220112A) SD: SF5=M+ delted from REACTION code.      O0900 32   15 
+ENDBIB              13          0                                 O0900 32   16 
+NOCOMMON             0          0                                 O0900 32   17 
+DATA                 5          1                                 O0900 32   18 
+EN         DATA       DATA-ERR   MONIT      MONIT-ERR             O0900 32   19 
+MEV        MB         MB         MB         MB                    O0900 32   20 
+      1500.       0.80       0.13     11.9      0.9               O0900 32   21 
+ENDDATA              3          0                                 O0900 32   22 
+ENDSUBENT           21          0                                 O0900 3299999 
 SUBENT        O0900033   20160826                             O058O0900 33    1 
 BIB                  8         11                                 O0900 33    2 
 REACTION   (83-BI-209(P,X)79-AU-194,IND/M+,SIG)                   O0900 33    3 
@@ -808,9 +810,9 @@ MEV        MB         MB         MB         MB                    O0900 34   19
       1500.       0.96       0.22     11.9      0.9               O0900 34   20 
 ENDDATA              3          0                                 O0900 34   21 
 ENDSUBENT           20          0                                 O0900 3499999 
-SUBENT        O0900035   20160826                             O058O0900 35    1 
-BIB                  8         12                                 O0900 35    2 
-REACTION   (83-BI-209(P,X)35-BR-82,M+,SIG)                        O0900 35    3 
+SUBENT        O0900035   20220112                             O087O0900 35    1 
+BIB                  8         13                                 O0900 35    2 
+REACTION   (83-BI-209(P,X)35-BR-82-G,M+,SIG)                      O0900 35    3 
 MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,CUM,SIG)                 O0900 35    4 
 MONIT-REF  (O0900002,Yu.E.Titarenko+,J,NIM/A,414,73,1998) For     O0900 35    5 
                                                        1500 MeV.  O0900 35    6 
@@ -819,17 +821,18 @@ ERR-ANALYS (DATA-ERR) The uncertainty in nuclear data on gamma    O0900 35    8
            yields and on monitor reaction cross sections provide  O0900 35    9 
            the major contribution to the total error.             O0900 35   10 
 COMMENT    - By compiler - isomer transition = 97.6%              O0900 35   11 
-STATUS     (TABLE) Table 5 from NIM/A,414,73,1998                 O0900 35   12 
+STATUS     (TABLE) Table 5 from Nucl.Instr.Meth.,A414(1998)73     O0900 35   12 
 HISTORY    (20160826U) SD: STATUS added. SF5=IND deleted from     O0900 35   13 
            REACTION code (Shieled nuclide).                       O0900 35   14 
-ENDBIB              12          0                                 O0900 35   15 
-NOCOMMON             0          0                                 O0900 35   16 
-DATA                 5          1                                 O0900 35   17 
-EN         DATA       DATA-ERR   MONIT      MONIT-ERR             O0900 35   18 
-MEV        MB         MB         MB         MB                    O0900 35   19 
-      1500.        3.2        0.4     11.9      0.9               O0900 35   20 
-ENDDATA              3          0                                 O0900 35   21 
-ENDSUBENT           20          0                                 O0900 3599999 
+           (20220112A) SD: SF4=Br-82 -> Br-82g in REACTION code.  O0900 35   15 
+ENDBIB              13          0                                 O0900 35   16 
+NOCOMMON             0          0                                 O0900 35   17 
+DATA                 5          1                                 O0900 35   18 
+EN         DATA       DATA-ERR   MONIT      MONIT-ERR             O0900 35   19 
+MEV        MB         MB         MB         MB                    O0900 35   20 
+      1500.        3.2        0.4     11.9      0.9               O0900 35   21 
+ENDDATA              3          0                                 O0900 35   22 
+ENDSUBENT           21          0                                 O0900 3599999 
 SUBENT        O0900036   20160826                             O058O0900 36    1 
 BIB                  9         14                                 O0900 36    2 
 REACTION   (83-BI-209(P,X)27-CO-60,IND,SIG)                       O0900 36    3 

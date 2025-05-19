@@ -1,6 +1,6 @@
-ENTRY            O0845   20170406                             O061O0845  0    1 
-SUBENT        O0845001   20170406                             O061O0845  1    1 
-BIB                 16         66                                 O0845  1    2 
+ENTRY            O0845   20220111                             O087O0845  0    1 
+SUBENT        O0845001   20220111                             O087O0845  1    1 
+BIB                 16         64                                 O0845  1    2 
 TITLE      Thin-target excitation functions, cross-sections and   O0845  1    3 
            optimized thick-target yields for                      O0845  1    4 
             nat-Mo(p,xn)94g,95m,95g,96(m+g)Tc nuclear reactions   O0845  1    5 
@@ -10,7 +10,7 @@ TITLE      Thin-target excitation functions, cross-sections and   O0845  1    3
 AUTHOR     (M.Bonardi, C.Birattari, F.Groppi, E.Sabbioni)         O0845  1    9 
 REFERENCE  (J,ARI,57,617,2002)                                    O0845  1   10 
 REL-REF    (M,B0038001,C.Birattari+,J,NP/A,166,605,1971)          O0845  1   11 
-           The "single  target" activation technique at different O0845  1   12 
+           The "single target" activation technique at different  O0845  1   12 
            proton energies.                                       O0845  1   13 
 INSTITUTE  (2ITYMIL) Radiochemistry laboratory.                   O0845  1   14 
            (2ZZZISP) Institute for health and consumer protection,O0845  1   15 
@@ -19,65 +19,63 @@ SAMPLE     High purity metallic Mo foils, the thickness uniformityO0845  1   16
             +/-1.4% mass thickness - measured by accurate         O0845  1   18 
            weighting.                                             O0845  1   19 
 MONITOR    (6-C-12(P,X)6-C-11,,SIG)                               O0845  1   20 
-DETECTOR   (GELI)                                                 O0845  1   21 
-           (HPGE)                                                 O0845  1   22 
-ANALYSIS   (AREA)                                                 O0845  1   23 
-           (DECAY) The decay of the different radionuclides has   O0845  1   24 
-           been followed for not less than three half-lives (1    O0845  1   25 
-           year for the longer half-life radionuclides) and the   O0845  1   26 
-           times of measurement were chosen for each radionuclide O0845  1   27 
-           so that the statistical error on the photo-peak area   O0845  1   28 
-           was always of the order of less than 0.1-1%.           O0845  1   29 
-FACILITY   (ISOCY,2ITYMIL) AVF cyclotron.                         O0845  1   30 
-           The AVF cyclotron was a negative ions (H-) machine,    O0845  1   31 
-           with a thin Al stripping foil extraction system.       O0845  1   32 
-METHOD     (EXTB) A beam current of about 100 Na and an integratedO0845  1   33 
-           charge varying from 200 to 400 mCoulomb.               O0845  1   34 
-           (BCINT) A long shaped Faraday cup. The beam intensity  O0845  1   35 
-           was checked by monitor reaction also, obtaining        O0845  1   36 
-           similar results within the 2%.                         O0845  1   37 
-           (SITA)                                                 O0845  1   38 
-           (ACTIV)                                                O0845  1   39 
-           (GSPEC)                                                O0845  1   40 
-ERR-ANALYS (ERR-S,0.1,1.) The uncertainty of counting statistics. O0845  1   41 
-           (ERR-1) The uncertainty of target thickness.           O0845  1   42 
-           (ERR-2) The uncertainty of efficiency calibration      O0845  1   43 
-           (ERR-3,1.,2.) The uncertainty of integrated charge     O0845  1   44 
-           (ERR-T) Overall error.  The cumulative statistical     O0845  1   45 
-           errors on each thin-target yield data due to errors on O0845  1   46 
-           photo-peak areas, decay constants, target thickness,   O0845  1   47 
-           integrated charge and detector efficiency, were        O0845  1   48 
-           smaller than a few percent.                            O0845  1   49 
-           Systematic errors related to both stopping power       O0845  1   50 
-           calculations and absolute gamma-emission intensities   O0845  1   51 
-           were not considered.                                   O0845  1   52 
-           (EN-ERR) Includes energy losses in target and energy   O0845  1   53 
-           spread in beam.                                        O0845  1   54 
-CORRECTION Cases requiring radioactive decay equilibrium          O0845  1   55 
-           considerations (A=95 and 96) were corrected  using  theO0845  1   56 
-           equations of the radioactive chains.                   O0845  1   57 
-ADD-RES    (TTY-C)                                                O0845  1   58 
-           Parameters of polynomials fittings and correlation     O0845  1   59 
-           factors for thin-target yields for the Tc radionuclidesO0845  1   60 
-STATUS     (TABLE) Tbl.7 of ARI,57,617,2002                       O0845  1   61 
-HISTORY    (20040204C)                                            O0845  1   62 
-           (20040212U) Last checking has been done.               O0845  1   63 
-           (20151203A) SD: DECAY-DATA corrected in Subent 005.    O0845  1   64 
-           SF5=IND (no mother nuclide) deleted from REACTION code;O0845  1   65 
-           MISC -> DATA and second REACTION code was added in     O0845  1   66 
-           Subents 002-005. ERR-ANALYS update.                    O0845  1   67 
-           (20170406A) SD: REACTION corrected in Subents 002,003. O0845  1   68 
-ENDBIB              66          0                                 O0845  1   69 
-COMMON               2          3                                 O0845  1   70 
-ERR-1      ERR-2                                                  O0845  1   71 
-PER-CENT   PER-CENT                                               O0845  1   72 
-        1.5        1.5                                            O0845  1   73 
-ENDCOMMON            3          0                                 O0845  1   74 
-ENDSUBENT           73          0                                 O0845  199999 
-SUBENT        O0845002   20151204                             O056O0845  2    1 
-BIB                  5         10                                 O0845  2    2 
+DETECTOR   (GELI,HPGE)                                            O0845  1   21 
+ANALYSIS   (AREA)                                                 O0845  1   22 
+           (DECAY) The decay of the different radionuclides has   O0845  1   23 
+           been followed for not less than three half-lives (1    O0845  1   24 
+           year for the longer half-life radionuclides) and the   O0845  1   25 
+           times of measurement were chosen for each radionuclide O0845  1   26 
+           so that the statistical error on the photo-peak area   O0845  1   27 
+           was always of the order of less than 0.1-1%.           O0845  1   28 
+FACILITY   (ISOCY,2ITYMIL) AVF cyclotron.                         O0845  1   29 
+           The AVF cyclotron was a negative ions (H-) machine,    O0845  1   30 
+           with a thin Al stripping foil extraction system.       O0845  1   31 
+METHOD     (EXTB) A beam current of about 100 Na and an integratedO0845  1   32 
+           charge varying from 200 to 400 mCoulomb.               O0845  1   33 
+           (BCINT) A long shaped Faraday cup. The beam intensity  O0845  1   34 
+           was checked by monitor reaction also, obtaining        O0845  1   35 
+           similar results within the 2%.                         O0845  1   36 
+           (SITA,ACTIV,GSPEC)                                     O0845  1   37 
+ERR-ANALYS (ERR-S,0.1,1.) The uncertainty of counting statistics  O0845  1   38 
+           (ERR-1) The uncertainty of target thickness            O0845  1   39 
+           (ERR-2) The uncertainty of efficiency calibration      O0845  1   40 
+           (ERR-3,1.,2.) The uncertainty of integrated charge     O0845  1   41 
+           (ERR-T) Overall error. The cumulative statistical      O0845  1   42 
+           errors on each thin-target yield data due to errors on O0845  1   43 
+           photo-peak areas, decay constants, target thickness,   O0845  1   44 
+           integrated charge and detector efficiency, were        O0845  1   45 
+           smaller than a few percent.                            O0845  1   46 
+           Systematic errors related to both stopping power       O0845  1   47 
+           calculations and absolute gamma-emission intensities   O0845  1   48 
+           were not considered.                                   O0845  1   49 
+           (EN-ERR) Includes energy losses in target and energy   O0845  1   50 
+           spread in beam.                                        O0845  1   51 
+CORRECTION Cases requiring radioactive decay equilibrium          O0845  1   52 
+           considerations (A=95 and 96) were corrected using the  O0845  1   53 
+           equations of the radioactive chains.                   O0845  1   54 
+ADD-RES    (TTY-C)                                                O0845  1   55 
+           Parameters of polynomials fittings and correlation     O0845  1   56 
+           factors for thin-target yields for the Tc radionuclidesO0845  1   57 
+STATUS     (TABLE) Tbl.7,8 from Appl.Rad.Isot.,57(2002)617        O0845  1   58 
+HISTORY    (20040204C)                                            O0845  1   59 
+           (20040212U) Last checking has been done.               O0845  1   60 
+           (20151203A) SD: DECAY-DATA corrected in Subent 005.    O0845  1   61 
+           SF5=IND (no mother nuclide) deleted from REACTION code;O0845  1   62 
+           MISC -> DATA and second REACTION code was added in     O0845  1   63 
+           Subents 002-005. ERR-ANALYS update.                    O0845  1   64 
+           (20170406A) SD: REACTION corrected in Subents 002,003. O0845  1   65 
+           (20220111A) SD: Corrections in Subents 002,003.        O0845  1   66 
+ENDBIB              64          0                                 O0845  1   67 
+COMMON               2          3                                 O0845  1   68 
+ERR-1      ERR-2                                                  O0845  1   69 
+PER-CENT   PER-CENT                                               O0845  1   70 
+        1.5        1.5                                            O0845  1   71 
+ENDCOMMON            3          0                                 O0845  1   72 
+ENDSUBENT           71          0                                 O0845  199999 
+SUBENT        O0845002   20220111                             O087O0845  2    1 
+BIB                  5         12                                 O0845  2    2 
 REACTION  1(42-MO-0(P,X)43-TC-94-G,,SIG)                          O0845  2    3 
-          2(42-MO-0(P,X)43-TC-94-G,,TTY,,TM)                      O0845  2    4 
+          2(42-MO-0(P,X)43-TC-94-G,,TTY/DEN,,PHY)                 O0845  2    4 
 COMMENT    - By compiler. Isomer transition <0.1%.                O0845  2    5 
 DECAY-DATA (43-TC-94-G,4.883HR,DG,871.097,0.999,                  O0845  2    6 
                                DG,702.639,0.996,                  O0845  2    7 
@@ -86,34 +84,36 @@ ADD-RES    (DECAY) Half-life has been measured by authors         O0845  2    9
            T1/2=4.89 +/- 0.05 hours.                              O0845  2   10 
 HISTORY    (20151204A) SD: second REACTION code was added;        O0845  2   11 
             MISC -> DATA.                                         O0845  2   12 
-ENDBIB              10          0                                 O0845  2   13 
-NOCOMMON             0          0                                 O0845  2   14 
-DATA                 6         17                                 O0845  2   15 
-EN         EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     2O0845  2   16 
-MEV        MEV        MB         MB         MBQ/C/MEV  MBQ/C/MEV  O0845  2   17 
-        4.9        1.5        4.2       0.15      174.9        6.3O0845  2   18 
-        7.5        1.1        9.2        0.4      504.8       18.7O0845  2   19 
-        9.9        0.8       13.6        0.5      908.7       30.9O0845  2   20 
-       12.5        0.5       31.5         1.      2399.       79.2O0845  2   21 
-       15.1        0.3       57.8        1.9     4982.7      164.4O0845  2   22 
-       17.4        0.2       66.7        2.2     6338.2      209.2O0845  2   23 
-        20.        0.2       72.8        2.4     7632.9      251.9O0845  2   24 
-       22.6        0.2        76.        2.6     8707.1       296.O0845  2   25 
-        25.        0.2       78.1        2.5      627.5      308.1O0845  2   26 
-       27.5        0.2       80.8        2.7    10687.7      352.7O0845  2   27 
-        30.        0.2       79.5        2.6     11217.      370.2O0845  2   28 
-       32.5        0.2       79.6        2.6    11926.5      393.6O0845  2   29 
-       34.4        0.2        79.        2.5    12344.9       395.O0845  2   30 
-       37.2        0.2       72.1        2.4    11955.2      394.5O0845  2   31 
-       39.8        0.2       60.6         2.    10560.1      348.5O0845  2   32 
-       41.6        0.2       58.4         2.    10521.3      357.7O0845  2   33 
-       43.7        0.2       54.6        1.7    10208.7      326.7O0845  2   34 
-ENDDATA             19          0                                 O0845  2   35 
-ENDSUBENT           34          0                                 O0845  299999 
-SUBENT        O0845003   20151204                             O056O0845  3    1 
-BIB                  4          9                                 O0845  3    2 
+           (20220111A) SD: SF6=TTY -> TTY/DEN; SF8=TM -> PHY in   O0845  2   13 
+           REACTION (2) code.                                     O0845  2   14 
+ENDBIB              12          0                                 O0845  2   15 
+NOCOMMON             0          0                                 O0845  2   16 
+DATA                 6         17                                 O0845  2   17 
+EN         EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     2O0845  2   18 
+MEV        MEV        MB         MB         MBQ/C/MEV  MBQ/C/MEV  O0845  2   19 
+        4.9        1.5        4.2       0.15      174.9        6.3O0845  2   20 
+        7.5        1.1        9.2        0.4      504.8       18.7O0845  2   21 
+        9.9        0.8       13.6        0.5      908.7       30.9O0845  2   22 
+       12.5        0.5       31.5         1.     2399.0       79.2O0845  2   23 
+       15.1        0.3       57.8        1.9     4982.7      164.4O0845  2   24 
+       17.4        0.2       66.7        2.2     6338.2      209.2O0845  2   25 
+       20.0        0.2       72.8        2.4     7632.9      251.9O0845  2   26 
+       22.6        0.2        76.        2.6     8707.1      296.0O0845  2   27 
+       25.0        0.2       78.1        2.5      627.5      308.1O0845  2   28 
+       27.5        0.2       80.8        2.7    10687.7      352.7O0845  2   29 
+       30.0        0.2       79.5        2.6    11217.0      370.2O0845  2   30 
+       32.5        0.2       79.6        2.6    11926.5      393.6O0845  2   31 
+       34.4        0.2        79.        2.5    12344.9      395.0O0845  2   32 
+       37.2        0.2       72.1        2.4    11955.2      394.5O0845  2   33 
+       39.8        0.2       60.6         2.    10560.1      348.5O0845  2   34 
+       41.6        0.2       58.4         2.    10521.3      357.7O0845  2   35 
+       43.7        0.2       54.6        1.7    10208.7      326.7O0845  2   36 
+ENDDATA             19          0                                 O0845  2   37 
+ENDSUBENT           36          0                                 O0845  299999 
+SUBENT        O0845003   20220111                             O087O0845  3    1 
+BIB                  4         11                                 O0845  3    2 
 REACTION  1(42-MO-0(P,X)43-TC-95-M,,SIG)                          O0845  3    3 
-          2(42-MO-0(P,X)43-TC-95-M,,TTY,,TM)                      O0845  3    4 
+          2(42-MO-0(P,X)43-TC-95-M,,TTY/DEN,,PHY)                 O0845  3    4 
 DECAY-DATA (43-TC-95-M,61.D,DG,204.114,0.662,                     O0845  3    5 
                             DG,582.062,0.314,                     O0845  3    6 
                             DG,835.126,0.279)                     O0845  3    7 
@@ -121,30 +121,32 @@ ADD-RES    (DECAY) Half-life has been measured by authors.        O0845  3    8
            T1/2=61.3 +/- 0.5 days.                                O0845  3    9 
 HISTORY    (20151204A) SD: second REACTION code was added;        O0845  3   10 
             MISC -> DATA.                                         O0845  3   11 
-ENDBIB               9          0                                 O0845  3   12 
-NOCOMMON             0          0                                 O0845  3   13 
-DATA                 6         17                                 O0845  3   14 
-EN         EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     2O0845  3   15 
-MEV        MEV        MB         MB         MBQ/C/MEV  MBQ/C/MEV  O0845  3   16 
-        4.9        1.5       20.6        0.7       2.84       0.09O0845  3   17 
-        7.5        1.1       29.7         1.       5.44       0.19O0845  3   18 
-        9.9        0.8       34.3        1.1       7.62       0.25O0845  3   19 
-       12.5        0.5       47.5        1.5      12.08       0.39O0845  3   20 
-       15.1        0.3       54.7        1.8      15.72       0.52O0845  3   21 
-       17.4        0.2       52.7        1.7      16.71       0.55O0845  3   22 
-        20.        0.2       48.6        1.6      16.97       0.58O0845  3   23 
-       22.6        0.2       50.2        1.6      19.15       0.61O0845  3   24 
-        25.        0.2       41.9        1.4       17.2       0.57O0845  3   25 
-       27.5        0.2       33.3        1.1      14.67        0.5O0845  3   26 
-        30.        0.2       27.7        0.9      13.01       0.42O0845  3   27 
-       32.5        0.2       27.3        0.9      13.61       0.46O0845  3   28 
-       34.4        0.2        30.         1.      15.62       0.53O0845  3   29 
-       37.2        0.2        32.        1.1      17.66       0.58O0845  3   30 
-       39.8        0.2       30.8         1.      17.88       0.57O0845  3   31 
-       41.6        0.2        30.         1.        18.       0.59O0845  3   32 
-       43.7        0.2       28.4        0.9      17.72       0.58O0845  3   33 
-ENDDATA             19          0                                 O0845  3   34 
-ENDSUBENT           33          0                                 O0845  399999 
+           (20220111A) SD: SF6=TTY -> TTY/DEN; SF8=TM -> PHY in   O0845  3   12 
+           REACTION (2) code.                                     O0845  3   13 
+ENDBIB              11          0                                 O0845  3   14 
+NOCOMMON             0          0                                 O0845  3   15 
+DATA                 6         17                                 O0845  3   16 
+EN         EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     2O0845  3   17 
+MEV        MEV        MB         MB         MBQ/C/MEV  MBQ/C/MEV  O0845  3   18 
+        4.9        1.5       20.6        0.7       2.84       0.09O0845  3   19 
+        7.5        1.1       29.7        1.0       5.44       0.19O0845  3   20 
+        9.9        0.8       34.3        1.1       7.62       0.25O0845  3   21 
+       12.5        0.5       47.5        1.5      12.08       0.39O0845  3   22 
+       15.1        0.3       54.7        1.8      15.72       0.52O0845  3   23 
+       17.4        0.2       52.7        1.7      16.71       0.55O0845  3   24 
+       20.0        0.2       48.6        1.6      16.97       0.58O0845  3   25 
+       22.6        0.2       50.2        1.6      19.15       0.61O0845  3   26 
+       25.0        0.2       41.9        1.4      17.20       0.57O0845  3   27 
+       27.5        0.2       33.3        1.1      14.67       0.50O0845  3   28 
+       30.0        0.2       27.7        0.9      13.01       0.42O0845  3   29 
+       32.5        0.2       27.3        0.9      13.61       0.46O0845  3   30 
+       34.4        0.2       30.0        1.0      15.62       0.53O0845  3   31 
+       37.2        0.2       32.0        1.1      17.66       0.58O0845  3   32 
+       39.8        0.2       30.8        1.0      17.88       0.57O0845  3   33 
+       41.6        0.2       30.0        1.0      18.00       0.59O0845  3   34 
+       43.7        0.2       28.4        0.9      17.72       0.58O0845  3   35 
+ENDDATA             19          0                                 O0845  3   36 
+ENDSUBENT           35          0                                 O0845  399999 
 SUBENT        O0845004   20170406                             O061O0845  4    1 
 BIB                  5         11                                 O0845  4    2 
 REACTION  1(42-MO-0(P,X)43-TC-95-G,M+,SIG)                        O0845  4    3 

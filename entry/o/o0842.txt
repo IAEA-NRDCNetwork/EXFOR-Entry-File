@@ -1,6 +1,6 @@
-ENTRY            O0842   20200113                             O073O0842  0    1 
-SUBENT        O0842001   20200113                             O073O0842  1    1 
-BIB                 12         22                                 O0842  1    2 
+ENTRY            O0842   20220111                             O087O0842  0    1 
+SUBENT        O0842001   20220111                             O087O0842  1    1 
+BIB                 12         23                                 O0842  1    2 
 TITLE      Results of investigation of proton-nuclear reactions   O0842  1    3 
            on radioactive Np-237                                  O0842  1    4 
 AUTHOR     (J.Adam, A.R.Balabekyan, R.Brandt, V.P.Dzhelepov,      O0842  1    5 
@@ -23,9 +23,10 @@ HISTORY    (20001219C)                                            O0842  1   20
            (20131017A) Correction according Memo CP-D/797         O0842  1   22 
            (20200113A) SD: Corrections in Subents 002, 006, 007,  O0842  1   23 
            017, 020,025, 027, 028, 033, 035, 040, 049.            O0842  1   24 
-ENDBIB              22          0                                 O0842  1   25 
-NOCOMMON             0          0                                 O0842  1   26 
-ENDSUBENT           25          0                                 O0842  199999 
+           (20220111A) SD: Corrections in Subent 014.             O0842  1   25 
+ENDBIB              23          0                                 O0842  1   26 
+NOCOMMON             0          0                                 O0842  1   27 
+ENDSUBENT           26          0                                 O0842  199999 
 SUBENT        O0842002   20200113                             O073O0842  2    1 
 BIB                  3          3                                 O0842  2    2 
 REACTION   (93-NP-237(P,X)21-SC-48,,SIG)                          O0842  2    3 
@@ -173,22 +174,20 @@ MEV        MB         MB         MB                               O084201300009
        660.      55.89         6.       10.2                      O084201300010 
 ENDDATA              3          0                                 O084201300011 
 ENDSUBENT           10          0                                 O084201399999 
-SUBENT        O0842014   20131017                             O051O084201400001 
-BIB                  3          6                                 O084201400002 
-REACTION   (93-NP-237(P,X)41-NB-95,M+,SIG)                        O084201400003 
-COMMENT    *By Compiler*. Original text contains "-Nb-95,Cum".    O084201400004 
-           It is a misprint, as cumulative cross section of  Nb-95O084201400005 
-           can not be less than cumulative cross section of Zr-95.O084201400006 
-           Probably "-Nb-95,M+" was obtained.                     O084201400007 
-STATUS     (SPSDD,O0989004)                                       O084201400008 
-ENDBIB               6          0                                 O084201400009 
-NOCOMMON             0          0                                 O084201400010 
-DATA                 4          1                                 O084201400011 
-EN         DATA       DATA-ERR   MONIT                            O084201400012 
-MEV        MB         MB         MB                               O084201400013 
-       660.      21.05         2.       10.2                      O084201400014 
-ENDDATA              3          0                                 O084201400015 
-ENDSUBENT           14          0                                 O084201499999 
+SUBENT        O0842014   20220111                             O087O0842 14    1 
+BIB                  3          4                                 O0842 14    2 
+REACTION   (93-NP-237(P,X)41-NB-95-G,CUM,SIG)                     O0842 14    3 
+STATUS     (SPSDD,O0989004)                                       O0842 14    4 
+HISTORY    (20220111A) SD: SF4=Nb-95 -> Nb-95-G; SF5=M+ -> CUM in O0842 14    5 
+           REACTION code.                                         O0842 14    6 
+ENDBIB               4          0                                 O0842 14    7 
+NOCOMMON             0          0                                 O0842 14    8 
+DATA                 4          1                                 O0842 14    9 
+EN         DATA       DATA-ERR   MONIT                            O0842 14   10 
+MEV        MB         MB         MB                               O0842 14   11 
+       660.      21.05         2.       10.2                      O0842 14   12 
+ENDDATA              3          0                                 O0842 14   13 
+ENDSUBENT           12          0                                 O0842 1499999 
 SUBENT        O0842015   20131017                             O051O084201500001 
 BIB                  2          2                                 O084201500002 
 REACTION   (93-NP-237(P,X)42-MO-99,CUM,SIG)                       O084201500003 

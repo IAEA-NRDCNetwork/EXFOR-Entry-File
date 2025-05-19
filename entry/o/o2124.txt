@@ -1,6 +1,6 @@
-ENTRY            O2124   20150330                             O054O2124  0    1 
-SUBENT        O2124001   20150330                             O054O2124  1    1 
-BIB                 12         25                                 O2124  1    2 
+ENTRY            O2124   20220119                             O087O2124  0    1 
+SUBENT        O2124001   20220119                             O087O2124  1    1 
+BIB                 12         24                                 O2124  1    2 
 TITLE      Measurements of excitation functions of the (d,x)      O2124  1    3 
            reactions on 59Co.                                     O2124  1    4 
 AUTHOR     (R.Bilabel)                                            O2124  1    5 
@@ -15,24 +15,23 @@ SAMPLE     The 59Co target foils were both foil packet (range     O2124  1   10
            absorber alternating with sheets of aluminum           O2124  1   14 
            63.6 mg/cm**2 and 26.8 mg/cm2 were mounted as a        O2124  1   15 
            sandwich.                                              O2124  1   16 
-METHOD     (STTA)                                                 O2124  1   17 
-           (SITA)                                                 O2124  1   18 
-           (BCINT)                                                O2124  1   19 
-MONITOR    (13-AL-27(D,X)11-NA-24,,SIG)                           O2124  1   20 
-DETECTOR   (GELI)  a Ge(Li) detector, 12 cm**3                    O2124  1   21 
-STATUS     (TABLE).TABLE 4 of R,KFK-1171,1970                     O2124  1   22 
-ERR-ANALYS (DATA-ERR).The errors is reported by authors in table  O2124  1   23 
-           (ERR-S,1.,5.).Statistical error                        O2124  1   24 
-HISTORY    (20130519C) S.B.                                       O2124  1   25 
-           (20150330A)- sb-the primary reference J,RCA,15,13,1971 O2124  1   26 
-           was added.                                             O2124  1   27 
-ENDBIB              25          0                                 O2124  1   28 
-COMMON               1          3                                 O2124  1   29 
-DATA-ERR                                                          O2124  1   30 
-PER-CENT                                                          O2124  1   31 
-15.                                                               O2124  1   32 
-ENDCOMMON            3          0                                 O2124  1   33 
-ENDSUBENT           32          0                                 O2124  199999 
+METHOD     (STTA,SITA,BCINT)                                      O2124  1   17 
+MONITOR    (13-AL-27(D,X)11-NA-24,,SIG)                           O2124  1   18 
+DETECTOR   (GELI)  a Ge(Li) detector, 12 cm**3                    O2124  1   19 
+STATUS     (TABLE) Table 4 of R,KFK-1171,1970                     O2124  1   20 
+ERR-ANALYS (DATA-ERR) No information about source of uncertainty  O2124  1   21 
+           (ERR-S,1.,5.) Statistical error                        O2124  1   22 
+HISTORY    (20130519C) S.B.                                       O2124  1   23 
+           (20150330A)- SB-the primary reference RCA,15,13,1971   O2124  1   24 
+           was added.                                             O2124  1   25 
+           (20220119A) SD: Correction in Subent 008.              O2124  1   26 
+ENDBIB              24          0                                 O2124  1   27 
+COMMON               1          3                                 O2124  1   28 
+DATA-ERR                                                          O2124  1   29 
+PER-CENT                                                          O2124  1   30 
+15.                                                               O2124  1   31 
+ENDCOMMON            3          0                                 O2124  1   32 
+ENDSUBENT           31          0                                 O2124  199999 
 SUBENT        O2124002   20130701                             O051O212400200001 
 BIB                  3          4                                 O212400200002 
 REACTION   (27-CO-59(D,X)27-CO-60,,SIG)                           O212400200003 
@@ -254,30 +253,31 @@ MEV        MB         MB                                          O212400700013
 52.0                  28.0                                        O212400700027 
 ENDDATA             16          0                                 O212400700028 
 ENDSUBENT           27          0                                 O212400799999 
-SUBENT        O2124008   20130701                             O051O212400800001 
-BIB                  2          3                                 O212400800002 
-REACTION   (27-CO-59(D,X)28-NI-57,,SIG)                           O212400800003 
-           Targets as foil packet                                 O212400800004 
-DECAY-DATA (28-NI-57,36.HR,DG,1375.,0.86)                         O212400800005 
-ENDBIB               3          0                                 O212400800006 
-NOCOMMON             0          0                                 O212400800007 
-DATA                 2         12                                 O212400800008 
-EN         DATA                                                   O212400800009 
-MEV        MB                                                     O212400800010 
-30.8       0.079                                                  O212400800011 
-32.4       0.313                                                  O212400800012 
-33.8       0.616                                                  O212400800013 
-35.2       0.930                                                  O212400800014 
-37.4       1.74                                                   O212400800015 
-39.4       2.79                                                   O212400800016 
-41.4       3.64                                                   O212400800017 
-43.3       4.64                                                   O212400800018 
-45.3       5.14                                                   O212400800019 
-47.2       5.95                                                   O212400800020 
-49.0       5.93                                                   O212400800021 
-52.0       6.04                                                   O212400800022 
-ENDDATA             14          0                                 O212400800023 
-ENDSUBENT           22          0                                 O212400899999 
+SUBENT        O2124008   20220119                             O087O2124  8    1 
+BIB                  3          4                                 O2124  8    2 
+REACTION   (27-CO-59(D,4N)28-NI-57,,SIG)                          O2124  8    3 
+           Targets as foil packet                                 O2124  8    4 
+DECAY-DATA (28-NI-57,36.HR,DG,1375.,0.86)                         O2124  8    5 
+HISTORY    (20220119A) SD: SF3=X -> 4N in REACTION code.          O2124  8    6 
+ENDBIB               4          0                                 O2124  8    7 
+NOCOMMON             0          0                                 O2124  8    8 
+DATA                 2         12                                 O2124  8    9 
+EN         DATA                                                   O2124  8   10 
+MEV        MB                                                     O2124  8   11 
+30.8       0.079                                                  O2124  8   12 
+32.4       0.313                                                  O2124  8   13 
+33.8       0.616                                                  O2124  8   14 
+35.2       0.930                                                  O2124  8   15 
+37.4       1.74                                                   O2124  8   16 
+39.4       2.79                                                   O2124  8   17 
+41.4       3.64                                                   O2124  8   18 
+43.3       4.64                                                   O2124  8   19 
+45.3       5.14                                                   O2124  8   20 
+47.2       5.95                                                   O2124  8   21 
+49.0       5.93                                                   O2124  8   22 
+52.0       6.04                                                   O2124  8   23 
+ENDDATA             14          0                                 O2124  8   24 
+ENDSUBENT           23          0                                 O2124  899999 
 SUBENT        O2124009   20130701                             O051O212400900001 
 BIB                  2          3                                 O212400900002 
 REACTION   (27-CO-59(D,X)25-MN-54,,SIG)                           O212400900003 
