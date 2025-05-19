@@ -1,0 +1,121 @@
+ENTRY            14842   20241015                             15171484200000001 
+SUBENT        14842001   20241015                             15171484200100001 
+BIB                 12         36                                 1484200100002 
+TITLE      Measurement of the energy-differential 35Cl(n,p0)35S   1484200100003 
+           cross section via the ratio with 6Li(n,alpha)3H        1484200100004 
+AUTHOR     (T.S.Nagel,J.A.Brown,J.C.Batchelder,D.Bleuel,          1484200100005 
+           C.A.Brand,A.Georgiadou,B.L.Goldblum,M.Fratoni,         1484200100006 
+           J.M.Gordon,T.A.Laplace,L.A.Bernstein)                  1484200100007 
+REFERENCE  (J,PR/C,110,034612,2024)                               1484200100008 
+           #doi:10.1103/PhysRevC.110.034612                       1484200100009 
+REL-REF    (R,,M.Paris,W,PARIS,2024) ENDF/B-VIII.1 6Li(n,alpha)3H 1484200100010 
+           cross sections.                                        1484200100011 
+INSTITUTE  (1USAUCX,1USALRL,1USABRK)                              1484200100012 
+FACILITY   (CYCLO,1USABRK) Lawrence Berkeley National Laboratory's1484200100013 
+            (LBNL) 88-Inch Cyclotron.                             1484200100014 
+DETECTOR   (SCIN)                                                 1484200100015 
+SAMPLE     (3-LI-6,ENR=0.95) An active target, Cs2LiYCl6 (CLYC)   1484200100016 
+           scintillator.                                          1484200100017 
+METHOD     (TOF) Two data sets were collected: one at a short     1484200100018 
+           flight path length 4.4 m and one at a long flight      1484200100019 
+           path length 9.4 m. Cross sections were obtained via    1484200100020 
+           ratio with the 6Li(n,alpha) 3H reaction using an       1484200100021 
+           active target experiment.                              1484200100022 
+ANALYSIS   For both data sets the 35Cl(n,p0 ) 35S cross section   1484200100023 
+           was determined relative to the 6Li(n,alpha) 3H         1484200100024 
+           reaction via sigma Cl(E) =                             1484200100025 
+            (Ratm(6Li)*NCl(E)*sigma Li(E))/(Ratm(35Cl)*NLi(e)),   1484200100026 
+           where NCl and NLi are the numbers of observed          1484200100027 
+           35Cl(n,p0) and 6Li(n,alpha)3H reactions for a given    1484200100028 
+           incident neutron energy. Ratm(6Li) and Ratm(35Cl) are  1484200100029 
+           the numbers of 6Li and 35Cl atoms per CLYC molecule,   1484200100030 
+           respectively. 6Li(n,alpha) 3H cross section were taken 1484200100031 
+           from the upcoming ENDF/B-VIII.1 evaluation.            1484200100032 
+ERR-ANALYS (DATA-ERR) The uncertainty was determined via the      1484200100033 
+           standard deviation of the above distribution plus the  1484200100034 
+           quadrature added uncertainties from the Li and Cl      1484200100035 
+           abundances. Propagation of these uncertainties was     1484200100036 
+           performed via Monte Carlo.                             1484200100037 
+HISTORY    (20241015C) BP                                         1484200100038 
+ENDBIB              36          0                                 1484200100039 
+COMMON               1          3                                 1484200100040 
+E-LVL                                                             1484200100041 
+MEV                                                               1484200100042 
+ 0.0                                                              1484200100043 
+ENDCOMMON            3          0                                 1484200100044 
+ENDSUBENT           43          0                                 1484200199999 
+SUBENT        14842002   20241015                             15171484200200001 
+BIB                  4         18                                 1484200200002 
+REACTION   (17-CL-35(N,P)16-S-35,PAR,SIG)                         1484200200003 
+METHOD     (TOF) Flight path length 4.4 m                         1484200200004 
+COVARIANCE  (XY,10,EN,MEV)                                        1484200200005 
+             3.49 3.26 3.05 2.86 2.69 2.53 2.39 2.26 2.14 2.02    1484200200006 
+            (Z,55,COV,MB-SQ)                                      1484200200007 
+            69.63                                                 1484200200008 
+             1.29 22.08                                           1484200200009 
+             0.85  0.56 20.45                                     1484200200010 
+            -1.31  0.00 -0.03 15.49                               1484200200011 
+            -1.05  0.13  0.75  0.22 21.78                         1484200200012 
+            -0.54 -0.46  0.08  0.31 -0.99 14.52                   1484200200013 
+             0.37  0.49 -0.06 -0.15 -1.02 -0.20 13.49             1484200200014 
+             0.43  0.10 -0.15  0.53 -0.17  0.19  0.53  9.67       1484200200015 
+            -1.22 -0.15  0.45  0.22 -0.52  0.39 -0.34  0.75  7.89 1484200200016 
+            -0.66  0.52  0.08 -0.42 -0.87 -0.28  0.13  0.08  0.34 1484200200017 
+             9.37                                                 1484200200018 
+STATUS     (TABLE,,T.S.Nagel+,J,PR/C,110,034612,2024) Tabs. I+III 1484200200019 
+           (COREL,14842003) Data measured with 9.4 m flight path  1484200200020 
+ENDBIB              18          0                                 1484200200021 
+NOCOMMON             0          0                                 1484200200022 
+DATA                 5         10                                 1484200200023 
+EN         +EN-ERR    -EN-ERR    DATA       DATA-ERR              1484200200024 
+MEV        MEV        MEV        MB         MB                    1484200200025 
+ 3.49       0.37       0.32       94.48      8.34                 1484200200026 
+ 3.26       0.33       0.29       79.79      4.70                 1484200200027 
+ 3.05       0.30       0.26       78.64      4.52                 1484200200028 
+ 2.86       0.27       0.24       71.93      3.94                 1484200200029 
+ 2.69       0.25       0.22       77.76      4.67                 1484200200030 
+ 2.53       0.23       0.20       67.07      3.81                 1484200200031 
+ 2.39       0.21       0.18       63.92      3.67                 1484200200032 
+ 2.26       0.19       0.17       58.75      3.11                 1484200200033 
+ 2.14       0.17       0.16       57.62      2.81                 1484200200034 
+ 2.02       0.16       0.14       61.95      3.06                 1484200200035 
+ENDDATA             12          0                                 1484200200036 
+ENDSUBENT           35          0                                 1484200299999 
+SUBENT        14842003   20241015                             15171484200300001 
+BIB                  4         18                                 1484200300002 
+REACTION   (17-CL-35(N,P)16-S-35,PAR,SIG)                         1484200300003 
+METHOD     (TOF) Flight path length 9.4 m                         1484200300004 
+COVARIANCE  (XY,10,EN,MEV)                                        1484200300005 
+             7.46 6.87 6.34 5.87 5.45 5.08 4.74 4.44 4.16 3.91    1484200300006 
+            (Z,55,COV,MB-SQ)                                      1484200300007 
+             1.68                                                 1484200300008 
+            -0.13  3.23                                           1484200300009 
+             0.24 -0.36 39.95                                     1484200300010 
+             0.60 -0.84  1.33 52.30                               1484200300011 
+             0.16  1.03  3.14 -1.15 60.07                         1484200300012 
+            -0.24  0.45 -1.29  1.12  2.59 45.21                   1484200300013 
+             0.34 -0.13  2.61  2.83 -0.87  3.72 64.71             1484200300014 
+            -0.56 -0.29  2.76  1.48  1.94 -2.11  3.01 81.76       1484200300015 
+             0.66 -1.33 -1.22  2.29 -2.02  2.26  0.96  3.08 106.201484200300016 
+            -0.15 -0.17  1.67 -2.52 -1.69 -1.89 -1.59 -0.35  -0.401484200300017 
+            83.01                                                 1484200300018 
+STATUS     (TABLE,,T.S.Nagel+,J,PR/C,110,034612,2024) Tables I+IV 1484200300019 
+           (COREL,14842003) Data measured with 4.4 m flight path  1484200300020 
+ENDBIB              18          0                                 1484200300021 
+NOCOMMON             0          0                                 1484200300022 
+DATA                 5         10                                 1484200300023 
+EN         +EN-ERR    -EN-ERR    DATA       DATA-ERR              1484200300024 
+MEV        MEV        MEV        MB         MB                    1484200300025 
+ 7.46       0.38       0.35        8.94       1.30                1484200300026 
+ 6.87       0.33       0.31       10.72       1.80                1484200300027 
+ 6.34       0.29       0.27       32.70       6.32                1484200300028 
+ 5.87       0.26       0.24       45.29       7.23                1484200300029 
+ 5.45       0.23       0.22       50.06       7.75                1484200300030 
+ 5.08       0.21       0.20       50.82       6.72                1484200300031 
+ 4.74       0.19       0.18       60.76       8.04                1484200300032 
+ 4.44       0.17       0.16       68.32       9.04                1484200300033 
+ 4.16       0.15       0.15       77.85      10.31                1484200300034 
+ 3.91       0.14       0.13       81.77       9.11                1484200300035 
+ENDDATA             12          0                                 1484200300036 
+ENDSUBENT           35          0                                 1484200399999 
+ENDENTRY             3          0                                 1484299999999 
