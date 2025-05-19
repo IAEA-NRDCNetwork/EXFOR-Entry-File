@@ -1,119 +1,82 @@
-ENTRY            M0304   19910607                             0000M030400000001 
-SUBENT        M0304001   19910607                             0000M030400100001 
-BIB                 16         32                                 M030400100002 
-TITLE      ENERGY SPECTRUM OF PHOTONEUTRONS FROM COBALT.          M030400100003 
-AUTHOR     (V.EMMA,C.MILONE,A.RUBBINO,S.JANNELLI,F.MEZZANARES)    M030400100004 
-INSTITUTE  (2ITYCAT,2ITYMES)                                      M030400100005 
-REFERENCE  (J,NC,22,(1),135,61)                                   M030400100006 
-FACILITY   (BETAT,2ITYTUR)                                        M030400100007 
-INC-SOURCE (BRST)                                                 M030400100008 
-SAMPLE     A 68.5 G COBALT TARGET.                                M030400100009 
-METHOD     (REC)                                                  M030400100010 
-PART-DET   (P)                                                    M030400100011 
-DETECTOR   (PLATE). 400 MU THICK ILFORD L-4 EMULSION.             M030400100012 
-            A FOIL OF LEAD SCREENED THE PLATES AGAINST THE LOW    M030400100013 
-           ENERGY PHOTONS.                                        M030400100014 
-CORRECTION  THE CORRECTION FACTOR IS 1/(P1*P2*P3*SIGMA), WHERE    M030400100015 
-           P1 = PROBABILITY THAT A NEUTRON DOES NOT COLLIDE IN    M030400100016 
-           THE CO TARGET, P2 = PROBABILITY THAT A NEUTRON DOES    M030400100017 
-           NOT COLLIDE IN THE LEAD SCREEN, P3 = PROBABILITY THAT  M030400100018 
-           A PROTON TRACK ENDS IN THE EMULSION, SIGMA=CROSS SEC-  M030400100019 
-           TION FOR THE NEUTRON-PROTON COLLISION.                 M030400100020 
-ERR-ANALYS (ERR-S) STATISTICAL ERRORS ARE PRESENTED.              M030400100021 
-ADD-RES    (THEO,COMP). THE EVAPORATION THEORY WAS USED TO FIT    M030400100022 
-           THE EXPERIMENTAL SPECTRUM AND TO CALCULATE THE         M030400100023 
-           EVAPORATION SPECTRA DUE TO THE (GAMMA,2N) PROCESS.     M030400100024 
-REL-REF    (N,M0310001,G.CORTINI+,J,NC,9,85,58)                   M030400100025 
-           (N,,S.CAVALLARO+,J,NC,9,736,58)                        M030400100026 
-           (N,M0312001,V.EMMA+,J,NC,17,365,60)                    M030400100027 
-           (N,M0307001,C.MILONE+,J,NC,13,1035,59)                 M030400100028 
-           DESCRIPTION OF THE CONVENTIONAL METHOD USED TO ANALYZE M030400100029 
-           THE PROTON RECOIL TRACKS.                              M030400100030 
-STATUS     (CURVE).DATA WERE COMPILED IN SCJAD OF SARATOV STATE   M030400100031 
-           UNIVERSITY.                                            M030400100032 
-HISTORY    (881227C)                                              M030400100033 
-           (910202A) CORRECTED BY V.VARLAMOV, V.MCLANE            M030400100034 
-ENDBIB              32          0                                 M030400100035 
-COMMON               2          3                                 M030400100036 
-EN-MAX     ANG                                                    M030400100037 
-MEV        ADEG                                                   M030400100038 
-30.0       90.0                                                   M030400100039 
-ENDCOMMON            3          0                                 M030400100040 
-ENDSUBENT           39          0                                 M030400199999 
-SUBENT        M0304002   19881227                             0000M030400200001 
-BIB                  2          3                                 M030400200002 
-REACTION   (27-CO-59(G,X)0-NN-1,,DA/DE,,BRS/REL)                  M030400200003 
-COMMENT    THE FRACTIONAL CONTRIBUTION OF NEUTRONS EMITTED BY     M030400200004 
-           OTHER PROCESS THAN THE EVAPORATION IS 0.5 FOR E>2 MEV. M030400200005 
-ENDBIB               3          0                                 M030400200006 
-NOCOMMON             0          0                                 M030400200007 
-DATA                 4         19                                 M030400200008 
-E          E-ERR      DATA       ERR-S                            M030400200009 
-MEV        MEV        ARB-UNITS  ARB-UNITS                        M030400200010 
-  1.75       0.25       1.776      0.070                          M030400200011 
-  2.25       0.25       1.338      0.068                          M030400200012 
-  2.75       0.25       1.124      0.058                          M030400200013 
-  3.25       0.25       0.736      0.054                          M030400200014 
-  3.75       0.25       0.436      0.048                          M030400200015 
-  4.25       0.25       0.550      0.044                          M030400200016 
-  4.75       0.25       0.532      0.046                          M030400200017 
-  5.25       0.25       0.478      0.051                          M030400200018 
-  5.75       0.25       0.360      0.039                          M030400200019 
-  6.25       0.25       0.276      0.040                          M030400200020 
-  6.75       0.25       0.180      0.028                          M030400200021 
-  7.25       0.25       0.124      0.027                          M030400200022 
-  7.75       0.25       0.096      0.023                          M030400200023 
-  8.25       0.25       0.126      0.026                          M030400200024 
-  8.75       0.25       0.128      0.024                          M030400200025 
-  9.25       0.25       0.050      0.016                          M030400200026 
-  9.75       0.25       0.040      0.014                          M030400200027 
- 10.50       0.50       0.018      0.006                          M030400200028 
- 11.50       0.50       0.018      0.006                          M030400200029 
-ENDDATA             21          0                                 M030400200030 
-ENDSUBENT           29          0                                 M030400299999 
-SUBENT        M0304003   19881227                             0000M030400300001 
-BIB                  5         15                                 M030400300002 
-REACTION   (27-CO-59(G,X)0-NN-1,PAR,DA/DE,,BRS/REL,EXP)           M030400300003 
-           THE SPECTRUM OF NEUTRONS EMITTED BY EITHER PROCESS     M030400300004 
-           THAN THE EVAPORATION.                                  M030400300005 
-ANALYSIS   THE DATA ARE DIFFERENCE BETWEEN THE EXPERIMENTAL       M030400300006 
-           SPECTRUM AND THE CALCULATED EVAPORATION CURVE FOR      M030400300007 
-           CO-59.                                                 M030400300008 
-ADD-RES    THE EXPECTED PHOTONEUTRON DISTRIBUTION FOR THE GROUND  M030400300009 
-           STATE OF THE RESIDUAL NUCLEUS, WHICH IS EQUAL TO THE   M030400300010 
-           CROSS SECTION OF PHOTOABSORPTION FOR CO-59 MULTIPLIED  M030400300011 
-           BY THE BREMSSTRAHLUNG SPECTRUM, WAS CALCULATED.        M030400300012 
-COMMENT    THE PRESENTED SPECTRUM IS QUITE SIMILAR TO THE         M030400300013 
-           CALCULATED PHOTONEUTRON DISTRIBUTION, WITH A LOW SHIFT M030400300014 
-           THAT COULD INDICATE AN AVERAGE EXCITATION OF THE       M030400300015 
-           RESIDUAL NUCLEUS OF ABOUT 1 MEV.                       M030400300016 
-STATUS     (DEP,M0304002)                                         M030400300017 
-ENDBIB              15          0                                 M030400300018 
-COMMON               1          3                                 M030400300019 
-E-ERR                                                             M030400300020 
-MEV                                                               M030400300021 
-0.5                                                               M030400300022 
-ENDCOMMON            3          0                                 M030400300023 
-DATA                 3         17                                 M030400300024 
-E          DATA       ERR-S                                       M030400300025 
-MEV        ARB-UNITS  ARB-UNITS                                   M030400300026 
-  1.75       0.250      0.072                                     M030400300027 
-  2.25       0.141      0.073                                     M030400300028 
-  2.75       0.198      0.062                                     M030400300029 
-  3.25       0.093      0.067                                     M030400300030 
-  3.75       0.021      0.021                                     M030400300031 
-  4.25       0.242      0.056                                     M030400300032 
-  4.75       0.328      0.056                                     M030400300033 
-  5.25       0.355      0.053                                     M030400300034 
-  5.75       0.290      0.044                                     M030400300035 
-  6.25       0.246      0.042                                     M030400300036 
-  6.75       0.177      0.033                                     M030400300037 
-  7.25       0.142      0.026                                     M030400300038 
-  7.75       0.114      0.024                                     M030400300039 
-  8.25       0.144      0.028                                     M030400300040 
-  8.75       0.144      0.028                                     M030400300041 
-  9.25       0.064      0.016                                     M030400300042 
-  9.75       0.052      0.014                                     M030400300043 
-ENDDATA             19          0                                 M030400300044 
-ENDSUBENT           43          0                                 M030400399999 
+ENTRY            M0304   20160224                             M082M0304  0    1 
+SUBENT        M0304001   20160224                             M082M0304  1    1 
+BIB                 15         34                                 M0304  1    2 
+TITLE      Energy spectrum of photoneutrons from cobalt.          M0304  1    3 
+AUTHOR     (V.Emma,C.Milone,A.Rubbino,S.Jannelli,F.Mezzanares)    M0304  1    4 
+INSTITUTE  (2ITYCAT,2ITYMES)                                      M0304  1    5 
+REFERENCE  (J,NC,22,(1),135,1961)                                 M0304  1    6 
+FACILITY   (BETAT,2ITYTUR)                                        M0304  1    7 
+INC-SOURCE (BRST)                                                 M0304  1    8 
+SAMPLE     A 68.5 g cobalt target.                                M0304  1    9 
+METHOD     (REC)                                                  M0304  1   10 
+PART-DET   (P)                                                    M0304  1   11 
+DETECTOR   (PLATE) 400  mu thick Ilford L-4 emulsion.  A foil of  M0304  1   12 
+            lead screened the  plates  against  the  low  energy  M0304  1   13 
+            photons.                                              M0304  1   14 
+CORRECTION The correction factor is 1/(p1*p2*p3*sigma), where p1  M0304  1   15 
+            = probability that a neutron does not collide in the  M0304  1   16 
+            Co target,  p2 = probability that a neutron does not  M0304  1   17 
+            collide in the lead screen,  p3 = probability that a  M0304  1   18 
+            proton  track  ends in  the  emulsion, sigma = cross  M0304  1   19 
+            section for the neutron-proton collision.             M0304  1   20 
+ERR-ANALYS (ERR-S) Statistical errors are presented.              M0304  1   21 
+ADD-RES    (THEO,COMP) The  evaporation  theory  was used to fit  M0304  1   22 
+            the  experimental  spectrum  and  to  calculate  the  M0304  1   23 
+            evaporation spectra due to the (gamma,2n) process.    M0304  1   24 
+REL-REF    (N,M0310001,G.Cortini+,J,NC,9,85,1958)                 M0304  1   25 
+           (N,,S.Cavallaro+,J,NC,9,736,1958)                      M0304  1   26 
+           (N,M0312001,V.Emma+,J,NC,17,365,1960)                  M0304  1   27 
+           (N,M0307001,C.Milone+,J,NC,13,1035,1959)               M0304  1   28 
+           Description of the conventional method used to analyze M0304  1   29 
+            the proton recoil tracks.                             M0304  1   30 
+HISTORY    (19881227C) Data were compiled at  SCJAD  of  Saratov  M0304  1   31 
+            State University.                                     M0304  1   32 
+           (19910202A) Corrected by V.Varlamov, V.Mclane.         M0304  1   33 
+           (20160224A) Corrected by SD and VV: dates, REACTION,   M0304  1   34 
+            STATUS, lowercase, SUBENT 003 deleted because no      M0304  1   35 
+            data for EXFOR.                                       M0304  1   36 
+ENDBIB              34          0                                 M0304  1   37 
+COMMON               2          3                                 M0304  1   38 
+EN-MAX     ANG                                                    M0304  1   39 
+MEV        ADEG                                                   M0304  1   40 
+30.0       90.0                                                   M0304  1   41 
+ENDCOMMON            3          0                                 M0304  1   42 
+ENDSUBENT           41          0                                 M0304  199999 
+SUBENT        M0304002   20160224                             M082M0304  2    1 
+BIB                  4          8                                 M0304  2    2 
+REACTION   (27-CO-59(G,X)0-NN-1,,DA/DE,,BRA/REL)                  M0304  2    3 
+COMMENT    The fractional  contribution  of  neutrons emitted by  M0304  2    4 
+            other process than the evaporation is 0.5 for E >  2  M0304  2    5 
+            MeV.                                                  M0304  2    6 
+STATUS     (CURVE) Fig.3 from NC,22,(1),135,1961.                 M0304  2    7 
+HISTORY    (20160224A) Corrected by SD and VV: REACTION, BRS ->   M0304  2    8 
+            BRA, STATUS, SUBENT 003 deleted because the source    M0304  2    9 
+            of the numerical data ubknown.                        M0304  2   10 
+ENDBIB               8          0                                 M0304  2   11 
+NOCOMMON             0          0                                 M0304  2   12 
+DATA                 4         19                                 M0304  2   13 
+E          E-ERR      DATA       ERR-S                            M0304  2   14 
+MEV        MEV        ARB-UNITS  ARB-UNITS                        M0304  2   15 
+  1.75       0.25       1.776      0.070                          M0304  2   16 
+  2.25       0.25       1.338      0.068                          M0304  2   17 
+  2.75       0.25       1.124      0.058                          M0304  2   18 
+  3.25       0.25       0.736      0.054                          M0304  2   19 
+  3.75       0.25       0.436      0.048                          M0304  2   20 
+  4.25       0.25       0.550      0.044                          M0304  2   21 
+  4.75       0.25       0.532      0.046                          M0304  2   22 
+  5.25       0.25       0.478      0.051                          M0304  2   23 
+  5.75       0.25       0.360      0.039                          M0304  2   24 
+  6.25       0.25       0.276      0.040                          M0304  2   25 
+  6.75       0.25       0.180      0.028                          M0304  2   26 
+  7.25       0.25       0.124      0.027                          M0304  2   27 
+  7.75       0.25       0.096      0.023                          M0304  2   28 
+  8.25       0.25       0.126      0.026                          M0304  2   29 
+  8.75       0.25       0.128      0.024                          M0304  2   30 
+  9.25       0.25       0.050      0.016                          M0304  2   31 
+  9.75       0.25       0.040      0.014                          M0304  2   32 
+ 10.50       0.50       0.018      0.006                          M0304  2   33 
+ 11.50       0.50       0.018      0.006                          M0304  2   34 
+ENDDATA             21          0                                 M0304  2   35 
+ENDSUBENT           34          0                                 M0304  299999 
+NOSUBENT      M0304003   20160224                             M082M0304  3    1 
 ENDENTRY             3          0                                 M030499999999 
