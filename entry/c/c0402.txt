@@ -1,71 +1,77 @@
-ENTRY            C0402   19970425                             0000C040200000001 
-SUBENT        C0402001   19970425                             0000C040200100001 
-BIB                 11         21                                 C040200100002 
+ENTRY            C0402   20240418                             C236C040200000001 
+SUBENT        C0402001   20240418                             C236C040200100001 
+BIB                 11         23                                 C040200100002 
 INSTITUTE  (1CANMCG)                                              C040200100003 
-REFERENCE  (J,CJC,41,2516,63)                                     C040200100004 
-AUTHOR     (C.L.RAO,L.YAFFE)                                      C040200100005 
-TITLE      Nuclear reactions induced in tantalum by protons of    C040200100006 
-           energy up to 84 MeV                                    C040200100007 
-FACILITY   (SYNCY)                                                C040200100008 
-SAMPLE     Tantalum metal foils, thicknesses 84.3 and 21 mg/cm2.  C040200100009 
-METHOD     (ACTIV,CHSEP,STTA)                                     C040200100010 
-DETECTOR   (NAICR)                                                C040200100011 
-ERR-ANALYS (DATA-ERR) Estimated standard deviation calculated by  C040200100012 
-            taking into account errors in obtaining the           C040200100013 
-            disintegration rates and saturation factors.          C040200100014 
-           No allowance was made for uncertainty in the monitor   C040200100015 
-            cross section values or in the radiation abundance    C040200100016 
-            values used.                                          C040200100017 
-STATUS     Data taken from reference -- Tables I, II and III.     C040200100018 
-HISTORY    (871123C)                                              C040200100019 
-           (881011A) Duplicate energy removed. BIB corrections.   C040200100020 
-                     Data resorted.                               C040200100021 
-           (970425U) BIB update, converted to lower case.         C040200100022 
-           (980310A) Comments added to DECAY-DATA.                C040200100023 
-ENDBIB              21          0                                 C040200100024 
-COMMON               1          3                                 C040200100025 
-EN-ERR                                                            C040200100026 
-MEV                                                               C040200100027 
- 2.                                                               C040200100028 
-ENDCOMMON            3          0                                 C040200100029 
-ENDSUBENT           28          0                                 C040200199999 
-SUBENT        C0402002   19980310                             0000C040200200001 
-BIB                  4         10                                 C040200200002 
+REFERENCE  (J,CJC,41,2516,1963)                                   C040200100004 
+           #doi:10.1139/v63-372                                   C040200100005 
+AUTHOR     (C.L.Rao,L.Yaffe)                                      C040200100006 
+TITLE      Nuclear reactions induced in tantalum by protons of    C040200100007 
+           energy up to 84 MeV                                    C040200100008 
+FACILITY   (SYNCY,1CANMCG)                                        C040200100009 
+SAMPLE     Tantalum metal foils, thicknesses 84.3 and 21 mg/cm2.  C040200100010 
+METHOD     (ACTIV,CHSEP,STTA)                                     C040200100011 
+DETECTOR   (NAICR)                                                C040200100012 
+ERR-ANALYS (DATA-ERR) Estimated standard deviation calculated by  C040200100013 
+            taking into account errors in obtaining the           C040200100014 
+            disintegration rates and saturation factors.          C040200100015 
+           No allowance was made for uncertainty in the monitor   C040200100016 
+            cross section values or in the radiation abundance    C040200100017 
+            values used.                                          C040200100018 
+STATUS     (TABLE,,C.L.Rao+,J,CJC,41,2516,1963) Tables I,II,III   C040200100019 
+HISTORY    (19871123C)                                            C040200100020 
+           (19881011A) Duplicate energy removed. BIB corrections. C040200100021 
+                     Data resorted.                               C040200100022 
+           (19970425U) BIB update, converted to lower case.       C040200100023 
+           (19980310A) Comments added to DECAY-DATA.              C040200100024 
+           (20240417A) OS.                                        C040200100025 
+ENDBIB              23          0                                 C040200100026 
+COMMON               1          3                                 C040200100027 
+EN-ERR                                                            C040200100028 
+MEV                                                               C040200100029 
+ 2.                                                               C040200100030 
+ENDCOMMON            3          0                                 C040200100031 
+ENDSUBENT           30          0                                 C040200199999 
+SUBENT        C0402002   20240418                             C236C040200200001 
+BIB                  5         14                                 C040200200002 
 REACTION   (73-TA-0(P,X)ELEM/MASS,CUM,SIG)                        C040200200003 
-DECAY-DATA ((1.)73-TA-175,11.HR,EC/B+,,0.86)                      C040200200004 
-           ((2.)73-TA-174,1.3HR,AR,511.,0.76)                     C040200200005 
-           ((3.)73-TA-173,3.7HR,EC/B+,,1.1)                       C040200200006 
-            COMMENT BY COMPILER:                                  C040200200007 
-              Branching ratio used probably should be 0.011.      C040200200008 
-           ((4.)72-HF-172,5.YR,EC,,0.61)                          C040200200009 
-           ((5.)72-HF-171,16.HR,EC/B+,,1.0)                       C040200200010 
-MONITOR    ((MONIT)29-CU-65(P,N+P)29-CU-64,,SIG)                  C040200200011 
-MONIT-REF  ((MONIT),J.W.MEADOWS,J,PR,91,885,53)                   C040200200012 
-ENDBIB              10          0                                 C040200200013 
-NOCOMMON             0          0                                 C040200200014 
-DATA                 7          8                                 C040200200015 
-EN         ELEMENT    MASS       DECAY-FLAG DATA       DATA-ERR   C040200200016 
-MONIT                                                             C040200200017 
-MEV        NO-DIM     NO-DIM     NO-DIM     MB         PER-CENT   C040200200018 
-MB                                                                C040200200019 
- 64.        73.        175.       1.         130.       28.       C040200200020 
- 230.                                                             C040200200021 
- 74.        72.        171.       5.           3.5      28.       C040200200022 
- 217.                                                             C040200200023 
- 74.        72.        172.       4.          22.       28.       C040200200024 
- 217.                                                             C040200200025 
- 74.        73.        175.       1.         440.       28.       C040200200026 
+DECAY-DATA ((1.)73-TA-175,11.HR)                                  C040200200004 
+           ((1.)72-HF-175,70.D,DG,340.,0.86)                      C040200200005 
+           ((2.)73-TA-174,1.3HR,AR,511.,0.76)                     C040200200006 
+           ((3.)73-TA-173,3.7HR)                                  C040200200007 
+           ((3.)72-HF-173,24.HR,DG,120.,1.1)                      C040200200008 
+           ((4.)72-HF-172,5.YR)                                   C040200200009 
+           ((4.)71-LU-172-G,6.7D,DG,1090.,0.61)                   C040200200010 
+           ((5.)72-HF-171-G,16.HR)                                C040200200011 
+           ((5.)71-LU-171-G,7.7D,DG,740.,1.)                      C040200200012 
+MONITOR    ((MONIT)29-CU-65(P,X)29-CU-64,,SIG)                    C040200200013 
+MONIT-REF  ((MONIT)B0054006,J.W.Meadows,J,PR,91,885,1953)         C040200200014 
+HISTORY    (20240417A) DECAY-DATA: several radiation fields       C040200200015 
+            deleted, several lines added                          C040200200016 
+ENDBIB              14          0                                 C040200200017 
+NOCOMMON             0          0                                 C040200200018 
+DATA                 7          8                                 C040200200019 
+EN         ELEMENT    MASS       DECAY-FLAG DATA       DATA-ERR   C040200200020 
+MONIT                                                             C040200200021 
+MEV        NO-DIM     NO-DIM     NO-DIM     MB         PER-CENT   C040200200022 
+MB                                                                C040200200023 
+ 64.        73.        175.       1.         130.       28.       C040200200024 
+ 230.                                                             C040200200025 
+ 74.        72.        171.       5.           3.5      28.       C040200200026 
  217.                                                             C040200200027 
- 84.        72.        171.       5.          21.       28.       C040200200028 
- 183.                                                             C040200200029 
- 84.        73.        173.       3.         160.       28.       C040200200030 
- 183.                                                             C040200200031 
- 84.        73.        174.       2.         300.       28.       C040200200032 
+ 74.        72.        172.       4.          22.       28.       C040200200028 
+ 217.                                                             C040200200029 
+ 74.        73.        175.       1.         440.       28.       C040200200030 
+ 217.                                                             C040200200031 
+ 84.        72.        171.       5.          21.       28.       C040200200032 
  183.                                                             C040200200033 
- 84.        73.        175.       1.         290.       28.       C040200200034 
+ 84.        73.        173.       3.         160.       28.       C040200200034 
  183.                                                             C040200200035 
-ENDDATA             20          0                                 C040200200036 
-ENDSUBENT           35          0                                 C040200299999 
+ 84.        73.        174.       2.         300.       28.       C040200200036 
+ 183.                                                             C040200200037 
+ 84.        73.        175.       1.         290.       28.       C040200200038 
+ 183.                                                             C040200200039 
+ENDDATA             20          0                                 C040200200040 
+ENDSUBENT           39          0                                 C040200299999 
 SUBENT        C0402003   19980310                             0000C040200300001 
 BIB                  3         22                                 C040200300002 
 REACTION   (73-TA-0(P,X)ELEM/MASS,,SIG)                           C040200300003 

@@ -1,81 +1,90 @@
-ENTRY            C0326   19961010                             0000C032600000001 
-SUBENT        C0326001   19961010                             0000C032600100001 
-BIB                 14         26                                 C032600100002 
+ENTRY            C0326   20240418                             C236C032600000001 
+SUBENT        C0326001   20240418                             C236C032600100001 
+BIB                 14         29                                 C032600100002 
 INSTITUTE  (1USAPUR)                                              C032600100003 
-REFERENCE  (J,JIN,32,1775,70)                                     C032600100004 
-AUTHOR     (J.A.PANONTIN,N.T.PORILE)                              C032600100005 
-TITLE      Charge distribution and recoil properties in the       C032600100006 
-            fission of 238U by 11.5 GeV protons                   C032600100007 
-FACILITY   (SYNCH,1USAANL) ZGS                                    C032600100008 
-SAMPLE     0.001 in. thick depleted 238U foils, surrounded by     C032600100009 
-            0.001 in. aluminum catcher foils, followed by 0.001   C032600100010 
-            in. monitor foils and wrapped with 0.001 in. aluminum.C032600100011 
-METHOD     (ACTIV,CHSEP,INTB)                                     C032600100012 
-DETECTOR   (NAICR) NaI(Tl) detector.                              C032600100013 
-           (NAICR) Thin NaI crystal.                              C032600100014 
-           (PROPC) Methane-flow proportional counter.             C032600100015 
-MONITOR    ((MONIT)13-AL-27(P,N+3P)11-NA-24,,SIG)                 C032600100016 
-MONIT-REF  ((MONIT),J.B.CUMMING,J,ARN,13,261,63)                  C032600100017 
-CORRECTION Activities corrected for                               C032600100018 
-           .chemical yield,                                       C032600100019 
-           .detector efficiency,                                  C032600100020 
-           .recoil loss,                                          C032600100021 
-           .aliquot, absorber, parent-daughter factors,           C032600100022 
-           .disintegration conversion factors.                    C032600100023 
-ERR-ANALYS (DATA-ERR) Standard deviations                         C032600100024 
-STATUS     Data taken from reference, Tables I and II.            C032600100025 
-HISTORY    (871217C)                                              C032600100026 
-           (961011A) Isomers corrected. REACTION, other BIB       C032600100027 
-                     corrections; converted to lower case.        C032600100028 
-ENDBIB              26          0                                 C032600100029 
-COMMON               2          3                                 C032600100030 
-EN-NRM     MONIT                                                  C032600100031 
-GEV        MB                                                     C032600100032 
- 12.        8.6                                                   C032600100033 
-ENDCOMMON            3          0                                 C032600100034 
-ENDSUBENT           33          0                                 C032600199999 
-SUBENT        C0326002   19961010                             0000C032600200001 
-BIB                  2         15                                 C032600200002 
+REFERENCE  (J,JIN,32,1775,1970)                                   C032600100004 
+           #doi:10.1016/0022-1902(70)80582-6                      C032600100005 
+AUTHOR     (J.A.Panontin,N.T.Porile)                              C032600100006 
+TITLE      Charge distribution and recoil properties in the       C032600100007 
+            fission of 238U by 11.5 GeV protons                   C032600100008 
+FACILITY   (SYNCH,1USAANL) ZGS                                    C032600100009 
+SAMPLE     0.001 in. thick depleted 238U foils, surrounded by     C032600100010 
+            0.001 in. aluminum catcher foils, followed by 0.001   C032600100011 
+            in. monitor foils and wrapped with 0.001 in. aluminum.C032600100012 
+METHOD     (ACTIV,CHSEP,INTB)                                     C032600100013 
+DETECTOR   (NAICR) NaI(Tl) detector.                              C032600100014 
+           (NAICR) Thin NaI crystal.                              C032600100015 
+           (PROPC) Methane-flow proportional counter.             C032600100016 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,,SIG)                    C032600100017 
+MONIT-REF  ((MONIT)B0022003,J.B.Cumming,J,ARN,13,261,1963)        C032600100018 
+CORRECTION Activities corrected for                               C032600100019 
+           .chemical yield,                                       C032600100020 
+           .detector efficiency,                                  C032600100021 
+           .recoil loss,                                          C032600100022 
+           .aliquot, absorber, parent-daughter factors,           C032600100023 
+           .disintegration conversion factors.                    C032600100024 
+ERR-ANALYS (DATA-ERR) Standard deviations                         C032600100025 
+STATUS     (TABLE,,J.A.Panontin+,J,JIN,32,1775,1970) Tables 1+2   C032600100026 
+HISTORY    (19871217C)                                            C032600100027 
+           (19961011A) Isomers corrected. REACTION, other BIB     C032600100028 
+                     corrections; converted to lower case.        C032600100029 
+           (20240415A) OS. DECAY-DATA in sub.2 corrected,         C032600100030 
+            several BIB corrections                               C032600100031 
+ENDBIB              29          0                                 C032600100032 
+COMMON               2          3                                 C032600100033 
+EN-NRM     MONIT                                                  C032600100034 
+GEV        MB                                                     C032600100035 
+ 12.        8.6                                                   C032600100036 
+ENDCOMMON            3          0                                 C032600100037 
+ENDSUBENT           36          0                                 C032600199999 
+SUBENT        C0326002   20240418                             C236C032600200001 
+BIB                  3         21                                 C032600200002 
 REACTION   (92-U-238(P,F)ELEM/MASS,CUM,SIG)                       C032600200003 
-DECAY-DATA ((1.)46-PD-100,3.63D,EC,,1.0)                          C032600200004 
-           ((2.)46-PD-101,8.4HR,EC,,0.968,B+,,0.032)              C032600200005 
-           ((3.)46-PD-103,17.0HR,EC,,1.0)                         C032600200006 
-           ((4.)46-PD-109-G,13.5HR,B-,,1.0)                       C032600200007 
-           ((5.)46-PD-111-G,22.MIN,B-,,1.0)                       C032600200008 
-           ((6.)46-PD-112,21.0HR,B-,,1.0)                         C032600200009 
-           ((7.)47-AG-103-G,1.1HR)                                C032600200010 
-           ((8.)47-AG-105-G,40.0D,EC,,1.0)                        C032600200011 
-           ((9.)47-AG-111-G,7.5D,B-,,1.0)                         C032600200012 
-           ((11.)48-CD-107,6.7HR,EC,,0.997,B+,,0.003)             C032600200013 
-           ((12.)48-CD-115-G,2.3D,B-,,1.0)                        C032600200014 
-           ((13.)49-IN-107-G,32.MIN)                              C032600200015 
-           ((14.)49-IN-111-G,2.81D,EC,,1.0)                       C032600200016 
-           ((15.)50-SN-111,35.0MIN,EC,,0.68,B+,,0.32)             C032600200017 
-ENDBIB              15          0                                 C032600200018 
-COMMON               1          3                                 C032600200019 
-EN                                                                C032600200020 
-GEV                                                               C032600200021 
- 11.5                                                             C032600200022 
-ENDCOMMON            3          0                                 C032600200023 
-DATA                 6         14                                 C032600200024 
-ELEMENT    MASS       ISOMER     DECAY-FLAG DATA       DATA-ERR   C032600200025 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     MB         MB         C032600200026 
- 46.        100.                   1.         0.90      0.02      C032600200027 
- 46.        101.                   2.         2.60      0.05      C032600200028 
- 46.        103.                   3.         5.10      0.02      C032600200029 
- 46.        109.       0.          4.        22.9       0.7       C032600200030 
- 46.        111.       0.          5.        11.3       0.2       C032600200031 
- 46.        112.                   6.        13.8       0.1       C032600200032 
- 47.        103.       0.          7.         1.9       0.1       C032600200033 
- 47.        105.       0.          8.         5.30      0.15      C032600200034 
- 47.        111.       0.          9.        24.3       0.3       C032600200035 
- 48.        107.                  11.         5.3       0.1       C032600200036 
- 48.        115.       0.         12.        15.8       0.2       C032600200037 
- 49.        107.       0.         13.         1.3       0.3       C032600200038 
- 49.        111.       0.         14.         5.84      0.09      C032600200039 
- 50.        111.                  15.         2.45      0.12      C032600200040 
-ENDDATA             16          0                                 C032600200041 
-ENDSUBENT           40          0                                 C032600299999 
+DECAY-DATA ((1.)46-PD-100,3.63D,XR)                               C032600200004 
+           ((2.)46-PD-101,8.4HR)                                  C032600200005 
+           ((2.)45-RH-101-M,,DG,307.)                             C032600200006 
+           ((3.)46-PD-103,17.0HR,XR)                              C032600200007 
+           Compiler's comment (2024-05-05):                       C032600200008 
+            The half-life is now known to be ~17 d.               C032600200009 
+           ((4.)46-PD-109-G,13.5HR,B-,,1.0)                       C032600200010 
+           ((5.)46-PD-111-G,22.MIN,B-,,1.0)                       C032600200011 
+           ((6.)46-PD-112,21.0HR,B-,,1.0)                         C032600200012 
+           ((7.)47-AG-103-G,1.1HR)                                C032600200013 
+           ((8.)47-AG-105-G,40.0D,XR)                             C032600200014 
+           ((9.)47-AG-111-G,7.5D,B-,,1.0)                         C032600200015 
+           ((11.)48-CD-107,6.7HR,XR)                              C032600200016 
+           ((12.)48-CD-115-G,2.3D,B-,,1.0)                        C032600200017 
+           ((13.)49-IN-107-G,32.MIN)                              C032600200018 
+           ((14.)49-IN-111-G,2.81D,DG,247.)                       C032600200019 
+           ((15.)50-SN-111,35.0MIN)                               C032600200020 
+           ((15.)49-IN-111,,DG,247.)                              C032600200021 
+HISTORY    (20240415A) DECAY-DATA: Several radiation fields       C032600200022 
+            replaced, 2 lines added                               C032600200023 
+ENDBIB              21          0                                 C032600200024 
+COMMON               1          3                                 C032600200025 
+EN                                                                C032600200026 
+GEV                                                               C032600200027 
+ 11.5                                                             C032600200028 
+ENDCOMMON            3          0                                 C032600200029 
+DATA                 6         14                                 C032600200030 
+ELEMENT    MASS       ISOMER     DECAY-FLAG DATA       DATA-ERR   C032600200031 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     MB         MB         C032600200032 
+ 46.        100.                   1.         0.90      0.02      C032600200033 
+ 46.        101.                   2.         2.60      0.05      C032600200034 
+ 46.        103.                   3.         5.10      0.02      C032600200035 
+ 46.        109.       0.          4.        22.9       0.7       C032600200036 
+ 46.        111.       0.          5.        11.3       0.2       C032600200037 
+ 46.        112.                   6.        13.8       0.1       C032600200038 
+ 47.        103.       0.          7.         1.9       0.1       C032600200039 
+ 47.        105.       0.          8.         5.30      0.15      C032600200040 
+ 47.        111.       0.          9.        24.3       0.3       C032600200041 
+ 48.        107.                  11.         5.3       0.1       C032600200042 
+ 48.        115.       0.         12.        15.8       0.2       C032600200043 
+ 49.        107.       0.         13.         1.3       0.3       C032600200044 
+ 49.        111.       0.         14.         5.84      0.09      C032600200045 
+ 50.        111.                  15.         2.45      0.12      C032600200046 
+ENDDATA             16          0                                 C032600200047 
+ENDSUBENT           46          0                                 C032600299999 
 SUBENT        C0326003   19961010                             0000C032600300001 
 BIB                  3          7                                 C032600300002 
 REACTION   (92-U-238(P,F)ELEM/MASS,IND,SIG)                       C032600300003 
