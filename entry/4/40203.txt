@@ -1,63 +1,145 @@
-ENTRY            40203   19850329                             00004020300000001 
-SUBENT        40203001   19850329                             00004020300100001 
-BIB                  9         16                                 4020300100002 
-INSTITUTE  (4ZZZDUB)                                              4020300100003 
-REFERENCE  (J,YF,18,(4),724,7310) DATA FROM ARTICLE               4020300100004 
-AUTHOR     (M.DAKOVSKIJ,JU.A.LASAREV,JU.TS.OGANESJAN)             4020300100005 
-TITLE      MULTIPLICITY OF PROMPT NEUTRONS FROM SPONTANEOUS       4020300100006 
-           NUCLEAR FISSION                                        4020300100007 
-METHOD     (COINC) NEUTRON-FISSION FRAGMENTS-COINCIDENCE          4020300100008 
-DETECTOR   (PROPC) 36 PROPORTIONAL HE-3 NEUTRON COUNTERS          4020300100009 
-           (SOLST) SILICON-AURUM DETECTOR FOR FISSION FRAGMENTS   4020300100010 
-PART-DET   (N) NEUTRONS                                           4020300100011 
-           (FF) FISSION FRAGMENTS                                 4020300100012 
-HISTORY    (740310C) COMPILED AT THE CENTRE                       4020300100013 
-           (750210A)  SOME CORRECTIONS IN SUBENTRIES 002 AND 003  4020300100014 
-CORRECTION CORRECTIONS WERE INTRODUCED ON THE SAMPLE ISOTOPE      4020300100015 
-           CONTENTS, THE FRAGMENT DISCRIMINATION THRESHOLD, THE   4020300100016 
-           BACKGROUND QUANTITY AND THE TIME RESOLUTION OF NEUTRON 4020300100017 
-           COUNTERS                                               4020300100018 
-ENDBIB              16          0                                 4020300100019 
-NOCOMMON             0          0                                 4020300100020 
-ENDSUBENT           19          0                                 4020300199999 
-SUBENT        40203002   19850329                             00004020300200001 
-BIB                  5         10                                 4020300200002 
-REACTION   (96-CM-244(0,F),PR,NU)                                 4020300200003 
-SAMPLE     CM-244 SAMPLE WITH 0.2 MKG WEIGHT WITH FISSIONABLE     4020300200004 
-           ADDITION CONTENTS UP TO 0.1 PERCENT                    4020300200005 
-MONITOR    ABSOLUTE MEASUREMENT                                   4020300200006 
-MISC-COL   (MISC1) NU-DISPERSION. SIGMA**2=(NU**2)AVERAGE-(NU-    4020300200007 
-           AVERAGE)**2                                            4020300200008 
-           (MISC2)    ERROR OF QUANTITY MISC1                     4020300200009 
-ERR-ANALYS (DATA-ERR)  QUOTED ERROR CONSISTS OF STATISTICAL ERROR 4020300200010 
-           AND CORRECTION ERRORS. STATISTICAL ERROR IS REDUCED    4020300200011 
-           USING DATA OF WORK YADERN. FISIKA, 17,(4),692,7304.    4020300200012 
-ENDBIB              10          0                                 4020300200013 
-NOCOMMON             0          0                                 4020300200014 
-DATA                 4          1                                 4020300200015 
-DATA       DATA-ERR   MISC1      MISC2                            4020300200016 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM                           4020300200017 
- 2.6900E+00 1.0000E-02 1.2800E+00 2.0000E-02                      4020300200018 
-ENDDATA              3          0                                 4020300200019 
-ENDSUBENT           18          0                                 4020300299999 
-SUBENT        40203003   19850329                             00004020300300001 
-BIB                  5         10                                 4020300300002 
-REACTION   (96-CM-246(0,F),PR,NU)                                 4020300300003 
-SAMPLE     CM-246 SAMPLE WITH 0.8 MKG WEIGHT WITH CM-246 CONTENTS 4020300300004 
-MONITOR    (96-CM-244(0,F),PR,NU)                                 4020300300005 
-            SPONTANEOUS FISSION PROMPT NU-BAR                     4020300300006 
-           FOR CM-244 TAKEN FROM SUBENT 40203002                  4020300300007 
-MISC-COL   (MISC1) NU-DISPERSION. SIGMA**2=(NU**2)AVERAGE-(NU-    4020300300008 
-           AVERAGE)**2                                            4020300300009 
-           (MISC2)    ERROR OF QUANTITY MISC1                     4020300300010 
-ERR-ANALYS QUOTED ERROR CONSISTS OF STATISTICAL ERROR AND         4020300300011 
-           CORRECTION ERRORS                                      4020300300012 
-ENDBIB              10          0                                 4020300300013 
-NOCOMMON             0          0                                 4020300300014 
-DATA                 4          1                                 4020300300015 
-DATA       DATA-ERR   MISC1      MISC2                            4020300300016 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM                           4020300300017 
- 2.9800E+00 3.0000E-02 1.3100E+00 2.0000E-02                      4020300300018 
-ENDDATA              3          0                                 4020300300019 
-ENDSUBENT           18          0                                 4020300399999 
-ENDENTRY             3          0                                 4020399999999 
+ENTRY            40203   20150109                             416740203  0    1 
+SUBENT        40203001   20150109                             416740203  1    1 
+BIB                 10         38                                 40203  1    2 
+INSTITUTE  (4ZZZDUB)                                              40203  1    3 
+REFERENCE  (J,SNP,18,371,1974) Eng.transl.of YF,18,(4),724,1973   40203  1    4 
+           (J,YF,18,(4),724,1973) Data from article               40203  1    5 
+AUTHOR     (M.Dakovskii,Yu.A.Lazarev,Yu.Ts.Oganesyan)             40203  1    6 
+TITLE      Prompt-neutron multiplicity in spontaneous fission.    40203  1    7 
+METHOD     (COINC) Neutron-fission fragments-coincidence.         40203  1    8 
+           Distributions of events in the number of recorded      40203  1    9 
+           neutron was obtained for Cm-246, Cm-244 and            40203  1   10 
+           for background. The total number of fission events were40203  1   11 
+           1.0E+5 for Cm-255, 1.3E+5 for Cm-246.                  40203  1   12 
+           Data for Cm-244 obtained in previous measurement ( see 40203  1   13 
+           REL-REF of M.Dakovskii+, detection efficiency 48.2% )  40203  1   14 
+           were also included in analysis.                        40203  1   15 
+REL-REF    (M,40188001,M.Dakovskii+,J,YF,17,(4),692,1973)         40203  1   16 
+DETECTOR   (PROPC) 36 proportional He-3 neutron counters.         40203  1   17 
+           Detection efficiencies for Cm-244 and Cm-246 were      40203  1   18 
+           assumed equal. Statistics were collected for two values40203  1   19 
+           of neutron-detection efficiency- 39.9% and 44.4%.      40203  1   20 
+           (SIBAR) Silicon-gold surface-barrier detectors for     40203  1   21 
+           fission fragments.                                     40203  1   22 
+PART-DET   (N) Neutrons                                           40203  1   23 
+           (FF) fission fragments                                 40203  1   24 
+CORRECTION Corrections were introduced on sample isotope          40203  1   25 
+           contents, the fragment discrimination threshold(<0.4%),40203  1   26 
+           the background (< 0.003 n/fis), the time resolution of 40203  1   27 
+           neutron counters ( <10%).                              40203  1   28 
+HISTORY    (19740310C) Compiled at the centre                     40203  1   29 
+           (19750210A)  some corrections in subentries 002 and 00340203  1   30 
+           (20150109A) SD: Updated to new date formats,lower case.40203  1   31 
+            Corrections according last EXFOR rules and Dict.      40203  1   32 
+            Ref. on Engl.transl. of YF added. Author's names      40203  1   33 
+            corrected (DAKOVSKIJ -> Dakovskii, LASAREV -> Lazarev,40203  1   34 
+            OGANESJAN -> Oganesyan)                               40203  1   35 
+           (20150219A) M.M. Article was checked, BIB information  40203  1   36 
+           was updated in TITLE,AUTHOR,METHOD,DETECTOR,STATUS,    40203  1   37 
+           MONITOR.                                               40203  1   38 
+           Subent 002 was essentially corrected.                  40203  1   39 
+           Subent 004 was added.                                  40203  1   40 
+ENDBIB              38          0                                 40203  1   41 
+NOCOMMON             0          0                                 40203  1   42 
+ENDSUBENT           41          0                                 40203  199999 
+SUBENT        40203002   20150109                             416740203  2    1 
+BIB                  6         17                                 40203  2    2 
+REACTION   ((96-CM-246(0,F),PR,NU)/(96-CM-244(0,F),PR,NU))        40203  2    3 
+            Primarily measured ratio.                             40203  2    4 
+SAMPLE     Cm-244 sample with ~0.2 micrograms weight with         40203  2    5 
+           fissionable impurities contents up to 0.1%.            40203  2    6 
+MONITOR    Absolute measurement                                   40203  2    7 
+ERR-ANALYS (DATA-ERR)  Quoted error consists of statistical error 40203  2    8 
+           and systematical errors. Statistical error is reduced  40203  2    9 
+           using data of work Yadern. Fisika, 17,(4),692,7304.    40203  2   10 
+STATUS     (TABLE) Text, page 372 of J,SNP,18,371,1974            40203  2   11 
+HISTORY    (20150109A) SD: units were changed NO-DIM -> PRT/FIS . 40203  2   12 
+           (20150219A) M.M. Reaction was corrected:               40203  2   13 
+            (96-CM-244(0,F),PR,NU) ->                             40203  2   14 
+            (96-CM-246(0,F),PR,NU)/(96-CM-244(0,F),PR,NU)         40203  2   15 
+            Ratio data value was inserted ( 2.69+-0.01 is monitor 40203  2   16 
+            value for detection efficiency).                      40203  2   17 
+           MISC data ( parameters of neutron distribution) were   40203  2   18 
+           moved in Subent 004.                                   40203  2   19 
+ENDBIB              17          0                                 40203  2   20 
+NOCOMMON             0          0                                 40203  2   21 
+DATA                 2          1                                 40203  2   22 
+DATA       DATA-ERR                                               40203  2   23 
+NO-DIM     NO-DIM                                                 40203  2   24 
+ 1.107      0.009                                                 40203  2   25 
+ENDDATA              3          0                                 40203  2   26 
+ENDSUBENT           25          0                                 40203  299999 
+SUBENT        40203003   20150109                             416740203  3    1 
+BIB                  7         20                                 40203  3    2 
+REACTION   (96-CM-246(0,F),PR,NU)                                 40203  3    3 
+SAMPLE     Cm-246 sample of ~0.8 micrograms weight,               40203  3    4 
+           98.6% of Cm-246                                        40203  3    5 
+MONITOR    (96-CM-244(0,F),PR,NU) The fission neutrons detection  40203  3    6 
+           efficiency was determined from known value             40203  3    7 
+           NU=2.69+-0.01 prt/fis for Cm-244 from:                 40203  3    8 
+MONIT-REF  (,F.Manero+,R,INDC(NDS)-34/G,1971)                     40203  3    9 
+            2.681+-0.011 - Tables 5,6 ( no pages numbers in hard  40203  3   10 
+           copy).                                                 40203  3   11 
+           (40140002,L.I.Prokhorova+,J,AE,33,(3),767,1972)        40203  3   12 
+            2.70+-0.14 prt/fis.                                   40203  3   13 
+ERR-ANALYS (DATA-ERR) Quoted error consists of statistical error  40203  3   14 
+           and systematical errors.                               40203  3   15 
+STATUS     (TABLE) Table 1 of J,SNP,18,371,1974                   40203  3   16 
+           (DEP,40203002) In Subent 002 - directly measured ratio 40203  3   17 
+           of NU Cm-246 to NU Cm-244.                             40203  3   18 
+HISTORY    (20150109A) SD: units changed NO-DIM -> PRT/FIS.       40203  3   19 
+           (20150219A) M.M.                                       40203  3   20 
+           MISC data ( parameters of neutron distribution) were   40203  3   21 
+           moved in Subent 004.                                   40203  3   22 
+ENDBIB              20          0                                 40203  3   23 
+NOCOMMON             0          0                                 40203  3   24 
+DATA                 2          1                                 40203  3   25 
+DATA       DATA-ERR                                               40203  3   26 
+PRT/FIS    PRT/FIS                                                40203  3   27 
+ 2.98       0.03                                                  40203  3   28 
+ENDDATA              3          0                                 40203  3   29 
+ENDSUBENT           28          0                                 40203  399999 
+SUBENT        40203004   20150109                             416740203  4    1 
+BIB                  9         22                                 40203  4    2 
+REACTION  1(96-CM-244(0,F),PR/NUM,NU)                             40203  4    3 
+          2(96-CM-246(0,F),PR/NUM,NU)                             40203  4    4 
+SAMPLE     Cm-244 sample with ~0.2 micrograms weight with         40203  4    5 
+           fissionable impurities contents up to 0.1%.            40203  4    6 
+           Cm-246 sample of ~0.8 micrograms weight,               40203  4    7 
+           98.6% of Cm-246                                        40203  4    8 
+MONITOR    (96-CM-244(0,F),PR,NU) The fission neutrons detection  40203  4    9 
+           efficiency was determined from known value             40203  4   10 
+           NU=2.69+-0.01 prt/fis for Cm-244 from:                 40203  4   11 
+MONIT-REF  (,F.Manero+,R,INDC(NDS)-34/G,1971)                     40203  4   12 
+            2.681+-0.011 - Tables 5,6 ( no pages numbers in hard  40203  4   13 
+           copy).                                                 40203  4   14 
+           (40140002,L.I.Prokhorova+,J,AE,33,(3),767,1972)        40203  4   15 
+            2.70+-0.14 prt/fis.                                   40203  4   16 
+ANALYSIS    Method of statistical smoothing was used.             40203  4   17 
+MISC-COL   (MISC1) Nu-dispersion for Cm-244                       40203  4   18 
+           (MISC2) Nu-dispersion for Cm-246                       40203  4   19 
+             Sigma**2=<nu**2>-<nu>**2, in units (prt/fis)**2.     40203  4   20 
+ERR-ANALYS (DATA-ERR)  Quoted error consists of statistical error 40203  4   21 
+           and systematical errors.                               40203  4   22 
+STATUS     (TABLE) Table 1 of J,SNP,18,371,1974                   40203  4   23 
+HISTORY    (20150109C) M.M.                                       40203  4   24 
+ENDBIB              22          0                                 40203  4   25 
+COMMON               4          3                                 40203  4   26 
+MISC1      MISC1-ERR  MISC2      MISC2-ERR                        40203  4   27 
+SEE TEXT   SEE TEXT   SEE TEXT   SEE TEXT                         40203  4   28 
+ 1.28      0.02       1.31       0.02                             40203  4   29 
+ENDCOMMON            3          0                                 40203  4   30 
+DATA                 5          8                                 40203  4   31 
+PART-OUT   DATA      1DATA-ERR  1DATA      2DATA-ERR  2           40203  4   32 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                40203  4   33 
+0.         0.29       0.004      0.016      0.005                 40203  4   34 
+1.         0.098      0.012      0.060      0.014                 40203  4   35 
+2.         0.314      0.017      0.264      0.020                 40203  4   36 
+3.         0.330      0.017      0.341      0.020                 40203  4   37 
+4.         0.175      0.015      0.219      0.020                 40203  4   38 
+5.         0.052      0.014      0.094      0.020                 40203  4   39 
+6.         0.002      0.013      0.006      0.010                 40203  4   40 
+7.         0.000      0.007      0.000      0.012                 40203  4   41 
+ENDDATA             10          0                                 40203  4   42 
+ENDSUBENT           41          0                                 40203  499999 
+ENDENTRY             4          0                                 4020399999999 
