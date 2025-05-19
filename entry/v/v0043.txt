@@ -1,13 +1,13 @@
-ENTRY            V0043   20110212                             V028V004300000001 
-SUBENT        V0043001   20110212                             V028V004300100001 
-BIB                 12         70                                 V004300100002 
+ENTRY            V0043   20230508                             V042V004300000001 
+SUBENT        V0043001   20230508                             V042V004300100001 
+BIB                 12         75                                 V004300100002 
 TITLE      A simultaneous evaluation of some important cross      V004300100003 
             sections at 14.7 MeV                                  V004300100004 
 AUTHOR     (T.B.Ryves)                                            V004300100005 
 INSTITUTE  (2ZZZGEL)                                              V004300100006 
-REFERENCE  (W,RYVES,19871020)      CBNM internal report           V004300100007 
-           (J,ANE,16,(6),307,1989) Brief info.+ Data tables given V004300100008 
-           (R,EUR-11912-EN,1989)   Detailed report                V004300100009 
+REFERENCE  (W,RYVES,19871020) CBNM internal report                V004300100007 
+           (J,ANE,16,307,1989) Brief info.+ Data tables given     V004300100008 
+           (R,EUR-11912-EN,1989) Detailed report                  V004300100009 
 METHOD     Method of weighted least-squares taking into account   V004300100010 
             correlations was used in the simultaneous evaluation  V004300100011 
            Selection of experimental data:                        V004300100012 
@@ -30,54 +30,59 @@ CORRECTION The experimental cross sections were normalized to a   V004300100021
            - Target scatter                                       V004300100029 
            - Hydrogen scattering cross section                    V004300100030 
 ERR-ANALYS (DATA-ERR) 1 sigma uncertainties of 0.5 - 1.5 % given  V004300100031 
-COVARIANCE  Reaction        Code No.      Reaction      Code No.  V004300100032 
-            Al27(n,a)Na24      1          S32(n,p)P32      7      V004300100033 
-            Fe56(n,p)Mn56      2          H1(n,n)H1        8      V004300100034 
-            Cu63(n,2n)Cu62     3          Al27(n,p)Mg27    9      V004300100035 
-            Cu65(n,2n)Cu64     4          Co59(n,a)Mn56   10      V004300100036 
-            Au197(n,2n)Au196   5          U235(n,f)       11      V004300100037 
-            Nb93(n,2n)Nb92m    6          U238(n,f)       12      V004300100038 
-           -------------------------------------------------------V004300100039 
-            The correlation matrix for the results is:            V004300100040 
-           -------------------------------------------------------V004300100041 
-           Code No.  1   2   3   4   5   6   7   8   9  10  11  12V004300100042 
-              1    100  63  35  38  34  33  23  47  35  37  25  21V004300100043 
-              2        100  32  36  25  27  23  56  32  47  27  22V004300100044 
-              3            100  44  15  17  12  34  21  20  13  11V004300100045 
-              4                100  16  17  13  33  20  23  14  12V004300100046 
-              5                    100  15   9  19  14  16  11  10V004300100047 
-              6                        100  10  22  15  17  12  10V004300100048 
-              7                            100  17  11  15   8   7V004300100049 
-              8                                100  24  30  22  19V004300100050 
-              9                                    100  19  13  11V004300100051 
-             10                                        100  19  14V004300100052 
-             11                                            100  63V004300100053 
-             12                                                100V004300100054 
-           -------------------------------------------------------V004300100055 
-COMMENT    Author comment:                                        V004300100056 
-           The present simultaneous evaluation supersedes         V004300100057 
-            previous ones                                         V004300100058 
-             (J.G.Hayes,T.B.Ryves Ann.Nucl.Energy 8(1981)469)     V004300100059 
-            compiled in EXFOR V0029;                              V004300100060 
-              G.Winkler,T.B.Ryves, Ann.Nucl.Energy 10(1983)601;   V004300100061 
-              T.B.Ryves Rep.IAEA-TECDOC-335(1983)432)             V004300100062 
-            which included many of the same reactions, because theV004300100063 
-            data base has been more than doubled and now includes V004300100064 
-            a number of recent accurate measurements, the input   V004300100065 
-            data have been carefully revised, and many more       V004300100066 
-            correlations have been added.                         V004300100067 
-STATUS     (TABLE) Private Communication Ryves Oct.1987,Tab.8.    V004300100068 
-            These data supersede EXFOR V0029.                     V004300100069 
-HISTORY    (19871111C) DG.                                        V004300100070 
-           (19891218U) VOF. References added                      V004300100071 
-           (20110212U) On. STATUS: TABLE added                    V004300100072 
-ENDBIB              70          0                                 V004300100073 
-COMMON               1          3                                 V004300100074 
-EN                                                                V004300100075 
-MEV                                                               V004300100076 
- 14.70                                                            V004300100077 
-ENDCOMMON            3          0                                 V004300100078 
-ENDSUBENT           77          0                                 V004300199999 
+COVARIANCE  (XY,12,N,REACTION)                                    V004300100032 
+             N  REACTION                                          V004300100033 
+             1 (13-AL-27(N,A)11-NA-24,,SIG,,,EVAL)                V004300100034 
+             2 (26-FE-56(N,P)25-MN-56,,SIG,,,EVAL)                V004300100035 
+             3 (29-CU-63(N,2N)29-CU-62,,SIG,,,EVAL)               V004300100036 
+             4 (29-CU-65(N,2N)29-CU-64,,SIG,,,EVAL)               V004300100037 
+             5 (79-AU-197(N,2N)79-AU-196,,SIG,,,EVAL)             V004300100038 
+             6 (41-NB-93(N,2N)41-NB-92-M,,SIG,,,EVAL)             V004300100039 
+             7 (16-S-32(N,P)15-P-32,,SIG,,,EVAL)                  V004300100040 
+             8 (1-H-1(N,EL)1-H-1,,SIG,,,EVAL)                     V004300100041 
+             9 (13-AL-27(N,P)12-MG-27,,SIG,,,EVAL)                V004300100042 
+            10 (27-CO-59(N,A)25-MN-56,,SIG,,,EVAL)                V004300100043 
+            11 (92-U-235(N,F),,SIG,,,EVAL)                        V004300100044 
+            12 (92-U-238(N,F),,SIG,,,EVAL)                        V004300100045 
+            (Z,78,PER-CENT,COR)                                   V004300100046 
+               100  63  35  38  34  33  23  47  35  37  25  21    V004300100047 
+                   100  32  36  25  27  23  56  32  47  27  22    V004300100048 
+                       100  44  15  17  12  34  21  20  13  11    V004300100049 
+                           100  16  17  13  33  20  23  14  12    V004300100050 
+                               100  15   9  19  14  16  11  10    V004300100051 
+                                   100  10  22  15  17  12  10    V004300100052 
+                                       100  17  11  15   8   7    V004300100053 
+                                           100  24  30  22  19    V004300100054 
+                                               100  19  13  11    V004300100055 
+                                                   100  19  14    V004300100056 
+                                                        100 63    V004300100057 
+                                                            100   V004300100058 
+COMMENT    Author comment:                                        V004300100059 
+           The present simultaneous evaluation supersedes         V004300100060 
+            previous ones                                         V004300100061 
+             (J.G.Hayes,T.B.Ryves Ann.Nucl.Energy 8(1981)469)     V004300100062 
+            compiled in EXFOR V0029;                              V004300100063 
+              G.Winkler,T.B.Ryves, Ann.Nucl.Energy 10(1983)601;   V004300100064 
+              T.B.Ryves Rep.IAEA-TECDOC-335(1983)432)             V004300100065 
+            which included many of the same reactions, because theV004300100066 
+            data base has been more than doubled and now includes V004300100067 
+            a number of recent accurate measurements, the input   V004300100068 
+            data have been carefully revised, and many more       V004300100069 
+            correlations have been added.                         V004300100070 
+STATUS     (TABLE) Private Communication Ryves Oct.1987,Tab.8.    V004300100071 
+            These data supersede EXFOR V0029.                     V004300100072 
+HISTORY    (19871111C) DG.                                        V004300100073 
+           (19891218U) VOF. References added                      V004300100074 
+           (20110212U) On. STATUS: TABLE added                    V004300100075 
+           (20230508A) VT+On. COVARIANCE updated according to     V004300100076 
+           new format                                             V004300100077 
+ENDBIB              75          0                                 V004300100078 
+COMMON               1          3                                 V004300100079 
+EN                                                                V004300100080 
+MEV                                                               V004300100081 
+ 14.70                                                            V004300100082 
+ENDCOMMON            3          0                                 V004300100083 
+ENDSUBENT           82          0                                 V004300199999 
 SUBENT        V0043002   20110212                             V028V004300200001 
 BIB                  3          4                                 V004300200002 
 REACTION   (13-AL-27(N,A)11-NA-24,,SIG,,,EVAL)                    V004300200003 
