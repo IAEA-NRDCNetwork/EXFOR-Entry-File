@@ -1,43 +1,76 @@
-ENTRY            40727   19841024                             00004072700000001 
-SUBENT        40727001   19841024                             00004072700100001 
-BIB                  8         10                                 4072700100002 
-INSTITUTE  (4CCPKUR)                                              4072700100003 
-REFERENCE  (J,KRI,8,(5),785,63)                                   4072700100004 
-           (J,SPC,8,626,64)                                       4072700100005 
-AUTHOR     (JU.JA.KONAKHOVICH,V.A.SOMENKOV)                       4072700100006 
-TITLE      DETERMINATION OF THE COHERENT-SCATTERING CROSS SECTION 4072700100007 
-           FOR NEUTRONS ON GALLIUM.                               4072700100008 
-SAMPLE      GALLIUM ARSENID 99.99 RERCENT PURITY                  4072700100009 
-DETECTOR   (PROPC) END-WINDOW COUNTER                             4072700100010 
-MONITOR     METALLIC NICKEL                                       4072700100011 
-HISTORY    (840507T) CONVERTED FROM ENTRY 80142                   4072700100012 
-ENDBIB              10          0                                 4072700100013 
-NOCOMMON             0          0                                 4072700100014 
-ENDSUBENT           13          0                                 4072700199999 
-SUBENT        40727002   19841024                             00004072700200001 
-BIB                  3          3                                 4072700200002 
-REACTION   (31-GA-0(N,THS),COH,AMP)                               4072700200003 
-METHOD     (DIFFR) DIFFRACTION.                                   4072700200004 
-STATUS     (SCSRS)                                                4072700200005 
-ENDBIB               3          0                                 4072700200006 
-NOCOMMON             0          0                                 4072700200007 
-DATA                 3          1                                 4072700200008 
-EN         DATA       DATA-ERR                                    4072700200009 
-MEV        FERMI      FERMI                                       4072700200010 
- 2.5300E-08 7.3000E+00 3.0000E-01                                 4072700200011 
-ENDDATA              3          0                                 4072700200012 
-ENDSUBENT           11          0                                 4072700299999 
-SUBENT        40727003   19841024                             00004072700300001 
-BIB                  3          3                                 4072700300002 
-REACTION   (31-GA-0(N,THS),COH,SIG)                               4072700300003 
-METHOD     (DIFFR) DIFFRACTION.                                   4072700300004 
-STATUS     (SCSRS)                                                4072700300005 
-ENDBIB               3          0                                 4072700300006 
-NOCOMMON             0          0                                 4072700300007 
-DATA                 3          1                                 4072700300008 
-EN         DATA       DATA-ERR                                    4072700300009 
-MEV        B          B                                           4072700300010 
- 2.5300E-08 6.7000E+00 5.5000E-01                                 4072700300011 
-ENDDATA              3          0                                 4072700300012 
-ENDSUBENT           11          0                                 4072700399999 
+ENTRY            40727   20210624                             419740727  0    1 
+SUBENT        40727001   20210624                             419740727  1    1 
+BIB                 12         28                                 40727  1    2 
+INSTITUTE  (4RUSKUR)                                              40727  1    3 
+REFERENCE  (J,KRI,8,785,1963) Issue 5.                            40727  1    4 
+           (J,SPC,8,626,1964)                                     40727  1    5 
+AUTHOR     (Yu.Ya.Konakhovich,V.A.Somenkov)                       40727  1    6 
+TITLE      Determination of the coherent-scattering cross section 40727  1    7 
+           for neutrons on gallium                                40727  1    8 
+REL-REF    (M,,Yu.Ya.Konakhovich+,J,KRI,8,25,1963)                40727  1    9 
+           (M,,Yu.Ya.Konakhovich+,J,SPC,8,18,1964) Engl. of KRI   40727  1   10 
+           Measurement of wave-length of neutrons - 0.962 Angstrom40727  1   11 
+INC-SPECT   The previously measured wave-length of neutrons       40727  1   12 
+           0.962 Angstrom.                                        40727  1   13 
+SAMPLE      Gallium arsenid of 99.99 % purity as powder in        40727  1   14 
+           cylindrical Al capsule of 0.1 mm wall thickness.       40727  1   15 
+DETECTOR   (PROPC) End-window counter, 80% efficiency.            40727  1   16 
+            The incident beam produced 1.5E+5 counts/min.         40727  1   17 
+MONITOR     Metallic nickel                                       40727  1   18 
+CORRECTION  For absorption correction - values M*R were measured  40727  1   19 
+            by transmission for Ni and GaAs to be 0.310 and 0.144,40727  1   20 
+            respectively ; M - is linear absorption coefficient,  40727  1   21 
+            R- radius of cylindrical sample.                      40727  1   22 
+            Temperature correction .                              40727  1   23 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 40727  1   24 
+            article.                                              40727  1   25 
+HISTORY    (19840507T) Converted from ENTRY 80142                 40727  1   26 
+           (20210624A) M.M. Update for current rules.             40727  1   27 
+            EN=0.0253 -> WVE-LN=0.962 Angstrom (corresponds to    40727  1   28 
+            0.0884 eV - calculated by compiler) as given in the   40727  1   29 
+            article.                                              40727  1   30 
+ENDBIB              28          0                                 40727  1   31 
+COMMON               1          3                                 40727  1   32 
+WVE-LN                                                            40727  1   33 
+ANGSTROM                                                          40727  1   34 
+ 0.962                                                            40727  1   35 
+ENDCOMMON            3          0                                 40727  1   36 
+ENDSUBENT           35          0                                 40727  199999 
+SUBENT        40727002   20210624                             419740727  2    1 
+BIB                  7          9                                 40727  2    2 
+REACTION   (31-GA-0(N,THS)31-GA-0,COH,AMP)                        40727  2    3 
+METHOD     (DIFFR)                                                40727  2    4 
+ASSUMED    (ASSUM,33-AS-75(N,THS)33-AS-75,COH,AMP)                40727  2    5 
+REL-REF    (R,,C.G.Shull+,J,PR,81,527,1951) Assum value.          40727  2    6 
+ANALYSIS    ASSUM was used to take into account As-75 contribution40727  2    7 
+            in sample GaAs and to compare with amplitude of Ga.   40727  2    8 
+STATUS     (TABLE) Text page 627 of                               40727  2    9 
+           Soviet Physics-Crystallography,v.8,p.626,1964          40727  2   10 
+HISTORY    (20210624A) Code was added in REACTION SF4.            40727  2   11 
+ENDBIB               9          0                                 40727  2   12 
+NOCOMMON             0          0                                 40727  2   13 
+DATA                 3          1                                 40727  2   14 
+DATA       DATA-ERR   ASSUM                                       40727  2   15 
+FERMI      FERMI      FERMI                                       40727  2   16 
+ 7.3        0.3        6.6                                        40727  2   17 
+ENDDATA              3          0                                 40727  2   18 
+ENDSUBENT           17          0                                 40727  299999 
+SUBENT        40727003   20210624                             419740727  3    1 
+BIB                  5          8                                 40727  3    2 
+REACTION   (31-GA-0(N,THS)31-GA-0,COH,SIG)                        40727  3    3 
+METHOD     (DIFFR)                                                40727  3    4 
+ANALYSIS    Coherent scattering cross section was determined as   40727  3    5 
+            4PI*B**2, where B is amplitude of coherent scattering.40727  3    6 
+STATUS     (TABLE) Text page 628 of                               40727  3    7 
+           Soviet Physics-Crystallography,v.8,p.626,1964          40727  3    8 
+           (DEP,40727002) See ANALYSIS                            40727  3    9 
+HISTORY    (20210624A) Code was added in REACTION SF4.            40727  3   10 
+ENDBIB               8          0                                 40727  3   11 
+NOCOMMON             0          0                                 40727  3   12 
+DATA                 2          1                                 40727  3   13 
+DATA       DATA-ERR                                               40727  3   14 
+B          B                                                      40727  3   15 
+ 6.7        0.55                                                  40727  3   16 
+ENDDATA              3          0                                 40727  3   17 
+ENDSUBENT           16          0                                 40727  399999 
 ENDENTRY             3          0                                 4072799999999 
