@@ -1,81 +1,108 @@
-ENTRY            41189   19960408                             00004118900000001 
-SUBENT        41189001   19960408                             00004118900100001 
-BIB                 10         13                                 4118900100002 
-TITLE       NEUTRON INELASTIC CROSS-SECTION ON SILVER AT THE      4118900100003 
-            ENERGY 275 KEV                                        4118900100004 
-AUTHOR     (L.L.LITVINSKIY,YA.A.ZHIGALOV,V.G.KRIVENKO,O.A.PURTOV, 4118900100005 
-           SAUD-SABBAGKH)                                         4118900100006 
-INSTITUTE  (4UKRIJI)                                              4118900100007 
-REFERENCE  (J,YK,1994,(4),38,9505)   DATA ARE GIVEN               4118900100008 
-           (R,KIYAI-85-35,85)   EXPERIMENTAL DATAILS              4118900100009 
-FACILITY   (REAC)  REACTOR WWR-M                                  4118900100010 
-INC-SPECT   FILTERED NEUTRON BEAM. MAGNESIUM FILTER               4118900100011 
-DETECTOR   (PROPC)  PROPORTIONAL HYDROGRN COUNTER CM-38           4118900100012 
-STATUS      DATA ARE TAKEN FROM THE REFERENCE                     4118900100013 
-ERR-ANALYS (DATA-ERR)  ERRORS ARE NOT SPECIFIED                   4118900100014 
-HISTORY    (960408C)  + + COMPILED AT THE CENTRE - CJD + +        4118900100015 
-ENDBIB              13          0                                 4118900100016 
-NOCOMMON             0          0                                 4118900100017 
-ENDSUBENT           16          0                                 4118900199999 
-SUBENT        41189002   19960408                             00004118900200001 
-BIB                  3          5                                 4118900200002 
-REACTION   (47-AG-0(N,TOT),,SIG)                                  4118900200003 
-METHOD      TRANSMISSION                                          4118900200004 
-SAMPLE      METALLIC ELLIPTIC SAMPLE, WEIGHT 110.06 GRAM,         4118900200005 
-            THICKNESS 2.92 MM, LITTLE HALF-AXE IS 29.72 MM        4118900200006 
-            LARGE HALF-AXE IS 38.55 MM                            4118900200007 
-ENDBIB               5          0                                 4118900200008 
-NOCOMMON             0          0                                 4118900200009 
-DATA                 3          1                                 4118900200010 
-EN         DATA       DATA-ERR                                    4118900200011 
-KEV        B          B                                           4118900200012 
-  275.       7.59        0.19                                     4118900200013 
-ENDDATA              3          0                                 4118900200014 
-ENDSUBENT           13          0                                 4118900299999 
-SUBENT        41189003   19960408                             00004118900300001 
-BIB                  4          5                                 4118900300002 
-REACTION   (47-AG-0(N,INL)47-AG-0,,SIG)                           4118900300003 
-ASSUMED    (ASSUM,47-AG-0(N,G),,SIG)                              4118900300004 
-ANALYSIS    SUM OF SIGMA(EL)+SIGMA(INEL) IS NORMALISED TO THE     4118900300005 
-            DIFFERENCE SIGMA(TOT)-SIGMA(N-GAMMA)                  4118900300006 
-STATUS     (DEP,41189002)                                         4118900300007 
-ENDBIB               5          0                                 4118900300008 
-COMMON               2          3                                 4118900300009 
-ASSUM      ASSUM-ERR                                              4118900300010 
-B          B                                                      4118900300011 
-    3.0E-01    3.0E-02                                            4118900300012 
-ENDCOMMON            3          0                                 4118900300013 
-DATA                 3          1                                 4118900300014 
-EN         DATA       DATA-ERR                                    4118900300015 
-KEV        B          B                                           4118900300016 
-  275.         6.5E-02    5.5E-02                                 4118900300017 
-ENDDATA              3          0                                 4118900300018 
-ENDSUBENT           17          0                                 4118900399999 
-SUBENT        41189004   19960408                             00004118900400001 
-BIB                  2          3                                 4118900400002 
-REACTION   (47-AG-0(N,EL)47-AG-0,,SIG)                            4118900400003 
-STATUS     (DEP,41189002)                                         4118900400004 
-           (DEP,41189003)                                         4118900400005 
-ENDBIB               3          0                                 4118900400006 
-NOCOMMON             0          0                                 4118900400007 
-DATA                 3          1                                 4118900400008 
-EN         DATA       DATA-ERR                                    4118900400009 
-KEV        B          B                                           4118900400010 
-  275.        7.29       0.21                                     4118900400011 
-ENDDATA              3          0                                 4118900400012 
-ENDSUBENT           11          0                                 4118900499999 
-SUBENT        41189005   19960408                             00004118900500001 
-BIB                  2          4                                 4118900500002 
-REACTION   (47-AG-0(N,EL),,STF)                                   4118900500003 
-STATUS     (DEP,41189002)                                         4118900500004 
-           (DEP,41189003)                                         4118900500005 
-           (DEP,41189004)                                         4118900500006 
-ENDBIB               4          0                                 4118900500007 
-NOCOMMON             0          0                                 4118900500008 
-DATA                 4          1                                 4118900500009 
-EN         MOMENTUM L DATA       DATA-ERR                         4118900500010 
-KEV        NO-DIM     NO-DIM     NO-DIM                           4118900500011 
-  275.         2.        1.03E-04    1.9E-05                      4118900500012 
-ENDDATA              3          0                                 4118900500013 
-ENDSUBENT           12          0                                 4118900599999 
+ENTRY            41189   20150929                             417141189  0    1 
+SUBENT        41189001   20150929                             417141189  1    1 
+BIB                 11         21                                 41189  1    2 
+TITLE       Inelastic scattering cross-section of 275 keV neutrons41189  1    3 
+            by silver.                                            41189  1    4 
+AUTHOR     (L.L.Litvinsky,Ya.A.Zhigalov,V.G.Krivenko,O.A.Purtov,  41189  1    5 
+           Said Sabbagh) L.L.Litvinsky=L.L.Litvinskiy             41189  1    6 
+INSTITUTE  (4UKRIJD)                                              41189  1    7 
+REFERENCE  (J,YK,1994,(3-4),38,1994)   Data are given             41189  1    8 
+           (R,INDC(UKR)-003,13,1997)                              41189  1    9 
+                      Engl.transL.of YK,1994,(3-4),38,1994.       41189  1   10 
+REL-REF    (M,,L.L.Litvinsky,R,KIYAI-85-35,1985)   Exp. details   41189  1   11 
+FACILITY   (REAC,4UKRIJD)  Reactor WWR-M                          41189  1   12 
+INC-SPECT   Filtered neutron beam. Mn (270g/cm2), V (50g/cm2),    41189  1   13 
+           S (54g/cm2), B-10 (0.2g/cm2) filter.                   41189  1   14 
+           Relative contribution of 275-keV neutrons 65.4%.       41189  1   15 
+           Neutron flux at sample position 3E+5 n/cm2.            41189  1   16 
+METHOD     (FNB)                                                  41189  1   17 
+DETECTOR   (PROPC)  Proportional hydrogen counter CM-38           41189  1   18 
+ERR-ANALYS (DATA-ERR)  Errors are not specified                   41189  1   19 
+HISTORY    (19960408C)  + + Compiled at the centre - CJD + +      41189  1   20 
+           (20150929A) M.M. Ref.INDC(UKR)-003,13,1997 was added.  41189  1   21 
+           AUTHOR,TITLE,INSTITUTE,FACILITY were corrected.        41189  1   22 
+           Article was checked, BIB information was updated.      41189  1   23 
+ENDBIB              21          0                                 41189  1   24 
+NOCOMMON             0          0                                 41189  1   25 
+ENDSUBENT           24          0                                 41189  199999 
+SUBENT        41189002   20150929                             417141189  2    1 
+BIB                  5         10                                 41189  2    2 
+REACTION  1(47-AG-0(N,TOT),,SIG)                                  41189  2    3 
+          2((47-AG-0(N,INL)47-AG-0,PAR,SIG)/                      41189  2    4 
+           (47-AG-0(N,EL)47-AG-0,,SIG))                           41189  2    5 
+                     Primarily measured data.                     41189  2    6 
+METHOD    1(TRN) Transmission                                     41189  2    7 
+SAMPLE      Metallic elliptical sample, weight 110.06 gram,       41189  2    8 
+            thickness 2.92 mm, little half-axe is 29.72 mm        41189  2    9 
+            large half-axe is 38.55 mm                            41189  2   10 
+STATUS     (TABLE) Text, page 39 of YK,1994,(3-4),38,1994         41189  2   11 
+HISTORY    (20150929A) M.M. DATA 2 were added.                    41189  2   12 
+ENDBIB              10          0                                 41189  2   13 
+NOCOMMON             0          0                                 41189  2   14 
+DATA                 6          1                                 41189  2   15 
+EN         DATA      1DATA-ERR  1E-LVL     2DATA      2DATA-ERR  241189  2   16 
+KEV        B          B          KEV        NO-DIM     NO-DIM     41189  2   17 
+  275.       7.59        0.19      90.           9.0E-3     7.6E-341189  2   18 
+ENDDATA              3          0                                 41189  2   19 
+ENDSUBENT           18          0                                 41189  299999 
+SUBENT        41189003   20150929                             417141189  3    1 
+BIB                  6         11                                 41189  3    2 
+REACTION   (47-AG-0(N,INL)47-AG-0,PAR,SIG)                        41189  3    3 
+           Inelastic scattering CS with excitation of 1-st 7/2+   41189  3    4 
+           isomeric level.                                        41189  3    5 
+ASSUMED    (ASSUM,47-AG-0(N,G),,SIG)   From:                      41189  3    6 
+REL-REF    (R,,T.S.Belanova+,J,AE,57,(4),243,1984)                41189  3    7 
+ANALYSIS    Sum of SIGMA(EL)+SIGMA(INEL) is normalized to the     41189  3    8 
+            difference SIGMA(TOT)-SIGMA(N-GAMMA)                  41189  3    9 
+STATUS     (TABLE) Text, page 39 of YK,1994,(3-4),38,1994         41189  3   10 
+           (DEP,41189002) Total CS and ratio, directly measured.  41189  3   11 
+HISTORY    (20150929A) M.M. PAR was added in REACTION, E-LVL in   41189  3   12 
+           DATA block.                                            41189  3   13 
+ENDBIB              11          0                                 41189  3   14 
+COMMON               2          3                                 41189  3   15 
+ASSUM      ASSUM-ERR                                              41189  3   16 
+B          B                                                      41189  3   17 
+    3.0E-01    3.0E-02                                            41189  3   18 
+ENDCOMMON            3          0                                 41189  3   19 
+DATA                 4          1                                 41189  3   20 
+EN         E-LVL      DATA       DATA-ERR                         41189  3   21 
+KEV        KEV        B          B                                41189  3   22 
+  275.      90.           6.5E-02    5.5E-02                      41189  3   23 
+ENDDATA              3          0                                 41189  3   24 
+ENDSUBENT           23          0                                 41189  399999 
+SUBENT        41189004   20150929                             417141189  4    1 
+BIB                  5          7                                 41189  4    2 
+REACTION   (47-AG-0(N,EL)47-AG-0,,SIG)                            41189  4    3 
+ASSUMED    (ASSUM,47-AG-0(N,G),,SIG)   From:                      41189  4    4 
+REL-REF    (R,,T.S.Belanova+,J,AE,57,(4),243,1984)                41189  4    5 
+ANALYSIS    Sum of SIGMA(EL)+SIGMA(INEL) is normalized to the     41189  4    6 
+            difference SIGMA(TOT)-SIGMA(N-GAMMA)                  41189  4    7 
+STATUS     (TABLE) Text, page 39 of YK,1994,(3-4),38,1994         41189  4    8 
+           (DEP,41189002)  Total CS and ratio, directly measured. 41189  4    9 
+ENDBIB               7          0                                 41189  4   10 
+NOCOMMON             0          0                                 41189  4   11 
+DATA                 5          1                                 41189  4   12 
+EN         DATA       DATA-ERR   ASSUM      ASSUM-ERR             41189  4   13 
+KEV        B          B          B          B                     41189  4   14 
+  275.        7.29       0.21        3.0E-01    3.0E-02           41189  4   15 
+ENDDATA              3          0                                 41189  4   16 
+ENDSUBENT           15          0                                 41189  499999 
+SUBENT        41189005   20150929                             417141189  5    1 
+BIB                  4          8                                 41189  5    2 
+REACTION   (47-AG-0(N,EL),,STF)                                   41189  5    3 
+ANALYSIS   Data from REL-REF and this experiment were used for    41189  5    4 
+           fitting by Eq.(5).                                     41189  5    5 
+REL-REF    (R,,W.C.Vonach+,J,NP,78,(2),389,1966)                  41189  5    6 
+STATUS     (TABLE) Text, page 39 of YK,,(3-4),38,1994             41189  5    7 
+           (DEP,41189002)                                         41189  5    8 
+           (DEP,41189003)                                         41189  5    9 
+           (DEP,41189004)                                         41189  5   10 
+ENDBIB               8          0                                 41189  5   11 
+NOCOMMON             0          0                                 41189  5   12 
+DATA                 4          1                                 41189  5   13 
+EN-RES-MAX MOMENTUM L DATA       DATA-ERR                         41189  5   14 
+KEV        NO-DIM     NO-DIM     NO-DIM                           41189  5   15 
+  600.         2.        1.03E-04    1.9E-05                      41189  5   16 
+ENDDATA              3          0                                 41189  5   17 
+ENDSUBENT           16          0                                 41189  599999 
 ENDENTRY             5          0                                 4118999999999 

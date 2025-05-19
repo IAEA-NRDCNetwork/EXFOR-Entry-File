@@ -1,68 +1,247 @@
-ENTRY            41144   20010311                             00004114400000001 
-SUBENT        41144001   20010311                             00004114400100001 
-BIB                 13         24                                 4114400100002 
-INSTITUTE  (4RUSFEI)                                              4114400100003 
-           (3DDRTUD)  MERTENS, RUBEN                              4114400100004 
-REFERENCE  (J,AE,69,(1),28,199007)  NEUTRON SPECTRUM CURVE IS     4114400100005 
-           GIVEN                                                  4114400100006 
-           (J,PTE,,(6),22,1980)     EXPERIMENTAL DETAILS          4114400100007 
-AUTHOR     (S.E.SUKHIKH, G.N.LOVCHIKOVA, V.A.VINOGRADOV,          4114400100008 
-            B.N.ZHURAVLEV, O.A.SAL'NIKOV, H.MERTENS, A.RUBEN)     4114400100009 
-TITLE       SPECTRA OF THE FISSION PROMPT NEUTRONS ARISING        4114400100010 
-            AT THE INTERACTION OF 1.5-MEV NEUTRONS WITH U-235     4114400100011 
-            NUCLEUS                                               4114400100012 
-FACILITY   (VDG,4RUSFEI)  EGP-10M ACCELERATOR                     4114400100013 
-INC-SOURCE (P-T)  GAS TRITIUM TARGET                              4114400100014 
-SAMPLE      HOLLOW CYLINDER OF METALLIC URANIUM                   4114400100015 
-            CONTAINE 1.093 MOLES OF U-235                         4114400100016 
-METHOD     (TOF)                                                  4114400100017 
-DETECTOR   (SCIN)  STILBENE DETECTOR                              4114400100018 
-           (FISCH)                                                4114400100019 
-           (LONGC)                                                4114400100020 
-MONITOR    (98-CF-252(0,F),,DE,N)                                 4114400100021 
-ERR-ANALYS (DATA-ERR)  NOT SPECIFIED                              4114400100022 
-STATUS      DATA ARE TAKEN FROM THE REFERENCE                     4114400100023 
-HISTORY    (19940414C)  + + COMPILED AT THE CENTRE - CJD + +      4114400100024 
-           (19950422U)  - - REACTION CODE IN SAN 003 CORRECTED    4114400100025 
-           (20010311A) DATE is corrected                          4114400100026 
-ENDBIB              24          0                                 4114400100027 
-COMMON               2          3                                 4114400100028 
-EN         EN-RSL                                                 4114400100029 
-MEV        MEV                                                    4114400100030 
-  1.49       0.05                                                 4114400100031 
-ENDCOMMON            3          0                                 4114400100032 
-ENDSUBENT           31          0                                 4114400199999 
-SUBENT        41144002   20010311                             00004114400200001 
-BIB                  1          2                                 4114400200002 
-REACTION   (92-U-235(N,X)0-NN-1,,SIG,,SPA)  AVERAGED OVER 'EN-RSL'4114400200003 
-                  ENERGY DISTRIBUTION                             4114400200004 
-ENDBIB               2          0                                 4114400200005 
-NOCOMMON             0          0                                 4114400200006 
-DATA                 2          1                                 4114400200007 
-DATA       DATA-ERR                                               4114400200008 
-B          B                                                      4114400200009 
-   3.52       0.25                                                4114400200010 
-ENDDATA              3          0                                 4114400200011 
-ENDSUBENT           10          0                                 4114400299999 
-SUBENT        41144003   20010311                             00004114400300001 
-BIB                  2          4                                 4114400300002 
-REACTION   (92-U-235(N,F),,DA/DE,N,RSD/SPA) AVERAGED OVER 'EN-RSL'4114400300003 
-            AND SECONDARY ENERGY INTERVAL GIVEN IN THE DATA SECT. 4114400300004 
-                    DATA ARE GIVEN RELATIVE TO 90 ADEG            4114400300005 
-HISTORY    (19950422C)  REACTION CODE CORRECTED FROM ,DA/DE,N,SPA 4114400300006 
-ENDBIB               4          0                                 4114400300007 
-COMMON               1          3                                 4114400300008 
-ANG                                                               4114400300009 
-ADEG                                                              4114400300010 
-  150.                                                            4114400300011 
-ENDCOMMON            3          0                                 4114400300012 
-DATA                 4          4                                 4114400300013 
-E-MIN      E-MAX      DATA       DATA-ERR                         4114400300014 
-MEV        MEV        NO-DIM     NO-DIM                           4114400300015 
-   2.         4.        1.070      0.01                           4114400300016 
-   4.         6.        1.071      0.02                           4114400300017 
-   6.         8.        1.105      0.04                           4114400300018 
-   8.        10.        1.086      0.09                           4114400300019 
-ENDDATA              6          0                                 4114400300020 
-ENDSUBENT           19          0                                 4114400399999 
-ENDENTRY             3          0                                 4114499999999 
+ENTRY            41144   20151001                             417141144  0    1 
+SUBENT        41144001   20151001                             417141144  1    1 
+BIB                 15         43                                 41144  1    2 
+INSTITUTE  (4RUSFEI)                                              41144  1    3 
+           (3DDRTUD)  Maerten, Ruben                              41144  1    4 
+REFERENCE  (J,AE,69,(1),28,1990)  Neutron spectrum curve is given 41144  1    5 
+           (J,SJA,69,(1),583,1990) H.Maerten,A.Ruben              41144  1    6 
+REL-REF    (I,,N.I.Fetisov+,J,PTE,,(6),22,1980)                   41144  1    7 
+           Details of inc.source .                                41144  1    8 
+           (I,,N.I.Fetisov+,J,IET,23,1340,1980)                   41144  1    9 
+           Engl.transl.of PTE,,(6),1980                           41144  1   10 
+           (M,,G.N.Lovchikova+,R,FEI-1564,1984)                   41144  1   11 
+AUTHOR     (H.Maerten, A.Ruben, S.E.Sukhikh, G.N.Lovchikova,      41144  1   12 
+           V.A.Vinogradov, B.N.Zhuravlev, O.A.Sal'nikov)          41144  1   13 
+TITLE       Spectra of the fission prompt neutrons arising        41144  1   14 
+            at the interaction of 1.5-MeV neutrons with U-235     41144  1   15 
+            nucleus                                               41144  1   16 
+FACILITY   (VDG,4RUSFEI)  EGP-10M accelerator                     41144  1   17 
+INC-SOURCE (P-T)  Gas tritium target                              41144  1   18 
+SAMPLE      Hollow cylinder of metallic uranium                   41144  1   19 
+            contains 1.093 moles of U-235.                        41144  1   20 
+            Hollow graphite cylinder of 3cm outside diameter,     41144  1   21 
+           4.5cm length, 0.5cm thickness, contained 2.367mole C-1241144  1   22 
+METHOD     (TOF)  Time resolution 2 nsec(HWHM)                    41144  1   23 
+DETECTOR   (SCIN)  Stilbene detector for neutrons                 41144  1   24 
+            neutron recording threshold 0.6 MeV.                  41144  1   25 
+           (FISCH) Cf-252 fis.chamber to measure neutron detection41144  1   26 
+                   efficiency.                                    41144  1   27 
+           (LONGC)                                                41144  1   28 
+MONITOR    (98-CF-252(0,F),,NU/DE)                                41144  1   29 
+           For neutron detection efficiency as function of energy.41144  1   30 
+           ((MONIT)6-C-12(N,EL)6-C-12,,DA)                        41144  1   31 
+           Differential U-235 CS was determined by normalization  41144  1   32 
+           TO elastic scattering CS for carbon , which measured at41144  1   33 
+           90 deg relative to incident neutron beam.              41144  1   34 
+MONIT-REF  ((MONIT),V.M.Bychkov+,R,FEI-1917,1988)                 41144  1   35 
+CORRECTION   For attenuation and multiple scattering -            41144  1   36 
+           from 5% at 2-6 MeV to 2.% above 6 MeV.                 41144  1   37 
+ERR-ANALYS (DATA-ERR)  Not specified                              41144  1   38 
+HISTORY    (19940414C)  + + Compiled at the centre - CJD + +      41144  1   39 
+           (19950422U)  - - REACTION code in SAN 003 corrected    41144  1   40 
+           (20010311A) DATE is corrected                          41144  1   41 
+           (20151001A) M.M. Ref.of Engl.translations were added.  41144  1   42 
+            Subent 004 was added.                                 41144  1   43 
+           Second ref. was moved in REL-REF.                      41144  1   44 
+           MONIT, MONIT-REF,REL-REF were added.                   41144  1   45 
+ENDBIB              43          0                                 41144  1   46 
+COMMON               3          3                                 41144  1   47 
+EN         EN-RSL-HW  MONIT                                       41144  1   48 
+MEV        MEV        B/SR                                        41144  1   49 
+  1.49       0.05      0.152                                      41144  1   50 
+ENDCOMMON            3          0                                 41144  1   51 
+ENDSUBENT           50          0                                 41144  199999 
+SUBENT        41144002   20151001                             417141144  2    1 
+BIB                  3          4                                 41144  2    2 
+REACTION   (92-U-235(N,X)0-NN-1,,SIG,,SPA)  Averaged over 'EN-RSL'41144  2    3 
+                  energy distribution                             41144  2    4 
+ANALYSIS   (INTAD)                                                41144  2    5 
+STATUS     (TABLE) Text, page 584 of SJA,69,(1),583,1990          41144  2    6 
+ENDBIB               4          0                                 41144  2    7 
+NOCOMMON             0          0                                 41144  2    8 
+DATA                 2          1                                 41144  2    9 
+DATA       DATA-ERR                                               41144  2   10 
+B          B                                                      41144  2   11 
+   3.52       0.25                                                41144  2   12 
+ENDDATA              3          0                                 41144  2   13 
+ENDSUBENT           12          0                                 41144  299999 
+SUBENT        41144003   20151001                             417141144  3    1 
+BIB                  3          7                                 41144  3    2 
+REACTION   (92-U-235(N,F)0-NN-1,PAR,DA,,RSD/SPA) Averaged over    41144  3    3 
+           EN-RSL and secondary energy interval given in the data 41144  3    4 
+           sect.  Data are given relative to 90 ADEG              41144  3    5 
+STATUS     (TABLE) Table 2 of SJA,69,(1),583,1990                 41144  3    6 
+HISTORY    (19950422C)  REACTION code corrected from ,DA/DE,N,SPA 41144  3    7 
+           (20151001A) N was moved from SF7 into SF4 according to 41144  3    8 
+           comment of N.Otsuka (NDS,IAEA).; ,,DA/DE -> PAR,DA     41144  3    9 
+ENDBIB               7          0                                 41144  3   10 
+COMMON               1          3                                 41144  3   11 
+ANG                                                               41144  3   12 
+ADEG                                                              41144  3   13 
+  150.                                                            41144  3   14 
+ENDCOMMON            3          0                                 41144  3   15 
+DATA                 4          4                                 41144  3   16 
+E-MIN      E-MAX      DATA       DATA-ERR                         41144  3   17 
+MEV        MEV        NO-DIM     NO-DIM                           41144  3   18 
+   2.         4.        1.070      0.01                           41144  3   19 
+   4.         6.        1.071      0.02                           41144  3   20 
+   6.         8.        1.105      0.04                           41144  3   21 
+   8.        10.        1.086      0.09                           41144  3   22 
+ENDDATA              6          0                                 41144  3   23 
+ENDSUBENT           22          0                                 41144  399999 
+SUBENT        41144004   20151001                             417141144  4    1 
+BIB                  4          7                                 41144  4    2 
+REACTION   (92-U-235(N,X)0-NN-1,,KEM,,SPA)                        41144  4    3 
+ANALYSIS    Measured spectrum shapes were analyzed by least-square41144  4    4 
+           fitting using Maxwellian distribution.                 41144  4    5 
+MISC-COL   (MISC1) Neutron angle                                  41144  4    6 
+           (MISC2) Max. energy of outgoing neutrons.              41144  4    7 
+                   Min.energy 2 MeV                               41144  4    8 
+STATUS     (TABLE) Table 1 of SJA,69,(1),583,1990                 41144  4    9 
+ENDBIB               7          0                                 41144  4   10 
+NOCOMMON             0          0                                 41144  4   11 
+DATA                 4          6                                 41144  4   12 
+DATA       DATA-ERR   MISC1      MISC2                            41144  4   13 
+MEV        MEV        ADEG       MEV                              41144  4   14 
+1.32       0.04        90.       6.                               41144  4   15 
+1.33       0.04       150.       6.                               41144  4   16 
+1.32       0.04         0.       6.                               41144  4   17 
+1.30       0.04        90.       10.                              41144  4   18 
+1.30       0.04       150.       10.                              41144  4   19 
+1.30       0.04         0.       10.                              41144  4   20 
+ENDDATA              8          0                                 41144  4   21 
+ENDSUBENT           20          0                                 41144  499999 
+SUBENT        41144005   20151001                             417141144  5    1 
+BIB                  5         10                                 41144  5    2 
+REACTION   (92-U-235(N,F)0-NN-1,,DA/DE,,SPA)                      41144  5    3 
+            Fission neutron spectra.                              41144  5    4 
+EN-SEC     (E,N)                                                  41144  5    5 
+ERR-ANALYS (E-ERR-DIG) Digitizing error of E                      41144  5    6 
+           (ERR-DIG)   Digitizing error of DATA and DATA-ERR      41144  5    7 
+            Probably total - contributions are described in       41144  5    8 
+           REL-REF R,FEI-1564,1984.                               41144  5    9 
+STATUS     (CURVE) Fig.1 of SJA,69,(1),583,1990                   41144  5   10 
+HISTORY    (20151001A) 0-NN-1 was added in SF4 according to       41144  5   11 
+           comment of N.Otsuka (NDS,IAEA).                        41144  5   12 
+ENDBIB              10          0                                 41144  5   13 
+COMMON               2          3                                 41144  5   14 
+E-ERR-DIG  ERR-DIG                                                41144  5   15 
+MEV        PER-CENT                                               41144  5   16 
+0.019       0.71                                                  41144  5   17 
+ENDCOMMON            3          0                                 41144  5   18 
+DATA                 4        110                                 41144  5   19 
+ANG        E          DATA       DATA-ERR                         41144  5   20 
+ADEG       MEV        MB/SR/MEV  MB/SR/MEV                        41144  5   21 
+  90.       1.8394      64.55                                     41144  5   22 
+  90.       2.0484      57.25                                     41144  5   23 
+  90.       2.2411      50.41                                     41144  5   24 
+  90.       2.5151      45.72                                     41144  5   25 
+  90.       2.7078      40.25                                     41144  5   26 
+  90.       2.9332      36.51                                     41144  5   27 
+  90.       3.0615      33.12                                     41144  5   28 
+  90.       3.2543      29.38                                     41144  5   29 
+  90.       3.4794      25.86                                     41144  5   30 
+  90.       3.6722      22.94                                     41144  5   31 
+  90.       3.9297      20.34                                     41144  5   32 
+  90.       4.0738      17.78                                     41144  5   33 
+  90.       4.2986      15.42                                     41144  5   34 
+  90.       4.4753      13.68                                     41144  5   35 
+  90.       4.7004      12.13                                     41144  5   36 
+  90.       4.8929      10.45                                     41144  5   37 
+  90.       5.1173      8.727                                     41144  5   38 
+  90.       5.2938      7.684                                     41144  5   39 
+  90.       5.5025      6.664                                     41144  5   40 
+  90.       5.6952      5.867                                     41144  5   41 
+  90.       5.8876      5.014                                     41144  5   42 
+  90.       6.1122      4.252                                     41144  5   43 
+  90.       6.3371      3.688                                     41144  5   44 
+  90.       6.5291      3.059                                     41144  5   45 
+  90.       6.7540      2.653                                     41144  5   46 
+  90.       6.9311      2.461                                     41144  5   47 
+  90.       7.1560      2.134                                     41144  5   48 
+  90.       7.3160      1.824                                     41144  5   49 
+  90.       7.5083      1.547                                     41144  5   50 
+  90.       7.7819      1.362                                     41144  5   51 
+  90.       7.9743      1.172    0.178                            41144  5   52 
+  90.       8.1524      1.172                                     41144  5   53 
+  90.       8.3587     0.8308                                     41144  5   54 
+  90.       8.5667     0.6788                                     41144  5   55 
+  90.       8.7614     0.7096                                     41144  5   56 
+  90.       8.9699     0.6063                                     41144  5   57 
+  90.       9.1635     0.5752                                     41144  5   58 
+  90.       9.3729     0.5256                                     41144  5   59 
+  90.       9.5763     0.2935                                     41144  5   60 
+  90.       9.7737     0.3809                                     41144  5   61 
+  90.       9.9163     0.2955                                     41144  5   62 
+  90.      10.208      0.3088                                     41144  5   63 
+  90.      10.403      0.3156                                     41144  5   64 
+  90.      10.529      0.2448                                     41144  5   65 
+  90.      10.782      0.1495    0.0844                           41144  5   66 
+  90.      10.980      0.1984                                     41144  5   67 
+  90.      11.188      0.1597                                     41144  5   68 
+  90.      11.335      0.1881                                     41144  5   69 
+  90.      11.564      0.2183                                     41144  5   70 
+  90.      11.769      0.1405                                     41144  5   71 
+  90.      11.957      0.8579E-01                                 41144  5   72 
+  90.      12.179      0.5948E-01                                 41144  5   73 
+  90.      12.537      0.7003E-01                                 41144  5   74 
+  90.      12.843      0.6164E-01                                 41144  5   75 
+  90.      12.999      0.3600E-01                                 41144  5   76 
+ 150.       1.9370      67.49                                     41144  5   77 
+ 150.       2.1301      61.22                                     41144  5   78 
+ 150.       2.3229      54.30                                     41144  5   79 
+ 150.       2.5326      51.13                                     41144  5   80 
+ 150.       2.7254      45.35                                     41144  5   81 
+ 150.       2.9344      40.53                                     41144  5   82 
+ 150.       3.0948      35.68                                     41144  5   83 
+ 150.       3.3038      31.89                                     41144  5   84 
+ 150.       3.5128      28.28                                     41144  5   85 
+ 150.       3.7058      25.46                                     41144  5   86 
+ 150.       3.9146      22.25                                     41144  5   87 
+ 150.       4.1232      19.16                                     41144  5   88 
+ 150.       4.3320      16.74                                     41144  5   89 
+ 150.       4.5083      14.52                                     41144  5   90 
+ 150.       4.7175      13.07                                     41144  5   91 
+ 150.       4.9263      11.42                                     41144  5   92 
+ 150.       5.1022      9.545                                     41144  5   93 
+ 150.       5.3434      8.340                                     41144  5   94 
+ 150.       5.5688      7.564                                     41144  5   95 
+ 150.       5.7288      6.513                                     41144  5   96 
+ 150.       5.9213      5.607                                     41144  5   97 
+ 150.       6.1135      4.756                                     41144  5   98 
+ 150.       6.3383      4.064                                     41144  5   99 
+ 150.       6.5311      3.631                                     41144  5  100 
+ 150.       6.7388      2.880                                     41144  5  101 
+ 150.       6.9319      2.632                                     41144  5  102 
+ 150.       7.1406      2.283                                     41144  5  103 
+ 150.       7.3494      1.980                                     41144  5  104 
+ 150.       7.5414      1.654                                     41144  5  105 
+ 150.       7.7671      1.534                                     41144  5  106 
+ 150.       7.9429      1.273                                     41144  5  107 
+ 150.       8.1516      1.096    0.1449                           41144  5  108 
+ 150.       8.3765     0.9574                                     41144  5  109 
+ 150.       8.5692     0.8366                                     41144  5  110 
+ 150.       8.7924     0.6297                                     41144  5  111 
+ 150.       8.9876     0.6883                                     41144  5  112 
+ 150.       9.1487     0.6433                                     41144  5  113 
+ 150.       9.3421     0.6012                                     41144  5  114 
+ 150.       9.6148     0.4912    0.1187                           41144  5  115 
+ 150.       9.7561     0.3406                                     41144  5  116 
+ 150.      10.016      0.3723                                     41144  5  117 
+ 150.      10.226      0.3505                                     41144  5  118 
+ 150.      10.414      0.2173                                     41144  5  119 
+ 150.      10.555      0.1368                                     41144  5  120 
+ 150.      10.808      0.3297                                     41144  5  121 
+ 150.      10.982      0.2463    0.0882                           41144  5  122 
+ 150.      11.189      0.1813                                     41144  5  123 
+ 150.      11.413      0.1416                                     41144  5  124 
+ 150.      11.621      0.1210                                     41144  5  125 
+ 150.      11.810      0.7337E-01                                 41144  5  126 
+ 150.      12.063      0.4480E-01                                 41144  5  127 
+ 150.      12.304      0.4094E-01                                 41144  5  128 
+ 150.      12.669      0.8757E-01                                 41144  5  129 
+ 150.      12.835      0.2988E-01                                 41144  5  130 
+ 150.      13.060      0.2650E-01                                 41144  5  131 
+ENDDATA            112          0                                 41144  5  132 
+ENDSUBENT          131          0                                 41144  599999 
+ENDENTRY             5          0                                 4114499999999 
