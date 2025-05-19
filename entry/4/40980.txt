@@ -1,14 +1,14 @@
-ENTRY            40980   20180129                             417740980  0    1 
-SUBENT        40980001   20180129                             417740980  1    1 
-BIB                 11         26                                 40980  1    2 
+ENTRY            40980   20230303                             421240980  0    1 
+SUBENT        40980001   20230303                             421240980  1    1 
+BIB                 10         31                                 40980  1    2 
 TITLE      Study of the neutron-tritium interaction in the        40980  1    3 
            medium neutron energy range                            40980  1    4 
 AUTHOR     (A.L.Kirilyuk,A.V.Grebnev,P.N.Vorona,N.L.Gnidak)       40980  1    5 
-REFERENCE  (C,87KIEV,2,298,198709) Data are given                 40980  1    6 
+REFERENCE  (C,87KIEV,2,298,1987) Data are given                   40980  1    6 
 INSTITUTE  (4UKRIJD)                                              40980  1    7 
 MONITOR    (6-C-12(N,TOT),,SIG)                                   40980  1    8 
 FACILITY   (REAC,4UKRIJD) Reactor WWR-M                           40980  1    9 
-METHOD     (FNB)  Method of the filtered neutron beams. Filters   40980  1   10 
+METHOD     (FNB) Filters                                          40980  1   10 
            - Sc (2keV): 85 cm Sc + 6cm Al + 3cm Co + 0.6cm V +    40980  1   11 
            0.2cm Ti + 0.2 g/cm2 B(4)C.                            40980  1   12 
            - Si (145keV) : 156cm Si + 0.2 g/cm2 B(4)C .           40980  1   13 
@@ -16,214 +16,159 @@ METHOD     (FNB)  Method of the filtered neutron beams. Filters   40980  1   10
            energy range 0.024 - 60 eV.                            40980  1   15 
 DETECTOR   (PROPC) Proportional counters filled with He-3         40980  1   16 
                    and methane                                    40980  1   17 
-CORRECTION  Background ~7% st 2keV, 0.7% at 145keV .              40980  1   18 
-ERR-ANALYS (ERR-T) Total error                                    40980  1   19 
-HISTORY    (19890829C) Compiled at the centre - CJD               40980  1   20 
-           (20130125A) M.M. Upper -> lower case correction.       40980  1   21 
-            Dates were corrected for 4-digits year.               40980  1   22 
-            BIB information was updated.                          40980  1   23 
-             SIG,,RAW -> TRN (transmission).                      40980  1   24 
-            Subents 009, 010 were added.                          40980  1   25 
-           (20180129A) M.M. Thickness was added in COMMON block of40980  1   26 
-           Subents 009,010 . BIB information was added in METHOD, 40980  1   27 
-           CORRECTION.                                            40980  1   28 
-ENDBIB              26          0                                 40980  1   29 
-NOCOMMON             0          0                                 40980  1   30 
-ENDSUBENT           29          0                                 40980  199999 
-SUBENT        40980002   20180129                             417740980  2    1 
-BIB                  4          5                                 40980  2    2 
+CORRECTION  Background ~7% st 2 keV, 0.7% at 145 keV .            40980  1   18 
+HISTORY    (19890829C) Compiled at the centre - CJD               40980  1   19 
+           (20130125A) M.M. Upper -> lower case correction.       40980  1   20 
+            Dates were corrected for 4-digits year.               40980  1   21 
+            BIB information was updated.                          40980  1   22 
+             SIG,,RAW -> TRN (transmission).                      40980  1   23 
+            Subents 009, 010 were added.                          40980  1   24 
+           (20180129A) M.M. Thickness was added in COMMON block of40980  1   25 
+           Subents 009,010 . BIB information was added in METHOD, 40980  1   26 
+           CORRECTION.                                            40980  1   27 
+           (20230303A) Subent 010 was corrected.                  40980  1   28 
+            Minor correction in all Subents.                      40980  1   29 
+            ERR-ANALYS was corrected.                             40980  1   30 
+            Subents were merged according to recommendation of    40980  1   31 
+            N.Otsuka (NDS,IAEA):                                  40980  1   32 
+            003,005 in 003, 006-007,009-010 in 006.               40980  1   33 
+ENDBIB              31          0                                 40980  1   34 
+NOCOMMON             0          0                                 40980  1   35 
+ENDSUBENT           34          0                                 40980  199999 
+SUBENT        40980002   20230303                             421240980  2    1 
+BIB                  5          6                                 40980  2    2 
 REACTION   (6-C-12(N,TOT),,SIG)                                   40980  2    3 
-REL-REF    (A,,V.P.Vertebnyj+,J,YK,,(1),32,1980)                  40980  2    4 
+REL-REF    (A,40729002,V.P.Vertebnyj+,J,YK,,(1/36),32,1980)       40980  2    4 
             Authors' other measurement.                           40980  2    5 
-STATUS     (TABLE) Text, page 300 of C,87KIEV,2,298,1987 .        40980  2    6 
-HISTORY    (20180129A) M.M. REL-REF was added.                    40980  2    7 
-ENDBIB               5          0                                 40980  2    8 
-NOCOMMON             0          0                                 40980  2    9 
-DATA                 3          1                                 40980  2   10 
-EN         DATA       ERR-T                                       40980  2   11 
-KEV        B          B                                           40980  2   12 
-  2.         4.737      .008                                      40980  2   13 
-ENDDATA              3          0                                 40980  2   14 
-ENDSUBENT           13          0                                 40980  299999 
-SUBENT        40980003   20130125                             41594098000300001 
-BIB                  3          5                                 4098000300002 
-REACTION  1(1-H-1(N,TOT),,TRN)      Transmission                  4098000300003 
-          2(1-H-1(N,TOT),,SIG)                                    4098000300004 
-SAMPLE      Hydrogen-saturated scandium .                         4098000300005 
-            H-1 content is not given .                            4098000300006 
-STATUS     (TABLE) Table 1 of C,87KIEV,2,298,1987 .               4098000300007 
-ENDBIB               5          0                                 4098000300008 
-COMMON               2          3                                 4098000300009 
-EN         EN-RSL-FW                                              4098000300010 
-KEV        KEV                                                    4098000300011 
-  2.         .65                                                  4098000300012 
-ENDCOMMON            3          0                                 4098000300013 
-DATA                 5          4                                 4098000300014 
-THICKNESS  DATA      1ERR-T     1DATA      2ERR-T     2           4098000300015 
-ATOMS/B    NO-DIM     NO-DIM     B          B                     4098000300016 
-  6.5068E-3  0.8751     4.6  E-04  20.441     0.082               4098000300017 
-  1.3883E-2  0.7545     4.6  E-04  20.233     0.040               4098000300018 
-  1.3884E-2  0.75265    7.2  E-04  20.333     0.071               4098000300019 
-  5.6831E-2  0.3177     4.3  E-04  20.121     0.024               4098000300020 
-ENDDATA              6          0                                 4098000300021 
-ENDSUBENT           20          0                                 4098000399999 
-SUBENT        40980004   20130125                             41594098000400001 
-BIB                  3          6                                 4098000400002 
-REACTION   (1-H-1(N,TOT),,SIG)                                    4098000400003 
-ANALYSIS    Data were obtained by statistical averaging of several4098000400004 
-            runs:                                                 4098000400005 
-STATUS     (DEP,40980003)                                         4098000400006 
-           (DEP,40980005)                                         4098000400007 
-           (TABLE) Text, page 300 of C,87KIEV,2,298,1987 .        4098000400008 
-ENDBIB               6          0                                 4098000400009 
-NOCOMMON             0          0                                 4098000400010 
-DATA                 3          2                                 4098000400011 
-EN         DATA       ERR-T                                       4098000400012 
-KEV        B          B                                           4098000400013 
-  2.         20.18       0.02                                     4098000400014 
- 145.        11.09       0.02                                     4098000400015 
-ENDDATA              4          0                                 4098000400016 
-ENDSUBENT           15          0                                 4098000499999 
-SUBENT        40980005   20130125                             41594098000500001 
-BIB                  3          5                                 4098000500002 
-REACTION  1(1-H-1(N,TOT),,SIG)                                    4098000500003 
-          2(1-H-1(N,TOT),,TRN)      Transmission                  4098000500004 
-SAMPLE      Hydrogen-saturated scandium.                          4098000500005 
-            H-1 content is not given .                            4098000500006 
-STATUS     (TABLE) Table 1 of C,87KIEV,2,298,1987 .               4098000500007 
-ENDBIB               5          0                                 4098000500008 
-COMMON               1          3                                 4098000500009 
-EN                                                                4098000500010 
-KEV                                                               4098000500011 
- 145.                                                             4098000500012 
-ENDCOMMON            3          0                                 4098000500013 
-DATA                 5          3                                 4098000500014 
-THICKNESS  DATA      1ERR-T     1DATA      2ERR-T     2           4098000500015 
-ATOMS/B    B          B          NO-DIM     NO-DIM                4098000500016 
-  6.5068E-3   11.189   0.091      .92822        5.6E-04           4098000500017 
-  1.3883E-2   11.074   0.079      .85102        9.8E-04           4098000500018 
-  5.6831E-2   11.083   0.020      .52622        6.1E-04           4098000500019 
-ENDDATA              5          0                                 4098000500020 
-ENDSUBENT           19          0                                 4098000599999 
-SUBENT        40980006   20130125                             41594098000600001 
-BIB                  3          6                                 4098000600002 
-REACTION  1(1-H-3(N,TOT),,TRN)      Transmission                  4098000600003 
-          2(1-H-3(N,TOT),,SIG)                                    4098000600004 
-SAMPLE      Tritium-saturated scandium to the level of            4098000600005 
-            saturation 1.656 .                                    4098000600006 
-STATUS     (TABLE) Table 2 of C,87KIEV,2,298,1987 .               4098000600007 
-            Thickness values - in text, page 300.                 4098000600008 
-ENDBIB               6          0                                 4098000600009 
-COMMON               1          3                                 4098000600010 
-EN                                                                4098000600011 
-KEV                                                               4098000600012 
- 2.                                                               4098000600013 
-ENDCOMMON            3          0                                 4098000600014 
-DATA                 6          3                                 4098000600015 
-THICKNESS  DATA      1ERR-T     1DATA      2ERR-T     2ERR-S     24098000600016 
-ATOMS/B    NO-DIM     NO-DIM     B          B          B          4098000600017 
-  1.3147E-2   0.97566     4.6E-04 1.733       0.042     0.034     4098000600018 
-  2.4025E-2   0.95655     5.3E-04 1.776       0.031     0.023     4098000600019 
-  2.4026E-2   0.95489     6.0E-04 1.817       0.034     0.025     4098000600020 
-ENDDATA              5          0                                 4098000600021 
-ENDSUBENT           20          0                                 4098000699999 
-SUBENT        40980007   20130125                             41594098000700001 
-BIB                  3          6                                 4098000700002 
-REACTION  1(1-H-3(N,TOT),,TRN)      Transmission                  4098000700003 
-          2(1-H-3(N,TOT),,SIG)                                    4098000700004 
-SAMPLE      Hydrogen-saturated scandium,level of saturation 1.656 4098000700005 
-            H-1 content is .3 % , H-2 content is 0.2 %.           4098000700006 
-STATUS     (TABLE) Table 2 of C,87KIEV,2,298,1987 .               4098000700007 
-            Thickness values - in text, page 300.                 4098000700008 
-ENDBIB               6          0                                 4098000700009 
-COMMON               1          3                                 4098000700010 
-EN                                                                4098000700011 
-KEV                                                               4098000700012 
- 145.                                                             4098000700013 
-ENDCOMMON            3          0                                 4098000700014 
-DATA                 6          2                                 4098000700015 
-THICKNESS  DATA      1ERR-T     1DATA      2ERR-T     2ERR-S     24098000700016 
-ATOMS/B    NO-DIM     NO-DIM     B          B          B          4098000700017 
- 2.4025E-02  0.95210      4.9E-04   1.925     0.025      0.021    4098000700018 
- 3.8606E-02  0.93450      5.9E-04   1.647     0.021      0.016    4098000700019 
-ENDDATA              4          0                                 4098000700020 
-ENDSUBENT           19          0                                 4098000799999 
-SUBENT        40980008   20180129                             417740980  8    1 
-BIB                  5         11                                 40980  8    2 
-REACTION   (1-H-3(N,TOT),,SIG)                                    40980  8    3 
+ERR-ANALYS (DATA-ERR) Total error                                 40980  2    6 
+STATUS     (TABLE) Text, page 300 of C,87KIEV,2,298,1987 .        40980  2    7 
+HISTORY    (20180129A) M.M. REL-REF was added.                    40980  2    8 
+ENDBIB               6          0                                 40980  2    9 
+NOCOMMON             0          0                                 40980  2   10 
+DATA                 3          1                                 40980  2   11 
+EN         DATA       DATA-ERR                                    40980  2   12 
+KEV        B          B                                           40980  2   13 
+  2.         4.737      .008                                      40980  2   14 
+ENDDATA              3          0                                 40980  2   15 
+ENDSUBENT           14          0                                 40980  299999 
+SUBENT        40980003   20230303                             421240980  3    1 
+BIB                  6         10                                 40980  3    2 
+REACTION  1(1-H-1(N,TOT),,TRN)                                    40980  3    3 
+          2(1-H-1(N,TOT),,SIG)                                    40980  3    4 
+SAMPLE      Hydrogen-saturated scandium .                         40980  3    5 
+            H-1 content is not given .                            40980  3    6 
+COMMENT    Of compiler M.M. EN-RSL-FW=0.65 keV at 2 keV is absent 40980  3    7 
+           in C,87KIEV,2,298,1987. May be, it's received from     40980  3    8 
+           authors.                                               40980  3    9 
+ERR-ANALYS (DATA-ERR) Total error                                 40980  3   10 
+STATUS     (TABLE) Table 1 of C,87KIEV,2,298,1987 .               40980  3   11 
+HISTORY    (20230303A) Subents 003, 005 were merged.              40980  3   12 
+ENDBIB              10          0                                 40980  3   13 
+NOCOMMON             0          0                                 40980  3   14 
+DATA                 6          7                                 40980  3   15 
+EN         THICKNESS 1DATA      1DATA-ERR  1DATA      2DATA-ERR  240980  3   16 
+KEV        ATOMS/B    NO-DIM     NO-DIM     B          B          40980  3   17 
+   2.        6.5068E-3  0.8751     4.6  E-04  20.441     0.082    40980  3   18 
+   2.        1.3883E-2  0.7545     4.6  E-04  20.233     0.040    40980  3   19 
+   2.        1.3884E-2  0.75265    7.2  E-04  20.333     0.071    40980  3   20 
+   2.        5.6831E-2  0.3177     4.3  E-04  20.121     0.024    40980  3   21 
+ 145.        6.5068E-3   .92822      5.6E-04  11.189     0.091    40980  3   22 
+ 145.        1.3883E-2   .85102      9.8E-04  11.074     0.079    40980  3   23 
+ 145.        5.6831E-2   .52622      6.1E-04  11.083     0.020    40980  3   24 
+ENDDATA              9          0                                 40980  3   25 
+ENDSUBENT           24          0                                 40980  399999 
+SUBENT        40980004   20230303                             421240980  4    1 
+BIB                  5          7                                 40980  4    2 
+REACTION   (1-H-1(N,TOT),,SIG,,AV)                                40980  4    3 
+ANALYSIS    Data were obtained by statistical averaging of several40980  4    4 
+            runs.                                                 40980  4    5 
+ERR-ANALYS (DATA-ERR) Total error                                 40980  4    6 
+STATUS     (DEP,40980003) Thickness-dependent C-S                 40980  4    7 
+           (TABLE) Text, page 300 of C,87KIEV,2,298,1987 .        40980  4    8 
+HISTORY    (20230303A) AV was added in SF8                        40980  4    9 
+ENDBIB               7          0                                 40980  4   10 
+NOCOMMON             0          0                                 40980  4   11 
+DATA                 3          2                                 40980  4   12 
+EN         DATA       DATA-ERR                                    40980  4   13 
+KEV        B          B                                           40980  4   14 
+  2.         20.18       0.02                                     40980  4   15 
+ 145.        11.09       0.02                                     40980  4   16 
+ENDDATA              4          0                                 40980  4   17 
+ENDSUBENT           16          0                                 40980  499999 
+NOSUBENT      40980005   20230303                             421240980  5    1 
+SUBENT        40980006   20230303                             421240980  6    1 
+BIB                  7         22                                 40980  6    2 
+REACTION  1(1-H-3(N,TOT),,TRN)                                    40980  6    3 
+          2(1-H-3(N,TOT),,SIG)                                    40980  6    4 
+SAMPLE      Tritium-saturated scandium to the level of            40980  6    5 
+            saturation 1.656 .                                    40980  6    6 
+            Sample 1 : thickness 15 mm - (0.024025+-0.00016) 1/b, 40980  6    7 
+            Sample 2 : thickness 15 mm - (0.038606+-0.00026) 1/b, 40980  6    8 
+            Sample 4 : thickness 5 mm - (0.013147+-0.00009) 1/b.  40980  6    9 
+COMMENT    Of compiler M.M. Thickness of several samples used was 40980  6   10 
+           calculated as sum of thicknesses for corresponding     40980  6   11 
+           samples 1, 2, 4 ( see Flag 12, 14, 124).               40980  6   12 
+FLAG       (4.)  Sample 4                                         40980  6   13 
+           (1.)  Sample 1                                         40980  6   14 
+           (2.)  Sample 2                                         40980  6   15 
+           (12.) Sample 1 + Sample 2                              40980  6   16 
+           (14.) Sample 1 + Sample 4                              40980  6   17 
+           (124.) Sample 1 + Sample 2 + Sample 4                  40980  6   18 
+ERR-ANALYS (ERR-T) Total error                                    40980  6   19 
+           (ERR-S) Statistical error                              40980  6   20 
+STATUS     (TABLE) Table 2 of C,87KIEV,2,298,1987 .               40980  6   21 
+            Thickness values - in text, page 300.                 40980  6   22 
+HISTORY    (20230303A) Subents were merged :                      40980  6   23 
+                      006-007,009-010 in 006.                     40980  6   24 
+ENDBIB              22          0                                 40980  6   25 
+NOCOMMON             0          0                                 40980  6   26 
+DATA                 8          9                                 40980  6   27 
+EN         THICKNESS 1DATA      1ERR-T     1DATA      2ERR-T     240980  6   28 
+ERR-S     2FLAG                                                   40980  6   29 
+KEV        ATOMS/B    NO-DIM     NO-DIM     B          B          40980  6   30 
+B          NO-DIM                                                 40980  6   31 
+   2.        1.3147E-2   0.97566     4.6E-04   1.733     0.042    40980  6   32 
+ 0.034       4.                                                   40980  6   33 
+   2.        2.4025E-2   0.95655     5.3E-04   1.776     0.031    40980  6   34 
+ 0.023       1.                                                   40980  6   35 
+   2.        2.4025E-2   0.95489     6.0E-04   1.817     0.034    40980  6   36 
+ 0.025       1.                                                   40980  6   37 
+   2.        6.2631E-2   0.89233     6.7E-04   1.748     0.024    40980  6   38 
+ 0.011       12.                                                  40980  6   39 
+   2.        7.5778E-2   0.86503     5.0E-04   1.770     0.023    40980  6   40 
+ 0.007      124.                                                  40980  6   41 
+ 145.        2.4025E-2   0.95210     4.9E-04   1.925     0.025    40980  6   42 
+ 0.021       1.                                                   40980  6   43 
+ 145.        3.7172E-2   0.93035     4.1E-04   1.772     0.017    40980  6   44 
+ 0.014       14.                                                  40980  6   45 
+ 145.        3.8606E-2   0.93450     5.9E-04   1.647     0.021    40980  6   46 
+ 0.016       2.                                                   40980  6   47 
+ 145.        7.5778E-2   0.86752     9.2E-04    1.740    0.019    40980  6   48 
+ 0.011      124.                                                  40980  6   49 
+ENDDATA             22          0                                 40980  6   50 
+ENDSUBENT           49          0                                 40980  699999 
+NOSUBENT      40980007   20230303                             421240980  7    1 
+SUBENT        40980008   20230303                             421240980  8    1 
+BIB                  6         10                                 40980  8    2 
+REACTION   (1-H-3(N,TOT),,SIG,,AV)                                40980  8    3 
 REL-REF    (A,10945001,T.W.Phillips+,J,PR/C,22,384,1980)          40980  8    4 
              1.70+-0.03 barn                                      40980  8    5 
 ANALYSIS    Data were obtained by statistical averaging of several40980  8    6 
             runs:                                                 40980  8    7 
-STATUS     (DEP,40980006)                                         40980  8    8 
-           (DEP,40980007)                                         40980  8    9 
-           (DEP,40980009)                                         40980  8   10 
-           (DEP,40980010)                                         40980  8   11 
-           (TABLE) Text, page 302 of C,87KIEV,2,298,1987 .        40980  8   12 
-HISTORY    (20180129A) M.M. REL-REF was added.                    40980  8   13 
-ENDBIB              11          0                                 40980  8   14 
-NOCOMMON             0          0                                 40980  8   15 
-DATA                 3          2                                 40980  8   16 
-EN         DATA       ERR-T                                       40980  8   17 
-KEV        B          B                                           40980  8   18 
-  2.        1.76        0.01                                      40980  8   19 
-145.        1.77        0.05                                      40980  8   20 
-ENDDATA              4          0                                 40980  8   21 
-ENDSUBENT           20          0                                 40980  899999 
-SUBENT        40980009   20180129                             417740980  9    1 
-BIB                  5         13                                 40980  9    2 
-REACTION  1(1-H-3(N,TOT),,TRN)      Transmission                  40980  9    3 
-          2(1-H-3(N,TOT),,SIG)                                    40980  9    4 
-SAMPLE      Hydrogen-saturated scandium,level of saturation 1.656.40980  9    5 
-            H-1 content is .3 % , H-2 content is 0.2 %.           40980  9    6 
-            Samples 1+4. Thickness:                               40980  9    7 
-            sample 1 - 15mm, 0.024025+-0.00016 at/b,              40980  9    8 
-            sample 4 - 5mm,  0.013147+-0.00009 at/b.              40980  9    9 
-COMMENT    Of compiler M.M. Thickness was calculated as sum of    40980  9   10 
-           thicknesses for samples 1 and 4 .                      40980  9   11 
-STATUS     (TABLE) Table 2 of C,87KIEV,2,298,1987 .               40980  9   12 
-            Thickness values - in text, page 300.                 40980  9   13 
-HISTORY    (20180129A) M.M. Thickness was added in COMMON block.  40980  9   14 
-            Comment was added.                                    40980  9   15 
-ENDBIB              13          0                                 40980  9   16 
-COMMON               2          3                                 40980  9   17 
-EN         THICKNESS                                              40980  9   18 
-KEV        ATOMS/B                                                40980  9   19 
- 145.      0.037172                                               40980  9   20 
-ENDCOMMON            3          0                                 40980  9   21 
-DATA                 5          1                                 40980  9   22 
-DATA      1ERR-T     1DATA      2ERR-T     2ERR-S     2           40980  9   23 
-NO-DIM     NO-DIM     B          B          B                     40980  9   24 
- 0.93035    0.00041    1.772      0.017     0.014                 40980  9   25 
-ENDDATA              3          0                                 40980  9   26 
-ENDSUBENT           25          0                                 40980  999999 
-SUBENT        40980010   20180129                             417740980 10    1 
-BIB                  5         14                                 40980 10    2 
-REACTION  1(1-H-3(N,TOT),,TRN)      Transmission                  40980 10    3 
-          2(1-H-3(N,TOT),,SIG)                                    40980 10    4 
-SAMPLE      Hydrogen-saturated scandium,level of saturation 1.656.40980 10    5 
-            H-1 content is .3 % , H-2 content is 0.2 %.           40980 10    6 
-            Samples 1+2+4. Thickness:                             40980 10    7 
-            sample 1 - 15mm, 0.024025+-0.00016 at/b,              40980 10    8 
-            sample 2 - 15mm, 0.038606+-0.00026 at/b,              40980 10    9 
-            sample 4 - 5mm,  0.013147+-0.00009 at/b.              40980 10   10 
-COMMENT    Of compiler M.M. Thickness was calculated as sum of    40980 10   11 
-           thicknesses for samples 1, 2, 4 .                      40980 10   12 
-STATUS     (TABLE) Table 2 of C,87KIEV,2,298,1987 .               40980 10   13 
-            Thickness values - in text, page 300.                 40980 10   14 
-HISTORY    (20180129A) M.M. Thickness was added in COMMON block.  40980 10   15 
-            Comment was added.                                    40980 10   16 
-ENDBIB              14          0                                 40980 10   17 
-COMMON               2          3                                 40980 10   18 
-EN         THICKNESS                                              40980 10   19 
-KEV        ATOMS/B                                                40980 10   20 
- 145.      0.075778                                               40980 10   21 
-ENDCOMMON            3          0                                 40980 10   22 
-DATA                 6          2                                 40980 10   23 
-EN         DATA      1ERR-T     1DATA      2ERR-T     2ERR-S     240980 10   24 
-KEV        NO-DIM     NO-DIM     B          B          B          40980 10   25 
-   2.       0.86503    0.00050    1.770      0.023      0.007     40980 10   26 
- 145.       0.86752    0.00092    1.740      0.019      0.011     40980 10   27 
-ENDDATA              4          0                                 40980 10   28 
-ENDSUBENT           27          0                                 40980 1099999 
+ERR-ANALYS (DATA-ERR) Total error                                 40980  8    8 
+STATUS     (DEP,40980006) Thickness-dependent C-S                 40980  8    9 
+           (TABLE) Text, page 302 of C,87KIEV,2,298,1987 .        40980  8   10 
+HISTORY    (20180129A) M.M. REL-REF was added.                    40980  8   11 
+           (20230303A) AV was added in SF8                        40980  8   12 
+ENDBIB              10          0                                 40980  8   13 
+NOCOMMON             0          0                                 40980  8   14 
+DATA                 3          2                                 40980  8   15 
+EN         DATA       DATA-ERR                                    40980  8   16 
+KEV        B          B                                           40980  8   17 
+  2.        1.76        0.01                                      40980  8   18 
+145.        1.77        0.05                                      40980  8   19 
+ENDDATA              4          0                                 40980  8   20 
+ENDSUBENT           19          0                                 40980  899999 
+NOSUBENT      40980009   20230303                             421240980  9    1 
+NOSUBENT      40980010   20230303                             421240980 10    1 
 ENDENTRY            10          0                                 4098099999999 
