@@ -1,113 +1,189 @@
-ENTRY            13897   20040624                             00001389700000001 
-SUBENT        13897001   20040624                             00001389700100001 
-BIB                 12         18                                 1389700100002 
-INSTITUTE  (1USAORL,1USACAL,1USAPTN,4ZZZDUB)                      1389700100003 
-REFERENCE  (J,PR/C,56,1138,199708)                                1389700100004 
-AUTHOR     (P.E.Koehler,R.W.Kavanagh,R.B.Vogelaar,Yu.M.Gledenov,  1389700100005 
-           Yu.P.Popov)                                            1389700100006 
-TITLE      26Al(n,p1) and (n,p0) cross sections from thermal      1389700100007 
-            energy to 70 keV and nucleosynthesis of 26Al          1389700100008 
-FACILITY   (MESON,1USALAS) LANSCE.                                1389700100009 
-INC-SOURCE Moderated "white" neutron source.                      1389700100010 
-SAMPLE     Aluminum oxide target enriched in 26Al to a 27Al/26Al  1389700100011 
-            ratio about 16. Target sandwiched between carbon      1389700100012 
-            foils, and supported by a niobium foil.  Samples      1389700100013 
-            contained 4E+15 or 2.6E+15 atoms of 26Al.             1389700100014 
-METHOD     (EDE)                                                  1389700100015 
-DETECTOR   (SIBAR)                                                1389700100016 
-MONIT-REF  (,CARLSON+,R,NISTIR-5177,1993) ENDF standard           1389700100017 
-           ((MONIT2),TRAUTVETTER+,J,ZP/A,323,1,1986)              1389700100018 
-STATUS     No reply from P. Koehler to author proof.              1389700100019 
-HISTORY    (20040519C)                                            1389700100020 
-ENDBIB              18          0                                 1389700100021 
-NOCOMMON             0          0                                 1389700100022 
-ENDSUBENT           21          0                                 1389700199999 
-SUBENT        13897002   20040519                             00001389700200001 
-BIB                  4         10                                 1389700200002 
-REACTION   (13-AL-26(N,P)12-MG-26,PAR,SIG)                        1389700200003 
-MONITOR    (3-LI-6(N,T)2-HE-4,,SIG) Relative monitor              1389700200004 
-           Detectors calibrated using 6Li(n,alpha), 10B(n,alpha), 1389700200005 
-            and 41Ca(n,alpha) reactions.                          1389700200006 
-           ((MONIT2)13-AL-26(N,P)12-MG-26,PAR,SIG)                1389700200007 
-ERR-ANALYS Errors given in graphs represent one-standard-         1389700200008 
-            deviation statistical uncertainties.                  1389700200009 
-           Normalization uncertainty 8.3%.                        1389700200010 
-STATUS     (UNOBT) Unable to obtain data from authors.            1389700200011 
-            Data given in Fig. 3 of reference.                    1389700200012 
-ENDBIB              10          0                                 1389700200013 
-COMMON               4          3                                 1389700200014 
-EN-MIN     EN-MAX     LVL-NUMB   EN-NRM2                          1389700200015 
-EV         KEV        NO-DIM     MILLI-EV                         1389700200016 
- 0.01       10.         1.        40.                             1389700200017 
-ENDCOMMON            3          0                                 1389700200018 
-NODATA               0          0                                 1389700200019 
-ENDSUBENT           18          0                                 1389700299999 
-SUBENT        13897003   20040519                             00001389700300001 
-BIB                  4          7                                 1389700300002 
-REACTION   (13-AL-26(N,A)11-NA-23,PAR,SIG)                        1389700300003 
-MONITOR    (13-AL-26(N,P)12-MG-26,PAR,SIG)                        1389700300004 
-ERR-ANALYS Errors given in graphs represent one-standard-         1389700300005 
-            deviation statistical uncertainties.                  1389700300006 
-           Normalization uncertainty 26%.                         1389700300007 
-STATUS     (UNOBT) Unable to obtain data from authors.            1389700300008 
-            Data given in Fig. 2 of reference.                    1389700300009 
-ENDBIB               7          0                                 1389700300010 
-COMMON               4          3                                 1389700300011 
-EN-MIN     EN-MAX     E-EXC      EN-NRM                           1389700300012 
-EV         KEV        MEV        KEV                              1389700300013 
- 0.01       70.         0.         5.578                          1389700300014 
-ENDCOMMON            3          0                                 1389700300015 
-NODATA               0          0                                 1389700300016 
-ENDSUBENT           15          0                                 1389700399999 
-SUBENT        13897004   20040519                             00001389700400001 
-BIB                  4          8                                 1389700400002 
-REACTION  1(13-AL-26(N,0),,EN)                                    1389700400003 
-          2(13-AL-26(N,TOT),,WID)                                 1389700400004 
-          3(13-AL-26(N,P),,WID/STR)                               1389700400005 
-          4(13-AL-26(N,A),,WID/STR)                               1389700400006 
-ANALYSIS   (SHAPE) Breit-Wigner shape analysis.                   1389700400007 
-ERR-ANALYS (DATA-ERR) No information on composition of            1389700400008 
-            uncertainties given.                                  1389700400009 
-STATUS     Data taken from Table I in reference.                  1389700400010 
-ENDBIB               8          0                                 1389700400011 
-NOCOMMON             0          0                                 1389700400012 
-DATA                 6          2                                 1389700400013 
-DATA      1DATA      2DATA-ERR  2DATA      3DATA-ERR  3DATA      41389700400014 
-KEV        EV         EV         EV         EV         EV         1389700400015 
-  5.578     240.       200.         2.03       0.51       6.6     1389700400016 
- 33.70     8200.      3000.       128.        22.                 1389700400017 
-ENDDATA              4          0                                 1389700400018 
-ENDSUBENT           17          0                                 1389700499999 
-SUBENT        13897005   20040519                             00001389700500001 
-BIB                  4          6                                 1389700500002 
-REACTION   (13-AL-26(N,P)12-MG-26,PAR,SIG,,,DERIV)                1389700500003 
-ANALYSIS   Derived from resonance parameter analysis of cross     1389700500004 
-            section.                                              1389700500005 
-ERR-ANALYS (DATA-ERR) No information on composition of            1389700500006 
-            uncertainties given.                                  1389700500007 
-STATUS     Data taken from Table I in reference.                  1389700500008 
-ENDBIB               6          0                                 1389700500009 
-NOCOMMON             0          0                                 1389700500010 
-DATA                 4          1                                 1389700500011 
-EN         LVL-NUMB   DATA       DATA-ERR                         1389700500012 
-EV         NO-DIM     B          B                                1389700500013 
-  0.0253     1.         2.37       0.19                           1389700500014 
-ENDDATA              3          0                                 1389700500015 
-ENDSUBENT           14          0                                 1389700599999 
-SUBENT        13897006   20040519                             00001389700600001 
-BIB                  4          6                                 1389700600002 
-REACTION   (13-AL-26(N,A)11-NA-23,PAR,SIG,,,DERIV)                1389700600003 
-ANALYSIS   Derived from resonance parameter analysis of cross     1389700600004 
-            section.                                              1389700600005 
-ERR-ANALYS (DATA-ERR) No information on composition of            1389700600006 
-            uncertainties given.                                  1389700600007 
-STATUS     Data taken from Table I in reference.                  1389700600008 
-ENDBIB               6          0                                 1389700600009 
-NOCOMMON             0          0                                 1389700600010 
-DATA                 4          1                                 1389700600011 
-EN         E-EXC      DATA       DATA-ERR                         1389700600012 
-EV         MEV        B          B                                1389700600013 
-  0.0253     0.         0.88       0.23                           1389700600014 
-ENDDATA              3          0                                 1389700600015 
-ENDSUBENT           14          0                                 1389700699999 
+ENTRY            13897   20211005                             149313897  0    1 
+SUBENT        13897001   20211005                             149313897  1    1 
+BIB                 11         20                                 13897  1    2 
+TITLE      26Al(n,p1) and (n,a0) cross sections from thermal      13897  1    3 
+           energy to 70 keV and nucleosynthesis of 26Al           13897  1    4 
+AUTHOR     (P.E.Koehler,R.W.Kavanagh,R.B.Vogelaar,Yu.M.Gledenov,  13897  1    5 
+           Yu.P.Popov)                                            13897  1    6 
+REFERENCE  (J,PR/C,56,1138,1997)                                  13897  1    7 
+           #doi:10.1103/PhysRevC.56.1138                          13897  1    8 
+REL-REF    (I,13163001,P.E.Koehler+,J,PR/C,37,917,1988)           13897  1    9 
+           Experimental apparatus.                                13897  1   10 
+INSTITUTE  (1USAORL,1USACAL,1USAPTN,4ZZZDUB)                      13897  1   11 
+FACILITY   (LINAC,1USALAS) LANSCE.                                13897  1   12 
+INC-SOURCE Moderated "white" neutron source.                      13897  1   13 
+SAMPLE     Aluminum oxide target enriched in 26Al to a 27Al/26Al  13897  1   14 
+           ratio about 16. target sandwiched between carbon       13897  1   15 
+           foils, and supported by a niobium foil. Samples        13897  1   16 
+           contained 4*10**15 or 2.6*10**15 atoms of 26Al.        13897  1   17 
+METHOD     (EDE)                                                  13897  1   18 
+DETECTOR   (SIBAR)                                                13897  1   19 
+HISTORY    (20040519C)                                            13897  1   20 
+           (20211005A) BP: Updated entry, added doi. Digitized    13897  1   21 
+                       data.                                      13897  1   22 
+ENDBIB              20          0                                 13897  1   23 
+NOCOMMON             0          0                                 13897  1   24 
+ENDSUBENT           23          0                                 13897  199999 
+SUBENT        13897002   20211005                             149313897  2    1 
+BIB                  7         14                                 13897  2    2 
+REACTION   (13-AL-26(N,P)12-MG-26,PAR,SIG)                        13897  2    3 
+MONITOR   1(3-LI-6(N,T)2-HE-4,,SIG)                               13897  2    4 
+          2(13-AL-26(N,P)12-MG-26,PAR,SIG)                        13897  2    5 
+MONIT-REF 1(,A.D.Carlson+,R,NISTIR-5177,1993) ENDF standard.      13897  2    6 
+          2(,H.P.Trautvetter+,J,ZP/A,323,1,1986)                  13897  2    7 
+METHOD     Relative monitor detectors calibrated using            13897  2    8 
+           6Li(n,alpha), 10B(n,alpha), and 41Ca(n,alpha)          13897  2    9 
+           reactions.                                             13897  2   10 
+ERR-ANALYS (ERR-S) Errors given in graphs represent one-standard  13897  2   11 
+           deviation statistical uncertainties.                   13897  2   12 
+           (ERR-1) Normalization uncertainty 8.3%.                13897  2   13 
+STATUS     (CURVE) Fig. 3, page 1140.                             13897  2   14 
+HISTORY    (20040519C)                                            13897  2   15 
+           (20211005A) BP: Digitized data.                        13897  2   16 
+ENDBIB              14          0                                 13897  2   17 
+COMMON               2          3                                 13897  2   18 
+LVL-NUMB   ERR-1                                                  13897  2   19 
+NO-DIM     PER-CENT                                               13897  2   20 
+         1.       8.3                                             13897  2   21 
+ENDCOMMON            3          0                                 13897  2   22 
+DATA                 3         36                                 13897  2   23 
+EN         DATA       ERR-S                                       13897  2   24 
+EV         B          B                                           13897  2   25 
+  1.551E-02  2.792E+00  2.635E-01                                 13897  2   26 
+  4.701E-02  1.852E+00  1.745E-01                                 13897  2   27 
+  1.370E-01  9.712E-01  1.237E-01                                 13897  2   28 
+  4.071E-01  6.056E-01  1.088E-01                                 13897  2   29 
+  1.258E+00  4.017E-01  7.221E-02                                 13897  2   30 
+  3.737E+00  2.005E-01  4.590E-02                                 13897  2   31 
+  1.089E+01  1.146E-01  3.844E-02                                 13897  2   32 
+  3.238E+01  9.157E-02  3.220E-02                                 13897  2   33 
+  9.421E+01  2.256E-02  1.449E-02                                 13897  2   34 
+  2.858E+02  2.309E-02  1.430E-02                                 13897  2   35 
+  8.185E+02  4.227E-02  2.140E-02                                 13897  2   36 
+  2.431E+03  2.083E-02  1.536E-02                                 13897  2   37 
+  5.114E+03  1.490E-01  1.078E-01                                 13897  2   38 
+  5.436E+03  6.184E-01  4.391E-01                                 13897  2   39 
+  5.666E+03  2.384E+00  1.382E+00                                 13897  2   40 
+  5.668E+03  2.732E+00  1.349E+00                                 13897  2   41 
+  6.124E+03  2.106E+00  1.253E+00                                 13897  2   42 
+  6.224E+03  3.768E-01  2.702E-01                                 13897  2   43 
+  7.684E+03  6.335E-02  4.452E-02                                 13897  2   44 
+  1.155E+04  4.105E-02  2.885E-02                                 13897  2   45 
+  1.808E+04  4.153E-02  2.978E-02                                 13897  2   46 
+  2.380E+04  1.449E-01  1.024E-01                                 13897  2   47 
+  2.628E+04  3.901E-01  2.178E-01                                 13897  2   48 
+  2.847E+04  1.090E+00  5.517E-01                                 13897  2   49 
+  2.953E+04  3.160E-01  2.277E-01                                 13897  2   50 
+  3.076E+04  9.393E-01  5.947E-01                                 13897  2   51 
+  3.197E+04  7.242E-01  5.116E-01                                 13897  2   52 
+  3.394E+04  1.522E+00  1.047E+00                                 13897  2   53 
+  3.740E+04  1.361E+00  6.550E-01                                 13897  2   54 
+  3.810E+04  7.895E-01  4.408E-01                                 13897  2   55 
+  4.034E+04  4.046E-01  2.345E-01                                 13897  2   56 
+  4.196E+04  5.312E-01  2.936E-01                                 13897  2   57 
+  4.441E+04  2.205E-01  1.597E-01                                 13897  2   58 
+  4.891E+04  1.430E-01  9.941E-02                                 13897  2   59 
+  6.046E+04  4.519E-02  3.176E-02                                 13897  2   60 
+  8.419E+04  5.176E-02  3.694E-02                                 13897  2   61 
+ENDDATA             38          0                                 13897  2   62 
+ENDSUBENT           61          0                                 13897  299999 
+SUBENT        13897003   20211005                             149313897  3    1 
+BIB                  5          8                                 13897  3    2 
+REACTION   (13-AL-26(N,A)11-NA-23,PAR,SIG)                        13897  3    3 
+MONITOR    (13-AL-26(N,P)12-MG-26,PAR,SIG)                        13897  3    4 
+ERR-ANALYS (ERR-S) Errors given in graphs represent one-standard  13897  3    5 
+           deviation statistical uncertainties.                   13897  3    6 
+           (ERR-1) Normalization uncertainty 26%.                 13897  3    7 
+STATUS     (CURVE) Fig. 2, page 1140.                             13897  3    8 
+HISTORY    (20040519C)                                            13897  3    9 
+           (20211005A) BP: Digitized data.                        13897  3   10 
+ENDBIB               8          0                                 13897  3   11 
+COMMON               3          3                                 13897  3   12 
+E-LVL      EN-NRM     ERR-1                                       13897  3   13 
+MEV        KEV        PER-CENT                                    13897  3   14 
+         0.      5.578       26.0                                 13897  3   15 
+ENDCOMMON            3          0                                 13897  3   16 
+DATA                 3         23                                 13897  3   17 
+EN         DATA       ERR-S                                       13897  3   18 
+EV         B          B                                           13897  3   19 
+  1.628E-02  1.321E+00  2.202E-01                                 13897  3   20 
+  4.803E-02  5.906E-01  9.840E-02                                 13897  3   21 
+  1.418E-01  4.319E-01  7.195E-02                                 13897  3   22 
+  4.185E-01  1.639E-01  4.586E-02                                 13897  3   23 
+  1.236E+00  1.547E-01  5.113E-02                                 13897  3   24 
+  3.717E+00  1.263E-01  4.015E-02                                 13897  3   25 
+  1.078E+01  7.155E-02  2.937E-02                                 13897  3   26 
+  3.184E+01  5.945E-02  2.804E-02                                 13897  3   27 
+  9.393E+01  2.256E-02  1.566E-02                                 13897  3   28 
+  2.773E+02  1.189E-02  8.381E-03                                 13897  3   29 
+  1.032E+03  1.024E-02  6.808E-03                                 13897  3   30 
+  5.219E+03  6.156E-01  4.341E-01                                 13897  3   31 
+  5.223E+03  1.230E+00  8.676E-01                                 13897  3   32 
+  5.228E+03  2.744E+00  1.978E+00                                 13897  3   33 
+  5.720E+03  6.344E+00  2.147E+00                                 13897  3   34 
+  5.725E+03  1.291E+01  4.727E+00                                 13897  3   35 
+  5.817E+03  3.116E+00  2.013E+00                                 13897  3   36 
+  5.826E+03  9.825E+00  4.539E+00                                 13897  3   37 
+  6.123E+03  5.826E-01  4.044E-01                                 13897  3   38 
+  6.139E+03  5.005E+00  2.501E+00                                 13897  3   39 
+  6.243E+03  2.244E+00  1.274E+00                                 13897  3   40 
+  6.920E+03  1.307E-01  9.212E-02                                 13897  3   41 
+  8.865E+03  6.298E-02  4.441E-02                                 13897  3   42 
+ENDDATA             25          0                                 13897  3   43 
+ENDSUBENT           42          0                                 13897  399999 
+SUBENT        13897004   20211005                             149313897  4    1 
+BIB                  4         10                                 13897  4    2 
+REACTION  1(13-AL-26(N,0),,EN)                                    13897  4    3 
+          2(13-AL-26(N,TOT),,WID)                                 13897  4    4 
+          3(13-AL-26(N,P),,WID/STR)                               13897  4    5 
+          4(13-AL-26(N,A),,WID/STR)                               13897  4    6 
+ANALYSIS   (SHAPE) Breit-Wigner shape analysis.                   13897  4    7 
+ERR-ANALYS (DATA-ERR) No information on composition of            13897  4    8 
+           uncertainties given.                                   13897  4    9 
+STATUS     (DEP,13897002)                                         13897  4   10 
+           (DEP,13897003)                                         13897  4   11 
+           (TABLE) Table I, page 1140.                            13897  4   12 
+ENDBIB              10          0                                 13897  4   13 
+NOCOMMON             0          0                                 13897  4   14 
+DATA                 6          2                                 13897  4   15 
+DATA      1DATA      2DATA-ERR  2DATA      3DATA-ERR  3DATA      413897  4   16 
+KEV        EV         EV         EV         EV         EV         13897  4   17 
+      5.578       240.       200.       2.03       0.51        6.613897  4   18 
+      33.70      8200.      3000.       128.        22.           13897  4   19 
+ENDDATA              4          0                                 13897  4   20 
+ENDSUBENT           19          0                                 13897  499999 
+SUBENT        13897005   20211005                             149313897  5    1 
+BIB                  4          7                                 13897  5    2 
+REACTION   (13-AL-26(N,P)12-MG-26,PAR,SIG,,,DERIV)                13897  5    3 
+ANALYSIS   Derived from resonance parameter analysis of cross     13897  5    4 
+           section.                                               13897  5    5 
+ERR-ANALYS (DATA-ERR) No information on composition of            13897  5    6 
+           uncertainties given.                                   13897  5    7 
+STATUS     (DEP,13897002)                                         13897  5    8 
+           (TABLE) Table I, page 1140.                            13897  5    9 
+ENDBIB               7          0                                 13897  5   10 
+NOCOMMON             0          0                                 13897  5   11 
+DATA                 4          1                                 13897  5   12 
+EN         LVL-NUMB   DATA       DATA-ERR                         13897  5   13 
+EV         NO-DIM     B          B                                13897  5   14 
+     0.0253         1.       2.37       0.19                      13897  5   15 
+ENDDATA              3          0                                 13897  5   16 
+ENDSUBENT           15          0                                 13897  599999 
+SUBENT        13897006   20211005                             149313897  6    1 
+BIB                  4          7                                 13897  6    2 
+REACTION   (13-AL-26(N,A)11-NA-23,PAR,SIG,,,DERIV)                13897  6    3 
+ANALYSIS   Derived from resonance parameter analysis of cross     13897  6    4 
+           section.                                               13897  6    5 
+ERR-ANALYS (DATA-ERR) No information on composition of            13897  6    6 
+           uncertainties given.                                   13897  6    7 
+STATUS     (DEP,13897003)                                         13897  6    8 
+           (TABLE) Table I, page 1140.                            13897  6    9 
+ENDBIB               7          0                                 13897  6   10 
+NOCOMMON             0          0                                 13897  6   11 
+DATA                 4          1                                 13897  6   12 
+EN         E-LVL      DATA       DATA-ERR                         13897  6   13 
+EV         MEV        B          B                                13897  6   14 
+     0.0253         0.       0.88       0.23                      13897  6   15 
+ENDDATA              3          0                                 13897  6   16 
+ENDSUBENT           15          0                                 13897  699999 
 ENDENTRY             6          0                                 1389799999999 

@@ -1,34 +1,82 @@
-ENTRY            12708   19890126                             00001270800000001 
-SUBENT        12708001   19890126                             00001270800100001 
-BIB                  7          9                                 1270800100002 
-INSTITUTE  (1USATNL)                                              1270800100003 
-REFERENCE  (J,PRL,43,609,7908)                                    1270800100004 
-AUTHOR     (M.JENSEN,D.R.TILLEY,H.R.WELLER,N.R.ROBERTSON,         1270800100005 
-           S.A.WENDER,T.B.CLEGG)                                  1270800100006 
-TITLE      POLARIZED-NEUTRON CAPTURE IN THE GIANT-RESONANCE       1270800100007 
-            REGION OF 41CA                                        1270800100008 
-INC-SOURCE (POLNS,D-D)                                            1270800100009 
-STATUS     (UNOBT) UNABLE TO OBTAIN DATA FROM AUTHORS             1270800100010 
-HISTORY    (890125C)                                              1270800100011 
-ENDBIB               9          0                                 1270800100012 
-COMMON               5          3                                 1270800100013 
-EN         POL-BM     POL-BM-ERR ANG-MIN    ANG-MAX               1270800100014 
-MEV        NO-DIM     NO-DIM     ADEG       ADEG                  1270800100015 
- 10.0       0.63       0.05       40.        140.                 1270800100016 
-ENDCOMMON            3          0                                 1270800100017 
-ENDSUBENT           16          0                                 1270800199999 
-SUBENT        12708002   19890126                             00001270800200001 
-BIB                  1          1                                 1270800200002 
-REACTION   (20-CA-40(N,G)20-CA-41,,DA)                            1270800200003 
-ENDBIB               1          0                                 1270800200004 
-NOCOMMON             0          0                                 1270800200005 
-NODATA               0          0                                 1270800200006 
-ENDSUBENT            5          0                                 1270800299999 
-SUBENT        12708003   19890126                             00001270800300001 
-BIB                  1          1                                 1270800300002 
-REACTION   (20-CA-40(N,G)20-CA-41,,POL/DA,,ANA)                   1270800300003 
-ENDBIB               1          0                                 1270800300004 
-NOCOMMON             0          0                                 1270800300005 
-NODATA               0          0                                 1270800300006 
-ENDSUBENT            5          0                                 1270800399999 
+ENTRY            12708   20210928                             149312708  0    1 
+SUBENT        12708001   20210928                             149312708  1    1 
+BIB                 10         28                                 12708  1    2 
+TITLE      Polarized-Neutron Capture in the Giant-Resonance       12708  1    3 
+           Region of 41Ca                                         12708  1    4 
+AUTHOR     (M.Jensen,D.R.Tilley,H.R.Weller,N.R.Roberson,          12708  1    5 
+           S.A.Wender,T.B.Clegg)                                  12708  1    6 
+REFERENCE  (J,PRL,43,609,1979)                                    12708  1    7 
+           #doi:10.1103/PhysRevLett.43.609                        12708  1    8 
+REL-REF    (I,10814001,S.A.Wender+,J,PRL,41,1217,1978) The 40Ca   12708  1    9 
+           target and the detector system description.            12708  1   10 
+INSTITUTE  (1USATNL)                                              12708  1   11 
+FACILITY   (ACCEL,1USATNL)                                        12708  1   12 
+INC-SOURCE (POLNS,D-D) The polarized neutron beam was produced    12708  1   13 
+           by using the reaction 2H(dpol,n)3He with a polarized   12708  1   14 
+           deuteron beam of about 200 nA on target. The           12708  1   15 
+           deuterium target consisted of a 3.0-cm-long gas cell   12708  1   16 
+           which was pressurized to about 3.0 atm.                12708  1   17 
+ERR-ANALYS (ERR-S) Statistical errors were included.              12708  1   18 
+CORRECTION Data have not been corrected for finite-geometry and   12708  1   19 
+           multiple scattering effects. However, when the         12708  1   20 
+           unpolarized cross-section data are corrected for       12708  1   21 
+           finite geometry, neutron and gamma absorption, and     12708  1   22 
+           neutron multiple scattering, we find that the          12708  1   23 
+           corrections to the A(k) coefficients were quite small  12708  1   24 
+           compared to statistical errors.                        12708  1   25 
+HISTORY    (19890125C)                                            12708  1   26 
+           (20210928A) BP: Updated to new date formats, lower     12708  1   27 
+           case. Corrections according last EXFOR rules and       12708  1   28 
+           Dict. Added doi, CORRECTION and ERR-ANALYS, digitized  12708  1   29 
+           data.                                                  12708  1   30 
+ENDBIB              28          0                                 12708  1   31 
+COMMON               3          3                                 12708  1   32 
+EN         POL-BM     POL-BM-ERR                                  12708  1   33 
+MEV        NO-DIM     NO-DIM                                      12708  1   34 
+       10.0       0.63       0.05                                 12708  1   35 
+ENDCOMMON            3          0                                 12708  1   36 
+ENDSUBENT           35          0                                 12708  199999 
+SUBENT        12708002   20210928                             149312708  2    1 
+BIB                  4          7                                 12708  2    2 
+REACTION   (20-CA-40(N,G)20-CA-41,,DA,,RS)                        12708  2    3 
+ANALYSIS   Cross sections divided by A0 using formula:            12708  2    4 
+           sigma(theta)=A0*[1 + Sum(ak*Pk(cos theta))].           12708  2    5 
+STATUS     (COREL,10814003) Composition of current and previous   12708  2    6 
+           measurements.                                          12708  2    7 
+           (CURVE) Fig. 1, page 610.                              12708  2    8 
+HISTORY    (20210928A) BP: Digitized data.                        12708  2    9 
+ENDBIB               7          0                                 12708  2   10 
+NOCOMMON             0          0                                 12708  2   11 
+DATA                 3          8                                 12708  2   12 
+ANG-CM     DATA-CM    ERR-S                                       12708  2   13 
+ADEG       NO-DIM     NO-DIM                                      12708  2   14 
+     45.590      0.937      0.032                                 12708  2   15 
+     56.060      0.917      0.032                                 12708  2   16 
+     70.840      0.914      0.030                                 12708  2   17 
+     90.990      0.929      0.035                                 12708  2   18 
+    111.200      0.973      0.038                                 12708  2   19 
+    125.700      1.019      0.032                                 12708  2   20 
+    135.400      1.093      0.030                                 12708  2   21 
+    140.500      1.150      0.067                                 12708  2   22 
+ENDDATA             10          0                                 12708  2   23 
+ENDSUBENT           22          0                                 12708  299999 
+SUBENT        12708003   20210928                             149312708  3    1 
+BIB                  3          3                                 12708  3    2 
+REACTION   (20-CA-40(N,G)20-CA-41,,POL/DA,,ANA)                   12708  3    3 
+STATUS     (CURVE) Fig. 1, page 610.                              12708  3    4 
+HISTORY    (20210928A) BP: Digitized data.                        12708  3    5 
+ENDBIB               3          0                                 12708  3    6 
+NOCOMMON             0          0                                 12708  3    7 
+DATA                 3          7                                 12708  3    8 
+ANG-CM     DATA       ERR-S                                       12708  3    9 
+ADEG       NO-DIM     NO-DIM                                      12708  3   10 
+     46.027     -0.096      0.063                                 12708  3   11 
+     56.767     -0.110      0.046                                 12708  3   12 
+     71.318     -0.012      0.038                                 12708  3   13 
+     91.259      0.127      0.044                                 12708  3   14 
+    111.473      0.275      0.063                                 12708  3   15 
+    126.281      0.348      0.074                                 12708  3   16 
+    135.666      0.307      0.049                                 12708  3   17 
+ENDDATA              9          0                                 12708  3   18 
+ENDSUBENT           17          0                                 12708  399999 
 ENDENTRY             3          0                                 1270899999999 
