@@ -1,45 +1,122 @@
-ENTRY            E1154   20190107                             E122E115400000001 
-SUBENT        E1154001   20190107                             E122E115400100001 
-BIB                  9         17                                 E115400100002 
-TITLE       Transfer cross sections for 28Si+58,62Ni              E115400100003 
-AUTHOR     (Y.Sugiyama,Y.Tomita,H.Ikezoe,K.Ideno,N.Shikazono,     E115400100004 
-           N.Kato,H.Fujita,T.Sugimitsu,S.Kubono)                  E115400100005 
-INSTITUTE  (2JPNJAE)                                              E115400100006 
-           (2JPNKYU)                                              E115400100007 
-           (2JPNTOK) Institute for nuclear study, Tokyo univ.     E115400100008 
-REFERENCE  (J,PL/B,176,302,1986)                                  E115400100009 
-FACILITY   (VDG,2JPNJAE)                                          E115400100010 
-DETECTOR   (MAGSP)                                                E115400100011 
-            solid-angle is 1.6 msr.                               E115400100012 
-            Overall-energy-resolution is about 250. keV           E115400100013 
-INC-SOURCE  Beam-intensity is 200. na                             E115400100014 
-STATUS      Data converted from NRDF                              E115400100015 
-HISTORY    (19900913T) Converted from NRDF data No. D1154         E115400100016 
-           (20190107A) Tada. 005,006,007,011:REACTION: Corrected  E115400100017 
-                       004-010: DATA -> DATA-CM. STATUS: Added.   E115400100018 
-           (20190107D) 005 is merged to 004.                      E115400100019 
-ENDBIB              17          0                                 E115400100020 
-NOCOMMON             0          0                                 E115400100021 
-ENDSUBENT           20          0                                 E115400199999 
-NOSUBENT      E1154002   19910805                             0000E115400200001 
-NOSUBENT      E1154003   19910805                             0000E115400300001 
-SUBENT        E1154004   20190107                             E122E115400400001 
-BIB                  5         10                                 E115400400002 
+ENTRY            E1154   20240319                             E143E115400000001 
+SUBENT        E1154001   20240319                             E143E115400100001 
+BIB                  9         18                                 E115400100002 
+TITLE      Transfer cross sections for 28Si+58,62Ni               E115400100003 
+AUTHOR     (Y.Sugiyama, Y.Tomita, H.Ikezoe, K.Ideno, N.Shikazono, E115400100004 
+            N.Kato, H.Fujita, T.Sugimitsu, S.Kubono)              E115400100005 
+INSTITUTE  (2JPNJAE,2JPNKYU,2JPNTOK)                              E115400100006 
+REFERENCE  (J,PL/B,176,302,1986)                                  E115400100007 
+INC-SOURCE Beam intensity is 200 nA.                              E115400100008 
+FACILITY   (VDG,2JPNJAE)                                          E115400100009 
+DETECTOR   Solid angle of detector is 1.6 msr.                    E115400100010 
+           (MAGSP)                                                E115400100011 
+STATUS     Data converted from NRDF                               E115400100012 
+HISTORY    (19900913T) Converted from NRDF data No. D1154         E115400100013 
+           (20190107A) Tada. 005,006,007,011:REACTION: Corrected  E115400100014 
+                       004-010: DATA -> DATA-CM. STATUS: Added.   E115400100015 
+           (20190107D) 005 is merged to 004.                      E115400100016 
+           (20240319A) MA: modified REACTION in 007, COMMON in    E115400100017 
+                       011-018, DATA in 011-018, STATUS in        E115400100018 
+                       004,006-018.                               E115400100019 
+           (20240319T) MA: 002,003 converted from NRDF D1154      E115400100020 
+ENDBIB              18          0                                 E115400100021 
+COMMON               1          3                                 E115400100022 
+E-RSL                                                             E115400100023 
+KEV                                                               E115400100024 
+ 250.                                                             E115400100025 
+ENDCOMMON            3          0                                 E115400100026 
+ENDSUBENT           25          0                                 E115400199999 
+SUBENT        E1154002   20240319                             E143E115400200001 
+BIB                  5          8                                 E115400200002 
+REACTION   (28-NI-62(14-SI-28,EL)28-NI-62,,DA,,RTH)               E115400200003 
+ANG-SEC    (ANG-CM,14-SI-28)                                      E115400200004 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115400200005 
+           - Backing is carbon.                                   E115400200006 
+           - Backing-thickness is about 0.15 mg/cm2.              E115400200007 
+           (28-NI-62,ENR=0.9664)                                  E115400200008 
+STATUS     (CURVE,,Y.Sugiyama+,J,PL/B,176,302,1986) Fig. 2        E115400200009 
+HISTORY    (20240319T) MA: converted from NRDF D1154              E115400200010 
+ENDBIB               8          0                                 E115400200011 
+COMMON               1          3                                 E115400200012 
+EN                                                                E115400200013 
+MEV                                                               E115400200014 
+ 110.                                                             E115400200015 
+ENDCOMMON            3          0                                 E115400200016 
+DATA                 2         15                                 E115400200017 
+ANG-CM     DATA                                                   E115400200018 
+ADEG       NO-DIM                                                 E115400200019 
+     28.987  1.027E+00                                            E115400200020 
+     32.888  1.050E+00                                            E115400200021 
+     36.340  1.051E+00                                            E115400200022 
+     40.244  1.019E+00                                            E115400200023 
+     43.545  1.053E+00                                            E115400200024 
+     47.442  1.160E+00                                            E115400200025 
+     50.292  1.199E+00                                            E115400200026 
+     54.202  1.034E+00                                            E115400200027 
+     57.219  7.840E-01                                            E115400200028 
+     60.997  4.805E-01                                            E115400200029 
+     64.177  2.822E-01                                            E115400200030 
+     67.060  1.571E-01                                            E115400200031 
+     70.693  8.747E-02                                            E115400200032 
+     74.039  3.811E-02                                            E115400200033 
+     77.227  1.907E-02                                            E115400200034 
+ENDDATA             17          0                                 E115400200035 
+ENDSUBENT           34          0                                 E115400299999 
+SUBENT        E1154003   20240319                             E143E115400300001 
+BIB                  5          8                                 E115400300002 
+REACTION   (28-NI-58(14-SI-28,EL)28-NI-58,,DA,,RTH)               E115400300003 
+ANG-SEC    (ANG-CM,14-SI-28)                                      E115400300004 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115400300005 
+           - Backing is carbon.                                   E115400300006 
+           - Backing-thickness is about 0.15 mg/cm2.              E115400300007 
+           (28-NI-58,ENR=0.9976)                                  E115400300008 
+STATUS     (CURVE,,Y.Sugiyama+,J,PL/B,176,302,1986) Fig. 2        E115400300009 
+HISTORY    (20240319T) MA: converted from NRDF D1154              E115400300010 
+ENDBIB               8          0                                 E115400300011 
+COMMON               1          3                                 E115400300012 
+EN                                                                E115400300013 
+MEV                                                               E115400300014 
+ 110.                                                             E115400300015 
+ENDCOMMON            3          0                                 E115400300016 
+DATA                 2         17                                 E115400300017 
+ANG-CM     DATA                                                   E115400300018 
+ADEG       NO-DIM                                                 E115400300019 
+     26.727  1.009E+00                                            E115400300020 
+     30.170  1.034E+00                                            E115400300021 
+     33.769  1.002E+00                                            E115400300022 
+     36.912  1.038E+00                                            E115400300023 
+     41.258  1.017E+00                                            E115400300024 
+     44.413  9.326E-01                                            E115400300025 
+     48.293  1.080E+00                                            E115400300026 
+     52.029  1.182E+00                                            E115400300027 
+     55.776  1.172E+00                                            E115400300028 
+     58.791  9.719E-01                                            E115400300029 
+     62.576  6.531E-01                                            E115400300030 
+     66.068  4.152E-01                                            E115400300031 
+     68.975  2.284E-01                                            E115400300032 
+     71.874  1.357E-01                                            E115400300033 
+     75.249  6.184E-02                                            E115400300034 
+     79.225  2.787E-02                                            E115400300035 
+     81.984  1.499E-02                                            E115400300036 
+ENDDATA             19          0                                 E115400300037 
+ENDSUBENT           36          0                                 E115400399999 
+SUBENT        E1154004   20240319                             E143E115400400001 
+BIB                  6         10                                 E115400400002 
 REACTION   (28-NI-62(14-SI-28,INL)28-NI-62,PAR,DA)                E115400400003 
-SAMPLE      Target is enriched 96.64 %                            E115400400004 
-            target-thickness=between 50. And 80. ug/cm**2         E115400400005 
-            target backing is C                                   E115400400006 
-            backing-thickness=about 15. ug/cm**2                  E115400400007 
-EN-SEC     (E-LVL1,14-SI-28)                                      E115400400008 
-           (E-LVL2,28-NI-62)                                      E115400400009 
-STATUS     (CURVE) Fig.2 of Phys. Lett. B 176(1986)302            E115400400010 
-HISTORY    (20190107A) Tada. DATA -> DATA-CM.                     E115400400011 
-                       005 is merged.                             E115400400012 
+ANG-SEC    (ANG-CM,14-SI-28)                                      E115400400004 
+EN-SEC     (E-LVL1,28-NI-62)                                      E115400400005 
+           (E-LVL2,14-SI-28)                                      E115400400006 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115400400007 
+           - Backing is carbon.                                   E115400400008 
+           - Backing-thickness is about 0.15 mg/cm2.              E115400400009 
+           (28-NI-62,ENR=0.9664)                                  E115400400010 
+STATUS     (CURVE,,Y.Sugiyama+,J,PL/B,176,302,1986) Fig. 2        E115400400011 
+HISTORY    (20190107A) Tada. DATA -> DATA-CM. 005 is merged.      E115400400012 
 ENDBIB              10          0                                 E115400400013 
 COMMON               1          3                                 E115400400014 
 EN                                                                E115400400015 
 MEV                                                               E115400400016 
-110.                                                              E115400400017 
+ 110.                                                             E115400400017 
 ENDCOMMON            3          0                                 E115400400018 
 DATA                 4         32                                 E115400400019 
 E-LVL1     E-LVL2     ANG-CM     DATA-CM                          E115400400020 
@@ -79,300 +156,339 @@ MEV        MEV        ADEG       MB/SR                            E115400400021
 ENDDATA             34          0                                 E115400400054 
 ENDSUBENT           53          0                                 E115400499999 
 NOSUBENT      E1154005   20190107                             E122E115400500001 
-SUBENT        E1154006   20190107                             E122E115400600001 
-BIB                  5         10                                 E115400600002 
+SUBENT        E1154006   20240319                             E143E115400600001 
+BIB                  6         11                                 E115400600002 
 REACTION   (28-NI-58(14-SI-28,INL)28-NI-58,PAR,DA)                E115400600003 
-SAMPLE      Target is enriched 99.76 %                            E115400600004 
-            target-thickness=between 50. And 80. ug/cm**2         E115400600005 
-            target backing is C                                   E115400600006 
-            backing-thickness=about 15. ug/cm**2                  E115400600007 
-EN-SEC     (E-LVL1,28-NI-58)                                      E115400600008 
-           (E-LVL2,14-SI-28)                                      E115400600009 
-STATUS     (CURVE) Fig.2 of Phys. Lett. B 176(1986)302            E115400600010 
-HISTORY    (20190107A) Tada. E-LVL -> E-LVL1. E-LVL2=1.78 MeV is  E115400600011 
-                       added. DATA -> DATA-CM.                    E115400600012 
-ENDBIB              10          0                                 E115400600013 
-COMMON               3          3                                 E115400600014 
-EN         E-LVL1     E-LVL2                                      E115400600015 
-MEV        MEV        MEV                                         E115400600016 
-110.       1.45       1.78                                        E115400600017 
-ENDCOMMON            3          0                                 E115400600018 
-DATA                 2         18                                 E115400600019 
-ANG-CM     DATA-CM                                                E115400600020 
-ADEG       MB/SR                                                  E115400600021 
-     22.613  9.743E+01                                            E115400600022 
-     26.800  9.766E+01                                            E115400600023 
-     30.533  1.023E+02                                            E115400600024 
-     33.536  9.071E+01                                            E115400600025 
-     37.254  1.109E+02                                            E115400600026 
-     41.322  8.156E+01                                            E115400600027 
-     43.830  1.151E+02                                            E115400600028 
-     48.161  1.206E+02                                            E115400600029 
-     51.945  7.677E+01                                            E115400600030 
-     55.727  4.996E+01                                            E115400600031 
-     59.032  4.286E+01                                            E115400600032 
-     62.310  4.850E+01                                            E115400600033 
-     66.207  4.400E+01                                            E115400600034 
-     69.074  3.416E+01                                            E115400600035 
-     72.844  2.483E+01                                            E115400600036 
-     75.584  1.545E+01                                            E115400600037 
-     79.680  8.612E+00                                            E115400600038 
-     82.434  4.640E+00                                            E115400600039 
-ENDDATA             20          0                                 E115400600040 
-ENDSUBENT           39          0                                 E115400699999 
-SUBENT        E1154007   20190107                             E122E115400700001 
-BIB                  6          9                                 E115400700002 
-REACTION   (28-NI-62(14-SI-28,INL)28-NI-62,PAR,DA)                E115400700003 
-SAMPLE      Target is enriched 96.64 %                            E115400700004 
-            target-thickness=between 50. And 80. ug/cm**2         E115400700005 
-            target backing is C                                   E115400700006 
-            backing-thickness=about 15. ug/cm**2                  E115400700007 
-FLAG       (1.) Data error is smaller than data point             E115400700008 
-ERR-ANALYS (DATA-ERR) No information on source of uncertainties.  E115400700009 
-STATUS     (CURVE) Fig.3 of Phys. Lett. B 176(1986)302            E115400700010 
-HISTORY    (20190107A) Tada. SF3:14-SI-28 -> INL. DATA -> DATA-CM.E115400700011 
-ENDBIB               9          0                                 E115400700012 
-COMMON               2          3                                 E115400700013 
-EN         Q-VAL                                                  E115400700014 
-MEV        MEV                                                    E115400700015 
-110.       -2.13                                                  E115400700016 
-ENDCOMMON            3          0                                 E115400700017 
-DATA                 5          4                                 E115400700018 
-ANG-CM     DATA-CM    +DATA-ERR  -DATA-ERR  FLAG                  E115400700019 
-ADEG       MB/SR      MB/SR      MB/SR      NO-DIM                E115400700020 
-     43.889  3.137E-01 +3.247E-02 -2.693E-02                      E115400700021 
-     51.927  3.876E+00                               1.           E115400700022 
-     58.515  5.681E+00                               1.           E115400700023 
-     66.386  2.573E+00 +2.159E-01 -1.993E-01                      E115400700024 
-ENDDATA              6          0                                 E115400700025 
-ENDSUBENT           24          0                                 E115400799999 
-SUBENT        E1154008   20190107                             E122E115400800001 
-BIB                  5          8                                 E115400800002 
+ANG-SEC    (ANG-CM,14-SI-28)                                      E115400600004 
+EN-SEC     (E-LVL1,28-NI-62)                                      E115400600005 
+           (E-LVL2,14-SI-28)                                      E115400600006 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115400600007 
+           - Backing is carbon.                                   E115400600008 
+           - Backing-thickness is about 0.15 mg/cm2.              E115400600009 
+           (28-NI-58,ENR=0.9976)                                  E115400600010 
+STATUS     (CURVE,,Y.Sugiyama+,J,PL/B,176,302,1986) Fig. 2        E115400600011 
+HISTORY    (20190107A) Tada. E-LVL -> E-LVL1. E-LVL2=1.78 MeV is  E115400600012 
+                       added. DATA -> DATA-CM.                    E115400600013 
+ENDBIB              11          0                                 E115400600014 
+COMMON               3          3                                 E115400600015 
+EN         E-LVL1     E-LVL2                                      E115400600016 
+MEV        MEV        MEV                                         E115400600017 
+ 110.       1.45       1.78                                       E115400600018 
+ENDCOMMON            3          0                                 E115400600019 
+DATA                 2         18                                 E115400600020 
+ANG-CM     DATA-CM                                                E115400600021 
+ADEG       MB/SR                                                  E115400600022 
+     22.613  9.743E+01                                            E115400600023 
+     26.800  9.766E+01                                            E115400600024 
+     30.533  1.023E+02                                            E115400600025 
+     33.536  9.071E+01                                            E115400600026 
+     37.254  1.109E+02                                            E115400600027 
+     41.322  8.156E+01                                            E115400600028 
+     43.830  1.151E+02                                            E115400600029 
+     48.161  1.206E+02                                            E115400600030 
+     51.945  7.677E+01                                            E115400600031 
+     55.727  4.996E+01                                            E115400600032 
+     59.032  4.286E+01                                            E115400600033 
+     62.310  4.850E+01                                            E115400600034 
+     66.207  4.400E+01                                            E115400600035 
+     69.074  3.416E+01                                            E115400600036 
+     72.844  2.483E+01                                            E115400600037 
+     75.584  1.545E+01                                            E115400600038 
+     79.680  8.612E+00                                            E115400600039 
+     82.434  4.640E+00                                            E115400600040 
+ENDDATA             20          0                                 E115400600041 
+ENDSUBENT           40          0                                 E115400699999 
+SUBENT        E1154007   20240319                             E143E115400700001 
+BIB                  7         13                                 E115400700002 
+REACTION   (28-NI-62(14-SI-28,14-SI-29)28-NI-61,PAR,DA)           E115400700003 
+ANG-SEC    (ANG-CM,14-SI-29)                                      E115400700004 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115400700005 
+           - Backing is carbon.                                   E115400700006 
+           - Backing-thickness is about 0.15 mg/cm2.              E115400700007 
+           (28-NI-62,ENR=0.9664)                                  E115400700008 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115400700009 
+FLAG       (1.) Data error is smaller than data point             E115400700010 
+STATUS     (CURVE,,Y.Sugiyama+,J,PL/B,176,302,1986) Fig. 3        E115400700011 
+HISTORY    (20190107A) Tada. SF3:14-SI-28 -> INL. DATA ->         E115400700012 
+                       DATA-CM.                                   E115400700013 
+           (20240319A) MA: SF3,SF4: INL,28-Ni-62 ->               E115400700014 
+                       14-SI-29,28-NI-61.                         E115400700015 
+ENDBIB              13          0                                 E115400700016 
+COMMON               2          3                                 E115400700017 
+EN         Q-VAL                                                  E115400700018 
+MEV        MEV                                                    E115400700019 
+ 110.       -2.13                                                 E115400700020 
+ENDCOMMON            3          0                                 E115400700021 
+DATA                 5          4                                 E115400700022 
+ANG-CM     DATA-CM    +DATA-ERR  -DATA-ERR  FLAG                  E115400700023 
+ADEG       MB/SR      MB/SR      MB/SR      NO-DIM                E115400700024 
+     43.889  3.137E-01  3.247E-02 -2.693E-02                      E115400700025 
+     51.927  3.876E+00                               1.           E115400700026 
+     58.515  5.681E+00                               1.           E115400700027 
+     66.386  2.573E+00  2.159E-01 -1.993E-01                      E115400700028 
+ENDDATA              6          0                                 E115400700029 
+ENDSUBENT           28          0                                 E115400799999 
+SUBENT        E1154008   20240319                             E143E115400800001 
+BIB                  6          9                                 E115400800002 
 REACTION   (28-NI-62(14-SI-28,14-SI-30)28-NI-60,PAR,DA)           E115400800003 
-SAMPLE      Target is enriched 96.64 %                            E115400800004 
-            target-thickness=between 50. And 80. ug/cm**2         E115400800005 
-            target backing is C                                   E115400800006 
-            backing-thickness=about 15. ug/cm**2                  E115400800007 
-ERR-ANALYS (DATA-ERR) No information on source of uncertainties.  E115400800008 
-STATUS     (CURVE) Fig.3 of Phys. Lett. B 176(1986)302            E115400800009 
-HISTORY    (20190107A) Tada. DATA -> DATA-CM.                     E115400800010 
-ENDBIB               8          0                                 E115400800011 
-COMMON               2          3                                 E115400800012 
-EN         Q-VAL                                                  E115400800013 
-MEV        MEV                                                    E115400800014 
-110.       0.67                                                   E115400800015 
-ENDCOMMON            3          0                                 E115400800016 
-DATA                 4          5                                 E115400800017 
-ANG-CM     DATA-CM    +DATA-ERR  -DATA-ERR                        E115400800018 
-ADEG       MB/SR      MB/SR      MB/SR                            E115400800019 
-     35.908  1.933E-01 +2.605E-02 -2.296E-02                      E115400800020 
-     44.927  3.009E-01 +2.254E-02 -2.349E-02                      E115400800021 
-     50.438  9.137E-01 +5.962E-02 -6.367E-02                      E115400800022 
-     57.829  8.812E-01 +9.203E-02 -6.141E-02                      E115400800023 
-     65.470  3.945E-01 +4.120E-02 -3.079E-02                      E115400800024 
-ENDDATA              7          0                                 E115400800025 
-ENDSUBENT           24          0                                 E115400899999 
-SUBENT        E1154009   20190107                             E122E115400900001 
-BIB                  5          8                                 E115400900002 
+ANG-SEC    (ANG-CM,14-SI-30)                                      E115400800004 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115400800005 
+           - Backing is carbon.                                   E115400800006 
+           - Backing-thickness is about 0.15 mg/cm2.              E115400800007 
+           (28-NI-62,ENR=0.9664)                                  E115400800008 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115400800009 
+STATUS     (CURVE,,Y.Sugiyama+,J,PL/B,176,302,1986) Fig. 3        E115400800010 
+HISTORY    (20190107A) Tada. DATA -> DATA-CM.                     E115400800011 
+ENDBIB               9          0                                 E115400800012 
+COMMON               2          3                                 E115400800013 
+EN         Q-VAL                                                  E115400800014 
+MEV        MEV                                                    E115400800015 
+ 110.       0.67                                                  E115400800016 
+ENDCOMMON            3          0                                 E115400800017 
+DATA                 4          5                                 E115400800018 
+ANG-CM     DATA-CM    +DATA-ERR  -DATA-ERR                        E115400800019 
+ADEG       MB/SR      MB/SR      MB/SR                            E115400800020 
+     35.908  1.933E-01  2.605E-02 -2.296E-02                      E115400800021 
+     44.927  3.009E-01  2.254E-02 -2.349E-02                      E115400800022 
+     50.438  9.137E-01  5.962E-02 -6.367E-02                      E115400800023 
+     57.829  8.812E-01  9.203E-02 -6.141E-02                      E115400800024 
+     65.470  3.945E-01  4.120E-02 -3.079E-02                      E115400800025 
+ENDDATA              7          0                                 E115400800026 
+ENDSUBENT           25          0                                 E115400899999 
+SUBENT        E1154009   20240319                             E143E115400900001 
+BIB                  6          9                                 E115400900002 
 REACTION   (28-NI-58(14-SI-28,14-SI-29)28-NI-57,PAR,DA)           E115400900003 
-SAMPLE      Target is enriched 99.76 %                            E115400900004 
-            target-thickness=between 50. And 80. ug/cm**2         E115400900005 
-            target backing is C                                   E115400900006 
-            backing-thickness=about 15. ug/cm**2                  E115400900007 
-ERR-ANALYS (DATA-ERR) No information on source of uncertainties.  E115400900008 
-STATUS     (CURVE) Fig.3 of Phys. Lett. B 176(1986)302            E115400900009 
-HISTORY    (20190107A) Tada. DATA -> DATA-CM.                     E115400900010 
-ENDBIB               8          0                                 E115400900011 
-COMMON               2          3                                 E115400900012 
-EN         Q-VAL                                                  E115400900013 
-MEV        MEV                                                    E115400900014 
-110.       -3.72                                                  E115400900015 
-ENDCOMMON            3          0                                 E115400900016 
-DATA                 4          3                                 E115400900017 
-ANG-CM     DATA-CM    +DATA-ERR  -DATA-ERR                        E115400900018 
-ADEG       MB/SR      MB/SR      MB/SR                            E115400900019 
-     51.250  2.721E-01 +2.323E-02 -1.680E-02                      E115400900020 
-     59.000  7.680E-01 +8.087E-02 -6.040E-02                      E115400900021 
-     67.000  2.507E-01 +2.389E-02 -1.972E-02                      E115400900022 
-ENDDATA              5          0                                 E115400900023 
-ENDSUBENT           22          0                                 E115400999999 
-SUBENT        E1154010   20190107                             E122E115401000001 
-BIB                  5          8                                 E115401000002 
+ANG-SEC    (ANG-CM,14-SI-29)                                      E115400900004 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115400900005 
+           - Backing is carbon.                                   E115400900006 
+           - Backing-thickness is about 0.15 mg/cm2.              E115400900007 
+           (28-NI-58,ENR=0.9976)                                  E115400900008 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115400900009 
+STATUS     (CURVE,,Y.Sugiyama+,J,PL/B,176,302,1986) Fig. 3        E115400900010 
+HISTORY    (20190107A) Tada. DATA -> DATA-CM.                     E115400900011 
+ENDBIB               9          0                                 E115400900012 
+COMMON               2          3                                 E115400900013 
+EN         Q-VAL                                                  E115400900014 
+MEV        MEV                                                    E115400900015 
+ 110.       -3.72                                                 E115400900016 
+ENDCOMMON            3          0                                 E115400900017 
+DATA                 4          3                                 E115400900018 
+ANG-CM     DATA-CM    +DATA-ERR  -DATA-ERR                        E115400900019 
+ADEG       MB/SR      MB/SR      MB/SR                            E115400900020 
+     51.250  2.721E-01  2.323E-02 -1.680E-02                      E115400900021 
+     59.000  7.680E-01  8.087E-02 -6.040E-02                      E115400900022 
+     67.000  2.507E-01  2.389E-02 -1.972E-02                      E115400900023 
+ENDDATA              5          0                                 E115400900024 
+ENDSUBENT           23          0                                 E115400999999 
+SUBENT        E1154010   20240319                             E143E115401000001 
+BIB                  6          9                                 E115401000002 
 REACTION   (28-NI-58(14-SI-28,14-SI-30)28-NI-56,PAR,DA)           E115401000003 
-SAMPLE      Target is enriched 99.76 %                            E115401000004 
-            target-thickness=between 50. And 80. ug/cm**2         E115401000005 
-            target backing is C                                   E115401000006 
-            backing-thickness=about 15. ug/cm**2                  E115401000007 
-ERR-ANALYS (DATA-ERR) No information on source of uncertainties.  E115401000008 
-STATUS     (CURVE) Fig.3 of Phys. Lett. B 176(1986)302            E115401000009 
-HISTORY    (20190107A) Tada. DATA -> DATA-CM.                     E115401000010 
-ENDBIB               8          0                                 E115401000011 
-COMMON               2          3                                 E115401000012 
-EN         Q-VAL                                                  E115401000013 
-MEV        MEV                                                    E115401000014 
-110.       -3.38                                                  E115401000015 
-ENDCOMMON            3          0                                 E115401000016 
-DATA                 4          4                                 E115401000017 
-ANG-CM     DATA-CM    +DATA-ERR  -DATA-ERR                        E115401000018 
-ADEG       MB/SR      MB/SR      MB/SR                            E115401000019 
-     43.789  5.920E-02 +1.172E-02 -8.425E-03                      E115401000020 
-     51.620  2.198E-01 +2.737E-02 -1.898E-02                      E115401000021 
-     58.882  3.049E-01 +2.283E-02 -2.125E-02                      E115401000022 
-     67.073  1.746E-01 +2.353E-02 -1.934E-02                      E115401000023 
-ENDDATA              6          0                                 E115401000024 
-ENDSUBENT           23          0                                 E115401099999 
-SUBENT        E1154011   20190107                             E122E115401100001 
-BIB                  4          7                                 E115401100002 
+ANG-SEC    (ANG-CM,14-SI-30)                                      E115401000004 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115401000005 
+           - Backing is carbon.                                   E115401000006 
+           - Backing-thickness is about 0.15 mg/cm2.              E115401000007 
+           (28-NI-58,ENR=0.9976)                                  E115401000008 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115401000009 
+STATUS     (CURVE,,Y.Sugiyama+,J,PL/B,176,302,1986) Fig. 3        E115401000010 
+HISTORY    (20190107A) Tada. DATA -> DATA-CM.                     E115401000011 
+ENDBIB               9          0                                 E115401000012 
+COMMON               2          3                                 E115401000013 
+EN         Q-VAL                                                  E115401000014 
+MEV        MEV                                                    E115401000015 
+ 110.       -3.38                                                 E115401000016 
+ENDCOMMON            3          0                                 E115401000017 
+DATA                 4          4                                 E115401000018 
+ANG-CM     DATA-CM    +DATA-ERR  -DATA-ERR                        E115401000019 
+ADEG       MB/SR      MB/SR      MB/SR                            E115401000020 
+     43.789  5.920E-02  1.172E-02 -8.425E-03                      E115401000021 
+     51.620  2.198E-01  2.737E-02 -1.898E-02                      E115401000022 
+     58.882  3.049E-01  2.283E-02 -2.125E-02                      E115401000023 
+     67.073  1.746E-01  2.353E-02 -1.934E-02                      E115401000024 
+ENDDATA              6          0                                 E115401000025 
+ENDSUBENT           24          0                                 E115401099999 
+SUBENT        E1154011   20240319                             E143E115401100001 
+BIB                  5         10                                 E115401100002 
 REACTION   (28-NI-62(14-SI-28,14-SI-29)28-NI-61,PAR,SIG)          E115401100003 
-SAMPLE      Target is enriched 96.64 %                            E115401100004 
-            target-thickness=between 50. And 80. ug/cm**2         E115401100005 
-            target backing is C                                   E115401100006 
-            backing-thickness=about 15. ug/cm**2                  E115401100007 
-STATUS     (TABLE) Table 1 of Phys. Lett. B 176(1986)302          E115401100008 
-HISTORY    (20190107A) Tada. SF3-SF4:Corected                     E115401100009 
-ENDBIB               7          0                                 E115401100010 
-COMMON               2          3                                 E115401100011 
-EN         Q-VAL-APRX                                             E115401100012 
-MEV        MEV                                                    E115401100013 
-110.       -13.7                                                  E115401100014 
-ENDCOMMON            3          0                                 E115401100015 
-DATA                 2          1                                 E115401100016 
-DATA       DATA                                                   E115401100017 
-MB         MB                                                     E115401100018 
-       46.8       14.0                                            E115401100019 
-ENDDATA              3          0                                 E115401100020 
-ENDSUBENT           19          0                                 E115401199999 
-SUBENT        E1154012   19900913                             0000E115401200001 
-BIB                  2          5                                 E115401200002 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115401100004 
+           - Backing is carbon.                                   E115401100005 
+           - Backing-thickness is about 0.15 mg/cm2.              E115401100006 
+           (28-NI-62,ENR=0.9664)                                  E115401100007 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115401100008 
+STATUS     (TABLE,,Y.Sugiyama+,J,PL/B,176,302,1986) Table 1       E115401100009 
+HISTORY    (20190107A) Tada. SF-SF4:Corrected                     E115401100010 
+           (20240319A) MA: COMMON: Q-VAL-APRX -> Q-VAL-MIN/MAX;   E115401100011 
+                       Heading: DATA -> DATA-ERR.                 E115401100012 
+ENDBIB              10          0                                 E115401100013 
+COMMON               3          3                                 E115401100014 
+EN         Q-VAL-MIN  Q-VAL-MAX                                   E115401100015 
+MEV        MEV        MEV                                         E115401100016 
+ 110.       -13.7      -2.13                                      E115401100017 
+ENDCOMMON            3          0                                 E115401100018 
+DATA                 2          1                                 E115401100019 
+DATA       DATA-ERR                                               E115401100020 
+MB         MB                                                     E115401100021 
+       46.8       14.0                                            E115401100022 
+ENDDATA              3          0                                 E115401100023 
+ENDSUBENT           22          0                                 E115401199999 
+SUBENT        E1154012   20240319                             E143E115401200001 
+BIB                  5          9                                 E115401200002 
 REACTION   (28-NI-62(14-SI-28,14-SI-30)28-NI-60,PAR,SIG)          E115401200003 
-SAMPLE      TARGET IS ENRICHED 96.64PER-CENT                      E115401200004 
-            TARGET-THICKNESS=BETWEEN 50. AND 80.UG/CM**2          E115401200005 
-            TARGET BACKING IS C                                   E115401200006 
-            BACKING-THICKNESS=ABOUT 15.UG/CM**2                   E115401200007 
-ENDBIB               5          0                                 E115401200008 
-COMMON               2          3                                 E115401200009 
-EN         Q-VAL-APRX                                             E115401200010 
-MEV        MEV                                                    E115401200011 
-110.       -15.3                                                  E115401200012 
-ENDCOMMON            3          0                                 E115401200013 
-DATA                 2          1                                 E115401200014 
-DATA       DATA                                                   E115401200015 
-MB         MB                                                     E115401200016 
-       18.5        5.5                                            E115401200017 
-ENDDATA              3          0                                 E115401200018 
-ENDSUBENT           17          0                                 E115401299999 
-SUBENT        E1154013   19900913                             0000E115401300001 
-BIB                  2          5                                 E115401300002 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115401200004 
+           - Backing is carbon.                                   E115401200005 
+           - Backing-thickness is about 0.15 mg/cm2.              E115401200006 
+           (28-NI-62,ENR=0.9664)                                  E115401200007 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115401200008 
+STATUS     (TABLE,,Y.Sugiyama+,J,PL/B,176,302,1986) Table 1       E115401200009 
+HISTORY    (20240319A) MA: COMMON: Q-VAL-APRX -> Q-VAL-MIN/MAX;   E115401200010 
+                       Heading: DATA -> DATA-ERR.                 E115401200011 
+ENDBIB               9          0                                 E115401200012 
+COMMON               3          3                                 E115401200013 
+EN         Q-VAL-MIN  Q-VAL-MAX                                   E115401200014 
+MEV        MEV        MEV                                         E115401200015 
+ 110.       -15.3      0.67                                       E115401200016 
+ENDCOMMON            3          0                                 E115401200017 
+DATA                 2          1                                 E115401200018 
+DATA       DATA-ERR                                               E115401200019 
+MB         MB                                                     E115401200020 
+       18.5        5.5                                            E115401200021 
+ENDDATA              3          0                                 E115401200022 
+ENDSUBENT           21          0                                 E115401299999 
+SUBENT        E1154013   20240319                             E143E115401300001 
+BIB                  5          9                                 E115401300002 
 REACTION   (28-NI-62(14-SI-28,13-AL-27)29-CU-63,PAR,SIG)          E115401300003 
-SAMPLE      TARGET IS ENRICHED 96.64PER-CENT                      E115401300004 
-            TARGET-THICKNESS=BETWEEN 50. AND 80.UG/CM**2          E115401300005 
-            TARGET BACKING IS C                                   E115401300006 
-            BACKING-THICKNESS=ABOUT 15.UG/CM**2                   E115401300007 
-ENDBIB               5          0                                 E115401300008 
-COMMON               2          3                                 E115401300009 
-EN         Q-VAL-APRX                                             E115401300010 
-MEV        MEV                                                    E115401300011 
-110.       -18.2                                                  E115401300012 
-ENDCOMMON            3          0                                 E115401300013 
-DATA                 2          1                                 E115401300014 
-DATA       DATA                                                   E115401300015 
-MB         MB                                                     E115401300016 
-       21.8        8.7                                            E115401300017 
-ENDDATA              3          0                                 E115401300018 
-ENDSUBENT           17          0                                 E115401399999 
-SUBENT        E1154014   19900913                             0000E115401400001 
-BIB                  2          5                                 E115401400002 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115401300004 
+           - Backing is carbon.                                   E115401300005 
+           - Backing-thickness is about 0.15 mg/cm2.              E115401300006 
+           (28-NI-62,ENR=0.9664)                                  E115401300007 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115401300008 
+STATUS     (TABLE,,Y.Sugiyama+,J,PL/B,176,302,1986) Table 1       E115401300009 
+HISTORY    (20240319A) MA: COMMON: Q-VAL-APRX -> Q-VAL-MIN/MAX;   E115401300010 
+                       Heading: DATA -> DATA-ERR.                 E115401300011 
+ENDBIB               9          0                                 E115401300012 
+COMMON               3          3                                 E115401300013 
+EN         Q-VAL-MIN  Q-VAL-MAX                                   E115401300014 
+MEV        MEV        MEV                                         E115401300015 
+ 110.       -18.2      -4.7                                       E115401300016 
+ENDCOMMON            3          0                                 E115401300017 
+DATA                 2          1                                 E115401300018 
+DATA       DATA-ERR                                               E115401300019 
+MB         MB                                                     E115401300020 
+       21.8        8.7                                            E115401300021 
+ENDDATA              3          0                                 E115401300022 
+ENDSUBENT           21          0                                 E115401399999 
+SUBENT        E1154014   20240319                             E143E115401400001 
+BIB                  5          9                                 E115401400002 
 REACTION   (28-NI-62(14-SI-28,12-MG-26)30-ZN-64,PAR,SIG)          E115401400003 
-SAMPLE      TARGET IS ENRICHED 96.64PER-CENT                      E115401400004 
-            TARGET-THICKNESS=BETWEEN 50. AND 80.UG/CM**2          E115401400005 
-            TARGET BACKING IS C                                   E115401400006 
-            BACKING-THICKNESS=ABOUT 15.UG/CM**2                   E115401400007 
-ENDBIB               5          0                                 E115401400008 
-COMMON               2          3                                 E115401400009 
-EN         Q-VAL-APRX                                             E115401400010 
-MEV        MEV                                                    E115401400011 
-110.       -15.0                                                  E115401400012 
-ENDCOMMON            3          0                                 E115401400013 
-DATA                 2          1                                 E115401400014 
-DATA       DATA                                                   E115401400015 
-MB         MB                                                     E115401400016 
-        8.2        4.1                                            E115401400017 
-ENDDATA              3          0                                 E115401400018 
-ENDSUBENT           17          0                                 E115401499999 
-SUBENT        E1154015   19900913                             0000E115401500001 
-BIB                  2          5                                 E115401500002 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115401400004 
+           - Backing is carbon.                                   E115401400005 
+           - Backing-thickness is about 0.15 mg/cm2.              E115401400006 
+           (28-NI-62,ENR=0.9664)                                  E115401400007 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115401400008 
+STATUS     (TABLE,,Y.Sugiyama+,J,PL/B,176,302,1986) Table 1       E115401400009 
+HISTORY    (20240319A) MA: COMMON: Q-VAL-APRX -> Q-VAL-MIN/MAX;   E115401400010 
+                       Heading: DATA -> DATA-ERR.                 E115401400011 
+ENDBIB               9          0                                 E115401400012 
+COMMON               3          3                                 E115401400013 
+EN         Q-VAL-MIN  Q-VAL-MAX                                   E115401400014 
+MEV        MEV        MEV                                         E115401400015 
+ 110.       -15.0      -6.03                                      E115401400016 
+ENDCOMMON            3          0                                 E115401400017 
+DATA                 2          1                                 E115401400018 
+DATA       DATA-ERR                                               E115401400019 
+MB         MB                                                     E115401400020 
+        8.2        4.1                                            E115401400021 
+ENDDATA              3          0                                 E115401400022 
+ENDSUBENT           21          0                                 E115401499999 
+SUBENT        E1154015   20240319                             E143E115401500001 
+BIB                  5          9                                 E115401500002 
 REACTION   (28-NI-58(14-SI-28,14-SI-29)28-NI-57,PAR,SIG)          E115401500003 
-SAMPLE      TARGET IS ENRICHED 99.76PER-CENT                      E115401500004 
-            TARGET-THICKNESS=BETWEEN 50. AND 80.UG/CM**2          E115401500005 
-            TARGET BACKING IS C                                   E115401500006 
-            BACKING-THICKNESS=ABOUT 15.UG/CM**2                   E115401500007 
-ENDBIB               5          0                                 E115401500008 
-COMMON               2          3                                 E115401500009 
-EN         Q-VAL-APRX                                             E115401500010 
-MEV        MEV                                                    E115401500011 
-110.       -12.2                                                  E115401500012 
-ENDCOMMON            3          0                                 E115401500013 
-DATA                 2          1                                 E115401500014 
-DATA       DATA                                                   E115401500015 
-MB         MB                                                     E115401500016 
-        7.2        3.6                                            E115401500017 
-ENDDATA              3          0                                 E115401500018 
-ENDSUBENT           17          0                                 E115401599999 
-SUBENT        E1154016   19900913                             0000E115401600001 
-BIB                  2          5                                 E115401600002 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115401500004 
+           - Backing is carbon.                                   E115401500005 
+           - Backing-thickness is about 0.15 mg/cm2.              E115401500006 
+           (28-NI-58,ENR=0.9976)                                  E115401500007 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115401500008 
+STATUS     (TABLE,,Y.Sugiyama+,J,PL/B,176,302,1986) Table 1       E115401500009 
+HISTORY    (20240319A) MA: COMMON: Q-VAL-APRX -> Q-VAL-MIN/MAX;   E115401500010 
+                       Heading: DATA -> DATA-ERR.                 E115401500011 
+ENDBIB               9          0                                 E115401500012 
+COMMON               3          3                                 E115401500013 
+EN         Q-VAL-MIN  Q-VAL-MAX                                   E115401500014 
+MEV        MEV        MEV                                         E115401500015 
+ 110.       -12.2      -3.73                                      E115401500016 
+ENDCOMMON            3          0                                 E115401500017 
+DATA                 2          1                                 E115401500018 
+DATA       DATA-ERR                                               E115401500019 
+MB         MB                                                     E115401500020 
+        7.2        3.6                                            E115401500021 
+ENDDATA              3          0                                 E115401500022 
+ENDSUBENT           21          0                                 E115401599999 
+SUBENT        E1154016   20240319                             E143E115401600001 
+BIB                  5          9                                 E115401600002 
 REACTION   (28-NI-58(14-SI-28,14-SI-30)28-NI-56,PAR,SIG)          E115401600003 
-SAMPLE      TARGET IS ENRICHED 99.76PER-CENT                      E115401600004 
-            TARGET-THICKNESS=BETWEEN 50. AND 80.UG/CM**2          E115401600005 
-            TARGET BACKING IS C                                   E115401600006 
-            BACKING-THICKNESS=ABOUT 15.UG/CM**2                   E115401600007 
-ENDBIB               5          0                                 E115401600008 
-COMMON               2          3                                 E115401600009 
-EN         Q-VAL-APRX                                             E115401600010 
-MEV        MEV                                                    E115401600011 
-110.       -14.9                                                  E115401600012 
-ENDCOMMON            3          0                                 E115401600013 
-DATA                 2          1                                 E115401600014 
-DATA       DATA                                                   E115401600015 
-MB         MB                                                     E115401600016 
-        2.5        1.2                                            E115401600017 
-ENDDATA              3          0                                 E115401600018 
-ENDSUBENT           17          0                                 E115401699999 
-SUBENT        E1154017   19900913                             0000E115401700001 
-BIB                  2          5                                 E115401700002 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115401600004 
+           - Backing is carbon.                                   E115401600005 
+           - Backing-thickness is about 0.15 mg/cm2.              E115401600006 
+           (28-NI-58,ENR=0.9976)                                  E115401600007 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115401600008 
+STATUS     (TABLE,,Y.Sugiyama+,J,PL/B,176,302,1986) Table 1       E115401600009 
+HISTORY    (20240319A) MA: COMMON: Q-VAL-APRX -> Q-VAL-MIN/MAX;   E115401600010 
+                       Heading: DATA -> DATA-ERR.                 E115401600011 
+ENDBIB               9          0                                 E115401600012 
+COMMON               3          3                                 E115401600013 
+EN         Q-VAL-MIN  Q-VAL-MAX                                   E115401600014 
+MEV        MEV        MEV                                         E115401600015 
+ 110.       -14.9      -3.36                                      E115401600016 
+ENDCOMMON            3          0                                 E115401600017 
+DATA                 2          1                                 E115401600018 
+DATA       DATA-ERR                                               E115401600019 
+MB         MB                                                     E115401600020 
+        2.5        1.2                                            E115401600021 
+ENDDATA              3          0                                 E115401600022 
+ENDSUBENT           21          0                                 E115401699999 
+SUBENT        E1154017   20240319                             E143E115401700001 
+BIB                  5          9                                 E115401700002 
 REACTION   (28-NI-58(14-SI-28,13-AL-27)29-CU-59,PAR,SIG)          E115401700003 
-SAMPLE      TARGET IS ENRICHED 99.76PER-CENT                      E115401700004 
-            TARGET-THICKNESS=BETWEEN 50. AND 80.UG/CM**2          E115401700005 
-            TARGET BACKING IS C                                   E115401700006 
-            BACKING-THICKNESS=ABOUT 15.UG/CM**2                   E115401700007 
-ENDBIB               5          0                                 E115401700008 
-COMMON               2          3                                 E115401700009 
-EN         Q-VAL-APRX                                             E115401700010 
-MEV        MEV                                                    E115401700011 
-110.       -22.4                                                  E115401700012 
-ENDCOMMON            3          0                                 E115401700013 
-DATA                 2          1                                 E115401700014 
-DATA       DATA                                                   E115401700015 
-MB         MB                                                     E115401700016 
-        3.7        1.8                                            E115401700017 
-ENDDATA              3          0                                 E115401700018 
-ENDSUBENT           17          0                                 E115401799999 
-SUBENT        E1154018   19900913                             0000E115401800001 
-BIB                  2          5                                 E115401800002 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115401700004 
+           - Backing is carbon.                                   E115401700005 
+           - Backing-thickness is about 0.15 mg/cm2.              E115401700006 
+           (28-NI-58,ENR=0.9976)                                  E115401700007 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115401700008 
+STATUS     (TABLE,,Y.Sugiyama+,J,PL/B,176,302,1986) Table 1       E115401700009 
+HISTORY    (20240319A) MA: COMMON: Q-VAL-APRX -> Q-VAL-MIN/MAX;   E115401700010 
+                       Heading: DATA -> DATA-ERR.                 E115401700011 
+ENDBIB               9          0                                 E115401700012 
+COMMON               3          3                                 E115401700013 
+EN         Q-VAL-MIN  Q-VAL-MAX                                   E115401700014 
+MEV        MEV        MEV                                         E115401700015 
+ 110.       -22.4      -7.4                                       E115401700016 
+ENDCOMMON            3          0                                 E115401700017 
+DATA                 2          1                                 E115401700018 
+DATA       DATA-ERR                                               E115401700019 
+MB         MB                                                     E115401700020 
+        3.7        1.8                                            E115401700021 
+ENDDATA              3          0                                 E115401700022 
+ENDSUBENT           21          0                                 E115401799999 
+SUBENT        E1154018   20240319                             E143E115401800001 
+BIB                  5          9                                 E115401800002 
 REACTION   (28-NI-58(14-SI-28,12-MG-26)30-ZN-60,PAR,SIG)          E115401800003 
-SAMPLE      TARGET IS ENRICHED 99.76PER-CENT                      E115401800004 
-            TARGET-THICKNESS=BETWEEN 50. AND 80.UG/CM**2          E115401800005 
-            TARGET BACKING IS C                                   E115401800006 
-            BACKING-THICKNESS=ABOUT 15.UG/CM**2                   E115401800007 
-ENDBIB               5          0                                 E115401800008 
-COMMON               2          3                                 E115401800009 
-EN         Q-VAL-APRX                                             E115401800010 
-MEV        MEV                                                    E115401800011 
-110.       -17.3                                                  E115401800012 
-ENDCOMMON            3          0                                 E115401800013 
-DATA                 2          1                                 E115401800014 
-DATA       DATA                                                   E115401800015 
-MB         MB                                                     E115401800016 
-        1.1        0.6                                            E115401800017 
-ENDDATA              3          0                                 E115401800018 
-ENDSUBENT           17          0                                 E115401899999 
+SAMPLE     - Target-thickness is 0.05 to 0.08 mg/cm2.             E115401800004 
+           - Backing is carbon.                                   E115401800005 
+           - Backing-thickness is about 0.15 mg/cm2.              E115401800006 
+           (28-NI-58,ENR=0.9976)                                  E115401800007 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   E115401800008 
+STATUS     (TABLE,,Y.Sugiyama+,J,PL/B,176,302,1986) Table 1       E115401800009 
+HISTORY    (20240319A) MA: COMMON: Q-VAL-APRX -> Q-VAL-MIN/MAX;   E115401800010 
+                       Heading: DATA -> DATA-ERR.                 E115401800011 
+ENDBIB               9          0                                 E115401800012 
+COMMON               3          3                                 E115401800013 
+EN         Q-VAL-MIN  Q-VAL-MAX                                   E115401800014 
+MEV        MEV        MEV                                         E115401800015 
+ 110.       -17.3      -11.3                                      E115401800016 
+ENDCOMMON            3          0                                 E115401800017 
+DATA                 2          1                                 E115401800018 
+DATA       DATA-ERR                                               E115401800019 
+MB         MB                                                     E115401800020 
+        1.1        0.6                                            E115401800021 
+ENDDATA              3          0                                 E115401800022 
+ENDSUBENT           21          0                                 E115401899999 
 ENDENTRY            18          0                                 E115499999999 

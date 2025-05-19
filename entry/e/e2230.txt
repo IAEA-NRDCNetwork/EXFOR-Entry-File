@@ -1,10 +1,10 @@
-ENTRY            E2230   20160520                             E103E223000000001 
-SUBENT        E2230001   20160520                             E103E223000100001 
-BIB                  9         11                                 E223000100002 
+ENTRY            E2230   20240503                             E143E223000000001 
+SUBENT        E2230001   20240503                             E143E223000100001 
+BIB                  9         12                                 E223000100002 
 TITLE       (d,a) reactions on O16, N14 and C12 by 14.7 MeV       E223000100003 
            deuterons                                              E223000100004 
 AUTHOR     (T.Yanabu)                                             E223000100005 
-INSTITUTE  (2JPNKTO) Institute for Chemical Research              E223000100006 
+INSTITUTE  (2JPNKTO)                                              E223000100006 
 REFERENCE  (J,JPJ,16,2118,1961)                                   E223000100007 
 PART-DET   (A)                                                    E223000100008 
 INC-SOURCE Beam intensity is about 0.1 uA.                        E223000100009 
@@ -12,13 +12,14 @@ FACILITY   (CYCLO,2JPNKTO) 105 cm cyclotron                       E223000100010
 ERR-ANALYS (ERR-SYS,,20.) Accuracy in absolute cross section      E223000100011 
                           (<20%)                                  E223000100012 
 HISTORY    (20130607C) Meruert                                    E223000100013 
-ENDBIB              11          0                                 E223000100014 
-COMMON               2          3                                 E223000100015 
-EN         EN-ERR                                                 E223000100016 
-MEV        MEV                                                    E223000100017 
- 14.7       0.1                                                   E223000100018 
-ENDCOMMON            3          0                                 E223000100019 
-ENDSUBENT           18          0                                 E223000199999 
+           (20240319A) MA: modified STATUS and DATA in 011.       E223000100014 
+ENDBIB              12          0                                 E223000100015 
+COMMON               2          3                                 E223000100016 
+EN         EN-ERR                                                 E223000100017 
+MEV        MEV                                                    E223000100018 
+ 14.7       0.1                                                   E223000100019 
+ENDCOMMON            3          0                                 E223000100020 
+ENDSUBENT           19          0                                 E223000199999 
 SUBENT        E2230002   20160520                             E103E223000200001 
 BIB                  7         11                                 E223000200002 
 REACTION   (8-O-16(D,A)7-N-14,PAR,DA)                             E223000200003 
@@ -306,22 +307,25 @@ MEV        MB                                                     E223001000010
        4.43        9.1                                            E223001000012 
 ENDDATA              4          0                                 E223001000013 
 ENDSUBENT           12          0                                 E223001099999 
-SUBENT        E2230011   20160520                             E103E223001100001 
-BIB                  3          3                                 E223001100002 
+SUBENT        E2230011   20240503                             E143E223001100001 
+BIB                  5          6                                 E223001100002 
 REACTION   (6-C-12(D,A)5-B-10,PAR,SIG)                            E223001100003 
 EN-SEC     (E-LVL,5-B-10)                                         E223001100004 
-STATUS     (TABLE) Table III of J.Phys.Soc.Jpn.16(1961)2118       E223001100005 
-ENDBIB               3          0                                 E223001100006 
-NOCOMMON             0          0                                 E223001100007 
-DATA                 3          4                                 E223001100008 
-E-LVL      DATA       DATA                                        E223001100009 
-MEV        MB         MB                                          E223001100010 
-         0.        34.                                            E223001100011 
-       0.72        42.                                            E223001100012 
-       2.15        18.         1.                                 E223001100013 
-       3.58        31.         1.                                 E223001100014 
-ENDDATA              6          0                                 E223001100015 
-ENDSUBENT           14          0                                 E223001199999 
+FLAG       (1.) Isotropic distribution assumed                    E223001100005 
+STATUS     (TABLE,,T.Yanabu,J,JPJ,16,2118,1961) Table III         E223001100006 
+HISTORY    (20240319A) MA: STATUS: modified; Heading: DATA ->     E223001100007 
+                       FLAG.                                      E223001100008 
+ENDBIB               6          0                                 E223001100009 
+NOCOMMON             0          0                                 E223001100010 
+DATA                 3          4                                 E223001100011 
+E-LVL      DATA       FLAG                                        E223001100012 
+MEV        MB         NO-DIM                                      E223001100013 
+         0.        34.                                            E223001100014 
+       0.72        42.                                            E223001100015 
+       2.15        18.         1.                                 E223001100016 
+       3.58        31.         1.                                 E223001100017 
+ENDDATA              6          0                                 E223001100018 
+ENDSUBENT           17          0                                 E223001199999 
 SUBENT        E2230012   20160520                             E103E223001200001 
 BIB                  3          3                                 E223001200002 
 REACTION   (8-O-16(D,A)7-N-14,PAR,DA,,LEG)                        E223001200003 
