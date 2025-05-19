@@ -1,0 +1,323 @@
+ENTRY            41755   20230118                             421341755  0    1 
+SUBENT        41755001   20230118                             421341755  1    1 
+BIB                 18         69                                 41755  1    2 
+TITLE       Study of 239Pu(n,f) prompt fission neutron spectrum   41755  1    3 
+AUTHOR     (M.Schulc, M.Petrova, T.Czakoj, M.Kostal, E.Lychagin,  41755  1    4 
+           J.Simon)                                               41755  1    5 
+REFERENCE  (J,RPC,206,110804,2023)                                41755  1    6 
+           #doi:10.1016/j.radphyschem.2023.110804                 41755  1    7 
+INSTITUTE  (4ZZZDUB) M.Petrova,E.Lychagin                         41755  1    8 
+           (3CZRUJV) M.Schulc,T.Czakoj, M.Kostal,J.Simon          41755  1    9 
+FACILITY   (REAC,4ZZZDUB) IBR-2 pulsed fast reactor, 239PuO(2) as 41755  1   10 
+           fuel.                                                  41755  1   11 
+INC-SOURCE (REAC) Beam line no.3                                  41755  1   12 
+INC-SPECT   Pu-239 fission neutron spectrum,                      41755  1   13 
+           flux at the moderator surface up to 1.E+16 n/cm2/sec.  41755  1   14 
+           Samples were irradiated by thermalized prompt fission  41755  1   15 
+           neutron spectrum of Pu, the mean energy of spectrum    41755  1   16 
+           0.27 MeV ( from calculation ).                         41755  1   17 
+           DETECTOR   (HPGE) Gamma-spectra of activated samples we41755  1   18 
+           during March 2022 in different positions (5 cm, 10 cm, 41755  1   19 
+           15 cm, or 25 cm) by HPGe detector (Canberra GC10021).  41755  1   20 
+METHOD     (ACTIV) Irradiation time 12 days (12-24 April,2021)    41755  1   21 
+           at 1.5 MW power.                                       41755  1   22 
+            Reaction     Cooling   Measurement  Net peak area     41755  1   23 
+                         time,sec  time,sec                       41755  1   24 
+            46Ti(n,p)    2691138   790.4         121194           41755  1   25 
+            54Fe(n,p)    26914113  202.9         165896           41755  1   26 
+            58Ni(n,p)    26913229  672           146031           41755  1   27 
+            58Ni(n,X)    26913229  672             2210           41755  1   28 
+            89Y(n,2n)    28896824  83396         145604           41755  1   29 
+            209Bi(n,3n)  28727028  76022           2167           41755  1   30 
+MONITOR    (28-NI-58(N,P)27-CO-58,,SIG,,FIS)                      41755  1   31 
+            From the GMA PFNS evaluation and IRDFF-II             41755  1   32 
+            cross-section                                         41755  1   33 
+DECAY-MON  (27-CO-58-G,70.86D,DG,810.759,0.9945)                  41755  1   34 
+ANALYSIS    Averaged cross sections were derived from reaction    41755  1   35 
+           rates measured, for reaction rates see formula (1) in  41755  1   36 
+           PR/C,206,110804,2023. Difference of real spectra at    41755  1   37 
+           the sample position and Pu-239 fission neutron spectrum41755  1   38 
+           was taken into account.                                41755  1   39 
+CORRECTION  For the neutron spectrum filtered by water, calculated41755  1   40 
+            by MCNP6.                                             41755  1   41 
+            For difference of spectra for monitor reaction and    41755  1   42 
+            reaction under study.                                 41755  1   43 
+            The burnup of the reactor was not taken into the      41755  1   44 
+            account.                                              41755  1   45 
+COMMENT    Of author Martin Schulc.                               41755  1   46 
+            -The correction for neutron spectrum filtered by water41755  1   47 
+           was calculated by MCNP6.                               41755  1   48 
+           This approach for PFNS reconstruction is validated in  41755  1   49 
+           an article: KOSTAL, Michal, et al. Impact of reactor   41755  1   50 
+           neutron spectrum on measured spectrum averaged cross   41755  1   51 
+           sections. Annals of Nuclear Energy, 2022, 179: 109418. 41755  1   52 
+           Since the correction factor is validated, we can relate41755  1   53 
+           the result to 239Pu PFNS.                              41755  1   54 
+           -Response function is the cross section in group       41755  1   55 
+           structure multiplied by the neutron flux in group      41755  1   56 
+           structure (sum of groups then returns reaction rates). 41755  1   57 
+           E50% is the energy where the multiplication gives 50%  41755  1   58 
+           of reaction rate.                                      41755  1   59 
+REL-REF    (M,,M.Kostal+,J,ANE,179,109418,2022)                   41755  1   60 
+            Approach for PFNS reconstruction.                     41755  1   61 
+MISC-COL   (MISC) The neutron energy which corresponds to a value 41755  1   62 
+            of 50% of the integrated energy response function     41755  1   63 
+            in the neutron field.                                 41755  1   64 
+ERR-ANALYS (ERR-T) Total uncertainty                              41755  1   65 
+           (ERR-1) Detector efficiency uncertainty                41755  1   66 
+           (ERR-2) Monitor reaction C-S uncertainty               41755  1   67 
+           (ERR-3) Calculated neutron flux uncertainty            41755  1   68 
+           (ERR-S) Counts statistical uncertainty                 41755  1   69 
+STATUS     (APRVD) Approved by the author Martin Schulc 24-08-202341755  1   70 
+HISTORY    (20230118C)  M.M.                                      41755  1   71 
+ENDBIB              69          0                                 41755  1   72 
+COMMON               2          3                                 41755  1   73 
+EN-DUMMY   MONIT                                                  41755  1   74 
+MEV        MB                                                     41755  1   75 
+ 1.5       112.57                                                 41755  1   76 
+ENDCOMMON            3          0                                 41755  1   77 
+ENDSUBENT           76          0                                 41755  199999 
+SUBENT        41755002   20230118                             421341755  2    1 
+BIB                  4          9                                 41755  2    2 
+REACTION   (83-BI-209(N,3N)83-BI-207,,SIG,,FIS)                   41755  2    3 
+SAMPLE     Placed at 300 mm distance from the light water         41755  2    4 
+           moderator (5 cm thickness) surface.                    41755  2    5 
+            Bismuth, 99.99% purity,  1.683 g 15 x 15 x 1 mm       41755  2    6 
+DECAY-DATA (83-BI-207,31.55YR,DG,569.702,0.9775,                  41755  2    7 
+                              DG,1063.656,0.7450)                 41755  2    8 
+STATUS     (TABLE,,M.Schulc+,J,RPC,206,110804,2023)               41755  2    9 
+            Table 5  - data, Table 4 - uncertainties.             41755  2   10 
+           (SUPPL,41755007) Spectrum at sample position           41755  2   11 
+ENDBIB               9          0                                 41755  2   12 
+COMMON               4          3                                 41755  2   13 
+ERR-1      ERR-S      ERR-2      ERR-3                            41755  2   14 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         41755  2   15 
+ 3.12       2.85       1.52       5.12                            41755  2   16 
+ENDCOMMON            3          0                                 41755  2   17 
+DATA                 3          1                                 41755  2   18 
+MISC       DATA       ERR-T                                       41755  2   19 
+MEV        MB         PER-CENT                                    41755  2   20 
+ 18.16        1.43E-02  6.8                                       41755  2   21 
+ENDDATA              3          0                                 41755  2   22 
+ENDSUBENT           21          0                                 41755  299999 
+SUBENT        41755003   20230118                             421341755  3    1 
+BIB                  4          9                                 41755  3    2 
+REACTION   (39-Y-89(N,2N)39-Y-88,,SIG,,FIS)                       41755  3    3 
+SAMPLE     Placed at 300 mm distance from the light water         41755  3    4 
+           moderator (5 cm thickness) surface.                    41755  3    5 
+            Yttrium, 99.99% purity,  0.154 g 7 x 7 x 0.64 mm      41755  3    6 
+DECAY-DATA (39-Y-88,106.627D,DG,898.042,0.937,                    41755  3    7 
+                        DG,1836.063,0.992)                        41755  3    8 
+STATUS     (TABLE,,M.Schulc+,J,RPC,206,110804,2023)               41755  3    9 
+            Table 5  - data, Table 4 - uncertainties.             41755  3   10 
+           (SUPPL,41755007) Spectrum at sample position           41755  3   11 
+ENDBIB               9          0                                 41755  3   12 
+COMMON               4          3                                 41755  3   13 
+ERR-1      ERR-S      ERR-2      ERR-3                            41755  3   14 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         41755  3   15 
+ 3.01       1.51       1.52       3.53                            41755  3   16 
+ENDCOMMON            3          0                                 41755  3   17 
+DATA                 3          1                                 41755  3   18 
+MISC       DATA       ERR-T                                       41755  3   19 
+MEV        MB         PER-CENT                                    41755  3   20 
+ 13.86        2.62E-01  5.1                                       41755  3   21 
+ENDDATA              3          0                                 41755  3   22 
+ENDSUBENT           21          0                                 41755  399999 
+SUBENT        41755004   20230118                             421341755  4    1 
+BIB                  4          9                                 41755  4    2 
+REACTION   (28-NI-58(N,X)27-CO-57,,SIG,,FIS)                      41755  4    3 
+SAMPLE     Placed at 300 mm distance from the light water         41755  4    4 
+           moderator (5 cm thickness) surface.                    41755  4    5 
+            Nickel natural, 99.99% purity,  several pieces of     41755  4    6 
+                2.60 - 2.90 mg, 5 x 5 x 0.1 mm                    41755  4    7 
+DECAY-DATA (27-CO-57,271.74D,DG,122.06065,0.8560)                 41755  4    8 
+STATUS     (TABLE,,M.Schulc+,J,RPC,206,110804,2023)               41755  4    9 
+            Table 5  - data, Table 4 - uncertainties.             41755  4   10 
+           (SUPPL,41755007) Spectrum at sample position           41755  4   11 
+ENDBIB               9          0                                 41755  4   12 
+COMMON               4          3                                 41755  4   13 
+ERR-1      ERR-S      ERR-2      ERR-3                            41755  4   14 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         41755  4   15 
+ 3.49       1.30       1.52       3.28                            41755  4   16 
+ENDCOMMON            3          0                                 41755  4   17 
+DATA                 3          1                                 41755  4   18 
+MISC       DATA       ERR-T                                       41755  4   19 
+MEV        MB         PER-CENT                                    41755  4   20 
+ 12.80        3.30E-01  5.2                                       41755  4   21 
+ENDDATA              3          0                                 41755  4   22 
+ENDSUBENT           21          0                                 41755  499999 
+SUBENT        41755005   20230118                             421341755  5    1 
+BIB                  4          8                                 41755  5    2 
+REACTION   (26-FE-54(N,P)25-MN-54,,SIG,,FIS)                      41755  5    3 
+SAMPLE     Placed at 300 mm distance from the light water         41755  5    4 
+           moderator (5 cm thickness) surface.                    41755  5    5 
+            54Fe, 99.4% purity,  0.651 g 14 x 14 x 0.01 mm        41755  5    6 
+DECAY-DATA (25-MN-54,312.2D,DG,834.848,0.99976)                   41755  5    7 
+STATUS     (TABLE,,M.Schulc+,J,RPC,206,110804,2023)               41755  5    8 
+            Table 5  - data, Table 4 - uncertainties.             41755  5    9 
+           (SUPPL,41755007) Spectrum at sample position           41755  5   10 
+ENDBIB               8          0                                 41755  5   11 
+COMMON               4          3                                 41755  5   12 
+ERR-1      ERR-S      ERR-2      ERR-3                            41755  5   13 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         41755  5   14 
+ 2.95       1.59       1.52       3.08                            41755  5   15 
+ENDCOMMON            3          0                                 41755  5   16 
+DATA                 3          1                                 41755  5   17 
+MISC       DATA       ERR-T                                       41755  5   18 
+MEV        MB         PER-CENT                                    41755  5   19 
+ 4.38         8.25E+01  5.4                                       41755  5   20 
+ENDDATA              3          0                                 41755  5   21 
+ENDSUBENT           20          0                                 41755  599999 
+SUBENT        41755006   20230118                             421341755  6    1 
+BIB                  4         10                                 41755  6    2 
+REACTION   (22-TI-46(N,P)21-SC-46,,SIG,,FIS)                      41755  6    3 
+SAMPLE     Placed at 300 mm distance from the light water         41755  6    4 
+           moderator (5 cm thickness) surface.                    41755  6    5 
+            Titanium natural, 99.99% purity,                      41755  6    6 
+                0.283 g 15 x 15 x 0.2 mm                          41755  6    7 
+DECAY-DATA (21-SC-46-G,83.79D,DG,889.277,0.99984,                 41755  6    8 
+                           DG,1120.545,0.99987)                   41755  6    9 
+STATUS     (TABLE,,M.Schulc+,J,RPC,206,110804,2023)               41755  6   10 
+            Table 5  - data, Table 4 - uncertainties.             41755  6   11 
+           (SUPPL,41755007) Spectrum at sample position           41755  6   12 
+ENDBIB              10          0                                 41755  6   13 
+COMMON               4          3                                 41755  6   14 
+ERR-1      ERR-S      ERR-2      ERR-3                            41755  6   15 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         41755  6   16 
+ 2.80       1.80       1.52       3.11                            41755  6   17 
+ENDCOMMON            3          0                                 41755  6   18 
+DATA                 3          1                                 41755  6   19 
+MISC       DATA       ERR-T                                       41755  6   20 
+MEV        MB         PER-CENT                                    41755  6   21 
+ 6.00         1.25E+01  4.8                                       41755  6   22 
+ENDDATA              3          0                                 41755  6   23 
+ENDSUBENT           22          0                                 41755  699999 
+SUBENT        41755007   20230118                             421341755  7    1 
+BIB                  3        122                                 41755  7    2 
+SUPPL-INF  (INCSP) Calculated neutron spectrum at sample position:41755  7    3 
+             E,MeV           Flux n/cm2                           41755  7    4 
+            1.E-11          0.                                    41755  7    5 
+            2.1544E-11      0.                                    41755  7    6 
+            4.6416E-11      2.74302E-14                           41755  7    7 
+            1.E-10          7.84779E-13                           41755  7    8 
+            1.5849E-10      1.29797E-12                           41755  7    9 
+            2.5119E-10      4.96749E-12                           41755  7   10 
+            3.9811E-10      1.81841E-11                           41755  7   11 
+            6.7607E-10      4.91386E-11                           41755  7   12 
+            7.4199E-10      2.01381E-11                           41755  7   13 
+            8.1804E-10      2.6945E-11                            41755  7   14 
+            9.0642E-10      2.72725E-11                           41755  7   15 
+            1.0099E-9       4.81287E-11                           41755  7   16 
+            1.1322E-9       4.54673E-11                           41755  7   17 
+            1.2782E-9       6.93789E-11                           41755  7   18 
+            1.4543E-9       8.71585E-11                           41755  7   19 
+            1.6695E-9       1.34756E-10                           41755  7   20 
+            1.9362E-9       1.86361E-10                           41755  7   21 
+            2.2723E-9       2.83773E-10                           41755  7   22 
+            2.7043E-9       4.75966E-10                           41755  7   23 
+            3.2722E-9       9.31833E-10                           41755  7   24 
+            3.9811E-9       1.36759E-9                            41755  7   25 
+            5.0119E-9       1.98647E-9                            41755  7   26 
+            6.3096E-9       3.00078E-9                            41755  7   27 
+            7.9433E-9       4.8152E-9                             41755  7   28 
+            1.E-8           7.54381E-9                            41755  7   29 
+            1.2589E-8       1.27134E-8                            41755  7   30 
+            1.5849E-8       1.64282E-8                            41755  7   31 
+            1.9953E-8       2.42724E-8                            41755  7   32 
+            2.5119E-8       3.72912E-8                            41755  7   33 
+            3.1623E-8       4.5505E-8                             41755  7   34 
+            3.9811E-8       5.93522E-8                            41755  7   35 
+            5.0119E-8       7.15053E-8                            41755  7   36 
+            6.3096E-8       7.73596E-8                            41755  7   37 
+            7.9433E-8       7.4814E-8                             41755  7   38 
+            1.E-7           6.96902E-8                            41755  7   39 
+            1.2589E-7       5.33236E-8                            41755  7   40 
+            1.5849E-7       4.09989E-8                            41755  7   41 
+            1.9953E-7       2.96343E-8                            41755  7   42 
+            2.5119E-7       2.47826E-8                            41755  7   43 
+            3.1623E-7       2.38501E-8                            41755  7   44 
+            3.9811E-7       2.47874E-8                            41755  7   45 
+            5.0119E-7       2.72819E-8                            41755  7   46 
+            6.3096E-7       2.80568E-8                            41755  7   47 
+            7.9433E-7       3.05669E-8                            41755  7   48 
+            1.E-6           3.24339E-8                            41755  7   49 
+            1.2589E-6       3.38998E-8                            41755  7   50 
+            1.5849E-6       3.562E-8                              41755  7   51 
+            1.9953E-6       3.81081E-8                            41755  7   52 
+            2.5119E-6       4.08504E-8                            41755  7   53 
+            3.1623E-6       4.34971E-8                            41755  7   54 
+            3.9811E-6       4.50909E-8                            41755  7   55 
+            5.0119E-6       4.74748E-8                            41755  7   56 
+            6.3096E-6       4.92606E-8                            41755  7   57 
+            7.9433E-6       4.99774E-8                            41755  7   58 
+            1.E-5           5.04001E-8                            41755  7   59 
+            1.2589E-5       5.24473E-8                            41755  7   60 
+            1.5849E-5       5.35301E-8                            41755  7   61 
+            1.9953E-5       5.67949E-8                            41755  7   62 
+            2.5119E-5       5.62296E-8                            41755  7   63 
+            3.1623E-5       5.79342E-8                            41755  7   64 
+            3.9811E-5       5.86622E-8                            41755  7   65 
+            5.0119E-5       5.69485E-8                            41755  7   66 
+            6.3096E-5       5.82746E-8                            41755  7   67 
+            7.9433E-5       5.94067E-8                            41755  7   68 
+            1.E-4           5.9009E-8                             41755  7   69 
+            1.2589E-4       5.79883E-8                            41755  7   70 
+            1.5849E-4       5.8147E-8                             41755  7   71 
+            1.9953E-4       5.79708E-8                            41755  7   72 
+            2.5119E-4       5.86562E-8                            41755  7   73 
+            3.1623E-4       5.80122E-8                            41755  7   74 
+            3.9811E-4       5.56515E-8                            41755  7   75 
+            5.0119E-4       5.74459E-8                            41755  7   76 
+            6.3096E-4       5.66016E-8                            41755  7   77 
+            7.9433E-4       5.54283E-8                            41755  7   78 
+            0.001           5.36895E-8                            41755  7   79 
+            0.00126         5.57214E-8                            41755  7   80 
+            0.00158         5.88888E-8                            41755  7   81 
+            0.002           6.00154E-8                            41755  7   82 
+            0.00251         5.94165E-8                            41755  7   83 
+            0.00316         5.86516E-8                            41755  7   84 
+            0.00398         5.9627E-8                             41755  7   85 
+            0.00501         5.83776E-8                            41755  7   86 
+            0.00631         5.88888E-8                            41755  7   87 
+            0.00794         5.88694E-8                            41755  7   88 
+            0.01            5.77586E-8                            41755  7   89 
+            0.01259         5.73803E-8                            41755  7   90 
+            0.01585         5.64594E-8                            41755  7   91 
+            0.01995         6.13688E-8                            41755  7   92 
+            0.02512         2.57096E-7                            41755  7   93 
+            0.03162         9.78319E-8                            41755  7   94 
+            0.03981         5.86453E-8                            41755  7   95 
+            0.05012         7.84737E-8                            41755  7   96 
+            0.0631          8.94533E-8                            41755  7   97 
+            0.07943         1.62366E-7                            41755  7   98 
+            0.1             1.54022E-7                            41755  7   99 
+            0.12589         1.3307E-7                             41755  7  100 
+            0.15849         2.29553E-7                            41755  7  101 
+            0.19953         2.44838E-7                            41755  7  102 
+            0.25119         1.9398E-7                             41755  7  103 
+            0.31623         3.53431E-7                            41755  7  104 
+            0.39811         2.68896E-7                            41755  7  105 
+            0.50119         1.7455E-7                             41755  7  106 
+            0.63096         2.44417E-7                            41755  7  107 
+            0.79433         1.94367E-7                            41755  7  108 
+            1.              1.11095E-7                            41755  7  109 
+            1.2589          9.00792E-8                            41755  7  110 
+            1.5849          7.15966E-8                            41755  7  111 
+            1.9953          6.34739E-8                            41755  7  112 
+            2.5119          6.02879E-8                            41755  7  113 
+            3.1623          4.53723E-8                            41755  7  114 
+            3.9811          2.71069E-8                            41755  7  115 
+            5.0119          2.24539E-8                            41755  7  116 
+            6.3096          1.41208E-8                            41755  7  117 
+            7.9433          7.7068E-9                             41755  7  118 
+            10.             2.72163E-9                            41755  7  119 
+            12.589          7.23592E-10                           41755  7  120 
+            15.849          1.77134E-10                           41755  7  121 
+            19.953          1.2553E-11                            41755  7  122 
+STATUS     (TABLE) From M.Schulc                                  41755  7  123 
+HISTORY    (20230824R)                                            41755  7  124 
+ENDBIB             122          0                                 41755  7  125 
+NOCOMMON             0          0 3                               41755  7  126 
+NODATA               0          0 1                               41755  7  127 
+ENDSUBENT          126          0                                 41755  799999 
+ENDENTRY             7          0                                 4175599999999 
