@@ -1,6 +1,6 @@
-ENTRY            O1016   20160804                             O058O1016  0    1 
-SUBENT        O1016001   20160804                             O058O1016  1    1 
-BIB                 15         79                                 O1016  1    2 
+ENTRY            O1016   20200213                             O076O1016  0    1 
+SUBENT        O1016001   20200213                             O076O1016  1    1 
+BIB                 15         75                                 O1016  1    2 
 TITLE      Cross section data for the production of the positron  O1016  1    3 
            emitting niobium isotope Nb-90 via the Zr-90(p,n)      O1016  1    4 
            reaction                                               O1016  1    5 
@@ -8,7 +8,7 @@ AUTHOR     (S.Busse, F.Rosch, S.M.Qaim)                           O1016  1    6
 INSTITUTE  (2GERMNZ)                                              O1016  1    7 
            (2GERJUL) Institut fuer Nuklearchemie                  O1016  1    8 
 REFERENCE  (J,RCA,90,1,2002)                                      O1016  1    9 
-REL-REF    (M,B0124001,S.M.Qaim,J,ARI,28,947,1977) Details of     O1016  1   10 
+REL-REF    (M,B0124001,S.M.Qaim+,J,ARI,28,947,1977) Details of    O1016  1   10 
            experiments.                                           O1016  1   11 
 FACILITY   (CYCLO,2GERJUL) The Julich compact cyclotron CV-28.    O1016  1   12 
 METHOD     (STTA)                                                 O1016  1   13 
@@ -40,53 +40,49 @@ SAMPLE     In the case of natural Zr samples for cross section    O1016  1   29
            having the same diameter of 13-mm as the Cu backing    O1016  1   39 
            foil.                                                  O1016  1   40 
 ADD-RES    Method to prepare enriched target of Zr-90.            O1016  1   41 
-DETECTOR   (GELI)                                                 O1016  1   42 
-           (HPGE)                                                 O1016  1   43 
-MONITOR    (29-CU-63(P,N)30-ZN-63,,SIG,,,EVAL)                    O1016  1   44 
-           (29-CU-63(P,2N)30-ZN-62,,SIG,,,EVAL)                   O1016  1   45 
-           The ratio of cross section (p,2n)/(p,n) was used to    O1016  1   46 
-           control the proton energy.                             O1016  1   47 
-MONIT-REF  (,F.Tarkanyi+,R,IAEA-TECDOC-1211,47,2001) Chapter 4    O1016  1   48 
-DECAY-MON  (30-ZN-63,38.1MIN,B-,,0.93,EC,,0.07,DG,669.8,0.084,    O1016  1   49 
-                                               DG,962.6,0.066)    O1016  1   50 
-           (30-ZN-62,9.23HR,EC,,0.931,B-,,0.069,DG,548.4,0.152,   O1016  1   51 
-                                                DG,596.7,0.257)   O1016  1   52 
-ERR-ANALYS The overall uncertainty in each cross section (ERR-T)  O1016  1   53 
-           was obtained by taking the square root of the sum of   O1016  1   54 
-           the squares of the individual uncertainties, which wereO1016  1   55 
-           considered to be as follows:                           O1016  1   56 
-           (ERR-1) target mass ~ 2%.                              O1016  1   57 
-           (ERR-2,5.,10.) Inhomogeneity in target thickness-5%-10%O1016  1   58 
-           (ERR-S,2.,10.) Statistical errors-2-10%, for energy    O1016  1   59 
-            point near the threshold up to 20%.                   O1016  1   60 
-           (ERR-3) Detector efficiency and sample-detector geometrO1016  1   61 
-           approx. 6%.                                            O1016  1   62 
-           (ERR-4,,3.) Decay data errors less 3%.                 O1016  1   63 
-           (ERR-5,8.,10.) Bombarding proton beam intensity 8-10%. O1016  1   64 
-           (ERR-6,,7.) uncertainty of the dead time               O1016  1   65 
-           For the Zr-90(p,n) reaction the overall error in cross O1016  1   66 
-           section amounts to 15 to 20%. The primary proton energyO1016  1   67 
-           had an error of +-0.2-MeV. The proton energy           O1016  1   68 
-           degradation in each stack foil or Zr-90-O(2) sample    O1016  1   69 
-           was calculated and its half-value was combined with theO1016  1   70 
-           uncertainty of the primary energy. The uncertainty in  O1016  1   71 
-           the effective energy of the front foil was estimated toO1016  1   72 
-           be 0.3-MeV. Due to propagation of error it increased   O1016  1   73 
-           to 0.7-MeV in the sixth foil of a stack.               O1016  1   74 
-HISTORY    (20021204C)                                            O1016  1   75 
-           (20021229U) Last checking has been done.               O1016  1   76 
-           (20151204A) SD: DECAY-DATA corrected in Subent 005.    O1016  1   77 
-           ERR-ANALYS update.                                     O1016  1   78 
-           (20160804A) SD: REACTION code corrected in             O1016  1   79 
-           Subents 002,003. All corrections were made following   O1016  1   80 
-           N.Otsuka comments.                                     O1016  1   81 
-ENDBIB              79          0                                 O1016  1   82 
-COMMON               2          3                                 O1016  1   83 
-ERR-1      ERR-3                                                  O1016  1   84 
-PER-CENT   PER-CENT                                               O1016  1   85 
-  2.         6.                                                   O1016  1   86 
-ENDCOMMON            3          0                                 O1016  1   87 
-ENDSUBENT           86          0                                 O1016  199999 
+DETECTOR   (GELI,HPGE)                                            O1016  1   42 
+MONITOR    (29-CU-63(P,N)30-ZN-63,,SIG)                           O1016  1   43 
+           The ratio of cross section (p,2n)/(p,n) was used to    O1016  1   44 
+           control the proton energy.                             O1016  1   45 
+MONIT-REF  (,F.Tarkanyi+,R,IAEA-TECDOC-1211,47,2001) Chapter 4    O1016  1   46 
+DECAY-MON  (30-ZN-63,38.1MIN,DG,669.8,0.084,DG,962.6,0.066)       O1016  1   47 
+ERR-ANALYS The overall uncertainty in each cross section (ERR-T)  O1016  1   48 
+           was obtained by taking the square root of the sum of   O1016  1   49 
+           the squares of the individual uncertainties, which wereO1016  1   50 
+           considered to be as follows:                           O1016  1   51 
+           (ERR-1) target mass ~ 2%.                              O1016  1   52 
+           (ERR-2,5.,10.) Inhomogeneity in target thickness-5%-10%O1016  1   53 
+           (ERR-S,2.,10.) Statistical errors-2-10%, for energy    O1016  1   54 
+            point near the threshold up to 20%.                   O1016  1   55 
+           (ERR-3) Detector efficiency and sample-detector        O1016  1   56 
+           geometry approx. 6%.                                   O1016  1   57 
+           (ERR-4,,3.) Decay data errors less 3%.                 O1016  1   58 
+           (ERR-5,8.,10.) Bombarding proton beam intensity 8-10%. O1016  1   59 
+           (ERR-6,,7.) uncertainty of the dead time               O1016  1   60 
+           For the Zr-90(p,n) reaction the overall error in cross O1016  1   61 
+           section amounts to 15 to 20%. The primary proton energyO1016  1   62 
+           had an error of +-0.2-MeV. The proton energy           O1016  1   63 
+           degradation in each stack foil or Zr-90-O(2) sample    O1016  1   64 
+           was calculated and its half-value was combined with theO1016  1   65 
+           uncertainty of the primary energy. The uncertainty in  O1016  1   66 
+           the effective energy of the front foil was estimated toO1016  1   67 
+           be 0.3-MeV. Due to propagation of error it increased   O1016  1   68 
+           to 0.7-MeV in the sixth foil of a stack.               O1016  1   69 
+HISTORY    (20021204C)                                            O1016  1   70 
+           (20021229U) Last checking has been done.               O1016  1   71 
+           (20151204A) SD: DECAY-DATA corrected in Subent 005.    O1016  1   72 
+           ERR-ANALYS update.                                     O1016  1   73 
+           (20160804A) SD: REACTION code corrected in             O1016  1   74 
+           Subents 002,003. All corrections were made following   O1016  1   75 
+           N.Otsuka comments.                                     O1016  1   76 
+           (20200213U) SD: DECAY-MON, MONITOR corrected.          O1016  1   77 
+ENDBIB              75          0                                 O1016  1   78 
+COMMON               2          3                                 O1016  1   79 
+ERR-1      ERR-3                                                  O1016  1   80 
+PER-CENT   PER-CENT                                               O1016  1   81 
+  2.         6.                                                   O1016  1   82 
+ENDCOMMON            3          0                                 O1016  1   83 
+ENDSUBENT           82          0                                 O1016  199999 
 SUBENT        O1016002   20160804                             O058O1016  2    1 
 BIB                  7         13                                 O1016  2    2 
 REACTION   (40-ZR-90(P,N)41-NB-90-G,M+,SIG)                       O1016  2    3 
