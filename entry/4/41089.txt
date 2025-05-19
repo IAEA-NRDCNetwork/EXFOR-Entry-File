@@ -1,46 +1,65 @@
-ENTRY            41089   20020729                             00004108900000001 
-SUBENT        41089001   20020729                             00004108900100001 
-BIB                 10         14                                 4108900100002 
-INSTITUTE  (4RUSKUR)                                              4108900100003 
-REFERENCE  (J,YK,,(3),39,199010)                                  4108900100004 
-AUTHOR     (S.P.MAKAROV, G.A.PIK-PICHAK, YU.F.RODIONOV,           4108900100005 
-            V.V.KHMYZOV, YU.A.YASHIN)                             4108900100006 
-TITLE       THERMAL NEUTRON FE-54(N,ALPHA)CR-51 REACTION          4108900100007 
-            CROSS-SECTION                                         4108900100008 
-FACILITY   (REAC)  REACTOR F-1                                    4108900100009 
-SAMPLE      IRON OXIDE FE2-O3, FE-54 CONTENT IS 90.7 PC,          4108900100010 
-            FE-54 MASS IS 11.74 GRAM                              4108900100011 
-DETECTOR   (GE-IN)  DETECTOR FROM EXTRA-PURE GERMANIUM            4108900100012 
-MONITOR     ABSOLUTE MEASUREMENTS                                 4108900100013 
-STATUS      DATA ARE TAKEN FROM THE REFERENCE                     4108900100014 
-HISTORY    (19920425C)  + + COMPILED AT THE CENTRE - CJD + +      4108900100015 
-           (20020729A) DATE is corrected                          4108900100016 
-ENDBIB              14          0                                 4108900100017 
-NOCOMMON             0          0                                 4108900100018 
-ENDSUBENT           17          0                                 4108900199999 
-SUBENT        41089002   20020729                             00004108900200001 
-BIB                  3          3                                 4108900200002 
-REACTION   (26-FE-54(N,A)24-CR-51,,SIG,,MXW)                      4108900200003 
-INC-SPECT   THERMAL SPECTRUM OF THE THERMAL REACTOR               4108900200004 
-ERR-ANALYS  ERROR NOT GIVEN                                       4108900200005 
-ENDBIB               3          0                                 4108900200006 
-NOCOMMON             0          0                                 4108900200007 
-DATA                 2          1                                 4108900200008 
-EN-DUMMY   DATA-MAX                                               4108900200009 
-EV         B                                                      4108900200010 
-   2.53E-02     1.E-05                                            4108900200011 
-ENDDATA              3          0                                 4108900200012 
-ENDSUBENT           11          0                                 4108900299999 
-SUBENT        41089003   20020729                             00004108900300001 
-BIB                  2          2                                 4108900300002 
-REACTION   (26-FE-54(N,A)24-CR-51,,RI)                            4108900300003 
-ERR-ANALYS (DATA-ERR)  ERROR IS NOT SPECIFIED                     4108900300004 
-ENDBIB               2          0                                 4108900300005 
-NOCOMMON             0          0                                 4108900300006 
-DATA                 3          1                                 4108900300007 
-EN-MIN     DATA       DATA-ERR                                    4108900300008 
-EV         B          B                                           4108900300009 
-   2.53E-02   1.09E-03    1.3E-04                                 4108900300010 
-ENDDATA              3          0                                 4108900300011 
-ENDSUBENT           10          0                                 4108900399999 
+ENTRY            41089   20160531                             417641089  0    1 
+SUBENT        41089001   20160531                             417641089  1    1 
+BIB                 13         34                                 41089  1    2 
+INSTITUTE  (4RUSKUR)                                              41089  1    3 
+REFERENCE  (J,AE,70,(3),194,1991)                                 41089  1    4 
+           (J,SJA,70,254,1991) Engl.transl. of AE,70,(3),194,1991 41089  1    5 
+           ((J,YK,,(3),39,1990)=(R,INDC(CCP)-328,39,1990))        41089  1    6 
+           (R,INDC(CCP)-335,19,1991)                              41089  1    7 
+            Engl.transl.of YK,,(3),39,1990                        41089  1    8 
+AUTHOR     (S.P.Makarov,G.A.Pik-Pitchak,Yu.F.Rodionov,            41089  1    9 
+           V.V.Khmyzov,Yu.A.Yashin)                               41089  1   10 
+TITLE      Cross section of the reaction Fe-54(n,alpha)Cr-51      41089  1   11 
+           on thermal neutrons                                    41089  1   12 
+FACILITY   (REAC,4RUSKUR)  Reactor F-1                            41089  1   13 
+SAMPLE      Iron oxide Fe2-O3, Fe-54 content is 90.7%,            41089  1   14 
+            Fe-54 mass is 11.74 gram                              41089  1   15 
+DETECTOR   (GE-IN)  Detector from extra-pure germanium            41089  1   16 
+            Energy resolution 1.5keV for E-gamma = 320 keV.       41089  1   17 
+MONITOR     No information                                        41089  1   18 
+DECAY-DATA (24-CR-51,27.73D,DG,320.1)                             41089  1   19 
+INC-SPECT   Thermal spectrum of the thermal reactor .             41089  1   20 
+             6.06*10**13 n/m2/sec.                                41089  1   21 
+            Resonance neutrons - (6.0+-0.2) %.                    41089  1   22 
+METHOD     (ACTIV) Two activations , each of 3hr - with and       41089  1   23 
+           without Cd.                                            41089  1   24 
+STATUS     (TABLE) Data from the text of YK,,(3),39,1990          41089  1   25 
+HISTORY    (19920425C)  + + Compiled at the centre - CJD + +      41089  1   26 
+           (20020729A) date is corrected                          41089  1   27 
+           (20160531U) SD:Updated to new date formats,lower case. 41089  1   28 
+           Ref. YK,,(3),39 -> YK,1990,(3),39=INDC(CCP)-328,39;    41089  1   29 
+           INDC(CCP)-335,19; SJA,70,254 and AE,70,(3),194 were    41089  1   30 
+           added. Title and list of authors update following      41089  1   31 
+           SJA,70,254 (except Pik-Pitchak) .                      41089  1   32 
+           (20170710U) M.M. Previous correction of SD was         41089  1   33 
+           checked at CJD.                                        41089  1   34 
+            J,YK,1990,(3),39,1990 -> J,YK,,(3),39,1990            41089  1   35 
+            DECAY-DATA, METHOD, INC-SPECT were added.             41089  1   36 
+ENDBIB              34          0                                 41089  1   37 
+NOCOMMON             0          0                                 41089  1   38 
+ENDSUBENT           37          0                                 41089  199999 
+SUBENT        41089002   20160531                             417641089  2    1 
+BIB                  2          2                                 41089  2    2 
+REACTION   (26-FE-54(N,A)24-CR-51,,SIG,,MXW)                      41089  2    3 
+ERR-ANALYS  Error not given                                       41089  2    4 
+ENDBIB               2          0                                 41089  2    5 
+NOCOMMON             0          0                                 41089  2    6 
+DATA                 2          1                                 41089  2    7 
+EN-DUMMY   DATA-MAX                                               41089  2    8 
+EV         B                                                      41089  2    9 
+   2.53E-02     1.E-05                                            41089  2   10 
+ENDDATA              3          0                                 41089  2   11 
+ENDSUBENT           10          0                                 41089  299999 
+SUBENT        41089003   20160531                             417641089  3    1 
+BIB                  2          2                                 41089  3    2 
+REACTION   (26-FE-54(N,A)24-CR-51,,RI)                            41089  3    3 
+ERR-ANALYS (DATA-ERR)  Type of error is not explained.            41089  3    4 
+ENDBIB               2          0                                 41089  3    5 
+NOCOMMON             0          0                                 41089  3    6 
+DATA                 3          1                                 41089  3    7 
+EN-MIN     DATA       DATA-ERR                                    41089  3    8 
+EV         MB         MB                                          41089  3    9 
+   2.53E-02   1.09        0.13                                    41089  3   10 
+ENDDATA              3          0                                 41089  3   11 
+ENDSUBENT           10          0                                 41089  399999 
 ENDENTRY             3          0                                 4108999999999 

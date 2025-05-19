@@ -1,33 +1,58 @@
-ENTRY            40707   19841024                             00004070700000001 
-SUBENT        40707001   19841024                             00004070700100001 
-BIB                 10         14                                 4070700100002 
-INSTITUTE  (4CCPCCP)                                              4070700100003 
-REFERENCE  (J,DOK,111,(2),331,56)                                 4070700100004 
-           (J,SPD,1,655,56)                                       4070700100005 
-AUTHOR     (E.A.KOLTYPIN,V.M.MOROZOV)                             4070700100006 
-TITLE       THE UPPER LIMIT OF THE RADIATION CAPTURE CROSS SECTION4070700100007 
-            OF 275 KEV RESONANCE NEUTRONS BY LI7.                 4070700100008 
-METHOD     (ACTIV) ACTIVATION                                     4070700100009 
-DETECTOR   (PROPC)                                                4070700100010 
-           (GEMUC)                                                4070700100011 
-DECAY-DATA (3-LI-8,0.89SEC,B-)                                    4070700100012 
-           (4-BE-8,,A,1500.)                                      4070700100013 
-MONITOR    (3-LI-6(N,T)2-HE-4,,SIG)                               4070700100014 
-STATUS     (SCSRS)                                                4070700100015 
-HISTORY    (840416T) CONVERTED FROM ENTRY 80115                   4070700100016 
-ENDBIB              14          0                                 4070700100017 
-NOCOMMON             0          0                                 4070700100018 
-ENDSUBENT           17          0                                 4070700199999 
-SUBENT        40707002   19841024                             00004070700200001 
-BIB                  2          2                                 4070700200002 
-REACTION   (3-LI-7(N,G)3-LI-8,,SIG,,MXW)                          4070700200003 
-INC-SPECT   THERMAL SPECTRUM                                      4070700200004 
-ENDBIB               2          0                                 4070700200005 
-NOCOMMON             0          0                                 4070700200006 
-DATA                 6          1                                 4070700200007 
-EN-DUMMY   DATA       DATA-ERR   EN-NRM     MONIT      MONIT-ERR  4070700200008 
-MEV        B          B          EV         B          B          4070700200009 
- 2.5300E-08 4.2000E-02 1.0000E-02 2.5300E-02 6.7000E+01 7.0000E+004070700200010 
-ENDDATA              3          0                                 4070700200011 
-ENDSUBENT           10          0                                 4070700299999 
-ENDENTRY             2          0                                 4070799999999 
+ENTRY            40707   20160528                             417640707  0    1 
+SUBENT        40707001   20160528                             417640707  1    1 
+BIB                 10         20                                 40707  1    2 
+INSTITUTE  (4RUSKUR)                                              40707  1    3 
+REFERENCE  (J,DOK,111,(2),331,1956)                               40707  1    4 
+           (J,SPD,1,655,1956) Engl. transl. of DOK,111,(2),331    40707  1    5 
+AUTHOR     (E.A.Koltypin,V.M.Morozov)                             40707  1    6 
+TITLE       The upper limit of the radiation capture cross section40707  1    7 
+            of 275 keV resonance neutrons by Li7                  40707  1    8 
+METHOD     (ACTIV) Activation                                     40707  1    9 
+           (COINC) Beta decay of Li-8 and alpha particles of Be-8 40707  1   10 
+           decay.                                                 40707  1   11 
+DETECTOR   (PROPC)                                                40707  1   12 
+           (GEMUC)                                                40707  1   13 
+DECAY-DATA (3-LI-8,0.89SEC,B-)                                    40707  1   14 
+           (4-BE-8,,A,1500.)                                      40707  1   15 
+MONITOR    (3-LI-6(N,T)2-HE-4,,SIG,,A)                            40707  1   16 
+STATUS     (TABLE) from the text of DOK,111,(2),331,1956          40707  1   17 
+HISTORY    (19840416T) Converted from entry 80115                 40707  1   18 
+           (20160528A) SD:Updated to new date formats,lower case. 40707  1   19 
+           SF8=A added to MONITOR.                                40707  1   20 
+           (20170710U) M.M. Previous correction of SD was         40707  1   21 
+           checked at CJD. Subent 003 was added.                  40707  1   22 
+ENDBIB              20          0                                 40707  1   23 
+NOCOMMON             0          0                                 40707  1   24 
+ENDSUBENT           23          0                                 40707  199999 
+SUBENT        40707002   20160528                             417640707  2    1 
+BIB                  5          7                                 40707  2    2 
+REACTION   (3-LI-7(N,G)3-LI-8,,SIG,,MXW)                          40707  2    3 
+INC-SOURCE (RA-BE) Ra-Be source neutrons were slowed down in      40707  2    4 
+            paraffin                                              40707  2    5 
+INC-SPECT   Thermal spectrum                                      40707  2    6 
+ERR-ANALYS (DATA-ERR) Type of error is not explained in the       40707  2    7 
+           article.                                               40707  2    8 
+HISTORY    (20170710A) MXW -> SPA                                 40707  2    9 
+ENDBIB               7          0                                 40707  2   10 
+NOCOMMON             0          0                                 40707  2   11 
+DATA                 6          1                                 40707  2   12 
+EN-DUMMY   DATA       DATA-ERR   EN-NRM     MONIT      MONIT-ERR  40707  2   13 
+EV         MB         MB         EV         B          B          40707  2   14 
+     0.0253      42.        10.       0.0253        67.         7.40707  2   15 
+ENDDATA              3          0                                 40707  2   16 
+ENDSUBENT           15          0                                 40707  299999 
+SUBENT        40707003   20170710                             417640707  3    1 
+BIB                  3          4                                 40707  3    2 
+REACTION   (3-LI-7(N,G)3-LI-8,,SIG)                               40707  3    3 
+INC-SOURCE (P-T)  T(p,n)He-3                                      40707  3    4 
+             Energy spread ( EN-RSL) ~ 15 keV .                   40707  3    5 
+MONIT-REF  (40708002,G.V.Gorlov+,J,DOK,110,(6),963,1956)          40707  3    6 
+ENDBIB               4          0                                 40707  3    7 
+NOCOMMON             0          0                                 40707  3    8 
+DATA                 5          1                                 40707  3    9 
+EN-DUMMY   EN-RSL     DATA-MAX   EN-NRM     MONIT                 40707  3   10 
+KEV        KEV        MB         EV         B                     40707  3   11 
+ 275.       15.       0.25        265.        3.4                 40707  3   12 
+ENDDATA              3          0                                 40707  3   13 
+ENDSUBENT           12          0                                 40707  399999 
+ENDENTRY             3          0                                 4070799999999 

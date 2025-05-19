@@ -1,51 +1,67 @@
-ENTRY            41091   19931019                             00004109100000001 
-SUBENT        41091001   19931019                             00004109100100001 
-BIB                 12         17                                 4109100100002 
-TITLE       THERMAL NEUTRON FISSION CROSS-SECTION AND FISSION     4109100100003 
-            RESONANCE INTEGRAL OF PU-238                          4109100100004 
-AUTHOR     (V.S.ZENKEVICH,YU.A.SELITSKIY,V.B.FUNSHTEIN,           4109100100005 
-           V.A.YAKOVLEV)                                          4109100100006 
-INSTITUTE  (4RUSKUR)                                              4109100100007 
-REFERENCE  (J,YK,,(4),6,9012)                                     4109100100008 
-SAMPLE      SAMPLE CONTAINES 2.10+-0.01 MICROGRAM PU-238          4109100100009 
-            AND 10.6+-0.5 NANOGRAM PU-239                         4109100100010 
-MONITOR    (92-U-235(N,F),,RI)                                    4109100100011 
-           (94-PU-239(N,F),,SIG)                                  4109100100012 
-FACILITY   (REAC)                                                 4109100100013 
-INC-SOURCE (THCOL)                                                4109100100014 
-DETECTOR   (SOLST)  MICA DETECTORS                                4109100100015 
-STATUS      DATA ARE TAKEN FROM THE REFERENCE                     4109100100016 
-ERR-ANALYS (DATA-ERR) ERRORS ARE NOT SPECIFIED                    4109100100017 
-HISTORY    (920427C)  + +  COMPILED AT HE CENTRE - CJD  + +       4109100100018 
-           (931019U)  / / 'MXW' ADDED TO SF8 OF SAN 003           4109100100019 
-ENDBIB              17          0                                 4109100100020 
-NOCOMMON             0          0                                 4109100100021 
-ENDSUBENT           20          0                                 4109100199999 
-SUBENT        41091002   19931019                             00004109100200001 
-BIB                  2          2                                 4109100200002 
-REACTION   (94-PU-238(N,F),,RI)                                   4109100200003 
-MONITOR    (92-U-235(N,F),,RI)                                    4109100200004 
-ENDBIB               2          0                                 4109100200005 
-NOCOMMON             0          0                                 4109100200006 
-DATA                 4          1                                 4109100200007 
-EN-MIN     DATA       DATA-ERR   MONIT                            4109100200008 
-EV         B          B          B                                4109100200009 
-  0.5         26.3       1.5       280.                           4109100200010 
-ENDDATA              3          0                                 4109100200011 
-ENDSUBENT           10          0                                 4109100299999 
-SUBENT        41091003   19931019                             00004109100300001 
-BIB                  4          5                                 4109100300002 
-REACTION   (94-PU-238(N,F),,SIG,,MXW)                             4109100300003 
-MONITOR    (94-PU-239(N,F),,SIG,,MXW)                             4109100300004 
-INC-SPECT   THERMAL NEUTRON SPECTRUM OF THERMAL COLUMN            4109100300005 
-            OF REACTOR F-1                                        4109100300006 
-HISTORY    (931019U)   'MXW' ADDED TO SF8                         4109100300007 
-ENDBIB               5          0                                 4109100300008 
-NOCOMMON             0          0                                 4109100300009 
-DATA                 5          1                                 4109100300010 
-EN-DUMMY   DATA       DATA-ERR   MONIT      MONIT-ERR             4109100300011 
-EV         B          B          B          B                     4109100300012 
-   0.0253     16.7       0.8       780.8      1.8                 4109100300013 
-ENDDATA              3          0                                 4109100300014 
-ENDSUBENT           13          0                                 4109100399999 
+ENTRY            41091   20160605                             417641091  0    1 
+SUBENT        41091001   20160605                             417641091  1    1 
+BIB                 12         28                                 41091  1    2 
+TITLE       Thermal neutron fission cross-section and fission     41091  1    3 
+            resonance integral of Pu-238                          41091  1    4 
+AUTHOR     (V.S.Zenkevich,Yu.A.Selitskij,V.B.Funshtein,           41091  1    5 
+           V.A.Yakovlev)                                          41091  1    6 
+INSTITUTE  (4RUSKUR)                                              41091  1    7 
+REFERENCE  ((J,YK,,(4),6,1990)=(R,INDC(CCP)-334,6,1990))          41091  1    8 
+           (R,INDC(CCP)-365,19,1994) Engl.transl.of YK,,(4),6,199041091  1    9 
+MONITOR    (92-U-235(N,F),,RI)                                    41091  1   10 
+           (94-PU-239(N,F),,SIG)                                  41091  1   11 
+FACILITY   (REAC,4RUSKUR)  F-1 reactor                            41091  1   12 
+INC-SOURCE (THCOL)  1.6E+7 n/(cm2*sec)                            41091  1   13 
+            Cd ratio 600 - by U-235(n,f).                         41091  1   14 
+DETECTOR   (SOLST)  Mica detectors                                41091  1   15 
+             For fission fragments registration.                  41091  1   16 
+SAMPLE     239Pu target with a mass of 38.3 +-0.3 ng and          41091  1   17 
+           a 235U target with a mass of 260 +- 13 ng. The weight  41091  1   18 
+           of the 235U target was determined using the alpha-     41091  1   19 
+           particle backscattering method.                        41091  1   20 
+STATUS     (TABLE) Data from the text of YK,,(4),6,1990           41091  1   21 
+ERR-ANALYS (DATA-ERR) Errors are not specified                    41091  1   22 
+HISTORY    (19920427C)  + +  Compiled at the centre - CJD  + +    41091  1   23 
+           (19931019U)  / / 'MXW' added to SF8 of Subent 003      41091  1   24 
+           (20160605U) SD:Updated to new date formats,lower case. 41091  1   25 
+           Ref. YK,,(4),6,1990 -> YK,1990,(4),6=INDC(CCP)-334,6;  41091  1   26 
+           INDC(CCP)-365,19 was added. BIB update.                41091  1   27 
+           (20170710U) M.M. Previous correction of SD was         41091  1   28 
+           checked at CJD.                                        41091  1   29 
+           J,YK,1990,(4),6,1990 -> J,YK,,(4),6,1990               41091  1   30 
+ENDBIB              28          0                                 41091  1   31 
+NOCOMMON             0          0                                 41091  1   32 
+ENDSUBENT           31          0                                 41091  199999 
+SUBENT        41091002   20160605                             417641091  2    1 
+BIB                  3          7                                 41091  2    2 
+REACTION   (94-PU-238(N,F),,RI)                                   41091  2    3 
+MONITOR    (92-U-235(N,F),,RI)                                    41091  2    4 
+INC-SPECT  The measurement of the fission resonance integral was  41091  2    5 
+           carried out in a horizontal channel of the F-l reactor 41091  2    6 
+           in a resonance neutron flux density (1/E) of           41091  2    7 
+           1.6 x 10**7 n/(cm2*sec) and cadmium ratios 14 (by Mn-5541091  2    8 
+           and Cu-63) and 30 by U-235(n,f).                       41091  2    9 
+ENDBIB               7          0                                 41091  2   10 
+NOCOMMON             0          0                                 41091  2   11 
+DATA                 4          1                                 41091  2   12 
+EN-MIN     DATA       DATA-ERR   MONIT                            41091  2   13 
+EV         B          B          B                                41091  2   14 
+  0.5         26.3       1.5       280.                           41091  2   15 
+ENDDATA              3          0                                 41091  2   16 
+ENDSUBENT           15          0                                 41091  299999 
+SUBENT        41091003   20160605                             417641091  3    1 
+BIB                  4          5                                 41091  3    2 
+REACTION   (94-PU-238(N,F),,SIG,,MXW)                             41091  3    3 
+MONITOR    (94-PU-239(N,F),,SIG,,MXW)                             41091  3    4 
+INC-SPECT  The neutron flux density was 1.6 x 10**7 /cm2/s        41091  3    5 
+           with a cadmium to 235U(n,f) ratio of 600.              41091  3    6 
+HISTORY    (19931019U)   'MXW' added to SF8 in REACTION code.     41091  3    7 
+ENDBIB               5          0                                 41091  3    8 
+NOCOMMON             0          0                                 41091  3    9 
+DATA                 5          1                                 41091  3   10 
+EN-DUMMY   DATA       DATA-ERR   MONIT      MONIT-ERR             41091  3   11 
+EV         B          B          B          B                     41091  3   12 
+   0.0253     16.7       0.8       780.8      1.8                 41091  3   13 
+ENDDATA              3          0                                 41091  3   14 
+ENDSUBENT           13          0                                 41091  399999 
 ENDENTRY             3          0                                 4109199999999 
