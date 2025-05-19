@@ -1,129 +1,139 @@
-ENTRY            41224   20080219                             41434122400000001 
-SUBENT        41224001   20080219                             41434122400100001 
-BIB                 13         27                                 4122400100002 
-INSTITUTE  (4RUSITE)                                              4122400100003 
-REFERENCE  (J,ZET,31,(2),169,195608)  Main reference.             4122400100004 
-           (J,JET,4,161,1957)                                     4122400100005 
-AUTHOR     (Yu.M.Kazarinov, Yu.N.Simonov)                         4122400100006 
-TITLE      Neutron elastic scattering by protons at 580 MeV energy4122400100007 
-EXP-YEAR   (1954)                                                 4122400100008 
-FACILITY   (SYNCY)                                                4122400100009 
-INC-SOURCE (P-BE)  Neutrons with max energy 600 MeV were obtained 4122400100010 
-                 at bombardment of Be-target with 680-MeV protons 4122400100011 
-INC-SPECT   Neutron beam has maximum at energy 600 MeV and        4122400100012 
-            half-width about 130 MeV. Mean energy was determined  4122400100013 
-            to be 580 MeV taking into account detector threshold. 4122400100014 
-            Neutron beam intensity at target position -           4122400100015 
-            2.E+4 neutron/cm**2/sec.                              4122400100016 
-METHOD     (REC)      Recoil protons method                       4122400100017 
-           (COINC)    Coincidence                                 4122400100018 
-DETECTOR   (TELES,SCIN,SCIN)    Counter telescope consisting of   4122400100019 
-                   three scintillation counters in coincidence.   4122400100020 
-            Detector threshold 450 MeV was ensured by tungsten and4122400100021 
-            copper filters.                                       4122400100022 
-CORRECTION  For charged pi-mesons.                                4122400100023 
-            For self-absorption.                                  4122400100024 
-STATUS     (SCSRS)                                                4122400100025 
-HISTORY    (19970407C)  +  +  Compiled at the center - CJD +  +   4122400100026 
-           (20080219A) M.M. TITLE was added. Upper-lower case     4122400100027 
-            correction. Dates were corrected for 4-digits year.   4122400100028 
-            BIB information was added. SUBENT 003 was added.      4122400100029 
-ENDBIB              27          0                                 4122400100030 
-NOCOMMON             0          0                                 4122400100031 
-ENDSUBENT           30          0                                 4122400199999 
-SUBENT        41224002   20080219                             41434122400200001 
-BIB                  9         32                                 4122400200002 
-REACTION   (1-H-1(N,EL)1-H-1,,DA) Neutron angular distribution.   4122400200003 
-MONITOR    ((MONIT1)1-H-1(N,EL)1-H-1,,SIG,,,DERIV)                4122400200004 
-           (6-C-12(N,EL)6-C-12,,SIG)                              4122400200005 
-ANALYSIS   Absolute values of differential cross-sections were    4122400200006 
-           determined by normalization to total elastic           4122400200007 
-           cross-section (26.0 +- 3. mb), which was defined as    4122400200008 
-           difference of total cross-section (36. +- 2. mb) from  4122400200009 
-           REL-REF(Dzhelepov+) and cross-section of pi-mesons     4122400200010 
-           production(10. +- 2. mb) at n-p interactions. Differen.4122400200011 
-           cross-section was assumed to be about constant at      4122400200012 
-           angles   < 35 deg in CM system and was equal to value  4122400200013 
-           at 35 deg.,as it was defined in experiments at energy  4122400200014 
-           range 300-400 MeV(see REL-REF of Hartzler+ for details)4122400200015 
-REL-REF    (R,11078001,A.L.Hartzler+,J,PR,95,591,1954)            4122400200016 
-           (R,41261002,V.P.Dzhelepov+,J,ZET,29,369,1955)          4122400200017 
-            Cross-section data used in normalization.             4122400200018 
-ASSUMED    (ASSUM1,1-H-1(N,X)0-P0-0,,SIG) pi-mesons production c-s4122400200019 
-           (ASSUM2,1-H-1(N,TOT),,SIG) total c-s from REL-REF of   4122400200020 
-                   Dzhelepov+.                                    4122400200021 
-ERR-ANALYS (ERR-S) Data errors given are standard statistical.    4122400200022 
-           (ERR-1) Error of total elastic scattering cross-section4122400200023 
-                   determination.                                 4122400200024 
-           (ERR-2) Uncertainty in normalization.                  4122400200025 
-SAMPLE      Paraffin and graphite of thickness                    4122400200026 
-            5., 3., 0.5 gram/cm**2 for angle ranges in lab.system 4122400200027 
-            0.-15., 25.-60. , 60.-70. degrees, respectively .     4122400200028 
-STATUS      Data are presented on Fig.2 of main reference as      4122400200029 
-            dependence from angle in CM system.                   4122400200030 
-HISTORY    (19970407T)  Data are converted from SUBENT 80348002   4122400200031 
-           (20080219A) ANG-RSL was moved into COMMON.             4122400200032 
-            -HW was added to EN-RSL. Errors are added.            4122400200033 
-            DATA was changed into DATA-CM.                        4122400200034 
-ENDBIB              32          0                                 4122400200035 
-COMMON              11          6                                 4122400200036 
-EN         EN-RSL-HW  MONIT1     MONIT1-ERR ANG-RSL    ERR-1      4122400200037 
-ERR-2      ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR            4122400200038 
-MEV        MEV        MB         MB         ADEG       PER-CENT   4122400200039 
-PER-CENT   MB         MB         MB         MB                    4122400200040 
- 5.8000E+02 1.3000E+02 26.          3.        2.0       12.       4122400200041 
-   10.       10.         2.        36.        2.                  4122400200042 
-ENDCOMMON            6          0                                 4122400200043 
-DATA                 3         15                                 4122400200044 
-COS-CM     DATA-CM    ERR-S                                       4122400200045 
-NO-DIM     MB/SR      MB/SR                                       4122400200046 
- 8.1900E-01 3.7000E+00 2.0000E-01                                 4122400200047 
- 7.0700E-01 3.0000E+00 3.0000E-01                                 4122400200048 
- 5.8800E-01 2.3000E+00 2.0000E-01                                 4122400200049 
- 4.5400E-01 2.1000E+00 2.0000E-01                                 4122400200050 
- 2.9200E-01 1.6000E+00 1.0000E-01                                 4122400200051 
- 1.2200E-01 1.1000E+00 1.0000E-01                                 4122400200052 
--5.2000E-02 9.0000E-01                                            4122400200053 
--2.2500E-01 8.0000E-01                                            4122400200054 
--4.0700E-01 8.0000E-01                                            4122400200055 
--5.5900E-01 1.0000E+00 1.0000E-01                                 4122400200056 
--7.1900E-01 1.7000E+00 1.0000E-01                                 4122400200057 
--8.3900E-01 2.1000E+00 2.0000E-01                                 4122400200058 
--9.1400E-01 3.4000E+00 3.0000E-01                                 4122400200059 
--9.7800E-01 5.4000E+00 5.0000E-01                                 4122400200060 
--9.9900E-01 8.5000E+00 8.0000E-01                                 4122400200061 
-ENDDATA             17          0                                 4122400200062 
-ENDSUBENT           61          0                                 4122400299999 
-SUBENT        41224003   20080219                             41434122400300001 
-BIB                  2          6                                 4122400300002 
-REACTION   (1-H-1(N,EL)1-H-1,,DA,,LEG/1K2/FCT,DERIV) For neutron. 4122400300003 
-           Legendre coefficients in form of :                     4122400300004 
-             d/dA=(1/(4*pi**2))*(1/k**2)*SUM(A(L)*P(L))           4122400300005 
-            , where k=1/lambda, lambda= wave length.              4122400300006 
-STATUS     (DEP,41224002)                                         4122400300007 
-             Text of main reference, p.172.                       4122400300008 
-ENDBIB               6          0                                 4122400300009 
-COMMON               2          3                                 4122400300010 
-EN         EN-RSL-HW                                              4122400300011 
-MEV        MEV                                                    4122400300012 
- 5.8000E+02 1.3000E+02                                            4122400300013 
-ENDCOMMON            3          0                                 4122400300014 
-DATA                 3         13                                 4122400300015 
-NUMBER-CM  DATA-CM    DATA-ERR                                    4122400300016 
-NO-DIM     NO-DIM     NO-DIM                                      4122400300017 
-0.          1.29         0.05                                     4122400300018 
-1.          0.24         0.13                                     4122400300019 
-2.          1.42         0.2                                      4122400300020 
-3.         -0.87         0.24                                     4122400300021 
-4.          0.28         0.22                                     4122400300022 
-5.         -0.5          0.16                                     4122400300023 
-6.          0.14         0.1                                      4122400300024 
-7.         -0.33         0.1                                      4122400300025 
-8.          0.19         0.18                                     4122400300026 
-9.         -0.2          0.24                                     4122400300027 
-10.         0.39         0.26                                     4122400300028 
-11.         0.1          0.19                                     4122400300029 
-12.         0.25         0.15                                     4122400300030 
-ENDDATA             15          0                                 4122400300031 
-ENDSUBENT           30          0                                 4122400399999 
+ENTRY            41224   20190419                             418241224  0    1 
+SUBENT        41224001   20190419                             418241224  1    1 
+BIB                 12         29                                 41224  1    2 
+INSTITUTE  (4ZZZDUB) Institute for Nucl.Problems Ac.Sc.USSR,      41224  1    3 
+            included in JINR in 1956                              41224  1    4 
+REFERENCE  (J,ZET,31,169,1956)  Graph is given . Issue 2 .        41224  1    5 
+           (J,JET,4,161,1957)       Engl.translation              41224  1    6 
+AUTHOR     (Yu.M.Kazarinov, Yu.N.Simonov)                         41224  1    7 
+TITLE      Elastic Scattering of Neutrons by 580 MeV Protons      41224  1    8 
+EXP-YEAR   (1954)                                                 41224  1    9 
+FACILITY   (SYNCY,4ZZZDUB)                                        41224  1   10 
+INC-SOURCE (P-BE)  Neutrons with max energy 600 MeV were obtained 41224  1   11 
+                 at bombardment of Be-target with 680-MeV protons 41224  1   12 
+INC-SPECT   Neutron beam has maximum at energy 600 MeV and        41224  1   13 
+            half-width about 130 MeV. Mean energy was determined  41224  1   14 
+            to be 580 MeV taking into account detector threshold. 41224  1   15 
+            Neutron beam intensity at target position -           41224  1   16 
+            2.E+4 neutron/cm**2/sec.                              41224  1   17 
+METHOD     (REC)      Recoil protons method                       41224  1   18 
+           (COINC)    Coincidence                                 41224  1   19 
+DETECTOR   (TELES,SCIN,SCIN)    Counter telescope consisting of   41224  1   20 
+                   three scintillation counters in coincidence.   41224  1   21 
+            Detector threshold 450 MeV was ensured by tungsten and41224  1   22 
+            copper filters.                                       41224  1   23 
+CORRECTION  For charged pi-mesons.                                41224  1   24 
+            For self-absorption.                                  41224  1   25 
+HISTORY    (19970407C)  +  +  Compiled at the center - CJD +  +   41224  1   26 
+           (20080219A) M.M. TITLE was added. Upper-lower case     41224  1   27 
+            correction. Dates were corrected for 4-digits year.   41224  1   28 
+            BIB information was added. SUBENT 003 was added.      41224  1   29 
+           (20190419A) M.M. Subent 002 was corrected.             41224  1   30 
+            4RUSITE -> 4ZZZDUB                                    41224  1   31 
+ENDBIB              29          0                                 41224  1   32 
+NOCOMMON             0          0                                 41224  1   33 
+ENDSUBENT           32          0                                 41224  199999 
+SUBENT        41224002   20190419                             418241224  2    1 
+BIB                  9         38                                 41224  2    2 
+REACTION   (1-H-1(N,EL)1-H-1,,DA)                                 41224  2    3 
+SAMPLE      Paraffin (CH2.09) and graphite of thickness           41224  2    4 
+            5., 3., 0.5 gram/cm**2 for angle ranges in lab.system 41224  2    5 
+            0.-15., 25.-60. , 60.-70. degrees, respectively .     41224  2    6 
+MONITOR    ((MONIT1)1-H-1(N,EL)1-H-1,,SIG,,,DERIV)                41224  2    7 
+ANALYSIS   Difference in number of recoil protons was determined  41224  2    8 
+           for paraffin and graphite samples.                     41224  2    9 
+           Absolute values of neutron differential cross-sections 41224  2   10 
+           were determined by normalization to total elastic      41224  2   11 
+           cross-section (26.0 +- 3. mb), which was defined as    41224  2   12 
+           difference of total cross-section (36. +- 2. mb) from  41224  2   13 
+           REL-REF(Dzhelepov+) and cross-section of pi-mesons     41224  2   14 
+           production(10. +- 2. mb) at n-p interactions. Differen.41224  2   15 
+           cross-section was assumed to be about constant at      41224  2   16 
+           angles   < 35 deg in CM system and was equal to value  41224  2   17 
+           at 35 deg.,as it was defined in experiments at energy  41224  2   18 
+           range 300-400 MeV(see REL-REF of Hartzler+ for details)41224  2   19 
+REL-REF    (R,11078001,A.L.Hartzler+,J,PR,95,591,1954)            41224  2   20 
+           (R,41261002,V.P.Dzhelepov+,J,ZET,29,369,1955)          41224  2   21 
+            Cross-section data used in normalization.             41224  2   22 
+           (R,41261002,V.P.Dzhelepov+,J,JET,2,349,1956)           41224  2   23 
+             Engl.translation .                                   41224  2   24 
+ASSUMED    (ASSUM1,1-H-1(N,X)0-P0-0,,SIG) pi-mesons production c-s41224  2   25 
+           (ASSUM2,1-H-1(N,TOT),,SIG) total c-s from REL-REF of   41224  2   26 
+                   Dzhelepov+.                                    41224  2   27 
+ERR-ANALYS (ERR-S) Data errors given are standard statistical.    41224  2   28 
+           (ERR-1) Error of total elastic scattering cross-section41224  2   29 
+                   determination.                                 41224  2   30 
+           (ERR-2) Uncertainty in normalization.                  41224  2   31 
+STATUS     (CURVE) Data were digitized from Fig.2 of              41224  2   32 
+            J.Exp.Teor.Phys.,v.31,p.169,1956 -                    41224  2   33 
+            dependence from angle in CM system.                   41224  2   34 
+HISTORY    (19970407T)  Data are converted from SUBENT 80348002   41224  2   35 
+           (20080219A) ANG-RSL was moved into COMMON.             41224  2   36 
+            -HW was added to EN-RSL. Errors are added.            41224  2   37 
+            DATA was changed into DATA-CM.                        41224  2   38 
+           (20190419A) Data (SCSRS, can be found in archive)      41224  2   39 
+            were replaced by data from 41202.002.                 41224  2   40 
+ENDBIB              38          0                                 41224  2   41 
+COMMON              11          6                                 41224  2   42 
+EN         EN-RSL-HW  MONIT1     MONIT1-ERR ANG-RSL    ERR-1      41224  2   43 
+ERR-2      ASSUM1     ASSUM1-ERR ASSUM2     ASSUM2-ERR            41224  2   44 
+MEV        MEV        MB         MB         ADEG       PER-CENT   41224  2   45 
+PER-CENT   MB         MB         MB         MB                    41224  2   46 
+ 5.8000E+02 1.3000E+02 26.          3.        2.0       12.       41224  2   47 
+   10.       10.         2.        36.        2.                  41224  2   48 
+ENDCOMMON            6          0                                 41224  2   49 
+DATA                 3         15                                 41224  2   50 
+ANG-CM     DATA-CM    ERR-S                                       41224  2   51 
+ADEG       MB/SR      MB/SR                                       41224  2   52 
+  35.         3.75       0.2                                      41224  2   53 
+  45.         3.0        0.3                                      41224  2   54 
+  53.         2.32       0.2                                      41224  2   55 
+  62.         2.12       0.2                                      41224  2   56 
+  72.         1.67       0.13                                     41224  2   57 
+  82.         1.1        0.12                                     41224  2   58 
+  92.         0.86       0.1                                      41224  2   59 
+ 102.         0.76       0.1                                      41224  2   60 
+ 113.         0.79       0.1                                      41224  2   61 
+ 123.         0.92       0.1                                      41224  2   62 
+ 135.         1.65       0.15                                     41224  2   63 
+ 147.         2.05       0.2                                      41224  2   64 
+ 157.         3.34       0.3                                      41224  2   65 
+ 170.         5.25       0.5                                      41224  2   66 
+ 180.         8.31       0.7                                      41224  2   67 
+ENDDATA             17          0                                 41224  2   68 
+ENDSUBENT           67          0                                 41224  299999 
+SUBENT        41224003   20190419                             418241224  3    1 
+BIB                  3          8                                 41224  3    2 
+REACTION   (1-H-1(N,EL)1-H-1,,DA,,LEG/1K2/FCT,DERIV) For neutron. 41224  3    3 
+           Legendre coefficients in form of :                     41224  3    4 
+             d/dA=(1/(4*pi**2))*(1/k**2)*SUM(A(L)*P(L))           41224  3    5 
+            , where k=1/lambda, lambda= wave length.              41224  3    6 
+ERR-ANALYS (DATA-ERR) Type of error is not explained in the       41224  3    7 
+                      article.                                    41224  3    8 
+STATUS     (DEP,41224002)                                         41224  3    9 
+           (TABLE) Text,p.172 of J.Exp.Teor.Phys.,v.31,p.169,1956 41224  3   10 
+ENDBIB               8          0                                 41224  3   11 
+COMMON               2          3                                 41224  3   12 
+EN         EN-RSL-HW                                              41224  3   13 
+MEV        MEV                                                    41224  3   14 
+ 5.8000E+02 1.3000E+02                                            41224  3   15 
+ENDCOMMON            3          0                                 41224  3   16 
+DATA                 3         13                                 41224  3   17 
+NUMBER-CM  DATA-CM    DATA-ERR                                    41224  3   18 
+NO-DIM     NO-DIM     NO-DIM                                      41224  3   19 
+0.          1.29         0.05                                     41224  3   20 
+1.          0.24         0.13                                     41224  3   21 
+2.          1.42         0.2                                      41224  3   22 
+3.         -0.87         0.24                                     41224  3   23 
+4.          0.28         0.22                                     41224  3   24 
+5.         -0.5          0.16                                     41224  3   25 
+6.          0.14         0.1                                      41224  3   26 
+7.         -0.33         0.1                                      41224  3   27 
+8.          0.19         0.18                                     41224  3   28 
+9.         -0.2          0.24                                     41224  3   29 
+10.         0.39         0.26                                     41224  3   30 
+11.         0.1          0.19                                     41224  3   31 
+12.         0.25         0.15                                     41224  3   32 
+ENDDATA             15          0                                 41224  3   33 
+ENDSUBENT           32          0                                 41224  399999 
 ENDENTRY             3          0                                 4122499999999 
