@@ -1,65 +1,124 @@
-ENTRY            12313   19841005                             00001231300000001 
-SUBENT        12313001   19841005                             00001231300100001 
-BIB                  7         10                                 1231300100002 
-INSTITUTE  (1USABET)                                              1231300100003 
-REFERENCE  (J,NSE,29,1,6707)                                      1231300100004 
-AUTHOR     (D.E.CONWAY,S.B.GUNST)                                 1231300100005 
-TITLE      INTEGRAL MEASUREMENTS OF THE EPITHERMAL NEUTRON        1231300100006 
-            CAPTURE-TO-FISSION RATIOS OF U-233 AND U-235.         1231300100007 
-INC-SOURCE (REAC) REACTOR (MTR)                                   1231300100008 
-MONITOR    (27-CO-59(N,G)27-CO-60,,SIG)                           1231300100009 
-           (27-CO-59(N,G)27-CO-60,,RI)                            1231300100010 
-HISTORY    (761012C)                                              1231300100011 
-           (841005A) CONVERTED TO REACTION FORMALISM              1231300100012 
-ENDBIB              10          0                                 1231300100013 
-COMMON               2          3                                 1231300100014 
-MONIT1     MONIT2                                                 1231300100015 
-B          B                                                      1231300100016 
- 37.5       72.0                                                  1231300100017 
-ENDCOMMON            3          0                                 1231300100018 
-ENDSUBENT           17          0                                 1231300199999 
-SUBENT        12313002   19841005                             00001231300200001 
-BIB                  1          1                                 1231300200002 
-REACTION   (92-U-233(N,G)92-U-234,,RI)                            1231300200003 
-ENDBIB               1          0                                 1231300200004 
-NOCOMMON             0          0                                 1231300200005 
-DATA                 3          1                                 1231300200006 
-EN-MIN     DATA       DATA-ERR                                    1231300200007 
-EV         B          B                                           1231300200008 
- 0.5        135.       8.                                         1231300200009 
-ENDDATA              3          0                                 1231300200010 
-ENDSUBENT            9          0                                 1231300299999 
-SUBENT        12313003   19841005                             00001231300300001 
-BIB                  1          1                                 1231300300002 
-REACTION   (92-U-233(N,F),,RI)                                    1231300300003 
-ENDBIB               1          0                                 1231300300004 
-NOCOMMON             0          0                                 1231300300005 
-DATA                 3          1                                 1231300300006 
-EN-MIN     DATA       DATA-ERR                                    1231300300007 
-EV         B          B                                           1231300300008 
- 0.5        771.       49.                                        1231300300009 
-ENDDATA              3          0                                 1231300300010 
-ENDSUBENT            9          0                                 1231300399999 
-SUBENT        12313004   19841005                             00001231300400001 
-BIB                  1          1                                 1231300400002 
-REACTION   (92-U-235(N,G)92-U-236,,RI)                            1231300400003 
-ENDBIB               1          0                                 1231300400004 
-NOCOMMON             0          0                                 1231300400005 
-DATA                 3          1                                 1231300400006 
-EN-MIN     DATA       DATA-ERR                                    1231300400007 
-EV         B          B                                           1231300400008 
- 0.5        136.       8.                                         1231300400009 
-ENDDATA              3          0                                 1231300400010 
-ENDSUBENT            9          0                                 1231300499999 
-SUBENT        12313005   19841005                             00001231300500001 
-BIB                  1          1                                 1231300500002 
-REACTION   (92-U-235(N,F),,RI)                                    1231300500003 
-ENDBIB               1          0                                 1231300500004 
-NOCOMMON             0          0                                 1231300500005 
-DATA                 3          1                                 1231300500006 
-EN-MIN     DATA       DATA-ERR                                    1231300500007 
-EV         B          B                                           1231300500008 
- 0.5        275.       16.                                        1231300500009 
-ENDDATA              3          0                                 1231300500010 
-ENDSUBENT            9          0                                 1231300599999 
-ENDENTRY             5          0                                 1231399999999 
+ENTRY            12313   20160825                             142212313  0    1 
+SUBENT        12313001   20160825                             142212313  1    1 
+BIB                 10         23                                 12313  1    2 
+TITLE      Integral measurements of the epithermal neutron        12313  1    3 
+           capture-to-fission ratios of U-233 and U-235.          12313  1    4 
+AUTHOR     (D.E.Conway,S.B.Gunst)                                 12313  1    5 
+REFERENCE  (J,NSE,29,1,196707)                                    12313  1    6 
+           (R,WAPD-TM-613,1967) Preliminary data.                 12313  1    7 
+           (J,NSE,22,20,1965) Initial results for 235U            12313  1    8 
+REL-REF    (A,,D.E.Conway+,J,NSE,22,20,1965) The previous         12313  1    9 
+           measurement.                                           12313  1   10 
+INSTITUTE  (1USABET)                                              12313  1   11 
+FACILITY   (REAC,1USABET) Reactor MTR, (1-3)x10**14 n/cm2-sec.    12313  1   12 
+METHOD     (EXTB,CHSEP) Two 235U samples were under cadmium and   12313  1   13 
+           two were bare. Six 233U samples were irradiated under  12313  1   14 
+           cadmium and six were bare.                             12313  1   15 
+ERR-ANALYS (DATA-ERR) Variations in experimental results.         12313  1   16 
+           (ERR-1,,2.0) Cd wall thickness.                        12313  1   17 
+           (ERR-2) Flux anisotropy due to Cd depletion.           12313  1   18 
+MONITOR   1(27-CO-59(N,G)27-CO-60,,SIG)                           12313  1   19 
+          2(27-CO-59(N,G)27-CO-60,,RI)                            12313  1   20 
+HISTORY    (19761012C)                                            12313  1   21 
+           (19841005A) Converted to reaction formalism.           12313  1   22 
+           (20160825A) BP: Updated to new date formats, lower     12313  1   23 
+           case. Corrections according last EXFOR rules and       12313  1   24 
+           Dict., added alphas and two references.                12313  1   25 
+ENDBIB              23          0                                 12313  1   26 
+COMMON               3          3                                 12313  1   27 
+MONIT1     MONIT2     ERR-2                                       12313  1   28 
+B          B          PER-CENT                                    12313  1   29 
+       37.5       72.0        5.0                                 12313  1   30 
+ENDCOMMON            3          0                                 12313  1   31 
+ENDSUBENT           30          0                                 12313  199999 
+SUBENT        12313002   20160825                             142212313  2    1 
+BIB                  3          5                                 12313  2    2 
+REACTION   (92-U-233(N,G)92-U-234,,RI)                            12313  2    3 
+SAMPLE     (92-U-233,ENR=0.997) The 233U wire was 0.030 in. in    12313  2    4 
+           diameter and was an alloy of aluminum containing       12313  2    5 
+           14wt%U.                                                12313  2    6 
+STATUS     (TABLE) Table III, page 4 of J,NSE,29,1,1967.          12313  2    7 
+ENDBIB               5          0                                 12313  2    8 
+NOCOMMON             0          0                                 12313  2    9 
+DATA                 3          1                                 12313  2   10 
+EN-MIN     DATA       DATA-ERR                                    12313  2   11 
+EV         B          B                                           12313  2   12 
+        0.5       135.         8.                                 12313  2   13 
+ENDDATA              3          0                                 12313  2   14 
+ENDSUBENT           13          0                                 12313  299999 
+SUBENT        12313003   20160825                             142212313  3    1 
+BIB                  3          5                                 12313  3    2 
+REACTION   (92-U-233(N,F),,RI)                                    12313  3    3 
+SAMPLE     (92-U-233,ENR=0.997) The 233U wire was 0.030 in. in    12313  3    4 
+           diameter and was an alloy of aluminum containing       12313  3    5 
+           14wt%U.                                                12313  3    6 
+STATUS     (TABLE) Table III, page 4 of J,NSE,29,1,1967.          12313  3    7 
+ENDBIB               5          0                                 12313  3    8 
+NOCOMMON             0          0                                 12313  3    9 
+DATA                 3          1                                 12313  3   10 
+EN-MIN     DATA       DATA-ERR                                    12313  3   11 
+EV         B          B                                           12313  3   12 
+        0.5       771.        49.                                 12313  3   13 
+ENDDATA              3          0                                 12313  3   14 
+ENDSUBENT           13          0                                 12313  399999 
+SUBENT        12313004   20160825                             142212313  4    1 
+BIB                  3          5                                 12313  4    2 
+REACTION   (92-U-235(N,G)92-U-236,,RI)                            12313  4    3 
+SAMPLE     (92-U-235,ENR=0.932) The 233U wire was 0.030 in. in    12313  4    4 
+           diameter and was an alloy of zirconium containing      12313  4    5 
+           6.3wt%U.                                               12313  4    6 
+STATUS     (TABLE) Table III, page 4 of J,NSE,29,1,1967.          12313  4    7 
+ENDBIB               5          0                                 12313  4    8 
+NOCOMMON             0          0                                 12313  4    9 
+DATA                 3          1                                 12313  4   10 
+EN-MIN     DATA       DATA-ERR                                    12313  4   11 
+EV         B          B                                           12313  4   12 
+        0.5       136.         8.                                 12313  4   13 
+ENDDATA              3          0                                 12313  4   14 
+ENDSUBENT           13          0                                 12313  499999 
+SUBENT        12313005   20160825                             142212313  5    1 
+BIB                  3          5                                 12313  5    2 
+REACTION   (92-U-235(N,F),,RI)                                    12313  5    3 
+SAMPLE     (92-U-235,ENR=0.932) The 233U wire was 0.030 in. in    12313  5    4 
+           diameter and was an alloy of zirconium containing      12313  5    5 
+           6.3wt%U.                                               12313  5    6 
+STATUS     (TABLE) Table III, page 4 of J,NSE,29,1,1967.          12313  5    7 
+ENDBIB               5          0                                 12313  5    8 
+NOCOMMON             0          0                                 12313  5    9 
+DATA                 3          1                                 12313  5   10 
+EN-MIN     DATA       DATA-ERR                                    12313  5   11 
+EV         B          B                                           12313  5   12 
+        0.5       275.        16.                                 12313  5   13 
+ENDDATA              3          0                                 12313  5   14 
+ENDSUBENT           13          0                                 12313  599999 
+SUBENT        12313006   20160826                             142212313  6    1 
+BIB                  3          5                                 12313  6    2 
+REACTION   (92-U-233(N,ABS),,ALF)                                 12313  6    3 
+SAMPLE     (92-U-233,ENR=0.997) The 233U wire was 0.030 in. in    12313  6    4 
+           diameter and was an alloy of aluminum containing       12313  6    5 
+           14wt%U.                                                12313  6    6 
+STATUS     (TABLE) Table III, page 4 of J,NSE,29,1,1967.          12313  6    7 
+ENDBIB               5          0                                 12313  6    8 
+NOCOMMON             0          0                                 12313  6    9 
+DATA                 3          1                                 12313  6   10 
+EN-MIN     DATA       DATA-ERR                                    12313  6   11 
+EV         NO-DIM     NO-DIM                                      12313  6   12 
+        0.5      0.175      0.006                                 12313  6   13 
+ENDDATA              3          0                                 12313  6   14 
+ENDSUBENT           13          0                                 12313  699999 
+SUBENT        12313007   20160826                             142212313  7    1 
+BIB                  3          5                                 12313  7    2 
+REACTION   (92-U-235(N,ABS),,ALF) A weighted average value.       12313  7    3 
+SAMPLE     (92-U-235,ENR=0.932) The 233U wire was 0.030 in. in    12313  7    4 
+           diameter and was an alloy of zirconium containing      12313  7    5 
+           6.3wt%U.                                               12313  7    6 
+STATUS     (TABLE) page 6 of J,NSE,29,1,1967.                     12313  7    7 
+ENDBIB               5          0                                 12313  7    8 
+NOCOMMON             0          0                                 12313  7    9 
+DATA                 3          1                                 12313  7   10 
+EN-MIN     DATA       DATA-ERR                                    12313  7   11 
+EV         NO-DIM     NO-DIM                                      12313  7   12 
+        0.5      0.494      0.017                                 12313  7   13 
+ENDDATA              3          0                                 12313  7   14 
+ENDSUBENT           13          0                                 12313  799999 
+ENDENTRY             7          0                                 1231399999999 
