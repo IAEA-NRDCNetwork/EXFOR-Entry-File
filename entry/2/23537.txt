@@ -1,0 +1,156 @@
+ENTRY            23537   20200217                             228623537  0    1 
+SUBENT        23537001   20200217                             228623537  1    1 
+BIB                 14         29                                 23537  1    2 
+TITLE      Determination of the 193Ir(n,2n) reaction cross        23537  1    3 
+           section and correction methodology for the             23537  1    4 
+           191Ir(n,gamma) contamination                           23537  1    5 
+AUTHOR     (A.Kalamara,N.Patronis,R.Vlastou,M.Kokkoris,           23537  1    6 
+           S.Chasapoglou, A.Stamatopoulos,M.Serris,V.Paneta,      23537  1    7 
+           M.Axiotis,A.Lagoyannis, S.Harissopulos,                23537  1    8 
+           I.E.Stamatelatos)                                      23537  1    9 
+INSTITUTE  (2GRCTUA,2GRCIOA,2SWDUPP,2GRCATH)                      23537  1   10 
+           (2GRCGRC) Department of Naval Architecture,            23537  1   11 
+           University of West Attica, 122 10 Athens               23537  1   12 
+REFERENCE  (J,EPJ/A,55,187,2019)                                  23537  1   13 
+           #doi:10.1140/epja/i2019-12879-x                        23537  1   14 
+FACILITY   (VDGT,2GRCATH) 5.5 MV Tandem T11/25 Accelerator        23537  1   15 
+           Laboratory of NCSR Demokritos                          23537  1   16 
+INC-SOURCE (D-D,D-T)                                              23537  1   17 
+SAMPLE     High purity Ir, Al and Au foils (0.5mm in thickness    23537  1   18 
+           and 13mm in diameter)                                  23537  1   19 
+DETECTOR   (HPGE) high purity germanium detectors (HPGe) of       23537  1   20 
+           100%, 56% and 16% relative efficiency. The             23537  1   21 
+           measurements of all the samples performed at a         23537  1   22 
+           distance of 10 cm from the detector window.            23537  1   23 
+METHOD     (ACTIV,GSPEC)                                          23537  1   24 
+MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           23537  1   25 
+MONIT-REF  (,,3,ENDF/B-VII.1,,2011)                               23537  1   26 
+CORRECTION Corrected for the contribution of 191Ir(n,gamma)       23537  1   27 
+           192Ir reaction rate induced by low energy parasitic    23537  1   28 
+           neutrons                                               23537  1   29 
+ERR-ANALYS (MONIT-ERR) Al(n,alpha) monitor cross-section          23537  1   30 
+HISTORY    (20200217C) VS                                         23537  1   31 
+ENDBIB              29          0                                 23537  1   32 
+COMMON               1          3                                 23537  1   33 
+MONIT-ERR                                                         23537  1   34 
+PER-CENT                                                          23537  1   35 
+         3.                                                       23537  1   36 
+ENDCOMMON            3          0                                 23537  1   37 
+ENDSUBENT           36          0                                 23537  199999 
+SUBENT        23537002   20200217                             228623537  2    1 
+BIB                  4         16                                 23537  2    2 
+REACTION   (77-IR-193(N,2N)77-IR-192-G+M1,,SIG)                   23537  2    3 
+DECAY-DATA ((1.)77-IR-192-G,73.829D,DG,316.5,0.8286)              23537  2    4 
+           ((2.)77-IR-192-G,73.829D,DG,468.1,0.4784)              23537  2    5 
+           ((3.)77-IR-192-G,73.829D,DG,308.5,0.297)               23537  2    6 
+ERR-ANALYS (ERR-T) The total uncertainty deduced by a quadratic   23537  2    7 
+           summation of the following sources of partial          23537  2    8 
+           uncertainties:                                         23537  2    9 
+           (ERR-1) Integral of the gamma-ray peak for Ir          23537  2   10 
+           (ERR-2) Integral of the gamma-ray peak for Al          23537  2   11 
+           (ERR-3) Number of the Ir nuclei in the sample          23537  2   12 
+           (ERR-4) Number of the Al nuclei in the sample          23537  2   13 
+           (ERR-5) Absolute efficiency of the detector at the     23537  2   14 
+           corresponding energy for Ir                            23537  2   15 
+           (ERR-6) Absolute efficiency of the detector at the     23537  2   16 
+           corresponding energy for Al                            23537  2   17 
+STATUS     (TABLE) Table 3 of Eur. Phys. J. A 55(2019)187.        23537  2   18 
+ENDBIB              16          0                                 23537  2   19 
+NOCOMMON             0          0                                 23537  2   20 
+DATA                10         24                                 23537  2   21 
+EN         DATA       ERR-T      ERR-1      ERR-2      ERR-3      23537  2   22 
+ERR-4      ERR-5      ERR-6      DECAY-FLAG                       23537  2   23 
+MEV        B          PER-CENT   PER-CENT   PER-CENT   PER-CENT   23537  2   24 
+PER-CENT   PER-CENT   PER-CENT   NO-DIM                           23537  2   25 
+       10.0      1.315        8.4        2.9        2.4        0.323537  2   26 
+        0.5        5.5        3.6         1.                      23537  2   27 
+       10.0      1.279        8.0        3.2        2.4        0.323537  2   28 
+        0.5        4.8        3.6         2.                      23537  2   29 
+       10.0      1.282        8.5        3.4        2.4        0.323537  2   30 
+        0.5        5.4        3.6         3.                      23537  2   31 
+       10.5      1.607        8.0        2.0        2.3        0.323537  2   32 
+        0.6        5.5        3.6         1.                      23537  2   33 
+       10.5      1.578        7.5        2.1        2.3        0.323537  2   34 
+        0.6        4.8        3.6         2.                      23537  2   35 
+       10.5      1.591        7.9        2.2        2.3        0.323537  2   36 
+        0.6        5.4        3.6         3.                      23537  2   37 
+       11.0      1.951        7.7        2.0        2.1        0.323537  2   38 
+        0.6        5.5        3.5         1.                      23537  2   39 
+       11.0      1.893        7.3        2.2        2.1        0.323537  2   40 
+        0.6        4.8        3.5         2.                      23537  2   41 
+       11.0      1.972        7.7        2.4        2.1        0.323537  2   42 
+        0.6        5.3        3.5         3.                      23537  2   43 
+       11.3      2.037        7.7        1.9        2.0        0.323537  2   44 
+        0.5        5.5        3.5         1.                      23537  2   45 
+       11.3      1.896        7.3        2.2        2.0        0.323537  2   46 
+        0.5        4.8        3.5         2.                      23537  2   47 
+       11.3      1.971        7.7        2.3        2.0        0.323537  2   48 
+        0.5        5.3        3.5         3.                      23537  2   49 
+       15.3      1.841        4.5        0.4        0.3        0.123537  2   50 
+        0.5        2.4        2.3         1.                      23537  2   51 
+       15.3      1.817        4.6        0.5        0.3        0.123537  2   52 
+        0.5        2.5        2.3         2.                      23537  2   53 
+       15.3      1.834        4.6        0.7        0.3        0.123537  2   54 
+        0.5        2.5        2.3         3.                      23537  2   55 
+       17.1      1.412        5.3        1.1        2.3        0.123537  2   56 
+        0.6        2.4        2.4         1.                      23537  2   57 
+       17.1      1.365        5.4        1.7        2.3        0.123537  2   58 
+        0.6        2.5        2.4         2.                      23537  2   59 
+       17.1      1.396        5.6        2.3        2.3        0.123537  2   60 
+        0.6        2.5        2.4         3.                      23537  2   61 
+       18.9      0.740       21.0       20.3        1.2        0.123537  2   62 
+        0.6        2.8        3.1         1.                      23537  2   63 
+       18.9      0.773       20.8       20.1        1.2        0.123537  2   64 
+        0.6        2.8        3.1         2.                      23537  2   65 
+       18.9      0.810       22.1       21.5        1.2        0.123537  2   66 
+        0.6        2.9        3.1         3.                      23537  2   67 
+       20.9      0.273       36.3       35.5        0.9        0.123537  2   68 
+        0.5        2.8        6.2         1.                      23537  2   69 
+       20.9      0.265       39.9       39.2        0.9        0.123537  2   70 
+        0.5        2.9        6.2         2.                      23537  2   71 
+       20.9      0.274       44.6       44.0        0.9        0.123537  2   72 
+        0.5        2.9        6.2         3.                      23537  2   73 
+ENDDATA             52          0                                 23537  2   74 
+ENDSUBENT           73          0                                 23537  299999 
+SUBENT        23537003   20200217                             228623537  3    1 
+BIB                  4         14                                 23537  3    2 
+REACTION   (77-IR-193(N,2N)77-IR-192-G+M1,,SIG)                   23537  3    3 
+ANALYSIS   Weighted average of cross sections obtained from each  23537  3    4 
+           gamma-ray.                                             23537  3    5 
+ERR-ANALYS (ERR-T) The total uncertainties obtained from the      23537  3    6 
+           uncertainties of the three most intense gamma-rays     23537  3    7 
+           taking into account the correlations.                  23537  3    8 
+           (ERR-1) Integral of the gamma-ray peak for Al          23537  3    9 
+           (ERR-2) Number of the Ir nuclei in the sample          23537  3   10 
+           (ERR-3) Number of the Al nuclei in the sample          23537  3   11 
+           (ERR-4) Absolute efficiency of the detector at the     23537  3   12 
+           corresponding energy for Al                            23537  3   13 
+STATUS     (TABLE) Table 2 of Eur. Phys. J. A 55(2019)187.        23537  3   14 
+           (DEP,23537002) Cross sections determined from the      23537  3   15 
+           individual gamma-rays.                                 23537  3   16 
+ENDBIB              14          0                                 23537  3   17 
+NOCOMMON             0          0                                 23537  3   18 
+DATA                 8          8                                 23537  3   19 
+EN         EN-ERR     DATA       ERR-T      ERR-1      ERR-2      23537  3   20 
+ERR-3      ERR-4                                                  23537  3   21 
+MEV        MEV        B          B          PER-CENT   PER-CENT   23537  3   22 
+PER-CENT   PER-CENT                                               23537  3   23 
+       10.0        0.1      1290.        83.     2.4        0.3   23537  3   24 
+        0.5        3.6                                            23537  3   25 
+       10.5        0.1      1590.       100.     2.3        0.3   23537  3   26 
+        0.6        3.6                                            23537  3   27 
+       11.0        0.1      1931.       119.     2.1        0.3   23537  3   28 
+        0.6        3.5                                            23537  3   29 
+       11.3        0.1      1953.       120.     2.0        0.3   23537  3   30 
+        0.5        3.5                                            23537  3   31 
+       15.3        0.5      1830.        76.     0.3        0.1   23537  3   32 
+        0.5        2.3                                            23537  3   33 
+       17.1        0.3      1390.        68.     2.3        0.1   23537  3   34 
+        0.6        2.4                                            23537  3   35 
+       18.9        0.3       769.        82.     1.2        0.1   23537  3   36 
+        0.6        3.1                                            23537  3   37 
+       20.9        0.2       270.        53.     0.9        0.1   23537  3   38 
+        0.5        6.2                                            23537  3   39 
+ENDDATA             20          0                                 23537  3   40 
+ENDSUBENT           39          0                                 23537  399999 
+ENDENTRY             3          0                                 2353799999999 
