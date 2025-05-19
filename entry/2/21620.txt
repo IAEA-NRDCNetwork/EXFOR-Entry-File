@@ -1,90 +1,131 @@
-ENTRY            21620   19830321                             00002162000000001 
-SUBENT        21620001   19830321                             00002162000100001 
-BIB                 15         59                                 2162000100002 
-INSTITUTE  (2FR BRC)                                              2162000100003 
-REFERENCE  (R,CEA-N-2194,8105) REFERENCE FOR BOTH U-235(N,F)      2162000100004 
-            AND AM-241(N,F). AM-241 DATA COMPILED IN EXFOR        2162000100005 
-            21621.                                                2162000100006 
-           (W,GRENIER,800711) PRIVATE COMMUNICATION               2162000100007 
-            OF GRENIER.                                           2162000100008 
-           (R,NEANDC(E)-212/L,54,80)                              2162000100009 
-           (C,78HARWELL,864,78)                                   2162000100010 
-           (R,CEA-N-2080,72,7903)                                 2162000100011 
-AUTHOR     (M.CANCE,G.GRENIER)                                    2162000100012 
-TITLE      -ABSOLUTE FISSION CROSS-SECTION MEASUREMENTS OF U-235  2162000100013 
-            AT 2.5 AND 4.45 MEV, AND AM-241 AT 14.6 MEV NEUTRON   2162000100014 
-            ENERGIES. (IN FRENCH)-                                2162000100015 
-FACILITY   (VDG) 4 MV VAN DE GRAAFF ACCELERATOR.                  2162000100016 
-INC-SOURCE (P-T  ) PROTON-TRITIUM FOR 2.5 MEV NEUTRONS AND        2162000100017 
-           (D-D  ) DEUTON-DEUTERIUM FOR 4.45 MEV NEUTRONS.        2162000100018 
-SAMPLE     .URANIUM OXID (U3O8), THICKNESS 103.2 MICROGRAM        2162000100019 
-            PER CM2, ENRICHED TO 97.663 PERCENT IN U-235,         2162000100020 
-            SPUTTERED ONTO A 0.3 MM THICK TANTALUM BACKING.       2162000100021 
-            THE NUMBER OF U-235 ATOMS WAS DETERMINED BY LOW       2162000100022 
-            GEOMETRY ALPHA-COUNTING.                              2162000100023 
-           .A POLYETHYLENE RADIATOR WAS USED FOR THE MONITOR      2162000100024 
-            REACTION.                                             2162000100025 
-METHOD     (TOF  ) TIME-OF-FLIGHT.                                2162000100026 
-DETECTOR   (FISCH) ONE FISSION CHAMBER AND                        2162000100027 
-           (TELES,SOLST,SOLST) ONE COUNTER TELESCOPE TOGETHER     2162000100028 
-            IN A HYBRID DETECTOR WITH THE FISSION FOIL AND        2162000100029 
-            A POLYETHYLENE FOIL MOUNTED BACK-TO-BACK. THE         2162000100030 
-            POLYETHYLENE FOIL IS USED FOR NEUTRON FLUX DETER-     2162000100031 
-            MINATION.                                             2162000100032 
-           (LONGC) A DIRECTIONAL LONG COUNTER IS ALSO USED FOR    2162000100033 
-            NEUTRON FLUX MONITORING AT 2.5 MEV.                   2162000100034 
-MONITOR    (1-H-1(N,EL)1-H-1,,SIG) NO VALUES GIVEN.               2162000100035 
-PART-DET   (FF   ) FISSION FRAGMENTS                              2162000100036 
-COMMENT    .THE DATA ARE COMPARED WITH OTHER ABSOLUTE             2162000100037 
-            MEASUREMENTS BETWEEN 2.25 AND 2.6 MEV.                2162000100038 
-STATUS     .DATA FROM MAIN REFERENCE.                             2162000100039 
-HISTORY    (800711C) G.C.                                         2162000100040 
-           (800808E)                                              2162000100041 
-           (820408A) UPDATED WITH MAIN REFERENCE.                 2162000100042 
-           (820921E)                                              2162000100043 
-CORRECTION .THE FOLLOWING CORRECTIONS WERE TAKEN INTO ACCOUNT,    2162000100044 
-            -FISSION DETECTOR,                                    2162000100045 
-              EXTRAPOLATION TO ZERO SPECTRUM AMPLITUDE,           2162000100046 
-              LOSS OF FISSION EVENTS,                             2162000100047 
-              FISSION EVENTS DUE TO OTHER ISOTOPES,               2162000100048 
-              FISSION EVENTS DUE TO SCATTERED NEUTRONS,           2162000100049 
-              FISISON EVENTS WITHOUT NEUTRON PRODUCING TARGET.    2162000100050 
-            -TELESCOPE,                                           2162000100051 
-              EVENTS WITHOUT POLYETHYLENE RADIATOR,               2162000100052 
-              EVENTS WITHOUT NEUTRON PRODUCING TARGET,            2162000100053 
-              NEUTRON ATTENUATION IN BACKING MATERIALS.           2162000100054 
-            -LONG COUNTER (ONLY AT 2.5 MEV),                      2162000100055 
-              BACKGROUND WITHOUT NEUTRON PRODUCING TARGET,        2162000100056 
-              BACKGROUND FROM SHADOW-BAR,                         2162000100057 
-              NEUTRON ATTENUATION IN AIR AND IN THE HYBRID        2162000100058 
-               DETECTOR.                                          2162000100059 
-           .TABLE 2 IN MAIN REFERENCE GIVES THE VALUES IN PER-    2162000100060 
-            CENT FOR THE CORRECTIONS MENTIONED ABOVE.             2162000100061 
-ENDBIB              59          0                                 2162000100062 
-NOCOMMON             0          0                                 2162000100063 
-ENDSUBENT           62          0                                 2162000199999 
-SUBENT        21620002   19820408                             00002162000200001 
-BIB                  5         13                                 2162000200002 
+ENTRY            21620   20170721                             22622162000000001 
+SUBENT        21620001   20170721                             22622162000100001 
+BIB                 14         54                                 2162000100002 
+TITLE      Absolute fission cross-section measurements of 235U    2162000100003 
+            at 2.5 and 4.45 MeV, and 241Am at 14.6 MeV neutron    2162000100004 
+            energies                                              2162000100005 
+AUTHOR     (M.Cance, G.Grenier)                                   2162000100006 
+INSTITUTE  (2FR BRC)                                              2162000100007 
+REFERENCE  (R,CEA-N-2194,1981)                                    2162000100008 
+           (C,78HARWELL,864,1978) Prelim. data at 2.5 MeV in table2162000100009 
+REL-REF    (O,21621001,M.Cance+,R,CEA-N-2194,1981)                2162000100010 
+            241Am(n,f) cross section at 14.6 MeV given            2162000100011 
+FACILITY   (VDG) 4 MV Van De Graaff accelerator                   2162000100012 
+INC-SOURCE (P-T) En=2.5 MeV                                       2162000100013 
+           (D-D) En=4.45 MeV                                      2162000100014 
+SAMPLE     U3O8 (103.2 ug/cm2) onto a Ta backing (0.3 mm thick).  2162000100015 
+           The number of 235U atoms was determined by low         2162000100016 
+            geometry alpha-counting.                              2162000100017 
+           (92-U-235,ENR=0.97663)                                 2162000100018 
+           (92-U-234,ENR=0.016653)                                2162000100019 
+           (92-U-236,ENR=0.001491)                                2162000100020 
+           (92-U-238,ENR=0.005229)                                2162000100021 
+METHOD     (TOF)                                                  2162000100022 
+CORRECTION The following corrections were taken into account,     2162000100023 
+           - Fission detector                                     2162000100024 
+             . extrapolation to zero spectrum amplitude,          2162000100025 
+             . loss of fission events,                            2162000100026 
+             . fission events due to other isotopes,              2162000100027 
+             . fission events due to scattered neutrons,          2162000100028 
+             . fisison events without neutron producing target.   2162000100029 
+           - Telescope                                            2162000100030 
+             . events without polyethylene radiator,              2162000100031 
+             . events without neutron production target,          2162000100032 
+             . neutron attenuation in backing materials.          2162000100033 
+           - Long counter (only at 2.5 MeV),                      2162000100034 
+             . background without neutron production target,      2162000100035 
+             . background from shadow-bar,                        2162000100036 
+             . neutron attenuation in air and in the hybrid       2162000100037 
+                detector.                                         2162000100038 
+ERR-ANALYS (ERR-T) Total uncertainty                              2162000100039 
+           (ERR-1) Extrapolation to zero spectrum amplitude for   2162000100040 
+            fission detection                               (0.1%)2162000100041 
+           (ERR-2) Loss of fission events                   (0.1%)2162000100042 
+           (ERR-3) Fission of due to other isotopes         (0.2%)2162000100043 
+           (ERR-4) Fission due to scattered neutrons   (0.3%-0.5%)2162000100044 
+           (ERR-6) Number of 235U atoms                     (0.5%)2162000100045 
+           (ERR-7,,,U) Fission counting                (0.7%-1.1%)2162000100046 
+           (ERR-8) Geometrical factors                 (0.4%-0.5%)2162000100047 
+ADD-RES    The average of cross sections from the telescope and   2162000100048 
+            BF3 measurements is 1.26+/-0.03 b at 2.5+/-0.04 MeV.  2162000100049 
+STATUS     (TABLE) Table 4 of CEA-N-2194                          2162000100050 
+HISTORY    (19800711C) G.C.                                       2162000100051 
+           (19800808E)                                            2162000100052 
+           (19820408A) Updated with main reference                2162000100053 
+           (19820921E)                                            2162000100054 
+           (20170721A) On. ERR-ANALYS updated. Major rev. in      2162000100055 
+            002-003.                                              2162000100056 
+ENDBIB              54          0                                 2162000100057 
+COMMON               4          3                                 2162000100058 
+ERR-1      ERR-2      ERR-3      ERR-6                            2162000100059 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         2162000100060 
+ 0.1        0.1        0.2        0.5                             2162000100061 
+ENDCOMMON            3          0                                 2162000100062 
+ENDSUBENT           61          0                                 2162000199999 
+SUBENT        21620002   20170721                             22622162000200001 
+BIB                  6         20                                 2162000200002 
 REACTION   (92-U-235(N,F),,SIG)                                   2162000200003 
-COMMENT    .THE VALUE AT 2.5 MEV IS THE AVERAGE OF TWO VALUES     2162000200004 
-            ONE OBTAINED USING THE TELESCOPE (1.28+-0.02 B) AND   2162000200005 
-            ONE BY USING THE LONG COUNTER (1.23+-0.03 B).         2162000200006 
-STATUS     .TABLE 4.                                              2162000200007 
-HISTORY    (800711C) G.C.                                         2162000200008 
-           (800808E)                                              2162000200009 
-           (820408A)                                              2162000200010 
-           (820921E)                                              2162000200011 
-ERR-ANALYS (ERR-T) TOTAL ERROR,                                   2162000200012 
-           .DETAILED DESCRIPTION OF THE SYSTEMATIC AND THE        2162000200013 
-            STATISTICAL ERRORS AND THEIR VALUES ARE GIVEN IN      2162000200014 
-            TABLE 3 IN THE MAIN REFERENCE.                        2162000200015 
-ENDBIB              13          0                                 2162000200016 
-NOCOMMON             0          0                                 2162000200017 
-DATA                 4          2                                 2162000200018 
-EN         EN-RSL     DATA       ERR-T                            2162000200019 
-MEV        MEV        B          B                                2162000200020 
- 2.5000E+00 4.0000E-02 1.2600E+00 3.0000E-02                      2162000200021 
- 4.4500E+00 1.0000E-01 1.1300E+00 3.0000E-02                      2162000200022 
-ENDDATA              4          0                                 2162000200023 
-ENDSUBENT           22          0                                 2162000299999 
-ENDENTRY             2          0                                 2162099999999 
+MONITOR    (1-H-1(N,EL)1-H-1,,SIG)                                2162000200004 
+DETECTOR   (FISCH)                                                2162000200005 
+           (TELES,SOLST,SOLST) Hybrid detector with the fission   2162000200006 
+            foil and a polyethylene foil (radiator) mounted       2162000200007 
+            back-to-back.                                         2162000200008 
+ERR-ANALYS (ERR-5) Fission without neutron production target      2162000200009 
+            at 4.45 MeV                                     (0.7%)2162000200010 
+           (ERR-9) Event without polyethylene radiator (0.9%-1.2%)2162000200011 
+           (ERR-10) Events without neutron production target      2162000200012 
+                                                       (0.1%-0.3%)2162000200013 
+           (ERR-11) Neutron attenuation in backing materials(0.1%)2162000200014 
+           (ERR-12) n-p scattering cross section           (0.75%)2162000200015 
+           (ERR-13) Number of hydrogen atoms                (0.2%)2162000200016 
+           (ERR-14) Efficiency                              (0.3%)2162000200017 
+           (ERR-15,,,U) Statistics                     (0.3%-0.5%)2162000200018 
+STATUS     (COREL,21620003) Data with BF3 counter                 2162000200019 
+HISTORY    (19820408A)                                            2162000200020 
+           (20170721A) On. ERR-ANALYS updated. BF3 data moved     2162000200021 
+            from 002 to 003. EN-RSL -> EN-RSL-HW                  2162000200022 
+ENDBIB              20          0                                 2162000200023 
+COMMON               4          3                                 2162000200024 
+ERR-11     ERR-12     ERR-13     ERR-14                           2162000200025 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         2162000200026 
+ 0.1        0.75       0.2        0.3                             2162000200027 
+ENDCOMMON            3          0                                 2162000200028 
+DATA                11          2                                 2162000200029 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-4      ERR-5      2162000200030 
+ERR-7      ERR-8      ERR-9      ERR-10     ERR-15                2162000200031 
+MEV        MEV        B          PER-CENT   PER-CENT   PER-CENT   2162000200032 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              2162000200033 
+ 2.5        0.04       1.28       1.7        0.5                  2162000200034 
+ 0.7        0.5        0.9        0.1        0.3                  2162000200035 
+ 4.45       0.1        1.13       2.2        0.3        0.7       2162000200036 
+ 1.1        0.4        1.2        0.3        0.5                  2162000200037 
+ENDDATA              8          0                                 2162000200038 
+ENDSUBENT           37          0                                 2162000299999 
+SUBENT        21620003   20170721                             22622162000300001 
+BIB                  6         10                                 2162000300002 
+REACTION   (92-U-235(N,F),,SIG)                                   2162000300003 
+MONITOR    (5-B-10(N,A)3-LI-7,,SIG)                               2162000300004 
+DETECTOR   (FISCH)                                                2162000300005 
+           (BF3) Directional long counter                         2162000300006 
+ERR-ANALYS (ERR-9) Background from shadow-bar              (0.4%) 2162000300007 
+           (ERR-10) Neutron attenuation in air             (0.3%) 2162000300008 
+           (ERR-11) Neutron attenuation in hybrid detector (0.3%) 2162000300009 
+           (ERR-12) Efficiency                             (2.5%) 2162000300010 
+STATUS     (COREL,21620003) Data with proton counter telescope    2162000300011 
+HISTORY    (20170721C) On                                         2162000300012 
+ENDBIB              10          0                                 2162000300013 
+COMMON               4          3                                 2162000300014 
+ERR-9      ERR-10     ERR-11     ERR-12                           2162000300015 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         2162000300016 
+ 0.4        0.3        0.3        2.5                             2162000300017 
+ENDCOMMON            3          0                                 2162000300018 
+DATA                 7          1                                 2162000300019 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-4      ERR-7      2162000300020 
+ERR-8                                                             2162000300021 
+MEV        MEV        B          PER-CENT   PER-CENT   PER-CENT   2162000300022 
+PER-CENT                                                          2162000300023 
+ 2.5        0.04       1.23       2.8        0.5        0.7       2162000300024 
+ 0.5                                                              2162000300025 
+ENDDATA              6          0                                 2162000300026 
+ENDSUBENT           25          0                                 2162000399999 
+ENDENTRY             3          0                                 2162099999999 
