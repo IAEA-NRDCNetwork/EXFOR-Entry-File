@@ -1,9 +1,9 @@
-ENTRY            D4105   20081015                             Y007D410500000001 
-SUBENT        D4105001   20081015                             Y007D410500100001 
-BIB                  9         24                                 D410500100002 
+ENTRY            D4105   20211202                             D133D410500000001 
+SUBENT        D4105001   20211202                             D133D410500100001 
+BIB                  9         25                                 D410500100002 
 TITLE      Comparison between reactions of alpha particles with   D410500100003 
            Scandium-45 and deuterons with Titanium-47.            D410500100004 
-AUTHOR     (K.L.CHEN,J.M.MILLER)                                  D410500100005 
+AUTHOR     (K.L.Chen,J.M.Miller)                                  D410500100005 
 INSTITUTE  (1USACOL)Columbia University, New York, NY             D410500100006 
            (1USABNL)Brookhaven National Laboratory, Upton, NY     D410500100007 
 REFERENCE  (J,PR,134,B1269,1964)                                  D410500100008 
@@ -18,16 +18,21 @@ ERR-ANALYS The uncertainty of the incident alpha energy was       D410500100016
            0.2 MeV. No error bars are given to cross section      D410500100017 
            points. The main contributing error sources in         D410500100018 
             cross sections are estimated to be:                   D410500100019 
-                      target thickness        1-5%                D410500100020 
-                      beam current              5%                D410500100021 
-                      detector efficiency    5-15%                D410500100022 
+           (ERR-1,1.,5.) target thickness        1-5%             D410500100020 
+           (ERR-2)       beam current              5%             D410500100021 
+           (ERR-3,5.,15.) detector efficiency    5-15%            D410500100022 
 HISTORY    (20020219C) S.T. + O.S.                                D410500100023 
            (20060727A) Ref. corrected.                            D410500100024 
            (20081015A) NDS: ref.was corrected.                    D410500100025 
                           PR,B134,1269 ==>PR,134,B1269            D410500100026 
-ENDBIB              24          0                                 D410500100027 
-NOCOMMON             0          0                                 D410500100028 
-ENDSUBENT           27          0                                 D410500199999 
+           (20211202A) VS. SF=3 in 003.1, 006.1-2 and 007.        D410500100027 
+ENDBIB              25          0                                 D410500100028 
+COMMON               1          3                                 D410500100029 
+ERR-2                                                             D410500100030 
+PER-CENT                                                          D410500100031 
+   5.                                                             D410500100032 
+ENDCOMMON            3          0                                 D410500100033 
+ENDSUBENT           32          0                                 D410500199999 
 SUBENT        D4105002   20020219                             0000D410500200001 
 BIB                  4         10                                 D410500200002 
 REACTION  1(21-SC-45(A,N)23-V-48,,SIG)                            D410500200003 
@@ -91,44 +96,45 @@ NO-DIM                                                            D410500200019
                                                                   D410500200061 
 ENDDATA             46          0                                 D410500200062 
 ENDSUBENT           61          0                                 D410500299999 
-SUBENT        D4105003   20020219                             0000D410500300001 
-BIB                  3          5                                 D410500300002 
-REACTION  1(21-SC-45(A,N+2P)21-SC-46,,SIG)                        D410500300003 
+SUBENT        D4105003   20211202                             D133D410500300001 
+BIB                  4          6                                 D410500300002 
+REACTION  1(21-SC-45(A,X)21-SC-46,,SIG)                           D410500300003 
           2(21-SC-45(A,2N)23-V-47,,SIG)                           D410500300004 
 SAMPLE     Scandium oxide 100 microgramm/cm2 (99.99%) on aluminiumD410500300005 
            Targets were uniform to 1-2%.                          D410500300006 
-STATUS     Data were taken from Table 1. of the original paper    D410500300007 
-ENDBIB               5          0                                 D410500300008 
-NOCOMMON             0          0                                 D410500300009 
-DATA                 3         24                                 D410500300010 
-EN         DATA      1DATA      2                                 D410500300011 
-MEV        MB         MB                                          D410500300012 
-       14.7                   8.2                                 D410500300013 
-       16.8                  51.4                                 D410500300014 
-       18.7                   95.                                 D410500300015 
-       20.8                  139.                                 D410500300016 
-       21.4                  160.                                 D410500300017 
-       23.7                  192.                                 D410500300018 
-       24.3                  192.                                 D410500300019 
-       26.5                  196.                                 D410500300020 
-       26.9                  202.                                 D410500300021 
-        29.                  180.                                 D410500300022 
-       29.6                  168.                                 D410500300023 
-       31.2        22.                                            D410500300024 
-       31.5                  141.                                 D410500300025 
-       31.9                  143.                                 D410500300026 
-       32.2       30.6                                            D410500300027 
-       33.7                  109.                                 D410500300028 
-       34.2        53.       100.                                 D410500300029 
-       36.3                  71.1                                 D410500300030 
-       36.6       72.2                                            D410500300031 
-       37.1                  63.3                                 D410500300032 
-       37.4       81.7                                            D410500300033 
-       39.5                  53.2                                 D410500300034 
-       39.9       99.7       45.1                                 D410500300035 
-       40.1       95.1                                            D410500300036 
-ENDDATA             26          0                                 D410500300037 
-ENDSUBENT           36          0                                 D410500399999 
+STATUS     (TABLE) Table 1. of Phys.Rev.134(1964)B1269            D410500300007 
+HISTORY    (20211202A) VS. SF=3 for 21-SC-45.                     D410500300008 
+ENDBIB               6          0                                 D410500300009 
+NOCOMMON             0          0                                 D410500300010 
+DATA                 3         24                                 D410500300011 
+EN         DATA      1DATA      2                                 D410500300012 
+MEV        MB         MB                                          D410500300013 
+       14.7                   8.2                                 D410500300014 
+       16.8                  51.4                                 D410500300015 
+       18.7                   95.                                 D410500300016 
+       20.8                  139.                                 D410500300017 
+       21.4                  160.                                 D410500300018 
+       23.7                  192.                                 D410500300019 
+       24.3                  192.                                 D410500300020 
+       26.5                  196.                                 D410500300021 
+       26.9                  202.                                 D410500300022 
+        29.                  180.                                 D410500300023 
+       29.6                  168.                                 D410500300024 
+       31.2        22.                                            D410500300025 
+       31.5                  141.                                 D410500300026 
+       31.9                  143.                                 D410500300027 
+       32.2       30.6                                            D410500300028 
+       33.7                  109.                                 D410500300029 
+       34.2        53.       100.                                 D410500300030 
+       36.3                  71.1                                 D410500300031 
+       36.6       72.2                                            D410500300032 
+       37.1                  63.3                                 D410500300033 
+       37.4       81.7                                            D410500300034 
+       39.5                  53.2                                 D410500300035 
+       39.9       99.7       45.1                                 D410500300036 
+       40.1       95.1                                            D410500300037 
+ENDDATA             26          0                                 D410500300038 
+ENDSUBENT           37          0                                 D410500399999 
 SUBENT        D4105004   20020219                             0000D410500400001 
 BIB                  3         25                                 D410500400002 
 REACTION  1((22-TI-46(D,2P)21-SC-46,,SIG,,FCT)+                   D410500400003 
@@ -212,10 +218,10 @@ MEV        MB         MB                                          D410500500023
        20.3                  258.                                 D410500500033 
 ENDDATA             12          0                                 D410500500034 
 ENDSUBENT           33          0                                 D410500599999 
-SUBENT        D4105006   20020219                             0000D410500600001 
-BIB                  3         22                                 D410500600002 
-REACTION  1((22-TI-49(D,A)21-SC-47,,SIG,,FCT)+                    D410500600003 
-           (22-TI-48(D,N+2P)21-SC-47,,SIG,,FCT))                  D410500600004 
+SUBENT        D4105006   20211202                             D133D410500600001 
+BIB                  4         23                                 D410500600002 
+REACTION  1((22-TI-49(D,X)21-SC-47,,SIG,,FCT)+                    D410500600003 
+           (22-TI-48(D,X)21-SC-47,,SIG,,FCT))                     D410500600004 
            Sum weighted by isotopic abundances of enriched sample D410500600005 
            as given below. Compiler believes that contributions   D410500600006 
            of other isotopes are negligible.                      D410500600007 
@@ -235,24 +241,25 @@ SAMPLE     Enriched Titanium dioxide deposited on aluminium       D410500600013
                              48Ti             14.5                D410500600021 
                              49Ti             81.5                D410500600022 
                              50Ti             1.4                 D410500600023 
-STATUS     Data were taken from Table 4. of the original paper    D410500600024 
-ENDBIB              22          0                                 D410500600025 
-NOCOMMON             0          0                                 D410500600026 
-DATA                 3          6                                 D410500600027 
-EN         DATA      1DATA      2                                 D410500600028 
-MEV        MB         MB                                          D410500600029 
-        6.9        14.                                            D410500600030 
-        9.4        43.                                            D410500600031 
-        12.       41.6        6.8                                 D410500600032 
-       14.6       24.9       13.8                                 D410500600033 
-       17.4       18.4       25.3                                 D410500600034 
-       20.1       11.6       26.1                                 D410500600035 
-ENDDATA              8          0                                 D410500600036 
-ENDSUBENT           35          0                                 D410500699999 
-SUBENT        D4105007   20020219                             0000D410500700001 
-BIB                  3         18                                 D410500700002 
+STATUS     (TABLE) Table 4. Phys.Rev.134(1964)B1269               D410500600024 
+HISTORY    (20211202A) VS. SF=3 for 22-TI-48.                     D410500600025 
+ENDBIB              23          0                                 D410500600026 
+NOCOMMON             0          0                                 D410500600027 
+DATA                 3          6                                 D410500600028 
+EN         DATA      1DATA      2                                 D410500600029 
+MEV        MB         MB                                          D410500600030 
+        6.9        14.                                            D410500600031 
+        9.4        43.                                            D410500600032 
+        12.       41.6        6.8                                 D410500600033 
+       14.6       24.9       13.8                                 D410500600034 
+       17.4       18.4       25.3                                 D410500600035 
+       20.1       11.6       26.1                                 D410500600036 
+ENDDATA              8          0                                 D410500600037 
+ENDSUBENT           36          0                                 D410500699999 
+SUBENT        D4105007   20211202                             D133D410500700001 
+BIB                  4         19                                 D410500700002 
 REACTION   ((22-TI-50(D,N+A)21-SC-47,,SIG,,FCT)+                  D410500700003 
-           (22-TI-48(D,N+2P)21-SC-47,,SIG,,FCT)+                  D410500700004 
+           (22-TI-48(D,X)21-SC-47,,SIG,,FCT)+                     D410500700004 
            (22-TI-49(D,A)21-SC-47,,SIG,,FCT))                     D410500700005 
            Sum weighted by isotopic abundances of enriched sample D410500700006 
            as given below. Compiler believes that contribution    D410500700007 
@@ -268,18 +275,19 @@ SAMPLE     Enriched Titanium dioxide deposited on aluminium       D410500700009
                              48Ti             12.23               D410500700017 
                              49Ti             3.33                D410500700018 
                              50Ti             80.31               D410500700019 
-STATUS     Data were taken from Table 4. of the original paper    D410500700020 
-ENDBIB              18          0                                 D410500700021 
-NOCOMMON             0          0                                 D410500700022 
-DATA                 2          4                                 D410500700023 
-EN         DATA                                                   D410500700024 
-MEV        MB                                                     D410500700025 
-        9.4        2.5                                            D410500700026 
-        12.       12.4                                            D410500700027 
-       14.6        36.                                            D410500700028 
-       17.4       65.2                                            D410500700029 
-ENDDATA              6          0                                 D410500700030 
-ENDSUBENT           29          0                                 D410500799999 
+STATUS     (TABLE) Table 4. of Phys.Rev.134(1964)B1269            D410500700020 
+HISTORY    (20211202A) VS. SF=3 for 22-TI-48.                     D410500700021 
+ENDBIB              19          0                                 D410500700022 
+NOCOMMON             0          0                                 D410500700023 
+DATA                 2          4                                 D410500700024 
+EN         DATA                                                   D410500700025 
+MEV        MB                                                     D410500700026 
+        9.4        2.5                                            D410500700027 
+        12.       12.4                                            D410500700028 
+       14.6        36.                                            D410500700029 
+       17.4       65.2                                            D410500700030 
+ENDDATA              6          0                                 D410500700031 
+ENDSUBENT           30          0                                 D410500799999 
 SUBENT        D4105008   20020219                             0000D410500800001 
 BIB                  4         23                                 D410500800002 
 REACTION  1(22-TI-47(D,N)23-V-48,,SIG)                            D410500800003 
