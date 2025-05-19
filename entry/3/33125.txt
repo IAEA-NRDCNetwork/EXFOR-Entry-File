@@ -1,0 +1,131 @@
+ENTRY            33125   20190822                             319033125  0    1 
+SUBENT        33125001   20190822                             319033125  1    1 
+BIB                 10         25                                 33125  1    2 
+TITLE      Isotopic yield distribution of iodine in the reactor   33125  1    3 
+           neutron induced fission of 241Am                       33125  1    4 
+AUTHOR     (A.V.R.Reddy, S.M.Deshmukh, P.P.Burte, S.B.Manohar,    33125  1    5 
+           S.Prakash, M.V.Ramaniah)                               33125  1    6 
+INSTITUTE  (3INDTRM)                                              33125  1    7 
+REFERENCE  (P,BARC-1381,47,1987)                                  33125  1    8 
+FACILITY   (REAC,3INDTRM) APSARA reactor                          33125  1    9 
+SAMPLE     Electrodeposited target of 241Am (~20 ug) were covered 33125  1   10 
+           with superpure aluminum  catcher foil and together were33125  1   11 
+           wrapped in 1 mil cadmium foil.                         33125  1   12 
+DETECTOR   (HPGE) Samples were assayed gamma-spectrometrically    33125  1   13 
+           an 8% HPGe detector coupled to a 4096 channel analyser 33125  1   14 
+           The resolution of the detector is 2.1 keV at 1332 keV  33125  1   15 
+           in live time mode.                                     33125  1   16 
+METHOD     (CHSEP) The aluminum foil was dissolved in sodium      33125  1   17 
+           hydroxide. Five milliliters of this solution assayed   33125  1   18 
+           for the activity of tellurium isotopes without radio   33125  1   19 
+           chemical separations.                                  33125  1   20 
+           The rest of the solution was used for the separation   33125  1   21 
+           of fission product iodine by using solvent extraction  33125  1   22 
+           technique.                                             33125  1   23 
+INC-SPECT  Neutron flux 8 X 10**12 n/cm2/sec2 for suitable length 33125  1   24 
+           of time (t = 30-150 min.)                              33125  1   25 
+HISTORY    (20190822C) VT                                         33125  1   26 
+           (20190909U) SO,NDS add comment for DECAY-DATA          33125  1   27 
+ENDBIB              25          0                                 33125  1   28 
+COMMON               1          3                                 33125  1   29 
+EN-DUMMY                                                          33125  1   30 
+EV                                                                33125  1   31 
+     0.0253                                                       33125  1   32 
+ENDCOMMON            3          0                                 33125  1   33 
+ENDSUBENT           32          0                                 33125  199999 
+SUBENT        33125002   20190822                             319033125  2    1 
+BIB                  5         21                                 33125  2    2 
+REACTION   ((95-AM-241(N,F)ELEM/MASS,IND,FY,,SPA)/                33125  2    3 
+           (95-AM-241(N,F)53-I-135,IND,FY,,SPA))                  33125  2    4 
+DECAY-DATA (53-I-132-M,1.39HR,DG,667.7,0.132)                     33125  2    5 
+           (53-I-132-G,2.30HR,DG,667.7,0.132)                     33125  2    6 
+           (53-I-133-G,20.80HR,DG,529.9,0.870)                    33125  2    7 
+           (53-I-134-G,52.60MIN,DG,847.0,0.954,                   33125  2    8 
+                                DG,884.0,0.654)                   33125  2    9 
+           (53-I-135,6.61HR,DG,1260.0,0.286)                      33125  2   10 
+ERR-ANALYS (ERR-T) Total errors are propagated errors within      33125  2   11 
+           one sigma, include both:                               33125  2   12 
+           (ERR-SYS,1.,5.) systematic errors (1-5%)               33125  2   13 
+           (ERR-1) random errors (10%)                            33125  2   14 
+           The sources of errors, apart from counting statistics  33125  2   15 
+           are:                                                   33125  2   16 
+           - detector efficiency                                  33125  2   17 
+           - abundances of gamma lines                            33125  2   18 
+           - decay constants                                      33125  2   19 
+           - times of irradiation and cooling                     33125  2   20 
+ANALYSIS   Isomeric ratio of 132Te and 133Te were assumed to be 1.33125  2   21 
+STATUS     (TABLE) Table 1 of Prog. Rep. BARC-1381 (1987) 47     333125  2   22 
+           (DEP,33125003) Te cumulative yield                     33125  2   23 
+ENDBIB              21          0                                 33125  2   24 
+COMMON               1          3                                 33125  2   25 
+ERR-1                                                             33125  2   26 
+PER-CENT                                                          33125  2   27 
+        10.                                                       33125  2   28 
+ENDCOMMON            3          0                                 33125  2   29 
+DATA                 4          3                                 33125  2   30 
+MASS       ELEMENT    DATA       ERR-T                            33125  2   31 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM                           33125  2   32 
+       132.        53.     0.0673      0.030                      33125  2   33 
+       133.        53.      0.328      0.024                      33125  2   34 
+       134.        53.      0.512      0.035                      33125  2   35 
+ENDDATA              5          0                                 33125  2   36 
+ENDSUBENT           35          0                                 33125  299999 
+SUBENT        33125003   20190822                             319033125  3    1 
+BIB                  5         22                                 33125  3    2 
+REACTION  1(95-AM-241(N,F)ELEM/MASS,CUM,FY,,SPA)                  33125  3    3 
+          2(95-AM-241(N,F)ELEM/MASS,CUM,FY,,FRC/SPA)              33125  3    4 
+DECAY-DATA (52-TE-132,78.0HR,DG,228.0,0.850)                      33125  3    5 
+           (52-TE-133-M,55.4MIN,DG,912.0,0.800)                   33125  3    6 
+           (52-TE-134,41.8MIN,DG,210.0,0.230)                     33125  3    7 
+           (53-I-135,6.61HR,DG,1260.0,0.286)                      33125  3    8 
+ERR-ANALYS (ERR-T) Total errors are propagated errors within      33125  3    9 
+           one sigma, include both:                               33125  3   10 
+           (ERR-SYS,1.,5.) systematic errors (1-5%)               33125  3   11 
+           (ERR-1) random errors (10%)                            33125  3   12 
+           The sources of errors, apart from counting statistics  33125  3   13 
+           are:                                                   33125  3   14 
+           - detector efficiency                                  33125  3   15 
+           - abundances of gamma lines                            33125  3   16 
+           - decay constants                                      33125  3   17 
+           - times of irradiation and cooling                     33125  3   18 
+COMMENT    By SO, NDS, accodring to the latest decay data;        33125  3   19 
+           T1/2=55.4min in Table 2 for Te-133 is equal to that of 33125  3   20 
+            Te-133-M and gamma line intensity 80% at 912 keV is   33125  3   21 
+            not in the latest dacay scheme. It is very likely that33125  3   22 
+            the yield reported here is for Te-133 is for Te-133-M.33125  3   23 
+STATUS     (TABLE) Table 2 of Prog. Rep. BARC-1381 (1987) 47      33125  3   24 
+ENDBIB              22          0                                 33125  3   25 
+COMMON               1          3                                 33125  3   26 
+ERR-1                                                             33125  3   27 
+PER-CENT                                                          33125  3   28 
+        10.                                                       33125  3   29 
+ENDCOMMON            3          0                                 33125  3   30 
+DATA                 7          4                                 33125  3   31 
+MASS       ELEMENT    ISOMER     DATA      1ERR-T     1DATA      233125  3   32 
+ERR-T     2                                                       33125  3   33 
+NO-DIM     NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM     33125  3   34 
+NO-DIM                                                            33125  3   35 
+       132.        52.                 0.573      0.013      0.90933125  3   36 
+      0.050                                                       33125  3   37 
+       133.        52.        1.       0.499      0.040      0.60633125  3   38 
+      0.030                                                       33125  3   39 
+       134.        52.                1.1018       0.07      0.49433125  3   40 
+      0.020                                                       33125  3   41 
+       135.        53.                                       0.64933125  3   42 
+      0.008                                                       33125  3   43 
+ENDDATA             12          0                                 33125  3   44 
+ENDSUBENT           43          0                                 33125  399999 
+SUBENT        33125004   20190822                             319033125  4    1 
+BIB                  3          3                                 33125  4    2 
+REACTION   (95-AM-241(N,F)ELEM,SEC,AP,,SPA)                       33125  4    3 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainty     33125  4    4 
+STATUS     (TABLE) Text (p.48) of Prog. Rep. BARC-1381 (1987) 47  33125  4    5 
+ENDBIB               3          0                                 33125  4    6 
+NOCOMMON             0          0                                 33125  4    7 
+DATA                 5          1                                 33125  4    8 
+ELEMENT    DATA       DATA-ERR   MISC       MISC-ERR              33125  4    9 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                33125  4   10 
+        53.      133.9        0.4       0.94       0.09           33125  4   11 
+ENDDATA              3          0                                 33125  4   12 
+ENDSUBENT           11          0                                 33125  499999 
+ENDENTRY             4          0                                 3312599999999 
