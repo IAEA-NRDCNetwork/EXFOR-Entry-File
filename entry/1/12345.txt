@@ -1,65 +1,85 @@
-ENTRY            12345   19820519                             00001234500000001 
-SUBENT        12345001   19820519                             00001234500100001 
-BIB                  6         11                                 1234500100002 
-INSTITUTE  (1USALRL)                                              1234500100003 
-REFERENCE  (J,PR,152,1046,6612)                                   1234500100004 
-           (P,UCRL-50001-66-1,23,66)                              1234500100005 
-AUTHOR     (S.C.FULTZ,J.T.CALDWELL,B.L.BERMAN,R.L.BRAMBLETT,      1234500100006 
-           M.A.KELLY,H.D.WILSON,M.S.COOPS,R.W.LOUGHEED,J.E.EVANS, 1234500100007 
-           R.W.HOFF)                                              1234500100008 
-TITLE      MEASUREMENT OF THE AVERAGE NEUTRON YIELD PER FISSION   1234500100009 
-            FOR AM-242-M.                                         1234500100010 
-STATUS     (SCSRS)                                                1234500100011 
-HISTORY    (760804T) TRANSLATED FROM SCISRS                       1234500100012 
-           (820519A) CONVERTED TO REACTION FORMALISM              1234500100013 
-ENDBIB              11          0                                 1234500100014 
-NOCOMMON             0          0                                 1234500100015 
-ENDSUBENT           14          0                                 1234500199999 
-SUBENT        12345002   19820519                             00001234500200001 
-BIB                  4          4                                 1234500200002 
-REACTION   (92-U-233(N,F),,NU,,MXW)                               1234500200003 
-N-SOURCE   (CF252) CF-252 SPONTANEOUS FISSION NEUTRON SPECTRUM.   1234500200004 
-DETECTOR   (SCIN) SCINTILLATING CRYSTAL                           1234500200005 
-MONITOR    (98-CF-252(0,F),,NU)                                   1234500200006 
-ENDBIB               4          0                                 1234500200007 
-NOCOMMON             0          0                                 1234500200008 
-DATA                 4          1                                 1234500200009 
-EN-DUMMY   DATA       DATA-ERR   MONIT                            1234500200010 
-MEV        NO-DIM     NO-DIM     NO-DIM                           1234500200011 
- 1.0    +00 2.54   +00 4.     -02 3.78                            1234500200012 
-ENDDATA              3          0                                 1234500200013 
-ENDSUBENT           12          0                                 1234500299999 
-SUBENT        12345003   19820519                             00001234500300001 
-BIB                  3          4                                 1234500300002 
-REACTION   (92-U-235(N,F),,NU,,MXW)                               1234500300003 
-N-SOURCE   (CF252) CF-252 SPONTANEOUS FISSION SOURCE.             1234500300004 
-CORRECTION CORRECTED FOR DIFFERENCES IN THE FISSION NEUTRON       1234500300005 
-            SPECTRA FROM THAT OF CF-252.                          1234500300006 
-ENDBIB               4          0                                 1234500300007 
-NOCOMMON             0          0                                 1234500300008 
-DATA                 3          1                                 1234500300009 
-EN-DUMMY   DATA       DATA-ERR                                    1234500300010 
-MEV        NO-DIM     NO-DIM                                      1234500300011 
- 1.0        2.43       0.08                                       1234500300012 
-ENDDATA              3          0                                 1234500300013 
-ENDSUBENT           12          0                                 1234500399999 
-SUBENT        12345004   19820519                             00001234500400001 
-BIB                  4          5                                 1234500400002 
-REACTION   (95-AM-242-M1(N,F),,NU,,MXW)                           1234500400003 
-DETECTOR   (SCIN) SCINTILLATING CRYSTAL                           1234500400004 
-MONITOR    (98-CF-252(0,F),,NU)                                   1234500400005 
-            BASED ON CF252 SPONTANEOUS NU=3.78.                   1234500400006 
-INC-SPECT   THERMAL SPECTRUM                                      1234500400007 
-ENDBIB               5          0                                 1234500400008 
-COMMON               1          3                                 1234500400009 
-HL                                                                1234500400010 
-YR                                                                1234500400011 
-  152.                                                            1234500400012 
-ENDCOMMON            3          0                                 1234500400013 
-DATA                 4          1                                 1234500400014 
-EN-DUMMY   DATA       DATA-ERR   MONIT                            1234500400015 
-MEV        NO-DIM     NO-DIM     NO-DIM                           1234500400016 
- 2.53   -08 3.24   +00 1.2    -01 3.78                            1234500400017 
-ENDDATA              3          0                                 1234500400018 
-ENDSUBENT           17          0                                 1234500499999 
+ENTRY            12345   20160608                             141812345  0    1 
+SUBENT        12345001   20160608                             141812345  1    1 
+BIB                  9         22                                 12345  1    2 
+INSTITUTE  (1USALRL)                                              12345  1    3 
+REFERENCE  (J,PR,152,1046,196612)                                 12345  1    4 
+           (P,UCRL-50001-66-1,23,1966)                            12345  1    5 
+AUTHOR     (S.C.Fultz,J.T.Caldwell,B.L.Berman,R.L.Bramblett,      12345  1    6 
+           M.A.Kelly,H.D.Wilson,M.S.Coops,R.W.Lougheed,J.E.Evans, 12345  1    7 
+           R.W.Hoff)                                              12345  1    8 
+TITLE      Measurement of the average neutron yield per fission   12345  1    9 
+            for Am-242-m.                                         12345  1   10 
+INC-SOURCE (PU-BE) Pu-Be source (10**7 n/sec) with polyethylene   12345  1   11 
+           moderator                                              12345  1   12 
+INC-SPECT  Thermal spectrum                                       12345  1   13 
+DETECTOR   (BF3) 48 high-pressure B10F3 counters in 4 concentric  12345  1   14 
+           rings with corona-type spark chamber in the center.    12345  1   15 
+           Efficiency was determined with Cf252 neutron source.   12345  1   16 
+ERR-ANALYS (ERR-SYS,,1.6) Systematic error                        12345  1   17 
+           (DATA-ERR) Overall error. No further information.      12345  1   18 
+HISTORY    (19760804T) Translated from SCISRS                     12345  1   19 
+           (19820519A) Converted to REACTION formalism            12345  1   20 
+           (20160520A) OS. EN corrected in subs.2,3, Isomer code  12345  1   21 
+            corrected in sub.4. Added/updated INC-SOURCE,         12345  1   22 
+            DETECTOR, ERR-ANALYS, STATUS. Corrected data units.   12345  1   23 
+            Converted to lower case.                              12345  1   24 
+ENDBIB              22          0                                 12345  1   25 
+NOCOMMON             0          0                                 12345  1   26 
+ENDSUBENT           25          0                                 12345  199999 
+SUBENT        12345002   20160608                             141812345  2    1 
+BIB                  5          7                                 12345  2    2 
+REACTION   (92-U-233(N,F),,NU,,MXW)                               12345  2    3 
+SAMPLE     Approx. 0.5 mg/cm2, deposited on Al plate 0.010 in     12345  2    4 
+           thick.                                                 12345  2    5 
+MONITOR    (98-CF-252(0,F),,NU)                                   12345  2    6 
+STATUS     (TABLE) Table 1, Phys.Rev.152,1046,1966                12345  2    7 
+HISTORY    (20160520A) EN-DUMMY corrected.                        12345  2    8 
+            Units changed to PRT/FIS                              12345  2    9 
+ENDBIB               7          0                                 12345  2   10 
+NOCOMMON             0          0                                 12345  2   11 
+DATA                 4          1                                 12345  2   12 
+EN-DUMMY   DATA       DATA-ERR   MONIT                            12345  2   13 
+MEV        PRT/FIS    PRT/FIS    PRT/FIS                          12345  2   14 
+ 2.53   -08  2.54  +00  4.    -02 3.78                            12345  2   15 
+ENDDATA              3          0                                 12345  2   16 
+ENDSUBENT           15          0                                 12345  299999 
+SUBENT        12345003   20160608                             141812345  3    1 
+BIB                  5          8                                 12345  3    2 
+REACTION   (92-U-235(N,F),,NU,,MXW)                               12345  3    3 
+SAMPLE     Approx. 0.5 mg/cm2, deposited on Al plate 0.010 in     12345  3    4 
+           thick.                                                 12345  3    5 
+CORRECTION Corrected for differences in the fission neutron       12345  3    6 
+            spectra from that of Cf-252.                          12345  3    7 
+STATUS     (TABLE) Table 1, Phys.Rev.152,1046,1966                12345  3    8 
+HISTORY    (20160520A) EN-DUMMY corrected.                        12345  3    9 
+            Units changed to PRT/FIS                              12345  3   10 
+ENDBIB               8          0                                 12345  3   11 
+NOCOMMON             0          0                                 12345  3   12 
+DATA                 3          1                                 12345  3   13 
+EN-DUMMY   DATA       DATA-ERR                                    12345  3   14 
+MEV        PRT/FIS    PRT/FIS                                     12345  3   15 
+ 2.53   -08    2.43       0.08                                    12345  3   16 
+ENDDATA              3          0                                 12345  3   17 
+ENDSUBENT           16          0                                 12345  399999 
+SUBENT        12345004   20160608                             141812345  4    1 
+BIB                  6         11                                 12345  4    2 
+REACTION   (95-AM-242-M(N,F),,NU,,MXW)                            12345  4    3 
+SAMPLE     Am deposited at the center of a Ni foil.               12345  4    4 
+           2 samples, 1.151 and 1.197 mg/cm2.                     12345  4    5 
+           (95-AM-242,ENR=0.1980)                                 12345  4    6 
+           (95-AM-241,ENR=0.7951)                                 12345  4    7 
+           (95-AM-243,ENR=0.0069)                                 12345  4    8 
+MONITOR    (98-CF-252(0,F),,NU)                                   12345  4    9 
+DECAY-DATA (95-AM-242-M,152.YR)                                   12345  4   10 
+STATUS     (TABLE) Text on p.1048, Phys.Rev.152,1046,1966         12345  4   11 
+HISTORY    (20160520A) Isomer code changed to M.                  12345  4   12 
+            Units changed to PRT/FIS                              12345  4   13 
+ENDBIB              11          0                                 12345  4   14 
+NOCOMMON             0          0                                 12345  4   15 
+DATA                 4          1                                 12345  4   16 
+EN-DUMMY   DATA       DATA-ERR   MONIT                            12345  4   17 
+MEV        PRT/FIS    PRT/FIS    PRT/FIS                          12345  4   18 
+ 2.53   -08 3.24   +00 1.2    -01 3.78                            12345  4   19 
+ENDDATA              3          0                                 12345  4   20 
+ENDSUBENT           19          0                                 12345  499999 
 ENDENTRY             4          0                                 1234599999999 
