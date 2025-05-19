@@ -1,60 +1,151 @@
-ENTRY            10314   20020823                             00001031400000001 
-SUBENT        10314001   20020823                             00001031400100001 
-BIB                 12         21                                 1031400100002 
-INSTITUTE  (1USAMHG)                                              1031400100003 
-REFERENCE  (J,ANE,5,569,1978)                                     1031400100004 
-AUTHOR     (M.C.Davis,G.F.Knoll,J.C.Robertson,D.M.Gilliam)        1031400100005 
-TITLE      Absolute Measurements of 235U and 239PU Fission        1031400100006 
-            Cross-Sections with Photoneutron Sources              1031400100007 
-INC-SOURCE (PHOTO) Photoneutron sources: Na-Be (964 keV),         1031400100008 
-            La-Be (770 keV), Na-D (265 keV), and Ga-D (140 keV).  1031400100009 
-METHOD     (MANGB) Manganese bath technique                       1031400100010 
-DETECTOR   (TRD) Pair of limited solid angle track-etch detectors.1031400100011 
-PART-DET   (FF) Fission fragments.                                1031400100012 
-MONITOR    Efficiency of manganese bath determined relative       1031400100013 
-            to secondary national standard source NBS-II.         1031400100014 
-ERR-ANALYS (DATA-ERR) Data error given includes random and        1031400100015 
-            systematic error.                                     1031400100016 
-STATUS     (APRVD) Approved by author                             1031400100017 
-HISTORY    (19741015C) AP                                         1031400100018 
-           (19751216A) Data and reference updated                 1031400100019 
-           (19760608A) Data and reference updated                 1031400100020 
-           (19781208A) Reference and data updated.                1031400100021 
-           (19790315A) Reference updated. BIB corrections.        1031400100022 
-           (20020823A) Updated to new date formats, lower case.   1031400100023 
-ENDBIB              21          0                                 1031400100024 
-NOCOMMON             0          0                                 1031400100025 
-ENDSUBENT           24          0                                 1031400199999 
-SUBENT        10314002   20020823                             00001031400200001 
-BIB                  3          3                                 1031400200002 
-REACTION   (92-U-235(N,F),,SIG)                                   1031400200003 
-SAMPLE     U3O8 deposits of 8.16 and 6.85 milligrams on platinum. 1031400200004 
-HISTORY    (19790315A) Data updated.                              1031400200005 
-ENDBIB               3          0                                 1031400200006 
-NOCOMMON             0          0                                 1031400200007 
-DATA                 4          4                                 1031400200008 
-EN         EN-RSL     DATA       DATA-ERR                         1031400200009 
-KEV        KEV        B          B                                1031400200010 
- 140.                  1.471      0.029                           1031400200011 
- 265.                  1.274      0.026                           1031400200012 
- 770.                  1.162      0.025                           1031400200013 
- 964.       16.        1.195      0.026                           1031400200014 
-ENDDATA              6          0                                 1031400200015 
-ENDSUBENT           14          0                                 1031400299999 
-SUBENT        10314003   20020823                             00001031400300001 
-BIB                  3          3                                 1031400300002 
-REACTION   (94-PU-239(N,F),,SIG)                                  1031400300003 
-HISTORY    (20020823C) Data moved from data set 10545.            1031400300004 
-SAMPLE     PuO2 deposits of 5.59 and 4.94 milligrams  on platinum.1031400300005 
-ENDBIB               3          0                                 1031400300006 
-NOCOMMON             0          0                                 1031400300007 
-DATA                 3          4                                 1031400300008 
-EN         DATA       DATA-ERR                                    1031400300009 
-KEV        B          B                                           1031400300010 
-140.       1.469      0.045                                       1031400300011 
-265.       1.515      0.038                                       1031400300012 
-770.       1.670      0.039                                       1031400300013 
-964.       1.643      0.038                                       1031400300014 
-ENDDATA              6          0                                 1031400300015 
-ENDSUBENT           14          0                                 1031400399999 
-ENDENTRY             3          0                                 1031499999999 
+ENTRY            10314   20170724                             143210314  0    1 
+SUBENT        10314001   20170724                             143210314  1    1 
+BIB                 11         31                                 10314  1    2 
+TITLE      Absolute measurements of 235U and 239PU fission        10314  1    3 
+            cross-sections with photoneutron sources              10314  1    4 
+AUTHOR     (M.C.Davis, G.F.Knoll, J.C.Robertson, D.M.Gilliam)     10314  1    5 
+INSTITUTE  (1USAMHG)                                              10314  1    6 
+REFERENCE  (J,ANE,5,569,1978)                                     10314  1    7 
+INC-SOURCE (PHOTO) Photoneutron sources: Na-Be (964 keV),         10314  1    8 
+            La-Be (770 keV), Na-D (265 keV), and Ga-D (140 keV).  10314  1    9 
+METHOD     (MANGB)                                                10314  1   10 
+DETECTOR   (TRD) Pair of limited solid angle track-etch detectors 10314  1   11 
+MONITOR    Efficiency of manganese bath determined relative       10314  1   12 
+            to secondary national standard source NBS-II.         10314  1   13 
+CORRECTION Corrected for                                          10314  1   14 
+            - fragment emission anisotropy                        10314  1   15 
+            - angular distribution normalization to lab.          10314  1   16 
+            - D(g,n) reaction in solution                         10314  1   17 
+            - parasitic absorption                                10314  1   18 
+            - leakage                                             10314  1   19 
+            - scattering in Pt backings                           10314  1   20 
+            - scattering in foil holder (239Pu only)              10314  1   21 
+            - scattering in other structures                      10314  1   22 
+            - foil impurities                                     10314  1   23 
+            - energy spectrum.                                    10314  1   24 
+STATUS     (APRVD) Approved by author                             10314  1   25 
+HISTORY    (19741015C) AP                                         10314  1   26 
+           (19751216A) Data and reference updated                 10314  1   27 
+           (19760608A) Data and reference updated                 10314  1   28 
+           (19781208A) Reference and data updated.                10314  1   29 
+           (19790315A) Reference updated. BIB corrections.        10314  1   30 
+           (20020823A) Updated to new date formats, lower case.   10314  1   31 
+           (20170724A) On. ERR-ANALYS updated. CORRECTOIN added.  10314  1   32 
+            Major revsion in 002+003. 004 added.                  10314  1   33 
+ENDBIB              31          0                                 10314  1   34 
+NOCOMMON             0          0                                 10314  1   35 
+ENDSUBENT           34          0                                 10314  199999 
+SUBENT        10314002   20170724                             143210314  2    1 
+BIB                  5         21                                 10314  2    2 
+REACTION   (92-U-235(N,F),,SIG)                                   10314  2    3 
+SAMPLE     U3O8 deposits of 8.16 and 6.85 mg on Pt (+/-30 ug).    10314  2    4 
+           The mass was determined by microbalance weighings      10314  2    5 
+            and confirmed by thermal neutron fission and alpha    10314  2    6 
+            counting.                                             10314  2    7 
+ERR-ANALYS (ERR-T) Total uncertainty                              10314  2    8 
+           (ERR-1,,,U)  Net fission counts/source neutron         10314  2    9 
+           (ERR-2,,,U)  Manganese bath comparison of sources      10314  2   10 
+           (ERR-3,,,C)  Fragment emission anisotropy              10314  2   11 
+           (ERR-4,,,C)  Angular distribution normalization to lab.10314  2   12 
+           (ERR-5,,,C)  Half-life extrapolation                   10314  2   13 
+           (ERR-6,,,F)  NBS-II reference source                   10314  2   14 
+           (ERR-7,,,F)  Fissile foil masses                       10314  2   15 
+           (ERR-8,,,C)  Scattering in Pt backings                 10314  2   16 
+           (ERR-9,,,C)  Scattering in other structures            10314  2   17 
+           (ERR-10,,,U) Compensated beam geometry                 10314  2   18 
+           (ERR-11,,,C) Energy spectrum                           10314  2   19 
+STATUS     (TABLE) Tables 6 and 8 of Ann.Nucl.Energy 5(1978)569   10314  2   20 
+HISTORY    (19790315A) Data updated.                              10314  2   21 
+           (20170724A) On. Partial uncertainties added.           10314  2   22 
+            DATA-ERR -> ERR-T and %-uncertainties adopted for it. 10314  2   23 
+ENDBIB              21          0                                 10314  2   24 
+COMMON               4          3                                 10314  2   25 
+ERR-6      ERR-7      ERR-10     ERR-11                           10314  2   26 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         10314  2   27 
+ 0.50       0.50       0.57       0.30                            10314  2   28 
+ENDCOMMON            3          0                                 10314  2   29 
+DATA                10          4                                 10314  2   30 
+EN         DATA       ERR-T      ERR-1      ERR-2      ERR-3      10314  2   31 
+ERR-4      ERR-5      ERR-8      ERR-9                            10314  2   32 
+KEV        B          PER-CENT   PER-CENT   PER-CENT   PER-CENT   10314  2   33 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         10314  2   34 
+ 140.       1.471      2.16       1.39       0.25       1.17      10314  2   35 
+ 0.12       0.57       0.21       0.17                            10314  2   36 
+ 265.       1.274      2.11       1.51       0.26       1.03      10314  2   37 
+ 0.11       0.25       0.20       0.19                            10314  2   38 
+ 770.       1.162      2.01       1.00       0.25       1.37      10314  2   39 
+ 0.06       0.25       0.32       0.18                            10314  2   40 
+ 964.       1.195      1.98       1.18       0.26       1.12      10314  2   41 
+ 0.05       0.25       0.38       0.24                            10314  2   42 
+ENDDATA             12          0                                 10314  2   43 
+ENDSUBENT           42          0                                 10314  299999 
+SUBENT        10314003   20170724                             143210314  3    1 
+BIB                  5         21                                 10314  3    2 
+REACTION   (94-PU-239(N,F),,SIG)                                  10314  3    3 
+SAMPLE     PuO2 deposits of 5.59 and 4.94 mg on Pt (+/-1.4%).     10314  3    4 
+           The mass was determined by microbalance weighings      10314  3    5 
+            and confirmed by thermal neutron fission and alpha    10314  3    6 
+            counting.                                             10314  3    7 
+ERR-ANALYS (ERR-T) Total uncertainty                              10314  3    8 
+           (ERR-1,,,U)  Net fission counts/source neutron         10314  3    9 
+           (ERR-2,,,U)  Manganese bath comparison of sources      10314  3   10 
+           (ERR-3,,,C)  Fragment emission anisotropy              10314  3   11 
+           (ERR-4,,,C)  Angular distribution normalization to lab.10314  3   12 
+           (ERR-5,,,C)  Half-life extrapolation                   10314  3   13 
+           (ERR-6,,,F)  NBS-II reference source                   10314  3   14 
+           (ERR-7,,,F)  Fissile foil masses                       10314  3   15 
+           (ERR-8,,,C)  Scattering in Pt backings                 10314  3   16 
+           (ERR-9,,,C)  Scattering in other structures            10314  3   17 
+           (ERR-10,,,U) Compensated beam geometry                 10314  3   18 
+           (ERR-11,,,C) Energy spectrum                           10314  3   19 
+STATUS     (TABLE) Tables 7 and 8 of Ann.Nucl.Energy 5(1978)569   10314  3   20 
+HISTORY    (20020823C) Data moved from data set 10545.            10314  3   21 
+           (20170724A) On. Partial uncertainties added.           10314  3   22 
+            DATA-ERR -> ERR-T and %-uncertainties adopted for it. 10314  3   23 
+ENDBIB              21          0                                 10314  3   24 
+COMMON               4          3                                 10314  3   25 
+ERR-6      ERR-7      ERR-10     ERR-11                           10314  3   26 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         10314  3   27 
+ 0.50       1.40       0.57       0.30                            10314  3   28 
+ENDCOMMON            3          0                                 10314  3   29 
+DATA                10          4                                 10314  3   30 
+EN         DATA       ERR-T      ERR-1      ERR-2      ERR-3      10314  3   31 
+ERR-4      ERR-5      ERR-8      ERR-9                            10314  3   32 
+KEV        B          PER-CENT   PER-CENT   PER-CENT   PER-CENT   10314  3   33 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         10314  3   34 
+ 140.       1.469      2.32       0.81       0.25       1.36      10314  3   35 
+ 0.12       0.25       0.21       0.20                            10314  3   36 
+ 265.       1.515      2.35       1.34       0.26       0.93      10314  3   37 
+ 0.11       0.25       0.20       0.23                            10314  3   38 
+ 770.       1.670      2.51       1.20       0.25       1.37      10314  3   39 
+ 0.06       0.25       0.32       0.33                            10314  3   40 
+ 964.       1.643      3.05       2.07       0.26       1.42      10314  3   41 
+ 0.05       0.25       0.38       0.34                            10314  3   42 
+ENDDATA             12          0                                 10314  3   43 
+ENDSUBENT           42          0                                 10314  399999 
+SUBENT        10314004   20170724                             143210314  4    1 
+BIB                  5         12                                 10314  4    2 
+REACTION   ((94-PU-239(N,F),,SIG)/(92-U-235(N,F),,SIG))           10314  4    3 
+COMMENT    By authors: The experimental conditions were not ideal 10314  4    4 
+            for deriving cross-section ratios.                    10314  4    5 
+ERR-ANALYS (DATA-ERR) Total uncertainty. Many errors associated   10314  4    6 
+            with source yield and energy spectrum did cancel      10314  4    7 
+            resulting a final uncertainty in the ratios less than 10314  4    8 
+            the quadrature sum of the individual absolute         10314  4    9 
+            measurements.                                         10314  4   10 
+STATUS     (TABLE) Tables 8 of Ann.Nucl.Energy 5(1978)569         10314  4   11 
+           (DEP,10314002) 235U(n,f) cross sections                10314  4   12 
+           (DEP,10314003) 239Pu(n,f) cross sections               10314  4   13 
+HISTORY    (20170724C) On                                         10314  4   14 
+ENDBIB              12          0                                 10314  4   15 
+NOCOMMON             0          0                                 10314  4   16 
+DATA                 3          4                                 10314  4   17 
+EN         DATA       DATA-ERR                                    10314  4   18 
+KEV        NO-DIM     NO-DIM                                      10314  4   19 
+ 140.       0.999      0.035                                      10314  4   20 
+ 265.       1.189      0.037                                      10314  4   21 
+ 770.       1.437      0.044                                      10314  4   22 
+ 964.       1.375      0.041                                      10314  4   23 
+ENDDATA              6          0                                 10314  4   24 
+ENDSUBENT           23          0                                 10314  499999 
+ENDENTRY             4          0                                 1031499999999 
