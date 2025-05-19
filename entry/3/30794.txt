@@ -1,0 +1,74 @@
+ENTRY            30794   20090909                             31413079400000001 
+SUBENT        30794001   20090909                             31413079400100001 
+BIB                 13         23                                 3079400100002 
+TITLE      A determination of the Te-130 thermal neutron          3079400100003 
+           capture cross section                                  3079400100004 
+AUTHOR     (J.Honzatko,K.Konecny,Z.Kosina,F.Becvar,E.A.Eissa)     3079400100005 
+INSTITUTE  (3CZRUJF)                                              3079400100006 
+REFERENCE  (J,CZJ/B,34,520,198406)                                3079400100007 
+SAMPLE      3 g of metallic tellurium powder,enriched to 99.3 %   3079400100008 
+           in the Te-130 isotope                                  3079400100009 
+MONITOR    ((MONIT1)13-AL-27(N,G)13-AL-28,,SIG)                   3079400100010 
+           ((MONIT2)17-CL-35(N,G)17-CL-36,,SIG)                   3079400100011 
+FACILITY   (REAC,3CSRUJF)  VVR-S reactor                          3079400100012 
+INC-SPECT   Thermal reactor spectrum                              3079400100013 
+METHOD     (ACTIV)  Using gamma transitions in I-131,following the3079400100014 
+            beta-decay of Te-131-g  and the isomeric ratio        3079400100015 
+            sigma-m/(sigma-g + sigma-m) = 0.059 +- 0.003 taken    3079400100016 
+            from Namboodiri et.al,J.Inorg.Nucl.Chem.28(1981)1,    3079400100017 
+            Exfor 31078.                                          3079400100018 
+DETECTOR   (GELI)  23 cm3 Ge(Li) detector                         3079400100019 
+ERR-ANALYS (DATA-ERR) No information                              3079400100020 
+STATUS     (TABLE) Data taken from Czech.J.Phys. B 34(1984)520,   3079400100021 
+                                                       from text. 3079400100022 
+HISTORY    (19880531C) DG.-                                       3079400100023 
+           (20090725A) SD:Updated to new date formats,lower case. 3079400100024 
+            OS. Added ASSUMED and subentry 3.                     3079400100025 
+ENDBIB              23          0                                 3079400100026 
+COMMON               5          3                                 3079400100027 
+EN-DUMMY   MONIT1     MONIT1-ERR MONIT2     MONIT2-ERR            3079400100028 
+EV         MB         MB         B          B                     3079400100029 
+  0.0253      230.       3.         43.        2.                 3079400100030 
+ENDCOMMON            3          0                                 3079400100031 
+ENDSUBENT           30          0                                 3079400199999 
+SUBENT        30794002   20090909                             31413079400200001 
+BIB                  3          7                                 3079400200002 
+REACTION   (52-TE-130(N,G)52-TE-131,,SIG,,MXW)                    3079400200003 
+DECAY-DATA (52-TE-131-G,25.MIN,DG,452.,,                          3079400200004 
+                               DG,948.,,                          3079400200005 
+                               DG,997.)                           3079400200006 
+ASSUMED    (ASSUM,52-TE-130(N,G)52-TE-131-M/T,,SIG,,MXW)          3079400200007 
+            taken from Namboodiri et.al,                          3079400200008 
+            J.Inorg.Nucl.Chem.28(1981)1, Exfor 31078.             3079400200009 
+ENDBIB               7          0                                 3079400200010 
+NOCOMMON             0          0                                 3079400200011 
+DATA                 4          1                                 3079400200012 
+DATA       DATA-ERR   ASSUM      ASSUM-ERR                        3079400200013 
+MB         MB         NO-DIM     NO-DIM                           3079400200014 
+193.       20.         0.059      0.03                            3079400200015 
+ENDDATA              3          0                                 3079400200016 
+ENDSUBENT           15          0                                 3079400299999 
+SUBENT        30794003   20091006                             31413079400300001 
+BIB                  6         11                                 3079400300002 
+REACTION   (52-TE-130(N,G)52-TE-131,PAR,SIG,,MXW)                 3079400300003 
+EN-SEC     (E,G) Gammas from transitions in Te-131                3079400300004 
+METHOD     Partial cross sections determined indirectly           3079400300005 
+           through comparison with gammas from decay of           3079400300006 
+           shortlived beta-unstable product nucleus Te-131        3079400300007 
+STATUS     (TABLE) Data from Table 1 of reference                 3079400300008 
+FLAG       (1.) Secondary transition. According to author's       3079400300009 
+            definition, only the data for the primary transitions 3079400300010 
+            (all others in this table) are proper partial         3079400300011 
+            cross sections.                                       3079400300012 
+HISTORY    (20090913C) OS.                                        3079400300013 
+ENDBIB              11          0                                 3079400300014 
+NOCOMMON             0          0                                 3079400300015 
+DATA                 4          3                                 3079400300016 
+E          DATA       DATA-ERR   FLAG                             3079400300017 
+KEV        MB         MB         NO-DIM                           3079400300018 
+ 2286.       48.5      2.9         1.                             3079400300019 
+ 2927.       24.2      1.6                                        3079400300020 
+ 3346.       49.6      2.8                                        3079400300021 
+ENDDATA              5          0                                 3079400300022 
+ENDSUBENT           21          0                                 3079400399999 
+ENDENTRY             3          0                                 3079499999999 

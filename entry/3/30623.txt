@@ -1,0 +1,185 @@
+ENTRY            30623   20090807                             31403062300000001 
+SUBENT        30623001   20090807                             31403062300100001 
+BIB                 12         32                                 3062300100002 
+TITLE      -Tne measurements of differential scattering cross     3062300100003 
+           section of fast neutrons from Li-7 and Be-9.-          3062300100004 
+AUTHOR     (Chen Guanren,Wen Shenlin,Huang Tangzi,Bai Xixiang,    3062300100005 
+           Li Annli)                                              3062300100006 
+INSTITUTE  (3CPRAEP)                                              3062300100007 
+REFERENCE  (J,CNP,3,(4),320,198111) in Chinese.                   3062300100008 
+           (J,NSE,86,184,198402) English translation              3062300100009 
+MONITOR    Absolute measurement                                   3062300100010 
+           (1-H-1(N,EL)1-H-1,,SIG)                                3062300100011 
+            Relative efficiency of n-p scattering for the detector3062300100012 
+FACILITY   (CCW,3CPRAEP) 250keV deuterons.                        3062300100013 
+INC-SOURCE (D-T)                                                  3062300100014 
+METHOD     (TOF,ASSOP) Associated particle time of flight         3062300100015 
+                                                      spectromer. 3062300100016 
+            Flight path = 1.55 m,  the resolution time of the     3062300100017 
+           spectrometer is about 1 ns for 14.7 MeV neutrons.      3062300100018 
+DETECTOR   (SCIN) Liquid scintillator                             3062300100019 
+CORRECTION Diff. cross sections were corrected for:               3062300100020 
+             * the dead time of the electronics,                  3062300100021 
+             * the shape of the primary neutron spectrum,         3062300100022 
+             * multiple scattering,                               3062300100023 
+             * the incident neutron                               3062300100024 
+             * flux attenuation,                                  3062300100025 
+             * the finite geometry of the sample.                 3062300100026 
+STATUS     (TABLE) Data taken from Table 1 of Chinese             3062300100027 
+                                         J.Nucl.Phys.,3(1981) 320.3062300100028 
+HISTORY    (19820329C) KO.                                        3062300100029 
+           (19840229U) KO.-New ref (English translation) added.-  3062300100030 
+           (19840323A) ML.Sigma elastic,comment subent 4 corrected3062300100031 
+           (19880518A) TMK.Monitor, Correction, Analysis and      3062300100032 
+                   EN-RSL  added. Subent 5, 6, 7 added            3062300100033 
+           (20090729A) SD:Updated to new date formats,lower case. 3062300100034 
+ENDBIB              32          0                                 3062300100035 
+NOCOMMON             0          0                                 3062300100036 
+ENDSUBENT           35          0                                 3062300199999 
+SUBENT        30623002   20090807                             31403062300200001 
+BIB                  5         10                                 3062300200002 
+REACTION   (4-BE-9(N,EL)4-BE-9,,DA,,LEG/RSL)                      3062300200003 
+SAMPLE     Cylinder, inner diam. 1 cm, outer diam. 2.5 cm, 4 cm   3062300200004 
+           high.  Metalic.                                        3062300200005 
+ANALYSIS   Legendre polynomial is:                                3062300200006 
+             4Pi sig(E,theta)/El sig(E) = sum((2l+1) F(l) p(l))   3062300200007 
+             F(l) is given in the following data Table            3062300200008 
+ERR-ANALYS (DATA-ERR) Uncertainties include:                      3062300200009 
+           (ERR-S,1.,6.) Statistical error 1 to 6%,               3062300200010 
+           (ERR-1,1.,6.) Relative standard error 1 to 6%.         3062300200011 
+COMMENT    Fitting parameter, sigma(elastic)= 1016.5+-33.6 mb.    3062300200012 
+ENDBIB              10          0                                 3062300200013 
+COMMON               2          3                                 3062300200014 
+EN         EN-RSL                                                 3062300200015 
+MEV        MEV                                                    3062300200016 
+14.7       0.1                                                    3062300200017 
+ENDCOMMON            3          0                                 3062300200018 
+DATA                 3          7                                 3062300200019 
+NUMBER-CM  DATA-CM    DATA-ERR                                    3062300200020 
+NO-DIM     NO-DIM     NO-DIM                                      3062300200021 
+0.         1.         0.02335                                     3062300200022 
+1.         0.71250    0.01850                                     3062300200023 
+2.         0.50462    0.01381                                     3062300200024 
+3.         0.31625    0.00929                                     3062300200025 
+4.         0.14262    0.00545                                     3062300200026 
+5.         0.03736    0.00297                                     3062300200027 
+6.         0.00947    0.00137                                     3062300200028 
+ENDDATA              9          0                                 3062300200029 
+ENDSUBENT           28          0                                 3062300299999 
+SUBENT        30623003   20090807                             31403062300300001 
+BIB                  5         14                                 3062300300002 
+REACTION   (4-BE-9(N,INL)4-BE-9,PAR,DA,,LEG/RSL)                  3062300300003 
+           The inelastic scattering corresponds to the 5/2- state 3062300300004 
+SAMPLE     Metalic cylinder, 1 cm inner diam., 2.5 cm outer diam.,3062300300005 
+           and 4cm high.                                          3062300300006 
+ANALYSIS   Legendre polynomial is:                                3062300300007 
+             4Pi sig(e,theta)/El sig(E) = sum((2l+1) F(l) p(l))   3062300300008 
+             F(l) is given in the following data Table            3062300300009 
+ERR-ANALYS (DATA-ERR) Uncertainties include:                      3062300300010 
+           (ERR-S,5.,10.)Statistical error 5 to 10%,              3062300300011 
+           (ERR-1,5.,15.) Relative standard error 5 to 15%.       3062300300012 
+COMMENT    Fitting parameter,sigma(inelastic) = 158.5+-18.1 mb.   3062300300013 
+           Comment of compiler:                                   3062300300014 
+           DATA-ERR for data -0.00233 is -0.00747 in Table 1 of   3062300300015 
+           Nucl. Sci.Eng., 86, 184, 1984. This may be a mis-print.3062300300016 
+ENDBIB              14          0                                 3062300300017 
+COMMON               3          3                                 3062300300018 
+EN         EN-RSL     E-LVL                                       3062300300019 
+MEV        MEV        MEV                                         3062300300020 
+14.7       0.1        2.43                                        3062300300021 
+ENDCOMMON            3          0                                 3062300300022 
+DATA                 3          4                                 3062300300023 
+NUMBER-CM  DATA-CM    DATA-ERR                                    3062300300024 
+NO-DIM     NO-DIM     NO-DIM                                      3062300300025 
+0.         1.         0.16141                                     3062300300026 
+1.         0.22443    0.0063                                      3062300300027 
+2.         -0.02049   -0.00407                                    3062300300028 
+3.         -0.00233   -0.00347                                    3062300300029 
+ENDDATA              6          0                                 3062300300030 
+ENDSUBENT           29          0                                 3062300399999 
+SUBENT        30623004   20090807                             31403062300400001 
+BIB                  5          9                                 3062300400002 
+REACTION   (3-LI-7(N,EL)3-LI-7,,DA,,LEG/RSL)                      3062300400003 
+SAMPLE     Natural metal disc, 2.5 cm diameter, 4 cm high.        3062300400004 
+ANALYSIS   Legendre polynomial is:                                3062300400005 
+             4Pi sig(e,theta)/El sig(E) = sum((2l+1) F(l) p(l))   3062300400006 
+             F(l) is given in the following data Table            3062300400007 
+ERR-ANALYS (DATA-ERR) Uncertainties include:                      3062300400008 
+           (ERR-S,1.,7.)Statistical error 1 to 7%,                3062300400009 
+           (ERR-1,2.,8.) Relative standard error 2 to 8%.         3062300400010 
+COMMENT    Fitting parameter, sigma(elastic) = 1087.2+-28.6 mb    3062300400011 
+ENDBIB               9          0                                 3062300400012 
+COMMON               2          3                                 3062300400013 
+EN         EN-RSL                                                 3062300400014 
+MEV        MEV                                                    3062300400015 
+14.7       0.1                                                    3062300400016 
+ENDCOMMON            3          0                                 3062300400017 
+DATA                 3          6                                 3062300400018 
+NUMBER-CM  DATA-CM    DATA-ERR                                    3062300400019 
+NO-DIM     NO-DIM     NO-DIM                                      3062300400020 
+0.         1.         0.03717                                     3062300400021 
+1.         0.64050    0.02813                                     3062300400022 
+2.         0.40618    0.01971                                     3062300400023 
+3.         0.23589    0.01309                                     3062300400024 
+4.         0.08899    0.00705                                     3062300400025 
+5.         0.00868    0.00333                                     3062300400026 
+ENDDATA              8          0                                 3062300400027 
+ENDSUBENT           26          0                                 3062300499999 
+SUBENT        30623005   20090807                             31403062300500001 
+BIB                  3          6                                 3062300500002 
+REACTION   (4-BE-9(N,EL)4-BE-9,,SIG)                              3062300500003 
+ERR-ANALYS (ERR-S) Statistical error                              3062300500004 
+COMMENT    Comment of compiler:                                   3062300500005 
+           Given data fitted by Legendre polynomial is slightly   3062300500006 
+           different with expt results, 962.8 mb, from Table 2 of 3062300500007 
+           Chinese J. Nucl. Phys., 3(1981), 320.                  3062300500008 
+ENDBIB               6          0                                 3062300500009 
+COMMON               2          3                                 3062300500010 
+EN         EN-RSL                                                 3062300500011 
+MEV        MEV                                                    3062300500012 
+14.7       0.1                                                    3062300500013 
+ENDCOMMON            3          0                                 3062300500014 
+DATA                 2          1                                 3062300500015 
+DATA       ERR-S                                                  3062300500016 
+MB         MB                                                     3062300500017 
+1016.5     33.6                                                   3062300500018 
+ENDDATA              3          0                                 3062300500019 
+ENDSUBENT           18          0                                 3062300599999 
+SUBENT        30623006   20090807                             31403062300600001 
+BIB                  3          6                                 3062300600002 
+REACTION   (3-LI-7(N,EL)3-LI-7,,SIG)                              3062300600003 
+ERR-ANALYS (ERR-S) Statistical error                              3062300600004 
+COMMENT    Comment of compiler:                                   3062300600005 
+           Given data fitted by Legendre polynomial is slightly   3062300600006 
+           different with expt result, 968 mb, from Table 2 of    3062300600007 
+           Chinese J. Nucl. Phys., 3(1981), 320.                  3062300600008 
+ENDBIB               6          0                                 3062300600009 
+COMMON               2          3                                 3062300600010 
+EN         EN-RSL                                                 3062300600011 
+MEV        MEV                                                    3062300600012 
+14.7       0.1                                                    3062300600013 
+ENDCOMMON            3          0                                 3062300600014 
+DATA                 2          1                                 3062300600015 
+DATA       ERR-S                                                  3062300600016 
+MB         MB                                                     3062300600017 
+1087.2     28.6                                                   3062300600018 
+ENDDATA              3          0                                 3062300600019 
+ENDSUBENT           18          0                                 3062300699999 
+SUBENT        30623007   20090807                             31403062300700001 
+BIB                  2          3                                 3062300700002 
+REACTION   (4-BE-9(N,INL)4-BE-9,PAR,SIG)                          3062300700003 
+            The inelastic scattering corresponds to the 5/2- state3062300700004 
+ERR-ANALYS (ERR-S) Statistical error                              3062300700005 
+ENDBIB               3          0                                 3062300700006 
+COMMON               3          3                                 3062300700007 
+EN         EN-ERR     E-LVL                                       3062300700008 
+MEV        MEV        MEV                                         3062300700009 
+14.7       0.1        2.43                                        3062300700010 
+ENDCOMMON            3          0                                 3062300700011 
+DATA                 2          1                                 3062300700012 
+DATA       DATA-ERR                                               3062300700013 
+MB         MB                                                     3062300700014 
+158.5      18.1                                                   3062300700015 
+ENDDATA              3          0                                 3062300700016 
+ENDSUBENT           15          0                                 3062300799999 
+ENDENTRY             7          0                                 3062399999999 

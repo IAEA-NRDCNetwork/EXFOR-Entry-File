@@ -1,0 +1,109 @@
+ENTRY            M0412   20140904                             M074M041200000001 
+SUBENT        M0412001   20140904                             M074M041200100001 
+BIB                 17         36                                 M041200100002 
+TITLE      Electric quadrupole photoneutron reactions in O-16.    M041200100003 
+AUTHOR     (P.C.-K.Kuo,J.W.Jury,N.K.Sherman,W.F.Davidson)         M041200100004 
+REFERENCE  (J,PR/C,30,1789,1984)                                  M041200100005 
+           #doi:10.1103/PhysRevC.30.1789                          M041200100006 
+INSTITUTE  (1CANOTC)                                              M041200100007 
+FACILITY   (LINAC,1CANOTC)                                        M041200100008 
+INC-SOURCE (KINDT) Complete kinematics.                           M041200100009 
+METHOD     (TOF)                                                  M041200100010 
+DETECTOR   (SCIN)                                                 M041200100011 
+PART-DET   (N)                                                    M041200100012 
+SAMPLE     Three samples   were  used.  These  were  (D-2)O  (to  M041200100013 
+            monitor  photon  distribution),  (H-2)O  (the   O-16  M041200100014 
+            sample),  and  a  'blank'  (an  empty  container  to  M041200100015 
+            measure the backgrounds).                             M041200100016 
+ANALYSIS   The absolute total  ground-state  cross  section  was  M041200100017 
+            determined   from   the   series   of   photoneutron  M041200100018 
+            time-of-flight spectra by using  their  highest  5.2  M041200100019 
+            MeV  regions  of bremsstrahlung tip which correspond  M041200100020 
+            unambigiously to the ground-state  transitions  (the  M041200100021 
+            first excited state in O-15 is at 5.2 MeV).           M041200100022 
+ERR-ANALYS (DATA-ERR) No information.                             M041200100023 
+COMMENT    Photoneutron energy   spectra   from   the   reaction  M041200100024 
+            O-16(g,n0)O-15  were  measured  as  a  functions  of  M041200100025 
+            laboratory angle over a range of excitation energies  M041200100026 
+            from 30 to 35 MeV.  These spectra  and  photoneutron  M041200100027 
+            angular   distributions  were  used  to  obtain  the  M041200100028 
+            absolute photoneutron ground-state cross section and  M041200100029 
+            its quadrupole component.                             M041200100030 
+EN-SEC     (E-LVL,8-O-15)                                         M041200100031 
+MONITOR    (1-H-2(G,N)1-H-1,,SIG)                                 M041200100032 
+MONIT-REF  (,H.Arenhovel+,J,PL/B,52,303,1974) for Eg < 10 MeV.    M041200100033 
+           (,F.Partovi,J,AP,27,29,1964) FOR EG > 10 MEV.          M041200100034 
+HISTORY    (19910218C) Data were compiled at the Russia MSU SINP  M041200100035 
+            CDFE by V.Varlamov.                                   M041200100036 
+           (20140904A) Corrected by V.Varlamov: dates, DATA-ERR,  M041200100037 
+            STATUS, MONITOR, doi, lowercase.                      M041200100038 
+ENDBIB              36          0                                 M041200100039 
+COMMON               1          3                                 M041200100040 
+E-LVL                                                             M041200100041 
+MEV                                                               M041200100042 
+ 0.0                                                              M041200100043 
+ENDCOMMON            3          0                                 M041200100044 
+ENDSUBENT           43          0                                 M041200199999 
+SUBENT        M0412002   20140904                             M074M041200200001 
+BIB                  3          3                                 M041200200002 
+REACTION   (8-O-16(G,N)8-O-15,PAR,SIG)                            M041200200003 
+STATUS     (CURVE) Data from Fig. 1.                              M041200200004 
+HISTORY    (20140904A) Corrected by V.Varlamov: STATUS, COMMON.   M041200200005 
+ENDBIB               3          0                                 M041200200006 
+COMMON               1          3                                 M041200200007 
+DATA-ERR                                                          M041200200008 
+MB                                                                M041200200009 
+   0.10                                                           M041200200010 
+ENDCOMMON            3          0                                 M041200200011 
+DATA                 2         11                                 M041200200012 
+EN         DATA                                                   M041200200013 
+MEV        MB                                                     M041200200014 
+ 30.00      1.50                                                  M041200200015 
+ 30.50      1.42                                                  M041200200016 
+ 31.00      1.30                                                  M041200200017 
+ 31.50      1.27                                                  M041200200018 
+ 32.00      1.22                                                  M041200200019 
+ 32.50      1.05                                                  M041200200020 
+ 33.00      0.97                                                  M041200200021 
+ 33.50      1.00                                                  M041200200022 
+ 34.00      0.92                                                  M041200200023 
+ 34.50      0.77                                                  M041200200024 
+ 35.00      0.80                                                  M041200200025 
+ENDDATA             13          0                                 M041200200026 
+ENDSUBENT           25          0                                 M041200299999 
+SUBENT        M0412003   20140904                             M074M041200300001 
+BIB                  5         11                                 M041200300002 
+REACTION   (8-O-16(G,N)8-O-15,EP/PAR,SIG)                         M041200300003 
+           E2 component. The scale of the cross section was       M041200300004 
+            determined relative to that of the deutron.           M041200300005 
+ANALYSIS   The E2  component  of  cross  section was obtained by  M041200300006 
+            using the neutron penetrabilities in  the  frame  of  M041200300007 
+            model of P.C.-K.Kuo.                                  M041200300008 
+REL-REF    (R,,P.C.-K.Kuo,T,Kuo,1983) Neutron penetrabilities.    M041200300009 
+STATUS     (DEP,M0412002)                                         M041200300010 
+           (TABLE) Data from the Table 2.                         M041200300011 
+HISTORY    (20140904A) Corrected by V.Varlamov: EP/PAR in         M041200300012 
+            REACTION, COMMENT -> ANALYSIS, STATUS, COMMON.        M041200300013 
+ENDBIB              11          0                                 M041200300014 
+COMMON               1          3                                 M041200300015 
+POLAR                                                             M041200300016 
+NO-DIM                                                            M041200300017 
+  2.                                                              M041200300018 
+ENDCOMMON            3          0                                 M041200300019 
+DATA                 3         11                                 M041200300020 
+EN         DATA       DATA-ERR                                    M041200300021 
+MEV        MB         MB                                          M041200300022 
+ 30.000     0.000        .020                                     M041200300023 
+ 30.500     0.000        .020                                     M041200300024 
+ 31.000     0.071        .020                                     M041200300025 
+ 31.500     0.048        .020                                     M041200300026 
+ 32.00      0.030        .030                                     M041200300027 
+ 32.500     0.026        .010                                     M041200300028 
+ 33.00      0.023        .010                                     M041200300029 
+ 33.500     0.025        .010                                     M041200300030 
+ 34.00      0.041        .010                                     M041200300031 
+ 34.500     0.088        .020                                     M041200300032 
+ 35.000     0.127        .020                                     M041200300033 
+ENDDATA             13          0                                 M041200300034 
+ENDSUBENT           33          0                                 M041200399999 
+ENDENTRY             3          0                                 M041299999999 

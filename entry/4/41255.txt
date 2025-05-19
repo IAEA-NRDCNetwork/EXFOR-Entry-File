@@ -1,0 +1,124 @@
+ENTRY            41255   20140814                             41644125500000001 
+SUBENT        41255001   20140814                             41644125500100001 
+BIB                 14         47                                 4125500100002 
+TITLE       Measurement of the effective number of secondary      4125500100003 
+           neutrons from Pu239 in the incident neutron energy     4125500100004 
+           region from 7 to 30 eV.                                4125500100005 
+AUTHOR     (I.V.Kirpichnikov, V.V.Okorokov, S.I.Sukhoruchkin)     4125500100006 
+INSTITUTE  (4RUSITE)                                              4125500100007 
+REFERENCE  (J,AE,2,(3),247,1957) Main Reference. Data are given   4125500100008 
+           (J,SJA,2,299,1957) Engl.translation of AE,2,(3),247    4125500100009 
+           #doi:10.1007/BF01514611                                4125500100010 
+FACILITY   (CYCLO,4RUSITE) Cyclotron with intrinsic Be target     4125500100011 
+INC-SOURCE (THCOL) Paraffin cube                                  4125500100012 
+DETECTOR   (BF3) 15 proportional counters for slow neutron        4125500100013 
+           registration. Filled by BF3. Diameter 3.5 cm, length   4125500100014 
+           15 cm. Placed at the end of collimator.                4125500100015 
+           4 BF3 gas counters  of 2.5 cm diameter, 19 cm length,  4125500100016 
+           placed before sample - to measure neutron flux on      4125500100017 
+           sample and for normalization.                          4125500100018 
+           (SCIN) For fission neutrons registration.              4125500100019 
+SAMPLE      Pu-239 10[20 cm**2, thickness 0.5g/cm**2.             4125500100020 
+ASSUMED    (ASSUM1,94-PU-239(N,F),PR,NU)                          4125500100021 
+           Was set constant in whole energy region.               4125500100022 
+           Used for normalization.                                4125500100023 
+           (ASSUM2,94-PU-239(N,F),,SIG) At thermal energy.        4125500100024 
+           (ASSUM3,94-PU-239(N,ABS),,SIG) At thermal energy.      4125500100025 
+METHOD     (TRN) Transmission.                                    4125500100026 
+           (TOF) 15.6m, 2m and 1 m flight paths.                  4125500100027 
+ANALYSIS    Absorption c-s was defined as:                        4125500100028 
+           SIGabs=-(1/n)*ln(T) - SIGsct , where                   4125500100029 
+           SIGsct - potential scattering C-S,                     4125500100030 
+           T - transmission,                                      4125500100031 
+           n- number of atoms for 1 cm**2 in sample.              4125500100032 
+           Fission C-S was defined as:                            4125500100033 
+           SIGf= Nf*SIGabs/(N*sqrt(E)*(1-T)),                     4125500100034 
+           Nf - fission counts,                                   4125500100035 
+           N*sqrt(E) - slow neutron flux.                         4125500100036 
+           NUeff =Nf*EPS/(N*sqrt(E)*(1-T)) ,                      4125500100037 
+           EPS - registration efficiency.                         4125500100038 
+CORRECTION For background ( measured).                            4125500100039 
+ERR-ANALYS (ERR-S) Statistical error.                             4125500100040 
+           (ERR-1,,15.) Normalization error.                      4125500100041 
+HISTORY    (19970702C) + + Compiled at the Center - CJD (S.M.)  + 4125500100042 
+           (20010326A)  . .  Date Corrected. Reaction Code in     4125500100043 
+                           San 003 Changed                        4125500100044 
+           (20010326U) Last checking has been done.               4125500100045 
+           (20140814A) M.M. Upper -> lower case correction.       4125500100046 
+           Ref. of Engl.translation was added.                    4125500100047 
+           BIB information was updated.                           4125500100048 
+           DATA-ERR -> ERR-S, ERR-1 was added.                    4125500100049 
+ENDBIB              47          0                                 4125500100050 
+COMMON               3          3                                 4125500100051 
+ASSUM1     ASSUM2     ASSUM3                                      4125500100052 
+PRT/FIS    B          B                                           4125500100053 
+        2.9   729.      1032.                                     4125500100054 
+ENDCOMMON            3          0                                 4125500100055 
+ENDSUBENT           54          0                                 4125500199999 
+SUBENT        41255002   20140814                             41644125500200001 
+BIB                  3          6                                 4125500200002 
+REACTION  1(94-PU-239(N,F),,WID)                                  4125500200003 
+          2(94-PU-239(N,G),,WID)                                  4125500200004 
+          3(94-PU-239(N,TOT),,WID)                                4125500200005 
+STATUS     (TABLE) Table of AE,2,(3),247,1957                     4125500200006 
+HISTORY    (19970702T) * * Converted from Subent 80386002         4125500200007 
+           (20010326U) Last checking has been done.               4125500200008 
+ENDBIB               6          0                                 4125500200009 
+NOCOMMON             0          0                                 4125500200010 
+DATA                 7         10                                 4125500200011 
+EN-RES     DATA      1ERR-S     1DATA      2ERR-S     2DATA      34125500200012 
+ERR-S     3                                                       4125500200013 
+MEV        MILLI-EV   MILLI-EV   MILLI-EV   MILLI-EV   MILLI-EV   4125500200014 
+MILLI-EV                                                          4125500200015 
+     3.E-07    5.6E+01         5.    4.4E+01        4.5     1.E+024125500200016 
+         2.                                                       4125500200017 
+    7.8E-06    1.9E+01         3.    2.3E+01         5.    4.2E+014125500200018 
+         6.                                                       4125500200019 
+  1.095E-05    7.7E+01     1.E+01    5.3E+01    1.1E+01    1.3E+024125500200020 
+    1.5E+01                                                       4125500200021 
+   1.19E-05    2.6E+01         4.    2.6E+01         9.    5.2E+014125500200022 
+         5.                                                       4125500200023 
+   1.43E-05    1.7E+01         5.    4.3E+01    1.1E+01     6.E+014125500200024 
+     1.E+01                                                       4125500200025 
+   1.47E-05     4.E+01         9.     4.E+01         7.     8.E+014125500200026 
+    1.5E+01                                                       4125500200027 
+   1.55E-05   1.55E+02         8.                           2.E+024125500200028 
+     7.E+01                                                       4125500200029 
+  1.765E-05    2.7E+01         5.    5.5E+01         8.    8.2E+014125500200030 
+         8.                                                       4125500200031 
+   2.23E-05    3.1E+01         8.    2.4E+01         6.    5.5E+014125500200032 
+         5.                                                       4125500200033 
+   2.61E-05    3.1E+01    1.9E+01    8.4E+01    2.5E+01   1.15E+024125500200034 
+    1.7E+01                                                       4125500200035 
+ENDDATA             24          0                                 4125500200036 
+ENDSUBENT           35          0                                 4125500299999 
+SUBENT        41255003   20140814                             41644125500300001 
+BIB                  3          6                                 4125500300002 
+REACTION   ((94-PU-239(N,NON),,ETA)//                             4125500300003 
+           (94-PU-239(N,NON),,ETA)) Here ETA ==  Nu-Eff=Nu*       4125500300004 
+                                Sigma(FISSION)/Sigma(ABSORPTION)  4125500300005 
+STATUS     (TABLE) Table of AE,2,(3),247,1957                     4125500300006 
+HISTORY    (20010326A) . . REACTION code changed to ratio         4125500300007 
+                       . . REACTION quantity changed to  ETA      4125500300008 
+ENDBIB               6          0                                 4125500300009 
+COMMON               1          3                                 4125500300010 
+EN-DN                                                             4125500300011 
+EV                                                                4125500300012 
+   2.53E-02                                                       4125500300013 
+ENDCOMMON            3          0                                 4125500300014 
+DATA                 3         10                                 4125500300015 
+EN-NM      DATA       ERR-S                                       4125500300016 
+EV         NO-DIM     NO-DIM                                      4125500300017 
+        0.3         .8        .05                                 4125500300018 
+        7.8         .5        .03                                 4125500300019 
+      10.95        .78        .03                                 4125500300020 
+       11.9        .48        .04                                 4125500300021 
+       14.3        .41        .08                                 4125500300022 
+       14.7         .6        .04                                 4125500300023 
+       15.5       1.12        .22                                 4125500300024 
+      17.65        .48        .05                                 4125500300025 
+       22.3        .79        .08                                 4125500300026 
+       26.1        .39        .18                                 4125500300027 
+ENDDATA             12          0                                 4125500300028 
+ENDSUBENT           27          0                                 4125500399999 
+ENDENTRY             3          0                                 4125599999999 

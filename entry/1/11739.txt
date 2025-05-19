@@ -1,0 +1,80 @@
+ENTRY            11739   20050708                             13361173900000001 
+SUBENT        11739001   20050708                             13361173900100001 
+BIB                  7         12                                 1173900100002 
+INSTITUTE  (1USAORL)                                              1173900100003 
+REFERENCE  (J,JNE/A,11,95,1960)                                   1173900100004 
+AUTHOR     (F.J.Johnston,J.Halperin,R.W.Stoughton)                1173900100005 
+TITLE      The thermal neutron absorption cross-section of Th232  1173900100006 
+           and the resonance integrals of Th232, Th233, and Co59. 1173900100007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,SIG)                 1173900100008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,RI)                  1173900100009 
+STATUS     (SCSRS)                                                1173900100010 
+HISTORY    (19760730T) Translated from SCISRS                     1173900100011 
+           (19840731A) Reaction products added.                   1173900100012 
+           (19860113U) Reaction product added to monitor, ASSUMED.1173900100013 
+           (20050708C) DR Format updated and reference corrected  1173900100014 
+ENDBIB              12          0                                 1173900100015 
+COMMON               2          3                                 1173900100016 
+MONIT1     MONIT2                                                 1173900100017 
+B          B                                                      1173900100018 
+ 98.8       1565.                                                 1173900100019 
+ENDCOMMON            3          0                                 1173900100020 
+ENDSUBENT           19          0                                 1173900199999 
+SUBENT        11739002   19860113                             13361173900200001 
+BIB                  3          3                                 1173900200002 
+REACTION   (27-CO-59(N,G)27-CO-60,,RI)                            1173900200003 
+METHOD     (ACTIV)    Activation                                  1173900200004 
+MONITOR    ((MONIT3)27-CO-59(N,G)27-CO-60,,SIG)                   1173900200005 
+ENDBIB               3          0                                 1173900200006 
+NOCOMMON             0          0                                 1173900200007 
+DATA                 4          1                                 1173900200008 
+EN-MIN     DATA       DATA-ERR   MONIT3                           1173900200009 
+MEV        B          B          B                                1173900200010 
+   5.00E-07    7.5E+01    5.0E+00 37.                             1173900200011 
+ENDDATA              3          0                                 1173900200012 
+ENDSUBENT           11          0                                 1173900299999 
+SUBENT        11739003   19860113                             13361173900300001 
+BIB                  3          3                                 1173900300002 
+REACTION   (90-TH-232(N,G)90-TH-233,,RI)                          1173900300003 
+METHOD     (ACTIV) activation. Counted Pa-233 decay betas.        1173900300004 
+MONITOR    ((MONIT3)90-TH-232(N,G)90-TH-233,,SIG)                 1173900300005 
+ENDBIB               3          0                                 1173900300006 
+NOCOMMON             0          0                                 1173900300007 
+DATA                 4          1                                 1173900300008 
+EN-MIN     DATA       DATA-ERR   MONIT3                           1173900300009 
+MEV        B          B          B                                1173900300010 
+    5.0E-07    8.5E+01    8.0E+00 7.6                             1173900300011 
+ENDDATA              3          0                                 1173900300012 
+ENDSUBENT           11          0                                 1173900399999 
+SUBENT        11739004   19860113                             13361173900400001 
+BIB                  5          6                                 1173900400002 
+REACTION   (90-TH-233(N,G)90-TH-234,,SIG,,MXW)                    1173900400003 
+METHOD     (ACTIV) activation                                     1173900400004 
+DECAY-DATA (90-TH-234,24.1D,DG)                                   1173900400005 
+ASSUMED    (ASSUM1,90-TH-232(N,G)90-TH-233,,SIG)                  1173900400006 
+           (ASSUM2,90-TH-232(N,G)90-TH-233,,RI)                   1173900400007 
+INC-SPECT  SUB-CD Spectrum.                                       1173900400008 
+ENDBIB               6          0                                 1173900400009 
+NOCOMMON             0          0                                 1173900400010 
+DATA                 5          1                                 1173900400011 
+EN-DUMMY   DATA       DATA-ERR   ASSUM1     ASSUM2                1173900400012 
+MEV        B          B          B          B                     1173900400013 
+   2.53E-08  1.450E+03   1.00E+02 10.0       66.7                 1173900400014 
+ENDDATA              3          0                                 1173900400015 
+ENDSUBENT           14          0                                 1173900499999 
+SUBENT        11739005   19860113                             13361173900500001 
+BIB                  4          5                                 1173900500002 
+REACTION   (90-TH-233(N,G)90-TH-234,,RI)                          1173900500003 
+METHOD     (ACTIV) activation                                     1173900500004 
+DECAY-DATA (90-TH-234,24.1D,DG)                                   1173900500005 
+ASSUMED    (ASSUM1,90-TH-232(N,G)90-TH-233,,SIG)                  1173900500006 
+           (ASSUM2,90-TH-232(N,G)90-TH-233,,RI)                   1173900500007 
+ENDBIB               5          0                                 1173900500008 
+NOCOMMON             0          0                                 1173900500009 
+DATA                 5          1                                 1173900500010 
+EN-MIN     DATA       DATA-ERR   ASSUM1     ASSUM2                1173900500011 
+MEV        B          B          B          B                     1173900500012 
+    5.0E-07   4.00E+02   1.00E+02 10.0       66.1                 1173900500013 
+ENDDATA              3          0                                 1173900500014 
+ENDSUBENT           13          0                                 1173900599999 
+ENDENTRY             5          0                                 1173999999999 

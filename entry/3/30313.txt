@@ -1,0 +1,86 @@
+ENTRY            30313   20090115                             31343031300000001 
+SUBENT        30313001   20090115                             31343031300100001 
+BIB                 10         16                                 3031300100002 
+INSTITUTE  (2GERDRE)                                              3031300100003 
+REFERENCE  (J,JNE,27,747,1973)                                    3031300100004 
+           (R,ZFK-277,197407) Original neutron emission data.     3031300100005 
+           (R,ZFK-262,41,197309) Neutron emission spectrum.       3031300100006 
+           (R,ZFK-271,184,197402) Evaluation of n-emission,       3031300100007 
+                                                     X-section    3031300100008 
+AUTHOR     (D.Hermsdorf,S.Sassonoff,D.Seeliger,K.Seidel)          3031300100009 
+TITLE      The Nb-93(n,2n)Nb-92 cross-section at 14 MeV extracted 3031300100010 
+           from experimental neutron emission spectrum.           3031300100011 
+FACILITY   (CCW) 150 KV-cascade accelerator with pulsed ion source3031300100012 
+INC-SOURCE (D-T)                                                  3031300100013 
+METHOD     (TOF) Time of flight.                                  3031300100014 
+DETECTOR   (SCIN) Liquid scintillator.                            3031300100015 
+PART-DET   (N) Neutrons.                                          3031300100016 
+HISTORY    (19751212C) KO.                                        3031300100017 
+           (20090115A) BIB section updated                        3031300100018 
+ENDBIB              16          0                                 3031300100019 
+NOCOMMON             0          0                                 3031300100020 
+ENDSUBENT           19          0                                 3031300199999 
+SUBENT        30313002   20090115                             31343031300200001 
+BIB                  5         17                                 3031300200002 
+REACTION   (41-NB-93(N,X)0-NN-1,EM,SIG)                           3031300200003 
+ANALYSIS   Integration over differential neutron emission cross-  3031300200004 
+           section (Exfor 30275.024),                             3031300200005 
+           and fitting with the sum of Weisskopf-Ewing formula    3031300200006 
+            (equilibrium emission) and exciton model              3031300200007 
+           formula(non-equilibrium emission),                     3031300200008 
+              K(1)*g(E,T) + K(2)*n(E) where K(1)=2.25*E-7/(MeV)**23031300200009 
+                                            K(2)=8.0 *E-4/(MeV)**23031300200010 
+            and E is for emitted neutron energy and T for nuclear 3031300200011 
+            temperature.                                          3031300200012 
+           Then extrapolation to E=0, and integration over the    3031300200013 
+           range E=0 to E0, yields emission cross-section.        3031300200014 
+MONITOR    Neutron source strength was absolutely determined by   3031300200015 
+           the associated particle method.                        3031300200016 
+STATUS     (DEP,30275024) Dependent data on Exfor 30275.024 and   3031300200017 
+           above-mentioned procedure.                             3031300200018 
+ERR-ANALYS (ERR-S) Statistical error.                             3031300200019 
+ENDBIB              17          0                                 3031300200020 
+NOCOMMON             0          0                                 3031300200021 
+DATA                 3          1                                 3031300200022 
+EN         DATA       ERR-S                                       3031300200023 
+MEV        MB         MB                                          3031300200024 
+ 1.4600E+01 3.1500E+03 3.0000E+02                                 3031300200025 
+ENDDATA              3          0                                 3031300200026 
+ENDSUBENT           25          0                                 3031300299999 
+SUBENT        30313003   20090115                             31343031300300001 
+BIB                  7         26                                 3031300300002 
+REACTION   (41-NB-93(N,2N)41-NB-92,,SIG)                          3031300300003 
+ANALYSIS   Total(n,2n) cross-section was deduced from             3031300300004 
+           sig(n-emission)=sig(non-elast)+sig(n2n)-sig(na)-sig(np)3031300300005 
+           data were taken from:                                  3031300300006 
+            * 2000 mb by Blow,J.Nucl.Energy,26(1972)9 and         3031300300007 
+            * neglecting the small contributions,10mb of sig(na)  3031300300008 
+            * 20mb of sig(np), both the approximate values from   3031300300009 
+           Cuzzocrea et al.,Nuov.Cim.4A(1971)251 and Qaim,Z.Naturf3031300300010 
+           25A(1970)1977.                                         3031300300011 
+           The value of the neutron emission cross-section is     3031300300012 
+           taken from one in subent.2.                            3031300300013 
+REL-REF    (R,,Blow+,J,JNE,26,9,1972)                             3031300300014 
+           (R,,Cuzzocrea+,J,NC/A,4,251,1971)                      3031300300015 
+           (R,,Qaim+,J,ZN/A,25,1977,1970)                         3031300300016 
+MONITOR    (41-NB-93(N,NON),,SIG)                                 3031300300017 
+            = 2000 mb by Blow,J.Nucl.Energy,26(1972)9             3031300300018 
+COMMENT    Other independent evaluation confirms the magnitude of 3031300300019 
+           the result.  Subtracting the primary emitted neutron   3031300300020 
+           with T=1.24+-0.05MeV. K(1)=3.0E-6/(MeV)**2 and         3031300300021 
+           K(2)=6.24E-4/(MeV)**2, from the experimental emission  3031300300022 
+           spectra, then the cross-section of secondary neutron   3031300300023 
+           emission was obtained as about 1280 +- 140 mb. This is 3031300300024 
+           in fair agreement with this result.                    3031300300025 
+STATUS     (DEP,30313002) Dependent data of subent.2 and          3031300300026 
+           above-mentioned values.                                3031300300027 
+ERR-ANALYS (DATA-ERR) No further information.                     3031300300028 
+ENDBIB              26          0                                 3031300300029 
+NOCOMMON             0          0                                 3031300300030 
+DATA                 3          1                                 3031300300031 
+EN         DATA       DATA-ERR                                    3031300300032 
+MEV        MB         MB                                          3031300300033 
+ 1.4600E+01 1.1500E+03 3.0000E+02                                 3031300300034 
+ENDDATA              3          0                                 3031300300035 
+ENDSUBENT           34          0                                 3031300399999 
+ENDENTRY             3          0                                 3031399999999 

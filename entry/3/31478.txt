@@ -1,0 +1,84 @@
+ENTRY            31478   20100923                             31463147800000001 
+SUBENT        31478001   20100923                             31463147800100001 
+BIB                 15         36                                 3147800100002 
+TITLE      Cross sections of the O-16(n,alpha gamma) reaction at  3147800100003 
+           14.7 MeV.                                              3147800100004 
+AUTHOR     (S.Hlavac,P.Oblozinsky,I.Turzo,L.Dostal,J.Kliman)      3147800100005 
+INSTITUTE  (3SLKSLO)                                              3147800100006 
+REFERENCE  (R,INDC(SLK)-002,199408)                               3147800100007 
+FACILITY   (CCW,3SLKSLO) Neutron generator of the institute of    3147800100008 
+           Physics of the Slovak Academy of Sciences, Bratislava. 3147800100009 
+INC-SOURCE (D-T) 150 keV d+ ions on T-Ti target.                  3147800100010 
+SAMPLE     147 g. of Chromium oxide in powder form, filled in     3147800100011 
+           a polyethylene flask with dimensions 46*60 mm.         3147800100012 
+METHOD     (GSPEC,ASSOP,COINC) Coincidence was required of the    3147800100013 
+           gamma rays with the associated alpha's from the (d,t)  3147800100014 
+           reaction.                                              3147800100015 
+DETECTOR   (HPGE,SCIN) The HPGe gamma detector was placed at an   3147800100016 
+           angle of 125 degree with respect to the neutron beam.  3147800100017 
+           With sensitive vol. of 244 cm3 and the FWHM energy     3147800100018 
+           resolution of 1.96 keV at the 1332 keV gamma-ray.      3147800100019 
+           Associated alpha particles were detected by a plastic  3147800100020 
+           scintillator detector with thickness of 100 mu-m and   3147800100021 
+           diam. of 4.0 mm.                                       3147800100022 
+MONITOR    ((24-CR-52(N,INL)24-CR-52,PAR,SIG,G)+                  3147800100023 
+           (24-CR-53(N,2N)24-CR-52,PAR,SIG,G,A)) The monitor      3147800100024 
+           cross section has been corrected for the Cr-53(n,2n)   3147800100025 
+           contribution to the 1434 keV transition.               3147800100026 
+MONIT-REF  (,A.Pavlik,B,PH-DAT,13,(6),,1991)                      3147800100027 
+CORRECTION Corrections have been made for gamma ray self absorp-  3147800100028 
+           tion and secondary neutrons.                           3147800100029 
+ERR-ANALYS (ERR-T) Uncertainty includes:                          3147800100030 
+           (ERR-1) uncertainty in the relative full peak          3147800100031 
+                   efficiency was estimated to be 5%.             3147800100032 
+           (ERR-2) The uncertainty in total correction            3147800100033 
+                     was estimated to be 3%.                      3147800100034 
+STATUS     (TABLE) Data are from Table 3 of INDC(SLK)-002.        3147800100035 
+HISTORY    (19970609C) HW                                         3147800100036 
+           (20100219A) SD:Updated to new date formats,            3147800100037 
+                          Cosmetic changes and corrections.       3147800100038 
+ENDBIB              36          0                                 3147800100039 
+COMMON               7          6                                 3147800100040 
+EN         EN-RSL     E-NRM      MONIT      MONIT-ERR  ERR-1      3147800100041 
+ERR-2                                                             3147800100042 
+MEV        MEV        KEV        MB         MB         PER-CENT   3147800100043 
+PER-CENT                                                          3147800100044 
+14.7       .400         1434.     695.       28.           5.     3147800100045 
+    3.                                                            3147800100046 
+ENDCOMMON            6          0                                 3147800100047 
+ENDSUBENT           46          0                                 3147800199999 
+SUBENT        31478002   20100923                             31463147800200001 
+BIB                  3          4                                 3147800200002 
+REACTION   (8-O-16(N,A)6-C-13,PAR,SIG,G)                          3147800200003 
+EN-SEC     (E,G)                                                  3147800200004 
+FLAG       (1.) Data corrected for feeding from the 3853.6 level, 3147800200005 
+           as determined from the peak shape.                     3147800200006 
+ENDBIB               4          0                                 3147800200007 
+NOCOMMON             0          0                                 3147800200008 
+DATA                 6          3                                 3147800200009 
+E          DATA       ERR-T      LVL-INI    LVL-FIN    FLAG       3147800200010 
+KEV        MB         MB         KEV        KEV        NO-DIM     3147800200011 
+3088.4     3.1        0.6        3088.4     0.00                  3147800200012 
+3684.4     53.5       5.0        3684.4     0.00       1.         3147800200013 
+3853.6     24.3       2.2        3853.6     0.00                  3147800200014 
+ENDDATA              5          0                                 3147800200015 
+ENDSUBENT           14          0                                 3147800299999 
+SUBENT        31478003   20100923                             31463147800300001 
+BIB                  4          8                                 3147800300002 
+REACTION   (8-O-16(N,A)6-C-13,,SIG,,,DERIV)                       3147800300003 
+STATUS     (DEP,31478002) Data is obtained by summing the partial 3147800300004 
+           cross sections of subent 31478002 and the one for      3147800300005 
+           the reaction to the g.s. (17.3 +- 3.4 mb, from         3147800300006 
+           M.Bormann, Z. Physik 258(1973), p. 285).               3147800300007 
+ASSUMED    (ASSUM,8-O-16(N,A)6-C-13-G,,SIG)                       3147800300008 
+REL-REF    (R,20475006,M.Bormann,J,ZP,258,285,1973) cross section 3147800300009 
+           for the reaction to the ground state                   3147800300010 
+ENDBIB               8          0                                 3147800300011 
+NOCOMMON             0          0                                 3147800300012 
+DATA                 4          1                                 3147800300013 
+DATA       ERR-T      ASSUM      ASSUM-ERR                        3147800300014 
+MB         MB         MB         MB                               3147800300015 
+80.9       5.4        17.3       3.4                              3147800300016 
+ENDDATA              3          0                                 3147800300017 
+ENDSUBENT           16          0                                 3147800399999 
+ENDENTRY             3          0                                 3147899999999 

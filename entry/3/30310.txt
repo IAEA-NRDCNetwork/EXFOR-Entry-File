@@ -1,0 +1,125 @@
+ENTRY            30310   20090115                             31343031000000001 
+SUBENT        30310001   20090115                             31343031000100001 
+BIB                 12         23                                 3031000100002 
+TITLE      Radiative capture cross-sections for 14.7 MeV neutrons 3031000100003 
+AUTHOR     (G.Peto,J.Csikai,V.Long,S.Mukherjee,J.Banhalmi,        3031000100004 
+           Z.Miligy)                                              3031000100005 
+INSTITUTE  (3HUNKOS)                                              3031000100006 
+REFERENCE  (J,ASL,25,185,1975)                                    3031000100007 
+           Published as the proceedings for Int.Symp. on Neutron  3031000100008 
+           Induced Reactions, Smolenice, 2-6 September 1974.      3031000100009 
+FACILITY   (CCW) 180 KV cascade generator at Kossuth Univ.        3031000100010 
+INC-SOURCE (D-T) 14.7 MeV neutrons.                               3031000100011 
+METHOD     (ACTIV) Activation method, modified to avoid the       3031000100012 
+           contribution of the scattered neutrons to the          3031000100013 
+           activation cross-section and for this purpose and      3031000100014 
+           to avoid the errors from flux-nonhomogeneity, inner    3031000100015 
+           monitor reactions were used.                           3031000100016 
+DETECTOR   (GELI) 40 cm3 Ge(Li) spectrometer.                     3031000100017 
+PART-DET   (DG) Decay gammas, 1293 keV for In-116m and 411.8 keV  3031000100018 
+           for Au-198.                                            3031000100019 
+COMMENT    Still higher than the prompt gamma results with a      3031000100020 
+           factor of 2 are obtained                               3031000100021 
+STATUS     (TABLE) From Table 1 of Acta Phys.Slov.25(1975)185.    3031000100022 
+HISTORY    (19751029C) KO.                                        3031000100023 
+           (19891110A) VOF.-Complete update                       3031000100024 
+           (20090115A) SD: BIB section updated                    3031000100025 
+ENDBIB              23          0                                 3031000100026 
+COMMON               3          3                                 3031000100027 
+EN         +EN-RSL    -EN-RSL                                     3031000100028 
+MEV        MEV        MEV                                         3031000100029 
+14.7       0.3        0.6                                         3031000100030 
+ENDCOMMON            3          0                                 3031000100031 
+ENDSUBENT           30          0                                 3031000199999 
+SUBENT        30310002   20090115                             31343031000200001 
+BIB                  9         20                                 3031000200002 
+REACTION   (49-IN-115(N,G)49-IN-116-M1,M+,SIG)                    3031000200003 
+DECAY-DATA (49-IN-116-M1,54.MIN,DG,1293.,0.846)                   3031000200004 
+MONITOR    ((MONIT1)49-IN-115(N,INL)49-IN-115-M,,SIG)             3031000200005 
+           ((MONIT2)13-AL-27(N,P)12-MG-27,,SIG)                   3031000200006 
+           ((MONIT3)13-AL-27(N,A)11-NA-24,,SIG)                   3031000200007 
+DECAY-MON  (49-IN-115-M,4.5HR,DG,336.,0.47)                       3031000200008 
+MONIT-REF  ((MONIT1),H.O.MELOVE+,J,PR,163,1308,1967)              3031000200009 
+           ((MONIT2),Z.T.BOEDY,R,INDC(HUN)-10,197301)=refer MONIT33031000200010 
+SAMPLE     Indium foils, 21 mg/cm2.                               3031000200011 
+CORRECTION Careful consideration for the contribution of scattered3031000200012 
+           neutrons.                                              3031000200013 
+ERR-ANALYS (ERR-T) Total error:                                   3031000200014 
+            * zero-thickness correction factor  1.0 +- 7%,        3031000200015 
+            * zero-copper-backing correction factor  0.77 +- 2%.  3031000200016 
+            * room-scattered neutron correction F.   0.87 +- 4%.  3031000200017 
+           (ERR-S) Statistical error                    +- 5%,    3031000200018 
+           (ERR-1) Error from gamma-spectrometry        +- 3%.    3031000200019 
+HISTORY    (19891110A) VOF.-Reaction corrected+stand.changed by   3031000200020 
+                      mon., decay-data and decay-mon  info. Added 3031000200021 
+                          MONIT-REF information coded             3031000200022 
+ENDBIB              20          0                                 3031000200023 
+COMMON               6          3                                 3031000200024 
+ERR-1      ERR-S      MONIT2     MONIT2-ERR MONIT3     MONIT3-ERR 3031000200025 
+PER-CENT   PER-CENT   MB         MB         MB         MB         3031000200026 
+  3.0        5.0        73.0       9.0        114.0      10.0     3031000200027 
+ENDCOMMON            3          0                                 3031000200028 
+DATA                 4          1                                 3031000200029 
+DATA       ERR-T      MONIT1     MONIT1-ERR                       3031000200030 
+MB         MB         MB         PER-CENT                         3031000200031 
+2.14       0.22       63.0       3.0                              3031000200032 
+ENDDATA              3          0                                 3031000200033 
+ENDSUBENT           32          0                                 3031000299999 
+SUBENT        30310003   20090115                             31343031000300001 
+BIB                  7         13                                 3031000300002 
+REACTION   (49-IN-115(N,G)49-IN-116,,SIG,,,DERIV)                 3031000300003 
+MONITOR    (49-IN-115(N,G)49-IN-116-M1+M2/G,,SIG/RAT)             3031000300004 
+           The value at 1 MeV was taken, assuming the             3031000300005 
+           isomeric ratio at 14.7 MeV was close to the value      3031000300006 
+           measured at 1 MeV.                                     3031000300007 
+MONIT-REF  (,,R,BNL-325,1966)                                     3031000300008 
+ERR-ANALYS No error given.                                        3031000300009 
+STATUS     (DEP,30310002) Obtained by the isomeric ratio and the  3031000300010 
+            metastable cross-section(subentry .002)               3031000300011 
+COMMENT    This estimated cross-section is 3 times higher than    3031000300012 
+           the prompt gamma result, Cvelbar et al.,Nucl.Phys.A158 3031000300013 
+            (1970)251.                                            3031000300014 
+HISTORY    (19891110A) VOF.-Reaction and monitor corrected        3031000300015 
+ENDBIB              13          0                                 3031000300016 
+NOCOMMON             0          0                                 3031000300017 
+DATA                 1          1                                 3031000300018 
+DATA                                                              3031000300019 
+MB                                                                3031000300020 
+2.8                                                               3031000300021 
+ENDDATA              3          0                                 3031000300022 
+ENDSUBENT           21          0                                 3031000399999 
+SUBENT        30310004   20090115                             31343031000400001 
+BIB                  9         20                                 3031000400002 
+REACTION   (79-AU-197(N,G)79-AU-198,,SIG)                         3031000400003 
+DECAY-DATA (79-AU-198,2.69D,DG,411.8,0.95)                        3031000400004 
+MONITOR    ((MONIT1)79-AU-197(N,2N)79-AU-196,,SIG)                3031000400005 
+           ((MONIT2)13-AL-27(N,P)12-MG-27,,SIG)                   3031000400006 
+           ((MONIT3)13-AL-27(N,A)11-NA-24,,SIG)                   3031000400007 
+DECAY-MON  (79-AU-196,6.17D,DG,426.,0.065)                        3031000400008 
+MONIT-REF  ((MONIT1),Z.T.BOEDY,R,INDC(HUN)-10,197301)The same     3031000400009 
+           refer. for MONIT2 and MONIT3                           3031000400010 
+SAMPLE     Au foils, 19.2 mg/cm2.                                 3031000400011 
+CORRECTION Careful consideration for the contribution of scattered3031000400012 
+           neutrons.                                              3031000400013 
+ERR-ANALYS (ERR-T) Total error, see 'correction'.                 3031000400014 
+            * zero-thickness correction factor  0.98 +- 2%,       3031000400015 
+            * zero-copper-backing correction F. 0.77 +- 4%,       3031000400016 
+            * room-scattered neutron correction F. 0.91 +- 2%     3031000400017 
+           (ERR-S)  Statistical error               +- 4%,        3031000400018 
+           (ERR-1) Error from gamma-spectrometry   +- 4%.         3031000400019 
+HISTORY    (19891110A) VOF.-Reaction corrected+stand.Changed by   3031000400020 
+                          mon. decay-data and decay-mon. Added    3031000400021 
+                          monit-ref coded                         3031000400022 
+ENDBIB              20          0                                 3031000400023 
+COMMON               6          3                                 3031000400024 
+ERR-1      ERR-S      MONIT2     MONIT2-ERR MONIT3     MONIT3-ERR 3031000400025 
+PER-CENT   PER-CENT   MB         MB         MB         MB         3031000400026 
+   4.0       4.0         73.0       9.0        114.0      10.0    3031000400027 
+ENDCOMMON            3          0                                 3031000400028 
+DATA                 4          1                                 3031000400029 
+DATA       ERR-T      MONIT1     MONIT1-ERR                       3031000400030 
+MB         MB         MB         PER-CENT                         3031000400031 
+2.0        0.18       2109.0     5.2                              3031000400032 
+ENDDATA              3          0                                 3031000400033 
+ENDSUBENT           32          0                                 3031000499999 
+ENDENTRY             4          0                                 3031099999999 

@@ -1,0 +1,139 @@
+ENTRY            22735   20051220                             21752273500000001 
+SUBENT        22735001   20051220                             21752273500100001 
+BIB                 15         31                                 2273500100002 
+TITLE      DECAY OF TUNGSTEN-189.                                 2273500100003 
+AUTHOR     (S.MIRZADEH,F.Y.LAMBRECHT,R.M.LAMBRECHT)               2273500100004 
+INSTITUTE  (1USAORL) Mirzadeh, Nuclear Science and Technology     2273500100005 
+                               Division                           2273500100006 
+           (2TUKTUK) F.Y.Lambrecht, Institute of Nuclear Science, 2273500100007 
+                       Ege University,Bornova 35100 Izmir,Turkey  2273500100008 
+           (3AULWUC) R.M.Lambrecht                                2273500100009 
+           (2BLGLVN) Experimental site - Cyclotron Research Center2273500100010 
+REFERENCE  (J,ARI,57,637,2002)                                    2273500100011 
+FACILITY   (CYCLO,2BLGLVN)                                        2273500100012 
+METHOD     (GSPEC) Irradiation time 3 min.                        2273500100013 
+DETECTOR   (GE-IN) Calibrated intrinsic Ge detector,              2273500100014 
+                   crystal active volume near 100 cm3.            2273500100015 
+            Resolution : 0.8 keV at 5.9 keV, 1.0 keV at 123 keV,  2273500100016 
+                         1.9 keV at 1332 keV.                     2273500100017 
+INC-SOURCE (D-BE) 50 MeV deutrons on thick water-cooled Be target 2273500100018 
+INC-SPECT  .Average energy 20 MeV                                 2273500100019 
+            Neutron flux (4.8+-0.3)*1.E+11 n/(sec*cm2)            2273500100020 
+SAMPLE      Isotopically enriched to 99.9% Os-192 metal target of 2273500100021 
+             35 mg weight.                                        2273500100022 
+            Monitor Al-27 foils of 8.0 mg weight, 99.9997% purity,2273500100023 
+            0.13 mm thickness.                                    2273500100024 
+            Os targets in small gelatin capsule together with Al  2273500100025 
+            flux monitor were mounted on the back of Be beam stop.2273500100026 
+MONITOR    ((MONIT)13-AL-27(N,A)11-NA-24,,SIG)  For neutron flux  2273500100027 
+                determination                                     2273500100028 
+MONIT-REF  (,S.KATCOFF+,J,NIM,129,473,1975)                       2273500100029 
+ERR-ANALYS (DATA-ERR)   Errors are not specified                  2273500100030 
+COMMENT    E-mail of corresponding author:                        2273500100031 
+                 mirzadehs@ornl.gov                               2273500100032 
+HISTORY    (20051220C)  M.M./S.M.                                 2273500100033 
+ENDBIB              31          0                                 2273500100034 
+COMMON               2          3                                 2273500100035 
+EN-APRX    MONIT                                                  2273500100036 
+MEV        MB                                                     2273500100037 
+  20.          40.                                                2273500100038 
+ENDCOMMON            3          0                                 2273500100039 
+ENDSUBENT           38          0                                 2273500199999 
+SUBENT        22735002   20051220                             21752273500200001 
+BIB                  6         14                                 2273500200002 
+REACTION   (76-OS-192(N,A)74-W-189,,SIG,,,DERIV)                  2273500200003 
+DECAY-DATA (74-W-189,8.9MIN,DG,260.4,1.00)                        2273500200004 
+           (74-W-189,9.4MIN,DG,421.7,0.764)                       2273500200005 
+ADD-RES    (DECAY)  Half-life of W-189 determined in this work    2273500200006 
+                    Average HL = 9.2+-0.3 min                     2273500200007 
+ASSUMED    (ASSUM,(76-OS-192(N,3N+P)75-RE-189,,SIG)/              2273500200008 
+           (76-OS-192(N,A)74-W-189,,SIG))                         2273500200009 
+COMMENT    These values were deduced through random-walk, applying2273500200010 
+           two additional boundary conditions:                    2273500200011 
+           max. c-s of Os-192(n,p3n)Re-189 reaction is 10.+-0.5 mb2273500200012 
+           min. c-s of Os-192(n,x)Re-189 reaction is 0.23+-0.01 mb2273500200013 
+STATUS      From Tables 1, 2 of main reference                    2273500200014 
+           (COREL,31499002) Mirzadeh et al., RCA,77,99,1997       2273500200015 
+           (COREL,22735003)                                       2273500200016 
+ENDBIB              14          0                                 2273500200017 
+COMMON               2          3                                 2273500200018 
+ASSUM      ASSUM-ERR                                              2273500200019 
+NO-DIM     NO-DIM                                                 2273500200020 
+20.        5.                                                     2273500200021 
+ENDCOMMON            3          0                                 2273500200022 
+DATA                 2          1                                 2273500200023 
+DATA       DATA-ERR                                               2273500200024 
+MB         MB                                                     2273500200025 
+0.49       0.20                                                   2273500200026 
+ENDDATA              3          0                                 2273500200027 
+ENDSUBENT           26          0                                 2273500299999 
+SUBENT        22735003   20051220                             21752273500300001 
+BIB                  6         13                                 2273500300002 
+REACTION   (76-OS-192(N,X)75-RE-189,DI,SIG,,,DERIV)               2273500300003 
+ASSUMED    (ASSUM,(76-OS-192(N,3N+P)75-RE-189,,SIG)/              2273500300004 
+           (76-OS-192(N,A)74-W-189,,SIG))                         2273500300005 
+DECAY-DATA (75-RE-189,24.3HR,DG,216.7,,                           2273500300006 
+                            DG,219.4,,DG,245.)                    2273500300007 
+REL-REF    (R,,S.KATCOFF+,J,NIM,129,473,1975)  Value for ASSUM    2273500300008 
+ANALYSIS   .These values were deduced through random-walk,        2273500300009 
+            applying additional boundary conditions:              2273500300010 
+            maximal c-s of Os-192(n,p3n)Re-189 reaction is        2273500300011 
+            10.+-2. mb, minimal c-s of Os-192(n,x)Re-189 reaction 2273500300012 
+            is 0.23+-0.01                                         2273500300013 
+STATUS     .From Tables 2 of main reference                       2273500300014 
+           (COREL,22735002)                                       2273500300015 
+ENDBIB              13          0                                 2273500300016 
+COMMON               2          3                                 2273500300017 
+ASSUM      ASSUM-ERR                                              2273500300018 
+NO-DIM     NO-DIM                                                 2273500300019 
+20.        5.                                                     2273500300020 
+ENDCOMMON            3          0                                 2273500300021 
+DATA                 2          1                                 2273500300022 
+DATA       DATA-ERR                                               2273500300023 
+MB         MB                                                     2273500300024 
+9.5        1.9                                                    2273500300025 
+ENDDATA              3          0                                 2273500300026 
+ENDSUBENT           25          0                                 2273500399999 
+SUBENT        22735004   20051220                             21752273500400001 
+BIB                  4         14                                 2273500400002 
+REACTION   ((76-OS-192(N,3N)76-OS-190-M,DI,SIG)+                  2273500400003 
+           (76-OS-192(N,X)76-OS-190-M,CUM,SIG)) Effective c-s     2273500400004 
+                                       of Os-190m production      2273500400005 
+ANALYSIS   .Effective cross section as sum of direct and          2273500400006 
+            cumulative cross section                              2273500400007 
+            76-OS-192(N,P+2N)75-RE-190(Beta-)76-OS-190-M          2273500400008 
+DECAY-DATA (76-OS-190-M,,DG,186.3,,                               2273500400009 
+                         DG,361.1,,                               2273500400010 
+                         DG,502.6,,                               2273500400011 
+                         DG,616.3)                                2273500400012 
+           (75-RE-189,24.3HR,DG,216.7,,                           2273500400013 
+                             DG,219.4,,                           2273500400014 
+                             DG,245.)                             2273500400015 
+STATUS      From Table 2, text of main reference                  2273500400016 
+ENDBIB              14          0                                 2273500400017 
+NOCOMMON             0          0                                 2273500400018 
+DATA                 2          1                                 2273500400019 
+DATA       DATA-ERR                                               2273500400020 
+MB         MB                                                     2273500400021 
+85.        5.                                                     2273500400022 
+ENDDATA              3          0                                 2273500400023 
+ENDSUBENT           22          0                                 2273500499999 
+SUBENT        22735005   20051220                             21752273500500001 
+BIB                  4          8                                 2273500500002 
+REACTION   (76-OS-192(N,3N+P)75-RE-189,DI,SIG)                    2273500500003 
+DECAY-DATA (75-RE-189,24.3HR,DG,216.7,,                           2273500500004 
+                      DG,219.4,,                                  2273500500005 
+                      DG,245.)                                    2273500500006 
+STATUS      From text of main reference                           2273500500007 
+ANALYSIS   .Data obtained from activity of Re-189 equal to        2273500500008 
+            (7.27+-0.73)*100 dps which was calculated directly    2273500500009 
+            from intensities and abudances of gamma-rays          2273500500010 
+ENDBIB               8          0                                 2273500500011 
+NOCOMMON             0          0                                 2273500500012 
+DATA                 2          1                                 2273500500013 
+DATA       DATA-ERR                                               2273500500014 
+MB         MB                                                     2273500500015 
+10.        2.                                                     2273500500016 
+ENDDATA              3          0                                 2273500500017 
+ENDSUBENT           16          0                                 2273500599999 
+ENDENTRY             5          0                                 2273599999999 

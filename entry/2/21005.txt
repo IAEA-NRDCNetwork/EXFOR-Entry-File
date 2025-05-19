@@ -1,0 +1,134 @@
+ENTRY            21005   20120812                             22322100500000001 
+SUBENT        21005001   20120812                             22322100500100001 
+BIB                 16         65                                 2100500100002 
+INSTITUTE  (2GERKFK) Institut fuer Angewandte Kernphysik.         2100500100003 
+REFERENCE  (J,NP/A,141,602,1970) Data.                            2100500100004 
+           (R,KFK-1165,1970) Identical with Nucl.Phys. A141.      2100500100005 
+AUTHOR     (D.Kompe,A.Ernst,F.H.Froehner)                         2100500100006 
+TITLE       Neutron capture cross sections of cerium and          2100500100007 
+            thallium in the keV region                            2100500100008 
+FACILITY   (VDG,2GERKFK) 3MV, 10 ns pulse width.                  2100500100009 
+INC-SPECT  .Data calculated for Maxwellian flux with various      2100500100010 
+            temperatures.                                         2100500100011 
+SAMPLE     .Metallic discs of 8.6cm diam., containing 163g of     2100500100012 
+            natural Ce with a purity of 99.9% and 128g of         2100500100013 
+            natural Tl with a purity of 99.999% resp..            2100500100014 
+           .The thickness was -                                   2100500100015 
+            1.207*10-2 nuclei/b for Ce,                           2100500100016 
+            0.650*10-2 nuclei/b for Tl.                           2100500100017 
+METHOD     (TOF) 1.5m flight path.                                2100500100018 
+DETECTOR   (STANK) 800 litr. liquid scintillator tank, surrounding2100500100019 
+            the sample in 4Pi.                                    2100500100020 
+ANALYSIS   .From the cross sections the Maxwellian averages were  2100500100021 
+            determined, using statistical theory.                 2100500100022 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         2100500100023 
+           Reference cross section is the (n,gamma) cross section 2100500100024 
+           of gold as measured by Kompe (Nucl.Phys.133,513 and    2100500100025 
+           J.Nucl.Energy 22,505) against 10B(n,alpha+gamma) and   2100500100026 
+           6Li(n,alpha), normalized to the absolute cross section 2100500100027 
+           596. +- 30. mb recommended by Poenitz (Nucl.Instr.,    2100500100028 
+           58,39). See MONIT-REF                                  2100500100029 
+MONIT-REF  (20358035,D.Kompe,J,NP/A,133,513,1969)                 2100500100030 
+           (21848002,W.P.Poenitz+,J,JNE,22,505,1968)              2100500100031 
+           (,W.P.Poenitz+,J,NIM,58,39,1968)                       2100500100032 
+CORRECTION .For -                                                 2100500100033 
+            selfshielding,                                        2100500100034 
+            multiple scattering.                                  2100500100035 
+ERR-ANALYS (ERR-T) Total error.                                   2100500100036 
+            The following systematic errors are considered        2100500100037 
+           (ERR-1,8.,13.) error in the monitor cross section      2100500100038 
+                                                          8-13%.  2100500100039 
+           (ERR-2) Uncertainty in probability for interaction     2100500100040 
+            of at least one photon in the scintillator, 3%        2100500100041 
+           (ERR-3) uncertainty in probability that a detector     2100500100042 
+            signal from a capture event exceeds the discriminator 2100500100043 
+            threshold, 6%                                         2100500100044 
+           (ERR-4) finite sample effects                          2100500100045 
+           (ERR-5,,5.) extrapolation uncertainties for the        2100500100046 
+            Maxwellian averages, 33.3% of the contribution from   2100500100047 
+            this extrapolation, which is smaller than 5%, except  2100500100048 
+            at the lowest energies.                               2100500100049 
+           (ERR-S) Statistical uncertainty is listed for three    2100500100050 
+                   representative energies                        2100500100051 
+STATUS     (TABLE) .Data taken from KFK-report. same data in      2100500100052 
+                    Nucl.Phys. A141,602                           2100500100053 
+HISTORY    (19790716C) WWO.                                       2100500100054 
+           (19790827E)                                            2100500100055 
+           (19800103A) INC-SPECT changed to SPA.                  2100500100056 
+           (19800115E)                                            2100500100057 
+           (19801118A) G.C., Error analysis changed, MONITOR      2100500100058 
+            reaction string corrected                             2100500100059 
+           (19801218E)                                            2100500100060 
+           (20120812A) SD: Updated to new date formats,lower case.2100500100061 
+            Corrected according last EXFOR rules and Dict.        2100500100062 
+            ERR-1, ERR-2 were deleted from COMMON, range of       2100500100063 
+            errors were added to ERR-ANALYS. ERR-S was added.     2100500100064 
+            MONIT was added to COMMON. SF8=SPA was changed to     2100500100065 
+            MXW in REACTION code in Subents 2,3.                  2100500100066 
+            EN-DUMMY changed to kT in DATA section in Subents 2,3.2100500100067 
+ENDBIB              65          0                                 2100500100068 
+COMMON               6          3                                 2100500100069 
+EN-NRM     MONIT      MONIT-ERR  ERR-2      ERR-3      ERR-4      2100500100070 
+KEV        MB         MB         PER-CENT   PER-CENT   PER-CENT   2100500100071 
+ 30.        596.         30.        3.         6.         3.      2100500100072 
+ENDCOMMON            3          0                                 2100500100073 
+ENDSUBENT           72          0                                 2100500199999 
+SUBENT        21005002   20120812                             22322100500200001 
+BIB                  2          6                                 2100500200002 
+REACTION   (58-CE-0(N,G),,SIG,,MXW,DERIV)                         2100500200003 
+HISTORY    (19801118A) G.C., Error analysis transferred to main   2100500200004 
+            section, data headings changed                        2100500200005 
+           (19801218E)                                            2100500200006 
+           (20120812A) SD: SF8=SPA was changed to MXW in RACTION  2100500200007 
+            code. Col. ERR-S was added to DATA; EN-DUMMY -> kT.   2100500200008 
+ENDBIB               6          0                                 2100500200009 
+NOCOMMON             0          0                                 2100500200010 
+DATA                 4         14                                 2100500200011 
+KT         DATA       ERR-T      ERR-S                            2100500200012 
+KEV        MB         MB         PER-CENT                         2100500200013 
+ 1.0000E+01 4.1000E+01 1.0000E+01                                 2100500200014 
+ 1.5000E+01 3.1000E+01 6.0000E+00                                 2100500200015 
+ 2.0000E+01 2.6000E+01 5.0000E+00  11.                            2100500200016 
+ 2.5000E+01 2.2000E+01 3.0000E+00                                 2100500200017 
+ 3.0000E+01 1.9900E+01 3.2000E+00                                 2100500200018 
+ 3.5000E+01 1.8100E+01 3.0000E+00                                 2100500200019 
+ 4.0000E+01 1.6600E+01 2.5000E+00                                 2100500200020 
+ 4.5000E+01 1.5500E+01 2.0000E+00                                 2100500200021 
+ 5.0000E+01 1.4500E+01 1.6000E+00   7.                            2100500200022 
+ 6.0000E+01 1.3100E+01 1.5000E+00                                 2100500200023 
+ 7.0000E+01 1.1900E+01 1.4000E+00                                 2100500200024 
+ 8.0000E+01 1.1000E+01 1.3000E+00                                 2100500200025 
+ 9.0000E+01 1.0200E+01 1.2000E+00                                 2100500200026 
+ 1.0000E+02 9.6000E+00 1.2000E+00   5.                            2100500200027 
+ENDDATA             16          0                                 2100500200028 
+ENDSUBENT           27          0                                 2100500299999 
+SUBENT        21005003   20120812                             22322100500300001 
+BIB                  2          6                                 2100500300002 
+REACTION   (81-TL-0(N,G),,SIG,,MXW,DERIV)                         2100500300003 
+HISTORY    (19801118A) G.C., Error analysis transferred to main   2100500300004 
+            section, data headings changed                        2100500300005 
+           (19801218E)                                            2100500300006 
+           (20120812A) SD: SF8=SPA was changed to MXW in RACTION  2100500300007 
+            code. Col. ERR-S was added to DATA; EN-DUMMY -> kT.   2100500300008 
+ENDBIB               6          0                                 2100500300009 
+NOCOMMON             0          0                                 2100500300010 
+DATA                 4         14                                 2100500300011 
+KT         DATA       ERR-T      ERR-S                            2100500300012 
+KEV        MB         MB         PER-CENT                         2100500300013 
+ 1.0000E+01 1.8500E+02 4.0000E+01                                 2100500300014 
+ 1.5000E+01 1.3500E+02 3.0000E+01                                 2100500300015 
+ 2.0000E+01 1.1100E+02 2.0000E+01  8.                             2100500300016 
+ 2.5000E+01 9.4000E+01 1.1000E+01                                 2100500300017 
+ 3.0000E+01 8.3000E+01 9.0000E+00                                 2100500300018 
+ 3.5000E+01 7.4000E+01 8.0000E+00                                 2100500300019 
+ 4.0000E+01 6.8000E+01 7.0000E+00                                 2100500300020 
+ 4.5000E+01 6.3000E+01 6.0000E+00                                 2100500300021 
+ 5.0000E+01 5.9000E+01 6.0000E+00  5.                             2100500300022 
+ 6.0000E+01 5.3000E+01 5.0000E+00                                 2100500300023 
+ 7.0000E+01 4.8000E+01 5.0000E+00                                 2100500300024 
+ 8.0000E+01 4.4000E+01 4.0000E+00                                 2100500300025 
+ 9.0000E+01 4.1000E+01 4.0000E+00                                 2100500300026 
+ 1.0000E+02 3.8000E+01 4.0000E+00  4.                             2100500300027 
+ENDDATA             16          0                                 2100500300028 
+ENDSUBENT           27          0                                 2100500399999 
+ENDENTRY             3          0                                 2100599999999 

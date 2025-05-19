@@ -1,0 +1,66 @@
+ENTRY            12374   20120521                             13811237400000001 
+SUBENT        12374001   20120521                             13811237400100001 
+BIB                 11         19                                 1237400100002 
+INSTITUTE  (1USAORL)                                              1237400100003 
+REFERENCE  (J,NSE,21,257,1965)                                    1237400100004 
+AUTHOR     (J.Halperin,C.R.Baldock,J.H.Oliver)                    1237400100005 
+TITLE      The thermal capture cross section and resonance        1237400100006 
+            integral of uranium-232.                              1237400100007 
+FACILITY   (REAC,1USAORL) Hydraulic tube of ORR.                  1237400100008 
+INC-SOURCE (REAC) Reactor spectrum.                               1237400100009 
+           Thermal flux of ~ 10**14 n/cm2/sec                     1237400100010 
+SAMPLE     Cadmium-filtered and unfiltered Submicrogram samples   1237400100011 
+           of U232 (produced from irradiated Pa231) containing    1237400100012 
+           about 0.75% U233                                       1237400100013 
+METHOD     (MASSP) Irradiated samples assayed using 2-stage mass  1237400100014 
+            spectrometer.                                         1237400100015 
+DECAY-DATA (92-U-232,71.7YR)                                      1237400100016 
+STATUS     (SCSRS)                                                1237400100017 
+HISTORY    (19760804T) translated from scisrs                     1237400100018 
+           (19820519A) converted to reaction formalism            1237400100019 
+           (20090425A) BIB section updated                        1237400100020 
+           (20120521A) SD: Energy units in Subent 2 corrected.    1237400100021 
+ENDBIB              19          0                                 1237400100022 
+NOCOMMON             0          0                                 1237400100023 
+ENDSUBENT           22          0                                 1237400199999 
+SUBENT        12374002   20120521                             13811237400200001 
+BIB                  3          3                                 1237400200002 
+REACTION   (92-U-232(N,G)92-U-233,,SIG,,SPA)                      1237400200003 
+MONITOR    (27-CO-59(N,G)27-CO-60,,SIG)                           1237400200004 
+HISTORY    (20120521A) SD: Energy units corrected (MeV -> eV).    1237400200005 
+ENDBIB               3          0                                 1237400200006 
+NOCOMMON             0          0                                 1237400200007 
+DATA                 4          1                                 1237400200008 
+EN-DUMMY   DATA       DATA-ERR   MONIT                            1237400200009 
+EV         B          B          B                                1237400200010 
+ 0.0253    106.         4.        37.                             1237400200011 
+ENDDATA              3          0                                 1237400200012 
+ENDSUBENT           11          0                                 1237400299999 
+SUBENT        12374003   20090425                             13521237400300001 
+BIB                  4          5                                 1237400300002 
+REACTION   (92-U-232(N,G)92-U-233,,SIG,,MXW)                      1237400300003 
+MONITOR    (27-CO-59(N,G)27-CO-60,,SIG)                           1237400300004 
+ANALYSIS   Computed from reactor spectrum average cross section   1237400300005 
+            assuming 1/V.                                         1237400300006 
+STATUS     (DEP,12374002)                                         1237400300007 
+ENDBIB               5          0                                 1237400300008 
+NOCOMMON             0          0                                 1237400300009 
+DATA                 4          1                                 1237400300010 
+EN-DUMMY   DATA       DATA-ERR   MONIT                            1237400300011 
+EV         B          B          B                                1237400300012 
+ 0.0253     78.         4.        37.                             1237400300013 
+ENDDATA              3          0                                 1237400300014 
+ENDSUBENT           13          0                                 1237400399999 
+SUBENT        12374004   20090425                             13521237400400001 
+BIB                  2          2                                 1237400400002 
+REACTION   (92-U-232(N,G)92-U-233,,RI)                            1237400400003 
+MONITOR    (27-CO-59(N,G)27-CO-60,,RI)                            1237400400004 
+ENDBIB               2          0                                 1237400400005 
+NOCOMMON             0          0                                 1237400400006 
+DATA                 4          1                                 1237400400007 
+EN-MIN     DATA       DATA-ERR   MONIT                            1237400400008 
+EV         B          B          B                                1237400400009 
+ 0.5       280.        15.        75.                             1237400400010 
+ENDDATA              3          0                                 1237400400011 
+ENDSUBENT           10          0                                 1237400499999 
+ENDENTRY             4          0                                 1237499999999 

@@ -1,0 +1,171 @@
+ENTRY            G0028   20110610                             G023G002800000001 
+SUBENT        G0028001   20110610                             G023G002800100001 
+BIB                 11         21                                 G002800100002 
+TITLE      Observation of orbital magnetic dipole strength in the G002800100003 
+            actinide nuclei 232Th and 238U                        G002800100004 
+AUTHOR     (R.D.Heil, H.H.Pitz, U.E.P.Berg, U.Kneissl, K.D.Hummel,G002800100005 
+            G.Kilgus, D.Bohle, A.Richter, C.Wesselborg,           G002800100006 
+            P.von Brentano)                                       G002800100007 
+INSTITUTE  (2GERJLU,2GERTHD,2GERKLN)                              G002800100008 
+REFERENCE  (J,NP/A,476,39,1988)                                   G002800100009 
+FACILITY   (DYNAM,2GERIFS) 4 MeV Dynamitron accelerator           G002800100010 
+INC-SOURCE (BRST) End point energy varied from 2.9 to 4.1 MeV     G002800100011 
+INC-SPECT  Calibrated by 27Al peak (2.212 MeV)                    G002800100012 
+DETECTOR   (GE) 90, 127, 150 deg, resolution of 2 keV at 1.332 MeVG002800100013 
+COMMENT    Only elastic scattering peak and 49 (45) keV lower     G002800100014 
+            peak were observed in case of 232Th(238U) due to      G002800100015 
+            strong background of nonresonance scattered photons   G002800100016 
+            at lower energies.                                    G002800100017 
+           The latter peak stem from the decay of the excited 1+  G002800100018 
+            states to the first excited J=2+ state.               G002800100019 
+           EN-RES-MAX: It is between 2.9 to 4.1 MeV, but not      G002800100020 
+            given in the article.                                 G002800100021 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainty     G002800100022 
+HISTORY    (20110223C) On                                         G002800100023 
+ENDBIB              21          0                                 G002800100024 
+NOCOMMON             0          0                                 G002800100025 
+ENDSUBENT           24          0                                 G002800199999 
+SUBENT        G0028002   20110223                             G023G002800200001 
+BIB                  3          6                                 G002800200002 
+REACTION   ((90-TH-232(G,SCT)90-TH-232,PAR,DA,,RES/BRA)//         G002800200003 
+           (90-TH-232(G,SCT)90-TH-232,PAR,DA,,RES/BRA))           G002800200004 
+            Transition to the ground state (LVL-FIN=0 MeV)        G002800200005 
+ADD-RES    (STRUC) Observed anisotropy proposes J=1 level for     G002800200006 
+            all initial states (See 004)                          G002800200007 
+STATUS     (CURVE) Fig.2 of Nucl.Phys.A476(1988)39                G002800200008 
+ENDBIB               6          0                                 G002800200009 
+COMMON               4          3                                 G002800200010 
+EN-RES-MAX ANG-NM     ANG-DN     LVL-FIN                          G002800200011 
+MEV        ADEG       ADEG       MEV                              G002800200012 
+ 4.1        90.        127.       0.                              G002800200013 
+ENDCOMMON            3          0                                 G002800200014 
+DATA                 3          4                                 G002800200015 
+E          DATA       DATA-ERR                                    G002800200016 
+MEV        NO-DIM     NO-DIM                                      G002800200017 
+ 2.043      0.83       0.05                                       G002800200018 
+ 2.248      0.62       0.21                                       G002800200019 
+ 2.274      0.78       0.23                                       G002800200020 
+ 2.296      0.63       0.19                                       G002800200021 
+ENDDATA              6          0                                 G002800200022 
+ENDSUBENT           21          0                                 G002800299999 
+SUBENT        G0028003   20110223                             G023G002800300001 
+BIB                  2          4                                 G002800300002 
+REACTION   (90-TH-232(G,SCT),PAR,WID/STR,,BRA/FCT)                G002800300003 
+            Resonance strength to ground state divided by g       G002800300004 
+STATUS     (TABLE) Table 2 of Nucl.Phys.A476(1988)39              G002800300005 
+           (DEP,G0028004) Spin of the initial level               G002800300006 
+ENDBIB               4          0                                 G002800300007 
+COMMON               2          3                                 G002800300008 
+EN-RES-MAX LVL-FIN                                                G002800300009 
+MEV        MEV                                                    G002800300010 
+ 4.1        0.                                                    G002800300011 
+ENDCOMMON            3          0                                 G002800300012 
+DATA                 3          4                                 G002800300013 
+E          DATA       DATA-ERR                                    G002800300014 
+MEV        MILLI-EV   MILLI-EV                                    G002800300015 
+ 2.043      30.5       1.7                                        G002800300016 
+ 2.248      16.3       2.0                                        G002800300017 
+ 2.274       6.2       0.7                                        G002800300018 
+ 2.296       8.3       0.8                                        G002800300019 
+ENDDATA              6          0                                 G002800300020 
+ENDSUBENT           19          0                                 G002800399999 
+SUBENT        G0028004   20110610                             G023G002800400001 
+BIB                  3          8                                 G002800400002 
+REACTION  1(90-TH-232(G,0),,J)                                    G002800400003 
+          2((90-TH-232(G,INL),PAR,WID)/(90-TH-232(G,EL),,WID))    G002800400004 
+          3(90-TH-232(G,EL),,WID)                                 G002800400005 
+ANALYSIS   No transition followed by observed transition assumed  G002800400006 
+           (AREA) Gamma(tot)=Gamma(->g.s.)+Gamma(->1st 2+) assumedG002800400007 
+STATUS     (DEP,G0028002) Angular anisotropy                      G002800400008 
+           (DEP,G0028003) Resonance strength divided by g         G002800400009 
+           (TABLE) Table 2 of Nucl.Phys.A476(1988)39              G002800400010 
+ENDBIB               8          0                                 G002800400011 
+COMMON               1          3                                 G002800400012 
+E-LVL     2                                                       G002800400013 
+KEV                                                               G002800400014 
+ 49.                                                              G002800400015 
+ENDCOMMON            3          0                                 G002800400016 
+DATA                 6          4                                 G002800400017 
+EN-RES     DATA      1DATA      2DATA-ERR  2DATA      3DATA-ERR  3G002800400018 
+MEV        NO-DIM     NO-DIM     NO-DIM     MILLI-EV   MILLI-EV   G002800400019 
+ 2.043      1.         0.53       0.02       48.6       2.7       G002800400020 
+ 2.248      1.         0.42       0.07       24.5       3.1       G002800400021 
+ 2.274      1.         0.62       0.13       10.3       1.4       G002800400022 
+ 2.296      1.         0.69       0.29       14.4       2.8       G002800400023 
+ENDDATA              6          0                                 G002800400024 
+ENDSUBENT           23          0                                 G002800499999 
+SUBENT        G0028005   20110223                             G023G002800500001 
+BIB                  3          6                                 G002800500002 
+REACTION   ((92-U-238(G,SCT)92-U-238,PAR,DA,,RES/BRA)//           G002800500003 
+           (92-U-238(G,SCT)92-U-238,PAR,DA,,RES/BRA))             G002800500004 
+            Transition to the ground state (LVL-FIN=0 MeV)        G002800500005 
+ADD-RES    (STRUC) Observed anisotropy proposes J=1 level for     G002800500006 
+            all initial states (See 007)                          G002800500007 
+STATUS     (CURVE) Fig.2 of Nucl.Phys.A476(1988)39                G002800500008 
+ENDBIB               6          0                                 G002800500009 
+COMMON               4          3                                 G002800500010 
+EN-RES-MAX ANG-NM     ANG-DN     LVL-FIN                          G002800500011 
+MEV        ADEG       ADEG       MEV                              G002800500012 
+ 4.1        90.        127.       0.                              G002800500013 
+ENDCOMMON            3          0                                 G002800500014 
+DATA                 3          6                                 G002800500015 
+E          DATA       DATA-ERR                                    G002800500016 
+MEV        NO-DIM     NO-DIM                                      G002800500017 
+ 2.176      0.68       0.05                                       G002800500018 
+ 2.209      0.71       0.06                                       G002800500019 
+ 2.245      0.63       0.08                                       G002800500020 
+ 2.295      0.91       0.21                                       G002800500021 
+ 2.410      0.72       0.11                                       G002800500022 
+ 2.468      0.74       0.11                                       G002800500023 
+ENDDATA              8          0                                 G002800500024 
+ENDSUBENT           23          0                                 G002800599999 
+SUBENT        G0028006   20110223                             G023G002800600001 
+BIB                  2          3                                 G002800600002 
+REACTION   (92-U-238(G,SCT),PAR,WID/STR,,BRA/FCT)                 G002800600003 
+            Resonance strength to ground state divided by g       G002800600004 
+STATUS     (TABLE) Table 3 of Nucl.Phys.A476(1988)39              G002800600005 
+ENDBIB               3          0                                 G002800600006 
+COMMON               2          3                                 G002800600007 
+EN-RES-MAX LVL-FIN                                                G002800600008 
+MEV        MEV                                                    G002800600009 
+ 4.1        0.                                                    G002800600010 
+ENDCOMMON            3          0                                 G002800600011 
+DATA                 3          6                                 G002800600012 
+E          DATA       DATA-ERR                                    G002800600013 
+MEV        MILLI-EV   MILLI-EV                                    G002800600014 
+ 2.176      23.7       1.4                                        G002800600015 
+ 2.209      22.6       1.4                                        G002800600016 
+ 2.245      13.4       0.9                                        G002800600017 
+ 2.295       5.3       0.5                                        G002800600018 
+ 2.410      11.0       0.7                                        G002800600019 
+ 2.468      13.4       1.0                                        G002800600020 
+ENDDATA              8          0                                 G002800600021 
+ENDSUBENT           20          0                                 G002800699999 
+SUBENT        G0028007   20110223                             G023G002800700001 
+BIB                  3          8                                 G002800700002 
+REACTION  1(92-U-238(G,0),,J)                                     G002800700003 
+          2((92-U-238(G,INL),PAR,WID)/(92-U-238(G,EL),,WID))      G002800700004 
+          3(92-U-238(G,EL),,WID)                                  G002800700005 
+ANALYSIS   No transition followed by observed transition assumed  G002800700006 
+           (AREA) Gamma(tot)=Gamma(->g.s.)+Gamma(->1st 2+) assumedG002800700007 
+STATUS     (DEP,G0028005) Angular anisotropy                      G002800700008 
+           (DEP,G0028006) Resonance strength divided by g         G002800700009 
+           (TABLE) Table 3 of Nucl.Phys.A476(1988)39              G002800700010 
+ENDBIB               8          0                                 G002800700011 
+COMMON               1          3                                 G002800700012 
+E-LVL     2                                                       G002800700013 
+KEV                                                               G002800700014 
+ 45.                                                              G002800700015 
+ENDCOMMON            3          0                                 G002800700016 
+DATA                 6          6                                 G002800700017 
+EN-RES     DATA      1DATA      2DATA-ERR  2DATA      3DATA-ERR  3G002800700018 
+MEV        NO-DIM     NO-DIM     NO-DIM     MILLI-EV   MILLI-EV   G002800700019 
+ 2.176      1.         0.52       0.02       37.1      2.1        G002800700020 
+ 2.209      1.         0.55       0.03       37.2      2.1        G002800700021 
+ 2.245      1.         0.47       0.03       21.2      1.3        G002800700022 
+ 2.295      1.         0.59       0.10        8.8      1.0        G002800700023 
+ 2.410      1.         0.54       0.05       17.6      1.2        G002800700024 
+ 2.468      1.         0.50       0.05       21.1      1.4        G002800700025 
+ENDDATA              8          0                                 G002800700026 
+ENDSUBENT           25          0                                 G002800799999 
+ENDENTRY             7          0                                 G002899999999 

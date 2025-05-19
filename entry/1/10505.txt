@@ -1,0 +1,61 @@
+ENTRY            10505   20040427                             00001050500000001 
+SUBENT        10505001   20040427                             00001050500100001 
+BIB                 11         15                                 1050500100002 
+INSTITUTE  (1USAAUB)                                              1050500100003 
+REFERENCE  (J,BAP,19,1123(FB4),197411)                            1050500100004 
+AUTHOR     (W.L.Alford,T.H.Kao)                                   1050500100005 
+TITLE      Partial Neutron Cross Sections for 96Ru at 15.1 MeV    1050500100006 
+FACILITY   (DYNAM,1USAAUB) Auburn University Dynamitron           1050500100007 
+INC-SOURCE (D-T) Deuterons on tritium                             1050500100008 
+METHOD     (ACTIV) Activation of irradiated samples               1050500100009 
+DETECTOR   (GELI) Germanium-lithium detector                      1050500100010 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties.  1050500100011 
+STATUS     (APRVD) Approved by author                             1050500100012 
+            Data received in private comm., Alford, 1975/5.       1050500100013 
+HISTORY    (19750506C)                                            1050500100014 
+           (19830623A) Converted to REACTION formalism            1050500100015 
+           (19860909A) BIB update, subent 4 deleted.              1050500100016 
+           (20040427A) Updated to new date formats, lower case.   1050500100017 
+ENDBIB              15          0                                 1050500100018 
+COMMON               1          3                                 1050500100019 
+EN                                                                1050500100020 
+MEV                                                               1050500100021 
+ 15.1                                                             1050500100022 
+ENDCOMMON            3          0                                 1050500100023 
+ENDSUBENT           22          0                                 1050500199999 
+SUBENT        10505002   20040427                             00001050500200001 
+BIB                  4          4                                 1050500200002 
+REACTION   (44-RU-96(N,2N)44-RU-95,,SIG)                          1050500200003 
+MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           1050500200004 
+MONIT-REF  (20378003,PAULSON+,J,JNE,19,907,1965)                  1050500200005 
+DECAY-DATA (44-RU-95,,DG,340.,0.70)                               1050500200006 
+ENDBIB               4          0                                 1050500200007 
+NOCOMMON             0          0                                 1050500200008 
+DATA                 4          1                                 1050500200009 
+DATA       DATA-ERR   MONIT      MONIT-ERR                        1050500200010 
+MB         MB         MB         MB                               1050500200011 
+666.       45.        114.       7.                               1050500200012 
+ENDDATA              3          0                                 1050500200013 
+ENDSUBENT           12          0                                 1050500299999 
+SUBENT        10505003   20040427                             00001050500300001 
+BIB                  5         10                                 1050500300002 
+REACTION  1((44-RU-96(N,2N)44-RU-95,,SIG)/                        1050500300003 
+           (44-RU-96(N,X)43-TC-95-G,,SIG))                        1050500300004 
+          2(44-RU-96(N,X)43-TC-95-G,,SIG)                         1050500300005 
+ANALYSIS   Calculated by measuring 96Ru(n,2n) + 96Ru(n,d) +       1050500300006 
+            96Ru(n,np) and subtracting measured value for         1050500300007 
+            96Ru(n,2n).                                           1050500300008 
+DECAY-DATA (43-TC-95-G,20.0HR)                                    1050500300009 
+ASSUMED    (ASSUM,44-RU-96(N,2N)44-RU-95,,SIG) Measured in same   1050500300010 
+            experiment.                                           1050500300011 
+HISTORY    (20040427A) REACTION updated.                          1050500300012 
+ENDBIB              10          0                                 1050500300013 
+NOCOMMON             0          0                                 1050500300014 
+DATA                 6          1                                 1050500300015 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2ASSUM     2ASSUM-ERR 21050500300016 
+NO-DIM     NO-DIM     MB         MB         MB         MB         1050500300017 
+ 2.20       0.45      303.       65.        666.       45.        1050500300018 
+ENDDATA              3          0                                 1050500300019 
+ENDSUBENT           18          0                                 1050500399999 
+NOSUBENT      10505004   19860909                             00001050500400001 
+ENDENTRY             4          0                                 1050599999999 

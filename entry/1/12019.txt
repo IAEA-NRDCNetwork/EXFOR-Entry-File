@@ -1,0 +1,45 @@
+ENTRY            12019   20061109                             13421201900000001 
+SUBENT        12019001   20061109                             13421201900100001 
+BIB                  7          9                                 1201900100002 
+INSTITUTE  (1USAORL)                                              1201900100003 
+REFERENCE  (J,JIN,25,1079,1963)                                   1201900100004 
+AUTHOR     (W.S.Lyon)                                             1201900100005 
+TITLE      Decay of Ba131-Cs131.                                  1201900100006 
+METHOD     (ACTIV) Activation                                     1201900100007 
+STATUS     (SCSRS)                                                1201900100008 
+HISTORY    (19760802T) Translated from SCISRS                     1201900100009 
+           (19830802A) Converted to reaction formalism            1201900100010 
+           (20061109A) DR Format updated                          1201900100011 
+ENDBIB               9          0                                 1201900100012 
+NOCOMMON             0          0                                 1201900100013 
+ENDSUBENT           12          0                                 1201900199999 
+SUBENT        12019002   20061109                             13421201900200001 
+BIB                  3          5                                 1201900200002 
+REACTION   ((56-BA-130(N,G)56-BA-131,,SIG,,SPA)/                  1201900200003 
+           (56-BA-132(N,G)56-BA-133,,SIG,,SPA))                   1201900200004 
+DECAY-DATA (56-BA-131,9.83D,DG,496.,0.60)                         1201900200005 
+           (56-BA-133,10.7YR,DG,370.,0.75)                        1201900200006 
+INC-SPECT  (REAC) Reactor spectrum                                1201900200007 
+ENDBIB               5          0                                 1201900200008 
+NOCOMMON             0          0                                 1201900200009 
+DATA                 3          1                                 1201900200010 
+EN-DUMMY   DATA       DATA-ERR                                    1201900200011 
+MEV        NO-DIM     NO-DIM                                      1201900200012 
+   2.53E-08 1.36       0.08                                       1201900200013 
+ENDDATA              3          0                                 1201900200014 
+ENDSUBENT           13          0                                 1201900299999 
+SUBENT        12019003   20061109                             13421201900300001 
+BIB                  4          4                                 1201900300002 
+REACTION   (56-BA-132(N,G)56-BA-133-G,,SIG,,SPA)                  1201900300003 
+STATUS     (DEP,12019002)                                         1201900300004 
+MONITOR    (56-BA-130(N,G)56-BA-131,,SIG)                         1201900300005 
+INC-SPECT  (REAC) Reactor spectrum                                1201900300006 
+ENDBIB               4          0                                 1201900300007 
+NOCOMMON             0          0                                 1201900300008 
+DATA                 3          1                                 1201900300009 
+EN-DUMMY   DATA       MONIT                                       1201900300010 
+MEV        B          B                                           1201900300011 
+   2.53E-08    6.5E+00 8.8                                        1201900300012 
+ENDDATA              3          0                                 1201900300013 
+ENDSUBENT           12          0                                 1201900399999 
+ENDENTRY             3          0                                 1201999999999 

@@ -1,0 +1,61 @@
+ENTRY            12350   20120521                             13811235000000001 
+SUBENT        12350001   20120521                             13811235000100001 
+BIB                 10         22                                 1235000100002 
+INSTITUTE  (1CANCRC)                                              1235000100003 
+REFERENCE  (R,AECL-2148,1964)                                     1235000100004 
+AUTHOR     (A.Okazaki,M.Lounsbury,R.W.Durham)                     1235000100005 
+TITLE      A determination of the ratio of capture to fission     1235000100006 
+            cross section of U-233.                               1235000100007 
+FACILITY   (REAC,1CANCRC) NRU reactor.                            1235000100008 
+SAMPLE     Each sample contained about 1.5 grams of U-233 alloyed 1235000100009 
+           with 57 grams of superpure aluminum. The alloys were in1235000100010 
+           the form of cylinders 1.5 cm diam., 12 cm long and were1235000100011 
+           sheathed in aluminum.                                  1235000100012 
+INC-SPECT   Reactor spectrum.R=0.022+-0.004 and T=40 degr(C)      1235000100013 
+ERR-ANALYS (DATA-ERR) The uncertainty quoted includes only        1235000100014 
+            * the errors in the measured alpha,                   1235000100015 
+            * epithermal parameter                                1235000100016 
+            * quoted uncertainties in the cross sections          1235000100017 
+STATUS     (TABLE) data from AECL-2148,1964                       1235000100018 
+HISTORY    (19760804T) Translated from SCISRS                     1235000100019 
+           (19820519A) converted to REACTION formalism            1235000100020 
+           (19860527A) BIB update.                                1235000100021 
+           (20120521A) SD:Updated to new date formats,lower case. 1235000100022 
+                corrected according to last EXFOR rules and Dict. 1235000100023 
+                Energy value in Subent 3 corrected.               1235000100024 
+ENDBIB              22          0                                 1235000100025 
+NOCOMMON             0          0                                 1235000100026 
+ENDSUBENT           25          0                                 1235000199999 
+SUBENT        12350002   20120521                             13811235000200001 
+BIB                  5          6                                 1235000200002 
+REACTION   (92-U-233(N,ABS),,ALF,,SPA)                            1235000200003 
+ASSUMED    (ASSUM,92-U-233(N,ABS),,SIG)                           1235000200004 
+METHOD     (BURN,MASSP,CHSEP) Burn-up                             1235000200005 
+ANALYSIS   Mass spectrometric, chemical and isotopic dilution     1235000200006 
+            analyses. Assumed U-233 eff.absorption = 591 b.       1235000200007 
+HISTORY    (20120521A) SD: Assumed parameters were coded.         1235000200008 
+ENDBIB               6          0                                 1235000200009 
+NOCOMMON             0          0                                 1235000200010 
+DATA                 4          1                                 1235000200011 
+EN-DUMMY   DATA       DATA-ERR   ASSUM                            1235000200012 
+EV         NO-DIM     NO-DIM     B                                1235000200013 
+     0.0253     0.0940     0.0004  591.                           1235000200014 
+ENDDATA              3          0                                 1235000200015 
+ENDSUBENT           14          0                                 1235000299999 
+SUBENT        12350003   20120521                             13811235000300001 
+BIB                  4          6                                 1235000300002 
+REACTION   (92-U-233(N,ABS),,ALF)                                 1235000300003 
+STATUS     (DEP,12350002) The 2200 m/sec value of alpha0  was     1235000300004 
+            derived from the measured alpha.                      1235000300005 
+ANALYSIS   Calculated from reactor spectrum averaged value, using 1235000300006 
+            g-factors and cross sections of Westcott, 1964.       1235000300007 
+HISTORY    (20120521A) SD: Energy value corrected.                1235000300008 
+ENDBIB               6          0                                 1235000300009 
+NOCOMMON             0          0                                 1235000300010 
+DATA                 3          1                                 1235000300011 
+EN         DATA       DATA-ERR                                    1235000300012 
+EV         NO-DIM     NO-DIM                                      1235000300013 
+     0.0253     0.0939     0.0009                                 1235000300014 
+ENDDATA              3          0                                 1235000300015 
+ENDSUBENT           14          0                                 1235000399999 
+ENDENTRY             3          0                                 1235099999999 

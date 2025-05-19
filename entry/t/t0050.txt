@@ -1,0 +1,76 @@
+ENTRY            T0050   20120317                             T022T005000000001 
+SUBENT        T0050001   20120317                             T022T005000100001 
+BIB                 10         27                                 T005000100002 
+INSTITUTE  (1USASTF)                                              T005000100003 
+REFERENCE  (J,PR/C,28,483,198308)                                 T005000100004 
+AUTHOR     (J.R.Calarco,S.S.Hanna,C.C.Chang,E.M.Diener,           T005000100005 
+           E.Kuhlmann, G.A.Fisher)                                T005000100006 
+TITLE      Absolute cross section for the reaction 3H(p,gamma0)4HeT005000100007 
+            and a review of 4He(gamma,p0)3H measurements          T005000100008 
+FACILITY   (VDGT,1USASTF) Stanford FN tandem Van de Graaff.       T005000100009 
+SAMPLE     Tritium target absorbed into 3mg/cm2 of erbium         T005000100010 
+            deposited on a backing of platinum 2 mg/cm2 thick.    T005000100011 
+DETECTOR   (NAICR) 24 * 24 cm  NaI spectrometer.                  T005000100012 
+ERR-ANALYS (ERR-T) Total uncertainty given includes               T005000100013 
+           contributions added in quadrature from:                T005000100014 
+           (ERR-1) gamma-ray solid angle (3.0%),                  T005000100015 
+           (ERR-2) gamma-ray angle (1.0%),                        T005000100016 
+           (ERR-3) gamma-ray attenuation (1.0%),                  T005000100017 
+           (ERR-4) particle solid angle (0.5%),                   T005000100018 
+           (ERR-5) proton statistics (0.5%),                      T005000100019 
+           (ERR-6) gamma-ray statistics (2.5% at 8.34 MeV, 2.0% atT005000100020 
+             13.6 MeV),                                           T005000100021 
+           Does not include uncertainty in proton angle, which    T005000100022 
+            is assumed to be systematic (author's comment).       T005000100023 
+STATUS     (TABLE) Data taken from Table I of PR/C,28,483,1983    T005000100024 
+           No reply to author proof received from J. Calarco.     T005000100025 
+HISTORY    (20000628C) Converted from A1222 produced by Arzamas   T005000100026 
+            RFNC-VNIIEF.                                          T005000100027 
+           (20120317A) SD: in Subent 002 SF5=PAR was added to     T005000100028 
+              REACTION code. ERR-ANALYS was updated.              T005000100029 
+ENDBIB              27          0                                 T005000100030 
+COMMON               5          3                                 T005000100031 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5                 T005000100032 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              T005000100033 
+   3.0         1.0        1.0       0.5        0.5                T005000100034 
+ENDCOMMON            3          0                                 T005000100035 
+ENDSUBENT           34          0                                 T005000199999 
+SUBENT        T0050002   20120317                             T022T005000200001 
+BIB                  4          6                                 T005000200002 
+REACTION   (1-H-3(P,G)2-HE-4,PAR,DA)                              T005000200003 
+MONITOR    (1-H-3(P,EL)1-H-3,,DA)                                 T005000200004 
+MONIT-REF  (,J.E.Brolley Jr+,J,PR,107,820,1957). at 8.34 MeV.     T005000200005 
+           (A1017002,J.L.Detch+,J,PR/C,4,52,1971). at 13.6 MeV.   T005000200006 
+HISTORY    (20120317A) SD: in Subent 002 SF5=PAR was added to     T005000200007 
+                                                   REACTION code. T005000200008 
+ENDBIB               6          0                                 T005000200009 
+COMMON               3          3                                 T005000200010 
+E-LVL      ANG        ANG-ERR                                     T005000200011 
+MEV        ADEG       ADEG                                        T005000200012 
+  0.0         90.        1.                                       T005000200013 
+ENDCOMMON            3          0                                 T005000200014 
+DATA                 4          2                                 T005000200015 
+EN         DATA       ERR-T      ERR-6                            T005000200016 
+MEV        MU-B/SR    MU-B/SR    PER-CENT                         T005000200017 
+  8.34       8.99       0.60        2.5                           T005000200018 
+ 13.60       6.25       0.40        2.0                           T005000200019 
+ENDDATA              4          0                                 T005000200020 
+ENDSUBENT           19          0                                 T005000299999 
+SUBENT        T0050003   20000628                             0000T005000300001 
+BIB                  4          6                                 T005000300002 
+REACTION   (1-H-3(P,G)2-HE-4,,SIG)                                T005000300003 
+ANALYSIS   Calculated from data at 90 degrees, using total cross  T005000300004 
+            section data of G. King, thesis (1978).               T005000300005 
+ERR-ANALYS Uncertainty in ratio of total/90 degrees is 1.4% for   T005000300006 
+            8.34 MeV and 1.5% for 13.6 MeV.                       T005000300007 
+STATUS     (DEP,T0050002)                                         T005000300008 
+ENDBIB               6          0                                 T005000300009 
+NOCOMMON             0          0                                 T005000300010 
+DATA                 3          2                                 T005000300011 
+EN         DATA       ERR-T                                       T005000300012 
+MEV        MB         MB                                          T005000300013 
+  8.34       1.95       0.13                                      T005000300014 
+ 13.60       1.67       0.11                                      T005000300015 
+ENDDATA              4          0                                 T005000300016 
+ENDSUBENT           15          0                                 T005000399999 
+ENDENTRY             3          0                                 T005099999999 

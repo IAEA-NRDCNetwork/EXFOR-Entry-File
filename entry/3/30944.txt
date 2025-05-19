@@ -1,0 +1,309 @@
+ENTRY            30944   20090914                             31413094400000001 
+SUBENT        30944001   20090914                             31413094400100001 
+BIB                 15         71                                 3094400100002 
+TITLE      Neutron-induced fission of actinium-227,               3094400100003 
+           protactinium-231, and neptunium-237: mass distribution 3094400100004 
+AUTHOR     (R.S.Iyer,H.C.Jain,M.N.Namboodiri,M.R.Rajkishore,      3094400100005 
+           M.V.Ramaniah,C.L.Rao,N.Ravindran,H.D.Sharma)           3094400100006 
+INSTITUTE  (3INDTRM)                                              3094400100007 
+REFERENCE  (C,65SALZBURG,1,439,196503)                            3094400100008 
+FACILITY   (REAC,3INDTRM) Apsara, fixed irradiation position      3094400100009 
+INC-SPECT  Thermal reactor spectrum with essentially the          3094400100010 
+             (degraded) fission spectrum part causing fissions in 3094400100011 
+             Ac-227, Pa-231 and Np-237.                           3094400100012 
+           Irradiation times: 8 to 48 hrs.                        3094400100013 
+METHOD     (RVAL).Relative to U-235 thermal fission (monitor).    3094400100014 
+           Samples and monitor are irradiated and counted (almost)3094400100015 
+             simultaneously and mounted in the same way in order  3094400100016 
+             to avoid corrections and minimize uncertainties.     3094400100017 
+           (RCHEM)                                                3094400100018 
+           (BSPEC)                                                3094400100019 
+DETECTOR   (PROPC).Sugarman type methane flow beta p.c. with      3094400100020 
+           plastic scintillator cosmic-ray guard.                 3094400100021 
+ANALYSIS   Measured R-values were converted to relative yields    3094400100022 
+           using U-235 yields from literature and assumed values  3094400100023 
+           for the reference yields of the respective fission     3094400100024 
+           reactions. They could not be converted to absolute     3094400100025 
+           yields due to insufficient number of yield points.     3094400100026 
+           Numerical values of measured R-values were not         3094400100027 
+           published. Relative yields were calculated from        3094400100028 
+           measuered R-values (=R(x)) according to:               3094400100029 
+              Y(x,Ac) = R(x) * Y(x,U) * Y(91,Ac) / Y(91,U)        3094400100030 
+           equivalent to:                                         3094400100031 
+              Data = R(x) * Monit2 * Assum / Monit1               3094400100032 
+CORRECTION Several corrections are mentioned but were not applied:3094400100033 
+           1. Contribution of U-238 fast fissions in the natural  3094400100034 
+              uranium sample, which would require corrections in  3094400100035 
+              the form of an increase of relative yields in the   3094400100036 
+              mass range 103-125 by 3-15%.                        3094400100037 
+           2. Differences in genetic relationships and the charge 3094400100038 
+              distributions between U-235 and the other reactions.3094400100039 
+ERR-ANALYS Error contributions are mentioned but individual errors3094400100040 
+           are not assessed:                                      3094400100041 
+           1. Errors of U-235 reference yields                    3094400100042 
+           2. U-238 fast fissions not corrected for (see:         3094400100043 
+              'CORRECTION')                                       3094400100044 
+           3. Sample mounting, counting geometry                  3094400100045 
+           4. Counting statistics                                 3094400100046 
+           5. Differences in genetic relationships and charge     3094400100047 
+              distributions (see: 'CORRECTION') are considered to 3094400100048 
+              lead to minor errors only.                          3094400100049 
+           The total errors of yield values are estimated to be   3094400100050 
+              about 20%, although the internal consistency of the 3094400100051 
+              data is reported to be much better (see: analysis). 3094400100052 
+           no individual errors given by authors.                 3094400100053 
+DECAY-DATA No information given as it is assumed that for this    3094400100054 
+           method no decay corrections are required.              3094400100055 
+COMMENT    by compiler (ML): No isomeric states are indicated in  3094400100056 
+           the publication. In the data Table the ground state is 3094400100057 
+           assumed in all cases where isomeric states exist.      3094400100058 
+           However, if existing isomeric states were unknown at   3094400100059 
+           the time of the experiment or ignored, additional      3094400100060 
+           uncertainties have to be taken into account.           3094400100061 
+STATUS     (RIDER).Reference 65IYE1 (originally in conversion);   3094400100062 
+           in update by ML Table 1 of 65Salzburg,1,439, was used. 3094400100063 
+HISTORY    (19881017T).Converted to Exfor90265;                   3094400100064 
+           (19911217A).ML: Converted to regular EXFOR and updated:3094400100065 
+                         - Bib section completed;                 3094400100066 
+                         - Subentries reduced to 1 each for Ac-2273094400100067 
+                           Pa-231 and Np-237;                     3094400100068 
+                         - Reactions and data tables revised.     3094400100069 
+           (19911217A).ML: U-235 reference yields added           3094400100070 
+           (19940712A) HW.- Free text added to 'ANALYSYS', keyword3094400100071 
+           'RESULT' removed in subents 002-004.-                  3094400100072 
+           (20090912A) SD:Updated to new date formats,lower case. 3094400100073 
+ENDBIB              71          0                                 3094400100074 
+COMMON               1          3                                 3094400100075 
+EN-DUMMY                                                          3094400100076 
+EV                                                                3094400100077 
+ 1.0   E+06                                                       3094400100078 
+ENDCOMMON            3          0                                 3094400100079 
+ENDSUBENT           78          0                                 3094400199999 
+SUBENT        30944002   20090914                             31413094400200001 
+BIB                 10         29                                 3094400200002 
+REACTION   (89-AC-227(N,F)ELEM/MASS,CUM,FY,,REL/FIS)              3094400200003 
+MONITOR    ((MONIT1)92-U-235(N,F)38-SR-91,CUM,FY,,MXW)            3094400200004 
+           ((MONIT2)92-U-235(N,F)ELEM/MASS,CUM,FY,,MXW)           3094400200005 
+           Numerical values not given in publication, taken       3094400200006 
+             from Monit-ref by the compiler.                      3094400200007 
+           Comment by compiler: in Monit-ref, 2 values are given  3094400200008 
+             for the Ba-140 monitor yield. In the data Table, the 3094400200009 
+             value of 6.44 was used as this value was taken by the3094400200010 
+             authors for Pa-231 and Np-237 reference yields.      3094400200011 
+MONIT-REF  (,E.K.HYDE,R,UCRL-9036,1960)                           3094400200012 
+ASSUMED    (ASSUM,89-AC-227(N,F)38-SR-91,CUM,FY,,FIS)             3094400200013 
+           The reference yield ratio was arbitrarily chosen:      3094400200014 
+                 Y(91,Ac)/Y(91,U) = 1                             3094400200015 
+SAMPLE     Ra-226 content < 0.1 %                                 3094400200016 
+           Target covered with thin aluminium foils and wrapped   3094400200017 
+           in aluminium catcher foils.                            3094400200018 
+CORRECTION Up to 7% to account for differences in the fraction    3094400200019 
+           of fission fragments stopped in the spacer foils       3094400200020 
+            (0.4 mg/cm2, Ac-227 only).                            3094400200021 
+MISC-COL   Number of determinations                               3094400200022 
+FLAG       (1.) In the mass range 103 to 125 the relative yields  3094400200023 
+                should be increased by 3-15% (see correction).    3094400200024 
+COMMENT    by compiler (ML): The original entry Exfor90265 as     3094400200025 
+           converted from the Rider file contained a subentry     3094400200026 
+           according to which the yield for Sr-91 had been        3094400200027 
+           determined directly and absolutely. However, according 3094400200028 
+           to the original publication the data were obtained as  3094400200029 
+           stated above (see ANALYSIS, ASSUMED).                  3094400200030 
+HISTORY    (19940712A) HW.- Keyword 'RESULT' removed.-            3094400200031 
+ENDBIB              29          0                                 3094400200032 
+COMMON               2          3                                 3094400200033 
+MONIT1     ASSUM                                                  3094400200034 
+PC/FIS     ARB-UNITS                                              3094400200035 
+ 5.81       5.81                                                  3094400200036 
+ENDCOMMON            3          0                                 3094400200037 
+DATA                 7         12                                 3094400200038 
+ELEMENT    MASS       ISOMER     DATA       MONIT2     MISC       3094400200039 
+FLAG                                                              3094400200040 
+NO-DIM     NO-DIM     NO-DIM     ARB-UNITS  PC/FIS     NO-DIM     3094400200041 
+NO-DIM                                                            3094400200042 
+    35.0000    83.0000                7.0100      0.510      3.0003094400200043 
+                                                                  3094400200044 
+    38.0000    89.0000                8.0200      4.790      4.0003094400200045 
+                                                                  3094400200046 
+    40.0000    97.0000                0.3200      5.900      2.0003094400200047 
+                                                                  3094400200048 
+    42.0000    99.0000                0.1100      6.060      1.0003094400200049 
+                                                                  3094400200050 
+    44.0000   105.                    0.0840      0.900      2.0003094400200051 
+     1.0000                                                       3094400200052 
+    46.0000   109.                    0.2400      0.030      3.0003094400200053 
+     1.0000                                                       3094400200054 
+    47.0000   111.         0.0000     0.1800      0.019      6.0003094400200055 
+     1.0000                                                       3094400200056 
+    47.0000   112.                    0.1700      0.010      5.0003094400200057 
+     1.0000                                                       3094400200058 
+    50.0000   121.         0.0000     0.1200      0.015      1.0003094400200059 
+     1.0000                                                       3094400200060 
+    52.0000   132.                    5.1300      4.700      1.0003094400200061 
+                                                                  3094400200062 
+    56.0000   140.                    8.4800      6.440      3.0003094400200063 
+                                                                  3094400200064 
+    58.0000   143.                    6.1000      5.700      2.0003094400200065 
+                                                                  3094400200066 
+ENDDATA             28          0                                 3094400200067 
+ENDSUBENT           66          0                                 3094400299999 
+SUBENT        30944003   20090914                             31413094400300001 
+BIB                  9         25                                 3094400300002 
+REACTION   (91-PA-231(N,F)ELEM/MASS,CUM,FY,,REL/FIS)              3094400300003 
+MONITOR    ((MONIT1)92-U-235(N,F)56-BA-140,CUM,FY,,MXW)           3094400300004 
+           ((MONIT2)92-U-235(N,F)ELEM/MASS,CUM,FY,,MXW)           3094400300005 
+           Numerical values not given in publication, taken       3094400300006 
+             from Monit-ref by the compiler.                      3094400300007 
+           Comment by compiler: In Monit-ref, no value is given   3094400300008 
+             for the Ag-113 reference yield.                      3094400300009 
+MONIT-REF  (,E.K.HYDE,R,UCRL-9036,1960)                           3094400300010 
+ASSUMED    (ASSUM,91-PA-231(N,F)56-BA-140,CUM,FY,,FIS)            3094400300011 
+           The reference yield ratio was arbitrarily chosen:      3094400300012 
+                 Y(140,Pa)/Y(140,U) = 1                           3094400300013 
+SAMPLE     Uranium content < 0.1 %                                3094400300014 
+           Aliquots evaporated in quartz ampoules and wrapped     3094400300015 
+           in cadmium foils.                                      3094400300016 
+COMMENT    by compiler (ML): The original entry Exfor90265 as     3094400300017 
+           converted from the Rider file contained a subentry     3094400300018 
+           according to which the yield for Ba-140 had been       3094400300019 
+           determined directly and absolutely. However, according 3094400300020 
+           to the original publication the data were obtained as  3094400300021 
+           stated above (see ANALYSIS, ASSUMED).                  3094400300022 
+MISC-COL   Number of determinations                               3094400300023 
+FLAG       (1.) In the mass range 103 to 125 the relative yields  3094400300024 
+                should be increased by 3-15% (see correction).    3094400300025 
+HISTORY    (19940712A) HW.- Keyword 'result' removed, code 'rel'  3094400300026 
+           added in sf8.-                                         3094400300027 
+ENDBIB              25          0                                 3094400300028 
+COMMON               2          3                                 3094400300029 
+MONIT1     ASSUM                                                  3094400300030 
+PC/FIS     ARB-UNITS                                              3094400300031 
+ 6.44       6.44                                                  3094400300032 
+ENDCOMMON            3          0                                 3094400300033 
+DATA                 7         17                                 3094400300034 
+ELEMENT    MASS       ISOMER     DATA       MONIT2     MISC       3094400300035 
+FLAG                                                              3094400300036 
+NO-DIM     NO-DIM     NO-DIM     ARB-UNITS  PC/FIS     NO-DIM     3094400300037 
+NO-DIM                                                            3094400300038 
+    38.0000    89.0000                6.8300      4.790      4.0003094400300039 
+                                                                  3094400300040 
+    38.0000    91.0000                6.7900      5.810      2.0003094400300041 
+                                                                  3094400300042 
+    41.0000    97.0000                4.1800      5.900      1.0003094400300043 
+                                                                  3094400300044 
+    42.0000    99.0000                2.4000      6.060      3.0003094400300045 
+                                                                  3094400300046 
+    44.0000   103.                    0.3000      3.000      3.0003094400300047 
+     1.0000                                                       3094400300048 
+    44.0000   105.                    0.1400      0.900      4.0003094400300049 
+     1.0000                                                       3094400300050 
+    44.0000   106.                    0.1000      0.380      2.0003094400300051 
+     1.0000                                                       3094400300052 
+    46.0000   109.         0.0000     0.0770      0.030      3.0003094400300053 
+     1.0000                                                       3094400300054 
+    46.0000   112.                    0.0560      0.010      3.0003094400300055 
+     1.0000                                                       3094400300056 
+    47.0000   111.         0.0000     0.0920      0.019      3.0003094400300057 
+     1.0000                                                       3094400300058 
+    47.0000   113.         0.0000     0.0710                 3.0003094400300059 
+     1.0000                                                       3094400300060 
+    48.0000   115.         0.0000     0.0740      0.010      2.0003094400300061 
+     1.0000                                                       3094400300062 
+    50.0000   121.         0.0000     0.0880      0.015      2.0003094400300063 
+     1.0000                                                       3094400300064 
+    51.0000   127.                    1.0000      0.130      2.0003094400300065 
+                                                                  3094400300066 
+    52.0000   129.         0.0000     1.1600      0.900      1.0003094400300067 
+                                                                  3094400300068 
+    52.0000   132.                    3.1600      4.700      3.0003094400300069 
+                                                                  3094400300070 
+    58.0000   143.                    5.6600      5.700      2.0003094400300071 
+                                                                  3094400300072 
+ENDDATA             38          0                                 3094400300073 
+ENDSUBENT           72          0                                 3094400399999 
+SUBENT        30944004   20090914                             31413094400400001 
+BIB                  9         32                                 3094400400002 
+REACTION   (93-NP-237(N,F)ELEM/MASS,CUM,FY,,REL/FIS)              3094400400003 
+MONITOR    ((MONIT1)92-U-235(N,F)56-BA-140,CUM,FY,,MXW)           3094400400004 
+           ((MONIT2)92-U-235(N,F)ELEM/MASS,CUM,FY,,MXW)           3094400400005 
+           Numerical values not given in publication, taken       3094400400006 
+             from Monit-ref by the compiler.                      3094400400007 
+           Comment by compiler: In Monit-ref, no value is given   3094400400008 
+             for the Ag-113 reference yield.                      3094400400009 
+MONIT-REF  (,E.K.HYDE,R,UCRL-9036,1960)                           3094400400010 
+ASSUMED    (ASSUM,93-NP-237(N,F)56-BA-140,CUM,FY,,FIS)            3094400400011 
+           The reference yield ratio was arbitrarily chosen:      3094400400012 
+                 Y(140,Np)/Y(140,U) = 1                           3094400400013 
+SAMPLE     Found to contain small quantities of Pu-139; therefore 3094400400014 
+           further purified and no detecTable amounts of Pu left. 3094400400015 
+           Aliquots evaporated in quartz ampoules and wrapped     3094400400016 
+           in cadmium foils.                                      3094400400017 
+COMMENT    by compiler (ML): The original entry Exfor90265 as     3094400400018 
+           converted from the Rider file contained 2 subentries   3094400400019 
+           according to which the yields for A=125 and Ce-144 had 3094400400020 
+           been determined directly and absolutely, 1 subentry    3094400400021 
+           with the Ce-141 yield relative to the Ce-144 yield, and3094400400022 
+           1 subentry with the Ru-103 and Ru-106 yields relative  3094400400023 
+           to the Ru-105 yield. Under reference '65IYE1' in the   3094400400024 
+           Rider file only 65Salzburg,1,439 is given. However, in 3094400400025 
+           that publication (used also here) there is no          3094400400026 
+           indication of any measurements other than R-values     3094400400027 
+           relative to Ba-140. Therefore the data as found in the 3094400400028 
+           original publication (Table 1 of 65Salzburg) are       3094400400029 
+           presented in this revised version of the entry.        3094400400030 
+MISC-COL   Number of determinations                               3094400400031 
+FLAG       (1.) In the mass range 103 to 125 the relative yields  3094400400032 
+                should be increased by 3-15% (see correction).    3094400400033 
+HISTORY    (19940712A) HW.- Keyword 'result' removed.-            3094400400034 
+ENDBIB              32          0                                 3094400400035 
+COMMON               2          3                                 3094400400036 
+MONIT1     ASSUM                                                  3094400400037 
+PC/FIS     ARB-UNITS                                              3094400400038 
+ 6.44       6.44                                                  3094400400039 
+ENDCOMMON            3          0                                 3094400400040 
+DATA                 7         19                                 3094400400041 
+ELEMENT    MASS       ISOMER     DATA       MONIT2     MISC       3094400400042 
+FLAG                                                              3094400400043 
+NO-DIM     NO-DIM     NO-DIM     ARB-UNITS  PC/FIS     NO-DIM     3094400400044 
+NO-DIM                                                            3094400400045 
+    35.0000    83.0000                0.4300      0.510      1.0003094400400046 
+                                                                  3094400400047 
+    38.0000    89.0000                2.9600      4.790      2.0003094400400048 
+                                                                  3094400400049 
+    38.0000    91.0000                4.6000      5.810      2.0003094400400050 
+                                                                  3094400400051 
+    42.0000    99.0000                7.8300      6.060      2.0003094400400052 
+                                                                  3094400400053 
+    44.0000   103.                    5.4800      3.000      2.0003094400400054 
+      1.000                                                       3094400400055 
+    44.0000   105.                    3.2300      0.900      3.0003094400400056 
+      1.000                                                       3094400400057 
+    44.0000   106.                    2.0600      0.380      2.0003094400400058 
+      1.000                                                       3094400400059 
+    46.0000   109.         0.0000     0.4500      0.030      2.0003094400400060 
+      1.000                                                       3094400400061 
+    46.0000   112.                    0.0630      0.010      2.0003094400400062 
+      1.000                                                       3094400400063 
+    47.0000   111.         0.0000     0.1300      0.019      2.0003094400400064 
+      1.000                                                       3094400400065 
+    47.0000   113.         0.0000     0.0570                 1.0003094400400066 
+      1.000                                                       3094400400067 
+    48.0000   115.         0.0000     0.0610      0.010      2.0003094400400068 
+      1.000                                                       3094400400069 
+    50.0000   121.         0.0000     0.0780      0.015      2.0003094400400070 
+      1.000                                                       3094400400071 
+    50.0000   125.         0.0000     0.1240      0.013      2.0003094400400072 
+      1.000                                                       3094400400073 
+    51.0000   127.                    0.5950      0.130      1.0003094400400074 
+                                                                  3094400400075 
+    52.0000   129.         0.0000     3.1800      0.900      1.0003094400400076 
+                                                                  3094400400077 
+    52.0000   132.                    5.6500      4.700      1.0003094400400078 
+                                                                  3094400400079 
+    58.0000   141.                    4.3100      6.000      1.0003094400400080 
+                                                                  3094400400081 
+    58.0000   144.                    2.9000      5.700      1.0003094400400082 
+                                                                  3094400400083 
+ENDDATA             42          0                                 3094400400084 
+ENDSUBENT           83          0                                 3094400499999 
+ENDENTRY             4          0                                 3094499999999 

@@ -1,0 +1,124 @@
+ENTRY            C1784   20100526                             C101C178400000001 
+SUBENT        C1784001   20100526                             C101C178400100001 
+BIB                 10         30                                 C178400100002 
+TITLE      First direct measurement of the 23Mg(p,gamma)24Al      C178400100003 
+           reaction                                               C178400100004 
+AUTHOR     (L.Erikson,C.Ruiz,F.Ames,P.Bricault,L.Buchmann,        C178400100005 
+           A.A.Chen,J.Chen,H.Dare,B.Davids,C.Davis,C.M.Deibel,    C178400100006 
+           M.Dombsky,S.Foubister,N.Galinski,U.Greife,U.Hager,     C178400100007 
+           A.Hussein,D.A.Hutcheon,J.Lassen,L.Martin,D.F.Ottewell, C178400100008 
+           C.V.Ouellet,G.Ruprecht,K.Setoodehnia,A.C.Shotter,      C178400100009 
+           A.Teigelhofer,C.Vockenhuber,C.Wrede,A.Wallner)         C178400100010 
+INSTITUTE  (1USACSM,1CANTMF,1CANMCM,2UK SUR,1USAANL,1USAMSU,      C178400100011 
+           2UK EDG,2SWTETH,1USAWAU,2AUSIRK)                       C178400100012 
+REFERENCE  (J,PR/C,81,045808,2010)                                C178400100013 
+FACILITY   (LINAC,1CANTMF) Experiment performed at ISAC           C178400100014 
+           radiofrequency  quadrupole and drift tube linear       C178400100015 
+           accelerators using DRAGON recoil  spectrometer.        C178400100016 
+SAMPLE     Windowless recirculating hydrogen target               C178400100017 
+DETECTOR   (MAGSP) Recoils were separated by series of magnetic   C178400100018 
+           and electrostatic dipoles.                             C178400100019 
+           (MCPLT,IOCH) Recoil particles were identified in focal C178400100020 
+           plane by E-dE method using segmented ionization chamberC178400100021 
+           and by time of flight measured by a pair of            C178400100022 
+           microchannel plates.                                   C178400100023 
+           (BGO) Gamma rays from proton capture were detected     C178400100024 
+           by an array of 30 BGO scintillation detectors          C178400100025 
+METHOD     (TOF,EDE,COINC) Coincidence between reaction products  C178400100026 
+           and capture gamma rays required.                       C178400100027 
+INC-SOURCE 23Mg beam was created by bombarding silicon-carbide/   C178400100028 
+           graphite composite foil with 500 MeV proton beam,      C178400100029 
+           extracted from target/source assembly and accelerated  C178400100030 
+           by RFQ and DTL linac.                                  C178400100031 
+HISTORY    (20100526C) Compiled by S.H.                           C178400100032 
+ENDBIB              30          0                                 C178400100033 
+NOCOMMON             0          0                                 C178400100034 
+ENDSUBENT           33          0                                 C178400199999 
+SUBENT        C1784002   20100526                             C101C178400200001 
+BIB                  3         10                                 C178400200002 
+REACTION  1(1-H-1(12-MG-23,0),,EN)                                C178400200003 
+          2(1-H-1(12-MG-23,G),,WID/STR)                           C178400200004 
+STATUS     (TABLE) data taken from text p. 10 of the reference    C178400200005 
+ERR-ANALYS (ERR-1,0.2,1.1) Uncertainty in DAQ lifetime            C178400200006 
+           (ERR-2) Uncertainty in spectrometer transmission       C178400200007 
+           (ERR-3) Uncertainty in charge state fraction           C178400200008 
+           (ERR-4) Uncertainty in NaI efficiency. Uncertainties   C178400200009 
+            ERR-1 - ERR-4 affect uncertainty in incident particle C178400200010 
+            flux                                                  C178400200011 
+           (ERR-T) Total uncertainty                              C178400200012 
+ENDBIB              10          0                                 C178400200013 
+COMMON               3          3                                 C178400200014 
+ERR-2      ERR-3      ERR-4                                       C178400200015 
+PER-CENT   PER-CENT   PER-CENT                                    C178400200016 
+3.1        4.1        5.5                                         C178400200017 
+ENDCOMMON            3          0                                 C178400200018 
+DATA                 6          1                                 C178400200019 
+DATA      1-ERR-T    1+ERR-T    1DATA      2-ERR-T    2+ERR-T    2C178400200020 
+KEV        KEV        KEV        MILLI-EV   MILLI-EV   MILLI-EV   C178400200021 
+485.7      1.8        1.3        37.8       15.4       20.5       C178400200022 
+ENDDATA              3          0                                 C178400200023 
+ENDSUBENT           22          0                                 C178400299999 
+SUBENT        C1784003   20100526                             C101C178400300001 
+BIB                  5         10                                 C178400300002 
+REACTION   (12-MG-23(P,G)13-AL-24,PAR,SGV,,,DERIV)                C178400300003 
+STATUS     (TABLE) Data taken from tab. 8 of the reference        C178400300004 
+           (DEP,C1784002)                                         C178400300005 
+EN-SEC     (E-LVL,13-AL-24)                                       C178400300006 
+MISC-COL   (MISC1) 68% confidence level lower bound               C178400300007 
+           (MISC2) 68% confidence level upper bound               C178400300008 
+           (MISC3) 95% confidence level lower bound               C178400300009 
+           (MISC4) 95% confidence level upper bound               C178400300010 
+ANALYSIS   Data obtained by Monte Carlo method using resonance    C178400300011 
+           properties measured in this work.                      C178400300012 
+ENDBIB              10          0                                 C178400300013 
+COMMON               1          3                                 C178400300014 
+E-LVL                                                             C178400300015 
+KEV                                                               C178400300016 
+473.0                                                             C178400300017 
+ENDCOMMON            3          0                                 C178400300018 
+DATA                 6         40                                 C178400300019 
+KT         DATA       MISC1      MISC2      MISC3      MISC4      C178400300020 
+K9         CM3/S/MOL  CM3/S/MOL  CM3/S/MOL  CM3/S/MOL  CM3/S/MOL  C178400300021 
+   0.10      6.495E-20  4.474E-20  9.259E-20  3.303E-20  1.310E-19C178400300022 
+   0.11      9.540E-18  6.522E-18  1.372E-17  4.756E-18  1.928E-17C178400300023 
+   0.12      5.864E-16  3.990E-16  8.481E-16  2.889E-16  1.207E-15C178400300024 
+   0.13      1.960E-14  1.324E-14  2.852E-14  9.588E-15  4.018E-14C178400300025 
+   0.14      3.804E-13  2.573E-13  5.589E-13  1.899E-13  8.006E-13C178400300026 
+   0.15      5.133E-12  3.376E-12  7.452E-12  2.432E-12  1.044E-11C178400300027 
+   0.16      4.865E-11  3.211E-11  7.105E-11  2.329E-11  9.962E-11C178400300028 
+   0.17      3.511E-10  2.284E-10  5.174E-10  1.651E-10  7.265E-10C178400300029 
+   0.18      2.030E-09  1.322E-09  2.982E-09  9.750E-10  4.216E-09C178400300030 
+   0.19      9.715E-09  6.371E-09  1.438E-08  4.681E-09  2.012E-08C178400300031 
+   0.20      3.975E-08  2.563E-08  5.882E-08  1.883E-08  8.373E-08C178400300032 
+   0.21      1.410E-07  9.180E-08  2.080E-07  6.610E-08  2.949E-07C178400300033 
+   0.22      4.435E-07  2.863E-07  6.548E-07  2.091E-07  9.473E-07C178400300034 
+   0.23      1.264E-06  8.109E-07  1.875E-06  5.898E-07  2.707E-06C178400300035 
+   0.24      3.276E-06  2.097E-06  4.922E-06  1.532E-06  6.941E-06C178400300036 
+   0.25      7.904E-06  5.041E-06  1.183E-05  3.668E-06  1.681E-05C178400300037 
+   0.26      1.771E-05  1.127E-05  2.671E-05  8.166E-06  3.770E-05C178400300038 
+   0.27      3.744E-05  2.390E-05  5.608E-05  1.719E-05  7.939E-05C178400300039 
+   0.28      7.550E-05  4.721E-05  1.125E-04  3.455E-05  1.595E-04C178400300040 
+   0.29      1.414E-04  9.041E-05  2.127E-04  6.594E-05  3.006E-04C178400300041 
+   0.30      2.588E-04  1.611E-04  3.884E-04  1.175E-04  5.471E-04C178400300042 
+   0.32      7.586E-04  4.743E-04  1.145E-03  3.479E-04  1.632E-03C178400300043 
+   0.34      1.957E-03  1.228E-03  2.933E-03  8.902E-04  4.131E-03C178400300044 
+   0.36      4.510E-03  2.806E-03  6.805E-03  2.070E-03  9.701E-03C178400300045 
+   0.38      9.402E-03  5.853E-03  1.426E-02  4.262E-03  2.023E-02C178400300046 
+   0.40      1.832E-02  1.130E-02  2.764E-02  8.380E-03  3.957E-02C178400300047 
+   0.45      7.366E-02  4.541E-02  1.123E-01  3.328E-02  1.579E-01C178400300048 
+   0.50      2.188E-01  1.354E-01  3.353E-01  9.925E-02  4.718E-01C178400300049 
+   0.55      5.349E-01  3.270E-01  8.083E-01  2.376E-01  1.158E+00C178400300050 
+   0.60      1.091E+00  6.724E-01  1.678E+00  4.902E-01  2.373E+00C178400300051 
+   0.65      2.043E+00  1.223E+00  3.087E+00  8.803E-01  4.368E+00C178400300052 
+   0.70      3.335E+00  2.045E+00  5.101E+00  1.483E+00  7.286E+00C178400300053 
+   0.75      5.066E+00  3.112E+00  7.908E+00  2.268E+00  1.117E+01C178400300054 
+   0.80      7.488E+00  4.576E+00  1.147E+01  3.351E+00  1.617E+01C178400300055 
+   0.85      1.028E+01  6.205E+00  1.567E+01  4.574E+00  2.212E+01C178400300056 
+   0.90      1.372E+01  8.197E+00  2.111E+01  5.980E+00  2.967E+01C178400300057 
+   0.95      1.753E+01  1.064E+01  2.662E+01  7.700E+00  3.714E+01C178400300058 
+   1.00      2.188E+01  1.320E+01  3.347E+01  9.654E+00  4.757E+01C178400300059 
+   1.25      4.902E+01  2.907E+01  7.447E+01  2.104E+01  1.059E+02C178400300060 
+   1.50      7.782E+01  4.679E+01  1.196E+02  3.358E+01  1.687E+02C178400300061 
+ENDDATA             42          0                                 C178400300062 
+ENDSUBENT           61          0                                 C178400399999 
+ENDENTRY             3          0                                 C178499999999 

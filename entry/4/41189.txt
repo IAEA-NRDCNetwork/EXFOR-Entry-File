@@ -1,0 +1,81 @@
+ENTRY            41189   19960408                             00004118900000001 
+SUBENT        41189001   19960408                             00004118900100001 
+BIB                 10         13                                 4118900100002 
+TITLE       NEUTRON INELASTIC CROSS-SECTION ON SILVER AT THE      4118900100003 
+            ENERGY 275 KEV                                        4118900100004 
+AUTHOR     (L.L.LITVINSKIY,YA.A.ZHIGALOV,V.G.KRIVENKO,O.A.PURTOV, 4118900100005 
+           SAUD-SABBAGKH)                                         4118900100006 
+INSTITUTE  (4UKRIJI)                                              4118900100007 
+REFERENCE  (J,YK,1994,(4),38,9505)   DATA ARE GIVEN               4118900100008 
+           (R,KIYAI-85-35,85)   EXPERIMENTAL DATAILS              4118900100009 
+FACILITY   (REAC)  REACTOR WWR-M                                  4118900100010 
+INC-SPECT   FILTERED NEUTRON BEAM. MAGNESIUM FILTER               4118900100011 
+DETECTOR   (PROPC)  PROPORTIONAL HYDROGRN COUNTER CM-38           4118900100012 
+STATUS      DATA ARE TAKEN FROM THE REFERENCE                     4118900100013 
+ERR-ANALYS (DATA-ERR)  ERRORS ARE NOT SPECIFIED                   4118900100014 
+HISTORY    (960408C)  + + COMPILED AT THE CENTRE - CJD + +        4118900100015 
+ENDBIB              13          0                                 4118900100016 
+NOCOMMON             0          0                                 4118900100017 
+ENDSUBENT           16          0                                 4118900199999 
+SUBENT        41189002   19960408                             00004118900200001 
+BIB                  3          5                                 4118900200002 
+REACTION   (47-AG-0(N,TOT),,SIG)                                  4118900200003 
+METHOD      TRANSMISSION                                          4118900200004 
+SAMPLE      METALLIC ELLIPTIC SAMPLE, WEIGHT 110.06 GRAM,         4118900200005 
+            THICKNESS 2.92 MM, LITTLE HALF-AXE IS 29.72 MM        4118900200006 
+            LARGE HALF-AXE IS 38.55 MM                            4118900200007 
+ENDBIB               5          0                                 4118900200008 
+NOCOMMON             0          0                                 4118900200009 
+DATA                 3          1                                 4118900200010 
+EN         DATA       DATA-ERR                                    4118900200011 
+KEV        B          B                                           4118900200012 
+  275.       7.59        0.19                                     4118900200013 
+ENDDATA              3          0                                 4118900200014 
+ENDSUBENT           13          0                                 4118900299999 
+SUBENT        41189003   19960408                             00004118900300001 
+BIB                  4          5                                 4118900300002 
+REACTION   (47-AG-0(N,INL)47-AG-0,,SIG)                           4118900300003 
+ASSUMED    (ASSUM,47-AG-0(N,G),,SIG)                              4118900300004 
+ANALYSIS    SUM OF SIGMA(EL)+SIGMA(INEL) IS NORMALISED TO THE     4118900300005 
+            DIFFERENCE SIGMA(TOT)-SIGMA(N-GAMMA)                  4118900300006 
+STATUS     (DEP,41189002)                                         4118900300007 
+ENDBIB               5          0                                 4118900300008 
+COMMON               2          3                                 4118900300009 
+ASSUM      ASSUM-ERR                                              4118900300010 
+B          B                                                      4118900300011 
+    3.0E-01    3.0E-02                                            4118900300012 
+ENDCOMMON            3          0                                 4118900300013 
+DATA                 3          1                                 4118900300014 
+EN         DATA       DATA-ERR                                    4118900300015 
+KEV        B          B                                           4118900300016 
+  275.         6.5E-02    5.5E-02                                 4118900300017 
+ENDDATA              3          0                                 4118900300018 
+ENDSUBENT           17          0                                 4118900399999 
+SUBENT        41189004   19960408                             00004118900400001 
+BIB                  2          3                                 4118900400002 
+REACTION   (47-AG-0(N,EL)47-AG-0,,SIG)                            4118900400003 
+STATUS     (DEP,41189002)                                         4118900400004 
+           (DEP,41189003)                                         4118900400005 
+ENDBIB               3          0                                 4118900400006 
+NOCOMMON             0          0                                 4118900400007 
+DATA                 3          1                                 4118900400008 
+EN         DATA       DATA-ERR                                    4118900400009 
+KEV        B          B                                           4118900400010 
+  275.        7.29       0.21                                     4118900400011 
+ENDDATA              3          0                                 4118900400012 
+ENDSUBENT           11          0                                 4118900499999 
+SUBENT        41189005   19960408                             00004118900500001 
+BIB                  2          4                                 4118900500002 
+REACTION   (47-AG-0(N,EL),,STF)                                   4118900500003 
+STATUS     (DEP,41189002)                                         4118900500004 
+           (DEP,41189003)                                         4118900500005 
+           (DEP,41189004)                                         4118900500006 
+ENDBIB               4          0                                 4118900500007 
+NOCOMMON             0          0                                 4118900500008 
+DATA                 4          1                                 4118900500009 
+EN         MOMENTUM L DATA       DATA-ERR                         4118900500010 
+KEV        NO-DIM     NO-DIM     NO-DIM                           4118900500011 
+  275.         2.        1.03E-04    1.9E-05                      4118900500012 
+ENDDATA              3          0                                 4118900500013 
+ENDSUBENT           12          0                                 4118900599999 
+ENDENTRY             5          0                                 4118999999999 

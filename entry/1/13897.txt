@@ -1,0 +1,113 @@
+ENTRY            13897   20040624                             00001389700000001 
+SUBENT        13897001   20040624                             00001389700100001 
+BIB                 12         18                                 1389700100002 
+INSTITUTE  (1USAORL,1USACAL,1USAPTN,4ZZZDUB)                      1389700100003 
+REFERENCE  (J,PR/C,56,1138,199708)                                1389700100004 
+AUTHOR     (P.E.Koehler,R.W.Kavanagh,R.B.Vogelaar,Yu.M.Gledenov,  1389700100005 
+           Yu.P.Popov)                                            1389700100006 
+TITLE      26Al(n,p1) and (n,p0) cross sections from thermal      1389700100007 
+            energy to 70 keV and nucleosynthesis of 26Al          1389700100008 
+FACILITY   (MESON,1USALAS) LANSCE.                                1389700100009 
+INC-SOURCE Moderated "white" neutron source.                      1389700100010 
+SAMPLE     Aluminum oxide target enriched in 26Al to a 27Al/26Al  1389700100011 
+            ratio about 16. Target sandwiched between carbon      1389700100012 
+            foils, and supported by a niobium foil.  Samples      1389700100013 
+            contained 4E+15 or 2.6E+15 atoms of 26Al.             1389700100014 
+METHOD     (EDE)                                                  1389700100015 
+DETECTOR   (SIBAR)                                                1389700100016 
+MONIT-REF  (,CARLSON+,R,NISTIR-5177,1993) ENDF standard           1389700100017 
+           ((MONIT2),TRAUTVETTER+,J,ZP/A,323,1,1986)              1389700100018 
+STATUS     No reply from P. Koehler to author proof.              1389700100019 
+HISTORY    (20040519C)                                            1389700100020 
+ENDBIB              18          0                                 1389700100021 
+NOCOMMON             0          0                                 1389700100022 
+ENDSUBENT           21          0                                 1389700199999 
+SUBENT        13897002   20040519                             00001389700200001 
+BIB                  4         10                                 1389700200002 
+REACTION   (13-AL-26(N,P)12-MG-26,PAR,SIG)                        1389700200003 
+MONITOR    (3-LI-6(N,T)2-HE-4,,SIG) Relative monitor              1389700200004 
+           Detectors calibrated using 6Li(n,alpha), 10B(n,alpha), 1389700200005 
+            and 41Ca(n,alpha) reactions.                          1389700200006 
+           ((MONIT2)13-AL-26(N,P)12-MG-26,PAR,SIG)                1389700200007 
+ERR-ANALYS Errors given in graphs represent one-standard-         1389700200008 
+            deviation statistical uncertainties.                  1389700200009 
+           Normalization uncertainty 8.3%.                        1389700200010 
+STATUS     (UNOBT) Unable to obtain data from authors.            1389700200011 
+            Data given in Fig. 3 of reference.                    1389700200012 
+ENDBIB              10          0                                 1389700200013 
+COMMON               4          3                                 1389700200014 
+EN-MIN     EN-MAX     LVL-NUMB   EN-NRM2                          1389700200015 
+EV         KEV        NO-DIM     MILLI-EV                         1389700200016 
+ 0.01       10.         1.        40.                             1389700200017 
+ENDCOMMON            3          0                                 1389700200018 
+NODATA               0          0                                 1389700200019 
+ENDSUBENT           18          0                                 1389700299999 
+SUBENT        13897003   20040519                             00001389700300001 
+BIB                  4          7                                 1389700300002 
+REACTION   (13-AL-26(N,A)11-NA-23,PAR,SIG)                        1389700300003 
+MONITOR    (13-AL-26(N,P)12-MG-26,PAR,SIG)                        1389700300004 
+ERR-ANALYS Errors given in graphs represent one-standard-         1389700300005 
+            deviation statistical uncertainties.                  1389700300006 
+           Normalization uncertainty 26%.                         1389700300007 
+STATUS     (UNOBT) Unable to obtain data from authors.            1389700300008 
+            Data given in Fig. 2 of reference.                    1389700300009 
+ENDBIB               7          0                                 1389700300010 
+COMMON               4          3                                 1389700300011 
+EN-MIN     EN-MAX     E-EXC      EN-NRM                           1389700300012 
+EV         KEV        MEV        KEV                              1389700300013 
+ 0.01       70.         0.         5.578                          1389700300014 
+ENDCOMMON            3          0                                 1389700300015 
+NODATA               0          0                                 1389700300016 
+ENDSUBENT           15          0                                 1389700399999 
+SUBENT        13897004   20040519                             00001389700400001 
+BIB                  4          8                                 1389700400002 
+REACTION  1(13-AL-26(N,0),,EN)                                    1389700400003 
+          2(13-AL-26(N,TOT),,WID)                                 1389700400004 
+          3(13-AL-26(N,P),,WID/STR)                               1389700400005 
+          4(13-AL-26(N,A),,WID/STR)                               1389700400006 
+ANALYSIS   (SHAPE) Breit-Wigner shape analysis.                   1389700400007 
+ERR-ANALYS (DATA-ERR) No information on composition of            1389700400008 
+            uncertainties given.                                  1389700400009 
+STATUS     Data taken from Table I in reference.                  1389700400010 
+ENDBIB               8          0                                 1389700400011 
+NOCOMMON             0          0                                 1389700400012 
+DATA                 6          2                                 1389700400013 
+DATA      1DATA      2DATA-ERR  2DATA      3DATA-ERR  3DATA      41389700400014 
+KEV        EV         EV         EV         EV         EV         1389700400015 
+  5.578     240.       200.         2.03       0.51       6.6     1389700400016 
+ 33.70     8200.      3000.       128.        22.                 1389700400017 
+ENDDATA              4          0                                 1389700400018 
+ENDSUBENT           17          0                                 1389700499999 
+SUBENT        13897005   20040519                             00001389700500001 
+BIB                  4          6                                 1389700500002 
+REACTION   (13-AL-26(N,P)12-MG-26,PAR,SIG,,,DERIV)                1389700500003 
+ANALYSIS   Derived from resonance parameter analysis of cross     1389700500004 
+            section.                                              1389700500005 
+ERR-ANALYS (DATA-ERR) No information on composition of            1389700500006 
+            uncertainties given.                                  1389700500007 
+STATUS     Data taken from Table I in reference.                  1389700500008 
+ENDBIB               6          0                                 1389700500009 
+NOCOMMON             0          0                                 1389700500010 
+DATA                 4          1                                 1389700500011 
+EN         LVL-NUMB   DATA       DATA-ERR                         1389700500012 
+EV         NO-DIM     B          B                                1389700500013 
+  0.0253     1.         2.37       0.19                           1389700500014 
+ENDDATA              3          0                                 1389700500015 
+ENDSUBENT           14          0                                 1389700599999 
+SUBENT        13897006   20040519                             00001389700600001 
+BIB                  4          6                                 1389700600002 
+REACTION   (13-AL-26(N,A)11-NA-23,PAR,SIG,,,DERIV)                1389700600003 
+ANALYSIS   Derived from resonance parameter analysis of cross     1389700600004 
+            section.                                              1389700600005 
+ERR-ANALYS (DATA-ERR) No information on composition of            1389700600006 
+            uncertainties given.                                  1389700600007 
+STATUS     Data taken from Table I in reference.                  1389700600008 
+ENDBIB               6          0                                 1389700600009 
+NOCOMMON             0          0                                 1389700600010 
+DATA                 4          1                                 1389700600011 
+EN         E-EXC      DATA       DATA-ERR                         1389700600012 
+EV         MEV        B          B                                1389700600013 
+  0.0253     0.         0.88       0.23                           1389700600014 
+ENDDATA              3          0                                 1389700600015 
+ENDSUBENT           14          0                                 1389700699999 
+ENDENTRY             6          0                                 1389799999999 

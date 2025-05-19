@@ -1,0 +1,212 @@
+ENTRY            C0226   20111118                             C113C022600000001 
+SUBENT        C0226001   20111118                             C113C022600100001 
+BIB                 11         17                                 C022600100002 
+INSTITUTE  (1USASDC,3INDTAT)                                      C022600100003 
+REFERENCE  (J,NP,51,363,1964)                                     C022600100004 
+AUTHOR     (M.Honda,D.Lal)                                        C022600100005 
+TITLE      Spallation cross sections for long-lived               C022600100006 
+           radionucleides in iron and light nuclei                C022600100007 
+FACILITY   (CYCLO,1USABRK)                                        C022600100008 
+INC-SOURCE The number of protons intercepting the targets was     C022600100009 
+                              ~ 10**6 in each case.               C022600100010 
+SAMPLE     Iron, polyethylene and semicarbazide                   C022600100011 
+METHOD     (ACTIV,CHSEP)                                          C022600100012 
+DETECTOR   (NAICR)                                                C022600100013 
+STATUS     (TABLE) Data taken from NP,51,363,1964--table 1,2.     C022600100014 
+HISTORY    (19870419C)                                            C022600100015 
+           (20111118A) SD:Updated to new date formats,lower case. C022600100016 
+                corrected according to last EXFOR rules and Dict. C022600100017 
+                In Subent 4 unnecessary brackets for reaction sum C022600100018 
+                 removed, BIB changes.                            C022600100019 
+ENDBIB              17          0                                 C022600100020 
+NOCOMMON             0          0                                 C022600100021 
+ENDSUBENT           20          0                                 C022600199999 
+SUBENT        C0226002   20111118                             C113C022600200001 
+BIB                  7         11                                 C022600200002 
+REACTION  1(26-FE-0(P,X)4-BE-10,,SIG)                             C022600200003 
+          2((26-FE-0(P,X)4-BE-10,,SIG)/(26-FE-0(P,X)4-BE-7,,SIG)) C022600200004 
+SAMPLE     Data taken for 2 iron samples                          C022600200005 
+MONITOR   1((MONIT)26-FE-0(P,X)4-BE-7,,SIG)                       C022600200006 
+MONIT-REF 1((MONIT),M.Honda+,J,PR,118,1618,1960)                  C022600200007 
+DECAY-DATA (4-BE-7,53.0D,DG)                                      C022600200008 
+           (4-BE-10,2.5E+06YR,B-)                                 C022600200009 
+FLAG       (1.) first iron sample                                 C022600200010 
+           (2.) second iron sample                                C022600200011 
+HISTORY    (19880928U) Bib update                                 C022600200012 
+           (20111118A) SD: FLAG added.                            C022600200013 
+ENDBIB              11          0                                 C022600200014 
+COMMON               1          3                                 C022600200015 
+EN                                                                C022600200016 
+MEV                                                               C022600200017 
+ 730.                                                             C022600200018 
+ENDCOMMON            3          0                                 C022600200019 
+DATA                 6          2                                 C022600200020 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2FLAG       MONIT     1C022600200021 
+MB         MB         NO-DIM     NO-DIM     NO-DIM     MB         C022600200022 
+ 1.2        0.4        0.40       0.11        2.        2.9       C022600200023 
+ 1.1        0.3        0.39       0.08        1.        2.9       C022600200024 
+ENDDATA              4          0                                 C022600200025 
+ENDSUBENT           24          0                                 C022600299999 
+SUBENT        C0226003   20111118                             C113C022600300001 
+BIB                  4          6                                 C022600300002 
+REACTION  1(6-C-12(P,X)4-BE-10,,SIG)                              C022600300003 
+          2((6-C-12(P,X)4-BE-10,,SIG)/(6-C-12(P,X)4-BE-7,,SIG))   C022600300004 
+SAMPLE     Polyethylene                                           C022600300005 
+MONITOR    ((MONIT)26-FE-0(P,X)4-BE-7,,SIG)                       C022600300006 
+DECAY-DATA (4-BE-7,53.0D,DG)                                      C022600300007 
+           (4-BE-10,2.5E+06YR,B-)                                 C022600300008 
+ENDBIB               6          0                                 C022600300009 
+NOCOMMON             0          0                                 C022600300010 
+DATA                 6          1                                 C022600300011 
+EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT      C022600300012 
+MEV        MB         MB         NO-DIM     NO-DIM     MB         C022600300013 
+ 220.       1.8        0.6        0.21       0.06       8.2       C022600300014 
+ENDDATA              3          0                                 C022600300015 
+ENDSUBENT           14          0                                 C022600399999 
+SUBENT        C0226004   20111118                             C113C022600400001 
+BIB                  5          8                                 C022600400002 
+REACTION  1(6-C-CMP(P,X)4-BE-10,,SIG)                             C022600400003 
+          2((6-C-CMP(P,X)4-BE-10,,SIG)/(6-C-CMP(P,X)4-BE-7,,SIG)) C022600400004 
+SAMPLE     Semicarbazide (CN3O)                                   C022600400005 
+MONITOR    ((MONIT)6-C-CMP(P,X)4-BE-7,,SIG)                       C022600400006 
+DECAY-DATA (4-BE-7,53.0D,DG)                                      C022600400007 
+           (4-BE-10,2.5E+06YR,B-)                                 C022600400008 
+HISTORY    (20111118A) SD: SF1 in REACTON code in both            C022600400009 
+                 cases and in MONITOR was changed to compound.    C022600400010 
+ENDBIB               8          0                                 C022600400011 
+NOCOMMON             0          0                                 C022600400012 
+DATA                 6          1                                 C022600400013 
+EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2MONIT      C022600400014 
+MEV        MB         MB         NO-DIM     NO-DIM     MB         C022600400015 
+ 220.       4.         2.         0.4        0.2        8.8       C022600400016 
+ENDDATA              3          0                                 C022600400017 
+ENDSUBENT           16          0                                 C022600499999 
+SUBENT        C0226005   20111118                             C113C022600500001 
+BIB                  4          4                                 C022600500002 
+REACTION   (26-FE-0(P,X)25-MN-54,,SIG)                            C022600500003 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,,SIG)                    C022600500004 
+DECAY-DATA (25-MN-54,308.D)                                       C022600500005 
+HISTORY    (19880928U) Bib update                                 C022600500006 
+ENDBIB               4          0                                 C022600500007 
+NOCOMMON             0          0                                 C022600500008 
+DATA                 3          1                                 C022600500009 
+EN         DATA       MONIT                                       C022600500010 
+MEV        MB         MB                                          C022600500011 
+ 730.       32.        11.                                        C022600500012 
+ENDDATA              3          0                                 C022600500013 
+ENDSUBENT           12          0                                 C022600599999 
+SUBENT        C0226006   20111118                             C113C022600600001 
+BIB                  4          5                                 C022600600002 
+REACTION   (26-FE-0(P,X)24-CR-51,CUM,SIG)                         C022600600003 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,,SIG)                    C022600600004 
+DECAY-DATA (24-CR-51,27.8D)                                       C022600600005 
+HISTORY    (19880928U) BIB update                                 C022600600006 
+           (20111118A) SD: SF5=CUM was added in REACTION code     C022600600007 
+ENDBIB               5          0                                 C022600600008 
+NOCOMMON             0          0                                 C022600600009 
+DATA                 3          1                                 C022600600010 
+EN         DATA       MONIT                                       C022600600011 
+MEV        MB         MB                                          C022600600012 
+ 730.       27.        11.                                        C022600600013 
+ENDDATA              3          0                                 C022600600014 
+ENDSUBENT           13          0                                 C022600699999 
+SUBENT        C0226007   20111118                             C113C022600700001 
+BIB                  4          5                                 C022600700002 
+REACTION   (26-FE-0(P,X)23-V-49,CUM,SIG)                          C022600700003 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,,SIG)                    C022600700004 
+DECAY-DATA (23-V-49,330.D)                                        C022600700005 
+HISTORY    (19880928U) BIB update                                 C022600700006 
+           (20111118A) SD: SF5=CUM was added in REACTION code     C022600700007 
+ENDBIB               5          0                                 C022600700008 
+NOCOMMON             0          0                                 C022600700009 
+DATA                 3          1                                 C022600700010 
+EN         DATA       MONIT                                       C022600700011 
+MEV        MB         MB                                          C022600700012 
+ 730.       30.        11.                                        C022600700013 
+ENDDATA              3          0                                 C022600700014 
+ENDSUBENT           13          0                                 C022600799999 
+SUBENT        C0226008   20111118                             C113C022600800001 
+BIB                  4          4                                 C022600800002 
+REACTION   (26-FE-0(P,X)22-TI-44,,SIG)                            C022600800003 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,,SIG)                    C022600800004 
+DECAY-DATA (22-TI-44,200.YR)                                      C022600800005 
+HISTORY    (19880928U) BIB update                                 C022600800006 
+ENDBIB               4          0                                 C022600800007 
+NOCOMMON             0          0                                 C022600800008 
+DATA                 3          1                                 C022600800009 
+EN         DATA       MONIT                                       C022600800010 
+MEV        MB         MB                                          C022600800011 
+ 730.       3.6        11.                                        C022600800012 
+ENDDATA              3          0                                 C022600800013 
+ENDSUBENT           12          0                                 C022600899999 
+SUBENT        C0226009   20111118                             C113C022600900001 
+BIB                  4          4                                 C022600900002 
+REACTION   (26-FE-0(P,X)21-SC-46,,SIG)                            C022600900003 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,,SIG)                    C022600900004 
+DECAY-DATA (21-SC-46-G,83.5D)                                     C022600900005 
+HISTORY    (19880928U) BIB update                                 C022600900006 
+ENDBIB               4          0                                 C022600900007 
+NOCOMMON             0          0                                 C022600900008 
+DATA                 3          1                                 C022600900009 
+EN         DATA       MONIT                                       C022600900010 
+MEV        MB         MB                                          C022600900011 
+ 730.       6.4        11.                                        C022600900012 
+ENDDATA              3          0                                 C022600900013 
+ENDSUBENT           12          0                                 C022600999999 
+SUBENT        C0226010   20111118                             C113C022601000001 
+BIB                  4          4                                 C022601000002 
+REACTION   (26-FE-0(P,X)20-CA-45,,SIG)                            C022601000003 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,,SIG)                    C022601000004 
+DECAY-DATA (20-CA-45,165.D)                                       C022601000005 
+HISTORY    (19880928U) BIB update                                 C022601000006 
+ENDBIB               4          0                                 C022601000007 
+NOCOMMON             0          0                                 C022601000008 
+DATA                 3          1                                 C022601000009 
+EN         DATA       MONIT                                       C022601000010 
+MEV        MB         MB                                          C022601000011 
+ 730.       1.4        11.                                        C022601000012 
+ENDDATA              3          0                                 C022601000013 
+ENDSUBENT           12          0                                 C022601099999 
+SUBENT        C0226011   20111118                             C113C022601100001 
+BIB                  2          4                                 C022601100002 
+REACTION  1(26-FE-0(P,X)19-K-40,,SIG)                             C022601100003 
+          2((26-FE-0(P,X)19-K-40,,SIG)/(26-FE-0(P,X)19-K-43,,SIG))C022601100004 
+DECAY-DATA (19-K-40,1.25E+09YR)                                   C022601100005 
+           (19-K-43,22.4HR)                                       C022601100006 
+ENDBIB               4          0                                 C022601100007 
+NOCOMMON             0          0                                 C022601100008 
+DATA                 5          1                                 C022601100009 
+EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2           C022601100010 
+MEV        MB         MB         NO-DIM     NO-DIM                C022601100011 
+ 730.       8.0        1.0        9.1        0.7                  C022601100012 
+ENDDATA              3          0                                 C022601100013 
+ENDSUBENT           12          0                                 C022601199999 
+SUBENT        C0226012   20111118                             C113C022601200001 
+BIB                  4          4                                 C022601200002 
+REACTION   (26-FE-0(P,X)18-AR-42,,SIG)                            C022601200003 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,,SIG)                    C022601200004 
+DECAY-DATA (18-AR-42,30.YR)                                       C022601200005 
+HISTORY    (19880928U) BIB update                                 C022601200006 
+ENDBIB               4          0                                 C022601200007 
+NOCOMMON             0          0                                 C022601200008 
+DATA                 3          1                                 C022601200009 
+EN         DATA       MONIT                                       C022601200010 
+MEV        MB         MB                                          C022601200011 
+ 730.       0.04       11.                                        C022601200012 
+ENDDATA              3          0                                 C022601200013 
+ENDSUBENT           12          0                                 C022601299999 
+SUBENT        C0226013   20111118                             C113C022601300001 
+BIB                  4          4                                 C022601300002 
+REACTION   (26-FE-0(P,X)14-SI-32,,SIG)                            C022601300003 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,,SIG)                    C022601300004 
+DECAY-DATA (14-SI-32,500.YR)                                      C022601300005 
+HISTORY    (19880928U) BIB update                                 C022601300006 
+ENDBIB               4          0                                 C022601300007 
+NOCOMMON             0          0                                 C022601300008 
+DATA                 3          1                                 C022601300009 
+EN         DATA       MONIT                                       C022601300010 
+MEV        MB         MB                                          C022601300011 
+ 730.       0.46       11.                                        C022601300012 
+ENDDATA              3          0                                 C022601300013 
+ENDSUBENT           12          0                                 C022601399999 
+ENDENTRY            13          0                                 C022699999999 

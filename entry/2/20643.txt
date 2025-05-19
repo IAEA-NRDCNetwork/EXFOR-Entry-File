@@ -1,0 +1,1405 @@
+ENTRY            20643   20101112                             22252064300000001 
+SUBENT        20643001   20101112                             22252064300100001 
+BIB                 15         59                                 2064300100002 
+INSTITUTE  (2BLGGHT)                                              2064300100003 
+REFERENCE  (J,JRC,11,133,197206)                                  2064300100004 
+           (C,73PARIS,2,241,197303) ratios of resonance integrals 2064300100005 
+            to thermal cross sections.                            2064300100006 
+AUTHOR     (R.Van der Linden,F.De Corte,P.Van Den Winkel,J.Hoste) 2064300100007 
+TITLE       A compilation of infinite dilution                    2064300100008 
+            resonance integrals, I.                               2064300100009 
+FACILITY   (REAC,2BLGGHT) Thetis reactor                          2064300100010 
+INC-SOURCE (REAC) Thetis reactor of University of Ghent.          2064300100011 
+SAMPLE     .Gold-aluminium alloy.                                 2064300100012 
+           .For the nuclides of interest high-purity compounds    2064300100013 
+            have been used.                                       2064300100014 
+METHOD     (ACTIV) Activation.                                    2064300100015 
+DETECTOR   (GELI ) 18 cm3 Germanium-lithium detector.             2064300100016 
+           (NAICR) Sodium-iodine crystal (volume 40 cm3).         2064300100017 
+ANALYSIS   .Cadmium ratio measurements (wall thickness of Cd-     2064300100018 
+            capsules 1 mm, Cd-cut-off-energy 0.55 eV).            2064300100019 
+           .the resonance integral (RI) was determined from the   2064300100020 
+            relation RI=sigma*R/(Cr-1)  were sigma = thermal      2064300100021 
+            cross section,Cr = cadmium ratio and R the ratio      2064300100022 
+            of the thermal to epithermal neutron flux.            2064300100023 
+           .The R were determined with gold monitor.              2064300100024 
+           .The thermal cross section were taken from the Chart   2064300100025 
+            of Nuclides except of Ti-50 and In-113 (to In-114m)   2064300100026 
+            which were determined experimentally.                 2064300100027 
+COMMENT    .The second part of the compilation is published in    2064300100028 
+            J.of Radioanal.Chem.20(1974)695.                      2064300100029 
+           .In addition to the resonance integral are given the   2064300100030 
+            half life of the produced isotope,the main  gamma-    2064300100031 
+            line, the thermal cross section, the ratio of res.    2064300100032 
+            integral to thermal cross section,some  literature    2064300100033 
+            values  for resonance integral and the main           2064300100034 
+            resonance energies.                                   2064300100035 
+           As RI is derived from the thermal cross-section, the   2064300100036 
+           ratio of RI/CSth is also given (see second REACTION    2064300100037 
+           code in Subents).   CSth - thermal cross section.      2064300100038 
+STATUS     (TABLE) .Tbl.2 from J.Radioanal.Chem. 11(1972)133.     2064300100039 
+CORRECTION .For thermal and epithermal self-shielding for the     2064300100040 
+            elements with high neutron absorption.                2064300100041 
+ERR-ANALYS (DATA-ERR) Standard deviation on cadmium and flux      2064300100042 
+            ratios. No contribution is included for uncertainty   2064300100043 
+            in the assumed value for the thermal cross sections.  2064300100044 
+HISTORY    (19760713C)                                            2064300100045 
+           (19770331E)                                            2064300100046 
+           (19801210A) MONITOR changed and REACTION               2064300100047 
+                                     codings revised.             2064300100048 
+           (19810213E)                                            2064300100049 
+           (20101112A) SD:Updated to new date formats,lower case. 2064300100050 
+            corrected according to last EXFOR rules and Dict.     2064300100051 
+            HISTORY and STATUS keywords deleted from Subents      2064300100052 
+            002-061 = identical to HISTORY keyword in Subent 001. 2064300100053 
+            Code SUM deleted from REACTION (Subents 007,010, etc.)2064300100054 
+            and MONITOR (or ASSUMED in all Subents)               2064300100055 
+            second MONITOR on 79-AU-197(N,G)79-AU-198,,SIG        2064300100056 
+            reaction was added except Subents 011, 053)           2064300100057 
+            Reactions in ASSUMED and MONITOR were swapped in      2064300100058 
+            Subents 004-012. Pointers added in if it was needed.  2064300100059 
+            In Subents 002-061 (except for 011, 053):             2064300100060 
+            EN-MIN-NM=0.55eV and EN-DN=0.0253eV added             2064300100061 
+ENDBIB              59          0                                 2064300100062 
+NOCOMMON             0          0                                 2064300100063 
+ENDSUBENT           62          0                                 2064300199999 
+SUBENT        20643002   20101112                             22252064300200001 
+BIB                  4          8                                 2064300200002 
+REACTION  1(9-F-19(N,G)9-F-20,,RI)   Resonance integral including 2064300200003 
+            the 1/V-contribution.                                 2064300200004 
+          2((9-F-19(N,G)9-F-20,,RI)//                             2064300200005 
+           (9-F-19(N,G)9-F-20,,SIG))                              2064300200006 
+DECAY-DATA (9-F-20,11.2SEC,DG,1633.)                              2064300200007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064300200008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064300200009 
+ASSUMED    (ASSUM,9-F-19(N,G)9-F-20,,SIG,,MXW)                    2064300200010 
+ENDBIB               8          0                                 2064300200011 
+COMMON               4          3                                 2064300200012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064300200013 
+B          B          B          B                                2064300200014 
+  1551.      20.        98.8       0.01                           2064300200015 
+ENDCOMMON            3          0                                 2064300200016 
+DATA                 6          1                                 2064300200017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064300200018 
+EV         EV         EV         B          B          NO-DIM     2064300200019 
+ 5.5000E-01  0.55      0.0253     3.9000E-02 1.0000E-03   3.9     2064300200020 
+ENDDATA              3          0                                 2064300200021 
+ENDSUBENT           20          0                                 2064300299999 
+SUBENT        20643003   20101112                             22252064300300001 
+BIB                  4          8                                 2064300300002 
+REACTION  1(11-NA-23(N,G)11-NA-24,,RI) Resonance integral         2064300300003 
+            including the 1/V-contribution.                       2064300300004 
+          2((11-NA-23(N,G)11-NA-24,,RI)//                         2064300300005 
+           (11-NA-23(N,G)11-NA-24,,SIG))                          2064300300006 
+DECAY-DATA (11-NA-24,15.0HR,DG,2753.)                             2064300300007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064300300008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064300300009 
+ASSUMED    (ASSUM,11-NA-23(N,G)11-NA-24,,SIG,,MXW)                2064300300010 
+ENDBIB               8          0                                 2064300300011 
+COMMON               4          3                                 2064300300012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064300300013 
+B          B          B          B                                2064300300014 
+  1551.      20.        98.8       0.53                           2064300300015 
+ENDCOMMON            3          0                                 2064300300016 
+DATA                 6          1                                 2064300300017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064300300018 
+EV         EV         EV         B          B          NO-DIM     2064300300019 
+ 5.5000E-01  0.55      0.0253     3.5000E-01 1.0000E-02   0.66    2064300300020 
+ENDDATA              3          0                                 2064300300021 
+ENDSUBENT           20          0                                 2064300399999 
+SUBENT        20643004   20101112                             22252064300400001 
+BIB                  4          8                                 2064300400002 
+REACTION  1(12-MG-26(N,G)12-MG-27,,RI) Resonance integral         2064300400003 
+            including the 1/V-contribution.                       2064300400004 
+          2((12-MG-26(N,G)12-MG-27,,RI)//                         2064300400005 
+           (12-MG-26(N,G)12-MG-27,,SIG))                          2064300400006 
+DECAY-DATA (12-MG-27,9.45MIN,DG,844.)                             2064300400007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064300400008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064300400009 
+ASSUMED    (ASSUM,12-MG-26(N,G)12-MG-27,,SIG,,MXW)                2064300400010 
+ENDBIB               8          0                                 2064300400011 
+COMMON               4          3                                 2064300400012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064300400013 
+B          B          B          B                                2064300400014 
+  1551.      20.        98.8       0.03                           2064300400015 
+ENDCOMMON            3          0                                 2064300400016 
+DATA                 6          1                                 2064300400017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064300400018 
+EV         EV         EV         B          B          NO-DIM     2064300400019 
+ 5.5000E-01  0.55      0.0253     3.3000E-02 2.0000E-03   1.0     2064300400020 
+ENDDATA              3          0                                 2064300400021 
+ENDSUBENT           20          0                                 2064300499999 
+SUBENT        20643005   20101112                             22252064300500001 
+BIB                  4          8                                 2064300500002 
+REACTION  1(13-AL-27(N,G)13-AL-28,,RI) Resonance integral         2064300500003 
+            including the 1/V-contribution.                       2064300500004 
+          2((13-AL-27(N,G)13-AL-28,,RI)//                         2064300500005 
+           (13-AL-27(N,G)13-AL-28,,SIG))                          2064300500006 
+DECAY-DATA (13-AL-28,2.31MIN,DG,1779.)                            2064300500007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064300500008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064300500009 
+ASSUMED    (ASSUM,13-AL-27(N,G)13-AL-28,,SIG,,MXW)                2064300500010 
+ENDBIB               8          0                                 2064300500011 
+COMMON               4          3                                 2064300500012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064300500013 
+B          B          B          B                                2064300500014 
+  1551.      20.        98.8       0.234                          2064300500015 
+ENDCOMMON            3          0                                 2064300500016 
+DATA                 6          1                                 2064300500017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064300500018 
+EV         EV         EV         B          B          NO-DIM     2064300500019 
+ 5.5000E-01  0.55      0.0253     2.4500E-01 5.0000E-03   1.05    2064300500020 
+ENDDATA              3          0                                 2064300500021 
+ENDSUBENT           20          0                                 2064300599999 
+SUBENT        20643006   20101112                             22252064300600001 
+BIB                  4          8                                 2064300600002 
+REACTION  1(14-SI-30(N,G)14-SI-31,,RI) Resonance integral         2064300600003 
+            including the 1/V-contribution.                       2064300600004 
+          2((14-SI-30(N,G)14-SI-31,,RI)//                         2064300600005 
+           (14-SI-30(N,G)14-SI-31,,SIG))                          2064300600006 
+DECAY-DATA (14-SI-31,2.62HR,DG,1266.)                             2064300600007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064300600008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064300600009 
+ASSUMED    (ASSUM,14-SI-30(N,G)14-SI-31,,SIG,,MXW)                2064300600010 
+ENDBIB               8          0                                 2064300600011 
+COMMON               4          3                                 2064300600012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064300600013 
+B          B          B          B                                2064300600014 
+  1551.      20.        98.8       0.10                           2064300600015 
+ENDCOMMON            3          0                                 2064300600016 
+DATA                 6          1                                 2064300600017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064300600018 
+EV         EV         EV         B          B          NO-DIM     2064300600019 
+ 5.5000E-01   0.55      0.0253    6.6000E-01 3.0000E-02   6.6     2064300600020 
+ENDDATA              3          0                                 2064300600021 
+ENDSUBENT           20          0                                 2064300699999 
+SUBENT        20643007   20101112                             22252064300700001 
+BIB                  4          8                                 2064300700002 
+REACTION  1(17-CL-37(N,G)17-CL-38,,RI) Resonance integral         2064300700003 
+            including the 1/V-contribution.                       2064300700004 
+          2((17-CL-37(N,G)17-CL-38,,RI)//                         2064300700005 
+           (17-CL-37(N,G)17-CL-38,,SIG))                          2064300700006 
+DECAY-DATA (17-CL-38,37.3MIN,DG,1642.)                            2064300700007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064300700008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064300700009 
+ASSUMED    (ASSUM,17-CL-37(N,G)17-CL-38,,SIG,,MXW)                2064300700010 
+ENDBIB               8          0                                 2064300700011 
+COMMON               4          3                                 2064300700012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064300700013 
+B          B          B          B                                2064300700014 
+  1551.      20.        98.8       0.435                          2064300700015 
+ENDCOMMON            3          0                                 2064300700016 
+DATA                 6          1                                 2064300700017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064300700018 
+EV         EV         EV         B          B          NO-DIM     2064300700019 
+ 5.5000E-01   0.55      0.0253    2.1300E-01 9.0000E-03   0.49    2064300700020 
+ENDDATA              3          0                                 2064300700021 
+ENDSUBENT           20          0                                 2064300799999 
+SUBENT        20643008   20101112                             22252064300800001 
+BIB                  4          8                                 2064300800002 
+REACTION  1(19-K-41(N,G)19-K-42,,RI)  Resonance integral including2064300800003 
+            the 1/V-contribution.                                 2064300800004 
+          2((19-K-41(N,G)19-K-42,,RI)//                           2064300800005 
+           (19-K-41(N,G)19-K-42,,SIG))                            2064300800006 
+DECAY-DATA (19-K-42,12.52HR,DG,1524.)                             2064300800007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064300800008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064300800009 
+ASSUMED    (ASSUM,19-K-41(N,G)19-K-42,,SIG,,MXW)                  2064300800010 
+ENDBIB               8          0                                 2064300800011 
+COMMON               4          3                                 2064300800012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064300800013 
+B          B          B          B                                2064300800014 
+  1551.      20.        98.8       1.5                            2064300800015 
+ENDCOMMON            3          0                                 2064300800016 
+DATA                 6          1                                 2064300800017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064300800018 
+EV         EV         EV         B          B          NO-DIM     2064300800019 
+ 5.5000E-01   0.55      0.0253    1.3500E+00 6.0000E-02   0.9     2064300800020 
+ENDDATA              3          0                                 2064300800021 
+ENDSUBENT           20          0                                 2064300899999 
+SUBENT        20643009   20101112                             22252064300900001 
+BIB                  4          8                                 2064300900002 
+REACTION  1(20-CA-48(N,G)20-CA-49,,RI) Resonance integral         2064300900003 
+            including the 1/V-contribution.                       2064300900004 
+          2((20-CA-48(N,G)20-CA-49,,RI)//                         2064300900005 
+           (20-CA-48(N,G)20-CA-49,,SIG))                          2064300900006 
+DECAY-DATA (20-CA-49,8.8MIN,DG,3083.)                             2064300900007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064300900008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064300900009 
+ASSUMED    (ASSUM,20-CA-48(N,G)20-CA-49,,SIG,,MXW)                2064300900010 
+ENDBIB               8          0                                 2064300900011 
+COMMON               4          3                                 2064300900012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064300900013 
+B          B          B          B                                2064300900014 
+  1551.      20.        98.8       1.1                            2064300900015 
+ENDCOMMON            3          0                                 2064300900016 
+DATA                 6          1                                 2064300900017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064300900018 
+EV         EV         EV         B          B          NO-DIM     2064300900019 
+ 5.5000E-01   0.55      0.0253    9.0000E-01 1.0000E-02   0.82    2064300900020 
+ENDDATA              3          0                                 2064300900021 
+ENDSUBENT           20          0                                 2064300999999 
+SUBENT        20643010   20101112                             22252064301000001 
+BIB                  4          9                                 2064301000002 
+REACTION  1(21-SC-45(N,G)21-SC-46,,RI) Resonance integral         2064301000003 
+            including the 1/V-contribution.                       2064301000004 
+          2((21-SC-45(N,G)21-SC-46,,RI)//                         2064301000005 
+           (21-SC-45(N,G)21-SC-46,,SIG))                          2064301000006 
+DECAY-DATA (21-SC-46-G,83.9D,DG,889.,,DG,1120.)  100%             2064301000007 
+            internal transition from metastable state assumed.    2064301000008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064301000009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064301000010 
+ASSUMED    (ASSUM,21-SC-45(N,G)21-SC-46,,SIG,,MXW)                2064301000011 
+ENDBIB               9          0                                 2064301000012 
+COMMON               4          3                                 2064301000013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064301000014 
+B          B          B          B                                2064301000015 
+  1551.      20.        98.8       25.                            2064301000016 
+ENDCOMMON            3          0                                 2064301000017 
+DATA                 6          1                                 2064301000018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064301000019 
+EV         EV         EV         B          B          NO-DIM     2064301000020 
+ 5.5000E-01   0.55      0.0253    1.3000E+01 1.0000E+00    0.5    2064301000021 
+ENDDATA              3          0                                 2064301000022 
+ENDSUBENT           21          0                                 2064301099999 
+SUBENT        20643011   20101112                             22252064301100001 
+BIB                  3          3                                 2064301100002 
+REACTION   (22-TI-50(N,G)22-TI-51,,SIG) Thermal cross section     2064301100003 
+DECAY-DATA (22-TI-51,5.8MIN,DG,320.)                              2064301100004 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,SIG)                 2064301100005 
+ENDBIB               3          0                                 2064301100006 
+NOCOMMON             0          0                                 2064301100007 
+DATA                 3          1                                 2064301100008 
+EN-DUMMY   MONIT1     DATA                                        2064301100009 
+EV         B          B                                           2064301100010 
+ 2.5300E-02 9.8800E+01 1.4000E-01                                 2064301100011 
+ENDDATA              3          0                                 2064301100012 
+ENDSUBENT           11          0                                 2064301199999 
+SUBENT        20643012   20101112                             22252064301200001 
+BIB                  5          9                                 2064301200002 
+REACTION  1(22-TI-50(N,G)22-TI-51,,RI) Resonance integral         2064301200003 
+            including the 1/V-contribution.                       2064301200004 
+          2((22-TI-50(N,G)22-TI-51,,RI)//                         2064301200005 
+           (22-TI-50(N,G)22-TI-51,,SIG))                          2064301200006 
+DECAY-DATA (22-TI-51,5.8MIN,DG,320.)                              2064301200007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064301200008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064301200009 
+ASSUMED    (ASSUM,22-TI-50(N,G)22-TI-51,,SIG,,MXW)                2064301200010 
+STATUS     (DEP,20643011)  Thermal cross section                  2064301200011 
+ENDBIB               9          0                                 2064301200012 
+COMMON               4          3                                 2064301200013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064301200014 
+B          B          B          B                                2064301200015 
+  1551.      20.        98.8       0.14                           2064301200016 
+ENDCOMMON            3          0                                 2064301200017 
+DATA                 6          1                                 2064301200018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064301200019 
+EV         EV         EV         B          B          NO-DIM     2064301200020 
+ 5.5000E-01   0.55      0.0253    4.4000E+00 4.0000E-01  31.      2064301200021 
+ENDDATA              3          0                                 2064301200022 
+ENDSUBENT           21          0                                 2064301299999 
+SUBENT        20643013   20101112                             22252064301300001 
+BIB                  4          8                                 2064301300002 
+REACTION  1(23-V-51(N,G)23-V-52,,RI)  Resonance integral including2064301300003 
+            the 1/V-contribution.                                 2064301300004 
+          2((23-V-51(N,G)23-V-52,,RI)//                           2064301300005 
+           (23-V-51(N,G)23-V-52,,SIG))                            2064301300006 
+DECAY-DATA (23-V-52,3.76MIN,DG,1434.)                             2064301300007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064301300008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064301300009 
+ASSUMED    (ASSUM,23-V-52(N,G)23-V-53,,SIG,,MXW)                  2064301300010 
+ENDBIB               8          0                                 2064301300011 
+COMMON               4          3                                 2064301300012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064301300013 
+B          B          B          B                                2064301300014 
+  1551.      20.        98.8       4.9                            2064301300015 
+ENDCOMMON            3          0                                 2064301300016 
+DATA                 6          1                                 2064301300017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064301300018 
+EV         EV         EV         B          B          NO-DIM     2064301300019 
+ 5.5000E-01   0.55      0.0253    2.9000E+00 1.0000E-01  0.6      2064301300020 
+ENDDATA              3          0                                 2064301300021 
+ENDSUBENT           20          0                                 2064301399999 
+SUBENT        20643014   20101112                             22252064301400001 
+BIB                  4          8                                 2064301400002 
+REACTION  1(24-CR-50(N,G)24-CR-51,,RI) Resonance integral         2064301400003 
+            including the 1/V-contribution.                       2064301400004 
+          2((24-CR-50(N,G)24-CR-51,,RI)//                         2064301400005 
+           (24-CR-50(N,G)24-CR-51,,SIG))                          2064301400006 
+DECAY-DATA (24-CR-51,27.8D,DG,320.)                               2064301400007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064301400008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064301400009 
+ASSUMED    (ASSUM,24-CR-50(N,G)24-CR-51,,SIG,,MXW)                2064301400010 
+ENDBIB               8          0                                 2064301400011 
+COMMON               4          3                                 2064301400012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064301400013 
+B          B          B          B                                2064301400014 
+  1551.      20.        98.8       16.                            2064301400015 
+ENDCOMMON            3          0                                 2064301400016 
+DATA                 6          1                                 2064301400017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064301400018 
+EV         EV         EV         B          B          NO-DIM     2064301400019 
+ 5.5000E-01   0.55      0.0253    7.8000E+00 4.0000E-01    0.49   2064301400020 
+ENDDATA              3          0                                 2064301400021 
+ENDSUBENT           20          0                                 2064301499999 
+SUBENT        20643015   20101112                             22252064301500001 
+BIB                  4          8                                 2064301500002 
+REACTION  1(25-MN-55(N,G)25-MN-56,,RI) Resonance integral         2064301500003 
+            including the 1/V-contribution.                       2064301500004 
+          2((25-MN-55(N,G)25-MN-56,,RI)//                         2064301500005 
+           (25-MN-55(N,G)25-MN-56,,SIG))                          2064301500006 
+DECAY-DATA (25-MN-56,2.58HR,DG,847.)                              2064301500007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064301500008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064301500009 
+ASSUMED    (ASSUM,25-MN-55(N,G)25-MN-56,,SIG,,MXW)                2064301500010 
+ENDBIB               8          0                                 2064301500011 
+COMMON               4          3                                 2064301500012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064301500013 
+B          B          B          B                                2064301500014 
+  1551.      20.        98.8       13.3                           2064301500015 
+ENDCOMMON            3          0                                 2064301500016 
+DATA                 6          1                                 2064301500017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064301500018 
+EV         EV         EV         B          B          NO-DIM     2064301500019 
+ 5.5000E-01   0.55      0.0253    1.3800E+01 8.0000E-01  1.04     2064301500020 
+ENDDATA              3          0                                 2064301500021 
+ENDSUBENT           20          0                                 2064301599999 
+SUBENT        20643016   20101112                             22252064301600001 
+BIB                  4          8                                 2064301600002 
+REACTION  1(26-FE-58(N,G)26-FE-59,,RI) Resonance integral         2064301600003 
+            including the 1/V-contribution.                       2064301600004 
+          2((26-FE-58(N,G)26-FE-59,,RI)//                         2064301600005 
+           (26-FE-58(N,G)26-FE-59,,SIG))                          2064301600006 
+DECAY-DATA (26-FE-59,45.1D,DG,1099.)                              2064301600007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064301600008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064301600009 
+ASSUMED    (ASSUM,26-FE-58(N,G)26-FE-59,,SIG,,MXW)                2064301600010 
+ENDBIB               8          0                                 2064301600011 
+COMMON               4          3                                 2064301600012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064301600013 
+B          B          B          B                                2064301600014 
+  1551.      20.        98.8       1.2                            2064301600015 
+ENDCOMMON            3          0                                 2064301600016 
+DATA                 6          1                                 2064301600017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064301600018 
+EV         EV         EV         B          B          NO-DIM     2064301600019 
+ 5.5000E-01   0.55      0.0253    1.7000E+00 1.0000E-01  1.4      2064301600020 
+ENDDATA              3          0                                 2064301600021 
+ENDSUBENT           20          0                                 2064301699999 
+SUBENT        20643017   20101112                             22252064301700001 
+BIB                  4          8                                 2064301700002 
+REACTION  1(28-NI-64(N,G)28-NI-65,,RI) Resonance integral         2064301700003 
+            including the 1/V-contribution.                       2064301700004 
+          2((28-NI-64(N,G)28-NI-65,,RI)//                         2064301700005 
+           (28-NI-64(N,G)28-NI-65,,SIG))                          2064301700006 
+DECAY-DATA (28-NI-65,2.56HR,DG,1482.)                             2064301700007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064301700008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064301700009 
+ASSUMED    (ASSUM,28-NI-64(N,G)28-NI-65,,SIG,,MXW)                2064301700010 
+ENDBIB               8          0                                 2064301700011 
+COMMON               4          3                                 2064301700012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064301700013 
+B          B          B          B                                2064301700014 
+  1551.      20.        98.8       1.7                            2064301700015 
+ENDCOMMON            3          0                                 2064301700016 
+DATA                 6          1                                 2064301700017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064301700018 
+EV         EV         EV         B          B          NO-DIM     2064301700019 
+ 5.5000E-01   0.55      0.0253    8.7000E-01 3.0000E-02  0.51     2064301700020 
+ENDDATA              3          0                                 2064301700021 
+ENDSUBENT           20          0                                 2064301799999 
+SUBENT        20643018   20101112                             22252064301800001 
+BIB                  4          8                                 2064301800002 
+REACTION  1(29-CU-63(N,G)29-CU-64,,RI) Resonance integral         2064301800003 
+            including the 1/V-contribution.                       2064301800004 
+          2((29-CU-63(N,G)29-CU-64,,RI)//                         2064301800005 
+           (29-CU-63(N,G)29-CU-64,,SIG))                          2064301800006 
+DECAY-DATA (29-CU-64,12.8HR,DG,1345.)                             2064301800007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064301800008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064301800009 
+ASSUMED    (ASSUM,29-CU-63(N,G)29-CU-64,,SIG,,MXW)                2064301800010 
+ENDBIB               8          0                                 2064301800011 
+COMMON               4          3                                 2064301800012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064301800013 
+B          B          B          B                                2064301800014 
+  1551.      20.        98.8       4.7                            2064301800015 
+ENDCOMMON            3          0                                 2064301800016 
+DATA                 6          1                                 2064301800017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064301800018 
+EV         EV         EV         B          B          NO-DIM     2064301800019 
+ 5.5000E-01   0.55      0.0253    6.1000E+00 3.0000E-01  1.3      2064301800020 
+ENDDATA              3          0                                 2064301800021 
+ENDSUBENT           20          0                                 2064301899999 
+SUBENT        20643019   20101112                             22252064301900001 
+BIB                  4          8                                 2064301900002 
+REACTION  1(29-CU-65(N,G)29-CU-66,,RI) Resonance integral         2064301900003 
+            including the 1/V-contribution.                       2064301900004 
+          2((29-CU-65(N,G)29-CU-66,,RI)//                         2064301900005 
+           (29-CU-65(N,G)29-CU-66,,SIG))                          2064301900006 
+DECAY-DATA (29-CU-66,5.1MIN,DG,1039.)                             2064301900007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064301900008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064301900009 
+ASSUMED    (ASSUM,29-CU-65(N,G)29-CU-66,,SIG,,MXW)                2064301900010 
+ENDBIB               8          0                                 2064301900011 
+COMMON               4          3                                 2064301900012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064301900013 
+B          B          B          B                                2064301900014 
+  1551.      20.        98.8       1.9                            2064301900015 
+ENDCOMMON            3          0                                 2064301900016 
+DATA                 6          1                                 2064301900017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064301900018 
+EV         EV         EV         B          B          NO-DIM     2064301900019 
+ 5.5000E-01   0.55      0.0253    2.3000E+00 2.0000E-01  1.2      2064301900020 
+ENDDATA              3          0                                 2064301900021 
+ENDSUBENT           20          0                                 2064301999999 
+SUBENT        20643020   20101112                             22252064302000001 
+BIB                  4          8                                 2064302000002 
+REACTION  1(30-ZN-64(N,G)30-ZN-65,,RI) Resonance integral         2064302000003 
+            including the 1/V-contribution.                       2064302000004 
+          2((30-ZN-64(N,G)30-ZN-65,,RI)//                         2064302000005 
+           (30-ZN-64(N,G)30-ZN-65,,SIG))                          2064302000006 
+DECAY-DATA (30-ZN-65,245.D,DG,1115.)                              2064302000007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064302000008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064302000009 
+ASSUMED    (ASSUM,30-ZN-65(N,G)30-ZN-66,,SIG,,MXW)                2064302000010 
+ENDBIB               8          0                                 2064302000011 
+COMMON               4          3                                 2064302000012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064302000013 
+B          B          B          B                                2064302000014 
+  1551.      20.        98.8       0.81                           2064302000015 
+ENDCOMMON            3          0                                 2064302000016 
+DATA                 6          1                                 2064302000017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064302000018 
+EV         EV         EV         B          B          NO-DIM     2064302000019 
+ 5.5000E-01   0.55      0.0253    1.8000E+00 1.0000E-01   2.2     2064302000020 
+ENDDATA              3          0                                 2064302000021 
+ENDSUBENT           20          0                                 2064302099999 
+SUBENT        20643021   20101112                             22252064302100001 
+BIB                  4          8                                 2064302100002 
+REACTION  1(30-ZN-68(N,G)30-ZN-69-M,,RI) Resonance integral for Th2064302100003 
+            building of the metastable state (13.8 hr)            2064302100004 
+          2((30-ZN-68(N,G)30-ZN-69-M,,RI)//                       2064302100005 
+           (30-ZN-68(N,G)30-ZN-69-M,,SIG))                        2064302100006 
+DECAY-DATA (30-ZN-69-M,13.8HR,DG,439.)                            2064302100007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064302100008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064302100009 
+ASSUMED    (ASSUM,30-ZN-68(N,G)30-ZN-69-M,,SIG,,MXW)              2064302100010 
+ENDBIB               8          0                                 2064302100011 
+COMMON               4          3                                 2064302100012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064302100013 
+B          B          B          B                                2064302100014 
+  1551.      20.        98.8       0.075                          2064302100015 
+ENDCOMMON            3          0                                 2064302100016 
+DATA                 6          1                                 2064302100017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064302100018 
+EV         EV         EV         B          B          NO-DIM     2064302100019 
+ 5.5000E-01   0.55      0.0253    2.3000E-01 2.0000E-02   3.1     2064302100020 
+ENDDATA              3          0                                 2064302100021 
+ENDSUBENT           20          0                                 2064302199999 
+SUBENT        20643022   20101112                             22252064302200001 
+BIB                  4          8                                 2064302200002 
+REACTION  1(31-GA-69(N,G)31-GA-70,,RI) Resonance integral         2064302200003 
+            including the 1/V-contribution.                       2064302200004 
+          2((31-GA-69(N,G)31-GA-70,,RI)//                         2064302200005 
+           (31-GA-69(N,G)31-GA-70,,SIG))                          2064302200006 
+DECAY-DATA (31-GA-70,21.1MIN,DG,175.,,DG,1039.,,DG,1050.)         2064302200007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064302200008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064302200009 
+ASSUMED    (ASSUM,31-GA-69(N,G)31-GA-70,,SIG,,MXW)                2064302200010 
+ENDBIB               8          0                                 2064302200011 
+COMMON               4          3                                 2064302200012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064302200013 
+B          B          B          B                                2064302200014 
+  1551.      20.        98.8       1.9                            2064302200015 
+ENDCOMMON            3          0                                 2064302200016 
+DATA                 6          1                                 2064302200017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064302200018 
+EV         EV         EV         B          B          NO-DIM     2064302200019 
+ 5.5000E-01   0.55      0.0253    1.1700E+01 1.9000E+00  6.2      2064302200020 
+ENDDATA              3          0                                 2064302200021 
+ENDSUBENT           20          0                                 2064302299999 
+SUBENT        20643023   20101112                             22252064302300001 
+BIB                  4          8                                 2064302300002 
+REACTION  1(31-GA-71(N,G)31-GA-72,,RI) Resonance integral         2064302300003 
+            including the 1/V-contribution.                       2064302300004 
+          2((31-GA-71(N,G)31-GA-72,,RI)//                         2064302300005 
+           (31-GA-71(N,G)31-GA-72,,SIG))                          2064302300006 
+DECAY-DATA (31-GA-72-G,14.3HR,DG,834.)                            2064302300007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064302300008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064302300009 
+ASSUMED    (ASSUM,31-GA-71(N,G)31-GA-72,,SIG,,MXW)                2064302300010 
+ENDBIB               8          0                                 2064302300011 
+COMMON               4          3                                 2064302300012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064302300013 
+B          B          B          B                                2064302300014 
+  1551.      20.        98.8       5.0                            2064302300015 
+ENDCOMMON            3          0                                 2064302300016 
+DATA                 6          1                                 2064302300017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064302300018 
+EV         EV         EV         B          B          NO-DIM     2064302300019 
+ 5.5000E-01   0.55      0.0253    1.3600E+01 2.7000E+00  2.7      2064302300020 
+ENDDATA              3          0                                 2064302300021 
+ENDSUBENT           20          0                                 2064302399999 
+SUBENT        20643024   20101112                             22252064302400001 
+BIB                  4          9                                 2064302400002 
+REACTION  1(32-GE-74(N,G)32-GE-75,,RI) Resonance integral         2064302400003 
+            including the 1/V-contribution.                       2064302400004 
+          2((32-GE-74(N,G)32-GE-75,,RI)//                         2064302400005 
+           (32-GE-74(N,G)32-GE-75,,SIG))                          2064302400006 
+DECAY-DATA (32-GE-75-G,79.MIN,DG,265.) Assuming 100% decay        2064302400007 
+            of the metastable state by internal transition.       2064302400008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064302400009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064302400010 
+ASSUMED    (ASSUM,32-GE-74(N,G)32-GE-75,,SIG,,MXW)                2064302400011 
+ENDBIB               9          0                                 2064302400012 
+COMMON               4          3                                 2064302400013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064302400014 
+B          B          B          B                                2064302400015 
+  1551.      20.        98.8       0.46                           2064302400016 
+ENDCOMMON            3          0                                 2064302400017 
+DATA                 6          1                                 2064302400018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064302400019 
+EV         EV         EV         B          B          NO-DIM     2064302400020 
+ 5.5000E-01   0.55      0.0253    7.3000E-01 3.0000E-02  1.59     2064302400021 
+ENDDATA              3          0                                 2064302400022 
+ENDSUBENT           21          0                                 2064302499999 
+SUBENT        20643025   20101112                             22252064302500001 
+BIB                  4         10                                 2064302500002 
+REACTION  1(32-GE-76(N,G)32-GE-77,,RI) Resonance integral         2064302500003 
+            including the 1/V-contribution.                       2064302500004 
+          2((32-GE-76(N,G)32-GE-77,,RI)//                         2064302500005 
+           (32-GE-76(N,G)32-GE-77,,SIG))                          2064302500006 
+DECAY-DATA (32-GE-77-G,11.3HR,DG,211.,,DG,215.,,DG,264.) Assuming 2064302500007 
+            100% decay of the metastable state to the ground      2064302500008 
+            state.                                                2064302500009 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064302500010 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064302500011 
+ASSUMED    (ASSUM,32-GE-76(N,G)32-GE-77,,SIG,,MXW)                2064302500012 
+ENDBIB              10          0                                 2064302500013 
+COMMON               4          3                                 2064302500014 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064302500015 
+B          B          B          B                                2064302500016 
+  1551.      20.        98.8       0.15                           2064302500017 
+ENDCOMMON            3          0                                 2064302500018 
+DATA                 6          1                                 2064302500019 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064302500020 
+EV         EV         EV         B          B          NO-DIM     2064302500021 
+ 5.5000E-01   0.55      0.0253    1.8000E+00 1.0000E-01   12.     2064302500022 
+ENDDATA              3          0                                 2064302500023 
+ENDSUBENT           22          0                                 2064302599999 
+SUBENT        20643026   20101112                             22252064302600001 
+BIB                  4          8                                 2064302600002 
+REACTION  1(33-AS-75(N,G)33-AS-76,,RI) Resonance integral         2064302600003 
+            including the 1/V-contribution.                       2064302600004 
+          2((33-AS-75(N,G)33-AS-76,,RI)//                         2064302600005 
+           (33-AS-75(N,G)33-AS-76,,SIG))                          2064302600006 
+DECAY-DATA (33-AS-76,26.3HR,DG,559.)                              2064302600007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064302600008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064302600009 
+ASSUMED    (ASSUM,33-AS-75(N,G)33-AS-76,,SIG,,MXW)                2064302600010 
+ENDBIB               8          0                                 2064302600011 
+COMMON               4          3                                 2064302600012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064302600013 
+B          B          B          B                                2064302600014 
+  1551.      20.        98.8       4.3                            2064302600015 
+ENDCOMMON            3          0                                 2064302600016 
+DATA                 6          1                                 2064302600017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064302600018 
+EV         EV         EV         B          B          NO-DIM     2064302600019 
+ 5.5000E-01   0.55      0.0253    4.1000E+01 1.0000E+00  9.5      2064302600020 
+ENDDATA              3          0                                 2064302600021 
+ENDSUBENT           20          0                                 2064302699999 
+SUBENT        20643027   20101112                             22252064302700001 
+BIB                  4          8                                 2064302700002 
+REACTION  1(34-SE-74(N,G)34-SE-75,,RI) Resonance integral         2064302700003 
+            including the 1/V-contribution.                       2064302700004 
+          2((34-SE-74(N,G)34-SE-75,,RI)//                         2064302700005 
+           (34-SE-74(N,G)34-SE-75,,SIG))                          2064302700006 
+DECAY-DATA (34-SE-75,121.D,DG,265.)                               2064302700007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064302700008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064302700009 
+ASSUMED    (ASSUM,34-SE-74(N,G)34-SE-75,,SIG,,MXW)                2064302700010 
+ENDBIB               8          0                                 2064302700011 
+COMMON               4          3                                 2064302700012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064302700013 
+B          B          B          B                                2064302700014 
+  1551.      20.        98.8       58.                            2064302700015 
+ENDCOMMON            3          0                                 2064302700016 
+DATA                 6          1                                 2064302700017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064302700018 
+EV         EV         EV         B          B          NO-DIM     2064302700019 
+ 5.5000E-01   0.55      0.0253    4.7500E+02 1.9000E+01  8.2      2064302700020 
+ENDDATA              3          0                                 2064302700021 
+ENDSUBENT           20          0                                 2064302799999 
+SUBENT        20643028   20101112                             22252064302800001 
+BIB                  4          9                                 2064302800002 
+REACTION  1(34-SE-80(N,G)34-SE-81-M,,RI) Resonance integral for   2064302800003 
+            building of the metastable state(56.8 min)            2064302800004 
+            including the 1/V contribution.                       2064302800005 
+          2((34-SE-80(N,G)34-SE-81-M,,RI)//                       2064302800006 
+           (34-SE-80(N,G)34-SE-81-M,,SIG))                        2064302800007 
+DECAY-DATA (34-SE-81-M,56.8MIN,DG,103.)                           2064302800008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064302800009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064302800010 
+ASSUMED    (ASSUM,34-SE-80(N,G)34-SE-81-M,,SIG,,MXW)              2064302800011 
+ENDBIB               9          0                                 2064302800012 
+COMMON               4          3                                 2064302800013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064302800014 
+B          B          B          B                                2064302800015 
+  1551.      20.        98.8       0.08                           2064302800016 
+ENDCOMMON            3          0                                 2064302800017 
+DATA                 6          1                                 2064302800018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064302800019 
+EV         EV         EV         B          B          NO-DIM     2064302800020 
+ 5.5000E-01   0.55      0.0253    5.0000E-01 2.0000E-02  6.       2064302800021 
+ENDDATA              3          0                                 2064302800022 
+ENDSUBENT           21          0                                 2064302899999 
+SUBENT        20643029   20101112                             22252064302900001 
+BIB                  4         10                                 2064302900002 
+REACTION  1(35-BR-79(N,G)35-BR-80-G,,RI) Resonance integral       2064302900003 
+            including the 1/V-contribution.                       2064302900004 
+          2((35-BR-79(N,G)35-BR-80-G,,RI)//                       2064302900005 
+           (35-BR-79(N,G)35-BR-80-G,,SIG))                        2064302900006 
+DECAY-DATA (35-BR-80-G,17.6MIN,DG,617.) Ground state decay,       2064302900007 
+            including the part of the decay of the metastable     2064302900008 
+            state decay to the ground state.                      2064302900009 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064302900010 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064302900011 
+ASSUMED    (ASSUM,35-BR-79(N,G)35-BR-80-G,,SIG,,MXW)              2064302900012 
+ENDBIB              10          0                                 2064302900013 
+COMMON               4          3                                 2064302900014 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064302900015 
+B          B          B          B                                2064302900016 
+  1551.      20.        98.8       8.0                            2064302900017 
+ENDCOMMON            3          0                                 2064302900018 
+DATA                 6          1                                 2064302900019 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064302900020 
+EV         EV         EV         B          B          NO-DIM     2064302900021 
+ 5.5000E-01   0.55      0.0253    1.4800E+02 4.0000E+00  18.5     2064302900022 
+ENDDATA              3          0                                 2064302900023 
+ENDSUBENT           22          0                                 2064302999999 
+SUBENT        20643030   20101112                             22252064303000001 
+BIB                  4          9                                 2064303000002 
+REACTION  1(35-BR-81(N,G)35-BR-82,,RI) Resonance integral         2064303000003 
+            including the 1/V-contribution.                       2064303000004 
+          2((35-BR-81(N,G)35-BR-82,,RI)//                         2064303000005 
+           (35-BR-81(N,G)35-BR-82,,SIG))                          2064303000006 
+DECAY-DATA (35-BR-82-G,35.9HR,DG,777.) Including the decay of the 2064303000007 
+            metastable state to the ground state.                 2064303000008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064303000009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064303000010 
+ASSUMED    (ASSUM,35-BR-81(N,G)35-BR-82,,SIG,,MXW)                2064303000011 
+ENDBIB               9          0                                 2064303000012 
+COMMON               4          3                                 2064303000013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064303000014 
+B          B          B          B                                2064303000015 
+  1551.      20.        98.8       3.1                            2064303000016 
+ENDCOMMON            3          0                                 2064303000017 
+DATA                 6          1                                 2064303000018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064303000019 
+EV         EV         EV         B          B          NO-DIM     2064303000020 
+ 5.5000E-01   0.55      0.0253    4.8000E+01 1.0000E+00  15.      2064303000021 
+ENDDATA              3          0                                 2064303000022 
+ENDSUBENT           21          0                                 2064303099999 
+SUBENT        20643031   20101112                             22252064303100001 
+BIB                  4          8                                 2064303100002 
+REACTION  1(37-RB-85(N,G)37-RB-86-M,,RI) Resonance integral for   2064303100003 
+            building of the metastable state ( 1 min)             2064303100004 
+          2((37-RB-85(N,G)37-RB-86-M,,RI)//                       2064303100005 
+           (37-RB-85(N,G)37-RB-86-M,,SIG))                        2064303100006 
+DECAY-DATA (37-RB-86-M,1.0MIN,DG,556.) Metastable state decay.    2064303100007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064303100008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064303100009 
+ASSUMED    (ASSUM,37-RB-85(N,G)37-RB-86-M,,SIG,,MXW)              2064303100010 
+ENDBIB               8          0                                 2064303100011 
+COMMON               4          3                                 2064303100012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064303100013 
+B          B          B          B                                2064303100014 
+  1551.      20.        98.8       0.06                           2064303100015 
+ENDCOMMON            3          0                                 2064303100016 
+DATA                 6          1                                 2064303100017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064303100018 
+EV         EV         EV         B          B          NO-DIM     2064303100019 
+ 5.5000E-01   0.55      0.0253    1.1600E+00 3.0000E-02   19.3    2064303100020 
+ENDDATA              3          0                                 2064303100021 
+ENDSUBENT           20          0                                 2064303199999 
+SUBENT        20643032   20101112                             22252064303200001 
+BIB                  4          9                                 2064303200002 
+REACTION  1(37-RB-85(N,G)37-RB-86,,RI) Resonance integral         2064303200003 
+            including the 1/V-contribution.                       2064303200004 
+          2((37-RB-85(N,G)37-RB-86,,RI)//                         2064303200005 
+           (37-RB-85(N,G)37-RB-86,,SIG))                          2064303200006 
+DECAY-DATA (37-RB-86-G,18.66D,DG,1077.) Including the 100%        2064303200007 
+            decay of the metastable state by internal transition. 2064303200008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064303200009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064303200010 
+ASSUMED    (ASSUM,37-RB-85(N,G)37-RB-86,,SIG,,MXW)                2064303200011 
+ENDBIB               9          0                                 2064303200012 
+COMMON               4          3                                 2064303200013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064303200014 
+B          B          B          B                                2064303200015 
+  1551.      20.        98.8       0.46                           2064303200016 
+ENDCOMMON            3          0                                 2064303200017 
+DATA                 6          1                                 2064303200018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064303200019 
+EV         EV         EV         B          B          NO-DIM     2064303200020 
+ 5.5000E-01   0.55      0.0253    3.6500E+00 2.0000E-01  7.93     2064303200021 
+ENDDATA              3          0                                 2064303200022 
+ENDSUBENT           21          0                                 2064303299999 
+SUBENT        20643033   20101112                             22252064303300001 
+BIB                  4          8                                 2064303300002 
+REACTION  1(37-RB-87(N,G)37-RB-88,,RI) Resonance integral         2064303300003 
+            including the 1/V-contribution.                       2064303300004 
+          2((37-RB-87(N,G)37-RB-88,,RI)//                         2064303300005 
+           (37-RB-87(N,G)37-RB-88,,SIG))                          2064303300006 
+DECAY-DATA (37-RB-88,17.8MIN,DG,1836.)                            2064303300007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064303300008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064303300009 
+ASSUMED    (ASSUM,37-RB-87(N,G)37-RB-88,,SIG,,MXW)                2064303300010 
+ENDBIB               8          0                                 2064303300011 
+COMMON               4          3                                 2064303300012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064303300013 
+B          B          B          B                                2064303300014 
+  1551.      20.        98.8       0.12                           2064303300015 
+ENDCOMMON            3          0                                 2064303300016 
+DATA                 6          1                                 2064303300017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064303300018 
+EV         EV         EV         B          B          NO-DIM     2064303300019 
+ 5.5000E-01   0.55      0.0253    1.9000E+00 1.0000E-01  0.16     2064303300020 
+ENDDATA              3          0                                 2064303300021 
+ENDSUBENT           20          0                                 2064303399999 
+SUBENT        20643034   20101112                             22252064303400001 
+BIB                  4          9                                 2064303400002 
+REACTION  1(38-SR-84(N,G)38-SR-85-M,,RI) Resonance integral for   2064303400003 
+            building of the metastable state (70 min)             2064303400004 
+            including the 1/V-contribution.                       2064303400005 
+          2((38-SR-84(N,G)38-SR-85-M,,RI)//                       2064303400006 
+           (38-SR-84(N,G)38-SR-85-M,,SIG))                        2064303400007 
+DECAY-DATA (38-SR-85-M,70.MIN,DG,231.) Metastable state decay.    2064303400008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064303400009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064303400010 
+ASSUMED    (ASSUM,38-SR-84(N,G)38-SR-85-M,,SIG,,MXW)              2064303400011 
+ENDBIB               9          0                                 2064303400012 
+COMMON               4          3                                 2064303400013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064303400014 
+B          B          B          B                                2064303400015 
+  1551.      20.        98.8       0.58                           2064303400016 
+ENDCOMMON            3          0                                 2064303400017 
+DATA                 6          1                                 2064303400018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064303400019 
+EV         EV         EV         B          B          NO-DIM     2064303400020 
+ 5.5000E-01   0.55      0.0253    4.5900E+00 1.5000E-01   7.9     2064303400021 
+ENDDATA              3          0                                 2064303400022 
+ENDSUBENT           21          0                                 2064303499999 
+SUBENT        20643035   20101112                             22252064303500001 
+BIB                  4          9                                 2064303500002 
+REACTION  1(38-SR-84(N,G)38-SR-85,,RI) Resonance integral         2064303500003 
+            including the 1/V-contribution.                       2064303500004 
+          2((38-SR-84(N,G)38-SR-85,,RI)//                         2064303500005 
+           (38-SR-84(N,G)38-SR-85,,SIG))                          2064303500006 
+DECAY-DATA (38-SR-85-G,64.D,DG,514.) Including the part of the    2064303500007 
+            metastable state decaying to the ground state.        2064303500008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064303500009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064303500010 
+ASSUMED    (ASSUM,38-SR-84(N,G)38-SR-85,,SIG,,MXW)                2064303500011 
+ENDBIB               9          0                                 2064303500012 
+COMMON               4          3                                 2064303500013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064303500014 
+B          B          B          B                                2064303500015 
+  1551.      20.        98.8       0.89                           2064303500016 
+ENDCOMMON            3          0                                 2064303500017 
+DATA                 6          1                                 2064303500018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064303500019 
+EV         EV         EV         B          B          NO-DIM     2064303500020 
+ 5.5000E-01   0.55      0.0253    2.3000E+01 2.9000E+00  25.8     2064303500021 
+ENDDATA              3          0                                 2064303500022 
+ENDSUBENT           21          0                                 2064303599999 
+SUBENT        20643036   20101112                             22252064303600001 
+BIB                  4          9                                 2064303600002 
+REACTION  1(38-SR-86(N,G)38-SR-87-M,,RI) Resonance integral for Th2064303600003 
+            building of the metastable state (2.84 hr)            2064303600004 
+            including the 1/V-contribution.                       2064303600005 
+          2((38-SR-86(N,G)38-SR-87-M,,RI)//                       2064303600006 
+           (38-SR-86(N,G)38-SR-87-M,,SIG))                        2064303600007 
+DECAY-DATA (38-SR-87-M,2.84HR,DG,388.) Metastable state decay.    2064303600008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064303600009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064303600010 
+ASSUMED    (ASSUM,38-SR-86(N,G)38-SR-87-M,,SIG,,MXW)              2064303600011 
+ENDBIB               9          0                                 2064303600012 
+COMMON               4          3                                 2064303600013 
+MONIT1     MONIT1-ERR MONIT2    1ASSUM                            2064303600014 
+B          B          B          B                                2064303600015 
+  1551.      20.        98.8       0.84                           2064303600016 
+ENDCOMMON            3          0                                 2064303600017 
+DATA                 6          1                                 2064303600018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064303600019 
+EV         EV         EV         B          B          NO-DIM     2064303600020 
+ 5.5000E-01   0.55      0.0253    4.7900E+00 2.4000E-01  5.70     2064303600021 
+ENDDATA              3          0                                 2064303600022 
+ENDSUBENT           21          0                                 2064303699999 
+SUBENT        20643037   20101112                             22252064303700001 
+BIB                  4         10                                 2064303700002 
+REACTION  1(39-Y-89(N,G)39-Y-90-M,,RI)  Resonance integral for the2064303700003 
+            building of the metastable state (3.14 hr)            2064303700004 
+            including the 1/V-contribution.                       2064303700005 
+          2((39-Y-89(N,G)39-Y-90-M,,RI)//                         2064303700006 
+           (39-Y-89(N,G)39-Y-90-M,,SIG))                          2064303700007 
+DECAY-DATA (39-Y-90-M,3.14HR,DG,202.,,DG,479.)                    2064303700008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064303700009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064303700010 
+ASSUMED    (ASSUM,39-Y-89(N,G)39-Y-90-M,,SIG,,MXW) Value taken    2064303700011 
+            as 0.001 B.                                           2064303700012 
+ENDBIB              10          0                                 2064303700013 
+COMMON               4          3                                 2064303700014 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064303700015 
+B          B          B          B                                2064303700016 
+  1551.      20.        98.8       0.001                          2064303700017 
+ENDCOMMON            3          0                                 2064303700018 
+DATA                 6          1                                 2064303700019 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064303700020 
+EV         EV         EV         B          B          NO-DIM     2064303700021 
+ 5.5000E-01   0.55      0.0253    8.8000E-01 8.0000E-02  885.     2064303700022 
+ENDDATA              3          0                                 2064303700023 
+ENDSUBENT           22          0                                 2064303799999 
+SUBENT        20643038   20101112                             22252064303800001 
+BIB                  4          8                                 2064303800002 
+REACTION  1(40-ZR-94(N,G)40-ZR-95,,RI) Resonance integral         2064303800003 
+            including the 1/V-contribution.                       2064303800004 
+          2((40-ZR-94(N,G)40-ZR-95,,RI)//                         2064303800005 
+           (40-ZR-94(N,G)40-ZR-95,,SIG))                          2064303800006 
+DECAY-DATA (40-ZR-95,65.D,DG,724.)                                2064303800007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064303800008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064303800009 
+ASSUMED    (ASSUM,40-ZR-94(N,G)40-ZR-95,,SIG,,MXW)                2064303800010 
+ENDBIB               8          0                                 2064303800011 
+COMMON               4          3                                 2064303800012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064303800013 
+B          B          B          B                                2064303800014 
+  1551.      20.        98.8       0.05                           2064303800015 
+ENDCOMMON            3          0                                 2064303800016 
+DATA                 6          1                                 2064303800017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064303800018 
+EV         EV         EV         B          B          NO-DIM     2064303800019 
+ 5.5000E-01   0.55      0.0253    3.8000E-01 2.0000E-02   7.6     2064303800020 
+ENDDATA              3          0                                 2064303800021 
+ENDSUBENT           20          0                                 2064303899999 
+SUBENT        20643039   20101112                             22252064303900001 
+BIB                  4          9                                 2064303900002 
+REACTION  1(41-NB-93(N,G)41-NB-94-M,,RI) Resonance integral for   2064303900003 
+            building of the metastable state (6.6 min)            2064303900004 
+            including the 1/V-contribution.                       2064303900005 
+          2((41-NB-93(N,G)41-NB-94-M,,RI)//                       2064303900006 
+           (41-NB-93(N,G)41-NB-94-M,,SIG))                        2064303900007 
+DECAY-DATA (41-NB-94-M,6.6MIN,DG,871.) Decay of metastable state. 2064303900008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064303900009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064303900010 
+ASSUMED    (ASSUM,41-NB-93(N,G)41-NB-94-M,,SIG,,MXW)              2064303900011 
+ENDBIB               9          0                                 2064303900012 
+COMMON               4          3                                 2064303900013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064303900014 
+B          B          B          B                                2064303900015 
+  1551.      20.        98.8       1.15                           2064303900016 
+ENDCOMMON            3          0                                 2064303900017 
+DATA                 6          1                                 2064303900018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064303900019 
+EV         EV         EV         B          B          NO-DIM     2064303900020 
+ 5.5000E-01   0.55      0.0253    8.4000E+00 2.6000E+00  7.3      2064303900021 
+ENDDATA              3          0                                 2064303900022 
+ENDSUBENT           21          0                                 2064303999999 
+SUBENT        20643040   20101112                             22252064304000001 
+BIB                  4          8                                 2064304000002 
+REACTION  1(42-MO-98(N,G)42-MO-99,,RI) Resonance integral         2064304000003 
+            including the 1/V-contribution.                       2064304000004 
+          2((42-MO-98(N,G)42-MO-99,,RI)//                         2064304000005 
+           (42-MO-98(N,G)42-MO-99,,SIG))                          2064304000006 
+DECAY-DATA (42-MO-99,66.HR,DG,141.)                               2064304000007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064304000008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064304000009 
+ASSUMED    (ASSUM,42-MO-98(N,G)42-MO-99,,SIG,,MXW)                2064304000010 
+ENDBIB               8          0                                 2064304000011 
+COMMON               4          3                                 2064304000012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064304000013 
+B          B          B          B                                2064304000014 
+  1551.      20.        98.8       0.14                           2064304000015 
+ENDCOMMON            3          0                                 2064304000016 
+DATA                 6          1                                 2064304000017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064304000018 
+EV         EV         EV         B          B          NO-DIM     2064304000019 
+ 5.5000E-01   0.55      0.0253    1.3000E+00 1.0000E-01   9.22    2064304000020 
+ENDDATA              3          0                                 2064304000021 
+ENDSUBENT           20          0                                 2064304099999 
+SUBENT        20643041   20101112                             22252064304100001 
+BIB                  4          8                                 2064304100002 
+REACTION  1(42-MO-100(N,G)42-MO-101,,RI)Resonance integral        2064304100003 
+            including the 1/V-contribution.                       2064304100004 
+          2((42-MO-100(N,G)42-MO-101,,RI)//                       2064304100005 
+           (42-MO-100(N,G)42-MO-101,,SIG))                        2064304100006 
+DECAY-DATA (42-MO-101,14.6MIN,DG,192.)                            2064304100007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064304100008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064304100009 
+ASSUMED    (ASSUM,42-MO-100(N,G)42-MO-101,,SIG,,MXW)              2064304100010 
+ENDBIB               8          0                                 2064304100011 
+COMMON               4          3                                 2064304100012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064304100013 
+B          B          B          B                                2064304100014 
+  1551.      20.        98.8       0.20                           2064304100015 
+ENDCOMMON            3          0                                 2064304100016 
+DATA                 6          1                                 2064304100017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064304100018 
+EV         EV         EV         B          B          NO-DIM     2064304100019 
+ 5.5000E-01   0.55      0.0253    4.2000E+00 2.0000E-01   21.2    2064304100020 
+ENDDATA              3          0                                 2064304100021 
+ENDSUBENT           20          0                                 2064304199999 
+SUBENT        20643042   20101112                             22252064304200001 
+BIB                  4          8                                 2064304200002 
+REACTION  1(44-RU-96(N,G)44-RU-97,,RI) Resonance integral         2064304200003 
+            including the 1/V-contribution.                       2064304200004 
+          2((44-RU-96(N,G)44-RU-97,,RI)//                         2064304200005 
+           (44-RU-96(N,G)44-RU-97,,SIG))                          2064304200006 
+DECAY-DATA (44-RU-97,2.88D,DG,216.)                               2064304200007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064304200008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064304200009 
+ASSUMED    (ASSUM,44-RU-96(N,G)44-RU-97,,SIG,,MXW)                2064304200010 
+ENDBIB               8          0                                 2064304200011 
+COMMON               4          3                                 2064304200012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064304200013 
+B          B          B          B                                2064304200014 
+  1551.      20.        98.8       0.21                           2064304200015 
+ENDCOMMON            3          0                                 2064304200016 
+DATA                 6          1                                 2064304200017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064304200018 
+EV         EV         EV         B          B          NO-DIM     2064304200019 
+ 5.5000E-01   0.55      0.0253    4.8000E+00 2.0000E-01  23.1     2064304200020 
+ENDDATA              3          0                                 2064304200021 
+ENDSUBENT           20          0                                 2064304299999 
+SUBENT        20643043   20101112                             22252064304300001 
+BIB                  4          8                                 2064304300002 
+REACTION  1(44-RU-102(N,G)44-RU-103,,RI)Resonance integral        2064304300003 
+            including the 1/V-contribution.                       2064304300004 
+          2((44-RU-102(N,G)44-RU-103,,RI)//                       2064304300005 
+           (44-RU-102(N,G)44-RU-103,,SIG))                        2064304300006 
+DECAY-DATA (44-RU-103,38.9D,DG,497.)                              2064304300007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064304300008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064304300009 
+ASSUMED    (ASSUM,44-RU-102(N,G)44-RU-103,,SIG,,MXW)              2064304300010 
+ENDBIB               8          0                                 2064304300011 
+COMMON               4          3                                 2064304300012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064304300013 
+B          B          B          B                                2064304300014 
+  1551.      20.        98.8       1.3                            2064304300015 
+ENDCOMMON            3          0                                 2064304300016 
+DATA                 6          1                                 2064304300017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064304300018 
+EV         EV         EV         B          B          NO-DIM     2064304300019 
+ 5.5000E-01   0.55      0.0253    4.3000E+00 4.0000E-01  3.3      2064304300020 
+ENDDATA              3          0                                 2064304300021 
+ENDSUBENT           20          0                                 2064304399999 
+SUBENT        20643044   20101112                             22252064304400001 
+BIB                  4          8                                 2064304400002 
+REACTION  1(44-RU-104(N,G)44-RU-105,,RI)Resonance integral        2064304400003 
+            including the 1/V-contribution.                       2064304400004 
+          2((44-RU-104(N,G)44-RU-105,,RI)//                       2064304400005 
+           (44-RU-104(N,G)44-RU-105,,SIG))                        2064304400006 
+DECAY-DATA (44-RU-105,4.5HR,DG,130.)                              2064304400007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064304400008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064304400009 
+ASSUMED    (ASSUM,44-RU-104(N,G)44-RU-105,,SIG,,MXW)              2064304400010 
+ENDBIB               8          0                                 2064304400011 
+COMMON               4          3                                 2064304400012 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064304400013 
+B          B          B          B                                2064304400014 
+  1551.      20.        98.8       0.5                            2064304400015 
+ENDCOMMON            3          0                                 2064304400016 
+DATA                 6          1                                 2064304400017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064304400018 
+EV         EV         EV         B          B          NO-DIM     2064304400019 
+ 5.5000E-01   0.55      0.0253    6.5000E+00 3.0000E-01   13.0    2064304400020 
+ENDDATA              3          0                                 2064304400021 
+ENDSUBENT           20          0                                 2064304499999 
+SUBENT        20643045   20101112                             22252064304500001 
+BIB                  4          9                                 2064304500002 
+REACTION  1(45-RH-103(N,G)45-RH-104-M,,RI)Resonance integral for  2064304500003 
+            building of the metastable state (4.4 min)            2064304500004 
+            including the 1/V-contribution.                       2064304500005 
+          2((45-RH-103(N,G)45-RH-104-M,,RI)//                     2064304500006 
+           (45-RH-103(N,G)45-RH-104-M,,SIG))                      2064304500007 
+DECAY-DATA (45-RH-104-M,4.4MIN,DG,51.) Decay of metastable state. 2064304500008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064304500009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064304500010 
+ASSUMED    (ASSUM,45-RH-103(N,G)45-RH-104-M,,SIG,,MXW)            2064304500011 
+ENDBIB               9          0                                 2064304500012 
+COMMON               4          3                                 2064304500013 
+MONIT1    1MONIT1-ERR MONIT2     ASSUM                            2064304500014 
+B          B          B          B                                2064304500015 
+  1551.      20.        98.8       11.                            2064304500016 
+ENDCOMMON            3          0                                 2064304500017 
+DATA                 6          1                                 2064304500018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064304500019 
+EV         EV         EV         B          B          NO-DIM     2064304500020 
+ 5.5000E-01   0.55      0.0253    6.1000E+02 2.4000E+01  55.      2064304500021 
+ENDDATA              3          0                                 2064304500022 
+ENDSUBENT           21          0                                 2064304599999 
+SUBENT        20643046   20101112                             22252064304600001 
+BIB                  4          9                                 2064304600002 
+REACTION  1(46-PD-108(N,G)46-PD-109-M,,RI)Resonance integral for  2064304600003 
+            building of the metastable state (4.69 min)           2064304600004 
+            including the 1/V-contribution.                       2064304600005 
+          2((46-PD-108(N,G)46-PD-109-M,,RI)//                     2064304600006 
+           (46-PD-108(N,G)46-PD-109-M,,SIG))                      2064304600007 
+DECAY-DATA (46-PD-109-M,4.69MIN,DG,189.) Decay of metastable state2064304600008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064304600009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064304600010 
+ASSUMED    (ASSUM,46-PD-108(N,G)46-PD-109-M,,SIG,,MXW)            2064304600011 
+ENDBIB               9          0                                 2064304600012 
+COMMON               4          3                                 2064304600013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064304600014 
+B          B          B          B                                2064304600015 
+  1551.      20.        98.8       0.19                           2064304600016 
+ENDCOMMON            3          0                                 2064304600017 
+DATA                 6          1                                 2064304600018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064304600019 
+EV         EV         EV         B          B          NO-DIM     2064304600020 
+ 5.5000E-01   0.55      0.0253    2.2600E+00 4.0000E-02  11.9     2064304600021 
+ENDDATA              3          0                                 2064304600022 
+ENDSUBENT           21          0                                 2064304699999 
+SUBENT        20643047   20101112                             22252064304700001 
+BIB                  4          9                                 2064304700002 
+REACTION  1(46-PD-108(N,G)46-PD-109,,RI) Resonance integral       2064304700003 
+            including the 1/V-contribution.                       2064304700004 
+          2((46-PD-108(N,G)46-PD-109,,RI)//                       2064304700005 
+           (46-PD-108(N,G)46-PD-109,,SIG))                        2064304700006 
+DECAY-DATA (46-PD-109-G,13.46HR,DG,88.) Including feeding from the2064304700007 
+            metastable state by internal transitions (100 pc).    2064304700008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064304700009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064304700010 
+ASSUMED    (ASSUM,46-PD-108(N,G)46-PD-109,,SIG,,MXW)              2064304700011 
+ENDBIB               9          0                                 2064304700012 
+COMMON               4          3                                 2064304700013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064304700014 
+B          B          B          B                                2064304700015 
+  1551.      20.        98.8       11.19                          2064304700016 
+ENDCOMMON            3          0                                 2064304700017 
+DATA                 6          1                                 2064304700018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064304700019 
+EV         EV         EV         B          B          NO-DIM     2064304700020 
+ 5.5000E-01   0.55      0.0253    1.7300E+02 9.0000E+00   15.5    2064304700021 
+ENDDATA              3          0                                 2064304700022 
+ENDSUBENT           21          0                                 2064304799999 
+SUBENT        20643048   20101112                             22252064304800001 
+BIB                  4          9                                 2064304800002 
+REACTION  1(46-PD-110(N,G)46-PD-111-M,,RI) Resonance integral for 2064304800003 
+            building of the metastable state (5.5 hr)             2064304800004 
+            including the 1/V-contribution.                       2064304800005 
+          2((46-PD-110(N,G)46-PD-111-M,,RI)//                     2064304800006 
+           (46-PD-110(N,G)46-PD-111-M,,SIG))                      2064304800007 
+DECAY-DATA (46-PD-111-M,5.5HR,DG,172.) Decay of metastable state. 2064304800008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064304800009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064304800010 
+ASSUMED    (ASSUM,46-PD-110(N,G)46-PD-111-M,,SIG,,MXW)            2064304800011 
+ENDBIB               9          0                                 2064304800012 
+COMMON               4          3                                 2064304800013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064304800014 
+B          B          B          B                                2064304800015 
+  1551.      20.        98.8       0.02                           2064304800016 
+ENDCOMMON            3          0                                 2064304800017 
+DATA                 6          1                                 2064304800018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064304800019 
+EV         EV         EV         B          B          NO-DIM     2064304800020 
+ 5.5000E-01   0.55      0.0253    4.0000E-01 1.0000E-02  20.      2064304800021 
+ENDDATA              3          0                                 2064304800022 
+ENDSUBENT           21          0                                 2064304899999 
+SUBENT        20643049   20101112                             22252064304900001 
+BIB                  4         10                                 2064304900002 
+REACTION  1(46-PD-110(N,G)46-PD-111,,RI) Resonance integral       2064304900003 
+            including the 1/V-contribution.                       2064304900004 
+          2((46-PD-110(N,G)46-PD-111,,RI)//                       2064304900005 
+           (46-PD-110(N,G)46-PD-111,,SIG))                        2064304900006 
+DECAY-DATA (46-PD-111-G,22.MIN,DG,1388.) Decay of ground state    2064304900007 
+            including feeding from the pert of the metastable     2064304900008 
+            state decay by internal transition. ( 5.5 Hr H-l )    2064304900009 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064304900010 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064304900011 
+ASSUMED    (ASSUM,46-PD-110(N,G)46-PD-111,,SIG,,MXW)              2064304900012 
+ENDBIB              10          0                                 2064304900013 
+COMMON               4          3                                 2064304900014 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064304900015 
+B          B          B          B                                2064304900016 
+  1551.      20.        98.8       0.4                            2064304900017 
+ENDCOMMON            3          0                                 2064304900018 
+DATA                 6          1                                 2064304900019 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064304900020 
+EV         EV         EV         B          B          NO-DIM     2064304900021 
+ 5.5000E-01   0.55      0.0253    5.1000E+00 6.0000E-01  12.7     2064304900022 
+ENDDATA              3          0                                 2064304900023 
+ENDSUBENT           22          0                                 2064304999999 
+SUBENT        20643050   20101112                             22252064305000001 
+BIB                  4         10                                 2064305000002 
+REACTION  1(47-AG-107(N,G)47-AG-108,,RI) Resonance integral       2064305000003 
+            including the 1/V-contribution.                       2064305000004 
+          2((47-AG-107(N,G)47-AG-108,,RI)//                       2064305000005 
+           (47-AG-107(N,G)47-AG-108,,SIG))                        2064305000006 
+DECAY-DATA (47-AG-108-G,2.42MIN,DG,633.) Decay of the ground state2064305000007 
+            including feeding by the decay by internal transition 2064305000008 
+            of the metastable state.                              2064305000009 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064305000010 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064305000011 
+ASSUMED    (ASSUM,47-AG-107(N,G)47-AG-108,,SIG,,MXW)              2064305000012 
+ENDBIB              10          0                                 2064305000013 
+COMMON               4          3                                 2064305000014 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064305000015 
+B          B          B          B                                2064305000016 
+  1551.      20.        98.8       36.6                           2064305000017 
+ENDCOMMON            3          0                                 2064305000018 
+DATA                 6          1                                 2064305000019 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064305000020 
+EV         EV         EV         B          B          NO-DIM     2064305000021 
+ 5.5000E-01   0.55      0.0253    1.4300E+02 6.0000E+00  3.91     2064305000022 
+ENDDATA              3          0                                 2064305000023 
+ENDSUBENT           22          0                                 2064305099999 
+SUBENT        20643051   20101112                             22252064305100001 
+BIB                  4          9                                 2064305100002 
+REACTION  1(47-AG-109(N,G)47-AG-110-M,,RI) Resonance integral     2064305100003 
+            for the metastable state (253 d)                      2064305100004 
+            including the 1/V-contribution.                       2064305100005 
+          2((47-AG-109(N,G)47-AG-110-M,,RI)//                     2064305100006 
+           (47-AG-109(N,G)47-AG-110-M,,SIG))                      2064305100007 
+DECAY-DATA (47-AG-110-M,253.D,DG,658.) Decay of the metastable st.2064305100008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064305100009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064305100010 
+ASSUMED    (ASSUM,47-AG-109(N,G)47-AG-110-M,,SIG,,MXW)            2064305100011 
+ENDBIB               9          0                                 2064305100012 
+COMMON               4          3                                 2064305100013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064305100014 
+B          B          B          B                                2064305100015 
+  1551.      20.        98.8       4.                             2064305100016 
+ENDCOMMON            3          0                                 2064305100017 
+DATA                 6          1                                 2064305100018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064305100019 
+EV         EV         EV         B          B          NO-DIM     2064305100020 
+ 5.5000E-01   0.55      0.0253    4.9000E+01 1.0000E+00  12.2     2064305100021 
+ENDDATA              3          0                                 2064305100022 
+ENDSUBENT           21          0                                 2064305199999 
+SUBENT        20643052   20101112                             22252064305200001 
+BIB                  4          8                                 2064305200002 
+REACTION  1(47-AG-109(N,G)47-AG-110-G,,RI) Resonance integral     2064305200003 
+            including the 1/V-contribution.                       2064305200004 
+          2((47-AG-109(N,G)47-AG-110-G,,RI)//                     2064305200005 
+           (47-AG-109(N,G)47-AG-110-G,,SIG))                      2064305200006 
+DECAY-DATA (47-AG-110-G,24.6SEC,DG,658.) Ground state decay.      2064305200007 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064305200008 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064305200009 
+ASSUMED    (ASSUM,47-AG-109(N,G)47-AG-110-G,,SIG,,MXW)            2064305200010 
+ENDBIB               8          0                                 2064305200011 
+COMMON               4          3                                 2064305200012 
+MONIT1     MONIT1-ERR1MONIT2     ASSUM                            2064305200013 
+B          B          B          B                                2064305200014 
+  1551.      20.        98.8       88.                            2064305200015 
+ENDCOMMON            3          0                                 2064305200016 
+DATA                 6          1                                 2064305200017 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064305200018 
+EV         EV         EV         B          B          NO-DIM     2064305200019 
+ 5.5000E-01   0.55      0.0253    1.1120E+03 6.8000E+01  12.6     2064305200020 
+ENDDATA              3          0                                 2064305200021 
+ENDSUBENT           20          0                                 2064305299999 
+SUBENT        20643053   20101112                             22252064305300001 
+BIB                  3          4                                 2064305300002 
+REACTION   (49-IN-113(N,G)49-IN-114-M,,SIG,,MXW) Thermal cross    2064305300003 
+            section for the metastable state (50 d).              2064305300004 
+DECAY-DATA (49-IN-114-M,50.0D,DG,190.) Metastable state decay.    2064305300005 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,SIG)                 2064305300006 
+ENDBIB               4          0                                 2064305300007 
+NOCOMMON             0          0                                 2064305300008 
+DATA                 3          1                                 2064305300009 
+EN-DUMMY   MONIT1     DATA                                        2064305300010 
+EV         B          B                                           2064305300011 
+ 2.5300E-02 9.8800E+01 9.4500E+00                                 2064305300012 
+ENDDATA              3          0                                 2064305300013 
+ENDSUBENT           12          0                                 2064305399999 
+SUBENT        20643054   20101112                             22252064305400001 
+BIB                  5         10                                 2064305400002 
+REACTION  1(49-IN-113(N,G)49-IN-114-M,,RI) Resonance integral     2064305400003 
+            for the metastable state (50 d)                       2064305400004 
+            including the 1/V-contribution.                       2064305400005 
+          2((49-IN-113(N,G)49-IN-114-M,,RI)//                     2064305400006 
+           (49-IN-113(N,G)49-IN-114-M,,SIG))                      2064305400007 
+DECAY-DATA (49-IN-114-M,50.0D,DG,190.) Metastable state decay.    2064305400008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064305400009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064305400010 
+ASSUMED    (ASSUM,49-IN-113(N,G)49-IN-114-M,,SIG,,MXW)            2064305400011 
+STATUS     (DEP,20643053)  Thermal cross section                  2064305400012 
+ENDBIB              10          0                                 2064305400013 
+COMMON               4          3                                 2064305400014 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064305400015 
+B          B          B          B                                2064305400016 
+  1551.      20.        98.8       9.45                           2064305400017 
+ENDCOMMON            3          0                                 2064305400018 
+DATA                 6          1                                 2064305400019 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064305400020 
+EV         EV         EV         B          B          NO-DIM     2064305400021 
+ 5.5000E-01   0.55      0.0253    2.5800E+02 1.0000E+01  27.3     2064305400022 
+ENDDATA              3          0                                 2064305400023 
+ENDSUBENT           22          0                                 2064305499999 
+SUBENT        20643055   20101112                             22252064305500001 
+BIB                  4          9                                 2064305500002 
+REACTION  1(49-IN-115(N,G)49-IN-116-M,,RI) Resonance integral     2064305500003 
+            for the metastable state (54 m)                       2064305500004 
+            including the 1/V-contribution.                       2064305500005 
+          2((49-IN-115(N,G)49-IN-116-M,,RI)//                     2064305500006 
+           (49-IN-115(N,G)49-IN-116-M,,SIG))                      2064305500007 
+DECAY-DATA (49-IN-116-M,54.MIN,DG,1293.) Metastable state decay.  2064305500008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064305500009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064305500010 
+ASSUMED    (ASSUM,49-IN-115(N,G)49-IN-116-M,,SIG,,MXW)            2064305500011 
+ENDBIB               9          0                                 2064305500012 
+COMMON               4          3                                 2064305500013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064305500014 
+B          B          B          B                                2064305500015 
+  1551.      20.        98.8       155.                           2064305500016 
+ENDCOMMON            3          0                                 2064305500017 
+DATA                 6          1                                 2064305500018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064305500019 
+EV         EV         EV         B          B          NO-DIM     2064305500020 
+ 5.5000E-01   0.55      0.0253    2.1140E+03 2.3000E+01  13.6     2064305500021 
+ENDDATA              3          0                                 2064305500022 
+ENDSUBENT           21          0                                 2064305599999 
+SUBENT        20643056   20101112                             22252064305600001 
+BIB                  4          9                                 2064305600002 
+REACTION  1(50-SN-112(N,G)50-SN-113,,RI) Resonance                2064305600003 
+            integral including the 1/V-contribution.              2064305600004 
+          2((50-SN-112(N,G)50-SN-113,,RI)//                       2064305600005 
+           (50-SN-112(N,G)50-SN-113,,SIG))                        2064305600006 
+DECAY-DATA (50-SN-113-G,115.D,DG,393.) Ground state decay includ. 2064305600007 
+            decay of the metastable state by internal transitions.2064305600008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064305600009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064305600010 
+ASSUMED    (ASSUM,50-SN-112(N,G)50-SN-113,,SIG,,MXW)              2064305600011 
+ENDBIB               9          0                                 2064305600012 
+COMMON               4          3                                 2064305600013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064305600014 
+B          B          B          B                                2064305600015 
+  1551.      20.        98.8       1.1                            2064305600016 
+ENDCOMMON            3          0                                 2064305600017 
+DATA                 6          1                                 2064305600018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064305600019 
+EV         EV         EV         B          B          NO-DIM     2064305600020 
+ 5.5000E-01   0.55      0.0253    4.2000E+01 2.1000E+00   38.6    2064305600021 
+ENDDATA              3          0                                 2064305600022 
+ENDSUBENT           21          0                                 2064305699999 
+SUBENT        20643057   20101112                             22252064305700001 
+BIB                  4          9                                 2064305700002 
+REACTION  1(50-SN-116(N,G)50-SN-117-M,,RI) Resonance integral     2064305700003 
+            for the metastable state (14 d)                       2064305700004 
+            including the 1/V-contribution.                       2064305700005 
+          2((50-SN-116(N,G)50-SN-117,,RI)//                       2064305700006 
+           (50-SN-116(N,G)50-SN-117,,SIG))                        2064305700007 
+DECAY-DATA (50-SN-117-M,14.0D,DG,158.) Metastable state decay.    2064305700008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064305700009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064305700010 
+ASSUMED    (ASSUM,50-SN-116(N,G)50-SN-117-M,,SIG,,MXW)            2064305700011 
+ENDBIB               9          0                                 2064305700012 
+COMMON               4          3                                 2064305700013 
+MONIT1     MONIT1-ERR1MONIT2     ASSUM                            2064305700014 
+B          B          B          B                                2064305700015 
+  1551.      20.        98.8       0.006                          2064305700016 
+ENDCOMMON            3          0                                 2064305700017 
+DATA                 6          1                                 2064305700018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064305700019 
+EV         EV         EV         B          B          NO-DIM     2064305700020 
+ 5.5000E-01   0.55      0.0253    4.9000E-01 2.0000E-02  81.      2064305700021 
+ENDDATA              3          0                                 2064305700022 
+ENDSUBENT           21          0                                 2064305799999 
+SUBENT        20643058   20101112                             22252064305800001 
+BIB                  4          9                                 2064305800002 
+REACTION  1(50-SN-122(N,G)50-SN-123-M,,RI) Resonance integral     2064305800003 
+            for the metastable state (40.3 m)                     2064305800004 
+            including the 1/V-contribution.                       2064305800005 
+          2((50-SN-122(N,G)50-SN-123-M,,RI)//                     2064305800006 
+           (50-SN-122(N,G)50-SN-123-M,,SIG))                      2064305800007 
+DECAY-DATA (50-SN-123-M,40.3MIN,DG,160.) Metastable state decay.  2064305800008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064305800009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064305800010 
+ASSUMED    (ASSUM,50-SN-122(N,G)50-SN-123-M,,SIG,,MXW)            2064305800011 
+ENDBIB               9          0                                 2064305800012 
+COMMON               4          3                                 2064305800013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064305800014 
+B          B          B          B                                2064305800015 
+  1551.      20.        98.8       0.15                           2064305800016 
+ENDCOMMON            3          0                                 2064305800017 
+DATA                 6          1                                 2064305800018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064305800019 
+EV         EV         EV         B          B          NO-DIM     2064305800020 
+ 5.5000E-01   0.55      0.0253    8.3000E-01 2.0000E-02  5.55     2064305800021 
+ENDDATA              3          0                                 2064305800022 
+ENDSUBENT           21          0                                 2064305899999 
+SUBENT        20643059   20101112                             22252064305900001 
+BIB                  4          9                                 2064305900002 
+REACTION  1(50-SN-124(N,G)50-SN-125-M,,RI) Resonance integral     2064305900003 
+            for the metastable state (9.6 m)                      2064305900004 
+            including the 1/V-contribution.                       2064305900005 
+          2((50-SN-124(N,G)50-SN-125-M,,RI)//                     2064305900006 
+           (50-SN-124(N,G)50-SN-125-M,,SIG))                      2064305900007 
+DECAY-DATA (50-SN-125-M,9.6MIN,DG,332.) Metastable state decay.   2064305900008 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064305900009 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064305900010 
+ASSUMED    (ASSUM,50-SN-124(N,G)50-SN-125-M,,SIG,,MXW)            2064305900011 
+ENDBIB               9          0                                 2064305900012 
+COMMON               4          3                                 2064305900013 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064305900014 
+B          B          B          B                                2064305900015 
+  1551.      20.        98.8       0.14                           2064305900016 
+ENDCOMMON            3          0                                 2064305900017 
+DATA                 6          1                                 2064305900018 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064305900019 
+EV         EV         EV         B          B          NO-DIM     2064305900020 
+ 5.5000E-01   0.55      0.0253    8.7000E+00 4.0000E-01   62.     2064305900021 
+ENDDATA              3          0                                 2064305900022 
+ENDSUBENT           21          0                                 2064305999999 
+SUBENT        20643060   20101112                             22252064306000001 
+BIB                  4         10                                 2064306000002 
+REACTION  1(51-SB-121(N,G)51-SB-122,,RI) Resonance integral       2064306000003 
+            including the 1/V-contribution.                       2064306000004 
+          2((51-SB-121(N,G)51-SB-122,,RI)//                       2064306000005 
+           (51-SB-121(N,G)51-SB-122,,SIG))                        2064306000006 
+DECAY-DATA (51-SB-122-G,2.74D,DG,564.) Ground state decay         2064306000007 
+            including decay of the metastable state by internal   2064306000008 
+            transition. (100%).                                   2064306000009 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064306000010 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064306000011 
+ASSUMED    (ASSUM,51-SB-121(N,G)51-SB-122,,SIG,,MXW)              2064306000012 
+ENDBIB              10          0                                 2064306000013 
+COMMON               4          3                                 2064306000014 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064306000015 
+B          B          B          B                                2064306000016 
+  1551.      20.        98.8       6.06                           2064306000017 
+ENDCOMMON            3          0                                 2064306000018 
+DATA                 6          1                                 2064306000019 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064306000020 
+EV         EV         EV         B          B          NO-DIM     2064306000021 
+ 5.5000E-01   0.55      0.0253    1.2700E+02 5.0000E+00  20.9     2064306000022 
+ENDDATA              3          0                                 2064306000023 
+ENDSUBENT           22          0                                 2064306099999 
+SUBENT        20643061   20101112                             22252064306100001 
+BIB                  4         10                                 2064306100002 
+REACTION  1(51-SB-123(N,G)51-SB-124,,RI) Resonance                2064306100003 
+            integral including the 1/V-contribution.              2064306100004 
+          2((51-SB-123(N,G)51-SB-124,,RI)//                       2064306100005 
+           (51-SB-123(N,G)51-SB-124,,SIG))                        2064306100006 
+DECAY-DATA (51-SB-124-G,60.2D,DG,603.) Ground state decay         2064306100007 
+            including decay of the metastable state by internal   2064306100008 
+            transitions.                                          2064306100009 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,RI)                  2064306100010 
+           ((MONIT2)79-AU-197(N,G)79-AU-198,,SIG)                 2064306100011 
+ASSUMED    (ASSUM,51-SB-123(N,G)51-SB-124,,SIG,,MXW)              2064306100012 
+ENDBIB              10          0                                 2064306100013 
+COMMON               4          3                                 2064306100014 
+MONIT1     MONIT1-ERR MONIT2     ASSUM                            2064306100015 
+B          B          B          B                                2064306100016 
+  1551.      20.        98.8       4.26                           2064306100017 
+ENDCOMMON            3          0                                 2064306100018 
+DATA                 6          1                                 2064306100019 
+EN-MIN    1EN-MIN-NM 2EN-DN     2DATA      1DATA-ERR  1DATA      22064306100020 
+EV         EV         EV         B          B          NO-DIM     2064306100021 
+ 5.5000E-01   0.55      0.0253    2.3400E+02 1.1000E+01   54.9    2064306100022 
+ENDDATA              3          0                                 2064306100023 
+ENDSUBENT           22          0                                 2064306199999 
+ENDENTRY            61          0                                 2064399999999 

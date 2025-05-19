@@ -1,0 +1,270 @@
+ENTRY            22112   20110720                             22272211200000001 
+SUBENT        22112001   20110720                             22272211200100001 
+BIB                 14         64                                 2211200100002 
+TITLE      .Prompt fission neutron spectrum measurements of       2211200100003 
+            232-Th and 238-U for 2 MeV neutrons                   2211200100004 
+AUTHOR     (M.Baba,H.Wakabayashi,M.Ishikawa,N.Nakashima,N.Ito,    2211200100005 
+           N.Hirakawa,K.Maeda)                                    2211200100006 
+INSTITUTE  (2JPNTOH) M.Baba, H.Wakabayashi, N.Ito, M.Ishikawa,    2211200100007 
+                     N.Hirakawa, N.Nakashima                      2211200100008 
+           (2JPNJAE) K.Maeda                                      2211200100009 
+FACILITY   (DYNAM,2JPNTOH) 4.5 MV pulsed Dynamitron accelerator,  2211200100010 
+            provided a pulsed proton beam with bursts of 1.5 ns   2211200100011 
+            duration at 2 MHz repetition rate, and an average     2211200100012 
+            beam current of 4 - 6 microamps.                      2211200100013 
+REFERENCE  (R,INDC(NDS)-220,149,1989) Distr. L. Main reference,   2211200100014 
+                                      graphs are given            2211200100015 
+           ((R,INDC(JAP)-129/L,1989)=(R,JAERI-M-89-143,1989)=     2211200100016 
+           (R,NEANDC-(J)-142,1989)) In Japanese. Abstracts and    2211200100017 
+                                    headings in English           2211200100018 
+REL-REF    (R,22158001,M.Baba+,R,INDC(JPN)-129,1989) - double diff2211200100019 
+           cross-sections from figs. 8,9 of INDC(NDS)-220,149,19892211200100020 
+           are presented in Entry 22158 as final results.         2211200100021 
+INC-SOURCE (P-T)   Tritium-loaded titanium target.                2211200100022 
+                   Energy spread = 90 keV.                        2211200100023 
+METHOD     (TOF)   Time-of-flight with flight paths of 3.2 and    2211200100024 
+                   3.9 m. Time resolution was 1.5 ns.             2211200100025 
+           (PSD)   Pulse-shape discrimination                     2211200100026 
+           (PHD)   Pulse-height discrimination analysis           2211200100027 
+DETECTOR   (SCIN)  Big NE213 liquid scintillator 14 cm diameter by2211200100028 
+            10 cm thick, and small NE213 liquid scintillator for  2211200100029 
+            monitor. The detectors were equipped with pulse-shape 2211200100030 
+            discrimination for gamma-ray rejection.               2211200100031 
+SAMPLE     .Cylinders of elemental uranium or thorium, 2 cm in    2211200100032 
+            diameter and 5 cm long. The samples were placed about 2211200100033 
+            10 cm from the neutron-producing target.              2211200100034 
+           .Lead sample for elastic scattering corrections        2211200100035 
+MONITOR    (98-CF-252(0,F),PR,NU/DE)                              2211200100036 
+CORRECTION The data were corrected for:                           2211200100037 
+             * backgrounds and detector efficiency,               2211200100038 
+             * neutron multiple-scattering in the sample,         2211200100039 
+             * tail of elastically-scattered neutrons,            2211200100040 
+             * finite time-resolution of the T-O-F spectrometer,  2211200100041 
+             * time-shift due to detector thickness,              2211200100042 
+             * elastic scattering.                                2211200100043 
+ADD-RES    (COMP) Experimental data compared with ENDF/B-IV and   2211200100044 
+                  JENDL-2 evaluations                             2211200100045 
+           (N-SPC) Neutron spectra are fitted to Maxwell and Watt 2211200100046 
+                   type distributions:                            2211200100047 
+              Nmaxw(E) = Cm*SQRT(E)*exp(-E/Tm); and               2211200100048 
+              Nwatt(E) = Cw*exp(-E/A)*sinh(B*E), where            2211200100049 
+            for Th-232 Tm=1.26, A=0.96, B=2.17;                   2211200100050 
+            for U-238  Tm=1.25, A=0.97, B=2.17.                   2211200100051 
+           .Graphs of DDX spectra for 14.1 MeV neutrons on Th232  2211200100052 
+            and U238, angles 30, 90, 150 degree, are given        2211200100053 
+HISTORY    (19891205C) N.O.                                       2211200100054 
+           (19891211E)                                            2211200100055 
+           (20101119A) SD:Updated to new date formats,lower case. 2211200100056 
+                corrected according to last EXFOR rules and Dict. 2211200100057 
+                Ref. corrected: INDC(NDS)-220,1989 =>             2211200100058 
+                                       INDC(NDS)-220,149,1989     2211200100059 
+                Keyword CORRECTION added.                         2211200100060 
+                FLAG deleted, information added to REACTION as    2211200100061 
+                free text                                         2211200100062 
+                REACTION code corrected in Subents 002-004        2211200100063 
+           (20110720A) TITLE updated. Neutron energy moved        2211200100064 
+                       to SAN 001. BIB information corrected in   2211200100065 
+                       subents 002-004. Subents 005,006 added.    2211200100066 
+ENDBIB              64          0                                 2211200100067 
+COMMON               2          3                                 2211200100068 
+EN         EN-RSL                                                 2211200100069 
+MEV        MEV                                                    2211200100070 
+         2.      0.090                                            2211200100071 
+ENDCOMMON            3          0                                 2211200100072 
+ENDSUBENT           71          0                                 2211200199999 
+SUBENT        22112002   20110720                             22272211200200001 
+BIB                  6          9                                 2211200200002 
+REACTION   (92-U-238(N,F),PR,NU/DE,,RRE/REL) Divided by SQRT(E),  2211200200003 
+                       data given in arbitrary units              2211200200004 
+METHOD     (TOF)  .Flight path is 3.9 m                           2211200200005 
+ANALYSIS   .Detector set up at 90 degrees with respect to         2211200200006 
+            the proton beam line.                                 2211200200007 
+ERR-ANALYS (ERR-S)   Statistical errors only.                     2211200200008 
+STATUS     (TABLE)   Data obtained from M.Baba.                   2211200200009 
+HISTORY    (20110219A) ON: Reaction code changed in SF5-SF8:      2211200200010 
+                             PR,DE,N => PR,NU/DE,,REL             2211200200011 
+ENDBIB               9          0                                 2211200200012 
+NOCOMMON             0          0                                 2211200200013 
+DATA                 3         30                                 2211200200014 
+E          DATA       ERR-S                                       2211200200015 
+MEV        ARB-UNITS  ARB-UNITS                                   2211200200016 
+ 2.5000E+00 1.6780E-01 1.7850E-03                                 2211200200017 
+ 2.7000E+00 1.4920E-01 1.6550E-03                                 2211200200018 
+ 2.9000E+00 1.2970E-01 1.4780E-03                                 2211200200019 
+ 3.1000E+00 1.1470E-01 1.3540E-03                                 2211200200020 
+ 3.3000E+00 1.0000E-01 1.2270E-03                                 2211200200021 
+ 3.5000E+00 8.8180E-02 1.1250E-03                                 2211200200022 
+ 3.7000E+00 7.8540E-02 1.0450E-03                                 2211200200023 
+ 3.9000E+00 6.8980E-02 9.6930E-04                                 2211200200024 
+ 4.1000E+00 6.0820E-02 8.9860E-04                                 2211200200025 
+ 4.3000E+00 5.2670E-02 8.2140E-04                                 2211200200026 
+ 4.5000E+00 4.7090E-02 7.7110E-04                                 2211200200027 
+ 4.7000E+00 4.1120E-02 7.1670E-04                                 2211200200028 
+ 4.9000E+00 3.6430E-02 6.7090E-04                                 2211200200029 
+ 5.1000E+00 3.0770E-02 6.4070E-04                                 2211200200030 
+ 5.3950E+00 2.4770E-02 4.2460E-04                                 2211200200031 
+ 5.7950E+00 1.8860E-02 3.6550E-04                                 2211200200032 
+ 6.1950E+00 1.3680E-02 3.0860E-04                                 2211200200033 
+ 6.5950E+00 1.0480E-02 2.7090E-04                                 2211200200034 
+ 6.9950E+00 7.2440E-03 2.2790E-04                                 2211200200035 
+ 7.3950E+00 5.3990E-03 1.9920E-04                                 2211200200036 
+ 7.7950E+00 3.7700E-03 1.6860E-04                                 2211200200037 
+ 8.1950E+00 2.8230E-03 1.4770E-04                                 2211200200038 
+ 8.5950E+00 2.3920E-03 1.3720E-04                                 2211200200039 
+ 8.9950E+00 1.6470E-03 1.1690E-04                                 2211200200040 
+ 9.3950E+00 1.1610E-03 1.0220E-04                                 2211200200041 
+ 9.7950E+00 1.0610E-03 9.9060E-05                                 2211200200042 
+ 1.0190E+01 6.9080E-04 8.5410E-05                                 2211200200043 
+ 1.0870E+01 3.2110E-04 4.2300E-05                                 2211200200044 
+ 1.1870E+01 1.6740E-04 3.4450E-05                                 2211200200045 
+ 1.2870E+01 9.7500E-05 4.1340E-05                                 2211200200046 
+ENDDATA             32          0                                 2211200200047 
+ENDSUBENT           46          0                                 2211200299999 
+SUBENT        22112003   20110720                             22272211200300001 
+BIB                  6          9                                 2211200300002 
+REACTION   (92-U-238(N,F),PR,NU/DE,,RRE/REL) Divided by SQRT(E),  2211200300003 
+                       data given in arbitrary units              2211200300004 
+METHOD     (TOF) .Flight path is 3.9 m                            2211200300005 
+ANALYSIS   .Detector set up at 135 degrees with respect to        2211200300006 
+            the proton beam line.                                 2211200300007 
+ERR-ANALYS (ERR-S)   Statistical errors only.                     2211200300008 
+STATUS     (TABLE)   Data obtained from M.Baba.                   2211200300009 
+HISTORY    (20110219A) ON: Reaction code changed in SF5-SF8:      2211200300010 
+                             PR,DE,N => PR,NU/DE,,REL             2211200300011 
+ENDBIB               9          0                                 2211200300012 
+NOCOMMON             0          0                                 2211200300013 
+DATA                 3         31                                 2211200300014 
+E          DATA       ERR-S                                       2211200300015 
+MEV        ARB-UNITS  ARB-UNITS                                   2211200300016 
+ 2.3000E+00 1.9270E-01 1.9460E-03                                 2211200300017 
+ 2.5000E+00 1.7320E-01 1.8070E-03                                 2211200300018 
+ 2.7000E+00 1.5170E-01 1.6410E-03                                 2211200300019 
+ 2.9000E+00 1.3140E-01 1.4690E-03                                 2211200300020 
+ 3.1000E+00 1.2000E-01 1.3710E-03                                 2211200300021 
+ 3.3000E+00 1.0440E-01 1.2420E-03                                 2211200300022 
+ 3.5000E+00 8.9980E-02 1.0850E-03                                 2211200300023 
+ 3.7000E+00 8.1720E-02 1.0470E-03                                 2211200300024 
+ 3.9000E+00 7.1980E-02 9.6950E-04                                 2211200300025 
+ 4.1000E+00 6.2960E-02 8.9260E-04                                 2211200300026 
+ 4.3000E+00 5.5640E-02 8.2880E-04                                 2211200300027 
+ 4.5000E+00 5.0030E-02 7.7920E-04                                 2211200300028 
+ 4.7000E+00 4.2140E-02 7.1170E-04                                 2211200300029 
+ 4.9000E+00 3.7430E-02 6.6550E-04                                 2211200300030 
+ 5.1000E+00 3.2030E-02 6.2810E-04                                 2211200300031 
+ 5.3950E+00 2.6060E-02 4.2090E-04                                 2211200300032 
+ 5.7950E+00 2.0340E-02 3.6600E-04                                 2211200300033 
+ 6.1950E+00 1.4570E-02 3.0530E-04                                 2211200300034 
+ 6.5950E+00 1.0730E-02 2.6210E-04                                 2211200300035 
+ 6.9950E+00 7.9150E-03 2.2750E-04                                 2211200300036 
+ 7.3950E+00 5.5560E-03 1.9250E-04                                 2211200300037 
+ 7.7950E+00 4.1050E-03 1.6700E-04                                 2211200300038 
+ 8.1950E+00 2.9770E-03 1.4360E-04                                 2211200300039 
+ 8.5950E+00 2.5130E-03 1.3320E-04                                 2211200300040 
+ 8.9950E+00 1.7660E-03 1.1410E-04                                 2211200300041 
+ 9.3950E+00 1.3860E-03 1.0380E-04                                 2211200300042 
+ 9.7950E+00 9.2780E-04 8.9160E-05                                 2211200300043 
+ 1.0190E+01 6.3560E-04 7.8330E-05                                 2211200300044 
+ 1.0870E+01 3.7650E-04 4.2680E-05                                 2211200300045 
+ 1.1870E+01 1.4850E-04 3.4220E-05                                 2211200300046 
+ 1.2870E+01 9.9990E-05 3.1450E-05                                 2211200300047 
+ENDDATA             33          0                                 2211200300048 
+ENDSUBENT           47          0                                 2211200399999 
+SUBENT        22112004   20110720                             22272211200400001 
+BIB                  6          9                                 2211200400002 
+REACTION   (90-TH-232(N,F),PR,NU/DE,,RRE/REL) Divided by SQRT(E), 2211200400003 
+                       data given in arbitrary units              2211200400004 
+METHOD     (TOF) Flight path is 3.2 m                             2211200400005 
+ANALYSIS   .Detector set up at 135 degrees with respect to        2211200400006 
+            the proton beam line.                                 2211200400007 
+ERR-ANALYS (ERR-S)   Statistical errors only.                     2211200400008 
+STATUS     (TABLE)   Data obtained from M.Baba.                   2211200400009 
+HISTORY    (20110219A) ON: Reaction code changed in SF5-SF8:      2211200400010 
+                             PR,DE,N => PR,NU/DE,,REL             2211200400011 
+ENDBIB               9          0                                 2211200400012 
+NOCOMMON             0          0                                 2211200400013 
+DATA                 3         29                                 2211200400014 
+E          DATA       ERR-S                                       2211200400015 
+MEV        ARB-UNITS  ARB-UNITS                                   2211200400016 
+ 2.3000E+00 4.9290E+03 9.3170E+01                                 2211200400017 
+ 2.5000E+00 4.2180E+03 8.5600E+01                                 2211200400018 
+ 2.7000E+00 3.7910E+03 8.1380E+01                                 2211200400019 
+ 2.9000E+00 3.3490E+03 7.6310E+01                                 2211200400020 
+ 3.1000E+00 2.8880E+03 7.1310E+01                                 2211200400021 
+ 3.3000E+00 2.5530E+03 6.8140E+01                                 2211200400022 
+ 3.5000E+00 2.1470E+03 6.4220E+01                                 2211200400023 
+ 3.7000E+00 2.0360E+03 6.2800E+01                                 2211200400024 
+ 3.9000E+00 1.7050E+03 5.9270E+01                                 2211200400025 
+ 4.1000E+00 1.4940E+03 5.6600E+01                                 2211200400026 
+ 4.3000E+00 1.3220E+03 5.4320E+01                                 2211200400027 
+ 4.5000E+00 1.1240E+03 5.1500E+01                                 2211200400028 
+ 4.7000E+00 9.6410E+02 4.9430E+01                                 2211200400029 
+ 4.9000E+00 8.4640E+02 4.7640E+01                                 2211200400030 
+ 5.1000E+00 7.2910E+02 3.1940E+01                                 2211200400031 
+ 5.3950E+00 6.4100E+02 2.1620E+01                                 2211200400032 
+ 5.7950E+00 4.7620E+02 1.9030E+01                                 2211200400033 
+ 6.1950E+00 3.4410E+02 1.6740E+01                                 2211200400034 
+ 6.5950E+00 2.6400E+02 1.5200E+01                                 2211200400035 
+ 6.9950E+00 1.8880E+02 1.3600E+01                                 2211200400036 
+ 7.3950E+00 1.6050E+02 1.2870E+01                                 2211200400037 
+ 7.7950E+00 9.5990E+01 1.1040E+01                                 2211200400038 
+ 8.1950E+00 8.1030E+01 1.0460E+01                                 2211200400039 
+ 8.5950E+00 6.2890E+01 9.7170E+00                                 2211200400040 
+ 8.9950E+00 3.6490E+01 8.5560E+00                                 2211200400041 
+ 9.3950E+00 2.9480E+01 8.2270E+00                                 2211200400042 
+ 9.7950E+00 2.1410E+01 7.8200E+00                                 2211200400043 
+ 1.0190E+01 8.9190E+00 7.2030E+00                                 2211200400044 
+ 1.0870E+01 8.5720E+00 4.5230E+00                                 2211200400045 
+ENDDATA             31          0                                 2211200400046 
+ENDSUBENT           45          0                                 2211200499999 
+SUBENT        22112005   20110720                             22272211200500001 
+BIB                  7         14                                 2211200500002 
+REACTION   (90-TH-232(N,F)0-NN-1,PR,KEM) Temperature of the       2211200500003 
+                 prompt fission neutron for Maxwell distribution  2211200500004 
+ANALYSIS   .Obtained by Maxwell fitting of experimental data      2211200500005 
+REL-REF    (A,21019001,R.Batchelor+,J,NP,65,236,196503) Reference 2211200500006 
+                corrected of presented in INDC(NDS)-220,149,1989  2211200500007 
+           (A,21139001,E.Barnard+,J,NP,71,228,196509)             2211200500008 
+           (A,,F.Terrel,J,PR,127,880,1962)                        2211200500009 
+COMMENT    .Reference to Terrell taken from INDC(NDS)-220,149,    2211200500010 
+            1989. Absent in CINDA and EXFOR                       2211200500011 
+ERR-ANALYS .Error is of the order of few percent                  2211200500012 
+STATUS     (TABLE) Data taken from the text of INDC(NDS)-220,     2211200500013 
+                   149,1989, page 154                             2211200500014 
+           (DEP,22112004)                                         2211200500015 
+HISTORY    (20110720C) S.M.                                       2211200500016 
+ENDBIB              14          0                                 2211200500017 
+NOCOMMON             0          0                                 2211200500018 
+DATA                 1          1                                 2211200500019 
+DATA                                                              2211200500020 
+MEV                                                               2211200500021 
+   1.26                                                           2211200500022 
+ENDDATA              3          0                                 2211200500023 
+ENDSUBENT           22          0                                 2211200599999 
+SUBENT        22112006   20110720                             22272211200600001 
+BIB                  7         17                                 2211200600002 
+REACTION   (92-U-238(N,F)0-NN-1,PR,KEM) Temperature of the prompt 2211200600003 
+                 fission neutron for Maxwell distribution         2211200600004 
+ANALYSIS   .Obtained by Maxwell fitting of experimental data      2211200600005 
+REL-REF    (A,21019001,R.Batchelor+,J,NP,65,236,196503) Reference 2211200600006 
+                corrected of presented in INDC(NDS)-220,149,1989  2211200600007 
+           (A,21139001,E.Barnard+,J,NP,71,228,196509)             2211200600008 
+           (D,,R.J.Howerton+,J,NSE,46,414,1971) Temperature is    2211200600009 
+                                           less by 4.5%           2211200600010 
+           (A,,F.Terrel,J,PR,127,880,1962)                        2211200600011 
+COMMENT    .References to Howerton and Terrell taken from         2211200600012 
+            INDC(NDS)-220,149,1989, Absent in CINDA and EXFOR     2211200600013 
+ERR-ANALYS .Error is of the order of few percent                  2211200600014 
+STATUS     (TABLE)  .Data taken from the text of INDC(NDS)-220,   2211200600015 
+                     149,1989, page 154                           2211200600016 
+           (DEP,22112002)                                         2211200600017 
+           (DEP,22112003)                                         2211200600018 
+HISTORY    (20110720C) S.M.                                       2211200600019 
+ENDBIB              17          0                                 2211200600020 
+NOCOMMON             0          0                                 2211200600021 
+DATA                 1          1                                 2211200600022 
+DATA                                                              2211200600023 
+MEV                                                               2211200600024 
+   1.25                                                           2211200600025 
+ENDDATA              3          0                                 2211200600026 
+ENDSUBENT           25          0                                 2211200699999 
+ENDENTRY             6          0                                 2211299999999 

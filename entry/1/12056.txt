@@ -1,0 +1,65 @@
+ENTRY            12056   19841024                             00001205600000001 
+SUBENT        12056001   19841024                             00001205600100001 
+BIB                  7         11                                 1205600100002 
+INSTITUTE  (1USAORL)                                              1205600100003 
+REFERENCE  (J,NSE,20,302,64)                                      1205600100004 
+AUTHOR     (P.M.LANTZ,C.R.BALDOCK,L.E.IDOM)                       1205600100005 
+TITLE      THERMAL-NEUTRON CAPTURE CROSS SECTION AND RESONANCE    1205600100006 
+           CAPTURE INTEGRAL OF CE140 AND EFFECTIVE CAPTURE CROSS  1205600100007 
+           SECTION OF CE141.                                      1205600100008 
+INC-SOURCE (REAC) LITR                                            1205600100009 
+STATUS     (SCSRS)                                                1205600100010 
+HISTORY    (760802T) TRANSLATED FROM SCISRS                       1205600100011 
+           (790731U) BIB CORRECTIONS.                             1205600100012 
+           (841024A) BIB CORRECTION. DATA HEADINGS CORRECTED.     1205600100013 
+ENDBIB              11          0                                 1205600100014 
+NOCOMMON             0          0                                 1205600100015 
+ENDSUBENT           14          0                                 1205600199999 
+SUBENT        12056002   19841024                             00001205600200001 
+BIB                  5          6                                 1205600200002 
+REACTION   (58-CE-140(N,G)58-CE-141,,SIG,,MXW)                    1205600200003 
+METHOD     (ACTIV) ACTIVATION                                     1205600200004 
+DECAY-DATA (58-CE-141,32.5D,DG,141.)                              1205600200005 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         1205600200006 
+           (79-AU-197(N,G)79-AU-198,,RI)                          1205600200007 
+COMMENT    MEASURED EPITHERMAL INDEX = 0.048                      1205600200008 
+ENDBIB               6          0                                 1205600200009 
+NOCOMMON             0          0                                 1205600200010 
+DATA                 5          1                                 1205600200011 
+EN-DUMMY   DATA       DATA-ERR   MONIT1     MONIT2                1205600200012 
+MEV        B          B          B          B                     1205600200013 
+ 2.53   -08 5.9    -01 6.     -02 99.        1558.                1205600200014 
+ENDDATA              3          0                                 1205600200015 
+ENDSUBENT           14          0                                 1205600299999 
+SUBENT        12056003   19841024                             00001205600300001 
+BIB                  4          5                                 1205600300002 
+REACTION   (58-CE-140(N,G)58-CE-141,,RI)                          1205600300003 
+METHOD     (ACTIV) ACTIVATION                                     1205600300004 
+DECAY-DATA (58-CE-141,32.5D,DG,141.)                              1205600300005 
+MONITOR    (27-CO-59(N,G)27-CO-60,,SIG)                           1205600300006 
+           (27-CO-59(N,G)27-CO-60,,RI)                            1205600300007 
+ENDBIB               5          0                                 1205600300008 
+NOCOMMON             0          0                                 1205600300009 
+DATA                 5          1                                 1205600300010 
+EN-MIN     DATA       DATA-ERR   MONIT1     MONIT2                1205600300011 
+MEV        B          B          B          B                     1205600300012 
+ 5.     -07 4.8    -01 5.     -02 37.4       75.                  1205600300013 
+ENDDATA              3          0                                 1205600300014 
+ENDSUBENT           13          0                                 1205600399999 
+SUBENT        12056004   19841024                             00001205600400001 
+BIB                  5          6                                 1205600400002 
+REACTION   (58-CE-141(N,G)58-CE-142,,SIG,,SPA)                    1205600400003 
+FACILITY   (SPECM)    MASS SPECTROMETER                           1205600400004 
+MONITOR    (27-CO-59(N,G)27-CO-60,,SIG) CO THERMAL CAPTURE=37.9 B.1205600400005 
+ASSUMED    (ASSUM1,58-CE-140(N,G)58-CE-141,,SIG)                  1205600400006 
+           (ASSUM2,58-CE-140(N,G)58-CE-141,,RI)                   1205600400007 
+INC-SPECT   REACTOR SPECTRUM                                      1205600400008 
+ENDBIB               6          0                                 1205600400009 
+NOCOMMON             0          0                                 1205600400010 
+DATA                 6          1                                 1205600400011 
+EN-DUMMY   DATA       DATA-ERR   MONIT      ASSUM1     ASSUM2     1205600400012 
+MEV        B          B          B          B          B          1205600400013 
+ 2.53   -08 2.9    +01 3.     +00 37.9       0.59       0.48      1205600400014 
+ENDDATA              3          0                                 1205600400015 
+ENDSUBENT           14          0                                 1205600499999 
+ENDENTRY             4          0                                 1205699999999 

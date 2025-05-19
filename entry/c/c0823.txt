@@ -1,0 +1,360 @@
+ENTRY            C0823   20031009                             0000C082300000001 
+SUBENT        C0823001   20031009                             0000C082300100001 
+BIB                 11         37                                 C082300100002 
+INSTITUTE  (1USACLU,1USALAS,1USAOSU,1USAOHO,1USACLA,1USAINU,      C082300100003 
+           1CANUWO)                                               C082300100004 
+REFERENCE  (J,PR/C,47,2159,199305)                                C082300100005 
+AUTHOR     (X.Y.Chen,T.N.Tadeucci,J.B.McClelland,T.A.Carey,       C082300100006 
+           R.C.Byrd,L.J.Rybarcyk,W.C.Sailor,D.J.Mercer,D.L.Prout, C082300100007 
+           S.DeLucia,B.Luther,D.G.Marchlenski,E.Sugarbaker,       C082300100008 
+           J.Rapaport,E.Guelmez,C.A.Whitten Jr,C.D.Goodman,       C082300100009 
+           W.Huang,Y.Wang,W.P.Alford)                             C082300100010 
+TITLE      Polarization transfer in quasifree (p(pol),n(pol))     C082300100011 
+            reactions at 495 MeV                                  C082300100012 
+FACILITY   (MESON,1USALAS) Neutron time-of-flight facility at     C082300100013 
+             LAMPF.                                               C082300100014 
+INC-SOURCE (POLIS) Optically Pumped Polarized Ion Source (OPPIS). C082300100015 
+            Beam cycled every 30 min through cycle normal,        C082300100016 
+            unpolarized, reversed, unpolarized. Average beam      C082300100017 
+            polarization 0.53.                                    C082300100018 
+METHOD     (BCINT)                                                C082300100019 
+            Neutron energy determined by time-of-flight.          C082300100020 
+DETECTOR   (SCIN) NTOF detector/polarimeter consisting of 4       C082300100021 
+            parallel planes oriented perpendicular to the neutron C082300100022 
+            flux: 3 liquid scintillator tanks (BC-517s), and a 4thC082300100023 
+            set of 10 plastic scintillators (BC-408). Thin plasticC082300100024 
+            scintillators in front and between front and back     C082300100025 
+            pairs of neutron detectors are used to tag charged    C082300100026 
+            particles. In polarization mode, the front pair of    C082300100027 
+            liquid scintillator planes also serve as neutron      C082300100028 
+            polarization analyzers.                               C082300100029 
+           (TELES,SCIN) Beam polarization measured using two beam-C082300100030 
+            line polarimeters, each having four arms of collimatedC082300100031 
+            pairs of conjugate-angle plastic scintillator (CH2)   C082300100032 
+            telescopes.                                           C082300100033 
+ERR-ANALYS Systematic uncertainty of beam polarization about 0.01;C082300100034 
+            statistical uncertainties typically an order of       C082300100035 
+            magnitude smaller.                                    C082300100036 
+STATUS     Data taken from tables in reference.                   C082300100037 
+           No reply from T. Taddeucci to author proof.            C082300100038 
+HISTORY    (20020604C) VM                                         C082300100039 
+ENDBIB              37          0                                 C082300100040 
+COMMON               3          3                                 C082300100041 
+EN         EN-ERR     ANG                                         C082300100042 
+MEV        MEV        ADEG                                        C082300100043 
+495.         0.5       18.                                        C082300100044 
+ENDCOMMON            3          0                                 C082300100045 
+ENDSUBENT           44          0                                 C082300199999 
+SUBENT        C0823002   20030826                             0000C082300200001 
+BIB                  5          8                                 C082300200002 
+REACTION   (1-H-2(P,N)2-HE-2,,DA/DE,,FCT)                         C082300200003 
+             Data given in mb/sr/10-MeV.                          C082300200004 
+SAMPLE     CD2 target; areal density 0.78 g.cm2.                  C082300200005 
+MONITOR    (3-LI-7(P,N)4-BE-7,PAR,DA) Normalization of neutron    C082300200006 
+            yields.                                               C082300200007 
+ERR-ANALYS (ERR-S) Uncertainty given is from statistics and       C082300200008 
+            carbon subtraction systematics.                       C082300200009 
+STATUS     (DEP,C0823004) Carbon data.                            C082300200010 
+ENDBIB               8          0                                 C082300200011 
+COMMON               5          3                                 C082300200012 
+E-LVL-NRM  E-LVL-NRM  ANG-NRM    MONIT      MONIT-ERR             C082300200013 
+MEV        MEV        ADEG       MB/SR      MB/SR                 C082300200014 
+  0.         0.43       0.        27.0        0.8                 C082300200015 
+ENDCOMMON            3          0                                 C082300200016 
+DATA                 3          7                                 C082300200017 
+E-DGD      DATA       ERR-S                                       C082300200018 
+MEV        MB/SR/MEV  MB/SR/MEV                                   C082300200019 
+ 100.0       0.4545     0.0039                                    C082300200020 
+  90.0       0.7628     0.0042                                    C082300200021 
+  80.0       1.3919     0.0045                                    C082300200022 
+  70.0       2.5946     0.0051                                    C082300200023 
+  60.0       3.4015     0.0053                                    C082300200024 
+  50.0       2.1117     0.0045                                    C082300200025 
+  40.0       0.8251     0.0035                                    C082300200026 
+ENDDATA              9          0                                 C082300200027 
+ENDSUBENT           26          0                                 C082300299999 
+SUBENT        C0823003   20030826                             0000C082300300001 
+BIB                  5          9                                 C082300300002 
+REACTION  1(1-H-2(P,N)2-HE-2,,POL/DA/DE,,ANA)                     C082300300003 
+          2(1-H-2(P,N)2-HE-2,,POL/DA/DE)                          C082300300004 
+SAMPLE     CD2 target; areal density 0.78 g.cm2.                  C082300300005 
+MONITOR    Effective analyzing power of detector calibrated using C082300300006 
+            2H(p,n) at 0 and 18 degrees, and 14C(p,n)14N at 0     C082300300007 
+            degrees to 2.31-MeV level.                            C082300300008 
+ERR-ANALYS (ERR-S) Uncertainty given is from statistics and       C082300300009 
+            carbon subtraction systematics.                       C082300300010 
+STATUS     (DEP,C0823005) Carbon data.                            C082300300011 
+ENDBIB               9          0                                 C082300300012 
+NOCOMMON             0          0                                 C082300300013 
+DATA                 5          7                                 C082300300014 
+E-DGD      DATA      1ERR-S     1DATA      2ERR-S     2           C082300300015 
+MEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM                C082300300016 
+ 100.0      0.115      0.039      0.087      0.081                C082300300017 
+  90.0      0.124      0.021      0.305      0.076                C082300300018 
+  80.0      0.125      0.009      0.126      0.030                C082300300019 
+  70.0      0.129      0.004      0.148      0.018                C082300300020 
+  60.0      0.129      0.003      0.124      0.014                C082300300021 
+  50.0      0.119      0.004      0.120      0.019                C082300300022 
+  40.0      0.041      0.008      0.156      0.040                C082300300023 
+ENDDATA              9          0                                 C082300300024 
+ENDSUBENT           23          0                                 C082300399999 
+SUBENT        C0823004   20030826                             0000C082300400001 
+BIB                  4          6                                 C082300400002 
+REACTION   (6-C-12(P,N)7-N-12,,DA/DE,,FCT)                        C082300400003 
+             Data given in mb/sr/10-MeV.                          C082300400004 
+SAMPLE     Natural carbon target; areal density 0.99 g.cm2.       C082300400005 
+MONITOR    (3-LI-7(P,N)4-BE-7,PAR,DA) Normalization of neutron    C082300400006 
+            yields.                                               C082300400007 
+ERR-ANALYS (ERR-S) Statistical uncertainty given.                 C082300400008 
+ENDBIB               6          0                                 C082300400009 
+COMMON               5          3                                 C082300400010 
+E-LVL-NRM  E-LVL-NRM  ANG-NRM    MONIT      MONIT-ERR             C082300400011 
+MEV        MEV        ADEG       MB/SR      MB/SR                 C082300400012 
+  0.         0.43       0.        27.0        0.8                 C082300400013 
+ENDCOMMON            3          0                                 C082300400014 
+DATA                 3         14                                 C082300400015 
+E-DGD      DATA       ERR-S                                       C082300400016 
+MEV        MB/SR/MEV  MB/SR/MEV                                   C082300400017 
+ 160.0       0.7005     0.0021                                    C082300400018 
+ 150.0       1.5515     0.0031                                    C082300400019 
+ 140.0       1.8260     0.0033                                    C082300400020 
+ 130.0       2.1435     0.0036                                    C082300400021 
+ 120.0       2.5326     0.0039                                    C082300400022 
+ 110.0       2.9191     0.0042                                    C082300400023 
+ 100.0       3.2680     0.0045                                    C082300400024 
+  90.0       3.5369     0.0047                                    C082300400025 
+  80.0       3.5813     0.0047                                    C082300400026 
+  70.0       3.4150     0.0046                                    C082300400027 
+  60.0       3.0694     0.0044                                    C082300400028 
+  50.0       2.5896     0.0040                                    C082300400029 
+  40.0       2.0604     0.0036                                    C082300400030 
+  30.0       2.1975     0.0037                                    C082300400031 
+ENDDATA             16          0                                 C082300400032 
+ENDSUBENT           31          0                                 C082300499999 
+SUBENT        C0823005   20030826                             0000C082300500001 
+BIB                  4          7                                 C082300500002 
+REACTION  1(6-C-12(P,N)7-N-12,,POL/DA/DE,,ANA)                    C082300500003 
+          2(6-C-12(P,N)7-N-12,,POL/DA/DE)                         C082300500004 
+SAMPLE     Natural carbon target; areal density 0.99 g.cm2.       C082300500005 
+MONITOR    Effective analyzing power of detector calibrated using C082300500006 
+            2H(p,n) at 0 and 18 degrees, and 14C(p,n)14N at 0     C082300500007 
+            degrees to 2.31-MeV level.                            C082300500008 
+ERR-ANALYS (ERR-S) Statistical uncertainty given.                 C082300500009 
+ENDBIB               7          0                                 C082300500010 
+NOCOMMON             0          0                                 C082300500011 
+DATA                 5         14                                 C082300500012 
+E-DGD      DATA      1ERR-S     1DATA      2ERR-S     2           C082300500013 
+MEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM                C082300500014 
+ 160.0      0.116      0.005      0.231      0.030                C082300500015 
+ 150.0      0.117      0.004      0.240      0.020                C082300500016 
+ 140.0      0.129      0.003      0.225      0.018                C082300500017 
+ 130.0      0.133      0.003      0.180      0.016                C082300500018 
+ 120.0      0.140      0.003      0.193      0.015                C082300500019 
+ 110.0      0.139      0.003      0.194      0.014                C082300500020 
+ 100.0      0.142      0.002      0.161      0.013                C082300500021 
+  90.0      0.135      0.002      0.144      0.012                C082300500022 
+  80.0      0.139      0.002      0.140      0.012                C082300500023 
+  70.0      0.136      0.002      0.123      0.012                C082300500024 
+  60.0      0.132      0.003      0.128      0.013                C082300500025 
+  50.0      0.137      0.003      0.147      0.014                C082300500026 
+  40.0      0.154      0.003      0.156      0.016                C082300500027 
+  30.0      0.175      0.003      0.178      0.016                C082300500028 
+ENDDATA             16          0                                 C082300500029 
+ENDSUBENT           28          0                                 C082300599999 
+SUBENT        C0823006   20030826                             0000C082300600001 
+BIB                  4          6                                 C082300600002 
+REACTION   (20-CA-40(P,N)21-SC-40,,DA/DE,,FCT)                    C082300600003 
+             Data given in mb/sr/10-MeV.                          C082300600004 
+SAMPLE     Natural calcium target; areal density 1.00 g.cm2.      C082300600005 
+MONITOR    (3-LI-7(P,N)4-BE-7,PAR,DA) Normalization of neutron    C082300600006 
+            yields.                                               C082300600007 
+ERR-ANALYS (ERR-S) Statistical uncertainty given.                 C082300600008 
+ENDBIB               6          0                                 C082300600009 
+COMMON               5          3                                 C082300600010 
+E-LVL-NRM  E-LVL-NRM  ANG-NRM    MONIT      MONIT-ERR             C082300600011 
+MEV        MEV        ADEG       MB/SR/MEV  MB/SR/MEV             C082300600012 
+  0.         0.43       0.        27.0        0.8                 C082300600013 
+ENDCOMMON            3          0                                 C082300600014 
+DATA                 3         14                                 C082300600015 
+E-DGD      DATA       ERR-S                                       C082300600016 
+MEV        MB/SR      MB/SR                                       C082300600017 
+ 160.0       1.3925     0.0038                                    C082300600018 
+ 150.0       3.3770     0.0059                                    C082300600019 
+ 140.0       3.9171     0.0063                                    C082300600020 
+ 130.0       4.4881     0.0068                                    C082300600021 
+ 120.0       5.1470     0.0072                                    C082300600022 
+ 110.0       5.7253     0.0076                                    C082300600023 
+ 100.0       6.1511     0.0079                                    C082300600024 
+  90.0       6.4934     0.0082                                    C082300600025 
+  80.0       6.5545     0.0082                                    C082300600026 
+  70.0       6.3815     0.0081                                    C082300600027 
+  60.0       5.8510     0.0078                                    C082300600028 
+  50.0       4.8763     0.0071                                    C082300600029 
+  40.0       3.5168     0.0060                                    C082300600030 
+  30.0       2.1906     0.0048                                    C082300600031 
+ENDDATA             16          0                                 C082300600032 
+ENDSUBENT           31          0                                 C082300699999 
+SUBENT        C0823007   20030826                             0000C082300700001 
+BIB                  4          7                                 C082300700002 
+REACTION  1(20-CA-40(P,N)21-SC-40,,POL/DA/DE,,ANA)                C082300700003 
+          2(20-CA-40(P,N)21-SC-40,,POL/DA/DE)                     C082300700004 
+SAMPLE     Natural calcium target; areal density 1.00 g.cm2.      C082300700005 
+MONITOR    Effective analyzing power of detector calibrated using C082300700006 
+            2H(p,n) at 0 and 18 degrees, and 14C(p,n)14N at 0     C082300700007 
+            degrees to 2.31-MeV level.                            C082300700008 
+ERR-ANALYS (ERR-S) Statistical uncertainty given.                 C082300700009 
+ENDBIB               7          0                                 C082300700010 
+NOCOMMON             0          0                                 C082300700011 
+DATA                 5         14                                 C082300700012 
+E-DGD      DATA      1ERR-S     1DATA      2ERR-S     2           C082300700013 
+MEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM                C082300700014 
+ 160.0      0.129      0.005      0.158      0.027                C082300700015 
+ 150.0      0.138      0.003      0.189      0.017                C082300700016 
+ 140.0      0.148      0.003      0.210      0.016                C082300700017 
+ 130.0      0.150      0.003      0.212      0.014                C082300700018 
+ 120.0      0.151      0.003      0.187      0.013                C082300700019 
+ 110.0      0.149      0.002      0.185      0.013                C082300700020 
+ 100.0      0.152      0.002      0.165      0.012                C082300700021 
+  90.0      0.164      0.002      0.159      0.011                C082300700022 
+  80.0      0.161      0.002      0.165      0.011                C082300700023 
+  70.0      0.170      0.002      0.169      0.011                C082300700024 
+  60.0      0.173      0.002      0.141      0.012                C082300700025 
+  50.0      0.178      0.003      0.178      0.013                C082300700026 
+  40.0      0.182      0.003      0.173      0.016                C082300700027 
+  30.0      0.205      0.004      0.178      0.021                C082300700028 
+ENDDATA             16          0                                 C082300700029 
+ENDSUBENT           28          0                                 C082300799999 
+SUBENT        C0823008   20030826                             0000C082300800001 
+BIB                  5         12                                 C082300800002 
+REACTION  1(1-H-2(P,N)2-HE-2,NN,POL/DA/DE,,D)                     C082300800003 
+          2(1-H-2(P,N)2-HE-2,SS,POL/DA/DE,,D)                     C082300800004 
+          3(1-H-2(P,N)2-HE-2,LL,POL/DA/DE,,D)                     C082300800005 
+          4(1-H-2(P,N)2-HE-2,LS,POL/DA/DE,,D)                     C082300800006 
+          5(1-H-2(P,N)2-HE-2,SL,POL/DA/DE,,D)                     C082300800007 
+SAMPLE     CD2 target; areal density 0.78 g.cm2.                  C082300800008 
+MONITOR    Effective analyzing power of detector calibrated using C082300800009 
+            2H(p,n) at 0 and 18 degrees, and 14C(p,n)14N at 0     C082300800010 
+            degrees to 2.31-MeV level.                            C082300800011 
+ERR-ANALYS (ERR-S) Uncertainty given is from statistics and       C082300800012 
+            carbon subtraction systematics.                       C082300800013 
+STATUS     (DEP,C0823009) Carbon data.                            C082300800014 
+ENDBIB              12          0                                 C082300800015 
+NOCOMMON             0          0                                 C082300800016 
+DATA                11          7                                 C082300800017 
+E-DGD      DATA      1ERR-S     1DATA      2ERR-S     2DATA      3C082300800018 
+ERR-S     3DATA      4ERR-S     4DATA      5ERR-S     5           C082300800019 
+MEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     C082300800020 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                C082300800021 
+ 100.0     -0.128      0.170     -0.428      0.226     -0.424     C082300800022 
+ 0.201     -0.125      0.179     -0.007      0.145                C082300800023 
+  90.0     -0.149      0.109     -0.207      0.109     -0.460     C082300800024 
+ 0.117     -0.056      0.109     -0.199      0.101                C082300800025 
+  80.0      0.076      0.060     -0.239      0.064     -0.512     C082300800026 
+ 0.064     -0.052      0.064     -0.132      0.056                C082300800027 
+  70.0     -0.021      0.036     -0.199      0.038     -0.453     C082300800028 
+ 0.034     -0.034      0.038     -0.083      0.033                C082300800029 
+  60.0      0.006      0.029     -0.211      0.030     -0.466     C082300800030 
+ 0.027     -0.029      0.030     -0.111      0.027                C082300800031 
+  50.0      0.043      0.040     -0.294      0.042     -0.514     C082300800032 
+ 0.039     -0.047      0.042     -0.144      0.037                C082300800033 
+  40.0     -0.143      0.081      0.060      0.085     -0.360     C082300800034 
+ 0.075     -0.172      0.086     -0.088      0.074                C082300800035 
+ENDDATA             18          0                                 C082300800036 
+ENDSUBENT           35          0                                 C082300899999 
+SUBENT        C0823009   20030826                             0000C082300900001 
+BIB                  4         10                                 C082300900002 
+REACTION  1(6-C-12(P,N)7-N-12,NN,POL/DA/DE,,D)                    C082300900003 
+          2(6-C-12(P,N)7-N-12,SS,POL/DA/DE,,D)                    C082300900004 
+          3(6-C-12(P,N)7-N-12,LL,POL/DA/DE,,D)                    C082300900005 
+          4(6-C-12(P,N)7-N-12,LS,POL/DA/DE,,D)                    C082300900006 
+          5(6-C-12(P,N)7-N-12,SL,POL/DA/DE,,D)                    C082300900007 
+SAMPLE     Natural carbon target; areal density 0.99 g.cm2.       C082300900008 
+MONITOR    Effective analyzing power of detector calibrated using C082300900009 
+            2H(p,n) at 0 and 18 degrees, and 14C(p,n)14N at 0     C082300900010 
+            degrees to 2.31-MeV level.                            C082300900011 
+ERR-ANALYS (ERR-S) Statistical uncertainty given.                 C082300900012 
+ENDBIB              10          0                                 C082300900013 
+NOCOMMON             0          0                                 C082300900014 
+DATA                11         14                                 C082300900015 
+E-DGD      DATA      1ERR-S     1DATA      2ERR-S     2DATA      3C082300900016 
+ERR-S     3DATA      4ERR-S     4DATA      5ERR-S     5           C082300900017 
+MEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     C082300900018 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                C082300900019 
+160.0       0.020      0.060     -0.376      0.063     -0.401     C082300900020 
+ 0.049      0.159      0.064     -0.060      0.048                C082300900021 
+150.0       0.071      0.040     -0.292      0.039     -0.443     C082300900022 
+ 0.033      0.127      0.040     -0.025      0.032                C082300900023 
+140.0       0.108      0.036     -0.347      0.036     -0.423     C082300900024 
+ 0.030      0.047      0.036     -0.035      0.030                C082300900025 
+130.0       0.087      0.033     -0.261      0.033     -0.461     C082300900026 
+ 0.028      0.061      0.033     -0.053      0.027                C082300900027 
+120.0       0.076      0.030     -0.326      0.030     -0.431     C082300900028 
+ 0.025      0.038      0.030     -0.040      0.025                C082300900029 
+110.0       0.049      0.027     -0.357      0.027     -0.423     C082300900030 
+ 0.023      0.036      0.028     -0.089      0.023                C082300900031 
+100.0       0.046      0.026     -0.300      0.026     -0.452     C082300900032 
+ 0.022      0.058      0.026     -0.080      0.022                C082300900033 
+ 90.0       0.096      0.024     -0.338      0.024     -0.463     C082300900034 
+ 0.021      0.000      0.025     -0.051      0.021                C082300900035 
+ 80.0       0.036      0.024     -0.314      0.024     -0.482     C082300900036 
+ 0.021      0.007      0.024     -0.118      0.020                C082300900037 
+ 70.0       0.034      0.024     -0.256      0.024     -0.479     C082300900038 
+ 0.021     -0.011      0.025     -0.063      0.021                C082300900039 
+ 60.0       0.080      0.025     -0.229      0.026     -0.521     C082300900040 
+ 0.022      0.016      0.026     -0.054      0.022                C082300900041 
+ 50.0       0.045      0.028     -0.213      0.028     -0.514     C082300900042 
+ 0.024      0.066      0.029     -0.026      0.024                C082300900043 
+ 40.0       0.027      0.032     -0.299      0.032     -0.564     C082300900044 
+ 0.028     -0.010      0.033     -0.030      0.028                C082300900045 
+ 30.0       0.083      0.032     -0.323      0.032     -0.585     C082300900046 
+ 0.028     -0.031      0.033     -0.049      0.027                C082300900047 
+ENDDATA             32          0                                 C082300900048 
+ENDSUBENT           47          0                                 C082300999999 
+SUBENT        C0823010   20030826                             0000C082301000001 
+BIB                  4         10                                 C082301000002 
+REACTION  1(20-CA-40(P,N)21-SC-40,NN,POL/DA/DE,,D)                C082301000003 
+          2(20-CA-40(P,N)21-SC-40,SS,POL/DA/DE,,D)                C082301000004 
+          3(20-CA-40(P,N)21-SC-40,LL,POL/DA/DE,,D)                C082301000005 
+          4(20-CA-40(P,N)21-SC-40,LS,POL/DA/DE,,D)                C082301000006 
+          5(20-CA-40(P,N)21-SC-40,SL,POL/DA/DE,,D)                C082301000007 
+SAMPLE     Natural calcium target; areal density 1.00 g.cm2.      C082301000008 
+MONITOR    Effective analyzing power of detector calibrated using C082301000009 
+            2H(p,n) at 0 and 18 degrees, and 14C(p,n)14N at 0     C082301000010 
+            degrees to 2.31-MeV level.                            C082301000011 
+ERR-ANALYS (ERR-S) Statistical uncertainty given.                 C082301000012 
+ENDBIB              10          0                                 C082301000013 
+NOCOMMON             0          0                                 C082301000014 
+DATA                11         13                                 C082301000015 
+E-DGD      DATA      1ERR-S     1DATA      2ERR-S     2DATA      3C082301000016 
+ERR-S     3DATA      4ERR-S     4DATA      5ERR-S     5           C082301000017 
+MEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM     C082301000018 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM     NO-DIM                C082301000019 
+160.0       0.070      0.057     -0.245      0.050     -0.467     C082301000020 
+ 0.052      0.198      0.051      0.038      0.051                C082301000021 
+150.0       0.030      0.036     -0.294      0.034     -0.408     C082301000022 
+ 0.034      0.097      0.035     -0.031      0.034                C082301000023 
+140.0       0.037      0.033     -0.254      0.031     -0.404     C082301000024 
+ 0.032      0.034      0.032     -0.016      0.031                C082301000025 
+130.0       0.113      0.031     -0.315      0.029     -0.487     C082301000026 
+ 0.029      0.043      0.030     -0.027      0.029                C082301000027 
+120.0       0.097      0.028     -0.340      0.027     -0.489     C082301000028 
+ 0.027      0.108      0.027     -0.064      0.027                C082301000029 
+110.0       0.061      0.026     -0.359      0.025     -0.454     C082301000030 
+ 0.025      0.059      0.025     -0.035      0.025                C082301000031 
+100.0       0.084      0.025     -0.295      0.024     -0.444     C082301000032 
+ 0.024      0.023      0.024     -0.089      0.024                C082301000033 
+ 90.0       0.077      0.024     -0.316      0.023     -0.520     C082301000034 
+ 0.023      0.058      0.023     -0.043      0.023                C082301000035 
+ 80.0       0.079      0.024     -0.251      0.023     -0.468     C082301000036 
+ 0.023     -0.011      0.023     -0.055      0.023                C082301000037 
+ 70.0       0.080      0.024     -0.223      0.023     -0.511     C082301000038 
+ 0.023      0.029      0.023     -0.056      0.023                C082301000039 
+ 60.0       0.021      0.025     -0.276      0.024     -0.509     C082301000040 
+ 0.024     -0.001      0.024     -0.052      0.024                C082301000041 
+ 50.0       0.085      0.028     -0.297      0.026     -0.463     C082301000042 
+ 0.027      0.039      0.027      0.002      0.027                C082301000043 
+ 40.0       0.123      0.033     -0.231      0.032     -0.477     C082301000044 
+ 0.033     -0.004      0.032     -0.090      0.042                C082301000045 
+ENDDATA             30          0                                 C082301000046 
+ENDSUBENT           45          0                                 C082301099999 
+ENDENTRY            10          0                                 C082399999999 

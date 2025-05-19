@@ -1,0 +1,71 @@
+ENTRY            30580   20090506                             31373058000000001 
+SUBENT        30580001   20090506                             31373058000100001 
+BIB                 14         25                                 3058000100002 
+INSTITUTE  (3DDRZFI)                                              3058000100003 
+REFERENCE  (J,IP,17,6,198101) In German                           3058000100004 
+AUTHOR     (G.Pfrepper)                                           3058000100005 
+TITLE      -Measurement of cross sections of the reactions        3058000100006 
+           Sr-86(n,p)Rb-86 and Sr-84(n,p)Rb-84 with fission       3058000100007 
+           neutrons-                                              3058000100008 
+FACILITY   (REAC,3DDRROS)                                         3058000100009 
+INC-SOURCE (REAC)                                                 3058000100010 
+INC-SPECT  Fission spectrum                                       3058000100011 
+SAMPLE     Sr-Co(3), 400-600 mg                                   3058000100012 
+METHOD     (ACTIV,CHSEP)                                          3058000100013 
+           For the Sr-86(n,p)Rb-86 reaction, the thermal (n,g)    3058000100014 
+           reaction leading to the same residual nuclide was used 3058000100015 
+           for comparison.                                        3058000100016 
+           For the Sr-84(n,p)Rb-84 reaction, the Sr-86(n,p)       3058000100017 
+           reaction was used for comparison.                      3058000100018 
+DETECTOR   (GELI)                                                 3058000100019 
+PART-DET   (DG)                                                   3058000100020 
+STATUS     (TABLE) Data taken from publication, p.8.              3058000100021 
+HISTORY    (19810508C) OS.                                        3058000100022 
+           (20090503A) SD:Updated to new date formats,lower case, 3058000100023 
+                       made formal corrections.                   3058000100024 
+ERR-ANALYS (DATA-ERR) Standard deviation of mean value of 6       3058000100025 
+           experimental runs is given. No further information     3058000100026 
+           about errors.                                          3058000100027 
+ENDBIB              25          0                                 3058000100028 
+NOCOMMON             0          0                                 3058000100029 
+ENDSUBENT           28          0                                 3058000199999 
+SUBENT        30580002   20090506                             31373058000200001 
+BIB                  5         11                                 3058000200002 
+REACTION   (38-SR-86(N,P)37-RB-86,,SIG,,FIS)                      3058000200003 
+ANALYSIS   Cadmium-ratios used:                                   3058000200004 
+            For Rb-85(n,g) reaction = 5.1                         3058000200005 
+            For Sr-86(n,p) reaction = 1.                          3058000200006 
+DECAY-DATA (37-RB-86-G,18.65D,DG,1077.)                           3058000200007 
+MONITOR    ((MONIT1)37-RB-85(N,G)37-RB-86,,SIG)                   3058000200008 
+           ((MONIT2)16-S-32(N,P)15-P-32,,SIG,,FIS)                3058000200009 
+           ((MONIT3)15-P-31(N,G)15-P-32,,SIG)                     3058000200010 
+MONIT-REF  ((MONIT1),R.SHER,R,IAEA-156,1,1974)                    3058000200011 
+           ((MONIT2),A.FABRY,R,BLG-465,1972)                      3058000200012 
+           ((MONIT3),R.SHER,R,IAEA-156,1,1974)                    3058000200013 
+ENDBIB              11          0                                 3058000200014 
+COMMON               6          3                                 3058000200015 
+EN-NRM1    MONIT1     EN-NRM2    MONIT2     EN-NRM3    MONIT3     3058000200016 
+EV         MB         MEV        MB         EV         MB         3058000200017 
+ 0.0253     4.5000E+02 1.5        6.9000E+01 0.0253     1.9000E+023058000200018 
+ENDCOMMON            3          0                                 3058000200019 
+DATA                 3          1                                 3058000200020 
+EN-DUMMY   DATA       DATA-ERR                                    3058000200021 
+MEV        MB         MB                                          3058000200022 
+ 2.0000E+00 2.8000E-01 2.0000E-02                                 3058000200023 
+ENDDATA              3          0                                 3058000200024 
+ENDSUBENT           23          0                                 3058000299999 
+SUBENT        30580003   20090506                             31373058000300001 
+BIB                  4          4                                 3058000300002 
+REACTION   (38-SR-84(N,P)37-RB-84,,SIG,,FIS)                      3058000300003 
+DECAY-DATA (37-RB-84-G,33.D,DG,882.)                              3058000300004 
+MONITOR    (38-SR-86(N,P)37-RB-86,,SIG,,FIS)                      3058000300005 
+MONIT-REF  (30580002,G.PFREPPER,J,IP,17,6,198101)                 3058000300006 
+ENDBIB               4          0                                 3058000300007 
+NOCOMMON             0          0                                 3058000300008 
+DATA                 4          1                                 3058000300009 
+EN-DUMMY   DATA       DATA-ERR   MONIT                            3058000300010 
+MEV        MB         MB         MB                               3058000300011 
+ 2.0000E+00 3.2000E+00 1.7000E-01 2.8000E-01                      3058000300012 
+ENDDATA              3          0                                 3058000300013 
+ENDSUBENT           12          0                                 3058000399999 
+ENDENTRY             3          0                                 3058099999999 

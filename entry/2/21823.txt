@@ -1,0 +1,124 @@
+ENTRY            21823   20121109                             22342182300000001 
+SUBENT        21823001   20121109                             22342182300100001 
+BIB                 14         38                                 2182300100002 
+INSTITUTE  (2GERPTB) Physikalisch-Technische Bundesanstalt        2182300100003 
+            Braunschweig.                                         2182300100004 
+REFERENCE  (C,82ANTWER,,930,198209) Main reference.               2182300100005 
+           (P,NEANDC(E)-222,(5),59,198107)                        2182300100006 
+AUTHOR     (G.Dietze,H.J.Brede,H.Klein,H.Schoelermann)            2182300100007 
+TITLE       Differential cross sections of the C-12(n,alpha)Be-9  2182300100008 
+            reaction in the energy range from 8 to 10 MeV         2182300100009 
+            extracted from the NE213 scintillator response        2182300100010 
+            functions                                             2182300100011 
+FACILITY   (CYCLO,2GERPTB) Compact cyclotron.                     2182300100012 
+INC-SOURCE (D-D) NS-pulsed deuteron beam of the compact           2182300100013 
+            cyclotron focussed into a deuterium gas target.       2182300100014 
+SAMPLE     .Detector = sample.                                    2182300100015 
+METHOD     (TOF ) Is used to select the neutron energy            2182300100016 
+            interval of interest.                                 2182300100017 
+            The neutron response functions of a NE213 liquid      2182300100018 
+            scintillator are calculated by a Monte Carlo          2182300100019 
+            code (NRESP4). Starting from Legendre polynomials     2182300100020 
+            the differential cross sections are transferred       2182300100021 
+            into a pulse height distribution of the NE213         2182300100022 
+            scintillator detector. By fitting these pulse         2182300100023 
+            height spectra the coefficients can be determined.    2182300100024 
+DETECTOR   (SCIN ) NE213 scintillation detector, 5.07 cm          2182300100025 
+            in height, 5.06 cm in diameter, encapsulated          2182300100026 
+            by BA1 type aluminium housing and coupled via         2182300100027 
+            a light pipe to a fast photomultiplier XP2020.        2182300100028 
+            It was positioned at a distance of about 12 m.        2182300100029 
+MONITOR    (1-H-1(N,EL)1-H-1,,SIG) Proton recoil spectrum         2182300100030 
+            is used.                                              2182300100031 
+PART-DET   (RSD) Recoiling Be-9 nucleus.                          2182300100032 
+           (A) Alpha particle.                                    2182300100033 
+ERR-ANALYS .Not given.                                            2182300100034 
+STATUS     (TABLE) .Data taken from 82ANTWER,,930,1982.           2182300100035 
+HISTORY    (19830121C) G.C.                                       2182300100036 
+           (19830210E)                                            2182300100037 
+           (20121109A) SD: Updated to new date formats,lower case.2182300100038 
+                Corrected according last EXFOR rules and Dict.    2182300100039 
+                REACTION code in Subent 2,3 was changed.          2182300100040 
+ENDBIB              38          0                                 2182300100041 
+NOCOMMON             0          0                                 2182300100042 
+ENDSUBENT           41          0                                 2182300199999 
+SUBENT        21823002   20121109                             22342182300200001 
+BIB                  4          6                                 2182300200002 
+REACTION   (6-C-12(N,A)4-BE-9,PAR,SIG)                            2182300200003 
+ANALYSIS   Sig=4 x Pi x A0, A0 - Legendre coeff.                  2182300200004 
+STATUS     (TABLE) .Data taken from table 2 of 82ANTWER,,930,1982.2182300200005 
+           (DEP,21823003)                                         2182300200006 
+HISTORY    (20121109A) SD: SF5=PAR was added to REACTION code;    2182300200007 
+                         E-LVL was added to COMMON section.       2182300200008 
+ENDBIB               6          0                                 2182300200009 
+COMMON               1          3                                 2182300200010 
+E-LVL                                                             2182300200011 
+MEV                                                               2182300200012 
+ 0.0                                                              2182300200013 
+ENDCOMMON            3          0                                 2182300200014 
+DATA                 2          6                                 2182300200015 
+EN         DATA                                                   2182300200016 
+MEV        MB                                                     2182300200017 
+ 8.0000E+00 1.3130E+02                                            2182300200018 
+ 8.6400E+00 6.5000E+01                                            2182300200019 
+ 8.9900E+00 1.8660E+02                                            2182300200020 
+ 9.2200E+00 2.8550E+02                                            2182300200021 
+ 9.4100E+00 2.5490E+02                                            2182300200022 
+ 9.8300E+00 1.7420E+02                                            2182300200023 
+ENDDATA              8          0                                 2182300200024 
+ENDSUBENT           23          0                                 2182300299999 
+SUBENT        21823003   20121109                             22342182300300001 
+BIB                  3          4                                 2182300300002 
+REACTION   (6-C-12(N,A)4-BE-9,PAR,DA,,LEG)                        2182300300003 
+STATUS     (TABLE) .Data taken from table 3 of 82ANTWER,,930,1982.2182300300004 
+HISTORY    (20121109A) SD: SF5=PAR was added to REACTION code;    2182300300005 
+                         E-LVL was added to COMMON section.       2182300300006 
+ENDBIB               4          0                                 2182300300007 
+COMMON               1          3                                 2182300300008 
+E-LVL                                                             2182300300009 
+MEV                                                               2182300300010 
+ 0.0                                                              2182300300011 
+ENDCOMMON            3          0                                 2182300300012 
+DATA                 3         37                                 2182300300013 
+EN         NUMBER-CM  DATA-CM                                     2182300300014 
+MEV        NO-DIM     MB/SR                                       2182300300015 
+ 8.0000E+00 0.0000E+00 1.0450E+01                                 2182300300016 
+ 8.0000E+00 1.0000E+00 7.6700E+00                                 2182300300017 
+ 8.0000E+00 2.0000E+00 3.8700E+00                                 2182300300018 
+ 8.0000E+00 3.0000E+00 3.0000E+00                                 2182300300019 
+ 8.0000E+00 4.0000E+00 2.2200E+00                                 2182300300020 
+ 8.6400E+00 0.0000E+00 4.7200E+00                                 2182300300021 
+ 8.6400E+00 1.0000E+00 3.2000E+00                                 2182300300022 
+ 8.6400E+00 2.0000E+00-3.7800E+00                                 2182300300023 
+ 8.6400E+00 3.0000E+00-2.9900E+00                                 2182300300024 
+ 8.6400E+00 4.0000E+00 8.5000E-01                                 2182300300025 
+ 8.6400E+00 5.0000E+00 1.0500E+00                                 2182300300026 
+ 8.9900E+00 0.0000E+00 1.4850E+01                                 2182300300027 
+ 8.9900E+00 1.0000E+00-6.8500E+00                                 2182300300028 
+ 8.9900E+00 2.0000E+00 4.4600E+00                                 2182300300029 
+ 8.9900E+00 3.0000E+00 2.4000E-01                                 2182300300030 
+ 8.9900E+00 4.0000E+00 1.1730E+01                                 2182300300031 
+ 9.2200E+00 0.0000E+00 2.2720E+01                                 2182300300032 
+ 9.2200E+00 1.0000E+00-1.0800E+01                                 2182300300033 
+ 9.2200E+00 2.0000E+00 2.0420E+01                                 2182300300034 
+ 9.2200E+00 3.0000E+00 4.6100E+00                                 2182300300035 
+ 9.2200E+00 4.0000E+00 2.6850E+01                                 2182300300036 
+ 9.2200E+00 5.0000E+00-4.4000E+00                                 2182300300037 
+ 9.2200E+00 6.0000E+00 7.4500E+00                                 2182300300038 
+ 9.4100E+00 0.0000E+00 2.0280E+01                                 2182300300039 
+ 9.4100E+00 1.0000E+00-1.0390E+01                                 2182300300040 
+ 9.4100E+00 2.0000E+00 1.8590E+01                                 2182300300041 
+ 9.4100E+00 3.0000E+00 4.2100E+00                                 2182300300042 
+ 9.4100E+00 4.0000E+00 2.3050E+01                                 2182300300043 
+ 9.4100E+00 5.0000E+00-3.5500E+00                                 2182300300044 
+ 9.4100E+00 6.0000E+00 8.9200E+00                                 2182300300045 
+ 9.8300E+00 0.0000E+00 1.3860E+01                                 2182300300046 
+ 9.8300E+00 1.0000E+00-1.8300E+00                                 2182300300047 
+ 9.8300E+00 2.0000E+00 1.1630E+01                                 2182300300048 
+ 9.8300E+00 3.0000E+00 1.7000E+00                                 2182300300049 
+ 9.8300E+00 4.0000E+00 6.0800E+00                                 2182300300050 
+ 9.8300E+00 5.0000E+00-1.6010E+01                                 2182300300051 
+ 9.8300E+00 6.0000E+00 5.2800E+00                                 2182300300052 
+ENDDATA             39          0                                 2182300300053 
+ENDSUBENT           52          0                                 2182300399999 
+ENDENTRY             3          0                                 2182399999999 

@@ -1,0 +1,62 @@
+ENTRY            10289   20131029                             13941028900000001 
+SUBENT        10289001   20131029                             13941028900100001 
+BIB                 11         18                                 1028900100002 
+INSTITUTE  (1USAVBT)                                              1028900100003 
+REFERENCE  (J,JIN,34,1119,197204)                                 1028900100004 
+AUTHOR     (N.C.Dyer,J.H.Hamilton)                                1028900100005 
+TITLE      56Fe and 58Fe(n,p) cross sections for 14.4 MeV         1028900100006 
+            neutrons                                              1028900100007 
+FACILITY   (CCW,1USAVBT)                                          1028900100008 
+INC-SOURCE (D-T)                                                  1028900100009 
+SAMPLE     (26-FE-58,ENR=0.8212) Ferric oxide enriched to         1028900100010 
+             82.12% 58Fe.                                         1028900100011 
+METHOD     (ACTIV)                                                1028900100012 
+DETECTOR   (NAICR) Measured gamma activity with NaI(Tl) crystal.  1028900100013 
+STATUS     (APRVD) Approved by N.Dyer.                            1028900100014 
+           (TABLE) Data taken from reference text.                1028900100015 
+HISTORY    (19730912C)                                            1028900100016 
+           (19830117A) Converted to REACTION formalism            1028900100017 
+           (19860404A) BIB UPDATE.                                1028900100018 
+           (20011227A) Updated to new date formats, lower case.   1028900100019 
+           (20131024A) OS. Corrections in sub.3                   1028900100020 
+ENDBIB              18          0                                 1028900100021 
+NOCOMMON             0          0                                 1028900100022 
+ENDSUBENT           21          0                                 1028900199999 
+SUBENT        10289002   20011227                             00001028900200001 
+BIB                  4          6                                 1028900200002 
+REACTION   (26-FE-56(N,P)25-MN-56,,SIG)                           1028900200003 
+MONITOR    (14-SI-28(N,P)13-AL-28,,SIG) Detector calibration.     1028900200004 
+DECAY-DATA (25-MN-56,2.58HR,DG)                                   1028900200005 
+ERR-ANALYS (DATA-ERR) Main contributions to error given are       1028900200006 
+            counting statistics, and uncertainty in reference     1028900200007 
+            cross sections.                                       1028900200008 
+ENDBIB               6          0                                 1028900200009 
+NOCOMMON             0          0                                 1028900200010 
+DATA                 3          1                                 1028900200011 
+EN         DATA       DATA-ERR                                    1028900200012 
+MEV        MB         MB                                          1028900200013 
+14.4       109.       10.                                         1028900200014 
+ENDDATA              3          0                                 1028900200015 
+ENDSUBENT           14          0                                 1028900299999 
+SUBENT        10289003   20131029                             13941028900300001 
+BIB                  7         11                                 1028900300002 
+REACTION   (26-FE-58(N,P)25-MN-58-M,,SIG)                         1028900300003 
+MONITOR    (26-FE-56(N,P)25-MN-56,,SIG)                           1028900300004 
+MONIT-REF  (10289002,N.C.Dyer+,J,JIN,34,1119,1972)                1028900300005 
+DECAY-DATA (25-MN-58-M,65.3SEC,DG)                                1028900300006 
+COMMENT    Authors give reaction product 58Mn, not mentioning     1028900300007 
+           the isomeric state, with half-live 65.3 sec            1028900300008 
+ERR-ANALYS (DATA-ERR) Main contributions to error given are       1028900300009 
+            counting statistics, uncertainty in reference cross   1028900300010 
+            sections and decay scheme assumed for 58Fe reaction.  1028900300011 
+HISTORY    (20131024A) Changed reaction product to -M, added      1028900300012 
+            MONIT-REF and COMMENT.                                1028900300013 
+ENDBIB              11          0                                 1028900300014 
+NOCOMMON             0          0                                 1028900300015 
+DATA                 5          1                                 1028900300016 
+EN         DATA       DATA-ERR   MONIT      MONIT-ERR             1028900300017 
+MEV        MB         MB         MB         MB                    1028900300018 
+14.4       10.8       1.0        109.          10.                1028900300019 
+ENDDATA              3          0                                 1028900300020 
+ENDSUBENT           19          0                                 1028900399999 
+ENDENTRY             3          0                                 1028999999999 

@@ -1,0 +1,424 @@
+ENTRY            O0573   20140121                             O052O057300000001 
+SUBENT        O0573001   20140121                             O052O057300100001 
+BIB                 13         34                                 O057300100002 
+TITLE      Charge dispersion in the fission of U-238 by protons   O057300100003 
+           of energies 30-160 MeV.                                O057300100004 
+AUTHOR     (L.D.Miller,L.Yaffe)                                   O057300100005 
+INSTITUTE  (1CANMCG)                                              O057300100006 
+REFERENCE  (J,JIN,35,1805,1973)                                   O057300100007 
+SAMPLE     The target foils of natural uranium varied in thicknessO057300100008 
+           from 0.005 to 0.012-cm.                                O057300100009 
+           The target foil was protected against loss due to      O057300100010 
+           recoil by aluminum catcher foils (0.0025-cm) placed on O057300100011 
+           either side.                                           O057300100012 
+ADD-RES    (Z-DIS) Parameters of charge dispersion curves were    O057300100013 
+           determined.                                            O057300100014 
+DETECTOR   (GELI) A Ge(Li) detector of 2.0 cm**3 active volume.   O057300100015 
+ANALYSIS   (DECAY)                                                O057300100016 
+FACILITY   (SYNCY,1CANMCG) The energy range in the McGill         O057300100017 
+           synchrocyclotron used was from 30-85 MeV and the energyO057300100018 
+           spread was +-2 MeV.                                    O057300100019 
+           (SYNCY,1USACHI) Two irradiations were performed in the O057300100020 
+           internal beam of the 150-in. synchrocyclotron at the   O057300100021 
+           Enrico Fermi Institute,University of Chicago.          O057300100022 
+METHOD     (ACTIV) The current varied between 1.0 and 1.8 muA and O057300100023 
+           duration of the irradiations varied between 10-20 min. O057300100024 
+           (INTB)                                                 O057300100025 
+           (CHSEP)                                                O057300100026 
+           (STTA)                                                 O057300100027 
+           (BCINT)                                                O057300100028 
+ERR-ANALYS (DATA-ERR).The Uncertainty is reported by authors.     O057300100029 
+STATUS     (TABLE)                                                O057300100030 
+HISTORY    (19990909C)                                            O057300100031 
+           (19990914U) Last checking has been done.               O057300100032 
+           (19991117A) DATE is corrected                          O057300100033 
+           (20140121A) SD: REACTION code corrected in             O057300100034 
+            Subents 3,6,10. Minor corrections. ERR-T -> DATA-ERR  O057300100035 
+            in Subents 2-15 according to EXFOR rules.             O057300100036 
+ENDBIB              34          0                                 O057300100037 
+NOCOMMON             0          0                                 O057300100038 
+ENDSUBENT           37          0                                 O057300199999 
+SUBENT        O0573002   20140121                             O052O057300200001 
+BIB                  7         11                                 O057300200002 
+REACTION   (92-U-0(P,F)51-SB-120-M,IND,SIG)                       O057300200003 
+RAD-DET    (51-SB-120-M,DG)                                       O057300200004 
+DECAY-DATA (51-SB-120-M,5.76D,DG,89.8,0.81,DG,197.2,0.88)         O057300200005 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG) - At 30.-85. MeV  O057300200006 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) - At 160 MeV.  O057300200007 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057300200008 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057300200009 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057300200010 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057300200011 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057300200012 
+           (2.).The Synchrocyclotron University of Chicago.       O057300200013 
+ENDBIB              11          0                                 O057300200014 
+NOCOMMON             0          0                                 O057300200015 
+DATA                 6          4                                 O057300200016 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057300200017 
+MEV        MB         MB         MB         MB         NO-DIM     O057300200018 
+        50.      0.017      0.002       210.                    1.O057300200019 
+        70.       0.14       0.01       160.                    1.O057300200020 
+        85.       0.33       0.04       140.                    1.O057300200021 
+       160.        1.4        0.2                   9.4         2.O057300200022 
+ENDDATA              6          0                                 O057300200023 
+ENDSUBENT           22          0                                 O057300299999 
+SUBENT        O0573003   20140121                             O052O057300300001 
+BIB                  8         13                                 O057300300002 
+REACTION   (92-U-0(P,F)51-SB-120,,SIG,,,DERIV)                    O057300300003 
+           The isomer ratio was used for cross section calculationO057300300004 
+            (see ASSUM)                                           O057300300005 
+MONITOR    ((MONIT)13-AL-27(P,X)11-NA-24,CUM,SIG) - At 160 MeV.   O057300300006 
+ASSUMED    (ASSUM,92-U-0(P,F)51-SB-120-M/G,,SIG/RAT)              O057300300007 
+REL-REF    (R,O0577043,E.Hagebo,J,JIN,29,2515,1967) - ASSUM value O057300300008 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057300300009 
+MONIT-REF  ((MONIT)B0022003,J.B.Cumming,J,ARN,13,261,1963)        O057300300010 
+STATUS     (DEP,O0573002)                                         O057300300011 
+HISTORY    (20140121A) SD: Illegal isom. frag combination -M+G    O057300300012 
+           deleted from SF4 of REACTION code and SF9 was added.   O057300300013 
+           ASSUMED was added. Explanation for 'DERIV' added.      O057300300014 
+           STATUS was added.                                      O057300300015 
+ENDBIB              13          0                                 O057300300016 
+NOCOMMON             0          0                                 O057300300017 
+DATA                 5          1                                 O057300300018 
+EN         DATA       DATA-ERR   MONIT      ASSUM                 O057300300019 
+MEV        MB         MB         MB         NO-DIM                O057300300020 
+       160.        1.8        0.2        9.4   4.8                O057300300021 
+ENDDATA              3          0                                 O057300300022 
+ENDSUBENT           21          0                                 O057300399999 
+SUBENT        O0573004   20140121                             O052O057300400001 
+BIB                  7         11                                 O057300400002 
+REACTION   (92-U-0(P,F)51-SB-122-G,,SIG)Shielded.                 O057300400003 
+RAD-DET    (51-SB-122-G,DG)                                       O057300400004 
+DECAY-DATA (51-SB-122-G,2.68D,DG,563.9,0.664)                     O057300400005 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG) - At 50-85 MeV    O057300400006 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) - At 160 MeV.  O057300400007 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057300400008 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057300400009 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057300400010 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057300400011 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057300400012 
+           (2.).The Synchrocyclotron University of Chicago.       O057300400013 
+ENDBIB              11          0                                 O057300400014 
+NOCOMMON             0          0                                 O057300400015 
+DATA                 6          4                                 O057300400016 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057300400017 
+MEV        MB         MB         MB         MB         NO-DIM     O057300400018 
+        50.       0.95        0.1       210.                    1.O057300400019 
+        70.        3.3        0.3       160.                    1.O057300400020 
+        85.        5.1        0.5       140.                    1.O057300400021 
+       160.        8.6        0.9                   9.4         2.O057300400022 
+ENDDATA              6          0                                 O057300400023 
+ENDSUBENT           22          0                                 O057300499999 
+SUBENT        O0573005   20140121                             O052O057300500001 
+BIB                  7         11                                 O057300500002 
+REACTION   (92-U-0(P,F)51-SB-124-G,,SIG)Shielded.                 O057300500003 
+RAD-DET    (51-SB-124-G,DG)                                       O057300500004 
+DECAY-DATA (51-SB-124-G,60.4D,DG,602.7,0.98)                      O057300500005 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG)  - At 30-85 MeV   O057300500006 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) -  At 160 MeV. O057300500007 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057300500008 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057300500009 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057300500010 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057300500011 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057300500012 
+           (2.).The Synchrocyclotron University of Chicago.       O057300500013 
+ENDBIB              11          0                                 O057300500014 
+NOCOMMON             0          0                                 O057300500015 
+DATA                 6          5                                 O057300500016 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057300500017 
+MEV        MB         MB         MB         MB         NO-DIM     O057300500018 
+        30.        2.6        0.3       390.                    1.O057300500019 
+        50.        10.         1.       210.                    1.O057300500020 
+        70.        18.         2.       160.                    1.O057300500021 
+        85.        18.         2.       140.                    1.O057300500022 
+       160.        15.         2.                   9.4         2.O057300500023 
+ENDDATA              7          0                                 O057300500024 
+ENDSUBENT           23          0                                 O057300599999 
+SUBENT        O0573006   20140121                             O052O057300600001 
+BIB                  9         21                                 O057300600002 
+REACTION   (92-U-0(P,F)51-SB-124,,SIG,,,DERIV)                    O057300600003 
+           The isomer ratio was used for cross section calculationO057300600004 
+            (see ASSUM). These ratios have been determined for    O057300600005 
+           proton bombarding energies between 159 and 570 MeV.    O057300600006 
+           Those for Sb-124 are constant and can be extrapolated  O057300600007 
+           to 30-160 MeV energy region.                           O057300600008 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG)  - At 30-85 MeV   O057300600009 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) - At 160 MeV.  O057300600010 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057300600011 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057300600012 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057300600013 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057300600014 
+ASSUMED    (ASSUM,92-U-0(P,F)51-SB-124-G/M2,,SIG/RAT)             O057300600015 
+REL-REF    (R,O0577043,E.Hagebo,J,JIN,29,2515,1967) - ASSUM value O057300600016 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057300600017 
+           (2.).The Synchrocyclotron University of Chicago.       O057300600018 
+STATUS     (DEP,O0573005)                                         O057300600019 
+HISTORY    (20140121A) SD: Illegal isom. frag combination -M+G    O057300600020 
+           deleted from SF4 of REACTION code  and SF9 was added.  O057300600021 
+           ASSUMED was added. Explanation for 'DERIV' added.      O057300600022 
+           STATUS was added.                                      O057300600023 
+ENDBIB              21          0                                 O057300600024 
+COMMON               1          3                                 O057300600025 
+ASSUM                                                             O057300600026 
+NO-DIM                                                            O057300600027 
+  15.8                                                            O057300600028 
+ENDCOMMON            3          0                                 O057300600029 
+DATA                 6          5                                 O057300600030 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057300600031 
+MEV        MB         MB         MB         MB         NO-DIM     O057300600032 
+        30.        2.8        0.4       390.                    1.O057300600033 
+        50.        11.         2.       210.                    1.O057300600034 
+        70.        19.         3.       160.                    1.O057300600035 
+        85.        19.         3.       140.                    1.O057300600036 
+       160.        15.         2.                   9.4         2.O057300600037 
+ENDDATA              7          0                                 O057300600038 
+ENDSUBENT           37          0                                 O057300699999 
+SUBENT        O0573007   20140121                             O052O057300700001 
+BIB                  7         13                                 O057300700002 
+REACTION   (92-U-0(P,F)51-SB-125,IND,SIG)                         O057300700003 
+           Independent Yield Plus a Small Contribution from       O057300700004 
+            9.7-Min Sn-125-M.                                     O057300700005 
+RAD-DET    (51-SB-125,DG)                                         O057300700006 
+DECAY-DATA (51-SB-125,2.71YR,DG,176.4,0.072,DG,427.9,0.304)       O057300700007 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG)  - At 30-85 MeV   O057300700008 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) -  At 160 MeV. O057300700009 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057300700010 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057300700011 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057300700012 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057300700013 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057300700014 
+           (2.).The Synchrocyclotron University of Chicago.       O057300700015 
+ENDBIB              13          0                                 O057300700016 
+NOCOMMON             0          0                                 O057300700017 
+DATA                 6          5                                 O057300700018 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057300700019 
+MEV        MB         MB         MB         MB         NO-DIM     O057300700020 
+        30.        11.         1.       390.                    1.O057300700021 
+        50.        16.         2.       210.                    1.O057300700022 
+        70.        21.         2.       160.                    1.O057300700023 
+        85.        21.         3.       140.                    1.O057300700024 
+       160.        13.         2.                   9.4         2.O057300700025 
+ENDDATA              7          0                                 O057300700026 
+ENDSUBENT           25          0                                 O057300799999 
+SUBENT        O0573008   20140121                             O052O057300800001 
+BIB                  7         11                                 O057300800002 
+REACTION   (92-U-0(P,F)51-SB-125,CUM,SIG)                         O057300800003 
+RAD-DET    (51-SB-125,DG)                                         O057300800004 
+DECAY-DATA (51-SB-125,2.71YR,DG,176.4,0.072,DG,427.9,0.304)       O057300800005 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG) -  At 50-85 MeV   O057300800006 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) -  At 160 MeV. O057300800007 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057300800008 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057300800009 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057300800010 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057300800011 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057300800012 
+           (2.).The Synchrocyclotron University of Chicago.       O057300800013 
+ENDBIB              11          0                                 O057300800014 
+NOCOMMON             0          0                                 O057300800015 
+DATA                 6          5                                 O057300800016 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057300800017 
+MEV        MB         MB         MB         MB         NO-DIM     O057300800018 
+        30.        17.         3.       390.                    1.O057300800019 
+        50.        24.         4.       210.                    1.O057300800020 
+        70.        48.         7.       160.                    1.O057300800021 
+        85.        35.         5.       140.                    1.O057300800022 
+       160.        20.         3.                   9.4         2.O057300800023 
+ENDDATA              7          0                                 O057300800024 
+ENDSUBENT           23          0                                 O057300899999 
+SUBENT        O0573009   20140121                             O052O057300900001 
+BIB                  8         17                                 O057300900002 
+REACTION   (92-U-0(P,F)51-SB-126-G,IND,SIG)                       O057300900003 
+RAD-DET    (51-SB-126-G,DG)                                       O057300900004 
+DECAY-DATA (51-SB-126-G,12.4D,DG,666.2,1.,DG,695.1,1.32)          O057300900005 
+COMMENT    - By Compiler - The Authors could not exclude Sb-126-g O057300900006 
+           production due to isomer transition from 11 sec        O057300900007 
+           Sb-126-m2.                                             O057300900008 
+           - By Compiler - According to ENSDF Sb-126-g radiates   O057300900009 
+           695.00-KeV (99.6%) and 697.0-KeV (29%).  Probably,     O057300900010 
+           authors measured sum of these quanta.                  O057300900011 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG)  - At 30-85 MeV   O057300900012 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) -  At 160 MeV. O057300900013 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057300900014 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057300900015 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057300900016 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057300900017 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057300900018 
+           (2.).The Synchrocyclotron University of Chicago.       O057300900019 
+ENDBIB              17          0                                 O057300900020 
+NOCOMMON             0          0                                 O057300900021 
+DATA                 6          5                                 O057300900022 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057300900023 
+MEV        MB         MB         MB         MB         NO-DIM     O057300900024 
+        30.        10.         1.       390.                    1.O057300900025 
+        50.        17.         2.       210.                    1.O057300900026 
+        70.        20.         2.       160.                    1.O057300900027 
+        85.        20.         2.       140.                    1.O057300900028 
+       160.        13.         1.                   9.4         2.O057300900029 
+ENDDATA              7          0                                 O057300900030 
+ENDSUBENT           29          0                                 O057300999999 
+SUBENT        O0573010   20140121                             O052O057301000001 
+BIB                  9         21                                 O057301000002 
+REACTION   (92-U-0(P,F)51-SB-126,,SIG,,,DERIV)                    O057301000003 
+           The isomer ratio was used for cross section calculationO057301000004 
+            (see ASSUM). These ratios have been determined for    O057301000005 
+           proton bombarding energies between 159 and 570 MeV.    O057301000006 
+           Those for Sb-126 are constant and can be extrapolated  O057301000007 
+           to 30-160 MeV energy region.                           O057301000008 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG)  - At 30-85 MeV   O057301000009 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) -  At 160 MeV. O057301000010 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057301000011 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057301000012 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057301000013 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057301000014 
+ASSUMED    (ASSUM,92-U-0(P,F)51-SB-126-G/M,,SIG/RAT)              O057301000015 
+REL-REF    (R,O0577045,E.Hagebo,J,JIN,29,2515,1967) - ASSUM value O057301000016 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057301000017 
+           (2.).The Synchrocyclotron University of Chicago.       O057301000018 
+STATUS     (DEP,O0573009)                                         O057301000019 
+HISTORY    (20140121A) SD: Illegal isom. frag combination -M+G    O057301000020 
+           deleted from SF4 of REACTION code and SF9 was added.   O057301000021 
+           ASSUMED was added. Explanation for 'DERIV' added.      O057301000022 
+           STATUS was added.                                      O057301000023 
+ENDBIB              21          0                                 O057301000024 
+COMMON               1          3                                 O057301000025 
+ASSUM                                                             O057301000026 
+NO-DIM                                                            O057301000027 
+  4.5                                                             O057301000028 
+ENDCOMMON            3          0                                 O057301000029 
+DATA                 6          5                                 O057301000030 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057301000031 
+MEV        MB         MB         MB         MB         NO-DIM     O057301000032 
+        30.        12.         2.       390.                    1.O057301000033 
+        50.        21.         3.       210.                    1.O057301000034 
+        70.        24.         3.       160.                    1.O057301000035 
+        85.        23.         3.       140.                    1.O057301000036 
+       160.        15.         2.                   9.4         2.O057301000037 
+ENDDATA              7          0                                 O057301000038 
+ENDSUBENT           37          0                                 O057301099999 
+SUBENT        O0573011   20140121                             O052O057301100001 
+BIB                  7         13                                 O057301100002 
+REACTION   (92-U-0(P,F)51-SB-127,IND,SIG)                         O057301100003 
+           Independent yield plus a small contribution from       O057301100004 
+            4.1-min Sn-127-m.                                     O057301100005 
+RAD-DET    (51-SB-127,DG)                                         O057301100006 
+DECAY-DATA (51-SB-127,93.4HR,DG,684.9,0.368)                      O057301100007 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG)  - At 30-85 MeV   O057301100008 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) -  At 160 MeV. O057301100009 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057301100010 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057301100011 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057301100012 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057301100013 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057301100014 
+           (2.).The Synchrocyclotron University of Chicago.       O057301100015 
+ENDBIB              13          0                                 O057301100016 
+NOCOMMON             0          0                                 O057301100017 
+DATA                 6          5                                 O057301100018 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057301100019 
+MEV        MB         MB         MB         MB         NO-DIM     O057301100020 
+        30.        19.         3.       390.                    1.O057301100021 
+        50.        23.         3.       210.                    1.O057301100022 
+        70.        25.         4.       160.                    1.O057301100023 
+        85.        24.         3.       140.                    1.O057301100024 
+       160.        14.         2.                   9.4         2.O057301100025 
+ENDDATA              7          0                                 O057301100026 
+ENDSUBENT           25          0                                 O057301199999 
+SUBENT        O0573012   20140121                             O052O057301200001 
+BIB                  7         11                                 O057301200002 
+REACTION   (92-U-0(P,F)51-SB-127,CUM,SIG)                         O057301200003 
+RAD-DET    (51-SB-127,DG)                                         O057301200004 
+DECAY-DATA (51-SB-127,93.4HR,DG,684.9,0.368)                      O057301200005 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG)  - At 30-85 MeV   O057301200006 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) -  At 160 MeV. O057301200007 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057301200008 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057301200009 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057301200010 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057301200011 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057301200012 
+           (2.).The Synchrocyclotron University of Chicago.       O057301200013 
+ENDBIB              11          0                                 O057301200014 
+NOCOMMON             0          0                                 O057301200015 
+DATA                 6          5                                 O057301200016 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057301200017 
+MEV        MB         MB         MB         MB         NO-DIM     O057301200018 
+        30.        33.         3.       390.                    1.O057301200019 
+        50.        33.         3.       210.                    1.O057301200020 
+        70.        33.         3.       160.                    1.O057301200021 
+        85.        33.         3.       140.                    1.O057301200022 
+       160.        20.         2.                   9.4         2.O057301200023 
+ENDDATA              7          0                                 O057301200024 
+ENDSUBENT           23          0                                 O057301299999 
+SUBENT        O0573013   20140121                             O052O057301300001 
+BIB                  8          9                                 O057301300002 
+REACTION   (92-U-0(P,F)51-SB-128-G,IND,SIG)                       O057301300003 
+COMMENT    - By Compiler - Isomer transition from Sb-128-m is 3.6%O057301300004 
+RAD-DET    (51-SB-128-G,DG)                                       O057301300005 
+DECAY-DATA (51-SB-128-G,9.01HR,DG,746.,1.,DG,752.,1.) Gamma-Ray   O057301300006 
+           Intensity is Relative Value.                           O057301300007 
+MONITOR    ((MONIT)29-CU-65(P,X)29-CU-64,,SIG)  - At 30-85 MeV    O057301300008 
+DECAY-MON  (29-CU-64,12.8HR,AR,511.,0.38)                         O057301300009 
+MONIT-REF  ((MONIT)B0016002,S.Meghir+,T,MEGHIR,1962)              O057301300010 
+FACILITY   (SYNCY,1CANMCG)                                        O057301300011 
+ENDBIB               9          0                                 O057301300012 
+NOCOMMON             0          0                                 O057301300013 
+DATA                 4          4                                 O057301300014 
+EN         DATA       DATA-ERR   MONIT                            O057301300015 
+MEV        MB         MB         MB                               O057301300016 
+        30.        14.         4.       390.                      O057301300017 
+        50.        14.         3.       210.                      O057301300018 
+        70.        13.         3.       160.                      O057301300019 
+        85.        11.         3.       140.                      O057301300020 
+ENDDATA              6          0                                 O057301300021 
+ENDSUBENT           20          0                                 O057301399999 
+SUBENT        O0573014   20140121                             O052O057301400001 
+BIB                  7         11                                 O057301400002 
+REACTION   (92-U-0(P,F)51-SB-129,CUM,SIG)                         O057301400003 
+RAD-DET    (51-SB-129-G,DG)                                       O057301400004 
+DECAY-DATA (51-SB-129-G,4.31HR,DG,543.8,0.149)                    O057301400005 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG)  - At 30-85 MeV   O057301400006 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) -  At 160 MeV. O057301400007 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057301400008 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057301400009 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057301400010 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057301400011 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057301400012 
+           (2.).The Synchrocyclotron University of Chicago.       O057301400013 
+ENDBIB              11          0                                 O057301400014 
+NOCOMMON             0          0                                 O057301400015 
+DATA                 6          5                                 O057301400016 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057301400017 
+MEV        MB         MB         MB         MB         NO-DIM     O057301400018 
+        30.        14.         3.       390.                    1.O057301400019 
+        50.        11.         3.       210.                    1.O057301400020 
+        70.         9.         3.       160.                    1.O057301400021 
+        85.         8.         1.       140.                    1.O057301400022 
+       160.        12.         3.                   9.4         2.O057301400023 
+ENDDATA              7          0                                 O057301400024 
+ENDSUBENT           23          0                                 O057301499999 
+SUBENT        O0573015   20140121                             O052O057301500001 
+BIB                  7         13                                 O057301500002 
+REACTION   (92-U-0(P,F)51-SB-131,CUM,SIG)                         O057301500003 
+RAD-DET    (51-SB-131,DG)                                         O057301500004 
+           (53-I-131,DG)                                          O057301500005 
+DECAY-DATA (51-SB-131,23.03MIN)                                   O057301500006 
+           (53-I-131,8.05D,DG,364.5,0.79) Descendant of Sb-131.   O057301500007 
+MONITOR    ((MONIT1)29-CU-65(P,X)29-CU-64,,SIG)  - At 30-85 MeV   O057301500008 
+           ((MONIT2)13-AL-27(P,X)11-NA-24,CUM,SIG) -  At 160 MeV. O057301500009 
+DECAY-MON  (11-NA-24,15.0HR,DG,1368.5,1.)                         O057301500010 
+           (29-CU-64,12.8HR,AR,511.,0.38)                         O057301500011 
+MONIT-REF  ((MONIT2)B0022003,J.B.Cumming,J,ARN,13,261,1963)       O057301500012 
+           ((MONIT1)B0016002,S.Meghir+,T,MEGHIR,1962)             O057301500013 
+FLAG       (1.).Mc-Gill Synchrocyclotron.                         O057301500014 
+           (2.).The Synchrocyclotron University of Chicago.       O057301500015 
+ENDBIB              13          0                                 O057301500016 
+NOCOMMON             0          0                                 O057301500017 
+DATA                 6          5                                 O057301500018 
+EN         DATA       DATA-ERR   MONIT1     MONIT2     FLAG       O057301500019 
+MEV        MB         MB         MB         MB         NO-DIM     O057301500020 
+        30.        11.         3.       390.                    1.O057301500021 
+        50.         7.         2.       210.                    1.O057301500022 
+        70.         7.         2.       160.                    1.O057301500023 
+        85.         7.         2.       140.                    1.O057301500024 
+       160.         5.         1.                   9.4         2.O057301500025 
+ENDDATA              7          0                                 O057301500026 
+ENDSUBENT           25          0                                 O057301599999 
+ENDENTRY            15          0                                 O057399999999 

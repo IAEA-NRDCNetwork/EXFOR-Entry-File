@@ -1,0 +1,320 @@
+ENTRY            41340   20120328                             41574134000000001 
+SUBENT        41340001   20120328                             41574134000100001 
+BIB                 11         65                                 4134000100002 
+TITLE      Precision prompt neutron spectrum measurements of      4134000100003 
+            minor actinides for transmutation problem             4134000100004 
+AUTHOR     (G.S.Boykov, B.F.Gerasimenko, V.D.Dmitriev,            4134000100005 
+            L.V.Drapchinsky, O.I.Kostochkin, K.A.Petrzhak,        4134000100006 
+            B.M.Shiryaev, V.A.Trenkin)                            4134000100007 
+INSTITUTE  (4RUSRI)                                               4134000100008 
+REFERENCE  (C,97TRIEST,2,1310,1997) 244Cm PFNS in fig, Tcm in text4134000100009 
+           (R,ISTC-183,1996) L.V.Drapchinsky, Data table given .  4134000100010 
+           (C,96KALMAR,2,652,1996).                               4134000100011 
+            2nd Int.Conf.on Accelerator-Driven Transmutation      4134000100012 
+            Technologies and Applications, 3-7 June 1996, Kalmar, 4134000100013 
+            Sweden.                                               4134000100014 
+SAMPLE      Prepared by aggregate recoil method.                  4134000100015 
+           (98-CF-252,ENR=0.7317)                                 4134000100016 
+           (98-CF-251,ENR=0.0549)                                 4134000100017 
+           (98-CF-250,ENR=0.1209)                                 4134000100018 
+           (98-CF-249,ENR=0.0925)                                 4134000100019 
+            Neutron sources assembly was made of thin stainless   4134000100020 
+            disk of 0.2 mm thick, on one side - Cf-252 of 1.43E+4 4134000100021 
+            fiss/s, un other - Cm were deposed. Assembly was      4134000100022 
+            covered by Al2O3 foils ( 50 microg/cm**2 thick) and   4134000100023 
+            mounted in the center of vacuum chamber of 20 mm      4134000100024 
+            diameter made of 0.4 mm thick stainless steel.        4134000100025 
+PART-DET   (N,FF)                                                 4134000100026 
+METHOD     (COINC) Neutron and fragment detected in coincidence   4134000100027 
+CORRECTION - random coincidence background;                       4134000100028 
+           - background of neutrons scattered by the structural   4134000100029 
+              materials, air walls, ceiling, and floor of premise 4134000100030 
+           - (n,g) reaction background;                           4134000100031 
+           - finite time resolution;                              4134000100032 
+           - spontaneous fission  of other nuclides.              4134000100033 
+ERR-ANALYS Energy dependent error in prompt fission neutron       4134000100034 
+            spectra (without reaction specification)              4134000100035 
+           EN         MONIT-ERR  ERR-S      ERR-T                 4134000100036 
+           MEV        PER-CENT   PER-CENT   PER-CENT              4134000100037 
+             0.1       3.3        10.3       10.9                 4134000100038 
+             0.2       2.1         4.6        5.2                 4134000100039 
+             0.3       1.6         1.9        2.8                 4134000100040 
+             0.5       1.6         1.5        2.5                 4134000100041 
+             0.8       1.6         1.3        2.4                 4134000100042 
+             1.1       1.2         1.2        2.1                 4134000100043 
+             1.5       1.2         1.1        2.1                 4134000100044 
+             2.0       1.3         1.1        2.1                 4134000100045 
+             2.5       1.4         1.1        2.2                 4134000100046 
+             3.0       1.4         1.1        2.2                 4134000100047 
+             3.5       1.4         1.1        2.2                 4134000100048 
+             4.0       1.4         1.2        2.3                 4134000100049 
+             4.5       1.4         1.2        2.3                 4134000100050 
+             5.0       1.4         1.3        2.3                 4134000100051 
+             6.0       1.7         1.5        2.8                 4134000100052 
+             8.0       1.7         1.8        3.6                 4134000100053 
+            10.0       2.1         2.6        6.9                 4134000100054 
+            12.0       3.1         3.1        4.6                 4134000100055 
+            15.0       9.2         4.2       10.2                 4134000100056 
+COMMENT    This work was supported financially by Japan and       4134000100057 
+            European Community, and performed under the contract  4134000100058 
+            to the International Science and Technology Centre    4134000100059 
+            (Project agreement #183-95).                          4134000100060 
+HISTORY    (19990927C) + + Compiled at the Centre - CJD + +       4134000100061 
+           (20111012R) On. Provided by L.Drapchinsky              4134000100062 
+           (20120328A) On. Re-compiled                            4134000100063 
+           (20120601A) M.M. Corrections were done according to    4134000100064 
+            97TRIEST and brief version of ISTC report.            4134000100065 
+            In Subents 004,005 - REL -> NPD according to          4134000100066 
+            type of function, used for fitting of these data.     4134000100067 
+ENDBIB              65          0                                 4134000100068 
+NOCOMMON             0          0                                 4134000100069 
+ENDSUBENT           68          0                                 4134000199999 
+SUBENT        41340002   20120328                             41574134000200001 
+BIB                  5         16                                 4134000200002 
+REACTION  1(96-CM-244(0,F)0-NN-1,PR,KE)                           4134000200003 
+          2(96-CM-244(0,F)0-NN-1,PR,KEM)                          4134000200004 
+ASSUMED    (ASSUM,98-CF-252(0,F)0-NN-1,PR,KEM)                    4134000200005 
+ANALYSIS  2 KEM was determined by least square method with        4134000200006 
+            CHI**2=0.93 per one degree of freedom                 4134000200007 
+            for fitting by function                               4134000200008 
+            R(En,Tcm)=((Tcm/Tcf)**-3/2)*exp(-En/Tcm+En/Tcf)       4134000200009 
+            using Tcf=1.42 MeV .                                  4134000200010 
+          1 KE was obtained as first moment of energy distribution4134000200011 
+ERR-ANALYS1(DATA-ERR) For KE - statistical and systematic,        4134000200012 
+          2(ERR-S) for KEM - only statistical                     4134000200013 
+STATUS     (TABLE) Text (p46-47) of Report ISTC #183 (1996)       4134000200014 
+            Text, p.656 of C,97KALMAR - for KE - prelim. value    4134000200015 
+            2.032 MeV.                                            4134000200016 
+           Also text page 1311 of C,97TRIEST,2,1310,1997          4134000200017 
+           (DEP,41340004) prompt fission neutron spectrum given   4134000200018 
+ENDBIB              16          0                                 4134000200019 
+NOCOMMON             0          0                                 4134000200020 
+DATA                 5          1                                 4134000200021 
+DATA      1DATA-ERR  1DATA      2ERR-S     2ASSUM                 4134000200022 
+MEV        MEV        MEV        MEV        MEV                   4134000200023 
+ 2.055      0.027      1.373      0.002      1.42                 4134000200024 
+ENDDATA              3          0                                 4134000200025 
+ENDSUBENT           24          0                                 4134000299999 
+SUBENT        41340003   20120328                             41574134000300001 
+BIB                  5         14                                 4134000300002 
+REACTION  1(96-CM-246(0,F)0-NN-1,PR,KE)                           4134000300003 
+          2(96-CM-246(0,F)0-NN-1,PR,KEM)                          4134000300004 
+ASSUMED    (ASSUM,98-CF-252(0,F)0-NN-1,PR,KEM)                    4134000300005 
+ANALYSIS  2 KEM was determined by least square method with        4134000300006 
+            CHI**2=1.29 per one degree of freedom                 4134000300007 
+            for fitting by function                               4134000300008 
+            R(En,Tcm)=((Tcm/Tcf)**-3/2)*exp(-En/Tcm+En/Tcf)       4134000300009 
+            using Tcf=1.42 MeV .                                  4134000300010 
+          1 KE was obtained as first moment of energy distribution4134000300011 
+ERR-ANALYS1(ERR-T)    For KE - statistical and systematic,        4134000300012 
+          2(ERR-S) for KEM - only statistical                     4134000300013 
+STATUS     (TABLE) Text (p46-47) of Report ISTC #183 (1996)       4134000300014 
+            Text, p.656 of C,97KALMAR.                            4134000300015 
+           (DEP,41340005) prompt fission neutron spectrum given   4134000300016 
+ENDBIB              14          0                                 4134000300017 
+NOCOMMON             0          0                                 4134000300018 
+DATA                 5          1                                 4134000300019 
+DATA      1ERR-T     1DATA      2ERR-S     2ASSUM                 4134000300020 
+MEV        MEV        MEV        MEV        MEV                   4134000300021 
+ 2.058      0.022      1.380      0.002      1.42                 4134000300022 
+ENDDATA              3          0                                 4134000300023 
+ENDSUBENT           22          0                                 4134000399999 
+SUBENT        41340004   20120328                             41574134000400001 
+BIB                 10         37                                 4134000400002 
+REACTION  1((96-CM-244(0,F),PR,NU/DE,,NPD)/                       4134000400003 
+           (98-CF-252(0,F),PR,NU/DE,,NPD))                        4134000400004 
+          2(96-CM-244(0,F),PR,NU/DE,,NPD)                         4134000400005 
+COMMENT     Data of REACTION 1 are fitted by function:            4134000400006 
+            R(En,Tcm)=((Tcm/Tcf)**-3/2)*exp(-En/Tcm+En/Tcf)       4134000400007 
+            using Tcf=1.42 MeV .                                  4134000400008 
+MONITOR   2(98-CF-252(0,F),PR,NU/DE,,NPD)                         4134000400009 
+           Cf-252 and Cm samples were measured simultaneously.    4134000400010 
+MONIT-REF  (,W.Mannhart,R,IAEA-TECDOC-410,158,1987)               4134000400011 
+SAMPLE     51 microg, 205 fis/sec, 153 MBq (alpha)                4134000400012 
+           Prepared by vacuum evaporation after alpha-spectrometry4134000400013 
+           and mass-spectrometric analyses.                       4134000400014 
+           (96-CM-244,ENR=0.771)   +/- 0.005                      4134000400015 
+           (96-CM-245,ENR=0.122)   +/- 0.008                      4134000400016 
+           (96-CM-246,ENR=0.080)   +/- 0.004                      4134000400017 
+           (96-CM-247,ENR=0.0040)  +/- 0.0002                     4134000400018 
+           (96-CM-248,ENR=0.0013)  +/- 0.0001                     4134000400019 
+DETECTOR   (SCIN) Three neutron detector used:                    4134000400020 
+           -NE213   (125 mm diam x 5 mm,Tres=1.29 ns,Ethr=0.2 MeV)4134000400021 
+           -stilbene(50 mm diam x50 mm,Tres=1.03 ns,Ethr=0.1 MeV) 4134000400022 
+           -stilbene(50 mm diam x20 mm,Tres=0.81 ns,Ethr=0.05 MeV)4134000400023 
+           (FISCH) fission fragment detection.                    4134000400024 
+           Efficiencies of FF detectors 99.3% and 99.96% for      4134000400025 
+           Cm-244 and Cf-252, respectively.                       4134000400026 
+METHOD     (TOF) 35, 76 and 150 cm flight paths;                  4134000400027 
+                 0 and 90 deg for fragment detector               4134000400028 
+ADD-RES    (COMP) In C,97KALMAR exp. data are compared with       4134000400029 
+           statistical model calculations using Hauser-Feshbach   4134000400030 
+           method. Agreement is good in energy range 0.7 - 7. MeV 4134000400031 
+           Deviation in lower energies is up to 5% .              4134000400032 
+ERR-ANALYS (ERR-T) Total uncertainty                              4134000400033 
+           (ERR-S,0.8,18.) Statistical uncertainty of spectrum    4134000400034 
+           (MONIT-ERR,1.2,9.2)Uncertainty in W.Mannhart evaluation4134000400035 
+           (ERR-1,,1.) Finite spectrometer energy resolution      4134000400036 
+           (ERR-2)     Diff. nonlinearity of detection channel    4134000400037 
+STATUS     (TABLE) Table 6 of Report ISTC #183 (1996)             4134000400038 
+           DATA 1 are presented on Fig.2 of C,97TRIEST,2,1310,19974134000400039 
+ENDBIB              37          0                                 4134000400040 
+COMMON               1          3                                 4134000400041 
+ERR-2                                                             4134000400042 
+PER-CENT                                                          4134000400043 
+ 0.05                                                             4134000400044 
+ENDCOMMON            3          0                                 4134000400045 
+DATA                 6         48                                 4134000400046 
+E          DATA      1ERR-T     1DATA      2ERR-T     2MONIT     24134000400047 
+MEV        NO-DIM     NO-DIM     1/FIS/MEV  1/FIS/MEV  1/FIS/MEV  4134000400048 
+  0.102     1.042      0.042      0.189      7.62   E-3 0.181     4134000400049 
+  0.113     1.051      0.039      0.200      7.41   E-3 0.190     4134000400050 
+  0.124     1.032      0.036      0.204      7.12   E-3 0.197     4134000400051 
+  0.137     1.053      0.034      0.217      7.02   E-3 0.206     4134000400052 
+  0.152     1.038      0.032      0.224      6.90   E-3 0.215     4134000400053 
+  0.168     1.041      0.03       0.234      6.73   E-3 0.224     4134000400054 
+  0.186     1.041      0.028      0.243      6.54   E-3 0.233     4134000400055 
+  0.206     1.035      0.026      0.251      6.31   E-3 0.242     4134000400056 
+  0.227     1.014      0.025      0.255      6.28   E-3 0.251     4134000400057 
+  0.251     1.027      0.023      0.267      5.98   E-3 0.260     4134000400058 
+  0.277     1.014      0.022      0.272      5.91   E-3 0.268     4134000400059 
+  0.308     1.026      0.021      0.283      5.80   E-3 0.276     4134000400060 
+  0.343     1.022      0.019      0.292      5.44   E-3 0.286     4134000400061 
+  0.38      1.028      0.019      0.304      5.61   E-3 0.295     4134000400062 
+  0.42      1.013      0.018      0.308      5.47   E-3 0.304     4134000400063 
+  0.466     1.014      0.017      0.316      5.30   E-3 0.312     4134000400064 
+  0.517     1.012      0.016      0.322      5.10   E-3 0.319     4134000400065 
+  0.575     1.004      0.016      0.326      5.19   E-3 0.325     4134000400066 
+  0.64      1.017      0.015      0.335      4.94   E-3 0.329     4134000400067 
+  0.735     1.023      0.015      0.340      4.99   E-3 0.332     4134000400068 
+  0.811     1.016      0.014      0.338      4.66   E-3 0.333     4134000400069 
+  0.903     1.01       0.014      0.335      4.64   E-3 0.331     4134000400070 
+  1.014     1.011      0.013      0.331      4.25   E-3 0.327     4134000400071 
+  1.136     1.018      0.013      0.325      4.16   E-3 0.320     4134000400072 
+  1.253     1.012      0.013      0.315      4.04   E-3 0.311     4134000400073 
+  1.443     1.006      0.013      0.296      3.83   E-3 0.294     4134000400074 
+  1.61      1.005      0.013      0.279      3.61   E-3 0.278     4134000400075 
+  1.77      1.013      0.013      0.265      3.40   E-3 0.262     4134000400076 
+  1.93      1.005      0.013      0.247      3.19   E-3 0.245     4134000400077 
+  2.12      1.01       0.014      0.225      3.11   E-3 0.222     4134000400078 
+  2.35      1.         0.015      0.199      2.99   E-3 0.199     4134000400079 
+  2.64      1.         0.016      0.172      2.75   E-3 0.172     4134000400080 
+  2.96      0.98       0.016      0.142      2.33   E-3 0.145     4134000400081 
+  3.278     0.979      0.017      0.120      2.08   E-3 0.122     4134000400082 
+  3.626     0.966      0.018      9.62   E-2 1.79   E-3 9.96   E-24134000400083 
+  4.017     0.956      0.02       7.54   E-2 1.58   E-3 7.88   E-24134000400084 
+  4.446     0.937      0.022      5.69   E-2 1.34   E-3 6.07   E-24134000400085 
+  4.917     0.902      0.025      4.08   E-2 1.13   E-3 4.53   E-24134000400086 
+  5.441     0.893      0.028      2.90   E-2 0.910  E-3 3.25   E-24134000400087 
+  6.025     0.867      0.033      1.94   E-2 0.737  E-3 2.24   E-24134000400088 
+  6.674     0.855      0.039      1.25   E-2 0.571  E-3 1.47   E-24134000400089 
+  7.394     0.752      0.05       6.85   E-3 0.456  E-3 9.11   E-34134000400090 
+  8.19      0.726      0.062      3.89   E-3 3.32   E-3 5.36   E-34134000400091 
+  9.069     0.658      0.08       1.95   E-3 0.238  E-3 2.97   E-34134000400092 
+ 10.069     0.722      0.096      1.10   E-3 0.146  E-3 1.52   E-34134000400093 
+ 11.205     0.72       0.121      5.11   E-4 0.0859 E-3 7.10   E-44134000400094 
+ 12.457     0.737      0.156      2.24   E-4 0.0474 E-3 3.04   E-44134000400095 
+ 13.831     0.845      0.189      1.01   E-4 0.0225 E-3 1.19   E-44134000400096 
+ENDDATA             50          0                                 4134000400097 
+ENDSUBENT           96          0                                 4134000499999 
+SUBENT        41340005   20120328                             41574134000500001 
+BIB                 10         36                                 4134000500002 
+REACTION  1((96-CM-246(0,F),PR,NU/DE,,NPD)/                       4134000500003 
+           (98-CF-252(0,F),PR,NU/DE,,NPD))                        4134000500004 
+          2(96-CM-246(0,F),PR,NU/DE,,NPD)                         4134000500005 
+COMMENT     Data of REACTION 1 are fitted by function:            4134000500006 
+            R(En,Tcm)=((Tcm/Tcf)**-3/2)*exp(-En/Tcm+En/Tcf)       4134000500007 
+            using Tcf=1.42 MeV .                                  4134000500008 
+MONITOR   2(98-CF-252(0,F),PR,NU/DE,,NPD)                         4134000500009 
+           Cf-252 and Cm samples were measured simultaneously.    4134000500010 
+MONIT-REF  (,W.Mannhart,R,IAEA-TECDOC-410,158,1987)               4134000500011 
+SAMPLE     317 microg, 940 fis/sec, 5.43 MBq (alpha)              4134000500012 
+           Prepared by vacuum evaporation after alpha-spectrometry4134000500013 
+           and mass-spectrometric analyses.                       4134000500014 
+           (96-CM-244,ENR=0.001985) +/- 0.000020                  4134000500015 
+           (96-CM-245,ENR=0.000180) +/- 0.000003                  4134000500016 
+           (96-CM-246,ENR=0.99534)  +/- 0.00003                   4134000500017 
+           (96-CM-247,ENR=0.001468) +/- 0.000015                  4134000500018 
+           (96-CM-248,ENR=0.001027) +/- 0.000010                  4134000500019 
+DETECTOR   (SCIN) Two neutron detector used:                      4134000500020 
+           -stilbene(50 mm diam x30 mm,Tres=1.10 ns,Ethr=0.08 MeV)4134000500021 
+           -stilbene(50 mm diam x30 mm,Tres=0.85 ns,Ethr=0.05 MeV)4134000500022 
+           (TELES,MCPLT) fission fragment detection               4134000500023 
+           Efficiencies of FF detectors 99.4% and 99.9% for       4134000500024 
+           Cm-246 and Cf-252, respectively                        4134000500025 
+            ( in brief ISTc report 99.94% and 99.99% are given).  4134000500026 
+METHOD     (TOF) 35, 70 and 100 cm flight paths;                  4134000500027 
+                 45, 135 and 315 deg for fragment detector        4134000500028 
+ADD-RES    (COMP) In C,97KALMAR exp. data are compared with       4134000500029 
+           statistical model calculations using Hauser-Feshbach   4134000500030 
+           method. Agreement is good in energy range 0.7 - 7. MeV 4134000500031 
+           Deviation in lower energies is up to 15% .             4134000500032 
+ERR-ANALYS (ERR-T) Total uncertainty                              4134000500033 
+           (ERR-S,0.8,18.) Statistical uncertainty of spectrum    4134000500034 
+           (MONIT-ERR,1.2,9.2)Uncertainty in W.Mannhart evaluation4134000500035 
+           (ERR-1,,1.) Finite spectrometer energy resolution      4134000500036 
+           (ERR-2)     Diff. nonlinearity of detection channel    4134000500037 
+STATUS     (TABLE) Table 7 of Report ISTC #183 (1996)             4134000500038 
+ENDBIB              36          0                                 4134000500039 
+COMMON               1          3                                 4134000500040 
+ERR-2                                                             4134000500041 
+PER-CENT                                                          4134000500042 
+ 1.3                                                              4134000500043 
+ENDCOMMON            3          0                                 4134000500044 
+DATA                 6         51                                 4134000500045 
+E          DATA      1ERR-T     1DATA      2ERR-T     2MONIT     24134000500046 
+MEV        NO-DIM     NO-DIM     1/FIS/MEV  1/FIS/MEV  1/FIS/MEV  4134000500047 
+  0.12109   0.98       0.08       0.203      0.018      0.205     4134000500048 
+  0.1314    1.058      0.075      0.225      0.016      0.212     4134000500049 
+  0.14212   1.199      0.072      0.263      0.016      0.219     4134000500050 
+  0.15327   0.993      0.057      0.225      0.013      0.226     4134000500051 
+  0.16483   1.064      0.055      0.248      0.013      0.233     4134000500052 
+  0.17682   1.108      0.050      0.265      0.012      0.239     4134000500053 
+  0.18923   1.104      0.046      0.271      0.011      0.245     4134000500054 
+  0.20206   1.036      0.043      0.260      0.011      0.251     4134000500055 
+  0.22209   1.027      0.032      0.2664     0.0082     0.259     4134000500056 
+  0.24307   1.087      0.031      0.2915     0.0083     0.267     4134000500057 
+  0.266     1.073      0.026      0.2951     0.0072     0.275     4134000500058 
+  0.3       1.077      0.019      0.3073     0.0054     0.285     4134000500059 
+  0.338     1.025      0.022      0.3032     0.0065     0.295     4134000500060 
+  0.383     1.055      0.016      0.3228     0.0049     0.306     4134000500061 
+  0.44      1.068      0.017      0.33777    0.0054     0.316     4134000500062 
+  0.497     1.049      0.014      0.33976    0.0045     0.324     4134000500063 
+  0.562     1.074      0.017      0.35445    0.0056     0.330     4134000500064 
+  0.617     1.044      0.015      0.34812    0.0050     0.333     4134000500065 
+  0.676     1.033      0.014      0.34667    0.0047     0.336     4134000500066 
+  0.738     1.032      0.014      0.34718    0.0047     0.336     4134000500067 
+  0.81      1.035      0.013      0.34754    0.0043     0.336     4134000500068 
+  0.887     1.048      0.013      0.34961    0.0043     0.333     4134000500069 
+  0.974     1.031      0.012      0.33979    0.0039     0.330     4134000500070 
+  1.062     1.034      0.012      0.33518    0.0039     0.324     4134000500071 
+  1.165     1.023      0.012      0.32376    0.0038     0.316     4134000500072 
+  1.274     1.022      0.011      0.31394    0.0034     0.307     4134000500073 
+  1.392     1.019      0.011      0.30177    0.0033     0.296     4134000500074 
+  1.53      1.014      0.01       0.28632    0.0028     0.282     4134000500075 
+  1.68      1.015      0.011      0.27084    0.0029     0.266     4134000500076 
+  1.841     0.981      0.011      0.24521    0.0028     0.250     4134000500077 
+  2.017     0.991      0.011      0.22949    0.0026     0.232     4134000500078 
+  2.218     0.988      0.01       0.20825    0.0021     0.211     4134000500079 
+  2.435     1.014      0.011      0.1922     0.0020     0.189     4134000500080 
+  2.686     0.991      0.011      0.16533    0.0018     0.167     4134000500081 
+  2.955     0.982      0.011      0.14217    0.0016     0.145     4134000500082 
+  3.244     0.995      0.011      0.12314    0.0014     0.124     4134000500083 
+  3.58      0.962      0.011      0.09854    0.0011     0.102     4134000500084 
+  3.96      0.959      0.012      0.07834    0.00098    0.0817    4134000500085 
+  4.356     0.948      0.012      0.06087    0.00077    0.0642    4134000500086 
+  4.827     0.94       0.013      0.04508    0.00062    0.0479    4134000500087 
+  5.364     0.955      0.013      0.03264    0.00044    0.0341    4134000500088 
+  5.942     0.944      0.015      0.02228    0.00035    0.0236    4134000500089 
+  6.545     0.919      0.016      0.01466    0.00026    0.0159    4134000500090 
+  7.259     0.955      0.017      0.00953    0.00017    0.00998   4134000500091 
+  8.112     0.898      0.018      0.00508    0.0001     0.00566   4134000500092 
+  8.811     0.886      0.027      0.00314    0.0001     0.00354   4134000500093 
+  9.412     0.825      0.023      0.00195    0.00005    0.00237   4134000500094 
+ 10.389     0.884      0.027      0.00109    0.00003    0.00123   4134000500095 
+ 11.527     0.834      0.029      0.00048    0.00002    0.00057   4134000500096 
+ 12.885     0.851      0.033      0.00019    7.59   E-6 0.00023   4134000500097 
+ 14.321     0.8001     0.0399     0.00007    3.591  E-6 0.00009   4134000500098 
+ENDDATA             53          0                                 4134000500099 
+ENDSUBENT           98          0                                 4134000599999 
+ENDENTRY             5          0                                 4134099999999 

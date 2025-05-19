@@ -1,0 +1,141 @@
+ENTRY            40470   20140728                             41644047000000001 
+SUBENT        40470001   20140728                             41644047000100001 
+BIB                 11         27                                 4047000100002 
+INSTITUTE  (4RUSJIA)                                              4047000100003 
+REFERENCE  (J,AE,39,(4),291,1975)   Data and graphs are given     4047000100004 
+           (J,SJA,39,916,1975) Engl.translation of AE,39,(4),291  4047000100005 
+           #doi:10.1007/BF01261900                                4047000100006 
+           (C,75KIEV,6,61,1975)                                   4047000100007 
+AUTHOR     (A.A.Bergman,A.N.Medvedev,A.E.Samsonov,V.A.Tolstikov)  4047000100008 
+TITLE      Ratio of radiative capture and fission cross-sections  4047000100009 
+           for Pu-239 at neutron energy of 0.2-30. keV .          4047000100010 
+SAMPLE     Plutonium samples with thicknesses 4.2E20 and          4047000100011 
+           4.9E21 atoms/cm2, Pu-239 content not available         4047000100012 
+METHOD     (SLODT) Method of slowing-down time in lead            4047000100013 
+DETECTOR   (PROPC) Proportional gamma-counter                     4047000100014 
+           (FISCH) Fission chamber                                4047000100015 
+PART-DET   (G,FF) Gamma and fission fragments.                    4047000100016 
+STATUS     (TABLE) From Neytronnaya Fizika,part 6,page 61,1976    4047000100017 
+            = Table of J,AE,39,(4),291,1975                       4047000100018 
+           (COREL,40435001) Entry 40470 supersedes 40435 as full  4047000100019 
+           duplication.                                           4047000100020 
+HISTORY    (19771130C) Compiled at the centre                     4047000100021 
+           (20140728U) M.M. Upper -> lower case correction.       4047000100022 
+           Dates were corrected for 4-digits year.                4047000100023 
+           BIB information was updated.                           4047000100024 
+           Ref. od AE was added.                                  4047000100025 
+           DATA-ERR1 -> ERR-S, DATA-ERR2 -> ERR-1 .               4047000100026 
+           SDT was added in REACTION.                             4047000100027 
+ERR-ANALYS (ERR-S)     Standard deviation                         4047000100028 
+           (ERR-1)     Normalization error                        4047000100029 
+ENDBIB              27          0                                 4047000100030 
+NOCOMMON             0          0                                 4047000100031 
+ENDSUBENT           30          0                                 4047000199999 
+SUBENT        40470002   20140728                             41644047000200001 
+BIB                  6         41                                 4047000200002 
+REACTION   (94-PU-239(N,ABS),,ALF,,SDT)                           4047000200003 
+SAMPLE     Au sample of 1.8E+21 at/cm**2 was used for             4047000200004 
+           normalization - in measurement with carbon prism by    4047000200005 
+           thermal neutrons and "thin" Pu sample.                 4047000200006 
+           Measurements with "thick" Pu samples were calibrated by4047000200007 
+           "thin" sample measurement in energy range 8 - 23 keV.  4047000200008 
+ANALYSIS   ALF(E) value was defined by formula:                   4047000200009 
+            ALF(E) - ALF(T) =                                     4047000200010 
+            ((IgammaPu(E)*IfPu(T))/(IfPu(E)*IgammaPu(T))-1.)*     4047000200011 
+            ((IgammaPu(T)*SIGcapAu(T)*Pau*Apu*Bau)/               4047000200012 
+            (IgammaAu(T)*SIGfPu(T)*Ppu*Aau*Bpu*delta)), where     4047000200013 
+            IgammaPu, IgammaAu - gamma counts for Pu and Au,      4047000200014 
+            IfPu - fission counts for Pu,                         4047000200015 
+           at                                                     4047000200016 
+            E - investigated incident neutron energy,             4047000200017 
+            T - thermal neutron Maxwellian spectrum at 22 deg C   4047000200018 
+                temperature;                                      4047000200019 
+            SIGcapAu(T) - Au capture cross section (value not     4047000200020 
+                          given),                                 4047000200021 
+            SIGfPu(T) - Pu fission cross section (value not       4047000200022 
+                      given),                                     4047000200023 
+           Pau,Ppu,Aau,Apu,Bau,Bpu - sample weight, atomic weight,4047000200024 
+           binding energy for Au and Pu;                          4047000200025 
+           delta - coefficient depending from Au and Pu samples   4047000200026 
+           radii;                                                 4047000200027 
+           ALF(T) - ALPHA value for thermal Maxwellian spectrum at4047000200028 
+           22 deg temperature, = 0.398+-0.004 (ASSUM).            4047000200029 
+ASSUMED    (ASSUM,94-PU-239(N,ABS),,ALF,,MXW) at thermal spectrum 4047000200030 
+CORRECTION Correction on spectrometer resolution < 4.0 % .        4047000200031 
+STATUS     (COREL,40103002) In 40103 - previous measurement,      4047000200032 
+           mentioned in C,75KIEV,6,61,1976 as preliminary result. 4047000200033 
+           In this measurement -                                  4047000200034 
+           electronics stability was increased,                   4047000200035 
+           slowing down time was measured better,                 4047000200036 
+           Neutron pulse duration was decreased twice to 0.5      4047000200037 
+           microsec,                                              4047000200038 
+           new data for fission decreased ALPHA value in energy   4047000200039 
+           range En > 8 keV.                                      4047000200040 
+           (COREL,40105015) Ref.s of 40105 are not mentioned in   4047000200041 
+           C,75KIEV,6,61,1976.                                    4047000200042 
+           Thick sample is different; method mainly the same.     4047000200043 
+ENDBIB              41          0                                 4047000200044 
+COMMON               3          3                                 4047000200045 
+EN-NRM     ASSUM      ASSUM-ERR                                   4047000200046 
+EV         NO-DIM     NO-DIM                                      4047000200047 
+ 0.0253    0.398      0.004                                       4047000200048 
+ENDCOMMON            3          0                                 4047000200049 
+DATA                 5         21                                 4047000200050 
+EN-MIN     EN-MAX     DATA       ERR-S      ERR-1                 4047000200051 
+KEV        KEV        NO-DIM     NO-DIM     NO-DIM                4047000200052 
+ 2.0000E-01 3.0000E-01 7.4000E-01 1.0000E-02 6.0000E-02           4047000200053 
+ 3.0000E-01 4.0000E-01 9.5000E-01 3.0000E-02 8.0000E-02           4047000200054 
+ 4.0000E-01 5.0000E-01 7.6000E-01 2.0000E-02 6.0000E-02           4047000200055 
+ 5.0000E-01 6.0000E-01 9.5000E-01 3.0000E-02 8.0000E-02           4047000200056 
+ 6.0000E-01 7.0000E-01 1.1500E+00 3.0000E-02 9.0000E-02           4047000200057 
+ 7.0000E-01 8.0000E-01 9.8000E-01 4.0000E-02 8.0000E-02           4047000200058 
+ 8.0000E-01 9.0000E-01 8.8000E-01 4.0000E-02 8.0000E-02           4047000200059 
+ 9.0000E-01 1.0000E+00 9.0000E-01 5.0000E-02 8.0000E-02           4047000200060 
+ 1.0000E+00 2.0000E+00 1.0200E+00 2.0000E-02 8.0000E-02           4047000200061 
+ 2.0000E+00 3.0000E+00 9.8000E-01 2.0000E-02 8.0000E-02           4047000200062 
+ 3.0000E+00 4.0000E+00 8.4000E-01 4.0000E-02 7.0000E-02           4047000200063 
+ 4.0000E+00 5.0000E+00 8.0000E-01 4.0000E-02 7.0000E-02           4047000200064 
+ 5.0000E+00 6.0000E+00 7.8000E-01 5.0000E-02 7.0000E-02           4047000200065 
+ 6.0000E+00 7.0000E+00 8.6000E-01 3.0000E-02 7.0000E-02           4047000200066 
+ 7.0000E+00 8.0000E+00 8.1000E-01 4.0000E-02 7.0000E-02           4047000200067 
+ 8.0000E+00 9.0000E+00 7.6000E-01 4.0000E-02 6.0000E-02           4047000200068 
+ 9.0000E+00 1.0000E+01 7.4000E-01 4.0000E-02 6.0000E-02           4047000200069 
+ 1.0000E+01 1.5000E+01 6.1000E-01 2.0000E-02 6.0000E-02           4047000200070 
+ 1.5000E+01 2.0000E+01 5.5000E-01 2.0000E-02 5.0000E-02           4047000200071 
+ 2.0000E+01 2.5000E+01 5.1000E-01 3.0000E-02 5.0000E-02           4047000200072 
+ 2.5000E+01 3.0000E+01 4.5000E-01 2.0000E-02 5.0000E-02           4047000200073 
+ENDDATA             23          0                                 4047000200074 
+ENDSUBENT           73          0                                 4047000299999 
+SUBENT        40470003   20140728                             41644047000300001 
+BIB                  2          2                                 4047000300002 
+REACTION   (94-PU-239(N,F),,SIG,,SDT)                             4047000300003 
+ANALYSIS    Not explained in articles.                            4047000300004 
+ENDBIB               2          0                                 4047000300005 
+NOCOMMON             0          0                                 4047000300006 
+DATA                 5         21                                 4047000300007 
+EN-MIN     EN-MAX     DATA       ERR-S      ERR-1                 4047000300008 
+KEV        KEV        B          B          B                     4047000300009 
+ 2.0000E-01 3.0000E-01 1.7000E+01 1.0000E-01 3.2000E-01           4047000300010 
+ 3.0000E-01 4.0000E-01 1.2100E+01 1.1000E-01 2.4000E-01           4047000300011 
+ 4.0000E-01 5.0000E-01 1.0400E+01 1.1000E-01 2.1000E-01           4047000300012 
+ 5.0000E-01 6.0000E-01 9.6300E+00 1.1000E-01 1.9000E-01           4047000300013 
+ 6.0000E-01 7.0000E-01 7.2900E+00 1.0000E-01 1.5000E-01           4047000300014 
+ 7.0000E-01 8.0000E-01 6.3700E+00 1.1000E-01 1.3000E-01           4047000300015 
+ 8.0000E-01 9.0000E-01 6.2900E+00 1.6000E-01 1.3000E-01           4047000300016 
+ 9.0000E-01 1.0000E+00 6.4100E+00 1.4000E-01 1.3000E-01           4047000300017 
+ 1.0000E+00 2.0000E+00 4.9200E+00 4.0000E-02 1.0000E-01           4047000300018 
+ 2.0000E+00 3.0000E+00 3.3400E+00 3.0000E-02 7.0000E-02           4047000300019 
+ 3.0000E+00 4.0000E+00 2.9200E+00 4.0000E-02 6.0000E-02           4047000300020 
+ 4.0000E+00 5.0000E+00 2.6100E+00 6.0000E-02 5.0000E-02           4047000300021 
+ 5.0000E+00 6.0000E+00 2.4200E+00 4.0000E-02 5.0000E-02           4047000300022 
+ 6.0000E+00 7.0000E+00 2.2100E+00 4.0000E-02 4.0000E-02           4047000300023 
+ 7.0000E+00 8.0000E+00 2.1100E+00 5.0000E-02 4.0000E-02           4047000300024 
+ 8.0000E+00 9.0000E+00 2.0900E+00 5.0000E-02 5.0000E-02           4047000300025 
+ 9.0000E+00 1.0000E+01 2.0100E+00 4.0000E-02 4.0000E-02           4047000300026 
+ 1.0000E+01 1.5000E+01 1.9800E+00 2.0000E-02 4.0000E-02           4047000300027 
+ 1.5000E+01 2.0000E+01 1.8100E+00 2.0000E-02 4.0000E-02           4047000300028 
+ 2.0000E+01 2.5000E+01 1.7900E+00 3.0000E-02 4.0000E-02           4047000300029 
+ 2.5000E+01 3.0000E+01 1.7700E+00 3.0000E-02 3.0000E-02           4047000300030 
+ENDDATA             23          0                                 4047000300031 
+ENDSUBENT           30          0                                 4047000399999 
+ENDENTRY             3          0                                 4047099999999 

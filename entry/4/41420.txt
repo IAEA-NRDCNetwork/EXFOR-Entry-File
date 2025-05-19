@@ -1,0 +1,108 @@
+ENTRY            41420   20130529                             41614142000000001 
+SUBENT        41420001   20130529                             41614142000100001 
+BIB                 13         36                                 4142000100002 
+TITLE       Thermal neutron capture cross section of 232Pa        4142000100003 
+AUTHOR     (M.Andreev, S.Abramovich, E.Fomushkin, V.Kvasov,       4142000100004 
+            A.Portnov, A.Redkin, H.Yasuda)                        4142000100005 
+INSTITUTE  (4RUSMIF)   Kvasov, Portnov, Redkin                    4142000100006 
+           (4RUSEPA)   Andreev, Abramovich, Fomushkin             4142000100007 
+           (2JPNJAE)   Yasuda                                     4142000100008 
+REFERENCE  (J,NSTS,2,(1),280,200208)   Main reference, data given 4142000100009 
+            Conf.Proc. ND2011 in Tsukuba .                        4142000100010 
+           (C,97TRIEST,2,1356,199705)  Experimental and analysis  4142000100011 
+                                       details                    4142000100012 
+REL-REF    (R,,F.F.Fomushkin+,C,97TRIEST,2,1353,199705)           4142000100013 
+FACILITY   (REAC,4RUSMIF) Research thermal reactor RTR of 4RUSMIF 4142000100014 
+INC-SOURCE (REAC)                                                 4142000100015 
+INC-SPECT  Density of the thermal neutron flux at irradiation     4142000100016 
+           position 0.29E+18 n/s/m**2. Cd ratio by Au-198 isotope 4142000100017 
+           was 4.8 .                                              4142000100018 
+DETECTOR   (HPGE,GELI)                                            4142000100019 
+METHOD     (ACTIV)  Activation during 20 hr in channel VEC-4      4142000100020 
+           filled with water. One sample was irradiated inside Cd 4142000100021 
+           cover. Cooling time 5 days, measuring time 35 days.    4142000100022 
+           (GSPEC)  Gamma-Spectrum analysis was performed at the  4142000100023 
+                    measuring complex at 4RUSEPA consisting of    4142000100024 
+                    Ge(Li) detector and SBS-40 analyser produced  4142000100025 
+                    by GREEN STAR firm                            4142000100026 
+           (SITA)   Single-target irradiation                     4142000100027 
+DECAY-DATA (91-PA-231,3.38E+4YR)                                  4142000100028 
+COMMENT    NSTS,2,(1),280,2002 was performed within the frames of 4142000100029 
+           ISTC Project #1145.                                    4142000100030 
+HISTORY    (20030103C)  + +  Compiled at the center - CJD  + +    4142000100031 
+           (20030104U) Last checking has been done.               4142000100032 
+           (20130529A) Ref. C,2001TSUKUB,,(73),200110 was deleted 4142000100033 
+           according to the memo CP-D/791 ( N.Otsuka,S.Dunaeva) . 4142000100034 
+            Upper -> lower case correction.                       4142000100035 
+           MXW was deleted in REACTION, EN-MEAN -> EN, ERR-T ->   4142000100036 
+           DATA-ERR in Subent 2.                                  4142000100037 
+           Subent 003 was added.                                  4142000100038 
+ENDBIB              36          0                                 4142000100039 
+NOCOMMON             0          0                                 4142000100040 
+ENDSUBENT           39          0                                 4142000199999 
+SUBENT        41420002   20130529                             41614142000200001 
+BIB                  4          7                                 4142000200002 
+REACTION   (91-PA-232(N,G)91-PA-233,,SIG)                         4142000200003 
+ANALYSIS   .Cross-section for 0.0253 eV energy was obtained from  4142000200004 
+            the measured one using 1/V energy dependence law      4142000200005 
+            extrapolation.                                        4142000200006 
+ERR-ANALYS (DATA-ERR)  Not specified by authors.                  4142000200007 
+STATUS     (TABLE) Text, page 282 of J,NSTS,2,(1),280,2002.       4142000200008 
+           (DEP,41420003) Directly measured data.                 4142000200009 
+ENDBIB               7          0                                 4142000200010 
+NOCOMMON             0          0                                 4142000200011 
+DATA                 3          1                                 4142000200012 
+EN         DATA       DATA-ERR                                    4142000200013 
+EV         B          B                                           4142000200014 
+     0.0253       655.        69.                                 4142000200015 
+ENDDATA              3          0                                 4142000200016 
+ENDSUBENT           15          0                                 4142000299999 
+SUBENT        41420003   20130529                             41614142000300001 
+BIB                  8         34                                 4142000300002 
+REACTION   (91-PA-232(N,G)91-PA-233,,SIG,,MXW)                    4142000300003 
+DECAY-DATA (91-PA-232,31.44HR,B-,,,DG)                            4142000300004 
+           (91-PA-233,27.D,B-,,,DG,312.2,0.386)                   4142000300005 
+INC-SPECT  .Average thermal neutron energy is 0.0273 eV .         4142000300006 
+           Calculated spectrum is on Fig.2 of NSTS,2,(1),280,2002.4142000300007 
+ANALYSIS   Weighted average value of two methods:                 4142000300008 
+           - by amount of Pa233 atoms built up during irradiation:4142000300009 
+             518+-126 barn ;                                      4142000300010 
+           - by ratio of built-up quantities of Pa233 and Pa232   4142000300011 
+            (o.639=-0.068)*10**-3 : 653+-91 barn.                 4142000300012 
+ASSUMED    (ASSUM1,91-PA-231(N,F),,SIG,,MXW)                      4142000300013 
+           (ASSUM2,91-PA-232(N,F),,SIG,,MXW)                      4142000300014 
+           (ASSUM3,91-PA-233(N,G)91-PA-234,,SIG,,MXW)             4142000300015 
+           (ASSUM4,91-PA-233(N,F),,SIG,,MXW)                      4142000300016 
+           (ASSUM5,91-PA-231(N,G)91-PA-232,,SIG,,MXW)             4142000300017 
+           Westcott factors for neutron radiation c-s 1.0165 for  4142000300018 
+           Pa231 and 0.9625 for Pa-232.                           4142000300019 
+           Decay constants 6.124E-6 /s for Pa232, 2.971E-7 /s for 4142000300020 
+           Pa233.                                                 4142000300021 
+SAMPLE     .Disk of protactinium-231 placed in a titanium foil    4142000300022 
+            5.E-5 meter thick. Two samples were prepared, one     4142000300023 
+            containing N1=(0,478+-0.004)E-4 gram, another -       4142000300024 
+            N2=(0.563+-0.003)E-4 gram of 231Pa.                   4142000300025 
+           .Pa-232 sample was obtained by building up during      4142000300026 
+            Pa-231 sample irradiation in the reactor and deter-   4142000300027 
+            mined using seven gamma-lines accompanying Pa-232     4142000300028 
+            beta decay. Number of Pa-232 atoms is N1(PA-232)=     4142000300029 
+            (3.360+-0.085)E+13.                                   4142000300030 
+           .Pa-233 build-up quantity was defined by a 312.2-keV   4142000300031 
+            gamma-line accompanying Pa-233 beta decay. Numbers of 4142000300032 
+            Pa-233 atoms are - N1(PA-233)=(2.39+-0.22)E+10,       4142000300033 
+            N2(PA-233)=(0.117+-0.032)E+10                         4142000300034 
+ERR-ANALYS (DATA-ERR)  Not specified by authors.                  4142000300035 
+STATUS     (TABLE) Text, page 282 of J,NSTS,2,(1),280,2002.       4142000300036 
+ENDBIB              34          0                                 4142000300037 
+COMMON               5          3                                 4142000300038 
+ASSUM1     ASSUM2     ASSUM3     ASSUM4     ASSUM5                4142000300039 
+B          B          B          B          B                     4142000300040 
+      0.014       955.        39.         0.   204.               4142000300041 
+ENDCOMMON            3          0                                 4142000300042 
+DATA                 3          1                                 4142000300043 
+EN         DATA       DATA-ERR                                    4142000300044 
+EV         B          B                                           4142000300045 
+     0.0273       607.        64.                                 4142000300046 
+ENDDATA              3          0                                 4142000300047 
+ENDSUBENT           46          0                                 4142000399999 
+ENDENTRY             3          0                                 4142099999999 

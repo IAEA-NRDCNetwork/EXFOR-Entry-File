@@ -1,0 +1,75 @@
+ENTRY            31667   20140401                             31633166700000001 
+SUBENT        31667001   20140401                             31633166700100001 
+BIB                 19         39                                 3166700100002 
+TITLE      The thermal neutron capture cross section of 129I      3166700100003 
+AUTHOR     (T.Belgya, O.Bouland, G.Noguere, A.Plompen,            3166700100004 
+            P.Schillebeeckx, L.Szentmiklosi)                      3166700100005 
+REFERENCE  (C,2007NICE,1,631,2007)                                3166700100006 
+INSTITUTE  (3HUNII )                                              3166700100007 
+           (2FR CAD)                                              3166700100008 
+           (2ZZZGEL) Neutron Physics Unit                         3166700100009 
+FACILITY   (REAC,3HUNKFI) PGAA Facility, Budapest Research Reactor3166700100010 
+INC-SOURCE (REAC) Chopped cold neutron beam                       3166700100011 
+INC-SPECT   Cold neutron, negligible amount of epithermal neutrons3166700100012 
+SAMPLE      Weight of 1.9778 g, total activity of 2.81 MBq.       3166700100013 
+            I(20w%), Pb(53w%), S(6w%), Na(1w%),                   3166700100014 
+            O(15w%), H(0.1w%), N(1w%)                             3166700100015 
+DETECTOR   (HPGE) 23 cm distance to sample                        3166700100016 
+METHOD     (ACTIV,GSPEC)                                          3166700100017 
+MONITOR    ((MONIT)53-I-127(N,G)53-I-128,PAR,SIG,DG)              3166700100018 
+MONIT-REF  ((MONIT)31582011,L.Szentmiklosi+,J,NIM/A,564,655,2006) 3166700100019 
+ASSUMED    (ASSUM,53-I-129(N,G)53-I-130-M/T,,SIG)                 3166700100020 
+DECAY-DATA See Fig.3 and Table 1 of C,2007NICE,1,631,2007.        3166700100021 
+           Internal conversion coeff. (130Xe, 536 keV): 0.996     3166700100022 
+           (53-I-130-G,12.340HR,DG,536.,0.997)                    3166700100023 
+            - T(1/2) = (ln 2/lambda) is calculated by compiler    3166700100024 
+              from decay constant used by authors (1.5603e-05/sec)3166700100025 
+           (53-I-130-M,8.7798MIN,DG,536.,0.995)                   3166700100026 
+            - T(1/2) = (ln 2/lambda) is calculated by compiler    3166700100027 
+              from decay constant used by authors (1.3158e-03/sec)3166700100028 
+            - I = 99.6% is calculated by compiler                 3166700100029 
+              from IT ratio (82.3%) and two branching ratio       3166700100030 
+              I(536 keV,130gI)=0.997 and I(536 keV,130mI)=0.988   3166700100031 
+CORRECTION - attenuation of neutron                               3166700100032 
+           - gamma-ray self absorption                            3166700100033 
+REL-REF    (R,22819001,S.Nakamura+,J,NST,33,283,1996)             3166700100034 
+            Isomeric ratio for 129I(n,g)130I. See ASSUMED.        3166700100035 
+           (R,,R.B.Firestone+,B,FIRESTONE,,1999)                  3166700100036 
+            Decay data (8th edition, 1999 update)                 3166700100037 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   3166700100038 
+ANALYSIS   Authors assume 1/v-shape for I-127, 129 neutron capture3166700100039 
+HISTORY    (20090227C) On                                         3166700100040 
+           (20131222U) VS. FACILITY: 3HUNII -> 3HUNKFI            3166700100041 
+ENDBIB              39          0                                 3166700100042 
+COMMON               5          3                                 3166700100043 
+E-NRM      MONIT      MONIT-ERR  ASSUM      ASSUM-ERR             3166700100044 
+KEV        B          B          NO-DIM     NO-DIM                3166700100045 
+443.       0.712      0.009      0.588      0.014                 3166700100046 
+ENDCOMMON            3          0                                 3166700100047 
+ENDSUBENT           46          0                                 3166700199999 
+SUBENT        31667002   20090223                             31363166700200001 
+BIB                  2          2                                 3166700200002 
+REACTION   (53-I-129(N,G)53-I-130,PAR,SIG,DG)                     3166700200003 
+STATUS     (TABLE) Text (p.633) of C,2007NICE,1,631,2007          3166700200004 
+ENDBIB               2          0                                 3166700200005 
+NOCOMMON             0          0                                 3166700200006 
+DATA                 4          1                                 3166700200007 
+EN         E          DATA       DATA-ERR                         3166700200008 
+EV         KEV        B          B                                3166700200009 
+0.0253     536.       30.4       1.1                              3166700200010 
+ENDDATA              3          0                                 3166700200011 
+ENDSUBENT           10          0                                 3166700299999 
+SUBENT        31667003   20090223                             31363166700300001 
+BIB                  2          3                                 3166700300002 
+REACTION   (53-I-129(N,G)53-I-130,,SIG)                           3166700300003 
+STATUS     (TABLE) Text (p.634) of C,2007NICE,1,631,2007          3166700300004 
+           (DEP,31667002)                                         3166700300005 
+ENDBIB               3          0                                 3166700300006 
+NOCOMMON             0          0                                 3166700300007 
+DATA                 3          1                                 3166700300008 
+EN         DATA       DATA-ERR                                    3166700300009 
+EV         B          B                                           3166700300010 
+0.0253     30.6       1.1                                         3166700300011 
+ENDDATA              3          0                                 3166700300012 
+ENDSUBENT           11          0                                 3166700399999 
+ENDENTRY             3          0                                 3166799999999 

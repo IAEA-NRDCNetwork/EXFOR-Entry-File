@@ -1,0 +1,120 @@
+ENTRY            20849   20140310                             22382084900000001 
+SUBENT        20849001   20140310                             22382084900100001 
+BIB                 15         36                                 2084900100002 
+TITLE      Fission spectrum averaged cross section for the        2084900100003 
+            231Pa(n,f) reaction                                   2084900100004 
+AUTHOR     (K.Kobayashi, I.Kimura)                                2084900100005 
+INSTITUTE  (2JPNKTO)                                              2084900100006 
+REFERENCE  (R,KURRI-AR-10,1,1977)                                 2084900100007 
+           ((P,INDC(JAP)-37,48,1977)=(P,NEANDC(J)-51,48,1977))    2084900100008 
+            Same PFNS averaged cross sections given               2084900100009 
+FACILITY   (REAC,2JPNKTO) Kyoto University Research Reactor (KUR) 2084900100010 
+INC-SPECT  Close to fission neutron spectrum                      2084900100011 
+SAMPLE     Samples below were sealed in a quartz tube.            2084900100012 
+           Pa: Prepared from 231Pa2O5 by chemical purification,   2084900100013 
+                and mounted on Al (10 mm in diam).                2084900100014 
+               The number of atoms (2.589+/-0.128)E+17 was        2084900100015 
+                determined by photopeak counts of 290 keV gamma   2084900100016 
+                ray (3.25E+4 years).                              2084900100017 
+           Np: Prepared from 237NpO2 by chemical purification to  2084900100018 
+                exclude 239Pu and 238Pu-241Am.                    2084900100019 
+               The number of atoms (1.112+/-0.046)E+18 was        2084900100020 
+                determined by photopeak of 233Pa, which was       2084900100021 
+                produced by alpha-decay and in equilibrium with   2084900100022 
+                237Np.                                            2084900100023 
+DETECTOR   (GELI) 30 cc Ge(Li) detector                           2084900100024 
+MONITOR    (93-NP-237(N,F),,SIG,,FIS)                             2084900100025 
+ASSUMED    (ASSUM1,93-NP-237(N,F)56-BA-140,CUM,FY)                2084900100026 
+           (ASSUM2,91-PA-231(N,F)56-BA-140,CUM,FY)                2084900100027 
+REL-REF    (R,,J.Kemmer+,J,RCA,13,181,1970) 231Pa(n,f)140Ba yield 2084900100028 
+DECAY-DATA (57-LA-140,,DG,1600.)                                  2084900100029 
+MONIT-REF  (,B.A.Magurno,R,BNL-NCS-50446,1975)                    2084900100030 
+            1975 ENDF/B-IV Dosimetry File                         2084900100031 
+STATUS     (TABLE) Table 1 of Ann.Rep.RRI Kyoto.Univ.Vol.10(1977)12084900100032 
+           (APRVD) Approved by Katsuhei Kobayashi (2014-03-11)    2084900100033 
+HISTORY    (19790319C)                                            2084900100034 
+           (19790511E)                                            2084900100035 
+           (20140310A) On. REFERENCE: KURRI-AR-10 added.          2084900100036 
+           BIB updated in all Subents. EN-DUMMY -> KT-DUMMY       2084900100037 
+           according to MEMO CP-D/776.                            2084900100038 
+ENDBIB              36          0                                 2084900100039 
+COMMON               2          3                                 2084900100040 
+ASSUM1     ASSUM2                                                 2084900100041 
+PC/FIS     PC/FIS                                                 2084900100042 
+ 5.93       6.98                                                  2084900100043 
+ENDCOMMON            3          0                                 2084900100044 
+ENDSUBENT           43          0                                 2084900199999 
+SUBENT        20849002   20140310                             22382084900200001 
+BIB                  5         21                                 2084900200002 
+REACTION   (91-PA-231(N,F),,SIG,,FIS) fission plate neutrons      2084900200003 
+INC-SOURCE Fission plate (90% enriched uranium) installed at      2084900200004 
+            the heavy water thermal neutron facility of KUR       2084900200005 
+REL-REF    (I,,K.Kanda+,R,KURRI-TR-96,1972)                       2084900200006 
+            Fission plate is described.                           2084900200007 
+METHOD     (ACTIV) Irradiated for 60 hours  (~1E+9 n/cm2/sec)     2084900200008 
+ERR-ANALYS (ERR-T) Total uncertainty                        (6.3%)2084900200009 
+           (MONIT-ERR) 237Np(n,f) cross section reference     (2%)2084900200010 
+           (ERR-1)     237Np(n,f)140Ba reaction rate          (2%)2084900200011 
+           (ERR-2)     231Pa(n,f)140Ba reaction rate          (1%)2084900200012 
+           (ASSUM1-ERR)237Np(n,f)140Ba fission yield reference(3%)2084900200013 
+           (ASSUM2-ERR)231Pa(n,f)140Ba fission yield reference(1%)2084900200014 
+           (ERR-3)     237Np/231Pa atom numbers ratio         (3%)2084900200015 
+           (ERR-4)     Systematic errors including          (3.5%)2084900200016 
+                       - uncertainty in fission neutron energy    2084900200017 
+                          spectrum shape                          2084900200018 
+                       - deviation in location between 231Pa and  2084900200019 
+                          237Np samples                           2084900200020 
+                       - uncertainties of half-life               2084900200021 
+                       - irradiation and cooling time             2084900200022 
+                       and so forth.                              2084900200023 
+ENDBIB              21          0                                 2084900200024 
+COMMON               6          3                                 2084900200025 
+ERR-1      ERR-2      ASSUM1-ERR ASSUM2-ERR ERR-3      ERR-4      2084900200026 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   2084900200027 
+ 2.         1.         3.         1.         3.         3.5       2084900200028 
+ENDCOMMON            3          0                                 2084900200029 
+DATA                 5          1                                 2084900200030 
+KT-DUMMY   DATA       ERR-T      MONIT      MONIT-ERR             2084900200031 
+MEV        MB         MB         MB         PER-CENT              2084900200032 
+ 1.32       1087.      68.        1323.      2.                   2084900200033 
+ENDDATA              3          0                                 2084900200034 
+ENDSUBENT           33          0                                 2084900299999 
+SUBENT        20849003   20140310                             22382084900300001 
+BIB                  5         24                                 2084900300002 
+REACTION   (91-PA-231(N,F),,SIG,,FIS) core neutrons               2084900300003 
+INC-SOURCE Core of KUR (hydraulic conveyor tube) where the fast   2084900300004 
+            neutron spectrum was previously shown to be close to  2084900300005 
+            the fission spectrum                                  2084900300006 
+REL-REF    (R,,I.Kimura+,J,NST,8,59,1971)                         2084900300007 
+            Neutron spectrum at core of KUR is described.         2084900300008 
+           (R,,K.Kanda+,R,KURRI-AR-2,18,1969)                     2084900300009 
+            Neutron spectrum at core of KUR is described.         2084900300010 
+METHOD     (ACTIV) Irradiated for two hours (~4E+13 n/cm2/sec)    2084900300011 
+ERR-ANALYS (ERR-T) Total uncertainty                        (7.2%)2084900300012 
+           (MONIT-ERR) 237Np(n,f) cross section reference     (2%)2084900300013 
+           (ERR-1)     237Np(n,f)140Ba reaction rate        (1.5%)2084900300014 
+           (ERR-2)     231Pa(n,f)140Ba reaction rate        (3.8%)2084900300015 
+           (ASSUM1-ERR)237Np(n,f)140Ba fission yield reference(3%)2084900300016 
+           (ASSUM2-ERR)231Pa(n,f)140Ba fission yield reference(1%)2084900300017 
+           (ERR-3)     237Np/231Pa atom numbers ratio         (3%)2084900300018 
+           (ERR-4)     Systematic errors including          (3.5%)2084900300019 
+                       - uncertainty in fission neutron energy    2084900300020 
+                          spectrum shape                          2084900300021 
+                       - deviation in location between 231Pa and  2084900300022 
+                          237Np samples                           2084900300023 
+                       - uncertainties of half-life               2084900300024 
+                       - irradiation and cooling time             2084900300025 
+                       and so forth.                              2084900300026 
+ENDBIB              24          0                                 2084900300027 
+COMMON               6          3                                 2084900300028 
+ERR-1      ERR-2      ASSUM1-ERR ASSUM2-ERR ERR-3      ERR-4      2084900300029 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   2084900300030 
+ 1.5        3.8        3.         1.         3.         3.5       2084900300031 
+ENDCOMMON            3          0                                 2084900300032 
+DATA                 5          1                                 2084900300033 
+KT-DUMMY   DATA       ERR-T      MONIT      MONIT-ERR             2084900300034 
+MEV        MB         MB         MB         PER-CENT              2084900300035 
+ 1.32       1059.      76.        1323.      2.                   2084900300036 
+ENDDATA              3          0                                 2084900300037 
+ENDSUBENT           36          0                                 2084900399999 
+ENDENTRY             3          0                                 2084999999999 

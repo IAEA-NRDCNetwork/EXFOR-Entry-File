@@ -1,0 +1,216 @@
+ENTRY            22875   20090218                             22082287500000001 
+SUBENT        22875001   20090218                             22082287500100001 
+BIB                 17        113                                 2287500100002 
+TITLE      .232Th(n,gamma) cross section from 4keV to 140 keV     2287500100003 
+AUTHOR     (A.Borella, K.Volev, A.Brusegan, P.Schillebeeckx,      2287500100004 
+           F.Corvi, N.Koyumdjieva, N.Janeva, A.A.Lukyanov)        2287500100005 
+INSTITUTE  (2ZZZGEL) Schillebeeckx, Volev, Borella, Brusegan,     2287500100006 
+                    Corvi                                         2287500100007 
+           (3BULBLA) Koyumdjieva, Janeva, Lukyanov                2287500100008 
+REFERENCE  (J,NSE,152,1,2006)  Main reference. data and           2287500100009 
+                              covariance matrices are given       2287500100010 
+REL-REF    (R,,D.OLSEN+,J,NSE,82,239,1982)  Resonance analysis    2287500100011 
+                                            of Th-232             2287500100012 
+           (N,,J.M.SALOMEE+,J,NIM,179,(1),13,1981) Experimental   2287500100013 
+                        Details For Targets and Accelerator       2287500100014 
+           (N,,J.M.SALOMEE+,J,PHCL,8,(4),261,1986)                2287500100015 
+            Experimental Details Concerning GELINA Facility       2287500100016 
+            C. Bastian, SPIE,The International Society for        2287500100017 
+             Optical Engineering, Vol. 2867 (1997) 611) Analysis  2287500100018 
+             procedures of GELINA TOF-spectra                     2287500100019 
+FACILITY   (LINAC,2ZZZGEL) GELINA, 150 MeV Geel pulsed electron   2287500100020 
+             linac, Electron burst width 1ns, Repetition rate     2287500100021 
+             800 Hz,Average electron current 70 microA, Average   2287500100022 
+             electron energy 100 MeV.                             2287500100023 
+INC-SOURCE (PHOTO)Neutrons produced by (GAMMA,N) and              2287500100024 
+            (GAMMA,FISS) Reactions induced via bremsstrahlung     2287500100025 
+            from the electron beam hitting a rotating uranium     2287500100026 
+            target                                                2287500100027 
+           (THCOL) Fast neutron from the target moderated         2287500100028 
+                  to a white spectrum by water contained in       2287500100029 
+            berillium canning of 4.0cm thick walls situated       2287500100030 
+            below and above uranium target                        2287500100031 
+INC-SPECT  .White Neutron Source                                  2287500100032 
+            10B overlap filter, 9mm thick Pb filter and Na black  2287500100033 
+            resonance filter kept permanently in the neutron beam;2287500100034 
+            The total energy detection principle in combination   2287500100035 
+            with the pulse height weighting technique was applied.2287500100036 
+SAMPLE     .Metallic natural thorium disc,                        2287500100037 
+              diameter = 80 mm, thickness = 1.588E-3 at/b         2287500100038 
+METHOD     (TOF)  GELINA Flight path number 5; angle of the flight2287500100039 
+            path with respect to the electron beam is 252deg;     2287500100040 
+            The weighting function was obtained by Monte Carlo    2287500100041 
+            simulations validated by experiment.                  2287500100042 
+             The data have been normalized to the well-isolated an2287500100043 
+             saturated 232Th resonance at 23.5 eV.                2287500100044 
+DETECTOR   (SCIN) Gamma-rays detected with two C6D6 detectors     2287500100045 
+            placed perpendicular to the neutron beam at 14.367 m  2287500100046 
+            from the neutron source                               2287500100047 
+           (IOCH) 10B-loaded ionization chamber placed at 13.56 m 2287500100048 
+            from the neutron source for flux shape measurements   2287500100049 
+MONITOR    ((MONIT)90-TH-232(N,0),,EN)  Normalisation based on    2287500100050 
+             the well-isolated and almost  saturated resonance    2287500100051 
+             232Th at 23.5 eV                                     2287500100052 
+           (5-B-10(N,A)3-LI-7,,SIG) ENDF/B-VI                     2287500100053 
+            The interpolation of the 10B cross-section            2287500100054 
+            data was done log-log.                                2287500100055 
+ANALYSIS   .Data analysis performed with the AGS package          2287500100056 
+            (C. Bastian). The capture yield is obtained from dead 2287500100057 
+            time and background corrected response of SCIN and    2287500100058 
+            IOCH. A sample dependend weigthing function is applied2287500100059 
+CORRECTION .Corrections were made for:                            2287500100060 
+            * Dead time                                           2287500100061 
+            * Background                                          2287500100062 
+             flux: based on S, Na, W, Ag black resonances         2287500100063 
+             capture: 208Pb scattering sample + Na black resonance2287500100064 
+            * Final capture yield corrected for multiple          2287500100065 
+             scattering and self-shielding effect (see            2287500100066 
+             Volev et al.)                                        2287500100067 
+ERR-ANALYS (ERR-T)Total uncertainties were deduced by propagating 2287500100068 
+            correlated and uncorrelated partial uncertainties     2287500100069 
+            using AGS. Details in main reference                  2287500100070 
+            Partial uncertainties considered were due to:         2287500100071 
+            * counting statistics, between 0.18% and 0.25 %       2287500100072 
+            * dead time and background correction                 2287500100073 
+            * flux shape and normalisation, 1.5%                  2287500100074 
+            * multiple scattering and self-shielding correction   2287500100075 
+COVARIANCE  .Covariation matrix after self-shielding and          2287500100076 
+             multiple scattering corrections                      2287500100077 
+           Min-E                                                  2287500100078 
+              Max-E                                               2287500100079 
+             4   6 1. .85 .85 .86 .86 .87 .88 .88 .88 .89 .89 ....2287500100080 
+             6   8    1.  .88 .89 .89 .89 .91 .91 .91 .92 .92 ....2287500100081 
+             8  10        1.  .89 .89 .90 .91 .91 .91 .92 .92 ....2287500100082 
+            10  15            1.  .90 .91 .93 .92 .93 .93 .93 ....2287500100083 
+            15  20                1.  .91 .92 .92 .93 .93 .93 ....2287500100084 
+            20  30                    1.  .93 .93 .93 .94 .93 ....2287500100085 
+            30  40                        1.  .95 .95 .96 .95 ....2287500100086 
+            40  50                            1.  .95 .96 .95 ....2287500100087 
+            50  60                                1.  .96 .96 ....2287500100088 
+            60  80                                    1.  .96 ....2287500100089 
+            80 100                                        1.  ....2287500100090 
+           100 120                                            ....2287500100091 
+           120 140                                            ....2287500100092 
+           .Two last columns -                                    2287500100093 
+           ---------------------                                  2287500100094 
+           Min-E                                                  2287500100095 
+             Max-E                                                2287500100096 
+             4   6 .... .89 .88 .88                               2287500100097 
+             6   8 .... .92 .91 .91                               2287500100098 
+             8  10 .... .92 .91 .91                               2287500100099 
+            10  15 .... .93 .93 .92                               2287500100100 
+            15  20 .... .93 .93 .92                               2287500100101 
+            20  30 .... .93 .93 .93                               2287500100102 
+            30  40 .... .95 .95 .95                               2287500100103 
+            40  50 .... .95 .95 .95                               2287500100104 
+            50  60 .... .96 .95 .95                               2287500100105 
+            60  80 .... .96 .96 .96                               2287500100106 
+            80 100 .... 1.  .96 .95                               2287500100107 
+           100 120 ....     1.  .95                               2287500100108 
+           120 140 ....         1.                                2287500100109 
+           .Covariance file exists and may be obtained            2287500100110 
+            on request                                            2287500100111 
+HISTORY    (20050901C)  HH/SM                                     2287500100112 
+           (20060119A)  Reference added, error structure and      2287500100113 
+                        covariance matrices given                 2287500100114 
+           (20090218A) Data table in subent 002 corrected         2287500100115 
+ENDBIB             113          0                                 2287500100116 
+COMMON               1          3                                 2287500100117 
+MONIT                                                             2287500100118 
+EV                                                                2287500100119 
+  23.5                                                            2287500100120 
+ENDCOMMON            3          0                                 2287500100121 
+ENDSUBENT          120          0                                 2287500199999 
+SUBENT        22875002   20090218                             22082287500200001 
+BIB                  8         55                                 2287500200002 
+REACTION   (90-TH-232(N,G)90-TH-233,,SIG,,AV) Averaged over       2287500200003 
+                    energy interval given in the data section     2287500200004 
+REL-REF    (A,,W.P.POENITZ+,R,ANL-NDM-42,197803)                  2287500200005 
+           (D,,K.WISSHAK+,J,NSE,137,183,2001)     40% difference  2287500200006 
+                                        above 15 keV              2287500200007 
+           (D,,K.KOBAYASHI+,J,NST,18,(11),823,198111) Difference  2287500200008 
+                                       above 15 keV               2287500200009 
+           (D,,R.L.MACKLIN+,J,NSE,64,849,1977)   Difference       2287500200010 
+                                       above 15 keV               2287500200011 
+COMMENT    . Quantities in the DATA section is:                   2287500200012 
+           .EN-Min (keV)   - lower energy bin                     2287500200013 
+           .EN-Max (keV)   - upper energy bin                     2287500200014 
+           .DATA   (mbarn) - capture cross section                2287500200015 
+ERR-ANALYS (ERR-S)   Uncorrelated error component due to the      2287500200016 
+                     counting statistics on both the capture and  2287500200017 
+                     neutron flux measurements                    2287500200018 
+           (ERR-1)   The total error after dead-time correction   2287500200019 
+                     and background subtraction                   2287500200020 
+MISC-COL   (MISC)  - multiple scattering and self-shielding       2287500200021 
+                     correction                                   2287500200022 
+STATUS     .Table II of main reference                            2287500200023 
+COVARIANCE  .Covariation matrix BEFORE self-shielding and         2287500200024 
+             multiple scattering corrections                      2287500200025 
+           Min-E                                                  2287500200026 
+             Max-E                                                2287500200027 
+             4   6 1. .60 .57 .58 .55 .53 .62 .58 .56 .61 .58 ....2287500200028 
+             6   8    1.  .55 .56 .53 .51 .60 .57 .55 .60 .56 ....2287500200029 
+             8  10        1.  .54 .51 .49 .58 .55 .52 .57 .54 ....2287500200030 
+            10  15            1.  .52 .50 .59 .56 .54 .59 .55 ....2287500200031 
+            15  20                1.  .48 .57 .54 .52 .56 .53 ....2287500200032 
+            20  30                    1.  .55 .52 .50 .54 .51 ....2287500200033 
+            30  40                        1.  .61 .59 .64 .61 ....2287500200034 
+            40  50                            1.  .56 .61 .58 ....2287500200035 
+            50  60                                1.  .59 .56 ....2287500200036 
+            60  80                                    1.  .61 ....2287500200037 
+            80 100                                        1.  ....2287500200038 
+           100 120                                            ....2287500200039 
+           120 140                                            ....2287500200040 
+           .Two last columns -                                    2287500200041 
+           ---------------------                                  2287500200042 
+           Min-E Max-E                                            2287500200043 
+              4      6 ....  .58 .54 .51                          2287500200044 
+              6      8 ....  .56 .53 .49                          2287500200045 
+              8     10 ....  .54 .51 .47                          2287500200046 
+             10     15 ....  .55 .52 .49                          2287500200047 
+             15     20 ....  .53 .50 .47                          2287500200048 
+             20     30 ....  .51 .48 .45                          2287500200049 
+             30     40 ....  .61 .57 .54                          2287500200050 
+             40     50 ....  .58 .54 .51                          2287500200051 
+             50     60 ....  .56 .52 .49                          2287500200052 
+             60     80 ....  .61 .57 .54                          2287500200053 
+             80    100 ....  1.  .54 .51                          2287500200054 
+            100    120 ....      1.  .48                          2287500200055 
+            120    140 ....          1.                           2287500200056 
+HISTORY    (20090218A) Data table (EN-MAX) corrected              2287500200057 
+ENDBIB              55          0                                 2287500200058 
+NOCOMMON             0          0                                 2287500200059 
+DATA                 9         13                                 2287500200060 
+EN-MIN     EN-MAX     DATA       ERR-S      ERR-1      ERR-T      2287500200061 
+ERR-T      MISC       MISC-ERR                                    2287500200062 
+KEV        KEV        MB         PER-CENT   PER-CENT   PER-CENT   2287500200063 
+MB         NO-DIM     NO-DIM                                      2287500200064 
+  4.         6.         1107.9       0.49        0.17       1.70  2287500200065 
+      18.8     1.0159      0.0066                                 2287500200066 
+  6.         8.          934.2       0.44        0.19       1.64  2287500200067 
+      15.3     1.0213      0.0051                                 2287500200068 
+  8.        10.          845.1       0.43        0.21       1.63  2287500200069 
+      13.8     1.0241      0.0051                                 2287500200070 
+ 10.        15.          749.7       0.38        0.15       1.61  2287500200071 
+      12.1     1.0269      0.0046                                 2287500200072 
+ 15.        20.          638.7       0.39        0.18       1.61  2287500200073 
+      10.3     1.0288      0.0046                                 2287500200074 
+ 20.        30.          571.3       0.36        0.14       1.59  2287500200075 
+       9.1     1.0300      0.0041                                 2287500200076 
+ 30.        40.          490.3       0.32        0.18       1.56  2287500200077 
+       7.6     1.0305      0.0031                                 2287500200078 
+ 40.        50.          429.6       0.31        0.19       1.56  2287500200079 
+       6.7     1.0304      0.0031                                 2287500200080 
+ 50.        60.          382.9       0.33        0.22       1.55  2287500200081 
+       5.9     1.0302      0.0026                                 2287500200082 
+ 60.        80.          311.4       0.30        0.18       1.55  2287500200083 
+       4.8     1.0301      0.0026                                 2287500200084 
+ 80.       100.          242.5       0.33        0.22       1.56  2287500200085 
+       3.8     1.0298      0.0026                                 2287500200086 
+100.       120.          217.8       0.33        0.23       1.55  2287500200087 
+       3.4     1.0295      0.0026                                 2287500200088 
+120.       140.          201.6       0.33        0.24       1.55  2287500200089 
+       3.1     1.0292      0.0026                                 2287500200090 
+ENDDATA             30          0                                 2287500200091 
+ENDSUBENT           90          0                                 2287500299999 
+ENDENTRY             2          0                                 2287599999999 

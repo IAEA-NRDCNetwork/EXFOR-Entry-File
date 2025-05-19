@@ -1,0 +1,94 @@
+ENTRY            41062   20090325                             41464106200000001 
+SUBENT        41062001   20090325                             41464106200100001 
+BIB                 12         24                                 4106200100002 
+TITLE       MO-98 total neutron cross-section measurement         4106200100003 
+AUTHOR     (S.I.Babich, V.A.Anufriev)                             4106200100004 
+INSTITUTE  (4RUSNIR)                                              4106200100005 
+REFERENCE  (J,AE,67,(2),140,198908)  Data Tables are given        4106200100006 
+FACILITY   (REAC) Reactor 'CM-2'                                  4106200100007 
+METHOD     (TOF) Flight base=91.7 m                               4106200100008 
+DETECTOR   (PROPC) He-3 filled proportional counter               4106200100009 
+MONITOR     No Information                                        4106200100010 
+SAMPLE      Oxide Mo-O3 powder.                                   4106200100011 
+            Mo-92 content is 0.15%, thickness 0.48E+24 atoms/m**2 4106200100012 
+            Mo-94 content is 0.10%, thickness 0.32E+24 atoms/m**2 4106200100013 
+            Mo-95 content is 0.20%, thickness 0.64E+24 atoms/m**2 4106200100014 
+            Mo-96 content is 0.20%, thickness 0.64E+24 atoms/m**2 4106200100015 
+            Mo-97 content is 0.70%, thickness 2.24E+24 atoms/m**2 4106200100016 
+            Mo-98 content is 98.5%, thickness 3.18E+26 atoms/m**2 4106200100017 
+            Mo-100 content is 0.15%,thickness 0.45E+24 atoms/m**2 4106200100018 
+STATUS      Data are taken from the reference                     4106200100019 
+ERR-ANALYS (DATA-ERR) Error is not specified                      4106200100020 
+HISTORY    (19920310C)  + + Compiled at the center - CJD + +      4106200100021 
+           (20090325A) M.M.Dates were corrected for 4-digits year.4106200100022 
+            Free text was corrected to be human-readable .        4106200100023 
+            Subents 003, 004 were corrected according to comment  4106200100024 
+            of T.Nakagawa. Sample information was corrected.      4106200100025 
+           BIB information was added.                             4106200100026 
+ENDBIB              24          0                                 4106200100027 
+COMMON               1          3                                 4106200100028 
+EN-RSL                                                            4106200100029 
+NSEC/M                                                            4106200100030 
+  58.                                                             4106200100031 
+ENDCOMMON            3          0                                 4106200100032 
+ENDSUBENT           31          0                                 4106200199999 
+SUBENT        41062002   20090325                             41464106200200001 
+BIB                  3          7                                 4106200200002 
+REACTION  1(42-MO-98(N,0),,EN)                                    4106200200003 
+          2(42-MO-98(N,TOT),,WID)                                 4106200200004 
+          3(42-MO-98(N,EL),,WID,,2G)                              4106200200005 
+ANALYSIS   (SHAPE) Single-level Breit-Wigner  analysis.           4106200200006 
+           (AREA) In addition to shape method for neutron         4106200200007 
+                  energies higher then 400 eV                     4106200200008 
+STATUS     (TABLE) Table 2 of reference.                          4106200200009 
+ENDBIB               7          0                                 4106200200010 
+NOCOMMON             0          0                                 4106200200011 
+DATA                 6          9                                 4106200200012 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2DATA      3DATA-ERR  34106200200013 
+EV         EV         MILLI-EV   MILLI-EV   MILLI-EV   MILLI-EV   4106200200014 
+  1.212E+01    6.0E-05    1.15E02     1.6E01   1.33E-01     5. E-34106200200015 
+  4.010E+02    1.5E-02    2.00E02              5.  E-00     1. E004106200200016 
+  4.280E+02    1.5E-02    3.10E02              1.48E+02     1.7E014106200200017 
+  4.680E+02    1.6E-02    1.42E03    1.80E02   1.23E+03     6.0E014106200200018 
+  6.080E+02    2.4E-02    2.90E02              1.60E+02     3.0E014106200200019 
+  6.170E+02    3.8E-02    2.40E02              2.30E+02     5.0E014106200200020 
+  1.120E+03    6.0E-02    1.65E02              7.0 E+01     2.0E014106200200021 
+  1.530E+03   1.00E-01    1.50E03              2.00E+03     3.0E024106200200022 
+  2.540E+03   2.00E-01    1.00E03              2.00E+03     4.0E024106200200023 
+ENDDATA             11          0                                 4106200200024 
+ENDSUBENT           23          0                                 4106200299999 
+SUBENT        41062003   20090325                             41464106200300001 
+BIB                  4          7                                 4106200300002 
+REACTION   (42-MO-98(N,G)42-MO-99,,RI,,,DERIV)                    4106200300003 
+ANALYSIS    Derived form resonance parameters taking into account 4106200300004 
+            the contribution of unresolved resonances.            4106200300005 
+STATUS     (TABLE) Table 3 of reference.                          4106200300006 
+           (DEP,41062002)                                         4106200300007 
+HISTORY    (20090325A) STATUS was added.                          4106200300008 
+            DERIV was added in REACTION .                         4106200300009 
+ENDBIB               7          0                                 4106200300010 
+NOCOMMON             0          0                                 4106200300011 
+DATA                 3          1                                 4106200300012 
+EN-MAX     DATA       DATA-ERR                                    4106200300013 
+EV         B          B                                           4106200300014 
+  2500.      5.6         0.6                                      4106200300015 
+ENDDATA              3          0                                 4106200300016 
+ENDSUBENT           15          0                                 4106200399999 
+SUBENT        41062004   20090325                             41464106200400001 
+BIB                  4          7                                 4106200400002 
+REACTION   (42-MO-98(N,G)42-MO-99,,SIG,,,DERIV)                   4106200400003 
+ANALYSIS    Derived form resonance parameters taking into account 4106200400004 
+            the contribution of unresolved resonances.            4106200400005 
+STATUS     (TABLE) Table 3 of reference.                          4106200400006 
+           (DEP,41062002)                                         4106200400007 
+HISTORY    (20090325A) STATUS was added.                          4106200400008 
+            DERIV was added in REACTION .                         4106200400009 
+ENDBIB               7          0                                 4106200400010 
+NOCOMMON             0          0                                 4106200400011 
+DATA                 3          1                                 4106200400012 
+EN         DATA       DATA-ERR                                    4106200400013 
+EV         B          B                                           4106200400014 
+   2.53E-02     1.4E-1      1.E-1                                 4106200400015 
+ENDDATA              3          0                                 4106200400016 
+ENDSUBENT           15          0                                 4106200499999 
+ENDENTRY             4          0                                 4106299999999 

@@ -1,0 +1,117 @@
+ENTRY            E2155   20100514                             E062E215500000001 
+SUBENT        E2155001   20100514                             E062E215500100001 
+BIB                 14         28                                 E215500100002 
+TITLE      Tensor analyzing power measurement of 1H(d,2He)n       E215500100003 
+           reaction at 70 MeV                                     E215500100004 
+AUTHOR     (T.Motobayashi, S.Satoh, H.Murakami, H.Sakai,          E215500100005 
+           N.Matsuoka, T.Saito, T.Noro, K.Hosono, A.Okihana,      E215500100006 
+           M.Ishihara, H.Okamura, S.Hatori)                       E215500100007 
+INSTITUTE  (2JPNYOK) Department of Physics                        E215500100008 
+           (2JPNOSA) Research Center for Nuclear Physics          E215500100009 
+           (2JPNKUE)                                              E215500100010 
+           (2JPNIPC)                                              E215500100011 
+           (2JPNKTO) Department of Physics                        E215500100012 
+REFERENCE  (J,NP/A,481,(2),207,198805)                            E215500100013 
+PART-DET   (P)                                                    E215500100014 
+INC-SOURCE (POLIS) POL-BM: monitored by a carbon polarimeter      E215500100015 
+SAMPLE     - Chemical-form of target is CH2. polyethylene         E215500100016 
+           - Physical-form of target is solid.                    E215500100017 
+           - Target-thickness is 2.8 mg/cm**2.                    E215500100018 
+METHOD     (COINC) Detect proton and proton in coincidence.       E215500100019 
+FACILITY   (CYCLO,2JPNOSA) Research Center for Nuclear Physics    E215500100020 
+DETECTOR   (TELES,SIBAR,SILI) To detect proton in coincidence.    E215500100021 
+                              See definition of flags for detail. E215500100022 
+           (SCIN) To reject accidental coincidence in forward     E215500100023 
+                  angle (0-15 deg.) events. 200 mu-m thick.       E215500100024 
+ADD-RES    (COMP) PWIA (Plane wave impulse approximation)         E215500100025 
+COMMENT    Fig 2 in the paper also shows horizontal bars.         E215500100026 
+           Vertical bars represent the statistical uncertainty.   E215500100027 
+STATUS     (TABLE) Plotted in Figs.2-3 of NP/A,481,207,1988       E215500100028 
+HISTORY    (20090903R) Received by e-mail from T.Motobayashi      E215500100029 
+           (20091016C) Ayamo Makinaga                             E215500100030 
+ENDBIB              28          0                                 E215500100031 
+COMMON               1          3                                 E215500100032 
+POL-BM                                                            E215500100033 
+NO-DIM                                                            E215500100034 
+ 0.8                                                              E215500100035 
+ENDCOMMON            3          0                                 E215500100036 
+ENDSUBENT           35          0                                 E215500199999 
+SUBENT        E2155002   20100514                             E062E215500200001 
+BIB                  5          8                                 E215500200002 
+REACTION   (1-H-1(D,N)2-HE-2,NN,POL/DA,HE2,ANA)                   E215500200003 
+EN-SEC     ANG-CM is polar angle (c.m.) between beam and 2He      E215500200004 
+MISC-COL   (MISC) Scattering angle in lab. system                 E215500200005 
+ERR-ANALYS (ERR-S) Statistical uncertainty                        E215500200006 
+FLAG       (1.) 300 mu-m Si surface barrier detector and 5 mm     E215500200007 
+                thick Si(Li) detector                             E215500200008 
+           (2.) 200 or 300 mu-m Si surface barrier detector and   E215500200009 
+                stacks of two 4-5 mm thick Si(Li) detectors       E215500200010 
+ENDBIB               8          0                                 E215500200011 
+NOCOMMON             0          0                                 E215500200012 
+DATA                 6          8                                 E215500200013 
+EN         ANG-CM     MISC       DATA       ERR-S      FLAG       E215500200014 
+MEV        ADEG       ADEG       NO-DIM     NO-DIM     NO-DIM     E215500200015 
+ 56.        0.         0.         0.015      0.021      1.        E215500200016 
+ 70.        0.         0.         0.134      0.018      1.        E215500200017 
+ 70.        15.6       5.         0.0483     0.03       1.        E215500200018 
+ 70.        31.4       10.        -0.052     0.016      1.        E215500200019 
+ 70.        48.        15.        0.02       0.027      1.        E215500200020 
+ 70.        51.6       16.        0.164      0.055      2.        E215500200021 
+ 70.        70.3       21.        0.54       0.038      2.        E215500200022 
+ 70.        92.        26.        0.631      0.071      2.        E215500200023 
+ENDDATA             10          0                                 E215500200024 
+ENDSUBENT           23          0                                 E215500299999 
+SUBENT        E2155003   20100514                             E062E215500300001 
+BIB                  3          9                                 E215500300002 
+REACTION  1(1-H-1(D,N)2-HE-2,NN,POL/DA,HE2,ANA,CALC)              E215500300003 
+           PWIA (S+D waves) with Paris potential at mean          E215500300004 
+           collision energy (Eini+Efin)/2                         E215500300005 
+          2(1-H-1(D,N)2-HE-2,NN,POL/DA,HE2,ANA,CALC)              E215500300006 
+           PWIA result (S wave) with Paris potential at mean      E215500300007 
+           collision energy (Eini+Efin)/2                         E215500300008 
+EN-SEC     ANG-CM is polar angle (c.m.) between beam and proton   E215500300009 
+MISC-COL   (MISC1) Scattering angle in lab. system                E215500300010 
+           (MISC2) Momentum transfer                              E215500300011 
+ENDBIB               9          0                                 E215500300012 
+NOCOMMON             0          0                                 E215500300013 
+DATA                 5          7                                 E215500300014 
+ANG-CM     MISC1      MISC2      DATA      1DATA      2           E215500300015 
+ADEG       ADEG       MEV/C      NO-DIM     NO-DIM                E215500300016 
+ 0.         0.         8.25       0.165      0.165                E215500300017 
+ 15.6       5.         45.9       0.1        0.095                E215500300018 
+ 31.4       10.        90.6       -0.037     -0.059               E215500300019 
+ 48.        15.        136.       -0.171     -0.226               E215500300020 
+ 66.        20.        182.       -0.308     -0.42                E215500300021 
+ 87.6       25.        231.       -0.405     -0.622               E215500300022 
+ 100.       27.        255.       -0.406     -0.694               E215500300023 
+ENDDATA              9          0                                 E215500300024 
+ENDSUBENT           23          0                                 E215500399999 
+SUBENT        E2155004   20100514                             E062E215500400001 
+BIB                  3         12                                 E215500400002 
+REACTION  1(1-H-1(D,N)2-HE-2,NN,POL/DA,HE2,ANA,CALC)              E215500400003 
+           PWIA (S+D waves) with Arndt phase shift at mean        E215500400004 
+           collision energy (Eini+Efin)/2                         E215500400005 
+          2(1-H-1(D,N)2-HE-2,NN,POL/DA,HE2,ANA,CALC)              E215500400006 
+           PWIA (S wave) with Arndt phase shift at mean collision E215500400007 
+           energy (Eini+Efin)/2                                   E215500400008 
+          3(1-H-1(D,N)2-HE-2,NN,POL/DA,HE2,ANA,CALC)              E215500400009 
+           PWIA (S+D waves) with Arndt phase shift at final       E215500400010 
+           energy Efin                                            E215500400011 
+EN-SEC     ANG-CM is polar angle (c.m.) between beam and proton   E215500400012 
+MISC-COL   (MISC1) Scattering angle in lab. system                E215500400013 
+           (MISC2) Momentum transfer                              E215500400014 
+ENDBIB              12          0                                 E215500400015 
+NOCOMMON             0          0                                 E215500400016 
+DATA                 6          7                                 E215500400017 
+ANG-CM     MISC1      MISC2      DATA      1DATA      2DATA      3E215500400018 
+ADEG       ADEG       MEV/C      NO-DIM     NO-DIM     NO-DIM     E215500400019 
+ 0.         0.         8.25       0.208      0.207      0.192     E215500400020 
+ 15.6       5.         45.9       0.152      0.147      0.142     E215500400021 
+ 31.4       10.        90.6       0.041      0.02       0.044     E215500400022 
+ 48.        15.        136.       -0.073     -0.129     -0.035    E215500400023 
+ 66.        20.        182.       -0.207     -0.321     -0.081    E215500400024 
+ 87.6       25.        231.       -0.322     -0.54      -0.041    E215500400025 
+ 100.       27.        255.       -0.336     -0.627     0.015     E215500400026 
+ENDDATA              9          0                                 E215500400027 
+ENDSUBENT           26          0                                 E215500499999 
+ENDENTRY             4          0                                 E215599999999 

@@ -1,0 +1,165 @@
+ENTRY            10735   20090912                             13551073500000001 
+SUBENT        10735001   20090912                             13551073500100001 
+BIB                  8         13                                 1073500100002 
+INSTITUTE  (1USAANL)                                              1073500100003 
+REFERENCE  (R,ANL-NDM-42,197803)                                  1073500100004 
+AUTHOR     (W.P.Poenitz,D.L.Smith)                                1073500100005 
+TITLE      Fast neutron radiative capture cross sections of 232Th 1073500100006 
+FACILITY   (DYNAM,1USAANL) Tandem dynamitron                      1073500100007 
+INC-SOURCE (P-LI7) 3-Li-7(p,n)4-Be-7 at all energies.             1073500100008 
+           For 50-300keV, a pseudo white neutron spectrum was     1073500100009 
+            used.                                                 1073500100010 
+           Between 500keV and 2MeV, monoenergetic neutrons were   1073500100011 
+            used.                                                 1073500100012 
+STATUS     (TABLE) Data taken from Table 3 ib report.             1073500100013 
+HISTORY    (19780801C)                                            1073500100014 
+           (20090911A) VM:Updated to new date formats,lower case. 1073500100015 
+ENDBIB              13          0                                 1073500100016 
+NOCOMMON             0          0                                 1073500100017 
+ENDSUBENT           16          0                                 1073500199999 
+SUBENT        10735002   20090912                             13551073500200001 
+BIB                  8         22                                 1073500200002 
+REACTION   (90-TH-232(N,G)90-TH-233,,SIG)                         1073500200003 
+SAMPLE     The samples were .03cm thick strips of thorium metal   1073500200004 
+           of about 2.65 cm width and 5.3 cm length.              1073500200005 
+DETECTOR   (STANK)Large liquid scintillator tank.                 1073500200006 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG) ENDF/B-IV cross section.1073500200007 
+METHOD     (TOF) Time of flight. Prompt gamma-ray detection.      1073500200008 
+CORRECTION Corrections were applied for:                          1073500200009 
+            . transmission through the sample,                    1073500200010 
+            . elastic and inelastic scattering of neutrons within 1073500200011 
+              the sample                                          1073500200012 
+            . change in efficiency of the detector with changing  1073500200013 
+              maximum energy of the gamma cascades.               1073500200014 
+            At higher energies corrections were applied for the   1073500200015 
+             second neutron group obtained with the 7Li(p,n)      1073500200016 
+             reaction and for the fission events in the thorium   1073500200017 
+             samples.                                             1073500200018 
+ERR-ANALYS (ERR-T) Major uncertainties for the shape data are     1073500200019 
+            due to normalization (3.8% at 500keV and 5.5% below)  1073500200020 
+            and the gold reference cross section (5%).            1073500200021 
+           (ERR-S) Statistical uncertainties.                     1073500200022 
+           (ERR-SYS) Systematic uncertainties.                    1073500200023 
+HISTORY    (20090911A) Uncertainties updated.                     1073500200024 
+ENDBIB              22          0                                 1073500200025 
+COMMON               3          3                                 1073500200026 
+ERR-S      ERR-SYS    EN-NRM                                      1073500200027 
+PER-CENT   PER-CENT   KEV                                         1073500200028 
+  3.         2.       500.                                        1073500200029 
+ENDCOMMON            3          0                                 1073500200030 
+DATA                 5         15                                 1073500200031 
+EN         EN-ERR     EN-RSL     DATA       ERR-T                 1073500200032 
+MEV        MEV        MEV        B          B                     1073500200033 
+   0.0584     0.005      0.0032     0.377       0.031             1073500200034 
+   0.0648     0.005      0.0035     0.340       0.028             1073500200035 
+   0.0724     0.005      0.0040     0.303       0.025             1073500200036 
+   0.0810     0.005      0.0049     0.251       0.021             1073500200037 
+   0.105      0.005      0.0072     0.216       0.018             1073500200038 
+   0.121      0.005      0.0090     0.211       0.017             1073500200039 
+   0.141      0.005      0.012      0.200       0.016             1073500200040 
+   0.167      0.005      0.015      0.192       0.016             1073500200041 
+   0.200      0.005      0.019      0.172       0.014             1073500200042 
+   0.244      0.005      0.026      0.142       0.012             1073500200043 
+   0.305      0.005      0.035      0.152       0.012             1073500200044 
+   0.50       0.01       0.03       0.155       0.011             1073500200045 
+   0.60       0.01       0.03       0.168       0.012             1073500200046 
+   0.70       0.01       0.03       0.177       0.013             1073500200047 
+   0.85       0.01       0.03       0.166       0.012             1073500200048 
+ENDDATA             17          0                                 1073500200049 
+ENDSUBENT           48          0                                 1073500299999 
+SUBENT        10735003   20090912                             13551073500300001 
+BIB                  9         36                                 1073500300002 
+REACTION   (90-TH-232(N,G)90-TH-233,,SIG)                         1073500300003 
+MONITOR    (92-U-235(N,F),,SIG)                                   1073500300004 
+SAMPLE     The thorium samples were 0.013 or 0.020-cm-thick discs 1073500300005 
+           of metallic thorium, 99.9% 232Th with a diameter of    1073500300006 
+           1.588cm.                                               1073500300007 
+METHOD     (ACTIV)                                                1073500300008 
+DECAY-DATA (91-PA-233,,DG,311.,0.377)                             1073500300009 
+DETECTOR   (GELI) Activities measured by a coaxial germanium-     1073500300010 
+           lithium detector.                                      1073500300011 
+CORRECTION Corrections were applied for:                          1073500300012 
+            . bias in the detected fission counts (1-2%)          1073500300013 
+            . total fission fragment absorption (0.6-2.5%)        1073500300014 
+            . neutrons scattered in the source material,the       1073500300015 
+              fission counter,and sample backings (0.2-3.8%)      1073500300016 
+           Angular distribution of the source,different sample    1073500300017 
+            sizes, distance from the source, path through the     1073500300018 
+            sample, neutron flux as a function of energy and      1073500300019 
+            transmission through the sample backings were all     1073500300020 
+            accounted for.                                        1073500300021 
+ERR-ANALYS (ERR-T) Total uncertainty                              1073500300022 
+           (ERR-S) Statistical uncertainty                        1073500300023 
+           Systematic errors due to uncertainty in:               1073500300024 
+           (ERR-1) fissile deposit mass,                          1073500300025 
+           (ERR-2) detector counting efficiency,                  1073500300026 
+           (ERR-3) thorium mass,                                  1073500300027 
+           (ERR-4) 233Pa half-life,                               1073500300028 
+           (ERR-5) 235U(n,f) cross section,                       1073500300029 
+           (ERR-6,0.6,1.0) for sample gamma-ray absorption,       1073500300030 
+           (ERR-7,0.1,0.8) neutron multiple scattering,           1073500300031 
+           (ERR-8,0.5,2.0) background,                            1073500300032 
+           (ERR-9,0.5,1.6) sample geometry and neutron-source     1073500300033 
+                           anisotropy,                            1073500300034 
+           (ERR-10) for dead-time,                                1073500300035 
+           (ERR-11) statistics of fission counting,               1073500300036 
+           (ERR-12) gamma-ray counting distance reproducibility.  1073500300037 
+HISTORY    (20090911A) Uncertainties added in coded form.         1073500300038 
+ENDBIB              36          0                                 1073500300039 
+COMMON               8          6                                 1073500300040 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      ERR-10     1073500300041 
+ERR-11     ERR-12                                                 1073500300042 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   1073500300043 
+PER-CENT   PER-CENT                                               1073500300044 
+  1.         0.9        0.5        0.5        3.         0.2      1073500300045 
+  0.2        0.5                                                  1073500300046 
+ENDCOMMON            6          0                                 1073500300047 
+DATA                 6          7                                 1073500300048 
+EN         EN-ERR     EN-RSL     DATA       ERR-T      ERR-S      1073500300049 
+MEV        MEV        MEV        B          B          PER-CENT   1073500300050 
+   0.244      0.006      0.038      0.147      0.006     1.2      1073500300051 
+   0.500      0.010      0.055      0.155      0.006     0.4      1073500300052 
+   0.622      0.011      0.052      0.180      0.008     1.4      1073500300053 
+   1.013      0.011      0.057      0.137      0.006     1.4      1073500300054 
+   1.497      0.010      0.049      0.111      0.005     2.5      1073500300055 
+   1.984      0.012      0.050      0.076      0.008    10.5      1073500300056 
+   2.480      0.015      0.080      0.050      0.003     3.6      1073500300057 
+ENDDATA              9          0                                 1073500300058 
+ENDSUBENT           57          0                                 1073500399999 
+SUBENT        10735004   20090912                             13551073500400001 
+BIB                 10         22                                 1073500400002 
+REACTION   (90-TH-232(N,G)90-TH-233,,SIG)                         1073500400003 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         1073500400004 
+MONIT-REF  (10432001,MACKLIN+,J,PR/C,11,1270,1975)                1073500400005 
+           (,W.P Poenitz,C,70ANL,,1970) paper number and page not 1073500400006 
+             given.                                               1073500400007 
+SAMPLE     0.020-cm thick metallic thorium sample.                1073500400008 
+METHOD     (ACTIV)                                                1073500400009 
+DECAY-DATA (91-PA-233,,DG,311.,0.377)                             1073500400010 
+DETECTOR   (GELI) Germanium-lithium detector                      1073500400011 
+CORRECTION Corrections were made for gamma-ray absorption of the  1073500400012 
+            gold disc.                                            1073500400013 
+           Correction for scattered neutrons and self shielding   1073500400014 
+            for the measured ratio is small (0.3%), though        1073500400015 
+            corrections for individual samples are in 2-3% range. 1073500400016 
+ERR-ANALYS (ERR-T) Major contributions to uncertainty are due to: 1073500400017 
+            . counting statistics of the 233Pa activity,          1073500400018 
+            . gold cross section (3%)                             1073500400019 
+           Other uncertainties are similar to those in for the    1073500400020 
+            data relative to235U and are small(<1%).              1073500400021 
+           (ERR-S) Statistical uncertainty.                       1073500400022 
+HISTORY    (19790501A) Data unit corrected.                       1073500400023 
+           (20090911A) Uncertainties updated.                     1073500400024 
+ENDBIB              22          0                                 1073500400025 
+COMMON               2          3                                 1073500400026 
+MONIT      MONIT-ERR                                              1073500400027 
+B          B                                                      1073500400028 
+  0.576      0.017                                                1073500400029 
+ENDCOMMON            3          0                                 1073500400030 
+DATA                 6          1                                 1073500400031 
+EN         EN-ERR     EN-RSL     DATA       ERR-T      ERR-S      1073500400032 
+MEV        MEV        MEV        B          B          PER-CENT   1073500400033 
+  0.030      0.001      0.013      0.464      0.028      4.7      1073500400034 
+ENDDATA              3          0                                 1073500400035 
+ENDSUBENT           34          0                                 1073500499999 
+ENDENTRY             4          0                                 1073599999999 

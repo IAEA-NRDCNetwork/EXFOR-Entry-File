@@ -1,0 +1,85 @@
+ENTRY            21465   20120819                             22322146500000001 
+SUBENT        21465001   20120819                             22322146500100001 
+BIB                 12         31                                 2146500100002 
+INSTITUTE  (2AUSATI)                                              2146500100003 
+REFERENCE  (R,INDC(AUS)-4,197912)                                 2146500100004 
+AUTHOR     (F.Bensch,H.Jasicek)                                   2146500100005 
+TITLE       The fast neutron emission spectrum of Cf-252          2146500100006 
+FACILITY   .No information given.                                 2146500100007 
+SAMPLE      The IAEA Cf-252 neutron source consists of            2146500100008 
+            a cylindrical capsule with an outer length of 22.0    2146500100009 
+            mm and an external diameter of 2.80 mm, strength      2146500100010 
+            calibrated against a standard Cf-252 source.          2146500100011 
+METHOD     (REC)   Measuring proton-recoils in the gas filled     2146500100012 
+            proportional counter spectrometers.                   2146500100013 
+DETECTOR   (PROPC) A gas filled proportional counter filled       2146500100014 
+            with 200 kPa C-H4 gas, 200 kPa kripton gas and 0.1%   2146500100015 
+            He-3, energy calibrated with a Na-Be neutron source   2146500100016 
+            and the He-3(N,P)-reaction using thermal neutrons.    2146500100017 
+ANALYSIS   .The response functions for the detector were calcu-   2146500100018 
+            lated using the Monte-Carlo code MATRI, which is a    2146500100019 
+            modified version of the code SPEC-4.                  2146500100020 
+STATUS     .Results taken from INDC(AUS)-4,,197912                2146500100021 
+CORRECTION .Correction for the high energy part of the Cf-252     2146500100022 
+            neutrons above 10 MeV applied.                        2146500100023 
+           .No gamma discrimination applied, since the lower      2146500100024 
+            detection threshold is 0.9 MeV.                       2146500100025 
+HISTORY    (19800317C) CN.                                        2146500100026 
+           (19800331E)                                            2146500100027 
+           (20110725A) Date is corrected to 8 digit format. Upper 2146500100028 
+             case converted to lower case. REACTION code corrected2146500100029 
+             according to MEMO CP-D/635. SUBENT with PFNS Maxwell 2146500100030 
+             temperature added                                    2146500100031 
+           (20120819A) SD: E-MIN/-MAX was deleted from COMMON (not2146500100032 
+                                                      applicable).2146500100033 
+ENDBIB              31          0                                 2146500100034 
+NOCOMMON             0          0                                 2146500100035 
+ENDSUBENT           34          0                                 2146500199999 
+SUBENT        21465002   20110725                             22272146500200001 
+BIB                  4         18                                 2146500200002 
+REACTION   (98-CF-252(0,F),PR,NU/DE)                              2146500200003 
+COMMENT    .Raw data were fitted to a polynomial of fourth        2146500200004 
+            order using the expression:                           2146500200005 
+            N(e) = K*(sqrt(E)*exp(-E/T)*(sum(a(I)*E**(I)))        2146500200006 
+             I - 0,1,2,3,4.                                       2146500200007 
+            Which gave the results,                               2146500200008 
+            T = 1.409 +- 0.015 MeV                                2146500200009 
+            a(0) =  0.89250                                       2146500200010 
+            a(1) = -0.36978E-02                                   2146500200011 
+            a(2) =  0.30352E-01                                   2146500200012 
+            a(3) = -0.59229E-02                                   2146500200013 
+            a(4) =  0.29983E-03                                   2146500200014 
+STATUS     <TABLE> Spectrum parameters taken from Table 1 of      2146500200015 
+             INDC(AUS)-4,,197912 and from a corrigendum received  2146500200016 
+             in March 1980 (see comment).                         2146500200017 
+HISTORY    (20110725A) REACTION code changed from PR,DE,N to      2146500200018 
+             PR,NU/DE. Expression in COMMENT keyword corrected    2146500200019 
+             from a(I)*e(I) to a(I)*E**(I)))                      2146500200020 
+ENDBIB              18          0                                 2146500200021 
+NOCOMMON             0          0                                 2146500200022 
+NODATA               0          0                                 2146500200023 
+ENDSUBENT           22          0                                 2146500299999 
+SUBENT        21465003   20110725                             22272146500300001 
+BIB                  5         13                                 2146500300002 
+REACTION   (98-CF-252(0,F)0-NN-1,PR,KEM) Maxwell distribution     2146500300003 
+            temperature applied in prompt neutron fission         2146500300004 
+            spectrum approximation, SAN 002                       2146500300005 
+ANALYSIS   .Data obtained by integration of the expression for    2146500300006 
+            energy spectrum given under COMMENT keyword in        2146500300007 
+            SUBENT 21465002                                       2146500300008 
+ERR-ANALYS (DATA-ERR).Errors in the neutron spectrum includes     2146500300009 
+            statistical and systematic errors due to the MONTE-   2146500300010 
+            CARLO method used to obtain the response functions    2146500300011 
+            of the detector.                                      2146500300012 
+STATUS     (TABLE)  Table 1 from INDC(AUS)-4, 197912, page 19     2146500300013 
+           (DEP,21465002)                                         2146500300014 
+HISTORY    (20110725C) Maxwell distribution temperature compiled  2146500300015 
+ENDBIB              13          0                                 2146500300016 
+NOCOMMON             0          0                                 2146500300017 
+DATA                 2          1                                 2146500300018 
+DATA       DATA-ERR                                               2146500300019 
+MEV        MEV                                                    2146500300020 
+    1.409       0.015                                             2146500300021 
+ENDDATA              3          0                                 2146500300022 
+ENDSUBENT           21          0                                 2146500399999 
+ENDENTRY             3          0                                 2146599999999 

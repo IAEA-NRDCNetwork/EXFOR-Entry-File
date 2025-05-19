@@ -1,0 +1,518 @@
+ENTRY            21544   20131114                             22362154400000001 
+SUBENT        21544001   20131114                             22362154400100001 
+BIB                 15         57                                 2154400100002 
+TITLE      Fission fragment energy correlation measurements for   2154400100003 
+            the thermal neutron fission of 239Pu and 235U         2154400100004 
+AUTHOR     (M.Asghar, F.Caitucoli, P.Perrin, C.Wagemans)          2154400100005 
+INSTITUTE  (2FR ILL,2BLGGHT,2FR GRE,2BLGMOL)                      2154400100006 
+REFERENCE  (J,NP/A,311,205,1978)                                  2154400100007 
+FACILITY   (REAC,2FR ILL) Inclined beam hole IH1 of the High Flux 2154400100008 
+            Reactor.                                              2154400100009 
+           Equivalent thermal flux at the target position was     2154400100010 
+            flux(thermal)~5.E+9 n/cm/cm/sec                       2154400100011 
+INC-SOURCE (REAC)                                                 2154400100012 
+INC-SPECT  flux(thermal)/flux(fast)~5.E+4                         2154400100013 
+SAMPLE     *Pu-239                                                2154400100014 
+            2.3 ug/cm2 PuF3 evaporated onto a 20 ug/cm2 Au coated 2154400100015 
+             50 ug/cm2 VYNS backing.                              2154400100016 
+           *U-235                                                 2154400100017 
+            7.4 ug/cm2 U3O8 (235U enriched 97%) electrosprayed    2154400100018 
+             onto 20 ug/cm2 Au coated 50ug/cm2 VYNS backing.      2154400100019 
+            This U-target is only used for the energy calibration 2154400100020 
+             of the detector.                                     2154400100021 
+            The real U-235 measurement is reported in M.Asghar et 2154400100022 
+             al., Nucl.Phys.A 311(1978)413.                       2154400100023 
+             (Private communication of C.Wagemans, 1981-01-19)    2154400100024 
+METHOD     (COINC) A fast coincidence (30 nsec) is used to        2154400100025 
+            detect the two fission fragment kinetic energies.     2154400100026 
+           (TOF) Simultaneously the difference of time of flight  2154400100027 
+            of the fission fragments was also recorded.           2154400100028 
+           If the difference between this measured TOF-difference 2154400100029 
+            and the TOF-difference calculated from the measured   2154400100030 
+            kinetic energies is less than a certain value, the    2154400100031 
+            measurement is accepted.                              2154400100032 
+           This procedure eliminates contamination of the spectra 2154400100033 
+            from poorly measured high yield events (e.g. from     2154400100034 
+            backscattered fission fragments).                     2154400100035 
+DETECTOR   (COIN,SIBAR,SIBAR) 2 ORTEC gold-silicon surface        2154400100036 
+            barrier detectors (2cm diam., collimated to 1.5 cm    2154400100037 
+            diam. with appropriate diaphragms to avoid edge       2154400100038 
+            effects.                                              2154400100039 
+           Coincidences between the two complementary fission     2154400100040 
+            fragments registered.                                 2154400100041 
+REL-REF    (O,21313001,M.Asghar+,J,NP/A,311,413,1978)             2154400100042 
+            235U(n,f) data in Table 1 of Nucl.Phys.A311(1978)205  2154400100043 
+           (M,,H.W.Schmitt+,C,65SALZBURG,1,531,1965)              2154400100044 
+            Provisional masses calculated using the procedure     2154400100045 
+CORRECTION No correction for energy resolution applied, no        2154400100046 
+            correction for neutron emission either .              2154400100047 
+ERR-ANALYS Errors given are relative only.                        2154400100048 
+STATUS     (TABLE) Data taken from publication                    2154400100049 
+HISTORY    (19800430C) G.C.                                       2154400100050 
+           (19800603E)                                            2154400100051 
+           (19810120A) G.C., SUBENTRY 003 deleted since already   2154400100052 
+            present in EXFOR 21313, SUBWORKS 004-007 added.       2154400100053 
+           (19810213E)                                            2154400100054 
+           (20090201A) M.M. BIB information was added.            2154400100055 
+            Dates were corrected for 4-digits year.               2154400100056 
+            Free text was corrected to be human-readable.         2154400100057 
+            SUBENTs 008-012 were added.                           2154400100058 
+           (20131114U) On. BIB updated                            2154400100059 
+ENDBIB              57          0                                 2154400100060 
+COMMON               1          3                                 2154400100061 
+EN-DUMMY                                                          2154400100062 
+EV                                                                2154400100063 
+ 0.0253                                                           2154400100064 
+ENDCOMMON            3          0                                 2154400100065 
+ENDSUBENT           64          0                                 2154400199999 
+SUBENT        21544002   20090201                             22072154400200001 
+BIB                  5         17                                 2154400200002 
+REACTION  1(94-PU-239(N,F),SEC,AKE,LF+HF,MXW)                     2154400200003 
+          2(94-PU-239(N,F),PRE,AKE,LF+HF,MXW,DERIV)               2154400200004 
+ASSUMED   2(ASSUM,94-PU-239(N,F),PR,NU,,MXW) NU-BAR with thermal  2154400200005 
+            neutrons for Pu-239.                                  2154400200006 
+MISC-COL   (MISC) RMS width of  AKE.                              2154400200007 
+STATUS     (TABLE) Data taken from publication, Table 1.          2154400200008 
+HISTORY    (19800430C) G.C.                                       2154400200009 
+           (19800603E)                                            2154400200010 
+           (19810120A) G.C.,INC-SPECT transferred to Main Section.2154400200011 
+           (19810213E)                                            2154400200012 
+           (20090201A) Units of ASSUM was corrected:              2154400200013 
+                       NO-DIM -> PRT/FIS.                         2154400200014 
+            Reaction (and data) were split in two :               2154400200015 
+             94-PU-239(N,F),,AKE,FF,MXW ->                        2154400200016 
+             94-PU-239(N,F),SEC,AKE,LF+HF,MXW                     2154400200017 
+             94-PU-239(N,F),PRE,AKE,LF+HF,MXW,DERIV .             2154400200018 
+             FLAG was deleted.                                    2154400200019 
+ENDBIB              17          0                                 2154400200020 
+NOCOMMON             0          0                                 2154400200021 
+DATA                 6          1                                 2154400200022 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2ASSUM      MISC       2154400200023 
+MEV        MEV        MEV        MEV        PRT/FIS    MEV        2154400200024 
+ 1.7600E+02 4.0000E-01 1.7790E+02 4.0000E-01 2.88       11.8      2154400200025 
+ENDDATA              3          0                                 2154400200026 
+ENDSUBENT           25          0                                 2154400299999 
+SUBENT        21544003   20090201                             22072154400300001 
+BIB                  4         17                                 2154400300002 
+REACTION  1(92-U-235(N,F),SEC,AKE,LF+HF,MXW)                      2154400300003 
+          2(92-U-235(N,F),PRE,AKE,LF+HF,MXW,DERIV)                2154400300004 
+ASSUMED   2(ASSUM,92-U-235(N,F),PR,NU,,MXW) NU-BAR with thermal   2154400300005 
+            neutrons for U-235, used in correction for neutron    2154400300006 
+            emission to derive Data 2.                            2154400300007 
+STATUS     (TABLE) Data taken from publication, Table 1.          2154400300008 
+           (SPSDD,21313003)  These data are in 21313003.          2154400300009 
+HISTORY    (19800430C) G.C.                                       2154400300010 
+           (19800603E)                                            2154400300011 
+           (19810120D) G.C.. Deleted since already present in     2154400300012 
+            EXFOR 21313.003.                                      2154400300013 
+           (19810213D)                                            2154400300014 
+           (20090201A) ASSUM was added.                           2154400300015 
+            Reaction  were split in two :                         2154400300016 
+             92-U-235(N,F),,AKE,FF,MXW ->                         2154400300017 
+             92-U-235(N,F),SEC,AKE,LF+HF,MXW                      2154400300018 
+             92-U-235(N,F),PRE,AKE,LF+HF,MXW,DERIV .              2154400300019 
+ENDBIB              17          0                                 2154400300020 
+COMMON               1          3                                 2154400300021 
+ASSUM                                                             2154400300022 
+PRT/FIS                                                           2154400300023 
+ 2.44                                                             2154400300024 
+ENDCOMMON            3          0                                 2154400300025 
+NODATA               0          0                                 2154400300026 
+ENDSUBENT           25          0                                 2154400399999 
+SUBENT        21544004   20090201                             22072154400400001 
+BIB                  4          8                                 2154400400002 
+REACTION   (94-PU-239(N,F),SEC,AKE,LF,MXW) Light fragment average 2154400400003 
+            kinetic energy.                                       2154400400004 
+MISC-COL   (MISC) RMS width of AKE.                               2154400400005 
+STATUS     (TABLE) Data taken from publication, Table 1.          2154400400006 
+HISTORY    (19810120C) G.C., added data set.                      2154400400007 
+           (19810213E)                                            2154400400008 
+           (20090201A)  SEC was added in SF5 of reaction.         2154400400009 
+                        MISC was added.                           2154400400010 
+ENDBIB               8          0                                 2154400400011 
+NOCOMMON             0          0                                 2154400400012 
+DATA                 2          1                                 2154400400013 
+DATA       MISC                                                   2154400400014 
+MEV        MEV                                                    2154400400015 
+ 1.0200E+02  5.8                                                  2154400400016 
+ENDDATA              3          0                                 2154400400017 
+ENDSUBENT           16          0                                 2154400499999 
+SUBENT        21544005   20090201                             22072154400500001 
+BIB                  4          8                                 2154400500002 
+REACTION   (94-PU-239(N,F),SEC,AKE,HF,MXW) Heavy fragment average 2154400500003 
+            kinetic energy.                                       2154400500004 
+MISC-COL   (MISC) RMS width of AKE.                               2154400500005 
+STATUS     (TABLE) Data taken from publication, Table 1.          2154400500006 
+HISTORY    (19810120C) G.C. ADded data set.                       2154400500007 
+           (19810213E)                                            2154400500008 
+           (20090201A)  SEC was added in SF5 of reaction.         2154400500009 
+                        MISC was added.                           2154400500010 
+ENDBIB               8          0                                 2154400500011 
+NOCOMMON             0          0                                 2154400500012 
+DATA                 2          1                                 2154400500013 
+DATA       MISC                                                   2154400500014 
+MEV        MEV                                                    2154400500015 
+ 7.3900E+01 8.5                                                   2154400500016 
+ENDDATA              3          0                                 2154400500017 
+ENDSUBENT           16          0                                 2154400599999 
+SUBENT        21544006   20090201                             22072154400600001 
+BIB                  4          8                                 2154400600002 
+REACTION   (94-PU-239(N,F),PRE,AP,LF,MXW) Average light fragment  2154400600003 
+            mass.                                                 2154400600004 
+MISC-COL   (MISC) RMS width of AP.                                2154400600005 
+STATUS     (TABLE) Data taken from publication, Table 1.          2154400600006 
+HISTORY    (19810120C) G.C., Added data set.                      2154400600007 
+           (19810213E)                                            2154400600008 
+           (20090201A)  PRE was added in SF5 of reaction.         2154400600009 
+                        MISC was added.                           2154400600010 
+ENDBIB               8          0                                 2154400600011 
+NOCOMMON             0          0                                 2154400600012 
+DATA                 2          1                                 2154400600013 
+DATA       MISC                                                   2154400600014 
+NO-DIM     NO-DIM                                                 2154400600015 
+ 1.0060E+02  6.6                                                  2154400600016 
+ENDDATA              3          0                                 2154400600017 
+ENDSUBENT           16          0                                 2154400699999 
+SUBENT        21544007   20090201                             22072154400700001 
+BIB                  4          8                                 2154400700002 
+REACTION   (94-PU-239(N,F),PRE,AP,HF,MXW) Average heavy fragment  2154400700003 
+            mass.                                                 2154400700004 
+MISC-COL   (MISC) RMS width of AP.                                2154400700005 
+STATUS     (TABLE) Data taken from publication.                   2154400700006 
+HISTORY    (19810120C) G.C., Added data set.                      2154400700007 
+           (19810213E)                                            2154400700008 
+           (20090201A)  PRE was added in SF5 of reaction.         2154400700009 
+                        MISC was added.                           2154400700010 
+ENDBIB               8          0                                 2154400700011 
+NOCOMMON             0          0                                 2154400700012 
+DATA                 2          1                                 2154400700013 
+DATA       MISC                                                   2154400700014 
+NO-DIM     NO-DIM                                                 2154400700015 
+ 1.3940E+02   6.6                                                 2154400700016 
+ENDDATA              3          0                                 2154400700017 
+ENDSUBENT           16          0                                 2154400799999 
+SUBENT        21544008   20090201                             22072154400800001 
+BIB                  6         11                                 2154400800002 
+REACTION   (94-PU-239(N,F)MASS,CHN,FY,,MXW) Provisional(pseudo-)  2154400800003 
+            mass distribution of heavy fragments.                 2154400800004 
+ANALYSIS    Only half of distributions corresponding to the heavy 2154400800005 
+            fragments are given because of the symmetry.          2154400800006 
+CORRECTION  Not corrected for resolution effects.                 2154400800007 
+ERR-ANALYS (MASS-ERR-D)  Digitizing error of MASS.                2154400800008 
+           (ERR-DIG)    Digitizing error DATA .                   2154400800009 
+            Comment of authors: Errors on the points are much     2154400800010 
+             smaller than their size.                             2154400800011 
+STATUS     (CURVE) Fig.2 of reference NP/A,311,205.               2154400800012 
+HISTORY    (20090201C) M.M.  Subent was added .                   2154400800013 
+ENDBIB              11          0                                 2154400800014 
+COMMON               2          3                                 2154400800015 
+MASS-ERR-D ERR-DIG                                                2154400800016 
+NO-DIM     PC/FIS                                                 2154400800017 
+0.50491E-010.11305E-01                                            2154400800018 
+ENDCOMMON            3          0                                 2154400800019 
+DATA                 2         46                                 2154400800020 
+MASS       DATA                                                   2154400800021 
+NO-DIM     PC/FIS                                                 2154400800022 
+ 120.      0.044937                                               2154400800023 
+ 121.      0.052942                                               2154400800024 
+ 122.      0.062255                                               2154400800025 
+ 123.      0.084642                                               2154400800026 
+ 124.      0.13325                                                2154400800027 
+ 125.      0.24072                                                2154400800028 
+ 126.      0.42284                                                2154400800029 
+ 127.      0.73584                                                2154400800030 
+ 128.      1.1684                                                 2154400800031 
+ 129.      1.6935                                                 2154400800032 
+ 130.      2.3757                                                 2154400800033 
+ 131.      3.2018                                                 2154400800034 
+ 132.      4.0544                                                 2154400800035 
+ 133.      4.8672                                                 2154400800036 
+ 134.      5.3663                                                 2154400800037 
+ 135.      5.5641                                                 2154400800038 
+ 136.      5.8013                                                 2154400800039 
+ 137.      5.9860                                                 2154400800040 
+ 138.      6.0267                                                 2154400800041 
+ 139.      5.8843                                                 2154400800042 
+ 140.      5.6109                                                 2154400800043 
+ 141.      5.2719                                                 2154400800044 
+ 142.      4.9595                                                 2154400800045 
+ 143.      4.6468                                                 2154400800046 
+ 144.      4.2689                                                 2154400800047 
+ 145.      3.8515                                                 2154400800048 
+ 146.      3.3030                                                 2154400800049 
+ 147.      2.7680                                                 2154400800050 
+ 148.      2.2851                                                 2154400800051 
+ 149.      1.8808                                                 2154400800052 
+ 150.      1.5160                                                 2154400800053 
+ 151.      1.2687                                                 2154400800054 
+ 152.      1.0215                                                 2154400800055 
+ 153.      0.81359                                                2154400800056 
+ 154.      0.64502                                                2154400800057 
+ 155.      0.50247                                                2154400800058 
+ 156.      0.39927                                                2154400800059 
+ 157.      0.29615                                                2154400800060 
+ 158.      0.23221                                                2154400800061 
+ 159.      0.18129                                                2154400800062 
+ 160.      0.13037                                                2154400800063 
+ 161.      0.79602E-01                                            2154400800064 
+ 162.      0.68105E-01                                            2154400800065 
+ 163.      0.30509E-01                                            2154400800066 
+ 164.      0.31862E-01                                            2154400800067 
+ 165.      0.19967E-01                                            2154400800068 
+ENDDATA             48          0                                 2154400800069 
+ENDSUBENT           68          0                                 2154400899999 
+SUBENT        21544009   20090201                             22072154400900001 
+BIB                  5         10                                 2154400900002 
+REACTION   (94-PU-239(N,F)MASS,SEC,KE,FF,MXW)                     2154400900003 
+            Single fragment kinetic energy as a function of       2154400900004 
+            MASS -  fragment provisional mass.                    2154400900005 
+MISC-COL   (MISC) RMS width of the single fragment kinetic energy.2154400900006 
+ERR-ANALYS (MASS-ERR-D)  Digitizing error of MASS.                2154400900007 
+           (ERR-DIG)    Digitizing error DATA .                   2154400900008 
+              Digitizing error of MISC 0.013 MeV.                 2154400900009 
+STATUS     (CURVE) Fig.5 (DATA), Fig.8 (MISC) of reference        2154400900010 
+                   NP/A,311,205.                                  2154400900011 
+HISTORY    (20090201C) M.M.  Subent was added .                   2154400900012 
+ENDBIB              10          0                                 2154400900013 
+COMMON               2          3                                 2154400900014 
+MASS-ERR-D ERR-DIG                                                2154400900015 
+NO-DIM     MEV                                                    2154400900016 
+0.12015E-010.83707E-01                                            2154400900017 
+ENDCOMMON            3          0                                 2154400900018 
+DATA                 3         90                                 2154400900019 
+MASS       DATA       MISC                                        2154400900020 
+NO-DIM     MEV        MEV                                         2154400900021 
+  75.       103.01                                                2154400900022 
+  76.       103.31      5.6525                                    2154400900023 
+  77.       103.52      5.4304                                    2154400900024 
+  78.       103.52      5.3076                                    2154400900025 
+  79.       103.83      5.6071                                    2154400900026 
+  80.       103.83      5.5051                                    2154400900027 
+  81.       103.83      5.4831                                    2154400900028 
+  82.       103.63      5.4212                                    2154400900029 
+  83.       103.74      5.3791                                    2154400900030 
+  84.       103.43      5.3574                                    2154400900031 
+  85.       103.13      5.3154                                    2154400900032 
+  86.       102.93      5.1729                                    2154400900033 
+  87.       102.63      5.1713                                    2154400900034 
+  88.       102.63      5.1294                                    2154400900035 
+  89.       102.53      5.1677                                    2154400900036 
+  90.       102.43      5.1457                                    2154400900037 
+  91.       102.43      5.0840                                    2154400900038 
+  92.       102.44      5.1223                                    2154400900039 
+  93.       102.54      5.1204                                    2154400900040 
+  94.       102.44      5.1591                                    2154400900041 
+  95.       102.54      5.0971                                    2154400900042 
+  96.       102.45      5.2157                                    2154400900043 
+  97.       102.55      5.2543                                    2154400900044 
+  98.       102.55      5.2924                                    2154400900045 
+  99.       102.66      5.4314                                    2154400900046 
+ 100.       102.76      5.5900                                    2154400900047 
+ 101.       102.66      5.6081                                    2154400900048 
+ 102.       102.66      5.7273                                    2154400900049 
+ 103.       102.46      5.7857                                    2154400900050 
+ 104.       102.46      5.8847                                    2154400900051 
+ 105.       102.37      5.9831                                    2154400900052 
+ 106.       102.27      6.0012                                    2154400900053 
+ 107.       101.96      5.9994                                    2154400900054 
+ 108.       101.15      5.9173                                    2154400900055 
+ 109.       100.34      5.8551                                    2154400900056 
+ 110.       99.433      5.8531                                    2154400900057 
+ 111.       98.623      5.7916                                    2154400900058 
+ 112.       97.407      5.7500                                    2154400900059 
+ 113.       95.785      5.8287                                    2154400900060 
+ 114.       94.061      5.8870                                    2154400900061 
+ 115.       91.932      5.9859                                    2154400900062 
+ 116.       89.802      6.2853                                    2154400900063 
+ 117.       87.571      6.4841                                    2154400900064 
+ 118.       85.238      6.2614                                    2154400900065 
+ 119.       83.515      5.6573                                    2154400900066 
+ 120.       82.400      5.0534                                    2154400900067 
+ 121.       81.997      5.5338                                    2154400900068 
+ 122.       82.405      6.0537                                    2154400900069 
+ 123.       83.119      6.1121                                    2154400900070 
+ 124.       83.831      5.8697                                    2154400900071 
+ 125.       84.443      5.4865                                    2154400900072 
+ 126.       85.054      5.3038                                    2154400900073 
+ 127.       85.057      5.1215                                    2154400900074 
+ 128.       85.059      4.9788                                    2154400900075 
+ 129.       84.655      4.9772                                    2154400900076 
+ 130.       84.251      4.9553                                    2154400900077 
+ 131.       83.441      4.8533                                    2154400900078 
+ 132.       82.835      4.8113                                    2154400900079 
+ 133.       82.025      4.7900                                    2154400900080 
+ 134.       81.113      4.7884                                    2154400900081 
+ 135.       79.694      4.6657                                    2154400900082 
+ 136.       78.377      4.4833                                    2154400900083 
+ 137.       77.059      4.3605                                    2154400900084 
+ 138.       76.046      4.2391                                    2154400900085 
+ 139.       74.526      4.0763                                    2154400900086 
+ 140.       73.412      4.0145                                    2154400900087 
+ 141.       72.094      3.8121                                    2154400900088 
+ 142.       70.777      3.6895                                    2154400900089 
+ 143.       69.662      3.5876                                    2154400900090 
+ 144.       68.345      3.4856                                    2154400900091 
+ 145.       67.433      3.4236                                    2154400900092 
+ 146.       66.116      3.3616                                    2154400900093 
+ 147.       64.900      3.2795                                    2154400900094 
+ 148.       63.582      3.1974                                    2154400900095 
+ 149.       62.671      3.1355                                    2154400900096 
+ 150.       61.659      3.1136                                    2154400900097 
+ 151.       60.545      3.0313                                    2154400900098 
+ 152.       59.430      3.0091                                    2154400900099 
+ 153.       58.519      2.9474                                    2154400900100 
+ 154.       57.404      2.9055                                    2154400900101 
+ 155.       56.594      2.9039                                    2154400900102 
+ 156.       55.683      2.8825                                    2154400900103 
+ 157.       54.670      2.8402                                    2154400900104 
+ 158.       53.556      2.8187                                    2154400900105 
+ 159.       52.746      2.7965                                    2154400900106 
+ 160.       51.733      2.7547                                    2154400900107 
+ 161.       50.923      2.7531                                    2154400900108 
+ 162.       49.910      2.5905                                    2154400900109 
+ 163.       49.100      2.5890                                    2154400900110 
+ 164.       47.986      2.6676                                    2154400900111 
+ENDDATA             92          0                                 2154400900112 
+ENDSUBENT          111          0                                 2154400999999 
+SUBENT        21544010   20090201                             22072154401000001 
+BIB                  5         10                                 2154401000002 
+REACTION   (94-PU-239(N,F)MASS,SEC,KE,LF+HF,MXW)                  2154401000003 
+            Total fission fragment kinetic energy as a function of2154401000004 
+            MASS - heavy fragment provisional mass.               2154401000005 
+MISC-COL   (MISC) RMS width of the total fragment kinetic energy. 2154401000006 
+ERR-ANALYS (MASS-ERR-D)  Digitizing error of MASS.                2154401000007 
+           (ERR-DIG)    Digitizing error DATA .                   2154401000008 
+                Digitizing error of MISC 0.0175 MeV.              2154401000009 
+STATUS     (CURVE) Fig.6 (DATA), Fig.7 (MISC) of reference        2154401000010 
+                   NP/A,311,205.                                  2154401000011 
+HISTORY    (20090201C) M.M.  Subent was added .                   2154401000012 
+ENDBIB              10          0                                 2154401000013 
+COMMON               2          3                                 2154401000014 
+MASS-ERR-D ERR-DIG                                                2154401000015 
+NO-DIM     MEV                                                    2154401000016 
+0.33922E-010.38906E-01                                            2154401000017 
+ENDCOMMON            3          0                                 2154401000018 
+DATA                 3         46                                 2154401000019 
+MASS       DATA       MISC                                        2154401000020 
+NO-DIM     MEV        MEV                                         2154401000021 
+ 120.       164.28       10.439                                   2154401000022 
+ 121.       165.54       11.327                                   2154401000023 
+ 122.       167.64       12.190                                   2154401000024 
+ 123.       170.68       12.543                                   2154401000025 
+ 124.       173.41       12.079                                   2154401000026 
+ 125.       176.24       11.615                                   2154401000027 
+ 126.       178.87       11.101                                   2154401000028 
+ 127.       180.96       10.918                                   2154401000029 
+ 128.       182.54       10.863                                   2154401000030 
+ 129.       183.28       10.884                                   2154401000031 
+ 130.       183.49       10.829                                   2154401000032 
+ 131.       183.91       10.774                                   2154401000033 
+ 132.       184.23       10.769                                   2154401000034 
+ 133.       183.92       10.816                                   2154401000035 
+ 134.       183.29       10.812                                   2154401000036 
+ 135.       182.14       10.680                                   2154401000037 
+ 136.       180.88       10.369                                   2154401000038 
+ 137.       179.63       10.187                                   2154401000039 
+ 138.       178.37       10.029                                   2154401000040 
+ 139.       177.33       9.8210                                   2154401000041 
+ 140.       175.86       9.5109                                   2154401000042 
+ 141.       174.61       9.2001                                   2154401000043 
+ 142.       173.35       8.9663                                   2154401000044 
+ 143.       172.20       8.7065                                   2154401000045 
+ 144.       171.05       8.6260                                   2154401000046 
+ 145.       169.90       8.4689                                   2154401000047 
+ 146.       168.54       8.4643                                   2154401000048 
+ 147.       167.29       8.3069                                   2154401000049 
+ 148.       166.03       8.2005                                   2154401000050 
+ 149.       164.88       8.1452                                   2154401000051 
+ 150.       163.94       8.1918                                   2154401000052 
+ 151.       163.10       8.1110                                   2154401000053 
+ 152.       162.16       8.1829                                   2154401000054 
+ 153.       161.22       8.1278                                   2154401000055 
+ 154.       160.49       8.1489                                   2154401000056 
+ 155.       159.76       8.2469                                   2154401000057 
+ 156.       159.34       8.3195                                   2154401000058 
+ 157.       158.61       8.4167                                   2154401000059 
+ 158.       157.36       8.4636                                   2154401000060 
+ 159.       156.52       8.3830                                   2154401000061 
+ 160.       155.79       8.2772                                   2154401000062 
+ 161.       154.64       8.6039                                   2154401000063 
+ 162.       153.70       8.1146                                   2154401000064 
+ 163.       152.44       8.4676                                   2154401000065 
+ 164.       151.19       8.1059                                   2154401000066 
+ 165.       149.83       7.7190                                   2154401000067 
+ENDDATA             48          0                                 2154401000068 
+ENDSUBENT           67          0                                 2154401099999 
+SUBENT        21544011   20131114                             22362154401100001 
+BIB                  6         10                                 2154401100002 
+REACTION   (94-PU-239(N,F),PRV,AP,HF,MXW/MSC)                     2154401100003 
+           Most probable provisional mass of heavy fragment       2154401100004 
+            at a given light fragment kinetic energy group        2154401100005 
+EN-SEC     (E,LF) Kinetic energy of light fragment                2154401100006 
+MISC-COL   (MISC) RMS width of most probable heavy fragment masses2154401100007 
+ERR-ANALYS Digitizing error of MISC - 0.012.                      2154401100008 
+           (DATA-ERR) No information on source of uncertainties   2154401100009 
+STATUS     (CURVE) Fig.4(a,b) of Nucl.Phys.A311(1978)205          2154401100010 
+HISTORY    (20090201C) M.M. Subent was added .                    2154401100011 
+           (20131114A) On. SF5: PAR/SEC -> PRV, /MSC added in SF8 2154401100012 
+ENDBIB              10          0                                 2154401100013 
+COMMON               1          3                                 2154401100014 
+ERR-DIG                                                           2154401100015 
+NO-DIM                                                            2154401100016 
+ 0.01                                                             2154401100017 
+ENDCOMMON            3          0                                 2154401100018 
+DATA                 5         14                                 2154401100019 
+E-MIN      E-MAX      DATA       DATA-ERR   MISC                  2154401100020 
+MEV        MEV        NO-DIM     NO-DIM     NO-DIM                2154401100021 
+  90.        92.       134.94     0.97       6.7910               2154401100022 
+  92.        94.       135.98                6.7324               2154401100023 
+  94.        96.       137.07     0.87       6.6976               2154401100024 
+  96.        98.       138.12                6.6393               2154401100025 
+  98.       100.       138.00                6.6286               2154401100026 
+ 100.       102.       137.93     0.97       6.5938               2154401100027 
+ 102.       104.       137.95     0.97       6.6316               2154401100028 
+ 104.       106.       138.02                6.6209               2154401100029 
+ 106.       108.       138.00                6.4424               2154401100030 
+ 108.       110.       137.98     0.92       6.2632               2154401100031 
+ 110.       112.       137.08     0.78       6.1806               2154401100032 
+ 112.       114.       134.92                6.1218               2154401100033 
+ 114.       116.       134.94                6.4005               2154401100034 
+ 116.       118.       134.92                7.2069               2154401100035 
+ENDDATA             16          0                                 2154401100036 
+ENDSUBENT           35          0                                 2154401199999 
+SUBENT        21544012   20131114                             22362154401200001 
+BIB                  5          8                                 2154401200002 
+REACTION   (94-PU-239(N,F),SEC,FY,,MXW/MSC)                       2154401200003 
+            Relative mass yields as function of windows of light  2154401200004 
+            fragment energy of 2 MeV bin. Units are per-cents.    2154401200005 
+EN-SEC     (E,LF) Kinetic energy of light fragment                2154401200006 
+ERR-ANALYS No information on uncertainties                        2154401200007 
+STATUS     (CURVE) Fig.4c of Nucl.Phys.A311(1978)205              2154401200008 
+HISTORY    (20090201C) M.M. Subent was added .                    2154401200009 
+           (20131114A) On. PAR/SEC,FY,FF,MXW -> SEC,FY,,MXW/MSC   2154401200010 
+ENDBIB               8          0                                 2154401200011 
+COMMON               1          3                                 2154401200012 
+ERR-DIG                                                           2154401200013 
+PC/FIS                                                            2154401200014 
+ 0.030                                                            2154401200015 
+ENDCOMMON            3          0                                 2154401200016 
+DATA                 3         14                                 2154401200017 
+E-MIN      E-MAX      DATA                                        2154401200018 
+MEV        MEV        PC/FIS                                      2154401200019 
+  90.        92.        2.434                                     2154401200020 
+  92.        94.        3.947                                     2154401200021 
+  94.        96.        6.064                                     2154401200022 
+  96.        98.        8.714                                     2154401200023 
+  98.       100.       11.316                                     2154401200024 
+ 100.       102.       13.410                                     2154401200025 
+ 102.       104.       14.389                                     2154401200026 
+ 104.       106.       13.383                                     2154401200027 
+ 106.       108.       10.997                                     2154401200028 
+ 108.       110.        7.786                                     2154401200029 
+ 110.       112.        4.578                                     2154401200030 
+ 112.       114.        2.020                                     2154401200031 
+ 114.       116.        0.798                                     2154401200032 
+ 116.       118.        0.155                                     2154401200033 
+ENDDATA             16          0                                 2154401200034 
+ENDSUBENT           33          0                                 2154401299999 
+ENDENTRY            12          0                                 2154499999999 

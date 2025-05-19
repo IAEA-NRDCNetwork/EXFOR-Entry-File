@@ -1,0 +1,129 @@
+ENTRY            10809   20101103                             13691080900000001 
+SUBENT        10809001   20101103                             13691080900100001 
+BIB                 11         23                                 1080900100002 
+INSTITUTE  (1USANBS)                                              1080900100003 
+REFERENCE  ((R,ANL-76-90,333,197606)=(C,76ANL,,333,197606))       1080900100004 
+           (J,ANS,44,533,198306) Revised values.                  1080900100005 
+           (C,75WASH,1,266,197503)                                1080900100006 
+           (C,77NBS,,156,197703) Revised data                     1080900100007 
+AUTHOR     (H.T.Heaton II,D.M.Gilliam,V.Spiegel Jr,C.Eisenhauser, 1080900100008 
+           J.A.Grundl)                                            1080900100009 
+TITLE      Fission cross sections of 235U, 238U and 239Pu         1080900100010 
+            averaged over the 252Cf neutron spectrum.             1080900100011 
+INC-SOURCE (CF252). 4.E+09 neutrons/sec. Encapsulated             1080900100012 
+            in 2 g of steel and aluminum                          1080900100013 
+METHOD     (MANGB)                                                1080900100014 
+DETECTOR   (FISCH) Two double fission chambers.                   1080900100015 
+PART-DET   (FF)                                                   1080900100016 
+MONITOR    252Cf source calibrated in manganese sulfate bath      1080900100017 
+            facility against Ra-Be photoneutron standard source,  1080900100018 
+            NBS-I. 252Cf half-life taken as 2.637 yr.             1080900100019 
+STATUS     (TABLE) Data taken from Trans.Am.Nucl.Soc., 44, 533    1080900100020 
+                   (1983).                                        1080900100021 
+           (APRVD) Approved by D.M.Gilliam, 1979/7/23.            1080900100022 
+HISTORY    (19781211C)                                            1080900100023 
+           (19830823A) Data revisions.                            1080900100024 
+           (20101103A) VM:Updated to new date formats,lower case. 1080900100025 
+ENDBIB              23          0                                 1080900100026 
+NOCOMMON             0          0                                 1080900100027 
+ENDSUBENT           26          0                                 1080900199999 
+SUBENT        10809002   20101103                             13691080900200001 
+BIB                  3          5                                 1080900200002 
+REACTION   (92-U-235(N,F),,SIG,,FIS)                              1080900200003 
+CORRECTION Corrected for fission in other isotopes, geometrical   1080900200004 
+            factors, undetected fission fragments, neutron        1080900200005 
+            scattering.                                           1080900200006 
+ERR-ANALYS (DATA-ERR) Data error given is total RMS uncertainty.  1080900200007 
+ENDBIB               5          0                                 1080900200008 
+NOCOMMON             0          0                                 1080900200009 
+DATA                 3          1                                 1080900200010 
+EN-DUMMY   DATA       DATA-ERR                                    1080900200011 
+MEV        MB         MB                                          1080900200012 
+ 2.13       1216.      19.                                        1080900200013 
+ENDDATA              3          0                                 1080900200014 
+ENDSUBENT           13          0                                 1080900299999 
+SUBENT        10809003   20101103                             13691080900300001 
+BIB                  6         14                                 1080900300002 
+REACTION  1((92-U-235(N,F),,SIG,,FIS)/(92-U-238(N,F),,SIG,,FIS))  1080900300003 
+          2(92-U-238(N,F),,SIG,,FIS)                              1080900300004 
+MONITOR   2(92-U-235(N,F),,SIG,,FIS)                              1080900300005 
+MONIT-REF 2(10809002,H.T.HEATON+,C,75WASH,1,266,197503)           1080900300006 
+CORRECTION Corrected for fragment absorption, counts below        1080900300007 
+            discriminator, isotopic impurities, dead time,        1080900300008 
+            electronic background, contamination, inelastic       1080900300009 
+           scattering perturbations.                              1080900300010 
+ERR-ANALYS1(DATA-ERR) Errors given are standard deviations        1080900300011 
+          2(DATA-ERR) Errors given include uncertainty in         1080900300012 
+            . neutron source strength - 1.2%.                     1080900300013 
+            . elastic scattering correction - 1.3%,               1080900300014 
+            . geometrical errors - 0.6%.                          1080900300015 
+HISTORY    (19781211C)                                            1080900300016 
+ENDBIB              14          0                                 1080900300017 
+COMMON               3          3                                 1080900300018 
+EN-DUMMY   MONIT     1MONIT-ERR 2                                 1080900300019 
+MEV        B          B                                           1080900300020 
+ 2.13       1.216      0.019                                      1080900300021 
+ENDCOMMON            3          0                                 1080900300022 
+DATA                 4          1                                 1080900300023 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2                      1080900300024 
+NO-DIM     PER-CENT   MB         MB                               1080900300025 
+ 3.73       1.2        326.       6.5                             1080900300026 
+ENDDATA              3          0                                 1080900300027 
+ENDSUBENT           26          0                                 1080900399999 
+SUBENT        10809004   20101103                             13691080900400001 
+BIB                  6         14                                 1080900400002 
+REACTION  1((92-U-235(N,F),,SIG,,FIS)/(94-PU-239(N,F),,SIG,,FIS)) 1080900400003 
+          2(94-PU-239(N,F),,SIG,,FIS)                             1080900400004 
+MONITOR   2(92-U-235(N,F),,SIG,,FIS)                              1080900400005 
+MONIT-REF 2(10809002,H.T.HEATON+,C,75WASH,1,266,197503)           1080900400006 
+CORRECTION Corrected for fragment absorption, counts below        1080900400007 
+            discriminator, isotopic impurities, dead time,        1080900400008 
+            electronic background, contamination, inelastic       1080900400009 
+           scattering perturbations.                              1080900400010 
+ERR-ANALYS1(DATA-ERR) Errors given are standard deviations        1080900400011 
+          2(DATA-ERR) Errors given include uncertainty in         1080900400012 
+            . neutron source strength - 1.2%.                     1080900400013 
+            . elastic scattering correction - 1.3%,               1080900400014 
+            . geometrical errors - 0.6%.                          1080900400015 
+HISTORY    (19781211C)                                            1080900400016 
+ENDBIB              14          0                                 1080900400017 
+COMMON               3          3                                 1080900400018 
+EN-DUMMY   MONIT     2MONIT-ERR 2                                 1080900400019 
+MEV        B          B                                           1080900400020 
+ 2.13       1.216      0.019                                      1080900400021 
+ENDCOMMON            3          0                                 1080900400022 
+DATA                 4          1                                 1080900400023 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2                      1080900400024 
+NO-DIM     PER-CENT   MB         MB                               1080900400025 
+ 0.666      0.9        1824.      35.                             1080900400026 
+ENDDATA              3          0                                 1080900400027 
+ENDSUBENT           26          0                                 1080900499999 
+SUBENT        10809005   20101103                             13691080900500001 
+BIB                  6         14                                 1080900500002 
+REACTION  1((93-NP-237(N,F),,SIG,,FIS)/(92-U-238(N,F),,SIG,,FIS)) 1080900500003 
+          2(93-NP-237(N,F),,SIG,,FIS)                             1080900500004 
+MONITOR   2(92-U-238(N,F),,SIG,,FIS)                              1080900500005 
+MONIT-REF 2(10809002,H.T.HEATON+,C,75WASH,1,266,197503)           1080900500006 
+CORRECTION Corrected for fragment absorption, counts below        1080900500007 
+            discriminator, isotopic impurities, dead time,        1080900500008 
+            electronic background, contamination, inelastic       1080900500009 
+           scattering perturbations.                              1080900500010 
+ERR-ANALYS1(DATA-ERR) Errors given are standard deviations        1080900500011 
+          2(DATA-ERR) Errors given include uncertainty in         1080900500012 
+            . neutron source strength - 1.2%.                     1080900500013 
+            . elastic scattering correction - 1.3%,               1080900500014 
+            . geometrical errors - 0.6%.                          1080900500015 
+HISTORY    (19781211C)                                            1080900500016 
+ENDBIB              14          0                                 1080900500017 
+COMMON               3          3                                 1080900500018 
+EN-DUMMY   MONIT     2MONIT-ERR 2                                 1080900500019 
+MEV        B          B                                           1080900500020 
+ 2.13       1.216      0.019                                      1080900500021 
+ENDCOMMON            3          0                                 1080900500022 
+DATA                 4          1                                 1080900500023 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2                      1080900500024 
+NO-DIM     PER-CENT   MB         MB                               1080900500025 
+ 4.19       1.5        1366.      27.                             1080900500026 
+ENDDATA              3          0                                 1080900500027 
+ENDSUBENT           26          0                                 1080900599999 
+ENDENTRY             5          0                                 1080999999999 

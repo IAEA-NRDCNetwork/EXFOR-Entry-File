@@ -1,0 +1,101 @@
+ENTRY            41513   20080422                             41434151300000001 
+SUBENT        41513001   20080422                             41434151300100001 
+BIB                 15         27                                 4151300100002 
+TITLE      The 234-U neutron induced fission cross-section near   4151300100003 
+           the thermal point.                                     4151300100004 
+AUTHOR     (M.Florek, V.Yu.Konovalov, L.B.Pikelner,Yu.S.Zamyatnin,4151300100005 
+           Sh.S.Zeinalov)                                         4151300100006 
+INSTITUTE  (4ZZZDUB) V.Yu.Konovalov, L.B.Pikelner, Yu.S.Zamyatnin,4151300100007 
+                     Sh.S.Zeinalov                                4151300100008 
+           (3SLKUB) M.Florek                                      4151300100009 
+REFERENCE  (W,Konovalov,20080429)  Main reference.                4151300100010 
+FACILITY   (REAC,4ZZZDUB) IBR-2 pulsed reactor.                   4151300100011 
+INC-SOURCE (REAC)                                                 4151300100012 
+INC-SPECT    Tangential neutron beam                              4151300100013 
+METHOD     (TOF)                                                  4151300100014 
+           Background was measured with 0.5mm thick cadmium filter4151300100015 
+           in the neutron beam. Measurement time for spectrum     4151300100016 
+           without filter - 33 h, and background one - 13 h.      4151300100017 
+PART-DET   (FF)                                                   4151300100018 
+DETECTOR   (IOCH) Multisectional ionization chamber containing:   4151300100019 
+SAMPLE     12.5 mg of 234-U and 0.84 mg of 235-U used for neutron 4151300100020 
+           flux determination and energy calibration.             4151300100021 
+           235-U content 0.078+-0.001% in the 234U sample.        4151300100022 
+ANALYSIS   Contribution of 235-U was calculated using 235-U TOF   4151300100023 
+           spectra normalized on samples mass ratio, ratio of the 4151300100024 
+           average reactor power during both measurements and     4151300100025 
+           content of 235U in the 234U sample.                    4151300100026 
+STATUS     (TABLE) Data received from author V.Yu.Konovalov.      4151300100027 
+ERR-ANALYS (DATA-ERR) Errors are not specified.                   4151300100028 
+HISTORY    (20080429C)      Compiled at CJD. M.M.                 4151300100029 
+ENDBIB              27          0                                 4151300100030 
+NOCOMMON             0          0                                 4151300100031 
+ENDSUBENT           30          0                                 4151300199999 
+SUBENT        41513002   20080429                             41434151300200001 
+BIB                  1          1                                 4151300200002 
+REACTION   (92-U-234(N,F),,SIG)                                   4151300200003 
+ENDBIB               1          0                                 4151300200004 
+NOCOMMON             0          0                                 4151300200005 
+DATA                 3         19                                 4151300200006 
+EN         DATA       DATA-ERR                                    4151300200007 
+EV         B          B                                           4151300200008 
+0.007      0.748458459 .080406301                                 4151300200009 
+0.012      0.451590841 .051771049                                 4151300200010 
+0.017      0.36453046  .042449596                                 4151300200011 
+0.022      0.287805376 .03620512                                  4151300200012 
+0.027      0.223271837 .031406166                                 4151300200013 
+0.032      0.202746409 .028824836                                 4151300200014 
+0.037      0.165143594 .026205377                                 4151300200015 
+0.042      0.149088677 .024437472                                 4151300200016 
+0.047      0.136164506 .022983146                                 4151300200017 
+0.053      0.129120555 .02172448                                  4151300200018 
+0.058      0.107994371 .020505552                                 4151300200019 
+0.062      0.100517237 .01967837                                  4151300200020 
+0.067      0.100947817 .019043802                                 4151300200021 
+0.074      0.099268471 .018396389                                 4151300200022 
+0.078      0.095246502 .017874519                                 4151300200023 
+0.083      0.094816301 .017578072                                 4151300200024 
+0.088      0.086042647 .016985248                                 4151300200025 
+0.094      0.086448188 .016604089                                 4151300200026 
+0.098      0.08591673  .016040014                                 4151300200027 
+ENDDATA             21          0                                 4151300200028 
+ENDSUBENT           27          0                                 4151300299999 
+SUBENT        41513003   20080429                             41434151300300001 
+BIB                  3          7                                 4151300300002 
+REACTION  1(92-U-234(N,0),,EN)  Resonance energy                  4151300300003 
+          2((92-U-234(N,EL),,WID,,G)*(92-U-234(N,F),,WID))        4151300300004 
+            g*Gn*Gf upper estimation.                             4151300300005 
+ANALYSIS   Experimental points was fitted by Breit-Wigner formula 4151300300006 
+           in order to estimate the parameters of the negative    4151300300007 
+           resonance that caused deviation from 1/v law.          4151300300008 
+STATUS     (DEP,41513002)                                         4151300300009 
+ENDBIB               7          0                                 4151300300010 
+NOCOMMON             0          0                                 4151300300011 
+DATA                 2          1                                 4151300300012 
+DATA      1DATA-MAX  2                                            4151300300013 
+EV         EV-SQ                                                  4151300300014 
+ -0.003         6.E-12                                            4151300300015 
+ENDDATA              3          0                                 4151300300016 
+ENDSUBENT           15          0                                 4151300399999 
+SUBENT        41513004   20080429                             41434151300400001 
+BIB                  4          7                                 4151300400002 
+REACTION   (92-U-234(N,EL),,WID,,,DERIV)                          4151300400003 
+ASSUMED    (ASSUM,92-U-234(N,F),,WID,,AV)                         4151300400004 
+ANALYSIS    Using average fission width for 234-U resonance       4151300400005 
+            <Gf>~10 eV , neutron width of the negative resonance  4151300400006 
+            Gn~10-7-10-8 eV was obtained.                         4151300400007 
+            It could be p-wave resonance.                         4151300400008 
+STATUS     (DEP,41513003)                                         4151300400009 
+ENDBIB               7          0                                 4151300400010 
+COMMON               1          3                                 4151300400011 
+ASSUM                                                             4151300400012 
+EV                                                                4151300400013 
+     1.E-05                                                       4151300400014 
+ENDCOMMON            3          0                                 4151300400015 
+DATA                 2          1                                 4151300400016 
+EN-RES     DATA-MAX                                               4151300400017 
+EV         EV                                                     4151300400018 
+ -0.003         1.E-07                                            4151300400019 
+ENDDATA              3          0                                 4151300400020 
+ENDSUBENT           19          0                                 4151300499999 
+ENDENTRY             4          0                                 4151399999999 

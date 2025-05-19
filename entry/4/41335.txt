@@ -1,0 +1,80 @@
+ENTRY            41335   20130118                             41594133500000001 
+SUBENT        41335001   20130118                             41594133500100001 
+BIB                 11         19                                 4133500100002 
+TITLE      .Radiative capture of neutrons by U-238 in the energy  4133500100003 
+            range 0.024 - 1.1 MeV                                 4133500100004 
+AUTHOR     (Yu.G.Panitkin,Yu.Ya.Stavisskiy,V.A.Tolstikov)         4133500100005 
+INSTITUTE  (4RUSFEI)                                              4133500100006 
+REFERENCE  (C,71KIEV,1,321,197105)  Main reference, data are giveN4133500100007 
+FACILITY   (VDG,4RUSFEI)                                          4133500100008 
+INC-SOURCE (P-T)                                                  4133500100009 
+           (P-LI7)                                                4133500100010 
+METHOD     (ACTIV)  Activation                                    4133500100011 
+DETECTOR   (GELI)  For gamma detection                            4133500100012 
+           (FISCH) For U-235 fission fragments detection .        4133500100013 
+           Spectrometer resolution for 80 keV gamma-energy is     4133500100014 
+           about 2 keV.                                           4133500100015 
+PART-DET   (G,FF)                                                 4133500100016 
+ERR-ANALYS (DATA-ERR)  Errors are not specified                   4133500100017 
+HISTORY    (19981027C)                                            4133500100018 
+           (20130118A) M.M. Upper -> lower case correction.       4133500100019 
+           BIB information was updated.                           4133500100020 
+           Subent 002 was corrected.                              4133500100021 
+ENDBIB              19          0                                 4133500100022 
+NOCOMMON             0          0                                 4133500100023 
+ENDSUBENT           22          0                                 4133500199999 
+SUBENT        41335002   20130118                             41594133500200001 
+BIB                  8         20                                 4133500200002 
+REACTION   (92-U-238(N,G)92-U-239,,SIG)                           4133500200003 
+DECAY-DATA (92-U-239,,DG,74.) After b- decay of U-239 in Np-239.  4133500200004 
+MONITOR    ((MONIT1)92-U-235(N,F),,SIG)  Used for c-s trend.      4133500200005 
+           ((MONIT2)92-U-238(N,G)92-U-239,,SIG)                   4133500200006 
+           Used at point 24.4 keV.                                4133500200007 
+MONIT-REF  (20362002,H.O.Menlove+,J,NSE,33,24,1968) For MONIT2.   4133500200008 
+           (,W.Hart,C,68DUBNA,,1968) For MONIT1.                  4133500200009 
+           Paper UK10 UK-USSR Seminar, June, 1968.                4133500200010 
+           Evaluated fission cross sections in the energy range   4133500200011 
+           1 keV to 15 MeV.                                       4133500200012 
+CORRECTION -For target scattered neutrons - 2.% in 0.024-0.145 MeV4133500200013 
+           energy range, less 1.% in 0.45 -1.1 MeV.               4133500200014 
+           -For background of neutrons scattered in accelerator   4133500200015 
+           chamber  < 0.1%.                                       4133500200016 
+           -For neutron beam fluctuations < 0.5%.                 4133500200017 
+STATUS     (TABLE)  Data are taken from C,71KIEV,1,321,1971       4133500200018 
+ERR-ANALYS (DATA-ERR) Errors of MONIT1 (U-235 c-s) and MONIT2     4133500200019 
+           were not included.                                     4133500200020 
+HISTORY    (19981027T)   Converted from SUBENT 88035002           4133500200021 
+           (20130118A) M.M.  Duplicative line was deleted.        4133500200022 
+ENDBIB              20          0                                 4133500200023 
+COMMON               4          3                                 4133500200024 
+E-NRM      E-RSL      EN-NRM     MONIT2                           4133500200025 
+KEV        KEV        KEV        MB                               4133500200026 
+  74.       2.         24.4       516.                            4133500200027 
+ENDCOMMON            3          0                                 4133500200028 
+DATA                 5         21                                 4133500200029 
+EN         EN-RSL     DATA       DATA-ERR   MONIT1                4133500200030 
+KEV        KEV        MB         MB         B                     4133500200031 
+ 2.4000E+01 8.0000E+00 5.1600E+02 1.0000E+01 2.45                 4133500200032 
+ 3.5000E+01 8.0000E+00 4.3900E+02 1.2000E+01 2.19                 4133500200033 
+ 4.5000E+01 8.5000E+00 3.8200E+02 5.0000E+00 2.00                 4133500200034 
+ 5.5000E+01 9.0000E+00 3.6600E+02 8.0000E+00 1.90                 4133500200035 
+ 6.5000E+01 1.0000E+01 3.1000E+02 4.0000E+00 1.82                 4133500200036 
+ 7.5000E+01 1.0500E+01 2.8400E+02 2.0000E+00 1.76                 4133500200037 
+ 8.5000E+01 1.1000E+01 2.4800E+02 4.0000E+00 1.70                 4133500200038 
+ 1.0500E+02 1.1500E+01 2.1100E+02 2.0000E+00 1.62                 4133500200039 
+ 1.2500E+02 1.2500E+01 1.8600E+02 2.0000E+00 1.56                 4133500200040 
+ 1.4500E+02 1.3500E+01 1.7000E+02 3.0000E+00 1.51                 4133500200041 
+ 2.0000E+02 1.8000E+01 1.5000E+02 3.0000E+00 1.42                 4133500200042 
+ 2.5000E+02 1.9000E+01 1.3600E+02 3.0000E+00 1.35                 4133500200043 
+ 3.0000E+02 1.9000E+01 1.2600E+02 3.0000E+00 1.30                 4133500200044 
+ 4.0000E+02 1.9500E+01 1.1700E+02 3.0000E+00 1.23                 4133500200045 
+ 5.0000E+02 2.2000E+01 1.1200E+02 3.0000E+00 1.16                 4133500200046 
+ 6.0000E+02 3.4000E+01 1.1200E+02 2.0000E+00 1.14                 4133500200047 
+ 7.0000E+02 3.5000E+01 1.1700E+02 2.0000E+00 1.14                 4133500200048 
+ 8.0000E+02 3.6000E+01 1.1900E+02 2.0000E+00 1.16                 4133500200049 
+ 9.0000E+02 3.6000E+01 1.1900E+02 2.0000E+00 1.18                 4133500200050 
+ 1.0000E+03 3.9000E+01 1.1200E+02 3.0000E+00 1.21                 4133500200051 
+ 1.1000E+03 4.1000E+01 1.0900E+02 3.0000E+00 1.23                 4133500200052 
+ENDDATA             23          0                                 4133500200053 
+ENDSUBENT           52          0                                 4133500299999 
+ENDENTRY             2          0                                 4133599999999 

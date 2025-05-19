@@ -1,0 +1,168 @@
+ENTRY            23060   20090619                             22142306000000001 
+SUBENT        23060001   20090619                             22142306000100001 
+BIB                 17         62                                 2306000100002 
+TITLE       Neutron capture of Th-232 in the unresolved resonance 2306000100003 
+            region.                                               2306000100004 
+AUTHOR     (N.Janeva, N.Koyumdjieva, K.Volev, A.Lukyanov,         2306000100005 
+           A.Borella,A.Brusegan, F.Corvi, G.Lobo, P.Schillebeeckx)2306000100006 
+INSTITUTE  (2ZZZGEL) A.Borella,A.Brusegan, F.Corvi, G.Lobo,       2306000100007 
+                     P.Schillebeeckx                              2306000100008 
+           (3BULBLA) N.Janeva, N.Koyumdjieva, K.Volev, A.Lukyanov 2306000100009 
+REFERENCE  ((S,ISINN-11,286,200405)=(S,JINR-E3-2004-9,286,2004))  2306000100010 
+             Tables of res. parameters. C-S on Figures.           2306000100011 
+REL-REF    (I,,A.Bensussan+,J,NIM,155,11,1978)   Detailed         2306000100012 
+                                            description of GELINA.2306000100013 
+           (M,,F.Corvi+,J,NIM/A,265,475,1988)                     2306000100014 
+           (M,,F.Corvi+,C,79KNOX,162,1979)                        2306000100015 
+            Pulse-height weighting technique description.         2306000100016 
+FACILITY   (LINAC,2ZZZGEL) GELINA, electron burst width 1 nanosec,2306000100017 
+               repetition rate 800 Hz, average electron current   2306000100018 
+               70 micro-A, electron average energy 100 MeV .      2306000100019 
+INC-SOURCE (TAGD)                                                 2306000100020 
+INC-SPECT    Well-collimated neutron beam of 6.4 cm.              2306000100021 
+            B-10 anti-overlapping filter . Pb-filter to reduce    2306000100022 
+            gamma-flash.                                          2306000100023 
+            9 mm Na filter to obtain background at 2.8 keV.       2306000100024 
+            Black resonance filters ( Al, Co, W, Ag) to evaluate  2306000100025 
+            background for neutron flux measurement.              2306000100026 
+SAMPLE      Metallic natural Th disk of 8 cm diameter,0.5mm thick,2306000100027 
+            corresponding to 1.588E-3 at/b .                      2306000100028 
+METHOD     (TOF)  Flight Base is 14.37 m.                         2306000100029 
+            TOF-amplitude events were recorded  in list-mode.     2306000100030 
+           (PHD)  Pulse-height weighting technique to obtain a    2306000100031 
+            detection efficiency proportional to total excitation 2306000100032 
+            energy.                                               2306000100033 
+            Background : time-independent component produced by   2306000100034 
+            radioactive decay of sample was deduced from          2306000100035 
+            measurement with closed beam; time-dependent component2306000100036 
+            was measured by replacing the thorium sample with     2306000100037 
+            0.5 mm thick Pb-208 sample of the same size.          2306000100038 
+DETECTOR   (STANK)   Pair of C6-D6 liquid scintillators of 10 cm  2306000100039 
+            diameter and 7.5 cm height, oriented perpendicularly  2306000100040 
+            to neutron beam direction.                            2306000100041 
+           (BF3)   For Neutron Intensity Monitoring               2306000100042 
+           (IOCH)  Ionization chamber placed at 80 cm before      2306000100043 
+            thorium sample - for neutron flux measurement.        2306000100044 
+            Has a cathode loaded with two back-to-back layers of  2306000100045 
+            about 40 microg/cm**2 B-10.                           2306000100046 
+            Shielding around detectors.                           2306000100047 
+MONITOR    (5-B-10(N,A)3-LI-7,,SIG) To capture yield.             2306000100048 
+ASSUMED    (ASSUM1,90-TH-232(N,0),,EN)                            2306000100049 
+           (ASSUM2,90-TH-232(N,0),,EN)                            2306000100050 
+           (ASSUM3,90-TH-232(N,TOT),,TRN) at 21.8 eV resonance.   2306000100051 
+           (ASSUM4,90-TH-232(N,TOT),,TRN) at 23.5 eV resonance.   2306000100052 
+            Normalization constant K was determined from resonance2306000100053 
+            shape analysis of well-isolated and nearly saturated  2306000100054 
+            resonances at 21.8 eV and 23.5 eV with peak           2306000100055 
+            transmission of respectively 4.7% and 0.9%, using     2306000100056 
+            REFIT IRMM code.                                      2306000100057 
+ANALYSIS   (RFN) R-matrix theory used in code REFIT IRMM .        2306000100058 
+CORRECTION  For multiple scattering and self-shielding effect     2306000100059 
+            (using SESH CODE).                                    2306000100060 
+            For resolution and Doppler broadening.                2306000100061 
+            For background and dead time.                         2306000100062 
+STATUS     (PRELM)                                                2306000100063 
+HISTORY    (20090619C)   M.M.                                     2306000100064 
+ENDBIB              62          0                                 2306000100065 
+COMMON               4          3                                 2306000100066 
+ASSUM1     ASSUM2     ASSUM3     ASSUM4                           2306000100067 
+EV         EV         NO-DIM     NO-DIM                           2306000100068 
+       21.8       23.5    0.047    0.009                          2306000100069 
+ENDCOMMON            3          0                                 2306000100070 
+ENDSUBENT           69          0                                 2306000199999 
+SUBENT        23060002   20090619                             22142306000200001 
+BIB                  6         17                                 2306000200002 
+REACTION  1(90-TH-232(N,EL),,STF,,AV) Neutron strength function . 2306000200003 
+          2(90-TH-232(N,G),,WID,,AV)                              2306000200004 
+                           Average radiation width.               2306000200005 
+          3(90-TH-232(N,0),,D)                                    2306000200006 
+REL-REF    (N,,F.H.Froehner,J,NSE,103,119,1989) Code FITACS.      2306000200007 
+ANALYSIS    To fit capture c-s and evaluate resonance parameters  2306000200008 
+            in URR the codes SAMMY and FITACS (based on Hauser-   2306000200009 
+            Feshbach theory with width fluctuations) were used.   2306000200010 
+            The adjustable parameters are strength function,      2306000200011 
+            distant level parameters, average radiation widths    2306000200012 
+            (at E=0), whose energy dependence is specified via    2306000200013 
+            the giant dipole model.                               2306000200014 
+MISC-COL   (MISC) Level distant parameter.                        2306000200015 
+STATUS     (TABLE)  Table 1 of S,ISINN-11,287,200405.             2306000200016 
+           (DEP,22699002)  Dependent from capture cross-section of2306000200017 
+                         Subent 22699002.                         2306000200018 
+ERR-ANALYS (DATA-ERR)  Not specified.                             2306000200019 
+ENDBIB              17          0                                 2306000200020 
+COMMON               2          3                                 2306000200021 
+EN-MIN     EN-MAX                                                 2306000200022 
+KEV        KEV                                                    2306000200023 
+       4.        40.                                              2306000200024 
+ENDCOMMON            3          0                                 2306000200025 
+DATA                 6          3                                 2306000200026 
+MOMENTUM L DATA      1DATA-ERR  1DATA      2DATA      3MISC       2306000200027 
+NO-DIM     NO-DIM     NO-DIM     EV         EV         NO-DIM     2306000200028 
+ 1.         1.1261E-04     0.5E-7  0.0212     18.64     -0.140    2306000200029 
+ 2.         2.3220E-04     0.6E-7  0.0212               -0.140    2306000200030 
+ 3.         3.3941E-04    0.27E-6  0.0212               -0.140    2306000200031 
+ENDDATA              5          0                                 2306000200032 
+ENDSUBENT           31          0                                 2306000299999 
+SUBENT        23060003   20090619                             22142306000300001 
+BIB                  4         16                                 2306000300002 
+REACTION  1(90-TH-232(N,EL),,WID,,AV)                             2306000300003 
+          2(90-TH-232(N,G),,WID,,AV)                              2306000300004 
+          3(90-TH-232(N,0),,D)                                    2306000300005 
+REL-REF    (N,,N.Koyumdjieva+,J,ZP/A,353,31,1995)                 2306000300006 
+           (N,,N.Koyumdjieva+,J,NSE,137,(2),194,2001)             2306000300007 
+             Statistical modeling of resonant cross section       2306000300008 
+             structure in URR.                                    2306000300009 
+ANALYSIS    Average resonance parameters are deduced by fitting   2306000300010 
+            the average capture data using the MINUIT code for    2306000300011 
+            fitting and uncertainty analysis.                     2306000300012 
+             Initial values of resonance parameters - based on    2306000300013 
+             JENDL-3.3 .                                          2306000300014 
+STATUS     (TABLE)  Table 2 of S,ISINN-11,287,200405.             2306000300015 
+           (DEP,22699002)  Dependent from capture cross-section of2306000300016 
+                         Subent 22699002.                         2306000300017 
+           (DEP,23060004)                                         2306000300018 
+ENDBIB              16          0                                 2306000300019 
+COMMON               2          3                                 2306000300020 
+EN-MIN     EN-MAX                                                 2306000300021 
+KEV        KEV                                                    2306000300022 
+       4.        40.                                              2306000300023 
+ENDCOMMON            3          0                                 2306000300024 
+DATA                 5          5                                 2306000300025 
+MOMENTUM L SPIN J     DATA      1DATA      2DATA      3           2306000300026 
+NO-DIM     NO-DIM     EV         EV         EV                    2306000300027 
+ 0.          0.5       0.17509E-2 0.25601E-1  17.900              2306000300028 
+ 1.          0.5       0.35012E-2 0.26900E-1  17.900              2306000300029 
+ 1.          1.5       0.17060E-2 0.26900E-1   8.950              2306000300030 
+ 2.          2.        0.90173E-3 0.21200E-1   8.950              2306000300031 
+ 2.          2.        0.61585E-3 0.21200E-1   6.000              2306000300032 
+ENDDATA              7          0                                 2306000300033 
+ENDSUBENT           32          0                                 2306000399999 
+SUBENT        23060004   20090619                             22142306000400001 
+BIB                  4         14                                 2306000400002 
+REACTION   (90-TH-232(N,EL)90-TH-232,,RAD)                        2306000400003 
+ANALYSIS    Average resonance parameters are deduced by fitting   2306000400004 
+            the average capture data using the MINUIT code for    2306000400005 
+            fitting and uncertainty analysis.                     2306000400006 
+             Initial values of resonance parameters - based on    2306000400007 
+            JENDL-3.3 .                                           2306000400008 
+REL-REF    (N,,N.Koyumdjieva+,J,ZP/A,353,31,1995)                 2306000400009 
+           (N,,N.Koyumdjieva+,J,NSE,137,(2),194,2001)             2306000400010 
+             Statistical modeling of resonant cross section       2306000400011 
+             structure in URR.                                    2306000400012 
+STATUS     (TABLE)  Table 2 of S,ISINN-11,287,200405 .            2306000400013 
+           (DEP,22699002)  Dependent from capture cross-section of2306000400014 
+                         Subent 22699002.                         2306000400015 
+           (DEP,23060003)                                         2306000400016 
+ENDBIB              14          0                                 2306000400017 
+COMMON               2          3                                 2306000400018 
+EN-MIN     EN-MAX                                                 2306000400019 
+KEV        KEV                                                    2306000400020 
+       4.        40.                                              2306000400021 
+ENDCOMMON            3          0                                 2306000400022 
+DATA                 1          1                                 2306000400023 
+DATA                                                              2306000400024 
+FERMI                                                             2306000400025 
+    8.94                                                          2306000400026 
+ENDDATA              3          0                                 2306000400027 
+ENDSUBENT           26          0                                 2306000499999 
+ENDENTRY             4          0                                 2306099999999 

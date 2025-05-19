@@ -1,0 +1,88 @@
+ENTRY            22448   20140828                             22402244800000001 
+SUBENT        22448001   20140828                             22402244800100001 
+BIB                 15         33                                 2244800100002 
+TITLE      The stellar (n,gamma) cross section of the             2244800100003 
+              unstable 135Cs                                      2244800100004 
+AUTHOR     (S.Jaag, F.Kaeppeler, P.Koehler)                       2244800100005 
+INSTITUTE  (2GERKFK,1USAORL)                                      2244800100006 
+REFERENCE  (J,NP/A,621,247,1997)                                  2244800100007 
+           (J,PR/C,69,025803,2004) corrected data given           2244800100008 
+FACILITY  1(VDG,2GERKFK) for kT~25 keV irradiations               2244800100009 
+          2(REAC,2GERMNZ) TRIGA reactor(to obtain number of 135Cs)2244800100010 
+INC-SOURCE1(P-LI7)                                                2244800100011 
+          2(REAC)                                                 2244800100012 
+INC-SPECT 1kT~25keV quasi-stellar neutron spectrum                2244800100013 
+          2Epithermal(En>0.4 eV)/thermal=4/70                     2244800100014 
+SAMPLE     Cs sample specified as 2E+15 135Cs atoms implanted in  2244800100015 
+            a graphite disc (0.1 mm thick and 6 mm in diam.) and  2244800100016 
+            canned in a cylindrical graphite box, which was       2244800100017 
+            sandwiched between two Au foils.                      2244800100018 
+METHOD     (ACTIV) Irradiation lasted for about 11 days           2244800100019 
+           (GSPEC) Measured for 16 days                           2244800100020 
+DECAY-DATA (55-CS-136-G,13.16D,DG,340.,,                          2244800100021 
+                               DG,818.,,                          2244800100022 
+                               DG,1048.,,                         2244800100023 
+                               DG,1235.)                          2244800100024 
+DETECTOR   (HPGE) 175 cm3 HPGe detector                           2244800100025 
+           (HPGE) Another HPGe to measure Re foils activity       2244800100026 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         2244800100027 
+REL-REF    (N,O1963002,W.Ratynski+,J,PR/C,37,595,1988)            2244800100028 
+            kT~25 keV quasi-stellar neutron spectrum given        2244800100029 
+STATUS     (APRVD) Approved by Franz Kaeppeler (2014-09-09)       2244800100030 
+HISTORY    (20000201C) + + Compiled by SM               + +       2244800100031 
+           (20081103U) Corrections made by SM                     2244800100032 
+           (20121223A) SD: EN-MEAN -> KT and values were corrected2244800100033 
+            in Subent 2. ERR-T -> DATA-ERR.                       2244800100034 
+           (20140828A) On. 002 superseded, 003 added.             2244800100035 
+ENDBIB              33          0                                 2244800100036 
+NOCOMMON             0          0                                 2244800100037 
+ENDSUBENT           36          0                                 2244800199999 
+SUBENT        22448002   20140828                             22402244800200001 
+BIB                  6         18                                 2244800200002 
+REACTION   (55-CS-135(N,G)55-CS-136,,SIG,,MXW)                    2244800200003 
+ANALYSIS   Transformed from the data measured under the quasi-    2244800200004 
+            stellar neutron spectrum assuming that 135Cs(n,g) and 2244800200005 
+            197Au(n,g) cross sections have the same energy        2244800200006 
+            dependence for the region where the quasi-stellar     2244800200007 
+            experimental spectrum differs from a true Maxwell-    2244800200008 
+            Bolzmann distribution                                 2244800200009 
+REL-REF    (R,,J.F.Mughabghab,B,NEUT.CS 1B,,1984)                 2244800200010 
+            sig(nth,g)=8.7+/-0.5 b and RI(n,g)=61.7+/-2.3 b       2244800200011 
+ERR-ANALYS (DATA-ERR) Uncertainty dominated by thermal cross      2244800200012 
+            section value of 135Cs and the reactor flux           2244800200013 
+            normalization via the Re isotopes                     2244800200014 
+STATUS     (TABLE) Text (p250) of Nucl.Phys.A621(1997)247         2244800200015 
+           (SPSDD,22448003) Superseded by F.Kaeppeler (2014-08-28)2244800200016 
+HISTORY    (20050106U) Data heading changed from KT to EN-MEAN    2244800200017 
+           (20081103U) ASSUMED keyword codes corrected            2244800200018 
+           (20121223A) SD: EN-MEAN -> KT and values were corrected2244800200019 
+           (20140828A) On. Superseded by 003.                     2244800200020 
+ENDBIB              18          0                                 2244800200021 
+NOCOMMON             0          0                                 2244800200022 
+DATA                 3          1                                 2244800200023 
+KT         DATA       DATA-ERR                                    2244800200024 
+KEV        MB         MB                                          2244800200025 
+ 30.        198.       17.                                        2244800200026 
+ENDDATA              3          0                                 2244800200027 
+ENDSUBENT           26          0                                 2244800299999 
+SUBENT        22448003   20140828                             22402244800300001 
+BIB                  6         10                                 2244800300002 
+REACTION   (55-CS-135(N,G)55-CS-136,,SIG,,MXW)                    2244800300003 
+ANALYSIS   Reanalysis of the data published in 1997 (198+/-17 mb) 2244800300004 
+            with improved thermal data (T.Katoh et al., 1997)     2244800300005 
+REL-REF    (R,22342002,T.Katoh+,J,NST,34,431,1997)                2244800300006 
+            135Cs(nth,g) cross section = 8.3+/-0.3 barn           2244800300007 
+           (R,22342004,T.Katoh+,J,NST,34,431,1997)                2244800300008 
+            135Cs(nth,g) resonance integral = 37.9+/-2.7 barn     2244800300009 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainty     2244800300010 
+STATUS     (TABLE) Text (p025803-7) of Phys.Rev.C69(2004)025803   2244800300011 
+HISTORY    (20140828C) On (moved from 22846.005)                  2244800300012 
+ENDBIB              10          0                                 2244800300013 
+NOCOMMON             0          0                                 2244800300014 
+DATA                 3          1                                 2244800300015 
+KT         DATA       DATA-ERR                                    2244800300016 
+KEV        MB         MB                                          2244800300017 
+ 30.        176.       15.                                        2244800300018 
+ENDDATA              3          0                                 2244800300019 
+ENDSUBENT           18          0                                 2244800399999 
+ENDENTRY             3          0                                 2244899999999 

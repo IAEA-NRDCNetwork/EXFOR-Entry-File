@@ -1,0 +1,146 @@
+ENTRY            20630   20101107                             22252063000000001 
+SUBENT        20630001   20101107                             22252063000100001 
+BIB                 15         40                                 2063000100002 
+INSTITUTE  (2ZZZISP)                                              2063000100003 
+REFERENCE  (J,JIN,27,1175,196506)                                 2063000100004 
+AUTHOR     (M.Bresesti,F.Cappellani,A.M.Del Turco,H.Neumann)      2063000100005 
+TITLE      -Neutron capture cross-section of Xe-126 and Xe-136.-  2063000100006 
+FACILITY   (REAC,2ZZZISP) Pneumatic carrier system at             2063000100007 
+                                           ISPRA 1 reactor.       2063000100008 
+INC-SOURCE (REAC ) ISPRA 1 reactor.                               2063000100009 
+            Irradiation in the graphite reflector for 2 hours.    2063000100010 
+SAMPLE     .High purity natural xenon.                            2063000100011 
+            Samples contained 0.090% Xe-126 and 8.87%             2063000100012 
+            Xe-136 in silica ampoules at 1 atmosphere.            2063000100013 
+METHOD     (ACTIV) Activation.                                    2063000100014 
+DETECTOR   (NAICR) NaI (Tl)-crystal.                              2063000100015 
+ANALYSIS   .Cadmium-measurements,Westcott-formalism.              2063000100016 
+REL-REF    (M,20628001,M.Bresesti+,J,JIN,26,9,196401)             2063000100017 
+           (M,20629001,M.Bresesti+,J,JIN,26,1625,196410)          2063000100018 
+           (M,,M.Bresesti+,J,JIN,29,2477,1967)                    2063000100019 
+           .Same experimental series as in J.Inorg.Nucl.Chem.,    2063000100020 
+            26(1964)9 , 26(1964)1625 and 29(1967)2477.            2063000100021 
+STATUS     (TABLE) .Taken from J.Inorg.Nucl.Chem.,27(1965)1175.   2063000100022 
+CORRECTION .Because of the thin sample no correction is needed    2063000100023 
+            for self-shielding and self-absorption.               2063000100024 
+ERR-ANALYS (ERR-T) total uncertainty contains:                    2063000100025 
+           (ERR-SYS) A 10% systematic uncertainty was attribute   2063000100026 
+            to the measured activities, not however including any 2063000100027 
+            uncertainty from decay parameters of either reaction  2063000100028 
+            products of xenon or the monitor.                     2063000100029 
+           The statistical error was negligible.                  2063000100030 
+HISTORY    (19761012C)                                            2063000100031 
+           (19770331E)                                            2063000100032 
+           (19810109A) Reaction codes corrected.                  2063000100033 
+           (19810120E)                                            2063000100034 
+           (19860415U)N.Ch                                        2063000100035 
+           (19860703E)                                            2063000100036 
+           (20101107A) SD:Updated to new date formats,lower case. 2063000100037 
+                corrected according to last EXFOR rules and Dict. 2063000100038 
+                Code SUM deleted from REACTION (Subents 002,004)  2063000100039 
+                and MONITOR (Subents 003,004); COMMON section     2063000100040 
+                added to Subent 001; COMMENT changed on REL-REF;  2063000100041 
+                MONIT2 added to Subent 002                        2063000100042 
+ENDBIB              40          0                                 2063000100043 
+COMMON               1          3                                 2063000100044 
+ERR-SYS                                                           2063000100045 
+PER-CENT                                                          2063000100046 
+  10.                                                             2063000100047 
+ENDCOMMON            3          0                                 2063000100048 
+ENDSUBENT           47          0                                 2063000199999 
+SUBENT        20630002   20101107                             22252063000200001 
+BIB                  7         18                                 2063000200002 
+REACTION   (54-XE-126(N,G)54-XE-127,,SIG,,MXW) Maxwellian         2063000200003 
+            average cross section.                                2063000200004 
+INC-SPECT  .Thermal Maxwellian neutron spectrum.                  2063000200005 
+DECAY-DATA (54-XE-127-G,36.4D,DG,377.,0.204) 377 keV gamma        2063000200006 
+            measured about 1 month after the irradiation. A small 2063000200007 
+            correction was made for the 173+204 keV sum peak under2063000200008 
+            the 377 keV peak. The metastable state was assumed to 2063000200009 
+            decay 100% by internal transition.                    2063000200010 
+MONITOR    ((MONIT1)27-CO-59(N,G)27-CO-60,,SIG)                   2063000200011 
+            2200 m/sec cross section taken as 37.3 b.             2063000200012 
+           ((MONIT2)27-CO-59(N,G)27-CO-60,,RI)                    2063000200013 
+            The resonance integral was taken as 75.0 b.           2063000200014 
+DECAY-MON  (27-CO-60,5.24YR)                                      2063000200015 
+STATUS     (TABLE) .Average values given on page 1180.            2063000200016 
+HISTORY    (19810109A) decay data added.                          2063000200017 
+           (19810120E)                                            2063000200018 
+           (20101112A) SD: code SUM deleted from REACTION         2063000200019 
+                      and MONITOR. MONIT2 and DECAY-MON added.    2063000200020 
+ENDBIB              18          0                                 2063000200021 
+NOCOMMON             0          0                                 2063000200022 
+DATA                 5          1                                 2063000200023 
+EN-DUMMY   DATA       ERR-T      MONIT1     MONIT2                2063000200024 
+EV         B          B          B          B                     2063000200025 
+ 2.5300E-02 2.4500E+00 2.5000E-01 3.7300E+01  75.0                2063000200026 
+ENDDATA              3          0                                 2063000200027 
+ENDSUBENT           26          0                                 2063000299999 
+SUBENT        20630003   20101107                             22252063000300001 
+BIB                  6         13                                 2063000300002 
+REACTION   (54-XE-136(N,G)54-XE-137,,SIG,,MXW) Maxwellian thermal 2063000300003 
+            cross section.                                        2063000300004 
+INC-SPECT  .Pure thermal Maxwellian spectrum with a cadmium       2063000300005 
+            ratio of 1000.                                        2063000300006 
+DECAY-DATA (55-CS-137,29.68YR,DG,662.) Activity of Cs-137         2063000300007 
+            following beta decay of Xe-137 was measured by the    2063000300008 
+            intensity of the 662 gamma from the decay of the      2063000300009 
+            Ba-137 metastable state (2.6 min half-life).          2063000300010 
+MONITOR    (27-CO-59(N,G)27-CO-60,,SIG) 2200 m/sec cross          2063000300011 
+            section taken as 37.3 b.                              2063000300012 
+STATUS     (TABLE) .Average value given on page 1181.             2063000300013 
+HISTORY    (19810109A) decay-data added.                          2063000300014 
+           (19810120E)                                            2063000300015 
+ENDBIB              13          0                                 2063000300016 
+NOCOMMON             0          0                                 2063000300017 
+DATA                 4          1                                 2063000300018 
+EN-DUMMY   MONIT      DATA       ERR-T                            2063000300019 
+EV         B          B          B                                2063000300020 
+ 2.5300E-02 3.7300E+01 2.8100E-01 2.8000E-02                      2063000300021 
+ENDDATA              3          0                                 2063000300022 
+ENDSUBENT           21          0                                 2063000399999 
+SUBENT        20630004   20101107                             22252063000400001 
+BIB                  5         13                                 2063000400002 
+REACTION   (54-XE-126(N,G)54-XE-127,,RI) Resonance integral       2063000400003 
+            including the 1/V contribution.                       2063000400004 
+DECAY-DATA (54-XE-127-G,36.4D,DG,377.,0.204) A small correction   2063000400005 
+            was made for the 173+204 keV sum peak under the       2063000400006 
+            377 keV photopeak. The metastable state was assumed   2063000400007 
+            to decay 100% by internal transitions.                2063000400008 
+MONITOR    ((MONIT1)27-CO-59(N,G)27-CO-60,,RI)                    2063000400009 
+            Resonance integral taken as 75.0 b                    2063000400010 
+           ((MONIT2)27-CO-59(N,G)27-CO-60,,SIG)                   2063000400011 
+            the thermal cross section was taken as 37.3b.         2063000400012 
+STATUS     (TABLE) .Average values given on page 1180.            2063000400013 
+HISTORY    (19810109A) reaction corrected.                        2063000400014 
+           (19810120E)                                            2063000400015 
+ENDBIB              13          0                                 2063000400016 
+NOCOMMON             0          0                                 2063000400017 
+DATA                 5          1                                 2063000400018 
+EN-MIN     DATA       ERR-T      MONIT1     MONIT2                2063000400019 
+EV         B          B          B          B                     2063000400020 
+ 5.5000E-01 3.8000E+01 3.8000E+00  75.0      3.7300E+01           2063000400021 
+ENDDATA              3          0                                 2063000400022 
+ENDSUBENT           21          0                                 2063000499999 
+SUBENT        20630005   20101107                             22252063000500001 
+BIB                  5         11                                 2063000500002 
+REACTION   (54-XE-126(N,G)54-XE-127,,SIG) 2200 m/sec value        2063000500003 
+DECAY-DATA (54-XE-127-G,36.4D,DG,377.,0.204) Metastable state was 2063000500004 
+            assumed to decay 100% by internal transitions.        2063000500005 
+MONITOR    (27-CO-59(N,G)27-CO-60,,SIG) 2200 m/sec value          2063000500006 
+            taken as 37.3 b.                                      2063000500007 
+STATUS     (DEP,20630002) Derived from the Maxwellian average     2063000500008 
+            value the best value is given on page 1180.           2063000500009 
+HISTORY    (19810109C) Subentry added.                            2063000500010 
+           (19810120E)                                            2063000500011 
+           (19860415A)N.Ch                                        2063000500012 
+           (19860703E)                                            2063000500013 
+ENDBIB              11          0                                 2063000500014 
+NOCOMMON             0          0                                 2063000500015 
+DATA                 4          1                                 2063000500016 
+EN         MONIT      DATA       ERR-T                            2063000500017 
+EV         B          B          B                                2063000500018 
+ 2.5300E-02 3.7300E+01 2.2000E+00 2.2000E-01                      2063000500019 
+ENDDATA              3          0                                 2063000500020 
+ENDSUBENT           19          0                                 2063000599999 
+ENDENTRY             5          0                                 2063099999999 

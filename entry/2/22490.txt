@@ -1,0 +1,111 @@
+ENTRY            22490   20140109                             22382249000000001 
+SUBENT        22490001   20140109                             22382249000100001 
+BIB                 17         61                                 2249000100002 
+TITLE       Neutron Capture on 179Ta                              2249000100003 
+AUTHOR     (M.Schumann,F.Kaeppeler)                               2249000100004 
+INSTITUTE  (2GERKFK)                                              2249000100005 
+REFERENCE  (J,PR/C,60,025802,199908)  Main reference              2249000100006 
+           .Details of the cadmium-difference method is           2249000100007 
+            described in the book of K.Beckurts, K.Wirtz, Neutron 2249000100008 
+            Physics, Springer, 1964                               2249000100009 
+FACILITY   (CYCLO,2GERKFK)  27 MeV proton cyclotron for sample    2249000100010 
+             179Ta preparation via the reaction 180Hf(p,2n)179Ta  2249000100011 
+           (REAC,2GERMPH)   Triga Mark-1 Reactor -  for sample    2249000100012 
+                            179Ta irradiation                     2249000100013 
+INC-SOURCE (REAC)                                                 2249000100014 
+INC-SPECT  .Thermal plus epithermal spectrum of the Triga Mark-1  2249000100015 
+            reactor                                               2249000100016 
+MONIT-REF  (,J.Mughabghab,B,NEUT.CS 1B,,1984)  For Gold           2249000100017 
+           (,A.Simonits+,J,JRN,81,397,1984)   For Cobalt          2249000100018 
+METHOD     (ACTIV)                                                2249000100019 
+           (STTA)                                                 2249000100020 
+           (CADMB)  Cadmium difference method used for taking     2249000100021 
+            into account epithermal part of the neutron spectrum  2249000100022 
+DETECTOR   (HPGE)                                                 2249000100023 
+ANALYSIS   .Results for sigma and res. integral are obtained      2249000100024 
+            as the weighted mean of the values obtained with      2249000100025 
+            Gold and Cobalt monitors                              2249000100026 
+DECAY-DATA (73-TA-179,1.82YR,EC)                                  2249000100027 
+           (73-TA-180-G,8.152HR,EC,,,B-)                          2249000100028 
+SAMPLE     .Water-cooled Hafnium foil of 1 mm thickness and 1 cm  2249000100029 
+            diameter was irradiated for 12 hr at beam current     2249000100030 
+            30 micro-A. Proton energy 27 MeV was adjusted at the  2249000100031 
+            maximum of 180Hf(n,2n)179Ta reaction cross section.   2249000100032 
+            A number of short-lived by-products were allowed to   2249000100033 
+            decay during storage time of 6 months.                2249000100034 
+           .Approximately 1.4 microgram of 179Ta was obtained and 2249000100035 
+            two samples were prepared by electrospraying on Al    2249000100036 
+            backing.                                              2249000100037 
+           - 1st having mass 3.71 nano-gram, 179Ta atoms number   2249000100038 
+            (1.25+-0.02) x 10**13, diameter 8 mm, activity        2249000100039 
+             (1.5E+-0.02) x 10**5 Bq.                             2249000100040 
+           - 2nd having mass 22.4 nano-gram, 179Ta atoms number   2249000100041 
+            (7.52+-0.20) x 10**13, diameter 10 mm, activity       2249000100042 
+             (9.07+-0.15) x 10**5 Bq                              2249000100043 
+CORRECTION .Corrections were made for neutron self-absorption and 2249000100044 
+            flux depression                                       2249000100045 
+ERR-ANALYS (ERR-T)  Total error equal to quadratic sum of its     2249000100046 
+              constituents, principal of which are given below    2249000100047 
+           (ERR-S,1.,1.9) Statistical error for 179Ta activity    2249000100048 
+           (ERR-1,0.7,01.) Error due to proton pile-up for 179Ta  2249000100049 
+           (ERR-2)  Error due to line intensity of 179Ta          2249000100050 
+           (ERR-3)  Error due to detector efficiency of 179Ta     2249000100051 
+           (ERR-4)  Error due to sample definition 179Ta          2249000100052 
+           (ERR-5,,10.)  Error due to flux depression 179Ta       2249000100053 
+           (ERR-6,1.2,5.2) Error due to total activation          2249000100054 
+                                                    - Ta, Au,Co   2249000100055 
+           (ERR-7,0.6,3.6)  Max Error due to total cadmium ratio  2249000100056 
+                    - for Ta, Au,Co                               2249000100057 
+STATUS     (TABLE) .From Text of PR/C,60,025802                   2249000100058 
+HISTORY    (20001110C)  + +  Compiled by S.M.                     2249000100059 
+           (20001110U) Last checking has been done.               2249000100060 
+           (20140109A) SD: SF4 was corrected in REACTION code in  2249000100061 
+            Subent 2. Minor corrections. ERR-ANALYS updated.      2249000100062 
+            MONITORs moved to Subents.                            2249000100063 
+ENDBIB              61          0                                 2249000100064 
+COMMON               3          3                                 2249000100065 
+ERR-2      ERR-3      ERR-4                                       2249000100066 
+PER-CENT   PER-CENT   PER-CENT                                    2249000100067 
+        3.5         2.        2.6                                 2249000100068 
+ENDCOMMON            3          0                                 2249000100069 
+ENDSUBENT           68          0                                 2249000199999 
+SUBENT        22490002   20140109                             22382249000200001 
+BIB                  4          6                                 2249000200002 
+REACTION   (73-TA-179(N,G)73-TA-180-G,,SIG,,MXW)                  2249000200003 
+MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,SIG,,MXW)            2249000200004 
+           ((MONIT3)27-CO-59(N,G)27-CO-60,,SIG,,MXW)              2249000200005 
+ERR-ANALYS (MONIT1-ERR)  Error of Au standard cross section       2249000200006 
+           (MONIT3-ERR)  Error of Co standard cross section       2249000200007 
+HISTORY    (20140109A) SD: SF4=TA-180 => TA-180-G in REACTION code2249000200008 
+ENDBIB               6          0                                 2249000200009 
+COMMON               4          3                                 2249000200010 
+MONIT1     MONIT1-ERR MONIT3     MONIT3-ERR                       2249000200011 
+B          B          B          B                                2249000200012 
+      98.65        0.1      37.18       0.06                      2249000200013 
+ENDCOMMON            3          0                                 2249000200014 
+DATA                 3          1                                 2249000200015 
+EN-MEAN    DATA       ERR-T                                       2249000200016 
+EV         B          B                                           2249000200017 
+   2.53E-02       932.        62.                                 2249000200018 
+ENDDATA              3          0                                 2249000200019 
+ENDSUBENT           18          0                                 2249000299999 
+SUBENT        22490003   20140109                             22382249000300001 
+BIB                  3          5                                 2249000300002 
+REACTION   (73-TA-179(N,G)73-TA-180-G,,RI,,LIM)                   2249000300003 
+MONITOR    ((MONIT2)79-AU-197(N,G)79-AU-198,,RI)                  2249000300004 
+           ((MONIT4)27-CO-59(N,G)27-CO-60,,RI)                    2249000300005 
+ERR-ANALYS (MONIT2-ERR)  Error of Au standard resonance integral  2249000300006 
+           (MONIT4-ERR)  Error of Co standard resonance integral  2249000300007 
+ENDBIB               5          0                                 2249000300008 
+COMMON               4          3                                 2249000300009 
+MONIT2     MONIT2-ERR MONIT4     MONIT4-ERR                       2249000300010 
+B          B          B          B                                2249000300011 
+      1550.        25.        74.       0.13                      2249000300012 
+ENDCOMMON            3          0                                 2249000300013 
+DATA                 4          1                                 2249000300014 
+EN-MIN     EN-MAX     DATA       ERR-T                            2249000300015 
+EV         EV         B          B                                2249000300016 
+       0.55     2.E+06      1216.        69.                      2249000300017 
+ENDDATA              3          0                                 2249000300018 
+ENDSUBENT           17          0                                 2249000399999 
+ENDENTRY             3          0                                 2249099999999 

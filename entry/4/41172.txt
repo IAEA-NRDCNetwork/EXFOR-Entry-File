@@ -1,0 +1,105 @@
+ENTRY            41172   20110727                             41534117200000001 
+SUBENT        41172001   20110727                             41534117200100001 
+BIB                 11         25                                 4117200100002 
+TITLE      Th cross-sections of (N,ALPHA) reactions on            4117200100003 
+           Sn-112, 114, 116 at the neutron energy 14.6 MeV        4117200100004 
+AUTHOR     (P.M.Gopych,M.N.Demchenko,I.M.Zalyubovskiy,            4117200100005 
+           P.S.Kizim)                                             4117200100006 
+INSTITUTE  (4UKRKHU)                                              4117200100007 
+REFERENCE  (J,AE,78,(5),329,199505)  Data are given               4117200100008 
+           (J,AE/T,78,(5),323,1995) Engl.translation of J,AE,78 . 4117200100009 
+           #doi:10.1007/BF02419256                                4117200100010 
+REL-REF    (R,,U.Reus+,J,AND,29,193,1983) Ref. for decay data.    4117200100011 
+FACILITY   (VDG,4UKRKHU)  Neutron generator NG-150M               4117200100012 
+METHOD     (ACTIV)                                                4117200100013 
+DETECTOR   (GELI) Ge(Li) of 50 cm** volume, energy resolution     4117200100014 
+           about 3.5 keV for Co-60. Pb-Cd-Cu protection to        4117200100015 
+           suppress background.                                   4117200100016 
+           Spectrometer was calibrated by Co-57, Sn-113, Ce-139,  4117200100017 
+           Am-241 and Sn-122 standard sources.                    4117200100018 
+ERR-ANALYS (DATA-ERR)  Error is not specified                     4117200100019 
+SAMPLE      Sn-114 content IS 7.1+-1.5%, Sn-112 Content is not    4117200100020 
+            given. Enriched Sn-112 sample of about 2g mass.       4117200100021 
+HISTORY    (19950726C)  + + Compiled at the centre - CJD + +      4117200100022 
+           (20110727A) M.M. Upper -> lower case correction.       4117200100023 
+           Dates were corrected for 4-digits year.                4117200100024 
+           Ref. J,AE/T was added.                                 4117200100025 
+           BIB information was added.                             4117200100026 
+           Subents 003-004 were added.                            4117200100027 
+ENDBIB              25          0                                 4117200100028 
+NOCOMMON             0          0                                 4117200100029 
+ENDSUBENT           28          0                                 4117200199999 
+SUBENT        41172002   20110727                             41534117200200001 
+BIB                  3          6                                 4117200200002 
+REACTION   (50-SN-112(N,A)48-CD-109,,SIG,,,DERIV)                 4117200200003 
+ANALYSIS     C-s value was defined as average of Subents 003,004  4117200200004 
+           data determined relative different monitor c-s.        4117200200005 
+STATUS     (TABLE) Text, page 329, of J,AE,78,(5),329,1995        4117200200006 
+           (DEP,41172003)   See                                   4117200200007 
+           (DEP,41172004)       ANALYSIS.                         4117200200008 
+ENDBIB               6          0                                 4117200200009 
+NOCOMMON             0          0                                 4117200200010 
+DATA                 4          1                                 4117200200011 
+EN         EN-ERR     DATA       DATA-ERR                         4117200200012 
+EV         EV         MB         MB                               4117200200013 
+   1.46E+07     2.E+05   45.       10.                            4117200200014 
+ENDDATA              3          0                                 4117200200015 
+ENDSUBENT           14          0                                 4117200299999 
+SUBENT        41172003   20110727                             41534117200300001 
+BIB                  6         19                                 4117200300002 
+REACTION   (50-SN-112(N,A)48-CD-109,,SIG)                         4117200300003 
+DECAY-DATA (48-CD-109,461.9D,DG,88.0,0.0361)                      4117200300004 
+           (49-IN-111-G,2.83D,DG,171.3,0.903)                     4117200300005 
+           (49-IN-111-G,2.83D,DG,245.4,0.94)                      4117200300006 
+           (50-SN-111,35.3MIN,DG)                                 4117200300007 
+            Decay data used to define Sn-114 admixture  in sample:4117200300008 
+           (50-SN-113-G,115.1D,DG,391.7,0.642)                    4117200300009 
+            Also the line was detected:                           4117200300010 
+           (50-SN-113-G,115.1D,DG,255.0,0.0185)                   4117200300011 
+MONITOR    ((MONIT1)50-SN-112(N,2N)50-SN-111,,SIG)                4117200300012 
+           ((MONIT2)(50-SN-112(N,D)49-IN-111,,SIG)+               4117200300013 
+           (50-SN-112(N,N+P)49-IN-111,,SIG))                      4117200300014 
+ASSUMED    (ASSUM,50-SN-114(N,2N)50-SN-113,,SIG)                  4117200300015 
+ANALYSIS    Gamma-lines 88.0, 171.3, 245.4 keV lines were used    4117200300016 
+           to define c-s using linear combination of MONII1 and   4117200300017 
+           MONIT2.                                                4117200300018 
+           To define the amount of Sn-114 in sample - gamma-lines 4117200300019 
+           171.3, 345.4, 391.7 keV were used by ASSUM .           4117200300020 
+STATUS     (TABLE) Text, page 329, of J,AE,78,(5),329,1995        4117200300021 
+ENDBIB              19          0                                 4117200300022 
+COMMON               6          3                                 4117200300023 
+ASSUM      ASSUM-ERR  MONIT1     MONIT1-ERR MONIT2     MONIT2-ERR 4117200300024 
+MB         MB         MB         MB         MB         MB         4117200300025 
+  1160.      130.       1300.       210.       180.      110.     4117200300026 
+ENDCOMMON            3          0                                 4117200300027 
+DATA                 4          1                                 4117200300028 
+EN         EN-ERR     DATA       DATA-ERR                         4117200300029 
+EV         EV         MB         MB                               4117200300030 
+   1.46E+07     2.E+05   44.       11.                            4117200300031 
+ENDDATA              3          0                                 4117200300032 
+ENDSUBENT           31          0                                 4117200399999 
+SUBENT        41172004   20110727                             41534117200400001 
+BIB                  5         10                                 4117200400002 
+REACTION   (50-SN-112(N,A)48-CD-109,,SIG)                         4117200400003 
+DECAY-DATA (48-CD-109,461.9D,DG,88.0,0.0361)                      4117200400004 
+           (50-SN-111,35.3MIN,DG)                                 4117200400005 
+           (50-SN-113-G,115.1D,DG,391.7,0.642)                    4117200400006 
+           (50-SN-113-G,115.1D,DG,255.0,0.0185)                   4117200400007 
+MONITOR    (50-SN-114(N,2N)50-SN-113,,SIG)                        4117200400008 
+ANALYSIS    C-s value was defined by the Sn-114 admixture  amount 4117200400009 
+           in sample determined in Subent 003 relative Sn-114(N,2N4117200400010 
+           c-s using lines 88.0, 255.0, 391.7 keV.                4117200400011 
+STATUS     (TABLE) Text, page 329, of J,AE,78,(5),329,1995        4117200400012 
+ENDBIB              10          0                                 4117200400013 
+COMMON               2          3                                 4117200400014 
+MONIT      MONIT-ERR                                              4117200400015 
+MB         MB                                                     4117200400016 
+  1160.      130.                                                 4117200400017 
+ENDCOMMON            3          0                                 4117200400018 
+DATA                 4          1                                 4117200400019 
+EN         EN-ERR     DATA       DATA-ERR                         4117200400020 
+EV         EV         MB         MB                               4117200400021 
+   1.46E+07     2.E+05   52.       18.                            4117200400022 
+ENDDATA              3          0                                 4117200400023 
+ENDSUBENT           22          0                                 4117200499999 
+ENDENTRY             4          0                                 4117299999999 

@@ -1,0 +1,121 @@
+ENTRY            21008   20131222                             22382100800000001 
+SUBENT        21008001   20131222                             22382100800100001 
+BIB                 13         31                                 2100800100002 
+INSTITUTE  (2GERMNZ) Institut fuer Kernchemie.                    2100800100003 
+REFERENCE  (P,NEANDC(E)-192/U,(5),70,197804) Data.                2100800100004 
+AUTHOR     (H.O.Denschlag,G.Fischbach,M.Weis)                     2100800100005 
+TITLE       Charge distribution in thermal neutron induced        2100800100006 
+            fission reactions                                     2100800100007 
+FACILITY   (REAC,2GERMNZ) Triga reactor.                          2100800100008 
+INC-SOURCE (REAC)                                                 2100800100009 
+INC-SPECT  .Thermal flux.                                         2100800100010 
+METHOD     (CHSEP) Radiochemical.                                 2100800100011 
+MONITOR    (92-U-235(N,F),IND,FY,,MXW)                            2100800100012 
+           ((92-U-235(N,F),IND,FY,,MXW)/                          2100800100013 
+           (92-U-235(N,F),CHN,FY,,MXW))                           2100800100014 
+           (92-U-235(N,F),CUM,FY,,MXW)                            2100800100015 
+           ((92-U-235(N,F),CUM,FY,,MXW)/                          2100800100016 
+           (92-U-235(N,F),CHN,FY,,MXW))                           2100800100017 
+           .For the nuclides 97-Nb, 97-Zr, 141-Ba, 143-La,        2100800100018 
+            144-La, 145-Ce and Ce-146.                            2100800100019 
+MONIT-REF  (,M.Weis+,P,MAINZ-1977,1978)                           2100800100020 
+           (,G.Fischbach+,P,MAINZ-1977,1978)                      2100800100021 
+ERR-ANALYS (ERR-S) One sigma statistical error.                   2100800100022 
+STATUS     (TABLE) .Data taken from NEANDC(E)-192/U,(5),p.70      2100800100023 
+HISTORY    (19790718C) WWO.                                       2100800100024 
+           (19801118A) G.C., Error analysis changed. REACTION     2100800100025 
+            string in Subent 002 corrected.                       2100800100026 
+           (19810217A) Subents 006 and 007 deleted, duplicate     2100800100027 
+            with Entry 21687. Other minor corrections.            2100800100028 
+           (20131222A) SD: Updated to new date formats,lower case.2100800100029 
+            Corrections according last EXFOR rules and Dict.      2100800100030 
+            REACTION code was corrected in Subent 003. EN-DUMMY   2100800100031 
+            was corrected (0.025 -> 0.0253). Subents 006,007      2100800100032 
+            deleted - duplication with 21687.002                  2100800100033 
+ENDBIB              31          0                                 2100800100034 
+COMMON               1          3                                 2100800100035 
+EN-DUMMY                                                          2100800100036 
+EV                                                                2100800100037 
+ 2.5300E-02                                                       2100800100038 
+ENDCOMMON            3          0                                 2100800100039 
+ENDSUBENT           38          0                                 2100800199999 
+SUBENT        21008002   20131222                             22382100800200001 
+BIB                  3          5                                 2100800200002 
+REACTION   (92-U-235(N,F)ELEM/MASS,IND,FY,,MXW)                   2100800200003 
+DECAY-DATA ((1.)41-NB-96,23.4HR,DG)                               2100800200004 
+           ((2.)41-NB-98-G,2.9SEC,DG) Ground state.               2100800200005 
+HISTORY    (19800724A) Decay data added.                          2100800200006 
+           (19801118A) G.C., Reaction string corrected.           2100800200007 
+ENDBIB               5          0                                 2100800200008 
+NOCOMMON             0          0                                 2100800200009 
+DATA                 6          2                                 2100800200010 
+ELEMENT    MASS       ISOMER     DATA       ERR-S      DECAY-FLAG 2100800200011 
+NO-DIM     NO-DIM     NO-DIM     PC/FIS     PC/FIS     NO-DIM     2100800200012 
+ 4.1000E+01 9.6000E+01            6.9000E-04 1.3000E-04 1.0000E+002100800200013 
+ 4.1000E+01 9.8000E+01 0.0000E+00 6.2000E-02 8.0000E-03 2.0000E+002100800200014 
+ENDDATA              4          0                                 2100800200015 
+ENDSUBENT           14          0                                 2100800299999 
+SUBENT        21008003   20131222                             22382100800300001 
+BIB                  3          7                                 2100800300002 
+REACTION   ((92-U-235(N,F)41-NB-97,IND,FY,,MXW)/                  2100800300003 
+           (92-U-235(N,F)MASS,CHN,FY,,MXW))                       2100800300004 
+RESULT     (FRIND)                                                2100800300005 
+HISTORY    (19800724A) Decay data added.                          2100800300006 
+           (19801118A) Subwork split into three subworks.         2100800300007 
+           (20131222A) SD: SF4=41-NB-97-G+M -> 41-NB-97;          2100800300008 
+            SF6=FY/SUM -> FY in REACTION code.                    2100800300009 
+ENDBIB               7          0                                 2100800300010 
+NOCOMMON             0          0                                 2100800300011 
+DATA                 3          1                                 2100800300012 
+MASS       DATA       ERR-S                                       2100800300013 
+NO-DIM     NO-DIM     NO-DIM                                      2100800300014 
+ 9.7000E+01 2.0000E-03 2.0000E-04                                 2100800300015 
+ENDDATA              3          0                                 2100800300016 
+ENDSUBENT           15          0                                 2100800399999 
+SUBENT        21008004   20131222                             22382100800400001 
+BIB                  2          3                                 2100800400002 
+REACTION   (92-U-235(N,F)41-NB-99-M,CUM,FY,,MXW)                  2100800400003 
+HISTORY    (19800724A) Reaction Re-defined.                       2100800400004 
+           (19801118A) G.C., Data headings changed.               2100800400005 
+ENDBIB               3          0                                 2100800400006 
+NOCOMMON             0          0                                 2100800400007 
+DATA                 2          1                                 2100800400008 
+DATA       ERR-S                                                  2100800400009 
+PC/FIS     PC/FIS                                                 2100800400010 
+ 2.2400E+00 1.3000E-01                                            2100800400011 
+ENDDATA              3          0                                 2100800400012 
+ENDSUBENT           11          0                                 2100800499999 
+SUBENT        21008005   20131222                             22382100800500001 
+BIB                  3          5                                 2100800500002 
+REACTION   ((92-U-235(N,F)ELEM/MASS,CUM,FY,,MXW)/                 2100800500003 
+           (92-U-235(N,F)MASS,CHN,FY,,MXW))                       2100800500004 
+RESULT     (FRCUM)                                                2100800500005 
+HISTORY    (19800724A) Reaction and headings corrected.           2100800500006 
+           (19801118A) G.C., Data headings changed.               2100800500007 
+ENDBIB               5          0                                 2100800500008 
+NOCOMMON             0          0                                 2100800500009 
+DATA                 4          4                                 2100800500010 
+ELEMENT    MASS       DATA       ERR-S                            2100800500011 
+NO-DIM     NO-DIM     NO-DIM     NO-DIM                           2100800500012 
+ 5.6000E+01 1.4300E+02 9.6300E-01 2.7000E-02                      2100800500013 
+ 5.6000E+01 1.4400E+02 8.4000E-01 6.7000E-02                      2100800500014 
+ 5.6000E+01 1.4500E+02 5.7900E-01 3.6000E-02                      2100800500015 
+ 5.6000E+01 1.4600E+02 3.2000E-01 2.0000E-02                      2100800500016 
+ENDDATA              6          0                                 2100800500017 
+ENDSUBENT           16          0                                 2100800599999 
+NOSUBENT      21008006   20131222                             22382100800600001 
+NOSUBENT      21008007   20131222                             22382100800700001 
+SUBENT        21008008   20131222                             22382100800800001 
+BIB                  2          3                                 2100800800002 
+REACTION   ((92-U-235(N,F)56-BA-141,IND,FY,,MXW)/                 2100800800003 
+           (92-U-235(N,F)MASS,CHN,FY,,MXW))                       2100800800004 
+HISTORY    (19810217C)                                            2100800800005 
+ENDBIB               3          0                                 2100800800006 
+NOCOMMON             0          0                                 2100800800007 
+DATA                 3          1                                 2100800800008 
+MASS       DATA       ERR-S                                       2100800800009 
+NO-DIM     NO-DIM     NO-DIM                                      2100800800010 
+ 1.4100E+02 1.3200E-01 2.0000E-02                                 2100800800011 
+ENDDATA              3          0                                 2100800800012 
+ENDSUBENT           11          0                                 2100800899999 
+ENDENTRY             8          0                                 2100899999999 
