@@ -1,478 +1,1402 @@
-ENTRY            41118   20191105                             418441118  0    1 
-SUBENT        41118001   20191105                             418441118  1    1 
-BIB                 14         38                                 41118  1    2 
-INSTITUTE  (4RUSTIL)                                              41118  1    3 
-REFERENCE  ((J,YK,,(1),27,1992)=                                  41118  1    4 
-           (R,INDC(CCP)-349,27,1992))     Main reference          41118  1    5 
-           (R,INDC(CCP)-376,1994) Engl.transl.of YK,,(1),27,1992  41118  1    6 
-           (C,87KIEV,3,315,1987)                                  41118  1    7 
-           ((C,83KIEV,4,381,1983)=                                41118  1    8 
-           (R,INDC(CCP)-235,(4),381,1984)) Vol. IV                41118  1    9 
-           Details of analysis.                                   41118  1   10 
-             Fe-54, Cr-50 spectra on figures.                     41118  1   11 
-REL-REF    (I,,L.I.Klochkova+,C,80KIEV,4,177,1980)=               41118  1   12 
-           (I,,L.I.Klochkova+,R,INDC(CCP)-169,(4),177,1980)       41118  1   13 
-           Details of spectrometer                                41118  1   14 
-AUTHOR     (L.I.Klochkova,B.S.Kovrigin,V.N.Kuritsin)              41118  1   15 
-            V.N.Kuritsin=V.N.Kuritsyn                             41118  1   16 
-TITLE       Investigation of the reactions (n,p) and (n,n'p) on   41118  1   17 
-            Al-27, Si-28, Cr-50, Fe-54, Fe-56, Ni-58 and Ni       41118  1   18 
-            at 14.1 MeV neutron energy                            41118  1   19 
-FACILITY   (VDG,4RUSTIL) NG-200                                   41118  1   20 
-INC-SOURCE (D-T)                                                  41118  1   21 
-METHOD     (EDE)                                                  41118  1   22 
-DETECTOR   (TELES,PROPC,SCIN)                                     41118  1   23 
-PART-DET   (P)                                                    41118  1   24 
-MONITOR    (1-H-1(N,EL)1-H-1,,SIG)                                41118  1   25 
-ERR-ANALYS (DATA-ERR) Error at the probability level 0.68.        41118  1   26 
-           Sources of uncertainties are not mentioned;            41118  1   27 
-           probably statistical only - see Conclusions 2.(c) in   41118  1   28 
-           INDC(CCP)-376,1994 .                                   41118  1   29 
-COMMENT    Of compiler. Number 27 occasionally was not used as    41118  1   30 
-           Subent number in this Entry at initial compilation.    41118  1   31 
-HISTORY    (19930618C)  + + Compiled at the centre - CJD + +      41118  1   32 
-           (20010314A) Date is corrected. References added        41118  1   33 
-           (20010314U) Last checking has been done.               41118  1   34 
-           (20151002A) M.M. Refs.of Engl.translation was added.   41118  1   35 
-           Upper -> lower case correction.                        41118  1   36 
-           STATUS was added in data Subents.                      41118  1   37 
-            ERR-T -> DATA-ERR.                                    41118  1   38 
-           (20191105U) Minor correction in YK ref.                41118  1   39 
-            INDC-CCP-169 , INDC-CCP-235 were added.               41118  1   40 
-ENDBIB              38          0                                 41118  1   41 
-NOCOMMON             0          0                                 41118  1   42 
-ENDSUBENT           41          0                                 41118  199999 
-SUBENT        41118002   20151005                             417141118  2    1 
-BIB                  4          6                                 41118  2    2 
-REACTION   (13-AL-27(N,P)12-MG-27,,SIG)                           41118  2    3 
+ENTRY            41118   20221205                             421141118  0    1 
+SUBENT        41118001   20221205                             421141118  1    1 
+BIB                 15         43                                 41118  1    2 
+TITLE       Investigation of the reactions (n,p) and (n,n'p) on   41118  1    3 
+            27Al, 28Si, 50Cr, 54Fe, 56Fe, 58Ni and Ni at 14.1 MeV 41118  1    4 
+            neutron energy                                        41118  1    5 
+AUTHOR     (L.I.Klochkova,B.S.Kovrigin,V.N.Kuritsin)              41118  1    6 
+            V.N.Kuritsin=V.N.Kuritsyn                             41118  1    7 
+REFERENCE  (R,INDC(CCP)-376,1994) Engl.transl.of YK,,(1),27,1992  41118  1    8 
+           ((J,YK,,(1),27,1992)=                                  41118  1    9 
+           (R,INDC(CCP)-349,27,1992))     Main reference          41118  1   10 
+           (C,87KIEV,3,315,1987)                                  41118  1   11 
+            Al-27, Cr-50, Fe-54,56:                               41118  1   12 
+           CS in Table, figures for (n,p) DA, (n,p)+(n,np) DE,    41118  1   13 
+            the same as in J,YK,,(1),27,1992.                     41118  1   14 
+           ((C,83KIEV,4,381,1983)=                                41118  1   15 
+           (R,INDC(CCP)-235,(4),381,1984)) Vol. IV.               41118  1   16 
+           Details of analysis.                                   41118  1   17 
+             Fe-54, Cr-50 DA/DE spectra on figures.               41118  1   18 
+INSTITUTE  (4RUSTIL)                                              41118  1   19 
+REL-REF    (I,,L.I.Klochkova+,C,80KIEV,4,177,1980)=               41118  1   20 
+           (I,,L.I.Klochkova+,R,INDC(CCP)-169,(4),177,1980)       41118  1   21 
+           Details of spectrometer                                41118  1   22 
+FACILITY   (NGEN,4RUSTIL) NG-200                                  41118  1   23 
+INC-SOURCE (D-T)                                                  41118  1   24 
+METHOD     (EDE)                                                  41118  1   25 
+DETECTOR   (TELES,PROPC,SCIN)                                     41118  1   26 
+PART-DET   (P)                                                    41118  1   27 
+MONITOR    (1-H-1(N,EL)1-H-1,,SIG)                                41118  1   28 
+CORRECTION  Background was measured without sample.               41118  1   29 
+ERR-ANALYS (DATA-ERR) Error at the probability level 0.68.        41118  1   30 
+           Sources of uncertainties are not mentioned;            41118  1   31 
+           probably statistical only - see Conclusion 2.(c) in    41118  1   32 
+           INDC(CCP)-376,1994 .                                   41118  1   33 
+COMMENT    Of compiler. Number 27 occasionally was not used as    41118  1   34 
+           Subent number in this Entry at initial compilation.    41118  1   35 
+HISTORY    (19930618C)  + + Compiled at the centre - CJD + +      41118  1   36 
+           (20010314A) Date is corrected. References added        41118  1   37 
+           (20010314U) Last checking has been done.               41118  1   38 
+           (20151002A) M.M. Refs.of Engl.translation was added.   41118  1   39 
+           Upper -> lower case correction.                        41118  1   40 
+           STATUS was added in data Subents.                      41118  1   41 
+            ERR-T -> DATA-ERR.                                    41118  1   42 
+           (20191105U) Minor correction in YK ref.                41118  1   43 
+            INDC-CCP-169 , INDC-CCP-235 were added.               41118  1   44 
+           (20221205A) Subents 034-046 were added.                41118  1   45 
+ENDBIB              43          0                                 41118  1   46 
+NOCOMMON             0          0                                 41118  1   47 
+ENDSUBENT           46          0                                 41118  199999 
+SUBENT        41118002   20221205                             421141118  2    1 
+BIB                  4         10                                 41118  2    2 
+REACTION   (13-AL-27(N,P)12-MG-27,,SIG,,,DERIV)                   41118  2    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118  2    4 
             density is 10 - 15 milligram/cm2                      41118  2    5 
 ANALYSIS   (INTAD) Integration by angle from 0 to 180 deg;        41118  2    6 
            and multiplied by 2PI.                                 41118  2    7 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118  2    8 
-ENDBIB               6          0                                 41118  2    9 
-NOCOMMON             0          0                                 41118  2   10 
-DATA                 3          1                                 41118  2   11 
-EN         DATA       DATA-ERR                                    41118  2   12 
-MEV        MB         MB                                          41118  2   13 
-       14.1        99.        11.                                 41118  2   14 
-ENDDATA              3          0                                 41118  2   15 
-ENDSUBENT           14          0                                 41118  299999 
-SUBENT        41118003   20151005                             417141118  3    1 
-BIB                  3          4                                 41118  3    2 
-REACTION   (13-AL-27(N,N+P)12-MG-26,,SIG)                         41118  3    3 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118  2    8 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118  2    9 
+           = Table of C,87KIEV,3,315,1987                         41118  2   10 
+           . This Subent supersedes Subent 40699008.              41118  2   11 
+           (DEP,41118043) Angular distribution.                   41118  2   12 
+ENDBIB              10          0                                 41118  2   13 
+NOCOMMON             0          0                                 41118  2   14 
+DATA                 3          1                                 41118  2   15 
+EN         DATA       DATA-ERR                                    41118  2   16 
+MEV        MB         MB                                          41118  2   17 
+       14.1        99.        11.                                 41118  2   18 
+ENDDATA              3          0                                 41118  2   19 
+ENDSUBENT           18          0                                 41118  299999 
+SUBENT        41118003   20221205                             421141118  3    1 
+BIB                  4         10                                 41118  3    2 
+REACTION   (13-AL-27(N,N+P)12-MG-26,,SIG,,,DERIV)                 41118  3    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118  3    4 
             density is 10 - 15 milligram/cm2                      41118  3    5 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118  3    6 
-ENDBIB               4          0                                 41118  3    7 
-NOCOMMON             0          0                                 41118  3    8 
-DATA                 3          1                                 41118  3    9 
-EN         DATA       DATA-ERR                                    41118  3   10 
-MEV        MB         MB                                          41118  3   11 
-       14.1       108.        30.                                 41118  3   12 
-ENDDATA              3          0                                 41118  3   13 
-ENDSUBENT           12          0                                 41118  399999 
-SUBENT        41118004   20151005                             417141118  4    1 
-BIB                  3          5                                 41118  4    2 
-REACTION   ((13-AL-27(N,P)12-MG-27,,SIG)+                         41118  4    3 
-           (13-AL-27(N,N+P)12-MG-26,,SIG))                        41118  4    4 
-SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118  4    5 
-            density is 10 - 15 milligram/cm2                      41118  4    6 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118  4    7 
-ENDBIB               5          0                                 41118  4    8 
-NOCOMMON             0          0                                 41118  4    9 
-DATA                 3          1                                 41118  4   10 
-EN         DATA       DATA-ERR                                    41118  4   11 
-MEV        MB         MB                                          41118  4   12 
-       14.1       207.        32.                                 41118  4   13 
-ENDDATA              3          0                                 41118  4   14 
-ENDSUBENT           13          0                                 41118  499999 
-SUBENT        41118005   20151005                             417141118  5    1 
-BIB                  4          5                                 41118  5    2 
+ANALYSIS   (INTED) DE spectrum was approximated by sum of two     41118  3    6 
+           components - (n,p) and (n,np) and then each was        41118  3    7 
+           integrated.                                            41118  3    8 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118  3    9 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118  3   10 
+           = Table of C,87KIEV,3,315,1987                         41118  3   11 
+           . This Subent supersedes Subent 40699008.              41118  3   12 
+ENDBIB              10          0                                 41118  3   13 
+NOCOMMON             0          0                                 41118  3   14 
+DATA                 3          1                                 41118  3   15 
+EN         DATA       DATA-ERR                                    41118  3   16 
+MEV        MB         MB                                          41118  3   17 
+       14.1       108.        30.                                 41118  3   18 
+ENDDATA              3          0                                 41118  3   19 
+ENDSUBENT           18          0                                 41118  399999 
+SUBENT        41118004   20221205                             421141118  4    1 
+BIB                  5         11                                 41118  4    2 
+REACTION   (13-AL-27(N,X)1-H-1,,SIG)                              41118  4    3 
+SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118  4    4 
+            density is 10 - 15 milligram/cm2                      41118  4    5 
+ANALYSIS   (INTED)                                                41118  4    6 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118  4    7 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118  4    8 
+           = Table of C,87KIEV,3,315,1987                         41118  4    9 
+           . This Subent supersedes Subent 40699008.              41118  4   10 
+           (DEP,41118039) Energy spectrum                         41118  4   11 
+HISTORY    (20221205A) Reaction was corrected:                    41118  4   12 
+            (n,p)+(n,np) -> (n,x)p.                               41118  4   13 
+ENDBIB              11          0                                 41118  4   14 
+NOCOMMON             0          0                                 41118  4   15 
+DATA                 3          1                                 41118  4   16 
+EN         DATA       DATA-ERR                                    41118  4   17 
+MEV        MB         MB                                          41118  4   18 
+       14.1       207.        32.                                 41118  4   19 
+ENDDATA              3          0                                 41118  4   20 
+ENDSUBENT           19          0                                 41118  499999 
+SUBENT        41118005   20221205                             421141118  5    1 
+BIB                  4          7                                 41118  5    2 
 REACTION   (14-SI-28(N,P)13-AL-28,,SIG)                           41118  5    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118  5    4 
             density is 10 - 15 milligram/cm2                      41118  5    5 
 ANALYSIS   (4PI1A)   4PI*SIG(80deg)                               41118  5    6 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118  5    7 
-ENDBIB               5          0                                 41118  5    8 
-NOCOMMON             0          0                                 41118  5    9 
-DATA                 3          1                                 41118  5   10 
-EN         DATA       DATA-ERR                                    41118  5   11 
-MEV        MB         MB                                          41118  5   12 
-       14.1       289.        13.                                 41118  5   13 
-ENDDATA              3          0                                 41118  5   14 
-ENDSUBENT           13          0                                 41118  599999 
-SUBENT        41118006   20151005                             417141118  6    1 
-BIB                  4          6                                 41118  6    2 
-REACTION   (24-CR-50(N,P)23-V-50,,SIG)                            41118  6    3 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118  5    7 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118  5    8 
+           (DEP,41118036) DA/DE at 80 deg angle                   41118  5    9 
+ENDBIB               7          0                                 41118  5   10 
+NOCOMMON             0          0                                 41118  5   11 
+DATA                 3          1                                 41118  5   12 
+EN         DATA       DATA-ERR                                    41118  5   13 
+MEV        MB         MB                                          41118  5   14 
+       14.1       289.        13.                                 41118  5   15 
+ENDDATA              3          0                                 41118  5   16 
+ENDSUBENT           15          0                                 41118  599999 
+SUBENT        41118006   20221205                             421141118  6    1 
+BIB                  4         10                                 41118  6    2 
+REACTION   (24-CR-50(N,P)23-V-50,,SIG,,,DERIV)                    41118  6    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118  6    4 
             density is 10 - 15 milligram/cm2                      41118  6    5 
 ANALYSIS   (INTAD) Integration by angle from 0 to 180 deg;        41118  6    6 
            and multiplied by 2PI.                                 41118  6    7 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118  6    8 
-ENDBIB               6          0                                 41118  6    9 
-NOCOMMON             0          0                                 41118  6   10 
-DATA                 3          1                                 41118  6   11 
-EN         DATA       DATA-ERR                                    41118  6   12 
-MEV        MB         MB                                          41118  6   13 
-       14.1       381.        33.                                 41118  6   14 
-ENDDATA              3          0                                 41118  6   15 
-ENDSUBENT           14          0                                 41118  699999 
-SUBENT        41118007   20151005                             417141118  7    1 
-BIB                  3          4                                 41118  7    2 
-REACTION   (24-CR-50(N,N+P)23-V-49,,SIG)                          41118  7    3 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118  6    8 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118  6    9 
+           = Table of C,87KIEV,3,315,1987                         41118  6   10 
+           . This Subent supersedes Subent 40699009.              41118  6   11 
+           (DEP,41118044) Angular distribution.                   41118  6   12 
+ENDBIB              10          0                                 41118  6   13 
+NOCOMMON             0          0                                 41118  6   14 
+DATA                 3          1                                 41118  6   15 
+EN         DATA       DATA-ERR                                    41118  6   16 
+MEV        MB         MB                                          41118  6   17 
+       14.1       381.        33.                                 41118  6   18 
+ENDDATA              3          0                                 41118  6   19 
+ENDSUBENT           18          0                                 41118  699999 
+SUBENT        41118007   20221205                             421141118  7    1 
+BIB                  4         11                                 41118  7    2 
+REACTION   (24-CR-50(N,N+P)23-V-49,,SIG,,,DERIV)                  41118  7    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118  7    4 
             density is 10 - 15 milligram/cm2                      41118  7    5 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118  7    6 
-ENDBIB               4          0                                 41118  7    7 
-NOCOMMON             0          0                                 41118  7    8 
-DATA                 3          1                                 41118  7    9 
-EN         DATA       DATA-ERR                                    41118  7   10 
-MEV        MB         MB                                          41118  7   11 
-       14.1       212.        42.                                 41118  7   12 
-ENDDATA              3          0                                 41118  7   13 
-ENDSUBENT           12          0                                 41118  799999 
-SUBENT        41118008   20151005                             417141118  8    1 
-BIB                  3          5                                 41118  8    2 
-REACTION   ((24-CR-50(N,P)23-V-50,,SIG)+                          41118  8    3 
-           (24-CR-50(N,N+P)23-V-49,,SIG))                         41118  8    4 
-SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118  8    5 
-            density is 10 - 15 milligram/cm2                      41118  8    6 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118  8    7 
-ENDBIB               5          0                                 41118  8    8 
-NOCOMMON             0          0                                 41118  8    9 
-DATA                 3          1                                 41118  8   10 
-EN         DATA       DATA-ERR                                    41118  8   11 
-MEV        MB         MB                                          41118  8   12 
-       14.1       593.        53.                                 41118  8   13 
-ENDDATA              3          0                                 41118  8   14 
-ENDSUBENT           13          0                                 41118  899999 
-SUBENT        41118009   20151005                             417141118  9    1 
-BIB                  4          6                                 41118  9    2 
-REACTION   (26-FE-54(N,P)25-MN-54,,SIG)                           41118  9    3 
+ANALYSIS   (INTED) DE spectrum was approximated by sum of two     41118  7    6 
+           components - (n,p) and (n,np) and then each was        41118  7    7 
+           integrated.                                            41118  7    8 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118  7    9 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118  7   10 
+           = Table of C,87KIEV,3,315,1987                         41118  7   11 
+           . This Subent supersedes Subent 40699009.              41118  7   12 
+           (DEP,41118040) Energy spectrum                         41118  7   13 
+ENDBIB              11          0                                 41118  7   14 
+NOCOMMON             0          0                                 41118  7   15 
+DATA                 3          1                                 41118  7   16 
+EN         DATA       DATA-ERR                                    41118  7   17 
+MEV        MB         MB                                          41118  7   18 
+       14.1       212.        42.                                 41118  7   19 
+ENDDATA              3          0                                 41118  7   20 
+ENDSUBENT           19          0                                 41118  799999 
+SUBENT        41118008   20221205                             421141118  8    1 
+BIB                  5         11                                 41118  8    2 
+REACTION   (24-CR-50(N,X)1-H-1,,SIG)                              41118  8    3 
+SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118  8    4 
+            density is 10 - 15 milligram/cm2                      41118  8    5 
+ANALYSIS   (INTED)                                                41118  8    6 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118  8    7 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118  8    8 
+           = Table of C,87KIEV,3,315,1987                         41118  8    9 
+           . This Subent supersedes Subent 40699009.              41118  8   10 
+           (DEP,41118040) Energy spectrum                         41118  8   11 
+HISTORY    (20221205A) Reaction was corrected;                    41118  8   12 
+            (n,p)+(n,np) -> (n,x)p.                               41118  8   13 
+ENDBIB              11          0                                 41118  8   14 
+NOCOMMON             0          0                                 41118  8   15 
+DATA                 3          1                                 41118  8   16 
+EN         DATA       DATA-ERR                                    41118  8   17 
+MEV        MB         MB                                          41118  8   18 
+       14.1       593.        53.                                 41118  8   19 
+ENDDATA              3          0                                 41118  8   20 
+ENDSUBENT           19          0                                 41118  899999 
+SUBENT        41118009   20221205                             421141118  9    1 
+BIB                  4         10                                 41118  9    2 
+REACTION   (26-FE-54(N,P)25-MN-54,,SIG,,,DERIV)                   41118  9    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118  9    4 
             density is 10 - 15 milligram/cm2                      41118  9    5 
 ANALYSIS   (INTAD) Integration by angle from 0 to 180 deg;        41118  9    6 
            and multiplied by 2PI.                                 41118  9    7 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118  9    8 
-ENDBIB               6          0                                 41118  9    9 
-NOCOMMON             0          0                                 41118  9   10 
-DATA                 3          1                                 41118  9   11 
-EN         DATA       DATA-ERR                                    41118  9   12 
-MEV        MB         MB                                          41118  9   13 
-       14.1       417.        34.                                 41118  9   14 
-ENDDATA              3          0                                 41118  9   15 
-ENDSUBENT           14          0                                 41118  999999 
-SUBENT        41118010   20151005                             417141118 10    1 
-BIB                  3          4                                 41118 10    2 
-REACTION   (26-FE-54(N,N+P)25-MN-53,,SIG)                         41118 10    3 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118  9    8 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118  9    9 
+           = Table of C,87KIEV,3,315,1987                         41118  9   10 
+           . This Subent supersedes Subent 40699010.              41118  9   11 
+           (DEP,41118045) Angular distribution.                   41118  9   12 
+ENDBIB              10          0                                 41118  9   13 
+NOCOMMON             0          0                                 41118  9   14 
+DATA                 3          1                                 41118  9   15 
+EN         DATA       DATA-ERR                                    41118  9   16 
+MEV        MB         MB                                          41118  9   17 
+       14.1       417.        34.                                 41118  9   18 
+ENDDATA              3          0                                 41118  9   19 
+ENDSUBENT           18          0                                 41118  999999 
+SUBENT        41118010   20221205                             421141118 10    1 
+BIB                  4         11                                 41118 10    2 
+REACTION   (26-FE-54(N,N+P)25-MN-53,,SIG,,,DERIV)                 41118 10    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 10    4 
             density is 10 - 15 milligram/cm2                      41118 10    5 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 10    6 
-ENDBIB               4          0                                 41118 10    7 
-NOCOMMON             0          0                                 41118 10    8 
-DATA                 3          1                                 41118 10    9 
-EN         DATA       DATA-ERR                                    41118 10   10 
-MEV        MB         MB                                          41118 10   11 
-       14.1       240.        30.                                 41118 10   12 
-ENDDATA              3          0                                 41118 10   13 
-ENDSUBENT           12          0                                 41118 1099999 
-SUBENT        41118011   20151005                             417141118 11    1 
-BIB                  3          5                                 41118 11    2 
-REACTION   ((26-FE-54(N,P)25-MN-54,,SIG)+                         41118 11    3 
-           (26-FE-54(N,N+P)25-MN-53,,SIG))                        41118 11    4 
-SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 11    5 
-            density is 10 - 15 milligram/cm2                      41118 11    6 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 11    7 
-ENDBIB               5          0                                 41118 11    8 
-NOCOMMON             0          0                                 41118 11    9 
-DATA                 3          1                                 41118 11   10 
-EN         DATA       DATA-ERR                                    41118 11   11 
-MEV        MB         MB                                          41118 11   12 
-       14.1       657.        43.                                 41118 11   13 
-ENDDATA              3          0                                 41118 11   14 
-ENDSUBENT           13          0                                 41118 1199999 
-SUBENT        41118012   20151005                             417141118 12    1 
-BIB                  4          6                                 41118 12    2 
-REACTION   (26-FE-56(N,P)25-MN-56,,SIG)                           41118 12    3 
+ANALYSIS   (INTED) DE spectrum was approximated by sum of two     41118 10    6 
+           components - (n,p) and (n,np) and then each was        41118 10    7 
+           integrated.                                            41118 10    8 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 10    9 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 10   10 
+           = Table of C,87KIEV,3,315,1987                         41118 10   11 
+           . This Subent supersedes Subent 40699010.              41118 10   12 
+           (DEP,41118041) Energy spectrum.                        41118 10   13 
+ENDBIB              11          0                                 41118 10   14 
+NOCOMMON             0          0                                 41118 10   15 
+DATA                 3          1                                 41118 10   16 
+EN         DATA       DATA-ERR                                    41118 10   17 
+MEV        MB         MB                                          41118 10   18 
+       14.1       240.        30.                                 41118 10   19 
+ENDDATA              3          0                                 41118 10   20 
+ENDSUBENT           19          0                                 41118 1099999 
+SUBENT        41118011   20221205                             421141118 11    1 
+BIB                  5         11                                 41118 11    2 
+REACTION   (26-FE-54(N,X)1-H-1,,SIG)                              41118 11    3 
+SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 11    4 
+            density is 10 - 15 milligram/cm2                      41118 11    5 
+ANALYSIS   (INTED)                                                41118 11    6 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 11    7 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 11    8 
+           = Table of C,87KIEV,3,315,1987                         41118 11    9 
+           . This Subent supersedes Subent 40699010.              41118 11   10 
+           (DEP,41118041) Energy spectrum                         41118 11   11 
+HISTORY    (20221205A) Reaction was corrected;                    41118 11   12 
+            (n,p)+(n,np) -> (n,x)p.                               41118 11   13 
+ENDBIB              11          0                                 41118 11   14 
+NOCOMMON             0          0                                 41118 11   15 
+DATA                 3          1                                 41118 11   16 
+EN         DATA       DATA-ERR                                    41118 11   17 
+MEV        MB         MB                                          41118 11   18 
+       14.1       657.        43.                                 41118 11   19 
+ENDDATA              3          0                                 41118 11   20 
+ENDSUBENT           19          0                                 41118 1199999 
+SUBENT        41118012   20221205                             421141118 12    1 
+BIB                  4          9                                 41118 12    2 
+REACTION   (26-FE-56(N,P)25-MN-56,,SIG,,,DERIV)                   41118 12    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 12    4 
             density is 10 - 15 milligram/cm2                      41118 12    5 
 ANALYSIS    CS was determined as 4PI*SIGavg, where SIGavg is      41118 12    6 
            cross section average for three angles 40,60,80 deg.   41118 12    7 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 12    8 
-ENDBIB               6          0                                 41118 12    9 
-NOCOMMON             0          0                                 41118 12   10 
-DATA                 3          1                                 41118 12   11 
-EN         DATA       DATA-ERR                                    41118 12   12 
-MEV        MB         MB                                          41118 12   13 
-       14.1       139.        25.                                 41118 12   14 
-ENDDATA              3          0                                 41118 12   15 
-ENDSUBENT           14          0                                 41118 1299999 
-SUBENT        41118013   20151005                             417141118 13    1 
-BIB                  3          4                                 41118 13    2 
-REACTION   (26-FE-56(N,N+P)25-MN-55,,SIG)                         41118 13    3 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 12    8 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 12    9 
+           = Table of C,87KIEV,3,315,1987                         41118 12   10 
+           (DEP,41118046) Angular distribution.                   41118 12   11 
+ENDBIB               9          0                                 41118 12   12 
+NOCOMMON             0          0                                 41118 12   13 
+DATA                 3          1                                 41118 12   14 
+EN         DATA       DATA-ERR                                    41118 12   15 
+MEV        MB         MB                                          41118 12   16 
+       14.1       139.        25.                                 41118 12   17 
+ENDDATA              3          0                                 41118 12   18 
+ENDSUBENT           17          0                                 41118 1299999 
+SUBENT        41118013   20221205                             421141118 13    1 
+BIB                  4         10                                 41118 13    2 
+REACTION   (26-FE-56(N,N+P)25-MN-55,,SIG,,,DERIV)                 41118 13    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 13    4 
             density is 10 - 15 milligram/cm2                      41118 13    5 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 13    6 
-ENDBIB               4          0                                 41118 13    7 
-NOCOMMON             0          0                                 41118 13    8 
-DATA                 3          1                                 41118 13    9 
-EN         DATA       DATA-ERR                                    41118 13   10 
-MEV        MB         MB                                          41118 13   11 
-       14.1        4.6        1.2                                 41118 13   12 
-ENDDATA              3          0                                 41118 13   13 
-ENDSUBENT           12          0                                 41118 1399999 
-SUBENT        41118014   20151005                             417141118 14    1 
-BIB                  3          5                                 41118 14    2 
-REACTION   ((26-FE-56(N,P)25-MN-56,,SIG)+                         41118 14    3 
-           (26-FE-56(N,N+P)25-MN-55,,SIG))                        41118 14    4 
-SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 14    5 
-            density is 10 - 15 milligram/cm2                      41118 14    6 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 14    7 
-ENDBIB               5          0                                 41118 14    8 
-NOCOMMON             0          0                                 41118 14    9 
-DATA                 3          1                                 41118 14   10 
-EN         DATA       DATA-ERR                                    41118 14   11 
-MEV        MB         MB                                          41118 14   12 
-       14.1       144.        25.                                 41118 14   13 
-ENDDATA              3          0                                 41118 14   14 
-ENDSUBENT           13          0                                 41118 1499999 
-SUBENT        41118015   20151005                             417141118 15    1 
-BIB                  4          5                                 41118 15    2 
-REACTION   (28-NI-58(N,P)27-CO-58,,SIG)                           41118 15    3 
+ANALYSIS   (INTED) DE spectrum was approximated by sum of two     41118 13    6 
+           components - (n,p) and (n,np) and then each was        41118 13    7 
+           integrated.                                            41118 13    8 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 13    9 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 13   10 
+           = Table of C,87KIEV,3,315,1987                         41118 13   11 
+           (DEP,41118042) Energy spectrum.                        41118 13   12 
+ENDBIB              10          0                                 41118 13   13 
+NOCOMMON             0          0                                 41118 13   14 
+DATA                 3          1                                 41118 13   15 
+EN         DATA       DATA-ERR                                    41118 13   16 
+MEV        MB         MB                                          41118 13   17 
+       14.1        4.6        1.2                                 41118 13   18 
+ENDDATA              3          0                                 41118 13   19 
+ENDSUBENT           18          0                                 41118 1399999 
+SUBENT        41118014   20221205                             421141118 14    1 
+BIB                  5         10                                 41118 14    2 
+REACTION   (26-FE-56(N,X)1-H-1,,SIG)                              41118 14    3 
+SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 14    4 
+            density is 10 - 15 milligram/cm2                      41118 14    5 
+ANALYSIS   (INTED)                                                41118 14    6 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 14    7 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 14    8 
+           = Table of C,87KIEV,3,315,1987                         41118 14    9 
+           (DEP,41118042) Energy spectrum.                        41118 14   10 
+HISTORY    (20221205A) Reaction was corrected:                    41118 14   11 
+            (n,p)+(n,np) -> (n,x)p.                               41118 14   12 
+ENDBIB              10          0                                 41118 14   13 
+NOCOMMON             0          0                                 41118 14   14 
+DATA                 3          1                                 41118 14   15 
+EN         DATA       DATA-ERR                                    41118 14   16 
+MEV        MB         MB                                          41118 14   17 
+       14.1       144.        25.                                 41118 14   18 
+ENDDATA              3          0                                 41118 14   19 
+ENDSUBENT           18          0                                 41118 1499999 
+SUBENT        41118015   20221205                             421141118 15    1 
+BIB                  4          6                                 41118 15    2 
+REACTION   (28-NI-58(N,P)27-CO-58,,SIG,,,DERIV)                   41118 15    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 15    4 
             density is 10 - 15 milligram/cm2                      41118 15    5 
 ANALYSIS   (4PI1A) 4PI*SIG(80deg)                                 41118 15    6 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 15    7 
-ENDBIB               5          0                                 41118 15    8 
-NOCOMMON             0          0                                 41118 15    9 
-DATA                 3          1                                 41118 15   10 
-EN         DATA       DATA-ERR                                    41118 15   11 
-MEV        MB         MB                                          41118 15   12 
-       14.1       606.        32.                                 41118 15   13 
-ENDDATA              3          0                                 41118 15   14 
-ENDSUBENT           13          0                                 41118 1599999 
-SUBENT        41118016   20151005                             417141118 16    1 
-BIB                  3          4                                 41118 16    2 
-REACTION   (28-NI-58(N,N+P)27-CO-57,,SIG)                         41118 16    3 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 15    7 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 15    8 
+ENDBIB               6          0                                 41118 15    9 
+NOCOMMON             0          0                                 41118 15   10 
+DATA                 3          1                                 41118 15   11 
+EN         DATA       DATA-ERR                                    41118 15   12 
+MEV        MB         MB                                          41118 15   13 
+       14.1       606.        32.                                 41118 15   14 
+ENDDATA              3          0                                 41118 15   15 
+ENDSUBENT           14          0                                 41118 1599999 
+SUBENT        41118016   20221205                             421141118 16    1 
+BIB                  4          9                                 41118 16    2 
+REACTION   (28-NI-58(N,N+P)27-CO-57,,SIG,,,DERIV)                 41118 16    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 16    4 
             density is 10 - 15 milligram/cm2                      41118 16    5 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 16    6 
-ENDBIB               4          0                                 41118 16    7 
-NOCOMMON             0          0                                 41118 16    8 
-DATA                 3          1                                 41118 16    9 
-EN         DATA       DATA-ERR                                    41118 16   10 
-MEV        MB         MB                                          41118 16   11 
-       14.1       358.        22.                                 41118 16   12 
-ENDDATA              3          0                                 41118 16   13 
-ENDSUBENT           12          0                                 41118 1699999 
-SUBENT        41118017   20151005                             417141118 17    1 
-BIB                  3          5                                 41118 17    2 
-REACTION   ((28-NI-58(N,P)27-CO-58,,SIG)+                         41118 17    3 
-           (28-NI-58(N,N+P)27-CO-57,,SIG))                        41118 17    4 
-SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 17    5 
-            density is 10 - 15 milligram/cm2                      41118 17    6 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 17    7 
-ENDBIB               5          0                                 41118 17    8 
-NOCOMMON             0          0                                 41118 17    9 
-DATA                 3          1                                 41118 17   10 
-EN         DATA       DATA-ERR                                    41118 17   11 
-MEV        MB         MB                                          41118 17   12 
-       14.1       964.        39.                                 41118 17   13 
-ENDDATA              3          0                                 41118 17   14 
-ENDSUBENT           13          0                                 41118 1799999 
-SUBENT        41118018   20151005                             417141118 18    1 
-BIB                  6          7                                 41118 18    2 
-REACTION   (28-NI-0(N,P),,SIG)                                    41118 18    3 
+ANALYSIS   (INTED,INTAD) DE spectrum was approximated by sum of tw41118 16    6 
+           components - (n,p) and (n,np) and then each was        41118 16    7 
+           integrated.                                            41118 16    8 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 16    9 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 16   10 
+           (DEP,41118037) DA/DE                                   41118 16   11 
+ENDBIB               9          0                                 41118 16   12 
+NOCOMMON             0          0                                 41118 16   13 
+DATA                 3          1                                 41118 16   14 
+EN         DATA       DATA-ERR                                    41118 16   15 
+MEV        MB         MB                                          41118 16   16 
+       14.1       358.        22.                                 41118 16   17 
+ENDDATA              3          0                                 41118 16   18 
+ENDSUBENT           17          0                                 41118 1699999 
+SUBENT        41118017   20221205                             421141118 17    1 
+BIB                  5          9                                 41118 17    2 
+REACTION   (28-NI-58(N,X)1-H-1,,SIG)                              41118 17    3 
+SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 17    4 
+            density is 10 - 15 milligram/cm2                      41118 17    5 
+ANALYSIS   (INTED,INTAD)                                          41118 17    6 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 17    7 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 17    8 
+           (DEP,41118037) DA/DE                                   41118 17    9 
+HISTORY    (20221205A) Reaction was corrected:                    41118 17   10 
+            (n,p)+(n,np) -> (n,x)p.                               41118 17   11 
+ENDBIB               9          0                                 41118 17   12 
+NOCOMMON             0          0                                 41118 17   13 
+DATA                 3          1                                 41118 17   14 
+EN         DATA       DATA-ERR                                    41118 17   15 
+MEV        MB         MB                                          41118 17   16 
+       14.1       964.        39.                                 41118 17   17 
+ENDDATA              3          0                                 41118 17   18 
+ENDSUBENT           17          0                                 41118 1799999 
+SUBENT        41118018   20221205                             421141118 18    1 
+BIB                  5         11                                 41118 18    2 
+REACTION   (28-NI-0(N,P),,SIG,,,DERIV)                            41118 18    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 18    4 
             density is 10 - 15 milligram/cm2                      41118 18    5 
-ANALYSIS   (4PI1A)  4PI*SIG(80deg)                                41118 18    6 
-COMMENT     Residual nucleus is given arbitrarily                 41118 18    7 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 18    8 
-HISTORY    (20151005A) M.M. 27-CO-58 was deleted from SF4         41118 18    9 
-ENDBIB               7          0                                 41118 18   10 
-NOCOMMON             0          0                                 41118 18   11 
-DATA                 3          1                                 41118 18   12 
-EN         DATA       DATA-ERR                                    41118 18   13 
-MEV        MB         MB                                          41118 18   14 
-       14.1       432.        32.                                 41118 18   15 
-ENDDATA              3          0                                 41118 18   16 
-ENDSUBENT           15          0                                 41118 1899999 
-SUBENT        41118019   20151005                             417141118 19    1 
-BIB                  5          6                                 41118 19    2 
-REACTION   (28-NI-0(N,N+P),,SIG)                                  41118 19    3 
+ANALYSIS   (INTED,4PI1A)  4PI*SIG(80deg)                          41118 18    6 
+                  Spectrum was approximated by sum of two         41118 18    7 
+           components - (n,p) and (n,np) and then each was        41118 18    8 
+           integrated.                                            41118 18    9 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 18   10 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 18   11 
+           (DEP,41118038) DA/DE                                   41118 18   12 
+HISTORY    (20151005A) M.M. 27-CO-58 was deleted from SF4         41118 18   13 
+ENDBIB              11          0                                 41118 18   14 
+NOCOMMON             0          0                                 41118 18   15 
+DATA                 3          1                                 41118 18   16 
+EN         DATA       DATA-ERR                                    41118 18   17 
+MEV        MB         MB                                          41118 18   18 
+       14.1       432.        32.                                 41118 18   19 
+ENDDATA              3          0                                 41118 18   20 
+ENDSUBENT           19          0                                 41118 1899999 
+SUBENT        41118019   20221205                             421141118 19    1 
+BIB                  5         10                                 41118 19    2 
+REACTION   (28-NI-0(N,N+P),,SIG,,,DERIV)                          41118 19    3 
 SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 19    4 
             density is 10 - 15 milligram/cm2                      41118 19    5 
-COMMENT     Residual nucleus is given arbitrarily                 41118 19    6 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 19    7 
-HISTORY    (20151005A) M.M. 27-CO-58 was deleted from SF4         41118 19    8 
-ENDBIB               6          0                                 41118 19    9 
-NOCOMMON             0          0                                 41118 19   10 
-DATA                 3          1                                 41118 19   11 
-EN         DATA       DATA-ERR                                    41118 19   12 
-MEV        MB         MB                                          41118 19   13 
-       14.1       242.        35.                                 41118 19   14 
-ENDDATA              3          0                                 41118 19   15 
-ENDSUBENT           14          0                                 41118 1999999 
-SUBENT        41118020   20151005                             417141118 20    1 
-BIB                  5          7                                 41118 20    2 
-REACTION   ((28-NI-0(N,P),,SIG)+                                  41118 20    3 
-           (28-NI-0(N,N+P),,SIG))                                 41118 20    4 
-SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 20    5 
-            density is 10 - 15 milligram/cm2                      41118 20    6 
-COMMENT     Residual nucleus is given arbitrarily                 41118 20    7 
-STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994                  41118 20    8 
-HISTORY    (20151005A) M.M. 27-CO-58 was deleted from SF4         41118 20    9 
-ENDBIB               7          0                                 41118 20   10 
-NOCOMMON             0          0                                 41118 20   11 
-DATA                 3          1                                 41118 20   12 
-EN         DATA       DATA-ERR                                    41118 20   13 
-MEV        MB         MB                                          41118 20   14 
-       14.1       674.        47.                                 41118 20   15 
-ENDDATA              3          0                                 41118 20   16 
-ENDSUBENT           15          0                                 41118 2099999 
-SUBENT        41118021   20151005                             417141118 21    1 
-BIB                  2          2                                 41118 21    2 
+ANALYSIS   (INTAD,INTED) Spectrum was approximated by sum of two  41118 19    6 
+           components - (n,p) and (n,np) and then each was        41118 19    7 
+           integrated.                                            41118 19    8 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 19    9 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 19   10 
+           (DEP,41118038) DA/DE                                   41118 19   11 
+HISTORY    (20151005A) M.M. 27-CO-58 was deleted from SF4         41118 19   12 
+ENDBIB              10          0                                 41118 19   13 
+NOCOMMON             0          0                                 41118 19   14 
+DATA                 3          1                                 41118 19   15 
+EN         DATA       DATA-ERR                                    41118 19   16 
+MEV        MB         MB                                          41118 19   17 
+       14.1       242.        35.                                 41118 19   18 
+ENDDATA              3          0                                 41118 19   19 
+ENDSUBENT           18          0                                 41118 1999999 
+SUBENT        41118020   20221205                             421141118 20    1 
+BIB                  5         10                                 41118 20    2 
+REACTION   (28-NI-0(N,X)1-H-1,,SIG)                               41118 20    3 
+SAMPLE      Cylindrical sample 30 mm in diameter, surface         41118 20    4 
+            density is 10 - 15 milligram/cm2                      41118 20    5 
+ANALYSIS   (INTAD,INTED)                                          41118 20    6 
+STATUS     (TABLE) Table 1 of INDC(CCP)-376,1994 (English)        41118 20    7 
+           = Table 1 of INDC(CCP)-349,27,1992 (Russian)           41118 20    8 
+           (DEP,41118038) DA/DE                                   41118 20    9 
+HISTORY    (20151005A) M.M. 27-CO-58 was deleted from SF4         41118 20   10 
+           (20221205A) Reaction was corrected:                    41118 20   11 
+            (n,p)+(n,np) -> (n,x)p.                               41118 20   12 
+ENDBIB              10          0                                 41118 20   13 
+NOCOMMON             0          0                                 41118 20   14 
+DATA                 3          1                                 41118 20   15 
+EN         DATA       DATA-ERR                                    41118 20   16 
+MEV        MB         MB                                          41118 20   17 
+       14.1       674.        47.                                 41118 20   18 
+ENDDATA              3          0                                 41118 20   19 
+ENDSUBENT           18          0                                 41118 2099999 
+SUBENT        41118021   20221205                             421141118 21    1 
+BIB                  2          3                                 41118 21    2 
 REACTION   (12-MG-27(0,0),,TEM)                                   41118 21    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 21    4 
-ENDBIB               2          0                                 41118 21    5 
-NOCOMMON             0          0                                 41118 21    6 
-DATA                 2          1                                 41118 21    7 
-DATA       DATA-ERR                                               41118 21    8 
-MEV        MEV                                                    41118 21    9 
-       1.68       0.07                                            41118 21   10 
-ENDDATA              3          0                                 41118 21   11 
-ENDSUBENT           10          0                                 41118 2199999 
-SUBENT        41118022   20151005                             417141118 22    1 
-BIB                  2          2                                 41118 22    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 21    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 21    5 
+ENDBIB               3          0                                 41118 21    6 
+NOCOMMON             0          0                                 41118 21    7 
+DATA                 2          1                                 41118 21    8 
+DATA       DATA-ERR                                               41118 21    9 
+MEV        MEV                                                    41118 21   10 
+       1.68       0.07                                            41118 21   11 
+ENDDATA              3          0                                 41118 21   12 
+ENDSUBENT           11          0                                 41118 2199999 
+SUBENT        41118022   20221205                             421141118 22    1 
+BIB                  2          3                                 41118 22    2 
 REACTION   (13-AL-28(0,0),,TEM)                                   41118 22    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 22    4 
-ENDBIB               2          0                                 41118 22    5 
-NOCOMMON             0          0                                 41118 22    6 
-DATA                 2          1                                 41118 22    7 
-DATA       DATA-ERR                                               41118 22    8 
-MEV        MEV                                                    41118 22    9 
-        2.1        0.3                                            41118 22   10 
-ENDDATA              3          0                                 41118 22   11 
-ENDSUBENT           10          0                                 41118 2299999 
-SUBENT        41118023   20151005                             417141118 23    1 
-BIB                  2          2                                 41118 23    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 22    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 22    5 
+ENDBIB               3          0                                 41118 22    6 
+NOCOMMON             0          0                                 41118 22    7 
+DATA                 2          1                                 41118 22    8 
+DATA       DATA-ERR                                               41118 22    9 
+MEV        MEV                                                    41118 22   10 
+        2.1        0.3                                            41118 22   11 
+ENDDATA              3          0                                 41118 22   12 
+ENDSUBENT           11          0                                 41118 2299999 
+SUBENT        41118023   20221205                             421141118 23    1 
+BIB                  2          3                                 41118 23    2 
 REACTION   (23-V-50(0,0),,TEM)                                    41118 23    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 23    4 
-ENDBIB               2          0                                 41118 23    5 
-NOCOMMON             0          0                                 41118 23    6 
-DATA                 2          1                                 41118 23    7 
-DATA       DATA-ERR                                               41118 23    8 
-MEV        MEV                                                    41118 23    9 
-       1.42       0.06                                            41118 23   10 
-ENDDATA              3          0                                 41118 23   11 
-ENDSUBENT           10          0                                 41118 2399999 
-SUBENT        41118024   20151005                             417141118 24    1 
-BIB                  2          2                                 41118 24    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 23    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 23    5 
+ENDBIB               3          0                                 41118 23    6 
+NOCOMMON             0          0                                 41118 23    7 
+DATA                 2          1                                 41118 23    8 
+DATA       DATA-ERR                                               41118 23    9 
+MEV        MEV                                                    41118 23   10 
+       1.42       0.06                                            41118 23   11 
+ENDDATA              3          0                                 41118 23   12 
+ENDSUBENT           11          0                                 41118 2399999 
+SUBENT        41118024   20221205                             421141118 24    1 
+BIB                  2          3                                 41118 24    2 
 REACTION   (25-MN-54(0,0),,TEM)                                   41118 24    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 24    4 
-ENDBIB               2          0                                 41118 24    5 
-NOCOMMON             0          0                                 41118 24    6 
-DATA                 2          1                                 41118 24    7 
-DATA       DATA-ERR                                               41118 24    8 
-MEV        MEV                                                    41118 24    9 
-       1.53       0.01                                            41118 24   10 
-ENDDATA              3          0                                 41118 24   11 
-ENDSUBENT           10          0                                 41118 2499999 
-SUBENT        41118025   20151005                             417141118 25    1 
-BIB                  2          2                                 41118 25    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 24    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 24    5 
+ENDBIB               3          0                                 41118 24    6 
+NOCOMMON             0          0                                 41118 24    7 
+DATA                 2          1                                 41118 24    8 
+DATA       DATA-ERR                                               41118 24    9 
+MEV        MEV                                                    41118 24   10 
+       1.53       0.01                                            41118 24   11 
+ENDDATA              3          0                                 41118 24   12 
+ENDSUBENT           11          0                                 41118 2499999 
+SUBENT        41118025   20221205                             421141118 25    1 
+BIB                  2          3                                 41118 25    2 
 REACTION   (25-MN-56(0,0),,TEM)                                   41118 25    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 25    4 
-ENDBIB               2          0                                 41118 25    5 
-NOCOMMON             0          0                                 41118 25    6 
-DATA                 2          1                                 41118 25    7 
-DATA       DATA-ERR                                               41118 25    8 
-MEV        MEV                                                    41118 25    9 
-       1.41       0.02                                            41118 25   10 
-ENDDATA              3          0                                 41118 25   11 
-ENDSUBENT           10          0                                 41118 2599999 
-SUBENT        41118026   20151005                             417141118 26    1 
-BIB                  2          2                                 41118 26    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 25    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 25    5 
+ENDBIB               3          0                                 41118 25    6 
+NOCOMMON             0          0                                 41118 25    7 
+DATA                 2          1                                 41118 25    8 
+DATA       DATA-ERR                                               41118 25    9 
+MEV        MEV                                                    41118 25   10 
+       1.41       0.02                                            41118 25   11 
+ENDDATA              3          0                                 41118 25   12 
+ENDSUBENT           11          0                                 41118 2599999 
+SUBENT        41118026   20221205                             421141118 26    1 
+BIB                  2          3                                 41118 26    2 
 REACTION   (27-CO-58(0,0),,TEM)                                   41118 26    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 26    4 
-ENDBIB               2          0                                 41118 26    5 
-NOCOMMON             0          0                                 41118 26    6 
-DATA                 2          1                                 41118 26    7 
-DATA       DATA-ERR                                               41118 26    8 
-MEV        MEV                                                    41118 26    9 
-        1.5        0.1                                            41118 26   10 
-ENDDATA              3          0                                 41118 26   11 
-ENDSUBENT           10          0                                 41118 2699999 
-SUBENT        41118028   20151005                             417141118 28    1 
-BIB                  2          2                                 41118 28    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 26    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 26    5 
+ENDBIB               3          0                                 41118 26    6 
+NOCOMMON             0          0                                 41118 26    7 
+DATA                 2          1                                 41118 26    8 
+DATA       DATA-ERR                                               41118 26    9 
+MEV        MEV                                                    41118 26   10 
+        1.5        0.1                                            41118 26   11 
+ENDDATA              3          0                                 41118 26   12 
+ENDSUBENT           11          0                                 41118 2699999 
+SUBENT        41118028   20221205                             421141118 28    1 
+BIB                  2          3                                 41118 28    2 
 REACTION   (12-MG-27(0,0),,LDP)                                   41118 28    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 28    4 
-ENDBIB               2          0                                 41118 28    5 
-NOCOMMON             0          0                                 41118 28    6 
-DATA                 2          1                                 41118 28    7 
-DATA       DATA-ERR                                               41118 28    8 
-1/MEV      1/MEV                                                  41118 28    9 
-       3.98       0.33                                            41118 28   10 
-ENDDATA              3          0                                 41118 28   11 
-ENDSUBENT           10          0                                 41118 2899999 
-SUBENT        41118029   20151005                             417141118 29    1 
-BIB                  2          2                                 41118 29    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 28    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 28    5 
+ENDBIB               3          0                                 41118 28    6 
+NOCOMMON             0          0                                 41118 28    7 
+DATA                 2          1                                 41118 28    8 
+DATA       DATA-ERR                                               41118 28    9 
+1/MEV      1/MEV                                                  41118 28   10 
+       3.98       0.33                                            41118 28   11 
+ENDDATA              3          0                                 41118 28   12 
+ENDSUBENT           11          0                                 41118 2899999 
+SUBENT        41118029   20221205                             421141118 29    1 
+BIB                  2          3                                 41118 29    2 
 REACTION   (13-AL-28(0,0),,LDP)                                   41118 29    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 29    4 
-ENDBIB               2          0                                 41118 29    5 
-NOCOMMON             0          0                                 41118 29    6 
-DATA                 2          1                                 41118 29    7 
-DATA       DATA-ERR                                               41118 29    8 
-1/MEV      1/MEV                                                  41118 29    9 
-        2.7         1.                                            41118 29   10 
-ENDDATA              3          0                                 41118 29   11 
-ENDSUBENT           10          0                                 41118 2999999 
-SUBENT        41118030   20151005                             417141118 30    1 
-BIB                  2          2                                 41118 30    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 29    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 29    5 
+ENDBIB               3          0                                 41118 29    6 
+NOCOMMON             0          0                                 41118 29    7 
+DATA                 2          1                                 41118 29    8 
+DATA       DATA-ERR                                               41118 29    9 
+1/MEV      1/MEV                                                  41118 29   10 
+        2.7         1.                                            41118 29   11 
+ENDDATA              3          0                                 41118 29   12 
+ENDSUBENT           11          0                                 41118 2999999 
+SUBENT        41118030   20221205                             421141118 30    1 
+BIB                  2          3                                 41118 30    2 
 REACTION   (23-V-50(0,0),,LDP)                                    41118 30    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 30    4 
-ENDBIB               2          0                                 41118 30    5 
-NOCOMMON             0          0                                 41118 30    6 
-DATA                 2          1                                 41118 30    7 
-DATA       DATA-ERR                                               41118 30    8 
-1/MEV      1/MEV                                                  41118 30    9 
-       5.69       0.45                                            41118 30   10 
-ENDDATA              3          0                                 41118 30   11 
-ENDSUBENT           10          0                                 41118 3099999 
-SUBENT        41118031   20151005                             417141118 31    1 
-BIB                  2          2                                 41118 31    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 30    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 30    5 
+ENDBIB               3          0                                 41118 30    6 
+NOCOMMON             0          0                                 41118 30    7 
+DATA                 2          1                                 41118 30    8 
+DATA       DATA-ERR                                               41118 30    9 
+1/MEV      1/MEV                                                  41118 30   10 
+       5.69       0.45                                            41118 30   11 
+ENDDATA              3          0                                 41118 30   12 
+ENDSUBENT           11          0                                 41118 3099999 
+SUBENT        41118031   20221205                             421141118 31    1 
+BIB                  2          3                                 41118 31    2 
 REACTION   (25-MN-54(0,0),,LDP)                                   41118 31    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 31    4 
-ENDBIB               2          0                                 41118 31    5 
-NOCOMMON             0          0                                 41118 31    6 
-DATA                 2          1                                 41118 31    7 
-DATA       DATA-ERR                                               41118 31    8 
-1/MEV      1/MEV                                                  41118 31    9 
-       5.11       0.24                                            41118 31   10 
-ENDDATA              3          0                                 41118 31   11 
-ENDSUBENT           10          0                                 41118 3199999 
-SUBENT        41118032   20151005                             417141118 32    1 
-BIB                  2          2                                 41118 32    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 31    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 31    5 
+ENDBIB               3          0                                 41118 31    6 
+NOCOMMON             0          0                                 41118 31    7 
+DATA                 2          1                                 41118 31    8 
+DATA       DATA-ERR                                               41118 31    9 
+1/MEV      1/MEV                                                  41118 31   10 
+       5.11       0.24                                            41118 31   11 
+ENDDATA              3          0                                 41118 31   12 
+ENDSUBENT           11          0                                 41118 3199999 
+SUBENT        41118032   20221205                             421141118 32    1 
+BIB                  2          3                                 41118 32    2 
 REACTION   (25-MN-56(0,0),,LDP)                                   41118 32    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 32    4 
-ENDBIB               2          0                                 41118 32    5 
-NOCOMMON             0          0                                 41118 32    6 
-DATA                 2          1                                 41118 32    7 
-DATA       DATA-ERR                                               41118 32    8 
-1/MEV      1/MEV                                                  41118 32    9 
-       5.74       0.24                                            41118 32   10 
-ENDDATA              3          0                                 41118 32   11 
-ENDSUBENT           10          0                                 41118 3299999 
-SUBENT        41118033   20151005                             417141118 33    1 
-BIB                  2          2                                 41118 33    2 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 32    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 32    5 
+ENDBIB               3          0                                 41118 32    6 
+NOCOMMON             0          0                                 41118 32    7 
+DATA                 2          1                                 41118 32    8 
+DATA       DATA-ERR                                               41118 32    9 
+1/MEV      1/MEV                                                  41118 32   10 
+       5.74       0.24                                            41118 32   11 
+ENDDATA              3          0                                 41118 32   12 
+ENDSUBENT           11          0                                 41118 3299999 
+SUBENT        41118033   20221205                             421141118 33    1 
+BIB                  2          3                                 41118 33    2 
 REACTION   (27-CO-58(0,0),,LDP)                                   41118 33    3 
-STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994                  41118 33    4 
-ENDBIB               2          0                                 41118 33    5 
-NOCOMMON             0          0                                 41118 33    6 
-DATA                 2          1                                 41118 33    7 
-DATA       DATA-ERR                                               41118 33    8 
-1/MEV      1/MEV                                                  41118 33    9 
-       5.15       0.55                                            41118 33   10 
-ENDDATA              3          0                                 41118 33   11 
-ENDSUBENT           10          0                                 41118 3399999 
-ENDENTRY            32          0                                 4111899999999 
+STATUS     (TABLE) Table 2 of INDC(CCP)-376,1994 (English)        41118 33    4 
+           = Table 2 of INDC(CCP)-349,27,1992 (Russian)           41118 33    5 
+ENDBIB               3          0                                 41118 33    6 
+NOCOMMON             0          0                                 41118 33    7 
+DATA                 2          1                                 41118 33    8 
+DATA       DATA-ERR                                               41118 33    9 
+1/MEV      1/MEV                                                  41118 33   10 
+       5.15       0.55                                            41118 33   11 
+ENDDATA              3          0                                 41118 33   12 
+ENDSUBENT           11          0                                 41118 3399999 
+SUBENT        41118034   20221205                             421141118 34    1 
+BIB                  4          6                                 41118 34    2 
+REACTION   (24-CR-50(N,X)1-H-1,,DA/DE)  (n,p)+(n,np)              41118 34    3 
+ERR-ANALYS . Quantization errors:                                 41118 34    4 
+            scale X - 0.015 MeV, scale Y - 0.015 mb/sr/MeV.       41118 34    5 
+STATUS     (CURVE) Figures (upper) in INDC(CCP)-235,(4),381,1984. 41118 34    6 
+           . This Subent supersedes Subent 40699003.              41118 34    7 
+HISTORY    (20221205C) Subent was added.                          41118 34    8 
+ENDBIB               6          0                                 41118 34    9 
+COMMON               3          3                                 41118 34   10 
+EN         E-ERR-DIG  ERR-DIG                                     41118 34   11 
+MEV        MEV        MB/SR/MEV                                   41118 34   12 
+   14.1     0.026       0.022                                     41118 34   13 
+ENDCOMMON            3          0                                 41118 34   14 
+DATA                 3         86                                 41118 34   15 
+ANG-CM     E-CM       DATA-CM                                     41118 34   16 
+ADEG       MEV        MB/SR/MEV                                   41118 34   17 
+ 40.           2.670      9.745                                   41118 34   18 
+ 40.           2.853     10.674                                   41118 34   19 
+ 40.           3.173     10.251                                   41118 34   20 
+ 40.           3.371      9.289                                   41118 34   21 
+ 40.           3.691      8.806                                   41118 34   22 
+ 40.           3.920      8.083                                   41118 34   23 
+ 40.           4.179      7.420                                   41118 34   24 
+ 40.           4.436      6.397                                   41118 34   25 
+ 40.           4.754      5.794                                   41118 34   26 
+ 40.           4.940      6.964                                   41118 34   27 
+ 40.           5.247      4.949                                   41118 34   28 
+ 40.           5.541      4.977                                   41118 34   29 
+ 40.           5.743      4.495                                   41118 34   30 
+ 40.           5.977      4.343                                   41118 34   31 
+ 40.           6.274      4.791                                   41118 34   32 
+ 40.           6.534      4.248                                   41118 34   33 
+ 40.           6.758      2.835                                   41118 34   34 
+ 40.           7.051      2.682                                   41118 34   35 
+ 40.           7.260      3.161                                   41118 34   36 
+ 40.           7.499      3.640                                   41118 34   37 
+ 40.           7.763      3.668                                   41118 34   38 
+ 40.           7.997      3.425                                   41118 34   39 
+ 40.           8.256      2.763                                   41118 34   40 
+ 40.           8.548      2.550                                   41118 34   41 
+ 40.           8.817      3.119                                   41118 34   42 
+ 40.           9.044      2.186                                   41118 34   43 
+ 40.           9.274      1.433                                   41118 34   44 
+ 40.           9.509      1.521                                   41118 34   45 
+ 40.          10.270      1.185                                   41118 34   46 
+ 40.          10.798      0.970                                   41118 34   47 
+ 40.          11.003      0.969                                   41118 34   48 
+ 40.          11.237      0.847                                   41118 34   49 
+ 40.          11.501      0.754                                   41118 34   50 
+ 40.          11.769      1.173                                   41118 34   51 
+ 40.          12.001      0.840                                   41118 34   52 
+ 40.          12.262      0.448                                   41118 34   53 
+ 40.          12.498      0.506                                   41118 34   54 
+ 40.          12.789      0.173                                   41118 34   55 
+ 40.          13.024      0.111                                   41118 34   56 
+ 40.          13.523      0.077                                   41118 34   57 
+ 40.          13.787      0.075                                   41118 34   58 
+ 40.          14.022      0.073                                   41118 34   59 
+ 60.           2.788     12.386                                   41118 34   60 
+ 60.           2.996     12.596                                   41118 34   61 
+ 60.           3.252     10.366                                   41118 34   62 
+ 60.           3.490     10.968                                   41118 34   63 
+ 60.           3.718      9.129                                   41118 34   64 
+ 60.           3.951      8.285                                   41118 34   65 
+ 60.           4.273      7.681                                   41118 34   66 
+ 60.           4.472      6.114                                   41118 34   67 
+ 60.           4.792      4.968                                   41118 34   68 
+ 60.           5.266      5.478                                   41118 34   69 
+ 60.           5.528      4.663                                   41118 34   70 
+ 60.           5.761      3.759                                   41118 34   71 
+ 60.           5.944      5.083                                   41118 34   72 
+ 60.           6.234      3.937                                   41118 34   73 
+ 60.           6.501      4.297                                   41118 34   74 
+ 60.           6.734      3.573                                   41118 34   75 
+ 60.           7.025      2.578                                   41118 34   76 
+ 60.           7.292      2.968                                   41118 34   77 
+ 60.           7.500      3.208                                   41118 34   78 
+ 60.           7.792      2.484                                   41118 34   79 
+ 60.           7.999      2.784                                   41118 34   80 
+ 60.           8.263      2.331                                   41118 34   81 
+ 60.           8.501      2.722                                   41118 34   82 
+ 60.           8.737      2.811                                   41118 34   83 
+ 60.           8.968      1.515                                   41118 34   84 
+ 60.           9.205      1.634                                   41118 34   85 
+ 60.           9.467      1.031                                   41118 34   86 
+ 60.           9.705      1.421                                   41118 34   87 
+ 60.           9.971      1.390                                   41118 34   88 
+ 60.          10.204      0.726                                   41118 34   89 
+ 60.          10.441      0.845                                   41118 34   90 
+ 60.          10.734      0.332                                   41118 34   91 
+ 60.          10.969      0.271                                   41118 34   92 
+ 60.          11.237      0.751                                   41118 34   93 
+ 60.          11.502      0.539                                   41118 34   94 
+ 60.          11.710      0.900                                   41118 34   95 
+ 60.          11.945      0.718                                   41118 34   96 
+ 60.          12.210      0.506                                   41118 34   97 
+ 60.          12.415      0.144                                   41118 34   98 
+ 60.          12.710      0.052                                   41118 34   99 
+ 60.          12.946      0.081                                   41118 34  100 
+ 60.          13.212      0.080                                   41118 34  101 
+ 60.          13.448      0.079                                   41118 34  102 
+ 60.          13.684      0.078                                   41118 34  103 
+ENDDATA             88          0                                 41118 34  104 
+ENDSUBENT          103          0                                 41118 3499999 
+SUBENT        41118035   20221205                             421141118 35    1 
+BIB                  4          6                                 41118 35    2 
+REACTION   (26-FE-54(N,X)1-H-1,,DA/DE)  (n,p)+(n,np)              41118 35    3 
+ERR-ANALYS . Quantization errors:                                 41118 35    4 
+            scale X - 0.015 MeV, scale Y - 0.030 mb/sr/MeV.       41118 35    5 
+STATUS     (CURVE) Figures (lower) in INDC(CCP)-235,(4),381,1984  41118 35    6 
+           . This Subent supersedes Subent 40699004.              41118 35    7 
+HISTORY    (20221205C) Subent was added.                          41118 35    8 
+ENDBIB               6          0                                 41118 35    9 
+COMMON               3          3                                 41118 35   10 
+EN         E-ERR-DIG  ERR-DIG                                     41118 35   11 
+MEV        MEV        MB/SR/MEV                                   41118 35   12 
+   14.1    0.021       0.051                                      41118 35   13 
+ENDCOMMON            3          0                                 41118 35   14 
+DATA                 3         93                                 41118 35   15 
+ANG-CM     E-CM       DATA-CM                                     41118 35   16 
+ADEG       MEV        MB/SR/MEV                                   41118 35   17 
+        40.      2.873     13.988                                 41118 35   18 
+        40.      3.056     16.576                                 41118 35   19 
+        40.      3.355     18.861                                 41118 35   20 
+        40.      3.557     17.835                                 41118 35   21 
+        40.      3.788     16.928                                 41118 35   22 
+        40.      4.078     16.202                                 41118 35   23 
+        40.      4.337     14.933                                 41118 35   24 
+        40.      4.565     13.003                                 41118 35   25 
+        40.      4.792     10.530                                 41118 35   26 
+        40.      4.995     10.106                                 41118 35   27 
+        40.      5.050      9.021                                 41118 35   28 
+        40.      5.284      9.078                                 41118 35   29 
+        40.      5.545      8.472                                 41118 35   30 
+        40.      5.777      7.867                                 41118 35   31 
+        40.      6.039      7.442                                 41118 35   32 
+        40.      6.301      6.957                                 41118 35   33 
+        40.      6.503      6.292                                 41118 35   34 
+        40.      6.765      5.807                                 41118 35   35 
+        40.      6.997      5.261                                 41118 35   36 
+        40.      7.230      5.018                                 41118 35   37 
+        40.      7.491      4.532                                 41118 35   38 
+        40.      7.782      4.047                                 41118 35   39 
+        40.      8.015      3.682                                 41118 35   40 
+        40.      8.248      3.318                                 41118 35   41 
+        40.      8.479      2.652                                 41118 35   42 
+        40.      8.714      2.891                                 41118 35   43 
+        40.      9.005      2.405                                 41118 35   44 
+        40.      9.237      1.980                                 41118 35   45 
+        40.      9.471      1.917                                 41118 35   46 
+        40.      9.704      1.673                                 41118 35   47 
+        40.      9.966      1.549                                 41118 35   48 
+        40.     10.258      1.486                                 41118 35   49 
+        40.     10.491      1.061                                 41118 35   50 
+        40.     10.724      0.817                                 41118 35   51 
+        40.     11.016      0.633                                 41118 35   52 
+        40.     11.279      0.690                                 41118 35   53 
+        40.     11.512      0.626                                 41118 35   54 
+        40.     11.746      0.623                                 41118 35   55 
+        40.     11.980      0.620                                 41118 35   56 
+        40.     12.214      0.618                                 41118 35   57 
+        40.     12.476      0.313                                 41118 35   58 
+        40.     12.739      0.310                                 41118 35   59 
+        40.     13.002      0.246                                 41118 35   60 
+        40.     13.236      0.364                                 41118 35   61 
+        40.     13.440      0.180                                 41118 35   62 
+        40.     13.703      0.117                                 41118 35   63 
+        40.     13.936      0.114                                 41118 35   64 
+        60.      2.995     17.502                                 41118 35   65 
+        60.      3.289     16.179                                 41118 35   66 
+        60.      3.496     16.357                                 41118 35   67 
+        60.      3.761     15.515                                 41118 35   68 
+        60.      3.966     14.193                                 41118 35   69 
+        60.      4.261     13.410                                 41118 35   70 
+        60.      4.494     11.607                                 41118 35   71 
+        60.      4.727      9.263                                 41118 35   72 
+        60.      4.963      8.901                                 41118 35   73 
+        60.      5.051      8.480                                 41118 35   74 
+        60.      5.229      8.299                                 41118 35   75 
+        60.      5.464      7.877                                 41118 35   76 
+        60.      5.730      7.395                                 41118 35   77 
+        60.      5.965      6.493                                 41118 35   78 
+        60.      6.201      6.371                                 41118 35   79 
+        60.      6.467      6.070                                 41118 35   80 
+        60.      6.732      5.527                                 41118 35   81 
+        60.      6.938      4.805                                 41118 35   82 
+        60.      7.233      4.323                                 41118 35   83 
+        60.      7.498      3.781                                 41118 35   84 
+        60.      7.705      3.539                                 41118 35   85 
+        60.      7.970      2.877                                 41118 35   86 
+        60.      8.236      2.695                                 41118 35   87 
+        60.      8.472      2.033                                 41118 35   88 
+        60.      8.708      1.732                                 41118 35   89 
+        60.      8.974      1.850                                 41118 35   90 
+        60.      9.240      2.088                                 41118 35   91 
+        60.      9.477      1.847                                 41118 35   92 
+        60.      9.742      1.485                                 41118 35   93 
+        60.      9.978      1.003                                 41118 35   94 
+        60.     10.214      0.761                                 41118 35   95 
+        60.     10.480      0.820                                 41118 35   96 
+        60.     10.717      0.758                                 41118 35   97 
+        60.     11.012      0.636                                 41118 35   98 
+        60.     11.249      0.635                                 41118 35   99 
+        60.     11.544      0.393                                 41118 35  100 
+        60.     11.751      0.451                                 41118 35  101 
+        60.     11.988      0.630                                 41118 35  102 
+        60.     12.254      0.448                                 41118 35  103 
+        60.     12.490      0.507                                 41118 35  104 
+        60.     12.727      0.325                                 41118 35  105 
+        60.     12.993      0.383                                 41118 35  106 
+        60.     13.259      0.622                                 41118 35  107 
+        60.     13.407      0.381                                 41118 35  108 
+        60.     13.702      0.259                                 41118 35  109 
+        60.     13.998      0.197                                 41118 35  110 
+ENDDATA             95          0                                 41118 35  111 
+ENDSUBENT          110          0                                 41118 3599999 
+SUBENT        41118036   20221205                             421141118 36    1 
+BIB                  4          6                                 41118 36    2 
+REACTION   (14-SI-28(N,X)1-H-1,,DA/DE)  (n,p)+(n,np)              41118 36    3 
+ERR-ANALYS . Quantization errors:                                 41118 36    4 
+            scale X - 0.022 MeV, scale Y - 0.0090 mb/sr/MeV.      41118 36    5 
+STATUS     (CURVE) Fig.2 of INDC(CCP)-376,1994 (English),         41118 36    6 
+            = Fig.2 of INDC(CCP)-349,27,1992 (Russian).           41118 36    7 
+HISTORY    (20221205C) Subent was added.                          41118 36    8 
+ENDBIB               6          0                                 41118 36    9 
+COMMON               4          3                                 41118 36   10 
+EN         ANG-CM     E-ERR-DIG  ERR-DIG                          41118 36   11 
+MEV        ADEG       MEV        MB/SR/MEV                        41118 36   12 
+   14.1     80.       0.011       0.0051                          41118 36   13 
+ENDCOMMON            3          0                                 41118 36   14 
+DATA                 2         44                                 41118 36   15 
+E-CM       DATA-CM                                                41118 36   16 
+MEV        MB/SR/MEV                                              41118 36   17 
+    2.484      1.652                                              41118 36   18 
+    2.722      5.225                                              41118 36   19 
+    2.941      5.439                                              41118 36   20 
+    3.259      4.195                                              41118 36   21 
+    3.471      5.279                                              41118 36   22 
+    3.740      4.764                                              41118 36   23 
+    3.909      5.760                                              41118 36   24 
+    4.223      4.943                                              41118 36   25 
+    4.455      3.396                                              41118 36   26 
+    4.714      4.179                                              41118 36   27 
+    4.976      4.570                                              41118 36   28 
+    5.249      3.415                                              41118 36   29 
+    5.471      3.184                                              41118 36   30 
+    5.732      3.700                                              41118 36   31 
+    5.989      4.749                                              41118 36   32 
+    6.254      4.643                                              41118 36   33 
+    6.441      3.185                                              41118 36   34 
+    6.712      2.208                                              41118 36   35 
+    6.935      1.942                                              41118 36   36 
+    7.196      2.369                                              41118 36   37 
+    7.501      2.902                                              41118 36   38 
+    7.679      2.671                                              41118 36   39 
+    7.950      1.765                                              41118 36   40 
+    8.174      1.250                                              41118 36   41 
+    8.482      1.464                                              41118 36   42 
+    8.659      1.375                                              41118 36   43 
+    8.927      0.789                                              41118 36   44 
+    9.149      0.575                                              41118 36   45 
+    9.453      1.322                                              41118 36   46 
+    9.628      1.447                                              41118 36   47 
+    9.898      0.701                                              41118 36   48 
+   10.255      0.043                                              41118 36   49 
+   10.477     -0.045                                              41118 36   50 
+   10.653     -0.098                                              41118 36   51 
+   11.181      0.062                                              41118 36   52 
+   11.401      0.205                                              41118 36   53 
+   11.620      0.294                                              41118 36   54 
+   11.930      0.117                                              41118 36   55 
+   12.107      0.010                                              41118 36   56 
+   12.460      0.064                                              41118 36   57 
+   12.813      0.029                                              41118 36   58 
+   13.210      0.000                                              41118 36   59 
+   13.651      0.030                                              41118 36   60 
+   13.915      0.012                                              41118 36   61 
+ENDDATA             46          0                                 41118 36   62 
+ENDSUBENT           61          0                                 41118 3699999 
+SUBENT        41118037   20221205                             421141118 37    1 
+BIB                  4          6                                 41118 37    2 
+REACTION   (28-NI-58(N,X)1-H-1,,DA/DE)  (n,p)+(n,np)              41118 37    3 
+ERR-ANALYS . Quantization errors:                                 41118 37    4 
+            scale X - 0.025 MeV, scale Y - 0.025 mb/sr/MeV.       41118 37    5 
+STATUS     (CURVE) Fig.6 of INDC(CCP)-376,1994 (English),         41118 37    6 
+            = Fig.6 of INDC(CCP)-349,27,1992 (Russian).           41118 37    7 
+HISTORY    (20221205C) Subent was added.                          41118 37    8 
+ENDBIB               6          0                                 41118 37    9 
+COMMON               4          3                                 41118 37   10 
+EN         ANG-CM     E-ERR-DIG  ERR-DIG                          41118 37   11 
+MEV        ADEG       MEV        MB/SR/MEV                        41118 37   12 
+   14.1     80.        0.041      0.023                           41118 37   13 
+ENDCOMMON            3          0                                 41118 37   14 
+DATA                 2         49                                 41118 37   15 
+E-CM       DATA-CM                                                41118 37   16 
+MEV        MB/SR/MEV                                              41118 37   17 
+      2.768      3.948                                            41118 37   18 
+      3.017     12.247                                            41118 37   19 
+      3.239     16.175                                            41118 37   20 
+      3.489     16.419                                            41118 37   21 
+      3.795     17.596                                            41118 37   22 
+      4.239     17.053                                            41118 37   23 
+      4.535     16.560                                            41118 37   24 
+      4.733     16.461                                            41118 37   25 
+      5.025     15.280                                            41118 37   26 
+      5.207     12.480                                            41118 37   27 
+      5.506     12.625                                            41118 37   28 
+      5.744     10.758                                            41118 37   29 
+      5.987      9.872                                            41118 37   30 
+      6.229      8.692                                            41118 37   31 
+      6.473      7.806                                            41118 37   32 
+      6.724      8.198                                            41118 37   33 
+      7.016      7.116                                            41118 37   34 
+      7.260      6.377                                            41118 37   35 
+      7.506      5.885                                            41118 37   36 
+      7.750      5.196                                            41118 37   37 
+      7.997      4.752                                            41118 37   38 
+      8.242      4.211                                            41118 37   39 
+      8.538      3.816                                            41118 37   40 
+      8.785      3.569                                            41118 37   41 
+      8.981      2.929                                            41118 37   42 
+      9.277      2.535                                            41118 37   43 
+      9.524      2.288                                            41118 37   44 
+      9.771      2.041                                            41118 37   45 
+     10.019      1.941                                            41118 37   46 
+     10.268      1.841                                            41118 37   47 
+     10.515      1.643                                            41118 37   48 
+     10.762      1.347                                            41118 37   49 
+     11.010      1.198                                            41118 37   50 
+     11.260      1.344                                            41118 37   51 
+     11.558      1.343                                            41118 37   52 
+     11.755      0.948                                            41118 37   53 
+     12.051      0.554                                            41118 37   54 
+     12.300      0.602                                            41118 37   55 
+     12.499      0.649                                            41118 37   56 
+     12.747      0.501                                            41118 37   57 
+     12.995      0.401                                            41118 37   58 
+     13.243      0.301                                            41118 37   59 
+     13.542      0.250                                            41118 37   60 
+     13.791      0.396                                            41118 37   61 
+     14.091      0.542                                            41118 37   62 
+     14.388      0.393                                            41118 37   63 
+     14.586      0.244                                            41118 37   64 
+     14.785      0.145                                            41118 37   65 
+     15.033      0.144                                            41118 37   66 
+ENDDATA             51          0                                 41118 37   67 
+ENDSUBENT           66          0                                 41118 3799999 
+SUBENT        41118038   20221205                             421141118 38    1 
+BIB                  4          6                                 41118 38    2 
+REACTION   (28-NI-0(N,X)1-H-1,,DA/DE)  (n,p)+(n,np)               41118 38    3 
+ERR-ANALYS . Quantization errors:                                 41118 38    4 
+            scale X - 0.017 MeV, scale Y - 0.017 mb/sr/MeV.       41118 38    5 
+STATUS     (CURVE) Fig.7 of INDC(CCP)-376,1994 (English),         41118 38    6 
+            = Fig.7 of INDC(CCP)-349,27,1992 (Russian).           41118 38    7 
+HISTORY    (20221205C) Subent was added.                          41118 38    8 
+ENDBIB               6          0                                 41118 38    9 
+COMMON               4          3                                 41118 38   10 
+EN         ANG-CM     E-ERR-DIG  ERR-DIG                          41118 38   11 
+MEV        ADEG       MEV        MB/SR/MEV                        41118 38   12 
+   14.1     80.        0.036      0.027                           41118 38   13 
+ENDCOMMON            3          0                                 41118 38   14 
+DATA                 2         49                                 41118 38   15 
+E-CM       DATA-CM                                                41118 38   16 
+MEV        MB/SR/MEV                                              41118 38   17 
+      2.661      4.027                                            41118 38   18 
+      2.924     10.406                                            41118 38   19 
+      3.155     13.163                                            41118 38   20 
+      3.454     13.329                                            41118 38   21 
+      3.687     13.097                                            41118 38   22 
+      3.921     11.602                                            41118 38   23 
+      4.220     11.868                                            41118 38   24 
+      4.419     12.333                                            41118 38   25 
+      4.653     10.174                                            41118 38   26 
+      4.886      9.476                                            41118 38   27 
+      5.152      9.942                                            41118 38   28 
+      5.451      8.845                                            41118 38   29 
+      5.652      6.520                                            41118 38   30 
+      5.951      6.487                                            41118 38   31 
+      6.184      5.391                                            41118 38   32 
+      6.450      5.125                                            41118 38   33 
+      6.683      6.188                                            41118 38   34 
+      6.982      5.889                                            41118 38   35 
+      7.216      3.896                                            41118 38   36 
+      7.449      3.132                                            41118 38   37 
+      7.748      2.933                                            41118 38   38 
+      7.914      2.734                                            41118 38   39 
+      8.213      2.833                                            41118 38   40 
+      8.446      2.734                                            41118 38   41 
+      8.712      2.103                                            41118 38   42 
+      8.979      1.837                                            41118 38   43 
+      9.178      1.671                                            41118 38   44 
+      9.444      0.940                                            41118 38   45 
+      9.711      0.508                                            41118 38   46 
+      9.943      0.708                                            41118 38   47 
+     10.243      0.309                                            41118 38   48 
+     10.442      0.143                                            41118 38   49 
+     10.741      0.210                                            41118 38   50 
+     10.974      0.343                                            41118 38   51 
+     11.240      0.542                                            41118 38   52 
+     11.472      0.609                                            41118 38   53 
+     11.705      0.509                                            41118 38   54 
+     11.971      0.310                                            41118 38   55 
+     12.237      0.277                                            41118 38   56 
+     12.570      0.244                                            41118 38   57 
+     12.769      0.244                                            41118 38   58 
+     13.002      0.178                                            41118 38   59 
+     13.301      0.078                                            41118 38   60 
+     13.534      0.078                                            41118 38   61 
+     13.800      0.079                                            41118 38   62 
+     14.032      0.245                                            41118 38   63 
+     14.265      0.345                                            41118 38   64 
+     14.465      0.179                                            41118 38   65 
+     14.697      0.013                                            41118 38   66 
+ENDDATA             51          0                                 41118 38   67 
+ENDSUBENT           66          0                                 41118 3899999 
+SUBENT        41118039   20221205                             421141118 39    1 
+BIB                  4          6                                 41118 39    2 
+REACTION   (13-AL-27(N,X)1-H-1,,DE)  (n,p)+(n,np)                 41118 39    3 
+ERR-ANALYS . Quantization errors:                                 41118 39    4 
+            scale X - 0.011 MeV, scale Y - 0.059 mb/MeV.          41118 39    5 
+STATUS     (CURVE) Fig.1 of INDC(CCP)-376,1994 (English),         41118 39    6 
+            = Fig.1 of INDC(CCP)-349,27,1992 (Russian).           41118 39    7 
+HISTORY    (20221205C) Subent was added.                          41118 39    8 
+ENDBIB               6          0                                 41118 39    9 
+COMMON               3          3                                 41118 39   10 
+EN         E-ERR-DIG  ERR-DIG                                     41118 39   11 
+MEV        MEV        MB/MEV                                      41118 39   12 
+   14.1    0.017       0.099                                      41118 39   13 
+ENDCOMMON            3          0                                 41118 39   14 
+DATA                 3         38                                 41118 39   15 
+E-CM       DATA-CM    DATA-ERR                                    41118 39   16 
+MEV        MB/MEV     MB/MEV                                      41118 39   17 
+      2.985     31.257      2.353                                 41118 39   18 
+      3.232     29.965                                            41118 39   19 
+      3.502     25.732                                            41118 39   20 
+      3.772     23.145                                            41118 39   21 
+      3.997     19.029      1.882                                 41118 39   22 
+      4.267     17.149                                            41118 39   23 
+      4.491     16.680                                            41118 39   24 
+      4.761     13.270                                            41118 39   25 
+      5.008     11.625      1.059                                 41118 39   26 
+      5.277     10.921                                            41118 39   27 
+      5.479     10.217                                            41118 39   28 
+      5.771      9.748                                            41118 39   29 
+      5.995      9.044      1.294                                 41118 39   30 
+      6.287      8.811                                            41118 39   31 
+      6.489      7.283                                            41118 39   32 
+      6.691      6.343                                            41118 39   33 
+      6.759      4.462                                            41118 39   34 
+      7.028      3.875                                            41118 39   35 
+      7.230      3.641                                            41118 39   36 
+      7.499      4.585                                            41118 39   37 
+      7.723      5.880                                            41118 39   38 
+      7.992      6.353      0.824                                 41118 39   39 
+      8.238      6.002                                            41118 39   40 
+      8.508      4.356                                            41118 39   41 
+      8.755      2.358                                            41118 39   42 
+      9.002      1.184                                            41118 39   43 
+      9.249      0.950                                            41118 39   44 
+      9.472      2.364                                            41118 39   45 
+      9.741      3.307                                            41118 39   46 
+      9.988      2.956      0.824                                 41118 39   47 
+     10.212      2.016                                            41118 39   48 
+     10.481      1.430                                            41118 39   49 
+     10.750      1.549                                            41118 39   50 
+     10.997      1.081                                            41118 39   51 
+     11.244      1.318                                            41118 39   52 
+     11.490      1.672                                            41118 39   53 
+     11.737      1.674                                            41118 39   54 
+     11.984      0.735                                            41118 39   55 
+ENDDATA             40          0                                 41118 39   56 
+ENDSUBENT           55          0                                 41118 3999999 
+SUBENT        41118040   20221205                             421141118 40    1 
+BIB                  5          8                                 41118 40    2 
+REACTION   (24-CR-50(N,X)1-H-1,,DE)  (n,p)+(n,np)                 41118 40    3 
+ANALYSIS   (INTAD)                                                41118 40    4 
+ERR-ANALYS . Quantization errors:                                 41118 40    5 
+            scale X - 0.010 MeV, scale Y - 0.062 mb/MeV.          41118 40    6 
+STATUS     (CURVE) Fig.3 of INDC(CCP)-376,1994 (English),         41118 40    7 
+            = Fig.3 of INDC(CCP)-349,27,1992 (Russian).           41118 40    8 
+           (DEP,41118034) DA/DE                                   41118 40    9 
+HISTORY    (20221205C) Subent was added.                          41118 40   10 
+ENDBIB               8          0                                 41118 40   11 
+COMMON               3          3                                 41118 40   12 
+EN         E-ERR-DIG  ERR-DIG                                     41118 40   13 
+MEV        MEV        MB/MEV                                      41118 40   14 
+   14.1     0.0089     0.073                                      41118 40   15 
+ENDCOMMON            3          0                                 41118 40   16 
+DATA                 3         46                                 41118 40   17 
+E-CM       DATA-CM    DATA-ERR                                    41118 40   18 
+MEV        MB/MEV     MB/MEV                                      41118 40   19 
+      2.856     59.317                                            41118 40   20 
+      3.112     60.898      2.226                                 41118 40   21 
+      3.336     56.302                                            41118 40   22 
+      3.574     49.726                                            41118 40   23 
+      3.841     47.845                                            41118 40   24 
+      4.068     44.732      2.101                                 41118 40   25 
+      4.330     40.626                                            41118 40   26 
+      4.574     37.140                                            41118 40   27 
+      4.772     36.749                                            41118 40   28 
+      5.039     35.486      1.728                                 41118 40   29 
+      5.321     32.614                                            41118 40   30 
+      5.587     30.486                                            41118 40   31 
+      5.784     29.848                                            41118 40   32 
+      6.035     29.451                                            41118 40   33 
+      6.264     27.079      1.483                                 41118 40   34 
+      6.547     24.578                                            41118 40   35 
+      6.778     23.072                                            41118 40   36 
+      7.030     23.046                                            41118 40   37 
+      7.298     22.030      1.485                                 41118 40   38 
+      7.544     19.038                                            41118 40   39 
+      7.791     16.665                                            41118 40   40 
+      8.041     15.527      1.236                                 41118 40   41 
+      8.291     14.389                                            41118 40   42 
+      8.523     13.129                                            41118 40   43 
+      8.772     11.868                                            41118 40   44 
+      9.021     10.236      0.991                                 41118 40   45 
+      9.268      7.862                                            41118 40   46 
+      9.517      6.353                                            41118 40   47 
+      9.769      6.328                                            41118 40   48 
+     10.004      6.551      1.236                                 41118 40   49 
+     10.272      5.658                                            41118 40   50 
+     10.503      4.028                                            41118 40   51 
+     10.753      3.137                                            41118 40   52 
+     11.005      3.112      1.238                                 41118 40   53 
+     11.240      3.212                                            41118 40   54 
+     11.511      3.802                                            41118 40   55 
+     11.728      3.780                                            41118 40   56 
+     11.978      3.013                                            41118 40   57 
+     12.227      1.504                                            41118 40   58 
+     12.478      0.985                                            41118 40   59 
+     12.748      0.710                                            41118 40   60 
+     13.000      0.684                                            41118 40   61 
+     13.234      0.537                                            41118 40   62 
+     13.522      0.508                                            41118 40   63 
+     13.738      0.486                                            41118 40   64 
+     13.973      0.462                                            41118 40   65 
+ENDDATA             48          0                                 41118 40   66 
+ENDSUBENT           65          0                                 41118 4099999 
+SUBENT        41118041   20221205                             421141118 41    1 
+BIB                  5          8                                 41118 41    2 
+REACTION   (26-FE-54(N,X)1-H-1,,DE)  (n,p)+(n,np)                 41118 41    3 
+ANALYSIS   (INTAD)                                                41118 41    4 
+ERR-ANALYS . Quantization errors:                                 41118 41    5 
+            scale X - 0.009 MeV, scale Y - 0.076 mb/MeV.          41118 41    6 
+STATUS     (CURVE) Fig.4 of INDC(CCP)-376,1994 (English),         41118 41    7 
+            = Fig.4 of INDC(CCP)-349,27,1992 (Russian).           41118 41    8 
+           (DEP,41118035) DA/DE                                   41118 41    9 
+HISTORY    (20221205C) Subent was added.                          41118 41   10 
+ENDBIB               8          0                                 41118 41   11 
+COMMON               3          3                                 41118 41   12 
+EN         E-ERR-DIG  ERR-DIG                                     41118 41   13 
+MEV        MEV        MB/MEV                                      41118 41   14 
+   14.1     0.017      0.077                                      41118 41   15 
+ENDCOMMON            3          0                                 41118 41   16 
+DATA                 3         46                                 41118 41   17 
+E-CM       DATA-CM    DATA-ERR                                    41118 41   18 
+MEV        MB/MEV     MB/MEV                                      41118 41   19 
+      2.812     60.726                                            41118 41   20 
+      3.027     74.915      1.833                                 41118 41   21 
+      3.273     77.348                                            41118 41   22 
+      3.514     73.827                                            41118 41   23 
+      3.777     73.358                                            41118 41   24 
+      4.039     73.805      1.680                                 41118 41   25 
+      4.282     72.421                                            41118 41   26 
+      4.521     65.083                                            41118 41   27 
+      4.795     53.316                                            41118 41   28 
+      5.034     44.909      1.832                                 41118 41   29 
+      5.276     42.609                                            41118 41   30 
+      5.519     40.920                                            41118 41   31 
+      5.761     37.704                                            41118 41   32 
+      6.003     35.099      1.527                                 41118 41   33 
+      6.265     34.630                                            41118 41   34 
+      6.489     33.552                                            41118 41   35 
+      6.732     31.405                                            41118 41   36 
+      6.992     28.188      1.374                                 41118 41   37 
+      7.254     26.040                                            41118 41   38 
+      7.477     24.351                                            41118 41   39 
+      7.720     21.899                                            41118 41   40 
+      7.980     18.987                                            41118 41   41 
+      8.204     16.993                                            41118 41   42 
+      8.428     15.457                                            41118 41   43 
+      8.690     13.615                                            41118 41   44 
+      8.970     12.076                                            41118 41   45 
+      9.213     11.303                                            41118 41   46 
+      9.456     10.530                                            41118 41   47 
+      9.700      9.604                                            41118 41   48 
+      9.980      8.066                                            41118 41   49 
+     10.204      7.140                                            41118 41   50 
+     10.410      6.369                                            41118 41   51 
+     10.710      5.593                                            41118 41   52 
+     10.934      4.973                                            41118 41   53 
+     11.196      4.199                                            41118 41   54 
+     11.440      3.884                                            41118 41   55 
+     11.721      3.414                                            41118 41   56 
+     11.964      3.404                                            41118 41   57 
+     12.208      3.394                                            41118 41   58 
+     12.452      3.079                                            41118 41   59 
+     12.714      2.763                                            41118 41   60 
+     12.976      2.294                                            41118 41   61 
+     13.220      2.131                                            41118 41   62 
+     13.501      2.120                                            41118 41   63 
+     13.726      1.805                                            41118 41   64 
+     13.951      1.185                                            41118 41   65 
+ENDDATA             48          0                                 41118 41   66 
+ENDSUBENT           65          0                                 41118 4199999 
+SUBENT        41118042   20221205                             421141118 42    1 
+BIB                  5          7                                 41118 42    2 
+REACTION   (26-FE-56(N,X)1-H-1,,DE)  (n,p)+(n,np)                 41118 42    3 
+ANALYSIS   (INTAD) Spectrum DA/DE is not presented on figures.    41118 42    4 
+ERR-ANALYS . Quantization errors:                                 41118 42    5 
+            scale X - 0.007 MeV, scale Y - 0.009 mb/MeV.          41118 42    6 
+STATUS     (CURVE) Fig.5 of INDC(CCP)-376,1994 (English),         41118 42    7 
+            = Fig.5 of INDC(CCP)-349,27,1992 (Russian).           41118 42    8 
+HISTORY    (20221205C) Subent was added.                          41118 42    9 
+ENDBIB               7          0                                 41118 42   10 
+COMMON               3          3                                 41118 42   11 
+EN         E-ERR-DIG  ERR-DIG                                     41118 42   12 
+MEV        MEV        MB/MEV                                      41118 42   13 
+   14.1     0.013      0.0082                                     41118 42   14 
+ENDCOMMON            3          0                                 41118 42   15 
+DATA                 3         41                                 41118 42   16 
+E-CM       DATA-CM    DATA-ERR                                    41118 42   17 
+MEV        MB/MEV     MB/MEV                                      41118 42   18 
+      2.794      1.814                                            41118 42   19 
+      3.011      5.891      1.358                                 41118 42   20 
+      3.283      5.932      1.174                                 41118 42   21 
+      3.534      3.827                                            41118 42   22 
+      3.788      4.234                                            41118 42   23 
+      4.025      6.312      1.248                                 41118 42   24 
+      4.283      6.316                                            41118 42   25 
+      4.550      5.513                                            41118 42   26 
+      4.798      6.508                                            41118 42   27 
+      5.045      7.521      1.082                                 41118 42   28 
+      5.309      7.030                                            41118 42   29 
+      5.555      6.777                                            41118 42   30 
+      5.798      6.836                                            41118 42   31 
+      6.033      6.363      1.028                                 41118 42   32 
+      6.298      5.634                                            41118 42   33 
+      6.556      5.675                                            41118 42   34 
+      6.803      5.330                                            41118 42   35 
+      7.049      5.151      0.715                                 41118 42   36 
+      7.307      5.155                                            41118 42   37 
+      7.527      4.682                                            41118 42   38 
+      7.756      3.309                                            41118 42   39 
+      8.014      1.919      0.569                                 41118 42   40 
+      8.286      1.960                                            41118 42   41 
+      8.525      2.441                                            41118 42   42 
+      8.769      2.354                                            41118 42   43 
+      9.008      1.440      0.569                                 41118 42   44 
+      9.242      1.040                                            41118 42   45 
+      9.499      1.118                                            41118 42   46 
+      9.757      1.104                                            41118 42   47 
+      9.987      1.108      0.716                                 41118 42   48 
+     10.257      1.277                                            41118 42   49 
+     10.514      1.392                                            41118 42   50 
+     10.763      0.901                                            41118 42   51 
+     10.997      0.464      0.477                                 41118 42   52 
+     11.243      0.230                                            41118 42   53 
+     11.502      0.216                                            41118 42   54 
+     11.746      0.201                                            41118 42   55 
+     11.989      0.242                                            41118 42   56 
+     12.246      0.338                                            41118 42   57 
+     12.492      0.140                                            41118 42   58 
+     12.751      0.071                                            41118 42   59 
+ENDDATA             43          0                                 41118 42   60 
+ENDSUBENT           59          0                                 41118 4299999 
+SUBENT        41118043   20221205                             421141118 43    1 
+BIB                  6         18                                 41118 43    2 
+REACTION   (13-AL-27(N,P)12-MG-27,,DA,,,DERIV)                    41118 43    3 
+ANALYSIS   (INTED) Spectrum DA/DE (not presented on figures) was  41118 43    4 
+            fitted as sum of (n,p) and (n,n'p) reactions ( see    41118 43    5 
+            an example on Figs.6 for Ni-58 at 80 deg angle) for   41118 43    6 
+            each angle and then integrated by energy to get       41118 43    7 
+            angular distribution for (n,p) reaction.              41118 43    8 
+COMMENT     Of compiler M.M.                                      41118 43    9 
+            On Fig.8 reaction is mentioned as "(n,p)" as on the   41118 43   10 
+            figre as in the title of figure.                      41118 43   11 
+            When data are for sum of (n,p) and (n,n'p) then       41118 43   12 
+            authors write "(n,p)+(n,np)", see for example         41118 43   13 
+            Figs.3,5 and titles of Figs.1,4,6,7.                  41118 43   14 
+ERR-ANALYS . Quantization errors:                                 41118 43   15 
+            scale X - 0.24 deg, scale Y - 0.016 mb/sr.            41118 43   16 
+STATUS     (CURVE) Fig.8 upper left of INDC(CCP)-376,1994 (Engl.),41118 43   17 
+            = Fig.8 upper left of INDC(CCP)-349,27,1992 (Russian).41118 43   18 
+           . This Subent supersedes Subent 40699005.              41118 43   19 
+HISTORY    (20221205C) Subent was added.                          41118 43   20 
+ENDBIB              18          0                                 41118 43   21 
+COMMON               3          3                                 41118 43   22 
+EN         ANG-ERR-D  ERR-DIG                                     41118 43   23 
+MEV        ADEG       MB/SR                                       41118 43   24 
+   14.1     0.37       0.036                                      41118 43   25 
+ENDCOMMON            3          0                                 41118 43   26 
+DATA                 3         10                                 41118 43   27 
+ANG-CM     DATA-CM    DATA-ERR                                    41118 43   28 
+ADEG       MB/SR      MB/SR                                       41118 43   29 
+       9.42     11.211      2.461                                 41118 43   30 
+      16.00     10.830      1.262                                 41118 43   31 
+      32.43      9.751      1.388                                 41118 43   32 
+      49.99     10.816      2.050                                 41118 43   33 
+      61.60      8.604      1.766                                 41118 43   34 
+      75.70      7.873      1.167                                 41118 43   35 
+      90.28      7.299      0.694                                 41118 43   36 
+     106.33      7.262      0.600                                 41118 43   37 
+     121.85      6.530      0.599                                 41118 43   38 
+     135.61      7.345      0.473                                 41118 43   39 
+ENDDATA             12          0                                 41118 43   40 
+ENDSUBENT           39          0                                 41118 4399999 
+SUBENT        41118044   20221205                             421141118 44    1 
+BIB                  6         19                                 41118 44    2 
+REACTION   (24-CR-50(N,P)23-V-50,,DA,,,DERIV)                     41118 44    3 
+ANALYSIS   (INTED) Spectrum DA/DE ( see Subent 036 ) was          41118 44    4 
+            fitted as sum of (n,p) and (n,n'p) reactions ( see    41118 44    5 
+            an example on Figs.6 for Ni-58 at 80 deg angle) for   41118 44    6 
+            each angle and then integrated by energy to get       41118 44    7 
+            angular distribution for (n,p) reaction.              41118 44    8 
+COMMENT     Of compiler M.M.                                      41118 44    9 
+            On Fig.8 reaction is mentioned as "(n,p)" as on the   41118 44   10 
+            figre as in the title of figure.                      41118 44   11 
+            When data are for sum of (n,p) and (n,n'p) then       41118 44   12 
+            authors write "(n,p)+(n,np)", see for example         41118 44   13 
+            Figs.3,5 and titles of Figs.1,4,6,7.                  41118 44   14 
+ERR-ANALYS . Quantization errors:                                 41118 44   15 
+            scale X - 0.24 deg, scale Y - 0.039 mb/sr.            41118 44   16 
+STATUS     (CURVE) Fig.8 upper right of INDC(CCP)-376,1994 (Engl.)41118 44   17 
+            = Fig.8 upper right of INDC(CCP)-349,27,1992 (Russian)41118 44   18 
+           . This Subent supersedes Subent 40699006.              41118 44   19 
+           (DEP,41118034) DA/DE                                   41118 44   20 
+HISTORY    (20221205C) Subent was added.                          41118 44   21 
+ENDBIB              19          0                                 41118 44   22 
+COMMON               3          3                                 41118 44   23 
+EN         ANG-ERR-D  ERR-DIG                                     41118 44   24 
+MEV        ADEG       MB/SR                                       41118 44   25 
+   14.1     0.27       0.043                                      41118 44   26 
+ENDCOMMON            3          0                                 41118 44   27 
+DATA                 3          6                                 41118 44   28 
+ANG-CM     DATA-CM    DATA-ERR                                    41118 44   29 
+ADEG       MB/SR      MB/SR                                       41118 44   30 
+      20.45     35.695      5.195                                 41118 44   31 
+      42.09     34.328      2.520                                 41118 44   32 
+      62.21     30.758      2.047                                 41118 44   33 
+      81.98     29.866      1.417                                 41118 44   34 
+     100.79     28.660      3.307                                 41118 44   35 
+     121.44     26.507      4.094                                 41118 44   36 
+ENDDATA              8          0                                 41118 44   37 
+ENDSUBENT           36          0                                 41118 4499999 
+SUBENT        41118045   20221205                             421141118 45    1 
+BIB                  6         19                                 41118 45    2 
+REACTION   (26-FE-54(N,P)25-MN-54,,DA,,,DERIV)                    41118 45    3 
+ANALYSIS   (INTED) Spectrum DA/DE ( see Subent 035) was           41118 45    4 
+            fitted as sum of (n,p) and (n,n'p) reactions ( see    41118 45    5 
+            an example on Figs.6 for Ni-58 at 80 deg angle) for   41118 45    6 
+            each angle and then integrated by energy to get       41118 45    7 
+            angular distribution for (n,p) reaction.              41118 45    8 
+COMMENT     Of compiler M.M.                                      41118 45    9 
+            On Fig.8 reaction is mentioned as "(n,p)" as on the   41118 45   10 
+            figre as in the title of figure.                      41118 45   11 
+            When data are for sum of (n,p) and (n,n'p) then       41118 45   12 
+            authors write "(n,p)+(n,np)", see for example         41118 45   13 
+            Figs.3,5 and titles of Figs.1,4,6,7.                  41118 45   14 
+ERR-ANALYS . Quantization errors:                                 41118 45   15 
+            scale X - 0.24 deg, scale Y - 0.050 mb/sr.            41118 45   16 
+STATUS     (CURVE) Fig.8 lower left of INDC(CCP)-376,1994 (Engl.),41118 45   17 
+            = Fig.4 lower left of INDC(CCP)-349,27,1992 (Russian).41118 45   18 
+           . This Subent supersedes Subent 40699007.              41118 45   19 
+           (DEP,41118035) DA/DE                                   41118 45   20 
+HISTORY    (20221205C) Subent was added.                          41118 45   21 
+ENDBIB              19          0                                 41118 45   22 
+COMMON               3          3                                 41118 45   23 
+EN         ANG-ERR-D  ERR-DIG                                     41118 45   24 
+MEV        ADEG       MB/SR                                       41118 45   25 
+   14.1     0.46       0.15                                       41118 45   26 
+ENDCOMMON            3          0                                 41118 45   27 
+DATA                 3          7                                 41118 45   28 
+ANG-CM     DATA-CM    DATA-ERR                                    41118 45   29 
+ADEG       MB/SR      MB/SR                                       41118 45   30 
+       8.14      35.44       1.19                                 41118 45   31 
+      23.26      35.45       1.19                                 41118 45   32 
+      42.68      32.69       1.19                                 41118 45   33 
+      60.65      31.71       1.19                                 41118 45   34 
+      80.96      32.13       1.09                                 41118 45   35 
+     100.82      30.95       0.99                                 41118 45   36 
+     120.16      32.16       1.39                                 41118 45   37 
+ENDDATA              9          0                                 41118 45   38 
+ENDSUBENT           37          0                                 41118 4599999 
+SUBENT        41118046   20221205                             421141118 46    1 
+BIB                  6         17                                 41118 46    2 
+REACTION   (26-FE-56(N,P)25-MN-56,,DA,,,DERIV)                    41118 46    3 
+ANALYSIS   (INTED) Spectrum DA/DE (not presented on figures) was  41118 46    4 
+            fitted as sum of (n,p) and (n,n'p) reactions ( see    41118 46    5 
+            an example on Figs.6 for Ni-58 at 80 deg angle) for   41118 46    6 
+            each angle and then integrated by energy to get       41118 46    7 
+            angular distribution for (n,p) reaction.              41118 46    8 
+COMMENT     Of compiler M.M.                                      41118 46    9 
+            On Fig.8 reaction is mentioned as "(n,p)" as on the   41118 46   10 
+            figre as in the title of figure.                      41118 46   11 
+            When data are for sum of (n,p) and (n,n'p) then       41118 46   12 
+            authors write "(n,p)+(n,np)", see for example         41118 46   13 
+            Figs.3,5 and titles of Figs.1,4,6,7.                  41118 46   14 
+ERR-ANALYS . Quantization errors:                                 41118 46   15 
+            scale X - 0.24 deg, scale Y - 0.020 mb/sr.            41118 46   16 
+STATUS     (CURVE) Fig.8 lower right of INDC(CCP)-376,1994 (Engl.)41118 46   17 
+            = Fig.8 lower right of INDC(CCP)-349,27,1992 (Russian)41118 46   18 
+HISTORY    (20221205C) Subent was added.                          41118 46   19 
+ENDBIB              17          0                                 41118 46   20 
+COMMON               3          3                                 41118 46   21 
+EN         ANG-ERR-D  ERR-DIG                                     41118 46   22 
+MEV        ADEG       MB/SR                                       41118 46   23 
+   14.1     0.26       0.016                                      41118 46   24 
+ENDCOMMON            3          0                                 41118 46   25 
+DATA                 3          4                                 41118 46   26 
+ANG-CM     DATA-CM    DATA-ERR                                    41118 46   27 
+ADEG       MB/SR      MB/SR                                       41118 46   28 
+       5.43     13.108      2.341                                 41118 46   29 
+      38.62     10.248      1.071                                 41118 46   30 
+      60.00     11.556      0.952                                 41118 46   31 
+      81.84     12.189      0.952                                 41118 46   32 
+ENDDATA              6          0                                 41118 46   33 
+ENDSUBENT           32          0                                 41118 4699999 
+ENDENTRY            45          0                                 4111899999999 
