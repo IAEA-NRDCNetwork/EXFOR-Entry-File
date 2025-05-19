@@ -1,0 +1,322 @@
+ENTRY            31842   20211208                             32063184200000001 
+SUBENT        31842001   20211208                             32063184200100001 
+BIB                 14         47                                 3184200100002 
+TITLE      Activation cross-section measurement of fast           3184200100003 
+            neutron-induced reactions in Al, Au, Bi, Co, F, Na,   3184200100004 
+            and Y                                                 3184200100005 
+AUTHOR     (J.Jarosik, V.Wagner, M.Majerle, P.Chudoba,            3184200100006 
+            N.Burianova, M.Stefanik)                              3184200100007 
+REFERENCE  (J,NIM/B,511,64,2022)                                  3184200100008 
+INSTITUTE  (3CZRUJF,3CZRCTI,3CZRCHU)                              3184200100009 
+FACILITY   (ISOCY,3CZRUJF) U-120M isochronous cyclotron           3184200100010 
+INC-SOURCE (P-LI7) protons (20-35 MeV) on Li target (2 mm) and    3184200100011 
+            C beam stopper (10 mm)                                3184200100012 
+SAMPLE     F:                                                     3184200100013 
+            NaF powder encapsulated with 16 mm in diameter and    3184200100014 
+            2 mm in thickness.                                    3184200100015 
+           Others:                                                3184200100016 
+            High purity (>99.9%) thin foils (25 x 25 mm,          3184200100017 
+            0.1-1.0 mm thick, 0.2-1.8 g)                          3184200100018 
+DETECTOR   (HPGE) HPGe detector, relative efficiency of 30%,      3184200100019 
+            energy resolution of 1.8 keV (FWHM) at 1332 keV       3184200100020 
+            calibrated by a measurement and MCNPX calculation     3184200100021 
+METHOD     (ACTIV) Irradiated for 10 hours                        3184200100022 
+MONITOR    (3-LI-7(P,N)4-BE-7,,SIG)                               3184200100023 
+CORRECTION Corrected for                                          3184200100024 
+            - gamma self-absorption                               3184200100025 
+            - beam instability (very small or negligible)         3184200100026 
+            - true cascade coincidences                           3184200100027 
+            - square-emitter correction                           3184200100028 
+              (geometric transformation of efficiency from        3184200100029 
+               point- to square-source)                           3184200100030 
+            - low-energy neutron                                  3184200100031 
+              (by excitation function calculated by TALYS 1.95    3184200100032 
+               and 7Li(p,n) neutron spectrum calculated by        3184200100033 
+               MCNPX+JENDL-4.0 and MCNPX+LA150H library)          3184200100034 
+ERR-ANALYS (ERR-T) Total uncertainty propagated from              3184200100035 
+                   - gamma self-absorption        (tenths %)      3184200100036 
+                   - beam instability             (tenths %)      3184200100037 
+                   - gamma intensity        (tenths % to 1%)      3184200100038 
+                   - decay constant (hundredths to tenths %)      3184200100039 
+           (ERR-1) - true cascade correction            (2%)      3184200100040 
+           (ERR-2) - square-emitter correction          (5%)      3184200100041 
+           (ERR-3) - peak efficiency                    (2%)      3184200100042 
+           (ERR-4) - number of peak neutrons            (7%)      3184200100043 
+           (ERR-5) - low energy neutron correction                3184200100044 
+            (uncertainty estimated by standard deviation of       3184200100045 
+             correction factors from 6 level density models       3184200100046 
+             and two 7Li(p,n) data libraries.)                    3184200100047 
+STATUS     (APRVD) Proof-read by Jiri Jarosik (2021-12-14)        3184200100048 
+HISTORY    (20211208C) On                                         3184200100049 
+ENDBIB              47          0                                 3184200100050 
+COMMON               4          3                                 3184200100051 
+ERR-1      ERR-2      ERR-3      ERR-4                            3184200100052 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         3184200100053 
+ 2.         5.          2.        7.                              3184200100054 
+ENDCOMMON            3          0                                 3184200100055 
+ENDSUBENT           54          0                                 3184200199999 
+SUBENT        31842002   20211208                             32063184200200001 
+BIB                  5          6                                 3184200200002 
+REACTION   (27-CO-59(N,2N)27-CO-58-G,,SIG)                        3184200200003 
+DECAY-DATA (27-CO-58-G,70.86D,DG,810.7593,0.99450)                3184200200004 
+ANALYSIS   (DECAY) Separation of 58gCo and 58mCo contribution     3184200200005 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184200200006 
+STATUS     (TABLE) Table 5 of Nucl.Instrum.Meth.B511(2022)64      3184200200007 
+           (COREL,31842003) 59Co(n,2n)58mCo cross section         3184200200008 
+ENDBIB               6          0                                 3184200200009 
+NOCOMMON             0          0                                 3184200200010 
+DATA                 6          1                                 3184200200011 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184200200012 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184200200013 
+ 17.5       1.0        307.       28.        1.9        0.14      3184200200014 
+ENDDATA              3          0                                 3184200200015 
+ENDSUBENT           14          0                                 3184200299999 
+SUBENT        31842003   20211208                             32063184200300001 
+BIB                  4          5                                 3184200300002 
+REACTION   (27-CO-59(N,2N)27-CO-58-M,,SIG)                        3184200300003 
+DECAY-DATA (27-CO-58-G,70.86D,DG,810.7593,0.99450)                3184200300004 
+ANALYSIS   (DECAY) Separation of 58gCo and 58mCo contribution     3184200300005 
+STATUS     (TABLE) Table 5 of Nucl.Instrum.Meth.B511(2022)64      3184200300006 
+           (COREL,31842002) 59Co(n,2n)58gCo cross section         3184200300007 
+ENDBIB               5          0                                 3184200300008 
+NOCOMMON             0          0                                 3184200300009 
+DATA                 5          1                                 3184200300010 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5                 3184200300011 
+MEV        MEV        MB         MB         PER-CENT              3184200300012 
+ 17.5       1.0        480.       40.        2.2                  3184200300013 
+ENDDATA              3          0                                 3184200300014 
+ENDSUBENT           13          0                                 3184200399999 
+SUBENT        31842004   20211208                             32063184200400001 
+BIB                  4          5                                 3184200400002 
+REACTION   (27-CO-59(N,P)26-FE-59,,SIG)                           3184200400003 
+DECAY-DATA (26-FE-59,44.490D,DG,1099.245,0.565,                   3184200400004 
+                             DG,1291.590,0.432)                   3184200400005 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184200400006 
+STATUS     (TABLE) Table 5 of Nucl.Instrum.Meth.B511(2022)64      3184200400007 
+ENDBIB               5          0                                 3184200400008 
+NOCOMMON             0          0                                 3184200400009 
+DATA                 6          1                                 3184200400010 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184200400011 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184200400012 
+ 17.5       1.0        28.4       2.9        4.6        0.20      3184200400013 
+ENDDATA              3          0                                 3184200400014 
+ENDSUBENT           13          0                                 3184200499999 
+SUBENT        31842005   20211208                             32063184200500001 
+BIB                  4          4                                 3184200500002 
+REACTION   (27-CO-59(N,A)25-MN-56,,SIG)                           3184200500003 
+DECAY-DATA (25-MN-56,2.5789HR,DG,846.7638,0.9885)                 3184200500004 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184200500005 
+STATUS     (TABLE) Table 5 of Nucl.Instrum.Meth.B511(2022)64      3184200500006 
+ENDBIB               4          0                                 3184200500007 
+NOCOMMON             0          0                                 3184200500008 
+DATA                 6          1                                 3184200500009 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184200500010 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184200500011 
+ 17.5       1.0        20.8       2.2        5.2        0.32      3184200500012 
+ENDDATA              3          0                                 3184200500013 
+ENDSUBENT           12          0                                 3184200599999 
+SUBENT        31842006   20211208                             32063184200600001 
+BIB                  4          5                                 3184200600002 
+REACTION   (39-Y-89(N,2N)39-Y-88,,SIG)                            3184200600003 
+DECAY-DATA (39-Y-88,106.626D,DG,898.042,0.937,                    3184200600004 
+                             DG,1836.063,0.992)                   3184200600005 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184200600006 
+STATUS     (TABLE) Table 6 of Nucl.Instrum.Meth.B511(2022)64      3184200600007 
+ENDBIB               5          0                                 3184200600008 
+NOCOMMON             0          0                                 3184200600009 
+DATA                 6          3                                 3184200600010 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184200600011 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184200600012 
+ 17.5       1.0        1120.      100.        1.2       0.22      3184200600013 
+ 19.8       0.9        1110.      110.        4.8       0.18      3184200600014 
+ 27.5       0.7         580.       90.       13.1       0.06      3184200600015 
+ENDDATA              5          0                                 3184200600016 
+ENDSUBENT           15          0                                 3184200699999 
+SUBENT        31842007   20211208                             32063184200700001 
+BIB                  5          6                                 3184200700002 
+REACTION   (39-Y-89(N,3N)39-Y-87-G,,SIG)                          3184200700003 
+DECAY-DATA (39-Y-87-G,79.8HR,DG,484.805,0.898)                    3184200700004 
+CORRECTION Corrected for 87mY decay contribution                  3184200700005 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184200700006 
+STATUS     (TABLE) Table 6 of Nucl.Instrum.Meth.B511(2022)64      3184200700007 
+           (DEP,31842008) 88Y(n,3n)87mY cross section             3184200700008 
+ENDBIB               6          0                                 3184200700009 
+NOCOMMON             0          0                                 3184200700010 
+DATA                 6          1                                 3184200700011 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184200700012 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184200700013 
+ 27.5       0.7        110.       10.        0.4        0.03      3184200700014 
+ENDDATA              3          0                                 3184200700015 
+ENDSUBENT           14          0                                 3184200799999 
+SUBENT        31842008   20211208                             32063184200800001 
+BIB                  4          4                                 3184200800002 
+REACTION   (39-Y-89(N,3N)39-Y-87-M,,SIG)                          3184200800003 
+DECAY-DATA (39-Y-87-M,13.37HR,DG,380.79,0.7805)                   3184200800004 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184200800005 
+STATUS     (TABLE) Table 6 of Nucl.Instrum.Meth.B511(2022)64      3184200800006 
+ENDBIB               4          0                                 3184200800007 
+NOCOMMON             0          0                                 3184200800008 
+DATA                 6          1                                 3184200800009 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184200800010 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184200800011 
+ 27.5       0.7        318.       29.        0.4        0.06      3184200800012 
+ENDDATA              3          0                                 3184200800013 
+ENDSUBENT           12          0                                 3184200899999 
+SUBENT        31842009   20211208                             32063184200900001 
+BIB                  4          4                                 3184200900002 
+REACTION   (11-NA-23(N,2N)11-NA-22,,SIG)                          3184200900003 
+DECAY-DATA (11-NA-22,2.6018YR,DG,1274.537,0.99940)                3184200900004 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184200900005 
+STATUS     (TABLE) Table 6 of Nucl.Instrum.Meth.B511(2022)64      3184200900006 
+ENDBIB               4          0                                 3184200900007 
+NOCOMMON             0          0                                 3184200900008 
+DATA                 6          1                                 3184200900009 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184200900010 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184200900011 
+ 17.5       1.0        95.        9.         0.6        1.44      3184200900012 
+ENDDATA              3          0                                 3184200900013 
+ENDSUBENT           12          0                                 3184200999999 
+SUBENT        31842010   20211208                             32063184201000001 
+BIB                  4          4                                 3184201000002 
+REACTION   (79-AU-197(N,2N)79-AU-196-G+M1,,SIG)                   3184201000003 
+DECAY-DATA (79-AU-196-G,6.1669D,DG,355.73,0.87)                   3184201000004 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184201000005 
+STATUS     (TABLE) Table 7 of Nucl.Instrum.Meth.B511(2022)64      3184201000006 
+ENDBIB               4          0                                 3184201000007 
+NOCOMMON             0          0                                 3184201000008 
+DATA                 6          3                                 3184201000009 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184201000010 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184201000011 
+ 17.5       1.0        1500.      170.        5.9       0.04      3184201000012 
+ 19.8       0.9         710.       90.        8.2       0.07      3184201000013 
+ 27.5       0.7         350.       50.       12.2       0.03      3184201000014 
+ENDDATA              5          0                                 3184201000015 
+ENDSUBENT           14          0                                 3184201099999 
+SUBENT        31842011   20211208                             32063184201100001 
+BIB                  4          5                                 3184201100002 
+REACTION   (79-AU-197(N,2N)79-AU-196-M2,,SIG)                     3184201100003 
+DECAY-DATA (79-AU-196-M2,9.6HR,DG,147.81,0.43,                    3184201100004 
+                               DG,188.27,0.340)                   3184201100005 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184201100006 
+STATUS     (TABLE) Table 7 of Nucl.Instrum.Meth.B511(2022)64      3184201100007 
+ENDBIB               5          0                                 3184201100008 
+NOCOMMON             0          0                                 3184201100009 
+DATA                 6          3                                 3184201100010 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184201100011 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184201100012 
+ 17.5       1.0        211.       20.         2.1       0.24      3184201100013 
+ 19.8       0.9        147.       18.         8.0       0.29      3184201100014 
+ 27.5       0.7         67.       11.        13.2       0.16      3184201100015 
+ENDDATA              5          0                                 3184201100016 
+ENDSUBENT           15          0                                 3184201199999 
+SUBENT        31842012   20211208                             32063184201200001 
+BIB                  4          4                                 3184201200002 
+REACTION   (79-AU-197(N,3N)79-AU-195,,SIG)                        3184201200003 
+DECAY-DATA (79-AU-195-G,186.01D,DG,129.735,0.0084)                3184201200004 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184201200005 
+STATUS     (TABLE) Table 7 of Nucl.Instrum.Meth.B511(2022)64      3184201200006 
+ENDBIB               4          0                                 3184201200007 
+NOCOMMON             0          0                                 3184201200008 
+DATA                 6          3                                 3184201200009 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184201200010 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184201200011 
+ 17.5       1.0         320.       30.       0.1        6.09      3184201200012 
+ 19.8       0.9        1420.      140.       1.8        4.08      3184201200013 
+ 27.5       0.7        1540.      170.       6.5        0.44      3184201200014 
+ENDDATA              5          0                                 3184201200015 
+ENDSUBENT           14          0                                 3184201299999 
+SUBENT        31842013   20211208                             32063184201300001 
+BIB                  4          4                                 3184201300002 
+REACTION   (79-AU-197(N,4N)79-AU-194,,SIG)                        3184201300003 
+DECAY-DATA (79-AU-194-G,38.02HR,DG,328.464,0.604)                 3184201300004 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184201300005 
+STATUS     (TABLE) Table 7 of Nucl.Instrum.Meth.B511(2022)64      3184201300006 
+ENDBIB               4          0                                 3184201300007 
+NOCOMMON             0          0                                 3184201300008 
+DATA                 6          1                                 3184201300009 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184201300010 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184201300011 
+ 27.5       0.7        280.       25.        0.1        0.11      3184201300012 
+ENDDATA              3          0                                 3184201300013 
+ENDSUBENT           12          0                                 3184201399999 
+SUBENT        31842014   20211208                             32063184201400001 
+BIB                  4          5                                 3184201400002 
+REACTION   (83-BI-209(N,3N)83-BI-207,,SIG)                        3184201400003 
+DECAY-DATA (83-BI-207,31.55YR,DG,569.698,0.9775,                  3184201400004 
+                              DG,1063.656,0.745)                  3184201400005 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184201400006 
+STATUS     (TABLE) Table 8 of Nucl.Instrum.Meth.B511(2022)64      3184201400007 
+ENDBIB               5          0                                 3184201400008 
+NOCOMMON             0          0                                 3184201400009 
+DATA                 6          3                                 3184201400010 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184201400011 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184201400012 
+ 17.5       1.0         470.       40.       0.1        0.94      3184201400013 
+ 19.8       0.9        1360.      130.       2.1        0.41      3184201400014 
+ 27.5       0.7        1400.      160.       7.3        0.11      3184201400015 
+ENDDATA              5          0                                 3184201400016 
+ENDSUBENT           15          0                                 3184201499999 
+SUBENT        31842015   20211208                             32063184201500001 
+BIB                  4          6                                 3184201500002 
+REACTION   (83-BI-209(N,4N)83-BI-206,,SIG)                        3184201500003 
+DECAY-DATA (83-BI-206,6.243D,DG,516.18,0.408,                     3184201500004 
+                             DG,803.10,0.990,                     3184201500005 
+                             DG,881.01,0.662)                     3184201500006 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184201500007 
+STATUS     (TABLE) Table 8 of Nucl.Instrum.Meth.B511(2022)64      3184201500008 
+ENDBIB               6          0                                 3184201500009 
+NOCOMMON             0          0                                 3184201500010 
+DATA                 6          1                                 3184201500011 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184201500012 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184201500013 
+ 27.5       0.7        420.       40.        0.1        0.04      3184201500014 
+ENDDATA              3          0                                 3184201500015 
+ENDSUBENT           14          0                                 3184201599999 
+SUBENT        31842016   20211208                             32063184201600001 
+BIB                  4          5                                 3184201600002 
+REACTION   (13-AL-27(N,P)12-MG-27,,SIG)                           3184201600003 
+DECAY-DATA (12-MG-27,9.458MIN,DG,843.76,0.7180,                   3184201600004 
+                              DG,1014.52,0.2820)                  3184201600005 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184201600006 
+STATUS     (TABLE) Table 8 of Nucl.Instrum.Meth.B511(2022)64      3184201600007 
+ENDBIB               5          0                                 3184201600008 
+NOCOMMON             0          0                                 3184201600009 
+DATA                 6          3                                 3184201600010 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184201600011 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184201600012 
+ 17.5       1.0        25.        3.          8.6       1.46      3184201600013 
+ 19.8       0.9        19.        3.         12.1       3.61      3184201600014 
+ 27.5       0.7        12.5       2.2        15.0       1.22      3184201600015 
+ENDDATA              5          0                                 3184201600016 
+ENDSUBENT           15          0                                 3184201699999 
+SUBENT        31842017   20211208                             32063184201700001 
+BIB                  4          4                                 3184201700002 
+REACTION   (13-AL-27(N,A)11-NA-24,,SIG)                           3184201700003 
+DECAY-DATA (11-NA-24,14.997HR,DG,1368.626,0.999936)               3184201700004 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184201700005 
+STATUS     (TABLE) Table 8 of Nucl.Instrum.Meth.B511(2022)64      3184201700006 
+ENDBIB               4          0                                 3184201700007 
+NOCOMMON             0          0                                 3184201700008 
+DATA                 6          3                                 3184201700009 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184201700010 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184201700011 
+ 17.5       1.0        63.        6.          5.2       0.33      3184201700012 
+ 19.8       0.9        35.        4.          7.9       0.39      3184201700013 
+ 27.5       0.7        12.6       1.7        10.1       0.33      3184201700014 
+ENDDATA              5          0                                 3184201700015 
+ENDSUBENT           14          0                                 3184201799999 
+SUBENT        31842018   20211208                             32063184201800001 
+BIB                  4          4                                 3184201800002 
+REACTION   (9-F-19(N,2N)9-F-18,,SIG)                              3184201800003 
+DECAY-DATA (9-F-18,109.77MIN,AR,,0.9673)                          3184201800004 
+ERR-ANALYS (ERR-S) - gamma peak area                (0.1-7%)      3184201800005 
+STATUS     (TABLE) Table 9 of Nucl.Instrum.Meth.B511(2022)64      3184201800006 
+ENDBIB               4          0                                 3184201800007 
+NOCOMMON             0          0                                 3184201800008 
+DATA                 6          1                                 3184201800009 
+EN         EN-RSL-HW  DATA       ERR-T      ERR-5      ERR-S      3184201800010 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   3184201800011 
+ 17.5       1.0        105.       11.        1.0        4.50      3184201800012 
+ENDDATA              3          0                                 3184201800013 
+ENDSUBENT           12          0                                 3184201899999 
+ENDENTRY            18          0                                 3184299999999 
