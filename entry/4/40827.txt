@@ -1,39 +1,72 @@
-ENTRY            40827   19850118                             00004082700000001 
-SUBENT        40827001   19850118                             00004082700100001 
-BIB                 12         15                                 4082700100002 
-INSTITUTE  (4CCPRI)                                               4082700100003 
-REFERENCE  (C,83KIEV,2,142,8310)  GIVEN CURVES                    4082700100004 
-AUTHOR     (JU.N.TROFIMOV,JU.A.NEMILOV)                           4082700100005 
-TITLE       NP-237 RADIATION CAPTURE CROSS-SECTION FOR THE        4082700100006 
-            ENERGY INTERVAL 0.3 - 1.9 MEV                         4082700100007 
-FACILITY   (VDG)                                                  4082700100008 
-INC-SOURCE (P-T)                                                  4082700100009 
-METHOD     (ACTIV)                                                4082700100010 
-DETECTOR   (GELI)                                                 4082700100011 
-DECAY-DATA (93-NP-238,2.117D,DG)                                  4082700100012 
-           (94-PU-238,,DG,984.,0.227)                             4082700100013 
-           (79-AU-198-G,2.695D,,411.8,0.9533)                     4082700100014 
-MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         4082700100015 
-STATUS     (APRVD)  TROFIMOV, 8406                                4082700100016 
-HISTORY    (850118C)                                              4082700100017 
-ENDBIB              15          0                                 4082700100018 
-NOCOMMON             0          0                                 4082700100019 
-ENDSUBENT           18          0                                 4082700199999 
-SUBENT        40827002   19850118                             00004082700200001 
-BIB                  1          1                                 4082700200002 
-REACTION   (93-NP-237(N,G)93-NP-238,,SIG)                         4082700200003 
-ENDBIB               1          0                                 4082700200004 
-NOCOMMON             0          0                                 4082700200005 
-DATA                 4          7                                 4082700200006 
-EN         EN-RSL     DATA       ERR-T                            4082700200007 
-MEV        MEV        MB         MB                               4082700200008 
- 2.5000E-01            8.5100E+02                                 4082700200009 
- 3.3000E-01 1.3000E-01 5.1900E+02 3.2000E+01                      4082700200010 
- 6.5000E-01 1.3000E-01 3.1000E+02 2.3000E+01                      4082700200011 
- 8.7000E-01 1.2000E-01 2.6800E+02 2.0000E+01                      4082700200012 
- 1.1800E+00 1.1000E-01 1.9000E+02 1.4000E+01                      4082700200013 
- 1.3900E+00 1.0000E-01 1.4800E+02 1.2000E+01                      4082700200014 
- 1.9100E+00 9.0000E-02 9.9000E+01 8.0000E+00                      4082700200015 
-ENDDATA              9          0                                 4082700200016 
-ENDSUBENT           15          0                                 4082700299999 
+ENTRY            40827   20231226                             421640827  0    1 
+SUBENT        40827001   20231226                             421640827  1    1 
+BIB                 16         34                                 40827  1    2 
+TITLE       Np-237 radiation capture cross-section for the        40827  1    3 
+            energy interval 0.3 - 1.9 MeV                         40827  1    4 
+AUTHOR     (Yu.N.Trofimov,Yu.A.Nemilov)                           40827  1    5 
+REFERENCE  ((C,83KIEV,2,142,1983)=                                40827  1    6 
+           (R,INDC(CCP)-235,(2),142,1983))  Given curves          40827  1    7 
+INSTITUTE  (4RUSRI)                                               40827  1    8 
+FACILITY   (VDG,4RUSRI)                                           40827  1    9 
+INC-SOURCE (P-T)  T-Ti targets.                                   40827  1   10 
+METHOD     (ACTIV)                                                40827  1   11 
+SAMPLE      NpO(2)(NO(3))2 powder.                                40827  1   12 
+DETECTOR   (GELI) Ge(Li) of 38 cm3 volume, resolution 3 keV for   40827  1   13 
+           1332 keV line.                                         40827  1   14 
+           Samples and detectors were covered by Cd foils.        40827  1   15 
+DECAY-DATA (93-NP-238,2.117D,DG)                                  40827  1   16 
+            HL=2.117+-0.002 day                                   40827  1   17 
+           (94-PU-238,,DG,984.,0.227)                             40827  1   18 
+            22.7+-0.7 %                                           40827  1   19 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         40827  1   20 
+DECAY-MON  (79-AU-198-G,2.695D,DG,411.8,0.9553)                   40827  1   21 
+            HL=2.695+-0.001 day, 95.53+-0.05 %                    40827  1   22 
+MONIT-REF  (,,R,BNL-NCS-50446,1975)                               40827  1   23 
+            BNL/NCS-50446, ENDF/B-IV dosimetry file, N.Y.,1975    40827  1   24 
+REL-REF    (R,,N.G.Gusev+,B,GUSEV,,,1977) Decay data for Au-198   40827  1   25 
+           (R,,A.V.Bushuev+,J,YK,,(2/46),30,1982)                 40827  1   26 
+            Decay data for Pu-238.                                40827  1   27 
+           (R,,,R,INDC(NDS)-109,1979) Np-238 HL.                  40827  1   28 
+STATUS     (APRVD)  Trofimov, 1984-06                             40827  1   29 
+HISTORY    (19850118C)                                            40827  1   30 
+           (20231226A) Ref. INDC(CCP)-235,(2),142,1983 was added. 40827  1   31 
+            BIB information was updated.                          40827  1   32 
+            Upper -> lower case correction .                      40827  1   33 
+            Dates were corrected for 4-digits year.               40827  1   34 
+            411.8 keV gamma intensity was corrected               40827  1   35 
+            0.9533 -> 0.9553 as given in the article.             40827  1   36 
+ENDBIB              34          0                                 40827  1   37 
+NOCOMMON             0          0                                 40827  1   38 
+ENDSUBENT           37          0                                 40827  199999 
+SUBENT        40827002   20231226                             421640827  2    1 
+BIB                  4         11                                 40827  2    2 
+REACTION   (93-NP-237(N,G)93-NP-238,,SIG)                         40827  2    3 
+ERR-ANALYS (ERR-T) Total uncertainty .                            40827  2    4 
+            Sources of uncertainty:                               40827  2    5 
+           (ERR-1) Statistical accuracy for Au-198,               40827  2    6 
+           (ERR-2) Statistical accuracy for Np-238,               40827  2    7 
+           (ERR-3) Gamma self-absorption in sample,               40827  2    8 
+           (ERR-4) Gamma spectrometer calibration,                40827  2    9 
+           (ERR-5) Radiation capture cross section for Au-197,    40827  2   10 
+STATUS     (TABLE) From author Yu.Trofimov.                       40827  2   11 
+            Data are on Fig.2 of INDC(CCP)-235,(2),142,1983       40827  2   12 
+HISTORY    (20231226A) ERR-ANALYS was added.                      40827  2   13 
+ENDBIB              11          0                                 40827  2   14 
+COMMON               5          3                                 40827  2   15 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5                 40827  2   16 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              40827  2   17 
+ 0.5        1.5        1.5        2.         3.                   40827  2   18 
+ENDCOMMON            3          0                                 40827  2   19 
+DATA                 4          7                                 40827  2   20 
+EN         EN-RSL     DATA       ERR-T                            40827  2   21 
+MEV        MEV        MB         MB                               40827  2   22 
+  .25                  851.                                       40827  2   23 
+  .33       .13        519.        32.                            40827  2   24 
+  .65       .13        310.        23.                            40827  2   25 
+  .87       .12        268.        20.                            40827  2   26 
+ 1.18       .11        190.        14.                            40827  2   27 
+ 1.39       .10        148.        12.                            40827  2   28 
+ 1.91       .09         99.        8.                             40827  2   29 
+ENDDATA              9          0                                 40827  2   30 
+ENDSUBENT           29          0                                 40827  299999 
 ENDENTRY             2          0                                 4082799999999 

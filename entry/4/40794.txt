@@ -1,46 +1,60 @@
-ENTRY            40794   19950926                             00004079400000001 
-SUBENT        40794001   19950926                             00004079400100001 
-BIB                  7          9                                 4079400100002 
-INSTITUTE  (4CCPFEI)                                              4079400100003 
-REFERENCE  (J,ZET,41,(4),1023,6110)                               4079400100004 
-           (J,JET,14,728,62)                                      4079400100005 
-AUTHOR     (A.I.ABRAMOV,M.G.JUTKIN)                               4079400100006 
-TITLE       THE NE-21(N,ALPHA)O-18 REACTION BY SLOW NEUTRONS.     4079400100007 
-FACILITY   (REAC)                                                 4079400100008 
-DETECTOR   (IOCH) NEON-FILLED IONIZATION CHAMBER                  4079400100009 
-HISTORY    (840814T) CONVERTED FROM ENTRY 80243                   4079400100010 
-           (950926A) CORRECTED ACCORDING TO MEMO 4C-3/373         4079400100011 
-ENDBIB               9          0                                 4079400100012 
-NOCOMMON             0          0                                 4079400100013 
-ENDSUBENT           12          0                                 4079400199999 
-SUBENT        40794002   19950926                             00004079400200001 
-BIB                  5          7                                 4079400200002 
-REACTION   (10-NE-21(N,A)8-O-18,,SIG)                             4079400200003 
-MONITOR    (2-HE-3(N,P)1-H-3,,SIG)                                4079400200004 
-STATUS     (SCSRS)                                                4079400200005 
-           (DEP,40794003)                                         4079400200006 
-COMMENT      SIG=96B CORRESPONDS GIVEN RATIO AND STANDARD VALUES  4079400200007 
-HISTORY    (950926A)  DATA CONFIRMED IN ANSWER TO MEMO 4C-3/373   4079400200008 
-                      REACTION CODE HE-4 CORRECTED TO HE-3        4079400200009 
-ENDBIB               7          0                                 4079400200010 
-NOCOMMON             0          0                                 4079400200011 
-DATA                 5          1                                 4079400200012 
-EN         DATA       DATA-ERR   MONIT      MONIT-ERR             4079400200013 
-MEV        B          B          B          B                     4079400200014 
- 2.5300E-08 9.6000E+01 3.3000E+01   5400.     200.                4079400200015 
-ENDDATA              3          0                                 4079400200016 
-ENDSUBENT           15          0                                 4079400299999 
-SUBENT        40794003   19950926                             00004079400300001 
-BIB                  3          3                                 4079400300002 
-REACTION   ((10-NE-21(N,A)8-O-18,,SIG)/(2-HE-3(N,P)1-H-3,,SIG))   4079400300003 
-STATUS      DATA ARE TAKEN FRJM THE REFERENCE                     4079400300004 
-HISTORY    (950926C) COMPILED AT THE CENTRE                       4079400300005 
-ENDBIB               3          0                                 4079400300006 
-NOCOMMON             0          0                                 4079400300007 
-DATA                 3          1                                 4079400300008 
-EN         DATA       DATA-ERR                                    4079400300009 
-MEV        NO-DIM     NO-DIM                                      4079400300010 
- 2.5300E-08  0.0177      0.0059                                   4079400300011 
-ENDDATA              3          0                                 4079400300012 
-ENDSUBENT           11          0                                 4079400399999 
+ENTRY            40794   20231113                             421640794  0    1 
+SUBENT        40794001   20231113                             421640794  1    1 
+BIB                 10         19                                 40794  1    2 
+TITLE       The Ne21(n,alpha)O18 reaction on slow neutrons        40794  1    3 
+AUTHOR     (A.I.Abramov,M.G.Yutkin)                               40794  1    4 
+REFERENCE  (J,JET,14,728,1962)                                    40794  1    5 
+           Engl.translation of ZET,41,1023,1961                   40794  1    6 
+           (J,ZET,41,1023,1961) Issue 4.                          40794  1    7 
+INSTITUTE  (4RUSFEI)                                              40794  1    8 
+FACILITY   (REAC,4RUSFEI) BR-5 reactor                            40794  1    9 
+INC-SOURCE (THCOL) Thermal column of BR-5 reactor.                40794  1   10 
+INC-SPECT   Thermal neutrons, Cd ratio > 100. Spectrum close to   40794  1   11 
+            Maxwellian.                                           40794  1   12 
+SAMPLE     (10-NE-21,NAT=0.00257)                                 40794  1   13 
+DETECTOR   (IOCH) Two identical spherical ionization chambers:    40794  1   14 
+           - neon-filled (at 10 atm pressure);                    40794  1   15 
+           - He-3 filled.                                         40794  1   16 
+HISTORY    (19840814T) Converted from ENTRY 80243                 40794  1   17 
+           (19950926A) Corrected according to memo 4C-3/373       40794  1   18 
+           (20231113U) BIB information was updated.               40794  1   19 
+            Upper -> lower case correction.                       40794  1   20 
+            Dates were corrected for 4-digits year.               40794  1   21 
+ENDBIB              19          0                                 40794  1   22 
+NOCOMMON             0          0                                 40794  1   23 
+ENDSUBENT           22          0                                 40794  199999 
+SUBENT        40794002   20231113                             421640794  2    1 
+BIB                  5          8                                 40794  2    2 
+REACTION   (10-NE-21(N,A)8-O-18,,SIG)                             40794  2    3 
+MONITOR    (2-HE-3(N,P)1-H-3,,SIG) For 2200 m/s neutrons.         40794  2    4 
+ERR-ANALYS (DATA-ERR) Total error.                                40794  2    5 
+STATUS     (TABLE,,A.I.Abramov+,J,JET,14,728,1962)                40794  2    6 
+            Text on page 728.                                     40794  2    7 
+           (DEP,40794003) Measured ratio to monitor.              40794  2    8 
+HISTORY    (19950926A)  Data confirmed in answer to memo 4C-3/373.40794  2    9 
+            Monitor REACTION code HE-4 was corrected to HE-3      40794  2   10 
+ENDBIB               8          0                                 40794  2   11 
+NOCOMMON             0          0                                 40794  2   12 
+DATA                 5          1                                 40794  2   13 
+EN         DATA       DATA-ERR   MONIT      MONIT-ERR             40794  2   14 
+EV         B          B          B          B                     40794  2   15 
+ 0.0253     96.        33.          5400.     200.                40794  2   16 
+ENDDATA              3          0                                 40794  2   17 
+ENDSUBENT           16          0                                 40794  299999 
+SUBENT        40794003   20231113                             421640794  3    1 
+BIB                  5          6                                 40794  3    2 
+REACTION   ((10-NE-21(N,A)8-O-18,,SIG)/(2-HE-3(N,P)1-H-3,,SIG))   40794  3    3 
+METHOD      The ratio of counting rates 13090+-2028.              40794  3    4 
+ERR-ANALYS (DATA-ERR) Total experimental error.                   40794  3    5 
+STATUS     (TABLE,,A.I.Abramov+,J,JET,14,728,1962)                40794  3    6 
+            Text on page 728.                                     40794  3    7 
+HISTORY    (19950926C) Compiled at the centre                     40794  3    8 
+ENDBIB               6          0                                 40794  3    9 
+NOCOMMON             0          0                                 40794  3   10 
+DATA                 3          1                                 40794  3   11 
+EN         DATA       DATA-ERR                                    40794  3   12 
+EV         NO-DIM     NO-DIM                                      40794  3   13 
+ 0.0253      0.0177      0.0059                                   40794  3   14 
+ENDDATA              3          0                                 40794  3   15 
+ENDSUBENT           14          0                                 40794  399999 
 ENDENTRY             3          0                                 4079499999999 

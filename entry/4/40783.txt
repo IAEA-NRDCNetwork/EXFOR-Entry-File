@@ -1,32 +1,46 @@
-ENTRY            40783   19840806                             00004078300000001 
-SUBENT        40783001   19840806                             00004078300100001 
-BIB                  7         10                                 4078300100002 
-INSTITUTE  (4CCPCCP)                                              4078300100003 
-REFERENCE  (J,ZET,35,(2),535,58)                                  4078300100004 
-           (J,JET,8,370,59)                                       4078300100005 
-AUTHOR     (V.I.LEBEDEV,V.I.KALASHNIKOVA)                         4078300100006 
-TITLE       AVERAGE NUMBER OF NEUTRONS EMITTED IN THE FISSION OF  4078300100007 
-            TH229 BY THERMAL NEUTRONS.                            4078300100008 
-FACILITY   (REAC)                                                 4078300100009 
-DETECTOR   (FISCH) FOR FISSION FRAGMENTS                          4078300100010 
-           (BF3)   FOR NEUTRON DETECTION                          4078300100011 
-HISTORY    (840806T) CONVERTED FROM ENTRY 80229                   4078300100012 
-ENDBIB              10          0                                 4078300100013 
-NOCOMMON             0          0                                 4078300100014 
-ENDSUBENT           13          0                                 4078300199999 
-SUBENT        40783002   19840806                             00004078300200001 
-BIB                  5          5                                 4078300200002 
-REACTION   (90-TH-229(N,F),PR,NU,,MXW)                            4078300200003 
-INC-SPECT   THERMAL SPECTRUM                                      4078300200004 
-METHOD     (COINC)    COINCIDENCE OF PARTICLES                    4078300200005 
-MONITOR    (92-U-235(N,F),,NU)                                    4078300200006 
-STATUS     (SCSRS)                                                4078300200007 
-ENDBIB               5          0                                 4078300200008 
-NOCOMMON             0          0                                 4078300200009 
-DATA                 5          1                                 4078300200010 
-EN-DUMMY   DATA       DATA-ERR   MONIT      MONIT-ERR             4078300200011 
-MEV        NO-DIM     NO-DIM     NO-DIM     NO-DIM                4078300200012 
- 2.5300E-08 2.1300E+00 3.0000E-02 2.4700E+00 3.0000E-02           4078300200013 
-ENDDATA              3          0                                 4078300200014 
-ENDSUBENT           13          0                                 4078300299999 
+ENTRY            40783   20231113                             421640783  0    1 
+SUBENT        40783001   20231113                             421640783  1    1 
+BIB                  7         14                                 40783  1    2 
+TITLE       Average number of neutrons emitted in the fission of  40783  1    3 
+            Th229 by thermal neutrons                             40783  1    4 
+AUTHOR     (V.I.Lebedev,V.I.Kalashnikova)                         40783  1    5 
+REFERENCE  (J,JET,8,370,1959) Engl.translation of ZET,35,535,1958 40783  1    6 
+           (J,ZET,35,535,1958) Issue 2.                           40783  1    7 
+INSTITUTE  (4RUSKUR)                                              40783  1    8 
+FACILITY   (REAC,4RUSKUR) RFT reactor                             40783  1    9 
+DETECTOR   (FISCH) For fission fragments                          40783  1   10 
+           (BF3)   For neutron detection                          40783  1   11 
+HISTORY    (19840806T) CONVERTED FROM ENTRY 80229                 40783  1   12 
+           (20231113A) 4CCPCCP -> 4RUSKUR ( as in CINDA).         40783  1   13 
+            Upper -> lower case correction.                       40783  1   14 
+            Dates were corrected for 4-digits year.               40783  1   15 
+             Units were corrected: NO-DIM -> PRT/FIS              40783  1   16 
+ENDBIB              14          0                                 40783  1   17 
+NOCOMMON             0          0                                 40783  1   18 
+ENDSUBENT           17          0                                 40783  199999 
+SUBENT        40783002   20231113                             421640783  2    1 
+BIB                  9         12                                 40783  2    2 
+REACTION  1(90-TH-229(N,F),PR,NU,,MXW)                            40783  2    3 
+          2((90-TH-229(N,F),PR,NU,,MXW)/(92-U-235(N,F),,NU))      40783  2    4 
+INC-SPECT   Thermal spectrum                                      40783  2    5 
+SAMPLE      1.5 mg weight, Th-229 ~ 10.% as spot of 20 mm diameter40783  2    6 
+            0.5 mg/cm2 thickness, on thin platinum foil.          40783  2    7 
+METHOD     (COINC)    Coincidence of particles                    40783  2    8 
+MONITOR   1(92-U-235(N,F),,NU)                                    40783  2    9 
+MONIT-REF  (,D.J.Hughes+,R,BNL-325,(1),1957) Suppl.1.             40783  2   10 
+ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 40783  2   11 
+           article.                                               40783  2   12 
+STATUS     (TABLE,,V.I.Lebedev+,J,JET,8,370,1959) Text on page 37040783  2   13 
+HISTORY    (20231113A) Ratio NU(Th229)/NU(U235) was added.        40783  2   14 
+ENDBIB              12          0                                 40783  2   15 
+NOCOMMON             0          0                                 40783  2   16 
+DATA                 7          1                                 40783  2   17 
+EN-DUMMY   DATA      1DATA-ERR  1MONIT     1MONIT-ERR 1DATA      240783  2   18 
+DATA-ERR  2                                                       40783  2   19 
+EV         PRT/FIS    PRT/FIS    PRT/FIS    PRT/FIS    NO-DIM     40783  2   20 
+NO-DIM                                                            40783  2   21 
+ 0.0253     2.13       0.03       2.47       0.03       0.864     40783  2   22 
+ 0.008                                                            40783  2   23 
+ENDDATA              6          0                                 40783  2   24 
+ENDSUBENT           23          0                                 40783  299999 
 ENDENTRY             2          0                                 4078399999999 

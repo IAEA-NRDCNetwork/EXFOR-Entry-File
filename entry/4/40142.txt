@@ -1,14 +1,14 @@
-ENTRY            40142   20210319                             419540142  0    1 
-SUBENT        40142001   20210319                             419540142  1    1 
-BIB                 14         45                                 40142  1    2 
+ENTRY            40142   20231218                             421640142  0    1 
+SUBENT        40142001   20231218                             421640142  1    1 
+BIB                 14         47                                 40142  1    2 
 TITLE      Total neutron cross sections of vanadium-50 in neutron 40142  1    3 
            energy range 0.01-1 eV                                 40142  1    4 
 AUTHOR     (V.P.Vertebny,M.F.Vlasov,N.L.Gnidak,R.A.Zatserkovsky,  40142  1    5 
            A.I.Ignatenko,A.L.Kirilyuk,E.A.Pavlenko,N.A.Trofimova, 40142  1    6 
            A.F.Fedorova)                                          40142  1    7 
 INSTITUTE  (4UKRIJD)                                              40142  1    8 
-REFERENCE  (R,YFI-13,19,1972)                                     40142  1    9 
-           (R,INDC(CCP)-34,23,1973) Engl.translation of YFI-13,19.40142  1   10 
+REFERENCE  (R,INDC(CCP)-32,23,1973) Engl.translation of YFI-13,19.40142  1    9 
+           (R,YFI-13,19,1972)                                     40142  1   10 
 FACILITY   (CHOPS,4UKRIJD)    Slow chopper                        40142  1   11 
            (REAC,4UKRIJD) WWR-M reactor                           40142  1   12 
 INC-SOURCE (REAC)     Thermal reactor WWR-M                       40142  1   13 
@@ -46,53 +46,60 @@ HISTORY    (19730405C)  Compiled at the centre                    40142  1   37
            Dates were corrected for 4-digits year.                40142  1   45 
            BIB information was updated.                           40142  1   46 
            ERR-ANALYS was added in data Subents.                  40142  1   47 
-ENDBIB              45          0                                 40142  1   48 
-COMMON               1          3                                 40142  1   49 
-EN-RSL                                                            40142  1   50 
-MICROSEC/M                                                        40142  1   51 
- 3.5                                                              40142  1   52 
-ENDCOMMON            3          0                                 40142  1   53 
-ENDSUBENT           52          0                                 40142  199999 
-SUBENT        40142002   20210319                             419540142  2    1 
-BIB                  6         10                                 40142  2    2 
+           (20231218U) INDC(CCP)-34 -> INDC(CCP)-32.              40142  1   48 
+            STATUS was corrected for new rules of coding.         40142  1   49 
+ENDBIB              47          0                                 40142  1   50 
+COMMON               1          3                                 40142  1   51 
+EN-RSL                                                            40142  1   52 
+MICROSEC/M                                                        40142  1   53 
+ 3.5                                                              40142  1   54 
+ENDCOMMON            3          0                                 40142  1   55 
+ENDSUBENT           54          0                                 40142  199999 
+SUBENT        40142002   20231218                             421640142  2    1 
+BIB                  6         11                                 40142  2    2 
 REACTION   (23-V-50(N,EL)23-V-50,,SIG,,AV)                        40142  2    3 
 MONITOR    (23-V-0(N,EL)23-V-0,,SIG,,AV)                          40142  2    4 
 COMMENT    Measurement made in 4PI-geometry relative to natural   40142  2    5 
            vanadium scattering cross-section which taken 4.8 b.   40142  2    6 
 ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 40142  2    7 
            article.                                               40142  2    8 
-STATUS     (TABLE) Table of YFI-13,19,1972                        40142  2    9 
-                  = Table of rep.INDC(CCP)-34,23,1973             40142  2   10 
-HISTORY    (19740220A)  Some corrections made                     40142  2   11 
-           (20210219A) SCT -> EL in REACTION and MONITOR          40142  2   12 
-ENDBIB              10          0                                 40142  2   13 
-NOCOMMON             0          0                                 40142  2   14 
-DATA                 5          1                                 40142  2   15 
-EN-MIN     EN-MAX     DATA       DATA-ERR   MONIT                 40142  2   16 
-EV         EV         B          B          B                     40142  2   17 
-0.009      1.         7.1        0.3         4.8                  40142  2   18 
-ENDDATA              3          0                                 40142  2   19 
-ENDSUBENT           18          0                                 40142  299999 
-SUBENT        40142003   20210319                             419540142  3    1 
-BIB                  4          8                                 40142  3    2 
-REACTION   (23-V-50(N,ABS),,SIG)                                  40142  3    3 
+STATUS     (TABLE,,V.P.Vertebny+,R,INDC(CCP)-33,23,1973)          40142  2    9 
+             Text on page 24.                                     40142  2   10 
+            = Text of YFI-13,19,1972.                             40142  2   11 
+HISTORY    (19740220A)  Some corrections made                     40142  2   12 
+           (20210219A) SCT -> EL in REACTION and MONITOR          40142  2   13 
+ENDBIB              11          0                                 40142  2   14 
+NOCOMMON             0          0                                 40142  2   15 
+DATA                 5          1                                 40142  2   16 
+EN-MIN     EN-MAX     DATA       DATA-ERR   MONIT                 40142  2   17 
+EV         EV         B          B          B                     40142  2   18 
+0.009      1.         7.1        0.3         4.8                  40142  2   19 
+ENDDATA              3          0                                 40142  2   20 
+ENDSUBENT           19          0                                 40142  299999 
+SUBENT        40142003   20231218                             421640142  3    1 
+BIB                  5         12                                 40142  3    2 
+REACTION   (23-V-50(N,ABS),,SIG,,,DERIV)                          40142  3    3 
 ANALYSIS              ABS=TOT-SCT                                 40142  3    4 
 ERR-ANALYS (DATA-ERR) Type of uncertainty is not explained in the 40142  3    5 
            article.                                               40142  3    6 
-STATUS     (TABLE) Table of YFI-13,19,1972                        40142  3    7 
-           (DEP,40142002) Scattering cross section.               40142  3    8 
-           (DEP,40142004) Total cross section.                    40142  3    9 
-           (COREL,40294016) Next measurement .                    40142  3   10 
-ENDBIB               8          0                                 40142  3   11 
-NOCOMMON             0          0                                 40142  3   12 
-DATA                 3          1                                 40142  3   13 
-EN         DATA       DATA-ERR                                    40142  3   14 
-EV         B          B                                           40142  3   15 
-0.0253     41.        4.                                          40142  3   16 
-ENDDATA              3          0                                 40142  3   17 
-ENDSUBENT           16          0                                 40142  399999 
-SUBENT        40142004   20210319                             419540142  4    1 
-BIB                  4          8                                 40142  4    2 
+STATUS     (TABLE,,V.P.Vertebny+,R,INDC(CCP)-33,23,1973)          40142  3    7 
+             Text on page 24.                                     40142  3    8 
+            = Text of YFI-13,19,1972.                             40142  3    9 
+           (DEP,40142002) Scattering cross section.               40142  3   10 
+           (DEP,40142004) Total cross section.                    40142  3   11 
+           (COREL,40294016) Next measurement .                    40142  3   12 
+HISTORY    (20231218A) Code DERIV was added in reaction according 40142  3   13 
+           to a comment from NDS,IAEA.                            40142  3   14 
+ENDBIB              12          0                                 40142  3   15 
+NOCOMMON             0          0                                 40142  3   16 
+DATA                 3          1                                 40142  3   17 
+EN         DATA       DATA-ERR                                    40142  3   18 
+EV         B          B                                           40142  3   19 
+0.0253     41.        4.                                          40142  3   20 
+ENDDATA              3          0                                 40142  3   21 
+ENDSUBENT           20          0                                 40142  399999 
+SUBENT        40142004   20231218                             421640142  4    1 
+BIB                  4         10                                 40142  4    2 
 REACTION   (23-V-50(N,TOT),,SIG)                                  40142  4    3 
 ADD-RES    In energy range 0.02-1 eV total cross section described40142  4    4 
            by formula TOT=(7.1+-0.3)+(6.6+-0.5)/SQRT(E),          40142  4    5 
@@ -100,50 +107,52 @@ ADD-RES    In energy range 0.02-1 eV total cross section described40142  4    4
            At energies less than 0.02 eV total cross section      40142  4    7 
            slightly deviated from 1/V law.                        40142  4    8 
 ERR-ANALYS (ERR-S) Tabulated error is statistical.                40142  4    9 
-STATUS     (TABLE) Table of YFI-13,19,1972                        40142  4   10 
-ENDBIB               8          0                                 40142  4   11 
-NOCOMMON             0          0                                 40142  4   12 
-DATA                 3         38                                 40142  4   13 
-EN         DATA       ERR-S                                       40142  4   14 
-EV         B          B                                           40142  4   15 
-0.009      94.2       2.5                                         40142  4   16 
-0.01       85.8       2.5                                         40142  4   17 
-0.011      81.4       1.5                                         40142  4   18 
-0.012      75.8       1.5                                         40142  4   19 
-0.013      68.7       1.                                          40142  4   20 
-0.014      68.7       1.                                          40142  4   21 
-0.015      63.3       1.                                          40142  4   22 
-0.016      60.7       1.                                          40142  4   23 
-0.017      57.4       1.                                          40142  4   24 
-0.018      58.7       0.8                                         40142  4   25 
-0.019      56.7       0.8                                         40142  4   26 
-0.020      55.4       0.8                                         40142  4   27 
-0.0253     48.3       0.5                                         40142  4   28 
-0.030      45.3       0.5                                         40142  4   29 
-0.035      41.4       0.5                                         40142  4   30 
-0.040      40.5       0.5                                         40142  4   31 
-0.045      39.3       0.4                                         40142  4   32 
-0.050      37.1       0.4                                         40142  4   33 
-0.055      35.9       0.4                                         40142  4   34 
-0.060      33.7       0.4                                         40142  4   35 
-0.065      33.1       0.4                                         40142  4   36 
-0.070      32.0       0.4                                         40142  4   37 
-0.075      31.6       0.4                                         40142  4   38 
-0.080      30.6       0.5                                         40142  4   39 
-0.085      30.0       0.5                                         40142  4   40 
-0.090      29.5       0.5                                         40142  4   41 
-0.1        27.5       0.5                                         40142  4   42 
-0.15       23.3       0.5                                         40142  4   43 
-0.20       18.4       0.7                                         40142  4   44 
-0.25       18.0       0.8                                         40142  4   45 
-0.30       16.0       1.0                                         40142  4   46 
-0.40       17.0       1.0                                         40142  4   47 
-0.50       15.0       1.0                                         40142  4   48 
-0.60       12.0       1.0                                         40142  4   49 
-0.70       12.0       1.0                                         40142  4   50 
-0.80       12.0       1.0                                         40142  4   51 
-0.90       12.0       1.0                                         40142  4   52 
-1.0        12.0       1.0                                         40142  4   53 
-ENDDATA             40          0                                 40142  4   54 
-ENDSUBENT           53          0                                 40142  499999 
+STATUS     (TABLE,,V.P.Vertebny+,R,INDC(CCP)-33,23,1973)          40142  4   10 
+            Table on page 25.                                     40142  4   11 
+            = Table of YFI-13,19,1972.                            40142  4   12 
+ENDBIB              10          0                                 40142  4   13 
+NOCOMMON             0          0                                 40142  4   14 
+DATA                 3         38                                 40142  4   15 
+EN         DATA       ERR-S                                       40142  4   16 
+EV         B          B                                           40142  4   17 
+0.009      94.2       2.5                                         40142  4   18 
+0.01       85.8       2.5                                         40142  4   19 
+0.011      81.4       1.5                                         40142  4   20 
+0.012      75.8       1.5                                         40142  4   21 
+0.013      68.7       1.                                          40142  4   22 
+0.014      68.7       1.                                          40142  4   23 
+0.015      63.3       1.                                          40142  4   24 
+0.016      60.7       1.                                          40142  4   25 
+0.017      57.4       1.                                          40142  4   26 
+0.018      58.7       0.8                                         40142  4   27 
+0.019      56.7       0.8                                         40142  4   28 
+0.020      55.4       0.8                                         40142  4   29 
+0.0253     48.3       0.5                                         40142  4   30 
+0.030      45.3       0.5                                         40142  4   31 
+0.035      41.4       0.5                                         40142  4   32 
+0.040      40.5       0.5                                         40142  4   33 
+0.045      39.3       0.4                                         40142  4   34 
+0.050      37.1       0.4                                         40142  4   35 
+0.055      35.9       0.4                                         40142  4   36 
+0.060      33.7       0.4                                         40142  4   37 
+0.065      33.1       0.4                                         40142  4   38 
+0.070      32.0       0.4                                         40142  4   39 
+0.075      31.6       0.4                                         40142  4   40 
+0.080      30.6       0.5                                         40142  4   41 
+0.085      30.0       0.5                                         40142  4   42 
+0.090      29.5       0.5                                         40142  4   43 
+0.1        27.5       0.5                                         40142  4   44 
+0.15       23.3       0.5                                         40142  4   45 
+0.20       18.4       0.7                                         40142  4   46 
+0.25       18.0       0.8                                         40142  4   47 
+0.30       16.0       1.0                                         40142  4   48 
+0.40       17.0       1.0                                         40142  4   49 
+0.50       15.0       1.0                                         40142  4   50 
+0.60       12.0       1.0                                         40142  4   51 
+0.70       12.0       1.0                                         40142  4   52 
+0.80       12.0       1.0                                         40142  4   53 
+0.90       12.0       1.0                                         40142  4   54 
+1.0        12.0       1.0                                         40142  4   55 
+ENDDATA             40          0                                 40142  4   56 
+ENDSUBENT           55          0                                 40142  499999 
 ENDENTRY             4          0                                 4014299999999 

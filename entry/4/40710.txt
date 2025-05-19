@@ -1,67 +1,80 @@
-ENTRY            40710   19841024                             00004071000000001 
-SUBENT        40710001   19841024                             00004071000100001 
-BIB                  9         10                                 4071000100002 
-INSTITUTE  (4CCPICP)                                              4071000100003 
-REFERENCE  (J,DOK,113,(3),537,56)                                 4071000100004 
-           (J,SPD,2,135,57)                                       4071000100005 
-AUTHOR     (B.G.DZANTIJEV,V.N.LEVKOVSKIJ,A.D.MALIJEVSKIJ)         4071000100006 
-TITLE       (N,ALPHA) REACTIONS OF 14-MEV NEUTRONS WITH CADMIUM.  4071000100007 
-INC-SOURCE (D-T)                                                  4071000100008 
-METHOD     (CHSEP)                                                4071000100009 
-MONITOR    (29-CU-63(N,2N)29-CU-62,,SIG)                          4071000100010 
-STATUS     (SCSRS)                                                4071000100011 
-HISTORY    (840417T) CONVERTED FROM ENTRY 80118                   4071000100012 
-ENDBIB              10          0                                 4071000100013 
-COMMON               1          3                                 4071000100014 
-MONIT                                                             4071000100015 
-MB                                                                4071000100016 
- 5.0000E+02                                                       4071000100017 
-ENDCOMMON            3          0                                 4071000100018 
-ENDSUBENT           17          0                                 4071000199999 
-SUBENT        40710002   19841024                             00004071000200001 
-BIB                  1          1                                 4071000200002 
-REACTION   (47-AG-109(N,P)46-PD-109,,SIG)                         4071000200003 
-ENDBIB               1          0                                 4071000200004 
-NOCOMMON             0          0                                 4071000200005 
-DATA                 3          1                                 4071000200006 
-EN         DATA       DATA-ERR                                    4071000200007 
-MEV        B          B                                           4071000200008 
- 1.4000E+01 1.0500E-02 2.0000E-03                                 4071000200009 
-ENDDATA              3          0                                 4071000200010 
-ENDSUBENT            9          0                                 4071000299999 
-SUBENT        40710003   19841024                             00004071000300001 
-BIB                  1          1                                 4071000300002 
-REACTION   (48-CD-112(N,A)46-PD-109,,SIG)                         4071000300003 
-ENDBIB               1          0                                 4071000300004 
-NOCOMMON             0          0                                 4071000300005 
-DATA                 3          1                                 4071000300006 
-EN         DATA       DATA-ERR                                    4071000300007 
-MEV        B          B                                           4071000300008 
- 1.4000E+01 1.3500E-03 2.7000E-04                                 4071000300009 
-ENDDATA              3          0                                 4071000300010 
-ENDSUBENT            9          0                                 4071000399999 
-SUBENT        40710004   19841024                             00004071000400001 
-BIB                  2          2                                 4071000400002 
-REACTION   (48-CD-114(N,A)46-PD-111-G,,SIG)                       4071000400003 
-DECAY-DATA (46-PD-111-G,22.MIN)                                   4071000400004 
-ENDBIB               2          0                                 4071000400005 
-NOCOMMON             0          0                                 4071000400006 
-DATA                 3          1                                 4071000400007 
-EN         DATA       DATA-ERR                                    4071000400008 
-MEV        B          B                                           4071000400009 
- 1.4000E+01 5.1000E-04 1.3000E-04                                 4071000400010 
-ENDDATA              3          0                                 4071000400011 
-ENDSUBENT           10          0                                 4071000499999 
-SUBENT        40710005   19841024                             00004071000500001 
-BIB                  2          2                                 4071000500002 
-REACTION   (48-CD-114(N,A)46-PD-111-M,,SIG)                       4071000500003 
-DECAY-DATA (46-PD-111-M,5.5HR)                                    4071000500004 
-ENDBIB               2          0                                 4071000500005 
-NOCOMMON             0          0                                 4071000500006 
-DATA                 3          1                                 4071000500007 
-EN         DATA       DATA-ERR                                    4071000500008 
-MEV        B          B                                           4071000500009 
- 1.4000E+01 1.3000E-04 4.0000E-05                                 4071000500010 
-ENDDATA              3          0                                 4071000500011 
-ENDSUBENT           10          0                                 4071000599999 
+ENTRY            40710   20231113                             421640710  0    1 
+SUBENT        40710001   20231113                             421640710  1    1 
+BIB                 11         18                                 40710  1    2 
+TITLE       (n,alpha) reactions of 14-MeV neutrons with cadmium   40710  1    3 
+AUTHOR     (B.G.Dzantijev,V.N.Levkovskii,A.D.Malievskii)          40710  1    4 
+REFERENCE  (J,SPD,2,135,1957) Engl.translation of DOK,113,537,195740710  1    5 
+           (J,DOK,113,537,1957) Issue 3.                          40710  1    6 
+INSTITUTE  (4RUSICP)                                              40710  1    7 
+INC-SOURCE (D-T)                                                  40710  1    8 
+METHOD     (ACTIV,CHSEP)  Irradiation time 1 hr.                  40710  1    9 
+DETECTOR   . Standard cylindrical Geiger counters .               40710  1   10 
+           . Boron counter for neutron flux constancy.            40710  1   11 
+MONITOR    ((MONIT)29-CU-63(N,2N)29-CU-62,,SIG)                   40710  1   12 
+           (9-F-19(N,2N)9-F-18,,SIG) For prolonged irradiation.   40710  1   13 
+DECAY-MON  (29-CU-62,10.MIN)                                      40710  1   14 
+           (9-F-18,112.MIN)                                       40710  1   15 
+ERR-ANALYS (DATA-ERR) Standard deviation.                         40710  1   16 
+HISTORY    (19840417T) Converted from ENTRY 80118                 40710  1   17 
+           (20231113A) Upper -> lower case correction.            40710  1   18 
+            Dates were corrected for 4-digits year.               40710  1   19 
+            Data units were corrected as given in the article.    40710  1   20 
+ENDBIB              18          0                                 40710  1   21 
+COMMON               1          3                                 40710  1   22 
+MONIT                                                             40710  1   23 
+B                                                                 40710  1   24 
+ 0.5                                                              40710  1   25 
+ENDCOMMON            3          0                                 40710  1   26 
+ENDSUBENT           25          0                                 40710  199999 
+SUBENT        40710002   20231113                             421640710  2    1 
+BIB                  3          3                                 40710  2    2 
+REACTION   (47-AG-109(N,P)46-PD-109,,SIG)                         40710  2    3 
+SAMPLE      AgNO(3), 8.0 g, in a thin 22x64x3 mm3 container.      40710  2    4 
+STATUS     (TABLE,,B.G.Dzantijev+,J,SPD,2,135,1957) Table 5.      40710  2    5 
+ENDBIB               3          0                                 40710  2    6 
+NOCOMMON             0          0                                 40710  2    7 
+DATA                 3          1                                 40710  2    8 
+EN         DATA       DATA-ERR                                    40710  2    9 
+MEV        MB         MB                                          40710  2   10 
+ 14.        10.5       2.0                                        40710  2   11 
+ENDDATA              3          0                                 40710  2   12 
+ENDSUBENT           11          0                                 40710  299999 
+SUBENT        40710003   20231113                             421640710  3    1 
+BIB                  2          2                                 40710  3    2 
+REACTION   (48-CD-112(N,A)46-PD-109,,SIG)                         40710  3    3 
+STATUS     (TABLE,,B.G.Dzantijev+,J,SPD,2,135,1957) Table 5.      40710  3    4 
+ENDBIB               2          0                                 40710  3    5 
+NOCOMMON             0          0                                 40710  3    6 
+DATA                 3          1                                 40710  3    7 
+EN         DATA       DATA-ERR                                    40710  3    8 
+MEV        MB         MB                                          40710  3    9 
+ 14.        1.35       0.27                                       40710  3   10 
+ENDDATA              3          0                                 40710  3   11 
+ENDSUBENT           10          0                                 40710  399999 
+SUBENT        40710004   20231113                             421640710  4    1 
+BIB                  3          3                                 40710  4    2 
+REACTION   (48-CD-114(N,A)46-PD-111-G,,SIG)                       40710  4    3 
+STATUS     (TABLE,,B.G.Dzantijev+,J,SPD,2,135,1957) Table 5.      40710  4    4 
+DECAY-DATA (46-PD-111-G,22.MIN)                                   40710  4    5 
+ENDBIB               3          0                                 40710  4    6 
+NOCOMMON             0          0                                 40710  4    7 
+DATA                 3          1                                 40710  4    8 
+EN         DATA       DATA-ERR                                    40710  4    9 
+MEV        MB         MB                                          40710  4   10 
+ 14.        0.51       0.13                                       40710  4   11 
+ENDDATA              3          0                                 40710  4   12 
+ENDSUBENT           11          0                                 40710  499999 
+SUBENT        40710005   20231113                             421640710  5    1 
+BIB                  3          3                                 40710  5    2 
+REACTION   (48-CD-114(N,A)46-PD-111-M,,SIG)                       40710  5    3 
+DECAY-DATA (46-PD-111-M,5.5HR)                                    40710  5    4 
+STATUS     (TABLE,,B.G.Dzantijev+,J,SPD,2,135,1957) Table 5.      40710  5    5 
+ENDBIB               3          0                                 40710  5    6 
+NOCOMMON             0          0                                 40710  5    7 
+DATA                 3          1                                 40710  5    8 
+EN         DATA       DATA-ERR                                    40710  5    9 
+MEV        MB         MB                                          40710  5   10 
+ 14.        0.13       0.04                                       40710  5   11 
+ENDDATA              3          0                                 40710  5   12 
+ENDSUBENT           11          0                                 40710  599999 
 ENDENTRY             5          0                                 4071099999999 
