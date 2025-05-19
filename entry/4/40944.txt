@@ -1,57 +1,62 @@
-ENTRY            40944   20010315                             00004094400000001 
-SUBENT        40944001   20010315                             00004094400100001 
-BIB                 13         18                                 4094400100002 
-INSTITUTE  (4UKRKGU)                                              4094400100003 
-REFERENCE  (C,86KHARKO,,94,198604)                                4094400100004 
-AUTHOR     (V.L.DEMEKHIN,V.K.MAYDANYUK,V.M.NEPLYUEV,              4094400100005 
-           G.I.PRIMENKO,V.K.TARAKANOV)                            4094400100006 
-TITLE       GAMMA-SPECTROSCOPIC STUDY OF NEUTRON RADIATION        4094400100007 
-            CROSS-SECTIONS AT NUCLEI IN-115 AND AU-197 FOR        4094400100008 
-            NEUTRON INCIDENT ENERGY 2.7 MEV                       4094400100009 
-FACILITY   (CCW)  NEUTRON GENERATOR                               4094400100010 
-INC-SOURCE (D-D)                                                  4094400100011 
-METHOD     (ACTIV)                                                4094400100012 
-DETECTOR   (GELI)                                                 4094400100013 
-PART-DET   (G)                                                    4094400100014 
-MONITOR    (49-IN-115(N,INL)49-IN-115-M,,SIG)                     4094400100015 
-ERR-ANALYS (DATA-ERR)  NOT SPECIFIED                              4094400100016 
-STATUS      FROM THE REFERENCE                                    4094400100017 
-HISTORY    (19880406C)  COMPILED AT THE CJD                       4094400100018 
-           (19920726U) MONITOR CODE IN SAN 001 CORRECTED          4094400100019 
-               EN-NRM, E-NRM IN COMMON SECTION DELETED            4094400100020 
-ENDBIB              18          0                                 4094400100021 
-COMMON               3          3                                 4094400100022 
-EN         MONIT      MONIT-ERR                                   4094400100023 
-MEV        MB         MB                                          4094400100024 
-  2.7        340.       20.                                       4094400100025 
-ENDCOMMON            3          0                                 4094400100026 
-ENDSUBENT           25          0                                 4094400199999 
-SUBENT        40944002   20010315                             00004094400200001 
-BIB                  4          4                                 4094400200002 
-REACTION   (49-IN-115(N,G)49-IN-116-M,,SIG)                       4094400200003 
-SAMPLE      METALLIC FOIL                                         4094400200004 
-DECAY-DATA (49-IN-116-M,,DG,417.)                                 4094400200005 
-HISTORY    (19920726U) 'PAR' IN REACTION SF5 DELETED              4094400200006 
-ENDBIB               4          0                                 4094400200007 
-NOCOMMON             0          0                                 4094400200008 
-DATA                 2          1                                 4094400200009 
-DATA       DATA-ERR                                               4094400200010 
-MB         MB                                                     4094400200011 
-  61.        6.                                                   4094400200012 
-ENDDATA              3          0                                 4094400200013 
-ENDSUBENT           12          0                                 4094400299999 
-SUBENT        40944003   20010315                             00004094400300001 
-BIB                  3          4                                 4094400300002 
-REACTION   (79-AU-197(N,G)79-AU-198,,SIG)                         4094400300003 
-SAMPLE      GOLD FOILS OF DIFFENTE THICKNESS WRAPPED IN           4094400300004 
-            INDIUM FOILS                                          4094400300005 
-DECAY-DATA (79-AU-198,,DG,412.)                                   4094400300006 
-ENDBIB               4          0                                 4094400300007 
-NOCOMMON             0          0                                 4094400300008 
-DATA                 2          1                                 4094400300009 
-DATA       DATA-ERR                                               4094400300010 
-MB         MB                                                     4094400300011 
-  33.        4.                                                   4094400300012 
-ENDDATA              3          0                                 4094400300013 
-ENDSUBENT           12          0                                 4094400399999 
+ENTRY            40944   20240208                             421740944000    1 
+SUBENT        40944001   20240208                             421740944001    1 
+BIB                 12         20                                 40944001    2 
+TITLE       Gamma-spectroscopic study of neutron radiation capture40944001    3 
+            cross-sections at nuclei In-115 and Au-197 for        40944001    4 
+            neutron incident energy 2.7 MeV                       40944001    5 
+AUTHOR     (V.L.Demekhin,V.K.Maydanyuk,V.M.Neplyuev,              40944001    6 
+           G.I.Primenko,V.K.Tarakanov)                            40944001    7 
+REFERENCE  (C,86KHARKO,,94,1986)                                  40944001    8 
+INSTITUTE  (4UKRKGU)                                              40944001    9 
+FACILITY   (NGEN,4UKRKGU)  Neutron generator                      40944001   10 
+INC-SOURCE (D-D)                                                  40944001   11 
+METHOD     (ACTIV)                                                40944001   12 
+DETECTOR   (GELI)                                                 40944001   13 
+MONITOR    (49-IN-115(N,INL)49-IN-115-M,,SIG)                     40944001   14 
+DECAY-MON  (49-IN-115-M,,DG,336.)                                 40944001   15 
+ERR-ANALYS (DATA-ERR)  Not specified                              40944001   16 
+HISTORY    (19880406C)  Compiled at the CJD                       40944001   17 
+           (19920726U) MONITOR code in SAN 001 corrected.         40944001   18 
+               EN-NRM, E-NRM in COMMON section deleted            40944001   19 
+           (20240208U) Upper -> lower case correction.            40944001   20 
+            "PART-DET (G)" was deleted according to a comment of  40944001   21 
+            N.Otsuka (NDS,IAEA).                                  40944001   22 
+ENDBIB              20          0                                 40944001   23 
+COMMON               3          3                                 40944001   24 
+EN         MONIT      MONIT-ERR                                   40944001   25 
+MEV        MB         MB                                          40944001   26 
+  2.7        340.       20.                                       40944001   27 
+ENDCOMMON            3          0                                 40944001   28 
+ENDSUBENT           27          0                                 4094400199999 
+SUBENT        40944002   20240208                             421740944002    1 
+BIB                  5          6                                 40944002    2 
+REACTION   (49-IN-115(N,G)49-IN-116-M1,,SIG)                      40944002    3 
+SAMPLE      Metallic foil                                         40944002    4 
+DECAY-DATA (49-IN-116-M1,,DG,417.)                                40944002    5 
+STATUS     (TABLE,,V.L.Demekhin+,C,86KHARKO,,94,1986) Text page 9440944002    6 
+HISTORY    (19920726U) 'PAR' In REACTION SF5 deleted              40944002    7 
+           (20240208A) M -> M1 in REACTION and DECAY-DATA.        40944002    8 
+ENDBIB               6          0                                 40944002    9 
+NOCOMMON             0          0                                 40944002   10 
+DATA                 2          1                                 40944002   11 
+DATA       DATA-ERR                                               40944002   12 
+MB         MB                                                     40944002   13 
+  61.        6.                                                   40944002   14 
+ENDDATA              3          0                                 40944002   15 
+ENDSUBENT           14          0                                 4094400299999 
+SUBENT        40944003   20240208                             421740944003    1 
+BIB                  4          5                                 40944003    2 
+REACTION   (79-AU-197(N,G)79-AU-198,,SIG)                         40944003    3 
+SAMPLE      Gold foils of different thickness wrapped in          40944003    4 
+            indium foils                                          40944003    5 
+DECAY-DATA (79-AU-198,,DG,412.)                                   40944003    6 
+STATUS     (TABLE,,V.L.Demekhin+,C,86KHARKO,,94,1986) Text page 9440944003    7 
+ENDBIB               5          0                                 40944003    8 
+NOCOMMON             0          0                                 40944003    9 
+DATA                 2          1                                 40944003   10 
+DATA       DATA-ERR                                               40944003   11 
+MB         MB                                                     40944003   12 
+  33.        4.                                                   40944003   13 
+ENDDATA              3          0                                 40944003   14 
+ENDSUBENT           13          0                                 4094400399999 
 ENDENTRY             3          0                                 4094499999999 

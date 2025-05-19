@@ -1,47 +1,81 @@
-ENTRY            40988   19890913                             00004098800000001 
-SUBENT        40988001   19890913                             00004098800100001 
-BIB                 13         15                                 4098800100002 
-TITLE       THERMAL NEUTRONS RADIATION CAPTURE CROSS-SECTION      4098800100003 
-            FOR U-236 AND TH-232                                  4098800100004 
-AUTHOR     (A.N.DAVLETSHIN,V.V.SINITSA,O.A.TIPUNKOV,              4098800100005 
-           S.V.TIKHONOV,V.A.TOLSTIKOV)                            4098800100006 
-INSTITUTE  (4CCPFEI)                                              4098800100007 
-REFERENCE  (C,87KIEV,2,309,8709)                                  4098800100008 
-FACILITY   (REAC) REACTOR BR-10                                   4098800100009 
-INC-SOURCE (THCOL) THERMAL COLUMN                                 4098800100010 
-MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         4098800100011 
-DETECTOR   (GELI)                                                 4098800100012 
-METHOD     (ACTIV)                                                4098800100013 
-STATUS      DATA ARE TAKEN FROM THE REFERENCE                     4098800100014 
-ERR-ANALYS (ERR-T) TOTAL ERROR                                    4098800100015 
-CORRECTION  CORRECTIONS IN THE SELF-SHIELDING WERE MADE           4098800100016 
-HISTORY    (890913C)  COMPILED AT THE CENTRE - CJD                4098800100017 
-ENDBIB              15          0                                 4098800100018 
-NOCOMMON             0          0                                 4098800100019 
-ENDSUBENT           18          0                                 4098800199999 
-SUBENT        40988002   19890913                             00004098800200001 
-BIB                  2          3                                 4098800200002 
-REACTION   (92-U-236(N,G)92-U-237,,SIG)                           4098800200003 
-SAMPLE      POWDER IN THE STAINLESS-STEEL CONTAINER,              4098800200004 
-            U-236 CONTENT 98.5 PC                                 4098800200005 
-ENDBIB               3          0                                 4098800200006 
-NOCOMMON             0          0                                 4098800200007 
-DATA                 3          1                                 4098800200008 
-EN         DATA       ERR-T                                       4098800200009 
-EV         B          B                                           4098800200010 
-   2.53E-02  5.09       0.10                                      4098800200011 
-ENDDATA              3          0                                 4098800200012 
-ENDSUBENT           11          0                                 4098800299999 
-SUBENT        40988003   19890913                             00004098800300001 
-BIB                  2          2                                 4098800300002 
-REACTION   (90-TH-232(N,G)90-TH-233,,SIG)                         4098800300003 
-SAMPLE      POWDER IN THE STAINLESS-STEEL CONTAINER               4098800300004 
-ENDBIB               2          0                                 4098800300005 
-NOCOMMON             0          0                                 4098800300006 
-DATA                 3          1                                 4098800300007 
-EN         DATA       ERR-T                                       4098800300008 
-EV         B          B                                           4098800300009 
-   2.53E-02  7.49       0.20                                      4098800300010 
-ENDDATA              3          0                                 4098800300011 
-ENDSUBENT           10          0                                 4098800399999 
+ENTRY            40988   20240208                             421740988000    1 
+SUBENT        40988001   20240208                             421740988001    1 
+BIB                 14         27                                 40988001    2 
+TITLE       Thermal neutrons radiation capture cross-section      40988001    3 
+            for U-236 and Th-232                                  40988001    4 
+AUTHOR     (A.N.Davletshin,V.V.Sinitsa,O.A.Tipunkov,              40988001    5 
+           S.V.Tikhonov,V.A.Tolstikov)                            40988001    6 
+INSTITUTE  (4RUSFEI)                                              40988001    7 
+REFERENCE  (C,87KIEV,2,309,1987)                                  40988001    8 
+FACILITY   (REAC,4RUSFEI) Reactor BR-10.                          40988001    9 
+INC-SOURCE (THCOL)                                                40988001   10 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         40988001   11 
+MONIT-REF  (,S.F.Mughabghab+,B,NEUT.CS 1A,,,1981)                 40988001   12 
+DECAY-MON  (79-AU-198,,DG,412.)                                   40988001   13 
+DETECTOR   (GELI)                                                 40988001   14 
+METHOD     (ACTIV)                                                40988001   15 
+ERR-ANALYS (ERR-T) Total error                                    40988001   16 
+           (ERR-1) Uncertainty of detector absolute efficiency    40988001   17 
+           for Au.                                                40988001   18 
+           (ERR-2,0.4,0.5) Uncertainty including statistics and   40988001   19 
+           corrections for self-absorption and for activation     40988001   20 
+           by scattering neutrons.                                40988001   21 
+CORRECTION  For self-shielding :                                  40988001   22 
+            Au - 1.057, U - 1.009, Th - 1.010.                    40988001   23 
+            For activation by scattered neutrons - 0.987, 0.973,  40988001   24 
+            0.977, respectively.                                  40988001   25 
+HISTORY    (19890913C)  Compiled at the centre - CJD.             40988001   26 
+           (20240208A) Upper -> lower case correction.            40988001   27 
+            Dates were corrected for 4-digits year.               40988001   28 
+            Decay data, partial uncertainties were added.         40988001   29 
+ENDBIB              27          0                                 40988001   30 
+COMMON               1          3                                 40988001   31 
+ERR-1                                                             40988001   32 
+PER-CENT                                                          40988001   33 
+ 1.5                                                              40988001   34 
+ENDCOMMON            3          0                                 40988001   35 
+ENDSUBENT           34          0                                 4098800199999 
+SUBENT        40988002   20240208                             421740988002    1 
+BIB                  6         13                                 40988002    2 
+REACTION   (92-U-236(N,G)92-U-237,,SIG)                           40988002    3 
+SAMPLE      U(3)O(8) powder in the stainless-steel container,     40988002    4 
+            U-236 content 98.5 %.                                 40988002    5 
+DECAY-DATA (92-U-237,,DG,208.)                                    40988002    6 
+ERR-ANALYS (ERR-3) Uncertainty of detector absolute efficiency    40988002    7 
+           for U                                                  40988002    8 
+REL-REF    (A,,,R,BNL-325,(1),1973)                  5.2+-0.3 b   40988002    9 
+           (A,,C.M.Lederer+,B,LEDERER-7,,,1978)      5.1+-0.3 b   40988002   10 
+           (A,,S.F.Mughabghab+,B,NEUT.CS 1A,,,1981)  5.11+-0.21 b 40988002   11 
+           (A,40579006,L.N.Yurova+,C,83KIEV,2,177,1983)           40988002   12 
+                                                     5.00+-0.14 b 40988002   13 
+STATUS     (TABLE),,A.N.Davletshin+,C,87KIEV,2,309,1987)          40988002   14 
+            Table on page 311.                                    40988002   15 
+ENDBIB              13          0                                 40988002   16 
+NOCOMMON             0          0                                 40988002   17 
+DATA                 4          1                                 40988002   18 
+EN         DATA       ERR-T      ERR-3                            40988002   19 
+EV         B          B          PER-CENT                         40988002   20 
+   2.53E-02  5.09       0.10      1.1                             40988002   21 
+ENDDATA              3          0                                 40988002   22 
+ENDSUBENT           21          0                                 4098800299999 
+SUBENT        40988003   20240208                             421740988003    1 
+BIB                  6         10                                 40988003    2 
+REACTION   (90-TH-232(N,G)90-TH-233,,SIG)                         40988003    3 
+SAMPLE      ThO(2) powder in the stainless-steel container        40988003    4 
+DECAY-DATA (90-TH-233,,DG,312.)                                   40988003    5 
+ERR-ANALYS (ERR-3) Uncertainty of detector absolute efficiency    40988003    6 
+           for Th.                                                40988003    7 
+REL-REF    (A,,,R,BNL-325,(1),1973)                  7.4+-0.008 b 40988003    8 
+           (A,,C.M.Lederer+,B,LEDERER-7,,,1978)      7.4+-0.1 b   40988003    9 
+           (A,,S.F.Mughabghab+,B,NEUT.CS 1A,,,1981)  7.37+-0.06 b 40988003   10 
+STATUS     (TABLE),,A.N.Davletshin+,C,87KIEV,2,309,1987)          40988003   11 
+            Table on page 311.                                    40988003   12 
+ENDBIB              10          0                                 40988003   13 
+NOCOMMON             0          0                                 40988003   14 
+DATA                 4          1                                 40988003   15 
+EN         DATA       ERR-T      ERR-3                            40988003   16 
+EV         B          B          PER-CENT                         40988003   17 
+   2.53E-02  7.49       0.20      2.                              40988003   18 
+ENDDATA              3          0                                 40988003   19 
+ENDSUBENT           18          0                                 4098800399999 
 ENDENTRY             3          0                                 4098899999999 

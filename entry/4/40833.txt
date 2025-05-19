@@ -1,79 +1,86 @@
-ENTRY            40833   20231226                             421640833  0    1 
-SUBENT        40833001   20231226                             421640833  1    1 
-BIB                 11         28                                 40833  1    2 
-TITLE       Np-237 neutron fission cross-section near the         40833  1    3 
-            threshold (n,n'f)                                     40833  1    4 
-AUTHOR     (A.A.Goverdovskiy,A.K.Gordyushin,B.D.Kuz'minov,        40833  1    5 
-           V.F.Mitrovanov,A.I.Sergachev,S.M.Solov'ev,             40833  1    6 
-           P.S.Soloshenkov)                                       40833  1    7 
-REFERENCE  (R,FEI-1552,1984)  Data are given                      40833  1    8 
-INSTITUTE  (4RUSFEI)                                              40833  1    9 
-FACILITY   (VDG) Electrostatic charge exchange accelerator EGP-10M40833  1   10 
-INC-SOURCE (D-D) Gaseous deuterium target.                        40833  1   11 
-METHOD     (TOF)  Flight base 60 cm                               40833  1   12 
-DETECTOR   (IOCH) Double ionization chamber. Filled with methane  40833  1   13 
-            at 1.8 atm pressure. Fission detection efficiency     40833  1   14 
-           96 % for Np, 98 % for U.                               40833  1   15 
-CORRECTION   Background neutron scattering - 0.2 %                40833  1   16 
-             Fragments slowing-down in sample - 0.5 %             40833  1   17 
-             Admixture isotopes fission - 0.3 %                   40833  1   18 
-             Geometrical factor - 0.1 %                           40833  1   19 
-ERR-ANALYS (ERR-T) Total uncertainty includes:                    40833  1   20 
-           (ERR-S) Statistical uncertainty,                       40833  1   21 
-           (ERR-1) Error caused by the absolute value calculation 40833  1   22 
-           (ERR-2) Error caused by the U-235 to NP-237 fission    40833  1   23 
-                   fragments detection efficiencies               40833  1   24 
-           (ERR-3) Error due to the corrections introduced        40833  1   25 
-HISTORY    (19850218C)                                            40833  1   26 
-           (20231226A) ERR-S was deleted from COMMON block - it's 40833  1   27 
-            given in DATA block.                                  40833  1   28 
-            Upper -> lower case correction .                      40833  1   29 
-            Dates were corrected for 4-digits year.               40833  1   30 
-ENDBIB              28          0                                 40833  1   31 
-COMMON               3          3                                 40833  1   32 
-ERR-1      ERR-2      ERR-3                                       40833  1   33 
-PER-CENT   PER-CENT   PER-CENT                                    40833  1   34 
- 2.         1.2        0.2                                        40833  1   35 
-ENDCOMMON            3          0                                 40833  1   36 
-ENDSUBENT           35          0                                 40833  199999 
-SUBENT        40833002   20231226                             421640833  2    1 
-BIB                  4         15                                 40833  2    2 
-REACTION   ((93-NP-237(N,F),,SIG)/(92-U-235(N,F),,SIG))           40833  2    3 
-SAMPLE     Layers of 0.3 - 0.5 mg/cm2 thickness, 50 mm diameter,  40833  2    4 
-           on Al backings of 20 microm thickness.                 40833  2    5 
-            First sample  U-235 content is 99.992 % , density     40833  2    6 
-                          0.258 milligram/cm2                     40833  2    7 
-            Second sample U-235 content 5.889 % , Np-237 content  40833  2    8 
-                          94.111 % , density 0.300 milligram/cm2  40833  2    9 
-            Third sample U-235 content is 99.994 % , density      40833  2   10 
-                          0.41 milligram/cm2                      40833  2   11 
-            Forth sample Np-237 content 99.05 % , Pu-239 content  40833  2   12 
-                          0.43 % , Am-241 content 0.52 % ,        40833  2   13 
-                          density 0.46 milligram/cm2              40833  2   14 
-MONITOR     Absolute measurement                                  40833  2   15 
-STATUS     (TABLE,,A.A.Goverdovskiy+,R,FEI-1552,1984)             40833  2   16 
-           (PRELM)                                                40833  2   17 
-ENDBIB              15          0                                 40833  2   18 
-NOCOMMON             0          0                                 40833  2   19 
-DATA                 5         16                                 40833  2   20 
-EN         EN-RSL-FW  DATA       ERR-T      ERR-S                 40833  2   21 
-MEV        KEV        NO-DIM     PER-CENT   PER-CENT              40833  2   22 
-  5.66       116.      1.315       3.38      0.7                  40833  2   23 
-  5.88       108.      1.331       2.40      0.8                  40833  2   24 
-  6.10       103.      1.395       2.45      1.0                  40833  2   25 
-  6.32        97.      1.349       2.42      0.9                  40833  2   26 
-  6.50        93.      1.330       2.42      0.9                  40833  2   27 
-  6.68        89.      1.312       2.42      0.9                  40833  2   28 
-  7.34        78.      1.232       1.75      0.6                  40833  2   29 
-  7.96        70.      1.161       2.45      1.0                  40833  2   30 
-  8.10        68.      1.151       2.45      1.0                  40833  2   31 
-  8.39        65.      1.177       2.44      1.0                  40833  2   32 
-  8.64        63.      1.157       2.46      0.8                  40833  2   33 
-  8.78        62.      1.170       2.47      0.9                  40833  2   34 
-  9.03        60.      1.150       2.45      1.0                  40833  2   35 
-  9.17        59.      1.150       2.52      1.0                  40833  2   36 
-  9.44        57.      1.135       2.50      1.1                  40833  2   37 
- 10.06        53.      1.123       2.50      1.1                  40833  2   38 
-ENDDATA             18          0                                 40833  2   39 
-ENDSUBENT           38          0                                 40833  299999 
+ENTRY            40833   20240617                             421740833000    1 
+SUBENT        40833001   20240617                             421740833001    1 
+BIB                 11         31                                 40833001    2 
+TITLE      Cross section for fission of 237Np induced by neutrons 40833001    3 
+            in the (n,n'f) threshold region                       40833001    4 
+AUTHOR     (A.A.Goverdovskiy, A.K.Gordyushin, B.D.Kuz'minov,      40833001    5 
+            V.F.Mitrovanov, A.I.Sergachev, S.M.Solov'ev,          40833001    6 
+            P.S.Soloshenkov)                                      40833001    7 
+REFERENCE  (R,FEI-1552,1984)                                      40833001    8 
+INSTITUTE  (4RUSFEI)                                              40833001    9 
+FACILITY   (VDGT,4RUSFEI) EGP-10M                                 40833001   10 
+INC-SOURCE (D-D) Gaseous deuterium target.                        40833001   11 
+METHOD     (TOF) Flight base 60 cm                                40833001   12 
+DETECTOR   (FISCH) Double ionization chamber. Filled with methane 40833001   13 
+            at 1.8 atm pressure. Fission detection efficiency     40833001   14 
+            96 % for Np, 98 % for U.                              40833001   15 
+CORRECTION Corrected for                                          40833001   16 
+            . background neutron scattering       (<0.2%)         40833001   17 
+            . fragments slowing-down in sample    (<0.5%)         40833001   18 
+            . admixture isotopes fission       (0.2-0.3%)         40833001   19 
+            . experimental hall background       (<0.15%)         40833001   20 
+            . geometry in Monte Carlo method      (<0.1%)         40833001   21 
+ERR-ANALYS (ERR-T) Total uncertainty                              40833001   22 
+           (ERR-S) statistical uncertainty                        40833001   23 
+           (ERR-1) normalization                          (~2%)   40833001   24 
+           (ERR-2) 237Np/235U detection efficiency ratio (1.2%)   40833001   25 
+           (ERR-3) corrections                           (0.2%)   40833001   26 
+HISTORY    (19850218C)                                            40833001   27 
+           (20231226A) ERR-S was deleted from COMMON block - it's 40833001   28 
+           given in DATA block.                                   40833001   29 
+           Upper -> lower case correction.                        40833001   30 
+           Dates were corrected for 4-digits year.                40833001   31 
+           (20240308A) VT. Revision in 002. BIB section updated.  40833001   32 
+           (20240617U) M.M. Minor correction of BIB information.  40833001   33 
+ENDBIB              31          0                                 40833001   34 
+COMMON               3          3                                 40833001   35 
+ERR-1      ERR-2      ERR-3                                       40833001   36 
+PER-CENT   PER-CENT   PER-CENT                                    40833001   37 
+ 2.         1.2        0.2                                        40833001   38 
+ENDCOMMON            3          0                                 40833001   39 
+ENDSUBENT           38          0                                 4083300199999 
+SUBENT        40833002   20240617                             421740833002    1 
+BIB                  5         19                                 40833002    2 
+REACTION   ((93-NP-237(N,F),,SIG)/(92-U-235(N,F),,SIG))           40833002    3 
+MONITOR    Absolute measurement (isotopic dilution method)        40833002    4 
+SAMPLE      Layers of 50 mm diameter on Al backings of 20 micron  40833002    5 
+            thickness.                                            40833002    6 
+           Nuclide content (%):                                   40833002    7 
+           ---------------------------------------------------    40833002    8 
+            Sample   235U      237Np        Thickness (mg/cm2)    40833002    9 
+           ---------------------------------------------------    40833002   10 
+             1.     99.992                    0.258               40833002   11 
+             2.      5.889     94.111         0.300               40833002   12 
+             3.     99.994                    0.41                40833002   13 
+             4.                99.05          0.46                40833002   14 
+           ----------------------------------------------------   40833002   15 
+STATUS     (TABLE,,A.A.Goverdovskij+,R,FEI-1552,1984) Table 2     40833002   16 
+           (PRELM)                                                40833002   17 
+           (SPSDD,40861004)                                       40833002   18 
+HISTORY    (20240617A) Code SPSDD was added - in 40861 data from  40833002   19 
+           FEI-1552 are not mentioned and are not used on figure  40833002   20 
+           fro comparison with other data.                        40833002   21 
+ENDBIB              19          0                                 40833002   22 
+NOCOMMON             0          0                                 40833002   23 
+DATA                 5         16                                 40833002   24 
+EN         EN-RSL-FW  DATA       ERR-T      ERR-S                 40833002   25 
+MEV        KEV        NO-DIM     PER-CENT   PER-CENT              40833002   26 
+  5.66      116.       1.315      3.38       0.7                  40833002   27 
+  5.88      108.       1.331      2.40       0.8                  40833002   28 
+  6.10      103.       1.395      2.45       1.0                  40833002   29 
+  6.32       97.       1.349      2.42       0.9                  40833002   30 
+  6.50       93.       1.330      2.42       0.9                  40833002   31 
+  6.68       89.       1.312      2.42       0.9                  40833002   32 
+  7.34       78.       1.232      1.75       0.6                  40833002   33 
+  7.96       70.       1.161      2.45       1.0                  40833002   34 
+  8.10       68.       1.151      2.45       1.0                  40833002   35 
+  8.39       65.       1.177      2.44       1.0                  40833002   36 
+  8.64       63.       1.157      2.46       0.8                  40833002   37 
+  8.78       62.       1.170      2.47       0.9                  40833002   38 
+  9.03       60.       1.150      2.45       1.0                  40833002   39 
+  9.17       59.       1.150      2.52       1.0                  40833002   40 
+  9.44       57.       1.135      2.50       1.1                  40833002   41 
+ 10.06       53.       1.123      2.50       1.1                  40833002   42 
+ENDDATA             18          0                                 40833002   43 
+ENDSUBENT           42          0                                 4083300299999 
 ENDENTRY             2          0                                 4083399999999 

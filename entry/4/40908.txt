@@ -1,34 +1,49 @@
-ENTRY            40908   20010319                             00004090800000001 
-SUBENT        40908001   20010319                             00004090800100001 
-BIB                 11         14                                 4090800100002 
-INSTITUTE  (4UKRKGU)                                              4090800100003 
-REFERENCE  (C,84ALMAAT,,329,198404)                               4090800100004 
-AUTHOR     (V.L.DEMEKHIN,B.E.LESHCHENKO,V.K.MAYDANYUK,G.PETO,     4090800100005 
-           V.A.PLYUYKO)                                           4090800100006 
-TITLE       AU-198 ISOMERIC STATE EXCITATION IN THE REACTION      4090800100007 
-            (N-GAMMA) AT THE NEUTRON ENERGY 14.6 MEV              4090800100008 
-FACILITY    NEUTRON GENERATOR                                     4090800100009 
-METHOD     (ACTIV)                                                4090800100010 
-DETECTOR   (GELI)                                                 4090800100011 
-MONITOR     NO INFORMATION                                        4090800100012 
-ERR-ANALYS (DATA-ERR)  NOT SPECIFIED                              4090800100013 
-STATUS      FROM THE ABOVE-MENTIONED REFERENCE                    4090800100014 
-HISTORY    (19861010C)   COMPILED AC CJD                          4090800100015 
-           (20010319A) DATE is corrected                          4090800100016 
-ENDBIB              14          0                                 4090800100017 
-NOCOMMON             0          0                                 4090800100018 
-ENDSUBENT           17          0                                 4090800199999 
-SUBENT        40908002   20010319                             00004090800200001 
-BIB                  3          3                                 4090800200002 
-REACTION   (79-AU-197(N,G)79-AU-198-M,,SIG)                       4090800200003 
-DECAY-DATA (79-AU-198-M,2.30D,DG,811.7)                           4090800200004 
-DECAY-MON  (79-AU-198-G,2.69D,DG,411.8)                           4090800200005 
-ENDBIB               3          0                                 4090800200006 
-NOCOMMON             0          0                                 4090800200007 
-DATA                 3          1                                 4090800200008 
-EN         DATA       DATA-ERR                                    4090800200009 
-MEV        B          B                                           4090800200010 
- 14.6          400.E-6    100.E-6                                 4090800200011 
-ENDDATA              3          0                                 4090800200012 
-ENDSUBENT           11          0                                 4090800299999 
+ENTRY            40908   20240208                             421740908000    1 
+SUBENT        40908001   20240208                             421740908001    1 
+BIB                  9         16                                 40908001    2 
+TITLE       Au-198 isomeric state excitation in the reaction      40908001    3 
+            (n,gamma) at En = 14.6 MeV                            40908001    4 
+AUTHOR     (V.L.Demekhin,B.E.Leshchenko,V.K.Maydanyuk,G.Peto,     40908001    5 
+           V.A.Plyuyko)                                           40908001    6 
+REFERENCE  (C,84ALMAAT,,329,1984)                                 40908001    7 
+INSTITUTE  (4UKRKGU)                                              40908001    8 
+FACILITY   (NGEN) Neutron generator                               40908001    9 
+METHOD     (ACTIV)                                                40908001   10 
+DETECTOR   (GELI)                                                 40908001   11 
+ERR-ANALYS (DATA-ERR)  Not specified                              40908001   12 
+HISTORY    (19861010C)   Compiled at CJD                          40908001   13 
+           (20010319A) DATE is corrected                          40908001   14 
+           (20240208A) BIB information was updated.               40908001   15 
+            MONITOR line was moved in Subent 002 and corrected as 40908001   16 
+            ASSUMED.                                              40908001   17 
+            Upper -> lower case correction.                       40908001   18 
+ENDBIB              16          0                                 40908001   19 
+NOCOMMON             0          0                                 40908001   20 
+ENDSUBENT           19          0                                 4090800199999 
+SUBENT        40908002   20240208                             421740908002    1 
+BIB                  7         16                                 40908002    2 
+REACTION   (79-AU-197(N,G)79-AU-198-M,,SIG,,,DERIV)               40908002    3 
+DECAY-DATA (79-AU-198-M,2.30D) 811.7 keV gamma-line was not used  40908002    4 
+           for C-S calculation due to very low it's intensity.    40908002    5 
+           (79-AU-198-G,2.69D,DG,411.8)                           40908002    6 
+ASSUMED    (ASSUM,79-AU-197(N,G)79-AU-198-G,,SIG)                 40908002    7 
+ANALYSIS   (DECAY) Experimental Au-198-G decay curve was compared 40908002    8 
+           with theoretical calculation, taking into account      40908002    9 
+           decay of Au-198-M isomeric state and using results of  40908002   10 
+           V.K.Maydanyuk+, see REL-REF.                           40908002   11 
+REL-REF    (N,,V.K.Maydanyuk+,C,82KIEV,,541,1982)                 40908002   12 
+STATUS     (TABLE,,V.L.Demekhin+,C,84ALMAAT,,329,1984)            40908002   13 
+            Text on page 329.                                     40908002   14 
+HISTORY    (20240208A) DATA-ERR: 100. -> 140. microbarn as given  40908002   15 
+           in the article.                                        40908002   16 
+            DERIV code was added in REACTION according to a       40908002   17 
+           comment of N.Otsuka (NDS,IAEA).                        40908002   18 
+ENDBIB              16          0                                 40908002   19 
+NOCOMMON             0          0                                 40908002   20 
+DATA                 5          1                                 40908002   21 
+EN         DATA       DATA-ERR   ASSUM      ASSUM-ERR             40908002   22 
+MEV        MICRO-B    MICRO-B    MB         MB                    40908002   23 
+ 14.6          400.       140.    1.4        0.4                  40908002   24 
+ENDDATA              3          0                                 40908002   25 
+ENDSUBENT           24          0                                 4090800299999 
 ENDENTRY             2          0                                 4090899999999 

@@ -1,0 +1,78 @@
+ENTRY            41772   20240423                             421741772000    1 
+SUBENT        41772001   20240423                             421741772001    1 
+BIB                 11         20                                 41772001    2 
+TITLE      The measurement of the 6Li(n,t)4He reaction cross      41772001    3 
+           section in the energy range of 4.25 - 7.50 MeV         41772001    4 
+AUTHOR     (P.S.Prusachenko, T.L.Bobrovskiy)                      41772001    5 
+REFERENCE  (J,EPJ/A,60,12,2024)                                   41772001    6 
+           #doi:10.1140/epja/s10050-024-01236-3                   41772001    7 
+INSTITUTE  (4RUSFEI)                                              41772001    8 
+FACILITY   (ACCEL,4RUSFEI) IPPE 3-MV tandem accelerator.          41772001    9 
+INC-SOURCE (D-D) Deuterium-saturated titanium target of 1 mg/cm2  41772001   10 
+           thickness, ratio D/Ti atoms 2:1, was irradiated by     41772001   11 
+           deuteron beam.                                         41772001   12 
+INC-SPECT   Quasi-mono-energy neutrons.                           41772001   13 
+METHOD     (TOF)                                                  41772001   14 
+DETECTOR   (SCIN) Cs2LiYCl6:ce based scintillation detector,      41772001   15 
+           placed at 186.3+-0.5 cm from the target.               41772001   16 
+           (FISCH) U-235(3)O(8) fission chamber for neutron flux  41772001   17 
+            monitoring, was placed at 46.5+-0.5 cm from the       41772001   18 
+            target.                                               41772001   19 
+STATUS     (APRVD) Approved by the author P.Prusachenko.          41772001   20 
+HISTORY    (20240423C)  M.M.                                      41772001   21 
+           (20240425R) Data were received from P.Prusachenko.     41772001   22 
+ENDBIB              20          0                                 41772001   23 
+NOCOMMON             0          0                                 41772001   24 
+ENDSUBENT           23          0                                 4177200199999 
+SUBENT        41772002   20240423                             421741772002    1 
+BIB                  6         24                                 41772002    2 
+REACTION   (3-LI-6(N,T)2-HE-4,,SIG)                               41772002    3 
+MONITOR    (92-U-235(N,F),,SIG)                                   41772002    4 
+MONIT-REF  (,A.D.Carlson+,J,NDS,110,3215,2009)                    41772002    5 
+            ENDF-B/VIII.0 library.                                41772002    6 
+CORRECTION For                                                    41772002    7 
+           - "wall effect" by GEANT4 code simulation 0.991-0.994, 41772002    8 
+           - neutron multiple scattering for CLYC detector 0.994, 41772002    9 
+           - neutron multiple scattering for fission chamber 0.99.41772002   10 
+ERR-ANALYS (ERR-S) Statistical uncertainty (one sigma).           41772002   11 
+            Systematical uncertainty sources:                     41772002   12 
+           (ERR-1) Uncertainty of background subtraction          41772002   13 
+           (ERR-2) Uncertainty of the number of 235U atoms in U   41772002   14 
+                   targets                                        41772002   15 
+           (ERR-3) Uncertainty of the fission fragments detection 41772002   16 
+                   efficiency                                     41772002   17 
+           (ERR-4) Uncertainty of the solid angle                 41772002   18 
+           (ERR-5) Uncertainty of the number of 6Li atoms in the  41772002   19 
+                   scintillator                                   41772002   20 
+           (ERR-6) Uncertainty of the multiple scattering         41772002   21 
+                   correction factor                              41772002   22 
+           (ERR-7) Uncertainty associated with the uncertainty of 41772002   23 
+                   the detector angles                            41772002   24 
+STATUS     (TABLE) From author P.Prusachenko                      41772002   25 
+            Data are given on Fig.6.                              41772002   26 
+ENDBIB              24          0                                 41772002   27 
+COMMON               5          3                                 41772002   28 
+ERR-2      ERR-3      ERR-4      ERR-5      ERR-6                 41772002   29 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              41772002   30 
+ 2.2        1.1        1.8        1.6        2.1                  41772002   31 
+ENDCOMMON            3          0                                 41772002   32 
+DATA                 6         14                                 41772002   33 
+EN         EN-RSL-FW  DATA       ERR-S      ERR-1      ERR-7      41772002   34 
+MEV        MEV        B          PER-CENT   PER-CENT   PER-CENT   41772002   35 
+ 4.25       0.24       0.103      3.0        1.0        1.3       41772002   36 
+ 4.50       0.21       0.102      3.3        1.2        1.6       41772002   37 
+ 4.75       0.19       0.094      2.5        1.4        1.7       41772002   38 
+ 5.00       0.18       0.087      2.3        1.6        2.0       41772002   39 
+ 5.25       0.16       0.084      2.1        1.8        2.2       41772002   40 
+ 5.50       0.15       0.078      2.2        2.0        2.4       41772002   41 
+ 5.75       0.14       0.076      2.1        2.3        2.6       41772002   42 
+ 6.00       0.14       0.073      2.1        2.5        2.8       41772002   43 
+ 6.25       0.13       0.071      2.0        2.7        3.0       41772002   44 
+ 6.50       0.12       0.068      2.9        2.9        3.1       41772002   45 
+ 6.75       0.11       0.064      3.0        3.1        3.4       41772002   46 
+ 7.00       0.11       0.059      2.3        3.3        3.7       41772002   47 
+ 7.25       0.10       0.058      2.5        3.5        3.8       41772002   48 
+ 7.43       0.08       0.052      3.7        3.7        3.8       41772002   49 
+ENDDATA             16          0                                 41772002   50 
+ENDSUBENT           49          0                                 4177200299999 
+ENDENTRY             2          0                                 4177299999999 
