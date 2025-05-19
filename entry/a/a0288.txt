@@ -1,59 +1,69 @@
-ENTRY            A0288   19860923                             0000A028800000001 
-SUBENT        A0288001   19860923                             0000A028800100001 
-BIB                 11         15                                 A028800100002 
-TITLE      EXCITATION FUNCTION OF THE AU-197(A,2P)AU-199 AND      A028800100003 
-           AU-197(A,2N)TL-199 REACTION.                           A028800100004 
-AUTHOR     (O.HASHIMOTO,H.HAMAGAKI,H.YONEHARA,Y.SHIDA)            A028800100005 
-REFERENCE  (J,NP/A,413,432,84)                                    A028800100006 
-INSTITUTE  (2JPNTOK)                                              A028800100007 
-HISTORY    (860505C)                                              A028800100008 
-           (860923U)                                              A028800100009 
-ADD-RES    (G-SPC)                                                A028800100010 
-METHOD     (STTA,EDEG).                                           A028800100011 
-SAMPLE     TARGETS-STACKS OF AU FOILS, THE THICKNESS OF WHICH     A028800100012 
-           WERE RANGED FROM 70 MG/CM-SQ TO 140 MG/CM-SQ.          A028800100013 
-ERR-ANALYS NO ANALYSIS OF THE ERRORS IS GIVEN BY THE AUTHORS.     A028800100014 
-FACILITY   (SYNCY,2JPNTOK)                                        A028800100015 
-           (ISOCY,2JPNOSA)                                        A028800100016 
-DETECTOR   (GELI)                                                 A028800100017 
-ENDBIB              15          0                                 A028800100018 
-NOCOMMON             0          0                                 A028800100019 
-ENDSUBENT           18          0                                 A028800199999 
-SUBENT        A0288002   19860923                             0000A028800200001 
-BIB                  3          3                                 A028800200002 
-REACTION   (79-AU-197(A,2P)79-AU-199,,SIG,,,EXP)                  A028800200003 
-RAD-DET    (79-AU-199,DG)                                         A028800200004 
-DECAY-DATA (79-AU-199,3.14D,DG,158.4)                             A028800200005 
-ENDBIB               3          0                                 A028800200006 
-NOCOMMON             0          0                                 A028800200007 
-DATA                 3          7                                 A028800200008 
-EN         DATA       DATA-ERR                                    A028800200009 
-MEV        MB         MB                                          A028800200010 
-   42.         0.08       0.02                                    A028800200011 
-   53.         0.19       0.05                                    A028800200012 
-   56.         0.16       0.04                                    A028800200013 
-   62.         0.24       0.06                                    A028800200014 
-   75.         0.24       0.06                                    A028800200015 
-   91.         0.26       0.06                                    A028800200016 
-  106.         0.27       0.06                                    A028800200017 
-ENDDATA              9          0                                 A028800200018 
-ENDSUBENT           17          0                                 A028800299999 
-SUBENT        A0288003   19860923                             0000A028800300001 
-BIB                  3          4                                 A028800300002 
-REACTION   (79-AU-197(A,2N)81-TL-199,,SIG,,,EXP)                  A028800300003 
-RAD-DET    (81-TL-199,DG)                                         A028800300004 
-DECAY-DATA (81-TL-199,7.42HR,DG,247.3,,                           A028800300005 
-                             DG,455.5)                            A028800300006 
-ENDBIB               4          0                                 A028800300007 
-NOCOMMON             0          0                                 A028800300008 
-DATA                 3          5                                 A028800300009 
-EN         DATA       DATA-ERR                                    A028800300010 
-MEV        MB         MB                                          A028800300011 
-   54.        51.0        8.7                                     A028800300012 
-   72.        15.0        3.2                                     A028800300013 
-   88.         8.0        1.7                                     A028800300014 
-  102.         2.9        0.8                                     A028800300015 
-  116.         2.3        0.8                                     A028800300016 
-ENDDATA              7          0                                 A028800300017 
-ENDSUBENT           16          0                                 A028800399999 
+ENTRY            A0288   20220331                             A100A0288  0    1 
+SUBENT        A0288001   20220331                             A100A0288  1    1 
+BIB                 13         21                                 A0288  1    2 
+TITLE      Excitation functions of the Au-197(alpha,2p)Au-199 and A0288  1    3 
+           Au-197(alpha,2n)Tl-199 reactions                       A0288  1    4 
+AUTHOR     (O.Hashimoto,H.Hamagaki,H.Yonehara,Y.Shida)            A0288  1    5 
+REFERENCE  (J,NP/A,413,432,1984)                                  A0288  1    6 
+INSTITUTE  (2JPNTOK)                                              A0288  1    7 
+FACILITY   (CYCLO,2JPNTOK) 66 MeV alpha-beam                      A0288  1    8 
+           (ISOCY,2JPNOSA) 109 MeV and 119 MeV alpha-beam         A0288  1    9 
+DETECTOR   (SPEC) Low Energy Photon Spectrometers (LEPS), the     A0288  1   10 
+           energy resolution of which was typically 800 eV FWHM   A0288  1   11 
+           at 122 keV (57Co).                                     A0288  1   12 
+METHOD     (STTA,EDEG,BCINT)                                      A0288  1   13 
+SAMPLE     Targets-stacks of Au foils, the thickness of which     A0288  1   14 
+           ranged from 70 mg/cm2 to 140 mg/cm2.                   A0288  1   15 
+MONITOR    (79-AU-197(A,X)79-AU-196,,SIG)                         A0288  1   16 
+DECAY-MON  (79-AU-196-G,6.18D)                                    A0288  1   17 
+ERR-ANALYS (DATA-ERR) No information about source of uncertainty  A0288  1   18 
+ADD-RES    (G-SPC)                                                A0288  1   19 
+HISTORY    (19860505C)                                            A0288  1   20 
+           (19860923U)                                            A0288  1   21 
+           (20220331A) SD:Updated to new date formats,lower case. A0288  1   22 
+           Major corrections.                                     A0288  1   23 
+ENDBIB              21          0                                 A0288  1   24 
+NOCOMMON             0          0                                 A0288  1   25 
+ENDSUBENT           24          0                                 A0288  199999 
+SUBENT        A0288002   20220331                             A100A0288  2    1 
+BIB                  4          5                                 A0288  2    2 
+REACTION   (79-AU-197(A,2P)79-AU-199,,SIG)                        A0288  2    3 
+DECAY-DATA (79-AU-199,3.14D,DG,158.4)                             A0288  2    4 
+STATUS     (TABLE) Tbl.1 from Nucl.Phys.,A413(1984)432            A0288  2    5 
+HISTORY    (20220331A) SD: SF9=EXP deleted from REACTION code.    A0288  2    6 
+           STATUS added.                                          A0288  2    7 
+ENDBIB               5          0                                 A0288  2    8 
+NOCOMMON             0          0                                 A0288  2    9 
+DATA                 3          7                                 A0288  2   10 
+EN         DATA       DATA-ERR                                    A0288  2   11 
+MEV        MB         MB                                          A0288  2   12 
+   42.         0.08       0.02                                    A0288  2   13 
+   53.         0.19       0.05                                    A0288  2   14 
+   56.         0.16       0.04                                    A0288  2   15 
+   62.         0.24       0.06                                    A0288  2   16 
+   75.         0.24       0.06                                    A0288  2   17 
+   91.         0.26       0.06                                    A0288  2   18 
+  106.         0.27       0.06                                    A0288  2   19 
+ENDDATA              9          0                                 A0288  2   20 
+ENDSUBENT           19          0                                 A0288  299999 
+SUBENT        A0288003   20220331                             A100A0288  3    1 
+BIB                  4          6                                 A0288  3    2 
+REACTION   (79-AU-197(A,2N)81-TL-199,,SIG)                        A0288  3    3 
+DECAY-DATA (81-TL-199,7.42HR,DG,247.3,,                           A0288  3    4 
+                             DG,455.5)                            A0288  3    5 
+STATUS     (TABLE) Tbl.2 from Nucl.Phys.,A413(1984)432            A0288  3    6 
+HISTORY    (20220331A) SD: SF9=EXP deleted from REACTION code.    A0288  3    7 
+           STATUS added.                                          A0288  3    8 
+ENDBIB               6          0                                 A0288  3    9 
+NOCOMMON             0          0                                 A0288  3   10 
+DATA                 3          5                                 A0288  3   11 
+EN         DATA       DATA-ERR                                    A0288  3   12 
+MEV        MB         MB                                          A0288  3   13 
+   54.        51.0        8.7                                     A0288  3   14 
+   72.        15.0        3.2                                     A0288  3   15 
+   88.         8.0        1.7                                     A0288  3   16 
+  102.         2.9        0.8                                     A0288  3   17 
+  116.         2.3        0.8                                     A0288  3   18 
+ENDDATA              7          0                                 A0288  3   19 
+ENDSUBENT           18          0                                 A0288  399999 
 ENDENTRY             3          0                                 A028899999999 
