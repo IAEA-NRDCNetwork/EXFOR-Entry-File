@@ -1,295 +1,426 @@
-ENTRY            30046   20150529                             317030046  0    1 
-SUBENT        30046001   20150529                             317030046  1    1 
-BIB                 15         67                                 30046  1    2 
-INSTITUTE  (3AULAUA)                                              30046  1    3 
-REFERENCE  (R,AAEC/E-172,196703) Nu-bar data superseded           30046  1    4 
-           (J,AEA,18,(2),2,197504) Same data as in this ENTRY     30046  1    5 
-                      different values (because of different      30046  1    6 
-                      values of Nu(Cf-252)).                      30046  1    7 
-           (J,JNE,25,321,197108)                                  30046  1    8 
-           (J,JNE,24,191,197008)                                  30046  1    9 
-AUTHOR     (J.W.Boldeman,A.W.Dalton)                              30046  1   10 
-TITLE      Prompt Nubar measurements for thermal neutron fission  30046  1   11 
-EXP-YEAR   (1972)                                                 30046  1   12 
-FACILITY   10 KW UTR-10 reactor                                   30046  1   13 
-METHOD     Gadolinium bath in coincidence with pulses from fission30046  1   14 
-           counter. Coincidence resolving time 21 nsec. Gated     30046  1   15 
-           neutron recording time 40 microsec. After 100 microsec 30046  1   16 
-           waiting period background recorded for 40 microsec.    30046  1   17 
-           At end of entire counting cycle contents of temporary  30046  1   18 
-           store transferred to multiple event counter provided   30046  1   19 
-           second detectable fission event had not occurred. If so30046  1   20 
-           contents temporary store were erased.                  30046  1   21 
-DETECTOR   (STANK)    Liquid scintillator tank 76 cm in diameter  30046  1   22 
-           with 240 litres of Ne323 loaded with 0.5% by weight    30046  1   23 
-           gadolinium. Scintillations viewed by 12 photo-         30046  1   24 
-           multipliers connected in 3 coincident banks of four to 30046  1   25 
-           minimize spurious counts. Axial tube 3 inch in diameter30046  1   26 
-           through tank allowed passage of neutron beam and held  30046  1   27 
-           fission counter. Efficiency measured with Cf252 source.30046  1   28 
-           analysed influence on efficiency of Pm-gain, fission   30046  1   29 
-           counter position, neutron energy, fission counter bias 30046  1   30 
-           level and dead time.                                   30046  1   31 
-           Fast parallel plate ionization chamber to              30046  1   32 
-           record fissions                                        30046  1   33 
-ANALYSIS   Probabilities of emission of nu neutrons per fission   30046  1   34 
-           event were calculated with formula of given et al      30046  1   35 
-           PR 101 1012 1956, for nu values in the range 0 to 10.  30046  1   36 
-           for each distribution first and second moments about   30046  1   37 
-           the origin, second moment about mean and shape         30046  1   38 
-           dependent parameter were calculated.                   30046  1   39 
-MONITOR    Absolute                                               30046  1   40 
-PART-DET   (PN)       prompt neutrons                             30046  1   41 
-COMMENT    The data given here represent a consistent set of      30046  1   42 
-           correlated absolute nu-bar values for the 5 nuclides   30046  1   43 
-           considered, as resulting from the experiments and      30046  1   44 
-           analysis of corrections at lucas heights. Other        30046  1   45 
-           publications by same authors give different values     30046  1   46 
-           which are related to different values of Nu(Cf-252).   30046  1   47 
-STATUS     (TABLE) Emission parameters taken from AAEC/e172 1967  30046  1   48 
-           Nu-bar data from letter Boldeman 1972/11/7             30046  1   49 
-HISTORY    (19721129A) Data revised by Boldeman                   30046  1   50 
-           (19770112A) iso-quant correction. Ref., comment added  30046  1   51 
-           (20080215A) BIB section updated                        30046  1   52 
-           (20120504A) VS. INC-SOURCE moved from 001 to 002-005.  30046  1   53 
-           (20150522U) VS Subent. 006 STATUS updated.             30046  1   54 
-CORRECTION The following corrections were taken in consideration, 30046  1   55 
-           counter drifts, fission by fast neutrons, impurities,  30046  1   56 
-           counter location, false gates, preferential detection  30046  1   57 
-           anisotropy, fission spectra differences, dead time,    30046  1   58 
-           double fission inhibit, delayed gamma rays, electronic 30046  1   59 
-           errors and varying background. Actual values to be     30046  1   60 
-           found in each subentry                                 30046  1   61 
-           The efficiency curve has a slope of 0.245% per 0.1 MeV 30046  1   62 
-           change in the mean energy of the fission neutron       30046  1   63 
-           spectra, for which the following values were assumed=  30046  1   64 
-                      U-233      1.974 MeV                        30046  1   65 
-                      U-235      1.935 MeV                        30046  1   66 
-                      Pu-239     2.084 MeV                        30046  1   67 
-                      Pu-241     1.987 MeV                        30046  1   68 
-                      Cf-252     2.150 MeV                        30046  1   69 
-ENDBIB              67          0                                 30046  1   70 
-NOCOMMON             0          0                                 30046  1   71 
-ENDSUBENT           70          0                                 30046  199999 
-SUBENT        30046002   20120518                             31553004600200001 
-BIB                  8         40                                 3004600200002 
+ENTRY            30046   20231006                             32103004600000001 
+SUBENT        30046001   20231006                             32103004600100001 
+BIB                 11         68                                 3004600100002 
+TITLE      Prompt nubar measurements for thermal neutron fission  3004600100003 
+AUTHOR     (J.W.Boldeman, A.W.Dalton)                             3004600100004 
+INSTITUTE  (3AULAUA)                                              3004600100005 
+REFERENCE  (R,AAEC/E-172,1967)                                    3004600100006 
+           (J,NSE,91,114,1985) Revised 252Cf(sf) P(nu) in table   3004600100007 
+           (J,AEA,18,(2),2,1975) Revised 252Cf(sf) nu-bar in table3004600100008 
+           (C,73KIEV,4,83,1973) Revised 252Cf(sf) nu-bar in table 3004600100009 
+FACILITY   (REAC,3AULAUA) 10 KW UTR-10 reactor MOATA              3004600100010 
+DETECTOR   (STANK) NE323 liquid scintillator tank (76 cm diam.,   3004600100011 
+            240 l) loaded with 0.5% by weight Gd.                 3004600100012 
+           Scintillations viewed by 12 photo-multipliers          3004600100013 
+            connected in 3 coincident banks of four to minimize   3004600100014 
+            spurious counts.                                      3004600100015 
+           Axial tube 3 inch in diameter through tank allowed     3004600100016 
+            passage of neutron beam and held fission counter.     3004600100017 
+           Efficiency measured with Cf252 source.                 3004600100018 
+           Analysed influence on efficiency of Pm-gain, fission   3004600100019 
+            counter position, neutron energy, fission counter     3004600100020 
+            bias level and dead time.                             3004600100021 
+           (FISCH) Fast parallel plate ionization chamber to      3004600100022 
+            record fissions                                       3004600100023 
+METHOD     Gadolinium bath in coincidence with pulses from fission3004600100024 
+            counter.                                              3004600100025 
+           Coincidence resolving time 21 ns.                      3004600100026 
+           Gated neutron recording time 40 us.                    3004600100027 
+           After 100 us waiting period background recorded for    3004600100028 
+            40 us.                                                3004600100029 
+           At end of entire counting cycle contents of temporary  3004600100030 
+            store transferred to multiple event counter provided  3004600100031 
+            second detectable fission event had not occurred.     3004600100032 
+           If so contents temporary store were erased.            3004600100033 
+REL-REF    (M,,B.C.Diven+,J,PR,101,1012,1956)                     3004600100034 
+           Formula to calculate probability distribution          3004600100035 
+            event were calculated with formula of Diven (1956).   3004600100036 
+CORRECTION The following corrections were taken in consideration, 3004600100037 
+            - counter drifts                                      3004600100038 
+            - fission by fast neutrons                            3004600100039 
+            - impurities                                          3004600100040 
+            - counter location                                    3004600100041 
+            - false gates                                         3004600100042 
+            - preferential detection anisotropy                   3004600100043 
+            - fission spectra differences                         3004600100044 
+            - dead time                                           3004600100045 
+            - double fission inhibit                              3004600100046 
+            - delayed gamma rays                                  3004600100047 
+            - electronic errors                                   3004600100048 
+            -varying background.                                  3004600100049 
+           The efficiency curve has a slope of 0.245% per 0.1 MeV 3004600100050 
+            change in the mean energy of the fission neutron      3004600100051 
+            spectra, for which the following values were assumed: 3004600100052 
+             U-233      1.974 MeV                                 3004600100053 
+             U-235      1.935 MeV                                 3004600100054 
+             Pu-239     2.084 MeV                                 3004600100055 
+             Pu-241     1.987 MeV                                 3004600100056 
+             Cf-252     2.150 MeV                                 3004600100057 
+COMMENT    The data given here represent a consistent set of      3004600100058 
+            correlated absolute nu-bar values for the 5 nuclides  3004600100059 
+            considered, as resulting from the experiments and     3004600100060 
+            analysis of corrections at lucas heights.             3004600100061 
+           Other publications by same authors give different      3004600100062 
+            values which are related to different values of       3004600100063 
+            252Cf(sf) nu-bar.                                     3004600100064 
+HISTORY    (19721129A) Data revised by Boldeman                   3004600100065 
+           (19770112A) ISO-QUANT correction. Ref., comment added  3004600100066 
+           (20080215A) BIB section updated                        3004600100067 
+           (20120504A) VS. INC-SOURCE moved from 001 to 002-005.  3004600100068 
+           (20150522U) VS Subent. 006 STATUS updated.             3004600100069 
+           (20231006A) On. Data in 002-005 restored.007-011 added.3004600100070 
+ENDBIB              68          0                                 3004600100071 
+NOCOMMON             0          0                                 3004600100072 
+ENDSUBENT           71          0                                 3004600199999 
+SUBENT        30046002   20231006                             32103004600200001 
+BIB                  8         36                                 3004600200002 
 REACTION   (92-U-233(N,F),PR,NU,,MXW)                             3004600200003 
-SAMPLE     Total weight 2.1 millig. Isotopic composition was      3004600200004 
-           U233(99.27%),U234(0.07%),U235(0.04%),U236(0.07%),      3004600200005 
-           U238(0.53%) electroplated onto Ni-disc 0.006 inch thick3004600200006 
-INC-SOURCE (THCOL)    Collimated beam of thermal neutrons 1 inch  3004600200007 
-           in diameter. Maximum flux 2.5X10**3 n/cm2/sec          3004600200008 
-COMMENT    Determined also neutron emission probabilities         3004600200009 
-           second moment of nu about origin =7.416+-0.034         3004600200010 
-           second moment about nubar = 1.099+-0.004               3004600200011 
-           shape dependent parameter r=0.7932+-0.0013             3004600200012 
-               emitted neutrons    probabilities                  3004600200013 
-                      0            0.0259+-0.0010                 3004600200014 
-                      1            0.1526+-0.0020                 3004600200015 
-                      2            0.3289+-0.0034                 3004600200016 
-                      3            0.3282+-0.0035                 3004600200017 
-                      4            0.1320+-0.0017                 3004600200018 
-                      5            0.0252+-0.0020                 3004600200019 
-                      6            0.0045+-0.0020                 3004600200020 
-HISTORY    (19670328R) Data received from Symonds on tape         3004600200021 
-           (19670418C) Data compiled into Dastar                  3004600200022 
-           (19701124T) Transformed from Dastar-00136              3004600200023 
-CORRECTION Percentage corrections applied to experimental results,3004600200024 
-           false gates (0.015), Preferential detection (0.02),    3004600200025 
-           dead time (-0.20)                                      3004600200026 
-ERR-ANALYS (DATA-ERR1) Absolute error                             3004600200027 
-           (DATA-ERR2) Error relative to Nu-bar of Cf-252         3004600200028 
-           error-contributions in percent=                        3004600200029 
-           for absolute and relative error                        3004600200030 
-                      statistics U-233/Cf-252          0.168      3004600200031 
-                      french effect                    0.10       3004600200032 
-                      delayed gammas Cf-252            0.07       3004600200033 
-                      delayed gammas U-233             0.18       3004600200034 
-                      shape of efficiency curve        0.17       3004600200035 
-                      mean en of Maxwellian (+-0.03MeV)0.07       3004600200036 
-           for absolute error only                                3004600200037 
-                      statistics Cf-252/proton recoil  0.24       3004600200038 
-                      background in recoil counter     0.10       3004600200039 
-           for relative error only                                3004600200040 
-                      mean En of Maxw Cf-252(+-0.05MeV)0.12       3004600200041 
-STATUS     (SPSDD,30772002) data were superseded.                 3004600200042 
-ENDBIB              40          0                                 3004600200043 
-NOCOMMON             0          0                                 3004600200044 
-NODATA               0          0                                 3004600200045 
+EXP-YEAR   (1972)                                                 3004600200004 
+SAMPLE     2.1 mg, electroplated onto Ni disc (0.006 inch thick)  3004600200005 
+           (92-U-233,ENR=0.9927)                                  3004600200006 
+           (92-U-234,ENR=0.0007)                                  3004600200007 
+           (92-U-235,ENR=0.0004)                                  3004600200008 
+           (92-U-236,ENR=0.0007)                                  3004600200009 
+           (92-U-238,ENR=0.0053)                                  3004600200010 
+INC-SOURCE (THCOL) Collimated beam of thermal neutrons 1 in diam. 3004600200011 
+            Maximum flux 2.5E10+03 n/cm2/sec.                     3004600200012 
+CORRECTION Corrected for                                          3004600200013 
+            - false gates           (0.015%)                      3004600200014 
+            - preferential detection (0.02%)                      3004600200015 
+            - dead time             (-0.20%)                      3004600200016 
+ERR-ANALYS (DATA-ERR1) Absolute error                             3004600200017 
+           (DATA-ERR2) Error relative to 252Cf(sf) nu-bar:        3004600200018 
+            Error-contributions in %                              3004600200019 
+             for absolute and relative error                      3004600200020 
+              statistics U-233/Cf-252             0.168%          3004600200021 
+              french effect                       0.10%           3004600200022 
+              delayed gammas Cf-252               0.07%           3004600200023 
+              delayed gammas U-233                0.18%           3004600200024 
+              shape of efficiency curve           0.17%           3004600200025 
+              mean en of Maxwellian (+/-0.03MeV)  0.07%           3004600200026 
+             for absolute error only                              3004600200027 
+              statistics Cf-252/proton recoil     0.24%           3004600200028 
+              background in recoil counter        0.10%           3004600200029 
+             for relative error only                              3004600200030 
+              mean En of Maxw Cf-252(+/-0.05 MeV) 0.12%           3004600200031 
+STATUS     (TABLE,,J.W.Boldeman+,W,BOLDEMAN,19721107) Letter      3004600200032 
+           (SPSDD,30772002)                                       3004600200033 
+HISTORY    (19670328R) Data received from Symonds on tape         3004600200034 
+           (19670418C) Data compiled into DASTAR                  3004600200035 
+           (19701124T) Transformed from DASTAR-00136              3004600200036 
+           (19721129A) Data revised by Boldeman.           HDL(FM)3004600200037 
+           (20231006S) On. Data restored from TRANS.3009.         3004600200038 
+ENDBIB              36          0                                 3004600200039 
+NOCOMMON             0          0                                 3004600200040 
+DATA                 4          1                                 3004600200041 
+EN-DUMMY   DATA       DATA-ERR1  DATA-ERR2                        3004600200042 
+EV         PRT/FIS    PRT/FIS    PRT/FIS                          3004600200043 
+ 0.0253     2.455      0.010      0.009                           3004600200044 
+ENDDATA              3          0                                 3004600200045 
 ENDSUBENT           44          0                                 3004600299999 
-SUBENT        30046003   20120518                             31553004600300001 
-BIB                  8         40                                 3004600300002 
+SUBENT        30046003   20231006                             32103004600300001 
+BIB                  8         35                                 3004600300002 
 REACTION   (92-U-235(N,F),PR,NU,,MXW)                             3004600300003 
-SAMPLE     Total weight 8.1 millig., isotopic composition  was:   3004600300004 
-           U234(1.28%),U235(92.72%),U236(0.254%),U238(5.75%)      3004600300005 
-           electroplated onto Ni disc 0.006 inch thick.           3004600300006 
-INC-SOURCE (THCOL)    Collimated beam of thermal neutrons 1 inch  3004600300007 
-           in diameter. Maximum flux 2.5X10**3 n/cm2/sec          3004600300008 
-COMMENT    Determined also neutron emission probabilities         3004600300009 
-           second moment of nu about origin = 7.073+-0.032        3004600300010 
-           second moment about nubar= 1.112+-0.004                3004600300011 
-           shape dependent parameter r=0.7979+-0.0013             3004600300012 
-               emitted neutrons    probabilities                  3004600300013 
-                      0            0.0313+-0.0060                 3004600300014 
-                      1            0.1729+-0.0016                 3004600300015 
-                      2            0.3336+-0.0029                 3004600300016 
-                      3            0.3078+-0.0029                 3004600300017 
-                      4            0.1232+-0.0016                 3004600300018 
-                      5            0.0275+-0.0020                 3004600300019 
-                      6            0.0038+-0.0015                 3004600300020 
-HISTORY    (19670328R) Data received from symonds on tape         3004600300021 
-           (19670418C) Data compiled into Dastar                  3004600300022 
-           (19701124T) Data transformed from Dastar-00137         3004600300023 
-CORRECTION Percentage corrections applied to experimental results,3004600300024 
-           false gates (0.010), Preferential detection (0.05),    3004600300025 
-           dead time (-0.30).                                     3004600300026 
-ERR-ANALYS (DATA-ERR1) Absolute error                             3004600300027 
-           (DATA-ERR2) Error relative to nu-bar of Cf-252         3004600300028 
-           error contributions in percent=                        3004600300029 
-           for absolute and relative error                        3004600300030 
-                      statistics U-235/Cf-252          0.103      3004600300031 
-                      french effect                    0.10       3004600300032 
-                      delayed gammas Cf-252            0.07       3004600300033 
-                      delayed gammas U-235             0.18       3004600300034 
-                      shape of efficiency curve        0.17       3004600300035 
-                      mean En of Maxwellian (+-0.03MeV)0.07       3004600300036 
-           for absolute error only                                3004600300037 
-                      statistics Cf-252/proton recoil  0.24       3004600300038 
-                      background in recoil counter     0.10       3004600300039 
-           for relative error only                                3004600300040 
-                      mean En of Maxw Cf-252(+-0.05MeV)0.12       3004600300041 
-STATUS     (SPSDD,30772003) data were superseded.                 3004600300042 
-ENDBIB              40          0                                 3004600300043 
-NOCOMMON             0          0                                 3004600300044 
-NODATA               0          0                                 3004600300045 
-ENDSUBENT           44          0                                 3004600399999 
-SUBENT        30046004   20120518                             31553004600400001 
-BIB                  8         40                                 3004600400002 
+EXP-YEAR   (1972)                                                 3004600300004 
+SAMPLE     8.1 mg, electroplated onto Ni disc (0.006 inch thick)  3004600300005 
+           (92-U-234,ENR=0.0128)                                  3004600300006 
+           (92-U-235,ENR=0.9272)                                  3004600300007 
+           (92-U-236,ENR=0.00254)                                 3004600300008 
+           (92-U-238,ENR=0.0575)                                  3004600300009 
+INC-SOURCE (THCOL) Collimated beam of thermal neutrons 1 in diam. 3004600300010 
+            Maximum flux 2.5E10+03 n/cm2/sec.                     3004600300011 
+CORRECTION Corrected for                                          3004600300012 
+            - false gates           (0.010%)                      3004600300013 
+            - preferential detection (0.05%)                      3004600300014 
+            - dead time             (-0.30%)                      3004600300015 
+ERR-ANALYS (DATA-ERR1) Absolute error                             3004600300016 
+           (DATA-ERR2) Error relative to 252Cf(sf) nu-bar:        3004600300017 
+           Error contributions in percent=                        3004600300018 
+            for absolute and relative error                       3004600300019 
+             statistics U-235/Cf-252              0.103%          3004600300020 
+             french effect                        0.10%           3004600300021 
+             delayed gammas Cf-252                0.07%           3004600300022 
+             delayed gammas U-235                 0.18%           3004600300023 
+             shape of efficiency curve            0.17%           3004600300024 
+             mean En of Maxwellian (+/-0.03 MeV)  0.07%           3004600300025 
+           for absolute error only                                3004600300026 
+            statistics Cf-252/proton recoil       0.24%           3004600300027 
+            background in recoil counter          0.10%           3004600300028 
+           for relative error only                                3004600300029 
+            mean En of Maxw Cf-252(+/-0.05 MeV)   0.12%           3004600300030 
+STATUS     (TABLE,,J.W.Boldeman+,W,BOLDEMAN,19721107) Letter      3004600300031 
+           (SPSDD,30772003)                                       3004600300032 
+HISTORY    (19670328R) Data received from Symonds on tape         3004600300033 
+           (19670418C) Data compiled into DASTAR                  3004600300034 
+           (19701124T) Data transformed from DASTAR-00137         3004600300035 
+           (19721129A) Data revised by Boldeman.           HDL(FM)3004600300036 
+           (20231006S) On. Data restored from TRANS.3009.         3004600300037 
+ENDBIB              35          0                                 3004600300038 
+NOCOMMON             0          0                                 3004600300039 
+DATA                 4          1                                 3004600300040 
+EN-DUMMY   DATA       DATA-ERR1  DATA-ERR2                        3004600300041 
+EV         PRT/FIS    PRT/FIS    PRT/FIS                          3004600300042 
+ 0.0253     2.379      0.010      0.008                           3004600300043 
+ENDDATA              3          0                                 3004600300044 
+ENDSUBENT           43          0                                 3004600399999 
+SUBENT        30046004   20231006                             32103004600400001 
+BIB                  8         33                                 3004600400002 
 REACTION   (94-PU-239(N,F),PR,NU,,MXW)                            3004600400003 
-SAMPLE     Total weight 0.7 millig. Isotopic composition  was     3004600400004 
-           Pu239(99.83%),Pu240(0.17%). Electroplated onto a Ni    3004600400005 
-           disc 0.006 Inch thick.                                 3004600400006 
-INC-SOURCE (THCOL)    Collimated beam of thermal neutrons 1 inch  3004600400007 
-           in diameter. Maximum flux 2.5X10**3 n/cm2/sec          3004600400008 
-COMMENT    Determined also neutron emission probabilities         3004600400009 
-           second moment of nu about origin= 9.838+-0.040         3004600400010 
-           second moment about nubar=1.185+-0.005                 3004600400011 
-           shape dependent parameter=0.8221+-0.0016               3004600400012 
-               emitted neutrons    probabilities                  3004600400013 
-                      0            0.0094+-0.0010                 3004600400014 
-                      1            0.0990+-0.0027                 3004600400015 
-                      2            0.2696+-0.0034                 3004600400016 
-                      3            0.3297+-0.0035                 3004600400017 
-                      4            0.1982+-0.0030                 3004600400018 
-                      5            0.0924+-0.0040                 3004600400019 
-                      6            0.0119+-0.0020                 3004600400020 
-HISTORY    (19670328R) Data received from symonds on tape         3004600400021 
-           (19670418C) Data entered into Dastar                   3004600400022 
-           (19701124T) Data transformed from Dastar-00138         3004600400023 
-CORRECTION Percentage correction applied to experimental results, 3004600400024 
-           impurities Pu-240 (0.004), False gates (0.02),         3004600400025 
-           dead time (-0.05).                                     3004600400026 
-ERR-ANALYS (DATA-ERR1) Absolute error                             3004600400027 
-           (DATA-ERR2) Error relative to Nu-bar of Cf-252         3004600400028 
-           error contributions in percent=                        3004600400029 
-           for absolute and relative error                        3004600400030 
-                      statistics Pu-239/Cf-252         0.155      3004600400031 
-                      french effect                    0.10       3004600400032 
-                      delayed gammas Cf-252            0.07       3004600400033 
-                      delayed gammas Pu-239            0.17       3004600400034 
-                      shape of efficiency curve        0.17       3004600400035 
-                      mean En of maxwellian (+-0.03MeV)0.07       3004600400036 
-           for absolute error only                                3004600400037 
-                      statistics Cf-252/proton recoil  0.24       3004600400038 
-                      background in recoil counter     0.10       3004600400039 
-           for relative error only                                3004600400040 
-                      mean En of Maxw Cf-252(+-0.05MeV)0.12       3004600400041 
-STATUS     (SPSDD,30772004) data were superseded.                 3004600400042 
-ENDBIB              40          0                                 3004600400043 
-NOCOMMON             0          0                                 3004600400044 
-NODATA               0          0                                 3004600400045 
-ENDSUBENT           44          0                                 3004600499999 
-SUBENT        30046005   20120518                             31553004600500001 
-BIB                  8         41                                 3004600500002 
+EXP-YEAR   (1972)                                                 3004600400004 
+SAMPLE     0.7 mg, electroplated onto a Ni disc (0.006 inch thick)3004600400005 
+           (94-PU-239,ENR=0.9983)                                 3004600400006 
+           (94-PU-240,ENR=0.0017)                                 3004600400007 
+INC-SOURCE (THCOL) Collimated beam of thermal neutrons 1 in diam. 3004600400008 
+            Maximum flux 2.5E10+03 n/cm2/sec.                     3004600400009 
+CORRECTION Corrected for                                          3004600400010 
+           - impurities 240Pu (0.004%)                            3004600400011 
+           - false gates       (0.02%)                            3004600400012 
+           - dead time        (-0.05%)                            3004600400013 
+ERR-ANALYS (DATA-ERR1) Absolute error                             3004600400014 
+           (DATA-ERR2) Error relative to 252Cf(sf) nu-bar:        3004600400015 
+           Error contributions in percent=                        3004600400016 
+            for absolute and relative error                       3004600400017 
+             statistics Pu-239/Cf-252            0.155%           3004600400018 
+             french effect                       0.10%            3004600400019 
+             delayed gammas Cf-252               0.07%            3004600400020 
+             delayed gammas Pu-239               0.17%            3004600400021 
+             shape of efficiency curve           0.17%            3004600400022 
+             mean En of Maxwellian (+/-0.03MeV)  0.07%            3004600400023 
+            for absolute error only                               3004600400024 
+             statistics Cf-252/proton recoil     0.24%            3004600400025 
+             background in recoil counter        0.10%            3004600400026 
+            for relative error only                               3004600400027 
+             mean En of Maxw Cf-252(+/-0.05 MeV) 0.12%            3004600400028 
+STATUS     (TABLE,,J.W.Boldeman+,W,BOLDEMAN,19721107) Letter      3004600400029 
+           (SPSDD,30772004)                                       3004600400030 
+HISTORY    (19670328R) Data received from Symonds on tape         3004600400031 
+           (19670418C) Data entered into DASTAR                   3004600400032 
+           (19701124T) Data transformed from DASTAR-00138         3004600400033 
+           (19721129A) Data revised by Boldeman.           HDL(FM)3004600400034 
+           (20231006S) On. Data restored from TRANS.3009.         3004600400035 
+ENDBIB              33          0                                 3004600400036 
+NOCOMMON             0          0                                 3004600400037 
+DATA                 4          1                                 3004600400038 
+EN-DUMMY   DATA       DATA-ERR1  DATA-ERR2                        3004600400039 
+EV         PRT/FIS    PRT/FIS    PRT/FIS                          3004600400040 
+ 0.0253     2.862      0.012      0.010                           3004600400041 
+ENDDATA              3          0                                 3004600400042 
+ENDSUBENT           41          0                                 3004600499999 
+SUBENT        30046005   20231006                             32103004600500001 
+BIB                  8         37                                 3004600500002 
 REACTION   (94-PU-241(N,F),PR,NU,,MXW)                            3004600500003 
-SAMPLE     Total weight 2.8 millig. Isotopic composition  was     3004600500004 
-           Pu239(1.44%),Pu240(5.69%),Pu241(91.78%)and Pu242(1.09%)3004600500005 
-           electroplated onto a Ni disc 0.0.006 inch thick.       3004600500006 
-INC-SOURCE (THCOL)    Collimated beam of thermal neutrons 1 inch  3004600500007 
-           in diameter. Maximum flux 2.5X10**3 n/cm2/sec          3004600500008 
-COMMENT    Determined also neutron emission probabilities         3004600500009 
-           second moment of nu about origin = 10.063+-0.037       3004600500010 
-           second moment about nubar =1.173+-0.004                3004600500011 
-           shape dependent parameter r=0.8190+-0.0010             3004600500012 
-               emitted neutrons    probabilities                  3004600500013 
-                      0            0.0097+-0.0010                 3004600500014 
-                      1            0.0877+-0.0025                 3004600500015 
-                      2            0.2636+-0.0030                 3004600500016 
-                      3            0.3343+-0.0032                 3004600500017 
-                      4            0.2099+-0.0035                 3004600500018 
-                      5            0.0811+-0.0040                 3004600500019 
-                      6            0.0112+-0.0020                 3004600500020 
-HISTORY    (19670328R) Data received from symonds on tape         3004600500021 
-           (19670418C) Data compiled into Dastar                  3004600500022 
-           (19701124T) Data transformed from Dastar-00139         3004600500023 
-CORRECTION Percentage corrections applied to experimental results,3004600500024 
-           impurities(Pu239=0.014,Pu240=0.17,Pu242=0.040),False   3004600500025 
-           gates (0.014), Preferential detection (0.02),          3004600500026 
-           dead time (-0.10).                                     3004600500027 
-ERR-ANALYS (DATA-ERR1) Absolute error                             3004600500028 
-           (DATA-ERR2) Error relative to nu-bar of Cf-252         3004600500029 
-           error contributions in percent=                        3004600500030 
-           for absolute and relative error                        3004600500031 
-                      statistics Pu-241/Cf-252         0.108      3004600500032 
-                      french effect                    0.10       3004600500033 
-                      delayed gammas Cf-252            0.07       3004600500034 
-                      delayed gammas Pu-241            0.17       3004600500035 
-                      shape of efficiency curve        0.17       3004600500036 
-                      mean en of Maxwellian (+-0.03MeV)0.07       3004600500037 
-           for absolute error only                                3004600500038 
-                      statistics Cf-252/proton recoil  0.24       3004600500039 
-                      background in recoil counter     0.10       3004600500040 
-           for relative error only                                3004600500041 
-                      mean en of Maxw Cf-252(+-0.05MeV)0.12       3004600500042 
-STATUS     (SPSDD,30772005) data were superseded.                 3004600500043 
-ENDBIB              41          0                                 3004600500044 
-NOCOMMON             0          0                                 3004600500045 
-NODATA               0          0                                 3004600500046 
+EXP-YEAR   (1972)                                                 3004600500004 
+SAMPLE     2.8 mg, electroplated onto a Ni disc (0.006 inch thick)3004600500005 
+           (94-PU-239,ENR=0.0144)                                 3004600500006 
+           (94-PU-240,ENR=0.0569)                                 3004600500007 
+           (94-PU-241,ENR=0.9178)                                 3004600500008 
+           (94-PU-242,ENR=0.0109)                                 3004600500009 
+INC-SOURCE (THCOL) Collimated beam of thermal neutrons 1 in diam. 3004600500010 
+            Maximum flux 2.5E10+03 n/cm2/sec.                     3004600500011 
+CORRECTION Corrected for                                          3004600500012 
+           - impurities Pu239       (0.014%)                      3004600500013 
+           - impurities Pu240       (0.17%)                       3004600500014 
+           - impurities Pu242       (0.040%)                      3004600500015 
+           - false gates            (0.014%)                      3004600500016 
+           - preferential detection  (0.02%)                      3004600500017 
+           - dead time              (-0.10%)                      3004600500018 
+ERR-ANALYS (DATA-ERR1) Absolute error                             3004600500019 
+           (DATA-ERR2) Error relative to 252Cf(sf) nu-bar:        3004600500020 
+           Error contributions in percent=                        3004600500021 
+            for absolute and relative error                       3004600500022 
+             statistics Pu-241/Cf-252            0.108%           3004600500023 
+             french effect                       0.10%            3004600500024 
+             delayed gammas Cf-252               0.07%            3004600500025 
+             delayed gammas Pu-241               0.17%            3004600500026 
+             shape of efficiency curve           0.17%            3004600500027 
+             mean en of Maxwellian (+/-0.03 MeV) 0.07%            3004600500028 
+            for absolute error only                               3004600500029 
+             statistics Cf-252/proton recoil     0.24%            3004600500030 
+             background in recoil counter        0.10%            3004600500031 
+            for relative error only                               3004600500032 
+             mean en of Maxw Cf-252(+/-0.05 MeV) 0.12%            3004600500033 
+STATUS     (TABLE,,J.W.Boldeman+,W,BOLDEMAN,19721107) Letter      3004600500034 
+           (SPSDD,30772005)                                       3004600500035 
+HISTORY    (19670328R) Data received from symonds on tape         3004600500036 
+           (19670418C) Data compiled into DASTAR                  3004600500037 
+           (19701124T) Data transformed from DASTAR-00139         3004600500038 
+           (20231006S) On. Data restored from TRANS.3009.         3004600500039 
+ENDBIB              37          0                                 3004600500040 
+NOCOMMON             0          0                                 3004600500041 
+DATA                 4          1                                 3004600500042 
+EN-DUMMY   DATA       DATA-ERR1  DATA-ERR2                        3004600500043 
+EV         PRT/FIS    PRT/FIS    PRT/FIS                          3004600500044 
+ 0.0253     2.896      0.011      0.009                           3004600500045 
+ENDDATA              3          0                                 3004600500046 
 ENDSUBENT           45          0                                 3004600599999 
-SUBENT        30046006   20150529                             317030046  6    1 
-BIB                  6         30                                 30046  6    2 
-REFERENCE  (P,AAEC/PR-34/P,8,197103) new exp. using (n,p)scat plan30046  6    3 
-           (P,AAEC/PR-35/P,9,197109) Prelim result, superseded    30046  6    4 
-           (C,73KIEV,4,83,197305)                                 30046  6    5 
-REACTION   (98-CF-252(0,F),PR,NU)                                 30046  6    6 
-COMMENT    Assumed value of nu is the weighted mean of two liquid 30046  6    7 
-           scintillator measurements as explained in subent 1     30046  6    8 
-           determined neutron emission probabilities and relevant 30046  6    9 
-           parameters as follows,                                 30046  6   10 
-           second moment of nu about origin =15.925+-0.007        30046  6   11 
-           second moment about nubar=1.268+-0.002                 30046  6   12 
-           shape dependent parameter =0.8479+-0.0005              30046  6   13 
-               neutrons emitted    probabilities                  30046  6   14 
-                      0            0.00197+-0.00008               30046  6   15 
-                      1            0.02447+-0.00025               30046  6   16 
-                      2            0.1229 +-0.0005                30046  6   17 
-                      3            0.2707 +-0.0008                30046  6   18 
-                      4            0.3058 +-0.0010                30046  6   19 
-                      5            0.1884 +-0.0007                30046  6   20 
-                      6            0.0677 +-0.0006                30046  6   21 
-                      7            0.0160 +-0.0003                30046  6   22 
-                      8            0.0021 +-0.0002                30046  6   23 
-           error in neutron probabilities is statistical error    30046  6   24 
-           author gives for total nu(Cf-252) the value of 3.744   30046  6   25 
-HISTORY    (19670328R) Data received from symonds on tape         30046  6   26 
-           (19670418C) Data entered into Dastar                   30046  6   27 
-           (19701124T) Data transformed from Dastar-00140         30046  6   28 
-           (19770121U) Reference and comment added.      YAG.     30046  6   29 
-           (20150522U) VS Subent. 006 STATUS updated.             30046  6   30 
-ERR-ANALYS Not known                                              30046  6   31 
-STATUS     (SPSDD,31761002) data were superseded.                 30046  6   32 
-ENDBIB              30          0                                 30046  6   33 
-NOCOMMON             0          0                                 30046  6   34 
-NODATA               0          0                                 30046  6   35 
-ENDSUBENT           34          0                                 30046  699999 
-ENDENTRY             6          0                                 3004699999999 
+SUBENT        30046006   20231006                             32103004600600001 
+BIB                  4         10                                 3004600600002 
+REACTION   (98-CF-252(0,F),PR,NU)                                 3004600600003 
+ERR-ANALYS (DATA-ERR) No information about source of uncertainty  3004600600004 
+STATUS     (TABLE,,R.L.Walsh,J,AEA,18,(2),2,1975) Text (p.7)      3004600600005 
+           (SPSDD,31761002)                                       3004600600006 
+HISTORY    (19670328R) Data received from Symonds on tape         3004600600007 
+           (19670418C) Data entered into DASTAR                   3004600600008 
+           (19701124T) Data transformed from Dastar-00140         3004600600009 
+           (19770121U) Reference and comment added.      YAG.     3004600600010 
+           (20150522U) VS Subent. 006 STATUS updated.             3004600600011 
+           (20231006S) On. Data restored from TRANS.3023.         3004600600012 
+ENDBIB              10          0                                 3004600600013 
+NOCOMMON             0          0                                 3004600600014 
+DATA                 2          1                                 3004600600015 
+DATA       DATA-ERR                                               3004600600016 
+PRT/FIS    PRT/FIS                                                3004600600017 
+ 3.735      0.014                                                 3004600600018 
+ENDDATA              3          0                                 3004600600019 
+ENDSUBENT           18          0                                 3004600699999 
+SUBENT        30046007   20231006                             32103004600700001 
+BIB                  7         10                                 3004600700002 
+REACTION   (92-U-233(N,F),NUM,NU,,MXW)                            3004600700003 
+EXP-YEAR   (1966)                                                 3004600700004 
+ASSUMED    (ASSUM,92-U-233(N,F),PR,NU)                            3004600700005 
+ADD-RES    <nu**2>= 7.416 +/- 0.034                               3004600700006 
+           var(nu)= 1.099 +/- 0.004                               3004600700007 
+ERR-ANALYS (DATA-ERR) Experimental reproducibility                3004600700008 
+STATUS     (TABLE,,J.W.Boldeman+,R,AAEC/E-172,1967) Table 10      3004600700009 
+           (DEP,30046002) nu-bar                                  3004600700010 
+           (SPSDD,30772009)                                       3004600700011 
+HISTORY    (20231006C) On                                         3004600700012 
+ENDBIB              10          0                                 3004600700013 
+COMMON               3          3                                 3004600700014 
+EN-DUMMY   ASSUM      ASSUM-ERR                                   3004600700015 
+EV         PRT/FIS    PRT/FIS                                     3004600700016 
+ 0.0253     2.492      0.008                                      3004600700017 
+ENDCOMMON            3          0                                 3004600700018 
+DATA                 3          7                                 3004600700019 
+PART-OUT   DATA       DATA-ERR                                    3004600700020 
+NO-DIM     NO-DIM     NO-DIM                                      3004600700021 
+ 0.         0.0259     0.0010                                     3004600700022 
+ 1.         0.1526     0.0020                                     3004600700023 
+ 2.         0.3289     0.0034                                     3004600700024 
+ 3.         0.3282     0.0035                                     3004600700025 
+ 4.         0.1320     0.0017                                     3004600700026 
+ 5.         0.0252     0.0020                                     3004600700027 
+ 6.         0.0045     0.0020                                     3004600700028 
+ENDDATA              9          0                                 3004600700029 
+ENDSUBENT           28          0                                 3004600799999 
+SUBENT        30046008   20231006                             32103004600800001 
+BIB                  7         10                                 3004600800002 
+REACTION   (92-U-235(N,F),NUM,NU,,MXW)                            3004600800003 
+EXP-YEAR   (1966)                                                 3004600800004 
+ASSUMED    (ASSUM,92-U-235(N,F),PR,NU)                            3004600800005 
+ADD-RES    <nu**2>= 7.073 +/- 0.032                               3004600800006 
+           var(nu)= 1.112 +/- 0.004                               3004600800007 
+ERR-ANALYS (DATA-ERR) Experimental reproducibility                3004600800008 
+STATUS     (TABLE,,J.W.Boldeman+,R,AAEC/E-172,1967) Table 10      3004600800009 
+           (DEP,30046003) nu-bar                                  3004600800010 
+           (SPSDD,30772010)                                       3004600800011 
+HISTORY    (20231006C) On                                         3004600800012 
+ENDBIB              10          0                                 3004600800013 
+COMMON               3          3                                 3004600800014 
+EN-DUMMY   ASSUM      ASSUM-ERR                                   3004600800015 
+EV         PRT/FIS    PRT/FIS                                     3004600800016 
+ 0.0253     2.416      0.008                                      3004600800017 
+ENDCOMMON            3          0                                 3004600800018 
+DATA                 3          7                                 3004600800019 
+PART-OUT   DATA       DATA-ERR                                    3004600800020 
+NO-DIM     NO-DIM     NO-DIM                                      3004600800021 
+ 0.         0.0313     0.0060                                     3004600800022 
+ 1.         0.1729     0.0016                                     3004600800023 
+ 2.         0.3336     0.0029                                     3004600800024 
+ 3.         0.3078     0.0029                                     3004600800025 
+ 4.         0.1232     0.0016                                     3004600800026 
+ 5.         0.0275     0.0020                                     3004600800027 
+ 6.         0.0038     0.0015                                     3004600800028 
+ENDDATA              9          0                                 3004600800029 
+ENDSUBENT           28          0                                 3004600899999 
+SUBENT        30046009   20231006                             32103004600900001 
+BIB                  7         10                                 3004600900002 
+REACTION   (94-PU-239(N,F),NUM,NU,,MXW)                           3004600900003 
+EXP-YEAR   (1966)                                                 3004600900004 
+ASSUMED    (ASSUM,94-PU-239(N,F),PR,NU)                           3004600900005 
+ADD-RES    <nu**2>= 9.838 +/- 0.040                               3004600900006 
+           var(nu)= 1.185 +/- 0.005                               3004600900007 
+ERR-ANALYS (DATA-ERR) Experimental reproducibility                3004600900008 
+STATUS     (TABLE,,J.W.Boldeman+,R,AAEC/E-172,1967) Table 10      3004600900009 
+           (DEP,30046004) nu-bar                                  3004600900010 
+           (SPSDD,30772011)                                       3004600900011 
+HISTORY    (20231006C) On                                         3004600900012 
+ENDBIB              10          0                                 3004600900013 
+COMMON               3          3                                 3004600900014 
+EN-DUMMY   ASSUM      ASSUM-ERR                                   3004600900015 
+EV         PRT/FIS    PRT/FIS                                     3004600900016 
+ 0.0253     2.904      0.008                                      3004600900017 
+ENDCOMMON            3          0                                 3004600900018 
+DATA                 3          7                                 3004600900019 
+PART-OUT   DATA       DATA-ERR                                    3004600900020 
+NO-DIM     NO-DIM     NO-DIM                                      3004600900021 
+ 0.         0.0094     0.0010                                     3004600900022 
+ 1.         0.0990     0.0027                                     3004600900023 
+ 2.         0.2696     0.0034                                     3004600900024 
+ 3.         0.3297     0.0035                                     3004600900025 
+ 4.         0.1982     0.0030                                     3004600900026 
+ 5.         0.0924     0.0040                                     3004600900027 
+ 6.         0.0119     0.0020                                     3004600900028 
+ENDDATA              9          0                                 3004600900029 
+ENDSUBENT           28          0                                 3004600999999 
+SUBENT        30046010   20231006                             32103004601000001 
+BIB                  7         10                                 3004601000002 
+REACTION   (94-PU-241(N,F),NUM,NU,,MXW)                           3004601000003 
+EXP-YEAR   (1966)                                                 3004601000004 
+ASSUMED    (ASSUM,94-PU-241(N,F),PR,NU)                           3004601000005 
+ADD-RES    <nu**2>=10.063 +/- 0.037                               3004601000006 
+           var(nu)= 1.173 +/- 0.004                               3004601000007 
+ERR-ANALYS (DATA-ERR) Experimental reproducibility                3004601000008 
+STATUS     (TABLE,,J.W.Boldeman+,R,AAEC/E-172,1967) Table 10      3004601000009 
+           (DEP,30046005) nu-bar                                  3004601000010 
+           (SPSDD,30772012)                                       3004601000011 
+HISTORY    (20231006C) On                                         3004601000012 
+ENDBIB              10          0                                 3004601000013 
+COMMON               3          3                                 3004601000014 
+EN-DUMMY   ASSUM      ASSUM-ERR                                   3004601000015 
+EV         PRT/FIS    PRT/FIS                                     3004601000016 
+ 0.0253     2.947      0.007                                      3004601000017 
+ENDCOMMON            3          0                                 3004601000018 
+DATA                 3          7                                 3004601000019 
+PART-OUT   DATA       DATA-ERR                                    3004601000020 
+NO-DIM     NO-DIM     NO-DIM                                      3004601000021 
+ 0.         0.0097     0.0010                                     3004601000022 
+ 1.         0.0877     0.0025                                     3004601000023 
+ 2.         0.2636     0.0030                                     3004601000024 
+ 3.         0.3343     0.0032                                     3004601000025 
+ 4.         0.2099     0.0035                                     3004601000026 
+ 5.         0.0811     0.0040                                     3004601000027 
+ 6.         0.0112     0.0020                                     3004601000028 
+ENDDATA              9          0                                 3004601000029 
+ENDSUBENT           28          0                                 3004601099999 
+SUBENT        30046011   20231006                             32103004601100001 
+BIB                  7          8                                 3004601100002 
+REACTION   (98-CF-252(0,F),NUM,NU)                                3004601100003 
+ASSUMED    (ASSUM,98-CF-252(0,F),PR,NU)                           3004601100004 
+REL-REF    (R,,E.J.Axton,R,EUR-8805,1984) nu-bar=3.757            3004601100005 
+ADD-RES    <nu**2>=15.724 +/- 0.007                               3004601100006 
+           var(nu)= 1.607 +/- 0.003                               3004601100007 
+ERR-ANALYS (DATA-ERR) Experimental reproducibility                3004601100008 
+STATUS     (TABLE,,J.W.Boldeman+,J,NSE,91,114,1985) Table III     3004601100009 
+HISTORY    (20231006C) On                                         3004601100010 
+ENDBIB               8          0                                 3004601100011 
+COMMON               1          3                                 3004601100012 
+ASSUM                                                             3004601100013 
+PRT/FIS                                                           3004601100014 
+ 3.757                                                            3004601100015 
+ENDCOMMON            3          0                                 3004601100016 
+DATA                 3          9                                 3004601100017 
+PART-OUT   DATA       DATA-ERR                                    3004601100018 
+NO-DIM     NO-DIM     NO-DIM                                      3004601100019 
+ 0.         0.00212    0.00008                                    3004601100020 
+ 1.         0.02598    0.00025                                    3004601100021 
+ 2.         0.1267     0.0005                                     3004601100022 
+ 3.         0.2734     0.0008                                     3004601100023 
+ 4.         0.3039     0.0010                                     3004601100024 
+ 5.         0.1848     0.0007                                     3004601100025 
+ 6.         0.0657     0.0006                                     3004601100026 
+ 7.         0.0154     0.0003                                     3004601100027 
+ 8.         0.0020     0.0002                                     3004601100028 
+ENDDATA             11          0                                 3004601100029 
+ENDSUBENT           28          0                                 3004601199999 
+ENDENTRY            11          0                                 3004699999999 

@@ -1,0 +1,83 @@
+ENTRY            32832   20231122                             32103283200000001 
+SUBENT        32832001   20231122                             32103283200100001 
+BIB                 12         20                                 3283200100002 
+TITLE      Measurement of the average number of prompt neutrons   3283200100003 
+            of fission reaction of U-235, Th-232 induced by       3283200100004 
+            neutrons of the fission spectrum                      3283200100005 
+AUTHOR     (Wang Yusheng, Zhou Youpu, Guo Shilun, Huang Shengnian)3283200100006 
+INSTITUTE  (3CPRAEP)                                              3283200100007 
+REFERENCE  (J,CST,6,1,1964)                                       3283200100008 
+FACILITY   (REAC,3CPRAEP) Heavy water reactor                     3283200100009 
+INC-SOURCE Fission neutrons produced by irradiation of 66.92 g    3283200100010 
+            U3O8 powder by thermal neutron beam                   3283200100011 
+SAMPLE     A metal U-235 sheet (89.7+/-0.5% purity, 2.33 g weight,3283200100012 
+            2.5 x 10 cm2 area) fixed in an ionization chamber.    3283200100013 
+           42 Al foils (0.2 mm thick, 52 mm in diam.) coated on   3283200100014 
+            both sides with thorium nitrate to form a multilayer  3283200100015 
+            ionization chamber.                                   3283200100016 
+DETECTOR   (BF3) 18 CHM-7 BF3 counter with 90% B-10.              3283200100017 
+METHOD     (COINC) Slow-coincidence method.                       3283200100018 
+ERR-ANALYS (DATA-ERR) mainly from statistics                      3283200100019 
+STATUS     (TABLE,,Wang Yusheng+,J,CST,6,1,1964) Abstract         3283200100020 
+HISTORY    (20230915C) Liu Yangyang (CNDC)                        3283200100021 
+           (20231122A) On. Finalized.                             3283200100022 
+ENDBIB              20          0                                 3283200100023 
+NOCOMMON             0          0                                 3283200100024 
+ENDSUBENT           23          0                                 3283200199999 
+SUBENT        32832002   20231122                             32103283200200001 
+BIB                  2          4                                 3283200200002 
+REACTION   ((92-U-235(N,F),PR,NU,,FIS)//(92-U-235(N,F),PR,NU))    3283200200003 
+CORRECTION Correction of fission number caused by low energy      3283200200004 
+           neutrons (21.5+/-1.5%)                                 3283200200005 
+           U-238 and U-234 impurity correction (10.3+/-0.5)%      3283200200006 
+ENDBIB               4          0                                 3283200200007 
+NOCOMMON             0          0                                 3283200200008 
+DATA                 4          1                                 3283200200009 
+KT-DUM-NM  EN-DN      DATA       DATA-ERR                         3283200200010 
+MEV        EV         NO-DIM     NO-DIM                           3283200200011 
+ 1.32       0.0253     1.11       0.03                            3283200200012 
+ENDDATA              3          0                                 3283200200013 
+ENDSUBENT           12          0                                 3283200299999 
+SUBENT        32832003   20231122                             32103283200300001 
+BIB                  4          5                                 3283200300002 
+REACTION   (92-U-235(N,F),PR,NU,,FIS)                             3283200300003 
+MONITOR    (92-U-235(N,F),PR,NU)                                  3283200300004 
+MONIT-REF  (,Hughes,J,NUC,17,(11),132,1959)                       3283200300005 
+STATUS     (DEP,32832002) Ratio to the multiplicity for thermal   3283200300006 
+                         fission.                                 3283200300007 
+ENDBIB               5          0                                 3283200300008 
+NOCOMMON             0          0                                 3283200300009 
+DATA                 6          1                                 3283200300010 
+KT-DUMMY   DATA       DATA-ERR   EN-NRM     MONIT      MONIT-ERR  3283200300011 
+MEV        PRT/FIS    PRT/FIS    EV         PRT/FIS    PRT/FIS    3283200300012 
+ 1.32       2.69       0.07       0.0253     2.43       0.02      3283200300013 
+ENDDATA              3          0                                 3283200300014 
+ENDSUBENT           13          0                                 3283200399999 
+SUBENT        32832004   20231122                             32103283200400001 
+BIB                  2          2                                 3283200400002 
+REACTION   ((90-TH-232(N,F),PR,NU,,FIS)//(92-U-235(N,F),PR,NU))   3283200400003 
+CORRECTION Geometric correction (1.015)                           3283200400004 
+ENDBIB               2          0                                 3283200400005 
+NOCOMMON             0          0                                 3283200400006 
+DATA                 4          1                                 3283200400007 
+KT-DUM-NM  EN-DN      DATA       DATA-ERR                         3283200400008 
+MEV        EV         NO-DIM     NO-DIM                           3283200400009 
+ 1.32       0.0253     1.05       0.02                            3283200400010 
+ENDDATA              3          0                                 3283200400011 
+ENDSUBENT           10          0                                 3283200499999 
+SUBENT        32832005   20231122                             32103283200500001 
+BIB                  4          5                                 3283200500002 
+REACTION   (90-TH-232(N,F),PR,NU,,FIS)                            3283200500003 
+MONITOR    (92-U-235(N,F),PR,NU)                                  3283200500004 
+MONIT-REF  (,Hughes,J,NUC,17,(11),132,1959)                       3283200500005 
+STATUS     (DEP,32832004) Ratio to the multiplicity for thermal   3283200500006 
+                         fission.                                 3283200500007 
+ENDBIB               5          0                                 3283200500008 
+NOCOMMON             0          0                                 3283200500009 
+DATA                 6          1                                 3283200500010 
+KT-DUMMY   DATA       DATA-ERR   EN-NRM     MONIT      MONIT-ERR  3283200500011 
+MEV        PRT/FIS    PRT/FIS    EV         PRT/FIS    PRT/FIS    3283200500012 
+ 1.32       2.56       0.06       0.0253     2.43       0.02      3283200500013 
+ENDDATA              3          0                                 3283200500014 
+ENDSUBENT           13          0                                 3283200599999 
+ENDENTRY             5          0                                 3283299999999 
