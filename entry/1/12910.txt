@@ -1,73 +1,75 @@
-ENTRY            12910   20050926                             13371291000000001 
-SUBENT        12910001   20050926                             13371291000100001 
-BIB                 14         38                                 1291000100002 
-INSTITUTE  (1USAMHG)                                              1291000100003 
-REFERENCE  (J,ANS,47,425,1984)                                    1291000100004 
-           (P,DOE-NDC-36,113,1985)                                1291000100005 
-AUTHOR     (K.R.Zasadny,H.M.Agrawal,M.Mahdavi,G.F.Knoll)          1291000100006 
-TITLE      Measurement of the 14-MeV fission cross sections       1291000100007 
-           for U-233 and Np-237                                   1291000100008 
-FACILITY   University of Michigan experimental bay area facility  1291000100009 
-METHOD     (ACTIV)                                                1291000100010 
-INC-SOURCE (D-T)                                                  1291000100011 
-MONITOR    (26-FE-56(N,P)25-MN-56,,SIG)                           1291000100012 
-DETECTOR   (TRD) Fission fragments detected in a limited solid    1291000100013 
-             angle by a polyester track-etch detector film.       1291000100014 
-SAMPLE     The fission deposits are 2.75-cm-diam X 1mg/cm2        1291000100015 
-             evaporation (made at ORNL) on a 0.0508-cm-thick      1291000100016 
-             platinum backing                                     1291000100017 
-ERR-ANALYS (DATA-ERR) Major sources of uncertainties are-         1291000100018 
-             Flux calculation from iron foil activation           1291000100019 
-                                    = 1.2 tp 1.5 percent          1291000100020 
-             Fission track counting statistics                    1291000100021 
-                                    = 0.65 to 0.76 percent        1291000100022 
-             Anisotropy uncertainty = 0.40 to 0.81 percent        1291000100023 
-             Scattering correction  = 0.4 percent                 1291000100024 
-             Geometric uncertainty  = 0.24 percent                1291000100025 
-CORRECTION Major corrections to the fission cross sections-       1291000100026 
-           . anisotropy of fission fragments from CM to LAB       1291000100027 
-                = -1.93+-0.48 percent for U-233                   1291000100028 
-                = -1.91+-0.48 percent for Np-237                  1291000100029 
-           . Neutrons scattered and from (n,2n) reaction          1291000100030 
-                = -3.1+-0.4 percent                               1291000100031 
-           . U-233 foil impuruty warrants                         1291000100032 
-                = -0.15+-0.04 percent                             1291000100033 
-             No such a correction for Np-237                      1291000100034 
-           . Room-scattered-neutron estimation made               1291000100035 
-STATUS     (PRELM)                                                1291000100036 
-           (APRVD) K.R.Zasadny, 85/1/14.                          1291000100037 
-HISTORY    (19841120C)                                            1291000100038 
-           (20050926C) DR Format updated and second reference     1291000100039 
-            added                                                 1291000100040 
-ENDBIB              38          0                                 1291000100041 
-COMMON               4          3                                 1291000100042 
-EN         EN-ERR     MONIT      MONIT-ERR                        1291000100043 
-MEV        MEV        MB         MB                               1291000100044 
- 14.62      0.02       110.8      1.                              1291000100045 
-ENDCOMMON            3          0                                 1291000100046 
-ENDSUBENT           45          0                                 1291000199999 
-SUBENT        12910002   19850124                             00001291000200001 
-BIB                  2          2                                 1291000200002 
-REACTION   (92-U-233(N,F),,SIG)                                   1291000200003 
-ASSUMED    ANISOTROPY ASSUMED-1.32+-0.13                          1291000200004 
-ENDBIB               2          0                                 1291000200005 
-NOCOMMON             0          0                                 1291000200006 
-DATA                 2          1                                 1291000200007 
-DATA       DATA-ERR                                               1291000200008 
-B          B                                                      1291000200009 
- 2.43       0.080                                                 1291000200010 
-ENDDATA              3          0                                 1291000200011 
-ENDSUBENT           10          0                                 1291000299999 
-SUBENT        12910003   19850124                             00001291000300001 
-BIB                  2          2                                 1291000300002 
-REACTION   (93-NP-237(N,F),,SIG)                                  1291000300003 
-ASSUMED    ANISOTROPY ASSUMED-1.14+-0.11                          1291000300004 
-ENDBIB               2          0                                 1291000300005 
-NOCOMMON             0          0                                 1291000300006 
-DATA                 2          1                                 1291000300007 
-DATA       DATA-ERR                                               1291000300008 
-B          B                                                      1291000300009 
- 2.24       0.065                                                 1291000300010 
-ENDDATA              3          0                                 1291000300011 
-ENDSUBENT           10          0                                 1291000399999 
+ENTRY            12910   20180724                             144212910  0    1 
+SUBENT        12910001   20180724                             144212910  1    1 
+BIB                 14         40                                 12910  1    2 
+TITLE      Measurement of the 14-MeV fission cross sections       12910  1    3 
+            for 233U and and 237Np                                12910  1    4 
+REFERENCE  (J,ANS,47,425,1984)                                    12910  1    5 
+           ((P,BNL-NCS-36272,113,1985)=(P,INDC(USA)-96,113,1985)) 12910  1    6 
+            Detailed description, same data given                 12910  1    7 
+AUTHOR     (K.R.Zasadny, H.M.Agrawal, M.Mahdavi, G.F.Knoll)       12910  1    8 
+INSTITUTE  (1USAMHG)                                              12910  1    9 
+FACILITY   (CCW,1USAMHG) 150 kV CCW 14 MeV neutron generator      12910  1   10 
+METHOD     (ACTIV)                                                12910  1   11 
+INC-SOURCE (D-T)                                                  12910  1   12 
+MONITOR    (26-FE-56(N,P)25-MN-56,,SIG) by 4pi beta-gamma         12910  1   13 
+            T.B.Ryves et al., Nucl.Instrum.Meth.167(1979)449 is   12910  1   14 
+            cited by the authors, but the cross section is not    12910  1   15 
+            discussed in the article.                             12910  1   16 
+DETECTOR   (TRD) Detected in a limited solid angle by a polyester 12910  1   17 
+            track-etch detector film.                             12910  1   18 
+SAMPLE     Fission deposits (2.75 cm diam., 1 mg/cm2, fabricated  12910  1   19 
+            by ORNL) evaporated on Pt backing (0.0508 cm thick).  12910  1   20 
+           The mass was measured within accuracy of +/-0.05%.     12910  1   21 
+CORRECTION Corrected for                                          12910  1   22 
+            - CMS to Lab conversion of fragment anisotropy        12910  1   23 
+                                           (233U:  -1.93+/-0.48%, 12910  1   24 
+                                            237Np: -1.91+/-0.48%) 12910  1   25 
+            - Scattered and (n,2n) neutrons         (-3.1+/-0.4%) 12910  1   26 
+            - Foil impuruty warrants                              12910  1   27 
+                                           (233U:  -0.15+/-0.04%, 12910  1   28 
+                                            237Np:  no correction)12910  1   29 
+            - Room-scattered-neutron                              12910  1   30 
+ERR-ANALYS (ERR-T) Major sources of uncertainties are:            12910  1   31 
+           (ERR-1,1.2,1.5)   Flux determination       (1.2-1.5%)  12910  1   32 
+           (ERR-S,0.65,0.76) Fission track counting (0.65-0.76%)  12910  1   33 
+           (ERR-2,0.40,0.81) Anisotropy uncertainty (0.40-0.81%)  12910  1   34 
+           (ERR-3)           Scattering correction        (0.4%)  12910  1   35 
+           (ERR-4)           Geometry                    (0.24%)  12910  1   36 
+STATUS     (PRELM)                                                12910  1   37 
+           (APRVD) K.R.Zasadny, 85/1/14.                          12910  1   38 
+           (TABLE) Text (p426) of Trans.Am.Nucl.Soc.47(1984)425   12910  1   39 
+HISTORY    (19841120C)                                            12910  1   40 
+           (20050926U) DR Format updated and second ref. added    12910  1   41 
+           (20180724A) On. ERR-S, ERR-1 to ERR-4 added.           12910  1   42 
+ENDBIB              40          0                                 12910  1   43 
+COMMON               4          3                                 12910  1   44 
+MONIT      MONIT-ERR  ERR-3      ERR-4                            12910  1   45 
+MB         MB         PER-CENT   PER-CENT                         12910  1   46 
+ 110.8      1.         0.4        0.24                            12910  1   47 
+ENDCOMMON            3          0                                 12910  1   48 
+ENDSUBENT           47          0                                 12910  199999 
+SUBENT        12910002   20180724                             144212910  2    1 
+BIB                  2          2                                 12910  2    2 
+REACTION   (92-U-233(N,F),,SIG)                                   12910  2    3 
+ASSUMED    Anisotropy of -1.32+/-0.13 assumed                     12910  2    4 
+ENDBIB               2          0                                 12910  2    5 
+NOCOMMON             0          0                                 12910  2    6 
+DATA                 4          1                                 12910  2    7 
+EN         EN-ERR     DATA       ERR-T                            12910  2    8 
+MEV        MEV        B          B                                12910  2    9 
+ 14.62      0.02       2.43       0.080                           12910  2   10 
+ENDDATA              3          0                                 12910  2   11 
+ENDSUBENT           10          0                                 12910  299999 
+SUBENT        12910003   20180724                             144212910  3    1 
+BIB                  2          2                                 12910  3    2 
+REACTION   (93-NP-237(N,F),,SIG)                                  12910  3    3 
+ASSUMED    Anisotropy of -1.14+/-0.11 assumed                     12910  3    4 
+ENDBIB               2          0                                 12910  3    5 
+NOCOMMON             0          0                                 12910  3    6 
+DATA                 4          1                                 12910  3    7 
+EN         EN-ERR     DATA       ERR-T                            12910  3    8 
+MEV        MEV        B          B                                12910  3    9 
+ 14.62      0.02       2.24       0.065                           12910  3   10 
+ENDDATA              3          0                                 12910  3   11 
+ENDSUBENT           10          0                                 12910  399999 
 ENDENTRY             3          0                                 1291099999999 

@@ -1,53 +1,73 @@
-ENTRY            12576   19841004                             00001257600000001 
-SUBENT        12576001   19841004                             00001257600100001 
-BIB                  7          9                                 1257600100002 
-INSTITUTE  (1USAANL)                                              1257600100003 
-REFERENCE  (R,CS-3471,4,46)                                       1257600100004 
-AUTHOR     (G.T.SEABORG,W.M.MANNING)                              1257600100005 
-TITLE      CAPTURE CROSS SECTION OF AMERICIUM-241 FOR             1257600100006 
-            PILE NEUTRONS.                                        1257600100007 
-INC-SOURCE (REAC) U-GRAPHITE REACTOR, X-10                        1257600100008 
-STATUS     (SCSRS)                                                1257600100009 
-HISTORY    (760804T) TRANSLATED FROM SCISRS                       1257600100010 
-           (841004A) CONVERTED TO REACTION FORMALISM              1257600100011 
-ENDBIB               9          0                                 1257600100012 
-NOCOMMON             0          0                                 1257600100013 
-ENDSUBENT           12          0                                 1257600199999 
-SUBENT        12576002   19841004                             00001257600200001 
-BIB                  4          6                                 1257600200002 
-REACTION   (95-AM-241(N,G)95-AM-242-G,,SIG,,SPA)                  1257600200003 
-METHOD     (ACTIV)    ACTIVATION                                  1257600200004 
-DECAY-DATA (95-AM-241,490.YR)                                     1257600200005 
-           (95-AM-242-G,16.HR,B-,,1.0)                            1257600200006 
-           (96-CM-242,146.D)                                      1257600200007 
-INC-SPECT   REACTOR SPECTRUM                                      1257600200008 
-ENDBIB               6          0                                 1257600200009 
-NOCOMMON             0          0                                 1257600200010 
-DATA                 3          1                                 1257600200011 
-EN-DUMMY   DATA       DATA-ERR                                    1257600200012 
-MEV        B          PER-CENT                                    1257600200013 
- 2.53   -08 5.60   +02   15.                                      1257600200014 
-ENDDATA              3          0                                 1257600200015 
-ENDSUBENT           14          0                                 1257600299999 
-SUBENT        12576003   19841004                             00001257600300001 
-BIB                  5          7                                 1257600300002 
-REACTION   (95-AM-241(N,G)95-AM-242-G,,SIG,,SPA)                  1257600300003 
-STATUS     (RNORM) RECALCULATED BY NNCSC                          1257600300004 
-METHOD     (ACTIV)    ACTIVATION                                  1257600300005 
-COMMENT    U-GRAPHITE REACTOR(X-10). BASED ON 84PERCENT FOR 16HR  1257600300006 
-            AM242 BETA BRANCH TO CM242. ASSUMED AM241 HALF-LIFE=  1257600300007 
-            459YR AND CM242 HALF-LIFE=163D.                       1257600300008 
-INC-SPECT   REACTOR SPECTRUM                                      1257600300009 
-ENDBIB               7          0                                 1257600300010 
-COMMON               1          3                                 1257600300011 
-HL                                                                1257600300012 
-HR                                                                1257600300013 
-   16.                                                            1257600300014 
-ENDCOMMON            3          0                                 1257600300015 
-DATA                 2          1                                 1257600300016 
-EN-DUMMY   DATA                                                   1257600300017 
-MEV        B                                                      1257600300018 
- 2.53   -08 8.00   +02                                            1257600300019 
-ENDDATA              3          0                                 1257600300020 
-ENDSUBENT           19          0                                 1257600399999 
+ENTRY            12576   20180608                             144212576  0    1 
+SUBENT        12576001   20180608                             144212576  1    1 
+BIB                 10         23                                 12576  1    2 
+TITLE      Capture Cross-Section of Americium-241 for Pile        12576  1    3 
+           Neutrons                                               12576  1    4 
+AUTHOR     (G.T.Seaborg,W.M.Manning)                              12576  1    5 
+REFERENCE  (R,CS-3471,4,1946)                                     12576  1    6 
+INSTITUTE  (1USAANL)                                              12576  1    7 
+FACILITY   (REAC,1USAORL) U-graphite reactor, X-10.               12576  1    8 
+INC-SPECT  Reactor spectrum.                                      12576  1    9 
+SAMPLE     1.7 microg sample of 241Am.                            12576  1   10 
+PART-DET   (A)                                                    12576  1   11 
+METHOD     (ACTIV) Americium sample was bombarded for five weeks  12576  1   12 
+           in the Clinton pile. After bombardment the alpha       12576  1   13 
+           activity of the sample was observed to consist of      12576  1   14 
+           40.3% at 4.1 cm range of 241Am and 59.7% at the 4.7    12576  1   15 
+           cm range of 242Cm [formed as a result of the reaction  12576  1   16 
+           241Am(n,gamma)242Am(beta-)242Cm].                      12576  1   17 
+HISTORY    (19760804T) Translated from SCISRS.                    12576  1   18 
+           (19841004A) Converted to reaction formalism.           12576  1   19 
+           (20180608A) BP: Updated to new date formats,lower      12576  1   20 
+           case. Corrections according last EXFOR rules and       12576  1   21 
+           Dict. and CP-D/841 Rev.=WP2014-45, clarified the       12576  1   22 
+           situation with the cross section recalculation and     12576  1   23 
+           added present day half lives and branching ratios for  12576  1   24 
+           comparison.                                            12576  1   25 
+ENDBIB              23          0                                 12576  1   26 
+NOCOMMON             0          0                                 12576  1   27 
+ENDSUBENT           26          0                                 12576  199999 
+SUBENT        12576002   20180608                             144212576  2    1 
+BIB                  5          8                                 12576  2    2 
+REACTION   (95-AM-241(N,G)95-AM-242-G,,SIG,,SPA)                  12576  2    3 
+ERR-ANALYS (DATA-ERR) No details on sources of uncertainties.     12576  2    4 
+DECAY-DATA (95-AM-241,490.YR)                                     12576  2    5 
+           (95-AM-242-G,18.HR,B-,,1.0)                            12576  2    6 
+           (96-CM-242,0.4YR)                                      12576  2    7 
+CORRECTION Corrected for 242Cm decay during the bombardment.      12576  2    8 
+STATUS     (OUTDT,12576003)                                       12576  2    9 
+           (TABLE) page 4.                                        12576  2   10 
+ENDBIB               8          0                                 12576  2   11 
+NOCOMMON             0          0                                 12576  2   12 
+DATA                 3          1                                 12576  2   13 
+EN-DUMMY   DATA       DATA-ERR                                    12576  2   14 
+MEV        B          PER-CENT                                    12576  2   15 
+   2.53E-08   5.60E+02        15.                                 12576  2   16 
+ENDDATA              3          0                                 12576  2   17 
+ENDSUBENT           16          0                                 12576  299999 
+SUBENT        12576003   20180608                             144212576  3    1 
+BIB                  5         15                                 12576  3    2 
+REACTION   (95-AM-241(N,G)95-AM-242-G,,SIG,,SPA)                  12576  3    3 
+STATUS     (DEP,12576002)                                         12576  3    4 
+           (RNORM,12576002)                                       12576  3    5 
+COMMENT    Cross section was recalculated by NNCSC using 1970s    12576  3    6 
+           values for the half lives and branching ratios: 84%    12576  3    7 
+           for 16hr Am242 beta branch to Cm242. Assumed Am241     12576  3    8 
+           T1/2= 459yr and Cm242 T1/2=163d.                       12576  3    9 
+           Compiler's comment: The 2018 values for 242Am          12576  3   10 
+           T1/2=16.02 h, 241Am T1/2=432.6 y, and 242Cm T1/2=162.8 12576  3   11 
+           days. Beta decay branching ratio of 242Am to 242Cm is  12576  3   12 
+           82.7%.                                                 12576  3   13 
+DECAY-DATA (95-AM-241,459.YR)                                     12576  3   14 
+           (95-AM-242-G,16.HR,B-,,1.0)                            12576  3   15 
+           (96-CM-242,0163.D)                                     12576  3   16 
+HISTORY    (20180608A) BP: Clarified cross section recalculation. 12576  3   17 
+ENDBIB              15          0                                 12576  3   18 
+NOCOMMON             0          0                                 12576  3   19 
+DATA                 2          1                                 12576  3   20 
+EN-DUMMY   DATA                                                   12576  3   21 
+MEV        B                                                      12576  3   22 
+   2.53E-08   8.00E+02                                            12576  3   23 
+ENDDATA              3          0                                 12576  3   24 
+ENDSUBENT           23          0                                 12576  399999 
 ENDENTRY             3          0                                 1257699999999 
