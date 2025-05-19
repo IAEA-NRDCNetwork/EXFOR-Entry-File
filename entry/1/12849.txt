@@ -1,82 +1,96 @@
-ENTRY            12849   20091105                             13551284900000001 
-SUBENT        12849001   20091105                             13551284900100001 
-BIB                 11         25                                 1284900100002 
-INSTITUTE  (1USAORL)                                              1284900100003 
-REFERENCE  (J,PR/C,28,1635,198310)                                1284900100004 
-AUTHOR     (R.B.Perez,G.de Saussure,J.H.Todd,T.J.Yang,            1284900100005 
-           G.F.Auchampaugh)                                       1284900100006 
-TITLE      Treatment of the 232Th(n,f) suthreshold and            1284900100007 
-            near-subthreshold cross section                       1284900100008 
-FACILITY   (LINAC,1USAORL) ORELA                                  1284900100009 
-METHOD     (TOF)                                                  1284900100010 
-INC-SOURCE (PHOTO)                                                1284900100011 
-MONITOR    (92-U-235(N,F),,SIG)                                   1284900100012 
-           232Th/235U cross section ratio normalized in the       1284900100013 
-            1.4-1.5 MeV interval to 0.0519 obtained from          1284900100014 
-            ENDF/B-V. 232Th fission cross section obtained        1284900100015 
-            using ENDF/B-V 235U fission cross sections.           1284900100016 
-DETECTOR   (FISCH) Fission-fragment detector consisted of 10      1284900100017 
-             electronically independent sections.                 1284900100018 
-             A total of 5831 mg thorium in the fist and last four 1284900100019 
-             sections. The middle sections contained 649 mg of    1284900100020 
-             235U                                                 1284900100021 
-STATUS     Ratio and fission cross section data not available.    1284900100022 
-           (APRVD) R.B.Perez, 1984/10/15.                         1284900100023 
-HISTORY    (19840723C)                                            1284900100024 
-           (19841018A) BIB update.                                1284900100025 
-           (20091105A) VM:Updated to new date formats,lower case. 1284900100026 
-                       BIB updates                                1284900100027 
-ENDBIB              25          0                                 1284900100028 
-NOCOMMON             0          0                                 1284900100029 
-ENDSUBENT           28          0                                 1284900199999 
-SUBENT        12849002   20091105                             13551284900200001 
-BIB                  5         16                                 1284900200002 
-REACTION   (90-TH-232(N,F),,SIG,,AV)                              1284900200003 
-CORRECTION Corrections were made for neutron scattering from      1284900200004 
-            the structural material in the fission chamber.       1284900200005 
-           Negative averaged cross sections in the low energy     1284900200006 
-             region are due to background subtraction.            1284900200007 
-ERR-ANALYS (ERR-SYS) Systematic uncertainty consists of           1284900200008 
-            uncertainties due to:                                 1284900200009 
-            . normalization                                       1284900200010 
-            . background subtraction                              1284900200011 
-            . corrections for structural material neutron         1284900200012 
-              scatterng                                           1284900200013 
-           (ERR-S) Statistical uncertainties based on two         1284900200014 
-                      two standard deviations.                    1284900200015 
-STATUS     (TABLE) Data taken from Tables II & III in reference.  1284900200016 
-HISTORY    (20091105A) BIB update. Error headings updated,        1284900200017 
-             statistical uncertainties for 2 tables combined.     1284900200018 
-ENDBIB              16          0                                 1284900200019 
-COMMON               2          3                                 1284900200020 
-EN-RSL     ERR-SYS                                                1284900200021 
-NSEC/M     PER-CENT                                               1284900200022 
-0.4         5.                                                    1284900200023 
-ENDCOMMON            3          0                                 1284900200024 
-DATA                 4         21                                 1284900200025 
-EN-MIN     EN-MAX     DATA       ERR-S                            1284900200026 
-KEV        KEV        MICRO-B    MICRO-B                          1284900200027 
-    0.1        1.0       -8.0       0.0                           1284900200028 
-    1.0        5.0        3.0       5.0                           1284900200029 
-    5.0       10.0       -2.0       5.0                           1284900200030 
-   10.0       20.0        2.3       4.0                           1284900200031 
-   20.0       50.0        2.4       2.4                           1284900200032 
-   50.0      100.0        2.2       2.0                           1284900200033 
-  100.0      200.0        3.6       0.6                           1284900200034 
-  200.0      300.0        2.4       0.5                           1284900200035 
-  300.0      400.0        5.4       0.6                           1284900200036 
-  400.0      500.0        5.8       0.6                           1284900200037 
-  500.0      600.0        5.9       0.7                           1284900200038 
-  600.0      700.0       11.3       1.0                           1284900200039 
-  700.0      800.0       75.6       2.9                           1284900200040 
-  800.0      900.0      249.0       6.0                           1284900200041 
-  900.0     1000.0      919.0      16.0                           1284900200042 
- 1000.0     1100.0     1820.0      30.0                           1284900200043 
- 1100.0     1200.0     3160.0      60.0                           1284900200044 
- 1200.0     1300.0    10170.0     180.0                           1284900200045 
- 1300.0     1400.0    37700.0     720.0                           1284900200046 
- 1400.0     1500.0    64820.0    1290.0                           1284900200047 
- 1500.0     1600.0    98960.0    2200.0                           1284900200048 
-ENDDATA             23          0                                 1284900200049 
-ENDSUBENT           48          0                                 1284900299999 
+ENTRY            12849   20221021                             150412849000    1 
+SUBENT        12849001   20221021                             150412849001    1 
+BIB                 12         33                                 12849001    2 
+TITLE      Measurement of the 232Th(n,f) subthreshold and         12849001    3 
+            near-subthreshold cross section                       12849001    4 
+AUTHOR     (R.B.Perez, G.de Saussure, J.H.Todd, T.J.Yang,         12849001    5 
+            G.F.Auchampaugh)                                      12849001    6 
+INSTITUTE  (1USAORL,1USALAS)                                      12849001    7 
+           (3CHFCHF) Institute of Nuclear Research, Taiwan        12849001    8 
+REFERENCE  (J,PR/C,28,1635,1983)                                  12849001    9 
+FACILITY   (LINAC,1USAORL) ORELA                                  12849001   10 
+INC-SOURCE (PHOTO) Photoneutrons from water-cooled Ta target      12849001   11 
+DETECTOR   (FISCH) Fission-fragment detector consisted of 10      12849001   12 
+            electronically independent sections.                  12849001   13 
+SAMPLE      Th (5831 mg in total) in the first and last four      12849001   14 
+             sections; each section consisted of eight deposits   12849001   15 
+             of ~1.2 mg/cm2.                                      12849001   16 
+            235U (649 mg in total) in the two central sections;   12849001   17 
+             each section consisted of four deposits of 1 mg/cm2. 12849001   18 
+METHOD     (TOF) 24.874 m flight path length                      12849001   19 
+ADD-RES    Additional cross section averaged over energy intervals12849001   20 
+            where averaged cross sections with thinner bins are   12849001   21 
+            compiled in 002:                                      12849001   22 
+               Energy interval          Cross section             12849001   23 
+                   (keV)                    (ub)                  12849001   24 
+                  1   -  20              1.4 +/- 2.8              12849001   25 
+                 20   - 100              2.3 +/- 2.0              12849001   26 
+                  0.1 - 100              2.0 +/- 1.4              12849001   27 
+STATUS     (APRVD) R.B.Perez, 1984/10/15.                         12849001   28 
+           (TABLE) Table II-III of Phys.Rev.C28(1983)1635         12849001   29 
+            Ratio and fission cross section data not available.   12849001   30 
+HISTORY    (19840723C)                                            12849001   31 
+           (19841018A) BIB update.                                12849001   32 
+           (20091105A) VM: Updated to new date formats,lower case.12849001   33 
+                       BIB updates                                12849001   34 
+           (20221021U) VT+On. Major revision in 002.              12849001   35 
+ENDBIB              33          0                                 12849001   36 
+NOCOMMON             0          0                                 12849001   37 
+ENDSUBENT           36          0                                 1284900199999 
+SUBENT        12849002   20221021                             150412849002    1 
+BIB                  7         22                                 12849002    2 
+REACTION   (90-TH-232(N,F),,SIG,,AV)                              12849002    3 
+MONITOR    ((90-TH-232(N,F),,SIG,,AV)/(90-TH-232(N,F),,SIG,,AV))  12849002    4 
+            Measured shape ratio normalized to absolute ratio     12849002    5 
+MONIT-REF  (,,3,ENDF/B-V,,1978)                                   12849002    6 
+            En**(-0.81) shape assumed below 100 keV               12849002    7 
+CORRECTION Corrected for                                          12849002    8 
+           - neutron scattering from structural material in detect12849002    9 
+           - background which makes cross section negative in low 12849002   10 
+             energy                                               12849002   11 
+ERR-ANALYS (ERR-SYS) Systematic uncertainty (5%) due to           12849002   12 
+            - normalization                                       12849002   13 
+            - background subtraction                              12849002   14 
+            - corrections for structural material neutron         12849002   15 
+              scattering                                          12849002   16 
+           (ERR-S) Statistical uncertainties based on two         12849002   17 
+            standard deviations.                                  12849002   18 
+FLAG       (1.) Two standard deviation in the article converted   12849002   19 
+            to one standard deviation by the compiler.            12849002   20 
+HISTORY    (20091105A) BIB update. Error headings updated,        12849002   21 
+             statistical uncertainties for 2 tables combined.     12849002   22 
+           (20221021A) VT+On. MONIT added. ERR-S divided by two   12849002   23 
+            below 100 keV.                                        12849002   24 
+ENDBIB              22          0                                 12849002   25 
+COMMON               5          3                                 12849002   26 
+EN-RSL     ERR-SYS    EN-NRM-MIN EN-NRM-MAX MONIT                 12849002   27 
+NSEC/M     PER-CENT   MEV        MEV        NO-DIM                12849002   28 
+0.4         5.         1.4        1.5        0.0519               12849002   29 
+ENDCOMMON            3          0                                 12849002   30 
+DATA                 5         21                                 12849002   31 
+EN-MIN     EN-MAX     DATA       ERR-S      FLAG                  12849002   32 
+KEV        KEV        MICRO-B    MICRO-B    NO-DIM                12849002   33 
+    0.1        1.       -8.0       0.0       1.                   12849002   34 
+    1.         5.        3.0       2.5       1.                   12849002   35 
+    5.        10.       -2.0       2.5       1.                   12849002   36 
+   10.        20.        2.3       2.0       1.                   12849002   37 
+   20.        50.        2.4       1.2       1.                   12849002   38 
+   50.       100.        2.2       1.0       1.                   12849002   39 
+  100.       200.        3.6       0.6                            12849002   40 
+  200.       300.        2.4       0.5                            12849002   41 
+  300.       400.        5.4       0.6                            12849002   42 
+  400.       500.        5.8       0.6                            12849002   43 
+  500.       600.        5.9       0.7                            12849002   44 
+  600.       700.       11.3       1.0                            12849002   45 
+  700.       800.       75.6       2.9                            12849002   46 
+  800.       900.      249.        6.                             12849002   47 
+  900.      1000.      919.       16.                             12849002   48 
+ 1000.      1100.        1.82E+03   0.03E+03                      12849002   49 
+ 1100.      1200.        3.16E+03   0.06E+03                      12849002   50 
+ 1200.      1300.       10.17E+03   0.18E+03                      12849002   51 
+ 1300.      1400.       37.70E+03   0.72E+03                      12849002   52 
+ 1400.      1500.       64.82E+03   1.29E+03                      12849002   53 
+ 1500.      1600.       98.96E+03   2.20E+03                      12849002   54 
+ENDDATA             23          0                                 12849002   55 
+ENDSUBENT           54          0                                 1284900299999 
 ENDENTRY             2          0                                 1284999999999 
