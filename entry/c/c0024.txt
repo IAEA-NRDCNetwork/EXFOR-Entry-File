@@ -1,109 +1,115 @@
-ENTRY            C0024   20020213                             0000C002400000001 
-SUBENT        C0024001   20020213                             0000C002400100001 
-BIB                  9         11                                 C002400100002 
-INSTITUTE  (2UK OXF)                                              C002400100003 
-REFERENCE  (J,PR,81,602,195102)                                   C002400100004 
-AUTHOR     (K.G.McNeill,G.M.Keyser)                               C002400100005 
-TITLE      The Relative Probabilities and Absolute Cross Sections C002400100006 
-            of the D-D Reactions                                  C002400100007 
-FACILITY    Philip's type generator.                              C002400100008 
-SAMPLE     D gas target.                                          C002400100009 
-DETECTOR   (PROPC)                                                C002400100010 
-STATUS     Data taken from tables in reference                    C002400100011 
-HISTORY    (19960227C)                                            C002400100012 
-           (20020213A) Converted to new date formats.             C002400100013 
-ENDBIB              11          0                                 C002400100014 
-NOCOMMON             0          0                                 C002400100015 
-ENDSUBENT           14          0                                 C002400199999 
-SUBENT        C0024002   20020213                             0000C002400200001 
-BIB                  2          9                                 C002400200002 
-REACTION   ((1-H-2(D,N)2-HE-3,,DA)/(1-H-2(D,P)1-H-3,,DA))         C002400200003 
-ERR-ANALYS (DATA-ERR1) Statistical uncertainty                    C002400200004 
-           (DATA-ERR2) Additional 2.7% uncertainty due to:        C002400200005 
-           . reading of pressure (0.5%),                          C002400200006 
-           . thermocouple emf (0.5%),                             C002400200007 
-           . inaccuracy of beam voltage effect on                 C002400200008 
-             . determination of current from calorimeter readings C002400200009 
-               (1.5%),                                            C002400200010 
-             . branching ratio values (0.2%)                      C002400200011 
-ENDBIB               9          0                                 C002400200012 
-COMMON               2          3                                 C002400200013 
-ANG        DATA-ERR2                                              C002400200014 
-ADEG       PER-CENT                                               C002400200015 
- 90.        2.7                                                   C002400200016 
-ENDCOMMON            3          0                                 C002400200017 
-DATA                 3          4                                 C002400200018 
-EN         DATA       DATA-ERR1                                   C002400200019 
-KEV        NO-DIM     NO-DIM                                      C002400200020 
- 120.       0.95       0.04                                       C002400200021 
- 140.       1.00       0.07                                       C002400200022 
- 160.       1.00       0.04                                       C002400200023 
- 250.       1.06       0.04                                       C002400200024 
-ENDDATA              6          0                                 C002400200025 
-ENDSUBENT           24          0                                 C002400299999 
-SUBENT        C0024003   20020213                             0000C002400300001 
-BIB                  6         16                                 C002400300002 
-REACTION  1(1-H-2(D,N)2-HE-3,,SIG)                                C002400300003 
-          2(1-H-2(D,P)1-H-3,,SIG)                                 C002400300004 
-ANALYSIS   (4PI1A)  Calculated from branching ratio for (d,n)     C002400300005 
-            and (d,p) branches, assuming angular anisotropy       C002400300006 
-            given.                                                C002400300007 
-ASSUMED    (ASSUM,(1-H-2(D,N)2-HE-3,,POL/DA,,ASY)=                C002400300008 
-           (1-H-2(D,P)1-H-3,,POL/DA,,ASY))                        C002400300009 
-ERR-ANALYS (DATA-ERR1) Systematic uncertainty of up to 20% due to:C002400300010 
-           . geometric error (10%),                               C002400300011 
-           . calibration and reading of McLeod gauge (3.5%),      C002400300012 
-           . current measurement uncertainty (4.5%),              C002400300013 
-           . estimation of deuterium content of gas target (0.5%),C002400300014 
-           . energy uncertainty (1.5%).                           C002400300015 
-           (DATA-ERR2) Statistical uncertainty                    C002400300016 
-STATUS     (DEP,C0024002)                                         C002400300017 
-HISTORY    (20020213A) Assumed reaction corrected.                C002400300018 
-ENDBIB              16          0                                 C002400300019 
-COMMON               1          3                                 C002400300020 
-DATA-ERR1                                                         C002400300021 
-PER-CENT                                                          C002400300022 
-20.                                                               C002400300023 
-ENDCOMMON            3          0                                 C002400300024 
-DATA                 5          5                                 C002400300025 
-EN         DATA      1DATA      2DATA-ERR2  ASSUM                 C002400300026 
-KEV        B          B          PER-CENT   NO-DIM                C002400300027 
- 120.       0.019      0.020       3.        0.55                 C002400300028 
- 140.       0.026      0.026       5.        0.63                 C002400300029 
- 160.       0.026      0.026       3.        0.70                 C002400300030 
- 250.       0.038      0.038       3.        1.00                 C002400300031 
- 300.                  0.049       6.        1.18                 C002400300032 
-ENDDATA              7          0                                 C002400300033 
-ENDSUBENT           32          0                                 C002400399999 
-SUBENT        C0024004   20020213                             0000C002400400001 
-BIB                  5         13                                 C002400400002 
-REACTION  1(1-H-2(D,N)2-HE-3,,DA)                                 C002400400003 
-          2(1-H-2(D,P)1-H-3,,DA)                                  C002400400004 
-ANALYSIS   Calculated from branching ratio for (d,n) and (d,p)    C002400400005 
-            branches.                                             C002400400006 
-ERR-ANALYS (DATA-ERR1) Systematic uncertainty of up to 20% due to:C002400400007 
-           . geometric error (10%),                               C002400400008 
-           . calibration and reading of McLeod gauge (3.5%),      C002400400009 
-           . current measurement uncertainty (4.5%),              C002400400010 
-           . estimation of deuterium content of gas target (0.5%),C002400400011 
-           . energy uncertainty (1.5%).                           C002400400012 
-           (DATA-ERR2) Statistical uncertainty                    C002400400013 
-STATUS     (DEP,C0024002)                                         C002400400014 
-HISTORY    (19980305C)                                            C002400400015 
-ENDBIB              13          0                                 C002400400016 
-COMMON               2          3                                 C002400400017 
-ANG        DATA-ERR1                                              C002400400018 
-ADEG       PER-CENT                                               C002400400019 
- 90.        20.                                                   C002400400020 
-ENDCOMMON            3          0                                 C002400400021 
-DATA                 4          5                                 C002400400022 
-EN         DATA      1DATA      2DATA-ERR2                        C002400400023 
-KEV        MB/SR      MB/SR      PER-CENT                         C002400400024 
- 120.       0.0012     0.0013      3.                             C002400400025 
- 140.       0.0017     0.0017      5.                             C002400400026 
- 160.       0.0016     0.0016      3.                             C002400400027 
- 250.       0.0022     0.0021      3.                             C002400400028 
- 300.                  0.0023      6.                             C002400400029 
-ENDDATA              7          0                                 C002400400030 
-ENDSUBENT           29          0                                 C002400499999 
+ENTRY            C0024   20181107                             C181C0024  0    1 
+SUBENT        C0024001   20181107                             C181C0024  1    1 
+BIB                  8         12                                 C0024  1    2 
+INSTITUTE  (2UK OXF)                                              C0024  1    3 
+REFERENCE  (J,PR,81,602,1951)                                     C0024  1    4 
+AUTHOR     (K.G.McNeill,G.M.Keyser)                               C0024  1    5 
+TITLE      The Relative Probabilities and Absolute Cross Sections C0024  1    6 
+            of the D-D Reactions                                  C0024  1    7 
+FACILITY   (ACCEL,2UK OXF) Philip's type generator.               C0024  1    8 
+SAMPLE     D gas target.                                          C0024  1    9 
+DETECTOR   (PROPC)                                                C0024  1   10 
+HISTORY    (19960227C)                                            C0024  1   11 
+           (20020213A) Converted to new date formats.             C0024  1   12 
+           (20180821A) OS. Data corrections in subs.3,4.          C0024  1   13 
+             ERR-ANALYS, STATUS updated.                          C0024  1   14 
+ENDBIB              12          0                                 C0024  1   15 
+NOCOMMON             0          0                                 C0024  1   16 
+ENDSUBENT           15          0                                 C0024  199999 
+SUBENT        C0024002   20181107                             C181C0024  2    1 
+BIB                  3         10                                 C0024  2    2 
+REACTION   ((1-H-2(D,N)2-HE-3,,DA)/(1-H-2(D,P)1-H-3,,DA))         C0024  2    3 
+ERR-ANALYS (ERR-S) Statistical uncertainty                        C0024  2    4 
+           (ERR-SYS) Additional 2.7% uncertainty due to:          C0024  2    5 
+           . reading of pressure (0.5%),                          C0024  2    6 
+           . thermocouple emf (0.5%),                             C0024  2    7 
+           . inaccuracy of beam voltage effect on                 C0024  2    8 
+             . determination of current from calorimeter readings C0024  2    9 
+               (1.5%),                                            C0024  2   10 
+             . branching ratio values (0.2%)                      C0024  2   11 
+STATUS     (TABLE) Table I, Phys.Rev.81,602(1951)                 C0024  2   12 
+ENDBIB              10          0                                 C0024  2   13 
+COMMON               2          3                                 C0024  2   14 
+ANG        ERR-SYS                                                C0024  2   15 
+ADEG       PER-CENT                                               C0024  2   16 
+ 90.        2.7                                                   C0024  2   17 
+ENDCOMMON            3          0                                 C0024  2   18 
+DATA                 3          4                                 C0024  2   19 
+EN         DATA       ERR-S                                       C0024  2   20 
+KEV        NO-DIM     NO-DIM                                      C0024  2   21 
+ 120.       0.95       0.04                                       C0024  2   22 
+ 140.       1.00       0.07                                       C0024  2   23 
+ 160.       1.00       0.04                                       C0024  2   24 
+ 250.       1.06       0.04                                       C0024  2   25 
+ENDDATA              6          0                                 C0024  2   26 
+ENDSUBENT           25          0                                 C0024  299999 
+SUBENT        C0024003   20181107                             C181C0024  3    1 
+BIB                  6         18                                 C0024  3    2 
+REACTION  1(1-H-2(D,N)2-HE-3,,SIG)                                C0024  3    3 
+          2(1-H-2(D,P)1-H-3,,SIG)                                 C0024  3    4 
+ANALYSIS   (4PI1A)  Calculated from branching ratio for (d,n)     C0024  3    5 
+            and (d,p) branches, assuming angular anisotropy       C0024  3    6 
+            given.                                                C0024  3    7 
+ASSUMED    (ASSUM,(1-H-2(D,N)2-HE-3,,POL/DA,,ASY)=                C0024  3    8 
+           (1-H-2(D,P)1-H-3,,POL/DA,,ASY))                        C0024  3    9 
+ERR-ANALYS (ERR-SYS) Systematic uncertainty of up to 20% due to:  C0024  3   10 
+           . geometric error (10%),                               C0024  3   11 
+           . calibration and reading of McLeod gauge (3.5%),      C0024  3   12 
+           . current measurement uncertainty (4.5%),              C0024  3   13 
+           . estimation of deuterium content of gas target (0.5%),C0024  3   14 
+           . energy uncertainty (1.5%).                           C0024  3   15 
+           (ERR-S) Statistical uncertainty                        C0024  3   16 
+STATUS     (DEP,C0024002)                                         C0024  3   17 
+           (TABLE) Table II, Phys.Rev.81,602(1951)                C0024  3   18 
+HISTORY    (20020213A) Assumed reaction corrected.                C0024  3   19 
+           (20180821A) Num.value for REACTION 2 at 250 keV corr.  C0024  3   20 
+ENDBIB              18          0                                 C0024  3   21 
+COMMON               1          3                                 C0024  3   22 
+ERR-SYS                                                           C0024  3   23 
+PER-CENT                                                          C0024  3   24 
+20.                                                               C0024  3   25 
+ENDCOMMON            3          0                                 C0024  3   26 
+DATA                 5          5                                 C0024  3   27 
+EN         DATA      1DATA      2ERR-S      ASSUM                 C0024  3   28 
+KEV        B          B          PER-CENT   NO-DIM                C0024  3   29 
+ 120.       0.019      0.020       3.        0.55                 C0024  3   30 
+ 140.       0.026      0.026       5.        0.63                 C0024  3   31 
+ 160.       0.026      0.026       3.        0.70                 C0024  3   32 
+ 250.       0.038      0.036       3.        1.00                 C0024  3   33 
+ 300.                  0.049       6.        1.18                 C0024  3   34 
+ENDDATA              7          0                                 C0024  3   35 
+ENDSUBENT           34          0                                 C0024  399999 
+SUBENT        C0024004   20181107                             C181C0024  4    1 
+BIB                  5         15                                 C0024  4    2 
+REACTION  1(1-H-2(D,N)2-HE-3,,DA)                                 C0024  4    3 
+          2(1-H-2(D,P)1-H-3,,DA)                                  C0024  4    4 
+ANALYSIS   Calculated from branching ratio for (d,n) and (d,p)    C0024  4    5 
+            branches.                                             C0024  4    6 
+ERR-ANALYS (ERR-SYS) Systematic uncertainty of up to 20% due to:  C0024  4    7 
+           . geometric error (10%),                               C0024  4    8 
+           . calibration and reading of McLeod gauge (3.5%),      C0024  4    9 
+           . current measurement uncertainty (4.5%),              C0024  4   10 
+           . estimation of deuterium content of gas target (0.5%),C0024  4   11 
+           . energy uncertainty (1.5%).                           C0024  4   12 
+           (ERR-S) Statistical uncertainty                        C0024  4   13 
+STATUS     (DEP,C0024002)                                         C0024  4   14 
+           (TABLE) Table III, Phys.Rev.81,602(1951)               C0024  4   15 
+HISTORY    (19980305C)                                            C0024  4   16 
+           (20181104A) OS. Data units corrected to B/SR.          C0024  4   17 
+ENDBIB              15          0                                 C0024  4   18 
+COMMON               2          3                                 C0024  4   19 
+ANG        ERR-SYS                                                C0024  4   20 
+ADEG       PER-CENT                                               C0024  4   21 
+ 90.        20.                                                   C0024  4   22 
+ENDCOMMON            3          0                                 C0024  4   23 
+DATA                 4          5                                 C0024  4   24 
+EN         DATA      1DATA      2ERR-S                            C0024  4   25 
+KEV        B/SR       B/SR       PER-CENT                         C0024  4   26 
+ 120.       0.0012     0.0013      3.                             C0024  4   27 
+ 140.       0.0017     0.0017      5.                             C0024  4   28 
+ 160.       0.0016     0.0016      3.                             C0024  4   29 
+ 250.       0.0022     0.0021      3.                             C0024  4   30 
+ 300.                  0.0023      6.                             C0024  4   31 
+ENDDATA              7          0                                 C0024  4   32 
+ENDSUBENT           31          0                                 C0024  499999 
 ENDENTRY             4          0                                 C002499999999 
