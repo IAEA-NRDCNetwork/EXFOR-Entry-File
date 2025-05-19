@@ -1,35 +1,37 @@
-ENTRY            30119   20080208                             31263011900000001 
-SUBENT        30119001   20080208                             31263011900100001 
-BIB                 11         22                                 3011900100002 
+ENTRY            30119   20220126                             32073011900000001 
+SUBENT        30119001   20220126                             32073011900100001 
+BIB                 11         24                                 3011900100002 
 TITLE      Influence of direct inelastic scattering on (n,2n)     3011900100003 
            cross-sections                                         3011900100004 
-AUTHOR     (J.Csikai,G.Peto)                                      3011900100005 
+AUTHOR     (J.Csikai, G.Peto)                                     3011900100005 
 INSTITUTE  (3HUNDEB)                                              3011900100006 
-REFERENCE  (J,AHP,23,87,196705) Total sigma,graphs and tables     3011900100007 
-           (J,MFF,16,123,196802)Thesis Csikai,in Hung.,grphs,table3011900100008 
-FACILITY   (CCW) 300 keV cascade generator,locally built          3011900100009 
-INC-SOURCE (D-T)      H-3(d,n)He-4 reaction                       3011900100010 
-METHOD     (ACTIV)    Activation                                  3011900100011 
-DETECTOR   (NAICR,GEMUC) NaI(Tl) scintillation gamma spectrometer 3011900100012 
-           as well as Geiger-Mueller counter calibrated with      3011900100013 
-           standard sources                                       3011900100014 
-           (LONGC,SCIN) Neutron flux monitored with BF3 long-     3011900100015 
-           counter and a plastic scintillator                     3011900100016 
-ERR-ANALYS (DATA-ERR) Not specified                               3011900100017 
-STATUS     (TABLE) Data taken from Acta Phys.Hung 23 87 5/1967    3011900100018 
-           Table 2.                                               3011900100019 
-HISTORY    (19710225C)                                            3011900100020 
-           (19891212A)VOF.-Iso quant changed by reaction formalism3011900100021 
-                          Standard changed by monitor             3011900100022 
-                          Obsolete codes corrected                3011900100023 
-           (20080208A) BIB section updated                        3011900100024 
-ENDBIB              22          0                                 3011900100025 
-COMMON               2          3                                 3011900100026 
-EN         EN-RSL                                                 3011900100027 
-MEV        MEV                                                    3011900100028 
-14.7       0.3                                                    3011900100029 
-ENDCOMMON            3          0                                 3011900100030 
-ENDSUBENT           29          0                                 3011900199999 
+REFERENCE  (J,AHP,23,87,1967)                                     3011900100007 
+            Total sigma,graphs and tables                         3011900100008 
+           (J,MFF,16,123,1968)                                    3011900100009 
+           Thesis Csikai,in Hung.,graphs,table                    3011900100010 
+FACILITY   (CCW,3HUNDEB) 300 keV neutron generator                3011900100011 
+INC-SOURCE (D-T)                                                  3011900100012 
+DETECTOR   (NAICR,GEMUC) NaI(Tl) scintillation gamma spectrometer 3011900100013 
+           as well as Geiger-Mueller counter calibrated with      3011900100014 
+           standard sources                                       3011900100015 
+           (LONGC,SCIN) Neutron flux monitored with BF3 long-     3011900100016 
+           counter and a plastic scintillator                     3011900100017 
+METHOD     (ACTIV)                                                3011900100018 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   3011900100019 
+STATUS     (TABLE) Table 1 of Acta Phys. Hung 23 91967) 87        3011900100020 
+HISTORY    (19710225C)                                            3011900100021 
+           (19891212A)VOF.-Iso quant changed by reaction formalism3011900100022 
+                          Standard changed by monitor             3011900100023 
+                          Obsolete codes corrected                3011900100024 
+           (20080208A) BIB section updated                        3011900100025 
+           (20220127A) VT Major revision in 005, 006              3011900100026 
+ENDBIB              24          0                                 3011900100027 
+COMMON               2          3                                 3011900100028 
+EN         EN-RSL                                                 3011900100029 
+MEV        MEV                                                    3011900100030 
+       14.7        0.3                                            3011900100031 
+ENDCOMMON            3          0                                 3011900100032 
+ENDSUBENT           31          0                                 3011900199999 
 SUBENT        30119002   20080208                             31263011900200001 
 BIB                  4          4                                 3011900200002 
 REACTION   (30-ZN-70(N,2N)30-ZN-69,,SIG)                          3011900200003 
@@ -72,34 +74,38 @@ MB         MB         MB                                          3011900400011
 1762.      200.       117.                                        3011900400012 
 ENDDATA              3          0                                 3011900400013 
 ENDSUBENT           12          0                                 3011900499999 
-SUBENT        30119005   20080208                             31263011900500001 
-BIB                  4          4                                 3011900500002 
+SUBENT        30119005   20220126                             32073011900500001 
+BIB                  5          6                                 3011900500002 
 REACTION   (31-GA-69(N,2N)31-GA-68,,SIG)                          3011900500003 
-MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           3011900500004 
-PART-DET   (B-)       decay betas                                 3011900500005 
-SAMPLE      Ga203 oxide                                           3011900500006 
-ENDBIB               4          0                                 3011900500007 
-NOCOMMON             0          0                                 3011900500008 
-DATA                 3          1                                 3011900500009 
-DATA       DATA-ERR   MONIT                                       3011900500010 
-MB         MB         MB                                          3011900500011 
-1088.      100.       73.                                         3011900500012 
-ENDDATA              3          0                                 3011900500013 
-ENDSUBENT           12          0                                 3011900599999 
-SUBENT        30119006   20080208                             31263011900600001 
-BIB                  4          4                                 3011900600002 
+MONITOR    (13-AL-27(N,P)12-MG-27,,SIG)                           3011900500004 
+HISTORY    (20220127A) VT MONITOR  : (13-AL-27(N,A)11-NA-24,,SIG) 3011900500005 
+                         ->(13-AL-27(N,P)12-MG-27,,SIG) changes   3011900500006 
+PART-DET   (B-)                                                   3011900500007 
+SAMPLE      Ga203 oxide                                           3011900500008 
+ENDBIB               6          0                                 3011900500009 
+NOCOMMON             0          0                                 3011900500010 
+DATA                 3          1                                 3011900500011 
+DATA       DATA-ERR   MONIT                                       3011900500012 
+MB         MB         MB                                          3011900500013 
+      1088.       100.        73.                                 3011900500014 
+ENDDATA              3          0                                 3011900500015 
+ENDSUBENT           14          0                                 3011900599999 
+SUBENT        30119006   20220126                             32073011900600001 
+BIB                  5          6                                 3011900600002 
 REACTION   (31-GA-71(N,2N)31-GA-70,,SIG)                          3011900600003 
-MONITOR    (13-AL-27(N,A)11-NA-24,,SIG)                           3011900600004 
-PART-DET   (B-)       decay betas                                 3011900600005 
-SAMPLE      Ga203 oxide                                           3011900600006 
-ENDBIB               4          0                                 3011900600007 
-NOCOMMON             0          0                                 3011900600008 
-DATA                 3          1                                 3011900600009 
-DATA       DATA-ERR   MONIT                                       3011900600010 
-MB         MB         MB                                          3011900600011 
-961.       100.       73.                                         3011900600012 
-ENDDATA              3          0                                 3011900600013 
-ENDSUBENT           12          0                                 3011900699999 
+MONITOR    (13-AL-27(N,P)12-MG-27,,SIG)                           3011900600004 
+HISTORY    (20220127A) VT MONITOR  : (13-AL-27(N,A)11-NA-24,,SIG) 3011900600005 
+                         ->(13-AL-27(N,P)12-MG-27,,SIG) changes   3011900600006 
+PART-DET   (B-)                                                   3011900600007 
+SAMPLE      Ga203 oxide                                           3011900600008 
+ENDBIB               6          0                                 3011900600009 
+NOCOMMON             0          0                                 3011900600010 
+DATA                 3          1                                 3011900600011 
+DATA       DATA-ERR   MONIT                                       3011900600012 
+MB         MB         MB                                          3011900600013 
+       961.       100.        73.                                 3011900600014 
+ENDDATA              3          0                                 3011900600015 
+ENDSUBENT           14          0                                 3011900699999 
 SUBENT        30119007   20080208                             31263011900700001 
 BIB                  4          4                                 3011900700002 
 REACTION   (33-AS-75(N,2N)33-AS-74,,SIG)                          3011900700003 
