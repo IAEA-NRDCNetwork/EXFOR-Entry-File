@@ -1,112 +1,119 @@
-ENTRY            40530   20130228                             41604053000000001 
-SUBENT        40530001   20130228                             41604053000100001 
-BIB                 13         50                                 4053000100002 
-INSTITUTE  (4RUSFEI)                                              4053000100003 
-REFERENCE  ((J,YK,1981,(5/44),23,198112)=                         4053000100004 
-           (R,INDC(CCP)-176,23,1981))                             4053000100005 
-AUTHOR     (S.P.Simakov,G.N.Lovchikova,O.A.Sal'nikov,             4053000100006 
-           G.V.Kotel'nikova,V.A.Vinogradov)                       4053000100007 
-TITLE        Elastic and inelastic scattering of the neutrons     4053000100008 
-             with the energies from 5 to 8 MeV on cobalt          4053000100009 
-FACILITY   (VDG,4RUSFEI) Electrostatic proton accelerator         4053000100010 
-INC-SOURCE (P-T) Proton-tritium. Gas tritium target at 1.8 atm    4053000100011 
-           pressure. Proton current 1.5 microA, pulse frequency   4053000100012 
-           5 MHz, pulse duration 1.0 ns.                          4053000100013 
-SAMPLE      Metallic cobalt, chemical purity is 99.8 % .          4053000100014 
-           Hollow cylinder of 5.1 cm high, 3.0 inner and 4.0 outer4053000100015 
-           diameters. Contains 4.15 mol Co-59. Place at 16.5 cm   4053000100016 
-           from neutron source.                                   4053000100017 
-METHOD     (TOF) Flight base is 201 cm .                          4053000100018 
-           (FNB) Ni-58 foils of 8.8 and 8.5 mg/cm2 thickness.     4053000100019 
-           Spectrometer time resolution (FWHM), nsec:             4053000100020 
-           EN,MeV     4          5          6          7          4053000100021 
-           R-total  4.4          3.9        3.5        3.3        4053000100022 
-           R1       3.2          3.0        2.7        2.6        4053000100023 
-           R2       2.5          2.3        2.1        1.9        4053000100024 
-           R3       1.6          1.0        0.7        0.5        4053000100025 
-           where parts of total time resolution R-total are:      4053000100026 
-           R1 - detector resolution and proton pulse duration,    4053000100027 
-           R2 - dispersion due to finite size of sample and       4053000100028 
-                detector,                                         4053000100029 
-           R3 - dispersion due to non-monoenergy of incident      4053000100030 
-                neutrons.                                         4053000100031 
-DETECTOR   (SCIN)                                                 4053000100032 
-           Neutron registration efficiency was defined by Cf-252  4053000100033 
-           spontaneous fission neutron spectrum of T=1.42 MeV by  4053000100034 
-           (IOCH) ionization chamber with thin Cf-252 layer.      4053000100035 
-MONITOR    (1-H-1(N,EL)1-H-1,,SIG) For absolute normalization.    4053000100036 
-CORRECTION For neutron attenuation, for multiple interactions.    4053000100037 
-ERR-ANALYS (ERR-1,3.,6.) Uncertainty of energy dependence of      4053000100038 
-           neutron detector efficiency.                           4053000100039 
-           (ERR-2) Uncertainty of sample and monitor positioning. 4053000100040 
-           (ERR-3) Uncertainty  due to corrections.               4053000100041 
-           (ERR-S,,20.) Statistical uncertainty and uncertainty of4053000100042 
-           elastical scattering definition at high energies.      4053000100043 
-HISTORY    (19821223C) Compiled at the centre                     4053000100044 
-           (20130228A) M.M. Upper -> lower case correction.       4053000100045 
-           Dates were corrected for 4-digits year.                4053000100046 
-           BIB information was updated.                           4053000100047 
-           EN data were moved from COMMON in DATA block in        4053000100048 
-           Subents 002-003 .                                      4053000100049 
-           ANG data were moved from COMMON in DATA block in       4053000100050 
-           Subents 004 - 007.                                     4053000100051 
-           DATA 2 were added in Subent 002.                       4053000100052 
-ENDBIB              50          0                                 4053000100053 
-NOCOMMON             0          0                                 4053000100054 
-ENDSUBENT           53          0                                 4053000199999 
-SUBENT        40530002   20130228                             41604053000200001 
-BIB                  2          5                                 4053000200002 
-REACTION  1(27-CO-59(N,INL)27-CO-59,,SIG)                         4053000200003 
-          2(27-CO-59(N,INL)27-CO-59,,KEM,,MSC)                    4053000200004 
-            Spectra were fitted by Maxwellian distribution as     4053000200005 
-           SIG(E) ~ E*exp(-E/T) . T is given as KEM.              4053000200006 
-STATUS     (TABLE) Table 2 of J,YK,1981,(5/44),23,1981 .          4053000200007 
-ENDBIB               5          0                                 4053000200008 
-NOCOMMON             0          0                                 4053000200009 
-DATA                 6          4                                 4053000200010 
-EN         EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     24053000200011 
-MEV        MEV        B          B          MEV        MEV        4053000200012 
- 4.99           7.E-02   1.51     0.10       0.78       0.05      4053000200013 
- 5.97           7.E-02   1.53     0.10       0.79       0.05      4053000200014 
- 7.00           8.E-02   1.53     0.10       0.86       0.05      4053000200015 
- 8.09           9.E-02   1.37     0.09       0.90       0.06      4053000200016 
-ENDDATA              6          0                                 4053000200017 
-ENDSUBENT           16          0                                 4053000299999 
-SUBENT        40530003   20130228                             41604053000300001 
-BIB                  2          2                                 4053000300002 
-REACTION   (27-CO-59(N,EL)27-CO-59,,DA)                           4053000300003 
-STATUS     (TABLE) Table 2 of J,YK,1981,(5/44),23,1981 .          4053000300004 
-ENDBIB               2          0                                 4053000300005 
-NOCOMMON             0          0                                 4053000300006 
-DATA                 6         24                                 4053000300007 
-EN         EN-ERR     COS-CM     COS-ERR    DATA-CM    ERR-T      4053000300008 
-MEV        MEV        NO-DIM     NO-DIM     MB/SR      MB/SR      4053000300009 
- 4.9900E+00 7.0000E-02 8.5600E-01 1.1000E-02 8.4600E+02 5.8000E+014053000300010 
- 4.9900E+00 7.0000E-02 6.8100E-01 1.6000E-02 2.1100E+02 1.5000E+014053000300011 
- 4.9900E+00 7.0000E-02 4.8100E-01 1.9000E-02 2.4000E+01 3.0000E+004053000300012 
- 4.9900E+00 7.0000E-02-2.1000E-02 2.2000E-02 4.4000E+01 3.0000E+004053000300013 
- 4.9900E+00 7.0000E-02-5.2200E-01 1.9000E-02 3.0000E+01 3.0000E+004053000300014 
- 4.9900E+00 7.0000E-02-8.7500E-01 1.1000E-02 1.6000E+01 2.0000E+004053000300015 
- 5.9700E+00 7.0000E-02 8.5600E-01 1.1000E-02 8.5700E+02 6.4000E+014053000300016 
- 5.9700E+00 7.0000E-02 6.8100E-01 1.6000E-02 1.8700E+02 1.4000E+014053000300017 
- 5.9700E+00 7.0000E-02 4.8100E-01 1.9000E-02 2.0000E+01 2.0000E+004053000300018 
- 5.9700E+00 7.0000E-02-2.1000E-02 2.2000E-02 3.8000E+01 3.0000E+004053000300019 
- 5.9700E+00 7.0000E-02-5.2200E-01 1.9000E-02 1.9000E+01 1.0000E+004053000300020 
- 5.9700E+00 7.0000E-02-8.7500E-01 1.1000E-02 1.9000E+01 2.0000E+004053000300021 
- 7.0000E+00 8.0000E-02 8.5600E-01 1.1000E-02 7.9700E+02 6.6000E+014053000300022 
- 7.0000E+00 8.0000E-02 6.8100E-01 1.6000E-02 1.3700E+02 1.1000E+014053000300023 
- 7.0000E+00 8.0000E-02 4.8100E-01 1.9000E-02 1.4000E+01 2.0000E+004053000300024 
- 7.0000E+00 8.0000E-02-2.1000E-02 2.2000E-02 2.8000E+01 2.0000E+004053000300025 
- 7.0000E+00 8.0000E-02-5.2200E-01 1.9000E-02 1.2000E+01 1.0000E+004053000300026 
- 7.0000E+00 8.0000E-02-8.7500E-01 1.1000E-02 1.7000E+01 2.0000E+004053000300027 
- 8.0900E+00 9.0000E-02 8.5600E-01 1.1000E-02 6.2700E+02 5.7000E+014053000300028 
- 8.0900E+00 9.0000E-02 6.8100E-01 1.6000E-02 9.0000E+01 8.0000E+004053000300029 
- 8.0900E+00 9.0000E-02 4.8100E-01 1.9000E-02 1.0000E+01 1.0000E+004053000300030 
- 8.0900E+00 9.0000E-02-2.1000E-02 2.2000E-02 2.0000E+01 2.0000E+004053000300031 
- 8.0900E+00 9.0000E-02-5.2200E-01 1.9000E-02 7.0000E+00 1.0000E+004053000300032 
- 8.0900E+00 9.0000E-02-8.7500E-01 1.1000E-02 1.5000E+01 2.0000E+004053000300033 
-ENDDATA             26          0                                 4053000300034 
-ENDSUBENT           33          0                                 4053000399999 
+ENTRY            40530   20200319                             418640530  0    1 
+SUBENT        40530001   20200319                             418640530  1    1 
+BIB                 13         53                                 40530  1    2 
+INSTITUTE  (4RUSFEI)                                              40530  1    3 
+REFERENCE  ((J,YK,,(5/44),23,1981)=                               40530  1    4 
+           (R,INDC(CCP)-176,23,1981))                             40530  1    5 
+AUTHOR     (S.P.Simakov,G.N.Lovchikova,O.A.Sal'nikov,             40530  1    6 
+           G.V.Kotel'nikova,V.A.Vinogradov)                       40530  1    7 
+TITLE        Elastic and inelastic scattering of the neutrons     40530  1    8 
+             with the energies from 5 to 8 MeV on cobalt          40530  1    9 
+FACILITY   (VDGT,4RUSFEI) Electrostatic proton accelerator        40530  1   10 
+             EGP-10M tandem accelerator.                          40530  1   11 
+INC-SOURCE (P-T) Proton-tritium. Gas tritium target at 1.8 atm    40530  1   12 
+           pressure. Proton current 1.5 microA, pulse frequency   40530  1   13 
+           5 MHz, pulse duration 1.0 ns.                          40530  1   14 
+SAMPLE      Metallic cobalt, chemical purity is 99.8 % .          40530  1   15 
+           Hollow cylinder of 5.1 cm high, 3.0 inner and 4.0 outer40530  1   16 
+           diameters. Contains 4.15 mol Co-59. Place at 16.5 cm   40530  1   17 
+           from neutron source.                                   40530  1   18 
+METHOD     (TOF) Flight base is 201 cm .                          40530  1   19 
+           (FNB) Ni-58 foils of 8.8 and 8.5 mg/cm2 thickness.     40530  1   20 
+           Spectrometer time resolution (FWHM), nsec:             40530  1   21 
+           EN,MeV     4          5          6          7          40530  1   22 
+           R-total  4.4          3.9        3.5        3.3        40530  1   23 
+           R1       3.2          3.0        2.7        2.6        40530  1   24 
+           R2       2.5          2.3        2.1        1.9        40530  1   25 
+           R3       1.6          1.0        0.7        0.5        40530  1   26 
+           where parts of total time resolution R-total are:      40530  1   27 
+           R1 - detector resolution and proton pulse duration,    40530  1   28 
+           R2 - dispersion due to finite size of sample and       40530  1   29 
+                detector,                                         40530  1   30 
+           R3 - dispersion due to non-monoenergy of incident      40530  1   31 
+                neutrons.                                         40530  1   32 
+DETECTOR   (SCIN)                                                 40530  1   33 
+           Neutron registration efficiency was defined by Cf-252  40530  1   34 
+           spontaneous fission neutron spectrum of T=1.42 MeV by  40530  1   35 
+           (IOCH) ionization chamber with thin Cf-252 layer.      40530  1   36 
+MONITOR    (1-H-1(N,EL)1-H-1,,SIG) For absolute normalization.    40530  1   37 
+CORRECTION For neutron attenuation, for multiple interactions.    40530  1   38 
+ERR-ANALYS (ERR-1,3.,6.) Uncertainty of energy dependence of      40530  1   39 
+           neutron detector efficiency.                           40530  1   40 
+           (ERR-2) Uncertainty of sample and monitor positioning. 40530  1   41 
+           (ERR-3) Uncertainty  due to corrections.               40530  1   42 
+           (ERR-S,,20.) Statistical uncertainty and uncertainty of40530  1   43 
+           elastic scattering definition at high energies.        40530  1   44 
+           (ERR-T) Total error                                    40530  1   45 
+HISTORY    (19821223C) Compiled at the centre                     40530  1   46 
+           (20130228A) M.M. Upper -> lower case correction.       40530  1   47 
+           Dates were corrected for 4-digits year.                40530  1   48 
+           BIB information was updated.                           40530  1   49 
+           EN data were moved from COMMON in DATA block in        40530  1   50 
+           Subents 002-003 .                                      40530  1   51 
+           ANG data were moved from COMMON in DATA block in       40530  1   52 
+           Subents 004 - 007.                                     40530  1   53 
+           DATA 2 were added in Subent 002.                       40530  1   54 
+           (20200219U) VDG -> VDGT .                              40530  1   55 
+ENDBIB              53          0                                 40530  1   56 
+COMMON               2          3                                 40530  1   57 
+ERR-2      ERR-3                                                  40530  1   58 
+PER-CENT   PER-CENT                                               40530  1   59 
+ 5.         3.                                                    40530  1   60 
+ENDCOMMON            3          0                                 40530  1   61 
+ENDSUBENT           60          0                                 40530  199999 
+SUBENT        40530002   20200319                             418640530  2    1 
+BIB                  2          5                                 40530  2    2 
+REACTION  1(27-CO-59(N,INL)27-CO-59,,SIG)                         40530  2    3 
+          2(27-CO-59(N,INL)27-CO-59,,KEM,,MSC)                    40530  2    4 
+            Spectra were fitted by Maxwellian distribution as     40530  2    5 
+           SIG(E) ~ E*exp(-E/T) . T is given as KEM.              40530  2    6 
+STATUS     (TABLE) Table 2 of Yad.Konst.,is.5/44,p.23,1981 .      40530  2    7 
+ENDBIB               5          0                                 40530  2    8 
+NOCOMMON             0          0                                 40530  2    9 
+DATA                 6          4                                 40530  2   10 
+EN         EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     240530  2   11 
+MEV        MEV        B          B          MEV        MEV        40530  2   12 
+ 4.99           7.E-02   1.51     0.10       0.78       0.05      40530  2   13 
+ 5.97           7.E-02   1.53     0.10       0.79       0.05      40530  2   14 
+ 7.00           8.E-02   1.53     0.10       0.86       0.05      40530  2   15 
+ 8.09           9.E-02   1.37     0.09       0.90       0.06      40530  2   16 
+ENDDATA              6          0                                 40530  2   17 
+ENDSUBENT           16          0                                 40530  299999 
+SUBENT        40530003   20200319                             418640530  3    1 
+BIB                  2          2                                 40530  3    2 
+REACTION   (27-CO-59(N,EL)27-CO-59,,DA)                           40530  3    3 
+STATUS     (TABLE) Table 2 ofYad.Konst.,is.5/44,p.23,1981 .       40530  3    4 
+ENDBIB               2          0                                 40530  3    5 
+NOCOMMON             0          0                                 40530  3    6 
+DATA                 6         24                                 40530  3    7 
+EN         EN-ERR     COS-CM     COS-ERR    DATA-CM    ERR-T      40530  3    8 
+MEV        MEV        NO-DIM     NO-DIM     MB/SR      MB/SR      40530  3    9 
+ 4.9900E+00 7.0000E-02 8.5600E-01 1.1000E-02 8.4600E+02 5.8000E+0140530  3   10 
+ 4.9900E+00 7.0000E-02 6.8100E-01 1.6000E-02 2.1100E+02 1.5000E+0140530  3   11 
+ 4.9900E+00 7.0000E-02 4.8100E-01 1.9000E-02 2.4000E+01 3.0000E+0040530  3   12 
+ 4.9900E+00 7.0000E-02-2.1000E-02 2.2000E-02 4.4000E+01 3.0000E+0040530  3   13 
+ 4.9900E+00 7.0000E-02-5.2200E-01 1.9000E-02 3.0000E+01 3.0000E+0040530  3   14 
+ 4.9900E+00 7.0000E-02-8.7500E-01 1.1000E-02 1.6000E+01 2.0000E+0040530  3   15 
+ 5.9700E+00 7.0000E-02 8.5600E-01 1.1000E-02 8.5700E+02 6.4000E+0140530  3   16 
+ 5.9700E+00 7.0000E-02 6.8100E-01 1.6000E-02 1.8700E+02 1.4000E+0140530  3   17 
+ 5.9700E+00 7.0000E-02 4.8100E-01 1.9000E-02 2.0000E+01 2.0000E+0040530  3   18 
+ 5.9700E+00 7.0000E-02-2.1000E-02 2.2000E-02 3.8000E+01 3.0000E+0040530  3   19 
+ 5.9700E+00 7.0000E-02-5.2200E-01 1.9000E-02 1.9000E+01 1.0000E+0040530  3   20 
+ 5.9700E+00 7.0000E-02-8.7500E-01 1.1000E-02 1.9000E+01 2.0000E+0040530  3   21 
+ 7.0000E+00 8.0000E-02 8.5600E-01 1.1000E-02 7.9700E+02 6.6000E+0140530  3   22 
+ 7.0000E+00 8.0000E-02 6.8100E-01 1.6000E-02 1.3700E+02 1.1000E+0140530  3   23 
+ 7.0000E+00 8.0000E-02 4.8100E-01 1.9000E-02 1.4000E+01 2.0000E+0040530  3   24 
+ 7.0000E+00 8.0000E-02-2.1000E-02 2.2000E-02 2.8000E+01 2.0000E+0040530  3   25 
+ 7.0000E+00 8.0000E-02-5.2200E-01 1.9000E-02 1.2000E+01 1.0000E+0040530  3   26 
+ 7.0000E+00 8.0000E-02-8.7500E-01 1.1000E-02 1.7000E+01 2.0000E+0040530  3   27 
+ 8.0900E+00 9.0000E-02 8.5600E-01 1.1000E-02 6.2700E+02 5.7000E+0140530  3   28 
+ 8.0900E+00 9.0000E-02 6.8100E-01 1.6000E-02 9.0000E+01 8.0000E+0040530  3   29 
+ 8.0900E+00 9.0000E-02 4.8100E-01 1.9000E-02 1.0000E+01 1.0000E+0040530  3   30 
+ 8.0900E+00 9.0000E-02-2.1000E-02 2.2000E-02 2.0000E+01 2.0000E+0040530  3   31 
+ 8.0900E+00 9.0000E-02-5.2200E-01 1.9000E-02 7.0000E+00 1.0000E+0040530  3   32 
+ 8.0900E+00 9.0000E-02-8.7500E-01 1.1000E-02 1.5000E+01 2.0000E+0040530  3   33 
+ENDDATA             26          0                                 40530  3   34 
+ENDSUBENT           33          0                                 40530  399999 
 SUBENT        40530004   20130228                             41604053000400001 
 BIB                  2          3                                 4053000400002 
 REACTION   (27-CO-59(N,INL)27-CO-59,,DA/DE)                       4053000400003 

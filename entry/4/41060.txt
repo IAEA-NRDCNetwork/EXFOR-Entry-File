@@ -1,47 +1,64 @@
-ENTRY            41060   20180215                             417841060  0    1 
-SUBENT        41060001   20180215                             417841060  1    1 
-BIB                 14         22                                 41060  1    2 
-INSTITUTE  (4RUSFEI)  Institute of Physics and Power Engineering, 41060  1    3 
+ENTRY            41060   20191028                             418641060  0    1 
+SUBENT        41060001   20191028                             418641060  1    1 
+BIB                 14         39                                 41060  1    2 
+INSTITUTE  (4RUSFEI) Institute for Physics and Power Engineering, 41060  1    3 
                          Obninsk, USSR                            41060  1    4 
-REFERENCE  (W,GOVERDOVSKIY,199209)                                41060  1    5 
-AUTHOR     (A.A.Goverdovskiy,V.F.Mitrofanov)                      41060  1    6 
-TITLE        Americium fission-fragments yield                    41060  1    7 
-FACILITY   (VDG,4RUSFEI)  Accelerator CG-2.5,IPPE                 41060  1    8 
-INC-SOURCE (D-T)  Neutron source- t(d,n)-reaction                 41060  1    9 
-SAMPLE        Thin Am,U-targets                                   41060  1   10 
-              0.05-0.09 mg/cm2, Al2-O3 backing: 0.04 mg/cm2       41060  1   11 
-METHOD      2E-method                                             41060  1   12 
-DETECTOR    Si-Au-detectors                                       41060  1   13 
-MONITOR    (92-U-235(N,F)MASS,PRE,FY)  N-thermal                  41060  1   14 
-CORRECTION     Prompt neutron emission corrections                41060  1   15 
-ERR-ANALYS (ERR-S)  One-sigma statistical error                   41060  1   16 
-COMMENT     Mass spectrum for fissile system Am-244               41060  1   17 
-               corrected on impurity of (n,n'f) and (n,2n'f)      41060  1   18 
-               reactions .                                        41060  1   19 
-HISTORY    (19920922R)                                            41060  1   20 
-           (19940330C)  + +  Compiled at the center - CJD  + +    41060  1   21 
-           (19960612U)  + +  Reference added in SAN OO2           41060  1   22 
-           (20180215A) M.M. Upper -> lower case correction.       41060  1   23 
-            Dates were corrected for 4-digits year.               41060  1   24 
-ENDBIB              22          0                                 41060  1   25 
-COMMON               2          3                                 41060  1   26 
-EN         EN-NRM                                                 41060  1   27 
-MEV        EV                                                     41060  1   28 
-  16.5        2.53E-02                                            41060  1   29 
-ENDCOMMON            3          0                                 41060  1   30 
-ENDSUBENT           29          0                                 41060  199999 
-SUBENT        41060002   20180215                             417841060  2    1 
-BIB                  6         13                                 41060  2    2 
+REFERENCE  (J,PAN,56,24,1993) Engl.translation of:                41060  1    5 
+           (J,YF,56,43,1993) Issue 1 .                            41060  1    6 
+             Subent 002 data on fig.2 (left, lower)               41060  1    7 
+           (R,INDC(CCP)-0341,1991) Fig.15 data for Subent 003 .   41060  1    8 
+           (W,GOVERDOVSKIY,199209)                                41060  1    9 
+           (W,GOVERDOVSKIY,20200110)                              41060  1   10 
+            Explanation of data.                                  41060  1   11 
+AUTHOR     (A.A.Goverdovskii,V.F.Mitrofanov)                      41060  1   12 
+             A.Goverdovsky=A.Goverdovskiy=A.Goverdovskii          41060  1   13 
+TITLE       Symmetric and asymmetric fission of 236U, 238U, 237Np,41060  1   14 
+           and 243Am by neutrons with energy 16.5 MeV             41060  1   15 
+REL-REF    (O,41682001,A.A.Goverdovskii,J,PAN,56,24,1993)         41060  1   16 
+             Data for U-236,238, Np-237 measured by Si-detectors  41060  1   17 
+FACILITY   (VDG,4RUSFEI)  Accelerator KG-2.5,IPPE                 41060  1   18 
+INC-SOURCE (D-T)  Neutron source- t(d,n)-reaction                 41060  1   19 
+SAMPLE        Thin Am,U-targets                                   41060  1   20 
+              0.05-0.09 mg/cm2, Al2-O3 backing: 0.04 mg/cm2       41060  1   21 
+           (95-AM-243,ENR=0.973) And 2.7 % Am-241.                41060  1   22 
+METHOD      2E-method                                             41060  1   23 
+DETECTOR   (SI) Si-Au-detectors in coincidence for FF spectrometry41060  1   24 
+ANALYSIS   U-235(N,F) primary FY mass distribution for incident   41060  1   25 
+           thermal neutrons were used for detector calibration.   41060  1   26 
+CORRECTION     Prompt neutron emission corrections                41060  1   27 
+            using data for <NUp> average for U-235 thermal neutron41060  1   28 
+           fission and Cf-252 spontaneous fission.                41060  1   29 
+ERR-ANALYS (ERR-S)  One-sigma statistical error                   41060  1   30 
+HISTORY    (19920922R)                                            41060  1   31 
+           (19940330C)  + +  Compiled at the center - CJD  + +    41060  1   32 
+           (19960612U)  + +  Reference added in SAN 002           41060  1   33 
+           (20180215A) M.M. Upper -> lower case correction.       41060  1   34 
+            Dates were corrected for 4-digits year.               41060  1   35 
+           (20191028A) Subent 003 reaction was corrected.         41060  1   36 
+           Three refs. were added.                                41060  1   37 
+           COMMENT was moved in Subent 003.                       41060  1   38 
+           BIB information was updated.                           41060  1   39 
+           MONITOR information was moved in ANALYSIS according to 41060  1   40 
+           a comment of N.Osuka (NDS,IAEA)                        41060  1   41 
+ENDBIB              39          0                                 41060  1   42 
+COMMON               2          3                                 41060  1   43 
+EN         EN-NRM                                                 41060  1   44 
+MEV        EV                                                     41060  1   45 
+  16.5        2.53E-02                                            41060  1   46 
+ENDCOMMON            3          0                                 41060  1   47 
+ENDSUBENT           46          0                                 41060  199999 
+SUBENT        41060002   20191028                             418641060  2    1 
+BIB                  5         13                                 41060  2    2 
 REACTION   (95-AM-243(N,F)MASS,PRE,FY)                            41060  2    3 
-REL-REF    (M,,A.A.Goverdovsky+,J,YF,58,1948,1995) Iss.11.        41060  2    4 
-            Mass distribution graph is given for En=1.MeV on Fig.141060  2    5 
-           (M,,A.A.Goverdovsky+,J,PAN,58,1841,1995)               41060  2    6 
-           English translation of J,YF,58,(11),1948,1995          41060  2    7 
-AUTHOR     (A.A.Goverdovsky,V.F.Mitrofanov,V.A.Khryachkov)        41060  2    8 
-TITLE      Mass-energy distributions of fragments formed in 243Am 41060  2    9 
-           fission induced by fast neutrons.                      41060  2   10 
-STATUS     (TABLE)  Data are obtained from the author             41060  2   11 
-                    Goverdovskiy, 1992-09-22                      41060  2   12 
+REL-REF    (N,41681002,A.A.Goverdovsky+,J,YF,58,1948,1995) Iss.11 41060  2    4 
+           (N,41681002,A.A.Goverdovsky+,J,PAN,58,1841,1995)       41060  2    5 
+            Mass distribution for En=1.MeV measured by ionization 41060  2    6 
+            chamber.                                              41060  2    7 
+ANALYSIS     Mass resolution of spectrometer was taken into       41060  2    8 
+           account at analysis of experimental data.              41060  2    9 
+STATUS     (TABLE)  Data are obtained from the author             41060  2   10 
+                    A.Goverdovskiy, 1992-09-22                    41060  2   11 
+           Data on Fig.2 left lower of Yad.Fiz.,v.56,is.1,p.43,19941060  2   12 
 HISTORY    (19960612U)  Reference YF,58,(11),1948,1995 added      41060  2   13 
            (20180215A) M.M. Ref. PAN,58,1841,1995 was added.      41060  2   14 
             Refs. were moved in REL-REF.                          41060  2   15 
@@ -97,61 +114,77 @@ NO-DIM     PC/FIS     PC/FIS                                      41060  2   20
     166.       .02       .02                                      41060  2   65 
 ENDDATA             47          0                                 41060  2   66 
 ENDSUBENT           65          0                                 41060  299999 
-SUBENT        41060003   20180215                             417841060  3    1 
-BIB                  2          3                                 41060  3    2 
-REACTION   (95-AM-244(N,F)MASS,PRE,FY)                            41060  3    3 
-STATUS     (TABLE)  Data are obtained from the author             41060  3    4 
-                    Goverdovskiy, 1992-09-22                      41060  3    5 
-ENDBIB               3          0                                 41060  3    6 
-NOCOMMON             0          0                                 41060  3    7 
-DATA                 3         45                                 41060  3    8 
-MASS       DATA       ERR-S                                       41060  3    9 
-NO-DIM     PC/FIS     PC/FIS                                      41060  3   10 
-    122.        3.12       .19                                    41060  3   11 
-    123.        3.09       .19                                    41060  3   12 
-    124.        2.99       .19                                    41060  3   13 
-    125.        2.88       .18                                    41060  3   14 
-    126.        2.68       .18                                    41060  3   15 
-    127.        2.60       .17                                    41060  3   16 
-    128.        2.68       .18                                    41060  3   17 
-    129.        2.78       .18                                    41060  3   18 
-    130.        3.27       .20                                    41060  3   19 
-    131.        3.88       .21                                    41060  3   20 
-    132.        3.92       .21                                    41060  3   21 
-    133.        3.89       .21                                    41060  3   22 
-    134.        3.73       .21                                    41060  3   23 
-    135.        3.60       .21                                    41060  3   24 
-    136.        3.48       .20                                    41060  3   25 
-    137.        3.35       .20                                    41060  3   26 
-    138.        3.24       .20                                    41060  3   27 
-    139.        3.19       .19                                    41060  3   28 
-    140.        3.09       .19                                    41060  3   29 
-    141.        3.07       .19                                    41060  3   30 
-    142.        2.98       .19                                    41060  3   31 
-    143.        2.94       .19                                    41060  3   32 
-    144.        2.91       .19                                    41060  3   33 
-    145.        2.86       .18                                    41060  3   34 
-    146.        2.78       .18                                    41060  3   35 
-    147.        2.62       .18                                    41060  3   36 
-    148.        2.50       .17                                    41060  3   37 
-    149.        2.31       .16                                    41060  3   38 
-    150.        2.13       .16                                    41060  3   39 
-    151.        1.96       .15                                    41060  3   40 
-    152.        1.80       .15                                    41060  3   41 
-    153.        1.55       .14                                    41060  3   42 
-    154.        1.37       .13                                    41060  3   43 
-    155.        1.18       .12                                    41060  3   44 
-    156.         .98       .11                                    41060  3   45 
-    157.         .82       .10                                    41060  3   46 
-    158.         .65       .09                                    41060  3   47 
-    159.         .57       .08                                    41060  3   48 
-    160.         .47       .07                                    41060  3   49 
-    161.         .36       .07                                    41060  3   50 
-    162.         .29       .06                                    41060  3   51 
-    163.         .20       .05                                    41060  3   52 
-    164.         .13       .04                                    41060  3   53 
-    165.         .08       .03                                    41060  3   54 
-    166.         .03       .02                                    41060  3   55 
-ENDDATA             47          0                                 41060  3   56 
-ENDSUBENT           55          0                                 41060  399999 
+SUBENT        41060003   20191028                             418641060  3    1 
+BIB                  5         19                                 41060  3    2 
+REACTION   (95-AM-243(N,F)MASS,PRE,FY,,MSC,DERIV)                 41060  3    3 
+            Primary mass yield from the first chance fission.     41060  3    4 
+            See explanation in ANALYSIS and comment of author.    41060  3    5 
+ANALYSIS    Derived from directly measured data according to      41060  3    6 
+           1st chance of fission through Am-244* in frames of     41060  3    7 
+           chance model of fission .                              41060  3    8 
+COMMENT    Of author A.Goverdovsky at 1992.                       41060  3    9 
+            Mass spectrum for fissile system Am-244               41060  3   10 
+            corrected on impurity of (n,n'f) and (n,2n'f)         41060  3   11 
+               reactions .                                        41060  3   12 
+STATUS     (TABLE)  Data are obtained from the author             41060  3   13 
+                    A.Goverdovskiy, 1992-09-22                    41060  3   14 
+           Data are on fig.15 of INDC-CCP-0341,1991               41060  3   15 
+           (DEP,41060002) Directly measured data.                 41060  3   16 
+HISTORY    (20191028A) Reaction SF1 was corrected:                41060  3   17 
+           Am-244 -> Am-243 (confirmed by A.Goverdovsky and       41060  3   18 
+            V.Mitrofanov).                                        41060  3   19 
+           Code DERIV was added in reaction.                      41060  3   20 
+           ANALYSIS was added.                                    41060  3   21 
+ENDBIB              19          0                                 41060  3   22 
+NOCOMMON             0          0                                 41060  3   23 
+DATA                 3         45                                 41060  3   24 
+MASS       DATA       ERR-S                                       41060  3   25 
+NO-DIM     PC/FIS     PC/FIS                                      41060  3   26 
+    122.        3.12       .19                                    41060  3   27 
+    123.        3.09       .19                                    41060  3   28 
+    124.        2.99       .19                                    41060  3   29 
+    125.        2.88       .18                                    41060  3   30 
+    126.        2.68       .18                                    41060  3   31 
+    127.        2.60       .17                                    41060  3   32 
+    128.        2.68       .18                                    41060  3   33 
+    129.        2.78       .18                                    41060  3   34 
+    130.        3.27       .20                                    41060  3   35 
+    131.        3.88       .21                                    41060  3   36 
+    132.        3.92       .21                                    41060  3   37 
+    133.        3.89       .21                                    41060  3   38 
+    134.        3.73       .21                                    41060  3   39 
+    135.        3.60       .21                                    41060  3   40 
+    136.        3.48       .20                                    41060  3   41 
+    137.        3.35       .20                                    41060  3   42 
+    138.        3.24       .20                                    41060  3   43 
+    139.        3.19       .19                                    41060  3   44 
+    140.        3.09       .19                                    41060  3   45 
+    141.        3.07       .19                                    41060  3   46 
+    142.        2.98       .19                                    41060  3   47 
+    143.        2.94       .19                                    41060  3   48 
+    144.        2.91       .19                                    41060  3   49 
+    145.        2.86       .18                                    41060  3   50 
+    146.        2.78       .18                                    41060  3   51 
+    147.        2.62       .18                                    41060  3   52 
+    148.        2.50       .17                                    41060  3   53 
+    149.        2.31       .16                                    41060  3   54 
+    150.        2.13       .16                                    41060  3   55 
+    151.        1.96       .15                                    41060  3   56 
+    152.        1.80       .15                                    41060  3   57 
+    153.        1.55       .14                                    41060  3   58 
+    154.        1.37       .13                                    41060  3   59 
+    155.        1.18       .12                                    41060  3   60 
+    156.         .98       .11                                    41060  3   61 
+    157.         .82       .10                                    41060  3   62 
+    158.         .65       .09                                    41060  3   63 
+    159.         .57       .08                                    41060  3   64 
+    160.         .47       .07                                    41060  3   65 
+    161.         .36       .07                                    41060  3   66 
+    162.         .29       .06                                    41060  3   67 
+    163.         .20       .05                                    41060  3   68 
+    164.         .13       .04                                    41060  3   69 
+    165.         .08       .03                                    41060  3   70 
+    166.         .03       .02                                    41060  3   71 
+ENDDATA             47          0                                 41060  3   72 
+ENDSUBENT           71          0                                 41060  399999 
 ENDENTRY             3          0                                 4106099999999 
