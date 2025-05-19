@@ -1,0 +1,95 @@
+ENTRY            C1629   20160630                             C162C1629  0    1 
+SUBENT        C1629001   20160630                             C162C1629  1    1 
+BIB                  7         12                                 C1629  1    2 
+TITLE      Coincidence measurement of the 12C(alpha,gamma)16O     C1629  1    3 
+           cross section at low energies                          C1629  1    4 
+AUTHOR     (R.M.Kremer,C.A.Barnes,K.H.Chang,H.C.Evans,            C1629  1    5 
+           B.W.Filippone,K.H.Hahn,L.W.Mitchell)                   C1629  1    6 
+REFERENCE  (J,PRL,60,1475,1988)                                   C1629  1    7 
+           #doi:10.1103/PhysRevLett.60.1475                       C1629  1    8 
+INSTITUTE  (1USACAL)                                              C1629  1    9 
+FACILITY   (VDGT,1USACAL) NSF-Caltech 3-MV tandem Pelletron       C1629  1   10 
+           accelerator.                                           C1629  1   11 
+ERR-ANALYS (ERR-S) Statistical errors.                            C1629  1   12 
+           (ERR-SYS) Overall systematic uncertainty.              C1629  1   13 
+HISTORY    (20160630C) BP                                         C1629  1   14 
+ENDBIB              12          0                                 C1629  1   15 
+COMMON               2          3                                 C1629  1   16 
+ERR-SYS    E-LVL                                                  C1629  1   17 
+PER-CENT   MEV                                                    C1629  1   18 
+       15.0        0.0                                            C1629  1   19 
+ENDCOMMON            3          0                                 C1629  1   20 
+ENDSUBENT           19          0                                 C1629  199999 
+SUBENT        C1629002   20160630                             C162C1629  2    1 
+BIB                  6         19                                 C1629  2    2 
+REACTION   (6-C-12(A,G)8-O-16,EP/PAR,SIG) The E1 cross section.   C1629  2    3 
+SAMPLE     A windowless He gas target. The target density         C1629  2    4 
+           3.6+-0.2 microg/cm2.                                   C1629  2    5 
+DETECTOR   (NAICR,PROPC,IOCH) Large NaI(Tl) gamma-ray detectors.  C1629  2    6 
+           Gas ionization detector and multiwire proportional     C1629  2    7 
+           chamber.                                               C1629  2    8 
+METHOD     (REC,TOF) The reaction yields (YToF) were extracted    C1629  2    9 
+           from time-of-flight histograms which were constructed  C1629  2   10 
+           with cuts on measured recoil-particle energy,          C1629  2   11 
+           specific energy loss (dE/dx), and gamma-ray energy.    C1629  2   12 
+ANALYSIS   The E1 cross sections were determined from the         C1629  2   13 
+           equation sigma E1 = YToF/(beta[1+(eff. E2/eff.         C1629  2   14 
+           E2)(sigma E2/sigma E1)]), where YToF is the peak       C1629  2   15 
+           yield from the time-of-flight spectra, and beta is     C1629  2   16 
+           the product of the number of incident particles, the   C1629  2   17 
+           number of target particles per square centimeter, the  C1629  2   18 
+           total E 1 detection efficiency, the CSF, and the       C1629  2   19 
+           detector live-time fraction.                           C1629  2   20 
+STATUS     (CURVE) Fig. 3, page 1475.                             C1629  2   21 
+ENDBIB              19          0                                 C1629  2   22 
+COMMON               1          3                                 C1629  2   23 
+POLAR                                                             C1629  2   24 
+NO-DIM                                                            C1629  2   25 
+  1.                                                              C1629  2   26 
+ENDCOMMON            3          0                                 C1629  2   27 
+DATA                 3         12                                 C1629  2   28 
+EN-CM      DATA       ERR-S                                       C1629  2   29 
+MEV        NB         NB                                          C1629  2   30 
+      1.293  1.640E-01  3.380E-02                                 C1629  2   31 
+      1.492  2.825E-01  7.598E-02                                 C1629  2   32 
+      1.690  1.039E+00  1.865E-01                                 C1629  2   33 
+      1.888  2.573E+00  4.964E-01                                 C1629  2   34 
+      2.083  1.062E+01  1.615E+00                                 C1629  2   35 
+      2.186  2.545E+01  3.510E+00                                 C1629  2   36 
+      2.281  3.658E+01  4.520E+00                                 C1629  2   37 
+      2.384  4.458E+01  3.528E+00                                 C1629  2   38 
+      2.488  3.313E+01  2.622E+00                                 C1629  2   39 
+      2.583  2.088E+01  3.174E+00                                 C1629  2   40 
+      2.781  4.659E+00  1.253E+00                                 C1629  2   41 
+      2.897  3.350E+00  9.804E-01                                 C1629  2   42 
+ENDDATA             14          0                                 C1629  2   43 
+ENDSUBENT           42          0                                 C1629  299999 
+SUBENT        C1629003   20160630                             C162C1629  3    1 
+BIB                  2          3                                 C1629  3    2 
+REACTION   (6-C-12(A,G)8-O-16,EP/PAR,SIG,,SFC) The E1 S factor.   C1629  3    3 
+STATUS     (DEP,C1629002)                                         C1629  3    4 
+           (CURVE) Fig. 3, page 1475.                             C1629  3    5 
+ENDBIB               3          0                                 C1629  3    6 
+COMMON               1          3                                 C1629  3    7 
+POLAR                                                             C1629  3    8 
+NO-DIM                                                            C1629  3    9 
+  1.                                                              C1629  3   10 
+ENDCOMMON            3          0                                 C1629  3   11 
+DATA                 3         12                                 C1629  3   12 
+EN-CM      DATA       ERR-S                                       C1629  3   13 
+MEV        B*MEV      B*MEV                                       C1629  3   14 
+      1.292  1.529E-02  2.950E-03                                 C1629  3   15 
+      1.486  8.597E-03  2.101E-03                                 C1629  3   16 
+      1.685  1.300E-02  2.332E-03                                 C1629  3   17 
+      1.890  1.509E-02  2.503E-03                                 C1629  3   18 
+      2.089  3.279E-02  5.884E-03                                 C1629  3   19 
+      2.188  5.842E-02  8.054E-03                                 C1629  3   20 
+      2.281  6.669E-02  9.192E-03                                 C1629  3   21 
+      2.381  6.247E-02  5.882E-03                                 C1629  3   22 
+      2.481  3.688E-02  3.472E-03                                 C1629  3   23 
+      2.587  1.846E-02  2.806E-03                                 C1629  3   24 
+      2.781  2.869E-03  7.011E-04                                 C1629  3   25 
+      2.900  1.694E-03  4.757E-04                                 C1629  3   26 
+ENDDATA             14          0                                 C1629  3   27 
+ENDSUBENT           26          0                                 C1629  399999 
+ENDENTRY             3          0                                 C162999999999 
