@@ -1,10 +1,10 @@
-ENTRY            31551   20160929                             317531551  0    1 
-SUBENT        31551001   20160929                             317531551  1    1 
-BIB                 14         85                                 31551  1    2 
+ENTRY            31551   20211005                             320231551  0    1 
+SUBENT        31551001   20211005                             320231551  1    1 
+BIB                 14         86                                 31551  1    2 
 TITLE      Activation cross sections for reactions induced by     31551  1    3 
            14 MeV neutrons on natural tin and enriched 112Sn      31551  1    4 
            targets with reference to 111In production via         31551  1    5 
-           radioisotope generator 112Sn(n,2n)111Sn -- 111In       31551  1    6 
+           radioisotope generator 112Sn(n,2n)111Sn -> 111In       31551  1    6 
 AUTHOR     (E.Betak,R.Mikolajczak,J.Staniszewska,S.Mikolajewski,  31551  1    7 
            E.Rurarz)                                              31551  1    8 
 INSTITUTE  (3SLKSLO,3POLIPJ)                                      31551  1    9 
@@ -14,7 +14,7 @@ REFERENCE  (J,RCA,93,311,2005)                                    31551  1   12
 FACILITY   (CCW,3POLIPJ)                                          31551  1   13 
 METHOD     (ACTIV,GSPEC)                                          31551  1   14 
 INC-SOURCE (D-T) tritium-titanium targets with a deuteron beam    31551  1   15 
-           from a small Cockroft-Walton accelerator of 100 kV.    31551  1   16 
+           from a small Cockcroft-Walton accelerator of 100 kV.   31551  1   16 
 MONITOR    (29-CU-65(N,2N)29-CU-64,,SIG)                          31551  1   17 
 MONIT-REF  (,Paulsen+,J,NKA,7,117,1965)                           31551  1   18 
            (,IAEA,R,IAEA-273,301,1987) Handbook on nuclear        31551  1   19 
@@ -40,7 +40,7 @@ SAMPLE     Three samples (112Sn, natSn and Cu) were placed        31551  1   21
            114Sn - 0.651%; 115Sn - 0.341%; 116Sn - 14.531%;       31551  1   39 
            117Sn - 7.687%; 118Sn - 24.230%; 119Sn - 8.594%;       31551  1   40 
            120Sn - 32.591%; 122Sn - 4.633%; 124Sn - 5.795%.       31551  1   41 
-           Abundance in the inriched sample 1. is:                31551  1   42 
+           Abundance in the enriched sample 1. is:                31551  1   42 
            112Sn - 62.5%; 114Sn - 2.1%; 115Sn - 0.7%;             31551  1   43 
            116Sn - 9.6%; 117Sn - 3.4%; 118Sn - 7.9%;              31551  1   44 
            119Sn - 2.9%; 120Sn-7.6%; 122Sn-1.4%; 124Sn-1.9%       31551  1   45 
@@ -86,13 +86,14 @@ STATUS     (TABLE) Table from the reference                       31551  1   83
 HISTORY    (20050923C) SD                                         31551  1   85 
            (20160923A) VS. Coded information added to ERR-ANALYS. 31551  1   86 
                        DECAY-DATA corrected in 017.               31551  1   87 
-ENDBIB              85          0                                 31551  1   88 
-COMMON               6          3                                 31551  1   89 
-EN         EN-ERR     MONIT      MONIT-ERR  ERR-1      ERR-4      31551  1   90 
-MEV        MEV        MB         MB         PER-CENT   PER-CENT   31551  1   91 
-  14.4      0.2         964.       68.        5.         1.       31551  1   92 
-ENDCOMMON            3          0                                 31551  1   93 
-ENDSUBENT           92          0                                 31551  199999 
+           (20211004A) VS. SF3=X in 009.                          31551  1   88 
+ENDBIB              86          0                                 31551  1   89 
+COMMON               6          3                                 31551  1   90 
+EN         EN-ERR     MONIT      MONIT-ERR  ERR-1      ERR-4      31551  1   91 
+MEV        MEV        MB         MB         PER-CENT   PER-CENT   31551  1   92 
+  14.4      0.2         964.       68.        5.         1.       31551  1   93 
+ENDCOMMON            3          0                                 31551  1   94 
+ENDSUBENT           93          0                                 31551  199999 
 SUBENT        31551002   20050923                             31183155100200001 
 BIB                  2          5                                 3155100200002 
 REACTION   (50-SN-112(N,2N)50-SN-111,,SIG)                        3155100200003 
@@ -183,20 +184,21 @@ MB         MB                                                     3155100800011
    11.1       0.5                                                 3155100800012 
 ENDDATA              3          0                                 3155100800013 
 ENDSUBENT           12          0                                 3155100899999 
-SUBENT        31551009   20050923                             31183155100900001 
-BIB                  2          4                                 3155100900002 
-REACTION   (50-SN-117(N,N+P)49-IN-116-M1,,SIG)                    3155100900003 
-DECAY-DATA (49-IN-116-M1,54.29MIN,DG,818.7,0.115,                 3155100900004 
-             DG,1097.3,0.562,DG,1293.5,0.844,                     3155100900005 
-             DG,1507.4,0.10,DG,1753.8,0.0246)                     3155100900006 
-ENDBIB               4          0                                 3155100900007 
-NOCOMMON             0          0                                 3155100900008 
-DATA                 2          1                                 3155100900009 
-DATA       ERR-T                                                  3155100900010 
-MB         MB                                                     3155100900011 
-   1.35       0.11                                                3155100900012 
-ENDDATA              3          0                                 3155100900013 
-ENDSUBENT           12          0                                 3155100999999 
+SUBENT        31551009   20211005                             320231551  9    1 
+BIB                  3          5                                 31551  9    2 
+REACTION   (50-SN-117(N,X)49-IN-116-M1,,SIG)                      31551  9    3 
+DECAY-DATA (49-IN-116-M1,54.29MIN,DG,818.7,0.115,                 31551  9    4 
+             DG,1097.3,0.562,DG,1293.5,0.844,                     31551  9    5 
+             DG,1507.4,0.10,DG,1753.8,0.0246)                     31551  9    6 
+HISTORY    (20211004A) VS. SF3=X c.f. Memos CP-D/0999.            31551  9    7 
+ENDBIB               5          0                                 31551  9    8 
+NOCOMMON             0          0                                 31551  9    9 
+DATA                 2          1                                 31551  9   10 
+DATA       ERR-T                                                  31551  9   11 
+MB         MB                                                     31551  9   12 
+   1.35       0.11                                                31551  9   13 
+ENDDATA              3          0                                 31551  9   14 
+ENDSUBENT           13          0                                 31551  999999 
 SUBENT        31551010   20050923                             31183155101000001 
 BIB                  2          3                                 3155101000002 
 REACTION   (50-SN-117(N,P)49-IN-117-M,,SIG)                       3155101000003 
