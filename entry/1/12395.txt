@@ -1,62 +1,131 @@
-ENTRY            12395   19820519                             00001239500000001 
-SUBENT        12395001   19820519                             00001239500100001 
-BIB                  7          8                                 1239500100002 
-INSTITUTE  (1USALAS)                                              1239500100003 
-REFERENCE  (R,LA-102,44)                                          1239500100004 
-AUTHOR     (T.SNYDER,R.WILLIAMS)                                  1239500100005 
-TITLE      NUMBER OF NEUTRONS PER FISSION FOR 25 AND 49.          1239500100006 
-INC-SPECT  THERMAL SPECTRUM                                       1239500100007 
-STATUS     (SCSRS)                                                1239500100008 
-HISTORY    (760804T) TRANSLATED FROM SCISRS                       1239500100009 
-           (820519A) CONVERTED TO REACTION FORMALISM              1239500100010 
-ENDBIB               8          0                                 1239500100011 
-NOCOMMON             0          0                                 1239500100012 
-ENDSUBENT           11          0                                 1239500199999 
-SUBENT        12395002   19820519                             00001239500200001 
-BIB                  1          1                                 1239500200002 
-REACTION   (92-U-235(N,F),,NU,,MXW)                               1239500200003 
-ENDBIB               1          0                                 1239500200004 
-NOCOMMON             0          0                                 1239500200005 
-DATA                 2          1                                 1239500200006 
-EN-DUMMY   DATA                                                   1239500200007 
-EV         NO-DIM                                                 1239500200008 
- 0.0253     2.44                                                  1239500200009 
-ENDDATA              3          0                                 1239500200010 
-ENDSUBENT            9          0                                 1239500299999 
-SUBENT        12395003   19820519                             00001239500300001 
-BIB                  1          1                                 1239500300002 
-REACTION   (94-PU-239(N,F),,NU,,MXW)                              1239500300003 
-ENDBIB               1          0                                 1239500300004 
-NOCOMMON             0          0                                 1239500300005 
-DATA                 2          1                                 1239500300006 
-EN-DUMMY   DATA                                                   1239500300007 
-MEV        NO-DIM                                                 1239500300008 
- 2.53   -08 2.86                                                  1239500300009 
-ENDDATA              3          0                                 1239500300010 
-ENDSUBENT            9          0                                 1239500399999 
-SUBENT        12395004   19820519                             00001239500400001 
-BIB                  3          3                                 1239500400002 
-REACTION   (94-PU-239(N,ABS),,ETA,,MXW)                           1239500400003 
-ASSUMED    (ASSUM,94-PU-239(N,ABS),,SIG)                          1239500400004 
-INC-SPECT   THERMAL SPECTRUM                                      1239500400005 
-ENDBIB               3          0                                 1239500400006 
-NOCOMMON             0          0                                 1239500400007 
-DATA                 3          1                                 1239500400008 
-EN-DUMMY   DATA       ASSUM                                       1239500400009 
-MEV        B          B                                           1239500400010 
- 2.53   -08 0.44   +00 1057.                                      1239500400011 
-ENDDATA              3          0                                 1239500400012 
-ENDSUBENT           11          0                                 1239500499999 
-SUBENT        12395005   19820519                             00001239500500001 
-BIB                  2          2                                 1239500500002 
-REACTION   (92-U-235(N,ABS),,ALF,,MXW)                            1239500500003 
-ASSUMED    (ASSUM,92-U-235(N,G)92-U-236,,SIG)                     1239500500004 
-ENDBIB               2          0                                 1239500500005 
-NOCOMMON             0          0                                 1239500500006 
-DATA                 3          1                                 1239500500007 
-EN-DUMMY   DATA       ASSUM                                       1239500500008 
-EV         B          B                                           1239500500009 
- 0.0253      0.13      2.16                                       1239500500010 
-ENDDATA              3          0                                 1239500500011 
-ENDSUBENT           10          0                                 1239500599999 
-ENDENTRY             5          0                                 1239599999999 
+ENTRY            12395   20201210                             147612395  0    1 
+SUBENT        12395001   20201210                             147612395  1    1 
+BIB                 10         36                                 12395  1    2 
+TITLE      Number of Neutrons per Fission for 25 and 49           12395  1    3 
+AUTHOR     (T.M.Snyder,R.W.Williams)                              12395  1    4 
+REFERENCE  (R,LA-102,1944)                                        12395  1    5 
+INSTITUTE  (1USALAS)                                              12395  1    6 
+FACILITY   (CYCLO,1USALAS)                                        12395  1    7 
+INC-SPECT  The thermal flux which is available well back in the   12395  1    8 
+           graphite block, using the cyclotron as a neutron       12395  1    9 
+           source.                                                12395  1   10 
+METHOD     The number of fast neutrons given off was measured by  12395  1   11 
+           making a volume integral of the resonance activity     12395  1   12 
+           acquired by indium foils and comparing this with a     12395  1   13 
+           similar integral from a Ra-Be source of known output;  12395  1   14 
+           the number of fissions was measured by counting the    12395  1   15 
+           fissions from a thin foil on the face of a case        12395  1   16 
+           containing the sample of fissionable material, and     12395  1   17 
+           knowing the ratio of weights of material in the foil   12395  1   18 
+           to material in the sample. The measurement gives a     12395  1   19 
+           rather accurate value of the ratio nubar/Q where Q is  12395  1   20 
+           the neutron output of Ra-Be source.                    12395  1   21 
+CORRECTION The self absorption correction was calculated on the   12395  1   22 
+           basis of this average counting rate plus the           12395  1   23 
+           assumption of an isotropic neutron flux around the     12395  1   24 
+           sample. The straight-through self-absorption in the    12395  1   25 
+           sample was about 11 percent in the worst case (round   12395  1   26 
+           25 sample); it becomes larger when averaged over all   12395  1   27 
+           angles, but is partially monitored by the detector     12395  1   28 
+           foil, one side of which is shaded by the sample. The   12395  1   29 
+           net correction was 5 percent for the round 25 sample.  12395  1   30 
+COMMENT    Compiler's comment: Los Alamos notation uses 49 for    12395  1   31 
+           Z=94, A=239 (239Pu) and 25 for Z=92, A=235 (235U).     12395  1   32 
+HISTORY    (19760804T) Translated from SCISRS.                    12395  1   33 
+           (19820519A) Converted to reaction formalism            12395  1   34 
+           (20201210A) BP: Added 239Pu/235U or 49/25 ratio data,  12395  1   35 
+           corrected units, ALF->ETA, updated to new date formats,12395  1   36 
+            lower case. Corrections according last EXFOR rules and12395  1   37 
+            Dict.                                                 12395  1   38 
+ENDBIB              36          0                                 12395  1   39 
+COMMON               1          3                                 12395  1   40 
+EN-DUMMY                                                          12395  1   41 
+EV                                                                12395  1   42 
+     0.0253                                                       12395  1   43 
+ENDCOMMON            3          0                                 12395  1   44 
+ENDSUBENT           43          0                                 12395  199999 
+SUBENT        12395002   20201210                             147612395  2    1 
+BIB                  3          7                                 12395  2    2 
+REACTION   (92-U-235(N,F),,NU,,SPA)                               12395  2    3 
+SAMPLE     The 25 foils from material of the same isotopic        12395  2    4 
+           constitution as weighing 25 samples (E-10 oxide).      12395  2    5 
+           Direct weighing of these foils proved unreliable,      12395  2    6 
+           apparently because their large areas encourage the     12395  2    7 
+           deposition of impurities.                              12395  2    8 
+STATUS     (TABLE) page 18.                                       12395  2    9 
+ENDBIB               7          0                                 12395  2   10 
+NOCOMMON             0          0                                 12395  2   11 
+DATA                 1          1                                 12395  2   12 
+DATA                                                              12395  2   13 
+PRT/FIS                                                           12395  2   14 
+       2.44                                                       12395  2   15 
+ENDDATA              3          0                                 12395  2   16 
+ENDSUBENT           15          0                                 12395  299999 
+SUBENT        12395003   20201210                             147612395  3    1 
+BIB                  3         11                                 12395  3    2 
+REACTION   (94-PU-239(N,F),,NU,,SPA)                              12395  3    3 
+SAMPLE     For 49 the thin foil was made by transferring          12395  3    4 
+           quantitatively an aliquot of the total sample on to a  12395  3    5 
+           thin platinum disk. The value thus obtained was        12395  3    6 
+           checked by comparing the fission counts from this      12395  3    7 
+           foil with the fission mounts from a very small 49      12395  3    8 
+           foil which had been alpha-counted accurately; and      12395  3    9 
+           alpha-counting a very small aliquot from the total     12395  3   10 
+           sample (note that the ratio is independent of the      12395  3   11 
+           specific activity of 49).                              12395  3   12 
+STATUS     (TABLE) page 18.                                       12395  3   13 
+ENDBIB              11          0                                 12395  3   14 
+NOCOMMON             0          0                                 12395  3   15 
+DATA                 1          1                                 12395  3   16 
+DATA                                                              12395  3   17 
+PRT/FIS                                                           12395  3   18 
+       2.86                                                       12395  3   19 
+ENDDATA              3          0                                 12395  3   20 
+ENDSUBENT           19          0                                 12395  399999 
+SUBENT        12395004   20201210                             147612395  4    1 
+BIB                  3          3                                 12395  4    2 
+REACTION   (94-PU-239(N,ABS),,ETA,,SPA)                           12395  4    3 
+ASSUMED    (ASSUM,94-PU-239(N,ABS),,SIG)                          12395  4    4 
+STATUS     (TABLE) pages 2-3,24.                                  12395  4    5 
+ENDBIB               3          0                                 12395  4    6 
+NOCOMMON             0          0                                 12395  4    7 
+DATA                 2          1                                 12395  4    8 
+DATA       ASSUM                                                  12395  4    9 
+PRT/INC    B                                                      12395  4   10 
+       0.44      1057.                                            12395  4   11 
+ENDDATA              3          0                                 12395  4   12 
+ENDSUBENT           11          0                                 12395  499999 
+SUBENT        12395005   20201210                             147612395  5    1 
+BIB                  4          5                                 12395  5    2 
+REACTION   (92-U-235(N,ABS),,ETA,,SPA)                            12395  5    3 
+ASSUMED    (ASSUM,92-U-235(N,G)92-U-236,,SIG)                     12395  5    4 
+HISTORY    (20201210A) BP: Corrected assumed from 2.16 to 644 b.  12395  5    5 
+           Changed ALF to ETA.                                    12395  5    6 
+STATUS     (TABLE) page 2-3.                                      12395  5    7 
+ENDBIB               5          0                                 12395  5    8 
+NOCOMMON             0          0                                 12395  5    9 
+DATA                 2          1                                 12395  5   10 
+DATA       ASSUM                                                  12395  5   11 
+PRT/INC    B                                                      12395  5   12 
+       0.13      644.0                                            12395  5   13 
+ENDDATA              3          0                                 12395  5   14 
+ENDSUBENT           13          0                                 12395  599999 
+SUBENT        12395006   20201211                             147612395  6    1 
+BIB                  4          8                                 12395  6    2 
+REACTION   ((94-PU-239(N,F),,NU,,SPA)/(92-U-235(N,F),,NU,,SPA))   12395  6    3 
+ERR-ANALYS (DATA-ERR) Authors attempted to assign reasonable      12395  6    4 
+           probable errors to these correction factors, and have  12395  6    5 
+           considered the errors in mass ratios.                  12395  6    6 
+HISTORY    (20201210C) BP                                         12395  6    7 
+STATUS     (DEP,12395003)                                         12395  6    8 
+           (DEP,12395002)                                         12395  6    9 
+           (TABLE) page 18.                                       12395  6   10 
+ENDBIB               8          0                                 12395  6   11 
+NOCOMMON             0          0                                 12395  6   12 
+DATA                 2          1                                 12395  6   13 
+DATA       DATA-ERR                                               12395  6   14 
+NO-DIM     NO-DIM                                                 12395  6   15 
+       1.17       0.02                                            12395  6   16 
+ENDDATA              3          0                                 12395  6   17 
+ENDSUBENT           16          0                                 12395  699999 
+ENDENTRY             6          0                                 1239599999999 
