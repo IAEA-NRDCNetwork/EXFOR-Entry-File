@@ -1,38 +1,38 @@
-ENTRY            30452   20190305                             31883045200000001 
-SUBENT        30452001   20190305                             31883045200100001 
-BIB                 10         32                                 3045200100002 
+ENTRY            30452   20210611                             32013045200000001 
+SUBENT        30452001   20210611                             32013045200100001 
+BIB                  9         32                                 3045200100002 
 TITLE      Measuring of a few integral data in the Sigma Sigma    3045200100003 
             neutron field                                         3045200100004 
 AUTHOR     (I.Garlea, C.Miron, M.Lupu, P.Ilie, A.Thurzo,          3045200100005 
             N.Stanica, F.Popa, G.Fodor)                           3045200100006 
 INSTITUTE  (3RUMPIT,3RUMBUC)                                      3045200100007 
 REFERENCE  (J,RRP,23,409,1978)                                    3045200100008 
-           (S,IAEA-208,(2),309,1976) Very similar to the prim.ref.3045200100009 
-FACILITY   (REAC,3RUMPIT)                                         3045200100010 
-INC-SOURCE (THCOL) Thermal column of VVRS-IFA reactor with the    3045200100011 
-            standard neutron field, Sigma-Sigma facility          3045200100012 
-INC-SPECT  Fast reactor spectrum calculated with ANISN code and   3045200100013 
-            ENDF/B-III library is mentioned by I.Girlea et al.,   3045200100014 
-            "Neutron spectrum measurements performed in Sigma-    3045200100015 
-             Sigma facility by means of the proton recoil         3045200100016 
-             counters" to be published.                           3045200100017 
-REL-REF    (N,,J.Grundl+,S,IAEA-208,(1),53,1978) Table II-B       3045200100018 
-            Average energy = 0.76 MeV                             3045200100019 
-            Median energy  =  400 keV                             3045200100020 
-            E(P=0.95)      =   20 keV                             3045200100021 
-            E(P=0.05)      =  2.9 MeV                             3045200100022 
-           where fraction of spectrum below E(P=0.95) or above    3045200100023 
-             E(P=0.05) is 5%.                                     3045200100024 
-COMMENT    By compiler (2015-07-23):                              3045200100025 
-            A neutron spectrum of the Sigma-Sigma facility is     3045200100026 
-            available in the IRDF-2002 (standard spectra).        3045200100027 
-HISTORY    (19780629C) KO                                         3045200100028 
-           (19810302A) Lab corrected, main ref. added,            3045200100029 
-            status 'SPSDD' added to subentries 2,6,7,8,9.         3045200100030 
-           (20090310A) SD: Updated to new date formats, lower case3045200100031 
-           (20150723U) On. COMMENT added                          3045200100032 
-           (20160210A) VS. Cross section ratio added in 011-016.  3045200100033 
-           (20190305A) On. EN-DUMMY: 450 keV -> 400 keV.          3045200100034 
+           (S,IAEA-208,(2),309,1976) Very similar to J,RRP,23,409 3045200100009 
+           (J,RRP,26,643,1981)                                    3045200100010 
+            Same 115In(n,g), 115In(n,n'), 58Ni(n,p), (n,f) cross  3045200100011 
+            sections in table                                     3045200100012 
+FACILITY   (REAC,3RUMBUC) VVR-S reactor                           3045200100013 
+INC-SOURCE (THCOL) Standard neutron field - Sigma-Sigma facility  3045200100014 
+INC-SPECT  Grundl et al. (1978) gives:                            3045200100015 
+            Average energy = 0.76 MeV                             3045200100016 
+            Median energy  =  400 keV                             3045200100017 
+            E(P=0.95)      =   20 keV                             3045200100018 
+            E(P=0.05)      =  2.9 MeV                             3045200100019 
+           where fraction of spectrum below E(P=0.95) or above    3045200100020 
+             E(P=0.05) is 5%.                                     3045200100021 
+           By compiler (2015-07-23):                              3045200100022 
+            A neutron spectrum of the Sigma-Sigma facility is     3045200100023 
+            available in the IRDF-2002 (standard spectra).        3045200100024 
+REL-REF    (N,,J.Grundl+,S,IAEA-208,(1),53,1978)                  3045200100025 
+            Neutron spectrum parameters in Table II-B             3045200100026 
+HISTORY    (19780629C) KO                                         3045200100027 
+           (19810302A) Lab corrected, main ref. added,            3045200100028 
+            status SPSDD added to subentries 2,6,7,8,9.           3045200100029 
+           (20090310A) SD: Updated to new date formats, lower case3045200100030 
+           (20150723U) On. COMMENT added                          3045200100031 
+           (20160210A) VS. Cross section ratio added in 011-016.  3045200100032 
+           (20190305A) On. EN-DUMMY: 450 keV -> 0.76 MeV.         3045200100033 
+           (20210611A) On. Recompiled.                            3045200100034 
 ENDBIB              32          0                                 3045200100035 
 COMMON               1          3                                 3045200100036 
 EN-DUMMY                                                          3045200100037 
@@ -40,441 +40,423 @@ MEV                                                               3045200100038
  0.76                                                             3045200100039 
 ENDCOMMON            3          0                                 3045200100040 
 ENDSUBENT           39          0                                 3045200199999 
-SUBENT        30452002   20090311                             31353045200200001 
-BIB                  8         20                                 3045200200002 
+SUBENT        30452002   20210611                             32013045200200001 
+BIB                  8         16                                 3045200200002 
 REACTION   (79-AU-197(N,G)79-AU-198,,SIG,,SPA)                    3045200200003 
-SAMPLE     99.998% purity foil  thickness of 0.127 mm,            3045200200004 
-           diameter 19.00 mm.                                     3045200200005 
-           The foils were held with thin(50 micron) wire.         3045200200006 
-DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer coupled with a      3045200200007 
-           4096-multichannel analyzer.                            3045200200008 
-           Calibration was made with 2 reference source sets.     3045200200009 
-MONITOR    (92-U-235(N,F),,SIG) as fission chamber.               3045200200010 
-           (79-AU-197(N,G)79-AU-198,,SIG)                         3045200200011 
-PART-DET   (DG)                                                   3045200200012 
-STATUS     (TABLE) Data taken from Table III of                   3045200200013 
-                                        IAEA-208,vol.II,p.309.    3045200200014 
-           (SPSDD,30568005)                                       3045200200015 
-CORRECTION Correction of neutron selfshielding was applied.       3045200200016 
-ERR-ANALYS (DATA-ERR) The quoted error includes                   3045200200017 
-           .statistical errors,                                   3045200200018 
-           .errors attributed to the reference sources,           3045200200019 
-           .errors due to interpolation by the square least fit,  3045200200020 
-           .errors due to gamma self-absorption and size of source3045200200021 
-           .errors related to edge-correction.                    3045200200022 
-ENDBIB              20          0                                 3045200200023 
-NOCOMMON             0          0                                 3045200200024 
-NODATA               0          0                                 3045200200025 
+SAMPLE     0.127 mm thick, 19.00 mm diam., 99.998% pure.          3045200200004 
+           The foils were held with thin (50 um) wire.            3045200200005 
+DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer                     3045200200006 
+           (FISCH) flux determination and profiling               3045200200007 
+METHOD     (ACTIV)                                                3045200200008 
+CORRECTION Corrected for self-shielding                           3045200200009 
+ERR-ANALYS (DATA-ERR) Error including                             3045200200010 
+            - statistics                                          3045200200011 
+            - absolute activity of reference sources              3045200200012 
+            - interpolation by the square least fit               3045200200013 
+            - gamma self-absorption and source size corrections   3045200200014 
+            - edge-correction                                     3045200200015 
+STATUS     (TABLE) Table 3 of Rev.Roum.Phys.23(1978)409           3045200200016 
+           (COREL,30568005) second measurement                    3045200200017 
+HISTORY    (20210611A) On. STATUS: SPSDD->COREL. MONITOR deleted. 3045200200018 
+ENDBIB              16          0                                 3045200200019 
+NOCOMMON             0          0                                 3045200200020 
+DATA                 2          1                                 3045200200021 
+DATA       DATA-ERR                                               3045200200022 
+MB         MB                                                     3045200200023 
+ 395.       13.                                                   3045200200024 
+ENDDATA              3          0                                 3045200200025 
 ENDSUBENT           24          0                                 3045200299999 
-SUBENT        30452003   20090311                             31353045200300001 
-BIB                  7         18                                 3045200300002 
+SUBENT        30452003   20210611                             32013045200300001 
+BIB                  7         14                                 3045200300002 
 REACTION   (49-IN-115(N,G)49-IN-116-M,,SIG,,SPA)                  3045200300003 
-SAMPLE     99.981% purity foil, thickness of 0.254 mm,            3045200300004 
-           diameter 12.70 mm.                                     3045200300005 
-           The foils were held with thin(50 micron) wire.         3045200300006 
-DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer coupled with a      3045200300007 
-           4096-multichannel analyzer.                            3045200300008 
-           Calibration was made with 2 reference source sets.     3045200300009 
-MONITOR    (92-U-238(N,F),,SIG) as fission chamber.               3045200300010 
-           (79-AU-197(N,G)79-AU-198,,SIG)                         3045200300011 
-PART-DET   (DG)                                                   3045200300012 
-STATUS     (TABLE) Data taken from Table III of                   3045200300013 
-                                          IAEA-208,vol.II,p.309.  3045200300014 
-ERR-ANALYS (DATA-ERR) The quoted error includes                   3045200300015 
-           .statistical errors,                                   3045200300016 
-           .errors attributed to the reference sources,           3045200300017 
-           .errors due to interpolation by the square least fit,  3045200300018 
-           .errors due to gamma self-absorption and size of source3045200300019 
-           .errors related to edge-correction.                    3045200300020 
-ENDBIB              18          0                                 3045200300021 
-NOCOMMON             0          0                                 3045200300022 
-DATA                 2          1                                 3045200300023 
-DATA       DATA-ERR                                               3045200300024 
-MB         MB                                                     3045200300025 
- 2.6020E+02 9.0000E+00                                            3045200300026 
-ENDDATA              3          0                                 3045200300027 
-ENDSUBENT           26          0                                 3045200399999 
-SUBENT        30452004   20090311                             31353045200400001 
-BIB                  7         18                                 3045200400002 
+SAMPLE     0.127 mm thick, 19.00 mm diam., 99.9959% pure.         3045200300004 
+           The foils were held with thin (50 um) wire.            3045200300005 
+DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer                     3045200300006 
+           (FISCH) flux determination and profiling               3045200300007 
+METHOD     (ACTIV)                                                3045200300008 
+ERR-ANALYS (DATA-ERR) Error including                             3045200300009 
+            - statistics                                          3045200300010 
+            - absolute activity of reference sources              3045200300011 
+            - interpolation by the square least fit               3045200300012 
+            - gamma self-absorption and source size corrections   3045200300013 
+            - edge-correction                                     3045200300014 
+STATUS     (TABLE) Table 3 of Rev.Roum.Phys.23(1978)409           3045200300015 
+HISTORY    (20210611A) On. MONITOR deleted.                       3045200300016 
+ENDBIB              14          0                                 3045200300017 
+NOCOMMON             0          0                                 3045200300018 
+DATA                 2          1                                 3045200300019 
+DATA       DATA-ERR                                               3045200300020 
+MB         MB                                                     3045200300021 
+ 260.2      9.                                                    3045200300022 
+ENDDATA              3          0                                 3045200300023 
+ENDSUBENT           22          0                                 3045200399999 
+SUBENT        30452004   20210611                             32013045200400001 
+BIB                  7         14                                 3045200400002 
 REACTION   (49-IN-115(N,INL)49-IN-115-M,,SIG,,SPA)                3045200400003 
-SAMPLE     99.9959% purity foil, thickness of 0.127 mm,           3045200400004 
-           diameter 19.00 mm.                                     3045200400005 
-           The foils were held with thin(50 micron) wire.         3045200400006 
-DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer coupled with a      3045200400007 
-           4096-multichannel analyzer.                            3045200400008 
-           Calibration was made with 2 reference source sets.     3045200400009 
-MONITOR    (92-U-238(N,F),,SIG) as fission chamber.               3045200400010 
-           (79-AU-197(N,G)79-AU-198,,SIG)                         3045200400011 
-PART-DET   (DG)                                                   3045200400012 
-STATUS     (TABLE) Data taken from Table III of                   3045200400013 
-                                          IAEA-208,vol.II,p.309.  3045200400014 
-ERR-ANALYS (DATA-ERR) The quoted error includes                   3045200400015 
-           .statistical errors,                                   3045200400016 
-           .errors attributed to the reference sources,           3045200400017 
-           .errors due to interpolation by the square least fit,  3045200400018 
-           .errors due to gamma self-absorption and size of source3045200400019 
-           .errors related to edge-correction.                    3045200400020 
-ENDBIB              18          0                                 3045200400021 
-NOCOMMON             0          0                                 3045200400022 
-DATA                 2          1                                 3045200400023 
-DATA       DATA-ERR                                               3045200400024 
-MB         MB                                                     3045200400025 
- 5.4800E+01 1.9000E+00                                            3045200400026 
-ENDDATA              3          0                                 3045200400027 
-ENDSUBENT           26          0                                 3045200499999 
-SUBENT        30452005   20090311                             31353045200500001 
-BIB                  7         18                                 3045200500002 
+SAMPLE     0.127 mm thick, 19.00 mm diam., 99.9959% pure.         3045200400004 
+           The foils were held with thin (50 um) wire.            3045200400005 
+DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer                     3045200400006 
+           (FISCH) flux determination and profiling               3045200400007 
+METHOD     (ACTIV)                                                3045200400008 
+ERR-ANALYS (DATA-ERR) Error including                             3045200400009 
+            - statistics                                          3045200400010 
+            - absolute activity of reference sources              3045200400011 
+            - interpolation by the square least fit               3045200400012 
+            - gamma self-absorption and source size corrections   3045200400013 
+            - edge-correction                                     3045200400014 
+STATUS     (TABLE) Table 3 of Rev.Roum.Phys.23(1978)409           3045200400015 
+HISTORY    (20210611A) On. MONITOR deleted.                       3045200400016 
+ENDBIB              14          0                                 3045200400017 
+NOCOMMON             0          0                                 3045200400018 
+DATA                 2          1                                 3045200400019 
+DATA       DATA-ERR                                               3045200400020 
+MB         MB                                                     3045200400021 
+ 54.8       1.9                                                   3045200400022 
+ENDDATA              3          0                                 3045200400023 
+ENDSUBENT           22          0                                 3045200499999 
+SUBENT        30452005   20210611                             32013045200500001 
+BIB                  7         14                                 3045200500002 
 REACTION   (28-NI-58(N,P)27-CO-58,,SIG,,SPA)                      3045200500003 
-SAMPLE     99.981% purity foil, thickness of 0.254 mm,            3045200500004 
-           diameter 12.70 mm.                                     3045200500005 
-           The foils were held with thin(50 micron) wire.         3045200500006 
-DETECTOR   (GELI) 100 Cm3 Ge(Li) spectrometer coupled with a      3045200500007 
-           4096-multichannel analyzer.                            3045200500008 
-           Calibration was made with 2 reference source sets.     3045200500009 
-MONITOR    (92-U-238(N,F),,SIG) As fission chamber.               3045200500010 
-           (79-AU-197(N,G)79-AU-198,,SIG)                         3045200500011 
-PART-DET   (DG)                                                   3045200500012 
-STATUS     (TABLE) Data taken from Table III of                   3045200500013 
-                                          IAEA-208,vol.II,p.309.  3045200500014 
-ERR-ANALYS (DATA-ERR) The quoted error includes                   3045200500015 
-           .statistical errors,                                   3045200500016 
-           .errors attributed to the reference sources,           3045200500017 
-           .errors due to interpolation by the square least fit,  3045200500018 
-           .errors due to gamma self-absorption and size of source3045200500019 
-           .errors related to edge-correction.                    3045200500020 
-ENDBIB              18          0                                 3045200500021 
-NOCOMMON             0          0                                 3045200500022 
-DATA                 2          1                                 3045200500023 
-DATA       DATA-ERR                                               3045200500024 
-MB         MB                                                     3045200500025 
- 2.5320E+01 9.0000E-01                                            3045200500026 
-ENDDATA              3          0                                 3045200500027 
-ENDSUBENT           26          0                                 3045200599999 
-SUBENT        30452006   20090311                             31353045200600001 
-BIB                  7         19                                 3045200600002 
+SAMPLE     0.254 mm thick, 12.70 mm diam., 99.981% pure.          3045200500004 
+           The foils were held with thin (50 um) wire.            3045200500005 
+DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer                     3045200500006 
+           (FISCH) flux determination and profiling               3045200500007 
+METHOD     (ACTIV)                                                3045200500008 
+ERR-ANALYS (DATA-ERR) Error including                             3045200500009 
+            - statistics                                          3045200500010 
+            - absolute activity of reference sources              3045200500011 
+            - interpolation by the square least fit               3045200500012 
+            - gamma self-absorption and source size corrections   3045200500013 
+            - edge-correction                                     3045200500014 
+STATUS     (TABLE) Table 3 of Rev.Roum.Phys.23(1978)409           3045200500015 
+HISTORY    (20210611A) On. MONITOR deleted.                       3045200500016 
+ENDBIB              14          0                                 3045200500017 
+NOCOMMON             0          0                                 3045200500018 
+DATA                 2          1                                 3045200500019 
+DATA       DATA-ERR                                               3045200500020 
+MB         MB                                                     3045200500021 
+ 25.32      0.9                                                   3045200500022 
+ENDDATA              3          0                                 3045200500023 
+ENDSUBENT           22          0                                 3045200599999 
+SUBENT        30452006   20210611                             32013045200600001 
+BIB                  7         15                                 3045200600002 
 REACTION   (13-AL-27(N,A)11-NA-24,,SIG,,SPA)                      3045200600003 
-SAMPLE     99.994% purity foil, thickness of 0.762 mm,            3045200600004 
-           diameter 19.01 mm.                                     3045200600005 
-           The foils were held with thin(50 micron) wire.         3045200600006 
-DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer coupled with a      3045200600007 
-           4096-multichannel analyzer.                            3045200600008 
-           Calibration was made with 2 reference source sets.     3045200600009 
-MONITOR    (92-U-238(N,F),,SIG) as fission chamber.               3045200600010 
-           (79-AU-197(N,G)79-AU-198,,SIG)                         3045200600011 
-PART-DET   (DG)                                                   3045200600012 
-STATUS     (TABLE) Data taken from Table III of                   3045200600013 
-                                          IAEA-208,vol.II,p.309.  3045200600014 
-           (SPSDD,30568015)                                       3045200600015 
-ERR-ANALYS (DATA-ERR) The quoted error includes                   3045200600016 
-           .statistical errors,                                   3045200600017 
-           .errors attributed to the reference sources,           3045200600018 
-           .errors due to interpolation by the square least fit,  3045200600019 
-           .errors due to gamma self-absorption and size of source3045200600020 
-           .errors related to edge-correction.                    3045200600021 
-ENDBIB              19          0                                 3045200600022 
-NOCOMMON             0          0                                 3045200600023 
-NODATA               0          0                                 3045200600024 
+SAMPLE     0.762 mm thick, 19.01 mm diam., 99.994% pure.          3045200600004 
+           The foils were held with thin (50 um) wire.            3045200600005 
+DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer                     3045200600006 
+           (FISCH) flux determination and profiling               3045200600007 
+METHOD     (ACTIV)                                                3045200600008 
+ERR-ANALYS (DATA-ERR) Error including                             3045200600009 
+            - statistics                                          3045200600010 
+            - absolute activity of reference sources              3045200600011 
+            - interpolation by the square least fit               3045200600012 
+            - gamma self-absorption and source size corrections   3045200600013 
+            - edge-correction                                     3045200600014 
+STATUS     (TABLE) Table 3 of Rev.Roum.Phys.23(1978)409           3045200600015 
+           (COREL,30568015) second measurement                    3045200600016 
+HISTORY    (20210611A) On. STATUS: SPSDD->COREL. MONITOR deleted. 3045200600017 
+ENDBIB              15          0                                 3045200600018 
+NOCOMMON             0          0                                 3045200600019 
+DATA                 2          1                                 3045200600020 
+DATA       DATA-ERR                                               3045200600021 
+MB         MB                                                     3045200600022 
+ 0.158      0.07                                                  3045200600023 
+ENDDATA              3          0                                 3045200600024 
 ENDSUBENT           23          0                                 3045200699999 
-SUBENT        30452007   20090311                             31353045200700001 
-BIB                  7         19                                 3045200700002 
+SUBENT        30452007   20210611                             32013045200700001 
+BIB                  7         15                                 3045200700002 
 REACTION   (22-TI-46(N,P)21-SC-46,,SIG,,SPA)                      3045200700003 
-SAMPLE     99.729% purity foil, natural, thickness of 1.200mm,    3045200700004 
-           diameter 19.00 mm.                                     3045200700005 
-           The foils were held with thin(50 micron) wire.         3045200700006 
-DETECTOR   (GELI) 100 Cm3 Ge(Li) spectrometer coupled with a      3045200700007 
-           4096-multichannel analyzer.                            3045200700008 
-           Calibration was made with 2 reference source sets.     3045200700009 
-MONITOR    (92-U-238(N,F),,SIG) as fission chamber.               3045200700010 
-           (79-AU-197(N,G)79-AU-198,,SIG)                         3045200700011 
-PART-DET   (DG)                                                   3045200700012 
-STATUS     (TABLE) Data taken from Table III of                   3045200700013 
-                                          IAEA-208,vol.II,p.309.  3045200700014 
-           (SPSDD,30568010)                                       3045200700015 
-ERR-ANALYS (DATA-ERR) The quoted error includes                   3045200700016 
-           .statistical errors,                                   3045200700017 
-           .errors attributed to the reference sources,           3045200700018 
-           .errors due to interpolation by the square least fit,  3045200700019 
-           .errors due to gamma self-absorption and size of source3045200700020 
-           .errors related to edge-correction.                    3045200700021 
-ENDBIB              19          0                                 3045200700022 
-NOCOMMON             0          0                                 3045200700023 
-NODATA               0          0                                 3045200700024 
+SAMPLE     1.200 mm thick, 19.00 mm diam., 99.729% pure.          3045200700004 
+           The foils were held with thin (50 um) wire.            3045200700005 
+DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer                     3045200700006 
+           (FISCH) flux determination and profiling               3045200700007 
+METHOD     (ACTIV)                                                3045200700008 
+ERR-ANALYS (DATA-ERR) Error including                             3045200700009 
+            - statistics                                          3045200700010 
+            - absolute activity of reference sources              3045200700011 
+            - interpolation by the square least fit               3045200700012 
+            - gamma self-absorption and source size corrections   3045200700013 
+            - edge-correction                                     3045200700014 
+STATUS     (TABLE) Table 3 of Rev.Roum.Phys.23(1978)409           3045200700015 
+           (SPSDD,30568010) improved cross section                3045200700016 
+HISTORY    (20210611S) On. Deleted data restored.                 3045200700017 
+ENDBIB              15          0                                 3045200700018 
+NOCOMMON             0          0                                 3045200700019 
+DATA                 2          1                                 3045200700020 
+DATA       DATA-ERR                                               3045200700021 
+MB         MB                                                     3045200700022 
+ 2.30       0.2                                                   3045200700023 
+ENDDATA              3          0                                 3045200700024 
 ENDSUBENT           23          0                                 3045200799999 
-SUBENT        30452008   20090311                             31353045200800001 
-BIB                  7         19                                 3045200800002 
+SUBENT        30452008   20210611                             32013045200800001 
+BIB                  7         15                                 3045200800002 
 REACTION   (22-TI-47(N,P)21-SC-47,,SIG,,SPA)                      3045200800003 
-SAMPLE     99.729 Perc.Purity foil, natural, thickness of 1.200mm,3045200800004 
-           diameter 19.00 mm.                                     3045200800005 
-           The foils were held with thin(50 micron) wire.         3045200800006 
-DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer coupled with a      3045200800007 
-           4096-multichannel analyzer.                            3045200800008 
-           Calibration was made with 2 reference source sets.     3045200800009 
-MONITOR    (92-U-238(N,F),,SIG) as fission chamber.               3045200800010 
-           (79-AU-197(N,G)79-AU-198,,SIG)                         3045200800011 
-PART-DET   (DG)                                                   3045200800012 
-STATUS     (TABLE) Data taken from Table III of                   3045200800013 
-                                          IAEA-208,vol.II,p.309.  3045200800014 
-           (SPSDD,30568011)                                       3045200800015 
-ERR-ANALYS (DATA-ERR) The quoted error includes                   3045200800016 
-           .statistical errors,                                   3045200800017 
-           .errors attributed to the reference sources,           3045200800018 
-           .errors due to interpolation by the square least fit,  3045200800019 
-           .errors due to gamma self-absorption and size of source3045200800020 
-           .errors related to edge-correction.                    3045200800021 
-ENDBIB              19          0                                 3045200800022 
-NOCOMMON             0          0                                 3045200800023 
-NODATA               0          0                                 3045200800024 
+SAMPLE     1.200 mm thick, 19.00 mm diam., 99.729% pure.          3045200800004 
+           The foils were held with thin (50 um) wire.            3045200800005 
+DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer                     3045200800006 
+           (FISCH) flux determination and profiling               3045200800007 
+METHOD     (ACTIV)                                                3045200800008 
+ERR-ANALYS (DATA-ERR) Error including                             3045200800009 
+            - statistics                                          3045200800010 
+            - absolute activity of reference sources              3045200800011 
+            - interpolation by the square least fit               3045200800012 
+            - gamma self-absorption and source size corrections   3045200800013 
+            - edge-correction                                     3045200800014 
+STATUS     (TABLE) Table 3 of Rev.Roum.Phys.23(1978)409           3045200800015 
+           (SPSDD,30568011) improved cross section                3045200800016 
+HISTORY    (20210611S) On. Deleted data restored.                 3045200800017 
+ENDBIB              15          0                                 3045200800018 
+NOCOMMON             0          0                                 3045200800019 
+DATA                 2          1                                 3045200800020 
+DATA       DATA-ERR                                               3045200800021 
+MB         MB                                                     3045200800022 
+ 5.00       0.5                                                   3045200800023 
+ENDDATA              3          0                                 3045200800024 
 ENDSUBENT           23          0                                 3045200899999 
-SUBENT        30452009   20090311                             31353045200900001 
-BIB                  7         19                                 3045200900002 
+SUBENT        30452009   20210611                             32013045200900001 
+BIB                  7         15                                 3045200900002 
 REACTION   (22-TI-48(N,P)21-SC-48,,SIG,,SPA)                      3045200900003 
-SAMPLE     99.729% purity foil, natural, thickness of 1.200mm,    3045200900004 
-           diameter 19.00 mm.                                     3045200900005 
-           The foils were held with thin(50 micron) wire.         3045200900006 
-DETECTOR   (GELI) 100 Cm3 Ge(Li) spectrometer coupled with a      3045200900007 
-           4096-multichannel analyzer.                            3045200900008 
-           Calibration was made with 2 reference source sets.     3045200900009 
-MONITOR    (92-U-238(N,F),,SIG) as fission chamber.               3045200900010 
-           (79-AU-197(N,G)79-AU-198,,SIG)                         3045200900011 
-PART-DET   (DG)                                                   3045200900012 
-STATUS     (TABLE) Data taken from Table III of                   3045200900013 
-                                          IAEA-208,vol.II,p.309.  3045200900014 
-           (SPSDD,30568012)                                       3045200900015 
-ERR-ANALYS (DATA-ERR) The quoted error includes                   3045200900016 
-           .statistical errors,                                   3045200900017 
-           .errors attributed to the reference sources,           3045200900018 
-           .errors due to interpolation by the square least fit,  3045200900019 
-           .errors due to gamma self-absorption and size of source3045200900020 
-           .errors related to edge-correction.                    3045200900021 
-ENDBIB              19          0                                 3045200900022 
-NOCOMMON             0          0                                 3045200900023 
-NODATA               0          0                                 3045200900024 
+SAMPLE     1.200 mm thick, 19.00 mm diam., 99.729% pure.          3045200900004 
+           The foils were held with thin (50 um) wire.            3045200900005 
+DETECTOR   (GELI) 100 cm3 Ge(Li) spectrometer                     3045200900006 
+           (FISCH) flux determination and profiling               3045200900007 
+METHOD     (ACTIV)                                                3045200900008 
+ERR-ANALYS (DATA-ERR) Error including                             3045200900009 
+            - statistics                                          3045200900010 
+            - absolute activity of reference sources              3045200900011 
+            - interpolation by the square least fit               3045200900012 
+            - gamma self-absorption and source size corrections   3045200900013 
+            - edge-correction                                     3045200900014 
+STATUS     (TABLE) Table 3 of Rev.Roum.Phys.23(1978)409           3045200900015 
+           (SPSDD,30568012) improved cross section                3045200900016 
+HISTORY    (20210611S) On. Deleted data restored.                 3045200900017 
+ENDBIB              15          0                                 3045200900018 
+NOCOMMON             0          0                                 3045200900019 
+DATA                 2          1                                 3045200900020 
+DATA       DATA-ERR                                               3045200900021 
+MB         MB                                                     3045200900022 
+ 0.062      0.006                                                 3045200900023 
+ENDDATA              3          0                                 3045200900024 
 ENDSUBENT           23          0                                 3045200999999 
-SUBENT        30452010   20090311                             31353045201000001 
-BIB                  9         20                                 3045201000002 
+SUBENT        30452010   20210611                             32013045201000001 
+BIB                  7         17                                 3045201000002 
 REACTION   (92-U-235(N,F),,SIG,,SPA)                              3045201000003 
-SAMPLE     99.89% (U-235),0.02% (U-234),0.04% U-236),             3045201000004 
-           0.07% (U-238).  50.34 micro-g/cm2.                     3045201000005 
-METHOD     Measurement of average fission cross-section by the    3045201000006 
-           fission chamber. 1mm cadmium screen was used to stop   3045201000007 
-           thermal neutrons.                                      3045201000008 
-DETECTOR   (FISCH) Saclay-type fission chamber, calibrated in     3045201000009 
-           standard neutron spectra.                              3045201000010 
-MONITOR    (92-U-238(N,F),,SIG,,SPA)                              3045201000011 
-            Monitors were two fission chambers,4mm diameter,      3045201000012 
-            containing depleted uranium deposit.                  3045201000013 
-PART-DET   (FF)                                                   3045201000014 
-STATUS     (TABLE) Data taken from Table III of                   3045201000015 
-                                          IAEA-208,vol.II,p.309.  3045201000016 
-CORRECTION Impurity corrections calculated and others.            3045201000017 
-ERR-ANALYS (ERR-T) The quoted error includes,                     3045201000018 
-           (ERR-S) statistical errors about 0.5%,                 3045201000019 
-           .calibration errors,                                   3045201000020 
-           .run-to-run monitor level errors                       3045201000021 
-           .error related to correction application.              3045201000022 
-ENDBIB              20          0                                 3045201000023 
-NOCOMMON             0          0                                 3045201000024 
-DATA                 3          1                                 3045201000025 
-DATA       ERR-T      ERR-S                                       3045201000026 
-MB         MB         PER-CENT                                    3045201000027 
- 1.5120E+03 5.3000E+01  0.5                                       3045201000028 
-ENDDATA              3          0                                 3045201000029 
-ENDSUBENT           28          0                                 3045201099999 
-SUBENT        30452011   20160210                             317330452 11    1 
-BIB                 10         23                                 30452 11    2 
-REACTION  1(94-PU-239(N,F),,SIG,,SPA)                             30452 11    3 
-          2((94-PU-239(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA)) 30452 11    4 
-SAMPLE     (94-PU-239,ENR=0.9988) 99.88% (Pu-239),0.12% (Pu-240). 30452 11    5 
-                                   53.13 micro-g/cm2.             30452 11    6 
-METHOD     Measurement of average fission cross-section by the    30452 11    7 
-           fission chamber. 1mm cadmium screen was used to stop   30452 11    8 
-           thermal neutrons.                                      30452 11    9 
-DETECTOR   (FISCH) Saclay-type fission chamber, calibrated in     30452 11   10 
-           standard neutron spectra.                              30452 11   11 
-MONITOR   1(92-U-238(N,F),,SIG,,SPA)                              30452 11   12 
-            Monitors were two fission chambers,4mm diameter,      30452 11   13 
-            containing depleted uranium deposit.                  30452 11   14 
-PART-DET   (FF)                                                   30452 11   15 
-STATUS     (TABLE) Data taken from Table III of                   30452 11   16 
-                                          IAEA-208,vol.II,p.309.  30452 11   17 
-            Cross section ratio from Table 4 of J,RRP,23,409,1978 30452 11   18 
-CORRECTION Impurity corrections calculated and others.            30452 11   19 
-ERR-ANALYS (ERR-T) The quoted error includes,                     30452 11   20 
-           (ERR-S) statistical errors about 0.5%,                 30452 11   21 
-           .calibration errors,                                   30452 11   22 
-           .run-to-run monitor level errors                       30452 11   23 
-           .error related to correction application.              30452 11   24 
-HISTORY    (20160210A) VS. Cross section ratio added.             30452 11   25 
-ENDBIB              23          0                                 30452 11   26 
-NOCOMMON             0          0                                 30452 11   27 
-DATA                 5          1                                 30452 11   28 
-DATA      1ERR-T     1ERR-S     1DATA      2ERR-T     2           30452 11   29 
-MB         MB         PER-CENT   NO-DIM     PER-CENT              30452 11   30 
- 1.7800E+03 6.2000E+01    0.5     1.177        2.5                30452 11   31 
-ENDDATA              3          0                                 30452 11   32 
-ENDSUBENT           31          0                                 30452 1199999 
-SUBENT        30452012   20160210                             317330452 12    1 
-BIB                 10         22                                 30452 12    2 
-REACTION  1(93-NP-237(N,F),,SIG,,SPA)                             30452 12    3 
-          2((93-NP-237(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA)) 30452 12    4 
-SAMPLE     About 100% (Np-237),0.4 ppm(Pu-239). 48.7micro-g/cm2   30452 12    5 
-METHOD     Measurement of average fission cross-section by the    30452 12    6 
-           fission chamber. 1mm cadmium screen was used to stop   30452 12    7 
-           thermal neutrons.                                      30452 12    8 
-DETECTOR   (FISCH) Saclay-type fission chamber, calibrated in     30452 12    9 
-           standard neutron spectra.                              30452 12   10 
-MONITOR   1(92-U-238(N,F),,SIG,,SPA)                              30452 12   11 
-            Monitors were two fission chambers,4mm diameter,      30452 12   12 
-            containing depleted uranium deposit.                  30452 12   13 
-PART-DET   (FF)                                                   30452 12   14 
-STATUS     (TABLE) Data taken from Table III of                   30452 12   15 
-                                          IAEA-208,vol.II,p.309.  30452 12   16 
-            Cross section ratio from Table 4 of J,RRP,23,409,1978 30452 12   17 
-CORRECTION Impurity corrections calculated and others.            30452 12   18 
-ERR-ANALYS (ERR-T) The quoted error includes,                     30452 12   19 
-           (ERR-S) statistical errors about 0.5%,                 30452 12   20 
-           .calibration errors,                                   30452 12   21 
-           .run-to-run monitor level errors                       30452 12   22 
-           .error related to correction application.              30452 12   23 
-HISTORY    (20160210A) VS. Cross section ratio added.             30452 12   24 
-ENDBIB              22          0                                 30452 12   25 
-NOCOMMON             0          0                                 30452 12   26 
-DATA                 5          1                                 30452 12   27 
-DATA      1ERR-T     1ERR-S     1DATA      2ERR-T     2           30452 12   28 
-MB         MB         PER-CENT   NO-DIM     PER-CENT              30452 12   29 
- 6.0300E+02 2.2000E+01   0.5       0.399      3.                  30452 12   30 
-ENDDATA              3          0                                 30452 12   31 
-ENDSUBENT           30          0                                 30452 1299999 
-SUBENT        30452013   20160210                             317330452 13    1 
-BIB                 10         23                                 30452 13    2 
-REACTION  1(92-U-238(N,F),,SIG,,SPA)                              30452 13    3 
-          2((92-U-238(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA))  30452 13    4 
-SAMPLE     (92-U-238,ENR=1.) About 100% (U-238), 200ppm(U-235)    30452 13    5 
-           two depleted U-238 samples, 47.30  and 39.50micro-g/cm230452 13    6 
-METHOD     Measurement of average fission cross-section by the    30452 13    7 
-           fission chamber. 1mm cadmium screen was used to stop   30452 13    8 
-           thermal neutrons.                                      30452 13    9 
-DETECTOR   (FISCH) Saclay-type fission chamber, calibrated in     30452 13   10 
-           standard neutron spectra.                              30452 13   11 
-MONITOR   1(92-U-238(N,F),,SIG,,SPA)                              30452 13   12 
-            Monitors were two fission chambers,4mm diameter,      30452 13   13 
-            containing depleted uranium deposit.                  30452 13   14 
-PART-DET   (FF)                                                   30452 13   15 
-STATUS     (TABLE) Data taken from Table III of                   30452 13   16 
-                                          IAEA-208,vol.II,p.309.  30452 13   17 
-            Cross section ratio from Table 4 of J,RRP,23,409,1978 30452 13   18 
-CORRECTION Impurity corrections calculated and others.            30452 13   19 
-ERR-ANALYS (ERR-T) The quoted error includes,                     30452 13   20 
-           (ERR-S) statistical errors about 0.5%,                 30452 13   21 
-           .calibration errors,                                   30452 13   22 
-           .run-to-run monitor level errors                       30452 13   23 
-           .error related to correction application.              30452 13   24 
-HISTORY    (20160210A) VS. Cross section ratio added.             30452 13   25 
-ENDBIB              23          0                                 30452 13   26 
-NOCOMMON             0          0                                 30452 13   27 
-DATA                 5          1                                 30452 13   28 
-DATA      1ERR-T     1ERR-S     1DATA      2ERR-T     2           30452 13   29 
-MB         MB         PER-CENT   NO-DIM     PER-CENT              30452 13   30 
- 8.3460E+01 3.3000E+00  0.5       0.0552       2.5                30452 13   31 
-ENDDATA              3          0                                 30452 13   32 
-ENDSUBENT           31          0                                 30452 1399999 
-SUBENT        30452014   20160210                             317330452 14    1 
-BIB                 10         23                                 30452 14    2 
-REACTION  1(92-U-233(N,F),,SIG,,SPA)                              30452 14    3 
-          2((92-U-233(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA))  30452 14    4 
-SAMPLE     (92-U-233,ENR=0.9944) 99.44% (U-233),0.522% (U-234),   30452 14    5 
-           0.016% (U-235), 0.018% (U-238).  135.70 micro-g/cm2.   30452 14    6 
-METHOD     Measurement of average fission cross-section by the    30452 14    7 
-           fission chamber. 1mm cadmium screen was used to stop   30452 14    8 
-           thermal neutrons.                                      30452 14    9 
-DETECTOR   (FISCH) Saclay-type fission chamber, calibrated in     30452 14   10 
-           standard neutron spectra.                              30452 14   11 
-MONITOR   1(92-U-238(N,F),,SIG,,SPA)                              30452 14   12 
-            Monitors were two fission chambers,4mm diameter,      30452 14   13 
-            containing depleted uranium deposit.                  30452 14   14 
-PART-DET   (FF)                                                   30452 14   15 
-STATUS     (TABLE) Data taken from Table III of                   30452 14   16 
-                                          IAEA-208,vol.II,p.309.  30452 14   17 
-            Cross section ratio from Table 4 of J,RRP,23,409,1978 30452 14   18 
-CORRECTION Impurity corrections calculated and others.            30452 14   19 
-ERR-ANALYS (ERR-T) The quoted error includes,                     30452 14   20 
-           (ERR-S) statistical errors about 0.5%,                 30452 14   21 
-           .calibration errors,                                   30452 14   22 
-           .run-to-run monitor level errors                       30452 14   23 
-           .error related to correction application.              30452 14   24 
-HISTORY    (20160210A) VS. Cross section ratio added.             30452 14   25 
-ENDBIB              23          0                                 30452 14   26 
-NOCOMMON             0          0                                 30452 14   27 
-DATA                 5          1                                 30452 14   28 
-DATA      1ERR-T     1ERR-S     1DATA      2ERR-T     2           30452 14   29 
-MB         MB         PER-CENT   NO-DIM     PER-CENT              30452 14   30 
- 2.3250E+03 9.3000E+01  0.5         1.538      2.5                30452 14   31 
-ENDDATA              3          0                                 30452 14   32 
-ENDSUBENT           31          0                                 30452 1499999 
-SUBENT        30452015   20160210                             317330452 15    1 
-BIB                 10         23                                 30452 15    2 
-REACTION  1(94-PU-241(N,F),,SIG,,SPA)                             30452 15    3 
-          2((94-PU-241(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA)) 30452 15    4 
-SAMPLE     (94-PU-241,ENR=0.9855) 98.55% (Pu-241).                30452 15    5 
-                                  104.30 micro-g/cm2.             30452 15    6 
-METHOD     Measurement of average fission cross-section by the    30452 15    7 
-           fission chamber. 1mm cadmium screen was used to stop   30452 15    8 
-           thermal neutrons.                                      30452 15    9 
-DETECTOR   (FISCH) Saclay-type fission chamber, calibrated in     30452 15   10 
-           standard neutron spectra.                              30452 15   11 
-MONITOR   1(92-U-238(N,F),,SIG,,SPA)                              30452 15   12 
-            Monitors were two fission chambers,4mm diameter,      30452 15   13 
-            containing depleted uranium deposit.                  30452 15   14 
-PART-DET   (FF)                                                   30452 15   15 
-STATUS     (TABLE) Data taken from Table III of                   30452 15   16 
-                                          IAEA-208,vol.II,p.309.  30452 15   17 
-            Cross section ratio from Table 4 of J,RRP,23,409,1978 30452 15   18 
-CORRECTION Impurity corrections calculated and others.            30452 15   19 
-ERR-ANALYS (ERR-T) The quoted error includes,                     30452 15   20 
-           (ERR-S) statistical errors about 0.5%,                 30452 15   21 
-           .calibration errors,                                   30452 15   22 
-           .run-to-run monitor level errors                       30452 15   23 
-           .error related to correction application.              30452 15   24 
-HISTORY    (20160210A) VS. Cross section ratio added.             30452 15   25 
-ENDBIB              23          0                                 30452 15   26 
-NOCOMMON             0          0                                 30452 15   27 
-DATA                 5          1                                 30452 15   28 
-DATA      1ERR-T     1ERR-S     1DATA      2ERR-T     2           30452 15   29 
-MB         MB         PER-CENT   NO-DIM     PER-CENT              30452 15   30 
- 2.0260E+03 8.1000E+01  0.5        1.340      2.5                 30452 15   31 
-ENDDATA              3          0                                 30452 15   32 
-ENDSUBENT           31          0                                 30452 1599999 
-SUBENT        30452016   20160210                             317330452 16    1 
-BIB                 10         23                                 30452 16    2 
-REACTION  1(90-TH-232(N,F),,SIG,,SPA)                             30452 16    3 
-          2((90-TH-232(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA)) 30452 16    4 
-SAMPLE     (90-TH-232,ENR=1.) About 100%(Th-232),                 30452 16    5 
-           less than 0.16%(natural U) 130.35 micro-g/cm2          30452 16    6 
-METHOD     Measurement of average fission cross-section by the    30452 16    7 
-           fission chamber. 1mm cadmium screen was used to stop   30452 16    8 
-           thermal neutrons.                                      30452 16    9 
-DETECTOR   (FISCH) Saclay-type fission chamber, calibrated in     30452 16   10 
-           standard neutron spectra.                              30452 16   11 
-MONITOR   1(92-U-238(N,F),,SIG,,SPA)                              30452 16   12 
-            Monitors were two fission chambers,4mm diameter,      30452 16   13 
-            containing depleted uranium deposit.                  30452 16   14 
-PART-DET   (FF)                                                   30452 16   15 
-STATUS     (TABLE) Data taken from Table III of                   30452 16   16 
-                                        IAEA-208,vol.II,p.309.    30452 16   17 
-            Cross section ratio from Table 4 of J,RRP,23,409,1978 30452 16   18 
-CORRECTION Impurity corrections calculated and others.            30452 16   19 
-ERR-ANALYS (ERR-T) The quoted error includes,                     30452 16   20 
-           (ERR-S) statistical errors about 0.5%,                 30452 16   21 
-           .calibration errors,                                   30452 16   22 
-           .run-to-run monitor level errors                       30452 16   23 
-           .error related to correction application.              30452 16   24 
-HISTORY    (20160210A) VS. Cross section ratio added.             30452 16   25 
-ENDBIB              23          0                                 30452 16   26 
-NOCOMMON             0          0                                 30452 16   27 
-DATA                 5          1                                 30452 16   28 
-DATA      1ERR-T     1ERR-S     1DATA      2ERR-T     2           30452 16   29 
-MB         MB         PER-CENT   NO-DIM     PER-CENT              30452 16   30 
- 1.9800E+01 1.2000E+00  0.5        0.0131       7.                30452 16   31 
-ENDDATA              3          0                                 30452 16   32 
-ENDSUBENT           31          0                                 30452 1699999 
+SAMPLE     20 mm outer diam. 5.5 mm thick. 15 mm diam. of deposit.3045201000004 
+           Total mass 89.10 ug +/-1.6%                            3045201000005 
+           (92-U-235,ENR=0.9989)                                  3045201000006 
+           (92-U-234,ENR=0.0002)                                  3045201000007 
+           (92-U-236,ENR=0.0004)                                  3045201000008 
+           (92-U-238,ENR=0.0007)                                  3045201000009 
+DETECTOR   (FISCH) Saclay-type fission chamber calibrated in      3045201000010 
+            standard neutron spectra                              3045201000011 
+CORRECTION Corrected for sample impurity                          3045201000012 
+ERR-ANALYS (ERR-T) Quoted error including                         3045201000013 
+                   - run-to-run monitor level                     3045201000014 
+                   - applied corrections                          3045201000015 
+           (ERR-1) - fission chamber calibration (1.6%)           3045201000016 
+           (ERR-S) - statistical error     (about 0.5%)           3045201000017 
+STATUS     (TABLE) Table 3 of Rev.Roum.Phys.23(1978)409           3045201000018 
+HISTORY    (20210611A) On. ERR-1 added.                           3045201000019 
+ENDBIB              17          0                                 3045201000020 
+NOCOMMON             0          0                                 3045201000021 
+DATA                 4          1                                 3045201000022 
+DATA       ERR-T      ERR-1      ERR-S                            3045201000023 
+MB         MB         PER-CENT   PER-CENT                         3045201000024 
+ 1512.      53.        1.6        0.5                             3045201000025 
+ENDDATA              3          0                                 3045201000026 
+ENDSUBENT           25          0                                 3045201099999 
+SUBENT        30452011   20210611                             32013045201100001 
+BIB                  8         23                                 3045201100002 
+REACTION  1(94-PU-239(N,F),,SIG,,SPA)                             3045201100003 
+          2((94-PU-239(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA)) 3045201100004 
+SAMPLE     20 mm outer diam. 5.5 mm thick. 15 mm diam. of deposit.3045201100005 
+           Total mass 94.04 ug +/-1.8%                            3045201100006 
+           (94-PU-239,ENR=0.9988)                                 3045201100007 
+           (94-PU-240,ENR=0.0012)                                 3045201100008 
+DETECTOR   (FISCH) Saclay-type fission chamber calibrated in      3045201100009 
+            standard neutron spectra                              3045201100010 
+CORRECTION Corrected for sample impurity                          3045201100011 
+COMMENT    By compiler (2021-06-11):                              3045201100012 
+            I.Garlea et al., Rev.Roum.Phys.26(1981)643 mentions   3045201100013 
+            the cross section was obtained taking into account    3045201100014 
+            the reference value of 235U(n,f) cross section.       3045201100015 
+ERR-ANALYS1(ERR-T) Quoted error including                         3045201100016 
+                   - run-to-run monitor level                     3045201100017 
+                   - applied corrections                          3045201100018 
+           (ERR-1) - fission chamber calibration (1.8%)           3045201100019 
+           (ERR-S) - statistical error     (about 0.5%)           3045201100020 
+          2(DATA-ERR) No information on the source of uncertainty 3045201100021 
+STATUS     (TABLE) Tables 3+4 of Rev.Roum.Phys.23(1978)409        3045201100022 
+           (DEP,30452010) 235U(n,f) reference cross section       3045201100023 
+HISTORY    (20160210A) VS. Cross section ratio added.             3045201100024 
+           (20210611A) On. ERR-1 added.                           3045201100025 
+ENDBIB              23          0                                 3045201100026 
+NOCOMMON             0          0                                 3045201100027 
+DATA                 6          1                                 3045201100028 
+DATA      1ERR-T     1ERR-1     1ERR-S     1DATA      2DATA-ERR  23045201100029 
+MB         MB         PER-CENT   PER-CENT   NO-DIM     PER-CENT   3045201100030 
+ 1780.      62.        1.8        0.5        1.177      2.5       3045201100031 
+ENDDATA              3          0                                 3045201100032 
+ENDSUBENT           31          0                                 3045201199999 
+SUBENT        30452012   20210611                             32013045201200001 
+BIB                  8         21                                 3045201200002 
+REACTION  1(93-NP-237(N,F),,SIG,,SPA)                             3045201200003 
+          2((93-NP-237(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA)) 3045201200004 
+SAMPLE     20 mm outer diam. 5.5 mm thick. 15 mm diam. of deposit.3045201200005 
+           Total mass 86.06 ug +/-2.4%                            3045201200006 
+DETECTOR   (FISCH) Saclay-type fission chamber calibrated in      3045201200007 
+            standard neutron spectra                              3045201200008 
+CORRECTION Corrected for sample impurity                          3045201200009 
+COMMENT    By compiler (2021-06-11):                              3045201200010 
+            I.Garlea et al., Rev.Roum.Phys.26(1981)643 mentions   3045201200011 
+            the cross section was obtained taking into account    3045201200012 
+            the reference value of 235U(n,f) cross section.       3045201200013 
+ERR-ANALYS1(ERR-T) Quoted error including                         3045201200014 
+                   - run-to-run monitor level                     3045201200015 
+                   - applied corrections                          3045201200016 
+           (ERR-1) - fission chamber calibration (2.4%)           3045201200017 
+           (ERR-S) - statistical error     (about 0.5%)           3045201200018 
+          2(DATA-ERR) No information on the source of uncertainty 3045201200019 
+STATUS     (TABLE) Tables 3+4 of Rev.Roum.Phys.23(1978)409        3045201200020 
+           (DEP,30452010) 235U(n,f) reference cross section       3045201200021 
+HISTORY    (20160210A) VS. Cross section ratio added.             3045201200022 
+           (20210611A) On. ERR-1 added.                           3045201200023 
+ENDBIB              21          0                                 3045201200024 
+NOCOMMON             0          0                                 3045201200025 
+DATA                 6          1                                 3045201200026 
+DATA      1ERR-T     1ERR-1     1ERR-S     1DATA      2DATA-ERR  23045201200027 
+MB         MB         PER-CENT   PER-CENT   NO-DIM     PER-CENT   3045201200028 
+ 603.       22.        2.4        0.5        0.399      3.        3045201200029 
+ENDDATA              3          0                                 3045201200030 
+ENDSUBENT           29          0                                 3045201299999 
+SUBENT        30452013   20210611                             32013045201300001 
+BIB                  8         20                                 3045201300002 
+REACTION  1(92-U-238(N,F),,SIG,,SPA)                              3045201300003 
+          2((92-U-238(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA))  3045201300004 
+SAMPLE     20 mm outer diam. 5.5 mm thick. 15 mm diam. of deposit.3045201300005 
+           Total mass 83.54 ug +/-3.0% and 69.86 ug+/-2.4%        3045201300006 
+DETECTOR   (FISCH) Saclay-type fission chamber calibrated in      3045201300007 
+            standard neutron spectra                              3045201300008 
+CORRECTION Corrected for sample impurity                          3045201300009 
+COMMENT    By compiler (2021-06-11):                              3045201300010 
+            I.Garlea et al., Rev.Roum.Phys.26(1981)643 mentions   3045201300011 
+            the cross section was obtained taking into account    3045201300012 
+            the reference value of 235U(n,f) cross section.       3045201300013 
+ERR-ANALYS1(ERR-T) Quoted error including                         3045201300014 
+                   - run-to-run monitor level                     3045201300015 
+                   - applied corrections                          3045201300016 
+                   - fission chamber calibration                  3045201300017 
+           (ERR-S) - statistical error     (about 0.5%)           3045201300018 
+          2(DATA-ERR) No information on the source of uncertainty 3045201300019 
+STATUS     (TABLE) Tables 3+4 of Rev.Roum.Phys.23(1978)409        3045201300020 
+           (DEP,30452010) 235U(n,f) reference cross section       3045201300021 
+HISTORY    (20160210A) VS. Cross section ratio added.             3045201300022 
+ENDBIB              20          0                                 3045201300023 
+NOCOMMON             0          0                                 3045201300024 
+DATA                 5          1                                 3045201300025 
+DATA      1ERR-T     1ERR-S     1DATA      2DATA-ERR  2           3045201300026 
+MB         MB         PER-CENT   NO-DIM     PER-CENT              3045201300027 
+ 83.46      3.3        0.5        0.0552     2.5                  3045201300028 
+ENDDATA              3          0                                 3045201300029 
+ENDSUBENT           28          0                                 3045201399999 
+SUBENT        30452014   20210611                             32013045201400001 
+BIB                  8         24                                 3045201400002 
+REACTION  1(92-U-233(N,F),,SIG,,SPA)                              3045201400003 
+          2((92-U-233(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA))  3045201400004 
+SAMPLE     12 mm outer diam. 5.5 mm thick. 8 mm diam. of deposit. 3045201400005 
+           Total mass 68.62 ug +/-1.8%                            3045201400006 
+           (92-U-233,ENR=0.9944)                                  3045201400007 
+           (92-U-234,ENR=0.00522)                                 3045201400008 
+           (92-U-235,ENR=0.00016)                                 3045201400009 
+DETECTOR   (FISCH) Saclay-type fission chamber calibrated in      3045201400010 
+            standard neutron spectra                              3045201400011 
+CORRECTION Corrected for sample impurity                          3045201400012 
+COMMENT    By compiler (2021-06-11):                              3045201400013 
+            I.Garlea et al., Rev.Roum.Phys.26(1981)643 mentions   3045201400014 
+            the cross section was obtained taking into account    3045201400015 
+            the reference value of 235U(n,f) cross section.       3045201400016 
+ERR-ANALYS1(ERR-T) Quoted error including                         3045201400017 
+                   - run-to-run monitor level                     3045201400018 
+                   - applied corrections                          3045201400019 
+           (ERR-1) - fission chamber calibration (1.8%)           3045201400020 
+           (ERR-S) - statistical error     (about 0.5%)           3045201400021 
+          2(DATA-ERR) No information on the source of uncertainty 3045201400022 
+STATUS     (TABLE) Tables 3+4 of Rev.Roum.Phys.23(1978)409        3045201400023 
+           (DEP,30452010) 235U(n,f) reference cross section       3045201400024 
+HISTORY    (20160210A) VS. Cross section ratio added.             3045201400025 
+           (20210611A) On. ERR-1 added.                           3045201400026 
+ENDBIB              24          0                                 3045201400027 
+NOCOMMON             0          0                                 3045201400028 
+DATA                 6          1                                 3045201400029 
+DATA      1ERR-T     1ERR-1     1ERR-S     1DATA      2DATA-ERR  23045201400030 
+MB         MB         PER-CENT   PER-CENT   NO-DIM     PER-CENT   3045201400031 
+ 2325.      93.        1.8        0.5        1.538      2.5       3045201400032 
+ENDDATA              3          0                                 3045201400033 
+ENDSUBENT           32          0                                 3045201499999 
+SUBENT        30452015   20210611                             32013045201500001 
+BIB                  8         25                                 3045201500002 
+REACTION  1(94-PU-241(N,F),,SIG,,SPA)                             3045201500003 
+          2((94-PU-241(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA)) 3045201500004 
+SAMPLE     12 mm outer diam. 5.5 mm thick. 8 mm diam. of deposit. 3045201500005 
+           Total mass 53.19 ug +/-1.9%                            3045201500006 
+           (94-PU-241,ENR=0.9855)                                 3045201500007 
+           (92-U-238,ENR=0.0018)                                  3045201500008 
+DETECTOR   (FISCH) Saclay-type fission chamber calibrated in      3045201500009 
+            standard neutron spectra                              3045201500010 
+CORRECTION Corrected for sample impurity                          3045201500011 
+COMMENT    By compiler (2021-06-11):                              3045201500012 
+            I.Garlea et al., Rev.Roum.Phys.26(1981)643 mentions   3045201500013 
+            the cross section was obtained taking into account    3045201500014 
+            the reference value of 235U(n,f) cross section.       3045201500015 
+ERR-ANALYS1(ERR-T) Quoted error including                         3045201500016 
+                   - run-to-run monitor level                     3045201500017 
+                   - applied corrections                          3045201500018 
+           (ERR-1) - fission chamber calibration (1.9%)           3045201500019 
+           (ERR-S) - statistical error     (about 0.5%)           3045201500020 
+          2(DATA-ERR) No information on the source of uncertainty 3045201500021 
+STATUS     (TABLE) Tables 3+4 of Rev.Roum.Phys.23(1978)409.       3045201500022 
+            Table 2 of Rev.Roum.Phys.26(1981)643 gives            3045201500023 
+            2025.00+/-81.0 mb.                                    3045201500024 
+           (DEP,30452010) 235U(n,f) reference cross section       3045201500025 
+HISTORY    (20160210A) VS. Cross section ratio added.             3045201500026 
+           (20210611A) On. ERR-1 added.                           3045201500027 
+ENDBIB              25          0                                 3045201500028 
+NOCOMMON             0          0                                 3045201500029 
+DATA                 6          1                                 3045201500030 
+DATA      1ERR-T     1ERR-1     1ERR-S     1DATA      2DATA-ERR  23045201500031 
+MB         MB         PER-CENT   PER-CENT   NO-DIM     PER-CENT   3045201500032 
+ 2026.      81.        1.9        0.5        1.340      2.5       3045201500033 
+ENDDATA              3          0                                 3045201500034 
+ENDSUBENT           33          0                                 3045201599999 
+SUBENT        30452016   20210611                             32013045201600001 
+BIB                  8         21                                 3045201600002 
+REACTION  1(90-TH-232(N,F),,SIG,,SPA)                             3045201600003 
+          2((90-TH-232(N,F),,SIG,,SPA)/(92-U-235(N,F),,SIG,,SPA)) 3045201600004 
+SAMPLE     12 mm outer diam. 5.5 mm thick. 8 mm diam. of deposit. 3045201600005 
+           Total mass 65.49 ug +/-3.5%                            3045201600006 
+DETECTOR   (FISCH) Saclay-type fission chamber calibrated in      3045201600007 
+            standard neutron spectra                              3045201600008 
+CORRECTION Corrected for sample impurity                          3045201600009 
+COMMENT    By compiler (2021-06-11):                              3045201600010 
+            I.Garlea et al., Rev.Roum.Phys.26(1981)643 mentions   3045201600011 
+            the cross section was obtained taking into account    3045201600012 
+            the reference value of 235U(n,f) cross section.       3045201600013 
+ERR-ANALYS1(ERR-T) Quoted error including                         3045201600014 
+                   - run-to-run monitor level                     3045201600015 
+                   - applied corrections                          3045201600016 
+           (ERR-1) - fission chamber calibration (3.5%)           3045201600017 
+           (ERR-S) - statistical error     (about 0.5%)           3045201600018 
+          2(DATA-ERR) No information on the source of uncertainty 3045201600019 
+STATUS     (TABLE) Tables 3+4 of Rev.Roum.Phys.23(1978)409        3045201600020 
+           (DEP,30452010) 235U(n,f) reference cross section       3045201600021 
+HISTORY    (20160210A) VS. Cross section ratio added.             3045201600022 
+           (20210611A) On. ERR-1 added.                           3045201600023 
+ENDBIB              21          0                                 3045201600024 
+NOCOMMON             0          0                                 3045201600025 
+DATA                 6          1                                 3045201600026 
+DATA      1ERR-T     1ERR-1     1ERR-S     1DATA      2DATA-ERR  23045201600027 
+MB         MB         PER-CENT   PER-CENT   NO-DIM     PER-CENT   3045201600028 
+ 19.8       1.2        3.5        0.5        0.0131     7.        3045201600029 
+ENDDATA              3          0                                 3045201600030 
+ENDSUBENT           29          0                                 3045201699999 
 ENDENTRY            16          0                                 3045299999999 
