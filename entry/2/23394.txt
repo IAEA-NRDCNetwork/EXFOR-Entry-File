@@ -1,8 +1,8 @@
-ENTRY            23394   20190831                             228223394  0    1 
-SUBENT        23394001   20190831                             228223394  1    1 
-BIB                 16         57                                 23394  1    2 
+ENTRY            23394   20220218                             231023394  0    1 
+SUBENT        23394001   20220218                             231023394  1    1 
+BIB                 16         58                                 23394  1    2 
 TITLE       Precise measurement of the thermal and stellar        23394  1    3 
-           54Fe(n,gamma) cross sections via accelerator mass      23394  1    4 
+           Fe54(n,g)Fe55 cross sections via accelerator mass      23394  1    4 
            spectrometry                                           23394  1    5 
 REFERENCE  (J,PR/C,96,025808,2017)                                23394  1    6 
            #doi:10.1103/PhysRevC.96.025808                        23394  1    7 
@@ -58,15 +58,16 @@ ASSUMED    (ASSUM1,40-ZR-94(N,G)40-ZR-95,,RI)  280+-10 mb.        23394  1   55
 DETECTOR   (HPGE) For Zr monitor activity measurement.            23394  1   57 
 HISTORY    (20180404C) M.M.                                       23394  1   58 
            (20190831U) SD: Small update in REL-REF.               23394  1   59 
-ENDBIB              57          0                                 23394  1   60 
-COMMON               4          3                                 23394  1   61 
-MONIT      MONIT-ERR  ASSUM1     ASSUM1-ERR                       23394  1   62 
-MB         MB         MB         MB                               23394  1   63 
- 49.4       1.7        280.       10.                             23394  1   64 
-ENDCOMMON            3          0                                 23394  1   65 
-ENDSUBENT           64          0                                 23394  199999 
-SUBENT        23394002   20170404                             226923394  2    1 
-BIB                  9         31                                 23394  2    2 
+           (20220218A) SD: Correction in Subent 002.              23394  1   60 
+ENDBIB              58          0                                 23394  1   61 
+COMMON               4          3                                 23394  1   62 
+MONIT      MONIT-ERR  ASSUM1     ASSUM1-ERR                       23394  1   63 
+MB         MB         MB         MB                               23394  1   64 
+ 49.4       1.7        280.       10.                             23394  1   65 
+ENDCOMMON            3          0                                 23394  1   66 
+ENDSUBENT           65          0                                 23394  199999 
+SUBENT        23394002   20220218                             231023394  2    1 
+BIB                 10         32                                 23394  2    2 
 REACTION   (26-FE-54(N,G)26-FE-55,,SIG)                           23394  2    3 
 DECAY-DATA (26-FE-55,2.744YR,B+) 2.744+-0.009 yr                  23394  2    4 
 ASSUMED    (ASSUM2,26-FE-54(N,G)26-FE-55,,SIG) 2.25+-0.18 b       23394  2    5 
@@ -83,45 +84,46 @@ FLAG       (1.)  ATI-FeM sample                                   23394  2   11
 MISC-COL   (MISC1) Neutron fluence, 10**13 /cm2                   23394  2   16 
            (MISC2) Fe-55/Fe-54 ratio , 10**-10 at/at              23394  2   17 
 CORRECTION  For 26-Fe-54(n,gamma) reaction < 1.%  .               23394  2   18 
-            For epithermal contribution of Zr monitor- 7 % .      23394  2   19 
-ERR-ANALYS (ERR-T)  Total error 6.4 %.                            23394  2   20 
-                     Neutron fluence 5.6 % :                      23394  2   21 
-           (ERR-1) Zr monitor CS - 3.4 %                          23394  2   22 
-           (ERR-2) Epithermal correction and geometry  3. %       23394  2   23 
+            For epithermal contribution of Zr monitor- 7% .       23394  2   19 
+ERR-ANALYS (ERR-T)  Total error 6.4%.                             23394  2   20 
+                     Neutron fluence 5.6% :                       23394  2   21 
+           (ERR-1) Zr monitor CS - 3.4%                           23394  2   22 
+           (ERR-2) Epithermal correction and geometry  3.%        23394  2   23 
            (ERR-3,,0.2) Mass of Zr sample                         23394  2   24 
-           (ERR-4) Detector efficiency  2. %                      23394  2   25 
-           (ERR-5) Gamma intensity per decay 0.5 %                23394  2   26 
+           (ERR-4) Detector efficiency  2.%                       23394  2   25 
+           (ERR-5) Gamma intensity per decay 0.5%                 23394  2   26 
            (ERR-6,,0.1) Time factors                              23394  2   27 
-                      AMS measurement 2.5 % :                     23394  2   28 
-           (ERR-7) PTB standard  1.5 %,                           23394  2   29 
+                      AMS measurement 2.5% :                      23394  2   28 
+           (ERR-7) PTB standard  1.5%,                            23394  2   29 
            (ERR-8,,1.) Atom counting                              23394  2   30 
-           (ERR-9) Fe-56 current  0.6 %                           23394  2   31 
-           (ERR-10) AMS reproducibility  1.5 %                    23394  2   32 
+           (ERR-9) Fe-56 current  0.6%                            23394  2   31 
+           (ERR-10) AMS reproducibility  1.5%                     23394  2   32 
 STATUS     (TABLE) Table VIII of Phys.Rev. C,96,025808,2017       23394  2   33 
-ENDBIB              31          0                                 23394  2   34 
-COMMON              12          6                                 23394  2   35 
-EN-DUMMY   ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR ERR-1      23394  2   36 
-ERR-2      ERR-4      ERR-5      ERR-7      ERR-9      ERR-10     23394  2   37 
-EV         B          B          B          B          PER-CENT   23394  2   38 
-PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   23394  2   39 
- 0.0253      2.25      0.18       1.2        0.1        3.4       23394  2   40 
- 3.          2.        0.5        1.5        0.6        1.5       23394  2   41 
-ENDCOMMON            6          0                                 23394  2   42 
-DATA                 7          5                                 23394  2   43 
-DATA       ERR-T      MISC1      MISC1-ERR  MISC2      MISC2-ERR  23394  2   44 
-FLAG                                                              23394  2   45 
-MB         MB         SEE TEXT   SEE TEXT   SEE TEXT   SEE TEXT   23394  2   46 
-NO-DIM                                                            23394  2   47 
- 2.21       0.15       21.2       1.1        4.69       0.10      23394  2   48 
- 1.                                                               23394  2   49 
- 2.28       0.15       22.4       1.2        5.10       0.13      23394  2   50 
- 2.                                                               23394  2   51 
- 2.24       0.15       4.59       0.35       1.03       0.022     23394  2   52 
- 3.                                                               23394  2   53 
- 2.30       0.15       2.65       0.14       0.61       0.02      23394  2   54 
- 4.                                                               23394  2   55 
- 2.26       0.15                                                  23394  2   56 
- 5.                                                               23394  2   57 
-ENDDATA             14          0                                 23394  2   58 
-ENDSUBENT           57          0                                 23394  299999 
+HISTORY    (20220218A) SD: Data units: MB -> B.                   23394  2   34 
+ENDBIB              32          0                                 23394  2   35 
+COMMON              12          6                                 23394  2   36 
+EN-DUMMY   ASSUM2     ASSUM2-ERR ASSUM3     ASSUM3-ERR ERR-1      23394  2   37 
+ERR-2      ERR-4      ERR-5      ERR-7      ERR-9      ERR-10     23394  2   38 
+EV         B          B          B          B          PER-CENT   23394  2   39 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   23394  2   40 
+ 0.0253      2.25      0.18       1.2        0.1        3.4       23394  2   41 
+ 3.          2.        0.5        1.5        0.6        1.5       23394  2   42 
+ENDCOMMON            6          0                                 23394  2   43 
+DATA                 7          5                                 23394  2   44 
+DATA       ERR-T      MISC1      MISC1-ERR  MISC2      MISC2-ERR  23394  2   45 
+FLAG                                                              23394  2   46 
+B          B          SEE TEXT   SEE TEXT   SEE TEXT   SEE TEXT   23394  2   47 
+NO-DIM                                                            23394  2   48 
+ 2.21       0.15       21.2       1.1        4.69       0.10      23394  2   49 
+ 1.                                                               23394  2   50 
+ 2.28       0.15       22.4       1.2        5.10       0.13      23394  2   51 
+ 2.                                                               23394  2   52 
+ 2.24       0.15       4.59       0.35       1.03       0.022     23394  2   53 
+ 3.                                                               23394  2   54 
+ 2.30       0.15       2.65       0.14       0.61       0.02      23394  2   55 
+ 4.                                                               23394  2   56 
+ 2.26       0.15                                                  23394  2   57 
+ 5.                                                               23394  2   58 
+ENDDATA             14          0                                 23394  2   59 
+ENDSUBENT           58          0                                 23394  299999 
 ENDENTRY             2          0                                 2339499999999 
