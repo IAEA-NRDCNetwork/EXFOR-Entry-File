@@ -1,97 +1,117 @@
-ENTRY            P0109   20000815                             0000P010900000001 
-SUBENT        P0109001   20000815                             0000P010900100001 
-BIB                  8         14                                 P010900100002 
+ENTRY            P0109   20241025                             C242P010900000001 
+SUBENT        P0109001   20241025                             C242P010900100001 
+BIB                  9         21                                 P010900100002 
 INSTITUTE  (2JPNTOK)                                              P010900100003 
 REFERENCE  (J,NP,77,565,1966)                                     P010900100004 
-AUTHOR     (M.FURUKAWA)                                           P010900100005 
-TITLE      Excitation functions for alpha-particle induced        P010900100006 
-            reactions on 139La                                    P010900100007 
-FACILITY   (CYCLO,2JPNTOK)                                        P010900100008 
-METHOD     (STTA)                                                 P010900100009 
-           (RCHEM)                                                P010900100010 
-STATUS     (CPX) Data from CPX file compiled in 1964/67 by        P010900100011 
-            F.K. McGowan et al.                                   P010900100012 
-HISTORY    (19830620T) Converted to EXFOR format by IAEA-NDS      P010900100013 
-           (19850215U) OS. COUNTRY CODE CORRECTED.                P010900100014 
-           (19850829A) Corrected by NNDC                          P010900100015 
-           (20000815A) Converted to new date formats; BIB updated.P010900100016 
-ENDBIB              14          0                                 P010900100017 
-NOCOMMON             0          0                                 P010900100018 
-ENDSUBENT           17          0                                 P010900199999 
-SUBENT        P0109002   20000815                             0000P010900200001 
-BIB                  1          1                                 P010900200002 
-REACTION   (57-LA-139(A,N)59-PR-142-G,,SIG)                       P010900200003 
-ENDBIB               1          0                                 P010900200004 
-NOCOMMON             0          0                                 P010900200005 
-DATA                 3         16                                 P010900200006 
-EN         DATA       DATA-ERR                                    P010900200007 
-MEV        MB         MB                                          P010900200008 
-   11.100      2.600                                              P010900200009 
-   11.400      3.800      0.700                                   P010900200010 
-   14.600     58.000                                              P010900200011 
-   17.300    104.000                                              P010900200012 
-   17.500    114.000     17.000                                   P010900200013 
-   20.700     71.300                                              P010900200014 
-   20.800     62.700                                              P010900200015 
-   23.500     40.000                                              P010900200016 
-   23.800     43.300                                              P010900200017 
-   26.900     26.800      4.000                                   P010900200018 
-   27.000     27.400                                              P010900200019 
-   30.200     21.400      3.200                                   P010900200020 
-   30.400     18.800                                              P010900200021 
-   33.100     18.000                                              P010900200022 
-   35.900     14.900                                              P010900200023 
-   38.500     12.200      1.800                                   P010900200024 
-ENDDATA             18          0                                 P010900200025 
-ENDSUBENT           24          0                                 P010900299999 
-SUBENT        P0109003   20000815                             0000P010900300001 
-BIB                  2          2                                 P010900300002 
-REACTION   (57-LA-139(A,N+P)58-CE-141,,SIG)                       P010900300003 
+           #doi:10.1016/0029-5582(66)90784-X                      P010900100005 
+AUTHOR     (M.Furukawa)                                           P010900100006 
+TITLE      Excitation functions for alpha-particle induced        P010900100007 
+            reactions on 139La                                    P010900100008 
+FACILITY   (CYCLO,2JPNTOK)                                        P010900100009 
+METHOD     (STTA)                                                 P010900100010 
+           (CHSEP)                                                P010900100011 
+ERR-ANALYS (DATA-ERR) Standard deviation, taking into account     P010900100012 
+           errors due to uncertainties in target thickness,       P010900100013 
+           measurements of beam currents, counting efficiencies,  P010900100014 
+           decay data and curve analysis, and counting            P010900100015 
+           statistics.                                            P010900100016 
+STATUS     (TABLE,,M.Furukawa,J,NP,77,565,1966) Table 1           P010900100017 
+HISTORY    (19830620T) Converted to EXFOR format by IAEA-NDS      P010900100018 
+           (19850215U) OS. COUNTRY CODE CORRECTED.                P010900100019 
+           (19850829A) Corrected by NNDC                          P010900100020 
+           (20000815A) Converted to new date formats; BIB updated.P010900100021 
+           (20241015A) OS. CPX data replaced by data of Table 1,  P010900100022 
+            added DECAY-DATA, ERR-ANALYS, minor BIB updates       P010900100023 
+ENDBIB              21          0                                 P010900100024 
+NOCOMMON             0          0                                 P010900100025 
+ENDSUBENT           24          0                                 P010900199999 
+SUBENT        P0109002   20241025                             C242P010900200001 
+BIB                  3          4                                 P010900200002 
+REACTION   (57-LA-139(A,N)59-PR-142,,SIG)                         P010900200003 
+DECAY-DATA (59-PR-142-G,19.2HR,B-,2170.)                          P010900200004 
+HISTORY    (20241015A) Data replaced by Table 1 data, DECAY-DATA  P010900200005 
+            added                                                 P010900200006 
+ENDBIB               4          0                                 P010900200007 
+NOCOMMON             0          0                                 P010900200008 
+DATA                 3         16                                 P010900200009 
+EN         DATA       DATA-ERR                                    P010900200010 
+MEV        MB         MB                                          P010900200011 
+   11.08       2.6                                                P010900200012 
+   11.44       3.8        0.7                                     P010900200013 
+   14.59      58.                                                 P010900200014 
+   17.31     104.                                                 P010900200015 
+   17.52     114.        17.                                      P010900200016 
+   20.73      71.3                                                P010900200017 
+   20.79      62.7                                                P010900200018 
+   23.46      40.0                                                P010900200019 
+   23.82      43.3                                                P010900200020 
+   26.86      26.8        4.0                                     P010900200021 
+   27.02      27.4                                                P010900200022 
+   30.24      21.4        3.2                                     P010900200023 
+   30.41      18.8                                                P010900200024 
+   33.14      18.0                                                P010900200025 
+   35.94      14.9                                                P010900200026 
+   38.48      12.2        1.8                                     P010900200027 
+ENDDATA             18          0                                 P010900200028 
+ENDSUBENT           27          0                                 P010900299999 
+SUBENT        P0109003   20241025                             C242P010900300001 
+BIB                  2          4                                 P010900300002 
+REACTION   (57-LA-139(A,X)58-CE-141,,SIG)                         P010900300003 
 HISTORY    (20000815A) Reaction corrected.                        P010900300004 
-ENDBIB               2          0                                 P010900300005 
-NOCOMMON             0          0                                 P010900300006 
-DATA                 3          9                                 P010900300007 
-EN         DATA       DATA-ERR                                    P010900300008 
-MEV        MB         MB                                          P010900300009 
-   23.500      1.400                                              P010900300010 
-   23.800      1.500                                              P010900300011 
-   26.900      7.900      1.300                                   P010900300012 
-   27.000      6.700                                              P010900300013 
-   30.200     17.500      2.800                                   P010900300014 
-   30.400     18.300                                              P010900300015 
-   33.100     24.800                                              P010900300016 
-   35.900     27.500                                              P010900300017 
-   38.500     29.200      4.700                                   P010900300018 
-ENDDATA             11          0                                 P010900300019 
-ENDSUBENT           18          0                                 P010900399999 
-SUBENT        P0109004   20000815                             0000P010900400001 
-BIB                  1          1                                 P010900400002 
+           (20241015A) Data replaced by Table 1 data, REACTION    P010900300005 
+           corrected.                                             P010900300006 
+ENDBIB               4          0                                 P010900300007 
+NOCOMMON             0          0                                 P010900300008 
+DATA                 3          9                                 P010900300009 
+EN         DATA       DATA-ERR                                    P010900300010 
+MEV        MB         MB                                          P010900300011 
+   23.46       1.4                                                P010900300012 
+   23.82       1.5                                                P010900300013 
+   26.86       7.9        1.3                                     P010900300014 
+   27.02       6.7                                                P010900300015 
+   30.24      17.5        2.8                                     P010900300016 
+   30.41      18.3                                                P010900300017 
+   33.14      24.8                                                P010900300018 
+   35.94      27.5                                                P010900300019 
+   38.48      29.2        4.7                                     P010900300020 
+ENDDATA             11          0                                 P010900300021 
+ENDSUBENT           20          0                                 P010900399999 
+SUBENT        P0109004   20241025                             C242P010900400001 
+BIB                  3          4                                 P010900400002 
 REACTION   (57-LA-139(A,3N)59-PR-140,,SIG)                        P010900400003 
-ENDBIB               1          0                                 P010900400004 
-NOCOMMON             0          0                                 P010900400005 
-DATA                 3          8                                 P010900400006 
-EN         DATA       DATA-ERR                                    P010900400007 
-MEV        MB         MB                                          P010900400008 
-   27.100     87.000     20.000                                   P010900400009 
-   27.300    144.000                                              P010900400010 
-   28.200    505.000     90.000                                   P010900400011 
-   32.000    807.000                                              P010900400012 
-   32.100   1040.000    190.000                                   P010900400013 
-   32.900   1280.000                                              P010900400014 
-   36.500   1190.000                                              P010900400015 
-   37.300   1470.000    300.000                                   P010900400016 
-ENDDATA             10          0                                 P010900400017 
-ENDSUBENT           16          0                                 P010900499999 
-SUBENT        P0109005   20000815                             0000P010900500001 
-BIB                  1          1                                 P010900500002 
+DECAY-DATA (59-PR-140,3.4MIN,AR,511.)                             P010900400004 
+HISTORY    (20241015A) Data replaced by Table 1 data, DECAY-DATA  P010900400005 
+            added                                                 P010900400006 
+ENDBIB               4          0                                 P010900400007 
+NOCOMMON             0          0                                 P010900400008 
+DATA                 3          8                                 P010900400009 
+EN         DATA       DATA-ERR                                    P010900400010 
+MEV        MB         MB                                          P010900400011 
+   27.06      87.        20.                                      P010900400012 
+   27.29     144.                                                 P010900400013 
+   28.24     505.        90.                                      P010900400014 
+   32.02     807.                                                 P010900400015 
+   32.11    1042.       190.                                      P010900400016 
+   32.93    1275.                                                 P010900400017 
+   36.48    1190.                                                 P010900400018 
+   37.31    1470.       300.                                      P010900400019 
+ENDDATA             10          0                                 P010900400020 
+ENDSUBENT           19          0                                 P010900499999 
+SUBENT        P0109005   20241025                             C242P010900500001 
+BIB                  4          6                                 P010900500002 
 REACTION   (57-LA-139(A,4N)59-PR-139,,SIG)                        P010900500003 
-ENDBIB               1          0                                 P010900500004 
-NOCOMMON             0          0                                 P010900500005 
-DATA                 3          2                                 P010900500006 
-EN         DATA       DATA-ERR                                    P010900500007 
-MEV        MB         MB                                          P010900500008 
-   35.900      7.000      1.400                                   P010900500009 
-   38.500     62.500     10.000                                   P010900500010 
-ENDDATA              4          0                                 P010900500011 
-ENDSUBENT           10          0                                 P010900599999 
+DECAY-DATA (59-PR-139,4.5HR)                                      P010900500004 
+           (58-CE-139-G,140.D,DG,166.)                            P010900500005 
+RAD-DET    (58-CE-139-G,DG)                                       P010900500006 
+HISTORY    (20241015A) Data replaced by Table 1 data, DECAY-DATA, P010900500007 
+            RAD-DET added                                         P010900500008 
+ENDBIB               6          0                                 P010900500009 
+NOCOMMON             0          0                                 P010900500010 
+DATA                 3          2                                 P010900500011 
+EN         DATA       DATA-ERR                                    P010900500012 
+MEV        MB         MB                                          P010900500013 
+   35.94       7.0        1.4                                     P010900500014 
+   38.48      62.5       10.0                                     P010900500015 
+ENDDATA              4          0                                 P010900500016 
+ENDSUBENT           15          0                                 P010900599999 
 ENDENTRY             5          0                                 P010999999999 

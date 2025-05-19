@@ -1,32 +1,34 @@
-ENTRY            T0089   20011119                             0000T008900000001 
-SUBENT        T0089001   20011119                             0000T008900100001 
-BIB                 10         23                                 T008900100002 
+ENTRY            T0089   20241025                             C242T008900000001 
+SUBENT        T0089001   20241025                             C242T008900100001 
+BIB                 10         25                                 T008900100002 
 INSTITUTE  (1USACAL)                                              T008900100003 
-REFERENCE  (J,PR/C,36,892,198709)                                 T008900100004 
-AUTHOR     (K.H.HAHN,K.H.CHANG,T.R.DONOGHUE,B.W.FILIPPONE)        T008900100005 
-TITLE      Search for nonresonant capture in the 16O(a,gamma)20Ne T008900100006 
-            reaction at low energies                              T008900100007 
-FACILITY   (VDGT,1USACAL) 3-MV Pelletron Tandem Accelerator at    T008900100008 
-            Kellogg Radiation Laboratory                          T008900100009 
-SAMPLE     Differentially pumped high-purity (99.999%) helium gas T008900100010 
-            target, 5.72 cm diameter cylindrical chamber          T008900100011 
-            pressurized to 2.5 Torr.  Target thickness            T008900100012 
-            (5.4+-0.2)*10**17 particles/cm**2. Error in target    T008900100013 
-            thickness 10%.                                        T008900100014 
-DETECTOR   (NAICR) Four large NaI(Tl) crystal scintillators       T008900100015 
-            (15.2*15.2*25.4 cm) used for gamma-ray detection.     T008900100016 
-           (SIBAR) Silicon surface detector placed at an angle of T008900100017 
-            60 degr. for detection of elastically scattered alpha T008900100018 
-            particles used for beam currrent normalization.       T008900100019 
-METHOD     (TOF,EDE)                                              T008900100020 
-            Target thickness determined by measuring energy loss  T008900100021 
-            through the target for several (a,gamma) resonances   T008900100022 
-            with 12C and 16O beams.                               T008900100023 
-STATUS     No reply from B. Filippone to author proof.            T008900100024 
-HISTORY    (20010306C) RFNC-VNIIEF.                               T008900100025 
-ENDBIB              23          0                                 T008900100026 
-NOCOMMON             0          0                                 T008900100027 
-ENDSUBENT           26          0                                 T008900199999 
+REFERENCE  (J,PR/C,36,892,1987)                                   T008900100004 
+           #doi:10.1103/PhysRevC.36.892                           T008900100005 
+AUTHOR     (K.H.Hahn,K.H.Chang,T.R.Donoghue,B.W.Filippone)        T008900100006 
+TITLE      Search for nonresonant capture in the 16O(a,gamma)20Ne T008900100007 
+            reaction at low energies                              T008900100008 
+FACILITY   (VDGT,1USACAL) 3-MV Pelletron Tandem Accelerator at    T008900100009 
+            Kellogg Radiation Laboratory                          T008900100010 
+SAMPLE     Differentially pumped high-purity (99.999%) helium gas T008900100011 
+            target, 5.72 cm diameter cylindrical chamber          T008900100012 
+            pressurized to 2.5 Torr.  Target thickness            T008900100013 
+            (5.4+-0.2)*10**17 particles/cm**2. Error in target    T008900100014 
+            thickness 10%.                                        T008900100015 
+DETECTOR   (NAICR) Four large NaI(Tl) crystal scintillators       T008900100016 
+            (15.2*15.2*25.4 cm) used for gamma-ray detection.     T008900100017 
+           (SIBAR) Silicon surface detector placed at an angle of T008900100018 
+            60 degr. for detection of elastically scattered alpha T008900100019 
+            particles used for beam currrent normalization.       T008900100020 
+METHOD     (TOF,EDE)                                              T008900100021 
+            Target thickness determined by measuring energy loss  T008900100022 
+            through the target for several (a,gamma) resonances   T008900100023 
+            with 12C and 16O beams.                               T008900100024 
+STATUS     No reply from B. Filippone to author proof.            T008900100025 
+HISTORY    (20010306C) RFNC-VNIIEF.                               T008900100026 
+           (20241018A) OS. REACTION corrections in sub.4          T008900100027 
+ENDBIB              25          0                                 T008900100028 
+NOCOMMON             0          0                                 T008900100029 
+ENDSUBENT           28          0                                 T008900199999 
 SUBENT        T0089002   20011018                             0000T008900200001 
 BIB                  3          6                                 T008900200002 
 REACTION   (8-O-16(A,G)10-NE-20,,SIG)                             T008900200003 
@@ -72,22 +74,24 @@ MEV        B*MEV      B*MEV                                       T008900300017
   2.35       0.11       0.11                                      T008900300021 
 ENDDATA              6          0                                 T008900300022 
 ENDSUBENT           21          0                                 T008900399999 
-SUBENT        T0089004   20011018                             0000T008900400001 
-BIB                  4          6                                 T008900400002 
-REACTION  1(8-O-16(A,TOT),,EN)                                    T008900400003 
-          2(8-O-16(A,TOT),,WID)                                   T008900400004 
+SUBENT        T0089004   20241025                             C242T008900400001 
+BIB                  5          8                                 T008900400002 
+REACTION  1(8-O-16(A,0),,EN)                                      T008900400003 
+          2(8-O-16(A,G),,WID)                                     T008900400004 
           3(8-O-16(A,TOT),,WID/STR)                               T008900400005 
 ANALYSIS   (SHAPE)                                                T008900400006 
 ERR-ANALYS (DATA-ERR) Uncertainty in width.                       T008900400007 
-STATUS     (TABLE) Data taken from Table 1 in reference.          T008900400008 
-ENDBIB               6          0                                 T008900400009 
-NOCOMMON             0          0                                 T008900400010 
-DATA                 5          3                                 T008900400011 
-DATA-CM   1DATA      2DATA-ERR  2DATA      3DATA-ERR  3           T008900400012 
-MEV        MEV        KEV        MEV        MEV                   T008900400013 
-  1.055                           20.         4.                  T008900400014 
-  1.994     20.        3.         71.        12.                  T008900400015 
-  2.432      8.3       0.5                                        T008900400016 
-ENDDATA              5          0                                 T008900400017 
-ENDSUBENT           16          0                                 T008900499999 
+STATUS     (TABLE,,K.H.Hahn+,J,PR/C,36,892,1987)                  T008900400008 
+           Data taken from Table 1 in reference.                  T008900400009 
+HISTORY    (20241018A) REACTIONs 1,2: SF3 corrected               T008900400010 
+ENDBIB               8          0                                 T008900400011 
+NOCOMMON             0          0                                 T008900400012 
+DATA                 5          3                                 T008900400013 
+DATA-CM   1DATA      2DATA-ERR  2DATA      3DATA-ERR  3           T008900400014 
+MEV        MEV        KEV        MEV        MEV                   T008900400015 
+  1.055                           20.         4.                  T008900400016 
+  1.994     20.        3.         71.        12.                  T008900400017 
+  2.432      8.3       0.5                                        T008900400018 
+ENDDATA              5          0                                 T008900400019 
+ENDSUBENT           18          0                                 T008900499999 
 ENDENTRY             4          0                                 T008999999999 
