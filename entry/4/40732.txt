@@ -1,6 +1,6 @@
-ENTRY            40732   20200315                             418640732  0    1 
-SUBENT        40732001   20200315                             418640732  1    1 
-BIB                 13         36                                 40732  1    2 
+ENTRY            40732   20200720                             418840732  0    1 
+SUBENT        40732001   20200720                             418840732  1    1 
+BIB                 13         37                                 40732  1    2 
 TITLE      .Measurement of inelastic neutron spectra on Fe nuclei 40732  1    3 
             and analysis of the hard part of neutron emission     40732  1    4 
             spectrum for 14.3-MeV energy of incident neutrons     40732  1    5 
@@ -37,13 +37,14 @@ HISTORY    (19840618C) Compiled at the CJD                        40732  1   28
            Upper -> lower case correction.                        40732  1   36 
            Dates were corrected for 4-digits year.                40732  1   37 
            ERR-ANALYS was added in Subent 002.                    40732  1   38 
-ENDBIB              36          0                                 40732  1   39 
-COMMON               2          3                                 40732  1   40 
-EN         EN-RSL-HW                                              40732  1   41 
-MEV        MEV                                                    40732  1   42 
-  14.3        .2                                                  40732  1   43 
-ENDCOMMON            3          0                                 40732  1   44 
-ENDSUBENT           43          0                                 40732  199999 
+           (20200720A) Subent 002 was corrected.                  40732  1   39 
+ENDBIB              37          0                                 40732  1   40 
+COMMON               2          3                                 40732  1   41 
+EN         EN-RSL-HW                                              40732  1   42 
+MEV        MEV                                                    40732  1   43 
+  14.3        .2                                                  40732  1   44 
+ENDCOMMON            3          0                                 40732  1   45 
+ENDSUBENT           44          0                                 40732  199999 
 SUBENT        40732002   20200315                             418640732  2    1 
 BIB                  5         24                                 40732  2    2 
 REACTION   (26-FE-0(N,INL)26-FE-0,PAR,DA)                         40732  2    3 
@@ -117,22 +118,27 @@ ADEG       MEV        MEV        MB/SR      MB/SR                 40732  2   35
    150.       8.5        10.5      3.1         .2                 40732  2   71 
 ENDDATA             38          0                                 40732  2   72 
 ENDSUBENT           71          0                                 40732  299999 
-SUBENT        40732003   20200315                             418640732  3    1 
-BIB                  5          7                                 40732  3    2 
-REACTION   (26-FE-56(N,X)0-NN-1,EM,SIG)                           40732  3    3 
+SUBENT        40732003   20200720                             418840732  3    1 
+BIB                  6         12                                 40732  3    2 
+REACTION   (26-FE-0(N,X)0-NN-1,EM,SIG)                            40732  3    3 
 ANALYSIS    CS was calculated by integral spectrum.               40732  3    4 
-ERR-ANALYS (DATA-ERR) Total error.                                40732  3    5 
-STATUS     (TABLE) Text page 9 of rep.FEI-923,1979                40732  3    6 
-           (DEP,40732002) Spectrum                                40732  3    7 
-HISTORY    (20200315A) Reaction was corrected:                    40732  3    8 
-            SIG(n,n')+2*SIG(n,2n) -> (n,x) neutron emission.      40732  3    9 
-ENDBIB               7          0                                 40732  3   10 
-NOCOMMON             0          0                                 40732  3   11 
-DATA                 2          1                                 40732  3   12 
-DATA       DATA-ERR                                               40732  3   13 
-B          B                                                      40732  3   14 
- 1.66       0.09                                                  40732  3   15 
-ENDDATA              3          0                                 40732  3   16 
-ENDSUBENT           15          0                                 40732  399999 
+REL-REF    (A,40133001,V.B.Anufrienko+,J,SNP,2,589,1966)          40732  3    5 
+           (A,40744001,O.A.Salnikov+,R,INDC-260,16,1969)          40732  3    6 
+           (A,40037123,O.A.Salnikov+,J,SNP,12,620,197106)         40732  3    7 
+ERR-ANALYS (DATA-ERR) Total error.                                40732  3    8 
+STATUS     (TABLE) Text page 9 of rep.FEI-923,1979                40732  3    9 
+           (DEP,40732002) Spectrum                                40732  3   10 
+HISTORY    (20200315A) Reaction was corrected:                    40732  3   11 
+            SIG(n,n')+2*SIG(n,2n) -> (n,x) neutron emission.      40732  3   12 
+           (20200720A) FE-56 -> FE-0 in SF1 ( data are            40732  3   13 
+           compared with Fe-0 data, see REL-REFs).                40732  3   14 
+ENDBIB              12          0                                 40732  3   15 
+NOCOMMON             0          0                                 40732  3   16 
+DATA                 2          1                                 40732  3   17 
+DATA       DATA-ERR                                               40732  3   18 
+B          B                                                      40732  3   19 
+ 1.66       0.09                                                  40732  3   20 
+ENDDATA              3          0                                 40732  3   21 
+ENDSUBENT           20          0                                 40732  399999 
 NOSUBENT      40732004   20200315                             418640732  4    1 
 ENDENTRY             4          0                                 4073299999999 
