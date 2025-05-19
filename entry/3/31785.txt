@@ -1,0 +1,160 @@
+ENTRY            31785   20180508                             31843178500000001 
+SUBENT        31785001   20180508                             31843178500100001 
+BIB                 14         21                                 3178500100002 
+TITLE      Measurement of various monitors reaction rate in a     3178500100003 
+            special core at LR-0 reactor                          3178500100004 
+AUTHOR     (M.Kostal, M.Schulc, J.Simon, N.Burianova,             3178500100005 
+            D.Harutyunyan, E.Losa, V.Rypar)                       3178500100006 
+INSTITUTE  (3CZRUJV)                                              3178500100007 
+REFERENCE  (J,ANE,112,759,2018)                                   3178500100008 
+REL-REF    (N,,M.Kostal+,J,ARI,135,83,2018)                       3178500100009 
+            Measured LR-0 neutron spectrum in void case tabulated 3178500100010 
+FACILITY   (REAC,3CZRUJV) LR-0 reactor                            3178500100011 
+INC-SOURCE (REAC)                                                 3178500100012 
+SAMPLE     ZrO2 (cylindrical 8 cm diam x 4.18 cm, 162.43 g) in Al 3178500100013 
+            capsule (80 mm diam., 1 mm-thick wall).               3178500100014 
+METHOD     (ACTIV) Irradiated for ~10 hours at ~5 W               3178500100015 
+           (GSPEC)                                                3178500100016 
+DETECTOR   (HPGE) Efficiency calculated by MCNP6                  3178500100017 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         3178500100018 
+           (28-NI-58(N,P)27-CO-58,,SIG)                           3178500100019 
+DECAY-MON  (79-AU-198-G,2.6941D,DG,411.8,0.9562)                  3178500100020 
+           (27-CO-58-G,70.86D,DG,810.8,0.9945)                    3178500100021 
+STATUS     (APRVD) Proof-read by Michal Kostal (2018-05-09)       3178500100022 
+HISTORY    (20180508C) On                                         3178500100023 
+ENDBIB              21          0                                 3178500100024 
+NOCOMMON             0          0                                 3178500100025 
+ENDSUBENT           24          0                                 3178500199999 
+SUBENT        31785002   20180508                             31843178500200001 
+BIB                  6         15                                 3178500200002 
+REACTION   (39-Y-89(N,2N)39-Y-88,,SIG,,SPA)                       3178500200003 
+SAMPLE     Foil (2.54 cm diam., 2.54 mm thick, 4.46 g/cm3)        3178500200004 
+INC-SPECT  LR-0 reactor spectrum.                                 3178500200005 
+           The measured numerical spectrum in void case is in     3178500200006 
+            Table 2 of M.Kostal+,Appl.Radiat.Isot.135(2018)83.    3178500200007 
+DECAY-DATA (39-Y-88,106.627D,DG,898.0,0.9370,                     3178500200008 
+                             DG,1836.1,0.9920)                    3178500200009 
+ERR-ANALYS (ERR-T) Total uncertainty                        (4.6%)3178500200010 
+           (ERR-1) Statistics of 88Y activity               (1.6%)3178500200011 
+           (ERR-2) Bias between 88Y 898 and 1836 keV peaks  (2.8%)3178500200012 
+           (ERR-3) Statistics of 198Au activity             (0.6%)3178500200013 
+           (ERR-4) Statistics of 58Co activity              (0.6%)3178500200014 
+           (ERR-5) Bias between Au/Ni based scaling factors (2.7%)3178500200015 
+           (ERR-6) HPGe efficiency                          (1.9%)3178500200016 
+STATUS     (TABLE) Table 10 of Ann.Nucl.Energ.112(2018)759        3178500200017 
+ENDBIB              15          0                                 3178500200018 
+COMMON               6          3                                 3178500200019 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      3178500200020 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3178500200021 
+ 1.6        2.8        0.6        0.6        2.7        1.9       3178500200022 
+ENDCOMMON            3          0                                 3178500200023 
+DATA                 3          1                                 3178500200024 
+EN-DUMMY   DATA       ERR-T                                       3178500200025 
+MEV        MICRO-B    PER-CENT                                    3178500200026 
+ 1.         46.4       4.6                                        3178500200027 
+ENDDATA              3          0                                 3178500200028 
+ENDSUBENT           27          0                                 3178500299999 
+SUBENT        31785003   20180508                             31843178500300001 
+BIB                  5          9                                 3178500300002 
+REACTION   (39-Y-89(N,2N)39-Y-88,,SIG,,FIS)                       3178500300003 
+INC-SPECT  235U prompt fission neutron spectra                    3178500300004 
+ANALYSIS   Cross section averaged over the LR-0 spectrum above    3178500300005 
+            10 MeV multiplied by the fracion of 235U prompt       3178500300006 
+            fission neutrons above 10 MeV in ENDF/B-VII (0.1396%) 3178500300007 
+ERR-ANALYS (DATA-ERR) Total uncertainty                   (4.6%)  3178500300008 
+STATUS     (TABLE) Table 11 of Ann.Nucl.Energ.112(2018)759        3178500300009 
+           (DEP,31785002) LR-0 spectrum averaged cross section    3178500300010 
+           (COREL,31783005) Another result from the same group    3178500300011 
+ENDBIB               9          0                                 3178500300012 
+NOCOMMON             0          0                                 3178500300013 
+DATA                 3          1                                 3178500300014 
+KT-DUMMY   DATA       DATA-ERR                                    3178500300015 
+MEV        MB         PER-CENT                                    3178500300016 
+ 1.32       0.169      4.6                                        3178500300017 
+ENDDATA              3          0                                 3178500300018 
+ENDSUBENT           17          0                                 3178500399999 
+SUBENT        31785004   20180508                             31843178500400001 
+BIB                  6         14                                 3178500400002 
+REACTION   (26-FE-54(N,P)25-MN-54,,SIG,,SPA)                      3178500400003 
+SAMPLE     (26-FE-54,ENR=0.994)                                   3178500400004 
+            Foil (1.27 cm diam., 1 mm thick, 7.87 g/cm3)          3178500400005 
+INC-SPECT  LR-0 reactor spectrum.                                 3178500400006 
+           The measured numerical spectrum in void case is in     3178500400007 
+            Table 2 of M.Kostal+,Appl.Radiat.Isot.135(2018)83.    3178500400008 
+DECAY-DATA (25-MN-54,312.20D,DG,834.8,0.9998)                     3178500400009 
+ERR-ANALYS (ERR-T) Total uncertainty                        (3.5%)3178500400010 
+           (ERR-1) Statistics of 54Mn activity              (0.2%)3178500400011 
+           (ERR-3) Statistics of 198Au activity             (0.6%)3178500400012 
+           (ERR-4) Statistics of 58Co activity              (0.6%)3178500400013 
+           (ERR-5) Bias between Au/Ni based scaling factors (2.7%)3178500400014 
+           (ERR-6) HPGe efficiency                          (1.9%)3178500400015 
+STATUS     (TABLE) Table 10 of Ann.Nucl.Energ.112(2018)759        3178500400016 
+ENDBIB              14          0                                 3178500400017 
+COMMON               5          3                                 3178500400018 
+ERR-1      ERR-3      ERR-4      ERR-5      ERR-6                 3178500400019 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3178500400020 
+ 0.2        0.6        0.6        2.7        1.9                  3178500400021 
+ENDCOMMON            3          0                                 3178500400022 
+DATA                 3          1                                 3178500400023 
+EN-DUMMY   DATA       ERR-T                                       3178500400024 
+MEV        MB         PER-CENT                                    3178500400025 
+ 1.         20.1       3.5                                        3178500400026 
+ENDDATA              3          0                                 3178500400027 
+ENDSUBENT           26          0                                 3178500499999 
+SUBENT        31785005   20180508                             31843178500500001 
+BIB                  6         14                                 3178500500002 
+REACTION   (26-FE-54(N,A)24-CR-51,,SIG,,SPA)                      3178500500003 
+SAMPLE     (26-FE-54,ENR=0.994)                                   3178500500004 
+            Foil (1.27 cm diam., 1 mm thick, 7.87 g/cm3)          3178500500005 
+INC-SPECT  LR-0 reactor spectrum.                                 3178500500006 
+           The measured numerical spectrum in void case is in     3178500500007 
+            Table 2 of M.Kostal+,Appl.Radiat.Isot.135(2018)83.    3178500500008 
+DECAY-DATA (24-CR-51,27.7010D,DG,320.1,0.0991)                    3178500500009 
+ERR-ANALYS (ERR-T) Total uncertainty                        (4.4%)3178500500010 
+           (ERR-1) Statistics of 51Cr activity              (0.8%)3178500500011 
+           (ERR-3) Statistics of 198Au activity             (0.6%)3178500500012 
+           (ERR-4) Statistics of 58Co activity              (0.6%)3178500500013 
+           (ERR-5) Bias between Au/Ni based scaling factors (2.7%)3178500500014 
+           (ERR-6) HPGe efficiency                          (1.9%)3178500500015 
+STATUS     (TABLE) Table 10 of Ann.Nucl.Energ.112(2018)759        3178500500016 
+ENDBIB              14          0                                 3178500500017 
+COMMON               5          3                                 3178500500018 
+ERR-1      ERR-3      ERR-4      ERR-5      ERR-6                 3178500500019 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3178500500020 
+ 0.8        0.6        0.6        2.7        1.9                  3178500500021 
+ENDCOMMON            3          0                                 3178500500022 
+DATA                 3          1                                 3178500500023 
+EN-DUMMY   DATA       ERR-T                                       3178500500024 
+MEV        MB         PER-CENT                                    3178500500025 
+ 1.         0.175      4.4                                        3178500500026 
+ENDDATA              3          0                                 3178500500027 
+ENDSUBENT           26          0                                 3178500599999 
+SUBENT        31785006   20180508                             31843178500600001 
+BIB                  6         14                                 3178500600002 
+REACTION   (73-TA-181(N,G)73-TA-182,,SIG,,SPA)                    3178500600003 
+INC-SPECT  LR-0 reactor spectrum.                                 3178500600004 
+           The measured numerical spectrum in void case is in     3178500600005 
+            Table 2 of M.Kostal+,Appl.Radiat.Isot.135(2018)83.    3178500600006 
+DECAY-DATA (73-TA-182-G,114.74D,DG,1121.0,0.3510,                 3178500600007 
+                                DG,1221.4,0.2713)                 3178500600008 
+CORRECTION Corrected for resonance self-shielding                 3178500600009 
+ERR-ANALYS (ERR-T) Total uncertainty                        (3.5%)3178500600010 
+           (ERR-1) Statistics of 182Ta activity             (1.7%)3178500600011 
+           (ERR-3) Statistics of 198Au activity             (0.6%)3178500600012 
+           (ERR-4) Statistics of 58Co activity              (0.6%)3178500600013 
+           (ERR-5) Bias between Au/Ni based scaling factors (2.7%)3178500600014 
+           (ERR-6) HPGe efficiency                          (1.9%)3178500600015 
+STATUS     (TABLE) Table 10 of Ann.Nucl.Energ.112(2018)759        3178500600016 
+ENDBIB              14          0                                 3178500600017 
+COMMON               5          3                                 3178500600018 
+ERR-1      ERR-3      ERR-4      ERR-5      ERR-6                 3178500600019 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3178500600020 
+ 1.7        0.6        0.6        2.7        1.9                  3178500600021 
+ENDCOMMON            3          0                                 3178500600022 
+DATA                 3          1                                 3178500600023 
+EN-DUMMY   DATA       ERR-T                                       3178500600024 
+MEV        B          PER-CENT                                    3178500600025 
+ 1.         19.47      3.5                                        3178500600026 
+ENDDATA              3          0                                 3178500600027 
+ENDSUBENT           26          0                                 3178500699999 
+ENDENTRY             6          0                                 3178599999999 

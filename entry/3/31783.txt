@@ -1,0 +1,131 @@
+ENTRY            31783   20180508                             31843178300000001 
+SUBENT        31783001   20180508                             31843178300100001 
+BIB                 16         34                                 3178300100002 
+TITLE      Measurement of 89Y(n,2n) spectral averaged cross       3178300100003 
+            section in LR-0 special core reactor spectrum         3178300100004 
+AUTHOR     (M.Kostal, E.Losa, P.Baron, J.Solc, M.Svadlenkova,     3178300100005 
+            M.Koleska, M.Marecek, J.Uhlir)                        3178300100006 
+INSTITUTE  (3CZRUJV)                                              3178300100007 
+REFERENCE  (J,RPC,141,22,2017)                                    3178300100008 
+           (W,KOSTAL,20180228)       Latest values tabulated.     3178300100009 
+            Document LR0-RESR-004 submitted to IRPhE in 2018      3178300100010 
+            "VVER-1000 physics experiments hexagonal jattices     3178300100011 
+             (1.275 cm Pitch) of Low Enriched U(3.3 wt.% U235)O2  3178300100012 
+             fuel assemblies in light water 75As(n, 2n),          3178300100013 
+             23Na(n,2n), 90Zr(n,2n), 89Y(n,2n) reaction rates"    3178300100014 
+            received from M.Kostal on 28 February 2018.           3178300100015 
+REL-REF    (N,,M.Kostal+,J,ARI,135,83,2018)                       3178300100016 
+            Measured LR-0 neutron spectrum in void case tabulated 3178300100017 
+FACILITY   (REAC,3CZRUJV) LR-0 reactor                            3178300100018 
+INC-SOURCE (REAC)                                                 3178300100019 
+SAMPLE     Y2O3 (202.3 g, 1.8212 g/cm3) melted in an Al capsule   3178300100020 
+            (80 mm diam.).                                        3178300100021 
+METHOD     (ACTIV) Irradiated for 20 hours                        3178300100022 
+           (GSPEC) Measurement started 4 weeks after irradiation  3178300100023 
+DETECTOR   (HPGE) Efficiency calculated by MCNP6                  3178300100024 
+DECAY-DATA (39-Y-88,106.627D,DG,898.0,0.9390,                     3178300100025 
+                             DG,1836.1,0.9932)                    3178300100026 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         3178300100027 
+           (28-NI-58(N,P)27-CO-58,,SIG)                           3178300100028 
+DECAY-MON  (79-AU-198-G,2.6947D,DG,411.8,0.9562)                  3178300100029 
+           (27-CO-58-G,70.86D,DG,810.8,0.9945)                    3178300100030 
+CORRECTION Corrected for                                          3178300100031 
+            - the spectral shift (ratio between the full geometry 3178300100032 
+              and empty geomtery).                                3178300100033 
+            - coincidence summing effect                          3178300100034 
+STATUS     (APRVD) Proof-read by Michal Kostal (2018-05-09)       3178300100035 
+HISTORY    (20180508C) On                                         3178300100036 
+ENDBIB              34          0                                 3178300100037 
+NOCOMMON             0          0                                 3178300100038 
+ENDSUBENT           37          0                                 3178300199999 
+SUBENT        31783002   20180508                             31843178300200001 
+BIB                  5          9                                 3178300200002 
+REACTION   (39-Y-89(N,2N)39-Y-88,,SIG,,SPA)                       3178300200003 
+INC-SPECT  LR-0 reactor spectrum.                                 3178300200004 
+           The measured numerical spectrum in void case is in     3178300200005 
+            Table 2 of M.Kostal+,Appl.Radiat.Isot.135(2018)83.    3178300200006 
+MISC-COL   (MISC) Cross section averaged in LR-0 reactor spectrum 3178300200007 
+                  above 10 MeV                                    3178300200008 
+ERR-ANALYS (DATA-ERR) Total uncertainty                     (3.3%)3178300200009 
+STATUS     (TABLE) Table 3 of Radiat.Phys.Chem.141(2017)22        3178300200010 
+           (SPSDD,31783004)                                       3178300200011 
+ENDBIB               9          0                                 3178300200012 
+NOCOMMON             0          0                                 3178300200013 
+DATA                 4          1                                 3178300200014 
+EN-DUMMY   DATA       DATA-ERR   MISC                             3178300200015 
+MEV        MICRO-B    PER-CENT   MB                               3178300200016 
+ 1.         43.9       3.3        124.9                           3178300200017 
+ENDDATA              3          0                                 3178300200018 
+ENDSUBENT           17          0                                 3178300299999 
+SUBENT        31783003   20180508                             31843178300300001 
+BIB                  5          9                                 3178300300002 
+REACTION   (39-Y-89(N,2N)39-Y-88,,SIG,,FIS)                       3178300300003 
+INC-SPECT  235U(n,nth) prompt fission neutron spectrum            3178300300004 
+ANALYSIS   Cross section averaged over the LR-0 spectrum above    3178300300005 
+            10 MeV multiplied by the fracion of 235U prompt       3178300300006 
+            fission neutrons above 10 MeV in ENDF/B-VII (0.1396%) 3178300300007 
+ERR-ANALYS (DATA-ERR) Total uncertainty                     (3.3%)3178300300008 
+STATUS     (TABLE) Table 3 of Radiat.Phys.Chem.141(2017)22        3178300300009 
+           (DEP,31783002) LR-0 spectrum averaged cross section    3178300300010 
+           (SPSDD,31783005)                                       3178300300011 
+ENDBIB               9          0                                 3178300300012 
+NOCOMMON             0          0                                 3178300300013 
+DATA                 3          1                                 3178300300014 
+KT-DUMMY   DATA       DATA-ERR                                    3178300300015 
+MEV        MB         PER-CENT                                    3178300300016 
+ 1.32       0.172      3.3                                        3178300300017 
+ENDDATA              3          0                                 3178300300018 
+ENDSUBENT           17          0                                 3178300399999 
+SUBENT        31783004   20180508                             31843178300400001 
+BIB                  5         16                                 3178300400002 
+REACTION   (39-Y-89(N,2N)39-Y-88,,SIG,,SPA)                       3178300400003 
+INC-SPECT  LR-0 reactor spectrum.                                 3178300400004 
+           The measured numerical spectrum in void case is in     3178300400005 
+            Table 2 of M.Kostal+,Appl.Radiat.Isot.135(2018)83.    3178300400006 
+MISC-COL   (MISC) Cross section averaged in LR-0 reactor spectrum 3178300400007 
+                  above 10 MeV                                    3178300400008 
+ERR-ANALYS (ERR-T) Total uncertainty                        (3.2%)3178300400009 
+           (ERR-1) Statistics of 88Y activity               (0.6%)3178300400010 
+           (ERR-2) Bias between 88Y 898 and 1836 keV peaks  (1.0%)3178300400011 
+           (ERR-3) Target modeling                          (1.0%)3178300400012 
+           (ERR-4) HPGe efficiency volume source - Y        (0.9%)3178300400013 
+           (ERR-5) Statistics of 198Au activity             (0.3%)3178300400014 
+           (ERR-6) Statistics of 58Co activity              (0.8%)3178300400015 
+           (ERR-7) HPGe efficiency point source - Au,Ni     (1.9%)3178300400016 
+           (ERR-8) Bias between Au/Ni based scaling factors (1.7%)3178300400017 
+STATUS     (TABLE) Table 3.7.5.5 of LR0-RESR-004 (2018)           3178300400018 
+ENDBIB              16          0                                 3178300400019 
+COMMON               7          6                                 3178300400020 
+ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      ERR-7      3178300400021 
+ERR-8                                                             3178300400022 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3178300400023 
+PER-CENT                                                          3178300400024 
+ 1.0        1.0        0.9        0.3        0.8        1.9       3178300400025 
+ 1.7                                                              3178300400026 
+ENDCOMMON            6          0                                 3178300400027 
+DATA                 5          1                                 3178300400028 
+EN-DUMMY   DATA       ERR-T      ERR-1      MISC                  3178300400029 
+MEV        MICRO-B    PER-CENT   PER-CENT   MB                    3178300400030 
+ 1.         43.54      3.2        0.6        123.8                3178300400031 
+ENDDATA              3          0                                 3178300400032 
+ENDSUBENT           31          0                                 3178300499999 
+SUBENT        31783005   20180508                             31843178300500001 
+BIB                  5          9                                 3178300500002 
+REACTION   (39-Y-89(N,2N)39-Y-88,,SIG,,FIS)                       3178300500003 
+INC-SPECT  235U prompt fission neutron spectra                    3178300500004 
+ANALYSIS   Cross section averaged over the LR-0 spectrum above    3178300500005 
+            10 MeV multiplied by the fracion of 235U prompt       3178300500006 
+            fission neutrons above 10 MeV in ENDF/B-VII (0.1396%) 3178300500007 
+ERR-ANALYS (DATA-ERR) Total uncertainty                   (3.1%)  3178300500008 
+STATUS     (TABLE) Table 3.7.5.5 of LR0-RESR-004 (2018)           3178300500009 
+           (DEP,31783004) LR-0 spectrum averaged cross section    3178300500010 
+           (COREL,31785003) Another result from the same group    3178300500011 
+ENDBIB               9          0                                 3178300500012 
+NOCOMMON             0          0                                 3178300500013 
+DATA                 3          1                                 3178300500014 
+KT-DUMMY   DATA       DATA-ERR                                    3178300500015 
+MEV        MB         PER-CENT                                    3178300500016 
+ 1.32       0.1708     3.2                                        3178300500017 
+ENDDATA              3          0                                 3178300500018 
+ENDSUBENT           17          0                                 3178300599999 
+ENDENTRY             5          0                                 3178399999999 

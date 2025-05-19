@@ -1,0 +1,186 @@
+ENTRY            31782   20180302                             31843178200000001 
+SUBENT        31782001   20180302                             31843178200100001 
+BIB                 15         34                                 3178200100002 
+TITLE      Validation of zirconium isotopes (n,g) and (n,2n)      3178200100003 
+            cross sections in a comprehensive LR-0 reactor        3178200100004 
+            operative parameters set                              3178200100005 
+AUTHOR     (M.Kostal, M.Schulc, V.Rypar, E.Losa, N.Burianova,     3178200100006 
+            J.Simon, M.Marecek, J.Uhlir)                          3178200100007 
+INSTITUTE  (3CZRUJV)                                              3178200100008 
+REFERENCE  (J,ARI,128,92,2017)                                    3178200100009 
+           (W,KOSTAL,20180228) Latest values tabulated.           3178200100010 
+            Document LR0-RESR-004 submitted to IRPhE in 2018      3178200100011 
+            "VVER-1000 physics experiments hexagonal jattices     3178200100012 
+             (1.275 cm Pitch) of Low Enriched U(3.3 wt.% U235)O2  3178200100013 
+             fuel assemblies in light water 75As(n, 2n),          3178200100014 
+             23Na(n,2n), 90Zr(n,2n), 89Y(n,2n) reaction rates"    3178200100015 
+            received from M.Kostal on 28 February 2018.           3178200100016 
+REL-REF    (N,,M.Kostal+,J,ARI,135,83,2018)                       3178200100017 
+            Measured LR-0 neutron spectrum in void case tabulated 3178200100018 
+FACILITY   (REAC,3CZRUJV) LR-0 reactor                            3178200100019 
+INC-SOURCE (REAC)                                                 3178200100020 
+SAMPLE     ZrO2 (cylindrical 8 cm diam x 4.18 cm, 162.43 g) in Al 3178200100021 
+            capsule (80 mm diam., 1 mm-thick wall).               3178200100022 
+METHOD     (ACTIV) Irradiated for ~5.5 h at ~5 W                  3178200100023 
+           (GSPEC)                                                3178200100024 
+DETECTOR   (HPGE) Efficiency calculated by MCNP6                  3178200100025 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         3178200100026 
+           (28-NI-58(N,P)27-CO-58,,SIG)                           3178200100027 
+DECAY-MON  (79-AU-198-G,2.6947D,DG,411.8,0.9562)                  3178200100028 
+           (27-CO-58-G,70.86D,DG,810.8,0.9945)                    3178200100029 
+CORRECTION Corrected for                                          3178200100030 
+            - the spectral shift (ratio between the full geometry 3178200100031 
+              and empty geomtery)                                 3178200100032 
+            - coincident summing effect (0.961 for 89Zr, 0.998    3178200100033 
+              for 198Au, 0.936 for 58Co, 1 for 95Zr and 97Zr).    3178200100034 
+STATUS     (APRVD) Proof-read by Michal Kostal (2018-05-09)       3178200100035 
+HISTORY    (20180302C) On                                         3178200100036 
+ENDBIB              34          0                                 3178200100037 
+NOCOMMON             0          0                                 3178200100038 
+ENDSUBENT           37          0                                 3178200199999 
+SUBENT        31782002   20180302                             31843178200200001 
+BIB                  6         17                                 3178200200002 
+REACTION   (40-ZR-90(N,2N)40-ZR-89-G,M+,SIG,,SPA)                 3178200200003 
+INC-SPECT  LR-0 reactor spectrum.                                 3178200200004 
+           The measured numerical spectrum in void case is in     3178200200005 
+            Table 2 of M.Kostal+,Appl.Radiat.Isot.135(2018)83.    3178200200006 
+DECAY-DATA (40-ZR-89-G,78.41HR,DG,909.2,0.9904)                   3178200200007 
+MISC-COL   (MISC) Cross section averaged in LR-0 reactor spectrum 3178200200008 
+                  above 10 MeV                                    3178200200009 
+ERR-ANALYS (ERR-T) Total uncertainty                        (4.4%)3178200200010 
+           (ERR-1) Statistics of 89Zr activity              (1.3%)3178200200011 
+           (ERR-2) Statistics of 198Au activity             (0.6%)3178200200012 
+           (ERR-3) Statistics of 58Co activity              (0.7%)3178200200013 
+           (ERR-4) Bias between Au/Ni based scaling factors (2.7%)3178200200014 
+           (ERR-5) Spectral shift correction                (1.3%)3178200200015 
+           (ERR-6) HPGe efficiency volume source - Zr       (2.7%)3178200200016 
+           (ERR-7) HPGe efficiency point source - Au,Ni     (1.0%)3178200200017 
+STATUS     (TABLE) Table 3 of Appl.Radiat.Isotopes 128(2017)92    3178200200018 
+           (SPSDD,31782003)                                       3178200200019 
+ENDBIB              17          0                                 3178200200020 
+COMMON               6          3                                 3178200200021 
+ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      ERR-7      3178200200022 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3178200200023 
+ 0.6        0.7        2.7        1.3        2.7        1.0       3178200200024 
+ENDCOMMON            3          0                                 3178200200025 
+DATA                 5          1                                 3178200200026 
+EN-DUMMY   DATA       ERR-T      ERR-1      MISC                  3178200200027 
+MEV        MICRO-B    PER-CENT   PER-CENT   MB                    3178200200028 
+ 1.         28.9       4.4        1.3        76.8                 3178200200029 
+ENDDATA              3          0                                 3178200200030 
+ENDSUBENT           29          0                                 3178200299999 
+SUBENT        31782003   20180302                             31843178200300001 
+BIB                  6         17                                 3178200300002 
+REACTION   (40-ZR-90(N,2N)40-ZR-89-G,M+,SIG,,SPA)                 3178200300003 
+INC-SPECT  LR-0 reactor spectrum.                                 3178200300004 
+           The measured numerical spectrum in void case is in     3178200300005 
+            Table 2 of M.Kostal+,Appl.Radiat.Isot.135(2018)83.    3178200300006 
+DECAY-DATA (40-ZR-89-G,78.41HR,DG,909.2,0.9904)                   3178200300007 
+MISC-COL   (MISC) Cross section averaged in LR-0 reactor spectrum 3178200300008 
+                  above 10 MeV                                    3178200300009 
+ERR-ANALYS (ERR-T) Total uncertainty                        (4.0%)3178200300010 
+           (ERR-1) Statistics of 89Zr activity              (1.3%)3178200300011 
+           (ERR-2) Target modeling                          (1.0%)3178200300012 
+           (ERR-3) Spectral shift correction                (1.3%)3178200300013 
+           (ERR-4) HPGe efficiency volume source - Zr       (0.9%)3178200300014 
+           (ERR-5) Statistics of 198Au activity             (0.6%)3178200300015 
+           (ERR-6) Statistics of 58Co activity              (0.7%)3178200300016 
+           (ERR-7) HPGe efficiency point source - Au,Ni     (1.9%)3178200300017 
+           (ERR-8) Bias between Au/Ni based scaling factors (2.5%)3178200300018 
+STATUS     (TABLE) Table 3.7.5.5 of LR0-RESR-004 (2018)           3178200300019 
+ENDBIB              17          0                                 3178200300020 
+COMMON               7          6                                 3178200300021 
+ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      ERR-7      3178200300022 
+ERR-8                                                             3178200300023 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3178200300024 
+PER-CENT                                                          3178200300025 
+ 1.0        1.3        0.9        0.6        0.7        1.9       3178200300026 
+ 2.5                                                              3178200300027 
+ENDCOMMON            6          0                                 3178200300028 
+DATA                 5          1                                 3178200300029 
+EN-DUMMY   DATA       ERR-T      ERR-1      MISC                  3178200300030 
+MEV        MICRO-B    PER-CENT   PER-CENT   MB                    3178200300031 
+ 1.         28.85      4.0        1.3        76.80                3178200300032 
+ENDDATA              3          0                                 3178200300033 
+ENDSUBENT           32          0                                 3178200399999 
+SUBENT        31782004   20180302                             31843178200400001 
+BIB                  5          8                                 3178200400002 
+REACTION   (40-ZR-90(N,2N)40-ZR-89,,SIG,,FIS)                     3178200400003 
+INC-SPECT  235U prompt fission neutron spectra                    3178200400004 
+ANALYSIS   Cross section averaged over the LR-0 spectrum above    3178200400005 
+            10 MeV multiplied by the fracion of 235U prompt       3178200400006 
+            fission neutrons above 10 MeV in ENDF/B-VII (0.1396%) 3178200400007 
+ERR-ANALYS (DATA-ERR) Total uncertainty                   (4.0%)  3178200400008 
+STATUS     (TABLE) Table 3.7.5.5 of LR0-RESR-004 (2018)           3178200400009 
+           (DEP,31782003) LR-0 spectrum averaged cross section    3178200400010 
+ENDBIB               8          0                                 3178200400011 
+NOCOMMON             0          0                                 3178200400012 
+DATA                 3          1                                 3178200400013 
+KT-DUMMY   DATA       DATA-ERR                                    3178200400014 
+MEV        MB         PER-CENT                                    3178200400015 
+ 1.32       0.1071     4.0                                        3178200400016 
+ENDDATA              3          0                                 3178200400017 
+ENDSUBENT           16          0                                 3178200499999 
+SUBENT        31782005   20180302                             31843178200500001 
+BIB                  5         18                                 3178200500002 
+REACTION   (40-ZR-94(N,G)40-ZR-95,,SIG,,SPA)                      3178200500003 
+INC-SPECT  LR-0 reactor spectrum.                                 3178200500004 
+           The measured numerical spectrum in void case is in     3178200500005 
+            Table 2 of M.Kostal+,Appl.Radiat.Isot.135(2018)83.    3178200500006 
+DECAY-DATA (40-ZR-95,64.032D,DG,724.2,0.4427,                     3178200500007 
+                             DG,756.7,0.5438)                     3178200500008 
+ERR-ANALYS M.Kostal (2018-03-02):                                 3178200500009 
+            The uncertainty in spectral shift does not play a     3178200500010 
+             role in the measured cross section.                  3178200500011 
+           (ERR-T) Total uncertainty                        (4.5%)3178200500012 
+           (ERR-1) Statistics of 95Zr activity              (0.3%)3178200500013 
+           (ERR-2) Bias between two gamma peaks             (1.4%)3178200500014 
+           (ERR-3) Statistics of 198Au activity             (0.6%)3178200500015 
+           (ERR-4) Statistics of 58Co activity              (0.7%)3178200500016 
+           (ERR-5) Bias between Au/Ni based scaling factors (2.7%)3178200500017 
+           (ERR-6) HPGe efficiency volume source - Zr       (2.7%)3178200500018 
+           (ERR-7) HPGe efficiency point source - Au,Ni     (1.0%)3178200500019 
+STATUS     (TABLE) Table 3 of Appl.Radiat.Isotopes 128(2017)92    3178200500020 
+ENDBIB              18          0                                 3178200500021 
+COMMON               6          3                                 3178200500022 
+ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      ERR-7      3178200500023 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   3178200500024 
+ 1.4        0.6        0.7        2.7        2.7        1.0       3178200500025 
+ENDCOMMON            3          0                                 3178200500026 
+DATA                 4          1                                 3178200500027 
+EN-DUMMY   DATA       ERR-T      ERR-1                            3178200500028 
+MEV        B          PER-CENT   PER-CENT                         3178200500029 
+ 1.         0.016      4.5        0.3                             3178200500030 
+ENDDATA              3          0                                 3178200500031 
+ENDSUBENT           30          0                                 3178200599999 
+SUBENT        31782006   20180302                             31843178200600001 
+BIB                  5         16                                 3178200600002 
+REACTION   (40-ZR-96(N,G)40-ZR-97,,SIG,,SPA)                      3178200600003 
+INC-SPECT  LR-0 reactor spectrum.                                 3178200600004 
+           The measured numerical spectrum in void case is in     3178200600005 
+            Table 2 of M.Kostal+,Appl.Radiat.Isot.135(2018)83.    3178200600006 
+DECAY-DATA (40-ZR-97,16.749HR,DG,743.4,0.9309)                    3178200600007 
+ERR-ANALYS M.Kostal (2018-03-02):                                 3178200600008 
+            The uncertainty in spectral shift does not play a     3178200600009 
+             role in the measured cross section.                  3178200600010 
+           (ERR-T) Total uncertainty                        (4.2%)3178200600011 
+           (ERR-1) Statistics of 95Zr activity              (0.1%)3178200600012 
+           (ERR-3) Statistics of 198Au activity             (0.6%)3178200600013 
+           (ERR-4) Statistics of 58Co activity              (0.7%)3178200600014 
+           (ERR-5) Bias between Au/Ni based scaling factors (2.7%)3178200600015 
+           (ERR-6) HPGe efficiency volume source - Zr       (2.7%)3178200600016 
+           (ERR-7) HPGe efficiency point source - Au,Ni     (1.0%)3178200600017 
+STATUS     (TABLE) Table 3 of Appl.Radiat.Isotopes 128(2017)92    3178200600018 
+ENDBIB              16          0                                 3178200600019 
+COMMON               5          3                                 3178200600020 
+ERR-3      ERR-4      ERR-5      ERR-6      ERR-7                 3178200600021 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3178200600022 
+ 0.6        0.7        2.7        2.7        1.0                  3178200600023 
+ENDCOMMON            3          0                                 3178200600024 
+DATA                 4          1                                 3178200600025 
+EN-DUMMY   DATA       ERR-T      ERR-1                            3178200600026 
+MEV        B          PER-CENT   PER-CENT                         3178200600027 
+ 1.         0.123      4.2        0.1                             3178200600028 
+ENDDATA              3          0                                 3178200600029 
+ENDSUBENT           28          0                                 3178200699999 
+ENDENTRY             6          0                                 3178299999999 
