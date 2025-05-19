@@ -1,47 +1,56 @@
-ENTRY            21255   19801024                             00002125500000001 
-SUBENT        21255001   19801024                             00002125500100001 
-BIB                 17         23                                 2125500100002 
-INSTITUTE  (2ZZZGEL)                                              2125500100003 
-REFERENCE  (J,NSE,24,87,6601)                                     2125500100004 
-AUTHOR     (R.VANINBROUKX)                                        2125500100005 
-TITLE      -THE THERMAL NEUTRON ACTIVATION CROSS SECTION OF CO-   2125500100006 
-            59.-                                                  2125500100007 
-FACILITY   (REAC ,2BLGMOL) BR1 REACTOR MOL, BELGIUM.              2125500100008 
-INC-SOURCE (THCOL) THERMAL COLUM.                                 2125500100009 
-SAMPLE     .PURE FOILS OF CO, 20 MU THICK, DIAM 10 MM.            2125500100010 
-METHOD     (ACTIV) ACTIVATION.                                    2125500100011 
-DETECTOR   (NAICR) GAMMA SPECTROMETER.                            2125500100012 
-           (COIN,PROPC,NAICR) 4*PI-BETA-GAMMA COINCIDENCE COUNTER 2125500100013 
-DECAY-DATA (27-CO-60-G,5.265YR,DG)                                2125500100014 
-MONITOR    (79-AU-197(N,G)79-AU-198-G,,SIG)                       2125500100015 
-DECAY-MON  (79-AU-198-G,2.695D,DG)                                2125500100016 
-COMMENT    .GOLD FOILS OF 5 MU THICKNESS, 10 MM DIAM.             2125500100017 
-STATUS     (NDD  ) DATA TAKEN FROM NEUDADA.                       2125500100018 
-HISTORY    (800115T) G.C.                                         2125500100019 
-           (800129E)                                              2125500100020 
-CORRECTION .FOR EPITHERMAL NEUTRONS, FLUX PERTURBATION AND FLUX   2125500100021 
-            ANISOTROPY.                                           2125500100022 
-ERR-ANALYS .THREE RESULTS WITH AGREEMENT BETTER THAN 0.1 B,       2125500100023 
-            STANDARD DEVIATION OF EACH BETTER THAN 2.0E-4,        2125500100024 
-            TOTAL STATISTICAL ERROR 4.0E-4.                       2125500100025 
-ENDBIB              23          0                                 2125500100026 
-COMMON               4          3                                 2125500100027 
-EN-DUMMY   EN-NRM     MONIT      MONIT-ERR                        2125500100028 
-EV         EV         B          B                                2125500100029 
- 2.5300E-02 2.5300E-02 9.8800E+01 2.0000E-01                      2125500100030 
-ENDCOMMON            3          0                                 2125500100031 
-ENDSUBENT           30          0                                 2125500199999 
-SUBENT        21255002   19801024                             00002125500200001 
-BIB                  3          3                                 2125500200002 
-REACTION   (27-CO-59(N,G)27-CO-60,,SIG,,MXW)                      2125500200003 
-INC-SPECT  .NEUTRONS FROM THERMAL REACTOR COLUM.                  2125500200004 
-STATUS     (NDD  ) DATA TAKEN FROM NEUDADA.                       2125500200005 
-ENDBIB               3          0                                 2125500200006 
-NOCOMMON             0          0                                 2125500200007 
-DATA                 2          1                                 2125500200008 
-DATA       DATA-ERR                                               2125500200009 
-B          B                                                      2125500200010 
- 3.4900E+01 1.0000E+00                                            2125500200011 
-ENDDATA              3          0                                 2125500200012 
-ENDSUBENT           11          0                                 2125500299999 
+ENTRY            21255   20170122                             225721255  0    1 
+SUBENT        21255001   20170122                             225721255  1    1 
+BIB                 17         32                                 21255  1    2 
+INSTITUTE  (2ZZZGEL)                                              21255  1    3 
+REFERENCE  (J,NSE,24,87,196601)                                   21255  1    4 
+AUTHOR     (R.Vaninbroukx)                                        21255  1    5 
+TITLE      The thermal neutron activation cross section of Co-59  21255  1    6 
+FACILITY   (REAC,2BLGMOL) BR1 reactor Mol, Belgium.               21255  1    7 
+INC-SOURCE (THCOL) Thermal colum., time of irradiation 174 min.   21255  1    8 
+SAMPLE      ~50 thin pure foils of Co, 20 mu thick, diam 10 mm.   21255  1    9 
+            and about 1000 other cobalt and gold foils of         21255  1   10 
+            different sizes and thicknesses have been arranged    21255  1   11 
+            around the first foils and irradiated with them to    21255  1   12 
+            determine the necessary corrections.                  21255  1   13 
+METHOD     (ACTIV) Activation.                                    21255  1   14 
+DETECTOR   (NAICR) Gamma spectrometer.                            21255  1   15 
+           (COIN,PROPC,NAICR) 4*Pi-beta-gamma coincidence counter 21255  1   16 
+DECAY-DATA (27-CO-60-G,5.265YR,DG)                                21255  1   17 
+MONITOR    (79-AU-197(N,G)79-AU-198-G,,SIG)                       21255  1   18 
+DECAY-MON  (79-AU-198-G,2.695D,DG)                                21255  1   19 
+COMMENT     Gold foils of 5 mu thickness, 10 mm diam.             21255  1   20 
+STATUS     (TABLE) Data from the text of NSE,24,87,1966           21255  1   21 
+CORRECTION  For epithermal neutrons, flux perturbation and flux   21255  1   22 
+            anisotropy.                                           21255  1   23 
+ERR-ANALYS (DATA-ERR) Maximum possible error equal to twice the   21255  1   24 
+             statistical sum of errors                            21255  1   25 
+           (ERR-1) Detector uncertainty                           21255  1   26 
+           (ERR-2,,5.) Uncertainty in corrections                 21255  1   27 
+           (ERR-3,,0.2) The standard deviation of a single        21255  1   28 
+            measurement is better than 0.2%, and                  21255  1   29 
+           (ERR-S,,0.4) The statistical sum of all errors         21255  1   30 
+           (MONIT-ERR) Uncertainty in monitor reaction            21255  1   31 
+HISTORY    (19800115T) G.C.                                       21255  1   32 
+           (20170122A) SD:Updated to new date formats,lower case; 21255  1   33 
+           ERR-ANALYS update. Data in Subent 002 corrected.       21255  1   34 
+ENDBIB              32          0                                 21255  1   35 
+COMMON               5          3                                 21255  1   36 
+EN-DUMMY   EN-NRM     MONIT      MONIT-ERR  ERR-1                 21255  1   37 
+EV         EV         B          B          PER-CENT              21255  1   38 
+   0.0253    0.0253    98.8        0.2         0.2                21255  1   39 
+ENDCOMMON            3          0                                 21255  1   40 
+ENDSUBENT           39          0                                 21255  199999 
+SUBENT        21255002   20170122                             225721255  2    1 
+BIB                  2          3                                 21255  2    2 
+REACTION   (27-CO-59(N,G)27-CO-60,,SIG,,MXW)                      21255  2    3 
+HISTORY    (20170122A) SD: Data were corrected (34.9 -> 37.4b;    21255  2    4 
+           1. -> 0.3b).                                           21255  2    5 
+ENDBIB               3          0                                 21255  2    6 
+NOCOMMON             0          0                                 21255  2    7 
+DATA                 2          1                                 21255  2    8 
+DATA       DATA-ERR                                               21255  2    9 
+B          B                                                      21255  2   10 
+  37.4        0.3                                                 21255  2   11 
+ENDDATA              3          0                                 21255  2   12 
+ENDSUBENT           11          0                                 21255  299999 
 ENDENTRY             2          0                                 2125599999999 

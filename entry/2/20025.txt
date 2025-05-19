@@ -1,6 +1,6 @@
-ENTRY            20025   20160907                             225220025  0    1 
-SUBENT        20025001   20160907                             225220025  1    1 
-BIB                 14         41                                 20025  1    2 
+ENTRY            20025   20170125                             225720025  0    1 
+SUBENT        20025001   20170125                             225720025  1    1 
+BIB                 13         43                                 20025  1    2 
 INSTITUTE  (2SWDFOA)                                              20025  1    3 
 REFERENCE  (J,AF,29,293,196503) Main reference.                   20025  1    4 
            (C,65SALZBURG,2,57,1965) Prelim. thermal value given.  20025  1    5 
@@ -21,67 +21,113 @@ METHOD     (COINC)  Coincidence                                   20025  1   19
            (TOF)    Time of flight technique at 7.5 and 14.8 MeV  20025  1   20 
 DETECTOR   (SCIN)   Large spherical liquid scintillator for the   20025  1   21 
            liquid 60 keV and 14.8 MeV data and a large cylindrical20025  1   22 
-            scintillator for the 7.5 MeV data.                    20025  1   23 
-MONITOR    (98-CF-252(0,F),PR,NU)                                 20025  1   24 
-COMMENT     Data are compared with other measurements a mean value20025  1   25 
-            for nu-bar(thermal)(U235)=2.412+-0.015 is derived     20025  1   26 
-CORRECTION .Pile-up (0.1 - 0.4%),                                 20025  1   27 
-           .false gates (0.1%),                                   20025  1   28 
-           .differences in fission neutron spectra (0.3 - 0.6%),  20025  1   29 
-           .anisotropy of fission neutron emission (0.1%),        20025  1   30 
-           .fission foil thickness (0.3%),                        20025  1   31 
-           .fission by background neutrons (0.1 - 0.2%),          20025  1   32 
-           .impurities in fissile deposit (0.1%),                 20025  1   33 
-           .uncertainty in the primary neutron energy (0.1 - 0.4%)20025  1   34 
-           The total correction was estimated to be -0.013+-0.007 20025  1   35 
-ERR-ANALYS (DATA-ERR) The stated error includes counting          20025  1   36 
-            statistics and uncertainties in the corrections.      20025  1   37 
+           scintillator for the 7.5 MeV data.                     20025  1   23 
+COMMENT     Data are compared with other measurements a mean value20025  1   24 
+            for nu-bar(thermal)(U-235)=2.412+-0.015 is derived    20025  1   25 
+CORRECTION .Pile-up (0.1 - 0.4%),                                 20025  1   26 
+           .false gates (0.1%),                                   20025  1   27 
+           .differences in fission neutron spectra (0.3 - 0.6%),  20025  1   28 
+           .anisotropy of fission neutron emission (0.1%),        20025  1   29 
+           .fission foil thickness (0.3%),                        20025  1   30 
+           .fission by background neutrons (0.1 - 0.2%),          20025  1   31 
+           .impurities in fissile deposit (0.1%),                 20025  1   32 
+           .uncertainty in the primary neutron energy (0.1 - 0.4%)20025  1   33 
+           The total correction was estimated to be -0.013+-0.007 20025  1   34 
+ERR-ANALYS (DATA-ERR) The stated error includes counting          20025  1   35 
+            statistics and uncertainties in the corrections.      20025  1   36 
+           (MONIT-ERR) Uncertainty in Cf standard                 20025  1   37 
 HISTORY    (19710517T)  From NEUDADA file                         20025  1   38 
            (19800825A) changed to reaction formalism.             20025  1   39 
            (20160907A) SD:Updated to new date formats,lower case. 20025  1   40 
            REACTION code update in Subent 003 according to comment20025  1   41 
            from N.Otsuka. Data units were changed following EXFOR 20025  1   42 
            rules.                                                 20025  1   43 
-ENDBIB              41          0                                 20025  1   44 
-COMMON               2          3                                 20025  1   45 
-MONIT      MONIT-ERR                                              20025  1   46 
-PRT/FIS    PRT/FIS                                                20025  1   47 
- 3.767       0.020                                                20025  1   48 
-ENDCOMMON            3          0                                 20025  1   49 
-ENDSUBENT           48          0                                 20025  199999 
-SUBENT        20025002   20160907                             225220025  2    1 
-BIB                  3          3                                 20025  2    2 
+           (20170125A) SD: Subent 004 was added from 20112 Entry. 20025  1   44 
+           MONITOR (-ERR) moved to Subents 002-003.               20025  1   45 
+ENDBIB              43          0                                 20025  1   46 
+NOCOMMON             0          0                                 20025  1   47 
+ENDSUBENT           46          0                                 20025  199999 
+SUBENT        20025002   20170125                             225720025  2    1 
+BIB                  5          5                                 20025  2    2 
 REACTION   (92-U-235(N,F),PR,NU)                                  20025  2    3 
 COMMENT     Nu-bar at 60 keV is not given.                        20025  2    4 
-STATUS     (TABLE)  Data from the abstract of AF,29,293,1965      20025  2    5 
-ENDBIB               3          0                                 20025  2    6 
-NOCOMMON             0          0                                 20025  2    7 
-DATA                 3          2                                 20025  2    8 
-EN         DATA       DATA-ERR                                    20025  2    9 
-MEV        PRT/FIS    PRT/FIS                                     20025  2   10 
-  7.5       3.49       0.06                                       20025  2   11 
- 14.8       4.47       0.09                                       20025  2   12 
-ENDDATA              4          0                                 20025  2   13 
-ENDSUBENT           12          0                                 20025  299999 
-SUBENT        20025003   20160907                             225220025  3    1 
-BIB                  4         11                                 20025  3    2 
+MONITOR    (98-CF-252(0,F),PR,NU)                                 20025  2    5 
+STATUS     (TABLE)  Data from the abstract of AF,29,293,1965      20025  2    6 
+HISTORY    (20170125A) SD: MONIT (-ERR) were added from Subent 00120025  2    7 
+ENDBIB               5          0                                 20025  2    8 
+COMMON               2          3                                 20025  2    9 
+MONIT      MONIT-ERR                                              20025  2   10 
+PRT/FIS    PRT/FIS                                                20025  2   11 
+ 3.767       0.020                                                20025  2   12 
+ENDCOMMON            3          0                                 20025  2   13 
+DATA                 3          2                                 20025  2   14 
+EN         DATA       DATA-ERR                                    20025  2   15 
+MEV        PRT/FIS    PRT/FIS                                     20025  2   16 
+  7.5       3.49       0.06                                       20025  2   17 
+ 14.8       4.47       0.09                                       20025  2   18 
+ENDDATA              4          0                                 20025  2   19 
+ENDSUBENT           18          0                                 20025  299999 
+SUBENT        20025003   20170125                             225720025  3    1 
+BIB                  5         12                                 20025  3    2 
 REACTION  1(92-U-235(N,F),PR,NU,,,DERIV)                          20025  3    3 
           2((92-U-235(N,F),PR,NU,,,DERIV)/                        20025  3    4 
            (98-CF-252(0,F),PR,NU))                                20025  3    5 
-                            by the multiple reaction formalism    20025  3    6 
+MONITOR   1(98-CF-252(0,F),PR,NU)                                 20025  3    6 
 ANALYSIS    The thermal nu-bar value is calculated by             20025  3    7 
             an extrapolation to thermal energy assuming a linear  20025  3    8 
             energy dependence of nu-bar with a slope of 0.085     20025  3    9 
             neutrons per MeV.                                     20025  3   10 
 STATUS     (TABLE)  Table 3 of Ark.Fys.29(1965)293                20025  3   11 
 HISTORY    (20160907A) SD: SF9=DERIV added to REACTION code.      20025  3   12 
-           Second REACTION code was added.                        20025  3   13 
-ENDBIB              11          0                                 20025  3   14 
-NOCOMMON             0          0                                 20025  3   15 
-DATA                 5          1                                 20025  3   16 
-EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2           20025  3   17 
-MEV        PRT/FIS    PRT/FIS    NO-DIM     NO-DIM                20025  3   18 
- 2.5300E-08  2.411      0.023     0.6400      0.0053              20025  3   19 
-ENDDATA              3          0                                 20025  3   20 
-ENDSUBENT           19          0                                 20025  399999 
-ENDENTRY             3          0                                 2002599999999 
+           Second REACTION code and data were added.              20025  3   13 
+           (20170125A) SD: MONIT (-ERR) were added from Subent 00120025  3   14 
+ENDBIB              12          0                                 20025  3   15 
+COMMON               2          3                                 20025  3   16 
+MONIT     1MONIT-ERR 1                                            20025  3   17 
+PRT/FIS    PRT/FIS                                                20025  3   18 
+ 3.767       0.020                                                20025  3   19 
+ENDCOMMON            3          0                                 20025  3   20 
+DATA                 5          1                                 20025  3   21 
+EN         DATA      1DATA-ERR  1DATA      2DATA-ERR  2           20025  3   22 
+MEV        PRT/FIS    PRT/FIS    NO-DIM     NO-DIM                20025  3   23 
+ 2.5300E-08  2.411      0.023     0.6400      0.0053              20025  3   24 
+ENDDATA              3          0                                 20025  3   25 
+ENDSUBENT           24          0                                 20025  399999 
+SUBENT        20025004   20170122                             225720025  4    1 
+BIB                  9         23                                 20025  4    2 
+REACTION   (92-U-235(N,F),PR,NU,,,DERIV)                          20025  4    3 
+MONITOR    (98-CF-252(0,F),PR,NU)                                 20025  4    4 
+ANALYSIS   .The thermal nu-bar-value was calculated by            20025  4    5 
+            an extrapolation to thermal energy assuming a linear  20025  4    6 
+            energy dependence of nu-bar with a slope of           20025  4    7 
+            0.085 neutrons/MeV, starting from nu-bar at 60 keV.   20025  4    8 
+REL-REF    (A,12326004,J.C.Hopkins+,J,NP,48,433,1963) and         20025  4    9 
+            A.Moat,D.S.Mather,P.Fieldhouse priv.communication     20025  4   10 
+COMMENT    .Nu-bar(total) = 2.433+-0.015 at thermal energy is     20025  4   11 
+            obtained by adding nu-bar(delayed) from S.Cox et al., 20025  4   12 
+            Phys.Rev., 112(1958)960.                              20025  4   13 
+           .Estimated nu-bar for 7.5 MeV is 3.47 +- 0.06.         20025  4   14 
+           .the 60 keV value is not given.                        20025  4   15 
+CORRECTION .The total correction was estimated to be 0.013+-0.007.20025  4   16 
+ERR-ANALYS .The error given for the relative value includes       20025  4   17 
+            counting statistics and uncertainties in the          20025  4   18 
+            corrections                                           20025  4   19 
+STATUS     (TABLE) Data are from 65SALZBURG,2,57,1965             20025  4   20 
+           (SPSDD,20025003) The values of 20025.003 Subent        20025  4   21 
+           supersedes this Subent.                                20025  4   22 
+HISTORY    (19710513T)  From NEUDADA file                         20025  4   23 
+           (20170122T) SD: Subent was originally from 20112.003.  20025  4   24 
+           BIB update. SF9=DERIV added to REACTION code.          20025  4   25 
+ENDBIB              23          0                                 20025  4   26 
+COMMON               2          3                                 20025  4   27 
+MONIT      MONIT-ERR                                              20025  4   28 
+PRT/FIS    PRT/FIS                                                20025  4   29 
+ 3.775      0.002                                                 20025  4   30 
+ENDCOMMON            3          0                                 20025  4   31 
+DATA                 3          1                                 20025  4   32 
+EN         DATA       DATA-ERR                                    20025  4   33 
+MEV        PRT/FIS    PRT/FIS                                     20025  4   34 
+   2.53E-08   2.417      0.015                                    20025  4   35 
+ENDDATA              3          0                                 20025  4   36 
+ENDSUBENT           35          0                                 20025  499999 
+ENDENTRY             4          0                                 2002599999999 
