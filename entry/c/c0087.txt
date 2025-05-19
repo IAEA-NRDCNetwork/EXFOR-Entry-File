@@ -1,74 +1,106 @@
-ENTRY            C0087   20140417                             C141C008700000001 
-SUBENT        C0087001   20140417                             C141C008700100001 
-BIB                  8         13                                 C008700100002 
-INSTITUTE  (1USABNL)                                              C008700100003 
-REFERENCE  (J,PR,150,851,1966)                                    C008700100004 
-           (J,AJ,145,960,1966)                                    C008700100005 
-           (J,AJ,153,L85,1968) Reanalysis of data.                C008700100006 
-AUTHOR     (P.D.Parker)                                           C008700100007 
-TITLE      Be-7(p,gamma)B-8 Reaction                              C008700100008 
-FACILITY   (VDG,1USABNL) 4-MeV electrostatic accelerator          C008700100009 
-DETECTOR   (SIBAR) Totally depleted silicon surface-barrier       C008700100010 
-            detector.                                             C008700100011 
-STATUS     (APRVD) Approved by P. Parker, 30 July 1999.           C008700100012 
-HISTORY    (19980827C)                                            C008700100013 
-           (20060817C) DR Third reference corrected               C008700100014 
-           (20140417U) SD: Ref. AJ/L -> AJ, 85 -> L85.            C008700100015 
-ENDBIB              13          0                                 C008700100016 
-COMMON               1          3                                 C008700100017 
-EN-ERR                                                            C008700100018 
-KEV                                                               C008700100019 
- 15.                                                              C008700100020 
-ENDCOMMON            3          0                                 C008700100021 
-ENDSUBENT           20          0                                 C008700199999 
-SUBENT        C0087002   19990713                             0000C008700200001 
-BIB                  5         10                                 C008700200002 
-REACTION   (4-BE-7(P,G)5-B-8,,SIG)                                C008700200003 
-SAMPLE     7Be target prepared by evaporating BeF2 onto platinum  C008700200004 
-            backing, then exposing to warm NH4OH fumes and        C008700200005 
-            heating to form BeO.                                  C008700200006 
-MONITOR    (3-LI-7(D,P)3-LI-8,,SIG) At 770-keV resonance.         C008700200007 
-            Renormalized by P. Parker 17 July 1999.               C008700200008 
-ERR-ANALYS (EN-ERR) Uncertainty in energy lost by beam in carbon  C008700200009 
-            layer in front of target.                             C008700200010 
-           Relative data uncertainties are given in figures.      C008700200011 
-STATUS     Data received by email from P. Parker, 17 July 1999.   C008700200012 
-ENDBIB              10          0                                 C008700200013 
-COMMON               3          3                                 C008700200014 
-EN-NRM     MONIT      MONIT-ERR                                   C008700200015 
-KEV        MB         MB                                          C008700200016 
- 770.       147.        11.                                       C008700200017 
-ENDCOMMON            3          0                                 C008700200018 
-DATA                 2          8                                 C008700200019 
-EN         DATA                                                   C008700200020 
-KEV        MICRO-B                                                C008700200021 
- 483.        0.15                                                 C008700200022 
- 614.        0.29                                                 C008700200023 
- 724.        1.55                                                 C008700200024 
- 826.        0.49                                                 C008700200025 
- 956.        0.52                                                 C008700200026 
-1182.        0.54                                                 C008700200027 
-1468.        0.70                                                 C008700200028 
-1932.        1.02                                                 C008700200029 
-ENDDATA             10          0                                 C008700200030 
-ENDSUBENT           29          0                                 C008700299999 
-SUBENT        C0087003   19990713                             0000C008700300001 
-BIB                  5          9                                 C008700300002 
-REACTION   (3-LI-7(D,P)3-LI-8,,SIG)                               C008700300003 
-SAMPLE     LiF targets. Areal density about 50 microg/cm2.        C008700300004 
-METHOD     Areal density of target determined using flame-        C008700300005 
-            photometry techniques.                                C008700300006 
-ERR-ANALYS (DATA-ERR) Includes uncertainties in:                  C008700300007 
-           . lithium density determination (5%),                  C008700300008 
-           . uncertainty in absolute target-detector geometry     C008700300009 
-             (5%).                                                C008700300010 
-STATUS     (OUTDT)                                                C008700300011 
-ENDBIB               9          0                                 C008700300012 
-NOCOMMON             0          0                                 C008700300013 
-DATA                 3          1                                 C008700300014 
-EN         DATA       DATA-ERR                                    C008700300015 
-KEV        MICRO-B    MICRO-B                                     C008700300016 
- 770.      211.        15.                                        C008700300017 
-ENDDATA              3          0                                 C008700300018 
-ENDSUBENT           17          0                                 C008700399999 
-ENDENTRY             3          0                                 C008799999999 
+ENTRY            C0087   20160810                             C161C0087  0    1 
+SUBENT        C0087001   20160810                             C161C0087  1    1 
+BIB                  9         17                                 C0087  1    2 
+INSTITUTE  (1USABNL)                                              C0087  1    3 
+REFERENCE  (J,PR,150,851,1966)                                    C0087  1    4 
+           (J,AJ,145,960,1966)                                    C0087  1    5 
+           (J,AJ,153,L85,1968) Reanalysis of data.                C0087  1    6 
+AUTHOR     (P.D.Parker)                                           C0087  1    7 
+TITLE      Be-7(p,gamma)B-8 Reaction                              C0087  1    8 
+FACILITY   (VDG,1USABNL) 4-MeV electrostatic accelerator          C0087  1    9 
+DETECTOR   (SIBAR) Totally depleted silicon surface-barrier       C0087  1   10 
+            detector.                                             C0087  1   11 
+STATUS     (APRVD) Approved by P. Parker, 30 July 1999.           C0087  1   12 
+ERR-ANALYS (EN-ERR) Uncertainty in energy lost by beam in carbon  C0087  1   13 
+            layer in front of target.                             C0087  1   14 
+HISTORY    (19980827C)                                            C0087  1   15 
+           (20060817C) DR Third reference corrected               C0087  1   16 
+           (20140417U) SD: Ref. AJ/L -> AJ, 85 -> L85.            C0087  1   17 
+           (20160626A) OS. Units and reaction in sub.3 corrected, C0087  1   18 
+            sub.4 added.                                          C0087  1   19 
+ENDBIB              17          0                                 C0087  1   20 
+COMMON               1          3                                 C0087  1   21 
+EN-ERR                                                            C0087  1   22 
+KEV                                                               C0087  1   23 
+ 15.                                                              C0087  1   24 
+ENDCOMMON            3          0                                 C0087  1   25 
+ENDSUBENT           24          0                                 C0087  199999 
+SUBENT        C0087002   20160810                             C161C0087  2    1 
+BIB                  4          8                                 C0087  2    2 
+REACTION   (4-BE-7(P,G)5-B-8,,SIG)                                C0087  2    3 
+SAMPLE     7Be target prepared by evaporating BeF2 onto platinum  C0087  2    4 
+            backing, then exposing to warm NH4OH fumes and        C0087  2    5 
+            heating to form BeO.                                  C0087  2    6 
+MONITOR    (3-LI-7(D,P)3-LI-8,,SIG) At 770-keV resonance.         C0087  2    7 
+            Renormalized by P. Parker 17 July 1999.               C0087  2    8 
+STATUS     (TABLE) Data received by email from P. Parker,         C0087  2    9 
+            17 July 1999.                                         C0087  2   10 
+ENDBIB               8          0                                 C0087  2   11 
+COMMON               3          3                                 C0087  2   12 
+EN-NRM     MONIT      MONIT-ERR                                   C0087  2   13 
+KEV        MB         MB                                          C0087  2   14 
+ 770.       147.        11.                                       C0087  2   15 
+ENDCOMMON            3          0                                 C0087  2   16 
+DATA                 2          8                                 C0087  2   17 
+EN         DATA                                                   C0087  2   18 
+KEV        MICRO-B                                                C0087  2   19 
+ 483.        0.15                                                 C0087  2   20 
+ 614.        0.29                                                 C0087  2   21 
+ 724.        1.55                                                 C0087  2   22 
+ 826.        0.49                                                 C0087  2   23 
+ 956.        0.52                                                 C0087  2   24 
+1182.        0.54                                                 C0087  2   25 
+1468.        0.70                                                 C0087  2   26 
+1932.        1.02                                                 C0087  2   27 
+ENDDATA             10          0                                 C0087  2   28 
+ENDSUBENT           27          0                                 C0087  299999 
+SUBENT        C0087003   20160810                             C161C0087  3    1 
+BIB                  6         11                                 C0087  3    2 
+REACTION   (3-LI-7(D,P)3-LI-8,,SIG,,RES)                          C0087  3    3 
+SAMPLE     LiF targets. Areal density about 50 microg/cm2.        C0087  3    4 
+METHOD     Areal density of target determined using flame-        C0087  3    5 
+            photometry techniques.                                C0087  3    6 
+ERR-ANALYS (ERR-T) Includes uncertainties in:                     C0087  3    7 
+           (ERR-1) lithium density determination (5%),            C0087  3    8 
+           (ERR-2) uncertainty in absolute target-detector        C0087  3    9 
+            geometry (5%).                                        C0087  3   10 
+STATUS     (TABLE) Text on p.855 of Phys.Rev.150,851,1966         C0087  3   11 
+           (OUTDT)                                                C0087  3   12 
+HISTORY    (20160626A) Data units corrected, added RES to SF8     C0087  3   13 
+ENDBIB              11          0                                 C0087  3   14 
+COMMON               2          3                                 C0087  3   15 
+ERR-1      ERR-2                                                  C0087  3   16 
+PER-CENT   PER-CENT                                               C0087  3   17 
+  5.         5.                                                   C0087  3   18 
+ENDCOMMON            3          0                                 C0087  3   19 
+DATA                 3          1                                 C0087  3   20 
+EN-RES     DATA       ERR-T                                       C0087  3   21 
+KEV        MB         MB                                          C0087  3   22 
+ 770.      211.        15.                                        C0087  3   23 
+ENDDATA              3          0                                 C0087  3   24 
+ENDSUBENT           23          0                                 C0087  399999 
+SUBENT        C0087004   20160810                             C161C0087  4    1 
+BIB                  5          9                                 C0087  4    2 
+REACTION   (4-BE-7(P,G)5-B-8,,SIG)                                C0087  4    3 
+SAMPLE     7Be target prepared by evaporating BeF2 onto platinum  C0087  4    4 
+            backing, then exposing to warm NH4OH fumes and        C0087  4    5 
+            heating to form BeO.                                  C0087  4    6 
+COMMENT    First reanalysis of the 1966 data. Superseded by       C0087  4    7 
+           author's renormalization of 1999 (see subentry 2).     C0087  4    8 
+STATUS     (TABLE) Table 1, Astrophys.J.153,L85,1968              C0087  4    9 
+           (SPSDD,C0087002)                                       C0087  4   10 
+HISTORY    (20160810C)                                            C0087  4   11 
+ENDBIB               9          0                                 C0087  4   12 
+NOCOMMON             0          0                                 C0087  4   13 
+DATA                 2          6                                 C0087  4   14 
+EN         DATA                                                   C0087  4   15 
+KEV        MICRO-B                                                C0087  4   16 
+ 483.        0.26                                                 C0087  4   17 
+ 614.        0.50                                                 C0087  4   18 
+ 826.        0.85                                                 C0087  4   19 
+ 956.        0.90                                                 C0087  4   20 
+1182.        0.94                                                 C0087  4   21 
+1468.        1.19                                                 C0087  4   22 
+ENDDATA              8          0                                 C0087  4   23 
+ENDSUBENT           22          0                                 C0087  499999 
+ENDENTRY             4          0                                 C008799999999 
