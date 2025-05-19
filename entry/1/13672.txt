@@ -1,78 +1,85 @@
-ENTRY            13672   20021204                             00001367200000001 
-SUBENT        13672001   20021204                             00001367200100001 
-BIB                 13         30                                 1367200100002 
-INSTITUTE  (1USALAS)                                              1367200100003 
-REFERENCE  (J,NSE,128,270,199803)                                 1367200100004 
-           (J,ANS,76,361,199706)                                  1367200100005 
-AUTHOR     (D.Loaiza,G.Brunson,R.Sanchez,K.Butterfield)           1367200100006 
-TITLE      Measurement of Absolute Delayed Neutron Yield and Group1367200100007 
-            Constants for the Fast Fission of 235U and 237Np      1367200100008 
-FACILITY   (REAC) Godiva IV burst assembly                        1367200100009 
-INC-SOURCE (REAC) Reactor spectrum passed through cadmium, Boral, 1367200100010 
-            and borated polyethylene to absorb thermal neutrons.  1367200100011 
-INC-SPECT  Fission neutrons.                                      1367200100012 
-METHOD     (PLSED) Die-away curve obtained and fitted with        1367200100013 
-            Levenberg-Marquardt nonlinear least-squares routine.  1367200100014 
-           Decay constants and group abundances measured with     1367200100015 
-            instantaneous and infinite (compared to shortest and  1367200100016 
-            longest delayed-neutron periods, respectively), and   1367200100017 
-            unfolded into 6 neutron groups.                       1367200100018 
-DETECTOR   Well counter consisting of 20 3He tubes embedded in    1367200100019 
-            polyethylene, heavily shielded to reduce background.  1367200100020 
-CORRECTION Delayed-neutron activity corrected for the time-       1367200100021 
-            dependent neutron background  (0.27%) and dead time   1367200100022 
-            (<2%).                                                1367200100023 
-ERR-ANALYS (DATA-ERR) Systematic uncertainty.                     1367200100024 
-STATUS     Data taken from Nucl.Sci.Eng.                          1367200100025 
-           (APRVD) D. Loaiza, 1997/8/12. No reply received to     1367200100026 
-             author proof after 1999 update.                      1367200100027 
-HISTORY    (19970630C)                                            1367200100028 
-           (19980812A) Updated to new codes.                      1367200100029 
-           (19990812A) Updated to new reference, absolute data    1367200100030 
-                       added.                                     1367200100031 
-           (20021204A) Obsolete data heading replaced.            1367200100032 
-ENDBIB              30          0                                 1367200100033 
-COMMON               1          3                                 1367200100034 
-EN-DUMMY                                                          1367200100035 
-MEV                                                               1367200100036 
-1.4                                                               1367200100037 
-ENDCOMMON            3          0                                 1367200100038 
-ENDSUBENT           37          0                                 1367200199999 
-SUBENT        13672002   20021204                             00001367200200001 
-BIB                  3          3                                 1367200200002 
-REACTION   (92-U-235(N,F),DL,NU,,FST)                             1367200200003 
-SAMPLE     3-gram metal sample, 93% enriched 235U.                1367200200004 
-CORRECTION Corrected for sample impurities.                       1367200200005 
-ENDBIB               3          0                                 1367200200006 
-NOCOMMON             0          0                                 1367200200007 
-DATA                 2          1                                 1367200200008 
-DATA       DATA-ERR                                               1367200200009 
-PRT/FIS    PRT/FIS                                                1367200200010 
- 0.0163     0.0008                                                1367200200011 
-ENDDATA              3          0                                 1367200200012 
-ENDSUBENT           11          0                                 1367200299999 
-SUBENT        13672003   20021204                             00001367200300001 
-BIB                  5          7                                 1367200300002 
-REACTION  1((92-U-235(N,F),DL/GRP,NU,,FST)/                       1367200300003 
-           (92-U-235(N,F),DL,NU,,FST))                            1367200300004 
-          2(92-U-235(N,F),DL/GRP,NU,,FST)                         1367200300005 
-SAMPLE     3-gram metal sample, 93% enriched 235U.                1367200300006 
-MONITOR   2(92-U-235(N,F)57-LA-140,CUM,FY)                        1367200300007 
-DECAY-MON 2(57-LA-140,12.9D,DG,1596.)                             1367200300008 
-CORRECTION Corrected for sample impurities.                       1367200300009 
-ENDBIB               7          0                                 1367200300010 
-NOCOMMON             0          0                                 1367200300011 
-DATA                 5          6                                 1367200300012 
-DCNST      DCNST-ERR  DATA      1DATA-ERR  1DATA      2           1367200300013 
-1/SEC      1/SEC      NO-DIM     NO-DIM     PRT/FIS               1367200300014 
- 0.0127     0.0001     0.0395     0.001      0.000644             1367200300015 
- 0.0315     0.0004     0.235      0.005      0.00383              1367200300016 
- 0.117      0.0064     0.207      0.008      0.00337              1367200300017 
- 0.311      0.0197     0.381      0.011      0.00621              1367200300018 
- 1.37       0.0514     0.114      0.005      0.00186              1367200300019 
- 3.83       0.1138     0.0235     0.001      0.000383             1367200300020 
-ENDDATA              8          0                                 1367200300021 
-ENDSUBENT           20          0                                 1367200399999 
+ENTRY            13672   20160804                             142113672  0    1 
+SUBENT        13672001   20160804                             142113672  1    1 
+BIB                 13         33                                 13672  1    2 
+INSTITUTE  (1USALAS)                                              13672  1    3 
+REFERENCE  (J,NSE,128,270,199803)                                 13672  1    4 
+           (J,ANS,76,361,199706)                                  13672  1    5 
+AUTHOR     (D.Loaiza,G.Brunson,R.Sanchez,K.Butterfield)           13672  1    6 
+TITLE      Measurement of Absolute Delayed Neutron Yield and Group13672  1    7 
+            Constants for the Fast Fission of 235U and 237Np      13672  1    8 
+FACILITY   (CRASS,1USALAS) Godiva IV burst assembly               13672  1    9 
+INC-SOURCE (REAC) Reactor spectrum passed through cadmium, Boral, 13672  1   10 
+            and borated polyethylene to absorb thermal neutrons.  13672  1   11 
+INC-SPECT  Fission neutrons.                                      13672  1   12 
+METHOD     (PLSED) Die-away curve obtained and fitted with        13672  1   13 
+            Levenberg-Marquardt nonlinear least-squares routine.  13672  1   14 
+           Decay constants and group abundances measured with     13672  1   15 
+            instantaneous and infinite (compared to shortest and  13672  1   16 
+            longest delayed-neutron periods, respectively), and   13672  1   17 
+            unfolded into 6 neutron groups.                       13672  1   18 
+DETECTOR   Well counter consisting of 20 3He tubes embedded in    13672  1   19 
+            polyethylene, heavily shielded to reduce background.  13672  1   20 
+CORRECTION Delayed-neutron activity corrected for the time-       13672  1   21 
+            dependent neutron background  (0.27%) and dead time   13672  1   22 
+            (<2%).                                                13672  1   23 
+ERR-ANALYS (DATA-ERR) Systematic uncertainty.                     13672  1   24 
+STATUS     (TABLE) Data taken from Nucl.Sci.Eng., Tables I and II.13672  1   25 
+           (APRVD) D. Loaiza, 1997/8/12. No reply received to     13672  1   26 
+             author proof after 1999 update.                      13672  1   27 
+HISTORY    (19970630C)                                            13672  1   28 
+           (19980812A) Updated to new codes.                      13672  1   29 
+           (19990812A) Updated to new reference, absolute data    13672  1   30 
+                       added.                                     13672  1   31 
+           (20021204A) Obsolete data heading replaced.            13672  1   32 
+           (20160728A) OS. STATUS updated, SAMPLE updated in      13672  1   33 
+            subs.2 and 3,  monitor decay information in subs.3,5  13672  1   34 
+            corrected                                             13672  1   35 
+ENDBIB              33          0                                 13672  1   36 
+COMMON               1          3                                 13672  1   37 
+EN-DUMMY                                                          13672  1   38 
+MEV                                                               13672  1   39 
+1.4                                                               13672  1   40 
+ENDCOMMON            3          0                                 13672  1   41 
+ENDSUBENT           40          0                                 13672  199999 
+SUBENT        13672002   20160804                             142113672  2    1 
+BIB                  3          4                                 13672  2    2 
+REACTION   (92-U-235(N,F),DL,NU,,FST)                             13672  2    3 
+SAMPLE     (92-U-235,ENR=0.93) 3-gram metal sample, 93% enriched  13672  2    4 
+            235U.                                                 13672  2    5 
+CORRECTION Corrected for sample impurities.                       13672  2    6 
+ENDBIB               4          0                                 13672  2    7 
+NOCOMMON             0          0                                 13672  2    8 
+DATA                 2          1                                 13672  2    9 
+DATA       DATA-ERR                                               13672  2   10 
+PRT/FIS    PRT/FIS                                                13672  2   11 
+ 0.0163     0.0008                                                13672  2   12 
+ENDDATA              3          0                                 13672  2   13 
+ENDSUBENT           12          0                                 13672  299999 
+SUBENT        13672003   20160804                             142113672  3    1 
+BIB                  5         10                                 13672  3    2 
+REACTION  1((92-U-235(N,F),DL/GRP,NU,,FST)/                       13672  3    3 
+           (92-U-235(N,F),DL,NU,,FST))                            13672  3    4 
+          2(92-U-235(N,F),DL/GRP,NU,,FST)                         13672  3    5 
+SAMPLE     (92-U-235,ENR=0.93) 3-gram metal sample, 93% enriched  13672  3    6 
+            235U.                                                 13672  3    7 
+MONITOR   2(92-U-235(N,F)57-LA-140,CUM,FY)                        13672  3    8 
+            La-140 in equilibrium with 140Ba (12.9 d) after       13672  3    9 
+            13 days                                               13672  3   10 
+CORRECTION Corrected for sample impurities.                       13672  3   11 
+HISTORY    (20160728A) DECAY-MON replaced by free text            13672  3   12 
+ENDBIB              10          0                                 13672  3   13 
+NOCOMMON             0          0                                 13672  3   14 
+DATA                 5          6                                 13672  3   15 
+DCNST      DCNST-ERR  DATA      1DATA-ERR  1DATA      2           13672  3   16 
+1/SEC      1/SEC      NO-DIM     NO-DIM     PRT/FIS               13672  3   17 
+ 0.0127     0.0001     0.0395     0.001      0.000644             13672  3   18 
+ 0.0315     0.0004     0.235      0.005      0.00383              13672  3   19 
+ 0.117      0.0064     0.207      0.008      0.00337              13672  3   20 
+ 0.311      0.0197     0.381      0.011      0.00621              13672  3   21 
+ 1.37       0.0514     0.114      0.005      0.00186              13672  3   22 
+ 3.83       0.1138     0.0235     0.001      0.000383             13672  3   23 
+ENDDATA              8          0                                 13672  3   24 
+ENDSUBENT           23          0                                 13672  399999 
 SUBENT        13672004   20021204                             00001367200400001 
 BIB                  2          2                                 1367200400002 
 REACTION   (93-NP-237(N,F),DL,NU,,FST)                            1367200400003 
@@ -85,25 +92,27 @@ PRT/FIS    PRT/FIS                                                1367200400009
  0.0126     0.0007                                                1367200400010 
 ENDDATA              3          0                                 1367200400011 
 ENDSUBENT           10          0                                 1367200499999 
-SUBENT        13672005   20021204                             00001367200500001 
-BIB                  4          6                                 1367200500002 
-REACTION  1((93-NP-237(N,F),DL/GRP,NU,,FST)/                      1367200500003 
-           (93-NP-237(N,F),DL,NU,,FST))                           1367200500004 
-          2(93-NP-237(N,F),DL/GRP,NU,,FST)                        1367200500005 
-SAMPLE     3.5-gram metal sample, 99% 237Np.                      1367200500006 
-MONITOR   2(92-U-235(N,F)57-LA-140,CUM,FY)                        1367200500007 
-DECAY-MON 2(57-LA-140,12.9D,DG,1596.)                             1367200500008 
-ENDBIB               6          0                                 1367200500009 
-NOCOMMON             0          0                                 1367200500010 
-DATA                 5          6                                 1367200500011 
-DCNST      DCNST-ERR  DATA      1DATA-ERR  1DATA      2           1367200500012 
-1/SEC      1/SEC      NO-DIM     NO-DIM     PRT/FIS               1367200500013 
- 0.0123     0.0009     0.032      0.003      0.000403             1367200500014 
- 0.0284     0.0005     0.238      0.006      0.00299              1367200500015 
- 0.0971     0.007      0.175      0.008      0.00221              1367200500016 
- 0.296      0.014      0.360      0.017      0.00454              1367200500017 
- 0.914      0.058      0.150      0.014      0.00189              1367200500018 
- 3.2        0.13       0.045      0.006      0.000567             1367200500019 
-ENDDATA              8          0                                 1367200500020 
-ENDSUBENT           19          0                                 1367200599999 
+SUBENT        13672005   20160804                             142113672  5    1 
+BIB                  4          8                                 13672  5    2 
+REACTION  1((93-NP-237(N,F),DL/GRP,NU,,FST)/                      13672  5    3 
+           (93-NP-237(N,F),DL,NU,,FST))                           13672  5    4 
+          2(93-NP-237(N,F),DL/GRP,NU,,FST)                        13672  5    5 
+SAMPLE     3.5-gram metal sample, 99% 237Np.                      13672  5    6 
+MONITOR   2(92-U-235(N,F)57-LA-140,CUM,FY)                        13672  5    7 
+            La-140 in equilibrium with 140Ba (12.9 d) after       13672  5    8 
+            13 days                                               13672  5    9 
+HISTORY    (20160728A) DECAY-MON replaced by free text            13672  5   10 
+ENDBIB               8          0                                 13672  5   11 
+NOCOMMON             0          0                                 13672  5   12 
+DATA                 5          6                                 13672  5   13 
+DCNST      DCNST-ERR  DATA      1DATA-ERR  1DATA      2           13672  5   14 
+1/SEC      1/SEC      NO-DIM     NO-DIM     PRT/FIS               13672  5   15 
+ 0.0123     0.0009     0.032      0.003      0.000403             13672  5   16 
+ 0.0284     0.0005     0.238      0.006      0.00299              13672  5   17 
+ 0.0971     0.007      0.175      0.008      0.00221              13672  5   18 
+ 0.296      0.014      0.360      0.017      0.00454              13672  5   19 
+ 0.914      0.058      0.150      0.014      0.00189              13672  5   20 
+ 3.2        0.13       0.045      0.006      0.000567             13672  5   21 
+ENDDATA              8          0                                 13672  5   22 
+ENDSUBENT           21          0                                 13672  599999 
 ENDENTRY             5          0                                 1367299999999 
