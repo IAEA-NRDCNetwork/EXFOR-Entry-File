@@ -1,0 +1,126 @@
+ENTRY            31828   20200911                             31973182800000001 
+SUBENT        31828001   20200911                             31973182800100001 
+BIB                 15         29                                 3182800100002 
+TITLE      Constraining high energy tail of 235U(nth,f) prompt    3182800100003 
+            fission neutron spectrum                              3182800100004 
+AUTHOR     (M.Schulc, M.Kostal, J.Simon, F.Brijar, T.Czakoj,      3182800100005 
+            J.P.Maly)                                             3182800100006 
+INSTITUTE  (3CZRUJV)                                              3182800100007 
+REFERENCE  (J,ARI,166,109313,2020)                                3182800100008 
+FACILITY   (REAC,3CZRUJV) LVR-15 light water research reactor     3182800100009 
+INC-SOURCE (REAC) Channel H6 with constant power around 8.5 MW    3182800100010 
+INC-SPECT  Mixture of 235U(91.85%), 239Pu(8.02%) and 238U(0.13%)  3182800100011 
+            prompt fission neutrons                               3182800100012 
+SAMPLE     Foils wrapped into an Al cover and placed in an Al     3182800100013 
+            capsule                                               3182800100014 
+DETECTOR   (HPGE) ORTEC GEM35P4. The detector efficiency was      3182800100015 
+            calculated via a well-defined MCNP6 model.            3182800100016 
+MONITOR    (28-NI-58(N,P)27-CO-58,,SIG)                           3182800100017 
+DECAY-MON  (27-CO-58-G,70.86D,DG,810.759,0.9945,                  3182800100018 
+                              DG,863.951,0.00686,                 3182800100019 
+                              DG,1674.725,0.00517)                3182800100020 
+CORRECTION Corrected for 239Pu(n,f) prompt fission neutron        3182800100021 
+            contribution by using the IRDFF-II cross section and  3182800100022 
+            JEFF-3.3 or ENDF/B-VIII.0 the prompt fission neutron  3182800100023 
+            spectrum.                                             3182800100024 
+ERR-ANALYS (ERR-T) Total uncertianty originated mainly from       3182800100025 
+                           239Pu prompt fission neutron spectrum, 3182800100026 
+           (ERR-1,1.0,7.1) Count rates                 (1.0-7.1%) 3182800100027 
+           (ERR-2)         Detector efficiency calibration (1.9%) 3182800100028 
+           (ERR-3)         Fule composition                (2.0%) 3182800100029 
+STATUS     (APRVD) Proof-read by Martin Schulc (2020-09-14)       3182800100030 
+HISTORY    (20200911C) On                                         3182800100031 
+ENDBIB              29          0                                 3182800100032 
+COMMON               2          3                                 3182800100033 
+ERR-2      ERR-3                                                  3182800100034 
+PER-CENT   PER-CENT                                               3182800100035 
+ 1.9        2.0                                                   3182800100036 
+ENDCOMMON            3          0                                 3182800100037 
+ENDSUBENT           36          0                                 3182800199999 
+SUBENT        31828002   20200911                             31973182800200001 
+BIB                  4          7                                 3182800200002 
+REACTION  1(79-AU-197(N,2N)79-AU-196,,SIG,,FIS)                   3182800200003 
+            239Pu(n,f) neutron correction with JEFF-3.3 PFNS      3182800200004 
+          2(79-AU-197(N,2N)79-AU-196,,SIG,,FIS)                   3182800200005 
+            239Pu(n,f) neutron correction with ENDF-B/VIII.0 PFNS 3182800200006 
+DECAY-DATA (79-AU-196-G,6.183D,DG,355.73,0.8700)                  3182800200007 
+METHOD     (ACTIV) tirr=36 h 1 min, tcool=88.29 d, tmeas= 7.2 h   3182800200008 
+STATUS     (TABLE) Tables 3+4 of Appl.Radiat.Isot.166(2020)109313 3182800200009 
+ENDBIB               7          0                                 3182800200010 
+NOCOMMON             0          0                                 3182800200011 
+DATA                 5          1                                 3182800200012 
+KT-DUMMY   DATA      1ERR-T     1DATA      2ERR-T     2           3182800200013 
+MEV        MB         PER-CENT   MB         PER-CENT              3182800200014 
+ 1.32       3.19       5.8        3.19       5.8                  3182800200015 
+ENDDATA              3          0                                 3182800200016 
+ENDSUBENT           15          0                                 3182800299999 
+SUBENT        31828003   20200911                             31973182800300001 
+BIB                  4          7                                 3182800300002 
+REACTION  1(25-MN-55(N,2N)25-MN-54,,SIG,,FIS)                     3182800300003 
+            239Pu(n,f) neutron correction with JEFF-3.3 PFNS      3182800300004 
+          2(25-MN-55(N,2N)25-MN-54,,SIG,,FIS)                     3182800300005 
+            239Pu(n,f) neutron correction with ENDF-B/VIII.0 PFNS 3182800300006 
+DECAY-DATA (25-MN-54,312.3D,DG,834.8,0.99976))                    3182800300007 
+METHOD     (ACTIV) tirr=36 h 1 min, tcool=86.20 d, tmeas= 5.53 min3182800300008 
+STATUS     (TABLE) Tables 3+4 of Appl.Radiat.Isot.166(2020)109313 3182800300009 
+ENDBIB               7          0                                 3182800300010 
+NOCOMMON             0          0                                 3182800300011 
+DATA                 5          1                                 3182800300012 
+KT-DUMMY   DATA      1ERR-T     1DATA      2ERR-T     2           3182800300013 
+MEV        MB         PER-CENT   MB         PER-CENT              3182800300014 
+ 1.32       0.245      3.8        0.249      3.8                  3182800300015 
+ENDDATA              3          0                                 3182800300016 
+ENDSUBENT           15          0                                 3182800399999 
+SUBENT        31828004   20200911                             31973182800400001 
+BIB                  4          8                                 3182800400002 
+REACTION  1(83-BI-209(N,3N)83-BI-207,,SIG,,FIS)                   3182800400003 
+            239Pu(n,f) neutron correction with JEFF-3.3 PFNS      3182800400004 
+          2(83-BI-209(N,3N)83-BI-207,,SIG,,FIS)                   3182800400005 
+            239Pu(n,f) neutron correction with ENDF-B/VIII.0 PFNS 3182800400006 
+DECAY-DATA (83-BI-207,31.55YR,DG,569.702,0.9775,                  3182800400007 
+                              DG,1063.656,0.7450)                 3182800400008 
+METHOD     (ACTIV) tirr=36 h 1 min, tcool=88.06 d, tmeas= 1.58 h  3182800400009 
+STATUS     (TABLE) Tables 3+4 of Appl.Radiat.Isot.166(2020)109313 3182800400010 
+ENDBIB               8          0                                 3182800400011 
+NOCOMMON             0          0                                 3182800400012 
+DATA                 5          1                                 3182800400013 
+KT-DUMMY   DATA      1ERR-T     1DATA      2ERR-T     2           3182800400014 
+MEV        MB         PER-CENT   MB         PER-CENT              3182800400015 
+ 1.32         8.34E-03 5.8          8.71E-03 5.8                  3182800400016 
+ENDDATA              3          0                                 3182800400017 
+ENDSUBENT           16          0                                 3182800499999 
+SUBENT        31828005   20200911                             31973182800500001 
+BIB                  4          7                                 3182800500002 
+REACTION  1(83-BI-209(N,4N)83-BI-206,,SIG,,FIS)                   3182800500003 
+            239Pu(n,f) neutron correction with JEFF-3.3 PFNS      3182800500004 
+          2(83-BI-209(N,4N)83-BI-206,,SIG,,FIS)                   3182800500005 
+            239Pu(n,f) neutron correction with ENDF-B/VIII.0 PFNS 3182800500006 
+DECAY-DATA (83-BI-206,6.243D,DG,1718.70,0.3190)                   3182800500007 
+METHOD     (ACTIV) tirr=36 h 1 min, tcool=5.94 d, tmeas= 6.24 d   3182800500008 
+STATUS     (TABLE) Tables 3+4 of Appl.Radiat.Isot.166(2020)109313 3182800500009 
+ENDBIB               7          0                                 3182800500010 
+NOCOMMON             0          0                                 3182800500011 
+DATA                 5          1                                 3182800500012 
+KT-DUMMY   DATA      1ERR-T     1DATA      2ERR-T     2           3182800500013 
+MEV        MB         PER-CENT   MB         PER-CENT              3182800500014 
+ 1.32         6.50E-06 9.1          7.52E-06 9.1                  3182800500015 
+ENDDATA              3          0                                 3182800500016 
+ENDSUBENT           15          0                                 3182800599999 
+SUBENT        31828006   20200911                             31973182800600001 
+BIB                  4          7                                 3182800600002 
+REACTION  1(79-AU-197(N,3N)79-AU-195,,SIG,,FIS)                   3182800600003 
+            239Pu(n,f) neutron correction with JEFF-3.3 PFNS      3182800600004 
+          2(79-AU-197(N,3N)79-AU-195,,SIG,,FIS)                   3182800600005 
+            239Pu(n,f) neutron correction with ENDF-B/VIII.0 PFNS 3182800600006 
+DECAY-DATA (79-AU-195-G,186.01D,DG,98.857,0.1121)                 3182800600007 
+METHOD     (ACTIV) tirr=36 h 1 min, tcool=208.02 d, tmeas= 10.94 d3182800600008 
+STATUS     (TABLE) Table 5 of Appl.Radiat.Isot.166(2020)109313    3182800600009 
+ENDBIB               7          0                                 3182800600010 
+NOCOMMON             0          0                                 3182800600011 
+DATA                 5          1                                 3182800600012 
+KT-DUMMY   DATA      1ERR-T     1DATA      2ERR-T     2           3182800600013 
+MEV        MB         PER-CENT   MB         PER-CENT              3182800600014 
+ 1.32         8.80E-03 6.7          9.10E-03 6.7                  3182800600015 
+ENDDATA              3          0                                 3182800600016 
+ENDSUBENT           15          0                                 3182800699999 
+ENDENTRY             6          0                                 3182899999999 

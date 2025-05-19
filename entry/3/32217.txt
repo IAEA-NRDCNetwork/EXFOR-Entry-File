@@ -1,6 +1,6 @@
-ENTRY            32217   20200527                             31963221700000001 
-SUBENT        32217001   20200527                             31963221700100001 
-BIB                 12         69                                 3221700100002 
+ENTRY            32217   20200907                             31973221700000001 
+SUBENT        32217001   20200907                             31973221700100001 
+BIB                 13         80                                 3221700100002 
 TITLE      Measurements of neutron capture cross-section for      3221700100003 
             tantalum at the neutron filtered beams                3221700100004 
 AUTHOR     (O.Gritzay, V.Libman)                                  3221700100005 
@@ -32,136 +32,158 @@ DETECTOR   (GELI)Detector type - DGDK-45A; energy resolution -    3221700100018
            neutron spectrometer with 3He-counter. The measurements3221700100031 
            of the neutron beam have been done every 1000 s after  3221700100032 
            each 2600 s of the total exposition.                   3221700100033 
-SAMPLE     The tantalic targets were made of natural tantalum foil3221700100034 
-           and the targets had the 28.0 mm diameter. A pile of    3221700100035 
-           four 0.2 mm thickness targets and a pile of eight      3221700100036 
-           0.1 mm thickness targets were used for measurements    3221700100037 
-           with 2 keV and 59 keV filter, respectively. Percentage 3221700100038 
-           of the 181Ta in natural tantalum is 99.988%.           3221700100039 
-DECAY-DATA The following nine gamma lines were used for           3221700100040 
-            determination of the sample activities:               3221700100041 
-           (73-TA-182-G,114.74D,DG,152.43,0.0693,                 3221700100042 
-                                DG,179.39,0.0308,                 3221700100043 
-                                DG,222.1096,0.0749,               3221700100044 
-                                DG,229.322,0.0363,                3221700100045 
-                                DG,264.0752,0.036,                3221700100046 
-                                DG,1121.3008,0.349,               3221700100047 
-                                DG,1189.05,0.1623,                3221700100048 
-                                DG,1221.41,0.2698,                3221700100049 
-                                DG,1231.0157,0.1144)              3221700100050 
-CORRECTION Correction on the resonance self-shielding of neutrons 3221700100051 
-           in the tantalic samples was done. The real values of   3221700100052 
-           cross-sections were received by extrapolation the      3221700100053 
-           observed cross sections to zero thickness of the       3221700100054 
-           samples.                                               3221700100055 
-           To estimate a share of cross-section from the impure   3221700100056 
-           lines, a numerical simulation was performed.           3221700100057 
-           Corrections for backward scattering of neutrons by the 3221700100058 
-           output collimator were computed with program package   3221700100059 
-           MCNP-4C for real irradiation conditions.               3221700100060 
-HISTORY    (20080829C) UKRNDC                                     3221700100061 
-           (20101208C) OG: Conference codes and two co-authors    3221700100062 
-            were added.                                           3221700100063 
-           (20110318A) ERR-ANALYS modified and moved to subentries3221700100064 
-            Data for 2 keV and 59 keV are presented in separate   3221700100065 
-            subentries.                                           3221700100066 
-           (20141212U) VS. BIB minor corrections.                 3221700100067 
-           (20171228U) On. REFERENCE: C,2008AKERSL added.         3221700100068 
-           (20200527A) OG. Replacement of AV by SPA. STATUS added 3221700100069 
-           in Sub002-003. EN-MIN, EN-MAX updated. INC-SPECT from  3221700100070 
-           Sub001-> in Sub002, 003 and updated.                   3221700100071 
-ENDBIB              69          0                                 3221700100072 
-NOCOMMON             0          0                                 3221700100073 
-ENDSUBENT           72          0                                 3221700199999 
-SUBENT        32217002   20200527                             31963221700200001 
-BIB                  5         31                                 3221700200002 
+SAMPLE     (73-TA-181,ENR=0.99988) The tantalic targets were made 3221700100034 
+           of natural tantalum foil and the targets had the       3221700100035 
+           28.0 mm diameter.                                      3221700100036 
+           (5-B-10,ENR=0.85) The boron target used to define the  3221700100037 
+           neutron flux value, was made of the boric powder,      3221700100038 
+           enriched by 10B. This target is placed inside the      3221700100039 
+           container  with 28 mm diameter. The thickness of the   3221700100040 
+           boron target was 1 mm, weight = 0.6732 g.              3221700100041 
+DECAY-DATA The following nine gamma lines were used for           3221700100042 
+            determination of the sample activities:               3221700100043 
+           (73-TA-182-G,114.74D,DG,152.43,0.0693,                 3221700100044 
+                                DG,179.39,0.0308,                 3221700100045 
+                                DG,222.1096,0.0749,               3221700100046 
+                                DG,229.322,0.0363,                3221700100047 
+                                DG,264.0752,0.036,                3221700100048 
+                                DG,1121.3008,0.349,               3221700100049 
+                                DG,1189.05,0.1623,                3221700100050 
+                                DG,1221.41,0.2698,                3221700100051 
+                                DG,1231.0157,0.1144)              3221700100052 
+CORRECTION Correction on the resonance self-shielding of neutrons 3221700100053 
+           in the tantalic samples was done. The real values of   3221700100054 
+           cross-sections were received by extrapolation the      3221700100055 
+           observed cross sections to zero thickness of the       3221700100056 
+           samples.                                               3221700100057 
+           To estimate a share of cross-section from the impure   3221700100058 
+           lines, a numerical simulation was performed.           3221700100059 
+           Corrections for backward scattering of neutrons by the 3221700100060 
+           output collimator were computed with program package   3221700100061 
+           MCNP-4C for real irradiation conditions.               3221700100062 
+MONITOR    (5-B-10(N,A)3-LI-7,PAR,SIG,G) The neutron flux was     3221700100063 
+           defined by area of the full absorption peak of gamma   3221700100064 
+           rays with 478 keV energy (the excited state of 7Li).   3221700100065 
+           Cross sections of the 10B(n,alpha+gamma)7Li* reaction  3221700100066 
+           were calculated as mean values of the averaged on a    3221700100067 
+           filtered neutron beam shape of the point-wise cross    3221700100068 
+           sections, taken from CENDL-2, ENDF/B-VI, JENDL-3.3 and 3221700100069 
+           JEF-3.0.                                               3221700100070 
+HISTORY    (20080829C) UKRNDC                                     3221700100071 
+           (20101208C) OG: Conference codes and two co-authors    3221700100072 
+            were added.                                           3221700100073 
+           (20110318A) ERR-ANALYS modified and moved to subentries3221700100074 
+            Data for 2 keV and 59 keV are presented in separate   3221700100075 
+            subentries.                                           3221700100076 
+           (20141212U) VS. BIB minor corrections.                 3221700100077 
+           (20171228U) On. REFERENCE: C,2008AKERSL added.         3221700100078 
+           (20200527A) OG. Replacement of AV by SPA. STATUS added 3221700100079 
+           in Sub002-003. EN-MIN, EN-MAX updated. INC-SPECT from  3221700100080 
+           Sub001-> in Sub002, 003 and updated.                   3221700100081 
+           (20200907A) OG. MONITOR added. SAMPLE updated.         3221700100082 
+ENDBIB              80          0                                 3221700100083 
+NOCOMMON             0          0                                 3221700100084 
+ENDSUBENT           83          0                                 3221700199999 
+SUBENT        32217002   20200907                             31973221700200001 
+BIB                  6         37                                 3221700200002 
 REACTION   (73-TA-181(N,G)73-TA-182,,SIG,,SPA)                    3221700200003 
-ERR-ANALYS (ERR-T) Absolute uncertainty of cross section-         3221700200004 
-           it includes the uncertainties of-                      3221700200005 
-           (ERR-1) Error in extrapolated cross-section - it       3221700200006 
-           includes the uncertainties of-                         3221700200007 
-           error in determination of sample activities 1.7-4.4%   3221700200008 
-           statistical error in peak area 1.0-5.0%                3221700200009 
-           error in gamma-line efficiency 4.2%                    3221700200010 
-           (ERR-2) Error in determination of Ta sample mass 0.011%3221700200011 
-           (ERR-3) Error in determination of neutron flux - it    3221700200012 
-           includes the uncertainties of-                         3221700200013 
-           error in determination of B sample mass 0.024%         3221700200014 
-           error in the B gamma-line efficiency 2.04%             3221700200015 
-           error in quantum yield gamma-lines 0.05-0.48           3221700200016 
-           error in cross section of the 10-B(n,alpha+gamma)7-Li  3221700200017 
-           reaction 0.50%                                         3221700200018 
-           (ERR-4) Error due to the impure lines in filtered beam 3221700200019 
-           (ERR-5) Error due to backward scattering of neutrons by3221700200020 
-           the output collimator 0.3%                             3221700200021 
-INC-SPECT   Filter 2 keV.  Average energy of filtered neutron     3221700200022 
-            (1.795 (+0.645,-0.724))keV (95% response function),   3221700200023 
-           the filter components (g/cm2):                         3221700200024 
-           Sc-167.6, Ti-10.89, Co-13.07, 10B(85%)-0.2.            3221700200025 
-           Purity of beam about 95.73%, main parasitic lines:     3221700200026 
-           35 keV - 0.35%, 43 keV - 0.55%, 49 keV - 1.23%.        3221700200027 
-STATUS     (TABLE) Private communication with Gritzay (2011)      3221700200028 
-           (SUPPL,32216003) Neutron spectrum after filter 2 keV   3221700200029 
-HISTORY    (20141212U) VS. DECAY-DATA moved to subent. 001. and   3221700200030 
-                           DG added.                              3221700200031 
-           (20200527A) OG. Replacement of AV by SPA. STATUS and   3221700200032 
-           INC-SPECT added. EN-MIN, EN-MAX updated.               3221700200033 
-ENDBIB              31          0                                 3221700200034 
-COMMON               5          3                                 3221700200035 
-ERR-1      ERR-2      ERR-3      ERR-4      ERR-5                 3221700200036 
-PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3221700200037 
-4.70       0.011      2.10       3.8        0.3                   3221700200038 
-ENDCOMMON            3          0                                 3221700200039 
-DATA                 4          1                                 3221700200040 
-EN-MIN     EN-MAX     DATA       ERR-T                            3221700200041 
-KEV        KEV        B          B                                3221700200042 
-0.466      2.903      6.54       0.42                             3221700200043 
-ENDDATA              3          0                                 3221700200044 
-ENDSUBENT           43          0                                 3221700299999 
-SUBENT        32217003   20200527                             31963221700300001 
-BIB                  5         32                                 3221700300002 
+SAMPLE     A pile of four 0.2 mm thickness tantalic targets was   3221700200004 
+           used.                                                  3221700200005 
+ERR-ANALYS (ERR-T) Absolute uncertainty of cross section-         3221700200006 
+           it includes the uncertainties of-                      3221700200007 
+           (ERR-1) Error in extrapolated cross-section - it       3221700200008 
+           includes the uncertainties of-                         3221700200009 
+           error in determination of sample activities 1.7-4.4%   3221700200010 
+           statistical error in peak area 1.0-5.0%                3221700200011 
+           error in gamma-line efficiency 4.2%                    3221700200012 
+           (ERR-2) Error in determination of Ta sample mass 0.011%3221700200013 
+           (ERR-3) Error in determination of neutron flux - it    3221700200014 
+           includes the uncertainties of-                         3221700200015 
+           error in determination of B sample mass 0.024%         3221700200016 
+           error in the B gamma-line efficiency 2.04%             3221700200017 
+           error in quantum yield gamma-lines 0.05-0.48           3221700200018 
+           error in cross section of the 10-B(n,alpha+gamma)7-Li  3221700200019 
+           reaction 0.50%                                         3221700200020 
+           (ERR-4) Error due to the impure lines in filtered beam 3221700200021 
+           (ERR-5) Error due to backward scattering of neutrons by3221700200022 
+           the output collimator 0.3%                             3221700200023 
+INC-SPECT   Filter 2 keV.  Average energy of filtered neutron     3221700200024 
+            (1.795 (+0.645,-0.724))keV (95% response function),   3221700200025 
+           the filter components (g/cm2):                         3221700200026 
+           Sc-167.6, Ti-10.89, Co-13.07, 10B(85%)-0.2.            3221700200027 
+           Purity of beam about 95.73%, main parasitic lines:     3221700200028 
+           35 keV - 0.35%, 43 keV - 0.55%, 49 keV - 1.23%.        3221700200029 
+           Neutron flux was 8.9e+06 n/cm2/s. Time of irradiation  3221700200030 
+           was 302400 s.                                          3221700200031 
+STATUS     (TABLE) Private communication with Gritzay (2011)      3221700200032 
+           (SUPPL,32216003) Neutron spectrum after filter 2 keV   3221700200033 
+HISTORY    (20141212U) VS. DECAY-DATA moved to subent. 001. and   3221700200034 
+                           DG added.                              3221700200035 
+           (20200527A) OG. Replacement of AV by SPA. STATUS and   3221700200036 
+           INC-SPECT added. EN-MIN, EN-MAX updated.               3221700200037 
+           (20200907A) OG. MONIT and SAMPLE added.                3221700200038 
+           (20201203A) On. E-NRM=478 keV added.                   3221700200039 
+ENDBIB              37          0                                 3221700200040 
+COMMON               5          3                                 3221700200041 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5                 3221700200042 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3221700200043 
+4.70       0.011      2.10       3.8        0.3                   3221700200044 
+ENDCOMMON            3          0                                 3221700200045 
+DATA                 6          1                                 3221700200046 
+EN-MIN     EN-MAX     DATA       ERR-T      E-NRM      MONIT      3221700200047 
+KEV        KEV        B          B          KEV        B          3221700200048 
+0.466      2.903      6.54       0.42        478.       13.61     3221700200049 
+ENDDATA              3          0                                 3221700200050 
+ENDSUBENT           49          0                                 3221700299999 
+SUBENT        32217003   20200907                             31973221700300001 
+BIB                  6         37                                 3221700300002 
 REACTION   (73-TA-181(N,G)73-TA-182,,SIG,,SPA)                    3221700300003 
-ERR-ANALYS (ERR-T) Absolute uncertainty of cross section-         3221700300004 
-           it includes the uncertainties of-                      3221700300005 
-           (ERR-1) Error in extrapolated cross-section - it       3221700300006 
-           includes the uncertainties of-                         3221700300007 
-           error in determination of sample activities 1.3-4.4%   3221700300008 
-           statistical error in peak area 1.2-21.1%               3221700300009 
-           error in gamma-line efficiency 4.2%                    3221700300010 
-           error in quantum yield gamma-lines 0.05-0.48           3221700300011 
-           (ERR-2) Error in determination of Ta sample mass 0.057%3221700300012 
-           (ERR-3) Error in determination of neutron flux - it    3221700300013 
-           includes the uncertainties of-                         3221700300014 
-           error in determination of B sample mass 0.024%         3221700300015 
-           error in the B gamma-line efficiency 2.04%             3221700300016 
-           error in cross section of the 10-B(n,alpha+gamma)7-Li  3221700300017 
-           reaction 1.29%                                         3221700300018 
-           (ERR-4) Error due to the impure lines in filtered beam 3221700300019 
-           (ERR-5) Error due to backward scattering of neutrons by3221700300020 
-           the output collimator 3.7%                             3221700300021 
-INC-SPECT   Filter 59 keV.  Average energy of filtered neutron    3221700300022 
-            (58.424 (+1.929,-4.535)) keV (95% response function), 3221700300023 
-           the filter components (g/cm2): 58Ni - 84.55, S - 157.7,3221700300024 
-            V - 17.4, Pb - 2.5, Al - 5.4, 10B - 0.2.              3221700300025 
-           Neutron flux about 1.E5 n/cm2/s. The purity of beam was3221700300026 
-           about 97.0%, main parasitic lines: 368 keV - 0.62%,    3221700300027 
-           690 keV - 1.29%.                                       3221700300028 
-STATUS     (TABLE) Private communication with Gritzay (2011)      3221700300029 
-           (SUPPL,32214004) Neutron spectrum after filter 59 keV  3221700300030 
-HISTORY    (20141212U) VS. DECAY-DATA moved to subent. 001 and    3221700300031 
-                           DG added.                              3221700300032 
-           (20200527A) OG. Replacement of AV by SPA. STATUS and   3221700300033 
-           INC-SPECT added. EN-MIN, EN-MAX updated.               3221700300034 
-ENDBIB              32          0                                 3221700300035 
-COMMON               5          3                                 3221700300036 
-ERR-1      ERR-2      ERR-3      ERR-4      ERR-5                 3221700300037 
-PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3221700300038 
-4.58       0.057      4.48       3.2        3.7                   3221700300039 
-ENDCOMMON            3          0                                 3221700300040 
-DATA                 4          1                                 3221700300041 
-EN-MIN     EN-MAX     DATA       ERR-T                            3221700300042 
-KEV        KEV        B          B                                3221700300043 
-33.403     60.125     0.480      0.039                            3221700300044 
-ENDDATA              3          0                                 3221700300045 
-ENDSUBENT           44          0                                 3221700399999 
+SAMPLE     A pile of eight 0.1 mm thickness tantalic targets was  3221700300004 
+           used.                                                  3221700300005 
+ERR-ANALYS (ERR-T) Absolute uncertainty of cross section-         3221700300006 
+           it includes the uncertainties of-                      3221700300007 
+           (ERR-1) Error in extrapolated cross-section - it       3221700300008 
+           includes the uncertainties of-                         3221700300009 
+           error in determination of sample activities 1.3-4.4%   3221700300010 
+           statistical error in peak area 1.2-21.1%               3221700300011 
+           error in gamma-line efficiency 4.2%                    3221700300012 
+           error in quantum yield gamma-lines 0.05-0.48           3221700300013 
+           (ERR-2) Error in determination of Ta sample mass 0.057%3221700300014 
+           (ERR-3) Error in determination of neutron flux - it    3221700300015 
+           includes the uncertainties of-                         3221700300016 
+           error in determination of B sample mass 0.024%         3221700300017 
+           error in the B gamma-line efficiency 2.04%             3221700300018 
+           error in cross section of the 10-B(n,alpha+gamma)7-Li  3221700300019 
+           reaction 1.29%                                         3221700300020 
+           (ERR-4) Error due to the impure lines in filtered beam 3221700300021 
+           (ERR-5) Error due to backward scattering of neutrons by3221700300022 
+           the output collimator 3.7%                             3221700300023 
+INC-SPECT   Filter 59 keV.  Average energy of filtered neutron    3221700300024 
+            (58.424 (+1.929,-4.535)) keV (95% response function), 3221700300025 
+           the filter components (g/cm2): 58Ni - 84.55, S - 157.7,3221700300026 
+            V - 17.4, Pb - 2.5, Al - 5.4, 10B - 0.2. The purity of3221700300027 
+           beam was about 97.0%, main parasitic lines:            3221700300028 
+           368 keV - 0.62%, 690 keV - 1.29%.                      3221700300029 
+           Neutron flux was 2.62e+06 n/cm2/s. Total time of       3221700300030 
+           irradiation was 527040 s.                              3221700300031 
+STATUS     (TABLE) Private communication with Gritzay (2011)      3221700300032 
+           (SUPPL,32214004) Neutron spectrum after filter 59 keV  3221700300033 
+HISTORY    (20141212U) VS. DECAY-DATA moved to subent. 001 and    3221700300034 
+                           DG added.                              3221700300035 
+           (20200527A) OG. Replacement of AV by SPA. STATUS and   3221700300036 
+           INC-SPECT added. EN-MIN, EN-MAX updated.               3221700300037 
+           (20200907A) OG. MONIT and SAMPLE added.                3221700300038 
+           (20201203A) On. E-NRM=478 keV added.                   3221700300039 
+ENDBIB              37          0                                 3221700300040 
+COMMON               5          3                                 3221700300041 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5                 3221700300042 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT              3221700300043 
+4.58       0.057      4.48       3.2        3.7                   3221700300044 
+ENDCOMMON            3          0                                 3221700300045 
+DATA                 6          1                                 3221700300046 
+EN-MIN     EN-MAX     DATA       ERR-T      E-NRM      MONIT      3221700300047 
+KEV        KEV        B          B          KEV        B          3221700300048 
+33.403     60.125     0.480      0.039       478.       2.35      3221700300049 
+ENDDATA              3          0                                 3221700300050 
+ENDSUBENT           49          0                                 3221700399999 
 ENDENTRY             3          0                                 3221799999999 

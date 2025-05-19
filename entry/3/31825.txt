@@ -1,0 +1,114 @@
+ENTRY            31825   20200813                             31973182500000001 
+SUBENT        31825001   20200813                             31973182500100001 
+BIB                 10         25                                 3182500100002 
+TITLE      Measurement of very high threshold reactions using     3182500100003 
+            252Cf source                                          3182500100004 
+AUTHOR     (M.Schulc, M.Kostal, J.Simon, E.Novak, V.Juricek,      3182500100005 
+            M.Marecek)                                            3182500100006 
+INSTITUTE  (3CZRUJV)                                              3182500100007 
+REFERENCE  (J,ARI,166,109355,2020)                                3182500100008 
+INC-SOURCE (CF252)                                                3182500100009 
+DETECTOR   (HPGE) ORTEC GEM35P4                                   3182500100010 
+CORRECTION Corrected for                                          3182500100011 
+            - spectral shift effect                               3182500100012 
+            - flux loss                                           3182500100013 
+            - self-shielding                                      3182500100014 
+           by using MCNP6 and ENDF/B-VII.1                        3182500100015 
+ERR-ANALYS (DATA-ERR) Experimental uncertainty propagated from    3182500100016 
+            the uncertainties in                                  3182500100017 
+            - counting rate                                       3182500100018 
+            - detector efficiency                                 3182500100019 
+            - sample position during irradiation                  3182500100020 
+            - sample position during counting                     3182500100021 
+            - correction factor                                   3182500100022 
+            - 252Cf(sf) neutron emission rate.                    3182500100023 
+            (Other sources were neglected.)                       3182500100024 
+STATUS     (TABLE) Table 9 of Appl.Radiat.Isot.166(2020)109355    3182500100025 
+           (APRVD) Approved by Martin Schulc (2020-09-14)         3182500100026 
+HISTORY    (20200813C) On                                         3182500100027 
+ENDBIB              25          0                                 3182500100028 
+NOCOMMON             0          0                                 3182500100029 
+ENDSUBENT           28          0                                 3182500199999 
+SUBENT        31825002   20200813                             31973182500200001 
+BIB                  4          5                                 3182500200002 
+REACTION   (28-NI-58(N,X)27-CO-57,,SIG,,FIS)                      3182500200003 
+SAMPLE     Ni foil placed 4 cm from the Al flexo-rabbit ending    3182500200004 
+            surface                                               3182500200005 
+DECAY-DATA (27-CO-57,271.74D,DG,122.06065,0.8560)                 3182500200006 
+METHOD     (ACTIV) tirr=40.71 d, tcool=98.17 d, tmeas= 11.86 d    3182500200007 
+ENDBIB               5          0                                 3182500200008 
+NOCOMMON             0          0                                 3182500200009 
+DATA                 3          1                                 3182500200010 
+KT-DUMMY   DATA       DATA-ERR                                    3182500200011 
+MEV        MB         PER-CENT                                    3182500200012 
+ 1.42       0.4609     3.6                                        3182500200013 
+ENDDATA              3          0                                 3182500200014 
+ENDSUBENT           13          0                                 3182500299999 
+SUBENT        31825003   20200813                             31973182500300001 
+BIB                  6          7                                 3182500300002 
+REACTION   (69-TM-169(N,3N)69-TM-167,,SIG,,FIS)                   3182500300003 
+SAMPLE     Tm foil placed on Al flexo-rabbit ending surface       3182500300004 
+DECAY-DATA (69-TM-167,9.25D,DG,207.801,0.4200)                    3182500300005 
+MONITOR    (69-TM-169(N,2N)69-TM-168,,SIG,,FIS)                   3182500300006 
+DECAY-MON  (69-TM-168,93.19D,DG,198.251,0.5449,                   3182500300007 
+                             DG,815.989,0.5095)                   3182500300008 
+METHOD     (ACTIV) tirr=16.87 d, tcool=0.90 hr, tmeas=9.24 d      3182500300009 
+ENDBIB               7          0                                 3182500300010 
+NOCOMMON             0          0                                 3182500300011 
+DATA                 3          1                                 3182500300012 
+KT-DUMMY   DATA       DATA-ERR                                    3182500300013 
+MEV        MB         PER-CENT                                    3182500300014 
+ 1.42        1.453E-02 5.9                                        3182500300015 
+ENDDATA              3          0                                 3182500300016 
+ENDSUBENT           15          0                                 3182500399999 
+SUBENT        31825004   20200813                             31973182500400001 
+BIB                  7          9                                 3182500400002 
+REACTION   (79-AU-197(N,3N)79-AU-195,,SIG,,FIS)                   3182500400003 
+SAMPLE     Au foil placed on Al flexo-rabbit ending surface       3182500400004 
+DECAY-DATA (79-AU-195-G,186.01D,DG,98.857,0.1121)                 3182500400005 
+MONITOR    (79-AU-197(N,2N)79-AU-196,,SIG,,FIS)                   3182500400006 
+DECAY-MON  (79-AU-196-G,6.1669D,DG,355.73,0.8700,                 3182500400007 
+                                DG,333.03,0.2290)                 3182500400008 
+METHOD     (ACTIV) tirr=135.56 d, tcool=63.33 d, tmeas=25.77 d    3182500400009 
+COMMENT    Martin Schulc (2020-09-14):                            3182500400010 
+            "63.33 h" in the article table should read "63.33 d". 3182500400011 
+ENDBIB               9          0                                 3182500400012 
+NOCOMMON             0          0                                 3182500400013 
+DATA                 3          1                                 3182500400014 
+KT-DUMMY   DATA       DATA-ERR                                    3182500400015 
+MEV        MB         PER-CENT                                    3182500400016 
+ 1.42        2.328E-02 6.9                                        3182500400017 
+ENDDATA              3          0                                 3182500400018 
+ENDSUBENT           17          0                                 3182500499999 
+SUBENT        31825005   20200813                             31973182500500001 
+BIB                  4          6                                 3182500500002 
+REACTION   (83-BI-209(N,3N)83-BI-207,,SIG,,FIS)                   3182500500003 
+SAMPLE     Bi2O3 compound powder (1500 g) attached to the Al      3182500500004 
+            ending of the pneumatic flexo-rabbit system           3182500500005 
+DECAY-DATA (83-BI-207,31.55YR,DG,569.698,0.9775,                  3182500500006 
+                              DG,1063.656,0.7450)                 3182500500007 
+METHOD     (ACTIV) tirr=124.71 d, tcool=0.583 h, tmeas=12.09 d    3182500500008 
+ENDBIB               6          0                                 3182500500009 
+NOCOMMON             0          0                                 3182500500010 
+DATA                 3          1                                 3182500500011 
+KT-DUMMY   DATA       DATA-ERR                                    3182500500012 
+MEV        MB         PER-CENT                                    3182500500013 
+ 1.42        2.297E-02 5.1                                        3182500500014 
+ENDDATA              3          0                                 3182500500015 
+ENDSUBENT           14          0                                 3182500599999 
+SUBENT        31825006   20200813                             31973182500600001 
+BIB                  4          5                                 3182500600002 
+REACTION   (83-BI-209(N,4N)83-BI-206,,SIG,,FIS)                   3182500600003 
+SAMPLE     Bi2O3 compound powder (1500 g) attached to the Al      3182500600004 
+            ending of the pneumatic flexo-rabbit system           3182500600005 
+DECAY-DATA (83-BI-206,6.243D,DG,803.1,0.9900)                     3182500600006 
+METHOD     (ACTIV) tirr=124.71 d, tcool=0.583 h, tmeas=5.03 d     3182500600007 
+ENDBIB               5          0                                 3182500600008 
+NOCOMMON             0          0                                 3182500600009 
+DATA                 3          1                                 3182500600010 
+KT-DUMMY   DATA       DATA-ERR                                    3182500600011 
+MEV        MB         PER-CENT                                    3182500600012 
+ 1.42        2.132E-05 13.9                                       3182500600013 
+ENDDATA              3          0                                 3182500600014 
+ENDSUBENT           13          0                                 3182500699999 
+ENDENTRY             6          0                                 3182599999999 
