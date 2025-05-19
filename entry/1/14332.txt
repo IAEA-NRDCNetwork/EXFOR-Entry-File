@@ -1,6 +1,6 @@
-ENTRY            14332   20210920                             148714332  0    1 
-SUBENT        14332001   20210920                             148714332  1    1 
-BIB                 13         37                                 14332  1    2 
+ENTRY            14332   20220320                             149414332  0    1 
+SUBENT        14332001   20220320                             149414332  1    1 
+BIB                 13         38                                 14332  1    2 
 TITLE      Neutron capture cross sections of 184,189,190,192Os    14332  1    3 
            and the decays of 185Os,190mOs, 191Os, and 193Os       14332  1    4 
 AUTHOR     (K.S.Krane)                                            14332  1    5 
@@ -38,13 +38,14 @@ HISTORY    (20120506C) Compiled by S.H.                           14332  1   36
            (20160315A) OS. EN-DUMMY corrected in subs.2-5,        14332  1   37 
             DECAY-DATA corrected in subs.4,5,9,10                 14332  1   38 
            (20210901A) OS.                                        14332  1   39 
-ENDBIB              37          0                                 14332  1   40 
-COMMON               2          3                                 14332  1   41 
-ERR-1      ERR-2                                                  14332  1   42 
-PER-CENT   PER-CENT                                               14332  1   43 
-3.0        1.0                                                    14332  1   44 
-ENDCOMMON            3          0                                 14332  1   45 
-ENDSUBENT           44          0                                 14332  199999 
+           (20220308A) OS. Monitor units corrected in subs.3,8    14332  1   40 
+ENDBIB              38          0                                 14332  1   41 
+COMMON               2          3                                 14332  1   42 
+ERR-1      ERR-2                                                  14332  1   43 
+PER-CENT   PER-CENT                                               14332  1   44 
+3.0        1.0                                                    14332  1   45 
+ENDCOMMON            3          0                                 14332  1   46 
+ENDSUBENT           45          0                                 14332  199999 
 SUBENT        14332002   20210920                             148714332  2    1 
 BIB                  6         14                                 14332  2    2 
 REACTION   (76-OS-184(N,G)76-OS-185,,SIG,,MXW)                    14332  2    3 
@@ -73,8 +74,8 @@ B          B          B                                           14332  2   25
 3480.0     3480.0     1160.0                                      14332  2   26 
 ENDDATA              3          0                                 14332  2   27 
 ENDSUBENT           26          0                                 14332  299999 
-SUBENT        14332003   20160315                             141614332  3    1 
-BIB                  5         12                                 14332  3    2 
+SUBENT        14332003   20220320                             149414332  3    1 
+BIB                  5         13                                 14332  3    2 
 REACTION   (76-OS-189(N,G)76-OS-190-M,,SIG,,MXW)                  14332  3    3 
 DECAY-DATA (76-OS-190-M,9.86MIN,DG,186.7,0.731,                   14332  3    4 
                                 DG,361.1,0.953,                   14332  3    5 
@@ -87,14 +88,15 @@ MONITOR    ((MONIT1)79-AU-197(N,G)79-AU-198,,SIG,,MXW) Monitor in 14332  3    9
            form of dilute  alloy  of 0.438% in thin Al metal foil 14332  3   12 
 STATUS     (TABLE) Data taken from text, p.5 of the reference     14332  3   13 
 HISTORY    (20160315A) EN-DUMMY corrected                         14332  3   14 
-ENDBIB              12          0                                 14332  3   15 
-NOCOMMON             0          0                                 14332  3   16 
-DATA                 5          1                                 14332  3   17 
-EN-DUMMY   DATA       ERR-T      MONIT1     MONIT3                14332  3   18 
-EV         MB         MB         MB         MB                    14332  3   19 
-0.0253         0.257      0.018   98.65      37.18                14332  3   20 
-ENDDATA              3          0                                 14332  3   21 
-ENDSUBENT           20          0                                 14332  399999 
+           (20220308A) Monitor units changed MB -> B              14332  3   15 
+ENDBIB              13          0                                 14332  3   16 
+NOCOMMON             0          0                                 14332  3   17 
+DATA                 5          1                                 14332  3   18 
+EN-DUMMY   DATA       ERR-T      MONIT1     MONIT3                14332  3   19 
+EV         MB         MB         B          B                     14332  3   20 
+0.0253         0.257      0.018   98.65      37.18                14332  3   21 
+ENDDATA              3          0                                 14332  3   22 
+ENDSUBENT           21          0                                 14332  399999 
 SUBENT        14332004   20210920                             148714332  4    1 
 BIB                  6         12                                 14332  4    2 
 REACTION   (76-OS-190(N,G)76-OS-191-G,,SIG,,MXW)                  14332  4    3 
@@ -189,27 +191,28 @@ EV         B          B          B          B          B          14332  7   24
 0.5        330.0      330.0      110.0      1550.0     74.2       14332  7   25 
 ENDDATA              3          0                                 14332  7   26 
 ENDSUBENT           25          0                                 14332  799999 
-SUBENT        14332008   20120506                             13831433200800001 
-BIB                  4         11                                 1433200800002 
-REACTION   (76-OS-189(N,G)76-OS-190-M,,RI)                        1433200800003 
-DECAY-DATA (76-OS-190-M,9.86MIN,DG,186.7,0.731,                   1433200800004 
-                                DG,361.1,0.953,                   1433200800005 
-                                DG,502.6,0.978,                   1433200800006 
-                                DG,616.3,0.994)                   1433200800007 
-            Half-life measured by author                          1433200800008 
-MONITOR    ((MONIT2)79-AU-197(N,G)79-AU-198,,RI) Monitor in       1433200800009 
-             form of alloy of 0.134% in thin Al metal foil        1433200800010 
-           ((MONIT4)27-CO-59(N,G)27-CO-60,,RI) Monitor in         1433200800011 
-           form of dilute  alloy  of 0.438% in thin Al metal foil 1433200800012 
-STATUS     (TABLE) Data taken from text, p.5 of the reference     1433200800013 
-ENDBIB              11          0                                 1433200800014 
-NOCOMMON             0          0                                 1433200800015 
-DATA                 5          1                                 1433200800016 
-EN-MIN     DATA       ERR-T      MONIT2     MONIT4                1433200800017 
-EV         MB         MB         MB         MB                    1433200800018 
-0.5            32.9       1.9    1550.0     74.2                  1433200800019 
-ENDDATA              3          0                                 1433200800020 
-ENDSUBENT           19          0                                 1433200899999 
+SUBENT        14332008   20220320                             149414332  8    1 
+BIB                  5         12                                 14332  8    2 
+REACTION   (76-OS-189(N,G)76-OS-190-M,,RI)                        14332  8    3 
+DECAY-DATA (76-OS-190-M,9.86MIN,DG,186.7,0.731,                   14332  8    4 
+                                DG,361.1,0.953,                   14332  8    5 
+                                DG,502.6,0.978,                   14332  8    6 
+                                DG,616.3,0.994)                   14332  8    7 
+            Half-life measured by author                          14332  8    8 
+MONITOR    ((MONIT2)79-AU-197(N,G)79-AU-198,,RI) Monitor in       14332  8    9 
+             form of alloy of 0.134% in thin Al metal foil        14332  8   10 
+           ((MONIT4)27-CO-59(N,G)27-CO-60,,RI) Monitor in         14332  8   11 
+           form of dilute  alloy  of 0.438% in thin Al metal foil 14332  8   12 
+STATUS     (TABLE) Data taken from text, p.5 of the reference     14332  8   13 
+HISTORY    (20220308A) Monitor units changed MB -> B              14332  8   14 
+ENDBIB              12          0                                 14332  8   15 
+NOCOMMON             0          0                                 14332  8   16 
+DATA                 5          1                                 14332  8   17 
+EN-MIN     DATA       ERR-T      MONIT2     MONIT4                14332  8   18 
+EV         MB         MB         B          B                     14332  8   19 
+0.5            32.9       1.9    1550.0     74.2                  14332  8   20 
+ENDDATA              3          0                                 14332  8   21 
+ENDSUBENT           20          0                                 14332  899999 
 SUBENT        14332009   20210920                             148714332  9    1 
 BIB                  6         11                                 14332  9    2 
 REACTION   (76-OS-190(N,G)76-OS-191-G,,RI)                        14332  9    3 
