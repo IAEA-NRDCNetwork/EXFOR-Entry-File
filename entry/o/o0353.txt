@@ -1,6 +1,6 @@
-ENTRY            O0353   20170417                             O061O0353  0    1 
-SUBENT        O0353001   20170417                             O061O0353  1    1 
-BIB                 14         40                                 O0353  1    2 
+ENTRY            O0353   20230519                             O096O0353  0    1 
+SUBENT        O0353001   20230519                             O096O0353  1    1 
+BIB                 14         42                                 O0353  1    2 
 TITLE      On the production of Cl-36 by high energy protons in   O0353  1    3 
            thin and thick targets                                 O0353  1    4 
 AUTHOR     (Th.Schiekel,F.Sudbrock,U.Herpers,M.Gloris,I.Leya,     O0353  1    5 
@@ -10,13 +10,13 @@ REFERENCE  (J,NIM/B,113,484,1996)                                 O0353  1    8
 ADD-RES    (COMP).Alice-900 code and Het Code.                    O0353  1    9 
 FACILITY   (VDGT,2SWTETH).Tandem AMS Facility in Zurich.          O0353  1   10 
 METHOD     (STTA) The stacked foil technique was used. Targets    O0353  1   11 
-           in the form of pure elements or as well defined        O0353  1   12 
+           in the form of pure elements or as well-defined        O0353  1   12 
            chemical compounds were used. An energy range is from  O0353  1   13 
             45 MeV up 2.6 GeV.                                    O0353  1   14 
            (SITA).Two spheres made out of gabbro (a stone with a  O0353  1   15 
            mean density and mean atomic number similar to         O0353  1   16 
            chondrites) and iron with radii of 25 and 10 cm,       O0353  1   17 
-           respectively, were irradiated isotropically with 1600  O0353  1   18 
+           respectively, were irradiated isotopically with 1600   O0353  1   18 
            MeV protons.                                           O0353  1   19 
            (AMS)                                                  O0353  1   20 
 MONITOR    (13-AL-27(P,X)11-NA-22,CUM,SIG) - flux determination   O0353  1   21 
@@ -41,166 +41,181 @@ HISTORY    (19970606C)                                            O0353  1   38
            (20170417U) SD: Syntax of MONIT-REF corrected. Major   O0353  1   40 
            corrections in all Subents. ERR-T -> DATA-ERR.         O0353  1   41 
            REL-REF was added.                                     O0353  1   42 
-ENDBIB              40          0                                 O0353  1   43 
-NOCOMMON             0          0                                 O0353  1   44 
-ENDSUBENT           43          0                                 O0353  199999 
-SUBENT        O0353002   20170417                             O061O0353  2    1 
-BIB                  3          6                                 O0353  2    2 
-REACTION   (20-CA-40(P,X)17-CL-36,,SIG) Shielded                  O0353  2    3 
-STATUS     (TABLE) Tbl. 1 from NIM/B,113,484,1996.                O0353  2    4 
-HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  2    5 
-           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  2    6 
-           were added to right side of values according to the    O0353  2    7 
-           presentation in the Table.                             O0353  2    8 
-ENDBIB               6          0                                 O0353  2    9 
-NOCOMMON             0          0                                 O0353  2   10 
-DATA                 4         12                                 O0353  2   11 
-EN         EN-ERR     DATA       DATA-ERR                         O0353  2   12 
-MEV        MEV        MB         MB                               O0353  2   13 
-       46.8        3.1       2.86       0.57                      O0353  2   14 
-       53.0        3.3       5.83       0.39                      O0353  2   15 
-       58.9        2.7       13.1        0.9                      O0353  2   16 
-       63.9        2.5       21.6        1.4                      O0353  2   17 
-       69.0        2.5       40.7        3.1                      O0353  2   18 
-      243.0        1.6       14.0        1.3                      O0353  2   19 
-      286.0        1.0        8.6       0.91                      O0353  2   20 
-      351.0        1.6       13.8        1.9                      O0353  2   21 
-      387.0        1.1       13.9        1.3                      O0353  2   22 
-      800.0        1.0       13.7        1.3                      O0353  2   23 
-     1200.0        1.0       13.5       0.93                      O0353  2   24 
-     1600.0        1.0       11.2       0.96                      O0353  2   25 
-ENDDATA             14          0                                 O0353  2   26 
-ENDSUBENT           25          0                                 O0353  299999 
-SUBENT        O0353003   20170417                             O061O0353  3    1 
-BIB                  3          6                                 O0353  3    2 
+           (20230519A) SD: Subents 002-007 were superseded        O0353  1   43 
+           according to remark from Dr.R.Michel.                  O0353  1   44 
+ENDBIB              42          0                                 O0353  1   45 
+NOCOMMON             0          0                                 O0353  1   46 
+ENDSUBENT           45          0                                 O0353  199999 
+SUBENT        O0353002   20230519                             O096O0353  2    1 
+BIB                  3          9                                 O0353  2    2 
+REACTION   (20-CA-0(P,X)17-CL-36,,SIG) Shielded                   O0353  2    3 
+STATUS     (TABLE) Tbl. 1 from Nucl.Instr.Meth.,B113,484,1996.    O0353  2    4 
+           (SPSDD,O0276024) New results.                          O0353  2    5 
+HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  2    6 
+           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  2    7 
+           were added to right side of values according to the    O0353  2    8 
+           presentation in the Table.                             O0353  2    9 
+           (20230519A) SD: SF1=Ca-40 -> Ca-0 in REACTION code.    O0353  2   10 
+            STATUS updated.                                       O0353  2   11 
+ENDBIB               9          0                                 O0353  2   12 
+NOCOMMON             0          0                                 O0353  2   13 
+DATA                 4         12                                 O0353  2   14 
+EN         EN-ERR     DATA       DATA-ERR                         O0353  2   15 
+MEV        MEV        MB         MB                               O0353  2   16 
+       46.8        3.1       2.86       0.57                      O0353  2   17 
+       53.0        3.3       5.83       0.39                      O0353  2   18 
+       58.9        2.7       13.1        0.9                      O0353  2   19 
+       63.9        2.5       21.6        1.4                      O0353  2   20 
+       69.0        2.5       40.7        3.1                      O0353  2   21 
+      243.0        1.6       14.0        1.3                      O0353  2   22 
+      286.0        1.0        8.6       0.91                      O0353  2   23 
+      351.0        1.6       13.8        1.9                      O0353  2   24 
+      387.0        1.1       13.9        1.3                      O0353  2   25 
+      800.0        1.0       13.7        1.3                      O0353  2   26 
+     1200.0        1.0       13.5       0.93                      O0353  2   27 
+     1600.0        1.0       11.2       0.96                      O0353  2   28 
+ENDDATA             14          0                                 O0353  2   29 
+ENDSUBENT           28          0                                 O0353  299999 
+SUBENT        O0353003   20230519                             O096O0353  3    1 
+BIB                  3          8                                 O0353  3    2 
 REACTION   (22-TI-0(P,X)17-CL-36,,SIG)  Shielded                  O0353  3    3 
-STATUS     (TABLE) Tbl. 1 from NIM/B,113,484,1996.                O0353  3    4 
-HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  3    5 
-           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  3    6 
-           were added to right side of values according to the    O0353  3    7 
-           presentation in the Table.                             O0353  3    8 
-ENDBIB               6          0                                 O0353  3    9 
-NOCOMMON             0          0                                 O0353  3   10 
-DATA                 4         13                                 O0353  3   11 
-EN         EN-ERR     DATA       DATA-ERR                         O0353  3   12 
-MEV        MEV        MB         MB                               O0353  3   13 
-      115.0        1.5       4.19       0.18                      O0353  3   14 
-      127.0        1.4       4.68       0.20                      O0353  3   15 
-      138.0        1.3       5.21       0.23                      O0353  3   16 
-      150.0        1.2       5.59       0.24                      O0353  3   17 
-      160.0        1.0       6.47       0.28                      O0353  3   18 
-      242.0        1.5       6.73       0.62                      O0353  3   19 
-      285.0        0.9       8.14       0.75                      O0353  3   20 
-      350.0        1.5      10.10       0.93                      O0353  3   21 
-      387.0        0.9      11.40       1.05                      O0353  3   22 
-      800.0        1.0      17.10       0.77                      O0353  3   23 
-     1200.0        1.0      17.52       0.79                      O0353  3   24 
-     1600.0        1.0      20.22       0.88                      O0353  3   25 
-     2600.0        1.0      19.56       0.92                      O0353  3   26 
-ENDDATA             15          0                                 O0353  3   27 
-ENDSUBENT           26          0                                 O0353  399999 
-SUBENT        O0353004   20170417                             O061O0353  4    1 
-BIB                  3          6                                 O0353  4    2 
+STATUS     (TABLE) Tbl. 1 from Nucl.Instr.Meth.,B113,484,1996.    O0353  3    4 
+           (SPSDD,O0276034) New results.                          O0353  3    5 
+HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  3    6 
+           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  3    7 
+           were added to right side of values according to the    O0353  3    8 
+           presentation in the Table.                             O0353  3    9 
+           (20230519A) SD: STATUS updated.                        O0353  3   10 
+ENDBIB               8          0                                 O0353  3   11 
+NOCOMMON             0          0                                 O0353  3   12 
+DATA                 4         13                                 O0353  3   13 
+EN         EN-ERR     DATA       DATA-ERR                         O0353  3   14 
+MEV        MEV        MB         MB                               O0353  3   15 
+      115.0        1.5       4.19       0.18                      O0353  3   16 
+      127.0        1.4       4.68       0.20                      O0353  3   17 
+      138.0        1.3       5.21       0.23                      O0353  3   18 
+      150.0        1.2       5.59       0.24                      O0353  3   19 
+      160.0        1.0       6.47       0.28                      O0353  3   20 
+      242.0        1.5       6.73       0.62                      O0353  3   21 
+      285.0        0.9       8.14       0.75                      O0353  3   22 
+      350.0        1.5      10.10       0.93                      O0353  3   23 
+      387.0        0.9      11.40       1.05                      O0353  3   24 
+      800.0        1.0      17.10       0.77                      O0353  3   25 
+     1200.0        1.0      17.52       0.79                      O0353  3   26 
+     1600.0        1.0      20.22       0.88                      O0353  3   27 
+     2600.0        1.0      19.56       0.92                      O0353  3   28 
+ENDDATA             15          0                                 O0353  3   29 
+ENDSUBENT           28          0                                 O0353  399999 
+SUBENT        O0353004   20230519                             O096O0353  4    1 
+BIB                  3          8                                 O0353  4    2 
 REACTION   (25-MN-55(P,X)17-CL-36,,SIG) Shielded.                 O0353  4    3 
-STATUS     (TABLE) Tbl. 2 from NIM/B,113,484,1996.                O0353  4    4 
-HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  4    5 
-           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  4    6 
-           were added to right side of values according to the    O0353  4    7 
-           presentation in the Table.                             O0353  4    8 
-ENDBIB               6          0                                 O0353  4    9 
-NOCOMMON             0          0                                 O0353  4   10 
-DATA                 4         12                                 O0353  4   11 
-EN         EN-ERR     DATA       DATA-ERR                         O0353  4   12 
-MEV        MEV        MB         MB                               O0353  4   13 
-      106.0       1.31       0.04       0.01                      O0353  4   14 
-      140.0        1.3       0.19       0.03                      O0353  4   15 
-      165.0       1.30       0.35       0.03                      O0353  4   16 
-      199.0       1.30       0.64       0.06                      O0353  4   17 
-      239.0        1.6       1.39       0.08                      O0353  4   18 
-      282.0        1.0       2.75      0.013                      O0353  4   19 
-      348.0        1.6       3.75      0.017                      O0353  4   20 
-      386.0        1.0       4.12       0.02                      O0353  4   21 
-      800.0        1.0       9.18      0.413                      O0353  4   22 
-     1200.0        1.0       17.1      0.113                      O0353  4   23 
-     1600.0        1.0       14.3       0.12                      O0353  4   24 
-     2600.0        1.0       11.9       0.53                      O0353  4   25 
-ENDDATA             14          0                                 O0353  4   26 
-ENDSUBENT           25          0                                 O0353  499999 
-SUBENT        O0353005   20170417                             O061O0353  5    1 
-BIB                  3          6                                 O0353  5    2 
+STATUS     (TABLE) Tbl. 2 from Nucl.Instr.Meth.,B113,484,1996.    O0353  4    4 
+           (SPSDD,O0276050) New results.                          O0353  4    5 
+HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  4    6 
+           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  4    7 
+           were added to right side of values according to the    O0353  4    8 
+           presentation in the Table.                             O0353  4    9 
+           (20230519A) SD: STATUS updated.                        O0353  4   10 
+ENDBIB               8          0                                 O0353  4   11 
+NOCOMMON             0          0                                 O0353  4   12 
+DATA                 4         12                                 O0353  4   13 
+EN         EN-ERR     DATA       DATA-ERR                         O0353  4   14 
+MEV        MEV        MB         MB                               O0353  4   15 
+      106.0       1.31       0.04       0.01                      O0353  4   16 
+      140.0        1.3       0.19       0.03                      O0353  4   17 
+      165.0       1.30       0.35       0.03                      O0353  4   18 
+      199.0       1.30       0.64       0.06                      O0353  4   19 
+      239.0        1.6       1.39       0.08                      O0353  4   20 
+      282.0        1.0       2.75      0.013                      O0353  4   21 
+      348.0        1.6       3.75      0.017                      O0353  4   22 
+      386.0        1.0       4.12       0.02                      O0353  4   23 
+      800.0        1.0       9.18      0.413                      O0353  4   24 
+     1200.0        1.0       17.1      0.113                      O0353  4   25 
+     1600.0        1.0       14.3       0.12                      O0353  4   26 
+     2600.0        1.0       11.9       0.53                      O0353  4   27 
+ENDDATA             14          0                                 O0353  4   28 
+ENDSUBENT           27          0                                 O0353  499999 
+SUBENT        O0353005   20230519                             O096O0353  5    1 
+BIB                  3          8                                 O0353  5    2 
 REACTION   (26-FE-0(P,X)17-CL-36,,SIG) Shielded                   O0353  5    3 
-STATUS     (TABLE) Tbl. 2 from NIM/B,113,484,1996.                O0353  5    4 
-HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  5    5 
-           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  5    6 
-           were added to right side of values according to the    O0353  5    7 
-           presentation in the Table.                             O0353  5    8 
-ENDBIB               6          0                                 O0353  5    9 
-NOCOMMON             0          0                                 O0353  5   10 
-DATA                 4         14                                 O0353  5   11 
-EN         EN-ERR     DATA       DATA-ERR                         O0353  5   12 
-MEV        MEV        MB         MB                               O0353  5   13 
-       69.8        0.5      0.026      0.013                      O0353  5   14 
-      114.0        1.5      0.041      0.002                      O0353  5   15 
-      137.0        1.4      0.100      0.004                      O0353  5   16 
-      160.0        1.0      0.225      0.010                      O0353  5   17 
-      236.0        1.5      0.733      0.067                      O0353  5   18 
-      237.0        1.6      0.874      0.080                      O0353  5   19 
-      280.0        1.0      1.200      0.110                      O0353  5   20 
-      345.0        1.2      2.320      0.180                      O0353  5   21 
-      346.0        1.5      2.280      0.210                      O0353  5   22 
-      382.0        1.0      2.920      0.200                      O0353  5   23 
-      800.0        1.0      8.790      0.630                      O0353  5   24 
-     1600.0        1.0      10.30      0.610                      O0353  5   25 
-     2600.0        1.0      10.40      0.640                      O0353  5   26 
-     2600.0        1.0      10.40      0.522                      O0353  5   27 
-ENDDATA             16          0                                 O0353  5   28 
-ENDSUBENT           27          0                                 O0353  599999 
-SUBENT        O0353006   20170417                             O061O0353  6    1 
-BIB                  3          6                                 O0353  6    2 
+STATUS     (TABLE) Tbl. 2 from Nucl.Instr.Meth.,B113,484,1996.    O0353  5    4 
+           (SPSDD,O0276061) New results.                          O0353  5    5 
+HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  5    6 
+           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  5    7 
+           were added to right side of values according to the    O0353  5    8 
+           presentation in the Table.                             O0353  5    9 
+           (20230519A) SD: STATUS updated.                        O0353  5   10 
+ENDBIB               8          0                                 O0353  5   11 
+NOCOMMON             0          0                                 O0353  5   12 
+DATA                 4         14                                 O0353  5   13 
+EN         EN-ERR     DATA       DATA-ERR                         O0353  5   14 
+MEV        MEV        MB         MB                               O0353  5   15 
+       69.8        0.5      0.026      0.013                      O0353  5   16 
+      114.0        1.5      0.041      0.002                      O0353  5   17 
+      137.0        1.4      0.100      0.004                      O0353  5   18 
+      160.0        1.0      0.225      0.010                      O0353  5   19 
+      236.0        1.5      0.733      0.067                      O0353  5   20 
+      237.0        1.6      0.874      0.080                      O0353  5   21 
+      280.0        1.0      1.200      0.110                      O0353  5   22 
+      345.0        1.2      2.320      0.180                      O0353  5   23 
+      346.0        1.5      2.280      0.210                      O0353  5   24 
+      382.0        1.0      2.920      0.200                      O0353  5   25 
+      800.0        1.0      8.790      0.630                      O0353  5   26 
+     1600.0        1.0      10.30      0.610                      O0353  5   27 
+     2600.0        1.0      10.40      0.640                      O0353  5   28 
+     2600.0        1.0      10.40      0.522                      O0353  5   29 
+ENDDATA             16          0                                 O0353  5   30 
+ENDSUBENT           29          0                                 O0353  599999 
+SUBENT        O0353006   20230519                             O096O0353  6    1 
+BIB                  3          8                                 O0353  6    2 
 REACTION   (27-CO-59(P,X)17-CL-36,,SIG) Shielded                  O0353  6    3 
-STATUS     (TABLE) Tbl. 2 from NIM/B,113,484,1996.                O0353  6    4 
-HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  6    5 
-           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  6    6 
-           were added to right side of values according to the    O0353  6    7 
-           presentation in the Table.                             O0353  6    8 
-ENDBIB               6          0                                 O0353  6    9 
-NOCOMMON             0          0                                 O0353  6   10 
-DATA                 4          5                                 O0353  6   11 
-EN         EN-ERR     DATA       DATA-ERR                         O0353  6   12 
-MEV        MEV        MB         MB                               O0353  6   13 
-      234.0        1.7       0.26       0.02                      O0353  6   14 
-      278.0        1.2       0.62       0.05                      O0353  6   15 
-      344.0        1.7       1.31       0.11                      O0353  6   16 
-      380.0        1.2       1.74       0.14                      O0353  6   17 
-     1600.0        1.0       9.45       0.56                      O0353  6   18 
-ENDDATA              7          0                                 O0353  6   19 
-ENDSUBENT           18          0                                 O0353  699999 
-SUBENT        O0353007   20170417                             O061O0353  7    1 
-BIB                  3          6                                 O0353  7    2 
+STATUS     (TABLE) Tbl. 2 from Nucl.Instr.Meth.,B113,484,1996.    O0353  6    4 
+           (SPSDD,O0276081) New results.                          O0353  6    5 
+HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  6    6 
+           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  6    7 
+           were added to right side of values according to the    O0353  6    8 
+           presentation in the Table.                             O0353  6    9 
+           (20230519A) SD: STATUS updated.                        O0353  6   10 
+ENDBIB               8          0                                 O0353  6   11 
+NOCOMMON             0          0                                 O0353  6   12 
+DATA                 4          5                                 O0353  6   13 
+EN         EN-ERR     DATA       DATA-ERR                         O0353  6   14 
+MEV        MEV        MB         MB                               O0353  6   15 
+      234.0        1.7       0.26       0.02                      O0353  6   16 
+      278.0        1.2       0.62       0.05                      O0353  6   17 
+      344.0        1.7       1.31       0.11                      O0353  6   18 
+      380.0        1.2       1.74       0.14                      O0353  6   19 
+     1600.0        1.0       9.45       0.56                      O0353  6   20 
+ENDDATA              7          0                                 O0353  6   21 
+ENDSUBENT           20          0                                 O0353  699999 
+SUBENT        O0353007   20230519                             O096O0353  7    1 
+BIB                  3          8                                 O0353  7    2 
 REACTION   (28-NI-0(P,X)17-CL-36,,SIG) Shielded                   O0353  7    3 
-STATUS     (TABLE) Tbl. 2 from NIM/B,113,484,1996.                O0353  7    4 
-HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  7    5 
-           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  7    6 
-           were added to right side of values according to the    O0353  7    7 
-           presentation in the Table.                             O0353  7    8 
-ENDBIB               6          0                                 O0353  7    9 
-NOCOMMON             0          0                                 O0353  7   10 
-DATA                 4         13                                 O0353  7   11 
-EN         EN-ERR     DATA       DATA-ERR                         O0353  7   12 
-MEV        MEV        MB         MB                               O0353  7   13 
-      106.0        1.6      0.030      0.003                      O0353  7   14 
-      125.0        1.3      0.027      0.002                      O0353  7   15 
-      147.0        1.4      0.118      0.007                      O0353  7   16 
-      231.0        1.6      0.523      0.044                      O0353  7   17 
-      275.0        1.1      0.651      0.046                      O0353  7   18 
-      341.0        1.6       1.18       0.08                      O0353  7   19 
-      378.0        1.1       1.85       0.15                      O0353  7   20 
-      800.0        1.0       7.01       0.54                      O0353  7   21 
-     1200.0        1.0       9.30       0.51                      O0353  7   22 
-     1600.0        1.0       9.81       0.50                      O0353  7   23 
-     1600.0        1.0       9.17       0.58                      O0353  7   24 
-     1600.0        1.0       9.12       0.79                      O0353  7   25 
-     2600.0        1.0       8.22       0.41                      O0353  7   26 
-ENDDATA             15          0                                 O0353  7   27 
-ENDSUBENT           26          0                                 O0353  799999 
+STATUS     (TABLE) Tbl. 2 from Nucl.Instr.Meth.,B113,484,1996.    O0353  7    4 
+           (SPSDD,O0276099) New results.                          O0353  7    5 
+HISTORY    (20170417A) SD: STATUS was added. Free text was update O0353  7    6 
+           in ERR-ANALYS. ERR-ANALYS moved to Subent 001. Zeros   O0353  7    7 
+           were added to right side of values according to the    O0353  7    8 
+           presentation in the Table.                             O0353  7    9 
+           (20230519A) SD: STATUS updated.                        O0353  7   10 
+ENDBIB               8          0                                 O0353  7   11 
+NOCOMMON             0          0                                 O0353  7   12 
+DATA                 4         13                                 O0353  7   13 
+EN         EN-ERR     DATA       DATA-ERR                         O0353  7   14 
+MEV        MEV        MB         MB                               O0353  7   15 
+      106.0        1.6      0.030      0.003                      O0353  7   16 
+      125.0        1.3      0.027      0.002                      O0353  7   17 
+      147.0        1.4      0.118      0.007                      O0353  7   18 
+      231.0        1.6      0.523      0.044                      O0353  7   19 
+      275.0        1.1      0.651      0.046                      O0353  7   20 
+      341.0        1.6       1.18       0.08                      O0353  7   21 
+      378.0        1.1       1.85       0.15                      O0353  7   22 
+      800.0        1.0       7.01       0.54                      O0353  7   23 
+     1200.0        1.0       9.30       0.51                      O0353  7   24 
+     1600.0        1.0       9.81       0.50                      O0353  7   25 
+     1600.0        1.0       9.17       0.58                      O0353  7   26 
+     1600.0        1.0       9.12       0.79                      O0353  7   27 
+     2600.0        1.0       8.22       0.41                      O0353  7   28 
+ENDDATA             15          0                                 O0353  7   29 
+ENDSUBENT           28          0                                 O0353  799999 
 ENDENTRY             7          0                                 O035399999999 

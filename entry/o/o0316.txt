@@ -1,13 +1,13 @@
-ENTRY            O0316   20221225                             O093O0316  0    1 
-SUBENT        O0316001   20221225                             O093O0316  1    1 
-BIB                 12         44                                 O0316  1    2 
+ENTRY            O0316   20230313                             O096O0316  0    1 
+SUBENT        O0316001   20230313                             O096O0316  1    1 
+BIB                 12         54                                 O0316  1    2 
 TITLE      Cross section measurements of proton capture           O0316  1    3 
            reactions on Sr isotopes for astrophysics applications O0316  1    4 
 AUTHOR     (S.Harissopulos, E.Vagena, P.Dimitriou, M.Axiotis,     O0316  1    5 
            S.Galanopoulos, V.Foteinou, A.Lagoyannis)              O0316  1    6 
 INSTITUTE  (2GRCATH)                                              O0316  1    7 
 REFERENCE  (J,PR/C,104,025804,2021)                               O0316  1    8 
-           (J,NP/A,719,C115,2003) Prelim.results for 86Sr         O0316  1    9 
+           (J,NP/A,719,115C,2003) Prelim.results for 86Sr         O0316  1    9 
 REL-REF    (O,O0918001,S.Harissopulos+,J,PR/C,64,055804,2001) -   O0316  1   10 
                               final data for 93Nb                 O0316  1   11 
            (O,O2330001,S.Harissopulos+,J,PR/C,93,025804,2016) -   O0316  1   12 
@@ -29,238 +29,332 @@ FACILITY   (DYNAM,2GERTHS) 4-MV single-ended dynamitron (cross    O0316  1   25
            in the 2-3.6 MeV range)                                O0316  1   28 
            (DYNAM,2GERBOC) The 4pi gamma-summing technique was    O0316  1   29 
            employed using protons with energies from 2 to 5 MeV   O0316  1   30 
-SAMPLE      Targets were prepared by evaporating highly enriched  O0316  1   31 
-           isotopic material onto 0.2-mm-thick tantalum disks     O0316  1   32 
-           with a diameter of 4 cm.                               O0316  1   33 
-DETECTOR   (HPGE,BGO)  four large volume HPGe detectors,          O0316  1   34 
-           all shielded with bismouthgermanium-oxide (BGO)        O0316  1   35 
-           crystals for Compton background suppression.           O0316  1   36 
-           (NAICR)                                                O0316  1   37 
-METHOD     (BCINT)                                                O0316  1   38 
-           Gamma-angular distribution measurements                O0316  1   39 
-CORRECTION  Cr.sect. corrected for screening effects.             O0316  1   40 
-ERR-ANALYS (ERR-1) Systematic error due to the x-ray fluorescence O0316  1   41 
-           technique and the specific setup used                  O0316  1   42 
-           (ERR-S,1.,2.) Statistical error                        O0316  1   43 
-           (ERR-T) Total error                                    O0316  1   44 
-HISTORY    (20200114C) SD                                         O0316  1   45 
-           (20221225A) SD: Data were added.                       O0316  1   46 
-ENDBIB              44          0                                 O0316  1   47 
-COMMON               1          3                                 O0316  1   48 
-ERR-1                                                             O0316  1   49 
-PER-CENT                                                          O0316  1   50 
-  7.                                                              O0316  1   51 
-ENDCOMMON            3          0                                 O0316  1   52 
-ENDSUBENT           51          0                                 O0316  199999 
-SUBENT        O0316002   20221225                             O093O0316  2    1 
-BIB                  7         13                                 O0316  2    2 
+           (VDGT,2GRCATH) 5.5-MV T11 Van de Graaff -              O0316  1   31 
+                                          88Sr measurement        O0316  1   32 
+SAMPLE      Targets were prepared by evaporating highly enriched  O0316  1   33 
+           isotopic material onto 0.2-mm-thick tantalum disks     O0316  1   34 
+           with a diameter of 4 cm.                               O0316  1   35 
+DETECTOR   (HPGE,BGO)  four large volume HPGe detectors,          O0316  1   36 
+           all shielded with bismuth-germanium-oxide (BGO)        O0316  1   37 
+           crystals for Compton background suppression.           O0316  1   38 
+           In the cross section measurements carried out in AthensO0316  1   39 
+           one HPGE detector without any BGO shields was used.    O0316  1   40 
+           (NAICR)                                                O0316  1   41 
+METHOD     (BCINT) Gamma-angular distribution measurements        O0316  1   42 
+CORRECTION Correction was done by dividing the experimental       O0316  1   43 
+           cross sections with the corresponding electron         O0316  1   44 
+           screening factors.                                     O0316  1   45 
+ERR-ANALYS (ERR-1) Systematic error in the determination of the   O0316  1   46 
+           target thickness due to the x-ray fluorescence         O0316  1   47 
+           technique and the specific setup used                  O0316  1   48 
+           (ERR-S,1.,2.) Statistical error                        O0316  1   49 
+           (ERR-T) Total error                                    O0316  1   50 
+HISTORY    (20200114C) SD                                         O0316  1   51 
+           (20221225A) SD: Data from final publ. added.           O0316  1   52 
+           (20230313R) SD: Additional data received from          O0316  1   53 
+           Dr.S.V.Harissopulos.                                   O0316  1   54 
+           (20230313A) SD: Entry corrected and updated according  O0316  1   55 
+           to the data received from the author.                  O0316  1   56 
+ENDBIB              54          0                                 O0316  1   57 
+COMMON               1          3                                 O0316  1   58 
+ERR-1                                                             O0316  1   59 
+PER-CENT                                                          O0316  1   60 
+  7.                                                              O0316  1   61 
+ENDCOMMON            3          0                                 O0316  1   62 
+ENDSUBENT           61          0                                 O0316  199999 
+SUBENT        O0316002   20230313                             O096O0316  2    1 
+BIB                  7         14                                 O0316  2    2 
 REACTION  1(38-SR-86(P,G)39-Y-87,,SIG)                            O0316  2    3 
           2(38-SR-86(P,G)39-Y-87,,SIG,,SFC)                       O0316  2    4 
-DECAY-DATA (39-Y-87-G,79.8HR)                                     O0316  2    5 
-SAMPLE     (38-SR-86,ENR=0.9689) 86SrCO3 targets were evaporated  O0316  2    6 
-           on Ta-backings.                                        O0316  2    7 
-            Targets thicknesses were:                             O0316  2    8 
-             92. +- 7. ug/cm2 for gamma-angular distributions;    O0316  2    9 
-            194. +- 16. ug/cm2 for 4pi gamma-summing              O0316  2   10 
+SAMPLE     (38-SR-86,ENR=0.9689) 86SrCO3 targets were evaporated  O0316  2    5 
+           on Ta-backings.                                        O0316  2    6 
+            Target thickness was:                                 O0316  2    7 
+             92. +- 7. ug/cm2 for gamma-angular distributions.    O0316  2    8 
+            194. +- 16. ug/cm2 for 4pi gamma-summing technique    O0316  2    9 
+MISC-COL   (MISC) the screening correction factors                O0316  2   10 
 FLAG       (1.) result from gamma-angular distributions           O0316  2   11 
            (2.) result from 4pi gamma-summing                     O0316  2   12 
-ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target homogeneities      O0316  2   13 
+ERR-ANALYS (ERR-2,3.,4.) Uncertainty due to target uniformity     O0316  2   13 
 STATUS     (TABLE) Tbl.II from Phys.Rev.,C104(2021)025804         O0316  2   14 
 HISTORY    (20221225A) SD: Data from new publ. was added.         O0316  2   15 
-ENDBIB              13          0                                 O0316  2   16 
-COMMON               1          3                                 O0316  2   17 
-EN-ERR                                                            O0316  2   18 
-MEV                                                               O0316  2   19 
-   0.005                                                          O0316  2   20 
-ENDCOMMON            3          0                                 O0316  2   21 
-DATA                 6         15                                 O0316  2   22 
-EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2FLAG       O0316  2   23 
-MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      NO-DIM     O0316  2   24 
-      2.464       178.        31.  1.060E+07   1.85E+06         1.O0316  2   25 
-      2.479       183.         7.  1.019E+07   3.74E+05         2.O0316  2   26 
-      2.578       255.         8.  9.304E+06   2.94E+05         2.O0316  2   27 
-      2.677       357.        10.  8.731E+06   2.49E+05         2.O0316  2   28 
-      2.776       431.        11.  7.249E+06   1.93E+05         2.O0316  2   29 
-      2.876       542.        14.  6.364E+06   1.65E+05         2.O0316  2   30 
-      2.959       697.        98.  6.150E+06   8.65E+05         1.O0316  2   31 
-      2.975       696.        17.  5.823E+06   1.39E+05         2.O0316  2   32 
-      3.074       888.        21.  5.396E+06   1.30E+05         2.O0316  2   33 
-      3.174      1080.        26.  4.823E+06   1.15E+05         2.O0316  2   34 
-      3.273      1270.        30.  4.243E+06   1.02E+05         2.O0316  2   35 
-      3.372      1546.        37.  3.915E+06   9.30E+04         2.O0316  2   36 
-      3.454      1738.       268.  3.530E+06   5.45E+05         1.O0316  2   37 
-      3.471      1842.        43.  3.580E+06   8.40E+04         2.O0316  2   38 
-      3.570      2078.        48.  3.136E+06   7.20E+04         2.O0316  2   39 
-ENDDATA             17          0                                 O0316  2   40 
-ENDSUBENT           39          0                                 O0316  299999 
-SUBENT        O0316003   20221225                             O093O0316  3    1 
-BIB                  7         13                                 O0316  3    2 
+           (20230313A) SD: Data updated. FLAG assignment correctedO0316  2   16 
+ENDBIB              14          0                                 O0316  2   17 
+NOCOMMON             0          0                                 O0316  2   18 
+DATA                 8         15                                 O0316  2   19 
+EN-CM      EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     2O0316  2   20 
+MISC       FLAG                                                   O0316  2   21 
+MEV        MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      O0316  2   22 
+NO-DIM     NO-DIM                                                 O0316  2   23 
+      2.464     0.0123       178.        31.  1.060E+07   1.85E+06O0316  2   24 
+      1.057         2.                                            O0316  2   25 
+      2.479     0.0056       183.         7.  1.019E+07   3.74E+05O0316  2   26 
+      1.056         1.                                            O0316  2   27 
+      2.578     0.0056       255.         8.  9.304E+06   2.94E+05O0316  2   28 
+      1.053         1.                                            O0316  2   29 
+      2.677     0.0056       357.        10.  8.731E+06   2.49E+05O0316  2   30 
+      1.050         1.                                            O0316  2   31 
+      2.776     0.0056       431.        11.  7.249E+06   1.93E+05O0316  2   32 
+      1.047         1.                                            O0316  2   33 
+      2.876     0.0056       542.        14.  6.364E+06   1.65E+05O0316  2   34 
+      1.045         1.                                            O0316  2   35 
+      2.959     0.0123       697.        98.  6.150E+06   8.65E+05O0316  2   36 
+      1.043         2.                                            O0316  2   37 
+      2.975     0.0056       696.        17.  5.823E+06   1.39E+05O0316  2   38 
+      1.043         1.                                            O0316  2   39 
+      3.074     0.0056       888.        21.  5.396E+06   1.30E+05O0316  2   40 
+      1.040         1.                                            O0316  2   41 
+      3.174     0.0056      1080.        26.  4.823E+06   1.15E+05O0316  2   42 
+      1.039         1.                                            O0316  2   43 
+      3.273     0.0056      1270.        30.  4.243E+06   1.02E+05O0316  2   44 
+      1.037         1.                                            O0316  2   45 
+      3.372     0.0056      1546.        37.  3.915E+06   9.30E+04O0316  2   46 
+      1.035         1.                                            O0316  2   47 
+      3.454     0.0123      1738.       268.  3.530E+06   5.45E+05O0316  2   48 
+      1.034         2.                                            O0316  2   49 
+      3.471     0.0056      1842.        43.  3.580E+06   8.40E+04O0316  2   50 
+      1.034         1.                                            O0316  2   51 
+      3.570     0.0056      2078.        48.  3.136E+06   7.20E+04O0316  2   52 
+      1.032         1.                                            O0316  2   53 
+ENDDATA             34          0                                 O0316  2   54 
+ENDSUBENT           53          0                                 O0316  299999 
+SUBENT        O0316003   20230313                             O096O0316  3    1 
+BIB                  8         15                                 O0316  3    2 
 REACTION  1(38-SR-86(P,G)39-Y-87-M,,SIG)                          O0316  3    3 
           2(38-SR-86(P,G)39-Y-87-M,,SIG,,SFC)                     O0316  3    4 
-DECAY-DATA (39-Y-87-M,13.37HR,DG,381.)                            O0316  3    5 
+DECAY-DATA (39-Y-87-M,13.37HR)                                    O0316  3    5 
 SAMPLE     (38-SR-86,ENR=0.9689) 86SrCO3 targets were evaporated  O0316  3    6 
            on Ta-backings.                                        O0316  3    7 
-            Targets thicknesses were:                             O0316  3    8 
-             92. +- 7. ug/cm2 for gamma-angular distributions;    O0316  3    9 
-            194. +- 16. ug/cm2 for 4pi gamma-summing              O0316  3   10 
-FLAG       (1.) result from gamma-angular distributions           O0316  3   11 
-           (2.) result from 4pi gamma-summing                     O0316  3   12 
-ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target homogeneities      O0316  3   13 
-STATUS     (TABLE) Tbl.II from Phys.Rev.,C104(2021)025804         O0316  3   14 
-HISTORY    (20221225C) SD                                         O0316  3   15 
-ENDBIB              13          0                                 O0316  3   16 
-COMMON               1          3                                 O0316  3   17 
-EN-ERR                                                            O0316  3   18 
-MEV                                                               O0316  3   19 
-   0.005                                                          O0316  3   20 
-ENDCOMMON            3          0                                 O0316  3   21 
-DATA                 6         15                                 O0316  3   22 
-EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2FLAG       O0316  3   23 
-MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      NO-DIM     O0316  3   24 
-      2.464        29.         8.  1.730E+06   4.76E+05         1.O0316  3   25 
-      2.479        33.         3.  1.838E+06   1.67E+05         2.O0316  3   26 
-      2.578        48.         4.  1.751E+06   1.46E+05         2.O0316  3   27 
-      2.677        64.         4.  1.568E+06   9.80E+04         2.O0316  3   28 
-      2.776        80.         5.  1.349E+06   7.60E+04         2.O0316  3   29 
-      2.876       111.         6.  1.299E+06   6.60E+04         2.O0316  3   30 
-      2.959       148.        23.  1.310E+06   2.03E+05         1.O0316  3   31 
-      2.975       148.         7.  1.239E+06   5.70E+04         2.O0316  3   32 
-      3.074       201.         9.  1.222E+06   5.50E+04         2.O0316  3   33 
-      3.174       243.        10.  1.085E+06   4.50E+04         2.O0316  3   34 
-      3.273       290.        12.  9.690E+05   4.00E+04         2.O0316  3   35 
-      3.372       350.        14.  8.870E+05   3.40E+04         2.O0316  3   36 
-      3.454       445.        96.  9.040E+05   1.95E+05         1.O0316  3   37 
-      3.471       442.        17.  8.590E+05   3.30E+04         2.O0316  3   38 
-      3.570       505.        19.  7.620E+05   2.90E+04         2.O0316  3   39 
-ENDDATA             17          0                                 O0316  3   40 
-ENDSUBENT           39          0                                 O0316  399999 
-SUBENT        O0316004   20221225                             O093O0316  4    1 
-BIB                  6         12                                 O0316  4    2 
+            Target thickness was:                                 O0316  3    8 
+             92. +- 7. ug/cm2 for gamma-angular distributions     O0316  3    9 
+            194. +- 16. ug/cm2 for 4pi gamma-summing technique    O0316  3   10 
+MISC-COL   (MISC) the screening correction factors                O0316  3   11 
+FLAG       (1.) result from gamma-angular distributions           O0316  3   12 
+           (2.) result from 4pi gamma-summing                     O0316  3   13 
+ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target uniformity         O0316  3   14 
+STATUS     (TABLE) Tbl.II from Phys.Rev.,C104(2021)025804         O0316  3   15 
+HISTORY    (20221225C) SD                                         O0316  3   16 
+           (20230313A) SD: Data updated. FLAG assignment correctedO0316  3   17 
+ENDBIB              15          0                                 O0316  3   18 
+NOCOMMON             0          0                                 O0316  3   19 
+DATA                 8         15                                 O0316  3   20 
+EN-CM      EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     2O0316  3   21 
+MISC       FLAG                                                   O0316  3   22 
+MEV        MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      O0316  3   23 
+NO-DIM     NO-DIM                                                 O0316  3   24 
+      2.464     0.0123        29.         8.  1.730E+06   4.76E+05O0316  3   25 
+      1.057         2.                                            O0316  3   26 
+      2.479     0.0056        33.         3.  1.838E+06   1.67E+05O0316  3   27 
+      1.056         1.                                            O0316  3   28 
+      2.578     0.0056        48.         4.  1.751E+06   1.46E+05O0316  3   29 
+      1.053         1.                                            O0316  3   30 
+      2.677     0.0056        64.         4.  1.568E+06   9.80E+04O0316  3   31 
+      1.050         1.                                            O0316  3   32 
+      2.776     0.0056        80.         4.  1.349E+06   7.60E+04O0316  3   33 
+      1.047         1.                                            O0316  3   34 
+      2.876     0.0056       111.         6.  1.299E+06   6.60E+04O0316  3   35 
+      1.045         1.                                            O0316  3   36 
+      2.959     0.0123       148.        23.  1.310E+06   2.03E+05O0316  3   37 
+      1.043         2.                                            O0316  3   38 
+      2.975     0.0056       148.         7.  1.239E+06   5.70E+04O0316  3   39 
+      1.043         1.                                            O0316  3   40 
+      3.074     0.0056       201.         9.  1.222E+06   5.50E+04O0316  3   41 
+      1.040         1.                                            O0316  3   42 
+      3.174     0.0056       243.        10.  1.085E+06   4.50E+04O0316  3   43 
+      1.039         1.                                            O0316  3   44 
+      3.273     0.0056       290.        12.  9.690E+05   4.00E+04O0316  3   45 
+      1.037         1.                                            O0316  3   46 
+      3.372     0.0056       350.        14.  8.870E+05   3.40E+04O0316  3   47 
+      1.035         1.                                            O0316  3   48 
+      3.454     0.0123       445.        96.  9.040E+05   1.95E+05O0316  3   49 
+      1.034         2.                                            O0316  3   50 
+      3.471     0.0056       442.        17.  8.590E+05   3.30E+04O0316  3   51 
+      1.034         1.                                            O0316  3   52 
+      3.570     0.0056       505.        19.  7.620E+05   2.90E+04O0316  3   53 
+      1.032         1.                                            O0316  3   54 
+ENDDATA             34          0                                 O0316  3   55 
+ENDSUBENT           54          0                                 O0316  399999 
+SUBENT        O0316004   20230313                             O096O0316  4    1 
+BIB                  8         15                                 O0316  4    2 
 REACTION  1(38-SR-86(P,G)39-Y-87-G,,SIG)                          O0316  4    3 
           2(38-SR-86(P,G)39-Y-87-G,,SIG,,SFC)                     O0316  4    4 
 SAMPLE     (38-SR-86,ENR=0.9689) 86SrCO3 targets were evaporated  O0316  4    5 
            on Ta-backings.                                        O0316  4    6 
-            Targets thicknesses were:                             O0316  4    7 
-             92. +- 7. ug/cm2 for gamma-angular distributions;    O0316  4    8 
-            194. +- 16. ug/cm2 for 4pi gamma-summing              O0316  4    9 
-FLAG       (1.) result from gamma-angular distributions           O0316  4   10 
-           (2.) result from 4pi gamma-summing                     O0316  4   11 
-ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target homogeneities      O0316  4   12 
-STATUS     (TABLE) Tbl.II from Phys.Rev.,C104(2021)025804         O0316  4   13 
-HISTORY    (20221225C) SD                                         O0316  4   14 
-ENDBIB              12          0                                 O0316  4   15 
-NOCOMMON             0          0                                 O0316  4   16 
-DATA                 6         15                                 O0316  4   17 
-EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2FLAG       O0316  4   18 
-MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      NO-DIM     O0316  4   19 
-      2.464       149.        33.   8.87E+06   1.96E+06         1.O0316  4   20 
-      2.479       150.         6.  8.354E+06   3.34E+05         2.O0316  4   21 
-      2.578       207.         7.  7.553E+06   2.55E+05         2.O0316  4   22 
-      2.677       293.         9.  7.164E+06   2.29E+05         2.O0316  4   23 
-      2.776       351.        11.    5.9E+06   1.77E+05         2.O0316  4   24 
-      2.876       432.        13.  5.065E+06   1.51E+05         2.O0316  4   25 
-      2.959       549.        99.   4.85E+06   8.74E+05         1.O0316  4   26 
-      2.975       548.        15.  4.584E+06   1.27E+05         2.O0316  4   27 
-      3.074       687.        19.  4.173E+06   1.18E+05         2.O0316  4   28 
-      3.174       837.        24.  3.738E+06   1.06E+05         2.O0316  4   29 
-      3.273       980.        28.  3.274E+06   9.40E+04         2.O0316  4   30 
-      3.372      1196.        34.  3.028E+06   8.60E+04         2.O0316  4   31 
-      3.454      1294.       283.   2.63E+06   5.75E+05         1.O0316  4   32 
-      3.471      1400.        40.  2.721E+06   7.80E+04         2.O0316  4   33 
-      3.570      1573.        44.  2.374E+06   6.60E+04         2.O0316  4   34 
-ENDDATA             17          0                                 O0316  4   35 
-ENDSUBENT           34          0                                 O0316  499999 
-SUBENT        O0316005   20221225                             O093O0316  5    1 
-BIB                  6         12                                 O0316  5    2 
+            Target thickness was:                                 O0316  4    7 
+             92. +- 7. ug/cm2 for gamma-angular distributions     O0316  4    8 
+            194. +- 16. ug/cm2 for 4pi gamma-summing technique    O0316  4    9 
+DECAY-DATA (39-Y-87-G,79.8HR)                                     O0316  4   10 
+MISC-COL   (MISC) the screening correction factors                O0316  4   11 
+FLAG       (1.) result from gamma-angular distributions           O0316  4   12 
+           (2.) result from 4pi gamma-summing                     O0316  4   13 
+ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target uniformity         O0316  4   14 
+STATUS     (TABLE) Tbl.II from Phys.Rev.,C104(2021)025804         O0316  4   15 
+HISTORY    (20221225C) SD                                         O0316  4   16 
+           (20230313A) SD: Data updated. FLAG assignment correctedO0316  4   17 
+ENDBIB              15          0                                 O0316  4   18 
+NOCOMMON             0          0                                 O0316  4   19 
+DATA                 8         15                                 O0316  4   20 
+EN-CM      EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     2O0316  4   21 
+MISC       FLAG                                                   O0316  4   22 
+MEV        MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      O0316  4   23 
+NO-DIM     NO-DIM                                                 O0316  4   24 
+      2.464     0.0123       149.        33.   8.87E+06   1.96E+06O0316  4   25 
+      1.057         2.                                            O0316  4   26 
+      2.479     0.0056       150.         6.  8.354E+06   3.34E+05O0316  4   27 
+      1.056         1.                                            O0316  4   28 
+      2.578     0.0056       207.         7.  7.553E+06   2.55E+05O0316  4   29 
+      1.053         1.                                            O0316  4   30 
+      2.677     0.0056       293.         9.  7.164E+06   2.29E+05O0316  4   31 
+      1.050         1.                                            O0316  4   32 
+      2.776     0.0056       351.        11.    5.9E+06   1.77E+05O0316  4   33 
+      1.047         1.                                            O0316  4   34 
+      2.876     0.0056       432.        13.  5.065E+06   1.51E+05O0316  4   35 
+      1.045         1.                                            O0316  4   36 
+      2.959     0.0123       549.        99.   4.85E+06   8.74E+05O0316  4   37 
+      1.043         2.                                            O0316  4   38 
+      2.975     0.0056       548.        15.  4.584E+06   1.27E+05O0316  4   39 
+      1.043         1.                                            O0316  4   40 
+      3.074     0.0056       687.        19.  4.173E+06   1.18E+05O0316  4   41 
+      1.040         1.                                            O0316  4   42 
+      3.174     0.0056       837.        24.  3.738E+06   1.06E+05O0316  4   43 
+      1.039         1.                                            O0316  4   44 
+      3.273     0.0056       980.        28.  3.274E+06   9.40E+04O0316  4   45 
+      1.037         1.                                            O0316  4   46 
+      3.372     0.0056      1196.        34.  3.028E+06   8.60E+04O0316  4   47 
+      1.035         1.                                            O0316  4   48 
+      3.454     0.0123      1294.       283.   2.63E+06   5.75E+05O0316  4   49 
+      1.034         2.                                            O0316  4   50 
+      3.471     0.0056      1400.        40.  2.721E+06   7.80E+04O0316  4   51 
+      1.034         1.                                            O0316  4   52 
+      3.570     0.0056      1573.        44.  2.374E+06   6.60E+04O0316  4   53 
+      1.032         1.                                            O0316  4   54 
+ENDDATA             34          0                                 O0316  4   55 
+ENDSUBENT           54          0                                 O0316  499999 
+SUBENT        O0316005   20230313                             O096O0316  5    1 
+BIB                  7         14                                 O0316  5    2 
 REACTION  1(38-SR-87(P,G)39-Y-88,,SIG)                            O0316  5    3 
           2(38-SR-87(P,G)39-Y-88,,SIG,,SFC)                       O0316  5    4 
 SAMPLE     (38-SR-87,ENR=0.9155) 87SrCO3 targets were evaporated  O0316  5    5 
            on Ta-backings.                                        O0316  5    6 
-            Targets thicknesses were:                             O0316  5    7 
-             73. +- 9. ug/cm2 for gamma-angular distributions;    O0316  5    8 
-             96. +- 11. ug/cm2 for 4pi gamma-summing              O0316  5    9 
-FLAG       (1.) result from gamma-angular distributions           O0316  5   10 
-           (2.) result from 4pi gamma-summing                     O0316  5   11 
-ERR-ANALYS (ERR-2) Uncertainty in target homogeneities            O0316  5   12 
-STATUS     (TABLE) Tbls III, IV from Phys.Rev.,C104(2021)025804   O0316  5   13 
-HISTORY    (20221225C) SD                                         O0316  5   14 
-ENDBIB              12          0                                 O0316  5   15 
-COMMON               1          3                                 O0316  5   16 
-ERR-2                                                             O0316  5   17 
-PER-CENT                                                          O0316  5   18 
-   10.                                                            O0316  5   19 
-ENDCOMMON            3          0                                 O0316  5   20 
-DATA                 6         29                                 O0316  5   21 
-EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2FLAG       O0316  5   22 
-MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      NO-DIM     O0316  5   23 
-      1.982        39.         8. 2.9113E+07  5.749E+06         1.O0316  5   24 
-      2.081        68.        12. 2.7990E+07  4.763E+06         1.O0316  5   25 
-      2.179       107.        17. 2.5583E+07  3.961E+06         1.O0316  5   26 
-      2.280       182.        27. 2.5856E+07   3.86E+06         1.O0316  5   27 
-      2.379       244.        35. 2.1447E+07    3.1E+06         1.O0316  5   28 
-      2.479       394.        57. 2.1952E+07  3.191E+06         1.O0316  5   29 
-      2.566       572.       125. 2.1970E+07  4.783E+06         2.O0316  5   30 
-      2.578       523.        73. 1.9104E+07  2.665E+06         1.O0316  5   31 
-      2.676       725.        95. 1.7851E+07  2.345E+06         1.O0316  5   32 
-      2.764       982.       213. 1.7275E+07  3.755E+06         2.O0316  5   33 
-      2.810       993.       142. 1.4767E+07  2.114E+06         1.O0316  5   34 
-      2.877      1121.       155. 1.3127E+07  1.817E+06         1.O0316  5   35 
-      2.962      1612.       350. 1.4114E+07  3.064E+06         2.O0316  5   36 
-      2.978      1561.       210. 1.2954E+07   1.74E+06         1.O0316  5   37 
-      3.016      1880.       255. 1.3777E+07  1.867E+06         1.O0316  5   38 
-      3.056      1419.       196. 9.1380E+06  1.264E+06         1.O0316  5   39 
-      3.142      1353.       191. 6.6690E+06   9.39E+05         1.O0316  5   40 
-      3.160      1134.       242. 5.2950E+06  1.128E+06         2.O0316  5   41 
-      3.176      1216.       168. 5.4050E+06   7.45E+05         1.O0316  5   42 
-      3.317      1365.       199. 4.0300E+06   5.87E+05         1.O0316  5   43 
-      3.358      1289.       278. 3.4000E+06   7.34E+05         2.O0316  5   44 
-      3.373      1186.       171. 2.9990E+06   4.33E+05         1.O0316  5   45 
-      3.474      1242.       188. 2.3990E+06   3.64E+05         1.O0316  5   46 
-      3.555      1249.       264. 1.9570E+06   4.14E+05         2.O0316  5   47 
-      3.570      1446.       218. 2.1850E+06   3.29E+05         1.O0316  5   48 
-      3.753      1571.       336. 1.5270E+06   3.27E+05         2.O0316  5   49 
-      3.951      1903.       404. 1.1910E+06   2.53E+05         2.O0316  5   50 
-      4.149      2057.       431. 8.5800E+05    1.8E+05         2.O0316  5   51 
-      4.940      1640.       351. 1.7500E+05    3.7E+04         2.O0316  5   52 
-ENDDATA             31          0                                 O0316  5   53 
-ENDSUBENT           52          0                                 O0316  599999 
-SUBENT        O0316006   20221225                             O093O0316  6    1 
-BIB                  7         12                                 O0316  6    2 
-REACTION  1(38-SR-87(P,G)39-Y-88-G,,SIG)                          O0316  6    3 
-          2(38-SR-87(P,G)39-Y-88-G,,SIG,,SFC)                     O0316  6    4 
-DECAY-DATA (39-Y-88-G,106.626D)                                   O0316  6    5 
+            Target thickness was:                                 O0316  5    7 
+             73. +- 9. ug/cm2 for gamma-angular distributions     O0316  5    8 
+             96. +- 11. ug/cm2 for 4pi gamma-summing technique    O0316  5    9 
+MISC-COL   (MISC) the screening correction factors                O0316  5   10 
+FLAG       (1.) result from gamma-angular distributions           O0316  5   11 
+           (2.) result from 4pi gamma-summing                     O0316  5   12 
+ERR-ANALYS (ERR-2) Uncertainty in target uniformity               O0316  5   13 
+STATUS     (TABLE) Tbl. III, IV from Phys.Rev.,C104(2021)025804   O0316  5   14 
+HISTORY    (20221225C) SD                                         O0316  5   15 
+           (20230313A) SD: Data updated. FLAG assignment correctedO0316  5   16 
+ENDBIB              14          0                                 O0316  5   17 
+COMMON               1          3                                 O0316  5   18 
+ERR-2                                                             O0316  5   19 
+PER-CENT                                                          O0316  5   20 
+        10.                                                       O0316  5   21 
+ENDCOMMON            3          0                                 O0316  5   22 
+DATA                 8         29                                 O0316  5   23 
+EN-CM      EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     2O0316  5   24 
+MISC       FLAG                                                   O0316  5   25 
+MEV        MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      O0316  5   26 
+NO-DIM     NO-DIM                                                 O0316  5   27 
+      1.982     0.0041        39.         8. 2.9113E+07  5.749E+06O0316  5   28 
+      1.080         1.                                            O0316  5   29 
+      2.081     0.0041        68.        12. 2.7990E+07  4.763E+06O0316  5   30 
+      1.074         1.                                            O0316  5   31 
+      2.179     0.0041       107.        17. 2.5583E+07  3.961E+06O0316  5   32 
+      1.069         1.                                            O0316  5   33 
+      2.280     0.0041       182.        27. 2.5856E+07   3.86E+06O0316  5   34 
+      1.064         1.                                            O0316  5   35 
+      2.379     0.0041       244.        35. 2.1447E+07    3.1E+06O0316  5   36 
+      1.060         1.                                            O0316  5   37 
+      2.479     0.0041       394.        57. 2.1952E+07  3.191E+06O0316  5   38 
+      1.056         1.                                            O0316  5   39 
+      2.566     0.0075       572.       125. 2.1970E+07  4.783E+06O0316  5   40 
+      1.053         2.                                            O0316  5   41 
+      2.578     0.0041       523.        73. 1.9104E+07  2.665E+06O0316  5   42 
+      1.053         1.                                            O0316  5   43 
+      2.676     0.0041       725.        95. 1.7851E+07  2.345E+06O0316  5   44 
+      1.050         1.                                            O0316  5   45 
+      2.764     0.0075       982.       213. 1.7275E+07  3.755E+06O0316  5   46 
+      1.048         2.                                            O0316  5   47 
+      2.810     0.0041       993.       142. 1.4767E+07  2.114E+06O0316  5   48 
+      1.046         1.                                            O0316  5   49 
+      2.877     0.0041      1121.       155. 1.3127E+07  1.817E+06O0316  5   50 
+      1.045         1.                                            O0316  5   51 
+      2.962     0.0075      1612.       350. 1.4114E+07  3.064E+06O0316  5   52 
+      1.043         2.                                            O0316  5   53 
+      2.978     0.0041      1561.       210. 1.2954E+07   1.74E+06O0316  5   54 
+      1.043         1.                                            O0316  5   55 
+      3.016     0.0041      1880.       255. 1.3777E+07  1.867E+06O0316  5   56 
+      1.042         1.                                            O0316  5   57 
+      3.056     0.0041      1419.       196. 9.1380E+06  1.264E+06O0316  5   58 
+      1.041         1.                                            O0316  5   59 
+      3.142     0.0041      1353.       191. 6.6690E+06   9.39E+05O0316  5   60 
+      1.039         1.                                            O0316  5   61 
+      3.160     0.0075      1134.       242. 5.2950E+06  1.128E+06O0316  5   62 
+      1.039         2.                                            O0316  5   63 
+      3.176     0.0041      1216.       168. 5.4050E+06   7.45E+05O0316  5   64 
+      1.039         1.                                            O0316  5   65 
+      3.317     0.0041      1365.       199. 4.0300E+06   5.87E+05O0316  5   66 
+      1.036         1.                                            O0316  5   67 
+      3.358     0.0075      1289.       278. 3.4000E+06   7.34E+05O0316  5   68 
+      1.035         2.                                            O0316  5   69 
+      3.373     0.0041      1186.       171. 2.9990E+06   4.33E+05O0316  5   70 
+      1.035         1.                                            O0316  5   71 
+      3.474     0.0041      1242.       188. 2.3990E+06   3.64E+05O0316  5   72 
+      1.034         1.                                            O0316  5   73 
+      3.555     0.0075      1249.       264. 1.9570E+06   4.14E+05O0316  5   74 
+      1.032         2.                                            O0316  5   75 
+      3.570     0.0041      1446.       218. 2.1850E+06   3.29E+05O0316  5   76 
+      1.032         1.                                            O0316  5   77 
+      3.753     0.0075      1571.       336. 1.5270E+06   3.27E+05O0316  5   78 
+      1.030         2.                                            O0316  5   79 
+      3.951     0.0075      1903.       404. 1.1910E+06   2.53E+05O0316  5   80 
+      1.028         2.                                            O0316  5   81 
+      4.149     0.0075      2057.       431. 8.5800E+05    1.8E+05O0316  5   82 
+      1.026         2.                                            O0316  5   83 
+      4.940     0.0075      1640.       351. 1.7500E+05    3.7E+04O0316  5   84 
+      1.020         2.                                            O0316  5   85 
+ENDDATA             62          0                                 O0316  5   86 
+ENDSUBENT           85          0                                 O0316  599999 
+SUBENT        O0316006   20230313                             O096O0316  6    1 
+BIB                  8         14                                 O0316  6    2 
+REACTION  1(38-SR-87(P,G)39-Y-88,L-,SIG)                          O0316  6    3 
+          2(38-SR-87(P,G)39-Y-88,L-,SIG,,SFC)                     O0316  6    4 
+DECAY-DATA (39-Y-88,106.626D)                                     O0316  6    5 
 SAMPLE     (38-SR-87,ENR=0.9155) 87SrCO3 targets were evaporated  O0316  6    6 
            on Ta-backings.                                        O0316  6    7 
             Targets thicknesses were:                             O0316  6    8 
-             73. +- 9. ug/cm2 for gamma-angular distributions;    O0316  6    9 
-             96. +- 11. ug/cm2 for 4pi gamma-summing              O0316  6   10 
-METHOD     4pi gamma-summing technique                            O0316  6   11 
-ERR-ANALYS (ERR-2) Uncertainty in target homogeneities            O0316  6   12 
+             96. +- 11. ug/cm2 for 4pi gamma-summing              O0316  6    9 
+METHOD     4pi gamma-summing technique                            O0316  6   10 
+MISC-COL   (MISC) The screening correction factors                O0316  6   11 
+ERR-ANALYS (ERR-2) Uncertainty in target uniformity               O0316  6   12 
 STATUS     (TABLE) Tbl. III from Phys.Rev.,C104(2021)025804       O0316  6   13 
 HISTORY    (20221225C) SD                                         O0316  6   14 
-ENDBIB              12          0                                 O0316  6   15 
-COMMON               1          3                                 O0316  6   16 
-ERR-2                                                             O0316  6   17 
-PER-CENT                                                          O0316  6   18 
-   10.                                                            O0316  6   19 
-ENDCOMMON            3          0                                 O0316  6   20 
-DATA                 5         10                                 O0316  6   21 
-EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2           O0316  6   22 
-MEV        MICRO-B    MICRO-B    B*MEV      B*MEV                 O0316  6   23 
-      2.566       549.       186. 2.1060E+07  4.775E+06           O0316  6   24 
-      2.764       940.       318. 1.6531E+07  3.749E+06           O0316  6   25 
-      2.962      1540.       522. 1.3487E+07  3.059E+06           O0316  6   26 
-      3.160      1061.       360. 4.9530E+06  1.124E+06           O0316  6   27 
-      3.358      1212.       415. 3.1980E+06   7.32E+05           O0316  6   28 
-      3.555      1155.       393. 1.8100E+06   4.12E+05           O0316  6   29 
-      3.753      1466.       501. 1.4260E+06   3.26E+05           O0316  6   30 
-      3.951      1752.       599. 1.0970E+06   2.51E+05           O0316  6   31 
-      4.149      1884.       641. 7.8500E+05   1.79E+05           O0316  6   32 
-      4.940      1485.       520. 1.5800E+05    5.5E+04           O0316  6   33 
-ENDDATA             12          0                                 O0316  6   34 
-ENDSUBENT           33          0                                 O0316  699999 
-SUBENT        O0316007   20221225                             O093O0316  7    1 
-BIB                  8         13                                 O0316  7    2 
+           (20230313A) SD: SF4=Y-88g -> Y-88; SF5=L- in REACTION  O0316  6   15 
+           code and MONITOR reactions. MISC col.added.            O0316  6   16 
+ENDBIB              14          0                                 O0316  6   17 
+COMMON               2          3                                 O0316  6   18 
+EN-ERR     ERR-2                                                  O0316  6   19 
+MEV        PER-CENT                                               O0316  6   20 
+   0.0075     10.                                                 O0316  6   21 
+ENDCOMMON            3          0                                 O0316  6   22 
+DATA                 6         10                                 O0316  6   23 
+EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2MISC       O0316  6   24 
+MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      NO-DIM     O0316  6   25 
+      2.566       549.       186. 2.1060E+07  4.775E+06 1.053     O0316  6   26 
+      2.764       940.       318. 1.6531E+07  3.749E+06 1.048     O0316  6   27 
+      2.962      1540.       522. 1.3487E+07  3.059E+06 1.043     O0316  6   28 
+      3.160      1061.       360. 4.9530E+06  1.124E+06 1.039     O0316  6   29 
+      3.358      1212.       415. 3.1980E+06   7.32E+05 1.035     O0316  6   30 
+      3.555      1155.       393. 1.8100E+06   4.12E+05 1.032     O0316  6   31 
+      3.753      1466.       501. 1.4260E+06   3.26E+05 1.030     O0316  6   32 
+      3.951      1752.       599. 1.0970E+06   2.51E+05 1.028     O0316  6   33 
+      4.149      1884.       641. 7.8500E+05   1.79E+05 1.026     O0316  6   34 
+      4.940      1485.       520. 1.5800E+05    5.5E+04 1.020     O0316  6   35 
+ENDDATA             12          0                                 O0316  6   36 
+ENDSUBENT           35          0                                 O0316  699999 
+SUBENT        O0316007   20230313                             O096O0316  7    1 
+BIB                  9         14                                 O0316  7    2 
 REACTION  1(38-SR-87(P,G)39-Y-88-L,,SIG)                          O0316  7    3 
           2(38-SR-87(P,G)39-Y-88-L,,SIG,,SFC)                     O0316  7    4 
 DECAY-DATA (39-Y-88-L,13.98MSEC)                                  O0316  7    5 
@@ -268,175 +362,1188 @@ LEVEL-PROP (39-Y-88-L,E-LVL=675.,SPIN=8.,PARITY=+1.)              O0316  7    6
 SAMPLE     (38-SR-87,ENR=0.9155) 87SrCO3 targets were evaporated  O0316  7    7 
            on Ta-backings.                                        O0316  7    8 
             Targets thicknesses were:                             O0316  7    9 
-             73. +- 9. ug/cm2 for gamma-angular distributions;    O0316  7   10 
-             96. +- 11. ug/cm2 for 4pi gamma-summing              O0316  7   11 
-METHOD     4pi gamma-summing technique                            O0316  7   12 
-ERR-ANALYS (ERR-2) Uncertainty in target homogeneities            O0316  7   13 
+             96. +- 11. ug/cm2 for 4pi gamma-summing              O0316  7   10 
+METHOD     4pi gamma-summing technique                            O0316  7   11 
+MISC-COL   (MISC) the screening correction factors                O0316  7   12 
+ERR-ANALYS (ERR-2) Uncertainty in target uniformity               O0316  7   13 
 STATUS     (TABLE) Tbl. III from Phys.Rev.,C104(2021)025804       O0316  7   14 
 HISTORY    (20221225C) SD                                         O0316  7   15 
-ENDBIB              13          0                                 O0316  7   16 
-COMMON               1          3                                 O0316  7   17 
-ERR-2                                                             O0316  7   18 
-PER-CENT                                                          O0316  7   19 
-    10.                                                           O0316  7   20 
-ENDCOMMON            3          0                                 O0316  7   21 
-DATA                 5         10                                 O0316  7   22 
-EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2           O0316  7   23 
-MEV        MICRO-B    MICRO-B    B*MEV      B*MEV                 O0316  7   24 
-      2.566        24.         7.   9.09E+05   2.74E+05           O0316  7   25 
-      2.764        42.        12.   7.44E+05   2.06E+05           O0316  7   26 
-      2.962        72.        19.   6.27E+05   1.67E+05           O0316  7   27 
-      3.160        73.        20.   3.42E+05   9.50E+04           O0316  7   28 
-      3.358        77.        22.   2.02E+05   5.70E+04           O0316  7   29 
-      3.555        94.        25.   1.47E+05   3.90E+04           O0316  7   30 
-      3.753       105.        29.   1.02E+05   2.80E+04           O0316  7   31 
-      3.951       151.        44.   9.50E+04   2.80E+04           O0316  7   32 
-      4.149       173.        46.   7.20E+04   1.90E+04           O0316  7   33 
-      4.940       158.        37.   1.70E+04   5.00E+03           O0316  7   34 
-ENDDATA             12          0                                 O0316  7   35 
-ENDSUBENT           34          0                                 O0316  799999 
-SUBENT        O0316008   20221225                             O093O0316  8    1 
-BIB                  5         11                                 O0316  8    2 
+           (20230313A) SD: MISC col.added.                        O0316  7   16 
+ENDBIB              14          0                                 O0316  7   17 
+COMMON               2          3                                 O0316  7   18 
+EN-ERR     ERR-2                                                  O0316  7   19 
+MEV        PER-CENT                                               O0316  7   20 
+   0.0075     10.                                                 O0316  7   21 
+ENDCOMMON            3          0                                 O0316  7   22 
+DATA                 6         10                                 O0316  7   23 
+EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2MISC       O0316  7   24 
+MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      NO-DIM     O0316  7   25 
+      2.566        24.         7.   9.09E+05   2.74E+05 1.053     O0316  7   26 
+      2.764        42.        12.   7.44E+05   2.06E+05 1.048     O0316  7   27 
+      2.962        72.        19.   6.27E+05   1.67E+05 1.043     O0316  7   28 
+      3.160        73.        20.   3.42E+05   9.50E+04 1.039     O0316  7   29 
+      3.358        77.        22.   2.02E+05   5.70E+04 1.035     O0316  7   30 
+      3.555        94.        25.   1.47E+05   3.90E+04 1.032     O0316  7   31 
+      3.753       105.        29.   1.02E+05   2.80E+04 1.030     O0316  7   32 
+      3.951       151.        44.   9.50E+04   2.80E+04 1.028     O0316  7   33 
+      4.149       173.        46.   7.20E+04   1.90E+04 1.026     O0316  7   34 
+      4.940       158.        37.   1.70E+04   5.00E+03 1.020     O0316  7   35 
+ENDDATA             12          0                                 O0316  7   36 
+ENDSUBENT           35          0                                 O0316  799999 
+SUBENT        O0316008   20230613                             O096O0316  8    1 
+BIB                  6         13                                 O0316  8    2 
 REACTION  1(38-SR-88(P,G)39-Y-89,,SIG)                            O0316  8    3 
           2(38-SR-88(P,G)39-Y-89,,SIG,,SFC)                       O0316  8    4 
 SAMPLE     (38-SR-88,ENR=0.9984) 88Sr(NO3)2 targets were          O0316  8    5 
            evaporated on Ta-backings.                             O0316  8    6 
             Target thickness was:                                 O0316  8    7 
              95. +- 7. ug/cm2 for 4pi gamma-summing               O0316  8    8 
-ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target homogeneities      O0316  8    9 
-STATUS     (TABLE) Tbl.V from Phys.Rev.,C104(2021)025804          O0316  8   10 
-           (COREL,O1054003) Gamma-angular distributions from      O0316  8   11 
-            Tbl.V from Phys.Rev.,C104(2021)025804                 O0316  8   12 
-HISTORY    (20221225C) SD                                         O0316  8   13 
-ENDBIB              11          0                                 O0316  8   14 
-NOCOMMON             0          0                                 O0316  8   15 
-DATA                 5          5                                 O0316  8   16 
-EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2           O0316  8   17 
-MEV        MICRO-B    MICRO-B    B*MEV      B*MEV                 O0316  8   18 
-      2.478       169.        31.  9.484E+06   1.74E+06           O0316  8   19 
-      2.979       630.        83.  5.219E+06   6.88E+05           O0316  8   20 
-      3.552      1817.       263.  2.876E+06   4.16E+05           O0316  8   21 
-      3.952      3026.       387.  1.894E+06   2.42E+05           O0316  8   22 
-      4.561      4407.       617.   8.63E+05   1.21E+05           O0316  8   23 
-ENDDATA              7          0                                 O0316  8   24 
-ENDSUBENT           23          0                                 O0316  899999 
-SUBENT        O0316009   20221225                             O093O0316  9    1 
-BIB                  6         12                                 O0316  9    2 
+MISC-COL   (MISC) the screening correction factors                O0316  8    9 
+ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target uniformity         O0316  8   10 
+STATUS     (TABLE) Tbl.V from Phys.Rev.,C104(2021)025804          O0316  8   11 
+           (COREL,O1054003) Gamma-angular distributions from      O0316  8   12 
+            Tbl.V from Phys.Rev.,C104(2021)025804                 O0316  8   13 
+HISTORY    (20221225C) SD                                         O0316  8   14 
+           (20230313A) SD: MISC col.added.                        O0316  8   15 
+ENDBIB              13          0                                 O0316  8   16 
+COMMON               1          3                                 O0316  8   17 
+EN-ERR                                                            O0316  8   18 
+MEV                                                               O0316  8   19 
+   0.0159                                                         O0316  8   20 
+ENDCOMMON            3          0                                 O0316  8   21 
+DATA                 6          5                                 O0316  8   22 
+EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2MISC       O0316  8   23 
+MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      NO-DIM     O0316  8   24 
+      2.478       169.        31.  9.484E+06   1.74E+06  1.053    O0316  8   25 
+      2.979       630.        83.  5.219E+06   6.88E+05  1.048    O0316  8   26 
+      3.552      1817.       263.  2.876E+06   4.16E+05  1.043    O0316  8   27 
+      3.952      3026.       387.  1.894E+06   2.42E+05  1.039    O0316  8   28 
+      4.561      4407.       617.   8.63E+05   1.21E+05  1.035    O0316  8   29 
+ENDDATA              7          0                                 O0316  8   30 
+ENDSUBENT           29          0                                 O0316  899999 
+SUBENT        O0316009   20230313                             O096O0316  9    1 
+BIB                  7         15                                 O0316  9    2 
 REACTION  1(38-SR-88(P,G)39-Y-89-G,,SIG)                          O0316  9    3 
           2(38-SR-88(P,G)39-Y-89-G,,SIG,,SFC)                     O0316  9    4 
 SAMPLE     (38-SR-88,ENR=0.9984) 88Sr(NO3)2 targets were          O0316  9    5 
            evaporated on Ta-backings.                             O0316  9    6 
-            Targets thicknesses were:                             O0316  9    7 
-            168. +- 12. ug/cm2 for gamma-angular distributions;   O0316  9    8 
-             95. +- 7. ug/cm2 for 4pi gamma-summing               O0316  9    9 
-FLAG       (1.) result from gamma-angular distributions           O0316  9   10 
-           (2.) result from 4pi gamma-summing                     O0316  9   11 
-ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target homogeneities      O0316  9   12 
-STATUS     (TABLE) Tbl.V from Phys.Rev.,C104(2021)025804          O0316  9   13 
-HISTORY    (20221225C) SD                                         O0316  9   14 
-ENDBIB              12          0                                 O0316  9   15 
-NOCOMMON             0          0                                 O0316  9   16 
-DATA                 6         38                                 O0316  9   17 
-EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2FLAG       O0316  9   18 
-MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      NO-DIM     O0316  9   19 
-      1.379       0.50       0.10 5.2417E+07 1.0483E+07         2.O0316  9   20 
-      1.479       0.73       0.10 2.7337E+07 3.7450E+06         2.O0316  9   21 
-      1.580       1.82       0.30 2.6712E+07 4.4030E+06         2.O0316  9   22 
-      1.680        2.7        0.4 1.7092E+07 2.5320E+06         2.O0316  9   23 
-      1.780         7.        0.8 2.0571E+07 2.3510E+06         2.O0316  9   24 
-      1.880       12.9        1.6 1.8755E+07 2.3260E+06         2.O0316  9   25 
-      1.982       13.9        1.7 1.0436E+07 1.2760E+06         2.O0316  9   26 
-      2.080        41.         5. 1.7108E+07 2.0860E+06         2.O0316  9   27 
-      2.180        50.         6. 1.1954E+07 1.4340E+06         2.O0316  9   28 
-      2.280       114.        12. 1.6222E+07 1.7080E+06         2.O0316  9   29 
-      2.380       134.        14. 1.1742E+07 1.2270E+06         2.O0316  9   30 
-      2.478       148.        32. 8.3060E+06 1.7960E+06         1.O0316  9   31 
-      2.480       137.        15. 7.6210E+06 8.3400E+05         2.O0316  9   32 
-      2.561       172.        18. 6.7570E+06 7.0700E+05         2.O0316  9   33 
-      2.581       162.        17. 5.8560E+06 6.1400E+05         2.O0316  9   34 
-      2.680       300.        32. 7.2840E+06 7.7700E+05         2.O0316  9   35 
-      2.780       341.        37. 5.6650E+06 6.1500E+05         2.O0316  9   36 
-      2.880       409.        49. 4.7450E+06 5.6900E+05         2.O0316  9   37 
-      2.957       486.        54. 4.3330E+06 4.8100E+05         2.O0316  9   38 
-      2.979       515.        87. 4.2670E+06 7.2100E+05         1.O0316  9   39 
-      2.980       520.        69. 4.2940E+06 5.7000E+05         2.O0316  9   40 
-      3.081       795.        88. 4.7380E+06 5.2400E+05         2.O0316  9   41 
-      3.180       782.        91. 3.4400E+06 4.0000E+05         2.O0316  9   42 
-      3.281       972.       114. 3.1820E+06 3.7300E+05         2.O0316  9   43 
-      3.354      1009.       121. 2.6920E+06 3.2300E+05         2.O0316  9   44 
-      3.380      1091.       129. 2.7100E+06 3.2000E+05         2.O0316  9   45 
-      3.478      1549.       183. 2.9640E+06 3.5000E+05         2.O0316  9   46 
-      3.552      1347.       164. 2.1320E+06 2.6000E+05         2.O0316  9   47 
-      3.552      1428.       276. 2.2600E+06 4.3700E+05         1.O0316  9   48 
-      3.750      1630.       195. 1.5990E+06 1.9100E+05         2.O0316  9   49 
-      3.948      2136.       229. 1.3480E+06 1.4500E+05         2.O0316  9   50 
-      3.952      2285.       406. 1.4300E+06 2.5400E+05         1.O0316  9   51 
-      4.146      2588.       297. 1.0870E+06 1.2500E+05         2.O0316  9   52 
-      4.344      3292.       381. 9.4700E+05 1.1000E+05         2.O0316  9   53 
-      4.541      3142.       332. 6.3600E+05 6.7000E+04         2.O0316  9   54 
-      4.561      3367.       648. 6.5900E+05 1.2700E+05         1.O0316  9   55 
-      4.739      3270.       334. 4.7700E+05 4.9000E+04         2.O0316  9   56 
-      4.937      1962.       222. 2.1000E+05 2.4000E+04         2.O0316  9   57 
-ENDDATA             40          0                                 O0316  9   58 
-ENDSUBENT           57          0                                 O0316  999999 
-SUBENT        O0316010   20221225                             O093O0316 10    1 
-BIB                  7         13                                 O0316 10    2 
+            Target thickness was:                                 O0316  9    7 
+            168. +- 12. ug/cm2 for gamma-angular distributions    O0316  9    8 
+             95. +- 7. ug/cm2 for 4pi gamma-summing technique     O0316  9    9 
+MISC-COL   (MISC) the screening correction factors                O0316  9   10 
+FLAG       (1.) result from gamma-angular distributions           O0316  9   11 
+           (2.) result from 4pi gamma-summing                     O0316  9   12 
+ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target uniformity         O0316  9   13 
+STATUS     (TABLE) Data from the author and Tbl.V from            O0316  9   14 
+                    Phys.Rev.,C104(2021)025804                    O0316  9   15 
+HISTORY    (20221225C) SD                                         O0316  9   16 
+           (20230313A) SD: Data updated. FLAG assignment correctedO0316  9   17 
+ENDBIB              15          0                                 O0316  9   18 
+NOCOMMON             0          0                                 O0316  9   19 
+DATA                 8         38                                 O0316  9   20 
+EN-CM      EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     2O0316  9   21 
+MISC       FLAG                                                   O0316  9   22 
+MEV        MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      O0316  9   23 
+NO-DIM     NO-DIM                                                 O0316  9   24 
+      1.379     0.0095       0.50       0.11 5.2417E+07 1.0483E+07O0316  9   25 
+      1.141         1.                                            O0316  9   26 
+      1.479     0.0095       0.73       0.11 2.7337E+07 3.7450E+06O0316  9   27 
+      1.126         1.                                            O0316  9   28 
+      1.580     0.0095       1.82       0.28 2.6712E+07 4.4030E+06O0316  9   29 
+      1.114         1.                                            O0316  9   30 
+      1.680     0.0095        2.7        0.4 1.7092E+07 2.5320E+06O0316  9   31 
+      1.103         1.                                            O0316  9   32 
+      1.780     0.0095        7.0        0.8 2.0571E+07 2.3510E+06O0316  9   33 
+      1.094         1.                                            O0316  9   34 
+      1.880     0.0095        13.         2. 1.8755E+07 2.3260E+06O0316  9   35 
+      1.087         1.                                            O0316  9   36 
+      1.982     0.0095        14.         2. 1.0436E+07 1.2760E+06O0316  9   37 
+      1.080         1.                                            O0316  9   38 
+      2.080     0.0095        41.         5. 1.7108E+07 2.0860E+06O0316  9   39 
+      1.074         1.                                            O0316  9   40 
+      2.180     0.0095        50.         6. 1.1954E+07 1.4340E+06O0316  9   41 
+      1.069         1.                                            O0316  9   42 
+      2.280     0.0095       114.        12. 1.6222E+07 1.7080E+06O0316  9   43 
+      1.064         1.                                            O0316  9   44 
+      2.380     0.0095       134.        14. 1.1742E+07 1.2270E+06O0316  9   45 
+      1.060         1.                                            O0316  9   46 
+      2.478     0.0159       148.        32. 8.3060E+06 1.7960E+06O0316  9   47 
+      1.053         2.                                            O0316  9   48 
+      2.480     0.0095       137.        19. 7.6210E+06 8.3400E+05O0316  9   49 
+      1.056         1.                                            O0316  9   50 
+      2.561     0.0095       172.        18. 6.7570E+06 7.0700E+05O0316  9   51 
+      1.054         1.                                            O0316  9   52 
+      2.581     0.0095       162.        17. 5.8560E+06 6.1400E+05O0316  9   53 
+      1.053         1.                                            O0316  9   54 
+      2.680     0.0095       300.        32. 7.2840E+06 7.7700E+05O0316  9   55 
+      1.050         1.                                            O0316  9   56 
+      2.780     0.0095       341.        37. 5.6650E+06 6.1500E+05O0316  9   57 
+      1.047         1.                                            O0316  9   58 
+      2.880     0.0095       409.        49. 4.7450E+06 5.6900E+05O0316  9   59 
+      1.045         1.                                            O0316  9   60 
+      2.957     0.0095       486.        54. 4.3330E+06 4.8100E+05O0316  9   61 
+      1.043         1.                                            O0316  9   62 
+      2.979     0.0159       515.        87. 4.2670E+06 7.2100E+05O0316  9   63 
+      1.048         2.                                            O0316  9   64 
+      2.980     0.0095       520.        59. 4.2940E+06 5.7000E+05O0316  9   65 
+      1.042         1.                                            O0316  9   66 
+      3.081     0.0095       795.        88. 4.7380E+06 5.2400E+05O0316  9   67 
+      1.040         1.                                            O0316  9   68 
+      3.180     0.0095       782.        90. 3.4400E+06 4.0000E+05O0316  9   69 
+      1.038         1.                                            O0316  9   70 
+      3.281     0.0095       972.       114. 3.1820E+06 3.7300E+05O0316  9   71 
+      1.037         1.                                            O0316  9   72 
+      3.354     0.0095      1009.       121. 2.6920E+06 3.2300E+05O0316  9   73 
+      1.035         1.                                            O0316  9   74 
+      3.380     0.0095      1091.       129. 2.7100E+06 3.2000E+05O0316  9   75 
+      1.035         1.                                            O0316  9   76 
+      3.478     0.0095      1549.       183. 2.9640E+06 3.5000E+05O0316  9   77 
+      1.034         1.                                            O0316  9   78 
+      3.552     0.0159      1428.       276. 2.2600E+06 4.3700E+05O0316  9   79 
+      1.043         2.                                            O0316  9   80 
+      3.552     0.0095      1347.       164. 2.1320E+06 2.6000E+05O0316  9   81 
+      1.032         1.                                            O0316  9   82 
+      3.750     0.0095      1630.       195. 1.5990E+06 1.9100E+05O0316  9   83 
+      1.030         1.                                            O0316  9   84 
+      3.948     0.0095      2136.       229. 1.3480E+06 1.4500E+05O0316  9   85 
+      1.028         1.                                            O0316  9   86 
+      3.952     0.0159      2285.       406. 1.4300E+06 2.5400E+05O0316  9   87 
+      1.039         2.                                            O0316  9   88 
+      4.146     0.0095      2588.       296. 1.0870E+06 1.2500E+05O0316  9   89 
+      1.026         1.                                            O0316  9   90 
+      4.344     0.0095      3292.       381. 9.4700E+05 1.1000E+05O0316  9   91 
+      1.024         1.                                            O0316  9   92 
+      4.541     0.0095      3142.       332. 6.3600E+05 6.7000E+04O0316  9   93 
+      1.022         1.                                            O0316  9   94 
+      4.561     0.0159      3367.       648. 6.5900E+05 1.2700E+05O0316  9   95 
+      1.035         2.                                            O0316  9   96 
+      4.739     0.0095      3270.       335. 4.7700E+05 4.9000E+04O0316  9   97 
+      1.021         1.                                            O0316  9   98 
+      4.937     0.0095      1962.       222. 2.1000E+05 2.4000E+04O0316  9   99 
+      1.020         1.                                            O0316  9  100 
+ENDDATA             80          0                                 O0316  9  101 
+ENDSUBENT          100          0                                 O0316  999999 
+SUBENT        O0316010   20230313                             O096O0316 10    1 
+BIB                  8         16                                 O0316 10    2 
 REACTION  1(38-SR-88(P,G)39-Y-89-M,,SIG)                          O0316 10    3 
           2(38-SR-88(P,G)39-Y-89-M,,SIG,,SFC)                     O0316 10    4 
-DECAY-DATA (39-Y-89-M,15.663SEC,DG,909.)                          O0316 10    5 
+DECAY-DATA (39-Y-89-M,15.663SEC)                                  O0316 10    5 
 SAMPLE     (38-SR-88,ENR=0.9984) 88Sr(NO3)2 targets were          O0316 10    6 
            evaporated on Ta-backings.                             O0316 10    7 
-            Targets thicknesses were:                             O0316 10    8 
-            168. +- 12. ug/cm2 for gamma-angular distributions;   O0316 10    9 
-             95. +- 7. ug/cm2 for 4pi gamma-summing               O0316 10   10 
-FLAG       (1.) result from gamma-angular distributions           O0316 10   11 
-           (2.) result from 4pi gamma-summing                     O0316 10   12 
-ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target homogeneities      O0316 10   13 
-STATUS     (TABLE) Tbl.V from Phys.Rev.,C104(2021)025804          O0316 10   14 
-HISTORY    (20221225C) SD                                         O0316 10   15 
-ENDBIB              13          0                                 O0316 10   16 
-NOCOMMON             0          0                                 O0316 10   17 
-DATA                 6         38                                 O0316 10   18 
-EN-CM      DATA      1ERR-T     1DATA      2ERR-T     2FLAG       O0316 10   19 
-MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      NO-DIM     O0316 10   20 
-      1.379       0.05       0.04  5.242E+06  4.193E+06         2.O0316 10   21 
-      1.479       0.07       0.05  2.621E+06  1.872E+06         2.O0316 10   22 
-      1.580       0.18       0.06  2.642E+06   8.81E+05         2.O0316 10   23 
-      1.680       0.20       0.06  1.266E+06    3.8E+05         2.O0316 10   24 
-      1.780       0.60       0.13  1.763E+06   3.82E+05         2.O0316 10   25 
-      1.880        1.5        0.2  2.181E+06   2.91E+05         2.O0316 10   26 
-      1.982        1.6        0.3  1.201E+06   2.25E+05         2.O0316 10   27 
-      2.080         4.         1.  1.669E+06   4.17E+05         2.O0316 10   28 
-      2.180         6.         1.  1.434E+06   2.39E+05         2.O0316 10   29 
-      2.280        14.         1.  1.992E+06   1.42E+05         2.O0316 10   30 
-      2.380        15.         1.  1.314E+06    8.8E+04         2.O0316 10   31 
-      2.478        21.         5.  1.178E+06   2.81E+05         1.O0316 10   32 
-      2.480        22.         2.  1.224E+06   1.11E+05         2.O0316 10   33 
-      2.561        24.         2.  9.430E+05    7.9E+04         2.O0316 10   34 
-      2.581        26.         2.  9.400E+05    7.2E+04         2.O0316 10   35 
-      2.680        48.         3.  1.165E+06    7.3E+04         2.O0316 10   36 
-      2.780        53.         4.  8.800E+05    6.6E+04         2.O0316 10   37 
-      2.880        95.         7.  1.102E+06    8.1E+04         2.O0316 10   38 
-      2.957       102.         7.  9.090E+05    6.2E+04         2.O0316 10   39 
-      2.979       115.        17.  9.530E+05   1.41E+05         1.O0316 10   40 
-      2.980       120.         8.  9.910E+05    6.6E+04         2.O0316 10   41 
-      3.081       185.        11.  1.103E+06    6.6E+04         2.O0316 10   42 
-      3.180       210.        13.  9.240E+05    5.7E+04         2.O0316 10   43 
-      3.281       263.        17.  8.610E+05    5.6E+04         2.O0316 10   44 
-      3.354       266.        17.  7.100E+05    4.5E+04         2.O0316 10   45 
-      3.380       300.        19.  7.450E+05    4.7E+04         2.O0316 10   46 
-      3.478       464.        28.  8.880E+05    5.4E+04         2.O0316 10   47 
-      3.552       367.        24.  5.810E+05    3.8E+04         2.O0316 10   48 
-      3.552       389.        73.  6.160E+05   1.16E+05         1.O0316 10   49 
-      3.750       487.        31.  4.780E+05     3.E+04         2.O0316 10   50 
-      3.948       715.        44.  4.510E+05    2.8E+04         2.O0316 10   51 
-      3.952       741.       127.  4.640E+05    7.9E+04         1.O0316 10   52 
-      4.146       951.        59.  3.990E+05    2.5E+04         2.O0316 10   53 
-      4.344      1259.        77.  3.620E+05    2.2E+04         2.O0316 10   54 
-      4.541       976.        62.  1.980E+05    1.3E+04         2.O0316 10   55 
-      4.561      1040.       193.  2.040E+05    3.8E+04         1.O0316 10   56 
-      4.739       952.        60.  1.390E+05     9.E+03         2.O0316 10   57 
-      4.937       676.        43.  7.200E+04     5.E+03         2.O0316 10   58 
-ENDDATA             40          0                                 O0316 10   59 
-ENDSUBENT           58          0                                 O0316 1099999 
-ENDENTRY            10          0                                 O031699999999 
+            Target thickness was:                                 O0316 10    8 
+            168. +- 12. ug/cm2 for gamma-angular distributions    O0316 10    9 
+             95. +- 7. ug/cm2 for 4pi gamma-summing technique     O0316 10   10 
+MISC-COL   (MISC) the screening correction factors                O0316 10   11 
+FLAG       (1.) result from gamma-angular distributions           O0316 10   12 
+           (2.) result from 4pi gamma-summing                     O0316 10   13 
+ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target uniformity         O0316 10   14 
+STATUS     (TABLE) Data from the author and Tbl.V from            O0316 10   15 
+                    Phys.Rev.,C104(2021)025804                    O0316 10   16 
+HISTORY    (20221225C) SD                                         O0316 10   17 
+           (20230313A) SD: Data updated. FLAG assignment correctedO0316 10   18 
+ENDBIB              16          0                                 O0316 10   19 
+NOCOMMON             0          0                                 O0316 10   20 
+DATA                 8         39                                 O0316 10   21 
+EN-CM      EN-ERR     DATA      1ERR-T     1DATA      2ERR-T     2O0316 10   22 
+MISC       FLAG                                                   O0316 10   23 
+MEV        MEV        MICRO-B    MICRO-B    B*MEV      B*MEV      O0316 10   24 
+NO-DIM     NO-DIM                                                 O0316 10   25 
+      1.379     0.0095       0.05       0.04  5.242E+06  4.193E+06O0316 10   26 
+      1.141         1.                                            O0316 10   27 
+      1.479     0.0095       0.07       0.05  2.621E+06  1.872E+06O0316 10   28 
+      1.126         1.                                            O0316 10   29 
+      1.580     0.0095       0.18       0.06  2.642E+06   8.81E+05O0316 10   30 
+      1.114         1.                                            O0316 10   31 
+      1.680     0.0095       0.20       0.06  1.266E+06    3.8E+05O0316 10   32 
+      1.103         1.                                            O0316 10   33 
+      1.780     0.0095       0.60       0.13  1.763E+06   3.82E+05O0316 10   34 
+      1.094         1.                                            O0316 10   35 
+      1.880     0.0095        1.5        0.2  2.181E+06   2.91E+05O0316 10   36 
+      1.087         1.                                            O0316 10   37 
+      1.982     0.0095        1.6        0.3  1.201E+06   2.25E+05O0316 10   38 
+      1.080         1.                                            O0316 10   39 
+      2.080     0.0095        4.0        1.0  1.669E+06   4.17E+05O0316 10   40 
+      1.074         1.                                            O0316 10   41 
+      2.180     0.0095        6.0        1.0  1.434E+06   2.39E+05O0316 10   42 
+      1.069         1.                                            O0316 10   43 
+      2.280     0.0095        14.         1.  1.992E+06   1.42E+05O0316 10   44 
+      1.064         1.                                            O0316 10   45 
+      2.380     0.0095        15.         1.  1.314E+06    8.8E+04O0316 10   46 
+      1.060         1.                                            O0316 10   47 
+      2.478     0.0159        21.         5.  1.178E+06   2.81E+05O0316 10   48 
+      1.053         2.                                            O0316 10   49 
+      2.480     0.0095        22.        12.  1.224E+06   1.11E+05O0316 10   50 
+      1.056         1.                                            O0316 10   51 
+      2.561     0.0095        24.         2.  9.430E+05    7.9E+04O0316 10   52 
+      1.054         1.                                            O0316 10   53 
+      2.581     0.0095        26.         2.  9.400E+05    7.2E+04O0316 10   54 
+      1.053         1.                                            O0316 10   55 
+      2.680     0.0095        48.         3.  1.165E+06    7.3E+04O0316 10   56 
+      1.050         1.                                            O0316 10   57 
+      2.780     0.0095        53.         4.  8.800E+05    6.6E+04O0316 10   58 
+      1.047         1.                                            O0316 10   59 
+      2.880     0.0095        95.         7.  1.102E+06    8.1E+04O0316 10   60 
+      1.045         1.                                            O0316 10   61 
+      2.957     0.0095       102.         7.  9.090E+05    6.2E+04O0316 10   62 
+      1.043         1.                                            O0316 10   63 
+      2.979     0.0159       115.        17.  9.530E+05   1.41E+05O0316 10   64 
+      1.048         2.                                            O0316 10   65 
+      2.979     0.0095       115.        17.  9.530E+05   1.41E+05O0316 10   66 
+                    1.                                            O0316 10   67 
+      2.980     0.0095       120.         8.  9.910E+05    6.6E+04O0316 10   68 
+      1.042         1.                                            O0316 10   69 
+      3.081     0.0095       185.        11.  1.103E+06    6.6E+04O0316 10   70 
+      1.040         1.                                            O0316 10   71 
+      3.180     0.0095       210.        13.  9.240E+05    5.7E+04O0316 10   72 
+      1.038         1.                                            O0316 10   73 
+      3.281     0.0095       263.        17.  8.610E+05    5.6E+04O0316 10   74 
+      1.037         1.                                            O0316 10   75 
+      3.354     0.0095       266.        17.  7.100E+05    4.5E+04O0316 10   76 
+      1.035         1.                                            O0316 10   77 
+      3.380     0.0095       300.        19.  7.450E+05    4.7E+04O0316 10   78 
+      1.035         1.                                            O0316 10   79 
+      3.478     0.0095       464.        28.  8.880E+05    5.4E+04O0316 10   80 
+      1.034         1.                                            O0316 10   81 
+      3.552     0.0159       389.        73.  6.160E+05   1.16E+05O0316 10   82 
+      1.043         2.                                            O0316 10   83 
+      3.552     0.0095       367.        24.  5.810E+05    3.8E+04O0316 10   84 
+      1.032         1.                                            O0316 10   85 
+      3.750     0.0095       487.        31.  4.780E+05     3.E+04O0316 10   86 
+      1.030         1.                                            O0316 10   87 
+      3.948     0.0095       715.        44.  4.510E+05    2.8E+04O0316 10   88 
+      1.028         1.                                            O0316 10   89 
+      3.952     0.0159       741.       127.  4.640E+05    7.9E+04O0316 10   90 
+      1.039         2.                                            O0316 10   91 
+      4.146     0.0095       951.        59.  3.990E+05    2.5E+04O0316 10   92 
+      1.026         1.                                            O0316 10   93 
+      4.344     0.0095      1259.        77.  3.620E+05    2.2E+04O0316 10   94 
+      1.024         1.                                            O0316 10   95 
+      4.541     0.0095       976.        62.  1.980E+05    1.3E+04O0316 10   96 
+      1.022         1.                                            O0316 10   97 
+      4.561     0.0159      1040.       193.  2.040E+05    3.8E+04O0316 10   98 
+      1.035         2.                                            O0316 10   99 
+      4.739     0.0095       952.        60.  1.390E+05     9.E+03O0316 10  100 
+      1.021         1.                                            O0316 10  101 
+      4.937     0.0095       676.        43.  7.200E+04     5.E+03O0316 10  102 
+      1.020         1.                                            O0316 10  103 
+ENDDATA             82          0                                 O0316 10  104 
+ENDSUBENT          103          0                                 O0316 1099999 
+SUBENT        O0316011   20230313                             O096O0316 11    1 
+BIB                  6         10                                 O0316 11    2 
+REACTION   (38-SR-86(P,G)39-Y-87,PAR,SIG)                         O0316 11    3 
+               result from gamma-angular distributions            O0316 11    4 
+SAMPLE     (38-SR-86,ENR=0.9689) 86SrCO3 targets were evaporated  O0316 11    5 
+           on Ta-backings.                                        O0316 11    6 
+            Target thickness was:                                 O0316 11    7 
+             92. +- 7. ug/cm2 for gamma-angular distributions     O0316 11    8 
+MISC-COL   (MISC) the screening correction factors                O0316 11    9 
+ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target uniformity         O0316 11   10 
+STATUS     (TABLE) Cr.sect. from the author                       O0316 11   11 
+HISTORY    (20230313C) SD                                         O0316 11   12 
+ENDBIB              10          0                                 O0316 11   13 
+COMMON               2          3                                 O0316 11   14 
+E-LVL      EN-ERR                                                 O0316 11   15 
+MEV        MEV                                                    O0316 11   16 
+        0.0   0.0056                                              O0316 11   17 
+ENDCOMMON            3          0                                 O0316 11   18 
+DATA                 4         12                                 O0316 11   19 
+EN-CM      DATA       ERR-T      MISC                             O0316 11   20 
+KEV        MICRO-B    MICRO-B    NO-DIM                           O0316 11   21 
+      2479.        13.         1.      1.056                      O0316 11   22 
+      2578.        18.         1.      1.053                      O0316 11   23 
+      2677.        25.         2.      1.050                      O0316 11   24 
+      2776.        48.         3.      1.047                      O0316 11   25 
+      2876.        25.         2.      1.045                      O0316 11   26 
+      2975.        35.         2.      1.043                      O0316 11   27 
+      3074.        30.         2.      1.040                      O0316 11   28 
+      3174.        47.         3.      1.039                      O0316 11   29 
+      3273.        41.         3.      1.037                      O0316 11   30 
+      3372.        52.         3.      1.035                      O0316 11   31 
+      3471.        53.         4.      1.034                      O0316 11   32 
+      3570.        55.         4.      1.032                      O0316 11   33 
+ENDDATA             14          0                                 O0316 11   34 
+ENDSUBENT           33          0                                 O0316 1199999 
+SUBENT        O0316012   20230313                             O096O0316 12    1 
+BIB                  6         10                                 O0316 12    2 
+REACTION   (38-SR-86(P,G)39-Y-87,PAR,SIG,G)                       O0316 12    3 
+               result from gamma-angular distributions            O0316 12    4 
+SAMPLE     (38-SR-86,ENR=0.9689) 86SrCO3 targets were evaporated  O0316 12    5 
+           on Ta-backings.                                        O0316 12    6 
+            Target thickness was:                                 O0316 12    7 
+             92. +- 7. ug/cm2 for gamma-angular distributions     O0316 12    8 
+MISC-COL   (MISC) the screening correction factors                O0316 12    9 
+ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target uniformity         O0316 12   10 
+STATUS     (TABLE) Cr.sect. from the author                       O0316 12   11 
+HISTORY    (20230313C) SD                                         O0316 12   12 
+ENDBIB              10          0                                 O0316 12   13 
+COMMON               1          3                                 O0316 12   14 
+EN-ERR                                                            O0316 12   15 
+MEV                                                               O0316 12   16 
+     0.0056                                                       O0316 12   17 
+ENDCOMMON            3          0                                 O0316 12   18 
+DATA                 5        204                                 O0316 12   19 
+E          EN-CM      DATA       ERR-T      MISC                  O0316 12   20 
+KEV        KEV        MICRO-B    MICRO-B    NO-DIM                O0316 12   21 
+       772.      2479.        20.         2.      1.056           O0316 12   22 
+       772.      2578.        29.         3.      1.053           O0316 12   23 
+       772.      2677.        37.         3.      1.050           O0316 12   24 
+       772.      2776.        46.         4.      1.047           O0316 12   25 
+       772.      2876.        65.         5.      1.045           O0316 12   26 
+       772.      2975.        86.         6.      1.043           O0316 12   27 
+       772.      3074.       115.         7.      1.040           O0316 12   28 
+       772.      3174.       136.         8.      1.039           O0316 12   29 
+       772.      3273.       165.        11.      1.037           O0316 12   30 
+       772.      3372.       192.        12.      1.035           O0316 12   31 
+       772.      3471.       246.        16.      1.034           O0316 12   32 
+       772.      3570.       268.        17.      1.032           O0316 12   33 
+       794.      2479.        34.         2.      1.056           O0316 12   34 
+       794.      2578.        48.         3.      1.053           O0316 12   35 
+       794.      2677.        70.         5.      1.050           O0316 12   36 
+       794.      2776.        78.         5.      1.047           O0316 12   37 
+       794.      2876.       102.         6.      1.045           O0316 12   38 
+       794.      2975.       136.         9.      1.043           O0316 12   39 
+       794.      3074.       174.        11.      1.040           O0316 12   40 
+       794.      3174.       214.        14.      1.039           O0316 12   41 
+       794.      3273.       259.        17.      1.037           O0316 12   42 
+       794.      3372.       322.        21.      1.035           O0316 12   43 
+       794.      3471.       382.        24.      1.034           O0316 12   44 
+       794.      3570.       451.        28.      1.032           O0316 12   45 
+       983.      2479.        37.         2.      1.056           O0316 12   46 
+       983.      2578.        49.         4.      1.053           O0316 12   47 
+       983.      2677.        70.         5.      1.050           O0316 12   48 
+       983.      2776.        80.         5.      1.047           O0316 12   49 
+       983.      2876.       104.         6.      1.045           O0316 12   50 
+       983.      2975.       130.         9.      1.043           O0316 12   51 
+       983.      3074.       166.        10.      1.040           O0316 12   52 
+       983.      3174.       194.        12.      1.039           O0316 12   53 
+       983.      3273.       230.        15.      1.037           O0316 12   54 
+       983.      3372.       278.        17.      1.035           O0316 12   55 
+       983.      3471.       320.        20.      1.034           O0316 12   56 
+       983.      3570.       350.        22.      1.032           O0316 12   57 
+      1024.      2479.        7.2         1.      1.056           O0316 12   58 
+      1024.      2578.        10.         1.      1.053           O0316 12   59 
+      1024.      2677.        15.         1.      1.050           O0316 12   60 
+      1024.      2776.        18.         1.      1.047           O0316 12   61 
+      1024.      2876.        25.         1.      1.045           O0316 12   62 
+      1024.      2975.        33.         2.      1.043           O0316 12   63 
+      1024.      3074.        46.         4.      1.040           O0316 12   64 
+      1024.      3174.        58.         4.      1.039           O0316 12   65 
+      1024.      3273.        70.         4.      1.037           O0316 12   66 
+      1024.      3372.        85.         6.      1.035           O0316 12   67 
+      1024.      3471.       109.         7.      1.034           O0316 12   68 
+      1024.      3570.       133.         8.      1.032           O0316 12   69 
+      1182.      2479.        30.         2.      1.056           O0316 12   70 
+      1182.      2578.        40.         3.      1.053           O0316 12   71 
+      1182.      2677.        53.         4.      1.050           O0316 12   72 
+      1182.      2776.        64.         4.      1.047           O0316 12   73 
+      1182.      2876.        88.         6.      1.045           O0316 12   74 
+      1182.      2975.       106.         7.      1.043           O0316 12   75 
+      1182.      3074.       138.         9.      1.040           O0316 12   76 
+      1182.      3174.       162.        10.      1.039           O0316 12   77 
+      1182.      3273.       189.        12.      1.037           O0316 12   78 
+      1182.      3372.       226.        15.      1.035           O0316 12   79 
+      1182.      3471.       266.        17.      1.034           O0316 12   80 
+      1182.      3570.       293.        19.      1.032           O0316 12   81 
+      1203.      2479.        19.         1.      1.056           O0316 12   82 
+      1203.      2578.        27.         2.      1.053           O0316 12   83 
+      1203.      2677.        40.         2.      1.050           O0316 12   84 
+      1203.      2776.        43.         2.      1.047           O0316 12   85 
+      1203.      2876.        59.         4.      1.045           O0316 12   86 
+      1203.      2975.        78.         5.      1.043           O0316 12   87 
+      1203.      3074.        97.         6.      1.040           O0316 12   88 
+      1203.      3174.       119.         8.      1.039           O0316 12   89 
+      1203.      3273.       145.         9.      1.037           O0316 12   90 
+      1203.      3372.       178.        11.      1.035           O0316 12   91 
+      1203.      3471.       214.        14.      1.034           O0316 12   92 
+      1203.      3570.       245.        16.      1.032           O0316 12   93 
+      1210.      2479.       0.80       0.30      1.056           O0316 12   94 
+      1210.      2578.        1.1        0.3      1.053           O0316 12   95 
+      1210.      2677.        1.6        0.3      1.050           O0316 12   96 
+      1210.      2776.        2.1        0.4      1.047           O0316 12   97 
+      1210.      2876.        2.9        0.4      1.045           O0316 12   98 
+      1210.      2975.        4.5        0.5      1.043           O0316 12   99 
+      1210.      3074.        5.4        0.5      1.040           O0316 12  100 
+      1210.      3174.        6.5        0.5      1.039           O0316 12  101 
+      1210.      3273.        8.2        0.6      1.037           O0316 12  102 
+      1210.      3372.        12.         1.      1.035           O0316 12  103 
+      1210.      3471.        15.         1.      1.034           O0316 12  104 
+      1210.      3570.        18.         1.      1.032           O0316 12  105 
+      1227.      2479.        3.1        0.4      1.056           O0316 12  106 
+      1227.      2578.        4.2        0.4      1.053           O0316 12  107 
+      1227.      2677.        5.7        0.5      1.050           O0316 12  108 
+      1227.      2776.        7.0        0.6      1.047           O0316 12  109 
+      1227.      2876.        9.3        0.7      1.045           O0316 12  110 
+      1227.      2975.        12.         1.      1.043           O0316 12  111 
+      1227.      3074.        18.         1.      1.040           O0316 12  112 
+      1227.      3174.        21.         1.      1.039           O0316 12  113 
+      1227.      3273.        25.         2.      1.037           O0316 12  114 
+      1227.      3372.        34.         2.      1.035           O0316 12  115 
+      1227.      3471.        39.         3.      1.034           O0316 12  116 
+      1227.      3570.        49.         3.      1.032           O0316 12  117 
+      1692.      2479.       0.90       0.20      1.056           O0316 12  118 
+      1692.      2578.        1.4        0.3      1.053           O0316 12  119 
+      1692.      2677.        1.9        0.3      1.050           O0316 12  120 
+      1692.      2776.        2.2        0.4      1.047           O0316 12  121 
+      1692.      2876.        3.3        0.5      1.045           O0316 12  122 
+      1692.      2975.        4.4        0.5      1.043           O0316 12  123 
+      1692.      3074.        5.3        0.5      1.040           O0316 12  124 
+      1692.      3174.        8.1        0.7      1.039           O0316 12  125 
+      1692.      3273.        9.0        0.7      1.037           O0316 12  126 
+      1692.      3372.        11.         1.      1.035           O0316 12  127 
+      1692.      3471.        13.         1.      1.034           O0316 12  128 
+      1692.      3570.        17.         1.      1.032           O0316 12  129 
+      1705.      2479.        2.8        0.2      1.056           O0316 12  130 
+      1705.      2578.        4.3        0.3      1.053           O0316 12  131 
+      1705.      2677.        5.3        0.4      1.050           O0316 12  132 
+      1705.      2776.        6.4        0.5      1.047           O0316 12  133 
+      1705.      2876.        7.4        0.5      1.045           O0316 12  134 
+      1705.      2975.        9.0        0.6      1.043           O0316 12  135 
+      1705.      3074.        12.         1.      1.040           O0316 12  136 
+      1705.      3174.        15.         1.      1.039           O0316 12  137 
+      1705.      3273.        16.         1.      1.037           O0316 12  138 
+      1705.      3372.        21.         1.      1.035           O0316 12  139 
+      1705.      3471.        23.         2.      1.034           O0316 12  140 
+      1705.      3570.        25.         2.      1.032           O0316 12  141 
+      1802.      2479.        3.4        0.2      1.056           O0316 12  142 
+      1802.      2578.        4.8        0.4      1.053           O0316 12  143 
+      1802.      2677.        7.4        0.5      1.050           O0316 12  144 
+      1802.      2776.        8.4        0.6      1.047           O0316 12  145 
+      1802.      2876.        12.         1.      1.045           O0316 12  146 
+      1802.      2975.        15.         1.      1.043           O0316 12  147 
+      1802.      3074.        18.         1.      1.040           O0316 12  148 
+      1802.      3174.        23.         2.      1.039           O0316 12  149 
+      1802.      3273.        29.         2.      1.037           O0316 12  150 
+      1802.      3372.        34.         2.      1.035           O0316 12  151 
+      1802.      3471.        39.         3.      1.034           O0316 12  152 
+      1802.      3570.        45.         3.      1.032           O0316 12  153 
+      1821.      2479.       0.52       0.21      1.056           O0316 12  154 
+      1821.      2578.       0.72       0.20      1.053           O0316 12  155 
+      1821.      2677.       0.93       0.21      1.050           O0316 12  156 
+      1821.      2776.        1.5        0.4      1.047           O0316 12  157 
+      1821.      2876.        2.0        0.4      1.045           O0316 12  158 
+      1821.      2975.        2.6        0.4      1.043           O0316 12  159 
+      1821.      3074.        3.5        0.5      1.040           O0316 12  160 
+      1821.      3174.        4.5        0.5      1.039           O0316 12  161 
+      1821.      3273.        4.9        0.4      1.037           O0316 12  162 
+      1821.      3372.        5.8        0.5      1.035           O0316 12  163 
+      1821.      3471.        7.1        0.5      1.034           O0316 12  164 
+      1821.      3570.        8.3        0.6      1.032           O0316 12  165 
+      2083.      2479.        1.8        0.1      1.056           O0316 12  166 
+      2083.      2578.        2.6        0.2      1.053           O0316 12  167 
+      2083.      2677.        3.0        0.2      1.050           O0316 12  168 
+      2083.      2776.        3.8        0.2      1.047           O0316 12  169 
+      2083.      2876.        4.9        0.4      1.045           O0316 12  170 
+      2083.      2975.        6.0        0.5      1.043           O0316 12  171 
+      2083.      3074.        7.8        0.6      1.040           O0316 12  172 
+      2083.      3174.        8.7        0.7      1.039           O0316 12  173 
+      2083.      3273.        9.9        0.7      1.037           O0316 12  174 
+      2083.      3372.        12.         1.      1.035           O0316 12  175 
+      2083.      3471.        16.         1.      1.034           O0316 12  176 
+      2083.      3570.        16.         1.      1.032           O0316 12  177 
+      2159.      2479.        2.0        0.1      1.056           O0316 12  178 
+      2159.      2578.        3.4        0.3      1.053           O0316 12  179 
+      2159.      2677.        4.1        0.2      1.050           O0316 12  180 
+      2159.      2776.        4.6        0.4      1.047           O0316 12  181 
+      2159.      2876.        7.3        0.5      1.045           O0316 12  182 
+      2159.      2975.        8.3        0.6      1.043           O0316 12  183 
+      2159.      3074.        11.         1.      1.040           O0316 12  184 
+      2159.      3174.        13.         1.      1.039           O0316 12  185 
+      2159.      3273.        15.         1.      1.037           O0316 12  186 
+      2159.      3372.        18.         1.      1.035           O0316 12  187 
+      2159.      3471.        21.         1.      1.034           O0316 12  188 
+      2159.      3570.        23.         2.      1.032           O0316 12  189 
+      2211.      2479.        3.4        0.2      1.056           O0316 12  190 
+      2211.      2578.        4.4        0.3      1.053           O0316 12  191 
+      2211.      2677.        6.5        0.5      1.050           O0316 12  192 
+      2211.      2776.        6.9        0.5      1.047           O0316 12  193 
+      2211.      2876.        11.         1.      1.045           O0316 12  194 
+      2211.      2975.        13.         1.      1.043           O0316 12  195 
+      2211.      3074.        16.         1.      1.040           O0316 12  196 
+      2211.      3174.        19.         1.      1.039           O0316 12  197 
+      2211.      3273.        24.         2.      1.037           O0316 12  198 
+      2211.      3372.        28.         2.      1.035           O0316 12  199 
+      2211.      3471.        34.         2.      1.034           O0316 12  200 
+      2211.      3570.        33.         2.      1.032           O0316 12  201 
+      2409.      2479.        4.4        0.3      1.056           O0316 12  202 
+      2409.      2578.        6.1        0.5      1.053           O0316 12  203 
+      2409.      2677.        7.8        0.5      1.050           O0316 12  204 
+      2409.      2776.        7.5        0.5      1.047           O0316 12  205 
+      2409.      2876.        13.         1.      1.045           O0316 12  206 
+      2409.      2975.        12.         1.      1.043           O0316 12  207 
+      2409.      3074.        18.         1.      1.040           O0316 12  208 
+      2409.      3174.        23.         2.      1.039           O0316 12  209 
+      2409.      3273.        24.         2.      1.037           O0316 12  210 
+      2409.      3372.        28.         2.      1.035           O0316 12  211 
+      2409.      3471.        33.         2.      1.034           O0316 12  212 
+      2409.      3570.        37.         2.      1.032           O0316 12  213 
+      2615.      2479.       0.80       0.40      1.056           O0316 12  214 
+      2615.      2578.        1.6        0.7      1.053           O0316 12  215 
+      2615.      2677.        2.2        0.8      1.050           O0316 12  216 
+      2615.      2776.        3.5        0.9      1.047           O0316 12  217 
+      2615.      2876.        4.2        0.7      1.045           O0316 12  218 
+      2615.      2975.        5.0        0.7      1.043           O0316 12  219 
+      2615.      3074.        7.9        1.1      1.040           O0316 12  220 
+      2615.      3174.        8.4        1.1      1.039           O0316 12  221 
+      2615.      3273.        8.1        0.9      1.037           O0316 12  222 
+      2615.      3372.        10.         1.      1.035           O0316 12  223 
+      2615.      3471.        12.         2.      1.034           O0316 12  224 
+      2615.      3570.        12.         2.      1.032           O0316 12  225 
+ENDDATA            206          0                                 O0316 12  226 
+ENDSUBENT          225          0                                 O0316 1299999 
+SUBENT        O0316013   20230313                             O096O0316 13    1 
+BIB                  6          9                                 O0316 13    2 
+REACTION   (38-SR-88(P,G)39-Y-89,PAR,SIG)                         O0316 13    3 
+SAMPLE     (38-SR-88,ENR=0.9984) 88Sr(NO3)2 targets were          O0316 13    4 
+           evaporated on Ta-backings.                             O0316 13    5 
+            Target thickness was:                                 O0316 13    6 
+            168. +- 12. ug/cm2 for gamma-angular distributions    O0316 13    7 
+MISC-COL   (MISC) the screening correction factors                O0316 13    8 
+ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target uniformity         O0316 13    9 
+STATUS     (TABLE) Cr.sect. from the author                       O0316 13   10 
+HISTORY    (20230313C) SD                                         O0316 13   11 
+ENDBIB               9          0                                 O0316 13   12 
+COMMON               2          3                                 O0316 13   13 
+E-LVL      EN-ERR                                                 O0316 13   14 
+MEV        MEV                                                    O0316 13   15 
+       0.0     0.0095                                             O0316 13   16 
+ENDCOMMON            3          0                                 O0316 13   17 
+DATA                 4         33                                 O0316 13   18 
+EN-CM      DATA       ERR-T      MISC                             O0316 13   19 
+KEV        MICRO-B    MICRO-B    NO-DIM                           O0316 13   20 
+      1.379       0.27       0.17      1.141                      O0316 13   21 
+      1.479       0.39       0.13      1.126                      O0316 13   22 
+      1.580       1.30       0.27      1.114                      O0316 13   23 
+      1.680        1.6        0.3      1.103                      O0316 13   24 
+      1.780        2.3        0.4      1.094                      O0316 13   25 
+      1.880        3.0        0.4      1.087                      O0316 13   26 
+      1.982        3.5        1.0      1.080                      O0316 13   27 
+      2.080        17.         3.      1.074                      O0316 13   28 
+      2.180        17.         3.      1.069                      O0316 13   29 
+      2.280        40.         5.      1.064                      O0316 13   30 
+      2.380        49.         6.      1.060                      O0316 13   31 
+      2.480        33.         4.      1.056                      O0316 13   32 
+      2.561        61.         7.      1.054                      O0316 13   33 
+      2.581        45.         5.      1.053                      O0316 13   34 
+      2.680        62.         7.      1.050                      O0316 13   35 
+      2.780        67.         6.      1.047                      O0316 13   36 
+      2.880        57.         5.      1.045                      O0316 13   37 
+      2.957       100.         8.      1.043                      O0316 13   38 
+      2.980        84.         8.      1.042                      O0316 13   39 
+      3.081       130.        10.      1.040                      O0316 13   40 
+      3.180        84.         8.      1.038                      O0316 13   41 
+      3.281       108.        10.      1.037                      O0316 13   42 
+      3.354       189.        13.      1.035                      O0316 13   43 
+      3.380       148.        12.      1.035                      O0316 13   44 
+      3.478       145.        12.      1.034                      O0316 13   45 
+      3.552       222.        14.      1.032                      O0316 13   46 
+      3.750       257.        15.      1.030                      O0316 13   47 
+      3.948       362.        21.      1.028                      O0316 13   48 
+      4.146       349.        19.      1.026                      O0316 13   49 
+      4.344       427.        23.      1.024                      O0316 13   50 
+      4.541       458.        26.      1.022                      O0316 13   51 
+      4.739       376.        22.      1.021                      O0316 13   52 
+      4.937       201.        12.      1.020                      O0316 13   53 
+ENDDATA             35          0                                 O0316 13   54 
+ENDSUBENT           53          0                                 O0316 1399999 
+SUBENT        O0316014   20230313                             O096O0316 14    1 
+BIB                  6          9                                 O0316 14    2 
+REACTION   (38-SR-88(P,G)39-Y-89,PAR,SIG,G)                       O0316 14    3 
+SAMPLE     (38-SR-88,ENR=0.9984) 88Sr(NO3)2 targets were          O0316 14    4 
+           evaporated on Ta-backings.                             O0316 14    5 
+            Target thickness was:                                 O0316 14    6 
+            168. +- 12. ug/cm2 for gamma-angular distributions    O0316 14    7 
+MISC-COL   (MISC) the screening correction factors                O0316 14    8 
+ERR-ANALYS (ERR-2,3.,4.) Uncertainty in target uniformity         O0316 14    9 
+STATUS     (TABLE) Cr.sect. from the author                       O0316 14   10 
+HISTORY    (20230313C) SD                                         O0316 14   11 
+ENDBIB               9          0                                 O0316 14   12 
+COMMON               1          3                                 O0316 14   13 
+EN-ERR                                                            O0316 14   14 
+MEV                                                               O0316 14   15 
+     0.0095                                                       O0316 14   16 
+ENDCOMMON            3          0                                 O0316 14   17 
+DATA                 5        285                                 O0316 14   18 
+E          EN-CM      DATA       ERR-T      MISC                  O0316 14   19 
+KEV        KEV        MICRO-B    MICRO-B    NO-DIM                O0316 14   20 
+      1507.      1.379       0.23       0.18      1.141           O0316 14   21 
+      1507.      1.479       0.34       0.17      1.126           O0316 14   22 
+      1507.      1.580       0.40       0.04      1.114           O0316 14   23 
+      1507.      1.680       0.67       0.05      1.103           O0316 14   24 
+      1507.      1.780        2.2        0.2      1.094           O0316 14   25 
+      1507.      1.880        6.0        0.5      1.087           O0316 14   26 
+      1507.      1.982        4.4        0.4      1.080           O0316 14   27 
+      1507.      2.080        13.         1.      1.074           O0316 14   28 
+      1507.      2.180        17.         1.      1.069           O0316 14   29 
+      1507.      2.280        33.         3.      1.064           O0316 14   30 
+      1507.      2.380        36.         3.      1.060           O0316 14   31 
+      1507.      2.480        44.         4.      1.056           O0316 14   32 
+      1507.      2.561        48.         3.      1.054           O0316 14   33 
+      1507.      2.581        52.         4.      1.053           O0316 14   34 
+      1507.      2.680       102.         8.      1.050           O0316 14   35 
+      1507.      2.780       134.        10.      1.047           O0316 14   36 
+      1507.      2.880       151.        11.      1.045           O0316 14   37 
+      1507.      2.957       182.        11.      1.043           O0316 14   38 
+      1507.      2.980       200.        14.      1.042           O0316 14   39 
+      1507.      3.081       329.        20.      1.040           O0316 14   40 
+      1507.      3.180       295.        22.      1.038           O0316 14   41 
+      1507.      3.281       373.        27.      1.037           O0316 14   42 
+      1507.      3.354       392.        22.      1.035           O0316 14   43 
+      1507.      3.380       409.        29.      1.035           O0316 14   44 
+      1507.      3.478       645.        45.      1.034           O0316 14   45 
+      1507.      3.552       530.        29.      1.032           O0316 14   46 
+      1507.      3.750       659.        35.      1.030           O0316 14   47 
+      1507.      3.948       874.        46.      1.028           O0316 14   48 
+      1507.      4.146      1129.        57.      1.026           O0316 14   49 
+      1507.      4.344      1409.        71.      1.024           O0316 14   50 
+      1507.      4.541      1261.        68.      1.022           O0316 14   51 
+      1507.      4.739      1380.        74.      1.021           O0316 14   52 
+      1507.      4.937       836.        44.      1.020           O0316 14   53 
+      1744.      1.780       0.70       0.05      1.094           O0316 14   54 
+      1744.      1.880        1.2        0.1      1.087           O0316 14   55 
+      1744.      1.982        1.7        0.1      1.080           O0316 14   56 
+      1744.      2.080        3.0        0.2      1.074           O0316 14   57 
+      1744.      2.180        5.6        0.4      1.069           O0316 14   58 
+      1744.      2.280        12.         1.      1.064           O0316 14   59 
+      1744.      2.380        15.         1.      1.060           O0316 14   60 
+      1744.      2.480        17.         1.      1.056           O0316 14   61 
+      1744.      2.561        22.         2.      1.054           O0316 14   62 
+      1744.      2.581        24.         2.      1.053           O0316 14   63 
+      1744.      2.680        40.         3.      1.050           O0316 14   64 
+      1744.      2.780        45.         3.      1.047           O0316 14   65 
+      1744.      2.880        70.         5.      1.045           O0316 14   66 
+      1744.      2.957        74.         4.      1.043           O0316 14   67 
+      1744.      2.980        82.         6.      1.042           O0316 14   68 
+      1744.      3.081       123.         8.      1.040           O0316 14   69 
+      1744.      3.180       151.        10.      1.038           O0316 14   70 
+      1744.      3.281       192.        13.      1.037           O0316 14   71 
+      1744.      3.354       151.         9.      1.035           O0316 14   72 
+      1744.      3.380       213.        14.      1.035           O0316 14   73 
+      1744.      3.478       296.        19.      1.034           O0316 14   74 
+      1744.      3.552       216.        13.      1.032           O0316 14   75 
+      1744.      3.750       245.        15.      1.030           O0316 14   76 
+      1744.      3.948       312.        19.      1.028           O0316 14   77 
+      1744.      4.146       410.        24.      1.026           O0316 14   78 
+      1744.      4.344       523.        31.      1.024           O0316 14   79 
+      1744.      4.541       549.        33.      1.022           O0316 14   80 
+      1744.      4.739       562.        34.      1.021           O0316 14   81 
+      1744.      4.937       338.        21.      1.020           O0316 14   82 
+      2881.      1.680       0.17       0.01      1.103           O0316 14   83 
+      2881.      1.780       1.01       0.09      1.094           O0316 14   84 
+      2881.      1.880       0.80       0.06      1.087           O0316 14   85 
+      2881.      1.982        1.1        0.1      1.080           O0316 14   86 
+      2881.      2.080        2.4        0.2      1.074           O0316 14   87 
+      2881.      2.180        3.3        0.3      1.069           O0316 14   88 
+      2881.      2.280        12.         1.      1.064           O0316 14   89 
+      2881.      2.380        11.         1.      1.060           O0316 14   90 
+      2881.      2.480        13.         1.      1.056           O0316 14   91 
+      2881.      2.561        12.         1.      1.054           O0316 14   92 
+      2881.      2.581        13.         1.      1.053           O0316 14   93 
+      2881.      2.680        36.         3.      1.050           O0316 14   94 
+      2881.      2.780        32.         2.      1.047           O0316 14   95 
+      2881.      2.880        41.         3.      1.045           O0316 14   96 
+      2881.      2.957        46.         3.      1.043           O0316 14   97 
+      2881.      2.980        48.         3.      1.042           O0316 14   98 
+      2881.      3.081        70.         5.      1.040           O0316 14   99 
+      2881.      3.180        70.         5.      1.038           O0316 14  100 
+      2881.      3.281        86.         6.      1.037           O0316 14  101 
+      2881.      3.354        81.         6.      1.035           O0316 14  102 
+      2881.      3.380        94.         7.      1.035           O0316 14  103 
+      2881.      3.478       136.         9.      1.034           O0316 14  104 
+      2881.      3.552       121.         8.      1.032           O0316 14  105 
+      2881.      3.750       138.         8.      1.030           O0316 14  106 
+      2881.      3.948       181.        11.      1.028           O0316 14  107 
+      2881.      4.146       199.        12.      1.026           O0316 14  108 
+      2881.      4.344       269.        16.      1.024           O0316 14  109 
+      2881.      4.541       258.        15.      1.022           O0316 14  110 
+      2881.      4.739       298.        17.      1.021           O0316 14  111 
+      2881.      4.937       178.        12.      1.020           O0316 14  112 
+      3067.      1.580       0.09       0.02      1.114           O0316 14  113 
+      3067.      1.680       0.22       0.03      1.103           O0316 14  114 
+      3067.      1.780       0.40       0.04      1.094           O0316 14  115 
+      3067.      1.880        1.1        0.1      1.087           O0316 14  116 
+      3067.      1.982        2.1        0.2      1.080           O0316 14  117 
+      3067.      2.080        2.6        0.2      1.074           O0316 14  118 
+      3067.      2.180        3.6        0.3      1.069           O0316 14  119 
+      3067.      2.280        7.3        0.4      1.064           O0316 14  120 
+      3067.      2.380        11.         1.      1.060           O0316 14  121 
+      3067.      2.480        11.         1.      1.056           O0316 14  122 
+      3067.      2.561        8.6        1.0      1.054           O0316 14  123 
+      3067.      2.581        9.5        0.9      1.053           O0316 14  124 
+      3067.      2.680        24.         2.      1.050           O0316 14  125 
+      3067.      2.780        24.         2.      1.047           O0316 14  126 
+      3067.      2.880        40.         3.      1.045           O0316 14  127 
+      3067.      2.957        33.         2.      1.043           O0316 14  128 
+      3067.      2.980        38.         3.      1.042           O0316 14  129 
+      3067.      3.081        44.         3.      1.040           O0316 14  130 
+      3067.      3.180        57.         4.      1.038           O0316 14  131 
+      3067.      3.281        73.         5.      1.037           O0316 14  132 
+      3067.      3.354        67.         4.      1.035           O0316 14  133 
+      3067.      3.380        72.         5.      1.035           O0316 14  134 
+      3067.      3.478       113.         8.      1.034           O0316 14  135 
+      3067.      3.552        91.         5.      1.032           O0316 14  136 
+      3067.      3.750       133.         8.      1.030           O0316 14  137 
+      3067.      3.948       158.         9.      1.028           O0316 14  138 
+      3067.      4.146       177.        11.      1.026           O0316 14  139 
+      3067.      4.344       242.        14.      1.024           O0316 14  140 
+      3067.      4.541       244.        14.      1.022           O0316 14  141 
+      3067.      4.739       253.        15.      1.021           O0316 14  142 
+      3067.      4.937       156.        10.      1.020           O0316 14  143 
+      3107.      1.780       0.17       0.02      1.094           O0316 14  144 
+      3107.      1.880       0.29       0.04      1.087           O0316 14  145 
+      3107.      1.982       0.18       0.02      1.080           O0316 14  146 
+      3107.      2.080       0.68       0.05      1.074           O0316 14  147 
+      3107.      2.180        1.6        0.1      1.069           O0316 14  148 
+      3107.      2.280        2.8        0.2      1.064           O0316 14  149 
+      3107.      2.380        3.9        0.2      1.060           O0316 14  150 
+      3107.      2.480        5.9        0.3      1.056           O0316 14  151 
+      3107.      2.561        5.8        0.8      1.054           O0316 14  152 
+      3107.      2.581        6.1        0.3      1.053           O0316 14  153 
+      3107.      2.680        9.0        0.5      1.050           O0316 14  154 
+      3107.      2.780        11.         1.      1.047           O0316 14  155 
+      3107.      2.880        16.         1.      1.045           O0316 14  156 
+      3107.      2.957        18.         2.      1.043           O0316 14  157 
+      3107.      2.980        23.         1.      1.042           O0316 14  158 
+      3107.      3.081        35.         2.      1.040           O0316 14  159 
+      3107.      3.180        56.         3.      1.038           O0316 14  160 
+      3107.      3.281        50.         3.      1.037           O0316 14  161 
+      3107.      3.354        39.         5.      1.035           O0316 14  162 
+      3107.      3.380        53.         3.      1.035           O0316 14  163 
+      3107.      3.478        75.         4.      1.034           O0316 14  164 
+      3107.      3.552        56.         7.      1.032           O0316 14  165 
+      3107.      3.750        64.         8.      1.030           O0316 14  166 
+      3107.      3.948        91.        10.      1.028           O0316 14  167 
+      3107.      4.146       107.        13.      1.026           O0316 14  168 
+      3107.      4.344       137.        16.      1.024           O0316 14  169 
+      3107.      4.541       143.        17.      1.022           O0316 14  170 
+      3107.      4.739       148.        18.      1.021           O0316 14  171 
+      3107.      4.937        88.        11.      1.020           O0316 14  172 
+      3139.      1.680       0.06       0.02      1.103           O0316 14  173 
+      3139.      1.780       0.11       0.01      1.094           O0316 14  174 
+      3139.      1.880       0.26       0.03      1.087           O0316 14  175 
+      3139.      1.982       0.50       0.05      1.080           O0316 14  176 
+      3139.      2.080       0.64       0.07      1.074           O0316 14  177 
+      3139.      2.180        1.1        0.1      1.069           O0316 14  178 
+      3139.      2.280        2.7        0.2      1.064           O0316 14  179 
+      3139.      2.380        2.7        0.2      1.060           O0316 14  180 
+      3139.      2.480        5.5        0.4      1.056           O0316 14  181 
+      3139.      2.561        5.7        0.9      1.054           O0316 14  182 
+      3139.      2.581        5.2        0.4      1.053           O0316 14  183 
+      3139.      2.680        13.         1.      1.050           O0316 14  184 
+      3139.      2.780        11.         1.      1.047           O0316 14  185 
+      3139.      2.880        16.         1.      1.045           O0316 14  186 
+      3139.      2.957        16.         1.      1.043           O0316 14  187 
+      3139.      2.980        21.         2.      1.042           O0316 14  188 
+      3139.      3.081        29.         2.      1.040           O0316 14  189 
+      3139.      3.180        32.         2.      1.038           O0316 14  190 
+      3139.      3.281        42.         3.      1.037           O0316 14  191 
+      3139.      3.354        39.         2.      1.035           O0316 14  192 
+      3139.      3.380        48.         3.      1.035           O0316 14  193 
+      3139.      3.478        70.         5.      1.034           O0316 14  194 
+      3139.      3.552        53.         3.      1.032           O0316 14  195 
+      3139.      3.750        66.         4.      1.030           O0316 14  196 
+      3139.      3.948        82.         5.      1.028           O0316 14  197 
+      3139.      4.146       117.         7.      1.026           O0316 14  198 
+      3139.      4.344       155.        10.      1.024           O0316 14  199 
+      3139.      4.541       118.         8.      1.022           O0316 14  200 
+      3139.      4.739       131.         8.      1.021           O0316 14  201 
+      3139.      4.937        80.         7.      1.020           O0316 14  202 
+      3991.      1.780       0.11       0.03      1.094           O0316 14  203 
+      3991.      1.880       0.23       0.03      1.087           O0316 14  204 
+      3991.      1.982       0.35       0.03      1.080           O0316 14  205 
+      3991.      2.080        1.4        0.1      1.074           O0316 14  206 
+      3991.      2.180        1.3        0.1      1.069           O0316 14  207 
+      3991.      2.280        2.5        0.2      1.064           O0316 14  208 
+      3991.      2.380        3.3        0.3      1.060           O0316 14  209 
+      3991.      2.480        4.2        0.3      1.056           O0316 14  210 
+      3991.      2.561        6.6        0.9      1.054           O0316 14  211 
+      3991.      2.581        3.3        0.3      1.053           O0316 14  212 
+      3991.      2.680        8.3        0.6      1.050           O0316 14  213 
+      3991.      2.780        13.         1.      1.047           O0316 14  214 
+      3991.      2.880        8.9        0.6      1.045           O0316 14  215 
+      3991.      2.957        7.7        1.1      1.043           O0316 14  216 
+      3991.      2.980        15.         1.      1.042           O0316 14  217 
+      3991.      3.081        18.         1.      1.040           O0316 14  218 
+      3991.      3.180        20.         1.      1.038           O0316 14  219 
+      3991.      3.281        23.         2.      1.037           O0316 14  220 
+      3991.      3.354        25.         2.      1.035           O0316 14  221 
+      3991.      3.380        30.         2.      1.035           O0316 14  222 
+      3991.      3.478        39.         3.      1.034           O0316 14  223 
+      3991.      3.552        29.         3.      1.032           O0316 14  224 
+      3991.      3.750        34.         3.      1.030           O0316 14  225 
+      3991.      3.948        37.         3.      1.028           O0316 14  226 
+      3991.      4.146        47.         3.      1.026           O0316 14  227 
+      3991.      4.344        76.         5.      1.024           O0316 14  228 
+      3991.      4.541        63.         5.      1.022           O0316 14  229 
+      3991.      4.739        71.         5.      1.021           O0316 14  230 
+      3991.      4.937        48.         5.      1.020           O0316 14  231 
+      4015.      2.280       0.33       0.08      1.064           O0316 14  232 
+      4015.      2.380       0.42       0.08      1.060           O0316 14  233 
+      4015.      2.480       0.80       0.14      1.056           O0316 14  234 
+      4015.      2.561       0.85       0.38      1.054           O0316 14  235 
+      4015.      2.581       0.95       0.14      1.053           O0316 14  236 
+      4015.      2.680        1.2        0.2      1.050           O0316 14  237 
+      4015.      2.780        2.1        0.3      1.047           O0316 14  238 
+      4015.      2.880        2.8        0.4      1.045           O0316 14  239 
+      4015.      2.957        2.1        0.4      1.043           O0316 14  240 
+      4015.      2.980        2.2        0.3      1.042           O0316 14  241 
+      4015.      3.081        4.6        0.8      1.040           O0316 14  242 
+      4015.      3.180        3.8        0.6      1.038           O0316 14  243 
+      4015.      3.281        7.2        1.0      1.037           O0316 14  244 
+      4015.      3.354        6.8        1.0      1.035           O0316 14  245 
+      4015.      3.380        6.4        1.0      1.035           O0316 14  246 
+      4015.      3.478        8.4        1.5      1.034           O0316 14  247 
+      4015.      3.552        7.4        1.1      1.032           O0316 14  248 
+      4015.      3.750        8.0        0.9      1.030           O0316 14  249 
+      4015.      3.948        11.         1.      1.028           O0316 14  250 
+      4015.      4.146        16.         2.      1.026           O0316 14  251 
+      4015.      4.344        11.         1.      1.024           O0316 14  252 
+      4015.      4.541        11.         1.      1.022           O0316 14  253 
+      4015.      4.739        10.         1.      1.021           O0316 14  254 
+      4015.      4.937        6.6        1.2      1.020           O0316 14  255 
+      4023.      2.280       0.16       0.09      1.064           O0316 14  256 
+      4023.      2.380       0.20       0.11      1.060           O0316 14  257 
+      4023.      2.480       0.43       0.13      1.056           O0316 14  258 
+      4023.      2.561       0.53       0.28      1.054           O0316 14  259 
+      4023.      2.581       0.64       0.11      1.053           O0316 14  260 
+      4023.      2.680       0.95       0.19      1.050           O0316 14  261 
+      4023.      2.780        1.8        0.3      1.047           O0316 14  262 
+      4023.      2.880        2.7        0.4      1.045           O0316 14  263 
+      4023.      2.957        2.2        1.2      1.043           O0316 14  264 
+      4023.      2.980        1.9        0.4      1.042           O0316 14  265 
+      4023.      3.081        3.7        0.8      1.040           O0316 14  266 
+      4023.      3.180        3.8        0.6      1.038           O0316 14  267 
+      4023.      3.281        5.1        1.0      1.037           O0316 14  268 
+      4023.      3.354        4.9        1.2      1.035           O0316 14  269 
+      4023.      3.380        4.5        0.8      1.035           O0316 14  270 
+      4023.      3.478        6.5        1.0      1.034           O0316 14  271 
+      4023.      3.552        5.0        1.7      1.032           O0316 14  272 
+      4023.      3.750        5.1        1.1      1.030           O0316 14  273 
+      4023.      3.948        6.8        1.1      1.028           O0316 14  274 
+      4023.      4.146        10.         2.      1.026           O0316 14  275 
+      4023.      4.344        9.1        1.5      1.024           O0316 14  276 
+      4023.      4.541        6.3        1.4      1.022           O0316 14  277 
+      4023.      4.739        5.1        1.3      1.021           O0316 14  278 
+      4023.      4.937        4.1        1.5      1.020           O0316 14  279 
+      4171.      2.080       0.19       0.09      1.074           O0316 14  280 
+      4171.      2.180       0.28       0.09      1.069           O0316 14  281 
+      4171.      2.280       0.56       0.09      1.064           O0316 14  282 
+      4171.      2.380        1.1        0.1      1.060           O0316 14  283 
+      4171.      2.480        1.2        0.1      1.056           O0316 14  284 
+      4171.      2.561        1.3        0.1      1.054           O0316 14  285 
+      4171.      2.581        1.9        0.2      1.053           O0316 14  286 
+      4171.      2.680        2.6        0.3      1.050           O0316 14  287 
+      4171.      2.780        2.3        0.3      1.047           O0316 14  288 
+      4171.      2.880        4.1        0.5      1.045           O0316 14  289 
+      4171.      2.957        4.7        1.2      1.043           O0316 14  290 
+      4171.      2.980        5.1        0.6      1.042           O0316 14  291 
+      4171.      3.081        8.7        1.0      1.040           O0316 14  292 
+      4171.      3.180        9.5        1.0      1.038           O0316 14  293 
+      4171.      3.281        13.         1.      1.037           O0316 14  294 
+      4171.      3.354        14.         3.      1.035           O0316 14  295 
+      4171.      3.380        13.         1.      1.035           O0316 14  296 
+      4171.      3.478        16.         1.      1.034           O0316 14  297 
+      4171.      3.552        17.         3.      1.032           O0316 14  298 
+      4171.      3.750        20.         2.      1.030           O0316 14  299 
+      4171.      3.948        21.         2.      1.028           O0316 14  300 
+      4171.      4.146        28.         3.      1.026           O0316 14  301 
+      4171.      4.344        33.         3.      1.024           O0316 14  302 
+      4171.      4.541        30.         3.      1.022           O0316 14  303 
+      4171.      4.739        35.         4.      1.021           O0316 14  304 
+      4171.      4.937        28.         4.      1.020           O0316 14  305 
+ENDDATA            287          0                                 O0316 14  306 
+ENDSUBENT          305          0                                 O0316 1499999 
+SUBENT        O0316015   20230313                             O096O0316 15    1 
+BIB                  6          9                                 O0316 15    2 
+REACTION   (38-SR-87(P,G)39-Y-88,PAR,SIG)                         O0316 15    3 
+SAMPLE     (38-SR-87,ENR=0.9155) 87SrCO3 targets were evaporated  O0316 15    4 
+           on Ta-backings.                                        O0316 15    5 
+            Target thickness was:                                 O0316 15    6 
+             73. +- 9. ug/cm2 for gamma-angular distributions     O0316 15    7 
+MISC-COL   (MISC) the screening correction factors                O0316 15    8 
+ERR-ANALYS (ERR-2) Uncertainty in target uniformity               O0316 15    9 
+STATUS     (TABLE) Cr.sect. from the author                       O0316 15   10 
+HISTORY    (20230313C) SD                                         O0316 15   11 
+ENDBIB               9          0                                 O0316 15   12 
+COMMON               3          3                                 O0316 15   13 
+E-LVL      EN-ERR     ERR-2                                       O0316 15   14 
+MEV        MEV        PER-CENT                                    O0316 15   15 
+      0.0      0.0041       10.                                   O0316 15   16 
+ENDCOMMON            3          0                                 O0316 15   17 
+DATA                 4         19                                 O0316 15   18 
+EN-CM      DATA       ERR-T      MISC                             O0316 15   19 
+KEV        MICRO-B    MICRO-B    NO-DIM                           O0316 15   20 
+  1.982E+00        1.6         4.      1.080                      O0316 15   21 
+  2.081E+00        2.5        0.5      1.074                      O0316 15   22 
+  2.179E+00        3.9        0.7      1.069                      O0316 15   23 
+   2.28E+00        4.6        0.7      1.064                      O0316 15   24 
+  2.379E+00        6.6        0.8      1.060                      O0316 15   25 
+  2.479E+00        9.1        1.1      1.056                      O0316 15   26 
+  2.578E+00        13.         1.      1.053                      O0316 15   27 
+  2.676E+00        16.         2.      1.050                      O0316 15   28 
+   2.81E+00        20.         2.      1.046                      O0316 15   29 
+  2.877E+00        21.         2.      1.045                      O0316 15   30 
+  2.978E+00        27.         2.      1.043                      O0316 15   31 
+  3.016E+00        27.         2.      1.042                      O0316 15   32 
+  3.056E+00        18.         2.      1.041                      O0316 15   33 
+  3.142E+00        18.         2.      1.039                      O0316 15   34 
+  3.176E+00        15.         2.      1.039                      O0316 15   35 
+  3.317E+00        16.         2.      1.036                      O0316 15   36 
+  3.373E+00        11.         1.      1.035                      O0316 15   37 
+  3.474E+00        13.         1.      1.034                      O0316 15   38 
+   3.57E+00        14.         1.      1.032                      O0316 15   39 
+ENDDATA             21          0                                 O0316 15   40 
+ENDSUBENT           39          0                                 O0316 1599999 
+SUBENT        O0316016   20230313                             O096O0316 16    1 
+BIB                  6          9                                 O0316 16    2 
+REACTION   (38-SR-87(P,G)39-Y-88,PAR,SIG,G)                       O0316 16    3 
+SAMPLE     (38-SR-87,ENR=0.9155) 87SrCO3 targets were evaporated  O0316 16    4 
+           on Ta-backings.                                        O0316 16    5 
+            Target thickness was:                                 O0316 16    6 
+             73. +- 9. ug/cm2 for gamma-angular distributions     O0316 16    7 
+MISC-COL   (MISC) the screening correction factors                O0316 16    8 
+ERR-ANALYS (ERR-2) Uncertainty in target uniformity               O0316 16    9 
+STATUS     (TABLE) Cr.sect. from the author                       O0316 16   10 
+HISTORY    (20230313C) SD                                         O0316 16   11 
+ENDBIB               9          0                                 O0316 16   12 
+COMMON               2          3                                 O0316 16   13 
+EN-ERR     ERR-2                                                  O0316 16   14 
+MEV        PER-CENT                                               O0316 16   15 
+     0.0041        10.                                            O0316 16   16 
+ENDCOMMON            3          0                                 O0316 16   17 
+DATA                 5        190                                 O0316 16   18 
+E          EN-CM      DATA       ERR-T      MISC                  O0316 16   19 
+KEV        MEV        MICRO-B    MICRO-B    NO-DIM                O0316 16   20 
+       232.  1.982E+00        26.         2.      1.080           O0316 16   21 
+       232.  2.081E+00        45.         4.      1.074           O0316 16   22 
+       232.  2.179E+00        70.         5.      1.069           O0316 16   23 
+       232.   2.28E+00       125.         9.      1.064           O0316 16   24 
+       232.  2.379E+00       165.        11.      1.060           O0316 16   25 
+       232.  2.479E+00       272.        19.      1.056           O0316 16   26 
+       232.  2.578E+00       346.        23.      1.053           O0316 16   27 
+       232.  2.676E+00       454.        30.      1.050           O0316 16   28 
+       232.   2.81E+00       685.        46.      1.046           O0316 16   29 
+       232.  2.877E+00       747.        50.      1.045           O0316 16   30 
+       232.  2.978E+00      1023.        68.      1.043           O0316 16   31 
+       232.  3.016E+00      1248.        83.      1.042           O0316 16   32 
+       232.  3.056E+00       963.        64.      1.041           O0316 16   33 
+       232.  3.142E+00       934.        62.      1.039           O0316 16   34 
+       232.  3.176E+00       827.        54.      1.039           O0316 16   35 
+       232.  3.317E+00       968.        65.      1.036           O0316 16   36 
+       232.  3.373E+00       842.        56.      1.035           O0316 16   37 
+       232.  3.474E+00       888.        62.      1.034           O0316 16   38 
+       232.   3.57E+00      1061.        71.      1.032           O0316 16   39 
+       393.  1.982E+00        3.3        0.4      1.080           O0316 16   40 
+       393.  2.081E+00        5.8        0.7      1.074           O0316 16   41 
+       393.  2.179E+00        9.7        0.9      1.069           O0316 16   42 
+       393.   2.28E+00        14.         1.      1.064           O0316 16   43 
+       393.  2.379E+00        20.         2.      1.060           O0316 16   44 
+       393.  2.479E+00        32.         2.      1.056           O0316 16   45 
+       393.  2.578E+00        48.         4.      1.053           O0316 16   46 
+       393.  2.676E+00        79.         6.      1.050           O0316 16   47 
+       393.   2.81E+00        81.         6.      1.046           O0316 16   48 
+       393.  2.877E+00        97.         7.      1.045           O0316 16   49 
+       393.  2.978E+00       142.        10.      1.043           O0316 16   50 
+       393.  3.016E+00       169.        11.      1.042           O0316 16   51 
+       393.  3.056E+00       121.         9.      1.041           O0316 16   52 
+       393.  3.142E+00       115.         8.      1.039           O0316 16   53 
+       393.  3.176E+00       104.         7.      1.039           O0316 16   54 
+       393.  3.317E+00       107.         8.      1.036           O0316 16   55 
+       393.  3.373E+00        86.         6.      1.035           O0316 16   56 
+       393.  3.474E+00        84.         6.      1.034           O0316 16   57 
+       393.   3.57E+00        90.         6.      1.032           O0316 16   58 
+       843.  1.982E+00        1.2        0.3      1.080           O0316 16   59 
+       843.  2.081E+00        2.0        0.4      1.074           O0316 16   60 
+       843.  2.179E+00        3.0        0.4      1.069           O0316 16   61 
+       843.   2.28E+00        5.1        0.7      1.064           O0316 16   62 
+       843.  2.379E+00        6.9        0.8      1.060           O0316 16   63 
+       843.  2.479E+00        10.         1.      1.056           O0316 16   64 
+       843.  2.578E+00        15.         1.      1.053           O0316 16   65 
+       843.  2.676E+00        24.         2.      1.050           O0316 16   66 
+       843.   2.81E+00        26.         2.      1.046           O0316 16   67 
+       843.  2.877E+00        30.         2.      1.045           O0316 16   68 
+       843.  2.978E+00        47.         4.      1.043           O0316 16   69 
+       843.  3.016E+00        54.         4.      1.042           O0316 16   70 
+       843.  3.056E+00        39.         3.      1.041           O0316 16   71 
+       843.  3.142E+00        31.         2.      1.039           O0316 16   72 
+       843.  3.176E+00        29.         2.      1.039           O0316 16   73 
+       843.  3.317E+00        32.         2.      1.036           O0316 16   74 
+       843.  3.373E+00        28.         2.      1.035           O0316 16   75 
+       843.  3.474E+00        28.         2.      1.034           O0316 16   76 
+       843.   3.57E+00        32.         2.      1.032           O0316 16   77 
+       985.  1.982E+00        2.8        0.4      1.080           O0316 16   78 
+       985.  2.081E+00        5.0        0.5      1.074           O0316 16   79 
+       985.  2.179E+00        7.9        0.7      1.069           O0316 16   80 
+       985.   2.28E+00        13.         1.      1.064           O0316 16   81 
+       985.  2.379E+00        17.         1.      1.060           O0316 16   82 
+       985.  2.479E+00        27.         2.      1.056           O0316 16   83 
+       985.  2.578E+00        39.         3.      1.053           O0316 16   84 
+       985.  2.676E+00        66.         5.      1.050           O0316 16   85 
+       985.   2.81E+00        72.         5.      1.046           O0316 16   86 
+       985.  2.877E+00        87.         6.      1.045           O0316 16   87 
+       985.  2.978E+00       125.         8.      1.043           O0316 16   88 
+       985.  3.016E+00       150.        10.      1.042           O0316 16   89 
+       985.  3.056E+00       110.         7.      1.041           O0316 16   90 
+       985.  3.142E+00       100.         7.      1.039           O0316 16   91 
+       985.  3.176E+00        94.         6.      1.039           O0316 16   92 
+       985.  3.317E+00        99.         6.      1.036           O0316 16   93 
+       985.  3.373E+00        89.         6.      1.035           O0316 16   94 
+       985.  3.474E+00        95.         6.      1.034           O0316 16   95 
+       985.   3.57E+00       101.         7.      1.032           O0316 16   96 
+      1088.  1.982E+00        2.0        0.4      1.080           O0316 16   97 
+      1088.  2.081E+00        3.8        0.5      1.074           O0316 16   98 
+      1088.  2.179E+00        5.6        0.7      1.069           O0316 16   99 
+      1088.   2.28E+00        9.6        0.9      1.064           O0316 16  100 
+      1088.  2.379E+00        13.         1.      1.060           O0316 16  101 
+      1088.  2.479E+00        20.         2.      1.056           O0316 16  102 
+      1088.  2.578E+00        29.         3.      1.053           O0316 16  103 
+      1088.  2.676E+00        48.         4.      1.050           O0316 16  104 
+      1088.   2.81E+00        52.         4.      1.046           O0316 16  105 
+      1088.  2.877E+00        60.         4.      1.045           O0316 16  106 
+      1088.  2.978E+00        91.         6.      1.043           O0316 16  107 
+      1088.  3.016E+00       107.         7.      1.042           O0316 16  108 
+      1088.  3.056E+00        75.         5.      1.041           O0316 16  109 
+      1088.  3.142E+00        74.         5.      1.039           O0316 16  110 
+      1088.  3.176E+00        66.         5.      1.039           O0316 16  111 
+      1088.  3.317E+00        71.         5.      1.036           O0316 16  112 
+      1088.  3.373E+00        64.         4.      1.035           O0316 16  113 
+      1088.  3.474E+00        68.         5.      1.034           O0316 16  114 
+      1088.   3.57E+00        76.         5.      1.032           O0316 16  115 
+      1234.  1.982E+00        1.2        0.3      1.080           O0316 16  116 
+      1234.  2.081E+00        2.1        0.4      1.074           O0316 16  117 
+      1234.  2.179E+00        3.5        0.5      1.069           O0316 16  118 
+      1234.   2.28E+00        5.5        0.8      1.064           O0316 16  119 
+      1234.  2.379E+00        7.4        1.1      1.060           O0316 16  120 
+      1234.  2.479E+00        12.         2.      1.056           O0316 16  121 
+      1234.  2.578E+00        16.         2.      1.053           O0316 16  122 
+      1234.  2.676E+00        17.         2.      1.050           O0316 16  123 
+      1234.   2.81E+00        26.         3.      1.046           O0316 16  124 
+      1234.  2.877E+00        32.         3.      1.045           O0316 16  125 
+      1234.  2.978E+00        32.         3.      1.043           O0316 16  126 
+      1234.  3.016E+00        38.         4.      1.042           O0316 16  127 
+      1234.  3.056E+00        32.         4.      1.041           O0316 16  128 
+      1234.  3.142E+00        27.         3.      1.039           O0316 16  129 
+      1234.  3.176E+00        33.         3.      1.039           O0316 16  130 
+      1234.  3.317E+00        24.         3.      1.036           O0316 16  131 
+      1234.  3.373E+00        23.         3.      1.035           O0316 16  132 
+      1234.  3.474E+00        21.         2.      1.034           O0316 16  133 
+      1234.   3.57E+00        25.         3.      1.032           O0316 16  134 
+      1262.  1.982E+00       0.27       0.13      1.080           O0316 16  135 
+      1262.  2.081E+00       0.40       0.13      1.074           O0316 16  136 
+      1262.  2.179E+00       0.67       0.14      1.069           O0316 16  137 
+      1262.   2.28E+00        1.1        0.3      1.064           O0316 16  138 
+      1262.  2.379E+00        1.5        0.3      1.060           O0316 16  139 
+      1262.  2.479E+00        2.3        0.4      1.056           O0316 16  140 
+      1262.  2.578E+00        3.1        0.5      1.053           O0316 16  141 
+      1262.  2.676E+00        3.3        0.5      1.050           O0316 16  142 
+      1262.   2.81E+00        4.8        0.8      1.046           O0316 16  143 
+      1262.  2.877E+00        6.2        1.0      1.045           O0316 16  144 
+      1262.  2.978E+00        6.0        1.0      1.043           O0316 16  145 
+      1262.  3.016E+00        7.1        1.1      1.042           O0316 16  146 
+      1262.  3.056E+00        6.2        1.0      1.041           O0316 16  147 
+      1262.  3.142E+00        6.3        1.0      1.039           O0316 16  148 
+      1262.  3.176E+00        7.6        1.1      1.039           O0316 16  149 
+      1262.  3.317E+00        5.7        1.0      1.036           O0316 16  150 
+      1262.  3.373E+00        5.4        1.0      1.035           O0316 16  151 
+      1262.  3.474E+00        4.8        1.0      1.034           O0316 16  152 
+      1262.   3.57E+00        6.0        1.0      1.032           O0316 16  153 
+      1284.  1.982E+00       0.40       0.13      1.080           O0316 16  154 
+      1284.  2.081E+00       0.54       0.13      1.074           O0316 16  155 
+      1284.  2.179E+00       0.94       0.27      1.069           O0316 16  156 
+      1284.   2.28E+00        1.5        0.3      1.064           O0316 16  157 
+      1284.  2.379E+00        1.9        0.3      1.060           O0316 16  158 
+      1284.  2.479E+00        2.7        0.4      1.056           O0316 16  159 
+      1284.  2.578E+00        3.8        0.5      1.053           O0316 16  160 
+      1284.  2.676E+00        6.1        0.8      1.050           O0316 16  161 
+      1284.   2.81E+00        8.5        0.8      1.046           O0316 16  162 
+      1284.  2.877E+00        10.         1.      1.045           O0316 16  163 
+      1284.  2.978E+00        14.         1.      1.043           O0316 16  164 
+      1284.  3.016E+00        16.         1.      1.042           O0316 16  165 
+      1284.  3.056E+00        10.         1.      1.041           O0316 16  166 
+      1284.  3.142E+00        9.5        1.0      1.039           O0316 16  167 
+      1284.  3.176E+00        7.0        0.8      1.039           O0316 16  168 
+      1284.  3.317E+00        8.0        1.1      1.036           O0316 16  169 
+      1284.  3.373E+00        6.6        1.0      1.035           O0316 16  170 
+      1284.  3.474E+00        7.2        0.8      1.034           O0316 16  171 
+      1284.   3.57E+00        7.4        1.0      1.032           O0316 16  172 
+      1596.  1.982E+00       0.13       0.13      1.080           O0316 16  173 
+      1596.  2.081E+00       0.27       0.13      1.074           O0316 16  174 
+      1596.  2.179E+00       0.54       0.27      1.069           O0316 16  175 
+      1596.   2.28E+00        1.6        0.5      1.064           O0316 16  176 
+      1596.  2.379E+00        3.1        1.1      1.060           O0316 16  177 
+      1596.  2.479E+00        3.4        1.1      1.056           O0316 16  178 
+      1596.  2.578E+00        5.7        1.6      1.053           O0316 16  179 
+      1596.  2.676E+00        6.7        2.0      1.050           O0316 16  180 
+      1596.   2.81E+00        13.         2.      1.046           O0316 16  181 
+      1596.  2.877E+00        22.         3.      1.045           O0316 16  182 
+      1596.  2.978E+00        45.         3.      1.043           O0316 16  183 
+      1596.  3.016E+00        53.         4.      1.042           O0316 16  184 
+      1596.  3.056E+00        35.         2.      1.041           O0316 16  185 
+      1596.  3.142E+00        32.         2.      1.039           O0316 16  186 
+      1596.  3.176E+00        27.         2.      1.039           O0316 16  187 
+      1596.  3.317E+00        27.         2.      1.036           O0316 16  188 
+      1596.  3.373E+00        25.         2.      1.035           O0316 16  189 
+      1596.  3.474E+00        26.         2.      1.034           O0316 16  190 
+      1596.   3.57E+00        26.         2.      1.032           O0316 16  191 
+      1832.  1.982E+00       0.13       0.13      1.080           O0316 16  192 
+      1832.  2.081E+00       0.40       0.27      1.074           O0316 16  193 
+      1832.  2.179E+00       0.67       0.40      1.069           O0316 16  194 
+      1832.   2.28E+00       0.94       0.27      1.064           O0316 16  195 
+      1832.  2.379E+00        1.2        0.3      1.060           O0316 16  196 
+      1832.  2.479E+00        2.0        0.4      1.056           O0316 16  197 
+      1832.  2.578E+00        2.7        0.5      1.053           O0316 16  198 
+      1832.  2.676E+00        2.9        0.5      1.050           O0316 16  199 
+      1832.   2.81E+00        4.1        0.7      1.046           O0316 16  200 
+      1832.  2.877E+00        5.3        0.8      1.045           O0316 16  201 
+      1832.  2.978E+00        5.4        0.8      1.043           O0316 16  202 
+      1832.  3.016E+00        6.2        0.8      1.042           O0316 16  203 
+      1832.  3.056E+00        5.4        0.8      1.041           O0316 16  204 
+      1832.  3.142E+00        4.3        0.7      1.039           O0316 16  205 
+      1832.  3.176E+00        5.1        0.8      1.039           O0316 16  206 
+      1832.  3.317E+00        3.7        0.6      1.036           O0316 16  207 
+      1832.  3.373E+00        3.6        0.6      1.035           O0316 16  208 
+      1832.  3.474E+00        3.2        0.6      1.034           O0316 16  209 
+      1832.   3.57E+00        3.9        0.6      1.032           O0316 16  210 
+ENDDATA            192          0                                 O0316 16  211 
+ENDSUBENT          210          0                                 O0316 1699999 
+SUBENT        O0316017   20230313                             O096O0316 17    1 
+BIB                  6          9                                 O0316 17    2 
+REACTION   (38-SR-87(P,G)39-Y-88,PAR,SIG,G)                       O0316 17    3 
+SAMPLE     (38-SR-87,ENR=0.9155) 87SrCO3 targets were evaporated  O0316 17    4 
+           on Ta-backings.                                        O0316 17    5 
+            Target thickness was:                                 O0316 17    6 
+             73. +- 9. ug/cm2 for gamma-angular distributions     O0316 17    7 
+MISC-COL   (MISC) the screening correction factors                O0316 17    8 
+ERR-ANALYS (ERR-2) Uncertainty in target uniformity               O0316 17    9 
+STATUS     (TABLE) Cr.sect. from the author                       O0316 17   10 
+HISTORY    (20230313C) SD                                         O0316 17   11 
+ENDBIB               9          0                                 O0316 17   12 
+COMMON               5          3                                 O0316 17   13 
+E          E          E          EN-ERR     ERR-2                 O0316 17   14 
+KEV        KEV        KEV        MEV        PER-CENT              O0316 17   15 
+   1732.        1761.      1963.      0.0041     10.              O0316 17   16 
+ENDCOMMON            3          0                                 O0316 17   17 
+DATA                 4         19                                 O0316 17   18 
+EN-CM      DATA       ERR-T      MISC                             O0316 17   19 
+MEV        MICRO-B    MICRO-B    NO-DIM                           O0316 17   20 
+  1.982E+00      0.054      0.034      1.080                      O0316 17   21 
+  2.081E+00       0.15       0.05      1.074                      O0316 17   22 
+  2.179E+00       0.23       0.07      1.069                      O0316 17   23 
+   2.28E+00       0.40       0.12      1.064                      O0316 17   24 
+  2.379E+00       0.53       0.15      1.060                      O0316 17   25 
+  2.479E+00       0.87       0.25      1.056                      O0316 17   26 
+  2.578E+00        1.1        0.3      1.053                      O0316 17   27 
+  2.676E+00        1.5        0.4      1.050                      O0316 17   28 
+   2.81E+00        2.2        0.6      1.046                      O0316 17   29 
+  2.877E+00        2.4        0.7      1.045                      O0316 17   30 
+  2.978E+00        3.3        0.9      1.043                      O0316 17   31 
+  3.016E+00        4.1        1.1      1.042                      O0316 17   32 
+  3.056E+00        3.1        0.9      1.041                      O0316 17   33 
+  3.142E+00        3.0        0.8      1.039                      O0316 17   34 
+  3.176E+00        2.7        0.7      1.039                      O0316 17   35 
+  3.317E+00        3.1        0.9      1.036                      O0316 17   36 
+  3.373E+00        2.7        0.7      1.035                      O0316 17   37 
+  3.474E+00        2.9        0.8      1.034                      O0316 17   38 
+   3.57E+00        3.4        0.9      1.032                      O0316 17   39 
+ENDDATA             21          0                                 O0316 17   40 
+ENDSUBENT           39          0                                 O0316 1799999 
+ENDENTRY            17          0                                 O031699999999 
