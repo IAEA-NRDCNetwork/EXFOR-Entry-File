@@ -1,6 +1,6 @@
-ENTRY            23299   20151223                             224823299  0    1 
-SUBENT        23299001   20151223                             224823299  1    1 
-BIB                 16         71                                 23299  1    2 
+ENTRY            23299   20160718                             225123299  0    1 
+SUBENT        23299001   20160718                             225123299  1    1 
+BIB                 16         75                                 23299  1    2 
 TITLE      Comparative measurement of prompt fission gamma-ray    23299  1    3 
            emission from fast-neutron-induced fission of 235U and 23299  1    4 
            238U .                                                 23299  1    5 
@@ -58,7 +58,7 @@ DETECTOR   (IOCH) Twin Frisch-grid ionization chamber, filled with23299  1   44
            of the resulting simulated detected spectra.           23299  1   57 
            Detector threshold about 400 keV.                      23299  1   58 
 ADD-RES     Fitted exponential parameters to the high-energy tails23299  1   59 
-            (above 2 MeV0 of emitted prompt fission gamma spectra 23299  1   60 
+            (above 2 MeV) of emitted prompt fission gamma spectra 23299  1   60 
             Table II of PR/C,92,034618,2015 :                     23299  1   61 
            U-235 - -0.86+-0.09 MeV**-2                            23299  1   62 
            U-238 - -0.68+-0.10 MeV**-2                            23299  1   63 
@@ -67,18 +67,22 @@ ADD-RES     Fitted exponential parameters to the high-energy tails23299  1   59
                A.Oberstedt+,J,PR/C,87,051602,2013.                23299  1   66 
 ERR-ANALYS Statistical errors are the dominant source of          23299  1   67 
            uncertainty in the emission spectra.                   23299  1   68 
-COMMENT    This work was supported by the European Commission     23299  1   69 
-           within the framework of the ERINDA programme (agreement23299  1   70 
-           number 269499).                                        23299  1   71 
-HISTORY    (20151223C)  M.M.                                      23299  1   72 
-           Request for the data was sent 17.03.2016 .             23299  1   73 
-ENDBIB              71          0                                 23299  1   74 
-COMMON               1          3                                 23299  1   75 
-EN                                                                23299  1   76 
-MEV                                                               23299  1   77 
- 1.7                                                              23299  1   78 
-ENDCOMMON            3          0                                 23299  1   79 
-ENDSUBENT           78          0                                 23299  199999 
+           The systematic error comes from the normalization and  23299  1   69 
+           could be as high as 40%. However, this systematic error23299  1   70 
+           cancels when we take the ratio of 235U/238U spectra.   23299  1   71 
+COMMENT    This work was supported by the European Commission     23299  1   72 
+           within the framework of the ERINDA programme (agreement23299  1   73 
+           number 269499).                                        23299  1   74 
+HISTORY    (20151223C)  M.M.                                      23299  1   75 
+           Request for the data was sent 17.03.2016 .             23299  1   76 
+           (20160718A) M.M. Data were added in Subents 5,6 .      23299  1   77 
+ENDBIB              75          0                                 23299  1   78 
+COMMON               1          3                                 23299  1   79 
+EN                                                                23299  1   80 
+MEV                                                               23299  1   81 
+ 1.7                                                              23299  1   82 
+ENDCOMMON            3          0                                 23299  1   83 
+ENDSUBENT           82          0                                 23299  199999 
 SUBENT        23299002   20151223                             224823299  2    1 
 BIB                  3         11                                 23299  2    2 
 REACTION  1((92-U-235(N,F)0-G-0,PR,FY)/                           23299  2    3 
@@ -144,24 +148,93 @@ MEV        MEV        PER-CENT                                    23299  4   18
  0.77       0.06       35.                                        23299  4   19 
 ENDDATA              3          0                                 23299  4   20 
 ENDSUBENT           19          0                                 23299  499999 
-SUBENT        23299005   20151223                             224823299  5    1 
-BIB                  2          4                                 23299  5    2 
-REACTION   (92-U-235(N,F)0-G-0,PR,FY/DE)                          23299  5    3 
+SUBENT        23299005   20160718                             225123299  5    1 
+BIB                  8         19                                 23299  5    2 
+REACTION   (92-U-235(N,F)0-G-0,PR,FY/DE,,REL)                     23299  5    3 
             Prompt fission gamma spectrum                         23299  5    4 
-STATUS     (UNOBT)                                                23299  5    5 
-           Fig.2 of PR/C,92,034618,2015                           23299  5    6 
-ENDBIB               4          0                                 23299  5    7 
-NOCOMMON             0          0                                 23299  5    8 
-NODATA               0          0                                 23299  5    9 
-ENDSUBENT            8          0                                 23299  599999 
-SUBENT        23299006   20151223                             224823299  6    1 
-BIB                  2          4                                 23299  6    2 
-REACTION   (92-U-238(N,F)0-G-0,PR,FY/DE)                          23299  6    3 
+EN-SEC     (E,G) Gamma energy                                     23299  5    5 
+MISC-COL   (MISC) Linear fit above 2 MeV                          23299  5    6 
+COMMENT    Of author J.Wilson.                                    23299  5    7 
+           The data in fig.3 are the same as those for fig.2 only 23299  5    8 
+           with a re-normalization of around 30% to the thermal   23299  5    9 
+           neutron data for a comparison of spectral shapes only. 23299  5   10 
+           We cannot determine the absolute value accurately, or  23299  5   11 
+           to put another way - there is a large systematic       23299  5   12 
+           error on the absolute values.                          23299  5   13 
+REL-REF    (N,,R.Billnert+,J,PPRC,59,17,2014)                     23299  5   14 
+           Compared with shape of thermal-neutron-induced fission 23299  5   15 
+           prompt gamma spectrum on Fig.3 of PR/C,92,034618,2015  23299  5   16 
+ERR-ANALYS (ERR-S) Statistical uncertainty                        23299  5   17 
+STATUS     (TABLE) From author J.Wilson.                          23299  5   18 
+           Fig.2 of PR/C,92,034618,2015                           23299  5   19 
+HISTORY    (20160718R) M.M. Data were added .                     23299  5   20 
+           REL was added in reaction - see comment of author.     23299  5   21 
+ENDBIB              19          0                                 23299  5   22 
+NOCOMMON             0          0                                 23299  5   23 
+DATA                 4         21                                 23299  5   24 
+E          DATA       ERR-S      MISC                             23299  5   25 
+MEV        ARB-UNITS  ARB-UNITS  ARB-UNITS                        23299  5   26 
+ 0.493446   7.44886    0.227673                                   23299  5   27 
+ 0.622685   6.47719    0.20253                                    23299  5   28 
+ 0.767865   4.40232    0.159406                                   23299  5   29 
+ 0.929084   3.33592    0.137441                                   23299  5   30 
+ 1.10642    2.30018    0.114338                                   23299  5   31 
+ 1.29995    2.16551    0.109737                                   23299  5   32 
+ 1.50971    1.40465    0.0916977                                  23299  5   33 
+ 1.73577    0.995538   0.0781061                                  23299  5   34 
+ 1.97816    0.618668   0.0618848 0.64452503                       23299  5   35 
+ 2.23693    0.499855   0.0579473 0.51558029                       23299  5   36 
+ 2.5121     0.42419    0.0507786 0.40663884                       23299  5   37 
+ 2.8037     0.256733   0.0407196 0.31620317                       23299  5   38 
+ 3.11176    0.276765   0.0416495 0.24241368                       23299  5   39 
+ 3.43631    0.177645   0.0373199 0.18321894                       23299  5   40 
+ 3.77736    0.136442   0.0325635 0.13652185                       23299  5   41 
+ 4.13494    0.0866533  0.0283353 0.10028623                       23299  5   42 
+ 4.50906    0.0814626  0.0305991 0.072624652                      23299  5   43 
+ 4.89973    0.0743974  0.0323268 0.051847359                      23299  5   44 
+ 5.30698    0.0271991  0.0285174 0.036488652                      23299  5   45 
+ 5.73081    0.0660536  0.024894  0.025314981                      23299  5   46 
+ 6.17125    0.00733998 0.0234923 0.017313097                      23299  5   47 
+ENDDATA             23          0                                 23299  5   48 
+ENDSUBENT           47          0                                 23299  599999 
+SUBENT        23299006   20160718                             225123299  6    1 
+BIB                  6         10                                 23299  6    2 
+REACTION   (92-U-238(N,F)0-G-0,PR,FY/DE,,REL)                     23299  6    3 
             Prompt fission gamma spectrum                         23299  6    4 
-STATUS     (UNOBT)                                                23299  6    5 
-           Fig.2 of PR/C,92,034618,2015                           23299  6    6 
-ENDBIB               4          0                                 23299  6    7 
-NOCOMMON             0          0                                 23299  6    8 
-NODATA               0          0                                 23299  6    9 
-ENDSUBENT            8          0                                 23299  699999 
+EN-SEC     (E,G) Gamma energy                                     23299  6    5 
+MISC-COL   (MISC) Linear fit above 2 MeV                          23299  6    6 
+ERR-ANALYS (ERR-S) Statistical uncertainty                        23299  6    7 
+STATUS     (TABLE) From author J.Wilson .                         23299  6    8 
+           Fig.2 of PR/C,92,034618,2015                           23299  6    9 
+HISTORY    (20160718R) M.M. Data were added .                     23299  6   10 
+           REL was added in reaction - see comment of author in   23299  6   11 
+           Subent 005.                                            23299  6   12 
+ENDBIB              10          0                                 23299  6   13 
+NOCOMMON             0          0                                 23299  6   14 
+DATA                 4         21                                 23299  6   15 
+E          DATA       ERR-S      MISC                             23299  6   16 
+MEV        ARB-UNITS  ARB-UNITS  ARB-UNITS                        23299  6   17 
+ 0.493446   9.02122    0.467424                                   23299  6   18 
+ 0.622685   6.51012    0.387494                                   23299  6   19 
+ 0.767865   4.08802    0.297798                                   23299  6   20 
+ 0.929084   2.97214    0.251367                                   23299  6   21 
+ 1.10642    2.13254    0.211314                                   23299  6   22 
+ 1.29995    1.5429     0.173111                                   23299  6   23 
+ 1.50971    0.876158   0.137787                                   23299  6   24 
+ 1.73577    1.0997     0.150864                                   23299  6   25 
+ 1.97816    0.606504   0.113885  0.56544964                       23299  6   26 
+ 2.23693    0.43099    0.0984644 0.4743042                        23299  6   27 
+ 2.5121     0.516289   0.102078  0.39344317                       23299  6   28 
+ 2.8037     0.250167   0.0674427 0.32274552                       23299  6   29 
+ 3.11176    0.203839   0.0605601 0.26180789                       23299  6   30 
+ 3.43631    0.160723   0.0583251 0.21001036                       23299  6   31 
+ 3.77736    0.188623   0.0606335 0.1665832                        23299  6   32 
+ 4.13494    0.140249   0.0528825 0.13066081                       23299  6   33 
+ 4.50906    0.0759244  0.0504776 0.10133984                       23299  6   34 
+ 4.89973    0.28569    0.0862517 0.07772001                       23299  6   35 
+ 5.30698    0.0655377  0.0537613 0.058937863                      23299  6   36 
+ 5.73081    0.0242115  0.0358147 0.044194155                      23299  6   37 
+ 6.17125    0.0272037  0.0447106 0.032766899                      23299  6   38 
+ENDDATA             23          0                                 23299  6   39 
+ENDSUBENT           38          0                                 23299  699999 
 ENDENTRY             6          0                                 2329999999999 
