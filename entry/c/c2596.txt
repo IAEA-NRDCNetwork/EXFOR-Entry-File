@@ -1,0 +1,835 @@
+ENTRY            C2596   20210223                             C201C2596  0    1 
+SUBENT        C2596001   20210223                             C201C2596  1    1 
+BIB                 12         54                                 C2596  1    2 
+TITLE      Development of a "fission-proxy" method for the        C2596  1    3 
+           measurement of 14-MeV neutron fission yields           C2596  1    4 
+AUTHOR     (N.Gharibyan,K.Moody,S.Tumey,T.Brown,P.Grant,G.Bench,  C2596  1    5 
+           D.Shaughnessy)                                         C2596  1    6 
+REFERENCE  (J,RCA,106,627,2018) Final journal publication.        C2596  1    7 
+           #doi:10.1515/ract-2017-2889                            C2596  1    8 
+           (R,LLNL-TR-706745,2016) Tabulated data.                C2596  1    9 
+REL-REF    (R,,R.B.Firestone+,B,FIRESTONE,,(8),1996) Photon       C2596  1   10 
+           intensities data.                                      C2596  1   11 
+INSTITUTE  (1USALRL)                                              C2596  1   12 
+FACILITY   (VDG,1USALRL) The HVEC Model FN Van de Graaff          C2596  1   13 
+           accelerator at the Lawrence Livermore National         C2596  1   14 
+           Laboratory Center for Accelerator Mass Spectrometry    C2596  1   15 
+           facility.                                              C2596  1   16 
+SAMPLE     A thin thorium foil purchased from Goodfellow (99.5 %  C2596  1   17 
+           purity, 11 mg/cm2) was used for all experiments along  C2596  1   18 
+           with ~5 mg/cm2 aluminum catcher foils (Goodfellow,     C2596  1   19 
+           99.999 % purity). Areal densities of the foils were    C2596  1   20 
+           calculated from empirical areas and weights, assuming  C2596  1   21 
+           uniform thickness over the approximately 8 mm x 8 mm   C2596  1   22 
+           target area.                                           C2596  1   23 
+DETECTOR   (HPGE) Irradiated foils and chemical fractions were    C2596  1   24 
+           counted on coaxial and planar HPGe detectors, with     C2596  1   25 
+           gamma-ray spectral evaluation performed by the         C2596  1   26 
+           GAMANAL code.                                          C2596  1   27 
+METHOD     (STTA,ACTIV) A foil stack configuration (Al-Th-Al)     C2596  1   28 
+           containing a natural thorium foil (100 % Th-232) and   C2596  1   29 
+           aluminum catcher foils to ensure the complete          C2596  1   30 
+           collection of recoil fission products. The final       C2596  1   31 
+           fission yields were compiled following three separate  C2596  1   32 
+           irradiation experiments. The first and second          C2596  1   33 
+           irradiations were performed for ~5.5 h of              C2596  1   34 
+           beam-on-target at a beam intensity of ~6x10**11        C2596  1   35 
+           particles per second, following which the thorium      C2596  1   36 
+           targets were radiochemically processed for low-yield   C2596  1   37 
+           fission products (fission valley and wing nuclides) .  C2596  1   38 
+           The third experiment with similar irradiation          C2596  1   39 
+           parameters, generated a thorium foil for direct        C2596  1   40 
+           non-destructive assay by gamma-counting. This new      C2596  1   41 
+           technique, based on the Bohr-independence hypothesis,  C2596  1   42 
+           permits the measurement of fission yields from an      C2596  1   43 
+           alternate reaction pathway (Th-232 + 25.6 MeV alpha    C2596  1   44 
+           -> U-236* vs. U-235 + 14-MeV n -> U-236*) given that   C2596  1   45 
+           the fission process associated with the same compound  C2596  1   46 
+           nucleus is independent of its formation.               C2596  1   47 
+ANALYSIS   (DECAY) When possible, decay curve analysis was        C2596  1   48 
+           utilized to further ensure the validity of the         C2596  1   49 
+           fission product measurement.                           C2596  1   50 
+ERR-ANALYS (DATA-ERR) The uncertainties associated with the       C2596  1   51 
+           measured fission yields (cumulative and                C2596  1   52 
+           independent/shielded) are one-sigma and include        C2596  1   53 
+           counting statistics, uncertainty in the half-life      C2596  1   54 
+            (NNDC 2016) and photon intensities (Firestone 1996).  C2596  1   55 
+HISTORY    (20210223C) BP                                         C2596  1   56 
+ENDBIB              54          0                                 C2596  1   57 
+COMMON               2          3                                 C2596  1   58 
+EN         EN-ERR                                                 C2596  1   59 
+MEV        MEV                                                    C2596  1   60 
+       25.6        0.5                                            C2596  1   61 
+ENDCOMMON            3          0                                 C2596  1   62 
+ENDSUBENT           61          0                                 C2596  199999 
+SUBENT        C2596002   20210223                             C201C2596  2    1 
+BIB                  2          4                                 C2596  2    2 
+REACTION   ((90-TH-232(A,F)30-ZN-72,CUM,FY)/                      C2596  2    3 
+           (90-TH-232(A,F)38-SR-91,CUM,FY))                       C2596  2    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596  2    5 
+           LLNL-TR-706745.                                        C2596  2    6 
+ENDBIB               4          0                                 C2596  2    7 
+NOCOMMON             0          0                                 C2596  2    8 
+DATA                 2          1                                 C2596  2    9 
+DATA       DATA-ERR                                               C2596  2   10 
+NO-DIM     PER-CENT                                               C2596  2   11 
+    0.00249       18.1                                            C2596  2   12 
+ENDDATA              3          0                                 C2596  2   13 
+ENDSUBENT           12          0                                 C2596  299999 
+SUBENT        C2596003   20210223                             C201C2596  3    1 
+BIB                  2          4                                 C2596  3    2 
+REACTION   ((90-TH-232(A,F)38-SR-91,CUM,FY)/                      C2596  3    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596  3    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596  3    5 
+           LLNL-TR-706745.                                        C2596  3    6 
+ENDBIB               4          0                                 C2596  3    7 
+NOCOMMON             0          0                                 C2596  3    8 
+DATA                 2          1                                 C2596  3    9 
+DATA       DATA-ERR                                               C2596  3   10 
+NO-DIM     PER-CENT                                               C2596  3   11 
+      0.901        7.0                                            C2596  3   12 
+ENDDATA              3          0                                 C2596  3   13 
+ENDSUBENT           12          0                                 C2596  399999 
+SUBENT        C2596004   20210223                             C201C2596  4    1 
+BIB                  2          4                                 C2596  4    2 
+REACTION   ((90-TH-232(A,F)39-Y-93,CUM,FY)/                       C2596  4    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596  4    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596  4    5 
+           LLNL-TR-706745.                                        C2596  4    6 
+ENDBIB               4          0                                 C2596  4    7 
+NOCOMMON             0          0                                 C2596  4    8 
+DATA                 2          1                                 C2596  4    9 
+DATA       DATA-ERR                                               C2596  4   10 
+NO-DIM     PER-CENT                                               C2596  4   11 
+       1.10       13.9                                            C2596  4   12 
+ENDDATA              3          0                                 C2596  4   13 
+ENDSUBENT           12          0                                 C2596  499999 
+SUBENT        C2596005   20210223                             C201C2596  5    1 
+BIB                  2          4                                 C2596  5    2 
+REACTION   ((90-TH-232(A,F)39-Y-93,CUM,FY)/                       C2596  5    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596  5    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596  5    5 
+           LLNL-TR-706745.                                        C2596  5    6 
+ENDBIB               4          0                                 C2596  5    7 
+NOCOMMON             0          0                                 C2596  5    8 
+DATA                 2          1                                 C2596  5    9 
+DATA       DATA-ERR                                               C2596  5   10 
+NO-DIM     PER-CENT                                               C2596  5   11 
+       1.13       15.2                                            C2596  5   12 
+ENDDATA              3          0                                 C2596  5   13 
+ENDSUBENT           12          0                                 C2596  599999 
+SUBENT        C2596006   20210223                             C201C2596  6    1 
+BIB                  2          4                                 C2596  6    2 
+REACTION   ((90-TH-232(A,F)40-ZR-95,CUM,FY)/                      C2596  6    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596  6    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596  6    5 
+           LLNL-TR-706745.                                        C2596  6    6 
+ENDBIB               4          0                                 C2596  6    7 
+NOCOMMON             0          0                                 C2596  6    8 
+DATA                 2          1                                 C2596  6    9 
+DATA       DATA-ERR                                               C2596  6   10 
+NO-DIM     PER-CENT                                               C2596  6   11 
+       1.05        0.5                                            C2596  6   12 
+ENDDATA              3          0                                 C2596  6   13 
+ENDSUBENT           12          0                                 C2596  699999 
+SUBENT        C2596007   20210223                             C201C2596  7    1 
+BIB                  2          4                                 C2596  7    2 
+REACTION   ((90-TH-232(A,F)41-NB-96,IND,FY)/                      C2596  7    3 
+           (90-TH-232(A,F)38-SR-91,IND,FY)) Nb-96 is shielded.    C2596  7    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596  7    5 
+           LLNL-TR-706745.                                        C2596  7    6 
+ENDBIB               4          0                                 C2596  7    7 
+NOCOMMON             0          0                                 C2596  7    8 
+DATA                 2          1                                 C2596  7    9 
+DATA       DATA-ERR                                               C2596  7   10 
+NO-DIM     PER-CENT                                               C2596  7   11 
+   0.000762       10.7                                            C2596  7   12 
+ENDDATA              3          0                                 C2596  7   13 
+ENDSUBENT           12          0                                 C2596  799999 
+SUBENT        C2596008   20210223                             C201C2596  8    1 
+BIB                  2          4                                 C2596  8    2 
+REACTION   ((90-TH-232(A,F)42-MO-99,CUM,FY)/                      C2596  8    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596  8    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596  8    5 
+           LLNL-TR-706745.                                        C2596  8    6 
+ENDBIB               4          0                                 C2596  8    7 
+NOCOMMON             0          0                                 C2596  8    8 
+DATA                 2          1                                 C2596  8    9 
+DATA       DATA-ERR                                               C2596  8   10 
+NO-DIM     PER-CENT                                               C2596  8   11 
+      1.001        2.0                                            C2596  8   12 
+ENDDATA              3          0                                 C2596  8   13 
+ENDSUBENT           12          0                                 C2596  899999 
+SUBENT        C2596009   20210223                             C201C2596  9    1 
+BIB                  2          4                                 C2596  9    2 
+REACTION   ((90-TH-232(A,F)44-RU-103,CUM,FY)/                     C2596  9    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596  9    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596  9    5 
+           LLNL-TR-706745.                                        C2596  9    6 
+ENDBIB               4          0                                 C2596  9    7 
+NOCOMMON             0          0                                 C2596  9    8 
+DATA                 2          1                                 C2596  9    9 
+DATA       DATA-ERR                                               C2596  9   10 
+NO-DIM     PER-CENT                                               C2596  9   11 
+      0.642        1.2                                            C2596  9   12 
+ENDDATA              3          0                                 C2596  9   13 
+ENDSUBENT           12          0                                 C2596  999999 
+SUBENT        C2596010   20210223                             C201C2596 10    1 
+BIB                  2          4                                 C2596 10    2 
+REACTION   ((90-TH-232(A,F)44-RU-105,CUM,FY)/                     C2596 10    3 
+           (90-TH-232(A,F)44-RU-103,CUM,FY))                      C2596 10    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 10    5 
+           LLNL-TR-706745.                                        C2596 10    6 
+ENDBIB               4          0                                 C2596 10    7 
+NOCOMMON             0          0                                 C2596 10    8 
+DATA                 2          1                                 C2596 10    9 
+DATA       DATA-ERR                                               C2596 10   10 
+NO-DIM     PER-CENT                                               C2596 10   11 
+      0.645        1.3                                            C2596 10   12 
+ENDDATA              3          0                                 C2596 10   13 
+ENDSUBENT           12          0                                 C2596 1099999 
+SUBENT        C2596011   20210223                             C201C2596 11    1 
+BIB                  2          4                                 C2596 11    2 
+REACTION   ((90-TH-232(A,F)44-RU-105,CUM,FY)/                     C2596 11    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 11    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 11    5 
+           LLNL-TR-706745.                                        C2596 11    6 
+ENDBIB               4          0                                 C2596 11    7 
+NOCOMMON             0          0                                 C2596 11    8 
+DATA                 2          1                                 C2596 11    9 
+DATA       DATA-ERR                                               C2596 11   10 
+NO-DIM     PER-CENT                                               C2596 11   11 
+      0.455        2.5                                            C2596 11   12 
+ENDDATA              3          0                                 C2596 11   13 
+ENDSUBENT           12          0                                 C2596 1199999 
+SUBENT        C2596012   20210223                             C201C2596 12    1 
+BIB                  2          4                                 C2596 12    2 
+REACTION   ((90-TH-232(A,F)44-RU-106,CUM,FY)/                     C2596 12    3 
+           (90-TH-232(A,F)44-RU-103,CUM,FY))                      C2596 12    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 12    5 
+           LLNL-TR-706745.                                        C2596 12    6 
+ENDBIB               4          0                                 C2596 12    7 
+NOCOMMON             0          0                                 C2596 12    8 
+DATA                 2          1                                 C2596 12    9 
+DATA       DATA-ERR                                               C2596 12   10 
+NO-DIM     PER-CENT                                               C2596 12   11 
+      0.593        9.1                                            C2596 12   12 
+ENDDATA              3          0                                 C2596 12   13 
+ENDSUBENT           12          0                                 C2596 1299999 
+SUBENT        C2596013   20210223                             C201C2596 13    1 
+BIB                  2          4                                 C2596 13    2 
+REACTION   ((90-TH-232(A,F)47-AG-111,CUM,FY)/                     C2596 13    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 13    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 13    5 
+           LLNL-TR-706745.                                        C2596 13    6 
+ENDBIB               4          0                                 C2596 13    7 
+NOCOMMON             0          0                                 C2596 13    8 
+DATA                 2          1                                 C2596 13    9 
+DATA       DATA-ERR                                               C2596 13   10 
+NO-DIM     PER-CENT                                               C2596 13   11 
+      0.265        4.7                                            C2596 13   12 
+ENDDATA              3          0                                 C2596 13   13 
+ENDSUBENT           12          0                                 C2596 1399999 
+SUBENT        C2596014   20210223                             C201C2596 14    1 
+BIB                  2          4                                 C2596 14    2 
+REACTION   ((90-TH-232(A,F)46-PD-111-M,CUM,FY)/                   C2596 14    3 
+           (90-TH-232(A,F)46-PD-109,CUM,FY))                      C2596 14    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 14    5 
+           LLNL-TR-706745.                                        C2596 14    6 
+ENDBIB               4          0                                 C2596 14    7 
+NOCOMMON             0          0                                 C2596 14    8 
+DATA                 2          1                                 C2596 14    9 
+DATA       DATA-ERR                                               C2596 14   10 
+NO-DIM     PER-CENT                                               C2596 14   11 
+     0.0138       23.1                                            C2596 14   12 
+ENDDATA              3          0                                 C2596 14   13 
+ENDSUBENT           12          0                                 C2596 1499999 
+SUBENT        C2596015   20210223                             C201C2596 15    1 
+BIB                  2          4                                 C2596 15    2 
+REACTION   ((90-TH-232(A,F)46-PD-112,CUM,FY)/                     C2596 15    3 
+           (90-TH-232(A,F)46-PD-109,CUM,FY))                      C2596 15    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 15    5 
+           LLNL-TR-706745.                                        C2596 15    6 
+ENDBIB               4          0                                 C2596 15    7 
+NOCOMMON             0          0                                 C2596 15    8 
+DATA                 2          1                                 C2596 15    9 
+DATA       DATA-ERR                                               C2596 15   10 
+NO-DIM     PER-CENT                                               C2596 15   11 
+       1.14       15.3                                            C2596 15   12 
+ENDDATA              3          0                                 C2596 15   13 
+ENDSUBENT           12          0                                 C2596 1599999 
+SUBENT        C2596016   20210223                             C201C2596 16    1 
+BIB                  2          4                                 C2596 16    2 
+REACTION   ((90-TH-232(A,F)47-AG-113,CUM,FY)/                     C2596 16    3 
+           (90-TH-232(A,F)47-AG-111,CUM,FY))                      C2596 16    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 16    5 
+           LLNL-TR-706745.                                        C2596 16    6 
+ENDBIB               4          0                                 C2596 16    7 
+NOCOMMON             0          0                                 C2596 16    8 
+DATA                 2          1                                 C2596 16    9 
+DATA       DATA-ERR                                               C2596 16   10 
+NO-DIM     PER-CENT                                               C2596 16   11 
+       1.25        6.9                                            C2596 16   12 
+ENDDATA              3          0                                 C2596 16   13 
+ENDSUBENT           12          0                                 C2596 1699999 
+SUBENT        C2596017   20210223                             C201C2596 17    1 
+BIB                  2          4                                 C2596 17    2 
+REACTION   ((90-TH-232(A,F)48-CD-115-M,CUM,FY)/                   C2596 17    3 
+           (90-TH-232(A,F)48-CD-115,CUM,FY))                      C2596 17    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 17    5 
+           LLNL-TR-706745.                                        C2596 17    6 
+ENDBIB               4          0                                 C2596 17    7 
+NOCOMMON             0          0                                 C2596 17    8 
+DATA                 2          1                                 C2596 17    9 
+DATA       DATA-ERR                                               C2596 17   10 
+NO-DIM     PER-CENT                                               C2596 17   11 
+      0.627       45.2                                            C2596 17   12 
+ENDDATA              3          0                                 C2596 17   13 
+ENDSUBENT           12          0                                 C2596 1799999 
+SUBENT        C2596018   20210223                             C201C2596 18    1 
+BIB                  2          4                                 C2596 18    2 
+REACTION   ((90-TH-232(A,F)48-CD-117,CUM,FY)/                     C2596 18    3 
+           (90-TH-232(A,F)48-CD-115,CUM,FY))                      C2596 18    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 18    5 
+           LLNL-TR-706745.                                        C2596 18    6 
+ENDBIB               4          0                                 C2596 18    7 
+NOCOMMON             0          0                                 C2596 18    8 
+DATA                 2          1                                 C2596 18    9 
+DATA       DATA-ERR                                               C2596 18   10 
+NO-DIM     PER-CENT                                               C2596 18   11 
+      0.591        4.0                                            C2596 18   12 
+ENDDATA              3          0                                 C2596 18   13 
+ENDSUBENT           12          0                                 C2596 1899999 
+SUBENT        C2596019   20210223                             C201C2596 19    1 
+BIB                  2          4                                 C2596 19    2 
+REACTION   ((90-TH-232(A,F)48-CD-117-M,CUM,FY)/                   C2596 19    3 
+           (90-TH-232(A,F)48-CD-115,CUM,FY))                      C2596 19    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 19    5 
+           LLNL-TR-706745.                                        C2596 19    6 
+ENDBIB               4          0                                 C2596 19    7 
+NOCOMMON             0          0                                 C2596 19    8 
+DATA                 2          1                                 C2596 19    9 
+DATA       DATA-ERR                                               C2596 19   10 
+NO-DIM     PER-CENT                                               C2596 19   11 
+      0.217        4.1                                            C2596 19   12 
+ENDDATA              3          0                                 C2596 19   13 
+ENDSUBENT           12          0                                 C2596 1999999 
+SUBENT        C2596020   20210223                             C201C2596 20    1 
+BIB                  2          4                                 C2596 20    2 
+REACTION   ((90-TH-232(A,F)51-SB-124,IND,FY)/                     C2596 20    3 
+           (90-TH-232(A,F)40-ZR-97,IND,FY)) Sb-124 is shielded.   C2596 20    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 20    5 
+           LLNL-TR-706745.                                        C2596 20    6 
+ENDBIB               4          0                                 C2596 20    7 
+NOCOMMON             0          0                                 C2596 20    8 
+DATA                 2          1                                 C2596 20    9 
+DATA       DATA-ERR                                               C2596 20   10 
+NO-DIM     PER-CENT                                               C2596 20   11 
+    0.00716        5.1                                            C2596 20   12 
+ENDDATA              3          0                                 C2596 20   13 
+ENDSUBENT           12          0                                 C2596 2099999 
+SUBENT        C2596021   20210223                             C201C2596 21    1 
+BIB                  2          4                                 C2596 21    2 
+REACTION   ((90-TH-232(A,F)50-SN-125,CUM,FY)/                     C2596 21    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 21    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 21    5 
+           LLNL-TR-706745.                                        C2596 21    6 
+ENDBIB               4          0                                 C2596 21    7 
+NOCOMMON             0          0                                 C2596 21    8 
+DATA                 2          1                                 C2596 21    9 
+DATA       DATA-ERR                                               C2596 21   10 
+NO-DIM     PER-CENT                                               C2596 21   11 
+      0.181       30.0                                            C2596 21   12 
+ENDDATA              3          0                                 C2596 21   13 
+ENDSUBENT           12          0                                 C2596 2199999 
+SUBENT        C2596022   20210223                             C201C2596 22    1 
+BIB                  2          4                                 C2596 22    2 
+REACTION   ((90-TH-232(A,F)51-SB-126,IND,FY)/                     C2596 22    3 
+           (90-TH-232(A,F)40-ZR-97,IND,FY)) Sb-126 is shielded.   C2596 22    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 22    5 
+           LLNL-TR-706745.                                        C2596 22    6 
+ENDBIB               4          0                                 C2596 22    7 
+NOCOMMON             0          0                                 C2596 22    8 
+DATA                 2          1                                 C2596 22    9 
+DATA       DATA-ERR                                               C2596 22   10 
+NO-DIM     PER-CENT                                               C2596 22   11 
+     0.0596        2.2                                            C2596 22   12 
+ENDDATA              3          0                                 C2596 22   13 
+ENDSUBENT           12          0                                 C2596 2299999 
+SUBENT        C2596023   20210223                             C201C2596 23    1 
+BIB                  2          4                                 C2596 23    2 
+REACTION   ((90-TH-232(A,F)51-SB-127,CUM,FY)/                     C2596 23    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 23    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 23    5 
+           LLNL-TR-706745.                                        C2596 23    6 
+ENDBIB               4          0                                 C2596 23    7 
+NOCOMMON             0          0                                 C2596 23    8 
+DATA                 2          1                                 C2596 23    9 
+DATA       DATA-ERR                                               C2596 23   10 
+NO-DIM     PER-CENT                                               C2596 23   11 
+      0.388        2.5                                            C2596 23   12 
+ENDDATA              3          0                                 C2596 23   13 
+ENDSUBENT           12          0                                 C2596 2399999 
+SUBENT        C2596024   20210223                             C201C2596 24    1 
+BIB                  2          4                                 C2596 24    2 
+REACTION   ((90-TH-232(A,F)51-SB-128,CUM,FY)/                     C2596 24    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 24    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 24    5 
+           LLNL-TR-706745.                                        C2596 24    6 
+ENDBIB               4          0                                 C2596 24    7 
+NOCOMMON             0          0                                 C2596 24    8 
+DATA                 2          1                                 C2596 24    9 
+DATA       DATA-ERR                                               C2596 24   10 
+NO-DIM     PER-CENT                                               C2596 24   11 
+      0.174        5.5                                            C2596 24   12 
+ENDDATA              3          0                                 C2596 24   13 
+ENDSUBENT           12          0                                 C2596 2499999 
+SUBENT        C2596025   20210223                             C201C2596 25    1 
+BIB                  2          4                                 C2596 25    2 
+REACTION   ((90-TH-232(A,F)52-TE-129-M,CUM,FY)/                   C2596 25    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 25    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 25    5 
+           LLNL-TR-706745.                                        C2596 25    6 
+ENDBIB               4          0                                 C2596 25    7 
+NOCOMMON             0          0                                 C2596 25    8 
+DATA                 2          1                                 C2596 25    9 
+DATA       DATA-ERR                                               C2596 25   10 
+NO-DIM     PER-CENT                                               C2596 25   11 
+      0.164       36.2                                            C2596 25   12 
+ENDDATA              3          0                                 C2596 25   13 
+ENDSUBENT           12          0                                 C2596 2599999 
+SUBENT        C2596026   20210223                             C201C2596 26    1 
+BIB                  2          4                                 C2596 26    2 
+REACTION   ((90-TH-232(A,F)53-I-131,CUM,FY)/                      C2596 26    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 26    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 26    5 
+           LLNL-TR-706745.                                        C2596 26    6 
+ENDBIB               4          0                                 C2596 26    7 
+NOCOMMON             0          0                                 C2596 26    8 
+DATA                 2          1                                 C2596 26    9 
+DATA       DATA-ERR                                               C2596 26   10 
+NO-DIM     PER-CENT                                               C2596 26   11 
+      0.964        1.0                                            C2596 26   12 
+ENDDATA              3          0                                 C2596 26   13 
+ENDSUBENT           12          0                                 C2596 2699999 
+SUBENT        C2596027   20210223                             C201C2596 27    1 
+BIB                  2          4                                 C2596 27    2 
+REACTION   ((90-TH-232(A,F)52-TE-131-M,CUM,FY)/                   C2596 27    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 27    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 27    5 
+           LLNL-TR-706745.                                        C2596 27    6 
+ENDBIB               4          0                                 C2596 27    7 
+NOCOMMON             0          0                                 C2596 27    8 
+DATA                 2          1                                 C2596 27    9 
+DATA       DATA-ERR                                               C2596 27   10 
+NO-DIM     PER-CENT                                               C2596 27   11 
+      0.282        3.5                                            C2596 27   12 
+ENDDATA              3          0                                 C2596 27   13 
+ENDSUBENT           12          0                                 C2596 2799999 
+SUBENT        C2596028   20210223                             C201C2596 28    1 
+BIB                  2          4                                 C2596 28    2 
+REACTION   ((90-TH-232(A,F)52-TE-132,CUM,FY)/                     C2596 28    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 28    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 28    5 
+           LLNL-TR-706745.                                        C2596 28    6 
+ENDBIB               4          0                                 C2596 28    7 
+NOCOMMON             0          0                                 C2596 28    8 
+DATA                 2          1                                 C2596 28    9 
+DATA       DATA-ERR                                               C2596 28   10 
+NO-DIM     PER-CENT                                               C2596 28   11 
+      0.831        4.0                                            C2596 28   12 
+ENDDATA              3          0                                 C2596 28   13 
+ENDSUBENT           12          0                                 C2596 2899999 
+SUBENT        C2596029   20210223                             C201C2596 29    1 
+BIB                  2          4                                 C2596 29    2 
+REACTION   ((90-TH-232(A,F)53-I-133,CUM,FY)/                      C2596 29    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 29    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 29    5 
+           LLNL-TR-706745.                                        C2596 29    6 
+ENDBIB               4          0                                 C2596 29    7 
+NOCOMMON             0          0                                 C2596 29    8 
+DATA                 2          1                                 C2596 29    9 
+DATA       DATA-ERR                                               C2596 29   10 
+NO-DIM     PER-CENT                                               C2596 29   11 
+       1.15        3.1                                            C2596 29   12 
+ENDDATA              3          0                                 C2596 29   13 
+ENDSUBENT           12          0                                 C2596 2999999 
+SUBENT        C2596030   20210223                             C201C2596 30    1 
+BIB                  2          4                                 C2596 30    2 
+REACTION   ((90-TH-232(A,F)54-XE-133,IND,FY)/                     C2596 30    3 
+           (90-TH-232(A,F)40-ZR-97,IND,FY))                       C2596 30    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 30    5 
+           LLNL-TR-706745.                                        C2596 30    6 
+ENDBIB               4          0                                 C2596 30    7 
+NOCOMMON             0          0                                 C2596 30    8 
+DATA                 2          1                                 C2596 30    9 
+DATA       DATA-ERR                                               C2596 30   10 
+NO-DIM     PER-CENT                                               C2596 30   11 
+     0.0751       35.4                                            C2596 30   12 
+ENDDATA              3          0                                 C2596 30   13 
+ENDSUBENT           12          0                                 C2596 3099999 
+SUBENT        C2596031   20210223                             C201C2596 31    1 
+BIB                  2          4                                 C2596 31    2 
+REACTION   ((90-TH-232(A,F)55-CS-134,IND,FY)/                     C2596 31    3 
+           (90-TH-232(A,F)55-CS-136,IND,FY)) Cs-134 is shielded.  C2596 31    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 31    5 
+           LLNL-TR-706745.                                        C2596 31    6 
+ENDBIB               4          0                                 C2596 31    7 
+NOCOMMON             0          0                                 C2596 31    8 
+DATA                 2          1                                 C2596 31    9 
+DATA       DATA-ERR                                               C2596 31   10 
+NO-DIM     PER-CENT                                               C2596 31   11 
+      0.280       29.0                                            C2596 31   12 
+ENDDATA              3          0                                 C2596 31   13 
+ENDSUBENT           12          0                                 C2596 3199999 
+SUBENT        C2596032   20210223                             C201C2596 32    1 
+BIB                  2          4                                 C2596 32    2 
+REACTION   ((90-TH-232(A,F)55-CS-136,IND,FY)/                     C2596 32    3 
+           (90-TH-232(A,F)40-ZR-97,IND,FY)) Cs-136 is shielded.   C2596 32    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 32    5 
+           LLNL-TR-706745.                                        C2596 32    6 
+ENDBIB               4          0                                 C2596 32    7 
+NOCOMMON             0          0                                 C2596 32    8 
+DATA                 2          1                                 C2596 32    9 
+DATA       DATA-ERR                                               C2596 32   10 
+NO-DIM     PER-CENT                                               C2596 32   11 
+     0.0558        5.2                                            C2596 32   12 
+ENDDATA              3          0                                 C2596 32   13 
+ENDSUBENT           12          0                                 C2596 3299999 
+SUBENT        C2596033   20210223                             C201C2596 33    1 
+BIB                  2          4                                 C2596 33    2 
+REACTION   ((90-TH-232(A,F)55-CS-136,IND,FY)/                     C2596 33    3 
+           (90-TH-232(A,F)55-CS-137,IND,FY)) Cs-136 is shielded.  C2596 33    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 33    5 
+           LLNL-TR-706745.                                        C2596 33    6 
+ENDBIB               4          0                                 C2596 33    7 
+NOCOMMON             0          0                                 C2596 33    8 
+DATA                 2          1                                 C2596 33    9 
+DATA       DATA-ERR                                               C2596 33   10 
+NO-DIM     PER-CENT                                               C2596 33   11 
+     0.0523        6.3                                            C2596 33   12 
+ENDDATA              3          0                                 C2596 33   13 
+ENDSUBENT           12          0                                 C2596 3399999 
+SUBENT        C2596034   20210223                             C201C2596 34    1 
+BIB                  2          4                                 C2596 34    2 
+REACTION   ((90-TH-232(A,F)55-CS-137,CUM,FY)/                     C2596 34    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 34    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 34    5 
+           LLNL-TR-706745.                                        C2596 34    6 
+ENDBIB               4          0                                 C2596 34    7 
+NOCOMMON             0          0                                 C2596 34    8 
+DATA                 2          1                                 C2596 34    9 
+DATA       DATA-ERR                                               C2596 34   10 
+NO-DIM     PER-CENT                                               C2596 34   11 
+       1.05        3.3                                            C2596 34   12 
+ENDDATA              3          0                                 C2596 34   13 
+ENDSUBENT           12          0                                 C2596 3499999 
+SUBENT        C2596035   20210223                             C201C2596 35    1 
+BIB                  2          4                                 C2596 35    2 
+REACTION   ((90-TH-232(A,F)56-BA-140,CUM,FY)/                     C2596 35    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 35    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 35    5 
+           LLNL-TR-706745.                                        C2596 35    6 
+ENDBIB               4          0                                 C2596 35    7 
+NOCOMMON             0          0                                 C2596 35    8 
+DATA                 2          1                                 C2596 35    9 
+DATA       DATA-ERR                                               C2596 35   10 
+NO-DIM     PER-CENT                                               C2596 35   11 
+      0.877        1.1                                            C2596 35   12 
+ENDDATA              3          0                                 C2596 35   13 
+ENDSUBENT           12          0                                 C2596 3599999 
+SUBENT        C2596036   20210223                             C201C2596 36    1 
+BIB                  2          4                                 C2596 36    2 
+REACTION   ((90-TH-232(A,F)57-LA-140,IND,FY)/                     C2596 36    3 
+           (90-TH-232(A,F)40-ZR-97,IND,FY))                       C2596 36    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 36    5 
+           LLNL-TR-706745.                                        C2596 36    6 
+ENDBIB               4          0                                 C2596 36    7 
+NOCOMMON             0          0                                 C2596 36    8 
+DATA                 2          1                                 C2596 36    9 
+DATA       DATA-ERR                                               C2596 36   10 
+NO-DIM     PER-CENT                                               C2596 36   11 
+     0.0126        9.0                                            C2596 36   12 
+ENDDATA              3          0                                 C2596 36   13 
+ENDSUBENT           12          0                                 C2596 3699999 
+SUBENT        C2596037   20210223                             C201C2596 37    1 
+BIB                  2          4                                 C2596 37    2 
+REACTION   ((90-TH-232(A,F)58-CE-141,CUM,FY)/                     C2596 37    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 37    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 37    5 
+           LLNL-TR-706745.                                        C2596 37    6 
+ENDBIB               4          0                                 C2596 37    7 
+NOCOMMON             0          0                                 C2596 37    8 
+DATA                 2          1                                 C2596 37    9 
+DATA       DATA-ERR                                               C2596 37   10 
+NO-DIM     PER-CENT                                               C2596 37   11 
+      0.870        0.9                                            C2596 37   12 
+ENDDATA              3          0                                 C2596 37   13 
+ENDSUBENT           12          0                                 C2596 3799999 
+SUBENT        C2596038   20210223                             C201C2596 38    1 
+BIB                  2          4                                 C2596 38    2 
+REACTION   ((90-TH-232(A,F)57-LA-142,CUM,FY)/                     C2596 38    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 38    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 38    5 
+           LLNL-TR-706745.                                        C2596 38    6 
+ENDBIB               4          0                                 C2596 38    7 
+NOCOMMON             0          0                                 C2596 38    8 
+DATA                 2          1                                 C2596 38    9 
+DATA       DATA-ERR                                               C2596 38   10 
+NO-DIM     PER-CENT                                               C2596 38   11 
+       1.00        7.5                                            C2596 38   12 
+ENDDATA              3          0                                 C2596 38   13 
+ENDSUBENT           12          0                                 C2596 3899999 
+SUBENT        C2596039   20210223                             C201C2596 39    1 
+BIB                  2          4                                 C2596 39    2 
+REACTION   ((90-TH-232(A,F)58-CE-143,CUM,FY)/                     C2596 39    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 39    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 39    5 
+           LLNL-TR-706745.                                        C2596 39    6 
+ENDBIB               4          0                                 C2596 39    7 
+NOCOMMON             0          0                                 C2596 39    8 
+DATA                 2          1                                 C2596 39    9 
+DATA       DATA-ERR                                               C2596 39   10 
+NO-DIM     PER-CENT                                               C2596 39   11 
+      0.713        1.3                                            C2596 39   12 
+ENDDATA              3          0                                 C2596 39   13 
+ENDSUBENT           12          0                                 C2596 3999999 
+SUBENT        C2596040   20210223                             C201C2596 40    1 
+BIB                  2          4                                 C2596 40    2 
+REACTION   ((90-TH-232(A,F)58-CE-143,CUM,FY)/                     C2596 40    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 40    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 40    5 
+           LLNL-TR-706745.                                        C2596 40    6 
+ENDBIB               4          0                                 C2596 40    7 
+NOCOMMON             0          0                                 C2596 40    8 
+DATA                 2          1                                 C2596 40    9 
+DATA       DATA-ERR                                               C2596 40   10 
+NO-DIM     PER-CENT                                               C2596 40   11 
+      0.849        3.4                                            C2596 40   12 
+ENDDATA              3          0                                 C2596 40   13 
+ENDSUBENT           12          0                                 C2596 4099999 
+SUBENT        C2596041   20210223                             C201C2596 41    1 
+BIB                  2          4                                 C2596 41    2 
+REACTION   ((90-TH-232(A,F)58-CE-144,CUM,FY)/                     C2596 41    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 41    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 41    5 
+           LLNL-TR-706745.                                        C2596 41    6 
+ENDBIB               4          0                                 C2596 41    7 
+NOCOMMON             0          0                                 C2596 41    8 
+DATA                 2          1                                 C2596 41    9 
+DATA       DATA-ERR                                               C2596 41   10 
+NO-DIM     PER-CENT                                               C2596 41   11 
+      0.693        4.0                                            C2596 41   12 
+ENDDATA              3          0                                 C2596 41   13 
+ENDSUBENT           12          0                                 C2596 4199999 
+SUBENT        C2596042   20210223                             C201C2596 42    1 
+BIB                  2          4                                 C2596 42    2 
+REACTION   ((90-TH-232(A,F)59-PR-145,CUM,FY)/                     C2596 42    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 42    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 42    5 
+           LLNL-TR-706745.                                        C2596 42    6 
+ENDBIB               4          0                                 C2596 42    7 
+NOCOMMON             0          0                                 C2596 42    8 
+DATA                 2          1                                 C2596 42    9 
+DATA       DATA-ERR                                               C2596 42   10 
+NO-DIM     PER-CENT                                               C2596 42   11 
+      0.531        3.9                                            C2596 42   12 
+ENDDATA              3          0                                 C2596 42   13 
+ENDSUBENT           12          0                                 C2596 4299999 
+SUBENT        C2596043   20210223                             C201C2596 43    1 
+BIB                  2          4                                 C2596 43    2 
+REACTION   ((90-TH-232(A,F)60-ND-147,CUM,FY)/                     C2596 43    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 43    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 43    5 
+           LLNL-TR-706745.                                        C2596 43    6 
+ENDBIB               4          0                                 C2596 43    7 
+NOCOMMON             0          0                                 C2596 43    8 
+DATA                 2          1                                 C2596 43    9 
+DATA       DATA-ERR                                               C2596 43   10 
+NO-DIM     PER-CENT                                               C2596 43   11 
+      0.312        4.4                                            C2596 43   12 
+ENDDATA              3          0                                 C2596 43   13 
+ENDSUBENT           12          0                                 C2596 4399999 
+SUBENT        C2596044   20210223                             C201C2596 44    1 
+BIB                  2          4                                 C2596 44    2 
+REACTION   ((90-TH-232(A,F)60-ND-147,CUM,FY)/                     C2596 44    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 44    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 44    5 
+           LLNL-TR-706745.                                        C2596 44    6 
+ENDBIB               4          0                                 C2596 44    7 
+NOCOMMON             0          0                                 C2596 44    8 
+DATA                 2          1                                 C2596 44    9 
+DATA       DATA-ERR                                               C2596 44   10 
+NO-DIM     PER-CENT                                               C2596 44   11 
+      0.373        4.1                                            C2596 44   12 
+ENDDATA              3          0                                 C2596 44   13 
+ENDSUBENT           12          0                                 C2596 4499999 
+SUBENT        C2596045   20210223                             C201C2596 45    1 
+BIB                  2          4                                 C2596 45    2 
+REACTION   ((90-TH-232(A,F)60-ND-149,CUM,FY)/                     C2596 45    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 45    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 45    5 
+           LLNL-TR-706745.                                        C2596 45    6 
+ENDBIB               4          0                                 C2596 45    7 
+NOCOMMON             0          0                                 C2596 45    8 
+DATA                 2          1                                 C2596 45    9 
+DATA       DATA-ERR                                               C2596 45   10 
+NO-DIM     PER-CENT                                               C2596 45   11 
+      0.214       10.0                                            C2596 45   12 
+ENDDATA              3          0                                 C2596 45   13 
+ENDSUBENT           12          0                                 C2596 4599999 
+SUBENT        C2596046   20210223                             C201C2596 46    1 
+BIB                  2          4                                 C2596 46    2 
+REACTION   ((90-TH-232(A,F)61-PM-149,CUM,FY)/                     C2596 46    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 46    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 46    5 
+           LLNL-TR-706745.                                        C2596 46    6 
+ENDBIB               4          0                                 C2596 46    7 
+NOCOMMON             0          0                                 C2596 46    8 
+DATA                 2          1                                 C2596 46    9 
+DATA       DATA-ERR                                               C2596 46   10 
+NO-DIM     PER-CENT                                               C2596 46   11 
+      0.194        7.0                                            C2596 46   12 
+ENDDATA              3          0                                 C2596 46   13 
+ENDSUBENT           12          0                                 C2596 4699999 
+SUBENT        C2596047   20210223                             C201C2596 47    1 
+BIB                  2          4                                 C2596 47    2 
+REACTION   ((90-TH-232(A,F)61-PM-151,CUM,FY)/                     C2596 47    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 47    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 47    5 
+           LLNL-TR-706745.                                        C2596 47    6 
+ENDBIB               4          0                                 C2596 47    7 
+NOCOMMON             0          0                                 C2596 47    8 
+DATA                 2          1                                 C2596 47    9 
+DATA       DATA-ERR                                               C2596 47   10 
+NO-DIM     PER-CENT                                               C2596 47   11 
+     0.0850        5.6                                            C2596 47   12 
+ENDDATA              3          0                                 C2596 47   13 
+ENDSUBENT           12          0                                 C2596 4799999 
+SUBENT        C2596048   20210223                             C201C2596 48    1 
+BIB                  2          4                                 C2596 48    2 
+REACTION   ((90-TH-232(A,F)61-PM-151,CUM,FY)/                     C2596 48    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 48    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 48    5 
+           LLNL-TR-706745.                                        C2596 48    6 
+ENDBIB               4          0                                 C2596 48    7 
+NOCOMMON             0          0                                 C2596 48    8 
+DATA                 2          1                                 C2596 48    9 
+DATA       DATA-ERR                                               C2596 48   10 
+NO-DIM     PER-CENT                                               C2596 48   11 
+      0.103        4.8                                            C2596 48   12 
+ENDDATA              3          0                                 C2596 48   13 
+ENDSUBENT           12          0                                 C2596 4899999 
+SUBENT        C2596049   20210223                             C201C2596 49    1 
+BIB                  2          4                                 C2596 49    2 
+REACTION   ((90-TH-232(A,F)62-SM-153,CUM,FY)/                     C2596 49    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 49    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 49    5 
+           LLNL-TR-706745.                                        C2596 49    6 
+ENDBIB               4          0                                 C2596 49    7 
+NOCOMMON             0          0                                 C2596 49    8 
+DATA                 2          1                                 C2596 49    9 
+DATA       DATA-ERR                                               C2596 49   10 
+NO-DIM     PER-CENT                                               C2596 49   11 
+     0.0493        2.7                                            C2596 49   12 
+ENDDATA              3          0                                 C2596 49   13 
+ENDSUBENT           12          0                                 C2596 4999999 
+SUBENT        C2596050   20210223                             C201C2596 50    1 
+BIB                  2          4                                 C2596 50    2 
+REACTION   ((90-TH-232(A,F)63-EU-155,CUM,FY)/                     C2596 50    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 50    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 50    5 
+           LLNL-TR-706745.                                        C2596 50    6 
+ENDBIB               4          0                                 C2596 50    7 
+NOCOMMON             0          0                                 C2596 50    8 
+DATA                 2          1                                 C2596 50    9 
+DATA       DATA-ERR                                               C2596 50   10 
+NO-DIM     PER-CENT                                               C2596 50   11 
+     0.0175       19.1                                            C2596 50   12 
+ENDDATA              3          0                                 C2596 50   13 
+ENDSUBENT           12          0                                 C2596 5099999 
+SUBENT        C2596051   20210223                             C201C2596 51    1 
+BIB                  2          4                                 C2596 51    2 
+REACTION   ((90-TH-232(A,F)62-SM-156,CUM,FY)/                     C2596 51    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 51    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 51    5 
+           LLNL-TR-706745.                                        C2596 51    6 
+ENDBIB               4          0                                 C2596 51    7 
+NOCOMMON             0          0                                 C2596 51    8 
+DATA                 2          1                                 C2596 51    9 
+DATA       DATA-ERR                                               C2596 51   10 
+NO-DIM     PER-CENT                                               C2596 51   11 
+     0.0169       16.2                                            C2596 51   12 
+ENDDATA              3          0                                 C2596 51   13 
+ENDSUBENT           12          0                                 C2596 5199999 
+SUBENT        C2596052   20210223                             C201C2596 52    1 
+BIB                  2          4                                 C2596 52    2 
+REACTION   ((90-TH-232(A,F)63-EU-156,CUM,FY)/                     C2596 52    3 
+           (90-TH-232(A,F)40-ZR-97,CUM,FY))                       C2596 52    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 52    5 
+           LLNL-TR-706745.                                        C2596 52    6 
+ENDBIB               4          0                                 C2596 52    7 
+NOCOMMON             0          0                                 C2596 52    8 
+DATA                 2          1                                 C2596 52    9 
+DATA       DATA-ERR                                               C2596 52   10 
+NO-DIM     PER-CENT                                               C2596 52   11 
+     0.0123       10.3                                            C2596 52   12 
+ENDDATA              3          0                                 C2596 52   13 
+ENDSUBENT           12          0                                 C2596 5299999 
+SUBENT        C2596053   20210223                             C201C2596 53    1 
+BIB                  2          4                                 C2596 53    2 
+REACTION   ((90-TH-232(A,F)63-EU-156,CUM,FY)/                     C2596 53    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 53    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 53    5 
+           LLNL-TR-706745.                                        C2596 53    6 
+ENDBIB               4          0                                 C2596 53    7 
+NOCOMMON             0          0                                 C2596 53    8 
+DATA                 2          1                                 C2596 53    9 
+DATA       DATA-ERR                                               C2596 53   10 
+NO-DIM     PER-CENT                                               C2596 53   11 
+     0.0145        9.3                                            C2596 53   12 
+ENDDATA              3          0                                 C2596 53   13 
+ENDSUBENT           12          0                                 C2596 5399999 
+SUBENT        C2596054   20210223                             C201C2596 54    1 
+BIB                  2          4                                 C2596 54    2 
+REACTION   ((90-TH-232(A,F)63-EU-157,CUM,FY)/                     C2596 54    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 54    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 54    5 
+           LLNL-TR-706745.                                        C2596 54    6 
+ENDBIB               4          0                                 C2596 54    7 
+NOCOMMON             0          0                                 C2596 54    8 
+DATA                 2          1                                 C2596 54    9 
+DATA       DATA-ERR                                               C2596 54   10 
+NO-DIM     PER-CENT                                               C2596 54   11 
+    0.00950       19.1                                            C2596 54   12 
+ENDDATA              3          0                                 C2596 54   13 
+ENDSUBENT           12          0                                 C2596 5499999 
+SUBENT        C2596055   20210223                             C201C2596 55    1 
+BIB                  2          4                                 C2596 55    2 
+REACTION   ((90-TH-232(A,F)64-GD-159,CUM,FY)/                     C2596 55    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 55    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 55    5 
+           LLNL-TR-706745.                                        C2596 55    6 
+ENDBIB               4          0                                 C2596 55    7 
+NOCOMMON             0          0                                 C2596 55    8 
+DATA                 2          1                                 C2596 55    9 
+DATA       DATA-ERR                                               C2596 55   10 
+NO-DIM     PER-CENT                                               C2596 55   11 
+    0.00419       30.1                                            C2596 55   12 
+ENDDATA              3          0                                 C2596 55   13 
+ENDSUBENT           12          0                                 C2596 5599999 
+SUBENT        C2596056   20210223                             C201C2596 56    1 
+BIB                  2          4                                 C2596 56    2 
+REACTION   ((90-TH-232(A,F)65-TB-161,CUM,FY)/                     C2596 56    3 
+           (90-TH-232(A,F)58-CE-141,CUM,FY))                      C2596 56    4 
+STATUS     (TABLE) Table 1, page 4 of Livermore report            C2596 56    5 
+           LLNL-TR-706745.                                        C2596 56    6 
+ENDBIB               4          0                                 C2596 56    7 
+NOCOMMON             0          0                                 C2596 56    8 
+DATA                 2          1                                 C2596 56    9 
+DATA       DATA-ERR                                               C2596 56   10 
+NO-DIM     PER-CENT                                               C2596 56   11 
+    0.00255        6.8                                            C2596 56   12 
+ENDDATA              3          0                                 C2596 56   13 
+ENDSUBENT           12          0                                 C2596 5699999 
+ENDENTRY            56          0                                 C259699999999 

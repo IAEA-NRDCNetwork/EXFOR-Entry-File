@@ -1,0 +1,670 @@
+ENTRY            C2597   20210223                             C201C2597  0    1 
+SUBENT        C2597001   20210223                             C201C2597  1    1 
+BIB                  9         29                                 C2597  1    2 
+TITLE      Test of nuclear level density inputs for               C2597  1    3 
+           Hauser-Feshbach model calculations                     C2597  1    4 
+AUTHOR     (A.V.Voinov,S.M.Grimes,C.R.Brune,M.J.Hornish,          C2597  1    5 
+           T.N.Massey, A.Salas)                                   C2597  1    6 
+REFERENCE  (J,PR/C,76,044602,2007)                                C2597  1    7 
+           #doi:10.1103/PhysRevC.76.044602                        C2597  1    8 
+INSTITUTE  (1USAOHO,1USALAS)                                      C2597  1    9 
+FACILITY   (VDGT,1USAOHO) The tandem accelerator at Ohio          C2597  1   10 
+           University's Edwards Accelerator Laboratory.           C2597  1   11 
+DETECTOR   (SI)                                                   C2597  1   12 
+METHOD     (TOF,EDE) The outgoing charged particles were          C2597  1   13 
+           registered by charged particle spectrometer. The       C2597  1   14 
+           setup has ten 2-m time-of-flight legs ending with Si   C2597  1   15 
+           detectors. Legs are set up at different angles         C2597  1   16 
+           ranging from 22.5 up to 157.5 degrees, however we      C2597  1   17 
+           used nine angles for 3He+58Fe and two backward angles  C2597  1   18 
+           for d+59Co reactions due to some electronics and       C2597  1   19 
+           detector problems. The mass of the charged particles   C2597  1   20 
+           is determined by measuring both the energy deposited   C2597  1   21 
+           in Si detectors and the time of flight. Additionally,  C2597  1   22 
+           a neutron detector was placed at the distance of 140   C2597  1   23 
+           cm from the target to measure the neutron energy       C2597  1   24 
+           spectrum. The mass resolution was sufficient to        C2597  1   25 
+           resolve protons, deuterons, 3H/3He, and                C2597  1   26 
+           alpha-particles. Additional measurements with a blank  C2597  1   27 
+           target have been performed at each angle to determine  C2597  1   28 
+           background contribution.                               C2597  1   29 
+STATUS     (APRVD) Approved by A.Voinov, 3/10/2021.               C2597  1   30 
+HISTORY    (20210223C) BP                                         C2597  1   31 
+ENDBIB              29          0                                 C2597  1   32 
+NOCOMMON             0          0                                 C2597  1   33 
+ENDSUBENT           32          0                                 C2597  199999 
+SUBENT        C2597002   20210223                             C201C2597  2    1 
+BIB                  5         15                                 C2597  2    2 
+REACTION   (26-FE-58(HE3,X)1-H-1,,DA)                             C2597  2    3 
+SAMPLE     (26-FE-58,ENR=0.82) Self-supporting foils of 0.625-    C2597  2    4 
+           mg/cm2 58Fe (82% enriched) have been used as targets.  C2597  2    5 
+ANALYSIS   The absolute cross section has been calculated by      C2597  2    6 
+           taking into account the target thickness, the          C2597  2    7 
+           accumulated charge of incoming deuteron or 3He beam,   C2597  2    8 
+           and the neutron detector efficiency.                   C2597  2    9 
+ERR-ANALYS (DATA-ERR) Experimental errors.                        C2597  2   10 
+           (ERR-SYS) The overall systematic error for the         C2597  2   11 
+           absolute cross sections is estimated to be 15%. The    C2597  2   12 
+           errors in ratios of proton and alpha cross sections    C2597  2   13 
+           are only a few percents because they are determined    C2597  2   14 
+           by counting statistics alone.                          C2597  2   15 
+STATUS     (TABLE) Data were received from A.Voinov on 3/10/2021. C2597  2   16 
+           Also shown in Fig. 2, page 044602-4.                   C2597  2   17 
+ENDBIB              15          0                                 C2597  2   18 
+COMMON               2          3                                 C2597  2   19 
+EN         ERR-SYS                                                C2597  2   20 
+MEV        PER-CENT                                               C2597  2   21 
+       10.0       15.0                                            C2597  2   22 
+ENDCOMMON            3          0                                 C2597  2   23 
+DATA                 3         10                                 C2597  2   24 
+ANG        DATA       DATA-ERR                                    C2597  2   25 
+ADEG       MB/SR      MB/SR                                       C2597  2   26 
+       22.5    3.15868    0.31587                                 C2597  2   27 
+       37.5     3.1486    0.31486                                 C2597  2   28 
+       52.5    3.16628    0.31663                                 C2597  2   29 
+       67.5    2.73217    0.27322                                 C2597  2   30 
+       82.5    2.50367    0.25037                                 C2597  2   31 
+       97.5    2.73393    0.27339                                 C2597  2   32 
+      112.5    2.36844    0.23684                                 C2597  2   33 
+      127.5    2.39904     0.2399                                 C2597  2   34 
+      142.5    2.15478    0.21548                                 C2597  2   35 
+      157.5    2.42975    0.24298                                 C2597  2   36 
+ENDDATA             12          0                                 C2597  2   37 
+ENDSUBENT           36          0                                 C2597  299999 
+SUBENT        C2597003   20210223                             C201C2597  3    1 
+BIB                  5         15                                 C2597  3    2 
+REACTION   (26-FE-58(HE3,X)2-HE-4,,DA)                            C2597  3    3 
+SAMPLE     (26-FE-58,ENR=0.82) Self-supporting foils of 0.625-    C2597  3    4 
+           mg/cm2 58Fe (82% enriched) have been used as targets.  C2597  3    5 
+ANALYSIS   The absolute cross section has been calculated by      C2597  3    6 
+           taking into account the target thickness, the          C2597  3    7 
+           accumulated charge of incoming deuteron or 3He beam,   C2597  3    8 
+           and the neutron detector efficiency.                   C2597  3    9 
+ERR-ANALYS (DATA-ERR) Experimental errors.                        C2597  3   10 
+           (ERR-SYS) The overall systematic error for the         C2597  3   11 
+           absolute cross sections is estimated to be 15%. The    C2597  3   12 
+           errors in ratios of proton and alpha cross sections    C2597  3   13 
+           are only a few percents because they are determined    C2597  3   14 
+           by counting statistics alone.                          C2597  3   15 
+STATUS     (TABLE) Data were received from A.Voinov on 3/10/2021. C2597  3   16 
+           Also shown in Fig. 2, page 044602-4.                   C2597  3   17 
+ENDBIB              15          0                                 C2597  3   18 
+COMMON               2          3                                 C2597  3   19 
+EN         ERR-SYS                                                C2597  3   20 
+MEV        PER-CENT                                               C2597  3   21 
+       10.0       15.0                                            C2597  3   22 
+ENDCOMMON            3          0                                 C2597  3   23 
+DATA                 3         10                                 C2597  3   24 
+ANG        DATA       DATA-ERR                                    C2597  3   25 
+ADEG       MB/SR      MB/SR                                       C2597  3   26 
+       22.5     26.433     2.6433                                 C2597  3   27 
+       37.5    1.13209    0.11321                                 C2597  3   28 
+       52.5      0.854     0.0854                                 C2597  3   29 
+       67.5    0.73547    0.07355                                 C2597  3   30 
+       82.5    0.58945    0.05895                                 C2597  3   31 
+       97.5    0.51947    0.05195                                 C2597  3   32 
+      112.5    0.45345    0.04535                                 C2597  3   33 
+      127.5    0.42557    0.04256                                 C2597  3   34 
+      142.5      0.401     0.0401                                 C2597  3   35 
+      157.5    0.44018    0.04402                                 C2597  3   36 
+ENDDATA             12          0                                 C2597  3   37 
+ENDSUBENT           36          0                                 C2597  399999 
+SUBENT        C2597004   20210223                             C201C2597  4    1 
+BIB                  5         23                                 C2597  4    2 
+REACTION   (26-FE-58(HE3,X)0-NN-1,,IPA/DE)                        C2597  4    3 
+SAMPLE     (26-FE-58,ENR=0.82) Self-supporting foils of 0.625-    C2597  4    4 
+           mg/cm2 58Fe (82% enriched) have been used as targets.  C2597  4    5 
+ANALYSIS   The absolute cross section has been calculated by      C2597  4    6 
+           taking into account the target thickness, the          C2597  4    7 
+           accumulated charge of incoming deuteron or 3He beam,   C2597  4    8 
+           and the neutron detector efficiency. In order to       C2597  4    9 
+           eliminate contributions from the direct reaction       C2597  4   10 
+           mechanism, energy spectra of neutron, protons, and     C2597  4   11 
+           a-particles measured at backward angles (from 112 to   C2597  4   12 
+           157) have been used for analysis. However, units for   C2597  4   13 
+           cross sections are mb/MeV in Fig.3. This is because    C2597  4   14 
+           cross sections were determined for each angle in the   C2597  4   15 
+           units of mb/MeV/Sr and then multiplied by 4pi to be    C2597  4   16 
+           able to compare them with Empire calculations.         C2597  4   17 
+ERR-ANALYS (DATA-ERR) Experimental errors.                        C2597  4   18 
+           (ERR-SYS) The overall systematic error for the         C2597  4   19 
+           absolute cross sections is estimated to be 15%. The    C2597  4   20 
+           errors in ratios of proton and alpha cross sections    C2597  4   21 
+           are only a few percents because they are determined    C2597  4   22 
+           by counting statistics alone.                          C2597  4   23 
+STATUS     (TABLE) Data were received from A.Voinov on 3/10/2021. C2597  4   24 
+           Also shown in Fig. 3, page 044602-5.                   C2597  4   25 
+ENDBIB              23          0                                 C2597  4   26 
+COMMON               4          3                                 C2597  4   27 
+EN         ANG-MIN    ANG-MAX    ERR-SYS                          C2597  4   28 
+MEV        ADEG       ADEG       PER-CENT                         C2597  4   29 
+       10.0      112.0      157.0       15.0                      C2597  4   30 
+ENDCOMMON            3          0                                 C2597  4   31 
+DATA                 3         51                                 C2597  4   32 
+E          DATA       DATA-ERR                                    C2597  4   33 
+MEV        MB/MEV     MB/MEV                                      C2597  4   34 
+       0.15         0.         0.                                 C2597  4   35 
+  0.4500001         0.         0.                                 C2597  4   36 
+  0.7500002         0.         0.                                 C2597  4   37 
+       1.05 117.515488   2.689479                                 C2597  4   38 
+       1.35 153.124222   3.662468                                 C2597  4   39 
+       1.65 140.123459   3.474778                                 C2597  4   40 
+   1.950001 116.877396   3.134465                                 C2597  4   41 
+       2.25 106.031464   3.148027                                 C2597  4   42 
+   2.550001  86.145836   2.811692                                 C2597  4   43 
+   2.850001  68.490219   2.467148                                 C2597  4   44 
+   3.150001  56.614552   2.257063                                 C2597  4   45 
+   3.450001  50.156883   2.144435                                 C2597  4   46 
+   3.750001   39.68615   1.826735                                 C2597  4   47 
+   4.050001  33.384232   1.736184                                 C2597  4   48 
+   4.350001  28.397598   1.602236                                 C2597  4   49 
+   4.650001  23.566803   1.410077                                 C2597  4   50 
+   4.950001  18.684797   1.278307                                 C2597  4   51 
+   5.250001   15.80604   1.222847                                 C2597  4   52 
+   5.550001  13.411947   1.115531                                 C2597  4   53 
+   5.850001  11.093067   1.012475                                 C2597  4   54 
+   6.150002   9.052382  0.9369332                                 C2597  4   55 
+   6.450002   8.434997  0.9666272                                 C2597  4   56 
+   6.750001   6.106469  0.8436646                                 C2597  4   57 
+   7.050002   4.743482  0.7289046                                 C2597  4   58 
+   7.350002   4.170984  0.7333307                                 C2597  4   59 
+   7.650002   3.622208   0.619063                                 C2597  4   60 
+   7.950002   3.586514  0.5512128                                 C2597  4   61 
+   8.250002   3.299389  0.5281762                                 C2597  4   62 
+   8.550002   2.306469  0.4360668                                 C2597  4   63 
+   8.850002   1.562463   0.361787                                 C2597  4   64 
+   9.150002   1.461354  0.3769994                                 C2597  4   65 
+   9.450003    1.33451  0.3559858                                 C2597  4   66 
+   9.750002    1.23466  0.3585824                                 C2597  4   67 
+  10.050002  0.7255287  0.2444651                                 C2597  4   68 
+  10.350002  0.6793882  0.2440856                                 C2597  4   69 
+  10.650002  0.5681934  0.2259024                                 C2597  4   70 
+  10.950003  0.4276573  0.1961099                                 C2597  4   71 
+  11.250003  0.3002842  0.1696971                                 C2597  4   72 
+  11.550003  0.3774766  0.1988557                                 C2597  4   73 
+  11.850003  0.3997791  0.1960095                                 C2597  4   74 
+  12.150002  0.1207435  0.1604534                                 C2597  4   75 
+  12.450003   0.298549  0.1714204                                 C2597  4   76 
+  12.750003  0.0161602  0.1219469                                 C2597  4   77 
+  13.050003  0.1598815  0.1185431                                 C2597  4   78 
+  13.350003  0.3984251  0.2378337                                 C2597  4   79 
+  13.650003  0.0399134  0.1446144                                 C2597  4   80 
+  13.950004  0.1529546  0.1816176                                 C2597  4   81 
+  14.250004  0.0388022  0.1792709                                 C2597  4   82 
+  14.550003    0.37303  0.5035647                                 C2597  4   83 
+  14.850003  0.1383731         0.                                 C2597  4   84 
+  15.150003  0.3156563         0.                                 C2597  4   85 
+ENDDATA             53          0                                 C2597  4   86 
+ENDSUBENT           85          0                                 C2597  499999 
+SUBENT        C2597005   20210223                             C201C2597  5    1 
+BIB                  5         23                                 C2597  5    2 
+REACTION   (26-FE-58(HE3,X)1-H-1,,IPA/DE)                         C2597  5    3 
+SAMPLE     (26-FE-58,ENR=0.82) Self-supporting foils of 0.625-    C2597  5    4 
+           mg/cm2 58Fe (82% enriched) have been used as targets.  C2597  5    5 
+ANALYSIS   The absolute cross section has been calculated by      C2597  5    6 
+           taking into account the target thickness, the          C2597  5    7 
+           accumulated charge of incoming deuteron or 3He beam,   C2597  5    8 
+           and the neutron detector efficiency. In order to       C2597  5    9 
+           eliminate contributions from the direct reaction       C2597  5   10 
+           mechanism, energy spectra of neutron, protons, and     C2597  5   11 
+           a-particles measured at backward angles (from 112 to   C2597  5   12 
+           157) have been used for analysis. However, units for   C2597  5   13 
+           cross sections are mb/MeV in Fig.3. This is because    C2597  5   14 
+           cross sections were determined for each angle in the   C2597  5   15 
+           units of mb/MeV/Sr and then multiplied by 4pi to be    C2597  5   16 
+           able to compare them with Empire calculations.         C2597  5   17 
+ERR-ANALYS (DATA-ERR) Experimental errors.                        C2597  5   18 
+           (ERR-SYS) The overall systematic error for the         C2597  5   19 
+           absolute cross sections is estimated to be 15%. The    C2597  5   20 
+           errors in ratios of proton and alpha cross sections    C2597  5   21 
+           are only a few percents because they are determined    C2597  5   22 
+           by counting statistics alone.                          C2597  5   23 
+STATUS     (TABLE) Data were received from A.Voinov on 3/10/2021. C2597  5   24 
+           Also shown in Fig. 3, page 044602-5.                   C2597  5   25 
+ENDBIB              23          0                                 C2597  5   26 
+COMMON               4          3                                 C2597  5   27 
+EN         ANG-MIN    ANG-MAX    ERR-SYS                          C2597  5   28 
+MEV        ADEG       ADEG       PER-CENT                         C2597  5   29 
+       10.0      112.0      157.0       15.0                      C2597  5   30 
+ENDCOMMON            3          0                                 C2597  5   31 
+DATA                 3         55                                 C2597  5   32 
+E          DATA       DATA-ERR                                    C2597  5   33 
+MEV        MB/MEV     MB/MEV                                      C2597  5   34 
+       2.21  18.453953  0.8966888                                 C2597  5   35 
+       2.47  19.970215  0.9708382                                 C2597  5   36 
+       2.73  22.948668  0.9121273                                 C2597  5   37 
+       2.99  23.206722  0.7350221                                 C2597  5   38 
+       3.25   33.13546  0.9513955                                 C2597  5   39 
+       3.51  29.211325  0.8145032                                 C2597  5   40 
+       3.77  33.607723  0.9375511                                 C2597  5   41 
+       4.03  33.635719  0.9029433                                 C2597  5   42 
+       4.29  36.929573  0.9736239                                 C2597  5   43 
+       4.55  32.855534  0.9067284                                 C2597  5   44 
+       4.81  37.017773    1.05503                                 C2597  5   45 
+       5.07   31.15724  0.9160135                                 C2597  5   46 
+       5.33  31.299002  0.9819385                                 C2597  5   47 
+       5.59  23.922396  0.7961484                                 C2597  5   48 
+       5.85  23.943563   0.887102                                 C2597  5   49 
+       6.11   19.20332  0.6755987                                 C2597  5   50 
+       6.37  17.580574  0.6687387                                 C2597  5   51 
+       6.63  14.827006  0.6304092                                 C2597  5   52 
+       6.89  14.729783  0.6775083                                 C2597  5   53 
+       7.15     12.081  0.5362808                                 C2597  5   54 
+       7.41  12.019324  0.5598163                                 C2597  5   55 
+       7.67  10.913574  0.5442561                                 C2597  5   56 
+       7.93  10.386634  0.6283754                                 C2597  5   57 
+       8.19   7.788784  0.5463189                                 C2597  5   58 
+       8.45   8.016965  0.6190801                                 C2597  5   59 
+       8.71   6.365582  0.5355366                                 C2597  5   60 
+   8.969999   5.754635  0.3948781                                 C2597  5   61 
+       9.23   4.237252  0.3136481                                 C2597  5   62 
+       9.49   3.851019  0.3075298                                 C2597  5   63 
+       9.75   3.445246   0.288054                                 C2597  5   64 
+  10.009999    4.13245  0.5991354                                 C2597  5   65 
+      10.27   3.231521  0.5031934                                 C2597  5   66 
+      10.53   2.405132  0.2434275                                 C2597  5   67 
+      10.79     2.0136  0.2197736                                 C2597  5   68 
+  11.049999   2.314898  0.2404648                                 C2597  5   69 
+  11.309999   1.830085  0.2038816                                 C2597  5   70 
+      11.57   1.396019  0.1884505                                 C2597  5   71 
+      11.83   1.128593  0.1660708                                 C2597  5   72 
+  12.089999   1.119463  0.1662568                                 C2597  5   73 
+  12.349999  0.7777958  0.1288884                                 C2597  5   74 
+      12.61  0.6864255  0.1292215                                 C2597  5   75 
+      12.87  0.4136392  0.0985065                                 C2597  5   76 
+  13.129999  0.3649153  0.0986428                                 C2597  5   77 
+  13.389999   0.371847  0.0929186                                 C2597  5   78 
+      13.65  0.3871034  0.0996671                                 C2597  5   79 
+      13.91  0.2823246   0.084854                                 C2597  5   80 
+  14.169999  0.2439967  0.0802863                                 C2597  5   81 
+  14.429999  0.1767882  0.0640451                                 C2597  5   82 
+      14.69  0.1601788  0.0662645                                 C2597  5   83 
+      14.95  0.1184569  0.0530501                                 C2597  5   84 
+  15.209999  0.0439345  0.0292078                                 C2597  5   85 
+  15.469999  0.1553459  0.0628242                                 C2597  5   86 
+      15.73   0.081402  0.0411481                                 C2597  5   87 
+      15.99  0.0246776  0.0217984                                 C2597  5   88 
+      16.25  0.0033791  0.0033791                                 C2597  5   89 
+ENDDATA             57          0                                 C2597  5   90 
+ENDSUBENT           89          0                                 C2597  599999 
+SUBENT        C2597006   20210223                             C201C2597  6    1 
+BIB                  5         23                                 C2597  6    2 
+REACTION   (26-FE-58(HE3,X)2-HE-4,,IPA/DE)                        C2597  6    3 
+SAMPLE     (26-FE-58,ENR=0.82) Self-supporting foils of 0.625-    C2597  6    4 
+           mg/cm2 58Fe (82% enriched) have been used as targets.  C2597  6    5 
+ANALYSIS   The absolute cross section has been calculated by      C2597  6    6 
+           taking into account the target thickness, the          C2597  6    7 
+           accumulated charge of incoming deuteron or 3He beam,   C2597  6    8 
+           and the neutron detector efficiency. In order to       C2597  6    9 
+           eliminate contributions from the direct reaction       C2597  6   10 
+           mechanism, energy spectra of neutron, protons, and     C2597  6   11 
+           a-particles measured at backward angles (from 112 to   C2597  6   12 
+           157) have been used for analysis. However, units for   C2597  6   13 
+           cross sections are mb/MeV in Fig.3. This is because    C2597  6   14 
+           cross sections were determined for each angle in the   C2597  6   15 
+           units of mb/MeV/Sr and then multiplied by 4pi to be    C2597  6   16 
+           able to compare them with Empire calculations.         C2597  6   17 
+ERR-ANALYS (DATA-ERR) Experimental errors.                        C2597  6   18 
+           (ERR-SYS) The overall systematic error for the         C2597  6   19 
+           absolute cross sections is estimated to be 15%. The    C2597  6   20 
+           errors in ratios of proton and alpha cross sections    C2597  6   21 
+           are only a few percents because they are determined    C2597  6   22 
+           by counting statistics alone.                          C2597  6   23 
+STATUS     (TABLE) Data were received from A.Voinov on 3/10/2021. C2597  6   24 
+           Also shown in Fig. 3, page 044602-5.                   C2597  6   25 
+ENDBIB              23          0                                 C2597  6   26 
+COMMON               4          3                                 C2597  6   27 
+EN         ANG-MIN    ANG-MAX    ERR-SYS                          C2597  6   28 
+MEV        ADEG       ADEG       PER-CENT                         C2597  6   29 
+       10.0      112.0      157.0       15.0                      C2597  6   30 
+ENDCOMMON            3          0                                 C2597  6   31 
+DATA                 3         55                                 C2597  6   32 
+E          DATA       DATA-ERR                                    C2597  6   33 
+MEV        MB/MEV     MB/MEV                                      C2597  6   34 
+       4.03   2.525824  0.2196291                                 C2597  6   35 
+       4.55  0.0583775         0.                                 C2597  6   36 
+       5.07  0.6729056  0.0915914                                 C2597  6   37 
+       5.33  0.5318254  0.1054881                                 C2597  6   38 
+       5.59  0.6244931  0.1074971                                 C2597  6   39 
+       5.85  0.8457088  0.1349331                                 C2597  6   40 
+       6.11   1.582704  0.1745267                                 C2597  6   41 
+       6.37   1.963166  0.2075349                                 C2597  6   42 
+       6.63   2.039046     0.2023                                 C2597  6   43 
+       6.89   2.977702  0.2592382                                 C2597  6   44 
+       7.15    3.33506  0.2651489                                 C2597  6   45 
+       7.41   3.812804    0.29202                                 C2597  6   46 
+       7.67   3.945025  0.2878908                                 C2597  6   47 
+       7.93   4.422353  0.3116974                                 C2597  6   48 
+       8.19   3.740613  0.2699349                                 C2597  6   49 
+       8.45   3.891169  0.2894223                                 C2597  6   50 
+       8.71   3.973962  0.2873103                                 C2597  6   51 
+   8.969999   4.596994  0.3237986                                 C2597  6   52 
+       9.23    3.55262  0.2671106                                 C2597  6   53 
+       9.49   2.986223  0.2469354                                 C2597  6   54 
+       9.75   2.604727    0.22644                                 C2597  6   55 
+  10.009999   2.689375  0.2483118                                 C2597  6   56 
+      10.27   2.216258  0.2157936                                 C2597  6   57 
+      10.53   2.125093  0.2156657                                 C2597  6   58 
+      10.79   1.721303  0.1822289                                 C2597  6   59 
+  11.049999   1.400397  0.1658232                                 C2597  6   60 
+  11.309999   1.221173  0.1562369                                 C2597  6   61 
+      11.57    1.20828  0.1657868                                 C2597  6   62 
+      11.83   1.108511  0.1543584                                 C2597  6   63 
+  12.089999   1.068061  0.1558809                                 C2597  6   64 
+  12.349999  0.7308353  0.1249149                                 C2597  6   65 
+      12.61  0.5567896  0.1113695                                 C2597  6   66 
+      12.87  0.6193483  0.1099422                                 C2597  6   67 
+  13.129999    0.68681  0.1170884                                 C2597  6   68 
+  13.389999  0.5252429  0.0971435                                 C2597  6   69 
+      13.65  0.4792295  0.0908058                                 C2597  6   70 
+      13.91  0.6177962  0.1091642                                 C2597  6   71 
+  14.169999  0.2756953  0.0725563                                 C2597  6   72 
+  14.429999  0.1693214  0.0550313                                 C2597  6   73 
+      14.69  0.1569108  0.0537977                                 C2597  6   74 
+      14.95  0.0771672  0.0272501                                 C2597  6   75 
+  15.209999  0.1272122  0.0564772                                 C2597  6   76 
+  15.469999  0.1548534  0.0611258                                 C2597  6   77 
+      15.73  0.0694205  0.0324865                                 C2597  6   78 
+      15.99  0.0742609  0.0379993                                 C2597  6   79 
+      16.25  0.1664479  0.0633801                                 C2597  6   80 
+      16.51  0.2105773  0.0671936                                 C2597  6   81 
+  16.769999  0.1545418  0.0490404                                 C2597  6   82 
+  17.029999  0.0419049  0.0314286                                 C2597  6   83 
+  17.289999  0.0785103  0.0394973                                 C2597  6   84 
+  17.549999   0.127337  0.0471069                                 C2597  6   85 
+  17.809999  0.0425751  0.0275974                                 C2597  6   86 
+      18.07  0.0416791  0.0171557                                 C2597  6   87 
+      18.33  0.1109705    0.04921                                 C2597  6   88 
+      18.59  0.1075444  0.0384087                                 C2597  6   89 
+ENDDATA             57          0                                 C2597  6   90 
+ENDSUBENT           89          0                                 C2597  699999 
+SUBENT        C2597007   20210223                             C201C2597  7    1 
+BIB                  5         23                                 C2597  7    2 
+REACTION   (27-CO-59(D,X)0-NN-1,,IPA/DE)                          C2597  7    3 
+SAMPLE     Self-supporting 0.89-mg/cm2 59Co (100% natural         C2597  7    4 
+           abundance) have been used as targets.                  C2597  7    5 
+ANALYSIS   The absolute cross section has been calculated by      C2597  7    6 
+           taking into account the target thickness, the          C2597  7    7 
+           accumulated charge of incoming deuteron or 3He beam,   C2597  7    8 
+           and the neutron detector efficiency. In order to       C2597  7    9 
+           eliminate contributions from the direct reaction       C2597  7   10 
+           mechanism, energy spectra of neutron, protons, and     C2597  7   11 
+           a-particles measured at backward angles (from 112 to   C2597  7   12 
+           157) have been used for analysis. However, units for   C2597  7   13 
+           cross sections are mb/MeV in Fig.3. This is because    C2597  7   14 
+           cross sections were determined for each angle in the   C2597  7   15 
+           units of mb/MeV/Sr and then multiplied by 4pi to be    C2597  7   16 
+           able to compare them with Empire calculations.         C2597  7   17 
+ERR-ANALYS (DATA-ERR) Experimental errors.                        C2597  7   18 
+           (ERR-SYS) The overall systematic error for the         C2597  7   19 
+           absolute cross sections is estimated to be 15%. The    C2597  7   20 
+           errors in ratios of proton and alpha cross sections    C2597  7   21 
+           are only a few percents because they are determined    C2597  7   22 
+           by counting statistics alone.                          C2597  7   23 
+STATUS     (TABLE) Data were received from A.Voinov on 3/10/2021. C2597  7   24 
+           Also shown in Fig. 3, page 044602-5.                   C2597  7   25 
+ENDBIB              23          0                                 C2597  7   26 
+COMMON               4          3                                 C2597  7   27 
+EN         ANG-MIN    ANG-MAX    ERR-SYS                          C2597  7   28 
+MEV        ADEG       ADEG       PER-CENT                         C2597  7   29 
+        7.5      112.0      157.0       15.0                      C2597  7   30 
+ENDCOMMON            3          0                                 C2597  7   31 
+DATA                 3         45                                 C2597  7   32 
+E          DATA       DATA-ERR                                    C2597  7   33 
+MEV        MB/MEV     MB/MEV                                      C2597  7   34 
+        1.2 172.748016   7.620176                                 C2597  7   35 
+        1.5 183.154526   8.026578                                 C2597  7   36 
+        1.8 171.335236   7.690265                                 C2597  7   37 
+        2.1 148.645096   6.917583                                 C2597  7   38 
+   2.400001 130.349625   6.320518                                 C2597  7   39 
+   2.700001 110.699753   5.583383                                 C2597  7   40 
+   3.000001  91.239548   4.778923                                 C2597  7   41 
+   3.300001  79.188148   4.296862                                 C2597  7   42 
+   3.600001  70.963646   3.969284                                 C2597  7   43 
+   3.900001  62.179108   3.587873                                 C2597  7   44 
+   4.200001  53.762516   3.185788                                 C2597  7   45 
+   4.500001  48.301472   2.927994                                 C2597  7   46 
+   4.800001  41.332397   2.562057                                 C2597  7   47 
+   5.100001   34.99976   2.214763                                 C2597  7   48 
+   5.400002  27.581926   1.780814                                 C2597  7   49 
+   5.700001  21.498518   1.418186                                 C2597  7   50 
+   6.000001  19.457741   1.310355                                 C2597  7   51 
+   6.300002  16.585154   1.138457                                 C2597  7   52 
+   6.600001  13.796175  0.9703183                                 C2597  7   53 
+   6.900002  11.318461  0.8196205                                 C2597  7   54 
+   7.200002     9.1474  0.6904847                                 C2597  7   55 
+   7.500002    9.13519  0.7161153                                 C2597  7   56 
+   7.800002   7.930268  0.6451817                                 C2597  7   57 
+   8.100002    5.61691  0.4897822                                 C2597  7   58 
+   8.400002   4.909454   0.457276                                 C2597  7   59 
+   8.700002   3.959155  0.3942129                                 C2597  7   60 
+   9.000002   4.076945  0.4220163                                 C2597  7   61 
+   9.300002   3.710324  0.3975401                                 C2597  7   62 
+   9.600002   2.644058  0.3034171                                 C2597  7   63 
+   9.900002   2.141086  0.2598435                                 C2597  7   64 
+  10.200003   1.620463  0.2093874                                 C2597  7   65 
+  10.500003   1.647725  0.2248051                                 C2597  7   66 
+  10.800003   1.544705  0.2183185                                 C2597  7   67 
+  11.100002  0.7835662   0.129291                                 C2597  7   68 
+  11.400002  0.4267159  0.0806609                                 C2597  7   69 
+  11.700003  0.3224064  0.0733024                                 C2597  7   70 
+  12.000003  0.2246609  0.0521247                                 C2597  7   71 
+  12.300003  0.1432334  0.0349204                                 C2597  7   72 
+  12.600003  0.1432028   0.037613                                 C2597  7   73 
+  12.900003  0.1887356  0.0502344                                 C2597  7   74 
+  13.200003  0.1480327   0.048007                                 C2597  7   75 
+  13.500003  0.1024659  0.0423294                                 C2597  7   76 
+  13.800003  0.1008203  0.0567599                                 C2597  7   77 
+  14.100003  0.1707183  0.1241981                                 C2597  7   78 
+  14.400003  0.0861598  0.1385853                                 C2597  7   79 
+ENDDATA             47          0                                 C2597  7   80 
+ENDSUBENT           79          0                                 C2597  799999 
+SUBENT        C2597008   20210223                             C201C2597  8    1 
+BIB                  5         23                                 C2597  8    2 
+REACTION   (27-CO-59(D,X)1-H-1,,IPA/DE)                           C2597  8    3 
+SAMPLE     Self-supporting 0.89-mg/cm2 59Co (100% natural         C2597  8    4 
+           abundance) have been used as targets.                  C2597  8    5 
+ANALYSIS   The absolute cross section has been calculated by      C2597  8    6 
+           taking into account the target thickness, the          C2597  8    7 
+           accumulated charge of incoming deuteron or 3He beam,   C2597  8    8 
+           and the neutron detector efficiency. In order to       C2597  8    9 
+           eliminate contributions from the direct reaction       C2597  8   10 
+           mechanism, energy spectra of neutron, protons, and     C2597  8   11 
+           a-particles measured at backward angles (from 112 to   C2597  8   12 
+           157) have been used for analysis. However, units for   C2597  8   13 
+           cross sections are mb/MeV in Fig.3. This is because    C2597  8   14 
+           cross sections were determined for each angle in the   C2597  8   15 
+           units of mb/MeV/Sr and then multiplied by 4pi to be    C2597  8   16 
+           able to compare them with Empire calculations.         C2597  8   17 
+ERR-ANALYS (DATA-ERR) Experimental errors.                        C2597  8   18 
+           (ERR-SYS) The overall systematic error for the         C2597  8   19 
+           absolute cross sections is estimated to be 15%. The    C2597  8   20 
+           errors in ratios of proton and alpha cross sections    C2597  8   21 
+           are only a few percents because they are determined    C2597  8   22 
+           by counting statistics alone.                          C2597  8   23 
+STATUS     (TABLE) Data were received from A.Voinov on 3/10/2021. C2597  8   24 
+           Also shown in Fig. 3, page 044602-5.                   C2597  8   25 
+ENDBIB              23          0                                 C2597  8   26 
+COMMON               4          3                                 C2597  8   27 
+EN         ANG-MIN    ANG-MAX    ERR-SYS                          C2597  8   28 
+MEV        ADEG       ADEG       PER-CENT                         C2597  8   29 
+        7.5      112.0      157.0       15.0                      C2597  8   30 
+ENDCOMMON            3          0                                 C2597  8   31 
+DATA                 3         41                                 C2597  8   32 
+E          DATA       DATA-ERR                                    C2597  8   33 
+MEV        MB/MEV     MB/MEV                                      C2597  8   34 
+       1.95  21.415192  0.5936955                                 C2597  8   35 
+       2.21  48.983101   1.094668                                 C2597  8   36 
+       2.47  53.471394   1.217829                                 C2597  8   37 
+       2.73  56.875423   1.202426                                 C2597  8   38 
+       2.99  53.436466   1.111214                                 C2597  8   39 
+       3.25  55.488384   1.204643                                 C2597  8   40 
+       3.51  45.388878  0.9764884                                 C2597  8   41 
+       3.77   54.91806   1.263433                                 C2597  8   42 
+  4.0317259 49.0909247   1.432071                                 C2597  8   43 
+       4.29  43.299667   1.227671                                 C2597  8   44 
+       4.55  49.065754   1.197397                                 C2597  8   45 
+       4.81  46.875347    1.08825                                 C2597  8   46 
+       5.07  41.624794  0.9511309                                 C2597  8   47 
+       5.33  40.480911  0.9541339                                 C2597  8   48 
+       5.59   35.09502  0.8443858                                 C2597  8   49 
+       5.85  36.927284  0.9254855                                 C2597  8   50 
+       6.11   30.45463  0.8040571                                 C2597  8   51 
+       6.37  32.833443   0.992488                                 C2597  8   52 
+       6.63  28.628397  0.7935055                                 C2597  8   53 
+       6.89  26.680254    0.78015                                 C2597  8   54 
+       7.15  21.903679  0.9420753                                 C2597  8   55 
+       7.41  19.922165  0.8485811                                 C2597  8   56 
+       7.67   15.81128   0.591001                                 C2597  8   57 
+       7.93   16.09017  0.5932803                                 C2597  8   58 
+       8.19  10.572981  0.4869775                                 C2597  8   59 
+       8.45   9.431784  0.4551346                                 C2597  8   60 
+       8.71   8.484606  0.4320896                                 C2597  8   61 
+   8.969999   9.243107  0.4403249                                 C2597  8   62 
+       9.23   7.358774  0.4101161                                 C2597  8   63 
+       9.49    5.86327  0.3435302                                 C2597  8   64 
+       9.75    3.09488  0.2654788                                 C2597  8   65 
+  10.009999   4.051551  0.2908975                                 C2597  8   66 
+      10.27   4.778851  0.3322496                                 C2597  8   67 
+      10.53   4.622792  0.3103417                                 C2597  8   68 
+      10.79   2.906978  0.2588292                                 C2597  8   69 
+  11.049999   2.817345  0.2431936                                 C2597  8   70 
+  11.309999   4.165071  0.3054864                                 C2597  8   71 
+      11.57   4.491967  0.3091649                                 C2597  8   72 
+      11.83   4.655212  0.3257214                                 C2597  8   73 
+  12.089999   3.775267  0.2776548                                 C2597  8   74 
+  12.349999   4.382596  0.2548021                                 C2597  8   75 
+ENDDATA             43          0                                 C2597  8   76 
+ENDSUBENT           75          0                                 C2597  899999 
+SUBENT        C2597009   20210223                             C201C2597  9    1 
+BIB                  5         23                                 C2597  9    2 
+REACTION   (27-CO-59(D,X)2-HE-4,,IPA/DE)                          C2597  9    3 
+SAMPLE     Self-supporting 0.89-mg/cm2 59Co (100% natural         C2597  9    4 
+           abundance) have been used as targets.                  C2597  9    5 
+ANALYSIS   The absolute cross section has been calculated by      C2597  9    6 
+           taking into account the target thickness, the          C2597  9    7 
+           accumulated charge of incoming deuteron or 3He beam,   C2597  9    8 
+           and the neutron detector efficiency. In order to       C2597  9    9 
+           eliminate contributions from the direct reaction       C2597  9   10 
+           mechanism, energy spectra of neutron, protons, and     C2597  9   11 
+           a-particles measured at backward angles (from 112 to   C2597  9   12 
+           157) have been used for analysis. However, units for   C2597  9   13 
+           cross sections are mb/MeV in Fig.3. This is because    C2597  9   14 
+           cross sections were determined for each angle in the   C2597  9   15 
+           units of mb/MeV/Sr and then multiplied by 4pi to be    C2597  9   16 
+           able to compare them with Empire calculations.         C2597  9   17 
+ERR-ANALYS (DATA-ERR) Experimental errors.                        C2597  9   18 
+           (ERR-SYS) The overall systematic error for the         C2597  9   19 
+           absolute cross sections is estimated to be 15%. The    C2597  9   20 
+           errors in ratios of proton and alpha cross sections    C2597  9   21 
+           are only a few percents because they are determined    C2597  9   22 
+           by counting statistics alone.                          C2597  9   23 
+STATUS     (TABLE) Data were received from A.Voinov on 3/10/2021. C2597  9   24 
+           Also shown in Fig. 3, page 044602-5.                   C2597  9   25 
+ENDBIB              23          0                                 C2597  9   26 
+COMMON               4          3                                 C2597  9   27 
+EN         ANG-MIN    ANG-MAX    ERR-SYS                          C2597  9   28 
+MEV        ADEG       ADEG       PER-CENT                         C2597  9   29 
+        7.5      112.0      157.0       15.0                      C2597  9   30 
+ENDCOMMON            3          0                                 C2597  9   31 
+DATA                 3         43                                 C2597  9   32 
+E          DATA       DATA-ERR                                    C2597  9   33 
+MEV        MB/MEV     MB/MEV                                      C2597  9   34 
+       4.03   1.215301  0.1713037                                 C2597  9   35 
+       4.29   1.142027  0.1577455                                 C2597  9   36 
+       4.55   1.472995  0.1810863                                 C2597  9   37 
+       4.81   1.478827  0.1812399                                 C2597  9   38 
+       5.07   1.839703  0.2083851                                 C2597  9   39 
+       5.33   2.267314  0.2198955                                 C2597  9   40 
+       5.59   2.991394  0.2875302                                 C2597  9   41 
+       5.85   3.468245  0.3092102                                 C2597  9   42 
+       6.11   3.823309  0.4066671                                 C2597  9   43 
+       6.37    3.65627  0.3204261                                 C2597  9   44 
+       6.63   4.301674  0.3149392                                 C2597  9   45 
+       6.89   4.072086  0.2925822                                 C2597  9   46 
+       7.15   5.359664  0.3592423                                 C2597  9   47 
+       7.41   5.536062  0.3474805                                 C2597  9   48 
+       7.67   6.022611   0.371258                                 C2597  9   49 
+       7.93   5.616635  0.3432132                                 C2597  9   50 
+       8.19   6.516909  0.3821172                                 C2597  9   51 
+       8.45   5.742377  0.3456143                                 C2597  9   52 
+       8.71   5.936641  0.3745488                                 C2597  9   53 
+   8.969999   5.080589  0.3279859                                 C2597  9   54 
+       9.23   5.596714  0.3572423                                 C2597  9   55 
+       9.49   5.072848   0.325577                                 C2597  9   56 
+       9.75   4.737724  0.3278546                                 C2597  9   57 
+  10.009999   4.070632  0.3011928                                 C2597  9   58 
+      10.27   3.654176    0.28535                                 C2597  9   59 
+      10.53   2.977264  0.2490568                                 C2597  9   60 
+      10.79   2.599129  0.2395421                                 C2597  9   61 
+  11.049999    1.93731   0.202039                                 C2597  9   62 
+  11.309999   1.247323   0.166575                                 C2597  9   63 
+      11.57   1.650729  0.1802351                                 C2597  9   64 
+      11.83   1.693434  0.1928789                                 C2597  9   65 
+  12.089999   1.415727  0.1783023                                 C2597  9   66 
+  12.349999  0.8424865  0.1353562                                 C2597  9   67 
+      12.61  0.5908619  0.1075662                                 C2597  9   68 
+      12.87  0.3865978  0.0869407                                 C2597  9   69 
+  13.129999  0.2702089  0.0759526                                 C2597  9   70 
+  13.389999  0.3654509  0.0881568                                 C2597  9   71 
+      13.65  0.3055563  0.0759764                                 C2597  9   72 
+      13.91  0.1838508  0.0627947                                 C2597  9   73 
+  14.169999   0.123257  0.0513571                                 C2597  9   74 
+  14.429999  0.0685988  0.0394031                                 C2597  9   75 
+      14.69   0.188877  0.0619777                                 C2597  9   76 
+      14.95  0.0990243  0.0449468                                 C2597  9   77 
+ENDDATA             45          0                                 C2597  9   78 
+ENDSUBENT           77          0                                 C2597  999999 
+SUBENT        C2597010   20210223                             C201C2597 10    1 
+BIB                  5         16                                 C2597 10    2 
+REACTION   (26-FE-57(0,0),,LD)                                    C2597 10    3 
+EN-SEC     (E-EXC,26-FE-57)                                       C2597 10    4 
+ANALYSIS   (PES) In order to improve level density parameters,    C2597 10    5 
+           the experimental level densities have been fitted      C2597 10    6 
+           with the Fermi-gas function for two different spin     C2597 10    7 
+           cutoff factors sigma1 and sigma2.                      C2597 10    8 
+ERR-ANALYS (DATA-ERR1) Uncertainties of obtained level densities  C2597 10    9 
+           have been estimated to be about 20% which include      C2597 10   10 
+           uncertainties of absolute cross section measurements   C2597 10   11 
+           and uncertainties of particle transmission             C2597 10   12 
+           coefficients (text on page 044602-6)                   C2597 10   13 
+           (DATA-ERR2) Errors shown in fig.5                      C2597 10   14 
+STATUS     (DEP,C2597003)                                         C2597 10   15 
+           (DEP,C2597006)                                         C2597 10   16 
+           (DEP,C2597009)                                         C2597 10   17 
+           (CURVE) Fig. 5, page 044602-7.                         C2597 10   18 
+ENDBIB              16          0                                 C2597 10   19 
+COMMON               1          3                                 C2597 10   20 
+DATA-ERR1                                                         C2597 10   21 
+PER-CENT                                                          C2597 10   22 
+       20.0                                                       C2597 10   23 
+ENDCOMMON            3          0                                 C2597 10   24 
+DATA                 3         23                                 C2597 10   25 
+E-EXC      DATA       DATA-ERR2                                   C2597 10   26 
+MEV        1/MEV      1/MEV                                       C2597 10   27 
+      4.024  2.593E+01  1.034E+01                                 C2597 10   28 
+      4.274  5.416E+01  2.043E+01                                 C2597 10   29 
+      4.559  5.909E+01  2.098E+01                                 C2597 10   30 
+      4.844  9.652E+01  3.318E+01                                 C2597 10   31 
+      5.129  1.191E+02  4.361E+01                                 C2597 10   32 
+      5.397  1.751E+02  5.395E+01                                 C2597 10   33 
+      5.681  1.944E+02  5.990E+01                                 C2597 10   34 
+      5.949  2.618E+02  8.070E+01                                 C2597 10   35 
+      6.215  2.440E+02  7.518E+01                                 C2597 10   36 
+      6.499  2.234E+02  5.761E+01                                 C2597 10   37 
+      6.784  3.008E+02  8.529E+01                                 C2597 10   38 
+      7.052  4.501E+02  1.219E+02                                 C2597 10   39 
+      7.336  4.826E+02  1.244E+02                                 C2597 10   40 
+      7.639  5.648E+02  1.307E+02                                 C2597 10   41 
+      7.888  5.847E+02  1.658E+02                                 C2597 10   42 
+      8.190  6.964E+02  1.886E+02                                 C2597 10   43 
+      8.475  8.898E+02  2.059E+02                                 C2597 10   44 
+      8.742  1.137E+03  2.477E+02                                 C2597 10   45 
+      9.027  1.241E+03  3.199E+02                                 C2597 10   46 
+      9.294  1.557E+03  4.016E+02                                 C2597 10   47 
+      9.579  1.584E+03  3.666E+02                                 C2597 10   48 
+      9.846  1.920E+03  4.442E+02                                 C2597 10   49 
+     10.148  2.497E+03  6.112E+02                                 C2597 10   50 
+ENDDATA             25          0                                 C2597 10   51 
+ENDSUBENT           50          0                                 C2597 1099999 
+ENDENTRY            10          0                                 C259799999999 
