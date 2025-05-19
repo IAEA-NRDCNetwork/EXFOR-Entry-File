@@ -1,95 +1,97 @@
-ENTRY            10547   20040517                             00001054700000001 
-SUBENT        10547001   20040517                             00001054700100001 
-BIB                 10         27                                 1054700100002 
-INSTITUTE  (1USALRL)                                              1054700100003 
-REFERENCE  (J,NSE,60,383,197608)                                  1054700100004 
-           (J,NSE,64,892,197712) Renormalized data for 0.1-75 keV.1054700100005 
-           (R,UCRL-77377,19751001) Preliminary data               1054700100006 
-AUTHOR     (J.B.Czirr,G.S.Sidhu)                                  1054700100007 
-TITLE      A Measurement of the Fission Cross Section of 235U     1054700100008 
-            from 100 eV to 680 keV.                               1054700100009 
-FACILITY   (LINAC,1USALRL)                                        1054700100010 
-METHOD     (TOF) Time-of-flight                                   1054700100011 
-DETECTOR   (FISCH) Fission chambers                               1054700100012 
-           (GLASD) 6Li glass detectors for flux monitoring       11054700100013 
-CORRECTION Corrections were made for deadtime, absorption of      1054700100014 
-            neutrons by fission chamber and li glass detector, and1054700100015 
-            multiple reactions in li glass detector and fission   1054700100016 
-            chamber.                                              1054700100017 
-ERR-ANALYS (ERR-S) Statistical error                              1054700100018 
-           (ERR-SYS) Systematic errors including flux monitor     1054700100019 
-            efficiency, errors in deadtime corrections, error in  1054700100020 
-            flux perturbation calculation, multiple scattering    1054700100021 
-            correction errors in both Li glass detector and       1054700100022 
-            fission chamber, self absorption in flux monitor and  1054700100023 
-            fission chamber, normalization error, and errors in   1054700100024 
-            energy dependence of the 6Li(n,alpha) reaction.       1054700100025 
-HISTORY    (19751014C)                                            1054700100026 
-           (19780106U)BIB update. Converted to REACTOR formalism. 1054700100027 
-           (20040517A) Converted to new date formats, lower case. 1054700100028 
-                       Data heading updated.                      1054700100029 
-ENDBIB              27          0                                 1054700100030 
-NOCOMMON             0          0                                 1054700100031 
-ENDSUBENT           30          0                                 1054700199999 
-SUBENT        10547002   20040517                             00001054700200001 
-BIB                  4          8                                 1054700200002 
-REACTION  1((92-U-235(N,F),,SIG)/(3-LI-6(N,T)2-HE-4,,SIG))        1054700200003 
-          2(92-U-235(N,F),,SIG)                                   1054700200004 
-MONITOR   2(3-LI-6(N,T)2-HE-4,,SIG)                               1054700200005 
-           ((MONIT2)92-U-235(N,F),,SIG) Normalized to thermal-    1054700200006 
-            neutron cross section from ENDF/B-IV using data taken 1054700200007 
-            in a separate measurement in the range 0.02 - 2000 eV.1054700200008 
-STATUS    2(DEP)                                                  1054700200009 
-HISTORY    (19780106A) Data replaced with published values        1054700200010 
-ENDBIB               8          0                                 1054700200011 
-COMMON               2          3                                 1054700200012 
-EN-NRM    2MONIT2    2                                            1054700200013 
-EV         B                                                      1054700200014 
- 0.0253     585.4                                                 1054700200015 
-ENDCOMMON            3          0                                 1054700200016 
-DATA                 6         40                                 1054700200017 
-EN-MIN     EN-MAX     DATA      1DATA      2ERR-S      ERR-SYS    1054700200018 
-KEV        KEV        NO-DIM     B          PER-CENT   PER-CENT   1054700200019 
-  0.10        0.20    1.667      20.2       0.6        1.3        1054700200020 
-  0.20        0.30    2.052      19.3       0.6        1.3        1054700200021 
-  0.30        0.40    1.578      12.5       0.9        1.3        1054700200022 
-  0.40        0.50    1.851      12.9       0.9        1.3        1054700200023 
-  0.50        0.60    2.250      14.2       0.8        1.3        1054700200024 
-  0.60        0.80    1.881      10.5       0.7        1.3        1054700200025 
-  0.80        1.0     1.500       7.40      0.9        1.3        1054700200026 
-  1.0         1.5     1.810       7.01      0.7        1.3        1054700200027 
-  1.5         2.0     1.736       6.13      0.9        1.3        1054700200028 
-  2.0         2.25    1.580       5.07      1.6        1.3        1054700200029 
-  3.5         4.5     1.823       4.27      1.2        1.3        1054700200030 
-  4.5         5.5     1.731       3.63      1.1        1.3        1054700200031 
-  6.1         6.5     1.611       3.01      1.7        1.3        1054700200032 
-  6.5         7.5     1.758       3.11      1.2        1.3        1054700200033 
-  7.5         8.5     1.631       2.70      1.3        1.3        1054700200034 
-  8.5        10.0     1.849       2.84      1.0        1.3        1054700200035 
- 10.         15.      1.852       2.47      0.6        1.4        1054700200036 
- 15.         20.      1.941       2.21      0.7        1.5        1054700200037 
- 20.         25.      2.031       2.065     0.8        1.6        1054700200038 
- 25.         30.      2.108       1.967     0.9        1.7        1054700200039 
- 40.         50.      2.253       1.73      1.2        1.8        1054700200040 
- 50.         60.      2.375       1.71      1.0        2.0        1054700200041 
- 60.         70.      2.467       1.706     0.8        2.3        1054700200042 
- 70.         75.      2.399       1.625     1.3        2.5        1054700200043 
- 80.         90.      2.20        1.48      2.5        2.1        1054700200044 
-165.        195.      0.913       1.31      7.0        2.0        1054700200045 
-210.        230.      0.421       1.24      4.1        2.0        1054700200046 
-230.        250.      0.360       1.235     3.3        2.0        1054700200047 
-250.        270.      0.416       1.23      2.9        2.0        1054700200048 
-275.        285.      0.556       1.21      5.3        2.0        1054700200049 
-295.        315.      0.802       1.17      3.3        2.0        1054700200050 
-315.        335.      1.06        1.18      2.7        2.0        1054700200051 
-335.        355.      1.29        1.15      2.2        2.0        1054700200052 
-355.        370.      1.53        1.16      2.1        2.0        1054700200053 
-400.        450.      2.15        1.10      3.1        2.0        1054700200054 
-450.        500.      2.52        1.06      2.3        2.0        1054700200055 
-500.        550.      2.93        1.075     2.2        2.0        1054700200056 
-550.        580.      3.18        1.08      2.9        2.0        1054700200057 
-600.        650.      3.38        1.04      2.2        2.0        1054700200058 
-650.        680.      3.46        1.02      2.2        2.0        1054700200059 
-ENDDATA             42          0                                 1054700200060 
-ENDSUBENT           59          0                                 1054700299999 
+ENTRY            10547   20181102                             144410547  0    1 
+SUBENT        10547001   20181102                             144410547  1    1 
+BIB                 11         29                                 10547  1    2 
+INSTITUTE  (1USALRL)                                              10547  1    3 
+REFERENCE  (J,NSE,60,383,1976)                                    10547  1    4 
+           (J,NSE,64,892,1977)   Renormalized data for 0.1-75 keV.10547  1    5 
+           (R,UCRL-77377,19751001) Preliminary data               10547  1    6 
+AUTHOR     (J.B.Czirr,G.S.Sidhu)                                  10547  1    7 
+TITLE      A Measurement of the Fission Cross Section of 235U     10547  1    8 
+            from 100 eV to 680 keV.                               10547  1    9 
+FACILITY   (LINAC,1USALRL)                                        10547  1   10 
+METHOD     (TOF) Time-of-flight                                   10547  1   11 
+DETECTOR   (FISCH) Fission chambers                               10547  1   12 
+           (GLASD) 6Li glass detectors for flux monitoring        10547  1   13 
+CORRECTION Corrections were made for deadtime, absorption of      10547  1   14 
+            neutrons by fission chamber and li glass detector, and10547  1   15 
+            multiple reactions in li glass detector and fission   10547  1   16 
+            chamber.                                              10547  1   17 
+ERR-ANALYS (ERR-S) Statistical error                              10547  1   18 
+           (ERR-SYS) Systematic errors including flux monitor     10547  1   19 
+            efficiency, errors in deadtime corrections, error in  10547  1   20 
+            flux perturbation calculation, multiple scattering    10547  1   21 
+            correction errors in both Li glass detector and       10547  1   22 
+            fission chamber, self absorption in flux monitor and  10547  1   23 
+            fission chamber, normalization error, and errors in   10547  1   24 
+            energy dependence of the 6Li(n,alpha) reaction.       10547  1   25 
+STATUS     (TABLE) Table III, Nucl.Sci.Eng.60,383(1976)           10547  1   26 
+HISTORY    (19751014C)                                            10547  1   27 
+           (19780106U)BIB update. Converted to REACTOR formalism. 10547  1   28 
+           (20040517A) Converted to new date formats, lower case. 10547  1   29 
+                       Data heading updated.                      10547  1   30 
+           (20181014U) OS. Minor correction in sub.2              10547  1   31 
+ENDBIB              29          0                                 10547  1   32 
+NOCOMMON             0          0                                 10547  1   33 
+ENDSUBENT           32          0                                 10547  199999 
+SUBENT        10547002   20181102                             144410547  2    1 
+BIB                  3          8                                 10547  2    2 
+REACTION  1((92-U-235(N,F),,SIG)/(3-LI-6(N,T)2-HE-4,,SIG))        10547  2    3 
+          2(92-U-235(N,F),,SIG)                                   10547  2    4 
+MONITOR   2(3-LI-6(N,T)2-HE-4,,SIG)                               10547  2    5 
+           ((MONIT)92-U-235(N,F),,SIG) Normalized to thermal-     10547  2    6 
+            neutron cross section from ENDF/B-IV using data taken 10547  2    7 
+            in a separate measurement in the range 0.02 - 2000 eV.10547  2    8 
+HISTORY    (19780106A) Data replaced with published values        10547  2    9 
+           (20181014U) STATUS keyword deleted                     10547  2   10 
+ENDBIB               8          0                                 10547  2   11 
+COMMON               2          3                                 10547  2   12 
+EN-NRM    2MONIT     2                                            10547  2   13 
+EV         B                                                      10547  2   14 
+ 0.0253     585.4                                                 10547  2   15 
+ENDCOMMON            3          0                                 10547  2   16 
+DATA                 6         40                                 10547  2   17 
+EN-MIN     EN-MAX     DATA      1DATA      2ERR-S      ERR-SYS    10547  2   18 
+KEV        KEV        NO-DIM     B          PER-CENT   PER-CENT   10547  2   19 
+  0.10        0.20    1.667      20.2       0.6        1.3        10547  2   20 
+  0.20        0.30    2.052      19.3       0.6        1.3        10547  2   21 
+  0.30        0.40    1.578      12.5       0.9        1.3        10547  2   22 
+  0.40        0.50    1.851      12.9       0.9        1.3        10547  2   23 
+  0.50        0.60    2.250      14.2       0.8        1.3        10547  2   24 
+  0.60        0.80    1.881      10.5       0.7        1.3        10547  2   25 
+  0.80        1.0     1.500       7.40      0.9        1.3        10547  2   26 
+  1.0         1.5     1.810       7.01      0.7        1.3        10547  2   27 
+  1.5         2.0     1.736       6.13      0.9        1.3        10547  2   28 
+  2.0         2.25    1.580       5.07      1.6        1.3        10547  2   29 
+  3.5         4.5     1.823       4.27      1.2        1.3        10547  2   30 
+  4.5         5.5     1.731       3.63      1.1        1.3        10547  2   31 
+  6.1         6.5     1.611       3.01      1.7        1.3        10547  2   32 
+  6.5         7.5     1.758       3.11      1.2        1.3        10547  2   33 
+  7.5         8.5     1.631       2.70      1.3        1.3        10547  2   34 
+  8.5        10.0     1.849       2.84      1.0        1.3        10547  2   35 
+ 10.         15.      1.852       2.47      0.6        1.4        10547  2   36 
+ 15.         20.      1.941       2.21      0.7        1.5        10547  2   37 
+ 20.         25.      2.031       2.065     0.8        1.6        10547  2   38 
+ 25.         30.      2.108       1.967     0.9        1.7        10547  2   39 
+ 40.         50.      2.253       1.73      1.2        1.8        10547  2   40 
+ 50.         60.      2.375       1.71      1.0        2.0        10547  2   41 
+ 60.         70.      2.467       1.706     0.8        2.3        10547  2   42 
+ 70.         75.      2.399       1.625     1.3        2.5        10547  2   43 
+ 80.         90.      2.20        1.48      2.5        2.1        10547  2   44 
+165.        195.      0.913       1.31      7.0        2.0        10547  2   45 
+210.        230.      0.421       1.24      4.1        2.0        10547  2   46 
+230.        250.      0.360       1.235     3.3        2.0        10547  2   47 
+250.        270.      0.416       1.23      2.9        2.0        10547  2   48 
+275.        285.      0.556       1.21      5.3        2.0        10547  2   49 
+295.        315.      0.802       1.17      3.3        2.0        10547  2   50 
+315.        335.      1.06        1.18      2.7        2.0        10547  2   51 
+335.        355.      1.29        1.15      2.2        2.0        10547  2   52 
+355.        370.      1.53        1.16      2.1        2.0        10547  2   53 
+400.        450.      2.15        1.10      3.1        2.0        10547  2   54 
+450.        500.      2.52        1.06      2.3        2.0        10547  2   55 
+500.        550.      2.93        1.075     2.2        2.0        10547  2   56 
+550.        580.      3.18        1.08      2.9        2.0        10547  2   57 
+600.        650.      3.38        1.04      2.2        2.0        10547  2   58 
+650.        680.      3.46        1.02      2.2        2.0        10547  2   59 
+ENDDATA             42          0                                 10547  2   60 
+ENDSUBENT           59          0                                 10547  299999 
 ENDENTRY             2          0                                 1054799999999 

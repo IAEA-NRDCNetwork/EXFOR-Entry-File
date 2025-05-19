@@ -1,56 +1,79 @@
-ENTRY            12405   19820519                             00001240500000001 
-SUBENT        12405001   19820519                             00001240500100001 
-BIB                  8         10                                 1240500100002 
-INSTITUTE  (1USABET)                                              1240500100003 
-REFERENCE  (J,NSE,9,341,6103)                                     1240500100004 
-AUTHOR     (J.HARDY,JR.,D.KLEIN,AND G.G.SMITH)                    1240500100005 
-TITLE      THE RESONANCE FISSION INTEGRAL OF U235, PU239, AND     1240500100006 
-           PU241.                                                 1240500100007 
-N-SOURCE   (REAC) U-H20 REACTOR, TRX                              1240500100008 
-MONITOR    (79-AU-197(N,G)79-AU-198,,RI)                          1240500100009 
-STATUS     (SCSRS)                                                1240500100010 
-HISTORY    (760804T) TRANSLATED FROM SCISRS                       1240500100011 
-           (820519A) CONVERTED TO REACTION FORMALISM              1240500100012 
-ENDBIB              10          0                                 1240500100013 
-COMMON               1          3                                 1240500100014 
-MONIT                                                             1240500100015 
-B                                                                 1240500100016 
- 1535.                                                            1240500100017 
-ENDCOMMON            3          0                                 1240500100018 
-ENDSUBENT           17          0                                 1240500199999 
-SUBENT        12405002   19820519                             00001240500200001 
-BIB                  1          1                                 1240500200002 
-REACTION   (92-U-235(N,F),,RI)                                    1240500200003 
-ENDBIB               1          0                                 1240500200004 
-NOCOMMON             0          0                                 1240500200005 
-DATA                 3          1                                 1240500200006 
-EN-MIN     DATA       DATA-ERR                                    1240500200007 
-EV         B          B                                           1240500200008 
- 0.50       274.        11.                                       1240500200009 
-ENDDATA              3          0                                 1240500200010 
-ENDSUBENT            9          0                                 1240500299999 
-SUBENT        12405003   19820519                             00001240500300001 
-BIB                  2          2                                 1240500300002 
-REACTION   (94-PU-239(N,F),,RI)                                   1240500300003 
-DETECTOR   (FISCH) FISSION CHAMBER.                               1240500300004 
-ENDBIB               2          0                                 1240500300005 
-NOCOMMON             0          0                                 1240500300006 
-DATA                 3          1                                 1240500300007 
-EN-MIN     DATA       DATA-ERR                                    1240500300008 
-MEV        B          B                                           1240500300009 
- 5.     -07 3.27   +02 2.2    +01                                 1240500300010 
-ENDDATA              3          0                                 1240500300011 
-ENDSUBENT           10          0                                 1240500399999 
-SUBENT        12405004   19820519                             00001240500400001 
-BIB                  2          2                                 1240500400002 
-REACTION   (94-PU-241(N,F),,RI)                                   1240500400003 
-DETECTOR   (FISCH) FISSION CHAMBER.                               1240500400004 
-ENDBIB               2          0                                 1240500400005 
-NOCOMMON             0          0                                 1240500400006 
-DATA                 3          1                                 1240500400007 
-EN-MIN     DATA       DATA-ERR                                    1240500400008 
-EV         B          B                                           1240500400009 
- 5.     -01 5.57   +02 3.3    +01                                 1240500400010 
-ENDDATA              3          0                                 1240500400011 
-ENDSUBENT           10          0                                 1240500499999 
+ENTRY            12405   20181102                             144412405  0    1 
+SUBENT        12405001   20181102                             144412405  1    1 
+BIB                 11         15                                 12405  1    2 
+INSTITUTE  (1USABET)                                              12405  1    3 
+REFERENCE  (J,NSE,9,341,1961)                                     12405  1    4 
+AUTHOR     (J.Hardy Jr,D.Klein,G.G.Smith)                         12405  1    5 
+TITLE      The resonance fission integral of U235, Pu239, and     12405  1    6 
+           Pu241.                                                 12405  1    7 
+FACILITY   (REAC,1USABET)                                         12405  1    8 
+INC-SOURCE (REAC) U-H20 reactor, TRX                              12405  1    9 
+MONITOR    (79-AU-197(N,G)79-AU-198,,RI)                          12405  1   10 
+METHOD     Cadmium ratio                                          12405  1   11 
+DETECTOR   (NAICR,GEMUC)                                          12405  1   12 
+STATUS     (TABLE) Table IV, Nucl.Sci.Eng.9,341(1961)             12405  1   13 
+HISTORY    (19760804T) Translated from SCISRS                     12405  1   14 
+           (19820519A) Converted to reaction formalism            12405  1   15 
+           (20181101U) OS. Several BIB additions, converted to    12405  1   16 
+            lower and upper case                                  12405  1   17 
+ENDBIB              15          0                                 12405  1   18 
+COMMON               2          3                                 12405  1   19 
+EN-MIN     MONIT                                                  12405  1   20 
+EV         B                                                      12405  1   21 
+ 0.50        1535.                                                12405  1   22 
+ENDCOMMON            3          0                                 12405  1   23 
+ENDSUBENT           22          0                                 12405  199999 
+SUBENT        12405002   20181102                             144412405  2    1 
+BIB                  3          4                                 12405  2    2 
+REACTION   (92-U-235(N,F),,RI)                                    12405  2    3 
+SAMPLE     U-Al alloy, enriched to >10% in U-235                  12405  2    4 
+ERR-ANALYS (DATA-ERR) Total uncertainty                           12405  2    5 
+           (ERR-S) Statistical error                              12405  2    6 
+ENDBIB               4          0                                 12405  2    7 
+NOCOMMON             0          0                                 12405  2    8 
+DATA                 3          1                                 12405  2    9 
+DATA       DATA-ERR   ERR-S                                       12405  2   10 
+B          B          PER-CENT                                    12405  2   11 
+ 274.        11.        2.3                                       12405  2   12 
+ENDDATA              3          0                                 12405  2   13 
+ENDSUBENT           12          0                                 12405  299999 
+SUBENT        12405003   20181102                             144412405  3    1 
+BIB                  4          9                                 12405  3    2 
+REACTION   (94-PU-239(N,F),,RI)                                   12405  3    3 
+SAMPLE     1 mg/cm2 deposist on 0.0010-in. thick high-purity Ni   12405  3    4 
+           foil, circular, 0.387 in. diameter                     12405  3    5 
+           (94-PU-239,ENR=0.9936)                                 12405  3    6 
+           (94-PU-240,ENR=0.006)                                  12405  3    7 
+           (94-PU-241,ENR=0.001)                                  12405  3    8 
+ERR-ANALYS (DATA-ERR) Total uncertainty                           12405  3    9 
+           (ERR-S) Statistical error                              12405  3   10 
+DETECTOR   (FISCH) Fission chamber.                               12405  3   11 
+ENDBIB               9          0                                 12405  3   12 
+NOCOMMON             0          0                                 12405  3   13 
+DATA                 3          1                                 12405  3   14 
+DATA       DATA-ERR   ERR-S                                       12405  3   15 
+B          B          PER-CENT                                    12405  3   16 
+ 3.27   +02 2.2    +01  4.9                                       12405  3   17 
+ENDDATA              3          0                                 12405  3   18 
+ENDSUBENT           17          0                                 12405  399999 
+SUBENT        12405004   20181102                             144412405  4    1 
+BIB                  4         10                                 12405  4    2 
+REACTION   (94-PU-241(N,F),,RI)                                   12405  4    3 
+SAMPLE     1 mg/cm2 deposist on 0.0010-in. thick high-purity Ni   12405  4    4 
+           foil, circular, 0.387 in. diameter                     12405  4    5 
+           (94-PU-239,ENR=0.0902)                                 12405  4    6 
+           (94-PU-240,ENR=0.3101)                                 12405  4    7 
+           (94-PU-241,ENR=0.5796)                                 12405  4    8 
+           (94-PU-242,ENR=0.0201)                                 12405  4    9 
+ERR-ANALYS (DATA-ERR) Total uncertainty                           12405  4   10 
+           (ERR-S) Statistical error                              12405  4   11 
+DETECTOR   (FISCH) Fission chamber.                               12405  4   12 
+ENDBIB              10          0                                 12405  4   13 
+NOCOMMON             0          0                                 12405  4   14 
+DATA                 3          1                                 12405  4   15 
+DATA       DATA-ERR   ERR-S                                       12405  4   16 
+B          B          PER-CENT                                    12405  4   17 
+ 5.57   +02 3.3    +01   4.2                                      12405  4   18 
+ENDDATA              3          0                                 12405  4   19 
+ENDSUBENT           18          0                                 12405  499999 
 ENDENTRY             4          0                                 1240599999999 
