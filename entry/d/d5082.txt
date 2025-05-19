@@ -1,9 +1,9 @@
-ENTRY            D5082   20110822                             D079D508200000001 
-SUBENT        D5082001   20110822                             D079D508200100001 
-BIB                 14         46                                 D508200100002 
+ENTRY            D5082   20220905                             D137D508200000001 
+SUBENT        D5082001   20220905                             D137D508200100001 
+BIB                 14         47                                 D508200100002 
 TITLE      Experimental determination of the natPb(d,f),          D508200100003 
-            209Bi(d,f), 209Bi(d,xnyp) nuclear reactions cross     D508200100004 
-            section at 1.6 GeV and 4 GeV deuteron beams           D508200100005 
+           209Bi(d,f), 209Bi(d,xnyp) nuclear reactions cross      D508200100004 
+           section at 1.6 GeV and 4 GeV deuteron beams            D508200100005 
 AUTHOR     (V.V.Sotnikov, V.A.Voronko, P.A.Martynenko,            D508200100006 
             Ju.T.Petrusenko, I.V.Zhuk, A.S.Patapenka,             D508200100007 
             A.A.Safronova, S.V.Korneev, A.M.Khilmanovich,         D508200100008 
@@ -22,8 +22,8 @@ SAMPLE     The targets consisted of two Al monitor foils and two  D508200100015
 METHOD     (STTA) Irradiated for about 18 hours                   D508200100021 
 DETECTOR   (SOLST) Artificial mica was used as solid-state track  D508200100022 
             detector for fission fragment registration.           D508200100023 
-           (HPGE) CANBERRA (model GR1819-7600SL). The 60Co 1332   D508200100024 
-             keV gamma-line energy resolution was 1.8 keV.        D508200100025 
+           (HPGE) CANBERRA (model GR1819-7600SL). The 60Co        D508200100024 
+           1332 keV gamma-line energy resolution was 1.8 keV.     D508200100025 
 MONITOR    (13-AL-27(D,P+A)11-NA-24,,SIG)                         D508200100026 
             monitor of integral beam intensity on target          D508200100027 
 MONIT-REF  (B0013003,J.Banaigs+,J,NIM,95,307,1971) 27Al(d,x)24Na  D508200100028 
@@ -43,13 +43,18 @@ ERR-ANALYS (ERR-T) Total uncertainty including                    D508200100040
             - uncertainty of calibration factor determination     D508200100042 
             - accuracy of the total number of primary deuterons   D508200100043 
             The main contribution to the total error is from      D508200100044 
-             uncertainties in the cross sections of the monitor   D508200100045 
-             reaction (7 %) in the detection efficiency (5 %).    D508200100046 
+           (MONIT-ERR) Cross sections of the monitor reaction 7%  D508200100045 
+           (ERR-1) Detection efficiency  5%.                      D508200100046 
 HISTORY    (20110701C) UKRNDC                                     D508200100047 
            (20110822U) On. COMMENT added                          D508200100048 
-ENDBIB              46          0                                 D508200100049 
-NOCOMMON             0          0                                 D508200100050 
-ENDSUBENT           49          0                                 D508200199999 
+           (20220905A) VT. Revision in 019 and ERR-ANALYS updated D508200100049 
+ENDBIB              47          0                                 D508200100050 
+COMMON               2          3                                 D508200100051 
+MONIT-ERR  ERR-1                                                  D508200100052 
+PER-CENT   PER-CENT                                               D508200100053 
+         7.         5.                                            D508200100054 
+ENDCOMMON            3          0                                 D508200100055 
+ENDSUBENT           54          0                                 D508200199999 
 SUBENT        D5082002   20110822                             D079D508200200001 
 BIB                  3          3                                 D508200200002 
 REACTION   (83-BI-209(D,F),,SIG)                                  D508200200003 
@@ -334,25 +339,27 @@ GEV        MB         MB                                          D508201800019
  1.6        12.        2.                                         D508201800020 
 ENDDATA              3          0                                 D508201800021 
 ENDSUBENT           20          0                                 D508201899999 
-SUBENT        D5082019   20110822                             D079D508201900001 
-BIB                  5         11                                 D508201900002 
-REACTION   (83-BI-209(D,X)83-BI-200-M,CUM,SIG)                    D508201900003 
-DECAY-DATA (83-BI-200-M,31.MIN,DG,245.2,0.049,                    D508201900004 
-                               DG,419.8,0.23,                     D508201900005 
-                               DG,462.3,0.40,                     D508201900006 
-                               DG,1026.,0.96)                     D508201900007 
+SUBENT        D5082019   20220905                             D137D508201900001 
+BIB                  5         13                                 D508201900002 
+REACTION   (83-BI-209(D,X)83-BI-200-M1,CUM,SIG)                   D508201900003 
+DECAY-DATA (83-BI-200-M1,31.MIN,DG,245.2,0.049,                   D508201900004 
+                                DG,419.8,0.23,                    D508201900005 
+                                DG,462.3,0.40,                    D508201900006 
+                                DG,1026.,0.96)                    D508201900007 
 COMMENT    By V.V.Sotnikov (2011-08-22):                          D508201900008 
             Relation between measured counts in peaks in the      D508201900009 
             spectra and the intensities of corresponding gamma    D508201900010 
             lines were analyzed for the two states of 200Bi.      D508201900011 
 STATUS     (TABLE) Provided by authors (unpublished)              D508201900012 
 HISTORY    (20110822A) On. REACTION and DATA changed              D508201900013 
-ENDBIB              11          0                                 D508201900014 
-NOCOMMON             0          0                                 D508201900015 
-DATA                 2          1                                 D508201900016 
-EN         DATA-MAX                                               D508201900017 
-GEV        MB                                                     D508201900018 
- 1.6        2.                                                    D508201900019 
-ENDDATA              3          0                                 D508201900020 
-ENDSUBENT           19          0                                 D508201999999 
+           (20220905A) VT. REACTION: SF4:M->M1, DEACY-DATA: M->M1 D508201900014 
+           replaced.                                              D508201900015 
+ENDBIB              13          0                                 D508201900016 
+NOCOMMON             0          0                                 D508201900017 
+DATA                 2          1                                 D508201900018 
+EN         DATA-MAX                                               D508201900019 
+GEV        MB                                                     D508201900020 
+ 1.6        2.                                                    D508201900021 
+ENDDATA              3          0                                 D508201900022 
+ENDSUBENT           21          0                                 D508201999999 
 ENDENTRY            19          0                                 D508299999999 
