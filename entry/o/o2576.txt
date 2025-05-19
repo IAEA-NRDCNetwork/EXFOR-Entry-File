@@ -1,0 +1,181 @@
+ENTRY            O2576   20230614                             O097O2576000    1 
+SUBENT        O2576001   20230614                             O097O2576001    1 
+BIB                 14         30                                 O2576001    2 
+TITLE      Production yields at the distal fall-off of the beta+  O2576001    3 
+            emitters 11C and 13N for in-Vivo range verification   O2576001    4 
+            in proton therapy                                     O2576001    5 
+AUTHOR     (T.Rodriguez-Gonzalez, C.Guerrero,                     O2576001    6 
+            M.D.C.Jimenez-Ramos, J.Lerendegui-Marco,              O2576001    7 
+            M.D.L.A.Millan-Callado, A.Parrado, J.Gomez,           O2576001    8 
+            J.M.Quesada)                                          O2576001    9 
+INSTITUTE  (2SPNSEU)                                              O2576001   10 
+REFERENCE  (J,RPC,190,109759,2022)                                O2576001   11 
+           #doi:10.1016/j.radphyschem.2021.109759                 O2576001   12 
+FACILITY   (CYCLO,2SPNSEU)                                        O2576001   13 
+INC-SPECT  Incident beam energy of 16.7 MeV. The beam energy      O2576001   14 
+           degradation along the target assembly have been        O2576001   15 
+           calculated  via SRIM-2008 and Geant4 simulations.      O2576001   16 
+DETECTOR   (SCIN) PET scanner Siemens Biograph mCT for the        O2576001   17 
+           studied reaction measurements and LaBr3 detector       O2576001   18 
+           monito reaction measurements                           O2576001   19 
+METHOD     (STTA,BCINT,ACTIV,EDEG)                                O2576001   20 
+MONITOR    (29-CU-63(P,N)30-ZN-63,,SIG)                           O2576001   21 
+DECAY-MON  (30-ZN-63,38.47MIN,AR,,1.856)                          O2576001   22 
+MONIT-REF  (,A.Hermanne+,J,NDS,148,338,2018)                      O2576001   23 
+ANALYSIS   (DECAY)                                                O2576001   24 
+ERR-ANALYS (ERR-T) The uncertainty of the measured cross          O2576001   25 
+           sections have contributions from the uncertainty of:   O2576001   26 
+            - subtraction of the competing reactions              O2576001   27 
+            - fitting of the counting rate as a function of time  O2576001   28 
+           (ERR-1) PET scanner efficiency  - 2%                   O2576001   29 
+           (ERR-2) foil thickness          - 1%                   O2576001   30 
+           (ERR-3) current integrator      - 5%                   O2576001   31 
+HISTORY    (20230614C) VS                                         O2576001   32 
+ENDBIB              30          0                                 O2576001   33 
+COMMON               3          3                                 O2576001   34 
+ERR-1      ERR-2      ERR-3                                       O2576001   35 
+PER-CENT   PER-CENT   PER-CENT                                    O2576001   36 
+         2.         1.         5.                                 O2576001   37 
+ENDCOMMON            3          0                                 O2576001   38 
+ENDSUBENT           37          0                                 O257600199999 
+SUBENT        O2576002   20230614                             O097O2576002    1 
+BIB                  5          7                                 O2576002    2 
+REACTION   (7-N-14(P,A)6-C-11,,SIG)                               O2576002    3 
+STATUS     (TABLE) Table 4 of Radiat.Phys.Chem.190(2022)109759    O2576002    4 
+DECAY-DATA (6-C-11,20.36MIN,B+,,0.99750)                          O2576002    5 
+RAD-DET    (6-C-11,AR)                                            O2576002    6 
+SAMPLE     Material: Nylon-6; composition: C6H11NO,               O2576002    7 
+           density:1.13 g/cm3; foil thickness: 0.183+-5 mm;       O2576002    8 
+           number of foils in the stack 14.                       O2576002    9 
+ENDBIB               7          0                                 O2576002   10 
+NOCOMMON             0          0                                 O2576002   11 
+DATA                 6         14                                 O2576002   12 
+EN         EN-RSL-FW  EN-MIN     EN-MAX     DATA       ERR-T      O2576002   13 
+MEV        MEV        MEV        MEV        MB         MB         O2576002   14 
+       16.4        0.3                              70.         5.O2576002   15 
+       15.8        0.3                              81.         7.O2576002   16 
+       15.1        0.3                              96.         8.O2576002   17 
+       14.4        0.3                              99.         9.O2576002   18 
+       13.7        0.4                             123.         9.O2576002   19 
+       13.0        0.4                             108.         8.O2576002   20 
+       12.2        0.4                             102.         8.O2576002   21 
+       11.3        0.4                              96.         7.O2576002   22 
+       10.5        0.5                             117.         9.O2576002   23 
+        9.5        0.5                              86.         7.O2576002   24 
+        8.5        0.5                              84.         7.O2576002   25 
+        7.3        0.6                             175.        14.O2576002   26 
+        6.0        0.7                             103.         8.O2576002   27 
+        4.3                   0.9        1.0       14.4        1.3O2576002   28 
+ENDDATA             16          0                                 O2576002   29 
+ENDSUBENT           28          0                                 O257600299999 
+SUBENT        O2576003   20230615                             O097O2576003    1 
+BIB                  6         10                                 O2576003    2 
+REACTION   (8-O-16(P,X)6-C-11,,SIG)                               O2576003    3 
+SAMPLE     Material: PIMA; composition: C5O2H5;                   O2576003    4 
+           density: 1.13 g/cm3; number of foils in the stack: 14; O2576003    5 
+           thickness of a foil 0.183+-0.005.                      O2576003    6 
+DECAY-DATA (6-C-11,20.36MIN,B+,,0.99750)                          O2576003    7 
+RAD-DET    (6-C-11,AR)                                            O2576003    8 
+COMMENT    By compiler: For target 16O, projectile p and product  O2576003    9 
+           11C there is no possible reaction with a threshold     O2576003   10 
+           below 25.2 MeV.                                        O2576003   11 
+STATUS     (TABLE) Table 5 of Radiat.Phys.Chem.190(2022)109759    O2576003   12 
+ENDBIB              10          0                                 O2576003   13 
+NOCOMMON             0          0                                 O2576003   14 
+DATA                 4         13                                 O2576003   15 
+EN         EN-RSL-FW  DATA       ERR-T                            O2576003   16 
+MEV        MEV        MB         MB                               O2576003   17 
+       15.8        0.3       0.54       0.13                      O2576003   18 
+       15.2        0.3       0.52       0.15                      O2576003   19 
+       14.5        0.3       0.73       0.16                      O2576003   20 
+       13.8        0.4        0.3        0.6                      O2576003   21 
+       13.1        0.4       0.67       0.22                      O2576003   22 
+       12.3        0.4        0.6        0.3                      O2576003   23 
+       11.5        0.4       0.88       0.23                      O2576003   24 
+       10.7        0.4        1.5        0.3                      O2576003   25 
+        9.8        0.5       1.54       0.22                      O2576003   26 
+        8.8        0.5       1.46       0.20                      O2576003   27 
+        7.7        0.6        1.9        0.3                      O2576003   28 
+        6.5        0.7       1.85       0.20                      O2576003   29 
+        5.0        0.8       1.88       0.21                      O2576003   30 
+ENDDATA             15          0                                 O2576003   31 
+ENDSUBENT           30          0                                 O257600399999 
+SUBENT        O2576004   20230615                             O097O2576004    1 
+BIB                  5          7                                 O2576004    2 
+REACTION   (8-O-16(P,A)7-N-13,,SIG)                               O2576004    3 
+SAMPLE     Material: PIMA; composition: C5O2H5;                   O2576004    4 
+           density: 1.13 g/cm3; number of foils in the stack: 14; O2576004    5 
+           thickness of a foil 0.183+-0.005.                      O2576004    6 
+DECAY-DATA (7-N-13,9.97MIN,B+,,0.99818)                           O2576004    7 
+RAD-DET    (7-N-13,AR)                                            O2576004    8 
+STATUS     (TABLE) Table 5 of Radiat.Phys.Chem.190(2022)109759    O2576004    9 
+ENDBIB               7          0                                 O2576004   10 
+NOCOMMON             0          0                                 O2576004   11 
+DATA                 4         13                                 O2576004   12 
+EN         EN-RSL-FW  DATA       ERR-T                            O2576004   13 
+MEV        MEV        MB         MB                               O2576004   14 
+       16.4        0.3        9.8        0.8                      O2576004   15 
+       15.8        0.3       19.3        1.5                      O2576004   16 
+       15.2        0.3        34.         3.                      O2576004   17 
+       14.5        0.3        42.         3.                      O2576004   18 
+       13.8        0.4        48.         4.                      O2576004   19 
+       13.1        0.4       27.9        2.2                      O2576004   20 
+       12.3        0.4        35.         3.                      O2576004   21 
+       11.5        0.4        40.         3.                      O2576004   22 
+       10.7        0.4        59.         5.                      O2576004   23 
+        9.8        0.5       24.3        1.9                      O2576004   24 
+        8.8        0.5       13.0        1.0                      O2576004   25 
+        7.7        0.6        36.         3.                      O2576004   26 
+        6.5        0.7       0.63       0.07                      O2576004   27 
+ENDDATA             15          0                                 O2576004   28 
+ENDSUBENT           27          0                                 O257600499999 
+SUBENT        O2576005   20230615                             O097O2576005    1 
+BIB                  6         10                                 O2576005    2 
+REACTION   (6-C-12(P,D)6-C-11,,SIG)                               O2576005    3 
+SAMPLE     Material: PE; composition: C4H4;                       O2576005    4 
+           density: 0.96 g/cm3; number of foils in the stack: 15; O2576005    5 
+           thickness of a foil 0.198+-0.002.                      O2576005    6 
+DECAY-DATA (6-C-11,20.36MIN,B+,,0.99750)                          O2576005    7 
+RAD-DET    (6-C-11,AR)                                            O2576005    8 
+COMMENT    By compiler: The threshold of the reported reaction is O2576005    9 
+           17.893757 MeV. Possible reaction on natC is 3C(p,t)11C O2576005   10 
+           with a threshold of 16.371677 MeV.                     O2576005   11 
+STATUS     (TABLE) Table 6 of Radiat.Phys.Chem.190(2022)109759    O2576005   12 
+ENDBIB              10          0                                 O2576005   13 
+NOCOMMON             0          0                                 O2576005   14 
+DATA                 4          1                                 O2576005   15 
+EN         EN-RSL-HW  DATA       ERR-T                            O2576005   16 
+MEV        MEV        MB         MB                               O2576005   17 
+       16.4        0.3       0.29        0.3                      O2576005   18 
+ENDDATA              3          0                                 O2576005   19 
+ENDSUBENT           18          0                                 O257600599999 
+SUBENT        O2576006   20230615                             O097O2576006    1 
+BIB                  5          7                                 O2576006    2 
+REACTION   (6-C-12(P,G)7-N-13,,SIG)                               O2576006    3 
+SAMPLE     Material: PE; composition: C4H4;                       O2576006    4 
+           density: 0.96 g/cm3; number of foils in the stack: 15; O2576006    5 
+           thickness of a foil 0.198+-0.002.                      O2576006    6 
+DECAY-DATA (7-N-13,9.97MIN,B+,,0.99818)                           O2576006    7 
+RAD-DET    (7-N-13,AR)                                            O2576006    8 
+STATUS     (TABLE) Table 6 of Radiat.Phys.Chem.190(2022)109759    O2576006    9 
+ENDBIB               7          0                                 O2576006   10 
+NOCOMMON             0          0                                 O2576006   11 
+DATA                 4         13                                 O2576006   12 
+EN         EN-RSL-FW  DATA       ERR-T                            O2576006   13 
+MEV        MEV        MB         MB                               O2576006   14 
+       16.4        0.3        9.8        0.8                      O2576006   15 
+       15.8        0.3       19.3        1.5                      O2576006   16 
+       15.2        0.3        34.         3.                      O2576006   17 
+       14.5        0.3        42.         3.                      O2576006   18 
+       13.8        0.4        48.         4.                      O2576006   19 
+       13.1        0.4       27.9        2.2                      O2576006   20 
+       12.3        0.4        35.         3.                      O2576006   21 
+       11.5        0.4        40.         3.                      O2576006   22 
+       10.7        0.4        59.         5.                      O2576006   23 
+        9.8        0.5       24.3        1.9                      O2576006   24 
+        8.8        0.5       13.0        1.0                      O2576006   25 
+        7.7        0.6        36.         3.                      O2576006   26 
+        6.5        0.7       0.63       0.07                      O2576006   27 
+ENDDATA             15          0                                 O2576006   28 
+ENDSUBENT           27          0                                 O257600699999 
+ENDENTRY             6          0                                 O257699999999 

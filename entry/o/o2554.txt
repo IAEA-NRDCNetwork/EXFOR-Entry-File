@@ -1,0 +1,1253 @@
+ENTRY            O2554   20230305                             O097O2554000    1 
+SUBENT        O2554001   20230305                             O097O2554001    1 
+BIB                 10         28                                 O2554001    2 
+TITLE      Cross section measurement of terbium radioisotopes     O2554001    3 
+            for an optimized 155Tb production with an 18 MeV      O2554001    4 
+            medical PET cyclotron                                 O2554001    5 
+AUTHOR     (G.Dellepiane, P.Casolaro, C.Favaretto,                O2554001    6 
+            PascalV.Grundler, I.Mateu, P.Scampoli, Z.Talip,       O2554001    7 
+            NicholasP.Van Der Meulen, S.Braccini)                 O2554001    8 
+INSTITUTE  (2SWTUBE,2SWTPSI,2SWTETH,2ITYNAP)                      O2554001    9 
+REFERENCE  (J,ARI,184,110175,2022)                                O2554001   10 
+           #doi:10.1016/j.apradiso.2022.110175                    O2554001   11 
+FACILITY   (CYCLO,2SWTUBE) IBA Cyclone 18/18 HC providing proton  O2554001   12 
+           beams with a nominal energy of 18 MeV and beam currentsO2554001   13 
+           from a few pA to 150 uA                                O2554001   14 
+METHOD     (EDEG) The beam energy was degraded by means of        O2554001   15 
+           aluminium attenuator discs.                            O2554001   16 
+           (GSPEC)                                                O2554001   17 
+           (ACTIV)                                                O2554001   18 
+           (BCINT)                                                O2554001   19 
+DETECTOR   (HPGE)                                                 O2554001   20 
+COMMENT    By author: Results presented as 155Gd(p,x) and         O2554001   21 
+           156Gd(p,x) refers to data deternined for samples       O2554001   22 
+           enriched on 155Gd and 156Gd.                           O2554001   23 
+ERR-ANALYS (ERR-T) The following uncertainties contribute to the  O2554001   24 
+                   reported cross-section uncertainty:            O2554001   25 
+           (ERR-1) Uncertainty on the flatness of the beam      5%O2554001   26 
+           (ERR-2) Uncertainty on the beam current integration  1%O2554001   27 
+           (ERR-3) Uncertainty on the HPGe detector efficiency  3%O2554001   28 
+           (ERR-4,,3.) Uncertainty on the target mass             O2554001   29 
+HISTORY    (20230305C) VS                                         O2554001   30 
+ENDBIB              28          0                                 O2554001   31 
+COMMON               4          3                                 O2554001   32 
+ERR-1      ERR-2      ERR-3      EN-ERR                           O2554001   33 
+PER-CENT   PER-CENT   PER-CENT   MEV                              O2554001   34 
+         5.         1.         3.        0.4                      O2554001   35 
+ENDCOMMON            3          0                                 O2554001   36 
+ENDSUBENT           35          0                                 O255400199999 
+SUBENT        O2554002   20230305                             O097O2554002    1 
+BIB                  4          5                                 O2554002    2 
+REACTION   (64-GD-0(P,X)65-TB-153,,SIG)                           O2554002    3 
+DECAY-DATA (65-TB-153,2.34D,DG,212.00,0.285)                      O2554002    4 
+SAMPLE     Gadolinium oxide target with natural isotopic          O2554002    5 
+           composition.                                           O2554002    6 
+STATUS     (TABLE) Table 8 of Appl.Radiat.Isot.184(2022)110175    O2554002    7 
+ENDBIB               5          0                                 O2554002    8 
+NOCOMMON             0          0                                 O2554002    9 
+DATA                 3          8                                 O2554002   10 
+EN         DATA       ERR-T                                       O2554002   11 
+MEV        MB         MB                                          O2554002   12 
+       12.1        1.4        0.2                                 O2554002   13 
+       12.5        2.9        0.3                                 O2554002   14 
+       13.0        7.0        0.8                                 O2554002   15 
+       14.5       10.9        1.0                                 O2554002   16 
+       15.5       13.8        1.0                                 O2554002   17 
+       15.8       13.1        1.3                                 O2554002   18 
+       17.1       19.0        1.8                                 O2554002   19 
+       18.2       24.6        1.5                                 O2554002   20 
+ENDDATA             10          0                                 O2554002   21 
+ENDSUBENT           20          0                                 O255400299999 
+SUBENT        O2554003   20230310                             O097O2554003    1 
+BIB                  5         22                                 O2554003    2 
+REACTION  1(64-GD-154(P,2N)65-TB-153,,SIG,,FCT)                   O2554003    3 
+            FCT=target abundance in the sample                    O2554003    4 
+          2((64-GD-154(P,2N)65-TB-153,,SIG,,FCT)+                 O2554003    5 
+           (64-GD-155(P,3N)65-TB-153,,SIG,,FCT))                  O2554003    6 
+            FCT=target abundance in the sample                    O2554003    7 
+DECAY-DATA (65-TB-153,2.34D,DG,212.00,0.285)                      O2554003    8 
+SAMPLE     Gadolinium oxide powder enriched in 155Gd with the     O2554003    9 
+           following isotopic composition:                        O2554003   10 
+           Isotope:    152Gd   154Gd   155Gd      156Gd    157Gd  O2554003   11 
+           Abundance: <0.0002  0.005  0.9190(30)  0.0587   0.0081 O2554003   12 
+           Isotope:     158Gd    160Gd                            O2554003   13 
+           Abundance:   0.0065   0.0027                           O2554003   14 
+           (64-GD-154,ENR=0.005)                                  O2554003   15 
+           (64-GD-155,ENR=0.9190)                                 O2554003   16 
+COMMENT    By compiler: Results reported as 155Gd(p,x)153Tb       O2554003   17 
+           compiled as sum of contributing reactions considering  O2554003   18 
+           the reaction thresholds:                               O2554003   19 
+           153Tb production: Reaction; E threshold                O2554003   20 
+                             154Gd+p;  11.3 MeV                   O2554003   21 
+                             155Gd+p;  17.8 MeV                   O2554003   22 
+STATUS     (TABLE) Table 8 of Appl.Radiat.Isot.184(2022)110175    O2554003   23 
+           (COREL,O2554004) Measured with target enriched to 156GdO2554003   24 
+ENDBIB              22          0                                 O2554003   25 
+NOCOMMON             0          0                                 O2554003   26 
+DATA                 5          8                                 O2554003   27 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2           O2554003   28 
+MEV        MB         MB         MB         MB                    O2554003   29 
+       11.9        0.8        0.2                                 O2554003   30 
+       12.1        1.0        0.3                                 O2554003   31 
+       13.0        2.2        0.4                                 O2554003   32 
+       14.5        2.7        0.7                                 O2554003   33 
+       15.5        3.1        0.3                                 O2554003   34 
+       15.8        3.3        0.7                                 O2554003   35 
+       17.1         5.         1.                                 O2554003   36 
+       18.2                              5.5        0.6           O2554003   37 
+ENDDATA             10          0                                 O2554003   38 
+ENDSUBENT           37          0                                 O255400399999 
+SUBENT        O2554004   20230311                             O097O2554004    1 
+BIB                  5         22                                 O2554004    2 
+REACTION  1(64-GD-154(P,2N)65-TB-153,,SIG,,FCT)                   O2554004    3 
+            FCT=target abundance in the sample                    O2554004    4 
+          2((64-GD-154(P,2N)65-TB-153,,SIG,,FCT)+                 O2554004    5 
+           (64-GD-155(P,3N)65-TB-153,,SIG,,FCT))                  O2554004    6 
+            FCT=target abundance in the sample                    O2554004    7 
+DECAY-DATA (65-TB-153,2.34D,DG,212.00,0.285)                      O2554004    8 
+SAMPLE     Gadolinium oxide powder enriched in 156Gd with the     O2554004    9 
+           following isotopic composition:                        O2554004   10 
+           Isotope:    152Gd   154Gd   155Gd    156Gd       157Gd O2554004   11 
+           Abundance: <0.0001  0.0005  0.0087  0.9330(10)  0.00438O2554004   12 
+           Isotope:     158Gd     160Gd                           O2554004   13 
+           Abundance:   0.0108   0.0032                           O2554004   14 
+           (64-GD-154,ENR=0.0005)                                 O2554004   15 
+           (64-GD-155,ENR=0.0087)                                 O2554004   16 
+COMMENT    By compiler: Results reported as 156Gd(p,x)153Tb       O2554004   17 
+           compiled as sum of contributing reactions considering  O2554004   18 
+           the reaction thresholds:                               O2554004   19 
+           153Tb production: Reaction; E threshold                O2554004   20 
+                             154Gd+p;  11.3 MeV                   O2554004   21 
+                             155Gd+p;  17.8 MeV                   O2554004   22 
+STATUS     (TABLE) Table 8 of Appl.Radiat.Isot.184(2022)110175    O2554004   23 
+           (COREL,O2554003) Measured with target enriched to 155GdO2554004   24 
+ENDBIB              22          0                                 O2554004   25 
+NOCOMMON             0          0                                 O2554004   26 
+DATA                 5          9                                 O2554004   27 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2           O2554004   28 
+MEV        MB         MB         MB         MB                    O2554004   29 
+       11.9       0.12       0.05                                 O2554004   30 
+       12.5       0.22       0.05                                 O2554004   31 
+       13.0       0.36       0.08                                 O2554004   32 
+       13.8       0.39       0.04                                 O2554004   33 
+       14.5       0.44       0.09                                 O2554004   34 
+       15.8       0.49       0.08                                 O2554004   35 
+       17.1        0.5        0.2                                 O2554004   36 
+       17.5        0.7        0.2                                 O2554004   37 
+       18.2                              1.0        0.2           O2554004   38 
+ENDDATA             11          0                                 O2554004   39 
+ENDSUBENT           38          0                                 O255400499999 
+SUBENT        O2554005   20230311                             O097O2554005    1 
+BIB                  6         10                                 O2554005    2 
+REACTION   (64-GD-0(P,X)65-TB-154-G,,SIG)                         O2554005    3 
+DECAY-DATA (65-TB-154-G,21.5HR,DG,1291.31,0.069)                  O2554005    4 
+SAMPLE     Gadolinium oxide target with natural isotopic          O2554005    5 
+           composition.                                           O2554005    6 
+ANALYSIS   (DECAY) It was established that the contributions of   O2554005    7 
+           the m1 and m2 states to the 154Tb ground state of      O2554005    8 
+           activity are negligible.                               O2554005    9 
+COMMENT    The 154Tb ground state production cross section        O2554005   10 
+           reported as 154Tb production cross section.            O2554005   11 
+STATUS     (TABLE) Table 9 of Appl.Radiat.Isot.184(2022)110175    O2554005   12 
+ENDBIB              10          0                                 O2554005   13 
+NOCOMMON             0          0                                 O2554005   14 
+DATA                 3          9                                 O2554005   15 
+EN         DATA       ERR-T                                       O2554005   16 
+MEV        MB         MB                                          O2554005   17 
+       11.5         6.         1.                                 O2554005   18 
+       12.1         9.         1.                                 O2554005   19 
+       12.5        16.         2.                                 O2554005   20 
+       13.0        22.         4.                                 O2554005   21 
+       14.5        31.         5.                                 O2554005   22 
+       15.5        31.         2.                                 O2554005   23 
+       15.8        30.         4.                                 O2554005   24 
+       17.1        40.         4.                                 O2554005   25 
+       18.2        46.         5.                                 O2554005   26 
+ENDDATA             11          0                                 O2554005   27 
+ENDSUBENT           26          0                                 O255400599999 
+SUBENT        O2554006   20230311                             O097O2554006    1 
+BIB                  6         27                                 O2554006    2 
+REACTION  1(64-GD-154(P,N)65-TB-154-G,,SIG,,FCT)                  O2554006    3 
+            FCT=target abundance in the sample                    O2554006    4 
+          2((64-GD-154(P,N)65-TB-154-G,,SIG,,FCT)+                O2554006    5 
+           (64-GD-155(P,2N)65-TB-154-G,,SIG,,FCT))                O2554006    6 
+            FCT=target abundance in the sample                    O2554006    7 
+DECAY-DATA (65-TB-154-G,21.5HR,DG,1291.31,0.069)                  O2554006    8 
+SAMPLE     Gadolinium oxide powder enriched in 155Gd with the     O2554006    9 
+           following isotopic composition:                        O2554006   10 
+           Isotope:    152Gd   154Gd   155Gd      156Gd    157Gd  O2554006   11 
+           Abundance: <0.0002  0.005  0.9190(30)  0.0587   0.0081 O2554006   12 
+           Isotope:     158Gd    160Gd                            O2554006   13 
+           Abundance:   0.0065   0.0027                           O2554006   14 
+           (64-GD-154,ENR=0.005)                                  O2554006   15 
+           (64-GD-155,ENR=0.9190)                                 O2554006   16 
+ANALYSIS   (DECAY) It was established that the contributions of   O2554006   17 
+           the m1 and m2 states to the 154Tb ground state of      O2554006   18 
+           activity are negligible.                               O2554006   19 
+COMMENT    By compiler: Results reported as 155Gd(p,x)154Tb       O2554006   20 
+           compiled as sum of contributing reactions considering  O2554006   21 
+           the reaction thresholds:                               O2554006   22 
+           154Tb production: Reaction; E threshold                O2554006   23 
+                             154Gd+p;  4.4 MeV                    O2554006   24 
+                             155Gd+p;  10.8 MeV                   O2554006   25 
+           The 154Tb ground state production cross section        O2554006   26 
+           reported as 154Tb production cross section.            O2554006   27 
+STATUS     (TABLE) Table 9 of Appl.Radiat.Isot.184(2022)110175    O2554006   28 
+           (COREL,O2554007) Measured with target enriched to 156GdO2554006   29 
+ENDBIB              27          0                                 O2554006   30 
+NOCOMMON             0          0                                 O2554006   31 
+DATA                 5         13                                 O2554006   32 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2           O2554006   33 
+MEV        MB         MB         MB         MB                    O2554006   34 
+        7.7        0.2        0.1                                 O2554006   35 
+       10.2        1.0        0.3                                 O2554006   36 
+       10.8                              3.1        0.5           O2554006   37 
+       11.5                              23.         4.           O2554006   38 
+       11.9                              51.         6.           O2554006   39 
+       12.1                              62.         4.           O2554006   40 
+       12.7                              75.        13.           O2554006   41 
+       13.0                              99.        17.           O2554006   42 
+       14.5                             168.        24.           O2554006   43 
+       15.5                             175.        11.           O2554006   44 
+       15.8                             192.        22.           O2554006   45 
+       17.1                             188.        13.           O2554006   46 
+       18.2                             224.        14.           O2554006   47 
+ENDDATA             15          0                                 O2554006   48 
+ENDSUBENT           47          0                                 O255400699999 
+SUBENT        O2554007   20230311                             O097O2554007    1 
+BIB                  6         25                                 O2554007    2 
+REACTION   ((64-GD-154(P,N)65-TB-154-G,,SIG,,FCT)+                O2554007    3 
+           (64-GD-155(P,2N)65-TB-154-G,,SIG,,FCT))                O2554007    4 
+            FCT=target abundance in the sample                    O2554007    5 
+DECAY-DATA (65-TB-154-G,21.5HR,DG,1291.31,0.069)                  O2554007    6 
+SAMPLE     Gadolinium oxide powder enriched in 156Gd with the     O2554007    7 
+           following isotopic composition:                        O2554007    8 
+           Isotope:    152Gd   154Gd   155Gd    156Gd       157Gd O2554007    9 
+           Abundance: <0.0001  0.0005  0.0087  0.9330(10)  0.00438O2554007   10 
+           Isotope:     158Gd     160Gd                           O2554007   11 
+           Abundance:   0.0108   0.0032                           O2554007   12 
+           (64-GD-154,ENR=0.005)                                  O2554007   13 
+           (64-GD-155,ENR=0.9190)                                 O2554007   14 
+ANALYSIS   (DECAY) It was established that the contributions of   O2554007   15 
+           the m1 and m2 states to the 154Tb ground state of      O2554007   16 
+           activity are negligible.                               O2554007   17 
+COMMENT    By compiler: Results reported as 156Gd(p,x)154Tb       O2554007   18 
+           compiled as sum of contributing reactions considering  O2554007   19 
+           the reaction thresholds:                               O2554007   20 
+           154Tb production: Reaction; E threshold                O2554007   21 
+                             154Gd+p;  4.4 MeV                    O2554007   22 
+                             155Gd+p;  10.8 MeV                   O2554007   23 
+           The 154Tb ground state production cross                O2554007   24 
+           section reported as 154Tb production cross section.    O2554007   25 
+STATUS     (TABLE) Table 9 of Appl.Radiat.Isot.184(2022)110175    O2554007   26 
+           (COREL,O2554006) Measured with target enriched to 155GdO2554007   27 
+ENDBIB              25          0                                 O2554007   28 
+NOCOMMON             0          0                                 O2554007   29 
+DATA                 3          6                                 O2554007   30 
+EN         DATA       ERR-T                                       O2554007   31 
+MEV        MB         MB                                          O2554007   32 
+       12.3        0.6        0.2                                 O2554007   33 
+       13.0        1.4        0.4                                 O2554007   34 
+       14.0        1.7        0.2                                 O2554007   35 
+       15.8        2.5        0.5                                 O2554007   36 
+       17.1         3.         1.                                 O2554007   37 
+       18.2        2.7        0.7                                 O2554007   38 
+ENDDATA              8          0                                 O2554007   39 
+ENDSUBENT           38          0                                 O255400799999 
+SUBENT        O2554008   20230311                             O097O2554008    1 
+BIB                  5          6                                 O2554008    2 
+REACTION   (64-GD-0(P,X)65-TB-154-M1,,SIG)                        O2554008    3 
+DECAY-DATA (65-TB-154-M1,9.4HR,DG,540.18,0.20)                    O2554008    4 
+SAMPLE     Gadolinium oxide target with natural isotopic          O2554008    5 
+           composition.                                           O2554008    6 
+ERR-ANALYS (ERR-5) Uncertainty on the gamma-ray branching ratio   O2554008    7 
+STATUS     (TABLE) Table 10 of Appl.Radiat.Isot.184(2022)110175   O2554008    8 
+ENDBIB               6          0                                 O2554008    9 
+COMMON               1          3                                 O2554008   10 
+ERR-5                                                             O2554008   11 
+PER-CENT                                                          O2554008   12 
+        15.                                                       O2554008   13 
+ENDCOMMON            3          0                                 O2554008   14 
+DATA                 3         14                                 O2554008   15 
+EN         DATA       ERR-T                                       O2554008   16 
+MEV        MB         MB                                          O2554008   17 
+        5.8       0.12       0.04                                 O2554008   18 
+        7.1       0.54       0.05                                 O2554008   19 
+        7.7        1.1        0.2                                 O2554008   20 
+        9.0        2.2        0.2                                 O2554008   21 
+        9.7        2.7        0.5                                 O2554008   22 
+       11.5         9.         2.                                 O2554008   23 
+       12.1        17.         1.                                 O2554008   24 
+       12.5        30.         5.                                 O2554008   25 
+       13.0        48.         8.                                 O2554008   26 
+       14.5        56.         9.                                 O2554008   27 
+       15.5        71.         5.                                 O2554008   28 
+       15.8        62.        10.                                 O2554008   29 
+       17.1        89.        15.                                 O2554008   30 
+       18.2       113.         8.                                 O2554008   31 
+ENDDATA             16          0                                 O2554008   32 
+ENDSUBENT           31          0                                 O255400899999 
+SUBENT        O2554009   20230311                             O097O2554009    1 
+BIB                  6         23                                 O2554009    2 
+REACTION  1(64-GD-154(P,N)65-TB-154-M1,,SIG,,FCT)                 O2554009    3 
+            FCT=target abundance in the sample                    O2554009    4 
+          2((64-GD-154(P,N)65-TB-154-M1,,SIG,,FCT)+               O2554009    5 
+           (64-GD-155(P,2N)65-TB-154-M1,,SIG,,FCT))               O2554009    6 
+            FCT=target abundance in the sample                    O2554009    7 
+DECAY-DATA (65-TB-154-M1,9.4HR,DG,540.18,0.20)                    O2554009    8 
+SAMPLE     Gadolinium oxide powder enriched in 155Gd with the     O2554009    9 
+           following isotopic composition:                        O2554009   10 
+           Isotope:    152Gd   154Gd   155Gd      156Gd    157Gd  O2554009   11 
+           Abundance: <0.0002  0.005  0.9190(30)  0.0587   0.0081 O2554009   12 
+           Isotope:     158Gd    160Gd                            O2554009   13 
+           Abundance:   0.0065   0.0027                           O2554009   14 
+           (64-GD-154,ENR=0.005)                                  O2554009   15 
+           (64-GD-155,ENR=0.9190)                                 O2554009   16 
+COMMENT    By compiler: Results reported as 155Gd(p,x)154Tb-M1    O2554009   17 
+           compiled as sum of contributing reactions considering  O2554009   18 
+           the reaction thresholds:                               O2554009   19 
+           154Tb production: Reaction; E threshold                O2554009   20 
+                             154Gd+p;  4.4 MeV                    O2554009   21 
+                             155Gd+p;  10.8 MeV                   O2554009   22 
+ERR-ANALYS (ERR-5) Uncertainty on the gamma-ray branching ratio   O2554009   23 
+STATUS     (TABLE) Table 10 of Appl.Radiat.Isot.184(2022)110175   O2554009   24 
+           (COREL,O2554010) Measured with target enriched to 156GdO2554009   25 
+ENDBIB              23          0                                 O2554009   26 
+COMMON               1          3                                 O2554009   27 
+ERR-5                                                             O2554009   28 
+PER-CENT                                                          O2554009   29 
+        15.                                                       O2554009   30 
+ENDCOMMON            3          0                                 O2554009   31 
+DATA                 5         19                                 O2554009   32 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2           O2554009   33 
+MEV        MB         MB         MB         MB                    O2554009   34 
+        6.2       0.07       0.02                                 O2554009   35 
+        6.8       0.11       0.02                                 O2554009   36 
+        7.7        0.4        0.1                                 O2554009   37 
+        7.9        0.5        0.1                                 O2554009   38 
+        8.7        1.0        0.2                                 O2554009   39 
+        9.7        1.3        0.4                                 O2554009   40 
+       10.0        1.3        0.1                                 O2554009   41 
+       10.2        1.5        0.3                                 O2554009   42 
+       10.8         5.         1.                                 O2554009   43 
+       11.5                              37.         6.           O2554009   44 
+       11.9                              68.        11.           O2554009   45 
+       12.1                              98.         7.           O2554009   46 
+       12.7                             171.        29.           O2554009   47 
+       13.0                             183.        38.           O2554009   48 
+       14.5                             346.        66.           O2554009   49 
+       15.5                             358.        28.           O2554009   50 
+       15.8                             422.        71.           O2554009   51 
+       17.1                             480.        46.           O2554009   52 
+       18.2                             572.        47.           O2554009   53 
+ENDDATA             21          0                                 O2554009   54 
+ENDSUBENT           53          0                                 O255400999999 
+SUBENT        O2554010   20230311                             O097O2554010    1 
+BIB                  6         21                                 O2554010    2 
+REACTION   ((64-GD-154(P,N)65-TB-154-M1,,SIG,,FCT)+               O2554010    3 
+           (64-GD-155(P,2N)65-TB-154-M1,,SIG,,FCT))               O2554010    4 
+            FCT=target abundance in the sample                    O2554010    5 
+DECAY-DATA (65-TB-154-M1,9.4HR,DG,540.18,0.20)                    O2554010    6 
+SAMPLE     Gadolinium oxide powder enriched in 156Gd with the     O2554010    7 
+           following isotopic composition:                        O2554010    8 
+           Isotope:    152Gd   154Gd   155Gd    156Gd       157Gd O2554010    9 
+           Abundance: <0.0001  0.0005  0.0087  0.9330(10)  0.00438O2554010   10 
+           Isotope:     158Gd     160Gd                           O2554010   11 
+           Abundance:   0.0108   0.0032                           O2554010   12 
+           (64-GD-154,ENR=0.0005)                                 O2554010   13 
+           (64-GD-155,ENR=0.0087)                                 O2554010   14 
+COMMENT    By compiler: Results reported as 156Gd(p,x)154Tb-M1    O2554010   15 
+           compiled as sum of contributing reactions considering  O2554010   16 
+           the reaction thresholds:                               O2554010   17 
+           154Tb production: Reaction; E threshold                O2554010   18 
+                             154Gd+p;  4.4 MeV                    O2554010   19 
+                             155Gd+p;  10.8 MeV                   O2554010   20 
+ERR-ANALYS (ERR-5) Uncertainty on the gamma-ray branching ratio   O2554010   21 
+STATUS     (TABLE) Table 10 of Appl.Radiat.Isot.184(2022)110175   O2554010   22 
+           (COREL,O2554009) Measured with target enriched to 155GdO2554010   23 
+ENDBIB              21          0                                 O2554010   24 
+COMMON               1          3                                 O2554010   25 
+ERR-5                                                             O2554010   26 
+PER-CENT                                                          O2554010   27 
+        15.                                                       O2554010   28 
+ENDCOMMON            3          0                                 O2554010   29 
+DATA                 3         12                                 O2554010   30 
+EN         DATA       ERR-T                                       O2554010   31 
+MEV        MB         MB                                          O2554010   32 
+       11.9        0.6        0.1                                 O2554010   33 
+       12.1        0.7        0.1                                 O2554010   34 
+       12.3        1.1        0.2                                 O2554010   35 
+       13.0        2.2        0.5                                 O2554010   36 
+       14.0        3.1        0.5                                 O2554010   37 
+       14.5        3.4        0.6                                 O2554010   38 
+       15.0         5.         1.                                 O2554010   39 
+       15.5        4.4        0.3                                 O2554010   40 
+       15.8        5.5        0.9                                 O2554010   41 
+       17.1         6.         1.                                 O2554010   42 
+       17.5         6.         1.                                 O2554010   43 
+       18.2        6.9        0.5                                 O2554010   44 
+ENDDATA             14          0                                 O2554010   45 
+ENDSUBENT           44          0                                 O255401099999 
+SUBENT        O2554011   20230311                             O097O2554011    1 
+BIB                  4          5                                 O2554011    2 
+REACTION   (64-GD-0(P,X)65-TB-154-M2,,SIG)                        O2554011    3 
+DECAY-DATA (65-TB-154-M2,22.7HR,DG,426.78,0.173)                  O2554011    4 
+SAMPLE     Gadolinium oxide target with natural isotopic          O2554011    5 
+           composition.                                           O2554011    6 
+STATUS     (TABLE) Table 11 of Appl.Radiat.Isot.184(2022)110175   O2554011    7 
+ENDBIB               5          0                                 O2554011    8 
+NOCOMMON             0          0                                 O2554011    9 
+DATA                 3          6                                 O2554011   10 
+EN         DATA       ERR-T                                       O2554011   11 
+MEV        MB         MB                                          O2554011   12 
+       11.5        0.4        0.1                                 O2554011   13 
+       12.5        0.4        0.1                                 O2554011   14 
+       14.5        1.0        0.3                                 O2554011   15 
+       15.8        1.4        0.3                                 O2554011   16 
+       17.1        3.0        0.4                                 O2554011   17 
+       18.2        4.3        0.7                                 O2554011   18 
+ENDDATA              8          0                                 O2554011   19 
+ENDSUBENT           18          0                                 O255401199999 
+SUBENT        O2554012   20230311                             O097O2554012    1 
+BIB                  5         22                                 O2554012    2 
+REACTION  1(64-GD-154(P,N)65-TB-154-M2,,SIG,,FCT)                 O2554012    3 
+            FCT=target abundance in the sample                    O2554012    4 
+          2((64-GD-154(P,N)65-TB-154-M2,,SIG,,FCT)+               O2554012    5 
+           (64-GD-155(P,2N)65-TB-154-M2,,SIG,,FCT))               O2554012    6 
+            FCT=target abundance in the sample                    O2554012    7 
+DECAY-DATA (65-TB-154-M2,22.7HR,DG,426.78,0.173)                  O2554012    8 
+SAMPLE     Gadolinium oxide powder enriched in 155Gd with the     O2554012    9 
+           following isotopic composition:                        O2554012   10 
+           Isotope:    152Gd   154Gd   155Gd      156Gd    157Gd  O2554012   11 
+           Abundance: <0.0002  0.005  0.9190(30)  0.0587   0.0081 O2554012   12 
+           Isotope:     158Gd    160Gd                            O2554012   13 
+           Abundance:   0.0065   0.0027                           O2554012   14 
+           (64-GD-154,ENR=0.005)                                  O2554012   15 
+           (64-GD-155,ENR=0.9190)                                 O2554012   16 
+COMMENT    By compiler: Results reported as 155Gd(p,x)154Tb-M2    O2554012   17 
+           compiled as sum of contributing reactions considering  O2554012   18 
+           the reaction thresholds:                               O2554012   19 
+           154Tb production: Reaction; E threshold                O2554012   20 
+                             154Gd+p;  4.4 MeV                    O2554012   21 
+                             155Gd+p;  10.8 MeV                   O2554012   22 
+STATUS     (TABLE) Table 11 of Appl.Radiat.Isot.184(2022)110175   O2554012   23 
+           (COREL,O2554013) Measured with target enriched to 156GdO2554012   24 
+ENDBIB              22          0                                 O2554012   25 
+NOCOMMON             0          0                                 O2554012   26 
+DATA                 5          8                                 O2554012   27 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2           O2554012   28 
+MEV        MB         MB         MB         MB                    O2554012   29 
+        9.7        0.3        0.1                                 O2554012   30 
+       10.2        0.5        0.1                                 O2554012   31 
+       11.9                              0.8        0.2           O2554012   32 
+       13.0                              1.5        0.9           O2554012   33 
+       14.5                               6.         2.           O2554012   34 
+       15.8                               7.         2.           O2554012   35 
+       17.1                              13.         2.           O2554012   36 
+       18.2                              18.         3.           O2554012   37 
+ENDDATA             10          0                                 O2554012   38 
+ENDSUBENT           37          0                                 O255401299999 
+SUBENT        O2554013   20230311                             O097O2554013    1 
+BIB                  5         20                                 O2554013    2 
+REACTION   ((64-GD-154(P,N)65-TB-154-M2,,SIG,,FCT)+               O2554013    3 
+           (64-GD-155(P,2N)65-TB-154-M2,,SIG,,FCT))               O2554013    4 
+             FCT=target abundance in the sample                   O2554013    5 
+DECAY-DATA (65-TB-154-M2,22.7HR,DG,426.78,0.173)                  O2554013    6 
+SAMPLE     Gadolinium oxide powder enriched in 156Gd with the     O2554013    7 
+           following isotopic composition:                        O2554013    8 
+           Isotope:    152Gd   154Gd   155Gd    156Gd       157Gd O2554013    9 
+           Abundance: <0.0001  0.0005  0.0087  0.9330(10)  0.00438O2554013   10 
+           Isotope:     158Gd     160Gd                           O2554013   11 
+           Abundance:   0.0108   0.0032                           O2554013   12 
+           (64-GD-154,ENR=0.0005)                                 O2554013   13 
+           (64-GD-155,ENR=0.0087)                                 O2554013   14 
+COMMENT    By compiler: Results reported as 156Gd(p,x)154Tb-M2    O2554013   15 
+           compiled as sum of contributing reactions considering  O2554013   16 
+           the reaction thresholds:                               O2554013   17 
+           154Tb production: Reaction; E threshold                O2554013   18 
+                             154Gd+p;  4.4 MeV                    O2554013   19 
+                             155Gd+p;  10.8 MeV                   O2554013   20 
+STATUS     (TABLE) Table 11 of Appl.Radiat.Isot.184(2022)110175   O2554013   21 
+           (COREL,O2554012) Measured with target enriched to 155GdO2554013   22 
+ENDBIB              20          0                                 O2554013   23 
+NOCOMMON             0          0                                 O2554013   24 
+DATA                 3          8                                 O2554013   25 
+EN         DATA       ERR-T                                       O2554013   26 
+MEV        MB         MB                                          O2554013   27 
+       11.9       0.15       0.01                                 O2554013   28 
+       12.3        0.3        0.1                                 O2554013   29 
+       13.0        0.4        0.1                                 O2554013   30 
+       14.0        0.6        0.1                                 O2554013   31 
+       15.8        0.9        0.2                                 O2554013   32 
+       15.8        0.9        0.4                                 O2554013   33 
+       17.1        1.0        0.3                                 O2554013   34 
+       18.2        0.7        0.2                                 O2554013   35 
+ENDDATA             10          0                                 O2554013   36 
+ENDSUBENT           35          0                                 O255401399999 
+SUBENT        O2554014   20230311                             O097O2554014    1 
+BIB                  4          6                                 O2554014    2 
+REACTION   (64-GD-0(P,X)65-TB-155,,SIG)                           O2554014    3 
+DECAY-DATA (65-TB-155,5.32D,DG,105.318,0.251,                     O2554014    4 
+                            DG,262.27,0.053)                      O2554014    5 
+SAMPLE     Gadolinium oxide target with natural isotopic          O2554014    6 
+           composition.                                           O2554014    7 
+STATUS     (TABLE) Table 12 of Appl.Radiat.Isot.184(2022)110175   O2554014    8 
+ENDBIB               6          0                                 O2554014    9 
+NOCOMMON             0          0                                 O2554014   10 
+DATA                 3         15                                 O2554014   11 
+EN         DATA       ERR-T                                       O2554014   12 
+MEV        MB         MB                                          O2554014   13 
+        5.1        0.4        0.1                                 O2554014   14 
+        5.8        1.4        0.2                                 O2554014   15 
+        7.1       10.5        0.7                                 O2554014   16 
+        7.7        13.         1.                                 O2554014   17 
+        9.0        27.         2.                                 O2554014   18 
+        9.7        37.         3.                                 O2554014   19 
+       11.5        79.         7.                                 O2554014   20 
+       12.1        89.         5.                                 O2554014   21 
+       12.5       122.        10.                                 O2554014   22 
+       13.0       153.        13.                                 O2554014   23 
+       14.5       149.        12.                                 O2554014   24 
+       15.5       168.         9.                                 O2554014   25 
+       15.8       157.        13.                                 O2554014   26 
+       17.1       193.        16.                                 O2554014   27 
+       18.2       248.        14.                                 O2554014   28 
+ENDDATA             17          0                                 O2554014   29 
+ENDSUBENT           28          0                                 O255401499999 
+SUBENT        O2554015   20230311                             O097O2554015    1 
+BIB                  5         33                                 O2554015    2 
+REACTION  1((64-GD-154(P,G)65-TB-155,,SIG,,FCT)+                  O2554015    3 
+           (64-GD-155(P,N)65-TB-155,,SIG,,FCT))                   O2554015    4 
+            FCT=target abundance in the sample                    O2554015    5 
+          2((64-GD-154(P,G)65-TB-155,,SIG,,FCT)+                  O2554015    6 
+           (64-GD-155(P,N)65-TB-155,,SIG,,FCT)+                   O2554015    7 
+           (64-GD-156(P,2N)65-TB-155,,SIG,,FCT))                  O2554015    8 
+            FCT=target abundance in the sample                    O2554015    9 
+          3((64-GD-154(P,G)65-TB-155,,SIG,,FCT)+                  O2554015   10 
+           (64-GD-155(P,N)65-TB-155,,SIG,,FCT)+                   O2554015   11 
+           (64-GD-156(P,2N)65-TB-155,,SIG,,FCT)+                  O2554015   12 
+           (64-GD-157(P,3N)65-TB-155,,SIG,,FCT))                  O2554015   13 
+            FCT=target abundance in the sample                    O2554015   14 
+DECAY-DATA (65-TB-155,5.32D,DG,105.318,0.251,                     O2554015   15 
+                            DG,262.27,0.053)                      O2554015   16 
+SAMPLE     Gadolinium oxide powder enriched in 155Gd with the     O2554015   17 
+           following isotopic composition:                        O2554015   18 
+           Isotope:    152Gd   154Gd   155Gd      156Gd    157Gd  O2554015   19 
+           Abundance: <0.0002  0.005  0.9190(30)  0.0587   0.0081 O2554015   20 
+           Isotope:     158Gd    160Gd                            O2554015   21 
+           Abundance:   0.0065   0.0027                           O2554015   22 
+           (64-GD-154,ENR=0.005)                                  O2554015   23 
+           (64-GD-155,ENR=0.9190)                                 O2554015   24 
+           (64-GD-156,ENR=0.0587)                                 O2554015   25 
+           (64-GD-157,ENR=0.0081)                                 O2554015   26 
+COMMENT    By compiler: Results reported as 155Gd(p,x)155Tb       O2554015   27 
+           compiled as sum of contributing reactions considering  O2554015   28 
+           the reaction thresholds:                               O2554015   29 
+           155Tb production: Reaction; E threshold                O2554015   30 
+                             155Gd+p;  1.6 MeV                    O2554015   31 
+                             156Gd+p;  10.2 MeV                   O2554015   32 
+                             157Gd+p;  16.6 MeV                   O2554015   33 
+STATUS     (TABLE) Table 12 of Appl.Radiat.Isot.184(2022)110175   O2554015   34 
+           (COREL,O2554016) Measured with target enriched to 156GdO2554015   35 
+ENDBIB              33          0                                 O2554015   36 
+NOCOMMON             0          0                                 O2554015   37 
+DATA                 7         22                                 O2554015   38 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2DATA      3O2554015   39 
+ERR-T     3                                                       O2554015   40 
+MEV        MB         MB         MB         MB         MB         O2554015   41 
+MB                                                                O2554015   42 
+        5.8        3.4        0.5                                 O2554015   43 
+                                                                  O2554015   44 
+        6.2       11.4        0.8                                 O2554015   45 
+                                                                  O2554015   46 
+        6.8        23.         2.                                 O2554015   47 
+                                                                  O2554015   48 
+        7.4        79.        12.                                 O2554015   49 
+                                                                  O2554015   50 
+        7.7        87.         8.                                 O2554015   51 
+                                                                  O2554015   52 
+        7.9        98.         7.                                 O2554015   53 
+                                                                  O2554015   54 
+        8.7       170.        15.                                 O2554015   55 
+                                                                  O2554015   56 
+        9.3       222.        21.                                 O2554015   57 
+                                                                  O2554015   58 
+        9.7       304.        37.                                 O2554015   59 
+                                                                  O2554015   60 
+       10.0       314.        21.                                 O2554015   61 
+                                                                  O2554015   62 
+       10.2                             345.        35.           O2554015   63 
+                                                                  O2554015   64 
+       10.8                             396.        35.           O2554015   65 
+                                                                  O2554015   66 
+       11.5                             403.        36.           O2554015   67 
+                                                                  O2554015   68 
+       11.9                             397.        37.           O2554015   69 
+                                                                  O2554015   70 
+       12.1                             339.        22.           O2554015   71 
+                                                                  O2554015   72 
+       12.7                             262.        28.           O2554015   73 
+                                                                  O2554015   74 
+       13.0                             204.        31.           O2554015   75 
+                                                                  O2554015   76 
+       14.5                             177.        26.           O2554015   77 
+                                                                  O2554015   78 
+       15.5                             167.         8.           O2554015   79 
+                                                                  O2554015   80 
+       15.8                             145.        17.           O2554015   81 
+                                                                  O2554015   82 
+       17.1                                                   125.O2554015   83 
+         9.                                                       O2554015   84 
+       18.2                                                   128.O2554015   85 
+         8.                                                       O2554015   86 
+ENDDATA             48          0                                 O2554015   87 
+ENDSUBENT           86          0                                 O255401599999 
+SUBENT        O2554016   20230311                             O097O2554016    1 
+BIB                  5         33                                 O2554016    2 
+REACTION  1((64-GD-154(P,G)65-TB-155,,SIG,,FCT)+                  O2554016    3 
+           (64-GD-155(P,N)65-TB-155,,SIG,,FCT))                   O2554016    4 
+            FCT=target abundance in the sample                    O2554016    5 
+          2((64-GD-154(P,G)65-TB-155,,SIG,,FCT)+                  O2554016    6 
+           (64-GD-155(P,N)65-TB-155,,SIG,,FCT)+                   O2554016    7 
+           (64-GD-156(P,2N)65-TB-155,,SIG,,FCT))                  O2554016    8 
+            FCT=target abundance in the sample                    O2554016    9 
+          3((64-GD-154(P,G)65-TB-155,,SIG,,FCT)+                  O2554016   10 
+           (64-GD-155(P,N)65-TB-155,,SIG,,FCT)+                   O2554016   11 
+           (64-GD-156(P,2N)65-TB-155,,SIG,,FCT)+                  O2554016   12 
+           (64-GD-157(P,3N)65-TB-155,,SIG,,FCT))                  O2554016   13 
+            FCT=target abundance in the sample                    O2554016   14 
+DECAY-DATA (65-TB-155,5.32D,DG,105.318,0.251,                     O2554016   15 
+                            DG,262.27,0.053)                      O2554016   16 
+SAMPLE     Gadolinium oxide powder enriched in 156Gd with the     O2554016   17 
+           following isotopic composition:                        O2554016   18 
+           Isotope:    152Gd   154Gd   155Gd    156Gd       157Gd O2554016   19 
+           Abundance: <0.0001  0.0005  0.0087  0.9330(10)  0.00438O2554016   20 
+           Isotope:     158Gd     160Gd                           O2554016   21 
+           Abundance:   0.0108   0.0032                           O2554016   22 
+           (64-GD-154,ENR=0.0005)                                 O2554016   23 
+           (64-GD-155,ENR=0.0087)                                 O2554016   24 
+           (64-GD-156,ENR=0.9330)                                 O2554016   25 
+           (64-GD-157,ENR=0.00438)                                O2554016   26 
+COMMENT    By compiler: Results reported as 156Gd(p,x)155Tb       O2554016   27 
+           compiled as sum of contributing reactions considering  O2554016   28 
+           the reaction thresholds:                               O2554016   29 
+           155Tb production: Reaction; E threshold                O2554016   30 
+                             155Gd+p;  1.6 MeV                    O2554016   31 
+                             156Gd+p;  10.2 MeV                   O2554016   32 
+                             157Gd+p;  16.6 MeV                   O2554016   33 
+STATUS     (TABLE) Table 12 of Appl.Radiat.Isot.184(2022)110175   O2554016   34 
+           (COREL,O2554015) Measured with target enriched to 155GdO2554016   35 
+ENDBIB              33          0                                 O2554016   36 
+NOCOMMON             0          0                                 O2554016   37 
+DATA                 7         19                                 O2554016   38 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2DATA      3O2554016   39 
+ERR-T     3                                                       O2554016   40 
+MEV        MB         MB         MB         MB         MB         O2554016   41 
+MB                                                                O2554016   42 
+        6.2       0.21       0.03                                 O2554016   43 
+                                                                  O2554016   44 
+        7.7        0.8        0.1                                 O2554016   45 
+                                                                  O2554016   46 
+        7.9        1.0        0.2                                 O2554016   47 
+                                                                  O2554016   48 
+        8.7        1.4        0.2                                 O2554016   49 
+                                                                  O2554016   50 
+        9.7        4.2        0.6                                 O2554016   51 
+                                                                  O2554016   52 
+       10.0         5.         1.                                 O2554016   53 
+                                                                  O2554016   54 
+       10.6                              48.         4.           O2554016   55 
+                                                                  O2554016   56 
+       11.5                             146.        15.           O2554016   57 
+                                                                  O2554016   58 
+       11.9                             207.        18.           O2554016   59 
+                                                                  O2554016   60 
+       12.1                             266.        14.           O2554016   61 
+                                                                  O2554016   62 
+       12.3                             284.        26.           O2554016   63 
+                                                                  O2554016   64 
+       13.0                             411.        37.           O2554016   65 
+                                                                  O2554016   66 
+       13.8                             548.        50.           O2554016   67 
+                                                                  O2554016   68 
+       14.5                             576.        50.           O2554016   69 
+                                                                  O2554016   70 
+       15.0                             614.        53.           O2554016   71 
+                                                                  O2554016   72 
+       15.5                             768.        44.           O2554016   73 
+                                                                  O2554016   74 
+       15.8                             815.        71.           O2554016   75 
+                                                                  O2554016   76 
+       17.1                                                   881.O2554016   77 
+        73.                                                       O2554016   78 
+       18.2                                                   973.O2554016   79 
+        81.                                                       O2554016   80 
+ENDDATA             42          0                                 O2554016   81 
+ENDSUBENT           80          0                                 O255401699999 
+SUBENT        O2554017   20230311                             O097O2554017    1 
+BIB                  6         12                                 O2554017    2 
+REACTION   (64-GD-0(P,X)65-TB-156-G,,SIG)                         O2554017    3 
+DECAY-DATA (65-TB-156-G,5.35D,DG,534.29,0.67)                     O2554017    4 
+ANALYSIS   (DECAY) The two metastable states 65-TB-156-M1 and     O2554017    5 
+           65-TB-156-M2 decay through IT (100%) into the ground   O2554017    6 
+           state of 156Tb. The activity of 65-TB-156-G was        O2554017    7 
+           repeatedly measured during the decay time in order to  O2554017    8 
+           determine the EoB activities of the ground and the two O2554017    9 
+           metastable states.                                     O2554017   10 
+SAMPLE     Gadolinium oxide target with natural isotopic          O2554017   11 
+           composition.                                           O2554017   12 
+ERR-ANALYS (ERR-5) Uncertainty on the gamma-ray branching ratio   O2554017   13 
+STATUS     (TABLE) Table 13 of Appl.Radiat.Isot.184(2022)110175   O2554017   14 
+ENDBIB              12          0                                 O2554017   15 
+COMMON               1          3                                 O2554017   16 
+ERR-5                                                             O2554017   17 
+PER-CENT                                                          O2554017   18 
+        9.                                                        O2554017   19 
+ENDCOMMON            3          0                                 O2554017   20 
+DATA                 3          5                                 O2554017   21 
+EN         DATA       ERR-T                                       O2554017   22 
+MEV        MB         MB                                          O2554017   23 
+        7.1        5.2        0.4                                 O2554017   24 
+        9.0       13.7        0.8                                 O2554017   25 
+       12.1        49.         3.                                 O2554017   26 
+       15.5        81.         4.                                 O2554017   27 
+       18.2        95.         6.                                 O2554017   28 
+ENDDATA              7          0                                 O2554017   29 
+ENDSUBENT           28          0                                 O255401799999 
+SUBENT        O2554018   20230311                             O097O2554018    1 
+BIB                  7         39                                 O2554018    2 
+REACTION  1((64-GD-155(P,G)65-TB-156-G,,SIG,,FCT)+                O2554018    3 
+           (64-GD-156(P,N)65-TB-156-G,,SIG,,FCT))                 O2554018    4 
+            FCT=target abundance in the sample                    O2554018    5 
+          2((64-GD-155(P,G)65-TB-156-G,,SIG,,FCT)+                O2554018    6 
+           (64-GD-156(P,N)65-TB-156-G,,SIG,,FCT)+                 O2554018    7 
+           (64-GD-157(P,2N)65-TB-156-G,,SIG,,FCT))                O2554018    8 
+            FCT=target abundance in the sample                    O2554018    9 
+          3((64-GD-155(P,G)65-TB-156-G,,SIG,,FCT)+                O2554018   10 
+           (64-GD-156(P,N)65-TB-156-G,,SIG,,FCT)+                 O2554018   11 
+           (64-GD-157(P,2N)65-TB-156-G,,SIG,,FCT)+                O2554018   12 
+           (64-GD-158(P,3N)65-TB-156-G,,SIG,,FCT))                O2554018   13 
+            FCT=target abundance in the sample                    O2554018   14 
+DECAY-DATA (65-TB-156-G,5.35D,DG,534.29,0.67)                     O2554018   15 
+ANALYSIS   (DECAY) The two metastable states 65-TB-156-M1 and     O2554018   16 
+           65-TB-156-M2 decay through IT (100%) into the ground   O2554018   17 
+           state of 156Tb. The activity of 65-TB-156-G was        O2554018   18 
+           repeatedly measured during the decay time in order to  O2554018   19 
+           determine the EoB activities of the ground and the two O2554018   20 
+           metastable states.                                     O2554018   21 
+SAMPLE     Gadolinium oxide powder enriched in 155Gd with the     O2554018   22 
+           following isotopic composition:                        O2554018   23 
+           Isotope:    152Gd   154Gd   155Gd      156Gd    157Gd  O2554018   24 
+           Abundance: <0.0002  0.005  0.9190(30)  0.0587   0.0081 O2554018   25 
+           Isotope:     158Gd    160Gd                            O2554018   26 
+           Abundance:   0.0065   0.0027                           O2554018   27 
+           (64-GD-155,ENR=0.9190)                                 O2554018   28 
+           (64-GD-156,ENR=0.0587)                                 O2554018   29 
+           (64-GD-157,ENR=0.0081)                                 O2554018   30 
+           (64-GD-158,ENR=0.0065)                                 O2554018   31 
+COMMENT    By compiler: Results reported as 155Gd(p,x)156Tb       O2554018   32 
+           compiled as sum of contributing reactions considering  O2554018   33 
+           the reaction thresholds:                               O2554018   34 
+           156Tb production: Reaction; E threshold                O2554018   35 
+                             156Gd+p;  3.25 MeV                   O2554018   36 
+                             157Gd+p;  9.65 MeV                   O2554018   37 
+                             158Gd+p;  17.6 MeV                   O2554018   38 
+ERR-ANALYS (ERR-5) Uncertainty on the gamma-ray branching ratio   O2554018   39 
+STATUS     (TABLE) Table 13 of Appl.Radiat.Isot.184(2022)110175   O2554018   40 
+           (COREL,O2554019) Measured with target enriched to 156GdO2554018   41 
+ENDBIB              39          0                                 O2554018   42 
+COMMON               1          3                                 O2554018   43 
+ERR-5                                                             O2554018   44 
+PER-CENT                                                          O2554018   45 
+        9.                                                        O2554018   46 
+ENDCOMMON            3          0                                 O2554018   47 
+DATA                 7          7                                 O2554018   48 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2DATA      3O2554018   49 
+ERR-T     3                                                       O2554018   50 
+MEV        MB         MB         MB         MB         MB         O2554018   51 
+MB                                                                O2554018   52 
+        6.2       0.57       0.04                                 O2554018   53 
+                                                                  O2554018   54 
+        7.9        8.0        0.5                                 O2554018   55 
+                                                                  O2554018   56 
+       10.0                             13.2        0.9           O2554018   57 
+                                                                  O2554018   58 
+       12.1                             13.2        0.9           O2554018   59 
+                                                                  O2554018   60 
+       15.5                              15.         1.           O2554018   61 
+                                                                  O2554018   62 
+       17.1                              16.         2.           O2554018   63 
+                                                                  O2554018   64 
+       18.2                                                   19.8O2554018   65 
+        1.0                                                       O2554018   66 
+ENDDATA             18          0                                 O2554018   67 
+ENDSUBENT           66          0                                 O255401899999 
+SUBENT        O2554019   20230311                             O097O2554019    1 
+BIB                  7         39                                 O2554019    2 
+REACTION  1((64-GD-155(P,G)65-TB-156-G,,SIG,,FCT)+                O2554019    3 
+           (64-GD-156(P,N)65-TB-156-G,,SIG,,FCT))                 O2554019    4 
+            FCT=target abundance in the sample                    O2554019    5 
+          2((64-GD-155(P,G)65-TB-156-G,,SIG,,FCT)+                O2554019    6 
+           (64-GD-156(P,N)65-TB-156-G,,SIG,,FCT)+                 O2554019    7 
+           (64-GD-157(P,2N)65-TB-156-G,,SIG,,FCT))                O2554019    8 
+            FCT=target abundance in the sample                    O2554019    9 
+          3((64-GD-155(P,G)65-TB-156-G,,SIG,,FCT)+                O2554019   10 
+           (64-GD-156(P,N)65-TB-156-G,,SIG,,FCT)+                 O2554019   11 
+           (64-GD-157(P,2N)65-TB-156-G,,SIG,,FCT)+                O2554019   12 
+           (64-GD-158(P,3N)65-TB-156-G,,SIG,,FCT))                O2554019   13 
+            FCT=target abundance in the sample                    O2554019   14 
+DECAY-DATA (65-TB-156-G,5.35D,DG,534.29,0.67)                     O2554019   15 
+ANALYSIS   (DECAY) The two metastable states 65-TB-156-M1 and     O2554019   16 
+           65-TB-156-M2 decay through IT (100%) into the ground   O2554019   17 
+           state of 156Tb. The activity of 65-TB-156-G was        O2554019   18 
+           repeatedly measured during the decay time in order to  O2554019   19 
+           determine the EoB activities of the ground and the two O2554019   20 
+           metastable states.                                     O2554019   21 
+SAMPLE     Gadolinium oxide powder enriched in 156Gd with the     O2554019   22 
+           following isotopic composition:                        O2554019   23 
+           Isotope:    152Gd   154Gd   155Gd    156Gd       157Gd O2554019   24 
+           Abundance: <0.0001  0.0005  0.0087  0.9330(10)  0.00438O2554019   25 
+           Isotope:     158Gd     160Gd                           O2554019   26 
+           Abundance:   0.0108   0.0032                           O2554019   27 
+           (64-GD-155,ENR=0.0087)                                 O2554019   28 
+           (64-GD-156,ENR=0.9330)                                 O2554019   29 
+           (64-GD-157,ENR=0.00438)                                O2554019   30 
+           (64-GD-158,ENR=0.0108)                                 O2554019   31 
+COMMENT    By compiler: Results reported as 156Gd(p,x)156Tb       O2554019   32 
+           compiled as sum of contributing reactions considering  O2554019   33 
+           the reaction thresholds:                               O2554019   34 
+           156Tb production: Reaction; E threshold                O2554019   35 
+                             156Gd+p;  3.25 MeV                   O2554019   36 
+                             157Gd+p;  9.65 MeV                   O2554019   37 
+                             158Gd+p;  17.6 MeV                   O2554019   38 
+ERR-ANALYS (ERR-5) Uncertainty on the gamma-ray branching ratio   O2554019   39 
+STATUS     (TABLE) Table 13 of Appl.Radiat.Isot.184(2022)110175   O2554019   40 
+           (COREL,O2554018) Measured with target enriched to 155GdO2554019   41 
+ENDBIB              39          0                                 O2554019   42 
+COMMON               1          3                                 O2554019   43 
+ERR-5                                                             O2554019   44 
+PER-CENT                                                          O2554019   45 
+        9.                                                        O2554019   46 
+ENDCOMMON            3          0                                 O2554019   47 
+DATA                 7          6                                 O2554019   48 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2DATA      3O2554019   49 
+ERR-T     3                                                       O2554019   50 
+MEV        MB         MB         MB         MB         MB         O2554019   51 
+MB                                                                O2554019   52 
+        5.8        5.4        0.3                                 O2554019   53 
+                                                                  O2554019   54 
+        7.9        47.         3.                                 O2554019   55 
+                                                                  O2554019   56 
+       10.0                             150.         8.           O2554019   57 
+                                                                  O2554019   58 
+       12.1                             170.         9.           O2554019   59 
+                                                                  O2554019   60 
+       15.5                              73.         4.           O2554019   61 
+                                                                  O2554019   62 
+       18.2                                                    57.O2554019   63 
+         3.                                                       O2554019   64 
+ENDDATA             16          0                                 O2554019   65 
+ENDSUBENT           64          0                                 O255401999999 
+SUBENT        O2554020   20230311                             O097O2554020    1 
+BIB                  7         39                                 O2554020    2 
+REACTION  1((64-GD-155(P,G)65-TB-156-M1,,SIG,,FCT)+               O2554020    3 
+           (64-GD-156(P,N)65-TB-156-M1,,SIG,,FCT))                O2554020    4 
+            FCT=target abundance in the sample                    O2554020    5 
+          2((64-GD-155(P,G)65-TB-156-M1,,SIG,,FCT)+               O2554020    6 
+           (64-GD-156(P,N)65-TB-156-M1,,SIG,,FCT)+                O2554020    7 
+           (64-GD-157(P,2N)65-TB-156-M1,,SIG,,FCT))               O2554020    8 
+            FCT=target abundance in the sample                    O2554020    9 
+          3((64-GD-155(P,G)65-TB-156-M1,,SIG,,FCT)+               O2554020   10 
+           (64-GD-156(P,N)65-TB-156-M1,,SIG,,FCT)+                O2554020   11 
+           (64-GD-157(P,2N)65-TB-156-M1,,SIG,,FCT)+               O2554020   12 
+           (64-GD-158(P,3N)65-TB-156-M1,,SIG,,FCT))               O2554020   13 
+            FCT=target abundance in the sample                    O2554020   14 
+DECAY-DATA (65-TB-156-M1,24.4HR)                                  O2554020   15 
+ANALYSIS   (DECAY) The two metastable states 65-TB-156-M1 and     O2554020   16 
+           65-TB-156-M2 decay through IT (100%) into the ground   O2554020   17 
+           state of 156Tb. The activity of 65-TB-156-G was        O2554020   18 
+           repeatedly measured during the decay time in order to  O2554020   19 
+           determine the EoB activities of the ground and the two O2554020   20 
+           metastable states.                                     O2554020   21 
+SAMPLE     Gadolinium oxide powder enriched in 156Gd with the     O2554020   22 
+           following isotopic composition:                        O2554020   23 
+           Isotope:    152Gd   154Gd   155Gd    156Gd       157Gd O2554020   24 
+           Abundance: <0.0001  0.0005  0.0087  0.9330(10)  0.00438O2554020   25 
+           Isotope:     158Gd     160Gd                           O2554020   26 
+           Abundance:   0.0108   0.0032                           O2554020   27 
+           (64-GD-155,ENR=0.0087)                                 O2554020   28 
+           (64-GD-156,ENR=0.9330)                                 O2554020   29 
+           (64-GD-157,ENR=0.00438)                                O2554020   30 
+           (64-GD-158,ENR=0.0108)                                 O2554020   31 
+COMMENT    By compiler: Results reported as 156Gd(p,x)156Tb-M1    O2554020   32 
+           compiled as sum of contributing reactions considering  O2554020   33 
+           the reaction thresholds:                               O2554020   34 
+           156Tb production: Reaction; E threshold                O2554020   35 
+                             156Gd+p;  3.25 MeV                   O2554020   36 
+                             157Gd+p;  9.65 MeV                   O2554020   37 
+                             158Gd+p;  17.6 MeV                   O2554020   38 
+ERR-ANALYS (ERR-6,,30.) Uncertainty on the EoB activity determine O2554020   39 
+                    exponential fit.                              O2554020   40 
+STATUS     (TABLE) Table 14 of Appl.Radiat.Isot.184(2022)110175   O2554020   41 
+ENDBIB              39          0                                 O2554020   42 
+NOCOMMON             0          0                                 O2554020   43 
+DATA                 7          6                                 O2554020   44 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2DATA      3O2554020   45 
+ERR-T     3                                                       O2554020   46 
+MEV        MB         MB         MB         MB         MB         O2554020   47 
+MB                                                                O2554020   48 
+        5.8        1.2        0.5                                 O2554020   49 
+                                                                  O2554020   50 
+        7.9         7.         3.                                 O2554020   51 
+                                                                  O2554020   52 
+       10.0                              19.         7.           O2554020   53 
+                                                                  O2554020   54 
+       12.1                              10.         3.           O2554020   55 
+                                                                  O2554020   56 
+       15.5                               6.         2.           O2554020   57 
+                                                                  O2554020   58 
+       18.2                                                     4.O2554020   59 
+         2.                                                       O2554020   60 
+ENDDATA             16          0                                 O2554020   61 
+ENDSUBENT           60          0                                 O255402099999 
+SUBENT        O2554021   20230311                             O097O2554021    1 
+BIB                  6         13                                 O2554021    2 
+REACTION   (64-GD-0(P,X)65-TB-156-M2,,SIG)                        O2554021    3 
+DECAY-DATA (65-TB-156-M1,5.3HR)                                   O2554021    4 
+ANALYSIS   (DECAY) The two metastable states 65-TB-156-M1 and     O2554021    5 
+           65-TB-156-M2 decay through IT (100%) into the ground   O2554021    6 
+           state of 156Tb. The activity of 65-TB-156-G was        O2554021    7 
+           repeatedly measured during the decay time in order to  O2554021    8 
+           determine the EoB activities of the ground and the two O2554021    9 
+           metastable states.                                     O2554021   10 
+SAMPLE     Gadolinium oxide target with natural isotopic          O2554021   11 
+           composition.                                           O2554021   12 
+ERR-ANALYS (ERR-7,,15.) Uncertainty on the EoB activity           O2554021   13 
+            determined by exponential fit.                        O2554021   14 
+STATUS     (TABLE) Table 15 of Appl.Radiat.Isot.184(2022)110175   O2554021   15 
+ENDBIB              13          0                                 O2554021   16 
+NOCOMMON             0          0                                 O2554021   17 
+DATA                 3          5                                 O2554021   18 
+EN         DATA       ERR-T                                       O2554021   19 
+MEV        MB         MB                                          O2554021   20 
+        7.1         6.         1.                                 O2554021   21 
+        9.0        16.         1.                                 O2554021   22 
+       12.1        27.         4.                                 O2554021   23 
+       15.5        36.         4.                                 O2554021   24 
+       18.2        69.         7.                                 O2554021   25 
+ENDDATA              7          0                                 O2554021   26 
+ENDSUBENT           25          0                                 O255402199999 
+SUBENT        O2554022   20230311                             O097O2554022    1 
+BIB                  7         34                                 O2554022    2 
+REACTION  1((64-GD-155(P,G)65-TB-156-M2,,SIG,,FCT)+               O2554022    3 
+           (64-GD-156(P,N)65-TB-156-M2,,SIG,,FCT))                O2554022    4 
+            FCT=target abundance in the sample                    O2554022    5 
+          2((64-GD-155(P,G)65-TB-156-M2,,SIG,,FCT)+               O2554022    6 
+           (64-GD-156(P,N)65-TB-156-M2,,SIG,,FCT)+                O2554022    7 
+           (64-GD-157(P,2N)65-TB-156-M2,,SIG,,FCT))               O2554022    8 
+            FCT=target abundance in the sample                    O2554022    9 
+DECAY-DATA (65-TB-156-M2,5.3HR)                                   O2554022   10 
+ANALYSIS   (DECAY) The two metastable states 65-TB-156-M1 and     O2554022   11 
+           65-TB-156-M2 decay through IT (100%) into the ground   O2554022   12 
+           state of 156Tb. The activity of 65-TB-156-G was        O2554022   13 
+           repeatedly measured during the decay time in order to  O2554022   14 
+           determine the EoB activities of the ground and the two O2554022   15 
+           metastable states.                                     O2554022   16 
+SAMPLE     Gadolinium oxide powder enriched in 155Gd with the     O2554022   17 
+           following isotopic composition:                        O2554022   18 
+           Isotope:    152Gd   154Gd   155Gd      156Gd    157Gd  O2554022   19 
+           Abundance: <0.0002  0.005  0.9190(30)  0.0587   0.0081 O2554022   20 
+           Isotope:     158Gd    160Gd                            O2554022   21 
+           Abundance:   0.0065   0.0027                           O2554022   22 
+           (64-GD-155,ENR=0.9190)                                 O2554022   23 
+           (64-GD-156,ENR=0.0587)                                 O2554022   24 
+           (64-GD-157,ENR=0.0081)                                 O2554022   25 
+COMMENT    By compiler: Results reported as 155Gd(p,x)156Tb-M2    O2554022   26 
+           compiled as sum of contributing reactions considering  O2554022   27 
+           the reaction thresholds:                               O2554022   28 
+           156Tb production: Reaction; E threshold                O2554022   29 
+                             156Gd+p;  3.25 MeV                   O2554022   30 
+                             157Gd+p;  9.65 MeV                   O2554022   31 
+                             158Gd+p;  17.6 MeV                   O2554022   32 
+ERR-ANALYS (ERR-7,,15.) Uncertainty on the EoB activity           O2554022   33 
+            determined by exponential fit.                        O2554022   34 
+STATUS     (TABLE) Table 15 of Appl.Radiat.Isot.184(2022)110175   O2554022   35 
+           (COREL,O2554023) Measured with target enriched to 156GdO2554022   36 
+ENDBIB              34          0                                 O2554022   37 
+NOCOMMON             0          0                                 O2554022   38 
+DATA                 5          5                                 O2554022   39 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2           O2554022   40 
+MEV        MB         MB         MB         MB                    O2554022   41 
+        6.2       0.71       0.08                                 O2554022   42 
+        7.9         5.         1.                                 O2554022   43 
+       10.0                              9.5        1.4           O2554022   44 
+       12.1                              9.2        1.2           O2554022   45 
+       15.5                               5.         1.           O2554022   46 
+ENDDATA              7          0                                 O2554022   47 
+ENDSUBENT           46          0                                 O255402299999 
+SUBENT        O2554023   20230311                             O097O2554023    1 
+BIB                  7         40                                 O2554023    2 
+REACTION  1((64-GD-155(P,G)65-TB-156-M2,,SIG,,FCT)+               O2554023    3 
+           (64-GD-156(P,N)65-TB-156-M2,,SIG,,FCT))                O2554023    4 
+            FCT=target abundance in the sample                    O2554023    5 
+          2((64-GD-155(P,G)65-TB-156-M2,,SIG,,FCT)+               O2554023    6 
+           (64-GD-156(P,N)65-TB-156-M2,,SIG,,FCT)+                O2554023    7 
+           (64-GD-157(P,2N)65-TB-156-M2,,SIG,,FCT))               O2554023    8 
+            FCT=target abundance in the sample                    O2554023    9 
+          3((64-GD-155(P,G)65-TB-156-M2,,SIG,,FCT)+               O2554023   10 
+           (64-GD-156(P,N)65-TB-156-M2,,SIG,,FCT)+                O2554023   11 
+           (64-GD-157(P,2N)65-TB-156-M2,,SIG,,FCT)+               O2554023   12 
+           (64-GD-158(P,3N)65-TB-156-M2,,SIG,,FCT))               O2554023   13 
+            FCT=target abundance in the sample                    O2554023   14 
+DECAY-DATA (65-TB-156-M2,5.3HR)                                   O2554023   15 
+ANALYSIS   (DECAY) The two metastable states 65-TB-156-M1 and     O2554023   16 
+           65-TB-156-M2 decay through IT (100%) into the ground   O2554023   17 
+           state of 156Tb. The activity of 65-TB-156-G was        O2554023   18 
+           repeatedly measured during the decay time in order to  O2554023   19 
+           determine the EoB activities of the ground and the two O2554023   20 
+           metastable states.                                     O2554023   21 
+SAMPLE     Gadolinium oxide powder enriched in 156Gd with the     O2554023   22 
+           following isotopic composition:                        O2554023   23 
+           Isotope:    152Gd   154Gd   155Gd    156Gd       157Gd O2554023   24 
+           Abundance: <0.0001  0.0005  0.0087  0.9330(10)  0.00438O2554023   25 
+           Isotope:     158Gd     160Gd                           O2554023   26 
+           Abundance:   0.0108   0.0032                           O2554023   27 
+           (64-GD-155,ENR=0.0087)                                 O2554023   28 
+           (64-GD-156,ENR=0.9330)                                 O2554023   29 
+           (64-GD-157,ENR=0.00438)                                O2554023   30 
+           (64-GD-158,ENR=0.0108)                                 O2554023   31 
+COMMENT    By compiler: Results reported as 156Gd(p,x)156Tb-M2    O2554023   32 
+           compiled as sum of contributing reactions considering  O2554023   33 
+           the reaction thresholds:                               O2554023   34 
+           156Tb production: Reaction; E threshold                O2554023   35 
+                             156Gd+p;  3.25 MeV                   O2554023   36 
+                             157Gd+p;  9.65 MeV                   O2554023   37 
+                             158Gd+p;  17.6 MeV                   O2554023   38 
+ERR-ANALYS (ERR-7,,15.) Uncertainty on the EoB activity           O2554023   39 
+            determined by exponential fit.                        O2554023   40 
+STATUS     (TABLE) Table 15 of Appl.Radiat.Isot.184(2022)110175   O2554023   41 
+           (COREL,O2554022) Measured with target enriched to 155GdO2554023   42 
+ENDBIB              40          0                                 O2554023   43 
+NOCOMMON             0          0                                 O2554023   44 
+DATA                 7          6                                 O2554023   45 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2DATA      3O2554023   46 
+ERR-T     3                                                       O2554023   47 
+MEV        MB         MB         MB         MB         MB         O2554023   48 
+MB                                                                O2554023   49 
+        5.8        3.8        0.5                                 O2554023   50 
+                                                                  O2554023   51 
+        7.9        32.         3.                                 O2554023   52 
+                                                                  O2554023   53 
+       10.0                              89.         8.           O2554023   54 
+                                                                  O2554023   55 
+       12.1                              68.         5.           O2554023   56 
+                                                                  O2554023   57 
+       15.5                              36.         3.           O2554023   58 
+                                                                  O2554023   59 
+       18.2                                                    25.O2554023   60 
+         2.                                                       O2554023   61 
+ENDDATA             16          0                                 O2554023   62 
+ENDSUBENT           61          0                                 O255402399999 
+SUBENT        O2554024   20230311                             O097O2554024    1 
+BIB                  5          8                                 O2554024    2 
+REACTION   (64-GD-0(P,X)65-TB-156,,SIG)                           O2554024    3 
+DECAY-DATA (65-TB-156-G,5.35D,DG,534.29,0.67)                     O2554024    4 
+ANALYSIS   (DECAY) The total 156Tb porduction cross section was   O2554024    5 
+           determined from the 65-TB-156-G decay afeter complete  O2554024    6 
+           decay of the two metastable states.                    O2554024    7 
+SAMPLE     Gadolinium oxide target with natural isotopic          O2554024    8 
+           composition.                                           O2554024    9 
+STATUS     (TABLE) Table 16 of Appl.Radiat.Isot.184(2022)110175   O2554024   10 
+ENDBIB               8          0                                 O2554024   11 
+NOCOMMON             0          0                                 O2554024   12 
+DATA                 3         15                                 O2554024   13 
+EN         DATA       ERR-T                                       O2554024   14 
+MEV        MB         MB                                          O2554024   15 
+        5.1       0.31       0.07                                 O2554024   16 
+        5.8        0.9        0.1                                 O2554024   17 
+        7.1        11.         1.                                 O2554024   18 
+        7.7        10.         1.                                 O2554024   19 
+        9.0        29.         2.                                 O2554024   20 
+        9.7        37.         4.                                 O2554024   21 
+       11.5        71.         8.                                 O2554024   22 
+       12.1        81.         7.                                 O2554024   23 
+       12.5        94.        10.                                 O2554024   24 
+       13.0        88.        10.                                 O2554024   25 
+       14.5        96.        11.                                 O2554024   26 
+       15.5       111.         6.                                 O2554024   27 
+       15.8       100.        11.                                 O2554024   28 
+       17.1       115.        13.                                 O2554024   29 
+       18.2       117.         9.                                 O2554024   30 
+ENDDATA             17          0                                 O2554024   31 
+ENDSUBENT           30          0                                 O255402499999 
+SUBENT        O2554025   20230311                             O097O2554025    1 
+BIB                  6         35                                 O2554025    2 
+REACTION  1((64-GD-155(P,G)65-TB-156,,SIG,,FCT)+                  O2554025    3 
+           (64-GD-156(P,N)65-TB-156,,SIG,,FCT))                   O2554025    4 
+            FCT=target abundance in the sample                    O2554025    5 
+          2((64-GD-155(P,G)65-TB-156,,SIG,,FCT)+                  O2554025    6 
+           (64-GD-156(P,N)65-TB-156,,SIG,,FCT)+                   O2554025    7 
+           (64-GD-157(P,2N)65-TB-156,,SIG,,FCT))                  O2554025    8 
+            FCT=target abundance in the sample                    O2554025    9 
+          3((64-GD-155(P,G)65-TB-156,,SIG,,FCT)+                  O2554025   10 
+           (64-GD-156(P,N)65-TB-156,,SIG,,FCT)+                   O2554025   11 
+           (64-GD-157(P,2N)65-TB-156,,SIG,,FCT)+                  O2554025   12 
+           (64-GD-158(P,3N)65-TB-156,,SIG,,FCT))                  O2554025   13 
+            FCT=target abundance in the sample                    O2554025   14 
+DECAY-DATA (65-TB-156-G,5.35D,DG,534.29,0.67)                     O2554025   15 
+ANALYSIS   (DECAY) The total 156Tb porduction cross section was   O2554025   16 
+           determined from the 65-TB-156-G decay afeter complete  O2554025   17 
+           decay of the two metastable states.                    O2554025   18 
+SAMPLE     Gadolinium oxide powder enriched in 155Gd with the     O2554025   19 
+           following isotopic composition:                        O2554025   20 
+           Isotope:    152Gd   154Gd   155Gd      156Gd    157Gd  O2554025   21 
+           Abundance: <0.0002  0.005  0.9190(30)  0.0587   0.0081 O2554025   22 
+           Isotope:     158Gd    160Gd                            O2554025   23 
+           Abundance:   0.0065   0.0027                           O2554025   24 
+           (64-GD-155,ENR=0.9190)                                 O2554025   25 
+           (64-GD-156,ENR=0.0587)                                 O2554025   26 
+           (64-GD-157,ENR=0.0081)                                 O2554025   27 
+           (64-GD-158,ENR=0.0065)                                 O2554025   28 
+COMMENT    By compiler: Results reported as 155Gd(p,x)156Tb       O2554025   29 
+           compiled as sum of contributing reactions considering  O2554025   30 
+           the reaction thresholds:                               O2554025   31 
+           156Tb production: Reaction; E threshold                O2554025   32 
+                             156Gd+p;  3.25 MeV                   O2554025   33 
+                             157Gd+p;  9.65 MeV                   O2554025   34 
+                             158Gd+p;  17.6 MeV                   O2554025   35 
+STATUS     (TABLE) Table 16 of Appl.Radiat.Isot.184(2022)110175   O2554025   36 
+           (COREL,O2554026) Measured with target enriched to 156GdO2554025   37 
+ENDBIB              35          0                                 O2554025   38 
+NOCOMMON             0          0                                 O2554025   39 
+DATA                 7         19                                 O2554025   40 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2DATA      3O2554025   41 
+ERR-T     3                                                       O2554025   42 
+MEV        MB         MB         MB         MB         MB         O2554025   43 
+MB                                                                O2554025   44 
+        5.8        0.3        0.1                                 O2554025   45 
+                                                                  O2554025   46 
+        6.2        1.2        0.1                                 O2554025   47 
+                                                                  O2554025   48 
+        7.4        6.5        0.8                                 O2554025   49 
+                                                                  O2554025   50 
+        7.9       12.0        0.7                                 O2554025   51 
+                                                                  O2554025   52 
+        8.7        11.         1.                                 O2554025   53 
+                                                                  O2554025   54 
+        9.3        15.         2.                                 O2554025   55 
+                                                                  O2554025   56 
+        9.7                              19.         3.           O2554025   57 
+                                                                  O2554025   58 
+       10.0                              22.         1.           O2554025   59 
+                                                                  O2554025   60 
+       10.8                              25.         3.           O2554025   61 
+                                                                  O2554025   62 
+       11.5                              21.         2.           O2554025   63 
+                                                                  O2554025   64 
+       11.9                              21.         2.           O2554025   65 
+                                                                  O2554025   66 
+       12.1                              20.         1.           O2554025   67 
+                                                                  O2554025   68 
+       12.7                              17.         2.           O2554025   69 
+                                                                  O2554025   70 
+       13.0                              12.         2.           O2554025   71 
+                                                                  O2554025   72 
+       14.5                              15.         2.           O2554025   73 
+                                                                  O2554025   74 
+       15.5                              21.         1.           O2554025   75 
+                                                                  O2554025   76 
+       15.8                              16.         2.           O2554025   77 
+                                                                  O2554025   78 
+       17.1                              17.         2.           O2554025   79 
+                                                                  O2554025   80 
+       18.2                                                    15.O2554025   81 
+         1.                                                       O2554025   82 
+ENDDATA             42          0                                 O2554025   83 
+ENDSUBENT           82          0                                 O255402599999 
+SUBENT        O2554026   20230311                             O097O2554026    1 
+BIB                  6         35                                 O2554026    2 
+REACTION  1((64-GD-155(P,G)65-TB-156,,SIG,,FCT)+                  O2554026    3 
+           (64-GD-156(P,N)65-TB-156,,SIG,,FCT))                   O2554026    4 
+            FCT=target abundance in the sample                    O2554026    5 
+          2((64-GD-155(P,G)65-TB-156,,SIG,,FCT)+                  O2554026    6 
+           (64-GD-156(P,N)65-TB-156,,SIG,,FCT)+                   O2554026    7 
+           (64-GD-157(P,2N)65-TB-156,,SIG,,FCT))                  O2554026    8 
+            FCT=target abundance in the sample                    O2554026    9 
+          3((64-GD-155(P,G)65-TB-156,,SIG,,FCT)+                  O2554026   10 
+           (64-GD-156(P,N)65-TB-156,,SIG,,FCT)+                   O2554026   11 
+           (64-GD-157(P,2N)65-TB-156,,SIG,,FCT)+                  O2554026   12 
+           (64-GD-158(P,3N)65-TB-156-M2,,SIG,,FCT))               O2554026   13 
+            FCT=target abundance in the sample                    O2554026   14 
+DECAY-DATA (65-TB-156-G,5.35D,DG,534.29,0.67)                     O2554026   15 
+ANALYSIS   (DECAY) The total 156Tb porduction cross section was   O2554026   16 
+           determined from the 65-TB-156-G decay afeter complete  O2554026   17 
+           decay of the two metastable states.                    O2554026   18 
+SAMPLE     Gadolinium oxide powder enriched in 156Gd with the     O2554026   19 
+           following isotopic composition:                        O2554026   20 
+           Isotope:    152Gd   154Gd   155Gd    156Gd       157Gd O2554026   21 
+           Abundance: <0.0001  0.0005  0.0087  0.9330(10)  0.00438O2554026   22 
+           Isotope:     158Gd     160Gd                           O2554026   23 
+           Abundance:   0.0108   0.0032                           O2554026   24 
+           (64-GD-155,ENR=0.0087)                                 O2554026   25 
+           (64-GD-156,ENR=0.9330)                                 O2554026   26 
+           (64-GD-157,ENR=0.00438)                                O2554026   27 
+           (64-GD-158,ENR=0.0108)                                 O2554026   28 
+COMMENT    By compiler: Results reported as 156Gd(p,x)156Tb       O2554026   29 
+           compiled as sum of contributing reactions considering  O2554026   30 
+           the reaction thresholds:                               O2554026   31 
+           156Tb production: Reaction; E threshold                O2554026   32 
+                             156Gd+p;  3.25 MeV                   O2554026   33 
+                             157Gd+p;  9.65 MeV                   O2554026   34 
+                             158Gd+p;  17.6 MeV                   O2554026   35 
+STATUS     (TABLE) Table 16 of Appl.Radiat.Isot.184(2022)110175   O2554026   36 
+           (COREL,O2554025) Measured with target enriched to 155GdO2554026   37 
+ENDBIB              35          0                                 O2554026   38 
+NOCOMMON             0          0                                 O2554026   39 
+DATA                 7         20                                 O2554026   40 
+EN         DATA      1ERR-T     1DATA      2ERR-T     2DATA      3O2554026   41 
+ERR-T     3                                                       O2554026   42 
+MEV        MB         MB         MB         MB         MB         O2554026   43 
+MB                                                                O2554026   44 
+        5.1        1.1        0.2                                 O2554026   45 
+                                                                  O2554026   46 
+        5.8        9.5        0.8                                 O2554026   47 
+                                                                  O2554026   48 
+        6.2         1.       12.9        1.5                      O2554026   49 
+                                                                  O2554026   50 
+        7.7        60.         7.                                 O2554026   51 
+                                                                  O2554026   52 
+        7.9        77.         5.                                 O2554026   53 
+                                                                  O2554026   54 
+        8.7       130.        14.                                 O2554026   55 
+                                                                  O2554026   56 
+        9.7                             219.        24.           O2554026   57 
+                                                                  O2554026   58 
+       10.0                             224.        12.           O2554026   59 
+                                                                  O2554026   60 
+       10.6                             282.        32.           O2554026   61 
+                                                                  O2554026   62 
+       11.9                             268.        30.           O2554026   63 
+                                                                  O2554026   64 
+       12.1                             234.        12.           O2554026   65 
+                                                                  O2554026   66 
+       13.0                             208.        24.           O2554026   67 
+                                                                  O2554026   68 
+       14.0                             161.        19.           O2554026   69 
+                                                                  O2554026   70 
+       14.5                             115.        13.           O2554026   71 
+                                                                  O2554026   72 
+       15.0                             104.        12.           O2554026   73 
+                                                                  O2554026   74 
+       15.5                             101.         6.           O2554026   75 
+                                                                  O2554026   76 
+       15.8                             106.        12.           O2554026   77 
+                                                                  O2554026   78 
+       17.1                              90.        10.           O2554026   79 
+                                                                  O2554026   80 
+       17.5                              84.         9.           O2554026   81 
+                                                                  O2554026   82 
+       18.2                                                    85.O2554026   83 
+         5.                                                       O2554026   84 
+ENDDATA             44          0                                 O2554026   85 
+ENDSUBENT           84          0                                 O255402699999 
+ENDENTRY            26          0                                 O255499999999 
