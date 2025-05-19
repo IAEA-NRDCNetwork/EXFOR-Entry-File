@@ -1,69 +1,144 @@
-ENTRY            22306   20081104                             22052230600000001 
-SUBENT        22306001   20081104                             22052230600100001 
-BIB                 15         28                                 2230600100002 
-INSTITUTE  (2GERKFK)                                              2230600100003 
-REFERENCE  (J,NIM/A,337,492,1994)   Data are given                2230600100004 
-AUTHOR     (H.Beer,G.Rupp,G.Walter,F.Voss,F.Kaeppeler)            2230600100005 
-TITLE       The fast cyclic neutron activation technique          2230600100006 
-            at the Karlsruhe 3.75 MV Van de Graaff accelerator    2230600100007 
-            and the measurements of the Ag-107,109(N,g) cross-    2230600100008 
-            sections at KT=25 keV                                 2230600100009 
-FACILITY   (VDG)                                                  2230600100010 
-METHOD     (ACTIV)  Cyclic activation technique for short-living  2230600100011 
-                    isotopes                                      2230600100012 
-INC-SOURCE (P-LI7)                                                2230600100013 
-INC-SPECT   Near Maxwellian neutron energy spectrum with tempe-   2230600100014 
-            rature KT=25 keV                                      2230600100015 
-MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         2230600100016 
-DECAY-MON  (79-AU-198-G,2.694D,DG,411.8,0.9552)                   2230600100017 
-DETECTOR   (GELI)                                                 2230600100018 
-SAMPLE      Gold samples are metallic, weights 5.60,5.79, 5.37,   2230600100019 
-            5.47, 5.89, 16.52, 16.41, 16.54, 16.85 milligram      2230600100020 
-            silver sample is natural isotopic mixture,            2230600100021 
-            samples weights are 29.75, 29.67, 29.75, 29.67, 29.75 2230600100022 
-            59.42, 59.42, 59.42, 59.42 milligram, respectively    2230600100023 
-STATUS     .Data are taken from the main reference                2230600100024 
-ERR-ANALYS (ERR-T) Quadratic sum of errors                        2230600100025 
-           (ERR-1) Ge(Li) efficiency error                        2230600100026 
-           (ERR-2) Other systematic errors                        2230600100027 
-           (ERR-3) Gamma-rays intensity per decay error           2230600100028 
-HISTORY    (19961112C)  + + Compiled by S. Maev    + +            2230600100029 
-           (20081104U) Corrections have been done - SM            2230600100030 
-ENDBIB              28          0                                 2230600100031 
-COMMON               6          3                                 2230600100032 
-KT         MONIT      MONIT-ERR  MONIT-ERR  ERR-1      ERR-2      2230600100033 
-KEV        MB         MB         PER-CENT   PER-CENT   PER-CENT   2230600100034 
-        25.       648.        10.        1.5         2.         5.2230600100035 
-ENDCOMMON            3          0                                 2230600100036 
-ENDSUBENT           35          0                                 2230600199999 
-SUBENT        22306002   20081104                             22052230600200001 
-BIB                  3          5                                 2230600200002 
-REACTION   (47-AG-107(N,G)47-AG-108,,SIG,,MXW)                    2230600200003 
-ASSUMED    (ASSUM,47-AG-107(N,G)47-AG-108-M/T,,SIG/RAT)           2230600200004 
-            Isomeric ratio at KT=0.0253 eV is assumed to be equal 2230600200005 
-            to that at 25 keV                                     2230600200006 
-HISTORY    (20081103U)  Assumed keyword code corrected            2230600200007 
-ENDBIB               5          0                                 2230600200008 
-NOCOMMON             0          0                                 2230600200009 
-DATA                 5          1                                 2230600200010 
-DATA       ERR-T      ERR-3      ASSUM      ASSUM-ERR             2230600200011 
-MB         MB         PER-CENT   NO-DIM     NO-DIM                2230600200012 
-       786.        60.        2.3      0.009      0.047           2230600200013 
-ENDDATA              3          0                                 2230600200014 
-ENDSUBENT           13          0                                 2230600299999 
-SUBENT        22306003   20081104                             22052230600300001 
-BIB                  3          5                                 2230600300002 
-REACTION   (47-AG-109(N,G)47-AG-110,,SIG,,MXW)                    2230600300003 
-ASSUMED    (ASSUM,47-AG-109(N,G)47-AG-110-M/T,,SIG/RAT)           2230600300004 
-            Isomeric ratio at KT=0.0253 eV is assumed to be equal 2230600300005 
-             to that at 25 keV                                    2230600300006 
-HISTORY    (20081103U)  Assumed keyword code corrected            2230600300007 
-ENDBIB               5          0                                 2230600300008 
-NOCOMMON             0          0                                 2230600300009 
-DATA                 5          1                                 2230600300010 
-DATA       ERR-T      ERR-3      ASSUM      ASSUM-ERR             2230600300011 
-MB         MB         PER-CENT   NO-DIM     NO-DIM                2230600300012 
-       887.        75.        5.1      0.055      0.038           2230600300013 
-ENDDATA              3          0                                 2230600300014 
-ENDSUBENT           13          0                                 2230600399999 
-ENDENTRY             3          0                                 2230699999999 
+ENTRY            22306   20210903                             230322306  0    1 
+SUBENT        22306001   20210903                             230322306  1    1 
+BIB                 13         31                                 22306  1    2 
+TITLE       The fast cyclic neutron activation technique          22306  1    3 
+            at the Karlsruhe 3.75 MV Van de Graaff                22306  1    4 
+            accelerator and the measurements of the               22306  1    5 
+            107,109Ag(n,gamma)108,110Ag cross sections            22306  1    6 
+            at kT=25 keV                                          22306  1    7 
+AUTHOR     (H.Beer,G.Rupp,G.Walter,F.Voss,F.Kaeppeler)            22306  1    8 
+REFERENCE  (J,NIM/A,337,492,1994)   Data are given                22306  1    9 
+           (R,INDC(GER)-0053,2021) Revised values of Karlsruhe    22306  1   10 
+           cross sections.                                        22306  1   11 
+INSTITUTE  (2GERKFK)                                              22306  1   12 
+FACILITY   (VDG,2GERKFK)                                          22306  1   13 
+METHOD     (ACTIV)  Cyclic activation technique for short-living  22306  1   14 
+                    isotopes                                      22306  1   15 
+INC-SOURCE (P-LI7)                                                22306  1   16 
+INC-SPECT   Near Maxwellian neutron energy spectrum with          22306  1   17 
+            temperature kT=25 keV                                 22306  1   18 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         22306  1   19 
+DETECTOR   (GELI)                                                 22306  1   20 
+SAMPLE      Gold samples are metallic, weights 5.60,5.79, 5.37,   22306  1   21 
+            5.47, 5.89, 16.52, 16.41, 16.54, 16.85 mg             22306  1   22 
+            silver sample is natural isotopic mixture,            22306  1   23 
+            samples weights are 29.75, 29.67, 29.75, 29.67, 29.75 22306  1   24 
+            59.42, 59.42, 59.42, 59.42 milligram, respectively    22306  1   25 
+ERR-ANALYS (ERR-T) Quadratic sum of errors                        22306  1   26 
+           (ERR-1) Ge(Li) efficiency error                        22306  1   27 
+           (ERR-2) Other systematic errors                        22306  1   28 
+           (ERR-3) Gamma-rays intensity per decay error           22306  1   29 
+HISTORY    (19961112C)  + + Compiled by S. Maev    + +            22306  1   30 
+           (20081104U) Corrections have been done - SM            22306  1   31 
+           (20210903A) SD: Corrections in all Subents.            22306  1   32 
+            Subents 004, 005 added.                               22306  1   33 
+ENDBIB              31          0                                 22306  1   34 
+COMMON               3          3                                 22306  1   35 
+KT         ERR-1      ERR-2                                       22306  1   36 
+KEV        PER-CENT   PER-CENT                                    22306  1   37 
+        25.         2.         5.                                 22306  1   38 
+ENDCOMMON            3          0                                 22306  1   39 
+ENDSUBENT           38          0                                 22306  199999 
+SUBENT        22306002   20210903                             230322306  2    1 
+BIB                  6         10                                 22306  2    2 
+REACTION   (47-AG-107(N,G)47-AG-108,,SIG,,MXW)                    22306  2    3 
+DECAY-MON  (79-AU-198-G,2.694D,DG,411.8,0.9552)                   22306  2    4 
+MONIT-REF  (22099003,W.Ratynski+,J,PR/C,37,595,1988)              22306  2    5 
+ASSUMED    (ASSUM,47-AG-107(N,G)47-AG-108-M/T,,SIG/RAT)           22306  2    6 
+            Isomeric ratio at kT=0.0253 eV is assumed to be equal 22306  2    7 
+            to that at 25 keV                                     22306  2    8 
+STATUS     (TABLE) p.502 of Nucl.Instrum.Meth.,A337(1994)492      22306  2    9 
+HISTORY    (20081103U)  Assumed keyword code corrected            22306  2   10 
+           (20210903A) SD: STATUS added. ASSUM value corrected.   22306  2   11 
+           Subent superseded.                                     22306  2   12 
+ENDBIB              10          0                                 22306  2   13 
+NOCOMMON             0          0                                 22306  2   14 
+DATA                 7          1                                 22306  2   15 
+DATA       ERR-T      ERR-3      ASSUM      ASSUM-ERR  MONIT      22306  2   16 
+MONIT-ERR                                                         22306  2   17 
+MB         MB         PER-CENT   NO-DIM     NO-DIM     MB         22306  2   18 
+MB                                                                22306  2   19 
+       786.        60.        2.3      1.009      0.047     648.  22306  2   20 
+       10.                                                        22306  2   21 
+ENDDATA              6          0                                 22306  2   22 
+ENDSUBENT           21          0                                 22306  299999 
+SUBENT        22306003   20210903                             230322306  3    1 
+BIB                  6         10                                 22306  3    2 
+REACTION   (47-AG-109(N,G)47-AG-110,,SIG,,MXW)                    22306  3    3 
+DECAY-MON  (79-AU-198-G,2.694D,DG,411.8,0.9552)                   22306  3    4 
+MONIT-REF  (22099003,W.Ratynski+,J,PR/C,37,595,1988)              22306  3    5 
+ASSUMED    (ASSUM,47-AG-109(N,G)47-AG-110-M/T,,SIG/RAT)           22306  3    6 
+            Isomeric ratio at KT=0.0253 eV is assumed to be equal 22306  3    7 
+            to that at 25 keV                                     22306  3    8 
+STATUS     (TABLE) p.502 of Nucl.Instrum.Meth.,A337(1994)492      22306  3    9 
+HISTORY    (20081103U)  Assumed keyword code corrected            22306  3   10 
+           (20210903A) SD: STATUS added. ASSUM value corrected.   22306  3   11 
+           Subent superseded.                                     22306  3   12 
+ENDBIB              10          0                                 22306  3   13 
+NOCOMMON             0          0                                 22306  3   14 
+DATA                 7          1                                 22306  3   15 
+DATA       ERR-T      ERR-3      ASSUM      ASSUM-ERR  MONIT      22306  3   16 
+MONIT-ERR                                                         22306  3   17 
+MB         MB         PER-CENT   NO-DIM     NO-DIM     MB         22306  3   18 
+MB                                                                22306  3   19 
+       887.        75.        5.1      1.055      0.038     648.  22306  3   20 
+       10.                                                        22306  3   21 
+ENDDATA              6          0                                 22306  3   22 
+ENDSUBENT           21          0                                 22306  399999 
+SUBENT        22306004   20210903                             230322306  4    1 
+BIB                  8         15                                 22306  4    2 
+REACTION  1((47-AG-107(N,G)47-AG-108,,SIG,,MXW)/                  22306  4    3 
+           (79-AU-197(N,G)79-AU-198,,SIG,,MXW))                   22306  4    4 
+          2(47-AG-107(N,G)47-AG-108,,SIG,,MXW)                    22306  4    5 
+DECAY-MON  (79-AU-198-G,3881.0MIN,DG,411.80,0.9558)               22306  4    6 
+MONIT-REF  (,R.Reifarth+,J,EPJ/P,133,424,2018)                    22306  4    7 
+ASSUMED    (ASSUM,47-AG-107(N,G)47-AG-108-M/T,,SIG/RAT)           22306  4    8 
+            Isomeric ratio at kT=0.0253 eV is assumed to be equal 22306  4    9 
+            to that at 25 keV                                     22306  4   10 
+ANALYSIS    Cross section value in subentry 22306.002 is          22306  4   11 
+           renormalized for new gold cross section.               22306  4   12 
+           Measured quantity: cross section ratio                 22306  4   13 
+                          107Ag/197Au = 1.213+-0.093              22306  4   14 
+CORRECTION  Correction for revised gold standard: 681/648 =1.051  22306  4   15 
+STATUS     (TABLE) p.87 of INDC(GER)-0053                         22306  4   16 
+HISTORY    (20210903C) SD                                         22306  4   17 
+ENDBIB              15          0                                 22306  4   18 
+NOCOMMON             0          0                                 22306  4   19 
+DATA                 9          1                                 22306  4   20 
+DATA      1ERR-T     1DATA      2ERR-T     2ERR-3      ASSUM      22306  4   21 
+ASSUM-ERR  MONIT      MONIT-ERR                                   22306  4   22 
+NO-DIM     NO-DIM     MB         MB         PER-CENT   NO-DIM     22306  4   23 
+NO-DIM     MB         MB                                          22306  4   24 
+      1.213     0.093        826.        62.        2.3      1.00922306  4   25 
+      0.047     681.           6.                                 22306  4   26 
+ENDDATA              6          0                                 22306  4   27 
+ENDSUBENT           26          0                                 22306  499999 
+SUBENT        22306005   20210903                             230322306  5    1 
+BIB                  8         15                                 22306  5    2 
+REACTION  1((47-AG-109(N,G)47-AG-110,,SIG,,MXW)/                  22306  5    3 
+           (79-AU-197(N,G)79-AU-198,,SIG,,MXW))                   22306  5    4 
+          2(47-AG-109(N,G)47-AG-110,,SIG,,MXW)                    22306  5    5 
+DECAY-MON  (79-AU-198-G,3881.0MIN,DG,411.80,0.9558)               22306  5    6 
+MONIT-REF  (,R.Reifarth+,J,EPJ/P,133,424,2018)                    22306  5    7 
+ASSUMED    (ASSUM,47-AG-109(N,G)47-AG-110-M/T,,SIG/RAT)           22306  5    8 
+            Isomeric ratio at KT=0.0253 eV is assumed to be equal 22306  5    9 
+            to that at 25 keV                                     22306  5   10 
+ANALYSIS    Cross section value in subentry 22306.003 is          22306  5   11 
+           renormalized for new gold cross section.               22306  5   12 
+           Measured quantity: cross section ratio                 22306  5   13 
+                          109Ag/197Au = ???????                   22306  5   14 
+CORRECTION  Correction for revised gold standard: 681/648 =1.051  22306  5   15 
+STATUS     (TABLE) p.88 of INDC(GER)-0053                         22306  5   16 
+HISTORY    (20210903C) SD                                         22306  5   17 
+ENDBIB              15          0                                 22306  5   18 
+NOCOMMON             0          0                                 22306  5   19 
+DATA                 9          1                                 22306  5   20 
+DATA      1ERR-T     1DATA      2ERR-T     2ERR-3      ASSUM      22306  5   21 
+ASSUM-ERR  MONIT      MONIT-ERR                                   22306  5   22 
+NO-DIM     NO-DIM     MB         MB         PER-CENT   NO-DIM     22306  5   23 
+NO-DIM     MB         MB                                          22306  5   24 
+      1.213     0.093     932.        75.        5.1      1.055   22306  5   25 
+      0.038      681.       6.                                    22306  5   26 
+ENDDATA              6          0                                 22306  5   27 
+ENDSUBENT           26          0                                 22306  599999 
+ENDENTRY             5          0                                 2230699999999 
