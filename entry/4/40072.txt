@@ -1,15 +1,15 @@
-ENTRY            40072   20141114                             416740072  0    1 
-SUBENT        40072001   20141114                             416740072  1    1 
-BIB                 14         71                                 40072  1    2 
+ENTRY            40072   20180129                             417740072  0    1 
+SUBENT        40072001   20180129                             417740072  1    1 
+BIB                 14         72                                 40072  1    2 
 INSTITUTE  (4RUSFEI)                                              40072  1    3 
 REFERENCE  (J,AE,19,(1),3,1965)                                   40072  1    4 
            (J,SJA,19,858,1965) Eng.trans.of AE,19,3,1965          40072  1    5 
-           (R,YFI-1,15,196508)                                    40072  1    6 
-           (R,INDSWG-120E,13,1965)  = R,INDC(CCP)*13,13,1965      40072  1    7 
+           (R,YFI-1,15,1965)                                      40072  1    6 
+           (R,INDSWG-120E,13,1965)= R,INDC(CCP)*13,13,1965)       40072  1    7 
             Engl.translation of YFI-1.                            40072  1    8 
            (R,FEI-3,1965)                                         40072  1    9 
-           (R,YK-9,44,197207) The authors retreated the experimen-40072  1   10 
-            tal data from AE,19,(1),3,1965 considering resonance  40072  1   11 
+           (R,YK-9,44,1972) The authors retreated the experimental40072  1   10 
+            data from AE,19,(1),3,1965 considering resonance      40072  1   11 
             cross section structure and specified absorption      40072  1   12 
             cross section for U-238.                              40072  1   13 
             First author A.A.Vankov (=A.A.Van'kov) .              40072  1   14 
@@ -72,9 +72,10 @@ HISTORY    (19710722C)                                            40072  1   61
            (20150202U) M.M. Articles were checked, excluding      40072  1   71 
            R,FEI-3 ( not available); BIB information was updated  40072  1   72 
            in TITLE,AUTHOR,DETECTOR                               40072  1   73 
-ENDBIB              71          0                                 40072  1   74 
-NOCOMMON             0          0                                 40072  1   75 
-ENDSUBENT           74          0                                 40072  199999 
+           (20180129A) M.M. Thickness was added in Subent 040.    40072  1   74 
+ENDBIB              72          0                                 40072  1   75 
+NOCOMMON             0          0                                 40072  1   76 
+ENDSUBENT           75          0                                 40072  199999 
 SUBENT        40072002   20141114                             416740072  2    1 
 BIB                  5         12                                 40072  2    2 
 REACTION   (24-CR-0(N,G),,SIG)                                    40072  2    3 
@@ -1155,8 +1156,8 @@ ATOMS/B    NO-DIM     NO-DIM     MM                               40072 39   16
 0.305      0.0302     0.005      64.                              40072 39   23 
 ENDDATA              9          0                                 40072 39   24 
 ENDSUBENT           23          0                                 40072 3999999 
-SUBENT        40072040   20141114                             416740072 40    1 
-BIB                  7         24                                 40072 40    2 
+SUBENT        40072040   20180129                             417740072 40    1 
+BIB                  7         26                                 40072 40    2 
 REACTION  1(92-U-238(N,TOT),,TRN)                                 40072 40    3 
           2(92-U-238(N,TOT),,TRN)                                 40072 40    4 
             Exp.transmission.                                     40072 40    5 
@@ -1181,22 +1182,33 @@ MISC-COL   (MISC1) Sample density, nuclei/cm**3 * 10**24 .        40072 40   23
            (MISC2) Sample thickness, mm.                          40072 40   24 
 STATUS     (TABLE) Tables 2a,b of YK-9,44.                        40072 40   25 
 HISTORY    (20150215C)  M.M.                                      40072 40   26 
-ENDBIB              24          0                                 40072 40   27 
-COMMON               2          3                                 40072 40   28 
-EN         EN-ERR                                                 40072 40   29 
-KEV        KEV                                                    40072 40   30 
-23.         1.5                                                   40072 40   31 
-ENDCOMMON            3          0                                 40072 40   32 
-DATA                 6          7                                 40072 40   33 
-DATA      1DATA-ERR  1DATA      2DATA-ERR  2MISC1      MISC2      40072 40   34 
-NO-DIM     NO-DIM     NO-DIM     NO-DIM     SEE TEXT   MM         40072 40   35 
-0.9685     0.0012                           0.0474     1.         40072 40   36 
-0.9217     0.0024     0.9162     0.0023     0.0476     2.         40072 40   37 
-0.8696     0.0033     0.8593     0.0027     0.0473     3.         40072 40   38 
-0.7323     0.0030     0.7391     0.0030     0.0473     5.         40072 40   39 
-0.9316     0.005      0.9182     0.004      0.0124     6.         40072 40   40 
-0.8806     0.004      0.8808     0.006      0.0134     8.         40072 40   41 
-0.8370     0.004      0.8210     0.006      0.0138     10.        40072 40   42 
-ENDDATA              9          0                                 40072 40   43 
-ENDSUBENT           42          0                                 40072 4099999 
+           (20180129A) M.M. Thickness was added in COMMON block.  40072 40   27 
+             (calculated as MISC1*MISC2 by compiler)              40072 40   28 
+ENDBIB              26          0                                 40072 40   29 
+COMMON               2          3                                 40072 40   30 
+EN         EN-ERR                                                 40072 40   31 
+KEV        KEV                                                    40072 40   32 
+23.         1.5                                                   40072 40   33 
+ENDCOMMON            3          0                                 40072 40   34 
+DATA                 7          7                                 40072 40   35 
+THICKNESS  DATA      1DATA-ERR  1DATA      2DATA-ERR  2MISC1      40072 40   36 
+MISC2                                                             40072 40   37 
+ATOMS/B    NO-DIM     NO-DIM     NO-DIM     NO-DIM     SEE TEXT   40072 40   38 
+MM                                                                40072 40   39 
+ 0.00474   0.9685     0.0012                           0.0474     40072 40   40 
+1.                                                                40072 40   41 
+ 0.00744   0.9316     0.005      0.9182     0.004      0.0124     40072 40   42 
+6.                                                                40072 40   43 
+ 0.00952   0.9217     0.0024     0.9162     0.0023     0.0476     40072 40   44 
+2.                                                                40072 40   45 
+ 0.01072   0.8806     0.004      0.8808     0.006      0.0134     40072 40   46 
+8.                                                                40072 40   47 
+ 0.0138    0.8370     0.004      0.8210     0.006      0.0138     40072 40   48 
+10.                                                               40072 40   49 
+ 0.01419   0.8696     0.0033     0.8593     0.0027     0.0473     40072 40   50 
+3.                                                                40072 40   51 
+ 0.02365   0.7323     0.0030     0.7391     0.0030     0.0473     40072 40   52 
+5.                                                                40072 40   53 
+ENDDATA             18          0                                 40072 40   54 
+ENDSUBENT           53          0                                 40072 4099999 
 ENDENTRY            40          0                                 4007299999999 

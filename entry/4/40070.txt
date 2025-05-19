@@ -1,874 +1,914 @@
-ENTRY            40070   20141109                             416740070  0    1 
-SUBENT        40070001   20141109                             416740070  1    1 
-BIB                 15         74                                 40070  1    2 
+ENTRY            40070   20171222                             417740070  0    1 
+SUBENT        40070001   20171222                             417740070  1    1 
+BIB                 15         81                                 40070  1    2 
 INSTITUTE  (4ZZZDUB)                                              40070  1    3 
-REFERENCE  (R,JINR-P3-4992,197004) Main Reference.                40070  1    4 
+REFERENCE  (R,JINR-P3-4992,1970) Main reference.                  40070  1    4 
            (J,SNP,13,255,1971) Engl.translation of:               40070  1    5 
            (J,YF,13,(3),255,1971) Data of Subents 025-027, 030-03140070  1    6 
            (J,AE,19,(1),43,1965) Earlier publication of SUB.002   40070  1    7 
             data. Fist author of article - Van Shi-Di.            40070  1    8 
            (J,SJA,19,907,1965) Engl.trans.of AE,19,43,1965        40070  1    9 
-TITLE      Parameters of neutron resonances for U-233,U-235,Pu-23940070  1   10 
-AUTHOR     (Yu.V.Ryabov, So-Don-Sik, N.Chikov, N.Janeva)          40070  1   11 
-MONITOR    No information                                         40070  1   12 
-INC-SOURCE (REAC) JINR pulsed fast reactor was used               40070  1   13 
-           as neutron source                                      40070  1   14 
-FACILITY   (REAC,4ZZZDUB)  JINR pulsed fast reactor               40070  1   15 
-METHOD     (TOF,TRN) Data were obtained by time of flight method  40070  1   16 
-           with time resolution of 40 and 55 ns/m. Flight path    40070  1   17 
-           was equal to 1010. m. Transmission method was used in  40070  1   18 
-           total cross section measurements.                      40070  1   19 
-             Self-indication method was used in measurements      40070  1   20 
-             of total cross sections and that of fission          40070  1   21 
-             and radiative capture.                               40070  1   22 
-PART-DET   (G) Gamma-particles in fission and radiative capture   40070  1   23 
-                measurements                                      40070  1   24 
-           (N) Neutrons in transmission measurements              40070  1   25 
-DETECTOR   (STANK) In case of transmission measurements liquid    40070  1   26 
-            boron scintillation detector was used. Detailed       40070  1   27 
-            description see the Soviet journal 'Pribory           40070  1   28 
-            i Tekhnika Eksperimenta' ,4,P.63,1965 .               40070  1   29 
-            Registration efficiency 40% for En=100 eV.            40070  1   30 
-            Measurements by self-indication method were carried   40070  1   31 
-            out using large cadmium-loaded liquid scintillation   40070  1   32 
-            detector, Nucl.Electronics,1,P.27,IAEA,Vienna (1962). 40070  1   33 
-            Volume 500 liter, geometry closed to 4PI.             40070  1   34 
-            Registration efficiencies of fission and radiative    40070  1   35 
-           capture were ~65 % and ~30%, respectively.             40070  1   36 
-ANALYSIS   (AREA) Area analysis with correction on the resonance  40070  1   37 
-            wings.   Sample in self-indication measurements       40070  1   38 
-            was placed in centre of scintillation tank            40070  1   39 
-            in geometry similar to 4pi                            40070  1   40 
-CORRECTION For time-dependent background. Time-independent back-  40070  1   41 
-           ground. Room activity. Cosmic radiation.               40070  1   42 
-           Natural gamma activity of the sample and room neutron  40070  1   43 
-           scattering. Background from U-238 and U-234 contamin-  40070  1   44 
-           ations in the plates.                                  40070  1   45 
-           In order to decrease contribution from potential       40070  1   46 
-           scattering obtained from runs with identical lead and  40070  1   47 
-           U-238 samples  cylindrical Li-F6 powder filter was     40070  1   48 
-           placed between sensitive detector volume and sample    40070  1   49 
-INC-SPECT   EN-RES-ERR  are  explained by facility resolution     40070  1   50 
-COVARIANCE   Correlations of level parameters were defined by     40070  1   51 
-           method described in D.J.Hudson,Statistics,Geneva,1964  40070  1   52 
-           using measured data.                                   40070  1   53 
-           Correlation coefficients r(a,b) between values a and b:40070  1   54 
-            (text,page 17 of JINR-P3-4992,1970,                   40070  1   55 
-             text page 257 of J,SNP,13,255,1971)                  40070  1   56 
-            U-235:                                                40070  1   57 
-           r(2*g*GAMMAn0 , GAMMAf)= -0.04 +- 0.18                 40070  1   58 
-           r(2*g*GAMMAn0 , GAMMAcap)= 0.40 +- 0.34                40070  1   59 
-           r(GAMMAf , GAMMAcap)= 0.11 +- 0.26                     40070  1   60 
-            Pu-239:                                               40070  1   61 
-           r(GAMMAn0 , GAMMAf)= 0.30 +- 0.29                      40070  1   62 
-           r(GAMMAn0 , GAMMAcap)= -0.09 +- 0.51                   40070  1   63 
-           r(GAMMAf , GAMMA0cap)= 0.03 +- 0.61                    40070  1   64 
-HISTORY    (19700814C) Compiled at the CJD                        40070  1   65 
-           (19870615A) Several reaction codes (n,f) to (n,abs)    40070  1   66 
-           changed, one author name corrected(So-Don-Sik),        40070  1   67 
-           obsolete keywords changed, ISO-QUANT into reaction     40070  1   68 
-           converted                                              40070  1   69 
-           (20070721A) 2nd Reference was added.                   40070  1   70 
-                       SUB.002 was corrected.  M.M.               40070  1   71 
-           (20141109U) SD: Minor corrections in all Subents. Ref. 40070  1   72 
-           on English transl. of AE was added. ERR-T -> DATA-ERR  40070  1   73 
-           (20150212U) M.M. Articles were checked, BIB information40070  1   74 
-           was updated. Subents 032-038 were added.               40070  1   75 
-           Refs. YF,13,(3),255,1971; SNP,13,255,1971 were added.  40070  1   76 
-ENDBIB              74          0                                 40070  1   77 
-NOCOMMON             0          0                                 40070  1   78 
-ENDSUBENT           77          0                                 40070  199999 
-SUBENT        40070002   20141109                             416740070  2    1 
-BIB                  6         15                                 40070  2    2 
+           (C,65SALZBURG,1,287,1965)                              40070  1   10 
+           (R,JINR-P-1761,1964) Firts author Van Shi-Di .         40070  1   11 
+            (At later measurement the background was improved)    40070  1   12 
+TITLE      Parameters of neutron resonances for U-233,U-235,Pu-23940070  1   13 
+AUTHOR     (Yu.V.Ryabov, So-Don-Sik, N.Chikov, N.Janeva)          40070  1   14 
+MONITOR    No information                                         40070  1   15 
+INC-SOURCE (REAC) JINR pulsed fast reactor was used               40070  1   16 
+           as neutron source                                      40070  1   17 
+FACILITY   (REAC,4ZZZDUB)  JINR pulsed fast reactor               40070  1   18 
+METHOD     (TOF,TRN) Data were obtained by time of flight method  40070  1   19 
+           with time resolution of 40 and 55 ns/m. Flight path    40070  1   20 
+           was equal to 1010. m. Transmission method was used in  40070  1   21 
+           total cross section measurements.                      40070  1   22 
+             Self-indication method was used in measurements      40070  1   23 
+             of total cross sections and that of fission          40070  1   24 
+             and radiative capture.                               40070  1   25 
+PART-DET   (G) Gamma-particles in fission and radiative capture   40070  1   26 
+                measurements                                      40070  1   27 
+           (N) Neutrons in transmission measurements              40070  1   28 
+DETECTOR   (STANK) In case of transmission measurements liquid    40070  1   29 
+            boron scintillation detector was used. Detailed       40070  1   30 
+            description see the Soviet journal 'Pribory           40070  1   31 
+            i Tekhnika Eksperimenta' ,4,P.63,1965 .               40070  1   32 
+            Registration efficiency 40% for En=100 eV.            40070  1   33 
+            Measurements by self-indication method were carried   40070  1   34 
+            out using large cadmium-loaded liquid scintillation   40070  1   35 
+            detector, Nucl.Electronics,1,P.27,IAEA,Vienna (1962). 40070  1   36 
+            Volume 500 liter, geometry closed to 4PI.             40070  1   37 
+            Registration efficiencies of fission and radiative    40070  1   38 
+           capture were ~65 % and ~30%, respectively.             40070  1   39 
+ANALYSIS   (AREA) Area analysis with correction on the resonance  40070  1   40 
+            wings.   Sample in self-indication measurements       40070  1   41 
+            was placed in centre of scintillation tank            40070  1   42 
+            in geometry similar to 4pi                            40070  1   43 
+CORRECTION For time-dependent background. Time-independent back-  40070  1   44 
+           ground. Room activity. Cosmic radiation.               40070  1   45 
+           Natural gamma activity of the sample and room neutron  40070  1   46 
+           scattering. Background from U-238 and U-234            40070  1   47 
+           contaminations in the plates.                          40070  1   48 
+           In order to decrease contribution from potential       40070  1   49 
+           scattering obtained from runs with identical lead and  40070  1   50 
+           U-238 samples a cylindrical Li-F6 powder filter was    40070  1   51 
+           placed between sensitive detector volume and sample    40070  1   52 
+INC-SPECT   EN-RES-ERR  are  explained by facility resolution     40070  1   53 
+COVARIANCE   Correlations of level parameters were defined by     40070  1   54 
+           method described in D.J.Hudson,Statistics,Geneva,1964  40070  1   55 
+           using measured data.                                   40070  1   56 
+           Correlation coefficients r(a,b) between values a and b:40070  1   57 
+            (text,page 17 of JINR-P3-4992,1970,                   40070  1   58 
+             text page 257 of J,SNP,13,255,1971)                  40070  1   59 
+            U-235:                                                40070  1   60 
+           r(2*g*GAMMAn0 , GAMMAf)= -0.04 +- 0.18                 40070  1   61 
+           r(2*g*GAMMAn0 , GAMMAcap)= 0.40 +- 0.34                40070  1   62 
+           r(GAMMAf , GAMMAcap)= 0.11 +- 0.26                     40070  1   63 
+            Pu-239:                                               40070  1   64 
+           r(GAMMAn0 , GAMMAf)= 0.30 +- 0.29                      40070  1   65 
+           r(GAMMAn0 , GAMMAcap)= -0.09 +- 0.51                   40070  1   66 
+           r(GAMMAf , GAMMA0cap)= 0.03 +- 0.61                    40070  1   67 
+HISTORY    (19700814C) Compiled at the CJD                        40070  1   68 
+           (19870615A) Several reaction codes (n,f) to (n,abs)    40070  1   69 
+           changed, one author name corrected(So-Don-Sik),        40070  1   70 
+           obsolete keywords changed, ISO-QUANT into reaction     40070  1   71 
+           converted                                              40070  1   72 
+           (20070721A) 2nd Reference was added.                   40070  1   73 
+                       SUB.002 was corrected.  M.M.               40070  1   74 
+           (20141109U) SD: Minor corrections in all Subents. Ref. 40070  1   75 
+           on English transl. of AE was added. ERR-T -> DATA-ERR  40070  1   76 
+           (20150212U) M.M. Articles were checked, BIB information40070  1   77 
+           was updated. Subents 032-038 were added.               40070  1   78 
+           Refs. YF,13,(3),255,1971; SNP,13,255,1971 were added.  40070  1   79 
+           (20171222A) M.M. Refs. C,65SALZBURG, R,JINR-P-1761 were40070  1   80 
+           added.                                                 40070  1   81 
+           BIB information was updated in Subents 002-010.        40070  1   82 
+           Subent 039 was added.                                  40070  1   83 
+ENDBIB              81          0                                 40070  1   84 
+NOCOMMON             0          0                                 40070  1   85 
+ENDSUBENT           84          0                                 40070  199999 
+SUBENT        40070002   20171222                             417740070  2    1 
+BIB                  6         17                                 40070  2    2 
 REACTION   (92-U-235(N,F),,WID,,S0)                               40070  2    3 
 SAMPLE      Metal  samples were in form of metallic plate and     40070  2    4 
             oxide-protoxide on aluminum  foil, 250. cm2 in square 40070  2    5 
             enriched up to 90.%  in U-235.                        40070  2    6 
-STATUS     (TABLE) Table 3 of JINR-P3-4992,1970;                  40070  2    7 
-            Table of AE,19,(1),43.                                40070  2    8 
-           (DEP,40271001) - There are two additional resonances at40070  2    9 
-           70.62 and 72.49 eV energy in Table of AE,19,(1),43.    40070  2   10 
-FLAG       (1.) Data presented in Table of AE,19,(1),43,          40070  2   11 
-                but absent in JINR-P3-4992,1970.                  40070  2   12 
-           (2.) Data, absent in AE,19,(1),43, but presented in    40070  2   13 
-                JINR-P3-4992.                                     40070  2   14 
-ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  2   15 
-HISTORY    (20070821A) Two data points from Table of AE,19,(1),43 40070  2   16 
-                       were added.  M.M.                          40070  2   17 
-ENDBIB              15          0                                 40070  2   18 
-NOCOMMON             0          0                                 40070  2   19 
-DATA                 6         76                                 40070  2   20 
-EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX  FLAG       40070  2   21 
-EV         EV         B*EV       B*EV       B*EV       NO-DIM     40070  2   22 
- 2.026     0.004        1.47      0.05                            40070  2   23 
- 2.84      0.02         1.15      0.03                            40070  2   24 
- 3.136     0.006        7.9       0.6                             40070  2   25 
- 3.584     0.006       10.3       0.5                             40070  2   26 
- 4.81      0.01         2.6       0.2                             40070  2   27 
- 5.45                   2.1       0.3                             40070  2   28 
- 5.82                   1.6       0.5                             40070  2   29 
- 6.20      0.01         4.        1.                              40070  2   30 
- 6.40      0.01        11.5       0.4                             40070  2   31 
- 7.095     0.015        9.1       0.4                             40070  2   32 
- 8.77      0.02       106.        4.                              40070  2   33 
- 9.30      0.03        13.1       0.5                             40070  2   34 
- 9.73      0.08         4.3       1.0                             40070  2   35 
-10.20      0.03         4.6       0.6                             40070  2   36 
-10.65      0.06                             2.           2.       40070  2   37 
-11.05                                       1.           2.       40070  2   38 
-11.66      0.04        10.3       0.3                             40070  2   39 
-12.39      0.04        47.        2.                              40070  2   40 
-12.82      0.04         3.1       0.4                             40070  2   41 
-13.28      0.05         3.0       0.5                             40070  2   42 
-13.67      0.10         3.7       1.5                             40070  2   43 
-13.98      0.05        30.        7.                              40070  2   44 
-14.50      0.06         7.3       1.9                             40070  2   45 
-15.42      0.05        10.4       0.4                             40070  2   46 
-16.08      0.05         9.6       0.3                             40070  2   47 
-16.66      0.06        13.7       0.6                             40070  2   48 
-16.9       0.1                               1.          2.       40070  2   49 
-18.05      0.06        17.3       0.7                             40070  2   50 
-18.6       0.1                               3.          2.       40070  2   51 
-19.30      0.05       112.        4.                              40070  2   52 
-20.10      0.08         3.5       1.3                             40070  2   53 
-20.62      0.06         5.8       0.8                             40070  2   54 
-21.13      0.05        33.        1.                              40070  2   55 
-22.99      0.06        13.0       0.3                             40070  2   56 
-23.43      0.15         4.5       0.9                             40070  2   57 
-23.68      0.07        30.        7.                              40070  2   58 
-24.25      0.07         7.5       3.0                             40070  2   59 
-24.41      0.15         3.9       1.5                             40070  2   60 
-25.16      0.16         7.4       2.5                             40070  2   61 
-25.56      0.10        11.        4.                              40070  2   62 
-25.84      0.15         3.0       1.5                             40070  2   63 
-26.55      0.07        15.        3.                              40070  2   64 
-27.16      0.07         3.9       1.6                             40070  2   65 
-27.86      0.07        18.        2.                              40070  2   66 
-28.45      0.09         4.6       1.0                             40070  2   67 
-28.85      0.09         2.0       0.7                             40070  2   68 
-29.69      0.09         3.0       0.6                             40070  2   69 
-30.55      0.20         4.1       0.9                             40070  2   70 
-30.86      0.10         6.8       1.5                             40070  2   71 
-32.10      0.09        38.        5.                              40070  2   72 
-33.58      0.09        26.        5.                              40070  2   73 
-34.45      0.14        32.        5.                              40070  2   74 
-34.9       0.2         13.        4.                              40070  2   75 
-35.27      0.10       107.       20.                              40070  2   76 
-38.40      0.11        13.        4.                              40070  2   77 
-39.47      0.11        39.        6.                              40070  2   78 
-39.9       0.2          8.        3.        2.                    40070  2   79 
-40.50      0.15        12.        4.        2.                    40070  2   80 
-41.3       0.2          7.        3.        2.                    40070  2   81 
-41.5       0.2          4.0       1.5       2.                    40070  2   82 
-41.8       0.2         17.        5.        2.                    40070  2   83 
-42.2       0.3          4.0       1.7       2.                    40070  2   84 
-42.7       0.3          2.0       0.8       2.                    40070  2   85 
-43.4       0.2          6.        2.        2.                    40070  2   86 
-43.9       0.2          9.        3.        2.                    40070  2   87 
-44.6       0.2         12.        5.        2.                    40070  2   88 
-45.0       0.3          6.0       2.5       2.                    40070  2   89 
-45.8       0.2          5.        2.        2.                    40070  2   90 
-47.06      0.14        23.        5.                              40070  2   91 
-48.00      0.15        10.        3.        2.                    40070  2   92 
-48.3       0.2         12.        5.        2.                    40070  2   93 
-48.6       0.2          6.0       2.5       2.                    40070  2   94 
-49.3       0.3          7.        2.        2.                    40070  2   95 
-50.2       0.3          4.0       1.5       2.                    40070  2   96 
-70.62      0.26       66.0                  1.                    40070  2   97 
-72.49      0.28       34.0                  1.                    40070  2   98 
-ENDDATA             78          0                                 40070  2   99 
-ENDSUBENT           98          0                                 40070  299999 
-SUBENT        40070003   20141109                             416740070  3    1 
-BIB                  4          6                                 40070  3    2 
+STATUS     (TABLE) Table 3 of JINR-P3-4992,1970 (2nd column);     40070  2    7 
+            Table of AE,19,(1),43,1965.                           40070  2    8 
+            Table 1 of C,65SALZBURG,1,287,1965 (3rd column) .     40070  2    9 
+             =Table of R,JINR-P-1761,1964                         40070  2   10 
+           (DEP,40271001) - There are two additional resonances at40070  2   11 
+           70.62 and 72.49 eV energy in Table of AE,19,(1),43,196540070  2   12 
+FLAG       (1.) Data presented in Table of AE,19,(1),43,1965      40070  2   13 
+                but absent in JINR-P3-4992,1970.                  40070  2   14 
+           (2.) Data, absent in AE,19,(1),43,1965 but presented in40070  2   15 
+                JINR-P3-4992,1970.                                40070  2   16 
+ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  2   17 
+HISTORY    (20070821A) Two data points from Table of AE,19,43,196540070  2   18 
+                       were added.  M.M.                          40070  2   19 
+ENDBIB              17          0                                 40070  2   20 
+NOCOMMON             0          0                                 40070  2   21 
+DATA                 6         76                                 40070  2   22 
+EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX  FLAG       40070  2   23 
+EV         EV         B*EV       B*EV       B*EV       NO-DIM     40070  2   24 
+ 2.026     0.004        1.47      0.05                            40070  2   25 
+ 2.84      0.02         1.15      0.03                            40070  2   26 
+ 3.136     0.006        7.9       0.6                             40070  2   27 
+ 3.584     0.006       10.3       0.5                             40070  2   28 
+ 4.81      0.01         2.6       0.2                             40070  2   29 
+ 5.45                   2.1       0.3                             40070  2   30 
+ 5.82                   1.6       0.5                             40070  2   31 
+ 6.20      0.01         4.        1.                              40070  2   32 
+ 6.40      0.01        11.5       0.4                             40070  2   33 
+ 7.095     0.015        9.1       0.4                             40070  2   34 
+ 8.77      0.02       106.        4.                              40070  2   35 
+ 9.30      0.03        13.1       0.5                             40070  2   36 
+ 9.73      0.08         4.3       1.0                             40070  2   37 
+10.20      0.03         4.6       0.6                             40070  2   38 
+10.65      0.06                             2.           2.       40070  2   39 
+11.05                                       1.           2.       40070  2   40 
+11.66      0.04        10.3       0.3                             40070  2   41 
+12.39      0.04        47.        2.                              40070  2   42 
+12.82      0.04         3.1       0.4                             40070  2   43 
+13.28      0.05         3.0       0.5                             40070  2   44 
+13.67      0.10         3.7       1.5                             40070  2   45 
+13.98      0.05        30.        7.                              40070  2   46 
+14.50      0.06         7.3       1.9                             40070  2   47 
+15.42      0.05        10.4       0.4                             40070  2   48 
+16.08      0.05         9.6       0.3                             40070  2   49 
+16.66      0.06        13.7       0.6                             40070  2   50 
+16.9       0.1                               1.          2.       40070  2   51 
+18.05      0.06        17.3       0.7                             40070  2   52 
+18.6       0.1                               3.          2.       40070  2   53 
+19.30      0.05       112.        4.                              40070  2   54 
+20.10      0.08         3.5       1.3                             40070  2   55 
+20.62      0.06         5.8       0.8                             40070  2   56 
+21.13      0.05        33.        1.                              40070  2   57 
+22.99      0.06        13.0       0.3                             40070  2   58 
+23.43      0.15         4.5       0.9                             40070  2   59 
+23.68      0.07        30.        7.                              40070  2   60 
+24.25      0.07         7.5       3.0                             40070  2   61 
+24.41      0.15         3.9       1.5                             40070  2   62 
+25.16      0.16         7.4       2.5                             40070  2   63 
+25.56      0.10        11.        4.                              40070  2   64 
+25.84      0.15         3.0       1.5                             40070  2   65 
+26.55      0.07        15.        3.                              40070  2   66 
+27.16      0.07         3.9       1.6                             40070  2   67 
+27.86      0.07        18.        2.                              40070  2   68 
+28.45      0.09         4.6       1.0                             40070  2   69 
+28.85      0.09         2.0       0.7                             40070  2   70 
+29.69      0.09         3.0       0.6                             40070  2   71 
+30.55      0.20         4.1       0.9                             40070  2   72 
+30.86      0.10         6.8       1.5                             40070  2   73 
+32.10      0.09        38.        5.                              40070  2   74 
+33.58      0.09        26.        5.                              40070  2   75 
+34.45      0.14        32.        5.                              40070  2   76 
+34.9       0.2         13.        4.                              40070  2   77 
+35.27      0.10       107.       20.                              40070  2   78 
+38.40      0.11        13.        4.                              40070  2   79 
+39.47      0.11        39.        6.                              40070  2   80 
+39.9       0.2          8.        3.                   2.         40070  2   81 
+40.50      0.15        12.        4.                   2.         40070  2   82 
+41.3       0.2          7.        3.                   2.         40070  2   83 
+41.5       0.2          4.0       1.5                  2.         40070  2   84 
+41.8       0.2         17.        5.                   2.         40070  2   85 
+42.2       0.3          4.0       1.7                  2.         40070  2   86 
+42.7       0.3          2.0       0.8                  2.         40070  2   87 
+43.4       0.2          6.        2.                   2.         40070  2   88 
+43.9       0.2          9.        3.                   2.         40070  2   89 
+44.6       0.2         12.        5.                   2.         40070  2   90 
+45.0       0.3          6.0       2.5                  2.         40070  2   91 
+45.8       0.2          5.        2.                   2.         40070  2   92 
+47.06      0.14        23.        5.                              40070  2   93 
+48.00      0.15        10.        3.                   2.         40070  2   94 
+48.3       0.2         12.        5.                   2.         40070  2   95 
+48.6       0.2          6.0       2.5                  2.         40070  2   96 
+49.3       0.3          7.        2.                   2.         40070  2   97 
+50.2       0.3          4.0       1.5                  2.         40070  2   98 
+70.62      0.26       66.0                             1.         40070  2   99 
+72.49      0.28       34.0                             1.         40070  2  100 
+ENDDATA             78          0                                 40070  2  101 
+ENDSUBENT          100          0                                 40070  299999 
+SUBENT        40070003   20171222                             417740070  3    1 
+BIB                  4          7                                 40070  3    2 
 REACTION   (92-U-235(N,G),,WID,,S0)                               40070  3    3 
 SAMPLE      Samples were in form of metallic plate and            40070  3    4 
             oxide -protoxide on al foil,250 cm**2                 40070  3    5 
             enriched up to 90%.                                   40070  3    6 
 ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  3    7 
-STATUS     (TABLE) Table 3 of JINR-P3-4992,1970.                  40070  3    8 
-ENDBIB               6          0                                 40070  3    9 
-NOCOMMON             0          0                                 40070  3   10 
-DATA                 5         74                                 40070  3   11 
-EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070  3   12 
-EV         EV         B*EV       B*EV       B*EV                  40070  3   13 
- 2.026     0.004       4.1        0.6                             40070  3   14 
- 2.84      0.02        0.35       0.14                            40070  3   15 
- 3.136     0.006       2.6        0.4                             40070  3   16 
- 3.584     0.006       6.4        0.7                             40070  3   17 
- 4.81      0.01       16.8        0.9                             40070  3   18 
- 5.45                  4.0        1.3                             40070  3   19 
- 5.82                  1.0        0.7                             40070  3   20 
- 6.20      0.01        2.2        0.8                             40070  3   21 
- 6.40      0.01       53.         5.                              40070  3   22 
- 7.095     0.015      13.         1.                              40070  3   23 
- 8.77      0.02       58.         5.                              40070  3   24 
- 9.30      0.03        6.8        0.9                             40070  3   25 
- 9.73      0.08        2.         1.                              40070  3   26 
-10.20      0.03        4.0        0.8                             40070  3   27 
-10.65      0.06                              1.                   40070  3   28 
-11.05                                        2.                   40070  3   29 
-11.66      0.04       63.         5.                              40070  3   30 
-12.39      0.04       85.         5.                              40070  3   31 
-12.82      0.04        1.9        0.6                             40070  3   32 
-13.28      0.05        2.6        0.8                             40070  3   33 
-13.67      0.10        1.5        0.8                             40070  3   34 
-13.98      0.05        7.         3.                              40070  3   35 
-14.50      0.06        8.7        2.7                             40070  3   36 
-15.42      0.05       12.         1.                              40070  3   37 
-16.08      0.05       20.         2.                              40070  3   38 
-16.66      0.06        9.         1.                              40070  3   39 
-16.9       0.1                               3.                   40070  3   40 
-18.05      0.06        9.         2.                              40070  3   41 
-18.6       0.1                               2.                   40070  3   42 
-19.30      0.05       90.        10.                              40070  3   43 
-20.10      0.08        2.5        1.4                             40070  3   44 
-20.62      0.06       10.4        2.2                             40070  3   45 
-21.13      0.05       53.        10.                              40070  3   46 
-22.99      0.06       16.         3.                              40070  3   47 
-23.43      0.15       26.         8.                              40070  3   48 
-23.68      0.07       19.         5.                              40070  3   49 
-24.25      0.07       10.         5.                              40070  3   50 
-24.41      0.15        3.9        1.9                             40070  3   51 
-25.16      0.16        4.1        1.8                             40070  3   52 
-25.56      0.10       20.         9.                              40070  3   53 
-25.84      0.15        2.4        1.5                             40070  3   54 
-26.55      0.07        6.2        2.0                             40070  3   55 
-27.16      0.07        4.6        2.1                             40070  3   56 
-27.86      0.07        8.         2.                              40070  3   57 
-28.45      0.09        3.2        1.2                             40070  3   58 
-28.85      0.09        2.7        1.3                             40070  3   59 
-29.69      0.09        5.3        1.4                             40070  3   60 
-30.55      0.20        5.4        2.0                             40070  3   61 
-30.86      0.10        8.6        3.4                             40070  3   62 
-32.10      0.09       42.         6.                              40070  3   63 
-33.58      0.09       41.         6.                              40070  3   64 
-34.45      0.14       48.        12.                              40070  3   65 
-34.9       0.2        21.         9.                              40070  3   66 
-35.27      0.10       58.        17.                              40070  3   67 
-38.40      0.11        9.         4.                              40070  3   68 
-39.47      0.11       47.        11.0                             40070  3   69 
-39.9       0.2         5.0        2.5                             40070  3   70 
-40.50      0.15        5.         3.                              40070  3   71 
-41.3       0.2         9.         4.                              40070  3   72 
-41.5       0.2         3.0        1.7                             40070  3   73 
-41.8       0.2        22.         8.                              40070  3   74 
-42.2       0.3         3.0        1.7                             40070  3   75 
-42.7       0.3         2.8        1.4                             40070  3   76 
-43.4       0.2         6.6        2.5                             40070  3   77 
-43.9       0.2         7.         3.                              40070  3   78 
-44.6       0.2         4.         2.                              40070  3   79 
-45.0       0.3         2.2        1.5                             40070  3   80 
-45.8       0.2         8.5        4.2                             40070  3   81 
-47.06      0.14       27.         7.                              40070  3   82 
-48.00      0.15       16.         6.                              40070  3   83 
-48.3       0.2        10.         6.                              40070  3   84 
-48.6       0.2         3.0        1.7                             40070  3   85 
-49.3       0.3        13.         5.                              40070  3   86 
-50.2       0.3         6.         3.                              40070  3   87 
-ENDDATA             76          0                                 40070  3   88 
-ENDSUBENT           87          0                                 40070  399999 
-SUBENT        40070004   20141109                             416740070  4    1 
-BIB                  4          6                                 40070  4    2 
+STATUS     (TABLE) Table 3 of JINR-P3-4992,1970 (3rd column).     40070  3    8 
+            Table 1 of C,65SALZBURG,1,287,1965 (4th column) .     40070  3    9 
+ENDBIB               7          0                                 40070  3   10 
+NOCOMMON             0          0                                 40070  3   11 
+DATA                 5         74                                 40070  3   12 
+EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070  3   13 
+EV         EV         B*EV       B*EV       B*EV                  40070  3   14 
+ 2.026     0.004       4.1        0.6                             40070  3   15 
+ 2.84      0.02        0.35       0.14                            40070  3   16 
+ 3.136     0.006       2.6        0.4                             40070  3   17 
+ 3.584     0.006       6.4        0.7                             40070  3   18 
+ 4.81      0.01       16.8        0.9                             40070  3   19 
+ 5.45                  4.0        1.3                             40070  3   20 
+ 5.82                  1.0        0.7                             40070  3   21 
+ 6.20      0.01        2.2        0.8                             40070  3   22 
+ 6.40      0.01       53.         5.                              40070  3   23 
+ 7.095     0.015      13.         1.                              40070  3   24 
+ 8.77      0.02       58.         5.                              40070  3   25 
+ 9.30      0.03        6.8        0.9                             40070  3   26 
+ 9.73      0.08        2.         1.                              40070  3   27 
+10.20      0.03        4.0        0.8                             40070  3   28 
+10.65      0.06                              1.                   40070  3   29 
+11.05                                        2.                   40070  3   30 
+11.66      0.04       63.         5.                              40070  3   31 
+12.39      0.04       85.         5.                              40070  3   32 
+12.82      0.04        1.9        0.6                             40070  3   33 
+13.28      0.05        2.6        0.8                             40070  3   34 
+13.67      0.10        1.5        0.8                             40070  3   35 
+13.98      0.05        7.         3.                              40070  3   36 
+14.50      0.06        8.7        2.7                             40070  3   37 
+15.42      0.05       12.         1.                              40070  3   38 
+16.08      0.05       20.         2.                              40070  3   39 
+16.66      0.06        9.         1.                              40070  3   40 
+16.9       0.1                               3.                   40070  3   41 
+18.05      0.06        9.         2.                              40070  3   42 
+18.6       0.1                               2.                   40070  3   43 
+19.30      0.05       90.        10.                              40070  3   44 
+20.10      0.08        2.5        1.4                             40070  3   45 
+20.62      0.06       10.4        2.2                             40070  3   46 
+21.13      0.05       53.        10.                              40070  3   47 
+22.99      0.06       16.         3.                              40070  3   48 
+23.43      0.15       26.         8.                              40070  3   49 
+23.68      0.07       19.         5.                              40070  3   50 
+24.25      0.07       10.         5.                              40070  3   51 
+24.41      0.15        3.9        1.9                             40070  3   52 
+25.16      0.16        4.1        1.8                             40070  3   53 
+25.56      0.10       20.         9.                              40070  3   54 
+25.84      0.15        2.4        1.5                             40070  3   55 
+26.55      0.07        6.2        2.0                             40070  3   56 
+27.16      0.07        4.6        2.1                             40070  3   57 
+27.86      0.07        8.         2.                              40070  3   58 
+28.45      0.09        3.2        1.2                             40070  3   59 
+28.85      0.09        2.7        1.3                             40070  3   60 
+29.69      0.09        5.3        1.4                             40070  3   61 
+30.55      0.20        5.4        2.0                             40070  3   62 
+30.86      0.10        8.6        3.4                             40070  3   63 
+32.10      0.09       42.         6.                              40070  3   64 
+33.58      0.09       41.         6.                              40070  3   65 
+34.45      0.14       48.        12.                              40070  3   66 
+34.9       0.2        21.         9.                              40070  3   67 
+35.27      0.10       58.        17.                              40070  3   68 
+38.40      0.11        9.         4.                              40070  3   69 
+39.47      0.11       47.        11.0                             40070  3   70 
+39.9       0.2         5.0        2.5                             40070  3   71 
+40.50      0.15        5.         3.                              40070  3   72 
+41.3       0.2         9.         4.                              40070  3   73 
+41.5       0.2         3.0        1.7                             40070  3   74 
+41.8       0.2        22.         8.                              40070  3   75 
+42.2       0.3         3.0        1.7                             40070  3   76 
+42.7       0.3         2.8        1.4                             40070  3   77 
+43.4       0.2         6.6        2.5                             40070  3   78 
+43.9       0.2         7.         3.                              40070  3   79 
+44.6       0.2         4.         2.                              40070  3   80 
+45.0       0.3         2.2        1.5                             40070  3   81 
+45.8       0.2         8.5        4.2                             40070  3   82 
+47.06      0.14       27.         7.                              40070  3   83 
+48.00      0.15       16.         6.                              40070  3   84 
+48.3       0.2        10.         6.                              40070  3   85 
+48.6       0.2         3.0        1.7                             40070  3   86 
+49.3       0.3        13.         5.                              40070  3   87 
+50.2       0.3         6.         3.                              40070  3   88 
+ENDDATA             76          0                                 40070  3   89 
+ENDSUBENT           88          0                                 40070  399999 
+SUBENT        40070004   20171222                             417740070  4    1 
+BIB                  6         14                                 40070  4    2 
 REACTION   (92-U-235(N,TOT),,WID,,S0)                             40070  4    3 
 SAMPLE     Samples were in form of metallic plate and             40070  4    4 
            oxide-protoxide on Al foil, 250 cm**2                  40070  4    5 
            enriched up to 90%.                                    40070  4    6 
-ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  4    7 
-STATUS     (TABLE) Table 3 of JINR-P3-4992,1970                   40070  4    8 
-ENDBIB               6          0                                 40070  4    9 
-NOCOMMON             0          0                                 40070  4   10 
-DATA                 4         31                                 40070  4   11 
-EN-RES     EN-RES-ERR DATA       DATA-ERR                         40070  4   12 
-EV         EV         B*EV       B*EV                             40070  4   13 
-    2.026      0.004      4.94       0.49                         40070  4   14 
-    3.136      0.006     12.27       0.54                         40070  4   15 
-    3.584      0.006     19.01       0.65                         40070  4   16 
-    4.81       0.01      16.7        0.7                          40070  4   17 
-    5.45                  4.8        0.9                          40070  4   18 
-    6.20       0.01       6.3        1.2                          40070  4   19 
-    6.40       0.01      47.1        3.3                          40070  4   20 
-    7.095      0.015     20.5        0.7                          40070  4   21 
-    8.77       0.02     182.         5.3                          40070  4   22 
-    9.30       0.03      18.3        0.8                          40070  4   23 
-   10.20       0.03       8.4        0.8                          40070  4   24 
-   11.66       0.04      67.6        2.7                          40070  4   25 
-   12.39       0.04     124.9        3.7                          40070  4   26 
-   12.82       0.04       3.8        0.6                          40070  4   27 
-   13.28       0.05       5.3        0.6                          40070  4   28 
-   14.50       0.06       9.7        1.3                          40070  4   29 
-   15.42       0.05      19.9        0.8                          40070  4   30 
-   16.08       0.05      28.1        1.1                          40070  4   31 
-   16.66       0.06      21.7        0.8                          40070  4   32 
-   18.05       0.06      27.2        1.6                          40070  4   33 
-   19.30       0.05     223.0        7.8                          40070  4   34 
-   21.13       0.05      87.2        5.5                          40070  4   35 
-   22.99       0.06      24.2        1.8                          40070  4   36 
-   23.68       0.07      50.7        9.3                          40070  4   37 
-   24.25       0.07      17.9        3.0                          40070  4   38 
-   25.56       0.10      31.9        9.5                          40070  4   39 
-   26.55       0.07      21.8        3.7                          40070  4   40 
-   27.86       0.07      26.6        3.1                          40070  4   41 
-   32.10       0.09      74.1        6.5                          40070  4   42 
-   33.58       0.09      72.0        7.7                          40070  4   43 
-   39.47       0.11      91.6       11.9                          40070  4   44 
-ENDDATA             33          0                                 40070  4   45 
-ENDSUBENT           44          0                                 40070  499999 
-SUBENT        40070005   20141109                             416740070  5    1 
-BIB                  4          6                                 40070  5    2 
+ANALYSIS    Determined from transmission.                         40070  4    7 
+COMMENT    Of compiler. In some cases data are questionable -     40070  4    8 
+            SIG0*GAMMAtot (Subent 004) is some less than          40070  4    9 
+            SIG0(GAMMAfis+GAMMAcapture) (Subent 005),             40070  4   10 
+            taking into account the limits of errors,             40070  4   11 
+            for resonances 4.81, 6.40, 14.50, 15.42 eV.           40070  4   12 
+ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  4   13 
+STATUS     (TABLE) Table 3 of JINR-P3-4992,1970 (4th column)      40070  4   14 
+            Table 1 of C,65SALZBURG,1,287,1965 (6th column) -     40070  4   15 
+             different values .                                   40070  4   16 
+ENDBIB              14          0                                 40070  4   17 
+NOCOMMON             0          0                                 40070  4   18 
+DATA                 4         31                                 40070  4   19 
+EN-RES     EN-RES-ERR DATA       DATA-ERR                         40070  4   20 
+EV         EV         B*EV       B*EV                             40070  4   21 
+    2.026      0.004      4.94       0.49                         40070  4   22 
+    3.136      0.006     12.27       0.54                         40070  4   23 
+    3.584      0.006     19.01       0.65                         40070  4   24 
+    4.81       0.01      16.7        0.7                          40070  4   25 
+    5.45                  4.8        0.9                          40070  4   26 
+    6.20       0.01       6.3        1.2                          40070  4   27 
+    6.40       0.01      47.1        3.3                          40070  4   28 
+    7.095      0.015     20.5        0.7                          40070  4   29 
+    8.77       0.02     182.         5.3                          40070  4   30 
+    9.30       0.03      18.3        0.8                          40070  4   31 
+   10.20       0.03       8.4        0.8                          40070  4   32 
+   11.66       0.04      67.6        2.7                          40070  4   33 
+   12.39       0.04     124.9        3.7                          40070  4   34 
+   12.82       0.04       3.8        0.6                          40070  4   35 
+   13.28       0.05       5.3        0.6                          40070  4   36 
+   14.50       0.06       9.7        1.3                          40070  4   37 
+   15.42       0.05      19.9        0.8                          40070  4   38 
+   16.08       0.05      28.1        1.1                          40070  4   39 
+   16.66       0.06      21.7        0.8                          40070  4   40 
+   18.05       0.06      27.2        1.6                          40070  4   41 
+   19.30       0.05     223.0        7.8                          40070  4   42 
+   21.13       0.05      87.2        5.5                          40070  4   43 
+   22.99       0.06      24.2        1.8                          40070  4   44 
+   23.68       0.07      50.7        9.3                          40070  4   45 
+   24.25       0.07      17.9        3.0                          40070  4   46 
+   25.56       0.10      31.9        9.5                          40070  4   47 
+   26.55       0.07      21.8        3.7                          40070  4   48 
+   27.86       0.07      26.6        3.1                          40070  4   49 
+   32.10       0.09      74.1        6.5                          40070  4   50 
+   33.58       0.09      72.0        7.7                          40070  4   51 
+   39.47       0.11      91.6       11.9                          40070  4   52 
+ENDDATA             33          0                                 40070  4   53 
+ENDSUBENT           52          0                                 40070  499999 
+SUBENT        40070005   20171222                             417740070  5    1 
+BIB                  6         16                                 40070  5    2 
 REACTION   (92-U-235(N,ABS),,WID,,S0)                             40070  5    3 
 SAMPLE      Samples were in form of metallic plate and            40070  5    4 
             oxide-protoxide on aluminum  foil,250 cm**2           40070  5    5 
             enriched up to 90%                                    40070  5    6 
-ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  5    7 
-STATUS     (TABLE) Table 3 of JINR-P3-4992,1970                   40070  5    8 
-ENDBIB               6          0                                 40070  5    9 
-NOCOMMON             0          0                                 40070  5   10 
-DATA                 5         76                                 40070  5   11 
-EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070  5   12 
-EV         EV         B*EV       B*EV       B*EV                  40070  5   13 
-    2.026      0.004      5.57       0.60                         40070  5   14 
-    2.84       0.02       1.5        0.3                          40070  5   15 
-    3.136      0.006     10.5        0.8                          40070  5   16 
-    3.584      0.006     16.7        0.9                          40070  5   17 
-    4.81       0.01      19.4        0.9                          40070  5   18 
-    5.45                  6.1        1.4                          40070  5   19 
-    5.82                  2.6        0.9                          40070  5   20 
-    6.20       0.01       6.2        1.3                          40070  5   21 
-    6.40       0.01      65.         6.                           40070  5   22 
-    7.095      0.015     22.1        1.0                          40070  5   23 
-    8.77       0.02     164.         6.0                          40070  5   24 
-    9.30       0.03      20.         1.0                          40070  5   25 
-    9.73       0.08       6.3        1.4                          40070  5   26 
-   10.20       0.03       8.6        1.0                          40070  5   27 
-   10.65       0.06                          3.                   40070  5   28 
-   11.05                                     3.                   40070  5   29 
-   11.66       0.04      73.         5.                           40070  5   30 
-   12.39       0.04     132.         5.                           40070  5   31 
-   12.82       0.04       5.0        0.8                          40070  5   32 
-   13.28       0.05       5.6        0.9                          40070  5   33 
-   13.67       0.10       5.2        2.1                          40070  5   34 
-   13.98       0.05      37.         8.                           40070  5   35 
-   14.50       0.06      16.         3.                           40070  5   36 
-   15.42       0.05      22.         1.                           40070  5   37 
-   16.08       0.05      29.6        2.0                          40070  5   38 
-   16.66       0.06      22.7        1.2                          40070  5   39 
-   16.9        0.1                           4.                   40070  5   40 
-   18.05       0.06      26.3        2.1                          40070  5   41 
-   18.6        0.1                           5.                   40070  5   42 
-   19.30       0.05     202.        11.                           40070  5   43 
-   20.10       0.08       6.0        1.9                          40070  5   44 
-   20.62       0.06      16.2        2.3                          40070  5   45 
-   21.13       0.05      86.        10.                           40070  5   46 
-   21.8        0.1                           1.                   40070  5   47 
-   22.4        0.1                           1.                   40070  5   48 
-   22.99       0.06      29.         3.                           40070  5   49 
-   23.43       0.15      30.5        8.1                          40070  5   50 
-   23.68       0.07      49.         9.                           40070  5   51 
-   24.25       0.07      17.5        5.8                          40070  5   52 
-   24.41       0.15       7.8        2.4                          40070  5   53 
-   25.16       0.16      11.5        3.1                          40070  5   54 
-   25.56       0.10      31.        10.                           40070  5   55 
-   25.84       0.15       5.4        2.1                          40070  5   56 
-   26.55       0.07      21.2        3.6                          40070  5   57 
-   27.16       0.07       8.5        2.6                          40070  5   58 
-   27.86       0.07      26.         3.                           40070  5   59 
-   28.45       0.09       7.8        1.5                          40070  5   60 
-   28.85       0.09       4.7        1.5                          40070  5   61 
-   29.69       0.09       8.3        1.5                          40070  5   62 
-   30.55       0.20       9.5        2.2                          40070  5   63 
-   30.88       0.10      16.4        3.7                          40070  5   64 
-   32.10       0.09      80.0        8.                           40070  5   65 
-   33.58       0.09      67.         8.                           40070  5   66 
-   34.45       0.14      80.        13.                           40070  5   67 
-   34.9        0.2       34.        10.                           40070  5   68 
-   35.27       0.10     165.        26.                           40070  5   69 
-   38.40       0.11      22.         6.                           40070  5   70 
-   39.47       0.11      86.        13.                           40070  5   71 
-   39.9        0.2       13.         4.                           40070  5   72 
-   40.50       0.15      17.         5.                           40070  5   73 
-   41.3        0.2       16.         5.                           40070  5   74 
-   41.5        0.2        7.0        2.3                          40070  5   75 
-   41.8        0.2       39.        10.                           40070  5   76 
-   42.2        0.3        7.0        2.4                          40070  5   77 
-   42.7        0.3        4.8        1.6                          40070  5   78 
-   43.4        0.2       12.6        3.3                          40070  5   79 
-   43.9        0.2       16.         4.                           40070  5   80 
-   44.6        0.2       16.         6.                           40070  5   81 
-   45.0        0.3        8.2        3.0                          40070  5   82 
-   45.8        0.2       13.5        4.5                          40070  5   83 
-   47.06       0.14      50.         8.                           40070  5   84 
-   48.00       0.15      26.         7.                           40070  5   85 
-   48.3        0.2       22.         8.                           40070  5   86 
-   48.6        0.2        9.         3.                           40070  5   87 
-   49.3        0.3       20.         6.                           40070  5   88 
-   50.2        0.3       10.         3.                           40070  5   89 
-ENDDATA             78          0                                 40070  5   90 
-ENDSUBENT           89          0                                 40070  599999 
-SUBENT        40070006   20141109                             416740070  6    1 
-BIB                  4          6                                 40070  6    2 
+ANALYSIS    Determined as SIG0*(GAMMAfission+GAMMAcapture)        40070  5    7 
+COMMENT    Of compiler. In some cases data are questionable -     40070  5    8 
+            SIG0*GAMMAtot (Subent 004) is some less than          40070  5    9 
+            SIG0(GAMMAfis+GAMMAcapture) (Subent 005),             40070  5   10 
+            taking into account the limits of errors,             40070  5   11 
+            for resonances 4.81, 6.40, 14.50, 15.42 eV.           40070  5   12 
+ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  5   13 
+STATUS     (TABLE) Table 3 of JINR-P3-4992,1970 (5th column)      40070  5   14 
+            Table 1 of C,65SALZBURG,1,287,1965 (5th column) -     40070  5   15 
+             almost the same data                                 40070  5   16 
+           (DEP,40070002) SIG0*GAMMAfission                       40070  5   17 
+           (DEP,40070003) SIG0*GAMMAcapture                       40070  5   18 
+ENDBIB              16          0                                 40070  5   19 
+NOCOMMON             0          0                                 40070  5   20 
+DATA                 5         76                                 40070  5   21 
+EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070  5   22 
+EV         EV         B*EV       B*EV       B*EV                  40070  5   23 
+    2.026      0.004      5.57       0.60                         40070  5   24 
+    2.84       0.02       1.5        0.3                          40070  5   25 
+    3.136      0.006     10.5        0.8                          40070  5   26 
+    3.584      0.006     16.7        0.9                          40070  5   27 
+    4.81       0.01      19.4        0.9                          40070  5   28 
+    5.45                  6.1        1.4                          40070  5   29 
+    5.82                  2.6        0.9                          40070  5   30 
+    6.20       0.01       6.2        1.3                          40070  5   31 
+    6.40       0.01      65.         6.                           40070  5   32 
+    7.095      0.015     22.1        1.0                          40070  5   33 
+    8.77       0.02     164.         6.0                          40070  5   34 
+    9.30       0.03      20.         1.0                          40070  5   35 
+    9.73       0.08       6.3        1.4                          40070  5   36 
+   10.20       0.03       8.6        1.0                          40070  5   37 
+   10.65       0.06                          3.                   40070  5   38 
+   11.05                                     3.                   40070  5   39 
+   11.66       0.04      73.         5.                           40070  5   40 
+   12.39       0.04     132.         5.                           40070  5   41 
+   12.82       0.04       5.0        0.8                          40070  5   42 
+   13.28       0.05       5.6        0.9                          40070  5   43 
+   13.67       0.10       5.2        2.1                          40070  5   44 
+   13.98       0.05      37.         8.                           40070  5   45 
+   14.50       0.06      16.         3.                           40070  5   46 
+   15.42       0.05      22.         1.                           40070  5   47 
+   16.08       0.05      29.6        2.0                          40070  5   48 
+   16.66       0.06      22.7        1.2                          40070  5   49 
+   16.9        0.1                           4.                   40070  5   50 
+   18.05       0.06      26.3        2.1                          40070  5   51 
+   18.6        0.1                           5.                   40070  5   52 
+   19.30       0.05     202.        11.                           40070  5   53 
+   20.10       0.08       6.0        1.9                          40070  5   54 
+   20.62       0.06      16.2        2.3                          40070  5   55 
+   21.13       0.05      86.        10.                           40070  5   56 
+   21.8        0.1                           1.                   40070  5   57 
+   22.4        0.1                           1.                   40070  5   58 
+   22.99       0.06      29.         3.                           40070  5   59 
+   23.43       0.15      30.5        8.1                          40070  5   60 
+   23.68       0.07      49.         9.                           40070  5   61 
+   24.25       0.07      17.5        5.8                          40070  5   62 
+   24.41       0.15       7.8        2.4                          40070  5   63 
+   25.16       0.16      11.5        3.1                          40070  5   64 
+   25.56       0.10      31.        10.                           40070  5   65 
+   25.84       0.15       5.4        2.1                          40070  5   66 
+   26.55       0.07      21.2        3.6                          40070  5   67 
+   27.16       0.07       8.5        2.6                          40070  5   68 
+   27.86       0.07      26.         3.                           40070  5   69 
+   28.45       0.09       7.8        1.5                          40070  5   70 
+   28.85       0.09       4.7        1.5                          40070  5   71 
+   29.69       0.09       8.3        1.5                          40070  5   72 
+   30.55       0.20       9.5        2.2                          40070  5   73 
+   30.88       0.10      16.4        3.7                          40070  5   74 
+   32.10       0.09      80.0        8.                           40070  5   75 
+   33.58       0.09      67.         8.                           40070  5   76 
+   34.45       0.14      80.        13.                           40070  5   77 
+   34.9        0.2       34.        10.                           40070  5   78 
+   35.27       0.10     165.        26.                           40070  5   79 
+   38.40       0.11      22.         6.                           40070  5   80 
+   39.47       0.11      86.        13.                           40070  5   81 
+   39.9        0.2       13.         4.                           40070  5   82 
+   40.50       0.15      17.         5.                           40070  5   83 
+   41.3        0.2       16.         5.                           40070  5   84 
+   41.5        0.2        7.0        2.3                          40070  5   85 
+   41.8        0.2       39.        10.                           40070  5   86 
+   42.2        0.3        7.0        2.4                          40070  5   87 
+   42.7        0.3        4.8        1.6                          40070  5   88 
+   43.4        0.2       12.6        3.3                          40070  5   89 
+   43.9        0.2       16.         4.                           40070  5   90 
+   44.6        0.2       16.         6.                           40070  5   91 
+   45.0        0.3        8.2        3.0                          40070  5   92 
+   45.8        0.2       13.5        4.5                          40070  5   93 
+   47.06       0.14      50.         8.                           40070  5   94 
+   48.00       0.15      26.         7.                           40070  5   95 
+   48.3        0.2       22.         8.                           40070  5   96 
+   48.6        0.2        9.         3.                           40070  5   97 
+   49.3        0.3       20.         6.                           40070  5   98 
+   50.2        0.3       10.         3.                           40070  5   99 
+ENDDATA             78          0                                 40070  5  100 
+ENDSUBENT           99          0                                 40070  599999 
+SUBENT        40070006   20171222                             417740070  6    1 
+BIB                  4          8                                 40070  6    2 
 REACTION   (92-U-235(N,EL),,WID,,2G)                              40070  6    3 
 SAMPLE      Samples were in form of metallic plate and            40070  6    4 
             oxide-protoxide on aluminum  foil,250 cm**2           40070  6    5 
             enriched up to 90%                                    40070  6    6 
 ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  6    7 
-STATUS     (TABLE) Table 3 of JINR-P3-4992,1970                   40070  6    8 
-ENDBIB               6          0                                 40070  6    9 
-NOCOMMON             0          0                                 40070  6   10 
-DATA                 5         78                                 40070  6   11 
-EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070  6   12 
-EV         EV         MILLI-EV   MILLI-EV   MILLI-EV              40070  6   13 
-    1.135      0.010      0.0154     0.0011                       40070  6   14 
-    2.026      0.004      0.0077     0.0008                       40070  6   15 
-    2.290      0.010      0.0032     0.0005                       40070  6   16 
-    2.84       0.02       0.0033     0.0007                       40070  6   17 
-    3.136      0.006      0.0296     0.0013                       40070  6   18 
-    3.584      0.006      0.052      0.0018                       40070  6   19 
-    4.81       0.01       0.0616     0.0026                       40070  6   20 
-    5.45                  0.023      0.003                        40070  6   21 
-    5.82                  0.012      0.004                        40070  6   22 
-    6.20       0.01       0.0298     0.0055                       40070  6   23 
-    6.40       0.01       0.232      0.016                        40070  6   24 
-    7.095      0.015      0.1116     0.0036                       40070  6   25 
-    8.77       0.02       1.228      0.036                        40070  6   26 
-    9.30       0.03       0.131      0.006                        40070  6   27 
-    9.73       0.08       0.047      0.015                        40070  6   28 
-   10.20       0.03       0.066      0.006                        40070  6   29 
-   10.65       0.06                          0.025                40070  6   30 
-   11.05                                     0.026                40070  6   31 
-   11.68       0.04       0.606      0.024                        40070  6   32 
-   12.39       0.04       1.190      0.035                        40070  6   33 
-   12.82       0.04       0.037      0.006                        40070  6   34 
-   13.28       0.05       0.054      0.006                        40070  6   35 
-   13.67       0.10       0.055      0.023                        40070  6   36 
-   13.98       0.05       0.40       0.09                         40070  6   37 
-   14.50       0.06       0.108      0.014                        40070  6   38 
-   15.42       0.05       0.236      0.010                        40070  6   39 
-   16.08       0.05       0.348      0.014                        40070  6   40 
-   16.66       0.06       0.278      0.013                        40070  6   41 
-   16.9        0.1                           0.05                 40070  6   42 
-   18.05       0.06       0.378      0.022                        40070  6   43 
-   18.6        0.1                           0.07                 40070  6   44 
-   19.30       0.05       3.310      0.116                        40070  6   45 
-   20.10       0.08       0.09       0.03                         40070  6   46 
-   20.62       0.06       0.25       0.04                         40070  6   47 
-   21.13       0.05       1.418      0.090                        40070  6   48 
-   21.8        0.1                           0.02                 40070  6   49 
-   22.4        0.1                           0.02                 40070  6   50 
-   22.99       0.06       0.428      0.031                        40070  6   51 
-   23.43       0.15       0.55       0.14                         40070  6   52 
-   23.68       0.07       0.924      0.169                        40070  6   53 
-   24.25       0.07       0.334      0.056                        40070  6   54 
-   24.41       0.15       0.14       0.04                         40070  6   55 
-   25.16       0.16       0.22       0.06                         40070  6   56 
-   25.56       0.10       0.628      0.188                        40070  6   57 
-   25.84       0.15       0.11       0.04                         40070  6   58 
-   26.55       0.07       0.446      0.076                        40070  6   59 
-   27.16       0.07       0.18       0.06                         40070  6   60 
-   27.86       0.07       0.570      0.066                        40070  6   61 
-   28.45       0.09       0.17       0.03                         40070  6   62 
-   28.85       0.09       0.10       0.03                         40070  6   63 
-   29.69       0.09       0.19       0.03                         40070  6   64 
-   30.55       0.20       0.22       0.05                         40070  6   65 
-   30.86       0.10       0.40       0.09                         40070  6   66 
-   32.10       0.09       1.83       0.16                         40070  6   67 
-   33.58       0.09       1.86       0.20                         40070  6   68 
-   34.45       0.14       2.12       0.34                         40070  6   69 
-   34.9        0.2        0.9        0.3                          40070  6   70 
-   35.27       0.10       4.76       0.54                         40070  6   71 
-   38.40       0.11       0.66       0.18                         40070  6   72 
-   39.47       0.11       2.78       0.36                         40070  6   73 
-   39.9        0.2        0.40       0.12                         40070  6   74 
-   40.50       0.15       0.53       0.16                         40070  6   75 
-   41.3        0.2        0.51       0.16                         40070  6   76 
-   41.5        0.2        0.22       0.07                         40070  6   77 
-   41.8        0.2        1.3        0.3                          40070  6   78 
-   42.2        0.3        0.23       0.08                         40070  6   79 
-   42.7        0.3        0.15       0.05                         40070  6   80 
-   43.4        0.2        0.42       0.11                         40070  6   81 
-   43.9        0.2        0.54       0.13                         40070  6   82 
-   44.6        0.2        0.55       0.21                         40070  6   83 
-   45.0        0.3        0.30       0.11                         40070  6   84 
-   45.8        0.2        0.48       0.16                         40070  6   85 
-   47.06       0.14       1.8        0.3                          40070  6   86 
-   48.00       0.15       1.0        0.3                          40070  6   87 
-   48.3        0.2        0.8        0.3                          40070  6   88 
-   48.6        0.2        0.3        0.1                          40070  6   89 
-   49.3        0.3        0.8        0.2                          40070  6   90 
-   50.2        0.3        0.4        0.1                          40070  6   91 
-ENDDATA             80          0                                 40070  6   92 
-ENDSUBENT           91          0                                 40070  699999 
-SUBENT        40070007   20141109                             416740070  7    1 
-BIB                  4          6                                 40070  7    2 
+STATUS     (TABLE) Table 3 of JINR-P3-4992,1970 (6th column)      40070  6    8 
+            Table 1 of C,65SALZBURG,1,287,1965 (7th column) -     40070  6    9 
+             different values .                                   40070  6   10 
+ENDBIB               8          0                                 40070  6   11 
+NOCOMMON             0          0                                 40070  6   12 
+DATA                 5         78                                 40070  6   13 
+EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070  6   14 
+EV         EV         MILLI-EV   MILLI-EV   MILLI-EV              40070  6   15 
+    1.135      0.010      0.0154     0.0011                       40070  6   16 
+    2.026      0.004      0.0077     0.0008                       40070  6   17 
+    2.290      0.010      0.0032     0.0005                       40070  6   18 
+    2.84       0.02       0.0033     0.0007                       40070  6   19 
+    3.136      0.006      0.0296     0.0013                       40070  6   20 
+    3.584      0.006      0.052      0.0018                       40070  6   21 
+    4.81       0.01       0.0616     0.0026                       40070  6   22 
+    5.45                  0.023      0.003                        40070  6   23 
+    5.82                  0.012      0.004                        40070  6   24 
+    6.20       0.01       0.0298     0.0055                       40070  6   25 
+    6.40       0.01       0.232      0.016                        40070  6   26 
+    7.095      0.015      0.1116     0.0036                       40070  6   27 
+    8.77       0.02       1.228      0.036                        40070  6   28 
+    9.30       0.03       0.131      0.006                        40070  6   29 
+    9.73       0.08       0.047      0.015                        40070  6   30 
+   10.20       0.03       0.066      0.006                        40070  6   31 
+   10.65       0.06                          0.025                40070  6   32 
+   11.05                                     0.026                40070  6   33 
+   11.68       0.04       0.606      0.024                        40070  6   34 
+   12.39       0.04       1.190      0.035                        40070  6   35 
+   12.82       0.04       0.037      0.006                        40070  6   36 
+   13.28       0.05       0.054      0.006                        40070  6   37 
+   13.67       0.10       0.055      0.023                        40070  6   38 
+   13.98       0.05       0.40       0.09                         40070  6   39 
+   14.50       0.06       0.108      0.014                        40070  6   40 
+   15.42       0.05       0.236      0.010                        40070  6   41 
+   16.08       0.05       0.348      0.014                        40070  6   42 
+   16.66       0.06       0.278      0.013                        40070  6   43 
+   16.9        0.1                           0.05                 40070  6   44 
+   18.05       0.06       0.378      0.022                        40070  6   45 
+   18.6        0.1                           0.07                 40070  6   46 
+   19.30       0.05       3.310      0.116                        40070  6   47 
+   20.10       0.08       0.09       0.03                         40070  6   48 
+   20.62       0.06       0.25       0.04                         40070  6   49 
+   21.13       0.05       1.418      0.090                        40070  6   50 
+   21.8        0.1                           0.02                 40070  6   51 
+   22.4        0.1                           0.02                 40070  6   52 
+   22.99       0.06       0.428      0.031                        40070  6   53 
+   23.43       0.15       0.55       0.14                         40070  6   54 
+   23.68       0.07       0.924      0.169                        40070  6   55 
+   24.25       0.07       0.334      0.056                        40070  6   56 
+   24.41       0.15       0.14       0.04                         40070  6   57 
+   25.16       0.16       0.22       0.06                         40070  6   58 
+   25.56       0.10       0.628      0.188                        40070  6   59 
+   25.84       0.15       0.11       0.04                         40070  6   60 
+   26.55       0.07       0.446      0.076                        40070  6   61 
+   27.16       0.07       0.18       0.06                         40070  6   62 
+   27.86       0.07       0.570      0.066                        40070  6   63 
+   28.45       0.09       0.17       0.03                         40070  6   64 
+   28.85       0.09       0.10       0.03                         40070  6   65 
+   29.69       0.09       0.19       0.03                         40070  6   66 
+   30.55       0.20       0.22       0.05                         40070  6   67 
+   30.86       0.10       0.40       0.09                         40070  6   68 
+   32.10       0.09       1.83       0.16                         40070  6   69 
+   33.58       0.09       1.86       0.20                         40070  6   70 
+   34.45       0.14       2.12       0.34                         40070  6   71 
+   34.9        0.2        0.9        0.3                          40070  6   72 
+   35.27       0.10       4.76       0.54                         40070  6   73 
+   38.40       0.11       0.66       0.18                         40070  6   74 
+   39.47       0.11       2.78       0.36                         40070  6   75 
+   39.9        0.2        0.40       0.12                         40070  6   76 
+   40.50       0.15       0.53       0.16                         40070  6   77 
+   41.3        0.2        0.51       0.16                         40070  6   78 
+   41.5        0.2        0.22       0.07                         40070  6   79 
+   41.8        0.2        1.3        0.3                          40070  6   80 
+   42.2        0.3        0.23       0.08                         40070  6   81 
+   42.7        0.3        0.15       0.05                         40070  6   82 
+   43.4        0.2        0.42       0.11                         40070  6   83 
+   43.9        0.2        0.54       0.13                         40070  6   84 
+   44.6        0.2        0.55       0.21                         40070  6   85 
+   45.0        0.3        0.30       0.11                         40070  6   86 
+   45.8        0.2        0.48       0.16                         40070  6   87 
+   47.06       0.14       1.8        0.3                          40070  6   88 
+   48.00       0.15       1.0        0.3                          40070  6   89 
+   48.3        0.2        0.8        0.3                          40070  6   90 
+   48.6        0.2        0.3        0.1                          40070  6   91 
+   49.3        0.3        0.8        0.2                          40070  6   92 
+   50.2        0.3        0.4        0.1                          40070  6   93 
+ENDDATA             80          0                                 40070  6   94 
+ENDSUBENT           93          0                                 40070  699999 
+SUBENT        40070007   20171222                             417740070  7    1 
+BIB                  4          8                                 40070  7    2 
 REACTION   (92-U-235(N,TOT),,WID)                                 40070  7    3 
 SAMPLE      Samples were in form of metallic plate and            40070  7    4 
             oxide-protoxide on aluminum  foil,250 cm**2           40070  7    5 
             enriched up to 90%                                    40070  7    6 
 ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  7    7 
-STATUS     (TABLE) Table 3 of JINR-P3-4992,1970                   40070  7    8 
-ENDBIB               6          0                                 40070  7    9 
-NOCOMMON             0          0                                 40070  7   10 
-DATA                 5         78                                 40070  7   11 
-EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070  7   12 
-EV         EV         MILLI-EV   MILLI-EV   MILLI-EV              40070  7   13 
-    0.290      0.010    135.         8.                           40070  7   14 
-    1.135      0.010    157.        11.                           40070  7   15 
-    2.026      0.004     57.        14.                           40070  7   16 
-    2.84       0.02     186.        48.                           40070  7   17 
-    3.136      0.006    129.        17.                           40070  7   18 
-    3.584      0.006     80.         7.                           40070  7   19 
-    4.81       0.01      29.8        6.5                          40070  7   20 
-    5.45                 70.        20.                           40070  7   21 
-    5.82                110.        35.                           40070  7   22 
-    6.20       0.01     132.        24.                           40070  7   23 
-    6.40       0.01      63.        11.                           40070  7   24 
-    8.77       0.02     118.        10.                           40070  7   25 
-    9.095      0.015     53.         4.                           40070  7   26 
-    9.30       0.03     172.        56.                           40070  7   27 
-    9.73       0.08     137.        60.                           40070  7   28 
-   10.20       0.03      88.        13.                           40070  7   29 
-   10.65       0.06                         129.                  40070  7   30 
-   11.05                                     65.                  40070  7   31 
-   11.66       0.04      66.         7.                           40070  7   32 
-   12.39       0.04      66.         6.                           40070  7   33 
-   12.82       0.04      85.        23.                           40070  7   34 
-   13.28       0.05     122.        24.                           40070  7   35 
-   13.67       0.10     145.        41.                           40070  7   36 
-   13.98       0.05     230.        98.                           40070  7   37 
-   14.50       0.06      62.        10.                           40070  7   38 
-   15.42       0.05      99.        17.                           40070  7   39 
-   16.08       0.05      44.        10.                           40070  7   40 
-   16.66       0.06      93.        19.                           40070  7   41 
-   16.9        0.1                           57.                  40070  7   42 
-   18.05       0.06     141.        23.                           40070  7   43 
-   18.6        0.1                          115.                  40070  7   44 
-   19.30       0.05     104.         6.                           40070  7   45 
-   20.10       0.08     104.        29.                           40070  7   46 
-   20.62       0.06      67.         6.                           40070  7   47 
-   21.13       0.05      82.        16.                           40070  7   48 
-   21.8        0.1                          186.                  40070  7   49 
-   22.4        0.1                          186.                  40070  7   50 
-   22.99       0.06      77.        18.                           40070  7   51 
-   23.43       0.15      50.         3.                           40070  7   52 
-   23.68       0.07     111.        32.                           40070  7   53 
-   24.25       0.07      91.        28.                           40070  7   54 
-   24.41       0.15      86.        15.                           40070  7   55 
-   25.16       0.16     121.        25.                           40070  7   56 
-   25.56       0.10      74.        38.                           40070  7   57 
-   25.84       0.15      97.        23.                           40070  7   58 
-   26.55       0.07     129.        48.                           40070  7   59 
-   27.16       0.07      79.        11.                           40070  7   60 
-   27.86       0.07      96.        22.                           40070  7   61 
-   28.45       0.09     104.        20.                           40070  7   62 
-   28.85       0.09      74.        13.                           40070  7   63 
-   29.69       0.09      67.         6.                           40070  7   64 
-   30.55       0.20      76.        12.                           40070  7   65 
-   30.86       0.10      74.        10.                           40070  7   66 
-   32.10       0.09     120.        12.                           40070  7   67 
-   33.58       0.09      58.         7.                           40070  7   68 
-   34.45       0.14      72.         7.                           40070  7   69 
-   34.9        0.2       70.        10.                           40070  7   70 
-   35.27       0.10     183.        36.                           40070  7   71 
-   38.40       0.11     104.        20.                           40070  7   72 
-   39.47       0.11      98.        11.                           40070  7   73 
-   39.9        0.2      115.        27.                           40070  7   74 
-   40.50       0.15     151.        46.                           40070  7   75 
-   41.3        0.2       76.        10.                           40070  7   76 
-   41.5        0.2      108.        29.                           40070  7   77 
-   41.8        0.2       76.         9.                           40070  7   78 
-   42.2        0.3      100.        26.                           40070  7   79 
-   42.7        0.3       74.        11.                           40070  7   80 
-   43.4        0.2       72.         9.                           40070  7   81 
-   43.9        0.2       79.        11.                           40070  7   82 
-   44.6        0.2      123.        41.                           40070  7   83 
-   45.0        0.3      151.        59.                           40070  7   84 
-   45.8        0.2       68.         9.                           40070  7   85 
-   47.06       0.14      79.         9.                           40070  7   86 
-   48.00       0.15      70.         8.                           40070  7   87 
-   48.3        0.2       97.        23.                           40070  7   88 
-   48.6        0.2      129.        38.                           40070  7   89 
-   49.3        0.3       67.         7.                           40070  7   90 
-   50.2        0.3       70.         8.                           40070  7   91 
-ENDDATA             80          0                                 40070  7   92 
-ENDSUBENT           91          0                                 40070  799999 
-SUBENT        40070008   20141109                             416740070  8    1 
-BIB                  4          6                                 40070  8    2 
+STATUS     (TABLE) Table 3 of JINR-P3-4992,1970 on page 23 ,      40070  7    8 
+            Table 1 of C,65SALZBURG,1,287,1965 (9th column) -     40070  7    9 
+            different data.                                       40070  7   10 
+ENDBIB               8          0                                 40070  7   11 
+NOCOMMON             0          0                                 40070  7   12 
+DATA                 5         78                                 40070  7   13 
+EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070  7   14 
+EV         EV         MILLI-EV   MILLI-EV   MILLI-EV              40070  7   15 
+    0.290      0.010    135.         8.                           40070  7   16 
+    1.135      0.010    157.        11.                           40070  7   17 
+    2.026      0.004     57.        14.                           40070  7   18 
+    2.84       0.02     186.        48.                           40070  7   19 
+    3.136      0.006    129.        17.                           40070  7   20 
+    3.584      0.006     80.         7.                           40070  7   21 
+    4.81       0.01      29.8        6.5                          40070  7   22 
+    5.45                 70.        20.                           40070  7   23 
+    5.82                110.        35.                           40070  7   24 
+    6.20       0.01     132.        24.                           40070  7   25 
+    6.40       0.01      63.        11.                           40070  7   26 
+    8.77       0.02     118.        10.                           40070  7   27 
+    9.095      0.015     53.         4.                           40070  7   28 
+    9.30       0.03     172.        56.                           40070  7   29 
+    9.73       0.08     137.        60.                           40070  7   30 
+   10.20       0.03      88.        13.                           40070  7   31 
+   10.65       0.06                         129.                  40070  7   32 
+   11.05                                     65.                  40070  7   33 
+   11.66       0.04      66.         7.                           40070  7   34 
+   12.39       0.04      66.         6.                           40070  7   35 
+   12.82       0.04      85.        23.                           40070  7   36 
+   13.28       0.05     122.        24.                           40070  7   37 
+   13.67       0.10     145.        41.                           40070  7   38 
+   13.98       0.05     230.        98.                           40070  7   39 
+   14.50       0.06      62.        10.                           40070  7   40 
+   15.42       0.05      99.        17.                           40070  7   41 
+   16.08       0.05      44.        10.                           40070  7   42 
+   16.66       0.06      93.        19.                           40070  7   43 
+   16.9        0.1                           57.                  40070  7   44 
+   18.05       0.06     141.        23.                           40070  7   45 
+   18.6        0.1                          115.                  40070  7   46 
+   19.30       0.05     104.         6.                           40070  7   47 
+   20.10       0.08     104.        29.                           40070  7   48 
+   20.62       0.06      67.         6.                           40070  7   49 
+   21.13       0.05      82.        16.                           40070  7   50 
+   21.8        0.1                          186.                  40070  7   51 
+   22.4        0.1                          186.                  40070  7   52 
+   22.99       0.06      77.        18.                           40070  7   53 
+   23.43       0.15      50.         3.                           40070  7   54 
+   23.68       0.07     111.        32.                           40070  7   55 
+   24.25       0.07      91.        28.                           40070  7   56 
+   24.41       0.15      86.        15.                           40070  7   57 
+   25.16       0.16     121.        25.                           40070  7   58 
+   25.56       0.10      74.        38.                           40070  7   59 
+   25.84       0.15      97.        23.                           40070  7   60 
+   26.55       0.07     129.        48.                           40070  7   61 
+   27.16       0.07      79.        11.                           40070  7   62 
+   27.86       0.07      96.        22.                           40070  7   63 
+   28.45       0.09     104.        20.                           40070  7   64 
+   28.85       0.09      74.        13.                           40070  7   65 
+   29.69       0.09      67.         6.                           40070  7   66 
+   30.55       0.20      76.        12.                           40070  7   67 
+   30.86       0.10      74.        10.                           40070  7   68 
+   32.10       0.09     120.        12.                           40070  7   69 
+   33.58       0.09      58.         7.                           40070  7   70 
+   34.45       0.14      72.         7.                           40070  7   71 
+   34.9        0.2       70.        10.                           40070  7   72 
+   35.27       0.10     183.        36.                           40070  7   73 
+   38.40       0.11     104.        20.                           40070  7   74 
+   39.47       0.11      98.        11.                           40070  7   75 
+   39.9        0.2      115.        27.                           40070  7   76 
+   40.50       0.15     151.        46.                           40070  7   77 
+   41.3        0.2       76.        10.                           40070  7   78 
+   41.5        0.2      108.        29.                           40070  7   79 
+   41.8        0.2       76.         9.                           40070  7   80 
+   42.2        0.3      100.        26.                           40070  7   81 
+   42.7        0.3       74.        11.                           40070  7   82 
+   43.4        0.2       72.         9.                           40070  7   83 
+   43.9        0.2       79.        11.                           40070  7   84 
+   44.6        0.2      123.        41.                           40070  7   85 
+   45.0        0.3      151.        59.                           40070  7   86 
+   45.8        0.2       68.         9.                           40070  7   87 
+   47.06       0.14      79.         9.                           40070  7   88 
+   48.00       0.15      70.         8.                           40070  7   89 
+   48.3        0.2       97.        23.                           40070  7   90 
+   48.6        0.2      129.        38.                           40070  7   91 
+   49.3        0.3       67.         7.                           40070  7   92 
+   50.2        0.3       70.         8.                           40070  7   93 
+ENDDATA             80          0                                 40070  7   94 
+ENDSUBENT           93          0                                 40070  799999 
+SUBENT        40070008   20171222                             417740070  8    1 
+BIB                  4          8                                 40070  8    2 
 REACTION   (92-U-235(N,F),,WID)                                   40070  8    3 
 SAMPLE      Samples were in form of metallic plate and            40070  8    4 
             oxide-protoxide on aluminum  foil,250 cm**2           40070  8    5 
             enriched up to 90%                                    40070  8    6 
 ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  8    7 
-STATUS     (TABLE) Table 3 of JINR-P3-4992,1970                   40070  8    8 
-ENDBIB               6          0                                 40070  8    9 
-NOCOMMON             0          0                                 40070  8   10 
-DATA                 5         78                                 40070  8   11 
-EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070  8   12 
-EV         EV         MILLI-EV   MILLI-EV   MILLI-EV              40070  8   13 
- 0.290        0.010    100.         8.                            40070  8   14 
- 1.135        0.010    115.        10.                            40070  8   15 
- 2.026        0.004     15.         5.                            40070  8   16 
- 2.84         0.02     143.        48.                            40070  8   17 
- 3.136        0.006     97.        18.                            40070  8   18 
- 3.584        0.006     49.         7.                            40070  8   19 
- 4.81         0.01       3.9        1.0                           40070  8   20 
- 5.45                   24.         7.                            40070  8   21 
- 5.82                   67.        34.                            40070  8   22 
- 6.20         0.01      85.        24.                            40070  8   23 
- 6.40         0.01      11.         3.                            40070  8   24 
- 8.77         0.015     22.         4.                            40070  8   25 
- 9.095        0.02      76.        10.                            40070  8   26 
- 9.30         0.03     115.        44.                            40070  8   27 
- 9.73         0.08      94.        60.                            40070  8   28 
-10.20         0.03      47.        14.                            40070  8   29 
-10.65         0.06                          86.                   40070  8   30 
-11.05                                       22.                   40070  8   31 
-11.66         0.04       9.         1.                            40070  8   32 
-12.39         0.04      24.         4.                            40070  8   33 
-12.82         0.04      52.        19.                            40070  8   34 
-13.28         0.05      65.        20.                            40070  8   35 
-13.67         0.10     102.        41.                            40070  8   36 
-13.98         0.05     187.        98.                            40070  8   37 
-14.50         0.06      28.         7.                            40070  8   38 
-15.42         0.05      47.        10.                            40070  8   39 
-16.08         0.05      14.         4.                            40070  8   40 
-16.66         0.06      55.        15.                            40070  8   41 
-16.9          0.1                            14.                  40070  8   42 
-18.05         0.06      94.        21.                            40070  8   43 
-18.6          0.1                            72.                  40070  8   44 
-19.30         0.05      58.         7.                            40070  8   45 
-20.10         0.08      61.        29.                            40070  8   46 
-20.62         0.06      24.         5.                            40070  8   47 
-21.13         0.05      32.        10.                            40070  8   48 
-21.8          0.1                           143.                  40070  8   49 
-22.4          0.1                           143.                  40070  8   50 
-22.99         0.06      35.        11.                            40070  8   51 
-23.43         0.15       7.         2.                            40070  8   52 
-23.68         0.07      68.        24.                            40070  8   53 
-24.25         0.07      39.        20.                            40070  8   54 
-24.41         0.15      43.        15.                            40070  8   55 
-25.16         0.16      78.        24.                            40070  8   56 
-25.56         0.10      26.        18.                            40070  8   57 
-25.84         0.15      54.        22.                            40070  8   58 
-26.55         0.07      92.        41.                            40070  8   59 
-27.16         0.07      36.        10.                            40070  8   60 
-27.86         0.07      66.        20.                            40070  8   61 
-28.45         0.09      61.        20.                            40070  8   62 
-28.85         0.09      31.        12.                            40070  8   63 
-29.69         0.09      24.         5.                            40070  8   64 
-30.55         0.20      33.        12.                            40070  8   65 
-30.86         0.10      31.        10.                            40070  8   66 
-32.10         0.09      57.        10.                            40070  8   67 
-33.58         0.09      22.         5.                            40070  8   68 
-34.45         0.14      29.         7.                            40070  8   69 
-34.9          0.2       27.         9.                            40070  8   70 
-35.27         0.10     119.        31.                            40070  8   71 
-38.40         0.11      61.        20.                            40070  8   72 
-39.47         0.11      45.         9.                            40070  8   73 
-39.9          0.2       72.        27.                            40070  8   74 
-40.50         0.15     108.        45.                            40070  8   75 
-41.3          0.2       33.        10.                            40070  8   76 
-41.5          0.2       65.        28.                            40070  8   77 
-41.8          0.2       33.         9.                            40070  8   78 
-42.2          0.3       57.        25.                            40070  8   79 
-42.7          0.3       31.        10.                            40070  8   80 
-43.4          0.2       29.         9.                            40070  8   81 
-43.9          0.2       36.        11.                            40070  8   82 
-44.6          0.2       80.        41.                            40070  8   83 
-45.0          0.3      108.        59.                            40070  8   84 
-45.8          0.2       25.         8.                            40070  8   85 
-47.06         0.14      36.         8.                            40070  8   86 
-48.00         0.15      27.         8.                            40070  8   87 
-48.3          0.2       54.        23.                            40070  8   88 
-48.6          0.2       86.        38.                            40070  8   89 
-49.3          0.3       24.         6.                            40070  8   90 
-50.2          0.3       27.         8.                            40070  8   91 
-ENDDATA             80          0                                 40070  8   92 
-ENDSUBENT           91          0                                 40070  899999 
-SUBENT        40070009   20141109                             416740070  9    1 
-BIB                  4          6                                 40070  9    2 
+STATUS     (TABLE) Table 3 of JINR-P3-4992,1970 on page 23 ,      40070  8    8 
+            Table 1 of C,65SALZBURG,1,287,1965 (10th column) -    40070  8    9 
+            different data.                                       40070  8   10 
+ENDBIB               8          0                                 40070  8   11 
+NOCOMMON             0          0                                 40070  8   12 
+DATA                 5         78                                 40070  8   13 
+EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070  8   14 
+EV         EV         MILLI-EV   MILLI-EV   MILLI-EV              40070  8   15 
+ 0.290        0.010    100.         8.                            40070  8   16 
+ 1.135        0.010    115.        10.                            40070  8   17 
+ 2.026        0.004     15.         5.                            40070  8   18 
+ 2.84         0.02     143.        48.                            40070  8   19 
+ 3.136        0.006     97.        18.                            40070  8   20 
+ 3.584        0.006     49.         7.                            40070  8   21 
+ 4.81         0.01       3.9        1.0                           40070  8   22 
+ 5.45                   24.         7.                            40070  8   23 
+ 5.82                   67.        34.                            40070  8   24 
+ 6.20         0.01      85.        24.                            40070  8   25 
+ 6.40         0.01      11.         3.                            40070  8   26 
+ 8.77         0.015     22.         4.                            40070  8   27 
+ 9.095        0.02      76.        10.                            40070  8   28 
+ 9.30         0.03     115.        44.                            40070  8   29 
+ 9.73         0.08      94.        60.                            40070  8   30 
+10.20         0.03      47.        14.                            40070  8   31 
+10.65         0.06                          86.                   40070  8   32 
+11.05                                       22.                   40070  8   33 
+11.66         0.04       9.         1.                            40070  8   34 
+12.39         0.04      24.         4.                            40070  8   35 
+12.82         0.04      52.        19.                            40070  8   36 
+13.28         0.05      65.        20.                            40070  8   37 
+13.67         0.10     102.        41.                            40070  8   38 
+13.98         0.05     187.        98.                            40070  8   39 
+14.50         0.06      28.         7.                            40070  8   40 
+15.42         0.05      47.        10.                            40070  8   41 
+16.08         0.05      14.         4.                            40070  8   42 
+16.66         0.06      55.        15.                            40070  8   43 
+16.9          0.1                            14.                  40070  8   44 
+18.05         0.06      94.        21.                            40070  8   45 
+18.6          0.1                            72.                  40070  8   46 
+19.30         0.05      58.         7.                            40070  8   47 
+20.10         0.08      61.        29.                            40070  8   48 
+20.62         0.06      24.         5.                            40070  8   49 
+21.13         0.05      32.        10.                            40070  8   50 
+21.8          0.1                           143.                  40070  8   51 
+22.4          0.1                           143.                  40070  8   52 
+22.99         0.06      35.        11.                            40070  8   53 
+23.43         0.15       7.         2.                            40070  8   54 
+23.68         0.07      68.        24.                            40070  8   55 
+24.25         0.07      39.        20.                            40070  8   56 
+24.41         0.15      43.        15.                            40070  8   57 
+25.16         0.16      78.        24.                            40070  8   58 
+25.56         0.10      26.        18.                            40070  8   59 
+25.84         0.15      54.        22.                            40070  8   60 
+26.55         0.07      92.        41.                            40070  8   61 
+27.16         0.07      36.        10.                            40070  8   62 
+27.86         0.07      66.        20.                            40070  8   63 
+28.45         0.09      61.        20.                            40070  8   64 
+28.85         0.09      31.        12.                            40070  8   65 
+29.69         0.09      24.         5.                            40070  8   66 
+30.55         0.20      33.        12.                            40070  8   67 
+30.86         0.10      31.        10.                            40070  8   68 
+32.10         0.09      57.        10.                            40070  8   69 
+33.58         0.09      22.         5.                            40070  8   70 
+34.45         0.14      29.         7.                            40070  8   71 
+34.9          0.2       27.         9.                            40070  8   72 
+35.27         0.10     119.        31.                            40070  8   73 
+38.40         0.11      61.        20.                            40070  8   74 
+39.47         0.11      45.         9.                            40070  8   75 
+39.9          0.2       72.        27.                            40070  8   76 
+40.50         0.15     108.        45.                            40070  8   77 
+41.3          0.2       33.        10.                            40070  8   78 
+41.5          0.2       65.        28.                            40070  8   79 
+41.8          0.2       33.         9.                            40070  8   80 
+42.2          0.3       57.        25.                            40070  8   81 
+42.7          0.3       31.        10.                            40070  8   82 
+43.4          0.2       29.         9.                            40070  8   83 
+43.9          0.2       36.        11.                            40070  8   84 
+44.6          0.2       80.        41.                            40070  8   85 
+45.0          0.3      108.        59.                            40070  8   86 
+45.8          0.2       25.         8.                            40070  8   87 
+47.06         0.14      36.         8.                            40070  8   88 
+48.00         0.15      27.         8.                            40070  8   89 
+48.3          0.2       54.        23.                            40070  8   90 
+48.6          0.2       86.        38.                            40070  8   91 
+49.3          0.3       24.         6.                            40070  8   92 
+50.2          0.3       27.         8.                            40070  8   93 
+ENDDATA             80          0                                 40070  8   94 
+ENDSUBENT           93          0                                 40070  899999 
+SUBENT        40070009   20171222                             417740070  9    1 
+BIB                  4          8                                 40070  9    2 
 REACTION   (92-U-235(N,G),,WID)                                   40070  9    3 
 SAMPLE      Samples were in form of metallic plate and            40070  9    4 
             oxide-protoxide on aluminum  foil,250 cm**2           40070  9    5 
             enriched up to 90%                                    40070  9    6 
 ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070  9    7 
-STATUS     (TABLE) Table 3 of JINR-P3-4992,1970                   40070  9    8 
-ENDBIB               6          0                                 40070  9    9 
-NOCOMMON             0          0                                 40070  9   10 
-DATA                 4         78                                 40070  9   11 
-EN-RES     EN-RES-ERR DATA       DATA-ERR                         40070  9   12 
-EV         EV         MILLI-EV   MILLI-EV                         40070  9   13 
-     0.290     0.010     35.         3.                           40070  9   14 
-     1.135     0.010     42.         5.                           40070  9   15 
-     2.026     0.004     42.         5.                           40070  9   16 
-     2.84      0.02      43.         2.                           40070  9   17 
-     3.136     0.006     32.        10.                           40070  9   18 
-     3.584     0.006     31.         6.                           40070  9   19 
-     4.81      0.01      25.9        3.6                          40070  9   20 
-     5.45                46.        16.                           40070  9   21 
-     5.82                43.         2.                           40070  9   22 
-     6.20      0.01      47.        17.                           40070  9   23 
-     6.40      0.01      52.        10.                           40070  9   24 
-     7.095     0.015     31.         6.                           40070  9   25 
-     8.77      0.02      42.         7.                           40070  9   26 
-     9.30      0.03      57.        20.                           40070  9   27 
-     9.73      0.08      43.         2.                           40070  9   28 
-    10.20      0.03      41.         9.                           40070  9   29 
-    10.65      0.06      43.         2.                           40070  9   30 
-    11.05                43.         2.                           40070  9   31 
-    11.66      0.04      57.         7.                           40070  9   32 
-    12.39      0.04      42.         5.                           40070  9   33 
-    12.82      0.04      33.        14.                           40070  9   34 
-    13.28      0.05      57.        19.                           40070  9   35 
-    13.67      0.10      43.         2.                           40070  9   36 
-    13.98      0.05      43.         2.                           40070  9   37 
-    14.50      0.06      34.         8.                           40070  9   38 
-    15.42      0.05      52.        11.                           40070  9   39 
-    16.08      0.05      30.         8.                           40070  9   40 
-    16.66      0.06      38.        11.                           40070  9   41 
-    16.9       0.1       43.         2.                           40070  9   42 
-    18.05      0.06      47.        14.                           40070  9   43 
-    18.06      0.1       43.         2.                           40070  9   44 
-    19.30      0.05      46.         6.                           40070  9   45 
-    20.10      0.08      43.         2.                           40070  9   46 
-    20.62      0.06      43.         2.                           40070  9   47 
-    21.13      0.05      50.         9.                           40070  9   48 
-    21.8       0.1       43.         2.                           40070  9   49 
-    22.4       0.1       43.         2.                           40070  9   50 
-    22.99      0.06      42.        13.                           40070  9   51 
-    23.43      0.15      43.         2.                           40070  9   52 
-    23.69      0.07      43.        17.                           40070  9   53 
-    24.25      0.07      52.        24.                           40070  9   54 
-    24.41      0.15      43.         2.                           40070  9   55 
-    25.16      0.16      43.         2.                           40070  9   56 
-    25.56      0.10      48.        29.                           40070  9   57 
-    25.84      0.15      43.         2.                           40070  9   58 
-    26.55      0.07      37.        20.                           40070  9   59 
-    27.16      0.07      43.         2.                           40070  9   60 
-    27.86      0.07      30.        12.                           40070  9   61 
-    28.45      0.08      43.         2.                           40070  9   62 
-    28.85      0.09      43.         2.                           40070  9   63 
-    29.69      0.09      43.         2.                           40070  9   64 
-    30.55      0.20      43.         2.                           40070  9   65 
-    30.86      0.10      43.         2.                           40070  9   66 
-    32.10      0.09      63.        10.                           40070  9   67 
-    33.58      0.09      36.         7.                           40070  9   68 
-    34.45      0.14      43.         2.                           40070  9   69 
-    34.9       0.2       43.         2.                           40070  9   70 
-    35.27      0.10      64.        20.                           40070  9   71 
-    38.40      0.11      43.         2.                           40070  9   72 
-    39.47      0.11      53.        10.                           40070  9   73 
-    39.9       0.2       43.         2.                           40070  9   74 
-    40.50      0.15      43.         2.                           40070  9   75 
-    41.3       0.2       43.         2.                           40070  9   76 
-    41.5       0.2       43.         2.                           40070  9   77 
-    41.8       0.2       43.         2.                           40070  9   78 
-    42.2       0.3       43.         2.                           40070  9   79 
-    42.7       0.3       43.         2.                           40070  9   80 
-    43.4       0.2       43.         2.                           40070  9   81 
-    43.9       0.2       43.         2.                           40070  9   82 
-    44.6       0.2       43.         2.                           40070  9   83 
-    45.0       0.3       43.         2.                           40070  9   84 
-    45.8       0.2       43.         2.                           40070  9   85 
-    47.06      0.14      43.         2.                           40070  9   86 
-    48.00      0.15      43.         2.                           40070  9   87 
-    48.3       0.2       43.         2.                           40070  9   88 
-    48.6       0.2       43.         2.                           40070  9   89 
-    49.3       0.3       43.         2.                           40070  9   90 
-    50.2       0.3       43.         2.                           40070  9   91 
-ENDDATA             80          0                                 40070  9   92 
-ENDSUBENT           91          0                                 40070  999999 
-SUBENT        40070010   20141109                             416740070 10    1 
-BIB                  3          6                                 40070 10    2 
+STATUS     (TABLE) Table 3 of JINR-P3-4992,1970 on page 23        40070  9    8 
+            Table 1 of C,65SALZBURG,1,287,1965 (11th column) -    40070  9    9 
+             different data                                       40070  9   10 
+ENDBIB               8          0                                 40070  9   11 
+NOCOMMON             0          0                                 40070  9   12 
+DATA                 4         78                                 40070  9   13 
+EN-RES     EN-RES-ERR DATA       DATA-ERR                         40070  9   14 
+EV         EV         MILLI-EV   MILLI-EV                         40070  9   15 
+     0.290     0.010     35.         3.                           40070  9   16 
+     1.135     0.010     42.         5.                           40070  9   17 
+     2.026     0.004     42.         5.                           40070  9   18 
+     2.84      0.02      43.         2.                           40070  9   19 
+     3.136     0.006     32.        10.                           40070  9   20 
+     3.584     0.006     31.         6.                           40070  9   21 
+     4.81      0.01      25.9        3.6                          40070  9   22 
+     5.45                46.        16.                           40070  9   23 
+     5.82                43.         2.                           40070  9   24 
+     6.20      0.01      47.        17.                           40070  9   25 
+     6.40      0.01      52.        10.                           40070  9   26 
+     7.095     0.015     31.         6.                           40070  9   27 
+     8.77      0.02      42.         7.                           40070  9   28 
+     9.30      0.03      57.        20.                           40070  9   29 
+     9.73      0.08      43.         2.                           40070  9   30 
+    10.20      0.03      41.         9.                           40070  9   31 
+    10.65      0.06      43.         2.                           40070  9   32 
+    11.05                43.         2.                           40070  9   33 
+    11.66      0.04      57.         7.                           40070  9   34 
+    12.39      0.04      42.         5.                           40070  9   35 
+    12.82      0.04      33.        14.                           40070  9   36 
+    13.28      0.05      57.        19.                           40070  9   37 
+    13.67      0.10      43.         2.                           40070  9   38 
+    13.98      0.05      43.         2.                           40070  9   39 
+    14.50      0.06      34.         8.                           40070  9   40 
+    15.42      0.05      52.        11.                           40070  9   41 
+    16.08      0.05      30.         8.                           40070  9   42 
+    16.66      0.06      38.        11.                           40070  9   43 
+    16.9       0.1       43.         2.                           40070  9   44 
+    18.05      0.06      47.        14.                           40070  9   45 
+    18.06      0.1       43.         2.                           40070  9   46 
+    19.30      0.05      46.         6.                           40070  9   47 
+    20.10      0.08      43.         2.                           40070  9   48 
+    20.62      0.06      43.         2.                           40070  9   49 
+    21.13      0.05      50.         9.                           40070  9   50 
+    21.8       0.1       43.         2.                           40070  9   51 
+    22.4       0.1       43.         2.                           40070  9   52 
+    22.99      0.06      42.        13.                           40070  9   53 
+    23.43      0.15      43.         2.                           40070  9   54 
+    23.69      0.07      43.        17.                           40070  9   55 
+    24.25      0.07      52.        24.                           40070  9   56 
+    24.41      0.15      43.         2.                           40070  9   57 
+    25.16      0.16      43.         2.                           40070  9   58 
+    25.56      0.10      48.        29.                           40070  9   59 
+    25.84      0.15      43.         2.                           40070  9   60 
+    26.55      0.07      37.        20.                           40070  9   61 
+    27.16      0.07      43.         2.                           40070  9   62 
+    27.86      0.07      30.        12.                           40070  9   63 
+    28.45      0.08      43.         2.                           40070  9   64 
+    28.85      0.09      43.         2.                           40070  9   65 
+    29.69      0.09      43.         2.                           40070  9   66 
+    30.55      0.20      43.         2.                           40070  9   67 
+    30.86      0.10      43.         2.                           40070  9   68 
+    32.10      0.09      63.        10.                           40070  9   69 
+    33.58      0.09      36.         7.                           40070  9   70 
+    34.45      0.14      43.         2.                           40070  9   71 
+    34.9       0.2       43.         2.                           40070  9   72 
+    35.27      0.10      64.        20.                           40070  9   73 
+    38.40      0.11      43.         2.                           40070  9   74 
+    39.47      0.11      53.        10.                           40070  9   75 
+    39.9       0.2       43.         2.                           40070  9   76 
+    40.50      0.15      43.         2.                           40070  9   77 
+    41.3       0.2       43.         2.                           40070  9   78 
+    41.5       0.2       43.         2.                           40070  9   79 
+    41.8       0.2       43.         2.                           40070  9   80 
+    42.2       0.3       43.         2.                           40070  9   81 
+    42.7       0.3       43.         2.                           40070  9   82 
+    43.4       0.2       43.         2.                           40070  9   83 
+    43.9       0.2       43.         2.                           40070  9   84 
+    44.6       0.2       43.         2.                           40070  9   85 
+    45.0       0.3       43.         2.                           40070  9   86 
+    45.8       0.2       43.         2.                           40070  9   87 
+    47.06      0.14      43.         2.                           40070  9   88 
+    48.00      0.15      43.         2.                           40070  9   89 
+    48.3       0.2       43.         2.                           40070  9   90 
+    48.6       0.2       43.         2.                           40070  9   91 
+    49.3       0.3       43.         2.                           40070  9   92 
+    50.2       0.3       43.         2.                           40070  9   93 
+ENDDATA             80          0                                 40070  9   94 
+ENDSUBENT           93          0                                 40070  999999 
+SUBENT        40070010   20171222                             417740070 10    1 
+BIB                  4         10                                 40070 10    2 
 REACTION   (92-U-235(N,ABS),,ALF,,RES,DERIV)                      40070 10    3 
-           Alpha=Gamma(fission)/Gamma(gamma)                      40070 10    4 
-ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070 10    5 
-STATUS     (TABLE) Table 3 of JINR-P3-4992,1970                   40070 10    6 
-           (DEP,40070008)  Independent data see Subentries        40070 10    7 
-           (DEP,40070009)  40070008 and 40070009                  40070 10    8 
-ENDBIB               6          0                                 40070 10    9 
-NOCOMMON             0          0                                 40070 10   10 
-DATA                 5         78                                 40070 10   11 
-EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070 10   12 
-EV         EV         NO-DIM     NO-DIM     NO-DIM                40070 10   13 
-    0.290      0.010      0.35                                    40070 10   14 
-    1.135      0.010      0.37                                    40070 10   15 
-    2.026      0.004      2.8        0.3                          40070 10   16 
-    2.84       0.02       0.3        0.1                          40070 10   17 
-    3.136      0.006      0.33       0.08                         40070 10   18 
-    3.584      0.006      0.62       0.09                         40070 10   19 
-    4.81       0.01       6.5        0.9                          40070 10   20 
-    5.45                  1.9        0.4                          40070 10   21 
-    5.82                  0.64       0.30                         40070 10   22 
-    6.20       0.01       0.55       0.15                         40070 10   23 
-    6.40       0.01       4.6        0.6                          40070 10   24 
-    7.095      0.015      1.4        0.2                          40070 10   25 
-    8.77       0.02       0.55       0.07                         40070 10   26 
-    9.30       0.03       0.50       0.09                         40070 10   27 
-    9.73       0.08       0.46       0.27                         40070 10   28 
-   10.20       0.03       0.87       0.13                         40070 10   29 
-   10.65       0.06                          0.5                  40070 10   30 
-   11.05                                     2.                   40070 10   31 
-   11.66       0.04       6.20       0.67                         40070 10   32 
-   12.39       0.04       1.80       0.2                          40070 10   33 
-   12.82       0.04       0.63       0.16                         40070 10   34 
-   13.28       0.05       0.87       0.22                         40070 10   35 
-   13.67       0.10       0.42       0.15                         40070 10   36 
-   13.98       0.05       0.23       0.11                         40070 10   37 
-   14.50       0.06       1.2        0.2                          40070 10   38 
-   15.42       0.05       1.1        0.1                          40070 10   39 
-   16.08       0.05       2.1        0.2                          40070 10   40 
-   16.66       0.06       0.7        0.1                          40070 10   41 
-   16.9        0.1                           3.                   40070 10   42 
-   18.05       0.06       0.5        0.1                          40070 10   43 
-   18.6        0.1                           0.6                  40070 10   44 
-   19.30       0.05       0.8        0.1                          40070 10   45 
-   20.10       0.06       1.8        0.3                          40070 10   46 
-   20.62       0.06       1.8        0.3                          40070 10   47 
-    21.13      0.05       1.6        0.3                          40070 10   48 
-   21.8        0.1                           0.3                  40070 10   49 
-   22.4        0.1                           0.3                  40070 10   50 
-   22.99       0.06       1.2        0.2                          40070 10   51 
-   23.43       0.15       5.8        1.4                          40070 10   52 
-   23.68       0.07       0.63       0.11                         40070 10   53 
-   24.25       0.07       1.33       0.45                         40070 10   54 
-   24.41       0.15       1.0        0.3                          40070 10   55 
-   25.16       0.16       0.55       0.15                         40070 10   56 
-   25.56       0.10       1.8        0.5                          40070 10   57 
-   25.84       0.15       0.8        0.3                          40070 10   58 
-   26.55       0.07       0.4        0.1                          40070 10   59 
-   27.16       0.07       1.2        0.3                          40070 10   60 
-   27.86       0.07       0.45       0.10                         40070 10   61 
-   28.45       0.09       0.7        0.2                          40070 10   62 
-   28.85       0.09       1.4        0.5                          40070 10   63 
-   29.69       0.09       1.8        0.3                          40070 10   64 
-   30.55       0.20       1.3        0.4                          40070 10   65 
-   30.86       0.10       1.4        0.4                          40070 10   66 
-   32.10       0.09       1.10       0.15                         40070 10   67 
-   33.58       0.09       1.6        0.3                          40070 10   68 
-   34.45       0.14       1.5        0.3                          40070 10   69 
-   34.9        0.2        1.6        0.5                          40070 10   70 
-   35.27       0.10       0.54       0.10                         40070 10   71 
-   38.40       0.11       0.7        0.2                          40070 10   72 
-   39.47       0.11       1.2        0.2                          40070 10   73 
-   39.9        0.2        0.6        0.2                          40070 10   74 
-   40.50       0.15       0.40       0.15                         40070 10   75 
-   41.3        0.2        1.32       0.35                         40070 10   76 
-   41.5        0.2        0.66       0.26                         40070 10   77 
-   41.8        0.2        1.3        0.3                          40070 10   78 
-   42.2        0.3        0.75       0.30                         40070 10   79 
-   42.7        0.3        1.4        0.4                          40070 10   80 
-   43.4        0.2        1.5        0.4                          40070 10   81 
-   43.9        0.2        1.2        0.3                          40070 10   82 
-   44.6        0.2        0.54       0.25                         40070 10   83 
-   45.0        0.3        0.4        0.2                          40070 10   84 
-   45.8        0.2        1.7        0.5                          40070 10   85 
-   47.06       0.14       1.2        0.2                          40070 10   86 
-   48.00       0.15       1.6        0.4                          40070 10   87 
-   48.3        0.2        0.8        0.3                          40070 10   88 
-   48.6        0.2        0.5        0.2                          40070 10   89 
-   49.3        0.3        1.8        0.4                          40070 10   90 
-   50.2        0.3        1.6        0.4                          40070 10   91 
-ENDDATA             80          0                                 40070 10   92 
-ENDSUBENT           91          0                                 40070 1099999 
+            (n,gamma)/(fission) at resonance                      40070 10    4 
+ANALYSIS    Derived from defined fission and n,gamma resonance    40070 10    5 
+            parameters.                                           40070 10    6 
+ERR-ANALYS (DATA-ERR)    All errors of experiment                 40070 10    7 
+STATUS     (TABLE) Table 3 of JINR-P3-4992,1970 on page 23        40070 10    8 
+            Table 1 of C,65SALZBURG,1,287,1965 (2nd column) -     40070 10    9 
+            almost the same values.                               40070 10   10 
+           (DEP,40070008)  Fission widths.                        40070 10   11 
+           (DEP,40070009)  Capture widths.                        40070 10   12 
+ENDBIB              10          0                                 40070 10   13 
+NOCOMMON             0          0                                 40070 10   14 
+DATA                 5         78                                 40070 10   15 
+EN-RES     EN-RES-ERR DATA       DATA-ERR   DATA-APRX             40070 10   16 
+EV         EV         NO-DIM     NO-DIM     NO-DIM                40070 10   17 
+    0.290      0.010      0.35                                    40070 10   18 
+    1.135      0.010      0.37                                    40070 10   19 
+    2.026      0.004      2.8        0.3                          40070 10   20 
+    2.84       0.02       0.3        0.1                          40070 10   21 
+    3.136      0.006      0.33       0.08                         40070 10   22 
+    3.584      0.006      0.62       0.09                         40070 10   23 
+    4.81       0.01       6.5        0.9                          40070 10   24 
+    5.45                  1.9        0.4                          40070 10   25 
+    5.82                  0.64       0.30                         40070 10   26 
+    6.20       0.01       0.55       0.15                         40070 10   27 
+    6.40       0.01       4.6        0.6                          40070 10   28 
+    7.095      0.015      1.4        0.2                          40070 10   29 
+    8.77       0.02       0.55       0.07                         40070 10   30 
+    9.30       0.03       0.50       0.09                         40070 10   31 
+    9.73       0.08       0.46       0.27                         40070 10   32 
+   10.20       0.03       0.87       0.13                         40070 10   33 
+   10.65       0.06                          0.5                  40070 10   34 
+   11.05                                     2.                   40070 10   35 
+   11.66       0.04       6.20       0.67                         40070 10   36 
+   12.39       0.04       1.80       0.2                          40070 10   37 
+   12.82       0.04       0.63       0.16                         40070 10   38 
+   13.28       0.05       0.87       0.22                         40070 10   39 
+   13.67       0.10       0.42       0.15                         40070 10   40 
+   13.98       0.05       0.23       0.11                         40070 10   41 
+   14.50       0.06       1.2        0.2                          40070 10   42 
+   15.42       0.05       1.1        0.1                          40070 10   43 
+   16.08       0.05       2.1        0.2                          40070 10   44 
+   16.66       0.06       0.7        0.1                          40070 10   45 
+   16.9        0.1                           3.                   40070 10   46 
+   18.05       0.06       0.5        0.1                          40070 10   47 
+   18.6        0.1                           0.6                  40070 10   48 
+   19.30       0.05       0.8        0.1                          40070 10   49 
+   20.10       0.06       1.8        0.3                          40070 10   50 
+   20.62       0.06       1.8        0.3                          40070 10   51 
+    21.13      0.05       1.6        0.3                          40070 10   52 
+   21.8        0.1                           0.3                  40070 10   53 
+   22.4        0.1                           0.3                  40070 10   54 
+   22.99       0.06       1.2        0.2                          40070 10   55 
+   23.43       0.15       5.8        1.4                          40070 10   56 
+   23.68       0.07       0.63       0.11                         40070 10   57 
+   24.25       0.07       1.33       0.45                         40070 10   58 
+   24.41       0.15       1.0        0.3                          40070 10   59 
+   25.16       0.16       0.55       0.15                         40070 10   60 
+   25.56       0.10       1.8        0.5                          40070 10   61 
+   25.84       0.15       0.8        0.3                          40070 10   62 
+   26.55       0.07       0.4        0.1                          40070 10   63 
+   27.16       0.07       1.2        0.3                          40070 10   64 
+   27.86       0.07       0.45       0.10                         40070 10   65 
+   28.45       0.09       0.7        0.2                          40070 10   66 
+   28.85       0.09       1.4        0.5                          40070 10   67 
+   29.69       0.09       1.8        0.3                          40070 10   68 
+   30.55       0.20       1.3        0.4                          40070 10   69 
+   30.86       0.10       1.4        0.4                          40070 10   70 
+   32.10       0.09       1.10       0.15                         40070 10   71 
+   33.58       0.09       1.6        0.3                          40070 10   72 
+   34.45       0.14       1.5        0.3                          40070 10   73 
+   34.9        0.2        1.6        0.5                          40070 10   74 
+   35.27       0.10       0.54       0.10                         40070 10   75 
+   38.40       0.11       0.7        0.2                          40070 10   76 
+   39.47       0.11       1.2        0.2                          40070 10   77 
+   39.9        0.2        0.6        0.2                          40070 10   78 
+   40.50       0.15       0.40       0.15                         40070 10   79 
+   41.3        0.2        1.32       0.35                         40070 10   80 
+   41.5        0.2        0.66       0.26                         40070 10   81 
+   41.8        0.2        1.3        0.3                          40070 10   82 
+   42.2        0.3        0.75       0.30                         40070 10   83 
+   42.7        0.3        1.4        0.4                          40070 10   84 
+   43.4        0.2        1.5        0.4                          40070 10   85 
+   43.9        0.2        1.2        0.3                          40070 10   86 
+   44.6        0.2        0.54       0.25                         40070 10   87 
+   45.0        0.3        0.4        0.2                          40070 10   88 
+   45.8        0.2        1.7        0.5                          40070 10   89 
+   47.06       0.14       1.2        0.2                          40070 10   90 
+   48.00       0.15       1.6        0.4                          40070 10   91 
+   48.3        0.2        0.8        0.3                          40070 10   92 
+   48.6        0.2        0.5        0.2                          40070 10   93 
+   49.3        0.3        1.8        0.4                          40070 10   94 
+   50.2        0.3        1.6        0.4                          40070 10   95 
+ENDDATA             80          0                                 40070 10   96 
+ENDSUBENT           95          0                                 40070 1099999 
 SUBENT        40070011   20141109                             416740070 11    1 
 BIB                  5          7                                 40070 11    2 
 REACTION   (92-U-235(N,ABS),,ETA,,RES)                            40070 11    3 
@@ -1669,4 +1709,105 @@ EV         NO-DIM     NO-DIM     NO-DIM                           40070 38   11
 75.6       1.         +1.                                         40070 38   18 
 ENDDATA              9          0                                 40070 38   19 
 ENDSUBENT           18          0                                 40070 3899999 
-ENDENTRY            38          0                                 4007099999999 
+SUBENT        40070039   20171222                             417740070 39    1 
+BIB                  7         26                                 40070 39    2 
+REACTION  1(92-U-235(N,F),,SIG,,AV)                               40070 39    3 
+          2(92-U-235(N,G)92-U-236,,SIG,,AV)                       40070 39    4 
+          3(92-U-235(N,ABS),,ALF,,AV) CS(n,gamma)/CS(fission).    40070 39    5 
+           Average over energy internal                           40070 39    6 
+SAMPLE      Samples thickness:                                    40070 39    7 
+           - measurement of fission and rad.capture CS -          40070 39    8 
+             8.*10**-5, 4.*10**-4, 1.*10**-3, 2.*10**-3 nucl/b;   40070 39    9 
+           - self-indication measurement -                        40070 39   10 
+             2.*10**-3, 4.*10**-4, 2.*10**-3 nucl/b;              40070 39   11 
+           - transmission measurement -                           40070 39   12 
+             2.*10**-3, 2.*10**-2 nucl/b .                        40070 39   13 
+MONITOR   3(92-U-235(N,ABS),,ALF) 0.376+-0.036 at En=30 keV.      40070 39   14 
+CORRECTION   Contribution of U-238 rad.capture was taken into     40070 39   15 
+           account by means of additional measurement .           40070 39   16 
+ERR-ANALYS (DATA-ERR) Type of error is not explained              40070 39   17 
+                   Normalization error for fission and rad.capture40070 39   18 
+           cross sections ~ 5% in the case of normalization by    40070 39   19 
+           thermal U-235 cross-section ( 582.+-6. b) and          40070 39   20 
+           ALF =0.176+-0.002 at thermal energy .                  40070 39   21 
+                     Systematic error in rad.capture CS ~15.% in  40070 39   22 
+           energy range around 30 keV due to ALF normalization at 40070 39   23 
+           30 keV .                                               40070 39   24 
+STATUS     (TABLE) Table 2 of C,65SALZBURG,1,287,1965             40070 39   25 
+           (COREL,40024002) ALF averaged at different energy      40070 39   26 
+           intervals.                                             40070 39   27 
+HISTORY    (20171222C) M.M. Subent was added.                     40070 39   28 
+ENDBIB              26          0                                 40070 39   29 
+NOCOMMON             0          0                                 40070 39   30 
+DATA                 8         32                                 40070 39   31 
+EN-MIN     EN-MAX     DATA      1DATA-ERR  1DATA      2DATA-ERR  240070 39   32 
+DATA      3DATA-ERR  3                                            40070 39   33 
+EV         EV         B          B          B          B          40070 39   34 
+NO-DIM     NO-DIM                                                 40070 39   35 
+  0.1         0.2     20.60       0.10       19.1       0.5       40070 39   36 
+ 0.91       0.02                                                  40070 39   37 
+  0.2         0.3     19.80       0.10       12.1       0.4       40070 39   38 
+ 0.61       0.02                                                  40070 39   39 
+  0.3         0.4     12.7        0.14        6.1       0.3       40070 39   40 
+ 0.48       0.02                                                  40070 39   41 
+  0.4         0.5     13.8        0.14        5.1       0.3       40070 39   42 
+ 0.37       0.02                                                  40070 39   43 
+  0.5         0.6     14.8        0.15        3.6       0.2       40070 39   44 
+ 0.24       0.01                                                  40070 39   45 
+  0.6         0.7     11.3        0.14        4.86      0.3       40070 39   46 
+ 0.43       0.03                                                  40070 39   47 
+  0.7         0.8     10.7        0.14        4.2       0.2       40070 39   48 
+ 0.39       0.02                                                  40070 39   49 
+  0.8         0.9      8.45       0.12        4.1       0.3       40070 39   50 
+ 0.48       0.03                                                  40070 39   51 
+  0.9         1.0      8.00       0.12        3.28      0.3       40070 39   52 
+ 0.41       0.04                                                  40070 39   53 
+  1.0         1.1      8.37       0.14        1.42      0.2       40070 39   54 
+ 0.17       0.02                                                  40070 39   55 
+  1.1         1.2      9.69       0.18        2.9       0.3       40070 39   56 
+ 0.30       0.03                                                  40070 39   57 
+  1.2         1.3      7.99       0.16        1.52      0.2       40070 39   58 
+ 0.19       0.02                                                  40070 39   59 
+  1.3         1.4      8.43       0.16        2.45      0.3       40070 39   60 
+ 0.29       0.03                                                  40070 39   61 
+  1.4         1.5      7.13       0.15        2.92      0.3       40070 39   62 
+ 0.41       0.04                                                  40070 39   63 
+  1.5         1.6      6.59       0.14        3.62      0.4       40070 39   64 
+ 0.55       0.05                                                  40070 39   65 
+  1.6         1.7      7.09       0.15        3.26      0.3       40070 39   66 
+ 0.46       0.05                                                  40070 39   67 
+  1.7         1.8      7.07       0.15        3.25      0.3       40070 39   68 
+ 0.46       0.05                                                  40070 39   69 
+  1.8         1.9      6.41       0.13        3.40      0.3       40070 39   70 
+ 0.53       0.05                                                  40070 39   71 
+  1.9         2.0      6.70       0.14        3.69      0.4       40070 39   72 
+ 0.55       0.05                                                  40070 39   73 
+  2.0         3.0      5.56       0.10        2.2       0.2       40070 39   74 
+ 0.40       0.03                                                  40070 39   75 
+  3.0         4.0      4.88       0.10        2.9       0.2       40070 39   76 
+ 0.59       0.04                                                  40070 39   77 
+  4.0         5.0      4.47       0.08        1.8       0.2       40070 39   78 
+ 0.40       0.03                                                  40070 39   79 
+  5.0         6.0      3.97       0.08        1.2       0.1       40070 39   80 
+ 0.31       0.03                                                  40070 39   81 
+  6.0         7.0      3.49       0.07        1.2       0.1       40070 39   82 
+ 0.35       0.03                                                  40070 39   83 
+  7.0         8.0      3.40       0.09        0.9       0.1       40070 39   84 
+ 0.26       0.03                                                  40070 39   85 
+  8.0         9.0      3.23       0.10        1.03      0.1       40070 39   86 
+ 0.32       0.03                                                  40070 39   87 
+  9.0        10.0      3.37       0.11        1.1       0.1       40070 39   88 
+ 0.32       0.03                                                  40070 39   89 
+ 10.0        12.5      3.23       0.11        1.20      0.1       40070 39   90 
+ 0.42       0.04                                                  40070 39   91 
+ 12.5        15.0      3.36       0.11        0.74      0.1       40070 39   92 
+ 0.22       0.02                                                  40070 39   93 
+ 15.0        20.0      3.23       0.10        1.2       0.11      40070 39   94 
+ 0.37       0.04                                                  40070 39   95 
+ 20.0        25.0      3.39       0.11        1.18      0.1       40070 39   96 
+ 0.36       0.04                                                  40070 39   97 
+ 25.0        30.0      2.94       0.12        1.09      0.1       40070 39   98 
+ 0.37       0.04                                                  40070 39   99 
+ENDDATA             68          0                                 40070 39  100 
+ENDSUBENT           99          0                                 40070 3999999 
+ENDENTRY            39          0                                 4007099999999 
