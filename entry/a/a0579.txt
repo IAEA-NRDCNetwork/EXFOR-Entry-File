@@ -1,20 +1,20 @@
-ENTRY            A0579   20190708                             A092A0579  0    1 
-SUBENT        A0579001   20190708                             A092A0579  1    1 
-BIB                 11         21                                 A0579  1    2 
-TITLE       (p,n), (p,xn) and (p,pxn),(p,2p) reactions on tin     A0579  1    3 
-           nuclides.                                              A0579  1    4 
+ENTRY            A0579   20231229                             A106A0579  0    1 
+SUBENT        A0579001   20231229                             A106A0579  1    1 
+BIB                 11         24                                 A0579  1    2 
+TITLE       (p,n), (p,xn) and (p,pxn), (p,2p) reactions on tin    A0579  1    3 
+           nuclides                                               A0579  1    4 
 AUTHOR     (V.E.Alexandryan, A.S.Danagulyan,L.G.Martirosyan,      A0579  1    5 
            V.G.Kalinnikov, V.I.Stegailov,J.Frana)                 A0579  1    6 
-INSTITUTE  (4ARMJSU).Armenian State University.                   A0579  1    7 
-           (4ZZZDUB)                                              A0579  1    8 
-REFERENCE  (C,96MOSCOW,,218,1996)                                 A0579  1    9 
-SAMPLE     Targets Sn-117,Sn-118 and Sn-124 were used             A0579  1   10 
-DETECTOR   (HPGE)                                                 A0579  1   11 
-FACILITY   (ISOCY,4ZZZDUB)                                        A0579  1   12 
-METHOD     (ACTIV)                                                A0579  1   13 
-           (GSPEC)                                                A0579  1   14 
-ERR-ANALYS (DATA-ERR) No information on source of uncertainties   A0579  1   15 
-STATUS     (TABLE) Tbl. from 96MOSCOW,,218,1996                   A0579  1   16 
+INSTITUTE  (4ARMJSU,4ZZZDUB)                                      A0579  1    7 
+REFERENCE  (C,96MOSCOW,,218,1996) Part of results presented in:   A0579  1    8 
+           (J,YF,59,592,1996) - final publ.                       A0579  1    9 
+FACILITY   (ISOCY,4ZZZDUB)                                        A0579  1   10 
+SAMPLE     Targets Sn-117,Sn-118 and Sn-124 were used             A0579  1   11 
+DETECTOR   (HPGE)                                                 A0579  1   12 
+METHOD     (ACTIV,GSPEC)                                          A0579  1   13 
+ERR-ANALYS (DATA-ERR) No information on source of uncertainties   A0579  1   14 
+STATUS     (TABLE,,V.E.Alexandryan+,C,96MOSCOW,,218,1996)         A0579  1   15 
+                                                  Tbl.on p.218    A0579  1   16 
 HISTORY    (19970505C)                                            A0579  1   17 
            (19971023A) Many Subentries are corrected according    A0579  1   18 
            to Memo CP/D-286.                                      A0579  1   19 
@@ -22,9 +22,12 @@ HISTORY    (19970505C)                                            A0579  1   17
            code in Subents 012-019. ERR-T -> DATA-ERR in          A0579  1   21 
             Subents 002-021.                                      A0579  1   22 
            (20190708A) SD: REACTION code corrected in Subent 021. A0579  1   23 
-ENDBIB              21          0                                 A0579  1   24 
-NOCOMMON             0          0                                 A0579  1   25 
-ENDSUBENT           24          0                                 A0579  199999 
+           (20231229A) SD: Correction in Subent 012.              A0579  1   24 
+           Subents 013-020 deleted (final results published in    A0579  1   25 
+           YF,59,592,1996; see A0578).                            A0579  1   26 
+ENDBIB              24          0                                 A0579  1   27 
+NOCOMMON             0          0                                 A0579  1   28 
+ENDSUBENT           27          0                                 A0579  199999 
 SUBENT        A0579002   20160318                             A084A0579  2    1 
 BIB                  1          1                                 A0579  2    2 
 REACTION   (50-SN-124(P,N)51-SB-124-G,M+,SIG)        Independent  A0579  2    3 
@@ -137,123 +140,30 @@ MEV        MB         MB                                          A0579 11    8
        660.       1.96        0.2                                 A0579 11    9 
 ENDDATA              3          0                                 A0579 11   10 
 ENDSUBENT            9          0                                 A0579 1199999 
-SUBENT        A0579012   20160318                             A084A0579 12    1 
-BIB                  3          5                                 A0579 12    2 
-REACTION   (50-SN-124(P,X)50-SN-123-G,(CUM),SIG)                  A0579 12    3 
+SUBENT        A0579012   20231229                             A106A0579 12    1 
+BIB                  3          6                                 A0579 12    2 
+REACTION   (50-SN-124(P,X)50-SN-123,(CUM),SIG)                    A0579 12    3 
 COMMENT    -By Compiler- Authors assumed that 123-In can decay to A0579 12    4 
            isomer state of 123-Sn only.                           A0579 12    5 
 HISTORY    (20160318A) SD: SF3=N+P -> X, SF5=IND -> (CUM) in      A0579 12    6 
            REACTION code.                                         A0579 12    7 
-ENDBIB               5          0                                 A0579 12    8 
-NOCOMMON             0          0                                 A0579 12    9 
-DATA                 3          1                                 A0579 12   10 
-EN         DATA       DATA-ERR                                    A0579 12   11 
-MEV        MB         MB                                          A0579 12   12 
-       660.        82.         6.                                 A0579 12   13 
-ENDDATA              3          0                                 A0579 12   14 
-ENDSUBENT           13          0                                 A0579 1299999 
-SUBENT        A0579013   20160318                             A084A0579 13    1 
-BIB                  3          5                                 A0579 13    2 
-REACTION   (50-SN-118(P,X)50-SN-117-M,(CUM),SIG)                  A0579 13    3 
-COMMENT    - By Compiler - Authors assumed that 117-In and its    A0579 13    4 
-           isomer state decay to ground state of 117-Sn only.     A0579 13    5 
-HISTORY    (20160318A) SD: SF3=N+P -> X, SF5=IND -> (CUM) in      A0579 13    6 
-           REACTION code.                                         A0579 13    7 
-ENDBIB               5          0                                 A0579 13    8 
-NOCOMMON             0          0                                 A0579 13    9 
-DATA                 3          1                                 A0579 13   10 
-EN         DATA       DATA-ERR                                    A0579 13   11 
-MEV        MB         MB                                          A0579 13   12 
-       660.       23.8        2.3                                 A0579 13   13 
-ENDDATA              3          0                                 A0579 13   14 
-ENDSUBENT           13          0                                 A0579 1399999 
-SUBENT        A0579014   20160318                             A084A0579 14    1 
-BIB                  2          2                                 A0579 14    2 
-REACTION   (50-SN-112(P,X)50-SN-110,,SIG)                         A0579 14    3 
-HISTORY    (20160318A) SD: SF3=2N+P -> X in REACTION code.        A0579 14    4 
-ENDBIB               2          0                                 A0579 14    5 
-NOCOMMON             0          0                                 A0579 14    6 
-DATA                 3          1                                 A0579 14    7 
-EN         DATA       DATA-ERR                                    A0579 14    8 
-MEV        MB         MB                                          A0579 14    9 
-       660.       14.1         2.                                 A0579 14   10 
-ENDDATA              3          0                                 A0579 14   11 
-ENDSUBENT           10          0                                 A0579 1499999 
-SUBENT        A0579015   20160318                             A084A0579 15    1 
-BIB                  2          2                                 A0579 15    2 
-REACTION   (50-SN-118(P,X)50-SN-113,,SIG)                         A0579 15    3 
-HISTORY    (20160318A) SD: SF3=5N+P -> X in REACTION code.        A0579 15    4 
-ENDBIB               2          0                                 A0579 15    5 
-NOCOMMON             0          0                                 A0579 15    6 
-DATA                 3          1                                 A0579 15    7 
-EN         DATA       DATA-ERR                                    A0579 15    8 
-MEV        MB         MB                                          A0579 15    9 
-       660.        26.         2.                                 A0579 15   10 
-ENDDATA              3          0                                 A0579 15   11 
-ENDSUBENT           10          0                                 A0579 1599999 
-SUBENT        A0579016   20160318                             A084A0579 16    1 
-BIB                  3          5                                 A0579 16    2 
-REACTION   (50-SN-124(P,X)50-SN-117-M,(CUM),SIG)                  A0579 16    3 
-COMMENT    - By Compiler - Authors assumed that 117-In and  its   A0579 16    4 
-           isomer state decay to ground state of 117-Sn only.     A0579 16    5 
-HISTORY    (20160318A) SD: SF3=7N+P -> X, SF5=IND -> (CUM) in     A0579 16    6 
-           REACTION code.                                         A0579 16    7 
-ENDBIB               5          0                                 A0579 16    8 
-NOCOMMON             0          0                                 A0579 16    9 
-DATA                 3          1                                 A0579 16   10 
-EN         DATA       DATA-ERR                                    A0579 16   11 
-MEV        MB         MB                                          A0579 16   12 
-       660.        16.        1.5                                 A0579 16   13 
-ENDDATA              3          0                                 A0579 16   14 
-ENDSUBENT           13          0                                 A0579 1699999 
-SUBENT        A0579017   20160318                             A084A0579 17    1 
-BIB                  2          2                                 A0579 17    2 
-REACTION   (50-SN-118(P,X)50-SN-110,,SIG)                         A0579 17    3 
-HISTORY    (20160318A) SD: SF3=8N+P -> X in REACTION code.        A0579 17    4 
-ENDBIB               2          0                                 A0579 17    5 
-NOCOMMON             0          0                                 A0579 17    6 
-DATA                 3          1                                 A0579 17    7 
-EN         DATA       DATA-ERR                                    A0579 17    8 
-MEV        MB         MB                                          A0579 17    9 
-       660.       6.36        0.6                                 A0579 17   10 
-ENDDATA              3          0                                 A0579 17   11 
-ENDSUBENT           10          0                                 A0579 1799999 
-SUBENT        A0579018   20160318                             A084A0579 18    1 
-BIB                  2          2                                 A0579 18    2 
-REACTION   (50-SN-124(P,X)50-SN-113,,SIG)                         A0579 18    3 
-HISTORY    (20160318A) SD: SF3=11N+P -> X in REACTION code.       A0579 18    4 
-ENDBIB               2          0                                 A0579 18    5 
-NOCOMMON             0          0                                 A0579 18    6 
-DATA                 3          1                                 A0579 18    7 
-EN         DATA       DATA-ERR                                    A0579 18    8 
-MEV        MB         MB                                          A0579 18    9 
-       660.        8.9        0.9                                 A0579 18   10 
-ENDDATA              3          0                                 A0579 18   11 
-ENDSUBENT           10          0                                 A0579 1899999 
-SUBENT        A0579019   20160318                             A084A0579 19    1 
-BIB                  2          2                                 A0579 19    2 
-REACTION   (50-SN-124(P,X)50-SN-110,,SIG)                         A0579 19    3 
-HISTORY    (20160318A) SD: SF3=14N+P -> X in REACTION code.       A0579 19    4 
-ENDBIB               2          0                                 A0579 19    5 
-NOCOMMON             0          0                                 A0579 19    6 
-DATA                 3          1                                 A0579 19    7 
-EN         DATA       DATA-ERR                                    A0579 19    8 
-MEV        MB         MB                                          A0579 19    9 
-       660.       1.63       0.12                                 A0579 19   10 
-ENDDATA              3          0                                 A0579 19   11 
-ENDSUBENT           10          0                                 A0579 1999999 
-SUBENT        A0579020   20160318                             A084A0579 20    1 
-BIB                  2          2                                 A0579 20    2 
-REACTION   (50-SN-112(P,2P)49-IN-111,,SIG)                        A0579 20    3 
-HISTORY    (20160318A) SD: SF4=In-111g -> In-111 in REACTION code.A0579 20    4 
-ENDBIB               2          0                                 A0579 20    5 
-NOCOMMON             0          0                                 A0579 20    6 
-DATA                 3          1                                 A0579 20    7 
-EN         DATA       DATA-ERR                                    A0579 20    8 
-MEV        MB         MB                                          A0579 20    9 
-       660.       82.6         8.                                 A0579 20   10 
-ENDDATA              3          0                                 A0579 20   11 
-ENDSUBENT           10          0                                 A0579 2099999 
+           (20231229A) SD: SF4=Sn-123g -> Sn-123 in REACTION code.A0579 12    8 
+ENDBIB               6          0                                 A0579 12    9 
+NOCOMMON             0          0                                 A0579 12   10 
+DATA                 3          1                                 A0579 12   11 
+EN         DATA       DATA-ERR                                    A0579 12   12 
+MEV        MB         MB                                          A0579 12   13 
+       660.        82.         6.                                 A0579 12   14 
+ENDDATA              3          0                                 A0579 12   15 
+ENDSUBENT           14          0                                 A0579 1299999 
+NOSUBENT      A0579013   20231229                             A106A0579 13    1 
+NOSUBENT      A0579014   20231229                             A106A0579 14    1 
+NOSUBENT      A0579015   20231229                             A106A0579 15    1 
+NOSUBENT      A0579016   20231229                             A106A0579 16    1 
+NOSUBENT      A0579017   20231229                             A106A0579 17    1 
+NOSUBENT      A0579018   20231229                             A106A0579 18    1 
+NOSUBENT      A0579019   20231229                             A106A0579 19    1 
+NOSUBENT      A0579020   20231229                             A106A0579 20    1 
 SUBENT        A0579021   20190708                             A092A0579 21    1 
 BIB                  3          6                                 A0579 21    2 
 REACTION   (50-SN-118(P,X)49-IN-117,(CUM),SIG)                    A0579 21    3 
