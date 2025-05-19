@@ -1,6 +1,6 @@
-ENTRY            C0068   20171004                             C168C0068  0    1 
-SUBENT        C0068001   20171004                             C168C0068  1    1 
-BIB                 15         41                                 C0068  1    2 
+ENTRY            C0068   20200508                             C193C0068  0    1 
+SUBENT        C0068001   20200508                             C193C0068  1    1 
+BIB                 15         42                                 C0068  1    2 
 TITLE      Cyclotron production of NCA 99mTc and 99Mo.  An        C0068  1    3 
             alternative non-reactor supply source of instant      C0068  1    4 
             99mTc and 99Mo-99mTc generators                       C0068  1    5 
@@ -9,7 +9,7 @@ AUTHOR     (M.C.Lagunas-Solar,P.M.Kiefer,O.F.Carvacho,C.A.Lagunas,C0068  1    6
 INSTITUTE  (1USADAV)                                              C0068  1    8 
 REFERENCE  (J,ARI,42,643,1991)                                    C0068  1    9 
            (J,RCA,60,57,1993) Data compared to ALICE calculations.C0068  1   10 
-FACILITY   (ISOCY,1USADAV) 1.92m isochonous cyclotron.            C0068  1   11 
+FACILITY   (ISOCY,1USADAV) 1.92m isochronous cyclotron.           C0068  1   11 
 INC-SPECT  Primary proton energies are 67.5 and 45 MeV.           C0068  1   12 
 SAMPLE     Natural Mo foils, density 10.22 g/cm3,                 C0068  1   13 
             thickness 0.127 mm, purity 99.95%, isotopic           C0068  1   14 
@@ -31,20 +31,25 @@ DECAY-DATA Taken from Table of Isotopes, 7th ed. (1978).          C0068  1   29
 CORRECTION Corrected for dead time, pile-up and cascade losses.   C0068  1   30 
            Recoil losses and photo peak summation were assumed    C0068  1   31 
             to be  negligible.                                    C0068  1   32 
-ERR-ANALYS Total uncertainties in proton energy are 3-5%.         C0068  1   33 
-            Individual uncertainties included are:                C0068  1   34 
-              incident beam energy    1%                          C0068  1   35 
-              proton beam scattering  1%                          C0068  1   36 
-              range-energy value      2%-5%                       C0068  1   37 
-              thickness of Mo foils   0.1%                        C0068  1   38 
+ERR-ANALYS (EN-ERR,3.,5.) Total uncertainties in proton energy areC0068  1   33 
+            3-5%. The thickness of Mo foils contributes 0.1%.     C0068  1   34 
+            Other individual uncertainties included are:          C0068  1   35 
+           (EN-ERR1) Incident beam energy    1%                   C0068  1   36 
+           (EN-ERR2) Proton beam scattering  1%                   C0068  1   37 
+           (EN-ERR3,2.,5.) Range-energy value  2%-5%              C0068  1   38 
 HISTORY    (19980929C) TS                                         C0068  1   39 
            (20010207A) Reference added.                           C0068  1   40 
            (20170919A) TS+On+OS. Major revisions in 004-005,007,  C0068  1   41 
             09,011,013-018. Subs.001-003 updated.                 C0068  1   42 
             See also Memo CP-D/933.                               C0068  1   43 
-ENDBIB              41          0                                 C0068  1   44 
-NOCOMMON             0          0                                 C0068  1   45 
-ENDSUBENT           44          0                                 C0068  199999 
+           (20200506A) OS. REACTION in sub.10 corrected           C0068  1   44 
+ENDBIB              42          0                                 C0068  1   45 
+COMMON               2          3                                 C0068  1   46 
+EN-ERR1    EN-ERR2                                                C0068  1   47 
+PER-CENT   PER-CENT                                               C0068  1   48 
+   1.         1.                                                  C0068  1   49 
+ENDCOMMON            3          0                                 C0068  1   50 
+ENDSUBENT           49          0                                 C0068  199999 
 SUBENT        C0068002   20171004                             C168C0068  2    1 
 BIB                  5          6                                 C0068  2    2 
 REACTION   (42-MO-0(P,X)43-TC-99-M,,SIG)                          C0068  2    3 
@@ -325,16 +330,17 @@ MEV        MEV        MBQ/MUAHR  MBQ/MUAHR  MBQ/MUAHR  MBQ/MUAHR  C0068  9   29
        68.0        8.0       75.5        6.8        2.7        0.2C0068  9   30 
 ENDDATA              3          0                                 C0068  9   31 
 ENDSUBENT           30          0                                 C0068  999999 
-SUBENT        C0068010   19980928                             0000C006801000001 
-BIB                  3          4                                 C006801000002 
-REACTION   (42-MO-0(P,X)43-TC-96,CUM,SIG)                         C006801000003 
-                       Includes the contribution of 96mTc         C006801000004 
-DECAY-DATA (43-TC-96-G,4.35D,DG,778.0,0.991,DG,849.0,0.969)       C006801000005 
-STATUS     Data given in Fig.8.                                   C006801000006 
-ENDBIB               4          0                                 C006801000007 
-NOCOMMON             0          0                                 C006801000008 
-NODATA               0          0                                 C006801000009 
-ENDSUBENT            8          0                                 C006801099999 
+SUBENT        C0068010   20200508                             C193C0068 10    1 
+BIB                  4          5                                 C0068 10    2 
+REACTION   (42-MO-0(P,X)43-TC-96,,SIG)                            C0068 10    3 
+                       Includes the contribution of 96mTc         C0068 10    4 
+DECAY-DATA (43-TC-96-G,4.35D,DG,778.0,0.991,DG,849.0,0.969)       C0068 10    5 
+STATUS     Data given in Fig.8.                                   C0068 10    6 
+HISTORY    (20200506A) REACTION SF5 deleted                       C0068 10    7 
+ENDBIB               5          0                                 C0068 10    8 
+NOCOMMON             0          0                                 C0068 10    9 
+NODATA               0          0                                 C0068 10   10 
+ENDSUBENT            9          0                                 C0068 1099999 
 SUBENT        C0068011   20171004                             C168C0068 11    1 
 BIB                  5         17                                 C0068 11    2 
 REACTION   (42-MO-0(P,X)43-TC-96,,TTY,,(PHY))                     C0068 11    3 
