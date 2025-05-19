@@ -1,36 +1,64 @@
-ENTRY            F0060   19990407                             0000F006000000001 
-SUBENT        F0060001   19990407                             0000F006000100001 
-BIB                  7          9                                 F006000100002 
-TITLE      Li-6(d,p1)Li-7* reaction at 2 MeV bombarding energy    F006000100003 
-AUTHOR     (V.M.ROUT,W.M.JONES)                                   F006000100004 
-INSTITUTE  (2UK ALD)                                              F006000100005 
-REFERENCE  (J,PR,128,(1),263,196210)                              F006000100006 
-FACILITY   (VDG)                                                  F006000100007 
-DETECTOR   (MAGSP)                                                F006000100008 
-           (PLATE)                                                F006000100009 
-HISTORY    (19870511C)                                            F006000100010 
-           (19990407A) CNPD: corrected 4-dig. year                F006000100011 
-ENDBIB               9          0                                 F006000100012 
-NOCOMMON             0          0                                 F006000100013 
-ENDSUBENT           12          0                                 F006000199999 
-SUBENT        F0060002   19990407                             0000F006000200001 
-BIB                  4          4                                 F006000200002 
-REACTION   (3-LI-6(D,P)3-LI-7,PAR,DA,,,EXP)                       F006000200003 
-EN-SEC     (E-LVL,3-LI-7)                                         F006000200004 
-ERR-ANALYS (ERR-T) Total error                                    F006000200005 
-STATUS     (CURVE) TABLE 1                                        F006000200006 
-ENDBIB               4          0                                 F006000200007 
-COMMON               2          3                                 F006000200008 
-EN         ERR-T                                                  F006000200009 
-MEV        PER-CENT                                               F006000200010 
-  2.         30.                                                  F006000200011 
-ENDCOMMON            3          0                                 F006000200012 
-DATA                 3          3                                 F006000200013 
-E-LVL      ANG        DATA                                        F006000200014 
-MEV        ADEG       MB/SR                                       F006000200015 
-     0.        90.         2.8                                    F006000200016 
-     0.48       0.         2.6                                    F006000200017 
-     0.48      90.         2.1                                    F006000200018 
-ENDDATA              5          0                                 F006000200019 
-ENDSUBENT           18          0                                 F006000299999 
+ENTRY            F0060   20200201                             F074F0060  0    1 
+SUBENT        F0060001   20200201                             F074F0060  1    1 
+BIB                 13         36                                 F0060  1    2 
+TITLE      Li-6(d,p1)Li-7* reaction at 2 MeV bombarding energy.   F0060  1    3 
+AUTHOR     (V.M.Rout,W.M.Jones)                                   F0060  1    4 
+INSTITUTE  (2UK ALD)                                              F0060  1    5 
+REFERENCE  (J,PR,128,263,1962)                                    F0060  1    6 
+FACILITY   (VDG,2UK ALD)                                          F0060  1    7 
+SAMPLE     LiF of natural isotopic content. Targets consisting of F0060  1    8 
+            0.025 mg/cm2 LiF, evaporated on to thin carbon foils, F0060  1    9 
+           approximately 0.0135 mg/cm2 in thickness.              F0060  1   10 
+ANALYSIS   This experiment was secondary to that of 19F(d,p)20F   F0060  1   11 
+            (see REL-REF). Two methods have been used to estimate F0060  1   12 
+           the absolute differential cross sections for the       F0060  1   13 
+           lithium groups, since the absolute beam-charge incidentF0060  1   14 
+           on the target could not be reliably measured.          F0060  1   15 
+            1. Results obtained by Ono et al. (see MONIT-REF) wereF0060  1   16 
+           used to determine  the constant of proportionality (K) F0060  1   17 
+           taking into account that the angular distributions     F0060  1   18 
+           obtained by these authors and present results are      F0060  1   19 
+           closely similar.                                       F0060  1   20 
+            2. The second method for obtaining K uses the measuredF0060  1   21 
+           absolute cross section of the 12C(d,p0)12C reaction    F0060  1   22 
+            (see REL-REF) and the ratio of the number of 6Li to   F0060  1   23 
+           12C atoms in the target.                               F0060  1   24 
+MONITOR    (9-F-19(D,P)9-F-20,PAR,DA)                             F0060  1   25 
+MONIT-REF  (,K.Ono+,J,JPJ,14,117,1959)                            F0060  1   26 
+ERR-ANALYS (DATA-ERR) From normalization (see ANALYSIS)           F0060  1   27 
+DETECTOR   (MAGSP) Data were analyzed by a broad-range magnetic   F0060  1   28 
+            spectrograph and                                      F0060  1   29 
+           (PLATE) recorded in nuclear emulsions.                 F0060  1   30 
+REL-REF    (M,,V.M.Rout+,J,NP,45,369,1963) - method of analysis + F0060  1   31 
+           additional information about experiment.               F0060  1   32 
+           (M,C0993001,M.T.McEllistrem+,J,PR,104,1008,1956)       F0060  1   33 
+HISTORY    (19870511C)                                            F0060  1   34 
+           (19990407A) CNPD: corrected 4-dig. year                F0060  1   35 
+           (20200201A) SD: Corrections in all Subents according toF0060  1   36 
+           new EXFOR rules. BIB updated (SAMPLE, MONITOR/REF,     F0060  1   37 
+           REL-REF added).                                        F0060  1   38 
+ENDBIB              36          0                                 F0060  1   39 
+NOCOMMON             0          0                                 F0060  1   40 
+ENDSUBENT           39          0                                 F0060  199999 
+SUBENT        F0060002   20200201                             F074F0060  2    1 
+BIB                  3          5                                 F0060  2    2 
+REACTION   (3-LI-6(D,P)3-LI-7,PAR,DA)                             F0060  2    3 
+STATUS     (TABLE) Tabl. 1 from Phys.Rev.,128(1962)263            F0060  2    4 
+HISTORY    (20200201A) SD: SF9=EXP deleted from REACTION code.    F0060  2    5 
+           ERR-T -> DATA-ERR. EN-SEC deleted. ERR-ANALYS,         F0060  2    6 
+           STATUS updated.                                        F0060  2    7 
+ENDBIB               5          0                                 F0060  2    8 
+COMMON               2          3                                 F0060  2    9 
+EN         DATA-ERR                                               F0060  2   10 
+MEV        PER-CENT                                               F0060  2   11 
+  2.         30.                                                  F0060  2   12 
+ENDCOMMON            3          0                                 F0060  2   13 
+DATA                 3          3                                 F0060  2   14 
+E-LVL      ANG        DATA                                        F0060  2   15 
+MEV        ADEG       MB/SR                                       F0060  2   16 
+     0.        90.         2.8                                    F0060  2   17 
+     0.48       0.         2.6                                    F0060  2   18 
+     0.48      90.         2.1                                    F0060  2   19 
+ENDDATA              5          0                                 F0060  2   20 
+ENDSUBENT           19          0                                 F0060  299999 
 ENDENTRY             2          0                                 F006099999999 
