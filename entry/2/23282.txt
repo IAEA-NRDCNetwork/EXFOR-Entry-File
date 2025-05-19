@@ -1,0 +1,108 @@
+ENTRY            23282   20151215                             224823282  0    1 
+SUBENT        23282001   20151215                             224823282  1    1 
+BIB                 13         27                                 23282  1    2 
+TITLE      Measurement of the 197Au(n,gamma) stellar cross section23282  1    3 
+           at kT=30keV by activation.                             23282  1    4 
+AUTHOR     (P.Jimenez-Bonilla,J.Praena)                           23282  1    5 
+INSTITUTE  (2SPNSEU)                                              23282  1    6 
+REFERENCE  (C,2014DEBREC,(102),2014)                              23282  1    7 
+            XIII Nuclei in the Cosmos, Debrecen,Hungary,          23282  1    8 
+           7-11 July 2014 .                                       23282  1    9 
+FACILITY   (ACCEL,2SPNSEU) 3 MV Tandem Pelletron at Centro        23282  1   10 
+           Nacional de Aceleradores, Seville .                    23282  1   11 
+           Proton energy 1912 keV. Energy spread of proton beam   23282  1   12 
+           was < 1 keV.                                           23282  1   13 
+INC-SOURCE (P-LI7) Metallic Li target on copper backing of 0.5 mm 23282  1   14 
+           thickness. Li layer of 380 microm thickness.           23282  1   15 
+SAMPLE     Au sample of 2.5 cm diameter, 0.1 mm ( 5.67E-4 at/b)   23282  1   16 
+           thickness, 0.3820g mass, 206.12 mm2 surface .          23282  1   17 
+           Placed on the back surface of the Li backing.          23282  1   18 
+DETECTOR   (HPGE) HPGe Ortec GMX gamma detector, placed at 28 mm  23282  1   19 
+           distance from backing to measure induced activities in 23282  1   20 
+           beryllium and gold.  Efficiency was defined :          23282  1   21 
+           - experimentally by calibrated point sources;          23282  1   22 
+           - by MNCP simulation.                                  23282  1   23 
+DECAY-DATA (79-AU-198-G,2.6947D,DG,411.8,0.9554)                  23282  1   24 
+MONITOR    (3-LI-7(P,N)4-BE-7,,SIG)                               23282  1   25 
+DECAY-MON  (4-BE-7,53.29D,DG,477.6,0.1044)                        23282  1   26 
+METHOD     (ACTIV) Neutron irradiation time 4hr 45min.            23282  1   27 
+           Activities measurement 6hr 30min .Cooling time 15 min. 23282  1   28 
+HISTORY    (20151215C) M.M.                                       23282  1   29 
+ENDBIB              27          0                                 23282  1   30 
+NOCOMMON             0          0                                 23282  1   31 
+ENDSUBENT           30          0                                 23282  199999 
+SUBENT        23282002   20151215                             224823282  2    1 
+BIB                  6         40                                 23282  2    2 
+REACTION   (79-AU-197(N,G)79-AU-198,,SIG,,MXW) MACS               23282  2    3 
+CORRECTION For gamma absorption and scattering in materials :     23282  2    4 
+           for Au - 0.9801 for Be - 0.9286.                       23282  2    5 
+           For neutron scattering ( mainly in Cu backing) - 0.977.23282  2    6 
+           For the flat sample - 1.263 .                          23282  2    7 
+           For decay during irradiation, cooling, measurement     23282  2    8 
+           for Au - 0.06718, for Be - 0.00353.                    23282  2    9 
+           For difference of exp. quasi-Maxwellian spectrum from  23282  2   10 
+            true Maxwellian neutron spectrum of kT=25 keV - 0.955 23282  2   11 
+ANALYSIS   MACS at kT=25 keV was defined                          23282  2   12 
+            = 2/sqrt(PI) * Kmax * SIGexp, where                   23282  2   13 
+           SIGexp - exp. cross section,                           23282  2   14 
+           Kmax - coefficient 0.955 for kT=25 keV, calculated by  23282  2   15 
+           using exp.measurements from REL-REFs of C.Lederer+ and 23282  2   16 
+           G.Feinberg and gold cross section from ENDF/B-VII.1,   23282  2   17 
+           see formula 7 in C,20014DEBREC,(102),2014 .            23282  2   18 
+REL-REF    (R,23152001,C.Lederer+,J,PR/C,83,034608,2011)          23282  2   19 
+           (R,O2230001,C.Lederer+,J,PR/C,85,055809,2012)          23282  2   20 
+           (R,O1983001,G.Feinberg+,J,PR/C,85,055810,2012)         23282  2   21 
+            Neutron spectrum.                                     23282  2   22 
+           (A,23284001,G.Feinberg+,J,PR/C,85,055810,2012)         23282  2   23 
+            MACS=616+-17 mb.                                      23282  2   24 
+ERR-ANALYS (ERR-T) Total uncertainty ~ 4% .                       23282  2   25 
+            Considered uncertainties:                             23282  2   26 
+           (ERR-S) Counting statistics for Au - 0.7%              23282  2   27 
+           (ERR-1) Counting statistics for Be  - 0.3%             23282  2   28 
+           (ERR-2) Correction factor for decay of Au - 0.01%      23282  2   29 
+           (ERR-3) Correction factor for decay of Be - 0.01%      23282  2   30 
+           (ERR-4) Correction for gamma absorption and scattering 23282  2   31 
+                   for Au - 0.3%                                  23282  2   32 
+           (ERR-5) Correction for gamma absorption and scattering 23282  2   33 
+                   for Be - 0.3%                                  23282  2   34 
+           (ERR-6) Ratio of gamma detection intensities Be to Au  23282  2   35 
+                   - 1.8%                                         23282  2   36 
+           (ERR-7) Correction for the flat sample - 2%            23282  2   37 
+           (ERR-8) Correction for neutron scattering - 0.3%       23282  2   38 
+           (ERR-9) Correction for true Maxwellian spectrum - 1.5% 23282  2   39 
+           (ERR-10) Au sample thickness - 1.5% .                  23282  2   40 
+STATUS     (TABLE) Text, pages 1, 5 ; uncertainties - Table 1 of  23282  2   41 
+           C,20014DEBREC,(102),2014 .                             23282  2   42 
+ENDBIB              40          0                                 23282  2   43 
+COMMON              10          6                                 23282  2   44 
+ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      ERR-6      23282  2   45 
+ERR-7      ERR-8      ERR-9      ERR-10                           23282  2   46 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   23282  2   47 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         23282  2   48 
+ 0.3        0.01       0.01       0.3        0.3        1.8       23282  2   49 
+ 2.         0.3        1.5        1.5                             23282  2   50 
+ENDCOMMON            6          0                                 23282  2   51 
+DATA                 4          1                                 23282  2   52 
+KT         DATA       ERR-T      ERR-S                            23282  2   53 
+KEV        MB         MB         PER-CENT                         23282  2   54 
+ 25.        645.       25.        0.7                             23282  2   55 
+ENDDATA              3          0                                 23282  2   56 
+ENDSUBENT           55          0                                 23282  299999 
+SUBENT        23282003   20151215                             224823282  3    1 
+BIB                  4          7                                 23282  3    2 
+REACTION   (79-AU-197(N,G)79-AU-198,,SIG,,MXW,DERIV) MACS         23282  3    3 
+ANALYSIS   MACS at kT=30 keV was derived by extrapolation of MACS 23282  3    4 
+           at 25 keV as MACS(30keV) = 0.901 * MACS(25keV)         23282  3    5 
+ERR-ANALYS (DATA-ERR) Total uncertainty ~ 4% .                    23282  3    6 
+STATUS     (TABLE) Text, pages 1, 5 ; uncertainties - Table 1 of  23282  3    7 
+           C,20014DEBREC,(102),2014 .                             23282  3    8 
+           (DEP,23282002) MACS at kT=25 keV in Subent 002.        23282  3    9 
+ENDBIB               7          0                                 23282  3   10 
+NOCOMMON             0          0                                 23282  3   11 
+DATA                 3          1                                 23282  3   12 
+KT         DATA       DATA-ERR                                    23282  3   13 
+KEV        MB         MB                                          23282  3   14 
+ 30.        626.       25.                                        23282  3   15 
+ENDDATA              3          0                                 23282  3   16 
+ENDSUBENT           15          0                                 23282  399999 
+ENDENTRY             3          0                                 2328299999999 
