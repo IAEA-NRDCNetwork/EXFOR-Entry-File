@@ -1,42 +1,69 @@
-ENTRY            13494   19910718                             00001349400000001 
-SUBENT        13494001   19910718                             00001349400100001 
-BIB                 15         24                                 1349400100002 
-INSTITUTE  (1CANCRC)                                              1349400100003 
-REFERENCE  (J,PR,76,617,4909)                                     1349400100004 
-AUTHOR     (L.YAFFEE,B.W.SARGENT,M.KIRSCH,S.STANDIL,J.M.GRUNLUND) 1349400100005 
-TITLE      NEUTRON-CAPTURE CROSS SECTION OF 85-MINUTE BA139.      1349400100006 
-FACILITY   (REAC) HEAVY-WATER PILE                                1349400100007 
-SAMPLE     BARIUM CARBONATE. 139BA FORMED BY 138BA CAPTURE.       1349400100008 
-METHOD     (ACTIV,CHSEP)                                          1349400100009 
-DETECTOR   (GEMUC)                                                1349400100010 
-DECAY-DATA (56-BA-139,85.MIN)                                     1349400100011 
-           (57-LA-140,41.HR,B-)                                   1349400100012 
-ASSUMED    (ASSUM,56-BA-138(N,G)56-BA-139,,SIG,,SPA)              1349400100013 
-MONITOR    (57-LA-139(N,G)57-LA-140,,SIG,,SPA)                    1349400100014 
-CORRECTION CORRECTED FOR:                                         1349400100015 
-           - RESIDUAL BACKGROUND DUE TO BARIUM CONTAMINATION OF   1349400100016 
-             SEPARATED 140LA                                      1349400100017 
-           - SELF-ABSORPTION OF BETAS IN SAMPLE (ABOUT 5%)        1349400100018 
-           - EXTERNAL ABSORPTION BE AIR GAP AND COUNTER WINDOW    1349400100019 
-             (ABOUT 3%)                                           1349400100020 
-           - BACKSCATTERING BY AL TRAY (ABOUT 20%)                1349400100021 
-           - COUNTER EFFICIENCY                                   1349400100022 
-           - PERCENTAGE CHEMICAL RECOVERY                         1349400100023 
-ERR-ANALYS (DATA-ERR) ESTIMATED PROBABLE ERROR                    1349400100024 
-STATUS     DATA TAKEN FROM ARTICLE                                1349400100025 
-HISTORY    (910718C)                                              1349400100026 
-ENDBIB              24          0                                 1349400100027 
-NOCOMMON             0          0                                 1349400100028 
-ENDSUBENT           27          0                                 1349400199999 
-SUBENT        13494002   19910718                             00001349400200001 
-BIB                  1          1                                 1349400200002 
-REACTION   (56-BA-139(N,G)56-BA-140,,SIG,,SPA)                    1349400200003 
-ENDBIB               1          0                                 1349400200004 
-NOCOMMON             0          0                                 1349400200005 
-DATA                 5          1                                 1349400200006 
-EN-DUMMY   DATA       DATA-ERR   ASSUM      MONIT                 1349400200007 
-EV         B          B          B          B                     1349400200008 
- 0.0253     4.7        1.2        0.511      8.4                  1349400200009 
-ENDDATA              3          0                                 1349400200010 
-ENDSUBENT            9          0                                 1349400299999 
+ENTRY            13494   20210915                             149113494  0    1 
+SUBENT        13494001   20210915                             149113494  1    1 
+BIB                 15         46                                 13494  1    2 
+TITLE      Neutron-Capture Cross Section of 85-Minute Ba139       13494  1    3 
+AUTHOR     (L.Yaffe,B.W.Sargent,M.Kirsch,S.Standil,J.M.Grunlund)  13494  1    4 
+REFERENCE  (J,PR,76,617,1949)                                     13494  1    5 
+           #doi:10.1103/PhysRev.76.617                            13494  1    6 
+INSTITUTE  (1CANCRC)                                              13494  1    7 
+FACILITY   (REAC,1CANCRC) Heavy-water pile.                       13494  1    8 
+INC-SPECT  The fluxes of thermal neutrons were obtained by        13494  1    9 
+           experiment as far as possible; the maximum used was    13494  1   10 
+           2.0*10**13 neutrons/cm2/sec.                           13494  1   11 
+DETECTOR   (GEMUC) Counter had a mica end-window of mass 2.8 mg   13494  1   12 
+           per cm2. The counter efficiency was found to be 7.5%   13494  1   13 
+           using a standard Co60 source.                          13494  1   14 
+SAMPLE     Barium carbonate (138Ba was 71.66% of natural barium   13494  1   15 
+           in 1949 catalogs).                                     13494  1   16 
+METHOD     (ACTIV,CHSEP) It is preferable to produce the Ba139    13494  1   17 
+           by neutron capture in stable Ba138 than to separate    13494  1   18 
+           it from mixed fission products. Barium carbonate       13494  1   19 
+            (analytical reagent grade) was irradiated in high flux13494  1   20 
+            positions in the heavy water pile. To free the barium 13494  1   21 
+           from lanthanum after irradiation, the procedure was    13494  1   22 
+           in each case to dissolve the sample in dilute          13494  1   23 
+           hydrochloric acid, and take an aliquot from which the  13494  1   24 
+           barium content was determined as barium sulfate. The   13494  1   25 
+           La140 samples were mounted on aluminum trays, 7.1 cm2  13494  1   26 
+           area, and the activity measured with a previously      13494  1   27 
+           calibrated Geiger-Muller counter. The decay curve of   13494  1   28 
+           a lanthanum sample was followed for some time.         13494  1   29 
+DECAY-DATA (56-BA-139,85.MIN)                                     13494  1   30 
+           (57-LA-140,41.HR,B-)                                   13494  1   31 
+ASSUMED    (ASSUM,56-BA-138(N,G)56-BA-139,,SIG,,SPA)              13494  1   32 
+MONITOR    (57-LA-139(N,G)57-LA-140,,SIG,,SPA) Flux monitor.      13494  1   33 
+MONIT-REF  ((MONIT)11447094,L.Seren+,J,PR,72,888,1947)            13494  1   34 
+CORRECTION Corrected for:                                         13494  1   35 
+           - residual background due to barium contamination of   13494  1   36 
+             separated 140La                                      13494  1   37 
+           - self-absorption of betas in sample (about 5%)        13494  1   38 
+           - external absorption Be air gap and counter window    13494  1   39 
+             (about 3%)                                           13494  1   40 
+           - backscattering by Al tray (about 20%)                13494  1   41 
+           - counter efficiency                                   13494  1   42 
+           - percentage chemical recovery                         13494  1   43 
+HISTORY    (19910718C)                                            13494  1   44 
+           (20210915A) BP: Updated to new date formats, lower     13494  1   45 
+                       case. Corrections according last EXFOR     13494  1   46 
+                       rules and Dict. Updated entry, added doi   13494  1   47 
+                       and experimental details.                  13494  1   48 
+ENDBIB              46          0                                 13494  1   49 
+NOCOMMON             0          0                                 13494  1   50 
+ENDSUBENT           49          0                                 13494  199999 
+SUBENT        13494002   20210915                             149113494  2    1 
+BIB                  3          6                                 13494  2    2 
+REACTION   (56-BA-139(N,G)56-BA-140,,SIG,,SPA)                    13494  2    3 
+ERR-ANALYS (DATA-ERR) Estimated probable error. Authors feel      13494  2    4 
+           that 1.2 barns is sufficient for the probable error    13494  2    5 
+           in our measured value of 4.7 barns because of 20%      13494  2    6 
+           probable errors for Ba138 and La139 cross sections.    13494  2    7 
+STATUS     (TABLE) Table II, page 619; page 620.                  13494  2    8 
+ENDBIB               6          0                                 13494  2    9 
+NOCOMMON             0          0                                 13494  2   10 
+DATA                 5          1                                 13494  2   11 
+EN-DUMMY   DATA       DATA-ERR   ASSUM      MONIT                 13494  2   12 
+EV         B          B          B          B                     13494  2   13 
+     0.0253        4.7        1.2      0.511        8.4           13494  2   14 
+ENDDATA              3          0                                 13494  2   15 
+ENDSUBENT           14          0                                 13494  299999 
 ENDENTRY             2          0                                 1349499999999 
