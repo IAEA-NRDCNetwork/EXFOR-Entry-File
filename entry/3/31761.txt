@@ -1,56 +1,108 @@
-ENTRY            31761   20150521                             317031761  0    1 
-SUBENT        31761001   20150521                             317031761  1    1 
-BIB                  7         28                                 31761  1    2 
+ENTRY            31761   20160929                             317531761  0    1 
+SUBENT        31761001   20160929                             317531761  1    1 
+BIB                  6         20                                 31761  1    2 
 TITLE      Prompt-neutron yield from the spontaneous fission of   31761  1    3 
            Californium-252                                        31761  1    4 
 AUTHOR     (J.W.Boldeman)                                         31761  1    5 
 INSTITUTE  (3AULAUA)                                              31761  1    6 
-REFERENCE  (J,NSE,55,188,1974)                                    31761  1    7 
-DETECTOR   (STANK) The relative efficiency of the scintillator    31761  1    8 
-           was calculated by Monte Carlo method and was           31761  1    9 
-           normalized at 2 MeV by T(p,n) neutrons.                31761  1   10 
-           A coincidence between pulses from the 252Cf ion        31761  1   11 
-            chamber and liquid scintillator (from prompt fission  31761  1   12 
-           gamma rays and neutron-proton recoil events) initiated 31761  1   13 
-           40 mu-s counting 585 ns after fission.                 31761  1   14 
-ERR-ANALYS (ERR-T) Total uncertainty determined from the          31761  1   15 
-           following partial unc.                                 31761  1   16 
-           (ERR-S) Statistical - 0.24%                            31761  1   17 
-           (ERR-1) Dead time correction - 0.10%                   31761  1   18 
-           (ERR-2) Delayed gamma rays - 0.07%                     31761  1   19 
-           (ERR-3) Average energy of fission neutron spectra 0.12%31761  1   20 
-           (ERR-4) Accuracy of the efficiency calibration - 0.17% 31761  1   21 
-           (ERR-5) Variation neutron capture detection with       31761  1   22 
-           radius of detection in scintillator - 0.05%            31761  1   23 
-           (ERR-6) French effect - 0.10%                          31761  1   24 
-           (ERR-7) Effect of hole through scintillator on         31761  1   25 
-           neutron-capture detection - 0.05%                      31761  1   26 
-           (ERR-8) Effect of hole through scintillator on         31761  1   27 
-           neutron leakage - 0.10%                                31761  1   28 
-           (ERR-9) Background error in proton recoil counter 0.10%31761  1   29 
-HISTORY    (20150521C) VS.                                        31761  1   30 
-ENDBIB              28          0                                 31761  1   31 
-COMMON              10          6                                 31761  1   32 
-ERR-S      ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      31761  1   33 
-ERR-6      ERR-7      ERR-8      ERR-9                            31761  1   34 
-PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   31761  1   35 
-PER-CENT   PER-CENT   PER-CENT   PER-CENT                         31761  1   36 
-0.24       0.10       0.07       0.12       0.17       0.05       31761  1   37 
-0.10       0.05       0.10       0.10                             31761  1   38 
-ENDCOMMON            6          0                                 31761  1   39 
-ENDSUBENT           38          0                                 31761  199999 
-SUBENT        31761002   20150521                             317031761  2    1 
-BIB                  3          4                                 31761  2    2 
+REFERENCE  (C,77NBS,,182,1977)                                    31761  1    7 
+           (J,NSE,55,188,1974) Data revised in 77NBS,,182,1977.   31761  1    8 
+DETECTOR   (STANK) The relative efficiency of the scintillator    31761  1    9 
+           was calculated by Monte Carlo method and was           31761  1   10 
+           normalized at 2 MeV by T(p,n) neutrons.                31761  1   11 
+           A Maxwellian spectrum with average energy 2.15 MeV     31761  1   12 
+            (T=1.43 MeV) was considered for the 252Cf spontaneous 31761  1   13 
+           fission neutron spectrum.                              31761  1   14 
+           A coincidence between pulses from the 252Cf ion        31761  1   15 
+            chamber and liquid scintillator (from prompt fission  31761  1   16 
+           gamma rays and neutron-proton recoil events) initiated 31761  1   17 
+           40 mu-s counting 585 ns after fission.                 31761  1   18 
+HISTORY    (20150521C) VS.                                        31761  1   19 
+           (20160927A) VS. Reference 77NBS,,182,1977 added.       31761  1   20 
+            Data in subent 002 superseded. New subent 003 added.  31761  1   21 
+             ERR-ANALYS moved from subent 001.                    31761  1   22 
+ENDBIB              20          0                                 31761  1   23 
+NOCOMMON             0          0                                 31761  1   24 
+ENDSUBENT           23          0                                 31761  199999 
+SUBENT        31761002   20160929                             317531761  2    1 
+BIB                  5         21                                 31761  2    2 
 REACTION   (98-CF-252(0,F),PR,NU)                                 31761  2    3 
 COMMENT    Total neutron emission including delayed-neutron       31761  2    4 
            fraction is added = 3.747 +/- 0.015                    31761  2    5 
-STATUS     (TABLE) Data from text p.202 of NSE,55,188,1974        31761  2    6 
-ENDBIB               4          0                                 31761  2    7 
-NOCOMMON             0          0                                 31761  2    8 
-DATA                 2          1                                 31761  2    9 
-DATA       ERR-T                                                  31761  2   10 
-PRT/FIS    PRT/FIS                                                31761  2   11 
-  3.738       0.015                                               31761  2   12 
-ENDDATA              3          0                                 31761  2   13 
-ENDSUBENT           12          0                                 31761  299999 
-ENDENTRY             2          0                                 3176199999999 
+ERR-ANALYS (ERR-T) Total uncertainty determined from the          31761  2    6 
+            following partial unc.                                31761  2    7 
+           (ERR-S) Statistical - 0.24%                            31761  2    8 
+           (ERR-1) Dead time correction - 0.10%                   31761  2    9 
+           (ERR-2) Delayed gamma rays - 0.07%                     31761  2   10 
+           (ERR-3) Average energy of fission neutron spectra 0.12%31761  2   11 
+           (ERR-4) Accuracy of the efficiency calibration - 0.17% 31761  2   12 
+           (ERR-5) Variation neutron capture detection with       31761  2   13 
+            radius of detection in scintillator - 0.05%           31761  2   14 
+           (ERR-6) French effect - 0.10%                          31761  2   15 
+           (ERR-7) Effect of hole through scintillator on         31761  2   16 
+            neutron-capture detection - 0.05%                     31761  2   17 
+           (ERR-8) Effect of hole through scintillator on         31761  2   18 
+            neutron leakage - 0.10%                               31761  2   19 
+           (ERR-9) Background error in proton recoil counter 0.10%31761  2   20 
+STATUS     (TABLE) Data from text p.202 of NSE,55,188,1974        31761  2   21 
+           (SPSDD,31761003) Data revised in 77NBS,,182,1977       31761  2   22 
+HISTORY    (20160927A) VS. Data superseded.                       31761  2   23 
+ENDBIB              21          0                                 31761  2   24 
+COMMON              10          6                                 31761  2   25 
+ERR-S      ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      31761  2   26 
+ERR-6      ERR-7      ERR-8      ERR-9                            31761  2   27 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   31761  2   28 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         31761  2   29 
+0.24       0.10       0.07       0.12       0.17       0.05       31761  2   30 
+0.10       0.05       0.10       0.10                             31761  2   31 
+ENDCOMMON            6          0                                 31761  2   32 
+DATA                 2          1                                 31761  2   33 
+DATA       ERR-T                                                  31761  2   34 
+PRT/FIS    PRT/FIS                                                31761  2   35 
+  3.738       0.015                                               31761  2   36 
+ENDDATA              3          0                                 31761  2   37 
+ENDSUBENT           36          0                                 31761  299999 
+SUBENT        31761003   20160929                             317531761  3    1 
+BIB                  5         26                                 31761  3    2 
+REACTION   (98-CF-252(0,F),PR,NU)                                 31761  3    3 
+CORRECTION Corrections applied to experimental data:              31761  3    4 
+            - Dead time correction                                31761  3    5 
+              252Cf                                        +1.107 31761  3    6 
+              Low energy proton recoil                     +0.279 31761  3    7 
+              Relative                                     +0.828 31761  3    8 
+            - Delayed gamma rays                           -0.28  31761  3    9 
+            - Variation neutron capture detector efficiency       31761  3   10 
+              for 252Cf and calibration neutrons           +0.31  31761  3   11 
+            - French effect                                -0.10  31761  3   12 
+            - Background error in proton recoil counter    -0.33  31761  3   13 
+ERR-ANALYS (ERR-T) Total uncertainty determined from the          31761  3   14 
+           following partial unc.                                 31761  3   15 
+           (ERR-S) Statistical                               0.24%31761  3   16 
+           (ERR-1) Dead time correction                      0.10%31761  3   17 
+           (ERR-2) Delayed gamma rays                        0.07%31761  3   18 
+           (ERR-3) Average energy of fiss. neutron spectra   0.12%31761  3   19 
+           (ERR-4) Accuracy of the energy calibration        0.17%31761  3   20 
+           (ERR-5) Variation neutron capture detector             31761  3   21 
+            efficiency for 252Cf and calibration neutrons    0.10%31761  3   22 
+           (ERR-6) French effect                             0.10%31761  3   23 
+           (ERR-7) Effect of hole through scintillator on         31761  3   24 
+           neutron leakage                                   0.20%31761  3   25 
+           (ERR-8) Background error in proton recoil counter 0.10%31761  3   26 
+STATUS     (TABLE) Data from text p.184 of 77NBS,,182,1977        31761  3   27 
+HISTORY    (20160927C) VS.                                        31761  3   28 
+ENDBIB              26          0                                 31761  3   29 
+COMMON               9          6                                 31761  3   30 
+ERR-S      ERR-1      ERR-2      ERR-3      ERR-4      ERR-5      31761  3   31 
+ERR-6      ERR-7      ERR-8                                       31761  3   32 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   PER-CENT   31761  3   33 
+PER-CENT   PER-CENT   PER-CENT                                    31761  3   34 
+0.24       0.10       0.07       0.12       0.17       0.10       31761  3   35 
+0.10       0.20       0.10                                        31761  3   36 
+ENDCOMMON            6          0                                 31761  3   37 
+DATA                 2          1                                 31761  3   38 
+DATA       ERR-T                                                  31761  3   39 
+PRT/FIS    PRT/FIS                                                31761  3   40 
+  3.746       0.016                                               31761  3   41 
+ENDDATA              3          0                                 31761  3   42 
+ENDSUBENT           41          0                                 31761  399999 
+ENDENTRY             3          0                                 3176199999999 

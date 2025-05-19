@@ -1,96 +1,97 @@
-ENTRY            31692   20140722                             31663169200000001 
-SUBENT        31692001   20140722                             31663169200100001 
-BIB                 15         83                                 3169200100002 
-TITLE      The 235U(n,f) prompt fission neutron spectrum at 100 K 3169200100003 
-            input neutron energy                                  3169200100004 
-AUTHOR     (N.Kornilov, F.-J.Hambsch, I.Fabry, S.Oberstedt,       3169200100005 
-            T.Belgya, Z.Kis, L.Szentmiklosi, S.Simakov)           3169200100006 
-INSTITUTE  (1USAOHO,2ZZZGEL,3HUNII ,2GERKFK)                      3169200100007 
-REFERENCE  (J,NSE,165,117,2010)  Main reference                   3169200100008 
-           (S,AIP-1175,249,2010) Parameters of the PFNS given.    3169200100009 
-             PFNS as a ratio to Maxwellian with average           3169200100010 
-             energy = 1.988 MeV given on graphs.                  3169200100011 
-           (J,NSE,168,73,2011) Absolute PFNS ratio 252Cf/235U     3169200100012 
-FACILITY   (REAC,3HUNKFI) Cold-neutron prompt gamma activation    3169200100013 
-            analysis facility                                     3169200100014 
-INC-SOURCE (REAC) Cold-neutron at 100 K incident neutron energy.  3169200100015 
-           The neutron flux was ~5E+07 1/cm2/s, and the actual    3169200100016 
-            beam dimension at the measuring station was           3169200100017 
-            ~2x2.5 cm2.                                           3169200100018 
-SAMPLE     (92-U-235,0.977) 235UF4 (97.7% enrichment in 235U,     3169200100019 
-            30 mm diam.) layer of 112 ug/cm2 thickness evaporated 3169200100020 
-            onto a Au-coated (40 ug/cm2) thin (24 ug/cm2)         3169200100021 
-            polyimide foil                                        3169200100022 
-           A 252Cf layer (10 mm diam.) was placed in the same     3169200100023 
-            chamber but shifted by 5 cm from the U layer and out  3169200100024 
-            of the neutron beam.                                  3169200100025 
-DETECTOR   (SCIN) Three identical organic NE213-equivalent        3169200100026 
-            scintillators LS301 (101.6 mm, h=50.8 mm) coupled to  3169200100027 
-            XP4312 photomultiplier tubes.                         3169200100028 
-           Detectors were placed at different angles relative to  3169200100029 
-            the neutron beam, and at slightly different flight    3169200100030 
-            paths L:                                              3169200100031 
-            Detector 1: angle1 =  72 deg, L1 = 298.1 cm;          3169200100032 
-            Detector 2: angle2 = 102 deg, L2 = 282.8 cm;          3169200100033 
-            Detector 3: angle3 = 132 deg, L3 = 301.1 cm.          3169200100034 
-           (FISCH) Made of stainless steel (diameter D=180 mm,    3169200100035 
-            height H=145 mm, wall thickness=0.5 mm).              3169200100036 
-           Counting efficiency 98%.                               3169200100037 
-METHOD     (TOF) Time resolution FWHM = 1.7 ns for U and 2.1 ns   3169200100038 
-            for Cf.                                               3169200100039 
-           Time channel width was measured with accuracy <0.1%    3169200100040 
-            to 0.1178 ns and 0.1150 ns for U and Cf channels.     3169200100041 
-           The gamma-ray suppression factor was about 200.        3169200100042 
-ANALYSIS   The experimental prompt fission neutron spectrum was   3169200100043 
-            normalized to unity, and the average secondary neutron3169200100044 
-            energy was calculated.                                3169200100045 
-           A Maxwellian spectrum was fitted in the energy range   3169200100046 
-            of 0.7 to 1.5 MeV and 9 to 11MeV to the measured      3169200100047 
-            spectrum, and an extrapolation to zero and to 20 MeV  3169200100048 
-            was performed.                                        3169200100049 
-MONITOR    (98-CF-252(0,F),PR,NU/DE)                              3169200100050 
-           Comment by N. Kornilov (2011-03-11):                   3169200100051 
-           Mannhart's evaluation fitted by Maxwellian distribution3169200100052 
-            (T=1.42MeV) multiplied by power expression            3169200100053 
-            sum(i=1,7) N*sqrt(E)*exp(-E/T)*(ai*E**i) (i=0,7)      3169200100054 
-            with                                                  3169200100055 
-            a0= 9.62240E-01, a1= 3.99740E-02, a2=-1.44500E-03,    3169200100056 
-            a3=-3.18750E-03, a4= 6.17640E-04, a5=-4.86040E-05,    3169200100057 
-            a6= 1.77680E-06, a7=-2.49540E-08,                     3169200100058 
-            T=1.4200E+00, N=6.6684E-01                            3169200100059 
-MONIT-REF  (V0101002,W.Mannhart,R,IAEA-TECDOC-410,158,1987)       3169200100060 
-            Mannhart's evaluation                                 3169200100061 
-           (,N.V.Kornilov,J,NSE,169,290,2011)                     3169200100062 
-            Fitting coefficients given                            3169200100063 
-CORRECTION The correction factors for multiple scattering and     3169200100064 
-            attenuation were calculated with the MCNP code as a   3169200100065 
-            ratio of a neutron spectrum emitted from the source   3169200100066 
-            surrounded by the real chamber to a spectrum          3169200100067 
-            calculated without chamber materials.                 3169200100068 
-           The neutron spectra were calculated separately for the 3169200100069 
-            U and Cf sources.                                     3169200100070 
-           The ratio of the correction factors of Cf to U was     3169200100071 
-            determined.                                           3169200100072 
-           The experimental data were multiplied by these         3169200100073 
-            functions to cancel the contribution of the           3169200100074 
-            scattered neutrons on the fission chamber materials.  3169200100075 
-           Time-independent and time-correlated background was    3169200100076 
-            subtracted.                                           3169200100077 
-STATUS     (APRVD) Approved by N.Kornilov (2011-07-14)            3169200100078 
-HISTORY    (20100520C) VS                                         3169200100079 
-           (20110111A) On. STATUS and ERR-ANALYS moved to 002     3169200100080 
-           (20110714A) VS References AIP-1175,249,2010 and  NSE,  3169200100081 
-            168,73,2011 added. Absolute ratio of 252Cf to 235U    3169200100082 
-            PFNS added in  SUBENT 006.                            3169200100083 
-           (20130708U) On. FACILITY: 3HUNII -> 3HUNKFI            3169200100084 
-           (20140722U) On. MONITOR revised. MONIT-REF added.      3169200100085 
-ENDBIB              83          0                                 3169200100086 
-COMMON               1          3                                 3169200100087 
-KT-K                                                              3169200100088 
-K                                                                 3169200100089 
- 100.                                                             3169200100090 
-ENDCOMMON            3          0                                 3169200100091 
-ENDSUBENT           90          0                                 3169200199999 
+ENTRY            31692   20160929                             317531692  0    1 
+SUBENT        31692001   20160929                             317531692  1    1 
+BIB                 15         84                                 31692  1    2 
+TITLE      The 235U(n,f) prompt fission neutron spectrum at 100 K 31692  1    3 
+            input neutron energy                                  31692  1    4 
+AUTHOR     (N.Kornilov, F.-J.Hambsch, I.Fabry, S.Oberstedt,       31692  1    5 
+            T.Belgya, Z.Kis, L.Szentmiklosi, S.Simakov)           31692  1    6 
+INSTITUTE  (1USAOHO,2ZZZGEL,3HUNII ,2GERKFK)                      31692  1    7 
+REFERENCE  (J,NSE,165,117,2010)  Main reference                   31692  1    8 
+           (S,AIP-1175,249,2009) Parameters of the PFNS given.    31692  1    9 
+             PFNS as a ratio to Maxwellian with average           31692  1   10 
+             energy = 1.988 MeV given on graphs.                  31692  1   11 
+           (J,NSE,168,73,2011) Absolute PFNS ratio 252Cf/235U     31692  1   12 
+FACILITY   (REAC,3HUNKFI) Cold-neutron prompt gamma activation    31692  1   13 
+            analysis facility                                     31692  1   14 
+INC-SOURCE (REAC) Cold-neutron at 100 K incident neutron energy.  31692  1   15 
+           The neutron flux was ~5E+07 1/cm2/s, and the actual    31692  1   16 
+            beam dimension at the measuring station was           31692  1   17 
+            ~2x2.5 cm2.                                           31692  1   18 
+SAMPLE     (92-U-235,ENR=0.977) 235UF4 (97.7% enrichment in 235U, 31692  1   19 
+            30 mm diam.) layer of 112 ug/cm2 thickness evaporated 31692  1   20 
+            onto a Au-coated (40 ug/cm2) thin (24 ug/cm2)         31692  1   21 
+            polyimide foil                                        31692  1   22 
+           A 252Cf layer (10 mm diam.) was placed in the same     31692  1   23 
+            chamber but shifted by 5 cm from the U layer and out  31692  1   24 
+            of the neutron beam.                                  31692  1   25 
+DETECTOR   (SCIN) Three identical organic NE213-equivalent        31692  1   26 
+            scintillators LS301 (101.6 mm, h=50.8 mm) coupled to  31692  1   27 
+            XP4312 photomultiplier tubes.                         31692  1   28 
+           Detectors were placed at different angles relative to  31692  1   29 
+            the neutron beam, and at slightly different flight    31692  1   30 
+            paths L:                                              31692  1   31 
+            Detector 1: angle1 =  72 deg, L1 = 298.1 cm;          31692  1   32 
+            Detector 2: angle2 = 102 deg, L2 = 282.8 cm;          31692  1   33 
+            Detector 3: angle3 = 132 deg, L3 = 301.1 cm.          31692  1   34 
+           (FISCH) Made of stainless steel (diameter D=180 mm,    31692  1   35 
+            height H=145 mm, wall thickness=0.5 mm).              31692  1   36 
+           Counting efficiency 98%.                               31692  1   37 
+METHOD     (TOF) Time resolution FWHM = 1.7 ns for U and 2.1 ns   31692  1   38 
+            for Cf.                                               31692  1   39 
+           Time channel width was measured with accuracy <0.1%    31692  1   40 
+            to 0.1178 ns and 0.1150 ns for U and Cf channels.     31692  1   41 
+           The gamma-ray suppression factor was about 200.        31692  1   42 
+ANALYSIS   The experimental prompt fission neutron spectrum was   31692  1   43 
+            normalized to unity, and the average secondary neutron31692  1   44 
+            energy was calculated.                                31692  1   45 
+           A Maxwellian spectrum was fitted in the energy range   31692  1   46 
+            of 0.7 to 1.5 MeV and 9 to 11MeV to the measured      31692  1   47 
+            spectrum, and an extrapolation to zero and to 20 MeV  31692  1   48 
+            was performed.                                        31692  1   49 
+MONITOR    (98-CF-252(0,F),PR,NU/DE)                              31692  1   50 
+           Comment by N. Kornilov (2011-03-11):                   31692  1   51 
+           Mannhart's evaluation fitted by Maxwellian distribution31692  1   52 
+            (T=1.42MeV) multiplied by power expression            31692  1   53 
+            sum(i=1,7) N*sqrt(E)*exp(-E/T)*(ai*E**i) (i=0,7)      31692  1   54 
+            with                                                  31692  1   55 
+            a0= 9.62240E-01, a1= 3.99740E-02, a2=-1.44500E-03,    31692  1   56 
+            a3=-3.18750E-03, a4= 6.17640E-04, a5=-4.86040E-05,    31692  1   57 
+            a6= 1.77680E-06, a7=-2.49540E-08,                     31692  1   58 
+            T=1.4200E+00, N=6.6684E-01                            31692  1   59 
+MONIT-REF  (V0101002,W.Mannhart,S,IAEA-TECDOC-410,158,1987)       31692  1   60 
+            Mannhart's evaluation                                 31692  1   61 
+           (,N.V.Kornilov,J,NSE,169,290,2011)                     31692  1   62 
+            Fitting coefficients given                            31692  1   63 
+CORRECTION The correction factors for multiple scattering and     31692  1   64 
+            attenuation were calculated with the MCNP code as a   31692  1   65 
+            ratio of a neutron spectrum emitted from the source   31692  1   66 
+            surrounded by the real chamber to a spectrum          31692  1   67 
+            calculated without chamber materials.                 31692  1   68 
+           The neutron spectra were calculated separately for the 31692  1   69 
+            U and Cf sources.                                     31692  1   70 
+           The ratio of the correction factors of Cf to U was     31692  1   71 
+            determined.                                           31692  1   72 
+           The experimental data were multiplied by these         31692  1   73 
+            functions to cancel the contribution of the           31692  1   74 
+            scattered neutrons on the fission chamber materials.  31692  1   75 
+           Time-independent and time-correlated background was    31692  1   76 
+            subtracted.                                           31692  1   77 
+STATUS     (APRVD) Approved by N.Kornilov (2011-07-14)            31692  1   78 
+HISTORY    (20100520C) VS                                         31692  1   79 
+           (20110111A) On. STATUS and ERR-ANALYS moved to 002     31692  1   80 
+           (20110714A) VS References AIP-1175,249,2010 and  NSE,  31692  1   81 
+            168,73,2011 added. Absolute ratio of 252Cf to 235U    31692  1   82 
+            PFNS added in  SUBENT 006.                            31692  1   83 
+           (20130708U) On. FACILITY: 3HUNII -> 3HUNKFI            31692  1   84 
+           (20140722U) On. MONITOR revised. MONIT-REF added.      31692  1   85 
+           (20160927U) VS. Reference AIP-1175 2010->2009.         31692  1   86 
+ENDBIB              84          0                                 31692  1   87 
+COMMON               1          3                                 31692  1   88 
+KT-K                                                              31692  1   89 
+K                                                                 31692  1   90 
+ 100.                                                             31692  1   91 
+ENDCOMMON            3          0                                 31692  1   92 
+ENDSUBENT           91          0                                 31692  199999 
 SUBENT        31692002   20110111                             31483169200200001 
 BIB                  4         15                                 3169200200002 
 REACTION   (92-U-235(N,F),PR,NU/DE,,NPD/MXW)                      3169200200003 
