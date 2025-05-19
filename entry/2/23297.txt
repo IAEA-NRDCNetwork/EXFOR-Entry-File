@@ -1,0 +1,121 @@
+ENTRY            23297   20160513                             22502329700000001 
+SUBENT        23297001   20160513                             22502329700100001 
+BIB                 10         15                                 2329700100002 
+TITLE      Interference between resonant and nonresonant capture  2329700100003 
+            in 16O(n,g)17O                                        2329700100004 
+AUTHOR     (M.Kinoshita, Y.Nagai)                                 2329700100005 
+INSTITUTE  (2JPNTIT)                                              2329700100006 
+REFERENCE  (T,KINOSHITA,19990214)                                 2329700100007 
+            Master thesis submitted to Tokyo Inst. of Technology  2329700100008 
+FACILITY   (VDG,2JPNTIT) 3.2 MV Pelletron Accelerator             2329700100009 
+INC-SOURCE (P-LI7)                                                2329700100010 
+METHOD     (TOF)                                                  2329700100011 
+DETECTOR   (GLASD) 6Li-glass scintillation detector for TOF       2329700100012 
+           (NAICR) Anti-Compton NaI(Tl) detector for prompt gammas2329700100013 
+CORRECTION Corrected for                                          2329700100014 
+            - background gammas from 7Li(n,g0)8Li,                2329700100015 
+            - background 2.2 MeV gammas due to 1H(n,g)2H.         2329700100016 
+HISTORY    (20160513C) On                                         2329700100017 
+ENDBIB              15          0                                 2329700100018 
+NOCOMMON             0          0                                 2329700100019 
+ENDSUBENT           18          0                                 2329700199999 
+SUBENT        23297002   20160513                             22502329700200001 
+BIB                  5          8                                 2329700200002 
+REACTION   (8-O-16(N,G)8-O-17,PAR,SIG,,RAW)                       2329700200003 
+           Number of neutron captures/1E+06 neutrons not corrected2329700200004 
+            for multiple scattering and self-shielding            2329700200005 
+SAMPLE     D2O, Li2O, and standard Au                             2329700200006 
+FLAG       (1.) D2O sample used                                   2329700200007 
+           (2.) Li2O sample used                                  2329700200008 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty 2329700200009 
+STATUS     (TABLE) Table 4.6 of Kinoshita's thesis (1999)         2329700200010 
+ENDBIB               8          0                                 2329700200011 
+NOCOMMON             0          0                                 2329700200012 
+DATA                 6         14                                 2329700200013 
+EN-MEAN    EN-RSL-FW  LVL-NUMB   DATA       DATA-ERR   FLAG       2329700200014 
+KEV        KEV        NO-DIM     ARB-UNITS  ARB-UNITS  NO-DIM     2329700200015 
+ 157.       84.        0.          4.09      0.40       1.        2329700200016 
+ 157.       84.        1.          6.74      0.56       1.        2329700200017 
+ 349.       64.        0.          1.55      0.30       1.        2329700200018 
+ 349.       64.        1.          3.05      0.37       1.        2329700200019 
+ 398.       65.        0.         15.1       0.8        1.        2329700200020 
+ 398.       65.        1.         23.2       1.0        1.        2329700200021 
+ 427.       46.        0.          2.34      0.17       2.        2329700200022 
+ 427.       46.        1.          4.30      0.25       2.        2329700200023 
+ 468.       47.        0.          1.99      0.23       2.        2329700200024 
+ 468.       47.        1.          3.91      0.30       2.        2329700200025 
+ 498.       53.        0.          1.03      0.20       2.        2329700200026 
+ 498.       53.        1.          3.29      0.33       2.        2329700200027 
+ 556.       52.        0.          4.82      0.53       2.        2329700200028 
+ 556.       52.        1.         12.0       0.7        2.        2329700200029 
+ENDDATA             16          0                                 2329700200030 
+ENDSUBENT           29          0                                 2329700299999 
+SUBENT        23297003   20160513                             22502329700300001 
+BIB                  3          6                                 2329700300002 
+REACTION   (8-O-16(N,G)8-O-17,,SIG,,RAW)                          2329700300003 
+           Number of neutron captures/1E+06 neutrons not corrected2329700300004 
+            for multiple scattering and self-shielding            2329700300005 
+STATUS     (TABLE) Table 4.6 of Kinoshita's thesis (1999)         2329700300006 
+           (DEP,23297002) Number of partial neutron captures      2329700300007 
+ERR-ANALYS (DATA-ERR) No information on the source of uncertainty 2329700300008 
+ENDBIB               6          0                                 2329700300009 
+NOCOMMON             0          0                                 2329700300010 
+DATA                 4          7                                 2329700300011 
+EN-MEAN    EN-RSL-FW  DATA       DATA-ERR                         2329700300012 
+KEV        KEV        ARB-UNITS  ARB-UNITS                        2329700300013 
+ 157.       84.        10.8       0.7                             2329700300014 
+ 349.       64.         4.60      0.48                            2329700300015 
+ 398.       65.        38.3       1.2                             2329700300016 
+ 427.       46.         6.64      0.26                            2329700300017 
+ 468.       47.         5.91      0.37                            2329700300018 
+ 498.       53.         4.33      0.39                            2329700300019 
+ 556.       52.        16.9       0.9                             2329700300020 
+ENDDATA              9          0                                 2329700300021 
+ENDSUBENT           20          0                                 2329700399999 
+SUBENT        23297004   20160513                             22502329700400001 
+BIB                  8         26                                 2329700400002 
+REACTION   (8-O-16(N,G)8-O-17,,SIG)                               2329700400003 
+MONITOR    (79-AU-197(N,G)79-AU-198,,SIG)                         2329700400004 
+MONIT-REF  (,P.G.Young,3,ENDF/B-VI,7925,1984)                     2329700400005 
+           (11679023,R.L.Macklin+,J,PR,159,1007,1967)             2329700400006 
+CORRECTION Corrected for                                          2329700400007 
+           - multiple scattering effect (nm),                     2329700400008 
+           - self-shielding of incident neutrons (ns)             2329700400009 
+CRITIQUE   By T.Matsushima:                                       2329700400010 
+            The (n,g0) cross section at En=556 keV is too low.    2329700400011 
+            This is understood if JENDL-3.2 (i.e., without the    2329700400012 
+            434 keV resonance) is adopted in calculation of the   2329700400013 
+            correction factor. We reevaluated the correction      2329700400014 
+            factors, and obtained:                                2329700400015 
+             sig(n,g0)= 0.4 +/- 0.1 ub,                           2329700400016 
+             sig(n,g1)=10.8 +/- 0.9 ub,                           2329700400017 
+            which are more consistent with our data.              2329700400018 
+REL-REF    (C,29992001,T.Matsushima,T,MATSUSHIMA,2003)            2329700400019 
+ERR-ANALYS (ERR-T) Total uncertainty                              2329700400020 
+            - Counting statistics for Au                          2329700400021 
+            - Counting statistics for 16O                         2329700400022 
+           (ERR-1)     response function             (3%)         2329700400023 
+           (ERR-2)     neutron detection efficiency  (3%)         2329700400024 
+           (ERR-3)     correction factors for nm, ns (3%)         2329700400025 
+           (MONIT-ERR) Au capture cross section      (3%)         2329700400026 
+STATUS     (TABLE) Table 4.7 of Kinoshita's thesis (1999)         2329700400027 
+           (DEP,23297003) Number of neutron captures              2329700400028 
+ENDBIB              26          0                                 2329700400029 
+COMMON               4          3                                 2329700400030 
+ERR-1      ERR-2      ERR-3      MONIT-ERR                        2329700400031 
+PER-CENT   PER-CENT   PER-CENT   PER-CENT                         2329700400032 
+ 3.         3.         3.         3.                              2329700400033 
+ENDCOMMON            3          0                                 2329700400034 
+DATA                 5          7                                 2329700400035 
+EN-MEAN    EN-RSL-FW  DATA       ERR-T      MONIT                 2329700400036 
+KEV        KEV        MICRO-B    MICRO-B    B                     2329700400037 
+ 157.       84.          3.47E+01   0.22E+01 0.270                2329700400038 
+ 349.       64.          1.61E+02   0.17E+02 0.162                2329700400039 
+ 398.       65.          2.92E+02   0.16E+02 0.179                2329700400040 
+ 427.       46.          3.19E+02   0.19E+02 0.153                2329700400041 
+ 468.       47.          3.79E+01   0.28E+01 0.141                2329700400042 
+ 498.       53.          1.94E+01   0.18E+01 0.133                2329700400043 
+ 556.       52.          4.01E+01   0.26E+01 0.121                2329700400044 
+ENDDATA              9          0                                 2329700400045 
+ENDSUBENT           44          0                                 2329700499999 
+ENDENTRY             4          0                                 2329799999999 
