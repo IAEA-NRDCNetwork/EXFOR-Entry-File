@@ -1,130 +1,138 @@
-ENTRY            D0069   20031121                             0000D006900000001 
-SUBENT        D0069001   20031121                             0000D006900100001 
-BIB                 14         44                                 D006900100002 
+ENTRY            D0069   20201208                             D129D006900000001 
+SUBENT        D0069001   20201208                             D129D006900100001 
+BIB                 13         29                                 D006900100002 
 TITLE      Cross-section measurements of the nuclear reactions    D006900100003 
-           natZn(d,x)64Cu, 66Zn(d,a)64Cu and 68Zn(p,an)64Cu for   D006900100004 
-           production of 64Cu and technical developments for      D006900100005 
-           small-scale production of 67Cu via the 70Zn(p,a)67Cu   D006900100006 
-           process                                                D006900100007 
-AUTHOR     (K.Hilgers,T.Stoll,Y.Skakun,H.H.Coenen,S.M.Qaim)       D006900100008 
-INSTITUTE  (2GERJUL,4UKRKFT)                                      D006900100009 
+            natZn(d,x)64Cu, 66Zn(d,a)64Cu and 68Zn(p,an)64Cu for  D006900100004 
+            production of 64Cu and technical developments for     D006900100005 
+            small-scale production of 67Cu via the 70Zn(p,a)67Cu  D006900100006 
+            process                                               D006900100007 
+AUTHOR     (K.Hilgers, T.Stoll, Y.Skakun, H.H.Coenen, S.M.Qaim)   D006900100008 
+INSTITUTE  (2GERJUL)                                              D006900100009 
 REFERENCE  (J,ARI,59,343,2003)                                    D006900100010 
-FACILITY   (CYCLO,2GERJUL) Irradiations with protons up to 20 MeV D006900100011 
-           were carried out at the CV 28 and                      D006900100012 
-           (SYNCH,2GERJUL) those up to 45 MeV at the injector     D006900100013 
-           cyclotron of the cooler synchrotron COSY               D006900100014 
-SAMPLE     Thin samples of zinc were prepared by electrolytic     D006900100015 
-           deposition. The target thickness about 0.0045 g/cm2.   D006900100016 
-           Stacks of three samples were used in proton radiation  D006900100017 
-           at the CV28 and of five samples at the injector of COSYD006900100018 
-           Isotopic compositions of the zinc samples used:        D006900100019 
-                Sample            Composition (%)                 D006900100020 
-                           64Zn   66Zn   67Zn   68Zn   70Zn       D006900100021 
-                 Natural:  48.6   27.9    4.1   18.8    0.6       D006900100022 
-           Enriched 66Zn:  0.36   99.     0.2   0.43    0.01      D006900100023 
-           Enriched 68Zn:  0.53   0.61    0.5   98.3    0.06      D006900100024 
-           Enriched 70Zn:  5.83   3.78   0.71   4.65    85.03     D006900100025 
-           Enriched 70Zn:  8.36   7.28   1.21   12.45   70.2      D006900100026 
-MONIT-REF  (,TARKANYI+,R,IAEA-1211,49,2001)                       D006900100027 
-DETECTOR   (HPGE)                                                 D006900100028 
-METHOD     (ACTIV,STTA)                                           D006900100029 
-ERR-ANALYS (ERR-T) Contributions to the total error are:          D006900100030 
-             * weighing uncertainty - (1-2)%;                     D006900100031 
-             * uncertainty in target thickness - 5%;              D006900100032 
-             * uncertainty in efficiency of detector (3-4)%;      D006900100033 
-             * uncertainty in peak area of monitor reaction       D006900100034 
-               product (2-5)%;                                    D006900100035 
-             * uncertainty in peak aea separated product - 8%;    D006900100036 
-             * uncertainty in cross section monitor               D006900100037 
-               reaction (8-10)%;                                  D006900100038 
-             * uncertainty in chrmical yield - (3-5)%;            D006900100039 
-             * uncertainty in decay data - (0.1-1)%.              D006900100040 
-DECAY-DATA (29-CU-64,12.7HR,B+,660.,0.19,                         D006900100041 
-                            B-,580.,0.4,                          D006900100042 
-                            EC,0.41)                              D006900100043 
-RAD-DET    (29-CU-64,AR)                                          D006900100044 
-STATUS     (TABLE)   Table 3-5 from main ref.                     D006900100045 
-HISTORY    (20031216C) SD                                         D006900100046 
-ENDBIB              44          0                                 D006900100047 
-NOCOMMON             0          0                                 D006900100048 
-ENDSUBENT           47          0                                 D006900199999 
-SUBENT        D0069002   20031121                             0000D006900200001 
-BIB                  2          3                                 D006900200002 
+FACILITY   (CYCLO,2GERJUL) CV28, up to 20 MeV                     D006900100011 
+           (CYCLO,2GERJUL) COSY injector, up to 45 MeV            D006900100012 
+SAMPLE     About 0.0045 g/cm2 Zn target prepared by electrolytic  D006900100013 
+            deposition on Au foil (10 or 25 um thick) from 1M HCL D006900100014 
+            solution of Zn (~50 mg)                               D006900100015 
+MONIT-REF  (,F.Tarkanyi+,R,IAEA-TECDOC-1211,49,2001)              D006900100016 
+DETECTOR   (HPGE)                                                 D006900100017 
+METHOD     (ACTIV,STTA,CHSEP)                                     D006900100018 
+ANALYSIS   (DECAY)                                                D006900100019 
+DECAY-DATA (29-CU-64,12.7HR,AR,511.,0.19)                         D006900100020 
+ERR-ANALYS (ERR-T) Quadrature sum of                              D006900100021 
+           (ERR-1,1.,2.)  weighing                     (1-2%)     D006900100022 
+           (ERR-2)        target uniformity              (5%)     D006900100023 
+           (ERR-3,3.,4.)  detection efficiency         (3-4%)     D006900100024 
+           (ERR-4,2.,5.)  peak area of monitor product (2-5%)     D006900100025 
+           (ERR-5)        peak aea separated product     (8%)     D006900100026 
+           (ERR-6,8.,10.) monitor cross section       (8-10%)     D006900100027 
+           (ERR-7,3.,5.)  chemical yield               (3-5%)     D006900100028 
+           (ERR-8,0.1,1.) decay data                 (0.1-1%)     D006900100029 
+HISTORY    (20031216C) SD                                         D006900100030 
+           (20201208A) On. DECAY-DATA+ERR-ANALYS. Maj.rev.in 004. D006900100031 
+ENDBIB              29          0                                 D006900100032 
+COMMON               2          3                                 D006900100033 
+ERR-2      ERR-5                                                  D006900100034 
+PER-CENT   PER-CENT                                               D006900100035 
+ 5.         8.                                                    D006900100036 
+ENDCOMMON            3          0                                 D006900100037 
+ENDSUBENT           36          0                                 D006900199999 
+SUBENT        D0069002   20201208                             D129D006900200001 
+BIB                  5          6                                 D006900200002 
 REACTION   (30-ZN-0(D,X)29-CU-64,,SIG)                            D006900200003 
-MONITOR    (28-NI-0(D,X)29-CU-61,,SIG)                            D006900200004 
-           (26-FE-0(D,X)27-CO-56,,SIG)                            D006900200005 
-ENDBIB               3          0                                 D006900200006 
-NOCOMMON             0          0                                 D006900200007 
-DATA                 4          8                                 D006900200008 
-EN         EN-ERR     DATA       ERR-T                            D006900200009 
-MEV        MEV        MB         MB                               D006900200010 
-  8.9       0.5          1.4        0.2                           D006900200011 
- 10.6       0.4          1.7        0.3                           D006900200012 
- 11.1       0.4          4.8        0.8                           D006900200013 
- 12.1       0.3         12.         2.                            D006900200014 
- 12.6       0.3         11.         2.                            D006900200015 
- 12.9       0.2         18.         3.                            D006900200016 
- 13.0       0.2         42.         7.                            D006900200017 
- 13.2       0.2         36.         6.                            D006900200018 
-ENDDATA             10          0                                 D006900200019 
-ENDSUBENT           18          0                                 D006900299999 
-SUBENT        D0069003   20031121                             0000D006900300001 
-BIB                  2          3                                 D006900300002 
+SAMPLE     Natural Zn sample                                      D006900200004 
+MONITOR    (28-NI-0(D,X)29-CU-61,,SIG)                            D006900200005 
+           (26-FE-0(D,X)27-CO-56,,SIG)                            D006900200006 
+STATUS     (TABLE) Table 3 of Appl.Radiat.Isot.59(2003)343        D006900200007 
+HISTORY    (20201208U) On. SAMPLE revised. STATUS moved from 001. D006900200008 
+ENDBIB               6          0                                 D006900200009 
+NOCOMMON             0          0 3                               D006900200010 
+DATA                 4          8                                 D006900200011 
+EN         EN-ERR     DATA       ERR-T                            D006900200012 
+MEV        MEV        MB         MB                               D006900200013 
+  8.9       0.5         1.4       0.2                             D006900200014 
+ 10.6       0.4         1.7       0.3                             D006900200015 
+ 11.1       0.4         4.8       0.8                             D006900200016 
+ 12.1       0.3        12.        2.                              D006900200017 
+ 12.6       0.3        11.        2.                              D006900200018 
+ 12.9       0.2        18.        3.                              D006900200019 
+ 13.0       0.2        42.        7.                              D006900200020 
+ 13.2       0.2        36.        6.                              D006900200021 
+ENDDATA             10          0                                 D006900200022 
+ENDSUBENT           21          0                                 D006900299999 
+SUBENT        D0069003   20201208                             D129D006900300001 
+BIB                  5         11                                 D006900300002 
 REACTION   (30-ZN-66(D,A)29-CU-64,,SIG)                           D006900300003 
-MONITOR    (28-NI-0(D,X)29-CU-61,,SIG)                            D006900300004 
-           (26-FE-0(D,X)27-CO-56,,SIG)                            D006900300005 
-ENDBIB               3          0                                 D006900300006 
-NOCOMMON             0          0                                 D006900300007 
-DATA                 4         10                                 D006900300008 
-EN         EN-ERR     DATA       ERR-T                            D006900300009 
-MEV        MEV        MB         MB                               D006900300010 
-  5.4       0.5          1.5       0.3                            D006900300011 
-  6.7       0.4          4.0       0.7                            D006900300012 
-  7.5       0.4          9.2       2.                             D006900300013 
-  8.8       0.3         14.        2.                             D006900300014 
- 10.0       0.4         24.        4.                             D006900300015 
- 11.3       0.3         27.        5.                             D006900300016 
- 11.7       0.3         22.        4.                             D006900300017 
- 12.2       0.3         18.        3.                             D006900300018 
- 12.6       0.3         14.        2.                             D006900300019 
- 13.8       0.2         12.        2.                             D006900300020 
-ENDDATA             12          0                                 D006900300021 
-ENDSUBENT           20          0                                 D006900399999 
-SUBENT        D0069004   20031121                             0000D006900400001 
-BIB                  2          6                                 D006900400002 
-REACTION   (30-ZN-68(P,N+A)29-CU-64,,SIG)                         D006900400003 
-MONITOR    (29-CU-0(P,X)27-CO-56,,SIG)                            D006900400004 
-           (29-CU-0(P,X)30-ZN-62,,SIG)                            D006900400005 
-           (29-CU-0(P,X)30-ZN-63,,SIG)                            D006900400006 
-           (29-CU-0(P,X)30-ZN-65,,SIG)                            D006900400007 
-           (22-TI-0(P,X)23-V-48,,SIG)                             D006900400008 
-ENDBIB               6          0                                 D006900400009 
-NOCOMMON             0          0                                 D006900400010 
-DATA                 4         22                                 D006900400011 
-EN         EN-ERR     DATA       ERR-T                            D006900400012 
-MEV        MEV        MB         MB                               D006900400013 
-  8.5       0.7         0.21       0.04                           D006900400014 
- 10.1       0.6         2.9        0.5                            D006900400015 
- 11.0       0.5         3.0        0.5                            D006900400016 
- 13.3       0.4         6.         1.                             D006900400017 
- 13.9       0.4         6.         1.                             D006900400018 
- 14.7       0.6         9.         2.                             D006900400019 
- 15.1       0.3         7.         1.                             D006900400020 
- 15.7       0.5         8.         1.                             D006900400021 
- 17.6       0.4        12.         2.                             D006900400022 
- 18.1       0.3        10.         2.                             D006900400023 
- 18.3       0.3         6.         1.                             D006900400024 
- 19.0       0.2         9.         2.                             D006900400025 
- 23.7       0.9        13.         2.                             D006900400026 
- 26.3       0.8        19.         3.                             D006900400027 
- 28.8       0.7        23.         4.                             D006900400028 
- 30.6       0.6        20.         3.                             D006900400029 
- 32.8       0.5        19.         3.                             D006900400030 
- 37.2       0.6        18.         3.                             D006900400031 
- 39.1       0.5        18.         3.                             D006900400032 
- 40.9       0.4        20.         3.                             D006900400033 
- 42.9       0.3        20.         3.                             D006900400034 
- 44.6       0.2        17.         3.                             D006900400035 
-ENDDATA             24          0                                 D006900400036 
-ENDSUBENT           35          0                                 D006900499999 
+SAMPLE     Enriched (99%) 66Zn sample                             D006900300004 
+           (30-ZN-66,ENR=0.99)                                    D006900300005 
+           (30-ZN-64,ENR=0.0036)                                  D006900300006 
+           (30-ZN-67,ENR=0.002)                                   D006900300007 
+           (30-ZN-68,ENR=0.0043)                                  D006900300008 
+           (30-ZN-70,ENR=0.0001)                                  D006900300009 
+MONITOR    (28-NI-0(D,X)29-CU-61,,SIG)                            D006900300010 
+           (26-FE-0(D,X)27-CO-56,,SIG)                            D006900300011 
+STATUS     (TABLE) Table 4 of Appl.Radiat.Isot.59(2003)343        D006900300012 
+HISTORY    (20201208U) On. SAMPLE revised. STATUS moved from 001. D006900300013 
+ENDBIB              11          0                                 D006900300014 
+NOCOMMON             0          0 3                               D006900300015 
+DATA                 4         10                                 D006900300016 
+EN         EN-ERR     DATA       ERR-T                            D006900300017 
+MEV        MEV        MB         MB                               D006900300018 
+  5.4       0.5         1.5       0.3                             D006900300019 
+  6.7       0.4         4.0       0.7                             D006900300020 
+  7.5       0.4         9.2       2.                              D006900300021 
+  8.8       0.3        14.        2.                              D006900300022 
+ 10.0       0.4        24.        4.                              D006900300023 
+ 11.3       0.3        27.        5.                              D006900300024 
+ 11.7       0.3        22.        4.                              D006900300025 
+ 12.2       0.3        18.        3.                              D006900300026 
+ 12.6       0.3        14.        2.                              D006900300027 
+ 13.8       0.2        12.        2.                              D006900300028 
+ENDDATA             12          0                                 D006900300029 
+ENDSUBENT           28          0                                 D006900399999 
+SUBENT        D0069004   20201208                             D129D006900400001 
+BIB                  5         14                                 D006900400002 
+REACTION   (30-ZN-68(P,X)29-CU-64,,SIG)                           D006900400003 
+SAMPLE     Enriched (98.3%) 68Zn sample                           D006900400004 
+           (30-ZN-68,ENR=0.983)                                   D006900400005 
+           (30-ZN-64,ENR=0.0053)                                  D006900400006 
+           (30-ZN-66,ENR=0.0061)                                  D006900400007 
+           (30-ZN-67,ENR=0.005)                                   D006900400008 
+           (30-ZN-70,ENR=0.0006)                                  D006900400009 
+MONITOR    (29-CU-0(P,X)27-CO-56,,SIG)                            D006900400010 
+           (29-CU-0(P,X)30-ZN-62,,SIG)                            D006900400011 
+           (29-CU-0(P,X)30-ZN-63,,SIG)                            D006900400012 
+           (29-CU-0(P,X)30-ZN-65,,SIG)                            D006900400013 
+           (22-TI-0(P,X)23-V-48,,SIG)                             D006900400014 
+STATUS     (TABLE) Table 5 of Appl.Radiat.Isot.59(2003)343        D006900400015 
+HISTORY    (20201208A) On. REACTION(SF3): N+A -> X.               D006900400016 
+ENDBIB              14          0                                 D006900400017 
+NOCOMMON             0          0 3                               D006900400018 
+DATA                 4         22                                 D006900400019 
+EN         EN-ERR     DATA       ERR-T                            D006900400020 
+MEV        MEV        MB         MB                               D006900400021 
+  8.5       0.7         0.21      0.04                            D006900400022 
+ 10.1       0.6         2.9       0.5                             D006900400023 
+ 11.0       0.5         3.0       0.5                             D006900400024 
+ 13.3       0.4         6.        1.                              D006900400025 
+ 13.9       0.4         6.        1.                              D006900400026 
+ 14.7       0.6         9.        2.                              D006900400027 
+ 15.1       0.3         7.        1.                              D006900400028 
+ 15.7       0.5         8.        1.                              D006900400029 
+ 17.6       0.4        12.        2.                              D006900400030 
+ 18.1       0.3        10.        2.                              D006900400031 
+ 18.3       0.3         6.        1.                              D006900400032 
+ 19.0       0.2         9.        2.                              D006900400033 
+ 23.7       0.9        13.        2.                              D006900400034 
+ 26.3       0.8        19.        3.                              D006900400035 
+ 28.8       0.7        23.        4.                              D006900400036 
+ 30.6       0.6        20.        3.                              D006900400037 
+ 32.8       0.5        19.        3.                              D006900400038 
+ 37.2       0.6        18.        3.                              D006900400039 
+ 39.1       0.5        18.        3.                              D006900400040 
+ 40.9       0.4        20.        3.                              D006900400041 
+ 42.9       0.3        20.        3.                              D006900400042 
+ 44.6       0.2        17.        3.                              D006900400043 
+ENDDATA             24          0                                 D006900400044 
+ENDSUBENT           43          0                                 D006900499999 
 ENDENTRY             4          0                                 D006999999999 
