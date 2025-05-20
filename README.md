@@ -9,7 +9,6 @@ The [EXFOR Entry File](https://nds.iaea.org/nrdc/exfor-master/entry/) is an offi
 - download the full repository using the terminal command:
 ```
 https://github.com/iaea-nrdcnetwork/exfor-entry-file.git
-
 ```
 
 **Terms of Use**
