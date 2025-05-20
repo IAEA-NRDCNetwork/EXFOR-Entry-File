@@ -2,10 +2,10 @@
 
 **What is EXFOR Entry File?**
 
-The [EXFOR Entry File](https://nds.iaea.org/exfor-master/entry/) is an official current snapshot of the EXFOR library and collects the latest versions of all EXFOR entries and EXFOR/CINDA dictionary. Visit the [EXFOR Master File] for the annual snapshot. 
+The [EXFOR Entry File](https://nds.iaea.org/nrdc/exfor-master/entry/) is an official current snapshot of the EXFOR library and collects the latest versions of all EXFOR entries and EXFOR/CINDA dictionary. Visit the [EXFOR Master File] for the annual snapshot. 
 
 **Download**
-- download the zipped file of the current version from the [EXFOR Entry File](https://nds.iaea.org/exfor-master/entry/) website, or
+- download the zipped file of the current version from the [EXFOR Entry File](https://nds.iaea.org/nrdc/exfor-master/entry/) website, or
 - download the full repository using the terminal command:
 ```
 https://github.com/iaea-nrdcnetwork/exfor-entry-file.git
