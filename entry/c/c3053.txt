@@ -1,0 +1,145 @@
+ENTRY            C3053   20250402                             C249C3053000    1 
+SUBENT        C3053001   20250402                             C249C3053001    1 
+BIB                 10         40                                 C3053001    2 
+TITLE      Proton capture on 90Zr revisited                       C3053001    3 
+AUTHOR     (A.Simon,J.Koros,O.Olivas-Gomez,R.Kelmar,E.Churchman,  C3053001    4 
+           A.M.Clark,C.Harris,S.L.Henderson,S.E.Kelly,            C3053001    5 
+           P.Millican,A.Palmisano-Kyle,C.S.Reingold,D.Robertson,  C3053001    6 
+           E.Stech,A.Spyrou,W.P.Tan)                              C3053001    7 
+REFERENCE  (J,EPJ/A,61,57,2025)                                   C3053001    8 
+           #doi:10.1140/epja/s10050-025-01521-9                   C3053001    9 
+REL-REF    (A,C2065002,A.Spyrou+,J,PR/C,88,045802,2013)           C3053001   10 
+           (A,,C.E.Laird+,J,PR/C,35,1265,1987)                    C3053001   11 
+INSTITUTE  (1USANOT,1USAMSU,1USANCA)                              C3053001   12 
+FACILITY   (VDGT,1USANOT) 10-MV FN tandem at the Nuclear Science  C3053001   13 
+           Laboratory at the University of Notre Dame.            C3053001   14 
+DETECTOR   (NAICR) The target was placed at the center of         C3053001   15 
+           HECTOR, the High Efficiency TOtal absorption           C3053001   16 
+           spectrometeR. HECTOR is a NaI(Tl) array comprised of   C3053001   17 
+           16 segments providing a nearly 4pi solid angle         C3053001   18 
+           coverage for gamma-ray detection.                      C3053001   19 
+SAMPLE     (40-ZR-90,ENR=0.98) An enriched (98(1)%) target of     C3053001   20 
+           90Zr, with a thickness of 969(48) microg/cm2. The      C3053001   21 
+           energy spread of the beam from the accelerator is      C3053001   22 
+           about 5 keV, the energy loss in the target ranged      C3053001   23 
+           from 34 to 66 keV for the highest and lowest beam      C3053001   24 
+           energy utilized, respectively.                         C3053001   25 
+METHOD     The gamma rays from the deexcitation cascade           C3053001   26 
+           following the proton capture were detected in HECTOR.  C3053001   27 
+           The excited state populated via the proton capture is  C3053001   28 
+           well defined and given by: Ex = Ecm + Q, where Ecm is  C3053001   29 
+           the total kinetic energy in the center of mass frame   C3053001   30 
+           and Q = 5.154 MeV is the reaction Q-value. Thus, the   C3053001   31 
+           total energy carried by the gamma rays in the          C3053001   32 
+           deexcitation cascade is ES = Ex. The events where the  C3053001   33 
+           whole cascade is absorbed by the detector form the     C3053001   34 
+           sum peak, a peak corresponding to the ES energy. In    C3053001   35 
+           such case, the capture cross section for the reaction  C3053001   36 
+           of interest can be obtained from: sigma =              C3053001   37 
+           NS/(Nt*Nb*epsilon), where NS is the number of counts   C3053001   38 
+           within the sum peak, Nt is the target areal density,   C3053001   39 
+           Nb is the number of beam particles impinged on the     C3053001   40 
+           target and epsilon is the summing efficiency.          C3053001   41 
+HISTORY    (20250402C) BP                                         C3053001   42 
+ENDBIB              40          0                                 C3053001   43 
+NOCOMMON             0          0                                 C3053001   44 
+ENDSUBENT           43          0                                 C305300199999 
+SUBENT        C3053002   20250402                             C249C3053002    1 
+BIB                  4         24                                 C3053002    2 
+REACTION   (40-ZR-90(P,G)41-NB-91,,SIG)                           C3053002    3 
+ANALYSIS   For each beam energy, the sum peak is fitted with a    C3053002    4 
+           combination of a Gaussian peak and a linear            C3053002    5 
+           background to account for incomplete summation         C3053002    6 
+           events. Then the linear background is subtracted from  C3053002    7 
+           the sum-peak and the resulting spectrum is integrated  C3053002    8 
+           within +-3 sigma range around the centroid of the      C3053002    9 
+           sum-peak. The summing efficiency was determined using  C3053002   10 
+           Geant4 simulations. gamma-ray cascades corresponding   C3053002   11 
+           to a total energy equal to ES were used to model the   C3053002   12 
+           detector response. A combination of cascades with      C3053002   13 
+           varying number of gamma rays was used in each          C3053002   14 
+           simulation.                                            C3053002   15 
+ERR-ANALYS (ERR-T) The primary source of uncertainty in the       C3053002   16 
+           cross-section calculations stems from the              C3053002   17 
+           efficiency simulations. The relative uncertainty of    C3053002   18 
+           the simulated efficiency is 10-12%. The beam current   C3053002   19 
+           was measured with a Faraday cup with an uncertainty    C3053002   20 
+           of 5% and the target thickness is known with a 5%      C3053002   21 
+           uncertainty.                                           C3053002   22 
+           (ERR-1,10.,12.) Efficiency.                            C3053002   23 
+           (ERR-2) Beam current.                                  C3053002   24 
+           (ERR-3) Target thickness.                              C3053002   25 
+STATUS     (TABLE,,A.Simon,J,EPJ/A,61,57,2025) - Table 1          C3053002   26 
+ENDBIB              24          0                                 C3053002   27 
+COMMON               3          3                                 C3053002   28 
+EN-RSL     ERR-2      ERR-3                                       C3053002   29 
+KEV        PER-CENT   PER-CENT                                    C3053002   30 
+         5.         5.         5.                                 C3053002   31 
+ENDCOMMON            3          0                                 C3053002   32 
+DATA                 3         16                                 C3053002   33 
+EN-CM      DATA       ERR-T                                       C3053002   34 
+MEV        MB         MB                                          C3053002   35 
+       5.93       9.31       1.14                                 C3053002   36 
+       5.74       8.04       0.99                                 C3053002   37 
+       5.34       5.95       0.73                                 C3053002   38 
+       5.14        5.1       0.63                                 C3053002   39 
+       4.95       4.24       0.52                                 C3053002   40 
+       4.75       3.57       0.44                                 C3053002   41 
+       4.45       2.62       0.32                                 C3053002   42 
+       4.25       2.09       0.26                                 C3053002   43 
+       3.96       1.34       0.16                                 C3053002   44 
+       3.76       1.12       0.14                                 C3053002   45 
+       3.56      0.707      0.087                                 C3053002   46 
+       3.36      0.523      0.064                                 C3053002   47 
+       3.16      0.376      0.046                                 C3053002   48 
+       3.16      0.368      0.045                                 C3053002   49 
+       2.97      0.264      0.033                                 C3053002   50 
+       2.77      0.158      0.019                                 C3053002   51 
+ENDDATA             18          0                                 C3053002   52 
+ENDSUBENT           51          0                                 C305300299999 
+SUBENT        C3053003   20250402                             C249C3053003    1 
+BIB                  3         12                                 C3053003    2 
+REACTION   (40-ZR-90(P,G)41-NB-91,,SGV)                           C3053003    3 
+ANALYSIS   The experimental results of this work were used to     C3053003    4 
+           determine the best theoretical description of          C3053003    5 
+           reaction cross section for 90Zr(p,gamma)91Nb using     C3053003    6 
+           the Hauser-Feshbach (HF) formalism. Talys 1.9 code     C3053003    7 
+           was used to explore combination of various models      C3053003    8 
+           for level density (LD) and gamma-ray strength function C3053003    9 
+            (gSF) to calculate the reaction cross section. The    C3053003   10 
+           best model from Talys was then used to calculate the   C3053003   11 
+           reaction rate for 90Zr(p,gamma)91Nb.                   C3053003   12 
+STATUS     (DEP,C3053002)                                         C3053003   13 
+           (TABLE,,A.Simon,J,EPJ/A,61,57,2025) - Table 2          C3053003   14 
+ENDBIB              12          0                                 C3053003   15 
+NOCOMMON             0          0                                 C3053003   16 
+DATA                 2         24                                 C3053003   17 
+KT-K       DATA                                                   C3053003   18 
+K9         CM3/S/MOL                                              C3053003   19 
+        0.1  3.054E-28                                            C3053003   20 
+       0.15  1.806E-22                                            C3053003   21 
+        0.2  7.874E-19                                            C3053003   22 
+       0.25  3.044E-16                                            C3053003   23 
+        0.3  2.859E-14                                            C3053003   24 
+        0.4  2.178E-11                                            C3053003   25 
+        0.5  2.435E-09                                            C3053003   26 
+        0.6  8.745E-08                                            C3053003   27 
+        0.7  1.506E-06                                            C3053003   28 
+        0.8  1.558E-05                                            C3053003   29 
+        0.9  1.105E-04                                            C3053003   30 
+        1.0  5.855E-04                                            C3053003   31 
+        1.5  1.649E-01                                            C3053003   32 
+        2.0  4.511E+00                                            C3053003   33 
+        2.5  4.192E+01                                            C3053003   34 
+        3.0  2.137E+02                                            C3053003   35 
+        3.5  7.528E+02                                            C3053003   36 
+        4.0  2.083E+03                                            C3053003   37 
+        5.0  1.003E+04                                            C3053003   38 
+        6.0  3.058E+04                                            C3053003   39 
+        7.0  6.229E+04                                            C3053003   40 
+        8.0  9.029E+04                                            C3053003   41 
+        9.0  1.027E+05                                            C3053003   42 
+       10.0  1.002E+05                                            C3053003   43 
+ENDDATA             26          0                                 C3053003   44 
+ENDSUBENT           43          0                                 C305300399999 
+ENDENTRY             3          0                                 C305399999999 
