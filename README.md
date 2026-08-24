@@ -30,7 +30,6 @@ git clone https://github.com/iaea-nds/exfor-entry-file.git
           +--a            # Area A
           ...
           +--v            # Area V
-        
 ```
 
 **Terms of Use**
