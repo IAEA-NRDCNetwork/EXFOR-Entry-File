@@ -1,39 +1,72 @@
-ENTRY            20274   19840106                             00002027400000001 
-SUBENT        20274001   19840106                             00002027400100001 
-BIB                 11         17                                 2027400100002 
-INSTITUTE  (2JPNKYU)                                              2027400100003 
-REFERENCE  (W,HYAKUTAKE,6608) DATA PUBLISHED IN TECHNOLOGY        2027400100004 
-            REPORTS OF THE KYUSHU UNIV. VOL 39(1965)170,          2027400100005 
-            REPORT IN JAPANESE.                                   2027400100006 
-AUTHOR     (M.HYAKUTAKE)                                          2027400100007 
-TITLE      -FISSION OF AM-241 INDUCED BY THERMAL NEUTRONS-        2027400100008 
-INC-SOURCE (REAC )    REACTOR                                     2027400100009 
-METHOD     .DETECTION OF FISSION FRAGMENTS.                       2027400100010 
-MONITOR    (92-U-235(N,F),,SIG)                                   2027400100011 
-           D.J.HUGHES ET AL., BNL-325(II), 1958.                  2027400100012 
-PART-DET   (FF   )    FISSION FRAGMENTS.                          2027400100013 
-STATUS     .DATA FROM REPORT.                                     2027400100014 
-HISTORY    (711010C)                                              2027400100015 
-           (740626E)                                              2027400100016 
-           (840106U) A.P.T. JAPAN CODE CHANGED TO JPN             2027400100017 
-           (840106E)                                              2027400100018 
-ERR-ANALYS .STATISTICAL ERROR ONLY.                               2027400100019 
+ENTRY            20274   20251214                             23232027400000001 
+SUBENT        20274001   20251214                             23232027400100001 
+BIB                  9         17                                 2027400100002 
+TITLE      Fission of Am241 induced by thermal neutrons           2027400100003 
+AUTHOR     (M.Hyakutake)                                          2027400100004 
+INSTITUTE  (2JPNKYU)                                              2027400100005 
+REFERENCE  (J,TRKU,39,170,1966)                                   2027400100006 
+FACILITY   (REAC,2JPNKTO) KUR                                     2027400100007 
+INC-SOURCE (THCOL) graphite thermal neutron column                2027400100008 
+SAMPLE     Am241 (77+/-3 ug/cm2) and U235 (215+/-3 ug),           2027400100009 
+            1 cm x 1 cm evaporated onto Al (0.1 mm),              2027400100010 
+           The thickness of Am241 and U235 was determined by      2027400100011 
+            alpha counting                                        2027400100012 
+DETECTOR   (SOLST) 2.2 cm and 2.3 cm from the target centre       2027400100013 
+            and perpendicular to the beam line                    2027400100014 
+HISTORY    (19711010C)                                            2027400100015 
+           (19740626E)                                            2027400100016 
+           (19840106U) A.P.T. Japan code changed to JPN           2027400100017 
+           (19840106E)                                            2027400100018 
+           (20251214A) On. Recompiled. 003 added.                 2027400100019 
 ENDBIB              17          0                                 2027400100020 
 NOCOMMON             0          0                                 2027400100021 
 ENDSUBENT           20          0                                 2027400199999 
-SUBENT        20274002   19860822                             00002027400200001 
-BIB                  2          5                                 2027400200002 
+SUBENT        20274002   20251214                             23232027400200001 
+BIB                  6          9                                 2027400200002 
 REACTION   (95-AM-241(N,F),,SIG,,MXW)                             2027400200003 
-HISTORY    (711010C)                                              2027400200004 
-           (740626E)                                              2027400200005 
-           (860808A)HH MXW INSERTED                               2027400200006 
-           (860822E)                                              2027400200007 
-ENDBIB               5          0                                 2027400200008 
-NOCOMMON             0          0                                 2027400200009 
-DATA                 3          1                                 2027400200010 
-EN-DUMMY   DATA       DATA-ERR                                    2027400200011 
-MEV        B          B                                           2027400200012 
- 2.5000E-08 3.8000E+00 2.0000E-01                                 2027400200013 
-ENDDATA              3          0                                 2027400200014 
-ENDSUBENT           13          0                                 2027400299999 
-ENDENTRY             2          0                                 2027499999999 
+MONITOR    (92-U-235(N,F),,SIG)                                   2027400200004 
+MONIT-REF  (,D.J.Hughes+,R,BNL-325,(2),1958)                      2027400200005 
+ERR-ANALYS (ERR-S) Statistics, mainly in Am241 target thickness   2027400200006 
+            determination                                         2027400200007 
+STATUS     (TABLE,,M.Hyakutake,J,TRKU,39,170,1966) Table 2        2027400200008 
+HISTORY    (19860808A) HH MXW inserted                            2027400200009 
+           (19860822E)                                            2027400200010 
+           (20251214A) On. MONIT(-ERR) added.                     2027400200011 
+ENDBIB               9          0                                 2027400200012 
+NOCOMMON             0          0                                 2027400200013 
+DATA                 5          1                                 2027400200014 
+EN-DUMMY   DATA       ERR-S      MONIT      MONIT-ERR             2027400200015 
+EV         B          B          B          B                     2027400200016 
+ 0.0253     3.8        0.2        582.       4.                   2027400200017 
+ENDDATA              3          0                                 2027400200018 
+ENDSUBENT           17          0                                 2027400299999 
+SUBENT        20274003   20251214                             23232027400300001 
+BIB                  8         15                                 2027400300002 
+REACTION  1(95-AM-241(N,F),PRE,AKE,HF,MXW)                        2027400300003 
+          2(95-AM-241(N,F),PRE,AKE,LF,MXW)                        2027400300004 
+ANALYSIS   E(pre) = E(sec) + nu-bar * E(sec)/(242 - nu-bar)       2027400300005 
+ASSUMED    (ASSUM,95-AM-241(N,F),,NU)                             2027400300006 
+REL-REF    (R,40400002,V.I.Levedev+,J,JNE,10,90,1959)             2027400300007 
+            nu-bar=3.14+/-0.05                                    2027400300008 
+ADD-RES    The mean energies derived from the compiled            2027400300009 
+            most probable energies are                            2027400300010 
+           . <EH> =  77.8 +/- 3.6 MeV                             2027400300011 
+           . <EL> = 108.2 +/- 3.3 MeV                             2027400300012 
+           . <TKE>= 186.0 +/- 4.9 MeV                             2027400300013 
+ERR-ANALYS (DATA-ERR) No information on sources of uncertainty    2027400300014 
+STATUS     (TABLE,,M.Hyakutake,J,TRKU,39,170,1966)                2027400300015 
+            Text (p.173)                                          2027400300016 
+HISTORY    (20251214C) On                                         2027400300017 
+ENDBIB              15          0                                 2027400300018 
+COMMON               3          3                                 2027400300019 
+EN-DUMMY   ASSUM      ASSUM-ERR                                   2027400300020 
+EV         PRT/FIS    PRT/FIS                                     2027400300021 
+ 0.0253     3.14       0.05                                       2027400300022 
+ENDCOMMON            3          0                                 2027400300023 
+DATA                 4          1                                 2027400300024 
+DATA      1DATA-ERR  1DATA      2DATA-ERR  2                      2027400300025 
+MEV        MEV        MEV        MEV                              2027400300026 
+ 75.5       3.4        107.8      2.9                             2027400300027 
+ENDDATA              3          0                                 2027400300028 
+ENDSUBENT           27          0                                 2027400399999 
+ENDENTRY             3          0                                 2027499999999 
